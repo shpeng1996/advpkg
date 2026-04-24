@@ -1,10 +1,10 @@
 ---
 title: "HBM4 — High Bandwidth Memory 4"
 category: technology
-tags: [memory, HBM, JEDEC, standards, AI, HPC]
+tags: [memory, HBM, JEDEC, standards, AI, HPC, HBM4E]
 created: 2026-04-24
 updated: 2026-04-25
-sources: [2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-03-18_trendforce_intel-emib-malaysia]
+sources: [2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-03-18_trendforce_intel-emib-malaysia, 2026-01-23_trendforce_hbm4e-samsung-skhynix-mid2026]
 related:
   - wiki/entities/sk-hynix.md
   - wiki/entities/samsung.md
@@ -31,14 +31,18 @@ HBM（High Bandwidth Memory）將多層 DRAM 晶片垂直堆疊，透過 TSV（T
 
 ## 規格比較 / Spec Comparison
 
-| 規格 | HBM3E | **HBM4** | 改善幅度 |
-|------|-------|---------|---------|
-| 速度 Speed | 9.8 Gbps/pin | **>10 Gbps/pin** | +2%+ |
-| 總頻寬/stack | 1.18 TB/s | **1.65+ TB/s** | +40% |
-| 介面寬度 | 1024-bit | **2048-bit** | 2× |
-| 最大容量 | 48 GB/stack | **64 GB/stack** | +33% |
-| 工作電壓 | 1.05V | **0.8V** | -24%（省電 30%） |
-| 堆疊層數 | 12-Hi | **16-Hi** | +33% |
+| 規格 | HBM3E | **HBM4** | **HBM4E** | HBM5（預測） |
+|------|-------|---------|----------|------------|
+| 速度 Speed | 9.8 Gbps/pin | 6.40 GT/s | **10 GT/s** | TBD |
+| 總頻寬/stack | 1.18 TB/s | **1.65+ TB/s** | **2.5 TB/s** | TBD |
+| 介面寬度 | 1024-bit | **2048-bit** | 2048-bit | TBD |
+| 最大容量 | 48 GB/stack | **64 GB/stack** | TBD | TBD |
+| 工作電壓 | 1.05V | **0.8V** | TBD | TBD |
+| 堆疊層數 | 12-Hi | 12-Hi (std) | **16-Hi（可能）** | TBD |
+| 每封裝功耗上限 | ~40W | ~60W | **80W** | TBD |
+| 量產目標 | 2024 | 2025-H2 | **2027** | **2029（預測）** |
+
+*HBM4E 資料來源：TrendForce 2026-01-23*
 
 ---
 
@@ -50,8 +54,11 @@ HBM（High Bandwidth Memory）將多層 DRAM 晶片垂直堆疊，透過 TSV（T
 - **2026-02-12**：Samsung HBM4 正式首批出貨，進入 NVIDIA Rubin GPU 量產供應
 - **2026-02**：SK Hynix M15X 廠提前 4 個月投產（初始 ~10,000 片/月 1b DRAM）
 - **2026-Q3**（預計）：首批 HBM4 透過混合接合整合（UCIe 2.0 生態系）
-- **2026-H1（目標）**：SK Hynix、Samsung、Micron 均目標完成 **HBM4E** 開發
-- **2027**（預計）：HBM4E 佔 HBM 市場 ~40%；16-Hi 堆疊進入量產
+- **2026-01（Samsung）**：三星 HBM4E 客製化設計目標完成於 **2026 年中** *Source: TrendForce 2026-01-23*
+- **2026-H1（SK Hynix）**：SK Hynix HBM4E 開發目標完成於 **1H26** *Source: TrendForce 2025-11-13*
+- **2027（Micron）**：Micron HBM4E 推出，與 **TSMC 合作開發**，提供標準與客製化版本
+- **2027**（預計）：HBM4E 佔 HBM 市場 **~40%**；16-Hi 堆疊進入量產；AI 加速器搭載 HBM4E 上市
+- **2029**（預測）：**HBM5** 問世
 - 供需失衡預計持續至 **2027 年**
 
 ### HBM4 供應商份額（NVIDIA Vera Rubin 平台，2026）

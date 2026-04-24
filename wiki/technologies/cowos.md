@@ -1,10 +1,10 @@
 ---
 title: "CoWoS — Chip-on-Wafer-on-Substrate"
 category: technology
-tags: [2.5D, interposer, TSMC, AI, HPC, HBM]
+tags: [2.5D, interposer, TSMC, AI, HPC, HBM, COUPE, CPO]
 created: 2026-04-24
 updated: 2026-04-25
-sources: [2026-04-24_initial-survey, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos]
+sources: [2026-04-24_initial-survey, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe]
 related:
   - wiki/entities/tsmc.md
   - wiki/technologies/soic.md
@@ -36,15 +36,19 @@ CoWoS 將多顆晶片（GPU、HBM 等）放置於一個中介層（Interposer）
 
 ---
 
-## 關鍵規格 / Key Specs（2026 Q1 現況）
+## 關鍵規格 / Key Specs（2026 Q2 現況）
 
-| 指標 | 數值 |
-|------|------|
-| 月產能（2026 年底目標） | 150,000 wsm |
-| 中介層尺寸（2026） | ~3.3 reticles |
-| 中介層尺寸（2029 目標） | 14+ reticles |
-| 最大支援 HBM 堆疊數（2029） | 24 stacks |
-| 主要應用 | NVIDIA GPU（H/B/R 系列）、AMD Instinct |
+| 指標 | 數值 | 時程 |
+|------|------|------|
+| 月產能（2026 年底目標） | 90,000–130,000 wsm | 2026 年底 |
+| 中介層尺寸（當前量產） | 5.5 reticles | 2026 |
+| 中介層尺寸（2028 目標） | 14 reticles（~10 compute + 20 HBM） | 2028 |
+| 中介層尺寸（2029+） | >14 reticles | 2029+ |
+| 封裝電晶體成長 | 48× (2024→2029) | — |
+| 記憶體頻寬成長 | 34× (2024→2029) | — |
+| 主要應用 | NVIDIA GPU（H/B/R 系列）、AMD Instinct | — |
+
+*Source: TSMC 2026 North America Technology Symposium (2026-04-22)*
 
 ---
 
@@ -56,11 +60,16 @@ CoWoS 將多顆晶片（GPU、HBM 等）放置於一個中介層（Interposer）
 - **2025**：南科廠 $2.8B 擴產，+15,000 wsm/月，目標 2026-Q3 投產
 - **2025-12**：**CoWoS-L 與 CoWoS-S 全部訂滿**；ASE（CoWoP）與 Amkor 開始承接 TSMC 溢出訂單
   *Source: TrendForce 2025-12-08*
-- **2026-01**：法說會公布月產能目標 150,000 wsm（年底）；先進封裝 CapEx CAGR 24%（2025–27）
+- **2026-01**：法說會公布月產能目標，先進封裝 CapEx CAGR 24%（2025–27）
   *Source: TrendForce 2026-01-21*
 - **2026-04**：NVIDIA 預訂 2026 年總產能 60–65%；AMD 佔 ~11%
-- **2028**：亞利桑那先進封裝廠 CoWoS 量產
-- **2029**：中介層擴大至 14 reticles，支援 24 HBM stacks
+- **2026-04-22**：TSMC 2026 Symposium 揭露 CoWoS 規模路線圖：當前 5.5 reticle → 2028 目標 14 reticle（10 compute die + 20 HBM stacks）；2029 年後持續擴大
+  - 單封裝計算電晶體數 2024→2029 成長 **48×**；記憶體頻寬成長 **34×**
+  *Source: SemiWiki 2026-04-22*
+- **2026**：**TSMC-COUPE™ 共封裝光學元件（CPO）**整合至 CoWoS 基板，開始量產；2× 能效、10× 延遲改善
+- **2026**：TSMC ECTC 2025 展示 CoWoS 上的**直接矽液冷（Direct-to-Silicon Liquid Cooling）**，封裝層級散熱新里程碑
+- **2028**：亞利桑那先進封裝廠 CoWoS 量產；14 reticle CoWoS 量產
+- **2029**：超越 14 reticles，A14-to-A14 SoIC 整合
 
 ### OSAT 生態系補位 / OSAT Supplement Ecosystem
 | 廠商 | 技術 | 產能目標（2026 年底） |
@@ -94,7 +103,8 @@ CoWoS 將多顆晶片（GPU、HBM 等）放置於一個中介層（Interposer）
 
 - [[technologies/soic]] — SoIC：台積電 3D 封裝技術，與 CoWoS 常組合使用（CoWoS + SoIC 3D 堆疊）
 - [[technologies/hbm4]] — HBM4：CoWoS 封裝的主要記憶體夥伴
-- **CoPoS**：CoWoS 的面板級下一代演進，試驗線預計 2026-06 完工
+- [[technologies/copos]] — CoPoS：CoWoS 的面板級下一代演進，試驗線預計 2026-06 完工
+- [[technologies/copackaged-optics]] — TSMC-COUPE™：共封裝光學元件，2026 年整合至 CoWoS 基板量產
 
 ---
 

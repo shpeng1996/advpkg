@@ -91,3 +91,34 @@
 - 原始路徑：raw/articles/2025-12-08_trendforce_cowos-full-booked-ase-cowop.md
 - 觸及頁面：technologies/cowos.md, entities/tsmc.md, entities/ase-group.md（新建）, entities/amkor.md（新建）, sources/（共 5 頁）
 - 新增知識：CoWoS-L/S 全訂滿、ASE K28 廠 25K 片/月目標、Amkor Arizona $70 億投資
+
+---
+
+## [2026-04-25] collect | 每日自動蒐集 — 先進封裝最新動態（第二次）
+- 搜尋查詢數：6 組（TSMC 2026 Symposium、HBM4E、FOPLP/InFO、Besi 設備、散熱技術、TSMC 封裝最新）
+- 成功抓取：5 篇（articles/ 5, papers/ 0, reports/ 0）
+- 失敗/跳過：N/A（WebFetch 受網路白名單限制；所有 raw 檔案依 WebSearch 摘要內容建立，fetch_status: partial）
+- 學術代理：UNAVAILABLE ✗（WebFetch 僅允許 anthropic.com、claude.com）
+- 新增 wiki 頁面：3 頁
+  - wiki/technologies/copackaged-optics.md（TSMC-COUPE™ CPO，填補知識空缺）
+  - wiki/entities/besi.md（Besi D2W 混合接合設備廠商，填補知識空缺）
+  - wiki/concepts/thermal-management.md（先進封裝熱管理，填補知識空缺）
+- 更新 wiki 頁面：8 頁
+  - wiki/entities/tsmc.md（2026 Symposium 公告：14-reticle CoWoS、COUPE、A14 SoIC；先進封裝營收 >10%）
+  - wiki/technologies/cowos.md（5.5→14 reticle 路線圖、COUPE 整合、直接矽液冷）
+  - wiki/technologies/soic.md（A14-to-A14 SoIC 2029 路線圖、1.8× I/O 密度）
+  - wiki/technologies/hbm4.md（HBM4E 完整規格表：10 GT/s / 2.5 TB/s / 80W；HBM5 2029 預測；Micron+TSMC 合作）
+  - wiki/technologies/copos.md（FOPLP 競爭格局表格、TSMC 玻璃材料 310×310mm、Samsung 差異化）
+  - wiki/technologies/hybrid-bonding.md（Besi/EV Group 設備生態系表格、Kinex 平台）
+  - wiki/overview.md（知識空缺狀態更新、健康狀態）
+  - wiki/index.md（新增所有頁面、更新頁面總數至 32、來源數至 12）
+- 新增來源摘要頁：5 頁
+  - wiki/sources/2026-04-22_semiwiki_tsmc-symposium-2026.md
+  - wiki/sources/2026-01-23_trendforce_hbm4e-development.md
+  - wiki/sources/2025-09-12_trendforce_foplp-competitive-2025.md
+  - wiki/sources/2026-03-01_3dincites_besi-packaging-power-shift.md
+  - wiki/sources/2025-12-01_semiengineering_thermal-management.md
+- 主要新知識：
+  - TSMC 2026 Tech Symposium（2026-04-22）揭露封裝規模路線圖：14-reticle CoWoS（2028）可整合 10 compute + 20 HBM；2024→2029 封裝電晶體成長 48×、頻寬成長 34×；COUPE CPO 2026 量產（2× 能效 / 10× 延遲）
+  - HBM4E 三廠商並行：Samsung 和 SK Hynix 目標 2026-H1 完成開發，Micron 2027 推出（與 TSMC 合作）；規格：10 GT/s / 2.5 TB/s / 80W；2027 年佔 HBM 市場 40%
+  - TSMC CoWoS 直接矽液冷（Direct-to-Silicon Liquid Cooling, ECTC 2025）是封裝層級散熱的里程碑，填補散熱知識空缺

@@ -4,13 +4,15 @@ category: technology
 tags: [3D, hybrid-bonding, Cu-Cu, SoIC, ECTC, advanced-packaging]
 created: 2026-04-24
 updated: 2026-04-25
-sources: [2026-04-24_initial-survey, 2026-03-01_ieee-eps_ectc2025-hybrid-bonding]
+sources: [2026-04-24_initial-survey, 2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-03-01_3dincites_besi-packaging-power-shift]
 related:
   - wiki/technologies/soic.md
   - wiki/technologies/cowos.md
   - wiki/technologies/ucie.md
   - wiki/entities/tsmc.md
   - wiki/entities/samsung.md
+  - wiki/entities/besi.md
+  - wiki/entities/ev-group.md
 ---
 
 # 混合接合 / Hybrid Bonding (Cu-Cu Direct Bonding)
@@ -106,11 +108,25 @@ ECTC 2025 的核心技術主題之一：
 
 ---
 
+## 設備廠商生態系 / Equipment Ecosystem
+
+| 廠商 | 定位 | 主攻情境 | 代表產品 |
+|------|------|---------|---------|
+| [[entities/besi]] | D2W 混合接合設備主供應商 | D2W（晶粒對晶圓） | Datacon 8800 CHAMEO ultra plus AC |
+| [[entities/ev-group]] | W2W 混合接合設備 | W2W（晶圓對晶圓） | GEMINI 系列 |
+| Applied Materials | 沉積側整合 | D2W 全流程 | Kinex 平台（與 Besi 合作） |
+| Tokyo Electron (TEL) | 清洗/貼合輔助 | 多元 | 生態系夥伴 |
+
+**Kinex 平台**（Applied Materials + Besi）：全整合 D2W 混合接合解決方案，2026-03 接近 HVM 就緒，是首個端對端商業化 D2W 生態系。
+
+---
+
 ## 相關技術 / Related Technologies
 
 - [[technologies/soic]] — SoIC-X 是台積電混合接合的產品化實作
 - [[technologies/ucie]] — UCIe 2.0 的「UCIe-3D」最佳化專為混合接合設計
 - [[technologies/cowos]] — CoWoS + SoIC-X 組合是目前 AI 加速器主流封裝架構
+- [[concepts/thermal-management]] — 3D 堆疊熱管理是混合接合商業化的關鍵挑戰
 
 ---
 

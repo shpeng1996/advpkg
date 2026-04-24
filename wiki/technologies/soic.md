@@ -3,8 +3,8 @@ title: "SoIC — System on Integrated Chips"
 category: technology
 tags: [3D, SoIC, hybrid-bonding, TSMC, AI]
 created: 2026-04-24
-updated: 2026-04-24
-sources: [2026-04-24_initial-survey]
+updated: 2026-04-25
+sources: [2026-04-24_initial-survey, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe]
 related:
   - wiki/entities/tsmc.md
   - wiki/technologies/cowos.md
@@ -50,6 +50,10 @@ SoIC 常與 CoWoS 組合：邏輯晶片先透過 SoIC 3D 堆疊，再整合於 C
 - **2021**：SoIC 技術首次商業推出
 - **2024**：SoIC-X 混合接合從實驗性轉為商業服務
 - **2026-Q1**：SoIC-X 商業間距達 6µm，從「實驗性精品製程」轉為 AI 加速器主流標配
+- **2026-04-22**：TSMC Symposium 宣布 **A14-to-A14 SoIC** 路線圖（2029 目標）：
+  - 提供比 N2-to-N2 SoIC 高 **1.8× 的 die-to-die I/O 密度**
+  - 支援更高資料傳輸頻寬，面向下一代 AI 系統
+  *Source: TSMC 2026 North America Technology Symposium*
 - **2028–2030**（亞利桑那廠）：SoIC 線進入美國量產
 
 ---

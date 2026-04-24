@@ -1,10 +1,10 @@
 ---
 title: "台積電 / TSMC"
 category: entity
-tags: [foundry, advanced-packaging, CoWoS, SoIC, CoPoS]
+tags: [foundry, advanced-packaging, CoWoS, SoIC, CoPoS, COUPE, CPO]
 created: 2026-04-24
 updated: 2026-04-25
-sources: [2026-04-24_initial-survey, 2026-04-13_trendforce_copos-pilot, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos]
+sources: [2026-04-24_initial-survey, 2026-04-13_trendforce_copos-pilot, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe]
 related:
   - wiki/technologies/cowos.md
   - wiki/technologies/soic.md
@@ -33,6 +33,14 @@ related:
 
 ## 近期動態 / Recent Developments
 
+- **2026-04-22**：**TSMC 2026 北美技術研討會**重大封裝公告：
+  - **14 reticle CoWoS** 計畫 2028 年量產，可整合約 10 顆大型計算晶片與 20 組 HBM stacks
+  - **TSMC-COUPE™**（共封裝光學元件，Co-Packaged Optics）自 2026 年開始量產；達成 2× 能效、10× 延遲改善
+  - **A14-to-A14 SoIC** 預計 2029 年問世，提供比 N2-to-N2 SoIC 高 1.8× 的 die-to-die I/O 密度
+  - 2024–2029 年間單一 CoWoS 封裝內計算電晶體數量提升 **48×**；記憶體頻寬提升 **34×**
+  - 先進封裝佔 TSMC 營收：2025 年 ~8%，2026 年預估突破 **10%**
+  *Source: SemiWiki 2026-04-22*
+
 - **2026-04**：CoPoS 試驗線最新進展確認：設備交付始於 **2026-02**（Visionchip 子公司）；完整試驗線預計 **2026-06 完工**；2027 年製程精修；量產 **2028 年底–2029 年初**於嘉義 AP7。NVIDIA 為首要客戶。
   *Source: TrendForce 2026-04-13*
 
@@ -55,11 +63,15 @@ related:
 
 | 指標 | 數值 | 時間 |
 |------|------|------|
-| CoWoS 月產能目標 | 150,000 wsm | 2026 年底 |
+| CoWoS 月產能目標 | 90,000+ wsm（→最高 130,000） | 2026 年底 |
 | CoWoS 2026 年擴建投資 | $2.8B（南科） | 2025–2026 |
 | 年度資本支出 | $52–56B | 2026 |
 | 先進封裝佔資本支出比 | 10–20% | 2026 |
-| 中介層尺寸（2029 目標） | 14 reticles（支援 24 HBM stacks） | 2029 |
+| 先進封裝佔 TSMC 總營收 | ~8%（2025）→ >10%（2026） | — |
+| CoWoS 當前尺寸 | 5.5 reticles（量產中） | 2026 |
+| CoWoS 目標尺寸 | 14 reticles（~10 compute + 20 HBM） | 2028 |
+| COUPE CPO 量產啟動 | 2026 年 | — |
+| A14-to-A14 SoIC | 1.8× I/O 密度 vs N2-to-N2 | 2029 |
 
 台積電在先進封裝領域處於主導地位，特別是 AI 加速器所需的 CoWoS 與 SoIC 製程，競爭對手在 3–5 年內難以追上其技術與產能規模。
 
