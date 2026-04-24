@@ -1,0 +1,10 @@
+# Advanced Packaging Wiki — Collected URLs Registry
+# 格式 Format：YYYY-MM-DD | URL | raw/路徑 | 標題摘要
+# 用途 Purpose：防止重複抓取；每次 collect 前必須查閱此檔案
+# 規則 Rule：Claude 每次成功收錄新 URL 後，於此檔案末尾追加一行
+# ──────────────────────────────────────────────────────────────────
+
+# [初始來源 — 非網路抓取，人工彙整]
+2026-04-24 | INTERNAL | raw/reports/先進封裝趨勢報告_2026-04-24.md | 先進封裝產業與學術趨勢初步調查（AI彙整）
+
+# [以下由 Collect 工作流程自動追加]
