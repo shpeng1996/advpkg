@@ -3,8 +3,8 @@ title: "CoWoS — Chip-on-Wafer-on-Substrate"
 category: technology
 tags: [2.5D, interposer, TSMC, AI, HPC, HBM]
 created: 2026-04-24
-updated: 2026-04-24
-sources: [2026-04-24_initial-survey]
+updated: 2026-04-25
+sources: [2026-04-24_initial-survey, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos]
 related:
   - wiki/entities/tsmc.md
   - wiki/technologies/soic.md
@@ -54,10 +54,20 @@ CoWoS 將多顆晶片（GPU、HBM 等）放置於一個中介層（Interposer）
 - **2022**：AI 浪潮引爆 CoWoS 需求（NVIDIA H100）
 - **2024**：CoWoS-L 推出，矽橋技術成熟
 - **2025**：南科廠 $2.8B 擴產，+15,000 wsm/月，目標 2026-Q3 投產
-- **2026-01**：法說會公布月產能目標 150,000 wsm（年底）
+- **2025-12**：**CoWoS-L 與 CoWoS-S 全部訂滿**；ASE（CoWoP）與 Amkor 開始承接 TSMC 溢出訂單
+  *Source: TrendForce 2025-12-08*
+- **2026-01**：法說會公布月產能目標 150,000 wsm（年底）；先進封裝 CapEx CAGR 24%（2025–27）
+  *Source: TrendForce 2026-01-21*
 - **2026-04**：NVIDIA 預訂 2026 年總產能 60–65%；AMD 佔 ~11%
 - **2028**：亞利桑那先進封裝廠 CoWoS 量產
 - **2029**：中介層擴大至 14 reticles，支援 24 HBM stacks
+
+### OSAT 生態系補位 / OSAT Supplement Ecosystem
+| 廠商 | 技術 | 產能目標（2026 年底） |
+|------|------|---------------------|
+| ASE | CoWoP（面板版）| 20,000–25,000 片/月 |
+| Amkor | FOCoS（扇出基板版）| 2028 年初投產（Arizona） |
+| Intel Foundry | EMIB（矽橋版）| 2H 2026 放量 |
 
 ---
 

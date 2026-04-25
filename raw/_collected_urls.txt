@@ -8,3 +8,9 @@
 2026-04-24 | INTERNAL | raw/reports/先進封裝趨勢報告_2026-04-24.md | 先進封裝產業與學術趨勢初步調查（AI彙整）
 
 # [以下由 Collect 工作流程自動追加]
+2026-04-25 | https://www.trendforce.com/news/2026/04/13/news-tsmc-advances-panel-level-packaging-copos-pilot-line-reportedly-set-for-june-completion-2028-29-ramp-eyed/ | raw/articles/2026-04-13_trendforce_copos-pilot-line-june-completion.md | TSMC CoPoS pilot line June completion; 2028-29 mass production
+2026-04-25 | https://www.trendforce.com/news/2026/03/18/news-intel-ramps-up-advanced-packaging-malaysia-complex-operational-in-2026-emib-update/ | raw/articles/2026-03-18_trendforce_intel-malaysia-emib-update.md | Intel Malaysia packaging complex 2026; EMIB-T HBM4 roadmap
+2026-04-25 | https://www.trendforce.com/news/2026/01/05/news-sk-hynix-2026-outlook-hbm3e-remains-mainstream-hbm4-dual-strategy-amid-triple-market-headwinds/ | raw/articles/2026-01-05_trendforce_sk-hynix-2026-hbm4-outlook.md | SK Hynix 2026: HBM3E dominant, HBM4 dual strategy, M15X ramp
+2026-04-25 | https://eps.ieee.org/wp-content/uploads/2026/03/EM_Hybrid-Bonding_Apr26.pdf | raw/articles/2026-03-01_ieee-eps_ectc2025-hybrid-bonding-special-session.md | ECTC 2025 special session hybrid bonding W2W/D2W/D2D maturity
+2026-04-25 | https://www.trendforce.com/news/2025/12/08/news-tsmcs-cowos-l-s-reportedly-fully-booked-osat-partners-step-up-with-ases-cowop-in-focus/ | raw/articles/2025-12-08_trendforce_cowos-full-booked-ase-cowop.md | CoWoS-L/S fully booked; ASE CoWoP, Amkor Arizona $7B expansion
+2026-04-25 | https://www.trendforce.com/news/2026/01/21/news-tsmc-advanced-packaging-capex-projected-to-grow-24-cagr-in-2025-27-chiayi-ap7-targets-wmcm-and-copos/ | raw/articles/2026-01-21_trendforce_tsmc-ap-capex-ap7-copos.md | TSMC advanced packaging CapEx 24% CAGR; AP7 WMCM CoPoS targets

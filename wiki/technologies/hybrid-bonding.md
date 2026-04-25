@@ -3,8 +3,8 @@ title: "混合接合 / Hybrid Bonding"
 category: technology
 tags: [3D, hybrid-bonding, Cu-Cu, SoIC, ECTC, advanced-packaging]
 created: 2026-04-24
-updated: 2026-04-24
-sources: [2026-04-24_initial-survey]
+updated: 2026-04-25
+sources: [2026-04-24_initial-survey, 2026-03-01_ieee-eps_ectc2025-hybrid-bonding]
 related:
   - wiki/technologies/soic.md
   - wiki/technologies/cowos.md
@@ -26,9 +26,16 @@ related:
 混合接合（Hybrid Bonding）直接將兩顆晶片的銅墊（copper pad）在原子層次接合，無需錫凸塊（solder bump）作為中介。這使得接合間距（bond pitch）可以大幅縮小至微米等級，實現極高密度的晶片間互連。
 
 **與傳統微凸塊（Micro-bump）的差異：**
-- 傳統微凸塊：間距 ≥ 20µm，需要錫焊材料
-- 混合接合：間距可達 1–6µm，銅對銅直接接合
-- 結果：頻寬密度提升 10-100 倍，功耗降低
+- 傳統微凸塊：間距 ≥ 20µm（生產）/ 40–50µm（標準），需要錫焊材料
+- 混合接合：間距可達 1–6µm，銅對銅直接接合，無功率/訊號損失（no power/signal penalty）
+- 結果：頻寬密度提升 10–100 倍，功耗降低；目標互連密度 **1M 個/mm²**（數年內）
+
+**三大整合情境（ECTC 2025 框架）：**
+| 情境 | 成熟度 | 應用 |
+|------|--------|------|
+| **W2W**（Wafer-to-Wafer） | ✅ 量產中 | 記憶體堆疊（HBM 內部層間） |
+| **D2W**（Die-to-Wafer） | 🔄 快速成熟 | 邏輯-記憶體 / 邏輯-邏輯堆疊 |
+| **D2D**（Die-to-Die） | 🔬 新興 | Chiplet 架構、修復功能 |
 
 ---
 
@@ -75,11 +82,25 @@ related:
 
 ---
 
+## 製程挑戰 / Process Challenges（ECTC 2025 整理）
+
+- **表面缺陷控制**：CMP（化學機械研磨）後銅與介電層表面輪廓精度
+- **翹曲控制**：接合前晶圓與晶片的 warpage 管理
+- **切割精度**：電漿切割（plasma dicing）確保潔淨切面
+- **接合對準**：進入單微米等級後，對準難度幾何級數增加
+- **缺陷偵測**：間距越細，缺陷越難偵測、處理時間越長
+
+*Source: IEEE EPS ECTC 2025 Summary, 2026-03*
+
+---
+
 ## 學術研究焦點 / Academic Focus
 
 ECTC 2025 的核心技術主題之一：
-- 突破性混合接合技術（EV Group 展示）
+- 突破性混合接合技術（**EV Group** 展示：混合接合、無光罩微影、層轉移）
 - 晶圓接合對準精度提升
+- W2W/D2W/D2D 三情境成熟度評估（特別議程）
+- 熱應力新型量測方法（thermal stress metrology）
 - IR 雷射剝離技術（消除玻璃基板）
 - 已知良晶粒（KGD）測試方法
 

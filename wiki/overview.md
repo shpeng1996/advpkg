@@ -2,7 +2,7 @@
 title: "先進封裝知識庫總覽 / Advanced Packaging Wiki Overview"
 category: overview
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-04-25
 ---
 
 # 先進封裝知識庫總覽 / Advanced Packaging Wiki Overview
@@ -60,20 +60,16 @@ updated: 2026-04-24
 
 以下領域目前 wiki 覆蓋不足，建議優先補充：
 
-- [ ] **OSAT 廠商**（ASE Group、Amkor）的封裝技術與市場地位
-- [ ] **設備廠商**（EV Group、Besi、TEL）的混合接合關鍵設備
-- [ ] **扇出封裝**（InFO、FOPLP）詳細技術頁面
-- [ ] **面板級封裝（CoPoS）** 獨立頁面（目前散落在 TSMC 頁面）
-- [ ] **學術研究**：ECTC 2025 重點論文摘要
+- [x] **OSAT 廠商**（ASE Group、Amkor）的封裝技術與市場地位 ✅ 2026-04-25 新建頁面
+- [x] **設備廠商（EV Group）** 混合接合關鍵設備 ✅ 2026-04-25 新建頁面（Besi、TEL 尚待補充）
+- [ ] **扇出封裝**（InFO、FOPLP）詳細技術頁面（InFO 仍缺獨立頁面）
+- [x] **面板級封裝（CoPoS）** 獨立技術頁面 ✅ 2026-04-25 新建頁面
+- [x] **學術研究**：ECTC 2025 混合接合特別議程摘要 ✅ 2026-04-25 收錄
 - [ ] **地緣政治**：美日歐半導體供應鏈重組對先進封裝的影響
 - [ ] **散熱技術**：先進封裝熱管理（liquid cooling、embedded cooling）
+- [ ] **HBM4E 規格頁面**：HBM4E 詳細規格（開發完成後補充）
+- [ ] **Besi / TEL 設備廠商頁面**：封裝設備生態系仍需補充
 
 ---
 
-## Wiki 健康狀態 / Wiki Health（2026-04-24）
-
-- **頁面總數**：13 頁（實體 4、技術 5、概念 1、來源 1、總覽 1、索引 1）
-- **原始來源數**：1 篇（raw/reports/）
-- **最近 Lint**：未執行（建議於第 5 次 ingest 後執行）
-- **已知孤立頁面**：無
-- **待確認矛盾**：無
+## Wiki 健康狀態 / Wiki Health（202

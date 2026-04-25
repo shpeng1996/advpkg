@@ -3,8 +3,8 @@ title: "三星 / Samsung"
 category: entity
 tags: [IDM, foundry, memory, advanced-packaging, X-Cube, HBM]
 created: 2026-04-24
-updated: 2026-04-24
-sources: [2026-04-24_initial-survey]
+updated: 2026-04-25
+sources: [2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook]
 related:
   - wiki/entities/tsmc.md
   - wiki/entities/intel.md
@@ -31,9 +31,19 @@ related:
 
 ## 近期動態 / Recent Developments
 
+- **2026-02-12**：Samsung HBM4 正式首批出貨；已進入 **NVIDIA Rubin GPU** 量產供應。
+  *Source: TrendForce*
+
+- **2026-02**：GTC 2026 展示 HBM4（與 SK Hynix 共同展示）。
+
+- **2026-H1（目標）**：**HBM4E** 客製化設計完成（目標：2026 年 5–6 月）；量產時程尾隨 SK Hynix。
+  *Source: TrendForce 2026-01-23*
+
+- **2026**：Samsung 計畫 HBM 產能擴大 **50%**，目標月產能 ~250,000 片（從 ~170,000 片）。
+  *Source: TrendForce 2025-12-30*
+
 - **2025**：開始量產 **2nm** 製程（Samsung Foundry）
 - **2027**：計劃推出 **1.4nm** 製程
-- HBM4 生產中，與 SK Hynix 競爭 AI 加速器記憶體市場
 
 ---
 

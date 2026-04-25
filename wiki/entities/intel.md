@@ -3,8 +3,8 @@ title: "英特爾 / Intel"
 category: entity
 tags: [IDM, advanced-packaging, EMIB, Foveros, Intel18A]
 created: 2026-04-24
-updated: 2026-04-24
-sources: [2026-04-24_initial-survey]
+updated: 2026-04-25
+sources: [2026-04-24_initial-survey, 2026-03-18_trendforce_intel-emib-malaysia]
 related:
   - wiki/entities/tsmc.md
   - wiki/entities/samsung.md
@@ -21,13 +21,25 @@ related:
 
 ## 核心封裝技術 / Core Packaging Technologies
 
-- **EMIB（Embedded Multi-Die Interconnect Bridge）**：2.5D 封裝，以嵌入式矽橋連接多晶片，取代全面積矽中介層。與 TSMC CoWoS-L 技術路線相近但實作不同。
+- **EMIB（Embedded Multi-Die Interconnect Bridge）**：2.5D 封裝，以嵌入式矽橋連接多晶片，取代全面積矽中介層。與 TSMC CoWoS-L 技術路線相近但實作不同。目標封裝尺寸：**120×120 mm**（超越業界標準 100×100 mm）。
+- **EMIB-T**：EMIB 增強版，專為支援下一代 **HBM4** 整合設計；2H 2026 開始放量。
 - **Foveros 3D**：3D 晶片堆疊技術，支援多晶片異質整合；與 EMIB 組合使用。
+- **Foveros-R**：新增 Foveros 變體，提供靈活封裝選項（2026 年公布）。
+- **Foveros-B**：新增 Foveros 變體，提供更具成本效益的封裝選項（2026 年公布）。
 - **Foveros Direct**：銅對銅直接接合（類似 TSMC SoIC-X），追求更細間距。
 
 ---
 
 ## 近期動態 / Recent Developments
+
+- **2026-03**：馬來西亞先進封裝廠預計 **2026 年**投入營運，承擔晶片分類（die sort）與封裝前製程；同時支援 EMIB 與 Foveros 封裝流程。
+  *Source: TrendForce 2026-03-18*
+
+- **2026-03**：Intel 首度將高階封裝外包：EMIB 製程已建立於 **Amkor 韓國松島 K5 廠**。
+  *Source: TrendForce 2026-03-18*
+
+- **2025-12**：Intel 揭示 EMIB 放量計畫（2H 2026）；**18A-P / 18A-PT** 製程節點向外部客戶開放。
+  *Source: TrendForce 2025-12-05*
 
 - **Intel 18A 製程**已準備好接受客戶項目
 - **PowerDirect**（背面電源傳輸 Backside Power Delivery）為 Intel 18A 的演進版本
