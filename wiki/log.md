@@ -122,3 +122,30 @@
   - TSMC 2026 Tech Symposium（2026-04-22）揭露封裝規模路線圖：14-reticle CoWoS（2028）可整合 10 compute + 20 HBM；2024→2029 封裝電晶體成長 48×、頻寬成長 34×；COUPE CPO 2026 量產（2× 能效 / 10× 延遲）
   - HBM4E 三廠商並行：Samsung 和 SK Hynix 目標 2026-H1 完成開發，Micron 2027 推出（與 TSMC 合作）；規格：10 GT/s / 2.5 TB/s / 80W；2027 年佔 HBM 市場 40%
   - TSMC CoWoS 直接矽液冷（Direct-to-Silicon Liquid Cooling, ECTC 2025）是封裝層級散熱的里程碑，填補散熱知識空缺
+
+## [2026-04-26] collect | 每日自動蒐集 — 先進封裝最新動態（第三次）
+- 搜尋查詢數：7 組（InFO/WMCM、TEL 設備、地緣政治/CHIPS Act、Intel Foveros 2026、Intel EMIB 商業化、UCIe 3.0、Chiplets 2026）
+- 成功抓取：6 篇（articles/ 6, papers/ 0, reports/ 0）
+- 失敗/跳過：N/A（WebFetch 受網路白名單限制；所有 raw 檔案依 WebSearch 摘要內容建立，fetch_status: partial）
+- 學術代理：UNAVAILABLE ✗（WebFetch 僅允許 *.anthropic.com、claude.com）
+- 新增 wiki 頁面：3 頁
+  - wiki/technologies/info-wmcm.md（InFO/WMCM 扇出封裝技術頁，填補最後一個技術知識空缺）
+  - wiki/entities/tel.md（Tokyo Electron 設備廠商頁，填補 TEL 知識空缺）
+  - wiki/concepts/geopolitics-advanced-packaging.md（先進封裝地緣政治，填補地緣政治知識空缺）
+- 更新 wiki 頁面：5 頁
+  - wiki/entities/intel.md（Clearwater Forest 18A + Foveros Direct 3D；EMIB 2H26 數十億美元；Apple/Qualcomm 客戶；18A 外部代工重考）
+  - wiki/entities/tsmc.md（WMCM Apple A20 確認；AP3/AP7 WMCM 產能路線；InFO→WMCM 轉型脈絡）
+  - wiki/technologies/ucie.md（UCIe 3.0 詳規：64 GT/s、runtime recalibration、Raw-Mode；2026 年行業對齊）
+  - wiki/concepts/advanced-packaging-market.md（新增地緣政治維度段落；Intel 封裝即服務；TEL 設備廠進場）
+  - wiki/overview.md（知識空缺全部清零：InFO/WMCM ✅、地緣政治 ✅、TEL ✅；頁面統計更新至 39 頁）
+- 新增來源摘要頁：6 頁
+  - wiki/sources/2025-12-18_trendforce_apple-wmcm-a20.md
+  - wiki/sources/2026-01-23_trendforce_chip-tools-tel-asml.md
+  - wiki/sources/2026-03-03_trendforce_intel-clearwater-forest.md
+  - wiki/sources/2026-03-05_trendforce_intel-emib-billions.md
+  - wiki/sources/2024-10-01_3dincites_geopolitics-packaging.md
+  - wiki/sources/2026-04-01_semiengineering_chiplets-2026.md
+- 主要新知識：
+  1. **InFO→WMCM 封裝世代交替確認**：Apple A20（iPhone 18）正式轉 WMCM（2026 量產）；WMCM 為多 die 整合於 RDL 的下一代扇出封裝；TSMC AP3 設備升級中、AP7 二期為 Apple 專屬，目標 60K wafer/月（2026 年底）——填補 wiki 最後一個重要技術空缺
+  2. **地緣政治框架建立**：美國 IC 封裝全球份額僅 3%（先進封裝 <1%）；CHIPS Act + NAPMP 力圖改變現狀；中國以 Chiplet/先進封裝為突破制裁路徑；Deloitte 2026 預測 Chiplet 成主要地緣政治咽喉點——wiki 全新知識類別
+  3. **Intel Foveros Direct 3D 2026 量產**：Clearwater Forest（18A）採用 Cu-Cu 直接接合（<10µm pitch），組合 EMIB 形成「EMIB 3.5D」混合架構；EMIB 商業化加速（Apple/Qualcomm 探索，潛在 2H26 數十億美元營收）

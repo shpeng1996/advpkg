@@ -1,10 +1,10 @@
 ---
 title: "UCIe — Universal Chiplet Interconnect Express"
 category: technology
-tags: [standards, chiplet, interconnect, UCIe, 3D, hybrid-bonding]
+tags: [standards, chiplet, interconnect, UCIe, 3D, hybrid-bonding, UCIe-3.0]
 created: 2026-04-24
-updated: 2026-04-24
-sources: [2026-04-24_initial-survey]
+updated: 2026-04-26
+sources: [2026-04-24_initial-survey, 2026-04-01_semiengineering_chiplets-2026]
 related:
   - wiki/technologies/hybrid-bonding.md
   - wiki/technologies/hbm4.md
@@ -32,7 +32,7 @@ UCIe 定義 chiplet 之間的實體與協定層介面，使不同廠商製造的
 |------|---------|---------|
 | UCIe 1.0 | 2022-03 | 2.5D 橫向 chiplet 互連基礎標準 |
 | UCIe 2.0 / Advanced | 2024 | 首個 3D 原生設計；UCIe-3D 支援混合接合；bump pitch 最小 **1µm** |
-| **UCIe 3.0** | **2025-08** | 正式批准；業界公認 chiplet 互連「通用語言」成熟版本 |
+| **UCIe 3.0** | **2025-08-05** | Peak speed **48/64 GT/s**（UCIe 2.0 的 2×）；執行期重校（runtime recalibration）；Raw-Mode 連續傳輸；完全向下相容 1.0/2.0 |
 
 ---
 
@@ -50,7 +50,8 @@ UCIe 2.0 引入 **UCIe-3D** 最佳化：
 
 - **2022-03**：UCIe 1.0 發布，初步建立 chiplet 互連標準
 - **2025**：IFTLE 618（3D InCites）分析 UCIe Standard vs Advanced vs UCIe 3 三版差異
-- **2025-08**：UCIe 3.0 正式批准
+- **2025-08-05**：UCIe 3.0 正式批准；Peak speed 64 GT/s；新增 runtime recalibration 與 Raw-Mode
+- **2026 Q1–Q2**：多家公司（GPU、EDA、類比、光學互連）宣布對齊 64 GT/s UCIe 3.0 路線圖
 - **2026-Q3**（預測）：UCIe 2.0 生態系首批 HBM4 混合接合商業產品
 - **2027**（預測）：UCIe 標準普及至行動裝置；memory-on-logic 架構商業化
 
@@ -84,8 +85,19 @@ UCIe 2.0 引入 **UCIe-3D** 最佳化：
 
 ---
 
+## UCIe 3.0 新增功能詳解 / UCIe 3.0 Feature Details
+
+| 功能 | 說明 |
+|------|------|
+| **速度提升** | 32 GT/s（2.0）→ 48/64 GT/s（3.0），頻寬密度翻倍 |
+| **Runtime Recalibration** | 連結可在運行中重調校（reuse init states），提高系統效率 |
+| **Raw-Mode 連續傳輸** | 支援 SoC-to-DSP 等不中斷資料流（通信/訊號處理應用） |
+| **向下相容** | 完全相容 UCIe 1.0 / 2.0 IP，保護既有投資 |
+| **年度更新節奏** | 自 2023 年起每年發布一個新版本，顯示快速演進 |
+
 ## 爭議與未解問題 / Open Questions
 
 - UCIe 3.0 vs Intel 的 CXL / NVIDIA 的 NVLink 在 AI 互連的競爭格局？
 - Chiplet 生態系（第三方 chiplet marketplace）何時成熟？
 - UCIe 標準能否統一 memory interface（目前 HBM 仍有專屬介面）？
+- 64 GT/s 連結的功耗 vs 頻寬效益，是否足以取代短距光學互連（CPO）？

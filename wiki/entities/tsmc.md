@@ -1,10 +1,10 @@
 ---
 title: "台積電 / TSMC"
 category: entity
-tags: [foundry, advanced-packaging, CoWoS, SoIC, CoPoS, COUPE, CPO]
+tags: [foundry, advanced-packaging, CoWoS, SoIC, CoPoS, COUPE, CPO, InFO, WMCM]
 created: 2026-04-24
-updated: 2026-04-25
-sources: [2026-04-24_initial-survey, 2026-04-13_trendforce_copos-pilot, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe]
+updated: 2026-04-26
+sources: [2026-04-24_initial-survey, 2026-04-13_trendforce_copos-pilot, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2025-12-18_trendforce_apple-wmcm-a20]
 related:
   - wiki/technologies/cowos.md
   - wiki/technologies/soic.md
@@ -26,7 +26,7 @@ related:
 
 - [[technologies/cowos]] — CoWoS（Chip-on-Wafer-on-Substrate）：2.5D 旗艦封裝，分 CoWoS-S（矽中介層）、CoWoS-L（矽橋）、CoWoS-R（RDL）三種變體
 - [[technologies/soic]] — SoIC（System on Integrated Chips）：3D 堆疊技術，包含 SoIC-X（混合接合）與 SoIC-W（微凸塊）
-- InFO（Integrated Fan-Out）：扇出型晶圓級封裝，主攻行動晶片
+- [[technologies/info-wmcm]] — **InFO / WMCM**：扇出型封裝；InFO（2016）為 Apple 行動晶片服務；**WMCM**（2026 量產）為其繼承者，支援多 die 整合於 RDL
 - **CoPoS**（Chip-on-Panel-on-Substrate）：次世代面板級封裝（開發中）
 
 ---
@@ -46,6 +46,9 @@ related:
 
 - **2026-04**：NVIDIA 搶佔台積電 2026 年 CoWoS 總產能 60–65%；AMD 佔 ~11%（MI400 系列）
   *Source: CNBC 2026-04-08*
+
+- **2025-12-18**：確認 Apple iPhone 18（A20 系列）將採用 **WMCM** 封裝取代 InFO；AP3（Longtan）設備升級中，AP7 二期定為 **Apple 專屬 WMCM** 基地；WMCM 目標產能 **60,000 晶圓/月**（2026 年底）。
+  *Source: TrendForce 2025-12-18*
 
 - **2026-01**：法說會揭露年度資本支出計畫 $52–56B；其中 10–20% 用於先進封裝。先進封裝 CapEx 2025–27 CAGR 預計達 **24%**。AP7（嘉義）定位為 WMCM 與 CoPoS 核心廠房。
   *Source: TrendForce 2026-01-21*
@@ -72,6 +75,8 @@ related:
 | CoWoS 目標尺寸 | 14 reticles（~10 compute + 20 HBM） | 2028 |
 | COUPE CPO 量產啟動 | 2026 年 | — |
 | A14-to-A14 SoIC | 1.8× I/O 密度 vs N2-to-N2 | 2029 |
+| WMCM 產能目標 | 60,000 晶圓/月 | 2026 年底 |
+| AP3 轉型 | InFO → WMCM 設備升級 | 2025–2026 |
 
 台積電在先進封裝領域處於主導地位，特別是 AI 加速器所需的 CoWoS 與 SoIC 製程，競爭對手在 3–5 年內難以追上其技術與產能規模。
 

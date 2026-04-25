@@ -1,10 +1,10 @@
 ---
 title: "先進封裝市場 / Advanced Packaging Market"
 category: concept
-tags: [market, forecast, CAGR, supply-chain, HBM, chiplet]
+tags: [market, forecast, CAGR, supply-chain, HBM, chiplet, geopolitics, equipment]
 created: 2026-04-24
-updated: 2026-04-24
-sources: [2026-04-24_initial-survey]
+updated: 2026-04-26
+sources: [2026-04-24_initial-survey, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2026-01-23_trendforce_chip-tools-tel-asml, 2026-03-05_trendforce_intel-emib-billions]
 related:
   - wiki/entities/tsmc.md
   - wiki/entities/sk-hynix.md
@@ -108,8 +108,32 @@ AI 加速器供應鏈（典型路徑）：
 
 ---
 
+## 地緣政治維度 / Geopolitical Dimension（2026-04-26 新增）
+
+### 美國的封裝能力缺口
+
+- 美國商務部數據：全球 IC 封裝僅 **~3% 在美國**；先進封裝比例更低（<1% 估計）
+- 美國 CHIPS Act（$520 億）設定 NAPMP 計畫，目標在美國建立完整先進封裝生態系
+- **Amkor Arizona**（$70 億，2028 投產）為 CHIPS Act 旗艦封裝項目
+- Deloitte 2026 預測：Chiplet 跨國採購複雜性將成為**主要地緣政治咽喉點**
+- 詳見 → [[concepts/geopolitics-advanced-packaging]]
+
+### 設備廠商進入先進封裝
+
+TEL、ASML、Applied Materials、Lam Research 等前端設備廠商 2026 年大舉進入先進封裝市場：
+- TEL Kumamoto 基地（¥470 億，2026 春季啟動）
+- TEL+AMAT 合資 **Eteris**
+- 封裝設備複雜度已接近晶圓廠製程等級
+
+### Intel 封裝即服務
+
+- Intel EMIB 可向外部客戶提供封裝服務（Apple、Qualcomm 探索中）
+- 潛在 2H26 開始產生**數十億美元**封裝服務營收
+- 可封裝 TSMC-made dies，形成跨晶圓廠封裝合作模式
+
 ## 參考資料 / References
 
 - [2026 Advanced Packaging Outlook Report — TechInsights](https://www.techinsights.com/outlook-reports-2026/advanced-packaging-outlook-report)
 - [Advanced Packaging Market 2026–2035 — Acumen Research](https://www.acumenresearchandconsulting.com/advanced-packaging-market)
 - [Advanced Packaging Market — Mordor Intelligence](https://www.mordorintelligence.com/industry-reports/advanced-packaging-market)
+- [[concepts/geopolitics-advanced-packaging]] — 地緣政治深度分析

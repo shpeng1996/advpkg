@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-04-25
-**頁面總數 Total Pages**：32
-**原始來源數 Sources**：12
+**更新時間 Updated**：2026-04-26
+**頁面總數 Total Pages**：39
+**原始來源數 Sources**：18
 
 ---
 
@@ -22,6 +22,7 @@
 - [[entities/amkor]] — Amkor；全球第二大 OSAT；Arizona $70 億廠（2028 投產）；Intel EMIB 外包夥伴⭐新增
 - [[entities/ev-group]] — EV Group（EVG）；混合接合設備領導者；ECTC 2025 展示無光罩微影與層轉移⭐新增
 - [[entities/besi]] — BE Semiconductor（Besi）；D2W 混合接合設備主供應商；Datacon 8800 CHAMEO；Kinex 平台（Applied Materials 持股 9%）⭐新增
+- [[entities/tel]] — Tokyo Electron（TEL）；RDL 製程設備領導者；Kumamoto 研發基地（¥470 億，2026 春）；Eteris 合資（與 AMAT）⭐新增
 
 ---
 
@@ -34,6 +35,7 @@
 - [[technologies/hbm4]] — HBM4；JEDEC JESD270-4；1.65+ TB/s；SK Hynix ~70% NVIDIA 份額；Samsung 2026-02 首批出貨；HBM4E 2026-H1 開發中
 - [[technologies/ucie]] — UCIe；Chiplet 互連標準；UCIe 3.0（2025-08）48/64 GT/s；UCIe 2.0 支援 3D 混合接合（1µm）
 - [[technologies/copackaged-optics]] — TSMC-COUPE™ 共封裝光學元件（CPO）；2026 年量產；2× 能效、10× 延遲改善⭐新增
+- [[technologies/info-wmcm]] — InFO（2016 商轉）+ WMCM（2026 量產）；TSMC 行動晶片封裝旗艦；Apple A20 iPhone18 採用 WMCM⭐新增
 
 ---
 
@@ -41,6 +43,7 @@
 
 - [[concepts/advanced-packaging-market]] — 市場規模（2025：$43–52B，CAGR 9–10%）、供應鏈、技術市佔、2026–2030 趨勢
 - [[concepts/thermal-management]] — 先進封裝熱管理；TSMC CoWoS 直接矽液冷（ECTC 2025）；3D-IC 熱點問題；TIM 技術分類⭐新增
+- [[concepts/geopolitics-advanced-packaging]] — 先進封裝地緣政治；美中晶片戰；CHIPS Act；Chiplet 咽喉點；美國封裝份額僅 3%⭐新增
 
 ---
 
@@ -56,6 +59,12 @@
 - [[sources/2025-09-12_trendforce_foplp-competitive-2025]] — FOPLP 競爭格局：Powertech 90% 良率；TSMC 玻璃 vs Samsung；Resonac+AMAT+TEL 生態（2025-09-12）⭐新增
 - [[sources/2026-03-01_3dincites_besi-packaging-power-shift]] — Besi D2W 混合接合設備；Kinex 平台 HVM 就緒；Applied Materials 9% 持股（2026-03-01）⭐新增
 - [[sources/2025-12-01_semiengineering_thermal-management]] — 先進封裝熱管理：TSMC 直接矽液冷、3D 熱點、TIM 演進（2025-12）⭐新增
+- [[sources/2025-12-18_trendforce_apple-wmcm-a20]] — Apple A20/iPhone 18 採用 WMCM 封裝；InFO→WMCM 過渡；AP3/AP7 WMCM 產能⭐新增
+- [[sources/2026-01-23_trendforce_chip-tools-tel-asml]] — TEL/ASML/AMAT 加速布局先進封裝；TEL Kumamoto ¥470 億；Eteris 合資⭐新增
+- [[sources/2026-03-03_trendforce_intel-clearwater-forest]] — Intel Clearwater Forest 18A + Foveros Direct 3D（<10µm）+ EMIB 3.5D（MWC 2026）⭐新增
+- [[sources/2026-03-05_trendforce_intel-emib-billions]] — Intel EMIB 2H26 潛在數十億美元；Apple/Qualcomm 客戶探索；18A 外部代工再考慮⭐新增
+- [[sources/2024-10-01_3dincites_geopolitics-packaging]] — 先進封裝為美中晶片戰新戰場；美國封裝份額 3%；CHIPS Act；Chiplet 地緣政治咽喉點⭐新增
+- [[sources/2026-04-01_semiengineering_chiplets-2026]] — Chiplets 2026 現況：UCIe 3.0（64 GT/s）、CoWoS 80K/月、地緣政治框架⭐新增
 - [[sources/2026-04-24_initial-survey]] — 先進封裝產業與學術趨勢初步調查（AI 網路蒐集彙整，2026-04-24）
 
 ---
