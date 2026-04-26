@@ -149,3 +149,31 @@
   1. **InFO→WMCM 封裝世代交替確認**：Apple A20（iPhone 18）正式轉 WMCM（2026 量產）；WMCM 為多 die 整合於 RDL 的下一代扇出封裝；TSMC AP3 設備升級中、AP7 二期為 Apple 專屬，目標 60K wafer/月（2026 年底）——填補 wiki 最後一個重要技術空缺
   2. **地緣政治框架建立**：美國 IC 封裝全球份額僅 3%（先進封裝 <1%）；CHIPS Act + NAPMP 力圖改變現狀；中國以 Chiplet/先進封裝為突破制裁路徑；Deloitte 2026 預測 Chiplet 成主要地緣政治咽喉點——wiki 全新知識類別
   3. **Intel Foveros Direct 3D 2026 量產**：Clearwater Forest（18A）採用 Cu-Cu 直接接合（<10µm pitch），組合 EMIB 形成「EMIB 3.5D」混合架構；EMIB 商業化加速（Apple/Qualcomm 探索，潛在 2H26 數十億美元營收）
+
+## [2026-04-27] collect | 每日自動蒐集 — 先進封裝最新動態（第四次）
+- 搜尋查詢數：7 組（TSMC CoWoS 擴張、HBM4/HBM4E 三廠、混合接合研究、FOPLP/CoPoS 競賽、Intel EMIB 2026、先進封裝市場預測、NVIDIA GB300 封裝）
+- 成功抓取：6 篇（articles/ 6, papers/ 0, reports/ 0）
+- 失敗/跳過：多篇（WebFetch 頁面過大無法直接解析；所有 raw 檔依 WebSearch 摘要建立，fetch_status: partial）
+- 學術代理：UNAVAILABLE ✗（WebFetch 頁面過大，>80K 字元，超過工具上限）
+- 新增 wiki 頁面：0 頁（所有重要實體/技術/概念頁面已建立）
+- 更新 wiki 頁面：9 頁
+  - wiki/entities/intel.md（Google TPU v9 2027 EMIB；Amazon AWS；Meta MTIA；CSP 三巨頭評估；「代工廠中立」定位；客戶管線更新）
+  - wiki/entities/tsmc.md（Arizona P6 封裝基地 2028 破土；WMCM 60K wsm 目標更新；AP7 Phase 2 Apple 專屬詳情）
+  - wiki/entities/samsung.md（越南 $4B 封測廠；HBM4 份額 30–35% 目標；16 層 H2'26；HBM3E 失利背景脈絡）
+  - wiki/entities/ase-group.md（六廠全球同步破土最大規模建廠計畫）
+  - wiki/entities/amkor.md（Songdo K5 EMIB 重要性上升；新動態確認）
+  - wiki/technologies/hbm4.md（16 層 H2'26 NVIDIA 要求；Micron >11 Gbps；全行業 80–100% 產能增長 2024→2026；供應商份額更新；HBM5 2029）
+  - wiki/technologies/info-wmcm.md（60K wsm 目標；AP3 升級；AP7 Phase 2 Apple 專屬；>120K wsm 2027；WMCM 排他窗口 2027–28）
+  - wiki/concepts/advanced-packaging-market.md（Intel CSP 封裝競爭 Google/Amazon/Meta；OSAT 競賽加速；越南封裝崛起；面板級 2028–29 下一波焦點）
+  - wiki/concepts/geopolitics-advanced-packaging.md（Arizona P6 封裝轉用 2028 破土；越南 Samsung $4B 廠地緣意義）
+- 新增來源摘要頁：6 頁
+  - wiki/sources/2026-04-20_trendforce_ase-samsung-amkor-capacity.md
+  - wiki/sources/2026-04-07_trendforce_intel-emib-google-amazon.md
+  - wiki/sources/2026-01-09_trendforce_nvidia-hbm4-16layer.md
+  - wiki/sources/2025-12-04_trendforce_tsmc-ap7-arizona-p6.md
+  - wiki/sources/2025-12-30_trendforce_samsung-hbm-surge.md
+  - wiki/sources/2026-01-20_trendforce_tsmc-wmcm-apple.md
+- 主要新知識：
+  1. **Intel EMIB 進入 CSP AI 加速器競爭**：Google（TPU v9 2027）、Amazon AWS、Meta（MTIA）三大雲端巨頭同步評估 EMIB——規模遠超先前已知的 Apple/Qualcomm 管線。EMIB「代工廠中立」封裝（可封裝 TSMC 晶圓）是對抗 TSMC CoWoS 壟斷的重要替代方案
+  2. **HBM4 16 層競賽啟動**：NVIDIA H2 2026 正式要求 16 層 HBM4（現行 12 層），三家供應商全面衝刺；Micron >11 Gbps 超規格表現首次確認；全行業 HBM 產能 2024→2026 年底增長 80–100%
+  3. **OSAT 全球建廠競賽**：ASE 六廠同步破土（史上最大）、Samsung $4B 越南廠——AI 封裝需求規模已超過任何單一地點的承載上限，全球分散布局成必然趨勢

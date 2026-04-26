@@ -3,8 +3,8 @@ title: "三星 / Samsung"
 category: entity
 tags: [IDM, foundry, memory, advanced-packaging, X-Cube, HBM]
 created: 2026-04-24
-updated: 2026-04-25
-sources: [2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook]
+updated: 2026-04-27
+sources: [2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2025-12-30_trendforce_samsung-hbm-surge, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-01-09_trendforce_nvidia-hbm4-16layer]
 related:
   - wiki/entities/tsmc.md
   - wiki/entities/intel.md
@@ -39,30 +39,10 @@ related:
 - **2026-H1（目標）**：**HBM4E** 客製化設計完成（目標：2026 年 5–6 月）；量產時程尾隨 SK Hynix。
   *Source: TrendForce 2026-01-23*
 
-- **2026**：Samsung 計畫 HBM 產能擴大 **50%**，目標月產能 ~250,000 片（從 ~170,000 片）。
-  *Source: TrendForce 2025-12-30*
+- **2026-04-20**：Samsung 宣布在**越南**投資 **USD 40 億**新建封裝與測試廠，進一步強化東南亞產能布局（韓國本土外）。同期，Samsung 選擇**有機/PCB 型材料**作為面板級封裝（FOPLP）基板，與 TSMC 的玻璃路線形成差異化。
+  *Source: TrendForce 2026-04-20*
 
-- **2025**：開始量產 **2nm** 製程（Samsung Foundry）
-- **2027**：計劃推出 **1.4nm** 製程
+- **2026-01**：NVIDIA 要求三大 HBM 供應商在 H2 2026 提供 **16 層 HBM4**（現行 12 層量產）；Samsung 正加速 16 層開發以符合 NVIDIA 時程要求。
+  *Source: TrendForce 2026-01-09*
 
----
-
-## 市場地位 / Market Position
-
-三星在 AI 晶圓代工市場落後於台積電，但在記憶體（HBM）與封裝的垂直整合上具獨特優勢。X-Cube 3D 技術路線與 TSMC SoIC 形成競爭。
-
----
-
-## 與其他實體的關係 / Relationships
-
-- **TSMC**：晶圓代工主要競爭對手
-- **SK Hynix**：HBM 市場主要競爭對手
-- **NVIDIA / AMD**：潛在晶圓代工客戶（目前大部分仍在 TSMC）
-
----
-
-## 爭議與未解問題 / Open Questions
-
-- Samsung Foundry 的良率問題是否已改善？
-- 三星 HBM4 產品在性能與良率上能否趕上 SK Hynix？
-- X-Cube 3D 接合間距的演進路線？
+- **2026**：Samsung 計畫 HBM 產能擴大 **50%**，目標月產能 **~250,000 片**（從 ~170,000 片）；擴產重心放在 HBM4。背景：2024–2025 年 HBM3E 向 NVIDIA 供應品質問題造成市場份額流失，50% 

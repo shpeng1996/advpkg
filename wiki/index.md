@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-04-26
-**頁面總數 Total Pages**：39
-**原始來源數 Sources**：18
+**更新時間 Updated**：2026-04-27
+**頁面總數 Total Pages**：45
+**原始來源數 Sources**：24
 
 ---
 
@@ -65,24 +65,8 @@
 - [[sources/2026-03-05_trendforce_intel-emib-billions]] — Intel EMIB 2H26 潛在數十億美元；Apple/Qualcomm 客戶探索；18A 外部代工再考慮⭐新增
 - [[sources/2024-10-01_3dincites_geopolitics-packaging]] — 先進封裝為美中晶片戰新戰場；美國封裝份額 3%；CHIPS Act；Chiplet 地緣政治咽喉點⭐新增
 - [[sources/2026-04-01_semiengineering_chiplets-2026]] — Chiplets 2026 現況：UCIe 3.0（64 GT/s）、CoWoS 80K/月、地緣政治框架⭐新增
-- [[sources/2026-04-24_initial-survey]] — 先進封裝產業與學術趨勢初步調查（AI 網路蒐集彙整，2026-04-24）
-
----
-
-## 分析報告 Analyses
-
-（尚無）
-
----
-
-## 快速搜尋指引 / Quick Search Guide
-
-| 我想了解… | 去哪裡看 |
-|----------|---------|
-| 台積電最新封裝技術動態 | [[entities/tsmc]] |
-| CoWoS vs EMIB 技術比較 | [[technologies/cowos]] + [[entities/intel]] |
-| HBM4 規格與市場 | [[technologies/hbm4]] |
-| Chiplet 互連標準 | [[technologies/ucie]] |
-| 市場規模與成長預測 | [[concepts/advanced-packaging-market]] |
-| 混合接合技術原理 | [[technologies/hybrid-bonding]] |
-| 整體市場競爭格局 | [[wiki/overview]] |
+- [[sources/2026-04-20_trendforce_ase-samsung-amkor-capacity]] — ASE 六廠全球同步破土；Samsung $4B 越南；Amkor 新動態（2026-04-20）⭐新增
+- [[sources/2026-04-07_trendforce_intel-emib-google-amazon]] — Intel EMIB vs TSMC CoWoS；Google TPU v9 2027、Amazon、Meta 評估 EMIB（2026-04-07）⭐新增
+- [[sources/2026-01-20_trendforce_tsmc-wmcm-apple]] — TSMC WMCM 2027 倍增至 >120K wsm；AP3+AP7 Phase 2；Apple 排他 2027–28（2026-01-20）⭐新增
+- [[sources/2026-01-09_trendforce_nvidia-hbm4-16layer]] — NVIDIA 推動 HBM4 16 層 H2'26；三家供應商均目標 250K wsm；Micron >11 Gbps（2026-01-09）⭐新增
+- [[sources/2025-12-30_trendforce_samsung-hbm-s

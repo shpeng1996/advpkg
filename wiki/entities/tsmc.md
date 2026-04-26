@@ -3,8 +3,8 @@ title: "台積電 / TSMC"
 category: entity
 tags: [foundry, advanced-packaging, CoWoS, SoIC, CoPoS, COUPE, CPO, InFO, WMCM]
 created: 2026-04-24
-updated: 2026-04-26
-sources: [2026-04-24_initial-survey, 2026-04-13_trendforce_copos-pilot, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2025-12-18_trendforce_apple-wmcm-a20]
+updated: 2026-04-27
+sources: [2026-04-24_initial-survey, 2026-04-13_trendforce_copos-pilot, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2025-12-18_trendforce_apple-wmcm-a20, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-01-20_trendforce_tsmc-wmcm-apple]
 related:
   - wiki/technologies/cowos.md
   - wiki/technologies/soic.md
@@ -32,6 +32,12 @@ related:
 ---
 
 ## 近期動態 / Recent Developments
+
+- **2026-04**（新增）：**Arizona P6 封裝基地規劃**——TSMC 計畫將原定晶圓廠 Phase 6（P6）區域**重新規劃為先進封裝廠**（美國本土封裝基地）。技術路線：SoIC 先行，後續引入 CoWoS。美國 SoIC/CoPoS 廠預計 **2028 年破土**，2030+ 年才有規模產出。目的：呼應 CHIPS Act 要求、消除「亞利桑那晶圓需運回台灣封裝」的供應鏈斷點。
+  *Source: TrendForce 2025-12-04*
+
+- **2026-01-20**：WMCM 產能擴張計畫更新：AP3（Longtan）升級 + AP7 Phase 2（Apple 專屬）雙線並進；**2026 年底 WMCM 月產能目標 60,000 片**；2027 年預計倍增至 >120,000 片。Apple 排他窗口預計 2027–2028 年後開放其他客戶。
+  *Source: TrendForce 2026-01-20*
 
 - **2026-04-22**：**TSMC 2026 北美技術研討會**重大封裝公告：
   - **14 reticle CoWoS** 計畫 2028 年量產，可整合約 10 顆大型計算晶片與 20 組 HBM stacks
@@ -78,22 +84,4 @@ related:
 | WMCM 產能目標 | 60,000 晶圓/月 | 2026 年底 |
 | AP3 轉型 | InFO → WMCM 設備升級 | 2025–2026 |
 
-台積電在先進封裝領域處於主導地位，特別是 AI 加速器所需的 CoWoS 與 SoIC 製程，競爭對手在 3–5 年內難以追上其技術與產能規模。
-
----
-
-## 與其他實體的關係 / Relationships
-
-- **NVIDIA**：最大 CoWoS 客戶，2026 年佔台積電封裝產能 60–65%
-- **AMD**：第二大 CoWoS 客戶，~11%，押注 SoIC 3D 尋求密度優勢
-- **Intel**：競爭對手（EMIB vs CoWoS-L；Foveros vs SoIC-X）
-- **Samsung Foundry**：競爭對手（AI 晶圓代工）
-- **SK Hynix**：HBM 供應商，透過 CoWoS 整合至 AI 加速器
-
----
-
-## 爭議與未解問題 / Open Questions
-
-- CoPoS 面板級封裝的翹曲控制與大規模良率何時能商業化？
-- 亞利桑那先進封裝廠的地緣政治風險與成本結構？
-- UCIe 生態系成熟後，台積電封裝技術的差異化競爭力如何維持？
+台積電在

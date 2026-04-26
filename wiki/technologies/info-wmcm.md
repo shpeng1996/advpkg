@@ -3,8 +3,8 @@ title: "InFO & WMCM — 整合扇出封裝與晶圓級多晶片模組 / Integrat
 category: technology
 tags: [InFO, WMCM, fan-out, TSMC, Apple, RDL, mobile-packaging]
 created: 2026-04-26
-updated: 2026-04-26
-sources: [2025-12-18_trendforce_apple-wmcm-a20, 2026-04-01_semiengineering_chiplets-2026]
+updated: 2026-04-27
+sources: [2025-12-18_trendforce_apple-wmcm-a20, 2026-04-01_semiengineering_chiplets-2026, 2026-01-20_trendforce_tsmc-wmcm-apple, 2025-12-04_trendforce_tsmc-ap7-arizona-p6]
 related: [wiki/entities/tsmc.md, wiki/technologies/copos.md, wiki/concepts/advanced-packaging-market.md]
 ---
 
@@ -57,8 +57,10 @@ WMCM 是 InFO 的演進版，專為多晶片整合設計：
 - **2019–2023**：InFO 持續用於 Apple A 系列、M 系列
 - **2024**：WMCM 研發確認，TSMC AP3 開始設備升級評估
 - **2025-12**：TrendForce 報導 Apple A20 確認採用 WMCM（iPhone 18）
-- **2026**：AP3 設備升級（InFO→WMCM）；AP7 二期 Apple 專屬 WMCM 新線
-- **2026 年底**：WMCM 目標產能 60,000 晶圓/月
+- **2026**：AP3（Longtan）設備升級（InFO → WMCM），AP3 在過渡期同時生產 InFO 與 WMCM
+- **2026 年底**：WMCM 目標產能 **60,000 晶圓/月**（AP3 + AP7 Phase 2 合計）
+- **2027**：AP7 Phase 2 全速運作，WMCM 產能預計 **>120,000 晶圓/月**（倍增）
+- **2027–2028**：Apple 排他窗口結束，WMCM 預計向其他 OEM 客戶開放
 
 ---
 
@@ -87,12 +89,4 @@ WMCM 是 InFO 的演進版，專為多晶片整合設計：
 
 - [[technologies/copos]]：面板級封裝（CoPoS/FOPLP），大尺寸基板，成本更低，目標 2028–29 量產
 - [[technologies/cowos]]：TSMC 2.5D 旗艦，針對 AI/HPC；InFO/WMCM 針對行動端，兩者定位互補
-- [[technologies/soic]]：3D 堆疊，可與 InFO 結合（InFO-SoIC）
-
----
-
-## 爭議與未解問題 / Open Questions
-
-- WMCM 技術細節（RDL 層數、最小 pitch）尚未公開揭露
-- InFO 何時完全退出 Apple 旗艦線？M 系列晶片是否也轉 WMCM？
-- 其他 OEM（非 Apple 客戶）是否會採用 WMCM？TSMC 是否向 Apple 以外開放？
+- [[technologies/soic]]：3D 堆疊，可與 In
