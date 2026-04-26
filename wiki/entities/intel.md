@@ -60,4 +60,25 @@ related:
 
 ## 市場地位 / Market Position
 
-Intel Foundry 在先進封裝領域位居第二梯隊，EMIB 技術在高效能運算領域有一定的客戶基礎，但整體產能與技術領先程度落後於 TSMC。2026 年 Q2，隨著 Google、Amazon、Meta 三大 CSP 開始評估 EMIB，Intel 封裝服務的市場地位顯著提升。EMIB「代工廠中立」的定
+Intel Foundry 在先進封裝領域位居第二梯隊，EMIB 技術在高效能運算領域有一定的客戶基礎，但整體產能與技術領先程度落後於 TSMC。2026 年 Q2，隨著 Google、Amazon、Meta 三大 CSP 開始評估 EMIB，Intel 封裝服務的市場地位顯著提升。EMIB「代工廠中立」的定位（可封裝任何代工廠晶片）是差異化競爭優勢。
+
+**EMIB 客戶管線（2026-04）**：Apple（探索中）、Qualcomm（探索中）、Google（TPU v9 2027 計畫採用）、Amazon AWS（評估中）、Meta（評估中）
+
+---
+
+## 與其他實體的關係 / Relationships
+
+- **TSMC**：封裝技術主要競爭對手；部分 Intel 晶片委外台積電代工；EMIB 可封裝 TSMC-made dies（互補可能性）
+- **Samsung**：製程競爭對手（2nm、1.4nm）
+- **Apple / Qualcomm**：潛在 EMIB 封裝服務客戶（2026 年探索中）
+- **Google**：TPU v9（2027）計畫採用 EMIB——潛在重大轉單
+- **Amazon AWS / Meta**：評估 EMIB 用於各自 AI 加速器（Trainium、MTIA）
+- **Amkor**：EMIB 外包封裝夥伴（韓國 K5 廠）
+
+---
+
+## 爭議與未解問題 / Open Questions
+
+- Intel Foundry 的財務壓力是否影響先進封裝的長期投入？
+- EMIB + Foveros 組合能否在 AI 加速器市場取得更多份額？
+- Foveros Direct 接合間距追趕 TSMC SoIC-X 的進度？

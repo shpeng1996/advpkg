@@ -69,4 +69,26 @@
 - [[sources/2026-04-07_trendforce_intel-emib-google-amazon]] — Intel EMIB vs TSMC CoWoS；Google TPU v9 2027、Amazon、Meta 評估 EMIB（2026-04-07）⭐新增
 - [[sources/2026-01-20_trendforce_tsmc-wmcm-apple]] — TSMC WMCM 2027 倍增至 >120K wsm；AP3+AP7 Phase 2；Apple 排他 2027–28（2026-01-20）⭐新增
 - [[sources/2026-01-09_trendforce_nvidia-hbm4-16layer]] — NVIDIA 推動 HBM4 16 層 H2'26；三家供應商均目標 250K wsm；Micron >11 Gbps（2026-01-09）⭐新增
-- [[sources/2025-12-30_trendforce_samsung-hbm-s
+- [[sources/2025-12-30_trendforce_samsung-hbm-surge]] — Samsung HBM 50% 衝刺；250K wsm/月目標；HBM4 份額 30–35%；HBM5 2029（2025-12-30）⭐新增
+- [[sources/2025-12-04_trendforce_tsmc-ap7-arizona-p6]] — TSMC AP7 啟用；Arizona P6 封裝基地 2028 破土；24% CapEx CAGR（2025-12-04）⭐新增
+- [[sources/2026-04-24_initial-survey]] — 先進封裝產業與學術趨勢初步調查（AI 網路蒐集彙整，2026-04-24）
+
+---
+
+## 分析報告 Analyses
+
+（尚無）
+
+---
+
+## 快速搜尋指引 / Quick Search Guide
+
+| 我想了解… | 去哪裡看 |
+|----------|---------|
+| 台積電最新封裝技術動態 | [[entities/tsmc]] |
+| CoWoS vs EMIB 技術比較 | [[technologies/cowos]] + [[entities/intel]] |
+| HBM4 規格與市場 | [[technologies/hbm4]] |
+| Chiplet 互連標準 | [[technologies/ucie]] |
+| 市場規模與成長預測 | [[concepts/advanced-packaging-market]] |
+| 混合接合技術原理 | [[technologies/hybrid-bonding]] |
+| 整體市場競爭格局 | [[wiki/overview]] |

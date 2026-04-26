@@ -89,4 +89,13 @@ WMCM 是 InFO 的演進版，專為多晶片整合設計：
 
 - [[technologies/copos]]：面板級封裝（CoPoS/FOPLP），大尺寸基板，成本更低，目標 2028–29 量產
 - [[technologies/cowos]]：TSMC 2.5D 旗艦，針對 AI/HPC；InFO/WMCM 針對行動端，兩者定位互補
-- [[technologies/soic]]：3D 堆疊，可與 In
+- [[technologies/soic]]：3D 堆疊，可與 InFO 結合（InFO-SoIC）
+
+---
+
+## 爭議與未解問題 / Open Questions
+
+- WMCM 技術細節（RDL 層數、最小 pitch）尚未公開揭露
+- InFO 何時完全退出 Apple 旗艦線？M 系列晶片是否也全面轉 WMCM？
+- 其他 OEM（非 Apple 客戶）是否會採用 WMCM？Apple 排他窗口（2027–2028）後 TSMC 是否向其他客戶開放？
+- AP7 Phase 2 專為 Apple 保留至何時？是否能延伸服務其他行動客戶（Qualcomm Snapdragon 等）？

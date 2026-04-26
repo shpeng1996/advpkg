@@ -45,4 +45,30 @@ related:
 - **2026-01**：NVIDIA 要求三大 HBM 供應商在 H2 2026 提供 **16 層 HBM4**（現行 12 層量產）；Samsung 正加速 16 層開發以符合 NVIDIA 時程要求。
   *Source: TrendForce 2026-01-09*
 
-- **2026**：Samsung 計畫 HBM 產能擴大 **50%**，目標月產能 **~250,000 片**（從 ~170,000 片）；擴產重心放在 HBM4。背景：2024–2025 年 HBM3E 向 NVIDIA 供應品質問題造成市場份額流失，50% 
+- **2026**：Samsung 計畫 HBM 產能擴大 **50%**，目標月產能 **~250,000 片**（從 ~170,000 片）；擴產重心放在 HBM4。背景：2024–2025 年 HBM3E 向 NVIDIA 供應品質問題造成市場份額流失，50% 衝刺是恢復策略。Samsung HBM4 NVIDIA 份額目標：**~30–35%**。
+  *Source: TrendForce 2025-12-30*
+
+- **2025**：開始量產 **2nm** 製程（Samsung Foundry）
+- **2027**：計劃推出 **1.4nm** 製程
+
+---
+
+## 市場地位 / Market Position
+
+三星在 AI 晶圓代工市場落後於台積電，但在記憶體（HBM）與封裝的垂直整合上具獨特優勢。X-Cube 3D 技術路線與 TSMC SoIC 形成競爭。
+
+---
+
+## 與其他實體的關係 / Relationships
+
+- **TSMC**：晶圓代工主要競爭對手
+- **SK Hynix**：HBM 市場主要競爭對手
+- **NVIDIA / AMD**：潛在晶圓代工客戶（目前大部分仍在 TSMC）
+
+---
+
+## 爭議與未解問題 / Open Questions
+
+- Samsung Foundry 的良率問題是否已改善？
+- 三星 HBM4 產品在性能與良率上能否趕上 SK Hynix？
+- X-Cube 3D 接合間距的演進路線？
