@@ -1,10 +1,10 @@
 ---
 title: "SoIC — System on Integrated Chips"
 category: technology
-tags: [3D, SoIC, hybrid-bonding, TSMC, AI]
+tags: [3D, SoIC, hybrid-bonding, TSMC, AI, NVIDIA, Feynman]
 created: 2026-04-24
-updated: 2026-04-25
-sources: [2026-04-24_initial-survey, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe]
+updated: 2026-04-28
+sources: [2026-04-24_initial-survey, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-03-18_trendforce_nvidia-rubin-feynman-soic]
 related:
   - wiki/entities/tsmc.md
   - wiki/technologies/cowos.md
@@ -41,7 +41,8 @@ SoIC 常與 CoWoS 組合：邏輯晶片先透過 SoIC 3D 堆疊，再整合於 C
 |------|----------------|
 | SoIC-X 商業接合間距 | **6 µm** |
 | 技術成熟度 | 實驗性 → **主流**（2026 轉折） |
-| 主要客戶 | AMD（MI400 Instinct 系列） |
+| 月產能目標（2026 年底）| **10,000–15,000 片/月** |
+| 主要客戶 | NVIDIA（Rubin / Rubin Ultra）、AMD（MI400）、Apple（M 系列）|
 
 ---
 
@@ -50,10 +51,16 @@ SoIC 常與 CoWoS 組合：邏輯晶片先透過 SoIC 3D 堆疊，再整合於 C
 - **2021**：SoIC 技術首次商業推出
 - **2024**：SoIC-X 混合接合從實驗性轉為商業服務
 - **2026-Q1**：SoIC-X 商業間距達 6µm，從「實驗性精品製程」轉為 AI 加速器主流標配
+- **2026-03-18**：**NVIDIA Rubin Ultra 確認使用 SoIC**，Rubin Ultra 採用 SoIC 進行 die-to-die 3D 堆疊，再以 CoWoS-L 整合 HBM4E；此為 SoIC 進入 NVIDIA AI 旗艦 GPU 的里程碑
+  *Source: TrendForce 2026-03-18*
+- **2026-04-01**：Rubin Ultra（NVL576）SoIC 架構確認；規格：4 reticle-sized chips、100 PFLOPS FP4、1 TB HBM4E
+  *Source: TrendForce 2026-04-01*
 - **2026-04-22**：TSMC Symposium 宣布 **A14-to-A14 SoIC** 路線圖（2029 目標）：
   - 提供比 N2-to-N2 SoIC 高 **1.8× 的 die-to-die I/O 密度**
   - 支援更高資料傳輸頻寬，面向下一代 AI 系統
   *Source: TSMC 2026 North America Technology Symposium*
+- **2028+（Feynman GPU）**：NVIDIA Feynman（TSMC A14 製程）預期採用 **SoIC-X 高密度混合接合**，接合 pitch 目標次微米級
+  *Source: TrendForce 2026-03-18*
 - **2028–2030**（亞利桑那廠）：SoIC 線進入美國量產
 
 ---
@@ -71,9 +78,19 @@ SoIC 常與 CoWoS 組合：邏輯晶片先透過 SoIC 3D 堆疊，再整合於 C
 
 ## 應用場景 / Applications
 
-- AI 加速器（AMD MI400 系列押注 SoIC 3D 尋求密度優勢）
-- 高效能 CPU 快取堆疊
-- 未來 Memory-on-Logic 架構
+- AI 加速器：**NVIDIA Rubin / Rubin Ultra**（GPU die-to-die 3D 堆疊）、**AMD MI400**（SoIC 3D 押注）
+- 行動/消費：**Apple M-series**（SoIC 整合快取與邏輯）
+- 高效能 CPU 快取堆疊（Intel Foveros Direct 類似技術）
+- 未來 Memory-on-Logic 架構（Feynman 世代）
+
+### 設備供應鏈 / Equipment Supply Chain
+| 廠商 | 角色 | 主要產品 |
+|------|------|---------|
+| **Besi** | D2W 接合機 | Datacon 8800 CHAMEO；Kinex 平台 |
+| **Applied Materials（AMAT）** | CMP、介電質沉積 | 持 Besi Kinex 9% 股份 |
+| **Tokyo Electron（TEL）** | RDL 沉積、濕製程 | Kumamoto R&D hub（¥47B）|
+
+*混合接合設備市場 CAGR 2025–2030：**21%**（Yole Group）*
 
 ---
 

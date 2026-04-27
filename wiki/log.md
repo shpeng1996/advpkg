@@ -177,3 +177,25 @@
   1. **Intel EMIB 進入 CSP AI 加速器競爭**：Google（TPU v9 2027）、Amazon AWS、Meta（MTIA）三大雲端巨頭同步評估 EMIB——規模遠超先前已知的 Apple/Qualcomm 管線。EMIB「代工廠中立」封裝（可封裝 TSMC 晶圓）是對抗 TSMC CoWoS 壟斷的重要替代方案
   2. **HBM4 16 層競賽啟動**：NVIDIA H2 2026 正式要求 16 層 HBM4（現行 12 層），三家供應商全面衝刺；Micron >11 Gbps 超規格表現首次確認；全行業 HBM 產能 2024→2026 年底增長 80–100%
   3. **OSAT 全球建廠競賽**：ASE 六廠同步破土（史上最大）、Samsung $4B 越南廠——AI 封裝需求規模已超過任何單一地點的承載上限，全球分散布局成必然趨勢
+
+## [2026-04-28] collect | 每日自動蒐集 — 先進封裝最新動態（第五次）
+- 搜尋查詢數：7 組（TSMC CoWoS 最新、HBM4 供應鏈、混合接合研究、NVIDIA Rubin 封裝、Intel EMIB/14A、先進封裝市場預測、3D IC 異質整合）
+- 成功抓取：5 篇（articles/ 5, papers/ 0, reports/ 0）
+- 失敗/跳過：多篇（WebFetch 頁面 >80KB 超過工具上限，fetch_status: partial；Samsung/SK Hynix NVIDIA Rubin URL 404）
+- 學術代理：UNAVAILABLE ✗
+- 新增 wiki 頁面：5 頁（全為 sources/）
+  - wiki/sources/2026-04-01_trendforce_nvidia-rubin-ultra-dual-die.md
+  - wiki/sources/2026-03-18_trendforce_nvidia-rubin-feynman-soic.md
+  - wiki/sources/2026-01-26_trendforce_intel-glass-substrate-emib.md
+  - wiki/sources/2026-02-26_trendforce_hbm-cleanroom-race.md
+  - wiki/sources/2026-04-20_trendforce_intel-foundry-14a-equipment.md
+- 更新 wiki 頁面：5 頁
+  - wiki/technologies/soic.md（NVIDIA Rubin Ultra/Feynman SoIC 路線圖；10–15K wsm 月產能目標；設備三巨頭分工；21% CAGR）
+  - wiki/technologies/cowos.md（Rubin Ultra 封裝限制確認；NVL576 規格；N3 AI 佔比 36%）
+  - wiki/technologies/hbm4.md（無塵室競賽詳情；Samsung P3 廠；三廠產能對照表）
+  - wiki/entities/intel.md（玻璃基板+EMIB 技術路線圖；14A High-NA EUV；設備訂單 +50% YoY）
+  - wiki/index.md（頁面數 45→50；來源數 24→29）
+- 主要新知識：
+  1. **NVIDIA Rubin Ultra NVL576 完整規格首次確認**：100 PFLOPS FP4、1 TB HBM4E、16 HBM 站點、4 reticle chips——封裝限制（CoWoS interposer 面積 ~120mm×120mm）已成為 AI GPU 擴展的主要架構約束（非 transistor 密度），直接驅動 14-reticle CoWoS（2028）與 CoPoS（2028–29）的研發動力
+  2. **Intel 玻璃基板 + EMIB 路線圖確立**：厚芯玻璃基板（低 CTE、細 RDL）解決有機 ABF 基板在超大 AI 封裝的根本限制；EMIB 演進路線（→ EMIB-T → EMIB on Glass）現已完整；HVM 2027–28；14A 設備訂單 >50% YoY 印證 Intel Foundry 信心回升
+  3. **HBM 無塵室競賽量化**：三巨頭合計 2024→2026 年底 HBM 產能成長 80–100%（400K → 620K wsm/月）；Micron >11 Gbps 超 JEDEC 規格；Samsung P3 廠為 HBM4 專屬快速通道——wiki 首次記錄完整的行業產能成長數字

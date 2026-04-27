@@ -2,7 +2,7 @@
 title: "先進封裝知識庫總覽 / Advanced Packaging Wiki Overview"
 category: overview
 created: 2026-04-24
-updated: 2026-04-25
+updated: 2026-04-28
 ---
 
 # 先進封裝知識庫總覽 / Advanced Packaging Wiki Overview
@@ -75,9 +75,9 @@ updated: 2026-04-25
 
 ## Wiki 健康狀態 / Wiki Health（2026-04-27）
 
-- **頁面總數**：45 頁（實體 9、技術 9、概念 3、來源 23、總覽 1、索引 1、log 1）
-- **原始來源數**：24 篇（raw/reports/ 1、raw/articles/ 23）
-- **最近操作**：2026-04-27 第四次每日自動 Collect（6 篇新文章，0 個新頁面 + 9 個既有頁面更新；重要新知：Intel EMIB CSP 三巨頭、HBM4 16 層、OSAT 全球建廠競賽）
+- **頁面總數**：50 頁（實體 9、技術 9、概念 3、來源 28、總覽 1、索引 1、log 1）
+- **原始來源數**：29 篇（raw/reports/ 1、raw/articles/ 28）
+- **最近操作**：2026-04-28 第五次每日自動 Collect（5 篇新文章，5 個 source 頁面 + 5 個既有頁面更新；重要新知：NVIDIA Rubin Ultra NVL576 規格、Intel 玻璃基板+EMIB、HBM 無塵室競賽產能全景）
 - **最近 Lint**：未執行（建議於第 10 次 ingest 後執行）
 - **已知孤立頁面**：無（新建頁面均已加入 index.md）
 - **待確認矛盾**：無

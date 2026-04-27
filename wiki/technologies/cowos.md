@@ -1,10 +1,10 @@
 ---
 title: "CoWoS — Chip-on-Wafer-on-Substrate"
 category: technology
-tags: [2.5D, interposer, TSMC, AI, HPC, HBM, COUPE, CPO]
+tags: [2.5D, interposer, TSMC, AI, HPC, HBM, COUPE, CPO, packaging-constraints, NVIDIA]
 created: 2026-04-24
-updated: 2026-04-25
-sources: [2026-04-24_initial-survey, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe]
+updated: 2026-04-28
+sources: [2026-04-24_initial-survey, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die]
 related:
   - wiki/entities/tsmc.md
   - wiki/technologies/soic.md
@@ -62,6 +62,8 @@ CoWoS 將多顆晶片（GPU、HBM 等）放置於一個中介層（Interposer）
   *Source: TrendForce 2025-12-08*
 - **2026-01**：法說會公布月產能目標，先進封裝 CapEx CAGR 24%（2025–27）
   *Source: TrendForce 2026-01-21*
+- **2026-04-01**：**NVIDIA Rubin Ultra 封裝限制確認**——Rubin Ultra（NVL576）因 CoWoS interposer 面積限制（~120mm×120mm）採雙裸片每 GPU 模組設計；TSMC N3 AI 佔比 2026 年達 **36%**（2025 年僅 5%）；NVL576 完整規格：4 reticle chips、100 PFLOPS FP4、1 TB HBM4E、16 HBM 站點
+  *Source: TrendForce 2026-04-01*
 - **2026-04**：NVIDIA 預訂 2026 年總產能 60–65%；AMD 佔 ~11%
 - **2026-04-22**：TSMC 2026 Symposium 揭露 CoWoS 規模路線圖：當前 5.5 reticle → 2028 目標 14 reticle（10 compute die + 20 HBM stacks）；2029 年後持續擴大
   - 單封裝計算電晶體數 2024→2029 成長 **48×**；記憶體頻寬成長 **34×**

@@ -1,10 +1,10 @@
 ---
 title: "HBM4 — High Bandwidth Memory 4"
 category: technology
-tags: [memory, HBM, JEDEC, standards, AI, HPC, HBM4E]
+tags: [memory, HBM, JEDEC, standards, AI, HPC, HBM4E, cleanroom, capacity]
 created: 2026-04-24
-updated: 2026-04-27
-sources: [2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-03-18_trendforce_intel-emib-malaysia, 2026-01-23_trendforce_hbm4e-samsung-skhynix-mid2026]
+updated: 2026-04-28
+sources: [2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-03-18_trendforce_intel-emib-malaysia, 2026-01-23_trendforce_hbm4e-samsung-skhynix-mid2026, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die]
 related:
   - wiki/entities/sk-hynix.md
   - wiki/entities/samsung.md
@@ -55,6 +55,8 @@ HBM（High Bandwidth Memory）將多層 DRAM 晶片垂直堆疊，透過 TSV（T
 - **2026-02**：SK Hynix M15X 廠提前 4 個月投產（初始 ~10,000 片/月 1b DRAM）；目標年底擴至數萬片/月
 - **2026-01**：NVIDIA 正式要求三大供應商 **H2 2026 提供 16 層 HBM4**（現行為 12 層量產）；16 層需更高 TSV 製程精度
 - **2026-01**：Micron HBM4 速度達 **>11 Gbps**（超越 JEDEC 標準 8 GT/s），高良率目標 Q2 2026；Micron 預期維持第三供應商地位
+- **2026-02-26**：三巨頭**無塵室擴建競賽**全面啟動——Samsung 快速通道（Pyeongtaek P3 廠）、SK Hynix 快速通道（M15X 提前完工 2026-02）、**Micron 採收購策略**（非新建）；合計全行業產能成長 **80–100%**（2024→2026 年底）
+  *Source: TrendForce 2026-02-26*
 - **2025-12**：Samsung 計畫 2026 年 HBM 產能衝刺 **50%**（~170K → ~250K wsm/月）；SK Hynix 同步目標 ~250K wsm/月；**全行業 HBM 產能 2024→2026 年底預計增長 80–100%**
 - **2026-Q3**（預計）：首批 HBM4 透過混合接合整合（UCIe 2.0 生態系）
 - **2026-01（Samsung）**：三星 HBM4E 客製化設計目標完成於 **2026 年中** *Source: TrendForce 2026-01-23*
@@ -71,7 +73,17 @@ HBM（High Bandwidth Memory）將多層 DRAM 晶片垂直堆疊，透過 TSV（T
 | Samsung | ~30–35% | 2026-02 起量產；HBM3E 失利後恢復 |
 | Micron | ~10% | HBM4 >11 Gbps；HBM4E 同步研發 |
 
-*HBM4 供應商份額更新：TrendForce 2026-01-09；各方均目標 ~250K wsm/月（年底）*
+*HBM4 供應商份額更新：TrendForce 2026-01-09；2026-02-26 無塵室競賽確認各方均目標 ~250K wsm/月（年底）*
+
+### 無塵室競賽詳情 / Cleanroom Race Details（2026-02 更新）
+| 供應商 | 2025 產能 | 2026 目標 | 策略 | 關鍵廠房 |
+|--------|----------|----------|------|---------|
+| SK Hynix | ~170K wsm | ~250K wsm | 快速通道新建 | M15X（提前 2026-02 投產）|
+| Samsung | ~165K wsm | ~250K wsm | 快速通道新建 | Pyeongtaek P3 廠 |
+| Micron | ~65K wsm | ~120K wsm | 收購策略 | 待確認 |
+| **合計** | **~400K wsm** | **~620K wsm** | — | **+80–100% YoY** |
+
+*Source: TrendForce 2026-02-26*
 
 ### Intel EMIB-T HBM4 整合
 - Intel **EMIB-T** 專為支援 HBM4 設計，目標封裝尺寸 120×120 mm（超越業界標準 100×100 mm）

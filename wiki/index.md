@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-04-27
-**頁面總數 Total Pages**：45
-**原始來源數 Sources**：24
+**更新時間 Updated**：2026-04-28
+**頁面總數 Total Pages**：50
+**原始來源數 Sources**：29
 
 ---
 
@@ -49,6 +49,11 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-04-20_trendforce_intel-foundry-14a-equipment]] — Intel Foundry 設備訂單 +50% YoY；14A High-NA EUV 年底吸引重大客戶（2026-04-20）⭐新增
+- [[sources/2026-04-01_trendforce_nvidia-rubin-ultra-dual-die]] — NVIDIA Rubin Ultra 雙裸片因封裝限制確認；NVL576 規格（100 PFLOPS、1 TB HBM4E）（2026-04-01）⭐新增
+- [[sources/2026-03-18_trendforce_nvidia-rubin-feynman-soic]] — NVIDIA Rubin Ultra/Feynman 拉動 TSMC SoIC；Besi/AMAT/TEL 受益；混合接合 CAGR 21%（2026-03-18）⭐新增
+- [[sources/2026-02-26_trendforce_hbm-cleanroom-race]] — 記憶體三巨頭 HBM 無塵室競賽；三廠商合計 +80–100% 產能；Samsung P3 廠（2026-02-26）⭐新增
+- [[sources/2026-01-26_trendforce_intel-glass-substrate-emib]] — Intel 厚芯玻璃基板 + EMIB 整合；AI 資料中心定位；HVM 2027–28（2026-01-26）⭐新增
 - [[sources/2026-04-13_trendforce_copos-pilot]] — TrendForce：TSMC CoPoS 試驗線 2026-06 完工；量產 2028–29（2026-04-13）⭐新增
 - [[sources/2026-03-18_trendforce_intel-emib-malaysia]] — TrendForce：Intel 馬來西亞廠 2026 投產；EMIB-T HBM4 路線圖（2026-03-18）⭐新增
 - [[sources/2026-03-01_ieee-eps_ectc2025-hybrid-bonding]] — IEEE EPS：ECTC 2025 混合接合特別議程摘要（2026-03-01）⭐新增

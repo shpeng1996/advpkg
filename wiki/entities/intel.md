@@ -1,10 +1,10 @@
 ---
 title: "英特爾 / Intel"
 category: entity
-tags: [IDM, advanced-packaging, EMIB, Foveros, Intel18A, Clearwater-Forest, Foveros-Direct]
+tags: [IDM, advanced-packaging, EMIB, Foveros, Intel18A, Clearwater-Forest, Foveros-Direct, glass-substrate, 14A, High-NA-EUV]
 created: 2026-04-24
-updated: 2026-04-27
-sources: [2026-04-24_initial-survey, 2026-03-18_trendforce_intel-emib-malaysia, 2026-03-03_trendforce_intel-clearwater-forest, 2026-03-05_trendforce_intel-emib-billions, 2026-04-07_trendforce_intel-emib-google-amazon]
+updated: 2026-04-28
+sources: [2026-04-24_initial-survey, 2026-03-18_trendforce_intel-emib-malaysia, 2026-03-03_trendforce_intel-clearwater-forest, 2026-03-05_trendforce_intel-emib-billions, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-04-20_trendforce_intel-foundry-14a-equipment]
 related:
   - wiki/entities/tsmc.md
   - wiki/entities/samsung.md
@@ -28,10 +28,18 @@ related:
 - **Foveros-B**：新增 Foveros 變體，提供更具成本效益的封裝選項（2026 年公布）。
 - **Foveros Direct 3D**：銅對銅直接接合（Cu-Cu，類似 TSMC SoIC-X）；接合 pitch < 10µm（前代 micro-bump ~36µm）；**2026 年量產**（Clearwater Forest）。
 - **EMIB 3.5D**：EMIB（2.5D 橫向）+ Foveros（3D 垂直）的組合混合架構，首次用於 Clearwater Forest。
+- **EMIB on Glass（玻璃基板）**：Intel 發表業界首款**厚芯玻璃基板 + EMIB** 整合方案（2026-01）；優勢：低 CTE、更細 RDL 線距、大封裝尺寸翹曲控制；HVM 目標 2027–2028。
+- **14A 製程**：採用 **High-NA EUV + RibbonFET**；2026 年設備訂單大幅增加（>50% YoY）；外部客戶評估中，年底可能有重大 tape-out 宣布。
 
 ---
 
 ## 近期動態 / Recent Developments
+
+- **2026-04-20**：Intel Foundry 2026 年設備訂單較 2025 年成長 **>50% YoY**，主要目標是 **14A** 製程節點（High-NA EUV + RibbonFET）；重大不具名外部客戶正評估年底前 tape-out；14A 客戶預期同時採用 EMIB 封裝，形成「代工+封裝」一體化商業模式。
+  *Source: TrendForce 2026-04-20*
+
+- **2026-01-26**：Intel 發表業界首款**厚芯玻璃基板 + EMIB** 整合方案，目標 AI 資料中心大型封裝；玻璃基板克服有機 ABF 基板在大尺寸封裝的翹曲與訊號完整性限制；HVM 目標 2027–2028。EMIB 技術路線演進：EMIB → EMIB-T → EMIB on Glass。
+  *Source: TrendForce 2026-01-26*
 
 - **2026-04-07**：Intel EMIB 封裝技術正式進入「平台級」競爭——**Google** 計畫 2027 年 **TPU v9** 採用 EMIB（目前 TPU 使用 TSMC CoWoS）；**Amazon AWS** 評估 EMIB 用於 Trainium/Inferentia；**Meta** 考慮 EMIB 用於 MTIA 加速器。Intel EMIB 的關鍵賣點：**代工廠中立**（可封裝 TSMC 晶圓），120×120 mm 封裝尺寸，支援 ≥12 HBM stacks。
   *Source: TrendForce 2026-04-07*
