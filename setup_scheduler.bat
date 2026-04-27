@@ -1,6 +1,6 @@
 @echo off
 setlocal EnableExtensions
-
+ 
 REM ============================================================
 REM  setup_scheduler.bat
 REM  Installs or updates the daily Windows scheduled task.
