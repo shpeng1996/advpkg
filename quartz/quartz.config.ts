@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "先進封裝技術資料庫 / Advanced Packaging TechDB",
+    pageTitle: "AdvPkg",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
