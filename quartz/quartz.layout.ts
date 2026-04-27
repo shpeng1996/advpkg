@@ -1,10 +1,11 @@
-import { QuartzLayout, FullPageLayout } from "./quartz/cfg"
+import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
 
 // components shared across all pages
-export const sharedPageComponents: QuartzLayout["sharedPageComponents"] = {
+export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
+  afterBody: [],
   footer: Component.Footer({
     links: {
       GitHub: "https://github.com/jackyzha0/quartz",
