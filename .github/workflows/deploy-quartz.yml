@@ -31,10 +31,13 @@ jobs:
       - name: Clone Quartz
         run: git clone https://github.com/jackyzha0/quartz.git quartz-app
 
-      - name: Copy Wiki Content
+      - name: Copy Wiki Content and Config
         run: |
           rm -rf quartz-app/content/*
           cp -rv wiki/* quartz-app/content/
+          cp -v quartz/quartz.config.ts quartz-app/
+          cp -v quartz/quartz.layout.ts quartz-app/
+          cp -v quartz/styles/custom.scss quartz-app/quartz/styles/
 
       - name: Install Dependencies
         working-directory: quartz-app
