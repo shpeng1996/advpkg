@@ -3,8 +3,8 @@ title: "CoWoS — Chip-on-Wafer-on-Substrate"
 category: technology
 tags: [2.5D, interposer, TSMC, AI, HPC, HBM, COUPE, CPO, packaging-constraints, NVIDIA]
 created: 2026-04-24
-updated: 2026-04-28
-sources: [2026-04-24_initial-survey, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die]
+updated: 2026-04-29
+sources: [2026-04-24_initial-survey, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry]
 related:
   - wiki/entities/tsmc.md
   - wiki/technologies/soic.md
@@ -40,7 +40,7 @@ CoWoS 將多顆晶片（GPU、HBM 等）放置於一個中介層（Interposer）
 
 | 指標 | 數值 | 時程 |
 |------|------|------|
-| 月產能（2026 年底目標） | 90,000–130,000 wsm | 2026 年底 |
+| 月產能（2026 年底目標） | 115,000–140,000 wsm | 2026 年底（TSMC 法說會；機構投資人預測）|
 | 中介層尺寸（當前量產） | 5.5 reticles | 2026 |
 | 中介層尺寸（2028 目標） | 14 reticles（~10 compute + 20 HBM） | 2028 |
 | 中介層尺寸（2029+） | >14 reticles | 2029+ |
@@ -65,6 +65,8 @@ CoWoS 將多顆晶片（GPU、HBM 等）放置於一個中介層（Interposer）
 - **2026-04-01**：**NVIDIA Rubin Ultra 封裝限制確認**——Rubin Ultra（NVL576）因 CoWoS interposer 面積限制（~120mm×120mm）採雙裸片每 GPU 模組設計；TSMC N3 AI 佔比 2026 年達 **36%**（2025 年僅 5%）；NVL576 完整規格：4 reticle chips、100 PFLOPS FP4、1 TB HBM4E、16 HBM 站點
   *Source: TrendForce 2026-04-01*
 - **2026-04**：NVIDIA 預訂 2026 年總產能 60–65%；AMD 佔 ~11%
+- **2026-04-16**：TSMC CEO C.C. Wei 於 Q1 法說會正式回應 Intel EMIB 競爭——強調 CoWoS 為業界最大 reticle-size 封裝方案，2026 年底月產能目標 **115,000–140,000 wsm**，2027 年進一步升至 ~**170,000 wsm**；擴廠重心集中台南+嘉義
+  *Source: TrendForce 2026-04-16*
 - **2026-04-22**：TSMC 2026 Symposium 揭露 CoWoS 規模路線圖：當前 5.5 reticle → 2028 目標 14 reticle（10 compute die + 20 HBM stacks）；2029 年後持續擴大
   - 單封裝計算電晶體數 2024→2029 成長 **48×**；記憶體頻寬成長 **34×**
   *Source: SemiWiki 2026-04-22*

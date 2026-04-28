@@ -3,8 +3,8 @@ title: "先進封裝地緣政治 / Geopolitics of Advanced Packaging"
 category: concept
 tags: [geopolitics, US-China, CHIPS-Act, supply-chain, chiplet, NAPMP, export-control]
 created: 2026-04-26
-updated: 2026-04-27
-sources: [2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-04-20_trendforce_ase-samsung-amkor-capacity]
+updated: 2026-04-29
+sources: [2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-23_trendforce_china-osat-sj-semiconductor-ipo, 2025-07-01_3dincites_micron-onshore-tsmc-copos]
 related: [wiki/concepts/advanced-packaging-market.md, wiki/entities/amkor.md, wiki/entities/ase-group.md, wiki/technologies/ucie.md]
 ---
 
@@ -31,7 +31,9 @@ Advanced packaging geopolitics refers to how national governments, corporations,
 - **CHIPS and Science Act（2022）**：$520 億投資半導體製造與研發
 - **NAPMP（National Advanced Packaging Manufacturing Program）**：直接針對先進封裝生態系建立的聯邦計畫
 - 目標：到 2032 年美國晶圓廠產能從全球 10% 提升至 14%，先進封裝能力大幅提升
-- **Amkor Arizona 廠**（$70 億，2028 年投產）：CHIPS Act 補貼旗艦封裝項目
+- **Amkor Arizona 廠**（$70 億，2028 年投產）：CHIPS Act 補貼旗艦封裝項目；**2025-12 正式與 Intel 合作 EMIB HVM**，使其成為美國首座支援高階 AI 封裝的 OSAT 廠
+- **Intel + Amkor 美國境內完整路徑**（2025-12 宣布）：Intel 晶圓（Arizona / Oregon 製造）+ Amkor Arizona 封裝，**不需送件台灣**——是 CHIPS Act 政策目標的重要實現
+- **Micron DRAM Onshoring**（2025-07）：Micron 宣布 $2,000 億美國投資，首次將先進 DRAM 製程從台灣遷回美國（Idaho、New York），配合 CHIPS Act 補貼 ~$64.15 億；Idaho 廠重點加速 HBM 研發
 - **TSMC Arizona P6 封裝轉用**（2025-12 揭露）：TSMC 計畫將 Arizona P6 區域重新規劃為先進封裝廠，SoIC 先行。預計 **2028 年破土**，2030+ 年才有規模產出。此舉消除「TSMC Arizona 晶圓需運回台灣封裝」的供應鏈斷點——對 CHIPS Act 受補貼客戶（Apple、NVIDIA、AMD）而言意義重大。
 - **越南封裝崛起**（2026-04）：Samsung $40 億越南封測廠 + 現有 Intel 馬來西亞廠，東南亞成為繼台灣之後的次要封裝重鎮；美國政府樂見「非中國」封裝供應鏈多元化
 
@@ -59,6 +61,7 @@ Advanced packaging geopolitics refers to how national governments, corporations,
 - 現有設備管制阻止中國突破 ~5nm 邏輯製程，但**先進封裝可在既有製程節點提升系統性能**
 - 中國 OSAT（JCET、Tongfu Microelectronics、CARSEM）積極投資異質整合能力
 - 中國研發機構（如中科院）在 Chiplet 互連、混合接合等領域加速發表
+- **SJ Semiconductor（鑫鑫半導體）2026-04-23 在 STAR Market 掛牌**：IPO 募資 ~RMB 50 億（~USD 6.9 億），市值 ~RMB 1,400 億（~USD 193 億）——是 2026 年 A 股最大 IPO；所有募資投入 Chiplet/3D 多晶片整合封裝；中國 2.5D 封裝市場佔有率 **~85%（中國）/ ~8%（全球）**；此次 IPO 是中國先進封裝國家戰略資本化的重要里程碑
 
 ---
 
@@ -70,6 +73,10 @@ Advanced packaging geopolitics refers to how national governments, corporations,
 | 美國 2032 晶圓廠產能目標 | +203%（10%→14% 全球） | SIA |
 | CHIPS Act 總額 | $520 億 | US Congress |
 | Amkor Arizona 投資額 | $70 億 | Amkor |
+| Micron 美國總投資 | $2,000 億（$1,500 億製造 + $500 億 R&D） | Micron 2025-07 |
+| Micron CHIPS Act 補貼（更新） | ~$64.15 億（+$2.75 億追加） | US DoC |
+| SJ Semiconductor IPO 市值 | RMB 1,400 億（~USD 193 億） | STAR Market 2026-04-23 |
+| 中國 2.5D 封裝市場（SJ Semi 佔比） | ~85%（中國）/ ~8%（全球） | EE Times China 2024 |
 | Deloitte 2026 Chiplet 預測 | 主要地緣政治咽喉點 | Deloitte |
 
 ---

@@ -3,8 +3,8 @@ title: "台積電 / TSMC"
 category: entity
 tags: [foundry, advanced-packaging, CoWoS, SoIC, CoPoS, COUPE, CPO, InFO, WMCM]
 created: 2026-04-24
-updated: 2026-04-27
-sources: [2026-04-24_initial-survey, 2026-04-13_trendforce_copos-pilot, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2025-12-18_trendforce_apple-wmcm-a20, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-01-20_trendforce_tsmc-wmcm-apple]
+updated: 2026-04-29
+sources: [2026-04-24_initial-survey, 2026-04-13_trendforce_copos-pilot, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2025-12-18_trendforce_apple-wmcm-a20, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-01-20_trendforce_tsmc-wmcm-apple, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos]
 related:
   - wiki/technologies/cowos.md
   - wiki/technologies/soic.md
@@ -47,8 +47,11 @@ related:
   - 先進封裝佔 TSMC 營收：2025 年 ~8%，2026 年預估突破 **10%**
   *Source: SemiWiki 2026-04-22*
 
-- **2026-04**：CoPoS 試驗線最新進展確認：設備交付始於 **2026-02**（Visionchip 子公司）；完整試驗線預計 **2026-06 完工**；2027 年製程精修；量產 **2028 年底–2029 年初**於嘉義 AP7。NVIDIA 為首要客戶。
-  *Source: TrendForce 2026-04-13*
+- **2026-04-16**：**TSMC CEO C.C. Wei 於 Q1 法說會正式回應 Intel EMIB 競爭**，強調 CoWoS 仍是業界最大 reticle-size 封裝方案。**CoWoS 月產能 2026 年底目標更新為 115,000–140,000 wsm**（較 2025 年底 ~80K wsm 成長 44–75%）；2027 年進一步升至 ~170,000 wsm；擴廠重心集中台南+嘉義。
+  *Source: TrendForce 2026-04-16*
+
+- **2026-04**：CoPoS 試驗線最新進展確認：主要設備安裝 **2026-02 完成**（Visionchip 子公司；TSMC CEO 親口確認）；完整試驗線預計 **2026-06 完工**；2027 年製程精修；量產 **2028 年底–2029 年初**於嘉義 AP7（Phase 4）。NVIDIA 為首要客戶（最多 12 HBM4 + 多 GPU chiplet）。
+  *Source: TrendForce 2026-04-13; TrendForce 2026-04-16; 3D InCites 2025-07*
 
 - **2026-04**：NVIDIA 搶佔台積電 2026 年 CoWoS 總產能 60–65%；AMD 佔 ~11%（MI400 系列）
   *Source: CNBC 2026-04-08*
@@ -72,7 +75,7 @@ related:
 
 | 指標 | 數值 | 時間 |
 |------|------|------|
-| CoWoS 月產能目標 | 90,000+ wsm（→最高 130,000） | 2026 年底 |
+| CoWoS 月產能目標 | 115,000–140,000 wsm | 2026 年底（CEO 法說會確認）|
 | CoWoS 2026 年擴建投資 | $2.8B（南科） | 2025–2026 |
 | 年度資本支出 | $52–56B | 2026 |
 | 先進封裝佔資本支出比 | 10–20% | 2026 |

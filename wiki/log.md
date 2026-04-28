@@ -199,3 +199,30 @@
   1. **NVIDIA Rubin Ultra NVL576 完整規格首次確認**：100 PFLOPS FP4、1 TB HBM4E、16 HBM 站點、4 reticle chips——封裝限制（CoWoS interposer 面積 ~120mm×120mm）已成為 AI GPU 擴展的主要架構約束（非 transistor 密度），直接驅動 14-reticle CoWoS（2028）與 CoPoS（2028–29）的研發動力
   2. **Intel 玻璃基板 + EMIB 路線圖確立**：厚芯玻璃基板（低 CTE、細 RDL）解決有機 ABF 基板在超大 AI 封裝的根本限制；EMIB 演進路線（→ EMIB-T → EMIB on Glass）現已完整；HVM 2027–28；14A 設備訂單 >50% YoY 印證 Intel Foundry 信心回升
   3. **HBM 無塵室競賽量化**：三巨頭合計 2024→2026 年底 HBM 產能成長 80–100%（400K → 620K wsm/月）；Micron >11 Gbps 超 JEDEC 規格；Samsung P3 廠為 HBM4 專屬快速通道——wiki 首次記錄完整的行業產能成長數字
+
+## [2026-04-29] collect | 每日自動蒐集 — 先進封裝最新動態（第六次）
+- 搜尋查詢數：7 組（TSMC CoWoS 擴張、HBM4/HBM4E 供需、混合接合研究、面板級封裝 FOPLP/CoPoS、UCIe 標準、Intel EMIB Foveros、先進封裝市場 OSAT Chiplet）
+- 成功抓取：4 篇（articles/ 4, papers/ 0, reports/ 0）
+  - 2026-04-16_trendforce_tsmc-cowos-emib-rivalry-copos-advances.md
+  - 2026-04-23_trendforce_china-osat-sj-semiconductor-ipo-rmb5b.md
+  - 2025-12-22_3dincites_intel-amkor-emib-hvm-partnership.md
+  - 2025-07-01_3dincites_micron-onshore-investment-tsmc-copos.md
+- 失敗/跳過：多篇（WebFetch 頁面 >80KB 超過工具上限，fetch_status: partial；兩篇 TrendForce URL 404；一篇三個月前已蒐集相同主題）
+- 學術代理：UNAVAILABLE ✗（ieeexplore 等學術頁面 WebFetch 超過大小限制）
+- 新增 wiki 頁面：4 頁（全為 sources/）
+  - wiki/sources/2026-04-16_trendforce_tsmc-cowos-emib-rivalry.md
+  - wiki/sources/2026-04-23_trendforce_china-osat-sj-semiconductor-ipo.md
+  - wiki/sources/2025-12-22_3dincites_intel-amkor-emib-partnership.md
+  - wiki/sources/2025-07-01_3dincites_micron-onshore-tsmc-copos.md
+- 更新 wiki 頁面：7 頁
+  - wiki/entities/tsmc.md（CoWoS 月產能 2026 年底更新為 115K–140K wsm；CoPoS CEO 確認里程碑；AP7 P1-P4 架構）
+  - wiki/entities/intel.md（Intel+Amkor 2025-12 正式合作宣布；NVIDIA 考慮 Foveros Direct 3D；擴充客戶管線至 MediaTek、Tesla）
+  - wiki/entities/amkor.md（三廠 EMIB HVM 合作細節；美國境內完整封裝路徑）
+  - wiki/technologies/cowos.md（月產能 115K–140K wsm 2026 年底；170K wsm 2027；法說會里程碑）
+  - wiki/technologies/copos.md（AP7 P1-P4 完整架構；CEO 確認設備安裝 2026-02；NVIDIA 首發客戶 12 HBM4 配置）
+  - wiki/concepts/geopolitics-advanced-packaging.md（Intel+Amkor 美國境內封裝路徑；Micron $2,000 億 onshore；SJ Semi IPO 地緣意義；中國 2.5D 市場量化）
+  - wiki/index.md（頁面數 50→54；來源數 29→33）
+- 主要新知識：
+  1. **TSMC CEO 法說會直接回應 EMIB**：C.C. Wei 親口確認 CoWoS 為業界最大 reticle-size 封裝，並將 2026 年底月產能目標正式確定為 **115,000–140,000 wsm**（較先前 wiki 記錄的 90K–130K 顯著上修）；2027 年進一步達 ~170K wsm。這是台積電對 Intel EMIB 競爭的首次高層級公開回應。
+  2. **Intel+Amkor EMIB 三廠 HVM 合作確立**（2025-12-22）：Amkor 在韓國 K5、葡萄牙、Arizona 三廠同步導入 EMIB，是 Intel 封裝服務從內製走向「開放服務」的關鍵里程碑；確認 MediaTek、Google、Qualcomm、Tesla 均已表達興趣；NVIDIA 考慮 Foveros Direct 3D 亦首次確認。
+  3. **中國 SJ Semiconductor IPO 量化中國先進封裝崛起**：RMB 50 億 IPO（2026-04-23）使 SJ Semi 市值達 ~USD 193 億；中國 2.5D 封裝市場佔有率 85%、全球 8%——中國先進封裝已不是「追趕者」，而是在特定細分市場（2.5D）形成顯著競爭力的國家戰略資產。

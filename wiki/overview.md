@@ -73,11 +73,11 @@ updated: 2026-04-28
 
 ---
 
-## Wiki 健康狀態 / Wiki Health（2026-04-27）
+## Wiki 健康狀態 / Wiki Health（2026-04-29）
 
-- **頁面總數**：50 頁（實體 9、技術 9、概念 3、來源 28、總覽 1、索引 1、log 1）
-- **原始來源數**：29 篇（raw/reports/ 1、raw/articles/ 28）
-- **最近操作**：2026-04-28 第五次每日自動 Collect（5 篇新文章，5 個 source 頁面 + 5 個既有頁面更新；重要新知：NVIDIA Rubin Ultra NVL576 規格、Intel 玻璃基板+EMIB、HBM 無塵室競賽產能全景）
+- **頁面總數**：54 頁（實體 9、技術 9、概念 3、來源 33、總覽 1、索引 1、log 1）
+- **原始來源數**：33 篇（raw/reports/ 1、raw/articles/ 32）
+- **最近操作**：2026-04-29 第六次每日自動 Collect（4 篇新文章；重要新知：TSMC CEO 回應 EMIB 競爭且更新 CoWoS 產能目標至 115K–140K wsm、Intel+Amkor EMIB 正式合作宣布、中國 SJ Semiconductor STAR Market IPO、Micron $2,000 億 onshore 計畫）
 - **最近 Lint**：未執行（建議於第 10 次 ingest 後執行）
 - **已知孤立頁面**：無（新建頁面均已加入 index.md）
-- **待確認矛盾**：無
+- **待確認矛盾**：CoWoS 月產能 2026 年底目標從 90K–130K 更新為 115K–140K wsm（TSMC CEO 正式確認），wiki 各頁面已同步更新

@@ -3,8 +3,8 @@ title: "Amkor Technology"
 category: entity
 tags: [OSAT, advanced-packaging, FOCoS, Arizona, chiplet, Intel-EMIB]
 created: 2026-04-25
-updated: 2026-04-27
-sources: [2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-20_trendforce_ase-samsung-amkor-capacity]
+updated: 2026-04-29
+sources: [2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership]
 related:
   - wiki/technologies/cowos.md
   - wiki/entities/intel.md
@@ -25,7 +25,7 @@ related:
 - **FOCoS**（Fan-Out Chip-on-Substrate）：Amkor 的扇出型基板封裝，用於 CoWoS 等效服務
 - **Flip-Chip BGA**：成熟高效能封裝技術
 - **Copper Pillar Bump**：用於 Chiplet 封裝
-- **Intel EMIB**：Intel 授權 EMIB 製程，在 Amkor 松島 K5 廠執行（Intel 首次外包高階封裝）
+- **Intel EMIB**：Intel 授權 EMIB 製程，在 Amkor 韓國松島 K5 廠、葡萄牙廠、亞利桑那廠三地同步實施（Intel 首次將高階封裝外包至第三方 OSAT）⭐ 2025-12 正式宣布合作
 
 ---
 
@@ -42,8 +42,15 @@ related:
 - **2026-04-20**：Amkor 宣布新一輪產能擴充動作（具體廠房尚待公告），持續強化全球封裝佈局以承接 AI 需求成長。
   *Source: TrendForce 2026-04-20*
 
+- **2025-12-22**：**Intel + Amkor 正式宣布 EMIB HVM 合作**
+  - Amkor 將在**韓國 K5、葡萄牙、Arizona 三廠**同步導入 EMIB 封裝製程
+  - 合作動機：AI 產業對 EMIB 的強烈需求 + TSMC CoWoS 產能不足
+  - 確認潛在客戶：MediaTek、Google、Qualcomm、Tesla
+  - 意義：美國境內完整先進封裝路徑確立（Intel 製造 + Amkor 封裝，無需送件台灣）
+  *Source: 3D InCites IFTLE 651, 2025-12-22*
+
 - **2026（已完成）**：Intel EMIB 製程落地 **Amkor 韓國松島 K5 廠**
-  - 意義：Intel 首度將高階封裝外包至第三方 OSAT；隨 Intel EMIB 客戶（Google/Amazon/Meta）擴大，Songdo K5 產能重要性持續上升
+  - 隨 Intel EMIB 客戶（Google/Amazon/Meta）擴大，Songdo K5 產能重要性持續上升
   *Source: TrendForce 2026-03-18; 2026-04-07*
 
 ---
@@ -61,7 +68,7 @@ related:
 
 ## 與其他實體的關係 / Relationships
 
-- **Intel**：EMIB 製程授權合作夥伴（Songdo K5 廠）；Arizona 廠預計承接 Intel 封裝訂單
+- **Intel**：EMIB 製程授權合作夥伴（正式合作宣布 2025-12）；韓國 K5 + 葡萄牙 + Arizona 三廠導入；美國境內完整先進封裝路徑的核心夥伴
 - **ASE Group**：全球 OSAT 主要競爭對手
 - **TSMC**：間接競爭（承接 TSMC CoWoS 溢出需求）
 - **美國政府**：Arizona 廠為美國半導體製造在地化政策重要受益者

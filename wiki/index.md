@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-04-28
-**頁面總數 Total Pages**：50
-**原始來源數 Sources**：29
+**更新時間 Updated**：2026-04-29
+**頁面總數 Total Pages**：54
+**原始來源數 Sources**：33
 
 ---
 
@@ -49,6 +49,8 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-04-23_trendforce_china-osat-sj-semiconductor-ipo]] — 中國 OSAT SJ Semiconductor STAR Market IPO RMB 50 億；中國 2.5D 封裝市佔 85%（2026-04-23）⭐新增
+- [[sources/2026-04-16_trendforce_tsmc-cowos-emib-rivalry]] — TSMC CEO 回應 EMIB 競爭；CoWoS 2026 年底 115K–140K wsm；CoPoS 2026-02 設備安裝完成（2026-04-16）⭐新增
 - [[sources/2026-04-20_trendforce_intel-foundry-14a-equipment]] — Intel Foundry 設備訂單 +50% YoY；14A High-NA EUV 年底吸引重大客戶（2026-04-20）⭐新增
 - [[sources/2026-04-01_trendforce_nvidia-rubin-ultra-dual-die]] — NVIDIA Rubin Ultra 雙裸片因封裝限制確認；NVL576 規格（100 PFLOPS、1 TB HBM4E）（2026-04-01）⭐新增
 - [[sources/2026-03-18_trendforce_nvidia-rubin-feynman-soic]] — NVIDIA Rubin Ultra/Feynman 拉動 TSMC SoIC；Besi/AMAT/TEL 受益；混合接合 CAGR 21%（2026-03-18）⭐新增
@@ -76,6 +78,8 @@
 - [[sources/2026-01-09_trendforce_nvidia-hbm4-16layer]] — NVIDIA 推動 HBM4 16 層 H2'26；三家供應商均目標 250K wsm；Micron >11 Gbps（2026-01-09）⭐新增
 - [[sources/2025-12-30_trendforce_samsung-hbm-surge]] — Samsung HBM 50% 衝刺；250K wsm/月目標；HBM4 份額 30–35%；HBM5 2029（2025-12-30）⭐新增
 - [[sources/2025-12-04_trendforce_tsmc-ap7-arizona-p6]] — TSMC AP7 啟用；Arizona P6 封裝基地 2028 破土；24% CapEx CAGR（2025-12-04）⭐新增
+- [[sources/2025-12-22_3dincites_intel-amkor-emib-partnership]] — 3D InCites IFTLE 651：Intel+Amkor EMIB HVM 三廠合作；美國境內完整封裝路徑確立（2025-12-22）⭐新增
+- [[sources/2025-07-01_3dincites_micron-onshore-tsmc-copos]] — 3D InCites IFTLE 634：Micron $2,000 億 onshore + TSMC CoPoS AP7 P1-P4 架構完整揭露（2025-07-01）⭐新增
 - [[sources/2026-04-24_initial-survey]] — 先進封裝產業與學術趨勢初步調查（AI 網路蒐集彙整，2026-04-24）
 
 ---
