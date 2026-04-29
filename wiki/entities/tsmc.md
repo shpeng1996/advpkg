@@ -3,8 +3,8 @@ title: "台積電 / TSMC"
 category: entity
 tags: [foundry, advanced-packaging, CoWoS, SoIC, CoPoS, COUPE, CPO, InFO, WMCM]
 created: 2026-04-24
-updated: 2026-04-29
-sources: [2026-04-24_initial-survey, 2026-04-13_trendforce_copos-pilot, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2025-12-18_trendforce_apple-wmcm-a20, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-01-20_trendforce_tsmc-wmcm-apple, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos]
+updated: 2026-04-30
+sources: [2026-04-24_initial-survey, 2026-04-13_trendforce_copos-pilot, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2025-12-18_trendforce_apple-wmcm-a20, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-01-20_trendforce_tsmc-wmcm-apple, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-16_trendforce_tsmc-q1-q2-earnings]
 related:
   - wiki/technologies/cowos.md
   - wiki/technologies/soic.md
@@ -46,6 +46,9 @@ related:
   - 2024–2029 年間單一 CoWoS 封裝內計算電晶體數量提升 **48×**；記憶體頻寬提升 **34×**
   - 先進封裝佔 TSMC 營收：2025 年 ~8%，2026 年預估突破 **10%**
   *Source: SemiWiki 2026-04-22*
+
+- **2026-04-16（財務）**：**TSMC Q1 2026 淨利 NT$572.5B（YoY +58%，史上最高），毛利率 66.2%（優於預期）**。Q2 2026 營收指引 $39.0–$40.2B（YoY +~32%、QoQ +~10%）；毛利率 65.5%–67.5%；FY26 CapEx 確定在 **$52–56B 區間高端**，重心在 5G、AI、HPC。先進封裝佔 TSMC 總營收預計 **2026 年突破 10%**（2025 年 ~8%）。2nm 2H26 放量，但稀釋全年毛利率 2–3%；3nm 毛利率 2H26 將超越公司平均。
+  *Source: TrendForce 2026-04-16*
 
 - **2026-04-16**：**TSMC CEO C.C. Wei 於 Q1 法說會正式回應 Intel EMIB 競爭**，強調 CoWoS 仍是業界最大 reticle-size 封裝方案。**CoWoS 月產能 2026 年底目標更新為 115,000–140,000 wsm**（較 2025 年底 ~80K wsm 成長 44–75%）；2027 年進一步升至 ~170,000 wsm；擴廠重心集中台南+嘉義。
   *Source: TrendForce 2026-04-16*

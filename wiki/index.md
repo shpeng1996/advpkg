@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-04-29
-**頁面總數 Total Pages**：54
-**原始來源數 Sources**：33
+**更新時間 Updated**：2026-04-30
+**頁面總數 Total Pages**：58
+**原始來源數 Sources**：37
 
 ---
 
@@ -80,6 +80,10 @@
 - [[sources/2025-12-04_trendforce_tsmc-ap7-arizona-p6]] — TSMC AP7 啟用；Arizona P6 封裝基地 2028 破土；24% CapEx CAGR（2025-12-04）⭐新增
 - [[sources/2025-12-22_3dincites_intel-amkor-emib-partnership]] — 3D InCites IFTLE 651：Intel+Amkor EMIB HVM 三廠合作；美國境內完整封裝路徑確立（2025-12-22）⭐新增
 - [[sources/2025-07-01_3dincites_micron-onshore-tsmc-copos]] — 3D InCites IFTLE 634：Micron $2,000 億 onshore + TSMC CoPoS AP7 P1-P4 架構完整揭露（2025-07-01）⭐新增
+- [[sources/2026-04-16_trendforce_tsmc-q1-q2-earnings]] — TSMC Q1 史上最高淨利 NT$572.5B；Q2 指引 $40.2B；FY26 CapEx 高端確認（2026-04-16）⭐新增
+- [[sources/2026-01-13_semiengineering_hbm4-microbumps]] — HBM4 確認維持微凸塊；JEDEC 高度修訂 720→775µm；混合接合推遲至 HBM4E/HBM5（2026-01-13）⭐新增
+- [[sources/2025-12-18_trendforce_micron-capex-hbm4]] — Micron CapEx 上調至 $20B；2026 年 HBM 全年訂滿；HBM4 2Q26 高良率放量（2025-12-18）⭐新增
+- [[sources/2025-08-05_3dincites_iftle636-samsung-lsb-micron-virginia]] — Samsung LSB 矽橋接 Chiplet（ECTC 2025）；Micron Virginia HBM 封裝廠（2025-08-05）⭐新增
 - [[sources/2026-04-24_initial-survey]] — 先進封裝產業與學術趨勢初步調查（AI 網路蒐集彙整，2026-04-24）
 
 ---

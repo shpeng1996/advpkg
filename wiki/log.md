@@ -226,3 +226,29 @@
   1. **TSMC CEO 法說會直接回應 EMIB**：C.C. Wei 親口確認 CoWoS 為業界最大 reticle-size 封裝，並將 2026 年底月產能目標正式確定為 **115,000–140,000 wsm**（較先前 wiki 記錄的 90K–130K 顯著上修）；2027 年進一步達 ~170K wsm。這是台積電對 Intel EMIB 競爭的首次高層級公開回應。
   2. **Intel+Amkor EMIB 三廠 HVM 合作確立**（2025-12-22）：Amkor 在韓國 K5、葡萄牙、Arizona 三廠同步導入 EMIB，是 Intel 封裝服務從內製走向「開放服務」的關鍵里程碑；確認 MediaTek、Google、Qualcomm、Tesla 均已表達興趣；NVIDIA 考慮 Foveros Direct 3D 亦首次確認。
   3. **中國 SJ Semiconductor IPO 量化中國先進封裝崛起**：RMB 50 億 IPO（2026-04-23）使 SJ Semi 市值達 ~USD 193 億；中國 2.5D 封裝市場佔有率 85%、全球 8%——中國先進封裝已不是「追趕者」，而是在特定細分市場（2.5D）形成顯著競爭力的國家戰略資產。
+
+## [2026-04-30] collect | 每日自動蒐集 — 先進封裝最新動態（第七次）
+- 搜尋查詢數：7 組（TSMC CoWoS/CoPoS 最新、HBM4/HBM4E 供應鏈、混合接合研究、Intel EMIB/Foveros、先進封裝市場 OSAT Chiplet、HBM4 接合技術、Micron 封裝投資）
+- 成功抓取：4 篇（articles/ 4, papers/ 0, reports/ 0）
+  - 2026-01-13_semiengineering_hbm4-microbumps-postponing-hybrid-bonding.md
+  - 2025-12-18_trendforce_micron-capex-20b-hbm4-ramp-2q26.md
+  - 2025-08-05_3dincites_iftle636-samsung-silicon-bridges-micron-virginia.md
+  - 2026-04-16_trendforce_tsmc-q1-earnings-q2-guidance.md
+- 失敗/跳過：多篇（WebFetch 頁面超過工具大小限制；多篇 URL 已在 _collected_urls.txt 中；部分搜尋結果為廣告或低相關性文章）
+- 學術代理：UNAVAILABLE ✗（ieeexplore 等學術頁面 WebFetch 超過大小限制）
+- 新增 wiki 頁面：4 頁（全為 sources/）
+  - wiki/sources/2026-01-13_semiengineering_hbm4-microbumps.md
+  - wiki/sources/2025-12-18_trendforce_micron-capex-hbm4.md
+  - wiki/sources/2025-08-05_3dincites_iftle636-samsung-lsb-micron-virginia.md
+  - wiki/sources/2026-04-16_trendforce_tsmc-q1-q2-earnings.md
+- 更新 wiki 頁面：6 頁
+  - wiki/technologies/hbm4.md（HBM4 確認維持微凸塊；JEDEC 高度修訂 720→775µm；Micron HBM4 2Q26 放量確認；10µm 間距；自訂 Base Die；DRFM；混合接合障礙詳解）
+  - wiki/technologies/hybrid-bonding.md（修正：HBM4 確認不採用混合接合；推遲至 HBM4E/HBM5（2028–2029）；測試-接合根本矛盾詳解）
+  - wiki/entities/samsung.md（LSB 矽橋接技術新增；ECTC 2025 論文詳情；UCIe 1.1 驗證）
+  - wiki/entities/tsmc.md（Q1 史上最高淨利 NT$572.5B；Q2 指引 $40.2B；FY26 CapEx 高端確認；先進封裝佔比>10%）
+  - wiki/concepts/geopolitics-advanced-packaging.md（Micron Virginia HBM 封裝廠地點確認（Manassas）；H2 2027 投產）
+  - wiki/concepts/advanced-packaging-market.md（TSMC 先進封裝佔比>10% 2026；Micron CapEx 數字更新）
+- 主要新知識：
+  1. **HBM4 混合接合延後的關鍵機制確認**（Semiconductor Engineering 深度報導）：JEDEC 將堆疊高度上限從 720µm 修訂為 775µm，消除了 HBM4 採用混合接合的技術必要性；更深層障礙是「測試-接合根本矛盾」——混合接合需零粒子表面，但測試探針本身是粒子來源，使「先測試再混合接合」流程極難商業化。混合接合在 HBM 系列的首個應用場景推遲至 HBM4E 或 HBM5（18–20 層，約 2028–2029）
+  2. **三星 LSB（Land-Side Bridge）矽橋接技術首次入 wiki**（ECTC 2025 論文）：三星提出類 EMIB 的矽橋接方案，裝載於封裝球腳側（land side），使 UCIe x64 介面所需 RDL 層數從 9 層減至 3 層，且通過完整可靠度測試。這是三星在 Chiplet 互連領域對 Intel EMIB 的技術回應，與 X-Cube（3D TSV）並行推進，首次完整記錄於 wiki
+  3. **Micron 美國封裝藍圖補全**：Virginia 州 Manassas HBM 封裝廠確認（H2 2027 首廠投產），配合 Idaho/New York DRAM 廠，Micron 美國境內「設計→製造→封裝」閉環首次完整記錄；同期確認 2Q26 HBM4 高良率放量及全年 HBM 供應 100% 訂滿

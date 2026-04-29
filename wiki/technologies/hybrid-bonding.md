@@ -3,8 +3,8 @@ title: "混合接合 / Hybrid Bonding"
 category: technology
 tags: [3D, hybrid-bonding, Cu-Cu, SoIC, ECTC, advanced-packaging]
 created: 2026-04-24
-updated: 2026-04-25
-sources: [2026-04-24_initial-survey, 2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-03-01_3dincites_besi-packaging-power-shift]
+updated: 2026-04-30
+sources: [2026-04-24_initial-survey, 2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-03-01_3dincites_besi-packaging-power-shift, 2026-01-13_semiengineering_hbm4-microbumps]
 related:
   - wiki/technologies/soic.md
   - wiki/technologies/cowos.md
@@ -59,7 +59,9 @@ related:
 - **2024**：TSMC SoIC-X 從實驗性轉為商業服務
 - **2025**：ECTC 2025 以混合接合為核心技術主題；EV Group 展示 IR 雷射剝離等突破
 - **2026-Q1**：SoIC-X 商業接合間距達 6µm，由實驗性製程轉為 AI 加速器主流配置
-- **2026-Q3**（預測）：首批 HBM4 透過混合接合整合，進入 UCIe 2.0 生態系
+- **2026-Q3**（此前預測，已修正）：~~首批 HBM4 透過混合接合整合~~ → **確認不採用**（見下）
+- **2026-01-13（確認）**：HBM4 **不採用混合接合**；JEDEC 將疊層高度上限從 720µm 修訂為 775µm，使 16 層微凸塊可行。主因：成本競爭力與測試障礙（探針污染表面，無法先測後黏）
+- **2028–2029**（預測）：HBM4E 或 HBM5（18–20 層）可能成為 HBM 系列首個採用混合接合的版本
 - **2027**（預測）：Memory-on-Logic 架構商業化，HBM4 直接接合至 AI 運算核心
 
 ---
@@ -130,8 +132,23 @@ ECTC 2025 的核心技術主題之一：
 
 ---
 
+## HBM4 不採用混合接合的技術障礙詳解 / Why HBM4 Skipped Hybrid Bonding
+
+**⭐ 2026-01-13 補充（來源：Semiconductor Engineering）**
+
+1. **測試-接合根本矛盾**：混合接合前需表面完全潔淨（零粒子），而測試探針是粒子來源。「先測試再接合」流程需要測試後執行表面平坦化（planarization）修復，製程複雜度和良率風險大幅增加
+2. **堆疊良率保護**：12+ 層堆疊中任一層有不可修復缺陷即廢棄整疊。微凸塊允許先測試每層再焊接，混合接合則基本上只能接合後才能測試完整堆疊
+3. **製程節點依賴**：混合接合需要長時間退火、慢速 pick-and-place、及步驟間嚴格防潮——這些都使 HBM 大量生產難以競爭
+4. **能耗優勢遞延**：混合接合的能耗/bit 雖比微凸塊低一個數量級，但 JEDEC 高度修訂後，HBM4 微凸塊版本的能耗/bit 已可下降 30–40%，使混合接合的優勢在本代不夠顯著
+
+*Source: Semiconductor Engineering, Bryon Moyer, 2026-01-13*
+
+---
+
 ## 爭議與未解問題 / Open Questions
 
+- ~~HBM4 是否採用混合接合？~~ → **已確認不採用（2026-01-13 更新）**
 - 混合接合的良率如何隨間距縮小（1µm 等級）演進？
 - 大面積（panel-level）混合接合何時可行？
 - 異材料（邏輯晶片 + 記憶體）混合接合的熱膨脹係數（CTE）匹配問題？
+- HBM4E 或 HBM5 採用混合接合的技術障礙（測試、成本）是否會在 2028–2029 前解決？

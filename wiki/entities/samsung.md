@@ -3,8 +3,8 @@ title: "三星 / Samsung"
 category: entity
 tags: [IDM, foundry, memory, advanced-packaging, X-Cube, HBM]
 created: 2026-04-24
-updated: 2026-04-27
-sources: [2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2025-12-30_trendforce_samsung-hbm-surge, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-01-09_trendforce_nvidia-hbm4-16layer]
+updated: 2026-04-30
+sources: [2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2025-12-30_trendforce_samsung-hbm-surge, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2025-08-05_3dincites_iftle636]
 related:
   - wiki/entities/tsmc.md
   - wiki/entities/intel.md
@@ -26,6 +26,7 @@ related:
 - **I-Cube**：2.5D 封裝，矽中介層整合多晶片（對應 TSMC CoWoS）
 - **X-Cube**：3D 堆疊技術，TSV + 微凸塊（bond pitch ~9µm，對應 TSMC SoIC）
 - **HBM 封裝整合**：三星同時生產 HBM 記憶體與封裝服務，具垂直整合優勢
+- **Land-Side Bridge（LSB）矽橋接** ⭐新增（ECTC 2025）：三星在 Chiplet 互連領域的矽橋接方案，功能類似 Intel EMIB，裝載於封裝球腳側（land side），與 Fan-Out Package（FOPKG）整合；與 UCIe 1.1 驗證；可靠度通過全套環境測試（見下）
 
 ---
 
@@ -47,6 +48,9 @@ related:
 
 - **2026**：Samsung 計畫 HBM 產能擴大 **50%**，目標月產能 **~250,000 片**（從 ~170,000 片）；擴產重心放在 HBM4。背景：2024–2025 年 HBM3E 向 NVIDIA 供應品質問題造成市場份額流失，50% 衝刺是恢復策略。Samsung HBM4 NVIDIA 份額目標：**~30–35%**。
   *Source: TrendForce 2025-12-30*
+
+- **2025-08（ECTC 2025 論文）**：Samsung 發表 **Land-Side Bridge（LSB）Fan-Out Chiplet 封裝**技術。LSB 裝載於封裝球腳側（ball lands），使用矽製程實現 1–2µm 信號間距，保持 FOPKG 原有 3 層 RDL（5/5µm），相比純 RDL 方案（需 9 層、2/2µm）顯著降低成本。UCIe 1.1 信號完整性驗證優良；可靠度通過 Preconditioning、HTS、THB、uHAST、HAST、TC 全套測試。
+  *Source: IFTLE 636, Phil Garrou, 3D InCites, 2025-08-05*
 
 - **2025**：開始量產 **2nm** 製程（Samsung Foundry）
 - **2027**：計劃推出 **1.4nm** 製程
