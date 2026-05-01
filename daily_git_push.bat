@@ -26,12 +26,12 @@ if errorlevel 1 (
 )
 
 REM Remove stale Git lock/index temp files before running Git commands.
-for %%F in (index.lock HEAD.lock index.new) do (
-    for /f "delims=" %%P in ('git rev-parse --git-path %%F 2^>nul') do (
-        if exist "%%P" (
-            echo Removing stale Git file: %%P
-            del "%%P"
-            if exist "%%P" echo [WARN] Failed to remove Git file: %%P
+for %%F in (.git\index.lock .git\HEAD.lock .git\index.new) do (
+    if exist "%%F" (
+        echo Removing stale Git file: %%F
+        del /f /q "%%F" >nul 2>&1
+        if exist "%%F" (
+            echo [WARN] Failed to remove Git file: %%F
         )
     )
 )
