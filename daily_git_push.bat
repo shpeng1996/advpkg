@@ -46,4 +46,22 @@ git add -A
 if errorlevel 1 exit /b 1
 
 git diff --cached --quiet
-set "DIFF_EXIT=%ERRO
+set "DIFF_EXIT=%ERRORLEVEL%"
+
+if "%DIFF_EXIT%"=="1" (
+    git commit -m "!COMMIT_MESSAGE!"
+    if errorlevel 1 exit /b 1
+    goto push_changes
+)
+
+if "%DIFF_EXIT%"=="0" (
+    echo No staged changes. Skipping commit.
+    goto push_changes
+)
+
+echo [ERROR] Failed to inspect staged changes.
+exit /b %DIFF_EXIT%
+
+:push_changes
+git push
+exit /b %errorlevel%
