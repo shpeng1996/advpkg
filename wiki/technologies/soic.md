@@ -3,8 +3,8 @@ title: "SoIC — System on Integrated Chips"
 category: technology
 tags: [3D, SoIC, hybrid-bonding, TSMC, AI, NVIDIA, Feynman]
 created: 2026-04-24
-updated: 2026-04-28
-sources: [2026-04-24_initial-survey, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-03-18_trendforce_nvidia-rubin-feynman-soic]
+updated: 2026-05-02
+sources: [2026-04-24_initial-survey, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-03-18_trendforce_nvidia-rubin-feynman-soic, 2026-03-17_trendforce_gtc2026-key-takeaways]
 related:
   - wiki/entities/tsmc.md
   - wiki/technologies/cowos.md
@@ -59,7 +59,7 @@ SoIC 常與 CoWoS 組合：邏輯晶片先透過 SoIC 3D 堆疊，再整合於 C
   - 提供比 N2-to-N2 SoIC 高 **1.8× 的 die-to-die I/O 密度**
   - 支援更高資料傳輸頻寬，面向下一代 AI 系統
   *Source: TSMC 2026 North America Technology Symposium*
-- **2028+（Feynman GPU）**：NVIDIA Feynman（TSMC A14 製程）預期採用 **SoIC-X 高密度混合接合**，接合 pitch 目標次微米級
+- **2028+（Feynman GPU）**：NVIDIA Feynman（**TSMC A16/1.6nm 製程**）**確認採用 3D 堆疊 GPU die**（GTC 2026 確認），是 NVIDIA GPU 首次引入 3D 堆疊；強烈指向 SoIC-X 需求；記憶體採客製化 HBM（可能是 HBM4E 強化版或 HBM5 客製）。Intel EMIB 可能負責 I/O die 封裝 *Source: TrendForce 2026-03-17*
   *Source: TrendForce 2026-03-18*
 - **2028–2030**（亞利桑那廠）：SoIC 線進入美國量產
 
@@ -106,4 +106,4 @@ SoIC 常與 CoWoS 組合：邏輯晶片先透過 SoIC 3D 堆疊，再整合於 C
 
 - SoIC-X 接合間距能否從 6µm 進一步縮小至 3µm 或以下？
 - 多層 SoIC 堆疊（3 層以上）的熱管理方案？
-- 異質材料（邏輯 + 記憶體）SoIC 堆疊的技術瓶頸？
+- 異質材料（邏輯

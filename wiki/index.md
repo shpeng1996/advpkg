@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-05-01
-**頁面總數 Total Pages**：61
-**原始來源數 Sources**：40
+**更新時間 Updated**：2026-05-02
+**頁面總數 Total Pages**：64
+**原始來源數 Sources**：43
 
 ---
 
@@ -16,7 +16,7 @@
 
 - [[entities/tsmc]] — 台積電；全球最大晶圓代工廠；CoWoS/SoIC 技術領導者；2026 年產能瓶頸核心
 - [[entities/intel]] — 英特爾；IDM；EMIB-T（HBM4）+ Foveros-R/B；馬來西亞廠 2026 年投產；EMIB 2H26 放量
-- [[entities/samsung]] — 三星；IDM + Foundry + Memory；I-Cube/X-Cube；2nm 量產；HBM4 首批出貨 2026-02
+- [[entities/samsung]] — 三星；IDM + Foundry + Memory；I-Cube/X-Cube；2nm 量產；HBM4 首批出貨 2026-02；**Groq 3 LPU 代工確認（GTC 2026）**⭐更新
 - [[entities/sk-hynix]] — SK Hynix；HBM 市場領導者；M15X 廠提前投產（2026-02）；NVIDIA HBM4 份額 ~70%
 - [[entities/ase-group]] — ASE Group；全球最大 OSAT；CoWoP 面板封裝；K28 廠 2026 年完工（目標 25K 片/月）⭐新增
 - [[entities/amkor]] — Amkor；全球第二大 OSAT；Arizona $70 億廠（2028 投產）；Intel EMIB 外包夥伴⭐新增
@@ -48,6 +48,10 @@
 ---
 
 ## 來源摘要 Sources（依日期倒序）
+
+- [[sources/2026-03-23_trendforce_asml-hybrid-bonding-equipment]] — ASML 評估混合接合設備市場；Prodrive/VDL-ETG 合作；XT:260 已出貨（2026-03-23）⭐新增
+- [[sources/2026-03-17_trendforce_gtc2026-key-takeaways]] — GTC 2026 要點：Groq3 Samsung Foundry；Micron HBM4 HVM Q1'26；Feynman TSMC A16 + 3D 堆疊（2026-03-17）⭐新增
+- [[sources/2025-10-07_trendforce_hybrid-bonder-market-2b]] — 混合接合設備市場 $2B（2028）；韓國 Hanmi/Hanwha/LG 競爭；Besi/ASMPT 全球領先（2025-10-07）⭐新增
 
 - [[sources/2026-04-23_trendforce_china-osat-sj-semiconductor-ipo]] — 中國 OSAT SJ Semiconductor STAR Market IPO RMB 50 億；中國 2.5D 封裝市佔 85%（2026-04-23）⭐新增
 - [[sources/2026-04-16_trendforce_tsmc-cowos-emib-rivalry]] — TSMC CEO 回應 EMIB 競爭；CoWoS 2026 年底 115K–140K wsm；CoPoS 2026-02 設備安裝完成（2026-04-16）⭐新增
@@ -84,27 +88,4 @@
 - [[sources/2026-01-13_semiengineering_hbm4-microbumps]] — HBM4 確認維持微凸塊；JEDEC 高度修訂 720→775µm；混合接合推遲至 HBM4E/HBM5（2026-01-13）⭐新增
 - [[sources/2025-12-18_trendforce_micron-capex-hbm4]] — Micron CapEx 上調至 $20B；2026 年 HBM 全年訂滿；HBM4 2Q26 高良率放量（2025-12-18）⭐新增
 - [[sources/2025-08-05_3dincites_iftle636-samsung-lsb-micron-virginia]] — Samsung LSB 矽橋接 Chiplet（ECTC 2025）；Micron Virginia HBM 封裝廠（2025-08-05）⭐新增
-- [[sources/2026-04-15_trendforce_hbm4-strategies-diverge]] — HBM4 策略分歧：Samsung <60% 良率 vs SK Hynix -30% 出貨量（2026-04-15）⭐新增
-- [[sources/2026-01-28_trendforce_skhynix-two-thirds-nvidia-hbm4]] — SK Hynix ~70% NVIDIA Rubin HBM4；Samsung 定價平價 >$600（2026-01-28）⭐新增
-- [[sources/2026-01-12_trendforce_tsmc-mature-node-reallocation-cowos]] — TSMC 40–90nm 成熟製程轉型 CoWoS；Fab 14、8 吋廠規劃（2026-01-12）⭐新增
-- [[sources/2026-04-24_initial-survey]] — 先進封裝產業與學術趨勢初步調查（AI 網路蒐集彙整，2026-04-24）
-
----
-
-## 分析報告 Analyses
-
-（尚無）
-
----
-
-## 快速搜尋指引 / Quick Search Guide
-
-| 我想了解… | 去哪裡看 |
-|----------|---------|
-| 台積電最新封裝技術動態 | [[entities/tsmc]] |
-| CoWoS vs EMIB 技術比較 | [[technologies/cowos]] + [[entities/intel]] |
-| HBM4 規格與市場 | [[technologies/hbm4]] |
-| Chiplet 互連標準 | [[technologies/ucie]] |
-| 市場規模與成長預測 | [[concepts/advanced-packaging-market]] |
-| 混合接合技術原理 | [[technologies/hybrid-bonding]] |
-| 整體市場競爭格局 | [[wiki/overview]] |
+- [[sources/2026-04-15_trendforce_hbm4-strategies-diverge]] — HBM4 策略分歧：Samsung <60% 良率 vs SK Hynix -30%

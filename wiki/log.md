@@ -276,3 +276,28 @@
   1. **HBM4 供需結構性調整**（2026-04-15 最新）：NVIDIA Rubin 平台延遲（CX8→CX9 互連、11 Gbps 目標難達、液冷升級）導致 SK Hynix 主動下調 HBM4 出貨量 20–30%、Rubin GPU 份額從 29% 降至 22%；Blackwell（HBM3E）獲益，份額從 61% 升至 71%。HBM 短期需求結構意外倒退——但並非市場萎縮，而是 HBM3E 繼續強勢替代。
   2. **Samsung HBM4 良率危機量化**：首次以具體數字記錄三星 HBM4 1c DRAM 良率仍在 <60%（業界成熟閾值 80%）；背後為 EUV 多層製程成本壓力 + 封裝段額外製程的雙重障礙；logic die 漲價 40–50% 是三星的定價轉移策略。
   3. **TSMC 成熟製程廠「升格」為封裝基礎設施**：40–90nm 產能轉供 CoWoS 矽中介層，揭示先進封裝不只消耗先進製程——它同時重塑成熟製程廠的定位，從傳統晶圓製造轉型為封裝供應鏈的基礎設施節點。Hsinchu Fab 14 成為關鍵轉型廠。
+
+## [2026-05-02] collect | 每日自動蒐集 — 先進封裝最新動態（第九次）
+- 搜尋查詢數：7 組（TSMC CoWoS/SoIC 最新、HBM4 NVIDIA Rubin 供需、Intel EMIB/Foveros、混合接合研究、ASML 混合接合設備、GTC 2026 NVIDIA 生態、先進封裝市場 OSAT Chiplet）
+- 成功抓取：3 篇（articles/ 3, papers/ 0, reports/ 0）
+  - 2026-03-23_trendforce_asml-hybrid-bonding-equipment.md
+  - 2026-03-17_trendforce_gtc2026-key-takeaways-rubin-feynman.md
+  - 2025-10-07_trendforce_hybrid-bonder-market-2b-2028.md
+- 失敗/跳過：多篇（URL 404 1 篇：Samsung+SKH Rubin HBM4 suppliers 2026-03-09；多篇 URL 已在 _collected_urls.txt 中；部分 WebFetch 超過大小限制但內容透過暫存檔案成功讀取）
+- 學術代理：UNAVAILABLE ✗（ieeexplore 等學術頁面限制）
+- 新增 wiki 頁面：3 頁（全為 sources/）
+  - wiki/sources/2026-03-23_trendforce_asml-hybrid-bonding-equipment.md
+  - wiki/sources/2026-03-17_trendforce_gtc2026-key-takeaways.md
+  - wiki/sources/2025-10-07_trendforce_hybrid-bonder-market-2b.md
+- 更新 wiki 頁面：7 頁
+  - wiki/technologies/hybrid-bonding.md（ASML 評估混合接合設備市場進入；設備市場規模 $2B by 2028 量化；韓國設備商競爭格局（Hanmi/Hanwha/LG）新增；混合接合機台單價 ~$3M 量化；新增 ASML/ASMPT/韓廠至設備生態系表格；新增 Open Questions）
+  - wiki/technologies/hbm4.md（Micron 36GB 12-high HBM4 HVM Q1 2026 確認；48GB 16-high 樣品出貨；Rubin Ultra HBM4E 576GB 配置確認；Feynman 客製化 HBM 方向）
+  - wiki/technologies/soic.md（Feynman 確認 3D 堆疊 GPU die on TSMC A16；強化 SoIC 需求論述；更新 sources）
+  - wiki/entities/samsung.md（Groq 3 LPU 由 Samsung Foundry 代工首次確認；Samsung 角色擴展至邏輯晶片代工）
+  - wiki/entities/besi.md（Q4 2025 訂單積壓 +105% 數據新增；ASML 潛在競爭更新；韓國競爭者補充；更新 sources）
+  - wiki/index.md（頁面數 61→64；來源數 40→43；3 新 sources 頁面加入）
+  - wiki/overview.md（健康狀態更新為 2026-05-02）
+- 主要新知識：
+  1. **ASML 進場混合接合設備評估**（2026-03-23）：ASML 已啟動混合接合設備架構設計，夥伴為 Prodrive Technologies 和 VDL-ETG。ASML 的精密對準技術（Maglev 磁浮）是混合接合的核心需求，若成真將是 Besi 在 D2W 設備市場的重大潛在競爭者。市場背景：Besi 2025-Q4 訂單積壓 +105%，ASMPT 封裝收入佔比 25%，強勁市場吸引 ASML 進場。
+  2. **GTC 2026 確認三大要點**（2026-03-17）：① Groq 3 LPU 由 Samsung Foundry 代工（$20B NVIDIA 收購後延續協議），配備 500MB SRAM、150 TB/s 頻寬；② Micron HBM4 Q1 2026 批量供應 Vera Rubin（否認被排除謠言），36GB 12-high、>11 Gb/s、2.8 TB/s；③ **Feynman（2028）確認 3D 堆疊 GPU die on TSMC A16**——NVIDIA GPU 首次 3D 堆疊，強烈指向 SoIC-X 需求，Intel EMIB 可能負責 I/O die
+  3. **混合接合設備市場首次量化**（2025-10-07）：2028 年混合接合設備市場預估 ~$2B（2.8 兆韓元），屆時混合接合佔 HBM 生產 ~50%；機台單價 ~$3M（TC 接合機 2×以上）。韓國設備商 Hanmi（Incheon H2 2026）、Hanwha Semitek（SHB2 Nano）、LG Electronics（2028）積極布局，Besi/ASMPT 為目前全球領先者

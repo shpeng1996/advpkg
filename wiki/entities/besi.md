@@ -3,8 +3,8 @@ title: "Besi (BE Semiconductor Industries) — 混合接合設備領導廠商"
 category: entity
 tags: [equipment, hybrid-bonding, die-attach, D2W, TCB, Netherlands]
 created: 2026-04-25
-updated: 2026-04-25
-sources: [2026-03-01_3dincites_besi-packaging-power-shift]
+updated: 2026-05-02
+sources: [2026-03-01_3dincites_besi-packaging-power-shift, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b]
 related:
   - wiki/entities/ev-group.md
   - wiki/technologies/hybrid-bonding.md
@@ -55,20 +55,7 @@ related:
 - **2026-03**：3D InCites 報導 Besi 為「封裝權力轉移的核心」；die attach 佔 2025 年營收 ~80%，混合接合業務快速擴張
 - **2026-01-22/23**：Besi 主辦/參加 **Hybrid Bonding Symposium 2026**（SEMI HQ, Milpitas, CA）
 - **2026**（WLP Symposium）：Besi 發表主題演講：*"Scaling Interconnects Below 10 µm with Hybrid Bonding and Fluxless TCB"*
-- **2023**：Besi 宣布**26 套混合接合系統**大訂單，標誌 HVM 需求浮現
-
----
-
-## 市場地位 / Market Position
-
-- 全球 **D2W 混合接合設備的主要供應商**
-- 隨著 AMD SoIC、TSMC SoIC-X 等 D2W 技術量產放量，Besi 的訂單前景顯著提升
-- 受 Applied Materials 9% 持股背書，與晶圓加工設備生態系緊密整合
-
----
-
-## 與其他實體的關係 / Relationships
-
-- **Applied Materials**：持股 9%，共同開發 Kinex 平台
-- **TSMC**：SoIC-X D2W 混合接合設備潛在供應商
-- **EV Group**：互補競爭（W2W vs D2W）
+- **2026-03（最新）**：ASML 據報正評估進入混合接合設備市場（架構設計階段，夥伴為 Prodrive / VDL-ETG）——若成真，是 Besi 在 D2W 混合接合設備領域的潛在競爭者。但 ASML 官方聲明尚未正式啟動業務。
+  *Source: TrendForce 2026-03-23（引述 The Elec）*
+- **2025-Q4**：Besi 訂單積壓量年增 **105%**（主要受混合接合需求驅動）；ASMPT 預估先進封裝佔總收入 **~25%**
+  *Source: TrendForce 202
