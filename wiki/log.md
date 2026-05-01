@@ -252,3 +252,27 @@
   1. **HBM4 混合接合延後的關鍵機制確認**（Semiconductor Engineering 深度報導）：JEDEC 將堆疊高度上限從 720µm 修訂為 775µm，消除了 HBM4 採用混合接合的技術必要性；更深層障礙是「測試-接合根本矛盾」——混合接合需零粒子表面，但測試探針本身是粒子來源，使「先測試再混合接合」流程極難商業化。混合接合在 HBM 系列的首個應用場景推遲至 HBM4E 或 HBM5（18–20 層，約 2028–2029）
   2. **三星 LSB（Land-Side Bridge）矽橋接技術首次入 wiki**（ECTC 2025 論文）：三星提出類 EMIB 的矽橋接方案，裝載於封裝球腳側（land side），使 UCIe x64 介面所需 RDL 層數從 9 層減至 3 層，且通過完整可靠度測試。這是三星在 Chiplet 互連領域對 Intel EMIB 的技術回應，與 X-Cube（3D TSV）並行推進，首次完整記錄於 wiki
   3. **Micron 美國封裝藍圖補全**：Virginia 州 Manassas HBM 封裝廠確認（H2 2027 首廠投產），配合 Idaho/New York DRAM 廠，Micron 美國境內「設計→製造→封裝」閉環首次完整記錄；同期確認 2Q26 HBM4 高良率放量及全年 HBM 供應 100% 訂滿
+
+## [2026-05-01] collect | 每日自動蒐集 — 先進封裝最新動態（第八次）
+- 搜尋查詢數：7 組（TSMC CoWoS/SoIC 最新、HBM4 供需策略、OSAT 市場、成熟製程重分配、HBM4 供應份額、CPO/矽光子、美國先進封裝廠）
+- 成功抓取：3 篇（articles/ 3, papers/ 0, reports/ 0）
+  - 2026-04-15_trendforce_hbm4-strategies-diverge-samsung-yield-skhynix-trim.md
+  - 2026-01-12_trendforce_tsmc-mature-node-reallocation-cowos.md
+  - 2026-01-28_trendforce_skhynix-two-thirds-nvidia-hbm4-samsung-counteroffensive.md
+- 失敗/跳過：多篇（WebFetch 頁面超過工具大小限制；1 篇 URL 404；多篇 URL 已在 _collected_urls.txt 中；semiengineering CPO 文章因無明確發布日期跳過）
+- 學術代理：UNAVAILABLE ✗（ieeexplore 等學術頁面 WebFetch 超過大小限制）
+- 新增 wiki 頁面：3 頁（全為 sources/）
+  - wiki/sources/2026-04-15_trendforce_hbm4-strategies-diverge.md
+  - wiki/sources/2026-01-12_trendforce_tsmc-mature-node-reallocation-cowos.md
+  - wiki/sources/2026-01-28_trendforce_skhynix-two-thirds-nvidia-hbm4.md
+- 更新 wiki 頁面：6 頁
+  - wiki/technologies/hbm4.md（新增 Rubin 平台延遲對 HBM4 供需影響；三大供應商策略分歧量化；SK Hynix ~70% NVIDIA 份額確認；12 層 HBM4 價格 >$600）
+  - wiki/entities/samsung.md（HBM4 良率 <60%；logic die 漲價 +40–50%；HBM4 定價平價轉變）
+  - wiki/entities/sk-hynix.md（HBM4 出貨量下調 20–30%；Rubin 延遲原因；2025-09 量產就緒；~70% NVIDIA 份額確認）
+  - wiki/entities/tsmc.md（成熟製程廠轉型：Fab 14 → CoWoS 矽中介層；8 吋廠轉型計畫；Vanguard 新加坡廠接單）
+  - wiki/technologies/cowos.md（矽中介層製程節點補充：40–65nm 成熟製程；成熟製程轉型意義說明）
+  - wiki/index.md（頁面數 58→61；來源數 37→40）
+- 主要新知識：
+  1. **HBM4 供需結構性調整**（2026-04-15 最新）：NVIDIA Rubin 平台延遲（CX8→CX9 互連、11 Gbps 目標難達、液冷升級）導致 SK Hynix 主動下調 HBM4 出貨量 20–30%、Rubin GPU 份額從 29% 降至 22%；Blackwell（HBM3E）獲益，份額從 61% 升至 71%。HBM 短期需求結構意外倒退——但並非市場萎縮，而是 HBM3E 繼續強勢替代。
+  2. **Samsung HBM4 良率危機量化**：首次以具體數字記錄三星 HBM4 1c DRAM 良率仍在 <60%（業界成熟閾值 80%）；背後為 EUV 多層製程成本壓力 + 封裝段額外製程的雙重障礙；logic die 漲價 40–50% 是三星的定價轉移策略。
+  3. **TSMC 成熟製程廠「升格」為封裝基礎設施**：40–90nm 產能轉供 CoWoS 矽中介層，揭示先進封裝不只消耗先進製程——它同時重塑成熟製程廠的定位，從傳統晶圓製造轉型為封裝供應鏈的基礎設施節點。Hsinchu Fab 14 成為關鍵轉型廠。

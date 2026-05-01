@@ -3,8 +3,8 @@ title: "HBM4 — High Bandwidth Memory 4"
 category: technology
 tags: [memory, HBM, JEDEC, standards, AI, HPC, HBM4E, cleanroom, capacity]
 created: 2026-04-24
-updated: 2026-04-30
-sources: [2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-03-18_trendforce_intel-emib-malaysia, 2026-01-23_trendforce_hbm4e-samsung-skhynix-mid2026, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-01-13_semiengineering_hbm4-microbumps, 2025-12-18_trendforce_micron-capex-hbm4]
+updated: 2026-05-01
+sources: [2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-03-18_trendforce_intel-emib-malaysia, 2026-01-23_trendforce_hbm4e-samsung-skhynix-mid2026, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-01-13_semiengineering_hbm4-microbumps, 2025-12-18_trendforce_micron-capex-hbm4, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4]
 related:
   - wiki/entities/sk-hynix.md
   - wiki/entities/samsung.md
@@ -69,11 +69,32 @@ HBM（High Bandwidth Memory）將多層 DRAM 晶片垂直堆疊，透過 TSV（T
 ### HBM4 供應商份額（NVIDIA Vera Rubin 平台，2026）
 | 廠商 | 份額 | 備註 |
 |------|------|------|
-| SK Hynix | ~55–70% | 主供應商；M15X 量產中 |
-| Samsung | ~30–35% | 2026-02 起量產；HBM3E 失利後恢復 |
+| SK Hynix | **~70%** | 主供應商；M15X 量產中；2025-09 量產就緒 |
+| Samsung | ~30–35% | 2026-02 起量產；HBM4 定價達到平價（>$600/12層） |
 | Micron | ~10% | HBM4 >11 Gbps；HBM4E 同步研發 |
 
-*HBM4 供應商份額更新：TrendForce 2026-01-09；2026-02-26 無塵室競賽確認各方均目標 ~250K wsm/月（年底）*
+*份額確認：TrendForce 2026-01-28（Yonhap News），SK Hynix ~70% 高於原先 >50% 預期；12 層 HBM4 售價確認 >$600*
+
+### ⭐ 2026-04-15 重要更新：HBM4 供需策略分歧（Rubin 平台延遲）
+
+**NVIDIA Rubin 平台延遲影響**（TrendForce 2026-04-15，引述 Chosun Biz / ZDNet）：
+
+| 平台 | 2026 年 NVIDIA 高階 GPU 出貨份額（修訂） |
+|------|------|
+| Rubin（HBM4） | 22%（下修自 29%） |
+| Blackwell（HBM3E） | 71%（上修自 61%） |
+
+**Rubin 延遲的技術原因**：
+- CX8 → CX9 網路互連切換
+- NVIDIA 設定 HBM4 目標速度 ~11 Gbps（高於現行業界標準），良率達成困難
+- 液冷系統升級需求提升
+
+**三大供應商對 Rubin 延遲的策略回應**：
+- **Samsung**：HBM4 1c DRAM 良率仍在 **<60%**（目標 H2 2026 達 80% 成熟閾值）；良率低因 EUV 層數多且疊層封裝額外製程複雜；logic die 漲價 **+40–50%** since early 2026
+- **SK Hynix**：主動下調 HBM4 出貨量 **20–30%**；釋出的產能轉供 HBM3E 和伺服器 DRAM（LPDDR），整體記憶體需求維持
+- **Micron**：HBM4 推進較慢；**DDR5 等非 HBM 毛利率現已超過 HBM**（CEO 2026-03 法說會確認）；3QFY26 毛利率預測 **~81%**
+
+*Source: TrendForce 2026-04-15（引述 Chosun Biz, ZDNet, Financial News, The Elec）*
 
 ### 無塵室競賽詳情 / Cleanroom Race Details（2026-02 更新）
 | 供應商 | 2025 產能 | 2026 目標 | 策略 | 關鍵廠房 |

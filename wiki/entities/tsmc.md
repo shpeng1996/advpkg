@@ -3,8 +3,8 @@ title: "台積電 / TSMC"
 category: entity
 tags: [foundry, advanced-packaging, CoWoS, SoIC, CoPoS, COUPE, CPO, InFO, WMCM]
 created: 2026-04-24
-updated: 2026-04-30
-sources: [2026-04-24_initial-survey, 2026-04-13_trendforce_copos-pilot, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2025-12-18_trendforce_apple-wmcm-a20, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-01-20_trendforce_tsmc-wmcm-apple, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-16_trendforce_tsmc-q1-q2-earnings]
+updated: 2026-05-01
+sources: [2026-04-24_initial-survey, 2026-04-13_trendforce_copos-pilot, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2025-12-18_trendforce_apple-wmcm-a20, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-01-20_trendforce_tsmc-wmcm-apple, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2026-01-12_trendforce_tsmc-mature-node-cowos]
 related:
   - wiki/technologies/cowos.md
   - wiki/technologies/soic.md
@@ -32,6 +32,9 @@ related:
 ---
 
 ## 近期動態 / Recent Developments
+
+- **2026-01-12（新增）**：**成熟製程廠轉型先進封裝**——TSMC 評估將部分 **40–90nm 製程產能**重新分配為 CoWoS-L 和 CoPoW 生產用**矽中介層/矽橋接**。重點廠區：**Hsinchu Fab 14**（12 吋成熟製程核心廠）。12–24 個月內，部分 **8 吋廠**可能轉型為先進封裝或測試設施（竹科近 Baoshan Fab 20，有利物流效率）。同期評估將成熟製程設備遷至 **Vanguard（聯華電子）新加坡 12 吋廠**，釋出台灣廠房空間給 2nm/3nm 先進製程。
+  *Source: TrendForce 2026-01-12（引述 Commercial Times, Economic Daily News）*
 
 - **2026-04**（新增）：**Arizona P6 封裝基地規劃**——TSMC 計畫將原定晶圓廠 Phase 6（P6）區域**重新規劃為先進封裝廠**（美國本土封裝基地）。技術路線：SoIC 先行，後續引入 CoWoS。美國 SoIC/CoPoS 廠預計 **2028 年破土**，2030+ 年才有規模產出。目的：呼應 CHIPS Act 要求、消除「亞利桑那晶圓需運回台灣封裝」的供應鏈斷點。
   *Source: TrendForce 2025-12-04*

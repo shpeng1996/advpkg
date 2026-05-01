@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-04-30
-**頁面總數 Total Pages**：58
-**原始來源數 Sources**：37
+**更新時間 Updated**：2026-05-01
+**頁面總數 Total Pages**：61
+**原始來源數 Sources**：40
 
 ---
 
@@ -84,6 +84,9 @@
 - [[sources/2026-01-13_semiengineering_hbm4-microbumps]] — HBM4 確認維持微凸塊；JEDEC 高度修訂 720→775µm；混合接合推遲至 HBM4E/HBM5（2026-01-13）⭐新增
 - [[sources/2025-12-18_trendforce_micron-capex-hbm4]] — Micron CapEx 上調至 $20B；2026 年 HBM 全年訂滿；HBM4 2Q26 高良率放量（2025-12-18）⭐新增
 - [[sources/2025-08-05_3dincites_iftle636-samsung-lsb-micron-virginia]] — Samsung LSB 矽橋接 Chiplet（ECTC 2025）；Micron Virginia HBM 封裝廠（2025-08-05）⭐新增
+- [[sources/2026-04-15_trendforce_hbm4-strategies-diverge]] — HBM4 策略分歧：Samsung <60% 良率 vs SK Hynix -30% 出貨量（2026-04-15）⭐新增
+- [[sources/2026-01-28_trendforce_skhynix-two-thirds-nvidia-hbm4]] — SK Hynix ~70% NVIDIA Rubin HBM4；Samsung 定價平價 >$600（2026-01-28）⭐新增
+- [[sources/2026-01-12_trendforce_tsmc-mature-node-reallocation-cowos]] — TSMC 40–90nm 成熟製程轉型 CoWoS；Fab 14、8 吋廠規劃（2026-01-12）⭐新增
 - [[sources/2026-04-24_initial-survey]] — 先進封裝產業與學術趨勢初步調查（AI 網路蒐集彙整，2026-04-24）
 
 ---

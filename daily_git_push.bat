@@ -25,6 +25,17 @@ if errorlevel 1 (
     exit /b 1
 )
 
+REM Remove stale Git lock/index temp files before running Git commands.
+for %%F in (index.lock HEAD.lock index.new) do (
+    for /f "delims=" %%P in ('git rev-parse --git-path %%F 2^>nul') do (
+        if exist "%%P" (
+            echo Removing stale Git file: %%P
+            del /f /q "%%P" >nul 2>&1
+            if exist "%%P" echo [WARN] Failed to remove Git file: %%P
+        )
+    )
+)
+
 for /f %%i in ('powershell -NoProfile -ExecutionPolicy Bypass -Command "Get-Date -Format yyyy-MM-dd"') do set "COMMIT_MESSAGE=%%i"
 if not defined COMMIT_MESSAGE (
     echo [ERROR] Failed to generate the commit message.

@@ -3,8 +3,8 @@ title: "CoWoS — Chip-on-Wafer-on-Substrate"
 category: technology
 tags: [2.5D, interposer, TSMC, AI, HPC, HBM, COUPE, CPO, packaging-constraints, NVIDIA]
 created: 2026-04-24
-updated: 2026-04-29
-sources: [2026-04-24_initial-survey, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry]
+updated: 2026-05-01
+sources: [2026-04-24_initial-survey, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2026-01-12_trendforce_tsmc-mature-node-cowos]
 related:
   - wiki/entities/tsmc.md
   - wiki/technologies/soic.md
@@ -30,9 +30,11 @@ CoWoS 將多顆晶片（GPU、HBM 等）放置於一個中介層（Interposer）
 
 | 變體 | 中介層類型 | 特點 |
 |------|-----------|------|
-| CoWoS-S | 矽中介層（Silicon Interposer） | 最高密度，成本最高 |
-| CoWoS-L | 局部矽橋（Local Silicon Bridge） | 矽橋取代全面積中介層，成本較低，接近 Intel EMIB |
+| CoWoS-S | 矽中介層（Silicon Interposer） | 最高密度，成本最高；矽中介層以 **40–65nm 成熟製程**製造 |
+| CoWoS-L | 局部矽橋（Local Silicon Bridge） | 矽橋取代全面積中介層，成本較低，接近 Intel EMIB；矽橋同樣以成熟製程製造 |
 | CoWoS-R | RDL 重佈線層（Redistribution Layer） | 有機材料，成本最低，密度最低 |
+
+> **成熟製程轉型說明**（2026-01-12 更新）：TSMC 正評估將 **40–90nm 成熟節點產能**（原服務汽車/工業/消費電子）轉為生產 CoWoS 矽中介層與矽橋接。Hsinchu **Fab 14** 為首要調整廠。此舉反映 chiplet 架構成為 AI 主流後，成熟製程的新角色——不再是獨立產品的晶圓生產線，而是先進封裝的製程基礎設施。
 
 ---
 
