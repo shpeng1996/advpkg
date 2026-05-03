@@ -1,7 +1,7 @@
 # Advanced Packaging Wiki — Index
 
 **更新時間 Updated**：2026-05-03
-**頁面總數 Total Pages**：70
+**頁面總數 Total Pages**：77
 **原始來源數 Sources**：48
 
 ---
@@ -23,6 +23,10 @@
 - [[entities/ev-group]] — EV Group（EVG）；混合接合設備領導者；ECTC 2025 展示無光罩微影與層轉移⭐新增
 - [[entities/besi]] — BE Semiconductor（Besi）；D2W 混合接合設備主供應商；Datacon 8800 CHAMEO；Kinex 平台（Applied Materials 持股 9%）⭐新增
 - [[entities/tel]] — Tokyo Electron（TEL）；RDL 製程設備領導者；Kumamoto 研發基地（¥470 億，2026 春）；Eteris 合資（與 AMAT）⭐新增
+- [[entities/nvidia]] — NVIDIA；Fabless AI GPU 龍頭；CoWoS + SoIC 最大需求方；Rubin Ultra NVL576（100 PFLOPS）；Feynman 5–6 kW 等待 TSMC 美國廠⭐新增
+- [[entities/micron]] — Micron；美國記憶體 IDM；HBM4 >11 Gbps（Q2'26 HVM）；Virginia HBM 封裝廠；$200B 美國投資計畫⭐新增
+- [[entities/amd]] — AMD；Fabless CPU/GPU；Venice 首採 EMIB 等效封裝；MI355X（N3P，2 I/O die）；MI450 aLSI 測試載具⭐新增
+- [[entities/asml]] — ASML；微影設備獨占廠商；XT:260 3D DUV 已出貨（RDL）；評估混合接合設備市場進入⭐新增
 
 ---
 
@@ -36,6 +40,9 @@
 - [[technologies/ucie]] — UCIe；Chiplet 互連標準；UCIe 3.0（2025-08）48/64 GT/s；UCIe 2.0 支援 3D 混合接合（1µm）
 - [[technologies/copackaged-optics]] — TSMC-COUPE™ 共封裝光學元件（CPO）；2026 年量產；2× 能效、10× 延遲改善⭐新增
 - [[technologies/info-wmcm]] — InFO（2016 商轉）+ WMCM（2026 量產）；TSMC 行動晶片封裝旗艦；Apple A20 iPhone18 採用 WMCM⭐新增
+- [[technologies/emib]] — EMIB（Embedded Multi-Die Interconnect Bridge）；Intel 2.5D 局部矽橋；代工廠中立；120×120mm；Google TPU v9 2027 計畫採用⭐新增
+- [[technologies/foveros]] — Foveros；Intel 3D 堆疊；Foveros Direct 3D（<10µm Cu-Cu，2026 量產）；875 GB/s 3D 頻寬⭐新增
+- [[technologies/foplp]] — FOPLP（扇出面板級封裝）；Powertech 90% 試驗良率；TSMC CoPoS 玻璃面板 310×310mm；量產 2028–29⭐新增
 
 ---
 

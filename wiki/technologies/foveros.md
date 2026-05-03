@@ -1,0 +1,83 @@
+---
+title: "Foveros — Intel 3D 晶片堆疊技術"
+category: technology
+tags: [Intel, 3D-stacking, hybrid-bonding, Foveros-Direct, micro-bump, TSV, Clearwater-Forest]
+created: 2026-05-03
+updated: 2026-05-03
+sources: [2026-03-03_trendforce_intel-clearwater-forest, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-01_semianalysis_cpus-back-datacenter-2026]
+related:
+  - wiki/entities/intel.md
+  - wiki/technologies/emib.md
+  - wiki/technologies/hybrid-bonding.md
+  - wiki/technologies/soic.md
+---
+
+# Foveros — Intel 3D 晶片堆疊技術
+
+**技術類別 / Category**：3D 封裝（堆疊）
+**技術成熟度 / TRL**：量產 Production（原始 Foveros micro-bump）；量產 Production（Foveros Direct 3D，2026）
+**主要廠商 / Key Players**：[Intel](../entities/intel.md)（唯一開發商）
+
+---
+
+## 技術原理 / How It Works
+
+Foveros 是 Intel 的 3D 晶片堆疊技術，將多個 die 垂直堆疊於基礎 die（base die）上，透過 TSV（Through-Silicon Via）提供垂直互連。技術演進路線：
+
+- **原始 Foveros**（micro-bump）：使用錫球微凸塊（micro-bump），pitch ~36µm，已量產
+- **Foveros Direct 3D / Omni**（Cu-Cu 直接接合）：無錫球，直接銅對銅接合（類似 TSMC SoIC-X），pitch **< 10µm**，大幅提升互連密度與頻寬
+
+---
+
+## 關鍵規格 / Key Specs
+
+| 版本 | 接合方式 | Pitch | 頻寬（代表） | 狀態 |
+|------|---------|-------|------------|------|
+| Foveros（原始） | Micro-bump（錫球） | ~36 µm | — | 量產中 |
+| Foveros-R | 新變體（靈活選項） | — | — | 2026 公布 |
+| Foveros-B | 新變體（成本效益） | — | — | 2026 公布 |
+| **Foveros Direct 3D** | Cu-Cu 直接接合 | **< 10 µm** | 875 GB/s（M3DProc） | **2026 量產** |
+| Foveros Omni | 進階版（可三維布局） | < 10 µm | — | 研發中 |
+
+---
+
+## 發展時程 / Timeline
+
+- **2019**：Foveros 首次商用（Lakefield 處理器，micro-bump）
+- **量產中**：Foveros micro-bump（多款 Intel 消費性/伺服器晶片）
+- **2026-03（MWC）**：Clearwater Forest（Xeon 6+）搭載 **Foveros Direct 3D**（< 10µm Cu-Cu），首顆 3D Cu-Cu 堆疊 Intel 伺服器晶片；同時結合 EMIB 形成 **EMIB 3.5D** 架構
+- **2026-02-15（ISSCC 2026）**：Intel M3DProc 展示——Intel 3 底部 die + 18A 頂部 die；3D Mesh 頻寬 **875 GB/s**；9µm Foveros Direct 接合；3D Mesh 降低延遲、提升吞吐量約 40%
+
+---
+
+## 優勢與限制 / Pros & Cons
+
+| 優勢 Advantages | 限制 Limitations |
+|----------------|-----------------|
+| Foveros Direct 3D pitch < 10µm，高密度接合 | 良率挑戰（Clearwater Forest 比 Sierra Forest 僅快 +17%） |
+| 與 EMIB 組合形成 EMIB 3.5D 混合架構 | NVIDIA Feynman 5–6 kW 功耗問題，Foveros 需完全重設計才可行 |
+| M3DProc 展示 875 GB/s 3D 頻寬 | NVIDIA 僅表示「考慮」採用 Foveros Direct 3D（非確認） |
+| 對應 TSMC SoIC-X 的 Cu-Cu 技術 | 技術成熟度晚於 TSMC SoIC（2026 vs. TSMC SoIC 商用 2022） |
+
+---
+
+## 應用場景 / Applications
+
+- **Intel 伺服器**：Clearwater Forest（Xeon 6+，18A + Intel 3，Foveros Direct 3D + EMIB 3.5D）
+- **Intel 消費性**：Lakefield 等（原始 Foveros micro-bump）
+- **潛在外部採用**：NVIDIA（考慮採用 Foveros Direct 3D，2025-12 確認考慮中，非確認）
+
+---
+
+## 相關技術 / Related Technologies
+
+- **[EMIB](emib.md)**：Intel 2.5D 橫向互連技術；與 Foveros 3D 垂直堆疊組合為 **EMIB 3.5D**
+- **[TSMC SoIC-X](soic.md)**：TSMC 對應的 Cu-Cu 混合接合技術；pitch 6µm（2026 Q1），比 Foveros Direct 3D < 10µm 更精細
+
+---
+
+## 爭議與未解問題 / Open Questions
+
+- Clearwater Forest 良率與性能提升僅 +17%（vs. Sierra Forest）是否代表 Foveros Direct 3D 量產的系統性挑戰？
+- Foveros Direct 3D 何時追上 TSMC SoIC-X 的 6µm pitch 水準？
+- NVIDIA 採用 Foveros Direct 3D 的可能性有多大（vs. 繼續等待 TSMC 美國廠）？

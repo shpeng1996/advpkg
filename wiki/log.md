@@ -356,3 +356,16 @@
   - ✅ 死連結：0；重複 URL：0；過時頁面：0
 - 建議新 collect 主題：Micron 封裝策略、NVIDIA Rubin/Feynman 封裝細節、EMIB vs CoWoS 對比、中國 OSAT 生態系、FOPLP 2026
 - 報告：wiki/analyses/2026-05-03_lint.md
+
+## [2026-05-03] ingest（批量補建）| 7 個缺失實體/技術頁面建立
+- 觸發原因：lint 識別出頻繁引用但無獨立頁面的實體與技術
+- 新建頁面（共 7 頁）：
+  - wiki/entities/micron.md（HBM4 三大廠之一；Virginia HBM 封裝廠；$200B 美國投資）
+  - wiki/entities/nvidia.md（AI GPU 最大先進封裝需求方；Rubin Ultra NVL576；Feynman 路線圖）
+  - wiki/entities/amd.md（Venice 首採 EMIB 等效；MI355X；MI450 aLSI 測試載具）
+  - wiki/entities/asml.md（XT:260 3D DUV 已出貨；評估混合接合設備）
+  - wiki/technologies/emib.md（Intel 局部矽橋；代工廠中立；EMIB 3.5D 演進）
+  - wiki/technologies/foveros.md（Intel 3D 堆疊；Foveros Direct 3D <10µm Cu-Cu；875 GB/s）
+  - wiki/technologies/foplp.md（扇出面板級；Powertech 90%；CoPoS 2028–29；競爭格局）
+- 更新 wiki/index.md：新增 7 頁索引條目；頁面總數更新至 77
+- 主要新知識：EMIB 技術完整規格化記錄（首次有獨立頁面）；NVIDIA 封裝路線圖系統化；Micron 美國在地化戰略完整記錄
