@@ -3,7 +3,7 @@ title: "Amkor Technology"
 category: entity
 tags: [OSAT, advanced-packaging, FOCoS, Arizona, chiplet, Intel-EMIB]
 created: 2026-04-25
-updated: 2026-04-29
+updated: 2026-05-03
 sources: [2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership]
 related:
   - wiki/technologies/cowos.md
@@ -49,9 +49,11 @@ related:
   - 意義：美國境內完整先進封裝路徑確立（Intel 製造 + Amkor 封裝，無需送件台灣）
   *Source: 3D InCites IFTLE 651, 2025-12-22*
 
-- **2026（已完成）**：Intel EMIB 製程落地 **Amkor 韓國松島 K5 廠**
-  - 隨 Intel EMIB 客戶（Google/Amazon/Meta）擴大，Songdo K5 產能重要性持續上升
-  *Source: TrendForce 2026-03-18; 2026-04-07*
+- **2025-12-01**：**Intel EMIB 製程首次落地 Amkor 韓國仁川松島 K5 廠**——ETNews 確認，Intel 於 Amkor Songdo K5 建立 EMIB 製程，為 **Intel 史上首次高端封裝外包**（此前 EMIB 僅在 Intel 自有美國/馬來西亞廠生產）。Songdo K5 戰略定位：設備能力可服務 NVIDIA、Apple 等北美巨頭，**開放接受外部（非 Intel）EMIB 訂單**。
+  - Amkor 配套啟動**2,700 億韓元（~$2 億美元）**在韓國的投資計畫，Songdo 測試建築奠基典禮已舉行
+  - **EMIB-M**（含 MiM 電容，已量產）vs **EMIB-T**（加入 TSV，2026–27 放量，最大 12× 光罩縮放）產品線確認
+  - 葡萄牙廠亦納入 EMIB 部署計畫（三廠：Songdo K5 + 葡萄牙 + Arizona）
+  *Source: TrendForce 2025-12-01*
 
 ---
 
