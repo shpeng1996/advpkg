@@ -301,3 +301,29 @@
   1. **ASML 進場混合接合設備評估**（2026-03-23）：ASML 已啟動混合接合設備架構設計，夥伴為 Prodrive Technologies 和 VDL-ETG。ASML 的精密對準技術（Maglev 磁浮）是混合接合的核心需求，若成真將是 Besi 在 D2W 設備市場的重大潛在競爭者。市場背景：Besi 2025-Q4 訂單積壓 +105%，ASMPT 封裝收入佔比 25%，強勁市場吸引 ASML 進場。
   2. **GTC 2026 確認三大要點**（2026-03-17）：① Groq 3 LPU 由 Samsung Foundry 代工（$20B NVIDIA 收購後延續協議），配備 500MB SRAM、150 TB/s 頻寬；② Micron HBM4 Q1 2026 批量供應 Vera Rubin（否認被排除謠言），36GB 12-high、>11 Gb/s、2.8 TB/s；③ **Feynman（2028）確認 3D 堆疊 GPU die on TSMC A16**——NVIDIA GPU 首次 3D 堆疊，強烈指向 SoIC-X 需求，Intel EMIB 可能負責 I/O die
   3. **混合接合設備市場首次量化**（2025-10-07）：2028 年混合接合設備市場預估 ~$2B（2.8 兆韓元），屆時混合接合佔 HBM 生產 ~50%；機台單價 ~$3M（TC 接合機 2×以上）。韓國設備商 Hanmi（Incheon H2 2026）、Hanwha Semitek（SHB2 Nano）、LG Electronics（2028）積極布局，Besi/ASMPT 為目前全球領先者
+
+## [2026-05-03] collect | 每日自動蒐集 — 先進封裝最新動態（第十次）
+- 搜尋查詢數：7 組（TSMC CoWoS ASP/利潤、HBM4/Rubin 供需、混合接合研究、Intel EMIB 生態、Intel 外包/Apple/Google、UCIe 標準動態、OSAT 市場預測）
+- 成功抓取：4 篇（articles/ 4, papers/ 0, reports/ 0）
+  - 2026-04-28_trendforce_tsmc-cowos-asp-7nm-profit-driver.md
+  - 2026-04-29_trendforce_intel-foundry-apple-18ap-google-packaging.md
+  - 2025-12-01_trendforce_intel-amkor-songdo-emib-outsourcing.md
+  - 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a.md
+- 失敗/跳過：多篇（大量 URL 已在 _collected_urls.txt 中；部分 WebFetch 超過大小限制但透過 bash 快取解析成功；混合接合和 UCIe 搜尋結果多為舊文章）
+- 學術代理：UNAVAILABLE ✗（ieeexplore 等學術頁面限制不變）
+- 新增 wiki 頁面：4 頁（全為 sources/）
+  - wiki/sources/2026-04-28_trendforce_tsmc-cowos-asp-profit-driver.md
+  - wiki/sources/2026-04-29_trendforce_intel-foundry-apple-18ap-google.md
+  - wiki/sources/2025-12-01_trendforce_intel-amkor-songdo-emib-outsource.md
+  - wiki/sources/2026-01-29_trendforce_emib-challenges-nvidia-14a-18a.md
+- 更新 wiki 頁面：6 頁
+  - wiki/entities/tsmc.md（CoWoS ASP $10K/片；年度產能 130萬/200萬；Arizona 2029 封裝廠確認；SoIC 75% 時程壓縮）
+  - wiki/entities/intel.md（Tesla 14A 首位外部客戶確認；Apple 18A-P 評估細節；CPU:GPU 1:8→1:1；EMIB-M/T 產品線區分；Songdo K5 首次外包；EMIB 功率限制 5-6kW）
+  - wiki/entities/amkor.md（Songdo K5 EMIB 首次上線里程碑；2,700 億韓元投資；葡萄牙廠確認；EMIB 開放外部客戶定位）
+  - wiki/technologies/cowos.md（ASP $10K 量化新增；年度產能預估；Arizona 2029 時間線；毛利論述）
+  - wiki/technologies/soic.md（SoIC 部署時程壓縮 75%；AP7 SoIC 優先擴產）
+  - wiki/index.md（頁面數 64→68；來源數 43→47；4 個新 sources 頁面加入）
+- 主要新知識：
+  1. **CoWoS 定價里程碑**（2026-04-28 最新）：CoWoS 單片晶圓 ASP ~$10,000 首次量化，相當於 7nm 製程節點水準。更關鍵的是「低 EUV 折舊 → 毛利潛力媲美先進製程」的經濟學邏輯被清晰闡明，預示先進封裝從「低利潤後端服務」轉型為 TSMC 核心獲利引擎——這是對「封裝是商品業務」的根本性顛覆。
+  2. **Tesla 14A 首位外部客戶確認**（2026-04-29）：Elon Musk 透過 Reuters 直接揭露 Tesla Terafab（Austin）採用 Intel 14A，是 Intel 14A 外部客戶的首次公開確認。同時 Apple M 系列評估 18A-P、Google EMIB 封裝評估，顯示 Intel Foundry 正構建多元客戶管線，信心度大幅提升。
+  3. **EMIB 技術邊界釐清**（2026-01-29）：Feynman GPU 功耗 5-6 kW，超出 EMIB 處理能力（需封裝內嵌入式 IVR，EMIB 無法提供真正嵌入式 IVR）。這是對「Intel EMIB 能否取代 TSMC CoWoS 封裝高端 GPU」這個長期猜測的明確技術否定，NVIDIA 高端 GPU 封裝仍將等待 TSMC 美國廠（2029）而非轉向 EMIB。

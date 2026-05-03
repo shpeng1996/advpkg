@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-05-02
-**頁面總數 Total Pages**：64
-**原始來源數 Sources**：43
+**更新時間 Updated**：2026-05-03
+**頁面總數 Total Pages**：68
+**原始來源數 Sources**：47
 
 ---
 
@@ -49,6 +49,10 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-04-29_trendforce_intel-foundry-apple-18ap-google]] — Intel Foundry：Apple M 系列評估 18A-P；Google EMIB；Tesla 14A 首位外部客戶（2026-04-29）⭐新增
+- [[sources/2026-04-28_trendforce_tsmc-cowos-asp-profit-driver]] — TSMC CoWoS ASP ~$10K/片 = 7nm 水準；先進封裝成關鍵獲利驅動器（2026-04-28）⭐新增
+- [[sources/2026-01-29_trendforce_emib-challenges-nvidia-14a-18a]] — EMIB 功率上限（5-6 kW Feynman 不可行）；NVIDIA 14A/18A I/O die 方案；IVR 需求（2026-01-29）⭐新增
+- [[sources/2025-12-01_trendforce_intel-amkor-songdo-emib-outsource]] — Intel 首次 EMIB 外包至 Amkor Songdo K5；EMIB-M 量產/EMIB-T 2026-27；2,700 億韓元投資（2025-12-01）⭐新增
 - [[sources/2026-03-23_trendforce_asml-hybrid-bonding-equipment]] — ASML 評估混合接合設備市場；Prodrive/VDL-ETG 合作；XT:260 已出貨（2026-03-23）⭐新增
 - [[sources/2026-03-17_trendforce_gtc2026-key-takeaways]] — GTC 2026 要點：Groq3 Samsung Foundry；Micron HBM4 HVM Q1'26；Feynman TSMC A16 + 3D 堆疊（2026-03-17）⭐新增
 - [[sources/2025-10-07_trendforce_hybrid-bonder-market-2b]] — 混合接合設備市場 $2B（2028）；韓國 Hanmi/Hanwha/LG 競爭；Besi/ASMPT 全球領先（2025-10-07）⭐新增
@@ -84,31 +88,4 @@
 - [[sources/2025-12-04_trendforce_tsmc-ap7-arizona-p6]] — TSMC AP7 啟用；Arizona P6 封裝基地 2028 破土；24% CapEx CAGR（2025-12-04）⭐新增
 - [[sources/2025-12-22_3dincites_intel-amkor-emib-partnership]] — 3D InCites IFTLE 651：Intel+Amkor EMIB HVM 三廠合作；美國境內完整封裝路徑確立（2025-12-22）⭐新增
 - [[sources/2025-07-01_3dincites_micron-onshore-tsmc-copos]] — 3D InCites IFTLE 634：Micron $2,000 億 onshore + TSMC CoPoS AP7 P1-P4 架構完整揭露（2025-07-01）⭐新增
-- [[sources/2026-04-16_trendforce_tsmc-q1-q2-earnings]] — TSMC Q1 史上最高淨利 NT$572.5B；Q2 指引 $40.2B；FY26 CapEx 高端確認（2026-04-16）⭐新增
-- [[sources/2026-01-13_semiengineering_hbm4-microbumps]] — HBM4 確認維持微凸塊；JEDEC 高度修訂 720→775µm；混合接合推遲至 HBM4E/HBM5（2026-01-13）⭐新增
-- [[sources/2025-12-18_trendforce_micron-capex-hbm4]] — Micron CapEx 上調至 $20B；2026 年 HBM 全年訂滿；HBM4 2Q26 高良率放量（2025-12-18）⭐新增
-- [[sources/2025-08-05_3dincites_iftle636-samsung-lsb-micron-virginia]] — Samsung LSB 矽橋接 Chiplet（ECTC 2025）；Micron Virginia HBM 封裝廠（2025-08-05）⭐新增
-- [[sources/2026-04-15_trendforce_hbm4-strategies-diverge]] — HBM4 策略分歧：Samsung <60% 良率 vs SK Hynix -30% 出貨量（2026-04-15）⭐新增
-- [[sources/2026-01-28_trendforce_skhynix-two-thirds-nvidia-hbm4]] — SK Hynix ~70% NVIDIA Rubin HBM4；Samsung 定價平價 >$600（2026-01-28）⭐新增
-- [[sources/2026-01-12_trendforce_tsmc-mature-node-reallocation-cowos]] — TSMC 40–90nm 成熟製程轉型 CoWoS；Fab 14、8 吋廠規劃（2026-01-12）⭐新增
-- [[sources/2026-04-24_initial-survey]] — 先進封裝產業與學術趨勢初步調查（AI 網路蒐集彙整，2026-04-24）
-
----
-
-## 分析報告 Analyses
-
-（尚無）
-
----
-
-## 快速搜尋指引 / Quick Search Guide
-
-| 我想了解… | 去哪裡看 |
-|----------|---------|
-| 台積電最新封裝技術動態 | [[entities/tsmc]] |
-| CoWoS vs EMIB 技術比較 | [[technologies/cowos]] + [[entities/intel]] |
-| HBM4 規格與市場 | [[technologies/hbm4]] |
-| Chiplet 互連標準 | [[technologies/ucie]] |
-| 市場規模與成長預測 | [[concepts/advanced-packaging-market]] |
-| 混合接合技術原理 | [[technologies/hybrid-bonding]] |
-| 整體市場競爭格局 | [[wiki/overview]] |
+- [[sources/2026-04-16_trendforce_tsmc-q1-q2-earnings]] — TSMC Q1 史

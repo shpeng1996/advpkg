@@ -3,7 +3,7 @@ title: "台積電 / TSMC"
 category: entity
 tags: [foundry, advanced-packaging, CoWoS, SoIC, CoPoS, COUPE, CPO, InFO, WMCM]
 created: 2026-04-24
-updated: 2026-05-01
+updated: 2026-05-03
 sources: [2026-04-24_initial-survey, 2026-04-13_trendforce_copos-pilot, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2025-12-18_trendforce_apple-wmcm-a20, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-01-20_trendforce_tsmc-wmcm-apple, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2026-01-12_trendforce_tsmc-mature-node-cowos]
 related:
   - wiki/technologies/cowos.md
@@ -36,8 +36,11 @@ related:
 - **2026-01-12（新增）**：**成熟製程廠轉型先進封裝**——TSMC 評估將部分 **40–90nm 製程產能**重新分配為 CoWoS-L 和 CoPoW 生產用**矽中介層/矽橋接**。重點廠區：**Hsinchu Fab 14**（12 吋成熟製程核心廠）。12–24 個月內，部分 **8 吋廠**可能轉型為先進封裝或測試設施（竹科近 Baoshan Fab 20，有利物流效率）。同期評估將成熟製程設備遷至 **Vanguard（聯華電子）新加坡 12 吋廠**，釋出台灣廠房空間給 2nm/3nm 先進製程。
   *Source: TrendForce 2026-01-12（引述 Commercial Times, Economic Daily News）*
 
-- **2026-04**（新增）：**Arizona P6 封裝基地規劃**——TSMC 計畫將原定晶圓廠 Phase 6（P6）區域**重新規劃為先進封裝廠**（美國本土封裝基地）。技術路線：SoIC 先行，後續引入 CoWoS。美國 SoIC/CoPoS 廠預計 **2028 年破土**，2030+ 年才有規模產出。目的：呼應 CHIPS Act 要求、消除「亞利桑那晶圓需運回台灣封裝」的供應鏈斷點。
-  *Source: TrendForce 2025-12-04*
+- **2026-04-28（新增）**：**CoWoS 晶圓 ASP 接近 7nm 製程水準**——Commercial Times 報導，TSMC CoWoS 單片晶圓 ASP 約 **$10,000**，與 7nm 先進製程節點相當。CoWoS 因低設備折舊（無需 $1.5 億以上 EUV 設備）而具備更高毛利潛力，長期將成為 TSMC 關鍵獲利驅動器。法人估計 CoWoS 年度產能：**2026 年 130 萬片，2027 年 200 萬片**。SoIC 部署時程縮短 **75%**，加速客戶 TTM。
+  *Source: TrendForce 2026-04-28*
+
+- **2026-04**（新增）：**Arizona P6 封裝基地規劃更新**——TSMC 計畫將原定晶圓廠 Phase 6（P6）區域**重新規劃為先進封裝廠**（美國本土封裝基地）。最新確認：目標 **2029 年**投產。技術路線：SoIC 先行，後續引入 CoWoS。目的：呼應 CHIPS Act 要求、消除「亞利桑那晶圓需運回台灣封裝」的供應鏈斷點，服務北美 CSP 客戶（NVIDIA、Amazon、Google 等）。
+  *Source: TrendForce 2025-12-04; TrendForce 2026-04-28*
 
 - **2026-01-20**：WMCM 產能擴張計畫更新：AP3（Longtan）升級 + AP7 Phase 2（Apple 專屬）雙線並進；**2026 年底 WMCM 月產能目標 60,000 片**；2027 年預計倍增至 >120,000 片。Apple 排他窗口預計 2027–2028 年後開放其他客戶。
   *Source: TrendForce 2026-01-20*
@@ -86,29 +89,4 @@ related:
 | 年度資本支出 | $52–56B | 2026 |
 | 先進封裝佔資本支出比 | 10–20% | 2026 |
 | 先進封裝佔 TSMC 總營收 | ~8%（2025）→ >10%（2026） | — |
-| CoWoS 當前尺寸 | 5.5 reticles（量產中） | 2026 |
-| CoWoS 目標尺寸 | 14 reticles（~10 compute + 20 HBM） | 2028 |
-| COUPE CPO 量產啟動 | 2026 年 | — |
-| A14-to-A14 SoIC | 1.8× I/O 密度 vs N2-to-N2 | 2029 |
-| WMCM 產能目標 | 60,000 晶圓/月 | 2026 年底 |
-| AP3 轉型 | InFO → WMCM 設備升級 | 2025–2026 |
-
-台積電在先進封裝領域處於主導地位，特別是 AI 加速器所需的 CoWoS 與 SoIC 製程，競爭對手在 3–5 年內難以追上其技術與產能規模。
-
----
-
-## 與其他實體的關係 / Relationships
-
-- **NVIDIA**：最大 CoWoS 客戶，2026 年佔台積電封裝產能 60–65%
-- **AMD**：第二大 CoWoS 客戶，~11%，押注 SoIC 3D 尋求密度優勢
-- **Intel**：競爭對手（EMIB vs CoWoS-L；Foveros vs SoIC-X）
-- **Samsung Foundry**：競爭對手（AI 晶圓代工）
-- **SK Hynix**：HBM 供應商，透過 CoWoS 整合至 AI 加速器
-
----
-
-## 爭議與未解問題 / Open Questions
-
-- CoPoS 面板級封裝的翹曲控制與大規模良率何時能商業化？
-- 亞利桑那先進封裝廠的地緣政治風險與成本結構？
-- UCIe 生態系成熟後，台積電封裝技術的差異化競爭力如何維持？
+| CoWo

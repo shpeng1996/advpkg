@@ -3,8 +3,8 @@ title: "英特爾 / Intel"
 category: entity
 tags: [IDM, advanced-packaging, EMIB, Foveros, Intel18A, Clearwater-Forest, Foveros-Direct, glass-substrate, 14A, High-NA-EUV]
 created: 2026-04-24
-updated: 2026-04-29
-sources: [2026-04-24_initial-survey, 2026-03-18_trendforce_intel-emib-malaysia, 2026-03-03_trendforce_intel-clearwater-forest, 2026-03-05_trendforce_intel-emib-billions, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-04-20_trendforce_intel-foundry-14a-equipment, 2025-12-22_3dincites_intel-amkor-emib-partnership]
+updated: 2026-05-03
+sources: [2026-04-24_initial-survey, 2026-03-18_trendforce_intel-emib-malaysia, 2026-03-03_trendforce_intel-clearwater-forest, 2026-03-05_trendforce_intel-emib-billions, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-04-20_trendforce_intel-foundry-14a-equipment, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a]
 related:
   - wiki/entities/tsmc.md
   - wiki/entities/samsung.md
@@ -22,7 +22,8 @@ related:
 ## 核心封裝技術 / Core Packaging Technologies
 
 - **EMIB（Embedded Multi-Die Interconnect Bridge）**：2.5D 封裝，以嵌入式矽橋連接多晶片，取代全面積矽中介層。與 TSMC CoWoS-L 技術路線相近但實作不同。目標封裝尺寸：**120×120 mm**（超越業界標準 100×100 mm）。
-- **EMIB-T**：EMIB 增強版，專為支援下一代 **HBM4** 整合設計；2H 2026 開始放量。
+- **EMIB-M**：EMIB 含 **MiM（Metal-Insulator-Metal）電容**嵌入基板，**已量產**（用於 Sapphire Rapids、Granite Rapids）。
+- **EMIB-T**：EMIB 增強版，加入 **TSV（Through-Silicon Via）**，專為支援下一代 **HBM4** 整合設計；2026–2027 年放量；最大支援 **12× 光罩縮放**。
 - **Foveros 3D**：3D 晶片堆疊技術，支援多晶片異質整合；與 EMIB 組合使用。
 - **Foveros-R**：新增 Foveros 變體，提供靈活封裝選項（2026 年公布）。
 - **Foveros-B**：新增 Foveros 變體，提供更具成本效益的封裝選項（2026 年公布）。
@@ -34,6 +35,15 @@ related:
 ---
 
 ## 近期動態 / Recent Developments
+
+- **2026-04-29**：Intel Q1 2026 法說會——CEO Lip-Bu Tan 指出 **CPU:GPU 比例從 1:8 趨向 1:1**（agentic/inference AI 帶動 CPU 需求回升）。外部重大動態：**Apple M 系列晶片正評估 Intel 18A-P 節點**（成本敏感型 Mac/平板基礎晶片為優先），**Google TPU v8e 考慮採用 Intel EMIB 封裝**。Intel Foundry 營業虧損縮窄至 **$2.4B**（QoQ 改善 $72M）；18A、Intel 3、Intel 4 良率均持續改善。**Tesla 確認採用 Intel 14A** 用於 Austin Terafab AI 複合體晶片——Intel 14A **首位外部客戶**（Reuters/Musk 揭露）。
+  *Source: TrendForce 2026-04-29*
+
+- **2026-01-29**：市場關注 NVIDIA 考慮 Intel 14A/18A 與 EMIB 封裝 Feynman，但技術分析揭示重要限制：**Feynman 晶片功耗達 5–6 kW**，超出 EMIB 處理能力。Feynman 需要封裝內嵌入式電壓調節器（**IVR，~1.8V 入封裝**），EMIB 無法提供真正嵌入式 IVR；Foveros 技術上可行但需完全重設計。結論：NVIDIA 高端 GPU（Feynman）更可能等待 **TSMC 美國廠（~2029）** 而非改用 EMIB；Intel 仍可承接 Vera CPU 封裝或低功耗 I/O die。
+  *Source: TrendForce 2026-01-29*
+
+- **2025-12-01**：Intel EMIB 首次外包里程碑——Intel 於 **Amkor 韓國仁川松島 K5 廠**建立 EMIB 製程，為 **Intel 史上首次將 EMIB 高端封裝外包**。Amkor 將在 **韓國（K5）、葡萄牙、Arizona 廠**三地同步展開 EMIB 封裝，鞏固「美國境內完整封裝路徑」。Amkor 配套在韓國啟動 **2,700 億韓元（~$2 億美元）**投資。此里程碑也確認 Songdo K5 可能接受外部（非 Intel）客戶的 EMIB 訂單。
+  *Source: TrendForce 2025-12-01*
 
 - **2026-04-20**：Intel Foundry 2026 年設備訂單較 2025 年成長 **>50% YoY**，主要目標是 **14A** 製程節點（High-NA EUV + RibbonFET）；重大不具名外部客戶正評估年底前 tape-out；14A 客戶預期同時採用 EMIB 封裝，形成「代工+封裝」一體化商業模式。
   *Source: TrendForce 2026-04-20*
@@ -60,42 +70,4 @@ related:
   - 美國境內完整先進封裝路徑確立：Intel 製造 + Amkor 封裝，無需送件台灣
   *Source: 3D InCites IFTLE 651, 2025-12-22*
 
-- **2026-03**：Intel 高階封裝外包落地：EMIB 製程已於 **Amkor 韓國松島 K5 廠**量產。
-  *Source: TrendForce 2026-03-18*
-
-- **2025-12**：Intel 揭示 EMIB 放量計畫（2H 2026）；**18A-P / 18A-PT** 製程節點向外部客戶開放。
-  *Source: TrendForce 2025-12-05*
-
-- **Intel 18A 製程**已準備好接受客戶項目
-- **PowerDirect**（背面電源傳輸 Backside Power Delivery）為 Intel 18A 的演進版本
-- 延伸版本：18A-P 與 18A-PT 亦在規劃中
-- **Intel 14A** 亦在路線圖上，持續推進製程微縮
-
----
-
-## 市場地位 / Market Position
-
-Intel Foundry 在先進封裝領域位居第二梯隊，EMIB 技術在高效能運算領域有一定的客戶基礎，但整體產能與技術領先程度落後於 TSMC。2026 年 Q2，隨著 Google、Amazon、Meta 三大 CSP 開始評估 EMIB，Intel 封裝服務的市場地位顯著提升。EMIB「代工廠中立」的定位（可封裝任何代工廠晶片）是差異化競爭優勢。
-
-**EMIB 客戶管線（2026-04）**：Apple（探索中）、Qualcomm（探索中）、Google（TPU v9 2027 計畫採用）、Amazon AWS（評估中）、Meta（MTIA 評估中）、MediaTek（表達興趣）、Tesla（表達興趣）
-
-**Foveros 潛在客戶**：NVIDIA（考慮採用 Foveros Direct 3D，2025-12 確認）
-
----
-
-## 與其他實體的關係 / Relationships
-
-- **TSMC**：封裝技術主要競爭對手；部分 Intel 晶片委外台積電代工；EMIB 可封裝 TSMC-made dies（互補可能性）
-- **Samsung**：製程競爭對手（2nm、1.4nm）
-- **Apple / Qualcomm**：潛在 EMIB 封裝服務客戶（2026 年探索中）
-- **Google**：TPU v9（2027）計畫採用 EMIB——潛在重大轉單
-- **Amazon AWS / Meta**：評估 EMIB 用於各自 AI 加速器（Trainium、MTIA）
-- **Amkor**：EMIB 外包封裝夥伴（韓國 K5 + 葡萄牙 + Arizona 三廠；2025-12 正式合作宣布）
-
----
-
-## 爭議與未解問題 / Open Questions
-
-- Intel Foundry 的財務壓力是否影響先進封裝的長期投入？
-- EMIB + Foveros 組合能否在 AI 加速器市場取得更多份額？
-- Foveros Direct 接合間距追趕 TSMC SoIC-X 的進度？
+- **2026-03**：Intel 高階封裝外包落地：EMIB 製程已於 **Am
