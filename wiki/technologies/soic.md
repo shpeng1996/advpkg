@@ -3,8 +3,8 @@ title: "SoIC — System on Integrated Chips"
 category: technology
 tags: [3D, SoIC, hybrid-bonding, TSMC, AI, NVIDIA, Feynman]
 created: 2026-04-24
-updated: 2026-05-03
-sources: [2026-04-24_initial-survey, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-03-18_trendforce_nvidia-rubin-feynman-soic, 2026-03-17_trendforce_gtc2026-key-takeaways]
+updated: 2026-05-04
+sources: [2026-04-24_initial-survey, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-03-18_trendforce_nvidia-rubin-feynman-soic, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-23_trendforce_tsmc-roadmap-a12-a13-no-high-na-euv]
 related:
   - wiki/entities/tsmc.md
   - wiki/technologies/cowos.md
@@ -55,10 +55,11 @@ SoIC 常與 CoWoS 組合：邏輯晶片先透過 SoIC 3D 堆疊，再整合於 C
   *Source: TrendForce 2026-03-18*
 - **2026-04-01**：Rubin Ultra（NVL576）SoIC 架構確認；規格：4 reticle-sized chips、100 PFLOPS FP4、1 TB HBM4E
   *Source: TrendForce 2026-04-01*
-- **2026-04-22**：TSMC Symposium 宣布 **A14-to-A14 SoIC** 路線圖（2029 目標）：
+- **2026-04-22/27（再確認）**：TSMC Symposium 宣布 **A14-to-A14 SoIC** 路線圖（2029 目標）：
   - 提供比 N2-to-N2 SoIC 高 **1.8× 的 die-to-die I/O 密度**
   - 支援更高資料傳輸頻寬，面向下一代 AI 系統
-  *Source: TSMC 2026 North America Technology Symposium*
+  - A13（2029）和 A12（2029）製程節點出現後，SoIC 路線圖延伸至 A13-on-A13（推測）
+  *Source: TSMC 2026 North America Technology Symposium; SemiEngineering 2026-04-27*
 - **2026-04-28**：**SoIC 部署時程壓縮 75%** 確認——TSMC 大幅縮短 SoIC 技術進入量產的時程，加速客戶 time-to-market；此加速能力是 TSMC SoIC 相對競爭者的重要優勢。同期，TSMC AP7（嘉義）Phase 1 與 Phase 3 以 SoIC 為核心優先擴產。
   *Source: TrendForce 2026-04-28*
 - **2028+（Feynman GPU）**：NVIDIA Feynman（**TSMC A16/1.6nm 製程**）**確認採用 3D 堆疊 GPU die**（GTC 2026 確認），是 NVIDIA GPU 首次引入 3D 堆疊；強烈指向 SoIC-X 需求；記憶體採客製化 HBM（可能是 HBM4E 強化版或 HBM5 客製）。Intel EMIB 可能負責 I/O die 封裝 *Source: TrendForce 2026-03-17*

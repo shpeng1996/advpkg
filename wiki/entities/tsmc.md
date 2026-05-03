@@ -3,8 +3,8 @@ title: "台積電 / TSMC"
 category: entity
 tags: [foundry, advanced-packaging, CoWoS, SoIC, CoPoS, COUPE, CPO, InFO, WMCM, aLSI, MRAM]
 created: 2026-04-24
-updated: 2026-05-03
-sources: [2026-04-24_initial-survey, 2026-04-13_trendforce_copos-pilot, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2025-12-18_trendforce_apple-wmcm-a20, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-01-20_trendforce_tsmc-wmcm-apple, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi]
+updated: 2026-05-04
+sources: [2026-04-24_initial-survey, 2026-04-13_trendforce_copos-pilot, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2025-12-18_trendforce_apple-wmcm-a20, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-01-20_trendforce_tsmc-wmcm-apple, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-23_trendforce_tsmc-roadmap-a12-a13-no-high-na-euv]
 related:
   - wiki/technologies/cowos.md
   - wiki/technologies/soic.md
@@ -67,6 +67,16 @@ related:
 - **2026-04**：CoPoS 試驗線最新進展確認：主要設備安裝 **2026-02 完成**（Visionchip 子公司；TSMC CEO 親口確認）；完整試驗線預計 **2026-06 完工**；2027 年製程精修；量產 **2028 年底–2029 年初**於嘉義 AP7（Phase 4）。NVIDIA 為首要客戶（最多 12 HBM4 + 多 GPU chiplet）。
   *Source: TrendForce 2026-04-13; TrendForce 2026-04-16; 3D InCites 2025-07*
 
+- **2026-05-04（新增）**：**TSMC Tech Symposium 2026 關鍵數字更新**（SemiEngineering 2026-04-27 報導）：
+  - CoWoS 5.5 倍光罩尺寸良率 **>98%** 在 2026 年確認（世界最大量產 CoWoS）
+  - **SoW-X（2029）**：可容納 **64 個 HBM 堆疊**（如每疊 64 GB = 系統內 **4 TB HBM**）
+  - **A13（1.3nm 級）宣布 2029**：A14 光學縮小 ~3%，密度提升 ~6%，**無需 High-NA EUV**
+  - **A12（1.2nm 級）同樣 2029**：「激進加速」節點，**無需 High-NA EUV**
+  - **A16 正式延至 2027**（前稱 2026 年底量產）
+  - N2P → N2U（2028）路線圖維持；N2 缺陷密度降速優於 N3
+  - A14-on-A14 SoIC（2029）：1.8× die-to-die I/O 密度 vs N2-on-N2（已知數字再確認）
+  *Source: SemiEngineering 2026-04-27; TrendForce 2026-04-23*
+
 - **2026-04**：NVIDIA 搶佔台積電 2026 年 CoWoS 總產能 60–65%；AMD 佔 ~11%（MI400 系列）
   *Source: CNBC 2026-04-08*
 
@@ -120,3 +130,5 @@ related:
 - CoPoS 面板級封裝的翹曲控制與大規模良率何時能商業化？
 - 亞利桑那先進封裝廠的地緣政治風險與成本結構？
 - UCIe 生態系成熟後，台積電封裝技術的差異化競爭力如何維持？
+- A12 和 A13 同年（2029）上市策略是否可行？兩者是否真能在同年量產？
+- TSMC 拒採 High-NA EUV 的長期影響——若 Intel/Samsung 以 High-NA EUV 取得製程優勢，TSMC 如何應對？

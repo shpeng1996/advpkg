@@ -369,3 +369,32 @@
   - wiki/technologies/foplp.md（扇出面板級；Powertech 90%；CoPoS 2028–29；競爭格局）
 - 更新 wiki/index.md：新增 7 頁索引條目；頁面總數更新至 77
 - 主要新知識：EMIB 技術完整規格化記錄（首次有獨立頁面）；NVIDIA 封裝路線圖系統化；Micron 美國在地化戰略完整記錄
+
+## [2026-05-04] collect | 每日自動蒐集 — 先進封裝最新動態（第十次）
+- 搜尋查詢數：7 組（TSMC CoWoS/SoIC、HBM4/HBM4E、混合接合、面板級封裝、Intel EMIB/Foveros、UCIe 標準、AI 封裝市場）
+- 成功抓取：4 篇（articles/ 4, papers/ 0, reports/ 0）
+  - 2026-03-19_semieng_advanced-packaging-limits.md（SemiEngineering，3K 字深度分析）
+  - 2026-04-27_semieng_tsmc-tech-symposium-2026-by-numbers.md（SemiEngineering，Symposium 數字報導）
+  - 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo.md（TrendForce，最新 2026-05-01）
+  - 2026-04-23_trendforce_tsmc-roadmap-a12-a13-2029-no-high-na-euv.md（TrendForce，A12/A13 路線圖）
+- 失敗/跳過：多篇（TrendForce 2026-05-01 TSMC High-NA EUV 文章正文不可取；多數搜尋結果已收錄；UCIe 3.0 規格為已知資訊無需重新收錄）
+- 學術代理：UNAVAILABLE ✗（ieeexplore 等學術頁面限制不變）
+- 新增 wiki 頁面：4 頁（全為 sources/）
+  - wiki/sources/2026-03-19_semieng_advanced-packaging-limits.md
+  - wiki/sources/2026-04-27_semieng_tsmc-tech-symposium-2026-numbers.md
+  - wiki/sources/2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo.md
+  - wiki/sources/2026-04-23_trendforce_tsmc-roadmap-a12-a13-no-high-na-euv.md
+- 更新 wiki 頁面：7 頁
+  - wiki/entities/tsmc.md（A12/A13 2029 宣布；CoWoS >98% 良率確認；SoW-X 64 HBM；A16 延至 2027）
+  - wiki/entities/samsung.md（矽光子 PDK 就緒；2026 H2 光學模組出貨；CPO 2029 路線圖）
+  - wiki/entities/asml.md（TSMC 拒採 High-NA EUV 衝擊；2026 目標 €36–40B；韓國份額 45%）
+  - wiki/technologies/cowos.md（5.5× >98% 良率確認；SoW-X 64 HBM 目標）
+  - wiki/technologies/soic.md（A14-on-A14 SoIC 2029；A13 路線圖延伸）
+  - wiki/technologies/hybrid-bonding.md（良率轉換點框架：>5µm 缺陷驅動 vs <2–3µm 應力驅動）
+  - wiki/technologies/copackaged-optics.md（Samsung CPO 競爭廠商加入；35% 滲透率 2030 預測；Spectrum-X Photonics H2 2026）
+  - wiki/index.md（頁面數 77→81；來源數 48→52；4 個新 sources 頁面加入）
+- 主要新知識：
+  1. **CoWoS >98% 良率官方確認**（TSMC Tech Symposium 2026-04-27）：TSMC 官方在北美技術研討會確認 5.5 倍光罩尺寸 CoWoS 已達 >98% 量產良率，同時揭示 SoW-X（2029）可容納 64 個 HBM 堆疊（= 4TB HBM），是系統規模最重要的長期路線圖數字。
+  2. **TSMC A12/A13 雙節點 2029 + 拒採 High-NA EUV**（TrendForce 2026-04-23）：TSMC 在 2026 Symposium 同時宣布 A13（1.3nm 光學縮小）和 A12（1.2nm 激進加速）均目標 2029 年，且均不需要 High-NA EUV——此決策對 ASML 的 High-NA EUV 收入計畫（2030 年 €600 億目標）構成重大衝擊；ASML 韓國份額升至 45% 以彌補。
+  3. **混合接合良率物理機制轉換**（SemiEngineering 2026-03-19，Gregory Haley/iMAPS 2025）：業界首次清晰量化：>5 µm pitch 以缺陷驅動、<2–3 µm pitch 轉為應力驅動。這意味著 TSMC 的 1M/mm² 長期目標（~1 µm pitch）面臨的主要挑戰已不是潔淨度，而是銅膨脹引起的機械應力——是整個混合接合 roadmap 可行性的關鍵制約因素。
+  4. **Samsung Foundry 進入矽光子/CPO 市場**（TrendForce 2026-05-01）：Samsung Foundry 完成 PDK（300mm）、贏得 2026 H2 光學模組訂單、設定 2029 年 Turnkey CPO 目標，以「垂直整合 DRAM」作為差異化對抗 TSMC COUPE；TrendForce 預測 CPO 2030 年在 AI 資料中心滲透率達 35%。

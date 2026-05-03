@@ -3,8 +3,8 @@ title: "混合接合 / Hybrid Bonding"
 category: technology
 tags: [3D, hybrid-bonding, Cu-Cu, SoIC, ECTC, advanced-packaging, DRAM, COP, 4F2]
 created: 2026-04-24
-updated: 2026-05-03
-sources: [2026-04-24_initial-survey, 2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-03-01_3dincites_besi-packaging-power-shift, 2026-01-13_semiengineering_hbm4-microbumps, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi]
+updated: 2026-05-04
+sources: [2026-04-24_initial-survey, 2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-03-01_3dincites_besi-packaging-power-shift, 2026-01-13_semiengineering_hbm4-microbumps, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-19_semieng_advanced-packaging-limits]
 related:
   - wiki/technologies/soic.md
   - wiki/technologies/cowos.md
@@ -31,6 +31,14 @@ related:
 - 傳統微凸塊：間距 ≥ 20µm（生產）/ 40–50µm（標準），需要錫焊材料
 - 混合接合：間距可達 1–6µm，銅對銅直接接合，無功率/訊號損失（no power/signal penalty）
 - 結果：頻寬密度提升 10–100 倍，功耗降低；目標互連密度 **1M 個/mm²**（數年內）
+
+**良率物理機制的間距依賴轉換（iMAPS 2025 / SemiEngineering 2026-03-19）：**
+> - **>5 µm pitch**：良率以缺陷/污染為主導（Defect-driven）
+> - **<2–3 µm pitch**：良率轉為應力主導（Stress-driven），因銅密度增加 → 機械應力升高 → 介電層約束
+> - 意涵：單純提升潔淨度不再足以在超細間距下維持良率；需要同時解決應力管理
+> - 1M/mm² 目標（對應 ~1 µm pitch）完全落在應力驅動區間，是最大技術挑戰
+>
+> *Source: Brewer Science / SemiEngineering 2026-03-19（Gregory Haley, iMAPS 2025 報導）*
 
 **三大整合情境（ECTC 2025 框架）：**
 | 情境 | 成熟度 | 應用 |

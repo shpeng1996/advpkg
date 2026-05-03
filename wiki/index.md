@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-05-03
-**頁面總數 Total Pages**：77
-**原始來源數 Sources**：48
+**更新時間 Updated**：2026-05-04
+**頁面總數 Total Pages**：81
+**原始來源數 Sources**：52
 
 ---
 
@@ -56,6 +56,10 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo]] — Samsung Foundry 矽光子 PDK 就緒；CPO Turnkey 2029 路線圖；CPO 35% 滲透率 2030（2026-05-01）⭐新增
+- [[sources/2026-04-27_semieng_tsmc-tech-symposium-2026-numbers]] — SemiEngineering：TSMC Tech Symposium 2026 數字——A12/A13 2029、CoWoS >98%、SoW-X 64 HBM（2026-04-27）⭐新增
+- [[sources/2026-04-23_trendforce_tsmc-roadmap-a12-a13-no-high-na-euv]] — TSMC A12/A13 宣布 2029 無需 High-NA EUV；A16 延至 2027；ASML 衝擊（2026-04-23）⭐新增
+- [[sources/2026-03-19_semieng_advanced-packaging-limits]] — SemiEngineering：先進封裝物理極限——翹曲、玻璃脆性、混合接合良率轉換點（2026-03-19）⭐新增
 - [[sources/2026-04-29_trendforce_intel-foundry-apple-18ap-google]] — Intel Foundry：Apple M 系列評估 18A-P；Google EMIB；Tesla 14A 首位外部客戶（2026-04-29）⭐新增
 - [[sources/2026-04-28_trendforce_tsmc-cowos-asp-profit-driver]] — TSMC CoWoS ASP ~$10K/片 = 7nm 水準；先進封裝成關鍵獲利驅動器（2026-04-28）⭐新增
 - [[sources/2026-01-29_trendforce_emib-challenges-nvidia-14a-18a]] — EMIB 功率上限（5-6 kW Feynman 不可行）；NVIDIA 14A/18A I/O die 方案；IVR 需求（2026-01-29）⭐新增
