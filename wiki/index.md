@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
 **更新時間 Updated**：2026-05-03
-**頁面總數 Total Pages**：68
-**原始來源數 Sources**：47
+**頁面總數 Total Pages**：70
+**原始來源數 Sources**：48
 
 ---
 
@@ -88,4 +88,19 @@
 - [[sources/2025-12-04_trendforce_tsmc-ap7-arizona-p6]] — TSMC AP7 啟用；Arizona P6 封裝基地 2028 破土；24% CapEx CAGR（2025-12-04）⭐新增
 - [[sources/2025-12-22_3dincites_intel-amkor-emib-partnership]] — 3D InCites IFTLE 651：Intel+Amkor EMIB HVM 三廠合作；美國境內完整封裝路徑確立（2025-12-22）⭐新增
 - [[sources/2025-07-01_3dincites_micron-onshore-tsmc-copos]] — 3D InCites IFTLE 634：Micron $2,000 億 onshore + TSMC CoPoS AP7 P1-P4 架構完整揭露（2025-07-01）⭐新增
-- [[sources/2026-04-16_trendforce_tsmc-q1-q2-earnings]] — TSMC Q1 史
+- [[sources/2026-04-16_trendforce_tsmc-q1-q2-earnings]] — TSMC Q1 史上最高 $40.2B；Q2 +10% QoQ；CapEx 維持 $52–56B 高端（2026-04-16）⭐新增
+- [[sources/2026-04-15_trendforce_hbm4-strategies-diverge]] — HBM4 良率策略分歧：Samsung 追求 80%；SK Hynix 裁切 30% stack 降成本（2026-04-15）⭐新增
+- [[sources/2026-03-01_semianalysis_cpus-back-datacenter-2026]] — SemiAnalysis：CPU 回歸數據中心；Diamond Rapids/AMD Venice/Clearwater Forest 封裝分析（2026-03-01）⭐新增
+- [[sources/2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi]] — ISSCC 2026：Samsung HBM4 3.3 TB/s；TSMC aLSI 主動矽橋；Intel UCIe-S；OCI CPO 標準（2026-02-15）⭐新增
+- [[sources/2026-01-28_trendforce_skhynix-two-thirds-nvidia-hbm4]] — SK Hynix NVIDIA HBM4 份額 ~70%；Samsung 同價格競爭（>$600/套）（2026-01-28）⭐新增
+- [[sources/2026-01-13_semiengineering_hbm4-microbumps]] — HBM4 維持微凸塊接合；混合接合延至 HBM4E/HBM5 後（2026-01-13）⭐新增
+- [[sources/2026-01-12_trendforce_tsmc-mature-node-reallocation-cowos]] — TSMC 評估將 45–90nm 成熟節點產能轉供 CoWoS 封裝（2026-01-12）⭐新增
+- [[sources/2025-12-18_trendforce_micron-capex-hbm4]] — Micron CapEx 上調至 $200 億；2026 年 HBM 全年訂滿；HBM4 2Q26 放量（2025-12-18）⭐新增
+- [[sources/2025-08-05_3dincites_iftle636-samsung-lsb-micron-virginia]] — Samsung LSB 矽橋接 Chiplet；Micron 維吉尼亞 HBM 封裝廠計畫（2025-08-05）⭐新增
+- [[sources/2026-04-24_initial-survey]] — 先進封裝產業與學術趨勢初步調查報告（初始知識庫，2026-04-24）
+
+---
+
+## 分析報告 Analyses
+
+- [[analyses/2026-05-03_lint]] — Lint 健康檢查：9 孤立頁面修復、index 截斷修復、知識空缺識別（2026-05-03）

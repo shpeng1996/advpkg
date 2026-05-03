@@ -344,3 +344,15 @@
   9. Rebellions Rebel100 封裝更正：Samsung I-CubeS（非 TSMC CoWoS-S）
   10. SK Hynix HBM4 base die：TSMC N12 邏輯製程
 - 矛盾/修正：Rebellions Rebel100 封裝（Hot Chips 2025 錯標為 CoWoS-S → 正確為 I-CubeS）；Diamond Rapids 不使用 EMIB（先前市場推測有誤）
+
+## [2026-05-03] lint | Wiki 健康檢查
+- 問題數：5 類（1 嚴重已修復、2 高優先已修復、2 中優先待補充）
+- 主要發現：
+  - ⛔ index.md 第 91 行截斷（最後一個條目 TSMC Q1 史 後內容全部遺失）→ 已修復
+  - 🔴 9 個孤立 source 頁面（含最新 ingest 的 2 篇 SemiAnalysis）→ 已補入 index
+  - 🔴 Index 頁面計數錯誤（68→70）、來源計數（47→48）→ 已修復
+  - 🟡 10 個頻繁引用實體無獨立頁面（Micron、NVIDIA 最優先）
+  - 🟡 8 個頻繁引用技術無獨立頁面（EMIB、Foveros 最優先）
+  - ✅ 死連結：0；重複 URL：0；過時頁面：0
+- 建議新 collect 主題：Micron 封裝策略、NVIDIA Rubin/Feynman 封裝細節、EMIB vs CoWoS 對比、中國 OSAT 生態系、FOPLP 2026
+- 報告：wiki/analyses/2026-05-03_lint.md
