@@ -1,10 +1,10 @@
 ---
 title: "三星 / Samsung"
 category: entity
-tags: [IDM, foundry, memory, advanced-packaging, X-Cube, HBM]
+tags: [IDM, foundry, memory, advanced-packaging, X-Cube, HBM, ISSCC2026, I-CubeS, LPDDR6]
 created: 2026-04-24
-updated: 2026-05-02
-sources: [2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2025-12-30_trendforce_samsung-hbm-surge, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2025-08-05_3dincites_iftle636, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways]
+updated: 2026-05-03
+sources: [2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2025-12-30_trendforce_samsung-hbm-surge, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2025-08-05_3dincites_iftle636, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi]
 related:
   - wiki/entities/tsmc.md
   - wiki/entities/intel.md
@@ -32,6 +32,13 @@ related:
 
 ## 近期動態 / Recent Developments
 
+- **2026-02-15（ISSCC 2026 新增）**：Samsung 在 ISSCC 2026 發表多項重要技術論文：
+  - **HBM4 技術論文**：36 GB 12-high stack；2048 IO pins；**SF4 邏輯製程 base die**（最大架構轉變）；VDDQ **0.75V**（−32% vs HBM3E）；最高 pin 速度 **13 Gb/s**；實測頻寬 **3.3 TB/s**（JEDEC 規格 2 TB/s 的 1.65×）；per-channel TSV RDQS timing auto-calibration 解決 12 層疊結構時序不一致問題；PMBIST（Pattern-Based MBIST）取代 HBM3E 的簡單 MBIST，實現更強大的良率學習。1c DRAM 良率 2025 年約 **50%**（SemiAnalysis 估算）。
+  - **LPDDR6 PHY 論文**：PHY 採用 **SF2（2nm 級）邏輯製程**；支援效率模式（read 省電 39%，write 省電 51%）；配合 LPDDR6 晶片效率模式最高可省電 50%。LPDDR6 最高 14.4 Gb/s @ 1.025V；RDL 改善佈線效率。
+  - **4F² COP DRAM 論文**：首次將 **hybrid bonding** 應用於 DRAM 架構（Cell-on-Peripheral，cell wafer 混合接合至 peripheral wafer）；VCT（Vertical Channel Transistor）架構；核心電路面積從 17.0% 降至 **2.7%**；16 Gb 展示晶片（10nm DRAM 製程）。量產預計 1d 節點之後（2028–2030 年代早期）。
+  - **I-CubeS 封裝**：SemiAnalysis 確認 **Rebellions Rebel100 使用 Samsung I-CubeS**（而非先前 Hot Chips 2025 slide 所示的 CoWoS-S）。I-CubeS 目前確認用戶：eSilicon、Baidu、Nvidia（2023 少量）、Rebellions、Preferred Networks。Samsung 可能提供折扣捆綁前端代工 + I-CubeS 封裝以推動市場接受度。
+  *Source: SemiAnalysis 2026-02-15（引述 Samsung ISSCC 2026 論文）*
+
 - **2026-03-17（GTC 2026 確認）**：NVIDIA CEO Jensen Huang 首次公開確認，**Groq 3 LPU 由 Samsung Foundry 代工**。Groq 是 NVIDIA 於 2025 年以 200 億美元收購的推理加速器公司；Groq 3 配備 500MB SRAM、150 TB/s 頻寬，H2 2026 開始出貨，整合至 Vera Rubin 平台。Samsung 在 Rubin 生態的角色因此從 HBM4 供應商擴展至**邏輯晶片代工**。
   *Source: TrendForce 2026-03-17（引述 Korea JoongAng Daily, Tom's Hardware）*
 
@@ -55,33 +62,4 @@ related:
 - **2026-01**：NVIDIA 要求三大 HBM 供應商在 H2 2026 提供 **16 層 HBM4**（現行 12 層量產）；Samsung 正加速 16 層開發以符合 NVIDIA 時程要求。
   *Source: TrendForce 2026-01-09*
 
-- **2026**：Samsung 計畫 HBM 產能擴大 **50%**，目標月產能 **~250,000 片**（從 ~170,000 片）；擴產重心放在 HBM4。背景：2024–2025 年 HBM3E 向 NVIDIA 供應品質問題造成市場份額流失，50% 衝刺是恢復策略。Samsung HBM4 NVIDIA 份額目標：**~30–35%**。
-  *Source: TrendForce 2025-12-30*
-
-- **2025-08（ECTC 2025 論文）**：Samsung 發表 **Land-Side Bridge（LSB）Fan-Out Chiplet 封裝**技術。LSB 裝載於封裝球腳側（ball lands），使用矽製程實現 1–2µm 信號間距，保持 FOPKG 原有 3 層 RDL（5/5µm），相比純 RDL 方案（需 9 層、2/2µm）顯著降低成本。UCIe 1.1 信號完整性驗證優良；可靠度通過 Preconditioning、HTS、THB、uHAST、HAST、TC 全套測試。
-  *Source: IFTLE 636, Phil Garrou, 3D InCites, 2025-08-05*
-
-- **2025**：開始量產 **2nm** 製程（Samsung Foundry）
-- **2027**：計劃推出 **1.4nm** 製程
-
----
-
-## 市場地位 / Market Position
-
-三星在 AI 晶圓代工市場落後於台積電，但在記憶體（HBM）與封裝的垂直整合上具獨特優勢。X-Cube 3D 技術路線與 TSMC SoIC 形成競爭。
-
----
-
-## 與其他實體的關係 / Relationships
-
-- **TSMC**：晶圓代工主要競爭對手
-- **SK Hynix**：HBM 市場主要競爭對手
-- **NVIDIA / AMD**：潛在晶圓代工客戶（目前大部分仍在 TSMC）
-
----
-
-## 爭議與未解問題 / Open Questions
-
-- Samsung Foundry 的良率問題是否已改善？
-- 三星 HBM4 產品在性能與良率上能否趕上 SK Hynix？
-- X-Cube 3D 接合間距的演進路線？
+- **2026**：Samsung 計畫 HBM 產能擴大 **50%**，目標月產能 **~250,000 片**（從 ~170,000 片）；擴產重心放在 HBM4。背景：2024–2025 年 HBM3E 向 NVIDIA 供應品質問題造成�

@@ -327,3 +327,20 @@
   1. **CoWoS 定價里程碑**（2026-04-28 最新）：CoWoS 單片晶圓 ASP ~$10,000 首次量化，相當於 7nm 製程節點水準。更關鍵的是「低 EUV 折舊 → 毛利潛力媲美先進製程」的經濟學邏輯被清晰闡明，預示先進封裝從「低利潤後端服務」轉型為 TSMC 核心獲利引擎——這是對「封裝是商品業務」的根本性顛覆。
   2. **Tesla 14A 首位外部客戶確認**（2026-04-29）：Elon Musk 透過 Reuters 直接揭露 Tesla Terafab（Austin）採用 Intel 14A，是 Intel 14A 外部客戶的首次公開確認。同時 Apple M 系列評估 18A-P、Google EMIB 封裝評估，顯示 Intel Foundry 正構建多元客戶管線，信心度大幅提升。
   3. **EMIB 技術邊界釐清**（2026-01-29）：Feynman GPU 功耗 5-6 kW，超出 EMIB 處理能力（需封裝內嵌入式 IVR，EMIB 無法提供真正嵌入式 IVR）。這是對「Intel EMIB 能否取代 TSMC CoWoS 封裝高端 GPU」這個長期猜測的明確技術否定，NVIDIA 高端 GPU 封裝仍將等待 TSMC 美國廠（2029）而非轉向 EMIB。
+
+## [2026-05-03] ingest | SemiAnalysis ISSCC 2026 + CPUs are Back（2 篇）
+- 來源類型：article（SemiAnalysis newsletter，部分付費牆前）
+- 原始路徑：raw/articles/2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi-ucies.md、raw/articles/2026-03-01_semianalysis_cpus-back-datacenter-2026.md
+- 觸及頁面：wiki/technologies/hbm4.md, wiki/technologies/hybrid-bonding.md, wiki/technologies/copackaged-optics.md, wiki/entities/samsung.md, wiki/entities/sk-hynix.md, wiki/entities/intel.md, wiki/entities/tsmc.md（共 7 頁）
+- 新增知識：
+  1. Samsung HBM4 SF4 base die → 3.3 TB/s, VDDQ 0.75V, 1c yield ~50%（ISSCC 2026）
+  2. TSMC aLSI：主動矽橋 32–38.4 Gb/s, 0.36 pJ/b；test vehicle 對應 AMD MI450
+  3. Intel UCIe-S：48 Gb/s/lane 22nm 原型（Diamond Rapids 前驅）
+  4. OCI MSA：200 Gb/s DWDM CPO 標準；三層整合架構（OBO/Substrate/Interposer）
+  5. Samsung 4F² COP DRAM hybrid bonding：cell wafer on peripheral wafer，核心電路面積 17→2.7%
+  6. Diamond Rapids 放棄 EMIB（改用 substrate 長走線）；取消 SMT；8ch SP 平台取消
+  7. Clearwater Forest Foveros Direct delay → H1'26；僅比 Sierra Forest 快 17%
+  8. AMD Venice 首採 EMIB 等效封裝；I/O die 分拆為 2 個
+  9. Rebellions Rebel100 封裝更正：Samsung I-CubeS（非 TSMC CoWoS-S）
+  10. SK Hynix HBM4 base die：TSMC N12 邏輯製程
+- 矛盾/修正：Rebellions Rebel100 封裝（Hot Chips 2025 錯標為 CoWoS-S → 正確為 I-CubeS）；Diamond Rapids 不使用 EMIB（先前市場推測有誤）

@@ -58,28 +58,4 @@ related:
 - **2026-03（最新）**：ASML 據報正評估進入混合接合設備市場（架構設計階段，夥伴為 Prodrive / VDL-ETG）——若成真，是 Besi 在 D2W 混合接合設備領域的潛在競爭者。但 ASML 官方聲明尚未正式啟動業務。
   *Source: TrendForce 2026-03-23（引述 The Elec）*
 - **2025-Q4**：Besi 訂單積壓量年增 **105%**（主要受混合接合需求驅動）；ASMPT 預估先進封裝佔總收入 **~25%**
-  *Source: TrendForce 2026-03-23*
-- **2025-H2**：Besi 預期混合接合工具需求在 H2 2025 大幅增加，客戶技術路線圖已指向 HBM4（2026-2027）相關需求
-  *Source: TrendForce 2025-10-07*
-- **2026-03**：3D InCites 報導 Besi 為「封裝權力轉移的核心」；die attach 佔 2025 年營收 ~80%，混合接合業務快速擴張
-- **2026-01-22/23**：Besi 主辦/參加 **Hybrid Bonding Symposium 2026**（SEMI HQ, Milpitas, CA）
-- **2026**（WLP Symposium）：Besi 發表主題演講：*"Scaling Interconnects Below 10 µm with Hybrid Bonding and Fluxless TCB"*
-- **2023**：Besi 宣布**26 套混合接合系統**大訂單，標誌 HVM 需求浮現
-
----
-
-## 市場地位 / Market Position
-
-- 全球 **D2W 混合接合設備的主要供應商**
-- 隨著 AMD SoIC、TSMC SoIC-X 等 D2W 技術量產放量，Besi 的訂單前景顯著提升
-- 受 Applied Materials 9% 持股背書，與晶圓加工設備生態系緊密整合
-
----
-
-## 與其他實體的關係 / Relationships
-
-- **Applied Materials**：持股 9%，共同開發 Kinex 平台
-- **TSMC**：SoIC-X D2W 混合接合設備潛在供應商
-- **EV Group**：互補競爭（W2W vs D2W）
-- **ASML**（潛在競爭）：2026-03 評估進入 D2W 混合接合設備；若成真將正面競爭
-- **Hanmi Semiconductor / Hanwha Semitek / LG Electronics**（韓國競爭者）：針對 HBM 市場的混合接合設備，Incheon 工廠 H2 2026 開幕
+  *Source: TrendForce 202
