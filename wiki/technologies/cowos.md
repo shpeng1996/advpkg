@@ -3,7 +3,7 @@ title: "CoWoS — Chip-on-Wafer-on-Substrate"
 category: technology
 tags: [2.5D, interposer, TSMC, AI, HPC, HBM, COUPE, CPO, packaging-constraints, NVIDIA]
 created: 2026-04-24
-updated: 2026-05-04
+updated: 2026-05-05
 sources: [2026-04-24_initial-survey, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers]
 related:
   - wiki/entities/tsmc.md
@@ -87,40 +87,4 @@ CoWoS 將多顆晶片（GPU、HBM 等）放置於一個中介層（Interposer）
 |------|------|---------------------|
 | ASE | CoWoP（面板版）| 20,000–25,000 片/月 |
 | Amkor | FOCoS（扇出基板版）| 2028 年初投產（Arizona） |
-| Intel Foundry | EMIB（矽橋版）| 2H 2026 放量 |
-
----
-
-## 優勢與限制 / Pros & Cons
-
-| 優勢 Advantages | 限制 Limitations |
-|----------------|-----------------|
-| 晶片間高頻寬互連 | 矽中介層成本高昂 |
-| 成熟的量產製程 | 尺寸受光罩（reticle）限制 |
-| HBM 整合業界標準 | 台積電獨家，客戶有供應風險 |
-| 多種變體適應不同需求 | 面板級（CoPoS）取代前，尺寸瓶頸持續 |
-
----
-
-## 應用場景 / Applications
-
-- AI 訓練/推理加速器（NVIDIA H/B/R 系列 GPU、AMD Instinct）
-- 高效能運算（HPC）
-- 網路交換晶片（Broadcom、Marvell）
-
----
-
-## 相關技術 / Related Technologies
-
-- [[technologies/soic]] — SoIC：台積電 3D 封裝技術，與 CoWoS 常組合使用（CoWoS + SoIC 3D 堆疊）
-- [[technologies/hbm4]] — HBM4：CoWoS 封裝的主要記憶體夥伴
-- [[technologies/copos]] — CoPoS：CoWoS 的面板級下一代演進，試驗線預計 2026-06 完工
-- [[technologies/copackaged-optics]] — TSMC-COUPE™：共封裝光學元件，2026 年整合至 CoWoS 基板量產
-
----
-
-## 爭議與未解問題 / Open Questions
-
-- CoPoS（面板級）取代 CoWoS 的時間點？2028-29 還是更晚？
-- 中介層尺寸擴大（14 reticles）的技術與良率挑戰？
-- 競爭對手（Intel EMIB、Samsung I-Cube）是否有機會搶佔 CoWoS 市場？
+| SPIL（矽品精密）| 2.5D 外溢承接 | 受益於

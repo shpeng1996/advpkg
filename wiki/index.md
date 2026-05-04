@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-05-04
-**頁面總數 Total Pages**：81
-**原始來源數 Sources**：52
+**更新時間 Updated**：2026-05-05
+**頁面總數 Total Pages**：84
+**原始來源數 Sources**：55
 
 ---
 
@@ -56,6 +56,9 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-04-30_trendforce_ai-supply-chain-arms-race]] — TrendForce：AI 競爭演變供應鏈軍備競賽；CoWoS 持續短缺；3nm 瓶頸；2027 年緩解預測（2026-04-30）⭐新增
+- [[sources/2026-04-07_trendforce_intel-emib-google-amazon]] — TrendForce：Intel EMIB 吸引 Google/Amazon；40% 毛利率目標；客戶預付；2H26 承諾時間表（2026-04-07）⭐新增
+- [[sources/2026-01-20_trendforce_tsmc-wmcm-apple-2027]] — TrendForce：TSMC WMCM 為 Apple 擴產；AP3 升級+AP7 新建；2027 年>120K wsm（2026-01-20）⭐新增
 - [[sources/2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo]] — Samsung Foundry 矽光子 PDK 就緒；CPO Turnkey 2029 路線圖；CPO 35% 滲透率 2030（2026-05-01）⭐新增
 - [[sources/2026-04-27_semieng_tsmc-tech-symposium-2026-numbers]] — SemiEngineering：TSMC Tech Symposium 2026 數字——A12/A13 2029、CoWoS >98%、SoW-X 64 HBM（2026-04-27）⭐新增
 - [[sources/2026-04-23_trendforce_tsmc-roadmap-a12-a13-no-high-na-euv]] — TSMC A12/A13 宣布 2029 無需 High-NA EUV；A16 延至 2027；ASML 衝擊（2026-04-23）⭐新增
@@ -88,30 +91,4 @@
 - [[sources/2025-12-18_trendforce_apple-wmcm-a20]] — Apple A20/iPhone 18 採用 WMCM 封裝；InFO→WMCM 過渡；AP3/AP7 WMCM 產能⭐新增
 - [[sources/2026-01-23_trendforce_chip-tools-tel-asml]] — TEL/ASML/AMAT 加速布局先進封裝；TEL Kumamoto ¥470 億；Eteris 合資⭐新增
 - [[sources/2026-03-03_trendforce_intel-clearwater-forest]] — Intel Clearwater Forest 18A + Foveros Direct 3D（<10µm）+ EMIB 3.5D（MWC 2026）⭐新增
-- [[sources/2026-03-05_trendforce_intel-emib-billions]] — Intel EMIB 2H26 潛在數十億美元；Apple/Qualcomm 客戶探索；18A 外部代工再考慮⭐新增
-- [[sources/2024-10-01_3dincites_geopolitics-packaging]] — 先進封裝為美中晶片戰新戰場；美國封裝份額 3%；CHIPS Act；Chiplet 地緣政治咽喉點⭐新增
-- [[sources/2026-04-01_semiengineering_chiplets-2026]] — Chiplets 2026 現況：UCIe 3.0（64 GT/s）、CoWoS 80K/月、地緣政治框架⭐新增
-- [[sources/2026-04-20_trendforce_ase-samsung-amkor-capacity]] — ASE 六廠全球同步破土；Samsung $4B 越南；Amkor 新動態（2026-04-20）⭐新增
-- [[sources/2026-04-07_trendforce_intel-emib-google-amazon]] — Intel EMIB vs TSMC CoWoS；Google TPU v9 2027、Amazon、Meta 評估 EMIB（2026-04-07）⭐新增
-- [[sources/2026-01-20_trendforce_tsmc-wmcm-apple]] — TSMC WMCM 2027 倍增至 >120K wsm；AP3+AP7 Phase 2；Apple 排他 2027–28（2026-01-20）⭐新增
-- [[sources/2026-01-09_trendforce_nvidia-hbm4-16layer]] — NVIDIA 推動 HBM4 16 層 H2'26；三家供應商均目標 250K wsm；Micron >11 Gbps（2026-01-09）⭐新增
-- [[sources/2025-12-30_trendforce_samsung-hbm-surge]] — Samsung HBM 50% 衝刺；250K wsm/月目標；HBM4 份額 30–35%；HBM5 2029（2025-12-30）⭐新增
-- [[sources/2025-12-04_trendforce_tsmc-ap7-arizona-p6]] — TSMC AP7 啟用；Arizona P6 封裝基地 2028 破土；24% CapEx CAGR（2025-12-04）⭐新增
-- [[sources/2025-12-22_3dincites_intel-amkor-emib-partnership]] — 3D InCites IFTLE 651：Intel+Amkor EMIB HVM 三廠合作；美國境內完整封裝路徑確立（2025-12-22）⭐新增
-- [[sources/2025-07-01_3dincites_micron-onshore-tsmc-copos]] — 3D InCites IFTLE 634：Micron $2,000 億 onshore + TSMC CoPoS AP7 P1-P4 架構完整揭露（2025-07-01）⭐新增
-- [[sources/2026-04-16_trendforce_tsmc-q1-q2-earnings]] — TSMC Q1 史上最高 $40.2B；Q2 +10% QoQ；CapEx 維持 $52–56B 高端（2026-04-16）⭐新增
-- [[sources/2026-04-15_trendforce_hbm4-strategies-diverge]] — HBM4 良率策略分歧：Samsung 追求 80%；SK Hynix 裁切 30% stack 降成本（2026-04-15）⭐新增
-- [[sources/2026-03-01_semianalysis_cpus-back-datacenter-2026]] — SemiAnalysis：CPU 回歸數據中心；Diamond Rapids/AMD Venice/Clearwater Forest 封裝分析（2026-03-01）⭐新增
-- [[sources/2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi]] — ISSCC 2026：Samsung HBM4 3.3 TB/s；TSMC aLSI 主動矽橋；Intel UCIe-S；OCI CPO 標準（2026-02-15）⭐新增
-- [[sources/2026-01-28_trendforce_skhynix-two-thirds-nvidia-hbm4]] — SK Hynix NVIDIA HBM4 份額 ~70%；Samsung 同價格競爭（>$600/套）（2026-01-28）⭐新增
-- [[sources/2026-01-13_semiengineering_hbm4-microbumps]] — HBM4 維持微凸塊接合；混合接合延至 HBM4E/HBM5 後（2026-01-13）⭐新增
-- [[sources/2026-01-12_trendforce_tsmc-mature-node-reallocation-cowos]] — TSMC 評估將 45–90nm 成熟節點產能轉供 CoWoS 封裝（2026-01-12）⭐新增
-- [[sources/2025-12-18_trendforce_micron-capex-hbm4]] — Micron CapEx 上調至 $200 億；2026 年 HBM 全年訂滿；HBM4 2Q26 放量（2025-12-18）⭐新增
-- [[sources/2025-08-05_3dincites_iftle636-samsung-lsb-micron-virginia]] — Samsung LSB 矽橋接 Chiplet；Micron 維吉尼亞 HBM 封裝廠計畫（2025-08-05）⭐新增
-- [[sources/2026-04-24_initial-survey]] — 先進封裝產業與學術趨勢初步調查報告（初始知識庫，2026-04-24）
-
----
-
-## 分析報告 Analyses
-
-- [[analyses/2026-05-03_lint]] — Lint 健康檢查：9 孤立頁面修復、index 截斷修復、知識空缺識別（2026-05-03）
+- [[sources/2026-03-05_trendforce_intel-emib-billions]] — Intel EMIB 2H26 潛

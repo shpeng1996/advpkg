@@ -398,3 +398,27 @@
   2. **TSMC A12/A13 雙節點 2029 + 拒採 High-NA EUV**（TrendForce 2026-04-23）：TSMC 在 2026 Symposium 同時宣布 A13（1.3nm 光學縮小）和 A12（1.2nm 激進加速）均目標 2029 年，且均不需要 High-NA EUV——此決策對 ASML 的 High-NA EUV 收入計畫（2030 年 €600 億目標）構成重大衝擊；ASML 韓國份額升至 45% 以彌補。
   3. **混合接合良率物理機制轉換**（SemiEngineering 2026-03-19，Gregory Haley/iMAPS 2025）：業界首次清晰量化：>5 µm pitch 以缺陷驅動、<2–3 µm pitch 轉為應力驅動。這意味著 TSMC 的 1M/mm² 長期目標（~1 µm pitch）面臨的主要挑戰已不是潔淨度，而是銅膨脹引起的機械應力——是整個混合接合 roadmap 可行性的關鍵制約因素。
   4. **Samsung Foundry 進入矽光子/CPO 市場**（TrendForce 2026-05-01）：Samsung Foundry 完成 PDK（300mm）、贏得 2026 H2 光學模組訂單、設定 2029 年 Turnkey CPO 目標，以「垂直整合 DRAM」作為差異化對抗 TSMC COUPE；TrendForce 預測 CPO 2030 年在 AI 資料中心滲透率達 35%。
+
+## [2026-05-05] collect | 每日自動蒐集 — 先進封裝最新動態（第十一次）
+- 搜尋查詢數：7 組（TSMC CoWoS/SoIC、HBM4/HBM4E、chiplet 異質整合、NVIDIA Rubin/Feynman、Intel EMIB/Foveros、面板級封裝/玻璃基板、UCIe/標準、AI 供應鏈）
+- 成功抓取：3 篇（articles/ 2, reports/ 1）
+  - 2026-04-07_trendforce_intel-emib-google-amazon-packaging.md（Intel EMIB：Google TPU、Amazon Trainium、40% 毛利目標、預付模式）
+  - 2026-01-20_trendforce_tsmc-wmcm-apple-capacity-double-2027.md（TSMC WMCM：Apple iPhone 18 A20 + MacBook M 系列 + R2；AP3 升級 + AP7 新建；2027 年>120K wsm）
+  - 2026-04-30_trendforce_ai-competition-supply-chain-arms-race.md（AI 供應鏈軍備競賽：CoWoS 持續短缺；NVIDIA 先佔策略；FOEB 替代技術；2027 年緩解預測）
+- 失敗/跳過：多篇
+  - UCIe Chiplet Summit 2026（uciexpress.org Wix 動態站點，無法抓取靜態 HTML）
+  - TrendForce WMCM 搜尋結果多數已收錄；HBM4E 系列新聞均為已知資訊
+  - 學術頁面（ieeexplore）限制不變
+- 學術代理：UNAVAILABLE ✗
+- 新增 wiki 頁面：3 頁（全為 sources/）
+  - wiki/sources/2026-04-07_trendforce_intel-emib-google-amazon.md
+  - wiki/sources/2026-01-20_trendforce_tsmc-wmcm-apple-2027.md
+  - wiki/sources/2026-04-30_trendforce_ai-supply-chain-arms-race.md
+- 更新 wiki 頁面：6 頁
+  - wiki/technologies/cowos.md（SPIL 新增為 OSAT 外溢受益者；FOEB 替代技術；2027 緩解預測 + >60% 擴產）
+  - wiki/technologies/info-wmcm.md（Apple MacBook M 系列 + R2 晶片應用；Fab 18 P9 轉換可能性；Fab 14 interposer 擴充）
+  - wiki/entities/intel.md（Google/Amazon EMIB 預付模式；40% 毛利率目標；客戶 2H26 承諾時間表）
+  - wiki/entities/nvidia.md（供應鏈先佔策略：T-glass 基板、PCB、SSD 早期鎖定）
+  - wiki/concepts/advanced-packaging-market.md（SPIL 補充；FOEB 替代技術；2027 緩解展望；NVIDIA 先佔說明）
+  - wiki/index.md（新增 3 頁；頁面總數 81→84；來源數 52→55）
+- 主要新知識：(1) Intel EMIB 封裝業務目標毛利率首次量化（~40%），客戶「預付」模式確認強勁需求可見度；(2) TSMC WMCM 應用範圍擴大至 MacBook M 系列與 Apple R2 頭戴裝置晶片，2027 年產能目標>120K wsm；(3) NVIDIA 供應鏈先佔策略（含 T-glass、SSD 等非晶圓物料）具體化，是 CoWoS 持續緊張的主要推手；FOEB 作為新替代技術名詞首次記錄於 wiki
