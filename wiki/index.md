@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-05-05
-**頁面總數 Total Pages**：84
-**原始來源數 Sources**：55
+**更新時間 Updated**：2026-05-06
+**頁面總數 Total Pages**：85
+**原始來源數 Sources**：58
 
 ---
 
@@ -18,6 +18,7 @@
 - [[entities/intel]] — 英特爾；IDM；EMIB-T（HBM4）+ Foveros-R/B；馬來西亞廠 2026 年投產；EMIB 2H26 放量
 - [[entities/samsung]] — 三星；IDM + Foundry + Memory；I-Cube/X-Cube；2nm 量產；HBM4 首批出貨 2026-02；**Groq 3 LPU 代工確認（GTC 2026）**⭐更新
 - [[entities/sk-hynix]] — SK Hynix；HBM 市場領導者；M15X 廠提前投產（2026-02）；NVIDIA HBM4 份額 ~70%
+- [[entities/asmpt]] — ASMPT Limited；TCB/混合接合/Photonics-CPO 設備領導廠商；Q1 2026 訂單 27M +71.6% YoY；NEXX 出售給 AMAT⭐新增
 - [[entities/ase-group]] — ASE Group；全球最大 OSAT；CoWoP 面板封裝；K28 廠 2026 年完工（目標 25K 片/月）⭐新增
 - [[entities/amkor]] — Amkor；全球第二大 OSAT；Arizona $70 億廠（2028 投產）；Intel EMIB 外包夥伴⭐新增
 - [[entities/ev-group]] — EV Group（EVG）；混合接合設備領導者；ECTC 2025 展示無光罩微影與層轉移⭐新增
@@ -56,6 +57,9 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-05-03_globenewswire_amat-acquires-nexx]] — Applied Materials 20M 收購 ASMPT NEXX 面板 ECD 設備（2026-05-03）⭐新增
+- [[sources/2026-04-22_asmpt_q1-2026-results]] — ASMPT Q1 2026：訂單 27M +71.6% YoY；HBM4 16H TCB；CPO 5x 成長（2026-04-22）⭐新增
+- [[sources/2025-09-19_trendforce_stmicro-foplp-france]] — STMicro 法國面板級封裝試驗線 2026 Q3 啟動（2025-09-19）⭐新增
 - [[sources/2026-04-30_trendforce_ai-supply-chain-arms-race]] — TrendForce：AI 競爭演變供應鏈軍備競賽；CoWoS 持續短缺；3nm 瓶頸；2027 年緩解預測（2026-04-30）⭐新增
 - [[sources/2026-04-07_trendforce_intel-emib-google-amazon]] — TrendForce：Intel EMIB 吸引 Google/Amazon；40% 毛利率目標；客戶預付；2H26 承諾時間表（2026-04-07）⭐新增
 - [[sources/2026-01-20_trendforce_tsmc-wmcm-apple-2027]] — TrendForce：TSMC WMCM 為 Apple 擴產；AP3 升級+AP7 新建；2027 年>120K wsm（2026-01-20）⭐新增

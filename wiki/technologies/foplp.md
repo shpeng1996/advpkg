@@ -3,7 +3,7 @@ title: "FOPLP — 扇出面板級封裝 / Fan-Out Panel-Level Packaging"
 category: technology
 tags: [fan-out, panel-level, TSMC, Samsung, ASE, Powertech, Innolux, CoPoS, InFO, cost-reduction]
 created: 2026-05-03
-updated: 2026-05-03
+updated: 2026-05-06
 sources: [2025-09-12_trendforce_foplp-competitive-2025, 2026-04-13_trendforce_copos-pilot, 2025-07-01_3dincites_micron-onshore-tsmc-copos]
 related:
   - wiki/technologies/copos.md
@@ -79,6 +79,8 @@ FOPLP 是將扇出封裝從晶圓級（FOWLP，~300mm 圓形）擴展到**矩形
 - **設備**：AMAT（CVD/PVD）、TEL（RDL 濕製程）
 - **OSAT**：ASE Group、Powertech（FOPLP 試驗線）、Amkor
 - **面板廠轉型**：Innolux（700×700mm，顯示面板廠商跨足封裝）
+- **IDM 自建**：STMicroelectronics（法國試驗線，2026 Q3 啟動，車用/工業功率元件）
+- **設備整合**：AMAT 收購 ASMPT NEXX（面板 ECD），形成完整面板封裝設備一站式組合
 
 ---
 
@@ -95,3 +97,5 @@ FOPLP 是將扇出封裝從晶圓級（FOWLP，~300mm 圓形）擴展到**矩形
 - TSMC CoPoS 量產時程（2028–29）能否提前？與競爭對手 Samsung FOPLP 差距是否縮小？
 - Powertech 90% 良率是否能複製至 AI GPU 等高功能密度應用？
 - 玻璃面板（TSMC CoPoS）vs. 非玻璃面板的最終技術路線勝出者？
+- STMicro 等 IDM 自建 FOPLP 是否成為趨勢，動搖 OSAT 封裝壟斷？
+- AMAT 整合 NEXX ECD 後形成一站式面板封裝設備組合——能否成為業界標準？

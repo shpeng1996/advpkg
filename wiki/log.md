@@ -399,26 +399,31 @@
   3. **混合接合良率物理機制轉換**（SemiEngineering 2026-03-19，Gregory Haley/iMAPS 2025）：業界首次清晰量化：>5 µm pitch 以缺陷驅動、<2–3 µm pitch 轉為應力驅動。這意味著 TSMC 的 1M/mm² 長期目標（~1 µm pitch）面臨的主要挑戰已不是潔淨度，而是銅膨脹引起的機械應力——是整個混合接合 roadmap 可行性的關鍵制約因素。
   4. **Samsung Foundry 進入矽光子/CPO 市場**（TrendForce 2026-05-01）：Samsung Foundry 完成 PDK（300mm）、贏得 2026 H2 光學模組訂單、設定 2029 年 Turnkey CPO 目標，以「垂直整合 DRAM」作為差異化對抗 TSMC COUPE；TrendForce 預測 CPO 2030 年在 AI 資料中心滲透率達 35%。
 
-## [2026-05-05] collect | 每日自動蒐集 — 先進封裝最新動態（第十一次）
-- 搜尋查詢數：7 組（TSMC CoWoS/SoIC、HBM4/HBM4E、chiplet 異質整合、NVIDIA Rubin/Feynman、Intel EMIB/Foveros、面板級封裝/玻璃基板、UCIe/標準、AI 供應鏈）
+## [2026-05-05] collect | 每日自動蒐集 — 先進封裝最新動態（第十一次）[不完整記錄]
+- 搜尋查詢數：7 組
+- 成功抓取：3 篇（session 中斷，記錄不完整）
+- 注意：此次 session 執行中斷，wiki 更新未完成；由 2026-05-06 第十二次補足
+  - 2026-04-07_trendforce_intel-emib-goog
+## [2026-05-06] collect | 每日自動蒐集 — 先進封裝最新動態（第十二次）
+- 搜尋查詢數：7 組（TSMC CoWoS/SoIC 最新、HBM4 供應鏈、Intel EMIB/Foveros、NVIDIA Rubin/Feynman、ASMPT/設備業、面板級封裝/STMicro、Applied Materials NEXX）
 - 成功抓取：3 篇（articles/ 2, reports/ 1）
-  - 2026-04-07_trendforce_intel-emib-google-amazon-packaging.md（Intel EMIB：Google TPU、Amazon Trainium、40% 毛利目標、預付模式）
-  - 2026-01-20_trendforce_tsmc-wmcm-apple-capacity-double-2027.md（TSMC WMCM：Apple iPhone 18 A20 + MacBook M 系列 + R2；AP3 升級 + AP7 新建；2027 年>120K wsm）
-  - 2026-04-30_trendforce_ai-competition-supply-chain-arms-race.md（AI 供應鏈軍備競賽：CoWoS 持續短缺；NVIDIA 先佔策略；FOEB 替代技術；2027 年緩解預測）
-- 失敗/跳過：多篇
-  - UCIe Chiplet Summit 2026（uciexpress.org Wix 動態站點，無法抓取靜態 HTML）
-  - TrendForce WMCM 搜尋結果多數已收錄；HBM4E 系列新聞均為已知資訊
-  - 學術頁面（ieeexplore）限制不變
+  - 2026-05-03_globenewswire_applied-materials-acquires-nexx-asmpt.md（GlobeNewswire 官方新聞稿，2026-05-03）
+  - 2026-04-22_asmpt_q1-2026-results-ai-packaging-demand.md（ASMPT 官方 IR，2026-04-22）
+  - 2025-09-19_trendforce_stmicro-panel-level-packaging-france.md（TrendForce，2025-09-19，partial）
+- 失敗/跳過：多篇（TrendForce Samsung/SK Hynix HBM4 NVIDIA 供應商文章 URL 404；多數搜尋結果已在 _collected_urls.txt；ASMPT 官網頁面過大需 bash 解析）
 - 學術代理：UNAVAILABLE ✗
-- 新增 wiki 頁面：3 頁（全為 sources/）
-  - wiki/sources/2026-04-07_trendforce_intel-emib-google-amazon.md
-  - wiki/sources/2026-01-20_trendforce_tsmc-wmcm-apple-2027.md
-  - wiki/sources/2026-04-30_trendforce_ai-supply-chain-arms-race.md
-- 更新 wiki 頁面：6 頁
-  - wiki/technologies/cowos.md（SPIL 新增為 OSAT 外溢受益者；FOEB 替代技術；2027 緩解預測 + >60% 擴產）
-  - wiki/technologies/info-wmcm.md（Apple MacBook M 系列 + R2 晶片應用；Fab 18 P9 轉換可能性；Fab 14 interposer 擴充）
-  - wiki/entities/intel.md（Google/Amazon EMIB 預付模式；40% 毛利率目標；客戶 2H26 承諾時間表）
-  - wiki/entities/nvidia.md（供應鏈先佔策略：T-glass 基板、PCB、SSD 早期鎖定）
-  - wiki/concepts/advanced-packaging-market.md（SPIL 補充；FOEB 替代技術；2027 緩解展望；NVIDIA 先佔說明）
-  - wiki/index.md（新增 3 頁；頁面總數 81→84；來源數 52→55）
-- 主要新知識：(1) Intel EMIB 封裝業務目標毛利率首次量化（~40%），客戶「預付」模式確認強勁需求可見度；(2) TSMC WMCM 應用範圍擴大至 MacBook M 系列與 Apple R2 頭戴裝置晶片，2027 年產能目標>120K wsm；(3) NVIDIA 供應鏈先佔策略（含 T-glass、SSD 等非晶圓物料）具體化，是 CoWoS 持續緊張的主要推手；FOEB 作為新替代技術名詞首次記錄於 wiki
+- 新增 wiki 頁面：4 頁
+  - wiki/entities/asmpt.md（全新建立）
+  - wiki/sources/2026-05-03_globenewswire_amat-acquires-nexx.md
+  - wiki/sources/2026-04-22_asmpt_q1-2026-results.md
+  - wiki/sources/2025-09-19_trendforce_stmicro-foplp-france.md
+- 更新 wiki 頁面：4 頁
+  - wiki/technologies/foplp.md（STMicro 法國試驗線加入生態系；AMAT NEXX 收購加入設備組合；新增未解問題）
+  - wiki/technologies/hbm4.md（HBM4 16H TCB 認證 2026 Q1 工程進度）
+  - wiki/technologies/copackaged-optics.md（ASMPT Photonics 5x 成長；1.6T 批量訂單）
+  - wiki/concepts/advanced-packaging-market.md（設備業 M&A 整合趨勢表格；AMAT→Besi+NEXX 戰略分析）
+  - wiki/index.md（頁面數 84→85；來源數 55→58；ASMPT 新實體頁面加入；3 個新 sources 頁面）
+- 主要新知識：
+  1. **Applied Materials 以 $120M 收購 ASMPT NEXX 面板 ECD 設備業務（2026-05-03）**：這是本次 collect 最重要的突破性新聞。AMAT 補完面板封裝設備組合（光刻→PVD→CVD→ECD→蝕刻→量測），形成業界最完整的面板級先進封裝設備一站式供應商。ASMPT 同步退出 ECD 業務，聚焦 TCB/混合接合/CPO 等高附加值領域。設備業 M&A 整合加速信號明確。
+  2. **ASMPT Q1 2026 訂單創四年新高（$727M，+71.6% YoY），HBM4 16H TCB 認證進入實際採樣階段**：訂單帳單比 1.43；主要記憶體廠商採用 ASMPT TCB 進行 HBM4 16 層堆疊設備資格認證——這是首個從設備供應商視角確認 HBM4 16H 製造工程已實際啟動的數據。CPO 1.6T 批量訂單確認光互聯需求進入量產前備料。
+  3. **STMicroelectronics（意法半導體）加入面板級封裝競賽，在法國建設 FOPLP 試驗線（2026 Q3 啟動）**：歐洲最大 IDM 自建 FOPLP 能力，是先進封裝技術向 IDM 擴散的重要信號，也填補了 wiki 中歐洲面板封裝能力的知識空缺。
