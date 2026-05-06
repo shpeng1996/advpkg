@@ -427,3 +427,36 @@
   1. **Applied Materials 以 $120M 收購 ASMPT NEXX 面板 ECD 設備業務（2026-05-03）**：這是本次 collect 最重要的突破性新聞。AMAT 補完面板封裝設備組合（光刻→PVD→CVD→ECD→蝕刻→量測），形成業界最完整的面板級先進封裝設備一站式供應商。ASMPT 同步退出 ECD 業務，聚焦 TCB/混合接合/CPO 等高附加值領域。設備業 M&A 整合加速信號明確。
   2. **ASMPT Q1 2026 訂單創四年新高（$727M，+71.6% YoY），HBM4 16H TCB 認證進入實際採樣階段**：訂單帳單比 1.43；主要記憶體廠商採用 ASMPT TCB 進行 HBM4 16 層堆疊設備資格認證——這是首個從設備供應商視角確認 HBM4 16H 製造工程已實際啟動的數據。CPO 1.6T 批量訂單確認光互聯需求進入量產前備料。
   3. **STMicroelectronics（意法半導體）加入面板級封裝競賽，在法國建設 FOPLP 試驗線（2026 Q3 啟動）**：歐洲最大 IDM 自建 FOPLP 能力，是先進封裝技術向 IDM 擴散的重要信號，也填補了 wiki 中歐洲面板封裝能力的知識空缺。
+
+## [2026-05-07] collect | 每日自動蒐集 — 先進封裝最新動態（第十三次）
+- 搜尋查詢數：7 組（TSMC CoWoS/SoIC 最新、HBM4 供應鏈技術、Intel EMIB/Foveros、NVIDIA Rubin/Feynman、混合接合研究、JEDEC 標準動態、設備業 M&A）
+- 成功抓取：7 篇（articles/ 7, papers/ 0, reports/ 0）
+  - 2026-04-29_trendforce_sk-hynix-hybrid-bonding-hbm-validation.md（TrendForce，最新 2026-04-29）
+  - 2026-04-01_trendforce_jedec-hbm-height-relax-900um.md（TrendForce，2026-04-01）
+  - 2026-03-13_trendforce_besi-takeover-interest-lam-amat.md（TrendForce，Reuters 原始報導）
+  - 2026-03-27_3dincites_copper-grain-hybrid-bonding.md（3D InCites，MacDermid Alpha 技術文章）
+  - 2026-03-23_trendforce_musk-terafab-tsmc-packaging.md（TrendForce，2026-03-23）
+  - 2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab.md（TrendForce，2026-02-25）
+  - 2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h.md（TrendForce，2026-01-13）
+- 失敗/跳過：多篇（大多數 TSMC/NVIDIA/EMIB 搜尋結果已在 _collected_urls.txt；SemiEngineering May 5 技術論文彙整規模過大略過）
+- 學術代理：UNAVAILABLE ✗（ieeexplore、arxiv 仍受限）
+- 新增 wiki 頁面：7 頁（全為 sources/）
+  - wiki/sources/2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation.md
+  - wiki/sources/2026-04-01_trendforce_jedec-hbm-height-relax-900um.md
+  - wiki/sources/2026-03-13_trendforce_besi-takeover-interest-lam-amat.md
+  - wiki/sources/2026-03-27_3dincites_copper-grain-hybrid-bonding.md
+  - wiki/sources/2026-03-23_trendforce_musk-terafab-tsmc-packaging.md
+  - wiki/sources/2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab.md
+  - wiki/sources/2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h.md
+- 更新 wiki 頁面：7 頁
+  - wiki/entities/sk-hynix.md（12H HBM 混合接合驗證完成；AMAT+Besi inline HB 設備採購；HBM4 SLT 自研；MR-MUF 確認 16H；30µm die thinning）
+  - wiki/technologies/hybrid-bonding.md（SK Hynix 12H 驗證；JEDEC 高度鬆綁影響；銅晶粒工程化新節；Besi M&A 傳聞 Open Question 更新）
+  - wiki/technologies/hbm4.md（JEDEC HBM4E 高度規格 ~900µm 表格更新；MR-MUF 30µm die thinning 技術路線圖；SK Hynix SLT）
+  - wiki/entities/besi.md（SK Hynix 首批量產 HB 設備採購；Lam Research 收購接觸；JEDEC 高度鬆綁衝擊）
+  - wiki/concepts/geopolitics-advanced-packaging.md（Tesla Terafab：先進封裝最佳切入點；超大客戶自建能力趨勢）
+  - wiki/concepts/advanced-packaging-market.md（Lam Research 進入混合接合設備市場傳聞；三強鼎立格局分析）
+  - wiki/index.md（頁面數 85→92；來源數 58→65；7 個新 sources 頁面加入）
+- 主要新知識：
+  1. **SK Hynix 12-high HBM 混合接合驗證完成（2026-04-29）**：業界首個具名技術負責人（Kim Jong-hoon）公開確認；首批量產 HB 設備採購（AMAT+Besi inline，~USD 1,500 萬）——混合接合從實驗室研發到量產規劃的拐點信號。三星同步測試 Besi + SEMES 設備，但 SEMES 成熟度不足。
+  2. **JEDEC 擬鬆綁 HBM4E 高度至 ~900µm（2026-04-01）**：HBM3E ~720µm → HBM4 ~775µm → HBM4E ~900µm（提議）。此舉使 TC 接合仍可支援更多層數，可能將混合接合 HBM 採用時間點從 HBM4E 延後至 HBM5（2029+）——直接衝擊 Besi 成長邏輯。但業界共識：>20 層混合接合不可避免（SK Hynix VP Lee Kang-wook 確認）。
+  3. **Besi 傳遭 Lam Research 收購接觸（2026-03-13, Reuters）**：設備業 M&A 整合浪潮最新一波；Lam 進入混合接合設備市場的最快路徑；AMAT（已持股 9%）亦是潛在買家。若整合成真，封裝設備三強（AMAT、Lam、TEL）格局將重塑，直接影響 Kinex 合作架構。

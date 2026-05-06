@@ -3,8 +3,8 @@ title: "HBM4 — High Bandwidth Memory 4"
 category: technology
 tags: [memory, HBM, JEDEC, standards, AI, HPC, HBM4E, cleanroom, capacity, ISSCC2026]
 created: 2026-04-24
-updated: 2026-05-06
-sources: [2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-03-18_trendforce_intel-emib-malaysia, 2026-01-23_trendforce_hbm4e-samsung-skhynix-mid2026, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-01-13_semiengineering_hbm4-microbumps, 2025-12-18_trendforce_micron-capex-hbm4, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi]
+updated: 2026-05-07
+sources: [2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-03-18_trendforce_intel-emib-malaysia, 2026-01-23_trendforce_hbm4e-samsung-skhynix-mid2026, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-01-13_semiengineering_hbm4-microbumps, 2025-12-18_trendforce_micron-capex-hbm4, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h, 2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation]
 related:
   - wiki/entities/sk-hynix.md
   - wiki/entities/samsung.md
@@ -40,9 +40,25 @@ HBM（High Bandwidth Memory）將多層 DRAM 晶片垂直堆疊，透過 TSV（T
 | 工作電壓 | 1.05V | **0.8V** | TBD | TBD |
 | 堆疊層數 | 12-Hi | 12-Hi (std) → **16-Hi（H2 2026 衝刺）** | **16-Hi** | TBD |
 | 每封裝功耗上限 | ~40W | ~60W | **80W** | TBD |
+| **JEDEC 高度規格** | **~720 µm** | **~775 µm** | **~900 µm（提議⭐）** | TBD |
+| 封裝技術 | MR-MUF / TC-NCF | **MR-MUF（30µm die）** | MR-MUF / Fluxless | **混合接合** |
 | 量產目標 | 2024 | 2025-H2 | **2027** | **2029（預測）** |
 
-*HBM4E 資料來源：TrendForce 2026-01-23*
+*HBM4E 資料來源：TrendForce 2026-01-23；JEDEC 高度規格：TrendForce 2026-04-01（HBM4E 提議，尚未確認）*
+
+### ⭐ HBM4 封裝技術深度：MR-MUF 30µm Die Thinning（2026-01-13）
+
+SK Hynix 在 CES 2026 展示 16-high HBM4，採用 **MR-MUF 製程將單片 DRAM 晶圓薄化至 30 µm**，是滿足 JEDEC 775 µm 高度限制的關鍵技術。
+
+**HBM 封裝技術路線圖（SK Hynix 視角）**：
+| 技術 | 層數範圍 | Die 厚度 | 狀態 |
+|------|---------|---------|------|
+| TC-NCF | ≤12H | ~40µm | 量產（HBM3E） |
+| MR-MUF | 12–16H | **~30µm** | 量產（HBM4/HBM4E） |
+| 無助熔劑接合 | >16H（橋接） | <30µm | 評估中（SK Hynix Q4 2025 評估未通過預期） |
+| 混合接合 | >20H（必然） | <20µm | SK Hynix 2026-04-29 完成 12H 驗證；量產 2026 H2～2027 |
+
+*Source: TrendForce 2026-01-13（引述 DealSite、EE Times）；TrendForce 2026-04-29*
 
 ---
 

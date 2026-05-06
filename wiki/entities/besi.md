@@ -3,8 +3,8 @@ title: "Besi (BE Semiconductor Industries) — 混合接合設備領導廠商"
 category: entity
 tags: [equipment, hybrid-bonding, die-attach, D2W, TCB, Netherlands]
 created: 2026-04-25
-updated: 2026-05-02
-sources: [2026-03-01_3dincites_besi-packaging-power-shift, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b]
+updated: 2026-05-07
+sources: [2026-03-01_3dincites_besi-packaging-power-shift, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation]
 related:
   - wiki/entities/ev-group.md
   - wiki/technologies/hybrid-bonding.md
@@ -51,6 +51,15 @@ related:
 ---
 
 ## 近期動態 / Recent Developments
+
+- **2026-04-29（最新）⭐**：**SK Hynix 完成首批混合接合量產設備採購**，向 **Applied Materials + Besi 聯合系統**（Kinex inline HB）下訂，金額約 KRW 200 億（~USD 1,500 萬）——這是 SK Hynix 首次購入量產規劃的混合接合設備，確認 Besi 在 HBM 混合接合設備商的地位。
+  *Source: TrendForce 2026-04-29（引述 The Elec）*
+
+- **2026-04-01（JEDEC 高度鬆綁衝擊）⭐**：JEDEC 考慮將 HBM4E 高度規格鬆綁至 **~900 µm**（vs HBM4 的 775 µm），可能使 TC 接合仍支援較高層數，**延後混合接合設備的需求爆發時間點**。若鬆綁成真，Hanmi Semiconductor（TC 接合機龍頭）的競爭地位受保護。市場反應：Besi 股價因此面臨不確定性。然而，業界普遍認同 20 層以上 HBM 混合接合不可避免。
+  *Source: TrendForce 2026-04-01（引述 Chosun Ilbo、The Elec）*
+
+- **2026-03-13（重大：潛在收購）⭐**：Reuters 報導 **Lam Research** 已就收購 Besi 進行討論，是明確潛在買家；Applied Materials（已持股 9%）也被列為潛在收購方。Besi 正委託投資銀行評估各方提案。背景：此前 AMAT 在 2025-04 取得 Besi 9% 股份，已成最大股東。潛在收購反映設備業 M&A 整合浪潮——繼 AMAT 收購 ASMPT NEXX ECD 業務後的延伸。
+  *Source: TrendForce 2026-03-13（引述 Reuters、Hankyung）*
 
 - **2026-03**：3D InCites 報導 Besi 為「封裝權力轉移的核心」；die attach 佔 2025 年營收 ~80%，混合接合業務快速擴張
 - **2026-01-22/23**：Besi 主辦/參加 **Hybrid Bonding Symposium 2026**（SEMI HQ, Milpitas, CA）

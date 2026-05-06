@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-05-06
-**頁面總數 Total Pages**：85
-**原始來源數 Sources**：58
+**更新時間 Updated**：2026-05-07
+**頁面總數 Total Pages**：92
+**原始來源數 Sources**：65
 
 ---
 
@@ -17,7 +17,7 @@
 - [[entities/tsmc]] — 台積電；全球最大晶圓代工廠；CoWoS/SoIC 技術領導者；2026 年產能瓶頸核心
 - [[entities/intel]] — 英特爾；IDM；EMIB-T（HBM4）+ Foveros-R/B；馬來西亞廠 2026 年投產；EMIB 2H26 放量
 - [[entities/samsung]] — 三星；IDM + Foundry + Memory；I-Cube/X-Cube；2nm 量產；HBM4 首批出貨 2026-02；**Groq 3 LPU 代工確認（GTC 2026）**⭐更新
-- [[entities/sk-hynix]] — SK Hynix；HBM 市場領導者；M15X 廠提前投產（2026-02）；NVIDIA HBM4 份額 ~70%
+- [[entities/sk-hynix]] — SK Hynix；HBM 市場領導者；M15X 廠提前投產（2026-02）；NVIDIA HBM4 份額 ~70%；**12H HBM 混合接合驗證完成（2026-04-29）；首批 AMAT+Besi HB 設備採購**⭐更新
 - [[entities/asmpt]] — ASMPT Limited；TCB/混合接合/Photonics-CPO 設備領導廠商；Q1 2026 訂單 27M +71.6% YoY；NEXX 出售給 AMAT⭐新增
 - [[entities/ase-group]] — ASE Group；全球最大 OSAT；CoWoP 面板封裝；K28 廠 2026 年完工（目標 25K 片/月）⭐新增
 - [[entities/amkor]] — Amkor；全球第二大 OSAT；Arizona $70 億廠（2028 投產）；Intel EMIB 外包夥伴⭐新增
@@ -57,6 +57,13 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation]] — SK Hynix 12H HBM 混合接合驗證完成；AMAT+Besi inline HB 系統首批量產設備採購（2026-04-29）⭐新增
+- [[sources/2026-04-01_trendforce_jedec-hbm-height-relax-900um]] — JEDEC 擬鬆綁 HBM4E 高度至 ~900µm；可能延緩混合接合採用（2026-04-01）⭐新增
+- [[sources/2026-03-27_3dincites_copper-grain-hybrid-bonding]] — MacDermid Alpha：銅晶粒結構工程化提升混合接合良率（2026-03-27）⭐新增
+- [[sources/2026-03-23_trendforce_musk-terafab-tsmc-packaging]] — Tesla Terafab 構想：先進封裝是最佳切入點；TSMC 短期威脅有限（2026-03-23）⭐新增
+- [[sources/2026-03-13_trendforce_besi-takeover-interest-lam-amat]] — Besi 傳遭 Lam Research、Applied Materials 收購接觸（Reuters）（2026-03-13）⭐新增
+- [[sources/2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab]] — SK Hynix 自研 HBM4 系統級測試設備；深化 TSMC CoWoS 合作（2026-02-25）⭐新增
+- [[sources/2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h]] — SK Hynix MR-MUF 確認用於 HBM4 16H；30µm die thinning；CES 2026 展示（2026-01-13）⭐新增
 - [[sources/2026-05-03_globenewswire_amat-acquires-nexx]] — Applied Materials 20M 收購 ASMPT NEXX 面板 ECD 設備（2026-05-03）⭐新增
 - [[sources/2026-04-22_asmpt_q1-2026-results]] — ASMPT Q1 2026：訂單 27M +71.6% YoY；HBM4 16H TCB；CPO 5x 成長（2026-04-22）⭐新增
 - [[sources/2025-09-19_trendforce_stmicro-foplp-france]] — STMicro 法國面板級封裝試驗線 2026 Q3 啟動（2025-09-19）⭐新增

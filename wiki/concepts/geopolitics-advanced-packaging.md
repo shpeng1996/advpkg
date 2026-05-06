@@ -3,8 +3,8 @@ title: "先進封裝地緣政治 / Geopolitics of Advanced Packaging"
 category: concept
 tags: [geopolitics, US-China, CHIPS-Act, supply-chain, chiplet, NAPMP, export-control]
 created: 2026-04-26
-updated: 2026-04-30
-sources: [2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-23_trendforce_china-osat-sj-semiconductor-ipo, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-08-05_3dincites_iftle636]
+updated: 2026-05-07
+sources: [2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-23_trendforce_china-osat-sj-semiconductor-ipo, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-08-05_3dincites_iftle636, 2026-03-23_trendforce_musk-terafab-tsmc-packaging]
 related: [wiki/concepts/advanced-packaging-market.md, wiki/entities/amkor.md, wiki/entities/ase-group.md, wiki/technologies/ucie.md]
 ---
 
@@ -108,11 +108,24 @@ Deloitte 2026 年報告預測：「跨多供應商、多地區採購和封裝 di
   - 在標準組織（JEDEC 等）積極參與話語權
 ```
 
+### Tesla Terafab：超大客戶自建封裝能力（⭐ 2026-03-23 新增）
+
+Tesla CEO 馬斯克提出 **Terafab 超級晶圓廠**構想，目標整合邏輯、記憶體與先進封裝，引發半導體業界對 TSMC 的衝擊評估。
+
+**Terafab 對地緣政治格局的意涵**：
+- **最可能切入點：先進封裝**（而非晶圓製造）：AI 晶片封裝瓶頸是最易切入的薄弱環節，Tesla 可先在德州布建 FOPLP 封裝線或與外部合作夥伴（Samsung、Intel）簽約
+- **超大客戶議價能力提升**：即便 Terafab 無法成為全整合廠，作為「籌碼」可強化 Tesla 對 TSMC 的議價地位
+- **2nm 邏輯製程極高門檻**：TSMC 的製程積累、EUV 供應鏈、工程人才構成短期護城河，Terafab 短期對 TSMC 邏輯製程無實質威脅
+- **跟隨超大客戶 DIY 潮流**：Tesla 加入 Google（TPU）、Amazon（Trainium/Inferentia）等自建 AI 晶片的行列，長期均衡下可能降低對 TSMC 的整體依賴度
+
+*Source: TrendForce 2026-03-23（引述 Commercial Times、Tom's Hardware、Economic Daily News）*
+
 ### 封裝成為地緣政治焦點的時程
 
 - **2022**：CHIPS Act 通過，封裝生態系明確列為國家戰略目標
 - **2024**：3D InCites IFTLE 608 明確提出「封裝為晶片戰新戰場」
 - **2025–2026**：NAPMP 資金開始落地；中國 OSAT 能力升級加速
+- **2026-03**：Tesla Terafab 構想出現，超大 AI 客戶自建封裝能力趨勢加速
 - **2026+**：Chiplet 跨國供應鏈合規問題預計成為業界顯著議題
 
 ---
