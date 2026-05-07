@@ -3,8 +3,8 @@ title: "UCIe — Universal Chiplet Interconnect Express"
 category: technology
 tags: [standards, chiplet, interconnect, UCIe, 3D, hybrid-bonding, UCIe-3.0]
 created: 2026-04-24
-updated: 2026-04-26
-sources: [2026-04-24_initial-survey, 2026-04-01_semiengineering_chiplets-2026]
+updated: 2026-05-08
+sources: [2026-04-24_initial-survey, 2026-04-01_semiengineering_chiplets-2026, 2025-01-28_3dincites_iftle-618-ucie-standard-vs-ucie3, 2025-01-01_semieng_ucie-1-6t-io-chiplets-ai-datacenter]
 related:
   - wiki/technologies/hybrid-bonding.md
   - wiki/technologies/hbm4.md
@@ -95,9 +95,50 @@ UCIe 2.0 引入 **UCIe-3D** 最佳化：
 | **向下相容** | 完全相容 UCIe 1.0 / 2.0 IP，保護既有投資 |
 | **年度更新節奏** | 自 2023 年起每年發布一個新版本，顯示快速演進 |
 
+## PHY 變體比較 / UCIe-S vs UCIe-A
+
+（來源：IFTLE 618 / Synopsys Manuel Mota webinar，2025-01-28）
+
+| 特性 | UCIe-S（Standard） | UCIe-A（Advanced） |
+|------|-------------------|-------------------|
+| 目標封裝 | 標準有機基板（Laminate） | 矽中介層 / 矽橋 / RDL 扇出 |
+| Bump 密度 | 粗（低密度） | 密（高密度） |
+| 架構/協定 | 共用 | 共用 |
+| 軟體相容性 | ✅ 可共用 | ✅ 可共用 |
+| 典型應用 | 標準 chiplet 平台 | 高效能 AI/HPC 封裝 |
+
+**三層堆疊架構**：Physical Layer → Die-to-Die Adapter Layer → Protocol Layer。不同 PHY 變體僅差異在物理層凸塊佈局，上層協定棧完全共用，保護 SoC 驗證投資。
+
+**Consortium 生態**（截至 2025-Q1）：130 家成員，包含 Intel、TSMC、Samsung、AMD、ARM、高通等。
+
+---
+
+## 競爭標準對照 / Competing Standards
+
+| 標準 | 組織 | 主要應用 |
+|------|------|---------|
+| **UCIe** | UCIe Consortium | 最完整協定棧，2.5D/3D 多場景 |
+| XSR / USR | OIF | PHY 層優化，die-to-die 短距離 |
+| AIB | Chips Alliance（源自 Intel） | 開放 IP，簡單介面 |
+| OpenHBI / BOW | OCP | 不同使用場景的頻寬/延遲取捨 |
+
+---
+
+## 1.6T I/O Chiplet 驅動力 / 1.6T Driver
+
+（來源：SemiEngineering UCIe 1.6T 文章，2025）
+
+- **單體 SoC 超過光罩極限已超過 5 年**（截至 2025）：無法再靠加大晶片面積提升頻寬。
+- **解法：I/O chiplet 架構**——主晶片（GPU/ASIC）在先進節點，I/O die 在最佳化成熟節點，透過 UCIe 互連。
+- **資料中心 1.6T 需求**：機架功耗/熱密度限制推動每通道頻寬 400G→800G→1.6T，UCIe 為 chiplet 間提供標準化介面。
+- **Samsung MDI Alliance** 與 **TSMC 3DFabric Alliance** 是各自生態系整合框架（兩者互補而非對立）。
+
+---
+
 ## 爭議與未解問題 / Open Questions
 
 - UCIe 3.0 vs Intel 的 CXL / NVIDIA 的 NVLink 在 AI 互連的競爭格局？
 - Chiplet 生態系（第三方 chiplet marketplace）何時成熟？
 - UCIe 標準能否統一 memory interface（目前 HBM 仍有專屬介面）？
 - 64 GT/s 連結的功耗 vs 頻寬效益，是否足以取代短距光學互連（CPO）？
+- UCIe-S 與 UCIe-A 的市場份額如何演變？高端 AI 封裝是否會以 UCIe-A 為主？

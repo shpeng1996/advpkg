@@ -499,3 +499,31 @@
   1. **TSMC 亞利桑那首座先進封裝廠進入許可申請階段**（2026-05-07）：這是 TSMC 在美國建立在地封裝能力的最明確信號。業界估計美國總投資可能從 $165B 升至 $250B；Phoenix 將複製竹科生態系模式。sub-2nm 台美產能比 2030 目標為 7:3。
   2. **GlobalFoundries SCALE 平台發布**（2026-05-07）：業界首個 OCI MSA 原生合規 CPO 解決方案，打破 TSMC COUPE™ 在 CPO 市場的單一主導地位。GF 矽光子收入 2026 年約 $400M，2028 年目標超過 $1B。CPO 市場正式進入多廠商標準化競爭階段。
   3. **SoIC ESD 可靠性與液冷突破**（2026-05-05）：UC Riverside 確認 SoIC 內 ESD 保護是未解挑戰；KAIST COP>100,000 液冷成果為 5–6kW AI 封裝提供可行散熱路徑。Al₂O₃ 奈米線新型 TIM 材料進入學術視野。
+
+## [2026-05-08] collect | 每日自動蒐集 — 先進封裝最新動態（第十六次）
+- 搜尋查詢數：7 組（TSMC CoWoS/SoIC、HBM4、混合接合設備、Intel EMIB/Foveros、UCIe 標準、面板級封裝/玻璃基板、先進封裝市場）
+- 成功抓取：5 篇（articles/ 5, papers/ 0, reports/ 0）
+- 失敗/跳過：多篇（大多數 TSMC、HBM4、Intel 搜尋結果已在 _collected_urls.txt；SemiEngineering 知識庫頁面限制擷取長度）
+- 學術代理：UNAVAILABLE ✗（ieeexplore、arxiv 仍受限）
+- 新增 raw 檔案：5 篇
+  - raw/articles/2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding.md
+  - raw/articles/2025-12-22_trendforce_dnp-tgv-glass-substrate-2026.md
+  - raw/articles/2025-01-28_3dincites_iftle-618-ucie-standard-vs-ucie3.md
+  - raw/articles/2025-01-01_semieng_ucie-1-6t-io-chiplets-ai-datacenter.md
+  - raw/articles/2025-01-01_semieng_making-hybrid-bonding-better.md
+- 新增 wiki 頁面：6 頁
+  - wiki/technologies/glass-substrate.md（**全新頁面**）
+  - wiki/sources/2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding.md
+  - wiki/sources/2025-12-22_trendforce_dnp-tgv-glass-substrate-2026.md
+  - wiki/sources/2025-01-28_3dincites_iftle-618-ucie-standard-vs-ucie3.md
+  - wiki/sources/2025-01-01_semieng_ucie-1-6t-io-chiplets-ai-datacenter.md
+  - wiki/sources/2025-01-01_semieng_making-hybrid-bonding-better.md
+- 更新 wiki 頁面：4 頁
+  - wiki/technologies/ucie.md（新增 UCIe-S vs UCIe-A 差異表、三層架構、競爭標準對照、1.6T 驅動力、MDI Alliance 補充；成員數 130 家確認）
+  - wiki/technologies/hybrid-bonding.md（新增低溫製程材料路徑：奈米孿晶銅 200°C / Lam Research 奈米晶銅；濺鍍 SiCN <250°C；污染控制機制；玻璃基板上混合接合可靠性）
+  - wiki/technologies/copos.md（補充玻璃基板供應商生態表：Absolics/DNP/Rapidus；Unimicron 可靠性挑戰）
+  - wiki/index.md（頁面數 101→107；來源數 69→74；新增 glass-substrate 技術頁 + 5 個 sources 頁面）
+- 主要新知識：
+  1. **玻璃核心基板供應商生態成形**（2025-12）：DNP 試驗線啟動（510×515mm）、Absolics Georgia 廠 2026 量產、Rapidus 日本開發——配合 TSMC CoPoS（310×310mm）與 Intel EMIB 玻璃基板路線，形成跨越日本/韓國/美國的全球供應競爭格局。TGV 工具鏈與 TSV 完全不同是關鍵壁壘。
+  2. **玻璃基板可靠性是量產前關鍵待解題**（IFTLE 648 / Unimicron）：焊點可靠性（微凸塊版本與 Cu-Cu 混合接合版本）在玻璃核心基板上的行為缺乏充分學術資料庫，Unimicron 研究是此領域罕見的公開可靠性研究。
+  3. **混合接合低溫化材料路徑進入產業視野**（SemiEngineering / Lam Research）：奈米孿晶銅（NT Cu）可將退火溫度從 400°C 降至 200°C；Lam Research 推進奈米晶銅路徑；濺鍍 SiCN 可替代 PECVD 降溫至 250°C 以下——三項技術合力突破超細間距混合接合的熱預算限制。

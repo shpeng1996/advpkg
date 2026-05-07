@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
 **更新時間 Updated**：2026-05-08
-**頁面總數 Total Pages**：101
-**原始來源數 Sources**：69
+**頁面總數 Total Pages**：107
+**原始來源數 Sources**：74
 
 ---
 
@@ -44,6 +44,7 @@
 - [[technologies/emib]] — EMIB（Embedded Multi-Die Interconnect Bridge）；Intel 2.5D 局部矽橋；代工廠中立；120×120mm；Google TPU v9 2027 計畫採用⭐新增
 - [[technologies/foveros]] — Foveros；Intel 3D 堆疊；Foveros Direct 3D（<10µm Cu-Cu，2026 量產）；875 GB/s 3D 頻寬⭐新增
 - [[technologies/foplp]] — FOPLP（扇出面板級封裝）；Powertech 90% 試驗良率；TSMC CoPoS 玻璃面板 310×310mm；量產 2028–29⭐新增
+- [[technologies/glass-substrate]] — 玻璃核心基板（TGV）；Absolics 2026 量產、DNP FY2028、Rapidus 2028；可靠性挑戰待解⭐新增
 
 ---
 
@@ -57,6 +58,11 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding]] — IFTLE 648：Unimicron 玻璃核心基板 + Cu-Cu 混合接合可靠性研究（2025-12-01）⭐新增
+- [[sources/2025-12-22_trendforce_dnp-tgv-glass-substrate-2026]] — DNP TGV 玻璃基板：試驗線 2025-12、樣品 2026 初、量產 FY2028（2025-12-22）⭐新增
+- [[sources/2025-01-28_3dincites_iftle-618-ucie-standard-vs-ucie3]] — IFTLE 618：UCIe-S vs UCIe-A vs UCIe 3 版本比較；130 家成員生態（2025-01-28）⭐新增
+- [[sources/2025-01-01_semieng_ucie-1-6t-io-chiplets-ai-datacenter]] — SemiEng：UCIe 1.6T I/O chiplet；單體 SoC 光罩極限 5 年；MDI Alliance vs 3DFabric（2025）⭐新增
+- [[sources/2025-01-01_semieng_making-hybrid-bonding-better]] — SemiEng：混合接合改良；奈米孿晶銅 200°C 接合；Lam Research 奈米晶銅；污染控制（2025）⭐新增
 - [[sources/2026-05-07_trendforce_tsmc-us-expansion-250b-arizona]] — TSMC US 投資上看 $250B；亞利桑那首座先進封裝廠申請許可（2026-05-07）⭐新增
 - [[sources/2026-05-07_trendforce_globalfoundries-silicon-photonics-scale-cpo]] — GlobalFoundries SCALE CPO 平台（OCI MSA 原生合規）；矽光子 2028 年 $1B+（2026-05-07）⭐新增
 - [[sources/2026-05-06_trendforce_google-tpu-cautious-adoption-nvidia]] — Google TPU 外銷遇冷；AI 雲端 GPU 99% 仍是 NVIDIA；CoWoS 需求集中度不變（2026-05-06）⭐新增

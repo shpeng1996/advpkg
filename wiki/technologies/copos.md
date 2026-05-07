@@ -3,8 +3,8 @@ title: "CoPoS — Chip-on-Panel-on-Substrate"
 category: technology
 tags: [panel-level-packaging, FOPLP, TSMC, CoPoS, AI, HPC, AP7, InFO]
 created: 2026-04-25
-updated: 2026-04-29
-sources: [2026-04-13_trendforce_copos-pilot, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2025-09-12_trendforce_foplp-competitive-landscape-2025, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos]
+updated: 2026-05-08
+sources: [2026-04-13_trendforce_copos-pilot, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2025-09-12_trendforce_foplp-competitive-landscape-2025, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026]
 related:
   - wiki/technologies/cowos.md
   - wiki/entities/tsmc.md
@@ -91,6 +91,18 @@ FOPLP/CoPoS 相關廠商動態（截至 2026-04）：
 
 **TSMC vs Samsung 差異化：**
 - TSMC 選擇**玻璃**作為面板基板（Through-Glass Via, TGV 開發中），Samsung 採用不同材料路線，兩者各押注不同的翹曲控制策略
+
+**玻璃基板供應商生態 / Glass Substrate Supplier Ecosystem：**
+（來源：IFTLE 648 / DNP TrendForce 2025-12）
+
+| 廠商 | 面板尺寸 | 量產目標 | 備注 |
+|------|---------|---------|------|
+| **Absolics**（SKC/SK Group，Georgia） | 標準 interposer | 2026 | 首批 TGV-interposer 量產廠 |
+| **DNP**（大日本印刷，久喜） | 510mm × 515mm | FY2028 | 填充型 + 保形型 TGV |
+| **Rapidus**（日本） | 大型玻璃基板 | 2028 | 首個單一大型玻璃基板 interposer 原型 |
+
+- **可靠性挑戰**：Unimicron 研究（IMAPS JMEP）確認，玻璃核心基板上的焊點可靠性（微凸塊版本與 Cu-Cu 混合接合版本）缺乏充分學術研究，是量產前的關鍵待解題。
+- 參見：[[technologies/glass-substrate]] 玻璃基板完整頁面
 
 ### AP7 嘉義廠房分期配置 / AP7 Chiayi Phase Architecture
 

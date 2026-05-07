@@ -3,8 +3,8 @@ title: "混合接合 / Hybrid Bonding"
 category: technology
 tags: [3D, hybrid-bonding, Cu-Cu, SoIC, ECTC, advanced-packaging, DRAM, COP, 4F2]
 created: 2026-04-24
-updated: 2026-05-07
-sources: [2026-04-24_initial-survey, 2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-03-01_3dincites_besi-packaging-power-shift, 2026-01-13_semiengineering_hbm4-microbumps, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-19_semieng_advanced-packaging-limits, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-03-27_3dincites_copper-grain-hybrid-bonding]
+updated: 2026-05-08
+sources: [2026-04-24_initial-survey, 2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-03-01_3dincites_besi-packaging-power-shift, 2026-01-13_semiengineering_hbm4-microbumps, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-19_semieng_advanced-packaging-limits, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-03-27_3dincites_copper-grain-hybrid-bonding, 2025-01-01_semieng_making-hybrid-bonding-better, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding]
 related:
   - wiki/technologies/soic.md
   - wiki/technologies/cowos.md
@@ -212,6 +212,42 @@ ECTC 2025 的核心技術主題之一：
 4. **能耗優勢遞延**：混合接合的能耗/bit 雖比微凸塊低一個數量級，但 JEDEC 高度修訂後，HBM4 微凸塊版本的能耗/bit 已可下降 30–40%，使混合接合的優勢在本代不夠顯著
 
 *Source: Semiconductor Engineering, Bryon Moyer, 2026-01-13*
+
+---
+
+## 低溫製程材料路徑 / Low-Temperature Process Materials
+
+（來源：SemiEngineering "Making Hybrid Bonding Better"，2025；Lam Research Chee Ping Lee）
+
+傳統 Cu-Cu 混合接合退火溫度約 400°C，對熱預算敏感元件（如某些 III-V 或先進後段金屬層）造成限制。新興低溫路徑：
+
+| 材料路徑 | 退火溫度 | 機制 | 開發方 |
+|---------|---------|------|-------|
+| 標準電鍍銅 | ~400°C | 一般晶粒擴散 | 業界標準 |
+| **奈米孿晶銅（NT Cu）** | **~200°C** | <111> 取向優化，加速晶粒擴散 | 學術界 / 多家設備商 |
+| **奈米晶銅（nanocrystalline Cu）** | <400°C（顯著降低） | 奈米尺度晶粒結構加速擴散 | **Lam Research** |
+
+**介電製程同步降溫**：
+- 傳統 PECVD SiCN/SiO₂：~350°C
+- **濺鍍 SiCN**（SiC 靶材 + N₂）：**<250°C**——為細間距混合接合的低溫整合鋪路
+
+**污染控制**：步驟間長佇列時間（long queue times）會在接合界面引入水分，是混合接合主要失效機制之一。嚴格的潔淨室防潮管控是量產可靠性的前提。
+
+> *意涵：低溫銅沉積 + 低溫退火 + 低溫介電製程是「三位一體」的量產突破路徑，任一環節缺失都無法整合至超細間距封裝。*
+
+---
+
+## 玻璃基板上的混合接合 / Hybrid Bonding on Glass Substrates
+
+（來源：IFTLE 648 / Unimicron, IMAPS JMEP，2025-12）
+
+玻璃核心基板上的 Cu-Cu 混合接合面臨與矽基板不同的可靠性挑戰：
+
+- **焊點可靠性（solder joint reliability）**幾乎未被學術界充分研究。
+- Unimicron 研究確認需建立玻璃核心基板專屬的 JEDEC 可靠性模型。
+- TGV 製程工具鏈與 TSV 完全不同，不可直接沿用。
+
+參見：[[technologies/glass-substrate]] 玻璃基板專屬頁面。
 
 ---
 
