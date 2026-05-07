@@ -3,8 +3,8 @@ title: "NVIDIA Corporation"
 category: entity
 tags: [fabless, GPU, AI-accelerator, HBM4, CoWoS, SoIC, Rubin, Feynman, NVL576]
 created: 2026-05-03
-updated: 2026-05-05
-sources: [2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-03-18_trendforce_nvidia-rubin-feynman-soic, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi]
+updated: 2026-05-08
+sources: [2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-03-18_trendforce_nvidia-rubin-feynman-soic, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-06_trendforce_google-tpu-cautious-adoption-nvidia]
 related:
   - wiki/entities/tsmc.md
   - wiki/entities/sk-hynix.md
@@ -64,6 +64,8 @@ NVIDIA 是全球 AI GPU 市場絕對主導者（資料中心 GPU 市占 >80%）�
 | NVL576 HBM4E 容量 | 1 TB（16 HBM stacks） |
 | CoWoS 擴產驅動比例 | 主要驅動力（+TSMC 內部） |
 | SK Hynix HBM4 份額 | ~70%（NVIDIA 客戶） |
+| AI 雲端 GPU 市占 | **~99%**（Nebius CRO 表述，2026-05）⭐新增 |
+| Lambda-NVIDIA 合約 | $1.5B，~18,000 GPU，4 年（2025-09） |
 
 ---
 

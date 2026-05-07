@@ -3,8 +3,8 @@ title: "先進封裝熱管理 / Thermal Management in Advanced Packaging"
 category: concept
 tags: [thermal-management, liquid-cooling, 3D-IC, CoWoS, heat-dissipation, TIM, ECTC-2025]
 created: 2026-04-25
-updated: 2026-04-25
-sources: [2025-12-01_semiengineering_thermal-management]
+updated: 2026-05-08
+sources: [2025-12-01_semiengineering_thermal-management, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal]
 related:
   - wiki/technologies/cowos.md
   - wiki/technologies/hybrid-bonding.md
@@ -77,6 +77,26 @@ related:
 2. **TIM 材料升級**：液態金屬和石墨烯複合材料逐步取代傳統矽脂，應對 AI 加速器的極端功耗密度
 3. **3D 堆疊散熱成為良率瓶頸**：SoIC 等技術的「熱陷阱效應」是下一個良率挑戰，KGD 測試需加入熱表徵
 4. **協同設計強制化**：TSMC、Intel、AMD 均強調熱-電-機械協同設計（Thermal-Electrical-Mechanical Co-design）必須從 RTL 階段開始
+
+---
+
+## ⭐ 最新學術研究前沿 / Latest Academic Research（2026-05）
+
+*Source: SemiEngineering 技術論文週報 2026-05-05*
+
+### 新型 TIM 材料：長 Al₂O₃ 奈米線強化環氧複合材料
+
+- **機構**：Georgia Tech + NCKU（國立成功大學）
+- **技術**：以長型氧化鋁（Al₂O₃）奈米線增強環氧樹脂複合材料作為先進封裝的熱介面材料（TIM）
+- **優勢**：相較於短纖維或顆粒增強型 TIM，長奈米線提供連續導熱路徑，大幅提升有效熱導率
+- **應用場景**：CoWoS 基板-散熱片介面、SoIC 堆疊層間散熱
+
+### 超高效率液冷：COP > 100,000
+
+- **機構**：KAIST（韓國高等科技大學）
+- **技術**：歧管微通道（Manifold Microchannel）液冷系統，實現電子散熱效率係數（COP）超過 **100,000**
+- **意義**：若此技術成熟，有望解決 NVIDIA Feynman（5–6 kW）等極端功耗 AI 封裝的散熱難題。目前 5–6kW 功耗被認為是 Intel EMIB 等封裝的可行性上限。
+- **技術路線**：屬於 Direct Liquid Cooling（直接液冷）範疇，與 TSMC 2025 ECTC 展示的矽基直接液冷概念一致
 
 ---
 

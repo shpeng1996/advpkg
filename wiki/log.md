@@ -460,3 +460,42 @@
   1. **SK Hynix 12-high HBM 混合接合驗證完成（2026-04-29）**：業界首個具名技術負責人（Kim Jong-hoon）公開確認；首批量產 HB 設備採購（AMAT+Besi inline，~USD 1,500 萬）——混合接合從實驗室研發到量產規劃的拐點信號。三星同步測試 Besi + SEMES 設備，但 SEMES 成熟度不足。
   2. **JEDEC 擬鬆綁 HBM4E 高度至 ~900µm（2026-04-01）**：HBM3E ~720µm → HBM4 ~775µm → HBM4E ~900µm（提議）。此舉使 TC 接合仍可支援更多層數，可能將混合接合 HBM 採用時間點從 HBM4E 延後至 HBM5（2029+）——直接衝擊 Besi 成長邏輯。但業界共識：>20 層混合接合不可避免（SK Hynix VP Lee Kang-wook 確認）。
   3. **Besi 傳遭 Lam Research 收購接觸（2026-03-13, Reuters）**：設備業 M&A 整合浪潮最新一波；Lam 進入混合接合設備市場的最快路徑；AMAT（已持股 9%）亦是潛在買家。若整合成真，封裝設備三強（AMAT、Lam、TEL）格局將重塑，直接影響 Kinex 合作架構。
+
+## [2026-05-07] collect | 每日自動蒐集 — 先進封裝最新動態（第十四次）
+- 搜尋查詢數：0 組（網路存取受限：外部網站無法連線）
+- 成功抓取：0 篇（WebSearch 工具不在本次 session 的可用工具集；bash 外部網路連線失敗）
+- 失敗/跳過：7 組查詢全部跳過（網路不可用）
+- 學術代理：UNAVAILABLE ✗
+- 新增 wiki 頁面：1 頁（sources/2026-01-21_trendforce_tsmc-ap-capex-ap7-copos.md）
+- 更新 wiki 頁面：1 頁（wiki/index.md）
+- 主要工作（維護性）：
+  1. **補建遺漏 Source 摘要頁**（2026-01-21）：TrendForce 文章《TSMC Advanced Packaging CapEx 24% CAGR；AP7 定位 WMCM+CoPoS》已在 raw/ 但缺乏對應的 wiki/sources/ 頁面，本次補建完成。
+  2. **修復 wiki/index.md 嚴重不一致**：索引僅列出 45 個 source 頁面（實際有 65 個），且最後一行截斷損壞。本次完整重建 index.md——全部 65 個 sources 依日期倒序排列、修復截斷條目、補入 Analyses 區段（2026-05-03_lint）、更新總頁數至 97。
+- 備註：WebSearch 工具在本次排程執行環境中不可用；網路連線僅允許內部資源。建議排程系統確認下次 session 可用工具集包含 WebSearch。
+
+## [2026-05-08] collect | 每日自動蒐集 — 先進封裝最新動態（第十五次）
+- 搜尋查詢數：7 組（TSMC CoWoS/SoIC、HBM4、混合接合設備、面板級封裝、ECTC 2026 學術、UCIe、Intel EMIB）
+- 成功抓取：4 篇（articles/ 4, papers/ 0, reports/ 0）
+- 失敗/跳過：多篇（大多數 TSMC/HBM4/Intel 搜尋結果已在 _collected_urls.txt；CEA-Leti SemiWiki 頁面登入牆）
+- 學術代理：UNAVAILABLE ✗（ieeexplore、arxiv 仍受限）
+- 新增 raw 檔案：4 篇
+  - raw/articles/2026-05-07_trendforce_tsmc-us-expansion-250b-arizona.md
+  - raw/articles/2026-05-07_trendforce_globalfoundries-silicon-photonics-scale-cpo.md
+  - raw/articles/2026-05-06_trendforce_google-tpu-cautious-adoption-nvidia-dominance.md
+  - raw/articles/2026-05-05_semieng_technical-paper-roundup-advanced-packaging-3d-ic.md
+- 新增 wiki 頁面：4 頁（全為 sources/）
+  - wiki/sources/2026-05-07_trendforce_tsmc-us-expansion-250b-arizona.md
+  - wiki/sources/2026-05-07_trendforce_globalfoundries-silicon-photonics-scale-cpo.md
+  - wiki/sources/2026-05-06_trendforce_google-tpu-cautious-adoption-nvidia.md
+  - wiki/sources/2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal.md
+- 更新 wiki 頁面：6 頁
+  - wiki/entities/tsmc.md（亞利桑那首座先進封裝廠許可申請中；美國投資上看 $250B；台美 sub-2nm 產能比 7:3 by 2030）
+  - wiki/entities/nvidia.md（AI 雲端 GPU 市占 ~99% 數據；Lambda 合約補充）
+  - wiki/technologies/copackaged-optics.md（新增 GlobalFoundries SCALE 競爭格局；OCI MSA 多廠商表格；1.6T→3.2T 路線圖；CPO 廠商定位對比）
+  - wiki/technologies/soic.md（新增 In-SoIC ESD 保護為開放問題，UC Riverside 2026 論文）
+  - wiki/concepts/thermal-management.md（新增 Al₂O₃ 奈米線 TIM 材料；KAIST COP>100,000 超高效液冷）
+  - wiki/index.md（頁面數 97→101；來源數 65→69；4 個新 sources 頁面加入）
+- 主要新知識：
+  1. **TSMC 亞利桑那首座先進封裝廠進入許可申請階段**（2026-05-07）：這是 TSMC 在美國建立在地封裝能力的最明確信號。業界估計美國總投資可能從 $165B 升至 $250B；Phoenix 將複製竹科生態系模式。sub-2nm 台美產能比 2030 目標為 7:3。
+  2. **GlobalFoundries SCALE 平台發布**（2026-05-07）：業界首個 OCI MSA 原生合規 CPO 解決方案，打破 TSMC COUPE™ 在 CPO 市場的單一主導地位。GF 矽光子收入 2026 年約 $400M，2028 年目標超過 $1B。CPO 市場正式進入多廠商標準化競爭階段。
+  3. **SoIC ESD 可靠性與液冷突破**（2026-05-05）：UC Riverside 確認 SoIC 內 ESD 保護是未解挑戰；KAIST COP>100,000 液冷成果為 5–6kW AI 封裝提供可行散熱路徑。Al₂O₃ 奈米線新型 TIM 材料進入學術視野。

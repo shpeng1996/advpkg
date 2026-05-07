@@ -3,8 +3,8 @@ title: "台積電 / TSMC"
 category: entity
 tags: [foundry, advanced-packaging, CoWoS, SoIC, CoPoS, COUPE, CPO, InFO, WMCM, aLSI, MRAM]
 created: 2026-04-24
-updated: 2026-05-04
-sources: [2026-04-24_initial-survey, 2026-04-13_trendforce_copos-pilot, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2025-12-18_trendforce_apple-wmcm-a20, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-01-20_trendforce_tsmc-wmcm-apple, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-23_trendforce_tsmc-roadmap-a12-a13-no-high-na-euv]
+updated: 2026-05-08
+sources: [2026-04-24_initial-survey, 2026-04-13_trendforce_copos-pilot, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2025-12-18_trendforce_apple-wmcm-a20, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-01-20_trendforce_tsmc-wmcm-apple, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-23_trendforce_tsmc-roadmap-a12-a13-no-high-na-euv, 2026-05-07_trendforce_tsmc-us-expansion-250b-arizona]
 related:
   - wiki/technologies/cowos.md
   - wiki/technologies/soic.md
@@ -46,6 +46,9 @@ related:
 
 - **2026-04**（新增）：**Arizona P6 封裝基地規劃更新**——TSMC 計畫將原定晶圓廠 Phase 6（P6）區域**重新規劃為先進封裝廠**（美國本土封裝基地）。最新確認：目標 **2029 年**投產。技術路線：SoIC 先行，後續引入 CoWoS。目的：呼應 CHIPS Act 要求、消除「亞利桑那晶圓需運回台灣封裝」的供應鏈斷點，服務北美 CSP 客戶（NVIDIA、Amazon、Google 等）。
   *Source: TrendForce 2025-12-04; TrendForce 2026-04-28*
+
+- **2026-05-07（新增）**：**美國投資上看 $250B；亞利桑那首座先進封裝廠申請許可**——TSMC SVP Cliff Hou 在 2026 SelectUSA 峰會表態「準備好把握任何新商機」，業界消息估計總美國投資可能達 **$250B**（現有承諾 $165B）。最新亞利桑那廠況：Fab 1 已量產（4Q24）、Fab 2 完工（H2 2027 3nm）、Fab 3 施工中、Fab 4 申請許可中、**首座先進封裝廠（Arizona Advanced Packaging Facility）申請許可中**。計畫在 Phoenix 複製竹科生態系。2030 年 sub-2nm 台美產能比預計 **7:3**。TSMC 亦宣布取得亞利桑那廠區第二塊大型土地。
+  *Source: TrendForce 2026-05-07（引述 Commercial Times, Economic Daily News）*
 
 - **2026-01-20**：WMCM 產能擴張計畫更新：AP3（Longtan）升級 + AP7 Phase 2（Apple 專屬）雙線並進；**2026 年底 WMCM 月產能目標 60,000 片**；2027 年預計倍增至 >120,000 片。Apple 排他窗口預計 2027–2028 年後開放其他客戶。
   *Source: TrendForce 2026-01-20*
