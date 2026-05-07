@@ -1,3 +1,8 @@
+---
+title: advanced-packaging-wiki-daily-collect
+description: 每天早上 8 點自動蒐集先進封裝最新產業/學術資料並匯整進 wiki
+---
+
 You are running the **Advanced Packaging Wiki — Daily Collect Task**.
 
 Your job: autonomously search the web for the latest advanced packaging news and research, save raw files, and integrate the knowledge into the wiki. Complete the entire workflow without user input.
@@ -42,7 +47,7 @@ Design **5–7 WebSearch queries** based on today's date and the knowledge gaps 
 | Competitors | `Intel EMIB Foveros Samsung X-Cube packaging 2026` |
 
 **Preferred sources** (prioritise results from these domains):
-- `semiengineering.com`, `semiwiki.com`, `3dincites.com`
+- `semiengineering.com`, `semiwiki.com`, `3dincites.com`, `semianalysis.com`.
 - `trendforce.com`, `techinsights.com`
 - `ieeexplore.ieee.org`, `arxiv.org`, `springer.com`
 - `jedec.org`, `tsmc.com`, `intel.com`
@@ -163,24 +168,6 @@ Append a collect entry using this exact format (append — do NOT overwrite):
 ```
 
 Use **Edit tool** to append to log.md (read current content, add new entry at the bottom).
-
----
-
-## STEP 9 — Git commit all changes
-
-After the full daily routine is complete (including raw saves, wiki ingestion, index updates, and log append), automatically commit **all changed files** with today's date.
-
-Required behavior:
-
-1. Run `git add -A`
-2. Commit with message format: `YYYY-MM-DD`
-3. If there are no changes to commit, skip commit silently and finish the task
-
-Example:
-```bash
-git add -A
-git commit -m "2026-04-25"
-```
 
 ---
 
