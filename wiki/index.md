@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-05-08
-**頁面總數 Total Pages**：107
-**原始來源數 Sources**：74
+**更新時間 Updated**：2026-05-09
+**頁面總數 Total Pages**：110
+**原始來源數 Sources**：77
 
 ---
 
@@ -58,6 +58,9 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-04-21_3dincites_acm-wlp-plp-process-trends]] — ACM Research：WLP/PLP 製程趨勢；ECP/PECVD/濕製程；前端嚴格度向後端遷移（2026-04-21）⭐新增
+- [[sources/2026-04-13_trendforce_sandisk-hbf-pilot-line]] — TrendForce：SanDisk HBF 試驗線 2H26；SK Hynix+SanDisk 標準化聯盟；Samsung HBF 專利佈局（2026-04-13）⭐新增
+- [[sources/2026-04-10_3dincites_intel-gan-chiplet]] — Intel Foundry：全球最薄 GaN Chiplet 19µm / 300mm / 單片 CMOS 整合（IEDM 2025，2026-04-10）⭐新增
 - [[sources/2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding]] — IFTLE 648：Unimicron 玻璃核心基板 + Cu-Cu 混合接合可靠性研究（2025-12-01）⭐新增
 - [[sources/2025-12-22_trendforce_dnp-tgv-glass-substrate-2026]] — DNP TGV 玻璃基板：試驗線 2025-12、樣品 2026 初、量產 FY2028（2025-12-22）⭐新增
 - [[sources/2025-01-28_3dincites_iftle-618-ucie-standard-vs-ucie3]] — IFTLE 618：UCIe-S vs UCIe-A vs UCIe 3 版本比較；130 家成員生態（2025-01-28）⭐新增

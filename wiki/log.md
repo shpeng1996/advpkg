@@ -527,3 +527,27 @@
   1. **玻璃核心基板供應商生態成形**（2025-12）：DNP 試驗線啟動（510×515mm）、Absolics Georgia 廠 2026 量產、Rapidus 日本開發——配合 TSMC CoPoS（310×310mm）與 Intel EMIB 玻璃基板路線，形成跨越日本/韓國/美國的全球供應競爭格局。TGV 工具鏈與 TSV 完全不同是關鍵壁壘。
   2. **玻璃基板可靠性是量產前關鍵待解題**（IFTLE 648 / Unimicron）：焊點可靠性（微凸塊版本與 Cu-Cu 混合接合版本）在玻璃核心基板上的行為缺乏充分學術資料庫，Unimicron 研究是此領域罕見的公開可靠性研究。
   3. **混合接合低溫化材料路徑進入產業視野**（SemiEngineering / Lam Research）：奈米孿晶銅（NT Cu）可將退火溫度從 400°C 降至 200°C；Lam Research 推進奈米晶銅路徑；濺鍍 SiCN 可替代 PECVD 降溫至 250°C 以下——三項技術合力突破超細間距混合接合的熱預算限制。
+
+## [2026-05-09] collect | 每日自動蒐集 — 先進封裝最新動態（第十七次）
+- 搜尋查詢數：7 組（TSMC CoWoS/SoIC、HBM4/HBM4E、混合接合、Intel EMIB/Foveros、面板級/玻璃基板、UCIe/Chiplet、先進封裝市場）
+- 成功抓取：3 篇（articles/ 3, papers/ 0, reports/ 0）
+- 失敗/跳過：多篇（semiengineering.com Cloudflare 封鎖；大多數 TrendForce/3dincites 搜尋結果已在 _collected_urls.txt；techinsights.com 付費牆）
+- 學術代理：UNAVAILABLE ✗（ieeexplore、arxiv 仍受限）
+- 新增 raw 檔案：3 篇
+  - raw/articles/2026-04-13_trendforce_sandisk-hbf-pilot-line-2h26.md
+  - raw/articles/2026-04-10_3dincites_intel-gan-chiplet-19um-300mm.md
+  - raw/articles/2026-04-21_3dincites_acm-wlp-plp-process-trends.md
+- 新增 wiki 頁面：3 頁
+  - wiki/sources/2026-04-13_trendforce_sandisk-hbf-pilot-line.md
+  - wiki/sources/2026-04-10_3dincites_intel-gan-chiplet.md
+  - wiki/sources/2026-04-21_3dincites_acm-wlp-plp-process-trends.md
+- 更新 wiki 頁面：4 頁
+  - wiki/entities/sk-hynix.md（新增 HBF 標準化聯盟主導角色；SK Hynix + SanDisk 2026-02-25 聯合啟動）
+  - wiki/entities/samsung.md（新增 HBF 技術佈局與專利申請動態）
+  - wiki/entities/intel.md（新增 GaN Chiplet 突破：19µm / 300mm / 單片 CMOS 整合，IEDM 2025）
+  - wiki/technologies/foplp.md（新增「製程設備挑戰」章節：ECP/PECVD/濕製程均一性；前端設備廠商進入後端趨勢）
+  - wiki/index.md（頁面數 107→110；來源數 74→77；3 個新 sources 頁面）
+- 主要新知識：
+  1. **HBF（High Bandwidth Flash）進入視野**（TrendForce 2026-04-13）：SK Hynix + SanDisk 已啟動 HBF 標準化聯盟（2026-02-25），SanDisk 計畫 2H26 在日本建立試驗線、2027 年商用化。HBF 以 TSV 垂直堆疊數百層 NAND flash，技術供應鏈與 HBM 高度重疊（TSV 設備、鍵合材料），為 AI 推論大容量儲存需求而生，需求加速點預計 ~2030。
+  2. **Intel Foundry GaN Chiplet：全球最薄 19µm 突破**（3D InCites 2026-04-10）：基底矽僅 19 µm，300mm GaN-on-Silicon 晶圓，業界首個單片 On-Die CMOS 數位控制整合。GaN power chiplet 可與 AI compute die 共封裝（Foveros/EMIB），直接解決 5-6 kW AI 伺服器功率密度挑戰。
+  3. **FOPLP 前端製程嚴格度要求確認**（ACM Research / 3D InCites 2026-04-21）：OSAT 專屬 ECP/PECVD/濕製程工具已無法滿足大面板（510×515mm）均一性需求 → 前端設備廠商（AMAT、TEL、ACM Research、Lam Research）正主導後端製程設備升級，是 FOPLP 成本結構尚待突破的根本原因之一。
