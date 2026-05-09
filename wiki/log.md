@@ -551,3 +551,32 @@
   1. **HBF（High Bandwidth Flash）進入視野**（TrendForce 2026-04-13）：SK Hynix + SanDisk 已啟動 HBF 標準化聯盟（2026-02-25），SanDisk 計畫 2H26 在日本建立試驗線、2027 年商用化。HBF 以 TSV 垂直堆疊數百層 NAND flash，技術供應鏈與 HBM 高度重疊（TSV 設備、鍵合材料），為 AI 推論大容量儲存需求而生，需求加速點預計 ~2030。
   2. **Intel Foundry GaN Chiplet：全球最薄 19µm 突破**（3D InCites 2026-04-10）：基底矽僅 19 µm，300mm GaN-on-Silicon 晶圓，業界首個單片 On-Die CMOS 數位控制整合。GaN power chiplet 可與 AI compute die 共封裝（Foveros/EMIB），直接解決 5-6 kW AI 伺服器功率密度挑戰。
   3. **FOPLP 前端製程嚴格度要求確認**（ACM Research / 3D InCites 2026-04-21）：OSAT 專屬 ECP/PECVD/濕製程工具已無法滿足大面板（510×515mm）均一性需求 → 前端設備廠商（AMAT、TEL、ACM Research、Lam Research）正主導後端製程設備升級，是 FOPLP 成本結構尚待突破的根本原因之一。
+
+## [2026-05-10] collect | 每日自動蒐集 — 先進封裝最新動態（第十八次）
+- 搜尋查詢數：7 組（TSMC CoWoS/SoIC、HBM4/HBM4E、混合接合研究、Intel EMIB/Foveros、ECTC 2026、面板級/UCIe、先進封裝市場）
+- 成功抓取：5 篇（articles/ 5, papers/ 0, reports/ 0）
+- 失敗/跳過：多篇（大多數 TrendForce/3dincites 搜尋結果已在 _collected_urls.txt；SemiWiki 論壇部分內容需登入）
+- 學術代理：UNAVAILABLE ✗（ieeexplore、arxiv 仍受限；CEA-Leti 透過 SemiWiki 公告頁取得）
+- 新增 raw 檔案：5 篇
+  - raw/articles/2026-05-04_trendforce_intel-emib-google-meta-90pct-yield.md
+  - raw/articles/2026-05-05_trendforce_intel-emib-expansion-us-vietnam-taiwan-orders.md
+  - raw/articles/2026-04-22_trendforce_sk-hynix-pt7-cheongju-packaging-fab.md
+  - raw/articles/2026-04-22_trendforce_sk-hynix-indiana-us-packaging-plant.md
+  - raw/articles/2026-04-29_semiwiki_cea-leti-ectc2026-hybrid-bonding-1um.md
+- 新增 wiki 頁面：5 頁
+  - wiki/sources/2026-05-04_trendforce_intel-emib-90pct-yield.md
+  - wiki/sources/2026-05-05_trendforce_intel-emib-expansion-us-vietnam.md
+  - wiki/sources/2026-04-22_trendforce_sk-hynix-pt7-cheongju.md
+  - wiki/sources/2026-04-22_trendforce_sk-hynix-indiana-us-plant.md
+  - wiki/sources/2026-04-29_semiwiki_cea-leti-ectc2026-hybrid-bonding.md
+- 更新 wiki 頁面：6 頁
+  - wiki/entities/intel.md（EMIB-T 90% 良率、Google/Meta 確認採用時程、EMIB-T 2028 12× reticle 路線圖、越南廠升級至 18A + 台灣設備商名單）
+  - wiki/entities/sk-hynix.md（P&T7 清州廠 KRW 19 兆細節、美國印第安納廠動工、Q1 2026 財報創紀錄 70-80% DRAM 利潤率）
+  - wiki/technologies/emib.md（關鍵規格更新：90% 良率、2028 12× reticle/120×180mm 目標；客戶清單更新：Google TPU v8e 確認、Meta CPU 確認；全球產能布局；台灣設備供應鏈）
+  - wiki/technologies/hybrid-bonding.md（CEA-Leti ECTC 2026：D2W 1µm 首次示範；100°C 超低溫退火首次成功；退火溫度梯度表更新）
+  - wiki/concepts/geopolitics-advanced-packaging.md（SK Hynix 美國印第安納廠案例補充）
+  - wiki/index.md（頁面數 110→115；來源數 77→82）
+- 主要新知識：
+  1. **Intel EMIB-T 良率 90% + Google/Meta 確認採用**（TrendForce 2026-05-04）：Google TPU v8e（2H27）與 Meta 自研 CPU（2H28）成為首批具名確認採用 EMIB 的外部大客戶，代表 Intel 封裝代工業務從「評估中」進入「合約敲定」階段。EMIB-T 2026 年進入量產 fab 部署（不再只是技術示範）。2028 年路線圖顯示 12× reticle（120×180mm）、24+ HBM dies，正面挑戰 TSMC CoWoS 14× reticle 計畫。
+  2. **SK Hynix 雙廠同日動工（清州 P&T7 + 印第安納美國廠）**（TrendForce 2026-04-22）：P&T7（KRW 19 兆，150K sqm，WLP 2028 年）成為全球最大專屬 AI 記憶體封裝廠之一；印第安納廠（$3.87B，HBM4E/HBM5，2H28）是韓國記憶體廠商首次在美國設立先進封裝廠，呼應 CHIPS Act 本土化布局——兩者合計顯示 SK Hynix 正以前所未有的速度擴張封裝自給能力。
+  3. **CEA-Leti 突破混合接合兩項世界紀錄**（SemiWiki/CEA-Leti 2026-04-29，ECTC 2026）：D2W 混合接合 1µm 間距首次實驗室示範（遠超 SK Hynix HBM 混合接合 ~2-5µm 目標）；直接混合接合退火溫度首次降至 100°C（業界最低，打破原 200°C 低溫門檻）——後者意味著聚合物、III-V 族材料等熱敏感器件未來可與標準 CMOS 共封裝，大幅擴展混合接合的材料相容邊界。

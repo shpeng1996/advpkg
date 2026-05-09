@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-05-09
-**頁面總數 Total Pages**：110
-**原始來源數 Sources**：77
+**更新時間 Updated**：2026-05-10
+**頁面總數 Total Pages**：115
+**原始來源數 Sources**：82
 
 ---
 
@@ -58,6 +58,11 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-05-05_trendforce_intel-emib-expansion-us-vietnam]] — Intel EMIB 全球擴產：俄勒岡+越南；台灣設備訂單 E&R/C Sun/AblePrint 2H26 交貨（2026-05-05）⭐新增
+- [[sources/2026-05-04_trendforce_intel-emib-90pct-yield]] — Intel EMIB 90% 良率里程碑；Google TPU v8e 2H27 + Meta CPU 2H28 確認採用；EMIB-T 12× reticle 2028（2026-05-04）⭐新增
+- [[sources/2026-04-22_trendforce_sk-hynix-indiana-us-plant]] — SK Hynix 美國印第安納廠動工；$3.87B；HBM4E/HBM5；2H28 投產（2026-04-22）⭐新增
+- [[sources/2026-04-22_trendforce_sk-hynix-pt7-cheongju]] — SK Hynix P&T7 清州廠動工；KRW 19 兆；WLP 2028-02；150K sqm（2026-04-22）⭐新增
+- [[sources/2026-04-29_semiwiki_cea-leti-ectc2026-hybrid-bonding]] — CEA-Leti ECTC 2026：D2W 混合接合 1µm 首次示範；超低溫 100°C 退火突破（2026-04-29）⭐新增
 - [[sources/2026-04-21_3dincites_acm-wlp-plp-process-trends]] — ACM Research：WLP/PLP 製程趨勢；ECP/PECVD/濕製程；前端嚴格度向後端遷移（2026-04-21）⭐新增
 - [[sources/2026-04-13_trendforce_sandisk-hbf-pilot-line]] — TrendForce：SanDisk HBF 試驗線 2H26；SK Hynix+SanDisk 標準化聯盟；Samsung HBF 專利佈局（2026-04-13）⭐新增
 - [[sources/2026-04-10_3dincites_intel-gan-chiplet]] — Intel Foundry：全球最薄 GaN Chiplet 19µm / 300mm / 單片 CMOS 整合（IEDM 2025，2026-04-10）⭐新增

@@ -3,8 +3,8 @@ title: "英特爾 / Intel"
 category: entity
 tags: [IDM, advanced-packaging, EMIB, Foveros, Intel18A, Clearwater-Forest, Foveros-Direct, glass-substrate, 14A, High-NA-EUV]
 created: 2026-04-24
-updated: 2026-05-09
-sources: [2026-04-24_initial-survey, 2026-03-18_trendforce_intel-emib-malaysia, 2026-03-03_trendforce_intel-clearwater-forest, 2026-03-05_trendforce_intel-emib-billions, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-04-20_trendforce_intel-foundry-14a-equipment, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-01_semianalysis_cpus-back-datacenter-2026, 2026-04-10_3dincites_intel-gan-chiplet]
+updated: 2026-05-10
+sources: [2026-04-24_initial-survey, 2026-03-18_trendforce_intel-emib-malaysia, 2026-03-03_trendforce_intel-clearwater-forest, 2026-03-05_trendforce_intel-emib-billions, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-04-20_trendforce_intel-foundry-14a-equipment, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-01_semianalysis_cpus-back-datacenter-2026, 2026-04-10_3dincites_intel-gan-chiplet, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam]
 related:
   - wiki/entities/tsmc.md
   - wiki/entities/samsung.md
@@ -43,6 +43,12 @@ related:
   - **Intel Diamond Rapids 取消 SMT**：P-core 移除 Simultaneous Multi-Threading，嚴重影響資料中心吞吐量；192T Diamond Rapids 預估只比 256T Granite Rapids 快約 40%。
   - **Intel 取消 8-channel Diamond Rapids-SP 平台**，高量市場空窗至少至 2028 年。
   *Source: SemiAnalysis 2026-02-15, 2026-03-01*
+
+- **2026-05-10（最新）⭐**：**Intel EMIB 90% 良率里程碑 + Google/Meta 確認採用**：EMIB（EMIB-T）技術驗證良率達 90%（Wccftech 引述分析師）。Google **TPU v8e（2H27）**與 Meta **自研 CPU（2H28）**均確認採用 Intel EMIB。Intel CFO 表示 Intel Foundry「接近完成」多筆先進封裝大單，每筆潛在年收益「數十億美元」。EMIB-T 2026 年進入量產 fab 部署（已從技術示範轉入生產）。**2028 目標**：12× reticle（120×180mm 封裝），支援 24+ HBM dies + 38+ EMIB-T 橋接器。
+  *Source: TrendForce 2026-05-04*
+
+- **2026-05-10（最新）⭐**：**Intel EMIB 全球產能加速擴張**：美國俄勒岡廠為主力；越南胡志明市 SHTP 廠為第二基地（升級至 18A Panther Lake/Wildcat Lake 產品封裝；累計生產 38 億顆以上）；台灣設備訂單已下達——**E&R Engineering Corp.**（雷射）、**C Sun**（乾製程）、**AblePrint**（固化），交貨 2H26。
+  *Source: TrendForce 2026-05-05*
 
 - **2026-05-09（新增）⭐**：**Intel Foundry Technology Research 展示全球最薄 GaN Chiplet**（IEEE IEDM 2025 → 3D InCites 2026-04-10 撰文）：基底矽厚度僅 **19 µm**，從 300 mm GaN-on-Silicon 晶圓製造；業界首個完全**單片 On-Die CMOS 數位控制電路**整合（消除獨立 companion chiplet）。應用：資料中心 VRM（電壓調節器小型化）、5G/6G 基地台（GaN >200 GHz）。戰略意義：GaN power chiplet 可與邏輯 die 共同整合於 Foveros/EMIB 封裝，強化 Intel 在 5-6 kW AI 伺服器功率管理方面的競爭力。
   *Source: 3D InCites 2026-04-10（引述 IEDM 2025 論文）*
