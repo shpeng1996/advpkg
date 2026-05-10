@@ -3,7 +3,7 @@ title: "CoWoS — Chip-on-Wafer-on-Substrate"
 category: technology
 tags: [2.5D, interposer, TSMC, AI, HPC, HBM, COUPE, CPO, packaging-constraints, NVIDIA]
 created: 2026-04-24
-updated: 2026-05-05
+updated: 2026-05-11
 sources: [2026-04-24_initial-survey, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers]
 related:
   - wiki/entities/tsmc.md
@@ -79,8 +79,20 @@ CoWoS 將多顆晶片（GPU、HBM 等）放置於一個中介層（Interposer）
 - **2026**：TSMC ECTC 2025 展示 CoWoS 上的**直接矽液冷（Direct-to-Silicon Liquid Cooling）**，封裝層級散熱新里程碑
 - **2026-04-28**：**CoWoS ASP 首次量化**——約 $10,000/片，相當於 7nm 製程水準；毛利潛力接近先進製程（EUV 折舊較低）；先進封裝佔 TSMC 總營收 ~10%，預計持續提升。
   *Source: TrendForce 2026-04-28*
+- **2026-05-06（新增）**：**VIS/VSMC 加入矽中介層供應鏈**——TSMC 附屬廠 VIS 新加坡合資廠 VSMC（VIS 60% + NXP 40%）以 **30–40nm 製程**（TSMC 技術授權）生產矽中介層，進入 CoWoS-S 供應鏈。TSMC 已移入 200+ 台設備，VIS 月產能調至 44K wsm（含矽中介層）；量產目標 2027 年。此舉分散 CoWoS 矽中介層生產地緣風險至新加坡。
+  *Source: TrendForce 2026-05-06*
 - **2028**：亞利桑那先進封裝廠 CoWoS 量產；14 reticle CoWoS 量產
 - **2029**：**Arizona 先進封裝廠投產**（服務北美 CSP，TSMC P6 廠區轉用）；超越 14 reticles，A14-to-A14 SoIC 整合；朝 SoW-X（System-on-Wafer-X）演進
+
+### 矽中介層供應鏈 / Silicon Interposer Supply Chain（2026 更新）
+
+| 供應商 | 地點 | 技術節點 | 狀態 |
+|--------|------|---------|------|
+| TSMC 自產（Fab 14等） | 台灣竹科 | 40–90nm | 主力供應；部分成熟製程廠轉型 |
+| VIS / VSMC | 新加坡 | 30–40nm（TSMC 技術授權） | 2026 試產中；**2027 量產**；44K wsm/月 |
+
+*VIS/VSMC 加入使矽中介層生產地緣分散至新加坡，緩和台海風險。*
+*Source: TrendForce 2026-05-06*
 
 ### OSAT 生態系補位 / OSAT Supplement Ecosystem
 | 廠商 | 技術 | 產能目標（2026 年底） |

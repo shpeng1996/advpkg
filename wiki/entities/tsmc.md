@@ -3,7 +3,7 @@ title: "台積電 / TSMC"
 category: entity
 tags: [foundry, advanced-packaging, CoWoS, SoIC, CoPoS, COUPE, CPO, InFO, WMCM, aLSI, MRAM]
 created: 2026-04-24
-updated: 2026-05-08
+updated: 2026-05-11
 sources: [2026-04-24_initial-survey, 2026-04-13_trendforce_copos-pilot, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2025-12-18_trendforce_apple-wmcm-a20, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-01-20_trendforce_tsmc-wmcm-apple, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-23_trendforce_tsmc-roadmap-a12-a13-no-high-na-euv, 2026-05-07_trendforce_tsmc-us-expansion-250b-arizona]
 related:
   - wiki/technologies/cowos.md
@@ -49,6 +49,12 @@ related:
 
 - **2026-05-07（新增）**：**美國投資上看 $250B；亞利桑那首座先進封裝廠申請許可**——TSMC SVP Cliff Hou 在 2026 SelectUSA 峰會表態「準備好把握任何新商機」，業界消息估計總美國投資可能達 **$250B**（現有承諾 $165B）。最新亞利桑那廠況：Fab 1 已量產（4Q24）、Fab 2 完工（H2 2027 3nm）、Fab 3 施工中、Fab 4 申請許可中、**首座先進封裝廠（Arizona Advanced Packaging Facility）申請許可中**。計畫在 Phoenix 複製竹科生態系。2030 年 sub-2nm 台美產能比預計 **7:3**。TSMC 亦宣布取得亞利桑那廠區第二塊大型土地。
   *Source: TrendForce 2026-05-07（引述 Commercial Times, Economic Daily News）*
+
+- **2026-05-08（SelectUSA 峰會更新）**：**亞利桑那先進封裝廠 AP1 確認 2H26 動工、2028 年量產（SoIC + CoW 技術）**——TSMC SVP Dr. Cliff Hou 在 SelectUSA 投資峰會宣布 2026 年維持 **9 期建設專案**（約歷史平均 2 倍速）。**AP1 技術確認：SoIC + Chip-on-Wafer（CoW）**；AP2 視客戶需求而定。Fab 1（N4）良率已達台灣水準，N4 產能 2026 年增加 **1.8×**；Fab 2（3nm）設備安裝 2H26，量產 2H27。供應鏈消息稱 TSMC **已內部確認**在現有 6 廠 + 2 封裝廠路線圖之外再增 **5–6 座額外廠房**。
+  *Source: SemiWiki / DIGITIMES 2026-05-08（引述 SelectUSA 峰會）*
+
+- **2026-05-11（CoWoS 供應鏈新增節點）**：**VIS/VSMC 新加坡廠加入矽中介層生產，進入 CoWoS 供應鏈**——TSMC 附屬廠 VIS 旗下 VSMC（新加坡，VIS 60% + NXP 40%）已調整產品組合加入**矽中介層**生產（30–40nm 技術，TSMC 技術授權）。月產能從 55K 調整至 **44K wsm**（矽中介層面積需求較高），TSMC 支援超過 200 台設備移入。VIS 正評估**第二座 12 吋廠**，量產目標 **2027 年**。此舉將 CoWoS 矽中介層生產基地延伸至新加坡，分散地緣政治風險。
+  *Source: TrendForce 2026-05-06*
 
 - **2026-01-20**：WMCM 產能擴張計畫更新：AP3（Longtan）升級 + AP7 Phase 2（Apple 專屬）雙線並進；**2026 年底 WMCM 月產能目標 60,000 片**；2027 年預計倍增至 >120,000 片。Apple 排他窗口預計 2027–2028 年後開放其他客戶。
   *Source: TrendForce 2026-01-20*

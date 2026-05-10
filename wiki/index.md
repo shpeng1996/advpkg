@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-05-10
-**頁面總數 Total Pages**：115
-**原始來源數 Sources**：82
+**更新時間 Updated**：2026-05-11
+**頁面總數 Total Pages**：118
+**原始來源數 Sources**：85
 
 ---
 
@@ -58,6 +58,9 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-05-06_semiwiki_tsmc-arizona-ap1-packaging]] — TSMC Arizona AP1 先進封裝廠 2H26 動工確認（SoIC + CoW）；9 期建設；5-6 超計畫廠房（2026-05-08）⭐新增
+- [[sources/2026-05-06_trendforce_vis-vsmc-silicon-interposer]] — VIS/VSMC 新加坡廠加入矽中介層生產，進入 CoWoS 供應鏈；2027 量產（2026-05-06）⭐新增
+- [[sources/2026-05-05_trendforce_apple-samsung-intel-foundry]] — Apple 傳評估三星、Intel 18A-P 為 TSMC 以外代工選項；TSMC 3nm 供不應求（2026-05-05）⭐新增
 - [[sources/2026-05-05_trendforce_intel-emib-expansion-us-vietnam]] — Intel EMIB 全球擴產：俄勒岡+越南；台灣設備訂單 E&R/C Sun/AblePrint 2H26 交貨（2026-05-05）⭐新增
 - [[sources/2026-05-04_trendforce_intel-emib-90pct-yield]] — Intel EMIB 90% 良率里程碑；Google TPU v8e 2H27 + Meta CPU 2H28 確認採用；EMIB-T 12× reticle 2028（2026-05-04）⭐新增
 - [[sources/2026-04-22_trendforce_sk-hynix-indiana-us-plant]] — SK Hynix 美國印第安納廠動工；$3.87B；HBM4E/HBM5；2H28 投產（2026-04-22）⭐新增

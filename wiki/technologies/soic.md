@@ -3,7 +3,7 @@ title: "SoIC — System on Integrated Chips"
 category: technology
 tags: [3D, SoIC, hybrid-bonding, TSMC, AI, NVIDIA, Feynman]
 created: 2026-04-24
-updated: 2026-05-08
+updated: 2026-05-11
 sources: [2026-04-24_initial-survey, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-03-18_trendforce_nvidia-rubin-feynman-soic, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-23_trendforce_tsmc-roadmap-a12-a13-no-high-na-euv, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal]
 related:
   - wiki/entities/tsmc.md
@@ -64,7 +64,9 @@ SoIC 常與 CoWoS 組合：邏輯晶片先透過 SoIC 3D 堆疊，再整合於 C
   *Source: TrendForce 2026-04-28*
 - **2028+（Feynman GPU）**：NVIDIA Feynman（**TSMC A16/1.6nm 製程**）**確認採用 3D 堆疊 GPU die**（GTC 2026 確認），是 NVIDIA GPU 首次引入 3D 堆疊；強烈指向 SoIC-X 需求；記憶體採客製化 HBM（可能是 HBM4E 強化版或 HBM5 客製）。Intel EMIB 可能負責 I/O die 封裝 *Source: TrendForce 2026-03-17*
   *Source: TrendForce 2026-03-18*
-- **2028–2030**（亞利桑那廠）：SoIC 線進入美國量產
+- **2026-05-08（確認更新）**：**亞利桑那 AP1 先進封裝廠初步技術定位確認為 SoIC + CoW**——SelectUSA 峰會 TSMC Dr. Cliff Hou 確認，亞利桑那第一座先進封裝廠（AP1）**2H26 動工、2028 年量產**，技術初步定位為 **SoIC + Chip-on-Wafer（CoW）**，在美國本土首次建立 SoIC 生產能力。
+  *Source: SemiWiki / DIGITIMES 2026-05-08*
+- **2028–2030**（亞利桑那廠）：SoIC 線進入美國量產（AP1 技術確認）
 
 ---
 

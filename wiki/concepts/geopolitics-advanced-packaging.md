@@ -3,7 +3,7 @@ title: "先進封裝地緣政治 / Geopolitics of Advanced Packaging"
 category: concept
 tags: [geopolitics, US-China, CHIPS-Act, supply-chain, chiplet, NAPMP, export-control]
 created: 2026-04-26
-updated: 2026-05-10
+updated: 2026-05-11
 sources: [2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-23_trendforce_china-osat-sj-semiconductor-ipo, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-08-05_3dincites_iftle636, 2026-03-23_trendforce_musk-terafab-tsmc-packaging, 2026-04-22_trendforce_sk-hynix-indiana-us-plant]
 related: [wiki/concepts/advanced-packaging-market.md, wiki/entities/amkor.md, wiki/entities/ase-group.md, wiki/technologies/ucie.md]
 ---
@@ -37,6 +37,12 @@ Advanced packaging geopolitics refers to how national governments, corporations,
   *Source: IFTLE 636, Phil Garrou, 3D InCites, 2025-08-05*
 - **TSMC Arizona P6 封裝轉用**（2025-12 揭露）：TSMC 計畫將 Arizona P6 區域重新規劃為先進封裝廠，SoIC 先行。預計 **2028 年破土**，2030+ 年才有規模產出。此舉消除「TSMC Arizona 晶圓需運回台灣封裝」的供應鏈斷點——對 CHIPS Act 受補貼客戶（Apple、NVIDIA、AMD）而言意義重大。
 - **越南封裝崛起**（2026-04）：Samsung $40 億越南封測廠 + 現有 Intel 馬來西亞廠，東南亞成為繼台灣之後的次要封裝重鎮；美國政府樂見「非中國」封裝供應鏈多元化
+- **TSMC 亞利桑那 AP1 確認（2026-05-08）**：SelectUSA 峰會 TSMC 確認亞利桑那首座先進封裝廠（AP1）**2H26 動工、2028 量產**（SoIC + CoW 技術）。供應鏈消息稱 TSMC 已內部確認在現有 6+2 廠房路線圖外再增 **5–6 座廠房**，可能包含更多封裝產能。這是 TSMC 美國封裝本土化計畫首次取得官方層級確認。
+  *Source: SemiWiki / DIGITIMES 2026-05-08*
+- **Apple 供應鏈多元化（2026-05-05）**：Apple 正評估三星 Texas 廠與 Intel 18A-P 為 TSMC 以外的核心晶片生產備選，背景是 TSMC 3nm 嚴重供不應求。蘋果明確策略：至少兩個核心晶片供應商。此舉若成真，將顯著改變全球先進封裝需求分布。
+  *Source: TrendForce 2026-05-05（引述 Bloomberg）*
+- **VIS/VSMC 新加坡矽中介層（2026-05-06）**：TSMC 附屬廠 VIS 在新加坡建立矽中介層產能（30–40nm，TSMC 技術授權），CoWoS 供應鏈首次建立台灣以外的矽中介層生產節點，分散地緣政治風險。
+  *Source: TrendForce 2026-05-06*
 
 ---
 

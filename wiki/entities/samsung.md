@@ -3,7 +3,7 @@ title: "三星 / Samsung"
 category: entity
 tags: [IDM, foundry, memory, advanced-packaging, X-Cube, HBM, ISSCC2026, I-CubeS, LPDDR6]
 created: 2026-04-24
-updated: 2026-05-09
+updated: 2026-05-11
 sources: [2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2025-12-30_trendforce_samsung-hbm-surge, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2025-08-05_3dincites_iftle636, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-13_trendforce_sandisk-hbf-pilot-line]
 related:
   - wiki/entities/tsmc.md
@@ -38,6 +38,9 @@ related:
   - **4F² COP DRAM 論文**：首次將 **hybrid bonding** 應用於 DRAM 架構（Cell-on-Peripheral，cell wafer 混合接合至 peripheral wafer）；VCT（Vertical Channel Transistor）架構；核心電路面積從 17.0% 降至 **2.7%**；16 Gb 展示晶片（10nm DRAM 製程）。量產預計 1d 節點之後（2028–2030 年代早期）。
   - **I-CubeS 封裝**：SemiAnalysis 確認 **Rebellions Rebel100 使用 Samsung I-CubeS**（而非先前 Hot Chips 2025 slide 所示的 CoWoS-S）。I-CubeS 目前確認用戶：eSilicon、Baidu、Nvidia（2023 少量）、Rebellions、Preferred Networks。Samsung 可能提供折扣捆綁前端代工 + I-CubeS 封裝以推動市場接受度。
   *Source: SemiAnalysis 2026-02-15（引述 Samsung ISSCC 2026 論文）*
+
+- **2026-05-11（最新）⭐**：**Apple 洽談三星 Texas 廠生產核心晶片（首次正式評估）**——TrendForce 2026-05-05 報導，Apple 高層已親赴三星德州 Taylor 廠考察，評估三星 Foundry 代工 Apple 核心晶片可能性。目前仍屬初步討論階段，無訂單。三星亦已在 2025 年 8 月與 Apple 签署合作協議，共同開發 Austin 廠新製程，預計三星主要供應 Apple **影像感測器**。Apple 考量：至少維持兩個核心晶片供應商以分散風險並強化議價能力。
+  *Source: TrendForce 2026-05-05（引述 Bloomberg, Business Korea）*
 
 - **2026-05-09（新增）⭐**：**HBF 技術佈局**：三星自 2020 年代初便開始研究 HBF（High Bandwidth Flash — TSV 堆疊 NAND），近期積極申請 HBF 相關專利組合（收購系列專利）。雖尚未正式發布 HBF 產品路線圖（相對 SK Hynix + SanDisk 已啟動標準化聯盟），三星仍在穩步推進 HBF 市場布局，特別是在 AI 推論邊緣運算應用。
   *Source: TrendForce 2026-04-13（引述 Chosun Biz）*

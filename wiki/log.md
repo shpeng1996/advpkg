@@ -580,3 +580,29 @@
   1. **Intel EMIB-T 良率 90% + Google/Meta 確認採用**（TrendForce 2026-05-04）：Google TPU v8e（2H27）與 Meta 自研 CPU（2H28）成為首批具名確認採用 EMIB 的外部大客戶，代表 Intel 封裝代工業務從「評估中」進入「合約敲定」階段。EMIB-T 2026 年進入量產 fab 部署（不再只是技術示範）。2028 年路線圖顯示 12× reticle（120×180mm）、24+ HBM dies，正面挑戰 TSMC CoWoS 14× reticle 計畫。
   2. **SK Hynix 雙廠同日動工（清州 P&T7 + 印第安納美國廠）**（TrendForce 2026-04-22）：P&T7（KRW 19 兆，150K sqm，WLP 2028 年）成為全球最大專屬 AI 記憶體封裝廠之一；印第安納廠（$3.87B，HBM4E/HBM5，2H28）是韓國記憶體廠商首次在美國設立先進封裝廠，呼應 CHIPS Act 本土化布局——兩者合計顯示 SK Hynix 正以前所未有的速度擴張封裝自給能力。
   3. **CEA-Leti 突破混合接合兩項世界紀錄**（SemiWiki/CEA-Leti 2026-04-29，ECTC 2026）：D2W 混合接合 1µm 間距首次實驗室示範（遠超 SK Hynix HBM 混合接合 ~2-5µm 目標）；直接混合接合退火溫度首次降至 100°C（業界最低，打破原 200°C 低溫門檻）——後者意味著聚合物、III-V 族材料等熱敏感器件未來可與標準 CMOS 共封裝，大幅擴展混合接合的材料相容邊界。
+
+## [2026-05-11] collect | 每日自動蒐集 — 先進封裝最新動態（第十九次）
+- 搜尋查詢數：8 組（TSMC CoWoS/SoIC、HBM4/HBM4E、混合接合、Intel EMIB、ECTC 2026、面板級封裝/玻璃基板、Samsung/Broadcom/Apple 3D IC、TrendForce 最新頁面）
+- 成功抓取：3 篇（articles/ 3, papers/ 0, reports/ 0）
+- 失敗/跳過：多篇（semiengineering.com Cloudflare 封鎖；大多數 TrendForce 結果已在 _collected_urls.txt；semiwiki 論壇需登入）
+- 學術代理：UNAVAILABLE ✗（ieeexplore、arxiv 仍受限）
+- 新增 raw 檔案：3 篇
+  - raw/articles/2026-05-05_trendforce_apple-samsung-intel-foundry-supply-diversification.md
+  - raw/articles/2026-05-06_trendforce_vis-vsmc-silicon-interposer-cowos-singapore.md
+  - raw/articles/2026-05-06_semiwiki_tsmc-arizona-expansion-packaging-selectusa.md
+- 新增 wiki 頁面：3 頁
+  - wiki/sources/2026-05-05_trendforce_apple-samsung-intel-foundry.md
+  - wiki/sources/2026-05-06_trendforce_vis-vsmc-silicon-interposer.md
+  - wiki/sources/2026-05-06_semiwiki_tsmc-arizona-ap1-packaging.md
+- 更新 wiki 頁面：7 頁
+  - wiki/entities/tsmc.md（SelectUSA 峰會 AP1 確認；VIS/VSMC 矽中介層新節點）
+  - wiki/entities/intel.md（Apple M 系列 18A-P 正式評估；初步討論無訂單；政治動機）
+  - wiki/entities/samsung.md（Apple 拜訪三星 Texas 廠；Apple-Samsung Austin 合作協議 2025-08 已簽）
+  - wiki/technologies/cowos.md（VIS/VSMC 矽中介層供應鏈節點；矽中介層供應鏈表格新增）
+  - wiki/technologies/soic.md（AP1 Arizona 技術確認：SoIC + CoW；2026-05-08 milestone）
+  - wiki/concepts/geopolitics-advanced-packaging.md（TSMC AP1 確認；Apple 供應鏈多元化；VIS 新加坡地緣分散）
+  - wiki/index.md（頁面數 115→118；來源數 82→85；3 個新 sources 頁面）
+- 主要新知識：
+  1. **TSMC 亞利桑那 AP1 先進封裝廠官方確認（2026-05-08，SelectUSA 峰會）**：TSMC SVP Dr. Cliff Hou 確認 AP1 **2H26 動工、2028 量產**，技術定位 **SoIC + Chip-on-Wafer（CoW）**——這是 TSMC 美國封裝本土化計畫首次獲得官方層級確認，同時披露 TSMC 現以 **9 期/年**建設速度推進（歷史平均 2 倍），且供應鏈消息稱已內部確認在現有路線圖外再增 **5–6 座廠房**。
+  2. **VIS/VSMC 新加坡廠加入矽中介層生產，CoWoS 供應鏈首次建立台灣以外節點（2026-05-06）**：TSMC 附屬廠 VIS 在新加坡合資廠 VSMC（60% VIS + 40% NXP）以 **30–40nm 製程**（TSMC 授權）生產矽中介層，TSMC 已移入 200+ 台設備支援，量產目標 **2027 年**，月產能 44K wsm。這是 CoWoS-S 矽中介層生產首次建立台灣以外基地，兼顧地緣政治分散與成本優化（投資從 $7.8B 降至 $6.7B）。
+  3. **Apple 正式啟動 TSMC 替代代工評估（2026-05-05）**：Bloomberg 報導 Apple 正同時與三星（Texas 廠）和 Intel（18A-P 節點）進行初步代工討論，背景是 TSMC 3nm 嚴重供不應求已影響 iPhone/Mac 銷售（Tim Cook Q1 2026 法說會確認）。此舉若落實，將是先進封裝需求格局的重大轉變——Apple 目前幾乎獨佔 TSMC WMCM 與部分 CoWoS 產能，分散意味 TSMC 在行動裝置封裝的議價優勢被稀釋。
