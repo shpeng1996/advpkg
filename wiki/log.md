@@ -606,3 +606,25 @@
   1. **TSMC 亞利桑那 AP1 先進封裝廠官方確認（2026-05-08，SelectUSA 峰會）**：TSMC SVP Dr. Cliff Hou 確認 AP1 **2H26 動工、2028 量產**，技術定位 **SoIC + Chip-on-Wafer（CoW）**——這是 TSMC 美國封裝本土化計畫首次獲得官方層級確認，同時披露 TSMC 現以 **9 期/年**建設速度推進（歷史平均 2 倍），且供應鏈消息稱已內部確認在現有路線圖外再增 **5–6 座廠房**。
   2. **VIS/VSMC 新加坡廠加入矽中介層生產，CoWoS 供應鏈首次建立台灣以外節點（2026-05-06）**：TSMC 附屬廠 VIS 在新加坡合資廠 VSMC（60% VIS + 40% NXP）以 **30–40nm 製程**（TSMC 授權）生產矽中介層，TSMC 已移入 200+ 台設備支援，量產目標 **2027 年**，月產能 44K wsm。這是 CoWoS-S 矽中介層生產首次建立台灣以外基地，兼顧地緣政治分散與成本優化（投資從 $7.8B 降至 $6.7B）。
   3. **Apple 正式啟動 TSMC 替代代工評估（2026-05-05）**：Bloomberg 報導 Apple 正同時與三星（Texas 廠）和 Intel（18A-P 節點）進行初步代工討論，背景是 TSMC 3nm 嚴重供不應求已影響 iPhone/Mac 銷售（Tim Cook Q1 2026 法說會確認）。此舉若落實，將是先進封裝需求格局的重大轉變——Apple 目前幾乎獨佔 TSMC WMCM 與部分 CoWoS 產能，分散意味 TSMC 在行動裝置封裝的議價優勢被稀釋。
+
+## [2026-05-12] collect | 每日自動蒐集 — 先進封裝最新動態（第二十次）
+- 搜尋查詢數：8 組（TSMC CoWoS/SoIC 最新、HBM4/HBM4E 供應、混合接合突破、Intel EMIB/Foveros、ECTC 2026 會議、UCIe 標準、SK Hynix EMIB 合作、Intel-NVIDIA 代工合作）
+- 成功抓取：2 篇（articles/ 2, papers/ 0, reports/ 0）
+- 失敗/跳過：多篇（semiengineering.com Cloudflare 封鎖；大多數 TrendForce/SemiWiki 結果已在 _collected_urls.txt；ECTC 2026 會議 5/26–29 尚未舉行，無新論文）
+- 學術代理：UNAVAILABLE ✗（ieeexplore、arxiv 仍受限）
+- 新增 raw 檔案：2 篇
+  - raw/articles/2026-05-11_trendforce_sk-hynix-intel-emib-25d-packaging-hbm.md
+  - raw/articles/2026-05-11_trendforce_intel-nvidia-foundry-collaboration-emib-apple.md
+- 新增 wiki 頁面：2 頁
+  - wiki/sources/2026-05-11_trendforce_sk-hynix-intel-emib-hbm.md
+  - wiki/sources/2026-05-11_trendforce_intel-nvidia-foundry-emib-apple.md
+- 更新 wiki 頁面：5 頁
+  - wiki/entities/sk-hynix.md（Intel EMIB R&D 測試；韓國小規模 2.5D R&D 線；CoWoS 多元化布局）
+  - wiki/entities/intel.md（NVIDIA Feynman I/O die 14A/18A+EMIB 評估；Xeon+NVLink 聯合開發；Apple 初步代工協議；Marvell+MediaTek 評估 EMIB）
+  - wiki/entities/nvidia.md（Feynman 封裝多方案並行；Intel 14A/18A+EMIB 新增為備選；Xeon+NVLink 合作；Serpent Lake SoC ~2028-29）
+  - wiki/technologies/emib.md（SK Hynix HBM 測試；Marvell+MediaTek+Apple+NVIDIA Feynman 新增至客戶清單；新 Open Questions）
+  - wiki/technologies/hbm4.md（SK Hynix EMIB 相容 HBM R&D；多封裝生態兼容趨勢）
+  - wiki/index.md（頁面數 118→120；來源數 85→87）
+- 主要新知識：
+  1. **SK Hynix 開始測試 Intel EMIB 2.5D 封裝整合 HBM（2026-05-11）**：SK Hynix 正使用自家 HBM 在 Intel EMIB 基板上進行 R&D，同時審查材料與供應商為未來量產布局。驅動力是 TSMC CoWoS 嚴重供不應求。意義深遠：這是記憶體巨頭首次公開確認 CoWoS 替代封裝方案的 R&D 探索，顯示 AI 晶片封裝生態從「TSMC CoWoS 獨佔」走向「多元封裝平台並存」——HBM 設計未來需同時兼容 CoWoS 和 EMIB。Marvell 和 MediaTek 也新加入 EMIB 評估行列，使 Intel 在 ASIC 市場的封裝版圖持續擴大。
+  2. **Intel-NVIDIA 確認聯合開發 Xeon+NVLink；NVIDIA 評估 Feynman I/O die 採用 Intel 14A/18A+EMIB（2026-05-11）**：Intel CEO 在 CMU 典禮公開承認與 NVIDIA 研發「令人興奮的新產品」，包含 NVLink 整合 Xeon CPU、Serpent Lake SoC（~2028-29）。業界消息稱 NVIDIA 正並行評估 TSMC A16+SoIC 和 Intel 14A/18A+EMIB 兩條 Feynman 封裝路線——後者若成真，將是先進封裝市場格局的歷史性轉折，意味 Intel EMIB 從「ASIC 替代方案」升格為「高端 AI GPU 競爭平台」。Apple 與 Intel 的代工協議亦升級至「初步/正式協議」層級（WSJ 報導），Intel Foundry 的大客戶戰略在 2026 年 5 月取得多條戰線的實質突破。

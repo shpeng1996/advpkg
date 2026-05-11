@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-05-11
-**頁面總數 Total Pages**：118
-**原始來源數 Sources**：85
+**更新時間 Updated**：2026-05-12
+**頁面總數 Total Pages**：120
+**原始來源數 Sources**：87
 
 ---
 
@@ -58,6 +58,8 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-05-11_trendforce_sk-hynix-intel-emib-hbm]] — SK Hynix 測試 Intel EMIB 整合 HBM；CoWoS 替代方案評估；Marvell+MediaTek 新增 EMIB 評估（2026-05-11）⭐新增
+- [[sources/2026-05-11_trendforce_intel-nvidia-foundry-emib-apple]] — Intel CEO 確認 NVIDIA 新產品合作；NVIDIA 評估 Feynman I/O die 採用 14A/18A+EMIB；Apple-Intel 代工初步協議（2026-05-11）⭐新增
 - [[sources/2026-05-06_semiwiki_tsmc-arizona-ap1-packaging]] — TSMC Arizona AP1 先進封裝廠 2H26 動工確認（SoIC + CoW）；9 期建設；5-6 超計畫廠房（2026-05-08）⭐新增
 - [[sources/2026-05-06_trendforce_vis-vsmc-silicon-interposer]] — VIS/VSMC 新加坡廠加入矽中介層生產，進入 CoWoS 供應鏈；2027 量產（2026-05-06）⭐新增
 - [[sources/2026-05-05_trendforce_apple-samsung-intel-foundry]] — Apple 傳評估三星、Intel 18A-P 為 TSMC 以外代工選項；TSMC 3nm 供不應求（2026-05-05）⭐新增

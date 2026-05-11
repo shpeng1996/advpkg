@@ -3,8 +3,8 @@ title: "英特爾 / Intel"
 category: entity
 tags: [IDM, advanced-packaging, EMIB, Foveros, Intel18A, Clearwater-Forest, Foveros-Direct, glass-substrate, 14A, High-NA-EUV]
 created: 2026-04-24
-updated: 2026-05-11
-sources: [2026-04-24_initial-survey, 2026-03-18_trendforce_intel-emib-malaysia, 2026-03-03_trendforce_intel-clearwater-forest, 2026-03-05_trendforce_intel-emib-billions, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-04-20_trendforce_intel-foundry-14a-equipment, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-01_semianalysis_cpus-back-datacenter-2026, 2026-04-10_3dincites_intel-gan-chiplet, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam]
+updated: 2026-05-12
+sources: [2026-04-24_initial-survey, 2026-03-18_trendforce_intel-emib-malaysia, 2026-03-03_trendforce_intel-clearwater-forest, 2026-03-05_trendforce_intel-emib-billions, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-04-20_trendforce_intel-foundry-14a-equipment, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-01_semianalysis_cpus-back-datacenter-2026, 2026-04-10_3dincites_intel-gan-chiplet, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple]
 related:
   - wiki/entities/tsmc.md
   - wiki/entities/samsung.md
@@ -44,7 +44,10 @@ related:
   - **Intel 取消 8-channel Diamond Rapids-SP 平台**，高量市場空窗至少至 2028 年。
   *Source: SemiAnalysis 2026-02-15, 2026-03-01*
 
-- **2026-05-11（最新）⭐**：**Apple 正式評估 Intel 18A-P 作為 M 系列晶片替代代工**——TrendForce 2026-05-05 報導，Apple 正與 Intel Foundry 進行初步代工合作討論，評估 18A-P 節點供 M 系列或 A 系列晶片生產（TSMC 3nm 嚴重產能受限）。截至報導時尚無訂單，Apple 有保留意見。背景：TSMC 3nm 供不應求已影響 Apple iPhone/Mac 銷售，Tim Cook 於 Q1 2026 法說會確認。Cooper Times 補充：Google 亦正探索 Intel EMIB 封裝技術。Apple-Intel 合作若成真，將是 Intel Foundry CEO Lip-Bu Tan 轉型策略的重大里程碑。
+- **2026-05-12（最新）⭐**：**NVIDIA 評估 Intel 14A/18A + EMIB 用於 Feynman I/O die；自定義 Xeon+NVLink 聯合開發中**：Intel CEO Lip-Bu Tan 於 CMU 典禮公開確認兩公司正研發「令人興奮的新產品」。具體內容：(1) **自定義 Xeon CPU + NVLink 整合**，讓 Intel Xeon SoC 可與 NVIDIA Blackwell/Rubin GPU 配對；(2) **Serpent Lake SoC**（~2028-29，NVIDIA 提供 RTX GPU IP）；(3) 業界傳言 **NVIDIA 正評估 Intel 14A/18A 製程節點用於 Feynman I/O die，搭配 Intel EMIB 封裝**——若實現，將是 NVIDIA 旗艦 AI 晶片首度採用 Intel 封裝。同一天，WSJ 報導 **Apple 與 Intel 就代工 Apple 裝置晶片達成初步協議**（密集談判超過一年，已達成「正式協議」細節），提升 Apple-Intel 合作級別從「評估」到「達成協議」。**SK Hynix 也開始測試 Intel EMIB 整合 HBM**（另見 sk-hynix.md 條目），顯示 Intel EMIB 生態系統正從「代工替代方案」演變為整個 AI 封裝供應鏈的標準評估選項。
+  *Source: TrendForce 2026-05-11（引述 Wccftech、WSJ、ZDNet Korea）*
+
+- **2026-05-11**：**Apple 正式評估 Intel 18A-P 作為 M 系列晶片替代代工**——TrendForce 2026-05-05 報導，Apple 正與 Intel Foundry 進行初步代工合作討論，評估 18A-P 節點供 M 系列或 A 系列晶片生產（TSMC 3nm 嚴重產能受限）。截至報導時尚無訂單，Apple 有保留意見。背景：TSMC 3nm 供不應求已影響 Apple iPhone/Mac 銷售，Tim Cook 於 Q1 2026 法說會確認。Cooper Times 補充：Google 亦正探索 Intel EMIB 封裝技術。Apple-Intel 合作若成真，將是 Intel Foundry CEO Lip-Bu Tan 轉型策略的重大里程碑。
   *Source: TrendForce 2026-05-05*
 
 - **2026-05-10（最新）⭐**：**Intel EMIB 90% 良率里程碑 + Google/Meta 確認採用**：EMIB（EMIB-T）技術驗證良率達 90%（Wccftech 引述分析師）。Google **TPU v8e（2H27）**與 Meta **自研 CPU（2H28）**均確認採用 Intel EMIB。Intel CFO 表示 Intel Foundry「接近完成」多筆先進封裝大單，每筆潛在年收益「數十億美元」。EMIB-T 2026 年進入量產 fab 部署（已從技術示範轉入生產）。**2028 目標**：12× reticle（120×180mm 封裝），支援 24+ HBM dies + 38+ EMIB-T 橋接器。
