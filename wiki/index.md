@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-05-12
-**頁面總數 Total Pages**：120
-**原始來源數 Sources**：87
+**更新時間 Updated**：2026-05-13
+**頁面總數 Total Pages**：122
+**原始來源數 Sources**：89
 
 ---
 
@@ -58,6 +58,8 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-05-05_trendforce-insights_glass-substrate-development]] — TrendForce Insights：Intel "No SeWaRe" 里程碑（EMIB + 玻璃核心基板）；CoPoS 玻璃中介層定位；Absolics/DNP/Rapidus/Samsung 路線圖（2026-05-05）⭐新增
+- [[sources/2026-04-30_trendforce-insights_glass-fiber-cloth-shortage]] — TrendForce Insights：T-glass/NER-glass 短缺；Nittobo 90% 市占漲價 +20–30%；NVIDIA Rubin 基板 8,000mm²；緩解不早於 2027-H2（2026-04-30）⭐新增
 - [[sources/2026-05-11_trendforce_sk-hynix-intel-emib-hbm]] — SK Hynix 測試 Intel EMIB 整合 HBM；CoWoS 替代方案評估；Marvell+MediaTek 新增 EMIB 評估（2026-05-11）⭐新增
 - [[sources/2026-05-11_trendforce_intel-nvidia-foundry-emib-apple]] — Intel CEO 確認 NVIDIA 新產品合作；NVIDIA 評估 Feynman I/O die 採用 14A/18A+EMIB；Apple-Intel 代工初步協議（2026-05-11）⭐新增
 - [[sources/2026-05-06_semiwiki_tsmc-arizona-ap1-packaging]] — TSMC Arizona AP1 先進封裝廠 2H26 動工確認（SoIC + CoW）；9 期建設；5-6 超計畫廠房（2026-05-08）⭐新增

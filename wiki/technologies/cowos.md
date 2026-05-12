@@ -3,7 +3,7 @@ title: "CoWoS — Chip-on-Wafer-on-Substrate"
 category: technology
 tags: [2.5D, interposer, TSMC, AI, HPC, HBM, COUPE, CPO, packaging-constraints, NVIDIA]
 created: 2026-04-24
-updated: 2026-05-11
+updated: 2026-05-13
 sources: [2026-04-24_initial-survey, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers]
 related:
   - wiki/entities/tsmc.md
@@ -46,6 +46,7 @@ CoWoS 將多顆晶片（GPU、HBM 等）放置於一個中介層（Interposer）
 | 年度產能預估 | 130 萬片（2026）→ 200 萬片（2027） | 法人機構預估 |
 | **晶圓 ASP** | **~$10,000 / 片（≈ 7nm 製程水準）** | 2026 年現況（Commercial Times） |
 | 中介層尺寸（當前量產）良率 | 5.5 reticles，**>98%** | 2026 年 TSMC Tech Symposium 確認 |
+| 中介層尺寸（2027 目標） | **9.5 reticles** | Google TPU v9x（HumuFish）預計首批採用 |
 | 中介層尺寸（2028 目標） | 14 reticles（~10 compute + 20 HBM） | 2028 |
 | SoW-X（2029） | **64 個 HBM 堆疊**（=4 TB HBM，假設 64 GB/堆疊） | 2029 |
 | 封裝電晶體成長 | 48× (2024→2029) | — |
@@ -98,5 +99,4 @@ CoWoS 將多顆晶片（GPU、HBM 等）放置於一個中介層（Interposer）
 | 廠商 | 技術 | 產能目標（2026 年底） |
 |------|------|---------------------|
 | ASE | CoWoP（面板版）| 20,000–25,000 片/月 |
-| Amkor | FOCoS（扇出基板版）| 2028 年初投產（Arizona） |
-| SPIL（矽品精密）| 2.5D 外溢承接 | 受益於
+| Amkor | FOCoS（扇

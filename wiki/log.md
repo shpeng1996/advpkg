@@ -628,3 +628,25 @@
 - 主要新知識：
   1. **SK Hynix 開始測試 Intel EMIB 2.5D 封裝整合 HBM（2026-05-11）**：SK Hynix 正使用自家 HBM 在 Intel EMIB 基板上進行 R&D，同時審查材料與供應商為未來量產布局。驅動力是 TSMC CoWoS 嚴重供不應求。意義深遠：這是記憶體巨頭首次公開確認 CoWoS 替代封裝方案的 R&D 探索，顯示 AI 晶片封裝生態從「TSMC CoWoS 獨佔」走向「多元封裝平台並存」——HBM 設計未來需同時兼容 CoWoS 和 EMIB。Marvell 和 MediaTek 也新加入 EMIB 評估行列，使 Intel 在 ASIC 市場的封裝版圖持續擴大。
   2. **Intel-NVIDIA 確認聯合開發 Xeon+NVLink；NVIDIA 評估 Feynman I/O die 採用 Intel 14A/18A+EMIB（2026-05-11）**：Intel CEO 在 CMU 典禮公開承認與 NVIDIA 研發「令人興奮的新產品」，包含 NVLink 整合 Xeon CPU、Serpent Lake SoC（~2028-29）。業界消息稱 NVIDIA 正並行評估 TSMC A16+SoIC 和 Intel 14A/18A+EMIB 兩條 Feynman 封裝路線——後者若成真，將是先進封裝市場格局的歷史性轉折，意味 Intel EMIB 從「ASIC 替代方案」升格為「高端 AI GPU 競爭平台」。Apple 與 Intel 的代工協議亦升級至「初步/正式協議」層級（WSJ 報導），Intel Foundry 的大客戶戰略在 2026 年 5 月取得多條戰線的實質突破。
+
+## [2026-05-13] collect | 每日自動蒐集 — 先進封裝最新動態（第二十一次）
+- 搜尋查詢數：7 組（TSMC CoWoS/SoIC 最新、HBM4/HBM4E 供應、Intel EMIB/Foveros、混合接合突破、面板級封裝、UCIe 標準、ECTC 2026 學術動態）
+- 成功抓取：2 篇（articles/ 2, papers/ 0, reports/ 0）
+- 失敗/跳過：多篇（TrendForce 最新為 2026-05-11 已收錄；SemiEngineering/SemiWiki homepage 無內容回應；ECTC 2026 會議 5/26–29 尚未舉行，論文未正式公開；ECTC advance program PDF 空回應）
+- 學術代理：UNAVAILABLE ✗（ieeexplore、arxiv 仍受限）
+- 新增 raw 檔案：2 篇
+  - raw/articles/2026-05-05_trendforce-insights_glass-substrate-development.md（TrendForce Insights Substack，發布 2026-05-05）
+  - raw/articles/2026-04-30_trendforce-insights_glass-fiber-cloth-shortage.md（TrendForce Insights Substack，發布 2026-04-30）
+- 新增 wiki 頁面：2 頁
+  - wiki/sources/2026-05-05_trendforce-insights_glass-substrate-development.md
+  - wiki/sources/2026-04-30_trendforce-insights_glass-fiber-cloth-shortage.md
+- 更新 wiki 頁面：5 頁
+  - wiki/technologies/glass-substrate.md（大幅重寫：玻璃中介層 vs 玻璃核心基板區分；Intel No SeWaRe 詳細規格；Samsung SEMCO + Absolics SK+Applied Materials JV；SeWaRe 解決方案 LPKF/DISCO/Onto；設備材料供應鏈表；發展時程完整補全至 2026-01-22）
+  - wiki/technologies/cowos.md（新增 9.5× reticle 2027 節點；Google TPU v9x HumuFish 首批採用）
+  - wiki/entities/nvidia.md（Rubin Ultra 基板面積 ~8,000mm²、18L；Rubin LPX 32 托盤；T-glass 消耗路線圖；NVL576 reticle size ~7,470mm² 補充）
+  - wiki/concepts/advanced-packaging-market.md（新增「玻璃纖維布：隱性供應瓶頸」專節；Nittobo 市占/漲價/時程；T-glass CTE 防翹曲機制；NVIDIA Rubin 基板增長量化）
+  - wiki/index.md（頁面數 120→122；來源數 87→89；2 個新 sources 頁面）
+- 主要新知識：
+  1. **Intel EMIB + 玻璃核心基板「No SeWaRe」量產里程碑（NEPCON Japan, 2026-01-22）**：Intel 展示 78×77mm（2× reticle）、10-2-10 stack（22 層）、800µm 厚、45µm bump pitch 樣品，並首次報告零微裂紋——SeWaRe（背割れ）是玻璃基板最大量產障礙，此結果大幅降低量產風險，為 Intel EMIB + 玻璃基板的 HVM 路線圖提供實質依據。
+  2. **CoWoS reticle size 路線圖補全（9.5× 2027 節點）**：確認 TSMC CoWoS reticle 路線圖的完整版本：5.5×（量產）→ 9.5×（2027，Google TPU v9x/HumuFish 首批）→ 14×（2028）→ >14×（2029）。NVIDIA Rubin Ultra 為 9× reticle（~7,470mm²），Google TPU v9x 超越 Rubin Ultra 至 9.5×，是目前已知最大封裝尺寸需求。
+  3. **玻璃纖維布（T-glass）成為 AI 基礎設施隱性瓶頸**：Nittobo 壟斷 T-glass（~90%）與 NER-glass（60–70%），新產能最快 2027 年中才上線；Nittobo 在 2025-08 漲價 +20%、2026-04 再漲 +20–30%。NVIDIA Rubin GPU 基板面積 ~8,000mm²（Hopper 2.5 倍），T-glass 消耗量大幅攀升，形成對整個 AI 封裝供應鏈的材料瓶頸，BT/ABF 基板報價在 1–2 季後跟漲。
