@@ -3,8 +3,8 @@ title: "台積電 / TSMC"
 category: entity
 tags: [foundry, advanced-packaging, CoWoS, SoIC, CoPoS, COUPE, CPO, InFO, WMCM, aLSI, MRAM]
 created: 2026-04-24
-updated: 2026-05-11
-sources: [2026-04-24_initial-survey, 2026-04-13_trendforce_copos-pilot, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2025-12-18_trendforce_apple-wmcm-a20, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-01-20_trendforce_tsmc-wmcm-apple, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-23_trendforce_tsmc-roadmap-a12-a13-no-high-na-euv, 2026-05-07_trendforce_tsmc-us-expansion-250b-arizona]
+updated: 2026-05-14
+sources: [2026-04-24_initial-survey, 2026-04-13_trendforce_copos-pilot, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2025-12-18_trendforce_apple-wmcm-a20, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-01-20_trendforce_tsmc-wmcm-apple, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-23_trendforce_tsmc-roadmap-a12-a13-no-high-na-euv, 2026-05-07_trendforce_tsmc-us-expansion-250b-arizona, 2026-05-12_focustaiwan_tsmc-capex-31b-arizona-20b]
 related:
   - wiki/technologies/cowos.md
   - wiki/technologies/soic.md
@@ -52,6 +52,9 @@ related:
 
 - **2026-05-08（SelectUSA 峰會更新）**：**亞利桑那先進封裝廠 AP1 確認 2H26 動工、2028 年量產（SoIC + CoW 技術）**——TSMC SVP Dr. Cliff Hou 在 SelectUSA 投資峰會宣布 2026 年維持 **9 期建設專案**（約歷史平均 2 倍速）。**AP1 技術確認：SoIC + Chip-on-Wafer（CoW）**；AP2 視客戶需求而定。Fab 1（N4）良率已達台灣水準，N4 產能 2026 年增加 **1.8×**；Fab 2（3nm）設備安裝 2H26，量產 2H27。供應鏈消息稱 TSMC **已內部確認**在現有 6 廠 + 2 封裝廠路線圖之外再增 **5–6 座額外廠房**。
   *Source: SemiWiki / DIGITIMES 2026-05-08（引述 SelectUSA 峰會）*
+
+- **2026-05-12（⭐新增）**：**TSMC 董事會批准 US$31.28B 資本預算 + TSMC Arizona 注資最高 $20B**——台積電董事會於 5 月 12 日批准資本支出計畫：（1）US$31.28B 用於先進製程產能安裝、廠房建設及基礎設施；（2）向全資子公司 **TSMC Arizona 注資最高 US$20B**（用於 Fab 21 持續擴建）。2026 年度 CapEx 確定在 US$52–56B **高端**區間。同期，Q1 2026 EPS 達 **NT$22.08**（季度歷史新高），季度現金股利提升至 **NT$7/股**（↑17% vs NT$6）。台積電股價自 4 月初以來漲逾 **28%**，收盤於 NT$2,255。5 月 13 日另傳 TSMC **新增四位高管**（行政改組），背景是美國投資加速與接班規劃推進。
+  *Source: Focus Taiwan / CNA 2026-05-12; Tom's Hardware 2026-05-12; Digitimes 2026-05-13*
 
 - **2026-05-11（CoWoS 供應鏈新增節點）**：**VIS/VSMC 新加坡廠加入矽中介層生產，進入 CoWoS 供應鏈**——TSMC 附屬廠 VIS 旗下 VSMC（新加坡，VIS 60% + NXP 40%）已調整產品組合加入**矽中介層**生產（30–40nm 技術，TSMC 技術授權）。月產能從 55K 調整至 **44K wsm**（矽中介層面積需求較高），TSMC 支援超過 200 台設備移入。VIS 正評估**第二座 12 吋廠**，量產目標 **2027 年**。此舉將 CoWoS 矽中介層生產基地延伸至新加坡，分散地緣政治風險。
   *Source: TrendForce 2026-05-06*
@@ -110,8 +113,11 @@ related:
 |------|------|------|
 | CoWoS 月產能目標 | 115,000–140,000 wsm | 2026 年底（CEO 法說會確認）|
 | CoWoS 2026 年擴建投資 | $2.8B（南科） | 2025–2026 |
-| 年度資本支出 | $52–56B | 2026 |
+| 年度資本支出 | $52–56B（高端確定） | 2026 |
+| 資本預算批准（董事會） | US$31.28B（2026-05-12） | 2026 |
+| TSMC Arizona 注資上限 | US$20B（2026-05-12 批准） | 2026 |
 | 先進封裝佔資本支出比 | 10–20% | 2026 |
+| Q1 2026 EPS | NT$22.08（季度歷史新高） | 2026-Q1 |
 | 先進封裝佔 TSMC 總營收 | ~8%（2025）→ >10%（2026） | — |
 | CoWoS 當前尺寸 | 5.5 reticles（量產中） | 2026 |
 | CoWoS 目標尺寸 | 14 reticles（~10 compute + 20 HBM） | 2028 |
@@ -120,24 +126,4 @@ related:
 | WMCM 產能目標 | 60,000 晶圓/月 | 2026 年底 |
 | AP3 轉型 | InFO → WMCM 設備升級 | 2025–2026 |
 
-台積電在先進封裝領域處於主導地位，特別是 AI 加速器所需的 CoWoS 與 SoIC 製程，競爭對手在 3–5 年內難以追上其技術與產能規模。
-
----
-
-## 與其他實體的關係 / Relationships
-
-- **NVIDIA**：最大 CoWoS 客戶，2026 年佔台積電封裝產能 60–65%
-- **AMD**：第二大 CoWoS 客戶，~11%，押注 SoIC 3D 尋求密度優勢
-- **Intel**：競爭對手（EMIB vs CoWoS-L；Foveros vs SoIC-X）
-- **Samsung Foundry**：競爭對手（AI 晶圓代工）
-- **SK Hynix**：HBM 供應商，透過 CoWoS 整合至 AI 加速器
-
----
-
-## 爭議與未解問題 / Open Questions
-
-- CoPoS 面板級封裝的翹曲控制與大規模良率何時能商業化？
-- 亞利桑那先進封裝廠的地緣政治風險與成本結構？
-- UCIe 生態系成熟後，台積電封裝技術的差異化競爭力如何維持？
-- A12 和 A13 同年（2029）上市策略是否可行？兩者是否真能在同年量產？
-- TSMC 拒採 High-NA EUV 的長期影響——若 Intel/Samsung 以 High-NA EUV 取得製程優勢，TSMC 如何應對？
+台積電在先進封裝領域處於主導地

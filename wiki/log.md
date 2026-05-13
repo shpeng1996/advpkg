@@ -650,3 +650,23 @@
   1. **Intel EMIB + 玻璃核心基板「No SeWaRe」量產里程碑（NEPCON Japan, 2026-01-22）**：Intel 展示 78×77mm（2× reticle）、10-2-10 stack（22 層）、800µm 厚、45µm bump pitch 樣品，並首次報告零微裂紋——SeWaRe（背割れ）是玻璃基板最大量產障礙，此結果大幅降低量產風險，為 Intel EMIB + 玻璃基板的 HVM 路線圖提供實質依據。
   2. **CoWoS reticle size 路線圖補全（9.5× 2027 節點）**：確認 TSMC CoWoS reticle 路線圖的完整版本：5.5×（量產）→ 9.5×（2027，Google TPU v9x/HumuFish 首批）→ 14×（2028）→ >14×（2029）。NVIDIA Rubin Ultra 為 9× reticle（~7,470mm²），Google TPU v9x 超越 Rubin Ultra 至 9.5×，是目前已知最大封裝尺寸需求。
   3. **玻璃纖維布（T-glass）成為 AI 基礎設施隱性瓶頸**：Nittobo 壟斷 T-glass（~90%）與 NER-glass（60–70%），新產能最快 2027 年中才上線；Nittobo 在 2025-08 漲價 +20%、2026-04 再漲 +20–30%。NVIDIA Rubin GPU 基板面積 ~8,000mm²（Hopper 2.5 倍），T-glass 消耗量大幅攀升，形成對整個 AI 封裝供應鏈的材料瓶頸，BT/ABF 基板報價在 1–2 季後跟漲。
+
+## [2026-05-14] collect | 每日自動蒐集 — 先進封裝最新動態（第二十二次）
+- 搜尋查詢數：8 組（TSMC CoWoS/SoIC 最新、HBM4/HBM4E 供應、Intel EMIB/Foveros、混合接合突破、面板級封裝、UCIe 標準、最新 TrendForce/SemiWiki May 12-14、Samsung foundry HBM4 動態）
+- 成功抓取：2 篇（articles/ 2, papers/ 0, reports/ 0）
+- 失敗/跳過：多篇（Digitimes 三篇全為付費牆——Hanwha Semitech FO-PLP/SpaceX、Samsung Foundry HBM4 4nm 回溫、TSMC 高管改組均僅取得 metadata；TrendForce 自 2026-05-11 後無新先進封裝文章；SemiEngineering/SemiWiki 無新增；ECTC 2026 會議 5/26–29 尚未舉行）
+- 學術代理：UNAVAILABLE ✗（ieeexplore、arxiv 仍受限）
+- 新增 raw 檔案：2 篇
+  - raw/articles/2026-05-12_focustaiwan_tsmc-31b-capital-budget-arizona-20b.md（Focus Taiwan/CNA，發布 2026-05-12，全文）
+  - raw/articles/2026-05-13_digitimes_hanwha-foplp-spacex-samsung-foundry.md（Digitimes，發布 2026-05-13，付費牆—metadata only）
+- 新增 wiki 頁面：2 頁
+  - wiki/sources/2026-05-12_focustaiwan_tsmc-capex-31b-arizona-20b.md
+  - wiki/sources/2026-05-13_digitimes_hanwha-foplp-spacex.md
+- 更新 wiki 頁面：4 頁
+  - wiki/entities/tsmc.md（新增 2026-05-12 董事會決議：$31.28B 資本預算 + $20B Arizona 注資；Q1 EPS NT$22.08 歷史新高；股利提升；高管改組；產能表更新）
+  - wiki/technologies/foplp.md（新增 SpaceX 太空晶片為 FO-PLP 應用場景；Hanwha Semitech 列入設備生態系；updated 更新）
+  - wiki/concepts/geopolitics-advanced-packaging.md（新增 $20B TSMC Arizona 注資為美國製造投資里程碑）
+  - wiki/index.md（頁面數 122→124；來源數 89→91；2 個新 sources 頁面）
+- 主要新知識：
+  1. **TSMC 董事會批准 US$31.28B 資本預算 + TSMC Arizona 注資最高 $20B（2026-05-12）**：這是迄今 TSMC 對美國廠最大單筆資金承諾。US$31.28B 資本預算用於先進製程產能安裝與廠房建設；另案批准向全資子公司 TSMC Arizona 注資最高 US$200 億（Fab 21 擴建）。結合 2026 年度 CapEx 確定在 US$52–56B **高端**區間，這意味著 TSMC 先進封裝投資（佔比 10–20%）2026 年規模可達 $5.2–11.2B，遠超過去任何單年封裝資本支出。同期 Q1 2026 EPS 達 NT$22.08（季度歷史新高），股利提升至 NT$7/股（+17%），顯示台積電財務狀況極為健康。5/13 Digitimes 另報導四位新高管加入，接班佈局進入新階段。
+  2. **Hanwha Semitech FO-PLP 設備供 SpaceX 網路晶片（2026-05-13，付費牆）**：韓國設備商 Hanwha Semitech 計畫 2H26 供應 FO-PLP 設備，最終用途為 SpaceX 衛星/網路晶片量產。這是首次有紀錄的衛星通訊晶片 FO-PLP 量產案例，確立太空基礎設施為先進面板級封裝的新需求向量（繼 AI 伺服器、行動裝置之後的第三大場景）。同時，Hanwha Semitech 進入 FO-PLP 設備市場，使韓國本土設備競爭（Hanwha vs Hanmi Semiconductor）加劇。

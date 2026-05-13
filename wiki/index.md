@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-05-13
-**頁面總數 Total Pages**：122
-**原始來源數 Sources**：89
+**更新時間 Updated**：2026-05-14
+**頁面總數 Total Pages**：124
+**原始來源數 Sources**：91
 
 ---
 
@@ -58,6 +58,8 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-05-13_digitimes_hanwha-foplp-spacex]] — Hanwha Semitech FO-PLP 設備供 SpaceX 網路晶片量產（2H26）；太空晶片首次確認為 FOPLP 需求場景（2026-05-13）⭐新增
+- [[sources/2026-05-12_focustaiwan_tsmc-capex-31b-arizona-20b]] — TSMC 董事會批准 US$31.28B 資本預算 + TSMC Arizona 注資最高 $20B；Q1 EPS NT$22.08 季度新高；股利 NT$7（2026-05-12）⭐新增
 - [[sources/2026-05-05_trendforce-insights_glass-substrate-development]] — TrendForce Insights：Intel "No SeWaRe" 里程碑（EMIB + 玻璃核心基板）；CoPoS 玻璃中介層定位；Absolics/DNP/Rapidus/Samsung 路線圖（2026-05-05）⭐新增
 - [[sources/2026-04-30_trendforce-insights_glass-fiber-cloth-shortage]] — TrendForce Insights：T-glass/NER-glass 短缺；Nittobo 90% 市占漲價 +20–30%；NVIDIA Rubin 基板 8,000mm²；緩解不早於 2027-H2（2026-04-30）⭐新增
 - [[sources/2026-05-11_trendforce_sk-hynix-intel-emib-hbm]] — SK Hynix 測試 Intel EMIB 整合 HBM；CoWoS 替代方案評估；Marvell+MediaTek 新增 EMIB 評估（2026-05-11）⭐新增
