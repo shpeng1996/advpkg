@@ -670,3 +670,24 @@
 - 主要新知識：
   1. **TSMC 董事會批准 US$31.28B 資本預算 + TSMC Arizona 注資最高 $20B（2026-05-12）**：這是迄今 TSMC 對美國廠最大單筆資金承諾。US$31.28B 資本預算用於先進製程產能安裝與廠房建設；另案批准向全資子公司 TSMC Arizona 注資最高 US$200 億（Fab 21 擴建）。結合 2026 年度 CapEx 確定在 US$52–56B **高端**區間，這意味著 TSMC 先進封裝投資（佔比 10–20%）2026 年規模可達 $5.2–11.2B，遠超過去任何單年封裝資本支出。同期 Q1 2026 EPS 達 NT$22.08（季度歷史新高），股利提升至 NT$7/股（+17%），顯示台積電財務狀況極為健康。5/13 Digitimes 另報導四位新高管加入，接班佈局進入新階段。
   2. **Hanwha Semitech FO-PLP 設備供 SpaceX 網路晶片（2026-05-13，付費牆）**：韓國設備商 Hanwha Semitech 計畫 2H26 供應 FO-PLP 設備，最終用途為 SpaceX 衛星/網路晶片量產。這是首次有紀錄的衛星通訊晶片 FO-PLP 量產案例，確立太空基礎設施為先進面板級封裝的新需求向量（繼 AI 伺服器、行動裝置之後的第三大場景）。同時，Hanwha Semitech 進入 FO-PLP 設備市場，使韓國本土設備競爭（Hanwha vs Hanmi Semiconductor）加劇。
+
+## [2026-05-15] collect | 每日自動蒐集 — 先進封裝最新動態（第二十三次）
+- 搜尋查詢數：7 組（TSMC CoWoS/SoIC 最新、HBM4/HBM4E 供應、Intel EMIB/Foveros、混合接合研究、面板級封裝、UCIe 標準、ECTC 2026 會議動態）
+- 成功抓取：2 篇（articles/ 2, papers/ 0, reports/ 0）
+- 失敗/跳過：多篇（TrendForce 最新先進封裝文章自 2026-05-11 後均已收錄；Digitimes 兩篇 2026-05-14 TSMC 文章為付費牆；SemiAnalysis HB 文章受 Cloudflare 封鎖；ieeexplore/arxiv 仍無法訪問；SemiWiki/SemiEng 無新增相關文章）
+- 學術代理：UNAVAILABLE ✗（ieeexplore、arxiv 仍受限）
+- 新增 raw 檔案：2 篇
+  - raw/articles/2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b.md（TrendForce，發布 2026-05-05，全文）
+  - raw/articles/2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu.md（Semiconductor Digest，發布 2026-03-20，全文）
+- 新增 wiki 頁面：2 頁
+  - wiki/sources/2026-05-05_trendforce_ase-powertech-kyec-capex.md
+  - wiki/sources/2026-03-20_semiconductor-digest_ectc2026-keynote.md
+- 更新 wiki 頁面：5 頁
+  - wiki/entities/ase-group.md（LEAP $3.5B+ +118% YoY；第二次 CapEx 上調至 $8.5B；CoWoS ~$300M 年度目標；CPO 量產今年確認；Dr. Tien Wu ECTC 2026 主題演講）
+  - wiki/technologies/foplp.md（Powertech FOPLP 良率從 90% → 95%；量產時程提前至 1H27；客戶認證 2H26；規格表更新）
+  - wiki/technologies/hybrid-bonding.md（ECTC 2026 論文預告新增：Sony 2µm Face-to-Back CoW 三層堆疊、NYCU Cu 聚合物 HB、IBM ML 熱阻預測；sources 更新）
+  - wiki/concepts/advanced-packaging-market.md（OSAT 三巨頭合計 NT$370B CapEx 數據；ASE/Powertech/KYEC 各自更新數字補全）
+  - wiki/index.md（頁面數 124→126；來源數 91→93；2 個新 sources 頁面）
+- 主要新知識：
+  1. **台灣三大 OSAT（ASE+Powertech+KYEC）合計 2026 年資本支出達 NT$370B，連續第三年創歷史新高**：ASE CapEx 第二次上調至 $8.5B（+20%+），LEAP 業務目標 $3.5B+（+118% YoY），CoWoS 年度目標 ~$300M——首次有具體 CoWoS 營收量化目標；ASE CEO Tien Wu 親口確認 CPO 量產「今年啟動」。Powertech FOPLP 良率從 90% 進一步提升至 95%，量產計畫提前至 1H27，是面板級封裝成熟化加速的重要指標。
+  2. **ECTC 2026（2026-05-26~29，奧蘭多）：Sony 首次公開 2µm pitch Face-to-Back CoW 三層堆疊混合接合論文**：Sony 的 CMOS Image Sensor 混合接合技術延伸至 HPC/AI 場景，2µm pitch 三層堆疊是接近量產水準的關鍵里程碑（比 CEA-Leti 1µm 實驗室示範更工程化）。大會主題演講由 ASE CEO Tien Wu 擔任，Intel Foundry Services 主導技術議程，量子基礎設施封裝首次設立獨立議程，標誌先進封裝學術生態進入「後 AI GPU」時代的多向擴張。

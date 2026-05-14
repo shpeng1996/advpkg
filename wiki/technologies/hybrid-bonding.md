@@ -3,8 +3,8 @@ title: "混合接合 / Hybrid Bonding"
 category: technology
 tags: [3D, hybrid-bonding, Cu-Cu, SoIC, ECTC, advanced-packaging, DRAM, COP, 4F2]
 created: 2026-04-24
-updated: 2026-05-10
-sources: [2026-04-24_initial-survey, 2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-03-01_3dincites_besi-packaging-power-shift, 2026-01-13_semiengineering_hbm4-microbumps, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-19_semieng_advanced-packaging-limits, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-03-27_3dincites_copper-grain-hybrid-bonding, 2025-01-01_semieng_making-hybrid-bonding-better, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2026-04-29_semiwiki_cea-leti-ectc2026-hybrid-bonding]
+updated: 2026-05-15
+sources: [2026-04-24_initial-survey, 2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-03-01_3dincites_besi-packaging-power-shift, 2026-01-13_semiengineering_hbm4-microbumps, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-19_semieng_advanced-packaging-limits, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-03-27_3dincites_copper-grain-hybrid-bonding, 2025-01-01_semieng_making-hybrid-bonding-better, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2026-04-29_semiwiki_cea-leti-ectc2026-hybrid-bonding, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu]
 related:
   - wiki/technologies/soic.md
   - wiki/technologies/cowos.md
@@ -82,6 +82,12 @@ related:
   *Source: TrendForce 2026-04-29（引述 The Elec）*
 - **2026-04-29（CEA-Leti ECTC 2026 論文預告）⭐**：**D2W 混合接合 1µm 間距首次示範**（史上最細 D2W HB 測試載具）；**超低溫 100°C 退火直接混合接合成功**（業界最低退火溫度，傳統 ~400°C；先前「低溫」基準為 200°C）；奈米晶銅（nanocrystalline Cu）微結構 + 接合前表面處理是關鍵使能技術（STMicro 合作）；量子系統超導 3D 互連封裝首次發表（ECTC 2026，Orlando，2026-05-26/29）。
   *Source: SemiWiki / CEA-Leti press release 2026-04-29*
+- **2026-05-26~29（ECTC 2026，奧蘭多）⭐新增**：大會論文預告——混合接合新進展：
+  - **Sony（IP session 39）**：「Advanced Face-To-Back CoW 2.0-µm pitch Cu–Cu Hybrid Bonding for Three Layer-Stacked 3D Heterogeneous Integration」——Sony 首次公開 Face-to-Back CoW 架構，**2µm pitch** 三層堆疊成果，Sony 影像感測器 HB 技術轉移至 HPC/AI 場景的里程碑。
+  - **NYCU + Tokyo Ohka Kogyo（Paper 32.3）**：「Ultra-Fast Cu Polymer Hybrid Bonding with Electroless Passivation Layer」——以電鏈鰈化層實現超快低成本 HB。
+  - **IBM（IP session 37）**：以 ML 預測 3D 晶片熱阻，加速 Backside Power Delivery 設計。
+  - 大會另設量子 + AI 封裝、光子系統特別議程；Intel Foundry Services 擔任 Technical Program Chair。
+  *Source: Semiconductor Digest 2026-03-20（ECTC 2026 官方公告）*
 - **2028–2029**（預測）：HBM4E 或 HBM5（18–20 層）可能成為 HBM 系列首個採用混合接合的版本
 - **2027**（預測）：Memory-on-Logic 架構商業化，HBM4 直接接合至 AI 運算核心
 
@@ -267,4 +273,4 @@ ECTC 2025 的核心技術主題之一：
 - **ASML 若正式推出混合接合設備，是否會顛覆 Besi 的龍頭地位？**（ASML 精密對準技術優勢 vs. Besi 的後段製程深度）
 - 韓國本土設備商（Hanmi、Hanwha、LG）能否在 HBM6 時代取代 Besi/ASMPT 等歐洲廠商？
 - **⭐ 若 Besi 被 Lam Research 或 Applied Materials 收購（2026-03 傳聞），混合接合設備市場競爭格局將如何重塑？**（Lam 進入封裝領域 vs. AMAT 強化 Kinex 生態系）
-- **JEDEC HBM4E 高度鬆綁至 900µm 後，混合接合採用時間表是否將延後至 HBM5（2029+）？**（目前 SK Hynix 最樂觀估計：2026 H2 開始 HBM 16H 混合接合小批量）
+- **JEDEC HBM4E 高度鬆綁至 900µm 後，混合接合採用時間表是否將延後至 HBM5（2029+）？**（目前 SK Hynix 最樂�
