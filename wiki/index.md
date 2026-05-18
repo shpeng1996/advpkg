@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-05-15
-**頁面總數 Total Pages**：126
-**原始來源數 Sources**：93
+**更新時間 Updated**：2026-05-19
+**頁面總數 Total Pages**：132
+**原始來源數 Sources**：99
 
 ---
 
@@ -17,7 +17,7 @@
 - [[entities/tsmc]] — 台積電；全球最大晶圓代工廠；CoWoS/SoIC 技術領導者；2026 年產能瓶頸核心
 - [[entities/intel]] — 英特爾；IDM；EMIB-T（HBM4）+ Foveros-R/B；馬來西亞廠 2026 年投產；EMIB 2H26 放量
 - [[entities/samsung]] — 三星；IDM + Foundry + Memory；I-Cube/X-Cube；2nm 量產；HBM4 首批出貨 2026-02；**Groq 3 LPU 代工確認（GTC 2026）**⭐更新
-- [[entities/sk-hynix]] — SK Hynix；HBM 市場領導者；M15X 廠提前投產（2026-02）；NVIDIA HBM4 份額 ~70%；**12H HBM 混合接合驗證完成（2026-04-29）；首批 AMAT+Besi HB 設備採購**⭐更新
+- [[entities/sk-hynix]] — SK Hynix；HBM 市場領導者；M15X 廠提前投產（2026-02）；NVIDIA HBM4 份額 ~70%；**12H HBM 混合接合驗證完成（2026-04-29）；HBM4 DRAM 增厚+縮小層間距封裝創新驗證中（2026-03）⭐**更新
 - [[entities/asmpt]] — ASMPT Limited；TCB/混合接合/Photonics-CPO 設備領導廠商；Q1 2026 訂單 27M +71.6% YoY；NEXX 出售給 AMAT⭐新增
 - [[entities/ase-group]] — ASE Group；全球最大 OSAT；CoWoP 面板封裝；K28 廠 2026 年完工（目標 25K 片/月）⭐新增
 - [[entities/amkor]] — Amkor；全球第二大 OSAT；Arizona $70 億廠（2028 投產）；Intel EMIB 外包夥伴⭐新增
@@ -44,7 +44,7 @@
 - [[technologies/emib]] — EMIB（Embedded Multi-Die Interconnect Bridge）；Intel 2.5D 局部矽橋；代工廠中立；120×120mm；Google TPU v9 2027 計畫採用⭐新增
 - [[technologies/foveros]] — Foveros；Intel 3D 堆疊；Foveros Direct 3D（<10µm Cu-Cu，2026 量產）；875 GB/s 3D 頻寬⭐新增
 - [[technologies/foplp]] — FOPLP（扇出面板級封裝）；Powertech 90% 試驗良率；TSMC CoPoS 玻璃面板 310×310mm；量產 2028–29⭐新增
-- [[technologies/glass-substrate]] — 玻璃核心基板（TGV）；Absolics 2026 量產、DNP FY2028、Rapidus 2028；可靠性挑戰待解⭐新增
+- [[technologies/glass-substrate]] — 玻璃核心基板（TGV）；Absolics 佐治亞廠完工（全球首座）+雙軌策略；Lens Technology 中國新玩家進入；SKC ₩1T 投資⭐更新
 
 ---
 
@@ -58,7 +58,13 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-05-15_trendforce_tsmc-vanguard-stake-sale]] — TSMC 出售 VIS 持股 8.1%（~27.1%→19%）；聚焦 CoWoS/SoIC/2nm；VIS 矽中介層合作不變（2026-05-15）⭐新增
+- [[sources/2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos]] — MediaTek 雙封裝策略確認：EMIB（AI ASIC）+ CoWoS-S（AI GPU）；Google TPU 8t/v8e 分層封裝；Douglas Yu 加入；EMIB-M 6×→8–12×（2026-05-12）⭐新增
+- [[sources/2026-05-12_semiwiki_imec-iclink-tsmc-3dfabric]] — imec IC-Link 加入 TSMC 3DFabric® Alliance；歐洲/北美首要 ASIC 整合夥伴；SoIC/CoWoS/InFO/SoW™（2026-05-12）⭐新增
 - [[sources/2026-05-05_trendforce_ase-powertech-kyec-capex]] — TrendForce：ASE+Powertech+KYEC 三大 OSAT 合計 NT$370B CapEx（第三年歷史新高）；Powertech FOPLP 良率升至 95%；ASE CPO 量產確認（2026-05-05）⭐新增
+- [[sources/2026-05-07_techwireasia_malaysia-advanced-packaging-lam]] — TechWireAsia：馬來西亞先進封裝中端定位；Lam Research 設備商視角；HBM 短缺→傳統記憶體現貨化；面板封裝 R&D 市場就緒（2026-05-07）⭐新增
+- [[sources/2026-03-03_trendforce_sk-hynix-hbm4-packaging-tight-gaps]] — SK Hynix HBM4 封裝創新：DRAM 增厚+縮小層間距+新型 MUF；MR-MUF 框架內中間優化路徑（2026-03-03）⭐新增
+- [[sources/2026-03-03_trendforce_skc-absolics-glass-substrate-1t]] — SKC/Absolics ₩1T 增資；佐治亞廠全球首座專用廠；雙軌策略；Lens Technology 進入 TGV；Google/Microsoft 設計驗證（2026-03-03）⭐新增
 - [[sources/2026-03-20_semiconductor-digest_ectc2026-keynote]] — ECTC 2026 大會預覽：ASE CEO Tien Wu 主題演講；450+ 論文；Sony 2µm CoW 三層堆疊；量子+光子+AI 特別議程（2026-03-20）⭐新增
 - [[sources/2026-05-13_digitimes_hanwha-foplp-spacex]] — Hanwha Semitech FO-PLP 設備供 SpaceX 網路晶片量產（2H26）；太空晶片首次確認為 FOPLP 需求場景（2026-05-13）⭐新增
 - [[sources/2026-05-12_focustaiwan_tsmc-capex-31b-arizona-20b]] — TSMC 董事會批准 US$31.28B 資本預算 + TSMC Arizona 注資最高 $20B；Q1 EPS NT$22.08 季度新高；股利 NT$7（2026-05-12）⭐新增

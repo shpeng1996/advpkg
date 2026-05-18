@@ -3,7 +3,7 @@ title: "台積電 / TSMC"
 category: entity
 tags: [foundry, advanced-packaging, CoWoS, SoIC, CoPoS, COUPE, CPO, InFO, WMCM, aLSI, MRAM]
 created: 2026-04-24
-updated: 2026-05-14
+updated: 2026-05-19
 sources: [2026-04-24_initial-survey, 2026-04-13_trendforce_copos-pilot, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2025-12-18_trendforce_apple-wmcm-a20, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-01-20_trendforce_tsmc-wmcm-apple, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-23_trendforce_tsmc-roadmap-a12-a13-no-high-na-euv, 2026-05-07_trendforce_tsmc-us-expansion-250b-arizona, 2026-05-12_focustaiwan_tsmc-capex-31b-arizona-20b]
 related:
   - wiki/technologies/cowos.md
@@ -58,6 +58,12 @@ related:
 
 - **2026-05-11（CoWoS 供應鏈新增節點）**：**VIS/VSMC 新加坡廠加入矽中介層生產，進入 CoWoS 供應鏈**——TSMC 附屬廠 VIS 旗下 VSMC（新加坡，VIS 60% + NXP 40%）已調整產品組合加入**矽中介層**生產（30–40nm 技術，TSMC 技術授權）。月產能從 55K 調整至 **44K wsm**（矽中介層面積需求較高），TSMC 支援超過 200 台設備移入。VIS 正評估**第二座 12 吋廠**，量產目標 **2027 年**。此舉將 CoWoS 矽中介層生產基地延伸至新加坡，分散地緣政治風險。
   *Source: TrendForce 2026-05-06*
+
+- **2026-05-15（⭐新增）**：**TSMC 出售 VIS（聯華電子）持股 8.1%，聚焦核心先進封裝業務**——TSMC 宣布出售最多 1.52 億股 VIS 普通股（約持股 8.1%），採法人機構大宗交易；交易後持股從 ~27.1% 降至 ~19%。**出售動機**：集中資源於核心業務——2nm/A16、CoWoS/SoIC 先進封裝、美/日/德海外擴廠。**業務合作不受影響**：TSMC 將持續委託 VIS 生產**矽中介層**，並授權 **GaN 製程技術**給 VIS；VIS/VSMC（新加坡）已進入 CoWoS 矽中介層供應鏈（2027 量產目標）。TSMC 自 2024-06 已不再持有 VIS 董事席次；雙方關係從股權逐漸轉為業務合作。強調未來可見期無進一步減持計畫。
+  *Source: TrendForce 2026-05-15（引述 TSMC 官方聲明、Commercial Times）*
+
+- **2026-05-12（⭐新增）**：**imec IC-Link 加入 TSMC 3DFabric® Alliance**——imec 旗下 ASIC 及矽光子服務子公司 IC-Link by imec 正式成為 TSMC OIP 3DFabric® Alliance 成員，涵蓋 SoIC®、CoWoS®、InFO、SoW™ 全家族技術，定位為**歐洲/北美首要 3DFabric ASIC 整合夥伴**（HPC、汽車、行動、電信市場）。IC-Link 已是 TSMC VCA 成員（2009起）、DCA 成員（2007起），此次升格為 3DFabric Alliance 標誌著歐洲研究生態與 TSMC 先進封裝工業化路徑的深度整合。
+  *Source: SemiWiki / imec press release 2026-05-12*
 
 - **2026-01-20**：WMCM 產能擴張計畫更新：AP3（Longtan）升級 + AP7 Phase 2（Apple 專屬）雙線並進；**2026 年底 WMCM 月產能目標 60,000 片**；2027 年預計倍增至 >120,000 片。Apple 排他窗口預計 2027–2028 年後開放其他客戶。
   *Source: TrendForce 2026-01-20*

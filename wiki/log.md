@@ -691,3 +691,52 @@
 - 主要新知識：
   1. **台灣三大 OSAT（ASE+Powertech+KYEC）合計 2026 年資本支出達 NT$370B，連續第三年創歷史新高**：ASE CapEx 第二次上調至 $8.5B（+20%+），LEAP 業務目標 $3.5B+（+118% YoY），CoWoS 年度目標 ~$300M——首次有具體 CoWoS 營收量化目標；ASE CEO Tien Wu 親口確認 CPO 量產「今年啟動」。Powertech FOPLP 良率從 90% 進一步提升至 95%，量產計畫提前至 1H27，是面板級封裝成熟化加速的重要指標。
   2. **ECTC 2026（2026-05-26~29，奧蘭多）：Sony 首次公開 2µm pitch Face-to-Back CoW 三層堆疊混合接合論文**：Sony 的 CMOS Image Sensor 混合接合技術延伸至 HPC/AI 場景，2µm pitch 三層堆疊是接近量產水準的關鍵里程碑（比 CEA-Leti 1µm 實驗室示範更工程化）。大會主題演講由 ASE CEO Tien Wu 擔任，Intel Foundry Services 主導技術議程，量子基礎設施封裝首次設立獨立議程，標誌先進封裝學術生態進入「後 AI GPU」時代的多向擴張。
+
+## [2026-05-18] collect | 每日自動蒐集 — 先進封裝最新動態（第二十四次）
+- 搜尋查詢數：7 組（TSMC CoWoS/SoIC、HBM4/HBM4E 供應、混合接合研究、Intel EMIB/Foveros、面板級封裝、ECTC 2026、UCIe 標準）
+- 成功抓取：3 篇（articles/ 3, papers/ 0, reports/ 0）
+- 失敗/跳過：多篇（TrendForce 最新 advanced-packaging 標籤頁顯示最新為 2026-04-16，疑似 JS 渲染限制；SemiEng 新聞頁返回空白；TechWireAsia MAPC 2035 文章 URL 不在 provenance set；多篇舊文已在收錄名單中）
+- 學術代理：UNAVAILABLE ✗（ieeexplore、arxiv 仍受限）
+- 新增 raw 檔案：3 篇
+  - raw/articles/2026-05-07_techwireasia_malaysia-advanced-packaging-lam-research.md（TechWireAsia，發布 2026-05-07，全文）
+  - raw/articles/2026-03-03_trendforce_sk-hynix-hbm4-packaging-tight-dram-gaps.md（TrendForce，發布 2026-03-03，全文）
+  - raw/articles/2026-03-03_trendforce_skc-absolics-glass-substrate-1t-investment.md（TrendForce，發布 2026-03-03，全文）
+- 新增 wiki 頁面：3 頁
+  - wiki/sources/2026-05-07_techwireasia_malaysia-advanced-packaging-lam.md
+  - wiki/sources/2026-03-03_trendforce_sk-hynix-hbm4-packaging-tight-gaps.md
+  - wiki/sources/2026-03-03_trendforce_skc-absolics-glass-substrate-1t.md
+- 更新 wiki 頁面：6 頁
+  - wiki/entities/sk-hynix.md（HBM4 DRAM 增厚+縮小層間距+新型 MUF 封裝創新，2026-03-03 驗證中）
+  - wiki/technologies/hbm4.md（新增 SK Hynix MR-MUF 框架內 DRAM 增厚/間距優化技術詳述）
+  - wiki/technologies/glass-substrate.md（Absolics 佐治亞廠全球首座完工、雙軌策略、Lens Technology 中國玩家進入、Google/Microsoft 設計驗證）
+  - wiki/technologies/foplp.md（Lam Research SEMICON SEA 2026 視角：面板產品 R&D 就緒；510–600mm 探索中；馬來西亞東南亞機遇）
+  - wiki/concepts/geopolitics-advanced-packaging.md（馬來西亞中端封裝定位 Lam 視角；Absolics 美國玻璃基板本土化；Lens Technology 中國 TGV 進入）
+  - wiki/index.md（頁面數 126→129；來源數 93→96；3 個新 sources 頁面）
+- 主要新知識：
+  1. **SK Hynix HBM4 中間封裝優化路徑（2026-03-03）**：在 MR-MUF 框架內，SK Hynix 正驗證「選擇性增厚上層 DRAM + 縮小層間距」的雙向優化，並配套開發新型 MUF 注入技術。HBM4 雙倍 I/O（2,048）帶來的電壓損耗與訊號干擾是根本驅動，此技術是混合接合商業化（HBM5+）前的中間過渡，不需大幅更換設備——是重要的封裝製程演進細節，補完了既有「SK Hynix 維持 MR-MUF」的簡化描述。
+  2. **Absolics 佐治亞廠是全球首座玻璃核心基板專用製造廠（2026-03-03）**：SKC 投入 >₩600B、採雙軌策略（Embedded AI HC / Non-Embedded 快速商化）。同期 Lens Technology（Apple 中國供應商）宣布進入 TGV 市場，Google/Microsoft 已將玻璃基板納入硬體設計初期——這是超大規模業者需求驗證的里程碑，表明玻璃基板並非純粹技術研究而是有商業訂單視野。
+  3. **馬來西亞先進封裝的設備商視角（2026-05-07）**：Lam Research 在 SEMICON SEA 2026 直言馬來西亞的「Middle-End」機遇，並坦承 Lam 尚未進入馬來西亞半導體策略討論——這揭示策略與產業夥伴的對齊缺口。HBM 資源集中造成傳統記憶體從分配制轉為現貨市場，是供應鏈結構的重要副作用。
+
+## [2026-05-19] collect | 每日自動蒐集 — 先進封裝最新動態（第二十五次）
+- 搜尋查詢數：7 組（TSMC CoWoS/SoIC 最新、HBM4/HBM4E 供應、Intel EMIB/Foveros、混合接合 ECTC 2026、面板級封裝、UCIe 標準更新、產業最新動態）
+- 成功抓取：3 篇（articles/ 3, papers/ 0, reports/ 0）
+- 失敗/跳過：多篇（SemiWiki 需登入；TrendForce 標籤頁 advanced-packaging 最新仍為 2026-04-16（JS 渲染限制）；ieeexplore/arxiv 仍受限；多篇 2026-05-18 以前文章已在收錄名單中）
+- 學術代理：UNAVAILABLE ✗（ieeexplore、arxiv 仍受限）
+- 新增 raw 檔案：3 篇
+  - raw/articles/2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos-ai-asic.md（TrendForce，發布 2026-05-12，全文）
+  - raw/articles/2026-05-15_trendforce_tsmc-vanguard-stake-sale-core-focus.md（TrendForce，發布 2026-05-15，全文）
+  - raw/articles/2026-05-12_semiwiki_imec-iclink-tsmc-3dfabric-alliance.md（SemiWiki/imec，發布 2026-05-12，全文）
+- 新增 wiki 頁面：3 頁
+  - wiki/sources/2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos.md
+  - wiki/sources/2026-05-15_trendforce_tsmc-vanguard-stake-sale.md
+  - wiki/sources/2026-05-12_semiwiki_imec-iclink-tsmc-3dfabric.md
+- 更新 wiki 頁面：5 頁
+  - wiki/technologies/emib.md（MediaTek 確認雙封裝策略；EMIB-M 6×/8–12× 規格新增；Google TPU 8t/v8e 分層封裝確認；Douglas Yu 加入；sources 更新）
+  - wiki/technologies/cowos.md（MediaTek CoWoS-S 用途定位確認；VIS 矽中介層合作不受 Vanguard 持股出售影響；sources + updated 更新）
+  - wiki/entities/tsmc.md（VIS 持股出售 8.1%；imec IC-Link 加入 3DFabric Alliance；GaN 授權給 VIS 首次確認；updated 更新）
+  - wiki/entities/intel.md（MediaTek EMIB 確認採用；Google TPU v8e EMIB 正式確認；updated 更新）
+  - wiki/index.md（頁面數 129→132；來源數 96→99；3 個新 sources 頁面）
+- 主要新知識：
+  1. **MediaTek 成為首家公開宣布雙封裝策略的 fabless 廠商（2026-05-12）**：同時採用 TSMC CoWoS-S（AI GPU 類高頻寬封裝）與 Intel EMIB（AI ASIC 特定客戶）。這是繼 SK Hynix HBM 測試之後，EMIB 在非 Intel 生態最重要的商業確認。**Google TPU 8t（訓練型）→ TSMC N3P + CoWoS-S；TPU v8e（推論型）→ Intel EMIB**，首次揭示 Google 對兩大封裝平台的分層使用策略，具有標誌性意義。EMIB-M 目前 6× reticle、目標 2026–27 年達 8–12×，超越 CoWoS 現況水平，是新的重要規格量化數據。
+  2. **TSMC 出售 VIS 持股 8.1% 確認資本聚焦策略（2026-05-15）**：交易後持股 ~19%，業務合作（矽中介層委外、GaN 授權）不受影響。這是台積電對自身在先進節點（2nm/A16）與先進封裝（CoWoS/SoIC/AP 擴廠）資本高度集中投入的明確財務信號。VIS/VSMC 矽中介層合作持續，CoWoS 供應鏈多元化不中斷。
+  3. **imec IC-Link 加入 TSMC 3DFabric® Alliance（2026-05-12）**：歐洲研究與工業化路徑整合的里程碑。imec 既在 ECTC 2026 發表 D2W 1µm 混合接合突破（研究端），又透過 IC-Link 進入 TSMC 3DFabric 商業化生態（產業端），形成完整「研究→設計→製造」鏈條，尤其對歐洲 HPC/汽車 ASIC 客戶意義重大。

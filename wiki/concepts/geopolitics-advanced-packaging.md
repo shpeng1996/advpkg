@@ -3,8 +3,8 @@ title: "先進封裝地緣政治 / Geopolitics of Advanced Packaging"
 category: concept
 tags: [geopolitics, US-China, CHIPS-Act, supply-chain, chiplet, NAPMP, export-control]
 created: 2026-04-26
-updated: 2026-05-14
-sources: [2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-23_trendforce_china-osat-sj-semiconductor-ipo, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-08-05_3dincites_iftle636, 2026-03-23_trendforce_musk-terafab-tsmc-packaging, 2026-04-22_trendforce_sk-hynix-indiana-us-plant]
+updated: 2026-05-18
+sources: [2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-23_trendforce_china-osat-sj-semiconductor-ipo, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-08-05_3dincites_iftle636, 2026-03-23_trendforce_musk-terafab-tsmc-packaging, 2026-04-22_trendforce_sk-hynix-indiana-us-plant, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2026-03-03_trendforce_skc-absolics-glass-1t]
 related: [wiki/concepts/advanced-packaging-market.md, wiki/entities/amkor.md, wiki/entities/ase-group.md, wiki/technologies/ucie.md]
 ---
 
@@ -128,12 +128,34 @@ Tesla CEO 馬斯克提出 **Terafab 超級晶圓廠**構想，目標整合邏輯
 
 *Source: TrendForce 2026-03-23（引述 Commercial Times、Tom's Hardware、Economic Daily News）*
 
+### 東南亞（馬來西亞）的先進封裝機遇（⭐ 2026-05-07 新增）
+
+SEMICON Southeast Asia 2026（吉隆坡，2026-05-06）上，Lam Research 高管直接點明馬來西亞的定位：
+
+**Lam Research 視角（Andrew Goh, VP & GM SEA；Lee Chee Ping, MD Advanced Packaging）：**
+- **馬來西亞最現實的切入點是先進封裝中端（Middle-End）**，而非前端晶圓製造
+- 馬來西亞先進封裝成熟度約 **10/100**，前端晶圓窗口極窄
+- **「補充性」策略**：馬來西亞 + 新加坡的互補（Malaysia 量產 + Singapore R&D）可助跳躍式提升先進封裝能力
+- **建議路徑**：選定特定技術細分 → 引入具該技術的外資 → 工程師做中學（複製過去 40 年 IC 組裝 FDI 模式）
+- **Lam Research 尚未被納入馬來西亞半導體策略討論**（截至 2026-05），顯示策略與產業夥伴對齊仍不足
+
+**HBM 短缺的東南亞副作用：** 廠商集中資源於 HBM → 傳統 DDR4/DDR5 分配制度崩潰 → 現貨市場化，影響廣泛電子供應鏈。
+
+*Source: TechWireAsia 2026-05-07（Dashveenjit Kaur，SEMICON SEA 2026 現場採訪）*
+
+### 玻璃基板供應鏈在地化（⭐ 2026-03-03 新增）
+
+- **Absolics 美國佐治亞廠**：全球首座玻璃核心基板**專用製造廠**已完工（SKC + Applied Materials JV），代表玻璃基板供應鏈的美國本土化節點正式成立。
+- **中國新玩家**：**Lens Technology**（Apple 供應商）宣布進入 TGV 玻璃基板，中國廠商開始切入玻璃基板製造，有潛在地緣政治意涵（與中國 OSAT 升級同步）。
+- **韓國競爭**：Samsung Electro-Mechanics + LG Innotek 均加入玻璃基板競賽，韓國欲在此材料技術建立自主供應鏈。
+
 ### 封裝成為地緣政治焦點的時程
 
 - **2022**：CHIPS Act 通過，封裝生態系明確列為國家戰略目標
 - **2024**：3D InCites IFTLE 608 明確提出「封裝為晶片戰新戰場」
 - **2025–2026**：NAPMP 資金開始落地；中國 OSAT 能力升級加速
-- **2026-03**：Tesla Terafab 構想出現，超大 AI 客戶自建封裝能力趨勢加速
+- **2026-03**：Tesla Terafab 構想出現；SKC Absolics 佐治亞廠完工（美國玻璃基板本土化節點）；Lens Technology 宣布進入 TGV
+- **2026-05**：Lam Research 在 SEMICON SEA 直言馬來西亞先進封裝中端機遇；馬來西亞半導體策略討論尚未納入主要設備商
 - **2026+**：Chiplet 跨國供應鏈合規問題預計成為業界顯著議題
 
 ---

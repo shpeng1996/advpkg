@@ -3,7 +3,7 @@ title: "英特爾 / Intel"
 category: entity
 tags: [IDM, advanced-packaging, EMIB, Foveros, Intel18A, Clearwater-Forest, Foveros-Direct, glass-substrate, 14A, High-NA-EUV]
 created: 2026-04-24
-updated: 2026-05-12
+updated: 2026-05-19
 sources: [2026-04-24_initial-survey, 2026-03-18_trendforce_intel-emib-malaysia, 2026-03-03_trendforce_intel-clearwater-forest, 2026-03-05_trendforce_intel-emib-billions, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-04-20_trendforce_intel-foundry-14a-equipment, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-01_semianalysis_cpus-back-datacenter-2026, 2026-04-10_3dincites_intel-gan-chiplet, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple]
 related:
   - wiki/entities/tsmc.md
@@ -43,6 +43,9 @@ related:
   - **Intel Diamond Rapids 取消 SMT**：P-core 移除 Simultaneous Multi-Threading，嚴重影響資料中心吞吐量；192T Diamond Rapids 預估只比 256T Granite Rapids 快約 40%。
   - **Intel 取消 8-channel Diamond Rapids-SP 平台**，高量市場空窗至少至 2028 年。
   *Source: SemiAnalysis 2026-02-15, 2026-03-01*
+
+- **2026-05-12（⭐更新）**：**MediaTek 確認雙封裝策略，正式進入 Intel EMIB 生態**——MediaTek 宣布同時採用 TSMC CoWoS/SoIC（AI GPU 類封裝）與 **Intel EMIB（AI ASIC 特定客戶）**，並延攬前 TSMC 先進封裝主管 **Douglas Yu** 擔任兼職顧問。Intel EMIB-M 現況 6× reticle，2026–27 目標 8–12×。**Google TPU 分層封裝首次確認**：TPU 8t（訓練）採 TSMC N3P + CoWoS-S；**TPU v8e（推論）採 Intel EMIB**。分析師預測 MediaTek AI ASIC 2028 年市占 ~26%（~500 萬片/年），EMIB 從「評估中」正式進入「確認採用」狀態。
+  *Source: TrendForce 2026-05-12（引述 Commercial Times、The Journalist）*
 
 - **2026-05-12（最新）⭐**：**NVIDIA 評估 Intel 14A/18A + EMIB 用於 Feynman I/O die；自定義 Xeon+NVLink 聯合開發中**：Intel CEO Lip-Bu Tan 於 CMU 典禮公開確認兩公司正研發「令人興奮的新產品」。具體內容：(1) **自定義 Xeon CPU + NVLink 整合**，讓 Intel Xeon SoC 可與 NVIDIA Blackwell/Rubin GPU 配對；(2) **Serpent Lake SoC**（~2028-29，NVIDIA 提供 RTX GPU IP）；(3) 業界傳言 **NVIDIA 正評估 Intel 14A/18A 製程節點用於 Feynman I/O die，搭配 Intel EMIB 封裝**——若實現，將是 NVIDIA 旗艦 AI 晶片首度採用 Intel 封裝。同一天，WSJ 報導 **Apple 與 Intel 就代工 Apple 裝置晶片達成初步協議**（密集談判超過一年，已達成「正式協議」細節），提升 Apple-Intel 合作級別從「評估」到「達成協議」。**SK Hynix 也開始測試 Intel EMIB 整合 HBM**（另見 sk-hynix.md 條目），顯示 Intel EMIB 生態系統正從「代工替代方案」演變為整個 AI 封裝供應鏈的標準評估選項。
   *Source: TrendForce 2026-05-11（引述 Wccftech、WSJ、ZDNet Korea）*

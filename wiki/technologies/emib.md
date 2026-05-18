@@ -3,8 +3,8 @@ title: "EMIB — Embedded Multi-Die Interconnect Bridge"
 category: technology
 tags: [Intel, 2.5D, silicon-bridge, chiplet, HBM4, Foveros, glass-substrate, EMIB-T, EMIB-M]
 created: 2026-05-03
-updated: 2026-05-12
-sources: [2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-03-05_trendforce_intel-emib-billions, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-03-03_trendforce_intel-clearwater-forest, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple]
+updated: 2026-05-19
+sources: [2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-03-05_trendforce_intel-emib-billions, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-03-03_trendforce_intel-clearwater-forest, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos]
 related:
   - wiki/entities/intel.md
   - wiki/entities/amkor.md
@@ -37,6 +37,8 @@ EMIB 是 Intel 的局部矽橋接技術：將一小片高密度矽橋（bridge d
 |------|------|
 | 封裝最大尺寸（2026） | **120 × 120 mm**（8× reticle；業界標準 100 × 100 mm） |
 | 封裝最大尺寸（2028 目標） | **120 × 180 mm**（12× reticle） |
+| EMIB-M reticle size（現況 2026） | **6×** |
+| EMIB-M reticle size（目標 2026–27） | **8–12×** |
 | 最大支援 HBM stacks（2026） | ≥ 12（EMIB-T） |
 | 最大支援 HBM stacks（2028） | 24+（EMIB-T 路線圖） |
 | EMIB-T 橋接器數量（2028） | 38+（per package） |
@@ -69,6 +71,7 @@ EMIB 是 Intel 的局部矽橋接技術：將一小片高密度矽橋（bridge d
 - **2026-03**：Clearwater Forest 展示 EMIB 3.5D 組合架構（EMIB + Foveros Direct 3D）
 - **2026-05**：EMIB 技術驗證良率達 **~90%**；Google（TPU v8e 2H27）、Meta（自研 CPU 2H28）確認採用；Intel CFO 表示接近完成「數十億美元」封裝大單
 - **2026-05**：EMIB 全球產能加速：俄勒岡（主力）+ 越南 SHTP（18A 產品）+ 台灣設備訂單 2H26 交貨（E&R/C Sun/AblePrint）
+- **2026-05-12**：**MediaTek 確認雙封裝策略（EMIB + CoWoS）**；Google TPU 8t 用 CoWoS-S、TPU v8e 用 EMIB 首次確認；Douglas Yu（前 TSMC 先進封裝主管）加入 MediaTek；EMIB-M 6× 現況、8–12× 目標 2026–27 ⭐新增
 - **2026-H2**：EMIB-T 進入量產 fab 部署；EMIB 預計貢獻**數十億美元**營收（Intel CFO 聲明）
 - **2027–28**：EMIB on Glass HVM 目標；Google TPU v8e 採用 EMIB 量產
 - **2028**：EMIB-T 12× reticle 目標（120×180mm，24+ HBM dies，38+ 橋接器）
@@ -95,7 +98,7 @@ EMIB 是 Intel 的局部矽橋接技術：將一小片高密度矽橋（bridge d
   - Meta **自研 CPU（2H28 確認採用 EMIB）** ⭐更新
   - Apple M 系列（初步協議已達成）⭐更新
   - **Marvell**（評估中）⭐新增
-  - **MediaTek**（評估中）⭐新增
+  - **MediaTek**（**確認採用**：雙封裝策略，EMIB 用於 AI ASIC 特定客戶；CoWoS-S 用於高頻寬 GPU 相關封裝）⭐更新
   - Qualcomm（探索中）
   - Tesla 14A Terafab AI 晶片（已確認）
   - **NVIDIA Feynman I/O die**（評估中；14A/18A + EMIB，同時評估 TSMC A16+SoIC）⭐新增

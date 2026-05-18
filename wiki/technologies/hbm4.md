@@ -3,8 +3,8 @@ title: "HBM4 — High Bandwidth Memory 4"
 category: technology
 tags: [memory, HBM, JEDEC, standards, AI, HPC, HBM4E, cleanroom, capacity, ISSCC2026]
 created: 2026-04-24
-updated: 2026-05-12
-sources: [2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-03-18_trendforce_intel-emib-malaysia, 2026-01-23_trendforce_hbm4e-samsung-skhynix-mid2026, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-01-13_semiengineering_hbm4-microbumps, 2025-12-18_trendforce_micron-capex-hbm4, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h, 2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm]
+updated: 2026-05-18
+sources: [2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-03-18_trendforce_intel-emib-malaysia, 2026-01-23_trendforce_hbm4e-samsung-skhynix-mid2026, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-01-13_semiengineering_hbm4-microbumps, 2025-12-18_trendforce_micron-capex-hbm4, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h, 2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-03-03_trendforce_sk-hynix-hbm4-tight-gaps]
 related:
   - wiki/entities/sk-hynix.md
   - wiki/entities/samsung.md
@@ -57,6 +57,27 @@ SK Hynix 在 CES 2026 展示 16-high HBM4，採用 **MR-MUF 製程將單片 DRAM
 | MR-MUF | 12–16H | **~30µm** | 量產（HBM4/HBM4E） |
 | 無助熔劑接合 | >16H（橋接） | <30µm | 評估中（SK Hynix Q4 2025 評估未通過預期） |
 | 混合接合 | >20H（必然） | <20µm | SK Hynix 2026-04-29 完成 12H 驗證；量產 2026 H2～2027 |
+
+### ⭐ SK Hynix HBM4 封裝創新進化：DRAM 增厚 + 層間距縮小（2026-03-03）
+
+在 MR-MUF 框架內，SK Hynix 正驗證另一個封裝優化路徑，解決 HBM4 雙倍 I/O（2,048 個）帶來的特定挑戰：
+
+**問題根源：**
+- 2,048 I/O 密度 → 更高訊號干擾風險
+- 底部 logic die 向最上層 DRAM 傳遞電壓 → 電壓損耗大
+
+**SK Hynix 雙軌封裝優化方案（2026-03 驗證中）：**
+
+| 優化項目 | 做法 | 目的 |
+|---------|------|------|
+| **選擇性增厚上層 DRAM** | 上層晶片不做最薄研磨 | 避免薄化過度損害穩定性與抗衝擊性 |
+| **縮小 DRAM 層間距** | 減少堆疊各層之間空隙 | 改善電壓傳遞效率 + 加快層間數據傳輸 |
+
+**關鍵挑戰解決方案：**
+層間距縮小後，MUF（Molded Underfill）注入更困難（填充不均或空洞 → 晶片缺陷）。SK Hynix 開發了**新型 MUF 注入技術**，可在狹窄間距中維持穩定良率，且不需大幅更改現有製程流程或設備。
+
+**定位：** 此技術是在混合接合（HBM5+）商業化之前的**中間過渡優化**，在 MR-MUF 生態內進一步壓榨效能極限。
+*Source: TrendForce 2026-03-03*
 
 *Source: TrendForce 2026-01-13（引述 DealSite、EE Times）；TrendForce 2026-04-29*
 

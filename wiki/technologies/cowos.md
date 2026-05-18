@@ -3,8 +3,8 @@ title: "CoWoS — Chip-on-Wafer-on-Substrate"
 category: technology
 tags: [2.5D, interposer, TSMC, AI, HPC, HBM, COUPE, CPO, packaging-constraints, NVIDIA]
 created: 2026-04-24
-updated: 2026-05-13
-sources: [2026-04-24_initial-survey, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers]
+updated: 2026-05-19
+sources: [2026-04-24_initial-survey, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-15_trendforce_tsmc-vanguard-stake-sale]
 related:
   - wiki/entities/tsmc.md
   - wiki/technologies/soic.md
@@ -82,6 +82,10 @@ CoWoS 將多顆晶片（GPU、HBM 等）放置於一個中介層（Interposer）
   *Source: TrendForce 2026-04-28*
 - **2026-05-06（新增）**：**VIS/VSMC 加入矽中介層供應鏈**——TSMC 附屬廠 VIS 新加坡合資廠 VSMC（VIS 60% + NXP 40%）以 **30–40nm 製程**（TSMC 技術授權）生產矽中介層，進入 CoWoS-S 供應鏈。TSMC 已移入 200+ 台設備，VIS 月產能調至 44K wsm（含矽中介層）；量產目標 2027 年。此舉分散 CoWoS 矽中介層生產地緣風險至新加坡。
   *Source: TrendForce 2026-05-06*
+- **2026-05-12（⭐新增）**：**MediaTek 確認 CoWoS-S 用於 AI GPU 封裝，EMIB 用於 AI ASIC**——MediaTek 宣布雙封裝策略後，業界進一步確認 CoWoS 的主要定位為高頻寬、低延遲的 GPU/高效能 AI 加速器封裝，而 EMIB 適合 ASIC（吞吐量導向）。Google TPU 8t（訓練型）確認採用 **TSMC N3P + CoWoS-S**。
+  *Source: TrendForce 2026-05-12*
+- **2026-05-15（⭐新增）**：**TSMC 出售 VIS 持股 8.1%，但 VIS 矽中介層供應合作不受影響**——TSMC 將持續委外 VIS 生產矽中介層；TSMC-VIS 雙方業務合作持續，GaN 製程技術亦繼續授權給 VIS。
+  *Source: TrendForce 2026-05-15*
 - **2028**：亞利桑那先進封裝廠 CoWoS 量產；14 reticle CoWoS 量產
 - **2029**：**Arizona 先進封裝廠投產**（服務北美 CSP，TSMC P6 廠區轉用）；超越 14 reticles，A14-to-A14 SoIC 整合；朝 SoW-X（System-on-Wafer-X）演進
 
