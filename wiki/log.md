@@ -740,3 +740,15 @@
   1. **MediaTek 成為首家公開宣布雙封裝策略的 fabless 廠商（2026-05-12）**：同時採用 TSMC CoWoS-S（AI GPU 類高頻寬封裝）與 Intel EMIB（AI ASIC 特定客戶）。這是繼 SK Hynix HBM 測試之後，EMIB 在非 Intel 生態最重要的商業確認。**Google TPU 8t（訓練型）→ TSMC N3P + CoWoS-S；TPU v8e（推論型）→ Intel EMIB**，首次揭示 Google 對兩大封裝平台的分層使用策略，具有標誌性意義。EMIB-M 目前 6× reticle、目標 2026–27 年達 8–12×，超越 CoWoS 現況水平，是新的重要規格量化數據。
   2. **TSMC 出售 VIS 持股 8.1% 確認資本聚焦策略（2026-05-15）**：交易後持股 ~19%，業務合作（矽中介層委外、GaN 授權）不受影響。這是台積電對自身在先進節點（2nm/A16）與先進封裝（CoWoS/SoIC/AP 擴廠）資本高度集中投入的明確財務信號。VIS/VSMC 矽中介層合作持續，CoWoS 供應鏈多元化不中斷。
   3. **imec IC-Link 加入 TSMC 3DFabric® Alliance（2026-05-12）**：歐洲研究與工業化路徑整合的里程碑。imec 既在 ECTC 2026 發表 D2W 1µm 混合接合突破（研究端），又透過 IC-Link 進入 TSMC 3DFabric 商業化生態（產業端），形成完整「研究→設計→製造」鏈條，尤其對歐洲 HPC/汽車 ASIC 客戶意義重大。
+
+## [2026-05-19] lint | Lint 報告
+- 問題數：6
+- 主要發現：
+  1. 結構面健康：0 broken wiki link、0 孤立頁面、0 個未列入 index 的 wiki 頁面；`wiki/sources/` 99 頁與 index 宣告一致。
+  2. `_collected_urls.txt` 有 2 組重複 URL：2026-01-20 TSMC WMCM/Apple 與 2026-04-07 Intel EMIB/Google-Amazon；已造成重複 raw/source 條目。
+  3. 2 個 raw 檔案未列入 registry：`2026-04-24_trendforce_intel-malaysia-emib-update-2026.md`、`2026-04-24_trendforce_tsmc-copos-pilot-line-june-2026.md`。
+  4. `wiki/technologies/hbm4.md` 有混合接合時程不一致：一處寫 2026-Q3 HBM4 hybrid bonding，後文又確認 HBM4 維持 microbump/TCB、hybrid bonding 延至 HBM5。
+  5. 高頻實體缺專屬頁：Apple、Google、MediaTek、VIS/Vanguard、Powertech、Absolics、GlobalFoundries。
+  6. 9 個 source 頁的原始來源日期超過 6 個月，應標註資料新鮮度並安排更新 collect。
+- 已存檔：wiki/analyses/2026-05-19_lint.md
+- 建議新 collect 主題：Google TPU packaging 2026 EMIB CoWoS；Apple A20 WMCM TSMC 2026；Powertech FOPLP 95 yield 2026；VIS silicon interposer TSMC CoWoS 2026
