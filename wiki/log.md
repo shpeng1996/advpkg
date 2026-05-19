@@ -752,3 +752,12 @@
   6. 9 個 source 頁的原始來源日期超過 6 個月，應標註資料新鮮度並安排更新 collect。
 - 已存檔：wiki/analyses/2026-05-19_lint.md
 - 建議新 collect 主題：Google TPU packaging 2026 EMIB CoWoS；Apple A20 WMCM TSMC 2026；Powertech FOPLP 95 yield 2026；VIS silicon interposer TSMC CoWoS 2026
+
+## [2026-05-19] collect | SemiAnalysis 先進封裝來源補收錄
+- 搜尋查詢數：4 組（限定 semianalysis.com / newsletter.semianalysis.com；主題涵蓋 HBM4、CoWoS/HBM、hybrid bonding、fanout/embedded bridge）
+- 成功抓取：5 篇（articles/ 5, papers/ 0, reports/ 0；其中 4 篇為付費文章公開 preview 的 partial extraction）
+- 失敗/跳過：2 篇（已收錄 2：ISSCC 2026、CPUs are Back；付費牆/低相關未收錄）
+- 學術代理：UNAVAILABLE ✗
+- 新增 wiki 頁面：5 頁（sources/2025-08-12_semianalysis_hbm-roadmap, sources/2024-02-09_semianalysis_hybrid-bonding-process-flow, sources/2023-07-26_semianalysis_cowos-hbm-supply-chain, sources/2023-07-05_semianalysis_ai-capacity-cowos-hbm, sources/2022-11-01_semianalysis_packaging-gets-blurry）
+- 更新 wiki 頁面：5 頁（technologies/hbm4.md, technologies/cowos.md, technologies/hybrid-bonding.md, technologies/foplp.md, concepts/advanced-packaging-market.md）
+- 主要新知識：SemiAnalysis 的 HBM roadmap 將 HBM4 競爭焦點從資料率/層數延伸到 custom base die、shoreline area 與 XPU-HBM routing density；CoWoS/HBM 文章補足 TSV/RDL/UBM/underfill/thinning 等製程鏈條；hybrid bonding 文章補強 W2W vs D2W、sub-50nm alignment、ISO 3/2/1 潔淨室門檻，並修正 HBM4 混合接合量產時程敘述。

@@ -3,8 +3,8 @@ title: "先進封裝市場 / Advanced Packaging Market"
 category: concept
 tags: [market, forecast, CAGR, supply-chain, HBM, chiplet, geopolitics, equipment]
 created: 2026-04-24
-updated: 2026-05-13
-sources: [2026-04-24_initial-survey, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2026-01-23_trendforce_chip-tools-tel-asml, 2026-03-05_trendforce_intel-emib-billions, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2025-12-18_trendforce_micron-capex-hbm4, 2026-03-13_trendforce_besi-takeover-interest-lam-amat]
+updated: 2026-05-19
+sources: [2026-04-24_initial-survey, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2026-01-23_trendforce_chip-tools-tel-asml, 2026-03-05_trendforce_intel-emib-billions, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2025-12-18_trendforce_micron-capex-hbm4, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry]
 related:
   - wiki/entities/tsmc.md
   - wiki/entities/sk-hynix.md
@@ -85,6 +85,11 @@ AI 加速器供應鏈（典型路徑）：
 - CoWoS 產能（台積電主導，NVIDIA 佔 60–65%）
 - HBM4 供應（SK Hynix 2026 全年售罄）
 - 2–3nm 先進製程產能
+
+**SemiAnalysis 歷史基準（2023–2025）**：
+- 2023 第一波 GenAI 需求已把 CoWoS + HBM 定義為主要瓶頸，因二者原本就高度 AI-facing，無法像一般半導體供應鏈一樣用其他終端市場疲弱所釋放的產能吸收需求。
+- 2023 CoWoS-S process-flow 文章把瓶頸拆成 TSV、RDL、die attach、underfill、molding、thinning、substrate attach 與上游設備/材料等多段製程，而非單一「封裝機台」問題。
+- 2025 HBM roadmap 進一步把 HBM4 的競爭焦點推向 custom base die、shoreline area 與 memory-controller/PHY partitioning，顯示記憶體、封裝、accelerator 架構已經不能分開分析。
 
 ---
 

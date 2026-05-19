@@ -4,7 +4,7 @@ category: technology
 tags: [2.5D, interposer, TSMC, AI, HPC, HBM, COUPE, CPO, packaging-constraints, NVIDIA]
 created: 2026-04-24
 updated: 2026-05-19
-sources: [2026-04-24_initial-survey, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-15_trendforce_tsmc-vanguard-stake-sale]
+sources: [2026-04-24_initial-survey, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-15_trendforce_tsmc-vanguard-stake-sale, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry]
 related:
   - wiki/entities/tsmc.md
   - wiki/technologies/soic.md
@@ -34,6 +34,8 @@ CoWoS 將多顆晶片（GPU、HBM 等）放置於一個中介層（Interposer）
 | CoWoS-L | 局部矽橋（Local Silicon Bridge） | 矽橋取代全面積中介層，成本較低，接近 Intel EMIB；矽橋同樣以成熟製程製造 |
 | CoWoS-R | RDL 重佈線層（Redistribution Layer） | 有機材料，成本最低，密度最低 |
 
+**製程語義修正（SemiAnalysis 2023-07）**：CoWoS-S 的 silicon interposer 是無電晶體的 routing layer；以「40–65nm 成熟製程」描述時，應理解為製造線/金屬層能力的近似，而不是 logic transistor node。典型 CoWoS-S 流程包含 TSV 形成、top-side RDL、UBM/copper pillar、logic/HBM die attach、underfill/molding、flip/thin reveal TSV，再以 C4 bump 接上 build-up substrate。
+
 > **成熟製程轉型說明**（2026-01-12 更新）：TSMC 正評估將 **40–90nm 成熟節點產能**（原服務汽車/工業/消費電子）轉為生產 CoWoS 矽中介層與矽橋接。Hsinchu **Fab 14** 為首要調整廠。此舉反映 chiplet 架構成為 AI 主流後，成熟製程的新角色——不再是獨立產品的晶圓生產線，而是先進封裝的製程基礎設施。
 
 ---
@@ -55,6 +57,10 @@ CoWoS 將多顆晶片（GPU、HBM 等）放置於一個中介層（Interposer）
 | 主要應用 | NVIDIA GPU（H/B/R 系列）、AMD Instinct | — |
 
 *Source: TSMC 2026 North America Technology Symposium (2026-04-22); TrendForce 2026-04-28*
+
+### SemiAnalysis 歷史基準 / Historical Baseline
+
+2023 年 SemiAnalysis 將 CoWoS + HBM 定義為生成式 AI 第一波供應瓶頸：HBM 的高 pad count 與短 trace length 要求，使一般 PCB/封裝基板無法承擔 XPU-HBM routing，CoWoS 因而成為 AI accelerator 的主流 2.5D 平台。該文同時指出 CoWoS-S（silicon interposer）、CoWoS-R（organic RDL）與 CoWoS-L（RDL + local silicon bridge）是成本、密度與尺寸限制之間的三條路線。
 
 ---
 
