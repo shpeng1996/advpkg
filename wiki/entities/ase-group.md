@@ -60,4 +60,25 @@ related:
 | 主要競爭對手 | Amkor、JCET、Powertech |
 | 核心差異化 | CoWoP 面板級封裝 + LEAP 先進封裝 + 完整測試生態系 |
 | CoWoP 產能目標（2026-末） | 20,000–25,000 片/月 |
-| LEAP 2026 營收目標 | $3.
+| LEAP 2026 營收目標 | $3.5B+（+118% YoY）⭐更新 |
+| CoWoS 2026 營收目標 | ~$300M ⭐新增 |
+| 2026 CapEx | $8.5B（NT$260B+，第二次上調）⭐更新 |
+
+ASE 是全球最大的 OSAT，在 TSMC CoWoS 產能緊缺背景下，CoWoP 技術使其成為 AI 加速器封裝的重要補充者。
+
+---
+
+## 與其他實體的關係 / Relationships
+
+- **TSMC**：封裝合作夥伴 + 競爭關係（承接 CoWoS 溢出訂單）
+- **NVIDIA / AMD**：潛在直接封裝客戶（透過 CoWoP）
+- **Amkor**：主要 OSAT 競爭對手
+- **Powertech**：台灣 OSAT 同業（FOPLP 競爭）
+
+---
+
+## 爭議與未解問題 / Open Questions
+
+- CoWoP 的技術規格與 TSMC CoWoS 相比，差距有多大？
+- K28 廠能否如期完工並達到量產良率？
+- ASE 是否會進一步開發混合接合（hybrid bonding）能力？

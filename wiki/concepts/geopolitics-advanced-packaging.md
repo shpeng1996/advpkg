@@ -162,4 +162,7 @@ SEMICON Southeast Asia 2026（吉隆坡，2026-05-06）上，Lam Research 高管
 
 ## 參考資料 / References
 
-- [[sources/2024-10-01_3dincites_geopolitics-packaging]] — IFTLE 608：封裝
+- [[sources/2024-10-01_3dincites_geopolitics-packaging]] — IFTLE 608：封裝是美中晶片戰新戰場
+- [[sources/2026-04-01_semiengineering_chiplets-2026]] — Chiplets 2026：地緣政治咽喉點分析
+- [[concepts/advanced-packaging-market]] — 市場規模與競爭格局
+- [[entities/amkor]] — CHIPS Act 封裝旗艦項目

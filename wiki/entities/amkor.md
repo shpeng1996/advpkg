@@ -73,4 +73,15 @@ related:
 
 ## 與其他實體的關係 / Relationships
 
-- **I
+- **Intel**：EMIB 製程授權合作夥伴（正式合作宣布 2025-12）；韓國 K5 + 葡萄牙 + Arizona 三廠導入；美國境內完整先進封裝路徑的核心夥伴
+- **ASE Group**：全球 OSAT 主要競爭對手
+- **TSMC**：間接競爭（承接 TSMC CoWoS 溢出需求）
+- **美國政府**：Arizona 廠為美國半導體製造在地化政策重要受益者
+
+---
+
+## 爭議與未解問題 / Open Questions
+
+- Arizona 廠 Phase 2 的投產時程是否會因政策變化或需求波動而延遲？
+- Amkor 是否有能力自主開發混合接合（hybrid bonding）技術？
+- Intel EMIB 與 Amkor 的合作能否擴展至 Foveros？

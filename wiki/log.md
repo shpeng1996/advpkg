@@ -767,4 +767,18 @@
 - 成功抓取：2 篇（articles/ 2, papers/ 0, reports/ 0）
 - 失敗/跳過：多篇（SemiEngineering 2026 weekly reviews 返回空白（JS 渲染封鎖）；TrendForce tag 頁最新條目仍為 2026-04-16（JS 渲染限制）；ieeexplore/arxiv 仍受限；ECTC 2026 尚未舉辦（2026-05-26 開始）；多數搜尋結果已在收錄名單中）
 - 學術代理：UNAVAILABLE ✗
-- 新增 raw
+- 新增 raw 檔案：2 篇
+  - raw/articles/2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor.md（TrendForce，發布 2026-04-10，全文；Samsung $4B 越南封裝廠 + Amkor Bac Ninh 擴產）
+  - raw/articles/2026-05-08_aseglobal_ase-wus-kaohsiung-focoes-hub.md（ASE Holdings 官方新聞稿，發布 2026-05-08，全文；ASE+WUS 高雄楠梓 FOCoS/FCBGA 基地）
+- 新增 wiki 頁面：2 頁
+  - wiki/sources/2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor.md
+  - wiki/sources/2026-05-08_aseglobal_ase-wus-kaohsiung-focoes-hub.md
+- 更新 wiki 頁面：5 頁
+  - wiki/entities/samsung.md（Samsung 越南 $4B 計畫詳細補充：多期推進、$2B 首期、太原省 MoU；updated 2026-05-20）
+  - wiki/entities/amkor.md（越南 Bac Ninh $1.6B 累計投資、三大政策訴求詳情；updated 2026-05-20）
+  - wiki/entities/ase-group.md（ASE+WUS Kaohsiung FOCoS/FCBGA 基地宣告新增；updated 2026-05-20）
+  - wiki/concepts/geopolitics-advanced-packaging.md（越南封裝崛起補充：東南亞封裝三角（Samsung 太原+Amkor Bac Ninh+Intel Malaysia）詳細數據；updated 2026-05-20）
+  - wiki/index.md（頁面數 138→140；來源數 104→106；2 個新 sources 頁面）
+- 主要新知識：
+  1. **越南成為 OSAT 多元化的核心戰場（2026-04-10 彭博原始報導）**：Samsung $40 億越南太原省封裝廠（多期推進，首期 $20 億），是繼三星 2008 北寧、2013 太原智慧手機廠後的**封裝業垂直延伸**——這並非新佈局，而是對既有基礎設施與供應鏈的深度利用。同期 Amkor 在 Bac Ninh 已累計投入 $16 億並持續擴產，形成越南「Samsung 太原 + Amkor 北寧」雙核封裝集群，加上 Intel 馬來西亞廠 2026 下半年投產，東南亞先進封裝三角格局成型。對 CHIPS Act 語境下「非台灣封裝供應鏈多元化」的地緣政治目標具體驗證意義。
+  2. **ASE+WUS 高雄 FOCoS/FCBGA 基地（官方公告 2026-05-08）**：ASE 與 PCB 廠商 WUS（臻鼎科技）在高雄楠梓共同興建 AI 封裝基地（113,000 sqm，2029-09 完工），主打 FOCoS 與 FCBGA。WUS 是 Apple 主力 FC-BGA 供應商，此合作代表封裝廠（ASE）與基板廠（WUS）首次官方確認的**垂直整合式共建模式**——不同於以往設備/材料外包，是更深層的製造生態整合。FOCoS 商業化部署也補全了 ASE 在 CoWoS 補位策略中的實際技術路徑（AMD Venice/NVIDIA Vera/Broadcom Tomahawk 均已採用 ASE FOCoS）。
