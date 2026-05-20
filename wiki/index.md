@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-05-19
-**頁面總數 Total Pages**：138
-**原始來源數 Sources**：104
+**更新時間 Updated**：2026-05-20
+**頁面總數 Total Pages**：140
+**原始來源數 Sources**：106
 
 ---
 
@@ -58,6 +58,8 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-05-08_aseglobal_ase-wus-kaohsiung-focoes-hub]] — ASE+WUS 高雄楠梓 FOCoS/FCBGA AI 封裝基地；113K sqm；2029-09 完工；>2000 就業（2026-05-08）⭐新增
+- [[sources/2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor]] — Samsung US$4B 越南太原省封裝廠（首期 $2B）；Amkor Bac Ninh 累計 $1.6B 擴產（2026-04-10）⭐新增
 - [[sources/2026-05-15_trendforce_tsmc-vanguard-stake-sale]] — TSMC 出售 VIS 持股 8.1%（~27.1%→19%）；聚焦 CoWoS/SoIC/2nm；VIS 矽中介層合作不變（2026-05-15）⭐新增
 - [[sources/2026-05-13_digitimes_hanwha-foplp-spacex]] — Hanwha Semitech FO-PLP 設備供 SpaceX 網路晶片量產（2H26）；太空晶片首次確認為 FOPLP 需求場景（2026-05-13）⭐新增
 - [[sources/2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos]] — MediaTek 雙封裝策略確認：EMIB（AI ASIC）+ CoWoS-S（AI GPU）；Google TPU 8t/v8e 分層封裝；Douglas Yu 加入；EMIB-M 6×→8–12×（2026-05-12）⭐新增
@@ -147,25 +149,4 @@
 - [[sources/2025-12-04_trendforce_tsmc-ap7-arizona-p6]] — TSMC AP7 啟用；Arizona P6 封裝基地計畫；CapEx CAGR 24%（2025-12-04）⭐新增
 - [[sources/2025-12-01_trendforce_intel-amkor-songdo-emib-outsource]] — Intel 首次 EMIB 外包至 Amkor Songdo K5；EMIB-M 量產/EMIB-T 2026-27；2,700 億韓元投資（2025-12-01）⭐新增
 - [[sources/2025-12-01_semiengineering_thermal-management]] — 先進封裝熱管理：TSMC 直接矽液冷、3D 熱點、TIM 演進（2025-12）⭐新增
-- [[sources/2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding]] — IFTLE 648：Unimicron 玻璃核心基板 + Cu-Cu 混合接合可靠性研究（2025-12-01）⭐新增
-- [[sources/2025-10-07_trendforce_hybrid-bonder-market-2b]] — 混合接合設備市場 $2B（2028）；韓國 Hanmi/Hanwha/LG 競爭；Besi/ASMPT 全球領先（2025-10-07）⭐新增
-- [[sources/2025-09-19_trendforce_stmicro-foplp-france]] — STMicro 法國面板級封裝試驗線 2026 Q3 啟動（2025-09-19）⭐新增
-- [[sources/2025-09-12_trendforce_foplp-competitive-2025]] — FOPLP 競爭格局：Powertech 90% 良率；TSMC 玻璃 vs Samsung；Resonac+AMAT+TEL 生態（2025-09-12）⭐新增
-- [[sources/2025-08-12_semianalysis_hbm-roadmap]] — SemiAnalysis：HBM roadmap；HBM4 custom base die、shoreline area、XPU-HBM routing density 與 CoWoS 依賴（2025-08-12）⭐新增
-- [[sources/2025-08-05_3dincites_iftle636-samsung-lsb-micron-virginia]] — IFTLE 636：三星 LSB 矽橋接 Chiplet；Micron 維吉尼亞 HBM 封裝廠計畫（2025-08-05）⭐新增
-- [[sources/2025-07-01_3dincites_micron-onshore-tsmc-copos]] — IFTLE 634：Micron 本土化投資；TSMC CoPoS 早期報導（2025-07-01）⭐新增
-- [[sources/2025-01-28_3dincites_iftle-618-ucie-standard-vs-ucie3]] — IFTLE 618：UCIe-S vs UCIe-A vs UCIe 3 版本比較；130 家成員生態（2025-01-28）⭐新增
-- [[sources/2025-01-01_semieng_ucie-1-6t-io-chiplets-ai-datacenter]] — SemiEng：UCIe 1.6T I/O chiplet；單體 SoC 光罩極限 5 年；MDI Alliance vs 3DFabric（2025）⭐新增
-- [[sources/2025-01-01_semieng_making-hybrid-bonding-better]] — SemiEng：混合接合改良；奈米孿晶銅 200°C 接合；Lam Research 奈米晶銅；污染控制（2025）⭐新增
-- [[sources/2024-10-01_3dincites_geopolitics-packaging]] — 先進封裝：美中晶片戰的新戰場（3D InCites，2024-10-01）⭐新增
-- [[sources/2024-02-09_semianalysis_hybrid-bonding-process-flow]] — SemiAnalysis：Hybrid bonding process flow；W2W vs D2W、sub-50nm alignment、ISO 3/2/1 潔淨室門檻（2024-02-09）⭐新增
-- [[sources/2023-07-26_semianalysis_cowos-hbm-supply-chain]] — SemiAnalysis：CoWoS-S/HBM supply-chain process flow；TSV、RDL、UBM、underfill、thinning（2023-07-26）⭐新增
-- [[sources/2023-07-05_semianalysis_ai-capacity-cowos-hbm]] — SemiAnalysis：AI capacity constraints；CoWoS + HBM 成為 GenAI 第一波供應瓶頸（2023-07-05）⭐新增
-- [[sources/2022-11-01_semianalysis_packaging-gets-blurry]] — SemiAnalysis：Fanout、ABF、organic interposer、embedded bridge 使 2.1D/2.3D/2.5D 邊界模糊（2022-11-01）⭐新增
-
----
-
-## 分析報告 Analyses
-
-- [[analyses/2026-05-19_lint]] — Wiki 健康檢查報告 2026-05-19：發現重複 URL、HBM4 混合接合敘述不一致、高頻實體缺頁
-- [[analyses/2026-05-03_lint]] — Wiki 健康檢查報告 2026-05-03：發現孤立頁面、索引不一致、知識空缺追蹤
+- [[sources/2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding]] — I

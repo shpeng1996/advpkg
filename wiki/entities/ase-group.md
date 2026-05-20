@@ -3,8 +3,8 @@ title: "ASE Group / 日月光投控"
 category: entity
 tags: [OSAT, advanced-packaging, CoWoP, FOPLP, chiplet, CPO, LEAP]
 created: 2026-04-25
-updated: 2026-05-15
-sources: [2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu]
+updated: 2026-05-20
+sources: [2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2026-05-08_aseglobal_ase-wus-kaohsiung-focoes-hub]
 related:
   - wiki/technologies/cowos.md
   - wiki/technologies/copos.md
@@ -32,6 +32,9 @@ related:
 
 ## 近期動態 / Recent Developments
 
+- **2026-05-08（⭐最新）**：**ASE + WUS（臻鼎科技）高雄 FOCoS/FCBGA 先進封裝基地宣告**——兩公司宣布在**高雄楠梓科技產業園區（Nanzih Technology Industrial Park）**共同興建新一代 AI 封裝基地，目標 **2029 年 9 月完工**。廠房面積逾 113,000 平方公尺，創造逾 2,000 個就業機會，廠區內設 161kV 變電站確保穩定電力。技術聚焦：**FOCoS**（Fan-Out Chip on Substrate）+ **FCBGA**（Flip Chip BGA），服務 AI、HPC、雲端、自駕車應用。WUS 是台灣主要 PCB 廠商（Apple 主力 FC-BGA 供應商），此合作形成**基板-封裝垂直整合**模式。設計符合 EEWH 黃金級綠建築標準。
+  *Source: ASE Holdings Press Release 2026-05-08（官方公告）*
+
 - **2026-05-27（預定）**：ASE CEO **Dr. Tien Wu** 受邀擔任 **ECTC 2026（第 76 屆，奧蘭多）主題演講人**，主題：「Advanced Packaging & the Future of System Optimization」——產業從元件層縮放走向系統層優化；Intel Foundry Services（Bora Baloglu）擔任 Technical Program Chair。
   *Source: Semiconductor Digest 2026-03-20*
 
@@ -57,25 +60,4 @@ related:
 | 主要競爭對手 | Amkor、JCET、Powertech |
 | 核心差異化 | CoWoP 面板級封裝 + LEAP 先進封裝 + 完整測試生態系 |
 | CoWoP 產能目標（2026-末） | 20,000–25,000 片/月 |
-| LEAP 2026 營收目標 | $3.5B+（+118% YoY）⭐更新 |
-| CoWoS 2026 營收目標 | ~$300M ⭐新增 |
-| 2026 CapEx | $8.5B（NT$260B+，第二次上調）⭐更新 |
-
-ASE 是全球最大的 OSAT，在 TSMC CoWoS 產能緊缺背景下，CoWoP 技術使其成為 AI 加速器封裝的重要補充者。
-
----
-
-## 與其他實體的關係 / Relationships
-
-- **TSMC**：封裝合作夥伴 + 競爭關係（承接 CoWoS 溢出訂單）
-- **NVIDIA / AMD**：潛在直接封裝客戶（透過 CoWoP）
-- **Amkor**：主要 OSAT 競爭對手
-- **Powertech**：台灣 OSAT 同業（FOPLP 競爭）
-
----
-
-## 爭議與未解問題 / Open Questions
-
-- CoWoP 的技術規格與 TSMC CoWoS 相比，差距有多大？
-- K28 廠能否如期完工並達到量產良率？
-- ASE 是否會進一步開發混合接合（hybrid bonding）能力？
+| LEAP 2026 營收目標 | $3.

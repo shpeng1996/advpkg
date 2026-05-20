@@ -3,8 +3,8 @@ title: "Amkor Technology"
 category: entity
 tags: [OSAT, advanced-packaging, FOCoS, Arizona, chiplet, Intel-EMIB]
 created: 2026-04-25
-updated: 2026-05-03
-sources: [2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership]
+updated: 2026-05-20
+sources: [2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor]
 related:
   - wiki/technologies/cowos.md
   - wiki/entities/intel.md
@@ -39,7 +39,10 @@ related:
   - 定位：**美國首座大規模高端先進封裝廠**
   *Source: TrendForce 2025-12-08*
 
-- **2026-04-20**：Amkor 宣布新一輪產能擴充動作（具體廠房尚待公告），持續強化全球封裝佈局以承接 AI 需求成長。
+- **2026-04-10（⭐越南詳細）**：**Amkor 越南 Bac Ninh 廠加速擴產**——Amkor 正加速其位於北寧省（Bac Ninh）仁豐 2C 工業區（Yen Phong 2C Industrial Park）的封裝廠擴產，定位為**全球最大先進半導體封裝廠**（Amkor 自稱），自 2021 年至今累計投入 **US$16 億**。General Director Kim Sung-hoon 提出三大政策訴求：(1) 液化石油氣（LPG）供應優先保障機制；(2) 約 3% 投資補貼以增強全球競爭力；(3) 高技術工程師住宿與福利支援留才。
+  *Source: TrendForce 2026-04-10（引述 Global Economic News / Soha）*
+
+- **2026-04-20**：Amkor 宣布新一輪產能擴充動作（與 Arizona $70 億廠並行），持續強化全球封裝佈局。
   *Source: TrendForce 2026-04-20*
 
 - **2025-12-22**：**Intel + Amkor 正式宣布 EMIB HVM 合作**
@@ -70,15 +73,4 @@ related:
 
 ## 與其他實體的關係 / Relationships
 
-- **Intel**：EMIB 製程授權合作夥伴（正式合作宣布 2025-12）；韓國 K5 + 葡萄牙 + Arizona 三廠導入；美國境內完整先進封裝路徑的核心夥伴
-- **ASE Group**：全球 OSAT 主要競爭對手
-- **TSMC**：間接競爭（承接 TSMC CoWoS 溢出需求）
-- **美國政府**：Arizona 廠為美國半導體製造在地化政策重要受益者
-
----
-
-## 爭議與未解問題 / Open Questions
-
-- Arizona 廠 Phase 2 的投產時程是否會因政策變化或需求波動而延遲？
-- Amkor 是否有能力自主開發混合接合（hybrid bonding）技術？
-- Intel EMIB 與 Amkor 的合作能否擴展至 Foveros？
+- **I

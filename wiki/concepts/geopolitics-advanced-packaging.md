@@ -3,8 +3,8 @@ title: "先進封裝地緣政治 / Geopolitics of Advanced Packaging"
 category: concept
 tags: [geopolitics, US-China, CHIPS-Act, supply-chain, chiplet, NAPMP, export-control]
 created: 2026-04-26
-updated: 2026-05-18
-sources: [2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-23_trendforce_china-osat-sj-semiconductor-ipo, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-08-05_3dincites_iftle636, 2026-03-23_trendforce_musk-terafab-tsmc-packaging, 2026-04-22_trendforce_sk-hynix-indiana-us-plant, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2026-03-03_trendforce_skc-absolics-glass-1t]
+updated: 2026-05-20
+sources: [2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-23_trendforce_china-osat-sj-semiconductor-ipo, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-08-05_3dincites_iftle636, 2026-03-23_trendforce_musk-terafab-tsmc-packaging, 2026-04-22_trendforce_sk-hynix-indiana-us-plant, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor]
 related: [wiki/concepts/advanced-packaging-market.md, wiki/entities/amkor.md, wiki/entities/ase-group.md, wiki/technologies/ucie.md]
 ---
 
@@ -36,7 +36,7 @@ Advanced packaging geopolitics refers to how national governments, corporations,
 - **Micron DRAM Onshoring + Virginia HBM 封裝廠**（2025-07 + 2025-08 補充）：Micron 宣布 $2,000 億美國投資（製造 $1,500 億 + R&D $500 億，>20 年），首次將先進 DRAM 製程從台灣遷回美國（Idaho 雙廠、New York 四廠區）。**⭐ 新增**：HBM 封裝能力將設立於 **Virginia 州 Manassas 現有廠房擴建**——這是 wiki 首次記錄美國境內 HBM 封裝的具體地點。首座新美國廠 **H2 2027** 開始運作；配合 CHIPS Act 補貼 ~$64.15 億；Idaho 廠重點加速 HBM 研發。
   *Source: IFTLE 636, Phil Garrou, 3D InCites, 2025-08-05*
 - **TSMC Arizona P6 封裝轉用**（2025-12 揭露）：TSMC 計畫將 Arizona P6 區域重新規劃為先進封裝廠，SoIC 先行。預計 **2028 年破土**，2030+ 年才有規模產出。此舉消除「TSMC Arizona 晶圓需運回台灣封裝」的供應鏈斷點——對 CHIPS Act 受補貼客戶（Apple、NVIDIA、AMD）而言意義重大。
-- **越南封裝崛起**（2026-04）：Samsung $40 億越南封測廠 + 現有 Intel 馬來西亞廠，東南亞成為繼台灣之後的次要封裝重鎮；美國政府樂見「非中國」封裝供應鏈多元化
+- **越南封裝崛起**（2026-04）：**Samsung US$40 億越南太原省封測廠**（首期 US$20 億，多期推進）+ **Amkor Bac Ninh 廠 US$16 億累計投資**（擴產中）+ Intel 馬來西亞廠 2026 下半年投產，東南亞封裝三角成型；美國政府樂見「非中國」封裝供應鏈多元化（越南已是 Samsung 全球最大智慧手機基地，封裝廠是既有供應鏈的縱向延伸）
 - **TSMC 亞利桑那 AP1 確認（2026-05-08）**：SelectUSA 峰會 TSMC 確認亞利桑那首座先進封裝廠（AP1）**2H26 動工、2028 量產**（SoIC + CoW 技術）。供應鏈消息稱 TSMC 已內部確認在現有 6+2 廠房路線圖外再增 **5–6 座廠房**，可能包含更多封裝產能。這是 TSMC 美國封裝本土化計畫首次取得官方層級確認。
   *Source: SemiWiki / DIGITIMES 2026-05-08*
 - **TSMC Arizona $20B 注資批准（⭐2026-05-12）**：TSMC 董事會批准向全資子公司 **TSMC Arizona 注資最高 US$200 億**（用於 Fab 21 持續擴建），同步批准 US$31.28B 整體資本預算。這是美國本土半導體製造投資的歷史性里程碑——TSMC 實際資金到位規模大幅超過 CHIPS Act 直接補貼，顯示 TSMC 對美國製造的真實財務承諾。Digitimes 同日（5/13）報導 TSMC 新增四位高管，加速美國投資布局與接班規劃。
@@ -162,7 +162,4 @@ SEMICON Southeast Asia 2026（吉隆坡，2026-05-06）上，Lam Research 高管
 
 ## 參考資料 / References
 
-- [[sources/2024-10-01_3dincites_geopolitics-packaging]] — IFTLE 608：封裝是美中晶片戰新戰場
-- [[sources/2026-04-01_semiengineering_chiplets-2026]] — Chiplets 2026：地緣政治咽喉點分析
-- [[concepts/advanced-packaging-market]] — 市場規模與競爭格局
-- [[entities/amkor]] — CHIPS Act 封裝旗艦項目
+- [[sources/2024-10-01_3dincites_geopolitics-packaging]] — IFTLE 608：封裝

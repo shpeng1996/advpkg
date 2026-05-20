@@ -761,3 +761,10 @@
 - 新增 wiki 頁面：5 頁（sources/2025-08-12_semianalysis_hbm-roadmap, sources/2024-02-09_semianalysis_hybrid-bonding-process-flow, sources/2023-07-26_semianalysis_cowos-hbm-supply-chain, sources/2023-07-05_semianalysis_ai-capacity-cowos-hbm, sources/2022-11-01_semianalysis_packaging-gets-blurry）
 - 更新 wiki 頁面：5 頁（technologies/hbm4.md, technologies/cowos.md, technologies/hybrid-bonding.md, technologies/foplp.md, concepts/advanced-packaging-market.md）
 - 主要新知識：SemiAnalysis 的 HBM roadmap 將 HBM4 競爭焦點從資料率/層數延伸到 custom base die、shoreline area 與 XPU-HBM routing density；CoWoS/HBM 文章補足 TSV/RDL/UBM/underfill/thinning 等製程鏈條；hybrid bonding 文章補強 W2W vs D2W、sub-50nm alignment、ISO 3/2/1 潔淨室門檻，並修正 HBM4 混合接合量產時程敘述。
+
+## [2026-05-20] collect | 每日自動蒐集 — 先進封裝最新動態（第二十六次）
+- 搜尋查詢數：9 組（TSMC CoWoS/SoIC、HBM4/HBM4E 供應、混合接合 ECTC 2026、Intel EMIB/Foveros、FOPLP/CoPoS、UCIe 標準、NVIDIA AI 晶片最新、Samsung 越南封裝、ASE/WUS 高雄基地）
+- 成功抓取：2 篇（articles/ 2, papers/ 0, reports/ 0）
+- 失敗/跳過：多篇（SemiEngineering 2026 weekly reviews 返回空白（JS 渲染封鎖）；TrendForce tag 頁最新條目仍為 2026-04-16（JS 渲染限制）；ieeexplore/arxiv 仍受限；ECTC 2026 尚未舉辦（2026-05-26 開始）；多數搜尋結果已在收錄名單中）
+- 學術代理：UNAVAILABLE ✗
+- 新增 raw
