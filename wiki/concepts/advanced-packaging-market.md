@@ -3,8 +3,8 @@ title: "先進封裝市場 / Advanced Packaging Market"
 category: concept
 tags: [market, forecast, CAGR, supply-chain, HBM, chiplet, geopolitics, equipment]
 created: 2026-04-24
-updated: 2026-05-19
-sources: [2026-04-24_initial-survey, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2026-01-23_trendforce_chip-tools-tel-asml, 2026-03-05_trendforce_intel-emib-billions, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2025-12-18_trendforce_micron-capex-hbm4, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry]
+updated: 2026-05-21
+sources: [2026-04-24_initial-survey, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2026-01-23_trendforce_chip-tools-tel-asml, 2026-03-05_trendforce_intel-emib-billions, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2025-12-18_trendforce_micron-capex-hbm4, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm]
 related:
   - wiki/entities/tsmc.md
   - wiki/entities/sk-hynix.md
@@ -31,6 +31,12 @@ related:
 | Wafer-Level 子市場 | $11.97B（2026） | — | 2035 / $28.81B | **10.25%** |
 
 > 各機構方法論差異導致數字分散（$40–52B），但成長趨勢一致：CAGR 約 8–10%，2035 年達 $87–117B。
+
+**⭐ 2026-05-14 重要更新（TSMC Taiwan Technology Symposium）**：
+- AI 晶圓需求 2022→2026 成長 **11 倍**（TSMC 公布，Reuters 引述）
+- 全球半導體市場預測大幅上調至 **>US$1.5 兆 by 2030**（前次 TSMC 估計為 $1T——上調幅度達 50%）
+- CoWoS 產能 CAGR **>80%**（2022–2027）；封裝佔 TSMC 總營收預計 2026 年突破 10%
+- Microsoft 2026 CapEx 上調至 **US$190B**（YoY +130%）；北美 CSP 投資速度超越全球平均
 
 ---
 

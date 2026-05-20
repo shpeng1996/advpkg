@@ -3,8 +3,8 @@ title: "混合接合 / Hybrid Bonding"
 category: technology
 tags: [3D, hybrid-bonding, Cu-Cu, SoIC, ECTC, advanced-packaging, DRAM, COP, 4F2]
 created: 2026-04-24
-updated: 2026-05-19
-sources: [2026-04-24_initial-survey, 2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-03-01_3dincites_besi-packaging-power-shift, 2026-01-13_semiengineering_hbm4-microbumps, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-19_semieng_advanced-packaging-limits, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-03-27_3dincites_copper-grain-hybrid-bonding, 2025-01-01_semieng_making-hybrid-bonding-better, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2026-04-29_semiwiki_cea-leti-ectc2026-hybrid-bonding, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2024-02-09_semianalysis_hybrid-bonding-process-flow]
+updated: 2026-05-21
+sources: [2026-04-24_initial-survey, 2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-03-01_3dincites_besi-packaging-power-shift, 2026-01-13_semiengineering_hbm4-microbumps, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-19_semieng_advanced-packaging-limits, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-03-27_3dincites_copper-grain-hybrid-bonding, 2025-01-01_semieng_making-hybrid-bonding-better, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2026-04-29_semiwiki_cea-leti-ectc2026-hybrid-bonding, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2024-02-09_semianalysis_hybrid-bonding-process-flow, 2026-05-19_semiconductor-digest_ev-group-ectc2026-hybrid-bonding]
 related:
   - wiki/technologies/soic.md
   - wiki/technologies/cowos.md
@@ -56,6 +56,8 @@ related:
 | 指標 | 數值 | 說明 |
 |------|------|------|
 | 商業接合間距（TSMC SoIC-X，2026 Q1） | **6 µm** | 主流量產水準 |
+| W2W HB pitch（高良率，ECTC 2026）⭐ | **450 nm** | EVG + AMAT；98% 良率；20M 互連 |
+| W2W HB pitch（窄，ECTC 2026）⭐ | **300 nm** | EVG + AMAT；SiCN；50nm overlay |
 | D2W HB 最細間距（實驗室）| **1 µm** | CEA-Leti ECTC 2026 首次示範 ⭐ |
 | UCIe 2.0 混合接合 bump pitch | **最小 1 µm** | 標準規格 |
 | 退火溫度（傳統） | ~400°C | 標準 CMP + 熱退火 |
@@ -84,12 +86,15 @@ related:
   *Source: TrendForce 2026-04-29（引述 The Elec）*
 - **2026-04-29（CEA-Leti ECTC 2026 論文預告）⭐**：**D2W 混合接合 1µm 間距首次示範**（史上最細 D2W HB 測試載具）；**超低溫 100°C 退火直接混合接合成功**（業界最低退火溫度，傳統 ~400°C；先前「低溫」基準為 200°C）；奈米晶銅（nanocrystalline Cu）微結構 + 接合前表面處理是關鍵使能技術（STMicro 合作）；量子系統超導 3D 互連封裝首次發表（ECTC 2026，Orlando，2026-05-26/29）。
   *Source: SemiWiki / CEA-Leti press release 2026-04-29*
-- **2026-05-26~29（ECTC 2026，奧蘭多）⭐新增**：大會論文預告——混合接合新進展：
-  - **Sony（IP session 39）**：「Advanced Face-To-Back CoW 2.0-µm pitch Cu–Cu Hybrid Bonding for Three Layer-Stacked 3D Heterogeneous Integration」——Sony 首次公開 Face-to-Back CoW 架構，**2µm pitch** 三層堆疊成果，Sony 影像感測器 HB 技術轉移至 HPC/AI 場景的里程碑。
-  - **NYCU + Tokyo Ohka Kogyo（Paper 32.3）**：「Ultra-Fast Cu Polymer Hybrid Bonding with Electroless Passivation Layer」——以電鏈鰈化層實現超快低成本 HB。
-  - **IBM（IP session 37）**：以 ML 預測 3D 晶片熱阻，加速 Backside Power Delivery 設計。
-  - 大會另設量子 + AI 封裝、光子系統特別議程；Intel Foundry Services 擔任 Technical Program Chair。
-  *Source: Semiconductor Digest 2026-03-20（ECTC 2026 官方公告）*
+- **2026-05-26~29（ECTC 2026，奧蘭多）⭐**：大會論文——混合接合重要成果（已公開）：
+  - **EVG + Applied Materials（Session 18）**：「First Demonstration of 450nm Pitch Cu-Cu Hybrid Bonding with 98% Yield Across 20M Interconnects for Ultra-Dense 3D Integration」——**業界首次 <500nm pitch W2W 高良率（98%）示範**，20M 互連驗證
+  - **EVG + Applied Materials（Session 26）**：「Process Integration for 300nm-Pitch Hybrid Bonding with SiCN: 50nm Overlay, Fine-Grain Cu Metallurgy, and Reliability Assessment」——**300nm pitch W2W HB**，SiCN 介電層（低溫相容），含完整可靠性評估
+  - **CEA-Leti**：D2W 混合接合 1µm 間距首次示範；100°C 超低溫退火成功（先前預告，Session 18 D2W 場景）
+  - **Sony**：Face-to-Back CoW **2µm pitch** 三層堆疊——Sony 影像感測器 HB 技術轉移至 HPC/AI 場景
+  - **EVG + imec（Session 33）**：Epitaxial Ru（釕）層轉移、金屬-金屬接合，朝向**單晶互連材料**探索
+  - **EVG + Intel（Session 39）**：高速 100% D2W bond overlay 計量——Intel 共作者確認 EVG 為 Intel D2W HB 設備夥伴
+  - NYCU + Tokyo Ohka：超快銅聚合物 HB；IBM：ML 熱阻預測；量子封裝 + 光子系統特別議程
+  *Source: Semiconductor Digest 2026-05-19（EVG ECTC 2026 宣告）；Semiconductor Digest 2026-03-20（ECTC 2026 官方公告）*
 - **2028–2029**（預測）：HBM4E 或 HBM5（18–20 層）可能成為 HBM 系列首個採用混合接合的版本
 - **2027**（預測）：Memory-on-Logic 架構商業化，HBM4 直接接合至 AI 運算核心
 

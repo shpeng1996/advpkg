@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-05-20
-**頁面總數 Total Pages**：140
-**原始來源數 Sources**：106
+**更新時間 Updated**：2026-05-21
+**頁面總數 Total Pages**：143
+**原始來源數 Sources**：109
 
 ---
 
@@ -58,6 +58,9 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-05-19_semiconductor-digest_ev-group-ectc2026-hybrid-bonding]] — EV Group ECTC 2026：450nm Cu-Cu W2W HB 98% 良率（+AMAT）；300nm HB；D2W+Intel；面板微影（2026-05-19）⭐新增
+- [[sources/2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow]] — TSMC Taiwan Tech Sym：AI 晶圓 11×；CoWoS >14× 2029（24 HBM）；SoWX 64 HBM；COUPE 4×（2026-05-14）⭐新增
+- [[sources/2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm]] — SK Hynix CEO 出席 MS CEO Summit；Maia 200 HBM3E；Microsoft CapEx $190B（2026-05-14）⭐新增
 - [[sources/2026-05-08_aseglobal_ase-wus-kaohsiung-focoes-hub]] — ASE+WUS 高雄楠梓 FOCoS/FCBGA AI 封裝基地；113K sqm；2029-09 完工；>2000 就業（2026-05-08）⭐新增
 - [[sources/2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor]] — Samsung US$4B 越南太原省封裝廠（首期 $2B）；Amkor Bac Ninh 累計 $1.6B 擴產（2026-04-10）⭐新增
 - [[sources/2026-05-15_trendforce_tsmc-vanguard-stake-sale]] — TSMC 出售 VIS 持股 8.1%（~27.1%→19%）；聚焦 CoWoS/SoIC/2nm；VIS 矽中介層合作不變（2026-05-15）⭐新增

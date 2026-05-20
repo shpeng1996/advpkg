@@ -782,3 +782,30 @@
 - 主要新知識：
   1. **越南成為 OSAT 多元化的核心戰場（2026-04-10 彭博原始報導）**：Samsung $40 億越南太原省封裝廠（多期推進，首期 $20 億），是繼三星 2008 北寧、2013 太原智慧手機廠後的**封裝業垂直延伸**——這並非新佈局，而是對既有基礎設施與供應鏈的深度利用。同期 Amkor 在 Bac Ninh 已累計投入 $16 億並持續擴產，形成越南「Samsung 太原 + Amkor 北寧」雙核封裝集群，加上 Intel 馬來西亞廠 2026 下半年投產，東南亞先進封裝三角格局成型。對 CHIPS Act 語境下「非台灣封裝供應鏈多元化」的地緣政治目標具體驗證意義。
   2. **ASE+WUS 高雄 FOCoS/FCBGA 基地（官方公告 2026-05-08）**：ASE 與 PCB 廠商 WUS（臻鼎科技）在高雄楠梓共同興建 AI 封裝基地（113,000 sqm，2029-09 完工），主打 FOCoS 與 FCBGA。WUS 是 Apple 主力 FC-BGA 供應商，此合作代表封裝廠（ASE）與基板廠（WUS）首次官方確認的**垂直整合式共建模式**——不同於以往設備/材料外包，是更深層的製造生態整合。FOCoS 商業化部署也補全了 ASE 在 CoWoS 補位策略中的實際技術路徑（AMD Venice/NVIDIA Vera/Broadcom Tomahawk 均已採用 ASE FOCoS）。
+
+## [2026-05-21] collect | 每日自動蒐集 — 先進封裝最新動態（第二十七次）
+- 搜尋查詢數：7 組（TSMC CoWoS/SoIC 最新、HBM4/HBM4E 供應、Intel EMIB/Foveros、ECTC 2026 hybrid bonding 論文、面板級封裝/CoPoS、UCIe 標準、先進封裝產業最新）
+- 成功抓取：3 篇（articles/ 3, papers/ 0, reports/ 0）
+  - 2026-05-14_trendforce_tsmc-technology-symposium-cowos-24hbm-sow.md（TrendForce，發布 2026-05-14，全文；TSMC Taiwan Technology Symposium）
+  - 2026-05-19_semiconductor-digest_ev-group-ectc2026-hybrid-bonding.md（Semiconductor Digest，發布 2026-05-19，全文；EVG ECTC 2026 論文清單）
+  - 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm-strategy.md（TrendForce，發布 2026-05-14，全文；SK Hynix CEO / Microsoft）
+- 失敗/跳過：多篇（TrendForce tag 頁 JS 渲染限制最新仍顯示 2026-04-16；大多數 CoWoS/EMIB/HBM4 搜尋結果已在 _collected_urls.txt；ieeexplore/arxiv 仍受限；ECTC 2026 會議 2026-05-26 才開始，正式論文尚未公開——EVG 預先公告是目前最佳替代）
+- 學術代理：UNAVAILABLE ✗（ieeexplore、arxiv 仍受限）
+- 新增 raw 檔案：3 篇（articles/ 3）
+- 新增 wiki 頁面：3 頁
+  - wiki/sources/2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow.md
+  - wiki/sources/2026-05-19_semiconductor-digest_ev-group-ectc2026-hybrid-bonding.md
+  - wiki/sources/2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm.md
+- 更新 wiki 頁面：8 頁
+  - wiki/technologies/cowos.md（>14× 2029 24 HBM stacks 新節點；SoWX 64 HBM 2029；CAGR >80%；2026-05-14 Tech Symposium 完整時程條目）
+  - wiki/technologies/copackaged-optics.md（COUPE 4× energy efficiency 修正（前次 2×）；200Gbps MRM 量產確認；updated）
+  - wiki/technologies/hybrid-bonding.md（ECTC 2026 論文數據：450nm W2W HB 98%；300nm W2W HB；specs 表更新；EVG+AMAT+Intel 論文條目）
+  - wiki/entities/ev-group.md（ECTC 2026 全部 7 項論文列表；450nm 98% 良率；GEMINI FB de facto standard；Intel D2W co-authorship；LITHOSCALE XT 5×；updated）
+  - wiki/entities/tsmc.md（2026-05-14 Taiwan Tech Symposium 要點；11× AI 晶圓；$1.5T 市場；updated）
+  - wiki/entities/sk-hynix.md（Microsoft CEO Summit；Maia 200 HBM3E；Microsoft $190B CapEx；updated）
+  - wiki/concepts/advanced-packaging-market.md（AI 晶圓 11×；$1.5T by 2030 上調；Microsoft CapEx $190B；updated）
+  - wiki/index.md（頁面數 140→143；來源數 106→109；3 個新 sources 頁面）
+- 主要新知識：
+  1. **TSMC Taiwan Technology Symposium（2026-05-14）完整路線圖首次揭露**：CoWoS >14× 2029（24 HBM stacks）是迄今最大封裝規格確認；SoWX（64 HBM stacks，>40 reticle）2029 目標首次官方公開——將 AI 晶片每封裝記憶體頻寬推向過去無法想像的量級（64 × 1.65 TB/s = 超過 100 TB/s 理論頻寬）。COUPE 4× energy efficiency（修正前次 2× 的保守描述）與 200Gbps MRM 進入量產，確認光電整合在 2026 年從「即將商業化」進入「已量產」里程碑。
+  2. **ECTC 2026（2026-05-26 起）：EVG + AMAT 展示 450nm W2W 混合接合 98% 良率**（Session 18）——這是目前公開最高良率的 <500nm pitch W2W 混合接合數據，直接回應業界對「HBM 混合接合良率能否達到量產門檻」的核心質疑。同場 Session 26（300nm pitch）與 Session 27（310×310mm 面板基板）形成完整的間距-面積 scaling 路線圖。EVG + Intel 合作（Session 39 D2W 計量）首次揭示 Intel 在 D2W 混合接合路線上的設備夥伴選擇。
+  3. **Microsoft Maia 200 確認採用 SK Hynix 第五代 HBM3E，Microsoft CapEx US$190B（2026-05-14）**：此數字確立了全球 AI 基礎設施投資規模的新基準。北美 CSP（Microsoft / Google / Meta / Amazon）合計 CapEx 加速成長，是先進封裝（HBM + CoWoS）需求持續高景氣的最重要宏觀驅動力。

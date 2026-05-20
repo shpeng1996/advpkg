@@ -3,8 +3,8 @@ title: "EV Group (EVG)"
 category: entity
 tags: [equipment, hybrid-bonding, wafer-bonding, maskless-lithography, layer-transfer]
 created: 2026-04-25
-updated: 2026-04-25
-sources: [2026-03-01_ieee-eps_ectc2025-hybrid-bonding]
+updated: 2026-05-21
+sources: [2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-05-19_semiconductor-digest_ev-group-ectc2026-hybrid-bonding]
 related:
   - wiki/technologies/hybrid-bonding.md
   - wiki/technologies/soic.md
@@ -34,6 +34,15 @@ related:
   - 無光罩微影技術（maskless lithography for advanced packaging）
   - 層轉移解決方案（layer transfer for heterogeneous integration）
   *Source: IEEE EPS ECTC 2025 Summary, 2026-03*
+- **ECTC 2026（2026-05-26~29，奧蘭多）⭐新增**：7 項技術論文，關鍵成果：
+  - **Session 18（co-authored w/ Applied Materials）**：**450nm pitch Cu-Cu W2W 混合接合；98% 良率；2,000 萬互連鏈——業界首次 <500nm pitch W2W 高良率量產品質示範**
+  - **Session 26（co-authored w/ Applied Materials）**：300nm pitch W2W HB；SiCN 介電層；50nm overlay；含可靠性評估
+  - **Session 39（co-authored w/ Intel）**：D2W 高速 100% Bond Overlay 計量——**Intel 共同作者確認 EVG 是 Intel D2W HB 計量夥伴**
+  - **Session 27（co-authored w/ Asahi Kasei）**：310×310mm² 面板基板無光罩微影，高深寬比 Cu Pillar——FOPLP 製程使能
+  - **Session 33（co-authored w/ imec）**：Epitaxial Ru 層轉移；金屬-金屬接合；朝向**單晶互連材料**
+  - **GEMINI FB** 系統確認為 W2W 混合接合及熔融接合的「業界事實標準（de facto standard）」
+  - **LITHOSCALE XT**：較前代提升 **5× 通量**，支援高量產環境
+  *Source: Semiconductor Digest 2026-05-19*
 
 ---
 
@@ -46,8 +55,10 @@ EV Group 是全球混合接合設備的領先供應商之一，與 SUSS MicroTec
 ## 與其他實體的關係 / Relationships
 
 - **TSMC**：SoIC-X 製程的設備供應商之一
-- **Samsung / Intel**：混合接合產線潛在設備客戶
-- **研究機構（imec 等）**：共同開發下一代接合技術
+- **Samsung / Intel**：混合接合產線設備客戶（**Intel ECTC 2026 D2W overlay 計量論文共同作者**，確認 Intel 採用 EVG40 D2W 系統）
+- **Applied Materials**：ECTC 2026 共同研發：450nm + 300nm pitch W2W HB 論文；互補關係（AMAT 提供材料/沉積，EVG 提供接合系統）
+- **imec**：共同研發 Ru 層轉移（單晶互連）、fine-pitch RDL IR layer release
+- **研究機構（Asahi Kasei 等）**：面板基板（310×310mm²）無光罩微影合作
 
 ---
 

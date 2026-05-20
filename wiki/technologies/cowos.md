@@ -3,8 +3,8 @@ title: "CoWoS — Chip-on-Wafer-on-Substrate"
 category: technology
 tags: [2.5D, interposer, TSMC, AI, HPC, HBM, COUPE, CPO, packaging-constraints, NVIDIA]
 created: 2026-04-24
-updated: 2026-05-19
-sources: [2026-04-24_initial-survey, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-15_trendforce_tsmc-vanguard-stake-sale, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry]
+updated: 2026-05-21
+sources: [2026-04-24_initial-survey, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-15_trendforce_tsmc-vanguard-stake-sale, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow]
 related:
   - wiki/entities/tsmc.md
   - wiki/technologies/soic.md
@@ -49,8 +49,9 @@ CoWoS 將多顆晶片（GPU、HBM 等）放置於一個中介層（Interposer）
 | **晶圓 ASP** | **~$10,000 / 片（≈ 7nm 製程水準）** | 2026 年現況（Commercial Times） |
 | 中介層尺寸（當前量產）良率 | 5.5 reticles，**>98%** | 2026 年 TSMC Tech Symposium 確認 |
 | 中介層尺寸（2027 目標） | **9.5 reticles** | Google TPU v9x（HumuFish）預計首批採用 |
-| 中介層尺寸（2028 目標） | 14 reticles（~10 compute + 20 HBM） | 2028 |
-| SoW-X（2029） | **64 個 HBM 堆疊**（=4 TB HBM，假設 64 GB/堆疊） | 2029 |
+| 中介層尺寸（2028 目標） | 14 reticles（~10 compute + **20 HBM stacks**） | 2028 |
+| **中介層尺寸（2029 目標）⭐** | **>14 reticles（24 HBM stacks）** | 2029（TSMC Tech Symposium 2026-05-14）|
+| SoW-X（2029） | **64 個 HBM 堆疊 + 16 CoWoS 模組**（>40 reticle） | 2029（SoWX 目標）|
 | 封裝電晶體成長 | 48× (2024→2029) | — |
 | 記憶體頻寬成長 | 34× (2024→2029) | — |
 | 佔 TSMC 總營收 | ~10%（2025）→ 持續提升（2026+） | 先進封裝整體 |
@@ -79,9 +80,16 @@ CoWoS 將多顆晶片（GPU、HBM 等）放置於一個中介層（Interposer）
 - **2026-04**：NVIDIA 預訂 2026 年總產能 60–65%；AMD 佔 ~11%
 - **2026-04-16**：TSMC CEO C.C. Wei 於 Q1 法說會正式回應 Intel EMIB 競爭——強調 CoWoS 為業界最大 reticle-size 封裝方案，2026 年底月產能目標 **115,000–140,000 wsm**，2027 年進一步升至 ~**170,000 wsm**；擴廠重心集中台南+嘉義
   *Source: TrendForce 2026-04-16*
-- **2026-04-22**：TSMC 2026 Symposium 揭露 CoWoS 規模路線圖：當前 5.5 reticle → 2028 目標 14 reticle（10 compute die + 20 HBM stacks）；2029 年後持續擴大
+- **2026-04-22**：TSMC 2026 North America Symposium 揭露 CoWoS 規模路線圖：當前 5.5 reticle → 2028 目標 14 reticle（10 compute die + 20 HBM stacks）；2029 年後持續擴大
   - 單封裝計算電晶體數 2024→2029 成長 **48×**；記憶體頻寬成長 **34×**
   *Source: SemiWiki 2026-04-22*
+- **2026-05-14（⭐新增）**：**TSMC Taiwan Technology Symposium 揭露最新 CoWoS 完整路線圖**
+  - 5.5× 量產良率確認 **98%**；CoWoS 產能 CAGR **>80%**（2022–2027）
+  - 14× 2028：**20 HBM stacks**；**>14× 2029：24 HBM stacks**（新世代確認）
+  - **SoWX（64 HBM stacks + 16 CoWoS 模組，>40 reticle）目標 2029**——首次官方公開
+  - COUPE 200Gbps Micro Ring Modulator 2026 量產；**4× energy efficiency、10× lower latency**（vs. copper）
+  - AI 晶圓需求 2022→2026 **11 倍**成長；全球半導體市場預測上調至 **>$1.5T by 2030**
+  *Source: TrendForce 2026-05-14*
 - **2026**：**TSMC-COUPE™ 共封裝光學元件（CPO）**整合至 CoWoS 基板，開始量產；2× 能效、10× 延遲改善
 - **2026**：TSMC ECTC 2025 展示 CoWoS 上的**直接矽液冷（Direct-to-Silicon Liquid Cooling）**，封裝層級散熱新里程碑
 - **2026-04-28**：**CoWoS ASP 首次量化**——約 $10,000/片，相當於 7nm 製程水準；毛利潛力接近先進製程（EUV 折舊較低）；先進封裝佔 TSMC 總營收 ~10%，預計持續提升。

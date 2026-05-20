@@ -3,8 +3,8 @@ title: "台積電 / TSMC"
 category: entity
 tags: [foundry, advanced-packaging, CoWoS, SoIC, CoPoS, COUPE, CPO, InFO, WMCM, aLSI, MRAM]
 created: 2026-04-24
-updated: 2026-05-19
-sources: [2026-04-24_initial-survey, 2026-04-13_trendforce_copos-pilot, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2025-12-18_trendforce_apple-wmcm-a20, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-01-20_trendforce_tsmc-wmcm-apple, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-23_trendforce_tsmc-roadmap-a12-a13-no-high-na-euv, 2026-05-07_trendforce_tsmc-us-expansion-250b-arizona, 2026-05-12_focustaiwan_tsmc-capex-31b-arizona-20b]
+updated: 2026-05-21
+sources: [2026-04-24_initial-survey, 2026-04-13_trendforce_copos-pilot, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2025-12-18_trendforce_apple-wmcm-a20, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-01-20_trendforce_tsmc-wmcm-apple, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-23_trendforce_tsmc-roadmap-a12-a13-no-high-na-euv, 2026-05-07_trendforce_tsmc-us-expansion-250b-arizona, 2026-05-12_focustaiwan_tsmc-capex-31b-arizona-20b, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow]
 related:
   - wiki/technologies/cowos.md
   - wiki/technologies/soic.md
@@ -84,6 +84,15 @@ related:
 
 - **2026-04**：CoPoS 試驗線最新進展確認：主要設備安裝 **2026-02 完成**（Visionchip 子公司；TSMC CEO 親口確認）；完整試驗線預計 **2026-06 完工**；2027 年製程精修；量產 **2028 年底–2029 年初**於嘉義 AP7（Phase 4）。NVIDIA 為首要客戶（最多 12 HBM4 + 多 GPU chiplet）。
   *Source: TrendForce 2026-04-13; TrendForce 2026-04-16; 3D InCites 2025-07*
+
+- **2026-05-21（最新）⭐**：**TSMC Taiwan Technology Symposium 2026（2026-05-14）關鍵宣布**：
+  - AI 晶圓需求 2022→2026 成長 **11 倍**；全球半導體市場預測上調至 **>US$1.5 兆 by 2030**（前次 $1T）
+  - CoWoS 產能 CAGR **>80%**（2022–2027）；5.5× 良率 98%；**>14× 2029（24 HBM stacks）**新世代確認
+  - **SoWX（HBM 整合型，64 HBM stacks，>40 reticle）目標 2029**——首次官方公開
+  - COUPE 200Gbps Micro Ring Modulator 2026 量產；**4× energy efficiency**（前次描述 2× 為保守估計）
+  - 2nm/A16 CAGR **70%**（2026–2028）；Arizona 產能 2026 YoY **1.8×** 且良率可比台灣
+  - 九期建設計畫繼續推進（2026 年內）
+  *Source: TrendForce 2026-05-14（引述 Reuters、CNA、China Times、Commercial Times）*
 
 - **2026-05-04（新增）**：**TSMC Tech Symposium 2026 關鍵數字更新**（SemiEngineering 2026-04-27 報導）：
   - CoWoS 5.5 倍光罩尺寸良率 **>98%** 在 2026 年確認（世界最大量產 CoWoS）
