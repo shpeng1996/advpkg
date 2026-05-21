@@ -197,4 +197,19 @@ AI 晶片封裝的材料供應鏈中有一個長期被忽視的隱性瓶頸：**
 - Nittobo（日本）近乎獨占 T-glass 與 NER-glass，新產能最快 2027 年中才上線（¥50B 投資計畫，T-glass 擴產 3×）
 - Nittobo 漲價：2025-08 +20%，2026-04 再 +20–30%；BT 基板報價約 1Q 後反映，ABF 基板約 2Q 後反映
 - NVIDIA Rubin GPU 基板面積從 Hopper 3,190mm² → Rubin ~8,000mm²（2.5×），基板層數 14L→18L（+30%），T-glass 消耗量大幅攀升
-- **AI 
+- **AI 伺服器每機架基板層數**：2024–25 為 20–28L，2026–27 預計升至 24–40L
+
+**對先進封裝的意義：**
+- T-glass 的 CTE 2.8 ppm/°C 特性是 AI 晶片封裝基板防翹曲（warpage）的關鍵，CoWoS 超大尺寸封裝（5.5→14× reticle）對此依賴加深
+- 玻璃核心基板（glass core substrate）的推進進一步加深玻璃材料的戰略性——SCHOTT、Corning、AGC、NEG 為低 CTE 玻璃供應商
+
+*Source: TrendForce Insights 2026-04-30, 2026-05-05*
+
+
+## 設備業整合加速 / Equipment M&A Consolidation（2026-05 更新）
+
+先進封裝設備產業正進入加速整合期，大廠透過 M&A 和持股擴充全端組合：
+
+| 事件 | 日期 | 意義 |
+|------|------|------|
+| Applied Materials 持股 Besi 9% | 2025
