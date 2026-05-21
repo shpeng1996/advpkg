@@ -64,8 +64,9 @@ related:
 
 | 指標 | 說明 |
 |------|------|
-| 全球 OSAT 排名 | 第二名（以營收計） |
-| 主要競爭對手 | ASE Group、JCET |
+| 全球 OSAT 排名 | **第二名**（2024 年確認） |
+| 2024 年營收 | **US$6.32B（-2.8% YoY）**；車用庫存修正 + 中國/東南亞定價壓力 |
+| 主要競爭對手 | ASE Group（$18.54B）、JCET（$5.00B） |
 | 戰略差異化 | 美國在地製造 + Intel EMIB 合作 |
 | Arizona Campus 投資規模 | $70 億（全球最大 OSAT 單廠投資之一） |
 
@@ -83,5 +84,4 @@ related:
 ## 爭議與未解問題 / Open Questions
 
 - Arizona 廠 Phase 2 的投產時程是否會因政策變化或需求波動而延遲？
-- Amkor 是否有能力自主開發混合接合（hybrid bonding）技術？
-- Intel EMIB 與 Amkor 的合作能否擴展至 Foveros？
+- Amk

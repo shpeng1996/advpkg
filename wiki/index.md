@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-05-21
-**頁面總數 Total Pages**：143
-**原始來源數 Sources**：109
+**更新時間 Updated**：2026-05-22
+**頁面總數 Total Pages**：146
+**原始來源數 Sources**：112
 
 ---
 
@@ -58,6 +58,9 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-03-05_uciexpress_chiplet-summit-2026]] — Chiplet Summit 2026：UCIe-S Intel+Cadence「Cameron Creek」首次跨廠商互操作示範；UCIe 3.0 Best in Show；Eliyan 等新生態成員（2026-03-05）⭐新增
+- [[sources/2025-09-03_uciexpress_ucie30-spec]] — UCIe Consortium：UCIe 3.0 官方規格——48/64 GT/s；Raw Mode；100mm sideband；L2 idle 功率閘控；完整向下相容（2025-09-03）⭐新增
+- [[sources/2025-05-13_trendforce_top10-osat-2024]] — TrendForce：2024年全球OSAT前十大——ASE $18.54B（45%）；JCET +19.3%；HT-Tech +26%；前十大合計 $41.56B（2025-05-13）⭐新增
 - [[sources/2026-05-19_semiconductor-digest_ev-group-ectc2026-hybrid-bonding]] — EV Group ECTC 2026：450nm Cu-Cu W2W HB 98% 良率（+AMAT）；300nm HB；D2W+Intel；面板微影（2026-05-19）⭐新增
 - [[sources/2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow]] — TSMC Taiwan Tech Sym：AI 晶圓 11×；CoWoS >14× 2029（24 HBM）；SoWX 64 HBM；COUPE 4×（2026-05-14）⭐新增
 - [[sources/2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm]] — SK Hynix CEO 出席 MS CEO Summit；Maia 200 HBM3E；Microsoft CapEx $190B（2026-05-14）⭐新增

@@ -3,8 +3,8 @@ title: "UCIe — Universal Chiplet Interconnect Express"
 category: technology
 tags: [standards, chiplet, interconnect, UCIe, 3D, hybrid-bonding, UCIe-3.0]
 created: 2026-04-24
-updated: 2026-05-08
-sources: [2026-04-24_initial-survey, 2026-04-01_semiengineering_chiplets-2026, 2025-01-28_3dincites_iftle-618-ucie-standard-vs-ucie3, 2025-01-01_semieng_ucie-1-6t-io-chiplets-ai-datacenter]
+updated: 2026-05-22
+sources: [2026-04-24_initial-survey, 2026-04-01_semiengineering_chiplets-2026, 2025-01-28_3dincites_iftle-618-ucie-standard-vs-ucie3, 2025-01-01_semieng_ucie-1-6t-io-chiplets-ai-datacenter, 2025-09-03_uciexpress_ucie30-spec, 2026-03-05_uciexpress_chiplet-summit-2026]
 related:
   - wiki/technologies/hybrid-bonding.md
   - wiki/technologies/hbm4.md
@@ -50,7 +50,12 @@ UCIe 2.0 引入 **UCIe-3D** 最佳化：
 
 - **2022-03**：UCIe 1.0 發布，初步建立 chiplet 互連標準
 - **2025**：IFTLE 618（3D InCites）分析 UCIe Standard vs Advanced vs UCIe 3 三版差異
-- **2025-08-05**：UCIe 3.0 正式批准；Peak speed 64 GT/s；新增 runtime recalibration 與 Raw-Mode
+- **2025-08/09**：UCIe 3.0 正式批准並對外公告；Peak speed 64 GT/s；新增 runtime recalibration、Raw-Mode、100mm sideband 延伸（UCIe Consortium 官方確認）
+- **2026-03（Chiplet Summit 2026⭐）**：
+  - **業界首次 UCIe-S 跨廠商互操作性現場示範**：Intel + Cadence「**Cameron Creek**」測試晶片，驗證 16G UCIe-S PHY IP 真正跨廠商互操作性
+  - UCIe 3.0 榮獲 **Chiplet Summit Best in Show（連接性與互操作性類）**
+  - Debendra Das Sharma 確認 UCIe 為**多十年產業標準**，從 1.0→2.0→3.0 完整演進路線
+  - Google 和 Intel 在 Tutorial 分享 UCIe 部署於光學 chiplet、可組合 SoC、多裸片架構的實際經驗
 - **2026 Q1–Q2**：多家公司（GPU、EDA、類比、光學互連）宣布對齊 64 GT/s UCIe 3.0 路線圖
 - **2026-Q3**（預測）：UCIe 2.0 生態系首批 HBM4 混合接合商業產品
 - **2027**（預測）：UCIe 標準普及至行動裝置；memory-on-logic 架構商業化
@@ -87,13 +92,26 @@ UCIe 2.0 引入 **UCIe-3D** 最佳化：
 
 ## UCIe 3.0 新增功能詳解 / UCIe 3.0 Feature Details
 
+（來源：UCIe Consortium 官方部落格，2025-09-03）
+
 | 功能 | 說明 |
 |------|------|
-| **速度提升** | 32 GT/s（2.0）→ 48/64 GT/s（3.0），頻寬密度翻倍 |
-| **Runtime Recalibration** | 連結可在運行中重調校（reuse init states），提高系統效率 |
-| **Raw-Mode 連續傳輸** | 支援 SoC-to-DSP 等不中斷資料流（通信/訊號處理應用） |
+| **速度提升** | 32 GT/s（2.0）→ **48/64 GT/s**（3.0），頻寬密度翻倍 |
+| **Runtime TX Recalibration** | 連結可在運行中重調校（reuse init states），提高系統效率，降低能耗 |
+| **Raw-Mode 連續傳輸** | ADC/DAC 資料直接對映，支援 DSP、類比介面，不產生干擾時脈 |
+| **L2 Idle-State 電源閘控** | 優化積極電源閘控，降低靜態功耗，不犧牲響應速度 |
+| **Sideband 延伸至 100 mm** | 適應更大型封裝（SoW、CoPoS 等大面積多裸片封裝）的管理需求 |
 | **向下相容** | 完全相容 UCIe 1.0 / 2.0 IP，保護既有投資 |
 | **年度更新節奏** | 自 2023 年起每年發布一個新版本，顯示快速演進 |
+
+## Chiplet Summit 2026 里程碑 / Chiplet Summit 2026 Milestones
+
+（來源：UCIe Consortium，2026-03-05）
+
+- **Cameron Creek 跨廠商互操作示範**：Intel + Cadence 共同設計，16G UCIe-S PHY IP，**業界首次現場驗證 UCIe-S 跨供應商互操作性**。UCIe 不再只是規格文件，已是可運行的量產矽晶片。
+- **Best in Show Award**：UCIe 3.0 榮獲 Chiplet Summit 最佳連接性與互操作性獎。
+- **生態系廣度**（2026-03 確認）：Arm、Marvell、Cadence、Synopsys、Siemens、Eliyan（贊助）+ Alphawave Semi、Keysight、Tenstorrent、VeriSilicon 等（展覽）。
+- **Eliyan**（新進生態成員）：高頻寬短距 die-to-die 互連 IP 廠商，首次出現在主要 UCIe 活動贊助名單。
 
 ## PHY 變體比較 / UCIe-S vs UCIe-A
 

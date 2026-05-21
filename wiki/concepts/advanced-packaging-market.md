@@ -3,8 +3,8 @@ title: "先進封裝市場 / Advanced Packaging Market"
 category: concept
 tags: [market, forecast, CAGR, supply-chain, HBM, chiplet, geopolitics, equipment]
 created: 2026-04-24
-updated: 2026-05-21
-sources: [2026-04-24_initial-survey, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2026-01-23_trendforce_chip-tools-tel-asml, 2026-03-05_trendforce_intel-emib-billions, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2025-12-18_trendforce_micron-capex-hbm4, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm]
+updated: 2026-05-22
+sources: [2026-04-24_initial-survey, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2026-01-23_trendforce_chip-tools-tel-asml, 2026-03-05_trendforce_intel-emib-billions, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2025-12-18_trendforce_micron-capex-hbm4, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2025-05-13_trendforce_top10-osat-2024]
 related:
   - wiki/entities/tsmc.md
   - wiki/entities/sk-hynix.md
@@ -31,6 +31,25 @@ related:
 | Wafer-Level 子市場 | $11.97B（2026） | — | 2035 / $28.81B | **10.25%** |
 
 > 各機構方法論差異導致數字分散（$40–52B），但成長趨勢一致：CAGR 約 8–10%，2035 年達 $87–117B。
+
+### OSAT 市場基線數據（2024 年實際，TrendForce 2025-05）
+
+全球前十大 OSAT 合計營收 **US$41.56B（+3% YoY）**：
+
+| 排名 | 公司 | 2024 營收 | YoY |
+|------|------|-----------|-----|
+| 1 | ASE Holdings | $18.54B | — |
+| 2 | Amkor | $6.32B | -2.8% |
+| 3 | JCET | $5.00B | +19.3% |
+| 4 | Tongfu Micro | $3.32B | +5.6% |
+| 5 | Powertech | $2.28B | +1.0% |
+| 6 | HT-Tech | $2.01B | **+26%** |
+| 7 | WiseRoad | $1.56B | +5.0% |
+| 8 | Hana Micron | $920M | +23.7% |
+| 9 | KYEC | $910M | -14.5% |
+| 10 | ChipMOS | $710M | +3.1% |
+
+> **中國廠商崛起**：JCET、HT-Tech、Tongfu、Hana Micron 成長均遠超全球平均，政策支持 + 本土需求為主要動力，對現有市場秩序形成挑戰。
 
 **⭐ 2026-05-14 重要更新（TSMC Taiwan Technology Symposium）**：
 - AI 晶圓需求 2022→2026 成長 **11 倍**（TSMC 公布，Reuters 引述）
@@ -178,19 +197,4 @@ AI 晶片封裝的材料供應鏈中有一個長期被忽視的隱性瓶頸：**
 - Nittobo（日本）近乎獨占 T-glass 與 NER-glass，新產能最快 2027 年中才上線（¥50B 投資計畫，T-glass 擴產 3×）
 - Nittobo 漲價：2025-08 +20%，2026-04 再 +20–30%；BT 基板報價約 1Q 後反映，ABF 基板約 2Q 後反映
 - NVIDIA Rubin GPU 基板面積從 Hopper 3,190mm² → Rubin ~8,000mm²（2.5×），基板層數 14L→18L（+30%），T-glass 消耗量大幅攀升
-- **AI 伺服器每機架基板層數**：2024–25 為 20–28L，2026–27 預計升至 24–40L
-
-**對先進封裝的意義：**
-- T-glass 的 CTE 2.8 ppm/°C 特性是 AI 晶片封裝基板防翹曲（warpage）的關鍵，CoWoS 超大尺寸封裝（5.5→14× reticle）對此依賴加深
-- 玻璃核心基板（glass core substrate）的推進進一步加深玻璃材料的戰略性——SCHOTT、Corning、AGC、NEG 為低 CTE 玻璃供應商
-
-*Source: TrendForce Insights 2026-04-30, 2026-05-05*
-
-
-## 設備業整合加速 / Equipment M&A Consolidation（2026-05 更新）
-
-先進封裝設備產業正進入加速整合期，大廠透過 M&A 和持股擴充全端組合：
-
-| 事件 | 日期 | 意義 |
-|------|------|------|
-| Applied Materials 持股 Besi 9% | 2025
+- **AI 

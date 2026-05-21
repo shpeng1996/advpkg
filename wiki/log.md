@@ -809,3 +809,31 @@
   1. **TSMC Taiwan Technology Symposium（2026-05-14）完整路線圖首次揭露**：CoWoS >14× 2029（24 HBM stacks）是迄今最大封裝規格確認；SoWX（64 HBM stacks，>40 reticle）2029 目標首次官方公開——將 AI 晶片每封裝記憶體頻寬推向過去無法想像的量級（64 × 1.65 TB/s = 超過 100 TB/s 理論頻寬）。COUPE 4× energy efficiency（修正前次 2× 的保守描述）與 200Gbps MRM 進入量產，確認光電整合在 2026 年從「即將商業化」進入「已量產」里程碑。
   2. **ECTC 2026（2026-05-26 起）：EVG + AMAT 展示 450nm W2W 混合接合 98% 良率**（Session 18）——這是目前公開最高良率的 <500nm pitch W2W 混合接合數據，直接回應業界對「HBM 混合接合良率能否達到量產門檻」的核心質疑。同場 Session 26（300nm pitch）與 Session 27（310×310mm 面板基板）形成完整的間距-面積 scaling 路線圖。EVG + Intel 合作（Session 39 D2W 計量）首次揭示 Intel 在 D2W 混合接合路線上的設備夥伴選擇。
   3. **Microsoft Maia 200 確認採用 SK Hynix 第五代 HBM3E，Microsoft CapEx US$190B（2026-05-14）**：此數字確立了全球 AI 基礎設施投資規模的新基準。北美 CSP（Microsoft / Google / Meta / Amazon）合計 CapEx 加速成長，是先進封裝（HBM + CoWoS）需求持續高景氣的最重要宏觀驅動力。
+
+## [2026-05-22] collect | 每日自動蒐集 — 先進封裝最新動態（第二十八次）
+- 搜尋查詢數：8 組（TSMC CoWoS/SoIC、HBM4/HBM4E、混合接合/ECTC 2026、面板級封裝/CoPoS、Intel EMIB/Foveros、UCIe 標準、OSAT 市場動態、2026-05-22 最新新聞）
+- 成功抓取：3 篇（articles/ 3, papers/ 0, reports/ 0）
+  - 2025-05-13_trendforce_top10-osat-2024-china-players-growth.md（TrendForce Press Center，發布 2025-05-13；全球 OSAT 前十大 2024 年數據）
+  - 2025-09-03_uciexpress_ucie30-spec-redefining-chiplet-interconnects.md（UCIe Consortium 官方，發布 2025-09-03；UCIe 3.0 規格詳情）
+  - 2026-03-05_uciexpress_chiplet-summit-2026-ucie-momentum.md（UCIe Consortium 官方，發布 2026-03-05；Chiplet Summit 2026 完整報告）
+- 失敗/跳過：多篇
+  - semiconductor-digest Cu-Cu hybrid bonding 文章（2023-09，超過 6 個月上限，略過）
+  - semiengineering FOPLP/UCIe 文章（JS 渲染，WebFetch 無法取得正文）
+  - TrendForce NVIDIA Rubin 採購（2026-05-20，無法確認 URL 進入 provenance）
+  - 大多數搜尋結果 URL 已在 _collected_urls.txt 中（去重）
+- 學術代理：UNAVAILABLE ✗（ieeexplore 仍受限；ECTC 2026 2026-05-26 才開始，正式論文尚未公開）
+- 新增 raw 檔案：3 篇（articles/ 3）
+- 新增 wiki 頁面：3 頁
+  - wiki/sources/2025-05-13_trendforce_top10-osat-2024.md
+  - wiki/sources/2025-09-03_uciexpress_ucie30-spec.md
+  - wiki/sources/2026-03-05_uciexpress_chiplet-summit-2026.md
+- 更新 wiki 頁面：5 頁
+  - wiki/technologies/ucie.md（UCIe 3.0 官方規格完整補充；Chiplet Summit 2026 Cameron Creek 示範、Best in Show 獎項、Eliyan 新生態成員；updated 2026-05-22）
+  - wiki/entities/ase-group.md（市場地位新增 2024 實際數據：$18.54B，前十大 45%；updated 2026-05-22）
+  - wiki/entities/amkor.md（市場地位新增 2024 實際數據：$6.32B，-2.8% YoY；競爭對手精確數字）
+  - wiki/concepts/advanced-packaging-market.md（新增 OSAT 前十大 $41.56B 2024 基線數據表格；中國 OSAT 崛起分析；updated 2026-05-22）
+  - wiki/index.md（頁面數 143→146；來源數 109→112；3 個新 sources 頁面）
+- 主要新知識：
+  1. **2024 年全球 OSAT 市場首次精確量化**（TrendForce 2025-05）：前十大合計 US$41.56B（+3% YoY），ASE 以 $18.54B 佔前十大 45% 蟬聯第一，遠超第二名 Amkor（$6.32B）。**中國廠商加速崛起**：HT-Tech +26%（成長最快）、JCET +19.3%、Hana Micron +23.7%，政策支持 + 本土半導體需求形成複合動力——此數據首次填補 wiki 的 OSAT 市場量化空缺，可作為未來成長計算的 2024 年基線。
+  2. **UCIe 3.0 官方技術細節確認**（UCIe Consortium，2025-09）：48/64 GT/s（翻倍）、Raw Mode（ADC/DAC 直接映射）、100mm sideband 延伸、L2 idle 功率閘控優化——其中 **Raw Mode** 是 wiki 先前未記載的新功能，對 DSP、類比、訊號處理應用有獨特意義。完全向下相容 1.0/2.0。
+  3. **Chiplet Summit 2026（2026-03）里程碑：UCIe 從規格到量產矽**——Intel + Cadence「Cameron Creek」測試晶片首次現場展示 UCIe-S 跨廠商互操作性，驗證 16G UCIe-S PHY IP 真正可互通。UCIe 3.0 贏得 Chiplet Summit Best in Show 獎項。**Eliyan**（高頻寬短距 die-to-die IP）首次出現在主要 UCIe 活動贊助名單，是需要追蹤的新興生態成員。此里程碑確認 UCIe 不再是「紙上標準」，而是可落地實施的量產技術。
