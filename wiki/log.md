@@ -2,6 +2,11 @@
 
 ---
 
+## [2026-05-22] query | 半導體前段設備商對 C2W 的市場布局與策略
+- 查詢頁面：hybrid-bonding.md、entities/besi.md、entities/asmpt.md、entities/ev-group.md、entities/asml.md、entities/tel.md、sources/多篇
+- 已存檔：analyses/2026-05-22_c2w-equipment-vendor-strategies.md
+- 主要洞察：前段設備商（AMAT/TEL/ASML/Lam）以製程整合切入；Besi+AMAT Kinex 為 D2W HB 當前龍頭；ASMPT 主導 C2W TCB；EVG 從 W2W 向 D2W 擴張；M&A 浪潮（NEXX 收購、Besi 傳聞）正重塑格局；韓國設備商以 HBM 場景為跳板追趕
+
 ## [2026-04-24] init | Wiki 知識庫初始化
 - 建立目錄結構：raw/, wiki/ 及各子目錄
 - 建立 CLAUDE.md 作業規範（v1.0）
