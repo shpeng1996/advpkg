@@ -842,3 +842,26 @@
   1. **2024 年全球 OSAT 市場首次精確量化**（TrendForce 2025-05）：前十大合計 US$41.56B（+3% YoY），ASE 以 $18.54B 佔前十大 45% 蟬聯第一，遠超第二名 Amkor（$6.32B）。**中國廠商加速崛起**：HT-Tech +26%（成長最快）、JCET +19.3%、Hana Micron +23.7%，政策支持 + 本土半導體需求形成複合動力——此數據首次填補 wiki 的 OSAT 市場量化空缺，可作為未來成長計算的 2024 年基線。
   2. **UCIe 3.0 官方技術細節確認**（UCIe Consortium，2025-09）：48/64 GT/s（翻倍）、Raw Mode（ADC/DAC 直接映射）、100mm sideband 延伸、L2 idle 功率閘控優化——其中 **Raw Mode** 是 wiki 先前未記載的新功能，對 DSP、類比、訊號處理應用有獨特意義。完全向下相容 1.0/2.0。
   3. **Chiplet Summit 2026（2026-03）里程碑：UCIe 從規格到量產矽**——Intel + Cadence「Cameron Creek」測試晶片首次現場展示 UCIe-S 跨廠商互操作性，驗證 16G UCIe-S PHY IP 真正可互通。UCIe 3.0 贏得 Chiplet Summit Best in Show 獎項。**Eliyan**（高頻寬短距 die-to-die IP）首次出現在主要 UCIe 活動贊助名單，是需要追蹤的新興生態成員。此里程碑確認 UCIe 不再是「紙上標準」，而是可落地實施的量產技術。
+
+## [2026-05-23] collect | 每日自動蒐集 — 先進封裝最新動態（第二十九次）
+- 搜尋查詢數：8 組（TSMC CoWoS/CoPoS、HBM4 記憶體、ECTC 2026 論文、Intel EMIB/Foveros、OSAT 市場、混合接合/Chiplet、NVIDIA Rubin/Feynman、玻璃基板 SKC/Absolics）
+- 成功抓取：3 篇（articles/ 3, papers/ 0, reports/ 0）
+  - 2026-05-08_trendforce_skc-absolics-glass-substrate-mass-production-2026.md（TrendForce，發布 2026-05-08；SKC/Absolics 玻璃基板量產加速＋非嵌入型新專案）
+  - 2026-04-15_trendforce_korea-intel-glass-substrate-standards-absolics-samsung.md（TrendForce，發布 2026-04-15；韓國 vs Intel 玻璃基板標準戰；BOE 中國進入）
+  - 2026-04-30_trendforce_ultrafast-laser-glass-substrate-cpo-ulcvd.md（TrendForce，發布 2026-04-30；ULCVD 技術突破 TGV/RDL 三維互連瓶頸）
+- 失敗/跳過：多篇（semiengineering.com hybrid-bonding-makes-strides、next-gen-3d-chip-packaging-race-begins 均 JS 渲染無法取得正文；ieeexplore 仍受限；ECTC 2026 2026-05-26 才開始，正式論文尚未公開；大多數 TSMC CoWoS/HBM4/EMIB 搜尋結果已在 _collected_urls.txt；HBM4 May 2026 搜尋結果均為已收錄舊文章）
+- 學術代理：UNAVAILABLE ✗（ieeexplore、arxiv 仍受限）
+- 新增 raw 檔案：3 篇（articles/ 3）
+- 新增 wiki 頁面：3 頁
+  - wiki/sources/2026-05-08_trendforce_skc-absolics-glass-substrate-2026.md
+  - wiki/sources/2026-04-15_trendforce_korea-intel-glass-substrate-standards.md
+  - wiki/sources/2026-04-30_trendforce_ulcvd-glass-substrate-cpo-laser.md
+- 更新 wiki 頁面：4 頁
+  - wiki/technologies/glass-substrate.md（更新：Absolics 進入良率穩定階段；AMD/AWS 測試確認；非嵌入型新專案；Apple M5/M6 推測；Intel 2030 標準路線圖；BOE 進入 TGV 市場；Corning-Meta $6B；ULCVD 突破；updated 2026-05-23）
+  - wiki/technologies/copackaged-optics.md（新增：玻璃基板×CPO 技術耦合段落；ULCVD 對 TGV/RDL 製程瓶頸的意義；updated 2026-05-23）
+  - wiki/concepts/geopolitics-advanced-packaging.md（新增：玻璃基板標準戰地緣政治維度；Intel vs 韓國 vs 中國三方博弈；BOE 中國進入；Corning-Meta 協議；updated 2026-05-23）
+  - wiki/index.md（頁面數 146→149；來源數 112→115；3 個新 sources 頁面）
+- 主要新知識：
+  1. **玻璃基板商業化加速（2026-05-08）**：Absolics 已完成電氣/訊號性能驗證並進入良率穩定階段，**AMD 和 AWS 確認正在測試原型品**——這是第一次有具體北美 hyperscaler 名稱出現在 Absolics 客戶驗證清單中，大幅增加 2026 年底量產的可信度。同時，新增「非嵌入型玻璃基板」供應美國通訊晶片客戶，顯示 Absolics 以雙軌策略同時鎖定高性能 AI 和相對平易的通訊市場，降低整體商業化風險。
+  2. **玻璃基板標準戰成型（2026-04-15）**：Intel（2030 標準路線圖）、Absolics/韓國（搶先量產定標準）、中國 BOE（顯示器玻璃切入 TGV）三方格局首次清晰呈現。控制設計標準意味著全球 fabless 的晶片設計需匹配其規格——這是比單純量產能力更深層的產業護城河。**Corning-Meta $6B 協議**（2026-01）將美國材料商嵌入韓國廠商供應鏈，形成跨國利益交織。
+  3. **ULCVD 技術突破（2026-04-30）**：全南大學開發的超短脈衝雷射誘導 CVD 技術，在玻璃基板正背面同時無光罩刻寫碳電路，電導率達文獻最佳 LIG 水準，且可在複雜 3D 曲面和通孔內部成形互連——直接解決 TGV/RDL 三維互連製程是 CPO 用玻璃基板的最大瓶頸。後續擴展至 Cu/Au 材料將使此技術具備量產潛力，是玻璃基板 CPO 路線的重要技術儲備。

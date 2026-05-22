@@ -1,9 +1,9 @@
 ---
 title: "先進封裝地緣政治 / Geopolitics of Advanced Packaging"
 category: concept
-tags: [geopolitics, US-China, CHIPS-Act, supply-chain, chiplet, NAPMP, export-control]
+tags: [geopolitics, US-China, CHIPS-Act, supply-chain, chiplet, NAPMP, export-control, glass-substrate, standards-war, BOE, Corning, Absolics]
 created: 2026-04-26
-updated: 2026-05-20
+updated: 2026-05-23
 sources: [2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-23_trendforce_china-osat-sj-semiconductor-ipo, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-08-05_3dincites_iftle636, 2026-03-23_trendforce_musk-terafab-tsmc-packaging, 2026-04-22_trendforce_sk-hynix-indiana-us-plant, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor]
 related: [wiki/concepts/advanced-packaging-market.md, wiki/entities/amkor.md, wiki/entities/ase-group.md, wiki/technologies/ucie.md]
 ---
@@ -71,6 +71,21 @@ Advanced packaging geopolitics refers to how national governments, corporations,
 - 中國 OSAT（JCET、Tongfu Microelectronics、CARSEM）積極投資異質整合能力
 - 中國研發機構（如中科院）在 Chiplet 互連、混合接合等領域加速發表
 - **SJ Semiconductor（鑫鑫半導體）2026-04-23 在 STAR Market 掛牌**：IPO 募資 ~RMB 50 億（~USD 6.9 億），市值 ~RMB 1,400 億（~USD 193 億）——是 2026 年 A 股最大 IPO；所有募資投入 Chiplet/3D 多晶片整合封裝；中國 2.5D 封裝市場佔有率 **~85%（中國）/ ~8%（全球）**；此次 IPO 是中國先進封裝國家戰略資本化的重要里程碑
+- **⭐ 玻璃基板：中國 BOE 進入 TGV 市場（2026-04）**：中國顯示器龍頭 BOE 正運作玻璃基板 TGV 試驗產線，TGV 技術有進展，計畫 **2026 年為 AI 晶片啟動玻璃基板量產**。BOE 擁有玻璃製造積累（顯示器玻璃），直接切入半導體用玻璃基板是供應鏈國產替代的新戰場。
+
+### 玻璃基板標準戰：美 vs 韓 vs 中（⭐ 2026-05 新增）
+
+玻璃基板已成為繼晶圓製程、HBM 之後的第三個地緣政治關鍵戰場：
+
+| 陣營 | 主要廠商 | 策略 | 時程目標 |
+|------|---------|------|---------|
+| **美國** | Intel | 技術領先路線圖，目標 2030 設立設計標準 | 2030 HVM |
+| **韓國** | Absolics（SKC）、Samsung SEMCO | 搶先量產定標準（First-to-scale sets standard） | 2026 年底量產（Absolics） |
+| **中國** | BOE、Lens Technology | 利用顯示器玻璃優勢切入 TGV 市場 | 2026 年 AI 晶片量產（BOE 目標） |
+
+**關鍵邏輯**：誰先建立玻璃基板設計規範（TGV pitch、尺寸、嵌入方式），全球 fabless 就會以此規範設計晶片——後進者即使技術達到，也需要漫長的互操作性驗證才能替代標準制定者。這與 USB-C、HBM 標準的歷史路徑相同。
+
+**Corning-Meta $6B 協議（2026-01）**：Corning 作為全球頂尖玻璃材料商，與 Meta 簽訂 60 億美元長期供應協議並合作 AI 基礎設施——強化 Corning 在玻璃基板材料供應鏈的核心地位，也將美國材料技術嵌入韓國廠商的供應鏈（SCHOTT/Corning/AGC/NEG 均為材料供應商）。
 
 ---
 

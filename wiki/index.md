@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-05-22
-**頁面總數 Total Pages**：146
-**原始來源數 Sources**：112
+**更新時間 Updated**：2026-05-23
+**頁面總數 Total Pages**：149
+**原始來源數 Sources**：115
 
 ---
 
@@ -58,6 +58,9 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-05-08_trendforce_skc-absolics-glass-substrate-2026]] — SKC/Absolics：2026年底量產全球首例玻璃基板；AMD/AWS測試確認；非嵌入型新專案；Apple M5/M6推測（2026-05-08）⭐新增
+- [[sources/2026-04-15_trendforce_korea-intel-glass-substrate-standards]] — 玻璃基板標準戰：Intel 2030路線圖 vs Absolics搶先量產 vs BOE中國進入；Corning-Meta $6B協議（2026-04-15）⭐新增
+- [[sources/2026-04-30_trendforce_ulcvd-glass-substrate-cpo-laser]] — ULCVD：全南大學超短脈衝雷射誘導CVD突破玻璃TGV/RDL三維互連瓶頸；CPO應用場景（2026-04-30）⭐新增
 - [[sources/2026-03-05_uciexpress_chiplet-summit-2026]] — Chiplet Summit 2026：UCIe-S Intel+Cadence「Cameron Creek」首次跨廠商互操作示範；UCIe 3.0 Best in Show；Eliyan 等新生態成員（2026-03-05）⭐新增
 - [[sources/2025-09-03_uciexpress_ucie30-spec]] — UCIe Consortium：UCIe 3.0 官方規格——48/64 GT/s；Raw Mode；100mm sideband；L2 idle 功率閘控；完整向下相容（2025-09-03）⭐新增
 - [[sources/2025-05-13_trendforce_top10-osat-2024]] — TrendForce：2024年全球OSAT前十大——ASE $18.54B（45%）；JCET +19.3%；HT-Tech +26%；前十大合計 $41.56B（2025-05-13）⭐新增

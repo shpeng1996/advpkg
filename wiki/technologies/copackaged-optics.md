@@ -1,9 +1,9 @@
 ---
 title: "共封裝光學元件 / Co-Packaged Optics (CPO) — TSMC-COUPE™ & Ecosystem"
 category: technology
-tags: [CPO, co-packaged-optics, COUPE, TSMC, GlobalFoundries, Samsung, photonics, AI, HPC, networking, OCI-MSA, DWDM, Broadcom, NVIDIA]
+tags: [CPO, co-packaged-optics, COUPE, TSMC, GlobalFoundries, Samsung, photonics, AI, HPC, networking, OCI-MSA, DWDM, Broadcom, NVIDIA, glass-substrate, ULCVD, TGV]
 created: 2026-04-25
-updated: 2026-05-21
+updated: 2026-05-23
 sources: [2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-05-07_trendforce_globalfoundries-silicon-photonics-scale-cpo, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow]
 related:
   - wiki/entities/tsmc.md
@@ -125,3 +125,16 @@ TSMC COUPE™ 與 GF SCALE 的競爭表明 CPO 市場正從「單一廠商主導
 - **AI GPU 平台**：NVIDIA Rubin/Feynman 時代的高頻寬光互連
 - **HPC 叢集**：降低節點間通訊能耗
 - **未來：Interposer CPO**（Level 3）：光學引擎與 ASIC 直接 interposer 整合，為 2028 年後的技術終態
+
+---
+
+## 玻璃基板與 CPO 的技術耦合 / Glass Substrate × CPO Intersection
+
+玻璃基板由於其**優良光學透明特性**（可讓光訊號穿透），正成為下一代 CPO 架構的理想基板材料。兩項技術的交叉點：
+
+1. **光學透明特性**：玻璃基板可同時承載電氣互連（TGV）和光波導（光訊號傳輸），有機基板無法實現此功能。
+2. **TGV 瓶頸**：在玻璃基板上形成 TGV（穿玻璃通孔）和 RDL（再分佈層）的三維互連製程是 CPO 用玻璃基板商業化的核心障礙。
+3. **ULCVD 突破（2026-04）**：全南大學 Han Seung-hoe 教授團隊開發超短脈衝雷射誘導 CVD（ULCVD），可在玻璃基板正背面同時無光罩直接刻寫導電碳電路，突破傳統 TGV/RDL 製程限制。後續計畫擴展至 Cu/Au 金屬配線材料（更適合半導體封裝要求）。
+4. **未來展望**：玻璃基板 CPO 在 2028–2030 年後可能成為「電氣+光學」整合封裝的通用平台，使 CPO 從「晶片封裝邊緣」走向「基板內嵌」的終極形態。
+
+*Source: [[sources/2026-04-30_trendforce_ulcvd-glass-substrate-cpo-laser]]*
