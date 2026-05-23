@@ -223,4 +223,46 @@ SKC 宣布將超過 ₩600 億（₩1 兆增資的 60%+）投入子公司 Absoli
 
 ### USHIO Paper 28.2 — 510mm×515mm 玻璃面板無拼接曝光（18 倍光罩面積）⭐ 里程碑
 
-**"First Demonstration of Stitching-
+**"First Demonstration of Stitching-Free Exposure over an Ultra-Large 18-Reticle Area with High-Resolution 1.5μm Line/Space on Glass Substrates"** — N. Sohara et al, USHIO
+
+傳統面板微影（lithography）在大面積玻璃基板上需要多次「拼接（stitching）」，導致圖案不連續或精度下降，限制精細線寬能力。
+
+**成果**：USHIO 展示在 **510mm × 515mm 玻璃基板**上，以大面積投影鏡組（large-area projector lens），在 **18 個光罩當量面積**內實現 **1.5µm L/S 無拼接曝光**：
+- 製程裕度（process margin）：22µm，可容納有機與玻璃基板厚度的典型變化
+- 18 倍光罩面積超越傳統晶圓步進機 **4 倍以上**
+- 1.5µm L/S 是面板級高效能 AI 封裝的關鍵細線寬能力（現有面板微影多停在 5–10µm）
+
+**wiki 含義**：USHIO 此論文是**面板級封裝微影技術的關鍵里程碑**——打通了「大面積（>300mm 晶圓）+ 超細線寬（≤2µm）+ 無拼接」三個條件同時滿足的路徑。這是 FOPLP/CoPoS/玻璃基板 AI 封裝走向量產的核心製程障礙之一的突破。
+
+### Resonac Paper 14.2 — 320mm×320mm 玻璃面板有機嵌入層 CMP（L/S=2/2µm）
+
+**"Panel CMP Co-planarization of Heterogeneous Interfaces for Damascene Organic Interposers (L/S = 2/2μm)"** — K. To et al, Resonac
+
+AI/HPC 先進封裝中，有機中介層（organic interposer）與 HBM 的整合需要更細 Cu 佈線（HBM4 需 Damascene 製程，優於現行 SAP 製程）：
+- 實驗展示：在 **320mm×320mm 玻璃面板**上，有機聚合物 Damascene 佈線 **L/S = 2/2µm**
+- 雙步 CMP 製程（Bulk Cu 去除 + 阻障金屬 CMP）實現 Cu/Ti/聚合物界面共平坦化，<100nm
+- 灰階 LDI（激光直接成像）同步形成通孔（via）與溝槽（trench），減少製程步驟
+- 後 CMP 步高（step height）< 100nm，L/S = 2/2µm 面板測試結構完整製作成功
+
+**wiki 含義**：Resonac 確認在玻璃面板上實現 2µm 等級 Damascene 佈線的製程可行性，是 HBM4 整合與下世代面板級有機中介層的核心製程使能技術。Resonac 在玻璃基板製程生態中的角色應記錄（CMP/清洗材料供應商）。
+
+### University of Florida Paper 11.2 — Cu/Co 超導體 RDL 互連（400 Gbps）
+
+**"Scalable Electroplated Cu and Co Metaconductor for Low Loss 112 to 400 Gbps Wired Communication Interconnects"** — S. Jeon et al, University of Florida
+
+高頻電氣互連的導體損耗是 112Gbps 以上 SerDes 的主要瓶頸（銅的 AC 阻抗隨頻率增加）：
+- 提出可擴展電鍍 Cu/Co 多層超導體（metaconductor）互連，直接替換現有銅佈線（不改幾何形狀與阻抗）
+- **插入損耗：0.065 dB/mm @ 37.5GHz**（vs 固體銅同減 0.087 dB/mm）
+- 在**低損耗玻璃基板**上以室溫電鍍製程製作 10 對多層結構
+- **製程相容於 RDL、中介層（interposer）、Chiplet 封裝**；支援 400Gbps 傳輸
+
+**wiki 含義**：Cu/Co 超導體是在**玻璃基板上**製作的高頻互連新材料，代表玻璃基板不只是「平整的被動基底」，其低損耗特性已成為先進電氣互連材料研發的重要平台基礎。
+
+---
+
+## 相關技術 / Related Technologies
+
+- [[technologies/copos]] — TSMC CoPoS 採用玻璃面板（310mm）
+- [[technologies/foplp]] — FOPLP 玻璃面板路線（vs 有機面板）
+- [[technologies/hybrid-bonding]] — 混合接合 + 玻璃基板的可靠性交叉挑戰
+- [[technologies/emib]] — Intel EMIB + 厚芯玻璃基板整合

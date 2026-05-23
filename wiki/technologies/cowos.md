@@ -117,4 +117,25 @@ CoWoS 將多顆晶片（GPU、HBM 等）放置於一個中介層（Interposer）
 
 *Source: Semiconductor Digest 2026-05-20（ECTC 2026 技術展示摘要）*
 
-**Paper 6.3 — TSMC
+**Paper 6.3 — TSMC：CoWoS EMC/Si 界面破裂分析**
+
+TSMC 以破裂力學（fracture mechanics）建模結合實驗，研究 CoWoS 中環氧塑封材料（EMC）/矽晶片界面的失效機制：
+- **主要失效模式**：EMC/Si 界面剝離（delamination），集中在矽晶片角落
+- **關鍵發現**：**中介層剛度（interposer stiffness）是抑制失效的關鍵因子**——剛度越高，CTE 失配引發的應力越小
+- 實驗提供材料性質量化數據，指導 EMC 性能優化與下世代 CoWoS 設計
+
+**Paper 37.15 — TSMC：CoWoS-R 板級可靠性（OCP Accelerator Module）**
+
+針對 **3.3× 光罩大小的 CoWoS-R** 封裝在 OCP Accelerator Module（OAM）板上的板級可靠性（BLR）：
+- 測試：溫度循環（TCT）、振動、衝擊
+- **TCT 是最關鍵的 BGA 破壞因子**：在基板側與 PCB 側均誘發嚴重 BGA 裂紋
+- FEA 模型模擬熱循環應力，識別 BGA 疲勞熱點
+- 對 PCB 材料屬性的 Bulk / Regional / 走線映射三種解析度建模比較
+
+**wiki 含義**：TSMC 公開 CoWoS 可靠性研究顯示，隨著 reticle 尺寸繼續擴大（目標 14× 倍光罩），EMC 翹曲應力與 BGA 疲勞是商業化的關鍵工程挑戰，需要材料、基板與系統整合層面的協同優化。
+
+### OSAT 生態系補位 / OSAT Supplement Ecosystem
+| 廠商 | 技術 | 產能目標（2026 年底） |
+|------|------|---------------------|
+| ASE | CoWoP（面板版）| 20,000–25,000 片/月 |
+| Amkor | FOCoS（扇
