@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-05-23
-**頁面總數 Total Pages**：149
-**原始來源數 Sources**：115
+**更新時間 Updated**：2026-05-24
+**頁面總數 Total Pages**：151
+**原始來源數 Sources**：117
 
 ---
 
@@ -58,6 +58,8 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-05-20_semiconductor-digest_ectc2026-showcase-papers]] — ECTC 2026 技術展示：450nm Cu-Cu HB 98%良率（AMAT）；ASML D2W overlay <80nm；6.4Tbps CPO（AIST）；USHIO 510mm 玻璃18倍光罩無拼接（2026-05-20）⭐新增
+- [[sources/2026-04-19_semiwiki_apple-m5-cucu-hybrid-bonding]] — Apple M5 Cu-Cu混合接合確認出貨（2026-03）；Unimicron ICEP-HBS Japan確認⭐新增
 - [[sources/2026-05-08_trendforce_skc-absolics-glass-substrate-2026]] — SKC/Absolics：2026年底量產全球首例玻璃基板；AMD/AWS測試確認；非嵌入型新專案；Apple M5/M6推測（2026-05-08）⭐新增
 - [[sources/2026-04-15_trendforce_korea-intel-glass-substrate-standards]] — 玻璃基板標準戰：Intel 2030路線圖 vs Absolics搶先量產 vs BOE中國進入；Corning-Meta $6B協議（2026-04-15）⭐新增
 - [[sources/2026-04-30_trendforce_ulcvd-glass-substrate-cpo-laser]] — ULCVD：全南大學超短脈衝雷射誘導CVD突破玻璃TGV/RDL三維互連瓶頸；CPO應用場景（2026-04-30）⭐新增

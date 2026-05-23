@@ -2,6 +2,20 @@
 
 ---
 
+## [2026-05-23] query | ASML C2W（W2W）混合接合最新動態、競爭差異與優勢
+- 查詢頁面：entities/asml.md、technologies/hybrid-bonding.md、entities/besi.md、entities/ev-group.md
+- 搜尋來源：TrendForce（2026-03、2026-05-01、2025-10）、The Elec（2026-04-28 研討會）、Bits&Chips、Yahoo Finance
+- 主要新知識：
+  - ASML 瞄準的是 **W2W**（非 C2W）；基於 Twinscan 雙站專利路徑（Inha 大學 2026-04-28 分析）
+  - W2W 對齊精度目標 ~5nm（Maglev）；遠優於現有 EV Group（~200–300nm）
+  - Twinscan 雙站架構：量測站 + 接合站並行 → 高吞吐量
+  - 觸發市場：HBM5（20Hi，2029）— SK Hynix 確認採用混合接合
+  - 混合接合設備市場 2028F：~$2B；D2W 僅佔 ~$275M（4.5%）
+  - ASML 官方否認正式啟動；CEO 2026-04-15 財報電話暗示興趣
+  - 韓國競爭者（SEMES、Hanwha、Hanmi）仍以 D2W/C2W 為主
+- 更新頁面：entities/asml.md（新增 W2W 路徑、精度比較、市場地位完整更新）
+- 已存檔：無（查詢型，分析整合於 wiki 更新中）
+
 ## [2026-05-22] query | 半導體前段設備商對 C2W 的市場布局與策略
 - 查詢頁面：hybrid-bonding.md、entities/besi.md、entities/asmpt.md、entities/ev-group.md、entities/asml.md、entities/tel.md、sources/多篇
 - 已存檔：analyses/2026-05-22_c2w-equipment-vendor-strategies.md
@@ -865,3 +879,26 @@
   1. **玻璃基板商業化加速（2026-05-08）**：Absolics 已完成電氣/訊號性能驗證並進入良率穩定階段，**AMD 和 AWS 確認正在測試原型品**——這是第一次有具體北美 hyperscaler 名稱出現在 Absolics 客戶驗證清單中，大幅增加 2026 年底量產的可信度。同時，新增「非嵌入型玻璃基板」供應美國通訊晶片客戶，顯示 Absolics 以雙軌策略同時鎖定高性能 AI 和相對平易的通訊市場，降低整體商業化風險。
   2. **玻璃基板標準戰成型（2026-04-15）**：Intel（2030 標準路線圖）、Absolics/韓國（搶先量產定標準）、中國 BOE（顯示器玻璃切入 TGV）三方格局首次清晰呈現。控制設計標準意味著全球 fabless 的晶片設計需匹配其規格——這是比單純量產能力更深層的產業護城河。**Corning-Meta $6B 協議**（2026-01）將美國材料商嵌入韓國廠商供應鏈，形成跨國利益交織。
   3. **ULCVD 技術突破（2026-04-30）**：全南大學開發的超短脈衝雷射誘導 CVD 技術，在玻璃基板正背面同時無光罩刻寫碳電路，電導率達文獻最佳 LIG 水準，且可在複雜 3D 曲面和通孔內部成形互連——直接解決 TGV/RDL 三維互連製程是 CPO 用玻璃基板的最大瓶頸。後續擴展至 Cu/Au 材料將使此技術具備量產潛力，是玻璃基板 CPO 路線的重要技術儲備。
+
+## [2026-05-24] collect | 每日自動蒐集 — 先進封裝最新動態（第三十次）
+- 搜尋查詢數：7 組（TSMC CoWoS/SoIC、HBM4 記憶體、ECTC 2026 論文展示、Intel EMIB/Foveros、FOPLP/面板封裝、混合接合 Cu-Cu / Apple M5、NVIDIA Rubin/Feynman 封裝更新）
+- 成功抓取：2 篇（articles/ 2, papers/ 0, reports/ 0）
+  - 2026-05-20_semiconductor-digest_ectc2026-showcase-papers.md（Semiconductor Digest，發布 2026-05-20；ECTC 2026 技術展示詳細論文摘要，含 Applied Materials 450nm 98% HB、ASML D2W <80nm、AIST 6.4Tbps CPO、USHIO 510mm 無拼接微影、Resonac 2/2µm 面板 CMP 等 14 篇論文）
+  - 2026-04-19_semiwiki_apple-m5-cucu-hybrid-bonding-shipped.md（SemiWiki，發布 2026-04-19；Apple M5 Cu-Cu 混合接合確認出貨 2026-03，Unimicron ICEP-HBS Japan 投影片確認）
+- 失敗/跳過：多篇（SemiEngineering FOPLP 文章 JS 渲染；SemiWiki Apple M5 需登入；CEA-Leti ECTC 2026 SemiWiki 文章已收錄；TSMC/NVIDIA/Intel 近期搜尋結果多為已收錄文章；TrendForce 2026-05-16 後無新 advanced packaging 文章出現在搜尋結果）
+- 學術代理：UNAVAILABLE ✗（ieeexplore、arxiv 仍受限；ECTC 2026 正式論文 2026-05-26 開始）
+- 新增 raw 檔案：2 篇（articles/ 2）
+- 新增 wiki 頁面：2 頁
+  - wiki/sources/2026-05-20_semiconductor-digest_ectc2026-showcase-papers.md
+  - wiki/sources/2026-04-19_semiwiki_apple-m5-cucu-hybrid-bonding.md
+- 更新 wiki 頁面：6 頁
+  - wiki/technologies/hybrid-bonding.md（新增 Apple M5 消費性電子應用里程碑 2026-03；ECTC 2026 新增：KIOXIA 3D NAND CBA W2W、ASML D2W <80nm、Nopion SACA-X 奈米焊料替代路徑；updated 2026-05-24）
+  - wiki/technologies/glass-substrate.md（新增 ECTC 2026：USHIO 510mm 18-reticle 無拼接微影里程碑；Resonac 320mm 玻璃面板 2/2µm CMP；Cu/Co 超導體 400Gbps；updated 2026-05-24）
+  - wiki/technologies/copackaged-optics.md（新增 ECTC 2026：AIST 6.4Tbps AOP CPO 基板；GF+Corning GLASSBRIDGE™ 可拆卸連接器 <1.5dB；Intel 玻璃耦合器 -1.55dB；updated 2026-05-24）
+  - wiki/technologies/cowos.md（新增 TSMC ECTC 2026 可靠性論文：EMC 破裂分析、CoWoS-R OCP 板級 BGA 疲勞；updated 2026-05-24）
+  - wiki/entities/asml.md（ASML D2W 混合接合 Overlay <80nm 技術從「評估」升級為「已提交 ECTC 2026 技術成果」；updated 2026-05-24）
+  - wiki/index.md（頁面數 149→151；來源數 115→117；2 個新 sources 頁面）
+- 主要新知識：
+  1. **ECTC 2026 開幕前技術預告（2026-05-20）——多項關鍵里程碑集中揭露**：Applied Materials 展示 450nm Cu-Cu W2W HB **98% 良率**（20M 互連點）並指出 <300nm 路徑；USHIO 在 510mm×515mm 玻璃基板實現 **18 倍光罩面積無拼接 1.5µm L/S 曝光**（面板微影里程碑）；Resonac 在 320mm 玻璃面板驗證 L/S=2/2µm Damascene CMP。這三項直接解決了玻璃基板/面板封裝量產的核心製程瓶頸，意義深遠。
+  2. **Apple M5 Cu-Cu 混合接合 2026-03 出貨確認（Unimicron ICEP-HBS 2026）**：這是**消費性電子產品首次確認採用 Cu-Cu 混合接合量產出貨**，標誌著混合接合從 HPC/AI 利基場景正式進入大批量消費電子時代。Unimicron 確認為 Apple M5 混合接合供應鏈成員（wiki 新增記錄）。
+  3. **AIST + GF+Corning + Intel CPO 三論文共同確認「可拆卸低損耗光學互連」的製造可行性**：6.4Tbps AOP 基板（AIST）、GLASSBRIDGE™ <1.5dB 可拆卸連接器（GF+Corning）、Intel 玻璃耦合器 -1.55dB >100 次插拔無退化——CPO 三大商業化必要條件（高密度、低損耗、可拆卸服務性）在同一 ECTC 大會中同時獲得技術驗證，是 CPO 走向 2027–2028 量產的強烈訊號。

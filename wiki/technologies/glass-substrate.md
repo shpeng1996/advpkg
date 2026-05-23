@@ -3,8 +3,8 @@ title: "玻璃基板 / Glass Core Substrate"
 category: technology
 tags: [glass-substrate, TGV, panel-level, FC-BGA, CoPoS, Absolics, DNP, Rapidus, warpage, SeWaRe, glass-interposer, BOE, ULCVD, non-embedding]
 created: 2026-05-08
-updated: 2026-05-23
-sources: [2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-05-05_trendforce-insights_glass-substrate-development, 2026-03-03_trendforce_skc-absolics-glass-1t]
+updated: 2026-05-24
+sources: [2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-05-05_trendforce-insights_glass-substrate-development, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers]
 related:
   - wiki/technologies/copos.md
   - wiki/technologies/foplp.md
@@ -217,9 +217,10 @@ SKC 宣布將超過 ₩600 億（₩1 兆增資的 60%+）投入子公司 Absoli
 
 ---
 
-## 相關技術 / Related Technologies
+## ⭐ ECTC 2026 玻璃基板製程突破（2026-05-24 新增）
 
-- [[technologies/copos]] — TSMC CoPoS 採用玻璃面板（310mm）
-- [[technologies/foplp]] — FOPLP 玻璃面板路線（vs 有機面板）
-- [[technologies/hybrid-bonding]] — 混合接合 + 玻璃基板的可靠性交叉挑戰
-- [[technologies/emib]] — Intel EMIB + 厚芯玻璃基板整合
+*Source: Semiconductor Digest 2026-05-20（ECTC 2026 技術展示摘要）*
+
+### USHIO Paper 28.2 — 510mm×515mm 玻璃面板無拼接曝光（18 倍光罩面積）⭐ 里程碑
+
+**"First Demonstration of Stitching-
