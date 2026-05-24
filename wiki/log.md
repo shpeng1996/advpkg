@@ -902,3 +902,29 @@
   1. **ECTC 2026 開幕前技術預告（2026-05-20）——多項關鍵里程碑集中揭露**：Applied Materials 展示 450nm Cu-Cu W2W HB **98% 良率**（20M 互連點）並指出 <300nm 路徑；USHIO 在 510mm×515mm 玻璃基板實現 **18 倍光罩面積無拼接 1.5µm L/S 曝光**（面板微影里程碑）；Resonac 在 320mm 玻璃面板驗證 L/S=2/2µm Damascene CMP。這三項直接解決了玻璃基板/面板封裝量產的核心製程瓶頸，意義深遠。
   2. **Apple M5 Cu-Cu 混合接合 2026-03 出貨確認（Unimicron ICEP-HBS 2026）**：這是**消費性電子產品首次確認採用 Cu-Cu 混合接合量產出貨**，標誌著混合接合從 HPC/AI 利基場景正式進入大批量消費電子時代。Unimicron 確認為 Apple M5 混合接合供應鏈成員（wiki 新增記錄）。
   3. **AIST + GF+Corning + Intel CPO 三論文共同確認「可拆卸低損耗光學互連」的製造可行性**：6.4Tbps AOP 基板（AIST）、GLASSBRIDGE™ <1.5dB 可拆卸連接器（GF+Corning）、Intel 玻璃耦合器 -1.55dB >100 次插拔無退化——CPO 三大商業化必要條件（高密度、低損耗、可拆卸服務性）在同一 ECTC 大會中同時獲得技術驗證，是 CPO 走向 2027–2028 量產的強烈訊號。
+
+## [2026-05-25] collect | 每日自動蒐集 — 先進封裝最新動態（第三十一次）
+- 搜尋查詢數：7 組（TSMC CoWoS/SoIC、HBM4 記憶體、ECTC 2026 論文、Intel EMIB/Foveros、FOPLP/面板封裝、Applied Materials 設備市場、AMD Taiwan 投資/ZAM 記憶體）
+- 成功抓取：3 篇（articles/ 3, papers/ 0, reports/ 0）
+  - 2026-05-21_trendforce_amd-lisa-su-tsmc-10b-taiwan-packaging.md（TrendForce，發布 2026-05-21；AMD US$10B 台灣封裝投資；Venus 2nm 量產；EFB 架構；PTI 面板型 EFB 首款）
+  - 2026-05-22_trendforce_psmc-intel-saimemory-via-in-one-hb3dm.md（TrendForce，發布 2026-05-22；PSMC+Intel+SAIMEMORY ZAM/HB3DM Via-in-One TSV 架構；5.3TB/s；2029 量產）
+  - 2026-05-15_trendforce_applied-materials-packaging-surge-50pct.md（TrendForce，發布 2026-05-15；AMAT >50% 封裝設備成長；MATCH Act 風險；$7.91B 2QFY26）
+- 失敗/跳過：多篇（SemiEngineering TSMC/CoWoS 文章 JS 渲染；ieeexplore 仍受限；Samsung 手機 HBM 銅柱文章無法直接 fetch；大部分 TSMC/HBM4/Intel 搜尋結果為已收錄舊文章；Huawei DoB SSD 文章因與 wiki 核心主題（AI/HPC 封裝）關聯度較低，以「低優先」排除）
+- 學術代理：UNAVAILABLE ✗（ieeexplore、arxiv 仍受限；ECTC 2026 論文全文 2026-05-26 才正式開放）
+- 新增 raw 檔案：3 篇（articles/ 3）
+- 新增 wiki 頁面：3 頁
+  - wiki/sources/2026-05-21_trendforce_amd-lisa-su-tsmc-10b-packaging.md
+  - wiki/sources/2026-05-22_trendforce_psmc-intel-saimemory-hb3dm.md
+  - wiki/sources/2026-05-15_trendforce_applied-materials-packaging-surge.md
+- 更新 wiki 頁面：7 頁
+  - wiki/entities/amd.md（更新：Venice TSMC 2nm 量產確認；EFB 架構新增；$10B 台灣投資；PTI 面板型 EFB 業界首款；伺服器 CPU CAGR >35% / 2030 $120B；CPU:GPU 比 1:4→1:1 預測；關係更新含 ASE/SPIL/PTI；updated 2026-05-25）
+  - wiki/entities/intel.md（新增：ZAM/HB3DM PSMC+SAIMEMORY 聯盟；VLSI 2026 技術展示；Via-in-One TSV 規格；2029 量產路線；updated 2026-05-25）
+  - wiki/technologies/hbm4.md（新增：ZAM/HB3DM 競爭技術比較段落；5.3TB/s vs 2TB/s 量化比較；Via-in-One TSV 架構說明；updated 2026-05-25）
+  - wiki/concepts/advanced-packaging-market.md（新增：AMAT >50% 封裝設備成長量化指標；2QFY26 財報數字；設備業主要成長引擎確認；updated 2026-05-25）
+  - wiki/concepts/geopolitics-advanced-packaging.md（新增：MATCH Act 詳情——DUV 浸潤式微影出口禁令+現有設備服務禁止；AMAT $710M 衝擊預估；updated 2026-05-25）
+  - wiki/index.md（頁面數 151→154；來源數 117→120；3 個新 sources 頁面）
+  - wiki/log.md（本次日誌條目）
+- 主要新知識：
+  1. **ZAM/HB3DM 三方聯盟技術規格首次公開（2026-05-22）**：Intel + SAIMEMORY + PSMC 在 VLSI Symposium 2026（6月）前釋出技術摘要，確認 Via-in-One TSV 架構達 ~5.3 TB/s 單模組頻寬（>2.5× HBM4），同時能耗 <0.7 pJ/bit——這是 wiki 首次記錄具體 ZAM 量化規格，也揭示 Intel 在記憶體架構上的雙線策略：推廣 EMIB（封裝平台）同時藉由 ZAM 挑戰 HBM 的整體供應鏈壟斷。2029 量產若成真，將在 HBM5 時代形成正面衝突。
+  2. **AMD EFB 架構正式揭露 + $10B 台灣封裝投資（2026-05-21）**：AMD 確認 Venice EPYC（Zen6）以 TSMC 2nm 量產，並明確以 **EFB（2.5D wafer-based bridge interconnect）** 作為 Intel EMIB 和 TSMC CoWoS-L 的競爭替代方案，與 ASE/SPIL 合作認證。**PTI 完成業界首款面板型 EFB 認證**是特別值得關注的里程碑——顯示 2.5D 橋接互連技術已從矽晶圓基板延伸到面板基板，這是 FOPLP 進入 CPU 封裝的關鍵突破。
+  3. **Applied Materials 2026 封裝設備 >50% 成長確認業界最高市場熱度（2026-05-15）**：AMAT 封裝設備業務成長率大幅高於原指引（>20%→>50%），在所有大型設備廠商中最高，確認先進封裝已成為半導體設備市場的核心成長引擎。同時揭露 **MATCH Act 立法風險**（DUV 服務禁止）——這是比 Entity List 更具穿透力的管制工具，已被納入 AMAT $710M 衝擊預估。

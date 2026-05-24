@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-05-24
-**頁面總數 Total Pages**：151
-**原始來源數 Sources**：117
+**更新時間 Updated**：2026-05-25
+**頁面總數 Total Pages**：154
+**原始來源數 Sources**：120
 
 ---
 
@@ -58,6 +58,9 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-05-22_trendforce_psmc-intel-saimemory-hb3dm]] — PSMC+Intel+SAIMEMORY：ZAM/HB3DM 9層 Via-in-One 3D記憶體；5.3TB/s>2.5×HBM4；原型2027量產2029（2026-05-22）⭐新增
+- [[sources/2026-05-21_trendforce_amd-lisa-su-tsmc-10b-packaging]] — AMD Lisa Su訪TSMC；>US$10B台灣封裝投資；Venice TSMC 2nm量產；EFB+PTI面板型首款認證；COMPUTEX 2026（2026-05-21）⭐新增
+- [[sources/2026-05-15_trendforce_applied-materials-packaging-surge]] — Applied Materials >50%封裝設備成長2026；2QFY26 $7.91B；MATCH Act風險$710M衝擊（2026-05-15）⭐新增
 - [[sources/2026-05-20_semiconductor-digest_ectc2026-showcase-papers]] — ECTC 2026 技術展示：450nm Cu-Cu HB 98%良率（AMAT）；ASML D2W overlay <80nm；6.4Tbps CPO（AIST）；USHIO 510mm 玻璃18倍光罩無拼接（2026-05-20）⭐新增
 - [[sources/2026-04-19_semiwiki_apple-m5-cucu-hybrid-bonding]] — Apple M5 Cu-Cu混合接合確認出貨（2026-03）；Unimicron ICEP-HBS Japan確認⭐新增
 - [[sources/2026-05-08_trendforce_skc-absolics-glass-substrate-2026]] — SKC/Absolics：2026年底量產全球首例玻璃基板；AMD/AWS測試確認；非嵌入型新專案；Apple M5/M6推測（2026-05-08）⭐新增
@@ -174,12 +177,4 @@
 - [[sources/2024-02-09_semianalysis_hybrid-bonding-process-flow]] — SemiAnalysis：Hybrid bonding process flow；W2W vs D2W、sub-50nm alignment、ISO 3/2/1 潔淨室門檻（2024-02-09）⭐新增
 - [[sources/2023-07-26_semianalysis_cowos-hbm-supply-chain]] — SemiAnalysis：CoWoS-S/HBM supply-chain process flow；TSV、RDL、UBM、underfill、thinning（2023-07-26）⭐新增
 - [[sources/2023-07-05_semianalysis_ai-capacity-cowos-hbm]] — SemiAnalysis：AI capacity constraints；CoWoS + HBM 成為 GenAI 第一波供應瓶頸（2023-07-05）⭐新增
-- [[sources/2022-11-01_semianalysis_packaging-gets-blurry]] — SemiAnalysis：Fanout、ABF、organic interposer、embedded bridge 使 2.1D/2.3D/2.5D 邊界模糊（2022-11-01）⭐新增
-
----
-
-## 分析報告 Analyses
-
-- [[analyses/2026-05-22_c2w-equipment-vendor-strategies]] — 半導體設備商 C2W 市場布局與策略：AMAT/TEL/ASML/Lam/Besi/ASMPT/EVG 各廠策略矩陣⭐新增
-- [[analyses/2026-05-19_lint]] — Wiki 健康檢查報告 2026-05-19：發現重複 URL、HBM4 混合接合敘述不一致、高頻實體缺頁
-- [[analyses/2026-05-03_lint]] — Wiki 健康檢查報告 2026-05-03：發現孤立頁面、索引不一致、知識空缺追蹤
+- [[sources/2022-11-01_semianalysis_packaging-gets-blurry]] — Se
