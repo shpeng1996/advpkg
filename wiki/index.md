@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-05-25
-**頁面總數 Total Pages**：154
-**原始來源數 Sources**：120
+**更新時間 Updated**：2026-05-26
+**頁面總數 Total Pages**：158
+**原始來源數 Sources**：124
 
 ---
 
@@ -58,6 +58,10 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-05-25_trendforce_hbm-gpu-separation-optical]] — GPU-HBM 分離架構討論；光學互連突破岸線限制；OSAT 監控中（2026-05-25）⭐新增
+- [[sources/2026-05-25_trendforce_amd-zen7-a14-pti-foplp]] — AMD Zen 7 (Grimlock) TSMC A14；PTI FOPLP 評估；面板型 EFB 業界首款驗證（2026-05-25）⭐新增
+- [[sources/2026-05-22_trendforce_micron-hbm4e-2027-tsmc]] — Micron HBM4E 2027 TSMC 邏輯晶片確認；1-gamma DRAM；India 全訂滿（2026-05-22）⭐新增
+- [[sources/2026-05-19_trendforce_schmid-tsmc-plp-310mm]] — SCHMID：TSMC CoPoS 310×310mm 推進；三種面板尺寸標準化；Absolics 試產（2026-05-19）⭐新增
 - [[sources/2026-05-22_trendforce_psmc-intel-saimemory-hb3dm]] — PSMC+Intel+SAIMEMORY：ZAM/HB3DM 9層 Via-in-One 3D記憶體；5.3TB/s>2.5×HBM4；原型2027量產2029（2026-05-22）⭐新增
 - [[sources/2026-05-21_trendforce_amd-lisa-su-tsmc-10b-packaging]] — AMD Lisa Su訪TSMC；>US$10B台灣封裝投資；Venice TSMC 2nm量產；EFB+PTI面板型首款認證；COMPUTEX 2026（2026-05-21）⭐新增
 - [[sources/2026-05-15_trendforce_applied-materials-packaging-surge]] — Applied Materials >50%封裝設備成長2026；2QFY26 $7.91B；MATCH Act風險$710M衝擊（2026-05-15）⭐新增

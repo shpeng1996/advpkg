@@ -928,3 +928,30 @@
   1. **ZAM/HB3DM 三方聯盟技術規格首次公開（2026-05-22）**：Intel + SAIMEMORY + PSMC 在 VLSI Symposium 2026（6月）前釋出技術摘要，確認 Via-in-One TSV 架構達 ~5.3 TB/s 單模組頻寬（>2.5× HBM4），同時能耗 <0.7 pJ/bit——這是 wiki 首次記錄具體 ZAM 量化規格，也揭示 Intel 在記憶體架構上的雙線策略：推廣 EMIB（封裝平台）同時藉由 ZAM 挑戰 HBM 的整體供應鏈壟斷。2029 量產若成真，將在 HBM5 時代形成正面衝突。
   2. **AMD EFB 架構正式揭露 + $10B 台灣封裝投資（2026-05-21）**：AMD 確認 Venice EPYC（Zen6）以 TSMC 2nm 量產，並明確以 **EFB（2.5D wafer-based bridge interconnect）** 作為 Intel EMIB 和 TSMC CoWoS-L 的競爭替代方案，與 ASE/SPIL 合作認證。**PTI 完成業界首款面板型 EFB 認證**是特別值得關注的里程碑——顯示 2.5D 橋接互連技術已從矽晶圓基板延伸到面板基板，這是 FOPLP 進入 CPU 封裝的關鍵突破。
   3. **Applied Materials 2026 封裝設備 >50% 成長確認業界最高市場熱度（2026-05-15）**：AMAT 封裝設備業務成長率大幅高於原指引（>20%→>50%），在所有大型設備廠商中最高，確認先進封裝已成為半導體設備市場的核心成長引擎。同時揭露 **MATCH Act 立法風險**（DUV 服務禁止）——這是比 Entity List 更具穿透力的管制工具，已被納入 AMAT $710M 衝擊預估。
+
+## [2026-05-26] collect | 每日自動蒐集 — 先進封裝最新動態（第三十二次）
+- 搜尋查詢數：7 組（TSMC CoWoS/SoIC、HBM4 記憶體、ECTC 2026 論文、Intel EMIB/Foveros、COMPUTEX 2026 封裝公告、FOPLP/CoPoS/玻璃基板、UCIe 標準更新）
+- 成功抓取：4 篇（articles/ 4, papers/ 0, reports/ 0）
+  - 2026-05-19_trendforce_schmid-tsmc-plp-310mm-glass-integration.md（TrendForce，發布 2026-05-19；SCHMID 揭示 TSMC CoPoS 310×310mm 推進與三種面板尺寸標準化格局）
+  - 2026-05-22_trendforce_micron-hbm4e-2027-tsmc-logic-dies.md（TrendForce，發布 2026-05-22；Micron HBM4E 2027 量產確認，TSMC 邏輯晶片，India 全訂滿）
+  - 2026-05-25_trendforce_amd-zen7-a14-pti-foplp-computex.md（TrendForce，發布 2026-05-25；AMD Zen 7 TSMC A14 + PTI FOPLP 評估；面板型 EFB 業界首款 AMD 確認）
+  - 2026-05-25_trendforce_hbm-gpu-separation-optical-links.md（TrendForce，發布 2026-05-25；GPU-HBM 分離封裝架構討論；光學互連突破岸線限制）
+- 失敗/跳過：多篇（Digitimes Lam Research PLP CoE 文章超出 provenance 限制；SemiEngineering 面板封裝文章 JS 渲染；ieeexplore ECTC 2026 正式論文仍限制；大部分 TSMC/HBM/Intel 搜尋結果為已收錄舊文章；COMPUTEX 2026 尚未正式開幕（6/2–5），相關發表暫無）
+- 學術代理：UNAVAILABLE ✗（ieeexplore、arxiv 仍受限）
+- 新增 wiki 頁面：4 頁（sources 4 篇）
+  - wiki/sources/2026-05-19_trendforce_schmid-tsmc-plp-310mm.md
+  - wiki/sources/2026-05-22_trendforce_micron-hbm4e-2027-tsmc.md
+  - wiki/sources/2026-05-25_trendforce_amd-zen7-a14-pti-foplp.md
+  - wiki/sources/2026-05-25_trendforce_hbm-gpu-separation-optical.md
+- 更新 wiki 頁面：6 頁
+  - wiki/entities/amd.md（Zen 7 Grimlock 代號、TSMC A14、PTI FOPLP、面板型 EFB 首款、224MB L3/CCD、IPC +15–25%；updated 2026-05-26）
+  - wiki/entities/micron.md（HBM4E 2027 TSMC 邏輯晶片確認、1-gamma DRAM、Idaho 1 提前至 2027 中、India 全訂滿；updated 2026-05-26）
+  - wiki/technologies/foplp.md（PTI 面板型 2.5D EFB 業界首款驗證，FOPLP 進入 CPU 封裝里程碑；updated 2026-05-26）
+  - wiki/technologies/hbm4.md（Micron HBM4E TSMC 邏輯晶片 + 1-gamma DRAM；GPU-HBM 分離架構探索；岸線限制說明；updated 2026-05-26）
+  - wiki/technologies/copos.md（三種面板尺寸標準化格局 310/510/600mm；SCHMID 供應鏈視角；PLP 市場 3–4× 預測；updated 2026-05-26）
+  - wiki/technologies/copackaged-optics.md（板內 GPU-HBM 光互連新興場景；updated 2026-05-26）
+  - wiki/index.md（頁面數 154→158；來源數 120→124；4 個新 sources 頁面）
+- 主要新知識：
+  1. **AMD Zen 7（Grimlock）= TSMC A14 + PTI FOPLP 評估 + 面板型 EFB 業界首款（2026-05-25）**：AMD CEO Lisa Su COMPUTEX 前親訪 PTI，AMD 公開確認 PTI 已完成面板型 2.5D EFB 互連首次驗證——這是 FOPLP 進入旗艦 CPU 封裝（非僅 AI ASIC）的關鍵里程碑。EFB 從矽晶圓延伸到面板基板，直接將 TSMC CoWoS-L / Intel EMIB 的 2.5D 橋接互連帶入低成本面板架構。
+  2. **GPU-HBM 分離架構探索浮現（2026-05-25）**：韓國主要記憶體廠商研究員首次在媒體上公開討論「GPU 與 HBM 分置不同封裝、光學互連連接」的架構，這是對當前 2.5D CoWoS + HBM 緊耦合模式的根本性挑戰。此架構可突破岸線（shoreline）限制，讓 GPU 支援數倍現有 HBM 容量，但光子元件縮小挑戰是最大技術障礙。此訊號說明業界已開始為 HBM 垂直堆疊「達到天花板」做架構儲備。
+  3. **Micron HBM4E 2027 量產路線圖確認 + TSMC 邏輯晶片雙軌（standard + custom）（2026-05-22）**：Micron 首款 HBM4E 為 JEDEC 標準版（2027），邏輯晶片均由 TSMC 代工，確認 TSMC 成為三大 HBM 廠商的共同邏輯晶片供應商。底層 DRAM 從 1-beta 升至 1-gamma，India 產能全訂滿，memory shortage 延伸至 2028+ 已超出多數業界預期。

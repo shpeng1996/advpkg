@@ -3,7 +3,7 @@ title: "CoPoS — Chip-on-Panel-on-Substrate"
 category: technology
 tags: [panel-level-packaging, FOPLP, TSMC, CoPoS, AI, HPC, AP7, InFO]
 created: 2026-04-25
-updated: 2026-05-08
+updated: 2026-05-26
 sources: [2026-04-13_trendforce_copos-pilot, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2025-09-12_trendforce_foplp-competitive-landscape-2025, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026]
 related:
   - wiki/technologies/cowos.md
@@ -136,3 +136,25 @@ FOPLP/CoPoS 相關廠商動態（截至 2026-04）：
 - 面板級翹曲控制的根本解決方案？
 - Amkor、ASE 的面板級技術（FOCoS、CoWoP）能否提前量產搶佔市場？
 - CoPoS 的成本優勢是否真能彌補前期投入與良率爬坡的代價？
+
+---
+## 2026-05-26 更新 / Update
+
+**生態系面板尺寸標準化格局（SCHMID Q4 2025 財報電話，2026-05-19）**⭐
+
+SCHMID（德國 PCB/IC 基板設備商）揭示：TSMC、Intel、Samsung 及其供應鏈正在標準化**三種面板尺寸**：
+
+| 面板尺寸 | 狀態 | 備註 |
+|---------|------|------|
+| **310×310 mm** | TSMC CoPoS 主力推進中 | 評估玻璃整合；CoPoS 量產目標 2028 |
+| **510×515 mm** | USHIO 已展示無拼接微影（ECTC 2026）| 18 倍光罩面積；L/S=1.5µm |
+| **600×600 mm** | 探索中 | 更大面積 AI 晶片需求驅動 |
+
+**供應鏈動態**：
+- Intel 透過 Ibiden + Unimicron 間接參與 SCHMID 面板封裝供應鏈
+- Samsung + SEMCO 正推進玻璃核心基板採用
+- SKC/Absolics（佐治亞廠，全球首座玻璃基板量產線）已進入小量試產，確認多個全球一線 HPC/AI 客戶
+
+**市場預測**：PLP 市場到 2030 年可成長 3–4 倍（SCHMID CSO Roland Rettenmaier）
+
+*Source: TrendForce 2026-05-19 (citing Investing.com SCHMID Q4 2025 earnings call, Economic Daily News, The Elec)*

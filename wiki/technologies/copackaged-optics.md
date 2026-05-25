@@ -3,7 +3,7 @@ title: "共封裝光學元件 / Co-Packaged Optics (CPO) — TSMC-COUPE™ & Eco
 category: technology
 tags: [CPO, co-packaged-optics, COUPE, TSMC, GlobalFoundries, Samsung, photonics, AI, HPC, networking, OCI-MSA, DWDM, Broadcom, NVIDIA, glass-substrate, ULCVD, TGV]
 created: 2026-04-25
-updated: 2026-05-24
+updated: 2026-05-26
 sources: [2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-05-07_trendforce_globalfoundries-silicon-photonics-scale-cpo, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers]
 related:
   - wiki/entities/tsmc.md
@@ -137,37 +137,14 @@ TSMC COUPE™ 與 GF SCALE 的競爭表明 CPO 市場正從「單一廠商主導
 3. **ULCVD 突破（2026-04）**：全南大學 Han Seung-hoe 教授團隊開發超短脈衝雷射誘導 CVD（ULCVD），可在玻璃基板正背面同時無光罩直接刻寫導電碳電路，突破傳統 TGV/RDL 製程限制。後續計畫擴展至 Cu/Au 金屬配線材料（更適合半導體封裝要求）。
 4. **未來展望**：玻璃基板 CPO 在 2028–2030 年後可能成為「電氣+光學」整合封裝的通用平台，使 CPO 從「晶片封裝邊緣」走向「基板內嵌」的終極形態。
 
-*Source: [[sources/2026-04-30_trendforce_ulcvd-glass-substrate-cpo-laser]]*
-
+*Source: [[sources
 ---
+## 2026-05-26 更新 / Update
 
-## ⭐ ECTC 2026 CPO 技術突破（2026-05-24 新增）
+**新興場景：板內 GPU-HBM 光學互連（2026-05-25）**⭐
 
-*Source: Semiconductor Digest 2026-05-20（ECTC 2026 技術展示摘要）*
+業界正探索將 CPO 技術概念從「伺服器間互連」延伸至「板內 GPU-HBM 互連」的新場景。韓國主要記憶體廠商研究員揭示：業界討論透過光學鏈路將 GPU 與 HBM 分置於不同封裝——突破 2.5D 岸線（shoreline）限制，可讓 GPU 連接「數倍現有容量」的 HBM。
 
-### AIST Paper 7.4 — 6.4 Tbps Active Optical Package（AOP）基板
+**技術挑戰**：光子元件需從資料中心設備尺寸大幅縮小（~10–100 倍）到電路板/晶片組尺寸，整合難度顯著高於目前 CPO 路線圖。此為早期探索階段，OSAT 業界正密切監控。
 
-AIST（National Institute of Advanced Industrial Science and Technology，日本）展示 **Active Optical Package（AOP）基板**，解決傳統 CPO 光學 I/O 密度受限於 ≥127µm 光纖陣列節距的問題：
-- **50mm² AOP 基板**，嵌入 16 通道矽光子收發器晶片、微鏡（micromirror）與聚合物光學再分佈層（ORDL）
-- 112Gbps（56Gbaud）PAM4 傳輸：TDECQ < 3.4dB（符合 IEEE 規格）
-- **最大聚合傳輸容量：6.4 Tbps / 基板**
-- 使用微影與壓印技術整合光學元件——製造工藝與現行半導體製程相容
-- 代表「光學優先（Optical-first）封裝概念」的可行路徑
-
-### GlobalFoundries + Corning Paper 15.2 — GLASSBRIDGE™ 可拆卸 CPO 連接器
-
-GF Fotonix™ 矽光子平台 + Corning GLASSBRIDGE™ 玻璃波導連接器組合，首創可拆卸 CPO 光學 I/O 方案：
-- 離子交換技術（ion-exchange）製造玻璃波導連接器，被動整合至矽光子晶片
-- 晶片上機械 Z-stops 精確垂直控制；微影基準點（fiducials）精確 X-Y 對準
-- **<1.5dB/facet 插入損耗，<280mW 功率耐受**
-- **>100 次插拔循環，性能變化 <0.01dB，零元件失效**（高可靠性可拆卸設計）
-- 為 CPO 系統提供「可服務性（serviceability）」——損壞光纖可更換，不需整包更換
-
-### Intel Paper 37.17 — 玻璃耦合器 CPO 邊緣耦合 -1.55dB
-
-Intel 展示低損耗、高可靠性邊緣耦合架構，採用扇出玻璃耦合器（fan-out glass coupler）+ 可拆卸擴展光束連接器（detachable expanded beam connector）：
-- 晶圓級與封裝級組裝和測試流程完全相容
-- **單方向耦合損耗：~-1.55dB**（全通道）
-- **>100 次插拔，性能變化 <0.01dB，零元件失效**
-
-**三項 ECTC 2026 CPO 論文的共同主題**：可拆卸性（serviceability）、低損耗（<2dB）、高可靠性（>100 次插拔）——CPO 商業化的必要條件正在逐一被各廠商技術性解決。
+*Source: TrendForce 2026-05-25 (citing ZDNet Korea)*

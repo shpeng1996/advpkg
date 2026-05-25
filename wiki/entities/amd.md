@@ -3,7 +3,7 @@ title: "超微半導體 / AMD (Advanced Micro Devices)"
 category: entity
 tags: [fabless, CPU, GPU, chiplet, Zen6, EFB, I-CubeS, Milan, EPYC, MI-series, Venice, COMPUTEX2026]
 created: 2026-05-03
-updated: 2026-05-25
+updated: 2026-05-26
 sources: [2026-03-01_semianalysis_cpus-back-datacenter-2026, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-21_trendforce_amd-lisa-su-tsmc-10b-taiwan-packaging]
 related:
   - wiki/entities/tsmc.md
@@ -54,23 +54,11 @@ AMD 在 AI GPU 市場是 NVIDIA 的主要挑戰者（Instinct MI 系列），但
 |------|------|------|------|
 | MI355X | TSMC N3P | CoWoS-S（推測）+ 2 I/O die | ISSCC 2026 發表 |
 | MI450（推測） | TSMC N2P（推測） | TSMC aLSI 主動矽橋 | 測試載具曝光（ISSCC） |
-| EPYC Venice（Zen6c） | TSMC N2 | EFB 橋接互連（2.5D）| **已量產（2026-05）**；Arizona 規劃中 |
-| EPYC Verano（Zen6，6th Gen） | TSMC N2 | 預計 EFB + LPDDR | 規劃中（Cloud/AI） |
-
----
-
-## 與其他實體的關係 / Relationships
-
-- **TSMC**：GPU 與 CPU 主要代工廠；CoWoS-S 封裝主要客戶之一；aLSI 技術潛在採用者；Lisa Su 5/20 訪台洽 2nm + CoWoS 配額
-- **ASE / SPIL**：AMD EFB 2.5D 橋接封裝認證夥伴（>US$10B 台灣投資的核心 OSAT 夥伴）
-- **PTI**：完成業界首款面板型 EFB 互連認證（FOPLP 進入 CPU 封裝應用）
-- **Samsung**：部分晶片代工及 I-CubeS 封裝（Rebellions Rebel100 案例確認）
-- **Intel**：AMD EFB 架構與 Intel EMIB 為 2.5D 局部橋接技術競爭者；x86 CPU 主要競爭對手
-
----
-
-## 爭議與未解問題 / Open Questions
-
-- AMD MI450 是否真的採用 TSMC aLSI（主動矽橋）技術？（ISSCC 2026 僅為測試載具，非確認產品）
-- AMD Venice EMIB 等效封裝的具體技術細節（是否採用第三方矽橋，還是 TSMC CoWoS-L 類似方案）？
-- AMD Instinct MI 系列能否在 AI GPU 市場顯著縮小與 NVIDIA 的差距？
+| EPYC Venice（Ze
+- **2026-05-26（COMPUTEX 2026 前夕）**：⭐更新
+  - **Zen 7 CCD（代號 Grimlock）採 TSMC A14 節點確認**（Commercial Times via TrendForce 2026-05-25）；量產時程：TSMC Fab 25 P1（台中）2027 年試產、2028 年量產
+  - **PTI FOPLP 納入 Zen 7 封裝評估**：FOPLP 首次進入 AMD 旗艦 CPU 封裝選項
+  - **PTI 完成業界首款面板型 2.5D EFB 互連認證**（AMD 公開確認）：EFB 從矽晶圓延伸到面板基板，是 FOPLP 進入 CPU 封裝的關鍵里程碑
+  - **Zen 7 規格**：16 核心/CCD；3D V-Cache（L3 最高 224MB/CCD）；FP512；嵌入式 AI 加速器；IPC +15–25%（其中 ~8pp 來自快取）
+  - **AMD 透過 Parade Technologies 開發下世代 ASIC 互連晶片**（6nm/12nm，已進入試產）
+  - Lisa Su 親訪 PTI，確認 PTI 在 AMD 封裝策略中的核心供應商地位
