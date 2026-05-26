@@ -3,8 +3,8 @@ title: "英特爾 / Intel"
 category: entity
 tags: [IDM, advanced-packaging, EMIB, Foveros, Intel18A, Clearwater-Forest, Foveros-Direct, glass-substrate, 14A, High-NA-EUV]
 created: 2026-04-24
-updated: 2026-05-19
-sources: [2026-04-24_initial-survey, 2026-03-18_trendforce_intel-emib-malaysia, 2026-03-03_trendforce_intel-clearwater-forest, 2026-03-05_trendforce_intel-emib-billions, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-04-20_trendforce_intel-foundry-14a-equipment, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-01_semianalysis_cpus-back-datacenter-2026, 2026-04-10_3dincites_intel-gan-chiplet, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple]
+updated: 2026-05-27
+sources: [2026-04-24_initial-survey, 2026-03-18_trendforce_intel-emib-malaysia, 2026-03-03_trendforce_intel-clearwater-forest, 2026-03-05_trendforce_intel-emib-billions, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-04-20_trendforce_intel-foundry-14a-equipment, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-01_semianalysis_cpus-back-datacenter-2026, 2026-04-10_3dincites_intel-gan-chiplet, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate]
 related:
   - wiki/entities/tsmc.md
   - wiki/entities/samsung.md
@@ -43,6 +43,12 @@ related:
   - **Intel Diamond Rapids 取消 SMT**：P-core 移除 Simultaneous Multi-Threading，嚴重影響資料中心吞吐量；192T Diamond Rapids 預估只比 256T Granite Rapids 快約 40%。
   - **Intel 取消 8-channel Diamond Rapids-SP 平台**，高量市場空窗至少至 2028 年。
   *Source: SemiAnalysis 2026-02-15, 2026-03-01*
+
+- **2026-05-26（⭐新增）**：**Intel Rio Rancho 確認為全球首座玻璃基板量產廠候選 + 矽光子代工服務開放**：Chandler, AZ 目前僅為試驗線；Rio Rancho, NM 擬升格為第一座 HVM 廠（來源：Forbes / Wccftech）。Intel 已在 Rio Rancho 對外開放矽光子（Silicon Photonics）代工服務，並揭示首批玻璃基板 CPO（共封裝光學）原型——商業化目標 2030 年。**EMIB 客戶生態最完整揭露**：現有客戶 **AWS、Cisco**；洽談中客戶 **Apple、Google、Microsoft、NVIDIA、Tesla**（史上最完整 EMIB 外部客戶名單）。EMIB 生產主基地：Penang（馬來西亞）+ Rio Rancho（美國）。全球玻璃基板競爭：SKC/Absolics 預計 2026 年底商業量產；Samsung Electro-Mechanics 世宗廠試驗線；BOE+Corning 合作進入玻璃基板領域。
+  *Source: TrendForce 2026-05-26（引述 Forbes、Wccftech、Business Post、The Elec、ETNews）*
+
+- **2026-05-20（⭐新增）**：**Intel CEO Lip-Bu Tan 於 JP Morgan 科技大會確認 EMIB-T 基板預付款計畫**：多名客戶主動承諾協助預付台日基板廠商——「They jump on it.」。**基板供應極度緊缺**：台灣 4 家 + 日本 2 家供應商要求上游承諾。**完整 EMIB 基板夥伴名單**：Ibiden（JP，¥500B 三年投資 FY2026-28；Ono 廠中心；FY2027 起分批 HVM）、Shinko（JP）、Unimicron（TW，2H26 起 EMIB >50% 客戶占比）、AT&S（AT）。**EMIB 規模更新**：EMIB-M 現為 6×，目標 2026–27 達 8–12×；CoWoS-S ~3.3×、CoWoS-L ~3.5%（EMIB 大尺寸優勢明顯）。已確認採用：Google TPU v8e（2H27）、Meta 自研 CPU（2H28）。
+  *Source: TrendForce 2026-05-20（引述 Seeking Alpha JP Morgan 逐字稿、Wccftech、CNA、Economic Daily News、Ibiden press release）*
 
 - **2026-05-22（⭐新增）**：**PSMC + Intel + SAIMEMORY 聯盟展示 ZAM/HB3DM Via-in-One 9 層 3D 記憶體架構（VLSI 2026 前）**：ZAM（Z-Angle Memory）技術正式揭示關鍵規格——頻寬密度 ~0.25 Tb/s/mm²、能耗 <0.7 pJ/bit，估計單模組頻寬 **~5.3 TB/s**（>2.5× HBM4）。三方分工：**SAIMEMORY**（設計/IP）、**Intel**（3D 堆疊架構）、**PSMC + Shinko Electric**（製造/試產）。原型 2027 完成、商業量產 2029。「Via-in-One TSV」使用 fusion-bonded wafer、via-last 製程，矽基板超薄 ~3 µm，TSV 20 µm pitch（~13.7K TSVs/層）；O-type 接觸電阻低於 C-type 40%。
   *Source: TrendForce 2026-05-22（引述 VLSI Symposium 2026 論文摘要、TechPowerUp、Economic Daily News）*

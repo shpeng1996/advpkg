@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-05-26
-**頁面總數 Total Pages**：158
-**原始來源數 Sources**：124
+**更新時間 Updated**：2026-05-27
+**頁面總數 Total Pages**：161
+**原始來源數 Sources**：127
 
 ---
 
@@ -58,6 +58,9 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-05-26_trendforce_intel-rio-rancho-glass-substrate]] — Intel Rio Rancho 全球首座玻璃基板 HVM 候選廠；矽光子代工開放；EMIB 現有客戶 AWS/Cisco；Apple/Google/Microsoft/NVIDIA/Tesla 洽談中（2026-05-26）⭐新增
+- [[sources/2026-05-26_trendforce_sk-hynix-ihbm-hbm5]] — SK Hynix iHBM 技術發表：D2D PHY ICE 冷卻元件嵌入；熱阻 -30%；WLP+MR-MUF 量產；目標 HBM5（2026-05-26）⭐新增
+- [[sources/2026-05-20_trendforce_intel-emib-substrate-prepayments]] — Intel CEO JP Morgan 確認 EMIB-T 基板預付款；台 4 家日 2 家供應商；Ibiden ¥500B 3 年計畫；EMIB-M 6→8–12×（2026-05-20）⭐新增
 - [[sources/2026-05-25_trendforce_hbm-gpu-separation-optical]] — GPU-HBM 分離架構討論；光學互連突破岸線限制；OSAT 監控中（2026-05-25）⭐新增
 - [[sources/2026-05-25_trendforce_amd-zen7-a14-pti-foplp]] — AMD Zen 7 (Grimlock) TSMC A14；PTI FOPLP 評估；面板型 EFB 業界首款驗證（2026-05-25）⭐新增
 - [[sources/2026-05-22_trendforce_micron-hbm4e-2027-tsmc]] — Micron HBM4E 2027 TSMC 邏輯晶片確認；1-gamma DRAM；India 全訂滿（2026-05-22）⭐新增

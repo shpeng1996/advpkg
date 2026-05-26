@@ -3,8 +3,8 @@ title: "EMIB — Embedded Multi-Die Interconnect Bridge"
 category: technology
 tags: [Intel, 2.5D, silicon-bridge, chiplet, HBM4, Foveros, glass-substrate, EMIB-T, EMIB-M]
 created: 2026-05-03
-updated: 2026-05-19
-sources: [2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-03-05_trendforce_intel-emib-billions, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-03-03_trendforce_intel-clearwater-forest, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos]
+updated: 2026-05-27
+sources: [2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-03-05_trendforce_intel-emib-billions, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-03-03_trendforce_intel-clearwater-forest, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate]
 related:
   - wiki/entities/intel.md
   - wiki/entities/amkor.md
@@ -71,6 +71,8 @@ EMIB 是 Intel 的局部矽橋接技術：將一小片高密度矽橋（bridge d
 - **2026-03**：Clearwater Forest 展示 EMIB 3.5D 組合架構（EMIB + Foveros Direct 3D）
 - **2026-05**：EMIB 技術驗證良率達 **~90%**；Google（TPU v8e 2H27）、Meta（自研 CPU 2H28）確認採用；Intel CFO 表示接近完成「數十億美元」封裝大單
 - **2026-05**：EMIB 全球產能加速：俄勒岡（主力）+ 越南 SHTP（18A 產品）+ 台灣設備訂單 2H26 交貨（E&R/C Sun/AblePrint）
+- **2026-05-26**：**Intel Rio Rancho 矽光子代工開放 + EMIB 現有客戶首次具體揭露**：AWS、Cisco 為確認現有客戶；Apple、Google、Microsoft、NVIDIA、Tesla 洽談中。EMIB 生產主基地：Penang + Rio Rancho。⭐新增
+- **2026-05-20**：**Intel CEO Lip-Bu Tan（JP Morgan 科技大會）確認 EMIB-T 基板預付款**：台灣 4 家 + 日本 2 家供應商供應緊缺，EMIB 客戶主動承諾預付。基板夥伴完整清單：Ibiden（JP，¥500B 3 年計畫）、Shinko（JP）、Unimicron（TW，2H26 起 >50% 業務）、AT&S（AT）。規模更新：EMIB-M 6× → 8–12×（2026–27）；CoWoS-S ~3.3×、CoWoS-L ~3.5×。⭐新增
 - **2026-05-12**：**MediaTek 確認雙封裝策略（EMIB + CoWoS）**；Google TPU 8t 用 CoWoS-S、TPU v8e 用 EMIB 首次確認；Douglas Yu（前 TSMC 先進封裝主管）加入 MediaTek；EMIB-M 6× 現況、8–12× 目標 2026–27 ⭐新增
 - **2026-H2**：EMIB-T 進入量產 fab 部署；EMIB 預計貢獻**數十億美元**營收（Intel CFO 聲明）
 - **2027–28**：EMIB on Glass HVM 目標；Google TPU v8e 採用 EMIB 量產

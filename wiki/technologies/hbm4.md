@@ -3,8 +3,8 @@ title: "HBM4 — High Bandwidth Memory 4"
 category: technology
 tags: [memory, HBM, JEDEC, standards, AI, HPC, HBM4E, cleanroom, capacity, ISSCC2026, ZAM, HB3DM]
 created: 2026-04-24
-updated: 2026-05-26
-sources: [2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-03-18_trendforce_intel-emib-malaysia, 2026-01-23_trendforce_hbm4e-samsung-skhynix-mid2026, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-01-13_semiengineering_hbm4-microbumps, 2025-12-18_trendforce_micron-capex-hbm4, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h, 2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-03-03_trendforce_sk-hynix-hbm4-tight-gaps, 2025-08-12_semianalysis_hbm-roadmap]
+updated: 2026-05-27
+sources: [2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-03-18_trendforce_intel-emib-malaysia, 2026-01-23_trendforce_hbm4e-samsung-skhynix-mid2026, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-01-13_semiengineering_hbm4-microbumps, 2025-12-18_trendforce_micron-capex-hbm4, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h, 2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-03-03_trendforce_sk-hynix-hbm4-tight-gaps, 2025-08-12_semianalysis_hbm-roadmap, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5]
 related:
   - wiki/entities/sk-hynix.md
   - wiki/entities/samsung.md
@@ -235,3 +235,26 @@ Intel + SoftBank 子公司 **SAIMEMORY** 聯合 PSMC 正在開發一種以 **Via
 **主要挑戰**：光子元件需從資料中心尺寸縮小到板級/晶片組尺寸（~10–100 倍縮小），技術難度極高。此為探索性討論，非已確認量產路線圖。
 
 *Source: TrendForce / ZDNet Korea 2026-05-25*
+
+## 2026-05-27 更新 / Updates
+
+### SK Hynix iHBM 技術與 HBM 熱管理雙路徑⭐（2026-05-26）
+
+SK Hynix 發表 **iHBM（Integrated HBM）**，針對 HBM 封裝的熱管理挑戰提供結構性解決方案：
+
+**核心技術**：在 D2D PHY 層（HBM 與 GPU 高速介面，最高熱量集中點）嵌入 ICE（Integrated Cooling Elements）——熱導電、電絕緣矽基材料。效果：熱阻降低 **30%**。
+
+**製造基礎**：沿用現有 WLP + MR-MUF 製程，不需重大設備替換；與現有 SiP 架構相容。
+
+**目標產品**：**HBM5**（下一代旗艦）。
+
+**20H+ HBM 熱管理雙路徑**：
+
+| 路徑 | 技術 | 製程 | 商業化目標 |
+|------|------|------|-----------|
+| 路徑 1 | 混合接合（Cu-Cu HB） | 去除微凸塊，<20µm pitch | HBM5/HBM6（2028+） |
+| 路徑 2 | iHBM（D2D PHY ICE 嵌入） | 保持 MR-MUF；WLP 製程 | HBM5（近期商業化） |
+
+SK Hynix 同時推進兩條路徑——iHBM 為**中期橋接方案**，在混合接合成熟前先行解決 20H HBM 熱問題。
+
+*Source: TrendForce 2026-05-26（引述 SK hynix press release、The Elec）*

@@ -3,8 +3,8 @@ title: "先進封裝熱管理 / Thermal Management in Advanced Packaging"
 category: concept
 tags: [thermal-management, liquid-cooling, 3D-IC, CoWoS, heat-dissipation, TIM, ECTC-2025]
 created: 2026-04-25
-updated: 2026-05-08
-sources: [2025-12-01_semiengineering_thermal-management, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal]
+updated: 2026-05-27
+sources: [2025-12-01_semiengineering_thermal-management, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5]
 related:
   - wiki/technologies/cowos.md
   - wiki/technologies/hybrid-bonding.md
@@ -106,3 +106,44 @@ related:
 - SemiEngineering: "Navigating Heat In Advanced Packaging", "Hot Trends In Semiconductor Thermal Management"
 - 3D InCites: "An Integrated Cooling Solution for Hot Chips" (2025-06)
 - 3D InCites: "Rapid Development and Optimization of Thermal Management Solutions" (2024-02)
+
+---
+
+## ⭐ SK Hynix iHBM 技術（2026-05-26 新增）
+
+SK Hynix 於 2026-05-26 正式發表 **iHBM（Integrated HBM）** 熱管理解決方案，代表 HBM 封裝熱管理的全新架構路徑：
+
+### 技術原理
+
+傳統 HBM 設計透過核心晶片散熱，熱阻較高且散熱路徑受限。iHBM 在 **D2D PHY 層**（HBM 與 GPU 之間的高速 I/O 界面，為整個封裝中熱量最集中的位置）直接嵌入**冷卻元件（ICE = Integrated Cooling Elements）**：
+
+- **ICE 材料**：熱導電、電絕緣的矽基材料
+- **ICE 位置**：D2D PHY（HBM-GPU 界面）
+- **散熱路徑**：在封裝內創造額外熱傳遞通道，熱量可從 D2D PHY 直接傳至外部散熱路徑
+
+### 主要優勢
+
+| 指標 | 效果 |
+|------|------|
+| 熱阻降低 | **30%** |
+| 操作穩定性 | 提升 |
+| 製造基礎 | WLP + MR-MUF（現有量產製程） |
+| SiP 相容性 | 是（最小客戶設計修改） |
+
+### iHBM vs. 混合接合的雙路徑定位
+
+20 層以上（20H+）HBM 堆疊面臨嚴峻熱管理挑戰，目前業界有兩條解決路徑：
+
+| 路徑 | 方案 | 連接方式 | 散熱邏輯 | 量產成熟度 |
+|------|------|---------|---------|-----------|
+| 路徑 1 | 混合接合（Hybrid Bonding） | Cu-Cu 直接接合，去除微凸塊 | 從根本消除微凸塊熱阻 | 研發/試量產（2026–2027） |
+| 路徑 2 | iHBM（結構性散熱） | 保持微凸塊（MR-MUF架構） | 在 D2D PHY 層嵌入額外散熱路徑 | 商業化（目標 HBM5） |
+
+SK Hynix 的策略是**兩條路徑並行**：混合接合為長期目標（HBM5/HBM6），iHBM 為在現有架構上實現更快商業化的中期解決方案。
+
+### 首採路線圖
+
+- **目標產品**：HBM5（SK Hynix 下一代旗艦 HBM）
+- **製造基礎**：現有 WLP + MR-MUF 產線，不需重大設備替換
+
+*Source: TrendForce 2026-05-26（引述 SK hynix 官方新聞稿、The Elec）*

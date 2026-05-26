@@ -955,3 +955,28 @@
   1. **AMD Zen 7（Grimlock）= TSMC A14 + PTI FOPLP 評估 + 面板型 EFB 業界首款（2026-05-25）**：AMD CEO Lisa Su COMPUTEX 前親訪 PTI，AMD 公開確認 PTI 已完成面板型 2.5D EFB 互連首次驗證——這是 FOPLP 進入旗艦 CPU 封裝（非僅 AI ASIC）的關鍵里程碑。EFB 從矽晶圓延伸到面板基板，直接將 TSMC CoWoS-L / Intel EMIB 的 2.5D 橋接互連帶入低成本面板架構。
   2. **GPU-HBM 分離架構探索浮現（2026-05-25）**：韓國主要記憶體廠商研究員首次在媒體上公開討論「GPU 與 HBM 分置不同封裝、光學互連連接」的架構，這是對當前 2.5D CoWoS + HBM 緊耦合模式的根本性挑戰。此架構可突破岸線（shoreline）限制，讓 GPU 支援數倍現有 HBM 容量，但光子元件縮小挑戰是最大技術障礙。此訊號說明業界已開始為 HBM 垂直堆疊「達到天花板」做架構儲備。
   3. **Micron HBM4E 2027 量產路線圖確認 + TSMC 邏輯晶片雙軌（standard + custom）（2026-05-22）**：Micron 首款 HBM4E 為 JEDEC 標準版（2027），邏輯晶片均由 TSMC 代工，確認 TSMC 成為三大 HBM 廠商的共同邏輯晶片供應商。底層 DRAM 從 1-beta 升至 1-gamma，India 產能全訂滿，memory shortage 延伸至 2028+ 已超出多數業界預期。
+
+## [2026-05-27] collect | 每日自動蒐集 — 先進封裝最新動態（第三十三次）
+- 搜尋查詢數：7 組（TSMC CoWoS/SoIC、HBM4/iHBM 記憶體、COMPUTEX 2026 封裝公告、Intel EMIB/Foveros、混合接合 ECTC 2026、面板封裝/玻璃基板、UCIe 標準）
+- 成功抓取：3 篇（articles/ 3, papers/ 0, reports/ 0）
+  - 2026-05-26_trendforce_intel-rio-rancho-glass-substrate-silicon-photonics.md（TrendForce，發布 2026-05-26；Intel Rio Rancho 玻璃基板 HVM 候選廠 + 矽光子代工開放 + EMIB 客戶名單首次完整揭露）
+  - 2026-05-26_trendforce_sk-hynix-ihbm-hbm5-thermal-30pct.md（TrendForce，發布 2026-05-26；SK Hynix iHBM 技術首發：D2D PHY ICE 嵌入冷卻；熱阻 -30%；目標 HBM5）
+  - 2026-05-20_trendforce_intel-emib-substrate-prepayments-ibiden.md（TrendForce，發布 2026-05-20；Intel CEO JP Morgan：EMIB-T 基板預付款；Ibiden ¥500B 3 年投資；EMIB-M 6→8–12×）
+- 失敗/跳過：多篇（COMPUTEX 2026 尚未開幕（6/2–5），正式公告未發；TrendForce 主頁 2026-05-27 無新封裝相關文章；ECTC 2026（5/26–29）現場論文仍無公開抓取路徑；ieeexplore 仍受限；semiwiki/semiengineering 無新發布）
+- 學術代理：UNAVAILABLE ✗（ieeexplore、arxiv 仍受限）
+- 新增 wiki 頁面：3 頁（sources/ 3 篇）
+  - wiki/sources/2026-05-26_trendforce_intel-rio-rancho-glass-substrate.md
+  - wiki/sources/2026-05-26_trendforce_sk-hynix-ihbm-hbm5.md
+  - wiki/sources/2026-05-20_trendforce_intel-emib-substrate-prepayments.md
+- 更新 wiki 頁面：7 頁
+  - wiki/entities/intel.md（新增：Rio Rancho 玻璃基板 HVM 候選；矽光子代工開放；EMIB 客戶名單 AWS/Cisco 現有 + 5 大科技廠洽談；基板預付款確認；Ibiden ¥500B；EMIB-M 6→8–12×；updated 2026-05-27）
+  - wiki/entities/sk-hynix.md（新增：iHBM 技術發表；D2D PHY ICE 嵌入冷卻；HBM5 首採路線；MR-MUF 相容；updated 2026-05-27）
+  - wiki/technologies/glass-substrate.md（新增：Rio Rancho HVM 候選廠；Intel CPO 玻璃原型 2030；Samsung EM 世宗試驗線；BOE+Corning 合作；ABF 漲價推力；updated 2026-05-27）
+  - wiki/technologies/emib.md（新增：EMIB 客戶 AWS/Cisco 確認；Penang+Rio Rancho 生產基地；基板預付款；Ibiden/Shinko/Unimicron/AT&S 生態；EMIB-M 6→8–12×；updated 2026-05-27）
+  - wiki/technologies/hbm4.md（新增：iHBM 雙路徑說明；D2D PHY ICE 技術；HBM5 路線；updated 2026-05-27）
+  - wiki/concepts/thermal-management.md（新增：iHBM 技術完整章節；混合接合 vs iHBM 雙路徑比較表；updated 2026-05-27）
+  - wiki/index.md（頁面數 158→161；來源數 124→127；3 個新 sources 頁面）
+- 主要新知識：
+  1. **SK Hynix iHBM 技術首次公開（2026-05-26）**：在 HBM-GPU D2D PHY 層直接嵌入熱導電、電絕緣矽基材料（ICE），熱阻降低 30%，完全基於現有 WLP+MR-MUF 製程——這是混合接合（長期路線）之外的**重要中期熱管理橋接方案**，首採產品為 HBM5。代表 SK Hynix 面對 20H+ HBM 熱挑戰的雙路徑策略正式確立。
+  2. **Intel Rio Rancho 可能成為全球首座玻璃基板量產廠 + EMIB 客戶生態最完整披露（2026-05-26）**：AWS 和 Cisco 為現有 EMIB 確認客戶，Apple / Google / Microsoft / NVIDIA / Tesla 五大科技巨頭均在洽談中——這是 wiki 中首次記錄如此具體的 Intel Foundry 客戶名單，代表 EMIB 已從「競爭替代選項」演變為「多數主要雲端/AI/消費電子玩家的正式評估標準」。Rio Rancho 同步提供矽光子代工，為 EMIB + 玻璃基板 + CPO 三合一封裝生態奠基。
+  3. **Intel EMIB 基板供應鏈預付款機制揭示（2026-05-20）**：Intel CEO 在 JP Morgan 大會公開確認客戶主動預付基板費用（「They jump on it.」），4 台灣 + 2 日本供應商供給緊缺；Ibiden ¥500B 三年投資計畫（FY2026-28）首次在 wiki 完整記錄。EMIB-M 從 6× 擴至 8–12×（2026-27）使其對 CoWoS-S/L（~3.3–3.5×）的面積優勢更加顯著，這是選擇 EMIB 的核心技術動力。
