@@ -980,3 +980,25 @@
   1. **SK Hynix iHBM 技術首次公開（2026-05-26）**：在 HBM-GPU D2D PHY 層直接嵌入熱導電、電絕緣矽基材料（ICE），熱阻降低 30%，完全基於現有 WLP+MR-MUF 製程——這是混合接合（長期路線）之外的**重要中期熱管理橋接方案**，首採產品為 HBM5。代表 SK Hynix 面對 20H+ HBM 熱挑戰的雙路徑策略正式確立。
   2. **Intel Rio Rancho 可能成為全球首座玻璃基板量產廠 + EMIB 客戶生態最完整披露（2026-05-26）**：AWS 和 Cisco 為現有 EMIB 確認客戶，Apple / Google / Microsoft / NVIDIA / Tesla 五大科技巨頭均在洽談中——這是 wiki 中首次記錄如此具體的 Intel Foundry 客戶名單，代表 EMIB 已從「競爭替代選項」演變為「多數主要雲端/AI/消費電子玩家的正式評估標準」。Rio Rancho 同步提供矽光子代工，為 EMIB + 玻璃基板 + CPO 三合一封裝生態奠基。
   3. **Intel EMIB 基板供應鏈預付款機制揭示（2026-05-20）**：Intel CEO 在 JP Morgan 大會公開確認客戶主動預付基板費用（「They jump on it.」），4 台灣 + 2 日本供應商供給緊缺；Ibiden ¥500B 三年投資計畫（FY2026-28）首次在 wiki 完整記錄。EMIB-M 從 6× 擴至 8–12×（2026-27）使其對 CoWoS-S/L（~3.3–3.5×）的面積優勢更加顯著，這是選擇 EMIB 的核心技術動力。
+
+## [2026-05-28] collect | 每日自動蒐集 — 先進封裝最新動態（第三十四次）
+- 搜尋查詢數：7 組（ECTC 2026 論文、COMPUTEX 2026 封裝公告、HBM5/iHBM 記憶體、NVIDIA CoWoS TSMC、Intel EMIB/Foveros、混合接合設備、UCIe 玻璃基板）
+- 成功抓取：2 篇（articles/ 2, papers/ 0, reports/ 0）
+  - 2026-05-21_semiecosystem_ectc2026-cpo-hybridbonding-plp.md（Semiecosystem/Mark LaPedus，發布 2026-05-21；ECTC 2026 CPO/混合接合/面板封裝論文深度預覽——包含 AMAT 450nm 缺陷根因機制、ASML D2W overlay <80nm、Resonac 320×320mm 玻璃面板 L/S=2/2µm、Ushio 510mm×515mm 18-reticle、GF+Corning/Intel CPO 連接器）
+  - 2026-05-24_techtimes_nvidia-computex2026-tsmc-cowos-vera-rubin.md（TechTimes，發布 2026-05-24；NVIDIA Q1 FY2027 $81.62B + Jensen Huang 訪台積電確認 CoWoS 為 Vera Rubin 瓶頸；NVIDIA >50% CoWoS 鎖定 2027；中國市場 0%；Huawei $12B 崛起）
+- 失敗/跳過：多篇（ECTC 2026 正式論文仍限制 ieeexplore；Electronics Weekly ECTC tipsheet 無返回內容；TrendForce 2026-05-28 當日無新封裝文章；COMPUTEX 2026 尚未正式開幕（6/2–5）；HBM5 TrendForce 搜尋結果全為已收錄舊文章）
+- 學術代理：UNAVAILABLE ✗（ieeexplore、arxiv 仍受限）
+- 新增 wiki 頁面：2 頁（sources/ 2 篇）
+  - wiki/sources/2026-05-21_semiecosystem_ectc2026-cpo-hybridbonding-plp.md
+  - wiki/sources/2026-05-24_techtimes_nvidia-computex2026-cowos.md
+- 更新 wiki 頁面：6 頁
+  - wiki/entities/nvidia.md（新增：Q1 FY2027 $81.62B/DC $75.2B 財務里程碑；Vera Rubin 6-chip 平台完整構成；NVIDIA >50% CoWoS 產能鎖定 2027；$200B CPU TAM 開闢；中國 0% 市場份額與 H200 零交貨；Huawei $12B；updated 2026-05-28）
+  - wiki/technologies/cowos.md（新增：CoWoS 起點 2024 底 35,000 wsm/月確認；NVIDIA >50% 鎖定比例首次量化；4× 擴張幅度校準；updated 2026-05-28）
+  - wiki/concepts/geopolitics-advanced-packaging.md（新增：NVIDIA 中國市場 0% 全過程；H200 授權框架零實際交貨；Huawei Ascend 950PR 量產/\$12B 預測；Morgan Stanley $670 億美元中國 AI 市場 2030；updated 2026-05-28）
+  - wiki/technologies/hybrid-bonding.md（新增：AMAT ECTC 2026 Paper 18.4 缺陷根因完整機制——EBAC+TEM-EELS 分析、碳夾雜層+（111）晶粒取向識別、四步驟製程優化；<300nm 下一步科學基礎；updated 2026-05-28）
+  - wiki/technologies/copackaged-optics.md（新增：ECTC 2026 CPO 論文詳情——GF+Corning GLASSBRIDGE™ <1.5dB/280mW/>100 插拔；Intel 扇出玻璃耦合器 -1.55dB/>100 插拔；兩者比較表；updated 2026-05-28）
+  - wiki/index.md（頁面數 161→163；來源數 127→129；2 個新 sources 頁面）
+- 主要新知識：
+  1. **AMAT 450nm Cu-Cu 混合接合 98% 良率的缺陷根因機制首次公開（ECTC 2026 Paper 18.4）**：wiki 先前只記錄了「450nm、98% 良率」這個結果數字，此次 Semiecosystem 的 ECTC 深度預覽補充了背後的**物理機制**——EBAC 定位開路缺陷，TEM-EELS 確認缺陷為銅晶粒（111）取向界面的碳夾雜層；製程優化四槓桿點（金屬化+CMP+電漿+退火）消除此缺陷。這是材料科學層次的新知識，確立了 <300nm 節距擴展的科學可行性，也使「98% 良率」從純粹的結果聲明升格為可重現、可擴展的工程路線。
+  2. **NVIDIA 預訂 >50% 台積電 CoWoS 可用產能至 2027 年（首次量化）**：COMPUTEX 2026 前夕，Jensen Huang 親赴台積電確認 Vera Rubin 封裝配額，TechTimes 報導首次披露此比例數字，直接量化了 AMD/AI 新創面臨先進封裝短缺的根因——非台積電不努力擴產，而是 NVIDIA 的壟斷式預訂。結合 Q1 FY2027 $81.62B 財務結果，確認 NVIDIA 有足夠財務實力支撐此預訂策略。
+  3. **NVIDIA 中國 AI 市場歸零 + H200 授權框架形同虛設（截至 2026-05 底）**：2025-12 批准的 H200 授權機制（限售 10 家+25% 收益分成）被北京行政命令架空，零實際交貨。Huawei 填補真空，2026 年 AI 收入預計達 $12B（+60%），中國 AI 晶片市場進入「兩套供應鏈」格局。此為 wiki 地緣政治章節的最新狀態更新。

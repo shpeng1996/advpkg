@@ -3,8 +3,8 @@ title: "NVIDIA Corporation"
 category: entity
 tags: [fabless, GPU, AI-accelerator, HBM4, CoWoS, SoIC, Rubin, Feynman, NVL576]
 created: 2026-05-03
-updated: 2026-05-13
-sources: [2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-03-18_trendforce_nvidia-rubin-feynman-soic, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-06_trendforce_google-tpu-cautious-adoption-nvidia, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple]
+updated: 2026-05-28
+sources: [2026-05-24_techtimes_nvidia-computex2026-cowos, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-03-18_trendforce_nvidia-rubin-feynman-soic, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-06_trendforce_google-tpu-cautious-adoption-nvidia, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple]
 related:
   - wiki/entities/tsmc.md
   - wiki/entities/sk-hynix.md
@@ -54,4 +54,49 @@ related:
 - **2026-04-30**（TrendForce）：NVIDIA 供應鏈**先佔策略**確認——早在其他競爭者之前即鎖定大量 4/3nm 晶圓、CoWoS 封裝、以及 **T-glass 基板、PCB、HBM、SSD** 等物料；其他科技巨頭（如 Google）因延遲鎖定物料而遭受供應短缺限制。此先佔行為是 CoWoS 2023 年起持續緊張的主要推手之一。
 - **2026-04-01**：Rubin Ultra（NVL576）確認**雙裸片每 GPU 模組**設計，因 CoWoS interposer 面積上限（~120mm×120mm）無法容納更大單一 die；TSMC N3 AI 佔比 36%（2025 年僅 5%）
 - **2026-03-18**：NVIDIA 雙世代 SoIC 路線圖確認——Rubin Ultra（2026–27）+ Feynman（2028+）均採用 TSMC SoIC；Besi/AMAT/TEL 設備三巨頭受益
-- **2026
+
+- **2026-03-17**：GTC 2026 要點——Vera Rubin 全面生產確認（2026 年初）；Feynman TSMC A16 + 3D 堆疊（2028+）
+- **2026-01-29**：Feynman 功耗 5–6 kW 超出 EMIB 封裝上限，推動 NVIDIA 評估 TSMC A16 + SoIC 路線
+
+---
+
+## 財務指標 / Financial Metrics（封裝相關）
+
+| 季度 | 總收入 | 資料中心收入 | 說明 |
+|------|--------|------------|------|
+| Q1 FY2027（2026-Q1）| **1.62B** | **5.2B**（+92% YoY）| 歷史新高；資料中心佔 90% |
+| Q2 FY2027 指引 | **~1B** | — | 假設中國 0 資料中心收入 |
+
+*Q1 FY2027 新增：0B 回購計畫；股息 bash.01→bash.25/季（+2400%）*
+*Source: TechTimes 2026-05-24（引述 NVIDIA Q1 FY2027 法說會）*
+
+---
+
+## CoWoS 供應鏈地位 / CoWoS Position
+
+- **NVIDIA 預訂 >50% 台積電 CoWoS 可用產能至 2027 年**（首次量化，TechTimes 2026-05-24）
+- CoWoS 起點（2024 底）：~35,000 wsm/月 → 2026 底目標：120,000–140,000 wsm/月（~4× in <2 年）
+- TSMC CEO C.C. Wei：「CoWoS 2025 年全訂滿，延伸至 2026 年」
+- Vera Rubin 爬坡與 Blackwell GB300 尾期重疊，台積電下半年供應鏈「非常繁忙」
+- NVIDIA >50% 佔用直接壓縮 AMD 及 AI 新創的可用 CoWoS 配額
+
+---
+
+## 中國市場與地緣政治 / China & Geopolitics
+
+- NVIDIA 中國 AI 加速器市場份額：**~95%（歷史峰值）→ 實質 0%（2026 年）**
+- 2025-12 批准 H200 銷售給約 10 家中國企業（Alibaba/Tencent/ByteDance/JD.com）
+- **截至 2026-05 底：H200 實際交貨量 = 0**（北京指示企業優先採購 Huawei）
+- Huawei Ascend 950PR：2026-03 正式量產；2026 年 AI 收入預測 20 億美元（~75 萬套）
+- Morgan Stanley：中國 AI 晶片市場 2030 年達 70 億美元，國內廠商主導
+- Huang 表態：「放棄整個中國市場在戰略上不合理」
+
+---
+
+## 相關技術 / Related Technologies
+
+- [[technologies/cowos]] — 最大 CoWoS 需求方，>50% 產能鎖定 2027
+- [[technologies/soic]] — Rubin Ultra + Feynman 採用 SoIC-X 混合接合
+- [[technologies/hbm4]] — HBM4E 主要用戶；SK Hynix ~70% 份額
+- [[entities/tsmc]] — 核心製造夥伴；CoWoS + SoIC + 先進製程
+- [[entities/sk-hynix]] — HBM 主要供應商

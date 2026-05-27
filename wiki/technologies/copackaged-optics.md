@@ -3,7 +3,7 @@ title: "共封裝光學元件 / Co-Packaged Optics (CPO) — TSMC-COUPE™ & Eco
 category: technology
 tags: [CPO, co-packaged-optics, COUPE, TSMC, GlobalFoundries, Samsung, photonics, AI, HPC, networking, OCI-MSA, DWDM, Broadcom, NVIDIA, glass-substrate, ULCVD, TGV]
 created: 2026-04-25
-updated: 2026-05-26
+updated: 2026-05-28
 sources: [2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-05-07_trendforce_globalfoundries-silicon-photonics-scale-cpo, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers]
 related:
   - wiki/entities/tsmc.md
@@ -148,3 +148,48 @@ TSMC COUPE™ 與 GF SCALE 的競爭表明 CPO 市場正從「單一廠商主導
 **技術挑戰**：光子元件需從資料中心設備尺寸大幅縮小（~10–100 倍）到電路板/晶片組尺寸，整合難度顯著高於目前 CPO 路線圖。此為早期探索階段，OSAT 業界正密切監控。
 
 *Source: TrendForce 2026-05-25 (citing ZDNet Korea)*
+
+## ECTC 2026 CPO 論文詳情 / ECTC 2026 CPO Paper Details
+
+（來源：Semiecosystem / Mark LaPedus，2026-05-21；ECTC 2026，Orlando，2026-05-26–29）
+
+### GlobalFoundries + Corning — 可拆卸玻璃波導 CPO 連接器
+
+**論文**：「Detachable Glass Waveguide Connector for Co-Packaged Optics on Silicon Photonics Platform with <1.5dB/Facet Passive Coupling and 280mW Power Handling」
+
+**技術架構**：GF **Fotonix™** CPO 矽光子平台 + Corning **GLASSBRIDGE™** 連接器架構
+
+**關鍵指標：**
+- 耦合損耗：**<1.5 dB/facet**（被動耦合，無需主動對準）
+- 功率耐受：**280 mW**
+- 插拔耐久：**>100 次**，性能無明顯衰減
+- **可拆卸性**（Detachability）：結合矽和玻璃優勢，實現模組化可更換光學介面
+
+**意涵**：為大規模 CPO 部署建立「製造可行性路線」——可拆卸設計降低封裝後光學元件的修復成本（現有 CPO 最大限制之一）。
+
+### Intel — 多通道多尺度玻璃耦合器 CPO 邊緣耦合連接器
+
+**論文**：「Multi-channel and Multi-scale Optical Performance for a Detachable Edge-Coupling Connector with a Glass Coupler and Expanded Beam in CPO」
+
+**技術架構**：扇出玻璃耦合器（fan-out glass coupler）+ 可拆卸擴束連接器（expanded beam connector）
+
+**關鍵指標：**
+- 光纖→PIC 各通道耦合損耗：**約 -1.55 dB**
+- 插拔耐久：**>100 次**
+- 性能變化：**<0.01 dB**（無零件故障）
+- 相容性：晶圓級和封裝級組裝/測試流程完全相容
+
+**意涵**：Intel 在 CPO 光學耦合架構上展示與其 EMIB/玻璃基板戰略的協同——「電氣 EMIB + 玻璃基板 + CPO 光學」的三合一封裝生態概念進一步具象化。
+
+### 比較兩種 CPO 連接器方案
+
+| 特性 | GF + Corning GLASSBRIDGE™ | Intel 扇出玻璃耦合器 |
+|------|--------------------------|---------------------|
+| 耦合架構 | 被動耦合 | 邊緣耦合（Edge-Coupling） |
+| 耦合損耗 | <1.5 dB/facet | ~-1.55 dB（fiber→PIC） |
+| 功率耐受 | 280 mW | — |
+| 插拔耐久 | >100 次 | >100 次，<0.01 dB 變化 |
+| 技術夥伴 | GF Fotonix™ 矽光子 | Intel 自有矽光子 |
+| 定位 | 第三方 CPO 生態 | Intel 封裝生態整合 |
+
+*Source: Semiecosystem (Mark LaPedus) 2026-05-21；ECTC 2026 Paper abstracts*

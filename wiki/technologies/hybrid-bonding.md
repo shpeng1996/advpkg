@@ -3,8 +3,8 @@ title: "混合接合 / Hybrid Bonding"
 category: technology
 tags: [3D, hybrid-bonding, Cu-Cu, SoIC, ECTC, advanced-packaging, DRAM, COP, 4F2]
 created: 2026-04-24
-updated: 2026-05-24
-sources: [2026-04-24_initial-survey, 2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-03-01_3dincites_besi-packaging-power-shift, 2026-01-13_semiengineering_hbm4-microbumps, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-19_semieng_advanced-packaging-limits, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-03-27_3dincites_copper-grain-hybrid-bonding, 2025-01-01_semieng_making-hybrid-bonding-better, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2026-04-29_semiwiki_cea-leti-ectc2026-hybrid-bonding, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2024-02-09_semianalysis_hybrid-bonding-process-flow, 2026-05-19_semiconductor-digest_ev-group-ectc2026-hybrid-bonding, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-04-19_semiwiki_apple-m5-cucu-hybrid-bonding-shipped]
+updated: 2026-05-28
+sources: [2026-05-21_semiecosystem_ectc2026-cpo-hybridbonding-plp, 2026-04-24_initial-survey, 2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-03-01_3dincites_besi-packaging-power-shift, 2026-01-13_semiengineering_hbm4-microbumps, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-19_semieng_advanced-packaging-limits, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-03-27_3dincites_copper-grain-hybrid-bonding, 2025-01-01_semieng_making-hybrid-bonding-better, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2026-04-29_semiwiki_cea-leti-ectc2026-hybrid-bonding, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2024-02-09_semianalysis_hybrid-bonding-process-flow, 2026-05-19_semiconductor-digest_ev-group-ectc2026-hybrid-bonding, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-04-19_semiwiki_apple-m5-cucu-hybrid-bonding-shipped]
 related:
   - wiki/technologies/soic.md
   - wiki/technologies/cowos.md
@@ -274,6 +274,28 @@ ECTC 2025 的核心技術主題之一：
 
 ---
 
+## ECTC 2026 AMAT 混合接合缺陷機制詳解 / AMAT Hybrid Bonding Defect Mechanism (ECTC 2026)
+
+（來源：Semiecosystem / Mark LaPedus，2026-05-21；ECTC 2026 Paper 18.4）
+
+**Applied Materials（搭配 Besi Kinex 系統）** 在 ECTC 2026 Paper 18.4 首次公開 450nm Cu-Cu W2W 混合接合 98% 良率的完整物理機制：
+
+**缺陷識別方法：**
+- **EBAC**（Electron Beam Absorbed Current）分析：識別微觀開路缺陷（parts-per-million 等級）——即使此等級缺陷也會顯著降低晶圓級良率
+- **TEM-EELS** 分析：確認開路缺陷位置存在**薄碳夾雜層（carbon-rich layer）**，位於銅晶粒（111）取向為主的大晶粒 top/bottom pad 界面
+
+**根因（Root Cause）：** 接合界面存在碳夾雜，伴隨大（111）取向銅晶粒 → 阻礙銅-銅原子接合
+
+**製程優化策略（消除缺陷的四個槓桿點）：**
+1. 金屬化（Metallization）— 控制銅晶粒尺寸與晶體取向
+2. 化學機械拋光（CMP）— 優化表面平坦度
+3. 電漿處理（Plasma Treatment）— 活化接合面，去除表面污染
+4. 後退火（Post-Bond Annealing）— 促進銅晶粒融合與碳夾雜消除
+
+**意涵：** 這些機制優化的組合使 98% 良率成為可重現成果，並確立了 **<300nm 節距**作為下一步擴展目標的科學可行性。
+
+> **與 EV Group（ECTC 2026）結果的關係**：EVG 和 AMAT/Besi 均在 ECTC 2026 展示 450nm Cu-Cu HB 接近 98% 良率，兩者為不同設備方案（EVG 為獨立 W2W HB 系統；AMAT/Besi Kinex 為 D2W 整合系統）。兩者可能共用部分製程平台或各自獨立達到相似節點，屬於設備市場競爭格局而非相互矛盾。
+
 ## HBM4 不採用混合接合的技術障礙詳解 / Why HBM4 Skipped Hybrid Bonding
 
 **⭐ 2026-01-13 補充（來源：Semiconductor Engineering）**
@@ -333,4 +355,4 @@ ECTC 2025 的核心技術主題之一：
 - **ASML 若正式推出混合接合設備，是否會顛覆 Besi 的龍頭地位？**（ASML 精密對準技術優勢 vs. Besi 的後段製程深度）
 - 韓國本土設備商（Hanmi、Hanwha、LG）能否在 HBM6 時代取代 Besi/ASMPT 等歐洲廠商？
 - **⭐ 若 Besi 被 Lam Research 或 Applied Materials 收購（2026-03 傳聞），混合接合設備市場競爭格局將如何重塑？**（Lam 進入封裝領域 vs. AMAT 強化 Kinex 生態系）
-- **JEDEC HBM4E 高度鬆綁至 900µm 後，混合接合採用時間表是否將延後至 HBM5（2029+）？**（目前 SK Hynix 最樂�
+- **JEDEC HBM4E 高度鬆綁至 900µm 後，混合接合採用時間表是否將延後至 HBM5（2029+）？**（目前 SK Hynix 最樂

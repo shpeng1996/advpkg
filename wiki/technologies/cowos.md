@@ -3,8 +3,8 @@ title: "CoWoS — Chip-on-Wafer-on-Substrate"
 category: technology
 tags: [2.5D, interposer, TSMC, AI, HPC, HBM, COUPE, CPO, packaging-constraints, NVIDIA]
 created: 2026-04-24
-updated: 2026-05-24
-sources: [2026-04-24_initial-survey, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-15_trendforce_tsmc-vanguard-stake-sale, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers]
+updated: 2026-05-28
+sources: [2026-05-24_techtimes_nvidia-computex2026-cowos, 2026-04-24_initial-survey, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-15_trendforce_tsmc-vanguard-stake-sale, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers]
 related:
   - wiki/entities/tsmc.md
   - wiki/technologies/soic.md
@@ -58,6 +58,9 @@ CoWoS 將多顆晶片（GPU、HBM 等）放置於一個中介層（Interposer）
 | 主要應用 | NVIDIA GPU（H/B/R 系列）、AMD Instinct | — |
 
 *Source: TSMC 2026 North America Technology Symposium (2026-04-22); TrendForce 2026-04-28*
+
+> **產能起點校準（2026-05-24 更新）⭐**：台積電 CoWoS 月產能從 **2024 年底 ~35,000 wsm** 起步，目標 2026 年底達 120,000–140,000 wsm，近 **4 倍擴張（不到 2 年）**。NVIDIA 已預訂台積電可用 CoWoS 產能的 **>50%，鎖定至 2027 年**，直接壓縮 AMD、AI ASIC 新創的可用封裝配額。台積電 CEO C.C. Wei 公開確認：「CoWoS 2025 年全訂滿，延伸至 2026 年。」
+> *Source: TechTimes 2026-05-24（引述 Jensen Huang COMPUTEX 2026 台灣行；NVIDIA Q1 FY2027 法說會）*
 
 ### SemiAnalysis 歷史基準 / Historical Baseline
 
@@ -117,25 +120,4 @@ CoWoS 將多顆晶片（GPU、HBM 等）放置於一個中介層（Interposer）
 
 *Source: Semiconductor Digest 2026-05-20（ECTC 2026 技術展示摘要）*
 
-**Paper 6.3 — TSMC：CoWoS EMC/Si 界面破裂分析**
-
-TSMC 以破裂力學（fracture mechanics）建模結合實驗，研究 CoWoS 中環氧塑封材料（EMC）/矽晶片界面的失效機制：
-- **主要失效模式**：EMC/Si 界面剝離（delamination），集中在矽晶片角落
-- **關鍵發現**：**中介層剛度（interposer stiffness）是抑制失效的關鍵因子**——剛度越高，CTE 失配引發的應力越小
-- 實驗提供材料性質量化數據，指導 EMC 性能優化與下世代 CoWoS 設計
-
-**Paper 37.15 — TSMC：CoWoS-R 板級可靠性（OCP Accelerator Module）**
-
-針對 **3.3× 光罩大小的 CoWoS-R** 封裝在 OCP Accelerator Module（OAM）板上的板級可靠性（BLR）：
-- 測試：溫度循環（TCT）、振動、衝擊
-- **TCT 是最關鍵的 BGA 破壞因子**：在基板側與 PCB 側均誘發嚴重 BGA 裂紋
-- FEA 模型模擬熱循環應力，識別 BGA 疲勞熱點
-- 對 PCB 材料屬性的 Bulk / Regional / 走線映射三種解析度建模比較
-
-**wiki 含義**：TSMC 公開 CoWoS 可靠性研究顯示，隨著 reticle 尺寸繼續擴大（目標 14× 倍光罩），EMC 翹曲應力與 BGA 疲勞是商業化的關鍵工程挑戰，需要材料、基板與系統整合層面的協同優化。
-
-### OSAT 生態系補位 / OSAT Supplement Ecosystem
-| 廠商 | 技術 | 產能目標（2026 年底） |
-|------|------|---------------------|
-| ASE | CoWoP（面板版）| 20,000–25,000 片/月 |
-| Amkor | FOCoS（扇
+**Paper 6.3 — TSMC

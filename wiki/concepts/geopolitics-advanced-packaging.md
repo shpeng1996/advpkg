@@ -3,7 +3,7 @@ title: "先進封裝地緣政治 / Geopolitics of Advanced Packaging"
 category: concept
 tags: [geopolitics, US-China, CHIPS-Act, supply-chain, chiplet, NAPMP, export-control, glass-substrate, standards-war, BOE, Corning, Absolics]
 created: 2026-04-26
-updated: 2026-05-25
+updated: 2026-05-28
 sources: [2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-23_trendforce_china-osat-sj-semiconductor-ipo, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-08-05_3dincites_iftle636, 2026-03-23_trendforce_musk-terafab-tsmc-packaging, 2026-04-22_trendforce_sk-hynix-indiana-us-plant, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor]
 related: [wiki/concepts/advanced-packaging-market.md, wiki/entities/amkor.md, wiki/entities/ase-group.md, wiki/technologies/ucie.md]
 ---
@@ -171,14 +171,33 @@ SEMICON Southeast Asia 2026（吉隆坡，2026-05-06）上，Lam Research 高管
 - **2025–2026**：NAPMP 資金開始落地；中國 OSAT 能力升級加速
 - **2026-03**：Tesla Terafab 構想出現；SKC Absolics 佐治亞廠完工（美國玻璃基板本土化節點）；Lens Technology 宣布進入 TGV
 - **2026-05**：Lam Research 在 SEMICON SEA 直言馬來西亞先進封裝中端機遇；馬來西亞半導體策略討論尚未納入主要設備商
-- **2026-05（⭐新增）**：**MATCH Act（Making Advanced Chips with Tax Act）** 在美國國會獲得動能：將 SMIC、Huawei、Hua Hong 及中國主要記憶體廠列為「covered facilities」，擬禁止 **DUV 浸潤式微影設備出口中國**，並限制盟國企業「服務已安裝設備」——後者被視為比 Entity List 更具穿透力的管制工具（因 DUV 設備高度依賴定期維護）。Applied Materials 預估 MATCH Act 相關出口限制 2026 年財務衝擊約 $710M。
-- **2026+**：Chiplet 跨國供應鏈合規問題預計成為業界顯著議題
+- **2026-05（⭐新增）**：**MATCH Act（Making Advanced Chips with Tax Act）** 在美國國會獲得動能：將 SMIC、Huawei、Hua Hong 及中國主要記憶體廠列為「covered facilities」，擬禁止 **DUV 浸潤式微影設備出口中國**，並限制盟國企業「服務已安裝設備」——後者被視為比 Entity List 更具穿透力的管制工具（因 DUV 設備高度依賴定期維護）。Applied Materials 預估 MATCH Act 相關
 
----
+### NVIDIA 中國市場崩潰與 Huawei 竄升（⭐ 2026-05-28 新增）
 
-## 參考資料 / References
+COMPUTEX 2026（六月初）前夕，AI 晶片出口管制的地緣政治後果以最清晰的方式呈現：
 
-- [[sources/2024-10-01_3dincites_geopolitics-packaging]] — IFTLE 608：封裝是美中晶片戰新戰場
-- [[sources/2026-04-01_semiengineering_chiplets-2026]] — Chiplets 2026：地緣政治咽喉點分析
-- [[concepts/advanced-packaging-market]] — 市場規模與競爭格局
-- [[entities/amkor]] — CHIPS Act 封裝旗艦項目
+**NVIDIA 中國 AI 市場份額：~95% → 實質 0%**
+- 多輪出口管制（2022–2025）積累效應完全顯現
+- 2025-12 批准的 H200 授權框架（限售約 10 家：Alibaba/Tencent/ByteDance/JD.com，附帶 25% 美政府收益分成）
+- **截至 2026-05 底：H200 實際交貨 = 0**——北京行政命令要求企業優先採購 Huawei，使授權機制完全失效
+- Huang 表態：「放棄整個中國市場規模的市場在戰略上不合理」；批評出口管制政策「已在很大程度上適得其反」
+
+**Huawei Ascend 950PR 填補真空：**
+- **2026-03**：Ascend 950PR 正式量產
+- **2026 年 AI 收入預測：$120 億美元**（+60% YoY，~75 萬套出貨）
+- Morgan Stanley 預測：中國 AI 晶片市場 2030 年達 **$670 億美元**，國內廠商主導
+- Huawei 自有 CANN 軟體棧 + MindSpore 框架逐步建立對 CUDA 的替代生態
+
+**NVIDIA 的回應策略：**
+- 聚焦美國/歐洲/日本/印度等「可服務市場」
+- Q1 FY2027 收入 $81.62B（+85% YoY），無需中國市場即創歷史新高
+- Q2 FY2027 指引 ~$91B——市場接受「零中國收入」為新常態
+- 向記憶體廠商施壓擴產（Huang 警告高記憶體價格是「重要通膨」）
+
+**封裝市場影響：**
+- NVIDIA 完全轉向非中國客戶，CoWoS 需求有增無減（>50% TSMC 產能鎖定至 2027 年）
+- Huawei Ascend 在中國國內採用 SMIC 成熟製程 + 本土 OSAT（JCET 等）封裝，強化中國本土封裝生態
+- 中美晶片「脫鉤」使先進封裝形成兩套相互隔離的供應鏈生態
+
+*Source: TechTimes 2026-05-24（COMPUTEX 2026 報導；NVIDIA Q1 FY2027 法說會）*
