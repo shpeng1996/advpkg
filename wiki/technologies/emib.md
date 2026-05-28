@@ -1,9 +1,9 @@
 ---
 title: "EMIB — Embedded Multi-Die Interconnect Bridge"
 category: technology
-tags: [Intel, 2.5D, silicon-bridge, chiplet, HBM4, Foveros, glass-substrate, EMIB-T, EMIB-M]
+tags: [Intel, 2.5D, silicon-bridge, chiplet, HBM4, Foveros, glass-substrate, EMIB-T, EMIB-M, silicon-capacitors, power-delivery]
 created: 2026-05-03
-updated: 2026-05-27
+updated: 2026-05-29
 sources: [2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-03-05_trendforce_intel-emib-billions, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-03-03_trendforce_intel-clearwater-forest, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate]
 related:
   - wiki/entities/intel.md
@@ -72,6 +72,8 @@ EMIB 是 Intel 的局部矽橋接技術：將一小片高密度矽橋（bridge d
 - **2026-05**：EMIB 技術驗證良率達 **~90%**；Google（TPU v8e 2H27）、Meta（自研 CPU 2H28）確認採用；Intel CFO 表示接近完成「數十億美元」封裝大單
 - **2026-05**：EMIB 全球產能加速：俄勒岡（主力）+ 越南 SHTP（18A 產品）+ 台灣設備訂單 2H26 交貨（E&R/C Sun/AblePrint）
 - **2026-05-26**：**Intel Rio Rancho 矽光子代工開放 + EMIB 現有客戶首次具體揭露**：AWS、Cisco 為確認現有客戶；Apple、Google、Microsoft、NVIDIA、Tesla 洽談中。EMIB 生產主基地：Penang + Rio Rancho。⭐新增
+- **2026-05-28**：**Intel 計畫 2027 年在 EMIB 基板整合矽電容，首批用於 Google TPU v8e（2H27）**：矽電容 ESL/ESR 比 MLCC 低逾 100 倍；供應鏈：Samsung Electro-Mechanics（₩1.557 兆合約，Jan 2027–Dec 2028）、Murata Manufacturing（法國 200mm 線已投產；¥100 億擴至 3× 現有產能至 2028）⭐新增
+
 - **2026-05-20**：**Intel CEO Lip-Bu Tan（JP Morgan 科技大會）確認 EMIB-T 基板預付款**：台灣 4 家 + 日本 2 家供應商供應緊缺，EMIB 客戶主動承諾預付。基板夥伴完整清單：Ibiden（JP，¥500B 3 年計畫）、Shinko（JP）、Unimicron（TW，2H26 起 >50% 業務）、AT&S（AT）。規模更新：EMIB-M 6× → 8–12×（2026–27）；CoWoS-S ~3.3×、CoWoS-L ~3.5×。⭐新增
 - **2026-05-12**：**MediaTek 確認雙封裝策略（EMIB + CoWoS）**；Google TPU 8t 用 CoWoS-S、TPU v8e 用 EMIB 首次確認；Douglas Yu（前 TSMC 先進封裝主管）加入 MediaTek；EMIB-M 6× 現況、8–12× 目標 2026–27 ⭐新增
 - **2026-H2**：EMIB-T 進入量產 fab 部署；EMIB 預計貢獻**數十億美元**營收（Intel CFO 聲明）
@@ -87,6 +89,7 @@ EMIB 是 Intel 的局部矽橋接技術：將一小片高密度矽橋（bridge d
 | 局部橋接成本低於全面積矽中介層 | 功率上限 <5–6 kW（不適合旗艦 AI GPU） |
 | **代工廠中立**：可封裝任何廠商晶圓（TSMC/Samsung/GlobalFoundries） | 無嵌入式 IVR，不適合高功耗 AI 加速器 |
 | 封裝尺寸 120×120mm（大於 CoWoS 標準） | 互連頻寬密度低於全面積矽中介層（CoWoS-S） |
+| 2027 起加入矽電容（Silicon Caps）解決電壓穩定性 | 電壓下垂（voltage droop）問題仍需矽電容+TSV 方案才能解決（MLCC 不足夠）|
 | 與 Foveros 3D 結合形成 EMIB 3.5D 混合架構 | 外包封裝（Amkor）仍在初期爬坡 |
 
 ---
@@ -104,23 +107,4 @@ EMIB 是 Intel 的局部矽橋接技術：將一小片高密度矽橋（bridge d
   - Qualcomm（探索中）
   - Tesla 14A Terafab AI 晶片（已確認）
   - **NVIDIA Feynman I/O die**（評估中；14A/18A + EMIB，同時評估 TSMC A16+SoIC）⭐新增
-- **SK Hynix HBM 相容性測試**（2026-05-11 新增）⭐：SK Hynix 在 Intel EMIB 基板上測試自家 HBM 整合，驗證 HBM 在非 CoWoS 封裝環境的穩定性；SK Hynix 韓國設有小規模 2.5D R&D 線支援此評估
-
----
-
-## 相關技術 / Related Technologies
-
-- **[Foveros](foveros.md)**：Intel 3D 堆疊技術，與 EMIB 組合為 EMIB 3.5D
-- **[CoWoS](cowos.md)**：TSMC 競爭技術（全面積矽中介層 vs. 局部矽橋接）
-- **Samsung LSB**：三星的對應矽橋接技術（Land-Side Bridge，ECTC 2025 論文）
-
----
-
-## 爭議與未解問題 / Open Questions
-
-- EMIB 能否在功率密度上突破 5–6 kW 限制（透過嵌入式 IVR）？
-- Google TPU v9 採用 EMIB 是否會動搖 TSMC CoWoS 的 CSP 主導地位？
-- EMIB on Glass 量產節奏（2027–28 目標）能否達成？
-- **NVIDIA Feynman I/O die 最終是否採用 Intel 14A/18A + EMIB？**（2026-05-12 新增）：目前 NVIDIA 並行評估 TSMC A16+SoIC 與 Intel 14A/18A+EMIB 兩條路線。Intel EMIB 若獲 NVIDIA 旗艦 AI 晶片採用，將是 EMIB 從「ASIC 客戶」到「高效能 GPU 客戶」的突破，也將重塑整個 CoWoS 壟斷格局。
-- **SK Hynix EMIB R&D 是否會演變為量產合作**？目前 SK Hynix 僅在 R&D 層面測試；若 EMIB 吸引更多 HBM 客戶（Marvell、MediaTek），SK Hynix 的 EMIB 相容 HBM 設計可能成為競爭優勢。
-- **EMIB 客戶多元化速度**：Marvell、MediaTek 在 2026 年 5 月進入評估；若 2026 H2 簽訂合約，EMIB 外部封裝業務規模將大幅超越現有預估。
+- **SK Hynix HBM 相容性測試**（2026-05-11 新增）⭐：SK Hynix 在 Intel EMIB 基板上測試自家 HBM 整合，驗證 HBM 在非 CoWoS 封裝環境的穩定性；SK Hynix 韓國設有小規模 2.5D R&D 線

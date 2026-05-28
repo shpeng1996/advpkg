@@ -1002,3 +1002,30 @@
   1. **AMAT 450nm Cu-Cu 混合接合 98% 良率的缺陷根因機制首次公開（ECTC 2026 Paper 18.4）**：wiki 先前只記錄了「450nm、98% 良率」這個結果數字，此次 Semiecosystem 的 ECTC 深度預覽補充了背後的**物理機制**——EBAC 定位開路缺陷，TEM-EELS 確認缺陷為銅晶粒（111）取向界面的碳夾雜層；製程優化四槓桿點（金屬化+CMP+電漿+退火）消除此缺陷。這是材料科學層次的新知識，確立了 <300nm 節距擴展的科學可行性，也使「98% 良率」從純粹的結果聲明升格為可重現、可擴展的工程路線。
   2. **NVIDIA 預訂 >50% 台積電 CoWoS 可用產能至 2027 年（首次量化）**：COMPUTEX 2026 前夕，Jensen Huang 親赴台積電確認 Vera Rubin 封裝配額，TechTimes 報導首次披露此比例數字，直接量化了 AMD/AI 新創面臨先進封裝短缺的根因——非台積電不努力擴產，而是 NVIDIA 的壟斷式預訂。結合 Q1 FY2027 $81.62B 財務結果，確認 NVIDIA 有足夠財務實力支撐此預訂策略。
   3. **NVIDIA 中國 AI 市場歸零 + H200 授權框架形同虛設（截至 2026-05 底）**：2025-12 批准的 H200 授權機制（限售 10 家+25% 收益分成）被北京行政命令架空，零實際交貨。Huawei 填補真空，2026 年 AI 收入預計達 $12B（+60%），中國 AI 晶片市場進入「兩套供應鏈」格局。此為 wiki 地緣政治章節的最新狀態更新。
+
+## [2026-05-29] collect | 每日自動蒐集 — 先進封裝最新動態（第三十五次）
+- 搜尋查詢數：7 組（TSMC CoWoS COMPUTEX 2026、HBM5 SK Hynix Samsung Micron、COMPUTEX 2026 NVIDIA AMD Intel 封裝、ECTC 2026 混合接合 CPO、Intel EMIB Foveros May 2026、先進封裝市場 2026、TrendForce 最新封裝新聞）
+- 成功抓取：4 篇（articles/ 4, papers/ 0, reports/ 0）
+  - 2026-05-27_trendforce_tsmc-3nm-price-hike-2h26-ai-asic.md（TrendForce 2026-05-27：TSMC 3nm 2H26 漲最高 15%；Fab 18 Q2 175K wsm；Jensen+Wei 晚餐；COUPE+Spectrum-X 連結）
+  - 2026-05-28_trendforce_intel-emib-silicon-capacitors-google-v8e.md（TrendForce 2026-05-28：Intel EMIB 2027 矽電容；Google v8e 首採；Samsung EM ₩1.557 兆；Murata 3× 產能）
+  - 2026-05-27_nvidia_gtc-taipei-computex2026-vera-rubin-nvl72-constellation.md（NVIDIA Blog 2026-05-27 更新：Vera Rubin NVL72 完整架構；Spectrum-X CPO 量產出貨確認；Constellation 園區；2H26 驚喜新品）
+  - 2026-05-21_fujifilm_ectc2026-sn-damascene-pfas-free-pbo-imec.md（Fujifilm 2026-05-21：ECTC 2026 Sn 大馬士革微凸塊；1.0µm L/S Cu 大馬士革（imec）；PFAS-free PBO）
+- 失敗/跳過：多篇（TrendForce 2026-05-28 其他新聞與封裝無直接關聯；ECTC 2026 正式論文仍限制；SemiEngineering ECTC 2026 地面報導尚未發布（會議 5/26-29）；HBM5/advanced packaging 搜尋結果均為已收錄舊文章）
+- 學術代理：UNAVAILABLE ✗（ieeexplore、arxiv 仍受限）
+- 新增 wiki 頁面：4 頁（sources/ 4 篇）
+  - wiki/sources/2026-05-27_trendforce_tsmc-3nm-price-hike-cowos-cpo.md
+  - wiki/sources/2026-05-28_trendforce_intel-emib-silicon-capacitors-google-v8e.md
+  - wiki/sources/2026-05-27_nvidia_gtc-taipei-computex2026-vera-rubin-nvl72.md
+  - wiki/sources/2026-05-21_fujifilm_ectc2026-sn-damascene-pfas-free-pbo.md
+- 更新 wiki 頁面：7 頁
+  - wiki/entities/nvidia.md（新增：Vera Rubin NVL72 完整架構+Spectrum-X CPO 出貨確認；Constellation 園區；2H26 驚喜新品；150 台灣夥伴；updated 2026-05-29）
+  - wiki/entities/tsmc.md（新增：3nm 2H26 漲 15%/2027 漲 5-10%；Fab 18 Q2 175K wsm；股東會 2026-06-04；Jensen+C.C. Wei 晚餐；COUPE + Spectrum-X 連結；updated 2026-05-29）
+  - wiki/entities/intel.md（新增：EMIB 矽電容 2027；Google v8e EMIB+矽電容首採；Samsung EM/Murata 供應鏈；電壓穩定性技術路線；updated 2026-05-29）
+  - wiki/technologies/emib.md（新增：矽電容+TSV 功率穩定性；Google v8e 2H27；Samsung EM ₩1.557 兆；Murata 3×；Pros/Cons 更新；updated 2026-05-29）
+  - wiki/technologies/copackaged-optics.md（新增：Spectrum-X CPO NVL72 量產出貨里程碑確認；updated 2026-05-29）
+  - wiki/technologies/hybrid-bonding.md（新增：Fujifilm Sn 大馬士革替代路線；1.0µm Cu damascene imec；PFAS-free PBO；updated 2026-05-29）
+  - wiki/index.md（頁面數 163→167；來源數 129→133；4 個新 sources 頁面）
+- 主要新知識：
+  1. **NVIDIA Spectrum-X CPO 交換器已正式量產出貨（整合於 Vera Rubin NVL72）**：wiki 先前只記錄「CPO 2026 量產啟動」，此次 NVIDIA 官方 Blog 明確確認 Spectrum-X Ethernet Photonics CPO 交換器為 NVL72 標配出貨組件，等於從「量產開始」升格為「大規模客戶交付」里程碑。同時，Jensen Huang 透露 2H26 有「尚未公布的驚喜新產品」，代表 TSMC 先進封裝（CoWoS/SoIC）額外需求訊號。
+  2. **Intel EMIB 功率穩定性瓶頸被矽電容解決方案覆蓋（2027，Google v8e 首採）**：wiki 先前只記錄 EMIB 的技術優勢，此文首次揭示其「高頻 AI 工作負載電壓下垂」弱點，以及 2027 年矽電容+TSV 組合解決方案。Samsung Electro-Mechanics ₩1.557 兆合約（Jan 2027–Dec 2028）和 Murata 3× 產能擴張計畫量化了這個新興元件市場。
+  3. **Fujifilm + imec 的 Sn 大馬士革技術為混合接合提供非 Cu-Cu 替代路線，1.0µm L/S 大馬士革銅互連達成新的 wiki RDL 密度記錄**：在「混合接合是唯一未來」的論述背景下，Sn 大馬士革製程代表材料商視角的多元化路線。同時，1.0µm L/S Cu 大馬士革互連是本 wiki 目前記錄的最細 RDL 研究數據，填補了材料/製程層次的技術知識空缺。

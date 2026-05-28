@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-05-28
-**頁面總數 Total Pages**：163
-**原始來源數 Sources**：129
+**更新時間 Updated**：2026-05-29
+**頁面總數 Total Pages**：167
+**原始來源數 Sources**：133
 
 ---
 
@@ -58,6 +58,10 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-05-28_trendforce_intel-emib-silicon-capacitors-google-v8e]] — TrendForce：Intel EMIB 2027 矽電容整合（Google v8e 首採）；Samsung EM ₩1.557 兆合約；Murata 3× 產能擴張（2026-05-28）⭐新增
+- [[sources/2026-05-27_trendforce_tsmc-3nm-price-hike-cowos-cpo]] — TrendForce：TSMC 3nm ASP 2H26 最高漲 15%；Fab 18 Q2 175K wsm；Jensen Huang+C.C. Wei 晚餐；COUPE + Spectrum-X 連結（2026-05-27）⭐新增
+- [[sources/2026-05-27_nvidia_gtc-taipei-computex2026-vera-rubin-nvl72]] — NVIDIA Blog：GTC Taipei COMPUTEX 2026 Vera Rubin NVL72 完整架構；Spectrum-X CPO 量產出貨；Constellation 園區揭幕；2H26 驚喜新產品預告（2026-05-27）⭐新增
+- [[sources/2026-05-21_fujifilm_ectc2026-sn-damascene-pfas-free-pbo]] — Fujifilm：ECTC 2026 Sn 大馬士革微凸塊替代方案；1.0µm L/S Cu 大馬士革互連（imec）；PFAS-free PBO 2026 商業化（2026-05-21）⭐新增
 - [[sources/2026-05-24_techtimes_nvidia-computex2026-cowos]] — TechTimes：NVIDIA COMPUTEX 2026 Jensen Huang 訪台積電；Vera Rubin 6-chip；CoWoS >50% NVIDIA 鎖定；中國市場 0%；Q1 FY2027 $81.62B（2026-05-24）⭐新增
 - [[sources/2026-05-21_semiecosystem_ectc2026-cpo-hybridbonding-plp]] — Semiecosystem：ECTC 2026 CPO/混合接合/面板封裝論文預覽；AMAT 450nm 缺陷機制；GF+Corning CPO；Ushio 510mm 玻璃（2026-05-21）⭐新增
 - [[sources/2026-05-26_trendforce_intel-rio-rancho-glass-substrate]] — Intel Rio Rancho 全球首座玻璃基板 HVM 候選廠；矽光子代工開放；EMIB 現有客戶 AWS/Cisco；Apple/Google/Microsoft/NVIDIA/Tesla 洽談中（2026-05-26）⭐新增
@@ -173,9 +177,4 @@
 - [[sources/2025-12-01_trendforce_intel-amkor-songdo-emib-outsource]] — Intel 首次 EMIB 外包至 Amkor Songdo K5；EMIB-M 量產/EMIB-T 2026-27；2,700 億韓元投資（2025-12-01）⭐新增
 - [[sources/2025-12-01_semiengineering_thermal-management]] — 先進封裝熱管理：TSMC 直接矽液冷、3D 熱點、TIM 演進（2025-12）⭐新增
 - [[sources/2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding]] — IFTLE 648：Unimicron 玻璃核心基板 + Cu-Cu 混合接合可靠性研究（2025-12-01）⭐新增
-- [[sources/2025-10-07_trendforce_hybrid-bonder-market-2b]] — 混合接合設備市場 $2B（2028）；韓國 Hanmi/Hanwha/LG 競爭；Besi/ASMPT 全球領先（2025-10-07）⭐新增
-- [[sources/2025-09-19_trendforce_stmicro-foplp-france]] — STMicro 法國面板級封裝試驗線 2026 Q3 啟動（2025-09-19）⭐新增
-- [[sources/2025-09-12_trendforce_foplp-competitive-2025]] — FOPLP 競爭格局：Powertech 90% 良率；TSMC 玻璃 vs Samsung；Resonac+AMAT+TEL 生態（2025-09-12）⭐新增
-- [[sources/2025-08-12_semianalysis_hbm-roadmap]] — SemiAnalysis：HBM roadmap；HBM4 custom base die、shoreline area、XPU-HBM routing density 與 CoWoS 依賴（2025-08-12）⭐新增
-- [[sources/2025-08-05_3dincites_iftle636-samsung-lsb-micron-virginia]] — IFTLE 636：三星 LSB 矽橋接 Chiplet；Micron 維吉尼亞 HBM 封裝廠計畫（2025-08-05）⭐新增
-- [[sources/2025-07-01_3dincites_micron-onshore-tsmc-copos]] — IFTLE 634：Micron 本土化投資；TSMC CoP
+- [[sources/2025-10-07_trendforce_hybrid-bonde
