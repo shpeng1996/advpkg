@@ -185,4 +185,13 @@ TSMC COUPE™ 與 GF SCALE 的競爭表明 CPO 市場正從「單一廠商主導
 
 ### 比較兩種 CPO 連接器方案
 
-| 特性 | GF + Corning GLASSBRI
+| 特性 | GF + Corning GLASSBRIDGE™ | Intel 扇出玻璃耦合器 |
+|------|--------------------------|---------------------|
+| 耦合架構 | 被動耦合 | 邊緣耦合（Edge-Coupling） |
+| 耦合損耗 | <1.5 dB/facet | ~-1.55 dB（fiber→PIC） |
+| 功率耐受 | 280 mW | — |
+| 插拔耐久 | >100 次 | >100 次，<0.01 dB 變化 |
+| 技術夥伴 | GF Fotonix™ 矽光子 | Intel 自有矽光子 |
+| 定位 | 第三方 CPO 生態 | Intel 封裝生態整合 |
+
+*Source: Semiecosystem (Mark LaPedus) 2026-05-21；ECTC 2026 Paper abstracts*
