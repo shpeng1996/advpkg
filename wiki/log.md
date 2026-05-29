@@ -1029,3 +1029,22 @@
   1. **NVIDIA Spectrum-X CPO 交換器已正式量產出貨（整合於 Vera Rubin NVL72）**：wiki 先前只記錄「CPO 2026 量產啟動」，此次 NVIDIA 官方 Blog 明確確認 Spectrum-X Ethernet Photonics CPO 交換器為 NVL72 標配出貨組件，等於從「量產開始」升格為「大規模客戶交付」里程碑。同時，Jensen Huang 透露 2H26 有「尚未公布的驚喜新產品」，代表 TSMC 先進封裝（CoWoS/SoIC）額外需求訊號。
   2. **Intel EMIB 功率穩定性瓶頸被矽電容解決方案覆蓋（2027，Google v8e 首採）**：wiki 先前只記錄 EMIB 的技術優勢，此文首次揭示其「高頻 AI 工作負載電壓下垂」弱點，以及 2027 年矽電容+TSV 組合解決方案。Samsung Electro-Mechanics ₩1.557 兆合約（Jan 2027–Dec 2028）和 Murata 3× 產能擴張計畫量化了這個新興元件市場。
   3. **Fujifilm + imec 的 Sn 大馬士革技術為混合接合提供非 Cu-Cu 替代路線，1.0µm L/S 大馬士革銅互連達成新的 wiki RDL 密度記錄**：在「混合接合是唯一未來」的論述背景下，Sn 大馬士革製程代表材料商視角的多元化路線。同時，1.0µm L/S Cu 大馬士革互連是本 wiki 目前記錄的最細 RDL 研究數據，填補了材料/製程層次的技術知識空缺。
+
+## [2026-05-30] collect | 每日自動蒐集 — 先進封裝最新動態（第三十六次）
+- 搜尋查詢數：7 組（TSMC CoWoS COMPUTEX 2026、HBM5 記憶體廠商、ECTC 2026 結果/回顧、Intel EMIB 玻璃基板 5 月動態、ASE 面板封裝公告、TrendForce 5/29~30 最新、NVIDIA AMD 封裝 COMPUTEX 預告）
+- 成功抓取：2 篇（articles/ 2, papers/ 0, reports/ 0）
+  - 2026-05-26_semiconductor-digest_ase-310mm-plp-automated-ectc2026.md（Semiconductor Digest，Shannon Davis，發布 2026-05-26；ASE 業界首條自動化 310mm×310mm PLP 產線——FOCoS 2/2µm + FOCoS-Bridge 8/8µm；面積 96,100mm²；2027 H1 量產；ECTC 2026 CEO Tien Wu 主題演講「Advanced Packaging & the Future of System Optimization」）
+  - 2026-05-28_reuters_tsmc-kevin-zhang-energy-efficiency-advanced-packaging.md（Reuters，Toby Sterling，發布 2026-05-28；TSMC Kevin Zhang 阿姆斯特丹會議——能源效率取代算力成 AI 晶片首要限制；先進封裝/chip stacking/photonics 三大效率工具；N2→A14 能耗-30%+算力>20%；Huawei Tau 縮放定律評論）
+- 失敗/跳過：多篇（SemiEngineering ECTC 2026 回顧文章 client-side rendering、無法抓取；Chrome extension 未連接；TrendForce 5/29~30 無新封裝文章；COMPUTEX 2026 尚未正式開幕（6/2–5）；3dIncites ECTC 2026 回顧尚未發布）
+- 學術代理：UNAVAILABLE ✗（ieeexplore、arxiv 仍受限）
+- 新增 wiki 頁面：2 頁（sources/ 2 篇）
+  - wiki/sources/2026-05-26_semiconductor-digest_ase-310mm-plp-ectc2026.md
+  - wiki/sources/2026-05-28_reuters_tsmc-kevin-zhang-energy-efficiency.md
+- 更新 wiki 頁面：4 頁
+  - wiki/entities/ase-group.md（新增：ASE 業界首條自動化 310mm PLP 產線完整規格；FOCoS 2/2µm / FOCoS-Bridge 8/8µm；2027 H1 量產；ECTC 2026 主題演講；updated 2026-05-30）
+  - wiki/technologies/foplp.md（新增：ASE FOCoS PLP 具體 L/S 規格量化首次公開；面板面積 96,100mm²；時程確認 2027 H1；updated 2026-05-30）
+  - wiki/entities/tsmc.md（新增：Kevin Zhang 阿姆斯特丹聲明——能效首要論述；先進封裝/CPO 戰略定位升格；N2→A14 量化能效路線圖；Huawei Tau 縮放定律評論；updated 2026-05-30）
+  - wiki/index.md（頁面數 167→169；來源數 133→135；2 個新 sources 頁面）
+- 主要新知識：
+  1. **ASE FOCoS PLP 具體線寬規格首次公開（ECTC 2026）**：wiki 先前記錄 ASE 擁有 FOPLP 能力但缺乏具體 L/S 數據。此文首次確認 FOCoS 面板版 **L/S = 2/2µm**，與 CoWoS-L 矽中介層 RDL 規格相當。更重要的是「設計規則一致性從晶圓到面板」的差異化論點——客戶可直接從 WLP 遷移至 PLP 而無需重新設計，顯著降低採用門檻。**量產時程 2027 H1**，比 TSMC CoPoS 早約 1.5–2 年，形成 ASE 在 PLP 量產時序上的競爭窗口。
+  2. **TSMC 高管首次系統性陳述「能源效率 > 算力密度」的戰略轉向（Amsterdam，2026-05-28）**：Kevin Zhang 在非法說場合明確指名「先進封裝、晶片堆疊、光子技術」為三大效率提升工具，並給出 N2→A14 能耗 -30% / 算力 +>20% 的量化指標。這為 wiki 所有先進封裝技術頁面提供了統一的「為什麼」戰略背景：行業驅動力已從製程縮小轉向封裝/CPO 整合，TSMC 高管的公開表態等同於產業戰略方向的官方確認。

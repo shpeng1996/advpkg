@@ -3,8 +3,8 @@ title: "ASE Group / 日月光投控"
 category: entity
 tags: [OSAT, advanced-packaging, CoWoP, FOPLP, chiplet, CPO, LEAP]
 created: 2026-04-25
-updated: 2026-05-20
-sources: [2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2026-05-08_aseglobal_ase-wus-kaohsiung-focoes-hub]
+updated: 2026-05-30
+sources: [2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2026-05-08_aseglobal_ase-wus-kaohsiung-focoes-hub, 2026-05-26_semiconductor-digest_ase-310mm-plp-ectc2026]
 related:
   - wiki/technologies/cowos.md
   - wiki/technologies/copos.md
@@ -32,7 +32,10 @@ related:
 
 ## 近期動態 / Recent Developments
 
-- **2026-05-08（⭐最新）**：**ASE + WUS（臻鼎科技）高雄 FOCoS/FCBGA 先進封裝基地宣告**——兩公司宣布在**高雄楠梓科技產業園區（Nanzih Technology Industrial Park）**共同興建新一代 AI 封裝基地，目標 **2029 年 9 月完工**。廠房面積逾 113,000 平方公尺，創造逾 2,000 個就業機會，廠區內設 161kV 變電站確保穩定電力。技術聚焦：**FOCoS**（Fan-Out Chip on Substrate）+ **FCBGA**（Flip Chip BGA），服務 AI、HPC、雲端、自駕車應用。WUS 是台灣主要 PCB 廠商（Apple 主力 FC-BGA 供應商），此合作形成**基板-封裝垂直整合**模式。設計符合 EEWH 黃金級綠建築標準。
+- **2026-05-26（⭐最新）**：**ASE 發表業界首條自動化 310mm × 310mm 面板級封裝產線（ECTC 2026）**——於 ECTC 2026（奧蘭多，2026-05-26~29）宣布業界第一條自動化 PLP 產線。規格：面板 310×310mm，FOCoS（L/S = **2/2µm**）+ FOCoS-Bridge（L/S = 8/8µm）雙平台，設計規則從晶圓級平移至面板級。有效面板面積 **96,100 mm²**，顯著提升材料利用率。**預計 2027 H1 量產**。目標市場：AI 資料中心、HPC、網路、高端遊戲、邊緣 AI。CEO Dr. Tien Wu 在 ECTC 主題演講「Advanced Packaging & the Future of System Optimization」強調系統優化是先進封裝的核心使命。
+  *Source: Semiconductor Digest 2026-05-26*
+
+- **2026-05-08**：**ASE + WUS（臻鼎科技）高雄 FOCoS/FCBGA 先進封裝基地宣告**——兩公司宣布在**高雄楠梓科技產業園區（Nanzih Technology Industrial Park）**共同興建新一代 AI 封裝基地，目標 **2029 年 9 月完工**。廠房面積逾 113,000 平方公尺，創造逾 2,000 個就業機會，廠區內設 161kV 變電站確保穩定電力。技術聚焦：**FOCoS**（Fan-Out Chip on Substrate）+ **FCBGA**（Flip Chip BGA），服務 AI、HPC、雲端、自駕車應用。WUS 是台灣主要 PCB 廠商（Apple 主力 FC-BGA 供應商），此合作形成**基板-封裝垂直整合**模式。設計符合 EEWH 黃金級綠建築標準。
   *Source: ASE Holdings Press Release 2026-05-08（官方公告）*
 
 - **2026-05-27（預定）**：ASE CEO **Dr. Tien Wu** 受邀擔任 **ECTC 2026（第 76 屆，奧蘭多）主題演講人**，主題：「Advanced Packaging & the Future of System Optimization」——產業從元件層縮放走向系統層優化；Intel Foundry Services（Bora Baloglu）擔任 Technical Program Chair。

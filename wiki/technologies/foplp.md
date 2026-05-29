@@ -3,7 +3,7 @@ title: "FOPLP — 扇出面板級封裝 / Fan-Out Panel-Level Packaging"
 category: technology
 tags: [fan-out, panel-level, TSMC, Samsung, ASE, Powertech, Innolux, CoPoS, InFO, cost-reduction]
 created: 2026-05-03
-updated: 2026-05-26
+updated: 2026-05-30
 sources: [2025-09-12_trendforce_foplp-competitive-2025, 2026-04-13_trendforce_copos-pilot, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-21_3dincites_acm-wlp-plp-process-trends, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2022-11-01_semianalysis_packaging-gets-blurry]
 related:
   - wiki/technologies/copos.md
@@ -40,7 +40,7 @@ SemiAnalysis 2022 年的技術框架指出，fanout RDL、embedded silicon bridg
 |------|---------|---------|---------|----------------|
 | TSMC | CoPoS | 310 × 310 mm | **玻璃** | 試驗線 2026-06 完工；量產 2028–29 |
 | Samsung | FOPLP | TBD | 非玻璃 | 競爭開發中 |
-| ASE Group | FOPLP（CoWoP 相關） | 600 × 600 mm | — | 擴產中；$8.5B CapEx 2026 |
+| **ASE Group** | **FOCoS PLP / FOCoS-Bridge PLP** | **310 × 310 mm** | — | **業界首條自動化產線 ECTC 2026 發表；FOCoS 2/2µm；FOCoS-Bridge 8/8µm；面積 96,100mm²；2027 H1 量產⭐新** |
 | **Powertech** | FOPLP | 515 × 510 mm | — | **試驗良率 ~95%**（⭐2026-05 升至 95%）；客戶認證 2H26；量產 **1H27** |
 | Innolux | FOPLP | 700 × 700 mm | — | 大尺寸面板優勢 |
 | STMicroelectronics | FOPLP（試驗） | — | — | 法國試驗線 2026-Q3 啟動（車用/工業） |
@@ -54,6 +54,7 @@ SemiAnalysis 2022 年的技術框架指出，fanout RDL、embedded silicon bridg
 - **2026-02**：TSMC CoPoS 設備安裝完成
 - **2026-05（⭐新）**：Powertech FOPLP 試驗良率進一步升至 **~95%**（從 90% 再提升 5pp）；CapEx 上調 NT$40B → NT$50B（+25%）；客戶認證排程確定於 **2H26**，量產提前至 **1H27**
 - **2026-06**：TSMC CoPoS 試驗線預計完工
+- **2026-05-26（⭐新）**：**ASE 在 ECTC 2026 宣布業界首條自動化 310mm × 310mm PLP 產線**——FOCoS（L/S=2/2µm）和 FOCoS-Bridge（L/S=8/8µm）雙平台；面板面積 96,100mm²；2027 H1 量產；CEO Tien Wu 主題演講強調「From Wafer to Panel」轉型
 - **2026-2H（預計）**：Hanwha Semitech FO-PLP 設備供 SpaceX 網路晶片生產（首次太空晶片 FOPLP 量產）
 - **2027-1H（預計）**：Powertech FOPLP 量產開始
 - **2028–29**：TSMC CoPoS 量產目標（AI 加速器超大封裝）

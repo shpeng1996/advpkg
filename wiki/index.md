@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-05-29
-**頁面總數 Total Pages**：167
-**原始來源數 Sources**：133
+**更新時間 Updated**：2026-05-30
+**頁面總數 Total Pages**：169
+**原始來源數 Sources**：135
 
 ---
 
@@ -58,6 +58,8 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-05-28_reuters_tsmc-kevin-zhang-energy-efficiency]] — Reuters：TSMC Kevin Zhang 阿姆斯特丹——能源效率取代算力成首要限制；先進封裝/CPO 核心路徑；N2→A14 能耗 -30%（2026-05-28）⭐新增
+- [[sources/2026-05-26_semiconductor-digest_ase-310mm-plp-ectc2026]] — Semiconductor Digest：ASE 業界首條自動化 310mm PLP 產線發表（ECTC 2026）；FOCoS 2/2µm；FOCoS-Bridge 8/8µm；2027 H1 量產（2026-05-26）⭐新增
 - [[sources/2026-05-28_trendforce_intel-emib-silicon-capacitors-google-v8e]] — TrendForce：Intel EMIB 2027 矽電容整合（Google v8e 首採）；Samsung EM ₩1.557 兆合約；Murata 3× 產能擴張（2026-05-28）⭐新增
 - [[sources/2026-05-27_trendforce_tsmc-3nm-price-hike-cowos-cpo]] — TrendForce：TSMC 3nm ASP 2H26 最高漲 15%；Fab 18 Q2 175K wsm；Jensen Huang+C.C. Wei 晚餐；COUPE + Spectrum-X 連結（2026-05-27）⭐新增
 - [[sources/2026-05-27_nvidia_gtc-taipei-computex2026-vera-rubin-nvl72]] — NVIDIA Blog：GTC Taipei COMPUTEX 2026 Vera Rubin NVL72 完整架構；Spectrum-X CPO 量產出貨；Constellation 園區揭幕；2H26 驚喜新產品預告（2026-05-27）⭐新增

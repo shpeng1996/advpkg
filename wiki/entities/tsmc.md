@@ -3,8 +3,8 @@ title: "台積電 / TSMC"
 category: entity
 tags: [foundry, advanced-packaging, CoWoS, SoIC, CoPoS, COUPE, CPO, InFO, WMCM, aLSI, MRAM, 3nm-pricing]
 created: 2026-04-24
-updated: 2026-05-29
-sources: [2026-04-24_initial-survey, 2026-04-13_trendforce_copos-pilot, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2025-12-18_trendforce_apple-wmcm-a20, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-01-20_trendforce_tsmc-wmcm-apple, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-23_trendforce_tsmc-roadmap-a12-a13-no-high-na-euv, 2026-05-07_trendforce_tsmc-us-expansion-250b-arizona, 2026-05-12_focustaiwan_tsmc-capex-31b-arizona-20b, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow]
+updated: 2026-05-30
+sources: [2026-04-24_initial-survey, 2026-04-13_trendforce_copos-pilot, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2025-12-18_trendforce_apple-wmcm-a20, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-01-20_trendforce_tsmc-wmcm-apple, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-23_trendforce_tsmc-roadmap-a12-a13-no-high-na-euv, 2026-05-07_trendforce_tsmc-us-expansion-250b-arizona, 2026-05-12_focustaiwan_tsmc-capex-31b-arizona-20b, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-28_reuters_tsmc-kevin-zhang-energy-efficiency]
 related:
   - wiki/technologies/cowos.md
   - wiki/technologies/soic.md
@@ -33,7 +33,10 @@ related:
 
 ## 近期動態 / Recent Developments
 
-- **2026-05-27（最新）⭐**：**TSMC 3nm ASP 2H26 漲幅最高 15%，2027 年再漲 5–10%；Fab 18 產能 Q2 已達 160K–175K wsm**（TrendForce，引述 Commercial Times、Liberty Times、UDN News）：
+- **2026-05-28（最新）⭐**：**Kevin Zhang（業務開發資深副總裁）於阿姆斯特丹會議宣告：能源效率已取代算力成為 AI 晶片設計首要限制**——（Reuters，Toby Sterling）全球 AI 電力需求激增，Kevin Zhang 明確指出「先進封裝、晶片堆疊與光子技術」是三大關鍵效率提升路徑，與製程縮小並列核心。**N2 → A14（2028）：能耗 -30%、算力 +>20%**——首次在非法說場合給出量化跨世代能效指標。就 Huawei「Tau 縮放定律」評論：「這概念業界早已存在，主要依賴元件更緊密整合，例如 3D 堆疊」，間接確認異質整合路線的技術趨同。
+  *Source: Reuters 2026-05-28（Toby Sterling，阿姆斯特丹）*
+
+- **2026-05-27⭐**：**TSMC 3nm ASP 2H26 漲幅最高 15%，2027 年再漲 5–10%；Fab 18 產能 Q2 已達 160K–175K wsm**（TrendForce，引述 Commercial Times、Liberty Times、UDN News）：
   - **3nm 漲價幅度**：2H26 最高 **+15%**；2027 再追加 **+5–10%**。主因：AI 伺服器需求從手機 SoC 接棒，NVIDIA/AMD/Google/AWS/Broadcom/Marvell 雲端 ASIC 全面湧入 3nm 排隊
   - **Fab 18 月產能**：2026 初 ~130K wsm → Q2 2026 **~160K–175K wsm**，仍供不應求
   - **TSMC 全球市占**（4Q25）：**70.4%**，市場絕對領先
