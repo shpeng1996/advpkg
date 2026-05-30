@@ -1048,3 +1048,25 @@
 - 主要新知識：
   1. **ASE FOCoS PLP 具體線寬規格首次公開（ECTC 2026）**：wiki 先前記錄 ASE 擁有 FOPLP 能力但缺乏具體 L/S 數據。此文首次確認 FOCoS 面板版 **L/S = 2/2µm**，與 CoWoS-L 矽中介層 RDL 規格相當。更重要的是「設計規則一致性從晶圓到面板」的差異化論點——客戶可直接從 WLP 遷移至 PLP 而無需重新設計，顯著降低採用門檻。**量產時程 2027 H1**，比 TSMC CoPoS 早約 1.5–2 年，形成 ASE 在 PLP 量產時序上的競爭窗口。
   2. **TSMC 高管首次系統性陳述「能源效率 > 算力密度」的戰略轉向（Amsterdam，2026-05-28）**：Kevin Zhang 在非法說場合明確指名「先進封裝、晶片堆疊、光子技術」為三大效率提升工具，並給出 N2→A14 能耗 -30% / 算力 +>20% 的量化指標。這為 wiki 所有先進封裝技術頁面提供了統一的「為什麼」戰略背景：行業驅動力已從製程縮小轉向封裝/CPO 整合，TSMC 高管的公開表態等同於產業戰略方向的官方確認。
+
+## [2026-05-31] collect | 每日自動蒐集 — 先進封裝最新動態（第三十七次）
+- 搜尋查詢數：7 組（TSMC CoWoS May 2026、HBM5 SK Hynix Samsung Micron、COMPUTEX 2026 packaging、Intel EMIB Foveros May 2026、hybrid bonding packaging May 2026、TrendForce May 30-31 2026、MediaTek TSMC COMPUTEX 2026 AI）
+- 成功抓取：2 篇（articles/ 2, papers/ 0, reports/ 0）
+  - 2026-05-29_trendforce_mediatek-ceo-tsmc-long-term-partner-emib-intel.md（TrendForce 2026-05-29：MediaTek CEO 股東會重申 TSMC；Samsung Jay Lee 台灣訪問；Google v8e 推論 TPU → Intel EMIB + MediaTek 確認；Samsung 記憶體+代工捆綁策略）
+  - 2026-05-29_trendforce_samsung-hbm4e-samples-shipping-industry-first.md（TrendForce 2026-05-29：Samsung 業界首發 12-layer HBM4E 樣品；14 Gbps / 3.6 TB/s / 48 GB；+20% vs HBM4；SK Hynix 時程提前；Micron 2027）
+- 失敗/跳過：多篇（COMPUTEX 2026 尚未開幕（6/2–5），無新封裝公告；TrendForce 5/30~31 其他文章與封裝無直接關聯；SemiEngineering/3dIncites 尚無新發布；HBM5 搜尋均為已收錄舊文章）
+- 學術代理：UNAVAILABLE ✗（ieeexplore、arxiv 仍受限）
+- 新增 wiki 頁面：2 頁
+  - wiki/sources/2026-05-29_trendforce_mediatek-ceo-tsmc-emib-intel.md
+  - wiki/sources/2026-05-29_trendforce_samsung-hbm4e-industry-first-samples.md
+- 更新 wiki 頁面：7 頁
+  - wiki/technologies/hbm4.md（新增：HBM4E Samsung 首發樣品規格確認區段；更新規格表 14 Gbps / 3.6 TB/s / 48 GB；HBM4E 競爭格局三廠商更新；updated 2026-05-31）
+  - wiki/entities/samsung.md（新增：HBM4E 樣品首發；Jay Lee 台灣訪問；Samsung 記憶體+代工捆綁策略；updated 2026-05-31）
+  - wiki/entities/sk-hynix.md（新增：HBM4E 時程提前訊號；updated 2026-05-31）
+  - wiki/entities/micron.md（新增：HBM4E 競爭格局更新，Micron 維持 2027；updated 2026-05-31）
+  - wiki/technologies/emib.md（新增：Google v8e 推論 TPU → Intel EMIB + MediaTek 執行（CEO 確認）；客戶列表升格為「正式分配」；updated 2026-05-29→2026-05-31 timestamp 保持）
+  - wiki/index.md（頁面數 169→171；來源數 135→137；2 個新 sources 頁面）
+  - wiki/log.md（本次記錄）
+- 主要新知識：
+  1. **Samsung HBM4E 業界首發樣品（14 Gbps / 3.6 TB/s / 48 GB）**：wiki 先前只記錄「HBM4E 開發中，Samsung 目標 mid-2026」，此次官方公告將 HBM4E 從開發階段升格為「樣品出貨」里程碑，並首次確立官方基準規格（14 Gbps 穩定、3.6 TB/s、+20% vs HBM4、+16% 能效、−14% 熱阻）。HBM4E 採用與 HBM4 相同 1c+4nm 架構意味著量產過渡可快速完成。三廠商格局明確：Samsung 首發、SK Hynix 提前、Micron 2027。
+  2. **Google v8e 推論 TPU 封裝指定 Intel EMIB 由 MediaTek 執行（CEO 親口確認）**：這是 wiki 迄今記錄的 EMIB 客戶中最具體的「正式分配」確認——從之前「評估中」直接升格為「MediaTek 已將 v8e 封裝任務交給 Intel」。與此同時，Samsung Chairman Jay Y. Lee 本週訪台嘗試以記憶體捆綁策略吸引 MediaTek，但 MediaTek CEO 明確拒絕。雙重信息顯示：先進封裝資源的爭奪已延伸到記憶體供應商的代工戰略層面。

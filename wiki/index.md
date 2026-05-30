@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-05-30
-**頁面總數 Total Pages**：169
-**原始來源數 Sources**：135
+**更新時間 Updated**：2026-05-31
+**頁面總數 Total Pages**：171
+**原始來源數 Sources**：137
 
 ---
 
@@ -58,6 +58,8 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-05-29_trendforce_samsung-hbm4e-industry-first-samples]] — TrendForce：Samsung 業界首發 HBM4E 樣品；14 Gbps / 3.6 TB/s / 48 GB / +20% vs HBM4；SK Hynix 時程提前；Micron 2027（2026-05-29）⭐新增
+- [[sources/2026-05-29_trendforce_mediatek-ceo-tsmc-emib-intel]] — TrendForce：MediaTek CEO 重申 TSMC 長期夥伴；Google v8e 推論 TPU→Intel EMIB 確認；Samsung Jay Lee 訪台（2026-05-29）⭐新增
 - [[sources/2026-05-28_reuters_tsmc-kevin-zhang-energy-efficiency]] — Reuters：TSMC Kevin Zhang 阿姆斯特丹——能源效率取代算力成首要限制；先進封裝/CPO 核心路徑；N2→A14 能耗 -30%（2026-05-28）⭐新增
 - [[sources/2026-05-26_semiconductor-digest_ase-310mm-plp-ectc2026]] — Semiconductor Digest：ASE 業界首條自動化 310mm PLP 產線發表（ECTC 2026）；FOCoS 2/2µm；FOCoS-Bridge 8/8µm；2027 H1 量產（2026-05-26）⭐新增
 - [[sources/2026-05-28_trendforce_intel-emib-silicon-capacitors-google-v8e]] — TrendForce：Intel EMIB 2027 矽電容整合（Google v8e 首採）；Samsung EM ₩1.557 兆合約；Murata 3× 產能擴張（2026-05-28）⭐新增

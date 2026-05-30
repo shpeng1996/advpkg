@@ -72,6 +72,9 @@ EMIB 是 Intel 的局部矽橋接技術：將一小片高密度矽橋（bridge d
 - **2026-05**：EMIB 技術驗證良率達 **~90%**；Google（TPU v8e 2H27）、Meta（自研 CPU 2H28）確認採用；Intel CFO 表示接近完成「數十億美元」封裝大單
 - **2026-05**：EMIB 全球產能加速：俄勒岡（主力）+ 越南 SHTP（18A 產品）+ 台灣設備訂單 2H26 交貨（E&R/C Sun/AblePrint）
 - **2026-05-26**：**Intel Rio Rancho 矽光子代工開放 + EMIB 現有客戶首次具體揭露**：AWS、Cisco 為確認現有客戶；Apple、Google、Microsoft、NVIDIA、Tesla 洽談中。EMIB 生產主基地：Penang + Rio Rancho。⭐新增
+- **2026-05-29**：**MediaTek CEO 股東會確認：Google v8e 推論 TPU 封裝指定 Intel EMIB，由 MediaTek 執行**（Commercial Times 報導）；訓練 TPU 封裝保留 TSMC CoWoS。此為 wiki 記錄的 EMIB 客戶落地最具體確認——從「評估」升格為「正式分配」。⭐新增
+  *Source: TrendForce 2026-05-29（引述 Commercial Times）*
+
 - **2026-05-28**：**Intel 計畫 2027 年在 EMIB 基板整合矽電容，首批用於 Google TPU v8e（2H27）**：矽電容 ESL/ESR 比 MLCC 低逾 100 倍；供應鏈：Samsung Electro-Mechanics（₩1.557 兆合約，Jan 2027–Dec 2028）、Murata Manufacturing（法國 200mm 線已投產；¥100 億擴至 3× 現有產能至 2028）⭐新增
 
 - **2026-05-20**：**Intel CEO Lip-Bu Tan（JP Morgan 科技大會）確認 EMIB-T 基板預付款**：台灣 4 家 + 日本 2 家供應商供應緊缺，EMIB 客戶主動承諾預付。基板夥伴完整清單：Ibiden（JP，¥500B 3 年計畫）、Shinko（JP）、Unimicron（TW，2H26 起 >50% 業務）、AT&S（AT）。規模更新：EMIB-M 6× → 8–12×（2026–27）；CoWoS-S ~3.3×、CoWoS-L ~3.5×。⭐新增
@@ -103,7 +106,7 @@ EMIB 是 Intel 的局部矽橋接技術：將一小片高密度矽橋（bridge d
   - Meta **自研 CPU（2H28 確認採用 EMIB）** ⭐更新
   - Apple M 系列（初步協議已達成）⭐更新
   - **Marvell**（評估中）⭐新增
-  - **MediaTek**（**確認採用**：雙封裝策略，EMIB 用於 AI ASIC 特定客戶；CoWoS-S 用於高頻寬 GPU 相關封裝）⭐更新
+  - **MediaTek**（**確認採用**：雙封裝策略，EMIB 用於 AI ASIC 特定客戶；CoWoS-S 用於高頻寬 GPU 相關封裝；**Google v8e 推論 TPU = MediaTek + Intel EMIB【2026-05-29 CEO 確認】**）⭐更新
   - Qualcomm（探索中）
   - Tesla 14A Terafab AI 晶片（已確認）
   - **NVIDIA Feynman I/O die**（評估中；14A/18A + EMIB，同時評估 TSMC A16+SoIC）⭐新增
@@ -124,6 +127,4 @@ EMIB 是 Intel 的局部矽橋接技術：將一小片高密度矽橋（bridge d
 - EMIB 能否在功率密度上突破 5–6 kW 限制（透過嵌入式 IVR）？
 - Google TPU v9 採用 EMIB 是否會動搖 TSMC CoWoS 的 CSP 主導地位？
 - EMIB on Glass 量產節奏（2027–28 目標）能否達成？
-- **NVIDIA Feynman I/O die 最終是否採用 Intel 14A/18A + EMIB？**（2026-05-12 新增）：目前 NVIDIA 並行評估 TSMC A16+SoIC 與 Intel 14A/18A+EMIB 兩條路線。Intel EMIB 若獲 NVIDIA 旗艦 AI 晶片採用，將是 EMIB 從「ASIC 客戶」到「高效能 GPU 客戶」的突破，也將重塑整個 CoWoS 壟斷格局。
-- **SK Hynix EMIB R&D 是否會演變為量產合作**？目前 SK Hynix 僅在 R&D 層面測試；若 EMIB 吸引更多 HBM 客戶（Marvell、MediaTek），SK Hynix 的 EMIB 相容 HBM 設計可能成為競爭優勢。
-- **EMIB 客戶多元化速度**：Marvell、MediaTek 在 2026 年 5 月進入評估；若 2026 H2 簽訂合約，EMIB 外部封裝業務規模將大幅超越現有預估。
+- **NVIDIA Feynman I/O die 最終是否採用 Intel 14A/18A + EMIB？**（2026-05-12 新增）：目前 NVIDIA 並行評估 TSMC A16+SoIC 與 Intel 14A/18A+EMIB 兩條路線。Intel EMIB 若獲 NVIDIA 旗艦 AI 晶片採用，將是 EMIB 從「ASIC 客戶」到「高效能 GPU 客戶」
