@@ -1070,3 +1070,25 @@
 - 主要新知識：
   1. **Samsung HBM4E 業界首發樣品（14 Gbps / 3.6 TB/s / 48 GB）**：wiki 先前只記錄「HBM4E 開發中，Samsung 目標 mid-2026」，此次官方公告將 HBM4E 從開發階段升格為「樣品出貨」里程碑，並首次確立官方基準規格（14 Gbps 穩定、3.6 TB/s、+20% vs HBM4、+16% 能效、−14% 熱阻）。HBM4E 採用與 HBM4 相同 1c+4nm 架構意味著量產過渡可快速完成。三廠商格局明確：Samsung 首發、SK Hynix 提前、Micron 2027。
   2. **Google v8e 推論 TPU 封裝指定 Intel EMIB 由 MediaTek 執行（CEO 親口確認）**：這是 wiki 迄今記錄的 EMIB 客戶中最具體的「正式分配」確認——從之前「評估中」直接升格為「MediaTek 已將 v8e 封裝任務交給 Intel」。與此同時，Samsung Chairman Jay Y. Lee 本週訪台嘗試以記憶體捆綁策略吸引 MediaTek，但 MediaTek CEO 明確拒絕。雙重信息顯示：先進封裝資源的爭奪已延伸到記憶體供應商的代工戰略層面。
+
+## [2026-06-01] collect | 每日自動蒐集 — 先進封裝最新動態（第三十八次）
+- 搜尋查詢數：7 組（TSMC CoWoS SoIC June 2026、HBM4/HBM5 June 2026、COMPUTEX 2026 packaging、Intel EMIB Foveros glass substrate June 2026、hybrid bonding June 2026、FOPLP OSAT June 2026、ECTC 2026 recap）
+- 成功抓取：1 篇（articles/ 1, papers/ 0, reports/ 0）
+  - 2026-05-29_3dincites_rapidus-2nm-advanced-packaging-ai-foundry.md（3D InCites，Rozalia Beica（Rapidus CTO Packaging），發布 2026-05-29；Rapidus「AI Foundry」哲學——2nm 製造+先進封裝共址；Innovative Integrated Manufacturing 框架；600×600mm 玻璃基板最大樣品；封裝為核心支柱非後處理）
+- 失敗/跳過：多篇
+  - TrendForce：2026-06-01 截至搜尋時尚無新發布（最新仍為 2026-05-29 文章，均已收錄）
+  - COMPUTEX 2026：官方展期 6/2–5，6/1 尚無封裝相關公告
+  - ECTC 2026：會議 5/26–29 剛結束，post-conference 文章尚未發布（SemiEngineering、3dIncites 均無）
+  - SemiEngineering：無新 June 2026 內容
+  - Wire Bonding Workshop 3dIncites 文章（5/28）：低相關性（供應商/活動報告），跳過
+- 學術代理：UNAVAILABLE ✗（ieeexplore、arxiv 仍受限）
+- 新增 wiki 頁面：2 頁
+  - wiki/entities/rapidus.md（新建 Rapidus 實體頁面）
+  - wiki/sources/2026-05-29_3dincites_rapidus-2nm-advanced-packaging-ai-foundry.md
+- 更新 wiki 頁面：3 頁
+  - wiki/technologies/glass-substrate.md（新增來源引用；Rapidus 封裝定位補充）
+  - wiki/index.md（頁面數 171→173；來源數 137→138；新增 Rapidus 實體條目）
+  - wiki/log.md（本次記錄）
+- 主要新知識：
+  1. **Rapidus 確立「封裝為核心支柱」的完整戰略定位**：wiki 先前僅記錄 Rapidus 為玻璃基板供應商（600×600mm 最大樣品，量產 2028）。本次來源揭示 Rapidus 更廣泛的定位：CTO Rozalia Beica 明確闡述 Rapidus 將 2nm 製造與 3D 整合、Chiplet 組裝**共址（co-locate）**，建立從晶圓到系統的無縫路徑。「Innovative Integrated Manufacturing」框架（AI 嵌入製程全流程）首次進入 wiki，使 Rapidus 從「玻璃基板廠商」升格為「AI Foundry + 封裝一體化廠商」的完整實體。
+  2. **今日整體搜尋狀況**：6/1（週一）為 COMPUTEX 前夕，各大媒體發文量低。TrendForce 最新為 5/29。ECTC 2026 post-conference recap 尚待 3dIncites/SemiEngineering 發布（預計本週內）。COMPUTEX 2026（6/2–5）正式開幕後預期有大量封裝相關公告，建議明日（6/2）優先執行 collect 任務以捕捉 COMPUTEX 第一天公告。

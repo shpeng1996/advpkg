@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-05-31
-**頁面總數 Total Pages**：171
-**原始來源數 Sources**：137
+**更新時間 Updated**：2026-06-01
+**頁面總數 Total Pages**：173
+**原始來源數 Sources**：138
 
 ---
 
@@ -28,6 +28,7 @@
 - [[entities/micron]] — Micron；美國記憶體 IDM；HBM4 >11 Gbps（Q2'26 HVM）；Virginia HBM 封裝廠；$200B 美國投資計畫⭐新增
 - [[entities/amd]] — AMD；Fabless CPU/GPU；Venice 首採 EMIB 等效封裝；MI355X（N3P，2 I/O die）；MI450 aLSI 測試載具⭐新增
 - [[entities/asml]] — ASML；微影設備獨占廠商；XT:260 3D DUV 已出貨（RDL）；評估混合接合設備市場進入⭐新增
+- [[entities/rapidus]] — Rapidus；日本 2nm 新創代工廠；「AI Foundry」框架；封裝共址策略；玻璃基板 600×600mm 最大樣品；量產 2028⭐新增
 
 ---
 
@@ -58,6 +59,7 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-05-29_3dincites_rapidus-2nm-advanced-packaging-ai-foundry]] — 3D InCites：Rapidus CTO Rozalia Beica——AI Foundry 哲學；2nm+封裝共址；600×600mm 玻璃基板；Innovative Integrated Manufacturing（2026-05-29）⭐新增
 - [[sources/2026-05-29_trendforce_samsung-hbm4e-industry-first-samples]] — TrendForce：Samsung 業界首發 HBM4E 樣品；14 Gbps / 3.6 TB/s / 48 GB / +20% vs HBM4；SK Hynix 時程提前；Micron 2027（2026-05-29）⭐新增
 - [[sources/2026-05-29_trendforce_mediatek-ceo-tsmc-emib-intel]] — TrendForce：MediaTek CEO 重申 TSMC 長期夥伴；Google v8e 推論 TPU→Intel EMIB 確認；Samsung Jay Lee 訪台（2026-05-29）⭐新增
 - [[sources/2026-05-28_reuters_tsmc-kevin-zhang-energy-efficiency]] — Reuters：TSMC Kevin Zhang 阿姆斯特丹——能源效率取代算力成首要限制；先進封裝/CPO 核心路徑；N2→A14 能耗 -30%（2026-05-28）⭐新增
