@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-06-01
-**頁面總數 Total Pages**：173
-**原始來源數 Sources**：138
+**更新時間 Updated**：2026-06-02
+**頁面總數 Total Pages**：176
+**原始來源數 Sources**：141
 
 ---
 
@@ -59,6 +59,9 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-06-01_trendforce_nvidia-vera-rubin-tsmc-20pct-revenue]] — TrendForce：NVIDIA Vera Rubin 量產啟動；TSMC 最大客戶 >20% 收入份額；首批出貨 2026 年 7 月；機架 $7.8M（2026-06-01）⭐新增
+- [[sources/2026-06-01_trendforce_intel-3dgs-india-glass-substrate]] — TrendForce：Intel + 3DGS 印度奧里薩邦 $33 億玻璃基板廠；70K 片/年；3D HI 模組 13K 個；5–6 年建設（2026-06-01）⭐新增
+- [[sources/2026-06-01_trendforce_computex2026-cpo-mediatek-largan]] — TrendForce：COMPUTEX 2026 CPO 聚焦；MediaTek 400Gbps CPO；Largan FAU 玻璃元件首秀；Wiwynn+Ayar Labs（2026-06-01）⭐新增
 - [[sources/2026-05-29_3dincites_rapidus-2nm-advanced-packaging-ai-foundry]] — 3D InCites：Rapidus CTO Rozalia Beica——AI Foundry 哲學；2nm+封裝共址；600×600mm 玻璃基板；Innovative Integrated Manufacturing（2026-05-29）⭐新增
 - [[sources/2026-05-29_trendforce_samsung-hbm4e-industry-first-samples]] — TrendForce：Samsung 業界首發 HBM4E 樣品；14 Gbps / 3.6 TB/s / 48 GB / +20% vs HBM4；SK Hynix 時程提前；Micron 2027（2026-05-29）⭐新增
 - [[sources/2026-05-29_trendforce_mediatek-ceo-tsmc-emib-intel]] — TrendForce：MediaTek CEO 重申 TSMC 長期夥伴；Google v8e 推論 TPU→Intel EMIB 確認；Samsung Jay Lee 訪台（2026-05-29）⭐新增

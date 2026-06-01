@@ -3,8 +3,8 @@ title: "NVIDIA Corporation"
 category: entity
 tags: [fabless, GPU, AI-accelerator, HBM4, CoWoS, SoIC, Rubin, Feynman, NVL576, CPO, Spectrum-X, Constellation]
 created: 2026-05-03
-updated: 2026-05-29
-sources: [2026-05-24_techtimes_nvidia-computex2026-cowos, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-03-18_trendforce_nvidia-rubin-feynman-soic, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-06_trendforce_google-tpu-cautious-adoption-nvidia, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple]
+updated: 2026-06-02
+sources: [2026-05-24_techtimes_nvidia-computex2026-cowos, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-03-18_trendforce_nvidia-rubin-feynman-soic, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-06_trendforce_google-tpu-cautious-adoption-nvidia, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-06-01_trendforce_nvidia-vera-rubin-tsmc-20pct-revenue, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan]
 related:
   - wiki/entities/tsmc.md
   - wiki/entities/sk-hynix.md
@@ -45,7 +45,14 @@ related:
 
 ## 近期動態 / Recent Developments
 
-- **2026-05-27（最新）⭐**：**Vera Rubin NVL72 完整架構確認量產 + Spectrum-X CPO 交換器出貨 + Constellation 台北園區揭幕 + 2H26 驚喜新產品預告**（NVIDIA Blog，GTC Taipei COMPUTEX 2026 rolling coverage）：
+- **2026-06-01（最新）⭐**：**NVIDIA 正式成為 TSMC 最大客戶（年報確認）+ Vera Rubin 首批出貨 7 月 + COMPUTEX GTC Taipei RTX Spark 發表**（TrendForce 2026-06-01）：
+  - **TSMC 最大客戶確認**：TSMC 2025 年報揭露 Customer A（NVIDIA）收入佔比從 12%（2024）升至 **19%**（2025），超越 Customer B（Apple 17%）；2026 年預估超過 **20%**。Jensen Huang 於 GSA podcast 親口確認 NVIDIA 為 TSMC 最大客戶。
+  - **Vera Rubin 首批出貨 2026 年 7 月**：Vera Rubin 晶片以 TSMC 3nm 量產；Foxconn/Quanta/Wistron Q3 2026 大規模出貨；機架售價 ~**$7.8M/rack**。
+  - **NVIDIA RTX Spark 發表（GTC Taipei，6/1）**：首款 NVIDIA 消費級 PC 處理器；N1X Arm CPU（與 MediaTek 共同設計，TSMC 3nm）；N1（主流版）同步亮相。
+  - **Vera Rubin 供應鏈受益**：電源模組 +32%、冷卻系統 +12%；110kW 功率架構；800VDC HVDC 評估中。
+  - *Source: TrendForce 2026-06-01（Vera Rubin buildout）; TrendForce 2026-06-01（COMPUTEX Preview）*
+
+- **2026-05-27（更新）⭐**：**Vera Rubin NVL72 完整架構確認量產 + Spectrum-X CPO 交換器出貨 + Constellation 台北園區揭幕 + 2H26 驚喜新產品預告**（NVIDIA Blog，GTC Taipei COMPUTEX 2026 rolling coverage）：
   - **Vera Rubin NVL72**：36 Vera CPU + 72 Rubin GPU + HBM4（8層）+ ConnectX-9 SuperNIC + **Spectrum-X Ethernet Photonics CPO 交換器（已量產出貨）** + BlueField-4 DPU；100% 液冷（45°C）；5 分鐘/運算托盤組裝（舊版 2 小時）；推理效能 10× per watt（vs Blackwell）；Groq 3 LPX 搭配下吞吐量 35× per watt（兆參數模型）
   - **Spectrum-X CPO 確認出貨**：NVL72 標配組件，正式確認 TSMC COUPE CPO 平台的商業化里程碑
   - **供應鏈規模**：每套 NVL72 約含 200 萬個零件，150 家台灣生態合作夥伴；Jensen Huang：「Vera Rubin 是台灣史上最大規模產品發布」

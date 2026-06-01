@@ -1092,3 +1092,27 @@
 - 主要新知識：
   1. **Rapidus 確立「封裝為核心支柱」的完整戰略定位**：wiki 先前僅記錄 Rapidus 為玻璃基板供應商（600×600mm 最大樣品，量產 2028）。本次來源揭示 Rapidus 更廣泛的定位：CTO Rozalia Beica 明確闡述 Rapidus 將 2nm 製造與 3D 整合、Chiplet 組裝**共址（co-locate）**，建立從晶圓到系統的無縫路徑。「Innovative Integrated Manufacturing」框架（AI 嵌入製程全流程）首次進入 wiki，使 Rapidus 從「玻璃基板廠商」升格為「AI Foundry + 封裝一體化廠商」的完整實體。
   2. **今日整體搜尋狀況**：6/1（週一）為 COMPUTEX 前夕，各大媒體發文量低。TrendForce 最新為 5/29。ECTC 2026 post-conference recap 尚待 3dIncites/SemiEngineering 發布（預計本週內）。COMPUTEX 2026（6/2–5）正式開幕後預期有大量封裝相關公告，建議明日（6/2）優先執行 collect 任務以捕捉 COMPUTEX 第一天公告。
+
+## [2026-06-02] collect | 每日自動蒐集 — 先進封裝最新動態（第三十九次）
+- 搜尋查詢數：7 組（COMPUTEX 2026 封裝 TSMC NVIDIA AMD、COMPUTEX 2026 NVIDIA Jensen Huang 發表、TrendForce 封裝 June 2026、HBM5 SK Hynix Samsung Micron June、ECTC 2026 recap、Intel EMIB Foveros 玻璃基板 June、TSMC CoWoS SoIC Arizona June）
+- 成功抓取：3 篇（articles/ 3, papers/ 0, reports/ 0）
+  - 2026-06-01_trendforce_nvidia-vera-rubin-tsmc-above-20pct-revenue.md（TrendForce 2026-06-01；NVIDIA Vera Rubin 量產；TSMC 最大客戶 >20% 收入份額；首批出貨 7 月；機架 $7.8M；110kW 電源架構）
+  - 2026-06-01_trendforce_intel-3dgs-india-glass-substrate-3b.md（TrendForce 2026-06-01，引述 Reuters 2026-05-29；Intel + 3DGS 印度奧里薩邦 $33 億玻璃基板廠；70K 片/年；13K 3D HI 模組；動工 2026-04；5–6 年建設）
+  - 2026-06-01_trendforce_computex2026-preview-cpo-nvidia-vera-rubin.md（TrendForce 2026-06-01；COMPUTEX 2026 預覽：CPO 浮現主舞台；MediaTek 400Gbps CPO；Largan FAU 玻璃元件；Wiwynn+Ayar Labs；NVIDIA RTX Spark N1X MediaTek 共設計 TSMC 3nm）
+- 失敗/跳過：多篇（HBM5 搜尋結果均為已收錄舊文章；ECTC 2026 recap 文章尚未於 3dIncites/SemiEngineering 發布；ieeexplore 仍受限；SemiEngineering COMPUTEX 報導尚未發布；NVIDIA RTX Spark 文章（TrendForce 2026-06-01）封裝相關性較低（主要為 PC 處理器市場），暫不收錄）
+- 學術代理：UNAVAILABLE ✗（ieeexplore、arxiv 仍受限）
+- 新增 wiki 頁面：3 頁（sources/ 3 篇）
+  - wiki/sources/2026-06-01_trendforce_nvidia-vera-rubin-tsmc-20pct-revenue.md
+  - wiki/sources/2026-06-01_trendforce_intel-3dgs-india-glass-substrate.md
+  - wiki/sources/2026-06-01_trendforce_computex2026-cpo-mediatek-largan.md
+- 更新 wiki 頁面：6 頁
+  - wiki/entities/nvidia.md（新增：TSMC 最大客戶確認（年報）19%→>20%；Vera Rubin 首批出貨 7 月；RTX Spark N1X；機架 $7.8M；110kW 電源架構；updated 2026-06-02）
+  - wiki/entities/tsmc.md（新增：NVIDIA Customer A 確認 19%→>20%；Vera Rubin 3nm 量產啟動；首批出貨 7 月；updated 2026-06-02）
+  - wiki/entities/intel.md（新增：3DGS India $3.3B 廠完整規格：70K/yr、13K 3D HI 模組、奧里薩邦、動工 2026-04；updated 2026-06-02）
+  - wiki/technologies/glass-substrate.md（新增：Intel India 廠產能規格更新至規格表；updated 2026-06-02）
+  - wiki/technologies/copackaged-optics.md（新增：MediaTek 400Gbps CPO；Largan FAU 玻璃元件；Wiwynn+Ayar Labs COMPUTEX 展示；updated 2026-06-02）
+  - wiki/index.md（頁面數 173→176；來源數 138→141；3 個新 sources 頁面）
+- 主要新知識：
+  1. **NVIDIA 正式成為 TSMC 最大客戶（2025 年報量化確認）+ Vera Rubin 首批出貨 7 月**：wiki 先前已記錄 NVIDIA >50% CoWoS 預訂，此文首次以 TSMC 官方年報數字確認 NVIDIA（Customer A）2025 年佔比 **19%**（超越 Apple 的 17%），且 2026 年預估超過 20%。同時確認 Vera Rubin 首批出貨時間為 **2026 年 7 月**、機架售價 **$7.8M**（+電源 32%/冷卻 12% 價值量提升）——這是 CoWoS 需求最重要的財務量化指標更新。
+  2. **Intel + 3DGS 印度玻璃基板廠完整規格首次公開（$3.3B，70K/年）**：wiki 先前（2026-04-21 條目）已記錄印度廠動工，但無投資金額與產能細節。此文首次提供 $3.3B + 70K 玻璃基板/年 + 13K 3D HI 模組/年的完整規模，確立印度廠作為 Intel 玻璃基板第二量產基地（首座為 Rio Rancho）的長期戰略定位。玻璃基板全球供應鏈格局（Intel Chandler 試驗→Rio Rancho HVM→India 量產）首次完整呈現。
+  3. **MediaTek 400Gbps CPO 技術 + Largan 進入 CPO 供應鏈（COMPUTEX 2026 首次揭露）**：wiki 先前未記錄 MediaTek 的 CPO 能力；此次確認 MediaTek 已開發 400Gbps-per-fiber CPO 光學互連（功耗 -50% vs 銅線），代表台灣 IC 設計廠自行切入 CPO 生態。Largan 以 FAU 玻璃元件首次亮相 COMPUTEX，顯示 CPO 供應鏈多元化從傳統光學元件廠延伸。

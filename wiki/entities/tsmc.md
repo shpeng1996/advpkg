@@ -3,7 +3,7 @@ title: "台積電 / TSMC"
 category: entity
 tags: [foundry, advanced-packaging, CoWoS, SoIC, CoPoS, COUPE, CPO, InFO, WMCM, aLSI, MRAM, 3nm-pricing]
 created: 2026-04-24
-updated: 2026-05-30
+updated: 2026-06-02
 sources: [2026-04-24_initial-survey, 2026-04-13_trendforce_copos-pilot, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2025-12-18_trendforce_apple-wmcm-a20, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-01-20_trendforce_tsmc-wmcm-apple, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-23_trendforce_tsmc-roadmap-a12-a13-no-high-na-euv, 2026-05-07_trendforce_tsmc-us-expansion-250b-arizona, 2026-05-12_focustaiwan_tsmc-capex-31b-arizona-20b, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-28_reuters_tsmc-kevin-zhang-energy-efficiency]
 related:
   - wiki/technologies/cowos.md
@@ -37,7 +37,13 @@ related:
   *Source: Reuters 2026-05-28（Toby Sterling，阿姆斯特丹）*
 
 - **2026-05-27⭐**：**TSMC 3nm ASP 2H26 漲幅最高 15%，2027 年再漲 5–10%；Fab 18 產能 Q2 已達 160K–175K wsm**（TrendForce，引述 Commercial Times、Liberty Times、UDN News）：
-  - **3nm 漲價幅度**：2H26 最高 **+15%**；2027 再追加 **+5–10%**。主因：AI 伺服器需求從手機 SoC 接棒，NVIDIA/AMD/Google/AWS/Broadcom/Marvell 雲端 ASIC 全面湧入 3nm 排隊
+- **2026-06-02（最新）⭐**：**NVIDIA 正式確認為 TSMC 最大客戶（2025 年報）；Vera Rubin 3nm 量產啟動**（TrendForce 2026-06-01）：
+  - TSMC 2025 年報：**Customer A（NVIDIA）收入佔比 19%**，超越 Customer B（Apple 17%）成最大客戶；2026 年預估超過 **20%**。
+  - TSMC 以 **3nm** 已啟動 Vera Rubin 晶片量產；Foxconn/Quanta/Wistron Q3 2026 大規模出貨；首批出貨預計 **2026 年 7 月**。
+  - TSMC 與 ASE 為 Vera Rubin 平台關鍵製造夥伴。
+  *Source: TrendForce 2026-06-01（Vera Rubin buildout）*
+
+- **2026-05-27（更新）**：**3nm 漲價幅度**：2H26 最高 **+15%**；2027 再追加 **+5–10%**。主因：AI 伺服器需求從手機 SoC 接棒，NVIDIA/AMD/Google/AWS/Broadcom/Marvell 雲端 ASIC 全面湧入 3nm 排隊
   - **Fab 18 月產能**：2026 初 ~130K wsm → Q2 2026 **~160K–175K wsm**，仍供不應求
   - **TSMC 全球市占**（4Q25）：**70.4%**，市場絕對領先
   - **CoWoS + CPO 整合 AI 地位強化**：機構投資人指出 TSMC 不僅是 NVIDIA 製程夥伴，也是 CoWoS 封裝、SoIC 堆疊、COUPE CPO/矽光子整合的核心供應商——隨 AI 伺服器走向 rack-scale，TSMC 角色進一步強化

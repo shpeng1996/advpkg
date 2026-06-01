@@ -3,8 +3,8 @@ title: "玻璃基板 / Glass Core Substrate"
 category: technology
 tags: [glass-substrate, TGV, panel-level, FC-BGA, CoPoS, Absolics, DNP, Rapidus, warpage, SeWaRe, glass-interposer, BOE, ULCVD, non-embedding]
 created: 2026-05-08
-updated: 2026-06-01
-sources: [2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-05-05_trendforce-insights_glass-substrate-development, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-05-29_3dincites_rapidus-2nm-advanced-packaging-ai-foundry]
+updated: 2026-06-02
+sources: [2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-05-05_trendforce-insights_glass-substrate-development, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-05-29_3dincites_rapidus-2nm-advanced-packaging-ai-foundry, 2026-06-01_trendforce_intel-3dgs-india-glass-substrate]
 related:
   - wiki/technologies/copos.md
   - wiki/technologies/foplp.md
@@ -58,7 +58,7 @@ SeWaRe 是玻璃量產最大障礙——切割/鑽孔時形成的微裂紋成為
 
 | 廠商 | 技術 | 尺寸 | 規格 | 量產目標 |
 |------|------|------|------|---------|
-| **Intel** | EMIB + 玻璃核心基板 | 78×77mm (~1,716mm²) | 10-2-10 stack，22層，800µm 厚，45µm bump pitch | "No SeWaRe"（NEPCON 2026-01）；HVM 2026–2030 |
+| **Intel** | EMIB + 玻璃核心基板 | 78×77mm (~1,716mm²) | 10-2-10 stack，22層，800µm 厚，45µm bump pitch | "No SeWaRe"（NEPCON 2026-01）；HVM 2026–2030；**印度 3DGS 廠 $3.3B（2026-04 動工，5-6 年建設，7萬片/年）** |
 | **TSMC CoPoS** | 玻璃中介層 | 310×310mm | ~400µm 厚（薄型，CTE 要求嚴格）| mini line VisEra 2026；pilot 2027；量產 2028–29 |
 | **SK Absolics** | 玻璃核心基板（SK Group + Applied Materials JV） | 510×515mm | Georgia 廠（KRW 300B 投資） | 2026 |
 | **DNP** | TGV 玻璃基板 | 510×515mm | 填充/保形 TGV | FY2028 |
