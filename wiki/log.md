@@ -1116,3 +1116,23 @@
   1. **NVIDIA 正式成為 TSMC 最大客戶（2025 年報量化確認）+ Vera Rubin 首批出貨 7 月**：wiki 先前已記錄 NVIDIA >50% CoWoS 預訂，此文首次以 TSMC 官方年報數字確認 NVIDIA（Customer A）2025 年佔比 **19%**（超越 Apple 的 17%），且 2026 年預估超過 20%。同時確認 Vera Rubin 首批出貨時間為 **2026 年 7 月**、機架售價 **$7.8M**（+電源 32%/冷卻 12% 價值量提升）——這是 CoWoS 需求最重要的財務量化指標更新。
   2. **Intel + 3DGS 印度玻璃基板廠完整規格首次公開（$3.3B，70K/年）**：wiki 先前（2026-04-21 條目）已記錄印度廠動工，但無投資金額與產能細節。此文首次提供 $3.3B + 70K 玻璃基板/年 + 13K 3D HI 模組/年的完整規模，確立印度廠作為 Intel 玻璃基板第二量產基地（首座為 Rio Rancho）的長期戰略定位。玻璃基板全球供應鏈格局（Intel Chandler 試驗→Rio Rancho HVM→India 量產）首次完整呈現。
   3. **MediaTek 400Gbps CPO 技術 + Largan 進入 CPO 供應鏈（COMPUTEX 2026 首次揭露）**：wiki 先前未記錄 MediaTek 的 CPO 能力；此次確認 MediaTek 已開發 400Gbps-per-fiber CPO 光學互連（功耗 -50% vs 銅線），代表台灣 IC 設計廠自行切入 CPO 生態。Largan 以 FAU 玻璃元件首次亮相 COMPUTEX，顯示 CPO 供應鏈多元化從傳統光學元件廠延伸。
+
+## [2026-06-03] collect | 每日自動蒐集 — 先進封裝最新動態（第四十次）
+- 搜尋查詢數：8 組（TSMC CoWoS SoIC June 2026、HBM4/HBM4E/HBM5 June 2026、Samsung HBM5 Computex、SK hynix Computex 2026 memory、ECTC 2026 hybrid bonding、Intel EMIB glass substrate June、FOPLP OSAT June、COMPUTEX 2026 packaging announcements）
+- 成功抓取：2 篇（articles/ 2, papers/ 0, reports/ 0）
+  - 2026-06-02_trendforce_samsung-hbm5-model-computex2026-2028.md（TrendForce 2026-06-02；Samsung COMPUTEX 2026 首次展示 HBM5 模型；2nm base die；12/16/20 層；量產~2028；HPB 熱管理技術驗證於 HBM4E；HBM5E 將採 1d DRAM）
+  - 2026-06-02_trendforce_sk-chair-memory-shortage-2030-computex.md（TrendForce 2026-06-02；SK Group 會長崔泰源首次 COMPUTEX 聲明：記憶體短缺至 2030、5 年產能翻倍；HBM4 1b+TSMC12nm / HBM4E 1c+TSMC3nm 製程堆疊正式確認；HBM4E mock-up 首次公開；Jensen Huang 連續兩天互動）
+- 失敗/跳過：多篇（搜尋結果多為已收錄文章；Intel EMIB June 新文章尚未發布；ECTC 2026 recap 仍無新發布；FOPLP/OSAT 無新 June 文章）
+- 學術代理：UNAVAILABLE ✗（ieeexplore、arxiv 仍受限）
+- 新增 wiki 頁面：2 頁
+  - wiki/sources/2026-06-02_trendforce_samsung-hbm5-computex2026.md
+  - wiki/sources/2026-06-02_trendforce_sk-chair-computex2026-memory-shortage.md
+- 更新 wiki 頁面：5 頁
+  - wiki/entities/samsung.md（新增：HBM5 模型首次亮相、HPB 技術、Samsung 2nm base die；updated 2026-06-03）
+  - wiki/entities/sk-hynix.md（新增：會長 COMPUTEX 聲明、記憶體短缺 2030、5 年產能翻倍、HBM4/4E 製程堆疊確認、Jensen Huang 互動記錄；updated 2026-06-03）
+  - wiki/technologies/hbm4.md（新增：HBM5 規格節（2nm / 12/16/20 層 / ~2028）；規格表補充 base die / core die 製程欄位；HPB vs iHBM 對比；updated 2026-06-03）
+  - wiki/concepts/thermal-management.md（新增：HBM5 熱管理競爭節——Samsung HPB vs SK Hynix iHBM 對比表；updated 2026-06-03）
+  - wiki/index.md（頁面數 176→178；來源數 141→143；2 個新 sources 頁面；updated 2026-06-03）
+- 主要新知識：
+  1. **Samsung HBM5 路線圖首次在公開場合確認（COMPUTEX 2026，6/2）**：wiki 先前已記錄 Samsung 計劃 2nm base die for HBM5（2026-03-18 條目），但「量產 ~2028」的官方公開確認、**20 層堆疊**配置，以及 Heat Path Block（HPB）散熱技術已在 HBM4E 驗證完成，均為全新資訊。HPB 在 D2D PHY 建立獨立熱路徑的技術路徑，與 SK hynix iHBM 的 ICE 方案形成 HBM5 時代的雙競對峙格局——熱管理成為 HBM5 差異化的核心新戰場。
+  2. **SK hynix HBM4 / HBM4E 製程堆疊組合首次公開正式確認**：wiki 先前已記錄 SK hynix 使用 TSMC logic die，但 HBM4（1b DRAM + TSMC 12nm logic）/ HBM4E（1c DRAM + TSMC 3nm logic）的具體製程節點組合是首次在 SK Group 最高決策者公開場合確認，對理解 TSMC 3nm logic die 的 HBM4E 需求量化至關重要。同時，SK Group 會長預測記憶體短缺至 2030 並宣告 5 年產能翻倍，是目前 wiki 收錄的最高層級市場展望聲明。

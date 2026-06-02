@@ -3,7 +3,7 @@ title: "三星 / Samsung"
 category: entity
 tags: [IDM, foundry, memory, advanced-packaging, X-Cube, HBM, ISSCC2026, I-CubeS, LPDDR6]
 created: 2026-04-24
-updated: 2026-05-31
+updated: 2026-06-03
 sources: [2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2025-12-30_trendforce_samsung-hbm-surge, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2025-08-05_3dincites_iftle636, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor]
 related:
   - wiki/entities/tsmc.md
@@ -38,6 +38,11 @@ related:
   - **4F² COP DRAM 論文**：首次將 **hybrid bonding** 應用於 DRAM 架構（Cell-on-Peripheral，cell wafer 混合接合至 peripheral wafer）；VCT（Vertical Channel Transistor）架構；核心電路面積從 17.0% 降至 **2.7%**；16 Gb 展示晶片（10nm DRAM 製程）。量產預計 1d 節點之後（2028–2030 年代早期）。
   - **I-CubeS 封裝**：SemiAnalysis 確認 **Rebellions Rebel100 使用 Samsung I-CubeS**（而非先前 Hot Chips 2025 slide 所示的 CoWoS-S）。I-CubeS 目前確認用戶：eSilicon、Baidu、Nvidia（2023 少量）、Rebellions、Preferred Networks。Samsung 可能提供折扣捆綁前端代工 + I-CubeS 封裝以推動市場接受度。
   *Source: SemiAnalysis 2026-02-15（引述 Samsung ISSCC 2026 論文）*
+
+- **2026-06-03（最新）⭐**：**HBM5 實體模型 COMPUTEX 2026 首次公開（2026-06-02）**：Samsung 在 COMPUTEX 2026（台北，6/2）首次展示 HBM5（第 8 代 HBM）實體 mock-up，並同步揭示：base die 採用**三星 Foundry 自家 2nm 製程**（vs. HBM4/HBM4E 的 4nm）；DRAM 堆疊配置：12 層、16 層、20 層；量產預計 ~**2028 年**（HBM4E 之後）。HBM5E 進一步採用 **1d DRAM 製程**（繼 HBM5 的 1c）。Samsung DS CTO Song Jae-hyuk 宣布 **Heat Path Block（HPB）散熱技術**已在 HBM4E 驗證：在 D2D PHY 區域建立獨立熱路徑，降低熱阻（策略與 SK hynix iHBM ICE 相似）。
+  *Source: TrendForce 2026-06-02（引述 Chosun Biz、SeDaily、Yonhap、Mirror Media）*
+
+- **2026-06-03（最新）⭐**：**HBM4E 實體 mock-up COMPUTEX 首次公開（2026-06-02）**：Jensen Huang（NVIDIA CEO）連續兩天與 SK Group 會長崔泰源互動（前夜晚餐 + 6/2 展場巡視），並在 keynote 中**點名三星（含 SK hynix）為 next-gen HBM4 供應商**。（HBM4E 及 HBM5 的 COMPUTEX 展示均標誌 HBM 路線圖進入新里程碑節點。）
 
 - **2026-05-31（最新）⭐**：**HBM4E 樣品業界首發出貨（2026-05-29）**：Samsung 官方公告出貨業界第一批 12-layer HBM4E 樣品至主要全球夥伴，距 HBM4 量產（2026-02）僅約 3 個月。規格：14 Gbps 穩定速率（峰值 16 Gbps）、3.6 TB/s 頻寬/顆（+20% vs HBM4）、48 GB 容量（+30%）、+16% 能效、−14%+ 熱阻。HBM4E 採用與 HBM4 相同 1c DRAM + 4nm Base Die，因此量產過渡預期快速。計畫擴展至 32 GB（8-layer）及 64 GB（16-layer）。SK Hynix HBM4E 時程提前（原 H2 2026）；Micron 維持 2027 量產目標。
   *Source: TrendForce 2026-05-29（Samsung 官方公告；Yonhap；STOCK Analysis）*

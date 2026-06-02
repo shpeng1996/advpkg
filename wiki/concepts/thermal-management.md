@@ -3,8 +3,8 @@ title: "先進封裝熱管理 / Thermal Management in Advanced Packaging"
 category: concept
 tags: [thermal-management, liquid-cooling, 3D-IC, CoWoS, heat-dissipation, TIM, ECTC-2025]
 created: 2026-04-25
-updated: 2026-05-27
-sources: [2025-12-01_semiengineering_thermal-management, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5]
+updated: 2026-06-03
+sources: [2025-12-01_semiengineering_thermal-management, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-02_trendforce_samsung-hbm5-computex2026]
 related:
   - wiki/technologies/cowos.md
   - wiki/technologies/hybrid-bonding.md
@@ -77,6 +77,25 @@ related:
 2. **TIM 材料升級**：液態金屬和石墨烯複合材料逐步取代傳統矽脂，應對 AI 加速器的極端功耗密度
 3. **3D 堆疊散熱成為良率瓶頸**：SoIC 等技術的「熱陷阱效應」是下一個良率挑戰，KGD 測試需加入熱表徵
 4. **協同設計強制化**：TSMC、Intel、AMD 均強調熱-電-機械協同設計（Thermal-Electrical-Mechanical Co-design）必須從 RTL 階段開始
+
+---
+
+## ⭐ HBM5 熱管理：兩大廠商方案競爭（2026-06）
+
+HBM5（20 層堆疊 + 2nm base die）的內部熱生成急劇增加——特別是 **D2D PHY**（Die-to-Die Physical Layer，HBM 與 GPU 之間的高速 I/O 界面）已成為主要熱源。兩家主要廠商各自提出獨立的封裝內散熱方案：
+
+| 特性 | Samsung HPB (Heat Path Block) | SK Hynix iHBM (ICE) |
+|------|------------------------------|---------------------|
+| 方法 | D2D PHY 區建立獨立熱路徑 | D2D PHY 嵌入 Integrated Cooling Elements |
+| 材料 | 金屬/導熱材料（詳情未公開） | 熱導電、電絕緣矽基材料 |
+| 熱阻改善 | 未量化（驗證中，HBM4E 已確認） | **-30%**（iHBM 聲稱） |
+| 製程兼容性 | HBM4E 已驗證 | WLP + MR-MUF |
+| 目標首採 | HBM4E（已驗證）→ HBM5 | HBM5 |
+| 公開時間 | 2026-06-02（COMPUTEX 2026） | 2026-05-26（發表） |
+
+**意義**：這兩種方案都是在「不改變整體 HBM 封裝高度規格、不依賴外部液冷系統」的前提下，在封裝內部直接解決熱管理問題。是 HBM5 時代差異化競爭的新戰場。
+
+*Source: TrendForce 2026-06-02（Samsung HPB）; SK hynix press release 2026-05-26（iHBM）*
 
 ---
 

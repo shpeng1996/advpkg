@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-06-02
-**頁面總數 Total Pages**：176
-**原始來源數 Sources**：141
+**更新時間 Updated**：2026-06-03
+**頁面總數 Total Pages**：178
+**原始來源數 Sources**：143
 
 ---
 
@@ -59,6 +59,8 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-06-02_trendforce_samsung-hbm5-computex2026]] — TrendForce：Samsung COMPUTEX 2026 首次展示 HBM5 模型；2nm base die；12/16/20 層；量產 ~2028；HPB 熱管理驗證（2026-06-02）⭐新增
+- [[sources/2026-06-02_trendforce_sk-chair-computex2026-memory-shortage]] — TrendForce：SK 會長首次 COMPUTEX——記憶體短缺至 2030；5 年產能翻倍；HBM4（1b+TSMC12nm）/ HBM4E（1c+TSMC3nm）製程確認；Jensen Huang 展場互動（2026-06-02）⭐新增
 - [[sources/2026-06-01_trendforce_nvidia-vera-rubin-tsmc-20pct-revenue]] — TrendForce：NVIDIA Vera Rubin 量產啟動；TSMC 最大客戶 >20% 收入份額；首批出貨 2026 年 7 月；機架 $7.8M（2026-06-01）⭐新增
 - [[sources/2026-06-01_trendforce_intel-3dgs-india-glass-substrate]] — TrendForce：Intel + 3DGS 印度奧里薩邦 $33 億玻璃基板廠；70K 片/年；3D HI 模組 13K 個；5–6 年建設（2026-06-01）⭐新增
 - [[sources/2026-06-01_trendforce_computex2026-cpo-mediatek-largan]] — TrendForce：COMPUTEX 2026 CPO 聚焦；MediaTek 400Gbps CPO；Largan FAU 玻璃元件首秀；Wiwynn+Ayar Labs（2026-06-01）⭐新增

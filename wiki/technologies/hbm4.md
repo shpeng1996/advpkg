@@ -3,7 +3,7 @@ title: "HBM4 — High Bandwidth Memory 4"
 category: technology
 tags: [memory, HBM, JEDEC, standards, AI, HPC, HBM4E, cleanroom, capacity, ISSCC2026, ZAM, HB3DM]
 created: 2026-04-24
-updated: 2026-05-31
+updated: 2026-06-03
 sources: [2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-03-18_trendforce_intel-emib-malaysia, 2026-01-23_trendforce_hbm4e-samsung-skhynix-mid2026, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-01-13_semiengineering_hbm4-microbumps, 2025-12-18_trendforce_micron-capex-hbm4, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h, 2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-03-03_trendforce_sk-hynix-hbm4-tight-gaps, 2025-08-12_semianalysis_hbm-roadmap, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5]
 related:
   - wiki/entities/sk-hynix.md
@@ -33,22 +33,39 @@ HBM（High Bandwidth Memory）將多層 DRAM 晶片垂直堆疊，透過 TSV（T
 
 ## 規格比較 / Spec Comparison
 
-| 規格 | HBM3E | **HBM4** | **HBM4E** | HBM5（預測） |
+| 規格 | HBM3E | **HBM4** | **HBM4E** | HBM5 |
 |------|-------|---------|----------|------------|
 | 速度 Speed | 9.8 Gbps/pin | 6.40 GT/s | **14 Gbps（穩定）/ 16 Gbps（峰值）⭐** | TBD |
 | 總頻寬/stack | 1.18 TB/s | **1.65+ TB/s** | **3.6 TB/s⭐** | TBD |
 | 介面寬度 | 1024-bit | **2048-bit** | 2048-bit | TBD |
 | 最大容量 | 48 GB/stack | **64 GB/stack** | **48 GB（12-Hi）/ 64 GB（16-Hi）⭐** | TBD |
 | 工作電壓 | 1.05V | **0.8V** | TBD | TBD |
-| 堆疊層數 | 12-Hi | 12-Hi (std) → **16-Hi（H2 2026 衝刺）** | **12-Hi（樣品）/ 16-Hi（計畫）⭐** | TBD |
+| 堆疊層數 | 12-Hi | 12-Hi (std) → **16-Hi（H2 2026 衝刺）** | **12-Hi（樣品）/ 16-Hi（計畫）⭐** | **12 / 16 / 20（開發中）⭐** |
 | 每封裝功耗上限 | ~40W | ~60W | **80W** | TBD |
 | **JEDEC 高度規格** | **~720 µm** | **~775 µm** | **~900 µm（提議⭐）** | TBD |
+| Base Die 製程 | —（legacy） | Samsung 4nm / SK Hynix 12nm | Samsung 4nm / SK Hynix 3nm(TSMC) | **Samsung 2nm⭐** |
+| Core Die 製程 | — | **1b DRAM（SK Hynix）** | **1c DRAM（兩家）⭐** | TBD（1d DRAM for HBM5E） |
 | 封裝技術 | MR-MUF / TC-NCF | **MR-MUF（30µm die）** | MR-MUF / Fluxless | **混合接合** |
-| 量產目標 | 2024 | 2025-H2 | **Samsung 2026-Q3+（依客戶）；SK Hynix 提前⭐；Micron 2027** | **2029（預測）** |
+| 量產目標 | 2024 | 2025-H2 | **Samsung 2026-Q3+（依客戶）；SK Hynix 提前⭐；Micron 2027** | **~2028（Samsung 首發）⭐** |
 | 能效改善 | — | — | **+16%⭐** | TBD |
 | 熱阻改善 | — | — | **−14%+⭐** | TBD |
+| 熱管理技術 | — | — | **Samsung HPB（已驗證）⭐；SK Hynix iHBM目標HBM5** | **HPB + iHBM** |
 
 *HBM4E 規格確認來源：Samsung 官方公告 2026-05-29（14 Gbps / 3.6 TB/s / 48 GB）；JEDEC 高度規格：TrendForce 2026-04-01（提議，尚未確認）*
+
+### ⭐ Samsung HBM5 模型 COMPUTEX 首次亮相（2026-06-02）
+
+Samsung 在 COMPUTEX 2026（台北，6/2）首次公開 HBM5（第 8 代）實體 mock-up，確立以下路線圖：
+
+- **Base die 製程：Samsung Foundry 2nm**（HBM4/HBM4E 為 4nm，技術躍升顯著）
+- **堆疊層數：12 / 16 / 20 層**（HBM4E 最高 16 層）
+- **量產目標：~2028**（HBM4E 之後）
+- **Samsung DS CTO 確認 HPB（Heat Path Block）技術已在 HBM4E 驗證**：在 D2D PHY 區建立獨立熱路徑，降低熱阻；策略與 SK hynix iHBM（ICE 嵌入 D2D PHY）互為競爭替代，但技術路徑類似。
+- **HBM5E**（後繼版本）將採用 **1d DRAM 製程**（成本更高但性能更高）。
+
+*熱管理成為 HBM5 差異化關鍵*：20 層堆疊 + AI GPU 高速 D2D PHY = 急劇增加的內部熱生成，兩家廠商均已將熱管理作為 HBM5 競爭核心。
+
+*Source: TrendForce 2026-06-02（引述 Chosun Biz、SeDaily、Yonhap、Mirror Media）*
 
 ### ⭐ Samsung HBM4E 樣品出貨：業界首發（2026-05-29）
 
