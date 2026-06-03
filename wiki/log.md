@@ -1136,3 +1136,25 @@
 - 主要新知識：
   1. **Samsung HBM5 路線圖首次在公開場合確認（COMPUTEX 2026，6/2）**：wiki 先前已記錄 Samsung 計劃 2nm base die for HBM5（2026-03-18 條目），但「量產 ~2028」的官方公開確認、**20 層堆疊**配置，以及 Heat Path Block（HPB）散熱技術已在 HBM4E 驗證完成，均為全新資訊。HPB 在 D2D PHY 建立獨立熱路徑的技術路徑，與 SK hynix iHBM 的 ICE 方案形成 HBM5 時代的雙競對峙格局——熱管理成為 HBM5 差異化的核心新戰場。
   2. **SK hynix HBM4 / HBM4E 製程堆疊組合首次公開正式確認**：wiki 先前已記錄 SK hynix 使用 TSMC logic die，但 HBM4（1b DRAM + TSMC 12nm logic）/ HBM4E（1c DRAM + TSMC 3nm logic）的具體製程節點組合是首次在 SK Group 最高決策者公開場合確認，對理解 TSMC 3nm logic die 的 HBM4E 需求量化至關重要。同時，SK Group 會長預測記憶體短缺至 2030 並宣告 5 年產能翻倍，是目前 wiki 收錄的最高層級市場展望聲明。
+
+## [2026-06-04] collect | 每日自動蒐集 — 先進封裝最新動態（第四十一次）
+- 搜尋查詢數：7 組（TSMC CoWoS SoIC COMPUTEX June、HBM5 HBM4E June 2026、hybrid bonding COMPUTEX ECTC June、Intel EMIB glass substrate Foveros June、FOPLP panel level packaging June、NVIDIA Vera Rubin CoWoS June、advanced packaging news June 3 4 2026）
+- 成功抓取：1 篇（articles/ 1, papers/ 0, reports/ 0）
+  - 2026-06-03_digitimes_naura-600mm-plp-descum-tool.md（Digitimes 2026-06-03；**PARTIAL**——付費牆；北方華創首批 600mm×600mm PLP 去膠渣設備出貨；中國前端設備龍頭進入面板封裝設備市場）
+- 失敗/跳過：多篇
+  - TrendForce 6/3 文章：3 篇（記憶體現貨價格更新、南韓晶片出口、Intel DDR4 CPU）——與先進封裝無關，跳過
+  - ECTC 2026 recap（3dIncites/SemiEngineering）：尚未發布（ECTC 2026 為 5 月底舉行，預計本週或下週出現 recap 文章）
+  - COMPUTEX 2026 封裝專題：Intel COMPUTEX 公告集中於 Xeon 6+/AI CPU，無 EMIB/Foveros 更新；TSMC 無新聲明；Samsung/SK Hynix COMPUTEX 封裝公告均已於 6/2（昨日）收錄
+  - SemiAnalysis/SemiEng 新文章：無新封裝相關文章發布
+  - TSMC AP7 Chiayi 開幕典禮：確認為 2025-12-04 事件（非今日），已記錄於 AP7 知識庫中
+  - Naura 文章：付費牆，僅獲取 metadata/摘錄，記錄為 partial
+- 學術代理：UNAVAILABLE ✗（ieeexplore、arxiv 仍受限）
+- 新增 wiki 頁面：1 頁
+  - wiki/sources/2026-06-03_digitimes_naura-plp-descum-tool.md
+- 更新 wiki 頁面：3 頁
+  - wiki/technologies/foplp.md（新增：Naura 600mm PLP 去膠渣設備、中國本土設備生態進入 PLP 市場；updated 2026-06-04）
+  - wiki/concepts/geopolitics-advanced-packaging.md（新增：中國 PLP 設備自主化節；Naura 戰略意涵分析；updated 2026-06-04）
+  - wiki/index.md（頁面數 178→179；來源數 143→144；新增 1 個 sources 頁面）
+- 主要新知識：
+  1. **北方華創進入 PLP 設備市場（中國封裝設備自主化關鍵里程碑）**：wiki 先前記錄中國 OSAT（JCET、SJ Semiconductor）和設備生態，但缺乏中國本土「前端設備大廠跨入後端封裝設備」的記錄。Naura 的 600mm PLP 去膠渣工具是此趨勢的第一個具體案例——標誌中國正從「依賴 AMAT/TEL/Lam Research 封裝設備」轉向本土替代路徑。與 MATCH Act 在美國推進的出口管制趨勢形成直接戰略呼應。
+  2. **今日搜尋狀況說明**：COMPUTEX 2026（6/2–6/5）進行中，但今日（第三天 6/4）封裝相關新聞發布量極低。主要發布商（TrendForce、SemiEngineering、3DInCites）的封裝文章集中於 6/2（Samsung HBM5、SK Chair 聲明）。ECTC 2026 recap 文章尚未於主要媒體發布，預計 6/5–6/10 間出現，建議後續 collect 任務重點追蹤。
