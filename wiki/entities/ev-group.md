@@ -3,7 +3,7 @@ title: "EV Group (EVG)"
 category: entity
 tags: [equipment, hybrid-bonding, wafer-bonding, maskless-lithography, layer-transfer]
 created: 2026-04-25
-updated: 2026-05-21
+updated: 2026-06-05
 sources: [2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-05-19_semiconductor-digest_ev-group-ectc2026-hybrid-bonding]
 related:
   - wiki/technologies/hybrid-bonding.md
@@ -40,9 +40,16 @@ related:
   - **Session 39（co-authored w/ Intel）**：D2W 高速 100% Bond Overlay 計量——**Intel 共同作者確認 EVG 是 Intel D2W HB 計量夥伴**
   - **Session 27（co-authored w/ Asahi Kasei）**：310×310mm² 面板基板無光罩微影，高深寬比 Cu Pillar——FOPLP 製程使能
   - **Session 33（co-authored w/ imec）**：Epitaxial Ru 層轉移；金屬-金屬接合；朝向**單晶互連材料**
-  - **GEMINI FB** 系統確認為 W2W 混合接合及熔融接合的「業界事實標準（de facto standard）」
+  - **GEMINI® FB** 系統確認為 W2W 混合接合及熔融接合的「業界事實標準（de facto standard）」
   - **LITHOSCALE XT**：較前代提升 **5× 通量**，支援高量產環境
   *Source: Semiconductor Digest 2026-05-19*
+- **2026-05-28（imec 合作 200nm W2W HB 世界紀錄 / ECTC 2026）⭐新增**：與 imec 共同在 ECTC 2026 Session 26 發表 **200nm Cu 接合間距 W2W 混合接合**：
+  - **<40nm Cu pad-to-pad post-bond overlay，全 300mm 晶圓 100% die**——全球首次世界紀錄
+  - 設備：**EVG GEMINI® FB** 晶圓接合系統（核心貢獻：前所未有的對位精度）
+  - 製程：SiCN 介電（imec 首創）+ CMP 優化 + 預接合微影校正
+  - 目標：imec CMOS 2.0 paradigm 的 logic-to-logic stacking（極高密度邏輯層疊加）
+  - 路線圖：雙方計劃繼續將路線圖推進至 **sub-200nm**（far below 200nm）
+  *Source: Semiconductor Digest 2026-05-28（Shannon Davis）*
 
 ---
 

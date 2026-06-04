@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-06-04
-**頁面總數 Total Pages**：179
-**原始來源數 Sources**：144
+**更新時間 Updated**：2026-06-05
+**頁面總數 Total Pages**：182
+**原始來源數 Sources**：147
 
 ---
 
@@ -59,6 +59,9 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-06-03_electronics360_gf-sivers-silicon-photonics-cpo-scale]] — Electronics360：GlobalFoundries + Sivers Semiconductors 雷射陣列整合 SCALE CPO 平台；GF 完整矽光子 CPO 堆疊（IC+封裝+光源）（2026-06-03）⭐新增
+- [[sources/2026-06-03_electronics360_nvidia-tsmc-ai-fab-computex2026]] — Electronics360：NVIDIA + TSMC AI 導入晶圓廠全流程；cuLitho 20-50%、cuEST 50×、FabTwin；COMPUTEX 2026 宣布（2026-06-03）⭐新增
+- [[sources/2026-05-28_semiconductor-digest_imec-evg-200nm-hybrid-bonding-ectc2026]] — Semiconductor Digest：imec + EV Group 200nm W2W 混合接合世界紀錄；<40nm overlay 全晶圓 100% die；ECTC 2026 Session 26（2026-05-28）⭐新增
 - [[sources/2026-06-03_digitimes_naura-plp-descum-tool]] — Digitimes：北方華創（Naura）首批 600mm×600mm PLP 去膠渣設備出貨；中國前端設備龍頭進入面板封裝設備市場（2026-06-03）⭐新增
 - [[sources/2026-06-02_trendforce_samsung-hbm5-computex2026]] — TrendForce：Samsung COMPUTEX 2026 首次展示 HBM5 模型；2nm base die；12/16/20 層；量產 ~2028；HPB 熱管理驗證（2026-06-02）⭐新增
 - [[sources/2026-06-02_trendforce_sk-chair-computex2026-memory-shortage]] — TrendForce：SK 會長首次 COMPUTEX——記憶體短缺至 2030；5 年產能翻倍；HBM4（1b+TSMC12nm）/ HBM4E（1c+TSMC3nm）製程確認；Jensen Huang 展場互動（2026-06-02）⭐新增

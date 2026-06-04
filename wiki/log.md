@@ -1158,3 +1158,34 @@
 - 主要新知識：
   1. **北方華創進入 PLP 設備市場（中國封裝設備自主化關鍵里程碑）**：wiki 先前記錄中國 OSAT（JCET、SJ Semiconductor）和設備生態，但缺乏中國本土「前端設備大廠跨入後端封裝設備」的記錄。Naura 的 600mm PLP 去膠渣工具是此趨勢的第一個具體案例——標誌中國正從「依賴 AMAT/TEL/Lam Research 封裝設備」轉向本土替代路徑。與 MATCH Act 在美國推進的出口管制趨勢形成直接戰略呼應。
   2. **今日搜尋狀況說明**：COMPUTEX 2026（6/2–6/5）進行中，但今日（第三天 6/4）封裝相關新聞發布量極低。主要發布商（TrendForce、SemiEngineering、3DInCites）的封裝文章集中於 6/2（Samsung HBM5、SK Chair 聲明）。ECTC 2026 recap 文章尚未於主要媒體發布，預計 6/5–6/10 間出現，建議後續 collect 任務重點追蹤。
+
+## [2026-06-05] collect | 每日自動蒐集 — 先進封裝最新動態（第四十二次）
+- 搜尋查詢數：7 組（ECTC 2026 recap hybrid bonding、TSMC CoWoS SoIC June 2026、HBM4E HBM5 June 2026、Intel EMIB Foveros glass substrate June、FOPLP OSAT June、advanced packaging chiplet June 5 2026、NVIDIA TSMC SPIL photonics COMPUTEX 2026）
+- 成功抓取：3 篇（articles/ 3, papers/ 0, reports/ 0）
+  - 2026-05-28_semiconductor-digest_imec-evg-200nm-w2w-hybrid-bonding-ectc2026.md（Semiconductor Digest 2026-05-28；imec + EV Group ECTC 2026 Session 26：200nm W2W 混合接合，<40nm overlay 全晶圓 100% die 世界紀錄；EVG GEMINI® FB 設備；CMOS 2.0 logic-to-logic stacking；sub-200nm 路線圖）
+  - 2026-06-03_electronics360_nvidia-tsmc-ai-fab-computex2026.md（Electronics360 2026-06-03；NVIDIA+TSMC COMPUTEX 2026：AI 全面導入晶圓廠；cuLitho 20-50%、cuEST 50×、CuML H200、Metropolis Tao、Omniverse FabTwin）
+  - 2026-06-03_electronics360_gf-sivers-silicon-photonics-cpo-scale.md（Electronics360 2026-06-03；GF+Sivers Semiconductors 雷射陣列整合 SCALE CPO 平台；GF 完整矽光子 CPO 堆疊）
+- 失敗/跳過：多篇
+  - ECTC 2026 recap 文章（semiengineering.com / 3dincites.com）：尚未發布（ECTC 2026 為 5/26-29，預計本週出現；今日 6/5 仍無新 recap 文章）
+  - Intel EMIB/Foveros 6月新文章：無新發布（最新為 5/28；6月初 Intel 無封裝更新）
+  - FOPLP/OSAT：無新 June 文章（最新為 5/30 ASE 310mm PLP，已收錄）
+  - TSMC CoWoS June：無新文章（最新為 6/2 週期收錄完畢）
+  - HBM4E/HBM5：無 6月初新文章（Samsung HBM5 + SK Chair 6/2 文章已於 6/3 收錄）
+  - SemiAnalysis 新文章：無新封裝相關文章
+  - 搜尋結果多為已收錄文章（COMPUTEX 2026 週期主要發布集中於 6/1-6/2）
+- 學術代理：UNAVAILABLE ✗（ieeexplore、arxiv 仍受限）
+- 新增 wiki 頁面：3 頁
+  - wiki/sources/2026-05-28_semiconductor-digest_imec-evg-200nm-hybrid-bonding-ectc2026.md
+  - wiki/sources/2026-06-03_electronics360_nvidia-tsmc-ai-fab-computex2026.md
+  - wiki/sources/2026-06-03_electronics360_gf-sivers-silicon-photonics-cpo-scale.md
+- 更新 wiki 頁面：5 頁
+  - wiki/technologies/hybrid-bonding.md（新增：200nm W2W HB 世界紀錄（imec+EVG）；Key Specs 表格新增 200nm 行；Timeline 新增 2026-05-28 里程碑；updated 2026-06-05）
+  - wiki/entities/ev-group.md（新增：GEMINI® FB 200nm W2W 世界紀錄；<40nm overlay；sub-200nm 路線圖；updated 2026-06-05）
+  - wiki/entities/tsmc.md（新增：NVIDIA AI 全面導入晶圓廠；cuLitho/cuEST/FabTwin；COMPUTEX 2026 合作；updated 2026-06-05）
+  - wiki/entities/nvidia.md（新增：TSMC 製造 AI 合作；TSMC-NVIDIA 關係升級為技術夥伴；updated 2026-06-05）
+  - wiki/technologies/copackaged-optics.md（新增：GF+Sivers 光源整合；SCALE 平台完整 CPO 堆疊；updated 2026-06-05）
+  - wiki/index.md（頁面數 179→182；來源數 144→147；3 個新 sources 頁面）
+- 主要新知識：
+  1. **imec + EVG 200nm W2W 混合接合世界紀錄（ECTC 2026，5/29）**：wiki 現有最細 W2W HB 為 450nm（AMAT/EVG，98% 良率），此文推進至 **200nm**，且達成全晶圓 100% die <40nm overlay 的世界紀錄精度。「Sub-200nm 路線圖」首次明確宣告，使 CMOS 2.0 的 logic-to-logic stacking 路徑更加清晰——這是混合接合技術的重大里程碑更新。
+  2. **NVIDIA + TSMC AI 導入製造（COMPUTEX 2026 正式宣布）**：wiki 此前僅記錄 NVIDIA 為 TSMC 最大 CoWoS 客戶，此文首次確認兩者建立「製造 AI 夥伴關係」——cuLitho（+20-50%）、cuEST（50×）、FabTwin 等工具正式部署，代表 NVIDIA 的軟體生態正滲透 TSMC 晶圓廠運營本身。
+  3. **GF + Sivers 完成矽光子 CPO 完整堆疊（光源缺口填補）**：wiki 已記錄 GF SCALE CPO 平台（2026-05-07），但缺少「光源」元件細節。此文確認 Sivers 雷射陣列整合後，GF 現在擁有 IC（AMF）+ 封裝（SCALE）+ 光源（Sivers）三合一 CPO 完整堆疊，使 GF SCALE 平台的商業化競爭力大幅提升。

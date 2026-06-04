@@ -3,7 +3,7 @@ title: "NVIDIA Corporation"
 category: entity
 tags: [fabless, GPU, AI-accelerator, HBM4, CoWoS, SoIC, Rubin, Feynman, NVL576, CPO, Spectrum-X, Constellation]
 created: 2026-05-03
-updated: 2026-06-02
+updated: 2026-06-05
 sources: [2026-05-24_techtimes_nvidia-computex2026-cowos, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-03-18_trendforce_nvidia-rubin-feynman-soic, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-06_trendforce_google-tpu-cautious-adoption-nvidia, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-06-01_trendforce_nvidia-vera-rubin-tsmc-20pct-revenue, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan]
 related:
   - wiki/entities/tsmc.md
@@ -45,7 +45,14 @@ related:
 
 ## 近期動態 / Recent Developments
 
-- **2026-06-01（最新）⭐**：**NVIDIA 正式成為 TSMC 最大客戶（年報確認）+ Vera Rubin 首批出貨 7 月 + COMPUTEX GTC Taipei RTX Spark 發表**（TrendForce 2026-06-01）：
+- **2026-06-03（最新）⭐新增**：**TSMC 採用 NVIDIA AI 晶片進行製造全流程優化（COMPUTEX 2026 宣布）**：
+  - 首次確認 TSMC 將 **cuLitho**、**cuEST**、**CuML（H200 GPU）**、**Metropolis+Tao（視覺 AI 缺陷檢測）** 導入晶圓廠製造生命週期
+  - 計劃建立 **Omniverse FabTwin 虛擬晶圓廠**（工具配置評估、製造瓶頸提前識別）
+  - Jensen Huang 聲明：「TSMC is bringing NVIDIA AI and accelerated computing into the fab itself」
+  - 意涵：NVIDIA 與 TSMC 關係從「客戶-供應商」升級為「製造技術共同開發夥伴」；NVIDIA 的 AI 軟體生態（cuLitho 等）將深度嵌入 TSMC 晶圓廠
+  *Source: Electronics360 / GlobalSpec 2026-06-03（Peter Brown）*
+
+- **2026-06-01⭐**：**NVIDIA 正式成為 TSMC 最大客戶（年報確認）+ Vera Rubin 首批出貨 7 月 + COMPUTEX GTC Taipei RTX Spark 發表**（TrendForce 2026-06-01）：
   - **TSMC 最大客戶確認**：TSMC 2025 年報揭露 Customer A（NVIDIA）收入佔比從 12%（2024）升至 **19%**（2025），超越 Customer B（Apple 17%）；2026 年預估超過 **20%**。Jensen Huang 於 GSA podcast 親口確認 NVIDIA 為 TSMC 最大客戶。
   - **Vera Rubin 首批出貨 2026 年 7 月**：Vera Rubin 晶片以 TSMC 3nm 量產；Foxconn/Quanta/Wistron Q3 2026 大規模出貨；機架售價 ~**$7.8M/rack**。
   - **NVIDIA RTX Spark 發表（GTC Taipei，6/1）**：首款 NVIDIA 消費級 PC 處理器；N1X Arm CPU（與 MediaTek 共同設計，TSMC 3nm）；N1（主流版）同步亮相。
@@ -102,17 +109,4 @@ related:
 
 - NVIDIA 中國 AI 加速器市場份額：**~95%（歷史峰值）→ 實質 0%（2026 年）**
 - 2025-12 批准 H200 銷售給約 10 家中國企業（Alibaba/Tencent/ByteDance/JD.com）
-- **截至 2026-05 底：H200 實際交貨量 = 0**（北京指示企業優先採購 Huawei）
-- Huawei Ascend 950PR：2026-03 正式量產；2026 年 AI 收入預測 20 億美元（~75 萬套）
-- Morgan Stanley：中國 AI 晶片市場 2030 年達 70 億美元，國內廠商主導
-- Huang 表態：「放棄整個中國市場在戰略上不合理」
-
----
-
-## 相關技術 / Related Technologies
-
-- [[technologies/cowos]] — 最大 CoWoS 需求方，>50% 產能鎖定 2027
-- [[technologies/soic]] — Rubin Ultra + Feynman 採用 SoIC-X 混合接合
-- [[technologies/hbm4]] — HBM4E 主要用戶；SK Hynix ~70% 份額
-- [[entities/tsmc]] — 核心製造夥伴；CoWoS + SoIC + 先進製程
-- [[entities/sk-hynix]] — HBM 主要供應商
+- **截

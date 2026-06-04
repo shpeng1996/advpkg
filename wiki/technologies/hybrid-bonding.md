@@ -3,7 +3,7 @@ title: "混合接合 / Hybrid Bonding"
 category: technology
 tags: [3D, hybrid-bonding, Cu-Cu, SoIC, ECTC, advanced-packaging, DRAM, COP, 4F2, Sn-damascene, damascene-interconnect, PFAS-free]
 created: 2026-04-24
-updated: 2026-05-29
+updated: 2026-06-05
 sources: [2026-05-21_semiecosystem_ectc2026-cpo-hybridbonding-plp, 2026-04-24_initial-survey, 2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-03-01_3dincites_besi-packaging-power-shift, 2026-01-13_semiengineering_hbm4-microbumps, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-19_semieng_advanced-packaging-limits, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-03-27_3dincites_copper-grain-hybrid-bonding, 2025-01-01_semieng_making-hybrid-bonding-better, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2026-04-29_semiwiki_cea-leti-ectc2026-hybrid-bonding, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2024-02-09_semianalysis_hybrid-bonding-process-flow, 2026-05-19_semiconductor-digest_ev-group-ectc2026-hybrid-bonding, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-04-19_semiwiki_apple-m5-cucu-hybrid-bonding-shipped]
 related:
   - wiki/technologies/soic.md
@@ -58,6 +58,7 @@ related:
 | 商業接合間距（TSMC SoIC-X，2026 Q1） | **6 µm** | 主流量產水準 |
 | W2W HB pitch（高良率，ECTC 2026）⭐ | **450 nm** | EVG + AMAT；98% 良率；20M 互連 |
 | W2W HB pitch（窄，ECTC 2026）⭐ | **300 nm** | EVG + AMAT；SiCN；50nm overlay |
+| W2W HB pitch（世界紀錄，ECTC 2026）⭐ | **200 nm** | imec + EVG；<40nm overlay 全晶圓 100% die；世界首次 |
 | D2W HB 最細間距（實驗室）| **1 µm** | CEA-Leti ECTC 2026 首次示範 ⭐ |
 | UCIe 2.0 混合接合 bump pitch | **最小 1 µm** | 標準規格 |
 | 退火溫度（傳統） | ~400°C | 標準 CMP + 熱退火 |
@@ -101,6 +102,9 @@ related:
   - **EVG + Intel（Session 39）**：高速 100% D2W bond overlay 計量——Intel 共作者確認 EVG 為 Intel D2W HB 設備夥伴
   - NYCU + Tokyo Ohka：超快銅聚合物 HB；IBM：ML 熱阻預測；量子封裝 + 光子系統特別議程
   *Source: Semiconductor Digest 2026-05-19（EVG ECTC 2026 宣告）；Semiconductor Digest 2026-03-20（ECTC 2026 官方公告）*
+- **2026-05-28（imec + EVG 200nm W2W HB 世界紀錄 / ECTC 2026）⭐新增**：imec 與 EV Group（EVG）在 ECTC 2026 Session 26 發表 **200nm Cu 接合間距 W2W 混合接合**——全球最精細間距的 robust & high-yielding W2W HB 示範。**<40nm Cu 墊對墊 post-bond overlay，全 300mm 晶圓 100% die 達標**（世界首次）。設備：EVG **GEMINI® FB** 混合/熔融晶圓接合系統。工藝要點：SiCN 介電（imec 首創）+ CMP（均勻性優化，Cu pad 奈米級受控凹陷）+ 預接合微影校正。應用場景：CMOS 2.0 paradigm 的 **logic-to-logic**（高驅動力層+高密度邏輯層）及 memory-to-logic 堆疊。路線圖：imec + EVG 計劃推進至「遠低於 200nm（sub-200nm）」。
+  *Source: Semiconductor Digest 2026-05-28（Shannon Davis）*
+
 - **2028–2029**（預測）：HBM4E 或 HBM5（18–20 層）可能成為 HBM 系列首個採用混合接合的版本
 - **2027**（預測）：Memory-on-Logic 架構商業化，HBM4 直接接合至 AI 運算核心
 
