@@ -3,7 +3,7 @@ title: "EV Group (EVG)"
 category: entity
 tags: [equipment, hybrid-bonding, wafer-bonding, maskless-lithography, layer-transfer]
 created: 2026-04-25
-updated: 2026-06-05
+updated: 2026-06-06
 sources: [2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-05-19_semiconductor-digest_ev-group-ectc2026-hybrid-bonding]
 related:
   - wiki/technologies/hybrid-bonding.md
@@ -42,7 +42,8 @@ related:
   - **Session 33（co-authored w/ imec）**：Epitaxial Ru 層轉移；金屬-金屬接合；朝向**單晶互連材料**
   - **GEMINI® FB** 系統確認為 W2W 混合接合及熔融接合的「業界事實標準（de facto standard）」
   - **LITHOSCALE XT**：較前代提升 **5× 通量**，支援高量產環境
-  *Source: Semiconductor Digest 2026-05-19*
+  - **矽載體可重複使用方案（Inorganic Release）⭐新增（2026-06-06）**：新型「無機接合 + 雷射釋放（laser release on silicon carrier）」流程：TTV 100nm，前端設備相容，矽載體**可重複使用**→ 降低 cost of ownership；可用於 fusion bond、hybrid bond、epi layer 等多用途，擴展至前段轉移應用（vs. 傳統有機接著劑）
+  *Source: Semiconductor Digest 2026-05-19; SemiEngineering HB Manufacturability deep-dive*
 - **2026-05-28（imec 合作 200nm W2W HB 世界紀錄 / ECTC 2026）⭐新增**：與 imec 共同在 ECTC 2026 Session 26 發表 **200nm Cu 接合間距 W2W 混合接合**：
   - **<40nm Cu pad-to-pad post-bond overlay，全 300mm 晶圓 100% die**——全球首次世界紀錄
   - 設備：**EVG GEMINI® FB** 晶圓接合系統（核心貢獻：前所未有的對位精度）

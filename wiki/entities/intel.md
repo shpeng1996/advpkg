@@ -3,7 +3,7 @@ title: "英特爾 / Intel"
 category: entity
 tags: [IDM, advanced-packaging, EMIB, Foveros, Intel18A, Clearwater-Forest, Foveros-Direct, glass-substrate, 14A, High-NA-EUV, silicon-capacitors, Google-TPU-v8e]
 created: 2026-04-24
-updated: 2026-06-02
+updated: 2026-06-06
 sources: [2026-04-24_initial-survey, 2026-03-18_trendforce_intel-emib-malaysia, 2026-03-03_trendforce_intel-clearwater-forest, 2026-03-05_trendforce_intel-emib-billions, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-04-20_trendforce_intel-foundry-14a-equipment, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-01_semianalysis_cpus-back-datacenter-2026, 2026-04-10_3dincites_intel-gan-chiplet, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate]
 related:
   - wiki/entities/tsmc.md
@@ -42,6 +42,9 @@ related:
   - **3DGS**：成立於 2005 年，Intel 支持的美國半導體技術公司；Intel 封裝廠已於 **2026 年 4 月**在布巴內什瓦爾動工。
   - **雙軌玻璃基板戰略**：Rio Rancho（NM）= 全球首座 HVM 候選廠；印度廠 = 大規模補充量產基地。
   *Source: TrendForce 2026-06-01（引述 Reuters 2026-05-29、The Next Web、Forbes）*
+
+- **2026-06-06（⭐新增）— D2W HB 量產瓶頸聲明（SemiEngineering deep dive）**：Intel 研究員 Feras Eid 等人（ECTC 2024 論文）明確指出：**「目前乃至下一代接合設備仍無法達到 sub-1µm pitch 所需的 D2W 放置精度」**；D2W 接合步驟是整個 HB 流程中「最慢且最貴」的步驟，即使在現有相對寬鬆的 9µm pitch 也是如此。Intel + CEA-Leti 聯合研發 **Fluidic Self-Alignment（液體自對準）**技術（研究階段）：使用水珠 + 導引圖案 → 對準精度 200nm + 預估 10× 吞吐量提升。  
+  *Source: SemiEngineering「Hybrid Bonding Makes Strides Toward Manufacturability」; ECTC 2024 Eid et al.*
 
 - **2026-05-28（更新）⭐**：**Intel 計畫 2027 年在 EMIB 基板整合矽電容（Silicon Capacitors），為 Google TPU v8e 提供 AI 工作負載功率穩定性**（TrendForce，引述 ZDNet Korea）：
   - **EMIB 功率瓶頸**：高頻 AI 工作負載的電壓下垂（voltage droop）難以單靠傳統 MLCC 解決，矽電容（Silicon Capacitors）+ TSV 組合為解決方案

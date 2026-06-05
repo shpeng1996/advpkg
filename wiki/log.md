@@ -1189,3 +1189,31 @@
   1. **imec + EVG 200nm W2W 混合接合世界紀錄（ECTC 2026，5/29）**：wiki 現有最細 W2W HB 為 450nm（AMAT/EVG，98% 良率），此文推進至 **200nm**，且達成全晶圓 100% die <40nm overlay 的世界紀錄精度。「Sub-200nm 路線圖」首次明確宣告，使 CMOS 2.0 的 logic-to-logic stacking 路徑更加清晰——這是混合接合技術的重大里程碑更新。
   2. **NVIDIA + TSMC AI 導入製造（COMPUTEX 2026 正式宣布）**：wiki 此前僅記錄 NVIDIA 為 TSMC 最大 CoWoS 客戶，此文首次確認兩者建立「製造 AI 夥伴關係」——cuLitho（+20-50%）、cuEST（50×）、FabTwin 等工具正式部署，代表 NVIDIA 的軟體生態正滲透 TSMC 晶圓廠運營本身。
   3. **GF + Sivers 完成矽光子 CPO 完整堆疊（光源缺口填補）**：wiki 已記錄 GF SCALE CPO 平台（2026-05-07），但缺少「光源」元件細節。此文確認 Sivers 雷射陣列整合後，GF 現在擁有 IC（AMF）+ 封裝（SCALE）+ 光源（Sivers）三合一 CPO 完整堆疊，使 GF SCALE 平台的商業化競爭力大幅提升。
+
+## [2026-06-06] collect | 每日自動蒐集 — 先進封裝最新動態（第四十三次）
+- 搜尋查詢數：7 組（ECTC 2026 recap hybrid bonding、TSMC CoWoS SoIC June 2026、HBM4/HBM4E/HBM5 June 2026、Intel EMIB Foveros glass substrate June、advanced packaging FOPLP OSAT June、Samsung SK Hynix HBM5 heat dissipation thermal、advanced packaging chiplet June 6 2026）
+- 成功抓取：2 篇（articles/ 2, papers/ 0, reports/ 0）
+  - 2026-06-05_trendforce_hbm5-thermal-samsung-skhynix-micron.md（TrendForce 2026-06-05；Samsung HPB + SK hynix iHBM + Micron TSV trench cooling；三廠 HBM5 封裝內熱管理技術完整對比；D2D PHY 為共同識別熱源）
+  - 2026-05-xx_semiengineering_hybrid-bonding-manufacturability-deepdive.md（SemiEngineering 深度分析；HB 量產化進展；Intel D2W 瓶頸聲明；AMAT 300°C 退火 100× 吞吐；EVG 矽載體可重複使用；fluidic self-alignment（Intel+CEA-Leti）10× 吞吐；imec 液冷 −50°C）
+- 失敗/跳過：多篇
+  - ECTC 2026 recap 文章（semiengineering/3dincites）：仍未發布新的 June recap（ECTC 5/26-29，業界 recap 通常需 2-4 週）
+  - TSMC CoWoS/SoIC June 新文章：無新發布（最新為 6/3；COMPUTEX 後效應已消化）
+  - FOPLP/OSAT June：無新 June 文章（最新 ASE 310mm PLP 已收錄）
+  - Intel EMIB/Foveros June：無新發布（最新 6/4 Intel 18A/notebook 文章，非封裝聚焦）
+  - 3DInCites、SemiAnalysis：無新封裝相關文章（6/5–6/6 無更新）
+- 學術代理：UNAVAILABLE ✗（ieeexplore、arxiv 仍受限）
+- 新增 wiki 頁面：2 頁
+  - wiki/sources/2026-06-05_trendforce_hbm5-thermal-three-makers.md
+  - wiki/sources/2026-05-xx_semiengineering_hybrid-bonding-manufacturability.md
+- 更新 wiki 頁面：7 頁
+  - wiki/technologies/hbm4.md（新增：三廠 HBM5 熱管理技術路線完整對比表；Samsung HPB 矽基 vs. SK Hynix iHBM ICE vs. Micron TSV trench cooling；D2D PHY 識別為共同熱源；AI GPU 功耗趨向 1,000W/chip；updated 2026-06-06）
+  - wiki/technologies/hybrid-bonding.md（新增：SemiEngineering 量產化深度分析節——Intel D2W 瓶頸、fluidic self-alignment、AMAT 300°C 退火、EVG 矽載體可重複使用、speed binning 挑戰、imec 液冷 −50°C；updated 2026-06-06）
+  - wiki/concepts/thermal-management.md（新增：Micron TSV trench cooling 差異化路線；三廠完整策略對比表；updated 2026-06-06）
+  - wiki/entities/micron.md（新增：「封裝內熱管理技術路線」節——TSV trench cooling 詳細機制 + 2025 US 專利說明；Open Questions 新增 TSV cooling 量產問題；updated 2026-06-06）
+  - wiki/entities/ev-group.md（新增：矽載體可重複使用方案（Inorganic Release）技術細節；updated 2026-06-06）
+  - wiki/entities/intel.md（新增：D2W 量產瓶頸 Feras Eid 聲明；Fluidic Self-Alignment Intel+CEA-Leti 研究進展；updated 2026-06-06）
+  - wiki/index.md（頁面數 182→184；來源數 147→149；2 個新 sources 頁面）
+- 主要新知識：
+  1. **三廠 HBM5 熱管理路線首次完整呈現（wiki 重大補充）**：Samsung HPB（矽基獨立熱路徑）、SK Hynix iHBM（ICE 嵌入 D2D PHY，−30% 熱阻）、Micron TSV trench cooling（電氣被動導熱 TSV）三條路線首次並列對比入 wiki。共同識別 **D2D PHY 為主要熱源**，但解法路徑完全不同——Samsung/SK Hynix 走「固態導熱結構插入」，Micron 走「主動液冷 + 低功耗設計」。AI GPU 功耗趨向 **1,000W/chip** 是三廠共同面對的系統性驅動因素。
+  2. **Intel 明確聲明 D2W 混合接合 sub-1µm pitch 對準超出現有設備能力**：wiki 曾記錄 D2W 對準挑戰，但此次加入 Intel Feras Eid et al. 的明確公開聲明，是對「混合接合量產路線圖」最精準的限制因子描述。Fluidic Self-Alignment（Intel+CEA-Leti）200nm 精度 + 10× 吞吐量的研究成果亦首次入 wiki。
+  3. **EVG 矽載體可重複使用（cost of ownership 降低）**：無機 release 流程允許矽載體重複使用，是混合接合成本降低路徑上的重要細節，補充了 wiki 現有 EVG 頁面的設備生態描述。

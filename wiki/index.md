@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-06-05
-**頁面總數 Total Pages**：182
-**原始來源數 Sources**：147
+**更新時間 Updated**：2026-06-06
+**頁面總數 Total Pages**：184
+**原始來源數 Sources**：149
 
 ---
 
@@ -59,6 +59,8 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-06-05_trendforce_hbm5-thermal-three-makers]] — TrendForce：Samsung HPB + SK Hynix iHBM + Micron TSV trench cooling；三廠 HBM5 熱管理技術路線全面對比；D2D PHY 為共同熱源識別點（2026-06-05）⭐新增
+- [[sources/2026-05-xx_semiengineering_hybrid-bonding-manufacturability]] — SemiEngineering：混合接合量產化深度分析；D2W 對準/吞吐量瓶頸（Intel）；AMAT 300°C 5-min 退火 100× 吞吐；EVG 矽載體可重複使用；Fluidic Self-Alignment（Intel+CEA-Leti）⭐新增
 - [[sources/2026-06-03_electronics360_gf-sivers-silicon-photonics-cpo-scale]] — Electronics360：GlobalFoundries + Sivers Semiconductors 雷射陣列整合 SCALE CPO 平台；GF 完整矽光子 CPO 堆疊（IC+封裝+光源）（2026-06-03）⭐新增
 - [[sources/2026-06-03_electronics360_nvidia-tsmc-ai-fab-computex2026]] — Electronics360：NVIDIA + TSMC AI 導入晶圓廠全流程；cuLitho 20-50%、cuEST 50×、FabTwin；COMPUTEX 2026 宣布（2026-06-03）⭐新增
 - [[sources/2026-05-28_semiconductor-digest_imec-evg-200nm-hybrid-bonding-ectc2026]] — Semiconductor Digest：imec + EV Group 200nm W2W 混合接合世界紀錄；<40nm overlay 全晶圓 100% die；ECTC 2026 Session 26（2026-05-28）⭐新增
