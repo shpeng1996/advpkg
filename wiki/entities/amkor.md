@@ -71,4 +71,20 @@ related:
 | 2024 年營收 | **US$6.32B（-2.8% YoY）**；車用庫存修正 + 中國/東南亞定價壓力 |
 | 主要競爭對手 | ASE Group（$18.54B）、JCET（$5.00B） |
 | 戰略差異化 | 美國在地製造 + Intel EMIB 合作 |
-| Arizona Campus
+| Arizona Campus 投資規模 | $70 億（全球最大 OSAT 單廠投資之一） |
+
+---
+
+## 與其他實體的關係 / Relationships
+
+- **Intel**：EMIB 製程授權合作夥伴（正式合作宣布 2025-12）；韓國 K5 + 葡萄牙 + Arizona 三廠導入；美國境內完整先進封裝路徑的核心夥伴
+- **ASE Group**：全球 OSAT 主要競爭對手
+- **TSMC**：間接競爭（承接 TSMC CoWoS 溢出需求）
+- **美國政府**：Arizona 廠為美國半導體製造在地化政策重要受益者
+
+---
+
+## 爭議與未解問題 / Open Questions
+
+- Arizona 廠 Phase 2 的投產時程是否會因政策變化或需求波動而延遲？
+- Amk
