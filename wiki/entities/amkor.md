@@ -3,8 +3,8 @@ title: "Amkor Technology"
 category: entity
 tags: [OSAT, advanced-packaging, FOCoS, Arizona, chiplet, Intel-EMIB]
 created: 2026-04-25
-updated: 2026-05-20
-sources: [2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor]
+updated: 2026-06-07
+sources: [2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-05-19_stocktitan_amkor-arizona-peoria-land-expansion]
 related:
   - wiki/technologies/cowos.md
   - wiki/entities/intel.md
@@ -30,6 +30,9 @@ related:
 ---
 
 ## 近期動態 / Recent Developments
+
+- **2026-05-19（⭐最新）**：**亞利桑那 Peoria 園區再添 67 英畝土地**——Amkor 宣布在既有 104 英畝 Innovation Core 基地旁新取得相鄰 67 英畝土地，為未來擴建保留策略彈性。公司強調此園區目標成為**美國第一座高量產（high-volume）先進封裝 OSAT 設施**，服務 AI、HPC、汽車與通訊市場；CEO Kevin Engel 將此定調為強化美國本土先進封裝產能、建構更具韌性供應鏈的關鍵投資。同步於 5/21 舉行 Investor Day。
+  *Source: Amkor Technology (BUSINESS WIRE) / Stock Titan 2026-05-19*
 
 - **2026-以後**：**亞利桑那 Advanced Packaging Campus**
   - 總投資：**$70 億美元**（兩期，較原計畫翻倍）
@@ -68,20 +71,4 @@ related:
 | 2024 年營收 | **US$6.32B（-2.8% YoY）**；車用庫存修正 + 中國/東南亞定價壓力 |
 | 主要競爭對手 | ASE Group（$18.54B）、JCET（$5.00B） |
 | 戰略差異化 | 美國在地製造 + Intel EMIB 合作 |
-| Arizona Campus 投資規模 | $70 億（全球最大 OSAT 單廠投資之一） |
-
----
-
-## 與其他實體的關係 / Relationships
-
-- **Intel**：EMIB 製程授權合作夥伴（正式合作宣布 2025-12）；韓國 K5 + 葡萄牙 + Arizona 三廠導入；美國境內完整先進封裝路徑的核心夥伴
-- **ASE Group**：全球 OSAT 主要競爭對手
-- **TSMC**：間接競爭（承接 TSMC CoWoS 溢出需求）
-- **美國政府**：Arizona 廠為美國半導體製造在地化政策重要受益者
-
----
-
-## 爭議與未解問題 / Open Questions
-
-- Arizona 廠 Phase 2 的投產時程是否會因政策變化或需求波動而延遲？
-- Amk
+| Arizona Campus

@@ -3,7 +3,7 @@ title: "先進封裝地緣政治 / Geopolitics of Advanced Packaging"
 category: concept
 tags: [geopolitics, US-China, CHIPS-Act, supply-chain, chiplet, NAPMP, export-control, glass-substrate, standards-war, BOE, Corning, Absolics]
 created: 2026-04-26
-updated: 2026-06-04
+updated: 2026-06-07
 sources: [2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-23_trendforce_china-osat-sj-semiconductor-ipo, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-08-05_3dincites_iftle636, 2026-03-23_trendforce_musk-terafab-tsmc-packaging, 2026-04-22_trendforce_sk-hynix-indiana-us-plant, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-06-03_digitimes_naura-plp-descum-tool]
 related: [wiki/concepts/advanced-packaging-market.md, wiki/entities/amkor.md, wiki/entities/ase-group.md, wiki/technologies/ucie.md]
 ---
@@ -32,6 +32,8 @@ Advanced packaging geopolitics refers to how national governments, corporations,
 - **NAPMP（National Advanced Packaging Manufacturing Program）**：直接針對先進封裝生態系建立的聯邦計畫
 - 目標：到 2032 年美國晶圓廠產能從全球 10% 提升至 14%，先進封裝能力大幅提升
 - **Amkor Arizona 廠**（$70 億，2028 年投產）：CHIPS Act 補貼旗艦封裝項目；**2025-12 正式與 Intel 合作 EMIB HVM**，使其成為美國首座支援高階 AI 封裝的 OSAT 廠
+  - **2026-05-19（⭐新增）**：Amkor 在既有 104 英畝 Peoria Innovation Core 基地旁新增取得 **67 英畝**相鄰土地，強化長期擴建彈性；公司明確定位該園區為**「美國第一座高量產先進封裝 OSAT 設施」**，進一步坐實美國本土先進封裝產能擴張的具體進展
+    *Source: Amkor Technology (BUSINESS WIRE) / Stock Titan 2026-05-19*
 - **Intel + Amkor 美國境內完整路徑**（2025-12 宣布）：Intel 晶圓（Arizona / Oregon 製造）+ Amkor Arizona 封裝，**不需送件台灣**——是 CHIPS Act 政策目標的重要實現
 - **Micron DRAM Onshoring + Virginia HBM 封裝廠**（2025-07 + 2025-08 補充）：Micron 宣布 $2,000 億美國投資（製造 $1,500 億 + R&D $500 億，>20 年），首次將先進 DRAM 製程從台灣遷回美國（Idaho 雙廠、New York 四廠區）。**⭐ 新增**：HBM 封裝能力將設立於 **Virginia 州 Manassas 現有廠房擴建**——這是 wiki 首次記錄美國境內 HBM 封裝的具體地點。首座新美國廠 **H2 2027** 開始運作；配合 CHIPS Act 補貼 ~$64.15 億；Idaho 廠重點加速 HBM 研發。
   *Source: IFTLE 636, Phil Garrou, 3D InCites, 2025-08-05*

@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-06-06
-**頁面總數 Total Pages**：184
-**原始來源數 Sources**：149
+**更新時間 Updated**：2026-06-07
+**頁面總數 Total Pages**：187
+**原始來源數 Sources**：152
 
 ---
 
@@ -59,6 +59,9 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang]] — Tech Times：黃仁勳證實三大廠 HBM4 同步量產，Vera Rubin Q3 出貨；2048-bit/32 channel 規格躍進；16-high 堆疊 30µm/720µm 門檻；供應比重估計（2026-06-05）⭐新增
+- [[sources/2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie]] — TrendForce：SK 集團會長與台積電董事長兩年來首度會面；HBM4 base die 委外台積電 12nm；HBM4E 評估台積電 3nm；CoWoS 產能重申（2026-06-04）⭐新增
+- [[sources/2026-05-19_stocktitan_amkor-arizona-peoria-land-expansion]] — Amkor/Stock Titan：亞利桑那 Peoria 園區新增 67 英畝土地；目標美國首座高量產先進封裝 OSAT 設施（2026-05-19）⭐新增
 - [[sources/2026-06-05_trendforce_hbm5-thermal-three-makers]] — TrendForce：Samsung HPB + SK Hynix iHBM + Micron TSV trench cooling；三廠 HBM5 熱管理技術路線全面對比；D2D PHY 為共同熱源識別點（2026-06-05）⭐新增
 - [[sources/2026-05-xx_semiengineering_hybrid-bonding-manufacturability]] — SemiEngineering：混合接合量產化深度分析；D2W 對準/吞吐量瓶頸（Intel）；AMAT 300°C 5-min 退火 100× 吞吐；EVG 矽載體可重複使用；Fluidic Self-Alignment（Intel+CEA-Leti）⭐新增
 - [[sources/2026-06-03_electronics360_gf-sivers-silicon-photonics-cpo-scale]] — Electronics360：GlobalFoundries + Sivers Semiconductors 雷射陣列整合 SCALE CPO 平台；GF 完整矽光子 CPO 堆疊（IC+封裝+光源）（2026-06-03）⭐新增

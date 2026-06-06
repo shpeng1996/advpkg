@@ -3,8 +3,8 @@ title: "台積電 / TSMC"
 category: entity
 tags: [foundry, advanced-packaging, CoWoS, SoIC, CoPoS, COUPE, CPO, InFO, WMCM, aLSI, MRAM, 3nm-pricing]
 created: 2026-04-24
-updated: 2026-06-05
-sources: [2026-04-24_initial-survey, 2026-04-13_trendforce_copos-pilot, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2025-12-18_trendforce_apple-wmcm-a20, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-01-20_trendforce_tsmc-wmcm-apple, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-23_trendforce_tsmc-roadmap-a12-a13-no-high-na-euv, 2026-05-07_trendforce_tsmc-us-expansion-250b-arizona, 2026-05-12_focustaiwan_tsmc-capex-31b-arizona-20b, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-28_reuters_tsmc-kevin-zhang-energy-efficiency]
+updated: 2026-06-07
+sources: [2026-04-24_initial-survey, 2026-04-13_trendforce_copos-pilot, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2025-12-18_trendforce_apple-wmcm-a20, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-01-20_trendforce_tsmc-wmcm-apple, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-23_trendforce_tsmc-roadmap-a12-a13-no-high-na-euv, 2026-05-07_trendforce_tsmc-us-expansion-250b-arizona, 2026-05-12_focustaiwan_tsmc-capex-31b-arizona-20b, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-28_reuters_tsmc-kevin-zhang-energy-efficiency, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie]
 related:
   - wiki/technologies/cowos.md
   - wiki/technologies/soic.md
@@ -32,6 +32,9 @@ related:
 ---
 
 ## 近期動態 / Recent Developments
+
+- **2026-06-04（⭐最新）**：**SK 集團會長崔泰源與台積電董事長魏哲家兩年來首度會面**，聚焦 HBM 與先進封裝合作。會中確認台積電已開始為 SK hynix 代工生產 **HBM4 base die（12nm 製程）**——SK hynix 過去自製 base die，此為記憶體大廠首度將此關鍵元件委外台積電，象徵台積電在 AI 記憶體供應鏈角色從邏輯晶片代工擴展至記憶體周邊邏輯製程。SK hynix 並評估 HBM4E 世代採用台積電 **3nm** 製程。會談重申 CoWoS 產能 2026 年底達 115K–140K wsm、2027 年增至 ~170K wsm。
+  *Source: TrendForce 2026-06-04*
 
 - **2026-05-28（最新）⭐**：**Kevin Zhang（業務開發資深副總裁）於阿姆斯特丹會議宣告：能源效率已取代算力成為 AI 晶片設計首要限制**——（Reuters，Toby Sterling）全球 AI 電力需求激增，Kevin Zhang 明確指出「先進封裝、晶片堆疊與光子技術」是三大關鍵效率提升路徑，與製程縮小並列核心。**N2 → A14（2028）：能耗 -30%、算力 +>20%**——首次在非法說場合給出量化跨世代能效指標。就 Huawei「Tau 縮放定律」評論：「這概念業界早已存在，主要依賴元件更緊密整合，例如 3D 堆疊」，間接確認異質整合路線的技術趨同。
   *Source: Reuters 2026-05-28（Toby Sterling，阿姆斯特丹）*
@@ -174,16 +177,4 @@ related:
 
 - **NVIDIA**：最大 CoWoS 客戶，2026 年佔台積電封裝產能 60–65%
 - **AMD**：第二大 CoWoS 客戶，~11%，押注 SoIC 3D 尋求密度優勢
-- **Intel**：競爭對手（EMIB vs CoWoS-L；Foveros vs SoIC-X）
-- **Samsung Foundry**：競爭對手（AI 晶圓代工）
-- **SK Hynix**：HBM 供應商，透過 CoWoS 整合至 AI 加速器
-
----
-
-## 爭議與未解問題 / Open Questions
-
-- CoPoS 面板級封裝的翹曲控制與大規模良率何時能商業化？
-- 亞利桑那先進封裝廠的地緣政治風險與成本結構？
-- UCIe 生態系成熟後，台積電封裝技術的差異化競爭力如何維持？
-- A12 和 A13 同年（2029）上市策略是否可行？兩者是否真能在同年量產？
-- TSMC 拒採 High-NA EUV 的長期影響——若 Intel/Samsung 以 High-NA EUV 取得製程優勢，TSMC 如何應對？
+- **Inte

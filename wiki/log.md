@@ -1217,3 +1217,14 @@
   1. **三廠 HBM5 熱管理路線首次完整呈現（wiki 重大補充）**：Samsung HPB（矽基獨立熱路徑）、SK Hynix iHBM（ICE 嵌入 D2D PHY，−30% 熱阻）、Micron TSV trench cooling（電氣被動導熱 TSV）三條路線首次並列對比入 wiki。共同識別 **D2D PHY 為主要熱源**，但解法路徑完全不同——Samsung/SK Hynix 走「固態導熱結構插入」，Micron 走「主動液冷 + 低功耗設計」。AI GPU 功耗趨向 **1,000W/chip** 是三廠共同面對的系統性驅動因素。
   2. **Intel 明確聲明 D2W 混合接合 sub-1µm pitch 對準超出現有設備能力**：wiki 曾記錄 D2W 對準挑戰，但此次加入 Intel Feras Eid et al. 的明確公開聲明，是對「混合接合量產路線圖」最精準的限制因子描述。Fluidic Self-Alignment（Intel+CEA-Leti）200nm 精度 + 10× 吞吐量的研究成果亦首次入 wiki。
   3. **EVG 矽載體可重複使用（cost of ownership 降低）**：無機 release 流程允許矽載體重複使用，是混合接合成本降低路徑上的重要細節，補充了 wiki 現有 EVG 頁面的設備生態描述。
+
+## [2026-06-07] collect | 每日自動蒐集 — 先進封裝最新動態（第四十四次）
+- 搜尋查詢數：7 組（TSMC 封裝動態、HBM4 供應鏈、混合接合、OSAT/Amkor、學術會議、設備廠商、競爭對手 EMIB）
+- 成功抓取：3 篇（存入 raw/articles/ 3 篇）
+- 失敗/跳過：多篇（已收錄 2、低相關/招聘類 2、日期過舊 4：Intel 16-die/24-HBM5 影片(2025-12)、wccftech Intel 14A/18A(2026-04-01)、eenewseurope Intel glass substrate EMIB(2026-01-28)、SemiEngineering Technical Paper Roundup June 5（誤判為新文，metadata 確認為 2023 年舊文重發、URL slug 重複））
+- 觸發 ingest：3 篇
+- 觸及 wiki 頁面：12 頁（entities/sk-hynix.md, entities/tsmc.md, entities/samsung.md, entities/nvidia.md, entities/micron.md, entities/amkor.md, technologies/hbm4.md, technologies/cowos.md, technologies/hybrid-bonding.md, concepts/geopolitics-advanced-packaging.md, sources/ 新增 3 頁, index.md）
+- 主要新知識：
+  1. **HBM4 供應鏈結構性轉變**——SK 集團會長與台積電董事長會面確認 SK hynix 已將 HBM4 base die 委外台積電（12nm），未來 HBM4E 評估台積電 3nm；象徵記憶體大廠與晶圓代工角色邊界進一步模糊
+  2. **黃仁勳首度證實三大 HBM4 供應商「同步」量產**（Samsung/SK hynix/Micron 全數通過驗證，Q3 隨 Vera Rubin 出貨），並揭露 HBM4 介面架構世代躍進細節（2048-bit/32 channels）、16-high 堆疊量化門檻（30µm/720µm）、供應比重估計（SK hynix 60-70%、Samsung 25-30%）、接合技術路線分歧（MR-MUF vs Hybrid Bonding 良率挑戰）
+  3. **Amkor 持續加碼美國本土先進封裝產能**——亞利桑那 Peoria 園區新增 67 英畝土地（總計約 171 英畝），明確定位為美國首座高量產先進封裝 OSAT 設施，呼應 CHIPS Act 後段製程在地化趨勢

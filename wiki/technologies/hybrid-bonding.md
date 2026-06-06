@@ -3,8 +3,8 @@ title: "混合接合 / Hybrid Bonding"
 category: technology
 tags: [3D, hybrid-bonding, Cu-Cu, SoIC, ECTC, advanced-packaging, DRAM, COP, 4F2, Sn-damascene, damascene-interconnect, PFAS-free]
 created: 2026-04-24
-updated: 2026-06-06
-sources: [2026-05-21_semiecosystem_ectc2026-cpo-hybridbonding-plp, 2026-04-24_initial-survey, 2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-03-01_3dincites_besi-packaging-power-shift, 2026-01-13_semiengineering_hbm4-microbumps, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-19_semieng_advanced-packaging-limits, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-03-27_3dincites_copper-grain-hybrid-bonding, 2025-01-01_semieng_making-hybrid-bonding-better, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2026-04-29_semiwiki_cea-leti-ectc2026-hybrid-bonding, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2024-02-09_semianalysis_hybrid-bonding-process-flow, 2026-05-19_semiconductor-digest_ev-group-ectc2026-hybrid-bonding, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-04-19_semiwiki_apple-m5-cucu-hybrid-bonding-shipped]
+updated: 2026-06-07
+sources: [2026-05-21_semiecosystem_ectc2026-cpo-hybridbonding-plp, 2026-04-24_initial-survey, 2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-03-01_3dincites_besi-packaging-power-shift, 2026-01-13_semiengineering_hbm4-microbumps, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-19_semieng_advanced-packaging-limits, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-03-27_3dincites_copper-grain-hybrid-bonding, 2025-01-01_semieng_making-hybrid-bonding-better, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2026-04-29_semiwiki_cea-leti-ectc2026-hybrid-bonding, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2024-02-09_semianalysis_hybrid-bonding-process-flow, 2026-05-19_semiconductor-digest_ev-group-ectc2026-hybrid-bonding, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-04-19_semiwiki_apple-m5-cucu-hybrid-bonding-shipped, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang]
 related:
   - wiki/technologies/soic.md
   - wiki/technologies/cowos.md
@@ -83,6 +83,8 @@ related:
 - **2026-01-13（確認）**：HBM4 **不採用混合接合**；JEDEC 將疊層高度上限從 720µm 修訂為 775µm，使 16 層微凸塊可行。主因：成本競爭力與測試障礙（探針污染表面，無法先測後黏）
 - **2026-04-01（JEDEC 進一步鬆綁 HBM4E）⭐**：JEDEC 考慮將 HBM4E 高度規格鬆綁至 **~900 µm**（HBM3E ~720µm → HBM4 ~775µm → HBM4E ~900µm），可能進一步延緩混合接合採用時程——TC 接合在鬆綁後仍能支援更多層數，讓 Hanmi Semiconductor 的 TC 接合機保持競爭力。然而，SK Hynix 副總 Lee Kang-wook 確認：**20 層以上 HBM 混合接合不可避免**。三星在 GTC 2026 展示混合接合，聲稱熱阻 **改善超過 20%** vs TC 接合。
   *Source: TrendForce 2026-04-01（引述 Chosun Ilbo、Newsis、The Elec）*
+- **2026-06-05（⭐新增）**：**三星 HBM4 採用混合接合但面臨良率挑戰**——Tech Times 報導引述黃仁勳於首爾證實三大 HBM4 供應商均已量產之餘，揭露三星 HBM4（4nm base die + 12-high 堆疊，3.3TB/s）採用 Hybrid Bonding 接合，但**良率仍是當前挑戰**；相對地，SK hynix 採用成熟的 MR-MUF 製程並無同等問題。此為混合接合在記憶體封裝領域實際量產應用中首次被點名存在良率瓶頸的具體案例，補充了 wiki 此前對「混合接合是未來主流」論述中尚待克服的製造成熟度落差。
+  *Source: Tech Times 2026-06-05（Allen Lee）*
 - **2026-04-29（SK Hynix 12H HBM 混合接合驗證完成）⭐**：SK Hynix Technical Leader Kim Jong-hoon 公開確認 12-high HBM 混合接合驗證完成，正提升量產良率。**首批混合接合量產設備採購**：SK Hynix 向 **Applied Materials + Besi** 訂購 inline 混合接合系統（~USD 1,500 萬，KRW 200 億），是 SK Hynix 首次採購用於量產規劃的混合接合設備。三星同步測試 Besi + SEMES 設備（SEMES 成熟度較低）。
   *Source: TrendForce 2026-04-29（引述 The Elec）*
 - **2026-04-29（CEA-Leti ECTC 2026 論文預告）⭐**：**D2W 混合接合 1µm 間距首次示範**（史上最細 D2W HB 測試載具）；**超低溫 100°C 退火直接混合接合成功**（業界最低退火溫度，傳統 ~400°C；先前「低溫」基準為 200°C）；奈米晶銅（nanocrystalline Cu）微結構 + 接合前表面處理是關鍵使能技術（STMicro 合作）；量子系統超導 3D 互連封裝首次發表（ECTC 2026，Orlando，2026-05-26/29）。
@@ -397,9 +399,4 @@ ECTC 2025 的核心技術主題之一：
 - ~~HBM4 是否採用混合接合？~~ → **已確認不採用（2026-01-13 更新）**
 - 混合接合的良率如何隨間距縮小（1µm 等級）演進？
 - 大面積（panel-level）混合接合何時可行？
-- 異材料（邏輯晶片 + 記憶體）混合接合的熱膨脹係數（CTE）匹配問題？
-- HBM4E 或 HBM5 採用混合接合的技術障礙（測試、成本）是否會在 2028–2029 前解決？
-- **ASML 若正式推出混合接合設備，是否會顛覆 Besi 的龍頭地位？**（ASML 精密對準技術優勢 vs. Besi 的後段製程深度）
-- 韓國本土設備商（Hanmi、Hanwha、LG）能否在 HBM6 時代取代 Besi/ASMPT 等歐洲廠商？
-- **⭐ 若 Besi 被 Lam Research 或 Applied Materials 收購（2026-03 傳聞），混合接合設備市場競爭格局將如何重塑？**（Lam 進入封裝領域 vs. AMAT 強化 Kinex 生態系）
-- **JEDEC HBM4E 高度鬆綁至 900µm 後，混合接合採用時間表是否將延後至 HBM5（2029+）？**（目前 SK Hynix 最樂
+- 異材料（邏輯晶片 + 記憶體）混合接合的熱膨脹係數（CTE）匹

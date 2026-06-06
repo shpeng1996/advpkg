@@ -3,8 +3,8 @@ title: "NVIDIA Corporation"
 category: entity
 tags: [fabless, GPU, AI-accelerator, HBM4, CoWoS, SoIC, Rubin, Feynman, NVL576, CPO, Spectrum-X, Constellation]
 created: 2026-05-03
-updated: 2026-06-05
-sources: [2026-05-24_techtimes_nvidia-computex2026-cowos, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-03-18_trendforce_nvidia-rubin-feynman-soic, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-06_trendforce_google-tpu-cautious-adoption-nvidia, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-06-01_trendforce_nvidia-vera-rubin-tsmc-20pct-revenue, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan]
+updated: 2026-06-07
+sources: [2026-05-24_techtimes_nvidia-computex2026-cowos, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-03-18_trendforce_nvidia-rubin-feynman-soic, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-06_trendforce_google-tpu-cautious-adoption-nvidia, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-06-01_trendforce_nvidia-vera-rubin-tsmc-20pct-revenue, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang]
 related:
   - wiki/entities/tsmc.md
   - wiki/entities/sk-hynix.md
@@ -44,6 +44,9 @@ related:
 ---
 
 ## 近期動態 / Recent Developments
+
+- **2026-06-05（⭐最新）**：**黃仁勳於首爾證實三大 HBM4 供應商（Samsung、SK hynix、Micron）均已驗證並進入量產**，2026 Q3 起隨 **Vera Rubin** 平台出貨。揭露 HBM4 規格世代躍進（JEDEC JESD270-4：介面 2048-bit / 32 channels，較 HBM3E 的 1024-bit / 16 channels 倍增；基準頻寬 ≥2TB/s）；16-high 堆疊門檻量化（晶粒減薄至 ~30µm、封裝高度上限 ~720µm 以符合 CoWoS 相容性）；供應比重估計 SK hynix 60–70%、Samsung 25–30%、Micron 為剩餘。**Vera Rubin NVL72 機櫃規格**：單櫃 20.7TB HBM4、整體頻寬 1.6PB/s，較 HBM3E 世代提升 2.7 倍。
+  *Source: Tech Times 2026-06-05（Allen Lee）*
 
 - **2026-06-03（最新）⭐新增**：**TSMC 採用 NVIDIA AI 晶片進行製造全流程優化（COMPUTEX 2026 宣布）**：
   - 首次確認 TSMC 將 **cuLitho**、**cuEST**、**CuML（H200 GPU）**、**Metropolis+Tao（視覺 AI 缺陷檢測）** 導入晶圓廠製造生命週期
@@ -108,18 +111,4 @@ related:
 ## 中國市場與地緣政治 / China & Geopolitics
 
 - NVIDIA 中國 AI 加速器市場份額：**~95%（歷史峰值）→ 實質 0%（2026 年）**
-- 2025-12 批准 H200 銷售給約 10 家中國企業（Alibaba/Tencent/ByteDance/JD.com）
-- **截至 2026-05 底：H200 實際交貨量 = 0**（北京指示企業優先採購 Huawei）
-- Huawei Ascend 950PR：2026-03 正式量產；2026 年 AI 收入預測 20 億美元（~75 萬套）
-- Morgan Stanley：中國 AI 晶片市場 2030 年達 70 億美元，國內廠商主導
-- Huang 表態：「放棄整個中國市場在戰略上不合理」
-
----
-
-## 相關技術 / Related Technologies
-
-- [[technologies/cowos]] — 最大 CoWoS 需求方，>50% 產能鎖定 2027
-- [[technologies/soic]] — Rubin Ultra + Feynman 採用 SoIC-X 混合接合
-- [[technologies/hbm4]] — HBM4E 主要用戶；SK Hynix ~70% 份額
-- [[entities/tsmc]] — 核心製造夥伴；CoWoS + SoIC + 先進製程
-- [[entities/sk-hynix]] — HBM 主要供應商
+- 2025-12 批准 H200 銷售給約 10 家中國企業（Alibaba/Tenc
