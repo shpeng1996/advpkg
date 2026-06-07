@@ -1228,3 +1228,20 @@
   1. **HBM4 供應鏈結構性轉變**——SK 集團會長與台積電董事長會面確認 SK hynix 已將 HBM4 base die 委外台積電（12nm），未來 HBM4E 評估台積電 3nm；象徵記憶體大廠與晶圓代工角色邊界進一步模糊
   2. **黃仁勳首度證實三大 HBM4 供應商「同步」量產**（Samsung/SK hynix/Micron 全數通過驗證，Q3 隨 Vera Rubin 出貨），並揭露 HBM4 介面架構世代躍進細節（2048-bit/32 channels）、16-high 堆疊量化門檻（30µm/720µm）、供應比重估計（SK hynix 60-70%、Samsung 25-30%）、接合技術路線分歧（MR-MUF vs Hybrid Bonding 良率挑戰）
   3. **Amkor 持續加碼美國本土先進封裝產能**——亞利桑那 Peoria 園區新增 67 英畝土地（總計約 171 英畝），明確定位為美國首座高量產先進封裝 OSAT 設施，呼應 CHIPS Act 後段製程在地化趨勢
+
+## [2026-06-08] collect | 每日自動蒐集 — 先進封裝最新動態（第四十五次）
+- 搜尋查詢數：5 組（TSMC CoWoS/SoIC/CoPoS 2026、HBM4/HBM4E 供應 2026、混合接合最新研究、Intel EMIB Foveros Samsung X-Cube、Co-Packaged Optics/UCIe JEDEC 標準）
+- 成功抓取：1 篇（存入 raw/articles/ 1 篇）
+  - 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit.md（Tech Times 2026-05-31；Samsung HBM4E 全球首發出貨 756% 獲利暴增；市值首破 2,000 兆韓元；HBM4E 量化規格 14-16Gbps/3.6TB·s/48GB）
+- 失敗/跳過：4 篇（已收錄重複主題 2：techtimes Vera Rubin 三供應商文章與 2026-06-07 已收錄之 317855 號報導重疊；astutegroup HBM 市占文章為 2025-09 舊資料；tweaktown 16-Hi HBM4 文章為 2025-12 舊資料且主題已涵蓋；付費牆 2：digitimes CPO/FOPLP 面板封裝、digitimes TSMC CoWoS/SoIC 產能擴張皆需訂閱無法取得正文；semiengineering UCIe 3.0 技術文章因輸出過大僅取得 meta 摘要，內容不足以建立完整來源頁，暫不收錄)
+- 學術代理：UNAVAILABLE ✗（ieeexplore、arxiv 仍受限）
+- 新增/更新 wiki 頁面：4 頁
+  - 新增：wiki/sources/2026-05-31_techtimes_samsung-hbm4e-ships-first.md
+  - 更新：wiki/entities/samsung.md（新增 Q1 2026 財報暴增 756%、市值突破 2,000 兆韓元、券商目標價上修明細；updated 2026-06-08）
+  - 更新：wiki/technologies/hbm4.md（新增 HBM4E 財報驗證商機規模段落、官方規格可信度但書【尚未經第三方驗證】；updated 2026-06-08）
+  - 更新：wiki/index.md（頁面數 187→188；來源數 152→153；新增 1 個 sources 連結；Updated 日期 → 2026-06-08）
+- 主要新知識：
+  1. **Samsung HBM4E 出貨里程碑獲財務數據實證**：5/29 全球首發出貨 HBM4E 樣品的消息，與三星 Q1 2026 半導體營益年增 756%（53.7 兆韓元）、市值首破 2,000 兆韓元（韓國企業史上首例）同步發生，為 wiki「AI 記憶體驅動三星獲利結構性轉變」論述補上具體財報數字佐證。
+  2. **HBM4E 規格可信度但書首次明確入庫**：本文指出三星宣稱的 14–16 Gbps 與能效改善數據為官方公佈、尚未經第三方獨立驗證，提供了評估後續 HBM4E 競爭比較時應有的審慎視角，已併入 hbm4.md「爭議與未解問題」脈絡。
+  3. **Wiki 飽和度持續上升，新知識邊際收穫遞減**：本次 5 組查詢中近半數候選文章與既有來源重疊或為舊資料，反映先進封裝每日蒐集已進入後期階段，後續或需更聚焦於細分主題（如特定公司財報週期、學術會議週期）以維持新知識增量。
+- **⚠️ Git Commit 失敗**：本次所有檔案異動已完成並寫入磁碟，但 `git commit -m "2026-06-08"` 因 `.git/index.lock` 檔案權限問題（"Operation not permitted"，疑似掛載檔案系統的跨平台檔案鎖定，非首次發生——`.git/` 內可見 2026-05-13、2026-06-06、2026-06-07 的同類殘留 `.lock.bak*` 檔案）反覆失敗，無法清除鎖定檔。所有工作內容已儲存，僅 commit 操作待後續環境問題排除後手動執行 `git add -A && git commit -m "2026-06-08"`。

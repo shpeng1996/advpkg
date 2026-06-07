@@ -3,8 +3,8 @@ title: "三星 / Samsung"
 category: entity
 tags: [IDM, foundry, memory, advanced-packaging, X-Cube, HBM, ISSCC2026, I-CubeS, LPDDR6]
 created: 2026-04-24
-updated: 2026-06-07
-sources: [2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2025-12-30_trendforce_samsung-hbm-surge, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2025-08-05_3dincites_iftle636, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang]
+updated: 2026-06-08
+sources: [2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2025-12-30_trendforce_samsung-hbm-surge, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2025-08-05_3dincites_iftle636, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit]
 related:
   - wiki/entities/tsmc.md
   - wiki/entities/intel.md
@@ -49,6 +49,9 @@ related:
 
 - **2026-05-31（最新）⭐**：**HBM4E 樣品業界首發出貨（2026-05-29）**：Samsung 官方公告出貨業界第一批 12-layer HBM4E 樣品至主要全球夥伴，距 HBM4 量產（2026-02）僅約 3 個月。規格：14 Gbps 穩定速率（峰值 16 Gbps）、3.6 TB/s 頻寬/顆（+20% vs HBM4）、48 GB 容量（+30%）、+16% 能效、−14%+ 熱阻。HBM4E 採用與 HBM4 相同 1c DRAM + 4nm Base Die，因此量產過渡預期快速。計畫擴展至 32 GB（8-layer）及 64 GB（16-layer）。SK Hynix HBM4E 時程提前（原 H2 2026）；Micron 維持 2027 量產目標。
   *Source: TrendForce 2026-05-29（Samsung 官方公告；Yonhap；STOCK Analysis）*
+
+- **2026-05-31 ⭐新增**：**Q1 2026 財報暴增 756%、市值首破 2,000 兆韓元**：受 HBM4E 全球首發出貨消息帶動，三星股價單日漲 5.84% 收 317,000 韓元，總市值（含特別股）突破 **2,000 兆韓元**，為韓國史上首例。財報面：半導體部門 2026 Q1 營益達 **53.7 兆韓元（約 361 億美元）**，年增約 **756%**，佔公司總獲利 94%（總獲利 57.2 兆韓元），超越 2025 全年獲利（43.6 兆韓元）及市場共識估計（55.28 兆韓元）。多家券商上修目標價：野村證券 590,000 韓元、韓國投資證券 570,000 韓元、新韓證券 550,000 韓元、NH 投資證券 490,000 韓元，皆引述「結構性記憶體短缺」與三星 HBM 地位回升為主因。三星指引 2026 年 HBM 銷售額將較 2025 年成長逾 3 倍；5/27 工會協議（約 74% 贊成；6.2% 加薪 + 10.5% 半導體部門獲利連動獎金）排除了量產中斷風險。**但書**：HBM4E 14–16 Gbps 與能效數據為三星官方公佈，尚未經第三方獨立驗證；HBM4 於 2025-12 系統級封裝測試中最高評等為 11.7 Gbps，可作為可信度基準參照。
+  *Source: Tech Times 2026-05-31（Allen Lee）*
 
 - **2026-05-31（最新）⭐**：**Samsung Chairman Jay Y. Lee 秘訪台灣（week of 2026-05-22）**，據報目的是向 MediaTek 提出記憶體+代工捆綁方案：以 Dimensity 系列記憶體優先供應權換取代工訂單（類似對 Qualcomm 的策略）。MediaTek CEO 於 2026-05-29 股東會上明確否定，重申 TSMC 為長期主要夥伴。Samsung 目前已確認代工 **Tesla AI6** 晶片，正積極爭取 AMD 及 MediaTek 2nm 訂單。
   *Source: TrendForce 2026-05-29（引述 TechNews；Liberty Times；Commercial Times）*

@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-06-07
-**頁面總數 Total Pages**：187
-**原始來源數 Sources**：152
+**更新時間 Updated**：2026-06-08
+**頁面總數 Total Pages**：188
+**原始來源數 Sources**：153
 
 ---
 
@@ -59,6 +59,7 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-05-31_techtimes_samsung-hbm4e-ships-first]] — Tech Times：Samsung HBM4E 全球首發出貨（12層/14-16Gbps/3.6TB·s/48GB）；Q1 2026 半導體營益年增 756%；市值首破 2,000 兆韓元；多家券商上修目標價（2026-05-31）⭐新增
 - [[sources/2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang]] — Tech Times：黃仁勳證實三大廠 HBM4 同步量產，Vera Rubin Q3 出貨；2048-bit/32 channel 規格躍進；16-high 堆疊 30µm/720µm 門檻；供應比重估計（2026-06-05）⭐新增
 - [[sources/2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie]] — TrendForce：SK 集團會長與台積電董事長兩年來首度會面；HBM4 base die 委外台積電 12nm；HBM4E 評估台積電 3nm；CoWoS 產能重申（2026-06-04）⭐新增
 - [[sources/2026-05-19_stocktitan_amkor-arizona-peoria-land-expansion]] — Amkor/Stock Titan：亞利桑那 Peoria 園區新增 67 英畝土地；目標美國首座高量產先進封裝 OSAT 設施（2026-05-19）⭐新增
