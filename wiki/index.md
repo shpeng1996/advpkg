@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-06-08
-**頁面總數 Total Pages**：188
-**原始來源數 Sources**：153
+**更新時間 Updated**：2026-06-09
+**頁面總數 Total Pages**：193
+**原始來源數 Sources**：158
 
 ---
 
@@ -59,6 +59,11 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-06-09_financialcontent_tsmc-130k-cowos-wafers]] — FinancialContent/TokenRing AI：分析估計台積電 2026 年底 CoWoS 月產能達 13 萬片晶圓（4 倍成長）；CoWoS-L／SoIC 策略；客戶配額估計 NVIDIA~60%／Broadcom~15%／AMD~11%（2026-06-09）⭐新增
+- [[sources/2026-06-09_astutegroup_hbm-market-share-2026-battle]] — Astute Group：2025 Q2 整體 HBM 市場份額 SK Hynix 62%／Micron 21%／Samsung 17%；2026 HBM4 量產轉折預測；釐清與 Vera Rubin 平台配額估計之口徑差異（2026-06-09）⭐新增
+- [[sources/2026-06-09_digitimes_tsmc-cowos-soic-capacity-symposium]] — DIGITIMES：台積電 2026 技術論壇官方證實全球興建 18 座新廠／先進封裝設施因應 AI 需求（partial/paywalled）（2026-06-09）⭐新增
+- [[sources/2026-06-09_digitimes_auo-innolux-cpo-foplp-panel]] — DIGITIMES 分析：台灣面板雙雄 AUO、Innolux 跨業進入 CPO／FOPLP 半導體封裝領域，新興角色首次收錄（partial/paywalled）（2026-06-09）⭐新增
+- [[sources/2026-06-09_digitimes_ase-panel-level-packaging-310mm]] — DIGITIMES：ASE 鎖定 2026 年全自動 310×310mm 面板級封裝產線；ASE 創紀錄 85 億美元資本支出、Powertech FOPLP 433 億新台幣投資（partial/paywalled）（2026-06-09）⭐新增
 - [[sources/2026-05-31_techtimes_samsung-hbm4e-ships-first]] — Tech Times：Samsung HBM4E 全球首發出貨（12層/14-16Gbps/3.6TB·s/48GB）；Q1 2026 半導體營益年增 756%；市值首破 2,000 兆韓元；多家券商上修目標價（2026-05-31）⭐新增
 - [[sources/2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang]] — Tech Times：黃仁勳證實三大廠 HBM4 同步量產，Vera Rubin Q3 出貨；2048-bit/32 channel 規格躍進；16-high 堆疊 30µm/720µm 門檻；供應比重估計（2026-06-05）⭐新增
 - [[sources/2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie]] — TrendForce：SK 集團會長與台積電董事長兩年來首度會面；HBM4 base die 委外台積電 12nm；HBM4E 評估台積電 3nm；CoWoS 產能重申（2026-06-04）⭐新增

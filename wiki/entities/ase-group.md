@@ -3,8 +3,8 @@ title: "ASE Group / 日月光投控"
 category: entity
 tags: [OSAT, advanced-packaging, CoWoP, FOPLP, chiplet, CPO, LEAP]
 created: 2026-04-25
-updated: 2026-05-30
-sources: [2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2026-05-08_aseglobal_ase-wus-kaohsiung-focoes-hub, 2026-05-26_semiconductor-digest_ase-310mm-plp-ectc2026]
+updated: 2026-06-09
+sources: [2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2026-05-08_aseglobal_ase-wus-kaohsiung-focoes-hub, 2026-05-26_semiconductor-digest_ase-310mm-plp-ectc2026, 2026-06-09_digitimes_ase-panel-level-packaging-310mm]
 related:
   - wiki/technologies/cowos.md
   - wiki/technologies/copos.md
@@ -31,6 +31,9 @@ related:
 ---
 
 ## 近期動態 / Recent Developments
+
+- **2026-06-09**：DIGITIMES（2026-02-25）報導指出，因 TSMC CoWoS 產能持續吃緊，ASE 與 SPIL、Powertech 等台灣 OSAT 廠加速擴產搶攻 AI 訂單；ASE 鎖定 **2026 年建置全自動化 310×310mm 面板級封裝產線**，與下方 ECTC 2026 發表的「業界首條自動化 310mm PLP 產線」形成相互佐證的時間線。同期相關報導並指出 ASE 已將 **2026 資本支出上修至創紀錄的 85 億美元**（數字取自標題，全文待確認）。
+  *Source: DIGITIMES 2026-02-25（Flora Wang）*
 
 - **2026-05-26（⭐最新）**：**ASE 發表業界首條自動化 310mm × 310mm 面板級封裝產線（ECTC 2026）**——於 ECTC 2026（奧蘭多，2026-05-26~29）宣布業界第一條自動化 PLP 產線。規格：面板 310×310mm，FOCoS（L/S = **2/2µm**）+ FOCoS-Bridge（L/S = 8/8µm）雙平台，設計規則從晶圓級平移至面板級。有效面板面積 **96,100 mm²**，顯著提升材料利用率。**預計 2027 H1 量產**。目標市場：AI 資料中心、HPC、網路、高端遊戲、邊緣 AI。CEO Dr. Tien Wu 在 ECTC 主題演講「Advanced Packaging & the Future of System Optimization」強調系統優化是先進封裝的核心使命。
   *Source: Semiconductor Digest 2026-05-26*

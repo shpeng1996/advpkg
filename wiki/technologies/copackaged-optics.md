@@ -3,8 +3,8 @@ title: "共封裝光學元件 / Co-Packaged Optics (CPO) — TSMC-COUPE™ & Eco
 category: technology
 tags: [CPO, co-packaged-optics, COUPE, TSMC, GlobalFoundries, Samsung, photonics, AI, HPC, networking, OCI-MSA, DWDM, Broadcom, NVIDIA, glass-substrate, ULCVD, TGV, Spectrum-X, NVL72]
 created: 2026-04-25
-updated: 2026-06-05
-sources: [2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-05-07_trendforce_globalfoundries-silicon-photonics-scale-cpo, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan]
+updated: 2026-06-09
+sources: [2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-05-07_trendforce_globalfoundries-silicon-photonics-scale-cpo, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel]
 related:
   - wiki/entities/tsmc.md
   - wiki/technologies/cowos.md
@@ -15,7 +15,7 @@ related:
 
 **技術類別**：封裝整合光電子（Electro-Photonic Integration）
 **技術成熟度**：量產 Production（2026 年啟動）
-**主要廠商**：[[entities/tsmc]]（TSMC-COUPE™）、GlobalFoundries（SCALE 平台）、Samsung Foundry（2029 Turnkey 路線圖）
+**主要廠商**：[[entities/tsmc]]（TSMC-COUPE™）、GlobalFoundries（SCALE 平台）、Samsung Foundry（2029 Turnkey 路線圖）；新進入者：台灣面板廠 AUO（友達）、Innolux（群創）跨業布局 CPO + FOPLP（DIGITIMES 2026-04-27，詳見 [[technologies/foplp]]）
 
 ---
 

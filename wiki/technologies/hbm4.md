@@ -3,8 +3,8 @@ title: "HBM4 — High Bandwidth Memory 4"
 category: technology
 tags: [memory, HBM, JEDEC, standards, AI, HPC, HBM4E, cleanroom, capacity, ISSCC2026, ZAM, HB3DM]
 created: 2026-04-24
-updated: 2026-06-08
-sources: [2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-03-18_trendforce_intel-emib-malaysia, 2026-01-23_trendforce_hbm4e-samsung-skhynix-mid2026, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-01-13_semiengineering_hbm4-microbumps, 2025-12-18_trendforce_micron-capex-hbm4, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h, 2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-03-03_trendforce_sk-hynix-hbm4-tight-gaps, 2025-08-12_semianalysis_hbm-roadmap, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit]
+updated: 2026-06-09
+sources: [2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-03-18_trendforce_intel-emib-malaysia, 2026-01-23_trendforce_hbm4e-samsung-skhynix-mid2026, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-01-13_semiengineering_hbm4-microbumps, 2025-12-18_trendforce_micron-capex-hbm4, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h, 2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-03-03_trendforce_sk-hynix-hbm4-tight-gaps, 2025-08-12_semianalysis_hbm-roadmap, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit, 2026-06-09_astutegroup_hbm-market-share-2026-battle]
 related:
   - wiki/entities/sk-hynix.md
   - wiki/entities/samsung.md
@@ -161,6 +161,9 @@ SK Hynix 在 CES 2026 展示 16-high HBM4，採用 **MR-MUF 製程將單片 DRAM
 | Micron | ~10% | HBM4 >11 Gbps；HBM4E 同步研發；**2026-Q1 確認 12-high HBM4（36GB）批量出貨 Vera Rubin** |
 
 *份額確認：TrendForce 2026-01-28（Yonhap News），SK Hynix ~70% 高於原先 >50% 預期；12 層 HBM4 售價確認 >$600*
+
+> **⚠️ 注意區分「整體 HBM 市場份額」與「特定平台配額估計」**（2026-06-09 新增）：Astute Group 引述 Chosun Biz／Counterpoint Research 數據顯示，**2025 年 Q2 整體 HBM 市場份額**為 SK Hynix 62%、Micron 21%、Samsung 17%（三星暫居第三，Counterpoint 預期其 2026 年將藉 HBM4 量產回升至 30%+）。這組「整體市場份額」數字與上表「Vera Rubin 平台 HBM4 配額估計」（SK Hynix ~70%）容易混淆——後者係 TechTimes 2026-06-02 報導引用供應鏈分析師對單一平台的預估（SK Hynix 60–70%、Samsung 25–30%、Micron 餘量），並非官方公布之整體市佔。兩者口徑不同，分析時應分別標註來源與統計範圍。
+> *Source: Astute Group 2025-09-24（引 Chosun Biz/Counterpoint/Reuters/Tom's Hardware）；TechTimes 2026-06-02*
 
 ### ⭐ 2026-03-17 GTC 2026 更新：Micron 確認 HVM + 16-high 樣品出貨
 

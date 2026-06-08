@@ -3,8 +3,8 @@ title: "FOPLP — 扇出面板級封裝 / Fan-Out Panel-Level Packaging"
 category: technology
 tags: [fan-out, panel-level, TSMC, Samsung, ASE, Powertech, Innolux, CoPoS, InFO, cost-reduction]
 created: 2026-05-03
-updated: 2026-06-04
-sources: [2025-09-12_trendforce_foplp-competitive-2025, 2026-04-13_trendforce_copos-pilot, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-21_3dincites_acm-wlp-plp-process-trends, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-06-03_digitimes_naura-plp-descum-tool]
+updated: 2026-06-09
+sources: [2025-09-12_trendforce_foplp-competitive-2025, 2026-04-13_trendforce_copos-pilot, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-21_3dincites_acm-wlp-plp-process-trends, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-09_digitimes_ase-panel-level-packaging-310mm]
 related:
   - wiki/technologies/copos.md
   - wiki/technologies/info-wmcm.md
@@ -31,6 +31,12 @@ FOPLP 是將扇出封裝從晶圓級（FOWLP，~300mm 圓形）擴展到**矩形
 - **CoPoS（Chip-on-Panel-on-Substrate）** = TSMC 版本的 FOPLP，加入 CoWoS 式的基板（substrate）整合
 
 SemiAnalysis 2022 年的技術框架指出，fanout RDL、embedded silicon bridge、coreless ABF substrate 與 full silicon interposer 的邊界會逐漸模糊。這對 FOPLP 的意義是：面板化不只是「更大尺寸降成本」，而是和 embedded bridge / ABF substrate / CoWoS-L 類路線共同競爭，在 pad pitch、line/space、layer count、warpage、yield 與 package size 之間做系統取捨。
+
+**新進入者：面板顯示器廠商跨業布局**（2026-06-09 新增，DIGITIMES 2026-04-27）：台灣兩大面板製造商 **AUO（友達）** 與 **Innolux（群創）** 正積極跨入半導體封裝領域，瞄準 CPO（共封裝光學）與 FOPLP 雙軌技術，藉由既有面板量產基礎尋求新成長動能——這是顯示器產業向半導體後段製程跨界整合的新趨勢，也呼應「先進封裝技術從晶圓級延伸到面板級」的產業敘事。DIGITIMES 同期尚有「Innolux 以新 RDL／TGV 技術躋身先進封裝領先群」（2026-04-24）等系列分析，顯示此一跨業布局已形成一波報導熱潮，值得後續追蹤。
+*Source: DIGITIMES 2026-04-27（Rebecca Kuo）*
+
+**ASE 2026 年全自動 310mm 面板級封裝產線目標**（2026-06-09 新增，DIGITIMES 2026-02-25）：因 TSMC CoWoS 產能持續吃緊，ASE、SPIL、Powertech 等台灣 OSAT 廠加速先進封裝擴產；ASE 鎖定 **310×310mm** 全自動化產線（呼應業界對 310mm 規格逐漸形成共識的趨勢，與 entities/ase-group.md 已記錄之 ECTC 2026「業界首條自動化 310mm PLP 產線」資訊相互印證）。同期相關報導指出 ASE 已將 2026 資本支出上修至創紀錄的 **85 億美元**，Powertech 計畫投資 **新台幣 433 億元** 加速 FOPLP，目標 2027H1 量產（數字取自報導標題，全文待確認）。
+*Source: DIGITIMES 2026-02-25（Flora Wang）*
 
 ---
 

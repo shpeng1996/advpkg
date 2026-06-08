@@ -1245,3 +1245,20 @@
   2. **HBM4E 規格可信度但書首次明確入庫**：本文指出三星宣稱的 14–16 Gbps 與能效改善數據為官方公佈、尚未經第三方獨立驗證，提供了評估後續 HBM4E 競爭比較時應有的審慎視角，已併入 hbm4.md「爭議與未解問題」脈絡。
   3. **Wiki 飽和度持續上升，新知識邊際收穫遞減**：本次 5 組查詢中近半數候選文章與既有來源重疊或為舊資料，反映先進封裝每日蒐集已進入後期階段，後續或需更聚焦於細分主題（如特定公司財報週期、學術會議週期）以維持新知識增量。
 - **⚠️ Git Commit 失敗**：本次所有檔案異動已完成並寫入磁碟，但 `git commit -m "2026-06-08"` 因 `.git/index.lock` 檔案權限問題（"Operation not permitted"，疑似掛載檔案系統的跨平台檔案鎖定，非首次發生——`.git/` 內可見 2026-05-13、2026-06-06、2026-06-07 的同類殘留 `.lock.bak*` 檔案）反覆失敗，無法清除鎖定檔。所有工作內容已儲存，僅 commit 操作待後續環境問題排除後手動執行 `git add -A && git commit -m "2026-06-08"`。
+
+## [2026-06-09] collect | 每日自動蒐集 — 先進封裝最新動態
+- 搜尋查詢數：7 組（TSMC CoWoS/SoIC/CoPoS 產能、HBM4/HBM4E 供應 SK Hynix/Samsung/Micron、混合接合 Cu-Cu 研究、面板級封裝 FOPLP/CoPoS、Intel EMIB/Foveros/Samsung X-Cube、UCIe/JEDEC 標準、市場/OSAT/chiplet 動態）
+- 成功抓取：5 篇（articles/ 5, papers/ 0, reports/ 0）
+- 失敗/跳過：約 10+ 篇（已收錄重複 ~6、付費牆全文不可得但摘要可用 3、低相關/泛論性介紹 ~2、財經類股價快訊與招聘類 0）
+- 去重註記：TechTimes 317539（2026-06-02 Vera Rubin HBM4 三大供應商報導）經比對與已收錄 317855（2026-06-05，line 166）核心事實高度重疊，判定為重複報導角度，捨棄不收錄
+- 觸發 ingest：5 篇
+- 新增 wiki 來源頁：5 頁（financialcontent_tsmc-130k-cowos-wafers, astutegroup_hbm-market-share-2026-battle, digitimes_tsmc-cowos-soic-capacity-symposium, digitimes_auo-innolux-cpo-foplp-panel, digitimes_ase-panel-level-packaging-310mm）
+- 更新 wiki 頁面：6 頁（entities/tsmc.md, entities/ase-group.md, technologies/cowos.md, technologies/hbm4.md, technologies/foplp.md, technologies/copackaged-optics.md）
+- 觸及 wiki 頁面：（共 11 頁，含 5 新增來源頁）
+- 主要新知識：
+  1. **CoWoS 產能錨點數字更新**：分析師估計台積電 2026 年底 CoWoS 月產能將達 13 萬片晶圓（4 倍於 2024 年底），並首度記錄 2026 客戶配額估計（NVIDIA ~60%、Broadcom ~15%、AMD ~11%）；同日 DIGITIMES 確認台積電官方在 2026 技術論壇宣布全球興建 18 座新廠／先進封裝設施，形成分析估計與官方揭露的雙重佐證。
+  2. **HBM 市場份額口徑釐清**：新收錄 Astute Group 揭露之 2025 Q2 整體 HBM 市場份額（SK Hynix 62%／Micron 21%／Samsung 17%），並在 hbm4.md 中明確註記此「整體市場份額」與既有「Vera Rubin 平台 HBM4 配額估計」（SK Hynix ~70%）的口徑差異，避免後續分析誤植數據來源與統計範圍。
+  3. **新興角色首次入庫——面板顯示器廠商跨業布局半導體封裝**：DIGITIMES 分析報導首度將台灣面板雙雄 AUO（友達）與 Innolux（群創）定位為 CPO／FOPLP 領域新進入者，補上 wiki 此前未涵蓋的「顯示器產業跨界半導體後段」趨勢，並在 foplp.md 與 copackaged-optics.md 中新增相關段落（暫未新建獨立實體頁，建議後續 collect 持續追蹤此系列報導以累積足夠資訊再行新建 entities/auo.md、entities/innolux.md）。
+  4. **OSAT 面板級封裝時間線交叉印證**：DIGITIMES 2026-02-25 報導的「ASE 2026 年全自動 310mm 產線目標」與既有 wiki 記錄之「ASE ECTC 2026 業界首條自動化 310mm PLP 產線」（2026-05-26）形成前後呼應的時間線佐證，並新增 ASE 創紀錄 85 億美元資本支出與 Powertech FOPLP 433 億新台幣投資等數據點（標題來源，全文待確認）。
+- **DIGITIMES 全文取用限制**：本次選入的 3 篇 DIGITIMES 文章均因訂閱牆僅能取得標題、meta 摘要與相關報導列表（fetch_status: partial），完整內文數據（如論壇公布的具體產能數字、AUO/Innolux 投資規模、ASE 310mm 產線技術規格）尚待後續管道補齊。
+- **⚠️ Git Commit 失敗**：本次所有檔案異動已完成並寫入磁碟，但 `git commit -m "2026-06-09"` 再次因 `.git/index.lock` 檔案權限問題（"Unable to create '.git/index.lock': File exists" → 嘗試 `rm -f .git/index.lock` 亦回報 "Operation not permitted"）失敗，與 2026-05-13、2026-06-06、2026-06-07、2026-06-08 為同一持續性環境問題（疑似掛載檔案系統的跨平台檔案鎖定機制所致），非本次新增。所有工作內容已正確儲存於磁碟，僅 commit 操作待後續環境問題排除後手動執行 `git add -A && git commit -m "2026-06-09"`（並可能需要以宿主系統權限清除殘留的 `.git/index.lock`）。
