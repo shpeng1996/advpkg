@@ -42,6 +42,11 @@ EMIB 是 Intel 的局部矽橋接技術：將一小片高密度矽橋（bridge d
 | 最大支援 HBM stacks（2026） | ≥ 12（EMIB-T） |
 | 最大支援 HBM stacks（2028） | 24+（EMIB-T 路線圖） |
 | EMIB-T 橋接器數量（2028） | 38+（per package） |
+| **EMIB-T FLI Bump Pitch（ECTC 2026 確認）** | **25 µm** |
+| **EMIB-T 最大封裝尺寸（ECTC 2026）** | **120 × 120 mm** |
+| **EMIB-T 最大光罩倍率（ECTC 2026）** | **>9×** |
+| **EMIB-T HBM4e 介面速率（ECTC 2026）** | **>12 Gb/s** |
+| **EMIB-T UCIe 速率（ECTC 2026）** | **64 Gb/s** |
 | 技術驗證良率 | ~**90%**（2026-05，Wccftech 引述；TSMC CoWoS 目標 98%） |
 | EMIB 橋接 pitch | 微米級（具體未公開，優於有機基板 RDL） |
 | EMIB-M（含 MiM 電容） | 已量產（Sapphire Rapids、Granite Rapids） |
@@ -71,6 +76,9 @@ EMIB 是 Intel 的局部矽橋接技術：將一小片高密度矽橋（bridge d
 - **2026-03**：Clearwater Forest 展示 EMIB 3.5D 組合架構（EMIB + Foveros Direct 3D）
 - **2026-05**：EMIB 技術驗證良率達 **~90%**；Google（TPU v8e 2H27）、Meta（自研 CPU 2H28）確認採用；Intel CFO 表示接近完成「數十億美元」封裝大單
 - **2026-05**：EMIB 全球產能加速：俄勒岡（主力）+ 越南 SHTP（18A 產品）+ 台灣設備訂單 2H26 交貨（E&R/C Sun/AblePrint）
+- **2026-06-10（⭐最新）**：**ECTC 2026 完整 EMIB-T 規格首次公開**（SemiEngineering 報導）：FLI Bump Pitch **25µm**；封裝尺寸 **120×120 mm**；逾 **9× 光罩面積**；HBM4e 介面速率 **>12 Gb/s**；UCIe 速率 **64 Gb/s**。Intel 與 SPIL 合作展示 **3D SRAM Chiplet in Fan-Out embedded bridge**（首次異質整合展示）。Google 下單逾 **300 萬顆 TPU（EMIB 封裝，2028）**，估佔 Google 當年 TPU 總採購 ~50%。
+  *Source: SemiEngineering 2026-06-05（引述 ECTC 2026）*
+
 - **2026-05-26**：**Intel Rio Rancho 矽光子代工開放 + EMIB 現有客戶首次具體揭露**：AWS、Cisco 為確認現有客戶；Apple、Google、Microsoft、NVIDIA、Tesla 洽談中。EMIB 生產主基地：Penang + Rio Rancho。⭐新增
 - **2026-05-29**：**MediaTek CEO 股東會確認：Google v8e 推論 TPU 封裝指定 Intel EMIB，由 MediaTek 執行**（Commercial Times 報導）；訓練 TPU 封裝保留 TSMC CoWoS。此為 wiki 記錄的 EMIB 客戶落地最具體確認——從「評估」升格為「正式分配」。⭐新增
   *Source: TrendForce 2026-05-29（引述 Commercial Times）*

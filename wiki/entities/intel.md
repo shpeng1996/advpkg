@@ -36,6 +36,16 @@ related:
 
 ## 近期動態 / Recent Developments
 
+- **2026-06-10（⭐最新）**：**ECTC 2026 重磅揭露——EMIB-T 全規格 + CPO 玻璃耦合器 + TGV 可靠度 + D2W 混合接合**（SemiEngineering 深度報導）：
+  - **EMIB-T 量化規格**：FLI Bump Pitch **25µm**；單封裝尺寸 **120×120 mm**；支援逾 **9× 光罩面積**；HBM4e 介面速率 **>12 Gb/s**；UCIe 速率 **64 Gb/s**；SPIL 合作展示 **3D SRAM Chiplet in Fan-Out embedded bridge**；關鍵客戶 Google 傳出下訂 **300 萬顆以上 TPU（2028 出貨）**，估計佔 Google 總 TPU 採購約 50%。
+  - **CPO 玻璃耦合器（V-groove glass coupler）**：Intel 展示用於 CPO 的嵌入式玻璃光學元件；包含 V 形槽玻璃耦合器 + 玻璃扇出耦合器 + 擴展光束邊緣連接器；可實現**可拆卸式邊緣光纖連接器**（vs. 傳統固定式光纖）；大幅降低光信號插入損耗，並支援模組化可維護性。
+  - **TGV（Through-Glass Vias）可靠度**：ECTC 2026 完整報告確認，Intel 完全銅填充 TGV 在嚴酷熱循環（harsh thermal cycling）後無失效；**玻璃基板翹曲極低**，優於有機基板，為多晶片對準提供關鍵基礎。
+  - **D2W 混合接合研究**：Intel + EV Group 展示 100% 良率晶片對晶圓覆蓋控制（高速 D2W）；超低溫 D2W HB 研究；晶粒畸變（die distortion）為 D2W 精度主要挑戰之一。
+  *Source: SemiEngineering 2026-06-05（引述 ECTC 2026 發表）*
+
+- **2026-06-09（最新）⭐**：**Google 3M+ TPU（EMIB）2028 出貨確認；NVIDIA 18A MPW 測試**：TrendForce 報導 Google 訂單細節（與 ECTC 2026 透露消息吻合）：Google 擬採購逾 300 萬顆 EMIB 封裝 TPU，最快 2028 年出貨，約佔 Google 當年 TPU 總採購量的 50%。同時，NVIDIA 正於 **Intel 18A 平台進行 MPW 測試流片**，評估 4 晶粒整合 Feynman GPU 方案。**Tesla 確認為 Intel 14A 首個外部客戶**（另見上方 14A 項目）。
+  *Source: TrendForce 2026-06-09（引述 Business Post、Chosun Biz、Korea JoongAng Daily、IT 之家）*
+
 - **2026-06-01（最新）⭐**：**Intel + 3DGS 印度奧里薩邦 $33 億玻璃基板廠確認**（TrendForce 2026-06-01，引述 Reuters）：
   - **投資規模**：Intel + 3DGS ~**US$3.3 億**，奧里薩邦布巴內什瓦爾-庫爾達地區；建設期 **5–6 年**。
   - **產能目標**：~**70,000 片玻璃基板/年**；~5000 萬個組裝單元；~13,000 個先進 3D 異質整合模組。

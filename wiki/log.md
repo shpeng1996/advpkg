@@ -1262,3 +1262,34 @@
   4. **OSAT 面板級封裝時間線交叉印證**：DIGITIMES 2026-02-25 報導的「ASE 2026 年全自動 310mm 產線目標」與既有 wiki 記錄之「ASE ECTC 2026 業界首條自動化 310mm PLP 產線」（2026-05-26）形成前後呼應的時間線佐證，並新增 ASE 創紀錄 85 億美元資本支出與 Powertech FOPLP 433 億新台幣投資等數據點（標題來源，全文待確認）。
 - **DIGITIMES 全文取用限制**：本次選入的 3 篇 DIGITIMES 文章均因訂閱牆僅能取得標題、meta 摘要與相關報導列表（fetch_status: partial），完整內文數據（如論壇公布的具體產能數字、AUO/Innolux 投資規模、ASE 310mm 產線技術規格）尚待後續管道補齊。
 - **⚠️ Git Commit 失敗**：本次所有檔案異動已完成並寫入磁碟，但 `git commit -m "2026-06-09"` 再次因 `.git/index.lock` 檔案權限問題（"Unable to create '.git/index.lock': File exists" → 嘗試 `rm -f .git/index.lock` 亦回報 "Operation not permitted"）失敗，與 2026-05-13、2026-06-06、2026-06-07、2026-06-08 為同一持續性環境問題（疑似掛載檔案系統的跨平台檔案鎖定機制所致），非本次新增。所有工作內容已正確儲存於磁碟，僅 commit 操作待後續環境問題排除後手動執行 `git add -A && git commit -m "2026-06-09"`（並可能需要以宿主系統權限清除殘留的 `.git/index.lock`）。
+
+## [2026-06-10] collect | 每日自動蒐集 — 先進封裝最新動態（第四十七次；含 2026-06-09 delayed session 續接）
+- 搜尋查詢數：7 組（TSMC CoWoS/SoIC 2026、HBM4/HBM4E SK Hynix Samsung 最新、Intel EMIB ECTC 2026 深度、NVIDIA 18A Intel Foundry 2026、hybrid bonding D2W advanced、panel level packaging FOPLP CoPoS 2026、advanced packaging market news June 2026）
+- 成功抓取：5 篇（articles/ 5, papers/ 0, reports/ 0）
+- 失敗/跳過：約 8 篇（已收錄重複 ~5、付費牆 ~2、低相關 ~1）
+- 觸發 ingest：5 篇
+- 新增 wiki 來源頁（sources/）：5 頁
+  1. `2026-06-08_trendforce_skhynix-nvidia-vera-cpu-partnership.md` — SK Hynix 多年期 NVIDIA 夥伴關係；Vera CPU LPDDR5X 1.2 TB/s <30W
+  2. `2026-06-09_trendforce_samsung-nvidia-hbm5-groq.md` — Samsung HBM4 >11.7 Gbps；HBM4E 4nm/14 Gbps/峰值 16 Gbps；Groq LP40 討論
+  3. `2026-06-09_trendforce_skhynix-hanmi-tcbonder-hbm4.md` — SK Hynix TC Bonder 44.2 億韓元；M15X 2H26 啟動；2030 1M wsm
+  4. `2026-06-09_trendforce_intel-foundry-google-tpu-nvidia-18a.md` — Google 3M+ EMIB TPU 2028；NVIDIA 18A MPW；Tesla 14A 首外部客戶
+  5. `2026-06-05_semieng_intel-emib-cpo-glass-ectc2026.md` — Intel ECTC 2026：EMIB-T 25µm/120mm/>9×；CPO 玻璃耦合器；TGV 嚴酷熱循環；D2W HB
+- 更新 wiki 頁面：9 頁
+  - `entities/sk-hynix.md`：新增 2026-06-09（TC Bonder 訂單 + M15X 時程）、2026-06-08（Vera CPU 多平台夥伴關係）
+  - `entities/samsung.md`：新增 2026-06-09（HBM4 >11.7 Gbps；HBM4E 4nm base die；Groq LP40 討論；SOCAMM2）
+  - `entities/nvidia.md`：新增 2026-06-09（Intel 18A MPW；Feynman 4晶粒評估）、2026-06-08（SK Hynix Vera CPU LPDDR5X <30W 多平台夥伴）
+  - `entities/intel.md`：新增 2026-06-10（ECTC 2026 EMIB-T 完整規格；CPO 玻璃耦合器；TGV 可靠度）、2026-06-09（Google 3M+ TPU 確認；NVIDIA 18A MPW）
+  - `technologies/hbm4.md`：新增 HBM4 base die 路線分歧完整對照表；Samsung >11.7 Gbps 確認；HBM4E 速率來源更新
+  - `technologies/emib.md`：更新 Key Specs 表（FLI 25µm / 120mm / >9× / HBM4e 12 Gb/s / UCIe 64 Gb/s）；新增 2026-06-10 ECTC 2026 發展時程條目
+  - `technologies/copackaged-optics.md`：新增 2026-06-10 Intel V-groove 玻璃耦合器 CPO 方案條目
+  - `technologies/glass-substrate.md`：新增 2026-06-10 Intel TGV 嚴酷熱循環零失效可靠度結果
+  - `wiki/index.md`：頁面計數 193→198；來源計數 158→163；新增 5 來源條目；更新 4 個實體/技術摘要描述
+- 觸及 wiki 頁面：（共 14 頁，含 5 新增來源頁 + 9 更新頁）
+- 主要新知識：
+  1. **EMIB-T 規格首次量化確認**（ECTC 2026）：FLI Bump Pitch 25µm、封裝 120×120mm、>9× 光罩、HBM4e >12 Gb/s、UCIe 64 Gb/s。Intel + SPIL 的 3D SRAM Chiplet in Fan-Out embedded bridge 是異質整合新方向。
+  2. **Intel CPO 路線差異化**：V-groove 玻璃耦合器 + 可拆卸邊緣光纖連接器，與 TSMC COUPE™（CoWoS 上整合矽光子 IC）路線明顯不同，強調玻璃材料本身的光學特性。
+  3. **SK Hynix HBM4 產能具體時程確定**：TC Bonder 44.2 億韓元訂單（~15 台，漢美半導體）確認 M15X Cheongju 廠 2H26 啟動，2030 年 DRAM 月產能目標 1M 片（當前 550K）。
+  4. **Samsung–NVIDIA–Groq LP40 三角關係新浮現**：Samsung 代工 Groq LP30（LP30 = 現行 Groq 3），NVIDIA 收購 Groq 後傳出討論 LP40 代工；與 TSMC 爭奪此訂單，最終選廠未定，值得持續追蹤。
+  5. **NVIDIA Vera CPU LPDDR5X 功耗突破**：SK Hynix 確認 1.2 TB/s / <30W（對比 DDR5 >100W），這一指標對資料中心機架功耗架構設計有直接影響，是 CPU/NIC 方向的記憶體技術里程碑。
+  6. **Google EMIB 訂單規模確認**：3M+ TPU（2028），佔 Google 當年 TPU 採購 ~50%，是 Intel Foundry 轉型以來最具意義的外部晶片封裝訂單規模揭露。
+- **⚠️ Git Commit**：同上，`.git/index.lock` 問題持續，所有檔案已正確儲存於磁碟。

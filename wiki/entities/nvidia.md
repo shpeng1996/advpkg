@@ -45,6 +45,12 @@ related:
 
 ## 近期動態 / Recent Developments
 
+- **2026-06-09（⭐最新）**：**NVIDIA 評估 Intel 18A 製程用於多晶片 GPU（Feynman 架構）**。TrendForce 報導，NVIDIA 正在 Intel 18A 平台上進行 **MPW（Multi-Project Wafer）測試流片**，評估是否採用 18A 生產 Feynman GPU 的 4 顆晶粒整合方案。此為 NVIDIA 分散晶圓代工風險的具體行動。此外，黃仁勳訪韓後，NVIDIA 與 Samsung 就 **Groq LP40（次世代 LPU，暫稱）**代工選廠進行討論；但 TSMC 亦在爭取此訂單，最終選廠未定。
+  *Source: TrendForce 2026-06-09（引述 Chosun Biz、Korea JoongAng Daily、The Elec、IT 之家）*
+
+- **2026-06-08（最新）⭐**：**SK Hynix 確認為 NVIDIA 所有主力平台的記憶體夥伴（多年期協議）**。供應範疇涵蓋：Vera Rubin（HBM4）、**Vera CPU（LPDDR5X：1.2 TB/s 頻寬、功耗 <30W，遠低於 DDR5 >100W）**、RTX Spark、Jetson Thor。協議為**非獨家多源策略**（同時維持 Samsung + Micron 供應）。Jensen Huang 公開稱 SK Hynix 為「最大且最長期的記憶體夥伴」。**Vera CPU LPDDR5X 規格意涵**：在 CPU/NIC 等邊緣算力場景大幅降低記憶體功耗，重要性不亞於 HBM4 在 GPU 中的角色。
+  *Source: TrendForce 2026-06-08*
+
 - **2026-06-05（⭐最新）**：**黃仁勳於首爾證實三大 HBM4 供應商（Samsung、SK hynix、Micron）均已驗證並進入量產**，2026 Q3 起隨 **Vera Rubin** 平台出貨。揭露 HBM4 規格世代躍進（JEDEC JESD270-4：介面 2048-bit / 32 channels，較 HBM3E 的 1024-bit / 16 channels 倍增；基準頻寬 ≥2TB/s）；16-high 堆疊門檻量化（晶粒減薄至 ~30µm、封裝高度上限 ~720µm 以符合 CoWoS 相容性）；供應比重估計 SK hynix 60–70%、Samsung 25–30%、Micron 為剩餘。**Vera Rubin NVL72 機櫃規格**：單櫃 20.7TB HBM4、整體頻寬 1.6PB/s，較 HBM3E 世代提升 2.7 倍。
   *Source: Tech Times 2026-06-05（Allen Lee）*
 

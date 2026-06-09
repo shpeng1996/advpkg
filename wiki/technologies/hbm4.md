@@ -53,6 +53,27 @@ HBM（High Bandwidth Memory）將多層 DRAM 晶片垂直堆疊，透過 TSV（T
 
 *HBM4E 規格確認來源：Samsung 官方公告 2026-05-29（14 Gbps / 3.6 TB/s / 48 GB）；JEDEC 高度規格：TrendForce 2026-04-01（提議，尚未確認）*
 
+### ⭐ 2026-06-09 更新：Samsung HBM4 量產速率確認、Base Die 分歧
+
+**TrendForce 2026-06-09** 整合報導確認多項關鍵規格：
+
+1. **Samsung HBM4 量產速率 >11.7 Gbps/pin**（NVIDIA 系統級驗證後確認；此前 Tech Times 2026-06-05 已揭露此數字）
+2. **Samsung HBM4E 採用三星自家 4nm base die**：穩定速率 14 Gbps/pin，峰值測試達 16 Gbps/pin（與 Samsung 官方公告 14 Gbps 吻合）
+3. **SK Hynix HBM4 base die：TSMC 12nm**（↔ Samsung 4nm）；HBM4E base die 升至 TSMC 3nm（↔ Samsung 4nm 維持不變，僅 HBM5 才升 2nm）
+4. **供應策略**：NVIDIA 確認多源（SK Hynix ~60-70% + Samsung ~25-30% + Micron 剩餘）；Samsung 亦提供 SOCAMM2 模組（LPDDR5X）供 NVIDIA Vera CPU
+
+**Base die 路線分歧小結（2026-06-09 確認版）**：
+
+| 廠商 | HBM4 Base Die | HBM4E Base Die | HBM5 Base Die |
+|------|---------------|----------------|---------------|
+| Samsung | 三星 4nm | 三星 4nm（同 HBM4）| 三星 2nm |
+| SK Hynix | TSMC 12nm | TSMC 3nm | TBD |
+| Micron | TSMC（節點待確認）| TSMC（邏輯節點確認）| TBD |
+
+*SK Hynix 選擇 TSMC base die 的戰略意涵：避免內部製程競爭，換取 TSMC 最先進邏輯節點（與 TSMC CoWoS 整合更緊密）；Samsung 選擇自家 4nm 則降低成本並強化垂直整合。*
+
+*Source: TrendForce 2026-06-09；Tech Times 2026-06-05；TrendForce 2026-06-04（崔泰源-魏哲家會面報導確認 SK Hynix × TSMC base die 合作）*
+
 ### ⭐ Samsung HBM5 模型 COMPUTEX 首次亮相（2026-06-02）
 
 Samsung 在 COMPUTEX 2026（台北，6/2）首次公開 HBM5（第 8 代）實體 mock-up，確立以下路線圖：

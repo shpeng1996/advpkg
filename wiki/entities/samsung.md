@@ -32,6 +32,9 @@ related:
 
 ## 近期動態 / Recent Developments
 
+- **2026-06-09（⭐最新）**：**Samsung HBM4 正式速率確認 >11.7 Gbps/pin，HBM4E 首發 14 Gbps（峰值 16 Gbps）**。TrendForce 整合報導揭示：Samsung 向 NVIDIA 供應的 HBM4 穩定量產速率確認超過 11.7 Gbps/pin；HBM4E 採用**三星自家 4nm Base Die**（↔ SK Hynix 採用台積電 12nm），穩定速率 14 Gbps/pin、峰值 16 Gbps/pin。封裝路線：Samsung 堅持 **Mass Reflow + Molded Underfill（MR-MUF）**方案，Hybrid Bonding 量產仍在攻關良率。三星亦提供支援 NVIDIA Vera CPU 的 **SOCAMM2 記憶體模組**（基於 LPDDR5X）。此外，黃仁勳訪韓後傳出 **NVIDIA 與三星討論 Groq LP40 晶片（次世代 LPU）下單事宜**，由三星 Foundry 代工；但三星競爭對手 TSMC 亦在搶奪此訂單，目前尚無確認消息。
+  *Source: TrendForce 2026-06-09（引述 Digitimes、Maeil Business、Hankyung、Korea JoongAng Daily、The Elec）*
+
 - **2026-06-05（⭐最新）**：**Nvidia CEO 黃仁勳於首爾證實三星 HBM4 已通過驗證進入量產**，將於 2026 Q3 隨 Vera Rubin 平台出貨。報導揭露三星採用**自家 4nm 邏輯 base die + 12-high 堆疊**，達到 **3.3TB/s（11.7 Gbps/pin）**頻寬；惟其 **Hybrid Bonding** 接合路線目前仍面臨**良率挑戰**，與 SK hynix 採用的成熟 MR-MUF 製程形成對比。供應比重估計三星約佔 **25–30%**。
   *Source: Tech Times 2026-06-05（Allen Lee）*
 

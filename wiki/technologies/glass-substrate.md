@@ -78,6 +78,9 @@ SeWaRe 是玻璃量產最大障礙——切割/鑽孔時形成的微裂紋成為
 - **2025-Q2**：Absolics（SK Group + Applied Materials JV，Georgia 廠；KRW 300B 投資）宣布 2026 量產目標
 - **2025-Q3**：TSMC CoPoS 確認採用 310mm×310mm 玻璃中介層（~400µm 厚）；2028 量產
 - **2025-12**：DNP 久喜工廠試驗線啟動（510×515mm）；Rapidus 展示 600×600mm 最大玻璃中介層樣品（SEMICON Japan）；Samsung SEMCO 建立玻璃核心基板 mini line
+- **2026-06-10（⭐最新）**：**Intel ECTC 2026 確認完全銅填充 TGV 通過嚴酷熱循環可靠度測試**（SemiEngineering 報導）：Intel 展示完全銅填充（fully Cu-filled）TGV 在**嚴酷熱循環（harsh thermal cycling）**後零失效；玻璃基板翹曲量極低，優於有機基板，確認支援多晶片精密對準。此為玻璃基板從實驗室走向 HVM 最重要的可靠度里程碑之一。同次 ECTC，Intel 亦展示 **V-groove 玻璃耦合器用於 CPO 整合**（詳見 [[technologies/copackaged-optics]]）。
+  *Source: SemiEngineering 2026-06-05（引述 ECTC 2026）*
+
 - **2026-01-22**：Intel 在 NEPCON Japan 展示 EMIB + 玻璃核心基板樣品（78×77mm，10-2-10 stack，800µm，45µm bump pitch），報告「**No SeWaRe**」——量產關鍵里程碑 ⭐
 - **2026**（目標）：Absolics Georgia 廠啟動量產；TSMC 在 VisEra 建立 CoPoS 玻璃中介層 mini line
 - **2027**（目標）：Samsung 玻璃核心基板量產；DNP 向客戶提供樣品

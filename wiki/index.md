@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-06-09
-**頁面總數 Total Pages**：193
-**原始來源數 Sources**：158
+**更新時間 Updated**：2026-06-10
+**頁面總數 Total Pages**：198
+**原始來源數 Sources**：163
 
 ---
 
@@ -15,16 +15,16 @@
 ## 實體 Entities（公司、組織）
 
 - [[entities/tsmc]] — 台積電；全球最大晶圓代工廠；CoWoS/SoIC 技術領導者；2026 年產能瓶頸核心
-- [[entities/intel]] — 英特爾；IDM；EMIB-T（HBM4）+ Foveros-R/B；馬來西亞廠 2026 年投產；EMIB 2H26 放量
-- [[entities/samsung]] — 三星；IDM + Foundry + Memory；I-Cube/X-Cube；2nm 量產；HBM4 首批出貨 2026-02；**Groq 3 LPU 代工確認（GTC 2026）**⭐更新
-- [[entities/sk-hynix]] — SK Hynix；HBM 市場領導者；M15X 廠提前投產（2026-02）；NVIDIA HBM4 份額 ~70%；**12H HBM 混合接合驗證完成（2026-04-29）；HBM4 DRAM 增厚+縮小層間距封裝創新驗證中（2026-03）⭐**更新
+- [[entities/intel]] — 英特爾；IDM；EMIB-T（25µm FLI / >9×reticle / HBM4e 12 Gb/s）+ Foveros-R/B；Google 3M+ TPU 2028；NVIDIA 18A MPW；TGV 可靠度驗證（2026-06-10）⭐更新
+- [[entities/samsung]] — 三星；IDM + Foundry + Memory；I-Cube/X-Cube；2nm 量產；HBM4 >11.7 Gbps 確認；HBM4E 首發出貨（4nm base die / 14 Gbps）；Groq LP40 討論中（2026-06-09）⭐更新
+- [[entities/sk-hynix]] — SK Hynix；HBM 市場領導者；M15X 廠提前投產（2026-02）；NVIDIA HBM4 份額 ~70%；多年期 NVIDIA 夥伴（Vera CPU LPDDR5X 1.2 TB/s）；M15X 2H26 啟動 40K wsm；TC Bonder 44.2 億韓元訂單（2026-06-09）⭐更新
 - [[entities/asmpt]] — ASMPT Limited；TCB/混合接合/Photonics-CPO 設備領導廠商；Q1 2026 訂單 27M +71.6% YoY；NEXX 出售給 AMAT⭐新增
 - [[entities/ase-group]] — ASE Group；全球最大 OSAT；CoWoP 面板封裝；K28 廠 2026 年完工（目標 25K 片/月）⭐新增
 - [[entities/amkor]] — Amkor；全球第二大 OSAT；Arizona $70 億廠（2028 投產）；Intel EMIB 外包夥伴⭐新增
 - [[entities/ev-group]] — EV Group（EVG）；混合接合設備領導者；ECTC 2025 展示無光罩微影與層轉移⭐新增
 - [[entities/besi]] — BE Semiconductor（Besi）；D2W 混合接合設備主供應商；Datacon 8800 CHAMEO；Kinex 平台（Applied Materials 持股 9%）⭐新增
 - [[entities/tel]] — Tokyo Electron（TEL）；RDL 製程設備領導者；Kumamoto 研發基地（¥470 億，2026 春）；Eteris 合資（與 AMAT）⭐新增
-- [[entities/nvidia]] — NVIDIA；Fabless AI GPU 龍頭；CoWoS + SoIC 最大需求方；Rubin Ultra NVL576（100 PFLOPS）；Feynman 5–6 kW 等待 TSMC 美國廠⭐新增
+- [[entities/nvidia]] — NVIDIA；Fabless AI GPU 龍頭；CoWoS + SoIC 最大需求方；Rubin Ultra NVL576（100 PFLOPS）；SK Hynix 多年期夥伴（Vera CPU LPDDR5X 1.2 TB/s）；評估 Intel 18A 4晶粒 Feynman（2026-06-09）⭐更新
 - [[entities/micron]] — Micron；美國記憶體 IDM；HBM4 >11 Gbps（Q2'26 HVM）；Virginia HBM 封裝廠；$200B 美國投資計畫⭐新增
 - [[entities/amd]] — AMD；Fabless CPU/GPU；Venice 首採 EMIB 等效封裝；MI355X（N3P，2 I/O die）；MI450 aLSI 測試載具⭐新增
 - [[entities/asml]] — ASML；微影設備獨占廠商；XT:260 3D DUV 已出貨（RDL）；評估混合接合設備市場進入⭐新增
@@ -59,6 +59,11 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-06-09_trendforce_intel-foundry-google-tpu-nvidia-18a]] — TrendForce：Google 下訂 3M+ Intel EMIB TPU（2028）；NVIDIA 18A MPW 測試流片（4晶粒 Feynman GPU 評估）；Tesla 14A 首外部客戶確認（2026-06-09）⭐新增
+- [[sources/2026-06-09_trendforce_skhynix-hanmi-tcbonder-hbm4-ramp]] — TrendForce：SK Hynix 44.2 億韓元 TC Bonder 訂單（漢美；~15 台）；M15X 2H26 啟動 40K→80K wsm；2030 目標 1M wsm（2026-06-09）⭐新增
+- [[sources/2026-06-09_trendforce_samsung-nvidia-hbm5-groq]] — TrendForce：Samsung HBM4 >11.7 Gbps 確認；HBM4E 4nm base die / 14 Gbps / 峰值 16 Gbps；Groq LP40 與 NVIDIA 討論代工；SOCAMM2 Vera CPU（2026-06-09）⭐新增
+- [[sources/2026-06-08_trendforce_skhynix-nvidia-vera-cpu-partnership]] — TrendForce：SK Hynix 多年期 NVIDIA 夥伴關係（Vera Rubin HBM4 + Vera CPU LPDDR5X 1.2 TB/s <30W + RTX Spark + Jetson Thor）；非獨家多源策略（2026-06-08）⭐新增
+- [[sources/2026-06-05_semieng_intel-emib-cpo-glass-ectc2026]] — SemiEngineering：Intel ECTC 2026 深度——EMIB-T 25µm FLI / 120mm / >9× reticle / HBM4e 12 Gb/s / UCIe 64 Gb/s；CPO 玻璃耦合器；TGV 嚴酷熱循環零失效；D2W HB 研究（EV Group 100% C2W）（2026-06-05）⭐新增
 - [[sources/2026-06-09_financialcontent_tsmc-130k-cowos-wafers]] — FinancialContent/TokenRing AI：分析估計台積電 2026 年底 CoWoS 月產能達 13 萬片晶圓（4 倍成長）；CoWoS-L／SoIC 策略；客戶配額估計 NVIDIA~60%／Broadcom~15%／AMD~11%（2026-06-09）⭐新增
 - [[sources/2026-06-09_astutegroup_hbm-market-share-2026-battle]] — Astute Group：2025 Q2 整體 HBM 市場份額 SK Hynix 62%／Micron 21%／Samsung 17%；2026 HBM4 量產轉折預測；釐清與 Vera Rubin 平台配額估計之口徑差異（2026-06-09）⭐新增
 - [[sources/2026-06-09_digitimes_tsmc-cowos-soic-capacity-symposium]] — DIGITIMES：台積電 2026 技術論壇官方證實全球興建 18 座新廠／先進封裝設施因應 AI 需求（partial/paywalled）（2026-06-09）⭐新增
