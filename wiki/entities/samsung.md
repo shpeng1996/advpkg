@@ -3,8 +3,8 @@ title: "三星 / Samsung"
 category: entity
 tags: [IDM, foundry, memory, advanced-packaging, X-Cube, HBM, ISSCC2026, I-CubeS, LPDDR6]
 created: 2026-04-24
-updated: 2026-06-08
-sources: [2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2025-12-30_trendforce_samsung-hbm-surge, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2025-08-05_3dincites_iftle636, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit]
+updated: 2026-06-11
+sources: [2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2025-12-30_trendforce_samsung-hbm-surge, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2025-08-05_3dincites_iftle636, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit, 2026-06-10_trendforce_samsung-gwangju-packaging-base]
 related:
   - wiki/entities/tsmc.md
   - wiki/entities/intel.md
@@ -31,6 +31,14 @@ related:
 ---
 
 ## 近期動態 / Recent Developments
+
+- **2026-06-10（⭐最新）**：**Samsung 宣布廣州（光州）新封裝基地——35 年來首座獨立封裝廠**（TrendForce 2026-06-10）：Samsung 宣布在韓國光州（Gwangju）廣域市建立全新半導體封裝製造基地，此為三星 35 年來首次新建獨立封裝廠（以往封裝線均附設於晶圓廠廠區）。主要規格與時程：
+  - **TCB（熱壓接合）產能目標**：2026 年底達 **231,000 顆/月**（整體 HBM 封裝主力）
+  - **HCB（Hybrid Cu Bonding）產能目標**：2026 年底達 **19,500 顆/月**（先進混合接合，針對次世代高精度 HBM 需求）
+  - **封裝路線轉型時程**：Samsung HBM 主流接合技術預計從現行 **TCB（熱壓接合）轉向 HCB（混合銅接合）**，過渡完成目標年為 **2029 年**
+  - **越南測試與封裝設施**：Samsung 另宣布在越南（Hanoi Economic Zone）投資 **$15 億美元**擴建測試廠，預計 2028 年完工，進一步分散封裝後段製程地理風險
+  - 戰略意義：光州廠可支援 HBM4E/HBM5 封裝爬坡，同時在供應鏈韌性（不依附晶圓廠廠區）與 HCB 技術轉型方面佔據先機。競爭對手 SK Hynix 目前同樣在 TCB→HCB 路線切換（SK Hynix HBM4E 仍以 MR-MUF 為主，HCB 時程約 2027-28）。
+  *Source: TrendForce 2026-06-10*
 
 - **2026-06-09（⭐最新）**：**Samsung HBM4 正式速率確認 >11.7 Gbps/pin，HBM4E 首發 14 Gbps（峰值 16 Gbps）**。TrendForce 整合報導揭示：Samsung 向 NVIDIA 供應的 HBM4 穩定量產速率確認超過 11.7 Gbps/pin；HBM4E 採用**三星自家 4nm Base Die**（↔ SK Hynix 採用台積電 12nm），穩定速率 14 Gbps/pin、峰值 16 Gbps/pin。封裝路線：Samsung 堅持 **Mass Reflow + Molded Underfill（MR-MUF）**方案，Hybrid Bonding 量產仍在攻關良率。三星亦提供支援 NVIDIA Vera CPU 的 **SOCAMM2 記憶體模組**（基於 LPDDR5X）。此外，黃仁勳訪韓後傳出 **NVIDIA 與三星討論 Groq LP40 晶片（次世代 LPU）下單事宜**，由三星 Foundry 代工；但三星競爭對手 TSMC 亦在搶奪此訂單，目前尚無確認消息。
   *Source: TrendForce 2026-06-09（引述 Digitimes、Maeil Business、Hankyung、Korea JoongAng Daily、The Elec）*

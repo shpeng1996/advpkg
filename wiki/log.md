@@ -1293,3 +1293,51 @@
   5. **NVIDIA Vera CPU LPDDR5X 功耗突破**：SK Hynix 確認 1.2 TB/s / <30W（對比 DDR5 >100W），這一指標對資料中心機架功耗架構設計有直接影響，是 CPU/NIC 方向的記憶體技術里程碑。
   6. **Google EMIB 訂單規模確認**：3M+ TPU（2028），佔 Google 當年 TPU 採購 ~50%，是 Intel Foundry 轉型以來最具意義的外部晶片封裝訂單規模揭露。
 - **⚠️ Git Commit**：同上，`.git/index.lock` 問題持續，所有檔案已正確儲存於磁碟。
+
+## [2026-06-11] collect | Intel 18A 首商業 CPU、Samsung 光州封裝基地、中國玻璃基板生態、玻璃基板 2027 路線圖、HBF 設備競賽
+- 搜尋查詢數：7 組（TSMC CoWoS、HBM4 供應鏈、Intel EMIB/18A、玻璃基板、HBF、市場預測、中國先進封裝）
+- 成功抓取：**5 篇**（存入 raw/articles/ 5 篇）
+- 失敗/跳過：~25 篇（已收錄 ~20、低相關 ~3、付費牆 ~2）
+- 觸發 ingest：5 篇
+- 觸及 wiki 頁面：（共 13 頁更新 + 1 頁新建 = 14 頁）
+
+### 新增 Raw 檔案
+1. `raw/articles/2026-06-05_semieng_chip-week-review-141-intel18a-nikon.md`
+2. `raw/articles/2026-06-10_trendforce_samsung-gwangju-packaging-base.md`
+3. `raw/articles/2026-06-10_trendforce_china-glass-substrate-boe-visionox.md`
+4. `raw/articles/2026-06-05_trendforce_glass-substrate-2027-launch-roadmap.md`
+5. `raw/articles/2026-06-05_trendforce_hbf-equipment-race-sandisk-hanmi.md`
+
+### 新增 Wiki 來源頁
+- `wiki/sources/2026-06-05_semieng_chip-week-review-141-intel18a-nikon.md`
+- `wiki/sources/2026-06-10_trendforce_samsung-gwangju-packaging-base.md`
+- `wiki/sources/2026-06-10_trendforce_china-glass-substrate-boe-visionox.md`
+- `wiki/sources/2026-06-05_trendforce_glass-substrate-2027-launch-roadmap.md`
+- `wiki/sources/2026-06-05_trendforce_hbf-equipment-race-sandisk-hanmi.md`
+
+### 新建技術頁面
+- `wiki/technologies/hbf.md` ⭐（HBF — High Bandwidth Flash，首次建立）
+
+### 更新 Wiki 頁面
+- `wiki/entities/intel.md`：新增 2026-06-05（Xeon 6+ 18A 首商業 CPU；Ayar Labs NVLink Fusion CPO 設計定案）
+- `wiki/entities/samsung.md`：新增 2026-06-10（光州封裝基地；TCB 231K/月；HCB 19.5K/月；TCB→HCB 2029 轉型；越南 $15 億測試廠）
+- `wiki/entities/sk-hynix.md`：新增 2026-06-05（Hanmi HBF TCB 設備 2H26 首交付）
+- `wiki/technologies/glass-substrate.md`：新增 2026-06-10 中國生態節（BOE+Corning MOU 2026-05-20；WG Tech 100:1 TGV / 5µm；DR Laser 設備出貨；Visionox）；新增 2026-06-05 節（SKC KRW 1.2T；Samsung EM Broadcom 評估；LG Innotek+UTI；TSMC C.C. Wei 2–3 年聲明）
+- `wiki/technologies/copos.md`：新增 2026-06-11 節（C.C. Wei 股東大會確認 2–3 年量產時程 = 2028–2029）
+- `wiki/technologies/hbm4.md`：新增 2026-06-11 節（Samsung TCB→HCB 轉型 2029；HCB vs TCB 規格對比表）
+- `wiki/technologies/copackaged-optics.md`：新增 2026-06-05（Ayar Labs TeraPHY + NVIDIA NVLink Fusion 設計定案）
+- `wiki/concepts/advanced-packaging-market.md`：新增 WSTS $1.5T/2026、$1.9T/2027 預測；AI 機架 4,500 chips / 95% BOM / CoWoS ASP $10K
+- `wiki/concepts/geopolitics-advanced-packaging.md`：新增 中國玻璃基板生態（BOE+Corning、WG Tech、DR Laser、Visionox）
+- `wiki/index.md`：頁面計數 198→204；來源計數 163→168；新增 5 來源條目 + 1 技術條目；更新 intel/samsung 摘要
+
+### 主要新知識
+1. **Intel 18A 首商業量產里程碑**：Xeon 6+ 確認採用 Intel 18A（RibbonFET + PowerVia），18A 正式進入 HVM。
+2. **Samsung 光州封裝基地**：35 年來首座獨立封裝廠，TCB→HCB 2029 轉型確認——三星 HBM 接合技術路線圖首次明確。
+3. **中國玻璃基板加速**：BOE+Corning MOU（2026-05-20）+ WG Tech 100:1 TGV + DR Laser 設備出貨，中國玻璃基板生態比市場預期更快速成熟。
+4. **TSMC C.C. Wei 聲明**：CoPoS HVM 需 2–3 年（= 2028–2029），排除 2027 年提前量產。
+5. **HBF 設備競賽啟動**：Hanmi Semiconductor 確認 2H26 首交付 HBF TCB 設備，SanDisk 2H26 樣品，HBF 作為 AI 推論記憶體的產業時程逐漸清晰。
+6. **WSTS $1.5T 市場規模**：2026 年全球半導體市場預測 $1.5 兆（2027 年 $1.9 兆），AI 推升力道確認。
+7. **Ayar Labs NVLink Fusion 設計定案**：CPO 技術從展示進入正式商業設計採用，矽光子光學 I/O 商業化進程加速。
+
+### ⚠️ Git Commit 狀態
+`.git/index.lock` 問題持續（跨平台掛載鎖定衝突）；所有檔案均已正確寫入磁碟，內容完整。建議在 Windows 原生環境執行 `git add -A && git commit -m "2026-06-11 daily collect: 5 articles, 6 wiki pages updated/added"` 以完成版控。

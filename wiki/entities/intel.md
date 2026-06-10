@@ -3,8 +3,8 @@ title: "英特爾 / Intel"
 category: entity
 tags: [IDM, advanced-packaging, EMIB, Foveros, Intel18A, Clearwater-Forest, Foveros-Direct, glass-substrate, 14A, High-NA-EUV, silicon-capacitors, Google-TPU-v8e]
 created: 2026-04-24
-updated: 2026-06-06
-sources: [2026-04-24_initial-survey, 2026-03-18_trendforce_intel-emib-malaysia, 2026-03-03_trendforce_intel-clearwater-forest, 2026-03-05_trendforce_intel-emib-billions, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-04-20_trendforce_intel-foundry-14a-equipment, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-01_semianalysis_cpus-back-datacenter-2026, 2026-04-10_3dincites_intel-gan-chiplet, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate]
+updated: 2026-06-11
+sources: [2026-04-24_initial-survey, 2026-03-18_trendforce_intel-emib-malaysia, 2026-03-03_trendforce_intel-clearwater-forest, 2026-03-05_trendforce_intel-emib-billions, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-04-20_trendforce_intel-foundry-14a-equipment, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-01_semianalysis_cpus-back-datacenter-2026, 2026-04-10_3dincites_intel-gan-chiplet, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon]
 related:
   - wiki/entities/tsmc.md
   - wiki/entities/samsung.md
@@ -45,6 +45,9 @@ related:
 
 - **2026-06-09（最新）⭐**：**Google 3M+ TPU（EMIB）2028 出貨確認；NVIDIA 18A MPW 測試**：TrendForce 報導 Google 訂單細節（與 ECTC 2026 透露消息吻合）：Google 擬採購逾 300 萬顆 EMIB 封裝 TPU，最快 2028 年出貨，約佔 Google 當年 TPU 總採購量的 50%。同時，NVIDIA 正於 **Intel 18A 平台進行 MPW 測試流片**，評估 4 晶粒整合 Feynman GPU 方案。**Tesla 確認為 Intel 14A 首個外部客戶**（另見上方 14A 項目）。
   *Source: TrendForce 2026-06-09（引述 Business Post、Chosun Biz、Korea JoongAng Daily、IT 之家）*
+
+- **2026-06-05（⭐新增）**：**Intel Xeon 6+ 以 Intel 18A 製程正式商業量產——18A 首顆商業 CPU 里程碑**（SemiEngineering Chip Week Review #141）：Intel Xeon 6+ 確認採用 **Intel 18A 製程節點**量產，為 18A 節點首款商業化 CPU 產品（先前 18A 進度曾受質疑）。此里程碑標誌 Intel Foundry 18A 正式進入 **生產（HVM）階段**，而非僅止於工程樣品。背景：18A 採用 RibbonFET（Gate-All-Around）+ PowerVia（背面電源），為 Intel 最先進節點，與 TSMC N2、Samsung SF2 同代競爭。同期報導：**Ayar Labs 贏得 NVIDIA NVLink Fusion CPO 合約**——Ayar Labs 的矽光子光學 I/O 技術（TeraPHY）將整合至 NVIDIA 下一代資料中心互連（NVLink Fusion），搭配光電共封裝（CPO），為 AI 叢集提供超低功耗高頻寬光連接（另見 [[technologies/copackaged-optics.md]]）。此外，SemiEngineering 引述 WSTS 預測 2026 全球半導體市場達 **$1.5 兆**（含 AI 推升動能），2027 進一步成長至 **$1.9 兆**。
+  *Source: SemiEngineering Chip Week Review #141（2026-06-05）*
 
 - **2026-06-01（最新）⭐**：**Intel + 3DGS 印度奧里薩邦 $33 億玻璃基板廠確認**（TrendForce 2026-06-01，引述 Reuters）：
   - **投資規模**：Intel + 3DGS ~**US$3.3 億**，奧里薩邦布巴內什瓦爾-庫爾達地區；建設期 **5–6 年**。
@@ -104,13 +107,4 @@ related:
 - **2026-01-29**：市場關注 NVIDIA 考慮 Intel 14A/18A 與 EMIB 封裝 Feynman，但技術分析揭示重要限制：**Feynman 晶片功耗達 5–6 kW**，超出 EMIB 處理能力。Feynman 需要封裝內嵌入式電壓調節器（**IVR，~1.8V 入封裝**），EMIB 無法提供真正嵌入式 IVR；Foveros 技術上可行但需完全重設計。結論：NVIDIA 高端 GPU（Feynman）更可能等待 **TSMC 美國廠（~2029）** 而非改用 EMIB；Intel 仍可承接 Vera CPU 封裝或低功耗 I/O die。
   *Source: TrendForce 2026-01-29*
 
-- **2025-12-01**：Intel EMIB 首次外包里程碑——Intel 於 **Amkor 韓國仁川松島 K5 廠**建立 EMIB 製程，為 **Intel 史上首次將 EMIB 高端封裝外包**。Amkor 將在 **韓國（K5）、葡萄牙、Arizona 廠**三地同步展開 EMIB 封裝，鞏固「美國境內完整封裝路徑」。Amkor 配套在韓國啟動 **2,700 億韓元（~$2 億美元）**投資。此里程碑也確認 Songdo K5 可能接受外部（非 Intel）客戶的 EMIB 訂單。
-  *Source: TrendForce 2025-12-01*
-
-- **2026-04-20**：Intel Foundry 2026 年設備訂單較 2025 年成長 **>50% YoY**，主要目標是 **14A** 製程節點（High-NA EUV + RibbonFET）；重大不具名外部客戶正評估年底前 tape-out；14A 客戶預期同時採用 EMIB 封裝，形成「代工+封裝」一體化商業模式。
-  *Source: TrendForce 2026-04-20*
-
-- **2026-01-26**：Intel 發表業界首款**厚芯玻璃基板 + EMIB** 整合方案，目標 AI 資料中心大型封裝；玻璃基板克服有機 ABF 基板在大尺寸封裝的翹曲與訊號完整性限制；HVM 目標 2027–2028。EMIB 技術路線演進：EMIB → EMIB-T → EMIB on Glass。
-  *Source: TrendForce 2026-01-26*
-
-- **2026-04-07**：Intel EMIB 封裝技術正式進入「平台級」競爭——**Google** 計畫 2027 年 **TPU v9** 採用 EMIB（目前 TPU 使用 TSMC CoWoS）；**Amazon AWS** 評估 EMIB 用於 Trainium/Inferentia；**Meta** 考慮 EMIB 用於 MTIA 加速器。Intel EMIB 的關鍵賣點：*
+- **2025-12-01**：Intel EMIB 首次外包里程碑——Intel 於 **Amkor 韓國仁川松島 K5 廠**建立 EMIB 製程，為 **Intel 史上首次將 EMIB 高端封裝外包**。Amkor 將在 **韓國（K5）、葡萄牙、Arizona 廠**三地同步展開 EMIB 封裝，鞏固「美國境內完整封裝路徑」。Amkor 配套在韓國啟動 **2,700 億韓元（~$2 億

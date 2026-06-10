@@ -3,8 +3,8 @@ title: "先進封裝市場 / Advanced Packaging Market"
 category: concept
 tags: [market, forecast, CAGR, supply-chain, HBM, chiplet, geopolitics, equipment]
 created: 2026-04-24
-updated: 2026-05-25
-sources: [2026-04-24_initial-survey, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2026-01-23_trendforce_chip-tools-tel-asml, 2026-03-05_trendforce_intel-emib-billions, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2025-12-18_trendforce_micron-capex-hbm4, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2025-05-13_trendforce_top10-osat-2024]
+updated: 2026-06-11
+sources: [2026-04-24_initial-survey, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2026-01-23_trendforce_chip-tools-tel-asml, 2026-03-05_trendforce_intel-emib-billions, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2025-12-18_trendforce_micron-capex-hbm4, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2025-05-13_trendforce_top10-osat-2024, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon]
 related:
   - wiki/entities/tsmc.md
   - wiki/entities/sk-hynix.md
@@ -225,3 +225,30 @@ Applied Materials 2QFY26（截至 2026-04-26）財報揭示封裝設備市場熱
 | 事件 | 日期 | 意義 |
 |------|------|------|
 | Applied Materials 持股 Besi 9% | 2025
+
+---
+
+## ⭐ 2026-06-11 更新：WSTS 全球半導體市場預測、AI 伺服器封裝密度
+
+### WSTS 2026–2027 全球半導體市場規模（SemiEngineering 2026-06-05 引述）
+
+WSTS（World Semiconductor Trade Statistics）最新預測（引述自 SemiEngineering Chip Week Review #141）：
+
+| 年份 | 全球半導體市場規模 | YoY 成長 |
+|------|-----------------|---------|
+| 2025 | ~$620B（估計） | — |
+| **2026** | **$1.5 兆（$1.5T）** | +141%（AI 推升） |
+| **2027** | **$1.9 兆（$1.9T）** | +27% |
+
+- **意涵**：2026 年市場規模首度突破 $1 兆，主因 AI 訓練/推論晶片需求爆發及 HBM 單價翻倍；先進封裝市場（CoWoS、EMIB、HBM）作為 AI 晶片不可分割的元件，受益程度與整體半導體市場同等甚至更高。
+
+### AI 伺服器機架封裝密度（SemiEngineering 2026-06-05）
+
+現代 AI 伺服器機架的封裝密度與半導體價值密度已達史上最高：
+
+- **每機架晶片數量**：~**4,500 顆晶片**（包含 GPU、CPU、HBM、網路 IC、電源管理等）
+- **半導體價值占比**：機架總 BoM（物料清單）中半導體佔 **~95%**
+- **CoWoS 封裝 ASP（Average Selling Price）**：每套 CoWoS 封裝約 **$10,000 美元**（含中介層、基板、封裝服務）
+- **對 OSAT 與 TSMC 的意義**：每個 GB200/B300 NVL 機架出貨即代表數千萬美元的先進封裝采購額，驗證先進封裝市場的超高成長動能
+
+*Source: SemiEngineering Chip Week Review #141（2026-06-05）*
