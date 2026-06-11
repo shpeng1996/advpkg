@@ -3,8 +3,8 @@ title: "ASE Group / 日月光投控"
 category: entity
 tags: [OSAT, advanced-packaging, CoWoP, FOPLP, chiplet, CPO, LEAP]
 created: 2026-04-25
-updated: 2026-06-09
-sources: [2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2026-05-08_aseglobal_ase-wus-kaohsiung-focoes-hub, 2026-05-26_semiconductor-digest_ase-310mm-plp-ectc2026, 2026-06-09_digitimes_ase-panel-level-packaging-310mm]
+updated: 2026-06-12
+sources: [2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2026-05-08_aseglobal_ase-wus-kaohsiung-focoes-hub, 2026-05-26_semiconductor-digest_ase-310mm-plp-ectc2026, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-11_trendforce_ase-spil-zhunan-plant]
 related:
   - wiki/technologies/cowos.md
   - wiki/technologies/copos.md
@@ -31,6 +31,9 @@ related:
 ---
 
 ## 近期動態 / Recent Developments
+
+- **2026-06-12（⭐最新）**：**SPIL（ASE 子公司）以 NT$28 億收購台灣光罩竹南廠 6，為 SPIL 2026 年第五次廠房收購，合計投入 >NT$227 億**。新廠緊鄰 TSMC 竹南封裝廠，TSMC 已要求 ASE/SPIL/KYEC 承接外包測試設備與相關製程（TSMC 訂單滿出效應）。SPIL 生產線全力運轉，是業界少數具備 CoWoS 封裝服務能力的廠商之一。**ASE 5 月合併營收 NT$630.3 億（+1.3% MoM，+28.6% YoY），歷史同期新高；前 5 月累計 NT$2,989.4 億（+19.9% YoY），亦為同期新高。**
+  *Source: TrendForce 2026-06-11（引述 Investor.com、Mirror Daily、中央社）*
 
 - **2026-06-09**：DIGITIMES（2026-02-25）報導指出，因 TSMC CoWoS 產能持續吃緊，ASE 與 SPIL、Powertech 等台灣 OSAT 廠加速擴產搶攻 AI 訂單；ASE 鎖定 **2026 年建置全自動化 310×310mm 面板級封裝產線**，與下方 ECTC 2026 發表的「業界首條自動化 310mm PLP 產線」形成相互佐證的時間線。同期相關報導並指出 ASE 已將 **2026 資本支出上修至創紀錄的 85 億美元**（數字取自標題，全文待確認）。
   *Source: DIGITIMES 2026-02-25（Flora Wang）*

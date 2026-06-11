@@ -3,7 +3,7 @@ title: "先進封裝市場 / Advanced Packaging Market"
 category: concept
 tags: [market, forecast, CAGR, supply-chain, HBM, chiplet, geopolitics, equipment]
 created: 2026-04-24
-updated: 2026-06-11
+updated: 2026-06-12
 sources: [2026-04-24_initial-survey, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2026-01-23_trendforce_chip-tools-tel-asml, 2026-03-05_trendforce_intel-emib-billions, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2025-12-18_trendforce_micron-capex-hbm4, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2025-05-13_trendforce_top10-osat-2024, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon]
 related:
   - wiki/entities/tsmc.md
@@ -252,3 +252,34 @@ WSTS（World Semiconductor Trade Statistics）最新預測（引述自 SemiEngin
 - **對 OSAT 與 TSMC 的意義**：每個 GB200/B300 NVL 機架出貨即代表數千萬美元的先進封裝采購額，驗證先進封裝市場的超高成長動能
 
 *Source: SemiEngineering Chip Week Review #141（2026-06-05）*
+
+---
+
+## ⭐ 2026-06-12 更新：AMAT 新加坡 $500M 擴廠 + OSAT TSMC 外包機制具體化
+
+### Applied Materials 新加坡 $500M 園區開幕（2026-06-11）
+
+Applied Materials 正式開幕新加坡 $500M 製造園區，並提供先進封裝設備市場最新量化展望：
+
+| 指標 | 數值 |
+|------|------|
+| 新加坡新廠投資額 | US$5 億 |
+| 2026 先進封裝設備收入成長（CEO 聲明） | **+50%**（確認先前 >50% 估計） |
+| 2026 半導體設備業務整體成長 | >30% |
+| WFE 成長中先進領域佔比 | >80%（先進邏輯 + 記憶體 + 先進封裝） |
+| AI 資料中心 4-5 年投資預測 | US$7 兆 |
+| AMAT 客戶提供的滾動預測期間 | 8 季（前所未有的可視度） |
+
+**戰略意義**：AMAT 將新加坡從 1 座廠擴至 3 座，承擔全球約一半產能。GAA、背面電源傳遞（BPD）、HBM、3D DRAM 及先進封裝是 AMAT 明確的五大關鍵技術方向。AI 資料中心 $7T 投資預測是業界最大規模基礎設施週期預測之一。
+
+*Source: TrendForce 2026-06-11（引述 Nikkei、AMAT IR、CRN Asia、Commercial Times）*
+
+### TSMC-OSAT 測試設備外包機制（2026-06-11 具體化）
+
+TrendForce 披露 TSMC 外包策略的具體操作細節：
+- TSMC 除外包封裝訂單外，更主動將**測試設備實體轉移**給 ASE/SPIL/KYEC 操作
+- SPIL 竹南廠選址緊鄰 TSMC 竹南廠，物流距離最短化是關鍵考量
+- SPIL 2026 年累計廠房收購 >NT$227 億，為承接 TSMC 外包設備創造容量
+- **TSMC-OSAT 生態系**形成「設備-產能-訂單」一體化外包鏈
+
+*Source: TrendForce 2026-06-11（引述 Investor.com）*

@@ -1341,3 +1341,35 @@
 
 ### ⚠️ Git Commit 狀態
 `.git/index.lock` 問題持續（跨平台掛載鎖定衝突）；所有檔案均已正確寫入磁碟，內容完整。建議在 Windows 原生環境執行 `git add -A && git commit -m "2026-06-11 daily collect: 5 articles, 6 wiki pages updated/added"` 以完成版控。
+
+## [2026-06-12] collect | 每日自動蒐集 — SPIL 竹南廠收購、AMAT 新加坡擴廠、SK Hynix 三倍產能路線圖
+- 搜尋查詢數：7 組（TSMC CoWoS/SoIC、HBM4/HBM4E 供應、混合接合、面板封裝、Intel EMIB、市場預測、UCIe 標準）
+- 成功抓取：**3 篇**（articles/ 3 篇）
+- 失敗/跳過：~30 篇（已收錄 ~25、低相關 ~3、付費牆 ~2）
+- 新增 wiki 頁面：3 頁（來源摘要頁）
+- 更新 wiki 頁面：4 頁（ase-group.md、sk-hynix.md、advanced-packaging-market.md、index.md）
+
+### 新增 Raw 檔案
+1. `raw/articles/2026-06-11_trendforce_ase-spil-zhunan-plant-acquisition.md`
+2. `raw/articles/2026-06-11_trendforce_applied-materials-singapore-500m.md`
+3. `raw/articles/2026-06-11_trendforce_skhynix-3x-wafer-2034-375layer-nand.md`
+
+### 新增 Wiki 來源頁
+- `wiki/sources/2026-06-11_trendforce_ase-spil-zhunan-plant.md`
+- `wiki/sources/2026-06-11_trendforce_applied-materials-singapore-500m.md`
+- `wiki/sources/2026-06-11_trendforce_skhynix-3x-wafer-2034-375layer-nand.md`
+
+### 更新 Wiki 頁面
+- `wiki/entities/ase-group.md`：新增 2026-06-12 SPIL 竹南廠收購條目（NT$28 億 / 第 5 次收購 / 累計 NT$227 億）；ASE 5 月創紀錄營收（NT$630.3 億，+28.6% YoY）
+- `wiki/entities/sk-hynix.md`：新增 2026-06-12 條目（三倍晶圓產能 2034；375 層 NAND HVM 年底；字元線 W→Mo；Kioxia 峰值估值 KRW 60 兆）
+- `wiki/concepts/advanced-packaging-market.md`：新增「2026-06-12 更新」節（AMAT $500M 新加坡廠；封裝設備 +50% 2026；TSMC-OSAT 測試設備外包機制具體化）
+- `wiki/index.md`：頁面計數 204→207；來源計數 168→171；新增 3 來源條目；更新 ase-group/sk-hynix 摘要
+
+### 主要新知識
+1. **TSMC-OSAT 外包機制具體化**：TSMC 不只外包訂單，更將**實體測試設備轉移**給 ASE/SPIL/KYEC 代為操作；SPIL 竹南廠選址緊鄰 TSMC 竹南廠，物流最短化是選址關鍵——首次揭露外包操作細節。
+2. **Applied Materials 確認先進封裝設備 +50% 2026 年（CEO 官方聲明）**；WFE 成長 >80% 來自先進領域（邏輯+記憶體+封裝）；AI 資料中心 $7T 4-5 年投資週期為業界最大單一預測數字。
+3. **SK Hynix 宣布「三倍晶圓產能 2034 年」**，龍仁叢集第一廠提前約 10 年（2027 vs. 原 2045）；375 層 NAND 年底量產；字元線材料從鎢改鉬是 3D NAND 持續堆疊的關鍵材料創新。
+
+### ⚠️ Git Commit 狀態
+`.git/index.lock` 問題持續（跨平台掛載鎖定衝突）；所有檔案已正確寫入磁碟。建議在 Windows 原生環境執行：
+`git add -A && git commit -m "2026-06-12 daily collect: 3 articles, 4 wiki pages updated"` 以完成版控。

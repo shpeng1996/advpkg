@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-06-11
-**頁面總數 Total Pages**：204
-**原始來源數 Sources**：168
+**更新時間 Updated**：2026-06-12
+**頁面總數 Total Pages**：207
+**原始來源數 Sources**：171
 
 ---
 
@@ -17,9 +17,9 @@
 - [[entities/tsmc]] — 台積電；全球最大晶圓代工廠；CoWoS/SoIC 技術領導者；2026 年產能瓶頸核心
 - [[entities/intel]] — 英特爾；IDM；EMIB-T（25µm FLI / >9×reticle）；**Xeon 6+ 18A 首款商業 CPU**；Ayar Labs NVLink Fusion CPO 設計定案（2026-06-11）⭐更新
 - [[entities/samsung]] — 三星；IDM + Foundry + Memory；**光州新封裝基地（TCB 231K + HCB 19.5K/月，2026 年底）；TCB→HCB 2029 轉型；越南 $15 億測試廠**；HBM4 >11.7 Gbps（2026-06-11）⭐更新
-- [[entities/sk-hynix]] — SK Hynix；HBM 市場領導者；M15X 廠提前投產（2026-02）；NVIDIA HBM4 份額 ~70%；多年期 NVIDIA 夥伴（Vera CPU LPDDR5X 1.2 TB/s）；M15X 2H26 啟動 40K wsm；TC Bonder 44.2 億韓元訂單（2026-06-09）⭐更新
+- [[entities/sk-hynix]] — SK Hynix；HBM 市場領導者；M15X 廠提前投產（2026-02）；NVIDIA HBM4 份額 ~70%；2034 年三倍晶圓產能路線圖；375 層 NAND 年底量產；鉬字元線新架構；TC Bonder 44.2 億韓元訂單（2026-06-12）⭐更新
 - [[entities/asmpt]] — ASMPT Limited；TCB/混合接合/Photonics-CPO 設備領導廠商；Q1 2026 訂單 27M +71.6% YoY；NEXX 出售給 AMAT⭐新增
-- [[entities/ase-group]] — ASE Group；全球最大 OSAT；CoWoP 面板封裝；K28 廠 2026 年完工（目標 25K 片/月）⭐新增
+- [[entities/ase-group]] — ASE Group；全球最大 OSAT；CoWoP 面板封裝；K28 廠 2026 年完工；SPIL 2026 年累計廠房收購 >NT$227 億；5 月營收 NT$630.3 億（+28.6% YoY）⭐更新
 - [[entities/amkor]] — Amkor；全球第二大 OSAT；Arizona $70 億廠（2028 投產）；Intel EMIB 外包夥伴⭐新增
 - [[entities/ev-group]] — EV Group（EVG）；混合接合設備領導者；ECTC 2025 展示無光罩微影與層轉移⭐新增
 - [[entities/besi]] — BE Semiconductor（Besi）；D2W 混合接合設備主供應商；Datacon 8800 CHAMEO；Kinex 平台（Applied Materials 持股 9%）⭐新增
@@ -60,6 +60,9 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-06-11_trendforce_ase-spil-zhunan-plant]] — TrendForce：**SPIL 收購台灣光罩竹南廠 NT$28 億**（2026 年第 5 次收購，合計 >NT$227 億）；TSMC 測試設備外包至 ASE/SPIL/KYEC；ASE 5 月營收 NT$630.3 億 YoY +28.6%（2026-06-11）⭐新增
+- [[sources/2026-06-11_trendforce_applied-materials-singapore-500m]] — TrendForce：**Applied Materials $500M 新加坡園區開幕**；先進封裝設備 2026 年 +50%；WFE 成長 >80% 來自先進領域；AI 資料中心 $7T 4-5 年投資；8 季滾動預測（2026-06-11）⭐新增
+- [[sources/2026-06-11_trendforce_skhynix-3x-wafer-2034-375layer-nand]] — TrendForce：**SK Hynix 2034 年三倍晶圓產能路線圖**；龍仁叢集提前 10 年（2027→原 2045）；375 層 NAND 年底量產；字元線 W→Mo 材料革新；Kioxia 峰值估值 KRW 60 兆（2026-06-11）⭐新增
 - [[sources/2026-06-05_semieng_chip-week-review-141-intel18a-nikon]] — SemiEngineering #141：**Intel Xeon 6+ 18A 首款商業 CPU**；Nikon 1.5µm/65PPH 封裝微影；WSTS $1.5T（2026）/$1.9T（2027）；AI 機架 4,500 chips/95% BOM；Ayar Labs NVLink Fusion CPO 設計定案（2026-06-05）⭐新增
 - [[sources/2026-06-10_trendforce_samsung-gwangju-packaging-base]] — TrendForce：**三星光州封裝基地（35 年首座獨立封裝廠）**；TCB 231K/月 + HCB 19.5K/月（2026 年底）；TCB→HCB 2029 轉型；越南 $15 億測試廠（2026-06-10）⭐新增
 - [[sources/2026-06-10_trendforce_china-glass-substrate-boe-visionox]] — TrendForce：**BOE+Corning MOU（2026-05-20）**；WG Tech TGV 100:1 / 5µm；DR Laser TGV 設備出貨；Visionox 玻璃基板供應鏈（2026-06-10）⭐新增
