@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-06-17
-**頁面總數 Total Pages**：213
-**原始來源數 Sources**：177
+**更新時間 Updated**：2026-06-18
+**頁面總數 Total Pages**：217
+**原始來源數 Sources**：181
 
 ---
 
@@ -35,17 +35,17 @@
 ## 技術 Technologies
 
 - [[technologies/cowos]] — CoWoS（Chip-on-Wafer-on-Substrate）；TSMC 2.5D 旗艦封裝；2025-12 全訂滿；OSAT 補位生態（ASE CoWoP、Amkor FOCoS）
-- [[technologies/copos]] — CoPoS（Chip-on-Panel-on-Substrate）；TSMC 面板級封裝；**C.C. Wei 確認量產需 2–3 年（= 2028–2029）**；試驗線 2026-06 完工（2026-06-11）⭐更新
+- [[technologies/copos]] — CoPoS（Chip-on-Panel-on-Substrate）；TSMC 面板級封裝；310×310mm 面板；玻璃核心基板列為下一里程碑（2030+）；TGV 障礙具體化（2026-06-18）⭐更新
 - [[technologies/soic]] — SoIC（System on Integrated Chips）；TSMC 3D 堆疊；SoIC-X 混合接合（6µm，2026 Q1）
-- [[technologies/hybrid-bonding]] — 混合接合（Cu-Cu）；W2W/D2W/D2D 三情境框架（ECTC 2025）；目標 1M/mm²；EV Group 關鍵設備商
+- [[technologies/hybrid-bonding]] — 混合接合（Cu-Cu）；W2W/D2W/D2D 三情境框架（ECTC 2025）；目標 1M/mm²；EV Group 關鍵設備商；imec 雷射輔助接合（RF Si 中介層，2026-06-18）⭐更新
 - [[technologies/hbm4]] — HBM4；JEDEC JESD270-4；1.65+ TB/s；SK Hynix ~70% NVIDIA 份額；Samsung 2026-02 首批出貨；HBM4E 2026-H1 開發中
-- [[technologies/ucie]] — UCIe；Chiplet 互連標準；UCIe 3.0（2025-08）48/64 GT/s；UCIe 2.0 支援 3D 混合接合（1µm）
-- [[technologies/copackaged-optics]] — TSMC-COUPE™ 共封裝光學元件（CPO）；2026 年量產；2× 能效、10× 延遲改善⭐新增
+- [[technologies/ucie]] — UCIe；Chiplet 互連標準；UCIe 3.0：64GT/s quarter-rate、BER 差異化、Arm CHI 映射、L2 深度睡眠（2026-06-18）⭐更新
+- [[technologies/copackaged-optics]] — TSMC-COUPE™ 共封裝光學元件（CPO）；Intel OFC 2026 玻璃基板原型曝光；量產落後 Nvidia/AMD（2026-06-18）⭐更新
 - [[technologies/info-wmcm]] — InFO（2016 商轉）+ WMCM（2026 量產）；TSMC 行動晶片封裝旗艦；Apple A20 iPhone18 採用 WMCM⭐新增
 - [[technologies/emib]] — EMIB（Embedded Multi-Die Interconnect Bridge）；Intel 2.5D 局部矽橋；代工廠中立；120×120mm；Google TPU v9 2027 計畫採用⭐新增
 - [[technologies/foveros]] — Foveros；Intel 3D 堆疊；Foveros Direct 3D（<10µm Cu-Cu，2026 量產）；875 GB/s 3D 頻寬⭐新增
 - [[technologies/foplp]] — FOPLP（扇出面板級封裝）；Powertech 90% 試驗良率；TSMC CoPoS 玻璃面板 310×310mm；量產 2028–29⭐新增
-- [[technologies/glass-substrate]] — 玻璃核心基板（TGV）；Absolics 佐治亞廠+雙軌策略；**SKC ₩1.2T；BOE+Corning MOU（2026-05-20）；WG Tech 100:1 TGV；Samsung EM Broadcom 評估中；LG Innotek+UTI**（2026-06-11）⭐更新
+- [[technologies/glass-substrate]] — 玻璃核心基板（TGV）；TGV 技術障礙具體化（雷射能量波動/微裂紋/sub-10µm 金屬化）；Intel OFC 2026 CPO 原型（2026-06-18）⭐更新
 - [[technologies/hbf]] — **HBF（High Bandwidth Flash）**；TSV 堆疊 NAND；SanDisk 2H26 樣品；SK Hynix+SanDisk 標準化；Hanmi TCB 設備 2H26 首交付（2026-06-11）⭐新增
 
 ---
@@ -60,6 +60,10 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-06-18_trendforce_copos-glass-foplp-taiwan]] — TrendForce：**TSMC CoPoS 310×310mm 面板再確認；玻璃核心基板列為下一里程碑（2030 年後）**；TGV 技術障礙具體化；台灣面板廠 FOPLP 量產實績 620×750mm（2026-06-18）⭐新增
+- [[sources/2026-06-18_wccftech_intel-glass-cpo-ofc2026]] — Wccftech：**Intel OFC 2026 玻璃基板 + CPO 原型曝光**（4+4+8 chiplet + 8 CPO 晶片）；量產時程落後 Nvidia/AMD（2029-30 vs 2027-28）（2026-06-18）⭐新增
+- [[sources/2026-06-18_semieng_ucie3-technical-deepdive]] — SemiEngineering：**UCIe 3.0 技術細節深度解析**——64GT/s quarter-rate、BER 差異化、Arm CHI 映射、open-drain 緊急降頻接腳（2026-06-18）⭐新增
+- [[sources/2026-06-18_imec_iii-v-chiplet-rf-laser-bonding]] — imec：**雷射輔助接合用於 III-V Chiplet 系統級整合**；300mm RF 矽中介層平台；對位精度 <600nm（2026-06-18）⭐新增
 - [[sources/2026-06-17_digitimes_amkor-tsmc-arizona-deal]] — DIGITIMES：**TSMC + Amkor 簽署 10 年期亞利桑那先進封裝協議**；美國本土晶圓代工 + OSAT 一站式供應鏈（2026-06-17）⭐新增
 - [[sources/2026-06-15_trendforce_skhynix-hbm4e-sample-timeline]] — TrendForce：**SK hynix HBM4E 樣品時程提前至 6-7 月**；Samsung 1c+4nm/14-16Gbps/4TB/s；NVIDIA Rubin Ultra 384GB/GPU（2026-06-15）⭐新增
 - [[sources/2026-06-15_trendforce_tsmc-cowos-gap-narrowing]] — TrendForce：**TSMC CoWoS 供需缺口 20%→10%**（2026 年底）；~200K wsm 總產能；CoPoS 認證 6 月/試產 2027 中/量產 2028-29（2026-06-15）⭐新增
@@ -221,4 +225,11 @@
 - [[sources/2025-12-08_trendforce_cowos-booked-ase-cowop]] — TrendForce：CoWoS-L/S 全訂滿；ASE CoWoP 與 Amkor Arizona 補位（2025-12-08）⭐新增
 - [[sources/2025-12-04_trendforce_tsmc-ap7-arizona-p6]] — TSMC AP7 啟用；Arizona P6 封裝基地計畫；CapEx CAGR 24%（2025-12-04）⭐新增
 - [[sources/2025-12-01_trendforce_intel-amkor-songdo-emib-outsource]] — Intel 首次 EMIB 外包至 Amkor Songdo K5；EMIB-M 量產/EMIB-T 2026-27；2,700 億韓元投資（2025-12-01）⭐新增
-- [[sources/2025-12-01_semiengineering_thermal-management]] — 先進封裝熱管理：TSMC 直接矽液冷、3D 熱點、TIM 演進（2025-
+- [[sources/2025-12-01_semiengineering_thermal-management]] — 先進封裝熱管理：TSMC 直接矽液冷、3D 熱點、TIM 演進（2025-12）⭐新增
+- [[sources/2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding]] — IFTLE 648：Unimicron 玻璃核心基板 + Cu-Cu 混合接合可靠性研究（2025-12-01）⭐新增
+- [[sources/2025-10-07_trendforce_hybrid-bonder-market-2b]] — 混合接合設備市場 $2B（2028）；韓國 Hanmi/Hanwha/LG 競爭；Besi/ASMPT 全球領先（2025-10-07）⭐新增
+- [[sources/2025-09-19_trendforce_stmicro-foplp-france]] — STMicro 法國面板級封裝試驗線 2026 Q3 啟動（2025-09-19）⭐新增
+- [[sources/2025-09-12_trendforce_foplp-competitive-2025]] — FOPLP 競爭格局：Powertech 90% 良率；TSMC 玻璃 vs Samsung；Resonac+AMAT+TEL 生態（2025-09-12）⭐新增
+- [[sources/2025-08-12_semianalysis_hbm-roadmap]] — SemiAnalysis：HBM roadmap；HBM4 custom base die、shoreline area、XPU-HBM routing density 與 CoWoS 依賴（2025-08-12）⭐新增
+- [[sources/2025-08-05_3dincites_iftle636-samsung-lsb-micron-virginia]] — IFTLE 636：三星 LSB 矽橋接 Chiplet；Micron 維吉尼亞 HBM 封裝廠計畫（2025-08-05）⭐新增
+- [[sources/2025-07-01_3dincites_micron-onshore-tsmc-copos]] — IFTLE 634：Micron 本土化投資；TSMC CoP

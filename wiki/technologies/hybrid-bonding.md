@@ -3,8 +3,8 @@ title: "混合接合 / Hybrid Bonding"
 category: technology
 tags: [3D, hybrid-bonding, Cu-Cu, SoIC, ECTC, advanced-packaging, DRAM, COP, 4F2, Sn-damascene, damascene-interconnect, PFAS-free]
 created: 2026-04-24
-updated: 2026-06-07
-sources: [2026-05-21_semiecosystem_ectc2026-cpo-hybridbonding-plp, 2026-04-24_initial-survey, 2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-03-01_3dincites_besi-packaging-power-shift, 2026-01-13_semiengineering_hbm4-microbumps, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-19_semieng_advanced-packaging-limits, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-03-27_3dincites_copper-grain-hybrid-bonding, 2025-01-01_semieng_making-hybrid-bonding-better, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2026-04-29_semiwiki_cea-leti-ectc2026-hybrid-bonding, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2024-02-09_semianalysis_hybrid-bonding-process-flow, 2026-05-19_semiconductor-digest_ev-group-ectc2026-hybrid-bonding, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-04-19_semiwiki_apple-m5-cucu-hybrid-bonding-shipped, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang]
+updated: 2026-06-18
+sources: [2026-05-21_semiecosystem_ectc2026-cpo-hybridbonding-plp, 2026-04-24_initial-survey, 2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-03-01_3dincites_besi-packaging-power-shift, 2026-01-13_semiengineering_hbm4-microbumps, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-19_semieng_advanced-packaging-limits, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-03-27_3dincites_copper-grain-hybrid-bonding, 2025-01-01_semieng_making-hybrid-bonding-better, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2026-04-29_semiwiki_cea-leti-ectc2026-hybrid-bonding, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2024-02-09_semianalysis_hybrid-bonding-process-flow, 2026-05-19_semiconductor-digest_ev-group-ectc2026-hybrid-bonding, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-04-19_semiwiki_apple-m5-cucu-hybrid-bonding-shipped, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-18_imec_iii-v-chiplet-rf-laser-bonding]
 related:
   - wiki/technologies/soic.md
   - wiki/technologies/cowos.md
@@ -391,6 +391,24 @@ ECTC 2025 的核心技術主題之一：
 - TGV 製程工具鏈與 TSV 完全不同，不可直接沿用。
 
 參見：[[technologies/glass-substrate]] 玻璃基板專屬頁面。
+
+---
+
+## 2026-06-18 更新 / Update
+
+### imec：雷射輔助接合（Laser-Assisted Bonding）用於 III-V Chiplet 異質整合（新興研究方向）
+
+*Source: imec 新聞稿，2026-06-11；論文發表於 IMS/RFIC 與 ECTC 2026*
+
+imec 在其 300mm **RF 矽中介層平台**上展示系統級 III-V chiplet 整合的新進展，採用與 [[technologies/soic]] 主流 Cu-Cu 混合接合**不同的接合技術路徑**——**雷射輔助接合**，應用場景聚焦於 RF/毫米波（mmWave）/次太赫茲（sub-THz）系統，而非 AI/HPC 邏輯-記憶體堆疊：
+
+- **高密度 MIMCAP**：採用高 k AlHfO 介電材料 + 3D 氧化物柱狀 BEOL 結構，電容密度提升 **10–100 倍**。
+- **被動元件建模框架**：驗證頻率範圍達 **~300GHz**。
+- **雷射輔助接合精度數據**：對位精度 **<600nm**；43 個元件測試中旋轉誤差 **<0.05°**；110–170GHz 範圍內反射損耗低於 **-15dB**。
+
+**與主流 Cu-Cu 混合接合的關係**：本技術應用場景（III-V 化合物半導體 chiplet × RF Si 中介層 × 毫米波系統）與 wiki 現有 Cu-Cu 混合接合內容（聚焦 AI/HPC 邏輯-記憶體 3D 堆疊，如 SoIC、HBM）為**互補而非重疊**的技術分支。雷射輔助接合可視為混合接合家族中針對「異質材料系統（III-V + Si）+ 高頻訊號完整性」場景的專用變體。
+
+**wiki 含義**：本條目代表先進封裝領域一個目前尚無獨立 wiki 頁面涵蓋的新興研究方向——「RF 矽中介層異質整合」。暫先記錄於本頁作為混合接合技術家族的延伸分支；若後續持續蒐集到相關研究（imec、其他研究機構），建議評估獨立成立 `wiki/technologies/rf-silicon-interposer.md` 或 `wiki/concepts/` 頁面。
 
 ---
 

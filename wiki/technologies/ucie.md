@@ -3,8 +3,8 @@ title: "UCIe — Universal Chiplet Interconnect Express"
 category: technology
 tags: [standards, chiplet, interconnect, UCIe, 3D, hybrid-bonding, UCIe-3.0]
 created: 2026-04-24
-updated: 2026-05-22
-sources: [2026-04-24_initial-survey, 2026-04-01_semiengineering_chiplets-2026, 2025-01-28_3dincites_iftle-618-ucie-standard-vs-ucie3, 2025-01-01_semieng_ucie-1-6t-io-chiplets-ai-datacenter, 2025-09-03_uciexpress_ucie30-spec, 2026-03-05_uciexpress_chiplet-summit-2026]
+updated: 2026-06-18
+sources: [2026-04-24_initial-survey, 2026-04-01_semiengineering_chiplets-2026, 2025-01-28_3dincites_iftle-618-ucie-standard-vs-ucie3, 2025-01-01_semieng_ucie-1-6t-io-chiplets-ai-datacenter, 2025-09-03_uciexpress_ucie30-spec, 2026-03-05_uciexpress_chiplet-summit-2026, 2026-02-12_semieng_ucie3-technical-deepdive]
 related:
   - wiki/technologies/hybrid-bonding.md
   - wiki/technologies/hbm4.md
@@ -150,6 +150,35 @@ UCIe 2.0 引入 **UCIe-3D** 最佳化：
 - **解法：I/O chiplet 架構**——主晶片（GPU/ASIC）在先進節點，I/O die 在最佳化成熟節點，透過 UCIe 互連。
 - **資料中心 1.6T 需求**：機架功耗/熱密度限制推動每通道頻寬 400G→800G→1.6T，UCIe 為 chiplet 間提供標準化介面。
 - **Samsung MDI Alliance** 與 **TSMC 3DFabric Alliance** 是各自生態系整合框架（兩者互補而非對立）。
+
+---
+
+---
+
+## 2026-06-18 更新 / Update
+
+### UCIe 3.0 技術細節深度解析（SemiEngineering，Bryon Moyer，2026-02-12）
+
+第三方分析師深度解析補充先前（2025-09-03 官方規格、2026-03-05 Chiplet Summit）的時程性更新，提供以下具體技術數據（**注意：本文發布於 2026-02-12，時間點介於上述兩則更新之間，內容為對既有 UCIe 3.0 規格的技術細節補述，非新版本宣告**）：
+
+- **頻寬倍增路徑**：64 GT/s（同時保留 48 GT/s 選項），**僅適用於 UCIe-S / UCIe-A（2D/2.5D）**，不適用 3D（因 TSV 數量隨晶片面積而非周長擴展，頻寬已天然較高）。
+- **訊號技術**：採用 quarter-rate / QDR（Quad Data Rate）訊號方式以達成倍增頻寬。
+- **誤碼率（BER）差異化**：48 GT/s 目標 BER 10⁻¹⁵；64 GT/s 目標 BER 10⁻¹²（更高速率下放寬誤碼率要求以換取頻寬）。
+- **功耗目標**：0.5 pJ/bit（48 GT/s）→ 0.75 pJ/bit（64 GT/s）。
+- **背向相容**：凸塊位置（bump location）與前代相容，降低換代設計成本。
+- **韌體/管理性提升**：
+  - 統一韌體載入機制，跨 chiplet 一致化
+  - 優先通知（priority notification）移至 sideband，避免 Root-of-Trust（RoT）延遲；透過拉低時鐘 8 個週期觸發 64 UI 優先訊號
+  - Sideband 傳輸距離由 25mm 延伸至 **100mm**，支援星狀拓樸（star topology）
+  - 新增 open-drain 接腳，用於同步快速降頻保護（throttling）/ 緊急關閉
+  - 支援連續串流（continuous streaming）與彈性時鐘頻率，避免 RF beating 干擾
+  - 支援免重新初始化的重新校準（recalibration without reinit）
+  - 新增 **L2 深度睡眠模式**，搭配最小化喚醒偵測電路，提升待機省電
+  - **Arm CHI（Coherent Hub Interface）協定**現已可映射至 UCIe，加入 PCIe、CXL 之後成為第三個主要映射協定
+- **業界回應**：Alphawave Semi、Cadence、Synopsys、Siemens EDA、Arm 均表態支持；UCIe Consortium 主席 Debendra Das Sharma（Intel Senior Fellow）確認上述功能已「就位」（major technical components are now in place）。
+- **競爭標準脈絡**：文章指出 **BoW（Bunch of Wires）** 仍是 UCIe 之外，針對極簡化/最低功耗設計場景的主要競爭標準選項。
+
+**wiki 含義**：本次更新為既有 UCIe 3.0 條目補上具體量化數據（BER、功耗 pJ/bit、sideband 距離），並首次記錄 Arm CHI-over-UCIe 映射 — 顯示 UCIe 正從單純「電氣層標準」往「涵蓋快取一致性協定的完整互連棧」演進，與先前 wiki 中「UCIe 標準能否統一 memory interface」的未解問題形成呼應。
 
 ---
 

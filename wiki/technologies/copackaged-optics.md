@@ -3,8 +3,8 @@ title: "共封裝光學元件 / Co-Packaged Optics (CPO) — TSMC-COUPE™ & Eco
 category: technology
 tags: [CPO, co-packaged-optics, COUPE, TSMC, GlobalFoundries, Samsung, photonics, AI, HPC, networking, OCI-MSA, DWDM, Broadcom, NVIDIA, glass-substrate, ULCVD, TGV, Spectrum-X, NVL72]
 created: 2026-04-25
-updated: 2026-06-11
-sources: [2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-05-07_trendforce_globalfoundries-silicon-photonics-scale-cpo, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon]
+updated: 2026-06-18
+sources: [2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-05-07_trendforce_globalfoundries-silicon-photonics-scale-cpo, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-18_wccftech_intel-glass-cpo-ofc2026]
 related:
   - wiki/entities/tsmc.md
   - wiki/technologies/cowos.md
@@ -214,3 +214,18 @@ TSMC COUPE™ 與 GF SCALE 的競爭表明 CPO 市場正從「單一廠商主導
 | 定位 | 第三方 CPO 生態 | Intel 封裝生態整合 |
 
 *Source: Semiecosystem (Mark LaPedus) 2026-05-21；ECTC 2026 Paper abstracts*
+
+---
+
+## 2026-06-18 更新 / Update
+
+### Intel OFC 2026 玻璃基板 + CPO 原型曝光；Nvidia/AMD 量產時程競賽
+
+*Source: Wccftech（Hassan Mujtaba，引述 Dr. Ian Cutress @ More Than Moore），2026-05-20*
+
+- Intel 於 OFC 2026 展示玻璃核心基板 CPO 模組原型：4 運算 chiplet + 4 DRAM chiplet + 8 小型 chiplet + **8 個 CPO 光學晶片**分布基板周邊，為目前已知最具體的 Intel CPO 封裝架構模型。
+- **市場時程競賽**：Nvidia 與 AMD 目標 **2027–2028** 推出首款 CPO 方案；Intel + Amkor（3 年量產準備聲明）暗示落點在 **2029–2030**，落後競爭對手 1–2 年。
+- **基板材料轉換驅動力**：Ajinomoto（有機基板材料龍頭）因 AI 帶動的基板短缺漲價，加速產業評估玻璃基板作為替代路線。
+- 詳見 [[technologies/glass-substrate]] 完整技術細節。
+
+**wiki 含義**：本次更新確認 Intel 的 CPO 量產時程落後於 Nvidia/AMD 競爭對手，強化先前 wiki 中「CPO 競賽」的時程落差論述；同時將 Intel 的 CPO 戰略明確錨定在玻璃基板路線上（而非傳統有機基板），與 GF/Corning、Samsung 等其他陣營的耦合方案形成對照。
