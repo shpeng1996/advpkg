@@ -3,8 +3,8 @@ title: "FOPLP — 扇出面板級封裝 / Fan-Out Panel-Level Packaging"
 category: technology
 tags: [fan-out, panel-level, TSMC, Samsung, ASE, Powertech, Innolux, CoPoS, InFO, cost-reduction]
 created: 2026-05-03
-updated: 2026-06-09
-sources: [2025-09-12_trendforce_foplp-competitive-2025, 2026-04-13_trendforce_copos-pilot, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-21_3dincites_acm-wlp-plp-process-trends, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-09_digitimes_ase-panel-level-packaging-310mm]
+updated: 2026-06-17
+sources: [2025-09-12_trendforce_foplp-competitive-2025, 2026-04-13_trendforce_copos-pilot, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-21_3dincites_acm-wlp-plp-process-trends, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-15_digitimes_manz-310mm-foplp-ecd-equipment, 2026-06-13_digitimes_linkotech-foplp-rollout-traction]
 related:
   - wiki/technologies/copos.md
   - wiki/technologies/info-wmcm.md
@@ -39,6 +39,9 @@ SemiAnalysis 2022 年的技術框架指出，fanout RDL、embedded silicon bridg
 *Source: DIGITIMES 2026-02-25（Flora Wang）*
 
 ---
+
+**設備供應鏈新進展**（2026-06-17 新增）：Manz Asia 據報已交付首台 **310mm × 310mm PLP 電化學沉積（ECD）量產設備**，是 FOPLP 設備生態系朝 310mm 規格收斂的又一里程碑（呼應 ASE 已採用之 310mm 規格）。另據報導，**Linkotech** 在 FOPLP 設備市場持續取得進展，已通過一家**低軌衛星（LEO）客戶**認證，首批設備預計 **2026 上半年**交付——顯示 FOPLP 設備需求已從傳統運算/AI 應用，擴展至衛星通訊等新興市場。兩篇報導均因付費牆僅取得摘要，細節待後續補充。
+*Source: DIGITIMES 2026-06-15（Monica Chen）、DIGITIMES 2026-06-13（Flora Wang）*
 
 ## 關鍵規格 / Key Specs
 
