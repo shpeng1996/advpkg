@@ -1374,28 +1374,42 @@
 `.git/index.lock` 問題持續（跨平台掛載鎖定衝突）；所有檔案已正確寫入磁碟。建議在 Windows 原生環境執行：
 `git add -A && git commit -m "2026-06-12 daily collect: 3 articles, 4 wiki pages updated"` 以完成版控。
 
-## [2026-06-17] collect | 每日自動蒐集 — 先進封裝最新動態
-- 搜尋查詢數：10 組（7 組主題查詢：TSMC 封裝、HBM 記憶體、混合接合、面板級封裝、學術研究、標準動態、競爭對手；3 組補充查詢以擴大 2026-06-13~17 覆蓋範圍）
-- 成功抓取：6 篇（articles/ 6, papers/ 0, reports/ 0）— 其中 2 篇完整內容（TrendForce），4 篇付費牆部分摘要（DIGITIMES, fetch_status: partial）
-- 失敗/跳過：約 25+ 篇（已收錄 ~20、低相關 ~3、付費牆無摘要 ~2）
-- 學術代理：UNAVAILABLE ✗（本次搜尋未發現新的 ECTC/IEEE/arXiv 論文，僅涵蓋產業新聞）
-- 新增 wiki 頁面：6 頁（sources/2026-06-15_trendforce_skhynix-hbm4e-sample-timeline.md, sources/2026-06-15_trendforce_tsmc-cowos-gap-narrowing.md, sources/2026-06-15_digitimes_manz-foplp-ecd-equipment.md, sources/2026-06-12_digitimes_samsung-packaging-gap.md, sources/2026-06-13_digitimes_linkotech-foplp-traction.md, sources/2026-06-17_digitimes_amkor-tsmc-arizona-deal.md）
-- 更新 wiki 頁面：6 頁（technologies/cowos.md, technologies/hbm4.md, technologies/foplp.md, entities/tsmc.md, entities/samsung.md, entities/amkor.md）+ index.md
-- 主要新知識：TSMC CoWoS 供需缺口預估將從 20% 收斂至 10%（2026 年底），總產能達 ~200K wsm，CoPoS 量產時程進一步明確（2028-29，NVIDIA Feynman 首發）；SK hynix HBM4E 樣品時程提前至 6-7 月，加劇與 Samsung 的競爭；TSMC 與 Amkor 簽署 10 年期協議擴大亞利桑那先進封裝產能，強化美國本土供應鏈布局；FOPLP 設備生態系持續擴展（Manz 310mm ECD 設備、Linkotech 拓展至 LEO 衛星客戶）。
+## [2026-06-19] collect | 每日自動蒐集 — TSMC CoPoS/玻璃基板（重複來源）、Vera Rubin HBM4 供應商確認、Intel EMIB-T fab 量產
+- 搜尋查詢數：7 組（TSMC CoWoS/SoIC/CoPoS、HBM4/Vera Rubin、混合接合、面板封裝、Intel EMIB、市場預測、UCIe 標準）
+- 成功抓取：**3 篇**（articles/ 3 篇）
+- 失敗/跳過：多篇（已收錄多筆、低相關少數、付費牆 1）
+- 新增 wiki 頁面：3 頁（來源摘要頁）
+- 更新 wiki 頁面：5 頁（entities/nvidia.md、entities/samsung.md、entities/intel.md、technologies/emib.md、index.md）
+
+### 新增 Raw 檔案
+1. `raw/articles/2026-06-19_iconnect007_tsmc-copos-foplp-glass-core.md`
+2. `raw/articles/2026-06-19_techtimes_vera-rubin-hbm4-suppliers.md`
+3. `raw/articles/2026-06-19_tomshardware_intel-emib-t-fab-rollout.md`
+
+### 新增 Wiki 來源頁
+- `wiki/sources/2026-06-19_iconnect007_copos-foplp-glass-core.md`
+- `wiki/sources/2026-06-19_techtimes_vera-rubin-hbm4-suppliers.md`
+- `wiki/sources/2026-06-19_tomshardware_intel-emib-t-fab-rollout.md`
+
+### 更新 Wiki 頁面
+- `wiki/entities/nvidia.md`：新增 2026-06-19 條目（Vera CPU 交付 Anthropic/OpenAI/SpaceX/Oracle；首批雲端服務商；三星/LG 股價反應；首爾行程/機器人合作背景）
+- `wiki/entities/samsung.md`：新增 2026-06-19 條目（GTC Taipei 後三星股價單日 +10.1% 創紀錄漲幅）
+- `wiki/entities/intel.md`：新增 2026-06-19 條目（EMIB-T 今年內 fab 量產；MediaTek/Amazon 客戶；Microsoft Maia $15B 合約；Jaguar Shores 推測為首款產品；成本/良率比較數據）
+- `wiki/technologies/emib.md`：新增 2026-06-19 條目（45µm→35/25µm 凸塊間距路線圖；0.25pJ/bit；MIM 電容+Cu 接地層；CoWoS-L 產能爬坡對照；成本比較 $900-1000 vs 低數百美元）
+- `wiki/index.md`：頁面計數 217→220；來源計數 181→184；新增 3 來源條目；更新 intel/samsung/emib 摘要
+
+### 主要新知識
+1. **Intel EMIB-T 詳細技術經濟性首次量化**：成本（每晶片低數百美元 vs. CoWoS Rubin 級 $900–1000）、晶圓利用率（EMIB ~90% vs. 中介層方案 ~60%），補足先前僅有規格數據、缺乏成本對比的空缺。
+2. **Jaguar Shores 確認為 EMIB-T 可能首款產品**（Falcon Shores 後繼，92.5×92.5mm 測試晶片、4 運算 tile + 8 個 HBM4 介面）。
+3. **Vera CPU 客戶交付名單首次具體化**：Anthropic、OpenAI、SpaceX、Oracle 已獲測試單位；GTC Taipei 演講後三星股價單日 +10.1%（創紀錄）、LG 電子 +約 30%，市場反應領先供應商正式確認時程。
+
+### ⚠️ 資料品質發現：重複來源偵測
+`raw/articles/2026-06-19_iconnect007_tsmc-copos-foplp-glass-core.md` 為 I-Connect007/EIN Presswire 對 TrendForce 原文（2026-06-17 發布）的轉載，內容與前一日已收錄之 `wiki/sources/2026-06-18_trendforce_copos-glass-foplp-taiwan.md` 幾乎完全相同。因轉載 URL 不同，未被 `_collected_urls.txt` 去重機制擋下。處理方式：仍依規範存入 raw/ 與登錄 URL（符合 URL 去重原則），但在來源摘要頁明確標記重複，**不重複更新** `technologies/copos.md`、`foplp.md`、`glass-substrate.md`、`entities/tsmc.md`（已於 2026-06-18 反映此內容）。建議後續 collect 流程可考慮加入「內容層級去重」（如標題/關鍵數據比對），而非僅依賴 URL，以更早攔截此類跨網域轉載。
 
 ### ⚠️ Git Commit 狀態
-`.git/index.lock` 跨平台掛載鎖定問題預期持續存在；所有檔案已正確寫入磁碟（6 篇 raw 文章 + 6 篇 source 頁面 + 6 篇更新頁面 + index.md + log.md + _collected_urls.txt）。建議在 Windows 原生環境執行：
-`git add -A && git commit -m "2026-06-17 daily collect: 6 articles, 7 wiki pages updated"` 以完成版控。
-
----
-
-## [2026-06-18] collect | 每日自動蒐集 — CoPoS/玻璃基板 TGV 細節、UCIe 3.0 技術深度解析、imec III-V Chiplet 雷射接合
-- 搜尋查詢數：9 組（TSMC 封裝動態、HBM 記憶體、混合接合、面板級封裝、學術研究 ECTC/IEDM、標準動態 UCIe/JEDEC、競爭對手 Intel/Samsung，含中英文查詢）
-- 成功抓取：4 篇（articles/ 4, papers/ 0, reports/ 0）
-- 失敗/跳過：2 篇 — Digitimes（付費牆，且與已收錄 2026-06-04 TrendForce SK-TSMC 會面報導內容重複）、Wiley 學術論文（Cloudflare 機器人驗證阻擋，無法繞過）
-- 新增 wiki 頁面：4 頁（sources/2026-06-18_trendforce_copos-glass-foplp-taiwan.md, sources/2026-06-18_imec_iii-v-chiplet-rf-laser-bonding.md, sources/2026-06-18_semieng_ucie3-technical-deepdive.md, sources/2026-06-18_wccftech_intel-glass-cpo-ofc2026.md）
-- 更新 wiki 頁面：5 頁（technologies/copos.md, technologies/glass-substrate.md, technologies/ucie.md, technologies/copackaged-optics.md, technologies/hybrid-bonding.md）+ index.md
-- 主要新知識：TrendForce 確認 TSMC CoPoS 310×310mm 面板規格並將玻璃核心基板列為 CoPoS 之後的下一里程碑（2030 年後量產），同時首次具體化 TGV 製程障礙（雷射能量波動、微裂紋、sub-10µm 金屬化）並量化台灣面板廠 FOPLP 先行者優勢（620×750mm 量產實績）；SemiEngineering 深度解析補充 UCIe 3.0 具體技術數據（BER 差異化、功耗目標、Arm CHI-over-UCIe 映射）；imec 展示雷射輔助接合技術用於 III-V Chiplet 在 RF 矽中介層上的系統級整合，為混合接合技術家族新增 RF/毫米波應用分支；Intel 於 OFC 2026 曝光玻璃基板 + CPO 原型，確認其量產時程（2029-30）落後 Nvidia/AMD（2027-28）。
+`.git/index.lock` 問題持續（跨平台掛載鎖定衝突）；所有檔案已正確寫入磁碟。建議在 Windows 原生環境執行：
+`git add -A && git commit -m "2026-06-19 daily collect: 3 articles, 5 wiki pages updated (1 duplicate source flagged)"` 以完成版控。
+米波應用分支；Intel 於 OFC 2026 曝光玻璃基板 + CPO 原型，確認其量產時程（2029-30）落後 Nvidia/AMD（2027-28）。
 
 ### ⚠️ Git Commit 狀態
 本次 ingest 已完成所有檔案寫入並透過 `git status --porcelain` 確認 15 項變更（4 篇新 raw 文章 + 4 篇新 source 頁面 + 5 篇技術頁面更新 + index.md + _collected_urls.txt）。`git commit` 因 `.git/index.lock` 持續存在且沙箱環境無權限移除（Operation not permitted）而失敗，與 2026-06-17 記錄的跨平台掛載鎖定問題相同。建議於 Windows 原生環境執行：

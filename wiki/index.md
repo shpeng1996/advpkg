@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-06-18
-**頁面總數 Total Pages**：217
-**原始來源數 Sources**：181
+**更新時間 Updated**：2026-06-19
+**頁面總數 Total Pages**：220
+**原始來源數 Sources**：184
 
 ---
 
@@ -15,8 +15,8 @@
 ## 實體 Entities（公司、組織）
 
 - [[entities/tsmc]] — 台積電；全球最大晶圓代工廠；CoWoS/SoIC 技術領導者；2026 年產能瓶頸核心
-- [[entities/intel]] — 英特爾；IDM；EMIB-T（25µm FLI / >9×reticle）；**Xeon 6+ 18A 首款商業 CPU**；Ayar Labs NVLink Fusion CPO 設計定案（2026-06-11）⭐更新
-- [[entities/samsung]] — 三星；IDM + Foundry + Memory；**光州新封裝基地（TCB 231K + HCB 19.5K/月，2026 年底）；TCB→HCB 2029 轉型；越南 $15 億測試廠**；HBM4 >11.7 Gbps（2026-06-11）⭐更新
+- [[entities/intel]] — 英特爾；IDM；EMIB-T 今年內 fab 量產（45µm→35/25µm 路線圖、Jaguar Shores 首款產品推測）；**Xeon 6+ 18A 首款商業 CPU**（2026-06-19）⭐更新
+- [[entities/samsung]] — 三星；IDM + Foundry + Memory；**光州新封裝基地（TCB 231K + HCB 19.5K/月，2026 年底）**；GTC Taipei 後股價單日 +10.1%（2026-06-19）⭐更新
 - [[entities/sk-hynix]] — SK Hynix；HBM 市場領導者；M15X 廠提前投產（2026-02）；NVIDIA HBM4 份額 ~70%；2034 年三倍晶圓產能路線圖；375 層 NAND 年底量產；鉬字元線新架構；TC Bonder 44.2 億韓元訂單（2026-06-12）⭐更新
 - [[entities/asmpt]] — ASMPT Limited；TCB/混合接合/Photonics-CPO 設備領導廠商；Q1 2026 訂單 27M +71.6% YoY；NEXX 出售給 AMAT⭐新增
 - [[entities/ase-group]] — ASE Group；全球最大 OSAT；CoWoP 面板封裝；K28 廠 2026 年完工；SPIL 2026 年累計廠房收購 >NT$227 億；5 月營收 NT$630.3 億（+28.6% YoY）⭐更新
@@ -42,7 +42,7 @@
 - [[technologies/ucie]] — UCIe；Chiplet 互連標準；UCIe 3.0：64GT/s quarter-rate、BER 差異化、Arm CHI 映射、L2 深度睡眠（2026-06-18）⭐更新
 - [[technologies/copackaged-optics]] — TSMC-COUPE™ 共封裝光學元件（CPO）；Intel OFC 2026 玻璃基板原型曝光；量產落後 Nvidia/AMD（2026-06-18）⭐更新
 - [[technologies/info-wmcm]] — InFO（2016 商轉）+ WMCM（2026 量產）；TSMC 行動晶片封裝旗艦；Apple A20 iPhone18 採用 WMCM⭐新增
-- [[technologies/emib]] — EMIB（Embedded Multi-Die Interconnect Bridge）；Intel 2.5D 局部矽橋；代工廠中立；120×120mm；Google TPU v9 2027 計畫採用⭐新增
+- [[technologies/emib]] — EMIB（Embedded Multi-Die Interconnect Bridge）；Intel 2.5D 局部矽橋；代工廠中立；EMIB-T 今年內 fab 量產，45µm→35/25µm 路線圖（2026-06-19）⭐更新
 - [[technologies/foveros]] — Foveros；Intel 3D 堆疊；Foveros Direct 3D（<10µm Cu-Cu，2026 量產）；875 GB/s 3D 頻寬⭐新增
 - [[technologies/foplp]] — FOPLP（扇出面板級封裝）；Powertech 90% 試驗良率；TSMC CoPoS 玻璃面板 310×310mm；量產 2028–29⭐新增
 - [[technologies/glass-substrate]] — 玻璃核心基板（TGV）；TGV 技術障礙具體化（雷射能量波動/微裂紋/sub-10µm 金屬化）；Intel OFC 2026 CPO 原型（2026-06-18）⭐更新
@@ -60,6 +60,9 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-06-19_tomshardware_intel-emib-t-fab-rollout]] — Tom's Hardware：**Intel EMIB-T 今年內 fab 量產部署**——45µm→35/25µm 凸塊間距路線圖、0.25pJ/bit 能效、MIM 電容+Cu 接地層、CoWoS-L 成本/良率對比（$900-1000 vs 低數百美元）、Jaguar Shores 首款產品推測（2026-06-19）⭐新增
+- [[sources/2026-06-19_techtimes_vera-rubin-hbm4-suppliers]] — Tech Times：**Vera Rubin 全面量產，Samsung/SK hynix/Micron 三大 HBM4 供應商確認**；Vera CPU 交付 Anthropic/OpenAI/SpaceX/Oracle；三星/LG 股價反應（2026-06-19）⭐新增
+- [[sources/2026-06-19_iconnect007_copos-foplp-glass-core]] — I-Connect007（轉載 TrendForce）：TSMC CoPoS/FOPLP/玻璃核心基板——**與 2026-06-18 來源內容重複，已標記，未重複更新技術頁面**（2026-06-19）⭐新增
 - [[sources/2026-06-18_trendforce_copos-glass-foplp-taiwan]] — TrendForce：**TSMC CoPoS 310×310mm 面板再確認；玻璃核心基板列為下一里程碑（2030 年後）**；TGV 技術障礙具體化；台灣面板廠 FOPLP 量產實績 620×750mm（2026-06-18）⭐新增
 - [[sources/2026-06-18_wccftech_intel-glass-cpo-ofc2026]] — Wccftech：**Intel OFC 2026 玻璃基板 + CPO 原型曝光**（4+4+8 chiplet + 8 CPO 晶片）；量產時程落後 Nvidia/AMD（2029-30 vs 2027-28）（2026-06-18）⭐新增
 - [[sources/2026-06-18_semieng_ucie3-technical-deepdive]] — SemiEngineering：**UCIe 3.0 技術細節深度解析**——64GT/s quarter-rate、BER 差異化、Arm CHI 映射、open-drain 緊急降頻接腳（2026-06-18）⭐新增

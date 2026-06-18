@@ -3,8 +3,8 @@ title: "三星 / Samsung"
 category: entity
 tags: [IDM, foundry, memory, advanced-packaging, X-Cube, HBM, ISSCC2026, I-CubeS, LPDDR6]
 created: 2026-04-24
-updated: 2026-06-17
-sources: [2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2025-12-30_trendforce_samsung-hbm-surge, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2025-08-05_3dincites_iftle636, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit, 2026-06-10_trendforce_samsung-gwangju-packaging-base, 2026-06-12_digitimes_samsung-packaging-gap-tsmc-intel, 2026-06-15_trendforce_skhynix-hbm4e-sample-timeline-pulled-forward]
+updated: 2026-06-19
+sources: [2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2025-12-30_trendforce_samsung-hbm-surge, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2025-08-05_3dincites_iftle636, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit, 2026-06-10_trendforce_samsung-gwangju-packaging-base, 2026-06-12_digitimes_samsung-packaging-gap-tsmc-intel, 2026-06-15_trendforce_skhynix-hbm4e-sample-timeline-pulled-forward, 2026-06-19_techtimes_vera-rubin-hbm4-suppliers]
 related:
   - wiki/entities/tsmc.md
   - wiki/entities/intel.md
@@ -31,6 +31,9 @@ related:
 ---
 
 ## 近期動態 / Recent Developments
+
+- **2026-06-19（補充來源）**：**GTC Taipei 黃仁勳演講（6/1）後三星電子股價單日 +10.1%（創紀錄漲幅）**，市場反應領先三星 HBM4 供應商身分的正式確認（6/5 首爾）。同篇報導補充：Nvidia Vera CPU（首款自製資料中心 CPU）已於 5 月中交付測試單位給 Anthropic、OpenAI、SpaceX、Oracle；首批雲端服務商為 AWS、Google Cloud、Microsoft Azure、Oracle。LG 電子同日股價 +約 30%。此與既有 2026-06-05/06-09 供應商確認內容一致，無矛盾，僅補充股市反應數據。
+  *Source: Tech Times 2026-06-02（Allen Lee）*
 
 - **2026-06-17（⭐最新）**：**DIGITIMES 報導：Samsung 先進封裝能力仍落後 TSMC、Intel**——儘管 Samsung 在 HBM 與晶圓代工業務取得進展（HBM4E 首發出貨、獲利提升），先進封裝整體競爭力仍被認為落後台積電與 Intel。同期 TrendForce（6/15）報導指出 Samsung HBM4E 規格定為 1c+4nm 製程、14–16Gbps、~4TB/s，正與 SK hynix 提前出貨樣品的時程展開激烈競爭。（DIGITIMES 原文因付費牆僅取得摘要。）
   *Source: DIGITIMES 2026-06-12（Sherri Wang）；TrendForce 2026-06-15*

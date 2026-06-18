@@ -3,8 +3,8 @@ title: "EMIB — Embedded Multi-Die Interconnect Bridge"
 category: technology
 tags: [Intel, 2.5D, silicon-bridge, chiplet, HBM4, Foveros, glass-substrate, EMIB-T, EMIB-M, silicon-capacitors, power-delivery]
 created: 2026-05-03
-updated: 2026-05-29
-sources: [2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-03-05_trendforce_intel-emib-billions, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-03-03_trendforce_intel-clearwater-forest, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate]
+updated: 2026-06-19
+sources: [2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-03-05_trendforce_intel-emib-billions, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-03-03_trendforce_intel-clearwater-forest, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-19_tomshardware_intel-emib-t-fab-rollout]
 related:
   - wiki/entities/intel.md
   - wiki/entities/amkor.md
@@ -76,6 +76,9 @@ EMIB 是 Intel 的局部矽橋接技術：將一小片高密度矽橋（bridge d
 - **2026-03**：Clearwater Forest 展示 EMIB 3.5D 組合架構（EMIB + Foveros Direct 3D）
 - **2026-05**：EMIB 技術驗證良率達 **~90%**；Google（TPU v8e 2H27）、Meta（自研 CPU 2H28）確認採用；Intel CFO 表示接近完成「數十億美元」封裝大單
 - **2026-05**：EMIB 全球產能加速：俄勒岡（主力）+ 越南 SHTP（18A 產品）+ 台灣設備訂單 2H26 交貨（E&R/C Sun/AblePrint）
+- **2026-06-19（補充來源）**：**Tom's Hardware 報導 EMIB-T 今年內 fab 量產部署，並補充能效與成本比較數據**：EMIB-T 凸塊間距現況 **45µm**，路線圖目標 **35/25µm**；能效約 **0.25 pJ/bit**；新增 **MIM 電容**（雜訊抑制）+ **Cu 接地層**（訊號隔離）；橋接器加入 **TSV** 支援垂直供電；UCIe-A 速率 **≥32 Gb/s/pin**；支援 HBM3/HBM3E/HBM4/未來 HBM5；最大封裝 **120×180mm**、**38+ 橋接器**、**12+ reticle 級晶片**。成本比較（Bernstein/Investing.com 估算）：EMIB 每顆晶片成本「低數百美元」，相對 CoWoS（Rubin 級）約 **$900–1000**；晶圓利用率 EMIB ~**90%** vs. 中介層方案 ~**60%**。TSMC CoWoS 產能爬坡對照：**35K → 80K → 130K wpm**；Nvidia 佔 CoWoS 產能 **>60%**。具名/傳聞客戶：**MediaTek、Amazon**（EMIB-T）；Nvidia $5B 投資確認使用 EMIB+Foveros；**Microsoft Maia $15B 合約**；Google 2027 TPU v9（標準 EMIB）。首款 EMIB-T 產品可能為 **Jaguar Shores**（Falcon Shores 後繼，測試晶片 92.5×92.5mm，4 個運算 tile + 8 個 HBM4 介面）。Intel 封裝產能據點：Fab 9（Rio Rancho, NM）、Penang（馬來西亞，99% 完工）、Amkor Songdo K5（外包）。Intel 高層（Mark Gardner）表示外部客戶量產「未來一兩年內」。
+  *Source: Tom's Hardware 2026-04-09（Luke James）*
+
 - **2026-06-10（⭐最新）**：**ECTC 2026 完整 EMIB-T 規格首次公開**（SemiEngineering 報導）：FLI Bump Pitch **25µm**；封裝尺寸 **120×120 mm**；逾 **9× 光罩面積**；HBM4e 介面速率 **>12 Gb/s**；UCIe 速率 **64 Gb/s**。Intel 與 SPIL 合作展示 **3D SRAM Chiplet in Fan-Out embedded bridge**（首次異質整合展示）。Google 下單逾 **300 萬顆 TPU（EMIB 封裝，2028）**，估佔 Google 當年 TPU 總採購 ~50%。
   *Source: SemiEngineering 2026-06-05（引述 ECTC 2026）*
 

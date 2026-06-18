@@ -3,8 +3,8 @@ title: "NVIDIA Corporation"
 category: entity
 tags: [fabless, GPU, AI-accelerator, HBM4, CoWoS, SoIC, Rubin, Feynman, NVL576, CPO, Spectrum-X, Constellation]
 created: 2026-05-03
-updated: 2026-06-07
-sources: [2026-05-24_techtimes_nvidia-computex2026-cowos, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-03-18_trendforce_nvidia-rubin-feynman-soic, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-06_trendforce_google-tpu-cautious-adoption-nvidia, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-06-01_trendforce_nvidia-vera-rubin-tsmc-20pct-revenue, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang]
+updated: 2026-06-19
+sources: [2026-05-24_techtimes_nvidia-computex2026-cowos, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-03-18_trendforce_nvidia-rubin-feynman-soic, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-06_trendforce_google-tpu-cautious-adoption-nvidia, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-06-01_trendforce_nvidia-vera-rubin-tsmc-20pct-revenue, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-19_techtimes_vera-rubin-hbm4-suppliers]
 related:
   - wiki/entities/tsmc.md
   - wiki/entities/sk-hynix.md
@@ -44,6 +44,9 @@ related:
 ---
 
 ## 近期動態 / Recent Developments
+
+- **2026-06-19（補充來源）**：**Tech Times（2026-06-02）對 GTC Taipei 6/1 主題演講的早期報導，補充市場反應與客戶交付細節**——Vera CPU（首款 Nvidia 自製資料中心 CPU）已於 2026 年 5 月中交付測試單位給 **Anthropic、OpenAI、SpaceX、Oracle**；首批雲端服務商確認為 **AWS、Google Cloud、Microsoft Azure、Oracle**。供應鏈規模描述為 Grace Blackwell 世代的「兩倍」。Huang 演講後南韓股市反應劇烈：**三星電子股價 +10.1%（創紀錄）、LG 電子 +約 30%**，市場反應領先 Huang 原訂 ~6/5 首爾行程（會晤 LG/SK/現代/Naver 集團董事長，聚焦機器人合作——LG CLOi 人形機器人 + Nvidia Isaac 平台整合），6/1 台北亦舉辦「Korea Partner Night」晚宴，三星、SK hynix、LG、現代、Naver 高層出席。此報導與既有 wiki 記錄之 2026-06-05/06-08 供應商確認、Vera CPU 規格內容一致，無矛盾，僅補充客戶交付名單與股市反應細節。
+  *Source: Tech Times 2026-06-02（Allen Lee）*
 
 - **2026-06-09（⭐最新）**：**NVIDIA 評估 Intel 18A 製程用於多晶片 GPU（Feynman 架構）**。TrendForce 報導，NVIDIA 正在 Intel 18A 平台上進行 **MPW（Multi-Project Wafer）測試流片**，評估是否採用 18A 生產 Feynman GPU 的 4 顆晶粒整合方案。此為 NVIDIA 分散晶圓代工風險的具體行動。此外，黃仁勳訪韓後，NVIDIA 與 Samsung 就 **Groq LP40（次世代 LPU，暫稱）**代工選廠進行討論；但 TSMC 亦在爭取此訂單，最終選廠未定。
   *Source: TrendForce 2026-06-09（引述 Chosun Biz、Korea JoongAng Daily、The Elec、IT 之家）*
