@@ -1414,3 +1414,41 @@
 ### ⚠️ Git Commit 狀態
 本次 ingest 已完成所有檔案寫入並透過 `git status --porcelain` 確認 15 項變更（4 篇新 raw 文章 + 4 篇新 source 頁面 + 5 篇技術頁面更新 + index.md + _collected_urls.txt）。`git commit` 因 `.git/index.lock` 持續存在且沙箱環境無權限移除（Operation not permitted）而失敗，與 2026-06-17 記錄的跨平台掛載鎖定問題相同。建議於 Windows 原生環境執行：
 `git add -A && git commit -m "2026-06-18"` 以完成版控。
+
+## [2026-06-20] collect | TSMC封裝動態／HBM4E量產進度／面板級封裝設備／玻璃基板量產時程
+
+- 搜尋查詢數：9 組（SK hynix HBM4E、Manz Asia 310mm設備、glass substrate BOE、ECTC 2026 hybrid bonding、AMD MI400 Helios packaging，另含初始 7 組常駐主題搜尋）
+- 成功抓取：3 篇（存入 raw/articles/ 3 篇）
+- 失敗/跳過：2 篇（Pandaily glass-core-substrate 文章因 JS 渲染空 body 無法取得正文、Wiley 學術論文因付費牆無法取得；另有多筆搜尋結果因已收錄或為重複轉載而於抓取前排除，包括 I-Connect007/LEDinside 重複 CoPoS/FOPLP 報導、SemiEngineering UCIe 文章已於 6/18 收錄、Astute Group HBM 份額文章已於 6/9 收錄）
+- 觸發 ingest：3 篇
+- 觸及 wiki 頁面：6 頁（technologies/hbm4.md、entities/sk-hynix.md、technologies/foplp.md、technologies/glass-substrate.md、index.md，共 3 篇新 source 頁）
+- 主要新知識：SK hynix 正式出貨 12 層 HBM4E 樣品（落實此前提前時程，補上官方規格數字）；Manz Asia 310mm PLP ECD 設備交付的完整技術細節取代此前付費牆摘要；BOE 玻璃基板試產線運轉但未達量產良率的修正資訊，將「2026年量產」預期調整為「2027年起逐步放量」。
+
+### 新增 Raw 檔案
+1. `raw/articles/2026-06-19_techtimes_skhynix-hbm4e-12layer-samples-ahead-schedule.md`
+2. `raw/articles/2026-06-15_prnewswire_manz-asia-310mm-plp-ecd-system.md`
+3. `raw/articles/2026-06-12_biggo_boe-glass-substrate-pilot-hype-cools.md`
+
+### 新增 Wiki 來源頁
+- `wiki/sources/2026-06-20_techtimes_skhynix-hbm4e-12layer-samples.md`
+- `wiki/sources/2026-06-20_prnewswire_manz-asia-310mm-ecd.md`
+- `wiki/sources/2026-06-20_biggo_boe-glass-substrate-pilot.md`
+
+### 更新 Wiki 頁面
+- `wiki/technologies/hbm4.md`：新增 2026-06-19 條目（SK hynix 12層HBM4E樣品正式出貨確認：48GB/16Gbps峰值/4TB·s/能效+20%+/熱阻-17%/1c DRAM 首用）
+- `wiki/entities/sk-hynix.md`：新增 2026-06-19 條目（同上，近期動態列表頂部）
+- `wiki/technologies/foplp.md`：擴充既有 Manz Asia 段落（此前因付費牆僅有摘要）為完整技術細節（玻璃/金屬載板雙路線、濕化學RDL模組、Omni x-series 310/510/700mm 平台家族）
+- `wiki/technologies/glass-substrate.md`：新增 2026-06-20 條目，修正 BOE 量產時程（試產線自動化運轉但良率未達標，實際300片/月 vs 設計1,000片/月，2027年起逐步放量）
+- `wiki/index.md`：頁面計數 220→223；來源計數 184→187；新增 3 來源條目；更新 sk-hynix/hbm4/foplp/glass-substrate 摘要
+
+### 主要新知識
+1. **SK hynix 12層HBM4E樣品出貨時程確定化**：此前 TrendForce（6/15）僅報導「目標6-7月」，本次 Tech Times 確認實際出貨日為 2026-06-18，並補上官方規格數字（48GB/16Gbps/4TB·s/+20%能效/-17%熱阻），與 Samsung（5/29 出貨）的時程差距收斂至約20天。
+2. **Manz Asia 310mm 設備新聞資料完整化**：6/17 已記錄但因付費牆只有摘要的「Manz Asia 310mm ECD設備交付」，本次取得 PR Newswire 原文全文，補齊玻璃/金屬載板雙路線支援、濕化學RDL模組整合、FOPLP/CoPoS/TGV三架構定位、Omni x-series（310/510/700mm）平台家族等技術細節。
+3. **BOE 玻璃基板量產時程重要修正**：此前 wiki 引用較樂觀來源稱 BOE「計畫2026年為AI晶片量產」，本次 BigGo Finance（6/12）確認試產線雖已自動化運轉但良率未達量產門檻，實際產能僅設計值的30%，真正放量推遲至2027年起——呼應其他玻璃基板廠商（Absolics、Samsung SEMCO）類似的良率爬坡挑戰，修正「中國快速追趕」敘事為更精確的「試產進展快、量產良率仍需時間」。
+
+### 資料品質備註
+本次搜尋過程中識別並排除多筆重複/已收錄候選來源（ECTC 2026 hybrid bonding 综述、AMD MI400 packaging 搜尋未找到符合品質標準的新文章），符合 CLAUDE.md §3.1.3 品質過濾原則中「已收錄」及「無具體技術/市場資訊的一般性介紹」排除條件。2 篇失敗抓取（Pandaily、Wiley）均因技術原因（JS渲染空白頁、學術付費牆）而非內容品質問題。
+
+### ⚠️ Git Commit 狀態
+本次 ingest 已完成所有檔案寫入（3 篇新 raw 文章 + 3 篇新 source 頁面 + 4 篇技術/實體頁面更新 + index.md + _collected_urls.txt）。沙箱環境中 `git commit` 預期將因 `.git/index.lock` 跨平台掛載鎖定問題失敗（與 2026-06-17、2026-06-18、2026-06-19 記錄的相同問題一致）。建議於 Windows 原生環境執行：
+`git add -A && git commit -m "2026-06-20"` 以完成版控。
