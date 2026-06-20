@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-06-20
-**頁面總數 Total Pages**：223
-**原始來源數 Sources**：187
+**更新時間 Updated**：2026-06-21
+**頁面總數 Total Pages**：226
+**原始來源數 Sources**：190
 
 ---
 
@@ -60,6 +60,9 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-06-21_tomshardware_tsmc-fab-expansion-roadmap]] — Tom's Hardware：**台積電多廠 N2 量產佈局深度分析**——「One Team」知識轉移系統、「Super Manufacturing Platform（SMP）」跨廠管理機制；CoWoS CAGR 80%／SoIC CAGR 90%（2022–2027）重申；AP7/AP8/AP6 產能細節（2026-06-21）⭐新增
+- [[sources/2026-06-21_tomshardware_intel-google-amazon-packaging-talks]] — Tom's Hardware：**Intel 傳與 Google、Amazon 洽談先進封裝**（與既有 TrendForce 同日報導交叉確認）；新增 Intel Foundry 2025 Q4/全年財務虧損細節（$10.3B 虧損／$307M 外部營收）（2026-06-21）⭐新增
+- [[sources/2026-06-21_arxiv_tiny-chiplets-esd-protection-signal-integrity]] — arXiv：**微型 Chiplet 之 ESD 保護與訊號完整性機會**（ASU/UMN）——chiplet I/O 電路面積開銷限制 chiplet 微縮至 100mm² 以下；fetch_status: partial（摘要層級）（2026-06-21）⭐新增
 - [[sources/2026-06-20_techtimes_skhynix-hbm4e-12layer-samples]] — Tech Times：SK hynix 正式出貨 12 層 HBM4E 樣品（2026-06-18）；48GB/16Gbps/4TB·s/能效+20%+/熱阻-17%；1c DRAM 首用（2026-06-20）⭐新增
 - [[sources/2026-06-20_prnewswire_manz-asia-310mm-ecd]] — PR Newswire：Manz Asia 全球首套 310mm×310mm PLP ECD 量產系統交付完整細節；玻璃/金屬載板雙路線；Omni x-series（310/510/700mm）（2026-06-20）⭐新增
 - [[sources/2026-06-20_biggo_boe-glass-substrate-pilot]] — BigGo Finance：BOE 玻璃基板試產線自動化運轉但未達量產良率；實際 300片/月 vs 設計 1,000片/月；2027 起逐步放量；A股概念股 4-6月 +74% 後回落（2026-06-20）⭐新增

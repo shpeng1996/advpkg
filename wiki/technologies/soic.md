@@ -3,8 +3,8 @@ title: "SoIC — System on Integrated Chips"
 category: technology
 tags: [3D, SoIC, hybrid-bonding, TSMC, AI, NVIDIA, Feynman]
 created: 2026-04-24
-updated: 2026-05-11
-sources: [2026-04-24_initial-survey, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-03-18_trendforce_nvidia-rubin-feynman-soic, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-23_trendforce_tsmc-roadmap-a12-a13-no-high-na-euv, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal]
+updated: 2026-06-21
+sources: [2026-04-24_initial-survey, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-03-18_trendforce_nvidia-rubin-feynman-soic, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-23_trendforce_tsmc-roadmap-a12-a13-no-high-na-euv, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-06-21_arxiv_tiny-chiplets-esd-protection-signal-integrity]
 related:
   - wiki/entities/tsmc.md
   - wiki/technologies/cowos.md
@@ -112,5 +112,6 @@ SoIC 常與 CoWoS 組合：邏輯晶片先透過 SoIC 3D 堆疊，再整合於 C
 - SoIC-X 接合間距能否從 6µm 進一步縮小至 3µm 或以下？
 - 多層 SoIC 堆疊（3 層以上）的熱管理方案？
 - **⭐ 新增（2026-05）**：**SoIC 內部 ESD 保護（In-SoIC ESD）**——UC Riverside 2026 論文指出，在 SoIC 3D 堆疊結構中實現有效靜電放電保護是未解的工程挑戰；傳統 ESD 保護電路面積大、干擾訊號，在微米級接合間距下難以整合。此為 SoIC 量產可靠性的核心研究方向之一。*(Source: SemiEng 技術論文週報 2026-05-05)*
+- **⭐ 新增（2026-06-21）**：相關學術研究——Arizona State University / University of Minnesota 團隊（arXiv 2511.10760）指出，傳統 I/O 電路（ESD 保護 + 訊號傳輸）的面積開銷是阻礙 chiplet 微縮至 100mm² 以下的主因；其透過寄生抽取與 SPICE 模擬，提出在 2.5D/3D 封裝情境下可簡化 ESD/訊號電路設計。雖非 SoIC 專屬研究，但與上述 In-SoIC ESD 挑戰方向高度相關，可作為後續細孔距接合 ESD 設計的參考文獻。*(Source: arXiv 2511.10760，2025-11-13；經 Semiconductor Engineering 摘要報導)*
 - 異質材料（邏輯 die + HBM base die）的 CTE 不匹配導致的翹曲問題如何在大規模量產中控制？
 - SoIC-W（Wafer-on-Wafer）的良率瓶頸能否在 2026 年前達到量產水準？

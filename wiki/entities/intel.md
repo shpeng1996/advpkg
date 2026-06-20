@@ -3,8 +3,8 @@ title: "英特爾 / Intel"
 category: entity
 tags: [IDM, advanced-packaging, EMIB, Foveros, Intel18A, Clearwater-Forest, Foveros-Direct, glass-substrate, 14A, High-NA-EUV, silicon-capacitors, Google-TPU-v8e]
 created: 2026-04-24
-updated: 2026-06-19
-sources: [2026-04-24_initial-survey, 2026-03-18_trendforce_intel-emib-malaysia, 2026-03-03_trendforce_intel-clearwater-forest, 2026-03-05_trendforce_intel-emib-billions, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-04-20_trendforce_intel-foundry-14a-equipment, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-01_semianalysis_cpus-back-datacenter-2026, 2026-04-10_3dincites_intel-gan-chiplet, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-19_tomshardware_intel-emib-t-fab-rollout]
+updated: 2026-06-21
+sources: [2026-04-24_initial-survey, 2026-03-18_trendforce_intel-emib-malaysia, 2026-03-03_trendforce_intel-clearwater-forest, 2026-03-05_trendforce_intel-emib-billions, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-04-20_trendforce_intel-foundry-14a-equipment, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-01_semianalysis_cpus-back-datacenter-2026, 2026-04-10_3dincites_intel-gan-chiplet, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks]
 related:
   - wiki/entities/tsmc.md
   - wiki/entities/samsung.md
@@ -35,6 +35,9 @@ related:
 ---
 
 ## 近期動態 / Recent Developments
+
+- **2026-06-21（補充來源，交叉確認）**：另一篇 Tom's Hardware 報導（Luke James，2026-04-07，引述 WIRED）證實 **Intel 與 Google、Amazon 就先進封裝服務洽談中**，與下方 2026-06-19 條目所述為同一系列報導但版本較早／較簡略。新增揭露的具體財務數據：**Intel Foundry 2025 Q4 營收 $4.5B、營運虧損 $2.5B**；**FY2025 全年營收 $17.8B、虧損 $10.3B，其中外部代工客戶營收僅 $307M**——量化呈現 Intel Foundry 在外部封裝/代工業務轉型初期的虧損規模，可與下方 EMIB-T 商機評論（CFO「每年數十億美元」）對照解讀。
+  *Source: Tom's Hardware 2026-04-07（Luke James，引述 WIRED）*
 
 - **2026-06-19（補充來源）**：**Tom's Hardware：EMIB-T 今年內 fab 量產部署，CFO 稱「每年數十億美元」封裝合約**。CFO Dave Zinsner 重申封裝服務商機規模；具名/傳聞客戶補充 **MediaTek、Amazon**（EMIB-T），**Microsoft Maia $15B 合約**（EMIB/Foveros）；首款 EMIB-T 產品可能為 **Jaguar Shores**（Falcon Shores 後繼，測試晶片 92.5×92.5mm，4 運算 tile + 8 個 HBM4 介面）。封裝產能據點補充：**Fab 9（Rio Rancho, NM）**、**Penang（馬來西亞，99% 完工）**、Amkor Songdo K5（外包）。外部客戶量產時程：執行長層級表示「未來一兩年內」。成本/良率比較數據（Bernstein 估算）：EMIB 每晶片成本「低數百美元」對比 CoWoS（Rubin 級）約 $900–1000；EMIB 晶圓利用率 ~90% vs. 中介層方案 ~60%。詳見 [[technologies/emib.md]]。
   *Source: Tom's Hardware 2026-04-09（Luke James）*

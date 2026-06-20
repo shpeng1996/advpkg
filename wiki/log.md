@@ -1449,6 +1449,44 @@
 ### 資料品質備註
 本次搜尋過程中識別並排除多筆重複/已收錄候選來源（ECTC 2026 hybrid bonding 综述、AMD MI400 packaging 搜尋未找到符合品質標準的新文章），符合 CLAUDE.md §3.1.3 品質過濾原則中「已收錄」及「無具體技術/市場資訊的一般性介紹」排除條件。2 篇失敗抓取（Pandaily、Wiley）均因技術原因（JS渲染空白頁、學術付費牆）而非內容品質問題。
 
+## [2026-06-21] collect | TSMC 多廠擴產路線圖（One Team/SMP）、Intel-Google-Amazon 封裝洽談（交叉確認）、Chiplet ESD 學術論文
+
+- 搜尋查詢數：6 組（TSMC CoWoS/SoIC/N2 產能、Intel EMIB Google/Amazon、混合接合最新研究、ECTC/IEDM chiplet 論文、UCIe 標準動態、市場預測）
+- 成功抓取：**3 篇**（articles/ 2 篇、papers/ 1 篇）— 符合「品質優先於數量，最低 3 篇」門檻
+- 失敗/跳過：多筆（已收錄重複事件、付費牆、低相關一般性介紹）
+- 觸發 ingest：3 篇
+- 觸及 wiki 頁面：5 頁（entities/tsmc.md、technologies/cowos.md、technologies/soic.md、entities/intel.md、technologies/emib.md，共 3 篇新 source 頁）
+
+### 新增 Raw 檔案
+1. `raw/articles/2026-06-10_tomshardware_tsmc-fab-expansion-roadmap.md`
+2. `raw/articles/2026-04-07_tomshardware_intel-google-amazon-packaging-talks.md`
+3. `raw/papers/2026-06-21_arxiv_tiny-chiplets-esd-protection-signal-integrity.md`
+
+### 新增 Wiki 來源頁
+- `wiki/sources/2026-06-21_tomshardware_tsmc-fab-expansion-roadmap.md`
+- `wiki/sources/2026-06-21_tomshardware_intel-google-amazon-packaging-talks.md`
+- `wiki/sources/2026-06-21_arxiv_tiny-chiplets-esd-protection-signal-integrity.md`
+
+### 更新 Wiki 頁面
+- `wiki/entities/tsmc.md`：新增 2026-06-21 條目（「One Team」全球知識轉移系統、「Super Manufacturing Platform（SMP）」跨廠管理機制首次記載；N2 多廠量產 9 萬片晶圓目標；CoWoS/SoIC CAGR 80%/90% 重申；AP7/AP8/AP6 產能細節；TSMC vs Intel Foundry 財務對比）
+- `wiki/technologies/cowos.md`：新增 2026-06-21 條目（CoWoS CAGR 80% 重申、AP8 月產能 4 萬片目標、SMP 機制與 CoWoS/SoIC 跨廠複製產能的關聯）
+- `wiki/technologies/soic.md`：新增引用至既有「In-SoIC ESD」未解問題（arXiv 2511.10760 chiplet I/O 電路面積開銷研究，標記為相關但非同一研究）
+- `wiki/entities/intel.md`：新增 2026-06-21 條目，以「補充來源，交叉確認」形式併入既有 2026-06-19 EMIB-T 條目，避免重複敘事；新增量化財務數據（Intel Foundry FY2025 虧損 $10.3B、外部代工營收 $307M）
+- `wiki/technologies/emib.md`：同上，新增交叉確認條目並連結至 entities/intel.md
+- `wiki/index.md`：頁面計數 223→226；來源計數 187→190；新增 3 來源條目
+
+### 主要新知識
+1. **首次記載 TSMC「One Team」與「Super Manufacturing Platform（SMP）」兩項跨廠管理機制名稱與運作方式**，為理解台積電多廠快速複製 CoWoS/SoIC 產能的關鍵基礎設施补上缺失的命名與機制描述。
+2. **以具體財務數字量化 TSMC vs. Intel Foundry 規模差距**：TSMC 2025 晶圓代工營收 $103.7B vs. Intel Foundry 2025 全年虧損 $10.3B（外部代工營收僅 $307M）。
+3. **新增聚焦 chiplet I/O 電路（ESD + 訊號）面積開銷的學術研究**，與既有 SoIC ESD 保護開放問題形成交叉參考，但因僅取得摘要層級內容（fetch_status: partial），未杜撰未經確認的量化數據。
+
+### ⚠️ 編輯判斷：來源重疊處理
+新蒐集的 `2026-04-07_tomshardware_intel-google-amazon-packaging-talks.md` 與既有 wiki 條目（2026-06-19，引述「Tom's Hardware 2026-04-09（Luke James）」）內容高度重疊（EMIB-T 規格、Zinsner 語錄、Fab 9/Penang/Amkor Songdo K5 產能據點均已記載）。經比對確認本篇與既有 `_collected_urls.txt` 中已登錄的 `2026-04-07_trendforce_intel-emib-google-amazon`（同日期、不同媒體）報導同一事件。判斷為獨立媒體對同一新聞的交叉報導，而非內容重複，故依規範存入 raw/ 並登錄 URL；wiki 更新則採「補充來源，交叉確認」形式呈現新增的財務量化數據，未重複敘述已記載的 EMIB-T 規格細節，以避免誤導性重複。arXiv 論文因僅能取得摘要頁（無法取得完整 PDF 量化表格），以 `fetch_status: partial` 誠實標記，未補上未經確認的數字。
+
+### ⚠️ Git Commit 狀態
+所有檔案已正確寫入磁碟（3 篇新 raw 文章 + 3 篇新 source 頁面 + 4 篇技術/實體頁面更新 + index.md + _collected_urls.txt）。`git commit` 因 `.git/index.lock` 跨平台掛載鎖定問題持續存在（與 2026-06-12、2026-06-19 記錄相同）而預期失敗。建議於 Windows 原生環境執行：
+`git add -A && git commit -m "2026-06-21 daily collect: 3 articles, 5 wiki pages updated (1 cross-confirmed source)"` 以完成版控。
+
 ### ⚠️ Git Commit 狀態
 本次 ingest 已完成所有檔案寫入（3 篇新 raw 文章 + 3 篇新 source 頁面 + 4 篇技術/實體頁面更新 + index.md + _collected_urls.txt）。沙箱環境中 `git commit` 預期將因 `.git/index.lock` 跨平台掛載鎖定問題失敗（與 2026-06-17、2026-06-18、2026-06-19 記錄的相同問題一致）。建議於 Windows 原生環境執行：
 `git add -A && git commit -m "2026-06-20"` 以完成版控。
