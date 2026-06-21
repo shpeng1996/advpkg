@@ -3,8 +3,8 @@ title: "先進封裝市場 / Advanced Packaging Market"
 category: concept
 tags: [market, forecast, CAGR, supply-chain, HBM, chiplet, geopolitics, equipment]
 created: 2026-04-24
-updated: 2026-06-12
-sources: [2026-04-24_initial-survey, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2026-01-23_trendforce_chip-tools-tel-asml, 2026-03-05_trendforce_intel-emib-billions, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2025-12-18_trendforce_micron-capex-hbm4, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2025-05-13_trendforce_top10-osat-2024, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon]
+updated: 2026-06-22
+sources: [2026-04-24_initial-survey, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2026-01-23_trendforce_chip-tools-tel-asml, 2026-03-05_trendforce_intel-emib-billions, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2025-12-18_trendforce_micron-capex-hbm4, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2025-05-13_trendforce_top10-osat-2024, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-04-16_ontoinnovation_dragonfly-g5-qualified]
 related:
   - wiki/entities/tsmc.md
   - wiki/entities/sk-hynix.md
@@ -283,3 +283,17 @@ TrendForce 披露 TSMC 外包策略的具體操作細節：
 - **TSMC-OSAT 生態系**形成「設備-產能-訂單」一體化外包鏈
 
 *Source: TrendForce 2026-06-11（引述 Investor.com）*
+
+---
+
+## ⭐ 2026-06-22 更新：製程控制設備廠新增證據點——AI 封裝需求年成長 ~30%
+
+### Onto Innovation Dragonfly G5 量產資格確認（2026-04-16 press release）
+
+製程控制/檢測設備商 **Onto Innovation**（NYSE: ONTO）宣布其 **Dragonfly G5** 平台正式取得 2.5D AI 封裝（含扇出製程層）量產資格認證，首批出貨 2026 年 6 月：
+
+- 產業分析師估計：AI 裝置需求驅動的封裝進展，未來兩年**年成長率約 30%**——為先進封裝市場驅動力提供獨立於 TrendForce/TSMC 之外的第三方（設備端）佐證。
+- Onto Innovation Dragonfly 平台整體出貨量 2026 年預估**成長逾 50%**（vs 2025）。
+- 財務佐證：Onto Innovation Q1 2026 營收 $292M（優於指引 $275–285M）；Q2 2026 指引上修至 $320–330M（+8%）。
+
+**wiki 含義**：此前市場驅動力數據多來自 TrendForce／TSMC／OSAT 端，本次新增製程控制設備商（process control / inspection）的獨立財務與需求數據，補強「AI 驅動先進封裝需求」論述的多角度證據鏈（晶圓代工端 + OSAT 端 + 現在 + 檢測設備端）。詳見新建 [[entities/onto-innovation]]。

@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-06-21
-**頁面總數 Total Pages**：226
-**原始來源數 Sources**：190
+**更新時間 Updated**：2026-06-22
+**頁面總數 Total Pages**：232
+**原始來源數 Sources**：194
 
 ---
 
@@ -29,6 +29,8 @@
 - [[entities/amd]] — AMD；Fabless CPU/GPU；Venice 首採 EMIB 等效封裝；MI355X（N3P，2 I/O die）；MI450 aLSI 測試載具⭐新增
 - [[entities/asml]] — ASML；微影設備獨占廠商；XT:260 3D DUV 已出貨（RDL）；評估混合接合設備市場進入⭐新增
 - [[entities/rapidus]] — Rapidus；日本 2nm 新創代工廠；「AI Foundry」框架；封裝共址策略；玻璃基板 600×600mm 最大樣品；量產 2028⭐新增
+- [[entities/onto-innovation]] — Onto Innovation；製程控制/檢測設備商；Dragonfly G5 取得 2.5D AI 封裝量產資格認證；AI 封裝需求年成長 ~30%⭐新增（2026-06-22）
+- [[entities/jcet]] — JCET（江蘇長電科技）；中國最大 OSAT；江陰新 3D 封裝廠瞄準 AI 電源模組與 CPO 需求⭐新增（2026-06-22）
 
 ---
 
@@ -60,6 +62,10 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-06-20_wccftech_tsmc-copos-glass-core-cost-cut]] — Wccftech：**TSMC 加速 CoPoS 取代 CoWoS**；玻璃核心基板降本 30%；材料利用率 <70%→>90%；JPCA Show 2026 簡報細節；Arizona 2029-30 參與 CoPoS（2026-06-22 收錄）⭐新增
+- [[sources/2026-06-07_digitimes_jcet-3d-packaging-cpo-plant]] — DIGITIMES：**JCET 江陰新 3D 封裝廠**瞄準 AI 電源模組、CPO 需求（partial/paywalled）（2026-06-22 收錄）⭐新增
+- [[sources/2026-04-16_ontoinnovation_dragonfly-g5-qualified]] — Onto Innovation：**Dragonfly G5 取得 2.5D AI 封裝量產資格**；AI 封裝需求年成長 ~30%（2026-06-22 收錄）⭐新增
+- [[sources/2026-03-17_coherent_cpo-ofc2026-demo]] — Coherent：**OFC 2026 多架構 CPO 展示**——6.4T 矽光子、VCSEL 多模、InP 400G/lane 調制器（2026-06-22 收錄）⭐新增
 - [[sources/2026-06-21_tomshardware_tsmc-fab-expansion-roadmap]] — Tom's Hardware：**台積電多廠 N2 量產佈局深度分析**——「One Team」知識轉移系統、「Super Manufacturing Platform（SMP）」跨廠管理機制；CoWoS CAGR 80%／SoIC CAGR 90%（2022–2027）重申；AP7/AP8/AP6 產能細節（2026-06-21）⭐新增
 - [[sources/2026-06-21_tomshardware_intel-google-amazon-packaging-talks]] — Tom's Hardware：**Intel 傳與 Google、Amazon 洽談先進封裝**（與既有 TrendForce 同日報導交叉確認）；新增 Intel Foundry 2025 Q4/全年財務虧損細節（$10.3B 虧損／$307M 外部營收）（2026-06-21）⭐新增
 - [[sources/2026-06-21_arxiv_tiny-chiplets-esd-protection-signal-integrity]] — arXiv：**微型 Chiplet 之 ESD 保護與訊號完整性機會**（ASU/UMN）——chiplet I/O 電路面積開銷限制 chiplet 微縮至 100mm² 以下；fetch_status: partial（摘要層級）（2026-06-21）⭐新增

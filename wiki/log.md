@@ -1490,3 +1490,41 @@
 ### ⚠️ Git Commit 狀態
 本次 ingest 已完成所有檔案寫入（3 篇新 raw 文章 + 3 篇新 source 頁面 + 4 篇技術/實體頁面更新 + index.md + _collected_urls.txt）。沙箱環境中 `git commit` 預期將因 `.git/index.lock` 跨平台掛載鎖定問題失敗（與 2026-06-17、2026-06-18、2026-06-19 記錄的相同問題一致）。建議於 Windows 原生環境執行：
 `git add -A && git commit -m "2026-06-20"` 以完成版控。
+
+---
+
+## [2026-06-22] collect | 每日自動蒐集 — 先進封裝最新動態
+
+### 搜尋與蒐集
+- 搜尋查詢數：10+ 組（TSMC CoPoS/CoWoS、HBM4/HBM4E、混合接合、面板級封裝、UCIe/JEDEC、Intel EMIB/Foveros、Samsung X-Cube、CPO/矽光子、中國 OSAT/JCET、TSMC Arizona、設備廠製程控制）
+- 成功抓取：4 篇（articles/ 3 篇 fetch_status: success，1 篇 fetch_status: partial 因 DIGITIMES 付費牆）
+  - raw/articles/2026-06-20_wccftech_tsmc-copos-glass-core-cost-cut.md
+  - raw/articles/2026-04-16_ontoinnovation_dragonfly-g5-qualified.md
+  - raw/articles/2026-06-07_digitimes_jcet-3d-packaging-cpo-plant.md（partial，付費牆）
+  - raw/articles/2026-03-17_coherent_cpo-ofc2026-demo.md
+- 失敗/跳過：1 篇 fetch 失敗（Wiley Advanced Science DOI 頁面回傳空內容，已捨棄該候選）；另有多篇候選（SK hynix HBM4E 時程、Samsung 光州廠、TSMC CoWoS 差距收斂、Intel 3DGS 印度、SKC Absolics、玻璃基板路線圖等）經比對 `_collected_urls.txt` 確認為已收錄主題之重複報導，於搜尋階段即過濾，未進行 fetch
+- 學術代理：UNAVAILABLE ✗
+
+### 新增 Wiki 頁面（6 頁）
+- wiki/entities/onto-innovation.md（製程控制/檢測設備商，填補設備生態系空缺）
+- wiki/entities/jcet.md（中國最大 OSAT，填補長期缺專屬頁面的空缺）
+- wiki/sources/2026-06-20_wccftech_tsmc-copos-glass-core-cost-cut.md
+- wiki/sources/2026-04-16_ontoinnovation_dragonfly-g5-qualified.md
+- wiki/sources/2026-06-07_digitimes_jcet-3d-packaging-cpo-plant.md
+- wiki/sources/2026-03-17_coherent_cpo-ofc2026-demo.md
+
+### 更新 Wiki 頁面（4 頁）
+- wiki/technologies/copos.md：新增 2026-06-22 更新區段（材料利用率 <70%→>90% 量化、量產時程 2H28 重申、TSMC Arizona 2029–2030 納入 CoPoS 生產地圖、Yole Group 成本數據）
+- wiki/technologies/copackaged-optics.md：新增 2026-06-22 更新區段，含 Coherent OFC 2026 多架構 CPO 展示（矽光子 6.4T、VCSEL 多模、InP 400G/lane）與 JCET CPO/AI 電源模組擴產兩個子段
+- wiki/concepts/advanced-packaging-market.md：新增 Onto Innovation Dragonfly G5 量產資格認證條目，補強設備端市場驅動力證據（AI 封裝需求年成長 ~30%）
+- wiki/entities/tsmc.md：「近期動態」新增 2026-06-22（⭐最新）條目，連結至 CoPoS 材料利用率與 Arizona 角色更新
+- wiki/index.md：頁面總數 226→232；來源數 190→194；新增 2 個 entities 連結、4 個 sources 連結
+
+### 主要新知識
+1. **CoPoS 材料利用率首次具體量化**（Wccftech 引述 Ming-Chi Kuo / TSMC JPCA Show 2026 簡報）：圓形晶圓 <70% → 矩形面板 >90%，並將 TSMC Arizona 明確納入 CoPoS（而非僅 SoIC/CoW）量產地圖，時程 2029–2030。
+2. **設備/檢測廠商視角首次補強市場驅動力論述**：Onto Innovation Dragonfly G5 取得 2.5D AI 封裝量產資格，產業估計 AI 封裝需求年成長 ~30%，與既有晶圓代工/OSAT 端證據形成跨供應鏈交叉驗證。
+3. **CPO 領域新增雙重視角**：Coherent（光學元件供應商，多架構展示）與 JCET（中國 OSAT，新建 3D 封裝廠瞄準 CPO/AI 電源模組需求），填補 wiki 在 CPO 供應鏈上下游記載的空缺。
+
+### ⚠️ Git Commit 狀態
+所有檔案已正確寫入磁碟（4 篇新 raw 文章 + 4 篇新 source 頁面 + 2 篇新 entity 頁面 + 4 篇技術/概念/實體頁面更新 + index.md + _collected_urls.txt）。沿用 2026-06-17 至 2026-06-21 記錄的已知問題：沙箱環境 `git commit` 預期因 `.git/index.lock` 跨平台掛載鎖定問題失敗。建議於 Windows 原生環境執行：
+`git add -A && git commit -m "2026-06-22"` 以完成版控。

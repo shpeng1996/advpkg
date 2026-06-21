@@ -3,7 +3,7 @@ title: "台積電 / TSMC"
 category: entity
 tags: [foundry, advanced-packaging, CoWoS, SoIC, CoPoS, COUPE, CPO, InFO, WMCM, aLSI, MRAM, 3nm-pricing]
 created: 2026-04-24
-updated: 2026-06-21
+updated: 2026-06-22
 sources: [2026-04-24_initial-survey, 2026-04-13_trendforce_copos-pilot, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2025-12-18_trendforce_apple-wmcm-a20, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-01-20_trendforce_tsmc-wmcm-apple, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-23_trendforce_tsmc-roadmap-a12-a13-no-high-na-euv, 2026-05-07_trendforce_tsmc-us-expansion-250b-arizona, 2026-05-12_focustaiwan_tsmc-capex-31b-arizona-20b, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-28_reuters_tsmc-kevin-zhang-energy-efficiency, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-09_financialcontent_tsmc-130k-cowos-wafers, 2026-06-09_digitimes_tsmc-cowos-soic-capacity-symposium, 2026-06-15_trendforce_tsmc-cowos-gap-narrowing-130k-200k-wafers, 2026-06-17_digitimes_amkor-tsmc-10year-arizona-deal, 2026-06-21_tomshardware_tsmc-fab-expansion-roadmap]
 related:
   - wiki/technologies/cowos.md
@@ -33,6 +33,7 @@ related:
 
 ## 近期動態 / Recent Developments
 
+- **2026-06-22（⭐最新）**：**Wccftech 引述 Commercial Times Taiwan + Ming-Chi Kuo（TSMC JPCA Show 2026 簡報）確認 CoPoS 材料利用率 <70%→>90%、量產時程 2H28、Arizona 角色 2029–2030**。詳見 [[technologies/copos]] 2026-06-22 更新區段。
 - **2026-06-21（⭐最新）**：**Tom's Hardware 深度分析台積電多廠 N2 量產佈局與先進封裝擴產節奏**：N2 同步於 **Fab 20（新竹）與 Fab 22（高雄）5 個廠區階段**量產，首年底目標月產能約 **9 萬片晶圓**（對比 Intel Fab 52 18A 約 4 萬片）。文中首度系統性說明台積電兩項內部管理機制：**「One Team」**——串連 R&D、製程整合、設備、量產（HVM）團隊的全球知識轉移系統，使技轉速度比 N3 世代快 **20%**；以及**「Super Manufacturing Platform（SMP）」**——跨 GigaFab 廠區同步配方、機台、量測與良率資料的集中控制系統，與 Intel「Copy Exactly」理念相近。先進封裝產能成長率重申：**CoWoS 產能 CAGR 80%、SoIC 產能 CAGR 90%（2022–2027）**，量產轉換時間分別縮短 **30% / 75%**。台積電目前共 11 座先進封裝廠（AP1 新竹、AP2A/B/C+AP8 台南、AP3 龍潭、AP5 台中、AP6A/B/C 竹南、AP7 嘉義）；**AP7** 將成最大 SoIC 封裝基地（NVIDIA Feynman 首發），**AP8**（原群創 LCD 廠改建）目標 2026 年底前 CoWoS 月產能逾 **4 萬片**；AP6 約 **1 萬片** SoIC 月產能、AP7B 約 **1.2 萬片**。CoPoS 仍定位為 2030 年代路線圖。文末以財務數據對比：台積電 2025 年晶圓代工營收 **$103.7B**（占總營收 $122.4B 的 84%），對照 Intel Foundry 2025 全年虧損 **$10.3B**（營收 $17.8B，外部代工營收僅 $307M）。
   *Source: Tom's Hardware 2026-06-10（Anton Shilov）*
 

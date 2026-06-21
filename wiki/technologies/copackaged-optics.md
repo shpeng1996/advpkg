@@ -3,8 +3,8 @@ title: "共封裝光學元件 / Co-Packaged Optics (CPO) — TSMC-COUPE™ & Eco
 category: technology
 tags: [CPO, co-packaged-optics, COUPE, TSMC, GlobalFoundries, Samsung, photonics, AI, HPC, networking, OCI-MSA, DWDM, Broadcom, NVIDIA, glass-substrate, ULCVD, TGV, Spectrum-X, NVL72]
 created: 2026-04-25
-updated: 2026-06-18
-sources: [2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-05-07_trendforce_globalfoundries-silicon-photonics-scale-cpo, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-18_wccftech_intel-glass-cpo-ofc2026]
+updated: 2026-06-22
+sources: [2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-05-07_trendforce_globalfoundries-silicon-photonics-scale-cpo, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-03-17_coherent_cpo-ofc2026-demo, 2026-06-07_digitimes_jcet-3d-packaging-cpo-plant]
 related:
   - wiki/entities/tsmc.md
   - wiki/technologies/cowos.md
@@ -229,3 +229,27 @@ TSMC COUPE™ 與 GF SCALE 的競爭表明 CPO 市場正從「單一廠商主導
 - 詳見 [[technologies/glass-substrate]] 完整技術細節。
 
 **wiki 含義**：本次更新確認 Intel 的 CPO 量產時程落後於 Nvidia/AMD 競爭對手，強化先前 wiki 中「CPO 競賽」的時程落差論述；同時將 Intel 的 CPO 戰略明確錨定在玻璃基板路線上（而非傳統有機基板），與 GF/Corning、Samsung 等其他陣營的耦合方案形成對照。
+
+---
+
+## 2026-06-22 更新 / Update
+
+### Coherent OFC 2026 多架構 CPO 展示：6.4T 矽光子 + VCSEL 多模 + InP 400G 調制器
+
+*Source: Coherent Corp. press release, 2026-03-17*
+
+光學元件廠 **Coherent Corp.**（NYSE: COHR）在 OFC 2026 展示三種互不相同的 CPO 光學架構，顯示業界尚未收斂至單一光學技術路線：
+
+| 架構 | 規格 | 技術基礎 |
+|------|------|---------|
+| 矽光子 Socketed CPO | **6.4T（32×200G）** | 矽光子 + 外部雷射源（ELS，自有 InP CW 雷射） |
+| 多模 Socketed CPO | — | Coherent 高速 VCSEL |
+| InP-on-Silicon 調制器 | **400G/lane** | InP 調制器陣列（矽基整合） |
+
+**wiki 含義**：補充 CPO 光學元件供應商視角（先前 wiki 主要聚焦 TSMC COUPE™、GF SCALE、Intel/封裝廠側）。Coherent 同時展示矽光子、VCSEL、InP-on-Si 三種路線，印證 wiki 既有論述「CPO 市場尚未在光學架構層收斂」；400G/lane InP 調制器為高速光通道演進提供具體數字錨點。
+
+### JCET（中國 OSAT）擴大 CPO 與 AI 電源模組封裝產能
+
+*Source: DIGITIMES (Levi Li), 2026-06-07（付費牆，僅取得標題與摘要）*
+
+中國最大 OSAT **JCET** 在江陰程東生產基地開設新 3D 封裝廠，目標瞄準 **AI 電源模組與 CPO 需求**——延續 JCET 此前在上海臨港（汽車/機器人封裝，2026-03）與既有 CPO/玻璃基板布局（2026-04）的擴張軌跡。顯示中國 OSAT 陣營正同步跟進 CPO 趨勢，而非僅限歐美/台灣廠商。詳見 [[entities/jcet]]。
