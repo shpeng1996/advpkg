@@ -1525,6 +1525,5 @@
 2. **設備/檢測廠商視角首次補強市場驅動力論述**：Onto Innovation Dragonfly G5 取得 2.5D AI 封裝量產資格，產業估計 AI 封裝需求年成長 ~30%，與既有晶圓代工/OSAT 端證據形成跨供應鏈交叉驗證。
 3. **CPO 領域新增雙重視角**：Coherent（光學元件供應商，多架構展示）與 JCET（中國 OSAT，新建 3D 封裝廠瞄準 CPO/AI 電源模組需求），填補 wiki 在 CPO 供應鏈上下游記載的空缺。
 
-### ⚠️ Git Commit 狀態
-所有檔案已正確寫入磁碟（4 篇新 raw 文章 + 4 篇新 source 頁面 + 2 篇新 entity 頁面 + 4 篇技術/概念/實體頁面更新 + index.md + _collected_urls.txt）。沿用 2026-06-17 至 2026-06-21 記錄的已知問題：沙箱環境 `git commit` 預期因 `.git/index.lock` 跨平台掛載鎖定問題失敗。建議於 Windows 原生環境執行：
-`git add -A && git commit -m "2026-06-22"` 以完成版控。
+### ✅ Git Commit 狀態
+與 2026-06-17～2026-06-21 不同，本次 `git add -A && git commit -m "2026-06-22"` 在沙箱環境中**成功完成**（commit 7328eae，17 files changed, 544 insertions(+), 10 deletions(-)）。過程中出現多筆 `unable to unlink .git/objects/.../tmp_obj_*: Operation not permitted` 警告（跨平台掛載權限限制的殘留訊息），但未阻止 commit 物件寫入與 HEAD 更新，commit 已確認生效。
