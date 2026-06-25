@@ -1527,3 +1527,45 @@
 
 ### ✅ Git Commit 狀態
 與 2026-06-17～2026-06-21 不同，本次 `git add -A && git commit -m "2026-06-22"` 在沙箱環境中**成功完成**（commit 7328eae，17 files changed, 544 insertions(+), 10 deletions(-)）。過程中出現多筆 `unable to unlink .git/objects/.../tmp_obj_*: Operation not permitted` 警告（跨平台掛載權限限制的殘留訊息），但未阻止 commit 物件寫入與 HEAD 更新，commit 已確認生效。
+
+## [2026-06-25] collect | HBM4 策略分歧、SanDisk HBF 專利、Nokia ATP 投資、ECTC 2026 補充
+
+- 搜尋查詢數：12+ 組（涵蓋 TSMC 封裝動態、HBM4 記憶體、混合接合、面板級封裝、學術/會議 ECTC/IEDM、標準動態 UCIe/JEDEC、競爭對手 Intel/Samsung/Nokia 等 7 大主題）
+- 成功抓取：4 篇（articles/ 4 篇，fetch_status: success）
+  - raw/articles/2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix.md
+  - raw/articles/2026-06-22_trendforce_sandisk-hbf-patent-nand-processor-bonding.md
+  - raw/articles/2026-06-16_nokia_pennsylvania-atp-expansion.md
+  - raw/articles/2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging.md
+- 失敗/跳過：2 篇
+  - Wiley Advanced Science DOI 論文頁面（`10.1002/advs.202512611`）fetch 回傳空內容，判定為付費牆/JS 渲染問題，已捨棄該候選
+  - TweakTown 16-Hi HBM4 文章經查實際發布日為 2025-12-28（非近期），且內容與既有 wiki（hbm4.md「Cleanroom 競賽」「MR-MUF 30µm」段落）重疊，依品質過濾原則跳過
+- 學術代理：UNAVAILABLE ✗
+- 本次僅鎖定 4 篇（低於理想 5–10 篇區間），符合 CLAUDE.md §3.1.3「品質優先於數量」原則，且 4 ≥ 3 篇下限，故全數正常 ingest。
+
+### 新增 Wiki 頁面（5 頁）
+- wiki/entities/nokia.md（電信設備/光通訊廠商跨入 ATP 投資，填補新實體空缺）
+- wiki/sources/2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix.md
+- wiki/sources/2026-06-22_trendforce_sandisk-hbf-patent-nand-processor-bonding.md
+- wiki/sources/2026-06-16_nokia_pennsylvania-atp-expansion.md
+- wiki/sources/2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging.md
+
+### 更新 Wiki 頁面（8 頁）
+- wiki/technologies/hbm4.md：新增 2026-06-23 更新區段，記載 Samsung HBM4 營收破 $1B、SK hynix 放緩量產保 DRAM 毛利之策略分歧
+- wiki/technologies/hbf.md：新增 SanDisk CBA（CMOS Bonded to Array）新專利條目，補充 HBF 下一代「運算-儲存一體化」架構構想
+- wiki/entities/samsung.md：「近期動態」新增 2026-06-23 條目（HBM4 營收破 $1B 里程碑）
+- wiki/entities/sk-hynix.md：「近期動態」新增 2026-06-23 條目（放緩 HBM4 量產保 DRAM 毛利、微軟 DDR5 供應協議）
+- wiki/concepts/geopolitics-advanced-packaging.md：新增 Nokia 賓州 ATP 投資條目，補強「美國封裝份額過低」論述（並存 <2% 與既有 ~3% 兩組統計口徑）
+- wiki/technologies/hybrid-bonding.md：新增 ECTC 2026 補充區段（Applied Materials 450nm/98%良率/20M互連、ASML <80nm overlay、CEA-Leti indium 微凸塊）
+- wiki/technologies/copackaged-optics.md：新增 ECTC 2026 CPO 專題場次條目（AIST、GlobalFoundries、Corning、Intel）
+- wiki/technologies/copos.md：新增 ECTC 2026 面板級封裝條目（Resonac CMP、USHIO 無接縫曝光）
+- wiki/technologies/cowos.md：補充 ECTC 2026 可靠性研究條目，新增 Renesas 作為共同參與廠商
+- wiki/index.md：頁面總數 232→237；來源數 194→198；新增 1 個 entities 連結、4 個 sources 連結
+
+### 主要新知識
+1. **Samsung 與 SK hynix 在 HBM4 量產第二季出現明確商業策略分歧**：Samsung 衝刺營收里程碑（4 個月破 $1B），SK hynix 因 commodity DRAM 毛利逼近理論上限（~90%）而主動放緩 HBM4 產能轉換，優先確保現有 DRAM 業務利潤。
+2. **SanDisk 揭露下一代 HBF 架構構想（CBA）**：將處理器邏輯直接接合於 NAND tile，並與 HBM 共享同一中介層，代表「記憶體+儲存+邏輯」三合一封裝路線的早期專利佈局。
+3. **Nokia 成為新記載實體**，代表 CHIPS Act 資金與先進測試封裝（ATP）投資正擴及電信/光通訊系統廠商，而非僅限傳統晶圓代工/OSAT。
+4. **ECTC 2026 學術會議補充了混合接合、CPO、面板級封裝三大領域的具體量化研究數據**（450nm pitch/98%良率/20M互連、<80nm overlay），為既有時程性記載增添製程精度錨點。
+
+### ✅ Git Commit 狀態
+`git add -A && git commit -m "2026-06-25"` 在沙箱環境中**成功完成**（commit be7d791，20 files changed, 444 insertions(+), 93 deletions(-)）。過程中出現多筆 `unable to unlink .git/objects/.../tmp_obj_*: Operation not permitted` 警告（與 2026-06-22 相同的跨平台掛載權限殘留訊息），但未阻止 commit 物件寫入與 HEAD 更新，commit 已確認生效。後續發現 bash 掛載點對 wiki/log.md 的寫入存在同步延遲，本條目最終透過 bash 直接寫入後納入下一個 commit。
