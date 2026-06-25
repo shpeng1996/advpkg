@@ -143,4 +143,6 @@ EMIB 是 Intel 的局部矽橋接技術：將一小片高密度矽橋（bridge d
 - EMIB 能否在功率密度上突破 5–6 kW 限制（透過嵌入式 IVR）？
 - Google TPU v9 採用 EMIB 是否會動搖 TSMC CoWoS 的 CSP 主導地位？
 - EMIB on Glass 量產節奏（2027–28 目標）能否達成？
-- **NVIDIA Feynman I/O die 最終是否採用 Intel 14A/18A + EMIB？**（2026-05-12 新增）：目前 NVIDIA 並行評估 TSMC 
+- **NVIDIA Feynman I/O die 最終是否採用 Intel 14A/18A + EMIB？**（2026-05-12 新增）：目前 NVIDIA 並行評估 TSMC A16+SoIC 與 Intel 14A/18A+EMIB 兩條路線。Intel EMIB 若獲 NVIDIA 旗艦 AI 晶片採用，將是 EMIB 從「ASIC 客戶」到「高效能 GPU 客戶」的突破，也將重塑整個 CoWoS 壟斷格局。
+- **SK Hynix EMIB R&D 是否會演變為量產合作**？目前 SK Hynix 僅在 R&D 層面測試；若 EMIB 吸引更多 HBM 客戶（Marvell、MediaTek），SK Hynix 的 EMIB 相容 HBM 設計可能成為競爭優勢。
+- **EMIB 客戶多元化速度**：Marvell、MediaTek 在 2026 年 5 月進入評估；若 2026 H2 簽訂合約，EMIB 外部封裝業務規模將大幅超越現有預估。

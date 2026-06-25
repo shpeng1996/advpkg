@@ -126,4 +126,14 @@ CoWoS 將多顆晶片（GPU、HBM 等）放置於一個中介層（Interposer）
 
 ### ⭐ CoWoS 可靠性研究（ECTC 2026，2026-06-25 補充）
 
-*Source: Advanced Packaging 
+*Source: Advanced Packaging News，2026-05-26*
+
+**TSMC、Renesas** 於 ECTC 2026 會議中提及 CoWoS 相關**可靠性研究**（reliability study）成果——補充既有 wiki 對 ECTC 2026 CoWoS 可靠性議程（Semiconductor Digest 報導）的單一來源記載，新增 Renesas 作為共同參與廠商的記載。
+
+---
+
+### ⭐ CoWoS 可靠性研究（ECTC 2026，2026-05-24 新增）
+
+*Source: Semiconductor Digest 2026-05-20（ECTC 2026 技術展示摘要）*
+
+**Paper 6.3 — TSMC
