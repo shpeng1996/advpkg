@@ -3,8 +3,8 @@ title: "HBM4 — High Bandwidth Memory 4"
 category: technology
 tags: [memory, HBM, JEDEC, standards, AI, HPC, HBM4E, cleanroom, capacity, ISSCC2026, ZAM, HB3DM]
 created: 2026-04-24
-updated: 2026-06-20
-sources: [2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-03-18_trendforce_intel-emib-malaysia, 2026-01-23_trendforce_hbm4e-samsung-skhynix-mid2026, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-01-13_semiengineering_hbm4-microbumps, 2025-12-18_trendforce_micron-capex-hbm4, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h, 2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-03-03_trendforce_sk-hynix-hbm4-tight-gaps, 2025-08-12_semianalysis_hbm-roadmap, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit, 2026-06-09_astutegroup_hbm-market-share-2026-battle, 2026-06-10_trendforce_samsung-gwangju-packaging-base, 2026-06-15_trendforce_skhynix-hbm4e-sample-timeline-pulled-forward, 2026-06-20_techtimes_skhynix-hbm4e-12layer-samples]
+updated: 2026-06-25
+sources: [2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-03-18_trendforce_intel-emib-malaysia, 2026-01-23_trendforce_hbm4e-samsung-skhynix-mid2026, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-01-13_semiengineering_hbm4-microbumps, 2025-12-18_trendforce_micron-capex-hbm4, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h, 2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-03-03_trendforce_sk-hynix-hbm4-tight-gaps, 2025-08-12_semianalysis_hbm-roadmap, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit, 2026-06-09_astutegroup_hbm-market-share-2026-battle, 2026-06-10_trendforce_samsung-gwangju-packaging-base, 2026-06-15_trendforce_skhynix-hbm4e-sample-timeline-pulled-forward, 2026-06-20_techtimes_skhynix-hbm4e-12layer-samples, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix]
 related:
   - wiki/entities/sk-hynix.md
   - wiki/entities/samsung.md
@@ -401,3 +401,27 @@ TrendForce 2026-06-10 報導三星光州（Gwangju）封裝基地建設時，同
 | 良率成熟度 | 量產成熟 | 2027–2029 爬坡 |
 
 *Source: TrendForce 2026-06-10（Samsung Gwangju 封裝基地公告）*
+
+---
+
+## 2026-06-23 更新 / Updates
+
+### ⭐ Samsung HBM4 營收破 $1B vs SK hynix 放緩量產保 DRAM 毛利——策略分歧首現
+
+TrendForce 2026-06-23 報導揭示 Samsung 與 SK hynix 在 HBM4 量產第二季出現明確策略分歧：
+
+**Samsung**：
+- HBM4 量產自 2026-02 啟動，4 個月內累計營收已突破 **US$1B**，業界首家達成此里程碑；預估 2026-06 底前突破 **US$1.2B**
+- 確認 HBM4 base die 採用 **4nm FinFET**（自家 Foundry）
+- 全年 HBM 出貨量目標自 3.5B Gb 上修至約 **4B Gb**
+
+**SK hynix**：
+- 主動放緩 HBM4 量產爬坡，優先確保 **commodity DRAM 毛利率最大化**——HBM 業務目前佔總營收 **>40%**
+- 2026 Q1 DRAM ASP **+mid-60%**，DRAM 毛利率逼近理論上限 **~90%**
+- 調節（dial back）部分 HBM3E→HBM4 產線轉換速度；HBM4「有意義出貨量」時程後延至 **2026 Q3**
+- 全年 HBM 出貨展望由 4.5B Gb 下修至約 **4B Gb**
+- 與微軟簽署 **3 年期 DDR5 供應協議**
+
+**wiki 含義**：本次更新首次明確記載兩大 HBM4 供應商在商業策略層面的分歧——Samsung 衝刺市占/營收里程碑，SK hynix 因 commodity DRAM 毛利已達歷史高位而選擇保守產能配置。與先前（2026-04-15）「SK hynix 因 NVIDIA Rubin 延遲下調 HBM4 出貨 20–30%」的記載方向一致，本次補充了「DRAM 毛利率」這一新的成因角度，二者並存、互為補充而非矛盾。
+
+*Source: TrendForce 2026-06-23（引述 Yonhap News, ZDNet, Chosun Biz）*
