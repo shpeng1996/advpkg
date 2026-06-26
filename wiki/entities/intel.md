@@ -3,8 +3,8 @@ title: "英特爾 / Intel"
 category: entity
 tags: [IDM, advanced-packaging, EMIB, Foveros, Intel18A, Clearwater-Forest, Foveros-Direct, glass-substrate, 14A, High-NA-EUV, silicon-capacitors, Google-TPU-v8e]
 created: 2026-04-24
-updated: 2026-06-26
-sources: [2026-04-24_initial-survey, 2026-03-18_trendforce_intel-emib-malaysia, 2026-03-03_trendforce_intel-clearwater-forest, 2026-03-05_trendforce_intel-emib-billions, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-04-20_trendforce_intel-foundry-14a-equipment, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-01_semianalysis_cpus-back-datacenter-2026, 2026-04-10_3dincites_intel-gan-chiplet, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks, 2026-06-21_convergedigest_intel-emib-t-multi-die-packaging]
+updated: 2026-06-27
+sources: [2026-04-24_initial-survey, 2026-03-18_trendforce_intel-emib-malaysia, 2026-03-03_trendforce_intel-clearwater-forest, 2026-03-05_trendforce_intel-emib-billions, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-04-20_trendforce_intel-foundry-14a-equipment, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-01_semianalysis_cpus-back-datacenter-2026, 2026-04-10_3dincites_intel-gan-chiplet, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks, 2026-06-21_convergedigest_intel-emib-t-multi-die-packaging, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap]
 related:
   - wiki/entities/tsmc.md
   - wiki/entities/samsung.md
@@ -35,6 +35,9 @@ related:
 ---
 
 ## 近期動態 / Recent Developments
+
+- **2025-04-29（⭐一手來源新增）**：**Intel Foundry Direct Connect 2025——官方一手公告 EMIB-T、Foveros-R、Foveros-B、Foveros Direct 3D < 5µm pitch**。本條目為 Intel 投資者關係官方新聞稿，校正既有 wiki 部分條目隱含「2026 年公布」的時間誤差——這些技術名稱實際首次公開時間為 2025-04-29，2026 年的後續報導（ECTC 2026 等）多屬延伸細化。同篇公告重點：**Intel 14A** 採用 PowerDirect 直接接觸式供電（建立在 18A PowerVia 基礎上），PDK 已分發予領先客戶；**Intel 18A-PT** 可用 Foveros Direct 3D 連接頂部 die，混合接合間距 < 5µm；**Fab 52（Arizona）**完成首批 18A 晶圓「run the lot」；新增與 **Amkor Technology** 封裝合作；新設 **Intel Foundry Chiplet Alliance**（聚焦政府應用與關鍵商用市場 chiplet 基礎設施標準）；生態夥伴含 Synopsys、Cadence、Siemens EDA、PDF Solutions（EDA/IP）及 MediaTek、Microsoft、Qualcomm（客戶端）。詳見 [[technologies/emib]]、[[technologies/foveros]]。
+  *Source: Intel Corporation 投資者新聞稿，2025-04-29*
 
 - **2026-06-21（⭐新增）**：**Intel Foundry 官方部落格（Mark Gardner）公開 EMIB-T 完整架構藍圖**（Converge Digest 報導）：晶圓利用率約 **90%**（vs. 中介層方案約 60%，與 5/10 Bernstein 估算一致）；**目前光罩面積 >8×（約 6,800mm²）**，**2028 年目標 >12×（約 10,000mm²）**；單封裝可支援 **16+ 層 HBM4/HBM5 堆疊**，透過 **30+ 條 EMIB-T 橋接器**互連。確認 **EMIB 3.5D = EMIB-T（2.5D 橫向）+ Foveros（3D 垂直）**組合架構（與既有 wiki 描述一致）。文章亦確認 **前 SK Hynix CEO 李錯熹（Seok-Hee Lee）現已領導 Intel Foundry 封裝事業部**——人才從記憶體廠流向晶圓代工封裝部門，反映 HBM 整合知識對先進封裝的戰略價值。
   *Source: Converge Digest 2026-06-21（Jim Carroll，引述 Intel Foundry 官方部落格）*
@@ -110,19 +113,4 @@ related:
 - **2026-05-09（新增）⭐**：**Intel Foundry Technology Research 展示全球最薄 GaN Chiplet**（IEEE IEDM 2025 → 3D InCites 2026-04-10 撰文）：基底矽厚度僅 **19 µm**，從 300 mm GaN-on-Silicon 晶圓製造；業界首個完全**單片 On-Die CMOS 數位控制電路**整合（消除獨立 companion chiplet）。應用：資料中心 VRM（電壓調節器小型化）、5G/6G 基地台（GaN >200 GHz）。戰略意義：GaN power chiplet 可與邏輯 die 共同整合於 Foveros/EMIB 封裝，強化 Intel 在 5-6 kW AI 伺服器功率管理方面的競爭力。
   *Source: 3D InCites 2026-04-10（引述 IEDM 2025 論文）*
 
-- **2026-04-29**：Intel Q1 2026 法說會——CEO Lip-Bu Tan 指出 **CPU:GPU 比例從 1:8 趨向 1:1**（agentic/inference AI 帶動 CPU 需求回升）。外部重大動態：**Apple M 系列晶片正評估 Intel 18A-P 節點**（成本敏感型 Mac/平板基礎晶片為優先），**Google TPU v8e 考慮採用 Intel EMIB 封裝**。Intel Foundry 營業虧損縮窄至 **$2.4B**（QoQ 改善 $72M）；18A、Intel 3、Intel 4 良率均持續改善。**Tesla 確認採用 Intel 14A** 用於 Austin Terafab AI 複合體晶片——Intel 14A **首位外部客戶**（Reuters/Musk 揭露）。
-  *Source: TrendForce 2026-04-29*
-
-- **2026-01-29**：市場關注 NVIDIA 考慮 Intel 14A/18A 與 EMIB 封裝 Feynman，但技術分析揭示重要限制：**Feynman 晶片功耗達 5–6 kW**，超出 EMIB 處理能力。Feynman 需要封裝內嵌入式電壓調節器（**IVR，~1.8V 入封裝**），EMIB 無法提供真正嵌入式 IVR；Foveros 技術上可行但需完全重設計。結論：NVIDIA 高端 GPU（Feynman）更可能等待 **TSMC 美國廠（~2029）** 而非改用 EMIB；Intel 仍可承接 Vera CPU 封裝或低功耗 I/O die。
-  *Source: TrendForce 2026-01-29*
-
-- **2025-12-01**：Intel EMIB 首次外包里程碑——Intel 於 **Amkor 韓國仁川松島 K5 廠**建立 EMIB 製程，為 **Intel 史上首次將 EMIB 高端封裝外包**。Amkor 將在 **韓國（K5）、葡萄牙、Arizona 廠**三地同步展開 EMIB 封裝，鞏固「美國境內完整封裝路徑」。Amkor 配套在韓國啟動 **2,700 億韓元（~$2 億美元）**投資。此里程碑也確認 Songdo K5 可能接受外部（非 Intel）客戶的 EMIB 訂單。
-  *Source: TrendForce 2025-12-01*
-
-- **2026-04-20**：Intel Foundry 2026 年設備訂單較 2025 年成長 **>50% YoY**，主要目標是 **14A** 製程節點（High-NA EUV + RibbonFET）；重大不具名外部客戶正評估年底前 tape-out；14A 客戶預期同時採用 EMIB 封裝，形成「代工+封裝」一體化商業模式。
-  *Source: TrendForce 2026-04-20*
-
-- **2026-01-26**：Intel 發表業界首款**厚芯玻璃基板 + EMIB** 整合方案，目標 AI 資料中心大型封裝；玻璃基板克服有機 ABF 基板在大尺寸封裝的翹曲與訊號完整性限制；HVM 目標 2027–2028。EMIB 技術路線演進：EMIB → EMIB-T → EMIB on Glass。
-  *Source: TrendForce 2026-01-26*
-
-- **2026-04-07**：Intel EMIB 封裝技術正式進入「平台級」競爭——**Google** 計畫 2027 年 **TPU v9** 採用 EMIB（目前 TPU 使用 TSMC CoWoS）；**Amazon AWS** 評估 EMIB 用於 Trainium/Inferentia；**Meta** 考慮 EMIB 用於 MTIA 加速器。Intel EMIB 的關鍵賣點：*
+- **2026-04-29**：Intel Q1 2026 法說會——CEO Lip-Bu Tan 指出 **CPU:GPU 比例從 1:8 趨向 1:1**（agentic/inference AI 帶動 CPU 需求回升）。外部重大動態：**Apple M 系列晶片正評估 Intel 18A-P 節點**（成本敏感型 Mac/平板基礎晶片為優先），**Google TPU v8e 考慮採用 Intel EMIB 封裝**。Intel Foundry 營業虧損縮窄至 **$2.4B**（QoQ 改善 $72M）；18A、Intel 3、Intel 4 良率均持續改善。**Tesla 確認採用 Intel 14A** 用於 Austin Terafab AI 複合體晶片——Inte
