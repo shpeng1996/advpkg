@@ -424,4 +424,18 @@ TrendForce 2026-06-23 報導揭示 Samsung 與 SK hynix 在 HBM4 量產第二季
 
 **wiki 含義**：本次更新首次明確記載兩大 HBM4 供應商在商業策略層面的分歧——Samsung 衝刺市占/營收里程碑，SK hynix 因 commodity DRAM 毛利已達歷史高位而選擇保守產能配置。與先前（2026-04-15）「SK hynix 因 NVIDIA Rubin 延遲下調 HBM4 出貨 20–30%」的記載方向一致，本次補充了「DRAM 毛利率」這一新的成因角度，二者並存、互為補充而非矛盾。
 
-*Source: TrendForce 202
+*Source: TrendForce 2026-06-23（引述 Yonhap News, ZDNet, Chosun Biz）*
+
+## 2026-06-27 更新 / Updates
+
+### ⭐ NVIDIA 要求 2026 Q4 前交付 16-Hi HBM4，三大廠接合材料/厚度路線對比
+
+TweakTown（引述韓媒 Electronic Times，2025-12-28）報導 NVIDIA 已要求三大記憶體廠在 **2026 年 Q4** 前交付 16-Hi HBM4（較現行量產的 12-Hi 更密集），具體合約尚未簽署，三家仍在討論初始量產規模。報導稱此為「formidable」技術挑戰，核心瓶頸為晶圓薄化：
+
+- 現行 12-Hi 晶圓厚度約 **50 µm**；16-Hi 須降至約 **30 µm**——與既有 wiki「⭐ HBM4 封裝技術深度：MR-MUF 30µm Die Thinning（2026-01-13）」記載的 SK hynix CES 2026 數據吻合，本次新增 NVIDIA 明確時程要求與技術難度評語。
+- JEDEC HBM4 高度標準 **775 µm**（比 HBM3E 的 725 µm 厚 50 µm）；業界普遍預期 JEDEC **不會再放寬**此規格供 16-Hi 使用。
+- 接合材料：**Samsung、Micron 採用 TC-NCF**（Thermal Compression Non-Conductive Film）；**SK hynix 採用 MR-MUF**；接合材料厚度現約 10 µm，須進一步縮減以容納更多層 DRAM，散熱亦為新增挑戰。
+
+**矛盾備註**：本文稱 HBM5 也將止步於 16-Hi，與既有 wiki（引 TrendForce 2026-06-02）「HBM5 規劃 12/16/20 層」之說法有出入；本文發布時間（2025-12）早於 Samsung COMPUTEX 2026-06 揭露 20 層路線圖，應視為時間序列上的「修正前」版本，非真正矛盾。
+
+*Source: TweakTown 2025-12-28（Anthony Garreffa，引述 Electronic Times/etnews.com）*

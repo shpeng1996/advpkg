@@ -252,4 +252,38 @@ TSMC COUPE™ 與 GF SCALE 的競爭表明 CPO 市場正從「單一廠商主導
 
 *Source: DIGITIMES (Levi Li), 2026-06-07（付費牆，僅取得標題與摘要）*
 
-中國最大 OSAT **JCET** 在江陰程東生產基地開設新 3D 封裝廠，目標瞄準 **AI 電源模組與 CPO 需求**——延續 JCET 此前在上海臨港（汽車/機器人封裝，2026-03）與既有 CPO/玻璃基板布局（2026-04）的擴張軌跡。顯
+中國最大 OSAT **JCET** 在江陰程東生產基地開設新 3D 封裝廠，目標瞄準 **AI 電源模組與 CPO 需求**——延續 JCET 此前在上海臨港（汽車/機器人封裝，2026-03）與既有 CPO/玻璃基板布局（2026-04）的擴張軌跡。顯示中國 OSAT 陣營正同步跟進 CPO 趨勢，而非僅限歐美/台灣廠商。詳見 [[entities/jcet]]。
+
+---
+
+## 2026-06-25 更新 / Update
+
+### ECTC 2026 CPO 專題場次：AIST、GlobalFoundries、Corning、Intel 共同參與
+
+*Source: Advanced Packaging News，2026-05-26*
+
+ECTC 2026 設有 CPO 專題討論場次，由 **AIST（日本產業技術總合研究所）**、**GlobalFoundries**、**Corning**、**Intel** 共同參與，展示各自 CPO 技術路線進展。本條目補充 CPO 領域的學術會議場景視角，與既有 wiki 中個別廠商（Coherent、TSMC、Samsung、Intel 玻璃基板）的產品/技術發布形成跨來源交叉印證——CPO 已成為跨產學界（材料商、晶圓代工、研究機構）共同關注的焦點議程。
+
+*Source: Advanced Packaging News 2026-05-26*
+
+---
+
+## 2026-06-27 更新 / Update
+
+### EDN 2026 現況回顧：Marvell/Broadcom/Ayar Labs 2025 進展 + 長期市場預測（IDTechEx $20B by 2036）
+
+*Source: EDN（Majeed Ahmad），2025-12-30*
+
+EDN 回顧 CPO 在 2025 年的關鍵技術里程碑，並彙整三家市場研究機構對 2026 年後商業化時程的預測，首次將長期市場規模預測併入 wiki：
+
+- **Marvell（2025-01）**：自訂 XPU 架構整合 3D SiPho 引擎，支援 200 Gbps 電/光介面，XPU 間連線距離可達電氣纜線的 **100 倍**。
+- **Broadcom（2025-05）**：第三代 **200G/lane** CPO 技術；CPO 歷程始於 2021 Tomahawk 4-Humboldt，第二代 Tomahawk 5-Bailly 為業界首個量產 CPO 方案。
+- **Broadcom + Meta（2025-10）**：CPO 方案通過 **100 萬 link-hours** 高溫實驗室測試，無單次 link flap。
+- **Ayar Labs + GUC（2025-11）**：TeraPHY 光學引擎整合進 GUC（新竹）先進封裝/ASIC 設計流程。
+
+**市場預測（首次併入 wiki）**：
+- **Yole Group**：CPO 大規模部署落在 **2028–2030 年**；可插拔光模組在此之前仍具競爭力。
+- **LightCounting**：可插拔模組將在整個十年持續佔資料中心光連接多數，光收發技術逐步朝靠近 ASIC 方向演進。
+- **IDTechEx**：CPO 市場規模至 **2036 年將超過 $200 億**，2026–2036 CAGR **37%**。
+
+**wiki 含義**：補充既有 wiki（聚焦 TSMC COUPE™、GF SCALE、Intel 玻璃基板路線）所缺乏的市場研究機構長期預測視角，並以 Marvell、Broadcom 兩家先前記載較少的廠商時間序列補強橫向對照。與既有 wiki 並無矛盾，純屬補充。

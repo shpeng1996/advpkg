@@ -239,4 +239,25 @@
 - [[sources/2026-01-23_trendforce_chip-tools-tel-asml]] — TEL/ASML/AMAT 加速布局先進封裝；TEL Kumamoto ¥470 億；Eteris 合資（2026-01-23）⭐新增
 - [[sources/2026-01-21_trendforce_tsmc-ap-capex-ap7-copos]] — TSMC 先進封裝 CapEx CAGR 24%（2025–27）；AP7 嘉義 WMCM + CoPoS 定位確認（2026-01-21）⭐新增
 - [[sources/2026-01-20_trendforce_tsmc-wmcm-apple]] — TSMC WMCM 產能 2027 年倍增（AP3/AP7 並行；Apple 排他窗口詳情）（2026-01-20）⭐新增
-- [[sources/2026-01-20_trendforce_tsmc-wmcm-apple-2027]] — TrendForce：TS
+- [[sources/2026-01-20_trendforce_tsmc-wmcm-apple-2027]] — TrendForce：TSMC WMCM 為 Apple 擴產；AP3 升級+AP7 新建；2027 年>120K wsm（2026-01-20）⭐新增
+- [[sources/2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h]] — SK Hynix MR-MUF 確認用於 HBM4 16H；30µm die thinning；CES 2026 展示（2026-01-13）⭐新增
+- [[sources/2026-01-13_semiengineering_hbm4-microbumps]] — SemiEngineering：HBM4 維持微凸塊封裝；混合接合延後至 HBM5+（2026-01-13）⭐新增
+- [[sources/2026-01-12_trendforce_tsmc-mature-node-reallocation-cowos]] — TSMC 重新分配 45–90nm 成熟節點產能至 CoWoS；Fab14/8 吋廠轉用（2026-01-12）⭐新增
+- [[sources/2026-01-09_trendforce_nvidia-hbm4-16layer]] — NVIDIA 推動 HBM4 競賽：12 層量產、16 層衝刺；SK Hynix/Samsung 雙線競爭（2026-01-09）⭐新增
+- [[sources/2026-01-05_trendforce_skhynix-hbm4-outlook]] — TrendForce：SK Hynix 2026 HBM 展望；HBM4 雙軌策略（2026-01-05）⭐新增
+- [[sources/2025-12-30_trendforce_samsung-hbm-surge]] — Samsung HBM 產能 2026 衝刺 50%；HBM4 聚光燈（2025-12-30）⭐新增
+- [[sources/2025-12-22_trendforce_dnp-tgv-glass-substrate-2026]] — DNP TGV 玻璃基板：試驗線 2025-12、樣品 2026 初、量產 FY2028（2025-12-22）⭐新增
+- [[sources/2025-12-22_3dincites_intel-amkor-emib-partnership]] — IFTLE 651：Intel 與 Amkor 合力推進 EMIB；Songdo K5 外包細節（2025-12-22）⭐新增
+- [[sources/2025-12-18_trendforce_micron-capex-hbm4]] — Micron 上調 CapEx 至 $20B；2026 年 HBM 全年訂滿；HBM4 2Q26 放量（2025-12-18）⭐新增
+- [[sources/2025-12-18_trendforce_apple-wmcm-a20]] — Apple A20/iPhone 18 採用 WMCM 封裝；InFO→WMCM 過渡；AP3/AP7 WMCM 產能（2025-12-18）⭐新增
+- [[sources/2025-12-08_trendforce_cowos-booked-ase-cowop]] — TrendForce：CoWoS-L/S 全訂滿；ASE CoWoP 與 Amkor Arizona 補位（2025-12-08）⭐新增
+- [[sources/2025-12-04_trendforce_tsmc-ap7-arizona-p6]] — TSMC AP7 啟用；Arizona P6 封裝基地計畫；CapEx CAGR 24%（2025-12-04）⭐新增
+- [[sources/2025-12-01_trendforce_intel-amkor-songdo-emib-outsource]] — Intel 首次 EMIB 外包至 Amkor Songdo K5；EMIB-M 量產/EMIB-T 2026-27；2,700 億韓元投資（2025-12-01）⭐新增
+- [[sources/2025-12-01_semiengineering_thermal-management]] — 先進封裝熱管理：TSMC 直接矽液冷、3D 熱點、TIM 演進（2025-12）⭐新增
+- [[sources/2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding]] — IFTLE 648：Unimicron 玻璃核心基板 + Cu-Cu 混合接合可靠性研究（2025-12-01）⭐新增
+- [[sources/2025-10-07_trendforce_hybrid-bonder-market-2b]] — 混合接合設備市場 $2B（2028）；韓國 Hanmi/Hanwha/LG 競爭；Besi/ASMPT 全球領先（2025-10-07）⭐新增
+- [[sources/2025-09-19_trendforce_stmicro-foplp-france]] — STMicro 法國面板級封裝試驗線 2026 Q3 啟動（2025-09-19）⭐新增
+- [[sources/2025-09-12_trendforce_foplp-competitive-2025]] — FOPLP 競爭格局：Powertech 90% 良率；TSMC 玻璃 vs Samsung；Resonac+AMAT+TEL 生態（2025-09-12）⭐新增
+- [[sources/2025-08-12_semianalysis_hbm-roadmap]] — SemiAnalysis：HBM roadmap；HBM4 custom base die、shoreline area、XPU-HBM routing density 與 CoWoS 依賴（2025-08-12）⭐新增
+- [[sources/2025-08-05_3dincites_iftle636-samsung-lsb-micron-virginia]] — IFTLE 636：三星 LSB 矽橋接 Chiplet；Micron 維吉尼亞 HBM 封裝廠計畫（2025-08-05）⭐新增
+- [[sources/2025-07-01_3dincites_micron-onshore-tsmc-copos]] — IFTLE 634：Micron 本土化投資；TSMC CoP

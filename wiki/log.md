@@ -1569,3 +1569,90 @@
 
 ### ✅ Git Commit 狀態
 `git add -A && git commit -m "2026-06-25"` 在沙箱環境中**成功完成**（commit be7d791，20 files changed, 444 insertions(+), 93 deletions(-)）。過程中出現多筆 `unable to unlink .git/objects/.../tmp_obj_*: Operation not permitted` 警告（與 2026-06-22 相同的跨平台掛載權限殘留訊息），但未阻止 commit 物件寫入與 HEAD 更新，commit 已確認生效。後續發現 bash 掛載點對 wiki/log.md 的寫入存在同步延遲，本條目最終透過 bash 直接寫入後納入下一個 commit。
+
+## [2026-06-26] collect | SK Hynix/三星市值交叉、Intel EMIB-T 官方藍圖、FOPLP+玻璃基板市場規模、CoPoS 台灣供應鏈
+
+- 搜尋查詢數：7 組（涵蓋 TSMC 封裝動態、HBM4 記憶體、混合接合、面板級封裝、學術/會議、標準動態 UCIe/JEDEC、競爭對手 Intel/Samsung 等 7 大主題）
+- 成功抓取：4 篇（articles/ 4 篇，fetch_status: success）
+  - raw/articles/2026-06-24_techtimes_sk-hynix-dethroned-samsung-ddr5-hbm4.md
+  - raw/articles/2026-06-21_convergedigest_intel-emib-t-multi-die-packaging.md
+  - raw/articles/2026-06-23_communicationstoday_foplp-glass-substrate-market-8b-2030.md
+  - raw/articles/2026-04-28_cw_tsmc-copos-move-really-means.md
+- 失敗/跳過：4 篇
+  - EE Times "Understanding the Big Spend on Advanced Packaging Facilities" — 內文核對後確認為 2022/2023 年舊文（H100 供應、2023 年 ASE 營收等過時引用），雖在 2026 年搜尋結果中排名靠前，依品質過濾原則跳過
+  - tspasemiconductor.substack.com 文章 — 僅可取得付費牆預覽段落，正文無法取得，跳過
+  - istgroup.com 文章 — 內容為一般性新聞稿，無具體技術/市場數據，跳過
+  - newsletter.semianalysis.com 文章 — 確認為 2022 年付費牆舊文，跳過
+- 學術代理：UNAVAILABLE ✗
+- 本次鎖定 4 篇（低於理想 5–10 篇區間），符合 CLAUDE.md §3.1.3「品質優先於數量」原則，且 4 ≥ 3 篇下限，故全數正常 ingest。
+
+### 新增 Wiki 頁面（4 頁）
+- wiki/sources/2026-06-24_techtimes_sk-hynix-dethroned-samsung-ddr5-hbm4.md
+- wiki/sources/2026-06-21_convergedigest_intel-emib-t-multi-die-packaging.md
+- wiki/sources/2026-06-23_communicationstoday_foplp-glass-substrate-market-8b-2030.md
+- wiki/sources/2026-04-28_cw_tsmc-copos-move-really-means.md
+
+### 更新 Wiki 頁面（7 頁）
+- wiki/entities/sk-hynix.md：「近期動態」新增 2026-06-24 條目（市值反超三星、KOSPI 重挫、Q1 營業利益率 72%、Nasdaq ADR 申請）
+- wiki/entities/samsung.md：「近期動態」新增 2026-06-24 條目（市值短暫被反超的市場解讀，基本面未受影響說明）
+- wiki/entities/intel.md：「近期動態」新增 2026-06-21 條目（EMIB-T 官方部落格藍圖：90% 利用率、>8×→>12× 光罩面積、16+ HBM 堆疊/30+ 橋接器、Seok-Hee Lee 領導封裝事業部）
+- wiki/technologies/emib.md：「發展時程」新增 2026-06-21 條目（EMIB-T 官方藍圖數據點，與既有 ECTC 2026/Tom's Hardware 規格交叉參照）
+- wiki/technologies/copos.md：新增「2026-06-26 更新」區段（CommonWealth 三層技術定位解析 + 首批 12 家具名台灣 CoPoS 供應鏈廠商）
+- wiki/concepts/advanced-packaging-market.md：新增「FOPLP + 玻璃基板市場規模預測」區段（Counterpoint Research：$650M 2024 → >$8.1B 2030；AI/HPC 45.6%；東亞產能占比 84.8%；PTI 首次提及）
+- wiki/index.md：頁面總數 237→241；來源數 198→202；新增 4 個 sources 連結
+
+### 主要新知識
+1. **SK hynix 與三星在 HBM4 策略分歧的市場反應首次量化**：SK hynix 市值短暫反超三星（26 年來首次），KOSPI 隔日重挫，市場將其解讀為兩大記憶體廠 HBM4 量產節奏分歧的訊號；SK hynix 同時申請 Nasdaq ADR 上市（2026-07-10 目標掛牌），顯示資本市場布局與 HBM4 策略調整同步推進。
+2. **Intel Foundry 官方部落格首次系統性公開 EMIB-T 完整路線藍圖**，提供晶圓利用率（~90%）與光罩面積路線圖（>8×→>12×，2028）的一手資料來源，並確認前 SK Hynix CEO 李錯熹轉任 Intel Foundry 封裝事業部負責人——記憶體廠 HBM 知識向晶圓代工封裝部門流動的具體案例。
+3. **FOPLP+玻璃基板市場首次獲得具體美元規模量化**（$650M 2024 → $8.1B+ 2030，Counterpoint Research），並首次點名 PTI（Powertech）在玻璃基板領域的投資角色；PTI 目前僅見於 OSAT 營收排名表，尚無獨立 entities 頁面，列為後續補強候選。
+4. **CoPoS 台灣供應鏈具名清單首次完整揭露**（12 家廠商，4 大類別），補強既有 wiki 僅列廠商類別、缺乏具名長尾供應商的缺口；這些廠商目前均無獨立 entities 頁面。
+
+### 待確認/後續事項
+- PTI（Powertech）與 12 家 CoPoS 台灣供應鏈廠商（Chroma ATE、Scientech、C Sun、GMM、APT、GPTC、Ta Liang Technology、V5 Technologies、Favite、Gudeng Precision、Li-Din、SemTek、Manz）尚無獨立 entities 頁面，建議後續 ingest 或 lint 時評估是否建立。
+
+---
+
+## [2026-06-27] collect | TSMC CoWoS 產能上修、NVIDIA 16-Hi HBM4 供應戰、CPO 市場長期預測、Intel EMIB-T/Foveros 一手來源
+
+- 搜尋查詢數：9 組（涵蓋 TSMC 封裝動態、HBM4/HBM4E 記憶體、混合接合、面板級封裝/玻璃基板、ECTC/IEDM 學術論文、UCIe/JEDEC 標準、Intel EMIB/Foveros 與 Samsung X-Cube 競爭對手等主題）
+- 成功抓取：4 篇（articles/ 4 篇，fetch_status: success）
+  - raw/articles/2026-06-27_tmtpost_tsmc-cowos-capacity-targets-2026-2027.md
+  - raw/articles/2026-06-27_tweaktown_hbm4-16hi-nvidia-supply-fight.md
+  - raw/articles/2026-06-27_edn_cpo-technology-status-2026.md
+  - raw/articles/2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap.md
+- 失敗/跳過：4 篇
+  - techpowerup.com（Intel 16 compute dies + 24 HBM5 modules）— WebFetch 兩次嘗試均僅回傳 URL 無內容本體（疑似 JS 渲染或封鎖），跳過
+  - advanced.onlinelibrary.wiley.com（hybrid bonding CMP 學術論文）— WebFetch 回傳空白內容，疑似付費牆，跳過
+  - towardspackaging.com/intel-advanced-packaging — WebFetch 回傳「URL not in provenance set」硬錯誤（該 URL 並非任何先前搜尋結果中實際出現的連結，而是從摘要重建猜測的網址），依工具限制直接捨棄，未重試
+  - creating-nanotech.com（TechNews 轉載文）— 原文發布日期實為 2025-06-19，距今逾一年，且為設備商新聞頁面轉載低原創內容，依品質過濾原則跳過
+- 學術代理：UNAVAILABLE ✗
+- 本次鎖定 4 篇（低於理想 5–10 篇區間），符合 CLAUDE.md §3.1.3「品質優先於數量」原則；intc.com 雖逾 6 個月新鮮度門檻，但因屬具體技術規格 + 最高可信度一手官方來源，依「任一」品質條件納入收錄。
+
+### 新增 Wiki 頁面（4 頁）
+- wiki/sources/2026-06-27_tmtpost_tsmc-cowos-capacity-targets.md
+- wiki/sources/2026-06-27_tweaktown_hbm4-16hi-nvidia-supply-fight.md
+- wiki/sources/2026-06-27_edn_cpo-technology-status-2026.md
+- wiki/sources/2026-06-27_intel_foundry-direct-connect-2025-packaging.md
+
+### 更新 Wiki 頁面（7 頁）
+- wiki/technologies/cowos.md：「發展時程」新增 2026-01-29 條目（TSMC 上修 CoWoS 產能目標、AP7 SoIC 產線轉產 CoWoS、AP8 新增 P2 廠）
+- wiki/technologies/hbm4.md：新增「2026-06-27 更新」區段（NVIDIA 要求 2026 Q4 前交付 16-Hi HBM4；三大廠 TC-NCF vs MR-MUF 接合材料對比；JEDEC 775µm 高度天花板）
+- wiki/technologies/copackaged-optics.md：新增「2026-06-27 更新」區段（Marvell/Broadcom/Ayar Labs 2025 進展回顧；首次併入 Yole/LightCounting/IDTechEx 長期市場預測，$20B by 2036/37% CAGR）
+- wiki/technologies/emib.md：「發展時程」新增 2025-04-29 一手來源條目，校正 EMIB-T 公告時間誤差
+- wiki/technologies/foveros.md：「發展時程」+ 規格表新增 2025-04-29 一手來源條目（Foveros-R/B 公告時間校正；Foveros Direct 3D <5µm vs <10µm pitch 數字並存說明）
+- wiki/entities/tsmc.md：「近期動態」新增 2026-01-29 條目（CoWoS 產能上修、AP7 SoIC→CoWoS 轉產）
+- wiki/entities/intel.md：「近期動態」新增 2025-04-29 一手來源條目（Direct Connect 2025：14A PowerDirect、18A-PT、Amkor 合作、Intel Foundry Chiplet Alliance）
+- wiki/index.md：頁面總數 241→245；來源數 202→206；新增 4 個 sources 連結
+
+### 主要新知識
+1. **TSMC 以犧牲既定 SoIC 產能規劃換取 CoWoS 短期供給**——嘉義 AP7 SoIC 產線轉產 CoWoS，首次明確記載供需失衡下的內部產線調度機制，與既有 SoIC CAGR 90% 擴產敘事存在資源排擠張力，待後續追蹤。
+2. **NVIDIA 明確要求三大記憶體廠 2026 Q4 前交付 16-Hi HBM4**，補充三廠接合材料路線對比（Samsung/Micron 用 TC-NCF，SK hynix 用 MR-MUF）與晶圓薄化（50µm→30µm）技術細節，深化既有 HBM4 封裝技術記載。
+3. **CPO 市場長期規模預測首次完整併入 wiki**（IDTechEx：$20B by 2036，37% CAGR；Yole：2028–2030 大規模部署窗口），填補既有 wiki 偏重技術路線、缺乏市場研究機構觀點的空缺。
+4. **Intel EMIB-T/Foveros-R/B/Foveros Direct 一手官方公告時間校正**——確認這些技術名稱實際首次公開時間為 2025-04-29（Direct Connect），而非既有 wiki 部分條目隱含的「2026 年公布」；同時揭露 Foveros Direct 3D pitch 數字並存現象（官方原始目標 <5µm vs. 2026 量產報導 <10µm），已在 foveros.md 中以「並存記載、非矛盾」方式呈現。
+
+### 待確認/後續事項
+- Foveros Direct 3D pitch <5µm（官方 2025-04 目標）與 <10µm（2026 量產現況）兩數字是否會隨量產良率提升而收斂，建議後續追蹤。
+- TSMC AP7 SoIC 產能因轉產 CoWoS 是否實際下修，建議後續 collect 鎖定 SoIC 產能具體數字報導。
+
+### Git Commit 狀態
+待執行：`git add -A && git commit -m "2026-06-26"`
