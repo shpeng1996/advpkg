@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-06-27
-**頁面總數 Total Pages**：245
-**原始來源數 Sources**：206
+**更新時間 Updated**：2026-06-28
+**頁面總數 Total Pages**：246
+**原始來源數 Sources**：207
 
 ---
 
@@ -63,6 +63,7 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-06-28_economy-ac_glass-substrate-global-race]] — The Economy：**玻璃基板全球競賽——中國陣營擴大至 BOE/Visionox/AKM Meadville/雲天半導體，日本 Ibiden/DNP 目標 2028**；首次記載專利集中於 Intel/Corning/Schott（2026-06-28 收錄；原文 2026-06-11）⭐新增
 - [[sources/2026-06-27_tmtpost_tsmc-cowos-capacity-targets]] — TMTPost：**台積電上修 2026–2027 CoWoS 產能目標**；嘉義 AP7 SoIC 產線轉產 CoWoS；台南 AP8 新增 P2 廠（2026-06-27 收錄；原文 2026-01-29）⭐新增
 - [[sources/2026-06-27_tweaktown_hbm4-16hi-nvidia-supply-fight]] — TweakTown：**NVIDIA 要求 2026 Q4 前交付 16-Hi HBM4**；三大廠接合材料（TC-NCF vs MR-MUF）/厚度路線對比；JEDEC 775µm 高度天花板（2026-06-27 收錄；原文 2025-12-28）⭐新增
 - [[sources/2026-06-27_edn_cpo-technology-status-2026]] — EDN：**CPO 2026 現況回顧**——Marvell/Broadcom/Ayar Labs 2025 進展；市場預測首次併入（IDTechEx $20B by 2036, 37% CAGR；Yole 2028-30 量產窗）（2026-06-27 收錄；原文 2025-12-30）⭐新增
@@ -258,6 +259,4 @@
 - [[sources/2025-10-07_trendforce_hybrid-bonder-market-2b]] — 混合接合設備市場 $2B（2028）；韓國 Hanmi/Hanwha/LG 競爭；Besi/ASMPT 全球領先（2025-10-07）⭐新增
 - [[sources/2025-09-19_trendforce_stmicro-foplp-france]] — STMicro 法國面板級封裝試驗線 2026 Q3 啟動（2025-09-19）⭐新增
 - [[sources/2025-09-12_trendforce_foplp-competitive-2025]] — FOPLP 競爭格局：Powertech 90% 良率；TSMC 玻璃 vs Samsung；Resonac+AMAT+TEL 生態（2025-09-12）⭐新增
-- [[sources/2025-08-12_semianalysis_hbm-roadmap]] — SemiAnalysis：HBM roadmap；HBM4 custom base die、shoreline area、XPU-HBM routing density 與 CoWoS 依賴（2025-08-12）⭐新增
-- [[sources/2025-08-05_3dincites_iftle636-samsung-lsb-micron-virginia]] — IFTLE 636：三星 LSB 矽橋接 Chiplet；Micron 維吉尼亞 HBM 封裝廠計畫（2025-08-05）⭐新增
-- [[sources/2025-07-01_3dincites_micron-onshore-tsmc-copos]] — IFTLE 634：Micron 本土化投資；TSMC CoP
+- [[sources/2025-08-12_semianalysis_hbm-roadmap]] — SemiAnalysis：HBM roadmap；HBM4 custom base die、shoreline area、XPU-HBM routing density 與 CoWoS 依賴（2

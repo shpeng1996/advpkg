@@ -1656,3 +1656,42 @@
 
 ### Git Commit 狀態
 待執行：`git add -A && git commit -m "2026-06-26"`
+
+---
+
+## [2026-06-28] collect | 玻璃基板全球競賽中國/日本陣營擴大；CoWoS 供需缺口重複來源誤觸發現並修正
+
+- 搜尋查詢數：9 組（TSMC CoWoS/SoIC 動態、HBM 記憶體、混合接合研究論文、Amkor/ASE OSAT、面板級封裝、學術會議論文、標準動態、競爭對手、近期綜合新聞）
+- 成功抓取：1 篇（articles/ 1 篇，fetch_status: success）
+  - raw/articles/2026-06-28_economy-ac_glass-substrate-global-race.md
+- 失敗/跳過：8 篇
+  - uciexpress.org Chiplet Summit 2026 文章 — 已收錄（2026-05-22，raw/articles/2026-03-05_uciexpress_...），dedup 跳過
+  - semiengineering.com Intel EMIB-T/CPO/glass ECTC 2026 文章 — 已收錄（2026-06-10），dedup 跳過
+  - techtimes.com SK Hynix dethroned Samsung DDR5 文章 — 已收錄（2026-06-26），dedup 跳過
+  - datacenterdynamics.com（Samsung/SK Hynix 產能擴充、SK Hynix $12.9B 封裝廠）— 2 篇皆為 JS 渲染頁面，WebFetch 僅回傳空白內容；後者另確認與既有 TrendForce 來源（raw/articles/2026-04-22_trendforce_sk-hynix-pt7-cheongju-packaging-fab.md）內容重複，雙重排除
+  - asiae.co.kr、pandaily.com 玻璃基板/封裝文章 — JS 渲染頁面，WebFetch 空白內容，跳過
+  - semianalysis.com "Advanced Packaging Part 2" — 原文發布於 2022-01，遠超 6 個月新鮮度門檻且為付費牆內容，依品質過濾原則跳過
+  - arxiv.org/abs/2602.12521 — WebFetch 回傳「URL not in provenance set」工具限制錯誤，無法擷取，跳過
+  - eeherald.com CEA-Leti 1µm pitch D2W 混合接合論文 — 已收錄（2026-05-10，raw/articles/2026-04-29_semiwiki_cea-leti-ectc2026-hybrid-bonding-1um.md），dedup 跳過
+  - digitimes.com Amkor 2.5D/HDFO 2026 營收成長文章 — 付費牆鎖定全文（僅摘要可讀），跳過
+- ⚠️ **錯誤修正記錄**：原計畫收錄 TrendForce「CoWoS 供需缺口 20%→10%」文章（trendforce.com/news/2026/06/15/...），WebFetch 並建立 raw 檔案後，經 grep 驗證發現該 URL 與既有來源（raw/articles/2026-06-15_trendforce_tsmc-cowos-gap-narrowing-130k-200k-wafers.md，collected_date 2026-06-17）**完全相同**，屬於本次執行中誤判為新文章的重複收錄。已將誤建立的 raw 檔案標記為 `RETRACTED_DUPLICATE: true` 並加註說明（檔案本身因檔案系統權限限制無法刪除，故以 frontmatter 旗標方式排除），且**未**將該 URL 寫入 `_collected_urls.txt`，避免污染去重登記表。本次教訓：所有候選 URL 須先以 bash grep 對 `_collected_urls.txt` 逐一驗證，再進行 WebFetch，而非憑記憶判斷新舊。
+- 學術代理：UNAVAILABLE ✗（web_fetch 工具 provenance 限制，arxiv.org 論文無法擷取）
+- ⚠️ **本次僅收錄 1 篇，低於理想 5–10 篇區間**：當日搜尋週期內，多數高品質候選（UCIe、Intel EMIB-T、SK Hynix、CEA-Leti）皆已在過去數日的每日 collect 中收錄，反映 wiki 對近期先進封裝主流新聞的覆蓋已趨近飽和；剩餘候選多為付費牆、JS 渲染不可擷取，或新鮮度不足。依 CLAUDE.md §3.1.3「品質優先於數量」原則，僅收錄唯一通過全部過濾條件的文章。
+
+### 新增 Wiki 頁面（1 頁）
+- wiki/sources/2026-06-28_economy-ac_glass-substrate-global-race.md
+
+### 更新 Wiki 頁面（2 頁）
+- wiki/technologies/glass-substrate.md：新增「2026-06-28 更新」區段（中國陣營擴大至 BOE/Visionox/AKM Meadville/雲天半導體；日本 Ibiden/DNP 2028 時程交叉驗證；首次記載玻璃基板/TGV 專利集中於 Intel/Corning/Schott）；sources 清單新增本次來源
+- wiki/index.md：頁面總數 245→246；來源數 206→207；新增 1 個 sources 連結；更新時間 2026-06-27→2026-06-28
+
+### 主要新知識
+1. **玻璃基板中國陣營參與者擴大**：除既有記載的 BOE、Visionox 外，新增 AKM Meadville、雲天半導體兩家廠商投入開發，顯示中國跨入玻璃基板封裝的廠商數量持續增加。
+2. **玻璃基板/TGV 專利集中度首次記載**：核心專利集中於 Intel、Corning、Schott 三方，補強既有「供應鏈主導權之爭」開放問題的具體依據，為中國新進廠商的潛在 IP 障礙提供脈絡。
+
+### 待確認/後續事項
+- AKM Meadville、雲天半導體目前無獨立 entities 頁面，列為後續 collect/ingest 候選名單。
+- 建議下次 collect 擴大搜尋範圍至 OSAT 財報、學術會議（IEDM 2026 籌備中文章）等較少被近期每日 collect 觸及的主題，緩解候選文章飽和問題。
+
+### Git Commit 狀態
+待執行：`git add -A && git commit -m "2026-06-28"`
