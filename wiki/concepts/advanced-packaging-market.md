@@ -3,8 +3,8 @@ title: "先進封裝市場 / Advanced Packaging Market"
 category: concept
 tags: [market, forecast, CAGR, supply-chain, HBM, chiplet, geopolitics, equipment]
 created: 2026-04-24
-updated: 2026-06-26
-sources: [2026-04-24_initial-survey, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2026-01-23_trendforce_chip-tools-tel-asml, 2026-03-05_trendforce_intel-emib-billions, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2025-12-18_trendforce_micron-capex-hbm4, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2025-05-13_trendforce_top10-osat-2024, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-04-16_ontoinnovation_dragonfly-g5-qualified, 2026-06-23_communicationstoday_foplp-glass-substrate-market-8b-2030]
+updated: 2026-06-29
+sources: [2026-04-24_initial-survey, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2026-01-23_trendforce_chip-tools-tel-asml, 2026-03-05_trendforce_intel-emib-billions, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2025-12-18_trendforce_micron-capex-hbm4, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2025-05-13_trendforce_top10-osat-2024, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-04-16_ontoinnovation_dragonfly-g5-qualified, 2026-06-23_communicationstoday_foplp-glass-substrate-market-8b-2030, 2026-06-29_trendforce_china-osat-tongfu-jcet-investment, 2026-06-29_businesswire_amkor-q1-2026-earnings]
 related:
   - wiki/entities/tsmc.md
   - wiki/entities/sk-hynix.md
@@ -50,6 +50,12 @@ related:
 | 10 | ChipMOS | $710M | +3.1% |
 
 > **中國廠商崛起**：JCET、HT-Tech、Tongfu、Hana Micron 成長均遠超全球平均，政策支持 + 本土需求為主要動力，對現有市場秩序形成挑戰。
+
+**中國 OSAT 資本擴張案例（TrendForce 2026-01-19 新增）⭐**：Tongfu Microelectronics（通富微電）計劃私募增發募資 **RMB 44 億**，擴充記憶體/汽車/晶圓級封裝產能（但多為既有製程擴充，較少投入新技術研發）；JCET（江蘇長電）車規封測廠 JSAC 已通過產線認證，2025 前三季汽車電子營收 **+31.3% YoY**，並透過全資子公司投資總規模 **RMB 134.6 億**的「嘉融芯智」股權基金（持股 30%）。華天科技（Forehope）赴馬來西亞建 SiP 封測廠（投資上限 RMB 21 億）；UIGreen 擴充光學模組封測（上限 RMB 7.605 億）。早期投入已見回報：2025H1 淨利成長 Forehope +118.6%、JCET +52.4%、中芯長電 +30.5%；2023 年中國一線 OSAT 廠 41% 資本支出已投向 2.5D/3D 封裝、Chiplet 異質整合與 SiP，顯示中國本土供應鏈正以自主資本擴張方式追趕先進封裝產能。
+*Source: TrendForce 2026-01-19*
+
+**Amkor 2026 Q1 財報：先進封裝帶動營收創紀錄（Business Wire 2026-04-27 新增）⭐**：Amkor（全球第二大 OSAT）單季營收 **$1.68B（+27% YoY，歷史新高）**，HDFO 高密度扇出與 Flip-Chip 先進封裝為主要超預期動能，毛利率提升至 14.2%。對比 2024 全年營收負成長（-2.8%），顯示先進封裝轉型已開始反映在 OSAT 廠財報數字上，呼應本頁「AI 加速器需求爆發」驅動力論述。
+*Source: Business Wire / Amkor Technology 2026-04-27*
 
 **⭐ 2026-05-14 重要更新（TSMC Taiwan Technology Symposium）**：
 - AI 晶圓需求 2022→2026 成長 **11 倍**（TSMC 公布，Reuters 引述）

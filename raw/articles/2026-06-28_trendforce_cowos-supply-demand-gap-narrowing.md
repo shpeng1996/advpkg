@@ -25,4 +25,9 @@ According to industry sources cited by Economic Daily News, Reuters, and Commerc
 - TSMC's own in-house CoWoS capacity is reported to reach approximately 120,000–140,000 wafers per month by the end of 2026.
 - Combined with outsourced CoWoS-equivalent capacity at OSAT partners (an additional 50,000–60,000 wafers/month), industry-wide advanced packaging capacity for CoWoS-class processes is approaching roughly 200,000 wafers per month by end-2026.
 - The narrowing of the supply-demand gap is attributed to aggressive capacity expansion at TSMC's AP7 (Chiayi) complex and continued qualification of ASE/Amkor as CoWoS outsourcing partners.
-- TSMC's panel-level packaging initiative, CoPoS (Chip-on-Panel-on-Substrate), deve
+- TSMC's panel-level packaging initiative, CoPoS (Chip-on-Panel-on-Substrate), developed in partnership with VisEra, is reported to be completing material and equipment qualification in June 2026, with a pilot production line targeted for mid-2027.
+- NVIDIA's Feynman platform is reported to be the first customer lined up for CoPoS, with a production ramp expected in the 2028–2029 timeframe.
+
+## Sourcing note
+
+This TrendForce report synthesizes and cites reporting originally from Economic Daily News, Reuters, and Commercial Times — treat as a secondary aggregation of supply-chain sourced claims rather than a primary TSMC disclosure.

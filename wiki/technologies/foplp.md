@@ -3,8 +3,8 @@ title: "FOPLP — 扇出面板級封裝 / Fan-Out Panel-Level Packaging"
 category: technology
 tags: [fan-out, panel-level, TSMC, Samsung, ASE, Powertech, Innolux, CoPoS, InFO, cost-reduction]
 created: 2026-05-03
-updated: 2026-06-20
-sources: [2025-09-12_trendforce_foplp-competitive-2025, 2026-04-13_trendforce_copos-pilot, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-21_3dincites_acm-wlp-plp-process-trends, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-15_digitimes_manz-310mm-foplp-ecd-equipment, 2026-06-13_digitimes_linkotech-foplp-rollout-traction, 2026-06-20_prnewswire_manz-asia-310mm-ecd]
+updated: 2026-06-29
+sources: [2025-09-12_trendforce_foplp-competitive-2025, 2026-04-13_trendforce_copos-pilot, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-21_3dincites_acm-wlp-plp-process-trends, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-15_digitimes_manz-310mm-foplp-ecd-equipment, 2026-06-13_digitimes_linkotech-foplp-rollout-traction, 2026-06-20_prnewswire_manz-asia-310mm-ecd, 2026-06-29_trendforce_ase-foplp-mass-production-2026]
 related:
   - wiki/technologies/copos.md
   - wiki/technologies/info-wmcm.md
@@ -73,6 +73,8 @@ SemiAnalysis 2022 年的技術框架指出，fanout RDL、embedded silicon bridg
 - **2026-06**：TSMC CoPoS 試驗線預計完工
 - **2026-05-26（⭐新）**：**ASE 在 ECTC 2026 宣布業界首條自動化 310mm × 310mm PLP 產線**——FOCoS（L/S=2/2µm）和 FOCoS-Bridge（L/S=8/8µm）雙平台；面板面積 96,100mm²；2027 H1 量產；CEO Tien Wu 主題演講強調「From Wafer to Panel」轉型
 - **2026-2H（預計）**：Hanwha Semitech FO-PLP 設備供 SpaceX 網路晶片生產（首次太空晶片 FOPLP 量產）
+- **2026-06-24（ASE 股東會：FOPLP 量產目標年底）⭐新增**：ASE COO Tien Wu 於股東會確認首條全自動化高量產 FOPLP 產線目標 **2026 年底量產**；同時宣布今年啟動 **15 個新建/擴產專案**，資本支出由 ~$2B（前）→ $5.3B（去年）→ **$8.5B（今年）**三級跳，先進封裝營收預計較 2025 年倍增。⚠️ 此「2026 年底量產」說法與下方 ECTC 2026 發表的「310mm PLP 產線 2027 H1 量產」存在時程描述差異，可能指不同產線/階段，待後續核實。
+  *Source: TrendForce 2026-06-25（引述 TechNews）*
 - **2027-1H（預計）**：Powertech FOPLP 量產開始
 - **2028–29**：TSMC CoPoS 量產目標（AI 加速器超大封裝）
 

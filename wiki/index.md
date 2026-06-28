@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-06-28
-**頁面總數 Total Pages**：246
-**原始來源數 Sources**：207
+**更新時間 Updated**：2026-06-29
+**頁面總數 Total Pages**：251
+**原始來源數 Sources**：212
 
 ---
 
@@ -63,6 +63,11 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-06-29_trendforce_ase-foplp-mass-production-2026]] — TrendForce：**ASE 股東會確認 FOPLP 量產目標 2026 年底**；15 個新建/擴產專案；資本支出 $2B→$5.3B→$8.5B 三級跳（2026-06-29 收錄；原文 2026-06-25）⭐新增
+- [[sources/2026-06-29_thelec_skhynix-hybrid-bonding-equipment-order]] — The Elec：**SK hynix 首次採購量產級混合接合設備**——Applied Materials+Besi「Kinex」系統，~2,000萬美元；Samsung 並行測試 SEMES/Besi（2026-06-29 收錄；原文 2026-03-31）⭐新增
+- [[sources/2026-06-29_businesswire_amkor-q1-2026-earnings]] — Business Wire：**Amkor 2026 Q1 營收創歷史新高 $1.68B（+27% YoY）**；HDFO/Flip-Chip 先進封裝為主要動能（2026-06-29 收錄；原文 2026-04-27）⭐新增
+- [[sources/2026-06-29_evgroup_ectc2026-hybrid-bonding-layer-transfer]] — EV Group：**ECTC 2026 官方新聞稿**——450nm pitch Cu-Cu 混合接合 98% 良率 2000萬互連；300nm SiCN 50nm overlay；IR LayerRelease（2026-06-29 收錄；原文 2026-05-19）⭐新增
+- [[sources/2026-06-29_trendforce_china-osat-tongfu-jcet-investment]] — TrendForce：**中國 OSAT 投資加碼**——Tongfu 私募 RMB44億；JCET 入股 RMB134.6億晶片基金；2025H1 淨利成長 Forehope+118.6%/JCET+52.4%（2026-06-29 收錄；原文 2026-01-19）⭐新增
 - [[sources/2026-06-28_economy-ac_glass-substrate-global-race]] — The Economy：**玻璃基板全球競賽——中國陣營擴大至 BOE/Visionox/AKM Meadville/雲天半導體，日本 Ibiden/DNP 目標 2028**；首次記載專利集中於 Intel/Corning/Schott（2026-06-28 收錄；原文 2026-06-11）⭐新增
 - [[sources/2026-06-27_tmtpost_tsmc-cowos-capacity-targets]] — TMTPost：**台積電上修 2026–2027 CoWoS 產能目標**；嘉義 AP7 SoIC 產線轉產 CoWoS；台南 AP8 新增 P2 廠（2026-06-27 收錄；原文 2026-01-29）⭐新增
 - [[sources/2026-06-27_tweaktown_hbm4-16hi-nvidia-supply-fight]] — TweakTown：**NVIDIA 要求 2026 Q4 前交付 16-Hi HBM4**；三大廠接合材料（TC-NCF vs MR-MUF）/厚度路線對比；JEDEC 775µm 高度天花板（2026-06-27 收錄；原文 2025-12-28）⭐新增
@@ -253,10 +258,4 @@
 - [[sources/2025-12-18_trendforce_apple-wmcm-a20]] — Apple A20/iPhone 18 採用 WMCM 封裝；InFO→WMCM 過渡；AP3/AP7 WMCM 產能（2025-12-18）⭐新增
 - [[sources/2025-12-08_trendforce_cowos-booked-ase-cowop]] — TrendForce：CoWoS-L/S 全訂滿；ASE CoWoP 與 Amkor Arizona 補位（2025-12-08）⭐新增
 - [[sources/2025-12-04_trendforce_tsmc-ap7-arizona-p6]] — TSMC AP7 啟用；Arizona P6 封裝基地計畫；CapEx CAGR 24%（2025-12-04）⭐新增
-- [[sources/2025-12-01_trendforce_intel-amkor-songdo-emib-outsource]] — Intel 首次 EMIB 外包至 Amkor Songdo K5；EMIB-M 量產/EMIB-T 2026-27；2,700 億韓元投資（2025-12-01）⭐新增
-- [[sources/2025-12-01_semiengineering_thermal-management]] — 先進封裝熱管理：TSMC 直接矽液冷、3D 熱點、TIM 演進（2025-12）⭐新增
-- [[sources/2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding]] — IFTLE 648：Unimicron 玻璃核心基板 + Cu-Cu 混合接合可靠性研究（2025-12-01）⭐新增
-- [[sources/2025-10-07_trendforce_hybrid-bonder-market-2b]] — 混合接合設備市場 $2B（2028）；韓國 Hanmi/Hanwha/LG 競爭；Besi/ASMPT 全球領先（2025-10-07）⭐新增
-- [[sources/2025-09-19_trendforce_stmicro-foplp-france]] — STMicro 法國面板級封裝試驗線 2026 Q3 啟動（2025-09-19）⭐新增
-- [[sources/2025-09-12_trendforce_foplp-competitive-2025]] — FOPLP 競爭格局：Powertech 90% 良率；TSMC 玻璃 vs Samsung；Resonac+AMAT+TEL 生態（2025-09-12）⭐新增
-- [[sources/2025-08-12_semianalysis_hbm-roadmap]] — SemiAnalysis：HBM roadmap；HBM4 custom base die、shoreline area、XPU-HBM routing density 與 CoWoS 依賴（2
+- [[sources/2025-12-01_trendforce_intel-amkor-songdo-emib-outsource]] — Intel 首次 EMIB 外包至 Amkor Songdo K5；EMIB-M 量產/EMIB-T 2026-27；2,700 億韓元投資（202

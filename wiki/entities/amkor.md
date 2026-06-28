@@ -3,8 +3,8 @@ title: "Amkor Technology"
 category: entity
 tags: [OSAT, advanced-packaging, FOCoS, Arizona, chiplet, Intel-EMIB]
 created: 2026-04-25
-updated: 2026-06-17
-sources: [2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-05-19_stocktitan_amkor-arizona-peoria-land-expansion, 2026-06-17_digitimes_amkor-tsmc-10year-arizona-deal]
+updated: 2026-06-29
+sources: [2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-05-19_stocktitan_amkor-arizona-peoria-land-expansion, 2026-06-17_digitimes_amkor-tsmc-10year-arizona-deal, 2026-06-29_businesswire_amkor-q1-2026-earnings]
 related:
   - wiki/technologies/cowos.md
   - wiki/entities/intel.md
@@ -31,7 +31,10 @@ related:
 
 ## 近期動態 / Recent Developments
 
-- **2026-06-17（⭐最新）**：**TSMC 與 Amkor 簽署 10 年期合作協議，共同擴張亞利桑那先進封裝產能**——協議目標在美國本土建構更完整的晶片供應鏈（晶圓代工 + 先進封裝一站到位）。此舉與 Amkor 5/19 宣布的 Peoria 園區新增 67 英畝土地擴建相呼應，顯示 Amkor 在美國先進封裝版圖的擴張正與台積電的在地化策略深度綁定。（DIGITIMES 標題強調「Amkor 獨家慶賀」，暗示此為 Amkor 在 OSAT 陣營中相對獨特的戰略位置；原文細節因付費牆未能完整取得。）
+- **2026-04-27（⭐最新）**：**2026 第一季財報創歷史新高**——營收 **$1.68B（+27% YoY）**，每股盈餘 $0.33（優於市場預期約 $0.23），EBITDA $285M，毛利率提升至 14.2%，營業利益率 6.0%。先進封裝技術（**HDFO 高密度扇出、Flip-Chip**）是本季超預期主要動能，通訊與高端智慧型手機客戶帶動顯著年增長。第二季展望：營收 $1.75–1.85B、毛利率 14.5–15.5%，預期延續成長動能。對比 2024 全年營收負成長（-2.8%），本季數字顯示先進封裝轉型已開始反映在財報上，與 Arizona 廠擴建、Intel EMIB 合作等戰略投資形成佐證。
+  *Source: Business Wire / Amkor Technology 2026-04-27*
+
+- **2026-06-17**：**TSMC 與 Amkor 簽署 10 年期合作協議，共同擴張亞利桑那先進封裝產能**——協議目標在美國本土建構更完整的晶片供應鏈（晶圓代工 + 先進封裝一站到位）。此舉與 Amkor 5/19 宣布的 Peoria 園區新增 67 英畝土地擴建相呼應，顯示 Amkor 在美國先進封裝版圖的擴張正與台積電的在地化策略深度綁定。（DIGITIMES 標題強調「Amkor 獨家慶賀」，暗示此為 Amkor 在 OSAT 陣營中相對獨特的戰略位置；原文細節因付費牆未能完整取得。）
   *Source: DIGITIMES 2026-06-17（Joseph Chen）*
 
 - **2026-05-19**：**亞利桑那 Peoria 園區再添 67 英畝土地**——Amkor 宣布在既有 104 英畝 Innovation Core 基地旁新取得相鄰 67 英畝土地，為未來擴建保留策略彈性。公司強調此園區目標成為**美國第一座高量產（high-volume）先進封裝 OSAT 設施**，服務 AI、HPC、汽車與通訊市場；CEO Kevin Engel 將此定調為強化美國本土先進封裝產能、建構更具韌性供應鏈的關鍵投資。同步於 5/21 舉行 Investor Day。
@@ -72,6 +75,7 @@ related:
 |------|------|
 | 全球 OSAT 排名 | **第二名**（2024 年確認） |
 | 2024 年營收 | **US$6.32B（-2.8% YoY）**；車用庫存修正 + 中國/東南亞定價壓力 |
+| 2026 Q1 營收 | **US$1.68B（+27% YoY，單季歷史新高）**；先進封裝（HDFO/Flip-Chip）為主要動能 |
 | 主要競爭對手 | ASE Group（$18.54B）、JCET（$5.00B） |
 | 戰略差異化 | 美國在地製造 + Intel EMIB 合作 |
 | Arizona Campus 投資規模 | $70 億（全球最大 OSAT 單廠投資之一） |
