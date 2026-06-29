@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-06-29
-**頁面總數 Total Pages**：251
-**原始來源數 Sources**：212
+**更新時間 Updated**：2026-06-30
+**頁面總數 Total Pages**：256
+**原始來源數 Sources**：217
 
 ---
 
@@ -63,6 +63,11 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-06-30_digitimes_tsmc-foplp-timeline-skepticism]] — DIGITIMES：**南韓媒體稱 TSMC 2027 年 PLP 量產，台灣業界消息人士質疑時程過早**；TSMC 仍評估多種先進封裝選項（partial）（2026-06-30 收錄；原文 2026-06-16）⭐新增
+- [[sources/2026-06-30_trendforce_ase-six-plants-cpo-2026]] — TrendForce：**ASE Renwu 廠動土，今年六廠同步建廠創史上最大規模**；Renwu 投資 NT$108.3億；CEO Tien Wu 首次證實 CPO 量產今年（2026）啟動（2026-06-30 收錄；原文 2026-04-10）⭐新增
+- [[sources/2026-06-30_amkor-ir_arizona-7billion-groundbreaking]] — Amkor 官方新聞稿：**亞利桑那 Peoria 廠動土，投資擴增至 $70 億**；Apple/NVIDIA/TSMC 高層聯合致詞；2028 年初量產（一手來源補強既有記錄）（2026-06-30 收錄；原文 2025-10-06）⭐新增
+- [[sources/2026-06-30_digitimes_amkor-2.5d-hdfo-growth-2026]] — DIGITIMES：**Amkor 上修 2026 資本支出，瞄準 2.5D/HDFO 營收三倍成長**；聚焦南韓/台灣產能擴充（partial）（2026-06-30 收錄；原文 2026-03-06）⭐新增
+- [[sources/2026-06-30_digitimes_us-packaging-capacity-10pct-2032]] — DIGITIMES：**美國封裝產能目標 2032 年達全球 10%**（封裝專屬指標，與晶圓廠產能目標不同口徑）（partial）（2026-06-30 收錄；原文 2026-04-28）⭐新增
 - [[sources/2026-06-29_trendforce_ase-foplp-mass-production-2026]] — TrendForce：**ASE 股東會確認 FOPLP 量產目標 2026 年底**；15 個新建/擴產專案；資本支出 $2B→$5.3B→$8.5B 三級跳（2026-06-29 收錄；原文 2026-06-25）⭐新增
 - [[sources/2026-06-29_thelec_skhynix-hybrid-bonding-equipment-order]] — The Elec：**SK hynix 首次採購量產級混合接合設備**——Applied Materials+Besi「Kinex」系統，~2,000萬美元；Samsung 並行測試 SEMES/Besi（2026-06-29 收錄；原文 2026-03-31）⭐新增
 - [[sources/2026-06-29_businesswire_amkor-q1-2026-earnings]] — Business Wire：**Amkor 2026 Q1 營收創歷史新高 $1.68B（+27% YoY）**；HDFO/Flip-Chip 先進封裝為主要動能（2026-06-29 收錄；原文 2026-04-27）⭐新增
@@ -250,20 +255,4 @@
 - [[sources/2026-01-13_semiengineering_hbm4-microbumps]] — SemiEngineering：HBM4 維持微凸塊封裝；混合接合延後至 HBM5+（2026-01-13）⭐新增
 - [[sources/2026-01-12_trendforce_tsmc-mature-node-reallocation-cowos]] — TSMC 重新分配 45–90nm 成熟節點產能至 CoWoS；Fab14/8 吋廠轉用（2026-01-12）⭐新增
 - [[sources/2026-01-09_trendforce_nvidia-hbm4-16layer]] — NVIDIA 推動 HBM4 競賽：12 層量產、16 層衝刺；SK Hynix/Samsung 雙線競爭（2026-01-09）⭐新增
-- [[sources/2026-01-05_trendforce_skhynix-hbm4-outlook]] — TrendForce：SK Hynix 2026 HBM 展望；HBM4 雙軌策略（2026-01-05）⭐新增
-- [[sources/2025-12-30_trendforce_samsung-hbm-surge]] — Samsung HBM 產能 2026 衝刺 50%；HBM4 聚光燈（2025-12-30）⭐新增
-- [[sources/2025-12-22_trendforce_dnp-tgv-glass-substrate-2026]] — DNP TGV 玻璃基板：試驗線 2025-12、樣品 2026 初、量產 FY2028（2025-12-22）⭐新增
-- [[sources/2025-12-22_3dincites_intel-amkor-emib-partnership]] — IFTLE 651：Intel 與 Amkor 合力推進 EMIB；Songdo K5 外包細節（2025-12-22）⭐新增
-- [[sources/2025-12-18_trendforce_micron-capex-hbm4]] — Micron 上調 CapEx 至 $20B；2026 年 HBM 全年訂滿；HBM4 2Q26 放量（2025-12-18）⭐新增
-- [[sources/2025-12-18_trendforce_apple-wmcm-a20]] — Apple A20/iPhone 18 採用 WMCM 封裝；InFO→WMCM 過渡；AP3/AP7 WMCM 產能（2025-12-18）⭐新增
-- [[sources/2025-12-08_trendforce_cowos-booked-ase-cowop]] — TrendForce：CoWoS-L/S 全訂滿；ASE CoWoP 與 Amkor Arizona 補位（2025-12-08）⭐新增
-- [[sources/2025-12-04_trendforce_tsmc-ap7-arizona-p6]] — TSMC AP7 啟用；Arizona P6 封裝基地計畫；CapEx CAGR 24%（2025-12-04）⭐新增
-- [[sources/2025-12-01_trendforce_intel-amkor-songdo-emib-outsource]] — Intel 首次 EMIB 外包至 Amkor Songdo K5；EMIB-M 量產/EMIB-T 2026-27；2,700 億韓元投資（2025-12-01）⭐新增
-- [[sources/2025-12-01_semiengineering_thermal-management]] — 先進封裝熱管理：TSMC 直接矽液冷、3D 熱點、TIM 演進（2025-12）⭐新增
-- [[sources/2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding]] — IFTLE 648：Unimicron 玻璃核心基板 + Cu-Cu 混合接合可靠性研究（2025-12-01）⭐新增
-- [[sources/2025-10-07_trendforce_hybrid-bonder-market-2b]] — 混合接合設備市場 $2B（2028）；韓國 Hanmi/Hanwha/LG 競爭；Besi/ASMPT 全球領先（2025-10-07）⭐新增
-- [[sources/2025-09-19_trendforce_stmicro-foplp-france]] — STMicro 法國面板級封裝試驗線 2026 Q3 啟動（2025-09-19）⭐新增
-- [[sources/2025-09-12_trendforce_foplp-competitive-2025]] — FOPLP 競爭格局：Powertech 90% 良率；TSMC 玻璃 vs Samsung；Resonac+AMAT+TEL 生態（2025-09-12）⭐新增
-- [[sources/2025-08-12_semianalysis_hbm-roadmap]] — SemiAnalysis：HBM roadmap；HBM4 custom base die、shoreline area、XPU-HBM routing density 與 CoWoS 依賴（2025-08-12）⭐新增
-- [[sources/2025-08-05_3dincites_iftle636-samsung-lsb-micron-virginia]] — IFTLE 636：三星 LSB 矽橋接 Chiplet；Micron 維吉尼亞 HBM 封裝廠計畫（2025-08-05）⭐新增
-- [[sources/2025-07-01_3dincites_micron-onshore-tsmc-copos]] — IFTLE 634：Micron 本土化投資；TSMC CoP
+- [[sources/2026-01-05_trendforce_skhy

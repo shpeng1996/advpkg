@@ -1695,39 +1695,3 @@
 
 ### Git Commit 狀態
 待執行：`git add -A && git commit -m "2026-06-28"`
-
----
-
-## [2026-06-29] collect | TSMC 封裝動態、混合接合設備、FOPLP 量產時程、OSAT 財報與中國投資
-
-- **搜尋查詢數**：10+ 組（涵蓋 TSMC CoWoS、HBM4 設備、混合接合設備採購、FOPLP/CoPoS 量產時程、UCIe/JEDEC 標準、競爭對手 Intel/Samsung、中國 OSAT 投資、OSAT Q1 財報等面向）
-- **成功抓取**：5 篇（全數存入 `raw/articles/`）
-  1. EV Group ECTC 2026 官方新聞稿（混合接合/層轉移/無光罩微影，原文 2026-05-19）
-  2. TrendForce：ASE FOPLP 年底量產目標 + 15 個擴產專案（原文 2026-06-25）
-  3. TrendForce：中國 OSAT（Tongfu/JCET）投資加碼（原文 2026-01-19）
-  4. The Elec：SK hynix 首次採購量產級混合接合設備（Applied Materials + Besi「Kinex」，原文 2026-03-31）
-  5. Business Wire：Amkor 2026 Q1 財報創紀錄（原文 2026-04-27；⚠️ fetch_status: partial，因原始頁面本次 session 無法完整擷取，改以多來源交叉比對重建，已於來源頁與 raw 檔內標註）
-- **失敗/跳過**：5 篇
-  - 已收錄（grep 命中，跳過不重複抓取）：2 篇（Tech Times「Nvidia Vera Rubin」techtimes.com/articles/317539（2026-06-19 已收錄）；Tech Times「SK Hynix Dethroned Samsung」techtimes.com/articles/319016（2026-06-26 已收錄））
-  - 付費牆無法取得正文：1 篇（DIGITIMES Naura/AMEC PLP 設備文章，僅標題+一句teaser+訂閱牆，依政策未嘗試繞過）
-  - 低相關/內容過薄：1 篇（iST ECTC 報導內容過於單薄）
-  - 已收錄但登記簿缺漏（非新收集，registry backfill）：1 篇——`2026-06-15_trendforce_tsmc-cowos-gap-narrowing-130k-200k-wafers.md`（collected_date: 2026-06-17）經 grep 比對發現 raw/articles/ 中已存在但 `_collected_urls.txt` 從未登記，已補登一行並標註 `[registry backfill 2026-06-29]`，確認 wiki/sources/2026-06-15_trendforce_tsmc-cowos-gap-narrowing.md 早已存在，避免重複 ingest。
-- **觸發 ingest**：5 篇（全數完成）
-- **觸及 wiki 頁面**：共 11 頁
-  - 新建 wiki/sources/ 來源摘要頁：5 頁（evgroup、trendforce-ase-foplp、trendforce-china-osat、thelec-skhynix、businesswire-amkor）
-  - 更新 entities/：ev-group.md、ase-group.md、amkor.md（3 頁）
-  - 更新 technologies/：hybrid-bonding.md、foplp.md（2 頁）
-  - 更新 concepts/：advanced-packaging-market.md（1 頁）
-  - 更新 wiki/index.md（頁面總數 246→251；來源數 207→212）
-- **主要新知識**：
-  1. SK hynix 首次採購量產等級混合接合設備（Applied Materials+Besi「Kinex」系統），確認混合接合在 HBM 上仍屬「準備性質」，預計要到 HBM 下下一代才真正導入量產——與既有「HBM4 維持微凸塊、HBM5+ 才導入混合接合」判斷互相印證。
-  2. ASE 股東會確認 FOPLP 量產目標鎖定 2026 年底、資本支出三級跳至 $8.5B；但此時程說法與既有 ECTC 2026 發表的「310mm PLP 產線 2027 H1 量產」存在描述差異，已在 ase-group.md 與 foplp.md 標註待核實的矛盾點，未強行調和。
-  3. 中國 OSAT（Tongfu、JCET、Forehope、UIGreen）資本擴張數據首次系統性記載，補上既有 wiki 對中國本土先進封裝供應鏈覆蓋的空缺。
-  4. Amkor 2026 Q1 營收創歷史新高（$1.68B，+27% YoY），先進封裝（HDFO/Flip-Chip）為主要超預期動能，提供 OSAT 財報面向首個季度級數據點。
-
-### 矛盾/待確認事項
-- ASE FOPLP 量產時程：「2026 年底」（股東會，本次新收錄）vs「2027 H1」（ECTC 2026 發表，既有頁面）——並列記錄，未調和，建議下次 lint 時專案核實。
-- Amkor Q1 2026 財報來源因 web_fetch 限制以多來源交叉重建，非單一原始新聞稿全文，可信度中高，待後續有機會取得完整原文時修正來源頁。
-
-### Git Commit 狀態
-待執行：`git add -A && git commit -m "2026-06-29"`
