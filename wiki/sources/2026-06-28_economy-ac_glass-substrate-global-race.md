@@ -6,20 +6,17 @@ tags: [glass-substrate, TGV, China, Japan, BOE, Ibiden, DNP, AGC, Intel, Corning
 created: 2026-06-28
 updated: 2026-06-28
 sources: [2026-06-28_economy-ac_glass-substrate-global-race]
+original_path: raw/articles/2026-06-28_economy-ac_glass-substrate-global-race.md
+url: https://economy.ac/news/2026/06/202606289308
+author: 未具名 / Unattributed
+publisher: The Economy（economy.ac）
+date: 2026-06-11
 related:
   - wiki/technologies/glass-substrate.md
   - wiki/technologies/copos.md
 ---
 
 # AI 封裝變革者「玻璃基板」點燃全球量產競賽 / AI Packaging Game-Changer 'Glass Substrates' Ignite Global Race
-
-category: source
-source_type: article
-original_path: raw/articles/2026-06-28_economy-ac_glass-substrate-global-race.md
-url: https://economy.ac/news/2026/06/202606289308
-author: 未具名 / Unattributed
-publisher: The Economy（economy.ac）
-date: 2026-06-11
 
 ## 核心主張 / Key Claims
 

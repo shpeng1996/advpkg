@@ -10,7 +10,6 @@ related:
   - wiki/entities/samsung.md
   - wiki/technologies/hbm4.md
   - wiki/concepts/advanced-packaging-market.md
-category: source
 source_type: article
 original_path: raw/articles/2026-06-24_techtimes_sk-hynix-dethroned-samsung-ddr5-hbm4.md
 url: https://www.techtimes.com/articles/319016/20260624/sk-hynix-dethroned-samsung-after-26-years-now-choosing-ddr5-profits-over-hbm4-ramp.htm
