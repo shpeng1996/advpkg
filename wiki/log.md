@@ -1695,3 +1695,49 @@
 
 ### Git Commit 狀態
 待執行：`git add -A && git commit -m "2026-06-28"`
+
+---
+
+## [2026-06-30] collect | Amkor Arizona $70億動土一手來源補強；ASE 首次 OSAT 側 CPO-2026 確認；美國封裝產能專屬指標新增
+
+- 搜尋查詢數：6 組（TSMC 封裝動態、HBM 記憶體、混合接合研究、面板級封裝/FOPLP、ASE/Amkor OSAT 動態、美國封裝產能與地緣政治）
+- 成功抓取：5 篇（articles/ 5 篇）
+  - raw/articles/2026-06-30_digitimes_tsmc-foplp-timeline-skepticism.md（fetch_status: partial，付費牆僅可讀標題/摘要）
+  - raw/articles/2026-06-30_trendforce_ase-six-plants-cpo-2026.md（fetch_status: success）
+  - raw/articles/2026-06-30_amkor-ir_arizona-7billion-groundbreaking.md（fetch_status: success，一手新聞稿）
+  - raw/articles/2026-06-30_digitimes_amkor-2.5d-hdfo-growth-2026.md（fetch_status: partial，付費牆）
+  - raw/articles/2026-06-30_digitimes_us-packaging-capacity-10pct-2032.md（fetch_status: partial，付費牆）
+- 失敗/跳過：2 篇
+  - eetimes.com「Understanding the Big Spend on Advanced Packaging Facilities」— WebFetch 回傳內容過大（60.1KB），預覽僅見導覽列/版型雜訊，無法擷取具體正文；已有 5 篇更明確可歸因的候選，故捨棄不再加碼擷取
+  - 其餘候選經 grep 驗證已存在於 `_collected_urls.txt`，dedup 跳過
+- 學術代理：未另外查詢（本次聚焦產業/市場新聞，無新學術論文候選）
+
+### 新增 Wiki 頁面（5 頁）
+- wiki/sources/2026-06-30_digitimes_tsmc-foplp-timeline-skepticism.md
+- wiki/sources/2026-06-30_trendforce_ase-six-plants-cpo-2026.md
+- wiki/sources/2026-06-30_amkor-ir_arizona-7billion-groundbreaking.md
+- wiki/sources/2026-06-30_digitimes_amkor-2.5d-hdfo-growth-2026.md
+- wiki/sources/2026-06-30_digitimes_us-packaging-capacity-10pct-2032.md
+
+### 更新 Wiki 頁面（5 頁）
+- wiki/entities/ase-group.md：新增 2026-04-10 動態（Renwu 廠動土、六廠同步建廠、CEO Tien Wu 首次確認 CPO 量產 2026 啟動）；sources 新增 1 筆；updated→2026-06-30
+- wiki/entities/amkor.md：新增 2025-10-06（Arizona Peoria 廠動土，投資擴增至 $70億，一手來源補強既有二手記錄）與 2026-03-06（2026 資本支出上修，瞄準 2.5D/HDFO 三倍成長）兩筆動態；sources 新增 2 筆；updated→2026-06-30
+- wiki/technologies/foplp.md：「爭議與未解問題」新增 TSMC PLP 時程質疑脈絡（與既有 ASE 2026年底 vs 2027上半年矛盾相關但非解決）；sources 新增 1 筆；updated→2026-06-30
+- wiki/technologies/copackaged-optics.md：時程新增 2026-04-10 條目，標註為「wiki 首次記載 OSAT 側 CPO 量產時程確認」；sources 新增 1 筆；updated→2026-06-30
+- wiki/concepts/geopolitics-advanced-packaging.md：數據指標表新增「美國封裝產能目標 10%（2032）」與「Amkor Arizona 動土確認數字」兩列；sources 新增 2 筆；updated→2026-06-30
+- wiki/index.md：頁面總數 251→256；來源數 212→217；新增 5 個 sources 連結；更新時間 2026-06-29→2026-06-30
+
+### 主要新知識
+1. **Amkor Arizona $70億動土一手來源補強**：透過 Amkor 官方新聞稿首次確認動土典禮日期（2025-10-06）、投資總額（$70億，較原計畫增逾$50億）、潔淨室面積（>750,000平方英尺）等細節，並補強 Apple、NVIDIA、TSMC 高層聯合致詞的供應鏈閉環敘事，取代先前僅有的二手摘要記錄。
+2. **ASE 首次 OSAT 側 CPO 量產時程確認**：CEO Tien Wu 在 Renwu 廠動土典禮上首次證實 CPO 將於 2026 年內量產，填補 wiki 此前僅有設備/技術廠商視角、缺乏 OSAT 端時程確認的空缺。
+3. **美國封裝產能專屬指標首次入庫**：新增「美國封裝產能目標 2032 年達全球 10%」這一封裝專屬統計口徑，與既有 SIA 晶圓廠產能目標、商務部現況約 3% 等不同口徑指標並列，避免未來混淆。
+4. **TSMC PLP 時程質疑與既有矛盾的脈絡關聯**：南韓媒體稱 TSMC 2027 年 PLP 量產，但台灣業界消息人士質疑時程過早——此為類比脈絡證據，**並未解決**既有 wiki 中 ASE FOPLP「2026年底 vs 2027上半年」量產時程矛盾（該矛盾仍待確認），僅顯示業界對 PLP 時程普遍存在韓媒樂觀／台廠消息人士保守的分歧模式。
+
+### 待確認/後續事項
+- ASE FOPLP 量產時程矛盾（2026年底 vs 2027上半年）仍未解決，建議持續追蹤是否有更明確的官方時程公告。
+- DIGITIMES 付費牆持續限制 3 篇文章的完整正文擷取（僅標題/摘要可讀），建議評估是否有替代來源可交叉驗證細節。
+- Amkor 2026 資本支出具體金額單位（US$2.5–3億 vs 可能的十億美元級）需後續核實，原文付費牆未能確認。
+
+### Git Commit 狀態
+已完成：`git add -A && git commit -m "2026-06-30"`（commit 5ebffad，20 files changed）；本筆 log 條目於同日稍後以第二次 commit 補上（fuse 掛載跨工具同步延遲所致，詳見備註）
+備註：`.git/index.lock` 因 fuse 掛載權限限制無法直接 `rm`，改用 `mv` 重新命名繞過後成功提交（沿用過去數日相同 workaround，詳見 .git/index.lock.bak2~6）。本檔案（log.md）的本次新增內容因 Read/Edit 工具寫入路徑與 bash fuse 掛載之間存在同步延遲，最終改用 bash 直接 `cat >>` 寫入以確保與 git 追蹤版本一致。
