@@ -1741,34 +1741,33 @@
 ### Git Commit 狀態
 已完成：`git add -A && git commit -m "2026-06-30"`（commit 5ebffad，20 files changed）；本筆 log 條目於同日稍後以第二次 commit 補上（fuse 掛載跨工具同步延遲所致，詳見備註）
 備註：`.git/index.lock` 因 fuse 掛載權限限制無法直接 `rm`，改用 `mv` 重新命名繞過後成功提交（沿用過去數日相同 workaround，詳見 .git/index.lock.bak2~6）。本檔案（log.md）的本次新增內容因 Read/Edit 工具寫入路徑與 bash fuse 掛載之間存在同步延遲，最終改用 bash 直接 `cat >>` 寫入以確保與 git 追蹤版本一致。
-Q1 財報等面向）
-- **成功抓取**：5 篇（全數存入 `raw/articles/`）
-  1. EV Group ECTC 2026 官方新聞稿（混合接合/層轉移/無光罩微影，原文 2026-05-19）
-  2. TrendForce：ASE FOPLP 年底量產目標 + 15 個擴產專案（原文 2026-06-25）
-  3. TrendForce：中國 OSAT（Tongfu/JCET）投資加碼（原文 2026-01-19）
-  4. The Elec：SK hynix 首次採購量產級混合接合設備（Applied Materials + Besi「Kinex」，原文 2026-03-31）
-  5. Business Wire：Amkor 2026 Q1 財報創紀錄（原文 2026-04-27；⚠️ fetch_status: partial，因原始頁面本次 session 無法完整擷取，改以多來源交叉比對重建，已於來源頁與 raw 檔內標註）
-- **失敗/跳過**：5 篇
-  - 已收錄（grep 命中，跳過不重複抓取）：2 篇（Tech Times「Nvidia Vera Rubin」techtimes.com/articles/317539（2026-06-19 已收錄）；Tech Times「SK Hynix Dethroned Samsung」techtimes.com/articles/319016（2026-06-26 已收錄））
-  - 付費牆無法取得正文：1 篇（DIGITIMES Naura/AMEC PLP 設備文章，僅標題+一句teaser+訂閱牆，依政策未嘗試繞過）
-  - 低相關/內容過薄：1 篇（iST ECTC 報導內容過於單薄）
-  - 已收錄但登記簿缺漏（非新收集，registry backfill）：1 篇——`2026-06-15_trendforce_tsmc-cowos-gap-narrowing-130k-200k-wafers.md`（collected_date: 2026-06-17）經 grep 比對發現 raw/articles/ 中已存在但 `_collected_urls.txt` 從未登記，已補登一行並標註 `[registry backfill 2026-06-29]`，確認 wiki/sources/2026-06-15_trendforce_tsmc-cowos-gap-narrowing.md 早已存在，避免重複 ingest。
-- **觸發 ingest**：5 篇（全數完成）
-- **觸及 wiki 頁面**：共 11 頁
-  - 新建 wiki/sources/ 來源摘要頁：5 頁（evgroup、trendforce-ase-foplp、trendforce-china-osat、thelec-skhynix、businesswire-amkor）
-  - 更新 entities/：ev-group.md、ase-group.md、amkor.md（3 頁）
-  - 更新 technologies/：hybrid-bonding.md、foplp.md（2 頁）
-  - 更新 concepts/：advanced-packaging-market.md（1 頁）
-  - 更新 wiki/index.md（頁面總數 246→251；來源數 207→212）
-- **主要新知識**：
-  1. SK hynix 首次採購量產等級混合接合設備（Applied Materials+Besi「Kinex」系統），確認混合接合在 HBM 上仍屬「準備性質」，預計要到 HBM 下下一代才真正導入量產——與既有「HBM4 維持微凸塊、HBM5+ 才導入混合接合」判斷互相印證。
-  2. ASE 股東會確認 FOPLP 量產目標鎖定 2026 年底、資本支出三級跳至 $8.5B；但此時程說法與既有 ECTC 2026 發表的「310mm PLP 產線 2027 H1 量產」存在描述差異，已在 ase-group.md 與 foplp.md 標註待核實的矛盾點，未強行調和。
-  3. 中國 OSAT（Tongfu、JCET、Forehope、UIGreen）資本擴張數據首次系統性記載，補上既有 wiki 對中國本土先進封裝供應鏈覆蓋的空缺。
-  4. Amkor 2026 Q1 營收創歷史新高（$1.68B，+27% YoY），先進封裝（HDFO/Flip-Chip）為主要超預期動能，提供 OSAT 財報面向首個季度級數據點。
 
-### 矛盾/待確認事項
-- ASE FOPLP 量產時程：「2026 年底」（股東會，本次新收錄）vs「2027 H1」（ECTC 2026 發表，既有頁面）——並列記錄，未調和，建議下次 lint 時專案核實。
-- Amkor Q1 2026 財報來源因 web_fetch 限制以多來源交叉重建，非單一原始新聞稿全文，可信度中高，待後續有機會取得完整原文時修正來源頁。
+## [2026-07-01] collect | 每日自動蒐集 — 先進封裝最新動態（2026-07-01）
+- 搜尋查詢數：8 組（TSMC 封裝動態、HBM 記憶體、混合接合、面板級封裝、Intel EMIB、標準動態 UCIe、先進封裝市場 7 月、July 2026 最新動態）
+- 成功抓取：1 篇（articles/ 1 篇）
+  - raw/articles/2026-06-26_semieng_chip-week-review-144.md（fetch_status: success）
+- 失敗/跳過：5 篇
+  - Tom's Hardware「AI chip design pushing 2.5D limits」（付費牆 premium；URL 記錄至 _collected_urls.txt）
+  - Tom's Hardware「SK Hynix US HBM packaging plant $3.9B」（付費牆 premium；已有 TrendForce 同主題；記錄至 _collected_urls.txt）
+  - SemiWiki「CoWoS 60% utilization」（2025-08-07 舊文，已被 2026 年更近期報導取代）
+  - Tom's Hardware「Intel extreme multi-chiplet 12x」（URL 超過長度限制）
+  - 其餘候選 URL 經 grep 確認已存在於 `_collected_urls.txt`
+- 學術代理：未另外查詢（無高相關新學術論文候選）
+- 新增 wiki 頁面：1 頁
+  - wiki/sources/2026-06-26_semieng_chip-week-144.md
+- 更新 wiki 頁面：4 頁
+  - wiki/entities/jcet.md：2026-06-26 上海廠 ~$1.15B 新動態；sources 新增 1 筆；updated→2026-07-01
+  - wiki/entities/micron.md：Micron Q3 HBM4 $1B+ 出貨、2× 斜率、16 客戶 take-or-pay；sources 新增 1 筆；updated→2026-07-01
+  - wiki/technologies/hbm4.md：sources 新增 1 筆；updated→2026-07-01
+  - wiki/concepts/advanced-packaging-market.md：新增 JCET 上海廠、AMAT 新設備、Micron 量產里程碑三節；sources 新增 1 筆；updated→2026-07-01
+- wiki/index.md：頁面總數 256→257；來源數 217→218；新增 1 筆 sources 連結；更新時間 2026-06-30→2026-07-01
 
-### Git Commit 狀態
-待執行：`git add -A && git commit -m "2026-06-29"`
+### 主要新知識
+1. **JCET 上海廠 ~$1.15B（wiki 首次記錄）**：繼 2026-06-07 江陰 3D 封裝廠之後，JCET 計劃在上海新建規模更大的先進封裝暨測試廠，顯示中國最大 OSAT 採雙廠平行擴張策略，加速搶占 AI 驅動的先進封裝需求。
+2. **Micron HBM4 量產里程碑最強確認**：Q3 FY26 財報揭示 12-high HBM4 量產斜率為 HBM3E 的 2 倍、累計出貨超 $10 億美元，並有 16 個多年期 take-or-pay 客戶合約鎖定需求，IDC 預測記憶體供需失衡持續至 2027 年。
+3. **Applied Materials 封裝設備全線更新**：同日推出 CMP、沉積、電子束檢測三類先進封裝設備，顯示 AMAT 持續擴大封裝設備市場佈局，為繼 $500M 新加坡園區（2026-06）後的進一步加碼。
+
+### 備註
+- 今日 collect 候選文章飽和問題持續：8 組查詢共產出超過 80 個 URL，其中大多數已在 `_collected_urls.txt` 中（過去兩個月每日 collect 累積效果）。
+- 最重要的新資訊來源為 SemiEngineering 每週週報（Chip Week #144），涵蓋 JCET 上海廠與 AMAT 新設備等多條 wiki 空缺資訊。
+- 建議未來考慮每週（而非每日）對 semiengineering.com/chip-industry-week-in-review-* 進行系統性追蹤，以避免漏收週報。
