@@ -1779,3 +1779,35 @@
 
 ### Git Commit 狀態
 待執行：`git add -A && git commit -m "2026-06-29"`
+
+## [2026-07-02] collect | 每日自動蒐集 — 先進封裝最新動態（2026-07-02）
+- 搜尋查詢數：7 組（TSMC 封裝動態、HBM 記憶體、混合接合、面板級封裝、Intel/TeraFab、標準動態 UCIe、七月先進封裝最新）
+- 成功抓取：2 篇（articles/ 2 篇）
+  - raw/articles/2026-07-01_trendforce_ase-packaging-price-hike-20pct.md（fetch_status: success）
+  - raw/articles/2026-07-01_trendforce_terafab-intel-veteran-gary-jiang.md（fetch_status: success）
+- 失敗/跳過：多篇
+  - 大多數候選 URL 經 grep 確認已存在於 `_collected_urls.txt`（過去兩個月每日 collect 高度飽和）
+  - SemiEngineering Chip Week #145 尚未發布（本週週報未出現於搜尋結果）
+  - SemiEngineering 技術論文週報 July 1 為 2025 年舊文，略過
+  - 其他 Tom's Hardware 文章為付費牆或已收錄
+- 學術代理：未另查詢（無高相關新學術論文候選）
+- 新增 wiki 頁面：2 頁
+  - wiki/sources/2026-07-01_trendforce_ase-price-hike-20pct.md
+  - wiki/sources/2026-07-01_trendforce_terafab-intel-veteran-hire.md
+- 更新 wiki 頁面：4 頁
+  - wiki/entities/ase-group.md：新增 2026-07-01「CoWoS/FoCoS 報價漲逾 20%、物理 AI 需求、OSAT 滿載」；sources 新增 1 筆；updated→2026-07-02
+  - wiki/entities/intel.md：新增 2026-07-01「TeraFab Gary Jiang 招募、$55B/$119B 投資、Intel 14A 合作再確認、ASML 角色確認」；sources 新增 1 筆；updated→2026-07-02
+  - wiki/concepts/advanced-packaging-market.md：新增「OSAT 報價上漲」小節（ASE >20%、物理 AI、滿載稼動率）；sources 新增 1 筆；updated→2026-07-02
+  - wiki/index.md：頁面總數 257→259；來源數 218→220；新增 2 筆 sources 連結；更新時間 2026-07-01→2026-07-02
+
+### 主要新知識
+1. **ASE 先進封裝報價首次量化（wiki 空缺填補）**：ASE 對 CoWoS 及 FoCoS 報價漲逾 20%，為 wiki 首次收錄 OSAT 報價層面的具體漲幅數字。此前 wiki 已有 ASE 資本支出與產能擴充的豐富記錄，但缺乏定價面資料。報價上漲反映 OSAT 產業稼動率滿載、原料成本上升與長期資本投資需求疊加。
+2. **TeraFab 從規劃走向執行（人才引進首確認）**：Gary Jiang 出任 Director 為 TeraFab 首位公開確認的重量級高層，顯示該計畫已從概念期進入人才建構階段；投資規模（$55B初始/$119B全額）、Intel 14A 合作、ASML 設備角色等關鍵細節均獲來源確認，比既有 wiki「Tesla Terafab 構想」條目更為具體完整。
+
+### 備註
+- 今日 collect 候選文章飽和問題持續（7 月 2 日仍為接近 SemiEngineering 週報週期中間點）；兩篇高品質文章均出自 TrendForce，日期 2026-07-01。
+- SemiEngineering Chip Week #145（預計週五或下週初發布）為下次 collect 的優先追蹤目標。
+- 建議：TeraFab 主題持續關注，尤其 Grimes County 建設進度及下一批人才招募公告。
+
+### Git Commit 狀態
+待執行：`git add -A && git commit -m "2026-07-02"`

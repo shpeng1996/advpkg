@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-07-01
-**頁面總數 Total Pages**：257
-**原始來源數 Sources**：218
+**更新時間 Updated**：2026-07-02
+**頁面總數 Total Pages**：259
+**原始來源數 Sources**：220
 
 ---
 
@@ -63,6 +63,8 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-07-01_trendforce_ase-price-hike-20pct]] — TrendForce：**ASE CoWoS/FoCoS 報價漲逾 20%；OSAT 稼動率滿載；物理 AI 定義下一波需求**（2026-07-02 收錄；原文 2026-07-01）⭐新增
+- [[sources/2026-07-01_trendforce_terafab-intel-veteran-hire]] — TrendForce：**TeraFab 首位重量級招募 Gary Jiang（Intel 18A 廠長）出任總監；投資 $55B→$119B；Intel 14A 合作再確認；ASML 參與確認**（2026-07-02 收錄；原文 2026-07-01）⭐新增
 - [[sources/2026-06-26_semieng_chip-week-144]] — SemiEngineering Week #144：**JCET 計劃上海先進封裝廠 ~$1.15B**；AMAT 推出 CMP/沉積/電子束封裝設備新系列；Micron HBM4 12H 出貨 >$1B（量產斜率 2×HBM3E）；GF W2W 接合認證（2026-07-01 收錄；原文 2026-06-26）⭐新增
 - [[sources/2026-06-30_digitimes_tsmc-foplp-timeline-skepticism]] — DIGITIMES：**南韓媒體稱 TSMC 2027 年 PLP 量產，台灣業界消息人士質疑時程過早**；TSMC 仍評估多種先進封裝選項（partial）（2026-06-30 收錄；原文 2026-06-16）⭐新增
 - [[sources/2026-06-30_trendforce_ase-six-plants-cpo-2026]] — TrendForce：**ASE Renwu 廠動土，今年六廠同步建廠創史上最大規模**；Renwu 投資 NT$108.3億；CEO Tien Wu 首次證實 CPO 量產今年（2026）啟動（2026-06-30 收錄；原文 2026-04-10）⭐新增
