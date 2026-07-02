@@ -3,8 +3,8 @@ title: "ASMPT Limited / ASMPT 有限公司"
 category: entity
 tags: [OSAT, equipment, TCB, hybrid-bonding, CPO, flip-chip, FOPLP, HBM4]
 created: 2026-05-06
-updated: 2026-05-06
-sources: [2026-04-22_asmpt_q1-2026-results, 2026-05-03_globenewswire_amat-acquires-nexx]
+updated: 2026-07-03
+sources: [2026-04-22_asmpt_q1-2026-results, 2026-05-03_globenewswire_amat-acquires-nexx, 2026-05-12_asmpt_ectc2026-firebird-lithobolt]
 related: [wiki/technologies/hybrid-bonding.md, wiki/technologies/copackaged-optics.md, wiki/technologies/hbm4.md, wiki/technologies/foplp.md, wiki/entities/besi.md]
 ---
 
@@ -28,12 +28,14 @@ ASMPT 分為兩大業務：
 ## 核心技術 / Core Technologies
 
 ### 熱壓接合 Thermo-Compression Bonding (TCB)
+- **FIREBIRD 系列平台**：ASMPT 旗艦 TCB 設備；支援 **16 層 HBM 堆疊**；**AOR（Active Oxide Removal）**技術實現無助焊劑接合（消除助焊劑清洗步驟）；**2.0 µm 擺放精度**；全球已部署 **>500 套** TCB 系統進入量產（截至 2026-05）
 - **C2S（Chip-to-Substrate）**：Logic 晶片覆晶封裝；量產領導地位
-- **C2W（Chip-to-Wafer）**：超細節距 TCB，採用專利 **AOR（plasma）技術**；2026 Q1 獲重量級邏輯客戶 4 台訂單
+- **C2W（Chip-to-Wafer）**：超細節距 TCB，採用 AOR 技術；2026 Q1 獲重量級邏輯客戶 4 台訂單
 - **HBM4 16H 認證**：主要記憶體廠商採用 ASMPT 助焊劑型 TCB 進行 HBM4 16 層堆疊資格認證（2026 Q1）
 
 ### 混合接合 Hybrid Bonding (HB)
-- ASMPT 持續深化 D2W 混合接合客戶合作
+- **LITHOBOLT™ G2 D2W 平台**：ASMPT 旗艦 D2W 接合設備；支援 **>10,000 互連/mm²** 的超高密度 Cu-Cu 接合；無空洞接合界面；高精度 overlay；污染控制環境；適用邏輯-記憶體 3D 整合與 chiplet 架構（ECTC 2026 展出）
+- 持續深化 D2W 混合接合客戶合作
 - 與 EV Group 在 D2W 混合接合解決方案上有長期合作（見 EV Group 頁面）
 
 ### 覆晶封裝 Flip Chip (FC)
@@ -65,11 +67,4 @@ ASMPT 分為兩大業務：
 
 - **全端封裝設備組合**：涵蓋 Wire Bond → Flip Chip → TCB → 混合接合 → Photonics，受益 AI 封裝複雜度全面提升
 - **NEXX 出售**：退出面板級 ECD 設備（賣給 AMAT），聚焦 TCB / 混合接合 / CPO 等更具技術優勢的核心業務
-- **Applied Materials 持股關係**：Applied Materials 持有 Besi（ASMPT 競爭對手）9% 股份；AMAT 進一步收購 NEXX，顯示 AMAT 正主動佈局設備整合
-
-## 與其他實體的關係 / Relationships
-
-- **Applied Materials**：NEXX 買家（2026 Q2 預計完成）；技術合作夥伴（部分聯合開發）
-- **EV Group**：D2W 混合接合聯合開發合作（詳見 EV Group 頁面）
-- **Besi**：TCB 與混合接合設備主要競爭對手
-- **主要客戶**：TSMC（透過 TSMC 的邏輯封裝計畫）、SK Hynix、Samsung Memory（HBM4 TCB）、主要資料中心光纖供應商（CPO）
+- **Applied Materials 持股關係**：Applie

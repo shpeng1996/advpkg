@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-07-02
-**頁面總數 Total Pages**：259
-**原始來源數 Sources**：220
+**更新時間 Updated**：2026-07-03
+**頁面總數 Total Pages**：264
+**原始來源數 Sources**：225
 
 ---
 
@@ -63,6 +63,11 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-06-30_thelec_amat-six-packaging-systems]] — The Elec：**AMAT 發布 6 款新封裝設備：Centura Prime Epi、Opta CMP（HB 專用）、Nokota VMax2 ECD、Producer Avila2 PECVD、VeritySEM 7AP、SEMVision G7AP**（2026-07-03 收錄；原文 2026-06-30）⭐新增
+- [[sources/2026-06-24_thelec_corning-glass-bridge-cpo]] — The Elec：**Corning Glass Bridge 離子交換波導（≥30µm、<2dB），GlassWorks AI 平台，TGV 玻璃基板 CPO 整合架構；Meta/NVIDIA/Amazon 長期合約**（2026-07-03 收錄；原文 2026-06-24）⭐新增
+- [[sources/2026-06-25_thelec_micron-q3-fy2026-record]] — The Elec：**Micron Q3 FY2026 史上最高季度業績：營收 $41.456B（+345.7%），HBM4 >$1B/3個月，16 SCA 合約 $1000億積壓，Q4 指引 $500億**（2026-07-03 收錄；原文 2026-06-25）⭐新增
+- [[sources/2026-05-12_asmpt_ectc2026-firebird-lithobolt]] — ASMPT：**FIREBIRD™ 系列 TCB（AOR 技術、2.0µm精度、>500套量產）；LITHOBOLT™ G2 D2W（>10,000 互連/mm²，Cu-Cu 無空洞）**（2026-07-03 收錄；原文 2026-05-12）⭐新增
+- [[sources/2026-06-19_thelec_jntc-2mm-tgv-glass-substrate]] — The Elec：**JNTC 開發全球首款 2.0mm TGV 玻璃基板；產品覆蓋 0.3–2.0mm；2027 量產目標**（2026-07-03 收錄；原文 2026-06-19）⭐新增
 - [[sources/2026-07-01_trendforce_ase-price-hike-20pct]] — TrendForce：**ASE CoWoS/FoCoS 報價漲逾 20%；OSAT 稼動率滿載；物理 AI 定義下一波需求**（2026-07-02 收錄；原文 2026-07-01）⭐新增
 - [[sources/2026-07-01_trendforce_terafab-intel-veteran-hire]] — TrendForce：**TeraFab 首位重量級招募 Gary Jiang（Intel 18A 廠長）出任總監；投資 $55B→$119B；Intel 14A 合作再確認；ASML 參與確認**（2026-07-02 收錄；原文 2026-07-01）⭐新增
 - [[sources/2026-06-26_semieng_chip-week-144]] — SemiEngineering Week #144：**JCET 計劃上海先進封裝廠 ~$1.15B**；AMAT 推出 CMP/沉積/電子束封裝設備新系列；Micron HBM4 12H 出貨 >$1B（量產斜率 2×HBM3E）；GF W2W 接合認證（2026-07-01 收錄；原文 2026-06-26）⭐新增
@@ -267,11 +272,4 @@
 - [[sources/2025-12-08_trendforce_cowos-booked-ase-cowop]] — TrendForce：CoWoS-L/S 全訂滿；ASE CoWoP 與 Amkor Arizona 補位（2025-12-08）⭐新增
 - [[sources/2025-12-04_trendforce_tsmc-ap7-arizona-p6]] — TSMC AP7 啟用；Arizona P6 封裝基地計畫；CapEx CAGR 24%（2025-12-04）⭐新增
 - [[sources/2025-12-01_trendforce_intel-amkor-songdo-emib-outsource]] — Intel 首次 EMIB 外包至 Amkor Songdo K5；EMIB-M 量產/EMIB-T 2026-27；2,700 億韓元投資（2025-12-01）⭐新增
-- [[sources/2025-12-01_semiengineering_thermal-management]] — 先進封裝熱管理：TSMC 直接矽液冷、3D 熱點、TIM 演進（2025-12）⭐新增
-- [[sources/2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding]] — IFTLE 648：Unimicron 玻璃核心基板 + Cu-Cu 混合接合可靠性研究（2025-12-01）⭐新增
-- [[sources/2025-10-07_trendforce_hybrid-bonder-market-2b]] — 混合接合設備市場 $2B（2028）；韓國 Hanmi/Hanwha/LG 競爭；Besi/ASMPT 全球領先（2025-10-07）⭐新增
-- [[sources/2025-09-19_trendforce_stmicro-foplp-france]] — STMicro 法國面板級封裝試驗線 2026 Q3 啟動（2025-09-19）⭐新增
-- [[sources/2025-09-12_trendforce_foplp-competitive-2025]] — FOPLP 競爭格局：Powertech 90% 良率；TSMC 玻璃 vs Samsung；Resonac+AMAT+TEL 生態（2025-09-12）⭐新增
-- [[sources/2025-08-12_semianalysis_hbm-roadmap]] — SemiAnalysis：HBM roadmap；HBM4 custom base die、shoreline area、XPU-HBM routing density 與 CoWoS 依賴（2025-08-12）⭐新增
-- [[sources/2025-08-05_3dincites_iftle636-samsung-lsb-micron-virginia]] — IFTLE 636：三星 LSB 矽橋接 Chiplet；Micron 維吉尼亞 HBM 封裝廠計畫（2025-08-05）⭐新增
-- [[sources/2025-07-01_3dincites_micron-onshore-tsmc-copos]] — IFTLE 634：Micron 本土化投資；TSMC CoP
+- 
