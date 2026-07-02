@@ -272,4 +272,11 @@
 - [[sources/2025-12-08_trendforce_cowos-booked-ase-cowop]] — TrendForce：CoWoS-L/S 全訂滿；ASE CoWoP 與 Amkor Arizona 補位（2025-12-08）⭐新增
 - [[sources/2025-12-04_trendforce_tsmc-ap7-arizona-p6]] — TSMC AP7 啟用；Arizona P6 封裝基地計畫；CapEx CAGR 24%（2025-12-04）⭐新增
 - [[sources/2025-12-01_trendforce_intel-amkor-songdo-emib-outsource]] — Intel 首次 EMIB 外包至 Amkor Songdo K5；EMIB-M 量產/EMIB-T 2026-27；2,700 億韓元投資（2025-12-01）⭐新增
-- 
+- [[sources/2025-12-01_semiengineering_thermal-management]] — 先進封裝熱管理：TSMC 直接矽液冷、3D 熱點、TIM 演進（2025-12）⭐新增
+- [[sources/2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding]] — IFTLE 648：Unimicron 玻璃核心基板 + Cu-Cu 混合接合可靠性研究（2025-12-01）⭐新增
+- [[sources/2025-10-07_trendforce_hybrid-bonder-market-2b]] — 混合接合設備市場 $2B（2028）；韓國 Hanmi/Hanwha/LG 競爭；Besi/ASMPT 全球領先（2025-10-07）⭐新增
+- [[sources/2025-09-19_trendforce_stmicro-foplp-france]] — STMicro 法國面板級封裝試驗線 2026 Q3 啟動（2025-09-19）⭐新增
+- [[sources/2025-09-12_trendforce_foplp-competitive-2025]] — FOPLP 競爭格局：Powertech 90% 良率；TSMC 玻璃 vs Samsung；Resonac+AMAT+TEL 生態（2025-09-12）⭐新增
+- [[sources/2025-08-12_semianalysis_hbm-roadmap]] — SemiAnalysis：HBM roadmap；HBM4 custom base die、shoreline area、XPU-HBM routing density 與 CoWoS 依賴（2025-08-12）⭐新增
+- [[sources/2025-08-05_3dincites_iftle636-samsung-lsb-micron-virginia]] — IFTLE 636：三星 LSB 矽橋接 Chiplet；Micron 維吉尼亞 HBM 封裝廠計畫（2025-08-05）⭐新增
+- [[sources/2025-07-01_3dincites_micron-onshore-tsmc-copos]] — IFTLE 634：Micron 本土化投資；TSMC CoP
