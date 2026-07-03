@@ -1829,3 +1829,22 @@
   - wiki/sources/2026-07-04_semieng_chip-week-145.md（新建）
   - wiki/index.md（頁面總數 264→269；Sources 225→230）
 - 主要新知識：(1) 韓廠合計 KRW 800T 擴產（81T 封裝中心）為半導體史上最大封裝基礎設施投資宣告，設備排擠效應可能衝擊台積電/Intel；(2) Anthropic 洽談三星 2nm+先進封裝，AI 公司自製 ASIC 趨勢從 Google/MS/OpenAI 蔓延至第三大 AI 公司；(3) Intel 加入 TeraFab 並明確以封裝能力為核心貢獻（2026-04-07 事件補收錄）；(4) 300mm 記憶體設備 2026 年首破 $50B，DRAM 佔 $37B 為 HBM 基礎設施擴張的設備端量化佐證。
+W（>10,000 互連/mm²）具體規格；sources 新增 1 筆；updated→2026-07-03
+  - wiki/technologies/glass-substrate.md：新增「2026-07-03 更新」節（JNTC 2.0mm TGV 全球首款 + Corning Glass Bridge TGV CPO 架構）；updated→2026-07-03
+  - wiki/technologies/hybrid-bonding.md：設備生態系表格補充 ASMPT LITHOBOLT G2 D2W 規格；新增 AMAT Opta CMP 混合接合專用 CMP 說明
+  - wiki/technologies/copackaged-optics.md：新增「2026-07-03 更新」節（Corning Glass Bridge 完整規格、GlassWorks AI、TGV 玻璃基板 CPO 架構、三層 Corning 產品線關係梳理表）；sources 新增 1 筆；updated→2026-07-03
+  - wiki/index.md：頁面總數 259→264；來源數 220→225；新增 5 筆 sources 連結；更新時間 2026-07-02→2026-07-03
+
+### 主要新知識
+1. **Micron Q3 FY2026 史上最強財報**：營收 $41.456B（+345.7% YoY）、營業利益 $33.318B（+1,436%）、16 份 SCA 合約總積壓 ~$1,000 億，為 wiki 最完整的 Micron 季度財務記錄；Q4 指引 $500 億再創高。
+2. **ASMPT 產品具體化**：FIREBIRD AOR 技術全名首次入 wiki；LITHOBOLT G2 D2W >10,000 互連/mm² 量化規格首次記錄；AMAT Opta CMP 為混合接合設備生態系新增關鍵製程工具。
+3. **Corning Glass Bridge 規格公開（wiki 首次）**：離子交換波導、≥30µm、<2dB 規格首次列入 wiki，並梳理 Corning 三條 CPO 產品線（GLASSBRIDGE™ 連接器、Glass Bridge 波導元件、TGV 玻璃基板 CPO 架構）的功能層次差異。
+4. **JNTC 2.0mm TGV 全球首款**：韓國小型專業廠 JNTC 達成業界未見厚度，擴展玻璃基板 TGV 應用至大型 AI 封裝機械支撐需求；wiki 首次記錄 JNTC 為玻璃基板技術參與者。
+
+### 備註
+- 今日搜尋以 The Elec 為主要新來源（5 篇均來自 thelec.net），彌補 TrendForce/SemiEngineering 飽和問題。
+- SK Hynix Nasdaq ADR（ticker SKHY，目標 2026-07-10）為重要近期事件，但 CNBC 域受限無法抓取，建議後續收錄韓國媒體版本。
+- AMAT DRAM & AP Master Class（2026-06-25，首爾）首次完整記錄——包含 6 款新品，為 wiki AMAT 設備生態系記錄最詳盡一次。
+
+### Git Commit 狀態
+待執行：`git add -A && git commit -m "2026-07-03"`
