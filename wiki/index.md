@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-07-03
-**頁面總數 Total Pages**：264
-**原始來源數 Sources**：225
+**更新時間 Updated**：2026-07-04
+**頁面總數 Total Pages**：269
+**原始來源數 Sources**：230
 
 ---
 
@@ -63,6 +63,11 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-07-04_semieng_chip-week-145]] — SemiEngineering Week #145：**300mm 記憶體設備 >$50B（+29%，史上首次）；DRAM $37B、NAND $14B；8 吋代工利用率 88%；代工報價 +5–15%；Nvidia AI 新創收益分潤算力方案；80 新創募資 $8.4B**（2026-07-04 收錄；partial）⭐新增
+- [[sources/2026-07-03_trendforce_anthropic-samsung-advanced-packaging]] — TrendForce：**Anthropic 洽談三星 SF2（2nm）代工+先進封裝自製 AI ASIC；早期洽談；Clive Chan（前 OpenAI 晶片計畫）已到職；三星 Series H 戰略夥伴**（2026-07-04 收錄；原文 2026-07-03）⭐新增
+- [[sources/2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment]] — TrendForce：**SK hynix KRW 100T（80T M17 NAND 2029；20T P&T7 封裝中心 2027）；Samsung KRW 140T（56T HBM 廠、8T 電機 AI 基板世宗）；SK Group 1GW AI 資料中心**（2026-07-04 收錄；原文 2026-07-02）⭐新增
+- [[sources/2026-06-30_trendforce_samsung-skhynix-800t-expansion]] — TrendForce：**Samsung+SK hynix KRW 800T 合計擴產；81T P&T7 封裝中心；P5+P6 同步；龍仁 4 廠 2045→2033；設備排擠效應恐衝擊台積電/Intel；南亞 NT$52B 利基轉型**（2026-07-04 收錄；原文 2026-06-30）⭐新增
+- [[sources/2026-04-07_tomshardware_intel-joins-terafab]] — Tom's Hardware：**Intel 正式加入 TeraFab（SpaceX/xAI/Tesla），明確點名「封裝」為核心貢獻（EMIB/Foveros）；目標 1 TW/year 算力；Lip-Bu Tan 公開背書**（2026-07-04 補收錄；原文 2026-04-07）⭐新增
 - [[sources/2026-06-30_thelec_amat-six-packaging-systems]] — The Elec：**AMAT 發布 6 款新封裝設備：Centura Prime Epi、Opta CMP（HB 專用）、Nokota VMax2 ECD、Producer Avila2 PECVD、VeritySEM 7AP、SEMVision G7AP**（2026-07-03 收錄；原文 2026-06-30）⭐新增
 - [[sources/2026-06-24_thelec_corning-glass-bridge-cpo]] — The Elec：**Corning Glass Bridge 離子交換波導（≥30µm、<2dB），GlassWorks AI 平台，TGV 玻璃基板 CPO 整合架構；Meta/NVIDIA/Amazon 長期合約**（2026-07-03 收錄；原文 2026-06-24）⭐新增
 - [[sources/2026-06-25_thelec_micron-q3-fy2026-record]] — The Elec：**Micron Q3 FY2026 史上最高季度業績：營收 $41.456B（+345.7%），HBM4 >$1B/3個月，16 SCA 合約 $1000億積壓，Q4 指引 $500億**（2026-07-03 收錄；原文 2026-06-25）⭐新增
@@ -262,21 +267,4 @@
 - [[sources/2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h]] — SK Hynix MR-MUF 確認用於 HBM4 16H；30µm die thinning；CES 2026 展示（2026-01-13）⭐新增
 - [[sources/2026-01-13_semiengineering_hbm4-microbumps]] — SemiEngineering：HBM4 維持微凸塊封裝；混合接合延後至 HBM5+（2026-01-13）⭐新增
 - [[sources/2026-01-12_trendforce_tsmc-mature-node-reallocation-cowos]] — TSMC 重新分配 45–90nm 成熟節點產能至 CoWoS；Fab14/8 吋廠轉用（2026-01-12）⭐新增
-- [[sources/2026-01-09_trendforce_nvidia-hbm4-16layer]] — NVIDIA 推動 HBM4 競賽：12 層量產、16 層衝刺；SK Hynix/Samsung 雙線競爭（2026-01-09）⭐新增
-- [[sources/2026-01-05_trendforce_skhynix-hbm4-outlook]] — TrendForce：SK Hynix 2026 HBM 展望；HBM4 雙軌策略（2026-01-05）⭐新增
-- [[sources/2025-12-30_trendforce_samsung-hbm-surge]] — Samsung HBM 產能 2026 衝刺 50%；HBM4 聚光燈（2025-12-30）⭐新增
-- [[sources/2025-12-22_trendforce_dnp-tgv-glass-substrate-2026]] — DNP TGV 玻璃基板：試驗線 2025-12、樣品 2026 初、量產 FY2028（2025-12-22）⭐新增
-- [[sources/2025-12-22_3dincites_intel-amkor-emib-partnership]] — IFTLE 651：Intel 與 Amkor 合力推進 EMIB；Songdo K5 外包細節（2025-12-22）⭐新增
-- [[sources/2025-12-18_trendforce_micron-capex-hbm4]] — Micron 上調 CapEx 至 $20B；2026 年 HBM 全年訂滿；HBM4 2Q26 放量（2025-12-18）⭐新增
-- [[sources/2025-12-18_trendforce_apple-wmcm-a20]] — Apple A20/iPhone 18 採用 WMCM 封裝；InFO→WMCM 過渡；AP3/AP7 WMCM 產能（2025-12-18）⭐新增
-- [[sources/2025-12-08_trendforce_cowos-booked-ase-cowop]] — TrendForce：CoWoS-L/S 全訂滿；ASE CoWoP 與 Amkor Arizona 補位（2025-12-08）⭐新增
-- [[sources/2025-12-04_trendforce_tsmc-ap7-arizona-p6]] — TSMC AP7 啟用；Arizona P6 封裝基地計畫；CapEx CAGR 24%（2025-12-04）⭐新增
-- [[sources/2025-12-01_trendforce_intel-amkor-songdo-emib-outsource]] — Intel 首次 EMIB 外包至 Amkor Songdo K5；EMIB-M 量產/EMIB-T 2026-27；2,700 億韓元投資（2025-12-01）⭐新增
-- [[sources/2025-12-01_semiengineering_thermal-management]] — 先進封裝熱管理：TSMC 直接矽液冷、3D 熱點、TIM 演進（2025-12）⭐新增
-- [[sources/2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding]] — IFTLE 648：Unimicron 玻璃核心基板 + Cu-Cu 混合接合可靠性研究（2025-12-01）⭐新增
-- [[sources/2025-10-07_trendforce_hybrid-bonder-market-2b]] — 混合接合設備市場 $2B（2028）；韓國 Hanmi/Hanwha/LG 競爭；Besi/ASMPT 全球領先（2025-10-07）⭐新增
-- [[sources/2025-09-19_trendforce_stmicro-foplp-france]] — STMicro 法國面板級封裝試驗線 2026 Q3 啟動（2025-09-19）⭐新增
-- [[sources/2025-09-12_trendforce_foplp-competitive-2025]] — FOPLP 競爭格局：Powertech 90% 良率；TSMC 玻璃 vs Samsung；Resonac+AMAT+TEL 生態（2025-09-12）⭐新增
-- [[sources/2025-08-12_semianalysis_hbm-roadmap]] — SemiAnalysis：HBM roadmap；HBM4 custom base die、shoreline area、XPU-HBM routing density 與 CoWoS 依賴（2025-08-12）⭐新增
-- [[sources/2025-08-05_3dincites_iftle636-samsung-lsb-micron-virginia]] — IFTLE 636：三星 LSB 矽橋接 Chiplet；Micron 維吉尼亞 HBM 封裝廠計畫（2025-08-05）⭐新增
-- [[sources/2025-07-01_3dincites_micron-onshore-tsmc-copos]] — IFTLE 634：Micron 本土化投資；TSMC CoP
+- [[sources/2026-01-09_trendforce_nvidia-hbm4-16layer

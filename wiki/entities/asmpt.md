@@ -67,11 +67,4 @@ ASMPT 分為兩大業務：
 
 - **全端封裝設備組合**：涵蓋 Wire Bond → Flip Chip → TCB → 混合接合 → Photonics，受益 AI 封裝複雜度全面提升
 - **NEXX 出售**：退出面板級 ECD 設備（賣給 AMAT），聚焦 TCB / 混合接合 / CPO 等更具技術優勢的核心業務
-- **Applied Materials 持股關係**：Applied Materials 持有 Besi（ASMPT 競爭對手）9% 股份；AMAT 進一步收購 NEXX，顯示 AMAT 正主動佈局設備整合
-
-## 與其他實體的關係 / Relationships
-
-- **Applied Materials**：NEXX 買家（2026 Q2 預計完成）；技術合作夥伴（部分聯合開發）
-- **EV Group**：D2W 混合接合聯合開發合作（詳見 EV Group 頁面）
-- **Besi**：TCB 與混合接合設備主要競爭對手
-- **主要客戶**：TSMC（透過 TSMC 的邏輯封裝計畫）、SK Hynix、Samsung Memory（HBM4 TCB）、主要資料中心光纖供應商（CPO）
+- **Applied Materials 持股關係**：Applie

@@ -3,8 +3,8 @@ title: "先進封裝市場 / Advanced Packaging Market"
 category: concept
 tags: [market, forecast, CAGR, supply-chain, HBM, chiplet, geopolitics, equipment]
 created: 2026-04-24
-updated: 2026-07-02
-sources: [2026-04-24_initial-survey, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2026-01-23_trendforce_chip-tools-tel-asml, 2026-03-05_trendforce_intel-emib-billions, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2025-12-18_trendforce_micron-capex-hbm4, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2025-05-13_trendforce_top10-osat-2024, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-04-16_ontoinnovation_dragonfly-g5-qualified, 2026-06-23_communicationstoday_foplp-glass-substrate-market-8b-2030, 2026-06-29_trendforce_china-osat-tongfu-jcet-investment, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-26_semieng_chip-week-144, 2026-07-01_trendforce_ase-price-hike-20pct]
+updated: 2026-07-04
+sources: [2026-04-24_initial-survey, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2026-01-23_trendforce_chip-tools-tel-asml, 2026-03-05_trendforce_intel-emib-billions, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2025-12-18_trendforce_micron-capex-hbm4, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2025-05-13_trendforce_top10-osat-2024, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-04-16_ontoinnovation_dragonfly-g5-qualified, 2026-06-23_communicationstoday_foplp-glass-substrate-market-8b-2030, 2026-06-29_trendforce_china-osat-tongfu-jcet-investment, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-26_semieng_chip-week-144, 2026-07-01_trendforce_ase-price-hike-20pct, 2026-07-04_semieng_chip-week-145, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-07-03_trendforce_anthropic-samsung-advanced-packaging]
 related:
   - wiki/entities/tsmc.md
   - wiki/entities/sk-hynix.md
@@ -361,3 +361,43 @@ Applied Materials 宣布同時推出三類先進封裝新設備系統：
 - IDC 預測記憶體供需失衡將持續至 **2027 年**
 
 詳見 [[entities/micron]]、[[technologies/hbm4]]。
+
+---
+
+## ⭐ 2026-07-04 更新：記憶體設備支出歷史破 $50B + 韓廠 KRW 800T 擴產 + AI 公司自製晶片新趨勢
+
+### 300mm 記憶體設備支出首破 $50B（SemiEngineering Chip Week #145，2026-07-04）
+
+| 指標 | 數值 |
+|------|------|
+| 2026 年 300mm 記憶體設備支出 | **>$50B**（史上首次） |
+| 年成長率 | +29% |
+| 2027 預測 | 再增 +11% |
+| DRAM 設備 | **$37B**（佔 74%） |
+| 3D NAND 設備 | **$14B**（佔 26%） |
+| 前十大晶圓代工 8 吋利用率 | 88% |
+| 代工價格漲幅（Q1→Q2 2026） | 5–15% |
+
+**wiki 含義**：DRAM 設備 $37B 中相當大比例用於 HBM 擴產（SK hynix P&T7、Samsung 牙山/天安），是先進封裝基礎設施投資的設備端量化佐證。代工價格 +5–15% 亦確認封裝服務定價有望同步改善。
+
+*Source: SemiEngineering Chip Week #145 2026-07-04（partial）*
+
+### 韓廠合計 KRW 800T（≈$570B USD）擴產——封裝基礎設施史上最大投資（2026-06-30/07-02）
+
+| 項目 | 投資額 | 時程 |
+|------|--------|------|
+| SK hynix P&T7 封裝中心（忠清） | KRW 81T（≈$59B） | 2027 竣工 |
+| SK hynix M17 NAND 廠 | KRW 80T（≈$58B） | 2027 動工，2029 H1 量產 |
+| Samsung HBM 廠（牙山+天安） | KRW 56T（≈$41B） | — |
+| Samsung Electro-Mechanics AI 封裝基板（世宗） | KRW 8T（≈$5.8B） | — |
+| 合計（Samsung+SK hynix） | KRW ~800T（≈$580B） | 2026–2033 |
+
+**設備排擠效應**：規模龐大的同步建廠造成 EUV/蝕刻/CMP/沉積設備需求激增，延長設備交期，可能間接衝擊台積電與 Intel 的 sub-2nm 節奏。
+
+*Source: TrendForce 2026-06-30、2026-07-02*
+
+### AI 公司自製晶片新趨勢——先進封裝需求新向量（2026-07-03）
+
+Anthropic 洽談三星 SF2（2nm）代工＋先進封裝自製 AI ASIC，繼 Google TPU、Amazon Trainium、Microsoft Maia、OpenAI Jalapeño 之後，**大型 AI 公司自製晶片趨勢持續擴張**。每家 AI 公司推出客製 ASIC 均需要對應的先進封裝解決方案（2.5D 整合 HBM、高密度互連），為 CoWoS/EMIB 等技術開闢新客群。
+
+*Source: TrendForce 2026-07-03（引述 Bloomberg、Yonhap）*

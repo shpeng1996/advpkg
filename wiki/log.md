@@ -1810,47 +1810,22 @@
 - 建議：TeraFab 主題持續關注，尤其 Grimes County 建設進度及下一批人才招募公告。
 
 ### Git Commit 狀態
-待執行：`git add -A && git commit -m "2026-07-02"`
-
----
-
-## [2026-07-03] collect | 每日自動蒐集 — 先進封裝最新動態（2026-07-03）
-- 搜尋查詢數：8 組（TSMC 封裝動態、HBM4/SK Hynix、混合接合設備、面板級封裝、AMAT 設備、Corning 光學、JNTC 玻璃基板、市場/產業）
-- 成功抓取：5 篇（articles/ 5 篇）
-  - raw\articles\2026-06-30_thelec_amat-six-new-dram-packaging-systems.md（AMAT DRAM & AP Master Class 6 款新設備）
-  - raw\articles\2026-06-24_thelec_corning-glass-bridge-cpo-packaging.md（Corning Glass Bridge 離子交換波導 + GlassWorks AI）
-  - raw\articles\2026-06-25_thelec_micron-q3-fy2026-record-results.md（Micron Q3 FY2026 史上最高財報）
-  - raw\articles\2026-05-12_asmpt_ectc2026-firebird-lithobolt-ap.md（ASMPT FIREBIRD TCB + LITHOBOLT G2 D2W）
-  - raw\articles\2026-06-19_thelec_jntc-2mm-tgv-glass-substrate.md（JNTC 全球首款 2.0mm TGV）
-- 失敗/跳過：多篇
-  - 大多數 TrendForce/SemiEngineering 候選已在 `_collected_urls.txt`（高飽和）
-  - SemiEngineering Chip Week #145 尚未發布（2026-07-03 搜尋確認）
-  - CNBC SK Hynix ADR 文章（domain 受限，policy 不允許替代方法）
-  - Tom's Hardware、WCCFTech 部分文章為空內容，略過
-- 新增 wiki 頁面（來源摘要）：5 頁
-  - wiki/sources/2026-06-30_thelec_amat-six-packaging-systems.md
-  - wiki/sources/2026-06-24_thelec_corning-glass-bridge-cpo.md
-  - wiki/sources/2026-06-25_thelec_micron-q3-fy2026-record.md
-  - wiki/sources/2026-05-12_asmpt_ectc2026-firebird-lithobolt.md
-  - wiki/sources/2026-06-19_thelec_jntc-2mm-tgv-glass-substrate.md
-- 更新 wiki 頁面：7 頁
-  - wiki/entities/micron.md：新增 Q3 FY2026 完整財報（$41.456B、$33.318B 營業利益、84.6% 毛利率、$24.67 EPS、16 SCA $1,000億積壓）；sources 新增 1 筆；updated→2026-07-03
-  - wiki/entities/asmpt.md：新增 FIREBIRD 系列（AOR 技術名稱、>500 套量產、2.0µm 精度、16H HBM 支援）與 LITHOBOLT G2 D2W（>10,000 互連/mm²）具體規格；sources 新增 1 筆；updated→2026-07-03
-  - wiki/technologies/glass-substrate.md：新增「2026-07-03 更新」節（JNTC 2.0mm TGV 全球首款 + Corning Glass Bridge TGV CPO 架構）；updated→2026-07-03
-  - wiki/technologies/hybrid-bonding.md：設備生態系表格補充 ASMPT LITHOBOLT G2 D2W 規格；新增 AMAT Opta CMP 混合接合專用 CMP 說明
-  - wiki/technologies/copackaged-optics.md：新增「2026-07-03 更新」節（Corning Glass Bridge 完整規格、GlassWorks AI、TGV 玻璃基板 CPO 架構、三層 Corning 產品線關係梳理表）；sources 新增 1 筆；updated→2026-07-03
-  - wiki/index.md：頁面總數 259→264；來源數 220→225；新增 5 筆 sources 連結；更新時間 2026-07-02→2026-07-03
-
-### 主要新知識
-1. **Micron Q3 FY2026 史上最強財報**：營收 $41.456B（+345.7% YoY）、營業利益 $33.318B（+1,436%）、16 份 SCA 合約總積壓 ~$1,000 億，為 wiki 最完整的 Micron 季度財務記錄；Q4 指引 $500 億再創高。
-2. **ASMPT 產品具體化**：FIREBIRD AOR 技術全名首次入 wiki；LITHOBOLT G2 D2W >10,000 互連/mm² 量化規格首次記錄；AMAT Opta CMP 為混合接合設備生態系新增關鍵製程工具。
-3. **Corning Glass Bridge 規格公開（wiki 首次）**：離子交換波導、≥30µm、<2dB 規格首次列入 wiki，並梳理 Corning 三條 CPO 產品線（GLASSBRIDGE™ 連接器、Glass Bridge 波導元件、TGV 玻璃基板 CPO 架構）的功能層次差異。
-4. **JNTC 2.0mm TGV 全球首款**：韓國小型專業廠 JNTC 達成業界未見厚度，擴展玻璃基板 TGV 應用至大型 AI 封裝機械支撐需求；wiki 首次記錄 JNTC 為玻璃基板技術參與者。
-
-### 備註
-- 今日搜尋以 The Elec 為主要新來源（5 篇均來自 thelec.net），彌補 TrendForce/SemiEngineering 飽和問題。
-- SK Hynix Nasdaq ADR（ticker SKHY，目標 2026-07-10）為重要近期事件，但 CNBC 域受限無法抓取，建議後續收錄韓國媒體版本。
-- AMAT DRAM & AP Master Class（2026-06-25，首爾）首次完整記錄——包含 6 款新品，為 wiki AMAT 設備生態系記錄最詳盡一次。
-
-### Git Commit 狀態
-待執行：`git add -A && git commit -m "2026-07-03"`
+待執行：`git add -A && git commit -m "2026-07-02"
+## [2026-07-04] collect | 先進封裝最新動態：韓廠 KRW 800T 擴產、Anthropic 自製 AI 晶片、Intel TeraFab、記憶體設備破 $50B
+- 搜尋查詢數：7 組（TSMC CoWoS、HBM4/SK hynix、hybrid bonding、panel-level packaging、Intel EMIB/TeraFab、UCIe/standards、competitors/market）
+- 成功抓取：5 篇（存入 raw/articles/ 5 篇）
+- 失敗/跳過：SemiEngineering Chip Week #145（客戶端渲染，partial 收錄）；多篇已在 _collected_urls.txt 中
+- 觸發 ingest：5 篇
+- 新增 wiki/sources/ 頁：5 頁
+- 觸及 wiki 頁面：（共 8 頁）
+  - wiki/entities/samsung.md（Anthropic 2nm 洽談、KRW 140T、P5+P6 設備排擠）
+  - wiki/entities/sk-hynix.md（P&T7 KRW 81T/100T 清州、龍仁 4 廠 2033）
+  - wiki/entities/intel.md（TeraFab 加入，封裝能力聲明；設備排擠風險）
+  - wiki/concepts/advanced-packaging-market.md（$50B 記憶體設備里程碑、KRW 800T 封裝投資、AI 公司 ASIC 新向量）
+  - wiki/sources/2026-07-03_trendforce_anthropic-samsung-advanced-packaging.md（新建）
+  - wiki/sources/2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment.md（新建）
+  - wiki/sources/2026-04-07_tomshardware_intel-joins-terafab.md（新建）
+  - wiki/sources/2026-06-30_trendforce_samsung-skhynix-800t-expansion.md（新建）
+  - wiki/sources/2026-07-04_semieng_chip-week-145.md（新建）
+  - wiki/index.md（頁面總數 264→269；Sources 225→230）
+- 主要新知識：(1) 韓廠合計 KRW 800T 擴產（81T 封裝中心）為半導體史上最大封裝基礎設施投資宣告，設備排擠效應可能衝擊台積電/Intel；(2) Anthropic 洽談三星 2nm+先進封裝，AI 公司自製 ASIC 趨勢從 Google/MS/OpenAI 蔓延至第三大 AI 公司；(3) Intel 加入 TeraFab 並明確以封裝能力為核心貢獻（2026-04-07 事件補收錄）；(4) 300mm 記憶體設備 2026 年首破 $50B，DRAM 佔 $37B 為 HBM 基礎設施擴張的設備端量化佐證。
