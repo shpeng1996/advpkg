@@ -1848,3 +1848,23 @@ W（>10,000 互連/mm²）具體規格；sources 新增 1 筆；updated→2026-0
 
 ### Git Commit 狀態
 待執行：`git add -A && git commit -m "2026-07-03"`
+
+## [2026-07-05] collect | 每日自動蒐集 — SK hynix Nasdaq ADR $29B、Samsung HBM5 Dummy Die 專利、中國封裝材料四大領域突破
+- 搜尋查詢數：7 組（TSMC CoWoS/CoPoS、HBM4/HBM4E/SK hynix、Intel EMIB/TeraFab、混合接合、面板封裝FOPLP、UCIe/標準、競爭對手/市場）
+- 成功抓取：3 篇（存入 raw/articles/ 3 篇）
+- 失敗/跳過：多篇 TrendForce/SemiEngineering 已在 _collected_urls.txt 中；TSMC AP7 7/4 開幕儀式無獨立可抓取文章（僅搜尋摘要）；Tom's Hardware premium 文章跳過
+- 新增 wiki/sources/ 頁：3 頁
+  - wiki/sources/2026-06-25_techtimes_sk-hynix-nasdaq-adr-29b.md（新建）
+  - wiki/sources/2026-07-03_trendforce_china-tglass-guangyuan.md（新建）
+  - wiki/sources/2026-07-02_trendforce_samsung-hbm-dummy-die-patent.md（新建）
+- 更新 wiki 頁面：5 頁
+  - wiki/entities/sk-hynix.md（ADR 融資結構詳細：$29B、承銷行、ADR 比例 10:1、Y1+P&T7+EUV 用途）
+  - wiki/entities/samsung.md（HBM5 dummy die 專利：三段梯形側壁+雷射分割+HPB）
+  - wiki/technologies/hbm4.md（HBM5 16 層良率 40–60% 量化；dummy die 設計新增；updated→2026-07-05）
+  - wiki/technologies/glass-substrate.md（TGV 結構玻璃 vs. T-glass 玻璃布區分；光遠新材 $1B 中國挑戰 Nittobo；updated→2026-07-05）
+  - wiki/concepts/geopolitics-advanced-packaging.md（中國四大封裝材料突破總表；勝宏 NVIDIA Rubin CCL 認證；江豐韓國廠；updated→2026-07-05）
+- wiki/index.md：頁面總數 269→272；Sources 230→233；更新時間 2026-07-04→2026-07-05；新增 3 筆 sources 連結
+- 主要新知識：
+  1. **SK hynix Nasdaq ADR $29B 融資結構首度量化（wiki 空缺填補）**：$29B 全數用於 P&T7 HBM 封裝廠（清州）+ 龍仁 Y1 fab + EUV 設備，史上最大 ADR 發行；SKHY 掛牌 2026-07-10；融資與封裝廠擴張直接掛鉤，是 SK hynix HBM 基礎設施投資的財務路徑首次完整記錄。
+  2. **Samsung HBM5 Dummy Die 可靠性工程首次入 wiki**：三段式梯形側壁+雷射分割+NBR 溝槽設計；16 層 HBM5 良率估計 40–60%（此量化數字為 wiki 首次記錄）；與 iHBM/HPB 熱路徑方案技術收斂。
+  3. **中國封裝材料四大領域系統性突破**：光遠新材（T-glass $1B 河南廠）、勝宏科技（NVIDIA Rubin CCL 認證）、江豐電子（SK Hynix/Samsung 供貨韓國廠）、紅樹林（光刻膠中國第一，港交所 IPO）——首次以全景視角整合入 geopolitics 頁面。

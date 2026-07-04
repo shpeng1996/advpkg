@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-07-04
-**頁面總數 Total Pages**：269
-**原始來源數 Sources**：230
+**更新時間 Updated**：2026-07-05
+**頁面總數 Total Pages**：272
+**原始來源數 Sources**：233
 
 ---
 
@@ -63,6 +63,9 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-07-05_trendforce_china-tglass-guangyuan]] — TrendForce：**中國 T-glass 光遠新材 $1B 河南廠（客戶 Panasonic/Resonac）；勝宏 CCL NVIDIA Rubin 認證；江豐電子韓國廠供 SK Hynix/Samsung；紅樹林光刻膠港交所 IPO 申請**（2026-07-05 收錄；原文 2026-07-03）⭐新增
+- [[sources/2026-07-05_trendforce_samsung-hbm-dummy-die-patent]] — TrendForce：**Samsung HBM5 Dummy Die 專利——三段式梯形側壁+雷射分割；HPB 整合；16 層 HBM5 良率 40–60% 首次量化**（2026-07-05 收錄；原文 2026-07-02）⭐新增
+- [[sources/2026-07-05_techtimes_sk-hynix-nasdaq-adr-29b]] — Tech Times：**SK hynix Nasdaq ADR $29B（史上最大，超越 Alibaba 2014）；100% 用於 P&T7 HBM 封裝廠+龍仁 Y1 fab+EUV；2026-07-10 掛牌；SKHY**（2026-07-05 收錄；原文 2026-06-25）⭐新增
 - [[sources/2026-07-04_semieng_chip-week-145]] — SemiEngineering Week #145：**300mm 記憶體設備 >$50B（+29%，史上首次）；DRAM $37B、NAND $14B；8 吋代工利用率 88%；代工報價 +5–15%；Nvidia AI 新創收益分潤算力方案；80 新創募資 $8.4B**（2026-07-04 收錄；partial）⭐新增
 - [[sources/2026-07-03_trendforce_anthropic-samsung-advanced-packaging]] — TrendForce：**Anthropic 洽談三星 SF2（2nm）代工+先進封裝自製 AI ASIC；早期洽談；Clive Chan（前 OpenAI 晶片計畫）已到職；三星 Series H 戰略夥伴**（2026-07-04 收錄；原文 2026-07-03）⭐新增
 - [[sources/2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment]] — TrendForce：**SK hynix KRW 100T（80T M17 NAND 2029；20T P&T7 封裝中心 2027）；Samsung KRW 140T（56T HBM 廠、8T 電機 AI 基板世宗）；SK Group 1GW AI 資料中心**（2026-07-04 收錄；原文 2026-07-02）⭐新增
