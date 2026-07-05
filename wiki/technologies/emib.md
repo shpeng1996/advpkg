@@ -3,8 +3,8 @@ title: "EMIB — Embedded Multi-Die Interconnect Bridge"
 category: technology
 tags: [Intel, 2.5D, silicon-bridge, chiplet, HBM4, Foveros, glass-substrate, EMIB-T, EMIB-M, silicon-capacitors, power-delivery]
 created: 2026-05-03
-updated: 2026-06-27
-sources: [2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-03-05_trendforce_intel-emib-billions, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-03-03_trendforce_intel-clearwater-forest, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks, 2026-06-21_convergedigest_intel-emib-t-multi-die-packaging, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap]
+updated: 2026-07-06
+sources: [2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-03-05_trendforce_intel-emib-billions, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-03-03_trendforce_intel-clearwater-forest, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks, 2026-06-21_convergedigest_intel-emib-t-multi-die-packaging, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap, 2026-06-05_semieng_intel-ectc2026-emib-cpo-glass-blog]
 related:
   - wiki/entities/intel.md
   - wiki/entities/amkor.md
@@ -87,7 +87,8 @@ EMIB 是 Intel 的局部矽橋接技術：將一小片高密度矽橋（bridge d
   *Source: Tom's Hardware 2026-04-09（Luke James）*
 
 - **2026-06-10（⭐最新）**：**ECTC 2026 完整 EMIB-T 規格首次公開**（SemiEngineering 報導）：FLI Bump Pitch **25µm**；封裝尺寸 **120×120 mm**；逾 **9× 光罩面積**；HBM4e 介面速率 **>12 Gb/s**；UCIe 速率 **64 Gb/s**。Intel 與 SPIL 合作展示 **3D SRAM Chiplet in Fan-Out embedded bridge**（首次異質整合展示）。Google 下單逾 **300 萬顆 TPU（EMIB 封裝，2028）**，估佔 Google 當年 TPU 總採購 ~50%。
-  *Source: SemiEngineering 2026-06-05（引述 ECTC 2026）*
+  - **新增：Fluxless TCB 4× Reticle Die Stack**（⭐2026-07-06）：Intel 同場展示**無助熔劑熱壓接合（Fluxless TCB）**用於 4 倍光罩面積（4× reticle-size）大晶粒堆疊，解決助熔劑殘留污染問題，適用於超大尺寸晶粒（>4 reticle）的 3D 整合場景，是 EMIB-T 支援更大封裝面積路線圖的關鍵製程補充。
+  *Source: SemiEngineering 2026-06-05（引述 ECTC 2026）；Intel Foundry ECTC 2026 sponsor blog*
 
 - **2026-05-26**：**Intel Rio Rancho 矽光子代工開放 + EMIB 現有客戶首次具體揭露**：AWS、Cisco 為確認現有客戶；Apple、Google、Microsoft、NVIDIA、Tesla 洽談中。EMIB 生產主基地：Penang + Rio Rancho。⭐新增
 - **2026-05-29**：**MediaTek CEO 股東會確認：Google v8e 推論 TPU 封裝指定 Intel EMIB，由 MediaTek 執行**（Commercial Times 報導）；訓練 TPU 封裝保留 TSMC CoWoS。此為 wiki 記錄的 EMIB 客戶落地最具體確認——從「評估」升格為「正式分配」。⭐新增
@@ -145,6 +146,4 @@ EMIB 是 Intel 的局部矽橋接技術：將一小片高密度矽橋（bridge d
 - EMIB 能否在功率密度上突破 5–6 kW 限制（透過嵌入式 IVR）？
 - Google TPU v9 採用 EMIB 是否會動搖 TSMC CoWoS 的 CSP 主導地位？
 - EMIB on Glass 量產節奏（2027–28 目標）能否達成？
-- **NVIDIA Feynman I/O die 最終是否採用 Intel 14A/18A + EMIB？**（2026-05-12 新增）：目前 NVIDIA 並行評估 TSMC A16+SoIC 與 Intel 14A/18A+EMIB 兩條路線。Intel EMIB 若獲 NVIDIA 旗艦 AI 晶片採用，將是 EMIB 從「ASIC 客戶」到「高效能 GPU 客戶」的突破，也將重塑整個 CoWoS 壟斷格局。
-- **SK Hynix EMIB R&D 是否會演變為量產合作**？目前 SK Hynix 僅在 R&D 層面測試；若 EMIB 吸引更多 HBM 客戶（Marvell、MediaTek），SK Hynix 的 EMIB 相容 HBM 設計可能成為競爭優勢。
-- **EMIB 客戶多元化速度**：Marvell、MediaTek 在 2026 年 5 月進入評估；若 2026 H2 簽訂合約，EMIB 外部封裝業務規模將大幅超越現有預估。
+- **NVIDIA Feynman I/O die 最終是否採用 Intel 14A/18A + EMIB？**（2026-05-12 新增）：目前 NVIDIA 並行評估 TSMC A16+SoIC 與 Intel 14A/18A+EMIB 兩條路線。Intel EMIB 若獲 NVIDIA 旗艦 AI 晶片採用，將是 EMIB 從「ASIC 客戶」到「高效

@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-07-05
-**頁面總數 Total Pages**：272
-**原始來源數 Sources**：233
+**更新時間 Updated**：2026-07-06
+**頁面總數 Total Pages**：275
+**原始來源數 Sources**：236
 
 ---
 
@@ -63,6 +63,9 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-06-05_semieng_intel-ectc2026-emib-cpo-glass-blog]] — SemiEngineering：**Intel ECTC 2026 sponsor blog — EMIB-T 25µm/120×120mm/>9× reticle；Intel+SPIL 3D SRAM Chiplet；CPO V-groove 玻璃耦合器；TGV 零失效熱循環；Fluxless TCB 4× reticle；Fouriers Scientific / NIST 混合接合研究**（2026-07-06 收錄；原文 2026-06-05）⭐新增
+- [[sources/2026-03-02_semieng_making-hybrid-bonding-better]] — SemiEngineering：**Making Hybrid Bonding Better — AMAT 300°C/5min 100× 吞吐；NT Cu 200°C 退火；SiCN PVD <250°C；plasma dicing 粒子控制；Yole 21% CAGR（HB 設備，2025–2030）；Synopsys 3D-aware EDA**（2026-07-06 收錄；原文 2026-03-02）⭐新增
+- [[sources/2026-01-13_semieng_hbm4-microbumps-postponing-hybrid-bonding]] — SemiEngineering：**HBM4 Sticks With Microbumps — JEDEC 720→775µm 修訂背景；測試-接合矛盾（探針粒子源）；face-to-face HB + back-to-back microbump 混合堆疊方案；Samsung HBM4E Jan 2026 早期目標**（2026-07-06 收錄；原文 2026-01-13）⭐新增
 - [[sources/2026-07-05_trendforce_china-tglass-guangyuan]] — TrendForce：**中國 T-glass 光遠新材 $1B 河南廠（客戶 Panasonic/Resonac）；勝宏 CCL NVIDIA Rubin 認證；江豐電子韓國廠供 SK Hynix/Samsung；紅樹林光刻膠港交所 IPO 申請**（2026-07-05 收錄；原文 2026-07-03）⭐新增
 - [[sources/2026-07-05_trendforce_samsung-hbm-dummy-die-patent]] — TrendForce：**Samsung HBM5 Dummy Die 專利——三段式梯形側壁+雷射分割；HPB 整合；16 層 HBM5 良率 40–60% 首次量化**（2026-07-05 收錄；原文 2026-07-02）⭐新增
 - [[sources/2026-07-05_techtimes_sk-hynix-nasdaq-adr-29b]] — Tech Times：**SK hynix Nasdaq ADR $29B（史上最大，超越 Alibaba 2014）；100% 用於 P&T7 HBM 封裝廠+龍仁 Y1 fab+EUV；2026-07-10 掛牌；SKHY**（2026-07-05 收錄；原文 2026-06-25）⭐新增
@@ -281,10 +284,4 @@
 - [[sources/2025-12-04_trendforce_tsmc-ap7-arizona-p6]] — TSMC AP7 啟用；Arizona P6 封裝基地計畫；CapEx CAGR 24%（2025-12-04）⭐新增
 - [[sources/2025-12-01_trendforce_intel-amkor-songdo-emib-outsource]] — Intel 首次 EMIB 外包至 Amkor Songdo K5；EMIB-M 量產/EMIB-T 2026-27；2,700 億韓元投資（2025-12-01）⭐新增
 - [[sources/2025-12-01_semiengineering_thermal-management]] — 先進封裝熱管理：TSMC 直接矽液冷、3D 熱點、TIM 演進（2025-12）⭐新增
-- [[sources/2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding]] — IFTLE 648：Unimicron 玻璃核心基板 + Cu-Cu 混合接合可靠性研究（2025-12-01）⭐新增
-- [[sources/2025-10-07_trendforce_hybrid-bonder-market-2b]] — 混合接合設備市場 $2B（2028）；韓國 Hanmi/Hanwha/LG 競爭；Besi/ASMPT 全球領先（2025-10-07）⭐新增
-- [[sources/2025-09-19_trendforce_stmicro-foplp-france]] — STMicro 法國面板級封裝試驗線 2026 Q3 啟動（2025-09-19）⭐新增
-- [[sources/2025-09-12_trendforce_foplp-competitive-2025]] — FOPLP 競爭格局：Powertech 90% 良率；TSMC 玻璃 vs Samsung；Resonac+AMAT+TEL 生態（2025-09-12）⭐新增
-- [[sources/2025-08-12_semianalysis_hbm-roadmap]] — SemiAnalysis：HBM roadmap；HBM4 custom base die、shoreline area、XPU-HBM routing density 與 CoWoS 依賴（2025-08-12）⭐新增
-- [[sources/2025-08-05_3dincites_iftle636-samsung-lsb-micron-virginia]] — IFTLE 636：三星 LSB 矽橋接 Chiplet；Micron 維吉尼亞 HBM 封裝廠計畫（2025-08-05）⭐新增
-- [[sources/2025-07-01_3dincites_micron-onshore-tsmc-copos]] — IFTLE 634：Micron 本土化投資；TSMC CoP
+- [[sources/2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding]] — IFTLE 648：Un
