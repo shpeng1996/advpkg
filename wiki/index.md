@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-07-06
-**頁面總數 Total Pages**：275
-**原始來源數 Sources**：236
+**更新時間 Updated**：2026-07-07
+**頁面總數 Total Pages**：278
+**原始來源數 Sources**：239
 
 ---
 
@@ -16,7 +16,7 @@
 
 - [[entities/tsmc]] — 台積電；全球最大晶圓代工廠；CoWoS/SoIC 技術領導者；2026 年產能瓶頸核心
 - [[entities/intel]] — 英特爾；IDM；EMIB-T 今年內 fab 量產（45µm→35/25µm 路線圖、Jaguar Shores 首款產品推測）；**Xeon 6+ 18A 首款商業 CPU**（2026-06-19）⭐更新
-- [[entities/samsung]] — 三星；IDM + Foundry + Memory；**光州新封裝基地（TCB 231K + HCB 19.5K/月，2026 年底）**；GTC Taipei 後股價單日 +10.1%（2026-06-19）⭐更新
+- [[entities/samsung]] — 三星；IDM + Foundry + Memory；**GlaSSEM JV（Samsung EM 66% + Dongwoo Fine-Chem 34%，KRW 480B，玻璃基板 2H27 量產）**；光州新封裝基地（TCB 231K + HCB 19.5K/月）⭐更新
 - [[entities/sk-hynix]] — SK Hynix；HBM 市場領導者；**12 層 HBM4E 樣品正式出貨（2026-06-18，48GB/16Gbps/4TB·s）**；2034 年三倍晶圓產能路線圖；TC Bonder 44.2 億韓元訂單（2026-06-20）⭐更新
 - [[entities/asmpt]] — ASMPT Limited；TCB/混合接合/Photonics-CPO 設備領導廠商；Q1 2026 訂單 27M +71.6% YoY；NEXX 出售給 AMAT⭐新增
 - [[entities/ase-group]] — ASE Group；全球最大 OSAT；CoWoP 面板封裝；K28 廠 2026 年完工；SPIL 2026 年累計廠房收購 >NT$227 億；5 月營收 NT$630.3 億（+28.6% YoY）⭐更新
@@ -25,7 +25,7 @@
 - [[entities/besi]] — BE Semiconductor（Besi）；D2W 混合接合設備主供應商；Datacon 8800 CHAMEO；Kinex 平台（Applied Materials 持股 9%）⭐新增
 - [[entities/tel]] — Tokyo Electron（TEL）；RDL 製程設備領導者；Kumamoto 研發基地（¥470 億，2026 春）；Eteris 合資（與 AMAT）⭐新增
 - [[entities/nvidia]] — NVIDIA；Fabless AI GPU 龍頭；CoWoS + SoIC 最大需求方；Rubin Ultra NVL576（100 PFLOPS）；SK Hynix 多年期夥伴（Vera CPU LPDDR5X 1.2 TB/s）；評估 Intel 18A 4晶粒 Feynman（2026-06-09）⭐更新
-- [[entities/micron]] — Micron；美國記憶體 IDM；HBM4 >11 Gbps（Q2'26 HVM）；Virginia HBM 封裝廠；$200B 美國投資計畫⭐新增
+- [[entities/micron]] — Micron；美國記憶體 IDM；HBM4 >11 Gbps（Q2'26 HVM）；**廣島廠 ¥1.5T 擴建動土（2026-07-04）、1γ DRAM + HBM、設備 2H28**；Virginia HBM 封裝廠；$200B 美國投資計畫⭐更新
 - [[entities/amd]] — AMD；Fabless CPU/GPU；Venice 首採 EMIB 等效封裝；MI355X（N3P，2 I/O die）；MI450 aLSI 測試載具⭐新增
 - [[entities/asml]] — ASML；微影設備獨占廠商；XT:260 3D DUV 已出貨（RDL）；評估混合接合設備市場進入⭐新增
 - [[entities/rapidus]] — Rapidus；日本 2nm 新創代工廠；「AI Foundry」框架；封裝共址策略；玻璃基板 600×600mm 最大樣品；量產 2028⭐新增
@@ -47,8 +47,8 @@
 - [[technologies/info-wmcm]] — InFO（2016 商轉）+ WMCM（2026 量產）；TSMC 行動晶片封裝旗艦；Apple A20 iPhone18 採用 WMCM⭐新增
 - [[technologies/emib]] — EMIB（Embedded Multi-Die Interconnect Bridge）；Intel 2.5D 局部矽橋；代工廠中立；EMIB-T 今年內 fab 量產，45µm→35/25µm 路線圖（2026-06-19）⭐更新
 - [[technologies/foveros]] — Foveros；Intel 3D 堆疊；Foveros Direct 3D（<10µm Cu-Cu，2026 量產）；875 GB/s 3D 頻寬⭐新增
-- [[technologies/foplp]] — FOPLP（扇出面板級封裝）；**Manz Asia 全球首套 310mm PLP ECD 量產系統交付完整細節**（2026-06-20）⭐更新
-- [[technologies/glass-substrate]] — 玻璃核心基板（TGV）；**BOE 試產線運轉但未量產良率，量產時程修正至 2027 年起**（2026-06-20）⭐更新
+- [[technologies/foplp]] — FOPLP（扇出面板級封裝）；**CFMEE PLP 2000 通過技術資格認證——中國首套 510×515mm PLP 直寫微影系統（2µm；CoPoS/FOPLP/玻璃基板）**（2026-07-07）⭐更新
+- [[technologies/glass-substrate]] — 玻璃核心基板（TGV）；**GlaSSEM JV（Samsung EM+Sumitomo，2H27）+ TSMC JPCA 2026 首次公開量化性能數據（COP +16%、電感 -42%）**（2026-07-07）⭐更新
 - [[technologies/hbf]] — **HBF（High Bandwidth Flash）**；TSV 堆疊 NAND；SanDisk 2H26 樣品；SK Hynix+SanDisk 標準化；Hanmi TCB 設備 2H26 首交付（2026-06-11）⭐新增
 
 ---
@@ -63,6 +63,9 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-07-06_trendforce_micron-hiroshima-fab-hbm-1gamma]] — TrendForce：**Micron 廣島廠 ¥1.5T 擴建動土（2026-07-04），1γ DRAM + HBM，EUV，設備 2H28；METI 補貼上限 ¥5,000 億**（2026-07-07 收錄；原文 2026-07-06；fetch_status: partial）⭐新增
+- [[sources/2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo]] — TrendForce：**Samsung EM + Dongwoo Fine-Chem（住友化學子公司）成立「GlaSSEM」JV；KRW 4,800 億；2H27 量產；+ TSMC JPCA Show 2026 玻璃基板量化性能首次公開（COP +16%、CTE -19%、模量 +31%、電源電阻 -27%、電感 -42%）**（2026-07-07 收錄；原文 2026-07-06）⭐新增
+- [[sources/2026-07-06_trendforce_cfmee-plp2000-china-first-plp]] — TrendForce：**CFMEE PLP 2000 通過技術資格認證——中國首套 510×515mm PLP 直寫微影系統；最大面板 600×600mm；2µm 解析度；CoPoS/FOPLP/玻璃基板支援；港股 IPO 2026-06-26（~US$4.1 億）**（2026-07-07 收錄；原文 2026-07-06）⭐新增
 - [[sources/2026-06-05_semieng_intel-ectc2026-emib-cpo-glass-blog]] — SemiEngineering：**Intel ECTC 2026 sponsor blog — EMIB-T 25µm/120×120mm/>9× reticle；Intel+SPIL 3D SRAM Chiplet；CPO V-groove 玻璃耦合器；TGV 零失效熱循環；Fluxless TCB 4× reticle；Fouriers Scientific / NIST 混合接合研究**（2026-07-06 收錄；原文 2026-06-05）⭐新增
 - [[sources/2026-03-02_semieng_making-hybrid-bonding-better]] — SemiEngineering：**Making Hybrid Bonding Better — AMAT 300°C/5min 100× 吞吐；NT Cu 200°C 退火；SiCN PVD <250°C；plasma dicing 粒子控制；Yole 21% CAGR（HB 設備，2025–2030）；Synopsys 3D-aware EDA**（2026-07-06 收錄；原文 2026-03-02）⭐新增
 - [[sources/2026-01-13_semieng_hbm4-microbumps-postponing-hybrid-bonding]] — SemiEngineering：**HBM4 Sticks With Microbumps — JEDEC 720→775µm 修訂背景；測試-接合矛盾（探針粒子源）；face-to-face HB + back-to-back microbump 混合堆疊方案；Samsung HBM4E Jan 2026 早期目標**（2026-07-06 收錄；原文 2026-01-13）⭐新增

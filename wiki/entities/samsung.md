@@ -3,8 +3,8 @@ title: "三星 / Samsung"
 category: entity
 tags: [IDM, foundry, memory, advanced-packaging, X-Cube, HBM, ISSCC2026, I-CubeS, LPDDR6]
 created: 2026-04-24
-updated: 2026-07-05
-sources: [2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2025-12-30_trendforce_samsung-hbm-surge, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2025-08-05_3dincites_iftle636, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit, 2026-06-10_trendforce_samsung-gwangju-packaging-base, 2026-06-12_digitimes_samsung-packaging-gap-tsmc-intel, 2026-06-15_trendforce_skhynix-hbm4e-sample-timeline-pulled-forward, 2026-06-19_techtimes_vera-rubin-hbm4-suppliers, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-24_techtimes_sk-hynix-dethroned-samsung-ddr5-hbm4, 2026-07-03_trendforce_anthropic-samsung-advanced-packaging, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-07-02_trendforce_samsung-hbm-dummy-die-patent]
+updated: 2026-07-07
+sources: [2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2025-12-30_trendforce_samsung-hbm-surge, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2025-08-05_3dincites_iftle636, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit, 2026-06-10_trendforce_samsung-gwangju-packaging-base, 2026-06-12_digitimes_samsung-packaging-gap-tsmc-intel, 2026-06-15_trendforce_skhynix-hbm4e-sample-timeline-pulled-forward, 2026-06-19_techtimes_vera-rubin-hbm4-suppliers, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-24_techtimes_sk-hynix-dethroned-samsung-ddr5-hbm4, 2026-07-03_trendforce_anthropic-samsung-advanced-packaging, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-07-02_trendforce_samsung-hbm-dummy-die-patent, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo]
 related:
   - wiki/entities/tsmc.md
   - wiki/entities/intel.md
@@ -32,7 +32,10 @@ related:
 
 ## 近期動態 / Recent Developments
 
-- **2026-07-05（⭐最新）**：**三星申請 HBM Dummy Die 可靠性新專利，瞄準 HBM5（16 層）良率提升**——頂層虛擬晶片側壁採「三段式梯形結構（3-step terraced）+ 曲面輪廓」設計，結合 Deep Groove Sawing 雷射分割工法、倒錐形截面（bonding 界面窄、頂面寬）及 NBR 防污染溝槽；散熱改進：保留 1–10 µm 導熱距離、縮小 EMC 體積。預計與 HPB（Heat Path Block）+ 混合接合整合。背景：16 層 HBM5 估計良率僅 40–60%（vs. 8→12 層下降 10–20pp），dummy die 翹曲為主要良率制限因素。
+- **2026-07-06（⭐最新）**：**Samsung Electro-Mechanics（三星電機）與 Dongwoo Fine-Chem（東友精密化學，住友化學子公司）簽署協議，成立玻璃核心基板（Glass Core Substrate）合資公司「GlaSSEM」**——持股：三星電機 66% / Dongwoo Fine-Chem 34%；投資總額 **KRW 4,800 億**（約 USD 3.5 億）；預計 **2H27** 正式量產，廠址設於東友精密化學平澤廠（Pyeongtaek，京畿道）。此舉標誌三星電機從客戶端（材料採購）升級為**玻璃基板共同製造商**，強化對 TSMC CoWoS-G 平台供應鏈的競爭佈局。背景：TSMC 已在 JPCA Show 2026 公開玻璃基板量化數據（COP +16%、CTE -19%、模量 +31%、電源電阻 -27%、電感 -42%），確認玻璃基板技術可行性，惟 TGV 製程穩定性問題使 TSMC 量產時程預估延至 2030 年以後。
+  *Source: TrendForce 2026-07-06*
+
+- **2026-07-05**：**三星申請 HBM Dummy Die 可靠性新專利，瞄準 HBM5（16 層）良率提升**——頂層虛擬晶片側壁採「三段式梯形結構（3-step terraced）+ 曲面輪廓」設計，結合 Deep Groove Sawing 雷射分割工法、倒錐形截面（bonding 界面窄、頂面寬）及 NBR 防污染溝槽；散熱改進：保留 1–10 µm 導熱距離、縮小 EMC 體積。預計與 HPB（Heat Path Block）+ 混合接合整合。背景：16 層 HBM5 估計良率僅 40–60%（vs. 8→12 層下降 10–20pp），dummy die 翹曲為主要良率制限因素。
   *Source: TrendForce 2026-07-02（引述 ETNews）*
 
 - **2026-07-03（⭐最新）**：**Anthropic 洽談採用三星 2nm 代工與先進封裝自製 AI 晶片**——據 Bloomberg/The Information 報導，Anthropic 正與三星電子洽談自製 AI ASIC，目標製程為 Samsung Foundry SF2（2nm）搭配先進封裝。專案仍屬早期，晶片功能/架構尚未定義。Anthropic 已延攬前 OpenAI 晶片計畫主導者 Clive Chan；三星為 Anthropic Series H「戰略基礎設施夥伴」，為本次洽談提供先期關係基礎。

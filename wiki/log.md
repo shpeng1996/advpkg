@@ -2,6 +2,31 @@
 
 ---
 
+## [2026-07-07] collect | 每日自動蒐集 — CFMEE PLP 2000（中國首套大面板 PLP 微影）、Samsung EM GlaSSEM JV + TSMC 玻璃基板性能數據、Micron 廣島廠 ¥1.5T 擴建
+- 搜尋查詢數：7 組（TSMC CoWoS/CoPoS/SoIC、HBM4 HBM4E、先進封裝市場 2026、CFMEE PLP、Samsung 玻璃基板、Micron 廣島 Hiroshima、SemiEngineering Chip Week #146）
+- 成功抓取：3 篇（存入 raw/articles/ 3 篇）
+  - 2026-07-06_trendforce_cfmee-plp2000-china-first-plp-litho-validation.md（fetch_status: success）
+  - 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo-glass-core.md（fetch_status: success）
+  - 2026-07-06_trendforce_micron-hiroshima-fab-expansion-hbm-1gamma.md（fetch_status: partial）
+- 失敗/跳過：SemiEngineering Chip Week #146 未發布（預計 2026-07-10）；SemiEngineering 7/7 論文週報實為 2025 年舊文；多筆 URL 已在 _collected_urls.txt 中
+- 觸發 ingest：3 篇
+- 新增 wiki/sources/ 頁：3 頁
+  - wiki/sources/2026-07-06_trendforce_cfmee-plp2000-china-first-plp.md（新建）
+  - wiki/sources/2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo.md（新建）
+  - wiki/sources/2026-07-06_trendforce_micron-hiroshima-fab-hbm-1gamma.md（新建）
+- 觸及 wiki 頁面：（共 7 頁）
+  - wiki/technologies/foplp.md（CFMEE PLP 2000 中國首套 PLP 直寫微影；updated→2026-07-07）
+  - wiki/technologies/glass-substrate.md（GlaSSEM JV + TSMC JPCA 2026 量化性能數據；updated→2026-07-07）
+  - wiki/entities/micron.md（廣島廠 ¥1.5T 擴建；updated→2026-07-07）
+  - wiki/entities/samsung.md（GlaSSEM JV；updated→2026-07-07）
+  - wiki/index.md（頁面總數 275→278；Sources 236→239；更新時間 2026-07-06→2026-07-07；新增 3 筆 sources）
+  - wiki/log.md（本條目）
+- 主要新知識：
+  1. **中國 PLP 微影設備突破**：CFMEE PLP 2000 通過技術資格認證，成為中國首套 510×515mm PLP 直寫微影系統（全球最大面板 600×600mm 設計），解析度 2µm。CFMEE WLP2000 已進入 TSMC CoWoS-L RDL 供應鏈；JCET/Tongfu 為客戶，半導體設備收入 +112.5% YoY（2025）。港股 IPO 2026-06-26。
+  2. **Samsung EM + Dongwoo Fine-Chem（住友化學）成立「GlaSSEM」玻璃基板 JV**：持股 66%/34%，投資 KRW 4,800 億，2H27 量產，廠址平澤——首次記錄三星電機的玻璃基板製造者角色（從材料採購升級為共製造商）。
+  3. **TSMC JPCA Show 2026 玻璃基板量化性能首次公開**：COP +16%、CTE -19%、有效模量 +31%、電源電阻 -27%、電感 -42%——wiki 首次收錄 TSMC 官方量化玻璃基板性能數據；TSMC 合作夥伴確認為 Ibiden、Innolux、SKC/Absolics、DNP、BOE，惟 TGV 製程穩定性未解，量產預估 2030 年後。
+  4. **Micron 廣島廠 ¥1.5 兆擴建動土（2026-07-04）**：1-gamma DRAM + HBM、EUV、設備 2H28；METI 補貼上限 ¥5,000 億——wiki 首次記錄 Micron 日本 1γ 節點時程與日本政府最大記憶體補貼規模。
+
 ## [2026-07-06] collect | 每日自動蒐集 — Intel ECTC 2026 深度技術、HBM4 混合接合障礙分析、Making Hybrid Bonding Better
 - 搜尋查詢數：7 組（TSMC CoWoS/SoIC、HBM4E/HBM5、Intel EMIB、混合接合最新、市場/面板、UCIe/標準、學術 ECTC/IEDM）
 - 成功抓取：3 篇（存入 raw/articles/ 3 篇）

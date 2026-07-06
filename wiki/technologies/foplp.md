@@ -3,8 +3,8 @@ title: "FOPLP — 扇出面板級封裝 / Fan-Out Panel-Level Packaging"
 category: technology
 tags: [fan-out, panel-level, TSMC, Samsung, ASE, Powertech, Innolux, CoPoS, InFO, cost-reduction]
 created: 2026-05-03
-updated: 2026-06-30
-sources: [2025-09-12_trendforce_foplp-competitive-2025, 2026-04-13_trendforce_copos-pilot, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-21_3dincites_acm-wlp-plp-process-trends, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-15_digitimes_manz-310mm-foplp-ecd-equipment, 2026-06-13_digitimes_linkotech-foplp-rollout-traction, 2026-06-20_prnewswire_manz-asia-310mm-ecd, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_digitimes_tsmc-foplp-timeline-skepticism]
+updated: 2026-07-07
+sources: [2025-09-12_trendforce_foplp-competitive-2025, 2026-04-13_trendforce_copos-pilot, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-21_3dincites_acm-wlp-plp-process-trends, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-15_digitimes_manz-310mm-foplp-ecd-equipment, 2026-06-13_digitimes_linkotech-foplp-rollout-traction, 2026-06-20_prnewswire_manz-asia-310mm-ecd, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_digitimes_tsmc-foplp-timeline-skepticism, 2026-07-06_trendforce_cfmee-plp2000-china-first-plp]
 related:
   - wiki/technologies/copos.md
   - wiki/technologies/info-wmcm.md
@@ -110,6 +110,7 @@ SemiAnalysis 2022 年的技術框架指出，fanout RDL、embedded silicon bridg
 - **IDM 自建**：STMicroelectronics（法國試驗線，2026 Q3 啟動，車用/工業功率元件）
 - **設備整合**：AMAT 收購 ASMPT NEXX（面板 ECD），形成完整面板封裝設備一站式組合
 - **中國設備新進入者（⭐2026-06-03）**：**Naura Technology Group（北方華創）**出貨首台 **600mm × 600mm PLP 去膠渣（descum）設備**——中國最大前端設備廠商進入面板封裝設備市場，補齊中國本土 PLP 設備生態缺口。*Source: Digitimes 2026-06-03*
+- **中國 PLP 微影設備突破（⭐2026-07-07）**：**CFMEE（Circuit Fabology Microelectronics Equipment）** PLP 2000——中國首套 **510×515mm PLP 直寫微影系統**——通過技術資格認證並獲客戶訂單。設計最大面板尺寸達 **600×600mm**，解析度 **2µm**（量產），支援 CoPoS、FOPLP、玻璃基板。CFMEE 為全球最大 PCB 直接成像設備供應商（18.8% 市占），其晶圓級工具 WLP2000 已進入 TSMC CoWoS-L RDL 製程供應鏈；港股主板 2026-06-26 掛牌（IPO ~US$4.1 億）。 *Source: TrendForce 2026-07-06*
 
 ---
 
