@@ -3,8 +3,8 @@ title: "三星 / Samsung"
 category: entity
 tags: [IDM, foundry, memory, advanced-packaging, X-Cube, HBM, ISSCC2026, I-CubeS, LPDDR6]
 created: 2026-04-24
-updated: 2026-07-07
-sources: [2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2025-12-30_trendforce_samsung-hbm-surge, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2025-08-05_3dincites_iftle636, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit, 2026-06-10_trendforce_samsung-gwangju-packaging-base, 2026-06-12_digitimes_samsung-packaging-gap-tsmc-intel, 2026-06-15_trendforce_skhynix-hbm4e-sample-timeline-pulled-forward, 2026-06-19_techtimes_vera-rubin-hbm4-suppliers, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-24_techtimes_sk-hynix-dethroned-samsung-ddr5-hbm4, 2026-07-03_trendforce_anthropic-samsung-advanced-packaging, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-07-02_trendforce_samsung-hbm-dummy-die-patent, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo]
+updated: 2026-07-08
+sources: [2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2025-12-30_trendforce_samsung-hbm-surge, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2025-08-05_3dincites_iftle636, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit, 2026-06-10_trendforce_samsung-gwangju-packaging-base, 2026-06-12_digitimes_samsung-packaging-gap-tsmc-intel, 2026-06-15_trendforce_skhynix-hbm4e-sample-timeline-pulled-forward, 2026-06-19_techtimes_vera-rubin-hbm4-suppliers, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-24_techtimes_sk-hynix-dethroned-samsung-ddr5-hbm4, 2026-07-03_trendforce_anthropic-samsung-advanced-packaging, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-07-02_trendforce_samsung-hbm-dummy-die-patent, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo, 2026-07-07_trendforce_samsung-q2-2026-record-krw894t, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e]
 related:
   - wiki/entities/tsmc.md
   - wiki/entities/intel.md
@@ -31,6 +31,9 @@ related:
 ---
 
 ## 近期動態 / Recent Developments
+
+- **2026-07-07（⭐最新）**：**三星 Q2 2026 創歷史最高營業利益 KRW 89.4T（+1,810% YoY）**——記憶體超循環峰值初步確認。預估合併營業利益 **KRW 89.4 兆韓元**（約 USD 65.6 億），YoY +1,810%，換算**季毛利率約 52.3%**；合併營收 KRW 171 兆。主要驅動：DRAM ASP Q2 季漲 **+50% QoQ**、NAND ASP Q2 季漲 **+60% QoQ**；HBM4 量產貢獻持續放大。三星 Q2 獲利規模超越 Nvidia（Q2 FY27 ~USD 445 億 op profit）及 Apple（同期估算），成為全球最賺錢企業之一。三星目標 Q3 2026 再提升 **+20% 獲利**。本季亦確認：Samsung HPB（Heat Path Block）在 HBM4E 已驗證完成；HBM 混合接合時程正式推遲至 16-High HBM4E 為最早導入點（與 SK hynix 立場一致）。
+  *Source: TrendForce 2026-07-07（引述 Korea JoongAng Daily、Yonhap、The Korea Economic Daily）*
 
 - **2026-07-06（⭐最新）**：**Samsung Electro-Mechanics（三星電機）與 Dongwoo Fine-Chem（東友精密化學，住友化學子公司）簽署協議，成立玻璃核心基板（Glass Core Substrate）合資公司「GlaSSEM」**——持股：三星電機 66% / Dongwoo Fine-Chem 34%；投資總額 **KRW 4,800 億**（約 USD 3.5 億）；預計 **2H27** 正式量產，廠址設於東友精密化學平澤廠（Pyeongtaek，京畿道）。此舉標誌三星電機從客戶端（材料採購）升級為**玻璃基板共同製造商**，強化對 TSMC CoWoS-G 平台供應鏈的競爭佈局。背景：TSMC 已在 JPCA Show 2026 公開玻璃基板量化數據（COP +16%、CTE -19%、模量 +31%、電源電阻 -27%、電感 -42%），確認玻璃基板技術可行性，惟 TGV 製程穩定性問題使 TSMC 量產時程預估延至 2030 年以後。
   *Source: TrendForce 2026-07-06*
@@ -114,24 +117,4 @@ related:
 - **2026-04-15（最新）**：HBM4 1c DRAM **良率仍在 <60%**（目標 H2 2026 達 80% 成熟閾值）；EUV 層數較 SK Hynix 多，加上疊層封裝額外製程，是良率落後的雙重原因。同期三星已將 HBM4 **邏輯晶片（Logic Die）售價上調 40–50%**（自 2026 年初起），4nm 邏輯製程高利用率支撐定價空間。
   *Source: TrendForce 2026-04-15（引述 Chosun Biz, Financial News）*
 
-- **2026-01-28 更新**：三星 HBM4 對 NVIDIA 的定價已達到與 SK Hynix 的**平價**（此前 HBM3E 較 SK Hynix 低約 30%）；12 層 HBM4 預計售價 **>$600**。三星採用 1c（第六代，10nm 級）DRAM + **4nm 邏輯製程**（技術世代領先）。
-  *Source: TrendForce 2026-01-28（引述 Dealsite, Hankyung）*
-
-- **2026-02-12**：Samsung HBM4 正式首批出貨；已進入 **NVIDIA Rubin GPU** 量產供應。
-  *Source: TrendForce*
-
-- **2026-02**：GTC 2026 展示 HBM4（與 SK Hynix 共同展示）。
-
-- **2026-H1（目標）**：**HBM4E** 客製化設計完成（目標：2026 年 5–6 月）；量產時程尾隨 SK Hynix。
-  *Source: TrendForce 2026-01-23*
-
-- **2026-04-10（⭐詳細資訊更新）**：**越南太原省 $40 億封裝廠計畫——彭博原始報導**：Samsung 擬在越南太原省（Thai Nguyen）投資 **US$40 億**新建晶片封裝廠，採**多期推進**，首階段承諾 **US$20 億**。越南財政部正協調各部會準備提交總理批核三星-越南 MoU。背景：三星 2008 年起在北寧省（Bac Ninh）建立智慧手機製造基地，太原省 2013 年加入，越南已是三星**全球最大智慧手機生產基地**——封裝廠是既有供應鏈的垂直延伸。
-  *Source: TrendForce 2026-04-10（引述 Bloomberg、Reuters、Global Economic News）*
-
-- **2026-04-20**：後續確認——Samsung 越南封裝廠計畫正式公告；同期，Samsung 選擇**有機/PCB 型材料**作為面板級封裝（FOPLP）基板，與 TSMC 的玻璃路線形成差異化。
-  *Source: TrendForce 2026-04-20*
-
-- **2026-01**：NVIDIA 要求三大 HBM 供應商在 H2 2026 提供 **16 層 HBM4**（現行 12 層量產）；Samsung 正加速 16 層開發以符合 NVIDIA 時程要求。
-  *Source: TrendForce 2026-01-09*
-
-- **2026**：Samsung 計畫 HBM 產能擴大 **50%**，目標月產能 **~250,000 片**（從 ~170,000 片）；擴產重心放在 HBM4。背景：2024–2025 年 HBM3E 向 NVIDIA 供應品質問題造成�
+- **2026-01-28 更新**：三星 HBM4 對 NVIDIA 的定
