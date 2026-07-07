@@ -1866,4 +1866,70 @@
   - wiki/index.md：頁面總數 257→259；來源數 218→220；新增 2 筆 sources 連結；更新時間 2026-07-01→2026-07-02
 
 ### 主要新知識
-1. **ASE 先進封裝報價首次量化（wiki 空缺填補）**：ASE 對 CoWoS 及 FoCoS 報價漲逾 20%，為 wiki 首次收錄 OSAT 報價層面的具體漲幅數字。此前 wiki 已有 ASE 資本支出與產能擴充的豐富記錄，但缺乏定價面資料。報價上漲反映 OSAT 產業稼動率滿載、原
+1. **ASE 先進封裝報價首次量化（wiki 空缺填補）**：ASE 對 CoWoS 及 FoCoS 報價漲逾 20%，為 wiki 首次收錄 OSAT 報價層面的具體漲幅數字。此前 wiki 已有 ASE 資本支出與產能擴充的豐富記錄，但缺乏定價面資料。報價上漲反映 OSAT 產業稼動率滿載、原料成本上升與長期資本投資需求疊加。
+2. **TeraFab 從規劃走向執行（人才引進首確認）**：Gary Jiang 出任 Director 為 TeraFab 首位公開確認的重量級高層，顯示該計畫已從概念期進入人才建構階段；投資規模（$55B初始/$119B全額）、Intel 14A 合作、ASML 設備角色等關鍵細節均獲來源確認，比既有 wiki「Tesla Terafab 構想」條目更為具體完整。
+
+### 備註
+- 今日 collect 候選文章飽和問題持續（7 月 2 日仍為接近 SemiEngineering 週報週期中間點）；兩篇高品質文章均出自 TrendForce，日期 2026-07-01。
+- SemiEngineering Chip Week #145（預計週五或下週初發布）為下次 collect 的優先追蹤目標。
+- 建議：TeraFab 主題持續關注，尤其 Grimes County 建設進度及下一批人才招募公告。
+
+### Git Commit 狀態
+待執行：`git add -A && git commit -m "2026-07-02"
+## [2026-07-04] collect | 先進封裝最新動態：韓廠 KRW 800T 擴產、Anthropic 自製 AI 晶片、Intel TeraFab、記憶體設備破 $50B
+- 搜尋查詢數：7 組（TSMC CoWoS、HBM4/SK hynix、hybrid bonding、panel-level packaging、Intel EMIB/TeraFab、UCIe/standards、competitors/market）
+- 成功抓取：5 篇（存入 raw/articles/ 5 篇）
+- 失敗/跳過：SemiEngineering Chip Week #145（客戶端渲染，partial 收錄）；多篇已在 _collected_urls.txt 中
+- 觸發 ingest：5 篇
+- 新增 wiki/sources/ 頁：5 頁
+- 觸及 wiki 頁面：（共 8 頁）
+  - wiki/entities/samsung.md（Anthropic 2nm 洽談、KRW 140T、P5+P6 設備排擠）
+  - wiki/entities/sk-hynix.md（P&T7 KRW 81T/100T 清州、龍仁 4 廠 2033）
+  - wiki/entities/intel.md（TeraFab 加入，封裝能力聲明；設備排擠風險）
+  - wiki/concepts/advanced-packaging-market.md（$50B 記憶體設備里程碑、KRW 800T 封裝投資、AI 公司 ASIC 新向量）
+  - wiki/sources/2026-07-03_trendforce_anthropic-samsung-advanced-packaging.md（新建）
+  - wiki/sources/2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment.md（新建）
+  - wiki/sources/2026-04-07_tomshardware_intel-joins-terafab.md（新建）
+  - wiki/sources/2026-06-30_trendforce_samsung-skhynix-800t-expansion.md（新建）
+  - wiki/sources/2026-07-04_semieng_chip-week-145.md（新建）
+  - wiki/index.md（頁面總數 264→269；Sources 225→230）
+- 主要新知識：(1) 韓廠合計 KRW 800T 擴產（81T 封裝中心）為半導體史上最大封裝基礎設施投資宣告，設備排擠效應可能衝擊台積電/Intel；(2) Anthropic 洽談三星 2nm+先進封裝，AI 公司自製 ASIC 趨勢從 Google/MS/OpenAI 蔓延至第三大 AI 公司；(3) Intel 加入 TeraFab 並明確以封裝能力為核心貢獻（2026-04-07 事件補收錄）；(4) 300mm 記憶體設備 2026 年首破 $50B，DRAM 佔 $37B 為 HBM 基礎設施擴張的設備端量化佐證。
+W（>10,000 互連/mm²）具體規格；sources 新增 1 筆；updated→2026-07-03
+  - wiki/technologies/glass-substrate.md：新增「2026-07-03 更新」節（JNTC 2.0mm TGV 全球首款 + Corning Glass Bridge TGV CPO 架構）；updated→2026-07-03
+  - wiki/technologies/hybrid-bonding.md：設備生態系表格補充 ASMPT LITHOBOLT G2 D2W 規格；新增 AMAT Opta CMP 混合接合專用 CMP 說明
+  - wiki/technologies/copackaged-optics.md：新增「2026-07-03 更新」節（Corning Glass Bridge 完整規格、GlassWorks AI、TGV 玻璃基板 CPO 架構、三層 Corning 產品線關係梳理表）；sources 新增 1 筆；updated→2026-07-03
+  - wiki/index.md：頁面總數 259→264；來源數 220→225；新增 5 筆 sources 連結；更新時間 2026-07-02→2026-07-03
+
+### 主要新知識
+1. **Micron Q3 FY2026 史上最強財報**：營收 $41.456B（+345.7% YoY）、營業利益 $33.318B（+1,436%）、16 份 SCA 合約總積壓 ~$1,000 億，為 wiki 最完整的 Micron 季度財務記錄；Q4 指引 $500 億再創高。
+2. **ASMPT 產品具體化**：FIREBIRD AOR 技術全名首次入 wiki；LITHOBOLT G2 D2W >10,000 互連/mm² 量化規格首次記錄；AMAT Opta CMP 為混合接合設備生態系新增關鍵製程工具。
+3. **Corning Glass Bridge 規格公開（wiki 首次）**：離子交換波導、≥30µm、<2dB 規格首次列入 wiki，並梳理 Corning 三條 CPO 產品線（GLASSBRIDGE™ 連接器、Glass Bridge 波導元件、TGV 玻璃基板 CPO 架構）的功能層次差異。
+4. **JNTC 2.0mm TGV 全球首款**：韓國小型專業廠 JNTC 達成業界未見厚度，擴展玻璃基板 TGV 應用至大型 AI 封裝機械支撐需求；wiki 首次記錄 JNTC 為玻璃基板技術參與者。
+
+### 備註
+- 今日搜尋以 The Elec 為主要新來源（5 篇均來自 thelec.net），彌補 TrendForce/SemiEngineering 飽和問題。
+- SK Hynix Nasdaq ADR（ticker SKHY，目標 2026-07-10）為重要近期事件，但 CNBC 域受限無法抓取，建議後續收錄韓國媒體版本。
+- AMAT DRAM & AP Master Class（2026-06-25，首爾）首次完整記錄——包含 6 款新品，為 wiki AMAT 設備生態系記錄最詳盡一次。
+
+### Git Commit 狀態
+待執行：`git add -A && git commit -m "2026-07-03"`
+
+## [2026-07-05] collect | 每日自動蒐集 — SK hynix Nasdaq ADR $29B、Samsung HBM5 Dummy Die 專利、中國封裝材料四大領域突破
+- 搜尋查詢數：7 組（TSMC CoWoS/CoPoS、HBM4/HBM4E/SK hynix、Intel EMIB/TeraFab、混合接合、面板封裝FOPLP、UCIe/標準、競爭對手/市場）
+- 成功抓取：3 篇（存入 raw/articles/ 3 篇）
+- 失敗/跳過：多篇 TrendForce/SemiEngineering 已在 _collected_urls.txt 中；TSMC AP7 7/4 開幕儀式無獨立可抓取文章（僅搜尋摘要）；Tom's Hardware premium 文章跳過
+- 新增 wiki/sources/ 頁：3 頁
+  - wiki/sources/2026-06-25_techtimes_sk-hynix-nasdaq-adr-29b.md（新建）
+  - wiki/sources/2026-07-03_trendforce_china-tglass-guangyuan.md（新建）
+  - wiki/sources/2026-07-02_trendforce_samsung-hbm-dummy-die-patent.md（新建）
+- 更新 wiki 頁面：5 頁
+  - wiki/entities/sk-hynix.md（ADR 融資結構詳細：$29B、承銷行、ADR 比例 10:1、Y1+P&T7+EUV 用途）
+  - wiki/entities/samsung.md（HBM5 dummy die 專利：三段梯形側壁+雷射分割+HPB）
+  - wiki/technologies/hbm4.md（HBM5 16 層良率 40–60% 量化；dummy die 設計新增；updated→2026-07-05）
+  - wiki/technologies/glass-substrate.md（TGV 結構玻璃 vs. T-glass 玻璃布區分；光遠新材 $1B 中國挑戰 Nittobo；updated→2026-07-05）
+  - wiki/concepts/geopolitics-advanced-packaging.md（中國四大封裝材料突破總表；勝宏 NVIDIA Rubin CCL 認證；江豐韓國廠；updated→2026-07-05）
+- wiki/index.md：頁面總數 269→272；Sources 230→233；更新時間 2026-07-04→2026-07-05；新增 3 筆 sources 連結
+- 主要新知識：
+  1. **SK hynix Nasdaq ADR $29B 融資結構首度量化（wiki 空缺填補）**：$29B 全數用於 P&T7 HBM 封裝廠（清州）+ 龍仁 Y1 fab + EUV 設備，史上最大 ADR 發行；SKHY 掛牌 2026-07-10；融資與封裝廠擴張直接掛鉤，是 SK hynix HBM 基礎設施投資的財務路徑首次完整記錄。
+  2. **Samsung HBM5 Dummy Die 可靠性工程首次入 wiki**：三段式梯形側壁+雷射分割+NBR 溝槽設計；16 層 HBM5 良率估計 40–60%（此量化數字為 wiki 首次記錄）；與 iHBM/HPB 熱路徑方案技術收斂。
+  3. **中國封裝材料四大領域系統性突破**：光遠新材（T-glass $1B 河南廠）、勝宏科技（NVIDIA Rubin CCL 認證）、江豐電子（SK Hynix/Samsung 供貨韓國廠）、紅樹林（光刻膠中國第一，港交所 IPO）——首次以全景視角整合入 geopolitics 頁面。
