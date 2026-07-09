@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-07-09
-**頁面總數 Total Pages**：283
-**原始來源數 Sources**：244
+**更新時間 Updated**：2026-07-10
+**頁面總數 Total Pages**：285
+**原始來源數 Sources**：246
 
 ---
 
@@ -63,6 +63,8 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-07-08_trendforce_tsmc-pic-capacity-coupe]] — TrendForce：**TSMC PIC 產能三段曲線 500→10K→15K→25K wsm；200Gbps MRM BER<1E-08 量產；NVIDIA/Broadcom/AMD 首批 COUPE 客戶；COUPE+SoIC+CoWoS AI 光電平台**（2026-07-10 收錄；原文 2026-07-08）⭐新增
+- [[sources/2026-05-08_trendforce_ajinomoto-abf-2032-plant]] — TrendForce：**Ajinomoto ABF >95% 全球市占；FY2026 電子材料利潤 ¥54.6B（+35%）、利潤率 >50%；第三廠岐阜 JPY12 億土地、2028 建設、2032 量產**（2026-07-10 收錄；原文 2026-05-08）⭐新增
 - [[sources/2026-07-08_trendforce_dram-price-fixing-hbm-collusion]] — TrendForce：**美國 DRAM 反壟斷集體訴訟（Samsung/SK hynix/Micron）；HBM 擴產首次成為反壟斷法律論據；4 年漲幅 ~700%；歷史判例 2022 年駁回**（2026-07-09 收錄；原文 2026-07-08）⭐新增
 - [[sources/2026-07-02_trendforce_skhynix-removes-price-cap-lta]] — TrendForce：**SK hynix 移除 LTA 價格上限（業界唯一）；合約期限延長至 3–5 年；Micron SCA 設價格上下限；第 16 份 SCA 簽約 GM（汽車供應鏈）**（2026-07-09 收錄；原文 2026-07-02）⭐新增
 - [[sources/2026-07-02_trendforce_samsung-sf2p-plus-tsmc-n2-roadmap]] — TrendForce：**Samsung SF2P+ 2027-28；SF2X AI/HPC；SF1.4 2029；TSMC N2P 2H26/N2U 2028 全 IP 相容；A16 SPR 2026 就緒**（2026-07-09 收錄；原文 2026-07-02）⭐新增

@@ -3,8 +3,8 @@ title: "先進封裝市場 / Advanced Packaging Market"
 category: concept
 tags: [market, forecast, CAGR, supply-chain, HBM, chiplet, geopolitics, equipment]
 created: 2026-04-24
-updated: 2026-07-04
-sources: [2026-04-24_initial-survey, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2026-01-23_trendforce_chip-tools-tel-asml, 2026-03-05_trendforce_intel-emib-billions, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2025-12-18_trendforce_micron-capex-hbm4, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2025-05-13_trendforce_top10-osat-2024, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-04-16_ontoinnovation_dragonfly-g5-qualified, 2026-06-23_communicationstoday_foplp-glass-substrate-market-8b-2030, 2026-06-29_trendforce_china-osat-tongfu-jcet-investment, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-26_semieng_chip-week-144, 2026-07-01_trendforce_ase-price-hike-20pct, 2026-07-04_semieng_chip-week-145, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-07-03_trendforce_anthropic-samsung-advanced-packaging]
+updated: 2026-07-10
+sources: [2026-04-24_initial-survey, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2026-01-23_trendforce_chip-tools-tel-asml, 2026-03-05_trendforce_intel-emib-billions, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2025-12-18_trendforce_micron-capex-hbm4, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2025-05-13_trendforce_top10-osat-2024, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-04-16_ontoinnovation_dragonfly-g5-qualified, 2026-06-23_communicationstoday_foplp-glass-substrate-market-8b-2030, 2026-06-29_trendforce_china-osat-tongfu-jcet-investment, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-26_semieng_chip-week-144, 2026-07-01_trendforce_ase-price-hike-20pct, 2026-07-04_semieng_chip-week-145, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-07-03_trendforce_anthropic-samsung-advanced-packaging, 2026-05-08_trendforce_ajinomoto-abf-1b-land-buy-2032-margins]
 related:
   - wiki/entities/tsmc.md
   - wiki/entities/sk-hynix.md
@@ -401,3 +401,36 @@ Applied Materials 宣布同時推出三類先進封裝新設備系統：
 Anthropic 洽談三星 SF2（2nm）代工＋先進封裝自製 AI ASIC，繼 Google TPU、Amazon Trainium、Microsoft Maia、OpenAI Jalapeño 之後，**大型 AI 公司自製晶片趨勢持續擴張**。每家 AI 公司推出客製 ASIC 均需要對應的先進封裝解決方案（2.5D 整合 HBM、高密度互連），為 CoWoS/EMIB 等技術開闢新客群。
 
 *Source: TrendForce 2026-07-03（引述 Bloomberg、Yonhap）*
+
+---
+
+## ⭐ 2026-07-10 更新：Ajinomoto ABF 材料壟斷地位確認——全球 >95% 市占、>50% 利潤率、2032 第三廠
+
+### ABF（Ajinomoto Build-up Film）供應鏈單點風險⭐新增（2026-07-10）
+
+**ABF（Ajinomoto Build-up Film）** 是先進封裝基板中層間絕緣材料（interlayer insulating film）的主導性材料，廣泛用於 CPU/GPU/AI ASIC 的 ABF 基板（CoWoS 封裝的有機基板即為 ABF 基板）。由 **味之素株式會社（Ajinomoto Co., Inc.）** 獨家主導。
+
+| 指標 | 數值 | 備註 |
+|------|------|------|
+| 全球 ABF 市場占有率 | **>95%** | 接近完全壟斷 |
+| FY2026 電子材料事業部利潤率 | **>50%** | 半導體產業罕見 |
+| FY2026 電子材料部門利潤（YoY） | ¥54.6B（+35%） | AI boom 驅動 |
+| FY2026 電子材料部門銷售額（YoY） | ¥100.7B（+31%） | 首次突破 ¥100B |
+| 第三廠選址 | 岐阜縣（Gifu Prefecture） | 土地收購：¥12 億 |
+| 第三廠建設開始 | 2028 年（預估） | 土地取得完成後 2 年 |
+| 第三廠量產開始 | 2032 年（目標） | |
+
+**為何重要——先進封裝的隱性材料瓶頸**：
+- Ajinomoto ABF 的 >95% 全球壟斷地位意味著 ABF 基板供應鏈幾乎不存在可替代的第二來源，形成**單點故障風險（single point of failure）**
+- ABF 基板是 CoWoS、EMIB 等所有 2.5D 封裝技術的必要組成，NVIDIA H100/B200/GB200 等全系列 AI 晶片均依賴 ABF 基板
+- 需求端：AI 晶片 die size 暴增（NVIDIA Rubin ~8,000mm² vs Hopper 3,190mm²）推動 ABF 用量劇增；基板面積 × 層數 = ABF 消耗量，AI 伺服器 2026-27 基板層數預估升至 24–40L
+- 第三廠（岐阜）2032 年才量產，**2026–2031 年間 ABF 產能擴充受限**——現有兩廠爬坡能否跟上 AI 需求仍是開放問題
+- >50% 利潤率確認 Ajinomoto 具備定價權；漲價傳導至 ABF 基板，再傳導至封裝成本
+
+**與玻璃纖維布（T-glass）瓶頸的關聯**：ABF 基板與 T-glass 玻璃纖維布是先進封裝材料供應鏈的「雙重隱性瓶頸」：
+- **T-glass**：Nittobo 壟斷（~90%），漲價 +20%（2025-08）、+20-30%（2026-04），產能 2027 年中才上線
+- **ABF**：Ajinomoto 壟斷（>95%），第三廠 2032 年才量產
+
+這兩個材料瓶頸共同形成先進封裝基板供應鏈的系統性集中風險。
+
+*Source: TrendForce 2026-05-08（引述 Ajinomoto FY2026 財報、公司公告）*
