@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-07-10
-**頁面總數 Total Pages**：285
-**原始來源數 Sources**：246
+**更新時間 Updated**：2026-07-11
+**頁面總數 Total Pages**：288
+**原始來源數 Sources**：249
 
 ---
 
@@ -63,6 +63,9 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-07-10_semieng_chip-week-146]] — SemiEngineering Week #146：**Micron $250B US 投資（2035）、紐約 Clay 廠提前開工；Apple-Broadcom $30B+；全球半導體銷售 5 月 $121B（+104% YoY）史上最高；iMAPS CHIPCon 先進封裝討論；Meta AI 晶片 9 月量產**（2026-07-11 收錄；原文 2026-07-10）⭐新增
+- [[sources/2026-07-10_tomshardware_micron-250b-globalwafers-dram]] — Tom's Hardware：**Micron $250B → $500M GlobalWafers 300mm 矽晶圓廠（美國唯一）；10 年供應協議；40% DRAM 美國製造目標；Ford 車用記憶體合約**（2026-07-11 收錄；原文 2026-07-10）⭐新增
+- [[sources/2026-01-30_tomshardware_intel-ai-chip-test-vehicle-emib-t]] — Tom's Hardware：**Intel AI 晶片測試載具——8X 光罩 SiP（4 邏輯+12 HBM4+EMIB-T+18A-PT）；「今日可製造」；Jaguar Shores 2027 採用此架構；18A-PT 節點首次記錄**（2026-07-11 收錄；原文 2026-01-30）⭐新增
 - [[sources/2026-07-08_trendforce_tsmc-pic-capacity-coupe]] — TrendForce：**TSMC PIC 產能三段曲線 500→10K→15K→25K wsm；200Gbps MRM BER<1E-08 量產；NVIDIA/Broadcom/AMD 首批 COUPE 客戶；COUPE+SoIC+CoWoS AI 光電平台**（2026-07-10 收錄；原文 2026-07-08）⭐新增
 - [[sources/2026-05-08_trendforce_ajinomoto-abf-2032-plant]] — TrendForce：**Ajinomoto ABF >95% 全球市占；FY2026 電子材料利潤 ¥54.6B（+35%）、利潤率 >50%；第三廠岐阜 JPY12 億土地、2028 建設、2032 量產**（2026-07-10 收錄；原文 2026-05-08）⭐新增
 - [[sources/2026-07-08_trendforce_dram-price-fixing-hbm-collusion]] — TrendForce：**美國 DRAM 反壟斷集體訴訟（Samsung/SK hynix/Micron）；HBM 擴產首次成為反壟斷法律論據；4 年漲幅 ~700%；歷史判例 2022 年駁回**（2026-07-09 收錄；原文 2026-07-08）⭐新增

@@ -1938,3 +1938,27 @@
   1. **SK hynix Nasdaq ADR $29B 融資結構首度量化（wiki 空缺填補）**：$29B 全數用於 P&T7 HBM 封裝廠（清州）+ 龍仁 Y1 fab + EUV 設備，史上最大 ADR 發行；SKHY 掛牌 2026-07-10；融資與封裝廠擴張直接掛鉤，是 SK hynix HBM 基礎設施投資的財務路徑首次完整記錄。
   2. **Samsung HBM5 Dummy Die 可靠性工程首次入 wiki**：三段式梯形側壁+雷射分割+NBR 溝槽設計；16 層 HBM5 良率估計 40–60%（此量化數字為 wiki 首次記錄）；與 iHBM/HPB 熱路徑方案技術收斂。
   3. **中國封裝材料四大領域系統性突破**：光遠新材（T-glass $1B 河南廠）、勝宏科技（NVIDIA Rubin CCL 認證）、江豐電子（SK Hynix/Samsung 供貨韓國廠）、紅樹林（光刻膠中國第一，港交所 IPO）——首次以全景視角整合入 geopolitics 頁面。
+
+## [2026-07-11] collect | 每日自動蒐集 — Micron $250B 美國投資升級、全球半導體市場 5 月創歷史新高、Intel AI 封裝測試載具技術細節
+- 搜尋查詢數：7 組（TSMC CoWoS/CoPoS、HBM4/HBM4E、Intel EMIB/Foveros、混合接合、面板封裝FOPLP、UCIe 標準、市場整體）
+- 成功抓取：3 篇（存入 raw/articles/ 3 篇）
+  - `2026-07-10_semieng_chip-week-146.md`（SemiEngineering Week #146，發布 2026-07-10）
+  - `2026-07-10_tomshardware_micron-250b-us-investment-globalwafers.md`（Tom's Hardware，發布 2026-07-10）
+  - `2026-01-30_tomshardware_intel-ai-chip-test-vehicle-8x-reticle-hbm4.md`（Tom's Hardware，發布 2026-01-30，6個月內補收錄）
+- 失敗/跳過：多篇（已收錄：258 筆中約 80%+ TrendForce/SemiEng 最新已在庫；Tom's Hardware 長 URL 超出限制；Digitimes 付費牆；UCIe/FOPLP 最新進度無新文章發布）
+- _collected_urls.txt：258 → 261 行
+- 觸發 ingest：3 篇
+- 新增 wiki/sources/ 頁：3 頁
+  - wiki/sources/2026-07-10_semieng_chip-week-146.md（新建）
+  - wiki/sources/2026-07-10_tomshardware_micron-250b-globalwafers-dram.md（新建）
+  - wiki/sources/2026-01-30_tomshardware_intel-ai-chip-test-vehicle-emib-t.md（新建）
+- 更新 wiki 頁面：5 頁
+  - wiki/entities/micron.md（新增 $250B 投資升級、GlobalWafers 協議、Clay NY 提前、Ford 合約）updated→2026-07-11
+  - wiki/entities/intel.md（新增 AI 測試載具 8X 技術細節、18A-PT 節點首記錄、Jaguar Shores 2027 確認）updated→2026-07-11
+  - wiki/technologies/emib.md（新增 EMIB-T 測試載具完整規格表、18A-PT 意義解析）updated→2026-07-11
+  - wiki/concepts/geopolitics-advanced-packaging.md（新增 Micron $250B 與 GlobalWafers 國家安全分析、全球半導體 $121B 市場數據）updated→2026-07-11
+  - wiki/index.md（頁面總數 285→288；來源數 246→249；更新時間→2026-07-11；新增 3 筆 sources 連結）
+- 主要新知識：
+  1. **Micron 美國 DRAM 製造 40% 目標具體化（wiki 最重要更新）**：$250B 承諾（較 $200B 追加 $50B）+ $500M GlobalWafers 300mm 矽晶圓廠（美國唯一）+ 10 年供應協議——形成「設計（美國）→前段製造（Idaho/New York）→矽晶圓（Texas）→HBM 封裝（Virginia）」的美國境內完整 DRAM 供應鏈路徑的第一個完整閉環；GlobalWafers 作為供應鏈脆弱點首次被量化鎖定。
+  2. **Intel 18A-PT 節點與 EMIB-T 測試載具技術細節首次入 wiki**：8X 光罩 SiP（4邏輯+12 HBM4+EMIB-T）確認「今日可製造」，並確認 Jaguar Shores 2027 以此為基礎；18A-PT（含 pass-through TSV + Backside Power + 混合接合）作為 Intel 3D 封裝基礎底層節點首次系統記錄——是理解 Foveros Direct 如何與 EMIB-T 整合的關鍵拼圖。
+  3. **全球半導體銷售 2026-05 創歷史新高 $121B（+104% YoY）**：為先進封裝市場高速成長提供最直接的市場量化佐證；YoY +104% 代表需求正以罕見的速度加速，確認 AI 超循環峰值期的市場規模。

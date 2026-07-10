@@ -3,8 +3,8 @@ title: "英特爾 / Intel"
 category: entity
 tags: [IDM, advanced-packaging, EMIB, Foveros, Intel18A, Clearwater-Forest, Foveros-Direct, glass-substrate, 14A, High-NA-EUV, silicon-capacitors, Google-TPU-v8e]
 created: 2026-04-24
-updated: 2026-07-04
-sources: [2026-04-24_initial-survey, 2026-03-18_trendforce_intel-emib-malaysia, 2026-03-03_trendforce_intel-clearwater-forest, 2026-03-05_trendforce_intel-emib-billions, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-04-20_trendforce_intel-foundry-14a-equipment, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-01_semianalysis_cpus-back-datacenter-2026, 2026-04-10_3dincites_intel-gan-chiplet, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks, 2026-06-21_convergedigest_intel-emib-t-multi-die-packaging, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap, 2026-07-01_trendforce_terafab-intel-veteran-hire, 2026-04-07_tomshardware_intel-joins-terafab, 2026-06-30_trendforce_samsung-skhynix-800t-expansion]
+updated: 2026-07-11
+sources: [2026-04-24_initial-survey, 2026-03-18_trendforce_intel-emib-malaysia, 2026-03-03_trendforce_intel-clearwater-forest, 2026-03-05_trendforce_intel-emib-billions, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-04-20_trendforce_intel-foundry-14a-equipment, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-01_semianalysis_cpus-back-datacenter-2026, 2026-04-10_3dincites_intel-gan-chiplet, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks, 2026-06-21_convergedigest_intel-emib-t-multi-die-packaging, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap, 2026-07-01_trendforce_terafab-intel-veteran-hire, 2026-04-07_tomshardware_intel-joins-terafab, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-01-30_tomshardware_intel-ai-chip-test-vehicle-emib-t]
 related:
   - wiki/entities/tsmc.md
   - wiki/entities/samsung.md
@@ -35,6 +35,9 @@ related:
 ---
 
 ## 近期動態 / Recent Developments
+
+- **2026-07-11（⭐最新）**：**Intel AI 晶片測試載具（AI Chip Test Vehicle）——8X 光罩尺寸 SiP 首次公開技術細節**（Tom's Hardware, 2026-01-30 補收錄）。構成：4 塊邏輯晶片（18A）+ 12 組 HBM4 + 2 個 I/O 晶片；以 **EMIB-T 橋接器**（含 TSV，電源/訊號可垂直穿越）互連；底層晶片使用 **18A-PT**（含 Pass-Through TSV + Backside Power + 混合接合支援）；晶片間介面：**UCIe 32 GT/s**。Intel 強調此測試載具「今日可製造」——有別於稍早公布的 12X 概念（16 邏輯 + 24 HBM5）。**Jaguar Shores AI 加速器（2027）**確認採用此 8X 架構作為首款商業產品。
+  *Source: Tom's Hardware 2026-01-30（Anton Shilov）*
 
 - **2026-07-04（⭐最新）**：**Intel 正式加入 TeraFab 計畫，明確以「封裝」為核心貢獻能力**（2026-04-07 事件補收錄）——Intel 於 2026-04-07 透過 X 平台正式宣布加入 TeraFab（成員：SpaceX、xAI、Tesla），官方聲明：「Intel 的設計、製造、**封裝**超高性能晶片的能力，將協助 TeraFab 實現每年 1 TW 算力的目標。」CEO Lip-Bu Tan 公開背書。TeraFab 被定位為邏輯+記憶體+先進封裝三位一體規模化的新聯盟，Intel EMIB/Foveros 為核心封裝技術貢獻。
   *Source: Tom's Hardware 2026-04-07（引述 X 平台）*

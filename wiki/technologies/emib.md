@@ -3,8 +3,8 @@ title: "EMIB — Embedded Multi-Die Interconnect Bridge"
 category: technology
 tags: [Intel, 2.5D, silicon-bridge, chiplet, HBM4, Foveros, glass-substrate, EMIB-T, EMIB-M, silicon-capacitors, power-delivery]
 created: 2026-05-03
-updated: 2026-07-06
-sources: [2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-03-05_trendforce_intel-emib-billions, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-03-03_trendforce_intel-clearwater-forest, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks, 2026-06-21_convergedigest_intel-emib-t-multi-die-packaging, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap, 2026-06-05_semieng_intel-ectc2026-emib-cpo-glass-blog]
+updated: 2026-07-11
+sources: [2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-03-05_trendforce_intel-emib-billions, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-03-03_trendforce_intel-clearwater-forest, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks, 2026-06-21_convergedigest_intel-emib-t-multi-die-packaging, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap, 2026-06-05_semieng_intel-ectc2026-emib-cpo-glass-blog, 2026-01-30_tomshardware_intel-ai-chip-test-vehicle-emib-t]
 related:
   - wiki/entities/intel.md
   - wiki/entities/amkor.md
@@ -101,6 +101,29 @@ EMIB 是 Intel 的局部矽橋接技術：將一小片高密度矽橋（bridge d
 - **2026-H2**：EMIB-T 進入量產 fab 部署；EMIB 預計貢獻**數十億美元**營收（Intel CFO 聲明）
 - **2027–28**：EMIB on Glass HVM 目標；Google TPU v8e 採用 EMIB 量產
 - **2028**：EMIB-T 12× reticle 目標（120×180mm，24+ HBM dies，38+ 橋接器）
+
+### ⭐ Intel AI Chip Test Vehicle（2026-07-11 新增，事件時間：2026-01-30）
+
+Intel Foundry 公開一份官方技術簡報，展示其 **「AI 晶片測試載具（AI Chip Test Vehicle）」**，為 EMIB-T 在實際封裝上的首次完整規格展示：
+
+| 項目 | 規格 |
+|------|------|
+| 封裝尺寸 | **8× 光罩面積（8X reticle size）** |
+| 邏輯晶片 | 4 塊（Intel **18A** 製程：RibbonFET + PowerVia）|
+| HBM 堆疊 | **12 組 HBM4**（透過 UCIe 接入）|
+| I/O 晶片 | 2 個 |
+| 互連技術 | **EMIB-T**（TSV 橋接器，電源/訊號可垂直穿越）|
+| 底層晶片節點 | **Intel 18A-PT**（含 pass-through TSV + backside power + 混合接合）|
+| UCIe 速率 | **32 GT/s 及以上** |
+| 可製造性 | ✅「今日可製造」（Intel 強調，有別於 12X 概念設計）|
+
+**18A-PT 技術意義**（首次記錄）：18A-PT 是 18A 的「承接版」，底層晶片在 18A-PT 上，上方堆疊 18A/18A-P 計算晶片，透過混合接合（Foveros Direct < 5µm pitch）垂直連接——是 Intel 3D 封裝路線圖中的關鍵過渡節點。
+
+**與 TSMC CoWoS 的根本差異**：EMIB-T 橋接器含 TSV，使電源與訊號可垂直穿越（vertical pass-through），而非僅在矽中介層平面水平分佈；此設計顯著提升 3D 整合密度，但製造複雜度與成本也更高（Bernstein 估算 EMIB per die 低數百美元；CoWoS-L for Rubin ~$900-1000）。
+
+**首款商業產品**：**Jaguar Shores AI 加速器（2027）**確認採用此 8X 架構（非更大的 12X 概念），為 EMIB-T 平台第一個進入量產的應用。
+
+*Source: Tom's Hardware 2026-01-30（Anton Shilov）；引述 Intel Foundry 官方 AI/HPC 簡報*
 
 ---
 
