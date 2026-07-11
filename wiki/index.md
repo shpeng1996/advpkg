@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-07-11
-**頁面總數 Total Pages**：288
-**原始來源數 Sources**：249
+**更新時間 Updated**：2026-07-12
+**頁面總數 Total Pages**：290
+**原始來源數 Sources**：251
 
 ---
 
@@ -63,6 +63,8 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-06-14_digitaltrends_tsmc-copos-glass-temporary-carrier]] — Digital Trends / Ming-Chi Kuo：**CoPoS 玻璃 = 臨時製程載具（非玻璃核心基板）；啟動門檻 >9.5× reticle；NVIDIA Feynman 首發採用；2H28 量產**（2026-07-12 收錄；原文 2026-06-14）⭐新增
+- [[sources/2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap]] — Tom's Hardware / TSMC North America Symposium：**CoWoS 路線圖 2027→9.5×（120×150mm 基板）→ 2028→14×（20 compute chiplets + 20 HBM5）→ 2029→>14×（24 HBM5E）；48×計算成長 2024-2029**（2026-07-12 收錄；原文 2026-04-27）⭐新增
 - [[sources/2026-07-10_semieng_chip-week-146]] — SemiEngineering Week #146：**Micron $250B US 投資（2035）、紐約 Clay 廠提前開工；Apple-Broadcom $30B+；全球半導體銷售 5 月 $121B（+104% YoY）史上最高；iMAPS CHIPCon 先進封裝討論；Meta AI 晶片 9 月量產**（2026-07-11 收錄；原文 2026-07-10）⭐新增
 - [[sources/2026-07-10_tomshardware_micron-250b-globalwafers-dram]] — Tom's Hardware：**Micron $250B → $500M GlobalWafers 300mm 矽晶圓廠（美國唯一）；10 年供應協議；40% DRAM 美國製造目標；Ford 車用記憶體合約**（2026-07-11 收錄；原文 2026-07-10）⭐新增
 - [[sources/2026-01-30_tomshardware_intel-ai-chip-test-vehicle-emib-t]] — Tom's Hardware：**Intel AI 晶片測試載具——8X 光罩 SiP（4 邏輯+12 HBM4+EMIB-T+18A-PT）；「今日可製造」；Jaguar Shores 2027 採用此架構；18A-PT 節點首次記錄**（2026-07-11 收錄；原文 2026-01-30）⭐新增

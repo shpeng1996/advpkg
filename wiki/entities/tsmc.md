@@ -3,8 +3,8 @@ title: "台積電 / TSMC"
 category: entity
 tags: [foundry, advanced-packaging, CoWoS, SoIC, CoPoS, COUPE, CPO, InFO, WMCM, aLSI, MRAM, 3nm-pricing]
 created: 2026-04-24
-updated: 2026-07-10
-sources: [2026-04-24_initial-survey, 2026-04-13_trendforce_copos-pilot, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2025-12-18_trendforce_apple-wmcm-a20, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-01-20_trendforce_tsmc-wmcm-apple, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-23_trendforce_tsmc-roadmap-a12-a13-no-high-na-euv, 2026-05-07_trendforce_tsmc-us-expansion-250b-arizona, 2026-05-12_focustaiwan_tsmc-capex-31b-arizona-20b, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-28_reuters_tsmc-kevin-zhang-energy-efficiency, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-09_financialcontent_tsmc-130k-cowos-wafers, 2026-06-09_digitimes_tsmc-cowos-soic-capacity-symposium, 2026-06-15_trendforce_tsmc-cowos-gap-narrowing-130k-200k-wafers, 2026-06-17_digitimes_amkor-tsmc-10year-arizona-deal, 2026-06-21_tomshardware_tsmc-fab-expansion-roadmap, 2026-06-27_tmtpost_tsmc-cowos-capacity-targets-2026-2027, 2026-07-02_trendforce_samsung-sf2p-plus-tsmc-n2-roadmap, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom]
+updated: 2026-07-12
+sources: [2026-04-24_initial-survey, 2026-04-13_trendforce_copos-pilot, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2025-12-18_trendforce_apple-wmcm-a20, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-01-20_trendforce_tsmc-wmcm-apple, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap, 2026-04-23_trendforce_tsmc-roadmap-a12-a13-no-high-na-euv, 2026-05-07_trendforce_tsmc-us-expansion-250b-arizona, 2026-05-12_focustaiwan_tsmc-capex-31b-arizona-20b, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-28_reuters_tsmc-kevin-zhang-energy-efficiency, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-09_financialcontent_tsmc-130k-cowos-wafers, 2026-06-09_digitimes_tsmc-cowos-soic-capacity-symposium, 2026-06-15_trendforce_tsmc-cowos-gap-narrowing-130k-200k-wafers, 2026-06-17_digitimes_amkor-tsmc-10year-arizona-deal, 2026-06-21_tomshardware_tsmc-fab-expansion-roadmap, 2026-06-27_tmtpost_tsmc-cowos-capacity-targets-2026-2027, 2026-07-02_trendforce_samsung-sf2p-plus-tsmc-n2-roadmap, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom]
 related:
   - wiki/technologies/cowos.md
   - wiki/technologies/soic.md
@@ -150,6 +150,8 @@ related:
   - N2P → N2U（2028）路線圖維持；N2 缺陷密度降速優於 N3
   - A14-on-A14 SoIC（2029）：1.8× die-to-die I/O 密度 vs N2-on-N2（已知數字再確認）
   *Source: SemiEngineering 2026-04-27; TrendForce 2026-04-23*
+  - **補充（Tom's Hardware 2026-04-27，同次 Symposium）**：9.5× CoWoS（2027）基板實體尺寸確認為 **120mm × 150mm**；14× CoWoS（2028）計算晶片數修正為 **20 顆 3D 堆疊 compute chiplets**（非此前部分報導的「~10 顆」）+ 20 顆 HBM5；>14× CoWoS（2029）擴大至 24 顆 HBM5E
+  *Source: Tom's Hardware 2026-04-27（Anton Shilov，TSMC North America Technology Symposium）*
 
 - **2026-04**：NVIDIA 搶佔台積電 2026 年 CoWoS 總產能 60–65%；AMD 佔 ~11%（MI400 系列）
   *Source: CNBC 2026-04-08*

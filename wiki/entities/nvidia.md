@@ -3,8 +3,8 @@ title: "NVIDIA Corporation"
 category: entity
 tags: [fabless, GPU, AI-accelerator, HBM4, CoWoS, SoIC, Rubin, Feynman, NVL576, CPO, Spectrum-X, Constellation]
 created: 2026-05-03
-updated: 2026-06-19
-sources: [2026-05-24_techtimes_nvidia-computex2026-cowos, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-03-18_trendforce_nvidia-rubin-feynman-soic, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-06_trendforce_google-tpu-cautious-adoption-nvidia, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-06-01_trendforce_nvidia-vera-rubin-tsmc-20pct-revenue, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-19_techtimes_vera-rubin-hbm4-suppliers]
+updated: 2026-07-12
+sources: [2026-05-24_techtimes_nvidia-computex2026-cowos, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-03-18_trendforce_nvidia-rubin-feynman-soic, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-06_trendforce_google-tpu-cautious-adoption-nvidia, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-06-01_trendforce_nvidia-vera-rubin-tsmc-20pct-revenue, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-19_techtimes_vera-rubin-hbm4-suppliers, 2026-06-14_digitaltrends_tsmc-copos-glass-temporary-carrier]
 related:
   - wiki/entities/tsmc.md
   - wiki/entities/sk-hynix.md
@@ -38,7 +38,7 @@ related:
 | Hopper（H100/H200） | TSMC N4 | CoWoS-L | HBM3E | 80 GB, 3.35 TB/s |
 | Blackwell（B200/GB200） | TSMC N4P | CoWoS-L | HBM3E | 192 GB |
 | **Rubin Ultra（NVL576）** | TSMC N3 | CoWoS-L（9× reticle, ~7,470mm²）+ SoIC | **HBM4E** | 1 TB, 16 HBM stacks, 100 PFLOPS FP4 |
-| **Feynman** | TSMC A14/A16 | SoIC-X（預期） | HBM5（推測） | 功耗 5–6 kW |
+| **Feynman** | TSMC A14/A16 | **SoIC-X + CoPoS（預期）**⭐ | HBM5（推測） | 功耗 5–6 kW；封裝面積預計 >9.5× reticle → 觸發 CoPoS 路線 |
 | Vera（Rubin CPU） | — | — | — | C2C 1.8 TB/s，1.5 TB 記憶體 |
 
 ---
