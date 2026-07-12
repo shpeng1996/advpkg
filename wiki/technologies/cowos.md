@@ -130,12 +130,21 @@ CoWoS 將多顆晶片（GPU、HBM 等）放置於一個中介層（Interposer）
 
 *Source: Advanced Packaging News，2026-05-26*
 
-**TSMC、Renesas** 於 ECTC 2026 會議中提及 CoWoS 相關**可靠性研究**（reliability study）成果——補充既有 wiki 對 ECTC 2026 CoWoS 可靠性議程（Semiconductor Digest 報導）的單一來源記載，新增 Renesas 作為共同參與廠商的記載。
+**TSMC、Renesas** 於 ECTC 2026 會議中提及 CoWoS 相關**可靠性研究**（reliability study）成果——補充既有 wiki 對 ECTC 2026 CoWoS 可靠性議程（Se
+## 2026-07-13 更新 / Updates
 
----
+### ⭐ CoWoS 「物理鎖定」架構效應 + ASE 外包產能確認（2026-07-12）
 
-### ⭐ CoWoS 可靠性研究（ECTC 2026，2026-05-24 新增）
+*Source: TechTimes 2026-07-12; Economy.ac 2026-07-10*
 
-*Source: Semiconductor Digest 2026-05-20（ECTC 2026 技術展示摘要）*
+**CoWoS 物理鎖定（Physical Lock-in）效應首次系統性記錄**：
 
-**Paper 6.3 — TSMC
+HBM 在 CoWoS 封裝製程中與 GPU SoC 基板一同熔融組裝，完成後物理上無法拆換：
+- 伺服器資料中心部署後，HBM 記憶體無法更換（不同於 DDR5 DIMM 模組的可插拔設計）
+- 這使 AI 晶片採購商（NVIDIA、Meta、Google）在 tape-out 階段即確定了整個部署週期的 HBM 廠商綁定
+- 此架構特性形成 SK Hynix/Micron/Samsung HBM 與 NVIDIA CUDA 生態系的**雙向護城河**——NVIDIA 依賴 CoWoS 生產 GPU，HBM 廠商依賴 CoWoS 進入 NVIDIA 供應鏈
+
+**ASE CoWoS（外包）月產能目標更新**：
+- ASE Group 目標 **2026 年底達 20,000–25,000 wsm**（wafer starts per month）CoWoS 外包產能
+- 此數字對應 TSMC 自有 CoWoS 約 120K–140K wsm 之外的「溢出產能」，ASE 以 CoWoP 面板級封裝技術為基礎承接（詳見 [[entities/ase-group]]）
+- 與 TSMC AP8 台南廠 4 萬片/月目標合計，2026 年底全球 CoWoS 生態系總產能估計接近 200,000 wsm（台積電自有約 140K + ASE 20-25K + 其他 OSAT 35-40K）

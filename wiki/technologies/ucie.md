@@ -189,3 +189,25 @@ UCIe 2.0 引入 **UCIe-3D** 最佳化：
 - UCIe 標準能否統一 memory interface（目前 HBM 仍有專屬介面）？
 - 64 GT/s 連結的功耗 vs 頻寬效益，是否足以取代短距光學互連（CPO）？
 - UCIe-S 與 UCIe-A 的市場份額如何演變？高端 AI 封裝是否會以 UCIe-A 為主？
+
+## 2026-07-13 更新 / Updates
+
+### ⭐ UCIe 32 GT/s 作為 XBM 記憶體介面——HBM 替代架構新應用場景（2026-07-08）
+
+*Source: TrendForce 2026-07-08（引述 Intel XBM 專利）*
+
+Intel XBM（Cross-Batch Memory）專利揭示 UCIe 的一個全新應用場景：**UCIe 作為記憶體端串行介面，取代 HBM 傳統的寬頻並行 TSV 接口**。
+
+| XBM 架構中的 UCIe 規格 | 數值 |
+|----------------------|------|
+| UCIe I/O 速度 | **32 GT/s**（採用現有 UCIe 規格） |
+| 介面類型 | 串行（serial）UCIe，非並行 HBM-PHY |
+| 目標封裝格式 | Memory-on-Package（MoP），與 HBM4 腳位相容 |
+| 配套技術 | 1T1C BEOL DRAM（後段製程電晶體記憶體） |
+| 商用目標 | 2030 年後 |
+
+**UCIe 應用延伸意義**：
+- 此前 wiki 記錄 UCIe 的主要應用為 **chiplet-to-chiplet 邏輯互連**（CPU↔GPU、CPU↔I/O die 等），以及 Intel AI 晶片測試載具（AI Chip Test Vehicle）中的 D2D 介面（UCIe 32 GT/s，2026-07-11 更新）。
+- XBM 專利揭示 UCIe 可延伸至**晶粒←→記憶體**的串行記憶體介面，拓展 UCIe 應用邊界——呼應 wiki「UCIe 標準能否統一 memory interface」未解問題的最新進展：Intel 正以 UCIe 32 GT/s 作為答案，至少在 XBM 架構中成立。
+- 相比 HBM PHY（數千條並行信號線），UCIe 串行方式顯著減少 I/O 腳位數，降低中介層複雜度；代價是串行頻寬密度低於 HBM，需靠 BEOL DRAM 的堆疊密度補償總容量。
+- **與 UCIe 3.0（64 GT/s）的關係**：XBM 採用 32 GT/s（UCIe 現有速率），而非最新 UCIe 3.0 的 64 GT/s，推測因 XBM 聚焦低功耗 + 與 HBM4 腳位相容，保守選擇現有速率以降低設計風險。

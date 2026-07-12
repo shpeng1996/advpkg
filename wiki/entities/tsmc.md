@@ -39,7 +39,10 @@ related:
 - **2026-07-08（⭐2026-07-10 新增）**：**TSMC PIC（Photonic Integrated Circuit）產能爬坡三段曲線正式量化——COUPE 客戶分層公開**（TrendForce）：PIC 月產能 500 wsm（2026 初）→ 10,000 wsm（2026 底）→ 15,000 wsm（2027）→ 25,000+ wsm（2028）；200Gbps Micro Ring Modulator（MRM）已達 BER <1E-08 量產規格；第一批客戶：**NVIDIA、Broadcom、AMD**（2026–2027）；第二批：**MediaTek、Marvell、Ayar Labs**（2028+）。COUPE + SoIC + CoWoS 三層堆疊構成 AI 光電整合平台（AI Optoelectronic Platform）。詳見 [[technologies/copackaged-optics]]。
   *Source: TrendForce 2026-07-08*
 
-- **2026-07-09（⭐最新）**：**TSMC N2 系列路線圖補充確認**——N2P 於 **2H 2026** 量產；N2X（2027）進一步優化；**N2U（2028）**：相較 N2P 提升約 +3–4% 性能或 -8–10% 功耗；**完全相容 N2P IP**（客戶無需重新設計，降低轉節點成本）；A16（Super Power Rail）生產就緒 2H 2026，官方定位為 2027 節點。三星 Foundry 2nm 路線圖（SF2P→SF2P+→SF2X→SF1.4）與 TSMC N2 系列路線圖對位競爭，前者 SF2P+ 鎖定 2027–2028，後者 N2U 鎖定 2028，差異在於設計相容性（TSMC 全相容、Samsung 跨代不保證）。
+- **2026-07-10（⭐最新）**：**台積電+ASE 共同成立「3D IC Advanced Manufacturing Alliance」，37 家會員企業；旭化成 Sunfort 薄膜在台投資 NT$4 億**——台積電與 ASE Group 聯合主導的 **3D IC Advanced Manufacturing Alliance** 已正式成立，現有 **37 家會員企業**，涵蓋測試設備（Chroma ATE、Scientech）、晶圓清洗（Grand Process Technology）及各類封裝材料/協作廠商，標誌台積電以聯盟模式系統性整合台灣先進封裝生態系。同期揭露：**摩根士丹利（Morgan Stanley）預測 CoPoS 面板級封裝將於 2028 年進入量產**（較部分業界預期提前，詳見 [[technologies/copos]]）。材料側新動態：日本 **旭化成（Asahi Kasei）**宣布首次在日本以外設廠，於台灣投資 **NT$4 億（約 $1,370 萬美元）**建立 **Sunfort 感光薄膜**生產線，Sunfort 為 FOPLP/CoPoS 製程的關鍵有機薄膜材料，此舉確認先進封裝材料供應鏈加速在台在地化。Yole 最新市場預測：2023 年 $37.8B → 2029 年 $69.5B，CAGR **10.7%**。
+  *Source: Economy.ac 2026-07-10*
+
+- **2026-07-09（次新）**：**TSMC N2 系列路線圖補充確認**——N2P 於 **2H 2026** 量產；N2X（2027）進一步優化；**N2U（2028）**：相較 N2P 提升約 +3–4% 性能或 -8–10% 功耗；**完全相容 N2P IP**（客戶無需重新設計，降低轉節點成本）；A16（Super Power Rail）生產就緒 2H 2026，官方定位為 2027 節點。三星 Foundry 2nm 路線圖（SF2P→SF2P+→SF2X→SF1.4）與 TSMC N2 系列路線圖對位競爭，前者 SF2P+ 鎖定 2027–2028，後者 N2U 鎖定 2028，差異在於設計相容性（TSMC 全相容、Samsung 跨代不保證）。
   *Source: TrendForce 2026-07-02（引述 Economic Daily News Taiwan、Tom's Hardware）*
 
 - **2026-06-22（⭐最新）**：**Wccftech 引述 Commercial Times Taiwan + Ming-Chi Kuo（TSMC JPCA Show 2026 簡報）確認 CoPoS 材料利用率 <70%→>90%、量產時程 2H28、Arizona 角色 2029–2030**。詳見 [[technologies/copos]] 2026-06-22 更新區段。

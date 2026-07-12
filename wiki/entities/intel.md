@@ -36,7 +36,10 @@ related:
 
 ## 近期動態 / Recent Developments
 
-- **2026-07-11（⭐最新）**：**Intel AI 晶片測試載具（AI Chip Test Vehicle）——8X 光罩尺寸 SiP 首次公開技術細節**（Tom's Hardware, 2026-01-30 補收錄）。構成：4 塊邏輯晶片（18A）+ 12 組 HBM4 + 2 個 I/O 晶片；以 **EMIB-T 橋接器**（含 TSV，電源/訊號可垂直穿越）互連；底層晶片使用 **18A-PT**（含 Pass-Through TSV + Backside Power + 混合接合支援）；晶片間介面：**UCIe 32 GT/s**。Intel 強調此測試載具「今日可製造」——有別於稍早公布的 12X 概念（16 邏輯 + 24 HBM5）。**Jaguar Shores AI 加速器（2027）**確認採用此 8X 架構作為首款商業產品。
+- **2026-07-13（⭐最新）**：**Intel XBM（Cross-Batch Memory）專利揭露：UCIe 32 GT/s 串行連結 + BEOL DRAM 取代 HBM 矽中介層，商用目標 2030 年後**——Intel 公開 XBM 架構專利，以 **UCIe 串行連結（32 GT/s）** 替代 HBM 傳統寬頻並行接口，核心記憶體技術為 **1T1C BEOL DRAM**（背端製程電晶體，非前段矽基），封裝格式採 **Memory-on-Package（MoP）**，腳位與 HBM4 相容但不需矽中介層，大幅降低封裝成本與複雜度。規格：每堆疊 0.5–5 GB；8-High 堆疊 96 個資料區塊，16-High 堆疊 192 個資料區塊；通道時脈 2 GHz。XBM 屬同一替代記憶體族群（另有 ZAM/HB3DM 2026-05-22），但側重封裝層中介層替代；ZAM 側重記憶體堆疊架構。最大挑戰：NVIDIA 及全球 AI 生態深度最佳化於 HBM 寬頻並行架構，平台轉換成本高。商用目標 2030 年後，屬長期佈局。
+  *Source: TrendForce 2026-07-08*
+
+- **2026-07-11（次新）**：**Intel AI 晶片測試載具（AI Chip Test Vehicle）——8X 光罩尺寸 SiP 首次公開技術細節**（Tom's Hardware, 2026-01-30 補收錄）。構成：4 塊邏輯晶片（18A）+ 12 組 HBM4 + 2 個 I/O 晶片；以 **EMIB-T 橋接器**（含 TSV，電源/訊號可垂直穿越）互連；底層晶片使用 **18A-PT**（含 Pass-Through TSV + Backside Power + 混合接合支援）；晶片間介面：**UCIe 32 GT/s**。Intel 強調此測試載具「今日可製造」——有別於稍早公布的 12X 概念（16 邏輯 + 24 HBM5）。**Jaguar Shores AI 加速器（2027）**確認採用此 8X 架構作為首款商業產品。
   *Source: Tom's Hardware 2026-01-30（Anton Shilov）*
 
 - **2026-07-04（⭐最新）**：**Intel 正式加入 TeraFab 計畫，明確以「封裝」為核心貢獻能力**（2026-04-07 事件補收錄）——Intel 於 2026-04-07 透過 X 平台正式宣布加入 TeraFab（成員：SpaceX、xAI、Tesla），官方聲明：「Intel 的設計、製造、**封裝**超高性能晶片的能力，將協助 TeraFab 實現每年 1 TW 算力的目標。」CEO Lip-Bu Tan 公開背書。TeraFab 被定位為邏輯+記憶體+先進封裝三位一體規模化的新聯盟，Intel EMIB/Foveros 為核心封裝技術貢獻。

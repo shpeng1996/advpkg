@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-07-12
-**頁面總數 Total Pages**：290
-**原始來源數 Sources**：251
+**更新時間 Updated**：2026-07-13
+**頁面總數 Total Pages**：294
+**原始來源數 Sources**：255
 
 ---
 
@@ -63,6 +63,10 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-07-12_techtimes_sk-hynix-nasdaq-debut]] — TechTimes：**SKHY Nasdaq 首日 +13%（$168.01）、市值 $1.27T；實際籌資 $265 億（史上最大境外美國上市）；CoWoS 物理鎖定機制深度分析；HBM 71.5% 利潤率；印第安那州 West Lafayette AP 廠 $40 億 2028 投產；Q2 財報 2026-07-29**（2026-07-13 收錄；原文 2026-07-12）⭐新增
+- [[sources/2026-07-10_trendforce_postech-chip-stacking]] — TrendForce：**POSTECH 10 層晶片堆疊 4× 12-Hi HBM 密度；< 180°C 低溫 < 20 kPa 低壓；單步驟 transfer+bond；14 µm 超薄晶片；Kim Seok 教授；Results in Engineering**（2026-07-13 收錄；原文 2026-07-10）⭐新增
+- [[sources/2026-07-10_economy-ac_tsmc-ecosystem-taiwan]] — Economy.ac：**Yole AP 市場 $37.8B（2023）→$69.5B（2029）CAGR 10.7%；3D IC Alliance 37 家（Chroma ATE、Scientech、Grand Process）；CoPoS 2028 Morgan Stanley 預測；旭化成 Sunfort 台灣 NT$4 億；Kinsus 2–3 年採購週期；ASE CoWoS 20K–25K wsm EOY 2026**（2026-07-13 收錄；原文 2026-07-10）⭐新增
+- [[sources/2026-07-08_trendforce_intel-xbm-patent]] — TrendForce：**Intel XBM 專利：UCIe 32 GT/s 串行連結 + BEOL 1T1C DRAM 取代 HBM 矽中介層；MoP 格式；HBM4 腳位相容；0.5–5 GB/stack；商用 2030 年後**（2026-07-13 收錄；原文 2026-07-08）⭐新增
 - [[sources/2026-06-14_digitaltrends_tsmc-copos-glass-temporary-carrier]] — Digital Trends / Ming-Chi Kuo：**CoPoS 玻璃 = 臨時製程載具（非玻璃核心基板）；啟動門檻 >9.5× reticle；NVIDIA Feynman 首發採用；2H28 量產**（2026-07-12 收錄；原文 2026-06-14）⭐新增
 - [[sources/2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap]] — Tom's Hardware / TSMC North America Symposium：**CoWoS 路線圖 2027→9.5×（120×150mm 基板）→ 2028→14×（20 compute chiplets + 20 HBM5）→ 2029→>14×（24 HBM5E）；48×計算成長 2024-2029**（2026-07-12 收錄；原文 2026-04-27）⭐新增
 - [[sources/2026-07-10_semieng_chip-week-146]] — SemiEngineering Week #146：**Micron $250B US 投資（2035）、紐約 Clay 廠提前開工；Apple-Broadcom $30B+；全球半導體銷售 5 月 $121B（+104% YoY）史上最高；iMAPS CHIPCon 先進封裝討論；Meta AI 晶片 9 月量產**（2026-07-11 收錄；原文 2026-07-10）⭐新增

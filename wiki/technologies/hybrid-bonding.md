@@ -472,3 +472,30 @@ Intel 在 ECTC 2026 上公開了多項混合接合材料與製程研究合作，
 - 韓國本土設備商（Hanmi、Hanwha、LG）能否在 HBM6 時代取代 Besi/ASMPT 等歐洲廠商？
 - **⭐ 若 Besi 被 Lam Research 或 Applied Materials 收購（2026-03 傳聞），混合接合設備市場競爭格局將如何重塑？**（Lam 進入封裝領域 vs. AMAT 強化 Kinex 生態系）
 - **JEDEC HBM4E 高度鬆綁至 900µm 後，混合接合採用時間表是否將延後至 HBM5（2029+）？**（目前 SK Hynix 最樂
+## 2026-07-13 更新 / Updates
+
+### ⭐ POSTECH 低溫單步驟轉移接合：< 180°C、< 20 kPa、10+ 層穩定堆疊（2026-07-10）
+
+*Source: TrendForce 2026-07-10（引述 POSTECH / Results in Engineering）*
+
+POSTECH Kim Seok 教授團隊研發出有別於傳統 Cu-Cu Hybrid Bonding 的「**單步驟轉移接合（Single-step Transfer-and-Bond）**」製程，特點在於 transfer 與 bond 步驟同步進行，取代傳統兩段式工序：
+
+**關鍵差異（vs 現有量產 Cu-Cu Hybrid Bonding）**：
+
+| 比較項目 | 現有 Cu-Cu HB（SoIC/X-Cube） | POSTECH 轉移接合 |
+|---------|---------------------------|----------------|
+| 退火溫度 | 200–400°C | **< 180°C** |
+| 接合壓力 | 中等至高壓 | **< 20 kPa**（超低壓） |
+| 步驟數 | Transfer + Bond 分離 | **單步驟同步** |
+| 已驗證堆疊層數 | 最高 12 層（SK Hynix 驗證） | **10+ 層** |
+| 論文期刊 | 各大設備商與廠商自有技術 | Results in Engineering |
+
+**技術背景**：此製程使用 14 µm 超薄晶片作為主要測試物件，呼應 TSV 後薄化製程趨勢（SK Hynix 30 µm → POSTECH 14 µm 更薄）。低溫低壓的優勢在於：
+1. 超薄晶片碎裂風險大幅降低（14 µm 在傳統高壓接合下極脆）
+2. 無需高溫回流，規避熱膨脹係數（CTE）匹配問題——對異材料堆疊（記憶體 + 邏輯）特別有利
+3. 此溫度窗口（< 180°C）符合 JEDEC HBM4 規格對熱預算的嚴格限制
+
+**與 wiki 現有技術的關係**：
+- 不同於 Besi Datacon / AMAT Ensemble 使用的 TC（Thermal Compression）HB 路線（通常 200°C+）
+- 類似方向的低溫研究有：NT Cu、nanocrystalline Cu（ECTC 2025 論文），但 POSTECH 以單步驟整合為主要創新點
+- 量產可行性待評估：Micro-LED 多層堆疊成功驗證顯示此方法不限單一材料體系
