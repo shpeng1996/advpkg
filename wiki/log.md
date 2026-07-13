@@ -1989,3 +1989,21 @@
   3. SK Hynix SKHY Nasdaq 首日 +13%（$168.01）、籌資 $265 億（史上最大境外美國上市）；CoWoS 物理鎖定效應確認 SK Hynix 結構性護城河；West Lafayette 印第安那州 AP 廠 $40 億 2028 投產
   4. TSMC+ASE 3D IC Alliance 37 家成員確認；Yole AP 市場更新至 $37.8B（2023）→$69.5B（2029）CAGR 10.7%；旭化成首次在台灣設廠（Sunfort 薄膜）；Morgan Stanley CoPoS 2028 量產預測
 an（2028–2029 量產世代）為 CoPoS 最可能的首批量產客戶——其 3D 堆疊架構使封裝面積超越 9.5× reticle 門檻，自然觸發 CoPoS 路線。與 TSMC 2H28 量產時程高度吻合。
+
+## [2026-07-14] collect | 每日自動蒐集 — TSMC Q2 收入創歷史新高、CoWoS 2027 年目標上修至 200 萬套；SK hynix 主席：客戶要求 5-6 倍產能；NVIDIA Rosa CPU 評估 TSMC A16 背面供電（2028）
+
+- 搜尋查詢數：7 組（TSMC CoWoS/SoIC/CoPoS、HBM4/HBM4E SK Hynix/Samsung/Micron、advanced packaging July 2026、TSMC Q2 earnings、Intel EMIB Foveros July 2026、glass substrate July 2026、SemiEngineering Chip Week 147）
+- 成功抓取：3 篇（存入 raw/articles/ 3 篇）
+- 失敗/跳過：多篇（已收錄 >30 篇、付費牆/JS-only 頁面 3 篇、低相關 5 篇）
+- 新增 wiki 頁面：3 頁（wiki/sources/ 3 頁）
+- 更新 wiki 頁面：6 頁
+  - wiki/entities/tsmc.md（2026-07 月收入記錄、CoWoS 2M 套 2027 目標、CoPoS 2029–30 量產初始產能、Rosa CPU A16 影響）
+  - wiki/technologies/cowos.md（年度產能目標上修至 200 萬套 2027）
+  - wiki/technologies/copos.md（量產時程精確化：2029–2030、初始 40K–50K wsm）
+  - wiki/entities/nvidia.md（Rosa CPU 路線圖、Rigel 架構、A16 SPR 影響、Vera 客戶清單）
+  - wiki/entities/sk-hynix.md（5–6x 需求、2027 最嚴峻短缺、Qualcomm HBC 首現、$10B US AI 業務、Lutnick 壓力）
+  - wiki/index.md（頁面數 294→297；來源數 255→258；3 筆新來源；更新時間→2026-07-14）
+- 主要新知識：
+  1. **TSMC CoWoS 2027 年產能目標上修 48%**：分析師預期從 135 萬套→200 萬套，創歷史最大上修幅度；Q2 收入 NT$1.27T 季度新高，月收入 NT$442.7B 月度新高，顯示 AI 超循環進入全面加速期
+  2. **SK hynix 客戶要求 5–6 倍產能 + CEO 預告 2027 年史上最嚴峻供應短缺**：強化 wiki 核心論述（HBM 供需缺口持續至 2030 後）；Qualcomm HBC（LPDDR on logic die，6× bandwidth/watt vs HBM）首次入 wiki，是繼 Intel XBM 之後第二個「後 HBM 替代架構」
+  3. **NVIDIA Rosa CPU 評估 TSMC A16 SPR（2028）**：補完 Vera（2026）→Rosa（2028）→Spark（2030）CPU 路線圖；A16 背面供電擴散至 CPU 類別，CMP 需求再增 15–20%，載板晶圓 ASP >4x 再生晶圓——首次量化 A16 SPR 對封裝材料供應鏈的具體衝擊

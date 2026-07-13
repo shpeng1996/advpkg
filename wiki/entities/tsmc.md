@@ -3,7 +3,7 @@ title: "台積電 / TSMC"
 category: entity
 tags: [foundry, advanced-packaging, CoWoS, SoIC, CoPoS, COUPE, CPO, InFO, WMCM, aLSI, MRAM, 3nm-pricing]
 created: 2026-04-24
-updated: 2026-07-12
+updated: 2026-07-14
 sources: [2026-04-24_initial-survey, 2026-04-13_trendforce_copos-pilot, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2025-12-18_trendforce_apple-wmcm-a20, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-01-20_trendforce_tsmc-wmcm-apple, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap, 2026-04-23_trendforce_tsmc-roadmap-a12-a13-no-high-na-euv, 2026-05-07_trendforce_tsmc-us-expansion-250b-arizona, 2026-05-12_focustaiwan_tsmc-capex-31b-arizona-20b, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-28_reuters_tsmc-kevin-zhang-energy-efficiency, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-09_financialcontent_tsmc-130k-cowos-wafers, 2026-06-09_digitimes_tsmc-cowos-soic-capacity-symposium, 2026-06-15_trendforce_tsmc-cowos-gap-narrowing-130k-200k-wafers, 2026-06-17_digitimes_amkor-tsmc-10year-arizona-deal, 2026-06-21_tomshardware_tsmc-fab-expansion-roadmap, 2026-06-27_tmtpost_tsmc-cowos-capacity-targets-2026-2027, 2026-07-02_trendforce_samsung-sf2p-plus-tsmc-n2-roadmap, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom]
 related:
   - wiki/technologies/cowos.md
@@ -32,6 +32,12 @@ related:
 ---
 
 ## 近期動態 / Recent Developments
+
+- **2026-07-13（⭐最新）**：**TSMC 2026-06 月收入創歷史新高 NT$442.7B；Q2 季度歷史新高；CoWoS 2027 年目標大幅上修至 200 萬套；CoPoS 量產 2029–2030 年、初始 40K–50K wsm**（TrendForce 引述 Commercial Times、Economic Daily News）。主要指標：Q2 毛利率逼近 70%（原指引 65.5–67.5%）；H1 累計收入 NT$2,404,484M（+35.6% YoY）；全年成長率 Morgan Stanley 上修至 ~40% YoY；2026 capex 預測 $58–60B（高於 $56B 上限）；3nm 月產能 2026 年底 170K wsm、2028 年 200K+ wsm；A14/2nm/A16/3nm 合計 350K–400K wsm。**CoWoS 2027 年 200 萬套是 wiki 最重要容量更新**（前估 135 萬）。
+  *Source: TrendForce 2026-07-13*
+
+- **2026-07-09（⭐新增）**：**NVIDIA Rosa CPU（2028 年）評估採用 TSMC A16（Super Power Rail 背面供電）**——若確認，A16 背面供電的應用從 GPU/ASIC 延伸至 CPU，CMP 需求再增 15–20%，載板晶圓 ASP >4x 再生晶圓；Rosa + Feynman 資料中心平台 2028 年，Rosa Spark 消費級 2030 年。詳見 [[entities/nvidia]]。
+  *Source: TrendForce 2026-07-09*
 
 - **2026-01-29（⭐新增，TMTPost）**：**台積電上修 2026–2027 CoWoS 產能目標；嘉義 AP7 SoIC 產線轉產 CoWoS**——NVIDIA 持續為最大客戶，Google 等 ASIC 客戶亦加緊下單；AP7 原規劃 WMCM + SoIC + CoPoS 三線並行，現決定將 SoIC 產線轉換為 CoWoS 產能以應對需求超預期；台南 AP8 新增 P2 廠。此為首次明確記載台積電以犧牲既定 SoIC 產能規劃換取 CoWoS 短期供給的產線調度機制，與既有「SoIC 產能 CAGR 90%」擴產敘事存在資源排擠張力，建議後續追蹤。詳見 [[technologies/cowos]]。
   *Source: TMTPost 2026-01-29*

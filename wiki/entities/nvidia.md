@@ -3,7 +3,7 @@ title: "NVIDIA Corporation"
 category: entity
 tags: [fabless, GPU, AI-accelerator, HBM4, CoWoS, SoIC, Rubin, Feynman, NVL576, CPO, Spectrum-X, Constellation]
 created: 2026-05-03
-updated: 2026-07-12
+updated: 2026-07-14
 sources: [2026-05-24_techtimes_nvidia-computex2026-cowos, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-03-18_trendforce_nvidia-rubin-feynman-soic, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-06_trendforce_google-tpu-cautious-adoption-nvidia, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-06-01_trendforce_nvidia-vera-rubin-tsmc-20pct-revenue, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-19_techtimes_vera-rubin-hbm4-suppliers, 2026-06-14_digitaltrends_tsmc-copos-glass-temporary-carrier]
 related:
   - wiki/entities/tsmc.md
@@ -40,10 +40,14 @@ related:
 | **Rubin Ultra（NVL576）** | TSMC N3 | CoWoS-L（9× reticle, ~7,470mm²）+ SoIC | **HBM4E** | 1 TB, 16 HBM stacks, 100 PFLOPS FP4 |
 | **Feynman** | TSMC A14/A16 | **SoIC-X + CoPoS（預期）**⭐ | HBM5（推測） | 功耗 5–6 kW；封裝面積預計 >9.5× reticle → 觸發 CoPoS 路線 |
 | Vera（Rubin CPU） | — | — | — | C2C 1.8 TB/s，1.5 TB 記憶體 |
+| **Rosa（次世代 CPU）** | TSMC A16（評估中）| CoWoS（配套 Feynman 平台）| — | **128+ Rigel 核心（Arm v9.2），IPC >+50% vs Vera；SPR 背面供電；資料中心平台 2028、消費 Spark 2030** ⭐新增 |
 
 ---
 
 ## 近期動態 / Recent Developments
+
+- **2026-07-09（⭐最新）**：**NVIDIA 下一代 Rosa CPU 評估採用 TSMC A16（Super Power Rail 背面供電）；資料中心 Feynman 平台 2028 年**（TrendForce 引述 Commercial Times）。Rosa 架構：①**TSMC A16 SPR**（super power rail 背面供電）評估中——1.10× 密度 vs N2P；CMP 步驟較 2nm 再增 15–20%；**載板晶圓 ASP >4x 再生晶圓**；②**128+ Rigel 核心**（Arm v9.2 ISA）；IPC **>+50% vs Vera（Olympus 核心）**；更大 L2 cache、更高效記憶體管理；③Rosa + Feynman 資料中心平台：**2028 年**；Rosa Feynman Spark 消費級：2030 年；④Vera CPU 已確認首批生產客戶：**Perplexity、OpenAI、Anthropic、Oracle**（建立穩固的 CPU 生態系基礎）。封裝影響：Rosa 若採 A16，則背面供電將從 GPU/ASIC 延伸至 CPU，進一步推高 CoWoS 需求。
+  *Source: TrendForce 2026-07-09*
 
 - **2026-06-19（補充來源）**：**Tech Times（2026-06-02）對 GTC Taipei 6/1 主題演講的早期報導，補充市場反應與客戶交付細節**——Vera CPU（首款 Nvidia 自製資料中心 CPU）已於 2026 年 5 月中交付測試單位給 **Anthropic、OpenAI、SpaceX、Oracle**；首批雲端服務商確認為 **AWS、Google Cloud、Microsoft Azure、Oracle**。供應鏈規模描述為 Grace Blackwell 世代的「兩倍」。Huang 演講後南韓股市反應劇烈：**三星電子股價 +10.1%（創紀錄）、LG 電子 +約 30%**，市場反應領先 Huang 原訂 ~6/5 首爾行程（會晤 LG/SK/現代/Naver 集團董事長，聚焦機器人合作——LG CLOi 人形機器人 + Nvidia Isaac 平台整合），6/1 台北亦舉辦「Korea Partner Night」晚宴，三星、SK hynix、LG、現代、Naver 高層出席。此報導與既有 wiki 記錄之 2026-06-05/06-08 供應商確認、Vera CPU 規格內容一致，無矛盾，僅補充客戶交付名單與股市反應細節。
   *Source: Tech Times 2026-06-02（Allen Lee）*

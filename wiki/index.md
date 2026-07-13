@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-07-13
-**頁面總數 Total Pages**：294
-**原始來源數 Sources**：255
+**更新時間 Updated**：2026-07-14
+**頁面總數 Total Pages**：297
+**原始來源數 Sources**：258
 
 ---
 
@@ -63,6 +63,9 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-07-13_trendforce_tsmc-june-revenue-q2-cowos-copos]] — TrendForce：**TSMC 2026-06 月收入 NT$442.7B（歷史新高，+67.9% YoY）；Q2 季度新高；分析師預期全年 +40% YoY；CoWoS 2027 年目標上修至 200 萬套（前估 135 萬）；CoPoS 量產 2029–2030、初始 40K–50K wsm**（2026-07-14 收錄；原文 2026-07-13）⭐新增
+- [[sources/2026-07-13_trendforce_skhynix-hbm-5-6x-demand-qualcomm-hbc]] — TrendForce：**SK hynix 主席：客戶要求供應量 5–6 倍；CEO：2027 年史上最嚴峻記憶體短缺；Qualcomm HBC 首現（LPDDR on logic die，6x bandwidth/watt vs HBM）；Lutnick 施壓在美建廠；SK Group $100 億美國 AI 業務**（2026-07-14 收錄；原文 2026-07-13）⭐新增
+- [[sources/2026-07-09_trendforce_nvidia-rosa-cpu-tsmc-a16-spr-2028]] — TrendForce：**NVIDIA Rosa CPU 評估 TSMC A16 SPR 背面供電（2028 資料中心平台）；128+ Rigel 核心；IPC >+50% vs Vera；CMP 需求 +15–20%；載板晶圓 ASP >4x；Vera 客戶：Perplexity+OpenAI+Anthropic+Oracle**（2026-07-14 收錄；原文 2026-07-09）⭐新增
 - [[sources/2026-07-12_techtimes_sk-hynix-nasdaq-debut]] — TechTimes：**SKHY Nasdaq 首日 +13%（$168.01）、市值 $1.27T；實際籌資 $265 億（史上最大境外美國上市）；CoWoS 物理鎖定機制深度分析；HBM 71.5% 利潤率；印第安那州 West Lafayette AP 廠 $40 億 2028 投產；Q2 財報 2026-07-29**（2026-07-13 收錄；原文 2026-07-12）⭐新增
 - [[sources/2026-07-10_trendforce_postech-chip-stacking]] — TrendForce：**POSTECH 10 層晶片堆疊 4× 12-Hi HBM 密度；< 180°C 低溫 < 20 kPa 低壓；單步驟 transfer+bond；14 µm 超薄晶片；Kim Seok 教授；Results in Engineering**（2026-07-13 收錄；原文 2026-07-10）⭐新增
 - [[sources/2026-07-10_economy-ac_tsmc-ecosystem-taiwan]] — Economy.ac：**Yole AP 市場 $37.8B（2023）→$69.5B（2029）CAGR 10.7%；3D IC Alliance 37 家（Chroma ATE、Scientech、Grand Process）；CoPoS 2028 Morgan Stanley 預測；旭化成 Sunfort 台灣 NT$4 億；Kinsus 2–3 年採購週期；ASE CoWoS 20K–25K wsm EOY 2026**（2026-07-13 收錄；原文 2026-07-10）⭐新增
