@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-07-14
-**頁面總數 Total Pages**：297
-**原始來源數 Sources**：258
+**更新時間 Updated**：2026-07-15
+**頁面總數 Total Pages**：302
+**原始來源數 Sources**：263
 
 ---
 
@@ -63,6 +63,11 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-07-14_trendforce_huawei-baidu-open-npo-msa]] — TrendForce：**Huawei + Baidu 聯合 20+ 夥伴發布 OPEN NPO MSA——中國首個 NPO 光互連標準；Q3 2026 首版規範；2027 H1 商業部署；對抗美系 OCI-MSA（Meta/Microsoft）**（2026-07-15 收錄；原文 2026-07-14）⭐新增
+- [[sources/2026-07-14_trendforce_intel-ireland-5b-intel3-europe]] — TrendForce：**Intel 愛爾蘭 Fab 34 追加 €50 億（~$57 億）；Intel 3 成歐洲最先進節點；Diamond Rapids Xeon 7 I/O Die 落腳 Fab 34；佔 Intel 2026 全年 capex 30%；Apollo 股份 $142 億已於 2026-04 回購**（2026-07-15 收錄；原文 2026-07-14）⭐新增
+- [[sources/2026-07-14_trendforce_samsung-hbm-hiring-hybridbonding]] — TrendForce：**Samsung DS 事業部 6 個 HBM 核心職位（多層堆疊混合銅接合、TSV 模組、Cu 墊平坦化）；三線並進 HBM4 量產 + HBM4E 送樣 + HBM5 研發；HPB + 混合接合高堆疊雙軌路徑**（2026-07-15 收錄；原文 2026-07-14）⭐新增
+- [[sources/2026-07-14_trendforce_skhynix-yongin-y1-feb2027]] — TrendForce：**SK Hynix Yongin Y1 Phase 1 提前至 2027-02（原 2027-05）；設備訂單已啟動；初期 ~20K wsm；1c DRAM；支援 HBM4E；Y1 P2+P3 潔淨室 2H26 動工**（2026-07-15 收錄；原文 2026-07-14）⭐新增
+- [[sources/2026-07-14_trendforce_umc-silith-silicon-photonics-hvm]] — TrendForce：**UMC + SILITH 完成矽光子 200G/lane HVM——新加坡 12 吋廠首批交貨；Innolight/Coherent 客戶；UMC 2027 封裝服務；2028 TFLN 開放平台；CPO/NPO 市場 >$390 億 by 2030（TrendForce 新預測）**（2026-07-15 收錄；原文 2026-07-14）⭐新增
 - [[sources/2026-07-13_trendforce_tsmc-june-revenue-q2-cowos-copos]] — TrendForce：**TSMC 2026-06 月收入 NT$442.7B（歷史新高，+67.9% YoY）；Q2 季度新高；分析師預期全年 +40% YoY；CoWoS 2027 年目標上修至 200 萬套（前估 135 萬）；CoPoS 量產 2029–2030、初始 40K–50K wsm**（2026-07-14 收錄；原文 2026-07-13）⭐新增
 - [[sources/2026-07-13_trendforce_skhynix-hbm-5-6x-demand-qualcomm-hbc]] — TrendForce：**SK hynix 主席：客戶要求供應量 5–6 倍；CEO：2027 年史上最嚴峻記憶體短缺；Qualcomm HBC 首現（LPDDR on logic die，6x bandwidth/watt vs HBM）；Lutnick 施壓在美建廠；SK Group $100 億美國 AI 業務**（2026-07-14 收錄；原文 2026-07-13）⭐新增
 - [[sources/2026-07-09_trendforce_nvidia-rosa-cpu-tsmc-a16-spr-2028]] — TrendForce：**NVIDIA Rosa CPU 評估 TSMC A16 SPR 背面供電（2028 資料中心平台）；128+ Rigel 核心；IPC >+50% vs Vera；CMP 需求 +15–20%；載板晶圓 ASP >4x；Vera 客戶：Perplexity+OpenAI+Anthropic+Oracle**（2026-07-14 收錄；原文 2026-07-09）⭐新增

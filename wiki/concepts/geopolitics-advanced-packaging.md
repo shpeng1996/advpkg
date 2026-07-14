@@ -3,8 +3,8 @@ title: "先進封裝地緣政治 / Geopolitics of Advanced Packaging"
 category: concept
 tags: [geopolitics, US-China, CHIPS-Act, supply-chain, chiplet, NAPMP, export-control, glass-substrate, standards-war, BOE, Corning, Absolics]
 created: 2026-04-26
-updated: 2026-07-11
-sources: [2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-23_trendforce_china-osat-sj-semiconductor-ipo, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-08-05_3dincites_iftle636, 2026-03-23_trendforce_musk-terafab-tsmc-packaging, 2026-04-22_trendforce_sk-hynix-indiana-us-plant, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-16_nokia_pennsylvania-atp-expansion, 2026-06-30_amkor-ir_arizona-7billion-groundbreaking, 2026-06-30_digitimes_us-packaging-capacity-10pct-2032, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-10_tomshardware_micron-250b-us-investment-globalwafers, 2026-07-10_semieng_chip-week-146]
+updated: 2026-07-15
+sources: [2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-23_trendforce_china-osat-sj-semiconductor-ipo, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-08-05_3dincites_iftle636, 2026-03-23_trendforce_musk-terafab-tsmc-packaging, 2026-04-22_trendforce_sk-hynix-indiana-us-plant, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-16_nokia_pennsylvania-atp-expansion, 2026-06-30_amkor-ir_arizona-7billion-groundbreaking, 2026-06-30_digitimes_us-packaging-capacity-10pct-2032, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-10_tomshardware_micron-250b-us-investment-globalwafers, 2026-07-10_semieng_chip-week-146, 2026-07-14_trendforce_huawei-baidu-npo-msa]
 related: [wiki/concepts/advanced-packaging-market.md, wiki/entities/amkor.md, wiki/entities/ase-group.md, wiki/technologies/ucie.md]
 ---
 
@@ -321,3 +321,35 @@ Micron 的第 16 份 SCA 簽約方為**通用汽車（GM）**，供應 LPDRAM/NO
 SIA/WSTS 數據：2026 年 5 月全球半導體銷售達 **$121B**，月增 9.2%，年增 **104.3%**（創有記錄以來最高年成長率）。此為 AI 驅動需求峰值的直接量化佐證，也為先進封裝市場的高速成長提供了大環境背景。
 
 *Source: SIA/WSTS via SemiEngineering Week #146 2026-07-10*
+
+## 2026-07-15 更新 / Updates
+
+### ⭐ 中國 OPEN NPO MSA 正式成立：華為 + 百度主導，對抗美系 OCI-MSA，光互連標準分軌加劇
+
+**2026-07-09（北京）**：**華為（Huawei）** 與 **百度（Baidu）** 聯同 20+ 家產業夥伴正式發布 **OPEN NPO MSA（Multi-Source Agreement）**，這是中國首個 **NPO（Near-Packaged Optics，近封裝光學）** 光互連多方協議，以直接對應美國由 Meta、Microsoft 主導的 **OCI-MSA（Optical Connectivity Interconnect MSA）**。
+
+**技術定義**：NPO 定位於可插拔光模組（Pluggable，板外）與 CPO（Co-Packaged Optics，封裝內）之間——光引擎靠近 ASIC（板上或近封裝），但保持模組化可維修性，兼顧能效與可替換性。
+
+**OPEN NPO 參與方（公開確認）**：
+- **AI/超大規模廠商**：Huawei、Baidu、中國移動（China Mobile）、京東雲（JD Cloud）
+- **網路設備廠**：中興通訊（ZTE）、新華三（H3C）
+- **連接器/材料廠**：立訊精密（Luxshare）、Molex、山一電機（Yamaichi）、廣瀬電機（Hirose）
+- **學研機構**：西湖大學（Westlake University）
+
+**關鍵時程**：
+- **Q3 2026**：發布第一版技術規範
+- **2027 H1**：目標大規模商業部署
+
+**地緣政治意涵——光互連標準美中分軌**：
+
+| 標準 | 主導方 | 定位 | 時程 |
+|------|-------|------|------|
+| **OCI-MSA** | Meta、Microsoft + 西方生態 | NPO 框架（美系）| 規範已發布 |
+| **OPEN NPO MSA** | Huawei、Baidu + 中國生態 | NPO 框架（中系）| Q3 2026 首版規範 |
+| **TSMC-COUPE™** | TSMC（台灣） | CPO（封裝內，最深整合）| 2026 量產 |
+
+**跨陣營廠商**：Molex（美企，日本業務主導）、Luxshare（立訊，臺灣/大陸資本）、Yamaichi（日）、Hirose（日）同時參與 OPEN NPO，顯示連接器/光學元件層仍有跨陣營延展性——但 AI 計算晶片與 HBM 的美中壁壘已遠比光連接器嚴格。
+
+**評估**：光互連標準分軌是 AI 算力供應鏈分離的下游表現，比封裝技術或製程節點管制更晚出現，但一旦生態形成將難以逆轉。中國 AI 資料中心若採用 OPEN NPO 標準建設，未來更換為西方 CPO/NPO 設備的互換成本將大幅提高。
+
+*Source: TrendForce 2026-07-14（引述 Huawei、Baidu 官方公告；Beijing NPO MSA 發布儀式）*
