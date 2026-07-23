@@ -3,7 +3,7 @@ title: "先進封裝地緣政治 / Geopolitics of Advanced Packaging"
 category: concept
 tags: [geopolitics, US-China, CHIPS-Act, supply-chain, chiplet, NAPMP, export-control, glass-substrate, standards-war, BOE, Corning, Absolics]
 created: 2026-04-26
-updated: 2026-07-15
+updated: 2026-07-23
 sources: [2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-23_trendforce_china-osat-sj-semiconductor-ipo, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-08-05_3dincites_iftle636, 2026-03-23_trendforce_musk-terafab-tsmc-packaging, 2026-04-22_trendforce_sk-hynix-indiana-us-plant, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-16_nokia_pennsylvania-atp-expansion, 2026-06-30_amkor-ir_arizona-7billion-groundbreaking, 2026-06-30_digitimes_us-packaging-capacity-10pct-2032, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-10_tomshardware_micron-250b-us-investment-globalwafers, 2026-07-10_semieng_chip-week-146, 2026-07-14_trendforce_huawei-baidu-npo-msa]
 related: [wiki/concepts/advanced-packaging-market.md, wiki/entities/amkor.md, wiki/entities/ase-group.md, wiki/technologies/ucie.md]
 ---
@@ -353,3 +353,26 @@ SIA/WSTS 數據：2026 年 5 月全球半導體銷售達 **$121B**，月增 9.2%
 **評估**：光互連標準分軌是 AI 算力供應鏈分離的下游表現，比封裝技術或製程節點管制更晚出現，但一旦生態形成將難以逆轉。中國 AI 資料中心若採用 OPEN NPO 標準建設，未來更換為西方 CPO/NPO 設備的互換成本將大幅提高。
 
 *Source: TrendForce 2026-07-14（引述 Huawei、Baidu 官方公告；Beijing NPO MSA 發布儀式）*
+
+## 2026-07-23 更新 / Updates
+
+### ⭐ 印度 Semicon 2.0：$13.2B 半導體投資計畫含先進封裝（2026-07-17）
+
+SemiEngineering Week #147 報導，**印度 Semicon 2.0** 計畫總額達 **$13.2B**，範疇明確涵蓋先進封裝（advanced packaging）：
+- 印度政府已認定先進封裝為半導體產業切入點（相較於 leading-edge 晶圓廠，AP 資本門檻較低）
+- 延續 2023 年 India Semiconductor Mission（ISM）的政策方向，但規模大幅升級
+- 潛在布局廠商包含 OSAT 廠商（Amkor 已於 2025 年在印度設立據點）
+
+**地緣意涵**：繼美國（CHIPS Act）、歐洲（EU Chips Act）、日本（TSMC Kumamoto）、馬來西亞（Penang 擴建）後，印度成為第五個主要「先進封裝分散化目的地」。
+
+### ⭐ CXMT 首度確認加入 JEDEC + A 股 IPO 200 倍超額認購（2026-07-17）
+
+**CXMT（長鑫存儲，Changxin Memory Technologies）** 兩項重要進展同步確認：
+
+1. **JEDEC SPHBM4 工作組成員**：CXMT 深度參與 JEDEC JESD330-4 標準制定（前一則：同一標準含 SK Hynix、Samsung、Micron）。這是 CXMT 首次確認參與重要 DRAM 國際標準制定，代表中國 DRAM 廠商開始進入主流標準生態。
+2. **A 股 IPO 超額認購 200 倍**：CXMT 上交所 IPO 募集資金規模創半導體史上 A 股紀錄；200 倍超額認購反映國內資本市場對中國 DRAM 廠商的高度樂觀預期。
+   - **美國立法者反應**：部分美國國會議員提出應限制 CXMT 的出口或設備供應，但截至 2026-07-17 尚無正式行動
+
+**評估**：CXMT 的雙重進展（JEDEC 參與 + IPO）標誌中國 DRAM 生態進入「標準整合 + 資本充裕」的新階段，對美韓 HBM 供應商的長期替代威脅上升。
+
+*Source: SemiEngineering Week #147 2026-07-17; Tom's Hardware 2026-07-08（SPHBM4 CXMT 參與）*

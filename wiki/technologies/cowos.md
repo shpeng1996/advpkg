@@ -3,7 +3,7 @@ title: "CoWoS — Chip-on-Wafer-on-Substrate"
 category: technology
 tags: [2.5D, interposer, TSMC, AI, HPC, HBM, COUPE, CPO, packaging-constraints, NVIDIA]
 created: 2026-04-24
-updated: 2026-07-14
+updated: 2026-07-23
 sources: [2026-05-24_techtimes_nvidia-computex2026-cowos, 2026-04-24_initial-survey, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-15_trendforce_tsmc-vanguard-stake-sale, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-09_financialcontent_tsmc-130k-cowos-wafers, 2026-06-09_digitimes_tsmc-cowos-soic-capacity-symposium, 2026-06-15_trendforce_tsmc-cowos-gap-narrowing-130k-200k-wafers, 2026-06-21_tomshardware_tsmc-fab-expansion-roadmap, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_tmtpost_tsmc-cowos-capacity-targets-2026-2027]
 related:
   - wiki/entities/tsmc.md
@@ -131,6 +131,26 @@ CoWoS 將多顆晶片（GPU、HBM 等）放置於一個中介層（Interposer）
 *Source: Advanced Packaging News，2026-05-26*
 
 **TSMC、Renesas** 於 ECTC 2026 會議中提及 CoWoS 相關**可靠性研究**（reliability study）成果——補充既有 wiki 對 ECTC 2026 CoWoS 可靠性議程（Se
+## 2026-07-23 更新 / Updates
+
+### ⭐ TSMC Arizona 先進封裝廠確認：$265B 計畫含 2 座 AP 廠（2026-07-16）
+
+TSMC 於 Q2 2026 法說會後宣布 Arizona 投資再擴增 $100B → 累計 **$265B 總投資**，計劃包含：
+- **10 座邏輯晶圓廠**（fabs）
+- **2 座先進封裝廠**（advanced packaging facilities）
+
+對 CoWoS 的直接意涵：
+- CoWoS 美國本地化量產能力將大幅提升，服務地緣政治驅動的「美國境內 AI 晶片供應鏈」需求
+- 預計 TSMC 2026 CapEx **$60-64B**（較原 $52-56B 上調 15%），先進封裝為主要投入方向之一
+- 分析師（Citi）預測 CapEx 繼續攀升：2027 年 $77B、2028 年 $86B（GF Securities：$90B）
+
+**CoWoS 需求隱憂——SPHBM4 競爭**：
+- 2026-07-08 JEDEC 發布 **SPHBM4（JESD330-4）** 標準：使用 512-bit 窄介面 + 有機基板，**不需要 CoWoS/EMIB 矽中介層**
+- SPHBM4 定位為中階 AI 加速器，主攻旗艦以外市場，對 CoWoS 的衝擊以「中階替代」為主；旗艦 AI GPU 仍需標準 HBM4 + CoWoS
+- 詳見：[[technologies/hbm4]] 的 SPHBM4 章節
+
+*Source: TrendForce 2026-07-16; Tom's Hardware 2026-07-08*
+
 ## 2026-07-13 更新 / Updates
 
 ### ⭐ CoWoS 「物理鎖定」架構效應 + ASE 外包產能確認（2026-07-12）

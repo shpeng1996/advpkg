@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-07-15
-**頁面總數 Total Pages**：302
-**原始來源數 Sources**：263
+**更新時間 Updated**：2026-07-24
+**頁面總數 Total Pages**：313
+**原始來源數 Sources**：274
 
 ---
 
@@ -63,6 +63,17 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-07-22_trendforce_tsmc-2027-price-hike-hpc]] — TrendForce：**TSMC 2027 漲價 5–10% 基本 + HPC 溢價 10–15%；HPC 佔 Q2 晶圓營收 66%；NVIDIA 佔 TSMC 總營收 22%；Apple A20 Pro 晶片成本 +$10–20**（2026-07-24 收錄；原文 2026-07-22）⭐新增
+- [[sources/2026-07-22_trendforce_skhynix-q2-record-margin]] — TrendForce：**SK hynix Q2 2026 預估營業利益率 74.6–77%（歷史新高）；KRW 80.9T 營收 +264% YoY；KRW 60.4T 利潤 +556% YoY；正式財報 2026-07-29；HBM4 LTA 鎖定主要 AI 客戶**（2026-07-24 收錄；原文 2026-07-22）⭐新增
+- [[sources/2026-07-21_trendforce_samsung-cxl-32-skhynix-imte]] — TrendForce：**Samsung CMM-D 3.2（CXL 3.2）2026 年底量產（容量 +50%、頻寬 ×2）；SK hynix IMTE 推論效率 +35.7%；CXL 定位為 HBM（熱）↔ DDR5（冷）之間的暖記憶體新層次**（2026-07-24 收錄；原文 2026-07-21）⭐新增
+- [[sources/2026-07-20_trendforce_tsmc-265b-arizona-intel-novalake]] — TrendForce：**TSMC $265B 美國佈局確認（12 廠 + AP 設施）；建廠成本 4–5 倍於台灣；Intel Nova Lake 80–90% 運算晶片回歸 18A 製程（良率 85%）；AMD Venice 維持 TSMC 2nm**（2026-07-24 收錄；原文 2026-07-20）⭐新增
+- [[sources/2026-07-16_semieng_fine-pitch-hb-high-volume]] — SemiEngineering：**細間距混合接合量產化——6 µm 商業間距共識（Amkor Kelly）；D2W 對準是最核心挑戰（CEA-Leti Najem）；跨組織製程窗口是 HVM 新前沿（Lam Edelberg）；誤差預算 9 大要素**（2026-07-24 收錄；原文 2026-07-16）⭐新增
+- [[sources/2026-07-16_semieng_alt-materials-hybrid-bonding]] — SemiEngineering：**混合接合替代材料——NT-Cu（孿晶界阻礙接合，Osaka U 矛盾發現）；SiCN（imec 確認量產強度更高）；Ag/Ru 鈍化（抗氧化無需真空）；BCB 聚合物（降應力但 CMP 困難；Ar 電漿硬化解法）**（2026-07-24 收錄；原文 2026-07-16）⭐新增
+- [[sources/2026-07-08_tomshardware_jedec-sphbm4-standard]] — Tom's Hardware：**JEDEC SPHBM4（JESD330-4）正式發布——512-bit 窄介面 + 有機基板取代矽中介層；不需 CoWoS；SK Hynix/Samsung/Micron/CXMT 參與；中階 AI 加速器定位；第三個後矽中介層記憶體架構**（2026-07-23 收錄；原文 2026-07-08）⭐新增
+- [[sources/2026-07-17_semieng_chip-week-147]] — SemiEngineering：**Week #147——Intel 18A HVM Panther Lake；TSMC $265B Arizona（2AP廠）；Tower Semi $4B 日本（SiPh+AP）；JEDEC SPHBM4；Nanya $16B DRAM；CXMT IPO 200x；India Semicon 2.0 $13.2B；SEMI $166B/$230B 設備；Cadence AuraStack AI Super Agent**（2026-07-23 收錄；原文 2026-07-17）⭐新增
+- [[sources/2026-07-17_trendforce_tsmc-capex-60-64b-post-earnings]] — TrendForce：**TSMC 2026 CapEx 上修至 $60-64B（原 $52-56B）；Q3 Revenue $44.6-45.8B；Citi $77B(2027)/$86B(2028)；GF Sec $90B(2028)；MS：2027 wafer price hike 5-10%；Goldman：low-mid single digit；N2 CAGR >70%；EUV +10%（TSMC 抵制中）**（2026-07-23 收錄；原文 2026-07-16-17）⭐新增
+- [[sources/2026-07-16_trendforce_tsmc-arizona-265b-ap-fabs]] — TrendForce：**TSMC Arizona 再加碼 $100B → 總計 $265B；10 座邏輯廠 + 2 座先進封裝廠；AI 晶片需求強勁至 2030；完整美國本地化 AP 能力**（2026-07-23 收錄；原文 2026-07-16）⭐新增
+- [[sources/2026-07-16_trendforce_tsmc-q2-2026-earnings-record]] — TrendForce：**TSMC Q2 2026 淨利 NT$706.56B（+77.4% YoY，歷史新高）；毛利率 67.7%；2nm=3%、3nm=30%、5nm=33%；EPS NT$27.25；ADR +5%**（2026-07-23 收錄；原文 2026-07-16）⭐新增
 - [[sources/2026-07-14_trendforce_huawei-baidu-open-npo-msa]] — TrendForce：**Huawei + Baidu 聯合 20+ 夥伴發布 OPEN NPO MSA——中國首個 NPO 光互連標準；Q3 2026 首版規範；2027 H1 商業部署；對抗美系 OCI-MSA（Meta/Microsoft）**（2026-07-15 收錄；原文 2026-07-14）⭐新增
 - [[sources/2026-07-14_trendforce_intel-ireland-5b-intel3-europe]] — TrendForce：**Intel 愛爾蘭 Fab 34 追加 €50 億（~$57 億）；Intel 3 成歐洲最先進節點；Diamond Rapids Xeon 7 I/O Die 落腳 Fab 34；佔 Intel 2026 全年 capex 30%；Apollo 股份 $142 億已於 2026-04 回購**（2026-07-15 收錄；原文 2026-07-14）⭐新增
 - [[sources/2026-07-14_trendforce_samsung-hbm-hiring-hybridbonding]] — TrendForce：**Samsung DS 事業部 6 個 HBM 核心職位（多層堆疊混合銅接合、TSV 模組、Cu 墊平坦化）；三線並進 HBM4 量產 + HBM4E 送樣 + HBM5 研發；HPB + 混合接合高堆疊雙軌路徑**（2026-07-15 收錄；原文 2026-07-14）⭐新增

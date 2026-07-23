@@ -3,7 +3,7 @@ title: "先進封裝市場 / Advanced Packaging Market"
 category: concept
 tags: [market, forecast, CAGR, supply-chain, HBM, chiplet, geopolitics, equipment]
 created: 2026-04-24
-updated: 2026-07-10
+updated: 2026-07-23
 sources: [2026-04-24_initial-survey, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2026-01-23_trendforce_chip-tools-tel-asml, 2026-03-05_trendforce_intel-emib-billions, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2025-12-18_trendforce_micron-capex-hbm4, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2025-05-13_trendforce_top10-osat-2024, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-04-16_ontoinnovation_dragonfly-g5-qualified, 2026-06-23_communicationstoday_foplp-glass-substrate-market-8b-2030, 2026-06-29_trendforce_china-osat-tongfu-jcet-investment, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-26_semieng_chip-week-144, 2026-07-01_trendforce_ase-price-hike-20pct, 2026-07-04_semieng_chip-week-145, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-07-03_trendforce_anthropic-samsung-advanced-packaging, 2026-05-08_trendforce_ajinomoto-abf-1b-land-buy-2032-margins]
 related:
   - wiki/entities/tsmc.md
@@ -456,3 +456,37 @@ Anthropic 洽談三星 SF2（2nm）代工＋先進封裝自製 AI ASIC，繼 Goo
 **旭化成 Sunfort 感光薄膜台灣廠**（NT$4 億 = ~$1,370 萬美元）：日本旭化成首次在日本以外設廠，選址台灣，生產 Sunfort 感光薄膜，用於 FOPLP/CoPoS 大尺寸有機基板製程。此舉是日系材料商「在台在地化」的新里程碑，反映台灣先進封裝供應鏈的完整性持續增強。
 
 **Morgan Stanley CoPoS 2028 量產預測**：主流投行確認 CoPoS 面板級封裝 2028 年量產，為台積電先進封裝市場 $69.5B（2029）目標貢獻重要增量。
+
+## ⭐ 2026-07-23 更新：SEMI 設備市場歷史高點 + Cadence AuraStack EDA AI + Tower Semi 日本 AP
+
+### SEMI 半導體設備市場最新預測（2026-07-17）
+
+**SemiEngineering Week #147** 揭示 SEMI 最新設備市場預測：
+
+| 年份 | 設備市場規模 |
+|------|-------------|
+| **2026** | **$166B**（歷史新高，超越前次高點）|
+| **2027** | （過渡）|
+| **2028** | **$230B**（前瞻預測）|
+
+設備市場的高點直接反映整個半導體製造生態的投資動能，對先進封裝設備廠（EV Group、Besi、TEL 等）構成正向環境。
+
+### Cadence AuraStack：AI Super Agent 導入先進封裝 EDA（2026-07-17）
+
+**Cadence** 發布 **AuraStack AI Super Agent**，定位為：
+- 先進封裝（advanced packaging）與 PCB 設計的 AI 驅動自動化工具
+- 利用大型語言模型輔助 chiplet 架構設計中的封裝布局、信號完整性分析
+- 這是主流 EDA 廠商首次以「AI Super Agent」命名一款先進封裝工具，標誌 AI 進入 AP 設計工具鏈
+
+**市場意涵**：EDA 工具端的 AI 化意味著先進封裝設計迴圈（design cycle）的壓縮——這可能加速新封裝方案的市場導入速度，間接支撐 AP 市場規模成長。
+
+### Tower Semiconductor 日本 $4B 擴廠：SiPh + SiGe + 先進封裝三業務並進（2026-07-17）
+
+**Tower Semiconductor** 宣布 **$4B** 日本新廠投資，三大技術重心：
+1. **SiPh（矽光子）**：瞄準 CPO（共同封裝光學）高速光互連市場
+2. **SiGe（矽鍺）**：RF/毫米波應用，服務汽車雷達、5G/6G 基站
+3. **先進封裝（Advanced Packaging）**：異質整合能力，承接多技術 chiplet 整合需求
+
+Tower Semi 為 Intel 收購失敗（2023 年被美國監管否決）後仍維持獨立地位的特殊廠商；$4B 日本廠大幅提升其作為「非 TSMC/Samsung/Intel 的先進封裝替代選項」的戰略地位。
+
+*Source: SemiEngineering Week #147 2026-07-17*
