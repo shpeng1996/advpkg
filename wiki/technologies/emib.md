@@ -3,7 +3,7 @@ title: "EMIB — Embedded Multi-Die Interconnect Bridge"
 category: technology
 tags: [Intel, 2.5D, silicon-bridge, chiplet, HBM4, Foveros, glass-substrate, EMIB-T, EMIB-M, silicon-capacitors, power-delivery]
 created: 2026-05-03
-updated: 2026-07-11
+updated: 2026-07-25
 sources: [2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-03-05_trendforce_intel-emib-billions, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-03-03_trendforce_intel-clearwater-forest, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks, 2026-06-21_convergedigest_intel-emib-t-multi-die-packaging, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap, 2026-06-05_semieng_intel-ectc2026-emib-cpo-glass-blog, 2026-01-30_tomshardware_intel-ai-chip-test-vehicle-emib-t]
 related:
   - wiki/entities/intel.md
@@ -93,6 +93,9 @@ EMIB 是 Intel 的局部矽橋接技術：將一小片高密度矽橋（bridge d
 - **2026-05-26**：**Intel Rio Rancho 矽光子代工開放 + EMIB 現有客戶首次具體揭露**：AWS、Cisco 為確認現有客戶；Apple、Google、Microsoft、NVIDIA、Tesla 洽談中。EMIB 生產主基地：Penang + Rio Rancho。⭐新增
 - **2026-05-29**：**MediaTek CEO 股東會確認：Google v8e 推論 TPU 封裝指定 Intel EMIB，由 MediaTek 執行**（Commercial Times 報導）；訓練 TPU 封裝保留 TSMC CoWoS。此為 wiki 記錄的 EMIB 客戶落地最具體確認——從「評估」升格為「正式分配」。⭐新增
   *Source: TrendForce 2026-05-29（引述 Commercial Times）*
+
+- **2026-07-15（⭐最新）**：**PSMC 12 吋矽電容取得 Intel EMIB 官方認證，進入穩定量產**——台灣 PSMC 的 12 吋高密度 IPD（Integrated Passive Device）矽電容通過 Intel EMIB 認證；12 吋產能目標 2027 年超過 **10,000 片晶圓/月**（8 吋數千片）。PSMC 3D AI Foundry 業務目前佔營收 ~5%，目標三年升至 20%。此前確認的矽電容供應鏈（Samsung EM、Murata）之外，PSMC 成為台灣本地 EMIB 矽電容供應商，豐富在地化供應選項。
+  *Source: TrendForce 2026-07-15（引述中央社、工商時報）*
 
 - **2026-05-28**：**Intel 計畫 2027 年在 EMIB 基板整合矽電容，首批用於 Google TPU v8e（2H27）**：矽電容 ESL/ESR 比 MLCC 低逾 100 倍；供應鏈：Samsung Electro-Mechanics（₩1.557 兆合約，Jan 2027–Dec 2028）、Murata Manufacturing（法國 200mm 線已投產；¥100 億擴至 3× 現有產能至 2028）⭐新增
 

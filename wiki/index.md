@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-07-24
-**頁面總數 Total Pages**：313
-**原始來源數 Sources**：274
+**更新時間 Updated**：2026-07-25
+**頁面總數 Total Pages**：316
+**原始來源數 Sources**：277
 
 ---
 
@@ -63,6 +63,9 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-07-23_amkor-ir_nvidia-amkor-1-5b-partnership]] — Amkor 官方新聞稿：**NVIDIA-Amkor $1.5B 多年期策略夥伴關係——NVIDIA 預付款支持 Arizona 先進封裝擴充；高密度互連+異質整合；Amkor +17%**（2026-07-25 收錄；原文 2026-07-23）⭐新增
+- [[sources/2026-07-15_trendforce_psmc-intel-emib-silicon-capacitor]] — TrendForce：**PSMC 12 吋矽電容取得 Intel EMIB 認證，進入穩定量產；2027 目標 10K wsm；3D AI Foundry 5%→20%；PSMC Q2 毛利率 28%（+27% QoQ）；DRAM 漲 45%**（2026-07-25 收錄；原文 2026-07-15）⭐新增
+- [[sources/2026-07-15_trendforce_v-die-mosaic-vertical-memory]] — TrendForce：**V-Die（UNIST）4× HBM4 互連密度 + MOSAIC（東京大學）感應耦合 3× 熱導率——VLSI 2026 後 HBM 學術架構；均為研究階段，非商業替代方案**（2026-07-25 收錄；原文 2026-07-15）⭐新增
 - [[sources/2026-07-22_trendforce_tsmc-2027-price-hike-hpc]] — TrendForce：**TSMC 2027 漲價 5–10% 基本 + HPC 溢價 10–15%；HPC 佔 Q2 晶圓營收 66%；NVIDIA 佔 TSMC 總營收 22%；Apple A20 Pro 晶片成本 +$10–20**（2026-07-24 收錄；原文 2026-07-22）⭐新增
 - [[sources/2026-07-22_trendforce_skhynix-q2-record-margin]] — TrendForce：**SK hynix Q2 2026 預估營業利益率 74.6–77%（歷史新高）；KRW 80.9T 營收 +264% YoY；KRW 60.4T 利潤 +556% YoY；正式財報 2026-07-29；HBM4 LTA 鎖定主要 AI 客戶**（2026-07-24 收錄；原文 2026-07-22）⭐新增
 - [[sources/2026-07-21_trendforce_samsung-cxl-32-skhynix-imte]] — TrendForce：**Samsung CMM-D 3.2（CXL 3.2）2026 年底量產（容量 +50%、頻寬 ×2）；SK hynix IMTE 推論效率 +35.7%；CXL 定位為 HBM（熱）↔ DDR5（冷）之間的暖記憶體新層次**（2026-07-24 收錄；原文 2026-07-21）⭐新增

@@ -3,7 +3,7 @@ title: "NVIDIA Corporation"
 category: entity
 tags: [fabless, GPU, AI-accelerator, HBM4, CoWoS, SoIC, Rubin, Feynman, NVL576, CPO, Spectrum-X, Constellation]
 created: 2026-05-03
-updated: 2026-07-14
+updated: 2026-07-25
 sources: [2026-05-24_techtimes_nvidia-computex2026-cowos, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-03-18_trendforce_nvidia-rubin-feynman-soic, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-06_trendforce_google-tpu-cautious-adoption-nvidia, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-06-01_trendforce_nvidia-vera-rubin-tsmc-20pct-revenue, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-19_techtimes_vera-rubin-hbm4-suppliers, 2026-06-14_digitaltrends_tsmc-copos-glass-temporary-carrier]
 related:
   - wiki/entities/tsmc.md
@@ -45,6 +45,9 @@ related:
 ---
 
 ## 近期動態 / Recent Developments
+
+- **2026-07-23（⭐最新）**：**NVIDIA 與 Amkor 簽署 $1.5 億美元多年期先進封裝策略夥伴關係**——NVIDIA 提供**預付款**支持 Amkor 亞利桑那廠先進封裝產能擴充；聚焦高密度互連與次世代異質整合技術；涵蓋 NVIDIA 資料中心處理器、網路晶片組、加速運算系統封裝。Amkor 盤後 +17%。此協議與 TSMC-Amkor 十年期協議（2026-06）共同確立 Arizona Peoria 廠為美國 AI 晶片先進封裝核心樞紐。
+  *Source: Amkor Technology / Business Wire 2026-07-23（一手新聞稿）*
 
 - **2026-07-09（⭐最新）**：**NVIDIA 下一代 Rosa CPU 評估採用 TSMC A16（Super Power Rail 背面供電）；資料中心 Feynman 平台 2028 年**（TrendForce 引述 Commercial Times）。Rosa 架構：①**TSMC A16 SPR**（super power rail 背面供電）評估中——1.10× 密度 vs N2P；CMP 步驟較 2nm 再增 15–20%；**載板晶圓 ASP >4x 再生晶圓**；②**128+ Rigel 核心**（Arm v9.2 ISA）；IPC **>+50% vs Vera（Olympus 核心）**；更大 L2 cache、更高效記憶體管理；③Rosa + Feynman 資料中心平台：**2028 年**；Rosa Feynman Spark 消費級：2030 年；④Vera CPU 已確認首批生產客戶：**Perplexity、OpenAI、Anthropic、Oracle**（建立穩固的 CPU 生態系基礎）。封裝影響：Rosa 若採 A16，則背面供電將從 GPU/ASIC 延伸至 CPU，進一步推高 CoWoS 需求。
   *Source: TrendForce 2026-07-09*

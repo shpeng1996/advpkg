@@ -3,7 +3,7 @@ title: "先進封裝市場 / Advanced Packaging Market"
 category: concept
 tags: [market, forecast, CAGR, supply-chain, HBM, chiplet, geopolitics, equipment]
 created: 2026-04-24
-updated: 2026-07-23
+updated: 2026-07-25
 sources: [2026-04-24_initial-survey, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2026-01-23_trendforce_chip-tools-tel-asml, 2026-03-05_trendforce_intel-emib-billions, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2025-12-18_trendforce_micron-capex-hbm4, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2025-05-13_trendforce_top10-osat-2024, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-04-16_ontoinnovation_dragonfly-g5-qualified, 2026-06-23_communicationstoday_foplp-glass-substrate-market-8b-2030, 2026-06-29_trendforce_china-osat-tongfu-jcet-investment, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-26_semieng_chip-week-144, 2026-07-01_trendforce_ase-price-hike-20pct, 2026-07-04_semieng_chip-week-145, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-07-03_trendforce_anthropic-samsung-advanced-packaging, 2026-05-08_trendforce_ajinomoto-abf-1b-land-buy-2032-margins]
 related:
   - wiki/entities/tsmc.md
@@ -199,7 +199,7 @@ TEL、ASML、Applied Materials、Lam Research 等前端設備廠商 2026 年大�
 - **KYEC**：CapEx 上調 NT$39.37B → NT$50B（+27%）；AI 測試產能擴充 30–50%；新加坡廠建設中
 - **三大台灣 OSAT 合計 2026 CapEx：NT$370B**（連續第三年歷史新高）— *Source: TrendForce 2026-05-05*
 - **Samsung**：宣布越南 **USD 40 億**新建封裝測試廠，越南成為東南亞封裝新重鎮
-- **Amkor**：Songdo K5（韓國）持續擴增 Intel EMIB 產能；Arizona $70 億廠 2028 投產推進
+- **Amkor**：Songdo K5（韓國）持續擴增 Intel EMIB 產能；Arizona $70 億廠 2028 投產推進；**NVIDIA $1.5B 多年期封裝協議（2026-07-23）⭐新增**——NVIDIA 預付款支持 Arizona 產能擴充，Amkor 成為 TSMC+NVIDIA 雙重背書的美國先進封裝 OSAT 旗艦廠
 - 競賽背景：AI 驅動需求規模超過任何單一地點可承接的量級，全球分散布局成必然
 - 面板級封裝（FOPLP/CoPoS）將成為 **2028–2029 年** 下一波產能競賽焦點
 

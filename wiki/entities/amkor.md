@@ -3,8 +3,8 @@ title: "Amkor Technology"
 category: entity
 tags: [OSAT, advanced-packaging, FOCoS, Arizona, chiplet, Intel-EMIB]
 created: 2026-04-25
-updated: 2026-06-30
-sources: [2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-05-19_stocktitan_amkor-arizona-peoria-land-expansion, 2026-06-17_digitimes_amkor-tsmc-10year-arizona-deal, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-30_amkor-ir_arizona-7billion-groundbreaking, 2026-06-30_digitimes_amkor-2.5d-hdfo-growth-2026]
+updated: 2026-07-25
+sources: [2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-05-19_stocktitan_amkor-arizona-peoria-land-expansion, 2026-06-17_digitimes_amkor-tsmc-10year-arizona-deal, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-30_amkor-ir_arizona-7billion-groundbreaking, 2026-06-30_digitimes_amkor-2.5d-hdfo-growth-2026, 2026-07-23_amkor-ir_nvidia-amkor-1-5b-strategic-partnership]
 related:
   - wiki/technologies/cowos.md
   - wiki/entities/intel.md
@@ -39,6 +39,9 @@ related:
 
 - **2026-04-27（⭐最新）**：**2026 第一季財報創歷史新高**——營收 **$1.68B（+27% YoY）**，每股盈餘 $0.33（優於市場預期約 $0.23），EBITDA $285M，毛利率提升至 14.2%，營業利益率 6.0%。先進封裝技術（**HDFO 高密度扇出、Flip-Chip**）是本季超預期主要動能，通訊與高端智慧型手機客戶帶動顯著年增長。第二季展望：營收 $1.75–1.85B、毛利率 14.5–15.5%，預期延續成長動能。對比 2024 全年營收負成長（-2.8%），本季數字顯示先進封裝轉型已開始反映在財報上，與 Arizona 廠擴建、Intel EMIB 合作等戰略投資形成佐證。
   *Source: Business Wire / Amkor Technology 2026-04-27*
+
+- **2026-07-23（⭐最新）**：**NVIDIA 與 Amkor 簽署 $1.5 億美元多年期策略夥伴關係**——NVIDIA 提供**預付款（prepayment）**支持 Amkor 亞利桑那州先進封裝產能擴充，聚焦**高密度互連**與**次世代異質整合**技術。合作涵蓋 NVIDIA 資料中心處理器、網路晶片組、加速運算系統的先進封裝服務。Amkor 股價盤後**+17%**。NVIDIA EVP Operations Debora Shoquist：「Amkor 的全球能力及對美國的承諾，是建構韌性 AI 基礎設施的關鍵組成。」配合 TSMC-Amkor 十年期協議（2026-06），亞利桑那廠成為同時擁有最大代工廠（TSMC）+ 最大 AI 晶片客戶（NVIDIA）雙重背書的美國先進封裝樞紐。
+  *Source: Amkor Technology / Business Wire 2026-07-23（一手新聞稿）*
 
 - **2026-06-17**：**TSMC 與 Amkor 簽署 10 年期合作協議，共同擴張亞利桑那先進封裝產能**——協議目標在美國本土建構更完整的晶片供應鏈（晶圓代工 + 先進封裝一站到位）。此舉與 Amkor 5/19 宣布的 Peoria 園區新增 67 英畝土地擴建相呼應，顯示 Amkor 在美國先進封裝版圖的擴張正與台積電的在地化策略深度綁定。（DIGITIMES 標題強調「Amkor 獨家慶賀」，暗示此為 Amkor 在 OSAT 陣營中相對獨特的戰略位置；原文細節因付費牆未能完整取得。）
   *Source: DIGITIMES 2026-06-17（Joseph Chen）*
@@ -91,9 +94,10 @@ related:
 ## 與其他實體的關係 / Relationships
 
 - **Intel**：EMIB 製程授權合作夥伴（正式合作宣布 2025-12）；韓國 K5 + 葡萄牙 + Arizona 三廠導入；美國境內完整先進封裝路徑的核心夥伴
+- **NVIDIA**：$1.5B 多年期策略夥伴關係（2026-07-23）；NVIDIA 預付款支持 Arizona 產能擴充；涵蓋 AI GPU/HPC 平台封裝測試
+- **TSMC**：10 年期 Arizona 協議（2026-06）；CoWoS/InFO 技術共同布局；三方（TSMC 製程 + Amkor 封測 + NVIDIA 客戶）構成 Arizona AI 晶片供應鏈閉環
 - **ASE Group**：全球 OSAT 主要競爭對手
-- **TSMC**：間接競爭（承接 TSMC CoWoS 溢出需求）
-- **美國政府**：Arizona 廠為美國半導體製造在地化政策重要受益者
+- **美國政府**：Arizona 廠為 CHIPS Act 框架下美國半導體製造在地化政策重要受益者
 
 ---
 

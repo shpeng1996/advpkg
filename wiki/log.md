@@ -2073,3 +2073,27 @@ an（2028–2029 量產世代）為 CoPoS 最可能的首批量產客戶——�
   5. 混合接合 6 µm 商業間距業界共識首次明確量化（Amkor VP 直接引述）
   6. NT-Cu 孿晶界阻礙接合（Osaka U 模擬）與業界既有認知矛盾——需追蹤實驗驗證
   7. SiCN 介電層已進入部分量產流程（imec 確認），是最接近量產的 SiO2 替代方案
+
+## [2026-07-25] collect | 每日自動蒐集 — NVIDIA-Amkor $1.5B 先進封裝夥伴關係；PSMC Intel EMIB 矽電容認證；V-Die/MOSAIC 後 HBM 學術架構
+- 搜尋查詢數：7 組（TSMC CoWoS/CoPoS/SoIC 2026-07、SK Hynix Q2 earnings、advanced packaging July 25 2026、Intel EMIB Foveros July 2026、hybrid bonding glass substrate July 2026、HBM4/HBM5 July 2026、Amkor NVIDIA deal）
+- 成功抓取：3 篇（存入 raw/articles/ 3 篇）
+  - raw/articles/2026-07-23_amkor-ir_nvidia-amkor-1-5b-strategic-partnership.md（Amkor 官方新聞稿）
+  - raw/articles/2026-07-15_trendforce_psmc-intel-emib-silicon-capacitor-certification.md（TrendForce）
+  - raw/articles/2026-07-15_trendforce_korean-japanese-v-die-mosaic-ai-memory.md（TrendForce）
+- 失敗/跳過：SemiEngineering Chip Week #148（JS-only 渲染，fetch 無法取得正文）；Amkor Q2 2026 財報（2026-07-27 尚未公布）；Tom's Hardware V-Die 原文（2026-07-10，與 TrendForce 同一研究，不重複收錄）；TrendForce 最新分頁顯示 2026-07-01 文章（靜態渲染問題，近期文章已於 2026-07-24 收錄完整）
+- 學術代理：UNAVAILABLE ✗
+- 新增 wiki 頁面：3 頁（wiki/sources/ 3 頁）
+  - wiki/sources/2026-07-23_amkor-ir_nvidia-amkor-1-5b-partnership.md
+  - wiki/sources/2026-07-15_trendforce_psmc-intel-emib-silicon-capacitor.md
+  - wiki/sources/2026-07-15_trendforce_v-die-mosaic-vertical-memory.md
+- 更新 wiki 頁面：6 頁
+  - wiki/entities/amkor.md（NVIDIA $1.5B 多年期夥伴關係、$1.5B 預付款、Arizona 雙重背書、Kevin Engel CEO 引述）
+  - wiki/entities/nvidia.md（Amkor $1.5B 封裝協議、Arizona 異質整合路線圖更新）
+  - wiki/technologies/emib.md（PSMC 12 吋矽電容 Intel EMIB 認證、10K wsm 2027 目標、台灣本地供應鏈）
+  - wiki/technologies/hbm4.md（V-Die 4× 互連密度/540 token·s、MOSAIC 3× 熱導率、VLSI 2026 後 HBM 學術路線圖）
+  - wiki/concepts/advanced-packaging-market.md（Amkor NVIDIA $1.5B 補充至 OSAT 動態段落）
+  - wiki/index.md（頁面數 313→316；來源數 274→277；3 筆新來源；更新時間→2026-07-25）
+- 主要新知識：
+  1. **NVIDIA-Amkor $1.5B 多年期先進封裝協議（2026-07-23）**：NVIDIA 提供預付款（prepayment）支持 Arizona 廠高密度互連+異質整合擴充；配合 TSMC-Amkor 十年期協議，Arizona Peoria 廠取得 TSMC（最大代工廠）+ NVIDIA（最大 AI 晶片客戶）雙重背書，是美國本土 AI 封裝供應鏈的結構性確立事件；Amkor 盤後 +17%
+  2. **PSMC 12 吋矽電容取得 Intel EMIB 正式認證（2026-07-15）**：確認 Taiwan-based 矽電容供應鏈落地，豐富既有 Samsung EM + Murata 供應組合；PSMC 3D AI Foundry 5%→20%（三年目標）首次量化；Micron-PSMC PWF 合作下一階段具體時程公開（試產 2026 EOY，量產 Q4 2027）
+  3. **V-Die（UNIST）+ MOSAIC（東京大學）於 VLSI 2026 發表（2026-07-15 報導）**：首次學術量化「TSV-free 邊緣 I/O」+ 「感應耦合」兩條後 HBM 路徑——V-Die 4× 互連密度、MOSAIC 3× 熱導率；均為研究階段，距商用 2030 年代中後期，但與同期 POSTECH 低溫堆疊技術共同構成後 HBM5 學術前沿路線圖的三大方向
