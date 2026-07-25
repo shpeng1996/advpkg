@@ -2097,3 +2097,27 @@ an（2028–2029 量產世代）為 CoPoS 最可能的首批量產客戶——�
   1. **NVIDIA-Amkor $1.5B 多年期先進封裝協議（2026-07-23）**：NVIDIA 提供預付款（prepayment）支持 Arizona 廠高密度互連+異質整合擴充；配合 TSMC-Amkor 十年期協議，Arizona Peoria 廠取得 TSMC（最大代工廠）+ NVIDIA（最大 AI 晶片客戶）雙重背書，是美國本土 AI 封裝供應鏈的結構性確立事件；Amkor 盤後 +17%
   2. **PSMC 12 吋矽電容取得 Intel EMIB 正式認證（2026-07-15）**：確認 Taiwan-based 矽電容供應鏈落地，豐富既有 Samsung EM + Murata 供應組合；PSMC 3D AI Foundry 5%→20%（三年目標）首次量化；Micron-PSMC PWF 合作下一階段具體時程公開（試產 2026 EOY，量產 Q4 2027）
   3. **V-Die（UNIST）+ MOSAIC（東京大學）於 VLSI 2026 發表（2026-07-15 報導）**：首次學術量化「TSV-free 邊緣 I/O」+ 「感應耦合」兩條後 HBM 路徑——V-Die 4× 互連密度、MOSAIC 3× 熱導率；均為研究階段，距商用 2030 年代中後期，但與同期 POSTECH 低溫堆疊技術共同構成後 HBM5 學術前沿路線圖的三大方向
+
+## [2026-07-26] collect | 每日自動蒐集 — Samsung D2W 混合接合量產線；SKC 玻璃基板延期至 2027；HKC 跨界先進封裝
+- 搜尋查詢數：7 組（TSMC CoWoS/SoIC 2026-07、SK Hynix Q2 earnings、Samsung hybrid bonding July 2026、Intel EMIB Foveros July 2026、glass substrate TGV July 2026、SemiEngineering Week #148、FOPLP OSAT July 2026）
+- 成功抓取：3 篇（存入 raw/articles/ 3 篇）
+  - raw/articles/2026-07-22_trendforce_samsung-hybrid-bonding-mass-production-besi-d2w.md（TrendForce，引述 The Elec）
+  - raw/articles/2026-07-24_trendforce_hkc-advanced-packaging-testing-cny4b-shaoxing.md（TrendForce）
+  - raw/articles/2026-07-24_trendforce_skc-absolics-glass-substrate-mass-production-delayed-2027.md（TrendForce，引述 Business Post）
+- 失敗/跳過：SemiEngineering Week #148（JS 動態渲染，WebFetch 無法取得正文）；SK Hynix Q2 2026 正式財報（預計 2026-07-29 公布，尚未發布）；TrendForce 近期頁面多已於 2026-07-24 批量收錄，本次新文章有限；FOPLP/UCIe 搜尋未見本週新文章
+- 學術代理：UNAVAILABLE ✗
+- 新增 wiki 頁面：3 頁（wiki/sources/ 3 頁）
+  - wiki/sources/2026-07-22_trendforce_samsung-hb-mass-production-besi.md
+  - wiki/sources/2026-07-24_trendforce_hkc-advanced-packaging-cny4b.md
+  - wiki/sources/2026-07-24_trendforce_skc-absolics-glass-substrate-delayed-2027.md
+- 更新 wiki 頁面：6 頁
+  - wiki/technologies/hybrid-bonding.md（Samsung 3D Cube-H 發布、~50 台 D2W 平澤量產線、BESI/SEMES/Hanwha 供應商狀態、cHBM 邏輯晶片架構、2029–2030 時程確認）
+  - wiki/technologies/glass-substrate.md（SKC HVM 時程更正 2026→2027；Intel 2030 全轉玻璃目標首次量化；Samsung EM/LG Innotek 2027+ 確認；玻璃基板商業化窗口收斂至 2027–2028）
+  - wiki/entities/samsung.md（混合接合量產線進度、3D Cube-H、cHBM 策略、BESI 設備談判）
+  - wiki/entities/besi.md（Samsung 首選供應商談判僵局、KRW ~60 億/台單價首次量化、SEMES 備選資格確認）
+  - wiki/concepts/advanced-packaging-market.md（HKC CNY 40 億紹興廠；SKC 延期摘要；Samsung HB 量產線摘要）
+  - wiki/index.md（頁面數 316→319；來源數 277→280；更新時間 2026-07-25→2026-07-26）
+- 主要新知識：
+  1. **SKC/Absolics 玻璃基板量產正式延後至 2027 年**（原 2026 年底）：這是業界最早量產預期的明確滑坡，確認 2026 年不會有量產玻璃基板進入市場；Intel 2030 年「100% 玻璃基板」目標首次量化；玻璃基板正式商業化窗口收斂至 2027–2028 年
+  2. **Samsung D2W 混合接合量產線具體化（~50 台 BESI 機台，2026 年底安裝）**：首次確認 Samsung 混合接合量產規模（50 台）與設備商談判細節（BESI KRW ~60 億/台、SEMES 備選已資格認證）；3D Cube-H 命名首次入 wiki；cHBM 邏輯晶片取代 base die 的 3D SiP 架構首次明確出現於路線圖
+  3. **HKC（中國顯示面板廠）跨界先進封裝**：CNY 40 億浙江紹興廠，繼 BOE/Visionox 之後另一顯示廠商進入封裝市場，顯示「顯示→封裝」跨業趨勢持續擴大

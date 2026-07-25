@@ -3,7 +3,7 @@ title: "先進封裝市場 / Advanced Packaging Market"
 category: concept
 tags: [market, forecast, CAGR, supply-chain, HBM, chiplet, geopolitics, equipment]
 created: 2026-04-24
-updated: 2026-07-25
+updated: 2026-07-26
 sources: [2026-04-24_initial-survey, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2026-01-23_trendforce_chip-tools-tel-asml, 2026-03-05_trendforce_intel-emib-billions, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2025-12-18_trendforce_micron-capex-hbm4, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2025-05-13_trendforce_top10-osat-2024, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-04-16_ontoinnovation_dragonfly-g5-qualified, 2026-06-23_communicationstoday_foplp-glass-substrate-market-8b-2030, 2026-06-29_trendforce_china-osat-tongfu-jcet-investment, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-26_semieng_chip-week-144, 2026-07-01_trendforce_ase-price-hike-20pct, 2026-07-04_semieng_chip-week-145, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-07-03_trendforce_anthropic-samsung-advanced-packaging, 2026-05-08_trendforce_ajinomoto-abf-1b-land-buy-2032-margins]
 related:
   - wiki/entities/tsmc.md
@@ -490,3 +490,30 @@ Anthropic 洽談三星 SF2（2nm）代工＋先進封裝自製 AI ASIC，繼 Goo
 Tower Semi 為 Intel 收購失敗（2023 年被美國監管否決）後仍維持獨立地位的特殊廠商；$4B 日本廠大幅提升其作為「非 TSMC/Samsung/Intel 的先進封裝替代選項」的戰略地位。
 
 *Source: SemiEngineering Week #147 2026-07-17*
+
+## ⭐ 2026-07-26 更新：HKC 跨界先進封裝 CNY 40 億；SKC 玻璃基板延期；Samsung HB 量產線建立
+
+### HKC（惠科）跨界先進封裝——CNY 40 億紹興廠（2026-07-24）
+
+中國顯示面板廠商 **HKC（惠科）** 宣布投資 **CNY 40 億（~US$5.5 億）**，於浙江紹興設立「浙江惠芯先進半導體有限公司」，正式進入先進封裝測試領域。
+
+一期重點：**12 吋異質晶片整合封測線**，月產能 **2,000 萬顆**，建設周期 3 年，全程使用自有資金分期投入。
+
+**產業意義**：
+- 這是繼 BOE、Visionox（玻璃基板）之後，**又一家中國顯示面板廠商跨界半導體封裝**——「顯示→封裝」跨業趨勢加速
+- 紹興成為中國先進封裝的新興投資目標城市（既有記錄多為江蘇、廣東、北京）
+- 12 吋異質整合封測定位，佐證中國 OSAT 生態系持續技術升級
+
+*Source: TrendForce 2026-07-24 → [[sources/2026-07-24_trendforce_hkc-advanced-packaging-cny4b]]*
+
+### SKC/Absolics 玻璃基板量產延後至 2027（2026-07-24）
+
+全球玻璃基板先行者 **SKC/Absolics** 正式將量產時程從「**2026 年底**」推後至「**2027 年**」，2026 年底將完成最終可靠性驗證。AMD 與 AWS 已自 2026 年 4 月起收到評估樣品。Samsung EM 與 LG Innotek 量產目標均設定在 2027 年後。玻璃基板正式商業化窗口整體收斂至 **2027–2028 年**。
+
+*Source: TrendForce 2026-07-24 → [[sources/2026-07-24_trendforce_skc-absolics-glass-substrate-delayed-2027]]*
+
+### Samsung 混合接合量產線建立——D2W、平澤、~50 台機台（2026-07-22）
+
+Samsung Electronics 於平澤園區建立約 **50 台 D2W 混合接合機**量產線，設備安裝預計 2026 年底啟動；全規模 HBM 量產時程設定在 **2029–2030 年**。BESI 為首選供應商（單機 ~US$4.3M），SEMES 已通過資格認證為備選。Samsung Foundry 同步發布 **3D Cube-H** 混合接合型 3D 堆疊方案，正積極向客戶推廣。
+
+*Source: TrendForce 2026-07-22 → [[sources/2026-07-22_trendforce_samsung-hb-mass-production-besi]]*

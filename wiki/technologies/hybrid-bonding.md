@@ -3,7 +3,7 @@ title: "混合接合 / Hybrid Bonding"
 category: technology
 tags: [3D, hybrid-bonding, Cu-Cu, SoIC, ECTC, advanced-packaging, DRAM, COP, 4F2, Sn-damascene, damascene-interconnect, PFAS-free]
 created: 2026-04-24
-updated: 2026-07-24
+updated: 2026-07-26
 sources: [2026-05-21_semiecosystem_ectc2026-cpo-hybridbonding-plp, 2026-04-24_initial-survey, 2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-03-01_3dincites_besi-packaging-power-shift, 2026-01-13_semiengineering_hbm4-microbumps, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-19_semieng_advanced-packaging-limits, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-03-27_3dincites_copper-grain-hybrid-bonding, 2025-01-01_semieng_making-hybrid-bonding-better, 2026-03-02_semieng_making-hybrid-bonding-better, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2026-04-29_semiwiki_cea-leti-ectc2026-hybrid-bonding, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2024-02-09_semianalysis_hybrid-bonding-process-flow, 2026-05-19_semiconductor-digest_ev-group-ectc2026-hybrid-bonding, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-04-19_semiwiki_apple-m5-cucu-hybrid-bonding-shipped, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-18_imec_iii-v-chiplet-rf-laser-bonding, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-29_evgroup_ectc2026-hybrid-bonding-layer-transfer, 2026-06-29_thelec_skhynix-hybrid-bonding-equipment-order, 2026-06-05_semieng_intel-ectc2026-emib-cpo-glass-blog, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-14_trendforce_samsung-hbm-hiring-hybridbonding, 2026-07-16_semieng_fine-pitch-hb-high-volume, 2026-07-16_semieng_alt-materials-hybrid-bonding]
 related:
   - wiki/technologies/soic.md
@@ -582,3 +582,29 @@ imec 數據支持 SiCN 已在部分生產流程中替代 SiO2，此與 ECTC 2026
 **Ag/Ru 鈍化的 D2W 意義**
 
 Cu 原生氧化物在大氣環境中快速生成，是 D2W 流程中保存晶粒至接合的主要挑戰。Ag/Ru 鈍化層消除了對真空環境或即時柑橘酸清洗的依賴，為在大氣條件下操作 D2W 提供可行的材料解決路徑。
+
+---
+
+## 2026-07-26 更新 / Update
+
+### ⭐ Samsung 建立 D2W 量產線——50 台機台、平澤園區、2029–2030 量產（TrendForce 2026-07-22）
+
+*Source: TrendForce 2026-07-22（引述 The Elec、Weekly Post）→ [[sources/2026-07-22_trendforce_samsung-hb-mass-production-besi]]*
+
+Samsung Electronics 正在**平澤園區（Pyeongtaek）**建立約 **50 台 D2W 混合接合機**的量產線，設備交付與安裝預計於 **2026 年底**啟動。然而，三星內部預期大規模量產時程約在 **2030 年**；Weekly Post 報導為 **2029 年**。
+
+**設備供應商競爭：**
+| 供應商 | 狀態 | 備註 |
+|--------|------|------|
+| **BESI** | 首選，談判中 | 單機 KRW ~60 億（~US$4.3M），競品兩倍；三星要求客製改良，BESI 有所保留 |
+| **SEMES**（三星設備子公司） | 已通過資格認證 | 備選方案 |
+| **Hanwha Semitech** | 評估中，SHB2 Nano | 2026-04 已向 SK Hynix 交付評估機 |
+
+**3D Cube-H（Samsung Foundry 新發布）：**
+Samsung Foundry 上月（2026-06）正式發布 **3D Cube-H**——混合接合型 3D 垂直堆疊解決方案，針對 AI 晶片與 HPC 系統，設計目標為超越現有封裝方案的性能、功耗與頻寬。目前正積極向客戶推廣。
+
+**cHBM 架構（客製化 HBM）：**
+混合接合在 cHBM 中的戰略位置：三星計畫以**含客戶運算 IP 的邏輯晶片**取代 cHBM base die，並將 DRAM 層直接疊加於邏輯晶片之上，形成 3D SiP 結構——這正是混合接合在下一代 AI 加速器供應鏈中最重要的應用場景。
+
+**NVIDIA Feynman 時程線：**
+Rubin Ultra → HBM4E（TC bonding），**Feynman → 高機率採用 HBM5 或 custom HBM（混合接合時代）**。此與既有 wiki 的「HBM5+ 混合接合採用」判斷完全一致，並提供了更具體的需求端時程錨點。

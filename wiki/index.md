@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-07-25
-**頁面總數 Total Pages**：316
-**原始來源數 Sources**：277
+**更新時間 Updated**：2026-07-26
+**頁面總數 Total Pages**：319
+**原始來源數 Sources**：280
 
 ---
 
@@ -63,6 +63,9 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-07-24_trendforce_skc-absolics-glass-substrate-delayed-2027]] — TrendForce：**SKC/Absolics 玻璃基板量產延後 2026→2027；AMD+AWS 評估樣品 4 月起交付；Intel 2030 全轉玻璃；Samsung EM/LG Innotek 均 2027+；SKC 連續 15 季虧損**（2026-07-26 收錄；原文 2026-07-24）⭐新增
+- [[sources/2026-07-24_trendforce_hkc-advanced-packaging-cny4b]] — TrendForce：**HKC（惠科）CNY 40 億（~US$5.5 億）浙江紹興先進封裝廠——12 吋異質整合封測線、月產能 2,000 萬顆、3 年建設；顯示廠跨界封裝趨勢**（2026-07-26 收錄；原文 2026-07-24）⭐新增
+- [[sources/2026-07-22_trendforce_samsung-hb-mass-production-besi]] — TrendForce：**Samsung 平澤 ~50 台 D2W 混合接合機量產線（2026 年底設備安裝）；BESI 首選（KRW ~60 億/台）；SEMES 已資格認證；3D Cube-H 發布；cHBM 邏輯晶片架構；HBM 量產 2029–2030**（2026-07-26 收錄；原文 2026-07-22）⭐新增
 - [[sources/2026-07-23_amkor-ir_nvidia-amkor-1-5b-partnership]] — Amkor 官方新聞稿：**NVIDIA-Amkor $1.5B 多年期策略夥伴關係——NVIDIA 預付款支持 Arizona 先進封裝擴充；高密度互連+異質整合；Amkor +17%**（2026-07-25 收錄；原文 2026-07-23）⭐新增
 - [[sources/2026-07-15_trendforce_psmc-intel-emib-silicon-capacitor]] — TrendForce：**PSMC 12 吋矽電容取得 Intel EMIB 認證，進入穩定量產；2027 目標 10K wsm；3D AI Foundry 5%→20%；PSMC Q2 毛利率 28%（+27% QoQ）；DRAM 漲 45%**（2026-07-25 收錄；原文 2026-07-15）⭐新增
 - [[sources/2026-07-15_trendforce_v-die-mosaic-vertical-memory]] — TrendForce：**V-Die（UNIST）4× HBM4 互連密度 + MOSAIC（東京大學）感應耦合 3× 熱導率——VLSI 2026 後 HBM 學術架構；均為研究階段，非商業替代方案**（2026-07-25 收錄；原文 2026-07-15）⭐新增

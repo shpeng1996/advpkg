@@ -3,7 +3,7 @@ title: "玻璃基板 / Glass Core Substrate"
 category: technology
 tags: [glass-substrate, TGV, panel-level, FC-BGA, CoPoS, Absolics, DNP, Rapidus, warpage, SeWaRe, glass-interposer, BOE, ULCVD, non-embedding]
 created: 2026-05-08
-updated: 2026-07-07
+updated: 2026-07-26
 sources: [2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-05-05_trendforce-insights_glass-substrate-development, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-05-29_3dincites_rapidus-2nm-advanced-packaging-ai-foundry, 2026-06-01_trendforce_intel-3dgs-india-glass-substrate, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-06-20_biggo_boe-glass-substrate-pilot, 2026-06-28_economy-ac_glass-substrate-global-race, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo]
 related:
   - wiki/technologies/copos.md
@@ -438,3 +438,28 @@ TSMC 在 JPCA Show 2026（日本）首次公開玻璃基板 vs 有機基板量�
 - **BOE**（中國）：試產線運轉，量產良率待解
 
 ---
+
+## ⭐ 2026-07-26 更新：SKC/Absolics 量產時程延後至 2027（TrendForce 2026-07-24）
+
+*Source: TrendForce 2026-07-24（引述 Business Post、News Tomato、TradingKey）→ [[sources/2026-07-24_trendforce_skc-absolics-glass-substrate-delayed-2027]]*
+
+**⚠️ 時程修正（重要）**：SKC 玻璃基板量產時程正式延後：
+
+| 廠商 | 更新前 | 更新後 |
+|------|--------|--------|
+| **SKC/Absolics** | 2026 年底（全球首商業量產） | **2027 年量產；2026 年底完成最終驗證** |
+| Samsung Electro-Mechanics | 2027 年後 | 2027 年後（不變） |
+| LG Innotek | 2027 年後 | 2027 年後（不變） |
+| BOE | 2027 年逐步放量 | 2027 年逐步放量（不變） |
+| DNP | FY2028 | FY2028（不變） |
+
+**主要延遲原因**：客戶需求變動（changing customer requirements），導致各廠商在縮短差距後 SKC 原先的量產進度受到影響。
+
+**客戶動態（最新）**：
+- **AMD、AWS**：自 2026 年 4 月起已收到 Absolics 評估樣品（TradingKey 確認）
+- **Apple、Amazon**：積極加速評估玻璃基板採用
+- **Intel**：明確設定「**2030 年前所有半導體基板轉用玻璃基板**」目標（首次量化）
+
+**競爭格局：Samsung EM 與 LG Innotek 均以 2027 年後為目標**，玻璃基板正式商業化窗口整體收斂至 **2027–2028 年**，與此前部分市場預期的「2026 年底出現量產」不同。
+
+**SKC 財務壓力**：SKC 目前已連續 **15 季虧損**（自 2023 Q4 起），玻璃基板業務的成功啟動對集團財務週轉至關重要。Business Post 預期一旦 2027 年全面量產，獲利狀況將顯著改善。

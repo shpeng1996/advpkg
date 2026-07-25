@@ -3,7 +3,7 @@ title: "Besi (BE Semiconductor Industries) — 混合接合設備領導廠商"
 category: entity
 tags: [equipment, hybrid-bonding, die-attach, D2W, TCB, Netherlands]
 created: 2026-04-25
-updated: 2026-05-07
+updated: 2026-07-26
 sources: [2026-03-01_3dincites_besi-packaging-power-shift, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation]
 related:
   - wiki/entities/ev-group.md
@@ -52,7 +52,10 @@ related:
 
 ## 近期動態 / Recent Developments
 
-- **2026-04-29（最新）⭐**：**SK Hynix 完成首批混合接合量產設備採購**，向 **Applied Materials + Besi 聯合系統**（Kinex inline HB）下訂，金額約 KRW 200 億（~USD 1,500 萬）——這是 SK Hynix 首次購入量產規劃的混合接合設備，確認 Besi 在 HBM 混合接合設備商的地位。
+- **2026-07-26（⭐最新）**：**Samsung 選定 BESI 為 D2W 混合接合設備首選供應商，但談判陷入僵局——單機 KRW ~60 億（約 US$4.3M），競品兩倍**（TrendForce 2026-07-22，引述 The Elec）：Samsung Electronics 計畫在平澤園區建立約 50 台 D2W 混合接合機量產線（設備交付 2026 年底啟動），**BESI 為首選供應商**，但雙方因三星要求客製架構改良與高單機售價而談判僵持。BESI 已同時供貨 TSMC 與 Micron 的混合接合量產線，因此對「純為三星客製改良架構」有所保留。若談判破裂，三星可能轉向 **SEMES**（已通過資格認證）或 **Hanwha Semitech SHB2 Nano**。此事件凸顯 BESI 在混合接合設備的高溢價策略同時帶來議價風險，尤其面對有自製設備能力的大型記憶體廠商。
+  *Source: TrendForce 2026-07-22（引述 The Elec）→ [[sources/2026-07-22_trendforce_samsung-hb-mass-production-besi]]*
+
+- **2026-04-29**：**SK Hynix 完成首批混合接合量產設備採購**，向 **Applied Materials + Besi 聯合系統**（Kinex inline HB）下訂，金額約 KRW 200 億（~USD 1,500 萬）——這是 SK Hynix 首次購入量產規劃的混合接合設備，確認 Besi 在 HBM 混合接合設備商的地位。
   *Source: TrendForce 2026-04-29（引述 The Elec）*
 
 - **2026-04-01（JEDEC 高度鬆綁衝擊）⭐**：JEDEC 考慮將 HBM4E 高度規格鬆綁至 **~900 µm**（vs HBM4 的 775 µm），可能使 TC 接合仍支援較高層數，**延後混合接合設備的需求爆發時間點**。若鬆綁成真，Hanmi Semiconductor（TC 接合機龍頭）的競爭地位受保護。市場反應：Besi 股價因此面臨不確定性。然而，業界普遍認同 20 層以上 HBM 混合接合不可避免。
