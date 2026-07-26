@@ -2121,3 +2121,31 @@ an（2028–2029 量產世代）為 CoPoS 最可能的首批量產客戶——�
   1. **SKC/Absolics 玻璃基板量產正式延後至 2027 年**（原 2026 年底）：這是業界最早量產預期的明確滑坡，確認 2026 年不會有量產玻璃基板進入市場；Intel 2030 年「100% 玻璃基板」目標首次量化；玻璃基板正式商業化窗口收斂至 2027–2028 年
   2. **Samsung D2W 混合接合量產線具體化（~50 台 BESI 機台，2026 年底安裝）**：首次確認 Samsung 混合接合量產規模（50 台）與設備商談判細節（BESI KRW ~60 億/台、SEMES 備選已資格認證）；3D Cube-H 命名首次入 wiki；cHBM 邏輯晶片取代 base die 的 3D SiP 架構首次明確出現於路線圖
   3. **HKC（中國顯示面板廠）跨界先進封裝**：CNY 40 億浙江紹興廠，繼 BOE/Visionox 之後另一顯示廠商進入封裝市場，顯示「顯示→封裝」跨業趨勢持續擴大
+
+## [2026-07-27] collect | AMD MI455X CoWoS-L+SoIC、SK hynix 3D DRAM-on-Logic、Intel 14A 提前量產
+- 搜尋查詢數：7 組（AMD MI455X packaging、SK hynix 3D stacked DRAM on logic、Intel 14A roadmap 2026、advanced packaging news July 2026、TSMC CoWoS demand 2026、hybrid bonding latest、FOPLP panel level packaging 2026）
+- 成功抓取：3 篇（存入 raw/articles/ 3 篇）
+  - raw/articles/2026-07-24_trendforce_amd-mi455x-cowos-l-soic-foplp-demand.md（TrendForce，引述 Commercial Times、Tom's Hardware、Wccftech）
+  - raw/articles/2026-07-24_trendforce_skhynix-3d-stacked-dram-on-logic-on-device-ai.md（TrendForce，引述 Business Korea、Nikkei）
+  - raw/articles/2026-07-24_trendforce_intel-14a-pulled-forward-2028-q2-earnings.md（TrendForce）
+- 失敗/跳過：SemiEngineering Week #148（JS 動態渲染，WebFetch 無法取得正文）；其他查詢結果均已在 _collected_urls.txt 中
+- 觸發 ingest：3 篇（全部）
+- 新增 wiki 頁面：3 頁（wiki/sources/ 3 頁）
+  - wiki/sources/2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand.md
+  - wiki/sources/2026-07-24_trendforce_skhynix-3d-stacked-dram-on-logic.md
+  - wiki/sources/2026-07-24_trendforce_intel-14a-forward-2028-q2-earnings.md
+- 更新 wiki 頁面：9 頁
+  - wiki/entities/amd.md（MI455X CoWoS-L+SoIC 架構、EPYC Venice CoWoS-L、Zen 7 FOPLP 試產 2H26、SoIC 產能預測、供應鏈擴展）
+  - wiki/entities/intel.md（14A 提前 1 年：風險生產 2H2027、HVM 2028；Tesla 首位 14A 客戶；Q2 $16.1B；18A-P 風險生產啟動；wiki 修正：原有 14A HVM 2029 → 更正為 2028）
+  - wiki/entities/sk-hynix.md（3D-Stacked DRAM-on-Logic 商業工程啟動、美國客戶、三層路線圖）
+  - wiki/entities/samsung.md（氧化物半導體單片 3D DRAM 論文：Samsung+imec+KU Leuven+Lam Research，模擬階段）
+  - wiki/technologies/cowos.md（MI455X 確認 CoWoS-L 為旗艦 AI GPU 首選；ASE CoW 外包；UMC/Vanguard 矽中介層新增；SoIC 產能上修說明）
+  - wiki/technologies/soic.md（產能上修：10–15K → 15–20K wsm EOY 2026；EOY 2027：30–40K wsm；AMD MI455X 列為主要客戶）
+  - wiki/technologies/foplp.md（AMD Zen 7 FOPLP 時程具體化：試產 2H26、量產 2027；首款 CPU FOPLP 應用里程碑）
+  - wiki/index.md（頁面數 319→322；來源數 280→283；更新時間 2026-07-26→2026-07-27）
+  - wiki/log.md（本條目）
+- 矛盾/修正：wiki/entities/intel.md 原記錄 14A HVM 2029，TrendForce 2026-07-24 確認提前至 2028；已更新
+- 主要新知識：
+  1. **AMD MI455X 確認 CoWoS-L + SoIC 雙技術堆疊**：AMD AI GPU 封裝路線從 CoWoS-S 升級至 CoWoS-L，4 個 XCD 透過 SoIC 混合接合堆疊；EPYC Venice 高端也用 CoWoS-L；CoWoS-L 正式成為頂端 AI 計算的封裝標準。供應鏈擴展：ASE 承接 CoW 外包，UMC/Vanguard 進入矽橋接供應
+  2. **SK hynix 3D-Stacked DRAM-on-Logic 進入商業工程**：繼 HBM→HBF 之後，SK hynix 佈局第三條路線——DRAM 直接堆疊於 AP 之上，瞄準 On-Device AI；Samsung 則同步以氧化物半導體學術路線佈局，同一市場不同技術路徑
+  3. **Intel 14A 製程路線圖提前 1 年**：風險生產 2H2027（原 2H2028）、HVM 2028（原 2029）；Tesla 確認首位外部客戶；加上 Q2 財報超預期（$16.1B vs 預估 $14.42B），Intel Foundry 復甦訊號持續強化

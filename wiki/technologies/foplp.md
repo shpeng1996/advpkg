@@ -3,8 +3,8 @@ title: "FOPLP — 扇出面板級封裝 / Fan-Out Panel-Level Packaging"
 category: technology
 tags: [fan-out, panel-level, TSMC, Samsung, ASE, Powertech, Innolux, CoPoS, InFO, cost-reduction]
 created: 2026-05-03
-updated: 2026-07-07
-sources: [2025-09-12_trendforce_foplp-competitive-2025, 2026-04-13_trendforce_copos-pilot, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-21_3dincites_acm-wlp-plp-process-trends, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-15_digitimes_manz-310mm-foplp-ecd-equipment, 2026-06-13_digitimes_linkotech-foplp-rollout-traction, 2026-06-20_prnewswire_manz-asia-310mm-ecd, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_digitimes_tsmc-foplp-timeline-skepticism, 2026-07-06_trendforce_cfmee-plp2000-china-first-plp]
+updated: 2026-07-27
+sources: [2025-09-12_trendforce_foplp-competitive-2025, 2026-04-13_trendforce_copos-pilot, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-21_3dincites_acm-wlp-plp-process-trends, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-15_digitimes_manz-310mm-foplp-ecd-equipment, 2026-06-13_digitimes_linkotech-foplp-rollout-traction, 2026-06-20_prnewswire_manz-asia-310mm-ecd, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_digitimes_tsmc-foplp-timeline-skepticism, 2026-07-06_trendforce_cfmee-plp2000-china-first-plp, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand]
 related:
   - wiki/technologies/copos.md
   - wiki/technologies/info-wmcm.md
@@ -156,3 +156,5 @@ ACM Research（3D InCites 2026-04-21）分析了 FOPLP 從 OSAT 工具到前端�
 AMD 於 COMPUTEX 2026 前夕公開確認：Powertech Technology（PTI）已完成業界首款**面板型（panel-based）2.5D EFB（Elevated Fanout Bridge）互連認證**。EFB 是 Intel EMIB / TSMC CoWoS-L 的競爭替代方案，過去均在矽晶圓基板上實現；PTI 的面板型 EFB 代表 2.5D 橋接互連技術正式延伸至面板基板——FOPLP 進入旗艦 CPU 封裝應用的關鍵技術里程碑。
 
 AMD Zen 7（代號 Grimlock）的封裝方案也將 PTI FOPLP 列入評估，配合 TSMC A14 節點（Fab 25 P1，台中），量產目標 2028。*Source: TrendForce 2026-05-25*
+
+**⭐ 2026-07-27 更新——Zen 7 FOPLP 時程具體化**：TrendForce 2026-07-24 進一步確認，AMD Zen 7 CPU 採用 **Powertech FOPLP** 的時程已從「列入評估」推進至：**試產 2H 2026、量產最早 2027**。此為業界首款 CPU 進入 FOPLP 商業量產，是面板級封裝應用場景從 AI GPU/網路晶片擴展至通用 CPU 的重大里程碑。*Source: TrendForce 2026-07-24*

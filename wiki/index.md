@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-07-26
-**頁面總數 Total Pages**：319
-**原始來源數 Sources**：280
+**更新時間 Updated**：2026-07-27
+**頁面總數 Total Pages**：322
+**原始來源數 Sources**：283
 
 ---
 
@@ -63,6 +63,9 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand]] — TrendForce：**AMD MI455X 發布（CoWoS-L + SoIC + 12 HBM4，432GB/22.3 TB/s/40 PFLOPs FP4）；EPYC Venice 高端採 CoWoS-L；SoIC 產能 EOY 2026 上修至 15–20K wsm；Zen 7 + Powertech FOPLP 試產 2H26；CoW 外包 ASE；矽中介層 UMC/Vanguard**（2026-07-27 收錄；原文 2026-07-24）⭐新增
+- [[sources/2026-07-24_trendforce_skhynix-3d-stacked-dram-on-logic]] — TrendForce：**SK hynix 啟動 3D-Stacked DRAM-on-Logic 商業工程（美國客戶）；HBM4→HBF→3D DRAM-on-Logic 三層路線圖；Samsung+imec+KU Leuven+Lam 氧化物半導體單片 3D DRAM 論文（模擬）**（2026-07-27 收錄；原文 2026-07-24）⭐新增
+- [[sources/2026-07-24_trendforce_intel-14a-forward-2028-q2-earnings]] — TrendForce：**Intel 14A 風險生產提前至 2H 2027（提前 1 年）；HVM 2028（提前 1 年）；Q2 2026 $16.1B 超預期；Intel Foundry $5.77B；Tesla 首位 14A 外部客戶；18A-P 風險生產已啟動**（2026-07-27 收錄；原文 2026-07-24）⭐新增
 - [[sources/2026-07-24_trendforce_skc-absolics-glass-substrate-delayed-2027]] — TrendForce：**SKC/Absolics 玻璃基板量產延後 2026→2027；AMD+AWS 評估樣品 4 月起交付；Intel 2030 全轉玻璃；Samsung EM/LG Innotek 均 2027+；SKC 連續 15 季虧損**（2026-07-26 收錄；原文 2026-07-24）⭐新增
 - [[sources/2026-07-24_trendforce_hkc-advanced-packaging-cny4b]] — TrendForce：**HKC（惠科）CNY 40 億（~US$5.5 億）浙江紹興先進封裝廠——12 吋異質整合封測線、月產能 2,000 萬顆、3 年建設；顯示廠跨界封裝趨勢**（2026-07-26 收錄；原文 2026-07-24）⭐新增
 - [[sources/2026-07-22_trendforce_samsung-hb-mass-production-besi]] — TrendForce：**Samsung 平澤 ~50 台 D2W 混合接合機量產線（2026 年底設備安裝）；BESI 首選（KRW ~60 億/台）；SEMES 已資格認證；3D Cube-H 發布；cHBM 邏輯晶片架構；HBM 量產 2029–2030**（2026-07-26 收錄；原文 2026-07-22）⭐新增

@@ -1,9 +1,9 @@
 ---
 title: "英特爾 / Intel"
 category: entity
-tags: [IDM, advanced-packaging, EMIB, Foveros, Intel18A, Clearwater-Forest, Foveros-Direct, glass-substrate, 14A, High-NA-EUV, silicon-capacitors, Google-TPU-v8e]
+tags: [IDM, advanced-packaging, EMIB, Foveros, Intel18A, Clearwater-Forest, Foveros-Direct, glass-substrate, 14A, High-NA-EUV, silicon-capacitors, Google-TPU-v8e, Q2-2026-earnings, Tesla-14A]
 created: 2026-04-24
-updated: 2026-07-24
+updated: 2026-07-27
 sources: [2026-04-24_initial-survey, 2026-07-20_trendforce_tsmc-265b-arizona-intel-novalake, 2026-03-18_trendforce_intel-emib-malaysia, 2026-03-03_trendforce_intel-clearwater-forest, 2026-03-05_trendforce_intel-emib-billions, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-04-20_trendforce_intel-foundry-14a-equipment, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-01_semianalysis_cpus-back-datacenter-2026, 2026-04-10_3dincites_intel-gan-chiplet, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks, 2026-06-21_convergedigest_intel-emib-t-multi-die-packaging, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap, 2026-07-01_trendforce_terafab-intel-veteran-hire, 2026-04-07_tomshardware_intel-joins-terafab, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-01-30_tomshardware_intel-ai-chip-test-vehicle-emib-t, 2026-07-14_trendforce_intel-ireland-5b-intel3-europe]
 related:
   - wiki/entities/tsmc.md
@@ -36,7 +36,19 @@ related:
 
 ## 近期動態 / Recent Developments
 
-- **2026-07-20（⭐最新）**：**Intel Nova Lake 80–90% 運算晶片回歸 Intel 18A 自製；良率約 85%**（TrendForce 2026-07-20）：TrendForce 報導 Intel Nova Lake（下一代桌上型 / 行動 CPU 平台）將把 **80–90% 運算晶片（compute tiles）生產回歸 Intel 18A 製程**（良率約 85%，已達商業量產水準），大幅減少對 TSMC N2/N3 外包比例。這是 Intel Foundry 重返競爭力的重要量化里程碑——18A 良率 85% 高於部分負面市場預期，若確認將代表 Intel 製程能力的重大轉折。對先進封裝影響：Nova Lake 回歸 Intel 製程意味 Intel EMIB/Foveros 封裝需求可能相對自給，TSMC 承接 Intel 產品封裝訂單的比例可能縮減。AMD Venice（下一代 EPYC）維持 TSMC 2nm 生產計畫不變，形成對照。
+- **2026-07-24（⭐最新）**：**Intel 14A 提前一年；Q2 2026 業績爆表；Intel Foundry $5.77B 超標**（TrendForce 2026-07-24，引述 Reuters、Wccftech、CNBC、Intel IR）：
+  - **14A 路線圖提前一年**：風險量產（Risk Production）→ **2H 2027**（原 2H 2028）；高量產（HVM）→ **2028**（原 2029）；與 TSMC 先進節點時程對齊
+  - **14A 性能領先 18A**：CEO Lip-Bu Tan 首次公開聲明「14A 在缺陷密度與電晶體性能上均優於 18A」；SRAM 256 良率與缺陷密度超前計畫
+  - **14A PDK**：PDK 0.5 完成；PDK 0.9 預計 2026 年 10 月交付
+  - **14A 首位外部客戶**：**Tesla**（TeraFab Austin，Elon Musk 4 月確認）
+  - **Q2 2026 財務超標**：Revenue **$16.1B**（est. $14.42B）；EPS adj. **$0.42**（est. $0.21）；**2011 年以來最快季度成長**；Intel Foundry Revenue **$5.77B**（est. $5.55B）
+  - **2026 CapEx 上修**：**>$20B**（原 $18B）
+  - **Q3 指引**：$15.8–$16.8B（above est. $15.1B）
+  - **18A Panther Lake 成本降幅**：2026 YTD ~50%；EOY 2026 再降 20%；另有 2027 顯著降幅；Panther Lake 毛利率預計超過公司平均
+  - **18A-P 風險量產啟動**（enhanced 18A 製程）
+  *Source: TrendForce 2026-07-24（引述 Reuters、Wccftech、CNBC、Yahoo Finance、Intel IR）*
+
+- **2026-07-20（次新）**：**Intel Nova Lake 80–90% 運算晶片回歸 Intel 18A 自製；良率約 85%**（TrendForce 2026-07-20）：TrendForce 報導 Intel Nova Lake（下一代桌上型 / 行動 CPU 平台）將把 **80–90% 運算晶片（compute tiles）生產回歸 Intel 18A 製程**（良率約 85%，已達商業量產水準），大幅減少對 TSMC N2/N3 外包比例。這是 Intel Foundry 重返競爭力的重要量化里程碑——18A 良率 85% 高於部分負面市場預期，若確認將代表 Intel 製程能力的重大轉折。對先進封裝影響：Nova Lake 回歸 Intel 製程意味 Intel EMIB/Foveros 封裝需求可能相對自給，TSMC 承接 Intel 產品封裝訂單的比例可能縮減。AMD Venice（下一代 EPYC）維持 TSMC 2nm 生產計畫不變，形成對照。
   *Source: TrendForce 2026-07-20*
 
 - **2026-07-14（次新）**：**Intel 愛爾蘭 Fab 34 追加 €50 億——Intel 3 成歐洲最先進節點；Diamond Rapids I/O Die 落腳 Fab 34；Apollo 股權 $142 億完全回購**（TrendForce 2026-07-14）：Intel 宣布對愛爾蘭 Leixlip **Fab 34** 追加 **€50 億（約 US$57 億）**擴建，主要用途：維持 **Intel 3** 為歐洲現存最先進量產節點，並承接 **Diamond Rapids Xeon 7 I/O Die**（Intel 3 製程）量產。此筆投資佔 Intel 2026 年全年 $170 億資本支出的 **約 30%**。關鍵背景：① Fab 34 於 **2023 年**以全球首批 EUV 晶圓廠之一開幕（支援 Xeon 6）；② Intel 已於 **2026-04** 斥資 **$142 億**從 Apollo Global 回購愛爾蘭廠 50% 股權，完全恢復控制；③ 歐洲對照：TSMC Dresden 僅量產 12–16nm + 22–28nm（量產目標 2027 年底），技術節點遠落後，Intel 3 因此維持歐洲先進製程制高點；④ Diamond Rapids 架構確認 I/O Die 採 Intel 3（Fab 34 生產），CBB→IMH 互連用 package substrate 長走線（非 EMIB，見下方 2026-06-10 條目）。

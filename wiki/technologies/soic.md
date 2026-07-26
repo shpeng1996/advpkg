@@ -3,8 +3,8 @@ title: "SoIC — System on Integrated Chips"
 category: technology
 tags: [3D, SoIC, hybrid-bonding, TSMC, AI, NVIDIA, Feynman]
 created: 2026-04-24
-updated: 2026-06-21
-sources: [2026-04-24_initial-survey, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-03-18_trendforce_nvidia-rubin-feynman-soic, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-23_trendforce_tsmc-roadmap-a12-a13-no-high-na-euv, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-06-21_arxiv_tiny-chiplets-esd-protection-signal-integrity]
+updated: 2026-07-27
+sources: [2026-04-24_initial-survey, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-03-18_trendforce_nvidia-rubin-feynman-soic, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-23_trendforce_tsmc-roadmap-a12-a13-no-high-na-euv, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-06-21_arxiv_tiny-chiplets-esd-protection-signal-integrity, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand]
 related:
   - wiki/entities/tsmc.md
   - wiki/technologies/cowos.md
@@ -41,8 +41,9 @@ SoIC 常與 CoWoS 組合：邏輯晶片先透過 SoIC 3D 堆疊，再整合於 C
 |------|----------------|
 | SoIC-X 商業接合間距 | **6 µm** |
 | 技術成熟度 | 實驗性 → **主流**（2026 轉折） |
-| 月產能目標（2026 年底）| **10,000–15,000 片/月** |
-| 主要客戶 | NVIDIA（Rubin / Rubin Ultra）、AMD（MI400）、Apple（M 系列）|
+| 月產能目標（2026 年底）| **15,000–20,000 片/月**（⭐2026-07-27 上修，原估 10,000–15,000） |
+| 月產能目標（2027 年底）| **30,000–40,000 片/月**（2026 年底約 2 倍） |
+| 主要客戶 | NVIDIA（Rubin / Rubin Ultra）、**AMD（MI455X** — 4 XCD hybrid-bonded on FCD）、Apple（M 系列）|
 
 ---
 
@@ -66,6 +67,8 @@ SoIC 常與 CoWoS 組合：邏輯晶片先透過 SoIC 3D 堆疊，再整合於 C
   *Source: TrendForce 2026-03-18*
 - **2026-05-08（確認更新）**：**亞利桑那 AP1 先進封裝廠初步技術定位確認為 SoIC + CoW**——SelectUSA 峰會 TSMC Dr. Cliff Hou 確認，亞利桑那第一座先進封裝廠（AP1）**2H26 動工、2028 年量產**，技術初步定位為 **SoIC + Chip-on-Wafer（CoW）**，在美國本土首次建立 SoIC 生產能力。
   *Source: SemiWiki / DIGITIMES 2026-05-08*
+- **2026-07-24（⭐最新）**：**AMD MI455X 確認使用 SoIC 混合接合**——4 個 XCD（Accelerator Complex Die）透過 SoIC 堆疊於 FCD（Fabric and Cache Die）上，再與 12 HBM4 以 CoWoS-L 整合。AMD 成為繼 NVIDIA 之後第二個量產 SoIC 的 AI GPU 客戶，大幅推升 2026–2027 SoIC 產能需求。TrendForce 上修 SoIC 月產能預測：EOY 2026 → **15,000–20,000 wsm**（原估 10,000–15,000）；EOY 2027 → **30,000–40,000 wsm**（2× EOY 2026）。
+  *Source: TrendForce 2026-07-24（引述 Commercial Times、Tom's Hardware、Wccftech）*
 - **2028–2030**（亞利桑那廠）：SoIC 線進入美國量產（AP1 技術確認）
 
 ---

@@ -3,8 +3,8 @@ title: "CoWoS — Chip-on-Wafer-on-Substrate"
 category: technology
 tags: [2.5D, interposer, TSMC, AI, HPC, HBM, COUPE, CPO, packaging-constraints, NVIDIA]
 created: 2026-04-24
-updated: 2026-07-23
-sources: [2026-05-24_techtimes_nvidia-computex2026-cowos, 2026-04-24_initial-survey, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-15_trendforce_tsmc-vanguard-stake-sale, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-09_financialcontent_tsmc-130k-cowos-wafers, 2026-06-09_digitimes_tsmc-cowos-soic-capacity-symposium, 2026-06-15_trendforce_tsmc-cowos-gap-narrowing-130k-200k-wafers, 2026-06-21_tomshardware_tsmc-fab-expansion-roadmap, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_tmtpost_tsmc-cowos-capacity-targets-2026-2027]
+updated: 2026-07-27
+sources: [2026-05-24_techtimes_nvidia-computex2026-cowos, 2026-04-24_initial-survey, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-15_trendforce_tsmc-vanguard-stake-sale, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-09_financialcontent_tsmc-130k-cowos-wafers, 2026-06-09_digitimes_tsmc-cowos-soic-capacity-symposium, 2026-06-15_trendforce_tsmc-cowos-gap-narrowing-130k-200k-wafers, 2026-06-21_tomshardware_tsmc-fab-expansion-roadmap, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_tmtpost_tsmc-cowos-capacity-targets-2026-2027, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand]
 related:
   - wiki/entities/tsmc.md
   - wiki/technologies/soic.md
@@ -131,6 +131,28 @@ CoWoS 將多顆晶片（GPU、HBM 等）放置於一個中介層（Interposer）
 *Source: Advanced Packaging News，2026-05-26*
 
 **TSMC、Renesas** 於 ECTC 2026 會議中提及 CoWoS 相關**可靠性研究**（reliability study）成果——補充既有 wiki 對 ECTC 2026 CoWoS 可靠性議程（Se
+## 2026-07-27 更新 / Updates
+
+### ⭐ AMD MI455X 確認 CoWoS-L + SoIC 雙技術堆疊；供應鏈擴展至 ASE CoW + UMC/Vanguard 矽中介層（2026-07-24）
+
+*Source: TrendForce 2026-07-24（引述 Commercial Times、Tom's Hardware、Wccftech）*
+
+**AMD MI455X（CDNA 5）架構確認 CoWoS-L 主力地位**：
+- MI455X：4 個 XCD（3D SoIC 混合接合堆疊於 FCD）+ 2 個 FCD + **12 HBM4 堆疊**，整體以 **CoWoS-L** 互連
+- 這是 AMD AI GPU 首次由 CoWoS-S 轉為 **CoWoS-L**，標誌 CoWoS-L 正式成為最高端 AI 加速器首選封裝
+- **EPYC Venice（高端型號）** 亦確認採用 CoWoS-L，在台積電高雄 **Fab 22** 量產，2H26 爬坡
+
+**CoWoS-L 供應鏈擴展**：
+- **CoW（Chip on Wafer）製程**：部分訂單外包 **ASE**，疏解 TSMC CoWoS-L 內部產能壓力
+- **矽中介層（Silicon Bridge）來源**：部分可能採購自 **UMC**、**Vanguard（原 VIS）**——成熟製程代工廠持續擴大對 CoWoS 供應鏈的滲透
+  - 注意：此前已知 VIS/VSMC（新加坡，30–40nm）進入 CoWoS-S 矽中介層供應；UMC 進入 CoWoS-L 矽橋接供應鏈為本次新增資訊，尚待更多來源確認
+- 此供應鏈多元化意味 CoWoS-L 的成本下行空間增加（成熟製程競爭加劇）
+
+**SoIC 產能更新（直接影響 CoWoS-L + SoIC 組合需求）**：
+- EOY 2026 SoIC 月產能預測上修至 **15,000–20,000 wsm**（較前次估值 10,000–15,000 wsm 提升 33%）
+- EOY 2027 預測：**30,000–40,000 wsm**（約 2026 年底的 2 倍）
+- 詳見 [[technologies/soic.md]]
+
 ## 2026-07-23 更新 / Updates
 
 ### ⭐ TSMC Arizona 先進封裝廠確認：$265B 計畫含 2 座 AP 廠（2026-07-16）

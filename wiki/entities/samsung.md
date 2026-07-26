@@ -3,8 +3,8 @@ title: "三星 / Samsung"
 category: entity
 tags: [IDM, foundry, memory, advanced-packaging, X-Cube, HBM, ISSCC2026, I-CubeS, LPDDR6]
 created: 2026-04-24
-updated: 2026-07-26
-sources: [2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2025-12-30_trendforce_samsung-hbm-surge, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2025-08-05_3dincites_iftle636, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit, 2026-06-10_trendforce_samsung-gwangju-packaging-base, 2026-06-12_digitimes_samsung-packaging-gap-tsmc-intel, 2026-06-15_trendforce_skhynix-hbm4e-sample-timeline-pulled-forward, 2026-06-19_techtimes_vera-rubin-hbm4-suppliers, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-24_techtimes_sk-hynix-dethroned-samsung-ddr5-hbm4, 2026-07-03_trendforce_anthropic-samsung-advanced-packaging, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-07-02_trendforce_samsung-hbm-dummy-die-patent, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo, 2026-07-07_trendforce_samsung-q2-2026-record-krw894t, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-02_trendforce_samsung-sf2p-plus-tsmc-n2-roadmap, 2026-07-14_trendforce_samsung-hbm-hiring-hbm4-hbm4e-hbm5, 2026-07-21_trendforce_samsung-cxl-32-skhynix-imte]
+updated: 2026-07-27
+sources: [2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2025-12-30_trendforce_samsung-hbm-surge, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2025-08-05_3dincites_iftle636, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit, 2026-06-10_trendforce_samsung-gwangju-packaging-base, 2026-06-12_digitimes_samsung-packaging-gap-tsmc-intel, 2026-06-15_trendforce_skhynix-hbm4e-sample-timeline-pulled-forward, 2026-06-19_techtimes_vera-rubin-hbm4-suppliers, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-24_techtimes_sk-hynix-dethroned-samsung-ddr5-hbm4, 2026-07-03_trendforce_anthropic-samsung-advanced-packaging, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-07-02_trendforce_samsung-hbm-dummy-die-patent, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo, 2026-07-07_trendforce_samsung-q2-2026-record-krw894t, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-02_trendforce_samsung-sf2p-plus-tsmc-n2-roadmap, 2026-07-14_trendforce_samsung-hbm-hiring-hbm4-hbm4e-hbm5, 2026-07-21_trendforce_samsung-cxl-32-skhynix-imte, 2026-07-24_trendforce_skhynix-3d-stacked-dram-on-logic-on-device-ai]
 related:
   - wiki/entities/tsmc.md
   - wiki/entities/intel.md
@@ -31,6 +31,15 @@ related:
 ---
 
 ## 近期動態 / Recent Developments
+
+- **2026-07-24（⭐次最新）**：**Samsung + imec + KU Leuven + Lam Research 聯合發表氧化物半導體單片 3D DRAM 論文——下一代 On-Device AI 記憶體架構基礎研究**（TrendForce 2026-07-24 引述）：
+  - **論文核心**：以**氧化物半導體（Oxide Semiconductor）**取代傳統矽 DRAM 單元，採用**單片 3D（Monolithic 3D）** 方式逐層堆疊 DRAM，實現極高層數的垂直整合
+  - **關鍵技術指標（模擬數據）**：寫入電壓低至 **0.3V**（vs 傳統矽 ~1.5V）、驅動電流密度 **~1,000×** 高於傳統 DRAM（利用氧化物半導體高遷移率特性）
+  - **技術意義**：若商業化，將允許在極小封裝空間（如手機 SoC 上方）堆疊等同於 HBM 容量的 DRAM，同時大幅降低功耗——是 On-Device AI 推論的理想記憶體架構
+  - **現況**：目前處於**模擬/早期研究階段**，尚未進入矽試驗（流片）
+  - **合作機構**：Samsung Electronics（研究院）+ imec（比利時）+ KU Leuven（比利時魯汶大學）+ Lam Research（設備商）
+  - **與 SK hynix 路線對比**：Samsung 走「氧化物半導體單片 3D」基礎研究路線；SK hynix 走「3D-Stacked DRAM-on-Logic 商業工程」招募路線——兩者在技術路徑上有所差異，但目標市場（On-Device AI）相同
+  *Source: TrendForce 2026-07-24*
 
 - **2026-07-26（⭐最新）**：**Samsung 建立 D2W 混合接合量產線——~50 台機台、平澤園區、2029–2030 HBM 量產；發布 3D Cube-H**（TrendForce 2026-07-22，引述 The Elec）：三星正在**平澤園區**建立約 **50 台 D2W 混合接合機**的量產線，設備交付預計 **2026 年底**啟動。惟三星內部全規模量產預期為 **~2030**（Weekly Post 報導 2029）。設備供應：**BESI 首選**（KRW ~60 億/台，約競品兩倍，談判進行中）；**SEMES 已通過資格認證**；**Hanwha Semitech SHB2 Nano** 亦在評估（2026-04 交付 SK Hynix 評估機）。新發布：**Samsung Foundry 3D Cube-H**——混合接合型 3D 垂直堆疊解決方案（AI 晶片/HPC），上月正式發布，現積極向客戶推廣。**cHBM 策略**：以邏輯晶片（含客戶 IP）取代 cHBM base die，DRAM 層直接疊加，形成 3D SiP；目標 GPU/CPU 外部整合並優化資料傳輸。
   *Source: TrendForce 2026-07-22（引述 The Elec、Weekly Post）→ [[sources/2026-07-22_trendforce_samsung-hb-mass-production-besi]]*

@@ -1,10 +1,10 @@
 ---
 title: "超微半導體 / AMD (Advanced Micro Devices)"
 category: entity
-tags: [fabless, CPU, GPU, chiplet, Zen6, EFB, I-CubeS, Milan, EPYC, MI-series, Venice, COMPUTEX2026]
+tags: [fabless, CPU, GPU, chiplet, Zen6, EFB, I-CubeS, Milan, EPYC, MI-series, Venice, COMPUTEX2026, MI455X, CoWoS-L, SoIC, FOPLP]
 created: 2026-05-03
-updated: 2026-05-26
-sources: [2026-03-01_semianalysis_cpus-back-datacenter-2026, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-21_trendforce_amd-lisa-su-tsmc-10b-taiwan-packaging]
+updated: 2026-07-27
+sources: [2026-03-01_semianalysis_cpus-back-datacenter-2026, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-21_trendforce_amd-lisa-su-tsmc-10b-taiwan-packaging, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand]
 related:
   - wiki/entities/tsmc.md
   - wiki/entities/samsung.md
@@ -30,6 +30,15 @@ related:
 
 ## 近期動態 / Recent Developments
 
+- **2026-07-24（⭐最新）**：**AMD 發布 Instinct MI455X——CoWoS-L + SoIC + HBM4 432GB；EPYC Venice 高端採 CoWoS-L；Zen 7 評估 Powertech FOPLP**（TrendForce 2026-07-24，引述 Commercial Times、Tom's Hardware、Wccftech）：
+  - **MI455X（CDNA 5）**：320 億電晶體；4 個 XCD（Accelerator Complex Die）透過**混合接合（Hybrid Bonding / SoIC）**堆疊於 FCD（Fabric and Cache Die）上；2 個 FCD + 12 HBM4 堆疊透過 **TSMC CoWoS-L** 互連；432GB HBM4 / 22.3 TB/s（+2.8× vs MI350）；40 PFLOPs FP4 / 20 PFLOPs FP8。製程：TSMC 2nm + 3nm FinFET。
+  - **EPYC Venice（高端型號）**：預計採用 **CoWoS-L**，台積電高雄 **Fab 22** 量產，2H26 爬坡支援 AI 伺服器需求。
+  - **SoIC 產能預測**：台積電 SoIC 月產能—— EOY 2026: **15,000–20,000 wsm**；EOY 2027: **≥30,000–40,000 wsm**（2× EOY 2026）。
+  - **AMD Zen 7 + Powertech FOPLP**：Zen 7 CPU（2027 年發布）評估採用 Powertech 面板級封裝（FOPLP），試產 2H26，量產最早 2027——CPU 封裝首次進入 FOPLP 商業應用。
+  - **CoWoS-L 供應鏈擴展**：CoW 訂單部分外包 **ASE**；矽中介層可能採購自 **UMC**、**Vanguard**（成熟節點代工廠進入 CoWoS 供應鏈）。
+  - **Anthropic 承諾**：$5B AMD MI450 資料中心，1 GW 第一階段 1H27 上線。
+  *Source: TrendForce 2026-07-24（引述 Commercial Times、Tom's Hardware、Wccftech）*
+
 - **2026-02（ISSCC 2026）**：
   - **MI355X**：I/O die 從 4 個整合為 **2 個**（−20% 互連功耗）；製程從 N5 升級至 **N3P**；矩陣運算吞吐量每 CU 倍增
   - TSMC **aLSI（主動矽橋）** 測試載具對應 **AMD MI450** 拓撲——顯示 AMD 下一代 AI GPU 可能採用 TSMC 主動矽橋技術
@@ -52,7 +61,8 @@ AMD 在 AI GPU 市場是 NVIDIA 的主要挑戰者（Instinct MI 系列），但
 
 | 產品 | 製程 | 封裝 | 狀態 |
 |------|------|------|------|
-| MI355X | TSMC N3P | CoWoS-S（推測）+ 2 I/O die | ISSCC 2026 發表 |
+| MI355X | TSMC N3P | CoWoS-S + 2 I/O die | ISSCC 2026 發表 |
+| **MI455X** | **TSMC 2nm + 3nm** | **CoWoS-L + SoIC（4 XCD HB on FCD）+ 12 HBM4** | **2026-07-24 發布**⭐ |
 | MI450（推測） | TSMC N2P（推測） | TSMC aLSI 主動矽橋 | 測試載具曝光（ISSCC） |
 | EPYC Venice（Ze
 - **2026-05-26（COMPUTEX 2026 前夕）**：⭐更新

@@ -3,8 +3,8 @@ title: "SK Hynix"
 category: entity
 tags: [memory, HBM, HBM4, advanced-packaging]
 created: 2026-04-24
-updated: 2026-07-24
-sources: [2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab, 2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h, 2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-04-22_trendforce_sk-hynix-pt7-cheongju, 2026-04-22_trendforce_sk-hynix-indiana-us-plant, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-03-03_trendforce_sk-hynix-hbm4-tight-gaps, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-05_trendforce_hbf-equipment-race-sandisk-hanmi, 2026-06-11_trendforce_skhynix-3x-wafer-2034-375layer-nand, 2026-06-20_techtimes_skhynix-hbm4e-12layer-samples, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-24_techtimes_sk-hynix-dethroned-samsung-ddr5-hbm4, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-06-25_techtimes_sk-hynix-nasdaq-adr-29b, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-22_trendforce_skhynix-q2-record-margin, 2026-07-21_trendforce_samsung-cxl-32-skhynix-imte]
+updated: 2026-07-27
+sources: [2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab, 2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h, 2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-04-22_trendforce_sk-hynix-pt7-cheongju, 2026-04-22_trendforce_sk-hynix-indiana-us-plant, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-03-03_trendforce_sk-hynix-hbm4-tight-gaps, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-05_trendforce_hbf-equipment-race-sandisk-hanmi, 2026-06-11_trendforce_skhynix-3x-wafer-2034-375layer-nand, 2026-06-20_techtimes_skhynix-hbm4e-12layer-samples, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-24_techtimes_sk-hynix-dethroned-samsung-ddr5-hbm4, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-06-25_techtimes_sk-hynix-nasdaq-adr-29b, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-22_trendforce_skhynix-q2-record-margin, 2026-07-21_trendforce_samsung-cxl-32-skhynix-imte, 2026-07-24_trendforce_skhynix-3d-stacked-dram-on-logic-on-device-ai]
 related:
   - wiki/entities/samsung.md
   - wiki/technologies/hbm4.md
@@ -27,7 +27,18 @@ SK Hynix 是 **HBM 市場的領導者**，率先量產 HBM3E，並於 2025 H2 �
 
 ## 近期動態 / Recent Developments
 
-- **2026-07-22（⭐最新）**：**Q2 2026 預估創歷史最高營業利益率 74.6–77%；KRW 60.4T 利潤（+556% YoY）；正式財報 2026-07-29**（TrendForce 2026-07-22）：預估 Q2 2026 合併營收 **KRW 80.9 兆（+264% YoY）**，營業利益 **KRW 60.4 兆（+556% YoY）**，營業利益率達 **74.6–77%**（歷史最高，超越 Q1 2026 的 72%）。驅動因素：HBM4 出貨量持續爬坡，LTA（長期採購協議）鎖定主要 AI 客戶穩定訂單。值得注意：高 HBM 混合比例稀釋了一般 DRAM ASP 成長動能，但整體利潤率仍創紀錄，反映 HBM 的極高毛利結構。正式財報發布日：**2026-07-29**。
+- **2026-07-24（⭐最新）**：**SK hynix 啟動「3D-Stacked DRAM-on-Logic」商業工程——業界首次將 DRAM 與邏輯晶片 3D 堆疊，瞄準 On-Device AI 時代**（TrendForce 2026-07-24，引述韓媒 Business Korea、Nikkei）：
+  - **架構定義**：3D-Stacked DRAM-on-Logic = DRAM die 直接堆疊於 AP（Application Processor）之上，利用混合接合（Hybrid Bonding）或先進 TSV 實現超短 die-to-die 距離，目標是在移動/邊緣裝置中實現 HBM 級別的記憶體頻寬（但不需要大型封裝基板）
+  - **SK hynix 動態**：正積極招募工程師組建 3D-Stacked DRAM-on-Logic 開發團隊，確認進入商業工程階段（非純研究）；美國客戶已接洽合作
+  - **三層記憶體路線圖**：SK hynix 記憶體路線圖的三個發展方向：
+    1. **HBM4/HBM4E**（高端伺服器 AI 加速器）→ 持續主力
+    2. **HBF（High Bandwidth Flash）**（AI 推論，儲存+頻寬）→ 2H26–2027
+    3. **3D-Stacked DRAM-on-Logic**（On-Device AI，移動/邊緣）→ 商業工程啟動
+  - **競爭對手動態（同期）**：Samsung + imec + KU Leuven + Lam Research 聯合發表氧化物半導體（Oxide Semiconductor）單片 3D DRAM 論文，展示 0.3V 寫入、~1000× 更高驅動電流的堆疊 DRAM 概念（模擬階段，非 SK hynix 路線）
+  - **意義**：標誌 AI 記憶體從「資料中心 HBM」向「裝置端 3D DRAM」分歧演進，SK hynix 提前部署兩條路線
+  *Source: TrendForce 2026-07-24（引述 Business Korea、Nikkei）*
+
+- **2026-07-22**：**Q2 2026 預估創歷史最高營業利益率 74.6–77%；KRW 60.4T 利潤（+556% YoY）；正式財報 2026-07-29**（TrendForce 2026-07-22）：預估 Q2 2026 合併營收 **KRW 80.9 兆（+264% YoY）**，營業利益 **KRW 60.4 兆（+556% YoY）**，營業利益率達 **74.6–77%**（歷史最高，超越 Q1 2026 的 72%）。驅動因素：HBM4 出貨量持續爬坡，LTA（長期採購協議）鎖定主要 AI 客戶穩定訂單。值得注意：高 HBM 混合比例稀釋了一般 DRAM ASP 成長動能，但整體利潤率仍創紀錄，反映 HBM 的極高毛利結構。正式財報發布日：**2026-07-29**。
   *Source: TrendForce 2026-07-22*
 
 - **2026-07-21（次新）**：**SK hynix IMTE（Inference Memory Tiering Expansion）架構提升 AI 推論效率 +35.7%**（TrendForce 2026-07-21）：SK hynix 公布 **IMTE** 新 AI 推論記憶體架構——以 HBM（熱記憶體）+ CXL（暖記憶體）+ DDR5（冷記憶體）三層分級，針對大型語言模型的 KV cache 記憶體需求最佳化，實現 AI 推論效率提升 **+35.7%**。此架構意味 SK hynix 同時在 HBM（製造）與 CXL 生態系（架構設計）建立競爭力，並與 Samsung CMM-D 3.2 形成差異化定位（三星主攻 CXL 頻寬；SK hynix 主攻推論效率系統架構）。
