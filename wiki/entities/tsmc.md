@@ -3,7 +3,7 @@ title: "台積電 / TSMC"
 category: entity
 tags: [foundry, advanced-packaging, CoWoS, SoIC, CoPoS, COUPE, CPO, InFO, WMCM, aLSI, MRAM, 3nm-pricing]
 created: 2026-04-24
-updated: 2026-07-24
+updated: 2026-07-28
 sources: [2026-04-24_initial-survey, 2026-04-13_trendforce_copos-pilot, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2025-12-18_trendforce_apple-wmcm-a20, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-01-20_trendforce_tsmc-wmcm-apple, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap, 2026-04-23_trendforce_tsmc-roadmap-a12-a13-no-high-na-euv, 2026-05-07_trendforce_tsmc-us-expansion-250b-arizona, 2026-05-12_focustaiwan_tsmc-capex-31b-arizona-20b, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-28_reuters_tsmc-kevin-zhang-energy-efficiency, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-09_financialcontent_tsmc-130k-cowos-wafers, 2026-06-09_digitimes_tsmc-cowos-soic-capacity-symposium, 2026-06-15_trendforce_tsmc-cowos-gap-narrowing-130k-200k-wafers, 2026-06-17_digitimes_amkor-tsmc-10year-arizona-deal, 2026-06-21_tomshardware_tsmc-fab-expansion-roadmap, 2026-06-27_tmtpost_tsmc-cowos-capacity-targets-2026-2027, 2026-07-02_trendforce_samsung-sf2p-plus-tsmc-n2-roadmap, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-22_trendforce_tsmc-2027-price-hike-hpc, 2026-07-20_trendforce_tsmc-265b-arizona-intel-novalake]
 related:
   - wiki/technologies/cowos.md
@@ -33,7 +33,19 @@ related:
 
 ## 近期動態 / Recent Developments
 
-- **2026-07-22（⭐最新）**：**TSMC 2027 全面漲價 5–10%，HPC 客戶額外加收 10–15% 溢價；HPC 佔 Q2 晶圓營收 66%**（TrendForce 2026-07-22）：TSMC 計畫對 2027 年訂單實施兩層式定價調整——基本漲幅 **5–10%** 適用所有客戶，高效能運算（HPC）客戶額外承受 **10–15% 溢價**（因 CoWoS 等先進封裝屬 HPC 標配）。背景：HPC 業務已佔 TSMC 2026 Q2 晶圓營收約 **66%**（行動裝置退居第二）；NVIDIA 佔 TSMC 總營收約 **22%**（最大單一客戶）。對下游影響：Apple A20 Pro（2nm + CoWoS 可能組合）預估每顆晶片成本增加 **$10–20**。分析師（Morgan Stanley）稍早預測 5–10% 基本漲幅已在 2026-07-16 法說會前後流傳；本次 HPC 溢價量化為新增數據點。
+- **2026-07-28（⭐最新）**：**TSMC 2nm 5 座晶圓廠加速爬坡——Baoshan 2026-05 達 20K wsm；N2P H2 2026 量產；CAGR 70%（2026–2028）**（TrendForce 2026-07-27，引述 Economic Daily News）：
+  - **Baoshan 新竹廠**（首座 2nm 廠）：2026-05 月產能達 **20,000 wsm**，持續爬坡
+  - **5 座晶圓廠並進**：台灣新竹（Baoshan）+ 高雄 + 其他，全力擴張 2nm 製程
+  - **N2P（2nm Enhanced）**：正式量產時程確認為 **H2 2026**
+  - **TSMC 2nm 量化指標**：
+    - 首年 2nm 晶圓輸出目標：**+45%** 超越 3nm 首年（2023）
+    - 2nm 產能 CAGR 2026–2028：**70%**
+    - 2nm 佔 Q2 2026 晶圓收入：**3%**（爬坡中）
+  - **2nm ASP**：目前約 **$30,000/片**；2027 漲價後 **>$33,000**
+  - **Samsung 競爭壓力**：TSMC 漲價推動 Broadcom/Anthropic/Tesla 等客戶評估 Samsung SF2 替代（Samsung-Broadcom MOU 已簽）
+  *Source: TrendForce 2026-07-27 → [[sources/2026-07-27_trendforce_tsmc-2nm-samsung-broadcom-foundry]]*
+
+- **2026-07-22（次新）**：**TSMC 2027 全面漲價 5–10%，HPC 客戶額外加收 10–15% 溢價；HPC 佔 Q2 晶圓營收 66%**（TrendForce 2026-07-22）：TSMC 計畫對 2027 年訂單實施兩層式定價調整——基本漲幅 **5–10%** 適用所有客戶，高效能運算（HPC）客戶額外承受 **10–15% 溢價**（因 CoWoS 等先進封裝屬 HPC 標配）。背景：HPC 業務已佔 TSMC 2026 Q2 晶圓營收約 **66%**（行動裝置退居第二）；NVIDIA 佔 TSMC 總營收約 **22%**（最大單一客戶）。對下游影響：Apple A20 Pro（2nm + CoWoS 可能組合）預估每顆晶片成本增加 **$10–20**。分析師（Morgan Stanley）稍早預測 5–10% 基本漲幅已在 2026-07-16 法說會前後流傳；本次 HPC 溢價量化為新增數據點。
   *Source: TrendForce 2026-07-22*
 
 - **2026-07-20（次新）**：**TSMC 美國總投資確認 $2,650 億（12 廠 + AP 設施）；美國建廠成本 4–5 倍於台灣**（TrendForce 2026-07-20）：TSMC 亞利桑那計畫完整輪廓——**12 座晶圓廠 + 先進封裝（AP）設施**，總投資 $2,650 億，建廠成本為台灣的 4–5 倍（排除補貼後毛成本）。AP 設施確認：CoWoS 等先進封裝將有**美國本地量產產能**，服務 NVIDIA/Apple 等 HPC 客戶的在地供應鏈需求。同篇報導揭露 Intel Nova Lake：80–90% 運算晶片回歸 Intel 18A 製程（良率約 85%），大幅減少 TSMC 外包比例，對 TSMC 先進封裝需求影響需持續追蹤。AMD Venice（下一代 EPYC）維持 TSMC 2nm 生產計畫。

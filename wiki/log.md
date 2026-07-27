@@ -2149,3 +2149,29 @@ an（2028–2029 量產世代）為 CoPoS 最可能的首批量產客戶——�
   1. **AMD MI455X 確認 CoWoS-L + SoIC 雙技術堆疊**：AMD AI GPU 封裝路線從 CoWoS-S 升級至 CoWoS-L，4 個 XCD 透過 SoIC 混合接合堆疊；EPYC Venice 高端也用 CoWoS-L；CoWoS-L 正式成為頂端 AI 計算的封裝標準。供應鏈擴展：ASE 承接 CoW 外包，UMC/Vanguard 進入矽橋接供應
   2. **SK hynix 3D-Stacked DRAM-on-Logic 進入商業工程**：繼 HBM→HBF 之後，SK hynix 佈局第三條路線——DRAM 直接堆疊於 AP 之上，瞄準 On-Device AI；Samsung 則同步以氧化物半導體學術路線佈局，同一市場不同技術路徑
   3. **Intel 14A 製程路線圖提前 1 年**：風險生產 2H2027（原 2H2028）、HVM 2028（原 2029）；Tesla 確認首位外部客戶；加上 Q2 財報超預期（$16.1B vs 預估 $14.42B），Intel Foundry 復甦訊號持續強化
+
+## [2026-07-28] collect | 每日自動蒐集 — Samsung Q2 Earnings / Samsung-Broadcom MOU / TSMC 2nm擴產 / SK hynix-Intel Ohio Fab / EMIB三廠記憶體評估
+- 搜尋查詢數：7 組（SK hynix Q2 earnings July 2026、advanced packaging news July 28 2026、TrendForce July 28 2026、TSMC 2nm capacity July 2026、Samsung Broadcom MOU advanced packaging、SemiEngineering Week 148、SK hynix Intel Ohio fab EMIB）
+- 成功抓取：3 篇（存入 raw/articles/ 3 篇）
+  - raw/articles/2026-07-27_trendforce_q2-memory-earnings-preview-samsung-skhynix-kioxia.md（TrendForce）
+  - raw/articles/2026-07-27_trendforce_tsmc-2nm-samsung-broadcom-mou-foundry.md（TrendForce）
+  - raw/articles/2026-07-23_trendforce_skhynix-intel-ohio-fab-partner-emib.md（TrendForce）
+- 失敗/跳過：SemiEngineering Week #148（JS 動態渲染，WebFetch 無法取得正文，與前次情況相同）；TrendForce 2026-07-27/28 其他頁面（CXMT STAR Debut、Intel Hitachi 量子、Intel CPU deals）屬於較低先進封裝相關性，略過；SK hynix 正式 Q2 財報未發布（2026-07-29 才公布）
+- 學術代理：UNAVAILABLE ✗
+- 新增 wiki 頁面：3 頁（wiki/sources/ 3 頁）
+  - wiki/sources/2026-07-27_trendforce_q2-memory-earnings-preview.md
+  - wiki/sources/2026-07-27_trendforce_tsmc-2nm-samsung-broadcom-foundry.md
+  - wiki/sources/2026-07-23_trendforce_skhynix-intel-ohio-fab-emib.md
+- 更新 wiki 頁面：8 頁
+  - wiki/entities/samsung.md（Samsung Q2 KRW 171T preliminary；Samsung-Broadcom MOU；Anthropic MOU 正式簽署；Tesla AI6；EMIB評估；updated 2026-07-28）
+  - wiki/entities/sk-hynix.md（Q2 KRW 84.1T/64.1T/75-77% margin；LTA 70% AI客戶；Ohio Fab潛在合作；EMIB+HBM測試；updated 2026-07-28）
+  - wiki/entities/tsmc.md（Baoshan 2nm 20K wsm 2026-05；N2P H2 2026；2nm CAGR 70%；2nm ASP $30K→$33K；updated 2026-07-28）
+  - wiki/entities/intel.md（Ohio Fab 2030更新；SK hynix操作夥伴探索；EMIB記憶體三廠評估；updated 2026-07-28）
+  - wiki/entities/micron.md（EMIB評估新增；updated 2026-07-28）
+  - wiki/technologies/emib.md（Samsung+Micron+SK hynix三大記憶體廠評估確認；updated 2026-07-28）
+  - wiki/index.md（頁面數 322→325；來源數 283→286；更新 2026-07-27→2026-07-28）
+  - wiki/log.md（本條目）
+- 主要新知識：
+  1. **Samsung Q2 2026 earnings 歷史規模確認**：Revenue KRW 171T，Op Profit KRW 86–90T（51% margin）——若達成 KRW 90T，將超越 Nvidia FQ1 2026 成為史上單季獲利最高科技企業；SK hynix Q2 75–77% op margin 若實現將超越 TSMC。記憶體超循環峰值以驚人規模驗證中
+  2. **Samsung-Broadcom MOU + Anthropic MOU 正式簽署**：Samsung 2nm 垂直整合策略（SF2+1c DRAM+封裝）具體化，Tesla AI6 訂單確認，TSMC 2027 漲價成為三個重要客戶（Broadcom/Anthropic/Tesla）轉向評估 Samsung 的推力；TSMC 2nm Baoshan 20K wsm 同步量化，5 廠爬坡 CAGR 70%
+  3. **Intel EMIB 記憶體整合生態全面突破——三大記憶體廠（SK hynix+Samsung+Micron）同時確認評估 EMIB**：這是先進封裝領域的關鍵轉折——EMIB 從邏輯晶片封裝技術擴展為記憶體廠商多元化封裝的正式選項，象徵 Intel Foundry 封裝生態在 2.5D HBM 整合市場的實質突破；Intel Ohio Fab 2030 啟用、SK hynix 操作夥伴探索為副線

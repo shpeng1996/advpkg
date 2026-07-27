@@ -3,7 +3,7 @@ title: "三星 / Samsung"
 category: entity
 tags: [IDM, foundry, memory, advanced-packaging, X-Cube, HBM, ISSCC2026, I-CubeS, LPDDR6]
 created: 2026-04-24
-updated: 2026-07-27
+updated: 2026-07-28
 sources: [2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2025-12-30_trendforce_samsung-hbm-surge, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2025-08-05_3dincites_iftle636, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit, 2026-06-10_trendforce_samsung-gwangju-packaging-base, 2026-06-12_digitimes_samsung-packaging-gap-tsmc-intel, 2026-06-15_trendforce_skhynix-hbm4e-sample-timeline-pulled-forward, 2026-06-19_techtimes_vera-rubin-hbm4-suppliers, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-24_techtimes_sk-hynix-dethroned-samsung-ddr5-hbm4, 2026-07-03_trendforce_anthropic-samsung-advanced-packaging, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-07-02_trendforce_samsung-hbm-dummy-die-patent, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo, 2026-07-07_trendforce_samsung-q2-2026-record-krw894t, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-02_trendforce_samsung-sf2p-plus-tsmc-n2-roadmap, 2026-07-14_trendforce_samsung-hbm-hiring-hbm4-hbm4e-hbm5, 2026-07-21_trendforce_samsung-cxl-32-skhynix-imte, 2026-07-24_trendforce_skhynix-3d-stacked-dram-on-logic-on-device-ai]
 related:
   - wiki/entities/tsmc.md
@@ -32,7 +32,18 @@ related:
 
 ## 近期動態 / Recent Developments
 
-- **2026-07-24（⭐次最新）**：**Samsung + imec + KU Leuven + Lam Research 聯合發表氧化物半導體單片 3D DRAM 論文——下一代 On-Device AI 記憶體架構基礎研究**（TrendForce 2026-07-24 引述）：
+- **2026-07-28（⭐最新）**：**Samsung Q2 2026 Preliminary — Revenue KRW 171T，Operating Profit ~18x YoY 歷史新高；Samsung-Broadcom MOU；Anthropic MOU 正式確認**（TrendForce 2026-07-27，引述 Wccftech、SEDaily、Maeil Business、Economic Daily News）：
+  - **Q2 Preliminary（正式財報 July 30）**：Revenue **KRW 171 兆**；Op Profit 預估 KRW 86–90T（51% op margin），YoY +~1,810%（與既有 wiki 記錄一致）。Samsung 半導體部門主管 Kim Yong-kwan 確認：2026 全年獲利將超越過去 40 年累積半導體獲利。若 KRW 90T 達成，將超越 Nvidia FQ1 2026 成為史上單季獲利最高科技公司。
+  - **Samsung-Broadcom MOU 簽署**：涵蓋記憶體（HBM4 + HBM4E）+ 晶圓代工（SF2）雙軌合作；Broadcom 計畫在 AI 加速器中採用 Samsung HBM4；Samsung 垂直整合策略（SF2 + 1c DRAM + 先進封裝）可縮短 Broadcom 設計週期。
+  - **Anthropic MOU 正式簽署**（⭐修正原有「洽談中」狀態）：Anthropic 正式與 Samsung 簽署 MOU，涵蓋 **2nm AI 晶片設計/製造/封裝**；早於 TSMC 2nm 漲價（10%，2027）前確立合作關係。
+  - **Tesla AI6 訂單**：Samsung Taylor 2nm 廠取得 Tesla AI6 晶片訂單；Taylor HVM 預計 **2027**。
+  - **Samsung HBM 目標 2027 重奪市場龍頭**：確認積極擴大 HBM4E 供應給 NVIDIA，深化 Google 合作。
+  *Source: TrendForce 2026-07-27 → [[sources/2026-07-27_trendforce_tsmc-2nm-samsung-broadcom-foundry]], [[sources/2026-07-27_trendforce_q2-memory-earnings-preview]]*
+
+- **2026-07-23（⭐補充）**：**Samsung 正式評估 Intel EMIB 封裝相容性與能效**（TrendForce 2026-07-23，引述 Green Economy News）：Samsung 和 Micron 加入 SK hynix，三大記憶體廠商均在評估 Intel EMIB-based 2.5D 封裝，作為 TSMC CoWoS 供應緊張下的多元化封裝方案。此為三廠同時評估 EMIB 的首次確認。
+  *Source: TrendForce 2026-07-23 → [[sources/2026-07-23_trendforce_skhynix-intel-ohio-fab-emib]]*
+
+- **2026-07-24（次最新）**：**Samsung + imec + KU Leuven + Lam Research 聯合發表氧化物半導體單片 3D DRAM 論文——下一代 On-Device AI 記憶體架構基礎研究**（TrendForce 2026-07-24 引述）：
   - **論文核心**：以**氧化物半導體（Oxide Semiconductor）**取代傳統矽 DRAM 單元，採用**單片 3D（Monolithic 3D）** 方式逐層堆疊 DRAM，實現極高層數的垂直整合
   - **關鍵技術指標（模擬數據）**：寫入電壓低至 **0.3V**（vs 傳統矽 ~1.5V）、驅動電流密度 **~1,000×** 高於傳統 DRAM（利用氧化物半導體高遷移率特性）
   - **技術意義**：若商業化，將允許在極小封裝空間（如手機 SoC 上方）堆疊等同於 HBM 容量的 DRAM，同時大幅降低功耗——是 On-Device AI 推論的理想記憶體架構

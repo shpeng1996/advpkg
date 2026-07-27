@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-07-27
-**頁面總數 Total Pages**：322
-**原始來源數 Sources**：283
+**更新時間 Updated**：2026-07-28
+**頁面總數 Total Pages**：325
+**原始來源數 Sources**：286
 
 ---
 
@@ -63,6 +63,9 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-07-27_trendforce_q2-memory-earnings-preview]] — TrendForce：**Q2 Memory Earnings Preview——Samsung KRW 171T Revenue / KRW 86–90T Op Profit（51% margin，史上最高季度科技企業獲利）；SK hynix KRW 84.1T / 64.1T（75–77% margin，超越 TSMC）；LTA 70% AI 客戶占比**（2026-07-28 收錄；原文 2026-07-27）⭐新增
+- [[sources/2026-07-27_trendforce_tsmc-2nm-samsung-broadcom-foundry]] — TrendForce：**TSMC 2nm Baoshan 廠 20K wsm（2026-05）、N2P H2 2026 量產、5 廠 CAGR 70%（2026-28）；Samsung-Broadcom MOU（HBM4+SF2 ASIC）；Anthropic MOU 正式簽署（2nm 設計/製造/封裝）；Tesla AI6 Samsung Taylor；TSMC 2nm ASP $30K→$33K（2027 漲後）**（2026-07-28 收錄；原文 2026-07-27）⭐新增
+- [[sources/2026-07-23_trendforce_skhynix-intel-ohio-fab-emib]] — TrendForce：**SK hynix Intel Ohio Fab 潛在操作合作夥伴（早期）；SK hynix+Samsung+Micron 三大記憶體廠同時評估 Intel EMIB + HBM 整合——EMIB 記憶體客戶擴展里程碑；Indiana $4B 封裝廠動工確認**（2026-07-28 收錄；原文 2026-07-23）⭐新增
 - [[sources/2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand]] — TrendForce：**AMD MI455X 發布（CoWoS-L + SoIC + 12 HBM4，432GB/22.3 TB/s/40 PFLOPs FP4）；EPYC Venice 高端採 CoWoS-L；SoIC 產能 EOY 2026 上修至 15–20K wsm；Zen 7 + Powertech FOPLP 試產 2H26；CoW 外包 ASE；矽中介層 UMC/Vanguard**（2026-07-27 收錄；原文 2026-07-24）⭐新增
 - [[sources/2026-07-24_trendforce_skhynix-3d-stacked-dram-on-logic]] — TrendForce：**SK hynix 啟動 3D-Stacked DRAM-on-Logic 商業工程（美國客戶）；HBM4→HBF→3D DRAM-on-Logic 三層路線圖；Samsung+imec+KU Leuven+Lam 氧化物半導體單片 3D DRAM 論文（模擬）**（2026-07-27 收錄；原文 2026-07-24）⭐新增
 - [[sources/2026-07-24_trendforce_intel-14a-forward-2028-q2-earnings]] — TrendForce：**Intel 14A 風險生產提前至 2H 2027（提前 1 年）；HVM 2028（提前 1 年）；Q2 2026 $16.1B 超預期；Intel Foundry $5.77B；Tesla 首位 14A 外部客戶；18A-P 風險生產已啟動**（2026-07-27 收錄；原文 2026-07-24）⭐新增

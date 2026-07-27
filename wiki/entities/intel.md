@@ -3,7 +3,7 @@ title: "英特爾 / Intel"
 category: entity
 tags: [IDM, advanced-packaging, EMIB, Foveros, Intel18A, Clearwater-Forest, Foveros-Direct, glass-substrate, 14A, High-NA-EUV, silicon-capacitors, Google-TPU-v8e, Q2-2026-earnings, Tesla-14A]
 created: 2026-04-24
-updated: 2026-07-27
+updated: 2026-07-28
 sources: [2026-04-24_initial-survey, 2026-07-20_trendforce_tsmc-265b-arizona-intel-novalake, 2026-03-18_trendforce_intel-emib-malaysia, 2026-03-03_trendforce_intel-clearwater-forest, 2026-03-05_trendforce_intel-emib-billions, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-04-20_trendforce_intel-foundry-14a-equipment, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-01_semianalysis_cpus-back-datacenter-2026, 2026-04-10_3dincites_intel-gan-chiplet, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks, 2026-06-21_convergedigest_intel-emib-t-multi-die-packaging, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap, 2026-07-01_trendforce_terafab-intel-veteran-hire, 2026-04-07_tomshardware_intel-joins-terafab, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-01-30_tomshardware_intel-ai-chip-test-vehicle-emib-t, 2026-07-14_trendforce_intel-ireland-5b-intel3-europe]
 related:
   - wiki/entities/tsmc.md
@@ -36,7 +36,12 @@ related:
 
 ## 近期動態 / Recent Developments
 
-- **2026-07-24（⭐最新）**：**Intel 14A 提前一年；Q2 2026 業績爆表；Intel Foundry $5.77B 超標**（TrendForce 2026-07-24，引述 Reuters、Wccftech、CNBC、Intel IR）：
+- **2026-07-28（⭐最新）**：**Intel Ohio Fab 尋求操作合作夥伴——SK hynix 為候選之一；Samsung/Micron 評估 EMIB；EMIB 記憶體整合生態全面擴展**（TrendForce 2026-07-23，引述 Semafor、Barron's、Green Economy News）：
+  - **Ohio Fab 操作夥伴探索**：Intel 正尋求操作合作夥伴（非出售），SK hynix 為候選之一，惟雙方均否認收購；討論屬早期，尚未進入正式談判。Intel 可參考 Brookfield SCIP 51/49 模式保留廠房所有權。Ohio 廠設計支援 **14A 及後續節點**，最多 8 座晶圓廠，啟用時程延至 **2030**。
+  - **EMIB + HBM 記憶體整合三廠評估**：Samsung 和 Micron 正式加入 SK hynix，三大記憶體廠商均評估 EMIB-based 2.5D 封裝作為 CoWoS 替代。
+  *Source: TrendForce 2026-07-23 → [[sources/2026-07-23_trendforce_skhynix-intel-ohio-fab-emib]]*
+
+- **2026-07-24（次新）**：**Intel 14A 提前一年；Q2 2026 業績爆表；Intel Foundry $5.77B 超標**（TrendForce 2026-07-24，引述 Reuters、Wccftech、CNBC、Intel IR）：
   - **14A 路線圖提前一年**：風險量產（Risk Production）→ **2H 2027**（原 2H 2028）；高量產（HVM）→ **2028**（原 2029）；與 TSMC 先進節點時程對齊
   - **14A 性能領先 18A**：CEO Lip-Bu Tan 首次公開聲明「14A 在缺陷密度與電晶體性能上均優於 18A」；SRAM 256 良率與缺陷密度超前計畫
   - **14A PDK**：PDK 0.5 完成；PDK 0.9 預計 2026 年 10 月交付
