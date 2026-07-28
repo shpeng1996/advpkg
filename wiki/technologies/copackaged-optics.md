@@ -3,8 +3,8 @@ title: "共封裝光學元件 / Co-Packaged Optics (CPO) — TSMC-COUPE™ & Eco
 category: technology
 tags: [CPO, co-packaged-optics, COUPE, TSMC, GlobalFoundries, Samsung, photonics, AI, HPC, networking, OCI-MSA, DWDM, Broadcom, NVIDIA, glass-substrate, ULCVD, TGV, Spectrum-X, NVL72]
 created: 2026-04-25
-updated: 2026-07-15
-sources: [2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-05-07_trendforce_globalfoundries-silicon-photonics-scale-cpo, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-03-17_coherent_cpo-ofc2026-demo, 2026-06-07_digitimes_jcet-3d-packaging-cpo-plant, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_edn_cpo-technology-status-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-06-24_thelec_corning-glass-bridge-cpo, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-14_trendforce_umc-silith-silicon-photonics-hvm, 2026-07-14_trendforce_huawei-baidu-npo-msa]
+updated: 2026-07-29
+sources: [2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-05-07_trendforce_globalfoundries-silicon-photonics-scale-cpo, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-03-17_coherent_cpo-ofc2026-demo, 2026-06-07_digitimes_jcet-3d-packaging-cpo-plant, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_edn_cpo-technology-status-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-06-24_thelec_corning-glass-bridge-cpo, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-14_trendforce_umc-silith-silicon-photonics-hvm, 2026-07-14_trendforce_huawei-baidu-npo-msa, 2026-07-27_trendforce_presscenter_cpo-switches-nvidia-broadcom-coupe]
 related:
   - wiki/entities/tsmc.md
   - wiki/technologies/cowos.md
@@ -332,3 +332,34 @@ ECTC 2026 場次已記錄 GF + Corning GLASSBRIDGE™ 的可拆卸波導連接�
 | Corning TGV 玻璃基板 CPO 架構 | 基板整合層 | TGV 電氣 + 內嵌波導光學，雙功能玻璃基板 |
 
 *三者均屬 Corning，但代表不同整合深度的 CPO 相關產品線。*
+
+---
+
+## 2026-07-29 更新 / Update
+
+### ⭐ CPO 交換器量產啟動：NVIDIA Spectrum-X + Broadcom Bailly 51.2T；2027–2028 大規模部署
+
+*Source: TrendForce Press Center 2026-07-27*
+
+**NVIDIA Spectrum-X CPO 交換器——400Tb/s 已出貨：**
+- NVIDIA Spectrum-X 系列已通過 TSMC **COUPE** 封裝平台整合矽光子 CPO 模組，實現 **400Tb/s** 機架層級吞吐，現已正式出貨並整合至 **Vera Rubin NVL72** 系統。
+- NVL72 Spectrum-X 乙太網路光學交換器搭配確認，代表 COUPE CPO 平台從「試產驗證」進入「hyperscaler 大批量出貨」階段（2026 H1）。
+
+**Broadcom 51.2T Bailly CPO——ODM 量產確認（Delta、Micas Networks）：**
+- Broadcom Tomahawk 5（Bailly）51.2T CPO 交換器現由 **Delta Electronics** 與 **Micas Networks** 完成 ODM 量產製造。
+- **功耗**：相較傳統可插拔光學（pluggable optics），CPO 方案實現 **-70%** 功耗削減——這是全 wiki 收錄最明確的 CPO vs 可插拔功耗量化對比。
+- **Meta 實際部署驗證**：Meta 在其自建基礎設施完成 Bailly CPO 交換器的實際部署驗證，成為超大規模資料中心（hyperscaler）首批 CPO 真實使用案例記錄。
+
+**CPO 量產三大瓶頸框架（TrendForce 分析）：**
+
+| 瓶頸 | 描述 | 現況 |
+|------|------|------|
+| **1. 標準化** | OCP OSFP-XD 物理介面、OCI-MSA 互操作規範 | 2026 年持續演進 |
+| **2. 生態系成熟度** | 測試平台（高速光學測試昂貴）、軟體定義光學（SDN-Photonics）生態 | 仍為瓶頸 |
+| **3. 客戶信心** | 長期可靠性資料庫（CPO 無法現場更換光模組）、系統整合商技術能力 | Meta 部署驗證為重要里程碑 |
+
+**產業路線圖——2027–2028 大規模部署：**
+- 主要 hyperscaler（Microsoft、Google、Amazon 等）已承諾 **2027–2028 年**大批量採購 CPO 交換器，確認大規模部署時程。
+- **垂直整合為主流策略**：NVIDIA（Spectrum-X + TSMC COUPE）、Broadcom（Bailly + Delta/Micas）均選擇「IC 設計 + 封裝平台 + ODM 量產」三端垂直控制，排除傳統光模組供應商介入，形成高度封閉的 CPO 生態鏈。
+
+**wiki 含義**：此更新提供了 Broadcom Bailly -70% 功耗這一迄今最明確的 CPO 效率量化數據，並首次記錄 Meta 實際部署驗證的商業意義——這是 CPO 從「技術演示」到「hyperscaler 採購標準品」的關鍵轉折信號。3 瓶頸框架補充了既有 wiki 對「CPO 商業化挑戰」的結構性理解。

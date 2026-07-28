@@ -3,8 +3,8 @@ title: "CoPoS — Chip-on-Panel-on-Substrate"
 category: technology
 tags: [panel-level-packaging, FOPLP, TSMC, CoPoS, AI, HPC, AP7, InFO]
 created: 2026-04-25
-updated: 2026-07-14
-sources: [2026-04-13_trendforce_copos-pilot, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2025-09-12_trendforce_foplp-competitive-landscape-2025, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-20_wccftech_tsmc-copos-glass-core-cost-cut, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-04-28_cw_tsmc-copos-move-really-means, 2026-06-14_digitaltrends_tsmc-copos-glass-temporary-carrier]
+updated: 2026-07-29
+sources: [2026-04-13_trendforce_copos-pilot, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2025-09-12_trendforce_foplp-competitive-landscape-2025, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-20_wccftech_tsmc-copos-glass-core-cost-cut, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-04-28_cw_tsmc-copos-move-really-means, 2026-06-14_digitaltrends_tsmc-copos-glass-temporary-carrier, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan]
 related:
   - wiki/technologies/cowos.md
   - wiki/entities/tsmc.md
@@ -253,3 +253,17 @@ SCHMID（德國 PCB/IC 基板設備商）揭示：TSMC、Intel、Samsung 及其�
 - **量產時程再確認**：CoPoS 目標 **2H28** 量產（與 WCCFTECH 2026-06-20 及 TrendForce 多篇資料一致）。
 
 **wiki 含義**：此條目提供了本 wiki 迄今最明確的 CoPoS 玻璃角色定義（臨時載具 vs 永久核心基板），並首次以分析師具名方式確認 Feynman 為 CoPoS 首發客戶。與 WCCFTECH 2026-06-22 報導的「CoWoS 玻璃核心基板（三層 ABF 結構）」形成互補——後者描述的是 CoWoS 路線的玻璃化（2027–2028+），前者是 CoPoS 的臨時製程載具使用，兩者技術定位不同，不應混淆。
+
+---
+
+## 2026-07-29 更新 / Update
+
+### 台灣面板廠切入方形玻璃基板 FOPLP（Innolux、AUO）
+
+*Source: TrendForce 2026-07-28*
+
+- **Innolux（群創光電）+ AUO（友達光電）**：台灣兩大面板廠正積極開發**方形（square）玻璃基板 FOPLP** 方案，利用現有大面積面板製程設備與玻璃加工能力切入先進封裝，與 TSMC CoPoS 路線形成台灣本土封裝生態系的互補縱深。面板廠強調方形格式更有效利用設備產能（圓形晶圓浪費角落面積），成本優勢明顯。
+- 台灣面板廠 FOPLP 的進入時間軸與 TSMC CoPoS（2H28 量產）平行推進；在成熟應用（PMIC、RF）的 FOPLP 已運作中（最大 620×750mm 面板），下一步向 AI/HPC 封裝應用拓展。
+- 此動態與本 wiki 2026-06-18（TrendForce 台灣 FOPLP 面板廠）更新及 2026-04-28（CommonWealth CoPoS 台灣供應鏈）已建立的框架一致，提供時程上的新確認。
+
+**wiki 含義**：台灣面板廠（Innolux、AUO）切入方形玻璃 FOPLP 的行動，進一步強化「台灣面板廠作為 CoPoS/FOPLP 生態補充節點」的定位——不與 TSMC CoPoS 直接競爭，而是在成熟製程端提供先行量產驗證，為整個玻璃基板 FOPLP 供應鏈增加冗餘度。與 [[technologies/glass-substrate.md]] 中 TPK-KY TGV 試產線及 BOE HVM 2028 目標並列觀察，台灣面板廠的切入角度（方形玻璃 FOPLP）與中國廠商（TGV 玻璃基板）、韓國廠商（Absolics 核心基板）各有技術側重。

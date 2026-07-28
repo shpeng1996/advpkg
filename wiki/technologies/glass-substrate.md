@@ -1,10 +1,10 @@
 ---
 title: "玻璃基板 / Glass Core Substrate"
 category: technology
-tags: [glass-substrate, TGV, panel-level, FC-BGA, CoPoS, Absolics, DNP, Rapidus, warpage, SeWaRe, glass-interposer, BOE, ULCVD, non-embedding]
+tags: [glass-substrate, TGV, panel-level, FC-BGA, CoPoS, Absolics, DNP, Rapidus, warpage, SeWaRe, glass-interposer, BOE, ULCVD, non-embedding, Lens-Technology, TPK-KY, Innolux, AUO]
 created: 2026-05-08
-updated: 2026-07-26
-sources: [2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-05-05_trendforce-insights_glass-substrate-development, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-05-29_3dincites_rapidus-2nm-advanced-packaging-ai-foundry, 2026-06-01_trendforce_intel-3dgs-india-glass-substrate, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-06-20_biggo_boe-glass-substrate-pilot, 2026-06-28_economy-ac_glass-substrate-global-race, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo]
+updated: 2026-07-29
+sources: [2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-05-05_trendforce-insights_glass-substrate-development, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-05-29_3dincites_rapidus-2nm-advanced-packaging-ai-foundry, 2026-06-01_trendforce_intel-3dgs-india-glass-substrate, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-06-20_biggo_boe-glass-substrate-pilot, 2026-06-28_economy-ac_glass-substrate-global-race, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan]
 related:
   - wiki/technologies/copos.md
   - wiki/technologies/foplp.md
@@ -78,7 +78,10 @@ SeWaRe 是玻璃量產最大障礙——切割/鑽孔時形成的微裂紋成為
 - **2025-Q2**：Absolics（SK Group + Applied Materials JV，Georgia 廠；KRW 300B 投資）宣布 2026 量產目標
 - **2025-Q3**：TSMC CoPoS 確認採用 310mm×310mm 玻璃中介層（~400µm 厚）；2028 量產
 - **2025-12**：DNP 久喜工廠試驗線啟動（510×515mm）；Rapidus 展示 600×600mm 最大玻璃中介層樣品（SEMICON Japan）；Samsung SEMCO 建立玻璃核心基板 mini line
-- **2026-06-10（⭐最新）**：**Intel ECTC 2026 確認完全銅填充 TGV 通過嚴酷熱循環可靠度測試**（SemiEngineering 報導）：Intel 展示完全銅填充（fully Cu-filled）TGV 在**嚴酷熱循環（harsh thermal cycling）**後零失效；玻璃基板翹曲量極低，優於有機基板，確認支援多晶片精密對準。此為玻璃基板從實驗室走向 HVM 最重要的可靠度里程碑之一。同次 ECTC，Intel 亦展示 **V-groove 玻璃耦合器用於 CPO 整合**（詳見 [[technologies/copackaged-optics]]）。
+- **2026-07-28（⭐最新）**：**Intel + Lens Technology（藍思科技）宣布玻璃核心基板先進封裝合作**，量產目標最早 **2H 2027**；**BOE 玻璃基板全自動生產線 2026 H1 已部署**，目標 **2028 HVM**；**TPK-KY** 於台灣建置 TGV 玻璃基板試產線；**Innolux + AUO** 開發方形玻璃基板 FOPLP 方案（台灣面板廠加速切入）。
+  *Source: TrendForce 2026-07-28*
+
+- **2026-06-10**：**Intel ECTC 2026 確認完全銅填充 TGV 通過嚴酷熱循環可靠度測試**（SemiEngineering 報導）：Intel 展示完全銅填充（fully Cu-filled）TGV 在**嚴酷熱循環（harsh thermal cycling）**後零失效；玻璃基板翹曲量極低，優於有機基板，確認支援多晶片精密對準。此為玻璃基板從實驗室走向 HVM 最重要的可靠度里程碑之一。同次 ECTC，Intel 亦展示 **V-groove 玻璃耦合器用於 CPO 整合**（詳見 [[technologies/copackaged-optics]]）。
   *Source: SemiEngineering 2026-06-05（引述 ECTC 2026）*
 
 - **2026-01-22**：Intel 在 NEPCON Japan 展示 EMIB + 玻璃核心基板樣品（78×77mm，10-2-10 stack，800µm，45µm bump pitch），報告「**No SeWaRe**」——量產關鍵里程碑 ⭐
@@ -104,8 +107,18 @@ SeWaRe 是玻璃量產最大障礙——切割/鑽孔時形成的微裂紋成為
 | 廠商 | 技術 | 尺寸 / 定位 | 量產目標 |
 |------|------|------------|---------|
 | **Intel** | 厚芯玻璃核心基板 + EMIB | 78×77mm；10-2-10 stack | HVM 2026–2030 |
+| **Intel + Lens Technology（藍思科技）** | 玻璃核心基板封裝合作（2026-07 宣布） | — | **最早 2H 2027** |
 | **TSMC** | CoPoS 玻璃中介層 | 310×310mm；~400µm | 2028–2029 |
 | **Samsung Foundry** | 玻璃中介層（CES 2024 宣布） | — | ~2027 |
+
+**台灣面板/封裝廠（新興玩家）：**
+
+| 廠商 | 技術路線 | 狀態 |
+|------|---------|------|
+| **TPK-KY（宸鴻）** | TGV 玻璃基板試產線（台灣） | 2026 試產中 |
+| **Innolux（群創）** | 方形玻璃基板 FOPLP | 開發中 |
+| **AUO（友達）** | 方形玻璃基板 FOPLP | 開發中 |
+| **BOE** | TGV 玻璃基板全自動生產線 | 2026 H1 自動化完成；HVM 2028 目標 |
 
 **設備 / 材料供應商：**
 
@@ -162,6 +175,21 @@ Unimicron 在 IMAPS JMEP 發表研究，確認玻璃核心基板的封裝互連�
 - Google 和 Microsoft 已將玻璃基板納入硬體設計初期考量；**AMD 和 AWS 正測試 Absolics 原型品（2026-05 確認）**——hyperscaler 需求驗證已至，但下單量產時程仍不確定。
 - **ULCVD（超短脈衝雷射誘導 CVD）**是否能成為解決 TGV/RDL 三維互連製程瓶頸的替代方案？全南大學 2026-04 初步示範碳電路 ULCVD，後續需擴展至 Cu/Au 配線材料才具量產潛力。
 - **標準控制權之爭**：Intel（目標 2030）vs Absolics（搶先量產定標準）vs Samsung（整合解決方案）的三方博弈，最終哪個設計標準會被全球 fabless 採用，直接影響整個封裝供應鏈生態。
+
+---
+
+## ⭐ 2026-07-29 更新：Intel + Lens Technology 合作、BOE HVM 2028、台灣面板廠切入
+
+*Source: TrendForce 2026-07-28*
+
+- **Intel + Lens Technology（藍思科技）玻璃核心基板合作**：Intel 宣布與中國大型觸控/玻璃製造商藍思科技就玻璃核心基板先進封裝建立合作，目標最早 **2H 2027** 量產。藍思科技為蘋果玻璃供應商，具備高精度玻璃加工能力，此合作為 Intel 的 TGV 玻璃基板供應鏈增添新節點。
+
+- **BOE 全自動生產線部署完成，HVM 目標 2028**：BOE 玻璃基板封裝全自動生產線已於 **2026 H1** 完成部署（此前試產線已達自動化但量產良率未達標，見 2026-06-20 更新）；更新後目標為 **2028 年 HVM（量產）**，與 TSMC CoPoS 量產時程相近。
+
+- **台灣面板廠加速切入 FOPLP/玻璃基板**：
+  - **TPK-KY（宸鴻光電）** 已在台灣建立 **TGV 玻璃基板試產線**，定位封裝載板供應商
+  - **Innolux（群創光電）** + **AUO（友達光電）** 投入開發**方形（square）玻璃基板 FOPLP** 方案，利用面板廠大面積製程優勢切入先進封裝
+  - 台灣面板廠的進入代表 FOPLP/CoPoS 玻璃基板生態從「韓/日/中/美」擴展為「全球多極競爭」格局
 
 ---
 
@@ -399,7 +427,7 @@ TrendForce（引述 Nikkei）報導：
   - 資本市場：2026 年 7 月正式恢復 ChiNext IPO 申請
   - 市場背景：日本 **Nittobo** 長期主導全球 T-glass 市場（約 90% 市占）
 
-**對封裝供應鏈的影響**：T-glass 布是 AI 伺服器封裝基板（ABF 基板）的核心增強材，供應商高度集中於 Nittobo 的格局正逐步被挑戰。T-glass 短缺（先前 Nittobo 漲價 +20–30%，見 wiki/sources/2026-04-30_trendforce-insights_glass-fiber-cloth-shortage.md）是 AI 伺服器封裝基板成本壓力的�
+**對封裝供應鏈的影響**：T-glass 布是 AI 伺服器封裝基板（ABF 基板）的核心增強材，供應商高度集中於 Nittobo 的格局正逐步被挑戰。T-glass 短缺（先前 Nittobo 漲價 +20–30%，見 wiki/sources/2026-04-30_trendforce-insights_glass-fiber-cloth-shortage.md）是 AI 伺服器封裝基板成本壓力的�
 ---
 
 ## ⭐ 2026-07-07 更新：Samsung EM + Sumitomo「GlaSSEM」JV + TSMC JPCA 首次量化性能數據

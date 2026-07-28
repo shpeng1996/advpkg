@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-07-28
-**頁面總數 Total Pages**：325
-**原始來源數 Sources**：286
+**更新時間 Updated**：2026-07-29
+**頁面總數 Total Pages**：328
+**原始來源數 Sources**：289
 
 ---
 
@@ -63,7 +63,10 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
-- [[sources/2026-07-27_trendforce_q2-memory-earnings-preview]] — TrendForce：**Q2 Memory Earnings Preview——Samsung KRW 171T Revenue / KRW 86–90T Op Profit（51% margin，史上最高季度科技企業獲利）；SK hynix KRW 84.1T / 64.1T（75–77% margin，超越 TSMC）；LTA 70% AI 客戶占比**（2026-07-28 收錄；原文 2026-07-27）⭐新增
+- [[sources/2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan]] — TrendForce：**玻璃基板 CoPoS 生態新局——Intel + Lens Technology HVM 2H27；BOE 全自動線 HVM 2028；Powertech 加入 AMD AI 供應鏈 2Q26；Powertech+Broadcom 新加坡 JV（加成式 RDL）；Innolux+AUO 方形玻璃基板 FOPLP；TPK-KY TGV 試產線**（2026-07-29 收錄）⭐新增
+- [[sources/2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b]] — TrendForce：**NVIDIA Vera Rubin SOCAMM 腰斬 192GB→96GB；HBM4 BOM 29%；LPDDR5X 60% 供應缺口；Bernstein HBM4 ASP $53/GB（2027）；NVIDIA-SK Group $500B LOI**（2026-07-29 收錄）⭐新增
+- [[sources/2026-07-27_trendforce_presscenter_cpo-switches-nvidia-broadcom-coupe]] — TrendForce：**CPO 交換器商業化——NVIDIA Spectrum-X 400Tb/s 出貨（TSMC COUPE）；Broadcom Bailly 51.2T -70% 功耗（Delta/Micas ODM，Meta 驗證）；3 大商業化瓶頸；2027–2028 hyperscaler 大量部署**（2026-07-29 收錄）⭐新增
+- [[sources/2026-07-27_trendforce_q2-memory-earnings-preview]] — TrendForce：**Q2 Memory Earnings Preview——Samsung KRW 171T Revenue / KRW 86–90T Op Profit（51% margin，史上最高季度科技企業獲利）；SK hynix KRW 84.1T / 64.1T（75–77% margin，超越 TSMC）；LTA 70% AI 客戶占比**（2026-07-28 收錄；原文 2026-07-27）
 - [[sources/2026-07-27_trendforce_tsmc-2nm-samsung-broadcom-foundry]] — TrendForce：**TSMC 2nm Baoshan 廠 20K wsm（2026-05）、N2P H2 2026 量產、5 廠 CAGR 70%（2026-28）；Samsung-Broadcom MOU（HBM4+SF2 ASIC）；Anthropic MOU 正式簽署（2nm 設計/製造/封裝）；Tesla AI6 Samsung Taylor；TSMC 2nm ASP $30K→$33K（2027 漲後）**（2026-07-28 收錄；原文 2026-07-27）⭐新增
 - [[sources/2026-07-23_trendforce_skhynix-intel-ohio-fab-emib]] — TrendForce：**SK hynix Intel Ohio Fab 潛在操作合作夥伴（早期）；SK hynix+Samsung+Micron 三大記憶體廠同時評估 Intel EMIB + HBM 整合——EMIB 記憶體客戶擴展里程碑；Indiana $4B 封裝廠動工確認**（2026-07-28 收錄；原文 2026-07-23）⭐新增
 - [[sources/2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand]] — TrendForce：**AMD MI455X 發布（CoWoS-L + SoIC + 12 HBM4，432GB/22.3 TB/s/40 PFLOPs FP4）；EPYC Venice 高端採 CoWoS-L；SoIC 產能 EOY 2026 上修至 15–20K wsm；Zen 7 + Powertech FOPLP 試產 2H26；CoW 外包 ASE；矽中介層 UMC/Vanguard**（2026-07-27 收錄；原文 2026-07-24）⭐新增

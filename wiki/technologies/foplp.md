@@ -3,8 +3,8 @@ title: "FOPLP — 扇出面板級封裝 / Fan-Out Panel-Level Packaging"
 category: technology
 tags: [fan-out, panel-level, TSMC, Samsung, ASE, Powertech, Innolux, CoPoS, InFO, cost-reduction]
 created: 2026-05-03
-updated: 2026-07-27
-sources: [2025-09-12_trendforce_foplp-competitive-2025, 2026-04-13_trendforce_copos-pilot, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-21_3dincites_acm-wlp-plp-process-trends, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-15_digitimes_manz-310mm-foplp-ecd-equipment, 2026-06-13_digitimes_linkotech-foplp-rollout-traction, 2026-06-20_prnewswire_manz-asia-310mm-ecd, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_digitimes_tsmc-foplp-timeline-skepticism, 2026-07-06_trendforce_cfmee-plp2000-china-first-plp, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand]
+updated: 2026-07-29
+sources: [2025-09-12_trendforce_foplp-competitive-2025, 2026-04-13_trendforce_copos-pilot, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-21_3dincites_acm-wlp-plp-process-trends, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-15_digitimes_manz-310mm-foplp-ecd-equipment, 2026-06-13_digitimes_linkotech-foplp-rollout-traction, 2026-06-20_prnewswire_manz-asia-310mm-ecd, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_digitimes_tsmc-foplp-timeline-skepticism, 2026-07-06_trendforce_cfmee-plp2000-china-first-plp, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan]
 related:
   - wiki/technologies/copos.md
   - wiki/technologies/info-wmcm.md
@@ -158,3 +158,17 @@ AMD 於 COMPUTEX 2026 前夕公開確認：Powertech Technology（PTI）已完�
 AMD Zen 7（代號 Grimlock）的封裝方案也將 PTI FOPLP 列入評估，配合 TSMC A14 節點（Fab 25 P1，台中），量產目標 2028。*Source: TrendForce 2026-05-25*
 
 **⭐ 2026-07-27 更新——Zen 7 FOPLP 時程具體化**：TrendForce 2026-07-24 進一步確認，AMD Zen 7 CPU 採用 **Powertech FOPLP** 的時程已從「列入評估」推進至：**試產 2H 2026、量產最早 2027**。此為業界首款 CPU 進入 FOPLP 商業量產，是面板級封裝應用場景從 AI GPU/網路晶片擴展至通用 CPU 的重大里程碑。*Source: TrendForce 2026-07-24*
+
+---
+
+## ⭐ 2026-07-29 更新：Powertech AI 供應鏈確認 + Broadcom 新加坡 JV
+
+*Source: TrendForce 2026-07-28*
+
+- **Powertech 正式進入 AMD AI GPU 供應鏈（2Q26 確認）**：繼 AMD CPU（Zen 7 EFB）後，Powertech 進一步確認已於 2026 Q2 加入 AMD **AI GPU 供應鏈**，成為台灣 OSAT 中 FOPLP AI 應用的先行落地案例。
+
+- **Powertech FOPLP 全球首家 AI 級 FOPLP 量產目標（2027 年中）**：目標在 **2027 年中（mid-2027）** 成為全球首家達到 AI 晶片等級 FOPLP 量產的 OSAT，較原計畫（1H27）更具體化。
+
+- **Powertech + Broadcom 新加坡合資（JV）——加成式細線 RDL**：Powertech 與 Broadcom 在**新加坡**建立合資企業，聚焦**加成式（additive）細線 RDL（Redistribution Layer）製程**。加成式 RDL 較傳統半減成式製程（semi-additive）可實現更細線寬（<2µm L/S），材料利用率更高，廢液更少，是下一代 FOPLP 基板實現 chiplet 互連的關鍵製程技術。此 JV 為 Broadcom 確保 AI 網路晶片（如 Bailly 51.2T）的 FOPLP 先進 RDL 封裝產能，同時為 Powertech 帶入 Broadcom 的 AI 晶片封裝客戶群。
+
+**wiki 含義**：Powertech-Broadcom 新加坡 JV 是 FOPLP 生態「客戶 + OSAT 垂直整合」模式的最新範例，結構上類似 CoWoS 生態中的長期代工鎖定。加成式 RDL 若量產驗證成功，將對整個 FOPLP 供應鏈的 L/S 能力設定新基準，與 wiki 中 ECTC 2026 USHIO 無接縫面板曝光（1.5µm L/S）形成技術路線圖的呼應。

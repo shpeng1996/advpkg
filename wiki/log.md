@@ -2175,3 +2175,34 @@ an（2028–2029 量產世代）為 CoPoS 最可能的首批量產客戶——�
   1. **Samsung Q2 2026 earnings 歷史規模確認**：Revenue KRW 171T，Op Profit KRW 86–90T（51% margin）——若達成 KRW 90T，將超越 Nvidia FQ1 2026 成為史上單季獲利最高科技企業；SK hynix Q2 75–77% op margin 若實現將超越 TSMC。記憶體超循環峰值以驚人規模驗證中
   2. **Samsung-Broadcom MOU + Anthropic MOU 正式簽署**：Samsung 2nm 垂直整合策略（SF2+1c DRAM+封裝）具體化，Tesla AI6 訂單確認，TSMC 2027 漲價成為三個重要客戶（Broadcom/Anthropic/Tesla）轉向評估 Samsung 的推力；TSMC 2nm Baoshan 20K wsm 同步量化，5 廠爬坡 CAGR 70%
   3. **Intel EMIB 記憶體整合生態全面突破——三大記憶體廠（SK hynix+Samsung+Micron）同時確認評估 EMIB**：這是先進封裝領域的關鍵轉折——EMIB 從邏輯晶片封裝技術擴展為記憶體廠商多元化封裝的正式選項，象徵 Intel Foundry 封裝生態在 2.5D HBM 整合市場的實質突破；Intel Ohio Fab 2030 啟用、SK hynix 操作夥伴探索為副線
+
+---
+
+## [2026-07-29] collect | 每日自動蒐集 — 玻璃基板 Intel+Lens Tech、NVIDIA SOCAMM 腰斬、Broadcom CPO 量產、Powertech AMD AI 供應鏈 + Broadcom 新加坡 JV
+
+- 搜尋查詢數：7 組（多主題）
+- 成功抓取：3 篇（存入 raw/articles/ 3 篇）
+  - raw/articles/2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan.md（TrendForce 2026-07-28）
+  - raw/articles/2026-07-28_trendforce_nvidia-vera-rubin-socamm-halved-memory-bom.md（TrendForce 2026-07-28）
+  - raw/articles/2026-07-27_trendforce_presscenter_cpo-switches-nvidia-broadcom-volume-ramp.md（TrendForce Press Center 2026-07-27）
+- 失敗/跳過：SemiEngineering Week #148（JS 動態渲染，持續無法取得正文）；SK hynix Q2 2026 正式財報（2026-07-29 才公布，collect 時尚未發布，pending 下次）；多篇低相關性文章（略過）
+- 新增 wiki 頁面：3 頁（wiki/sources/ 3 頁）
+  - wiki/sources/2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan.md（⭐新增）
+  - wiki/sources/2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b.md（⭐新增）
+  - wiki/sources/2026-07-27_trendforce_presscenter_cpo-switches-nvidia-broadcom-coupe.md（⭐新增）
+- 更新 wiki 頁面：10 頁
+  - wiki/technologies/glass-substrate.md（Intel+Lens Tech HVM 2H27；BOE HVM 2028；TPK-KY TGV 試產線；Innolux+AUO 方形玻璃 FOPLP；新 Key Players 表格；updated 2026-07-29）
+  - wiki/technologies/copos.md（Innolux+AUO 方形玻璃 FOPLP；台灣面板廠 FOPLP 生態補充；updated 2026-07-29）
+  - wiki/technologies/foplp.md（Powertech AMD AI 供應鏈 2Q26 確認；mid-2027 AI 級 FOPLP 量產目標；Powertech+Broadcom 新加坡 JV 加成式 RDL；updated 2026-07-29）
+  - wiki/technologies/copackaged-optics.md（NVIDIA Spectrum-X 400Tb/s；Broadcom Bailly -70% 功耗 Delta/Micas ODM；Meta 部署驗證；3 瓶頸框架；2027–2028 部署路線圖；updated 2026-07-29）
+  - wiki/technologies/hbm4.md（Bernstein HBM4 ASP $53/GB 2027 預測；Vera Rubin 20.7TB HBM4/NVL72；updated 2026-07-29）
+  - wiki/entities/nvidia.md（SOCAMM 腰斬 192GB→96GB；29% BOM 壓力；60% LPDRAM 缺口；SK Group $500B LOI；CPO Spectrum-X 出貨；updated 2026-07-29）
+  - wiki/entities/sk-hynix.md（NVIDIA–SK Group $500B LOI；Q2 2026 財報 pending；updated 2026-07-29）
+  - wiki/entities/intel.md（Lens Technology 玻璃核心基板合作 HVM 2H27；updated 2026-07-29）
+  - wiki/index.md（頁面數 325→328；來源數 286→289；更新 2026-07-28→2026-07-29）
+  - wiki/log.md（本條目）
+- 主要新知識：
+  1. **玻璃基板生態新進入者——Intel+Lens Tech（2H27）、BOE HVM 2028、TPK-KY TGV 試產**：玻璃基板供應鏈從「韓/日/美」進一步擴展至中國（BOE+Lens Tech）與台灣（TPK-KY、Innolux、AUO），「全球多極競爭」格局成形
+  2. **NVIDIA Vera Rubin SOCAMM 腰斬（192→96GB）揭示記憶體 BOM 壓力**：LPDDR5X 記憶體 BOM 佔整體 29%、2026 年供應缺口 60%，NVIDIA 主動砍配置以控制成本；Bernstein $53/GB HBM4 2027 ASP 預測是 wiki 首次收錄的明確 HBM4 價格點
+  3. **NVIDIA-SK Group $500B LOI**：最大規模的 AI 供應鏈戰略承諾，鎖定 HBM + AI 資料中心基礎設施長期綁定關係
+  4. **CPO 量產里程碑——Broadcom Bailly -70% 功耗（Meta 驗證）、Delta/Micas ODM 量產**：CPO 進入「hyperscaler 採購標準品」階段的決定性商業信號；Powertech+Broadcom 新加坡加成式 RDL JV 為 FOPLP 生態的垂直整合新案例

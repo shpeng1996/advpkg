@@ -3,8 +3,8 @@ title: "HBM4 — High Bandwidth Memory 4"
 category: technology
 tags: [memory, HBM, JEDEC, standards, AI, HPC, HBM4E, cleanroom, capacity, ISSCC2026, ZAM, HB3DM]
 created: 2026-04-24
-updated: 2026-07-25
-sources: [2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-03-18_trendforce_intel-emib-malaysia, 2026-01-23_trendforce_hbm4e-samsung-skhynix-mid2026, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-01-13_semiengineering_hbm4-microbumps, 2025-12-18_trendforce_micron-capex-hbm4, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h, 2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-03-03_trendforce_sk-hynix-hbm4-tight-gaps, 2025-08-12_semianalysis_hbm-roadmap, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit, 2026-06-09_astutegroup_hbm-market-share-2026-battle, 2026-06-10_trendforce_samsung-gwangju-packaging-base, 2026-06-15_trendforce_skhynix-hbm4e-sample-timeline-pulled-forward, 2026-06-20_techtimes_skhynix-hbm4e-12layer-samples, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-27_tweaktown_hbm4-16hi-nvidia-supply-fight, 2026-06-26_semieng_chip-week-144, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-14_trendforce_samsung-hbm-hiring-hbm4-hbm4e-hbm5, 2026-07-14_trendforce_skhynix-yongin-y1-feb2027]
+updated: 2026-07-29
+sources: [2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-03-18_trendforce_intel-emib-malaysia, 2026-01-23_trendforce_hbm4e-samsung-skhynix-mid2026, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-01-13_semiengineering_hbm4-microbumps, 2025-12-18_trendforce_micron-capex-hbm4, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h, 2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-03-03_trendforce_sk-hynix-hbm4-tight-gaps, 2025-08-12_semianalysis_hbm-roadmap, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit, 2026-06-09_astutegroup_hbm-market-share-2026-battle, 2026-06-10_trendforce_samsung-gwangju-packaging-base, 2026-06-15_trendforce_skhynix-hbm4e-sample-timeline-pulled-forward, 2026-06-20_techtimes_skhynix-hbm4e-12layer-samples, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-27_tweaktown_hbm4-16hi-nvidia-supply-fight, 2026-06-26_semieng_chip-week-144, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-14_trendforce_samsung-hbm-hiring-hbm4-hbm4e-hbm5, 2026-07-14_trendforce_skhynix-yongin-y1-feb2027, 2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b]
 related:
   - wiki/entities/sk-hynix.md
   - wiki/entities/samsung.md
@@ -593,3 +593,20 @@ HBM 在 TSMC CoWoS 製程中與 GPU 基板共同封裝後，物理上融合為�
 | HBM 佔 SK Hynix 總營收比例 | >40%（2026 Q1） |
 
 高晶圓消耗比（3×）使 HBM 成本結構高於標準 DRAM，但高頻寬溢價足以支撐 71.5% 的超高利潤率。此數據說明 HBM 已從「技術產品」轉化為「平台壟斷式利潤」的商業模式。
+
+---
+
+### ⭐ HBM4 ASP 預測：Bernstein $53/GB（2027）；NVIDIA Vera Rubin GPU 機架 HBM4 需求
+
+*Source: TrendForce 2026-07-28（引述 Bernstein 研究；NVIDIA 供應鏈情報）*
+
+**Bernstein HBM4 ASP 預測——2027 $53/GB：**
+- 投資銀行 Bernstein 發布 HBM4 平均售價（ASP）預測：**2027 年 HBM4 ASP 約 $53/GB**。
+- 此數據為 wiki 收錄迄今最明確的 HBM4 價格預測點，可作為市場預算、BOM 成本分析的參考基準。
+- 背景：HBM3E 16Hi（現行最高規格）2026 年市場估計 ASP 約 $30–40/GB；HBM4（更複雜的 base die、更高層數）的溢價反映在此 $53/GB 預測中。
+
+**NVIDIA Vera Rubin GPU 機架 HBM4 規格確認：**
+- Vera Rubin NVL72（72 顆 GPU）標配 **20.7TB HBM4**，整體記憶體頻寬 **1.6PB/s**。
+- 若以 Bernstein $53/GB 計算，單套 NVL72 的 HBM4 記憶體 BOM 約 **$109.7M**（20.7TB × $53/GB），佔整體系統成本的顯著比例。
+
+**wiki 含義**：$53/GB 的 HBM4 預測與本 wiki 其他節次的 NVIDIA Vera Rubin BOM 分析（SOCAMM 29% BOM 壓力、記憶體成本過高導致訂單調整）互相呼應——高 HBM4 ASP 是 NVIDIA 調整 Vera Rubin NVL72 配置（SOCAMM 縮減 192GB→96GB）的核心成本背景因素之一。見 [[entities/nvidia.md]] 對應條目。
