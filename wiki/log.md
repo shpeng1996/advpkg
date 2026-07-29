@@ -2206,3 +2206,37 @@ an（2028–2029 量產世代）為 CoPoS 最可能的首批量產客戶——�
   2. **NVIDIA Vera Rubin SOCAMM 腰斬（192→96GB）揭示記憶體 BOM 壓力**：LPDDR5X 記憶體 BOM 佔整體 29%、2026 年供應缺口 60%，NVIDIA 主動砍配置以控制成本；Bernstein $53/GB HBM4 2027 ASP 預測是 wiki 首次收錄的明確 HBM4 價格點
   3. **NVIDIA-SK Group $500B LOI**：最大規模的 AI 供應鏈戰略承諾，鎖定 HBM + AI 資料中心基礎設施長期綁定關係
   4. **CPO 量產里程碑——Broadcom Bailly -70% 功耗（Meta 驗證）、Delta/Micas ODM 量產**：CPO 進入「hyperscaler 採購標準品」階段的決定性商業信號；Powertech+Broadcom 新加坡加成式 RDL JV 為 FOPLP 生態的垂直整合新案例
+
+---
+
+## [2026-07-30] collect | 每日自動蒐集 — SK hynix Q2 2026 正式財報（HBM4 量產確認）+ TSMC CEO 歡迎 Intel EMIB + 中國半導體基金 + 翹曲管理挑戰
+
+- 搜尋查詢數：7 組（TSMC 封裝動態、HBM 記憶體、混合接合、面板級封裝、學術研究、標準動態、競爭對手）
+- 成功抓取：4 篇（raw/articles/ 4 篇；papers/ 0；reports/ 0）
+- 失敗/跳過：若干
+  - SemiEngineering panel-level second wave：動態渲染（JS），WebFetch 無正文
+  - SemiEngineering Week #148：JS 動態渲染，跳過
+  - SK hynix Q2 via BigGo：中文轉載，優先抓取官方新聞稿
+  - 其他低相關性結果：跳過
+- 新增 raw 檔案：
+  1. raw/articles/2026-07-29_skhynix_q2-2026-financial-results.md（SK hynix 官方 Q2 財報）
+  2. raw/articles/2026-07-29_trendforce_china-semiconductor-industrial-investment-funds.md（中國半導體基金）
+  3. raw/articles/2026-07-16_trendforce_tsmc-welcomes-intel-emib-market-flexibility.md（TSMC CEO EMIB 表態）
+  4. raw/articles/2026-07-29_semieng_warpage-management-advanced-packaging.md（翹曲管理，partial）
+- 新增 wiki 來源摘要頁：4 頁（wiki/sources/ 下新增 4 頁）
+- 更新 wiki 實體/技術/概念頁：8 頁
+  - wiki/entities/sk-hynix.md（Q2 2026 正式財報取代「待定」；HBM4 量產確認）
+  - wiki/technologies/hbm4.md（HBM4 批量出貨官方確認）
+  - wiki/technologies/emib.md（TSMC CEO 歡迎聲明；NVIDIA Feynman/Google HumuFish/Amazon Trainium 3 潛在客戶）
+  - wiki/entities/tsmc.md（TSMC CEO EMIB 表態、容量限制、記憶體毛利語錄）
+  - wiki/concepts/geopolitics-advanced-packaging.md（深圳 RMB 100B + 武漢 RMB 180B 基金群；AMEC/USI 作為 LP）
+  - wiki/technologies/hybrid-bonding.md（翹曲管理為 HVM 橫切製程挑戰）
+  - wiki/technologies/foplp.md（面板尺寸放大翹曲效應；EMC CTE 失配）
+  - wiki/concepts/thermal-management.md（翹曲管理納入熱-機械協同設計框架）
+- 更新 wiki/index.md：頁面數 328→332；來源數 289→293；4 個新來源摘要頁；8 個現有頁面描述更新
+- 主要新知識：
+  1. **SK hynix Q2 2026 正式財報——HBM4 批量出貨官方確認**：Op Margin 76%（歷史新高）；KRW 79.3T 營收 vs TrendForce 預估 84.1T（實際低 6%）；淨利 93.9T（+1,242% YoY）含投資收益；HBM4 LTA 鎖定 ~10 個主要 AI 客戶；SOCAMM2 銷售顯著成長；現金 KRW 88T、淨現金 69.4T
+  2. **TSMC CEO C.C. Wei 公開歡迎 Intel EMIB（2026-07-16 Q2 法說會）**：「looks good」；NVIDIA Feynman、Google HumuFish、Amazon Trainium 3 明確點名為 EMIB 潛在客戶；封裝產能「限制客戶成長」；記憶體廠 86% 毛利率令 Wei「嫉妒」——是 TSMC 公開認可競爭對手封裝技術的里程碑事件
+  3. **中國半導體投資基金新一波（2026 H2）**：深圳 RMB 100 億（2026-07-20 工商登記）+ 武漢 RMB 180 億母基金群（含先進封裝子基金）；AMEC 以 LP 身份參與上海 RMB 30 億基金；USI（台資 OSAT）以 LP 身份參與——資本、設備、材料、標準「四輪驅動」中國先進封裝生態在 2026 H2 齊備
+  4. **翹曲管理成為先進封裝 HVM 新興製程瓶頸**（SemiEngineering 2026-07-29）：從「設計考量」升格為「製程管控重點」；混合接合（平整度要求最嚴格）、FOPLP（面板尺寸放大效應）均受直接衝擊；與熱管理構成熱-機械複合設計新挑戰
+

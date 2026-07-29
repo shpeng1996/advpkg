@@ -172,3 +172,27 @@ AMD Zen 7（代號 Grimlock）的封裝方案也將 PTI FOPLP 列入評估，配
 - **Powertech + Broadcom 新加坡合資（JV）——加成式細線 RDL**：Powertech 與 Broadcom 在**新加坡**建立合資企業，聚焦**加成式（additive）細線 RDL（Redistribution Layer）製程**。加成式 RDL 較傳統半減成式製程（semi-additive）可實現更細線寬（<2µm L/S），材料利用率更高，廢液更少，是下一代 FOPLP 基板實現 chiplet 互連的關鍵製程技術。此 JV 為 Broadcom 確保 AI 網路晶片（如 Bailly 51.2T）的 FOPLP 先進 RDL 封裝產能，同時為 Powertech 帶入 Broadcom 的 AI 晶片封裝客戶群。
 
 **wiki 含義**：Powertech-Broadcom 新加坡 JV 是 FOPLP 生態「客戶 + OSAT 垂直整合」模式的最新範例，結構上類似 CoWoS 生態中的長期代工鎖定。加成式 RDL 若量產驗證成功，將對整個 FOPLP 供應鏈的 L/S 能力設定新基準，與 wiki 中 ECTC 2026 USHIO 無接縫面板曝光（1.5µm L/S）形成技術路線圖的呼應。
+
+---
+
+## ⭐ 2026-07-30 更新：翹曲管理在 FOPLP 的特殊挑戰
+
+*Source: SemiEngineering "Flat Enough? Warpage Management Gets Harder In Advanced Packaging"（2026-07-29）→ [[sources/2026-07-29_semieng_warpage-management-advanced-packaging]]*
+
+SemiEngineering 最新報導確認翹曲（warpage）管理在面板級封裝中較晶圓級更嚴峻，且隨著面板尺寸持續放大（310mm → 510mm → 600mm）而急劇惡化：
+
+**FOPLP 翹曲挑戰的特殊性（vs. 晶圓級封裝）**：
+- **面積放大效應**：面板尺寸（310mm × 410mm 或更大）遠超 300mm 圓形晶圓，相同翹曲率在更大面積下產生更大絕對高度偏差
+- **異質模封材料 CTE 差異**：面板中晶片與 EMC（環氧樹脂模封料）的熱膨脹係數失配，在大面積場景下累積翹曲量更顯著
+- **設備相容性**：傳統晶圓級設備（接合機、曝光機、電鍍槽）對晶圓翹曲容忍度有限，面板格式的翹曲更超出現有設備規格，需要新型夾持與補償系統
+- **精細 RDL 與翹曲的矛盾**：面板細線 RDL（<2µm L/S）的曝光精度對平整度要求極高，但 FOPLP 本身的翹曲在大面積面板上更難控制——「追求更細線寬 + 面板更大」兩個方向同時惡化製程窗口
+
+**製程緩解策略（業界探索中）**：
+- 翹曲補償夾具（fixture-based correction）
+- 應力平衡封膠層設計
+- 進行中的面板曝光設備改良（如 USHIO 無接縫面板曝光）以適應不平整面板
+- 更精確的 EMC 材料選型（CTE 調製）
+
+**wiki 含義**：翹曲管理是 FOPLP 從「先導量產」走向「AI 級量產」的關鍵製造工程障礙之一，特別在面板尺寸超過 400mm 後，此問題可能成為比良率更難攻克的短板。建議在 FOPLP 頁面的「未解問題」中追蹤翹曲標準是否逐漸形成業界共識。
+
+*Source: SemiEngineering 2026-07-29；raw/articles/2026-07-29_semieng_warpage-management-advanced-packaging.md*

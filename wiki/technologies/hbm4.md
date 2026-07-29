@@ -3,7 +3,7 @@ title: "HBM4 — High Bandwidth Memory 4"
 category: technology
 tags: [memory, HBM, JEDEC, standards, AI, HPC, HBM4E, cleanroom, capacity, ISSCC2026, ZAM, HB3DM]
 created: 2026-04-24
-updated: 2026-07-29
+updated: 2026-07-30
 sources: [2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-03-18_trendforce_intel-emib-malaysia, 2026-01-23_trendforce_hbm4e-samsung-skhynix-mid2026, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-01-13_semiengineering_hbm4-microbumps, 2025-12-18_trendforce_micron-capex-hbm4, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h, 2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-03-03_trendforce_sk-hynix-hbm4-tight-gaps, 2025-08-12_semianalysis_hbm-roadmap, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit, 2026-06-09_astutegroup_hbm-market-share-2026-battle, 2026-06-10_trendforce_samsung-gwangju-packaging-base, 2026-06-15_trendforce_skhynix-hbm4e-sample-timeline-pulled-forward, 2026-06-20_techtimes_skhynix-hbm4e-12layer-samples, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-27_tweaktown_hbm4-16hi-nvidia-supply-fight, 2026-06-26_semieng_chip-week-144, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-14_trendforce_samsung-hbm-hiring-hbm4-hbm4e-hbm5, 2026-07-14_trendforce_skhynix-yongin-y1-feb2027, 2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b]
 related:
   - wiki/entities/sk-hynix.md
@@ -52,6 +52,17 @@ HBM（High Bandwidth Memory）將多層 DRAM 晶片垂直堆疊，透過 TSV（T
 | 熱管理技術 | — | — | **Samsung HPB（已驗證）⭐；SK Hynix iHBM目標HBM5** | **HPB + iHBM** |
 
 *HBM4E 規格確認來源：Samsung 官方公告 2026-05-29（14 Gbps / 3.6 TB/s / 48 GB）；JEDEC 高度規格：TrendForce 2026-04-01（提議，尚未確認）*
+
+### ⭐ 2026-07-30 更新：SK hynix Q2 2026 財報正式確認 HBM4 批量出貨
+
+**SK hynix 2026-07-29 官方新聞稿**（一手來源）確認：
+- **HBM4 Q2 2026 正式批量出貨**：已達客戶要求運行速度，並具行業領先能效與成本競爭力；2H2026 加速爬坡
+- **HBM4E 樣品 1H2026 完成交付**：量產目標 2027；採用最優製程（1c DRAM）
+- Q2 2026 HBM 驅動因素：SK hynix Op Margin 76%（史上最高）；1H 累計營收首破 KRW 100T
+- SK hynix 管理層：AI 需求擴展到 agentic 形態、結構性成長，供應需求缺口持續
+- **供應端評估**：SK hynix 明確表示「customer demand exceeds supply capabilities」，timely delivery 是核心競爭力
+
+*Source: SK hynix Newsroom 2026-07-29 → [[sources/2026-07-29_skhynix_q2-2026-earnings]]*
 
 ### ⭐ 2026-07-23 更新：JEDEC SPHBM4 標準正式定案（JESD330-4）——HBM4 級頻寬 + 有機基板取代矽中介層
 

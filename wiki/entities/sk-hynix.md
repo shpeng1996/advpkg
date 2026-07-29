@@ -3,7 +3,7 @@ title: "SK Hynix"
 category: entity
 tags: [memory, HBM, HBM4, advanced-packaging]
 created: 2026-04-24
-updated: 2026-07-29
+updated: 2026-07-30
 sources: [2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab, 2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h, 2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-04-22_trendforce_sk-hynix-pt7-cheongju, 2026-04-22_trendforce_sk-hynix-indiana-us-plant, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-03-03_trendforce_sk-hynix-hbm4-tight-gaps, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-05_trendforce_hbf-equipment-race-sandisk-hanmi, 2026-06-11_trendforce_skhynix-3x-wafer-2034-375layer-nand, 2026-06-20_techtimes_skhynix-hbm4e-12layer-samples, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-24_techtimes_sk-hynix-dethroned-samsung-ddr5-hbm4, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-06-25_techtimes_sk-hynix-nasdaq-adr-29b, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-22_trendforce_skhynix-q2-record-margin, 2026-07-21_trendforce_samsung-cxl-32-skhynix-imte, 2026-07-24_trendforce_skhynix-3d-stacked-dram-on-logic-on-device-ai, 2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b]
 related:
   - wiki/entities/samsung.md
@@ -27,9 +27,22 @@ SK Hynix 是 **HBM 市場的領導者**，率先量產 HBM3E，並於 2025 H2 �
 
 ## 近期動態 / Recent Developments
 
-- **2026-07-29（⭐最新）**：**SK Group ↔ NVIDIA $500 億美元 LOI 簽署**——SK Group（含 SK Hynix + SK Inc.）與 NVIDIA 簽署意向書（LOI），承諾提供 **$500 億美元**的 AI 相關合作，涵蓋：(1) SK Hynix 高頻寬記憶體（HBM4/HBM4E）長期供應；(2) SK Inc. 在美國建設 AI 資料中心基礎設施。此 LOI 是 NVIDIA 確保 Vera Rubin / Feynman 世代記憶體供應的最大單筆戰略承諾，同時為 SK Group 旗下 HBM 與 AI 算力業務的長期收入能見度建立基礎。
+- **2026-07-30（⭐最新）**：**SK hynix 2Q26 正式財報（一手來源）——史上最高季度業績，但低於市場預期（股價 -9.6%）**：
+  - **Revenue**: KRW 79.3187T（+257% YoY, +51% QoQ）
+  - **Operating Profit**: KRW 60.5426T（+557% YoY, +61% QoQ）；**營業利益率 76%**（歷史新高）
+  - **Net Income**: KRW 93.9226T（+1,242% YoY, +133% QoQ）；淨利益率 118%
+  - **1H2026 累計營收首破 KRW 100 兆**（公司史上首次）
+  - **HBM4 Q2 正式批量出貨**（一手官方確認）；達客戶要求運行速度 + 行業領先能效 + 成本競爭力；2H2026 加速爬坡
+  - **HBM4E 樣品 1H2026 完成交付**；量產目標 2027；採用 1c DRAM 製程
+  - **SOCAMM2 Q2 銷售顯著成長**（首次官方確認）；1c 製程（6 代）DRAM 產品出貨
+  - **LTA 擴展至~10 個主要客戶**（官方確認，較前估 70% AI 收入比重更具體）
+  - **NAND**：321 層產品已為最大份額；年底目標提升至約 50% 國內產能
+  - **現金部位**：KRW 88T（+33.6T QoQ）；凈現金 69.4T；總債務降至 18.6T
+  - ⚠️ **實際財報 vs 預期**：TrendForce 2026-07-27 preview 估計 KRW 84.1T / 64.1T（實際 79.3T / 60.5T，均低於預期）→ 股價收跌 9.6%
+  *Source: SK hynix Newsroom 官方新聞稿 2026-07-29 → [[sources/2026-07-29_skhynix_q2-2026-earnings]]*
+
+- **2026-07-29**：**SK Group ↔ NVIDIA $500 億美元 LOI 簽署**——SK Group（含 SK Hynix + SK Inc.）與 NVIDIA 簽署意向書（LOI），承諾提供 **$500 億美元**的 AI 相關合作，涵蓋：(1) SK Hynix 高頻寬記憶體（HBM4/HBM4E）長期供應；(2) SK Inc. 在美國建設 AI 資料中心基礎設施。
   *Source: TrendForce 2026-07-28（引述 Bloomberg、SK Group 官方聲明）*
-  *⚠️ 注意：Q2 2026 正式財報（July 29）——財報結果尚未收錄，待下次 collect 補充。*
 
 - **2026-07-28**：**SK hynix Q2 2026 Earnings Preview（正式財報 July 29）——Revenue KRW 84.1T，Op Profit KRW 64.1T，Margin 75–77%；LTA 70% AI 客戶收入占比**（TrendForce 2026-07-27，引述 TechNews、Chosun Biz）：
   - **Revenue**: KRW 84.1T；**Operating Profit**: KRW 64.1T；**Op Margin**: 75–77%（vs Q1 72%）

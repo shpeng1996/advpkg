@@ -3,7 +3,7 @@ title: "台積電 / TSMC"
 category: entity
 tags: [foundry, advanced-packaging, CoWoS, SoIC, CoPoS, COUPE, CPO, InFO, WMCM, aLSI, MRAM, 3nm-pricing]
 created: 2026-04-24
-updated: 2026-07-28
+updated: 2026-07-30
 sources: [2026-04-24_initial-survey, 2026-04-13_trendforce_copos-pilot, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2025-12-18_trendforce_apple-wmcm-a20, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-01-20_trendforce_tsmc-wmcm-apple, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap, 2026-04-23_trendforce_tsmc-roadmap-a12-a13-no-high-na-euv, 2026-05-07_trendforce_tsmc-us-expansion-250b-arizona, 2026-05-12_focustaiwan_tsmc-capex-31b-arizona-20b, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-28_reuters_tsmc-kevin-zhang-energy-efficiency, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-09_financialcontent_tsmc-130k-cowos-wafers, 2026-06-09_digitimes_tsmc-cowos-soic-capacity-symposium, 2026-06-15_trendforce_tsmc-cowos-gap-narrowing-130k-200k-wafers, 2026-06-17_digitimes_amkor-tsmc-10year-arizona-deal, 2026-06-21_tomshardware_tsmc-fab-expansion-roadmap, 2026-06-27_tmtpost_tsmc-cowos-capacity-targets-2026-2027, 2026-07-02_trendforce_samsung-sf2p-plus-tsmc-n2-roadmap, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-22_trendforce_tsmc-2027-price-hike-hpc, 2026-07-20_trendforce_tsmc-265b-arizona-intel-novalake]
 related:
   - wiki/technologies/cowos.md
@@ -33,7 +33,15 @@ related:
 
 ## 近期動態 / Recent Developments
 
-- **2026-07-28（⭐最新）**：**TSMC 2nm 5 座晶圓廠加速爬坡——Baoshan 2026-05 達 20K wsm；N2P H2 2026 量產；CAGR 70%（2026–2028）**（TrendForce 2026-07-27，引述 Economic Daily News）：
+- **2026-07-30（⭐最新）**：**TSMC CEO C.C. Wei 公開歡迎 Intel EMIB 進入市場——Q2 2026 法說關鍵封裝聲明**（TrendForce 2026-07-16，引述 TSMC 法說 + Wccftech）：
+  - **「封裝產能正在限制客戶成長」**：Wei 表態 TSMC CoWoS 等先進封裝產能已滿，供需缺口約 10%（EOY 2026 目標）
+  - **歡迎 Intel EMIB 進入市場**：稱 Intel EMIB「looks good」；希望 Intel 能成功擴產緩解全行業產能壓力；更多市場選擇 → 客戶更有彈性 → 最終有利 TSMC 前道晶圓業務
+  - **Intel EMIB 潛在 AI 客戶**（Wccftech 同日報導）：**NVIDIA Feynman GPU、Google TPU HumuFish、Amazon AWS Trainium 3**
+  - **TSMC 三大護城河重申**：技術、製造卓越、客戶信任——「不像去 7-11 買牛奶」，無捷徑
+  - **記憶體廠毛利率評論**：Wei 笑稱「羨慕」記憶體廠 **86% 毛利率**；TSMC 不會大幅漲價（不漲 4-5 倍），以客戶長期生存能力為前提
+  *Source: TrendForce 2026-07-16 → [[sources/2026-07-16_trendforce_tsmc-welcomes-intel-emib]]*
+
+- **2026-07-28（次最新）**：**TSMC 2nm 5 座晶圓廠加速爬坡——Baoshan 2026-05 達 20K wsm；N2P H2 2026 量產；CAGR 70%（2026–2028）**（TrendForce 2026-07-27，引述 Economic Daily News）：
   - **Baoshan 新竹廠**（首座 2nm 廠）：2026-05 月產能達 **20,000 wsm**，持續爬坡
   - **5 座晶圓廠並進**：台灣新竹（Baoshan）+ 高雄 + 其他，全力擴張 2nm 製程
   - **N2P（2nm Enhanced）**：正式量產時程確認為 **H2 2026**

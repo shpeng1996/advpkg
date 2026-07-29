@@ -3,7 +3,7 @@ title: "混合接合 / Hybrid Bonding"
 category: technology
 tags: [3D, hybrid-bonding, Cu-Cu, SoIC, ECTC, advanced-packaging, DRAM, COP, 4F2, Sn-damascene, damascene-interconnect, PFAS-free]
 created: 2026-04-24
-updated: 2026-07-26
+updated: 2026-07-30
 sources: [2026-05-21_semiecosystem_ectc2026-cpo-hybridbonding-plp, 2026-04-24_initial-survey, 2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-03-01_3dincites_besi-packaging-power-shift, 2026-01-13_semiengineering_hbm4-microbumps, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-19_semieng_advanced-packaging-limits, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-03-27_3dincites_copper-grain-hybrid-bonding, 2025-01-01_semieng_making-hybrid-bonding-better, 2026-03-02_semieng_making-hybrid-bonding-better, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2026-04-29_semiwiki_cea-leti-ectc2026-hybrid-bonding, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2024-02-09_semianalysis_hybrid-bonding-process-flow, 2026-05-19_semiconductor-digest_ev-group-ectc2026-hybrid-bonding, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-04-19_semiwiki_apple-m5-cucu-hybrid-bonding-shipped, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-18_imec_iii-v-chiplet-rf-laser-bonding, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-29_evgroup_ectc2026-hybrid-bonding-layer-transfer, 2026-06-29_thelec_skhynix-hybrid-bonding-equipment-order, 2026-06-05_semieng_intel-ectc2026-emib-cpo-glass-blog, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-14_trendforce_samsung-hbm-hiring-hybridbonding, 2026-07-16_semieng_fine-pitch-hb-high-volume, 2026-07-16_semieng_alt-materials-hybrid-bonding]
 related:
   - wiki/technologies/soic.md
@@ -608,3 +608,32 @@ Samsung Foundry 上月（2026-06）正式發布 **3D Cube-H**——混合接合�
 
 **NVIDIA Feynman 時程線：**
 Rubin Ultra → HBM4E（TC bonding），**Feynman → 高機率採用 HBM5 或 custom HBM（混合接合時代）**。此與既有 wiki 的「HBM5+ 混合接合採用」判斷完全一致，並提供了更具體的需求端時程錨點。
+
+---
+
+## 2026-07-30 更新 / Update
+
+### ⭐ 翹曲管理成為先進封裝 HVM 核心製程挑戰（SemiEngineering 2026-07-29）
+
+*Source: SemiEngineering "Flat Enough? Warpage Management Gets Harder In Advanced Packaging"（2026-07-29）→ [[sources/2026-07-29_semieng_warpage-management-advanced-packaging]]*
+
+SemiEngineering 深度分析顯示，翹曲（warpage）在 2026 年已從「設計考量」升級為「製程管控重點挑戰」，尤其在混合接合量產化進程中格外關鍵：
+
+**混合接合場景下的翹曲問題**：
+- 混合接合需要**極高的晶圓/晶粒平坦度**（平整度需求比傳統封裝嚴苛 1–2 個數量級）——即使奈米級的翹曲偏差也會造成接合開路缺陷
+- **晶粒翹曲**是 D2W 混合接合「接合 overlay 誤差」的主要來源之一（已在既有製程挑戰節中記錄）
+- **晶圓翹曲**在「製程誤差預算 9 大要素」中明確列為第 5 項（見上方 2026-07-24 更新），且隨間距縮小重要性上升
+
+**翹曲惡化的結構原因**（與混合接合直接相關）：
+- **薄化趨勢**：混合接合通常需要晶片薄化（TSV + 薄化），薄化後晶圓更易翹曲
+- **異質材料 CTE 失配**：邏輯晶片（Si）+ 記憶體（Si）接合時 CTE 匹配較好，但若未來涉及 III-V chiplet 則翹曲風險上升
+- **面積放大效應**：CoWoS + SoIC 組合使整體封裝面積持續擴大，翹曲量與封裝面積正相關
+
+**製程管控方向（對混合接合的應用）**：
+- **接合前量測**：在 D2W 接合前對每顆晶粒進行翹曲量測，排除超規格晶粒
+- **暫時接合媒介選擇**（製程誤差預算第 7 項）：不同媒介影響薄化後的翹曲特性
+- **補償性設計**：在晶圓佈局中加入應力補償圖案以平衡 CTE 失配引發的翹曲
+
+**wiki 含義**：翹曲管理是 2026 年混合接合 HVM 量產化的新興跨議題約束——不在任何單一製程步驟中，而是橫跨晶圓薄化、暫時接合、晶粒放置、退火、封裝整合全流程。此議題與 [[concepts/thermal-management]] 的熱設計挑戰相互交織，建議持續追蹤。
+
+*Source: SemiEngineering 2026-07-29；raw/articles/2026-07-29_semieng_warpage-management-advanced-packaging.md*

@@ -3,7 +3,7 @@ title: "先進封裝熱管理 / Thermal Management in Advanced Packaging"
 category: concept
 tags: [thermal-management, liquid-cooling, 3D-IC, CoWoS, heat-dissipation, TIM, ECTC-2025]
 created: 2026-04-25
-updated: 2026-06-06
+updated: 2026-07-30
 sources: [2025-12-01_semiengineering_thermal-management, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-02_trendforce_samsung-hbm5-computex2026]
 related:
   - wiki/technologies/cowos.md
@@ -182,3 +182,30 @@ SK Hynix 的策略是**兩條路徑並行**：混合接合為長期目標（HBM5
 - **製造基礎**：現有 WLP + MR-MUF 產線，不需重大設備替換
 
 *Source: TrendForce 2026-05-26（引述 SK hynix 官方新聞稿、The Elec）*
+
+---
+
+## ⭐ 2026-07-30 更新：翹曲管理——先進封裝熱-機械複合挑戰的新維度
+
+*Source: SemiEngineering "Flat Enough? Warpage Management Gets Harder In Advanced Packaging"（2026-07-29）→ [[sources/2026-07-29_semieng_warpage-management-advanced-packaging]]*
+
+SemiEngineering 2026-07-29 深度報導確認翹曲管理（Warpage Management）已成為先進封裝製程控制的核心新挑戰，與熱管理密切交織：
+
+**翹曲與熱管理的交互作用**：
+- **封裝層級的熱-機械耦合**：高功率密度 AI 封裝（CoWoS + SoIC，~700–1000W 功耗）在運行時產生的溫度梯度直接造成熱膨脹係數（CTE）失配，引發**動態翹曲**（runtime warpage），疊加在製程引入的靜態翹曲之上
+- **CTE 失配是雙重問題**：一方面是熱管理設計中的「散熱路徑效率」問題，另一方面是機械可靠性中的「封裝完整性」問題——兩者相互影響，無法分開優化
+- **薄化趨勢的雙重代價**：3D 堆疊需要晶圓薄化（SoIC、HBM TSV 薄化）以縮短熱路徑，但薄化後的晶圓在溫度變化下翹曲量急劇增加，形成「散熱改善 vs. 翹曲惡化」的技術張力
+
+**翹曲惡化的製造趨勢（2026）**：
+- **封裝面積持續擴大**：NVIDIA Blackwell GB200 NVL 等 AI 封裝超過 70mm×70mm，翹曲量與面積正相關
+- **面板級封裝（FOPLP）放大效應**：310mm×410mm 面板格式的翹曲挑戰比 300mm 晶圓嚴峻數倍
+- **多材料異質整合**：不同 CTE 的邏輯晶片、記憶體、基板、底填充材料疊加，使整體翹曲預測更困難
+
+**製程管控工具**：
+- 原位翹曲量測（in-situ warpage metrology）技術需求激增
+- AI/ML 驅動的翹曲預測模型（基於有限元素分析）
+- 應力補償層設計融入封裝 DRC（設計規則）
+
+**wiki 含義**：翹曲管理是熱-電-機械協同設計（Thermal-Electrical-Mechanical Co-design）的第三維「機械」約束日益凸顯的具體表現。建議在未來更新中，將翹曲管理列為「先進封裝三大物理約束」之一（並列熱管理、電源完整性），在 wiki/overview.md 中顯式納入。
+
+*Source: SemiEngineering 2026-07-29；raw/articles/2026-07-29_semieng_warpage-management-advanced-packaging.md*

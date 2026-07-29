@@ -3,7 +3,7 @@ title: "EMIB — Embedded Multi-Die Interconnect Bridge"
 category: technology
 tags: [Intel, 2.5D, silicon-bridge, chiplet, HBM4, Foveros, glass-substrate, EMIB-T, EMIB-M, silicon-capacitors, power-delivery]
 created: 2026-05-03
-updated: 2026-07-28
+updated: 2026-07-30
 sources: [2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-03-05_trendforce_intel-emib-billions, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-03-03_trendforce_intel-clearwater-forest, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks, 2026-06-21_convergedigest_intel-emib-t-multi-die-packaging, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap, 2026-06-05_semieng_intel-ectc2026-emib-cpo-glass-blog, 2026-01-30_tomshardware_intel-ai-chip-test-vehicle-emib-t]
 related:
   - wiki/entities/intel.md
@@ -68,6 +68,9 @@ EMIB 是 Intel 的局部矽橋接技術：將一小片高密度矽橋（bridge d
 ---
 
 ## 發展時程 / Timeline
+
+- **2026-07-30（⭐最新）**：**TSMC CEO C.C. Wei 於 Q2 2026 法說明確表態歡迎 Intel EMIB 進入市場**——稱 Intel EMIB「looks good」，TSMC 封裝產能「limiting customers' growth」，更多市場選擇最終有利 TSMC 前道晶圓業務。同日 Wccftech 報導：Intel EMIB 潛在 AI 客戶包含 **NVIDIA Feynman GPU、Google TPU HumuFish、Amazon AWS Trainium 3**。這是 TSMC 最高層首次公開、正面評價 Intel 封裝技術，代表 CoWoS vs EMIB 的競爭關係正式轉型為互補生態框架。
+  *Source: TrendForce 2026-07-16（引述 TSMC 法說 + Wccftech）→ [[sources/2026-07-16_trendforce_tsmc-welcomes-intel-emib]]*
 
 - **2026-06-21（⭐新增）**：**Intel Foundry 官方部落格首度系統性公開 EMIB-T 完整路線藍圖**（Converge Digest 報導）：晶圓利用率 **~90%**；光罩面積現況 **>8×（~6,800mm²）**，2028 目標 **>12×（~10,000mm²）**；支援 **16+ 層 HBM4/HBM5 堆疊**，透過 **30+ 條 EMIB-T 橋接器**；確認「EMIB 3.5D」= EMIB-T + Foveros 組合架構；**前 SK Hynix CEO 李錯熹（Seok-Hee Lee）已轉任 Intel Foundry 封裝事業部負責人**。
   *Source: Converge Digest 2026-06-21（Jim Carroll）*

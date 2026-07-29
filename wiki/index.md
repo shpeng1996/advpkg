@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-07-29
-**頁面總數 Total Pages**：328
-**原始來源數 Sources**：289
+**更新時間 Updated**：2026-07-30
+**頁面總數 Total Pages**：332
+**原始來源數 Sources**：293
 
 ---
 
@@ -17,7 +17,7 @@
 - [[entities/tsmc]] — 台積電；全球最大晶圓代工廠；CoWoS/SoIC 技術領導者；2026 年產能瓶頸核心
 - [[entities/intel]] — 英特爾；IDM；EMIB-T 今年內 fab 量產（45µm→35/25µm 路線圖、Jaguar Shores 首款產品推測）；**Xeon 6+ 18A 首款商業 CPU**（2026-06-19）⭐更新
 - [[entities/samsung]] — 三星；IDM + Foundry + Memory；**GlaSSEM JV（Samsung EM 66% + Dongwoo Fine-Chem 34%，KRW 480B，玻璃基板 2H27 量產）**；光州新封裝基地（TCB 231K + HCB 19.5K/月）⭐更新
-- [[entities/sk-hynix]] — SK Hynix；HBM 市場領導者；**12 層 HBM4E 樣品正式出貨（2026-06-18，48GB/16Gbps/4TB·s）**；2034 年三倍晶圓產能路線圖；TC Bonder 44.2 億韓元訂單（2026-06-20）⭐更新
+- [[entities/sk-hynix]] — SK Hynix；HBM 市場領導者；**Q2 2026 正式財報：KRW 79.3T 營收 +257% YoY、KRW 60.5T 利潤 +557%、Op Margin 76%（歷史新高）；HBM4 批量出貨確認**（2026-07-30）⭐更新
 - [[entities/asmpt]] — ASMPT Limited；TCB/混合接合/Photonics-CPO 設備領導廠商；Q1 2026 訂單 27M +71.6% YoY；NEXX 出售給 AMAT⭐新增
 - [[entities/ase-group]] — ASE Group；全球最大 OSAT；CoWoP 面板封裝；K28 廠 2026 年完工；SPIL 2026 年累計廠房收購 >NT$227 億；5 月營收 NT$630.3 億（+28.6% YoY）⭐更新
 - [[entities/amkor]] — Amkor；全球第二大 OSAT；Arizona $70 億廠（2028 投產）；Intel EMIB 外包夥伴⭐新增
@@ -40,12 +40,12 @@
 - [[technologies/cowos]] — CoWoS（Chip-on-Wafer-on-Substrate）；TSMC 2.5D 旗艦封裝；2025-12 全訂滿；OSAT 補位生態（ASE CoWoP、Amkor FOCoS）
 - [[technologies/copos]] — CoPoS（Chip-on-Panel-on-Substrate）；TSMC 面板級封裝；310×310mm 面板；玻璃核心基板列為下一里程碑（2030+）；TGV 障礙具體化（2026-06-18）⭐更新
 - [[technologies/soic]] — SoIC（System on Integrated Chips）；TSMC 3D 堆疊；SoIC-X 混合接合（6µm，2026 Q1）
-- [[technologies/hybrid-bonding]] — 混合接合（Cu-Cu）；W2W/D2W/D2D 三情境框架（ECTC 2025）；目標 1M/mm²；EV Group 關鍵設備商；imec 雷射輔助接合（RF Si 中介層，2026-06-18）⭐更新
-- [[technologies/hbm4]] — HBM4；JEDEC JESD270-4；1.65+ TB/s；SK hynix 12 層 HBM4E 樣品正式出貨（48GB/16Gbps/4TB·s，2026-06-18）⭐更新
+- [[technologies/hybrid-bonding]] — 混合接合（Cu-Cu）；W2W/D2W/D2D 三情境框架（ECTC 2025）；目標 1M/mm²；**翹曲管理確認為 HVM 製程橫跨全流程的新約束**（2026-07-30）⭐更新
+- [[technologies/hbm4]] — HBM4；JEDEC JESD270-4；1.65+ TB/s；**SK hynix Q2 2026 正式財報確認 HBM4 批量出貨**（2026-07-30）⭐更新
 - [[technologies/ucie]] — UCIe；Chiplet 互連標準；UCIe 3.0：64GT/s quarter-rate、BER 差異化、Arm CHI 映射、L2 深度睡眠（2026-06-18）⭐更新
 - [[technologies/copackaged-optics]] — TSMC-COUPE™ 共封裝光學元件（CPO）；Intel OFC 2026 玻璃基板原型曝光；量產落後 Nvidia/AMD（2026-06-18）⭐更新
 - [[technologies/info-wmcm]] — InFO（2016 商轉）+ WMCM（2026 量產）；TSMC 行動晶片封裝旗艦；Apple A20 iPhone18 採用 WMCM⭐新增
-- [[technologies/emib]] — EMIB（Embedded Multi-Die Interconnect Bridge）；Intel 2.5D 局部矽橋；代工廠中立；EMIB-T 今年內 fab 量產，45µm→35/25µm 路線圖（2026-06-19）⭐更新
+- [[technologies/emib]] — EMIB（Embedded Multi-Die Interconnect Bridge）；Intel 2.5D 局部矽橋；**TSMC CEO C.C. Wei 2026-07-16 公開歡迎 EMIB；NVIDIA Feynman/Google HumuFish/Amazon Trainium 3 潛在客戶**（2026-07-30）⭐更新
 - [[technologies/foveros]] — Foveros；Intel 3D 堆疊；Foveros Direct 3D（<10µm Cu-Cu，2026 量產）；875 GB/s 3D 頻寬⭐新增
 - [[technologies/foplp]] — FOPLP（扇出面板級封裝）；**CFMEE PLP 2000 通過技術資格認證——中國首套 510×515mm PLP 直寫微影系統（2µm；CoPoS/FOPLP/玻璃基板）**（2026-07-07）⭐更新
 - [[technologies/glass-substrate]] — 玻璃核心基板（TGV）；**GlaSSEM JV（Samsung EM+Sumitomo，2H27）+ TSMC JPCA 2026 首次公開量化性能數據（COP +16%、電感 -42%）**（2026-07-07）⭐更新
@@ -56,13 +56,17 @@
 ## 概念 Concepts
 
 - [[concepts/advanced-packaging-market]] — 市場規模（2025：$43–52B，CAGR 9–10%）、供應鏈、技術市佔、2026–2030 趨勢
-- [[concepts/thermal-management]] — 先進封裝熱管理；TSMC CoWoS 直接矽液冷（ECTC 2025）；3D-IC 熱點問題；TIM 技術分類⭐新增
-- [[concepts/geopolitics-advanced-packaging]] — 先進封裝地緣政治；美中晶片戰；CHIPS Act；Chiplet 咽喉點；美國封裝份額僅 3%⭐新增
+- [[concepts/thermal-management]] — 先進封裝熱管理；TSMC CoWoS 直接矽液冷（ECTC 2025）；**翹曲管理納入熱-機械複合設計框架**（2026-07-30）⭐更新
+- [[concepts/geopolitics-advanced-packaging]] — 先進封裝地緣政治；美中晶片戰；CHIPS Act；**深圳 RMB 100 億 + 武漢 RMB 180 億半導體基金（2026-07-29）**⭐更新
 
 ---
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-07-29_semieng_warpage-management-advanced-packaging]] — SemiEngineering：**翹曲管理成為 HVM 核心製程挑戰——更大更薄封裝使翹曲惡化；混合接合平整度要求；FOPLP 面板尺寸放大效應；CTE 失配跨材料問題**（2026-07-30 收錄；原文 2026-07-29）⭐新增
+- [[sources/2026-07-16_trendforce_tsmc-welcomes-intel-emib]] — TrendForce：**TSMC CEO C.C. Wei 公開歡迎 Intel EMIB——「looks good」；封裝產能限制客戶成長；NVIDIA Feynman/Google HumuFish/Amazon Trainium 3 為 EMIB 潛在客戶；記憶體廠 86% 毛利率令 Wei「嫉妒」**（2026-07-30 收錄；原文 2026-07-16）⭐新增
+- [[sources/2026-07-29_trendforce_china-semiconductor-investment-funds]] — TrendForce：**中國新一波半導體投資基金——深圳 RMB 100 億（2026-07-20）；武漢 RMB 180 億母基金 + 4 子基金（含先進封裝）；AMEC LP（RMB 30 億上海基金）；USI LP（RMB 5000 萬）**（2026-07-30 收錄；原文 2026-07-29）⭐新增
+- [[sources/2026-07-29_skhynix_q2-2026-earnings]] — SK hynix 官方新聞稿：**Q2 2026 正式財報——營收 KRW 79.3187T（+257% YoY）；營業利益 KRW 60.5426T（+557%）；Op Margin 76%（歷史新高）；淨利 KRW 93.9226T（+1,242%）；HBM4 批量出貨確認**（2026-07-30 收錄；原文 2026-07-29）⭐新增
 - [[sources/2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan]] — TrendForce：**玻璃基板 CoPoS 生態新局——Intel + Lens Technology HVM 2H27；BOE 全自動線 HVM 2028；Powertech 加入 AMD AI 供應鏈 2Q26；Powertech+Broadcom 新加坡 JV（加成式 RDL）；Innolux+AUO 方形玻璃基板 FOPLP；TPK-KY TGV 試產線**（2026-07-29 收錄）⭐新增
 - [[sources/2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b]] — TrendForce：**NVIDIA Vera Rubin SOCAMM 腰斬 192GB→96GB；HBM4 BOM 29%；LPDDR5X 60% 供應缺口；Bernstein HBM4 ASP $53/GB（2027）；NVIDIA-SK Group $500B LOI**（2026-07-29 收錄）⭐新增
 - [[sources/2026-07-27_trendforce_presscenter_cpo-switches-nvidia-broadcom-coupe]] — TrendForce：**CPO 交換器商業化——NVIDIA Spectrum-X 400Tb/s 出貨（TSMC COUPE）；Broadcom Bailly 51.2T -70% 功耗（Delta/Micas ODM，Meta 驗證）；3 大商業化瓶頸；2027–2028 hyperscaler 大量部署**（2026-07-29 收錄）⭐新增

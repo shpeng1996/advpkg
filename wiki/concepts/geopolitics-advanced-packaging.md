@@ -3,7 +3,7 @@ title: "先進封裝地緣政治 / Geopolitics of Advanced Packaging"
 category: concept
 tags: [geopolitics, US-China, CHIPS-Act, supply-chain, chiplet, NAPMP, export-control, glass-substrate, standards-war, BOE, Corning, Absolics]
 created: 2026-04-26
-updated: 2026-07-23
+updated: 2026-07-30
 sources: [2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-23_trendforce_china-osat-sj-semiconductor-ipo, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-08-05_3dincites_iftle636, 2026-03-23_trendforce_musk-terafab-tsmc-packaging, 2026-04-22_trendforce_sk-hynix-indiana-us-plant, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-16_nokia_pennsylvania-atp-expansion, 2026-06-30_amkor-ir_arizona-7billion-groundbreaking, 2026-06-30_digitimes_us-packaging-capacity-10pct-2032, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-10_tomshardware_micron-250b-us-investment-globalwafers, 2026-07-10_semieng_chip-week-146, 2026-07-14_trendforce_huawei-baidu-npo-msa]
 related: [wiki/concepts/advanced-packaging-market.md, wiki/entities/amkor.md, wiki/entities/ase-group.md, wiki/technologies/ucie.md]
 ---
@@ -376,3 +376,30 @@ SemiEngineering Week #147 報導，**印度 Semicon 2.0** 計畫總額達 **$13.
 **評估**：CXMT 的雙重進展（JEDEC 參與 + IPO）標誌中國 DRAM 生態進入「標準整合 + 資本充裕」的新階段，對美韓 HBM 供應商的長期替代威脅上升。
 
 *Source: SemiEngineering Week #147 2026-07-17; Tom's Hardware 2026-07-08（SPHBM4 CXMT 參與）*
+
+## 2026-07-30 更新 / Updates
+
+### ⭐ 中國新一波半導體產業投資基金：深圳 100 億 + 武漢 180 億（2026-07-29）
+
+TrendForce 2026-07-29 報導確認中國在 2026 年下半年啟動新一波以地方政府主導的半導體產業投資基金，規模龐大且明確涵蓋**先進封裝**領域：
+
+**主要基金清單**
+
+| 地區 | 基金名稱 | 規模 | 重點 | LP/特色 |
+|------|---------|------|------|---------|
+| **深圳** | 深圳市半導體產業投資基金 | **RMB 100 億（~$13.8B）** | 晶片設計、先進製造 | 2026-07-20 工商登記 |
+| **武漢** | 武漢半導體產業基金群 | **RMB 180 億（母基金 + 4 子基金）** | AI 晶片、先進封裝、第三代半導體 | 國資主導，4 個主題子基金 |
+| **上海 AMEC 專項** | （上海/臨港基金） | **RMB 30 億** | 設備製造商 | **AMEC（Advanced Micro-Fabrication Equipment）** 以 LP 身份參與 |
+| **USI 參與** | （上海相關） | USI LP RMB 5000 萬 | 封裝供應鏈 | USI（環旭電子，OSAT）作為 LP |
+
+**分析**：
+- **深圳 100 億**：繼大基金三期（人民幣 3440 億，2024-05）之後規模最大的單一地方政府半導體基金，顯示深圳政府將半導體視為灣區核心戰略產業。
+- **武漢 180 億母基金**：武漢本已有長江存儲（YMTC）+華工科技等半導體資產，此次基金群明確列「先進封裝」為子基金主題之一，代表武漢意圖補全「設計→製造→封裝→測試」完整生態。
+- **AMEC 作為 LP**：AMEC（中微公司）是中國最具競爭力的刻蝕設備廠，加入上海基金作為 LP 一方面取得資本收益，另一方面強化與政策資金的連結，有助於後續獲得政府採購訂單。
+- **USI（環旭電子）作為 LP**：USI 是台資背景的 OSAT/SiP 封裝廠（控股股東：鴻海旗下，主要廠區在上海），以 LP 身份參與顯示大陸政策基金已吸引台資封裝廠資本共投。
+
+**對先進封裝的直接影響**：
+- 武漢基金群「先進封裝」子基金代表中國資本正系統性布局**本土 OSAT 升級**（JCET、Tongfu、SJ Semiconductor 等均在武漢或武漢生態圈有關聯）
+- 結合 Naura 600mm PLP 設備（見 2026-06 更新）、中國玻璃基板生態（見 2026-06 更新）、CXMT JEDEC 參與（見 2026-07-17 更新），2026 年下半年中國先進封裝生態「資本 + 設備 + 材料 + 標準」四輪驅動齊備
+
+*Source: TrendForce 2026-07-29（中國半導體產業投資基金專題報導）；raw/articles/2026-07-29_trendforce_china-semiconductor-industrial-investment-funds.md*
