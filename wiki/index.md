@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-07-30
-**頁面總數 Total Pages**：332
-**原始來源數 Sources**：293
+**更新時間 Updated**：2026-07-31
+**頁面總數 Total Pages**：334
+**原始來源數 Sources**：295
 
 ---
 
@@ -63,6 +63,8 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-07-30_trendforce_silicon-photonics-foundry-landscape]] — TrendForce：**矽光子代工格局多極量產——UMC+SILITH 新加坡 12" HVM；Tower Semiconductor Arai 廠 12" SiPh+AP Q4 2027；GF Fotonix（收購 AMF）；TSMC COUPE 量產確認；中國 CanSemi 12" 產線；2027 為矽光子代工產能釋放關鍵節點**（2026-07-31 收錄；原文 2026-07-30）⭐新增
+- [[sources/2026-07-29_trendforce_china-ap-new-capacity-wave]] — TrendForce：**中國先進封裝新一輪擴產潮——5-7 月近 10 個重大項目合計≈RMB 400 億；JCET 臨港 RMB 78 億；Forehope RMB 103 億；USC/HITS RMB 75 億；HKC 紹興 RMB 40 億；Hotchip/Mingtai/Huatian/Biwin 等新進者**（2026-07-31 收錄；原文 2026-07-29）⭐新增
 - [[sources/2026-07-29_semieng_warpage-management-advanced-packaging]] — SemiEngineering：**翹曲管理成為 HVM 核心製程挑戰——更大更薄封裝使翹曲惡化；混合接合平整度要求；FOPLP 面板尺寸放大效應；CTE 失配跨材料問題**（2026-07-30 收錄；原文 2026-07-29）⭐新增
 - [[sources/2026-07-16_trendforce_tsmc-welcomes-intel-emib]] — TrendForce：**TSMC CEO C.C. Wei 公開歡迎 Intel EMIB——「looks good」；封裝產能限制客戶成長；NVIDIA Feynman/Google HumuFish/Amazon Trainium 3 為 EMIB 潛在客戶；記憶體廠 86% 毛利率令 Wei「嫉妒」**（2026-07-30 收錄；原文 2026-07-16）⭐新增
 - [[sources/2026-07-29_trendforce_china-semiconductor-investment-funds]] — TrendForce：**中國新一波半導體投資基金——深圳 RMB 100 億（2026-07-20）；武漢 RMB 180 億母基金 + 4 子基金（含先進封裝）；AMEC LP（RMB 30 億上海基金）；USI LP（RMB 5000 萬）**（2026-07-30 收錄；原文 2026-07-29）⭐新增

@@ -3,7 +3,7 @@ title: "共封裝光學元件 / Co-Packaged Optics (CPO) — TSMC-COUPE™ & Eco
 category: technology
 tags: [CPO, co-packaged-optics, COUPE, TSMC, GlobalFoundries, Samsung, photonics, AI, HPC, networking, OCI-MSA, DWDM, Broadcom, NVIDIA, glass-substrate, ULCVD, TGV, Spectrum-X, NVL72]
 created: 2026-04-25
-updated: 2026-07-29
+updated: 2026-07-31
 sources: [2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-05-07_trendforce_globalfoundries-silicon-photonics-scale-cpo, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-03-17_coherent_cpo-ofc2026-demo, 2026-06-07_digitimes_jcet-3d-packaging-cpo-plant, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_edn_cpo-technology-status-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-06-24_thelec_corning-glass-bridge-cpo, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-14_trendforce_umc-silith-silicon-photonics-hvm, 2026-07-14_trendforce_huawei-baidu-npo-msa, 2026-07-27_trendforce_presscenter_cpo-switches-nvidia-broadcom-coupe]
 related:
   - wiki/entities/tsmc.md
@@ -43,6 +43,16 @@ Co-Packaged Optics（CPO）將**光學引擎（Optical Engine）直接整合至�
 ---
 
 ## 發展時程 / Timeline
+
+- **2026-07-30（⭐最新）**：**矽光子代工格局進入「多極量產」時代——UMC/Tower/GF/TSMC/CanSemi 五路並進**（TrendForce 2026-07-30 整體分析）：
+  - **UMC + SILITH**：新加坡 12 吋廠已完成首批量產矽光子晶圓交付（100G/200G；路線圖至 1.6T）；UMC 自有 12 吋 SiPh 平台 **2027 年**上線；聯合 SILITH 開發 400G/lane 純矽光子方案 + **薄膜鈮酸鋰（TFLN）技術**
+  - **Tower Semiconductor 日本擴產**：Arai 廠（新潟縣）轉型為 **12" SiPh + 先進封裝平台**；Uozu Fab 7（富山縣）擴產；新建 12" Fab 規劃中；目標 **Q4 2027 量產**
+  - **GlobalFoundries**：2025 年收購新加坡 **Advanced Micro Foundry（AMF）**，整合入 **Fotonix** CPO 平台，實現光子 IC 製造 + 封裝一體化
+  - **TSMC COUPE**：正式確認量產（採用 SoIC 3D 電光晶片堆疊），持續建構 COUPE + CoWoS + SoIC 光電整合平台
+  - **中國 CanSemi**：12" 矽光子產線建設完成（90nm→65nm；計畫推進 45nm）
+  - **2027 年為全球矽光子代工產能釋放關鍵節點**（UMC 平台上線 + Tower Q4 量產）
+  - **三大戰略動因**：① CMOS 技術轉移（成本優勢）；② 與 CoWoS/SoIC 封裝天然互補（先進封裝廠商已有優勢）；③ CPO 趨勢強化代工廠全價值鏈影響力
+  *Source: TrendForce 2026-07-30*
 
 - **2026-07-14（⭐最新）**：**UMC + SILITH 完成 200G/lane 矽光子 HVM，新加坡 12 吋廠首批交貨**（TrendForce 2026-07-14）：聯電（UMC）與矽光子設計公司 SILITH 宣布，首批量產矽光子晶圓已從 UMC **新加坡 12 吋廠**交貨，標誌業界重要里程碑：① 速率：**200G/lane**（路線圖：400G），對應 AI 資料中心 **1.6T** 光學互連需求；② 客戶包括光模組大廠 **Innolight** 與 **Coherent**，後者為 NVIDIA/Google 供應鏈節點；③ UMC 計畫 **2027 年**推出先進封裝服務（含矽光子 Die-to-Wafer 整合），**2028 年**開放矽光子 + TFLN（薄膜鈮酸鋰）開放平台。市場背景：TrendForce 預測 CPO/NPO 市場規模 **2030 年超過 $390 億美元（>$39B）**（本條首次將此修正後大數字入庫；前紀錄最高為 IDTechEx $20B by 2036，TrendForce 新預測以 NPO 爆炸性成長為假設前提，屬較進取估計）。UMC 此舉使晶圓代工廠矽光子陣容從 TSMC/GF 雙雄擴為三強。
   *Source: TrendForce 2026-07-14（引述 UMC/SILITH 官方）*

@@ -3,7 +3,7 @@ title: "先進封裝地緣政治 / Geopolitics of Advanced Packaging"
 category: concept
 tags: [geopolitics, US-China, CHIPS-Act, supply-chain, chiplet, NAPMP, export-control, glass-substrate, standards-war, BOE, Corning, Absolics]
 created: 2026-04-26
-updated: 2026-07-30
+updated: 2026-07-31
 sources: [2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-23_trendforce_china-osat-sj-semiconductor-ipo, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-08-05_3dincites_iftle636, 2026-03-23_trendforce_musk-terafab-tsmc-packaging, 2026-04-22_trendforce_sk-hynix-indiana-us-plant, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-16_nokia_pennsylvania-atp-expansion, 2026-06-30_amkor-ir_arizona-7billion-groundbreaking, 2026-06-30_digitimes_us-packaging-capacity-10pct-2032, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-10_tomshardware_micron-250b-us-investment-globalwafers, 2026-07-10_semieng_chip-week-146, 2026-07-14_trendforce_huawei-baidu-npo-msa]
 related: [wiki/concepts/advanced-packaging-market.md, wiki/entities/amkor.md, wiki/entities/ase-group.md, wiki/technologies/ucie.md]
 ---
@@ -67,6 +67,18 @@ Advanced packaging geopolitics refers to how national governments, corporations,
 - **JCET / Tongfu（中國）**：中國最大 OSAT，積極升級先進封裝能力
 
 ### 中國戰略
+
+- **⭐（2026-07-31 更新）中國先進封裝企業自主擴產新浪潮（2026 年 5–7 月）**：繼 2026-07-29 政府半導體基金（深圳 RMB 100 億 + 武漢 RMB 180 億）後，中國私營先進封裝企業同步啟動大規模自主擴產——2026 年 5–7 月合計近 **10 個重大項目、公開投資逼近 RMB 400 億**：
+  - **JCET（江蘇長電）上海臨港新廠 RMB 78 億**（2026-06-24，Phase I 2028H2 投產）：高密度 RDL、超細間距凸塊、大面積異質整合、Chiplet 多晶片封裝；主攻 AI 伺服器/HPC/高端 GPU（此為臨港**新廠**，與既有江陰 3D 封裝廠並行）
+  - **Forehope Electronic 寧波餘姚 RMB 103 億**（2026-06-26，八年建設）：凸塊 + 2.5D 整合 + 倒裝 + 先進打線四條產線；AI 邊緣 + 車規 IC + 高端類比晶片
+  - **USC Technology / HITS 上海嘉定 ≥RMB 75 億**（2026-07-13）：超細間距接合 + 高密度 RDL + 大面積異質整合；AI 伺服器/HPC
+  - **HKC（惠科）紹興濱海 RMB 40 億**（2026-07-17，月產能 2,000 萬顆）：車規 + 電源類比；呼應 UNT 晶圓廠汽車半導體生態
+  - **Hotchip Technology 四川南充 RMB 20 億**（2026-07-16）：化合物半導體 + 工控封裝
+  - **Mingtai Electronic 成都二期 RMB 5 億**（2027 完工，年產能 +>100 億顆）：QFN/倒裝/SiP
+  - **Huatian Technology 南京三期 RMB 30 億**（記憶體 Fan-Out 封裝 + 可靠性測試）
+  - **Biwin Storage RMB 10 億 AI 記憶體封裝**（Fan-Out + 記憶體算力整合）
+  - **三大結構性特徵**：①項目規模百億化；②技術聚焦高端異質整合/Chiplet/Fan-Out；③地域向晶圓廠生態集群化（上海/寧波/成都/南充）
+  *Source: TrendForce 2026-07-29*
 
 - 中國政府視先進封裝與 Chiplet 為繞過美國設備出口管制的核心路徑
 - 現有設備管制阻止中國突破 ~5nm 邏輯製程，但**先進封裝可在既有製程節點提升系統性能**

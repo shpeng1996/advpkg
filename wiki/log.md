@@ -2240,3 +2240,30 @@ an（2028–2029 量產世代）為 CoPoS 最可能的首批量產客戶——�
   3. **中國半導體投資基金新一波（2026 H2）**：深圳 RMB 100 億（2026-07-20 工商登記）+ 武漢 RMB 180 億母基金群（含先進封裝子基金）；AMEC 以 LP 身份參與上海 RMB 30 億基金；USI（台資 OSAT）以 LP 身份參與——資本、設備、材料、標準「四輪驅動」中國先進封裝生態在 2026 H2 齊備
   4. **翹曲管理成為先進封裝 HVM 新興製程瓶頸**（SemiEngineering 2026-07-29）：從「設計考量」升格為「製程管控重點」；混合接合（平整度要求最嚴格）、FOPLP（面板尺寸放大效應）均受直接衝擊；與熱管理構成熱-機械複合設計新挑戰
 
+
+---
+
+## [2026-07-31] collect | 每日自動蒐集 — 矽光子代工格局多極量產 + 中國先進封裝企業自主擴產新浪潮
+
+- 搜尋查詢數：7 組（TSMC 封裝動態、HBM 記憶體、混合接合、面板級封裝、Intel EMIB、標準動態、異質整合一般新聞）
+- 成功抓取：2 篇（raw/articles/ 2 篇；papers/ 0；reports/ 0）
+- 失敗/跳過：若干
+  - SemiEngineering Chip Week #148：JS 動態渲染，WebFetch 返回空殼，跳過
+  - Tom's Hardware Nvidia-Intel packaging（2025-09）：publish_date 2025-09-22，超過 6 個月，未收錄
+  - 3DInCites Intel Foundry Packaging（Jun 2026）：JS 動態渲染，跳過
+  - 其他搜尋結果均已在 _collected_urls.txt 中，跳過
+- 新增 raw 檔案：
+  1. raw/articles/2026-07-30_trendforce_silicon-photonics-foundry-landscape-mass-production.md（矽光子代工多極量產）
+  2. raw/articles/2026-07-29_trendforce_china-advanced-packaging-new-capacity-wave.md（中國先進封裝企業擴產潮）
+- 新增 wiki 來源摘要頁：2 頁
+  - wiki/sources/2026-07-30_trendforce_silicon-photonics-foundry-landscape.md
+  - wiki/sources/2026-07-29_trendforce_china-ap-new-capacity-wave.md
+- 更新 wiki 實體/技術/概念頁：3 頁
+  - wiki/technologies/copackaged-optics.md（矽光子代工多極量產格局；Tower SiPh 日本擴產；GF Fotonix；CanSemi；2027 量產關鍵節點；updated 2026-07-31）
+  - wiki/concepts/geopolitics-advanced-packaging.md（中國企業自主擴產浪潮 ~RMB 400 億；JCET 臨港/Forehope/HITS/Hotchip/Mingtai/Huatian/Biwin 等新進者首次記錄；三大結構特徵；updated 2026-07-31）
+  - wiki/entities/jcet.md（上海臨港新廠 RMB 78 億，Phase I 2028H2；異質整合/Chiplet 戰略升格；updated 2026-07-31）
+- 更新 wiki/index.md（頁面數 332→334；來源數 293→295；2 個新來源摘要頁；更新 2026-07-30→2026-07-31）
+- 主要新知識：
+  1. **矽光子代工格局於 2026 年正式進入「多極量產」時代**：UMC（新加坡 12" 首批 HVM 交付）、Tower（日本 Arai 廠轉型 12" SiPh+AP，Q4 2027 量產）、GlobalFoundries（收購 AMF 整合 Fotonix）、TSMC（COUPE 量產中）、CanSemi（中國 12" 產線建成）五路並進；2027 年為全球矽光子代工產能釋放的關鍵節點——薄膜鈮酸鋰（TFLN）確認為下一代速率突破方向
+  2. **中國先進封裝進入企業自主擴產新階段**：2026 年 5–7 月近 10 個重大項目、合計投資≈RMB 400 億——與前期政府半導體基金主導模式互補，形成「政府基金 + 企業資本」雙輪驅動格局；新進入者涵蓋大型顯示廠（HKC）、記憶體廠（Biwin）、西部省份新基地（四川南充、成都），顯示中國先進封裝從沿海集中向縱深擴散
+
