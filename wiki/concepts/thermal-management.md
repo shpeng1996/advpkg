@@ -1,10 +1,10 @@
 ---
 title: "先進封裝熱管理 / Thermal Management in Advanced Packaging"
 category: concept
-tags: [thermal-management, liquid-cooling, 3D-IC, CoWoS, heat-dissipation, TIM, ECTC-2025]
+tags: [thermal-management, liquid-cooling, 3D-IC, CoWoS, heat-dissipation, TIM, ECTC-2025, GaN, power-delivery, co-design]
 created: 2026-04-25
-updated: 2026-07-30
-sources: [2025-12-01_semiengineering_thermal-management, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-02_trendforce_samsung-hbm5-computex2026]
+updated: 2026-08-04
+sources: [2025-12-01_semiengineering_thermal-management, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-02_trendforce_samsung-hbm5-computex2026, 2026-05-21_semieng_hi-roadmap-nature-paper-intel]
 related:
   - wiki/technologies/cowos.md
   - wiki/technologies/hybrid-bonding.md
@@ -209,3 +209,23 @@ SemiEngineering 2026-07-29 深度報導確認翹曲管理（Warpage Management�
 **wiki 含義**：翹曲管理是熱-電-機械協同設計（Thermal-Electrical-Mechanical Co-design）的第三維「機械」約束日益凸顯的具體表現。建議在未來更新中，將翹曲管理列為「先進封裝三大物理約束」之一（並列熱管理、電源完整性），在 wiki/overview.md 中顯式納入。
 
 *Source: SemiEngineering 2026-07-29；raw/articles/2026-07-29_semieng_warpage-management-advanced-packaging.md*
+
+## ⭐ 2026-08-04 更新：GaN 封裝內電源供應 + 功率-效能-散熱協同設計
+
+*Source: Intel 主導 Nature Reviews Electronics Engineering（2026-03）→ [[sources/2026-05-21_semieng_hi-roadmap-nature-paper]]*
+
+### GaN 封裝內電源傳遞（In-Package GaN Power Delivery）
+
+Intel 主導、10+ 大學及 ASE Group/TI/Boeing 共同執筆的最新異質整合路線圖評論（Nature Reviews Electronics Engineering, 2026-03）提出：
+
+- **GaN（氮化鎵）直接整合於封裝內**作為 VRM（Voltage Regulator Module）的技術路線，是解決現代 AI 晶片高電流傳輸損耗的關鍵路徑。
+- 傳統 PCB 板級電源傳遞在 2nm/1.4nm 等高電流節點下遭遇**傳導損耗瓶頸**；GaN 封裝內化可將電源轉換點移至晶片封裝層級，顯著縮短電流路徑長度、降低功耗。
+- **封裝內液態冷卻**（liquid cooling embedded within chip stacks）被同論文列為 3D 堆疊散熱的長期解決方案。
+
+### 功率-效能-散熱協同設計（Power-Performance-Thermal Co-design）
+
+- 上述 Nature Reviews 論文明確指出：**AI 算力每 3 個月翻倍的速度**（faster than Moore's Law）要求功率傳遞、計算效能、散熱設計**從最早期架構階段**即作為統一系統協同設計，不可分離優化。
+- 這與本頁既有記錄的「thermal-electrical-mechanical co-design」概念對應，並將**電源（Power）** 明確列為協同設計的第一維約束——先於熱管理甚至效能設計。
+- **IEEE HI Roadmap 2024** 被此論文批評缺乏量化指標（unquantified targets），未能為業界提供足夠清晰的電源傳遞和散熱路線圖方向，需建立更長週期（20 年）的量化路線圖。
+
+**wiki 含義**：GaN 封裝內電源首次明確出現在主流異質整合路線圖文獻中，是「封裝功能複合化」的新信號——封裝不再只是結構/連接，而是主動承擔電源轉換功能。建議在 [[wiki/technologies/emib.md]] 和 [[wiki/entities/intel.md]] 中補充 Intel 封裝內 GaN 電源的相關技術佈局。

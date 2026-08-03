@@ -3,7 +3,7 @@ title: "ASE Group / 日月光投控"
 category: entity
 tags: [OSAT, advanced-packaging, CoWoP, FOPLP, chiplet, CPO, LEAP]
 created: 2026-04-25
-updated: 2026-07-02
+updated: 2026-08-03
 sources: [2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2026-05-08_aseglobal_ase-wus-kaohsiung-focoes-hub, 2026-05-26_semiconductor-digest_ase-310mm-plp-ectc2026, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-11_trendforce_ase-spil-zhunan-plant, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-07-01_trendforce_ase-price-hike-20pct]
 related:
   - wiki/technologies/cowos.md
@@ -32,7 +32,20 @@ related:
 
 ## 近期動態 / Recent Developments
 
-- **2026-07-01（⭐最新）**：**ASE CoWoS/FoCoS 先進封裝報價漲逾 20%；「物理 AI」定義下一波需求**——據 MoneyDJ 引述業界消息，ASE 針對 **CoWoS** 及 **Fan-Out Chip on Substrate（FoCoS）**等先進封裝技術報價調漲逾 **20%**，主要影響美系大型客戶；ASE 未直接置評。COO Tien Wu 說明漲幅由兩因素驅動：（1）原材料成本上升；（2）長期資本投資需求增加。Tien Wu 進一步表示 AI 需求已從資料中心延伸至**物理 AI**（Physical AI）——汽車電子、人形機器人等場景，視為長期結構性轉變，ASE 正「全力以赴」擴產。目前 OSAT 產業稼動率接近滿載，ASE + SPIL 合計約有 **15 座**新建/擴產廠同時進行，目標瞄準 2029–2030 年後需求；2026 capex 維持 **US$8.5B**，仍有上行空間。
+- **2026-08-03（⭐最新）**：**ASE 2026 CapEx 再上修至 US$10.5B（歷史新高）；2027 LEAP 目標翻倍至 US$7.5B+；FOPLP Q1 2027；Q4 毛利率將突破 30% 天花板**（TrendForce 2026-07-31，引述 Economic Daily News、TechNews、Storm Media + ASE 官方法說）：
+  - **2026 資本支出**：US$8.5B → **US$10.5B**（+US$2B，+23.5%），再創歷史新高
+    - 分配：~US$4B 新廠/基礎設施；US$6.5B 設備（LEAP + 主流封裝 + 測試）
+  - **LEAP 業務**：2026 LEAP 已超越 US$3.5B 目標；**2027 LEAP 目標：至少 US$7.5B**（from $5.5B，比 2026 翻倍）
+  - **FOPLP（310×310mm 全自動）量產時程：Q1 2027**（前估 2026 年底，微幅調整）
+  - **CPO 低量部署：2026 年底啟動**（COO 確認）
+  - **玻璃基板量產：12 個月內不會**（COO 明確表態，即不早於 2027-08）
+  - **Q3 財務指引**：ATM 收入 QoQ +11%–13%（NT$）；毛利率 28%–29%；EMS 收入 ~+40% QoQ，op margin 3.2%–3.4%
+  - **Q4 展望**：ATM 毛利率可能突破長期結構性天花板 30%（市場首次明確預期）
+  - 目前同步進行：**13 座新廠建設 + 8 座擴產**專案
+  - 全程服務（GPU / CPU / ASIC），已掌握客戶 2027 年需求與產能需求能見度
+  *Source: TrendForce 2026-07-31 → [[sources/2026-07-31_trendforce_ase-capex-record-10-5b-leap-foplp]]*
+
+- **2026-07-01（次最新）**：**ASE CoWoS/FoCoS 先進封裝報價漲逾 20%；「物理 AI」定義下一波需求**——據 MoneyDJ 引述業界消息，ASE 針對 **CoWoS** 及 **Fan-Out Chip on Substrate（FoCoS）**等先進封裝技術報價調漲逾 **20%**，主要影響美系大型客戶；ASE 未直接置評。COO Tien Wu 說明漲幅由兩因素驅動：（1）原材料成本上升；（2）長期資本投資需求增加。Tien Wu 進一步表示 AI 需求已從資料中心延伸至**物理 AI**（Physical AI）——汽車電子、人形機器人等場景，視為長期結構性轉變，ASE 正「全力以赴」擴產。目前 OSAT 產業稼動率接近滿載，ASE + SPIL 合計約有 **15 座**新建/擴產廠同時進行，目標瞄準 2029–2030 年後需求；2026 capex 維持 **US$8.5B**，仍有上行空間。
   *Source: TrendForce 2026-07-01（引述 MoneyDJ、Liberty Times、Economic Daily News）*
 
 - **2026-04-10（補充歷史基準點，2026-06-30 新增）**：**Renwu（仁武）廠動土；CPO 量產時程首度證實「今年啟動」**——CEO Tien Wu 於高雄仁武廠動土典禮宣布，**2026 年全球六座新廠將同步動工**，創公司史上最大建廠規模；Renwu 廠總投資逾 **NT$108.3 億**，Phase 1 預計 **2027-04** 投產、Phase 2 預計 **2027-10** 投產。當時（4 月）2026 資本支出原訂 **US$7B**，Wu 表示因 AI 需求強勁仍有上修空間（後續於 5 月二次上修至 $8.5B，已於下方記錄）。Wu 同時**首次證實 CPO（共封裝光學）量產目標於今年（2026）啟動**，但達規模經濟效益與全球普及時程仍取決於市場動態。此為 capex 由 $7B → $8.5B 演進軌跡的歷史起點記錄。

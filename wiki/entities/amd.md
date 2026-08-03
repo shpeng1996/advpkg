@@ -3,8 +3,8 @@ title: "超微半導體 / AMD (Advanced Micro Devices)"
 category: entity
 tags: [fabless, CPU, GPU, chiplet, Zen6, EFB, I-CubeS, Milan, EPYC, MI-series, Venice, COMPUTEX2026, MI455X, CoWoS-L, SoIC, FOPLP]
 created: 2026-05-03
-updated: 2026-07-27
-sources: [2026-03-01_semianalysis_cpus-back-datacenter-2026, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-21_trendforce_amd-lisa-su-tsmc-10b-taiwan-packaging, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand]
+updated: 2026-08-04
+sources: [2026-03-01_semianalysis_cpus-back-datacenter-2026, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-21_trendforce_amd-lisa-su-tsmc-10b-taiwan-packaging, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-07-24_semieng_chip-week-148]
 related:
   - wiki/entities/tsmc.md
   - wiki/entities/samsung.md
@@ -30,7 +30,10 @@ related:
 
 ## 近期動態 / Recent Developments
 
-- **2026-07-24（⭐最新）**：**AMD 發布 Instinct MI455X——CoWoS-L + SoIC + HBM4 432GB；EPYC Venice 高端採 CoWoS-L；Zen 7 評估 Powertech FOPLP**（TrendForce 2026-07-24，引述 Commercial Times、Tom's Hardware、Wccftech）：
+- **2026-07-24（⭐最新）**：**AMD Helios 機架級 AI 平台正式進入量產；AMD 投資 Anthropic；AMD 發布 Instinct MI455X——CoWoS-L + SoIC + HBM4 432GB；EPYC Venice 高端採 CoWoS-L；Zen 7 評估 Powertech FOPLP**（SemiEngineering Week #148；TrendForce 2026-07-24，引述 Commercial Times、Tom's Hardware、Wccftech）：
+  - **AMD Helios 機架級 AI 平台（⭐新）**：AMD **Helios** 機架級 AI 整合平台正式宣告進入量產（entered production）。Helios 配置：**72 顆 AMD Instinct GPU + 18 顆 EPYC CPU + 網路互連**——首款 AMD 原廠定義的超大規模 AI 訓練/推論機架平台。此為 AMD 對標 NVIDIA NVL72（GB200 NVL72）的旗艦系統級產品。
+  - **AMD 投資 Anthropic（⭐新）**：AMD 宣布投資 Anthropic 高達 **US$5B**（股權投資），確立 AMD 在 AI 軟體/模型生態的戰略佈局；Anthropic 同步承諾以 **2GW** 的 AMD GPU 算力部署（第一階段 1GW 於 **H1 2027** 上線）。
+  *Source: SemiEngineering Chip Week Review #148（2026-07-24）→ [[sources/2026-07-24_semieng_chip-week-148]]*
   - **MI455X（CDNA 5）**：320 億電晶體；4 個 XCD（Accelerator Complex Die）透過**混合接合（Hybrid Bonding / SoIC）**堆疊於 FCD（Fabric and Cache Die）上；2 個 FCD + 12 HBM4 堆疊透過 **TSMC CoWoS-L** 互連；432GB HBM4 / 22.3 TB/s（+2.8× vs MI350）；40 PFLOPs FP4 / 20 PFLOPs FP8。製程：TSMC 2nm + 3nm FinFET。
   - **EPYC Venice（高端型號）**：預計採用 **CoWoS-L**，台積電高雄 **Fab 22** 量產，2H26 爬坡支援 AI 伺服器需求。
   - **SoIC 產能預測**：台積電 SoIC 月產能—— EOY 2026: **15,000–20,000 wsm**；EOY 2027: **≥30,000–40,000 wsm**（2× EOY 2026）。

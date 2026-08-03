@@ -3,7 +3,7 @@ title: "玻璃基板 / Glass Core Substrate"
 category: technology
 tags: [glass-substrate, TGV, panel-level, FC-BGA, CoPoS, Absolics, DNP, Rapidus, warpage, SeWaRe, glass-interposer, BOE, ULCVD, non-embedding, Lens-Technology, TPK-KY, Innolux, AUO]
 created: 2026-05-08
-updated: 2026-07-29
+updated: 2026-08-03
 sources: [2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-05-05_trendforce-insights_glass-substrate-development, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-05-29_3dincites_rapidus-2nm-advanced-packaging-ai-foundry, 2026-06-01_trendforce_intel-3dgs-india-glass-substrate, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-06-20_biggo_boe-glass-substrate-pilot, 2026-06-28_economy-ac_glass-substrate-global-race, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan]
 related:
   - wiki/technologies/copos.md
@@ -466,6 +466,18 @@ TSMC 在 JPCA Show 2026（日本）首次公開玻璃基板 vs 有機基板量�
 - **BOE**（中國）：試產線運轉，量產良率待解
 
 ---
+
+## ⭐ 2026-08-03 更新：ASE COO 明確表態「12個月內玻璃基板不會量產」
+
+**TrendForce 2026-07-31**（引述 ASE Q2 2026 法說）：ASE COO **Tien Wu** 在最新法說會上針對玻璃基板量產時程做出明確表態：**「12 個月內不會量產（no mass production within 12 months）」**，即最早量產時間窗口為 **2027 年 8 月以後**。
+
+此聲明的重要意義：
+- ASE 是全球最大 OSAT，其評估代表業界對玻璃基板量產就緒度的主流判斷
+- 與 SKC/Absolics 2027 年量產目標（2026-07-24 已延後）及 Samsung SEMCO 2027 年後目標高度一致
+- 進一步壓縮「2026 年底出現商業量產」的可能性——現在連 OSAT 端都明確表示 12 個月內不會（ASE 如此明確表態，業界「2026 年底量產」說法可排除）
+- 時程收斂：**玻璃基板實際商業量產視窗 = 2027 年中–2028 年**（Intel、Absolics、Samsung SEMCO、DNP 等）
+
+*Source: TrendForce 2026-07-31 → [[sources/2026-07-31_trendforce_ase-capex-record-10-5b-leap-foplp]]*
 
 ## ⭐ 2026-07-26 更新：SKC/Absolics 量產時程延後至 2027（TrendForce 2026-07-24）
 

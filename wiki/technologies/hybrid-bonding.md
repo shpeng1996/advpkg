@@ -474,6 +474,7 @@ Intel 在 ECTC 2026 上公開了多項混合接合材料與製程研究合作，
 - **ASML 若正式推出混合接合設備，是否會顛覆 Besi 的龍頭地位？**（ASML 精密對準技術優勢 vs. Besi 的後段製程深度）
 - 韓國本土設備商（Hanmi、Hanwha、LG）能否在 HBM6 時代取代 Besi/ASMPT 等歐洲廠商？
 - **⭐ 若 Besi 被 Lam Research 或 Applied Materials 收購（2026-03 傳聞），混合接合設備市場競爭格局將如何重塑？**（Lam 進入封裝領域 vs. AMAT 強化 Kinex 生態系）
+- **⭐ 混合接合的接合介面可靠性（bonding interface reliability）仍是開放研究挑戰**（Nature Reviews Electronics Engineering 2026-03）：Intel 主導、10+ 大學及 ASE/TI/Boeing 共同執筆的最新異質整合路線圖評論指出，HB 接合介面的長期可靠性機制尚未被充分建模——熱循環、電遷移、與多材料界面交互作用的可靠性預測模型仍缺乏標準化方法。[[sources/2026-05-21_semieng_hi-roadmap-nature-paper]]
 - **JEDEC HBM4E 高度鬆綁至 900µm 後，混合接合採用時間表是否將延後至 HBM5（2029+）？**（目前 SK Hynix 最樂
 ## 2026-07-13 更新 / Updates
 

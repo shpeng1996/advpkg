@@ -2,6 +2,20 @@
 
 ---
 
+## [2026-08-03] collect | 每日自動蒐集 — TSMC 類 EMIB 矽橋封裝反制 Intel + ASE CapEx $10.5B 歷史新高 + Samsung DS Q2 HBM4 Q3 三倍成長
+- 搜尋查詢數：5 組（TSMC EMIB-like packaging Kinsus、ASE FOPLP CPO CapEx 2026、Samsung HBM4 Q3 2026、advanced packaging market 2026、hybrid bonding latest 2026）
+- 成功抓取：3 篇（存入 raw/articles/ 3 篇）
+- 失敗/跳過：多篇（付費牆 / 已收錄）
+- 觸發 ingest：3 篇
+- 觸及 wiki 頁面：（共 11 頁）
+  - **新增（3頁）**：wiki/sources/2026-07-31_trendforce_tsmc-emib-like-packaging-kinsus.md、wiki/sources/2026-07-31_trendforce_ase-capex-record-10-5b-leap-foplp.md、wiki/sources/2026-07-30_trendforce_samsung-ds-q2-2026-hbm4-triple-q3.md
+  - **更新（8頁）**：entities/tsmc.md、entities/ase-group.md、entities/samsung.md、technologies/emib.md、technologies/hbm4.md、technologies/foplp.md、technologies/copackaged-optics.md、technologies/glass-substrate.md
+- 主要新知識：
+  1. **TSMC 反制 Intel EMIB**：TSMC 正與欣興電子（Kinsus）聯合研發「類 EMIB」局部矽橋（local silicon bridge）技術，起因是 Google 第九代 TPU 可能因 Intel EMIB-T 技術成熟而轉單——這是 TSMC 封裝技術策略的重大轉向，首次正面回應 Intel 在矽橋封裝的競爭。
+  2. **ASE CapEx $10.5B 刷新歷史紀錄**：CapEx 再上修（$8.5B→$10.5B），2027 LEAP 目標翻倍至 $7.5B+；FOPLP 量產時程確認為 Q1 2027（解決「2026 年底」vs「2027 H1」的時程矛盾）；CPO 低量部署 2026 年底；玻璃基板 12 個月內不會量產。
+  3. **Samsung HBM4 Q3 營收三倍成長**：Samsung DS Q2 2026 正式財報確認 HBM4 Q3 QoQ 三倍成長，H2 HBM4 佔 HBM 組合 >60%；DRAM ASP +mid-40% QoQ；MX 部門出現首次季度虧損。
+- index.md 頁面總數：334 → **337**；Sources：295 → **298**；更新日期：2026-07-31 → **2026-08-03**
+
 ## [2026-07-23] collect | 每日自動蒐集 — TSMC Q2 2026 淨利歷史新高 + Arizona $265B（2AP廠）+ JEDEC SPHBM4 新標準 + India Semicon 2.0 + CXMT IPO
 
 - 搜尋查詢數：7 組（TSMC Q2 earnings、TSMC Arizona expansion、TSMC CapEx post-earnings、JEDEC SPHBM4、SemiEngineering Week #147、Tower Semi Japan、India semiconductor 2026）
@@ -2267,3 +2281,54 @@ an（2028–2029 量產世代）為 CoPoS 最可能的首批量產客戶——�
   1. **矽光子代工格局於 2026 年正式進入「多極量產」時代**：UMC（新加坡 12" 首批 HVM 交付）、Tower（日本 Arai 廠轉型 12" SiPh+AP，Q4 2027 量產）、GlobalFoundries（收購 AMF 整合 Fotonix）、TSMC（COUPE 量產中）、CanSemi（中國 12" 產線建成）五路並進；2027 年為全球矽光子代工產能釋放的關鍵節點——薄膜鈮酸鋰（TFLN）確認為下一代速率突破方向
   2. **中國先進封裝進入企業自主擴產新階段**：2026 年 5–7 月近 10 個重大項目、合計投資≈RMB 400 億——與前期政府半導體基金主導模式互補，形成「政府基金 + 企業資本」雙輪驅動格局；新進入者涵蓋大型顯示廠（HKC）、記憶體廠（Biwin）、西部省份新基地（四川南充、成都），顯示中國先進封裝從沿海集中向縱深擴散
 
+
+## [2026-08-04] collect | 先進封裝全域 collect — 9 組查詢，4 篇新收錄（Intel EMIB/CPO/TGV、市場預測、HI 路線圖、Week #148）
+
+- 搜尋查詢數：9 組（TSMC 封裝動態、HBM 最新、Hybrid Bonding 研究、Intel EMIB 擴產、市場預測、FOPLP 面板封裝、CPO/COUPE、學術論文、產業動態）
+- 成功抓取：4 篇（存入 raw/articles/ 4 篇）
+- 失敗/跳過：多篇
+  - Reuters 搜尋：API Error 400，domain 不可訪問，跳過
+  - Besi Q2 2026 earnings：URL 不在 provenance set，跳過
+  - 面板級封裝第二波：JS 動態渲染，空白頁面，跳過
+  - 大量 URL 已在 _collected_urls.txt 中，自動跳過
+- 觸發 ingest：4 篇（批次處理）
+- 觸及 wiki 頁面：（共 11 頁）
+
+### 新增 raw 檔案（4 篇）
+
+1. `raw/articles/2026-07-24_semieng_chip-week-148.md` — SemiEngineering Week #148（Yole $55B→$120B+；Nokia NXP InP；AMD Helios 量產；Amkor $1.5B NVIDIA；Besi Q2）
+2. `raw/articles/2026-05-05_trendforce_intel-emib-expansion-us-vietnam.md` — TrendForce：Intel EMIB 美越雙軌擴產；台灣設備商；越南 SHTP $4.115B
+3. `raw/articles/2026-05-21_semieng_hi-roadmap-nature-paper-intel.md` — SemiEngineering：Intel Nature Reviews EE HI 路線圖；AI 算力 3 個月翻倍；GaN 電源；HB 可靠性
+4. `raw/articles/2026-06-03_3dincites_intel-foundry-emib-cpo-glass-ectc2026.md` — Intel Foundry @ 3DInCites：EMIB-T 完整規格；V-groove CPO 玻璃耦合器；填充 TGV 零失效
+
+### 新增 wiki 來源摘要頁（4 頁）
+
+- `wiki/sources/2026-07-24_semieng_chip-week-148.md`
+- `wiki/sources/2026-05-05_trendforce_intel-emib-expansion-us-vietnam.md`
+- `wiki/sources/2026-05-21_semieng_hi-roadmap-nature-paper.md`
+- `wiki/sources/2026-06-03_3dincites_intel-foundry-emib-cpo-glass.md`
+
+### 更新 wiki 實體/技術/概念頁（7 頁）
+
+- `wiki/concepts/advanced-packaging-market.md`（Yole $55B→$120B+ 2031 預測；Amkor $1.5B NVIDIA 訂單；updated 2026-08-04）
+- `wiki/entities/nokia.md`（Nokia 收購 NXP Chandler InP 廠；Q1 2029 完成；updated 2026-08-04）
+- `wiki/entities/amd.md`（AMD Helios 量產；AMD 投資 Anthropic $5B；updated 2026-08-04）
+- `wiki/technologies/hybrid-bonding.md`（Open Questions 新增：HB 接合介面可靠性為開放研究挑戰，Nature Reviews 2026）
+- `wiki/technologies/copackaged-optics.md`（Intel V-groove 硬式玻璃耦合器取代 FAU 方案，明確 V-groove 命名；updated 2026-08-04）
+- `wiki/concepts/thermal-management.md`（GaN 封裝內電源傳遞；功率-效能-散熱協同設計；updated 2026-08-04）
+- `wiki/index.md`（頁面數 337→341；來源數 298→302；4 個新來源摘要頁；更新 2026-08-03→2026-08-04）
+
+### 矛盾/修正
+
+- `wiki/entities/intel.md`：已有 EMIB 越南擴產內容（E&R Engineering、C Sun、AblePrint、2026-05-10 條目），與 TrendForce 新收錄文章一致，無需修改。
+- `wiki/technologies/foplp.md`：已有 Powertech+Broadcom 新加坡 PLP JV 內容（2026-07-29 條目），無需修改。
+- `wiki/technologies/glass-substrate.md`：已有 Intel ECTC 2026 銅填充 TGV 零熱循環失效（line 84，SemiEng 2026-06-05），3DInCites 文章確認，無重複更新。
+- `wiki/technologies/emib.md`：已有 Intel+SPIL 3D SRAM Chiplet 內容（SemiEng 2026-06-05），3DInCites 確認，無重複更新。
+
+### 主要新知識
+
+1. **Yole 大幅上修市場預測**：先進封裝市場 2025 年基期 $55B，2031 年終點 >$120B——隱含 CAGR ~14%，遠超既有 10.7% 預測，反映 AI 需求加速效應
+2. **AMD Helios 機架級 AI 平台正式量產**：72 GPU + 18 CPU + 網路，AMD 對標 NVIDIA NVL72 的旗艦系統；AMD 同步以 $5B 股權投資 Anthropic
+3. **Nokia 跨入 InP 半導體製造**：收購 NXP Chandler AZ 廠，2029 Q1 完成，向上延伸 CPO 垂直整合能力
+4. **GaN 封裝內電源傳遞首次進入 HI 路線圖主論述**（Nature Reviews EE 2026-03）：AI 算力每 3 個月翻倍，GaN in-package VRM 成為應對高電流密度的關鍵技術路徑
+5. **Intel V-groove 硬式玻璃耦合器明確命名**：既有 CPO 頁面已有 Intel 玻璃耦合器技術但缺 V-groove 術語，本次補強以 3DInCites 官方命名確認

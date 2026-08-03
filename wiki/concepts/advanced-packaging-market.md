@@ -3,8 +3,8 @@ title: "先進封裝市場 / Advanced Packaging Market"
 category: concept
 tags: [market, forecast, CAGR, supply-chain, HBM, chiplet, geopolitics, equipment]
 created: 2026-04-24
-updated: 2026-07-26
-sources: [2026-04-24_initial-survey, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2026-01-23_trendforce_chip-tools-tel-asml, 2026-03-05_trendforce_intel-emib-billions, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2025-12-18_trendforce_micron-capex-hbm4, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2025-05-13_trendforce_top10-osat-2024, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-04-16_ontoinnovation_dragonfly-g5-qualified, 2026-06-23_communicationstoday_foplp-glass-substrate-market-8b-2030, 2026-06-29_trendforce_china-osat-tongfu-jcet-investment, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-26_semieng_chip-week-144, 2026-07-01_trendforce_ase-price-hike-20pct, 2026-07-04_semieng_chip-week-145, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-07-03_trendforce_anthropic-samsung-advanced-packaging, 2026-05-08_trendforce_ajinomoto-abf-1b-land-buy-2032-margins]
+updated: 2026-08-04
+sources: [2026-04-24_initial-survey, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2026-01-23_trendforce_chip-tools-tel-asml, 2026-03-05_trendforce_intel-emib-billions, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2025-12-18_trendforce_micron-capex-hbm4, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2025-05-13_trendforce_top10-osat-2024, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-04-16_ontoinnovation_dragonfly-g5-qualified, 2026-06-23_communicationstoday_foplp-glass-substrate-market-8b-2030, 2026-06-29_trendforce_china-osat-tongfu-jcet-investment, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-26_semieng_chip-week-144, 2026-07-01_trendforce_ase-price-hike-20pct, 2026-07-04_semieng_chip-week-145, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-07-03_trendforce_anthropic-samsung-advanced-packaging, 2026-05-08_trendforce_ajinomoto-abf-1b-land-buy-2032-margins, 2026-07-24_semieng_chip-week-148]
 related:
   - wiki/entities/tsmc.md
   - wiki/entities/sk-hynix.md
@@ -517,3 +517,25 @@ Tower Semi 為 Intel 收購失敗（2023 年被美國監管否決）後仍維持
 Samsung Electronics 於平澤園區建立約 **50 台 D2W 混合接合機**量產線，設備安裝預計 2026 年底啟動；全規模 HBM 量產時程設定在 **2029–2030 年**。BESI 為首選供應商（單機 ~US$4.3M），SEMES 已通過資格認證為備選。Samsung Foundry 同步發布 **3D Cube-H** 混合接合型 3D 堆疊方案，正積極向客戶推廣。
 
 *Source: TrendForce 2026-07-22 → [[sources/2026-07-22_trendforce_samsung-hb-mass-production-besi]]*
+
+## ⭐ 2026-07-24 更新：Yole 大幅上修市場預測 $55B→$120B+（2031）+ Amkor $1.5B NVIDIA 訂單
+
+*Source: SemiEngineering Chip Week Review #148（2026-07-24）→ [[sources/2026-07-24_semieng_chip-week-148]]*
+
+### Yole Group：先進封裝市場 2025→2031 最新預測（⭐迄今最高端點）
+
+| 項目 | 數值 |
+|------|------|
+| **2025 年市場規模（新基期）** | **$55B** |
+| **2031 年市場規模預測** | **>$120B** |
+| 隱含 CAGR（2025–2031） | ~約 **14%**（$55B→$120B+ 推算） |
+
+> **與既有紀錄比較**：前次最新 Yole 預測（Economy.ac 2026-07-10 引述）為 2023 基期 $37.8B→2029 $69.5B（CAGR 10.7%）。此次新預測（$55B，2025 基期 → $120B+，2031 目標）**大幅上修終點值**，終端規模幾乎翻倍，隱含 CAGR 約 14%——反映 AI 推論/訓練需求爆發超過既有預測的加速效應。兩者基期不同，不構成矛盾，而是 Yole 持續上修的軌跡。**建議以 $55B（2025）→$120B+（2031）作為最新引用基準。**
+
+### Amkor $1.5B NVIDIA CoWoS 訂單（2026-07-24）
+
+- **Amkor Technology** 宣布獲得 **NVIDIA 核心 AI 晶片封裝訂單**，規模達 **US$1.5B**，為公司史上最大單筆客戶訂單。
+- 訂單類型：CoWoS 封裝服務（NVIDIA Blackwell / Rubin 系列 AI 加速器）
+- **市場含義**：TSMC CoWoS 外包訂單持續擴大至 Amkor，印證 CoWoS 供應鏈「TSMC + OSAT 雙軌」策略正在規模化落地。Amkor 此訂單規模相當於其 2024 年全年先進封裝營收的顯著比例。
+
+*Source: SemiEngineering Chip Week Review #148 → [[sources/2026-07-24_semieng_chip-week-148]]*

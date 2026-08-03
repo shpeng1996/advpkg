@@ -1,10 +1,10 @@
 ---
 title: "Nokia — 諾基亞"
 category: entity
-tags: [Nokia, ATP, photonics, CHIPS-Act, Pennsylvania]
+tags: [Nokia, ATP, photonics, CHIPS-Act, Pennsylvania, InP, NXP, optical-semiconductor]
 created: 2026-06-25
-updated: 2026-06-25
-sources: [2026-06-16_nokia_pennsylvania-atp-expansion]
+updated: 2026-08-04
+sources: [2026-06-16_nokia_pennsylvania-atp-expansion, 2026-07-24_semieng_chip-week-148]
 related: [wiki/concepts/geopolitics-advanced-packaging.md]
 ---
 
@@ -19,6 +19,11 @@ related: [wiki/concepts/geopolitics-advanced-packaging.md]
 - 光通訊模組製造，近期投資擴大**先進測試與封裝（Advanced Test and Packaging, ATP）**產能，區別於傳統前段晶圓製造。
 
 ## 近期動態 / Recent Developments
+
+- **2026-07-24（⭐最新）**：**Nokia 宣布收購 NXP Semiconductors 旗下亞利桑那州 Chandler 晶圓廠，用於 InP（磷化銦）光半導體製造**；交易預計 **2027 年初**開始租賃過渡，**2029 年 Q1** 正式完成收購。Chandler 廠目前由 NXP 生產 RF 半導體；Nokia 收購後將改建為 InP 晶圓廠，生產光通訊用元件（雷射器、光電探測器等），服務 CPO（共封裝光學）與資料中心光互連市場需求。
+  - **InP 戰略意義**：InP 是高速光通訊組件的核心半導體材料，Nokia 藉此從光通訊模組廠商向上延伸進入材料/前段製造，補齊 CPO 垂直整合能力。
+  - **封裝相關性**：InP 雷射器是 CPO 架構中的光源組件，Nokia 自製 InP 晶片代表 CPO 供應鏈中「光源自研自製」策略的強化。
+  *Source: SemiEngineering Chip Week Review #148（2026-07-24）→ [[sources/2026-07-24_semieng_chip-week-148]]*
 
 - **2026-06**：宣布擴大賓州 Allentown 廠區先進測試與封裝（ATP）產能，獲美國 CHIPS Act 資金支持；屬於 Nokia 多年期 US$4B 美國投資計畫一環。背景數據：全球先進測試與封裝產能中美國占比 <2%。
   *Source: Nokia 官方新聞稿 2026-06-16*

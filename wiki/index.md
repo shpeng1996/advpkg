@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-07-31
-**頁面總數 Total Pages**：334
-**原始來源數 Sources**：295
+**更新時間 Updated**：2026-08-04
+**頁面總數 Total Pages**：341
+**原始來源數 Sources**：302
 
 ---
 
@@ -14,12 +14,12 @@
 
 ## 實體 Entities（公司、組織）
 
-- [[entities/tsmc]] — 台積電；全球最大晶圓代工廠；CoWoS/SoIC 技術領導者；2026 年產能瓶頸核心
+- [[entities/tsmc]] — 台積電；全球最大晶圓代工廠；CoWoS/SoIC 技術領導者；**研發類 EMIB 矽橋封裝（聯手欣興 Kinsus）以留住 Google TPU 訂單**；2026 年產能瓶頸核心⭐更新
 - [[entities/intel]] — 英特爾；IDM；EMIB-T 今年內 fab 量產（45µm→35/25µm 路線圖、Jaguar Shores 首款產品推測）；**Xeon 6+ 18A 首款商業 CPU**（2026-06-19）⭐更新
-- [[entities/samsung]] — 三星；IDM + Foundry + Memory；**GlaSSEM JV（Samsung EM 66% + Dongwoo Fine-Chem 34%，KRW 480B，玻璃基板 2H27 量產）**；光州新封裝基地（TCB 231K + HCB 19.5K/月）⭐更新
+- [[entities/samsung]] — 三星；IDM + Foundry + Memory；**Q2 2026 正式財報：DS 部門 KRW 89.5T 占合併 99.7%；HBM4 Q3 三倍成長；MX 首次季虧損**；GlaSSEM JV（玻璃基板 2H27 量產）；光州新封裝基地（TCB 231K + HCB 19.5K/月）⭐更新
 - [[entities/sk-hynix]] — SK Hynix；HBM 市場領導者；**Q2 2026 正式財報：KRW 79.3T 營收 +257% YoY、KRW 60.5T 利潤 +557%、Op Margin 76%（歷史新高）；HBM4 批量出貨確認**（2026-07-30）⭐更新
 - [[entities/asmpt]] — ASMPT Limited；TCB/混合接合/Photonics-CPO 設備領導廠商；Q1 2026 訂單 27M +71.6% YoY；NEXX 出售給 AMAT⭐新增
-- [[entities/ase-group]] — ASE Group；全球最大 OSAT；CoWoP 面板封裝；K28 廠 2026 年完工；SPIL 2026 年累計廠房收購 >NT$227 億；5 月營收 NT$630.3 億（+28.6% YoY）⭐更新
+- [[entities/ase-group]] — ASE Group；全球最大 OSAT；CoWoP 面板封裝；**2026 CapEx $10.5B（再上修）；2027 LEAP 目標 $7.5B+；FOPLP Q1 2027；Q4 毛利率可能>30%**；K28 廠 2026 年完工⭐更新
 - [[entities/amkor]] — Amkor；全球第二大 OSAT；Arizona $70 億廠（2028 投產）；Intel EMIB 外包夥伴⭐新增
 - [[entities/ev-group]] — EV Group（EVG）；混合接合設備領導者；ECTC 2025 展示無光罩微影與層轉移⭐新增
 - [[entities/besi]] — BE Semiconductor（Besi）；D2W 混合接合設備主供應商；Datacon 8800 CHAMEO；Kinex 平台（Applied Materials 持股 9%）⭐新增
@@ -63,6 +63,13 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-06-03_3dincites_intel-foundry-emib-cpo-glass]] — Intel Foundry @ 3DInCites：**ECTC 2026 EMIB-T 完整規格（25µm FLI/120×120mm/>9×/12Gbps/64Gbps UCIe）；V-groove 硬式玻璃耦合器取代 FAU；銅填充 TGV 零熱循環失效；Intel+SPIL 3D SRAM chiplet**（2026-08-04 收錄；原文 2026-06-03）⭐新增
+- [[sources/2026-05-21_semieng_hi-roadmap-nature-paper]] — SemiEngineering（引述 Nature Reviews EE 2026-03）：**Intel 主導 HI 路線圖論文：AI 算力 3 個月翻倍；GaN 封裝內電源；HB 接合介面可靠性開放挑戰；IEEE HI Roadmap 2024 量化指標不足**（2026-08-04 收錄；原文 2026-05-21）⭐新增
+- [[sources/2026-05-05_trendforce_intel-emib-expansion-us-vietnam]] — TrendForce：**Intel EMIB 美國+越南雙軌擴產；台灣設備商 E&R/C Sun/AblePrint 2H26 交貨；SHTP $4.115B/46.6ha/3.8B units；Panther Lake+Wildcat Lake（18A）越南量產**（2026-08-04 收錄；原文 2026-05-05）⭐新增
+- [[sources/2026-07-24_semieng_chip-week-148]] — SemiEngineering Week #148：**Yole 先進封裝 $55B→$120B+（2031）；Intel Foundry Q2 +31%；Amkor $1.5B NVIDIA 訂單；Nokia 收購 NXP Chandler InP 廠；AMD Helios 量產；AMD 投資 Anthropic $5B；Cornell NbAs 奈米線替代銅研究**（2026-08-04 收錄；原文 2026-07-24）⭐新增
+- [[sources/2026-07-31_trendforce_tsmc-emib-like-packaging-kinsus]] — TrendForce：**TSMC 研發類 EMIB 矽橋封裝，聯手欣興；Google 第九代 TPU 可能轉向 Intel EMIB；Intel EMIB-T HVM 2027；欣興 Unimicron 基板初始良率 50%**（2026-08-03 收錄；原文 2026-07-31）⭐新增
+- [[sources/2026-07-31_trendforce_ase-capex-record-10-5b-leap-foplp]] — TrendForce：**ASE 2026 CapEx 再上修至 US$10.5B（歷史新高）；2027 LEAP 目標 US$7.5B+；FOPLP Q1 2027；CPO 低量部署年底；玻璃基板 12 個月內不會量產；Q4 毛利率可能突破 30%**（2026-08-03 收錄；原文 2026-07-31）⭐新增
+- [[sources/2026-07-30_trendforce_samsung-ds-q2-2026-hbm4-triple-q3]] — TrendForce：**Samsung DS Q2 2026 正式財報——DS 部門 KRW 89.5T 占合併 99.7%；HBM4 Q3 營收三倍成長；H2 HBM4 佔比 >60%；DRAM ASP +mid-40%；MX 首次季虧損；AI 記憶體短缺延伸至 2027–2028**（2026-08-03 收錄；原文 2026-07-30）⭐新增
 - [[sources/2026-07-30_trendforce_silicon-photonics-foundry-landscape]] — TrendForce：**矽光子代工格局多極量產——UMC+SILITH 新加坡 12" HVM；Tower Semiconductor Arai 廠 12" SiPh+AP Q4 2027；GF Fotonix（收購 AMF）；TSMC COUPE 量產確認；中國 CanSemi 12" 產線；2027 為矽光子代工產能釋放關鍵節點**（2026-07-31 收錄；原文 2026-07-30）⭐新增
 - [[sources/2026-07-29_trendforce_china-ap-new-capacity-wave]] — TrendForce：**中國先進封裝新一輪擴產潮——5-7 月近 10 個重大項目合計≈RMB 400 億；JCET 臨港 RMB 78 億；Forehope RMB 103 億；USC/HITS RMB 75 億；HKC 紹興 RMB 40 億；Hotchip/Mingtai/Huatian/Biwin 等新進者**（2026-07-31 收錄；原文 2026-07-29）⭐新增
 - [[sources/2026-07-29_semieng_warpage-management-advanced-packaging]] — SemiEngineering：**翹曲管理成為 HVM 核心製程挑戰——更大更薄封裝使翹曲惡化；混合接合平整度要求；FOPLP 面板尺寸放大效應；CTE 失配跨材料問題**（2026-07-30 收錄；原文 2026-07-29）⭐新增
