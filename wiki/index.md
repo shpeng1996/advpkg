@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-08-04
-**頁面總數 Total Pages**：341
-**原始來源數 Sources**：302
+**更新時間 Updated**：2026-08-05
+**頁面總數 Total Pages**：345
+**原始來源數 Sources**：306
 
 ---
 
@@ -63,6 +63,10 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-08-04_trendforce_psmc-exclusive-emib-silicon-capacitor-umc-boost]] — TrendForce：**PSMC 升格為 Intel EMIB-T 矽電容器獨家供應商（12" IPD 平台）；2H 2027 擴產 8"+12" wsm；UMC 台灣+新加坡製造矽橋接器；EMIB-T 成本約 CoWoS 50%；良率~90%；HVM 2027**（2026-08-05 收錄；原文 2026-08-04）⭐新增
+- [[sources/2026-08-04_trendforce_hbf-standard-fms2026-skhynix-sandisk]] — TrendForce：**FMS 2026 HBF 首份正式規格：OCP/UCIe、512GB、Grade 1-3（0.4-3.0 TB/s）；Google DeepMind+Tenstorrent 確認支援；NVIDIA 未承諾；SK Hynix V10 375 層 NAND 2027 年初量產**（2026-08-05 收錄；原文 2026-08-04）⭐新增
+- [[sources/2026-08-03_trendforce_zj-innolight-hkex-ipo-inp-bottleneck]] — TrendForce：**ZJ Innolight HKEX 創紀錄 IPO（HKD 534 億）；1.6T 光模組帶動 InP 基板瓶頸；Coherent 德州 4× 擴產+NVIDIA $20 億 LTA；中國雲南鍺業+有研半導體+天津寬禁 InP 本土化**（2026-08-05 收錄；原文 2026-08-03）⭐新增
+- [[sources/2026-08-03_trendforce_kumamoto-m71-tsmc-jasm-tel-restart]] — TrendForce：**M7.1 熊本地震（2026-07-28）；JASM Fab 1 停機設備檢查無復工時程；TEL 08-03 復工；Sony 08-04 復工全量恢復預計 8 月中；Renesas 西木 07-29/川尻 08-05 復工**（2026-08-05 收錄；原文 2026-08-03）⭐新增
 - [[sources/2026-06-03_3dincites_intel-foundry-emib-cpo-glass]] — Intel Foundry @ 3DInCites：**ECTC 2026 EMIB-T 完整規格（25µm FLI/120×120mm/>9×/12Gbps/64Gbps UCIe）；V-groove 硬式玻璃耦合器取代 FAU；銅填充 TGV 零熱循環失效；Intel+SPIL 3D SRAM chiplet**（2026-08-04 收錄；原文 2026-06-03）⭐新增
 - [[sources/2026-05-21_semieng_hi-roadmap-nature-paper]] — SemiEngineering（引述 Nature Reviews EE 2026-03）：**Intel 主導 HI 路線圖論文：AI 算力 3 個月翻倍；GaN 封裝內電源；HB 接合介面可靠性開放挑戰；IEEE HI Roadmap 2024 量化指標不足**（2026-08-04 收錄；原文 2026-05-21）⭐新增
 - [[sources/2026-05-05_trendforce_intel-emib-expansion-us-vietnam]] — TrendForce：**Intel EMIB 美國+越南雙軌擴產；台灣設備商 E&R/C Sun/AblePrint 2H26 交貨；SHTP $4.115B/46.6ha/3.8B units；Panther Lake+Wildcat Lake（18A）越南量產**（2026-08-04 收錄；原文 2026-05-05）⭐新增

@@ -3,7 +3,7 @@ title: "HBF — High Bandwidth Flash"
 category: technology
 tags: [HBF, NAND, flash, TSV, stacking, SanDisk, SK-Hynix, Hanmi, TCB, AI-inference, storage-class-memory]
 created: 2026-06-11
-updated: 2026-06-25
+updated: 2026-08-05
 sources: [2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-06-05_trendforce_hbf-equipment-race-sandisk-hanmi, 2026-06-22_trendforce_sandisk-hbf-patent-nand-processor-bonding]
 related:
   - wiki/technologies/hbm4.md
@@ -52,7 +52,19 @@ HBF（High Bandwidth Flash）是將多顆 **3D NAND 快閃記憶體晶片**透�
 
 - **2022–2024**：HBF 概念研究階段；SanDisk、SK Hynix 開始探索 HBF 標準化
 - **2026-04**：TrendForce 首次披露 **SanDisk HBF 試產線**（Pilot Line）細節，揭示 SanDisk 為 HBF 主要推動者
-- **2026-06-05（⭐最新）**：TrendForce 深度報導 HBF 設備競賽，揭示關鍵里程碑：
+- **2026-08-05（⭐最新）**：**FMS 2026 首次正式發布 HBF 規格標準**（TrendForce 2026-08-04）：
+  - **標準框架**：透過 OCP（Open Compute Project）推進標準化；採用 **UCIe** 作為 HBF 互連介面
+  - **容量規格**：最高 **512 GB**；NAND 堆疊 **8 高（8-high）** 或 **16 高（16-high）**
+  - **效能分級（Grade 1–3）**：
+    - Grade 1：**0.4 TB/s**（低速、高容量應用）
+    - Grade 2：**1.0 TB/s**（主流 AI 推論）
+    - Grade 3：**3.0 TB/s**（高速、HPC/訓練場景）
+  - **生態系支援確認**：Google DeepMind + **Tenstorrent** 明確表態採用；**NVIDIA 尚未承諾**
+  - **SanDisk（西部數據）**：2H 2026 工程樣品；2027 商業化；生產地點候選為日本
+  - **SK Hynix**：宣布 **V10 375 層 4D NAND**，量產目標 **2027 年初**，效能功耗比（perf/watt）較前代提升 **2.5×**
+  *Source: TrendForce 2026-08-04 → [[sources/2026-08-04_trendforce_hbf-standard-fms2026-skhynix-sandisk]]*
+
+- **2026-06-05**：TrendForce 深度報導 HBF 設備競賽，揭示關鍵里程碑：
   - **SanDisk** 計畫 **2H 2026** 出貨工程樣品；**2027** 出貨與 AI 晶片整合的系統樣品；採用 16 層 NAND 堆疊
   - **Hanmi Semiconductor**（韓國 TC Bonder 龍頭）確認為 HBF TCB 設備主要供應商，預計 **2H 2026 首批交付** HBF 專用 TCB 設備
   - **SK Hynix + SanDisk 標準化合作**：兩家最大 HBF 推動者已啟動聯合標準化（joint standardization）協作，有助形成業界統一的 HBF 介面規範（類比 JEDEC 對 HBM 的標準化角色）

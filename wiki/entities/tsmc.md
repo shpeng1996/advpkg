@@ -3,7 +3,7 @@ title: "台積電 / TSMC"
 category: entity
 tags: [foundry, advanced-packaging, CoWoS, SoIC, CoPoS, COUPE, CPO, InFO, WMCM, aLSI, MRAM, 3nm-pricing]
 created: 2026-04-24
-updated: 2026-08-03
+updated: 2026-08-05
 sources: [2026-04-24_initial-survey, 2026-04-13_trendforce_copos-pilot, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2025-12-18_trendforce_apple-wmcm-a20, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-01-20_trendforce_tsmc-wmcm-apple, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap, 2026-04-23_trendforce_tsmc-roadmap-a12-a13-no-high-na-euv, 2026-05-07_trendforce_tsmc-us-expansion-250b-arizona, 2026-05-12_focustaiwan_tsmc-capex-31b-arizona-20b, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-28_reuters_tsmc-kevin-zhang-energy-efficiency, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-09_financialcontent_tsmc-130k-cowos-wafers, 2026-06-09_digitimes_tsmc-cowos-soic-capacity-symposium, 2026-06-15_trendforce_tsmc-cowos-gap-narrowing-130k-200k-wafers, 2026-06-17_digitimes_amkor-tsmc-10year-arizona-deal, 2026-06-21_tomshardware_tsmc-fab-expansion-roadmap, 2026-06-27_tmtpost_tsmc-cowos-capacity-targets-2026-2027, 2026-07-02_trendforce_samsung-sf2p-plus-tsmc-n2-roadmap, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-22_trendforce_tsmc-2027-price-hike-hpc, 2026-07-20_trendforce_tsmc-265b-arizona-intel-novalake]
 related:
   - wiki/technologies/cowos.md
@@ -33,7 +33,14 @@ related:
 
 ## 近期動態 / Recent Developments
 
-- **2026-08-03（⭐最新）**：**TSMC 開發 EMIB-like 矽橋接封裝，攜 Kinsus 防止客戶流失——競爭格局重大轉折**（TrendForce 2026-07-31，引述 The Information、TechPowerUp）：
+- **2026-08-05（⭐最新）**：**熊本 M7.1 地震——TSMC JASM Fab 1 停機設備檢查，無復工時程**（TrendForce 2026-08-03）：
+  - 2026-07-28 熊本 M7.1 強震，TSMC JASM **Fab 1**（生產 22/28nm 車規/影像感測 SoC）停機進行設備安全檢查，截至 2026-08-05 尚無確定復工時程
+  - **JASM Fab 2**（建設中，目標製程更先進）：建設工程在震後恢復繼續
+  - JASM Fab 1 是日本唯一量產中的外資先進晶圓廠，停產對全球車規 IC 供應鏈具短期壓力
+  - 熊本聚落同時受影響廠商：TEL（設備，已於 08-03 復工）、Sony 半導體（影像感測，08-04 復工、中旬全量恢復）、Renesas
+  *Source: TrendForce 2026-08-03 → [[sources/2026-08-03_trendforce_kumamoto-m71-tsmc-jasm-tel-restart]]*
+
+- **2026-08-03**：**TSMC 開發 EMIB-like 矽橋接封裝，攜 Kinsus 防止客戶流失——競爭格局重大轉折**（TrendForce 2026-07-31，引述 The Information、TechPowerUp）：
   - TSMC 正在開發內部稱為「EMIB-like」的矽橋接封裝技術，直接對標 Intel EMIB
   - **合作夥伴：欣興電子（Kinsus）**，負責從開發到量產的基板供應——此前 wiki 僅記錄 Kinsus 的 2-3 年採購週期，本次首次確認具體封裝合作細節
   - 戰略背景：CoWoS 產能持續緊張，Google 9th gen TPU **可能轉向 Intel EMIB**（分析師預測），TSMC 開始主動防禦客戶流失

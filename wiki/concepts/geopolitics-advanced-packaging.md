@@ -3,7 +3,7 @@ title: "先進封裝地緣政治 / Geopolitics of Advanced Packaging"
 category: concept
 tags: [geopolitics, US-China, CHIPS-Act, supply-chain, chiplet, NAPMP, export-control, glass-substrate, standards-war, BOE, Corning, Absolics]
 created: 2026-04-26
-updated: 2026-07-31
+updated: 2026-08-05
 sources: [2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-23_trendforce_china-osat-sj-semiconductor-ipo, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-08-05_3dincites_iftle636, 2026-03-23_trendforce_musk-terafab-tsmc-packaging, 2026-04-22_trendforce_sk-hynix-indiana-us-plant, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-16_nokia_pennsylvania-atp-expansion, 2026-06-30_amkor-ir_arizona-7billion-groundbreaking, 2026-06-30_digitimes_us-packaging-capacity-10pct-2032, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-10_tomshardware_micron-250b-us-investment-globalwafers, 2026-07-10_semieng_chip-week-146, 2026-07-14_trendforce_huawei-baidu-npo-msa]
 related: [wiki/concepts/advanced-packaging-market.md, wiki/entities/amkor.md, wiki/entities/ase-group.md, wiki/technologies/ucie.md]
 ---
@@ -415,3 +415,47 @@ TrendForce 2026-07-29 報導確認中國在 2026 年下半年啟動新一波以�
 - 結合 Naura 600mm PLP 設備（見 2026-06 更新）、中國玻璃基板生態（見 2026-06 更新）、CXMT JEDEC 參與（見 2026-07-17 更新），2026 年下半年中國先進封裝生態「資本 + 設備 + 材料 + 標準」四輪驅動齊備
 
 *Source: TrendForce 2026-07-29（中國半導體產業投資基金專題報導）；raw/articles/2026-07-29_trendforce_china-semiconductor-industrial-investment-funds.md*
+
+## 2026-08-05 更新 / Updates
+
+### ⭐ 熊本 M7.1 地震——TSMC JASM Fab 1 停產、日本半導體供應鏈衝擊（2026-07-28）
+
+*Source: TrendForce 2026-08-03 → [[sources/2026-08-03_trendforce_kumamoto-m71-tsmc-jasm-tel-restart]]*
+
+**事件摘要**：2026-07-28，日本熊本縣發生 **M7.1 強震**，直接衝擊熊本半導體產業聚落（TSMC JASM、TEL、Sony、Renesas 等主要廠商均設廠於此）。
+
+**各廠商影響與復工進度**：
+
+| 廠商 | 設施 | 震後狀況 | 復工時間 |
+|------|------|---------|---------|
+| **TSMC JASM** | Fab 1（22/28nm，車規/影像感測） | **停機設備檢查中，無復工時程** | 待定 |
+| TSMC JASM | Fab 2（建設中，先進製程） | 建設工程恢復 | 立即 |
+| **TEL（東京電子）** | 熊本設備廠 | 復工完成 | **2026-08-03** |
+| **Sony Semiconductor** | 熊本 CMOS 影像感測器廠 | 設備稼動率恢復中，全面恢復預計 8 月中旬 | **2026-08-04** |
+| **Renesas** | 西木工廠 | 復工完成 | **2026-07-29** |
+| **Renesas** | 川尻工廠 | 復工完成 | **2026-08-05** |
+
+**供應鏈地緣意涵**：
+- TSMC JASM Fab 1 是日本**唯一**量產中的外資先進晶圓廠，停產對**車規 IC、ADAS 影像感測 SoC** 供應鏈形成短期壓力
+- 熊本聚落集中度高（半導體「聚落風險」）：此次震災提醒業界，單一地理聚落的過度集中（Fab + 設備 + 材料均在熊本）是長期脆弱性
+- TEL 熊本廠為半導體設備重鎮——設備供應商的廠房受損可能影響其他全球晶圓廠的設備交期
+- **與 2016 熊本地震對比**（Renesas 當年停產 1 個月）：本次 JASM Fab 1 的復工週期與廠齡/建廠規格有關，有待持續追蹤
+
+### ⭐ InP 基板瓶頸——中國本土化與 Coherent 美國擴產（2026-08-03）
+
+*Source: TrendForce 2026-08-03 → [[sources/2026-08-03_trendforce_zj-innolight-hkex-ipo-inp-bottleneck]]*
+
+隨 1.6T 光模組大量出貨，**Indium Phosphide（InP）磷化銦基板**成為 CPO / 高速光模組供應鏈新瓶頸，觸發美中兩端同時展開產能擴充。
+
+**美國陣營**：
+- **Coherent Corp.（NYSE: COHR）**：德州廠 6 吋 InP 晶圓**產能 4 倍擴充**；已與 NVIDIA 簽訂**20 億美元長期供應協議（LTA）**
+
+**中國本土化進展**：
+
+| 廠商 | 動作 | 規模 | 時間 |
+|------|------|------|------|
+| **雲南鍺業** | 磷化銦晶圓擴產 | **+30 萬片/年** | 2026 |
+| **Vital Materials（有研半導體）** | InP 材料產線啟用 | **40 噸/年** | 2026-07-21 |
+| **天津寬禁** | 6 吋 InP 晶圓廠 | 首條 6 吋線 | 2024-06-24 簽約 |
+
+**地緣意涵**：InP 是 III-V 族化合物半導體，屬於高純稀有材料（銦、磷均有出口管制敏感性）。中國正在 InP 原料（稀有金屬供應）→ 單晶成長 → 晶圓切磨拋 → 磊晶代工 → 光晶片封裝的完整 InP 供應鏈上進行系統性本土化，與其整體半導體供應鏈去美化策略一致。

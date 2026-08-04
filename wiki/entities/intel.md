@@ -3,7 +3,7 @@ title: "英特爾 / Intel"
 category: entity
 tags: [IDM, advanced-packaging, EMIB, Foveros, Intel18A, Clearwater-Forest, Foveros-Direct, glass-substrate, 14A, High-NA-EUV, silicon-capacitors, Google-TPU-v8e, Q2-2026-earnings, Tesla-14A]
 created: 2026-04-24
-updated: 2026-07-29
+updated: 2026-08-05
 sources: [2026-04-24_initial-survey, 2026-07-20_trendforce_tsmc-265b-arizona-intel-novalake, 2026-03-18_trendforce_intel-emib-malaysia, 2026-03-03_trendforce_intel-clearwater-forest, 2026-03-05_trendforce_intel-emib-billions, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-04-20_trendforce_intel-foundry-14a-equipment, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-01_semianalysis_cpus-back-datacenter-2026, 2026-04-10_3dincites_intel-gan-chiplet, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks, 2026-06-21_convergedigest_intel-emib-t-multi-die-packaging, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap, 2026-07-01_trendforce_terafab-intel-veteran-hire, 2026-04-07_tomshardware_intel-joins-terafab, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-01-30_tomshardware_intel-ai-chip-test-vehicle-emib-t, 2026-07-14_trendforce_intel-ireland-5b-intel3-europe, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan]
 related:
   - wiki/entities/tsmc.md
@@ -36,7 +36,10 @@ related:
 
 ## 近期動態 / Recent Developments
 
-- **2026-07-29（⭐最新）**：**Intel + Lens Technology（藍思科技）玻璃核心基板先進封裝合作宣布**——Intel 與中國精密玻璃/觸控製造商藍思科技建立玻璃核心基板封裝合作，量產目標最早 **2H 2027**。藍思科技為蘋果主要玻璃保護板供應商，具備大面積精密玻璃加工能力，此合作為 Intel EMIB + 玻璃核心基板封裝生態系引入新中國供應鏈節點。詳見 [[technologies/glass-substrate.md]]。
+- **2026-08-05（⭐最新）**：**PSMC 確認成為 EMIB-T 矽電容器獨家供應商；UMC 製造矽橋接器**——TrendForce 2026-08-04 報導供應鏈分工確立：PSMC 透過 12 吋 IPD 平台生產 EMIB-T 矽電容器，已由「通過認證」升級為**獨家（exclusive）供應商**；PSMC 計畫 2H 2027 擴充 8 吋 +5,000 wsm、12 吋 +8,000–10,000 wsm；**UMC** 在台灣與新加坡 12 吋廠製造矽橋接器。EMIB-T 整包封裝成本約 CoWoS 的 **50%**，良率接近 **90%**，HVM 目標 **2027**。EMIB-T 供應鏈最終形態：PSMC（矽電容）→ UMC（矽橋）→ Amkor / Intel 封裝廠（整合）。相關矽電容頁面更新見 [[technologies/emib.md]]。
+  *Source: TrendForce 2026-08-04 → [[sources/2026-08-04_trendforce_psmc-exclusive-emib-silicon-capacitor-umc-boost]]*
+
+- **2026-07-29**：**Intel + Lens Technology（藍思科技）玻璃核心基板先進封裝合作宣布**——Intel 與中國精密玻璃/觸控製造商藍思科技建立玻璃核心基板封裝合作，量產目標最早 **2H 2027**。藍思科技為蘋果主要玻璃保護板供應商，具備大面積精密玻璃加工能力，此合作為 Intel EMIB + 玻璃核心基板封裝生態系引入新中國供應鏈節點。詳見 [[technologies/glass-substrate.md]]。
   *Source: TrendForce 2026-07-28*
 
 - **2026-07-28**：**Intel Ohio Fab 尋求操作合作夥伴——SK hynix 為候選之一；Samsung/Micron 評估 EMIB；EMIB 記憶體整合生態全面擴展**（TrendForce 2026-07-23，引述 Semafor、Barron's、Green Economy News）：

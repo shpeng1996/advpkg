@@ -2332,3 +2332,37 @@ an（2028–2029 量產世代）為 CoPoS 最可能的首批量產客戶——�
 3. **Nokia 跨入 InP 半導體製造**：收購 NXP Chandler AZ 廠，2029 Q1 完成，向上延伸 CPO 垂直整合能力
 4. **GaN 封裝內電源傳遞首次進入 HI 路線圖主論述**（Nature Reviews EE 2026-03）：AI 算力每 3 個月翻倍，GaN in-package VRM 成為應對高電流密度的關鍵技術路徑
 5. **Intel V-groove 硬式玻璃耦合器明確命名**：既有 CPO 頁面已有 Intel 玻璃耦合器技術但缺 V-groove 術語，本次補強以 3DInCites 官方命名確認
+
+---
+
+## [2026-08-05] collect | 每日自動蒐集 — PSMC 成為 Intel EMIB-T 矽電容器獨家供應商 + HBF FMS 2026 首份標準規格 + ZJ Innolight HKEX IPO + 熊本 M7.1 地震 JASM Fab 1 停產
+
+- 搜尋查詢數：7 組（EMIB PSMC UMC 供應鏈、HBF FMS 2026 標準、InP 基板瓶頸、熊本地震半導體、TSMC JASM 供應鏈等）
+- 成功抓取：4 篇（raw/articles/ 4 篇）
+- 失敗/跳過：5+ 篇（SemiEngineering 客戶端渲染 1、日期過舊 2、URL 未在搜尋結果集 1）
+- 觸發 ingest：4 篇
+- 新建 wiki 頁面：0
+- 更新 wiki 頁面：9 頁（emib.md、intel.md、hbf.md、sk-hynix.md、ucie.md、copackaged-optics.md、geopolitics-advanced-packaging.md、tsmc.md、tel.md）
+- 主要新知識：
+  1. **PSMC 成為 EMIB-T 矽電容器獨家供應商**（從「通過認證」升格）；UMC 在台灣+新加坡製造矽橋接器；EMIB-T 封裝成本 ≈ CoWoS 50%，良率接近 90%，HVM 2027
+  2. **HBF 首份正式規格 FMS 2026 發布**（OCP 框架）：UCIe 互連、最高 512 GB、Grade 1-3（0.4–3.0 TB/s）；Google DeepMind + Tenstorrent 確認採用；SK Hynix V10 375 層 NAND 2027 量產
+  3. **ZJ Innolight HKEX 創紀錄 IPO**（HKD 534 億）；InP 基板瓶頸確立；Coherent 德州擴產 4×；中國 InP 供應鏈本土化三大動作（雲南鍺業+有研半導體+天津寬禁）
+  4. **熊本 M7.1 地震（2026-07-28）**：TSMC JASM Fab 1 停機設備檢查（無復工時程）；TEL 08-03 復工；Sony 08-04 復工；Renesas 西木/川尻先後復工——熊本聚落集中度風險首次被觸發
+
+### 新增 Raw 檔案
+
+| 檔名 | 主題 |
+|------|------|
+| raw/articles/2026-08-04_trendforce_psmc-exclusive-emib-silicon-capacitor-umc-boost.md | PSMC EMIB-T 獨家矽電容，UMC 矽橋接器 |
+| raw/articles/2026-08-04_trendforce_hbf-standard-fms2026-skhynix-sandisk-google.md | HBF FMS 2026 規格，SK Hynix V10 NAND |
+| raw/articles/2026-08-03_trendforce_zj-innolight-hkex-ipo-inp-substrate-bottleneck.md | ZJ Innolight IPO，InP 基板瓶頸 |
+| raw/articles/2026-08-03_trendforce_kumamoto-m71-quake-tsmc-jasm-tel-sony-restart.md | 熊本 M7.1 地震，JASM Fab 1 停產 |
+
+### 新增 Wiki 來源摘要頁
+
+| 來源摘要頁 | 對應 Raw 檔 |
+|----------|-----------|
+| wiki/sources/2026-08-04_trendforce_psmc-exclusive-emib-silicon-capacitor-umc-boost.md | 同上 |
+| wiki/sources/2026-08-04_trendforce_hbf-standard-fms2026-skhynix-sandisk.md | 同上 |
+| wiki/sources/2026-08-03_trendforce_zj-innolight-hkex-ipo-inp-bottleneck.md | 同上 |
+| wiki/sources/2026-08-03_trendforce_kumamoto-m71-tsmc-jasm-tel-restart.md | 同上 |

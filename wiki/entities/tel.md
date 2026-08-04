@@ -3,7 +3,7 @@ title: "Tokyo Electron (TEL) — 東京威力科創"
 category: entity
 tags: [TEL, Tokyo-Electron, equipment, RDL, Eteris, advanced-packaging-equipment, Japan]
 created: 2026-04-26
-updated: 2026-04-26
+updated: 2026-08-05
 sources: [2026-01-23_trendforce_chip-tools-tel-asml]
 related: [wiki/entities/besi.md, wiki/technologies/hybrid-bonding.md, wiki/concepts/advanced-packaging-market.md]
 ---
@@ -29,6 +29,12 @@ TEL 在先進封裝領域的核心設備集中在 **RDL（再分配層）製程*
 ---
 
 ## 近期動態 / Recent Developments
+
+- **2026-08-05（⭐最新）**：**熊本 M7.1 地震——TEL 熊本廠受衝擊，但已於 08-03 完成復工，業務衝擊有限**（TrendForce 2026-08-03）：
+  - 2026-07-28 熊本 M7.1 強震直接衝擊 TEL 熊本研發基地（2025-10 宣布建立、2026 年春啟動）
+  - TEL 確認於 **2026-08-03** 完成設備安全檢查並復工；財務或出貨影響評估為輕微
+  - 此次震災暴露熊本聚落（TEL + TSMC JASM + Sony + Renesas 密集布局）的集中度風險
+  *Source: TrendForce 2026-08-03 → [[sources/2026-08-03_trendforce_kumamoto-m71-tsmc-jasm-tel-restart]]*
 
 - **2026-01**：TrendForce 報導 TEL 與 ASML、Applied Materials、Lam Research 並列為先進封裝設備市場的主要進入者
 - **2025-10**：TEL 宣布在熊本縣投資 **¥470 億**建立先進封裝設備研發基地（Kumamoto R&D Hub），緊鄰 TSMC 熊本廠，**2026 年春季**啟動

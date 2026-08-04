@@ -3,7 +3,7 @@ title: "共封裝光學元件 / Co-Packaged Optics (CPO) — TSMC-COUPE™ & Eco
 category: technology
 tags: [CPO, co-packaged-optics, COUPE, TSMC, GlobalFoundries, Samsung, photonics, AI, HPC, networking, OCI-MSA, DWDM, Broadcom, NVIDIA, glass-substrate, ULCVD, TGV, Spectrum-X, NVL72]
 created: 2026-04-25
-updated: 2026-08-04
+updated: 2026-08-05
 sources: [2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-05-07_trendforce_globalfoundries-silicon-photonics-scale-cpo, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-03-17_coherent_cpo-ofc2026-demo, 2026-06-07_digitimes_jcet-3d-packaging-cpo-plant, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_edn_cpo-technology-status-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-06-24_thelec_corning-glass-bridge-cpo, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-14_trendforce_umc-silith-silicon-photonics-hvm, 2026-07-14_trendforce_huawei-baidu-npo-msa, 2026-07-27_trendforce_presscenter_cpo-switches-nvidia-broadcom-coupe, 2026-06-03_3dincites_intel-foundry-emib-cpo-glass-ectc2026]
 related:
   - wiki/entities/tsmc.md
@@ -44,7 +44,17 @@ Co-Packaged Optics（CPO）將**光學引擎（Optical Engine）直接整合至�
 
 ## 發展時程 / Timeline
 
-- **2026-07-30（⭐最新）**：**矽光子代工格局進入「多極量產」時代——UMC/Tower/GF/TSMC/CanSemi 五路並進**（TrendForce 2026-07-30 整體分析）：
+- **2026-08-05（⭐最新）**：**InP 基板瓶頸加劇，ZJ Innolight 創紀錄 HKEX IPO，中國供應鏈急速本土化**（TrendForce 2026-08-03）：
+  - **ZJ Innolight（中際旭創）**：2026 年 HKEX 最大 IPO（近 7 年最大），基礎募資 **HKD 534.1 億**（~USD 68.5 億）；顯示 AI 光模組廠商資本市場熱度
+  - **InP 基板瓶頸**：1.6T 光模組進入量產後，6 吋 InP 晶圓需求急升形成結構性短缺
+  - **Coherent（美國）**：德州廠 6 吋 InP 產能 **4× 擴充**；已與 NVIDIA 簽訂 **20 億美元 LTA**（長期供應協議）
+  - **中國 InP 供應鏈本土化**（三大進展）：
+    - **雲南鍺業**（Yunnan Germanium）：+30 萬片/年 InP 晶圓擴產
+    - **Vital Materials**（有研半導體）：40 噸/年 InP 材料產線，2026-07-21 啟用
+    - **天津寬禁**（Tianjin Kuanjing）：6 吋 InP 晶圓廠，2024-06-24 簽約
+  *Source: TrendForce 2026-08-03 → [[sources/2026-08-03_trendforce_zj-innolight-hkex-ipo-inp-bottleneck]]*
+
+- **2026-07-30**：**矽光子代工格局進入「多極量產」時代——UMC/Tower/GF/TSMC/CanSemi 五路並進**（TrendForce 2026-07-30 整體分析）：
   - **UMC + SILITH**：新加坡 12 吋廠已完成首批量產矽光子晶圓交付（100G/200G；路線圖至 1.6T）；UMC 自有 12 吋 SiPh 平台 **2027 年**上線；聯合 SILITH 開發 400G/lane 純矽光子方案 + **薄膜鈮酸鋰（TFLN）技術**
   - **Tower Semiconductor 日本擴產**：Arai 廠（新潟縣）轉型為 **12" SiPh + 先進封裝平台**；Uozu Fab 7（富山縣）擴產；新建 12" Fab 規劃中；目標 **Q4 2027 量產**
   - **GlobalFoundries**：2025 年收購新加坡 **Advanced Micro Foundry（AMF）**，整合入 **Fotonix** CPO 平台，實現光子 IC 製造 + 封裝一體化

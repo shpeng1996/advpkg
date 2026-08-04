@@ -3,7 +3,7 @@ title: "UCIe — Universal Chiplet Interconnect Express"
 category: technology
 tags: [standards, chiplet, interconnect, UCIe, 3D, hybrid-bonding, UCIe-3.0]
 created: 2026-04-24
-updated: 2026-06-18
+updated: 2026-08-05
 sources: [2026-04-24_initial-survey, 2026-04-01_semiengineering_chiplets-2026, 2025-01-28_3dincites_iftle-618-ucie-standard-vs-ucie3, 2025-01-01_semieng_ucie-1-6t-io-chiplets-ai-datacenter, 2025-09-03_uciexpress_ucie30-spec, 2026-03-05_uciexpress_chiplet-summit-2026, 2026-02-12_semieng_ucie3-technical-deepdive]
 related:
   - wiki/technologies/hybrid-bonding.md
@@ -189,6 +189,32 @@ UCIe 2.0 引入 **UCIe-3D** 最佳化：
 - UCIe 標準能否統一 memory interface（目前 HBM 仍有專屬介面）？
 - 64 GT/s 連結的功耗 vs 頻寬效益，是否足以取代短距光學互連（CPO）？
 - UCIe-S 與 UCIe-A 的市場份額如何演變？高端 AI 封裝是否會以 UCIe-A 為主？
+
+## 2026-08-05 更新 / Updates
+
+### ⭐ HBF 採用 UCIe 作為互連介面——儲存記憶體標準新應用場景（2026-08-04）
+
+*Source: TrendForce 2026-08-04 → [[sources/2026-08-04_trendforce_hbf-standard-fms2026-skhynix-sandisk]]*
+
+FMS 2026 發布的 HBF（High Bandwidth Flash）首份正式規格確認 **UCIe 作為 HBF 的主要互連介面**，這是 UCIe 首次跨入 **NAND 快閃記憶體** 標準化領域。
+
+| HBF + UCIe 架構要點 | 說明 |
+|-------------------|------|
+| HBF Grade 1–3 頻寬 | 0.4 / 1.0 / 3.0 TB/s |
+| 最大容量 | 512 GB |
+| 堆疊層數 | 8-high 或 16-high NAND |
+| 互連介面 | UCIe（與 AI 晶片/GPU 共封裝） |
+| 推動者 | SK Hynix + SanDisk（OCP 框架） |
+
+**UCIe 應用延伸意義**（累計）：
+- **Chiplet-to-chiplet 邏輯互連**：CPU↔GPU、CPU↔I/O die（原始設計目標）
+- **AI Chip Test Vehicle**：UCIe 32 GT/s D2D（2026-07-11）
+- **Intel XBM 記憶體架構**：UCIe 32 GT/s 串行記憶體介面（2026-07-08）
+- **HBF（High Bandwidth Flash）**：UCIe 作為 NAND 堆疊與算力晶片的共封裝介面（2026-08-04，**新增**）
+
+HBF 的採用顯示 UCIe 正演進為跨越 **邏輯→DRAM→NAND** 的統一晶粒間互連標準，與「UCIe 能否統一 memory interface」未解問題形成直接呼應。
+
+---
 
 ## 2026-07-13 更新 / Updates
 

@@ -3,7 +3,7 @@ title: "EMIB — Embedded Multi-Die Interconnect Bridge"
 category: technology
 tags: [Intel, 2.5D, silicon-bridge, chiplet, HBM4, Foveros, glass-substrate, EMIB-T, EMIB-M, silicon-capacitors, power-delivery]
 created: 2026-05-03
-updated: 2026-08-03
+updated: 2026-08-05
 sources: [2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-03-05_trendforce_intel-emib-billions, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-03-03_trendforce_intel-clearwater-forest, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks, 2026-06-21_convergedigest_intel-emib-t-multi-die-packaging, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap, 2026-06-05_semieng_intel-ectc2026-emib-cpo-glass-blog, 2026-01-30_tomshardware_intel-ai-chip-test-vehicle-emib-t]
 related:
   - wiki/entities/intel.md
@@ -69,7 +69,15 @@ EMIB 是 Intel 的局部矽橋接技術：將一小片高密度矽橋（bridge d
 
 ## 發展時程 / Timeline
 
-- **2026-08-03（⭐最新）**：**TSMC 啟動 EMIB-like 矽橋接封裝開發——攜 Kinsus 反制客戶流失**（TrendForce 2026-07-31，引述 The Information）：
+- **2026-08-05（⭐最新）**：**PSMC 確認成為 Intel EMIB-T 矽電容器（Silicon Capacitor）獨家供應商；UMC 製造矽橋接器**（TrendForce 2026-08-04）：
+  - PSMC 透過 12 吋 IPD（Integrated Passive Device）平台生產 EMIB-T 矽電容器，角色由先前「通過認證供應商」升級為**獨家（exclusive）供應商**
+  - PSMC 2H 2027 產能擴充計畫：8 吋線 **+5,000 wsm**、12 吋線 **+8,000–10,000 wsm**
+  - **UMC** 在台灣與新加坡 12 吋廠製造 EMIB 矽橋接器，提供多地化供應彈性
+  - EMIB-T 封裝成本約為 TSMC CoWoS **50%**（Wccftech 估算）；封裝良率接近 **90%**；HVM 目標 **2027**
+  - 供應鏈分工：PSMC（矽電容器）→ UMC（矽橋接器）→ Amkor/Intel 封裝廠（最終整合）
+  *Source: TrendForce 2026-08-04 → [[sources/2026-08-04_trendforce_psmc-exclusive-emib-silicon-capacitor-umc-boost]]*
+
+- **2026-08-03**：**TSMC 啟動 EMIB-like 矽橋接封裝開發——攜 Kinsus 反制客戶流失**（TrendForce 2026-07-31，引述 The Information）：
   - TSMC 正開發「EMIB-like」局部矽橋接技術，以對抗 Intel EMIB 在 CoWoS 容量限制下的客戶吸引力
   - 合作夥伴：欣興電子（Kinsus）——負責基板供應、從開發至量產
   - **Google 9th gen TPU 可能採用 Intel EMIB**（分析師預測）——為首次具體記錄的主要客戶流失風險
