@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-08-05
-**頁面總數 Total Pages**：345
-**原始來源數 Sources**：306
+**更新時間 Updated**：2026-08-06
+**頁面總數 Total Pages**：348
+**原始來源數 Sources**：309
 
 ---
 
@@ -63,6 +63,9 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-08-05_trendforce_samsung-v10-zhbm-hbm5-fms2026]] — TrendForce：**Samsung FMS 2026：V10 BV-NAND 400+層 +58%密度供應NVIDIA；zHBM 8×HBM5 custom IP整合；HBM5 HPB -20%熱阻；zNAND-O端側AI；SK Hynix V10 375層 2027**（2026-08-06 收錄；原文 2026-08-05）⭐新增
+- [[sources/2026-08-04_semieng_from-blueprint-intel-hlff]] — SemiEngineering（Intel Foundry）：**Intel ECTC 2026 HLFF 240×240mm 封裝藍圖；EMIB >5× 18-die+12-HBM void-free；EMIB >7× void-free；Foveros 2×/4× void-free；2× 通過700TC+1000hHTOL；路線圖12×→50× panel-scale**（2026-08-06 收錄；原文 2026-08-04）⭐新增
+- [[sources/2026-07-31_semieng_chip-week-149]] — SemiEngineering Week#149：**CHIPS Act $874M 7 家（GlobalFoundries $300M 3D HB CPO、Kepler $245M、Multibeam $140M AP）；Intel Rio Rancho 8×→12×；ASE CapEx ~$10B；UMC SiPh+AP擴廠；SIA $796B→$1.5T；Omdia +94%；SK Group+Nvidia $500B+；RAMP-C完成**（2026-08-06 收錄；原文 2026-07-31）⭐新增
 - [[sources/2026-08-04_trendforce_psmc-exclusive-emib-silicon-capacitor-umc-boost]] — TrendForce：**PSMC 升格為 Intel EMIB-T 矽電容器獨家供應商（12" IPD 平台）；2H 2027 擴產 8"+12" wsm；UMC 台灣+新加坡製造矽橋接器；EMIB-T 成本約 CoWoS 50%；良率~90%；HVM 2027**（2026-08-05 收錄；原文 2026-08-04）⭐新增
 - [[sources/2026-08-04_trendforce_hbf-standard-fms2026-skhynix-sandisk]] — TrendForce：**FMS 2026 HBF 首份正式規格：OCP/UCIe、512GB、Grade 1-3（0.4-3.0 TB/s）；Google DeepMind+Tenstorrent 確認支援；NVIDIA 未承諾；SK Hynix V10 375 層 NAND 2027 年初量產**（2026-08-05 收錄；原文 2026-08-04）⭐新增
 - [[sources/2026-08-03_trendforce_zj-innolight-hkex-ipo-inp-bottleneck]] — TrendForce：**ZJ Innolight HKEX 創紀錄 IPO（HKD 534 億）；1.6T 光模組帶動 InP 基板瓶頸；Coherent 德州 4× 擴產+NVIDIA $20 億 LTA；中國雲南鍺業+有研半導體+天津寬禁 InP 本土化**（2026-08-05 收錄；原文 2026-08-03）⭐新增

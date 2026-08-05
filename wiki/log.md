@@ -2,6 +2,23 @@
 
 ---
 
+## [2026-08-06] collect | 每日自動蒐集 — Intel HLFF 240mm封裝藍圖 + Samsung FMS 2026 V10/zHBM/HBM5 + CHIPS Act $874M + SIA $1.5T
+
+- 搜尋查詢數：6 組（advanced packaging EMIB HLFF 2026、Samsung FMS 2026 memory HBM5、CHIPS Act advanced packaging 2026、SIA semiconductor market 2026、Intel Foundry Rio Rancho 2026、advanced packaging collect 2026-08）
+- 成功抓取：3 篇（存入 raw/articles/ 3 篇）
+- 失敗/跳過：多篇（已收錄；Samsung zHBM 獨立文章 URL 不在 provenance set）
+- 觸發 ingest：3 篇
+- 觸及 wiki 頁面：（共 10 頁）
+  - **新增（3頁）**：wiki/sources/2026-07-31_semieng_chip-week-149.md、wiki/sources/2026-08-04_semieng_from-blueprint-intel-hlff.md、wiki/sources/2026-08-05_trendforce_samsung-v10-zhbm-hbm5-fms2026.md
+  - **更新（7頁）**：entities/intel.md、entities/samsung.md、technologies/emib.md、technologies/hbm4.md、concepts/advanced-packaging-market.md、concepts/geopolitics-advanced-packaging.md、wiki/index.md
+- 主要新知識：
+  1. **Intel Foundry HLFF 240mm×240mm 封裝藍圖（ECTC 2026）**：EMIB-T < 2µm 金屬層，>64 Gb/s/通道，目標離封裝 448 Gb/s（CPO）；路線圖 8×（現況）→ 12×（近期）→ 50×（面板級長期）；EMIB >5×（18-die+12 HBM）flow distance >40mm 零空洞；Foveros 2× 通過 700TC+1000h HTOL 可靠度測試——首次完整量化超大封裝製程能力。
+  2. **Samsung FMS 2026**：V10 BV-NAND（業界首款 400+層，+58% vs V9，量產供應 NVIDIA）；zHBM 概念（8× HBM5，custom IP 直接整合，首次公開）；HBM5 HPB 量化確認（-20% 熱阻 vs HBM4E）。
+  3. **CHIPS Act $874M 第二批 7 家**：GlobalFoundries $300M（3D hybrid bonding CPO）、Kepler $245M（AI 記憶體）、Multibeam $140M（先進封裝 e-beam）——先進封裝直接相關項目合計最高 $490M。另：SIA 報告全球晶片 2025 $796B → 2026 $1.5T 預測；Omdia +94%；Yole WFE $162B→$220B（2031）。
+- index.md 頁面總數：345 → **348**；Sources：306 → **309**；更新日期：2026-08-05 → **2026-08-06**
+
+## [2026-08-05] collect | 每日自動蒐集 — PSMC EMIB-T 矽電容器獨家供應商 + HBF FMS 2026 首份標準規格 + ZJ Innolight HKEX IPO + 熊本 M7.1 地震 JASM Fab 1 停產
+
 ## [2026-08-03] collect | 每日自動蒐集 — TSMC 類 EMIB 矽橋封裝反制 Intel + ASE CapEx $10.5B 歷史新高 + Samsung DS Q2 HBM4 Q3 三倍成長
 - 搜尋查詢數：5 組（TSMC EMIB-like packaging Kinsus、ASE FOPLP CPO CapEx 2026、Samsung HBM4 Q3 2026、advanced packaging market 2026、hybrid bonding latest 2026）
 - 成功抓取：3 篇（存入 raw/articles/ 3 篇）

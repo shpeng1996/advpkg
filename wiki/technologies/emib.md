@@ -1,10 +1,10 @@
 ---
 title: "EMIB — Embedded Multi-Die Interconnect Bridge"
 category: technology
-tags: [Intel, 2.5D, silicon-bridge, chiplet, HBM4, Foveros, glass-substrate, EMIB-T, EMIB-M, silicon-capacitors, power-delivery]
+tags: [Intel, 2.5D, silicon-bridge, chiplet, HBM4, Foveros, glass-substrate, EMIB-T, EMIB-M, silicon-capacitors, power-delivery, HLFF, encapsulation, underfill]
 created: 2026-05-03
-updated: 2026-08-05
-sources: [2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-03-05_trendforce_intel-emib-billions, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-03-03_trendforce_intel-clearwater-forest, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks, 2026-06-21_convergedigest_intel-emib-t-multi-die-packaging, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap, 2026-06-05_semieng_intel-ectc2026-emib-cpo-glass-blog, 2026-01-30_tomshardware_intel-ai-chip-test-vehicle-emib-t]
+updated: 2026-08-06
+sources: [2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-03-05_trendforce_intel-emib-billions, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-03-03_trendforce_intel-clearwater-forest, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks, 2026-06-21_convergedigest_intel-emib-t-multi-die-packaging, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap, 2026-06-05_semieng_intel-ectc2026-emib-cpo-glass-blog, 2026-01-30_tomshardware_intel-ai-chip-test-vehicle-emib-t, 2026-08-04_semieng_from-blueprint-intel-hlff]
 related:
   - wiki/entities/intel.md
   - wiki/entities/amkor.md
@@ -37,6 +37,9 @@ EMIB 是 Intel 的局部矽橋接技術：將一小片高密度矽橋（bridge d
 |------|------|
 | 封裝最大尺寸（2026） | **120 × 120 mm**（8× reticle；業界標準 100 × 100 mm） |
 | 封裝最大尺寸（2028 目標） | **120 × 180 mm**（12× reticle） |
+| **HLFF 封裝最大尺寸（ECTC 2026 路線圖）** | **240 × 240 mm**（長期 AI/HPC 目標；~32× reticle） |
+| 長遠路線圖 | **50×（面板級 panel-scale）** |
+| HLFF 功耗範圍 | **15–25 kW** 總計 |
 | EMIB-M reticle size（現況 2026） | **6×** |
 | EMIB-M reticle size（目標 2026–27） | **8–12×** |
 | 最大支援 HBM stacks（2026） | ≥ 12（EMIB-T） |
@@ -69,7 +72,24 @@ EMIB 是 Intel 的局部矽橋接技術：將一小片高密度矽橋（bridge d
 
 ## 發展時程 / Timeline
 
-- **2026-08-05（⭐最新）**：**PSMC 確認成為 Intel EMIB-T 矽電容器（Silicon Capacitor）獨家供應商；UMC 製造矽橋接器**（TrendForce 2026-08-04）：
+- **2026-08-06（⭐最新）**：**Intel Foundry ECTC 2026 HLFF 架構藍圖——240mm×240mm 超大封裝 + 大面積無空洞封膠技術**（SemiEngineering sponsor blog，Sujit Sharan / Yang Guo，2026-08-04）：
+  - **HLFF（Hyper-Large Form Factor）封裝架構**：最大 **240 mm × 240 mm**（目前 120×120mm 的 4×）；路線圖：8×（現況）→ 12×+（近期）→ 50×（面板級長期）
+  - **兩種配置**：Config A（全 EMIB-T 互連，最大頻寬 + 良率恢復）；Config B（基板走線處理器通訊，較簡單但效能略低）
+  - **EMIB-T < 2µm 金屬層**，晶片間傳輸速率 **> 64 Gb/s/通道**；目標離封裝速率 **448 Gb/s**（CPO 或 co-packaged copper cable）
+  - **嵌入式矽電容**：目標 **1 mF/reticle 面積**（直接置於晶片正下方）
+  - **備援通道**：每 64 條加 3–4 備援 → bundle 良率 97% → 99%+
+  - **翹曲抑制**：最大自由翹曲 7mm → 厚型 stiffener ring + 低 CTE 玻璃核心基板 + 多球焊錫 + 操作時 >4,500N 壓合
+  - **封膠突破（Assembly Technology Development）**：
+    - 先前封裝最大流距：22mm（舊）→ 43.8mm（今日 EMIB）→ HLFF 需更長
+    - 解決方案：低黏度配方（延長流距） + **多點注膠**（含 die 間） + 固化條件最佳化（3.4mm 空洞 → 完全消除）
+    - **EMIB >5× 驗證**：18 個 die（含 **12 個 HBM stacks**），流距 **>40 mm**，**零空洞**
+    - **EMIB >7×（tiled EMIB）驗證**：**零空洞**
+    - **Foveros 3D 2× reticle**：零空洞 + **完整可靠度通過**（**700 次溫度循環** + **1,000 小時高溫應力測試**）
+    - **Foveros 3D 4× reticle**：零空洞
+  - **ECTC 2026 論文**：「Package Architectures for Hyper-Large Form Factors」（IEEE 11561446）+「Challenges and Solutions for Package-level Encapsulation of Ultra-large Die Complexes」（IEEE 11561508）
+  *Source: SemiEngineering 2026-08-04（Sujit Sharan / Yang Guo）→ [[sources/2026-08-04_semieng_from-blueprint-intel-hlff]]*
+
+- **2026-08-05（次最新）**：**PSMC 確認成為 Intel EMIB-T 矽電容器（Silicon Capacitor）獨家供應商；UMC 製造矽橋接器**（TrendForce 2026-08-04）：
   - PSMC 透過 12 吋 IPD（Integrated Passive Device）平台生產 EMIB-T 矽電容器，角色由先前「通過認證供應商」升級為**獨家（exclusive）供應商**
   - PSMC 2H 2027 產能擴充計畫：8 吋線 **+5,000 wsm**、12 吋線 **+8,000–10,000 wsm**
   - **UMC** 在台灣與新加坡 12 吋廠製造 EMIB 矽橋接器，提供多地化供應彈性

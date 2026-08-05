@@ -1,9 +1,9 @@
 ---
 title: "三星 / Samsung"
 category: entity
-tags: [IDM, foundry, memory, advanced-packaging, X-Cube, HBM, ISSCC2026, I-CubeS, LPDDR6]
+tags: [IDM, foundry, memory, advanced-packaging, X-Cube, HBM, ISSCC2026, I-CubeS, LPDDR6, V10-BV-NAND, zHBM, HBM5, FMS-2026]
 created: 2026-04-24
-updated: 2026-08-03
+updated: 2026-08-06
 sources: [2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2025-12-30_trendforce_samsung-hbm-surge, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2025-08-05_3dincites_iftle636, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit, 2026-06-10_trendforce_samsung-gwangju-packaging-base, 2026-06-12_digitimes_samsung-packaging-gap-tsmc-intel, 2026-06-15_trendforce_skhynix-hbm4e-sample-timeline-pulled-forward, 2026-06-19_techtimes_vera-rubin-hbm4-suppliers, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-24_techtimes_sk-hynix-dethroned-samsung-ddr5-hbm4, 2026-07-03_trendforce_anthropic-samsung-advanced-packaging, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-07-02_trendforce_samsung-hbm-dummy-die-patent, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo, 2026-07-07_trendforce_samsung-q2-2026-record-krw894t, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-02_trendforce_samsung-sf2p-plus-tsmc-n2-roadmap, 2026-07-14_trendforce_samsung-hbm-hiring-hbm4-hbm4e-hbm5, 2026-07-21_trendforce_samsung-cxl-32-skhynix-imte, 2026-07-24_trendforce_skhynix-3d-stacked-dram-on-logic-on-device-ai]
 related:
   - wiki/entities/tsmc.md
@@ -32,7 +32,15 @@ related:
 
 ## 近期動態 / Recent Developments
 
-- **2026-08-03（⭐最新）**：**Samsung Q2 2026 正式財報——DS 事業部佔集團 99.7% 利潤；HBM4 Q3 收入三倍目標；MX 史上首次虧損**（TrendForce 2026-07-30，引述 The Elec、Reuters、三星官方財報）：
+- **2026-08-06（⭐最新）**：**Samsung FMS 2026——V10 BV-NAND（業界首款 400+層）、zHBM（8×HBM5）、HBM5 HPB -20% 熱阻**（TrendForce 2026-08-05）：
+  - **V10 BV-NAND（Bonded Vertical NAND）**：業界首款 **400+層** 3D NAND，採用 Wafer Bonding + 3-Stack 架構；儲存密度較 V9 **+58%**；**已量產，供應 NVIDIA**；V11（~500層）正在開發。
+  - **zNAND-O**：新型混合記憶體架構，融合 DRAM 級存取速度 + NAND 級儲存容量，專為端側 AI 推論（On-Device AI）設計。
+  - **zHBM（zero-latency HBM）**：聲稱效能達 **HBM5 的 8×**；透過記憶體晶片與 AI 加速器間的 custom IP 直接整合，消除傳統封裝介面瓶頸；定位超越標準 HBM 路線圖的下一代 AI 記憶體整合方案。（注意：此為 Samsung 效能聲稱，尚待獨立驗證。）
+  - **HBM5**：確認效能為 **HBM4E 的 2×**（與先前 Computex 2026 資料一致）；搭載 **HPB（Heat Path Block）** 熱管理技術，熱阻較 HBM4E **降低 20%**；目標 AI 訓練加速器（post-Blackwell 世代）。
+  - **LPDDR5X-PIM（Processing-in-Memory）**：整合 AI 運算能力的行動端 DRAM，降低資料移動功耗。
+  *Source: TrendForce 2026-08-05 → [[sources/2026-08-05_trendforce_samsung-v10-zhbm-hbm5-fms2026]]*
+
+- **2026-08-03（次最新）**：**Samsung Q2 2026 正式財報——DS 事業部佔集團 99.7% 利潤；HBM4 Q3 收入三倍目標；MX 史上首次虧損**（TrendForce 2026-07-30，引述 The Elec、Reuters、三星官方財報）：
   - **合併 Q2 Op Profit：KRW 89.5T**（YoY +19 倍）；**合併收入：KRW 171.5T**（QoQ +28%）
   - **DS 事業部：KRW 89.2T Op Profit**（YoY +250 倍），佔集團 99.7%；Op Margin **~70%**（Q1 65.7%）
   - **MX 事業部 Q2 Op Profit：KRW -7,000 億**——**史上首次季度虧損**（記憶體漲價推高元件成本）

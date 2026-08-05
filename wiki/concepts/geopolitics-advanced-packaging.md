@@ -31,6 +31,23 @@ Advanced packaging geopolitics refers to how national governments, corporations,
 - **CHIPS and Science Act（2022）**：$520 億投資半導體製造與研發
 - **NAPMP（National Advanced Packaging Manufacturing Program）**：直接針對先進封裝生態系建立的聯邦計畫
 - 目標：到 2032 年美國晶圓廠產能從全球 10% 提升至 14%，先進封裝能力大幅提升
+
+**⭐ 2026-08-06 新增：CHIPS R&D $874M 第二批——7 家公司意向書（2026-07 宣布）**：
+
+美國商務部與 7 家公司簽署 CHIPS R&D 意向書，總金額最高 **$874M**，涵蓋積體光子、先進封裝、基板材料、新型記憶體、運算架構與供應鏈安全：
+
+| 公司 | 金額 | 用途（與先進封裝相關度） |
+|------|------|------------------------|
+| **GlobalFoundries** | 最高 $300M | 次世代矽光子、光學材料、晶圓技術 + **先進封裝（含 3D hybrid bonding for CPO）**⭐ |
+| **Kepler** | 最高 $245M | 美國境內 3D + 鐵電技術新一代 AI 高效能記憶體 |
+| **Multibeam** | 最高 $140M | **先進封裝**——多晶片組裝、堆疊、多點 e-beam 互連⭐ |
+| **Extropic** | 最高 $75M | 熱動力計算單元（TSU），以自然熱漲落解決複雜問題 |
+| **Thintronics** | 最高 $50M | **超低損耗 inter-layer 介電材料**（先進互連 + 封裝用）⭐ |
+| **OBSIDIA Semiconductors** | 最高 $34M | 非侵入式辨識仿冒元件、供應鏈追蹤安全 |
+| **Aeluma** | 最高 $30M | **大直徑磷化銦（InP）替代基板**（AI 光子互連光感測器/雷射用）⭐ |
+
+**先進封裝直接相關項目**：GlobalFoundries（3D hybrid bonding for CPO）、Multibeam（AP assembly e-beam）、Thintronics（先進封裝介電材料）——合計最高 **$490M**。
+*Source: SemiEng Week#149 2026-07-31（引述 NIST/DoC、各公司新聞稿）→ [[sources/2026-07-31_semieng_chip-week-149]]*
 - **Amkor Arizona 廠**（$70 億，2028 年投產）：CHIPS Act 補貼旗艦封裝項目；**2025-12 正式與 Intel 合作 EMIB HVM**，使其成為美國首座支援高階 AI 封裝的 OSAT 廠
   - **2026-05-19（⭐新增）**：Amkor 在既有 104 英畝 Peoria Innovation Core 基地旁新增取得 **67 英畝**相鄰土地，強化長期擴建彈性；公司明確定位該園區為**「美國第一座高量產先進封裝 OSAT 設施」**，進一步坐實美國本土先進封裝產能擴張的具體進展
     *Source: Amkor Technology (BUSINESS WIRE) / Stock Titan 2026-05-19*
