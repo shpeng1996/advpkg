@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-08-06
-**頁面總數 Total Pages**：348
-**原始來源數 Sources**：309
+**更新時間 Updated**：2026-08-07
+**頁面總數 Total Pages**：350
+**原始來源數 Sources**：311
 
 ---
 
@@ -63,6 +63,8 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-08-06_trendforce_nittobo-tglass-fy2027-forecast]] — TrendForce：**Nittobo T-glass FY2027 淨利潤 JPY 20B；三倍產能仍不夠；NVIDIA/Apple/Google 搶佔 2026 年配額**（2026-08-07 收錄；原文 2026-08-06）⭐新增
+- [[sources/2026-08-05_trendforce_tsmc-cowos-cow-outsourcing-osat]] — TrendForce：**TSMC 擴大 CoW 外包至 ASE/SPIL；NVIDIA 預訂 800-850K wsm；2026 供需缺口 20%；AMD 支持 OSAT 自建 CoW**（2026-08-07 收錄；原文 2026-08-05）⭐新增
 - [[sources/2026-08-05_trendforce_samsung-v10-zhbm-hbm5-fms2026]] — TrendForce：**Samsung FMS 2026：V10 BV-NAND 400+層 +58%密度供應NVIDIA；zHBM 8×HBM5 custom IP整合；HBM5 HPB -20%熱阻；zNAND-O端側AI；SK Hynix V10 375層 2027**（2026-08-06 收錄；原文 2026-08-05）⭐新增
 - [[sources/2026-08-04_semieng_from-blueprint-intel-hlff]] — SemiEngineering（Intel Foundry）：**Intel ECTC 2026 HLFF 240×240mm 封裝藍圖；EMIB >5× 18-die+12-HBM void-free；EMIB >7× void-free；Foveros 2×/4× void-free；2× 通過700TC+1000hHTOL；路線圖12×→50× panel-scale**（2026-08-06 收錄；原文 2026-08-04）⭐新增
 - [[sources/2026-07-31_semieng_chip-week-149]] — SemiEngineering Week#149：**CHIPS Act $874M 7 家（GlobalFoundries $300M 3D HB CPO、Kepler $245M、Multibeam $140M AP）；Intel Rio Rancho 8×→12×；ASE CapEx ~$10B；UMC SiPh+AP擴廠；SIA $796B→$1.5T；Omdia +94%；SK Group+Nvidia $500B+；RAMP-C完成**（2026-08-06 收錄；原文 2026-07-31）⭐新增

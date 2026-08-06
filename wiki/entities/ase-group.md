@@ -3,8 +3,8 @@ title: "ASE Group / 日月光投控"
 category: entity
 tags: [OSAT, advanced-packaging, CoWoP, FOPLP, chiplet, CPO, LEAP]
 created: 2026-04-25
-updated: 2026-08-03
-sources: [2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2026-05-08_aseglobal_ase-wus-kaohsiung-focoes-hub, 2026-05-26_semiconductor-digest_ase-310mm-plp-ectc2026, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-11_trendforce_ase-spil-zhunan-plant, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-07-01_trendforce_ase-price-hike-20pct]
+updated: 2026-08-07
+sources: [2026-08-05_trendforce_tsmc-cowos-cow-outsourcing-osat, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2026-05-08_aseglobal_ase-wus-kaohsiung-focoes-hub, 2026-05-26_semiconductor-digest_ase-310mm-plp-ectc2026, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-11_trendforce_ase-spil-zhunan-plant, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-07-01_trendforce_ase-price-hike-20pct]
 related:
   - wiki/technologies/cowos.md
   - wiki/technologies/copos.md
@@ -51,7 +51,10 @@ related:
 - **2026-04-10（補充歷史基準點，2026-06-30 新增）**：**Renwu（仁武）廠動土；CPO 量產時程首度證實「今年啟動」**——CEO Tien Wu 於高雄仁武廠動土典禮宣布，**2026 年全球六座新廠將同步動工**，創公司史上最大建廠規模；Renwu 廠總投資逾 **NT$108.3 億**，Phase 1 預計 **2027-04** 投產、Phase 2 預計 **2027-10** 投產。當時（4 月）2026 資本支出原訂 **US$7B**，Wu 表示因 AI 需求強勁仍有上修空間（後續於 5 月二次上修至 $8.5B，已於下方記錄）。Wu 同時**首次證實 CPO（共封裝光學）量產目標於今年（2026）啟動**，但達規模經濟效益與全球普及時程仍取決於市場動態。此為 capex 由 $7B → $8.5B 演進軌跡的歷史起點記錄。
   *Source: TrendForce 2026-04-10（引述 TechNews、Anue、Economic Daily News）*
 
-- **2026-06-24（⭐最新）**：**股東會確認 FOPLP 量產目標 2026 年底；資本支出三級跳至 $8.5B**——COO Tien Wu 於股東會表示首條全自動化高量產 FOPLP 產線預計**2026 年底量產**；今年將啟動 **15 個新建/擴產專案**瞄準 2029-2030 後需求；資本支出由約 $2B → 去年 $5.3B → **今年 $8.5B**，且仍有上行空間，2027 年預期維持高位。美國擴張加速：加州測試/研發中心擴增至第三、第四座，亞利桑那州專案同步推進。先進封裝營收預計較 2025 年倍增。⚠️ 此「2026 年底量產」說法與下方 ECTC 2026 發表「310mm PLP 產線 2027 H1 量產」的時程描述有差異，可能指不同產線/階段，待後續核實，暫並列記錄不更動既有數字。
+- **2026-08-05（⭐最新）**：**ASE/SPIL 首度大規模承接 CoW 步驟；AMD 策略性支持 OSAT 建立端對端 CoWoS 能力**——TrendForce 報導，TSMC 決定擴大將 CoW（Chip-on-Wafer）步驟外包給 ASE、SPIL，為封裝業分工歷史性轉折。以往 OSAT 僅承接 WoS（Wafer-on-Substrate）；CoW 一直是 TSMC 自留核心。AMD 主動支持 ASE/SPIL 建立自有 CoW 生產線，讓 OSAT 具備端對端 CoWoS 封裝能力（晶圓在 TSMC 製造 → 成品送至 ASE/SPIL 完成全套封裝）。ASE/SPIL 正向韓國設備商洽談切割（dicing）＋接合（bonding）設備採購 PO。
+  *Source: TrendForce 2026-08-05 → [[sources/2026-08-05_trendforce_tsmc-cowos-cow-outsourcing-osat]]*
+
+- **2026-06-24（次最新）**：**股東會確認 FOPLP 量產目標 2026 年底；資本支出三級跳至 $8.5B**——COO Tien Wu 於股東會表示首條全自動化高量產 FOPLP 產線預計**2026 年底量產**；今年將啟動 **15 個新建/擴產專案**瞄準 2029-2030 後需求；資本支出由約 $2B → 去年 $5.3B → **今年 $8.5B**，且仍有上行空間，2027 年預期維持高位。美國擴張加速：加州測試/研發中心擴增至第三、第四座，亞利桑那州專案同步推進。先進封裝營收預計較 2025 年倍增。⚠️ 此「2026 年底量產」說法與下方 ECTC 2026 發表「310mm PLP 產線 2027 H1 量產」的時程描述有差異，可能指不同產線/階段，待後續核實，暫並列記錄不更動既有數字。
   *Source: TrendForce 2026-06-25（引述 TechNews / 股東會）*
 
 - **2026-06-12**：**SPIL（ASE 子公司）以 NT$28 億收購台灣光罩竹南廠 6，為 SPIL 2026 年第五次廠房收購，合計投入 >NT$227 億**。新廠緊鄰 TSMC 竹南封裝廠，TSMC 已要求 ASE/SPIL/KYEC 承接外包測試設備與相關製程（TSMC 訂單滿出效應）。SPIL 生產線全力運轉，是業界少數具備 CoWoS 封裝服務能力的廠商之一。**ASE 5 月合併營收 NT$630.3 億（+1.3% MoM，+28.6% YoY），歷史同期新高；前 5 月累計 NT$2,989.4 億（+19.9% YoY），亦為同期新高。**

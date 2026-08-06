@@ -3,7 +3,7 @@ title: "先進封裝市場 / Advanced Packaging Market"
 category: concept
 tags: [market, forecast, CAGR, supply-chain, HBM, chiplet, geopolitics, equipment, SIA, Omdia, Yole, WFE]
 created: 2026-04-24
-updated: 2026-08-06
+updated: 2026-08-07
 sources: [2026-07-31_semieng_chip-week-149, 2026-04-24_initial-survey, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2026-01-23_trendforce_chip-tools-tel-asml, 2026-03-05_trendforce_intel-emib-billions, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2025-12-18_trendforce_micron-capex-hbm4, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2025-05-13_trendforce_top10-osat-2024, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-04-16_ontoinnovation_dragonfly-g5-qualified, 2026-06-23_communicationstoday_foplp-glass-substrate-market-8b-2030, 2026-06-29_trendforce_china-osat-tongfu-jcet-investment, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-26_semieng_chip-week-144, 2026-07-01_trendforce_ase-price-hike-20pct, 2026-07-04_semieng_chip-week-145, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-07-03_trendforce_anthropic-samsung-advanced-packaging, 2026-05-08_trendforce_ajinomoto-abf-1b-land-buy-2032-margins, 2026-07-24_semieng_chip-week-148]
 related:
   - wiki/entities/tsmc.md
@@ -56,6 +56,12 @@ related:
 
 **Amkor 2026 Q1 財報：先進封裝帶動營收創紀錄（Business Wire 2026-04-27 新增）⭐**：Amkor（全球第二大 OSAT）單季營收 **$1.68B（+27% YoY，歷史新高）**，HDFO 高密度扇出與 Flip-Chip 先進封裝為主要超預期動能，毛利率提升至 14.2%。對比 2024 全年營收負成長（-2.8%），顯示先進封裝轉型已開始反映在 OSAT 廠財報數字上，呼應本頁「AI 加速器需求爆發」驅動力論述。
 *Source: Business Wire / Amkor Technology 2026-04-27*
+
+**⭐ 2026-08-07 材料供應鏈瓶頸——T-glass 成 AI 封裝新隱患（TrendForce 2026-08-06）**：
+- **Nittobo T-glass（無鹼玻璃布）**成為 AI 伺服器 PCB/封裝基板的戰略稀缺材料：NVIDIA、Microsoft 已鎖定 Nittobo 大部分 2026 年度頂級 T-glass 配額；Google、Amazon 另外簽訂供應協議；Apple 高管親赴日本洽談
+- Nittobo 宣布三倍產能擴張計畫（FY2029 目標）但管理層明言「仍不夠（still not enough）」，T-glass 短缺預計延續至 2028 年以後
+- T-glass 瓶頸直接影響 FC-BGA 基板（AI 加速器封裝核心基材）供應，與 CoWoS 產能吃緊形成雙重壓力
+*Source: TrendForce 2026-08-06 → [[sources/2026-08-06_trendforce_nittobo-tglass-fy2027-forecast]]*
 
 **⭐ 2026-08-06 重要更新（SIA 2026 State of Industry + Yole WFE + Omdia）**：
 - **SIA 2026 State of the Industry Report**（2026-07-31 發布）：全球晶片銷售 2025 年創歷史新高 **$796B**，2026 年預測 **$1.5T**（+88% YoY）；美國公司佔 53% 市占；2020 年以來美國境內半導體投資超過 **$770B**（160 個項目）。

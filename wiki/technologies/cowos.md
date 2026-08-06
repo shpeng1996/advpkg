@@ -3,8 +3,8 @@ title: "CoWoS — Chip-on-Wafer-on-Substrate"
 category: technology
 tags: [2.5D, interposer, TSMC, AI, HPC, HBM, COUPE, CPO, packaging-constraints, NVIDIA]
 created: 2026-04-24
-updated: 2026-07-27
-sources: [2026-05-24_techtimes_nvidia-computex2026-cowos, 2026-04-24_initial-survey, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-15_trendforce_tsmc-vanguard-stake-sale, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-09_financialcontent_tsmc-130k-cowos-wafers, 2026-06-09_digitimes_tsmc-cowos-soic-capacity-symposium, 2026-06-15_trendforce_tsmc-cowos-gap-narrowing-130k-200k-wafers, 2026-06-21_tomshardware_tsmc-fab-expansion-roadmap, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_tmtpost_tsmc-cowos-capacity-targets-2026-2027, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand]
+updated: 2026-08-07
+sources: [2026-08-05_trendforce_tsmc-cowos-cow-outsourcing-osat, 2026-05-24_techtimes_nvidia-computex2026-cowos, 2026-04-24_initial-survey, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-15_trendforce_tsmc-vanguard-stake-sale, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-09_financialcontent_tsmc-130k-cowos-wafers, 2026-06-09_digitimes_tsmc-cowos-soic-capacity-symposium, 2026-06-15_trendforce_tsmc-cowos-gap-narrowing-130k-200k-wafers, 2026-06-21_tomshardware_tsmc-fab-expansion-roadmap, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_tmtpost_tsmc-cowos-capacity-targets-2026-2027, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand]
 related:
   - wiki/entities/tsmc.md
   - wiki/technologies/soic.md
@@ -190,3 +190,40 @@ HBM 在 CoWoS 封裝製程中與 GPU SoC 基板一同熔融組裝，完成後物
 - ASE Group 目標 **2026 年底達 20,000–25,000 wsm**（wafer starts per month）CoWoS 外包產能
 - 此數字對應 TSMC 自有 CoWoS 約 120K–140K wsm 之外的「溢出產能」，ASE 以 CoWoP 面板級封裝技術為基礎承接（詳見 [[entities/ase-group]]）
 - 與 TSMC AP8 台南廠 4 萬片/月目標合計，2026 年底全球 CoWoS 生態系總產能估計接近 200,000 wsm（台積電自有約 140K + ASE 20-25K + 其他 OSAT 35-40K）
+
+## 2026-08-07 更新 / Updates
+
+### ⭐ TSMC 擴大 CoW 步驟外包至 OSATs；NVIDIA 2026 年預訂逾 50% 產能（2026-08-05）
+
+*Source: TrendForce 2026-08-05 → [[sources/2026-08-05_trendforce_tsmc-cowos-cow-outsourcing-osat]]*
+
+**CoWoS 封裝流程分工歷史性轉折——CoW 步驟首次大規模外包**：
+
+TSMC 決定擴大將 CoW（Chip-on-Wafer，晶片貼附中介層）步驟外包給 ASE、SPIL 等 OSAT 廠商，此舉為封裝分工的歷史性轉折：
+- 以往 OSAT 僅承接 WoS（Wafer-on-Substrate，中介層貼附基板）；CoW 一直是 TSMC 自留核心步驟
+- 本次擴大 CoW 外包目的：緩解 AI 晶片封裝瓶頸，疏通 NVIDIA 及 ASIC 客戶需求
+
+**NVIDIA 2026 年 CoWoS 需求量化**：
+- NVIDIA 預訂 TSMC CoWoS 產能 **800,000–850,000 wsm**，占 TSMC 全年 CoWoS 總產能 **>50%**
+- 此數字確認 NVIDIA 為 CoWoS 的絕對主力需求方，2026 年超過半數產能鎖定給 NVIDIA
+
+**CoWoS 月產能目標（2026-08 更新）**：
+
+| 時間點 | TSMC CoWoS 月產能 |
+|-------|-----------------|
+| 2025 年 | ~70,000 wsm |
+| 2026 年底目標 | 130,000–140,000 wsm |
+| 供需缺口 | ~20%（即使達標） |
+
+**AMD 主導的 OSAT 自建 CoW 模型**：
+- AMD 策略性支持 ASE/SPIL 建立自有 CoW 生產線（非 TSMC 主導授權模式）
+- 流程：晶圓在 TSMC 製造 → 完成後直接送 ASE 或 SPIL 進行端對端 CoWoS 封裝
+- OSAT 業者正向韓國設備商洽談切割（dicing）＋接合（bonding）設備採購
+
+**CoWoS 外包分工演進對照**：
+
+| 步驟 | 2024 年以前 | 2026 年（新） |
+|-----|------------|-------------|
+| CoW（晶片貼中介層） | TSMC 專屬 | TSMC ＋ ASE/SPIL 外包 |
+| WoS（中介層貼基板） | OSAT 承接 | OSAT 承接（維持） |
+| 測試 / 系統整合 | OSAT 承接 | OSAT 承接（維持） |

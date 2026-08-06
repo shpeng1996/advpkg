@@ -2,6 +2,21 @@
 
 ---
 
+## [2026-08-07] collect | 每日自動蒐集 — TSMC CoW外包OSATs分工轉折 + Nittobo T-glass三倍產能仍不夠
+- 搜尋查詢數：7 組（CoWoS OSAT outsourcing、T-glass supply、HBM4 packaging、FOPLP 2026、advanced packaging substrate等）
+- 成功抓取：2 篇（raw/articles/ 2 篇）
+- 失敗/跳過：~8 篇（SemiEng JS渲染封鎖 5、已收錄 1、付費牆/低相關 2）
+- 觸發 ingest：2 篇
+- 觸及 wiki 頁面：（共 7 頁）
+  - wiki/technologies/cowos.md（⭐ 新增 2026-08-07 章節：CoW外包轉折、NVIDIA 800-850K wsm）
+  - wiki/entities/tsmc.md（新增 CoW外包政策條目）
+  - wiki/entities/ase-group.md（新增 CoW生產線建立、AMD策略支持）
+  - wiki/technologies/glass-substrate.md（⭐ 新增 Nittobo T-glass三倍仍不夠章節）
+  - wiki/concepts/advanced-packaging-market.md（新增材料供應鏈瓶頸段落）
+  - wiki/sources/2026-08-05_trendforce_tsmc-cowos-cow-outsourcing-osat.md（新建）
+  - wiki/sources/2026-08-06_trendforce_nittobo-tglass-fy2027-forecast.md（新建）
+- 主要新知識：（1）TSMC 首次大規模將 CoW 步驟外包至 ASE/SPIL，封裝業分工歷史性轉折；NVIDIA 鎖定 800-850K wsm（>50% 全年產能）。（2）Nittobo T-glass 三倍產能仍不夠；NVIDIA/Apple/Google 搶佔配額；T-glass 確認為 AI 封裝供應鏈新隱性瓶頸。
+
 ## [2026-08-06] collect | 每日自動蒐集 — Intel HLFF 240mm封裝藍圖 + Samsung FMS 2026 V10/zHBM/HBM5 + CHIPS Act $874M + SIA $1.5T
 
 - 搜尋查詢數：6 組（advanced packaging EMIB HLFF 2026、Samsung FMS 2026 memory HBM5、CHIPS Act advanced packaging 2026、SIA semiconductor market 2026、Intel Foundry Rio Rancho 2026、advanced packaging collect 2026-08）

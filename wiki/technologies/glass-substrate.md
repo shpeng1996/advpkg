@@ -3,7 +3,7 @@ title: "玻璃基板 / Glass Core Substrate"
 category: technology
 tags: [glass-substrate, TGV, panel-level, FC-BGA, CoPoS, Absolics, DNP, Rapidus, warpage, SeWaRe, glass-interposer, BOE, ULCVD, non-embedding, Lens-Technology, TPK-KY, Innolux, AUO]
 created: 2026-05-08
-updated: 2026-08-03
+updated: 2026-08-07
 sources: [2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-05-05_trendforce-insights_glass-substrate-development, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-05-29_3dincites_rapidus-2nm-advanced-packaging-ai-foundry, 2026-06-01_trendforce_intel-3dgs-india-glass-substrate, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-06-20_biggo_boe-glass-substrate-pilot, 2026-06-28_economy-ac_glass-substrate-global-race, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan]
 related:
   - wiki/technologies/copos.md
@@ -466,6 +466,41 @@ TSMC 在 JPCA Show 2026（日本）首次公開玻璃基板 vs 有機基板量�
 - **BOE**（中國）：試產線運轉，量產良率待解
 
 ---
+
+## ⭐ 2026-08-07 更新：Nittobo T-glass 三倍擴產仍不夠；超大客戶鎖定 2026 年度配額
+
+*Source: TrendForce 2026-08-06 → [[sources/2026-08-06_trendforce_nittobo-tglass-fy2027-forecast]]*
+
+**T-glass（無鹼玻璃布）成為先進封裝基板供應鏈的隱性戰略瓶頸**，Nittobo（日東紡績）FY2027 財務展望揭示了 T-glass 供需失衡的嚴重程度：
+
+**Nittobo FY2027 財務展望（2026-08-06 上調）**：
+
+| 指標 | FY2026 實績 | FY2027 預測（更新） | 說明 |
+|------|------------|------------------|------|
+| 淨利潤 | JPY 17B | **JPY 20B**（+JPY 3B 上調） | T-glass AI 需求爆發 |
+| 營收 | JPY 131B | **JPY 141B** | +8% YoY |
+| 核心利潤（EBIT） | JPY 22B | **JPY 28B** | +27% |
+| 產能擴張投資 | — | **JPY 80B（US$550M）** | 日本 + 台灣雙地佈局 |
+| 產能目標 | 1× | **3× by FY2029** | 即使三倍「仍不夠」 |
+
+**「三倍仍然不夠（tripling capacity is still not enough）」**：
+- Nittobo 管理層在法說上罕見直接表態：即使產能擴充三倍，仍無法滿足 AI 基礎設施需求
+- 此聲明揭示 T-glass 從普通電子材料轉型為**AI 供應鏈的戰略稀缺品**
+- 類似情形：稀土金屬、HBM 記憶體、CoWoS 中介層——都是 AI 算力擴張的隱性瓶頸
+
+**超大客戶搶佔 2026 年配額**：
+- **NVIDIA + Microsoft**：已鎖定 Nittobo 大部分 2026 年度 T-glass 頂級產品配額
+- **Google + Amazon**：額外簽訂 T-glass 供應協議
+- **Apple**：高管親赴日本洽談（Tim Cook 訪日行程期間），為 iPhone/MacBook 次世代 PCB 預先保障供應
+
+**T-glass 在封裝基板中的角色**：
+- T-glass（無鹼硼矽酸鹽玻璃布）是 PCB 核心層及 AI 伺服器封裝基板（FC-BGA）的關鍵基材
+- Nittobo 是全球 T-glass 最主要供應商，其供應瓶頸直接影響 AI 加速器封裝基板產能
+- T-glass 品質影響阻抗控制、熱穩定性——不可輕易替換供應商
+
+**地緣政治與多元化投資**：
+- Nittobo 將 JPY 80B（US$550M）分配至日本本土（主要）＋台灣（次要）新產線
+- 台灣投資目的：縮短至 TSMC/ASE 等主要封裝廠的交期，降低日本供應鏈單點風險
 
 ## ⭐ 2026-08-03 更新：ASE COO 明確表態「12個月內玻璃基板不會量產」
 
