@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-08-07
-**頁面總數 Total Pages**：350
-**原始來源數 Sources**：311
+**更新時間 Updated**：2026-08-08
+**頁面總數 Total Pages**：354
+**原始來源數 Sources**：315
 
 ---
 
@@ -63,6 +63,10 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-08-07_semieng_chip-week-150]] — SemiEngineering Week #150：**FMS 2026 HBF/zHBM/zNAND-O；Terafab $16.8B；Silicon Box PLP 10×；WSTS H1 $702B/全年 ~$1.65T；Lumilens $9 億；AMD 收購 Taalas；US GAO 批評 CHIPS Act AP R&D 重組**（2026-08-08 收錄；原文 2026-08-07）⭐新增
+- [[sources/2026-08-07_trendforce_terafab-texas-16-8b-memory]] — TrendForce：**Terafab 德州一期 $16.8B 正式確認（路透社）；1 億平方英尺；3,000 工作；記憶體工程師招募（sub-20nm DRAM + MRAM/RRAM/3D DRAM）；AI5 Samsung+TSMC / AI6 Samsung / AI6.5 TSMC**（2026-08-08 收錄；原文 2026-08-07）⭐新增
+- [[sources/2026-08-07_trendforce_18-chinese-glass-substrate]] — TrendForce：**中國 18 家企業加速玻璃基板佈局——Crystal-Optech（Corning Glass Bridge 獨家光路）、WG Tech（TGV ≤5µm/100:1）、BOE（20 層 AI 載板交付）；Hymson Laser（+144% Q1'26）、DR Laser（LACE 量產）；TrendForce 官方預測：主流化 2030+ 年後**（2026-08-08 收錄；原文 2026-08-07）⭐新增
+- [[sources/2026-08-07_trendforce_china-big-fund-phase-iii-pivot]] — TrendForce：**中國大基金三期轉向——三大支柱：先進封裝（Anhui Juhe Chiplet 平台 18%）、設備（Tuojing Jianke HBM HB 設備 RMB 4.5 億）、AI 算力（YunSilicon/TsingMicro/Aijieko）；Phase III = 卡脖子技術精準突破策略**（2026-08-08 收錄；原文 2026-08-07）⭐新增
 - [[sources/2026-08-06_trendforce_nittobo-tglass-fy2027-forecast]] — TrendForce：**Nittobo T-glass FY2027 淨利潤 JPY 20B；三倍產能仍不夠；NVIDIA/Apple/Google 搶佔 2026 年配額**（2026-08-07 收錄；原文 2026-08-06）⭐新增
 - [[sources/2026-08-05_trendforce_tsmc-cowos-cow-outsourcing-osat]] — TrendForce：**TSMC 擴大 CoW 外包至 ASE/SPIL；NVIDIA 預訂 800-850K wsm；2026 供需缺口 20%；AMD 支持 OSAT 自建 CoW**（2026-08-07 收錄；原文 2026-08-05）⭐新增
 - [[sources/2026-08-05_trendforce_samsung-v10-zhbm-hbm5-fms2026]] — TrendForce：**Samsung FMS 2026：V10 BV-NAND 400+層 +58%密度供應NVIDIA；zHBM 8×HBM5 custom IP整合；HBM5 HPB -20%熱阻；zNAND-O端側AI；SK Hynix V10 375層 2027**（2026-08-06 收錄；原文 2026-08-05）⭐新增

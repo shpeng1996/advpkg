@@ -198,3 +198,21 @@ SemiEngineering 最新報導確認翹曲（warpage）管理在面板級封裝中
 **wiki 含義**：翹曲管理是 FOPLP 從「先導量產」走向「AI 級量產」的關鍵製造工程障礙之一，特別在面板尺寸超過 400mm 後，此問題可能成為比良率更難攻克的短板。建議在 FOPLP 頁面的「未解問題」中追蹤翹曲標準是否逐漸形成業界共識。
 
 *Source: SemiEngineering 2026-07-29；raw/articles/2026-07-29_semieng_warpage-management-advanced-packaging.md*
+
+---
+
+## ⭐ 2026-08-08 更新：Silicon Box 宣布 2026 年 PLP 產能 10 倍擴大
+
+*Source: SemiEngineering Chip Industry Week #150（2026-08-07）→ [[sources/2026-08-07_semieng_chip-week-150]]*
+
+**Silicon Box**（新加坡）宣布在 2026 年內將面板級封裝（Panel-Level Packaging）產能擴大 **10 倍**，同步達成 5 億套高良率出貨里程碑。
+
+Silicon Box 是獨立 FOPLP 新創公司，其激進產能擴張計畫（10×，全年完成）在 FOPLP 生態中屬於罕見幅度，與龍頭 OSAT（ASE Q1 2027、Powertech 2H26 試產）的爬坡節奏形成呼應，共同推動 2026-2027 年全球 FOPLP 產能快速上量。
+
+| 廠商 | FOPLP 量產時程 | 備注 |
+|------|--------------|------|
+| **Silicon Box** | 2026 年內（10×） | 5 億套出貨；新加坡 |
+| ASE | Q1 2027（310mm 全自動線） | 台灣 |
+| Powertech | 2H26 試產；2027 量產 | 台灣 |
+| STMicro | 2026 Q3 試驗線（法國） | 歐洲 |
+| CFMEE | PLP 2000 資格認證通過 | 中國 |

@@ -121,3 +121,37 @@ HBF（High Bandwidth Flash）是將多顆 **3D NAND 快閃記憶體晶片**透�
 - HBF 的 AI 推論場景是否足夠廣泛以支撐量產規模，抑或僅為利基市場？
 - Samsung 何時公布正式 HBF 路線圖？是否直接跳過 TCB 採用 Hybrid Bonding？
 - HBF 與 CXL（Compute Express Link）記憶體擴充方案的競爭與互補關係？
+
+---
+
+## ⭐ 2026-08-08 更新：FMS 2026 HBF 規格細節補強 + SK Hynix 375 層 4D NAND 時程
+
+*Source: SemiEngineering Chip Industry Week #150（2026-08-07）→ [[sources/2026-08-07_semieng_chip-week-150]]*
+
+### FMS 2026 發布週（2026-08-03~07）進一步細節
+
+**SemiEngineering Week #150** 對 FMS 2026 的 HBF 相關公告進行了整體梳理：
+
+- **Sandisk + SK Hynix HBF 規格發布**：涵蓋基本性能期望值、**xPU-HBF 主機介面**規範、可靠性與封裝指南（packaging guidance for an HBF die stack）——後者為先前尚未收錄的細節
+- **SK Hynix**：正在開發 **375 層 4D NAND**（4D = 3D NAND + CBA/Bonded Array 工法），此為 HBF 第二代產品的 NAND 技術基礎
+- **Kioxia + Sandisk**：第 10 代 QLC 3D NAND（bit 密度 >37 Gb/mm²、4.8 Gb/s 介面），可視為 HBF 長期技術路線的密度座標之一
+
+### xPU-HBF 主機介面（首次收錄）
+
+HBF 標準的**主機側介面**定義為 **xPU-HBF**，適用於各類 AI 加速器（GPU、TPU、NPU）與 HBF 堆疊的連接。此命名呼應 HBM 側的 xPU-HBM 介面框架，顯示 Sandisk+SK Hynix 刻意以「HBM 的 NAND 版本」為定位設計 HBF 生態介面。
+
+### 封裝指南（packaging guidance）更新
+
+FMS 2026 HBF 規格新增了封裝指引，包括：
+- HBF die stack 的熱機械可靠性要求
+- TCB（Thermal Compression Bonding）為預設接合工法（對應 Hanmi 2H26 首交付時程）
+- 明確支援與 HBM 共封裝（co-packaging）在同一基板或中介層的混合架構
+
+### 競爭問題更新
+
+| 問題 | 狀態（2026-08-08）|
+|------|-----------------|
+| JEDEC 統一標準 | FMS 2026 已定義基本框架；JEDEC 正式標準化進行中 |
+| NVIDIA 是否支援 HBF | **未承諾**（FMS 2026 確認）|
+| SK Hynix NAND 技術 | 375 層 4D NAND（2027 年初量產）|
+| Samsung HBF 路線圖 | 尚未公布正式路線圖 |

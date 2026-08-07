@@ -476,3 +476,60 @@ TrendForce 2026-07-29 報導確認中國在 2026 年下半年啟動新一波以�
 | **天津寬禁** | 6 吋 InP 晶圓廠 | 首條 6 吋線 | 2024-06-24 簽約 |
 
 **地緣意涵**：InP 是 III-V 族化合物半導體，屬於高純稀有材料（銦、磷均有出口管制敏感性）。中國正在 InP 原料（稀有金屬供應）→ 單晶成長 → 晶圓切磨拋 → 磊晶代工 → 光晶片封裝的完整 InP 供應鏈上進行系統性本土化，與其整體半導體供應鏈去美化策略一致。
+
+---
+
+## ⭐ 2026-08-08 更新：Big Fund Phase III 先進封裝投資具體化 + Terafab $16.8B 一期確認 + CHIPS Act GAO 批評
+
+*Sources: TrendForce 2026-08-07（Big Fund + Terafab）、SemiEngineering Week #150（2026-08-07）→ [[sources/2026-08-07_trendforce_china-big-fund-phase-iii-pivot]]、[[sources/2026-08-07_trendforce_terafab-texas-16-8b-memory]]、[[sources/2026-08-07_semieng_chip-week-150]]*
+
+### 中國大基金三期（Big Fund Phase III）先進封裝投資具體化
+
+**Phase III 三大支柱與先進封裝相關投資**：
+
+| 支柱 | 主導機構 | 代表投資（先進封裝相關） |
+|------|---------|----------------------|
+| **先進封裝與 IP 整合** | Huaxin Dingxin | Anhui Juhe（18%，Chiplet 封裝平台）、Tiansui Xinyuan（31.58%，汽車 ISP IP）|
+| **設備與材料** | Guotou Jixin | Tuojing Jianke（RMB 4.5 億；HBM 混合接合+晶片堆疊設備）|
+| **AI 算力晶片** | AI 算力投資臂 | YunSilicon、TsingMicro、Beijing Aijieko Xin |
+
+**Anhui Juhe Microelectronics**：合肥；中國少數能支援大量 Chiplet 量產的獨立封裝平台  
+**Tuojing Jianke**：Piotech 分拆的 HBM 混合接合設備商——確立中國在 HBM HB 設備自主化的關鍵節點
+
+**Phase III 戰略轉向意義**：
+- Phase I（2014）：廣泛建立基礎能力（SMIC、JCET、YMTC 等）
+- Phase II（2019）：強化整體供應鏈，應對美國出口管制升級
+- Phase III（2024）：**精準突破** — 3D IC、異質整合、HBM 設備、AI 晶片設計，避免在成熟製程重複投入，轉向「卡脖子」技術
+
+### Tesla/SpaceX Terafab 一期投資 $16.8B 正式確認（2026-08-06/07）
+
+*⚠️ 修正：先前 wiki 記錄為「$55B→$119B」，現確認一期實際金額為 $16.8B*
+
+| 項目 | 數值 |
+|------|------|
+| 一期投資 | **$16.8B**（路透社確認，2026-08-06）|
+| 總規模上限 | $119B（若所有擴建階段啟動）|
+| 廠區規模 | ~1 億平方英尺；3,000 工作崗位 |
+| 地點 | 德州 Grimes County |
+| 邏輯晶片供應 | AI5：Samsung+TSMC 分攤；AI6：Samsung；AI6.5：TSMC |
+
+**記憶體野心**：Tesla 已招募 Memory Process Integration Engineer（sub-20nm DRAM、MRAM/RRAM/3D DRAM）——首次明確訊號：Terafab 可能進軍記憶體製造，挑戰 Samsung/SK Hynix/Micron 三巨頭。
+
+### 美國 CHIPS Act R&D 資金重組 — GAO 批評（2026-08-07）
+
+*Source: SemiEngineering Week #150 → [[sources/2026-08-07_semieng_chip-week-150]]*
+
+- 美國商務部取消或暫停部分原有 CHIPS R&D 計畫，將部分資金重新導向個別公司投資
+- **GAO（美國政府問責署）**批評：商務部**未清楚解釋**新投資方式如何滿足國會法授要求的「全國研究計畫」和「先進封裝計畫」
+- 此政策不確定性對美國先進封裝 R&D 生態產生潛在擾動，影響學術機構、材料商、設備商的研發預算規劃
+
+### 美國多晶矽 15% 關稅（2026-12-04 生效）
+
+- 白宮宣布對多晶矽（polysilicon）及其衍生品徵收最低進口價格計畫 + **15% 關稅**，2026-12-04 生效
+- 目標：反制中國在 IC 和太陽能製造供應鏈中的多晶矽競爭
+- **先進封裝關聯**：多晶矽是矽中介層（Silicon Interposer）的基礎原料，關稅可能微幅推升 CoWoS/EMIB 矽中介層成本，長期影響有限但值得追蹤
+
+### FCC 考慮封鎖中國光收發器進口（2026-08-04）
+
+- FCC 正在研擬封鎖中國製光收發器（optical transceivers）進口美國資料中心
+- **先進封裝關聯**：光收發器封裝（CPO/NPO）的供應鏈正受地緣政治影響，推動美國本土 CPO 封裝能力（如 Nokia Allentown、Corning、GlobalFoundries SCALE）的加速建立

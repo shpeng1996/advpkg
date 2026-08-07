@@ -638,3 +638,28 @@ SemiEngineering 深度分析顯示，翹曲（warpage）在 2026 年已從「設
 **wiki 含義**：翹曲管理是 2026 年混合接合 HVM 量產化的新興跨議題約束——不在任何單一製程步驟中，而是橫跨晶圓薄化、暫時接合、晶粒放置、退火、封裝整合全流程。此議題與 [[concepts/thermal-management]] 的熱設計挑戰相互交織，建議持續追蹤。
 
 *Source: SemiEngineering 2026-07-29；raw/articles/2026-07-29_semieng_warpage-management-advanced-packaging.md*
+
+---
+
+## ⭐ 2026-08-08 更新：中國 Big Fund Phase III 投資 HBM 混合接合設備（Tuojing Jianke）
+
+*Source: TrendForce 2026-08-07 → [[sources/2026-08-07_trendforce_china-big-fund-phase-iii-pivot]]*
+
+中國大基金三期（Big Fund Phase III）透過設備投資臂 **Guotou Jixin** 向 **Tuojing Jianke** 注資 **RMB 4.5 億**。
+
+**Tuojing Jianke** 是 PECVD 設備龍頭 **Piotech（拓荊科技）** 的分拆子公司，專注於：
+- HBM 混合接合（Hybrid Bonding）設備
+- 晶片堆疊設備（chip-stacking equipment）
+
+**戰略意義**：
+- 這是 Big Fund Phase III 在「先進封裝設備」板塊**最大的單筆已披露投資**
+- 確立中國在 HBM 混合接合設備自主化路徑的具體節點（對應 BESI、ASMPT、EV Group 的設備主導地位形成挑戰）
+- Piotech 既有的 PECVD 前段製程專長（CVD 薄膜沉積）與混合接合所需的 SiCN 薄膜沉積、Cu pad 暴露製程密切相關，形成技術協同
+
+| 廠商 | 技術 | 地區 | 來源 |
+|------|------|------|------|
+| **BESI**（Kinex 平台）| D2W HB；Applied Materials 持股 9% | 荷蘭 | 量產主力 |
+| **ASMPT**（LITHOBOLT G2）| D2W HB；>10,000 互連/mm² | 香港/新加坡 | 量產主力 |
+| **EV Group** | W2W/D2W HB；450nm pitch 98% 良率 | 奧地利 | 技術前沿 |
+| **Tuojing Jianke** | HBM HB + 晶片堆疊；RMB 4.5 億 Phase III 投資 | 中國 | 新進者 ⭐ |
+| **Hanmi Semiconductor** | Wide TC Bonder（HBM5 路線）| 韓國 | 韓系競爭者 |

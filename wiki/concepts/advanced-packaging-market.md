@@ -552,3 +552,43 @@ Samsung Electronics 於平澤園區建立約 **50 台 D2W 混合接合機**量�
 - **市場含義**：TSMC CoWoS 外包訂單持續擴大至 Amkor，印證 CoWoS 供應鏈「TSMC + OSAT 雙軌」策略正在規模化落地。Amkor 此訂單規模相當於其 2024 年全年先進封裝營收的顯著比例。
 
 *Source: SemiEngineering Chip Week Review #148 → [[sources/2026-07-24_semieng_chip-week-148]]*
+
+---
+
+## ⭐ 2026-08-08 更新：WSTS H1 2026 官方數字 $702B（+102% YoY）；全年預測 ~$1.65T
+
+*Source: SemiEngineering Chip Industry Week #150（2026-08-07）→ [[sources/2026-08-07_semieng_chip-week-150]]*
+
+### 全球半導體市場 H1 2026（WSTS 官方報告）
+
+| 指標 | 數值 |
+|------|------|
+| **H1 2026 全球半導體銷售額** | **$702B** |
+| YoY 成長率（H1） | **+102%** |
+| 記憶體成長（H1） | **+305% YoY** |
+| 邏輯晶片成長（H1） | **+45% YoY** |
+| **全年 2026 預測** | **~$1.65T** |
+
+> 此為 WSTS（World Semiconductor Trade Statistics）官方統計，為本 wiki 最具權威性的年度市場規模基準。
+
+**與既有 wiki 市場規模記錄的整合**：
+
+| 預測來源 | 基期 | 終點 | CAGR / 說明 |
+|----------|------|------|------------|
+| TrendForce/McKinsey（初期） | $43–52B（2025 AP 市場） | — | 9–10% CAGR |
+| Yole Group（2026-07-24 最新） | $55B（2025 AP 市場） | $120B+（2031） | ~14% CAGR |
+| **WSTS（2026-08-07 官方）** | — | **$702B H1 / $1.65T FY2026**（整體半導體） | H1 +102% YoY |
+| SIA | $796B（2025 估） | $1.5T（2030 估） | — |
+| Omdia | — | +94% 成長估算 | AI 驅動 |
+
+> **注意**：WSTS $702B 為全體半導體市場；先進封裝細分市場（$55–120B）為其中子集，兩者口徑不同，勿直接比較。
+
+### Silicon Box：2026 年 PLP（面板級封裝）產能 10 倍擴大
+
+*Source: SemiEngineering Chip Industry Week #150 → [[sources/2026-08-07_semieng_chip-week-150]]*
+
+**Silicon Box**（新加坡 Chiplet 集成封裝新創）宣布將在 2026 年內將**面板級封裝（Panel-Level Packaging）產能擴大 10 倍**，同步達成 5 億套出貨里程碑（高良率）。
+
+**市場意義**：
+- Silicon Box 是獨立 FOPLP 新創中罕見宣告如此大幅產能擴張的公司，10× 擴大意味著其 PLP 產能在 2026 年內從數十萬套/年規模跳升至數百萬套/年
+- 與 ASE（Q1 2027）、Powertech（試產 2H26）等 OSAT 龍頭的 FOPLP 時程形成呼應，說明面板級封裝整體產能在 2026-2027 出現快速爬坡

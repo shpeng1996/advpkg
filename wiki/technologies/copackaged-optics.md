@@ -390,3 +390,36 @@ ECTC 2026 場次已記錄 GF + Corning GLASSBRIDGE™ 的可拆卸波導連接�
 - **垂直整合為主流策略**：NVIDIA（Spectrum-X + TSMC COUPE）、Broadcom（Bailly + Delta/Micas）均選擇「IC 設計 + 封裝平台 + ODM 量產」三端垂直控制，排除傳統光模組供應商介入，形成高度封閉的 CPO 生態鏈。
 
 **wiki 含義**：此更新提供了 Broadcom Bailly -70% 功耗這一迄今最明確的 CPO 效率量化數據，並首次記錄 Meta 實際部署驗證的商業意義——這是 CPO 從「技術演示」到「hyperscaler 採購標準品」的關鍵轉折信號。3 瓶頸框架補充了既有 wiki 對「CPO 商業化挑戰」的結構性理解。
+
+---
+
+## ⭐ 2026-08-08 更新：Lumilens $9 億融資現身 + Palomino Labs 收購 Vega Links
+
+*Source: SemiEngineering Chip Industry Week #150（2026-08-07）→ [[sources/2026-08-07_semieng_chip-week-150]]*
+
+### Lumilens $9 億融資（隱形模式現身）
+
+**Lumilens** 以 **$9 億**融資從隱形模式（stealth）現身，專注於：
+- 共封裝光學（Co-Packaged Optics, CPO）
+- 近封裝光學（Near-Packaged Optics, NPO）
+- 可插拔光學互連（Pluggable Optical Interconnects）
+
+Lumilens 的三線並進策略（CPO + NPO + Pluggable）使其定位不同於 Ayar Labs（主攻 CPO）或 Marvell/Broadcom（大廠內部 CPO），而是以獨立光學互連平台為核心訴求。
+
+$9 億融資規模使其成為光學互連新創中融資最大者之一（超越 Ayar Labs 的已知融資規模）。
+
+### Palomino Laboratories 收購 Vega Links
+
+- **Palomino Laboratories**（Micro LED 光學互連）正式完成對 **Vega Links**（AI 互連系統）的收購
+- 整合後 Palomino 將具備 Micro LED 光源 + AI 互連系統的完整 CPO 技術棧
+
+### 背景：CPO 生態快速分化（2026 年狀態）
+
+| 類型 | 代表廠商 | 定位 |
+|------|---------|------|
+| 大廠自研 | Broadcom Bailly、NVIDIA Spectrum-X COUPE、Marvell | 超大規模量產 |
+| 矽光子設備 | Coherent、Ayar Labs、ams OSRAM | 光源 + 收發器模組 |
+| 獨立平台新創 | **Lumilens**（$9 億）、Palomino+Vega Links | 多架構並進 |
+| 中國陣營 | ZJ Innolight（HKEX IPO）、Innolight | 1.6T 光模組主力 |
+
+*Source: SemiEngineering Week #150；raw/articles/2026-08-07_semieng_chip-week-150-fms-terafab-wsts-1-65t.md*

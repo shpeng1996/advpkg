@@ -2398,3 +2398,34 @@ an（2028–2029 量產世代）為 CoPoS 最可能的首批量產客戶——�
 | wiki/sources/2026-08-04_trendforce_hbf-standard-fms2026-skhynix-sandisk.md | 同上 |
 | wiki/sources/2026-08-03_trendforce_zj-innolight-hkex-ipo-inp-bottleneck.md | 同上 |
 | wiki/sources/2026-08-03_trendforce_kumamoto-m71-tsmc-jasm-tel-restart.md | 同上 |
+
+## [2026-08-08] collect | 每日自動蒐集 — 先進封裝最新動態（2026-08-08）
+- 搜尋查詢數：7 組（TSMC CoWoS SoIC、HBM4 HBM5、Intel EMIB Foveros、hybrid bonding chiplet、panel level packaging FOPLP、China Big Fund advanced packaging、SemiEngineering Week #150）
+- 成功抓取：4 篇（raw/articles/ 4 篇）
+- 失敗/跳過：多篇（已收錄 URL 多篇；大多數搜尋結果為既有收錄文章）
+- 觸發 ingest：4 篇
+- 新建 wiki 頁面：0
+- 更新 wiki 頁面：7 頁（glass-substrate.md、geopolitics-advanced-packaging.md、advanced-packaging-market.md、foplp.md、hbf.md、copackaged-optics.md、hybrid-bonding.md）
+- 主要新知識：
+  1. **中國大基金三期（Big Fund Phase III）先進封裝投資具體化**：Anhui Juhe Microelectronics（Chiplet 封裝平台，18% 股份）+ Tuojing Jianke（HBM 混合接合設備，RMB 4.5 億）——確立中國在 3D IC 設備自主化的具體節點，策略從廣泛建廠轉為「精準突破卡脖子技術」
+  2. **TrendForce 官方給出最明確玻璃基板預測：主流化 2030 年後**；同時首次系統記錄中國 18 家企業（Crystal-Optech/WG Tech/BOE 中游、Hymson/DR Laser 設備）的具體進展——Crystal-Optech 確認為 Corning Glass Bridge 中國獨家光路供應商
+  3. **WSTS H1 2026 官方數字 $702B（+102% YoY）；全年預測 ~$1.65T**——記憶體 +305%，邏輯 +45%；為 wiki 最具權威性的市場規模基準；並記錄 Silicon Box PLP 產能 2026 年 10 倍擴大
+  4. **Terafab 一期 $16.8B 正式確認**（前記錄為 $55B 估計）；招募記憶體工程師（sub-20nm DRAM + MRAM/RRAM/3D DRAM）首次明確「挑戰記憶體三巨頭」野心；Tesla AI5/AI6/AI6.5 製造商分配首次記錄
+
+### 新增 Raw 檔案
+
+| 檔名 | 主題 |
+|------|------|
+| raw/articles/2026-08-07_trendforce_china-big-fund-phase-iii-pivot-advanced-packaging.md | Big Fund Phase III 三支柱；Tuojing Jianke HBM HB 設備；Anhui Juhe Chiplet 平台 |
+| raw/articles/2026-08-07_trendforce_18-chinese-enterprises-glass-core-substrate.md | 中國 18 家玻璃基板企業；Crystal-Optech/WG Tech/BOE/Hymson/DR Laser；TrendForce 2030+ 預測 |
+| raw/articles/2026-08-07_trendforce_terafab-texas-16-8b-memory-hiring.md | Terafab $16.8B 一期；德州 Grimes County；記憶體工程師招募；AI5/AI6 製造商 |
+| raw/articles/2026-08-07_semieng_chip-week-150-fms-terafab-wsts-1-65t.md | SemiEng Week#150；FMS HBF/zHBM；WSTS $702B；Silicon Box 10×；Lumilens $900M |
+
+### 新增 Wiki 來源摘要頁
+
+| 來源摘要頁 | 對應 Raw 檔 |
+|----------|-----------|
+| wiki/sources/2026-08-07_trendforce_china-big-fund-phase-iii-pivot.md | 同上 |
+| wiki/sources/2026-08-07_trendforce_18-chinese-glass-substrate.md | 同上 |
+| wiki/sources/2026-08-07_trendforce_terafab-texas-16-8b-memory.md | 同上 |
+| wiki/sources/2026-08-07_semieng_chip-week-150.md | 同上 |
