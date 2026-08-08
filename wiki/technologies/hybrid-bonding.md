@@ -3,7 +3,7 @@ title: "混合接合 / Hybrid Bonding"
 category: technology
 tags: [3D, hybrid-bonding, Cu-Cu, SoIC, ECTC, advanced-packaging, DRAM, COP, 4F2, Sn-damascene, damascene-interconnect, PFAS-free]
 created: 2026-04-24
-updated: 2026-07-30
+updated: 2026-08-09
 sources: [2026-05-21_semiecosystem_ectc2026-cpo-hybridbonding-plp, 2026-04-24_initial-survey, 2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-03-01_3dincites_besi-packaging-power-shift, 2026-01-13_semiengineering_hbm4-microbumps, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-19_semieng_advanced-packaging-limits, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-03-27_3dincites_copper-grain-hybrid-bonding, 2025-01-01_semieng_making-hybrid-bonding-better, 2026-03-02_semieng_making-hybrid-bonding-better, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2026-04-29_semiwiki_cea-leti-ectc2026-hybrid-bonding, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2024-02-09_semianalysis_hybrid-bonding-process-flow, 2026-05-19_semiconductor-digest_ev-group-ectc2026-hybrid-bonding, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-04-19_semiwiki_apple-m5-cucu-hybrid-bonding-shipped, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-18_imec_iii-v-chiplet-rf-laser-bonding, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-29_evgroup_ectc2026-hybrid-bonding-layer-transfer, 2026-06-29_thelec_skhynix-hybrid-bonding-equipment-order, 2026-06-05_semieng_intel-ectc2026-emib-cpo-glass-blog, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-14_trendforce_samsung-hbm-hiring-hybridbonding, 2026-07-16_semieng_fine-pitch-hb-high-volume, 2026-07-16_semieng_alt-materials-hybrid-bonding]
 related:
   - wiki/technologies/soic.md
@@ -663,3 +663,36 @@ SemiEngineering 深度分析顯示，翹曲（warpage）在 2026 年已從「設
 | **EV Group** | W2W/D2W HB；450nm pitch 98% 良率 | 奧地利 | 技術前沿 |
 | **Tuojing Jianke** | HBM HB + 晶片堆疊；RMB 4.5 億 Phase III 投資 | 中國 | 新進者 ⭐ |
 | **Hanmi Semiconductor** | Wide TC Bonder（HBM5 路線）| 韓國 | 韓系競爭者 |
+
+---
+
+## ⭐ 2026-08-09 更新：Samsung FMS 2026——zHBM、zNAND-O、BV-NAND 全面確認晶圓接合為後 2028 記憶體基礎架構
+
+*Source: Tom's Hardware 2026-08-06（Anton Shilov）→ [[sources/2026-08-06_tomshardware_samsung-zhbm-bvnand-fms2026]]*
+
+Samsung 在 Flash Memory Summit（FMS）2026 發表三項新世代記憶體技術，**全部依賴晶圓接合（Wafer Bonding）技術**作為核心製程：
+
+**技術收斂分析（對混合接合 wiki 的意義）**
+
+| 技術 | 接合類型 | 目標用途 | 開發狀態 |
+|------|---------|---------|---------|
+| **zHBM**（zeta HBM） | HBM 堆疊接合於 AI 加速器 logic die | 邏輯 + 記憶體 SiP，替代 2.5D CoWoS | 開發階段 |
+| **zNAND-O** | 4~8 層 NAND 堆疊於 logic die | 邊緣 AI 裝置（手機、IoT）| 開發階段 |
+| **BV-NAND V10** | 400+ 層 3D NAND 垂直堆疊 | 資料中心儲存（已商業化）| 量產 ✅ |
+
+**zHBM 技術細節**：
+- 將 HBM 記憶體堆疊直接接合至 AI 加速器邏輯晶片頂部（無需中介層 interposer）
+- Samsung 宣稱性能指標：**8× HBM5 性能**（Tom's Hardware 報導；TrendForce 另稱「4× 頻寬於 CoWoS-S HBM5 組合」）
+  - ⚠️ 兩份來源數據不一致，可能指不同比較基準，需待官方規格確認
+- 此架構本質上是 cHBM（客製化 HBM）的極端形式：記憶體直接貼合至客戶 SoC
+
+**對 wiki 現有知識的確認與更新**：
+- **確認 2026-07-26 記錄的 cHBM 路線**：Samsung 的 zHBM 與 wiki 已記載的「邏輯晶片取代 base die」cHBM 架構完全吻合，顯示此技術路線已公開披露
+- **新增證據**：NAND 層也採用相同晶圓接合架構（zNAND-O）——混合接合適用範圍不限 DRAM，正向 NAND 延伸
+- **BV-NAND V10**（400+ 層、28 Gb/mm²、5600 MT/s）確認極高層數垂直堆疊已為商業量產現實，間接支持 3D stacking 技術路線的長期可行性
+
+**與 hybrid bonding 技術路線的關係**：
+- zHBM 的具體接合工藝（Cu-Cu hybrid bonding vs. TC bonding）尚未官方披露，但從 Samsung 平澤 D2W 量產線建設計畫（2026-07-26 記錄）推斷，zHBM 商業化很可能需要 D2W 混合接合設備
+- Samsung FMS 2026 的技術佈局，與 wiki 追蹤的「**混合接合成為 2029+ 記憶體核心製程**」判斷高度一致
+
+*Source: Tom's Hardware 2026-08-06；raw/articles/2026-08-06_tomshardware_samsung-zhbm-znando-bvnand-fms2026-wafer-bonding.md*

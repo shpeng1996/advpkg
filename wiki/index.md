@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-08-08
-**頁面總數 Total Pages**：354
-**原始來源數 Sources**：315
+**更新時間 Updated**：2026-08-09
+**頁面總數 Total Pages**：357
+**原始來源數 Sources**：318
 
 ---
 
@@ -63,6 +63,9 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-08-07_trendforce_skhynix-y2-fab-samsung-p5-expansion]] — TrendForce：**SK Hynix 董事會批准 KRW 54.3T 投資——Y2 龍仁廠（KRW 35.2T，2027-07 建設，2029-06 潔淨室）；M17 清州 NAND（KRW 19.1T）；Samsung P5 提前 6 個月、P5 Fab 2 平行建設**（2026-08-09 收錄；原文 2026-08-07）⭐新增
+- [[sources/2026-08-06_trendforce_inp-shortage-ai-optical-bottleneck]] — TrendForce：**InP（磷化銦）短缺超越 DRAM/NAND——Lumentum CEO 警告；NVIDIA $40B 投資兩家供應商；中國控制 ~70% 全球精煉銦；CPO 驅動 InP 雷射源需求；China InP ecosystem 圖**（2026-08-09 收錄；原文 2026-08-06）⭐新增
+- [[sources/2026-08-06_tomshardware_samsung-zhbm-bvnand-fms2026]] — Tom's Hardware（Anton Shilov）：**Samsung FMS 2026 深度技術分析——zHBM（HBM 接合至邏輯晶片頂部，宣稱 8×HBM5）；zNAND-O（4~8 層 NAND 堆疊邏輯，邊緣 AI）；BV-NAND V10（400+層 28Gb/mm² 5600MT/s 量產）；全部依賴晶圓接合技術**（2026-08-09 收錄；原文 2026-08-06）⭐新增
 - [[sources/2026-08-07_semieng_chip-week-150]] — SemiEngineering Week #150：**FMS 2026 HBF/zHBM/zNAND-O；Terafab $16.8B；Silicon Box PLP 10×；WSTS H1 $702B/全年 ~$1.65T；Lumilens $9 億；AMD 收購 Taalas；US GAO 批評 CHIPS Act AP R&D 重組**（2026-08-08 收錄；原文 2026-08-07）⭐新增
 - [[sources/2026-08-07_trendforce_terafab-texas-16-8b-memory]] — TrendForce：**Terafab 德州一期 $16.8B 正式確認（路透社）；1 億平方英尺；3,000 工作；記憶體工程師招募（sub-20nm DRAM + MRAM/RRAM/3D DRAM）；AI5 Samsung+TSMC / AI6 Samsung / AI6.5 TSMC**（2026-08-08 收錄；原文 2026-08-07）⭐新增
 - [[sources/2026-08-07_trendforce_18-chinese-glass-substrate]] — TrendForce：**中國 18 家企業加速玻璃基板佈局——Crystal-Optech（Corning Glass Bridge 獨家光路）、WG Tech（TGV ≤5µm/100:1）、BOE（20 層 AI 載板交付）；Hymson Laser（+144% Q1'26）、DR Laser（LACE 量產）；TrendForce 官方預測：主流化 2030+ 年後**（2026-08-08 收錄；原文 2026-08-07）⭐新增

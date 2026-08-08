@@ -3,7 +3,7 @@ title: "共封裝光學元件 / Co-Packaged Optics (CPO) — TSMC-COUPE™ & Eco
 category: technology
 tags: [CPO, co-packaged-optics, COUPE, TSMC, GlobalFoundries, Samsung, photonics, AI, HPC, networking, OCI-MSA, DWDM, Broadcom, NVIDIA, glass-substrate, ULCVD, TGV, Spectrum-X, NVL72]
 created: 2026-04-25
-updated: 2026-08-05
+updated: 2026-08-09
 sources: [2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-05-07_trendforce_globalfoundries-silicon-photonics-scale-cpo, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-03-17_coherent_cpo-ofc2026-demo, 2026-06-07_digitimes_jcet-3d-packaging-cpo-plant, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_edn_cpo-technology-status-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-06-24_thelec_corning-glass-bridge-cpo, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-14_trendforce_umc-silith-silicon-photonics-hvm, 2026-07-14_trendforce_huawei-baidu-npo-msa, 2026-07-27_trendforce_presscenter_cpo-switches-nvidia-broadcom-coupe, 2026-06-03_3dincites_intel-foundry-emib-cpo-glass-ectc2026]
 related:
   - wiki/entities/tsmc.md
@@ -44,7 +44,19 @@ Co-Packaged Optics（CPO）將**光學引擎（Optical Engine）直接整合至�
 
 ## 發展時程 / Timeline
 
-- **2026-08-05（⭐最新）**：**InP 基板瓶頸加劇，ZJ Innolight 創紀錄 HKEX IPO，中國供應鏈急速本土化**（TrendForce 2026-08-03）：
+- **2026-08-09（⭐最新）**：**Lumentum CEO 正式警告 InP 供需缺口已超越 DRAM 和 NAND——成為 AI 光互連最關鍵制約**（TrendForce 2026-08-06，引述 Lumentum Q4 FY2026 法說會）：
+  - **Lumentum CEO Michael Hurlston 公開聲明**：InP 供需缺口現已是所有半導體材料中最嚴重（超越 DRAM、NAND）
+  - **NVIDIA 雙邊 $40 億 InP 投資（2026-03）**：各向兩家關鍵供應商承諾 $20 億並簽訂長期供應協議；一家已完成 6 吋產能 **2×** 擴充並規劃 2027 年底前再擴；另一家升級至 6 吋產線，目標 2028 年量產
+  - **需求端驅動力**：800G → 1.6T 光模組對 InP 消耗大幅提升；CPO 架構進一步要求 InP 光源（矽光子無法發光，InP 不可替代）
+  - **供應端制約**：Indium 為鋅礦副產品（難以單獨擴產）；製造需高難度晶體成長技術；產能集中少數廠商；**中國約佔全球 70% 精製 Indium 產量，且自 2025 年起收緊 InP/Indium 出口管制**
+  - **供需失衡預期持續至 2027 年後**（即使多廠商同步擴產）
+  - **中國 InP 本土化生態詳細記錄（最完整版本）**：
+    - 原料層：錫業股份、株洲冶煉、有研先進材料（Indium）；興發集團（高純磷）
+    - 基板/外延：雲南鍺業（唯一 6 吋量產商，新擴產計畫）；三安光電（IDM 垂直整合）；博界科技（基板設備）；海特高新（外延代工）
+    - 下游器件：遠景半導體（100G EML 已商用化）；华工技术（光子晶片研發）；弈光光電（InP 光通訊晶片）；中際旭創 ZJ Innolight（本土 InP 基板資格認證中）
+  *Source: TrendForce 2026-08-06 → [[sources/2026-08-06_trendforce_inp-shortage-ai-optical-bottleneck]]*
+
+- **2026-08-05（次新）**：**InP 基板瓶頸加劇，ZJ Innolight 創紀錄 HKEX IPO，中國供應鏈急速本土化**（TrendForce 2026-08-03）：
   - **ZJ Innolight（中際旭創）**：2026 年 HKEX 最大 IPO（近 7 年最大），基礎募資 **HKD 534.1 億**（~USD 68.5 億）；顯示 AI 光模組廠商資本市場熱度
   - **InP 基板瓶頸**：1.6T 光模組進入量產後，6 吋 InP 晶圓需求急升形成結構性短缺
   - **Coherent（美國）**：德州廠 6 吋 InP 產能 **4× 擴充**；已與 NVIDIA 簽訂 **20 億美元 LTA**（長期供應協議）

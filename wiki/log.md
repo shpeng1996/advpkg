@@ -2,6 +2,24 @@
 
 ---
 
+## [2026-08-09] collect | 每日自動蒐集 — SK Hynix Y2 KRW54.3T投資 + InP短缺超越DRAM/NAND + Samsung FMS2026晶圓接合技術群
+
+- 搜尋查詢數：7 組（TSMC CoWoS 2026、HBM4/5最新進展、hybrid bonding量產、先進封裝市場預測、Samsung FMS 2026 zHBM、InP shortage CPO、SK Hynix fab expansion）
+- 成功抓取：3 篇（存入 raw/articles/ 3 篇）
+- 失敗/跳過：多篇（週末無新文章、部分付費牆、重複 URL）
+- 觸發 ingest：3 篇
+- 觸及 wiki 頁面：（共 5 頁）
+  - wiki/entities/sk-hynix.md（Y2/M17 fab 投資規模更新）
+  - wiki/entities/samsung.md（P5 Fab 2 平行建設 + zHBM 技術分析）
+  - wiki/technologies/copackaged-optics.md（InP 短缺供應鏈分析全覆蓋）
+  - wiki/technologies/hybrid-bonding.md（Samsung FMS 2026 三技術確認晶圓接合為後 2028 基礎）
+  - wiki/index.md（新增 3 頁 sources，Total Pages 354→357，Sources 315→318）
+- 主要新知識：
+  1. SK Hynix Y2 龍仁廠 KRW 35.2T、2027-07 動工、2029-06 潔淨室——確立韓國記憶體廠最大單筆資本支出記錄
+  2. InP 短缺已超越 DRAM/NAND 緊俏程度（Lumentum CEO 直言），中國控制 ~70% 精煉銦、2025 出口管制加劇 CPO 供應鏈風險
+  3. Samsung FMS 2026：zHBM + zNAND-O + BV-NAND V10 全部依賴晶圓接合，確認此技術路線為後 2028 記憶體架構基石
+- 備註：今日為週日，TrendForce 未發布 2026-08-09 新文章；本次收錄 2026-08-06~07 最高價值未收錄文章 3 篇
+
 ## [2026-08-07] collect | 每日自動蒐集 — TSMC CoW外包OSATs分工轉折 + Nittobo T-glass三倍產能仍不夠
 - 搜尋查詢數：7 組（CoWoS OSAT outsourcing、T-glass supply、HBM4 packaging、FOPLP 2026、advanced packaging substrate等）
 - 成功抓取：2 篇（raw/articles/ 2 篇）
