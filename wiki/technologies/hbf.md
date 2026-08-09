@@ -3,8 +3,8 @@ title: "HBF — High Bandwidth Flash"
 category: technology
 tags: [HBF, NAND, flash, TSV, stacking, SanDisk, SK-Hynix, Hanmi, TCB, AI-inference, storage-class-memory]
 created: 2026-06-11
-updated: 2026-08-05
-sources: [2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-06-05_trendforce_hbf-equipment-race-sandisk-hanmi, 2026-06-22_trendforce_sandisk-hbf-patent-nand-processor-bonding]
+updated: 2026-08-10
+sources: [2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-06-05_trendforce_hbf-equipment-race-sandisk-hanmi, 2026-06-22_trendforce_sandisk-hbf-patent-nand-processor-bonding, 2026-05-14_semieng_flash-hbf-high-bandwidth-version]
 related:
   - wiki/technologies/hbm4.md
   - wiki/entities/sk-hynix.md
@@ -112,6 +112,7 @@ HBF（High Bandwidth Flash）是將多顆 **3D NAND 快閃記憶體晶片**透�
 
 - [[technologies/hbm4.md]] — HBF 的概念借鑒者；HBM 針對 DRAM，HBF 針對 NAND；兩者可互補共封裝
 - [[technologies/hybrid-bonding.md]] — HBF 未來更高層數堆疊可能採用 Hybrid Bonding
+- [[technologies/tsv.md]] — TSV 是 HBF 堆疊的核心垂直互連技術；HBM TSV 規格（2–5 µm）與 HBF 類似
 
 ---
 
@@ -155,3 +156,85 @@ FMS 2026 HBF 規格新增了封裝指引，包括：
 | NVIDIA 是否支援 HBF | **未承諾**（FMS 2026 確認）|
 | SK Hynix NAND 技術 | 375 層 4D NAND（2027 年初量產）|
 | Samsung HBF 路線圖 | 尚未公布正式路線圖 |
+
+---
+
+## ⭐ 2026-08-10 更新：技術架構深度補強（SemiEngineering 技術剖析）
+
+*Source: SemiEngineering / Bryon Moyer 2026-05-14 → [[sources/2026-05-14_semieng_flash-hbf-high-bandwidth-version]]*
+
+### HBF 技術架構：重新設計讀取路徑
+
+SemiEngineering 技術深度報導揭示了 HBF 實現高頻寬的核心設計哲學——並非簡單地「把 NAND 堆起來」，而是從根本上重新架構 NAND 的讀取路徑：
+
+**傳統 NAND 的頻寬瓶頸**：傳統 NAND 是為**循序大塊讀取（sequential bulk read）**最佳化的設計，介面串列，存取延遲高。
+
+**HBF 的解法：多陣列平行化（Multi-Array Parallelism）**：
+- 同時存取多個 NAND array
+- 大幅加寬並聯讀取通道
+- 與 HBM 寬匯流排哲學一致——以「寬而並行」取代「快但串列」
+- 結果：頻寬從傳統 NAND 的數 GB/s 跳升至數百 GB/s 量級
+
+> **Cynthia Hsu（SanDisk 記憶體介面技術部門副總裁）**：「HBF 重新架構了快閃記憶體的讀取路徑，使其能夠以 HBM 型的頻寬服務 AI 推論工作負載。」
+
+### HBF vs HBM 詳細對比
+
+| 維度 | HBM（HBM3E 為例） | HBF（第一代目標） |
+|------|-------------------|-----------------|
+| **記憶體類型** | DRAM（揮發性） | 3D NAND（非揮發性） |
+| **容量** | 192 GB（12-Hi HBM3E） | 已達 **3 Tb**（=375 GB）；目標 TB 級 |
+| **頻寬** | ~1.2 TB/s（HBM3E）；HBM4 目標 3.3 TB/s | Grade 1: 0.4 TB/s；Grade 3: 3.0 TB/s |
+| **延遲** | 極低（ns 級） | 較高（µs 級，NAND 特性） |
+| **非揮發性** | ✗（斷電丟失） | ✅（斷電保留） |
+| **適合工作負載** | 訓練（高速讀寫）+ 推論激活值 | **推論靜態權重**（只讀） |
+| **封裝介面** | HBM 寬匯流排（JEDEC） | **xPU-HBF**（OCP 標準化中） |
+| **PHY 生態** | HBM PHY 成熟（SK Hynix、Cadence 等） | **Synopsys PHY** 確認支援；**Rambus** 亦有 HBF PHY |
+| **製造合作** | DRAM 廠自製 | NAND 廠（SanDisk/SK Hynix）+ **UMC**（可能製造 base die） |
+
+### AI 推論記憶體層次架構（首次整理）
+
+HBF 在 AI 推論場景中的完整記憶體階層定位：
+
+```
+┌─────────────────────────────────────────────┐
+│  SRAM（on-chip）                            │ ← 最快；容量最小
+│  活化值（激活值）緩衝；KV cache 熱區         │   幾十 MB～幾 GB
+├─────────────────────────────────────────────┤
+│  HBM（DRAM，off-chip）                      │ ← 高頻寬；揮發性
+│  推論時的激活值（activations）、KV cache     │   192 GB（HBM3E）
+├─────────────────────────────────────────────┤
+│  HBF（3D NAND，off-chip）               ⭐  │ ← 大容量；非揮發性
+│  AI 模型靜態權重（model weights）長期儲存   │   3 Tb+（目標 TB 級）
+├─────────────────────────────────────────────┤
+│  傳統 SSD / DRAM（遠端）                    │ ← 最慢；容量最大
+│  模型儲存、批次資料                          │
+└─────────────────────────────────────────────┘
+```
+
+**關鍵洞察**：HBF 不是要取代 HBM，而是**填補 HBM 與 SSD 之間的空缺**——專門儲存推論時靜態不變的模型權重，讓 HBM 專注處理動態激活值，大幅降低對 HBM 容量的需求。
+
+### 供應鏈擴充：UMC 角色
+
+SemiEngineering 報導首次提及 **UMC（聯合微電子）** 在 HBF 生態系中的潛在角色——可能承接 HBF base die（底層邏輯晶片）的製造，為 SanDisk（主要在 Kioxia 合作廠和自有 BiCS 產線生產 NAND）提供成熟節點的邏輯製程服務。
+
+**更新後的供應鏈表**：
+
+| 角色 | 廠商 | 備註 |
+|------|------|------|
+| NAND 製造 / HBF 開發 | SanDisk（WDC 分拆）| HBF 最積極推動者 |
+| NAND 製造 / 標準合作 | SK Hynix | 與 SanDisk 聯合標準化 |
+| NAND 製造 / 觀望 | Samsung | 積極佈局專利，未公布路線圖 |
+| Base die 邏輯製造 | **UMC**（可能）| SemiEng 2026-05-14 首次提及 |
+| PHY IP | **Synopsys** | 確認開發 HBF PHY |
+| PHY IP | **Rambus** | 開發 HBF PHY（與 Synopsys 競爭）|
+| TCB 設備（主力） | **Hanmi Semiconductor** | 2H26 首交付 HBF 專用 TCB |
+| TCB 設備 | ASMPT | HBM4 TCB 主力供應商，可能延伸 HBF |
+| 標準化推動 | **OCP**（Open Compute Project）| 主要標準框架；Google/Tenstorrent 表態支持 |
+
+### 容量里程碑
+
+SemiEngineering 報導時（2026-05）HBF 已實現的容量：
+- SanDisk HBF 樣品已達 **3 Tb**（=約 375 GB）
+- 對比：HBM3E 12-Hi 最大 192 GB
+- HBF 容量優勢已達到 **8× HBM3E** 以上
+- 目標：16-Hi 堆疊後可達 **16× 以上** HBM 容量

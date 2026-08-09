@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-08-09
-**頁面總數 Total Pages**：357
-**原始來源數 Sources**：318
+**更新時間 Updated**：2026-08-10
+**頁面總數 Total Pages**：360
+**原始來源數 Sources**：320
 
 ---
 
@@ -49,7 +49,8 @@
 - [[technologies/foveros]] — Foveros；Intel 3D 堆疊；Foveros Direct 3D（<10µm Cu-Cu，2026 量產）；875 GB/s 3D 頻寬⭐新增
 - [[technologies/foplp]] — FOPLP（扇出面板級封裝）；**CFMEE PLP 2000 通過技術資格認證——中國首套 510×515mm PLP 直寫微影系統（2µm；CoPoS/FOPLP/玻璃基板）**（2026-07-07）⭐更新
 - [[technologies/glass-substrate]] — 玻璃核心基板（TGV）；**GlaSSEM JV（Samsung EM+Sumitomo，2H27）+ TSMC JPCA 2026 首次公開量化性能數據（COP +16%、電感 -42%）**（2026-07-07）⭐更新
-- [[technologies/hbf]] — **HBF（High Bandwidth Flash）**；TSV 堆疊 NAND；SanDisk 2H26 樣品；SK Hynix+SanDisk 標準化；Hanmi TCB 設備 2H26 首交付（2026-06-11）⭐新增
+- [[technologies/hbf]] — **HBF（High Bandwidth Flash）**；TSV 堆疊 NAND；SanDisk 2H26 樣品；SK Hynix+SanDisk 標準化；Hanmi TCB 設備 2H26 首交付；**Synopsys/Rambus PHY；UMC base die；AI 推論記憶體層次架構整理**（2026-08-10）⭐更新
+- [[technologies/tsv]] — **TSV（Through-Silicon Via / 矽穿孔）**；HBM TSV 2–5µm/30–60µm（via-middle）；矽中介層 TSV 5–20µm/80–120µm；8步驟製程流程；NanoTSV（<100nm）2nm+ 背面供電；Amkor Rick Reed 觀點（2026-08-10）⭐新增
 
 ---
 
@@ -63,6 +64,8 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-05-14_semieng_flash-hbf-high-bandwidth-version]] — SemiEngineering / Bryon Moyer：**HBF 技術深度剖析——多陣列平行化讀取路徑重設計；HBF vs HBM 對比（容量 3Tb vs 192GB）；AI 推論記憶體層次（HBF 權重→HBM 激活值→SRAM）；Synopsys/Rambus PHY；UMC base die；Cynthia Hsu（SanDisk VP）**（2026-08-10 收錄；原文 2026-05-14）⭐新增
+- [[sources/2026-04-22_semieng_tsv-complexity-manufacturing-bottleneck]] — SemiEngineering / Laura Peters：**TSV 製造瓶頸深度報導——HBM TSV 2–5µm/30–60µm vs 中介層 TSV 5–20µm/80–120µm；8步驟製程流程（蝕刻→填銅→CMP→背研→reveal）；NanoTSV（<100nm）背面供電；Amkor Rick Reed 容差洞察；AI 需求造成 HBM+CoWoS 同步短缺**（2026-08-10 收錄；原文 2026-04-22）⭐新增
 - [[sources/2026-08-07_trendforce_skhynix-y2-fab-samsung-p5-expansion]] — TrendForce：**SK Hynix 董事會批准 KRW 54.3T 投資——Y2 龍仁廠（KRW 35.2T，2027-07 建設，2029-06 潔淨室）；M17 清州 NAND（KRW 19.1T）；Samsung P5 提前 6 個月、P5 Fab 2 平行建設**（2026-08-09 收錄；原文 2026-08-07）⭐新增
 - [[sources/2026-08-06_trendforce_inp-shortage-ai-optical-bottleneck]] — TrendForce：**InP（磷化銦）短缺超越 DRAM/NAND——Lumentum CEO 警告；NVIDIA $40B 投資兩家供應商；中國控制 ~70% 全球精煉銦；CPO 驅動 InP 雷射源需求；China InP ecosystem 圖**（2026-08-09 收錄；原文 2026-08-06）⭐新增
 - [[sources/2026-08-06_tomshardware_samsung-zhbm-bvnand-fms2026]] — Tom's Hardware（Anton Shilov）：**Samsung FMS 2026 深度技術分析——zHBM（HBM 接合至邏輯晶片頂部，宣稱 8×HBM5）；zNAND-O（4~8 層 NAND 堆疊邏輯，邊緣 AI）；BV-NAND V10（400+層 28Gb/mm² 5600MT/s 量產）；全部依賴晶圓接合技術**（2026-08-09 收錄；原文 2026-08-06）⭐新增

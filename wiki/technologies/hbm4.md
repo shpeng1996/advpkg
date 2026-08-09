@@ -366,12 +366,33 @@ SPHBM4 的目標是降低 HBM 整合的封裝成本與複雜度，讓更多設�
 
 ---
 
+## TSV 規格 / TSV Specifications（⭐ 2026-08-10 新增）
+
+*Source: SemiEngineering / Laura Peters 2026-04-22 → [[sources/2026-04-22_semieng_tsv-complexity-manufacturing-bottleneck]]*
+
+HBM 堆疊的 TSV 與矽中介層 TSV 在規格與製程上存在顯著差異：
+
+| 項目 | **HBM DRAM TSV** | **矽中介層 TSV（CoWoS-S）** |
+|------|------------------|-----------------------------|
+| 直徑 | **2–5 µm** | **5–20 µm** |
+| 深度 | **30–60 µm** | **80–120 µm** |
+| 製程類型 | **Via-middle**（FEOL 後，BEOL 前）| Via-first 或 Via-last |
+| 主要製造者 | SK Hynix、Samsung、Micron（自製）| TSMC（CoWoS-S）、OSAT 廠 |
+| 挑戰 | Reveal 步驟精度、高深寬比填充 | 大尺寸 CMP 均勻度、翹曲控制 |
+
+**關鍵洞察**：HBM 升至 16-Hi 堆疊時，TSV 的製程容差要求提高（更薄的 die、更精確的 reveal），這是 Samsung HBM 人才招募文件中明確提到的攻關方向（2026-07，見上方「市場動態」章節）。
+
+→ 完整 TSV 技術頁面：[[technologies/tsv.md]]
+
+---
+
 ## 相關技術 / Related Technologies
 
 - [[technologies/cowos]] — HBM4 的主要封裝平台（2.5D 並排整合）
 - [[technologies/hybrid-bonding]] — HBM5 / >20H HBM 的潛在下一代堆疊互連路線
 - [[technologies/ucie]] — HBM base die / logic chiplet 之間的 die-to-die interface 候選標準
 - [[technologies/emib]] — Intel 封裝生態中整合 HBM 的 CoWoS 替代路線
+- [[technologies/tsv.md]] — TSV 完整技術頁面（規格、製程流程、供應鏈）
 
 ## 競爭技術比較 / Competing Technologies
 

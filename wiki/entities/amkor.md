@@ -26,6 +26,7 @@ related:
 - **Flip-Chip BGA**：成熟高效能封裝技術
 - **Copper Pillar Bump**：用於 Chiplet 封裝
 - **Intel EMIB**：Intel 授權 EMIB 製程，在 Amkor 韓國松島 K5 廠、葡萄牙廠、亞利桑那廠三地同步實施（Intel 首次將高階封裝外包至第三方 OSAT）⭐ 2025-12 正式宣布合作
+- **TSV-Last / TSV-Reveal 製程**：Amkor 在 OSAT 端承接 TSV reveal（背面曝露）相關作業，是其進階 3D 封裝（Advanced 3D Products）能力的組成部分；Rick Reed（進階 3D 產品總監）指出在可見未來 TSV 孔徑容差不會進一步收緊，除非中介層厚度需求降至 50 µm 以下。（Source: SemiEngineering 2026-04-22）
 
 ---
 

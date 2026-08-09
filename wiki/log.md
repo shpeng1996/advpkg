@@ -2447,3 +2447,19 @@ an（2028–2029 量產世代）為 CoPoS 最可能的首批量產客戶——�
 | wiki/sources/2026-08-07_trendforce_18-chinese-glass-substrate.md | 同上 |
 | wiki/sources/2026-08-07_trendforce_terafab-texas-16-8b-memory.md | 同上 |
 | wiki/sources/2026-08-07_semieng_chip-week-150.md | 同上 |
+
+## [2026-08-10] collect | 每日自動蒐集 — TSV 製造瓶頸 + HBF 技術架構深度補強
+
+- 搜尋查詢數：7 組（CoWoS/TSMC、HBM4、Hybrid Bonding、Panel-Level、學術/ECTC、UCIe 標準、競爭對手）
+- 成功抓取：2 篇（存入 raw/articles/ 2 篇）
+- 失敗/跳過：多篇（週末空窗期；近期新文有限；SemiEngineering Week #151 尚未發布）
+- 觸發 ingest：2 篇
+- 觸及 wiki 頁面（共 7 頁）：
+  - wiki/technologies/tsv.md（⭐ 新建）
+  - wiki/technologies/hbf.md（更新：技術架構深度、HBF vs HBM 對比表、AI 記憶體層次架構、Synopsys/Rambus/UMC 生態）
+  - wiki/technologies/hbm4.md（更新：新增 TSV 規格對比表節）
+  - wiki/entities/amkor.md（更新：新增 TSV-Last/Reveal 製程能力 + Rick Reed 洞察）
+  - wiki/sources/2026-04-22_semieng_tsv-complexity-manufacturing-bottleneck.md（⭐ 新建）
+  - wiki/sources/2026-05-14_semieng_flash-hbf-high-bandwidth-version.md（⭐ 新建）
+  - wiki/index.md（更新：360 頁 / 320 來源；新增 TSV 技術頁 + 2 來源摘要）
+- 主要新知識：(1) TSV 製程完整 8 步驟流程首次收錄；HBM TSV（2–5µm via-middle）vs 中介層 TSV（5–20µm）規格對比確立；NanoTSV（<100nm）2nm+ 背面供電應用揭示。(2) HBF 讀取路徑重設計（多陣列平行化）機制首次技術化；AI 推論記憶體完整三層架構（HBF→HBM→SRAM）首次整理入 wiki；Synopsys PHY、Rambus PHY、UMC base die 生態角色首次收錄。
