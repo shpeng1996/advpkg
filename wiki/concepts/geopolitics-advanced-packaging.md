@@ -3,8 +3,8 @@ title: "先進封裝地緣政治 / Geopolitics of Advanced Packaging"
 category: concept
 tags: [geopolitics, US-China, CHIPS-Act, supply-chain, chiplet, NAPMP, export-control, glass-substrate, standards-war, BOE, Corning, Absolics]
 created: 2026-04-26
-updated: 2026-08-05
-sources: [2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-23_trendforce_china-osat-sj-semiconductor-ipo, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-08-05_3dincites_iftle636, 2026-03-23_trendforce_musk-terafab-tsmc-packaging, 2026-04-22_trendforce_sk-hynix-indiana-us-plant, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-16_nokia_pennsylvania-atp-expansion, 2026-06-30_amkor-ir_arizona-7billion-groundbreaking, 2026-06-30_digitimes_us-packaging-capacity-10pct-2032, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-10_tomshardware_micron-250b-us-investment-globalwafers, 2026-07-10_semieng_chip-week-146, 2026-07-14_trendforce_huawei-baidu-npo-msa]
+updated: 2026-08-11
+sources: [2026-08-10_trendforce_skhynix-chongqing-sale-global-reset, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-23_trendforce_china-osat-sj-semiconductor-ipo, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-08-05_3dincites_iftle636, 2026-03-23_trendforce_musk-terafab-tsmc-packaging, 2026-04-22_trendforce_sk-hynix-indiana-us-plant, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-16_nokia_pennsylvania-atp-expansion, 2026-06-30_amkor-ir_arizona-7billion-groundbreaking, 2026-06-30_digitimes_us-packaging-capacity-10pct-2032, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-10_tomshardware_micron-250b-us-investment-globalwafers, 2026-07-10_semieng_chip-week-146, 2026-07-14_trendforce_huawei-baidu-npo-msa]
 related: [wiki/concepts/advanced-packaging-market.md, wiki/entities/amkor.md, wiki/entities/ase-group.md, wiki/technologies/ucie.md]
 ---
 
@@ -533,3 +533,17 @@ TrendForce 2026-07-29 報導確認中國在 2026 年下半年啟動新一波以�
 
 - FCC 正在研擬封鎖中國製光收發器（optical transceivers）進口美國資料中心
 - **先進封裝關聯**：光收發器封裝（CPO/NPO）的供應鏈正受地緣政治影響，推動美國本土 CPO 封裝能力（如 Nokia Allentown、Corning、GlobalFoundries SCALE）的加速建立
+
+---
+
+### ⭐ SK Hynix 重慶封裝廠出售評估——後端資產全球重組（2026-08-10）
+
+*Source: TrendForce 2026-08-10 → [[sources/2026-08-10_trendforce_skhynix-chongqing-sale-global-reset.md]]*
+
+SK Hynix 正評估出售重慶 OSAT 封裝廠股份，估值約 **KRW 4 兆元（約 $30 億美元）**，原因包含：
+1. **出口管制壓力**：HBM 等 AI 記憶體出口限制使重慶廠定位尷尬
+2. **資本重新配置**：轉向韓國本土（Y2 + M17；KRW 54.3 兆）與美國（印第安納 KRW 5.2 兆，2H28 啟用）的 HBM 先進封裝中心
+
+**此非中國業務全面退出**：SK Hynix 的 Wuxi DRAM 廠與 Dalian NAND 廠維持運營，中國仍佔其 DRAM 產能 ~30-35%、NAND ~35-40%。重慶廠的出售是**後端封裝（OSAT）的戰略性重組**，而非前端晶圓廠撤資。
+
+**地緣政治含義**：SK Hynix 的動作是「記憶體廠商後端資產去中國化」的首個大規模案例（vs. 此前主要為前端晶圓廠的地緣政治重組）。印第安納廠定位為 HBM 先進封裝中心，是 CHIPS Act 框架下「AI 記憶體封裝回流美國」戰略的具體落地。與 [[entities/amkor.md]] 亞利桑那 $70 億廠並列觀察，美國 HBM 封裝生態雛形正逐步成形。

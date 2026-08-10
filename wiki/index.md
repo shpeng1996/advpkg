@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-08-10
-**頁面總數 Total Pages**：360
-**原始來源數 Sources**：320
+**更新時間 Updated**：2026-08-11
+**頁面總數 Total Pages**：363
+**原始來源數 Sources**：323
 
 ---
 
@@ -66,6 +66,9 @@
 
 - [[sources/2026-05-14_semieng_flash-hbf-high-bandwidth-version]] — SemiEngineering / Bryon Moyer：**HBF 技術深度剖析——多陣列平行化讀取路徑重設計；HBF vs HBM 對比（容量 3Tb vs 192GB）；AI 推論記憶體層次（HBF 權重→HBM 激活值→SRAM）；Synopsys/Rambus PHY；UMC base die；Cynthia Hsu（SanDisk VP）**（2026-08-10 收錄；原文 2026-05-14）⭐新增
 - [[sources/2026-04-22_semieng_tsv-complexity-manufacturing-bottleneck]] — SemiEngineering / Laura Peters：**TSV 製造瓶頸深度報導——HBM TSV 2–5µm/30–60µm vs 中介層 TSV 5–20µm/80–120µm；8步驟製程流程（蝕刻→填銅→CMP→背研→reveal）；NanoTSV（<100nm）背面供電；Amkor Rick Reed 容差洞察；AI 需求造成 HBM+CoWoS 同步短缺**（2026-08-10 收錄；原文 2026-04-22）⭐新增
+- [[sources/2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan]] — TrendForce：**TSMC 洽購 AUO L7+L5C 廠房（>TWD 300 億）供 FOPLP+CoPoS；AUO TWD 86.4 億 TGV/RDL 試產線；龍潭 Phase 3（104 公頃）2×1.4nm + 1×面板封裝廠；C.C. Wei 確認 310mm CoPoS 2H28-29 HVM**（2026-08-11 收錄）⭐新增
+- [[sources/2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor]] — TrendForce：**Samsung HBM4 良率達 80%（2 月 <60%→8 月提前達標）；TC-NCF 改進；Q3 出貨 3×；HBM4 佔 2H26 >60%；市占目標 38%；SK Hynix HBM4 ~80% via MR-MUF；勞資第 5 輪破裂；HBM 供應受限至 2027（+50-60% YoY 仍低於需求）**（2026-08-11 收錄）⭐新增
+- [[sources/2026-08-10_trendforce_skhynix-chongqing-sale-global-reset]] — TrendForce：**SK Hynix 評估出售重慶封裝廠股份（KRW 4 兆 ~$30 億）；中國 DRAM 30-35%/NAND 35-40% 產能；非全退；印第安納 HBM 封裝中心 2H28；Y2+M17 KRW 54.3 兆平行推進；全球後端資產重組**（2026-08-11 收錄）⭐新增
 - [[sources/2026-08-07_trendforce_skhynix-y2-fab-samsung-p5-expansion]] — TrendForce：**SK Hynix 董事會批准 KRW 54.3T 投資——Y2 龍仁廠（KRW 35.2T，2027-07 建設，2029-06 潔淨室）；M17 清州 NAND（KRW 19.1T）；Samsung P5 提前 6 個月、P5 Fab 2 平行建設**（2026-08-09 收錄；原文 2026-08-07）⭐新增
 - [[sources/2026-08-06_trendforce_inp-shortage-ai-optical-bottleneck]] — TrendForce：**InP（磷化銦）短缺超越 DRAM/NAND——Lumentum CEO 警告；NVIDIA $40B 投資兩家供應商；中國控制 ~70% 全球精煉銦；CPO 驅動 InP 雷射源需求；China InP ecosystem 圖**（2026-08-09 收錄；原文 2026-08-06）⭐新增
 - [[sources/2026-08-06_tomshardware_samsung-zhbm-bvnand-fms2026]] — Tom's Hardware（Anton Shilov）：**Samsung FMS 2026 深度技術分析——zHBM（HBM 接合至邏輯晶片頂部，宣稱 8×HBM5）；zNAND-O（4~8 層 NAND 堆疊邏輯，邊緣 AI）；BV-NAND V10（400+層 28Gb/mm² 5600MT/s 量產）；全部依賴晶圓接合技術**（2026-08-09 收錄；原文 2026-08-06）⭐新增

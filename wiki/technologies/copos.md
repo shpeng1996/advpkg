@@ -3,8 +3,8 @@ title: "CoPoS — Chip-on-Panel-on-Substrate"
 category: technology
 tags: [panel-level-packaging, FOPLP, TSMC, CoPoS, AI, HPC, AP7, InFO]
 created: 2026-04-25
-updated: 2026-07-29
-sources: [2026-04-13_trendforce_copos-pilot, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2025-09-12_trendforce_foplp-competitive-landscape-2025, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-20_wccftech_tsmc-copos-glass-core-cost-cut, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-04-28_cw_tsmc-copos-move-really-means, 2026-06-14_digitaltrends_tsmc-copos-glass-temporary-carrier, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan]
+updated: 2026-08-11
+sources: [2026-04-13_trendforce_copos-pilot, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2025-09-12_trendforce_foplp-competitive-landscape-2025, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-20_wccftech_tsmc-copos-glass-core-cost-cut, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-04-28_cw_tsmc-copos-move-really-means, 2026-06-14_digitaltrends_tsmc-copos-glass-temporary-carrier, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan]
 related:
   - wiki/technologies/cowos.md
   - wiki/entities/tsmc.md
@@ -267,3 +267,28 @@ SCHMID（德國 PCB/IC 基板設備商）揭示：TSMC、Intel、Samsung 及其�
 - 此動態與本 wiki 2026-06-18（TrendForce 台灣 FOPLP 面板廠）更新及 2026-04-28（CommonWealth CoPoS 台灣供應鏈）已建立的框架一致，提供時程上的新確認。
 
 **wiki 含義**：台灣面板廠（Innolux、AUO）切入方形玻璃 FOPLP 的行動，進一步強化「台灣面板廠作為 CoPoS/FOPLP 生態補充節點」的定位——不與 TSMC CoPoS 直接競爭，而是在成熟製程端提供先行量產驗證，為整個玻璃基板 FOPLP 供應鏈增加冗餘度。與 [[technologies/glass-substrate.md]] 中 TPK-KY TGV 試產線及 BOE HVM 2028 目標並列觀察，台灣面板廠的切入角度（方形玻璃 FOPLP）與中國廠商（TGV 玻璃基板）、韓國廠商（Absolics 核心基板）各有技術側重。
+
+---
+
+## 2026-08-11 更新 / Update
+
+### ⭐ 台積電洽購友達 L7+L5C 廠房；龍潭 Phase 3 規劃面板級封裝廠（2026-08-10）
+
+*Source: TrendForce 2026-08-10*
+
+**TSMC 收購 AUO 廠房**：台積電（TSMC）正洽談以超過 **TWD 300 億元**收購友達光電（AUO）兩座廠房——L7（竹科附近，大面積面板製程設備）與 L5C（8.5 代廠），地點鄰近中科（Central Taiwan Science Park）。此舉標誌 TSMC 從使用 AUO 設備合作，轉向直接持有 FOPLP 與 CoPoS 所需面板廠房的戰略升級，垂直整合程度大幅提升。
+
+**AUO TWD 86.4 億 TGV/RDL 投資**：AUO 本身亦宣布投入 **TWD 86.4 億元**建設 TGV（Through-Glass Via）、RDL（Redistribution Layer）及玻璃核心（Glass Core）試產線，為未來 CoPoS 及玻璃基板先進封裝生態提供材料/製程支撐。AUO 的投資方向確認其角色從「廠房提供者」延伸至「CoPoS 製程技術共同開發者」。
+
+**TSMC 龍潭 Phase 3（104 公頃）規劃**：龍潭第三期擴建計畫（104 公頃）初步規劃包含：
+- 2 座 **1.4nm** 邏輯製程廠房
+- 1 座 **面板級封裝廠（panel-level packaging fab）**，專門服務 CoPoS 量產需求
+
+**C.C. Wei CoPoS 時程再確認**：台積電執行長魏哲家（C.C. Wei）重申 CoPoS 採用 **310mm × 310mm** 面板格式，時程為：
+- 2026 年：驗證（validation）
+- 2027 年：試產（trial production）
+- 2H28–2029 年：量產（HVM, High Volume Manufacturing）
+
+**wiki 含義**：TSMC 從租用/合作模式升級為直接收購 AUO 廠房，是 CoPoS 戰略由「研發路線圖」轉向「基礎設施確立」的關鍵信號——意味著 TSMC 對 2H28 量產時程具有足夠信心，願意提前鎖定廠房資產。龍潭 Phase 3 規劃一座獨立面板封裝廠，則是 CoPoS 製程基礎設施落地的最具體確認。本次更新同步強化 [[technologies/glass-substrate.md]]（AUO TGV 試產線投資）及 [[entities/tsmc.md]]（龍潭擴廠）的相關條目。
+
+*→ Source: [[sources/2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan.md]]*

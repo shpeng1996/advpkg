@@ -3,8 +3,8 @@ title: "玻璃基板 / Glass Core Substrate"
 category: technology
 tags: [glass-substrate, TGV, panel-level, FC-BGA, CoPoS, Absolics, DNP, Rapidus, warpage, SeWaRe, glass-interposer, BOE, ULCVD, non-embedding, Lens-Technology, TPK-KY, Innolux, AUO]
 created: 2026-05-08
-updated: 2026-08-07
-sources: [2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-05-05_trendforce-insights_glass-substrate-development, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-05-29_3dincites_rapidus-2nm-advanced-packaging-ai-foundry, 2026-06-01_trendforce_intel-3dgs-india-glass-substrate, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-06-20_biggo_boe-glass-substrate-pilot, 2026-06-28_economy-ac_glass-substrate-global-race, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan]
+updated: 2026-08-11
+sources: [2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-05-05_trendforce-insights_glass-substrate-development, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-05-29_3dincites_rapidus-2nm-advanced-packaging-ai-foundry, 2026-06-01_trendforce_intel-3dgs-india-glass-substrate, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-06-20_biggo_boe-glass-substrate-pilot, 2026-06-28_economy-ac_glass-substrate-global-race, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan]
 related:
   - wiki/technologies/copos.md
   - wiki/technologies/foplp.md
@@ -585,3 +585,18 @@ TSMC 在 JPCA Show 2026（日本）首次公開玻璃基板 vs 有機基板量�
 ### TrendForce 分析師觀點：顯示面板廠進軍的挑戰
 
 面板廠雖在玻璃材料認知上具有天然優勢，但半導體等級基板需滿足嚴格可靠性標準、重大資本支出，以及漫長的客戶資格認證週期。顯示基板與 AI 晶片封裝基板在技術規格上存在根本差異（微裂紋、熱失配、訊號劣化、設備不兼容），跨行進入面臨嚴重技術壁壘。
+
+---
+
+## ⭐ 2026-08-11 更新：AUO TWD 86.4 億投資 TGV/RDL 試產線
+
+*Source: TrendForce 2026-08-10 → [[sources/2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan.md]]*
+
+**AUO（友達光電）** 宣布投入 **TWD 86.4 億元**建設以下試產線：
+- **TGV（Through-Glass Via）**：玻璃穿孔製程
+- **RDL（Redistribution Layer）**：重布線層
+- **Glass Core 玻璃核心**：試產評估
+
+此投資代表台灣面板廠在 Glass Substrate 領域從「大面積玻璃加工」跨向「半導體等級 TGV 製程」的技術升級。值得注意的是，AUO 同時是 TSMC CoPoS 製程合作方（TSMC 正洽購 AUO L7+L5C 廠房），AUO 的 TGV/RDL 投資可能服務於 CoPoS 生態系的材料/製程研發，而非獨立商業基板路線。
+
+**wiki 含義**：AUO 是本 wiki 追蹤的台灣面板廠（Innolux、AUO、TPK-KY）中首家明確公布 TGV+Glass Core 試產線投資金額者，為台灣 Glass Substrate 生態補充了具體的資本承諾數據點。與 [[entities/tsmc.md]] 龍潭擴廠及 [[technologies/copos.md]] 廠房收購更新互參。

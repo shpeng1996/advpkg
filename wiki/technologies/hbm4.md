@@ -3,8 +3,8 @@ title: "HBM4 — High Bandwidth Memory 4"
 category: technology
 tags: [memory, HBM, JEDEC, standards, AI, HPC, HBM4E, cleanroom, capacity, ISSCC2026, ZAM, HB3DM, HBM5, zHBM, HPB, FMS-2026]
 created: 2026-04-24
-updated: 2026-08-06
-sources: [2026-08-05_trendforce_samsung-v10-zhbm-hbm5-fms2026, 2026-07-30_trendforce_samsung-ds-q2-2026-hbm4-triple-q3, 2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-03-18_trendforce_intel-emib-malaysia, 2026-01-23_trendforce_hbm4e-samsung-skhynix-mid2026, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-01-13_semiengineering_hbm4-microbumps, 2025-12-18_trendforce_micron-capex-hbm4, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h, 2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-03-03_trendforce_sk-hynix-hbm4-tight-gaps, 2025-08-12_semianalysis_hbm-roadmap, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit, 2026-06-09_astutegroup_hbm-market-share-2026-battle, 2026-06-10_trendforce_samsung-gwangju-packaging-base, 2026-06-15_trendforce_skhynix-hbm4e-sample-timeline-pulled-forward, 2026-06-20_techtimes_skhynix-hbm4e-12layer-samples, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-27_tweaktown_hbm4-16hi-nvidia-supply-fight, 2026-06-26_semieng_chip-week-144, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-14_trendforce_samsung-hbm-hiring-hbm4-hbm4e-hbm5, 2026-07-14_trendforce_skhynix-yongin-y1-feb2027, 2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b]
+updated: 2026-08-11
+sources: [2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor, 2026-08-10_trendforce_skhynix-chongqing-sale-global-reset, 2026-08-05_trendforce_samsung-v10-zhbm-hbm5-fms2026, 2026-07-30_trendforce_samsung-ds-q2-2026-hbm4-triple-q3, 2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-03-18_trendforce_intel-emib-malaysia, 2026-01-23_trendforce_hbm4e-samsung-skhynix-mid2026, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-01-13_semiengineering_hbm4-microbumps, 2025-12-18_trendforce_micron-capex-hbm4, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h, 2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-03-03_trendforce_sk-hynix-hbm4-tight-gaps, 2025-08-12_semianalysis_hbm-roadmap, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit, 2026-06-09_astutegroup_hbm-market-share-2026-battle, 2026-06-10_trendforce_samsung-gwangju-packaging-base, 2026-06-15_trendforce_skhynix-hbm4e-sample-timeline-pulled-forward, 2026-06-20_techtimes_skhynix-hbm4e-12layer-samples, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-27_tweaktown_hbm4-16hi-nvidia-supply-fight, 2026-06-26_semieng_chip-week-144, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-14_trendforce_samsung-hbm-hiring-hbm4-hbm4e-hbm5, 2026-07-14_trendforce_skhynix-yongin-y1-feb2027, 2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b]
 related:
   - wiki/entities/sk-hynix.md
   - wiki/entities/samsung.md
@@ -671,3 +671,35 @@ HBM 在 TSMC CoWoS 製程中與 GPU 基板共同封裝後，物理上融合為�
 - 若以 Bernstein $53/GB 計算，單套 NVL72 的 HBM4 記憶體 BOM 約 **$109.7M**（20.7TB × $53/GB），佔整體系統成本的顯著比例。
 
 **wiki 含義**：$53/GB 的 HBM4 預測與本 wiki 其他節次的 NVIDIA Vera Rubin BOM 分析（SOCAMM 29% BOM 壓力、記憶體成本過高導致訂單調整）互相呼應——高 HBM4 ASP 是 NVIDIA 調整 Vera Rubin NVL72 配置（SOCAMM 縮減 192GB→96GB）的核心成本背景因素之一。見 [[entities/nvidia.md]] 對應條目。
+
+---
+
+## ⭐ 2026-08-11 更新：Samsung HBM4 良率突破 80%；SK Hynix 同達 ~80%；2027 供應仍受限
+
+*Source: TrendForce 2026-08-10 → [[sources/2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor.md]]*
+
+### 三廠良率現況（2026-08）
+
+| 廠商 | HBM4 良率 | 進展 | 封裝技術 |
+|------|-----------|------|---------|
+| **Samsung** | **~80%** | 2 月 <60%→8 月達標，年底目標提前達成 | TC-NCF；1c DRAM base die 良率 >80% |
+| **SK Hynix** | **~80%** | 以 MR-MUF 製程維持競爭力 | MR-MUF |
+| **Micron** | 尚未公布 | 開發中，量產時程落後兩廠 | — |
+
+### Samsung HBM4 市場進展
+
+- **Q3 HBM4 出貨量**：較 Q2 成長超過 **3 倍**，進一步搶佔 Vera Rubin 供應份額
+- **HBM4 佔 HBM 比例**：2H26 HBM4 將佔 Samsung 總 HBM 出貨量 **>60%**
+- **市占率目標**：Samsung 設定 HBM 市占率 **38%** 為年度目標（vs SK Hynix 當前約 50%+）
+- **TC-NCF vs MR-MUF**：兩種封裝技術在良率上達到相近水準（均約 80%），表明技術差距縮小
+
+### SK Hynix 勞資談判風險
+
+SK Hynix 勞資談判第 5 輪已破裂，工會拒絕接受管理層提案，HBM 封裝生產線（MR-MUF 關鍵製程）若爆發罷工將直接衝擊出貨。此為 SK Hynix HBM4 供應的主要短期風險因素。
+
+### HBM 供需展望（2026-2027）
+
+- **2026 年**：HBM 供應吃緊（AI 伺服器需求爆發 + 兩廠均在爬坡）
+- **2027 年**：全球 HBM 供應量預計 YoY 成長 **+50–60%**，但仍低於需求增長速度，**供應受限延續至 2027 年全年**
+
+**wiki 含義**：Samsung HBM4 良率達 80% 是本 wiki 收錄的首個量化確認，比原本業界預期（年底目標）提早達成，這對 Samsung HBM 市占率競爭具有重大意義。TC-NCF 與 MR-MUF 良率差距消弭，使競爭回歸到產能規模與客戶資格認證。2027 年供應仍受限的預測，進一步支撐 HBM ASP 高位維持的論點。

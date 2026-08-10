@@ -3,8 +3,8 @@ title: "FOPLP — 扇出面板級封裝 / Fan-Out Panel-Level Packaging"
 category: technology
 tags: [fan-out, panel-level, TSMC, Samsung, ASE, Powertech, Innolux, CoPoS, InFO, cost-reduction]
 created: 2026-05-03
-updated: 2026-08-03
-sources: [2026-07-31_trendforce_ase-capex-record-10-5b-leap-foplp, 2025-09-12_trendforce_foplp-competitive-2025, 2026-04-13_trendforce_copos-pilot, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-21_3dincites_acm-wlp-plp-process-trends, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-15_digitimes_manz-310mm-foplp-ecd-equipment, 2026-06-13_digitimes_linkotech-foplp-rollout-traction, 2026-06-20_prnewswire_manz-asia-310mm-ecd, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_digitimes_tsmc-foplp-timeline-skepticism, 2026-07-06_trendforce_cfmee-plp2000-china-first-plp, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan]
+updated: 2026-08-11
+sources: [2026-07-31_trendforce_ase-capex-record-10-5b-leap-foplp, 2025-09-12_trendforce_foplp-competitive-2025, 2026-04-13_trendforce_copos-pilot, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-21_3dincites_acm-wlp-plp-process-trends, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-15_digitimes_manz-310mm-foplp-ecd-equipment, 2026-06-13_digitimes_linkotech-foplp-rollout-traction, 2026-06-20_prnewswire_manz-asia-310mm-ecd, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_digitimes_tsmc-foplp-timeline-skepticism, 2026-07-06_trendforce_cfmee-plp2000-china-first-plp, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan]
 related:
   - wiki/technologies/copos.md
   - wiki/technologies/info-wmcm.md
@@ -216,3 +216,15 @@ Silicon Box 是獨立 FOPLP 新創公司，其激進產能擴張計畫（10×，
 | Powertech | 2H26 試產；2027 量產 | 台灣 |
 | STMicro | 2026 Q3 試驗線（法國） | 歐洲 |
 | CFMEE | PLP 2000 資格認證通過 | 中國 |
+
+---
+
+## ⭐ 2026-08-11 更新：台積電洽購 AUO 兩座廠房，FOPLP 基礎設施垂直整合
+
+*Source: TrendForce 2026-08-10 → [[sources/2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan.md]]*
+
+台積電正洽談以超過 **TWD 300 億元**收購 AUO 的 L7 與 L5C 廠房，地點鄰近中科。L7 廠配備大面積面板製程設備，可直接供應 FOPLP 量產所需基礎設施；L5C 廠（8.5 代）進一步補強面板處理能力。此舉代表 TSMC FOPLP 戰略從「合作借廠」升級為「直接持有廠房資產」。
+
+**龍潭 Phase 3 面板封裝廠**：TSMC 龍潭 Phase 3 擴建計畫（104 公頃）規劃包含一座獨立面板級封裝廠，與兩座 1.4nm 邏輯廠共同布局，確認 FOPLP/CoPoS 量產基礎設施的落地。
+
+**wiki 含義**：TSMC 直接收購 AUO 廠房是 FOPLP/CoPoS 產能規劃由「路線圖承諾」轉向「資產確立」的最強信號，進一步強化本 wiki 對 2H28 量產目標的可信度評估。與 [[technologies/copos.md]] 2026-08-11 更新互參。

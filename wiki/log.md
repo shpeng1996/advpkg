@@ -2463,3 +2463,32 @@ an（2028–2029 量產世代）為 CoPoS 最可能的首批量產客戶——�
   - wiki/sources/2026-05-14_semieng_flash-hbf-high-bandwidth-version.md（⭐ 新建）
   - wiki/index.md（更新：360 頁 / 320 來源；新增 TSV 技術頁 + 2 來源摘要）
 - 主要新知識：(1) TSV 製程完整 8 步驟流程首次收錄；HBM TSV（2–5µm via-middle）vs 中介層 TSV（5–20µm）規格對比確立；NanoTSV（<100nm）2nm+ 背面供電應用揭示。(2) HBF 讀取路徑重設計（多陣列平行化）機制首次技術化；AI 推論記憶體完整三層架構（HBF→HBM→SRAM）首次整理入 wiki；Synopsys PHY、Rambus PHY、UMC base die 生態角色首次收錄。
+
+## [2026-08-11] collect | TSMC-AUO 廠房收購 / Samsung+SK Hynix HBM4 良率 / SK Hynix 重慶出售評估
+- 搜尋查詢數：7 組（CoPoS AUO TSMC 2026、HBM4 yield Samsung SK Hynix、SK Hynix Chongqing sale、FOPLP panel packaging August 2026、SemiEngineering Week 151、advanced packaging news August 2026、glass substrate TGV 2026 new）
+- 成功抓取：3 篇（存入 raw/articles/ 3 篇）
+- 失敗/跳過：4 篇（SemiEngineering Week #151 尚未發布、TrendForce tag 頁面非文章、SemiEngineering tech paper roundup 為 2025 年舊文、重複 URL 1 篇）
+- 觸發 ingest：3 篇
+- 觸及 wiki 頁面：（共 9 頁）technologies/copos.md, technologies/foplp.md, technologies/glass-substrate.md, technologies/hbm4.md, entities/tsmc.md, entities/samsung.md, entities/sk-hynix.md, concepts/geopolitics-advanced-packaging.md, wiki/index.md
+- 主要新知識：(1) TSMC 洽購 AUO L7+L5C 廠房（>TWD 300 億）+ 龍潭 Phase 3 規劃面板封裝廠，CoPoS 基礎設施從路線圖轉向資產確立；(2) Samsung HBM4 良率 2 月 <60% 提前升至 80%，SK Hynix 同達 ~80%，TC-NCF vs MR-MUF 差距消弭；(3) SK Hynix 評估出售重慶封裝廠（KRW 4 兆），後端封裝去中國化啟動，印第安納 HBM AP 中心 2H28 落地
+
+## [2026-08-11] ingest | TrendForce：TSMC 洽購 AUO L7+L5C 廠房；龍潭面板封裝廠規劃
+- 來源類型：article
+- 原始路徑：raw/articles/2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan.md
+- 觸及頁面：technologies/copos.md, technologies/foplp.md, technologies/glass-substrate.md, entities/tsmc.md（共 4 頁）
+- 新增知識：TSMC 首次公開洽購面板廠廠房資產（AUO L7+L5C）；龍潭 Phase 3 規劃獨立面板封裝廠；AUO TWD 86.4 億 TGV/RDL 投資確認台灣面板廠轉型先進封裝角色
+- 矛盾/修正：none
+
+## [2026-08-11] ingest | TrendForce：Samsung HBM4 良率 80%；SK Hynix 勞資談判破裂；HBM 2027 供不應求
+- 來源類型：article
+- 原始路徑：raw/articles/2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor.md
+- 觸及頁面：technologies/hbm4.md, entities/samsung.md, entities/sk-hynix.md（共 3 頁）
+- 新增知識：Samsung HBM4 良率首次量化確認（80%，提前達標）；TC-NCF 與 MR-MUF 良率差距縮小；SK Hynix 勞資風險納入追蹤；HBM 2027 供應缺口 (+50-60% YoY 仍不足)
+- 矛盾/修正：修正 2026-04-15 條目中「Samsung 良率 <60%」為已提升至 80%
+
+## [2026-08-11] ingest | TrendForce：SK Hynix 重慶封裝廠評估出售；後端資產全球重組
+- 來源類型：article
+- 原始路徑：raw/articles/2026-08-10_trendforce_skhynix-chongqing-sale-global-reset.md
+- 觸及頁面：entities/sk-hynix.md, concepts/geopolitics-advanced-packaging.md（共 2 頁）
+- 新增知識：SK Hynix 中國後端封裝資產（重慶 OSAT）出售評估——首個記憶體廠商後端去中國化大規模案例；中國 DRAM/NAND 產能佔比首次量化；印第安納 KRW 5.2 兆 HBM AP 中心 2H28 確認
+- 矛盾/修正：none
