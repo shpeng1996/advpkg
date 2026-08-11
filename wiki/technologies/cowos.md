@@ -3,7 +3,7 @@ title: "CoWoS — Chip-on-Wafer-on-Substrate"
 category: technology
 tags: [2.5D, interposer, TSMC, AI, HPC, HBM, COUPE, CPO, packaging-constraints, NVIDIA]
 created: 2026-04-24
-updated: 2026-08-07
+updated: 2026-08-12
 sources: [2026-08-05_trendforce_tsmc-cowos-cow-outsourcing-osat, 2026-05-24_techtimes_nvidia-computex2026-cowos, 2026-04-24_initial-survey, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-15_trendforce_tsmc-vanguard-stake-sale, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-09_financialcontent_tsmc-130k-cowos-wafers, 2026-06-09_digitimes_tsmc-cowos-soic-capacity-symposium, 2026-06-15_trendforce_tsmc-cowos-gap-narrowing-130k-200k-wafers, 2026-06-21_tomshardware_tsmc-fab-expansion-roadmap, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_tmtpost_tsmc-cowos-capacity-targets-2026-2027, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand]
 related:
   - wiki/entities/tsmc.md
@@ -227,3 +227,29 @@ TSMC 決定擴大將 CoW（Chip-on-Wafer，晶片貼附中介層）步驟外包�
 | CoW（晶片貼中介層） | TSMC 專屬 | TSMC ＋ ASE/SPIL 外包 |
 | WoS（中介層貼基板） | OSAT 承接 | OSAT 承接（維持） |
 | 測試 / 系統整合 | OSAT 承接 | OSAT 承接（維持） |
+
+## 2026-08-12 更新 / Updates
+
+### ⭐ 5.5× CoWoS 良率突破 99%；ABF 基板成第二瓶頸；開發週期縮短至 1 年（OCP APAC Summit 2026-08-11）
+
+*Source: TrendForce 2026-08-11（引述 TechNews、經濟日報；TSMC VP Jun He 演講）*
+
+**量產良率里程碑**：
+- TSMC 5.5-reticle CoWoS 在多家 AI 客戶產品線中一致良率 **>98%**，部分達 **99%**（史上最高公開量化數據）
+- TSMC 目前運營 **10 座先進封裝設施**，產能近 3 年每年近翻倍
+- "We haven't fully met demand yet, but we're getting very close" — Jun He
+
+**AI 供應鏈雙重瓶頸確認**：
+- **記憶體短缺**（持續）
+- **ABF（Ajinomoto Build-up Film）基板短缺**（⭐新增確認）——供應緊張預計持續「數年」
+- 多元採購已啟動，但供應商間機械/熱性能差異加劇製程控制難度
+
+**開發週期加速**：
+- 量產前 **1 年**：發布驗證範圍與系統邊界條件（公開供業界回饋）
+- 量產前 **6 季（18 個月）**：系統整合商、設備商、材料商同步進入平行開發
+- CoWoS 開發週期：**~2 年/代 → 1 年**（整體縮短最多 **3 季**）
+
+**路線圖再確認**：
+- 5.5× → 9.5×（2027）→ **14×（2028）**（~10 大 compute dies + 20 HBM stacks）→ **>14×（2029）**（24 HBM stacks）
+
+*Source: TrendForce 2026-08-11；wiki/sources/2026-08-11_trendforce_tsmc-cowos-5-5-reticle-99pct-yield-abf.md*

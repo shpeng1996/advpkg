@@ -2492,3 +2492,26 @@ an（2028–2029 量產世代）為 CoPoS 最可能的首批量產客戶——�
 - 觸及頁面：entities/sk-hynix.md, concepts/geopolitics-advanced-packaging.md（共 2 頁）
 - 新增知識：SK Hynix 中國後端封裝資產（重慶 OSAT）出售評估——首個記憶體廠商後端去中國化大規模案例；中國 DRAM/NAND 產能佔比首次量化；印第安納 KRW 5.2 兆 HBM AP 中心 2H28 確認
 - 矛盾/修正：none
+
+## [2026-08-12] collect | 每日自動蒐集 — 先進封裝最新動態
+- 搜尋查詢數：7 組（SemiEngineering Week #151、TSMC CoWoS 5.5-reticle yield、HBM4/HBM5 news August 2026、Intel EMIB Foveros August 2026、hybrid bonding research August 2026、FOPLP glass substrate August 2026、advanced packaging market forecast 2026）
+- 成功抓取：2 篇（articles/ 1, reports/ 1）
+- 失敗/跳過：多篇（SemiEngineering Week #151 尚未發布；FOPLP SemiEng 文章為 2024-11-21 舊文；ECTC 2026 SemiEng 文章已收錄；Intel EMIB 近期無新文）
+- 學術代理：UNAVAILABLE ✗
+- 新增 wiki 頁面：2 頁（wiki/sources/2026-08-11_trendforce_tsmc-cowos-5-5-reticle-99pct-yield-abf.md、wiki/sources/2026-08-11_bccresearch_advanced-chip-packaging-market-87b-2030.md）
+- 更新 wiki 頁面：5 頁（technologies/cowos.md、technologies/soic.md、entities/tsmc.md、concepts/advanced-packaging-market.md、wiki/index.md）
+- 主要新知識：(1) TSMC 5.5-reticle CoWoS 量產良率突破 99%（VP Jun He @ OCP APAC Summit 2026-08-11），CoWoS 開發週期從 2 年/代縮至 1 年，ABF 基板正式列為 AI 供應鏈第二瓶頸（除記憶體外）；SoIC 4.5µm 2029 路線圖確認，A14-to-A14 SoIC 1.8× I/O 密度首次量化。(2) BCC Research 更新市場規模預測：先進晶片封裝 $38.6B（2024）→ $87.6B（2030），CAGR 14.8%，汽車細分 CAGR 16.1%；較先前 wiki 記載的 9–10% 預測顯著上修，市場結構性轉型（商品→IP 密集）首次由研究機構正式定性。
+
+## [2026-08-12] ingest | TrendForce：TSMC 5.5× CoWoS 良率 99%；ABF 基板成 AI 第二瓶頸（OCP APAC Summit）
+- 來源類型：article
+- 原始路徑：raw/articles/2026-08-11_trendforce_tsmc-cowos-5-5-reticle-99pct-yield-abf-bottleneck.md
+- 觸及頁面：technologies/cowos.md, technologies/soic.md, entities/tsmc.md, concepts/advanced-packaging-market.md（共 4 頁）
+- 新增知識：CoWoS 5.5× 良率 99% 首次量化公開確認；SoIC 6µm 為 2025 量產（非 2026 Q1）修正；4.5µm 2029 新規格；ABF 基板瓶頸首次被 TSMC 高層公開點名；CoWoS 開發週期縮短機制首次記錄
+- 矛盾/修正：SoIC-X 6µm 商業間距時間點由「2026 Q1」更正為「2025 量產確認」
+
+## [2026-08-12] ingest | BCC Research：先進晶片封裝市場 $87.6B（2030），CAGR 14.8%
+- 來源類型：report
+- 原始路徑：raw/reports/2026-08-11_bccresearch_advanced-chip-packaging-market-87-6b-2030.md
+- 觸及頁面：concepts/advanced-packaging-market.md（共 1 頁）
+- 新增知識：BCC Research 市場規模 CAGR 14.8%（超越先前 wiki 的 9–10% 預測）；汽車 AP 細分 CAGR 16.1% 首次收錄；APAC $19.9B 新基準數字；ABF 瓶頸補充
+- 矛盾/修正：新 CAGR 14.8% 高於先前記載之 9–10%，市場概念頁已加入多方預測對比表說明差異

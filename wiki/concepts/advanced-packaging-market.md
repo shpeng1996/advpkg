@@ -3,7 +3,7 @@ title: "先進封裝市場 / Advanced Packaging Market"
 category: concept
 tags: [market, forecast, CAGR, supply-chain, HBM, chiplet, geopolitics, equipment, SIA, Omdia, Yole, WFE]
 created: 2026-04-24
-updated: 2026-08-07
+updated: 2026-08-12
 sources: [2026-07-31_semieng_chip-week-149, 2026-04-24_initial-survey, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2026-01-23_trendforce_chip-tools-tel-asml, 2026-03-05_trendforce_intel-emib-billions, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2025-12-18_trendforce_micron-capex-hbm4, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2025-05-13_trendforce_top10-osat-2024, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-04-16_ontoinnovation_dragonfly-g5-qualified, 2026-06-23_communicationstoday_foplp-glass-substrate-market-8b-2030, 2026-06-29_trendforce_china-osat-tongfu-jcet-investment, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-26_semieng_chip-week-144, 2026-07-01_trendforce_ase-price-hike-20pct, 2026-07-04_semieng_chip-week-145, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-07-03_trendforce_anthropic-samsung-advanced-packaging, 2026-05-08_trendforce_ajinomoto-abf-1b-land-buy-2032-margins, 2026-07-24_semieng_chip-week-148]
 related:
   - wiki/entities/tsmc.md
@@ -592,3 +592,41 @@ Samsung Electronics 於平澤園區建立約 **50 台 D2W 混合接合機**量�
 **市場意義**：
 - Silicon Box 是獨立 FOPLP 新創中罕見宣告如此大幅產能擴張的公司，10× 擴大意味著其 PLP 產能在 2026 年內從數十萬套/年規模跳升至數百萬套/年
 - 與 ASE（Q1 2027）、Powertech（試產 2H26）等 OSAT 龍頭的 FOPLP 時程形成呼應，說明面板級封裝整體產能在 2026-2027 出現快速爬坡
+
+---
+
+## ⭐ 2026-08-12 更新：BCC Research 市場預測 $87.6B（2030）；ABF 基板成 AI 雙重瓶頸之一
+
+### BCC Research 最新市場預測（2026-08-11）
+
+*Source: BCC Research LLC / GlobeNewswire → [[sources/2026-08-11_bccresearch_advanced-chip-packaging-market-87b-2030]]*
+
+| 預測來源 | 基年 | 終點 | CAGR | 備註 |
+|----------|------|------|------|------|
+| TrendForce/McKinsey（初期） | $43–52B（2025） | — | 9–10% | 先進封裝子集 |
+| Yole Group（2026-07-24） | $55B（2025） | $120B+（2031） | ~14% | 先進封裝子集 |
+| **BCC Research（2026-08-11）** | **$38.6B（2024）** | **$87.6B（2030）** | **14.8%** | 先進晶片封裝市場 |
+| WSTS（2026-08-07） | — | $702B H1 / $1.65T FY（2026 全體半導體） | +102% YoY H1 | 不同口徑 |
+
+**BCC Research 新增細分數據**：
+- **亞太區** 2024 年市值：**$19.9B**（全球最大區域）
+- **汽車先進封裝**：$3.9B（2025）→ $8.2B（2030），CAGR **16.1%**（成長最快細分）
+- 主要驅動：AI/HPC 工作負載（首要）、政府 CHIPS Act 政策（次要）、5G/汽車 SDV（長尾）
+
+**封裝行業結構性轉型論點**（BCC Research 定性）：
+- 封裝已從「商品化製程」轉型為「高附加值、IP 密集型工業」
+- 次 5µm 互連精度已成主流 chiplet 整合需求
+
+### TSMC OCP APAC Summit：ABF 基板正式列為 AI 供應鏈第二瓶頸（2026-08-11）
+
+*Source: TrendForce 2026-08-11 → [[sources/2026-08-11_trendforce_tsmc-cowos-5-5-reticle-99pct-yield-abf]]*
+
+**TSMC VP Jun He 正式確認**：AI 供應鏈面臨**雙重瓶頸**——
+1. **記憶體短缺**（HBM4 供應持續緊張）— 已知
+2. **ABF（Ajinomoto Build-up Film）基板短缺**（⭐新增） — 預計緊張「數年」
+
+**供應鏈意涵**：
+- ABF 基板為 CoWoS、EMIB 等封裝的有機基板層關鍵材料
+- Ajinomoto（味之素）市占 >95%（見 [[sources/2026-05-08_trendforce_ajinomoto-abf-2032-plant]]）
+- 第三廠岐阜 2028 建設、2032 量產，時程無法填補近期缺口
+- 多元採購雖已啟動，但供應商間機械/熱性能差異增加製程控制難度

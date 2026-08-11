@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-08-11
-**頁面總數 Total Pages**：363
-**原始來源數 Sources**：323
+**更新時間 Updated**：2026-08-12
+**頁面總數 Total Pages**：367
+**原始來源數 Sources**：325
 
 ---
 
@@ -37,9 +37,9 @@
 
 ## 技術 Technologies
 
-- [[technologies/cowos]] — CoWoS（Chip-on-Wafer-on-Substrate）；TSMC 2.5D 旗艦封裝；2025-12 全訂滿；OSAT 補位生態（ASE CoWoP、Amkor FOCoS）
+- [[technologies/cowos]] — CoWoS（Chip-on-Wafer-on-Substrate）；TSMC 2.5D 旗艦封裝；**5.5× 良率達 99%（OCP APAC Summit 2026-08-11）；10 封裝設施；ABF 基板成 AI 第二瓶頸；開發週期縮至 1 年**；OSAT 補位生態（ASE CoWoP、Amkor FOCoS）⭐更新
 - [[technologies/copos]] — CoPoS（Chip-on-Panel-on-Substrate）；TSMC 面板級封裝；310×310mm 面板；玻璃核心基板列為下一里程碑（2030+）；TGV 障礙具體化（2026-06-18）⭐更新
-- [[technologies/soic]] — SoIC（System on Integrated Chips）；TSMC 3D 堆疊；SoIC-X 混合接合（6µm，2026 Q1）
+- [[technologies/soic]] — SoIC（System on Integrated Chips）；TSMC 3D 堆疊；SoIC-X 混合接合（**6µm 2025 量產→4.5µm 2029；A14-to-A14 SoIC 2029年 1.8×I/O 密度**）⭐更新
 - [[technologies/hybrid-bonding]] — 混合接合（Cu-Cu）；W2W/D2W/D2D 三情境框架（ECTC 2025）；目標 1M/mm²；**翹曲管理確認為 HVM 製程橫跨全流程的新約束**（2026-07-30）⭐更新
 - [[technologies/hbm4]] — HBM4；JEDEC JESD270-4；1.65+ TB/s；**SK hynix Q2 2026 正式財報確認 HBM4 批量出貨**（2026-07-30）⭐更新
 - [[technologies/ucie]] — UCIe；Chiplet 互連標準；UCIe 3.0：64GT/s quarter-rate、BER 差異化、Arm CHI 映射、L2 深度睡眠（2026-06-18）⭐更新
@@ -64,6 +64,8 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-08-11_trendforce_tsmc-cowos-5-5-reticle-99pct-yield-abf]] — TrendForce：**TSMC 5.5× CoWoS 量產良率 99%（VP Jun He @ OCP APAC Summit）；SoIC 4.5µm 2029；A14-to-A14 SoIC 1.8× I/O 密度；ABF 基板成 AI 第二瓶頸；開發週期 2 年→1 年**（2026-08-12 收錄）⭐新增
+- [[sources/2026-08-11_bccresearch_advanced-chip-packaging-market-87b-2030]] — BCC Research：**先進晶片封裝市場 $38.6B（2024）→ $87.6B（2030），CAGR 14.8%；汽車 AP CAGR 16.1%；APAC $19.9B；封裝從商品製程轉型為 IP 密集工業**（2026-08-12 收錄）⭐新增
 - [[sources/2026-05-14_semieng_flash-hbf-high-bandwidth-version]] — SemiEngineering / Bryon Moyer：**HBF 技術深度剖析——多陣列平行化讀取路徑重設計；HBF vs HBM 對比（容量 3Tb vs 192GB）；AI 推論記憶體層次（HBF 權重→HBM 激活值→SRAM）；Synopsys/Rambus PHY；UMC base die；Cynthia Hsu（SanDisk VP）**（2026-08-10 收錄；原文 2026-05-14）⭐新增
 - [[sources/2026-04-22_semieng_tsv-complexity-manufacturing-bottleneck]] — SemiEngineering / Laura Peters：**TSV 製造瓶頸深度報導——HBM TSV 2–5µm/30–60µm vs 中介層 TSV 5–20µm/80–120µm；8步驟製程流程（蝕刻→填銅→CMP→背研→reveal）；NanoTSV（<100nm）背面供電；Amkor Rick Reed 容差洞察；AI 需求造成 HBM+CoWoS 同步短缺**（2026-08-10 收錄；原文 2026-04-22）⭐新增
 - [[sources/2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan]] — TrendForce：**TSMC 洽購 AUO L7+L5C 廠房（>TWD 300 億）供 FOPLP+CoPoS；AUO TWD 86.4 億 TGV/RDL 試產線；龍潭 Phase 3（104 公頃）2×1.4nm + 1×面板封裝廠；C.C. Wei 確認 310mm CoPoS 2H28-29 HVM**（2026-08-11 收錄）⭐新增

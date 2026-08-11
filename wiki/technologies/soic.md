@@ -3,7 +3,7 @@ title: "SoIC — System on Integrated Chips"
 category: technology
 tags: [3D, SoIC, hybrid-bonding, TSMC, AI, NVIDIA, Feynman]
 created: 2026-04-24
-updated: 2026-07-27
+updated: 2026-08-12
 sources: [2026-04-24_initial-survey, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-03-18_trendforce_nvidia-rubin-feynman-soic, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-23_trendforce_tsmc-roadmap-a12-a13-no-high-na-euv, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-06-21_arxiv_tiny-chiplets-esd-protection-signal-integrity, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand]
 related:
   - wiki/entities/tsmc.md
@@ -118,3 +118,24 @@ SoIC 常與 CoWoS 組合：邏輯晶片先透過 SoIC 3D 堆疊，再整合於 C
 - **⭐ 新增（2026-06-21）**：相關學術研究——Arizona State University / University of Minnesota 團隊（arXiv 2511.10760）指出，傳統 I/O 電路（ESD 保護 + 訊號傳輸）的面積開銷是阻礙 chiplet 微縮至 100mm² 以下的主因；其透過寄生抽取與 SPICE 模擬，提出在 2.5D/3D 封裝情境下可簡化 ESD/訊號電路設計。雖非 SoIC 專屬研究，但與上述 In-SoIC ESD 挑戰方向高度相關，可作為後續細孔距接合 ESD 設計的參考文獻。*(Source: arXiv 2511.10760，2025-11-13；經 Semiconductor Engineering 摘要報導)*
 - 異質材料（邏輯 die + HBM base die）的 CTE 不匹配導致的翹曲問題如何在大規模量產中控制？
 - SoIC-W（Wafer-on-Wafer）的良率瓶頸能否在 2026 年前達到量產水準？
+
+---
+
+## 2026-08-12 更新 / Updates
+
+### ⭐ SoIC 4.5µm 間距 2029 年路線圖確認；A14-to-A14 SoIC 量化 I/O 密度增益（OCP APAC Summit 2026-08-11）
+
+*Source: TrendForce 2026-08-11（引述 TechNews；TSMC VP Jun He）*
+
+**關鍵規格更新**：
+- SoIC 間距：**6µm（2025 量產確認）** → **4.5µm（2029 目標）**
+- SoIC 互連密度：**50×**（vs 傳統 micro-bump）
+- SoIC 能效增益：**5×**（vs 傳統 micro-bump）
+- **A14-to-A14 SoIC**（台積電最先進製程）：預計 2029 年量產，提供 **1.8× 更高 die-to-die I/O 密度**（vs N2-on-N2 SoIC）
+
+**意涵**：
+- 先前 wiki 記載「SoIC-X 6µm 間距為 2026 Q1」可修正為「6µm 商業量產始於 2025」
+- 4.5µm 目標確立了 SoIC 2025→2029 的技術演進路線圖；低於 4.5µm 的可行性仍為開放問題
+- A14-to-A14 SoIC 的 1.8× I/O 密度增益首次量化（Prior: N2-to-N2 SoIC 為基準）
+
+*Source: wiki/sources/2026-08-11_trendforce_tsmc-cowos-5-5-reticle-99pct-yield-abf.md*
