@@ -3,7 +3,7 @@ title: "ASE Group / 日月光投控"
 category: entity
 tags: [OSAT, advanced-packaging, CoWoP, FOPLP, chiplet, CPO, LEAP]
 created: 2026-04-25
-updated: 2026-08-07
+updated: 2026-08-13
 sources: [2026-08-05_trendforce_tsmc-cowos-cow-outsourcing-osat, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2026-05-08_aseglobal_ase-wus-kaohsiung-focoes-hub, 2026-05-26_semiconductor-digest_ase-310mm-plp-ectc2026, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-11_trendforce_ase-spil-zhunan-plant, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-07-01_trendforce_ase-price-hike-20pct]
 related:
   - wiki/technologies/cowos.md
@@ -117,3 +117,13 @@ ASE 是全球最大的 OSAT，在 TSMC CoWoS 產能緊缺背景下，CoWoP 技�
 - CoWoP 的技術規格與 TSMC CoWoS 相比，差距有多大？
 - K28 廠能否如期完工並達到量產良率？
 - ASE 是否會進一步開發混合接合（hybrid bonding）能力？
+
+### ⭐ SPIL 斗六廠破土；TWD 200 億兩年累計投資；增資 TWD 161.94 億（2026-08-12）
+
+*Source: TrendForce 2026-08-12；wiki/sources/2026-08-12_trendforce_ase-spil-douliu-cowos-2028.md*
+
+- **SPIL 斗六廠（雲林）**：2026-08-11 正式破土，投資約 **TWD 100 億**，6 公頃，引入 CoWoS 先進封裝，**2028 年一期投產**
+- **斗六 + 虎尾**為 SPIL 雲林兩大生產基地，虎尾廠一期已於去年 9 月投產並轉盈
+- **兩年累計投資**：ASE/SPIL 合計 **TWD 200 億**，另布局台中、彰化、新竹、台南等廠區
+- **增資**：SPIL 發行 **8.097 億新股**，籌資 **TWD 161.94 億**，主要用於擴充 AI 晶片封裝測試產能（外幣融資需求）
+- **AMD EFB 合作再確認**：SPIL 與 ASE、AMD 共同開發次世代晶圓型 2.5D 橋接互連（EFB）

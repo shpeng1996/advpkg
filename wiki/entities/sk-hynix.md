@@ -3,7 +3,7 @@ title: "SK Hynix"
 category: entity
 tags: [memory, HBM, HBM4, advanced-packaging]
 created: 2026-04-24
-updated: 2026-08-11
+updated: 2026-08-13
 sources: [2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor, 2026-08-10_trendforce_skhynix-chongqing-sale-global-reset, 2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab, 2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h, 2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-04-22_trendforce_sk-hynix-pt7-cheongju, 2026-04-22_trendforce_sk-hynix-indiana-us-plant, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-03-03_trendforce_sk-hynix-hbm4-tight-gaps, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-05_trendforce_hbf-equipment-race-sandisk-hanmi, 2026-06-11_trendforce_skhynix-3x-wafer-2034-375layer-nand, 2026-06-20_techtimes_skhynix-hbm4e-12layer-samples, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-24_techtimes_sk-hynix-dethroned-samsung-ddr5-hbm4, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-06-25_techtimes_sk-hynix-nasdaq-adr-29b, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-22_trendforce_skhynix-q2-record-margin, 2026-07-21_trendforce_samsung-cxl-32-skhynix-imte, 2026-07-24_trendforce_skhynix-3d-stacked-dram-on-logic-on-device-ai, 2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b]
 related:
   - wiki/entities/samsung.md
@@ -229,3 +229,14 @@ SK Hynix 是 **HBM 市場的領導者**，率先量產 HBM3E，並於 2025 H2 �
 | 主要客戶 | NVIDIA（H100/H200/B200 系列） |
 
 供需失衡
+### ⭐「One Team」模式記錄；Next Memory Strategy 部門招募（2026-08-12）
+
+*Source: TrendForce 2026-08-12 → [[sources/2026-08-12_trendforce_micron-hbm4e-custom-era-dual-supplier.md]]*
+
+- **SK hynix「One Team」協作模式**（正式命名確認）：
+  - **NVIDIA**：定義 HBM 規格與 GPU 整合需求
+  - **SK hynix**：HBM 晶片堆疊與記憶體封裝
+  - **TSMC**：Base die 製造（advanced node）+ CoWoS 整合封裝
+  - 此模式與 Samsung 垂直整合策略形成對比——SK hynix 藉由外部代工維持技術領導，無需自有最先進製程
+- **HBM4E Logic Die**：SK hynix HBM4E 的 logic die 由 **TSMC 製造**（確認）
+- **Next Memory Strategy 部門**：SK hynix 透過「Highway」月度徵才計畫招募次世代記憶體策略人才，聚焦客製化記憶體解決方案開發與新記憶體商業機會識別

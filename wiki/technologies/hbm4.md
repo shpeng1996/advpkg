@@ -3,7 +3,7 @@ title: "HBM4 — High Bandwidth Memory 4"
 category: technology
 tags: [memory, HBM, JEDEC, standards, AI, HPC, HBM4E, cleanroom, capacity, ISSCC2026, ZAM, HB3DM, HBM5, zHBM, HPB, FMS-2026]
 created: 2026-04-24
-updated: 2026-08-11
+updated: 2026-08-13
 sources: [2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor, 2026-08-10_trendforce_skhynix-chongqing-sale-global-reset, 2026-08-05_trendforce_samsung-v10-zhbm-hbm5-fms2026, 2026-07-30_trendforce_samsung-ds-q2-2026-hbm4-triple-q3, 2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-03-18_trendforce_intel-emib-malaysia, 2026-01-23_trendforce_hbm4e-samsung-skhynix-mid2026, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-01-13_semiengineering_hbm4-microbumps, 2025-12-18_trendforce_micron-capex-hbm4, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h, 2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-03-03_trendforce_sk-hynix-hbm4-tight-gaps, 2025-08-12_semianalysis_hbm-roadmap, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit, 2026-06-09_astutegroup_hbm-market-share-2026-battle, 2026-06-10_trendforce_samsung-gwangju-packaging-base, 2026-06-15_trendforce_skhynix-hbm4e-sample-timeline-pulled-forward, 2026-06-20_techtimes_skhynix-hbm4e-12layer-samples, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-27_tweaktown_hbm4-16hi-nvidia-supply-fight, 2026-06-26_semieng_chip-week-144, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-14_trendforce_samsung-hbm-hiring-hbm4-hbm4e-hbm5, 2026-07-14_trendforce_skhynix-yongin-y1-feb2027, 2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b]
 related:
   - wiki/entities/sk-hynix.md
@@ -703,3 +703,51 @@ SK Hynix 勞資談判第 5 輪已破裂，工會拒絕接受管理層提案，HB
 - **2027 年**：全球 HBM 供應量預計 YoY 成長 **+50–60%**，但仍低於需求增長速度，**供應受限延續至 2027 年全年**
 
 **wiki 含義**：Samsung HBM4 良率達 80% 是本 wiki 收錄的首個量化確認，比原本業界預期（年底目標）提早達成，這對 Samsung HBM 市占率競爭具有重大意義。TC-NCF 與 MR-MUF 良率差距消弭，使競爭回歸到產能規模與客戶資格認證。2027 年供應仍受限的預測，進一步支撐 HBM ASP 高位維持的論點。
+
+---
+
+## ⭐ 2026-08-13 更新：Custom HBM 時代從 HBM4E 開始；市場向雙/單供應商傾斜；HBM-to-DDR 犧牲比惡化至 4:1
+
+*Source: TrendForce 2026-08-12 → [[sources/2026-08-12_trendforce_micron-hbm4e-custom-era-dual-supplier.md]]*
+
+### Custom HBM4E 市場結構轉變
+
+**Micron EVP Sumit Sadana（KeyBanc Technology Leadership Forum 2026）關鍵陳述**：
+
+> "Given the time, R&D and cost involved in HBM design and qualification, customers are unlikely to work with all three HBM suppliers across every project."
+
+- **Custom HBM 時代起點**：Micron 確認 HBM4E 為首個客製化 HBM 產品，每位大型客戶將定制專屬 SKU
+- **市場結構性風險**：可能從現行「三廠並行」演變為「雙供應商」甚至「單一供應商」模式
+- **目前仍為三廠並行**：SK hynix、Samsung、Micron 均已向 NVIDIA Vera Rubin 供應 HBM4
+
+### HBM4E 技術規格
+
+| 參數 | HBM4 | HBM4E |
+|------|------|-------|
+| DRAM 製程 | 1-beta | **1-gamma** |
+| Logic die 製造 | — | **TSMC（Micron & SK hynix 均確認）** |
+| 量產時程 | 2026 | **2027** |
+| 類型 | 標準 JEDEC | JEDEC 標準版 + 客製化版 |
+
+### HBM-to-DDR 犧牲比惡化
+
+| HBM 世代 | HBM-to-DDR 犧牲比 | 說明 |
+|---------|-----------------|------|
+| HBM3E | 1:3 | 100 bits HBM3E = 犧牲 300 bits DDR |
+| HBM4E（預估） | **1:~4** | 惡化，加劇整體 DRAM 市場供給緊縮 |
+
+**HBM 擴產對 DRAM 整體供給的擠出效應**隨世代升級持續惡化，是 2027 年記憶體短缺預測的核心結構性因素。
+
+### SK hynix「One Team」模式
+
+SK hynix 採用有別於 Samsung 垂直整合的三方協作模式：
+
+| 角色 | 公司 | 職責 |
+|------|------|------|
+| 需求定義者 | **NVIDIA** | HBM 規格與 GPU 整合需求 |
+| 記憶體堆疊 | **SK hynix** | HBM 晶片堆疊、封裝 |
+| Logic die 製造 + 封裝 | **TSMC** | Base die 製造、CoWoS 整合封裝 |
+
+此模式使 SK hynix 能夠在不自有 leading-edge 代工廠的情況下，透過 TSMC 的 advanced node 與封裝能力，維持 HBM 技術領導地位。
+
+*Source: TrendForce 2026-08-12（引述 Investing.com、STOCK Analysis、News1、Sisa Week）*

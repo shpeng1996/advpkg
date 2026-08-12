@@ -2515,3 +2515,40 @@ an（2028–2029 量產世代）為 CoPoS 最可能的首批量產客戶——�
 - 觸及頁面：concepts/advanced-packaging-market.md（共 1 頁）
 - 新增知識：BCC Research 市場規模 CAGR 14.8%（超越先前 wiki 的 9–10% 預測）；汽車 AP 細分 CAGR 16.1% 首次收錄；APAC $19.9B 新基準數字；ABF 瓶頸補充
 - 矛盾/修正：新 CAGR 14.8% 高於先前記載之 9–10%，市場概念頁已加入多方預測對比表說明差異
+
+## [2026-08-13] collect | 每日自動蒐集 — 先進封裝最新動態（第五十四次）
+- 搜尋查詢數：7 組（SemiEng Week #151、TSMC CoWoS August 2026、HBM4/HBM5 Samsung SK hynix、Intel EMIB Foveros、Hybrid Bonding Cu-Cu、FOPLP CoPoS、Advanced Packaging market TrendForce Aug 12-13）
+- 成功抓取：2 篇（articles/ 2, papers/ 0, reports/ 0）
+  - 2026-08-12_trendforce_ase-spil-douliu-twd100b-cowos-2028.md（TrendForce，發布 2026-08-12；SPIL 斗六廠破土 TWD 100 億；CoWoS 2028 一期；TSMC CapEx $294 億）
+  - 2026-08-12_trendforce_micron-hbm4e-custom-era-dual-supplier.md（TrendForce，發布 2026-08-12；Micron custom HBM4E 時代；市場向雙/單供應商傾斜；HBM-to-DDR 4:1；SK hynix One Team）
+- 失敗/跳過：多篇（SemiEngineering Week #151 尚未發布（週四通常出刊，今日為 2026-08-13，或將稍後發布）；Intel EMIB/Foveros 無 2026-08-12 後新文；Hybrid Bonding 文章均為舊收錄；FOPLP/CoPoS 無新文；其餘搜尋結果為已收錄文章）
+- 學術代理：UNAVAILABLE ✗
+- 新增 raw 檔案：2 篇（articles/ 2）
+- 新增 wiki 頁面：2 頁
+  - wiki/sources/2026-08-12_trendforce_ase-spil-douliu-cowos-2028.md
+  - wiki/sources/2026-08-12_trendforce_micron-hbm4e-custom-era-dual-supplier.md
+- 更新 wiki 頁面：7 頁
+  - wiki/technologies/cowos.md（SPIL 斗六廠破土補強 OSAT 產能記錄；TSMC 月產能 14 萬→22 萬套 2026-2027；TSMC 董事會 US$294 億 capex；updated 2026-08-13）
+  - wiki/technologies/hbm4.md（Custom HBM4E 時代起點；3:1→4:1 HBM-to-DDR 犧牲比；HBM4E logic die TSMC；SK hynix One Team 模式架構；updated 2026-08-13）
+  - wiki/entities/ase-group.md（SPIL 斗六廠破土；TWD 200 億兩年累計；增資 TWD 162 億；AMD EFB 合作再確認；updated 2026-08-13）
+  - wiki/entities/tsmc.md（董事會批准 US$294 億 CapEx；月 CoWoS 產能 14 萬→22 萬套；updated 2026-08-13）
+  - wiki/entities/micron.md（HBM4E custom 路線圖；1-gamma；TSMC logic die；HBM3E -30% 功耗；updated 2026-08-13）
+  - wiki/entities/sk-hynix.md（One Team 模式正式命名記錄；Next Memory Strategy 部門；updated 2026-08-13）
+  - wiki/index.md（頁面數 367→369；來源數 325→327；新增 2 個 sources 條目；updated 2026-08-13）
+- 主要新知識：
+  1. **ASE/SPIL 斗六廠破土（2026-08-11）**：台灣 OSAT 產能擴張進一步加速，SPIL 在雲林斗六新建 CoWoS 廠（TWD 100 億，2028 一期），搭配 TSMC 月產能機構估算（2026 末 14 萬套、2027 末 22 萬套）——首次為 wiki 提供此精度的產能路線量化數字，可作為未來供需分析基準。
+  2. **Micron EVP 公開宣告「Custom HBM 市場向雙/單供應商傾斜」**（KeyBanc Forum 2026-08-10）：此為業界首次由記憶體廠高層公開陳述三廠並行格局的瓦解可能，HBM4E logic die 全部由 TSMC 製造的架構分工也首次在 wiki 明確記錄；HBM-to-DDR 犧牲比從 3:1 惡化至 4:1 的趨勢亦為首次量化入 wiki，是解釋 DRAM 整體市場持續緊縮的結構性因素。
+
+## [2026-08-13] ingest | TrendForce：ASE/SPIL 斗六 TWD 100B 廠破土；CoWoS OSAT 產能 2028 年一期投產
+- 來源類型：news
+- 原始路徑：raw/articles/2026-08-12_trendforce_ase-spil-douliu-twd100b-cowos-2028.md
+- 觸及頁面：technologies/cowos.md, entities/ase-group.md, entities/tsmc.md（共 3 頁）
+- 新增知識：SPIL 斗六廠為 wiki 新增的第七個 ASE 擴產節點；TSMC 月產能量化估算 14→22 萬套；TSMC 董事會 CapEx $294 億首次入 wiki
+- 矛盾/修正：none
+
+## [2026-08-13] ingest | TrendForce：Micron HBM4E Custom 時代；市場雙/單供應商傾斜；SK hynix One Team
+- 來源類型：news
+- 原始路徑：raw/articles/2026-08-12_trendforce_micron-hbm4e-custom-era-dual-supplier.md
+- 觸及頁面：technologies/hbm4.md, entities/micron.md, entities/sk-hynix.md（共 3 頁）
+- 新增知識：Custom HBM 市場結構轉變觀點首次入 wiki；HBM4E logic die TSMC 製造確認；3:1→4:1 HBM-to-DDR 犧牲比首次量化；SK hynix「One Team」模式正式命名記錄
+- 矛盾/修正：none

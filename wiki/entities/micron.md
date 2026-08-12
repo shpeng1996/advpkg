@@ -3,7 +3,7 @@ title: "美光科技 / Micron Technology"
 category: entity
 tags: [memory, HBM4, DRAM, NAND, CapEx, Virginia, Idaho, New-York, onshoring]
 created: 2026-05-03
-updated: 2026-07-28
+updated: 2026-08-13
 sources: [2025-12-18_trendforce_micron-capex-hbm4, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-03-17_trendforce_gtc2026-key-takeaways, 2025-08-05_3dincites_iftle636-samsung-lsb-micron-virginia, 2026-01-23_trendforce_hbm4e-development, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-26_semieng_chip-week-144, 2026-06-25_thelec_micron-q3-fy2026-record, 2026-07-06_trendforce_micron-hiroshima-fab-hbm-1gamma, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-10_tomshardware_micron-250b-us-investment-globalwafers, 2026-07-10_semieng_chip-week-146]
 related:
   - wiki/technologies/hbm4.md
@@ -146,3 +146,16 @@ Micron 的 HBM 熱管理策略與 Samsung（HPB）和 SK Hynix（iHBM）不同�
 - Q3 FY26 自由現金流有望再創紀錄
 
 *Source: TrendForce 2026-05-22 (citing STOCK Analysis J.P. Morgan conference transcript, Business Standard, The Economic Times)*
+
+### ⭐ HBM4E 客製化路線圖；1-gamma DRAM；TSMC Logic Die；HBM3E -30% 功耗優勢（2026-08-12）
+
+*Source: TrendForce 2026-08-12 → [[sources/2026-08-12_trendforce_micron-hbm4e-custom-era-dual-supplier.md]]*
+
+- **Custom HBM4E 起點**：Micron 確認 HBM4E 為首款客製化 HBM 產品（KeyBanc Tech Leadership Forum 2026，EVP Sumit Sadana）；每位大型客戶將獲專屬 SKU
+- **HBM4E 規格**：
+  - DRAM 製程：1-beta（HBM4）→ **1-gamma**（HBM4E）
+  - Logic die 製造：**TSMC**（標準版與客製化版均採用）
+  - 量產時程：**2027 年**
+- **HBM3E 競爭優勢**：較下一競品省電 **30%**，仍在高量生產
+- **HBM-to-DDR 犧牲比**：HBM3E 為 1:3（100 bits HBM3E = 300 bits DDR 犧牲）；HBM4E 預計惡化至 **1:~4**
+- **市場觀察**：Sadana 指出客戶不太可能同時與三家供應商每個專案都合作，暗示市場將向雙供應商或單一供應商傾斜

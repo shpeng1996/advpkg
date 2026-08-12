@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-08-12
-**頁面總數 Total Pages**：367
-**原始來源數 Sources**：325
+**更新時間 Updated**：2026-08-13
+**頁面總數 Total Pages**：369
+**原始來源數 Sources**：327
 
 ---
 
@@ -14,12 +14,12 @@
 
 ## 實體 Entities（公司、組織）
 
-- [[entities/tsmc]] — 台積電；全球最大晶圓代工廠；CoWoS/SoIC 技術領導者；**研發類 EMIB 矽橋封裝（聯手欣興 Kinsus）以留住 Google TPU 訂單**；2026 年產能瓶頸核心⭐更新
+- [[entities/tsmc]] — 台積電；全球最大晶圓代工廠；CoWoS/SoIC 技術領導者；**董事會批准 US$294 億 CapEx（2026-08-11）；月 CoWoS 產能 14 萬套（2026 末）/22 萬套（2027 末）**；研發類 EMIB 矽橋封裝（聯手欣興 Kinsus）⭐更新
 - [[entities/intel]] — 英特爾；IDM；EMIB-T 今年內 fab 量產（45µm→35/25µm 路線圖、Jaguar Shores 首款產品推測）；**Xeon 6+ 18A 首款商業 CPU**（2026-06-19）⭐更新
 - [[entities/samsung]] — 三星；IDM + Foundry + Memory；**Q2 2026 正式財報：DS 部門 KRW 89.5T 占合併 99.7%；HBM4 Q3 三倍成長；MX 首次季虧損**；GlaSSEM JV（玻璃基板 2H27 量產）；光州新封裝基地（TCB 231K + HCB 19.5K/月）⭐更新
-- [[entities/sk-hynix]] — SK Hynix；HBM 市場領導者；**Q2 2026 正式財報：KRW 79.3T 營收 +257% YoY、KRW 60.5T 利潤 +557%、Op Margin 76%（歷史新高）；HBM4 批量出貨確認**（2026-07-30）⭐更新
+- [[entities/sk-hynix]] — SK Hynix；HBM 市場領導者；**Q2 2026 正式財報：KRW 79.3T 營收 +257% YoY、KRW 60.5T 利潤 +557%、Op Margin 76%（歷史新高）；HBM4 批量出貨確認；「One Team」模式（SK+NVIDIA+TSMC）**（2026-08-13）⭐更新
 - [[entities/asmpt]] — ASMPT Limited；TCB/混合接合/Photonics-CPO 設備領導廠商；Q1 2026 訂單 27M +71.6% YoY；NEXX 出售給 AMAT⭐新增
-- [[entities/ase-group]] — ASE Group；全球最大 OSAT；CoWoP 面板封裝；**2026 CapEx $10.5B（再上修）；2027 LEAP 目標 $7.5B+；FOPLP Q1 2027；Q4 毛利率可能>30%**；K28 廠 2026 年完工⭐更新
+- [[entities/ase-group]] — ASE Group；全球最大 OSAT；CoWoP 面板封裝；**SPIL 斗六廠破土（TWD 100 億/2028 一期）；2026 CapEx $10.5B；2027 LEAP 目標 $7.5B+；FOPLP Q1 2027**；AMD EFB 合作⭐更新
 - [[entities/amkor]] — Amkor；全球第二大 OSAT；Arizona $70 億廠（2028 投產）；Intel EMIB 外包夥伴⭐新增
 - [[entities/ev-group]] — EV Group（EVG）；混合接合設備領導者；ECTC 2025 展示無光罩微影與層轉移⭐新增
 - [[entities/besi]] — BE Semiconductor（Besi）；D2W 混合接合設備主供應商；Datacon 8800 CHAMEO；Kinex 平台（Applied Materials 持股 9%）⭐新增
@@ -41,7 +41,7 @@
 - [[technologies/copos]] — CoPoS（Chip-on-Panel-on-Substrate）；TSMC 面板級封裝；310×310mm 面板；玻璃核心基板列為下一里程碑（2030+）；TGV 障礙具體化（2026-06-18）⭐更新
 - [[technologies/soic]] — SoIC（System on Integrated Chips）；TSMC 3D 堆疊；SoIC-X 混合接合（**6µm 2025 量產→4.5µm 2029；A14-to-A14 SoIC 2029年 1.8×I/O 密度**）⭐更新
 - [[technologies/hybrid-bonding]] — 混合接合（Cu-Cu）；W2W/D2W/D2D 三情境框架（ECTC 2025）；目標 1M/mm²；**翹曲管理確認為 HVM 製程橫跨全流程的新約束**（2026-07-30）⭐更新
-- [[technologies/hbm4]] — HBM4；JEDEC JESD270-4；1.65+ TB/s；**SK hynix Q2 2026 正式財報確認 HBM4 批量出貨**（2026-07-30）⭐更新
+- [[technologies/hbm4]] — HBM4；JEDEC JESD270-4；1.65+ TB/s；**Custom HBM4E 時代起點（Micron EVP）；HBM-to-DDR 犧牲比 3:1→4:1；HBM4E logic die = TSMC；SK hynix「One Team」**（2026-08-13）⭐更新
 - [[technologies/ucie]] — UCIe；Chiplet 互連標準；UCIe 3.0：64GT/s quarter-rate、BER 差異化、Arm CHI 映射、L2 深度睡眠（2026-06-18）⭐更新
 - [[technologies/copackaged-optics]] — TSMC-COUPE™ 共封裝光學元件（CPO）；Intel OFC 2026 玻璃基板原型曝光；量產落後 Nvidia/AMD（2026-06-18）⭐更新
 - [[technologies/info-wmcm]] — InFO（2016 商轉）+ WMCM（2026 量產）；TSMC 行動晶片封裝旗艦；Apple A20 iPhone18 採用 WMCM⭐新增
@@ -64,6 +64,8 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-08-12_trendforce_ase-spil-douliu-cowos-2028]] — TrendForce：**ASE/SPIL 斗六廠破土（TWD 100 億/6 公頃/2028 一期）；CoWoS 先進封裝；TSMC 月產能 14 萬套（2026 末）→22 萬套（2027 末）；TSMC 董事會批准 US$294 億 CapEx；SPIL 增資 TWD 162 億**（2026-08-13 收錄）⭐新增
+- [[sources/2026-08-12_trendforce_micron-hbm4e-custom-era-dual-supplier]] — TrendForce：**Micron HBM4E 為 Custom HBM 時代起點；市場可能向雙/單供應商傾斜；HBM-to-DDR 犧牲比 3:1→4:1；HBM4E logic die = TSMC；SK hynix「One Team」模式（SK+NVIDIA+TSMC）**（2026-08-13 收錄）⭐新增
 - [[sources/2026-08-11_trendforce_tsmc-cowos-5-5-reticle-99pct-yield-abf]] — TrendForce：**TSMC 5.5× CoWoS 量產良率 99%（VP Jun He @ OCP APAC Summit）；SoIC 4.5µm 2029；A14-to-A14 SoIC 1.8× I/O 密度；ABF 基板成 AI 第二瓶頸；開發週期 2 年→1 年**（2026-08-12 收錄）⭐新增
 - [[sources/2026-08-11_bccresearch_advanced-chip-packaging-market-87b-2030]] — BCC Research：**先進晶片封裝市場 $38.6B（2024）→ $87.6B（2030），CAGR 14.8%；汽車 AP CAGR 16.1%；APAC $19.9B；封裝從商品製程轉型為 IP 密集工業**（2026-08-12 收錄）⭐新增
 - [[sources/2026-05-14_semieng_flash-hbf-high-bandwidth-version]] — SemiEngineering / Bryon Moyer：**HBF 技術深度剖析——多陣列平行化讀取路徑重設計；HBF vs HBM 對比（容量 3Tb vs 192GB）；AI 推論記憶體層次（HBF 權重→HBM 激活值→SRAM）；Synopsys/Rambus PHY；UMC base die；Cynthia Hsu（SanDisk VP）**（2026-08-10 收錄；原文 2026-05-14）⭐新增

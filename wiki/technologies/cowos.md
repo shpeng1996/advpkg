@@ -3,7 +3,7 @@ title: "CoWoS — Chip-on-Wafer-on-Substrate"
 category: technology
 tags: [2.5D, interposer, TSMC, AI, HPC, HBM, COUPE, CPO, packaging-constraints, NVIDIA]
 created: 2026-04-24
-updated: 2026-08-12
+updated: 2026-08-13
 sources: [2026-08-05_trendforce_tsmc-cowos-cow-outsourcing-osat, 2026-05-24_techtimes_nvidia-computex2026-cowos, 2026-04-24_initial-survey, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-15_trendforce_tsmc-vanguard-stake-sale, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-09_financialcontent_tsmc-130k-cowos-wafers, 2026-06-09_digitimes_tsmc-cowos-soic-capacity-symposium, 2026-06-15_trendforce_tsmc-cowos-gap-narrowing-130k-200k-wafers, 2026-06-21_tomshardware_tsmc-fab-expansion-roadmap, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_tmtpost_tsmc-cowos-capacity-targets-2026-2027, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand]
 related:
   - wiki/entities/tsmc.md
@@ -253,3 +253,29 @@ TSMC 決定擴大將 CoW（Chip-on-Wafer，晶片貼附中介層）步驟外包�
 - 5.5× → 9.5×（2027）→ **14×（2028）**（~10 大 compute dies + 20 HBM stacks）→ **>14×（2029）**（24 HBM stacks）
 
 *Source: TrendForce 2026-08-11；wiki/sources/2026-08-11_trendforce_tsmc-cowos-5-5-reticle-99pct-yield-abf.md*
+
+## 2026-08-13 更新 / Updates
+
+### ⭐ SPIL 斗六 TWD 100B 廠破土；TSMC 月產能 2026 年底 14 萬套 / 2027 年底 22 萬套（機構投資人估算）
+
+*Source: TrendForce 2026-08-12；wiki/sources/2026-08-12_trendforce_ase-spil-douliu-cowos-2028.md*
+
+**OSAT CoWoS 產能擴張新里程碑**：
+- ASE 子公司 SPIL 於 **2026-08-11** 在雲林斗六舉行新廠破土典禮，投資約 **TWD 100 億**（6 公頃廠區）
+- 新廠將引入 **CoWoS 先進封裝**，預計 **2028 年一期投產**
+- ASE/SPIL 過去兩年合計投入 **TWD 200 億**於 AI/HPC 封裝
+
+**TSMC CoWoS 月產能最新機構估算**：
+
+| 時間點 | TSMC CoWoS 月產能（機構估算） |
+|-------|------------------------------|
+| 2026 年底 | **140,000 套/月** |
+| 2027 年底 | **220,000 套/月** |
+
+（較 2026-08-05 更新中的「130,000–140,000 wsm」進一步精確化上限）
+
+**TSMC 資本預算（2026-08-11 董事會批准）**：
+- 批准金額：**US$29.4425 億**，用於先進製程、先進封裝、特殊製程產能及廠房基礎設施
+- 先進封裝相關比例：總 CapEx 的 **10–20%**
+
+*Source: TrendForce 2026-08-12；商業時報、中央社、ETNews*
