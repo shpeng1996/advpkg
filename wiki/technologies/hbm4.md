@@ -3,8 +3,8 @@ title: "HBM4 — High Bandwidth Memory 4"
 category: technology
 tags: [memory, HBM, JEDEC, standards, AI, HPC, HBM4E, cleanroom, capacity, ISSCC2026, ZAM, HB3DM, HBM5, zHBM, HPB, FMS-2026]
 created: 2026-04-24
-updated: 2026-08-13
-sources: [2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor, 2026-08-10_trendforce_skhynix-chongqing-sale-global-reset, 2026-08-05_trendforce_samsung-v10-zhbm-hbm5-fms2026, 2026-07-30_trendforce_samsung-ds-q2-2026-hbm4-triple-q3, 2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-03-18_trendforce_intel-emib-malaysia, 2026-01-23_trendforce_hbm4e-samsung-skhynix-mid2026, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-01-13_semiengineering_hbm4-microbumps, 2025-12-18_trendforce_micron-capex-hbm4, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h, 2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-03-03_trendforce_sk-hynix-hbm4-tight-gaps, 2025-08-12_semianalysis_hbm-roadmap, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit, 2026-06-09_astutegroup_hbm-market-share-2026-battle, 2026-06-10_trendforce_samsung-gwangju-packaging-base, 2026-06-15_trendforce_skhynix-hbm4e-sample-timeline-pulled-forward, 2026-06-20_techtimes_skhynix-hbm4e-12layer-samples, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-27_tweaktown_hbm4-16hi-nvidia-supply-fight, 2026-06-26_semieng_chip-week-144, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-14_trendforce_samsung-hbm-hiring-hbm4-hbm4e-hbm5, 2026-07-14_trendforce_skhynix-yongin-y1-feb2027, 2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b]
+updated: 2026-08-14
+sources: [2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor, 2026-08-10_trendforce_skhynix-chongqing-sale-global-reset, 2026-08-05_trendforce_samsung-v10-zhbm-hbm5-fms2026, 2026-07-30_trendforce_samsung-ds-q2-2026-hbm4-triple-q3, 2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-03-18_trendforce_intel-emib-malaysia, 2026-01-23_trendforce_hbm4e-samsung-skhynix-mid2026, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-01-13_semiengineering_hbm4-microbumps, 2025-12-18_trendforce_micron-capex-hbm4, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h, 2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-03-03_trendforce_sk-hynix-hbm4-tight-gaps, 2025-08-12_semianalysis_hbm-roadmap, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit, 2026-06-09_astutegroup_hbm-market-share-2026-battle, 2026-06-10_trendforce_samsung-gwangju-packaging-base, 2026-06-15_trendforce_skhynix-hbm4e-sample-timeline-pulled-forward, 2026-06-20_techtimes_skhynix-hbm4e-12layer-samples, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-27_tweaktown_hbm4-16hi-nvidia-supply-fight, 2026-06-26_semieng_chip-week-144, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-14_trendforce_samsung-hbm-hiring-hbm4-hbm4e-hbm5, 2026-07-14_trendforce_skhynix-yongin-y1-feb2027, 2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b, 2026-08-13_trendforce_samsung-skhynix-hbm4-2h-earnings-pricing]
 related:
   - wiki/entities/sk-hynix.md
   - wiki/entities/samsung.md
@@ -751,3 +751,47 @@ SK hynix 採用有別於 Samsung 垂直整合的三方協作模式：
 此模式使 SK hynix 能夠在不自有 leading-edge 代工廠的情況下，透過 TSMC 的 advanced node 與封裝能力，維持 HBM 技術領導地位。
 
 *Source: TrendForce 2026-08-12（引述 Investing.com、STOCK Analysis、News1、Sisa Week）*
+
+---
+
+## ⭐ 2026-08-14 更新：HBM4 ASP 首次量化（$31–36/GB）；客戶多元化；一般記憶體定價展望
+
+*Source: TrendForce 2026-08-13 → [[sources/2026-08-13_trendforce_samsung-skhynix-hbm4-2h-earnings-pricing]]*
+
+### HBM4 ASP 定價（Fubon Research，2026 年）
+
+| 客戶類型 | HBM4 ASP | 對比 HBM3e |
+|----------|----------|-----------|
+| NVIDIA GPU（Vera Rubin） | **$31–32/GB** | ~2× HBM3e |
+| 其他 GPU 廠商 / Custom ASIC | **$35–36/GB** | 更高溢價 |
+| HBM3e（對比基準） | $17–18/GB | — |
+
+*Bernstein 2027 預測 $53/GB 與本文 2026 當前定價不衝突，時點不同。*
+
+### HBM 客戶多元化（2H26 新格局）
+
+- **超越 NVIDIA 單一主宰**：HBM 需求已擴展至 AMD、Google 及 Custom ASIC 廠商
+- **記憶體競爭力不能再只看 NVIDIA 份額**（MTN/MoneyToday 分析師共識）
+- SOCAM（LPDDR）、Server DDR5、eSSDs 也成為 AI 伺服器時代的重要收益驅動
+
+### Samsung Q3/H2 2026 HBM4 目標
+
+- Q3 HBM4 營收 **>3× QoQ**
+- H2 HBM4 佔總 HBM 銷售比重 **>60%**
+- Samsung HBM4 良率 ~80% 已基本達成，規模量產斜率加速
+
+### SK Hynix HBM3e LTA 定價澄清
+
+- SK Hynix 澄清：HBM3e 並未以特別低價在 LTA 中出售
+- 但 Q1/H1 2026 SK Hynix 盈利成長落後 Samsung，儘管擁有 50–60% HBM3e 市場份額，具體合約條款未公開
+
+### 一般記憶體 ASP 展望（Q3 2026）
+
+| 產品 | Q3 2026 漲幅預測 | 來源 |
+|------|----------------|------|
+| DRAM（傳統合約） | +13–18% QoQ | TrendForce |
+| NAND Flash（傳統合約） | +10–15% QoQ | TrendForce |
+| Samsung 目標 DRAM ASP | +~20% QoQ | ZDNet Korea |
+| SK Hynix DRAM ASP | +~20% QoQ | Hankyung 分析師 |
+
+SK Hynix 2026 DRAM bit 成長修正至 **mid-20%**（原 20% 估計），主因 **1c 製程 SOCAMM2** 出貨量攀升。

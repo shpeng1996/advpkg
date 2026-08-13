@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-08-13
-**頁面總數 Total Pages**：369
-**原始來源數 Sources**：327
+**更新時間 Updated**：2026-08-14
+**頁面總數 Total Pages**：371
+**原始來源數 Sources**：329
 
 ---
 
@@ -15,7 +15,7 @@
 ## 實體 Entities（公司、組織）
 
 - [[entities/tsmc]] — 台積電；全球最大晶圓代工廠；CoWoS/SoIC 技術領導者；**董事會批准 US$294 億 CapEx（2026-08-11）；月 CoWoS 產能 14 萬套（2026 末）/22 萬套（2027 末）**；研發類 EMIB 矽橋封裝（聯手欣興 Kinsus）⭐更新
-- [[entities/intel]] — 英特爾；IDM；EMIB-T 今年內 fab 量產（45µm→35/25µm 路線圖、Jaguar Shores 首款產品推測）；**Xeon 6+ 18A 首款商業 CPU**（2026-06-19）⭐更新
+- [[entities/intel]] — 英特爾；IDM；EMIB-T 今年內 fab 量產（45µm→35/25µm 路線圖、Jaguar Shores 首款產品推測）；**Xeon 6+ 18A 首款商業 CPU**（2026-06-19）；**CEO 暗示重返記憶體、ZAM 架構、Saimemory JV（Intel+SoftBank）、前 SK Hynix CEO 李錯熹加盟**（2026-08-14）⭐更新
 - [[entities/samsung]] — 三星；IDM + Foundry + Memory；**Q2 2026 正式財報：DS 部門 KRW 89.5T 占合併 99.7%；HBM4 Q3 三倍成長；MX 首次季虧損**；GlaSSEM JV（玻璃基板 2H27 量產）；光州新封裝基地（TCB 231K + HCB 19.5K/月）⭐更新
 - [[entities/sk-hynix]] — SK Hynix；HBM 市場領導者；**Q2 2026 正式財報：KRW 79.3T 營收 +257% YoY、KRW 60.5T 利潤 +557%、Op Margin 76%（歷史新高）；HBM4 批量出貨確認；「One Team」模式（SK+NVIDIA+TSMC）**（2026-08-13）⭐更新
 - [[entities/asmpt]] — ASMPT Limited；TCB/混合接合/Photonics-CPO 設備領導廠商；Q1 2026 訂單 27M +71.6% YoY；NEXX 出售給 AMAT⭐新增
@@ -41,7 +41,7 @@
 - [[technologies/copos]] — CoPoS（Chip-on-Panel-on-Substrate）；TSMC 面板級封裝；310×310mm 面板；玻璃核心基板列為下一里程碑（2030+）；TGV 障礙具體化（2026-06-18）⭐更新
 - [[technologies/soic]] — SoIC（System on Integrated Chips）；TSMC 3D 堆疊；SoIC-X 混合接合（**6µm 2025 量產→4.5µm 2029；A14-to-A14 SoIC 2029年 1.8×I/O 密度**）⭐更新
 - [[technologies/hybrid-bonding]] — 混合接合（Cu-Cu）；W2W/D2W/D2D 三情境框架（ECTC 2025）；目標 1M/mm²；**翹曲管理確認為 HVM 製程橫跨全流程的新約束**（2026-07-30）⭐更新
-- [[technologies/hbm4]] — HBM4；JEDEC JESD270-4；1.65+ TB/s；**Custom HBM4E 時代起點（Micron EVP）；HBM-to-DDR 犧牲比 3:1→4:1；HBM4E logic die = TSMC；SK hynix「One Team」**（2026-08-13）⭐更新
+- [[technologies/hbm4]] — HBM4；JEDEC JESD270-4；1.65+ TB/s；**Custom HBM4E 時代起點（Micron EVP）；HBM-to-DDR 犧牲比 3:1→4:1；HBM4E logic die = TSMC；SK hynix「One Team」**（2026-08-13）；**HBM4 ASP 首次量化 $31–32/GB（NVIDIA）；客戶多元化至 AMD/Google**（2026-08-14）⭐更新
 - [[technologies/ucie]] — UCIe；Chiplet 互連標準；UCIe 3.0：64GT/s quarter-rate、BER 差異化、Arm CHI 映射、L2 深度睡眠（2026-06-18）⭐更新
 - [[technologies/copackaged-optics]] — TSMC-COUPE™ 共封裝光學元件（CPO）；Intel OFC 2026 玻璃基板原型曝光；量產落後 Nvidia/AMD（2026-06-18）⭐更新
 - [[technologies/info-wmcm]] — InFO（2016 商轉）+ WMCM（2026 量產）；TSMC 行動晶片封裝旗艦；Apple A20 iPhone18 採用 WMCM⭐新增
@@ -64,6 +64,8 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-08-13_trendforce_intel-memory-reentry-xbm-zam-saimemory]] — TrendForce：**Intel CEO 暗示重返記憶體；ZAM（8-die HBM替代架構）；Saimemory JV（Intel+SoftBank）；前 SK Hynix CEO 李錯熹加盟；XBM UCIe 無中介層路線 2030+；Terafab 記憶體生產推測**（2026-08-14 收錄；原文 2026-08-13）⭐新增
+- [[sources/2026-08-13_trendforce_samsung-skhynix-hbm4-2h-earnings-pricing]] — TrendForce：**HBM4 ASP 首次量化 $31–32/GB（NVIDIA）/$35–36/GB（其他 ASIC）；Samsung Q3 HBM4 3× QoQ；H2 >60% HBM4；DRAM Q3 +13–18%；SK Hynix HBM3e LTA 定價澄清；SOCAMM2 bit 成長上修至 mid-20%**（2026-08-14 收錄；原文 2026-08-13）⭐新增
 - [[sources/2026-08-12_trendforce_ase-spil-douliu-cowos-2028]] — TrendForce：**ASE/SPIL 斗六廠破土（TWD 100 億/6 公頃/2028 一期）；CoWoS 先進封裝；TSMC 月產能 14 萬套（2026 末）→22 萬套（2027 末）；TSMC 董事會批准 US$294 億 CapEx；SPIL 增資 TWD 162 億**（2026-08-13 收錄）⭐新增
 - [[sources/2026-08-12_trendforce_micron-hbm4e-custom-era-dual-supplier]] — TrendForce：**Micron HBM4E 為 Custom HBM 時代起點；市場可能向雙/單供應商傾斜；HBM-to-DDR 犧牲比 3:1→4:1；HBM4E logic die = TSMC；SK hynix「One Team」模式（SK+NVIDIA+TSMC）**（2026-08-13 收錄）⭐新增
 - [[sources/2026-08-11_trendforce_tsmc-cowos-5-5-reticle-99pct-yield-abf]] — TrendForce：**TSMC 5.5× CoWoS 量產良率 99%（VP Jun He @ OCP APAC Summit）；SoIC 4.5µm 2029；A14-to-A14 SoIC 1.8× I/O 密度；ABF 基板成 AI 第二瓶頸；開發週期 2 年→1 年**（2026-08-12 收錄）⭐新增

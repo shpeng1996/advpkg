@@ -3,7 +3,7 @@ title: "SK Hynix"
 category: entity
 tags: [memory, HBM, HBM4, advanced-packaging]
 created: 2026-04-24
-updated: 2026-08-13
+updated: 2026-08-14
 sources: [2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor, 2026-08-10_trendforce_skhynix-chongqing-sale-global-reset, 2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab, 2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h, 2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-04-22_trendforce_sk-hynix-pt7-cheongju, 2026-04-22_trendforce_sk-hynix-indiana-us-plant, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-03-03_trendforce_sk-hynix-hbm4-tight-gaps, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-05_trendforce_hbf-equipment-race-sandisk-hanmi, 2026-06-11_trendforce_skhynix-3x-wafer-2034-375layer-nand, 2026-06-20_techtimes_skhynix-hbm4e-12layer-samples, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-24_techtimes_sk-hynix-dethroned-samsung-ddr5-hbm4, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-06-25_techtimes_sk-hynix-nasdaq-adr-29b, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-22_trendforce_skhynix-q2-record-margin, 2026-07-21_trendforce_samsung-cxl-32-skhynix-imte, 2026-07-24_trendforce_skhynix-3d-stacked-dram-on-logic-on-device-ai, 2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b]
 related:
   - wiki/entities/samsung.md
@@ -240,3 +240,31 @@ SK Hynix 是 **HBM 市場的領導者**，率先量產 HBM3E，並於 2025 H2 �
   - 此模式與 Samsung 垂直整合策略形成對比——SK hynix 藉由外部代工維持技術領導，無需自有最先進製程
 - **HBM4E Logic Die**：SK hynix HBM4E 的 logic die 由 **TSMC 製造**（確認）
 - **Next Memory Strategy 部門**：SK hynix 透過「Highway」月度徵才計畫招募次世代記憶體策略人才，聚焦客製化記憶體解決方案開發與新記憶體商業機會識別
+
+---
+
+## ⭐ 2026-08-14 更新：HBM3e LTA 定價澄清；SOCAMM2 bit 成長；2H 獲利展望
+
+*Source: TrendForce 2026-08-13 → [[sources/2026-08-13_trendforce_samsung-skhynix-hbm4-2h-earnings-pricing]]*
+
+### HBM3e LTA 定價澄清
+
+市場曾猜測 SK Hynix 在 LTA 合約中以偏低價格出售 HBM3e（原因：Q1/H1 2026 盈利成長落後 Samsung，儘管 HBM3e 市占 50–60%）。SK Hynix 官方回應：**「我們並未以特別低的價格銷售 HBM3e」**，但拒絕披露具體合約條款。
+
+### 2H 2026 HBM4 獲利展望
+
+- SK Hynix 預期 2H 2026 業績顯著改善，主因大幅增加 HBM4 出貨
+- HBM4 ASP：NVIDIA 客戶 $31–32/GB（Fubon Research）；非 NVIDIA AI 客戶 $35–36/GB
+
+### SOCAMM2 bit 成長驅動
+
+- SK Hynix **1c 製程 SOCAMM2** 出貨量攀升為 2026 全年 bit 成長上修主因
+- 2026 DRAM bit 成長修正至 **mid-20%**（原 20% 預估，上修 ~2–3%）
+- SOCAMM2 結合低功耗（LPDDR）記憶體與高頻寬封裝，為邊緣 AI 伺服器優選
+
+### 一般記憶體 ASP（Q2 實績 + Q3 預期）
+
+| 指標 | Q2 2026 實績 | Q3 2026 預期 |
+|------|-------------|-------------|
+| DRAM ASP | +~30% QoQ | +~20% QoQ（Hankyung 分析師） |
+| NAND ASP | +mid-50% QoQ | +10–15% QoQ（TrendForce） |

@@ -213,3 +213,22 @@ related:
   *Source: TrendForce 2026-01-09*
 
 - **2026**：Samsung 計畫 HBM 產能擴大 **50%**，目標月產能 **~250,000 片**（從 ~170,000 片）；擴產重心放在 HBM4。背景：2024–2025 年 HBM3E 向 NVIDIA 供應品質問題造成�
+---
+
+## ⭐ 2026-08-14 更新：Q3 HBM4 營收預期 3× QoQ；H2 HBM4 佔比 >60%；HBM 定價展望
+
+*Source: TrendForce 2026-08-13 → [[sources/2026-08-13_trendforce_samsung-skhynix-hbm4-2h-earnings-pricing]]*
+
+### Samsung HBM4 2H 2026 獲利展望
+
+Samsung（Yonhap News 引述）官方預期：
+- **Q3 2026 HBM4 營收 >3× QoQ**（接續 Q2 的 80% 良率達成里程碑）
+- **H2 2026 HBM4 佔總 HBM 銷售比重 >60%**
+- HBM 客戶已多元化：NVIDIA Vera Rubin 為主力，AMD、Google 亦為需求來源
+
+### 一般記憶體 ASP（Q2 實績 + Q3 預期）
+
+| 指標 | Q2 2026 實績 | Q3 2026 預期 |
+|------|-------------|-------------|
+| DRAM ASP | +mid-40% QoQ | 目標 +~20% QoQ |
+| NAND ASP | +high-60% QoQ | +10–15% QoQ（TrendForce） |

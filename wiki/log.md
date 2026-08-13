@@ -2552,3 +2552,38 @@ an（2028–2029 量產世代）為 CoPoS 最可能的首批量產客戶——�
 - 觸及頁面：technologies/hbm4.md, entities/micron.md, entities/sk-hynix.md（共 3 頁）
 - 新增知識：Custom HBM 市場結構轉變觀點首次入 wiki；HBM4E logic die TSMC 製造確認；3:1→4:1 HBM-to-DDR 犧牲比首次量化；SK hynix「One Team」模式正式命名記錄
 - 矛盾/修正：none
+
+## [2026-08-14] collect | 每日自動蒐集 — 先進封裝最新動態（第五十五次）
+- 搜尋查詢數：7 組（SemiEng Week #151、TSMC CoWoS Aug 2026、HBM4/SK Hynix/Samsung Aug 2026、Intel EMIB Foveros Aug 2026、Hybrid Bonding FOPLP Aug 2026、UCIe JEDEC Aug 2026、TrendForce Aug 13-14 新文）
+- 成功抓取：2 篇（articles/ 2, papers/ 0, reports/ 0）
+  - 2026-08-13_trendforce_samsung-skhynix-hbm4-2h-earnings-pricing.md（TrendForce，發布 2026-08-13；HBM4 ASP 首次量化；客戶多元化；DRAM Q3 定價展望）
+  - 2026-08-13_trendforce_intel-memory-reentry-xbm-zam-saimemory.md（TrendForce，發布 2026-08-13；Intel CEO 記憶體重返聲明；ZAM 架構；Saimemory JV；李錯熹加盟）
+- 失敗/跳過：多篇（SemiEngineering Week #151 今日尚未發布；TSMC CoWoS/SoIC 無 Aug 13-14 後新文；Intel EMIB/Foveros 無新文；Hybrid Bonding/FOPLP 無新文；UCIe/JEDEC 無新文；所有搜尋結果中其餘 URL 均已在 _collected_urls.txt 中）
+- 學術代理：UNAVAILABLE ✗
+- 新增 raw 檔案：2 篇（articles/ 2）
+- 新增 wiki 頁面：2 頁
+  - wiki/sources/2026-08-13_trendforce_samsung-skhynix-hbm4-2h-earnings-pricing.md
+  - wiki/sources/2026-08-13_trendforce_intel-memory-reentry-xbm-zam-saimemory.md
+- 更新 wiki 頁面：5 頁
+  - wiki/technologies/hbm4.md（HBM4 ASP 定價表；客戶多元化；Samsung Q3 >3× QoQ；HBM3e LTA 澄清；DRAM Q3 定價展望；SOCAMM2 bit 成長；updated 2026-08-14）
+  - wiki/entities/intel.md（CEO 記憶體重返聲明；ZAM 架構規格；Saimemory JV（Intel+SoftBank）；李錯熹（前 SK Hynix CEO）加盟確認；XBM 路線補充；Terafab 推測；updated 2026-08-14）
+  - wiki/entities/samsung.md（Q3 HBM4 >3× QoQ；H2 >60% HBM4 佔比；Q2/Q3 DRAM/NAND ASP 數據；updated 2026-08-14）
+  - wiki/entities/sk-hynix.md（HBM3e LTA 定價澄清；SOCAMM2 bit 成長上修；Q2/Q3 ASP；2H 展望；updated 2026-08-14）
+  - wiki/index.md（頁面數 369→371；來源數 327→329；新增 2 個 sources 條目；entities/intel、technologies/hbm4 條目更新；updated 2026-08-14）
+- 主要新知識：
+  1. **HBM4 ASP 首次具體量化**（Fubon Research 2026 當前數據）：NVIDIA GPU 用途 $31–32/GB，非 NVIDIA AI 客戶 $35–36/GB，相較 HBM3e $17–18/GB 近乎雙倍溢價。此為 wiki 首次收錄 2026 年 HBM4 實際定價，與 Bernstein 2027 預測 $53/GB 提供完整時間序列——確立 HBM4 ASP 快速攀升的趨勢。
+  2. **Intel 記憶體重返藍圖首次整合呈現**：本次收錄將 Intel 記憶體策略三軌（XBM 2030+ / ZAM 2029 / EMIB+HBM 現在）首次整合入 wiki，並新增 ZAM 架構細節（8-die + 邏輯控制器）、Saimemory JV（Intel+SoftBank Japan）成立、前 SK Hynix CEO 李錯熹加盟三項此前未被完整記錄的資訊，大幅強化 Intel 在後 HBM 時代的佈局輪廓。
+
+## [2026-08-14] ingest | TrendForce：Samsung/SK Hynix HBM4 2H 定價展望與記憶體 ASP 趨勢
+- 來源類型：news
+- 原始路徑：raw/articles/2026-08-13_trendforce_samsung-skhynix-hbm4-2h-earnings-pricing.md
+- 觸及頁面：technologies/hbm4.md, entities/samsung.md, entities/sk-hynix.md（共 3 頁）
+- 新增知識：HBM4 ASP $31–36/GB 首次量化；HBM 客戶多元化至 AMD/Google；Samsung Q3 >3× QoQ；SOCAMM2 bit 成長驅動；DRAM/NAND Q3 定價預測
+- 矛盾/修正：none（HBM4 $31-32/GB 與 Bernstein $53/GB 2027 預測不衝突，時點不同）
+
+## [2026-08-14] ingest | TrendForce：Intel CEO 暗示重返記憶體；ZAM 架構、Saimemory JV、李錯熹加盟浮現
+- 來源類型：news
+- 原始路徑：raw/articles/2026-08-13_trendforce_intel-memory-reentry-xbm-zam-saimemory.md
+- 觸及頁面：entities/intel.md, technologies/hbm4.md（共 2 頁）
+- 新增知識：ZAM 8-die+邏輯控制器架構；Saimemory JV（Intel+SoftBank）成立；李錯熹加盟 Intel；CEO 公開記憶體重返方向性聲明；Terafab 記憶體生產推測
+- 矛盾/修正：2026-05-22 VLSI 論文已初次揭露 ZAM（via-in-one TSV 規格），本文為管理層公開確認，互補而非矛盾
