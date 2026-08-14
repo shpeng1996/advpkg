@@ -2587,3 +2587,57 @@ an（2028–2029 量產世代）為 CoPoS 最可能的首批量產客戶——�
 - 觸及頁面：entities/intel.md, technologies/hbm4.md（共 2 頁）
 - 新增知識：ZAM 8-die+邏輯控制器架構；Saimemory JV（Intel+SoftBank）成立；李錯熹加盟 Intel；CEO 公開記憶體重返方向性聲明；Terafab 記憶體生產推測
 - 矛盾/修正：2026-05-22 VLSI 論文已初次揭露 ZAM（via-in-one TSV 規格），本文為管理層公開確認，互補而非矛盾
+
+## [2026-08-15] collect | 每日自動蒐集 — 先進封裝最新動態（第五十六次）
+- 搜尋查詢數：7 組（TSMC CoWoS Aug 2026、HBM4 SK Hynix Aug 2026、SemiEng Week#151、Intel EMIB Aug 2026、Hybrid Bonding FOPLP Aug 2026、UCIe JEDEC Aug 2026、TrendForce Aug 14-15 2026）
+- 成功抓取：4 篇（articles/ 4, papers/ 0, reports/ 0）
+  - 2026-08-14_trendforce_samsung-nrdk-line2-2nm-hbm5-base-die.md（TrendForce，2026-08-14；Samsung NRD-K Line2 轉型 2nm HBM5 base die）
+  - 2026-08-14_trendforce_sandisk-hbf-tapeout-2027-samples-2028-production.md（TrendForce，2026-08-14；Sandisk HBF 首次 tape-out）
+  - 2026-08-14_trendforce_applied-materials-packaging-growth-70pct-q3-2026.md（TrendForce，2026-08-14；AMAT 封裝成長 >70%，partial）
+  - 2026-08-15_semieng_chip-week-151-amat-lam-korea-fund-china.md（SemiEngineering，2026-08-15；Week#151，partial）
+- 失敗/跳過：多篇（SemiEngineering JS 渲染封鎖（Chrome 擴充套件未連線）；TSMC/Intel/Hybrid Bonding/UCIe/JEDEC 無 2026-08-15 新文；TrendForce 今日無新文；其餘搜尋結果已在 _collected_urls.txt 中）
+- 學術代理：UNAVAILABLE ✗
+- 新增 raw 檔案：4 篇（articles/ 4）
+- 新增 wiki 頁面：4 頁
+  - wiki/sources/2026-08-14_trendforce_samsung-nrdk-2nm-hbm5-base-die.md
+  - wiki/sources/2026-08-14_trendforce_sandisk-hbf-tapeout-investor-day.md
+  - wiki/sources/2026-08-14_trendforce_applied-materials-packaging-70pct-q3-2026.md
+  - wiki/sources/2026-08-15_semieng_chip-week-151-amat-lam-korea-china.md
+- 更新 wiki 頁面：6 頁
+  - wiki/entities/samsung.md（NRD-K Line 2 轉型 2nm HBM5 base die；HBM5 GAA 2nm >50% 速度要求；updated 2026-08-15）
+  - wiki/technologies/hbf.md（首次 tape-out 確認；時程修正 2027/2028；4 HBF=8 HBM 量化效益比；Sandisk 財測與 NBM 協議；updated 2026-08-15）
+  - wiki/concepts/advanced-packaging-market.md（AMAT 封裝設備 >70% 更新；Lam $3B R&D 補充；updated 2026-08-15）
+  - wiki/concepts/geopolitics-advanced-packaging.md（韓國 $3.5B 半導體基金；中國遺留製程 50% by 2030；updated 2026-08-15）
+  - wiki/index.md（頁面數 371→375；來源數 329→333；4 個新 sources 條目；Samsung/HBF 條目更新；updated 2026-08-15）
+- 主要新知識：
+  1. **Sandisk HBF 首次 tape-out 完成（2026-08-13 投資者日）**：HBF 從規格紙跨入工程實體里程碑；時程修正為 2027 樣品/2028 量產（比此前「2H26 樣品」預期略延後）；Goldman Sachs 量化：4 HBF GPU 等效 8 HBM GPU 的 AI 推論輸出——是 wiki 首個可引用的 HBF vs HBM 效益比較數字，確立 HBF 在「成本優先」AI 推論場景的實際商業案例。
+  2. **Samsung NRD-K Line 2 轉型 2nm HBM5 base die**：首次確認 HBM5 邏輯底層採用 GAA 架構 2nm 製程，且所需運作速度 >50% 高於 HBM4E——為 wiki 提供迄今最具體的 HBM5 製程技術規格。「send fab」模式（小型特化廠補充主量產線）若落實，將成為 HBM 封裝產能擴張的新型態（類比 TSMC 外包 CoW 給 OSAT 的邏輯）。
+  3. **Applied Materials FY2026 封裝設備成長 >50%→>70%**：單季度上調 20 個百分點，是封裝設備市場加速度最直接的量化指標，與 BCC Research 2024-2030 CAGR 14.8% 預測相互驗證。
+
+## [2026-08-15] ingest | TrendForce：Samsung NRD-K Line 2 轉型 2nm HBM5 base die
+- 來源類型：news
+- 原始路徑：raw/articles/2026-08-14_trendforce_samsung-nrdk-line2-2nm-hbm5-base-die.md
+- 觸及頁面：entities/samsung.md, technologies/hbm4.md（共 2 頁，透過 sources page）
+- 新增知識：HBM5 GAA 2nm 製程節點首次入 wiki；NRD-K Line 2 send fab 模式；KRW 20 兆 3 線路線圖
+- 矛盾/修正：none
+
+## [2026-08-15] ingest | TrendForce：Sandisk HBF 首次 tape-out；2027 樣品、2028 量產
+- 來源類型：news
+- 原始路徑：raw/articles/2026-08-14_trendforce_sandisk-hbf-tapeout-2027-samples-2028-production.md
+- 觸及頁面：technologies/hbf.md, entities/sk-hynix.md（共 2 頁）
+- 新增知識：首次 tape-out 確認；時程修正（2027/2028）；4 HBF=8 HBM 量化比；Sandisk NBM 商業模式
+- 矛盾/修正：HBF 樣品時程由「2H 2026」修正為「2027」（來自 Sandisk 投資者日官方聲明）
+
+## [2026-08-15] ingest | TrendForce：Applied Materials Q3 FY2026 封裝設備成長 >70%
+- 來源類型：news
+- 原始路徑：raw/articles/2026-08-14_trendforce_applied-materials-packaging-growth-70pct-q3-2026.md
+- 觸及頁面：concepts/advanced-packaging-market.md（共 1 頁）
+- 新增知識：AMAT 封裝設備成長從 >50%（Q2）更新至 >70%（Q3）
+- 矛盾/修正：更新既有 wiki 中「>50%」引用（來源 2026-05-15）為 >70%（2026-08-14 最新）
+
+## [2026-08-15] ingest | SemiEngineering Week #151：AMAT >70%；Lam $3B；韓國基金；中國遺留製程 50%
+- 來源類型：article
+- 原始路徑：raw/articles/2026-08-15_semieng_chip-week-151-amat-lam-korea-fund-china.md
+- 觸及頁面：concepts/advanced-packaging-market.md, concepts/geopolitics-advanced-packaging.md（共 2 頁）
+- 新增知識：Lam Research $3B/5 年 R&D 擴建；韓國 $3.5B 半導體基金；中國遺留製程 50% by 2030 預測
+- 矛盾/修正：none

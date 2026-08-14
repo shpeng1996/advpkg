@@ -3,7 +3,7 @@ title: "HBF — High Bandwidth Flash"
 category: technology
 tags: [HBF, NAND, flash, TSV, stacking, SanDisk, SK-Hynix, Hanmi, TCB, AI-inference, storage-class-memory]
 created: 2026-06-11
-updated: 2026-08-10
+updated: 2026-08-15
 sources: [2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-06-05_trendforce_hbf-equipment-race-sandisk-hanmi, 2026-06-22_trendforce_sandisk-hbf-patent-nand-processor-bonding, 2026-05-14_semieng_flash-hbf-high-bandwidth-version]
 related:
   - wiki/technologies/hbm4.md
@@ -42,7 +42,7 @@ HBF（High Bandwidth Flash）是將多顆 **3D NAND 快閃記憶體晶片**透�
 |------|------|------|
 | NAND 製程 | SanDisk 112L BiCS（初代）→ 162L BiCS（⭐2026 目標） | 16 層堆疊 |
 | 堆疊層數 | **16 層 NAND 晶粒** | TCB 封裝 |
-| 樣品時程 | SanDisk：**2H 2026 工程樣品** | 與 AI 晶片整合樣品：2027 |
+| 樣品時程 | SanDisk：**2027 初始樣品**（⭐已修正；2026-08-14 投資者日） | 量產：2028 |
 | 接合技術 | TCB（主流）→ 未來 HB 評估 | |
 | 應用定位 | AI 推論（inference）邊緣/資料中心 | 模型儲存 + 快速存取 |
 
@@ -63,6 +63,16 @@ HBF（High Bandwidth Flash）是將多顆 **3D NAND 快閃記憶體晶片**透�
   - **SanDisk（西部數據）**：2H 2026 工程樣品；2027 商業化；生產地點候選為日本
   - **SK Hynix**：宣布 **V10 375 層 4D NAND**，量產目標 **2027 年初**，效能功耗比（perf/watt）較前代提升 **2.5×**
   *Source: TrendForce 2026-08-04 → [[sources/2026-08-04_trendforce_hbf-standard-fms2026-skhynix-sandisk]]*
+
+- **2026-08-14（⭐最新）**：**Sandisk 投資者日：首款 HBF 產品 Tape-Out 完成；2027 年樣品，2028 年量產；4 HBF GPU = 8 HBM GPU**（TrendForce 2026-08-14，引述 Mizuho/Goldman/Reuters/Economy Tribune）：
+  - Sandisk 在 **2026-08-13 投資者日**宣布首款 HBF 產品已完成 **tape-out**（設計定案送廠），時程較 FMS 2026 前的「2H 2026 樣品」預期稍有延後
+  - **新時程修正**：初始樣品 → **2027**；量產 → **2028**
+  - **量化效益比（Goldman Sachs）**：**4 張 HBF GPU = 8 張 HBM GPU** 的 AI 推論 token 輸出——節省 50% GPU 用量，大幅降低推論基礎設施成本
+  - HBF vs HBM：**8–16× 更大容量**；接近 HBM 讀取頻寬；延遲更高
+  - **聯盟現況**：Google DeepMind、Meta、SK Hynix、Tenstorrent 確認支援；**NVIDIA 尚未承諾**（Mizuho：HBF 不會取代 HBM，但可支援 disaggregated AI 推論架構）
+  - **長期架構（TrendForce 觀點）**：HBM（超高速運算）+ HBF（高密度儲存）**混合記憶體層次架構**，成為大規模 AI 商業化的關鍵使能技術
+  - **Sandisk 財測**：FY28–FY30 年均營收成長 **mid-to-high teens**；調整後毛利率 **~80%**；NBM 協議覆蓋 FY27 ~50%、FY28 ~2/3 儲存產出（8 家客戶含 3 家美國超大規模業者）
+  *Source: TrendForce 2026-08-14 → [[sources/2026-08-14_trendforce_sandisk-hbf-tapeout-investor-day]]*
 
 - **2026-06-05**：TrendForce 深度報導 HBF 設備競賽，揭示關鍵里程碑：
   - **SanDisk** 計畫 **2H 2026** 出貨工程樣品；**2027** 出貨與 AI 晶片整合的系統樣品；採用 16 層 NAND 堆疊

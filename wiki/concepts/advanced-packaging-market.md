@@ -3,7 +3,7 @@ title: "先進封裝市場 / Advanced Packaging Market"
 category: concept
 tags: [market, forecast, CAGR, supply-chain, HBM, chiplet, geopolitics, equipment, SIA, Omdia, Yole, WFE]
 created: 2026-04-24
-updated: 2026-08-12
+updated: 2026-08-15
 sources: [2026-07-31_semieng_chip-week-149, 2026-04-24_initial-survey, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2026-01-23_trendforce_chip-tools-tel-asml, 2026-03-05_trendforce_intel-emib-billions, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2025-12-18_trendforce_micron-capex-hbm4, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2025-05-13_trendforce_top10-osat-2024, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-04-16_ontoinnovation_dragonfly-g5-qualified, 2026-06-23_communicationstoday_foplp-glass-substrate-market-8b-2030, 2026-06-29_trendforce_china-osat-tongfu-jcet-investment, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-26_semieng_chip-week-144, 2026-07-01_trendforce_ase-price-hike-20pct, 2026-07-04_semieng_chip-week-145, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-07-03_trendforce_anthropic-samsung-advanced-packaging, 2026-05-08_trendforce_ajinomoto-abf-1b-land-buy-2032-margins, 2026-07-24_semieng_chip-week-148]
 related:
   - wiki/entities/tsmc.md
@@ -630,3 +630,29 @@ Samsung Electronics 於平澤園區建立約 **50 台 D2W 混合接合機**量�
 - Ajinomoto（味之素）市占 >95%（見 [[sources/2026-05-08_trendforce_ajinomoto-abf-2032-plant]]）
 - 第三廠岐阜 2028 建設、2032 量產，時程無法填補近期缺口
 - 多元採購雖已啟動，但供應商間機械/熱性能差異增加製程控制難度
+
+### ⭐ Applied Materials FY2026 封裝設備成長預測上調至 >70%（2026-08-14）
+
+*Source: TrendForce 2026-08-14 → [[sources/2026-08-14_trendforce_applied-materials-packaging-70pct-q3-2026]]*
+*Source: SemiEngineering Week #151 → [[sources/2026-08-15_semieng_chip-week-151-amat-lam-korea-china]]*
+
+Applied Materials 於 Q3 FY2026 財報（約 2026-08-14 公布）**將全年先進封裝設備成長預測由 >50% 上調至 >70%**，Q3 創下公司史上最高季度環比成長紀錄。
+
+**成長驅動**：
+- HBM 封裝設備需求（TCB、Hybrid Bonding、ECD）加速
+- 3D 晶片堆疊系統（SoIC/Foveros 相關）
+- DRAM 設備在 2H26 進一步加速
+
+**AMAT 封裝設備進度追蹤**（更新）：
+
+| 時點 | AMAT 封裝成長預測 |
+|------|-----------------|
+| Q2 FY2026（2026-05） | >50% |
+| Q3 FY2026（2026-08） | **>70%**（⭐更新） |
+
+**Lam Research $3B / 5 年 R&D 擴建**（SemiEngineering Week #151，2026-08-15）：
+- 實驗室實驗容量提升 >50%
+- 與 NY Creates 合作訓練 ~3,500 名大學生（SEMulator3D 平台）
+- 封裝製程相關技術（ALE、電漿蝕刻、CVD）為主要 R&D 方向之一
+
+**市場意義**：AMAT 從 >50% → >70% 的單季上調（+20 個百分點）顯示 AI 供應鏈對封裝設備的需求加速度超出預期，與 BCC Research $38.6B→$87.6B（CAGR 14.8%）的市場成長預測相互印證。

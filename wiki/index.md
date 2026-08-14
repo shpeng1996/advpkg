@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-08-14
-**頁面總數 Total Pages**：371
-**原始來源數 Sources**：329
+**更新時間 Updated**：2026-08-15
+**頁面總數 Total Pages**：375
+**原始來源數 Sources**：333
 
 ---
 
@@ -16,7 +16,7 @@
 
 - [[entities/tsmc]] — 台積電；全球最大晶圓代工廠；CoWoS/SoIC 技術領導者；**董事會批准 US$294 億 CapEx（2026-08-11）；月 CoWoS 產能 14 萬套（2026 末）/22 萬套（2027 末）**；研發類 EMIB 矽橋封裝（聯手欣興 Kinsus）⭐更新
 - [[entities/intel]] — 英特爾；IDM；EMIB-T 今年內 fab 量產（45µm→35/25µm 路線圖、Jaguar Shores 首款產品推測）；**Xeon 6+ 18A 首款商業 CPU**（2026-06-19）；**CEO 暗示重返記憶體、ZAM 架構、Saimemory JV（Intel+SoftBank）、前 SK Hynix CEO 李錯熹加盟**（2026-08-14）⭐更新
-- [[entities/samsung]] — 三星；IDM + Foundry + Memory；**Q2 2026 正式財報：DS 部門 KRW 89.5T 占合併 99.7%；HBM4 Q3 三倍成長；MX 首次季虧損**；GlaSSEM JV（玻璃基板 2H27 量產）；光州新封裝基地（TCB 231K + HCB 19.5K/月）⭐更新
+- [[entities/samsung]] — 三星；IDM + Foundry + Memory；**NRD-K Line 2 轉型 2nm HBM5 base die（GAA，2H28）**；Q2 2026 正式財報：DS 部門 KRW 89.5T 占合併 99.7%；HBM4 Q3 三倍成長；MX 首次季虧損；GlaSSEM JV；光州新封裝基地⭐更新
 - [[entities/sk-hynix]] — SK Hynix；HBM 市場領導者；**Q2 2026 正式財報：KRW 79.3T 營收 +257% YoY、KRW 60.5T 利潤 +557%、Op Margin 76%（歷史新高）；HBM4 批量出貨確認；「One Team」模式（SK+NVIDIA+TSMC）**（2026-08-13）⭐更新
 - [[entities/asmpt]] — ASMPT Limited；TCB/混合接合/Photonics-CPO 設備領導廠商；Q1 2026 訂單 27M +71.6% YoY；NEXX 出售給 AMAT⭐新增
 - [[entities/ase-group]] — ASE Group；全球最大 OSAT；CoWoP 面板封裝；**SPIL 斗六廠破土（TWD 100 億/2028 一期）；2026 CapEx $10.5B；2027 LEAP 目標 $7.5B+；FOPLP Q1 2027**；AMD EFB 合作⭐更新
@@ -49,7 +49,7 @@
 - [[technologies/foveros]] — Foveros；Intel 3D 堆疊；Foveros Direct 3D（<10µm Cu-Cu，2026 量產）；875 GB/s 3D 頻寬⭐新增
 - [[technologies/foplp]] — FOPLP（扇出面板級封裝）；**CFMEE PLP 2000 通過技術資格認證——中國首套 510×515mm PLP 直寫微影系統（2µm；CoPoS/FOPLP/玻璃基板）**（2026-07-07）⭐更新
 - [[technologies/glass-substrate]] — 玻璃核心基板（TGV）；**GlaSSEM JV（Samsung EM+Sumitomo，2H27）+ TSMC JPCA 2026 首次公開量化性能數據（COP +16%、電感 -42%）**（2026-07-07）⭐更新
-- [[technologies/hbf]] — **HBF（High Bandwidth Flash）**；TSV 堆疊 NAND；SanDisk 2H26 樣品；SK Hynix+SanDisk 標準化；Hanmi TCB 設備 2H26 首交付；**Synopsys/Rambus PHY；UMC base die；AI 推論記憶體層次架構整理**（2026-08-10）⭐更新
+- [[technologies/hbf]] — **HBF（High Bandwidth Flash）**；**Sandisk 首次 tape-out（2026-08-14）；2027 樣品、2028 量產（時程修正）；4 HBF GPU=8 HBM GPU（50% GPU 節省）**；SKH+SanDisk 標準化（OCP/UCIe）；Grade 1-3（0.4-3.0 TB/s）；512GB⭐更新
 - [[technologies/tsv]] — **TSV（Through-Silicon Via / 矽穿孔）**；HBM TSV 2–5µm/30–60µm（via-middle）；矽中介層 TSV 5–20µm/80–120µm；8步驟製程流程；NanoTSV（<100nm）2nm+ 背面供電；Amkor Rick Reed 觀點（2026-08-10）⭐新增
 
 ---
@@ -64,6 +64,10 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-08-15_semieng_chip-week-151-amat-lam-korea-china]] — SemiEngineering Week #151：**Applied Materials FY2026 封裝設備成長 >70%；Lam Research $3B/5年 R&D 擴建；韓國 $3.5B 半導體基金；中國遺留製程晶片 2030 年逼近全球 50%；SPIL 斗六廠確認**（2026-08-15 收錄；原文 2026-08-15）⭐新增
+- [[sources/2026-08-14_trendforce_sandisk-hbf-tapeout-investor-day]] — TrendForce：**Sandisk 投資者日——首款 HBF 產品 tape-out 完成；2027 樣品、2028 量產；4 HBF GPU=8 HBM GPU（AI 推論 50% GPU 節省）；Sandisk FY28-30 mid-to-high teens 成長、80% 毛利率；NBM 協議 8 家客戶含 3 美國超大規模業者**（2026-08-15 收錄；原文 2026-08-14）⭐新增
+- [[sources/2026-08-14_trendforce_applied-materials-packaging-70pct-q3-2026]] — TrendForce：**Applied Materials Q3 FY2026——封裝設備成長預測上調至 >70%（前次 >50%）；Q3 史上最高季度環比成長；DRAM 2H26 加速；中國 Q3 最大市場**（2026-08-15 收錄；原文 2026-08-14）⭐新增
+- [[sources/2026-08-14_trendforce_samsung-nrdk-2nm-hbm5-base-die]] — TrendForce：**三星 NRD-K Line 2 轉型代工——製造 2nm HBM5 邏輯底層；GAA 架構；>50% 速度要求超 HBM4E；2H28 開啟；send fab 模式；NRD-K KRW 20 兆 3 條線至 2030**（2026-08-15 收錄；原文 2026-08-14）⭐新增
 - [[sources/2026-08-13_trendforce_intel-memory-reentry-xbm-zam-saimemory]] — TrendForce：**Intel CEO 暗示重返記憶體；ZAM（8-die HBM替代架構）；Saimemory JV（Intel+SoftBank）；前 SK Hynix CEO 李錯熹加盟；XBM UCIe 無中介層路線 2030+；Terafab 記憶體生產推測**（2026-08-14 收錄；原文 2026-08-13）⭐新增
 - [[sources/2026-08-13_trendforce_samsung-skhynix-hbm4-2h-earnings-pricing]] — TrendForce：**HBM4 ASP 首次量化 $31–32/GB（NVIDIA）/$35–36/GB（其他 ASIC）；Samsung Q3 HBM4 3× QoQ；H2 >60% HBM4；DRAM Q3 +13–18%；SK Hynix HBM3e LTA 定價澄清；SOCAMM2 bit 成長上修至 mid-20%**（2026-08-14 收錄；原文 2026-08-13）⭐新增
 - [[sources/2026-08-12_trendforce_ase-spil-douliu-cowos-2028]] — TrendForce：**ASE/SPIL 斗六廠破土（TWD 100 億/6 公頃/2028 一期）；CoWoS 先進封裝；TSMC 月產能 14 萬套（2026 末）→22 萬套（2027 末）；TSMC 董事會批准 US$294 億 CapEx；SPIL 增資 TWD 162 億**（2026-08-13 收錄）⭐新增

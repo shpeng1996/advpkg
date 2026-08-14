@@ -3,7 +3,7 @@ title: "先進封裝地緣政治 / Geopolitics of Advanced Packaging"
 category: concept
 tags: [geopolitics, US-China, CHIPS-Act, supply-chain, chiplet, NAPMP, export-control, glass-substrate, standards-war, BOE, Corning, Absolics]
 created: 2026-04-26
-updated: 2026-08-11
+updated: 2026-08-15
 sources: [2026-08-10_trendforce_skhynix-chongqing-sale-global-reset, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-23_trendforce_china-osat-sj-semiconductor-ipo, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-08-05_3dincites_iftle636, 2026-03-23_trendforce_musk-terafab-tsmc-packaging, 2026-04-22_trendforce_sk-hynix-indiana-us-plant, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-16_nokia_pennsylvania-atp-expansion, 2026-06-30_amkor-ir_arizona-7billion-groundbreaking, 2026-06-30_digitimes_us-packaging-capacity-10pct-2032, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-10_tomshardware_micron-250b-us-investment-globalwafers, 2026-07-10_semieng_chip-week-146, 2026-07-14_trendforce_huawei-baidu-npo-msa]
 related: [wiki/concepts/advanced-packaging-market.md, wiki/entities/amkor.md, wiki/entities/ase-group.md, wiki/technologies/ucie.md]
 ---
@@ -547,3 +547,43 @@ SK Hynix 正評估出售重慶 OSAT 封裝廠股份，估值約 **KRW 4 兆元�
 **此非中國業務全面退出**：SK Hynix 的 Wuxi DRAM 廠與 Dalian NAND 廠維持運營，中國仍佔其 DRAM 產能 ~30-35%、NAND ~35-40%。重慶廠的出售是**後端封裝（OSAT）的戰略性重組**，而非前端晶圓廠撤資。
 
 **地緣政治含義**：SK Hynix 的動作是「記憶體廠商後端資產去中國化」的首個大規模案例（vs. 此前主要為前端晶圓廠的地緣政治重組）。印第安納廠定位為 HBM 先進封裝中心，是 CHIPS Act 框架下「AI 記憶體封裝回流美國」戰略的具體落地。與 [[entities/amkor.md]] 亞利桑那 $70 億廠並列觀察，美國 HBM 封裝生態雛形正逐步成形。
+
+---
+
+### ⭐ 韓國 $3.5B 半導體基金 + 中國遺留製程晶片 2030 年趨近全球 50%（2026-08-15）
+
+*Source: SemiEngineering Week #151 → [[sources/2026-08-15_semieng_chip-week-151-amat-lam-korea-china]]*
+
+#### 韓國 ~$3.5B 半導體基金
+
+南韓政府宣布設立約 **$3.5B 半導體專項基金**，目標扶持以下領域的有潛力企業：
+- 材料（Materials）
+- 零組件（Components）
+- 設備（Equipment）
+- 無晶圓廠設計（Fabless）
+
+同步配套 **$3.5B 貿易融資**，支援出口導向型供應商。
+
+**地緣政治意涵**：
+- 此基金是韓國針對美中科技競爭的供應鏈自主化策略延伸，補強三星/SK Hynix 的上游材料設備生態
+- 時序上緊隨中國深圳 RMB 100 億（2026-07-20）、武漢 RMB 180 億母基金（2026-07）之後，形成明確的國家資本對抗格局
+- 先進封裝關聯：韓國設備商（SEMES、Hanmi、Besi 韓國事業）、材料商（Korea Circuit、Hanwha、LEENO）均是潛在受益方
+
+#### 中國遺留製程晶片產能 2030 年接近全球 50%
+
+SemiEngineering 分析（2026-08-15）：中國遺留製程（Legacy Node，>28nm）產能預計到 **2030 年接近全球產能 50%**。
+
+**先進封裝含義**：
+- 遺留製程產能過剩推動中國 OSAT 廠商以低成本擴張先進封裝（JCET、Tongfu、CPTG 等 2026 年 RMB 400 億新一輪擴建）
+- 中國有望在中低端 AI 晶片封裝（無需 CoWoS 或 HBM 的場景）建立自給自足的供應鏈
+- 美國/日本/韓國「友好岸外」高端封裝基地的差異化壓力加大
+
+**現有地緣封裝格局更新表**（截至 2026-08-15）：
+
+| 國家/地區 | 最新重大動作 | 規模 |
+|-----------|------------|------|
+| 美國 | CHIPS Act NAPMP + Amkor Arizona $70B | $70B（單廠） |
+| 台灣 | TSMC AP7/AP8 + SPIL 斗六廠 | TWD 100B（SPIL 單廠） |
+| 韓國 | 政府 $3.5B 基金 + SK Hynix 印第安納 HBM 廠 | $3.5B 基金 + $4B 廠 |
+| 日本 | JASM（TSMC）+ Micron 廣島廠 | ¥1.5T（Micron） |
+| 中國 | 深圳/武漢基金 RMB 280 億 + JCET/Tongfu 擴建 | RMB 280 億基金 |
