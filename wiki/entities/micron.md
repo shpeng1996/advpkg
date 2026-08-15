@@ -3,7 +3,7 @@ title: "美光科技 / Micron Technology"
 category: entity
 tags: [memory, HBM4, DRAM, NAND, CapEx, Virginia, Idaho, New-York, onshoring]
 created: 2026-05-03
-updated: 2026-08-13
+updated: 2026-08-16
 sources: [2025-12-18_trendforce_micron-capex-hbm4, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-03-17_trendforce_gtc2026-key-takeaways, 2025-08-05_3dincites_iftle636-samsung-lsb-micron-virginia, 2026-01-23_trendforce_hbm4e-development, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-26_semieng_chip-week-144, 2026-06-25_thelec_micron-q3-fy2026-record, 2026-07-06_trendforce_micron-hiroshima-fab-hbm-1gamma, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-10_tomshardware_micron-250b-us-investment-globalwafers, 2026-07-10_semieng_chip-week-146]
 related:
   - wiki/technologies/hbm4.md
@@ -159,3 +159,15 @@ Micron 的 HBM 熱管理策略與 Samsung（HPB）和 SK Hynix（iHBM）不同�
 - **HBM3E 競爭優勢**：較下一競品省電 **30%**，仍在高量生產
 - **HBM-to-DDR 犧牲比**：HBM3E 為 1:3（100 bits HBM3E = 300 bits DDR 犧牲）；HBM4E 預計惡化至 **1:~4**
 - **市場觀察**：Sadana 指出客戶不太可能同時與三家供應商每個專案都合作，暗示市場將向雙供應商或單一供應商傾斜
+
+### ⭐ 資料中心 DRAM 需求滿足率 <50%；「美製溢價」納入 SCA 定價（2026-08-12）
+
+*Source: TrendForce 2026-08-12 → [[sources/2026-08-12_trendforce_micron-datacenter-demand-below-half.md]]*
+
+- **需求滿足率不足 50%**：Micron EVP Sumit Sadana 於 KeyBanc Tech Leadership Forum（2026-08-10）明確表示，資料中心 DRAM 需求中 Micron 通常只能滿足不到一半
+- **DRAM = 第一大瓶頸**：客戶一致指出 DRAM（而非電力、廠房、或邏輯晶圓）是今日最核心的供應限制
+- **2027 年更緊**：Micron 預期 2027 年供需缺口將進一步惡化，比 2026 更緊俏
+- **SCA 合約機制**：16 份 SCA（Strategic Customer Agreements），~50% 營收覆蓋，含 take-or-pay，多數到 2030；前 16 份以 CQ2 2026 定價為上限；未來新 SCA 上限將與簽約時市場價格連動（去除頂蓋固定化）
+- **「美製溢價」**：Micron 是美國唯一前端記憶體晶圓廠廠商（Samsung 美國=邏輯代工；SK Hynix 美國=後端封裝）。客戶認可此差異化，Micron 已在 SCA 定價中體現美製溢價
+- **漲價節奏適度放緩**：儘管 2027 年更緊缺，Micron 開始適度放緩價格漲幅（採多管道策略：品組、出貨量、定價三者平衡）
+- 伺服器 DRAM 合約價 Q3 2026 +13–18% QoQ（TrendForce 預測）

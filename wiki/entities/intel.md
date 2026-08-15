@@ -3,7 +3,7 @@ title: "英特爾 / Intel"
 category: entity
 tags: [IDM, advanced-packaging, EMIB, Foveros, Intel18A, Clearwater-Forest, Foveros-Direct, glass-substrate, 14A, High-NA-EUV, silicon-capacitors, Google-TPU-v8e, Q2-2026-earnings, Tesla-14A, HLFF, RAMP-C, Secure-Enclave, Rio-Rancho]
 created: 2026-04-24
-updated: 2026-08-14
+updated: 2026-08-16
 sources: [2026-04-24_initial-survey, 2026-07-20_trendforce_tsmc-265b-arizona-intel-novalake, 2026-03-18_trendforce_intel-emib-malaysia, 2026-03-03_trendforce_intel-clearwater-forest, 2026-03-05_trendforce_intel-emib-billions, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-04-20_trendforce_intel-foundry-14a-equipment, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-01_semianalysis_cpus-back-datacenter-2026, 2026-04-10_3dincites_intel-gan-chiplet, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks, 2026-06-21_convergedigest_intel-emib-t-multi-die-packaging, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap, 2026-07-01_trendforce_terafab-intel-veteran-hire, 2026-04-07_tomshardware_intel-joins-terafab, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-01-30_tomshardware_intel-ai-chip-test-vehicle-emib-t, 2026-07-14_trendforce_intel-ireland-5b-intel3-europe, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-04_semieng_from-blueprint-intel-hlff, 2026-07-31_semieng_chip-week-149, 2026-08-13_trendforce_intel-memory-reentry-xbm-zam-saimemory]
 related:
   - wiki/entities/tsmc.md
@@ -209,11 +209,17 @@ Intel CEO Lip-Bu Tan 公開表示，他過去因記憶體屬商品性質而避�
 - 主要任務：支援 ZAM 技術研發與商業化
 - 此 JV 將 Intel 記憶體雄心延伸至日本生態系，與 SoftBank 在 AI 晶片方面的廣泛投資形成互補
 
-### 前 SK Hynix CEO 李錯熹（Seok-Hee Lee）加盟 Intel
+### ⭐ 前 SK Hynix CEO 李錯熹（Seok-Hee Lee）正式就任 Intel Foundry EVP——主導先進封裝（2026-06-18）
 
-- **Seok-Hee Lee** 已加盟 Intel，擔任記憶體創新策略要職（Lip-Bu Tan 親自提及）
-- 李錯熹背景：前 SK hynix CEO，主導 SK Hynix 在 HBM 技術上的崛起
-- 意義：Intel 正試圖從記憶體巨頭挖角核心人才，強化自身記憶體研發深度
+*Source: TrendForce 2026-06-19 → [[sources/2026-06-19_trendforce_intel-skhynix-exceo-foundry-evp-emib.md]]*
+
+- **Seok-Hee Lee** 正式任命為 **Intel Foundry EVP**（2026-06-18 Intel 官方公告），直屬 CEO Lip-Bu Tan
+- **職責範圍**：先進封裝、系統整合、後端技術開發、後端製造（EMIB-T 和 HBI 量產規模化為核心使命）
+- 李錯熹背景：前 SK On CEO + **前 SK hynix CEO**（主導 SK Hynix HBM 技術崛起）；職涯早期亦曾在 Intel 擔任工程職位
+- **HBI（Hybrid Bonding Interconnect）**：Lip-Bu Tan 首次官方提及此技術名稱，為 Intel 封裝內混合接合互連的正式命名
+- 同期人才攻勢：2026 年 4 月引進 Samsung 代工老將 Shawn Han；2025 年末引進前 TSMC SVP Wei-Ren Lo
+- 背景加持：NVIDIA 評估 Intel 18A 多晶粒 GPU；Google 下單 >300 萬顆 TPU（2028 年）；Apple-Intel 合作由 Trump 宣布
+- 前職 Intel Foundry EVP Naga Chandrasekaran 繼續主管前端製程技術與製造（18A/14A），分工明確
 
 ### XBM 路線更新（補充 2026-07-08 原始分析）
 

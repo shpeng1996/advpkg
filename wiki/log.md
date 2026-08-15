@@ -2641,3 +2641,15 @@ an（2028–2029 量產世代）為 CoPoS 最可能的首批量產客戶——�
 - 觸及頁面：concepts/advanced-packaging-market.md, concepts/geopolitics-advanced-packaging.md（共 2 頁）
 - 新增知識：Lam Research $3B/5 年 R&D 擴建；韓國 $3.5B 半導體基金；中國遺留製程 50% by 2030 預測
 - 矛盾/修正：none
+
+## [2026-08-16] collect | 每日自動蒐集 — 先進封裝最新動態（Micron DC需求缺口、Intel Seok-Hee Lee EVP任命、SK Hynix EMIB R&D）
+- 搜尋查詢數：7 組（TSMC CoWoS/SoIC、HBM4 SK Hynix Samsung、Intel EMIB/Foveros、先進封裝市場、混合接合、CoPoS/FOPLP、UCIe chiplet）
+- 成功抓取：3 篇（存入 raw/articles/ 3 篇）
+- 失敗/跳過：多篇（TrendForce 今日（週日）無新文章；SemiEng FOPLP 文章 2024-01 過舊；大部分已收錄）
+- 學術代理：UNAVAILABLE ✗
+- 新增 wiki 頁面：3 頁（wiki/sources/ 3 頁）
+- 更新 wiki 頁面：3 頁（entities/intel.md、entities/micron.md、wiki/index.md）
+- 主要新知識：
+  1. **Micron 資料中心 DRAM 需求滿足率 <50%**（2026-08-10 KeyBanc Forum，Sumit Sadana）：首次明確量化供需缺口，2027 年預期進一步惡化，美製溢價已納入 SCA 合約定價——比「供不應求」的一般描述更具可操作性。
+  2. **Seok-Hee Lee（李錯熹）正式職銜修正**：先前 wiki 記錄為「記憶體創新策略要職」，本次確認為 **Intel Foundry EVP，主責先進封裝 EMIB-T/HBI 量產規模化**（2026-06-18 Intel 官方公告），同時首次記錄 **HBI（Hybrid Bonding Interconnect）**為 Intel 封裝混合接合技術的正式命名。
+  3. **SK Hynix EMIB R&D 確認一手來源補完**：確認 SK Hynix 在 Intel EMIB 基板測試自家 HBM 整合、韓國小規模 2.5D R&D 線存在，以及 Google TPU v8e EMIB 採用的最早報導時間點（2026-05-11）——為 wiki/technologies/emib.md 中已存在的相關資訊提供正式來源頁面。

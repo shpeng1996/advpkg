@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-08-15
-**頁面總數 Total Pages**：375
-**原始來源數 Sources**：333
+**更新時間 Updated**：2026-08-16
+**頁面總數 Total Pages**：378
+**原始來源數 Sources**：336
 
 ---
 
@@ -15,7 +15,7 @@
 ## 實體 Entities（公司、組織）
 
 - [[entities/tsmc]] — 台積電；全球最大晶圓代工廠；CoWoS/SoIC 技術領導者；**董事會批准 US$294 億 CapEx（2026-08-11）；月 CoWoS 產能 14 萬套（2026 末）/22 萬套（2027 末）**；研發類 EMIB 矽橋封裝（聯手欣興 Kinsus）⭐更新
-- [[entities/intel]] — 英特爾；IDM；EMIB-T 今年內 fab 量產（45µm→35/25µm 路線圖、Jaguar Shores 首款產品推測）；**Xeon 6+ 18A 首款商業 CPU**（2026-06-19）；**CEO 暗示重返記憶體、ZAM 架構、Saimemory JV（Intel+SoftBank）、前 SK Hynix CEO 李錯熹加盟**（2026-08-14）⭐更新
+- [[entities/intel]] — 英特爾；IDM；EMIB-T 今年內 fab 量產（45µm→35/25µm 路線圖、Jaguar Shores 首款產品推測）；**Xeon 6+ 18A 首款商業 CPU**（2026-06-19）；**CEO 暗示重返記憶體、ZAM 架構、Saimemory JV（Intel+SoftBank）**（2026-08-14）；**SK Hynix 前 CEO 李錯熹（Seok-Hee Lee）就任 Foundry EVP 主導 EMIB-T/HBI 量產**（2026-06-18）⭐更新
 - [[entities/samsung]] — 三星；IDM + Foundry + Memory；**NRD-K Line 2 轉型 2nm HBM5 base die（GAA，2H28）**；Q2 2026 正式財報：DS 部門 KRW 89.5T 占合併 99.7%；HBM4 Q3 三倍成長；MX 首次季虧損；GlaSSEM JV；光州新封裝基地⭐更新
 - [[entities/sk-hynix]] — SK Hynix；HBM 市場領導者；**Q2 2026 正式財報：KRW 79.3T 營收 +257% YoY、KRW 60.5T 利潤 +557%、Op Margin 76%（歷史新高）；HBM4 批量出貨確認；「One Team」模式（SK+NVIDIA+TSMC）**（2026-08-13）⭐更新
 - [[entities/asmpt]] — ASMPT Limited；TCB/混合接合/Photonics-CPO 設備領導廠商；Q1 2026 訂單 27M +71.6% YoY；NEXX 出售給 AMAT⭐新增
@@ -25,7 +25,7 @@
 - [[entities/besi]] — BE Semiconductor（Besi）；D2W 混合接合設備主供應商；Datacon 8800 CHAMEO；Kinex 平台（Applied Materials 持股 9%）⭐新增
 - [[entities/tel]] — Tokyo Electron（TEL）；RDL 製程設備領導者；Kumamoto 研發基地（¥470 億，2026 春）；Eteris 合資（與 AMAT）⭐新增
 - [[entities/nvidia]] — NVIDIA；Fabless AI GPU 龍頭；CoWoS + SoIC 最大需求方；Rubin Ultra NVL576（100 PFLOPS）；SK Hynix 多年期夥伴（Vera CPU LPDDR5X 1.2 TB/s）；評估 Intel 18A 4晶粒 Feynman（2026-06-09）⭐更新
-- [[entities/micron]] — Micron；美國記憶體 IDM；HBM4 >11 Gbps（Q2'26 HVM）；**廣島廠 ¥1.5T 擴建動土（2026-07-04）、1γ DRAM + HBM、設備 2H28**；Virginia HBM 封裝廠；$200B 美國投資計畫⭐更新
+- [[entities/micron]] — Micron；美國記憶體 IDM；HBM4 >11 Gbps（Q2'26 HVM）；**廣島廠 ¥1.5T 擴建動土（2026-07-04）、1γ DRAM + HBM、設備 2H28**；Virginia HBM 封裝廠；$200B 美國投資計畫；**資料中心 DRAM 需求滿足率 <50%（2026-08-10 KeyBanc）；2027 更緊俏；美製溢價納入 SCA 定價**⭐更新
 - [[entities/amd]] — AMD；Fabless CPU/GPU；Venice 首採 EMIB 等效封裝；MI355X（N3P，2 I/O die）；MI450 aLSI 測試載具⭐新增
 - [[entities/asml]] — ASML；微影設備獨占廠商；XT:260 3D DUV 已出貨（RDL）；評估混合接合設備市場進入⭐新增
 - [[entities/rapidus]] — Rapidus；日本 2nm 新創代工廠；「AI Foundry」框架；封裝共址策略；玻璃基板 600×600mm 最大樣品；量產 2028⭐新增
@@ -64,6 +64,9 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-08-12_trendforce_micron-datacenter-demand-below-half]] — TrendForce：**Micron 資料中心 DRAM 需求滿足率 <50%（KeyBanc Forum）；2027 更緊俏；16 SCA ~50% 營收覆蓋；「美製溢價」已納入定價；伺服器 DRAM Q3 +13–18%**（2026-08-16 收錄；原文 2026-08-12）⭐新增
+- [[sources/2026-06-19_trendforce_intel-skhynix-exceo-foundry-evp-emib]] — TrendForce：**Intel 任命 SK hynix 前 CEO 李錯熹（Seok-Hee Lee）為 Foundry EVP——主管先進封裝 EMIB-T/HBI 量產規模化；Google >300 萬 TPU 2028；NVIDIA 評估 18A；HBI 技術正式命名**（2026-08-16 收錄；原文 2026-06-19）⭐新增
+- [[sources/2026-05-11_trendforce_skhynix-tests-intel-emib-hbm]] — TrendForce：**SK hynix 在 Intel EMIB 基板測試 HBM 整合；CoWoS 供應緊張推動 EMIB 替代探索；Google TPU v8e EMIB 2H2027；Meta MTIA 評估中；EMIB 成本 ~CoWoS 50%**（2026-08-16 收錄；原文 2026-05-11）⭐新增
 - [[sources/2026-08-15_semieng_chip-week-151-amat-lam-korea-china]] — SemiEngineering Week #151：**Applied Materials FY2026 封裝設備成長 >70%；Lam Research $3B/5年 R&D 擴建；韓國 $3.5B 半導體基金；中國遺留製程晶片 2030 年逼近全球 50%；SPIL 斗六廠確認**（2026-08-15 收錄；原文 2026-08-15）⭐新增
 - [[sources/2026-08-14_trendforce_sandisk-hbf-tapeout-investor-day]] — TrendForce：**Sandisk 投資者日——首款 HBF 產品 tape-out 完成；2027 樣品、2028 量產；4 HBF GPU=8 HBM GPU（AI 推論 50% GPU 節省）；Sandisk FY28-30 mid-to-high teens 成長、80% 毛利率；NBM 協議 8 家客戶含 3 美國超大規模業者**（2026-08-15 收錄；原文 2026-08-14）⭐新增
 - [[sources/2026-08-14_trendforce_applied-materials-packaging-70pct-q3-2026]] — TrendForce：**Applied Materials Q3 FY2026——封裝設備成長預測上調至 >70%（前次 >50%）；Q3 史上最高季度環比成長；DRAM 2H26 加速；中國 Q3 最大市場**（2026-08-15 收錄；原文 2026-08-14）⭐新增
