@@ -2,6 +2,15 @@
 
 ---
 
+## [2026-08-17] collect | 每日自動蒐集 — 1MW 機架熱管理 + TSMC-Amkor 10 年 Arizona 協議 + 封裝材料異常行為
+- 搜尋查詢數：7 組（CoWoS/HBM4 最新動態、TSMC 封裝動態、先進封裝市場、熱管理散熱、混合接合研究、UCIe 標準、面板級封裝）
+- 成功抓取：3 篇（存入 raw/articles/ 3 篇）
+- 失敗/跳過：多篇（週末新文章稀少；大部分 2026-08-11–16 文章已在前次 collect 收錄；付費牆 1）
+- 學術代理：UNAVAILABLE ✗
+- 新增 wiki 頁面：3 頁（wiki/sources/ 3 頁）
+- 更新 wiki 頁面：7 頁（entities/tsmc, entities/amkor, concepts/thermal-management, technologies/cowos, technologies/hbm4, wiki/index.md, wiki/log.md）
+- 主要新知識：(1) CoWoS 封裝熱通量量化為 200–600 W/cm²，HBM JEDEC 接面溫度上限 85°C；AI 機架 1MW 目標（2027–28）使液冷在 >100kW 成為強制需求；(2) TSMC-Amkor 10 年 Arizona AP 協議詳情補強（TrendForce 一手來源）——Amkor HVM 2028、TSMC AP 設施 2029；(3) CTE 失配翹曲機制與 STCO 強制化框架——先進封裝的多物理場設計約束系統性文獻化
+
 ## [2026-08-09] collect | 每日自動蒐集 — SK Hynix Y2 KRW54.3T投資 + InP短缺超越DRAM/NAND + Samsung FMS2026晶圓接合技術群
 
 - 搜尋查詢數：7 組（TSMC CoWoS 2026、HBM4/5最新進展、hybrid bonding量產、先進封裝市場預測、Samsung FMS 2026 zHBM、InP shortage CPO、SK Hynix fab expansion）

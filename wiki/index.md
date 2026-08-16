@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-08-16
-**頁面總數 Total Pages**：378
-**原始來源數 Sources**：336
+**更新時間 Updated**：2026-08-17
+**頁面總數 Total Pages**：381
+**原始來源數 Sources**：339
 
 ---
 
@@ -64,6 +64,9 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-08-13_semieng_1mw-rack-debate-thermal]] — SemiEngineering：**1MW 機架辯論——CoWoS 熱通量 200–600 W/cm²；AI 機架功率 200–400kW→1MW（2027–28）；液冷門檻 >100kW；HBM 接面溫度上限 85°C**（2026-08-17 收錄；原文 2026-08-13）⭐新增
+- [[sources/2026-06-17_trendforce_tsmc-amkor-10year-arizona-ap]] — TrendForce：**TSMC-Amkor 10 年期亞利桑那先進封裝協議；Amkor HVM 2028；TSMC AP 設施 2029（CoWoS+3D-IC）；Amkor +67 英畝用地；美國晶片供應鏈閉環確立**（2026-08-17 收錄；原文 2026-06-17）⭐新增
+- [[sources/2026-04-27_semieng_semiconductor-materials-misbehave]] — SemiEngineering：**半導體材料異常行為——CTE 失配翹曲機制；STCO 成為 3D-IC 強制方法論；實驗室-量產落差擴大；AI/數位孿生用於多物理場封裝設計；製程視窗資格認證標準化**（2026-08-17 收錄；原文 2026-04-27）⭐新增
 - [[sources/2026-08-12_trendforce_micron-datacenter-demand-below-half]] — TrendForce：**Micron 資料中心 DRAM 需求滿足率 <50%（KeyBanc Forum）；2027 更緊俏；16 SCA ~50% 營收覆蓋；「美製溢價」已納入定價；伺服器 DRAM Q3 +13–18%**（2026-08-16 收錄；原文 2026-08-12）⭐新增
 - [[sources/2026-06-19_trendforce_intel-skhynix-exceo-foundry-evp-emib]] — TrendForce：**Intel 任命 SK hynix 前 CEO 李錯熹（Seok-Hee Lee）為 Foundry EVP——主管先進封裝 EMIB-T/HBI 量產規模化；Google >300 萬 TPU 2028；NVIDIA 評估 18A；HBI 技術正式命名**（2026-08-16 收錄；原文 2026-06-19）⭐新增
 - [[sources/2026-05-11_trendforce_skhynix-tests-intel-emib-hbm]] — TrendForce：**SK hynix 在 Intel EMIB 基板測試 HBM 整合；CoWoS 供應緊張推動 EMIB 替代探索；Google TPU v8e EMIB 2H2027；Meta MTIA 評估中；EMIB 成本 ~CoWoS 50%**（2026-08-16 收錄；原文 2026-05-11）⭐新增

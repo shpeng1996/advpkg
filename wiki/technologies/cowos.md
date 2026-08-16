@@ -4,7 +4,7 @@ category: technology
 tags: [2.5D, interposer, TSMC, AI, HPC, HBM, COUPE, CPO, packaging-constraints, NVIDIA]
 created: 2026-04-24
 updated: 2026-08-13
-sources: [2026-08-05_trendforce_tsmc-cowos-cow-outsourcing-osat, 2026-05-24_techtimes_nvidia-computex2026-cowos, 2026-04-24_initial-survey, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-15_trendforce_tsmc-vanguard-stake-sale, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-09_financialcontent_tsmc-130k-cowos-wafers, 2026-06-09_digitimes_tsmc-cowos-soic-capacity-symposium, 2026-06-15_trendforce_tsmc-cowos-gap-narrowing-130k-200k-wafers, 2026-06-21_tomshardware_tsmc-fab-expansion-roadmap, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_tmtpost_tsmc-cowos-capacity-targets-2026-2027, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand]
+sources: [2026-08-13_semieng_1mw-rack-debate-thermal, 2026-08-05_trendforce_tsmc-cowos-cow-outsourcing-osat, 2026-05-24_techtimes_nvidia-computex2026-cowos, 2026-04-24_initial-survey, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-15_trendforce_tsmc-vanguard-stake-sale, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-09_financialcontent_tsmc-130k-cowos-wafers, 2026-06-09_digitimes_tsmc-cowos-soic-capacity-symposium, 2026-06-15_trendforce_tsmc-cowos-gap-narrowing-130k-200k-wafers, 2026-06-21_tomshardware_tsmc-fab-expansion-roadmap, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_tmtpost_tsmc-cowos-capacity-targets-2026-2027, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand]
 related:
   - wiki/entities/tsmc.md
   - wiki/technologies/soic.md
@@ -56,8 +56,11 @@ CoWoS 將多顆晶片（GPU、HBM 等）放置於一個中介層（Interposer）
 | 記憶體頻寬成長 | 34× (2024→2029) | — |
 | 佔 TSMC 總營收 | ~10%（2025）→ 持續提升（2026+） | 先進封裝整體 |
 | 主要應用 | NVIDIA GPU（H/B/R 系列）、AMD Instinct | — |
+| **封裝熱通量（Heat Flux）** | **200–600 W/cm²** | AI 加速器量產現況⭐ |
 
-*Source: TSMC 2026 North America Technology Symposium (2026-04-22); TrendForce 2026-04-28*
+*Source: TSMC 2026 North America Technology Symposium (2026-04-22); TrendForce 2026-04-28; SemiEngineering 2026-08-13*
+
+> **⭐ 熱通量量化（2026-08-17 新增）**：CoWoS 封裝熱通量為 **200–600 W/cm²**，比傳統 CPU 封裝（~50–100 W/cm²）高出 4–12 倍，超出氣冷散熱器能力上限；這是 TSMC 展示 CoWoS 直接矽液冷技術的根本驅動力，也是資料中心 1MW 機架目標（2027–2028）的核心熱障礙。*Source: SemiEngineering 2026-08-13（Ann Mutschler）*
 
 > **產能起點校準（2026-05-24 更新）⭐**：台積電 CoWoS 月產能從 **2024 年底 ~35,000 wsm** 起步，目標 2026 年底達 120,000–140,000 wsm，近 **4 倍擴張（不到 2 年）**。NVIDIA 已預訂台積電可用 CoWoS 產能的 **>50%，鎖定至 2027 年**，直接壓縮 AMD、AI ASIC 新創的可用封裝配額。台積電 CEO C.C. Wei 公開確認：「CoWoS 2025 年全訂滿，延伸至 2026 年。」
 > *Source: TechTimes 2026-05-24（引述 Jensen Huang COMPUTEX 2026 台灣行；NVIDIA Q1 FY2027 法說會）*
