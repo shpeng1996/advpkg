@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-08-17
-**頁面總數 Total Pages**：381
-**原始來源數 Sources**：339
+**更新時間 Updated**：2026-08-18
+**頁面總數 Total Pages**：384
+**原始來源數 Sources**：342
 
 ---
 
@@ -15,7 +15,7 @@
 ## 實體 Entities（公司、組織）
 
 - [[entities/tsmc]] — 台積電；全球最大晶圓代工廠；CoWoS/SoIC 技術領導者；**董事會批准 US$294 億 CapEx（2026-08-11）；月 CoWoS 產能 14 萬套（2026 末）/22 萬套（2027 末）**；研發類 EMIB 矽橋封裝（聯手欣興 Kinsus）⭐更新
-- [[entities/intel]] — 英特爾；IDM；EMIB-T 今年內 fab 量產（45µm→35/25µm 路線圖、Jaguar Shores 首款產品推測）；**Xeon 6+ 18A 首款商業 CPU**（2026-06-19）；**CEO 暗示重返記憶體、ZAM 架構、Saimemory JV（Intel+SoftBank）**（2026-08-14）；**SK Hynix 前 CEO 李錯熹（Seok-Hee Lee）就任 Foundry EVP 主導 EMIB-T/HBI 量產**（2026-06-18）⭐更新
+- [[entities/intel]] — 英特爾；IDM；EMIB-T 今年內 fab 量產（45µm→35/25µm 路線圖、Jaguar Shores 首款產品推測）；**Xeon 6+ 18A 首款商業 CPU**（2026-06-19）；**CEO 暗示重返記憶體、ZAM 架構、Saimemory JV（Intel+SoftBank）**（2026-08-14）；**SK Hynix 前 CEO 李錯熹（Seok-Hee Lee）就任 Foundry EVP 主導 EMIB-T/HBI 量產**（2026-06-18）；**$19.7B 股票發行（2026-08-11，5× 超額認購）支撐 14A HVM 2028 + Ohio 廠 >$100B**⭐更新
 - [[entities/samsung]] — 三星；IDM + Foundry + Memory；**NRD-K Line 2 轉型 2nm HBM5 base die（GAA，2H28）**；Q2 2026 正式財報：DS 部門 KRW 89.5T 占合併 99.7%；HBM4 Q3 三倍成長；MX 首次季虧損；GlaSSEM JV；光州新封裝基地⭐更新
 - [[entities/sk-hynix]] — SK Hynix；HBM 市場領導者；**Q2 2026 正式財報：KRW 79.3T 營收 +257% YoY、KRW 60.5T 利潤 +557%、Op Margin 76%（歷史新高）；HBM4 批量出貨確認；「One Team」模式（SK+NVIDIA+TSMC）**（2026-08-13）⭐更新
 - [[entities/asmpt]] — ASMPT Limited；TCB/混合接合/Photonics-CPO 設備領導廠商；Q1 2026 訂單 27M +71.6% YoY；NEXX 出售給 AMAT⭐新增
@@ -43,7 +43,7 @@
 - [[technologies/hybrid-bonding]] — 混合接合（Cu-Cu）；W2W/D2W/D2D 三情境框架（ECTC 2025）；目標 1M/mm²；**翹曲管理確認為 HVM 製程橫跨全流程的新約束**（2026-07-30）⭐更新
 - [[technologies/hbm4]] — HBM4；JEDEC JESD270-4；1.65+ TB/s；**Custom HBM4E 時代起點（Micron EVP）；HBM-to-DDR 犧牲比 3:1→4:1；HBM4E logic die = TSMC；SK hynix「One Team」**（2026-08-13）；**HBM4 ASP 首次量化 $31–32/GB（NVIDIA）；客戶多元化至 AMD/Google**（2026-08-14）⭐更新
 - [[technologies/ucie]] — UCIe；Chiplet 互連標準；UCIe 3.0：64GT/s quarter-rate、BER 差異化、Arm CHI 映射、L2 深度睡眠（2026-06-18）⭐更新
-- [[technologies/copackaged-optics]] — TSMC-COUPE™ 共封裝光學元件（CPO）；Intel OFC 2026 玻璃基板原型曝光；量產落後 Nvidia/AMD（2026-06-18）⭐更新
+- [[technologies/copackaged-optics]] — TSMC-COUPE™ 共封裝光學元件（CPO）；Intel OFC 2026 玻璃基板原型曝光；量產落後 Nvidia/AMD（2026-06-18）；**銅三重限制（損耗/距離/功耗）確立 CPO 五年全光化論述基礎；CPO -70% 功耗 vs 可插拔**（2026-08-13）⭐更新
 - [[technologies/info-wmcm]] — InFO（2016 商轉）+ WMCM（2026 量產）；TSMC 行動晶片封裝旗艦；Apple A20 iPhone18 採用 WMCM⭐新增
 - [[technologies/emib]] — EMIB（Embedded Multi-Die Interconnect Bridge）；Intel 2.5D 局部矽橋；**TSMC CEO C.C. Wei 2026-07-16 公開歡迎 EMIB；NVIDIA Feynman/Google HumuFish/Amazon Trainium 3 潛在客戶**（2026-07-30）⭐更新
 - [[technologies/foveros]] — Foveros；Intel 3D 堆疊；Foveros Direct 3D（<10µm Cu-Cu，2026 量產）；875 GB/s 3D 頻寬⭐新增
@@ -64,6 +64,9 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-08-13_semieng_coppers-grip-ai-scaling-slip]] — SemiEngineering：**銅互連物理極限論述——損耗/距離/功耗三重限制；CPO 取代可插拔光模組；電路交換配套架構；2030 年代全光化業界共識；CPO 功耗 -70% vs 可插拔**（2026-08-18 收錄；原文 2026-08-13）⭐新增
+- [[sources/2026-08-11_tomshardware_intel-19-7b-stock-offering-14a]] — Tom's Hardware：**Intel $19.7B 股票發行（$95/股）；$1,000 億超額認購（5×）；14A HVM 2028；Ohio >$1,000 億；市值 $900B→$4,910 億**（2026-08-18 收錄；原文 2026-08-11）⭐新增
+- [[sources/2026-08-11_semieng_hbm-testbed-3d-assembly-yield]] — SemiEngineering：**HBM 成為 3D 封裝良率/DFT 主實驗場；TSV/微凸塊三層缺陷模型；探針污染良率風險；HBM5 混合接合 DFT 質變；左移測試方法論**（2026-08-18 收錄；原文 2026-08-11）⭐新增
 - [[sources/2026-08-13_semieng_1mw-rack-debate-thermal]] — SemiEngineering：**1MW 機架辯論——CoWoS 熱通量 200–600 W/cm²；AI 機架功率 200–400kW→1MW（2027–28）；液冷門檻 >100kW；HBM 接面溫度上限 85°C**（2026-08-17 收錄；原文 2026-08-13）⭐新增
 - [[sources/2026-06-17_trendforce_tsmc-amkor-10year-arizona-ap]] — TrendForce：**TSMC-Amkor 10 年期亞利桑那先進封裝協議；Amkor HVM 2028；TSMC AP 設施 2029（CoWoS+3D-IC）；Amkor +67 英畝用地；美國晶片供應鏈閉環確立**（2026-08-17 收錄；原文 2026-06-17）⭐新增
 - [[sources/2026-04-27_semieng_semiconductor-materials-misbehave]] — SemiEngineering：**半導體材料異常行為——CTE 失配翹曲機制；STCO 成為 3D-IC 強制方法論；實驗室-量產落差擴大；AI/數位孿生用於多物理場封裝設計；製程視窗資格認證標準化**（2026-08-17 收錄；原文 2026-04-27）⭐新增

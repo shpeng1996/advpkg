@@ -3,7 +3,7 @@ title: "HBM4 — High Bandwidth Memory 4"
 category: technology
 tags: [memory, HBM, JEDEC, standards, AI, HPC, HBM4E, cleanroom, capacity, ISSCC2026, ZAM, HB3DM, HBM5, zHBM, HPB, FMS-2026]
 created: 2026-04-24
-updated: 2026-08-14
+updated: 2026-08-18
 sources: [2026-08-13_semieng_1mw-rack-debate-thermal, 2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor, 2026-08-10_trendforce_skhynix-chongqing-sale-global-reset, 2026-08-05_trendforce_samsung-v10-zhbm-hbm5-fms2026, 2026-07-30_trendforce_samsung-ds-q2-2026-hbm4-triple-q3, 2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-03-18_trendforce_intel-emib-malaysia, 2026-01-23_trendforce_hbm4e-samsung-skhynix-mid2026, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-01-13_semiengineering_hbm4-microbumps, 2025-12-18_trendforce_micron-capex-hbm4, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h, 2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-03-03_trendforce_sk-hynix-hbm4-tight-gaps, 2025-08-12_semianalysis_hbm-roadmap, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit, 2026-06-09_astutegroup_hbm-market-share-2026-battle, 2026-06-10_trendforce_samsung-gwangju-packaging-base, 2026-06-15_trendforce_skhynix-hbm4e-sample-timeline-pulled-forward, 2026-06-20_techtimes_skhynix-hbm4e-12layer-samples, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-27_tweaktown_hbm4-16hi-nvidia-supply-fight, 2026-06-26_semieng_chip-week-144, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-14_trendforce_samsung-hbm-hiring-hbm4-hbm4e-hbm5, 2026-07-14_trendforce_skhynix-yongin-y1-feb2027, 2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b, 2026-08-13_trendforce_samsung-skhynix-hbm4-2h-earnings-pricing]
 related:
   - wiki/entities/sk-hynix.md
@@ -53,6 +53,17 @@ HBM（High Bandwidth Memory）將多層 DRAM 晶片垂直堆疊，透過 TSV（T
 | 熱管理技術 | — | — | **Samsung HPB（已驗證）⭐；SK Hynix iHBM目標HBM5** | **HPB + iHBM** |
 
 *HBM4E 規格確認來源：Samsung 官方公告 2026-05-29（14 Gbps / 3.6 TB/s / 48 GB）；JEDEC 高度規格：TrendForce 2026-04-01（提議，尚未確認）*
+
+### ⭐ 2026-08-18 更新：HBM 成為 3D 封裝良率與測試方法論的核心實驗場
+
+**SemiEngineering 2026-08-11**（Laura Peters）確認 HBM 在 3D 良率工程中的關鍵角色：
+- **HBM 是業界最具規模的 3D 封裝良率學習平台**：每個 HBM4 封裝整合 TSV、微凸塊（microbumps）、多層 die 堆疊與高速介面，形成業界最複雜的 3D DFT（Design for Test）需求場景
+- **三層缺陷模型**：TSV、微凸塊、die-to-die 介面各自需要獨立的缺陷模型與測試演算法，不可使用傳統平面 DRAM 測試方法
+- **探針污染是 HBM4 微凸塊時代的隱性良率風險**：晶圓探針測試可能污染微凸塊表面，影響後續接合品質
+- **HBM4E → HBM5 的混合接合過渡是 DFT 的質變點**：測試對象從「焊球群組」轉為「每個 Cu-Cu 接合點」，TSV 測試覆蓋率目標 >99%
+- **左移測試（Shift-Left Test）**：在完整堆疊前進行早期測試，防止 compound yield loss 的積累效應
+
+*Source: SemiEngineering 2026-08-11 → [[sources/2026-08-11_semieng_hbm-testbed-3d-assembly-yield]]*
 
 ### ⭐ 2026-08-03 更新：Samsung Q2 2026 正式財報確認 HBM4 Q3 營收將三倍成長
 

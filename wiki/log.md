@@ -2662,3 +2662,22 @@ an（2028–2029 量產世代）為 CoPoS 最可能的首批量產客戶——�
   1. **Micron 資料中心 DRAM 需求滿足率 <50%**（2026-08-10 KeyBanc Forum，Sumit Sadana）：首次明確量化供需缺口，2027 年預期進一步惡化，美製溢價已納入 SCA 合約定價——比「供不應求」的一般描述更具可操作性。
   2. **Seok-Hee Lee（李錯熹）正式職銜修正**：先前 wiki 記錄為「記憶體創新策略要職」，本次確認為 **Intel Foundry EVP，主責先進封裝 EMIB-T/HBI 量產規模化**（2026-06-18 Intel 官方公告），同時首次記錄 **HBI（Hybrid Bonding Interconnect）**為 Intel 封裝混合接合技術的正式命名。
   3. **SK Hynix EMIB R&D 確認一手來源補完**：確認 SK Hynix 在 Intel EMIB 基板測試自家 HBM 整合、韓國小規模 2.5D R&D 線存在，以及 Google TPU v8e EMIB 採用的最早報導時間點（2026-05-11）——為 wiki/technologies/emib.md 中已存在的相關資訊提供正式來源頁面。
+
+## [2026-08-18] collect | 每日自動蒐集 — 先進封裝最新動態
+- 搜尋查詢數：7 組（TSMC CoWoS/SoIC、HBM4 SK Hynix Samsung、Intel EMIB/14A、先進封裝市場、混合接合良率、CoPoS/FOPLP 面板級、UCIe chiplet 標準）
+- 成功抓取：3 篇（存入 raw/articles/ 3 篇, raw/papers/ 0 篇, raw/reports/ 0 篇）
+- 失敗/跳過：多篇（TrendForce 今日（週二）類別頁無新文；SemiEng 兩篇 fetch 為 partial（62.8KB + 58.8KB，JS 渲染問題）；ECTC 2026 封裝文章已收錄（2026-06-10 + 2026-07-06 重複確認）；大部分搜尋結果已在 _collected_urls.txt 中）
+- 學術代理：UNAVAILABLE ✗
+- 新增 wiki 頁面：3 頁（全為 sources/）
+  - wiki/sources/2026-08-11_semieng_hbm-testbed-3d-assembly-yield.md
+  - wiki/sources/2026-08-13_semieng_coppers-grip-ai-scaling-slip.md
+  - wiki/sources/2026-08-11_tomshardware_intel-19-7b-stock-offering-14a.md
+- 更新 wiki 頁面：4 頁
+  - wiki/entities/intel.md（$19.7B 股票發行、14A HVM 2028、Ohio >$1,000 億、EMIB-T/HBI 用途）
+  - wiki/technologies/hbm4.md（HBM 成為 3D 封裝良率實驗場；TSV/微凸塊/介面三層缺陷模型；探針污染風險；HBM5 混合接合 DFT 質變；左移測試）
+  - wiki/technologies/copackaged-optics.md（銅三重限制論述確立；CPO vs 可插拔光模組 -70% 功耗；~1 米傳輸距離極限；2030 年代全面 CPO 業界共識）
+  - wiki/index.md（頁面數 381→384；來源數 339→342；3 個新 sources 條目；Intel/CPO 描述更新）
+- 主要新知識：
+  1. **HBM 成為 3D 封裝 DFT 方法論的核心實驗場**（SemiEng 2026-08-11，Laura Peters）：TSV/微凸塊/die-to-die 介面需各自獨立缺陷模型；探針污染是 HBM4 微凸塊時代的隱性良率風險；HBM5 混合接合過渡是測試覆蓋率目標與 DFT 工具鏈的質變，非量變；「左移測試」防止複合良率損失。
+  2. **銅互連物理極限論述確立——CPO 五年全面取代共識出現**（SemiEng 2026-08-13，Bryon Moyer）：400G/lane 實用傳輸距離 ~1 米；損耗＋距離＋功耗三重限制；CPO 相較可插拔光模組省電 ~70%；Scale-out 先行、Scale-up 跟進；2030 年代中期全面轉換為業界共識，加速 TSMC COUPE / Intel 玻璃基板 CPO 等方案的戰略價值。
+  3. **Intel $19.7B 股票發行成功——5× 超額認購確認 14A 投資信念**（Tom's Hardware 2026-08-11）：210.5M 股 @$95，淨融資 $19.7B；需求達 $1,000 億（Bloomberg）；用途明確含 EMIB-T 規模化、HBI 爬坡、Ohio >$1,000 億廠複合體；14A HVM 2028；Tesla 首位 14A 客戶；市值 $490B（ATH $673B 2026-06-20）。

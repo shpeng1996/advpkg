@@ -3,7 +3,7 @@ title: "英特爾 / Intel"
 category: entity
 tags: [IDM, advanced-packaging, EMIB, Foveros, Intel18A, Clearwater-Forest, Foveros-Direct, glass-substrate, 14A, High-NA-EUV, silicon-capacitors, Google-TPU-v8e, Q2-2026-earnings, Tesla-14A, HLFF, RAMP-C, Secure-Enclave, Rio-Rancho]
 created: 2026-04-24
-updated: 2026-08-16
+updated: 2026-08-18
 sources: [2026-04-24_initial-survey, 2026-07-20_trendforce_tsmc-265b-arizona-intel-novalake, 2026-03-18_trendforce_intel-emib-malaysia, 2026-03-03_trendforce_intel-clearwater-forest, 2026-03-05_trendforce_intel-emib-billions, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-04-20_trendforce_intel-foundry-14a-equipment, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-01_semianalysis_cpus-back-datacenter-2026, 2026-04-10_3dincites_intel-gan-chiplet, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks, 2026-06-21_convergedigest_intel-emib-t-multi-die-packaging, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap, 2026-07-01_trendforce_terafab-intel-veteran-hire, 2026-04-07_tomshardware_intel-joins-terafab, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-01-30_tomshardware_intel-ai-chip-test-vehicle-emib-t, 2026-07-14_trendforce_intel-ireland-5b-intel3-europe, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-04_semieng_from-blueprint-intel-hlff, 2026-07-31_semieng_chip-week-149, 2026-08-13_trendforce_intel-memory-reentry-xbm-zam-saimemory]
 related:
   - wiki/entities/tsmc.md
@@ -36,7 +36,10 @@ related:
 
 ## 近期動態 / Recent Developments
 
-- **2026-08-06（⭐最新）**：**HLFF 240mm×240mm 封裝架構藍圖（ECTC 2026）+ Intel Foundry RAMP-C 計畫完成 + Rio Rancho 8×→12× 封裝擴產**
+- **2026-08-11（⭐最新）**：**Intel $19.7 億美元股票發行成功，支撐 14A 路線圖與 Ohio/Arizona 廠擴產**——Intel 以每股 $95 發行 2.105 億股普通股，實際淨融資 **$19.7 億**（8 月 12 日交割）；吸引市場需求 **$1,000 億**（~5× 超額認購，Bloomberg）。資金用途涵蓋：Fab 52 Arizona（18A 量產中）、Fab 62 備用、**Ohio 廠複合體（完整建設成本 >$1,000 億）**、**Intel 14A**（風險量產 2H2027 / HVM 2028）及其他先進製程與封裝擴產。市值由 2025-08 的 ~$900 億增至 **$4,910 億**（歷史最高 $6,730 億，2026-06-20）。說明書明確列出的先進封裝相關用途：EMIB-T 量產規模化、HBI（Hybrid Bonding Interconnect）爬坡、外部代工客戶（NVIDIA/Google/Amazon 評估 EMIB）的產能投資。
+  *Source: Tom's Hardware 2026-08-11 → [[sources/2026-08-11_tomshardware_intel-19-7b-stock-offering-14a]]*
+
+- **2026-08-06（⭐次新）**：**HLFF 240mm×240mm 封裝架構藍圖（ECTC 2026）+ Intel Foundry RAMP-C 計畫完成 + Rio Rancho 8×→12× 封裝擴產**
   - **HLFF 架構（SemiEngineering sponsor blog，2026-08-04，Sujit Sharan + Yang Guo）**：Intel Foundry 在 ECTC 2026 展示超大封裝形態（Hyper-Large Form Factor）路線圖，目標最大 **240 mm × 240 mm**（目前 8× reticle = 120×120mm；路線圖近期 12×+，長期 50× 面板級）。關鍵規格：EMIB-T 金屬層 < 2µm，晶片間 >64 Gb/s/通道，離封裝目標 448 Gb/s（CPO 或 co-packaged copper cable）；嵌入式矽電容 1 mF/reticle area；15–25 kW 總功耗，模組化冷卻每模組 >5 kW。封膠突破：EMIB >5×（18-die + 12 HBM stacks）流距 >40mm 零空洞；EMIB >7× 零空洞；**Foveros 2× 通過完整可靠度（700 TC + 1,000h HTOL）**；Foveros 4× 零空洞。詳見 [[technologies/emib.md]] → [[sources/2026-08-04_semieng_from-blueprint-intel-hlff]]
   - **Intel Foundry RAMP-C 完成**（SemiEng Week#149，2026-07-31）：與美國國防部完成 RAMP-C（Rapid Assured Microelectronics Prototypes-Commercial）計畫，交付 Intel 18A 驗證原型與設計使能套件（含商業 + 國防客戶）。計畫成果流入 **Secure Enclave**——預計提供可信賴、高量的美國境內 Intel 18A + **先進封裝**（EMIB/Foveros）製造。
   - **Rio Rancho 封裝擴產確認**（SemiEng Week#149，2026-07-31）：Rio Rancho, NM 採用 Foveros、EMIB 和 EMIB-T 擴充先進封裝能力，**目前 8× reticle，2028 年目標 12×+**（與 HLFF 路線圖一致）。
