@@ -3,8 +3,8 @@ title: "SK Hynix"
 category: entity
 tags: [memory, HBM, HBM4, advanced-packaging]
 created: 2026-04-24
-updated: 2026-08-14
-sources: [2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor, 2026-08-10_trendforce_skhynix-chongqing-sale-global-reset, 2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab, 2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h, 2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-04-22_trendforce_sk-hynix-pt7-cheongju, 2026-04-22_trendforce_sk-hynix-indiana-us-plant, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-03-03_trendforce_sk-hynix-hbm4-tight-gaps, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-05_trendforce_hbf-equipment-race-sandisk-hanmi, 2026-06-11_trendforce_skhynix-3x-wafer-2034-375layer-nand, 2026-06-20_techtimes_skhynix-hbm4e-12layer-samples, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-24_techtimes_sk-hynix-dethroned-samsung-ddr5-hbm4, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-06-25_techtimes_sk-hynix-nasdaq-adr-29b, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-22_trendforce_skhynix-q2-record-margin, 2026-07-21_trendforce_samsung-cxl-32-skhynix-imte, 2026-07-24_trendforce_skhynix-3d-stacked-dram-on-logic-on-device-ai, 2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b]
+updated: 2026-08-19
+sources: [2026-08-17_trendforce_samsung-skhynix-1h26-investment-nvidia-absent, 2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor, 2026-08-10_trendforce_skhynix-chongqing-sale-global-reset, 2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab, 2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h, 2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-04-22_trendforce_sk-hynix-pt7-cheongju, 2026-04-22_trendforce_sk-hynix-indiana-us-plant, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-03-03_trendforce_sk-hynix-hbm4-tight-gaps, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-05_trendforce_hbf-equipment-race-sandisk-hanmi, 2026-06-11_trendforce_skhynix-3x-wafer-2034-375layer-nand, 2026-06-20_techtimes_skhynix-hbm4e-12layer-samples, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-24_techtimes_sk-hynix-dethroned-samsung-ddr5-hbm4, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-06-25_techtimes_sk-hynix-nasdaq-adr-29b, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-22_trendforce_skhynix-q2-record-margin, 2026-07-21_trendforce_samsung-cxl-32-skhynix-imte, 2026-07-24_trendforce_skhynix-3d-stacked-dram-on-logic-on-device-ai, 2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b]
 related:
   - wiki/entities/samsung.md
   - wiki/technologies/hbm4.md
@@ -27,7 +27,16 @@ SK Hynix 是 **HBM 市場的領導者**，率先量產 HBM3E，並於 2025 H2 �
 
 ## 近期動態 / Recent Developments
 
-- **2026-08-07（⭐最新）**：**龍仁 Y2 + 清州 M17 兩廠投資 KRW 54.3T 董事會核准——龍仁聚落 2033 全廠完工（提前 12 年）**（TrendForce 2026-08-07，引述 Hankyung、SK hynix 官方公告）：
+- **2026-08-19（⭐最新）**：**1H26 設施投資 KRW 17.595T（+56.4%）；R&D 達 KRW 6.043T 近乎翻倍；NVIDIA 佔 1H26 營收降至 13.35%**（TrendForce 2026-08-17，引述 Etoday、DART 半年報、Seoul Economic Daily）：
+  - **1H26 設施投資**：KRW **17.595T**（+56.4% YoY）——遠高於 Samsung DS 的 +23.5%，凸顯 HBM 擴產決心
+  - **產能稼動率**：1H26 達 **100%**（全滿）
+  - **R&D 支出**：KRW **6.043T**（+98.4% YoY），約等於 **2025 全年 R&D 的 90%**，創半年新高
+  - **NVIDIA 客戶佔比**：1H26 NVIDIA 貢獻 KRW **17.6087T**，佔總營收 **13.35%**（較 FY2025 全年約 **24%** 大幅下滑）
+    - 下滑原因：大型科技公司（Meta、Google、Amazon）AI ASIC 自製需求分流——客戶多元化策略奏效
+    - 2H26 展望：Vera Rubin HBM4 放量後 NVIDIA 佔比可能部分回升
+  *Source: TrendForce 2026-08-17 → [[sources/2026-08-17_trendforce_samsung-skhynix-1h26-investment-nvidia-absent]]*
+
+- **2026-08-07（次最新）**：**龍仁 Y2 + 清州 M17 兩廠投資 KRW 54.3T 董事會核准——龍仁聚落 2033 全廠完工（提前 12 年）**（TrendForce 2026-08-07，引述 Hankyung、SK hynix 官方公告）：
   - 董事會核准合計 **KRW 54.3T（≈$380 億 USD）** 投資：龍仁 Y2（KRW 35.2T）+ 清州 M17（KRW 19.1T）
   - **龍仁 Y2（Yongin Y2）**：DRAM 專屬廠，面積 **1.13M m²（341K 坪）**，建設啟動 **2027-07**，第一潔淨室目標 **2029-06**；龍仁聚落四廠目標 **2033 年全部完工**（原計劃 2045 年，提前 12 年）
   - **清州 M17（Cheongju M17）**：NAND 製造廠（清州 M11/M12/M15 第 4 座），面積 **680K m²（206K 坪）**，建設啟動 **2027-02**，第一潔淨室目標 **2028-12**，投資延續至 **2031-04**

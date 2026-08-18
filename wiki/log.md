@@ -2681,3 +2681,22 @@ an（2028–2029 量產世代）為 CoPoS 最可能的首批量產客戶——�
   1. **HBM 成為 3D 封裝 DFT 方法論的核心實驗場**（SemiEng 2026-08-11，Laura Peters）：TSV/微凸塊/die-to-die 介面需各自獨立缺陷模型；探針污染是 HBM4 微凸塊時代的隱性良率風險；HBM5 混合接合過渡是測試覆蓋率目標與 DFT 工具鏈的質變，非量變；「左移測試」防止複合良率損失。
   2. **銅互連物理極限論述確立——CPO 五年全面取代共識出現**（SemiEng 2026-08-13，Bryon Moyer）：400G/lane 實用傳輸距離 ~1 米；損耗＋距離＋功耗三重限制；CPO 相較可插拔光模組省電 ~70%；Scale-out 先行、Scale-up 跟進；2030 年代中期全面轉換為業界共識，加速 TSMC COUPE / Intel 玻璃基板 CPO 等方案的戰略價值。
   3. **Intel $19.7B 股票發行成功——5× 超額認購確認 14A 投資信念**（Tom's Hardware 2026-08-11）：210.5M 股 @$95，淨融資 $19.7B；需求達 $1,000 億（Bloomberg）；用途明確含 EMIB-T 規模化、HBI 爬坡、Ohio >$1,000 億廠複合體；14A HVM 2028；Tesla 首位 14A 客戶；市值 $490B（ATH $673B 2026-06-20）。
+
+## [2026-08-19] collect | 每日自動蒐集 — 先進封裝最新動態（TSMC Arizona 獲利、Samsung/SKH 1H26 投資、客戶結構）
+- 搜尋查詢數：7 組（TSMC CoWoS/SoIC、HBM4 SK Hynix Samsung、Intel EMIB/Foveros、先進封裝市場、混合接合、CoPoS/FOPLP 面板級、UCIe chiplet 標準）
+- 成功抓取：3 篇（存入 raw/articles/ 3 篇, raw/papers/ 0 篇, raw/reports/ 0 篇）
+- 失敗/跳過：多篇（TrendForce 2026-08-18 主要為消費電子（Samsung Fold、CXMT DDR5、MLCC）非封裝主題；SemiEng 熱管理文章 2014 年（太舊）；大部分 2026-08-18 之前結果已收錄）
+- 學術代理：UNAVAILABLE ✗
+- 新增 wiki 頁面：3 頁（全為 sources/）
+  - wiki/sources/2026-08-17_trendforce_tsmc-arizona-profit-663pct-1h26.md
+  - wiki/sources/2026-08-17_trendforce_samsung-skhynix-1h26-investment-nvidia-absent.md
+  - wiki/sources/2026-08-18_semieng_technical-paper-roundup-chiplet-3d.md
+- 更新 wiki 頁面：4 頁
+  - wiki/entities/tsmc.md（Arizona 1H26 獲利 NT$36B +663%；JASM 轉盈；CFO 折舊警告；Q2 -8.2% QoQ）
+  - wiki/entities/samsung.md（1H26 設施投資 KRW 25.6T +23.5%；R&D 歷史半年高；NVIDIA 未列前五大客戶）
+  - wiki/entities/sk-hynix.md（1H26 設施投資 KRW 17.6T +56.4%；R&D 近乎翻倍；NVIDIA 佔比 13.35% ↓）
+  - wiki/index.md（頁面數 384→387；來源數 342→345；3 個新 sources 條目；TSMC/Samsung/SKH 描述更新）
+- 主要新知識：
+  1. **TSMC Arizona 已成最大獲利海外子公司**（TrendForce 2026-08-17，引述 TSMC 1H26 中期報告）：1H26 獲利 NT$36.066B（+662.8% YoY）超越南京廠，貢獻四大海外子公司 60%+ 份額；但 Q2 環比 -8.2%——折舊攤銷成長開始顯現，CFO Wendell Huang 明確警告毛利稀釋 2-3ppt 初期、成熟後 3-4ppt；JASM 首次轉盈（Q1 NT$951M + Q2 NT$727M）。
+  2. **NVIDIA 未列三星 1H26 前五大客戶——迄今最直接的 HBM4 合格進度財務信號**（TrendForce 2026-08-17）：Samsung 前五為 Alphabet/Amazon/Apple/Hong Kong Techtronics/Supreme Electronics（合計 ~25% 營收），NVIDIA 缺席。對比 SK hynix NVIDIA 佔比 13.35%（下滑自 FY2025 ~24%，係客戶多元化所致），兩者方向相反——Samsung 是「尚未進入」，SK hynix 是「主動分散」。
+  3. **Samsung + SK hynix 1H26 合計 KRW 43.2T 設施投資（+35.1%），SK hynix R&D 近翻倍**：兩家均達 100% 稼動率；SK hynix R&D KRW 6.043T 已接近 2025 全年；Micron 新設 $250M 創投基金瞄準 AI 記憶體生態系。

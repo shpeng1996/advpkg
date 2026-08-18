@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-08-18
-**頁面總數 Total Pages**：384
-**原始來源數 Sources**：342
+**更新時間 Updated**：2026-08-19
+**頁面總數 Total Pages**：387
+**原始來源數 Sources**：345
 
 ---
 
@@ -14,10 +14,10 @@
 
 ## 實體 Entities（公司、組織）
 
-- [[entities/tsmc]] — 台積電；全球最大晶圓代工廠；CoWoS/SoIC 技術領導者；**董事會批准 US$294 億 CapEx（2026-08-11）；月 CoWoS 產能 14 萬套（2026 末）/22 萬套（2027 末）**；研發類 EMIB 矽橋封裝（聯手欣興 Kinsus）⭐更新
+- [[entities/tsmc]] — 台積電；全球最大晶圓代工廠；CoWoS/SoIC 技術領導者；**Arizona 1H26 獲利 NT$36B（+663% YoY），超越南京廠成最大獲利海外子公司；JASM 轉盈；10 邏輯廠+2 AP 廠 $265B**；研發類 EMIB 矽橋封裝（聯手欣興 Kinsus）⭐更新
 - [[entities/intel]] — 英特爾；IDM；EMIB-T 今年內 fab 量產（45µm→35/25µm 路線圖、Jaguar Shores 首款產品推測）；**Xeon 6+ 18A 首款商業 CPU**（2026-06-19）；**CEO 暗示重返記憶體、ZAM 架構、Saimemory JV（Intel+SoftBank）**（2026-08-14）；**SK Hynix 前 CEO 李錯熹（Seok-Hee Lee）就任 Foundry EVP 主導 EMIB-T/HBI 量產**（2026-06-18）；**$19.7B 股票發行（2026-08-11，5× 超額認購）支撐 14A HVM 2028 + Ohio 廠 >$100B**⭐更新
-- [[entities/samsung]] — 三星；IDM + Foundry + Memory；**NRD-K Line 2 轉型 2nm HBM5 base die（GAA，2H28）**；Q2 2026 正式財報：DS 部門 KRW 89.5T 占合併 99.7%；HBM4 Q3 三倍成長；MX 首次季虧損；GlaSSEM JV；光州新封裝基地⭐更新
-- [[entities/sk-hynix]] — SK Hynix；HBM 市場領導者；**Q2 2026 正式財報：KRW 79.3T 營收 +257% YoY、KRW 60.5T 利潤 +557%、Op Margin 76%（歷史新高）；HBM4 批量出貨確認；「One Team」模式（SK+NVIDIA+TSMC）**（2026-08-13）⭐更新
+- [[entities/samsung]] — 三星；IDM + Foundry + Memory；**1H26 設施投資 KRW 25.6T（+23.5%）；R&D KRW 27.4T 歷史半年高；NVIDIA 未列 1H26 前五大客戶**；NRD-K Line 2 轉型 2nm HBM5 base die；GlaSSEM JV⭐更新
+- [[entities/sk-hynix]] — SK Hynix；HBM 市場領導者；**1H26 設施投資 KRW 17.6T（+56.4%）；R&D KRW 6T 近乎翻倍；NVIDIA 佔 1H26 營收降至 13.35%（FY2025 ~24%）；Q2 Op Margin 76% 歷史新高；「One Team」模式**⭐更新
 - [[entities/asmpt]] — ASMPT Limited；TCB/混合接合/Photonics-CPO 設備領導廠商；Q1 2026 訂單 27M +71.6% YoY；NEXX 出售給 AMAT⭐新增
 - [[entities/ase-group]] — ASE Group；全球最大 OSAT；CoWoP 面板封裝；**SPIL 斗六廠破土（TWD 100 億/2028 一期）；2026 CapEx $10.5B；2027 LEAP 目標 $7.5B+；FOPLP Q1 2027**；AMD EFB 合作⭐更新
 - [[entities/amkor]] — Amkor；全球第二大 OSAT；Arizona $70 億廠（2028 投產）；Intel EMIB 外包夥伴⭐新增
@@ -64,6 +64,9 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-08-18_semieng_technical-paper-roundup-chiplet-3d]] — SemiEngineering（Aug 18 論文摘要）：**2.5D PIM Chiplet PDN 電壓驟降（ReVolt/Washington St.+UW-Madison）；FAPlace 2.5D 中介層尺寸最佳化（A*STAR）；3D-IC 系統級故障分析硬體（Google+TU Delft）**（2026-08-19 收錄；原文 2026-08-18）⭐新增
+- [[sources/2026-08-17_trendforce_samsung-skhynix-1h26-investment-nvidia-absent]] — TrendForce：**Samsung+SKH 1H26 設施投資 KRW 43.2T（+35.1%）；100% 稼動率；NVIDIA 未列三星前五大客戶；SKH NVIDIA 佔比 13.35%（↓ FY2025 ~24%）；Micron Ventures Paradigm Fund $250M**（2026-08-19 收錄；原文 2026-08-17）⭐新增
+- [[sources/2026-08-17_trendforce_tsmc-arizona-profit-663pct-1h26]] — TrendForce：**TSMC Arizona 1H26 獲利 NT$36.066B（+663% YoY）超越南京廠；四大海外子公司合計 NT$58.5B（+215%）；Q2 環比 -8.2%（折舊增加）；CFO：海外廠毛利稀釋 2-3ppt→3-4ppt；JASM 轉虧為盈**（2026-08-19 收錄；原文 2026-08-17）⭐新增
 - [[sources/2026-08-13_semieng_coppers-grip-ai-scaling-slip]] — SemiEngineering：**銅互連物理極限論述——損耗/距離/功耗三重限制；CPO 取代可插拔光模組；電路交換配套架構；2030 年代全光化業界共識；CPO 功耗 -70% vs 可插拔**（2026-08-18 收錄；原文 2026-08-13）⭐新增
 - [[sources/2026-08-11_tomshardware_intel-19-7b-stock-offering-14a]] — Tom's Hardware：**Intel $19.7B 股票發行（$95/股）；$1,000 億超額認購（5×）；14A HVM 2028；Ohio >$1,000 億；市值 $900B→$4,910 億**（2026-08-18 收錄；原文 2026-08-11）⭐新增
 - [[sources/2026-08-11_semieng_hbm-testbed-3d-assembly-yield]] — SemiEngineering：**HBM 成為 3D 封裝良率/DFT 主實驗場；TSV/微凸塊三層缺陷模型；探針污染良率風險；HBM5 混合接合 DFT 質變；左移測試方法論**（2026-08-18 收錄；原文 2026-08-11）⭐新增

@@ -3,8 +3,8 @@ title: "三星 / Samsung"
 category: entity
 tags: [IDM, foundry, memory, advanced-packaging, X-Cube, HBM, ISSCC2026, I-CubeS, LPDDR6, V10-BV-NAND, zHBM, HBM5, FMS-2026]
 created: 2026-04-24
-updated: 2026-08-15
-sources: [2026-08-14_trendforce_samsung-nrdk-line2-2nm-hbm5-base-die, 2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor, 2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2025-12-30_trendforce_samsung-hbm-surge, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2025-08-05_3dincites_iftle636, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit, 2026-06-10_trendforce_samsung-gwangju-packaging-base, 2026-06-12_digitimes_samsung-packaging-gap-tsmc-intel, 2026-06-15_trendforce_skhynix-hbm4e-sample-timeline-pulled-forward, 2026-06-19_techtimes_vera-rubin-hbm4-suppliers, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-24_techtimes_sk-hynix-dethroned-samsung-ddr5-hbm4, 2026-07-03_trendforce_anthropic-samsung-advanced-packaging, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-07-02_trendforce_samsung-hbm-dummy-die-patent, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo, 2026-07-07_trendforce_samsung-q2-2026-record-krw894t, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-02_trendforce_samsung-sf2p-plus-tsmc-n2-roadmap, 2026-07-14_trendforce_samsung-hbm-hiring-hbm4-hbm4e-hbm5, 2026-07-21_trendforce_samsung-cxl-32-skhynix-imte, 2026-07-24_trendforce_skhynix-3d-stacked-dram-on-logic-on-device-ai]
+updated: 2026-08-19
+sources: [2026-08-17_trendforce_samsung-skhynix-1h26-investment-nvidia-absent, 2026-08-14_trendforce_samsung-nrdk-line2-2nm-hbm5-base-die, 2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor, 2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2025-12-30_trendforce_samsung-hbm-surge, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2025-08-05_3dincites_iftle636, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit, 2026-06-10_trendforce_samsung-gwangju-packaging-base, 2026-06-12_digitimes_samsung-packaging-gap-tsmc-intel, 2026-06-15_trendforce_skhynix-hbm4e-sample-timeline-pulled-forward, 2026-06-19_techtimes_vera-rubin-hbm4-suppliers, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-24_techtimes_sk-hynix-dethroned-samsung-ddr5-hbm4, 2026-07-03_trendforce_anthropic-samsung-advanced-packaging, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-07-02_trendforce_samsung-hbm-dummy-die-patent, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo, 2026-07-07_trendforce_samsung-q2-2026-record-krw894t, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-02_trendforce_samsung-sf2p-plus-tsmc-n2-roadmap, 2026-07-14_trendforce_samsung-hbm-hiring-hbm4-hbm4e-hbm5, 2026-07-21_trendforce_samsung-cxl-32-skhynix-imte, 2026-07-24_trendforce_skhynix-3d-stacked-dram-on-logic-on-device-ai]
 related:
   - wiki/entities/tsmc.md
   - wiki/entities/intel.md
@@ -32,7 +32,16 @@ related:
 
 ## 近期動態 / Recent Developments
 
-- **2026-08-14（⭐最新）**：**三星考慮將 Giheung NRD-K Line 2 轉為代工，製造 2nm HBM5 邏輯底層晶片（NVIDIA 為目標客戶）**（TrendForce 2026-08-14，引述 ZDNet Korean）：
+- **2026-08-19（⭐最新）**：**1H26 設施投資 KRW 25.603T（+23.5%）；R&D 達 KRW 27.363T 歷史半年高；NVIDIA 未列前五大客戶**（TrendForce 2026-08-17，引述 Etoday、DART 半年報、M Today）：
+  - **1H26 設施投資**：Samsung DS KRW **25.603T**（+23.5% YoY），SK hynix KRW 17.595T（+56.4%）；合計 KRW 43.198T（+35.1%）
+  - **Samsung DS 記憶體稼動率**：1H26 達 **100%**（全負載）
+  - **R&D 支出**：Samsung 全公司 KRW **27.363T**（+51.5% YoY），創**歷史半年新高**（未分開揭露 DS 部門）
+  - **1H26 前五大客戶**：Alphabet（Google）、Amazon、Apple、Hong Kong Techtronics、Supreme Electronics（合計約 25% 營收）
+  - ⚠️ **NVIDIA 未列三星 1H26 前五大客戶**：三星 HBM4 資格認證進度訊號——NVIDIA 佔三星實際營收貢獻仍低於 Alphabet/Amazon/Apple；三星 HBM 合作關係仍在密切觀察中
+  - 三星 Q3 HBM4 出貨量預計三倍 QoQ，2H26 HBM4 佔比 >60%，NVIDIA 排名或在 2H26 重組
+  *Source: TrendForce 2026-08-17 → [[sources/2026-08-17_trendforce_samsung-skhynix-1h26-investment-nvidia-absent]]*
+
+- **2026-08-14（次最新）**：**三星考慮將 Giheung NRD-K Line 2 轉為代工，製造 2nm HBM5 邏輯底層晶片（NVIDIA 為目標客戶）**（TrendForce 2026-08-14，引述 ZDNet Korean）：
   - 三星正評估將 **NRD-K Line 2**（R&D 複合設施，正在建設中）從研發角色轉為量產代工廠
   - 目標：製造 **2nm HBM5 邏輯底層（base die）**——採用 **GAA 架構**，速度要求比 HBM4E **>50% 更高**
   - NRD-K Line 2 目標開啟時程：**2H28**；規模較小，擬作為「**送洗廠（send fab）**」補充主量產線

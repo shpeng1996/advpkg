@@ -3,8 +3,8 @@ title: "台積電 / TSMC"
 category: entity
 tags: [foundry, advanced-packaging, CoWoS, SoIC, CoPoS, COUPE, CPO, InFO, WMCM, aLSI, MRAM, 3nm-pricing]
 created: 2026-04-24
-updated: 2026-08-17
-sources: [2026-04-24_initial-survey, 2026-04-13_trendforce_copos-pilot, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2025-12-18_trendforce_apple-wmcm-a20, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-01-20_trendforce_tsmc-wmcm-apple, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap, 2026-04-23_trendforce_tsmc-roadmap-a12-a13-no-high-na-euv, 2026-05-07_trendforce_tsmc-us-expansion-250b-arizona, 2026-05-12_focustaiwan_tsmc-capex-31b-arizona-20b, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-28_reuters_tsmc-kevin-zhang-energy-efficiency, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-09_financialcontent_tsmc-130k-cowos-wafers, 2026-06-09_digitimes_tsmc-cowos-soic-capacity-symposium, 2026-06-15_trendforce_tsmc-cowos-gap-narrowing-130k-200k-wafers, 2026-06-17_digitimes_amkor-tsmc-10year-arizona-deal, 2026-06-17_trendforce_tsmc-amkor-10year-arizona-advanced-packaging, 2026-06-21_tomshardware_tsmc-fab-expansion-roadmap, 2026-06-27_tmtpost_tsmc-cowos-capacity-targets-2026-2027, 2026-07-02_trendforce_samsung-sf2p-plus-tsmc-n2-roadmap, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-22_trendforce_tsmc-2027-price-hike-hpc, 2026-07-20_trendforce_tsmc-265b-arizona-intel-novalake, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan]
+updated: 2026-08-19
+sources: [2026-04-24_initial-survey, 2026-04-13_trendforce_copos-pilot, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2025-12-18_trendforce_apple-wmcm-a20, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-01-20_trendforce_tsmc-wmcm-apple, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap, 2026-04-23_trendforce_tsmc-roadmap-a12-a13-no-high-na-euv, 2026-05-07_trendforce_tsmc-us-expansion-250b-arizona, 2026-05-12_focustaiwan_tsmc-capex-31b-arizona-20b, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-28_reuters_tsmc-kevin-zhang-energy-efficiency, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-09_financialcontent_tsmc-130k-cowos-wafers, 2026-06-09_digitimes_tsmc-cowos-soic-capacity-symposium, 2026-06-15_trendforce_tsmc-cowos-gap-narrowing-130k-200k-wafers, 2026-06-17_digitimes_amkor-tsmc-10year-arizona-deal, 2026-06-17_trendforce_tsmc-amkor-10year-arizona-advanced-packaging, 2026-06-21_tomshardware_tsmc-fab-expansion-roadmap, 2026-06-27_tmtpost_tsmc-cowos-capacity-targets-2026-2027, 2026-07-02_trendforce_samsung-sf2p-plus-tsmc-n2-roadmap, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-22_trendforce_tsmc-2027-price-hike-hpc, 2026-07-20_trendforce_tsmc-265b-arizona-intel-novalake, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-08-17_trendforce_tsmc-arizona-profit-663pct-1h26]
 related:
   - wiki/technologies/cowos.md
   - wiki/technologies/soic.md
@@ -33,7 +33,16 @@ related:
 
 ## 近期動態 / Recent Developments
 
-- **2026-08-07（⭐最新）**：**TSMC 擴大 CoW 步驟外包至 OSATs——封裝分工歷史性轉折**（TrendForce 2026-08-05）：
+- **2026-08-19（⭐最新）**：**TSMC Arizona 1H26 獲利 NT$36.066B（+663% YoY），超越南京廠成為最大獲利海外子公司**（TrendForce 2026-08-17，引述商業時報、經濟日報、TSMC 1H26 中期報告）：
+  - **TSMC Arizona 1H26**：獲利 NT$36.066B，年增 **662.8%**；貢獻四大海外子公司合計 NT$58.529B（+215.4% YoY）的逾 60%
+  - **Q2 環比下滑**：Arizona Q2 獲利 NT$17.259B，環比 **-8.2%**（年增 +307.8%）；折舊攤銷加速是主因
+  - **CFO Wendell Huang（7 月法說）**：海外擴廠初期毛利率稀釋 **2–3ppt**，成熟後擴大至 **3–4ppt**
+  - **JASM 2026 轉虧為盈**：Q1 NT$951M + Q2 NT$727M；M7.1 熊本地震對 Q3 影響仍有不確定性
+  - **TSMC Nanjing**：1H26 NT$14.978B，Q2 NT$7.389B（小幅回落）
+  - Arizona 最終規模：**10 座邏輯廠 + 2 座先進封裝廠**，總計 $265B
+  *Source: TrendForce 2026-08-17 → [[sources/2026-08-17_trendforce_tsmc-arizona-profit-663pct-1h26]]*
+
+- **2026-08-07（次最新）**：**TSMC 擴大 CoW 步驟外包至 OSATs——封裝分工歷史性轉折**（TrendForce 2026-08-05）：
   - TSMC 決定將 CoW（Chip-on-Wafer，晶片貼附中介層）步驟擴大外包給 ASE、SPIL 等 OSAT 廠商
   - 以往 OSAT 僅承接 WoS 步驟；CoW 首次大規模外包，目的是疏通 NVIDIA 及 ASIC AI 晶片封裝瓶頸
   - **NVIDIA 2026 年需求量化**：預訂 TSMC CoWoS 產能 800,000–850,000 wsm，占全年 CoWoS 總產能 >50%
