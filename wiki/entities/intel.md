@@ -3,7 +3,7 @@ title: "英特爾 / Intel"
 category: entity
 tags: [IDM, advanced-packaging, EMIB, Foveros, Intel18A, Clearwater-Forest, Foveros-Direct, glass-substrate, 14A, High-NA-EUV, silicon-capacitors, Google-TPU-v8e, Q2-2026-earnings, Tesla-14A, HLFF, RAMP-C, Secure-Enclave, Rio-Rancho]
 created: 2026-04-24
-updated: 2026-08-18
+updated: 2026-08-20
 sources: [2026-04-24_initial-survey, 2026-07-20_trendforce_tsmc-265b-arizona-intel-novalake, 2026-03-18_trendforce_intel-emib-malaysia, 2026-03-03_trendforce_intel-clearwater-forest, 2026-03-05_trendforce_intel-emib-billions, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-04-20_trendforce_intel-foundry-14a-equipment, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-01_semianalysis_cpus-back-datacenter-2026, 2026-04-10_3dincites_intel-gan-chiplet, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks, 2026-06-21_convergedigest_intel-emib-t-multi-die-packaging, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap, 2026-07-01_trendforce_terafab-intel-veteran-hire, 2026-04-07_tomshardware_intel-joins-terafab, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-01-30_tomshardware_intel-ai-chip-test-vehicle-emib-t, 2026-07-14_trendforce_intel-ireland-5b-intel3-europe, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-04_semieng_from-blueprint-intel-hlff, 2026-07-31_semieng_chip-week-149, 2026-08-13_trendforce_intel-memory-reentry-xbm-zam-saimemory]
 related:
   - wiki/entities/tsmc.md
@@ -36,7 +36,10 @@ related:
 
 ## 近期動態 / Recent Developments
 
-- **2026-08-11（⭐最新）**：**Intel $19.7 億美元股票發行成功，支撐 14A 路線圖與 Ohio/Arizona 廠擴產**——Intel 以每股 $95 發行 2.105 億股普通股，實際淨融資 **$19.7 億**（8 月 12 日交割）；吸引市場需求 **$1,000 億**（~5× 超額認購，Bloomberg）。資金用途涵蓋：Fab 52 Arizona（18A 量產中）、Fab 62 備用、**Ohio 廠複合體（完整建設成本 >$1,000 億）**、**Intel 14A**（風險量產 2H2027 / HVM 2028）及其他先進製程與封裝擴產。市值由 2025-08 的 ~$900 億增至 **$4,910 億**（歷史最高 $6,730 億，2026-06-20）。說明書明確列出的先進封裝相關用途：EMIB-T 量產規模化、HBI（Hybrid Bonding Interconnect）爬坡、外部代工客戶（NVIDIA/Google/Amazon 評估 EMIB）的產能投資。
+- **2026-08-19（⭐最新）**：**CoWoS 訂單全滿，後端封裝溢出至 Intel Malaysia；Unimicron 取得 EMIB-T 客戶承諾，HVM 2027；基板良率為關鍵瓶頸**（TrendForce）——TSMC CoWoS 後端先進封裝訂單完全預訂，**部分訂單溢出至 Intel 馬來西亞廠**（Intel 為馬來西亞唯一能大規模整合 HBM 的廠商）：**~US$1.3B HBM 運往馬來西亞**，台灣收貨低於 US$3B。TSMC C.C. Wei 已表示歡迎競爭對手增加封裝產能以緩解短缺。**Unimicron 已取得 EMIB-T 客戶承諾**，與 **2 家日本供應商**合作，目標 **HVM 2027**；初始良率目標約 **50%**（正爬坡中）；同步擴充 ABF 基板產能。Intel EMIB-T **封裝良率接近 90%**（Wccftech）；**基板良率為當前主要瓶頸**（取代封裝本身）。**ASE COO 吳田玉明確表態**：CoWoS、EMIB 及其他封裝方案並不互斥，ASE 可承接 EMIB-T 組裝測試業務。架構優勢再確認：EMIB 嵌入矽橋至基板（無全尺寸矽中介層），成本潛在低於 CoWoS；規模路線圖：2026 年 >8× 光罩 → 2028 年 >12× 光罩。
+  *Source: TrendForce 2026-08-19 → [[sources/2026-08-19_trendforce_intel-emib-t-cowos-spillover-unimicron-ase]]*
+
+- **2026-08-11（次新）**：**Intel $19.7 億美元股票發行成功，支撐 14A 路線圖與 Ohio/Arizona 廠擴產**——Intel 以每股 $95 發行 2.105 億股普通股，實際淨融資 **$19.7 億**（8 月 12 日交割）；吸引市場需求 **$1,000 億**（~5× 超額認購，Bloomberg）。資金用途涵蓋：Fab 52 Arizona（18A 量產中）、Fab 62 備用、**Ohio 廠複合體（完整建設成本 >$1,000 億）**、**Intel 14A**（風險量產 2H2027 / HVM 2028）及其他先進製程與封裝擴產。市值由 2025-08 的 ~$900 億增至 **$4,910 億**（歷史最高 $6,730 億，2026-06-20）。說明書明確列出的先進封裝相關用途：EMIB-T 量產規模化、HBI（Hybrid Bonding Interconnect）爬坡、外部代工客戶（NVIDIA/Google/Amazon 評估 EMIB）的產能投資。
   *Source: Tom's Hardware 2026-08-11 → [[sources/2026-08-11_tomshardware_intel-19-7b-stock-offering-14a]]*
 
 - **2026-08-06（⭐次新）**：**HLFF 240mm×240mm 封裝架構藍圖（ECTC 2026）+ Intel Foundry RAMP-C 計畫完成 + Rio Rancho 8×→12× 封裝擴產**

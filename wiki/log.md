@@ -2,6 +2,15 @@
 
 ---
 
+## [2026-08-20] collect | 每日自動蒐集 — Intel EMIB-T CoWoS 溢出 + SK Hynix 矽谷 HBM 協同設計團隊
+- 搜尋查詢數：7 組（CoWoS supply/capacity, HBM4 SK Hynix NVIDIA, EMIB-T Unimicron 2027, advanced packaging 2026 August, hybrid bonding HVM, UCIe 3.0 chiplet, Samsung packaging spillover）
+- 成功抓取：2 篇（存入 raw/articles/ 2 篇）
+- 失敗/跳過：多篇（已收錄：SemiEng Week #151 blog、SemiEng CPO 標準化文章；低相關：DRAM spot 價格、設備短缺；付費牆：部分 TechInsights；內容過老：SemiEng PLP 文章 2025-07-24）
+- 新增 wiki 頁面：2 頁（wiki/sources/2026-08-19_trendforce_intel-emib-t-cowos-spillover-unimicron-ase.md、wiki/sources/2026-08-19_trendforce_skhynix-silicon-valley-hbm-codesign-team.md）
+- 更新 wiki 頁面：5 頁（entities/intel.md、entities/sk-hynix.md、entities/ase-group.md、technologies/emib.md、technologies/cowos.md）
+- 主要新知識：(1) CoWoS 訂單全滿確認，後端先進封裝訂單溢出至 Intel Malaysia（~US$1.3B HBM），Intel 為馬來西亞唯一大規模 HBM 整合廠；Unimicron 取得 EMIB-T 客戶承諾（+2 家日本供應商），HVM 2027，初始良率目標~50%；基板良率（非封裝良率）已成為 EMIB-T 主要瓶頸；ASE COO 吳田玉宣示多平台封裝服務定位，CoWoS 與 EMIB 不互斥。(2) SK Hynix 矽谷 HBM Architect Design Team 設立（San Jose，$150-260K），要求 1xnm DRAM + ≤3nm foundry 經驗，與 NVIDIA/AMD/Broadcom 就近共同開發下世代 AI 工廠記憶體架構；Samsung 同步跟進招募 base-die 設計師，顯示 co-design 護城河已成行業競爭新維度。
+- 矛盾/修正：none
+
 ## [2026-08-17] collect | 每日自動蒐集 — 1MW 機架熱管理 + TSMC-Amkor 10 年 Arizona 協議 + 封裝材料異常行為
 - 搜尋查詢數：7 組（CoWoS/HBM4 最新動態、TSMC 封裝動態、先進封裝市場、熱管理散熱、混合接合研究、UCIe 標準、面板級封裝）
 - 成功抓取：3 篇（存入 raw/articles/ 3 篇）

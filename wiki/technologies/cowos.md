@@ -3,7 +3,7 @@ title: "CoWoS — Chip-on-Wafer-on-Substrate"
 category: technology
 tags: [2.5D, interposer, TSMC, AI, HPC, HBM, COUPE, CPO, packaging-constraints, NVIDIA]
 created: 2026-04-24
-updated: 2026-08-13
+updated: 2026-08-20
 sources: [2026-08-13_semieng_1mw-rack-debate-thermal, 2026-08-05_trendforce_tsmc-cowos-cow-outsourcing-osat, 2026-05-24_techtimes_nvidia-computex2026-cowos, 2026-04-24_initial-survey, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-15_trendforce_tsmc-vanguard-stake-sale, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-09_financialcontent_tsmc-130k-cowos-wafers, 2026-06-09_digitimes_tsmc-cowos-soic-capacity-symposium, 2026-06-15_trendforce_tsmc-cowos-gap-narrowing-130k-200k-wafers, 2026-06-21_tomshardware_tsmc-fab-expansion-roadmap, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_tmtpost_tsmc-cowos-capacity-targets-2026-2027, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand]
 related:
   - wiki/entities/tsmc.md
@@ -193,6 +193,20 @@ HBM 在 CoWoS 封裝製程中與 GPU SoC 基板一同熔融組裝，完成後物
 - ASE Group 目標 **2026 年底達 20,000–25,000 wsm**（wafer starts per month）CoWoS 外包產能
 - 此數字對應 TSMC 自有 CoWoS 約 120K–140K wsm 之外的「溢出產能」，ASE 以 CoWoP 面板級封裝技術為基礎承接（詳見 [[entities/ase-group]]）
 - 與 TSMC AP8 台南廠 4 萬片/月目標合計，2026 年底全球 CoWoS 生態系總產能估計接近 200,000 wsm（台積電自有約 140K + ASE 20-25K + 其他 OSAT 35-40K）
+
+## 2026-08-20 更新 / Updates
+
+### ⭐ CoWoS 訂單全滿；後端封裝溢出至 Intel Malaysia；供應緊缺推動 EMIB-T 替代生態成形（2026-08-19）
+
+*Source: TrendForce 2026-08-19 → [[sources/2026-08-19_trendforce_intel-emib-t-cowos-spillover-unimicron-ase]]*
+
+**CoWoS 後端封裝產能持續緊缺，部分訂單溢出至 Intel Malaysia**：
+- TSMC CoWoS 訂單已**完全預訂**，後端先進封裝訂單開始溢出至 Intel 馬來西亞廠支援共同客戶
+- 溢出訂單佐證：~**US$1.3B HBM 運往馬來西亞**，台灣收貨低於 US$3B；Intel 為馬來西亞唯一能大規模整合 HBM 的廠商
+- TSMC CEO C.C. Wei 此前公開歡迎競爭對手（Intel/OSAT）增加封裝產能，稱「有助 TSMC 前道晶圓業務」
+- 供需缺口推動 EMIB-T 替代生態加速：Unimicron HVM 2027、ASE 表態 EMIB-T 組裝測試就緒、Intel Malaysia 實際承接訂單
+
+---
 
 ## 2026-08-07 更新 / Updates
 

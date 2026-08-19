@@ -3,7 +3,7 @@ title: "EMIB — Embedded Multi-Die Interconnect Bridge"
 category: technology
 tags: [Intel, 2.5D, silicon-bridge, chiplet, HBM4, Foveros, glass-substrate, EMIB-T, EMIB-M, silicon-capacitors, power-delivery, HLFF, encapsulation, underfill]
 created: 2026-05-03
-updated: 2026-08-06
+updated: 2026-08-20
 sources: [2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-03-05_trendforce_intel-emib-billions, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-03-03_trendforce_intel-clearwater-forest, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks, 2026-06-21_convergedigest_intel-emib-t-multi-die-packaging, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap, 2026-06-05_semieng_intel-ectc2026-emib-cpo-glass-blog, 2026-01-30_tomshardware_intel-ai-chip-test-vehicle-emib-t, 2026-08-04_semieng_from-blueprint-intel-hlff]
 related:
   - wiki/entities/intel.md
@@ -72,7 +72,15 @@ EMIB 是 Intel 的局部矽橋接技術：將一小片高密度矽橋（bridge d
 
 ## 發展時程 / Timeline
 
-- **2026-08-06（⭐最新）**：**Intel Foundry ECTC 2026 HLFF 架構藍圖——240mm×240mm 超大封裝 + 大面積無空洞封膠技術**（SemiEngineering sponsor blog，Sujit Sharan / Yang Guo，2026-08-04）：
+- **2026-08-19（⭐最新）**：**CoWoS 訂單溢出至 Intel Malaysia；Unimicron 取得客戶承諾 HVM 2027；基板良率成主要瓶頸**（TrendForce 2026-08-19）：
+  - **CoWoS 訂單全滿溢出**：部分後端先進封裝訂單流入 Intel 馬來西亞廠（Intel 是馬來西亞唯一可大規模整合 HBM 的廠商）；佐證：~**US$1.3B HBM 出貨至馬來西亞**，台灣收貨 <US$3B
+  - **Unimicron 正式取得 EMIB-T 客戶承諾**，與 **2 家日本供應商**協作，HVM 目標 **2027**；初始良率目標約 **50%**（正在爬坡）；同步擴充 ABF 基板產能（AI GPU/ASIC/HPC）
+  - **Intel EMIB-T 封裝良率接近 90%**（Wccftech）；**基板良率為當前關鍵瓶頸**——瓶頸從封裝移轉至基板的首次明確確認
+  - **ASE COO 吳田玉**表態：CoWoS、EMIB、其他封裝方案不互斥，ASE 可提供 EMIB-T 組裝與最終測試服務
+  - **成本優勢再量化**：EMIB 嵌入矽橋（無全面積矽中介層），成本結構性低於 CoWoS；假設相同良率穩定度下成本更優
+  *Source: TrendForce 2026-08-19 → [[sources/2026-08-19_trendforce_intel-emib-t-cowos-spillover-unimicron-ase]]*
+
+- **2026-08-06（次新）**：**Intel Foundry ECTC 2026 HLFF 架構藍圖——240mm×240mm 超大封裝 + 大面積無空洞封膠技術**（SemiEngineering sponsor blog，Sujit Sharan / Yang Guo，2026-08-04）：
   - **HLFF（Hyper-Large Form Factor）封裝架構**：最大 **240 mm × 240 mm**（目前 120×120mm 的 4×）；路線圖：8×（現況）→ 12×+（近期）→ 50×（面板級長期）
   - **兩種配置**：Config A（全 EMIB-T 互連，最大頻寬 + 良率恢復）；Config B（基板走線處理器通訊，較簡單但效能略低）
   - **EMIB-T < 2µm 金屬層**，晶片間傳輸速率 **> 64 Gb/s/通道**；目標離封裝速率 **448 Gb/s**（CPO 或 co-packaged copper cable）
