@@ -3,7 +3,7 @@ title: "三星 / Samsung"
 category: entity
 tags: [IDM, foundry, memory, advanced-packaging, X-Cube, HBM, ISSCC2026, I-CubeS, LPDDR6, V10-BV-NAND, zHBM, HBM5, FMS-2026]
 created: 2026-04-24
-updated: 2026-08-19
+updated: 2026-08-21
 sources: [2026-08-17_trendforce_samsung-skhynix-1h26-investment-nvidia-absent, 2026-08-14_trendforce_samsung-nrdk-line2-2nm-hbm5-base-die, 2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor, 2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2025-12-30_trendforce_samsung-hbm-surge, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2025-08-05_3dincites_iftle636, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit, 2026-06-10_trendforce_samsung-gwangju-packaging-base, 2026-06-12_digitimes_samsung-packaging-gap-tsmc-intel, 2026-06-15_trendforce_skhynix-hbm4e-sample-timeline-pulled-forward, 2026-06-19_techtimes_vera-rubin-hbm4-suppliers, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-24_techtimes_sk-hynix-dethroned-samsung-ddr5-hbm4, 2026-07-03_trendforce_anthropic-samsung-advanced-packaging, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-07-02_trendforce_samsung-hbm-dummy-die-patent, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo, 2026-07-07_trendforce_samsung-q2-2026-record-krw894t, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-02_trendforce_samsung-sf2p-plus-tsmc-n2-roadmap, 2026-07-14_trendforce_samsung-hbm-hiring-hbm4-hbm4e-hbm5, 2026-07-21_trendforce_samsung-cxl-32-skhynix-imte, 2026-07-24_trendforce_skhynix-3d-stacked-dram-on-logic-on-device-ai]
 related:
   - wiki/entities/tsmc.md
@@ -32,7 +32,15 @@ related:
 
 ## 近期動態 / Recent Developments
 
-- **2026-08-19（⭐最新）**：**1H26 設施投資 KRW 25.603T（+23.5%）；R&D 達 KRW 27.363T 歷史半年高；NVIDIA 未列前五大客戶**（TrendForce 2026-08-17，引述 Etoday、DART 半年報、M Today）：
+- **2026-08-20（⭐最新）**：**溫陽（Onyang）HBM 新廠 KRW 6T 確認 2026-09 動工；P5 申請三廠房（Triple-Fab）設計**（TrendForce 2026-08-20，引述 ZDNet、Seoul Economic Daily、Business Post）：
+  - **溫陽新廠**：忠清南道（South Chungcheong Province）溫陽園區，KRW **6 兆**（~US$43 億），基地 389,825 m²，預計 **2026-09 動工**；為韓國「三大國家躍進巨型計畫」（半導體、實體 AI、AI 資料中心）首個落地項目；省級審批較預期提前逾一個月
+  - **HBM4 良率**：「已接近 80%」（2026-08 最新，vs <60% 於 2026-02 量產啟動），確認量產良率持續爬升
+  - **華城 H1**：以閒置潔淨室空間擴充通用 DRAM 端製程（end-fab）產能
+  - **平澤 P5 三廠房**：Samsung 向政府申請將 P5 容積率從 **350% → 490%**，使 P5-1/P5-2 採三廠房結構（**6 間潔淨室**，vs P4 雙廠房 4 間），產能較雙廠房提升 >**1.5 倍**；SK hynix 龍仁新廠亦同步跟進三廠房設計；P5 完工目標 **2030**，預計成全球最大單體半導體製造設施
+  - 大規模新增供應在 2028 年前受限（新廠從動工到出貨通常需 3 年以上）
+  *Source: TrendForce 2026-08-20 → [[sources/2026-08-20_trendforce_samsung-onyang-hbm-fab-krw6t-p5-triple]]*
+
+- **2026-08-19（次新）**：**1H26 設施投資 KRW 25.603T（+23.5%）；R&D 達 KRW 27.363T 歷史半年高；NVIDIA 未列前五大客戶**（TrendForce 2026-08-17，引述 Etoday、DART 半年報、M Today）：
   - **1H26 設施投資**：Samsung DS KRW **25.603T**（+23.5% YoY），SK hynix KRW 17.595T（+56.4%）；合計 KRW 43.198T（+35.1%）
   - **Samsung DS 記憶體稼動率**：1H26 達 **100%**（全負載）
   - **R&D 支出**：Samsung 全公司 KRW **27.363T**（+51.5% YoY），創**歷史半年新高**（未分開揭露 DS 部門）

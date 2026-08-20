@@ -2709,3 +2709,20 @@ an（2028–2029 量產世代）為 CoPoS 最可能的首批量產客戶——�
   1. **TSMC Arizona 已成最大獲利海外子公司**（TrendForce 2026-08-17，引述 TSMC 1H26 中期報告）：1H26 獲利 NT$36.066B（+662.8% YoY）超越南京廠，貢獻四大海外子公司 60%+ 份額；但 Q2 環比 -8.2%——折舊攤銷成長開始顯現，CFO Wendell Huang 明確警告毛利稀釋 2-3ppt 初期、成熟後 3-4ppt；JASM 首次轉盈（Q1 NT$951M + Q2 NT$727M）。
   2. **NVIDIA 未列三星 1H26 前五大客戶——迄今最直接的 HBM4 合格進度財務信號**（TrendForce 2026-08-17）：Samsung 前五為 Alphabet/Amazon/Apple/Hong Kong Techtronics/Supreme Electronics（合計 ~25% 營收），NVIDIA 缺席。對比 SK hynix NVIDIA 佔比 13.35%（下滑自 FY2025 ~24%，係客戶多元化所致），兩者方向相反——Samsung 是「尚未進入」，SK hynix 是「主動分散」。
   3. **Samsung + SK hynix 1H26 合計 KRW 43.2T 設施投資（+35.1%），SK hynix R&D 近翻倍**：兩家均達 100% 稼動率；SK hynix R&D KRW 6.043T 已接近 2025 全年；Micron 新設 $250M 創投基金瞄準 AI 記憶體生態系。
+
+## [2026-08-21] collect | 每日自動蒐集 — 先進封裝最新動態（Samsung 溫陽 HBM 廠 + SK hynix CPO Nature Electronics 路線圖）
+- 搜尋查詢數：7 組（TSMC CoWoS/SoIC、HBM4 SK Hynix Samsung、Intel EMIB/Foveros、先進封裝市場 Aug2026、混合接合、CoPoS/FOPLP 面板級、UCIe chiplet 標準）
+- 成功抓取：2 篇（存入 raw/articles/ 2 篇, raw/papers/ 0 篇, raw/reports/ 0 篇）
+- 失敗/跳過：多篇（大部分 TrendForce 2026-08-20 非先進封裝主題——消費電子/AR 眼鏡/Lam 專利）；SemiEngineering Week#152 尚未發布（截至 2026-08-21 抓取時）
+- 學術代理：UNAVAILABLE ✗
+- 新增 wiki 頁面：2 頁（全為 sources/）
+  - wiki/sources/2026-08-20_trendforce_samsung-onyang-hbm-fab-krw6t-p5-triple.md
+  - wiki/sources/2026-08-20_trendforce_skhynix-cpo-roadmap-nature-electronics.md
+- 更新 wiki 頁面：4 頁
+  - wiki/entities/samsung.md（溫陽 HBM 廠 KRW 6T 2026-09 動工；P5 三廠房 350%→490% 容積率；HBM4 良率~80%）
+  - wiki/entities/sk-hynix.md（CPO 路線圖 Nature Electronics；>100 Tb/s/<1 pJ/bit/<10 ns；光子中介層架構；µLED；AI 基礎設施戰略轉型聲明）
+  - wiki/technologies/copackaged-optics.md（SK hynix CPO 量化目標；光子中介層架構；SK hynix vs TSMC COUPE 對比表；µLED 方向）
+  - wiki/index.md（頁面數 389→391；來源數 347→349；2 個新 sources 條目；Samsung/SKH/CPO 描述更新）
+- 主要新知識：
+  1. **Samsung 溫陽 HBM 廠正式確認：KRW 6 兆，2026-09 動工，為韓國「三大國家躍進」首個落地**（TrendForce 2026-08-20）：溫陽廠（389,825m²，忠清南道）是 Samsung HBM 專用產能擴張的新里程碑，審批比預期提前逾一個月完成。P5 同步申請三廠房（容積率 350%→490%，6 潔淨室，>1.5× 雙廠房），完工 2030——正式確認韓國記憶體廠從雙廠房升級至三廠房設計的產業轉型，SK hynix 龍仁新廠亦跟進同一路線。大規模新供應 2028 年前受限。
+  2. **SK hynix 在 Nature Electronics 發布 CPO 路線圖——記憶體廠商首次以頂級學術期刊確立 CPO 戰略立場**（TrendForce 2026-08-20）：與 UVA Kyusang Lee 合著，提出「頻寬牆（Bandwidth Wall）」論述，量化目標 >100 Tb/s / <1 pJ/bit / <10 ns，路線圖跨越 2D → 2.5D 光子中介層 → 3D 異質整合；µLED 大規模並行光互連為長期方向。Seunghoon Hong 的「AI 基礎設施戰略夥伴」宣言，標誌 SK hynix 戰略邊界從記憶體向 AI 系統層次延伸。此論文與 TSMC COUPE 的「compute-centric CPO」形成互補，確立「memory-centric CPO」技術路徑的學術合法性。

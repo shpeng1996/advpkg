@@ -3,7 +3,7 @@ title: "SK Hynix"
 category: entity
 tags: [memory, HBM, HBM4, advanced-packaging]
 created: 2026-04-24
-updated: 2026-08-20
+updated: 2026-08-21
 sources: [2026-08-19_trendforce_skhynix-silicon-valley-hbm-codesign-team, 2026-08-17_trendforce_samsung-skhynix-1h26-investment-nvidia-absent, 2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor, 2026-08-10_trendforce_skhynix-chongqing-sale-global-reset, 2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab, 2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h, 2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-04-22_trendforce_sk-hynix-pt7-cheongju, 2026-04-22_trendforce_sk-hynix-indiana-us-plant, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-03-03_trendforce_sk-hynix-hbm4-tight-gaps, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-05_trendforce_hbf-equipment-race-sandisk-hanmi, 2026-06-11_trendforce_skhynix-3x-wafer-2034-375layer-nand, 2026-06-20_techtimes_skhynix-hbm4e-12layer-samples, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-24_techtimes_sk-hynix-dethroned-samsung-ddr5-hbm4, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-06-25_techtimes_sk-hynix-nasdaq-adr-29b, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-22_trendforce_skhynix-q2-record-margin, 2026-07-21_trendforce_samsung-cxl-32-skhynix-imte, 2026-07-24_trendforce_skhynix-3d-stacked-dram-on-logic-on-device-ai, 2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b]
 related:
   - wiki/entities/samsung.md
@@ -27,7 +27,17 @@ SK Hynix 是 **HBM 市場的領導者**，率先量產 HBM3E，並於 2025 H2 �
 
 ## 近期動態 / Recent Developments
 
-- **2026-08-19（⭐最新）**：**矽谷 HBM 協同設計團隊擴編；NVIDIA/AMD/Broadcom 就近共同開發下世代 HBM 架構**（TrendForce 2026-08-19，引述 NewsPim、Chosun Ilbo、Seoul Economic Daily）：
+- **2026-08-20（⭐最新）**：**SK hynix 在 Nature Electronics 發布 CPO 路線圖——跨越 HBM 邁向 AI 基礎設施戰略轉型**（TrendForce 2026-08-20，引述 SK hynix 官方新聞稿、ZDNet Korea）：
+  - **Nature Electronics 論文**：SK hynix 與全球研究機構（含維吉尼亞大學 UVA Kyusang Lee 教授）合著 CPO 路線圖，發表於《自然電子》期刊——首次以頂級學術期刊形式確立 SK hynix CPO 技術主張
+  - **「頻寬牆（Bandwidth Wall）」確立**：超大規模 AI 叢集（千 GPU+HBM 堆疊）使銅連線遇到速度×距離×功耗三重限制，CPO 將光收發器（TRx）直接整合入處理器封裝，縮短高速電氣路徑
+  - **光子中介層（Photonic Interposer）長期架構**：CPO 長期目標延伸至記憶體介面，透過光子中介層直接連結記憶體與處理器，允許多顆 AI 加速器共享大型記憶體池（更靈活擴展）
+  - **量化目標**：每節點 **>100 Tb/s 頻寬**、**<1 pJ/bit 能效**、晶片間延遲 **<10 ns**
+  - **路線圖三層**：2D 封裝 → 2.5D 中介層 → 3D 異質整合，涵蓋商業化的關鍵技術挑戰
+  - **未來方向**：超薄光子材料 + **µLED（微 LED）** 大規模並行光學互連，持續提升能效
+  - **戰略聲明**：SK hynix AI Infra 負責人 Seunghoon Hong 明確宣示「從記憶體組件供應商轉型為 AI 基礎設施戰略夥伴，CPO 是核心技術」
+  *Source: TrendForce 2026-08-20 → [[sources/2026-08-20_trendforce_skhynix-cpo-roadmap-nature-electronics]]*
+
+- **2026-08-19（次新）**：**矽谷 HBM 協同設計團隊擴編；NVIDIA/AMD/Broadcom 就近共同開發下世代 HBM 架構**（TrendForce 2026-08-19，引述 NewsPim、Chosun Ilbo、Seoul Economic Daily）：
   - **SK hynix America 在 San Jose 設有 HBM Architect Design Team**，直接與美國主要客戶協作 base-die 設計與 3D-stacked DRAM 架構（NVIDIA/AMD 在 Santa Clara、Broadcom 在 San Jose）
   - **團隊正在擴編**：年薪 US$**150,000–$260,000**；需具備 1x nm DRAM + **3nm 以下代工節點**設計經驗；負責 PDN 分析、全客製化與數位協同設計
   - **SK hynix × NVIDIA 聯合研發**「AI 工廠下一代記憶體」——從現有 HBM 供貨擴展至架構層面聯合設計

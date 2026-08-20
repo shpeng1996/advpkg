@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-08-20
-**頁面總數 Total Pages**：389
-**原始來源數 Sources**：347
+**更新時間 Updated**：2026-08-21
+**頁面總數 Total Pages**：391
+**原始來源數 Sources**：349
 
 ---
 
@@ -16,8 +16,8 @@
 
 - [[entities/tsmc]] — 台積電；全球最大晶圓代工廠；CoWoS/SoIC 技術領導者；**Arizona 1H26 獲利 NT$36B（+663% YoY），超越南京廠成最大獲利海外子公司；JASM 轉盈；10 邏輯廠+2 AP 廠 $265B**；研發類 EMIB 矽橋封裝（聯手欣興 Kinsus）⭐更新
 - [[entities/intel]] — 英特爾；IDM；EMIB-T 今年內 fab 量產（45µm→35/25µm 路線圖、Jaguar Shores 首款產品推測）；**Xeon 6+ 18A 首款商業 CPU**（2026-06-19）；**CEO 暗示重返記憶體、ZAM 架構、Saimemory JV（Intel+SoftBank）**（2026-08-14）；**SK Hynix 前 CEO 李錯熹（Seok-Hee Lee）就任 Foundry EVP 主導 EMIB-T/HBI 量產**（2026-06-18）；**$19.7B 股票發行（2026-08-11，5× 超額認購）支撐 14A HVM 2028 + Ohio 廠 >$100B**；**CoWoS 溢出後端訂單至 Intel Malaysia（~US$1.3B HBM）；Unimicron HVM 2027；EMIB-T 封裝良率~90%，基板良率成新瓶頸**（2026-08-19）⭐更新
-- [[entities/samsung]] — 三星；IDM + Foundry + Memory；**1H26 設施投資 KRW 25.6T（+23.5%）；R&D KRW 27.4T 歷史半年高；NVIDIA 未列 1H26 前五大客戶**；NRD-K Line 2 轉型 2nm HBM5 base die；GlaSSEM JV⭐更新
-- [[entities/sk-hynix]] — SK Hynix；HBM 市場領導者；**1H26 設施投資 KRW 17.6T（+56.4%）；R&D KRW 6T 近乎翻倍；NVIDIA 佔 1H26 營收降至 13.35%（FY2025 ~24%）；Q2 Op Margin 76% 歷史新高；「One Team」模式**；**矽谷 HBM Architect Design Team 擴編（San Jose，$150-260K，與 NVIDIA 聯合開發下世代 AI 記憶體）**（2026-08-19）⭐更新
+- [[entities/samsung]] — 三星；IDM + Foundry + Memory；**溫陽 HBM 廠 KRW 6T 2026-09 動工（389,825m²）；P5 申請三廠房（6 潔淨室，>1.5× 產能）；HBM4 良率~80%**；1H26 設施投資 KRW 25.6T（+23.5%）；NVIDIA 未列 1H26 前五大客戶；NRD-K Line 2 轉型 2nm HBM5 base die；GlaSSEM JV⭐更新
+- [[entities/sk-hynix]] — SK Hynix；HBM 市場領導者；**Nature Electronics CPO 路線圖：>100 Tb/s / <1 pJ/bit / <10 ns；光子中介層架構；µLED 互連；AI 基礎設施戰略轉型宣言**（2026-08-20）；1H26 設施投資 KRW 17.6T（+56.4%）；Q2 Op Margin 76% 歷史新高；矽谷 HBM 協同設計團隊擴編⭐更新
 - [[entities/asmpt]] — ASMPT Limited；TCB/混合接合/Photonics-CPO 設備領導廠商；Q1 2026 訂單 27M +71.6% YoY；NEXX 出售給 AMAT⭐新增
 - [[entities/ase-group]] — ASE Group；全球最大 OSAT；CoWoP 面板封裝；**SPIL 斗六廠破土（TWD 100 億/2028 一期）；2026 CapEx $10.5B；2027 LEAP 目標 $7.5B+；FOPLP Q1 2027**；AMD EFB 合作；**COO 吳田玉明確表態 CoWoS/EMIB 不互斥；可承接 EMIB-T 組裝測試業務**（2026-08-19）⭐更新
 - [[entities/amkor]] — Amkor；全球第二大 OSAT；Arizona $70 億廠（2028 投產）；Intel EMIB 外包夥伴⭐新增
@@ -43,7 +43,7 @@
 - [[technologies/hybrid-bonding]] — 混合接合（Cu-Cu）；W2W/D2W/D2D 三情境框架（ECTC 2025）；目標 1M/mm²；**翹曲管理確認為 HVM 製程橫跨全流程的新約束**（2026-07-30）⭐更新
 - [[technologies/hbm4]] — HBM4；JEDEC JESD270-4；1.65+ TB/s；**Custom HBM4E 時代起點（Micron EVP）；HBM-to-DDR 犧牲比 3:1→4:1；HBM4E logic die = TSMC；SK hynix「One Team」**（2026-08-13）；**HBM4 ASP 首次量化 $31–32/GB（NVIDIA）；客戶多元化至 AMD/Google**（2026-08-14）⭐更新
 - [[technologies/ucie]] — UCIe；Chiplet 互連標準；UCIe 3.0：64GT/s quarter-rate、BER 差異化、Arm CHI 映射、L2 深度睡眠（2026-06-18）⭐更新
-- [[technologies/copackaged-optics]] — TSMC-COUPE™ 共封裝光學元件（CPO）；Intel OFC 2026 玻璃基板原型曝光；量產落後 Nvidia/AMD（2026-06-18）；**銅三重限制（損耗/距離/功耗）確立 CPO 五年全光化論述基礎；CPO -70% 功耗 vs 可插拔**（2026-08-13）⭐更新
+- [[technologies/copackaged-optics]] — TSMC-COUPE™ 共封裝光學元件（CPO）；**SK hynix Nature Electronics CPO 路線圖（>100 Tb/s / <1 pJ/bit / <10 ns；光子中介層→記憶體介面；µLED 方向）**（2026-08-20）；銅三重限制確立 CPO 五年全光化論述；CPO -70% 功耗 vs 可插拔⭐更新
 - [[technologies/info-wmcm]] — InFO（2016 商轉）+ WMCM（2026 量產）；TSMC 行動晶片封裝旗艦；Apple A20 iPhone18 採用 WMCM⭐新增
 - [[technologies/emib]] — EMIB（Embedded Multi-Die Interconnect Bridge）；Intel 2.5D 局部矽橋；**TSMC CEO C.C. Wei 2026-07-16 公開歡迎 EMIB；NVIDIA Feynman/Google HumuFish/Amazon Trainium 3 潛在客戶**（2026-07-30）；**Intel EMIB-T 封裝良率~90%，基板良率成主要瓶頸；Unimicron HVM 2027，初始良率目標~50%；ASE COO 表態 EMIB-T 組裝測試就緒**（2026-08-19）⭐更新
 - [[technologies/foveros]] — Foveros；Intel 3D 堆疊；Foveros Direct 3D（<10µm Cu-Cu，2026 量產）；875 GB/s 3D 頻寬⭐新增
@@ -64,6 +64,8 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-08-20_trendforce_samsung-onyang-hbm-fab-krw6t-p5-triple]] — TrendForce：**Samsung 溫陽 HBM 廠 KRW 6T（389,825m²）2026-09 動工；韓國「三大國家躍進」首個落地項目；P5 申請三廠房（350%→490% 容積率，6 潔淨室，>1.5× 產能）；HBM4 良率~80%；P5 完工 2030**（2026-08-21 收錄；原文 2026-08-20）⭐新增
+- [[sources/2026-08-20_trendforce_skhynix-cpo-roadmap-nature-electronics]] — TrendForce：**SK hynix × UVA Nature Electronics CPO 路線圖——頻寬牆（Bandwidth Wall）論述；>100 Tb/s / <1 pJ/bit / <10 ns；2D→2.5D 中介層→3D 光子中介層三層路徑；µLED 並行光互連；SK hynix 宣示 AI 基礎設施戰略夥伴轉型**（2026-08-21 收錄；原文 2026-08-20）⭐新增
 - [[sources/2026-08-19_trendforce_skhynix-silicon-valley-hbm-codesign-team]] — TrendForce：**SK Hynix 矽谷 HBM Architect Design Team（San Jose）——$150-260K；1xnm DRAM+≤3nm foundry；與 NVIDIA/AMD/Broadcom 聯合開發下世代 AI 工廠記憶體架構；co-design 護城河形成；Samsung 同步跟進招募**（2026-08-20 收錄；原文 2026-08-19）⭐新增
 - [[sources/2026-08-19_trendforce_intel-emib-t-cowos-spillover-unimicron-ase]] — TrendForce：**CoWoS 訂單全滿，後端封裝溢出至 Intel Malaysia（~US$1.3B HBM）；Intel EMIB-T 封裝良率~90%，基板良率成主要瓶頸；Unimicron HVM 2027（初始良率目標~50%）；ASE COO 表態 CoWoS/EMIB 不互斥**（2026-08-20 收錄；原文 2026-08-19）⭐新增
 - [[sources/2026-08-18_semieng_technical-paper-roundup-chiplet-3d]] — SemiEngineering（Aug 18 論文摘要）：**2.5D PIM Chiplet PDN 電壓驟降（ReVolt/Washington St.+UW-Madison）；FAPlace 2.5D 中介層尺寸最佳化（A*STAR）；3D-IC 系統級故障分析硬體（Google+TU Delft）**（2026-08-19 收錄；原文 2026-08-18）⭐新增

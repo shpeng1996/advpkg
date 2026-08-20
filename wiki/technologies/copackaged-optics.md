@@ -3,7 +3,7 @@ title: "共封裝光學元件 / Co-Packaged Optics (CPO) — TSMC-COUPE™ & Eco
 category: technology
 tags: [CPO, co-packaged-optics, COUPE, TSMC, GlobalFoundries, Samsung, photonics, AI, HPC, networking, OCI-MSA, DWDM, Broadcom, NVIDIA, glass-substrate, ULCVD, TGV, Spectrum-X, NVL72]
 created: 2026-04-25
-updated: 2026-08-18
+updated: 2026-08-21
 sources: [2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-05-07_trendforce_globalfoundries-silicon-photonics-scale-cpo, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-03-17_coherent_cpo-ofc2026-demo, 2026-06-07_digitimes_jcet-3d-packaging-cpo-plant, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_edn_cpo-technology-status-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-06-24_thelec_corning-glass-bridge-cpo, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-14_trendforce_umc-silith-silicon-photonics-hvm, 2026-07-14_trendforce_huawei-baidu-npo-msa, 2026-07-27_trendforce_presscenter_cpo-switches-nvidia-broadcom-coupe, 2026-06-03_3dincites_intel-foundry-emib-cpo-glass-ectc2026]
 related:
   - wiki/entities/tsmc.md
@@ -444,3 +444,50 @@ $9 億融資規模使其成為光學互連新創中融資最大者之一（超�
 | 中國陣營 | ZJ Innolight（HKEX IPO）、Innolight | 1.6T 光模組主力 |
 
 *Source: SemiEngineering Week #150；raw/articles/2026-08-07_semieng_chip-week-150-fms-terafab-wsts-1-65t.md*
+
+---
+
+## ⭐ 2026-08-21 更新：SK hynix 在 Nature Electronics 發布 CPO 路線圖——記憶體廠視角的「頻寬牆」論述
+
+*Source: TrendForce 2026-08-20（引述 SK hynix 官方、ZDNet Korea）→ [[sources/2026-08-20_trendforce_skhynix-cpo-roadmap-nature-electronics]]*
+
+### SK hynix × UVA CPO 路線圖論文（Nature Electronics）
+
+SK hynix 與**維吉尼亞大學（UVA）Kyusang Lee 教授**合著 CPO 路線圖，正式發表於《自然電子》（Nature Electronics）期刊，首次從**記憶體廠商視角**確立 CPO 技術路徑。
+
+**核心技術主張——頻寬牆（Bandwidth Wall）**：
+
+超大規模 AI 叢集（千 GPU + HBM 堆疊）使銅連線面臨三重限制：
+- 高速訊號損耗（~1 米實用傳輸極限）
+- 距離擴展能耗線性增加
+- 信號複雜度隨頻率爆炸性上升
+
+SK hynix 的解法——**CPO（光子中介層架構）**：
+
+| 層次 | 技術路徑 |
+|------|---------|
+| 近期 | 2D 封裝：光收發器（TRx）整合入處理器封裝，縮短高速電氣路徑 |
+| 中期 | 2.5D 中介層：光學引擎與 CPU/GPU 共享矽中介層 |
+| 長期 | 3D 異質整合：**光子中介層直接連結記憶體與處理器**，多顆加速器共享大型記憶體池 |
+
+**量化目標**：
+
+| 指標 | 目標值 |
+|------|-------|
+| 頻寬（per node） | >100 Tb/s |
+| 能效 | <1 pJ/bit |
+| 晶片間延遲 | <10 ns |
+
+**未來技術方向**：超薄光子材料（ultrathin photonic materials）+ **µLED（微 LED）** 大規模並行光學互連——SK hynix 將持續與 Kyusang Lee 團隊合作推進。
+
+### SK hynix 與 TSMC 的 CPO 路徑比較
+
+| 面向 | SK hynix（本次） | TSMC COUPE |
+|------|---------------|-----------|
+| 技術起點 | 記憶體/頻寬瓶頸驅動 | 運算晶片 / GPU 端驅動 |
+| 光學整合位置 | 光子中介層（延伸至記憶體介面） | COUPE 矽光子嵌入處理器封裝 |
+| 發表場合 | Nature Electronics 學術論文 | OCP Summit / ECTC 技術展示 |
+| 商業化定位 | AI 基礎設施戰略夥伴（長期） | 量產服務（NVIDIA/Broadcom 2026 客戶） |
+| 商業化進度 | 「早期商業化開始」（UVA Lee） | TSMC COUPE 2H26 量產確認 |
+
+SK hynix 的戰略聲明（AI Infra 負責人 Seunghoon Hong）：「**記憶體廠商正在從組件供應轉型為 AI 系統整體效能的戰略夥伴**，CPO 是核心技術。」
