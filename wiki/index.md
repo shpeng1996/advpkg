@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-08-21
-**頁面總數 Total Pages**：391
-**原始來源數 Sources**：349
+**更新時間 Updated**：2026-08-22
+**頁面總數 Total Pages**：393
+**原始來源數 Sources**：351
 
 ---
 
@@ -28,7 +28,7 @@
 - [[entities/micron]] — Micron；美國記憶體 IDM；HBM4 >11 Gbps（Q2'26 HVM）；**廣島廠 ¥1.5T 擴建動土（2026-07-04）、1γ DRAM + HBM、設備 2H28**；Virginia HBM 封裝廠；$200B 美國投資計畫；**資料中心 DRAM 需求滿足率 <50%（2026-08-10 KeyBanc）；2027 更緊俏；美製溢價納入 SCA 定價**⭐更新
 - [[entities/amd]] — AMD；Fabless CPU/GPU；Venice 首採 EMIB 等效封裝；MI355X（N3P，2 I/O die）；MI450 aLSI 測試載具⭐新增
 - [[entities/asml]] — ASML；微影設備獨占廠商；XT:260 3D DUV 已出貨（RDL）；評估混合接合設備市場進入⭐新增
-- [[entities/rapidus]] — Rapidus；日本 2nm 新創代工廠；「AI Foundry」框架；封裝共址策略；玻璃基板 600×600mm 最大樣品；量產 2028⭐新增
+- [[entities/rapidus]] — Rapidus；日本 2nm 新創代工廠；「AI Foundry」框架；封裝共址策略；**8倍光罩中介層路線圖（4×→6×→8×）；600mm面板產出49件；IIM整合製造模式；Lam Research Kallisto夥伴**；量產 2028⭐更新
 - [[entities/onto-innovation]] — Onto Innovation；製程控制/檢測設備商；Dragonfly G5 取得 2.5D AI 封裝量產資格認證；AI 封裝需求年成長 ~30%⭐新增（2026-06-22）
 - [[entities/jcet]] — JCET（江蘇長電科技）；中國最大 OSAT；江陰新 3D 封裝廠瞄準 AI 電源模組與 CPO 需求⭐新增（2026-06-22）
 - [[entities/nokia]] — Nokia；電信設備/光通訊廠商；擴大賓州 Allentown 先進測試與封裝（ATP）產能，CHIPS Act 資金支持，美國 ATP 占比 <2%⭐新增（2026-06-25）
@@ -64,6 +64,8 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-08-21_trendforce_rapidus-panel-level-packaging-8reticle-600mm]] — TrendForce：**Rapidus 8倍光罩中介層路線圖（~2030）；600mm面板49件產出；IIM整合製造模式；Lam Research Kallisto；OCP APAC Summit 2026-08-21**⭐新增
+- [[sources/2026-08-21_semieng_chip-week-152]] — SemiEngineering Week #152：**Micron Research Labs $10B/10年（封裝R&D）；JCET 11.3:1 HSR-TSV樣品；Samsung代工漲15%；Socionext 18A-P；NSSTS白宮政策點名先進封裝；CPO路線圖Nature**⭐新增
 - [[sources/2026-08-20_trendforce_samsung-onyang-hbm-fab-krw6t-p5-triple]] — TrendForce：**Samsung 溫陽 HBM 廠 KRW 6T（389,825m²）2026-09 動工；韓國「三大國家躍進」首個落地項目；P5 申請三廠房（350%→490% 容積率，6 潔淨室，>1.5× 產能）；HBM4 良率~80%；P5 完工 2030**（2026-08-21 收錄；原文 2026-08-20）⭐新增
 - [[sources/2026-08-20_trendforce_skhynix-cpo-roadmap-nature-electronics]] — TrendForce：**SK hynix × UVA Nature Electronics CPO 路線圖——頻寬牆（Bandwidth Wall）論述；>100 Tb/s / <1 pJ/bit / <10 ns；2D→2.5D 中介層→3D 光子中介層三層路徑；µLED 並行光互連；SK hynix 宣示 AI 基礎設施戰略夥伴轉型**（2026-08-21 收錄；原文 2026-08-20）⭐新增
 - [[sources/2026-08-19_trendforce_skhynix-silicon-valley-hbm-codesign-team]] — TrendForce：**SK Hynix 矽谷 HBM Architect Design Team（San Jose）——$150-260K；1xnm DRAM+≤3nm foundry；與 NVIDIA/AMD/Broadcom 聯合開發下世代 AI 工廠記憶體架構；co-design 護城河形成；Samsung 同步跟進招募**（2026-08-20 收錄；原文 2026-08-19）⭐新增

@@ -3,8 +3,8 @@ title: "JCET（江蘇長電科技）"
 category: entity
 tags: [OSAT, China, 3D-packaging, CPO, AI-power-modules, advanced-packaging, Shanghai]
 created: 2026-06-22
-updated: 2026-07-31
-sources: [2026-06-07_digitimes_jcet-3d-packaging-cpo-plant, 2026-06-26_semieng_chip-week-144, 2026-07-29_trendforce_china-advanced-packaging-new-capacity-wave]
+updated: 2026-08-22
+sources: [2026-06-07_digitimes_jcet-3d-packaging-cpo-plant, 2026-06-26_semieng_chip-week-144, 2026-07-29_trendforce_china-advanced-packaging-new-capacity-wave, 2026-08-21_semieng_chip-week-152]
 related:
   - wiki/concepts/advanced-packaging-market.md
   - wiki/technologies/copackaged-optics.md
@@ -26,7 +26,9 @@ JCET 為中國規模最大的封裝測試代工廠（OSAT），近年積極由�
 
 ## 近期動態 / Recent Developments
 
-- **2026-06-24（⭐最新，2026-07-31 更新）**：**JCET 上海臨港新廠正式宣布，RMB 78 億（~US$10.7 億），Phase I 2028H2 投產**（TrendForce 2026-07-29）：上海臨港廠（Lingang Free Trade Zone）為**獨立於江陰廠和 SemiEngineering 報導的上海廠之外的第三個重大設施項目**。技術定位：高密度 RDL、超細間距凸塊、**大面積異質整合、Chiplet 多晶片封裝**；主要服務 AI 伺服器、HPC、高端 GPU 客戶。臨港廠的宣布使 JCET 在「Chiplet 異質整合」細分賽道升格為策略優先。
+- **2026-08-21（⭐最新）**：JCET 製造 **11.3:1 高深寬比 TSV（High Aspect Ratio TSV）樣品**（SemiEngineering Week #152）。這是目前 wiki 記錄的 JCET 最高深寬比 TSV 規格，代表其 3D 封裝能力的重要技術進展。（樣品階段，量產時程未揭露）⭐更新
+
+- **2026-06-24（前次最新，2026-07-31 更新）**：**JCET 上海臨港新廠正式宣布，RMB 78 億（~US$10.7 億），Phase I 2028H2 投產**（TrendForce 2026-07-29）：上海臨港廠（Lingang Free Trade Zone）為**獨立於江陰廠和 SemiEngineering 報導的上海廠之外的第三個重大設施項目**。技術定位：高密度 RDL、超細間距凸塊、**大面積異質整合、Chiplet 多晶片封裝**；主要服務 AI 伺服器、HPC、高端 GPU 客戶。臨港廠的宣布使 JCET 在「Chiplet 異質整合」細分賽道升格為策略優先。
 
 - **2026-06-26（前次最新）**：JCET 據報計劃在**上海**興建全新先進封裝暨測試廠，**投資約 $11.5 億美元（~$1.15B）**，為獨立於江陰廠之外的第二座先進封裝重大投資。（出處：SCMP；SemiEngineering Week #144 2026-06-26 收錄）
 

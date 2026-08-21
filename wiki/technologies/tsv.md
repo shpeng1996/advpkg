@@ -3,8 +3,8 @@ title: "TSV — Through-Silicon Via / 矽穿孔"
 category: technology
 tags: [TSV, HBM, interposer, 3D-IC, CoWoS, manufacturing, backside-power, advanced-packaging]
 created: 2026-08-10
-updated: 2026-08-10
-sources: [2026-04-22_semieng_tsv-complexity-manufacturing-bottleneck]
+updated: 2026-08-22
+sources: [2026-04-22_semieng_tsv-complexity-manufacturing-bottleneck, 2026-08-21_semieng_chip-week-152]
 related:
   - wiki/technologies/hbm4.md
   - wiki/technologies/cowos.md
@@ -117,6 +117,14 @@ HBM TSV 的完整製程（以 DRAM 廠商內製為例）：
 TSV 在可預見的未來仍是 HBM 的核心技術；Hybrid Bonding 將首先從高層數（16-Hi HBM4E+）開始替換微凸塊，但 TSV 本身不會被取代（Hybrid Bonding 的正面連接仍需 TSV 傳遞訊號至封裝外部）。
 
 ---
+
+
+## JCET 11.3:1 高深寬比 TSV 新數據 / JCET High-Aspect-Ratio TSV Update（2026-08-21）
+
+**⭐ 新增**：JCET 製造 **11.3:1 深寬比 TSV 樣品**（SemiEngineering Week #152，2026-08-21）——目前 wiki 記錄的商業 OSAT 最高深寬比 TSV 規格。
+- HBM TSV 典型深寬比：~6–15:1（via-middle，2–5µm 直徑 / 30–60µm 深）
+- 矽中介層 TSV 典型深寬比：~4–24:1（5–20µm 直徑 / 80–120µm 深）
+- **JCET 11.3:1**：落在中等偏高範圍，具體尺寸待揭露；樣品階段，量產時程未確認
 
 ## 爭議與未解問題 / Open Questions
 

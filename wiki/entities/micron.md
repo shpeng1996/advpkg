@@ -3,8 +3,8 @@ title: "美光科技 / Micron Technology"
 category: entity
 tags: [memory, HBM4, DRAM, NAND, CapEx, Virginia, Idaho, New-York, onshoring]
 created: 2026-05-03
-updated: 2026-08-16
-sources: [2025-12-18_trendforce_micron-capex-hbm4, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-03-17_trendforce_gtc2026-key-takeaways, 2025-08-05_3dincites_iftle636-samsung-lsb-micron-virginia, 2026-01-23_trendforce_hbm4e-development, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-26_semieng_chip-week-144, 2026-06-25_thelec_micron-q3-fy2026-record, 2026-07-06_trendforce_micron-hiroshima-fab-hbm-1gamma, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-10_tomshardware_micron-250b-us-investment-globalwafers, 2026-07-10_semieng_chip-week-146]
+updated: 2026-08-22
+sources: [2025-12-18_trendforce_micron-capex-hbm4, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-03-17_trendforce_gtc2026-key-takeaways, 2025-08-05_3dincites_iftle636-samsung-lsb-micron-virginia, 2026-01-23_trendforce_hbm4e-development, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-26_semieng_chip-week-144, 2026-06-25_thelec_micron-q3-fy2026-record, 2026-07-06_trendforce_micron-hiroshima-fab-hbm-1gamma, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-10_tomshardware_micron-250b-us-investment-globalwafers, 2026-07-10_semieng_chip-week-146, 2026-08-21_semieng_chip-week-152]
 related:
   - wiki/technologies/hbm4.md
   - wiki/entities/sk-hynix.md
@@ -31,7 +31,9 @@ related:
 
 ## 近期動態 / Recent Developments
 
-- **2026-07-28（⭐最新）**：**Micron 正式評估 Intel EMIB 封裝相容性**（TrendForce 2026-07-23）：Micron 加入 SK hynix 和 Samsung，三大記憶體廠商均評估 Intel EMIB-based 2.5D 封裝作為 TSMC CoWoS 緊張環境下的多元化封裝選項。首次確認 Micron 在 Intel EMIB 生態的評估參與。
+- **2026-08-21（⭐最新）**：**Micron Research Labs 成立——$10B/10年 Boise, Idaho R&D 據點**（SemiEngineering Week #152）：研究領域明確涵蓋記憶體技術、先進記憶體與運算架構、**封裝**、製造。這是 Micron 首個以「封裝」為明確核心研究領域的長期 R&D 機構，與廣島/維吉尼亞封裝廠共同構成 Micron 封裝技術生態全貌。⭐更新
+
+- **2026-07-28（前次最新）**：**Micron 正式評估 Intel EMIB 封裝相容性**（TrendForce 2026-07-23）：Micron 加入 SK hynix 和 Samsung，三大記憶體廠商均評估 Intel EMIB-based 2.5D 封裝作為 TSMC CoWoS 緊張環境下的多元化封裝選項。首次確認 Micron 在 Intel EMIB 生態的評估參與。
   *Source: TrendForce 2026-07-23 → [[sources/2026-07-23_trendforce_skhynix-intel-ohio-fab-emib]]*
 
 - **2026-07-10（次新）**：**美國投資承諾升至 $250B（至2035）**；較 2025-06 宣布之 $200B 追加 $50B；紐約 **Clay 廠**首次混凝土澆灌（提前一個季度）；最終目標：**美國製造 40% DRAM**。同日宣布：**$3B 美國 IC 供應鏈投資**，其中 $500M 注入 **GlobalWafers Sherman TX**（美國唯一 300mm 矽晶圓廠，附帶 **10 年供應協議**）；並與 **Ford 簽署長期車用記憶體供應合約**。

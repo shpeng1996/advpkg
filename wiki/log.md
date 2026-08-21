@@ -2726,3 +2726,22 @@ an（2028–2029 量產世代）為 CoPoS 最可能的首批量產客戶——�
 - 主要新知識：
   1. **Samsung 溫陽 HBM 廠正式確認：KRW 6 兆，2026-09 動工，為韓國「三大國家躍進」首個落地**（TrendForce 2026-08-20）：溫陽廠（389,825m²，忠清南道）是 Samsung HBM 專用產能擴張的新里程碑，審批比預期提前逾一個月完成。P5 同步申請三廠房（容積率 350%→490%，6 潔淨室，>1.5× 雙廠房），完工 2030——正式確認韓國記憶體廠從雙廠房升級至三廠房設計的產業轉型，SK hynix 龍仁新廠亦跟進同一路線。大規模新供應 2028 年前受限。
   2. **SK hynix 在 Nature Electronics 發布 CPO 路線圖——記憶體廠商首次以頂級學術期刊確立 CPO 戰略立場**（TrendForce 2026-08-20）：與 UVA Kyusang Lee 合著，提出「頻寬牆（Bandwidth Wall）」論述，量化目標 >100 Tb/s / <1 pJ/bit / <10 ns，路線圖跨越 2D → 2.5D 光子中介層 → 3D 異質整合；µLED 大規模並行光互連為長期方向。Seunghoon Hong 的「AI 基礎設施戰略夥伴」宣言，標誌 SK hynix 戰略邊界從記憶體向 AI 系統層次延伸。此論文與 TSMC COUPE 的「compute-centric CPO」形成互補，確立「memory-centric CPO」技術路徑的學術合法性。
+
+## [2026-08-22] collect | 每日自動蒐集 — 先進封裝最新動態（Rapidus 8倍光罩路線圖 + SemiEngineering Week #152）
+- 搜尋查詢數：7 組（TSMC CoWoS/SoIC、HBM4 SK Hynix Samsung、Intel EMIB/Foveros、panel-level FOPLP CoPoS、先進封裝週報、UCIe chiplet 標準、TrendForce 最新文章）
+- 成功抓取：2 篇（存入 raw/articles/ 2 篇, raw/papers/ 0 篇, raw/reports/ 0 篇）
+- 失敗/跳過：多篇（Samsung 代工漲價/Intel 記憶體/Unitree 機器人均非先進封裝主題；JCET TSV 與 proteanTecs 僅在 Week #152 週報中摘錄）
+- 學術代理：UNAVAILABLE ✗
+- 新增 wiki 頁面：2 頁（全為 sources/）
+  - wiki/sources/2026-08-21_trendforce_rapidus-panel-level-packaging-8reticle-600mm.md
+  - wiki/sources/2026-08-21_semieng_chip-week-152.md
+- 更新 wiki 頁面：5 頁
+  - wiki/entities/rapidus.md（8倍光罩中介層路線圖；IIM整合製造模式；Lam Research Kallisto夥伴；OCP APAC Summit 發表；RCS試產線全面運作；封裝組合明細）
+  - wiki/entities/jcet.md（11.3:1 高深寬比 TSV 樣品——首筆 JCET TSV 規格數據）
+  - wiki/entities/micron.md（Micron Research Labs $10B/10年 Boise；封裝明確納入核心研究領域）
+  - wiki/technologies/tsv.md（JCET 11.3:1 HSR-TSV 新數據；與現行 HBM/中介層 TSV 範圍比較）
+  - wiki/concepts/geopolitics-advanced-packaging.md（NSSTS 白宮 2026-08 政策：先進封裝/異質整合列入國家安全戰略）
+  - wiki/index.md（頁面數 391→393；來源數 349→351；Rapidus 描述更新；2 個新 sources 條目）
+- 主要新知識：
+  1. **Rapidus 正式量化中介層路線圖**（TrendForce 2026-08-21，引述 OCP APAC Summit）：CTO Rozalia Beica 首次公開 4×/6×/8× 光罩中介層路線圖（面積 3,320→4,980→6,640mm²），600mm 面板可產出 49 件 8× 中介層（對比 300mm 晶圓僅 4 件），同時揭示 IIM（整合式製造）是 Rapidus 核心競爭差異化：全球首個前段+後段整合於同一設施的模式，使用 Lam Research Kallisto 電鍍系統形成 600mm 玻璃載板 RDL。
+  2. **SemiEngineering Week #152 摘要三項先進封裝新知**（2026-08-21）：(a) Micron Research Labs $10B、10年、Boise——封裝為明確 R&D 核心，是 Micron 首次設立以封裝為核心研究領域的長期 R&D 機構；(b) JCET 11.3:1 深寬比 TSV 樣品——目前 wiki 記錄 OSAT 最高規格；(c) 白宮 NSSTS 2026-08 將「異質整合與先進封裝」列為國家安全 R&D 優先——封裝從產業政策升至國家安全戰略層次。

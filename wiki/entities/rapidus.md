@@ -3,8 +3,8 @@ title: "Rapidus / Rapidus Corporation"
 category: entity
 tags: [Rapidus, Japan, 2nm, advanced-packaging, AI-foundry, glass-substrate, chiplet, heterogeneous-integration]
 created: 2026-06-01
-updated: 2026-06-01
-sources: [2026-05-29_3dincites_rapidus-2nm-advanced-packaging-ai-foundry, 2026-05-05_trendforce-insights_glass-substrate-development, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026]
+updated: 2026-08-22
+sources: [2026-05-29_3dincites_rapidus-2nm-advanced-packaging-ai-foundry, 2026-05-05_trendforce-insights_glass-substrate-development, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-08-21_trendforce_rapidus-panel-level-packaging-8reticle-600mm]
 related: [wiki/technologies/glass-substrate.md, wiki/concepts/geopolitics-advanced-packaging.md, wiki/concepts/advanced-packaging-market.md]
 ---
 
@@ -35,16 +35,29 @@ Rapidus 定義「**AI Foundry**」新典範：製造生態系統持續學習、�
 
 ## 近期動態 / Recent Developments
 
+- **2026-08-21**：CTO Rozalia Beica 在 **2026 OCP APAC Summit** 正式發布中介層路線圖（4×→6×→8×）及 IIM 整合製造模式；確認 600mm 面板量產目標 2028；封裝組合涵蓋 flip-chip BGA、2.5D 矽中介層、面板級 RDL 有機中介層、混合接合 3D 堆疊⭐更新
 - **2026-05-29**：CTO Rozalia Beica 在 Electronics Weekly / 3D InCites 闡述 Rapidus「AI Foundry」哲學——強調速度、AI 協同、全球協作是競爭核心，並確認封裝為核心業務柱
-- **2026 年**：持續開發 600×600mm 玻璃基板（全球最大規格樣品）
-- **2028 目標**：玻璃基板量產
+- **2026 年**：FY2026 RCS（Rapidus Chiplet Solutions）試產線全面運作，驗證 2.xD 和 3D 封裝製程
+- **2028 目標**：玻璃基板量產（600×600mm 大尺寸玻璃中介層）
 
-## 玻璃基板路線 / Glass Substrate Roadmap
+## 中介層路線圖 / Interposer Roadmap（2026-08-21 OCP APAC Summit 更新）
+
+| 中介層規模 | 面積 | 目標時間 | 600mm面板產出 |
+|-----------|------|---------|-------------|
+| 4× reticle | 3,320 mm² | ~2026–2027 | — |
+| 6× reticle | 4,980 mm² | ~2028 | — |
+| 8× reticle | 6,640 mm² | ~2030 | 49 件/片 |
+| 有機基板 | 14,400 mm² | 2030 | — |
+
+**對比 TSMC CoWoS**（領先）：2026:5.5×、2027:9.5×、2028:14×。技術路線不同——TSMC 走 300mm 晶圓，Rapidus 押注 600mm 面板。
+
+## 玻璃基板與面板封裝 / Glass Substrate & Panel-Level Packaging
 
 | 里程碑 | 時間 | 說明 |
 |--------|------|------|
-| 最大樣品 | ~2025–2026 | 600×600mm 玻璃 interposer 原型（全球最大） |
-| 量產 | 目標 2028 | 具體產品規格待確認 |
+| 最大樣品 | ~2025 | 600×600mm 玻璃 interposer 原型（全球最大） |
+| FY2026 RCS 試產線 | 2026 | 全面運作，驗證 2.xD/3D 封裝 |
+| 量產 | 目標 2028 | 600mm 大尺寸玻璃中介層 |
 
 競爭對手：Absolics（SKC，佐治亞廠）、DNP（日本）、Intel Rio Rancho（美國）
 
@@ -55,12 +68,20 @@ Rapidus 定義「**AI Foundry**」新典範：製造生態系統持續學習、�
 - 節水與材料減量
 - 探索大尺寸面板製造以改善資源效率
 
+## IIM 整合製造模式 / Innovative Integration and Manufacturing
+
+Beica 2026-08-21 提出「IIM」：全球首個將**前段製造（邏輯晶圓）與後段封裝整合於同一設施**的製造模式。
+- 使用 AI 和感測器數據即時監控晶圓狀況
+- 預測缺陷，回饋設計最佳化
+- 目標：設計–製造聯合最佳化（co-optimization）
+
 ## 全球合作 / Global Collaboration
 
 與以下方面深度合作：
 - 政府：日本政府支持（METI 等）
 - 學術：IBM Research（2nm GAA 技術開發）
-- 設備商、材料供應商
+- 設備商：**Lam Research**（Kallisto 電鍍系統，600mm 玻璃 RDL）⭐新增
+- 材料供應商
 - IC 設計合作夥伴（亞洲、歐洲、美國）
 
 ## 市場地位 / Market Position
