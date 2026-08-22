@@ -3,8 +3,8 @@ title: "玻璃基板 / Glass Core Substrate"
 category: technology
 tags: [glass-substrate, TGV, panel-level, FC-BGA, CoPoS, Absolics, DNP, Rapidus, warpage, SeWaRe, glass-interposer, BOE, ULCVD, non-embedding, Lens-Technology, TPK-KY, Innolux, AUO]
 created: 2026-05-08
-updated: 2026-08-11
-sources: [2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-05-05_trendforce-insights_glass-substrate-development, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-05-29_3dincites_rapidus-2nm-advanced-packaging-ai-foundry, 2026-06-01_trendforce_intel-3dgs-india-glass-substrate, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-06-20_biggo_boe-glass-substrate-pilot, 2026-06-28_economy-ac_glass-substrate-global-race, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan]
+updated: 2026-08-23
+sources: [2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-05-05_trendforce-insights_glass-substrate-development, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-05-29_3dincites_rapidus-2nm-advanced-packaging-ai-foundry, 2026-06-01_trendforce_intel-3dgs-india-glass-substrate, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-06-20_biggo_boe-glass-substrate-pilot, 2026-06-28_economy-ac_glass-substrate-global-race, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-08-18_trendforce_shinko-glass-substrate-22layer-glassem-delay]
 related:
   - wiki/technologies/copos.md
   - wiki/technologies/foplp.md
@@ -585,6 +585,44 @@ TSMC 在 JPCA Show 2026（日本）首次公開玻璃基板 vs 有機基板量�
 ### TrendForce 分析師觀點：顯示面板廠進軍的挑戰
 
 面板廠雖在玻璃材料認知上具有天然優勢，但半導體等級基板需滿足嚴格可靠性標準、重大資本支出，以及漫長的客戶資格認證週期。顯示基板與 AI 晶片封裝基板在技術規格上存在根本差異（微裂紋、熱失配、訊號劣化、設備不兼容），跨行進入面臨嚴重技術壁壘。
+
+---
+
+## ⭐ 2026-08-23 更新：Shinko Electric 22 層玻璃基板 + GlaSSEM 量產時程延後細節
+
+*Source: TrendForce 2026-08-18（引述 Seoul Economic Daily、The Elec、SEMI）→ [[sources/2026-08-18_trendforce_shinko-glass-substrate-22layer-glassem-delay]]*
+
+### Shinko Electric 22 層玻璃核心基板——Advanced Packaging Summit 2026
+
+- **22 層玻璃核心基板（11 Cu 配線層/側）**：Shinko Electric Industries 在 Advanced Packaging Summit 2026（7 月）展示最新成果，層數達 22 層（每側 11 層銅配線）
+- **SeWaRe 解決方案**：採用邊緣樹脂強化（edge resin reinforcement）分散基板邊緣熱載荷下的應力集中，並加入邊緣保護材料，有效抑制 SeWaRe（玻璃內部微裂紋/分層）缺陷
+- **TGV 技術**：Shinko 已掌握 Through-Glass Via 及多層絕緣/銅配線製程
+
+**wiki 含義**：Shinko 22 層基板是目前 wiki 記錄的日本廠商玻璃基板產品的最高層數里程碑，SeWaRe 邊緣樹脂解法與 wiki 既有記錄（Shinko 應力 95MPa→49MPa）一致，本文提供 Advanced Packaging Summit 2026 的展示背景。
+
+**日本廠商技術格局**（Seoul Economic Daily 評估）：
+- **Shinko Electric**：22 層 TGV 玻璃基板；邊緣樹脂 SeWaRe 抑制技術
+- **DNP（大日本印刷）**：埼玉縣 TGV 玻璃基板試產線（2025 年 12 月啟動），量產目標 2028——與 wiki 現有記錄一致（交叉驗證）
+- Seoul Economic Daily 直接評估：**日本廠商在技術成熟度上目前領先韓國競爭對手**
+
+### GlaSSEM 量產時程延後詳細更新（The Elec 報導 + Samsung EM 官方回應）
+
+**⚠️ 延後細節（2026-08 最新）**：
+
+| 時間 | 狀態 |
+|------|------|
+| 2025-11 | Samsung EM 首次通知設備廠商計畫採購（GlaSSEM 啟動） |
+| 2025-12（原計畫）| 設備採購確認 → 未兌現（第 1 次延後） |
+| 2026-03（新計畫）| 設備採購確認 → 未兌現（第 2 次延後） |
+| 2026-06（新計畫）| 設備採購確認 → 未兌現（第 3 次延後） |
+| 2026-08（現況）| **仍無確定採購時程**；生產線建設最早 2H27；量產 2028 或更晚 |
+
+**The Elec 業界消息**（未獲官方確認）：延後可能與一家「全球通訊晶片客戶」的玻璃基板原型**可靠性資格認證失敗**有關，需重新開發原型並再送測，影響整體進度。
+
+**Samsung Electro-Mechanics 官方聲明（2026-08-19）**：
+> 「未發生客戶資格認證失敗。客戶評估仍在持續進行中。目標時程維持不變：2H27 玻璃核心材料、2028 完成品玻璃基板。」
+
+**wiki 含義**：GlaSSEM 設備採購至少推遲 3 次是 wiki 首次記錄的具體里程碑細節。Samsung EM 與 The Elec 消息存在**直接矛盾**——wiki 以並記方式呈現，待後續事件澄清。此更新強化「玻璃基板商業化時間窗口 2027–2028」的業界共識，與 SKC/Absolics 延後（2027）、ASE COO 聲明（12 個月內不量產）一致。
 
 ---
 

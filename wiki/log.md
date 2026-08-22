@@ -2745,3 +2745,20 @@ an（2028–2029 量產世代）為 CoPoS 最可能的首批量產客戶——�
 - 主要新知識：
   1. **Rapidus 正式量化中介層路線圖**（TrendForce 2026-08-21，引述 OCP APAC Summit）：CTO Rozalia Beica 首次公開 4×/6×/8× 光罩中介層路線圖（面積 3,320→4,980→6,640mm²），600mm 面板可產出 49 件 8× 中介層（對比 300mm 晶圓僅 4 件），同時揭示 IIM（整合式製造）是 Rapidus 核心競爭差異化：全球首個前段+後段整合於同一設施的模式，使用 Lam Research Kallisto 電鍍系統形成 600mm 玻璃載板 RDL。
   2. **SemiEngineering Week #152 摘要三項先進封裝新知**（2026-08-21）：(a) Micron Research Labs $10B、10年、Boise——封裝為明確 R&D 核心，是 Micron 首次設立以封裝為核心研究領域的長期 R&D 機構；(b) JCET 11.3:1 深寬比 TSV 樣品——目前 wiki 記錄 OSAT 最高規格；(c) 白宮 NSSTS 2026-08 將「異質整合與先進封裝」列為國家安全 R&D 優先——封裝從產業政策升至國家安全戰略層次。
+
+## [2026-08-23] collect | 每日自動蒐集 — 先進封裝最新動態（Shinko 22 層玻璃基板 + AI 封裝熱管理三年路線圖）
+- 搜尋查詢數：6 組（TSMC CoWoS/SoIC/8月最新、HBM4 SK Hynix Samsung 8月、Intel EMIB Foveros 8月、先進封裝 8月22–23日新聞、UCIe 標準 8月、SemiEngineering Week #153）
+- 成功抓取：2 篇（存入 raw/articles/ 2 篇, raw/papers/ 0 篇, raw/reports/ 0 篇）
+- 失敗/跳過：多篇（Week #153 尚未發布；HBM/Intel/TSMC 結果均已在 _collected_urls.txt；Hot Chips 2026 無具體先進封裝技術文稿索引）
+- 學術代理：UNAVAILABLE ✗
+- 新增 wiki 頁面：2 頁（全為 sources/）
+  - wiki/sources/2026-08-21_trendforce_chip-packaging-heat-ai-bottleneck-cpo-stco.md
+  - wiki/sources/2026-08-18_trendforce_shinko-glass-substrate-22layer-glassem-delay.md
+- 更新 wiki 頁面：3 頁
+  - wiki/concepts/thermal-management.md（液冷滲透率三年路線圖 33%→53%→60%；HBF/HBS 次代記憶體熱論述；PINNs/深度RL 封裝設計工具；CPO+STCO 雙路徑確立）
+  - wiki/technologies/glass-substrate.md（Shinko 22 層基板 APS 2026；GlaSSEM 設備採購 ≥3 次延後；Samsung EM 官方否認認證失敗；2H27 生產線/2028 量產收斂共識）
+  - wiki/index.md（頁面數 393→395；來源數 351→353；2 個新 sources 條目；thermal-management/glass-substrate 描述更新）
+- 主要新知識：
+  1. **AI 晶片液冷滲透率首次三年量化路線圖**（TrendForce 2026-08-21，引述 ETNews）：~33%（2025）→ 53%（2026）→ ~60%（2027），2026 年為分水嶺（首次過半），配合 AI 晶片 TDP >1kW 和機架功率向 1MW 推進，確認液冷從高端選配轉為 AI 基礎設施標配。KAIST 金正浩教授同時提出 HBF（堆疊 NAND）/ HBS（堆疊 SRAM）為 HBM 之後的下一代 AI 記憶體，三者均面臨 3D 堆疊熱管理挑戰遞增問題；PINNs 和深度強化學習正快速成為自主化封裝設計的新工具。
+  2. **Shinko Electric 22 層玻璃核心基板（11 Cu 層/側）於 Advanced Packaging Summit 2026 展示**（TrendForce 2026-08-18，引述 Seoul Economic Daily）：SeWaRe 解法為邊緣樹脂強化，日本廠商（Shinko + DNP）技術成熟度被媒體評估為目前優於韓國競爭對手；同時 GlaSSEM 設備採購時程至少三次延後（2025-12→2026-03→2026-06），The Elec 業界消息指潛在認證失敗，Samsung EM 官方否認，2H27 生產線/2028 量產仍為官方目標——此次澄清強化了「玻璃基板量產窗口收斂至 2027–2028 年」的行業共識。
+

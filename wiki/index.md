@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-08-22
-**頁面總數 Total Pages**：393
-**原始來源數 Sources**：351
+**更新時間 Updated**：2026-08-23
+**頁面總數 Total Pages**：395
+**原始來源數 Sources**：353
 
 ---
 
@@ -48,7 +48,7 @@
 - [[technologies/emib]] — EMIB（Embedded Multi-Die Interconnect Bridge）；Intel 2.5D 局部矽橋；**TSMC CEO C.C. Wei 2026-07-16 公開歡迎 EMIB；NVIDIA Feynman/Google HumuFish/Amazon Trainium 3 潛在客戶**（2026-07-30）；**Intel EMIB-T 封裝良率~90%，基板良率成主要瓶頸；Unimicron HVM 2027，初始良率目標~50%；ASE COO 表態 EMIB-T 組裝測試就緒**（2026-08-19）⭐更新
 - [[technologies/foveros]] — Foveros；Intel 3D 堆疊；Foveros Direct 3D（<10µm Cu-Cu，2026 量產）；875 GB/s 3D 頻寬⭐新增
 - [[technologies/foplp]] — FOPLP（扇出面板級封裝）；**CFMEE PLP 2000 通過技術資格認證——中國首套 510×515mm PLP 直寫微影系統（2µm；CoPoS/FOPLP/玻璃基板）**（2026-07-07）⭐更新
-- [[technologies/glass-substrate]] — 玻璃核心基板（TGV）；**GlaSSEM JV（Samsung EM+Sumitomo，2H27）+ TSMC JPCA 2026 首次公開量化性能數據（COP +16%、電感 -42%）**（2026-07-07）⭐更新
+- [[technologies/glass-substrate]] — 玻璃核心基板（TGV）；**GlaSSEM JV（Samsung EM+Sumitomo，2H27）+ TSMC JPCA 2026 首次公開量化性能數據（COP +16%、電感 -42%）**（2026-07-07）；**Shinko Electric 22 層基板（APS 2026）；GlaSSEM 設備採購 ≥3 次延後，生產線 2H27；Samsung EM 否認認證失敗**（2026-08-23）⭐更新
 - [[technologies/hbf]] — **HBF（High Bandwidth Flash）**；**Sandisk 首次 tape-out（2026-08-14）；2027 樣品、2028 量產（時程修正）；4 HBF GPU=8 HBM GPU（50% GPU 節省）**；SKH+SanDisk 標準化（OCP/UCIe）；Grade 1-3（0.4-3.0 TB/s）；512GB⭐更新
 - [[technologies/tsv]] — **TSV（Through-Silicon Via / 矽穿孔）**；HBM TSV 2–5µm/30–60µm（via-middle）；矽中介層 TSV 5–20µm/80–120µm；8步驟製程流程；NanoTSV（<100nm）2nm+ 背面供電；Amkor Rick Reed 觀點（2026-08-10）⭐新增
 
@@ -57,13 +57,15 @@
 ## 概念 Concepts
 
 - [[concepts/advanced-packaging-market]] — 市場規模（2025：$43–52B，CAGR 9–10%）、供應鏈、技術市佔、2026–2030 趨勢
-- [[concepts/thermal-management]] — 先進封裝熱管理；TSMC CoWoS 直接矽液冷（ECTC 2025）；**翹曲管理納入熱-機械複合設計框架**（2026-07-30）⭐更新
+- [[concepts/thermal-management]] — 先進封裝熱管理；TSMC CoWoS 直接矽液冷（ECTC 2025）；**翹曲管理納入熱-機械複合設計框架**（2026-07-30）；**液冷滲透率 33%→53%→60%（2025–27）；HBF/HBS 熱管理延伸；PINNs/AI 設計工具；CPO+STCO 雙路徑**（2026-08-23）⭐更新
 - [[concepts/geopolitics-advanced-packaging]] — 先進封裝地緣政治；美中晶片戰；CHIPS Act；**深圳 RMB 100 億 + 武漢 RMB 180 億半導體基金（2026-07-29）**⭐更新
 
 ---
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-08-21_trendforce_chip-packaging-heat-ai-bottleneck-cpo-stco]] — TrendForce：**AI 晶片 TDP >1kW；液冷滲透率 33%→53%→60%（2025–2027）；HBF/HBS 次代 AI 記憶體熱管理論述；PINNs/深度 RL 封裝設計；CPO+STCO 為熱管理雙路徑**⭐新增
+- [[sources/2026-08-18_trendforce_shinko-glass-substrate-22layer-glassem-delay]] — TrendForce：**Shinko Electric 22 層玻璃基板（11 Cu 層/側，APS 2026）；DNP 埼玉試產線確認（2025-12）；GlaSSEM 設備採購 ≥3 次延後；Samsung EM 否認失敗認證；2H27 生產線/2028 量產**⭐新增
 - [[sources/2026-08-21_trendforce_rapidus-panel-level-packaging-8reticle-600mm]] — TrendForce：**Rapidus 8倍光罩中介層路線圖（~2030）；600mm面板49件產出；IIM整合製造模式；Lam Research Kallisto；OCP APAC Summit 2026-08-21**⭐新增
 - [[sources/2026-08-21_semieng_chip-week-152]] — SemiEngineering Week #152：**Micron Research Labs $10B/10年（封裝R&D）；JCET 11.3:1 HSR-TSV樣品；Samsung代工漲15%；Socionext 18A-P；NSSTS白宮政策點名先進封裝；CPO路線圖Nature**⭐新增
 - [[sources/2026-08-20_trendforce_samsung-onyang-hbm-fab-krw6t-p5-triple]] — TrendForce：**Samsung 溫陽 HBM 廠 KRW 6T（389,825m²）2026-09 動工；韓國「三大國家躍進」首個落地項目；P5 申請三廠房（350%→490% 容積率，6 潔淨室，>1.5× 產能）；HBM4 良率~80%；P5 完工 2030**（2026-08-21 收錄；原文 2026-08-20）⭐新增
