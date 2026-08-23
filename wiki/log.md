@@ -2762,3 +2762,13 @@ an（2028–2029 量產世代）為 CoPoS 最可能的首批量產客戶——�
   1. **AI 晶片液冷滲透率首次三年量化路線圖**（TrendForce 2026-08-21，引述 ETNews）：~33%（2025）→ 53%（2026）→ ~60%（2027），2026 年為分水嶺（首次過半），配合 AI 晶片 TDP >1kW 和機架功率向 1MW 推進，確認液冷從高端選配轉為 AI 基礎設施標配。KAIST 金正浩教授同時提出 HBF（堆疊 NAND）/ HBS（堆疊 SRAM）為 HBM 之後的下一代 AI 記憶體，三者均面臨 3D 堆疊熱管理挑戰遞增問題；PINNs 和深度強化學習正快速成為自主化封裝設計的新工具。
   2. **Shinko Electric 22 層玻璃核心基板（11 Cu 層/側）於 Advanced Packaging Summit 2026 展示**（TrendForce 2026-08-18，引述 Seoul Economic Daily）：SeWaRe 解法為邊緣樹脂強化，日本廠商（Shinko + DNP）技術成熟度被媒體評估為目前優於韓國競爭對手；同時 GlaSSEM 設備採購時程至少三次延後（2025-12→2026-03→2026-06），The Elec 業界消息指潛在認證失敗，Samsung EM 官方否認，2H27 生產線/2028 量產仍為官方目標——此次澄清強化了「玻璃基板量產窗口收斂至 2027–2028 年」的行業共識。
 
+
+## [2026-08-24] collect | 每日自動蒐集 — 先進封裝最新動態（週末後首日，無新文章）
+- 搜尋查詢數：7 組（TSMC CoWoS/SoIC 8月最新、HBM4 SK Hynix Samsung Micron、Intel EMIB Foveros、TrendForce 8月22–24日、先進封裝異質整合 chiplet、SemiEngineering Week #153、Hot Chips 2026）
+- 成功抓取：0 篇
+- 失敗/跳過：多篇（TrendForce 最新 AP 文章仍為 2026-08-21，本日無新發布；SemiEngineering Week #153 尚未發布；Hot Chips 2026 進行中（2026-08-23–25），但技術論文/簡報尚未索引；3DInCites 矽光子 CPO 文章抓取空白；TechXplore 文章抓取空白）
+- 學術代理：UNAVAILABLE ✗
+- 新增 wiki 頁面：0 頁
+- 更新 wiki 頁面：0 頁
+- ⚠️ 警告：0 篇文章成功收錄，低於最低門檻 3 篇。
+- 主要新知識：本日無新內容。週末（2026-08-22–23）各主要來源（TrendForce、SemiEngineering）未發布先進封裝相關新文章，與往常週末停刊模式一致。Hot Chips 2026（Stanford，2026-08-23–25）正在進行，預計本週稍晚（2026-08-25–26）將有相關技術論文和週報（SemiEngineering Week #153）可收錄。建議明日（2026-08-25）重點搜尋 Hot Chips 2026 NVIDIA/AMD/Google 封裝技術摘要及 TrendForce 最新文章。
