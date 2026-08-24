@@ -3,8 +3,8 @@ title: "UCIe — Universal Chiplet Interconnect Express"
 category: technology
 tags: [standards, chiplet, interconnect, UCIe, 3D, hybrid-bonding, UCIe-3.0]
 created: 2026-04-24
-updated: 2026-08-05
-sources: [2026-04-24_initial-survey, 2026-04-01_semiengineering_chiplets-2026, 2025-01-28_3dincites_iftle-618-ucie-standard-vs-ucie3, 2025-01-01_semieng_ucie-1-6t-io-chiplets-ai-datacenter, 2025-09-03_uciexpress_ucie30-spec, 2026-03-05_uciexpress_chiplet-summit-2026, 2026-02-12_semieng_ucie3-technical-deepdive]
+updated: 2026-08-25
+sources: [2026-08-24_intel-newsroom_hot-chips-2026-diamond-rapids-foveros-ucie, 2026-04-24_initial-survey, 2026-04-01_semiengineering_chiplets-2026, 2025-01-28_3dincites_iftle-618-ucie-standard-vs-ucie3, 2025-01-01_semieng_ucie-1-6t-io-chiplets-ai-datacenter, 2025-09-03_uciexpress_ucie30-spec, 2026-03-05_uciexpress_chiplet-summit-2026, 2026-02-12_semieng_ucie3-technical-deepdive]
 related:
   - wiki/technologies/hybrid-bonding.md
   - wiki/technologies/hbm4.md
@@ -189,6 +189,20 @@ UCIe 2.0 引入 **UCIe-3D** 最佳化：
 - UCIe 標準能否統一 memory interface（目前 HBM 仍有專屬介面）？
 - 64 GT/s 連結的功耗 vs 頻寬效益，是否足以取代短距光學互連（CPO）？
 - UCIe-S 與 UCIe-A 的市場份額如何演變？高端 AI 封裝是否會以 UCIe-A 為主？
+
+## 2026-08-25 更新 / Updates
+
+### ⭐ Wildcat Lake 確認為 Intel 首款含 UCIe 的處理器——主流客戶端平台里程碑（2026-08-24）
+
+Intel 在 Hot Chips 2026 宣布 **Wildcat Lake（Intel Core Series 3）** 為 **Intel 首款搭載 UCIe 的處理器**，採用 Intel 18A 製程，面向主流筆電與智慧邊緣平台。此為 UCIe 在封裝技術應用路線上的重要里程碑：
+
+- **意義**：UCIe 從高階 AI 加速器（如 Intel AI Chip Test Vehicle、AMD MI 系列）正式下滲至主流客戶端 SoC，驗證「開放 chiplet 互連生態」的商業可行路徑
+- **Diamond Rapids UCIe-S 應用**：Diamond Rapids（Xeon 7）同時揭示 **UCIe-S**（基板版本）用於 Fabric Hub Tile（FHT）與基底晶片的連結，為不同 UCIe 物理形式的量產驗證
+- **對比**：AMD 的 EPYC Venice 採 EMIB 等效技術，非 UCIe-S；Intel 選擇以 UCIe-S 作為 Diamond Rapids 跨晶片互連標準
+
+*Source: Intel Newsroom 2026-08-24 → [[wiki/sources/2026-08-24_intel-newsroom_hot-chips-2026-diamond-rapids-foveros-ucie]]*
+
+---
 
 ## 2026-08-05 更新 / Updates
 

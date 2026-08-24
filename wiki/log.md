@@ -2,6 +2,26 @@
 
 ---
 
+## [2026-08-25] collect | 每日自動蒐集 — 先進封裝最新動態（Hot Chips 2026：Samsung zHBM + Intel Diamond Rapids Foveros Direct 3D）
+- 搜尋查詢數：7 組（Hot Chips 2026 異質整合、SemiEngineering Week #153、TrendForce 8月24–25日、Intel Diamond Rapids、HBM4 SK hynix Samsung、先進封裝 8月最新、UCIe chiplet）
+- 成功抓取：2 篇（存入 raw/articles/ 2 篇, raw/papers/ 0 篇, raw/reports/ 0 篇）
+- 失敗/跳過：多篇（SemiEngineering Week #153 尚未發布；TechPowerUp 頁面空白；SemiEng chiplets 2026 文章過舊（2026-02-24））
+- 學術代理：UNAVAILABLE ✗
+- 新增 wiki 頁面：2 頁（全為 sources/）
+  - wiki/sources/2026-08-24_trendforce_hot-chips-2026-samsung-zhbm-skhynix-emib.md
+  - wiki/sources/2026-08-24_intel-newsroom_hot-chips-2026-diamond-rapids-foveros-ucie.md
+- 更新 wiki 頁面：7 頁
+  - wiki/entities/samsung.md（zHBM Hot Chips 2026 首批定量宣稱：+70%/+230%/HPB 50%/>35%）
+  - wiki/entities/sk-hynix.md（iHBM >30%；EMIB 正式列入封裝選項；JV 傳聞）
+  - wiki/entities/intel.md（Diamond Rapids Foveros Direct 3D 多晶片架構；Wildcat Lake 首款 UCIe 處理器；Crescent Island 480GB/350W）
+  - wiki/technologies/foveros.md（Diamond Rapids 最大規模 Foveros Direct 3D 量產案例）
+  - wiki/technologies/ucie.md（Wildcat Lake：Intel 首款含 UCIe 主流處理器里程碑）
+  - wiki/technologies/emib.md（SK hynix Hot Chips 2026 正式公開 EMIB 評估）
+  - wiki/index.md（頁面數 395→397；來源數 353→355；2 個新 sources 條目；entity/tech 描述更新）
+- 主要新知識：
+  1. **Samsung zHBM Hot Chips 2026 首批定量性能宣稱**（TrendForce 2026-08-24）：+70% 功率效率、+230% DRAM 頻寬 vs 標準 HBM4e；HPB 覆蓋 50% PHY 面積降溫 >35%；zHBM 消除 2.5D 中介層（4 stacks on XPU）。此前 FMS 2026 僅有定性描述；本次 Hot Chips 2026 提供可追蹤的量化指標。
+  2. **Intel Diamond Rapids Foveros Direct 3D 完整多晶片封裝架構首次揭示**（Intel Newsroom 2026-08-24）：16 核心晶片（18A-P）→ Foveros Direct 3D → 4 基底晶片（Intel 3-T）→ UCIe-S → 2 FHT（Intel 3）；Wildcat Lake 確認為 Intel 首款含 UCIe 的處理器，標誌 UCIe 從高端 AI 晶片下滲至主流客戶端平台。SK hynix 正式在技術會議將 EMIB 列為 HBM 2.5D 封裝官方比較選項，JV 傳聞首見主流媒體。
+
 ## [2026-08-20] collect | 每日自動蒐集 — Intel EMIB-T CoWoS 溢出 + SK Hynix 矽谷 HBM 協同設計團隊
 - 搜尋查詢數：7 組（CoWoS supply/capacity, HBM4 SK Hynix NVIDIA, EMIB-T Unimicron 2027, advanced packaging 2026 August, hybrid bonding HVM, UCIe 3.0 chiplet, Samsung packaging spillover）
 - 成功抓取：2 篇（存入 raw/articles/ 2 篇）

@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-08-23
-**頁面總數 Total Pages**：395
-**原始來源數 Sources**：353
+**更新時間 Updated**：2026-08-25
+**頁面總數 Total Pages**：397
+**原始來源數 Sources**：355
 
 ---
 
@@ -15,9 +15,9 @@
 ## 實體 Entities（公司、組織）
 
 - [[entities/tsmc]] — 台積電；全球最大晶圓代工廠；CoWoS/SoIC 技術領導者；**Arizona 1H26 獲利 NT$36B（+663% YoY），超越南京廠成最大獲利海外子公司；JASM 轉盈；10 邏輯廠+2 AP 廠 $265B**；研發類 EMIB 矽橋封裝（聯手欣興 Kinsus）⭐更新
-- [[entities/intel]] — 英特爾；IDM；EMIB-T 今年內 fab 量產（45µm→35/25µm 路線圖、Jaguar Shores 首款產品推測）；**Xeon 6+ 18A 首款商業 CPU**（2026-06-19）；**CEO 暗示重返記憶體、ZAM 架構、Saimemory JV（Intel+SoftBank）**（2026-08-14）；**SK Hynix 前 CEO 李錯熹（Seok-Hee Lee）就任 Foundry EVP 主導 EMIB-T/HBI 量產**（2026-06-18）；**$19.7B 股票發行（2026-08-11，5× 超額認購）支撐 14A HVM 2028 + Ohio 廠 >$100B**；**CoWoS 溢出後端訂單至 Intel Malaysia（~US$1.3B HBM）；Unimicron HVM 2027；EMIB-T 封裝良率~90%，基板良率成新瓶頸**（2026-08-19）⭐更新
-- [[entities/samsung]] — 三星；IDM + Foundry + Memory；**溫陽 HBM 廠 KRW 6T 2026-09 動工（389,825m²）；P5 申請三廠房（6 潔淨室，>1.5× 產能）；HBM4 良率~80%**；1H26 設施投資 KRW 25.6T（+23.5%）；NVIDIA 未列 1H26 前五大客戶；NRD-K Line 2 轉型 2nm HBM5 base die；GlaSSEM JV⭐更新
-- [[entities/sk-hynix]] — SK Hynix；HBM 市場領導者；**Nature Electronics CPO 路線圖：>100 Tb/s / <1 pJ/bit / <10 ns；光子中介層架構；µLED 互連；AI 基礎設施戰略轉型宣言**（2026-08-20）；1H26 設施投資 KRW 17.6T（+56.4%）；Q2 Op Margin 76% 歷史新高；矽谷 HBM 協同設計團隊擴編⭐更新
+- [[entities/intel]] — 英特爾；IDM；EMIB-T 今年內 fab 量產（45µm→35/25µm 路線圖、Jaguar Shores 首款產品推測）；**Xeon 6+ 18A 首款商業 CPU**（2026-06-19）；**CEO 暗示重返記憶體、ZAM 架構、Saimemory JV（Intel+SoftBank）**（2026-08-14）；**SK Hynix 前 CEO 李錯熹（Seok-Hee Lee）就任 Foundry EVP 主導 EMIB-T/HBI 量產**（2026-06-18）；**$19.7B 股票發行（2026-08-11，5× 超額認購）支撐 14A HVM 2028 + Ohio 廠 >$100B**；**CoWoS 溢出後端訂單至 Intel Malaysia（~US$1.3B HBM）；Unimicron HVM 2027；EMIB-T 封裝良率~90%，基板良率成新瓶頸**（2026-08-19）；**Diamond Rapids（Xeon 7）Hot Chips 2026：Foveros Direct 3D 最大規模量產多晶片架構（16×18A-P + 4×Intel 3-T + 2×Intel 3）；256 P-cores；Wildcat Lake = Intel 首款 UCIe 處理器；Crescent Island 480GB LPDDR5X / 350W 氣冷**（2026-08-24）⭐更新
+- [[entities/samsung]] — 三星；IDM + Foundry + Memory；**溫陽 HBM 廠 KRW 6T 2026-09 動工（389,825m²）；P5 申請三廠房（6 潔淨室，>1.5× 產能）；HBM4 良率~80%**；1H26 設施投資 KRW 25.6T（+23.5%）；NVIDIA 未列 1H26 前五大客戶；NRD-K Line 2 轉型 2nm HBM5 base die；GlaSSEM JV；**Hot Chips 2026：zHBM 首批定量性能宣稱（+70% 功率效率、+230% DRAM 頻寬 vs HBM4e；HPB 覆蓋 50% PHY 面積、降溫 >35%；zHBM 直接堆疊於 XPU 無需 2.5D 中介層）**（2026-08-24）⭐更新
+- [[entities/sk-hynix]] — SK Hynix；HBM 市場領導者；**Nature Electronics CPO 路線圖：>100 Tb/s / <1 pJ/bit / <10 ns；光子中介層架構；µLED 互連；AI 基礎設施戰略轉型宣言**（2026-08-20）；1H26 設施投資 KRW 17.6T（+56.4%）；Q2 Op Margin 76% 歷史新高；矽谷 HBM 協同設計團隊擴編；**Hot Chips 2026：iHBM（I-HBM）嵌入高導熱絕緣材料降熱阻 >30%（HBM5 目標）；正式將 EMIB 納入 2.5D 封裝選項評估（與 CoWoS-S/L/R 並列）；SK hynix+Intel JV 傳聞首見主流媒體**（2026-08-24）⭐更新
 - [[entities/asmpt]] — ASMPT Limited；TCB/混合接合/Photonics-CPO 設備領導廠商；Q1 2026 訂單 27M +71.6% YoY；NEXX 出售給 AMAT⭐新增
 - [[entities/ase-group]] — ASE Group；全球最大 OSAT；CoWoP 面板封裝；**SPIL 斗六廠破土（TWD 100 億/2028 一期）；2026 CapEx $10.5B；2027 LEAP 目標 $7.5B+；FOPLP Q1 2027**；AMD EFB 合作；**COO 吳田玉明確表態 CoWoS/EMIB 不互斥；可承接 EMIB-T 組裝測試業務**（2026-08-19）⭐更新
 - [[entities/amkor]] — Amkor；全球第二大 OSAT；Arizona $70 億廠（2028 投產）；Intel EMIB 外包夥伴⭐新增
@@ -42,11 +42,11 @@
 - [[technologies/soic]] — SoIC（System on Integrated Chips）；TSMC 3D 堆疊；SoIC-X 混合接合（**6µm 2025 量產→4.5µm 2029；A14-to-A14 SoIC 2029年 1.8×I/O 密度**）⭐更新
 - [[technologies/hybrid-bonding]] — 混合接合（Cu-Cu）；W2W/D2W/D2D 三情境框架（ECTC 2025）；目標 1M/mm²；**翹曲管理確認為 HVM 製程橫跨全流程的新約束**（2026-07-30）⭐更新
 - [[technologies/hbm4]] — HBM4；JEDEC JESD270-4；1.65+ TB/s；**Custom HBM4E 時代起點（Micron EVP）；HBM-to-DDR 犧牲比 3:1→4:1；HBM4E logic die = TSMC；SK hynix「One Team」**（2026-08-13）；**HBM4 ASP 首次量化 $31–32/GB（NVIDIA）；客戶多元化至 AMD/Google**（2026-08-14）⭐更新
-- [[technologies/ucie]] — UCIe；Chiplet 互連標準；UCIe 3.0：64GT/s quarter-rate、BER 差異化、Arm CHI 映射、L2 深度睡眠（2026-06-18）⭐更新
+- [[technologies/ucie]] — UCIe；Chiplet 互連標準；UCIe 3.0：64GT/s quarter-rate、BER 差異化、Arm CHI 映射、L2 深度睡眠（2026-06-18）；**Wildcat Lake = Intel 首款 UCIe 處理器（UCIe 主流化里程碑）；Diamond Rapids UCIe-S 用於 FHT 互連**（2026-08-24）⭐更新
 - [[technologies/copackaged-optics]] — TSMC-COUPE™ 共封裝光學元件（CPO）；**SK hynix Nature Electronics CPO 路線圖（>100 Tb/s / <1 pJ/bit / <10 ns；光子中介層→記憶體介面；µLED 方向）**（2026-08-20）；銅三重限制確立 CPO 五年全光化論述；CPO -70% 功耗 vs 可插拔⭐更新
 - [[technologies/info-wmcm]] — InFO（2016 商轉）+ WMCM（2026 量產）；TSMC 行動晶片封裝旗艦；Apple A20 iPhone18 採用 WMCM⭐新增
-- [[technologies/emib]] — EMIB（Embedded Multi-Die Interconnect Bridge）；Intel 2.5D 局部矽橋；**TSMC CEO C.C. Wei 2026-07-16 公開歡迎 EMIB；NVIDIA Feynman/Google HumuFish/Amazon Trainium 3 潛在客戶**（2026-07-30）；**Intel EMIB-T 封裝良率~90%，基板良率成主要瓶頸；Unimicron HVM 2027，初始良率目標~50%；ASE COO 表態 EMIB-T 組裝測試就緒**（2026-08-19）⭐更新
-- [[technologies/foveros]] — Foveros；Intel 3D 堆疊；Foveros Direct 3D（<10µm Cu-Cu，2026 量產）；875 GB/s 3D 頻寬⭐新增
+- [[technologies/emib]] — EMIB（Embedded Multi-Die Interconnect Bridge）；Intel 2.5D 局部矽橋；**TSMC CEO C.C. Wei 2026-07-16 公開歡迎 EMIB；NVIDIA Feynman/Google HumuFish/Amazon Trainium 3 潛在客戶**（2026-07-30）；**Intel EMIB-T 封裝良率~90%，基板良率成主要瓶頸；Unimicron HVM 2027，初始良率目標~50%；ASE COO 表態 EMIB-T 組裝測試就緒**（2026-08-19）；**Hot Chips 2026：SK hynix 正式將 EMIB 列為 HBM 2.5D 封裝選項（與 CoWoS-S/L/R 並列比較）；SK hynix+Intel JV 傳聞；SK hynix EMIB R&D 自有 HBM 確認**（2026-08-24）⭐更新
+- [[technologies/foveros]] — Foveros；Intel 3D 堆疊；Foveros Direct 3D（<10µm Cu-Cu，2026 量產）；875 GB/s 3D 頻寬；**Diamond Rapids Hot Chips 2026：迄今最大規模量產多晶片 Foveros Direct 3D 案例（16×18A-P → 4×Intel 3-T → UCIe-S → 2×Intel 3；256 P-cores / 1.28GB LLC）**（2026-08-24）⭐更新
 - [[technologies/foplp]] — FOPLP（扇出面板級封裝）；**CFMEE PLP 2000 通過技術資格認證——中國首套 510×515mm PLP 直寫微影系統（2µm；CoPoS/FOPLP/玻璃基板）**（2026-07-07）⭐更新
 - [[technologies/glass-substrate]] — 玻璃核心基板（TGV）；**GlaSSEM JV（Samsung EM+Sumitomo，2H27）+ TSMC JPCA 2026 首次公開量化性能數據（COP +16%、電感 -42%）**（2026-07-07）；**Shinko Electric 22 層基板（APS 2026）；GlaSSEM 設備採購 ≥3 次延後，生產線 2H27；Samsung EM 否認認證失敗**（2026-08-23）⭐更新
 - [[technologies/hbf]] — **HBF（High Bandwidth Flash）**；**Sandisk 首次 tape-out（2026-08-14）；2027 樣品、2028 量產（時程修正）；4 HBF GPU=8 HBM GPU（50% GPU 節省）**；SKH+SanDisk 標準化（OCP/UCIe）；Grade 1-3（0.4-3.0 TB/s）；512GB⭐更新
@@ -64,6 +64,8 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-08-24_trendforce_hot-chips-2026-samsung-zhbm-skhynix-emib]] — TrendForce Hot Chips 2026：**Samsung zHBM +70% 功率效率/+230% DRAM 頻寬 vs HBM4e；HPB 50% PHY 覆蓋/>35% 降溫；SK hynix iHBM >30% 熱阻降低；EMIB 正式列入 2.5D 選項；SK hynix+Intel JV 傳聞**⭐新增
+- [[sources/2026-08-24_intel-newsroom_hot-chips-2026-diamond-rapids-foveros-ucie]] — Intel Newsroom Hot Chips 2026：**Diamond Rapids Foveros Direct 3D 完整架構（16×18A-P/4×Intel 3-T/2×Intel 3）；Wildcat Lake = Intel 首款 UCIe 處理器；Crescent Island 480GB LPDDR5X 350W 氣冷**⭐新增
 - [[sources/2026-08-21_trendforce_chip-packaging-heat-ai-bottleneck-cpo-stco]] — TrendForce：**AI 晶片 TDP >1kW；液冷滲透率 33%→53%→60%（2025–2027）；HBF/HBS 次代 AI 記憶體熱管理論述；PINNs/深度 RL 封裝設計；CPO+STCO 為熱管理雙路徑**⭐新增
 - [[sources/2026-08-18_trendforce_shinko-glass-substrate-22layer-glassem-delay]] — TrendForce：**Shinko Electric 22 層玻璃基板（11 Cu 層/側，APS 2026）；DNP 埼玉試產線確認（2025-12）；GlaSSEM 設備採購 ≥3 次延後；Samsung EM 否認失敗認證；2H27 生產線/2028 量產**⭐新增
 - [[sources/2026-08-21_trendforce_rapidus-panel-level-packaging-8reticle-600mm]] — TrendForce：**Rapidus 8倍光罩中介層路線圖（~2030）；600mm面板49件產出；IIM整合製造模式；Lam Research Kallisto；OCP APAC Summit 2026-08-21**⭐新增

@@ -3,8 +3,8 @@ title: "Foveros — Intel 3D 晶片堆疊技術"
 category: technology
 tags: [Intel, 3D-stacking, hybrid-bonding, Foveros-Direct, micro-bump, TSV, Clearwater-Forest]
 created: 2026-05-03
-updated: 2026-06-27
-sources: [2026-03-03_trendforce_intel-clearwater-forest, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-01_semianalysis_cpus-back-datacenter-2026, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap]
+updated: 2026-08-25
+sources: [2026-08-24_intel-newsroom_hot-chips-2026-diamond-rapids-foveros-ucie, 2026-03-03_trendforce_intel-clearwater-forest, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-01_semianalysis_cpus-back-datacenter-2026, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap]
 related:
   - wiki/entities/intel.md
   - wiki/technologies/emib.md
@@ -50,6 +50,12 @@ Foveros 是 Intel 的 3D 晶片堆疊技術，將多個 die 垂直堆疊於基�
 - **量產中**：Foveros micro-bump（多款 Intel 消費性/伺服器晶片）
 - **2025-04-29（⭐一手來源新增）**：**Intel Foundry Direct Connect 2025——Foveros-R、Foveros-B、Foveros Direct 3D < 5µm pitch 首次正式公開**。本條目為官方新聞稿（intc.com）一手來源，校正既有 wiki 中 Foveros-R/B「2026 公布」之時間誤差：官方公告時間實為 2025-04-29，2026 年後續報導多屬延伸細化。同篇公告亦宣布新增與 **Amkor Technology** 封裝合作，以及新設 **Intel Foundry Chiplet Alliance**。
   *Source: Intel Corporation 投資者新聞稿，2025-04-29*
+- **2026-08-24（⭐最新）**：**Diamond Rapids（Xeon 7）在 Hot Chips 2026 揭示 Foveros Direct 3D 量產多晶片架構**（Intel Newsroom 2026-08-24）：
+  - 最完整的 Foveros Direct 3D 量產多晶片堆疊實例：**16 核心晶片**（Intel 18A-P）→ Foveros Direct 3D 混合接合 → **4 基底晶片**（Intel 3-T）→ UCIe-S 基板銅連結 → **2 Fabric Hub Tiles**（Intel 3）
+  - 節點分配（全部 Intel Foundry）：核心晶片 18A-P（最新節點），基底晶片 Intel 3-T，FHT Intel 3（前一代）
+  - 規模：256 P-cores，1.28 GB LLC，16 記憶體通道，128 lanes PCIe Gen6 + CXL 3.0
+  - 意義：Diamond Rapids 是迄今量產多晶片架構中 Foveros Direct 3D 應用規模最大的案例
+  *Source: Intel Newsroom 2026-08-24 → [[wiki/sources/2026-08-24_intel-newsroom_hot-chips-2026-diamond-rapids-foveros-ucie]]*
 - **2026-03（MWC）**：Clearwater Forest（Xeon 6+）搭載 **Foveros Direct 3D**（< 10µm Cu-Cu），首顆 3D Cu-Cu 堆疊 Intel 伺服器晶片；同時結合 EMIB 形成 **EMIB 3.5D** 架構
 - **2026-02-15（ISSCC 2026）**：Intel M3DProc 展示——Intel 3 底部 die + 18A 頂部 die；3D Mesh 頻寬 **875 GB/s**；9µm Foveros Direct 接合；3D Mesh 降低延遲、提升吞吐量約 40%
 

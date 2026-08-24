@@ -3,7 +3,7 @@ title: "EMIB — Embedded Multi-Die Interconnect Bridge"
 category: technology
 tags: [Intel, 2.5D, silicon-bridge, chiplet, HBM4, Foveros, glass-substrate, EMIB-T, EMIB-M, silicon-capacitors, power-delivery, HLFF, encapsulation, underfill]
 created: 2026-05-03
-updated: 2026-08-20
+updated: 2026-08-25
 sources: [2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-03-05_trendforce_intel-emib-billions, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-03-03_trendforce_intel-clearwater-forest, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks, 2026-06-21_convergedigest_intel-emib-t-multi-die-packaging, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap, 2026-06-05_semieng_intel-ectc2026-emib-cpo-glass-blog, 2026-01-30_tomshardware_intel-ai-chip-test-vehicle-emib-t, 2026-08-04_semieng_from-blueprint-intel-hlff]
 related:
   - wiki/entities/intel.md
@@ -72,7 +72,13 @@ EMIB 是 Intel 的局部矽橋接技術：將一小片高密度矽橋（bridge d
 
 ## 發展時程 / Timeline
 
-- **2026-08-19（⭐最新）**：**CoWoS 訂單溢出至 Intel Malaysia；Unimicron 取得客戶承諾 HVM 2027；基板良率成主要瓶頸**（TrendForce 2026-08-19）：
+- **2026-08-24（⭐最新）**：**Hot Chips 2026：SK hynix 正式在技術會議公開將 EMIB 列入 2.5D HBM 封裝選項清單；SK hynix+Intel 記憶體 JV 傳聞首見主流媒體**（TrendForce 2026-08-24，引述 Wccftech、ServerTheHome）：
+  - SK hynix 在 Hot Chips 2026 發表中，**正式比較 CoWoS-S、CoWoS-L、CoWoS-R 與 EMIB** 的機械應力與熱應力差異，標誌 EMIB 獲主要 HBM 供應商官方學術/技術認可為合格的 2.5D 封裝選項（CoWoS 體系以外的第一個被 SK hynix 公開比較的競爭方案）
+  - SK hynix + Intel **記憶體 JV（Joint Venture）傳聞**：Wccftech 首次報導，尚無官方確認；與 SK hynix 前 CEO 李錯熹加盟 Intel Foundry EVP（2026-06）及 Ohio 廠潛在 SK hynix 操作夥伴傳聞呼應
+  - **EMIB R&D 實際進展**（ZDNet Korea, 2026-05）：SK hynix 使用自家 HBM 對 Intel EMIB-based 2.5D 封裝進行 R&D，測試 HBM+邏輯晶片整合，審查材料與元件供應商
+  *Source: TrendForce 2026-08-24 → [[sources/2026-08-24_trendforce_hot-chips-2026-samsung-zhbm-skhynix-emib]]*
+
+- **2026-08-19（次新）**：**CoWoS 訂單溢出至 Intel Malaysia；Unimicron 取得客戶承諾 HVM 2027；基板良率成主要瓶頸**（TrendForce 2026-08-19）：
   - **CoWoS 訂單全滿溢出**：部分後端先進封裝訂單流入 Intel 馬來西亞廠（Intel 是馬來西亞唯一可大規模整合 HBM 的廠商）；佐證：~**US$1.3B HBM 出貨至馬來西亞**，台灣收貨 <US$3B
   - **Unimicron 正式取得 EMIB-T 客戶承諾**，與 **2 家日本供應商**協作，HVM 目標 **2027**；初始良率目標約 **50%**（正在爬坡）；同步擴充 ABF 基板產能（AI GPU/ASIC/HPC）
   - **Intel EMIB-T 封裝良率接近 90%**（Wccftech）；**基板良率為當前關鍵瓶頸**——瓶頸從封裝移轉至基板的首次明確確認
