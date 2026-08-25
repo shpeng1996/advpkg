@@ -296,3 +296,23 @@ TSMC 決定擴大將 CoW（Chip-on-Wafer，晶片貼附中介層）步驟外包�
 - 先進封裝相關比例：總 CapEx 的 **10–20%**
 
 *Source: TrendForce 2026-08-12；商業時報、中央社、ETNews*
+
+---
+
+## RDL 微影設備生態擴張：LG-PRI LDI（2026-08-26）⭐更新
+
+*Source: Tom's Hardware 2026-08-25 → [[sources/2026-08-25_tomshardware_lg-packaging-laser-direct-imaging.md]]*
+
+### LG-PRI 進入封裝微影設備市場
+
+背景：TSMC CoWoS 供需缺口雖從 ~20% 收窄至 ~10%（2026 年底），但 RDL 圖形化設備仍是生態系瓶頸。
+
+- **LG Electronics Production Technology Institute (LG-PRI)** 與 OSAT 簽約，供應**無光罩雷射直寫成像 (LDI)** 微影工具
+- 規格：最高解析版本 1.5 µm 線/間距 → **~3 µm 線路節距**
+- 設計哲學：無光罩（省去光罩成本）；以吞吐量換解析度
+- 競爭者：Mycronic、Orbotech（KLA）、CFMEE PLP 2000（中國）
+
+**分析：**
+- LG 傳統為消費電子/顯示器廠商，此舉代表跨界進入封裝設備市場（類似顯示廠商進入 FOPLP 的模式）
+- ~3 µm 節距可支援 CoWoS RDL 部分層次（目前最先進 RDL：~2 µm；LDI 適用中段節距）
+- 對 OSAT 吸引力：降低設備依賴集中度；快速原型迭代不需備光罩

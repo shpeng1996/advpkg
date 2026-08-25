@@ -2792,3 +2792,28 @@ an（2028–2029 量產世代）為 CoPoS 最可能的首批量產客戶——�
 - 更新 wiki 頁面：0 頁
 - ⚠️ 警告：0 篇文章成功收錄，低於最低門檻 3 篇。
 - 主要新知識：本日無新內容。週末（2026-08-22–23）各主要來源（TrendForce、SemiEngineering）未發布先進封裝相關新文章，與往常週末停刊模式一致。Hot Chips 2026（Stanford，2026-08-23–25）正在進行，預計本週稍晚（2026-08-25–26）將有相關技術論文和週報（SemiEngineering Week #153）可收錄。建議明日（2026-08-25）重點搜尋 Hot Chips 2026 NVIDIA/AMD/Google 封裝技術摘要及 TrendForce 最新文章。
+
+## [2026-08-26] collect | 每日自動蒐集 — Hot Chips 2026 後續報導（SK hynix HBM5 / Intel Diamond Rapids / Micron 記憶體牆 / LG 封裝設備）
+- 搜尋查詢數：6 組（Hot Chips 2026 NVIDIA/AMD/Google 封裝；SemiEngineering Week #153；TrendForce 8月25-26日；Hot Chips SK hynix HBM5；Hot Chips Intel 架構；LG 封裝設備 CoWoS）
+- 成功抓取：4 篇（存入 raw/articles/ 4 篇, raw/papers/ 0 篇, raw/reports/ 0 篇）
+- 失敗/跳過：多篇（SemiEngineering Week #153 尚未發布；TrendForce NVIDIA 15% 漲價 URL 超出長度限制；LG Tom's Hardware URL 超出長度限制（以搜尋結果摘要補充）；Samsung/Micron Hot Chips TrendForce 條目未返回具體 URL）
+- 學術代理：UNAVAILABLE ✗
+- 新增 wiki 頁面：4 頁（全為 sources/）
+  - wiki/sources/2026-08-25_trendforce_intel-hot-chips-2026-diamond-rapids-wildcat-lake.md
+  - wiki/sources/2026-08-24_tomshardware_skhynix-hbm5-hybrid-bonding-775-micron.md
+  - wiki/sources/2026-08-25_tomshardware_micron-hot-chips-hbm-wafer-penalty.md
+  - wiki/sources/2026-08-25_tomshardware_lg-packaging-laser-direct-imaging.md
+- 更新 wiki 頁面：8 頁
+  - wiki/entities/intel.md（Diamond Rapids 完整封裝量化；Wildcat Lake MCP+UCIe 降本決策；Crescent Island LPDDR5X）
+  - wiki/entities/sk-hynix.md（775µm 物理上限正式確立；iHBM D2D PHY 機制；混合接合 HBM5 2029-2030；三廠商熱管理比較；EMIB 正式列入 2.5D 路線圖）
+  - wiki/entities/micron.md（HBM 3× 矽面積溢價；記憶體牆惡化；Meta Llama3 17.2%；設計方法論轉變；HBM4E TSMC 確認）
+  - wiki/technologies/hbm4.md（775µm 上限機制；3× 矽面積；三廠商熱管理比較表；混合接合 HBM5 確認；Micron HBM4 >2.8TB/s）
+  - wiki/technologies/hybrid-bonding.md（HBM4E 正式跳過；HBM5 2029-2030；HB vs MR-MUF 20-Hi 量化比較；首批設備訂單）
+  - wiki/technologies/foveros.md（Diamond Rapids 完整多層互連架構；Wildcat Lake Foveros→MCP 降本案例）
+  - wiki/technologies/ucie.md（Wildcat Lake UCIe 驅動封裝降本；效能/成本雙軌確立）
+  - wiki/technologies/cowos.md（LG-PRI LDI 設備進入 RDL 微影市場；~3µm 節距；CoWoS 供需背景）
+  - wiki/index.md（頁面數 397→401；來源數 355→359；intel/sk-hynix/micron/hbm4/hybrid-bonding/foveros/ucie 描述更新；4 個新 sources 條目）
+- 主要新知識：
+  1. **SK hynix Jaesik Lee（Hot Chips 2026）正式確立 HBM 混合接合時程**：775 µm 物理上限機制首次完整解析，HBM4E 正式跳過混合接合，HBM5（2029–2030）為最早量產時程。同時披露 iHBM 的具體嵌入位置（D2D PHY 區域）與不可追加限制（需協同設計）——此為 wiki 中最詳細的 HBM 封裝物理極限論述。
+  2. **Intel Diamond Rapids 完整多層封裝互連架構量化**（Hot Chips 2026）：16×18A-P core chiplet → 4×Intel 3-T base tile → 2×Intel 3 FHT，兩種不同互連技術（Foveros Direct 3D HB + substrate copper link）組合確認；Wildcat Lake 以 UCIe + 有機 MCP 取代 Foveros，首次確立 UCIe 作為「封裝降本選擇工具」（非僅互連標準）的商業案例。
+  3. **Micron 量化 HBM 矽面積代價**（Hot Chips 2026）：HBM 矽面積溢價 ~3× DDR5（且每代遞增）；Meta Llama3 17.2% 中斷歸因 HBM——首次從 AI 訓練可靠性角度量化 HBM 風險，將 HBM 可靠性問題從理論帶入實際訓練數據。

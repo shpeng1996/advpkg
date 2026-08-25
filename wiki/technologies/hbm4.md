@@ -807,3 +807,53 @@ SK hynix 採用有別於 Samsung 垂直整合的三方協作模式：
 | SK Hynix DRAM ASP | +~20% QoQ | Hankyung 分析師 |
 
 SK Hynix 2026 DRAM bit 成長修正至 **mid-20%**（原 20% 估計），主因 **1c 製程 SOCAMM2** 出貨量攀升。
+
+---
+
+## Hot Chips 2026 重大更新（2026-08-26）⭐更新
+
+*Sources: [[sources/2026-08-24_tomshardware_skhynix-hbm5-hybrid-bonding-775-micron.md]] + [[sources/2026-08-25_tomshardware_micron-hot-chips-hbm-wafer-penalty.md]]*
+
+### 775 µm 物理上限（最高權威確認）
+
+JEDEC HBM4 標準將 HBM cube 最大厚度從 720 µm（HBM3E）提升至 **775 µm**——等於 300mm 邏輯晶圓標準厚度。VP Jaesik Lee（SK hynix America）在 Hot Chips 2026 正式說明此上限的物理成因：GPU 封裝冷卻板研磨後，HBM cube 不能高於邏輯晶片。
+
+| 世代 | JEDEC 厚度上限 | 最高堆疊 |
+|------|--------------|---------|
+| HBM3E | 720 µm | 12-Hi |
+| HBM4 | 775 µm | 16-Hi（量產）→ 20-Hi（研究） |
+| HBM5（目標） | ~825–900 µm（討論中） | 20–24-Hi |
+
+### HBM 矽晶圓面積溢價（Micron Hot Chips 2026）
+
+- HBM vs DDR5 矽面積：**~3×**（相同容量），且每代遞增
+- 雙 GPU 封裝中：HBM ≈ **90% 矽面積**、GPU die 面積的 8×
+- 售價：**~5× DDR5 per bit**
+- Micron HBM4：256 banks（DDR5：32 banks）；大量面積用於資料路徑、電源輸送、TSV
+
+### 三廠商熱管理方案比較（HBM5 目標）
+
+| 方案 | 廠商 | 技術細節 | 宣稱效果 | 導入目標 |
+|------|------|---------|---------|---------|
+| iHBM | SK hynix | D2D PHY 區嵌入導熱絕緣塊 | >30% 熱阻降低 | HBM5 |
+| HPB（Heat Path Block） | Samsung | HBM5 頂部散熱通道 | >35% at 20-Hi | HBM5 |
+| 電路重設計 | Micron | Base die 電路布局重新設計 | >20% 能耗效率提升 | HBM5 |
+
+**均非 2028 年前量產**；均需協同設計（SK hynix iHBM 需客戶參與最深）。
+
+### 混合接合路線圖更新
+
+- **HBM4E：正式跳過混合接合**（SK hynix Jaesik Lee 現場確認，2026-08-24）
+- 16-Hi HBM4 混合接合：**MR-MUF 的主要量產挑戰**是在縮半的間距中填充 underfill 並控制翹曲（sub-50 µm 晶片）
+- 混合接合進入 HBM 全量產：**2029–2030**（HBM5 世代）
+
+### HBM 可靠性（Meta Llama 3 實測）
+
+- Meta Llama 3 訓練 54 天：**17.2% 非預期中斷歸因於 HBM3**（Micron Hot Chips 2026）
+- 第二大故障原因，僅次於 GPU 故障；HBM 數量增加使此比例放大
+
+### Micron HBM4 量產規格（Hot Chips 2026 更新）
+
+- Host interface：**2,048 I/O**（2× HBM3E）
+- Pin speed：**>11 Gbps**（JEDEC 基準 8 Gbps）
+- Bandwidth：**>2.8 TB/s/stack**

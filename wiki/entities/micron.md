@@ -173,3 +173,50 @@ Micron 的 HBM 熱管理策略與 Samsung（HPB）和 SK Hynix（iHBM）不同�
 - **「美製溢價」**：Micron 是美國唯一前端記憶體晶圓廠廠商（Samsung 美國=邏輯代工；SK Hynix 美國=後端封裝）。客戶認可此差異化，Micron 已在 SCA 定價中體現美製溢價
 - **漲價節奏適度放緩**：儘管 2027 年更緊缺，Micron 開始適度放緩價格漲幅（採多管道策略：品組、出貨量、定價三者平衡）
 - 伺服器 DRAM 合約價 Q3 2026 +13–18% QoQ（TrendForce 預測）
+
+---
+
+## Hot Chips 2026：記憶體牆惡化 / HBM 矽晶圓溢價 / 可靠性（2026-08-26）⭐更新
+
+*Source: Tom's Hardware 2026-08-25 → [[sources/2026-08-25_tomshardware_micron-hot-chips-hbm-wafer-penalty.md]]*
+
+### HBM 矽晶圓面積溢價（Raghu Sreeramaneni, HBM Design Architecture Fellow）
+
+- HBM vs DDR5 矽面積溢價：**~3×**（相同容量），且每代遞增
+- HBM4 die：256 banks vs DDR5 32 banks；大量晶片面積用於資料路徑、電源輸送、TSV
+- 雙 GPU 封裝：HBM ≈ **90% 矽面積**（≈ GPU die 的 8×）
+- HBM 售價：**~5× DDR5 per bit**
+- 影響：每片轉向 HBM 的晶圓，從商品 DRAM 市場移走不成比例的供應
+
+### 記憶體牆（Memory Wall）惡化論述
+
+- 運算效能成長：**~3×/2 年**；HBM 頻寬成長：**<2×/2 年**
+- 差距持續擴大 → Sreeramaneni 確認「記憶體牆仍在，而且可能更嚴重」
+- Micron HBM4 量產規格：**>11 Gbps/pin**（JEDEC 基準 8 Gbps）、**>2.8 TB/s/stack**、2,048 I/O（2× HBM3E）
+
+### 設計方法論轉變
+
+- Micron 官方宣示：現在**「先架構熱管理解法，再設計其他」**（幾年前相反）
+- HBM4E（~2027）：Logic base die 移至 **TSMC 代工製程**（「解構化」方向）
+- 16-Hi HBM：具備可行路徑；20-Hi 後：「還有很多工作要做」
+
+### AI 可靠性：Meta Llama 3 數據
+
+- Meta Llama 3 訓練：54 天 × 16,384 H100 GPUs
+- **17.2% 非預期中斷歸因於 HBM3**——第二大故障原因（僅次於 GPU 故障）
+- 此比例隨每個封裝的 HBM 數量增加而放大（HBM 堆疊更多 → 可靠性風險更高）
+
+### DRAM 市場衝擊
+
+| 指標 | 數值 |
+|------|------|
+| DDR5 Q1 2026 漲幅 | +90–95% QoQ |
+| DDR5 Q2 2026 漲幅 | +58–63% QoQ |
+| 32GB DDR5-6000 kit（Aug 2026） | $392（前一年：$110–140） |
+| 128GB DDR5 | $3,399（+500% YoY） |
+| HP：DRAM 佔 PC BOM | 35%（前 15–18%） |
+
+### HBM 市場地位
+
+- Micron HBM 市占：Counterpoint Research 約 **25–30%**（已超越 Samsung 排名第二）
+- Micron HBM4（36GB, 12-Hi）：NVIDIA Vera Rubin 量產出貨中

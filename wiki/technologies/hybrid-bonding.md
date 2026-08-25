@@ -696,3 +696,49 @@ Samsung 在 Flash Memory Summit（FMS）2026 發表三項新世代記憶體技�
 - Samsung FMS 2026 的技術佈局，與 wiki 追蹤的「**混合接合成為 2029+ 記憶體核心製程**」判斷高度一致
 
 *Source: Tom's Hardware 2026-08-06；raw/articles/2026-08-06_tomshardware_samsung-zhbm-znando-bvnand-fms2026-wafer-bonding.md*
+
+---
+
+## HBM 混合接合時程最終確認（2026-08-26）⭐更新
+
+*Source: Tom's Hardware 2026-08-24 → [[sources/2026-08-24_tomshardware_skhynix-hbm5-hybrid-bonding-775-micron.md]]*
+
+### HBM4E 正式跳過（最高權威確認）
+
+VP Jaesik Lee（SK hynix America）在 Hot Chips 2026（2026-08-24）現場確認：**混合接合不會在 HBM4E 就緒**。
+
+時程收斂：
+- HBM4E（~2027）：繼續採用 MR-MUF（advanced）
+- HBM5（~2029–2030）：**最早**導入混合接合量產
+- Counterpoint Research：2029–2030 為 HB 全量產 HBM 的共識時程
+
+**時程推遲原因：**
+- JEDEC 接連放寬厚度上限（720 µm→775 µm→討論中 825–900 µm），每次放寬都讓 MR-MUF 再延一代
+- 混合接合在 20-Hi 以上仍處於研究階段（SK hynix 自述）
+
+### 16-Hi MR-MUF 量產挑戰
+
+- 核心晶片薄化至 **~50 µm**（HBM3E 世代更厚）
+- Die 間距縮半（HBM3E vs HBM4）
+- **主要挑戰**：在縮半間距中正確填充 MR-MUF underfill，同時控制 sub-50 µm 晶片翹曲
+
+### HB vs MR-MUF 量化比較（20-Hi 場景）
+
+| 指標 | 混合接合 | MR-MUF（現行） |
+|------|---------|--------------|
+| 核心晶片厚度 | +24% 更厚（可容納更厚晶片） | 基準 |
+| 熱阻 | −35% | 基準 |
+| Bump pitch | <18 µm | 30 µm |
+| 量產就緒性 | 2029–2030（HBM5） | 現行（HBM4/4E） |
+
+### SK hynix 首批量產設備訂單
+
+- 系統：Applied Materials + Besi 聯合 inline 系統
+- 金額：**~KRW 200 億**（約 $15M）
+- 時間：2026 年 3 月
+- 產品：HBM5 目標，但具體導入世代「尚未決定」（Lee 現場語）
+
+### 業界補充
+
+- Samsung：同樣將 HPB（Heat Path Block + 混合接合）指向 HBM5
+- 兩廠均非 **2028 年前**量產（Hot Chips 2026 共識）

@@ -92,3 +92,33 @@ Foveros 是 Intel 的 3D 晶片堆疊技術，將多個 die 垂直堆疊於基�
 - Clearwater Forest 良率與性能提升僅 +17%（vs. Sierra Forest）是否代表 Foveros Direct 3D 量產的系統性挑戰？
 - Foveros Direct 3D 何時追上 TSMC SoIC-X 的 6µm pitch 水準？
 - NVIDIA 採用 Foveros Direct 3D 的可能性有多大（vs. 繼續等待 TSMC 美國廠）？
+
+---
+
+## Diamond Rapids：迄今最大規模量產 Foveros Direct 3D（2026-08-26）⭐更新
+
+*Source: TrendForce 2026-08-25 → [[sources/2026-08-25_trendforce_intel-hot-chips-2026-diamond-rapids-wildkat-lake.md]]*
+
+### Diamond Rapids 完整封裝架構（Hot Chips 2026 正式披露）
+
+Intel Xeon 7「Diamond Rapids」(2027) 為迄今最大規模量產 Foveros Direct 3D 多晶片封裝案例：
+
+| 層級 | 晶片 | 製程 | 數量 |
+|------|------|------|------|
+| 核心晶片 | Core Chiplet（16 Panther Cove P-cores）| Intel 18A-P | 16 |
+| 計算基底 | Base Tile（320MB L3/64 cores）| Intel 3-T | 4 |
+| 結構樞紐 | Fabric Hub Tile | Intel 3 | 2 |
+
+**互連方式：**
+- 核心晶片 → Base Tile：**Foveros Direct 3D 混合接合**（<10 µm Cu-Cu）
+- Base Tile → FHT：**Substrate copper link**（有機基板層）
+
+**總規格：** 256 P-cores；1.28GB LLC；16 記憶體通道；128 PCIe 6.0 lanes
+
+### Wildcat Lake：Foveros 棄用案例
+
+Intel Wildcat Lake（Intel 18A）選擇以**有機 MCP（Multi-Chip Package）+ UCIe** 取代 Foveros，以降低平台成本、消除 base die。這是 Foveros Direct 被商業評估後「降本可行」的重要數據點：
+
+- **MCP 優勢**：無 base die 成本；組裝良率更高；平台成本降低
+- **代價**：互連密度不如 Foveros Direct（UCIe 串行 vs Foveros 平行 µbump 陣列）
+- **結論**：Foveros 與 MCP 在 Intel 內部形成效能（Foveros）vs 成本（MCP+UCIe）的雙軌產品策略

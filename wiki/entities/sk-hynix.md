@@ -303,3 +303,47 @@ SK Hynix 是 **HBM 市場的領導者**，率先量產 HBM3E，並於 2025 H2 �
 |------|-------------|-------------|
 | DRAM ASP | +~30% QoQ | +~20% QoQ（Hankyung 分析師） |
 | NAND ASP | +mid-50% QoQ | +10–15% QoQ（TrendForce） |
+
+---
+
+## Hot Chips 2026：775 µm 物理上限 / iHBM 詳細機制（2026-08-26）⭐更新
+
+*Source: Tom's Hardware 2026-08-24 → [[sources/2026-08-24_tomshardware_skhynix-hbm5-hybrid-bonding-775-micron.md]]*
+
+### 775 µm 物理上限正式量化（Jaesik Lee, VP Package Engineering, SK hynix America）
+
+- **JEDEC HBM4 厚度上限**：775 µm（前代 HBM3E：720 µm）= 300mm 邏輯晶圓標準厚度
+- 上限原因：GPU 冷卻板研磨邏輯晶圓至 775 µm 後貼附；HBM cube 若更高則突出
+- **16-Hi HBM4**（客戶認證中，48GB/cube；12-Hi 量產中）：核心晶片薄化至 ~50 µm，die 間距縮半
+- 每代熱負擔：SK hynix 數據顯示 **2.2× 增加**（跨代累計）
+
+### 混合接合正式延後至 HBM5（~2029–2030）
+
+- HBM4E 確定跳過混合接合（Jaesik Lee 現場確認）
+- SK hynix 首批混合接合量產設備訂單：Applied Materials + Besi 聯合系統，**~KRW 200 億**（約 $15M）（2026-03）
+- Counterpoint Research 預測：混合接合進入 HBM 全量產：**2029–2030**（HBM5 世代）
+- 混合接合 20-Hi vs MR-MUF 量化優勢：核心晶片厚 +24%；熱阻 −35%；bump pitch <18 µm（現行 MR-MUF：30 µm）
+
+### iHBM 冷卻架構細節
+
+- **嵌入位置**：base die 之 **D2D PHY 區域**（功率密度最高之介面熱點）
+- **材料**：導熱、電氣絕緣塊
+- **效果**：熱阻降低 **>30%**（SK hynix 宣稱）；製程：WLP + 現有 MR-MUF
+- **限制**：須在設計初期即納入（不可追加於已在設計中的世代）；需與客戶協同設計
+- **目標世代**：HBM5（非 HBM4E）；兩者均非 2028 年前量產
+
+**三廠商熱管理方案比較（Hot Chips 2026）：**
+
+| 方案 | 廠商 | 技術 | 宣稱效果 |
+|------|------|------|---------|
+| iHBM | SK hynix | D2D PHY 區嵌入導熱絕緣塊 | >30% 熱阻降低 |
+| HPB (Heat Path Block) | Samsung | HBM5 頂部散熱通道 | >35% at HBM5 height |
+| 電路重設計 | Micron | Base die 電路重布局 | >20% 能耗效率提升 |
+
+### EMIB 正式納入 2.5D 路線圖
+
+SK hynix 在 Hot Chips 2026 簡報中首次以並排圖表展示 **EMIB 與 CoWoS-S/L/R** 之比較評估（非僅口頭提及），正式確立 EMIB 為 HBM 2.5D 封裝正式選項之一。
+
+### NVIDIA Vera Rubin 記憶體供應
+
+SK hynix 持有 NVIDIA Vera Rubin HBM 訂單約 **70%**（Jan 2026 報導）；全數採 MR-MUF 供應。

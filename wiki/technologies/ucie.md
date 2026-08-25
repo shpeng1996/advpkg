@@ -251,3 +251,30 @@ Intel XBM（Cross-Batch Memory）專利揭示 UCIe 的一個全新應用場景�
 - XBM 專利揭示 UCIe 可延伸至**晶粒←→記憶體**的串行記憶體介面，拓展 UCIe 應用邊界——呼應 wiki「UCIe 標準能否統一 memory interface」未解問題的最新進展：Intel 正以 UCIe 32 GT/s 作為答案，至少在 XBM 架構中成立。
 - 相比 HBM PHY（數千條並行信號線），UCIe 串行方式顯著減少 I/O 腳位數，降低中介層複雜度；代價是串行頻寬密度低於 HBM，需靠 BEOL DRAM 的堆疊密度補償總容量。
 - **與 UCIe 3.0（64 GT/s）的關係**：XBM 採用 32 GT/s（UCIe 現有速率），而非最新 UCIe 3.0 的 64 GT/s，推測因 XBM 聚焦低功耗 + 與 HBM4 腳位相容，保守選擇現有速率以降低設計風險。
+
+---
+
+## Wildcat Lake：UCIe 驅動封裝降本里程碑（2026-08-26）⭐更新
+
+*Source: TrendForce 2026-08-25 → [[sources/2026-08-25_trendforce_intel-hot-chips-2026-diamond-rapids-wildcat-lake.md]]*
+
+### Intel Wildcat Lake — UCIe 作為封裝架構選擇工具
+
+Intel Wildcat Lake（Intel 18A）在 Hot Chips 2026 揭示一個重要的 UCIe 商業應用案例：
+
+- **設計決策**：以 **UCIe + 有機 MCP** 取代 Foveros（Panther Lake 所用）
+- **理由**：消除 base die → 降低組裝成本 + 提升良率
+- **成果**：40 platform TOPS；2.7× AI 效能提升；−64% 功耗 vs Core 100 Series
+
+**意義**：UCIe 在此不僅是「晶片間互連標準」，而是 Intel 在**封裝架構層面做出降本選擇**的工具。此案例確立：
+
+> UCIe = 效能路徑（Foveros）的替代封裝方案，適用於成本敏感產品線
+
+### 更新：UCIe 在 Intel 產品線的雙軌定位
+
+| 產品 | 封裝 | UCIe 角色 |
+|------|------|---------|
+| Diamond Rapids (Xeon 7) | Foveros Direct 3D | UCIe-S 用於 FHT 互連（高頻寬） |
+| Wildcat Lake (Core) | 有機 MCP | UCIe 替代 Foveros（降本） |
+
+這是 UCIe 在同一家公司不同層級產品中展現「效能 vs 成本」彈性的最直接案例。

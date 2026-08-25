@@ -258,3 +258,42 @@ Intel 在記憶體領域的新動向形成三軌並進：
 3. **EMIB + HBM4/4E 整合**（現在–2027）：現有路徑，為 Google/Meta/Amazon/SK Hynix 服務
 
 記憶體野心與代工業務形成潛在衝突（Samsung 既是客戶又是競爭對手），但 Tan 明確將重點放在 next-gen 架構，而非傳統 DRAM 商品市場。
+
+---
+
+## Hot Chips 2026 封裝架構完整披露（2026-08-25）⭐更新
+
+*Source: TrendForce 2026-08-25 → [[sources/2026-08-25_trendforce_intel-hot-chips-2026-diamond-rapids-wildcat-lake.md]]*
+
+### Diamond Rapids 封裝架構量化細節
+
+Intel 首次完整公開 Diamond Rapids (Xeon 7, 2027) 多層封裝架構：
+
+| 層級 | 製程 | 數量 | 規格 |
+|------|------|------|------|
+| 核心晶片 (Core Chiplet) | Intel 18A-P | 16 | 16 Panther Cove P-cores each = 256 total |
+| 計算基底晶片 (Base Tile) | Intel 3-T | 4 | 320MB L3/64 cores → 1.28GB LLC total |
+| 結構樞紐晶片 (Fabric Hub Tile) | Intel 3 | 2 | 互連/I/O |
+
+**封裝互連層次：**
+- 核心晶片 → 基底晶片：**Foveros Direct 3D 混合接合**（<10 µm Cu-Cu）
+- 基底晶片 → FHT：**Substrate copper link**
+
+**I/O：** 16 記憶體通道 + 128 PCIe 6.0 lanes
+
+→ Diamond Rapids = Intel 迄今最大規模量產 Foveros Direct 3D 多晶片封裝（超越 Hot Chips 2026 前已知紀錄）
+
+### Wildcat Lake：Foveros → MCP 封裝降本決策（重要里程碑）
+
+- 製程：**Intel 18A**（非 18A-P）
+- 封裝：**有機 Multi-Chip Package (MCP)**，取代 Panther Lake 的 Foveros
+- 消除 base die → 降低組裝成本 + 良率損失
+- **UCIe 互連**實現此封裝架構簡化（首款 Intel MCP 以 UCIe 代替 Foveros 晶片間連接）
+- 效能：−64% 功耗 vs Core 100 Series；40 platform TOPS；2.7× AI 效能提升
+- **意義**：UCIe 不只是開放互連標準，更是 Intel 封裝架構「降本/彈性」選擇工具
+
+### Crescent Island (AI 推論 GPU)
+
+- 32 Xe3P GPU cores；**350W**（氣冷相容）
+- 記憶體：**160–480GB LPDDR5X**（非 HBM，成本敏感推論定位）
+- 256 XMX engines + FP4/FP8；PCIe 形式
