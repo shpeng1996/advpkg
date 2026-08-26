@@ -3,7 +3,7 @@ title: "HBM4 — High Bandwidth Memory 4"
 category: technology
 tags: [memory, HBM, JEDEC, standards, AI, HPC, HBM4E, cleanroom, capacity, ISSCC2026, ZAM, HB3DM, HBM5, zHBM, HPB, FMS-2026]
 created: 2026-04-24
-updated: 2026-08-18
+updated: 2026-08-27
 sources: [2026-08-13_semieng_1mw-rack-debate-thermal, 2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor, 2026-08-10_trendforce_skhynix-chongqing-sale-global-reset, 2026-08-05_trendforce_samsung-v10-zhbm-hbm5-fms2026, 2026-07-30_trendforce_samsung-ds-q2-2026-hbm4-triple-q3, 2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-03-18_trendforce_intel-emib-malaysia, 2026-01-23_trendforce_hbm4e-samsung-skhynix-mid2026, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-01-13_semiengineering_hbm4-microbumps, 2025-12-18_trendforce_micron-capex-hbm4, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h, 2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-03-03_trendforce_sk-hynix-hbm4-tight-gaps, 2025-08-12_semianalysis_hbm-roadmap, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit, 2026-06-09_astutegroup_hbm-market-share-2026-battle, 2026-06-10_trendforce_samsung-gwangju-packaging-base, 2026-06-15_trendforce_skhynix-hbm4e-sample-timeline-pulled-forward, 2026-06-20_techtimes_skhynix-hbm4e-12layer-samples, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-27_tweaktown_hbm4-16hi-nvidia-supply-fight, 2026-06-26_semieng_chip-week-144, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-14_trendforce_samsung-hbm-hiring-hbm4-hbm4e-hbm5, 2026-07-14_trendforce_skhynix-yongin-y1-feb2027, 2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b, 2026-08-13_trendforce_samsung-skhynix-hbm4-2h-earnings-pricing]
 related:
   - wiki/entities/sk-hynix.md
@@ -857,3 +857,40 @@ JEDEC HBM4 標準將 HBM cube 最大厚度從 720 µm（HBM3E）提升至 **775 
 - Host interface：**2,048 I/O**（2× HBM3E）
 - Pin speed：**>11 Gbps**（JEDEC 基準 8 Gbps）
 - Bandwidth：**>2.8 TB/s/stack**
+
+---
+
+## 2026-08-27 更新：HBM4 需求新來源 + 3D DRAM 替代方案⭐更新
+
+### OpenAI Jalapeño：HBM4 新主要需求方（三星供應）
+
+*Source: [[sources/2026-08-26_trendforce_openai-jalapeno-samsung-hbm4]]*
+
+OpenAI 於 2026-08-26 正式發布首款自研 AI 推理晶片 **Jalapeño**，採 TSMC 3nm 製程，整合 **6 枚 HBM4 堆疊**（216 GiB，15.4 TB/s），成為 HBM4 市場的重要新需求方。
+
+| 規格 | 數值 |
+|------|------|
+| 製程 | TSMC 3nm |
+| HBM4 stacks | 6 |
+| 記憶體容量 | 216 GiB |
+| 頻寬 | 15.4 TB/s |
+| 功耗 | 700W（持續 ≤550W） |
+| HBM4 供應商 | 三星（傳聞） |
+
+**市場影響**：三星傳聞為 Jalapeño 的 HBM4 供應商——這是 HBM4 客戶多元化的關鍵信號（NVIDIA 主要依賴 SK Hynix，OpenAI 採用三星）。若 OpenAI 依 10GW Broadcom 部署協議規模擴張，將成為繼 NVIDIA、AMD、Google 之後的第四大 HBM4 需求方，進一步加劇 2027 供應緊張。
+
+### d-Matrix Raptor：HBM 替代架構量化（推論市場）
+
+*Source: [[sources/2026-08-26_tomshardware_dmatrix-raptor-3d-dram-36um]]*
+
+d-Matrix 於 Hot Chips 2026 展示 Raptor，採 TSMC N4P 邏輯晶片 + 自訂 DRAM 晶片以 **36µm 節距面對面（F2F）接合**——無需 HBM 或矽中介層。
+
+| 比較指標 | d-Matrix Raptor（F2F 36µm） | HBM4 base die |
+|---------|---------------------------|--------------|
+| 頻寬 | 100 TB/s（32GB/卡） | 1.65+ TB/s/stack（192-288GB/卡） |
+| 介面能耗 | **0.37 pJ/bit** | ~2.4 pJ/bit |
+| 接合方式 | Face-to-face，36µm pitch | TSV + micro-bump / 混合接合（HBM5） |
+| DRAM 密度 | 11.4 MB/mm² | 21.9–26.3 MB/mm² |
+| 系統容量 | 32GB/卡（72 卡/架 = 2.3TB） | 192–288GB/卡 |
+
+**能效意義**：0.37 pJ/bit（量測值）vs HBM4 的 ~2.4 pJ/bit——**6.5× 能效優勢**，但以 DRAM 密度（~50% HBM4）及未知 DRAM 供應商為代價。此架構對 **AI 推論**市場具吸引力，對 AI 訓練影響有限。

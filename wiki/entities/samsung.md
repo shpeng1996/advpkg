@@ -3,8 +3,8 @@ title: "三星 / Samsung"
 category: entity
 tags: [IDM, foundry, memory, advanced-packaging, X-Cube, HBM, ISSCC2026, I-CubeS, LPDDR6, V10-BV-NAND, zHBM, HBM5, FMS-2026]
 created: 2026-04-24
-updated: 2026-08-25
-sources: [2026-08-24_trendforce_hot-chips-2026-samsung-zhbm-skhynix-emib, 2026-08-17_trendforce_samsung-skhynix-1h26-investment-nvidia-absent, 2026-08-14_trendforce_samsung-nrdk-line2-2nm-hbm5-base-die, 2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor, 2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2025-12-30_trendforce_samsung-hbm-surge, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2025-08-05_3dincites_iftle636, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit, 2026-06-10_trendforce_samsung-gwangju-packaging-base, 2026-06-12_digitimes_samsung-packaging-gap-tsmc-intel, 2026-06-15_trendforce_skhynix-hbm4e-sample-timeline-pulled-forward, 2026-06-19_techtimes_vera-rubin-hbm4-suppliers, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-24_techtimes_sk-hynix-dethroned-samsung-ddr5-hbm4, 2026-07-03_trendforce_anthropic-samsung-advanced-packaging, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-07-02_trendforce_samsung-hbm-dummy-die-patent, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo, 2026-07-07_trendforce_samsung-q2-2026-record-krw894t, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-02_trendforce_samsung-sf2p-plus-tsmc-n2-roadmap, 2026-07-14_trendforce_samsung-hbm-hiring-hbm4-hbm4e-hbm5, 2026-07-21_trendforce_samsung-cxl-32-skhynix-imte, 2026-07-24_trendforce_skhynix-3d-stacked-dram-on-logic-on-device-ai]
+updated: 2026-08-27
+sources: [2026-08-26_trendforce_openai-jalapeno-samsung-hbm4, 2026-08-26_trendforce_samsung-gaia-pim-4nm-2027, 2026-08-24_trendforce_hot-chips-2026-samsung-zhbm-skhynix-emib, 2026-08-17_trendforce_samsung-skhynix-1h26-investment-nvidia-absent, 2026-08-14_trendforce_samsung-nrdk-line2-2nm-hbm5-base-die, 2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor, 2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2025-12-30_trendforce_samsung-hbm-surge, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2025-08-05_3dincites_iftle636, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit, 2026-06-10_trendforce_samsung-gwangju-packaging-base, 2026-06-12_digitimes_samsung-packaging-gap-tsmc-intel, 2026-06-15_trendforce_skhynix-hbm4e-sample-timeline-pulled-forward, 2026-06-19_techtimes_vera-rubin-hbm4-suppliers, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-24_techtimes_sk-hynix-dethroned-samsung-ddr5-hbm4, 2026-07-03_trendforce_anthropic-samsung-advanced-packaging, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-07-02_trendforce_samsung-hbm-dummy-die-patent, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo, 2026-07-07_trendforce_samsung-q2-2026-record-krw894t, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-02_trendforce_samsung-sf2p-plus-tsmc-n2-roadmap, 2026-07-14_trendforce_samsung-hbm-hiring-hbm4-hbm4e-hbm5, 2026-07-21_trendforce_samsung-cxl-32-skhynix-imte, 2026-07-24_trendforce_skhynix-3d-stacked-dram-on-logic-on-device-ai]
 related:
   - wiki/entities/tsmc.md
   - wiki/entities/intel.md
@@ -32,7 +32,22 @@ related:
 
 ## 近期動態 / Recent Developments
 
-- **2026-08-24（⭐最新）**：**Hot Chips 2026：zHBM 首次定量性能宣稱——+70% 功率效率、+230% DRAM 頻寬 vs 標準 HBM4e；HPB 熱路徑細節公開**（TrendForce 2026-08-24，引述 Wccftech、ServerTheHome）：
+- **2026-08-26（⭐最新）**：**OpenAI Jalapeño AI 推理晶片發布——三星傳聞供應 HBM4（6 stacks，216 GiB，15.4 TB/s）；晶片採 TSMC 3nm；Samsung 為首個非 SK Hynix 的主力 HBM4 AI 晶片供應商**（TrendForce 2026-08-26）：
+  - Jalapeño 整合 6 枚 HBM4 堆疊 → 216 GiB、15.4 TB/s，**700W 額定功耗（持續 ≤550W）**
+  - 性能：**1.5×–1.9× 吞吐量/瓦** vs NVIDIA GB200/GB300；**1.7×–3.6× 更低端對端延遲**
+  - 若 OpenAI 依 10GW Broadcom 部署協議規模化，Samsung HBM4 訂單將大幅攀升，直接影響 2027 HBM4 市場格局
+  - Gen2 tape-out 即將完成，Gen3 已在研發
+  *Source: TrendForce 2026-08-26 → [[sources/2026-08-26_trendforce_openai-jalapeno-samsung-hbm4]]*
+
+- **2026-08-26（⭐最新）**：**GAIA AI PC 晶片——4nm PIM（LPDDR5X-PIM），Hot Chips 2026 展示，2027 量產目標；PIM 首次商業化里程碑**（TrendForce 2026-08-26）：
+  - GAIA = Samsung System LSI 開發的 AI PC SoC，採 Samsung Foundry **4nm** 製程
+  - 整合 LPDDR5X-PIM（計算能力直接嵌入記憶體）：吞吐量 **3.01×** 提升、完成時間 **2.28×** 縮短 vs 傳統 LPDDR5X
+  - 原型已提供 Lenovo、HP 驗證；若量產，將是 **PIM 技術首次進入消費性商業產品**
+  - AAM（Address Alignment Mode）允許與現有 DRAM 控制器相容——降低生態系統壁壘
+  - JEDEC LPDDR6-PIM 規格接近定稿，推動 PIM 標準化
+  *Source: TrendForce 2026-08-26 → [[sources/2026-08-26_trendforce_samsung-gaia-pim-4nm-2027]]*
+
+- **2026-08-24（次新）**：**Hot Chips 2026：zHBM 首次定量性能宣稱——+70% 功率效率、+230% DRAM 頻寬 vs 標準 HBM4e；HPB 熱路徑細節公開**（TrendForce 2026-08-24，引述 Wccftech、ServerTheHome）：
   - **Samsung HBM 三步驟路線圖**（Hot Chips 2026 正式闡述）：standard HBM → **cHBM（客製化，SoC 邏輯基底晶片）** → **zHBM（直接垂直堆疊於 XPU 上，消除 2.5D 中介層）**
   - **cHBM**：以先進邏輯製程取代傳統 HBM PHY，加入類 SoC 功能（可替 xPU 分擔運算）；D2D 界面取代傳統 HBM PHY（縮小 PHY+D2D 面積）
   - **HPB（Heat Path Block）**：cHBM4 中覆蓋 **50% PHY 面積**，降低峰值溫度 **>35%**（應對更密集邏輯的熱點問題）

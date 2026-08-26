@@ -3,7 +3,7 @@ title: "混合接合 / Hybrid Bonding"
 category: technology
 tags: [3D, hybrid-bonding, Cu-Cu, SoIC, ECTC, advanced-packaging, DRAM, COP, 4F2, Sn-damascene, damascene-interconnect, PFAS-free]
 created: 2026-04-24
-updated: 2026-08-09
+updated: 2026-08-27
 sources: [2026-05-21_semiecosystem_ectc2026-cpo-hybridbonding-plp, 2026-04-24_initial-survey, 2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-03-01_3dincites_besi-packaging-power-shift, 2026-01-13_semiengineering_hbm4-microbumps, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-19_semieng_advanced-packaging-limits, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-03-27_3dincites_copper-grain-hybrid-bonding, 2025-01-01_semieng_making-hybrid-bonding-better, 2026-03-02_semieng_making-hybrid-bonding-better, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2026-04-29_semiwiki_cea-leti-ectc2026-hybrid-bonding, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2024-02-09_semianalysis_hybrid-bonding-process-flow, 2026-05-19_semiconductor-digest_ev-group-ectc2026-hybrid-bonding, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-04-19_semiwiki_apple-m5-cucu-hybrid-bonding-shipped, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-18_imec_iii-v-chiplet-rf-laser-bonding, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-29_evgroup_ectc2026-hybrid-bonding-layer-transfer, 2026-06-29_thelec_skhynix-hybrid-bonding-equipment-order, 2026-06-05_semieng_intel-ectc2026-emib-cpo-glass-blog, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-14_trendforce_samsung-hbm-hiring-hybridbonding, 2026-07-16_semieng_fine-pitch-hb-high-volume, 2026-07-16_semieng_alt-materials-hybrid-bonding]
 related:
   - wiki/technologies/soic.md
@@ -742,3 +742,25 @@ VP Jaesik Lee（SK hynix America）在 Hot Chips 2026（2026-08-24）現場確�
 
 - Samsung：同樣將 HPB（Heat Path Block + 混合接合）指向 HBM5
 - 兩廠均非 **2028 年前**量產（Hot Chips 2026 共識）
+
+---
+
+## 2026-08-27 更新：替代路線比較——d-Matrix F2F 36µm 接合⭐更新
+
+*Source: [[sources/2026-08-26_tomshardware_dmatrix-raptor-3d-dram-36um]]*
+
+d-Matrix 在 Hot Chips 2026 展示 Raptor，採用 **36µm 節距面對面（Face-to-Face, F2F）接合**，將 TSMC N4P 邏輯晶片直接接合至自訂 DRAM 晶片。此方案不使用傳統混合接合（Cu-Cu，<10µm），而是採用中間節距 F2F 接合，形成三類接合技術的比較框架：
+
+| 接合技術 | 典型間距 | 代表應用 | 介面能耗 |
+|---------|---------|---------|---------|
+| 傳統翻轉晶片（Flip-chip） | 50–100+ µm | 一般 2.5D 封裝 | ~5–10 pJ/bit |
+| F2F 中間節距（d-Matrix） | **36 µm** | AI 推論加速器（Raptor） | **0.37 pJ/bit** |
+| 混合接合（Cu-Cu HB） | **<10 µm**（目標 <6µm 量產） | HBM5、SoIC-X、Apple M5 | <0.1 pJ/bit（估計） |
+
+**F2F 36µm 的特點**：
+- 無 PHY、無 burst structure，DRAM 晶片兼作中介層（TSV 路由 PCIe/D2D 訊號）
+- 能耗 0.37 pJ/bit 已從量測實際矽片獲得，遠優於傳統 HBM 路徑
+- 不需要 CoWoS 或傳統矽中介層——是對 2.5D 封裝路線的異質挑戰
+- 限制：DRAM 密度僅為 HBM4 的 ~50%；DRAM 製造商未公開
+
+此數據為 wiki 首次記錄**中間節距 F2F 接合的商業化嘗試**，補充了「混合接合 vs 傳統接合」二元框架，確立三段式接合技術光譜。

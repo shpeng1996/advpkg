@@ -2817,3 +2817,22 @@ an（2028–2029 量產世代）為 CoPoS 最可能的首批量產客戶——�
   1. **SK hynix Jaesik Lee（Hot Chips 2026）正式確立 HBM 混合接合時程**：775 µm 物理上限機制首次完整解析，HBM4E 正式跳過混合接合，HBM5（2029–2030）為最早量產時程。同時披露 iHBM 的具體嵌入位置（D2D PHY 區域）與不可追加限制（需協同設計）——此為 wiki 中最詳細的 HBM 封裝物理極限論述。
   2. **Intel Diamond Rapids 完整多層封裝互連架構量化**（Hot Chips 2026）：16×18A-P core chiplet → 4×Intel 3-T base tile → 2×Intel 3 FHT，兩種不同互連技術（Foveros Direct 3D HB + substrate copper link）組合確認；Wildcat Lake 以 UCIe + 有機 MCP 取代 Foveros，首次確立 UCIe 作為「封裝降本選擇工具」（非僅互連標準）的商業案例。
   3. **Micron 量化 HBM 矽面積代價**（Hot Chips 2026）：HBM 矽面積溢價 ~3× DDR5（且每代遞增）；Meta Llama3 17.2% 中斷歸因 HBM——首次從 AI 訓練可靠性角度量化 HBM 風險，將 HBM 可靠性問題從理論帶入實際訓練數據。
+
+## [2026-08-27] collect | 每日自動蒐集 — OpenAI Jalapeño / Samsung GAIA PIM / d-Matrix 3D DRAM
+- 搜尋查詢數：6 組（TrendForce 8月26-27日最新；SemiEngineering Week #153；Hot Chips 2026 NVIDIA/AMD/Google；d-Matrix 3D DRAM；Arm AGI CPU chiplet；TrendForce 8月27日）
+- 成功抓取：3 篇（存入 raw/articles/ 3 篇, raw/papers/ 0 篇, raw/reports/ 0 篇）
+- 失敗/跳過：多篇（SemiEngineering Week #153 尚未發布；Synopsys PCIe 6.0 3D stack URL 無法抓取；Arm AGI CPU 未抓取（次優先）；TrendForce 8月27日無新 AP 文章）
+- 學術代理：UNAVAILABLE ✗
+- 新增 wiki 頁面：3 頁（全為 sources/）
+  - wiki/sources/2026-08-26_trendforce_openai-jalapeno-samsung-hbm4.md
+  - wiki/sources/2026-08-26_trendforce_samsung-gaia-pim-4nm-2027.md
+  - wiki/sources/2026-08-26_tomshardware_dmatrix-raptor-3d-dram-36um.md
+- 更新 wiki 頁面：4 頁
+  - wiki/entities/samsung.md（OpenAI Jalapeño HBM4 三星供應；GAIA PIM AI PC 晶片 3.01×吞吐量 2027 量產）
+  - wiki/technologies/hbm4.md（OpenAI Jalapeño 新 HBM4 需求方；d-Matrix Raptor 替代方案量化比較）
+  - wiki/technologies/hybrid-bonding.md（d-Matrix F2F 36µm 三段式接合技術框架確立）
+  - wiki/index.md（頁面數 401→404；來源數 359→362；3 個新 sources 條目；samsung/hbm4/hybrid-bonding 描述更新）
+- 主要新知識：
+  1. **OpenAI Jalapeño 首款自研 AI 推理晶片發布（2026-08-26）**：TSMC 3nm + 6×HBM4（216GiB，15.4TB/s），三星傳聞為 HBM4 供應商——這是 HBM4 客戶多元化的重要里程碑，意味著 NVIDIA+SK Hynix 的雙寡頭格局開始被 OpenAI+Samsung 的新軸線挑戰。若 OpenAI 依 10GW Broadcom 協議規模出貨，2027 HBM4 市場供應壓力將再度升級。
+  2. **Samsung GAIA 4nm PIM AI PC SoC（Hot Chips 2026）**：LPDDR5X-PIM 實測 3.01× 吞吐量提升，原型已送達 Lenovo/HP 驗證，2027 量產——若成功，將是 PIM 技術首次從研究/驗證進入消費性商業產品的歷史性里程碑；JEDEC LPDDR6-PIM 規格接近定稿進一步確立標準化趨勢。
+  3. **d-Matrix Raptor 36µm F2F 接合架構（Hot Chips 2026）**：TSMC N4P 邏輯 + 自訂 DRAM 面對面接合，0.37 pJ/bit 能耗（量測值）vs HBM4 的 2.4 pJ/bit——首次量化確立「中間節距 F2F 接合」作為翻轉晶片到混合接合之間的第三條路；DRAM 兼作中介層消除 CoWoS 需求，代表對傳統 2.5D 架構的系統性挑戰，但 DRAM 供應商未公開是最大商業風險。
