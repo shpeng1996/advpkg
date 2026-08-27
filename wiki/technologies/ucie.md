@@ -3,7 +3,7 @@ title: "UCIe — Universal Chiplet Interconnect Express"
 category: technology
 tags: [standards, chiplet, interconnect, UCIe, 3D, hybrid-bonding, UCIe-3.0]
 created: 2026-04-24
-updated: 2026-08-25
+updated: 2026-08-28
 sources: [2026-08-24_intel-newsroom_hot-chips-2026-diamond-rapids-foveros-ucie, 2026-04-24_initial-survey, 2026-04-01_semiengineering_chiplets-2026, 2025-01-28_3dincites_iftle-618-ucie-standard-vs-ucie3, 2025-01-01_semieng_ucie-1-6t-io-chiplets-ai-datacenter, 2025-09-03_uciexpress_ucie30-spec, 2026-03-05_uciexpress_chiplet-summit-2026, 2026-02-12_semieng_ucie3-technical-deepdive]
 related:
   - wiki/technologies/hybrid-bonding.md
@@ -189,6 +189,29 @@ UCIe 2.0 引入 **UCIe-3D** 最佳化：
 - UCIe 標準能否統一 memory interface（目前 HBM 仍有專屬介面）？
 - 64 GT/s 連結的功耗 vs 頻寬效益，是否足以取代短距光學互連（CPO）？
 - UCIe-S 與 UCIe-A 的市場份額如何演變？高端 AI 封裝是否會以 UCIe-A 為主？
+
+## 2026-08-28 更新 / Updates
+
+### ⭐ Arm AGI 伺服器 CPU 確認 UCIe 32 GT/s / 2 TB/s D2D 互連量產（Hot Chips 2026）
+
+Arm 在 Hot Chips 2026 披露 **AGI 伺服器 CPU** 封裝架構，確認 **UCIe 作為雙晶片組 D2D 互連**，是 UCIe 在高效能 CPU 晶片組互連場景的重要商業案例：
+
+- **配置**：2× TSMC N3P SoC 晶片組，透過 **16×16 UCIe macros @32 GT/s** 互連，聚合頻寬 **2 TB/s**
+- **設計哲學差異**：Arm 選擇「計算+I/O 同晶片組」（非 AMD/Intel 的異質分離晶片組），目標記憶體延遲 <100 ns——UCIe D2D 頻寬充足但仍有延遲成本，本地記憶體流量不跨越 D2D
+- **對比 Intel Diamond Rapids UCIe-S**：後者採 UCIe-S 連接 Fabric Hub Tile，速率更高（UCIe-S 可支援 64 GT/s）；Arm AGI 則以 32 GT/s 換取更低延遲架構
+- **Arm CHI-over-UCIe 確認**：2026-02 UCIe 3.0 已記錄 Arm CHI 可映射至 UCIe；AGI CPU 的實際量產部署是此映射的首個量產驗證
+
+**Hot Chips 2026 UCIe 商業部署全景（三款產品同場）**：
+
+| 產品 | UCIe 用途 | 速率 | 頻寬 |
+|------|-----------|------|------|
+| Intel Diamond Rapids | UCIe-S：FHT ↔ Base Tile | ~64 GT/s | N/A（多個） |
+| Intel Wildcat Lake | UCIe + 有機 MCP | — | — |
+| **Arm AGI CPU** | **D2D：chiplet ↔ chiplet** | **32 GT/s** | **2 TB/s** |
+
+*Source: Tom's Hardware 2026-08-26 → [[wiki/sources/2026-08-26_tomshardware_arm-agi-hot-chips-2026-ucie-chiplets]]*
+
+---
 
 ## 2026-08-25 更新 / Updates
 

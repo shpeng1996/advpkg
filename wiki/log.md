@@ -2836,3 +2836,29 @@ an（2028–2029 量產世代）為 CoPoS 最可能的首批量產客戶——�
   1. **OpenAI Jalapeño 首款自研 AI 推理晶片發布（2026-08-26）**：TSMC 3nm + 6×HBM4（216GiB，15.4TB/s），三星傳聞為 HBM4 供應商——這是 HBM4 客戶多元化的重要里程碑，意味著 NVIDIA+SK Hynix 的雙寡頭格局開始被 OpenAI+Samsung 的新軸線挑戰。若 OpenAI 依 10GW Broadcom 協議規模出貨，2027 HBM4 市場供應壓力將再度升級。
   2. **Samsung GAIA 4nm PIM AI PC SoC（Hot Chips 2026）**：LPDDR5X-PIM 實測 3.01× 吞吐量提升，原型已送達 Lenovo/HP 驗證，2027 量產——若成功，將是 PIM 技術首次從研究/驗證進入消費性商業產品的歷史性里程碑；JEDEC LPDDR6-PIM 規格接近定稿進一步確立標準化趨勢。
   3. **d-Matrix Raptor 36µm F2F 接合架構（Hot Chips 2026）**：TSMC N4P 邏輯 + 自訂 DRAM 面對面接合，0.37 pJ/bit 能耗（量測值）vs HBM4 的 2.4 pJ/bit——首次量化確立「中間節距 F2F 接合」作為翻轉晶片到混合接合之間的第三條路；DRAM 兼作中介層消除 CoWoS 需求，代表對傳統 2.5D 架構的系統性挑戰，但 DRAM 供應商未公開是最大商業風險。
+
+## [2026-08-28] collect | 每日自動蒐集 — Hot Chips 2026 Arm AGI UCIe + AMD MI455X 封裝修正 + NVIDIA HBM4 三供應商認證
+- 搜尋查詢數：6 組（Hot Chips 2026 Arm AGI UCIe chiplet；AMD MI455X Hot Chips 2026 CoWoS-L HBM4；NVIDIA HBM4 triple supplier Vera Rubin；SemiEngineering Week #153；TrendForce 2026-08-28；advanced packaging 2026-08-28）
+- 成功抓取：3 篇（存入 raw/articles/ 3 篇）
+- 失敗/跳過：多篇（SemiEngineering Week #153 2026-08-28 尚未發布；TrendForce 2026-08-28 無新先進封裝文章）
+- 學術代理：N/A
+- 新增 raw 檔案：3 篇
+  - raw/articles/2026-08-26_tomshardware_arm-agi-cpu-hot-chips-2026-ucie-chiplets.md
+  - raw/articles/2026-08-25_servethehome_amd-mi455x-hot-chips-2026-cowos-l-hbm4-hybrid-bonding.md
+  - raw/articles/2026-06-05_sdxcentral_nvidia-certifies-hbm4-triple-supplier-samsung-skhynix-micron.md
+- 新增 wiki 頁面：3 頁（全為 sources/）
+  - wiki/sources/2026-08-26_tomshardware_arm-agi-hot-chips-2026-ucie-chiplets.md
+  - wiki/sources/2026-08-25_servethehome_amd-mi455x-hot-chips-2026-cowos-l-hbm4.md
+  - wiki/sources/2026-06-05_sdxcentral_nvidia-hbm4-triple-supplier-vera-rubin.md
+- 更新 wiki 頁面：5 頁
+  - wiki/entities/amd.md（MI455X XCD 數 4→8 修正；Hot Chips 2026 完整封裝架構披露；Helios 機架 2.9EF/31TB 確認）
+  - wiki/technologies/cowos.md（MI455X CoWoS-L XCD 數修正；8 XCD + 12 HBM4 配置）
+  - wiki/technologies/hybrid-bonding.md（AMD MI455X 8×N2 XCD 3D 混合接合量產確認；Hot Chips 2026）
+  - wiki/technologies/ucie.md（Arm AGI UCIe 16×16@32GT/s = 2TB/s D2D 最大量產案例；Intel/Arm 比較框架）
+  - wiki/technologies/hbm4.md（MI455X 12 stacks/432GB/23.3TB/s 最大量產配置確認；NVIDIA 三供應商歷史認證記錄）
+  - wiki/index.md（頁面數 404→407；來源數 362→365；3 個新 sources；amd/ucie/hbm4 描述更新）
+- ⚠️ 重要修正：AMD MI455X XCD 數量由「4」修正為「8」——影響 amd.md（2 處）、cowos.md（1 處）、hybrid-bonding.md（新章節說明修正背景）
+- 主要新知識：
+  1. **Arm AGI 雙 chiplet 伺服器 CPU：2TB/s UCIe 量產最大規模（Hot Chips 2026）**：2× TSMC N3P SoC，UCIe 16 lanes × 16 bumps @ 32GT/s = 2TB/s D2D，136 Neoverse V3 核心，DDR5-8800，300W TDP，<100ns DRAM 延遲。這是 UCIe 首次在旗艦伺服器 CPU 實現 2TB/s 晶片間頻寬，對 UCIe 標準在高階 CPU 封裝的商業可行性具有里程碑意義。
+  2. **AMD MI455X Hot Chips 2026 官方確認 8 XCD（非先前報導之 4）**：8 個 XCD（TSMC N2）透過 3D 混合接合堆疊於 N3P FCD，搭配 CoWoS-L + 12×HBM4；432GB/23.3TB/s 是目前量產 AI GPU 最大 HBM4 配置；40.26 PFLOPS MXFP4；Helios 機架規模：72 GPU / 2.9 exaflop / 31 TB HBM4 / 1.7 PB/s。XCD 修正影響多個 wiki 頁面，需特別注意。
+  3. **NVIDIA Vera Rubin HBM4 三廠商全認證（Computex 2026 Jensen Huang 確認）**：SK Hynix ~70%（最先認證）；三星 2026-01 認證/2026-02 量產；Micron ~5-10% 已認證。三廠均通過消除供應單點風險，但 HBM4 交期已延至 2028 年，供需緊張持續。三星份額從 Jalapeño 訂單（OpenAI）進一步擴增（2026-08-27 更新相關）。

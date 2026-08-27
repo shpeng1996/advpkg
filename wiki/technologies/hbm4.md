@@ -3,7 +3,7 @@ title: "HBM4 — High Bandwidth Memory 4"
 category: technology
 tags: [memory, HBM, JEDEC, standards, AI, HPC, HBM4E, cleanroom, capacity, ISSCC2026, ZAM, HB3DM, HBM5, zHBM, HPB, FMS-2026]
 created: 2026-04-24
-updated: 2026-08-27
+updated: 2026-08-28
 sources: [2026-08-13_semieng_1mw-rack-debate-thermal, 2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor, 2026-08-10_trendforce_skhynix-chongqing-sale-global-reset, 2026-08-05_trendforce_samsung-v10-zhbm-hbm5-fms2026, 2026-07-30_trendforce_samsung-ds-q2-2026-hbm4-triple-q3, 2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-03-18_trendforce_intel-emib-malaysia, 2026-01-23_trendforce_hbm4e-samsung-skhynix-mid2026, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-01-13_semiengineering_hbm4-microbumps, 2025-12-18_trendforce_micron-capex-hbm4, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h, 2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-03-03_trendforce_sk-hynix-hbm4-tight-gaps, 2025-08-12_semianalysis_hbm-roadmap, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit, 2026-06-09_astutegroup_hbm-market-share-2026-battle, 2026-06-10_trendforce_samsung-gwangju-packaging-base, 2026-06-15_trendforce_skhynix-hbm4e-sample-timeline-pulled-forward, 2026-06-20_techtimes_skhynix-hbm4e-12layer-samples, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-27_tweaktown_hbm4-16hi-nvidia-supply-fight, 2026-06-26_semieng_chip-week-144, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-14_trendforce_samsung-hbm-hiring-hbm4-hbm4e-hbm5, 2026-07-14_trendforce_skhynix-yongin-y1-feb2027, 2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b, 2026-08-13_trendforce_samsung-skhynix-hbm4-2h-earnings-pricing]
 related:
   - wiki/entities/sk-hynix.md
@@ -894,3 +894,46 @@ d-Matrix 於 Hot Chips 2026 展示 Raptor，採 TSMC N4P 邏輯晶片 + 自訂 D
 | 系統容量 | 32GB/卡（72 卡/架 = 2.3TB） | 192–288GB/卡 |
 
 **能效意義**：0.37 pJ/bit（量測值）vs HBM4 的 ~2.4 pJ/bit——**6.5× 能效優勢**，但以 DRAM 密度（~50% HBM4）及未知 DRAM 供應商為代價。此架構對 **AI 推論**市場具吸引力，對 AI 訓練影響有限。
+
+---
+
+## 2026-08-28 更新：AMD MI455X HBM4 規格確認 + NVIDIA 三供應商認證歷史
+
+### AMD MI455X：12 堆疊 HBM4 / 432 GB / 23.3 TB/s（Hot Chips 2026 官方確認）
+
+*Source: [[sources/2026-08-25_servethehome_amd-mi455x-hot-chips-2026-cowos-l-hbm4]]*
+
+AMD 於 Hot Chips 2026（2026-08-25）正式披露 **MI455X（CDNA 5）** 完整 HBM4 配置，為目前量產 AI GPU 最大 HBM4 配置：
+
+| HBM4 規格 | MI455X | 前代 MI355X（HBM3E） |
+|-----------|--------|---------------------|
+| 堆疊數 Stacks | **12** | 8 |
+| 容量 Capacity | **432 GB** | 288 GB |
+| 頻寬 Bandwidth | **23.3 TB/s** | ~8 TB/s |
+| 頻寬倍增 | **+2.9×** | — |
+| 堆疊高度 | 12-Hi（推測） | 12-Hi |
+| 封裝平台 | TSMC CoWoS-L | TSMC CoWoS-S |
+
+**Helios 機架 HBM4 規模**：72 GPU × 432 GB = **31 TB HBM4** / 72 GPU × 23.3 TB/s = **1.7 PB/s** 總 HBM4 頻寬——為目前已知單一機架最大 HBM4 部署。
+
+⚠️ **MI455X XCD 修正**：早期 TrendForce 報告（2026-07-24）誤報 4 個 XCD。Hot Chips 2026 AMD 官方確認為 **8 個 XCD（TSMC N2）**，透過 3D 混合接合堆疊於 N3P FCD 上。此修正影響：每顆 HBM4 stack 服務的 XCD 數由 2 降為 1.5（8 XCD / 12 stacks ≠ 整數）——實際拓撲待 AMD 技術論文發布後確認。
+
+---
+
+### NVIDIA Vera Rubin：三供應商（三星 + SK Hynix + 三星）HBM4 認證歷史
+
+*Source: [[sources/2026-06-05_sdxcentral_nvidia-hbm4-triple-supplier-vera-rubin]]*
+
+NVIDIA CEO Jensen Huang 於 **Computex 2026（2026-06-05）** 公開確認 HBM4 三供應商認證：
+
+| 供應商 | 認證時間 | 量產時間 | 估計市占 |
+|--------|---------|---------|---------|
+| **SK Hynix** | 最早（2025H2） | 已量產 | **~70%** |
+| **三星** | 2026 年 1 月 | 2026 年 2 月 | ~20–25% |
+| **Micron** | 2026H1 | 進行中 | **~5–10%** |
+
+**供應鏈意義**：
+- 三廠均通過認證，消除 Vera Rubin 供應單點風險
+- HBM4 交期（lead time）已延伸至 **2028 年**，供需緊張持續
+- SK Hynix 主導地位穩固（~70% NVIDIA 份額），但三星份額 2026H2 預期提升
+- Micron 份額偏低（5–10%）但已確保進入 NVIDIA 生態系，具長期成長動能

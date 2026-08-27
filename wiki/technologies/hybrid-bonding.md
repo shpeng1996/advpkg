@@ -3,7 +3,7 @@ title: "混合接合 / Hybrid Bonding"
 category: technology
 tags: [3D, hybrid-bonding, Cu-Cu, SoIC, ECTC, advanced-packaging, DRAM, COP, 4F2, Sn-damascene, damascene-interconnect, PFAS-free]
 created: 2026-04-24
-updated: 2026-08-27
+updated: 2026-08-28
 sources: [2026-05-21_semiecosystem_ectc2026-cpo-hybridbonding-plp, 2026-04-24_initial-survey, 2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-03-01_3dincites_besi-packaging-power-shift, 2026-01-13_semiengineering_hbm4-microbumps, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-19_semieng_advanced-packaging-limits, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-03-27_3dincites_copper-grain-hybrid-bonding, 2025-01-01_semieng_making-hybrid-bonding-better, 2026-03-02_semieng_making-hybrid-bonding-better, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2026-04-29_semiwiki_cea-leti-ectc2026-hybrid-bonding, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2024-02-09_semianalysis_hybrid-bonding-process-flow, 2026-05-19_semiconductor-digest_ev-group-ectc2026-hybrid-bonding, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-04-19_semiwiki_apple-m5-cucu-hybrid-bonding-shipped, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-18_imec_iii-v-chiplet-rf-laser-bonding, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-29_evgroup_ectc2026-hybrid-bonding-layer-transfer, 2026-06-29_thelec_skhynix-hybrid-bonding-equipment-order, 2026-06-05_semieng_intel-ectc2026-emib-cpo-glass-blog, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-14_trendforce_samsung-hbm-hiring-hybridbonding, 2026-07-16_semieng_fine-pitch-hb-high-volume, 2026-07-16_semieng_alt-materials-hybrid-bonding]
 related:
   - wiki/technologies/soic.md
@@ -764,3 +764,29 @@ d-Matrix 在 Hot Chips 2026 展示 Raptor，採用 **36µm 節距面對面（Fac
 - 限制：DRAM 密度僅為 HBM4 的 ~50%；DRAM 製造商未公開
 
 此數據為 wiki 首次記錄**中間節距 F2F 接合的商業化嘗試**，補充了「混合接合 vs 傳統接合」二元框架，確立三段式接合技術光譜。
+
+---
+
+## 2026-08-28 更新：AMD MI455X 8× N2 XCD 3D 混合接合量產確認⭐更新
+
+*Source: [[sources/2026-08-25_servethehome_amd-mi455x-hot-chips-2026-cowos-l-hbm4]]*
+
+AMD 在 Hot Chips 2026（2026-08-25）官方披露 **Instinct MI455X（CDNA 5）** 完整封裝架構，正式確認 **8 個計算晶片（XCD，TSMC N2）透過 3D 混合接合（SoIC-X 等效）堆疊**，這是 wiki 中 AMD AI GPU 封裝採用混合接合技術的最精確量化記錄：
+
+| 要素 | MI455X（Hot Chips 2026 確認） |
+|------|------------------------------|
+| XCD 數量 | **8 個**（TSMC N2，含 3D HB） |
+| XCD 接合技術 | **3D 混合接合（SoIC-X 等效，N2 on N3P FCD）** |
+| FCD（結構+快取晶片）| N3P |
+| I/O 晶片 | N3P |
+| 頂層封裝 | **TSMC CoWoS-L** |
+| HBM4 堆疊 | **12 stacks × 36 GB = 432 GB / 23.3 TB/s** |
+| MXFP4 算力 | **40.26 PFLOPS**（+4× vs MI355X） |
+
+### wiki 意涵
+
+1. **⚠️ 重要修正**：先前 wiki 及 TrendForce（2026-07-24）報導均記載 MI455X 為「4 個 XCD」；Hot Chips 2026 AMD 官方簡報確認為 **8 個 XCD**。此修正已同步至 `wiki/entities/amd.md` 和 `wiki/technologies/cowos.md`。
+
+2. **混合接合量產最大規模確認**：MI455X 以 **8 個 N2 XCD** 進行 3D HB 堆疊，是目前 wiki 中確認混合接合使用最多晶片的單一封裝實例（超過 Intel Foveros Direct 3D 的 HB 規模）——AI GPU 推動混合接合量產成熟的核心驅動力進一步確認。
+
+3. **N2-on-N3P 的混合接合節點組合**：首次確認「更先進製程（N2）計算晶片透過混合接合堆疊於次先進製程（N3P）結構晶片」——與 TSMC SoIC-X 路線圖（2025 量產 6µm；目標 2029 量產 4.5µm）完全吻合。

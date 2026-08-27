@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-08-27
-**頁面總數 Total Pages**：404
-**原始來源數 Sources**：362
+**更新時間 Updated**：2026-08-28
+**頁面總數 Total Pages**：407
+**原始來源數 Sources**：365
 
 ---
 
@@ -26,7 +26,7 @@
 - [[entities/tel]] — Tokyo Electron（TEL）；RDL 製程設備領導者；Kumamoto 研發基地（¥470 億，2026 春）；Eteris 合資（與 AMAT）⭐新增
 - [[entities/nvidia]] — NVIDIA；Fabless AI GPU 龍頭；CoWoS + SoIC 最大需求方；Rubin Ultra NVL576（100 PFLOPS）；SK Hynix 多年期夥伴（Vera CPU LPDDR5X 1.2 TB/s）；評估 Intel 18A 4晶粒 Feynman（2026-06-09）⭐更新
 - [[entities/micron]] — Micron；美國記憶體 IDM；HBM4 >11 Gbps（Q2'26 HVM）；**廣島廠 ¥1.5T 擴建動土（2026-07-04）、1γ DRAM + HBM、設備 2H28**；Virginia HBM 封裝廠；$200B 美國投資計畫；**資料中心 DRAM 需求滿足率 <50%（2026-08-10 KeyBanc）；2027 更緊俏；美製溢價納入 SCA 定價**；**Hot Chips 2026：HBM 矽面積 3× DDR5（每代遞增）；記憶體牆惡化論述；Meta Llama3 17.2% 中斷歸因 HBM；HBM4E logic die = TSMC 正式確認；「架構圍繞熱管理」方法論轉變**（2026-08-26）⭐更新
-- [[entities/amd]] — AMD；Fabless CPU/GPU；Venice 首採 EMIB 等效封裝；MI355X（N3P，2 I/O die）；MI450 aLSI 測試載具⭐新增
+- [[entities/amd]] — AMD；Fabless CPU/GPU；Venice 首採 EMIB 等效封裝；MI355X（N3P，2 I/O die）；MI450 aLSI 測試載具；**MI455X Hot Chips 2026：8×N2 XCD（修正）+ CoWoS-L + 12×HBM4 432GB/23.3TB/s / 40.26 PFLOPS；Helios 機架 2.9EF**（2026-08-28）⭐更新
 - [[entities/asml]] — ASML；微影設備獨占廠商；XT:260 3D DUV 已出貨（RDL）；評估混合接合設備市場進入⭐新增
 - [[entities/rapidus]] — Rapidus；日本 2nm 新創代工廠；「AI Foundry」框架；封裝共址策略；**8倍光罩中介層路線圖（4×→6×→8×）；600mm面板產出49件；IIM整合製造模式；Lam Research Kallisto夥伴**；量產 2028⭐更新
 - [[entities/onto-innovation]] — Onto Innovation；製程控制/檢測設備商；Dragonfly G5 取得 2.5D AI 封裝量產資格認證；AI 封裝需求年成長 ~30%⭐新增（2026-06-22）
@@ -41,8 +41,8 @@
 - [[technologies/copos]] — CoPoS（Chip-on-Panel-on-Substrate）；TSMC 面板級封裝；310×310mm 面板；玻璃核心基板列為下一里程碑（2030+）；TGV 障礙具體化（2026-06-18）⭐更新
 - [[technologies/soic]] — SoIC（System on Integrated Chips）；TSMC 3D 堆疊；SoIC-X 混合接合（**6µm 2025 量產→4.5µm 2029；A14-to-A14 SoIC 2029年 1.8×I/O 密度**）⭐更新
 - [[technologies/hybrid-bonding]] — 混合接合（Cu-Cu）；W2W/D2W/D2D 三情境框架（ECTC 2025）；目標 1M/mm²；**翹曲管理確認為 HVM 製程橫跨全流程的新約束**（2026-07-30）；**Hot Chips 2026：HBM4E 正式跳過；HBM5 2029-2030；SK hynix 首批 HB 設備訂單 ~KRW 200 億**（2026-08-26）；**d-Matrix F2F 36µm 接合三段式比較框架確立（0.37 pJ/bit 量測值，DRAM 兼作中介層）**（2026-08-27）⭐更新
-- [[technologies/hbm4]] — HBM4；JEDEC JESD270-4；1.65+ TB/s；**Custom HBM4E 時代起點；ASP $31–32/GB（NVIDIA）；775µm 物理上限；HBM 矽面積 3× DDR5；混合接合延後至 HBM5（2029-2030）；Micron HBM4 >2.8TB/s**（2026-08-26）；**OpenAI Jalapeño 新 HBM4 需求（6 stacks/216GiB/15.4TB/s，三星供應）；d-Matrix F2F 替代方案量化（0.37 pJ/bit vs HBM4 2.4 pJ/bit）**（2026-08-27）⭐更新
-- [[technologies/ucie]] — UCIe；Chiplet 互連標準；UCIe 3.0：64GT/s quarter-rate、BER 差異化、Arm CHI 映射、L2 深度睡眠（2026-06-18）；**Wildcat Lake = Intel 首款 UCIe 處理器（UCIe 主流化里程碑）；Diamond Rapids UCIe-S 用於 FHT 互連**（2026-08-24）；**Wildcat Lake 確立 UCIe 封裝降本新用例：以 UCIe + 有機 MCP 取代 Foveros base die（效能 vs 成本雙軌確立）**（2026-08-26）⭐更新
+- [[technologies/hbm4]] — HBM4；JEDEC JESD270-4；1.65+ TB/s；**Custom HBM4E 時代起點；ASP $31–32/GB（NVIDIA）；775µm 物理上限；HBM 矽面積 3× DDR5；混合接合延後至 HBM5（2029-2030）；Micron HBM4 >2.8TB/s**（2026-08-26）；**OpenAI Jalapeño 新 HBM4 需求（6 stacks/216GiB/15.4TB/s，三星供應）；d-Matrix F2F 替代方案量化（0.37 pJ/bit vs HBM4 2.4 pJ/bit）**（2026-08-27）；**AMD MI455X 12 stacks/432GB/23.3TB/s（最大量產 HBM4 配置）；NVIDIA 三廠認證確認（SK Hynix 70% / 三星 20-25% / Micron 5-10%）**（2026-08-28）⭐更新
+- [[technologies/ucie]] — UCIe；Chiplet 互連標準；UCIe 3.0：64GT/s quarter-rate、BER 差異化、Arm CHI 映射、L2 深度睡眠（2026-06-18）；**Wildcat Lake = Intel 首款 UCIe 處理器（UCIe 主流化里程碑）；Diamond Rapids UCIe-S 用於 FHT 互連**（2026-08-24）；**Wildcat Lake 確立 UCIe 封裝降本新用例：以 UCIe + 有機 MCP 取代 Foveros base die（效能 vs 成本雙軌確立）**（2026-08-26）；**Arm AGI：UCIe 16×16@32GT/s = 2TB/s D2D，目前最大量產 UCIe 頻寬案例**（2026-08-28）⭐更新
 - [[technologies/copackaged-optics]] — TSMC-COUPE™ 共封裝光學元件（CPO）；**SK hynix Nature Electronics CPO 路線圖（>100 Tb/s / <1 pJ/bit / <10 ns；光子中介層→記憶體介面；µLED 方向）**（2026-08-20）；銅三重限制確立 CPO 五年全光化論述；CPO -70% 功耗 vs 可插拔⭐更新
 - [[technologies/info-wmcm]] — InFO（2016 商轉）+ WMCM（2026 量產）；TSMC 行動晶片封裝旗艦；Apple A20 iPhone18 採用 WMCM⭐新增
 - [[technologies/emib]] — EMIB（Embedded Multi-Die Interconnect Bridge）；Intel 2.5D 局部矽橋；**TSMC CEO C.C. Wei 2026-07-16 公開歡迎 EMIB；NVIDIA Feynman/Google HumuFish/Amazon Trainium 3 潛在客戶**（2026-07-30）；**Intel EMIB-T 封裝良率~90%，基板良率成主要瓶頸；Unimicron HVM 2027，初始良率目標~50%；ASE COO 表態 EMIB-T 組裝測試就緒**（2026-08-19）；**Hot Chips 2026：SK hynix 正式將 EMIB 列為 HBM 2.5D 封裝選項（與 CoWoS-S/L/R 並列比較）；SK hynix+Intel JV 傳聞；SK hynix EMIB R&D 自有 HBM 確認**（2026-08-24）⭐更新
@@ -64,6 +64,9 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-08-26_tomshardware_arm-agi-hot-chips-2026-ucie-chiplets]] — Tom's Hardware Hot Chips 2026：**Arm AGI 雙 N3P chiplet 伺服器 CPU（UCIe 16×16 32GT/s = 2TB/s D2D；136 Neoverse V3 核心；DDR5-8800；300W TDP；<100ns DRAM 延遲）；UCIe 晶片互連量產最大規模案例**（2026-08-26）⭐新增
+- [[sources/2026-08-25_servethehome_amd-mi455x-hot-chips-2026-cowos-l-hbm4]] — ServeTheHome Hot Chips 2026：**AMD MI455X 8×N2 XCD 3D 混合接合（⚠️ 修正：非 4）+ CoWoS-L + 12×HBM4 432GB/23.3TB/s / 40.26 PFLOPS MXFP4；Helios 機架 2.9EF/31TB HBM4/1.7PB/s**（2026-08-25）⭐新增
+- [[sources/2026-06-05_sdxcentral_nvidia-hbm4-triple-supplier-vera-rubin]] — SDxCentral Computex 2026：**NVIDIA Jensen Huang 確認三廠 HBM4 全認證（SK Hynix ~70% / 三星 ~20-25% / Micron ~5-10%）；三星 2026-01 認證/2026-02 量產；HBM4 交期延至 2028**（2026-06-05 原文，2026-08-28 收錄）⭐新增
 - [[sources/2026-08-26_trendforce_openai-jalapeno-samsung-hbm4]] — TrendForce：**OpenAI Jalapeño 首款推理 ASIC（TSMC 3nm + 6×HBM4 stacks，216GiB/15.4TB/s，700W）；三星傳聞為 HBM4 供應商；beats NVIDIA GB300 1.5-1.9× THR/W；Gen2 tape-out 即將**（2026-08-26）⭐新增
 - [[sources/2026-08-26_trendforce_samsung-gaia-pim-4nm-2027]] — TrendForce：**Samsung GAIA AI PC SoC（4nm PIM）——LPDDR5X-PIM 3.01× 吞吐量提升；首款商業化 PIM 產品候選；2027 量產；JEDEC LPDDR6-PIM 接近定稿**（2026-08-26）⭐新增
 - [[sources/2026-08-26_tomshardware_dmatrix-raptor-3d-dram-36um]] — Tom's Hardware Hot Chips 2026：**d-Matrix Raptor F2F 36µm 接合 3D DRAM 加速器（TSMC N4P + 自訂 DRAM，100TB/s，0.37 pJ/bit，2027 目標）；DRAM 兼作中介層；無需 CoWoS**（2026-08-26）⭐新增
