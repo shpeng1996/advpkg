@@ -3,7 +3,7 @@ title: "先進封裝熱管理 / Thermal Management in Advanced Packaging"
 category: concept
 tags: [thermal-management, liquid-cooling, 3D-IC, CoWoS, heat-dissipation, TIM, ECTC-2025, GaN, power-delivery, co-design]
 created: 2026-04-25
-updated: 2026-08-23
+updated: 2026-08-29
 sources: [2025-12-01_semiengineering_thermal-management, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-02_trendforce_samsung-hbm5-computex2026, 2026-05-21_semieng_hi-roadmap-nature-paper-intel, 2026-08-13_semieng_1mw-rack-debate-thermal, 2026-04-27_semieng_semiconductor-materials-misbehave, 2026-08-21_trendforce_chip-packaging-heat-ai-bottleneck-cpo-stco]
 related:
   - wiki/technologies/cowos.md
@@ -316,3 +316,35 @@ KAIST 金正浩（Kim Joung-ho）教授提出，AI 時代記憶體層次將從 H
 - **AI/數位孿生**（digital twins）正成為多物理場（multiphysics）封裝設計的重要工具，用於在流片前預測 CTE 失配引發的翹曲和熱點
 
 **wiki 含義**：1MW 機架目標量化了先進封裝熱管理面臨的系統層壓力，CoWoS 的 200–600 W/cm² 熱通量和 HBM 85°C 接面溫度上限是封裝設計兩個關鍵硬限制。封裝層液冷（Direct-to-Silicon Liquid Cooling）的商業化是解開 1MW 機架能效瓶頸的必要條件。
+
+## 2026-08-29 更新：Mitsubishi NTE 填充材料 + 生成式設計工具量化⭐更新
+
+*Sources: SemiEng Week#153; arXiv 2608.22787 → [[sources/2026-08-28_semieng_week-153-nvhbm-qualcomm-hbc-sk-hynix-indiana]] / [[sources/2026-08-28_arxiv_um-dearborn-generative-design-liquid-cooling-2-5d-3d]]*
+
+### Mitsubishi Chemical M-Filleris NTE（負熱膨脹填充材料）
+
+商業化進度最新：Mitsubishi Chemical 正式宣布商業化路線圖：
+
+| 里程碑 | 時程 |
+|--------|------|
+| 試銷（Pilot Sales）| FY2026 末 |
+| 量產（Mass Production） | 2H FY2027 |
+
+**技術原理**：傳統封裝填充料（underfill）採氧化矽（silica）填料，熱膨脹係數（CTE）為正值，近封裝填充率實際限制已近上限。**NTE（Negative Thermal Expansion）材料**具有負 CTE，與基板/晶片 CTE 正值相抵，可主動補償熱膨脹差，從根本降低翹曲。
+
+**wiki 含義**：M-Filleris NTE 是先進封裝翹曲管理（warpage control）的材料創新路徑，與既有「翹曲納入混合接合 HVM 全流程設計」的製程方法互補——前者解決材料 CTE 失配；後者解決製程窗口控制。
+
+### UM-Dearborn 生成式設計：2.5D/3D 液冷通道優化量化效益
+
+物理引導的生成式設計框架（擴散模型 + OpenFOAM CFD）應用於先進封裝液冷通道設計，2.7 kW 測試封裝（2 GPU + 1 CPU）：
+
+| 指標 | 改善幅度 |
+|------|---------|
+| 最高 GPU 溫度 | **-33.6%** |
+| 溫度分佈（spread） | **-52.5%** |
+| 壓力降 | **-72.8%** |
+
+**三指標同時改善**（傳統上溫度均勻化與壓降之間存在取捨）是本框架的關鍵突破點。
+
+**wiki 含義**：將 wiki 中「AI/數位孿生設計工具」從概念描述提升至具體量化性能基準；確立擴散模型在封裝熱管理設計的可行性。
+

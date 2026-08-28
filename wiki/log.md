@@ -2862,3 +2862,28 @@ an（2028–2029 量產世代）為 CoPoS 最可能的首批量產客戶——�
   1. **Arm AGI 雙 chiplet 伺服器 CPU：2TB/s UCIe 量產最大規模（Hot Chips 2026）**：2× TSMC N3P SoC，UCIe 16 lanes × 16 bumps @ 32GT/s = 2TB/s D2D，136 Neoverse V3 核心，DDR5-8800，300W TDP，<100ns DRAM 延遲。這是 UCIe 首次在旗艦伺服器 CPU 實現 2TB/s 晶片間頻寬，對 UCIe 標準在高階 CPU 封裝的商業可行性具有里程碑意義。
   2. **AMD MI455X Hot Chips 2026 官方確認 8 XCD（非先前報導之 4）**：8 個 XCD（TSMC N2）透過 3D 混合接合堆疊於 N3P FCD，搭配 CoWoS-L + 12×HBM4；432GB/23.3TB/s 是目前量產 AI GPU 最大 HBM4 配置；40.26 PFLOPS MXFP4；Helios 機架規模：72 GPU / 2.9 exaflop / 31 TB HBM4 / 1.7 PB/s。XCD 修正影響多個 wiki 頁面，需特別注意。
   3. **NVIDIA Vera Rubin HBM4 三廠商全認證（Computex 2026 Jensen Huang 確認）**：SK Hynix ~70%（最先認證）；三星 2026-01 認證/2026-02 量產；Micron ~5-10% 已認證。三廠均通過消除供應單點風險，但 HBM4 交期已延至 2028 年，供需緊張持續。三星份額從 Jalapeño 訂單（OpenAI）進一步擴增（2026-08-27 更新相關）。
+
+## [2026-08-29] collect | 每日自動蒐集 — SK hynix Indiana HBM廠破土 / NVHBM / Qualcomm HBC / Mitsubishi NTE / 生成式熱管理設計
+- 搜尋查詢數：6 組（SemiEng Week#153；TrendForce Aug 2026；TSMC CoWoS production；Hot Chips 2026 recap；HBM4/5 supply chain；advanced packaging Aug 29 news）
+- 成功抓取：3 篇（articles/ 2 篇, papers/ 1 篇）
+- 失敗/跳過：多篇（各 TrendForce 8/29 文章尚未發布；部分 URL 已收錄；Hot Chips recap 為摘要轉載）
+- 學術代理：UNAVAILABLE ✗
+- 新增 raw 檔案：3 篇
+  - raw/articles/2026-08-28_semieng_chip-week-153-hot-chips-hbc-sk-hynix-indiana.md
+  - raw/articles/2026-07-31_benzinga_tsmc-emib-like-kinsus.md
+  - raw/papers/2026-08-28_semieng_arxiv_um-dearborn-generative-design-liquid-cooling-2-5d-3d.md
+- 新增 wiki 頁面：4 頁
+  - wiki/sources/2026-08-28_semieng_week-153-nvhbm-qualcomm-hbc-sk-hynix-indiana.md
+  - wiki/sources/2026-08-28_arxiv_um-dearborn-generative-design-liquid-cooling-2-5d-3d.md
+  - wiki/sources/2026-07-31_benzinga_tsmc-emib-like-kinsus.md
+  - wiki/entities/qualcomm.md（新建 Qualcomm 實體頁面）
+- 更新 wiki 頁面：5 頁
+  - wiki/entities/sk-hynix.md（Indiana HBM 廠實際破土動工 + Purdue 研發協議，2026-08-28）
+  - wiki/entities/nvidia.md（NVHBM：記憶體控制器嵌入 HBM 堆疊架構）
+  - wiki/technologies/hbm4.md（NVHBM 架構表；三條競爭路線框架確立）
+  - wiki/concepts/thermal-management.md（Mitsubishi M-Filleris NTE 填充材料；UM-Dearborn 生成式設計量化效益）
+  - wiki/index.md（頁面數 407→413；來源數 365→368；Qualcomm 新增；NVHBM/Indiana 描述更新）
+- 主要新知識：
+  1. **SK hynix Indiana HBM 封裝廠破土動工（2026-08-28）**：West Lafayette 設施正式啟動建設，美國首個 HBM 量產中心；與 Purdue University 簽署先進封裝研發合作協議——美國在地 HBM 供應鏈從規劃進入實體建設階段里程碑。
+  2. **NVIDIA NVHBM（NVLink Fusion 擴展）**：自訂記憶體控制器首次從 GPU die 移入 HBM 堆疊內部——若量產，將改變 HBM 供應商（SKH/Samsung/Micron）的設計介面要求，從「純 DRAM 堆疊」轉向「含控制器複合堆疊」，標誌 HBM 架構自主化的新方向。
+  3. **三條高頻寬記憶體競爭路線框架確立**：HBM+CoWoS（主流量產）、d-Matrix F2F 36µm（0.37 pJ/bit，2027 目標）、Qualcomm HBC（有機基板 3D-LPDDR，6× BW/W 宣稱）——wiki 首次完整並排三條路線，為後續追蹤提供分析基準。

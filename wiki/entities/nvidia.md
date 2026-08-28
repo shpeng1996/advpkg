@@ -3,7 +3,7 @@ title: "NVIDIA Corporation"
 category: entity
 tags: [fabless, GPU, AI-accelerator, HBM4, CoWoS, SoIC, Rubin, Feynman, NVL576, CPO, Spectrum-X, Constellation]
 created: 2026-05-03
-updated: 2026-07-29
+updated: 2026-08-29
 sources: [2026-05-24_techtimes_nvidia-computex2026-cowos, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-03-18_trendforce_nvidia-rubin-feynman-soic, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-06_trendforce_google-tpu-cautious-adoption-nvidia, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-06-01_trendforce_nvidia-vera-rubin-tsmc-20pct-revenue, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-19_techtimes_vera-rubin-hbm4-suppliers, 2026-06-14_digitaltrends_tsmc-copos-glass-temporary-carrier, 2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b, 2026-07-27_trendforce_presscenter_cpo-switches-nvidia-broadcom-coupe]
 related:
   - wiki/entities/tsmc.md
@@ -45,6 +45,12 @@ related:
 ---
 
 ## 近期動態 / Recent Developments
+
+- **2026-08-29（⭐最新）**：**NVHBM：自訂記憶體控制器嵌入 HBM 堆疊（NVLink Fusion 擴展）**（SemiEng Week#153 2026-08-28）：
+  - NVIDIA 發布 **NVHBM**——將自訂記憶體控制器整合進 3D HBM 堆疊本身（原先置於 GPU/XPU die 上）
+  - 架構意義：縮小 XPU die 面積佔用；HBM 成為「智慧型」記憶體節點；供應商須適配新控制器介面
+  - 定位：Vera Rubin 後世代 AI 推論系統的頻寬與功耗進一步優化
+  *Source: SemiEng Week#153 → [[sources/2026-08-28_semieng_week-153-nvhbm-qualcomm-hbc-sk-hynix-indiana]]*
 
 - **2026-07-28（⭐最新）**：**Vera Rubin SOCAMM 記憶體配置腰斬（192GB→96GB）**——記憶體 BOM 成本壓力（佔 BOM 29%）驅動 NVIDIA 主動削減每顆 Vera CPU 的 LPDRAM 配置；LPDDR5X SOCAMM 模組 2026 年供應缺口達 **60%**；Bernstein 預測 **HBM4 2027 年 ASP $53/GB**；NVIDIA 與 SK Group 簽署 **$500 億美元 LOI**（高頻寬記憶體長期供應意向書，涵蓋 SK Hynix HBM + SK Inc. AI 資料中心基礎設施）。
   *Source: TrendForce 2026-07-28*

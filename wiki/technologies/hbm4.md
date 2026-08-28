@@ -3,7 +3,7 @@ title: "HBM4 — High Bandwidth Memory 4"
 category: technology
 tags: [memory, HBM, JEDEC, standards, AI, HPC, HBM4E, cleanroom, capacity, ISSCC2026, ZAM, HB3DM, HBM5, zHBM, HPB, FMS-2026]
 created: 2026-04-24
-updated: 2026-08-28
+updated: 2026-08-29
 sources: [2026-08-13_semieng_1mw-rack-debate-thermal, 2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor, 2026-08-10_trendforce_skhynix-chongqing-sale-global-reset, 2026-08-05_trendforce_samsung-v10-zhbm-hbm5-fms2026, 2026-07-30_trendforce_samsung-ds-q2-2026-hbm4-triple-q3, 2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-03-18_trendforce_intel-emib-malaysia, 2026-01-23_trendforce_hbm4e-samsung-skhynix-mid2026, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-01-13_semiengineering_hbm4-microbumps, 2025-12-18_trendforce_micron-capex-hbm4, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h, 2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-03-03_trendforce_sk-hynix-hbm4-tight-gaps, 2025-08-12_semianalysis_hbm-roadmap, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit, 2026-06-09_astutegroup_hbm-market-share-2026-battle, 2026-06-10_trendforce_samsung-gwangju-packaging-base, 2026-06-15_trendforce_skhynix-hbm4e-sample-timeline-pulled-forward, 2026-06-20_techtimes_skhynix-hbm4e-12layer-samples, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-27_tweaktown_hbm4-16hi-nvidia-supply-fight, 2026-06-26_semieng_chip-week-144, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-14_trendforce_samsung-hbm-hiring-hbm4-hbm4e-hbm5, 2026-07-14_trendforce_skhynix-yongin-y1-feb2027, 2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b, 2026-08-13_trendforce_samsung-skhynix-hbm4-2h-earnings-pricing]
 related:
   - wiki/entities/sk-hynix.md
@@ -397,6 +397,31 @@ HBM 堆疊的 TSV 與矽中介層 TSV 在規格與製程上存在顯著差異：
 → 完整 TSV 技術頁面：[[technologies/tsv.md]]
 
 ---
+
+
+## 2026-08-29 更新：NVHBM + Qualcomm HBC 競爭架構彙整⭐更新
+
+*Source: SemiEng Week#153 → [[sources/2026-08-28_semieng_week-153-nvhbm-qualcomm-hbc-sk-hynix-indiana]]*
+
+### NVIDIA NVHBM（記憶體控制器嵌入 HBM 堆疊）
+
+NVIDIA NVLink Fusion 新增 **NVHBM** 架構：自訂記憶體控制器整合進 3D HBM 堆疊本身（原先在 GPU/XPU die）。
+
+| 比較項目 | 傳統 HBM | NVHBM |
+|---------|---------|-------|
+| 記憶體控制器 | GPU die 上 | HBM 堆疊內部 |
+| XPU die 面積 | 含控制器 | 縮小 |
+| 供應商設計需求 | 標準 DRAM 堆疊 | 含控制器層複合堆疊 |
+
+**wiki 含義**：若量產，HBM 供應商（SKH/Samsung/Micron）需在堆疊中整合控制器邏輯層，技術門檻提高；NVIDIA 鎖定供應商能力增強。
+
+### 三條高頻寬記憶體競爭路線框架（確立 2026-08-29）
+
+| 路線 | 架構 | 基板 | 能耗 | 商業化 |
+|------|------|------|------|--------|
+| HBM + CoWoS（主流） | HBM 堆疊 + 矽中介層 | 矽中介層 | 2.4 pJ/bit | 量產 |
+| d-Matrix F2F 36µm | DRAM 兼作中介層 | 無中介層 | 0.37 pJ/bit | 2027 目標 |
+| Qualcomm HBC | 3D-LPDDR + 邏輯 die | 有機基板 | 6× BW/W（宣稱） | 開發中 |
 
 ## 相關技術 / Related Technologies
 
