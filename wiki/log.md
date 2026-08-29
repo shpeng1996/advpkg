@@ -2887,3 +2887,23 @@ an（2028–2029 量產世代）為 CoPoS 最可能的首批量產客戶——�
   1. **SK hynix Indiana HBM 封裝廠破土動工（2026-08-28）**：West Lafayette 設施正式啟動建設，美國首個 HBM 量產中心；與 Purdue University 簽署先進封裝研發合作協議——美國在地 HBM 供應鏈從規劃進入實體建設階段里程碑。
   2. **NVIDIA NVHBM（NVLink Fusion 擴展）**：自訂記憶體控制器首次從 GPU die 移入 HBM 堆疊內部——若量產，將改變 HBM 供應商（SKH/Samsung/Micron）的設計介面要求，從「純 DRAM 堆疊」轉向「含控制器複合堆疊」，標誌 HBM 架構自主化的新方向。
   3. **三條高頻寬記憶體競爭路線框架確立**：HBM+CoWoS（主流量產）、d-Matrix F2F 36µm（0.37 pJ/bit，2027 目標）、Qualcomm HBC（有機基板 3D-LPDDR，6× BW/W 宣稱）——wiki 首次完整並排三條路線，為後續追蹤提供分析基準。
+
+## [2026-08-30] collect | 每日自動蒐集 — VIS Fab 3 火災 / NVIDIA NVHBM 量化規格 / $279B 供應承諾
+- 搜尋查詢數：6 組（TSMC CoWoS Aug 30；HBM4/HBM5 Aug 2026；advanced packaging Aug 30；Intel EMIB Aug 30；TrendForce news Aug 29-30；SemiEng Week 154）
+- 成功抓取：2 篇（articles/ 2 篇）
+- 失敗/跳過：多篇（TrendForce Aug 30 尚無新文章；SemiEng Week#154 未發布（週日）；Qualcomm HBC partners URL 未在 provenance set）
+- 學術代理：UNAVAILABLE ✗
+- 新增 raw 檔案：2 篇
+  - raw/articles/2026-08-28_trendforce_vis-fab3-fire-8inch-capacity.md
+  - raw/articles/2026-08-27_trendforce_nvidia-279b-supply-nvhbm-30pct-bandwidth.md
+- 新增 wiki 頁面：2 頁
+  - wiki/sources/2026-08-28_trendforce_vis-fab3-fire-8inch-capacity.md
+  - wiki/sources/2026-08-27_trendforce_nvidia-279b-supply-nvhbm.md
+- 更新 wiki 頁面：4 頁
+  - wiki/entities/nvidia.md（NVHBM 量化規格 +30% BW/-15% 功耗/+25% XPU 面積；供應承諾 $279B；Q2 FY27 財報；Feynman 2028 NVHBM 首平台）
+  - wiki/entities/tsmc.md（VIS Fab 3 火災 2026-08-27；TSMC 持股 19% 牽連；初評主設施未損）
+  - wiki/technologies/hbm4.md（NVHBM 量化規格更新；NVIDIA 供應承諾 $279B；Trainium4 首採；Feynman 2028）
+  - wiki/index.md（頁面數 413→415；來源數 368→370；NVIDIA/TSMC 描述更新）
+- 主要新知識：
+  1. **NVHBM 量化規格首次確認（TrendForce 2026-08-27）**：+30% 記憶體頻寬 / -15% HBM 功耗 / +25% XPU 計算面積釋放（vs 標準 HBM4E）；Amazon Trainium4 首批採用；Feynman GPU（2028）為第一個 NVHBM GPU 平台。NVIDIA Q2 FY27 供應承諾激增至 $2790 億（+134% QoQ），記憶體瓶頸預計延至 FY2028。
+  2. **VIS Fab 3 桃園火災（2026-08-28）**：TSMC 持股 19% 的 8 吋成熟節點代工廠 VIS Fab 3 深夜發生火災，逾 200 人疏散；初評主設施未損，但 8 吋 PMIC 供應鏈市場警覺提升。VIS 已宣告 2027 年漲價不可避免，8 吋產能緊張態勢持續。

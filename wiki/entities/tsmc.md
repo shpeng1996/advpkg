@@ -3,7 +3,7 @@ title: "台積電 / TSMC"
 category: entity
 tags: [foundry, advanced-packaging, CoWoS, SoIC, CoPoS, COUPE, CPO, InFO, WMCM, aLSI, MRAM, 3nm-pricing]
 created: 2026-04-24
-updated: 2026-08-19
+updated: 2026-08-30
 sources: [2026-04-24_initial-survey, 2026-04-13_trendforce_copos-pilot, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2025-12-18_trendforce_apple-wmcm-a20, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-01-20_trendforce_tsmc-wmcm-apple, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap, 2026-04-23_trendforce_tsmc-roadmap-a12-a13-no-high-na-euv, 2026-05-07_trendforce_tsmc-us-expansion-250b-arizona, 2026-05-12_focustaiwan_tsmc-capex-31b-arizona-20b, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-28_reuters_tsmc-kevin-zhang-energy-efficiency, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-09_financialcontent_tsmc-130k-cowos-wafers, 2026-06-09_digitimes_tsmc-cowos-soic-capacity-symposium, 2026-06-15_trendforce_tsmc-cowos-gap-narrowing-130k-200k-wafers, 2026-06-17_digitimes_amkor-tsmc-10year-arizona-deal, 2026-06-17_trendforce_tsmc-amkor-10year-arizona-advanced-packaging, 2026-06-21_tomshardware_tsmc-fab-expansion-roadmap, 2026-06-27_tmtpost_tsmc-cowos-capacity-targets-2026-2027, 2026-07-02_trendforce_samsung-sf2p-plus-tsmc-n2-roadmap, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-22_trendforce_tsmc-2027-price-hike-hpc, 2026-07-20_trendforce_tsmc-265b-arizona-intel-novalake, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-08-17_trendforce_tsmc-arizona-profit-663pct-1h26]
 related:
   - wiki/technologies/cowos.md
@@ -178,6 +178,9 @@ related:
 
 - **2026-05-12（⭐新增）**：**TSMC 董事會批准 US$31.28B 資本預算 + TSMC Arizona 注資最高 $20B**——台積電董事會於 5 月 12 日批准資本支出計畫：（1）US$31.28B 用於先進製程產能安裝、廠房建設及基礎設施；（2）向全資子公司 **TSMC Arizona 注資最高 US$20B**（用於 Fab 21 持續擴建）。2026 年度 CapEx 確定在 US$52–56B **高端**區間。同期，Q1 2026 EPS 達 **NT$22.08**（季度歷史新高），季度現金股利提升至 **NT$7/股**（↑17% vs NT$6）。台積電股價自 4 月初以來漲逾 **28%**，收盤於 NT$2,255。5 月 13 日另傳 TSMC **新增四位高管**（行政改組），背景是美國投資加速與接班規劃推進。
   *Source: Focus Taiwan / CNA 2026-05-12; Tom's Hardware 2026-05-12; Digitimes 2026-05-13*
+
+- **2026-08-30（⭐最新）**：**VIS Fab 3 火災（2026-08-27 深夜）—— TSMC 持股 19% 被動牽連**：桃園 VIS Fab 3 發生火災（逾 200 名員工疏散），火源位於頂層 ~20m²，約一小時撲滅；初步評估主要設施未受損，生產線大致正常。VIS 8 吋產能 Q3 利用率 ~90%，全年 8 吋產能因製程優化縮減 ~4% YoY（3.306M 片）。VIS 供應 AI 伺服器 PMIC，是 CoWoS 生態圈的成熟節點周邊供應商；持續評估火災對 2026 Q3 出貨的後續影響。VIS 董事長已宣布 2027 年再次漲價。
+  *Source: TrendForce 2026-08-28 → [[sources/2026-08-28_trendforce_vis-fab3-fire-8inch-capacity]]*
 
 - **2026-05-11（CoWoS 供應鏈新增節點）**：**VIS/VSMC 新加坡廠加入矽中介層生產，進入 CoWoS 供應鏈**——TSMC 附屬廠 VIS 旗下 VSMC（新加坡，VIS 60% + NXP 40%）已調整產品組合加入**矽中介層**生產（30–40nm 技術，TSMC 技術授權）。月產能從 55K 調整至 **44K wsm**（矽中介層面積需求較高），TSMC 支援超過 200 台設備移入。VIS 正評估**第二座 12 吋廠**，量產目標 **2027 年**。此舉將 CoWoS 矽中介層生產基地延伸至新加坡，分散地緣政治風險。
   *Source: TrendForce 2026-05-06*

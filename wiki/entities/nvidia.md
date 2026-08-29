@@ -3,7 +3,7 @@ title: "NVIDIA Corporation"
 category: entity
 tags: [fabless, GPU, AI-accelerator, HBM4, CoWoS, SoIC, Rubin, Feynman, NVL576, CPO, Spectrum-X, Constellation]
 created: 2026-05-03
-updated: 2026-08-29
+updated: 2026-08-30
 sources: [2026-05-24_techtimes_nvidia-computex2026-cowos, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-03-18_trendforce_nvidia-rubin-feynman-soic, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-06_trendforce_google-tpu-cautious-adoption-nvidia, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-06-01_trendforce_nvidia-vera-rubin-tsmc-20pct-revenue, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-19_techtimes_vera-rubin-hbm4-suppliers, 2026-06-14_digitaltrends_tsmc-copos-glass-temporary-carrier, 2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b, 2026-07-27_trendforce_presscenter_cpo-switches-nvidia-broadcom-coupe]
 related:
   - wiki/entities/tsmc.md
@@ -46,10 +46,19 @@ related:
 
 ## 近期動態 / Recent Developments
 
-- **2026-08-29（⭐最新）**：**NVHBM：自訂記憶體控制器嵌入 HBM 堆疊（NVLink Fusion 擴展）**（SemiEng Week#153 2026-08-28）：
-  - NVIDIA 發布 **NVHBM**——將自訂記憶體控制器整合進 3D HBM 堆疊本身（原先置於 GPU/XPU die 上）
-  - 架構意義：縮小 XPU die 面積佔用；HBM 成為「智慧型」記憶體節點；供應商須適配新控制器介面
-  - 定位：Vera Rubin 後世代 AI 推論系統的頻寬與功耗進一步優化
+- **2026-08-30（⭐最新）**：**NVIDIA Q2 FY27 財報 + NVHBM 詳細規格確認**（TrendForce 2026-08-27）：
+  - **Q2 FY27 財報**：營收 $96.2B（+18% QoQ, +106% YoY）；EPS $2.22（超預期）；毛利率 75%；Q3 指引 $108B
+  - **供應承諾激增**：Q2 FY27 供應承諾跳升至 **$2790 億**（前季 $1190 億，+134%），主要由記憶體採購驅動；剩餘 FY27 $920 億 + FY28 $870 億 + FY29 $880 億
+  - **NVHBM 精確規格**：
+    - 架構：自訂記憶體控制器**嵌入 HBM base die**（原置於 XPU die）
+    - **+30% 記憶體頻寬**（vs 標準 HBM4E）
+    - **-15% HBM 功耗**
+    - **+25% XPU 計算 die 面積**釋放（原用於記憶體控制器）
+    - 首批夥伴：**Amazon Annapurna Labs**（Trainium4 起整合 NVLink Fusion）
+    - **Feynman GPU（2028）**預計為第一個 NVHBM GPU 平台
+  - 記憶體瓶頸預計延續至少至 **FY2028**；Q4 毛利率將下滑至底部 71–72%
+  - NVHBM 架構影響：HBM 從商品記憶體堆疊轉型為含 NVIDIA 自訂控制器的協同設計子系統，HBM 供應商（SKH/Samsung/Micron）須整合 NVIDIA 控制器邏輯
+  *Source: TrendForce 2026-08-27 → [[sources/2026-08-27_trendforce_nvidia-279b-supply-nvhbm]]*
   *Source: SemiEng Week#153 → [[sources/2026-08-28_semieng_week-153-nvhbm-qualcomm-hbc-sk-hynix-indiana]]*
 
 - **2026-07-28（⭐最新）**：**Vera Rubin SOCAMM 記憶體配置腰斬（192GB→96GB）**——記憶體 BOM 成本壓力（佔 BOM 29%）驅動 NVIDIA 主動削減每顆 Vera CPU 的 LPDRAM 配置；LPDDR5X SOCAMM 模組 2026 年供應缺口達 **60%**；Bernstein 預測 **HBM4 2027 年 ASP $53/GB**；NVIDIA 與 SK Group 簽署 **$500 億美元 LOI**（高頻寬記憶體長期供應意向書，涵蓋 SK Hynix HBM + SK Inc. AI 資料中心基礎設施）。
