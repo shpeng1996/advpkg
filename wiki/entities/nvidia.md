@@ -3,7 +3,7 @@ title: "NVIDIA Corporation"
 category: entity
 tags: [fabless, GPU, AI-accelerator, HBM4, CoWoS, SoIC, Rubin, Feynman, NVL576, CPO, Spectrum-X, Constellation]
 created: 2026-05-03
-updated: 2026-08-30
+updated: 2026-08-31
 sources: [2026-05-24_techtimes_nvidia-computex2026-cowos, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-03-18_trendforce_nvidia-rubin-feynman-soic, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-06_trendforce_google-tpu-cautious-adoption-nvidia, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-06-01_trendforce_nvidia-vera-rubin-tsmc-20pct-revenue, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-19_techtimes_vera-rubin-hbm4-suppliers, 2026-06-14_digitaltrends_tsmc-copos-glass-temporary-carrier, 2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b, 2026-07-27_trendforce_presscenter_cpo-switches-nvidia-broadcom-coupe]
 related:
   - wiki/entities/tsmc.md
@@ -163,3 +163,24 @@ related:
 - [[technologies/hbm4]] — HBM4E 主要用戶；SK Hynix ~70% 份額
 - [[entities/tsmc]] — 核心製造夥伴；CoWoS + SoIC + 先進製程
 - [[entities/sk-hynix]] — HBM 主要供應商
+
+
+### ⭐ 2026-08-31 更新：2027 伺服器漲價策略 / HBM 毛利緩衝 / Rubin Ultra 多配置
+
+*Source: [[sources/2026-08-25_trendforce_nvidia-server-hike-hbm-price-2027]]*
+
+**NVIDIA 2027 定價策略**：
+- 計畫對 Vera Rubin 與 Grace Blackwell 伺服器 **2027 年初** 調漲 **>15%**（Bloomberg），轉嫁更高記憶體成本至 Microsoft、Google、Oracle
+- 即使 HBM4 成本從 HBM3e **翻倍**，NVIDIA GPU 系統毛利仍可維持 **75–80%**（Fubon Research）——顯示 NVIDIA 有充裕空間吸收 HBM 漲價
+- 此策略強化 SK Hynix / Samsung 2027 HBM 談判槓桿：分析師預期 HBM ASP **+50–79% YoY**
+
+**Rubin Ultra HBM 多配置評估（2026-Q3 起）**：
+
+| 配置 | 狀態 |
+|------|------|
+| 12-Hi HBM4e（原始計畫） | 持續推進 |
+| 8-Hi HBM4e | 評估中 |
+| 12-Hi HBM4 | **評估中** |
+| 8-Hi HBM4 | **評估中** |
+
+原因：12-Hi HBM4e 良率爬坡不確定性 + DRAM 供應緊張至 2027。HBM4 備案若成真，對 Samsung/SK Hynix HBM4 出貨量有上行影響。

@@ -283,3 +283,18 @@ Samsung（Yonhap News 引述）官方預期：
 |------|-------------|-------------|
 | DRAM ASP | +mid-40% QoQ | 目標 +~20% QoQ |
 | NAND ASP | +high-60% QoQ | +10–15% QoQ（TrendForce） |
+
+
+### ⭐ 2026-08-31 更新：Taylor Plant 1 試產 2026-09 / HBM 定價受益
+
+*Sources: [[sources/2026-08-28_trendforce_skhynix-indiana-hbm4e-3q29-supply-2030]], [[sources/2026-08-25_trendforce_nvidia-server-hike-hbm-price-2027]]*
+
+**Samsung Taylor（德州）最新時程**：
+- Taylor Plant 1 接近完工，試產最早可能 **2026 年 9 月**啟動
+- Taylor Plant 2 施工始於 **2026 年底**；量產目標 **2030**
+- 總投資計畫：~$370 億（~KRW 51T）
+
+**HBM 定價受益**：
+- NVIDIA 2027 年伺服器漲價 >15% 為 Samsung HBM 定價提供有利背景
+- 分析師預期 2027 年 HBM 合約 ASP 漲幅 **+50–79%**（UBS: +79%）
+- Samsung HBM4 良率已達 ~80%，可受益於更高定價

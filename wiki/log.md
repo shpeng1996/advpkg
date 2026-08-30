@@ -2907,3 +2907,28 @@ an（2028–2029 量產世代）為 CoPoS 最可能的首批量產客戶——�
 - 主要新知識：
   1. **NVHBM 量化規格首次確認（TrendForce 2026-08-27）**：+30% 記憶體頻寬 / -15% HBM 功耗 / +25% XPU 計算面積釋放（vs 標準 HBM4E）；Amazon Trainium4 首批採用；Feynman GPU（2028）為第一個 NVHBM GPU 平台。NVIDIA Q2 FY27 供應承諾激增至 $2790 億（+134% QoQ），記憶體瓶頸預計延至 FY2028。
   2. **VIS Fab 3 桃園火災（2026-08-28）**：TSMC 持股 19% 的 8 吋成熟節點代工廠 VIS Fab 3 深夜發生火災，逾 200 人疏散；初評主設施未損，但 8 吋 PMIC 供應鏈市場警覺提升。VIS 已宣告 2027 年漲價不可避免，8 吋產能緊張態勢持續。
+
+## [2026-08-31] collect | 每日自動蒐集 — NVIDIA 伺服器漲價 / HBM 定價 2027 / SK hynix Indiana 詳細時程 / HBF Hot Chips OXMIQ 分析
+- 搜尋查詢數：6 組（TSMC CoWoS Aug 31；HBM4/HBM5 Aug 2026；advanced packaging news Aug 31；Intel EMIB Aug 2026；NVIDIA HBM packaging Aug 30-31；SemiEng Week 154）
+- 成功抓取：3 篇（articles/ 3 篇, papers/ 0 篇, reports/ 0 篇）
+- 失敗/跳過：多篇（TrendForce Aug 31 尚無新文章；SemiEng Week#154 未發布；TrendForce HBF 成本文章 URL 不在 provenance set）
+- 學術代理：UNAVAILABLE ✗
+- 新增 raw 檔案：3 篇
+  - raw/articles/2026-08-25_trendforce_nvidia-server-hike-15pct-hbm-price-50pct-2027.md
+  - raw/articles/2026-08-28_trendforce_skhynix-indiana-hbm4e-3q29-tight-supply-2030.md
+  - raw/articles/2026-08-26_tomshardware_hbf-hot-chips-2026-oxmiq-analysis-limited-usability.md
+- 新增 wiki 頁面：3 頁
+  - wiki/sources/2026-08-25_trendforce_nvidia-server-hike-hbm-price-2027.md
+  - wiki/sources/2026-08-28_trendforce_skhynix-indiana-hbm4e-3q29-supply-2030.md
+  - wiki/sources/2026-08-26_tomshardware_hbf-hot-chips-oxmiq-limited-usability.md
+- 更新 wiki 頁面：5 頁
+  - wiki/technologies/hbm4.md（2027 HBM 定價 +50-79%；Rubin Ultra 4 配置評估；HBM4E 3Q29 時程；HBF 競爭定位修正）
+  - wiki/technologies/hbf.md（OXMIQ Hot Chips 2026 分析；Grade 規格修正；0.6× HBM BW；MoE/KV 用例框架；軟體障礙具體化；競爭定位修正）
+  - wiki/entities/sk-hynix.md（Indiana HBM4E 3Q29；$4B+$458M CHIPS；CEO 供應至 2030；客戶需求 +60-100%；Kioxia 合作訊號）
+  - wiki/entities/nvidia.md（2027 伺服器漲價 >15%；毛利緩衝 75-80%；Rubin Ultra 多配置評估）
+  - wiki/entities/samsung.md（Taylor P1 試產 2026-09；HBM 定價受益）
+  - wiki/index.md（頁面數 415→418；來源數 370→373；各實體描述更新）
+- 主要新知識：
+  1. **HBM 2027 定價結構性上漲基礎確立**：DDR5 現貨一年漲 ~4× 造成 HBM 相對獲利落後 DDR5 約 40ppt，加上 NVIDIA 2027 伺服器漲價 >15% 為 HBM 供應商提供充裕談判空間——分析師預期 HBM ASP 2027 年漲幅達 50–79%。此定價動態是 SK Hynix 和 Samsung 未來 12 個月最重要的財務催化劑。
+  2. **SK hynix Indiana HBM4E 量產時程精確化（3Q29）與供應緊張展望延至 2030**：CEO Kwak 明確表示供應緊張無清晰下行信號，主席 Chey 指出客戶 2027 年需求比 2026 年高出 60–100%——進一步確認 HBM 結構性短缺的持續性。另增 SK hynix-Kioxia 潛在合作訊號（NAND flash 市場），對 HBF 生態系有潛在影響。
+  3. **HBF 競爭定位被 OXMIQ 量化分析根本性修正**：HBF 系統聚合頻寬僅為 HBM 的 0.6×，「4 HBF GPU = 8 HBM GPU」論述僅在容量受限（非頻寬受限）情境下成立。MoE 專家權重冷存儲和長上下文 KV cache 是最合適用例；NVIDIA/AMD 尚未承諾採用；vLLM 需大規模改寫。HBF 的市場化路徑比此前認為的更曲折。

@@ -3,7 +3,7 @@ title: "SK Hynix"
 category: entity
 tags: [memory, HBM, HBM4, advanced-packaging]
 created: 2026-04-24
-updated: 2026-08-29
+updated: 2026-08-31
 sources: [2026-08-24_trendforce_hot-chips-2026-samsung-zhbm-skhynix-emib, 2026-08-19_trendforce_skhynix-silicon-valley-hbm-codesign-team, 2026-08-17_trendforce_samsung-skhynix-1h26-investment-nvidia-absent, 2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor, 2026-08-10_trendforce_skhynix-chongqing-sale-global-reset, 2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab, 2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h, 2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-04-22_trendforce_sk-hynix-pt7-cheongju, 2026-04-22_trendforce_sk-hynix-indiana-us-plant, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-03-03_trendforce_sk-hynix-hbm4-tight-gaps, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-05_trendforce_hbf-equipment-race-sandisk-hanmi, 2026-06-11_trendforce_skhynix-3x-wafer-2034-375layer-nand, 2026-06-20_techtimes_skhynix-hbm4e-12layer-samples, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-24_techtimes_sk-hynix-dethroned-samsung-ddr5-hbm4, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-06-25_techtimes_sk-hynix-nasdaq-adr-29b, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-22_trendforce_skhynix-q2-record-margin, 2026-07-21_trendforce_samsung-cxl-32-skhynix-imte, 2026-07-24_trendforce_skhynix-3d-stacked-dram-on-logic-on-device-ai, 2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b]
 related:
   - wiki/entities/samsung.md
@@ -353,3 +353,30 @@ SK hynix 在 Hot Chips 2026 簡報中首次以並排圖表展示 **EMIB 與 CoWo
 ### NVIDIA Vera Rubin 記憶體供應
 
 SK hynix 持有 NVIDIA Vera Rubin HBM 訂單約 **70%**（Jan 2026 報導）；全數採 MR-MUF 供應。
+
+
+### ⭐ 2026-08-31 更新：Indiana HBM4E 詳細時程 / CEO 供應至 2030 / Kioxia 合作訊號
+
+*Sources: [[sources/2026-08-28_trendforce_skhynix-indiana-hbm4e-3q29-supply-2030]]*
+
+**Indiana 封裝廠精確時程（TrendForce 官方文章）**：
+- 破土動工：2026-08-27（已確認）
+- 潔淨室完工：**2028-10（October）**
+- HBM4E 量產開始：**2029-Q3**
+- 年產能：**數十萬片晶圓**
+- 投資額：**>$40 億（~KRW 5.52T）**
+- CHIPS Act 聯邦資金：**$4.58 億**（美國商務部已確定撥付）
+- 功能定位：後端封裝中心（韓國生產晶圓→Indiana 堆疊/封裝/測試→供應美國客戶）
+
+**CEO Kwak Noh-Jung 供應展望**：
+- HBM 供應緊張將持續至 **2030 年底**，「目前沒有清晰的下行信號」
+- SK Group 主席 Chey Tae-won：客戶 2027 年要求比 2026 年多 **60%–100%** AI 記憶體
+
+**Kioxia 合作訊號**：
+- 2026-08-27 破土典禮上，CEO Kwak 首次公開表態：考慮與 Kioxia 更緊密合作以共同發展 NAND flash 市場
+- Bain Capital SPC 已成 Kioxia 最大股東（14.19%），超越 Toshiba（14.06%）
+- Kioxia + SanDisk：計畫至 2032 年在日本投資 **>$310 億**（Kioxia 單獨 Kitakami 廠 ¥1.8T/$113 億）
+
+**HBM 定價受益**：
+- 2027 年 HBM 合約價預期漲幅 **>50%**（Bloter）至 **+79% YoY**（UBS）
+- NVIDIA 伺服器漲價 >15% 為 HBM 供應商提供更大議價空間

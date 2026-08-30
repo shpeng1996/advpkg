@@ -3,7 +3,7 @@ title: "HBF — High Bandwidth Flash"
 category: technology
 tags: [HBF, NAND, flash, TSV, stacking, SanDisk, SK-Hynix, Hanmi, TCB, AI-inference, storage-class-memory]
 created: 2026-06-11
-updated: 2026-08-15
+updated: 2026-08-31
 sources: [2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-06-05_trendforce_hbf-equipment-race-sandisk-hanmi, 2026-06-22_trendforce_sandisk-hbf-patent-nand-processor-bonding, 2026-05-14_semieng_flash-hbf-high-bandwidth-version]
 related:
   - wiki/technologies/hbm4.md
@@ -248,3 +248,72 @@ SemiEngineering 報導時（2026-05）HBF 已實現的容量：
 - 對比：HBM3E 12-Hi 最大 192 GB
 - HBF 容量優勢已達到 **8× HBM3E** 以上
 - 目標：16-Hi 堆疊後可達 **16× 以上** HBM 容量
+
+
+---
+
+## ⭐ 2026-08-31 重大更新：Hot Chips 2026 OXMIQ 分析——HBF 使用限制量化
+
+*Source: [[sources/2026-08-26_tomshardware_hbf-hot-chips-oxmiq-limited-usability]]*
+
+### OXMIQ Labs 核心發現
+
+OXMIQ Labs（GPU IP 公司）在 Hot Chips 2026 展示了迄今最完整的 HBF 量化分析，結論是 HBF **無法取代大多數工作負載的 HBM**，定位需修正為「容量補充層」而非「HBM 替代品」。
+
+**OXMIQ 結論：「HBM for the rack, HBF for the box」**
+
+### HBF Grade 規格修正
+
+（本表根據 FMS 2026 標準 + Hot Chips 2026 細節整合）
+
+| Grade | NAND Stack | 介面 | 頻寬 | 容量 |
+|-------|-----------|------|------|------|
+| Grade 1 | 8-Hi 256GB | 8 GT/s UCIe | **384 GB/s** | 256 GB |
+| Grade 2 | 512GB | 16 GT/s UCIe | **1.536 TB/s** | 512 GB |
+| Grade 3 | 512GB | 32 GT/s UCIe 2.0 | **3.072 TB/s** | 512 GB |
+
+- Grade 1 僅勘比當代 HBM（不足以替代）
+- Grade 3 可與 HBM4E 競爭，但量產時程不明
+
+### 關鍵系統對比（72 GPU rack / Kimi-K2 1T 參數）
+
+| 配置 | 總容量 | 總頻寬 | 模型實例/機架 |
+|------|--------|--------|-------------|
+| HBM only | 20.7 TB | 1,584 TB/s | 9 |
+| **HBF only** | **294.9 TB（14×）** | **922 TB/s（0.58×）** | **72** |
+| HBM+HBF | 89.3 TB | 279–1,418 TB/s | 可變 |
+
+**⚠️ 關鍵數據**：HBF 聚合頻寬僅達 HBM 的 **~60%**。一旦工作負載變為頻寬受限，HBF 的大容量優勢被完全抵消。
+
+### 修正：「4 HBF GPU = 8 HBM GPU」論述的邊界條件
+
+此前 SanDisk 的聲明在以下**特定條件**下成立：
+- **容量受限**工作負載（而非頻寬受限）
+- 單一模型需要 >20 TB 記憶體容量（如 1T 參數 MoE 模型）
+
+在高並發推論（批次大小↑ → 異質查詢 → 專家熱點平坦化）下，HBF 的 HBM 快取無法覆蓋頻繁的專家遷移，效能大幅下降。
+
+### HBF 最佳用例（OXMIQ 量化確認）
+
+1. **MoE 專家權重存儲**：Kimi-K3 93% 權重為 MoE experts（write-once, rarely read）→ 最適 HBF
+2. **長上下文 KV cache**：稀疏注意力模型每步僅存取小部分 KV cache → HBF 存全量，HBM 服務活躍部分
+3. **降低 GPU 間通信**：更多本地容量 → 更多專家本地駐留 → 減少 expert-parallel all-to-all 流量
+
+### HBF 生態系軟體障礙（新確認）
+
+HBF 需要**非傳統 DMA 路徑**（非 CPU/GPU cache hierarchy）：
+- 最小讀取：64 KB；最小寫入：1 MB
+- vLLM 需完全改寫：記憶體分配、資料放置決策、預取隱藏延遲、NAND 耐久度監控
+- 需 HBF 廠商 + AI 加速器廠商（AMD/NVIDIA）+ 推理框架三方聯合開發
+- **NVIDIA 和 AMD 尚未公開承諾**採用 HBF
+
+最可能的早期採用者：**SambaNova**（SN40L 已有 SRAM→HBM→DDR 三層架構，HBF 可接替 DDR 層）
+
+### 競爭定位更新
+
+| 維度 | 此前描述 | 修正後描述 |
+|------|---------|----------|
+| 定位 | HBM 替代/補充 | **容量補充層**（頻寬受限工作負載中不適用）|
+| BW vs HBM | 「近似 HBM 頻寬」 | **系統層面 0.6× HBM**（Grade 3 晶片級可達 HBM4E，但系統聚合仍遜色）|
+| NVIDIA 採用 | 期待採用 | **未承諾**；AMD 同樣未承諾 |
+| 軟體就緒度 | 標準已確立 | **目前推理軟體（vLLM）尚未支援**，需重大改寫 |
