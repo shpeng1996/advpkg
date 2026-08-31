@@ -3,7 +3,7 @@ title: "EMIB — Embedded Multi-Die Interconnect Bridge"
 category: technology
 tags: [Intel, 2.5D, silicon-bridge, chiplet, HBM4, Foveros, glass-substrate, EMIB-T, EMIB-M, silicon-capacitors, power-delivery, HLFF, encapsulation, underfill]
 created: 2026-05-03
-updated: 2026-08-25
+updated: 2026-09-01
 sources: [2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-03-05_trendforce_intel-emib-billions, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-03-03_trendforce_intel-clearwater-forest, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks, 2026-06-21_convergedigest_intel-emib-t-multi-die-packaging, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap, 2026-06-05_semieng_intel-ectc2026-emib-cpo-glass-blog, 2026-01-30_tomshardware_intel-ai-chip-test-vehicle-emib-t, 2026-08-04_semieng_from-blueprint-intel-hlff]
 related:
   - wiki/entities/intel.md
@@ -225,6 +225,34 @@ Intel Foundry 公開一份官方技術簡報，展示其 **「AI 晶片測試載
 - **[Foveros](foveros.md)**：Intel 3D 堆疊技術，與 EMIB 組合為 EMIB 3.5D
 - **[CoWoS](cowos.md)**：TSMC 競爭技術（全面積矽中介層 vs. 局部矽橋接）
 - **Samsung LSB**：三星的對應矽橋接技術（Land-Side Bridge，ECTC 2025 論文）
+
+---
+
+## ⭐ 2026-09-01 更新：Intel CFO 正式量化 EMIB-T 財務路線圖（Deutsche Bank 2026 Tech Conference）
+
+*Source: TrendForce 2026-08-31 → [[sources/2026-08-31_trendforce_intel-emib-t-stride-2029-dram-ruled-out]]*
+
+**EMIB-T 營收時間軸（CFO David Zinsner 官方說法）**：
+- **2H 2027**：EMIB-T 營收啟動
+- **2028**：穩定貢獻（steady contributor）
+- **2029**：全速運轉（hits its stride）
+
+**業務財務目標（首次官方量化）**：
+- 毛利率：~**40%**
+- 營業利益率：~**30%**
+- 每客戶年商機：**數十億美元（several billion USD）**
+- 資本密度：**低於前端製造**，ROIC 潛力強
+
+**Clearwater Forest（Xeon 6+）EMIB 實體架構確認**：
+- **12 個 EMIB 磚塊**（最大量產規模）
+- 3 種製程整合：**Intel 7（I/O）+ Intel 3（active base）+ 18A（compute）**
+- 3 active base tiles + 2 I/O tiles + 12 compute tiles 三層架構
+
+**DRAM 製造正式排除（CFO 層級）**：
+- ZAM / XHBM 為系統架構方案，非製造業務
+- Intel 與三大記憶體廠合作 AI 記憶體架構，不自製 DRAM
+
+**wiki 含義**：EMIB-T 的 40% 毛利率目標與 30% 營業利益率是業界首次官方量化，比 TSMC AP 業務財務數據更透明。「每客戶數十億美元」規模暗示即使獲得 2-3 個主要 CSP 客戶，EMIB-T 業務規模即可達數十億美元。這也解釋了 SK hynix 前 CEO 李錯熹此任命的策略意義：以頂級封裝人才確保 2029 目標達成。
 
 ---
 

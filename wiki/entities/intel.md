@@ -3,7 +3,7 @@ title: "英特爾 / Intel"
 category: entity
 tags: [IDM, advanced-packaging, EMIB, Foveros, Intel18A, Clearwater-Forest, Foveros-Direct, glass-substrate, 14A, High-NA-EUV, silicon-capacitors, Google-TPU-v8e, Q2-2026-earnings, Tesla-14A, HLFF, RAMP-C, Secure-Enclave, Rio-Rancho]
 created: 2026-04-24
-updated: 2026-08-25
+updated: 2026-09-01
 sources: [2026-08-24_intel-newsroom_hot-chips-2026-diamond-rapids-foveros-ucie, 2026-04-24_initial-survey, 2026-07-20_trendforce_tsmc-265b-arizona-intel-novalake, 2026-03-18_trendforce_intel-emib-malaysia, 2026-03-03_trendforce_intel-clearwater-forest, 2026-03-05_trendforce_intel-emib-billions, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-04-20_trendforce_intel-foundry-14a-equipment, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-01_semianalysis_cpus-back-datacenter-2026, 2026-04-10_3dincites_intel-gan-chiplet, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks, 2026-06-21_convergedigest_intel-emib-t-multi-die-packaging, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap, 2026-07-01_trendforce_terafab-intel-veteran-hire, 2026-04-07_tomshardware_intel-joins-terafab, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-01-30_tomshardware_intel-ai-chip-test-vehicle-emib-t, 2026-07-14_trendforce_intel-ireland-5b-intel3-europe, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-04_semieng_from-blueprint-intel-hlff, 2026-07-31_semieng_chip-week-149, 2026-08-13_trendforce_intel-memory-reentry-xbm-zam-saimemory]
 related:
   - wiki/entities/tsmc.md
@@ -297,3 +297,34 @@ Intel 首次完整公開 Diamond Rapids (Xeon 7, 2027) 多層封裝架構：
 - 32 Xe3P GPU cores；**350W**（氣冷相容）
 - 記憶體：**160–480GB LPDDR5X**（非 HBM，成本敏感推論定位）
 - 256 XMX engines + FP4/FP8；PCIe 形式
+
+## ⭐ 2026-09-01 更新：CFO 正式排除 DRAM 製造；EMIB-T 財務路線圖量化（Deutsche Bank 2026 Tech Conference）
+
+*Source: TrendForce 2026-08-31 → [[sources/2026-08-31_trendforce_intel-emib-t-stride-2029-dram-ruled-out]]*
+
+Intel CFO David Zinsner 於 2026-08-26 Deutsche Bank 技術大會補充了 CEO 暗示記憶體回歸的背景：
+
+**DRAM 製造正式排除**：
+- Zinsner 明確：Intel 不會回歸 DRAM 製造
+- ZAM / XHBM 是**系統架構方案**，非製造業務
+- Intel 與三大記憶體廠（Samsung / SK hynix / Micron）合作 AI 記憶體架構
+- CEO Tan 的「記憶體市場」暗示，CFO 解讀為架構創新而非產線建設
+
+**EMIB-T 財務路線圖（首次官方量化）**：
+
+| 時程 | 狀態 |
+|------|------|
+| 2H 2027 | 營收啟動（ramp） |
+| 2028 | 穩定貢獻（steady contributor） |
+| 2029 | 全速運轉（hits its stride） |
+
+- 毛利率目標：~**40%**
+- 營業利益率目標：~**30%**
+- 每客戶年商機：**數十億美元（several billion USD）**
+- 資本密度低於前端製造 → 高 ROIC 潛力
+
+**Clearwater Forest（Xeon 6+）EMIB 架構確認**：
+- **12 個 EMIB 磚塊**（最大量產 EMIB 封裝規模）
+- 三製程整合：**Intel 7（I/O）+ Intel 3（active base tile）+ 18A（compute）**
+
+**修正說明（DRAM）**：本頁 2026-08-14 條目記錄「CEO 暗示重返記憶體」，此 CFO 層級澄清確認：記憶體野心僅指系統架構，非 DRAM 製造回歸。兩者並不矛盾但須區分。

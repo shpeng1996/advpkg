@@ -3,7 +3,7 @@ title: "FOPLP — 扇出面板級封裝 / Fan-Out Panel-Level Packaging"
 category: technology
 tags: [fan-out, panel-level, TSMC, Samsung, ASE, Powertech, Innolux, CoPoS, InFO, cost-reduction]
 created: 2026-05-03
-updated: 2026-08-11
+updated: 2026-09-01
 sources: [2026-07-31_trendforce_ase-capex-record-10-5b-leap-foplp, 2025-09-12_trendforce_foplp-competitive-2025, 2026-04-13_trendforce_copos-pilot, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-21_3dincites_acm-wlp-plp-process-trends, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-15_digitimes_manz-310mm-foplp-ecd-equipment, 2026-06-13_digitimes_linkotech-foplp-rollout-traction, 2026-06-20_prnewswire_manz-asia-310mm-ecd, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_digitimes_tsmc-foplp-timeline-skepticism, 2026-07-06_trendforce_cfmee-plp2000-china-first-plp, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan]
 related:
   - wiki/technologies/copos.md
@@ -216,6 +216,35 @@ Silicon Box 是獨立 FOPLP 新創公司，其激進產能擴張計畫（10×，
 | Powertech | 2H26 試產；2027 量產 | 台灣 |
 | STMicro | 2026 Q3 試驗線（法國） | 歐洲 |
 | CFMEE | PLP 2000 資格認證通過 | 中國 |
+
+---
+
+## ⭐ 2026-09-01 更新：Powertech PiFO NT$70B FOPLP 投資——AMD+Broadcom 全額預訂至 2030
+
+*Source: TrendForce 2026-08-31 → [[sources/2026-08-31_trendforce_powertech-nt70b-foplp-pifo-ai-2027]]*
+
+Powertech 正式宣布 **NT$70 億（~US$2.2 億）** FOPLP 投資計畫，以自研 **PiFO（Panel-level integrated Fan-Out）** 技術為核心，目標 **2027 年中量產**，宣稱為「全球首座 AI 晶片面板級封裝設施」。
+
+**PiFO 技術架構**：
+- 在面板底部直接形成 RDL → 矽橋接晶片（silicon bridge dies）＋微凸塊連接 ASIC 與 HBM → 上方 RDL 形成 → ABF 基板接合完成封裝模組
+- 面板規格：**510×515mm 方形面板**（vs. TSMC CoPoS 310×310mm 圓形）
+- 每片面板產出：**45–90 個封裝單元**（依封裝尺寸）
+- 較 EMIB 優勢：無需在基板嵌入橋接晶片空腔，更大製程彈性
+
+**商業進展**：
+- **AMD 與 Broadcom** 已預訂 2027 年全部 PiFO 產能
+- Chairman D.K. Tsai 確認需求鎖定至 **2030 年**
+- **Broadcom JV**（新加坡廠）預計 **2028 年**投產
+- **CPO（共封裝光學）**：2027 年量產；光引擎（OE）：2026 年底小量出貨
+
+**產能規劃**：
+
+| 年份 | 產能 |
+|------|------|
+| 2026 | 1,000 片/月 |
+| 2028 | 5,000 片/月 |
+
+**wiki 含義**：Powertech PiFO 確立為 FOPLP AI 晶片封裝的第三條主要路線（並列 TSMC CoPoS / ASE FOPLP），且在量產時程上與 TSMC CoPoS 形成競爭（TSMC 2028-29 vs. Powertech 2027 中）。AMD + Broadcom 雙客戶鎖定代表 FOPLP 市場已有實質客戶需求支撐，不再只是技術預告。
 
 ---
 

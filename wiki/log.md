@@ -2932,3 +2932,24 @@ an（2028–2029 量產世代）為 CoPoS 最可能的首批量產客戶——�
   1. **HBM 2027 定價結構性上漲基礎確立**：DDR5 現貨一年漲 ~4× 造成 HBM 相對獲利落後 DDR5 約 40ppt，加上 NVIDIA 2027 伺服器漲價 >15% 為 HBM 供應商提供充裕談判空間——分析師預期 HBM ASP 2027 年漲幅達 50–79%。此定價動態是 SK Hynix 和 Samsung 未來 12 個月最重要的財務催化劑。
   2. **SK hynix Indiana HBM4E 量產時程精確化（3Q29）與供應緊張展望延至 2030**：CEO Kwak 明確表示供應緊張無清晰下行信號，主席 Chey 指出客戶 2027 年需求比 2026 年高出 60–100%——進一步確認 HBM 結構性短缺的持續性。另增 SK hynix-Kioxia 潛在合作訊號（NAND flash 市場），對 HBF 生態系有潛在影響。
   3. **HBF 競爭定位被 OXMIQ 量化分析根本性修正**：HBF 系統聚合頻寬僅為 HBM 的 0.6×，「4 HBF GPU = 8 HBM GPU」論述僅在容量受限（非頻寬受限）情境下成立。MoE 專家權重冷存儲和長上下文 KV cache 是最合適用例；NVIDIA/AMD 尚未承諾採用；vLLM 需大規模改寫。HBF 的市場化路徑比此前認為的更曲折。
+
+## [2026-09-01] collect | 每日自動蒐集 — Powertech PiFO FOPLP NT$70B；Intel EMIB-T 財務路線圖量化
+- 搜尋查詢數：6 組（TSMC CoWoS Sep 2026；HBM4/HBM5 Sep 2026；SemiEng Week#154；Intel EMIB Sep 2026；TrendForce Sep 1；heterogeneous integration Sep 2026）
+- 成功抓取：2 篇（articles/ 2 篇, papers/ 0 篇, reports/ 0 篇）
+- 失敗/跳過：多篇（SemiEng Week#154 尚未發布；TrendForce Sep 1 日前幾乎無新文；HBM/TSMC 搜尋結果均為已收錄舊文）
+- 學術代理：UNAVAILABLE ✗
+- 新增 raw 檔案：2 篇
+  - raw/articles/2026-08-31_trendforce_powertech-nt70b-foplp-pifo-panel-level-ai-chip-2027.md
+  - raw/articles/2026-08-31_trendforce_intel-emib-t-stride-2029-dram-ruled-out.md
+- 新增 wiki 頁面：3 頁
+  - wiki/entities/powertech.md（新建；PiFO FOPLP 技術、商業進展、客戶）
+  - wiki/sources/2026-08-31_trendforce_powertech-nt70b-foplp-pifo-ai-2027.md
+  - wiki/sources/2026-08-31_trendforce_intel-emib-t-stride-2029-dram-ruled-out.md
+- 更新 wiki 頁面：3 頁
+  - wiki/technologies/foplp.md（Powertech PiFO 2026-09-01 更新：NT$70B / AMD+Broadcom 預訂至 2030 / 技術架構 / 產能規劃）
+  - wiki/technologies/emib.md（Intel CFO EMIB-T 財務路線圖：2H27→2028→2029；40% GM / 30% OM；Clearwater Forest 12 tiles；DRAM 排除）
+  - wiki/entities/intel.md（CFO Zinsner Deutsche Bank 2026 Tech Conf 澄清：DRAM 製造排除；EMIB-T 量化財務指標；DRAM vs. 架構方案的區分）
+  - wiki/index.md（頁面數 418→421；來源數 373→375；Powertech 新增；Intel/EMIB/FOPLP 描述更新）
+- 主要新知識：
+  1. **Powertech PiFO FOPLP 確立為 AI 晶片面板級封裝第三極**：NT$70B 投資、2027 年中量產目標（宣稱超前 TSMC CoPoS）、AMD+Broadcom 全額預訂至 2030、新加坡 Broadcom JV 2028——FOPLP 市場從「技術預告」進入「客戶鎖定」階段，Powertech 正從記憶體封測廠向 AI FOPLP OSAT 戰略轉型。
+  2. **Intel EMIB-T 財務路線圖首次官方量化（CFO 層級）**：2H27 啟動→2028 穩定→2029 全速；40% 毛利率 / 30% 營業利益率目標；每客戶年商機「數十億美元」；低資本密度高 ROIC——這些數字首次讓市場可以客觀評估 Intel 先進封裝業務的財務吸引力，也解釋了 SK hynix 前 CEO 人才引進的戰略意義。DRAM 製造正式排除（CEO 暗示 vs. CFO 澄清的分歧獲解決）。
