@@ -2953,3 +2953,32 @@ an（2028–2029 量產世代）為 CoPoS 最可能的首批量產客戶——�
 - 主要新知識：
   1. **Powertech PiFO FOPLP 確立為 AI 晶片面板級封裝第三極**：NT$70B 投資、2027 年中量產目標（宣稱超前 TSMC CoPoS）、AMD+Broadcom 全額預訂至 2030、新加坡 Broadcom JV 2028——FOPLP 市場從「技術預告」進入「客戶鎖定」階段，Powertech 正從記憶體封測廠向 AI FOPLP OSAT 戰略轉型。
   2. **Intel EMIB-T 財務路線圖首次官方量化（CFO 層級）**：2H27 啟動→2028 穩定→2029 全速；40% 毛利率 / 30% 營業利益率目標；每客戶年商機「數十億美元」；低資本密度高 ROIC——這些數字首次讓市場可以客觀評估 Intel 先進封裝業務的財務吸引力，也解釋了 SK hynix 前 CEO 人才引進的戰略意義。DRAM 製造正式排除（CEO 暗示 vs. CFO 澄清的分歧獲解決）。
+
+## [2026-09-02] collect | 每日自動蒐集 — SEMICON Taiwan 2026：TSMC 50× 運算、Samsung HBM5、SK hynix Intel Base Die、矽光子量化
+- 搜尋查詢數：7 組（TSMC CoWoS Sep 2026；HBM4/HBM5 Sep 2026；SemiEng Week#154；Intel EMIB Sep 2026；FOPLP Sep 2026；heterogeneous integration Sep 2026；TrendForce Sep 1-2 新文）
+- 成功抓取：4 篇（articles/ 4 篇, papers/ 0 篇, reports/ 0 篇）
+- 失敗/跳過：多篇（SemiEng Week#154 尚未發布；FOPLP/heterogeneous integration 搜尋結果均為已收錄舊文；TrendForce 非關鍵 Sep 1 文章略過）
+- 學術代理：UNAVAILABLE ✗
+- 新增 raw 檔案：4 篇
+  - raw/articles/2026-08-31_trendforce_tsmc-soic-cowos-50x-compute-coupe-silicon-photonics.md
+  - raw/articles/2026-08-31_trendforce_skhynix-weighs-intel-hbm4e-base-die-tsmc-cost.md
+  - raw/articles/2026-09-01_trendforce_samsung-hbm5-2x-hbm4e-zhbm-8x-semicon-taiwan.md
+  - raw/articles/2026-09-01_semieng_chip-paper-roundup-sep1-3dic-optical-liquid-cooling.md
+- 新增 wiki 頁面：4 頁
+  - wiki/sources/2026-08-31_trendforce_tsmc-soic-cowos-50x-compute-coupe.md
+  - wiki/sources/2026-08-31_trendforce_skhynix-intel-hbm4e-base-die.md
+  - wiki/sources/2026-09-01_trendforce_samsung-hbm5-zhbm-semicon.md
+  - wiki/sources/2026-09-01_semieng_paper-roundup-sep1.md
+- 更新 wiki 頁面：8 頁
+  - wiki/entities/tsmc.md（50× 系統運算；COUPE 0.06dB；矽光子市場路線；CPO 2H26）
+  - wiki/entities/samsung.md（HBM5 2nm/20-Hi/2028；zHBM 8×；zNAND-O；CUBE 策略）
+  - wiki/entities/sk-hynix.md（Intel Foundry HBM4E base die 評估；TSMC 3-4× 成本；base die 路線圖）
+  - wiki/entities/intel.md（SK hynix HBM4E base die 潛在業務；生態系雙端切入策略）
+  - wiki/technologies/soic.md（N2P-on-N3P 2026→A14-on-A14 2029；50× 系統運算確認）
+  - wiki/technologies/copackaged-optics.md（COUPE 完整規格量化；矽光子 >50% 2027；熱調諧 overhead）
+  - wiki/technologies/hbm4.md（base die 供應鏈全景表；HBM5/zHBM 路線）
+  - wiki/index.md（頁面數 421→425；來源數 375→379；各實體/技術描述更新）
+- 主要新知識：
+  1. **TSMC COUPE 光學性能首次官方量化**：傳輸損耗 0.06 dB（vs 微凸塊 1.38 dB，減少 96%）；頻寬路線 3.2→12.8+ Tbps；矽光子 2027 年超越光收發器市場 50%——CPO 主流化時程比市場預期更快速，台灣生態系已具規模量產能力。TSMC SoIC+CoWoS 整合 → 50× 系統運算（2024→2029）為首次官方系統層級量化目標。
+  2. **HBM Base Die 供應鏈格局重塑**：SK hynix 傳評估 Intel Foundry 作為 HBM4E base die 替代供應商；TSMC HBM4 base die 成本比 SK hynix 自製貴 3–4 倍——揭示 HBM4 時代的新成本結構，Intel Foundry 可能從封裝（EMIB-T）延伸至 base die 代工，兩端切入 HBM 生態系。
+  3. **Samsung HBM5 規格官方首揭**：2nm base die（from 4nm）+ 20-Hi 堆疊 + 2028量產；zHBM 8× HBM4E 效能 / -75~-90% 熱阻（2029+）；CUBE 策略確立垂直整合方向——Samsung HBM 技術路線圖清晰度大幅提升，與 SK hynix 差異化路線（in-house base die vs 委外）對比鮮明。

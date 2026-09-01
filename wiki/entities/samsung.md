@@ -298,3 +298,28 @@ Samsung（Yonhap News 引述）官方預期：
 - NVIDIA 2027 年伺服器漲價 >15% 為 Samsung HBM 定價提供有利背景
 - 分析師預期 2027 年 HBM 合約 ASP 漲幅 **+50–79%**（UBS: +79%）
 - Samsung HBM4 良率已達 ~80%，可受益於更高定價
+
+### ⭐ 2026-09-01 更新：SEMICON Taiwan — HBM5 2× HBM4E；zHBM 8×；CUBE 策略；zNAND-O
+
+*Sources: [[sources/2026-09-01_trendforce_samsung-hbm5-zhbm-semicon]]*
+
+**HBM5 路線圖首次官方詳細揭示**（Jangseok Choi，VP Memory Product Planning，SEMICON Taiwan 2026-09-01）：
+- 效能：**2× HBM4E**；效能/W：**+20%**；熱阻：**-20%**
+- Base die：自研 **2nm 節點**（up from 4nm for HBM4/HBM4E）
+- DRAM 堆疊：**12-Hi / 16-Hi / 20-Hi** 三種規格
+- 量產目標：**約 2028**（HBM4E 之後）
+
+**zHBM 架構（2029+ 後）**：
+- 效能：**8× HBM4E**；效能/W：**3×**；熱阻：**-75%～-90%**
+- 根本架構轉變：記憶體**直接堆疊於處理器頂部**（vs 傳統並排），縮短數據傳輸距離
+- 備注：Hot Chips 2026 揭示 +70% 功率效率為 vs HBM4e 基準；SEMICON 揭示 3× 效能/W 為 vs HBM4E 基準
+
+**zNAND-O（2028 年樣品目標）**：
+- 10× DRAM bit 密度；7× NAND 讀取頻寬和功耗效率
+- 面向 LLM/GenAI 對 DRAM 速度 + NAND 容量的雙重需求
+
+**CUBE 策略框架**：
+- **C**apacity：垂直擴容，不擴大 PCB 足跡
+- **U**tilization：3D 記憶體架構最佳化（非僅增加堆疊層數）；縮短延遲
+- **B**andwidth：以垂直高速通道取代水平數據路徑
+- **E**fficiency：最小化每 bit 傳輸能耗；最大化效能/W

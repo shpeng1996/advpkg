@@ -491,3 +491,32 @@ SK hynix 的解法——**CPO（光子中介層架構）**：
 | 商業化進度 | 「早期商業化開始」（UVA Lee） | TSMC COUPE 2H26 量產確認 |
 
 SK hynix 的戰略聲明（AI Infra 負責人 Seunghoon Hong）：「**記憶體廠商正在從組件供應轉型為 AI 系統整體效能的戰略夥伴**，CPO 是核心技術。」
+
+### ⭐ 2026-08-31 更新：SEMICON Taiwan — COUPE 規格完整量化；矽光子市場路線
+
+*Sources: [[sources/2026-08-31_trendforce_tsmc-soic-cowos-50x-compute-coupe]], [[sources/2026-09-01_semieng_paper-roundup-sep1]]*
+
+**COUPE 技術規格（官方量化）**：
+| 指標 | COUPE（SoIC 接合） | 微凸塊 |
+|------|-------------------|--------|
+| 接合間距 | 2–4µm | — |
+| 傳輸損耗 @ 112G | 0.06 dB | 1.38 dB |
+| 延遲 | 10–20 ns | 更高 |
+
+**頻寬擴展路線**：
+- 通道速率：200G → 400G+
+- 通道數：16 → 128+
+- 總頻寬：**3.2 Tbps → 12.8+ Tbps**
+- WDM：1 → 4 → 8 → 16+ 波長
+
+**矽光子市場與 CPO 進展**（TSMC VP KC Hsu，SEMICON Taiwan 2026）：
+- 矽光子預期 **2027 年超越光收發器市場 50%**
+- 部分廠商 CPO 量產：**2H26** 啟動
+- 光收發器成長：2025 +25%，**2026 +50%**；100G+ 市場 2024 翻倍，2025 再增 +60%
+- 台灣矽晶圓生態系已具備規模光引擎生產能力
+- 剩餘挑戰：雷射光源、光纖、光纖接頭、產品測試
+
+**熱-光耦合新研究**（Georgia Tech，SemiEng Sep 1 Paper Roundup）：
+- 晶圓級光互連在 LLM MoE 訓練場景中的熱調諧 overhead 被具體量化為新挑戰
+- 鐵電調諧（ferroelectric tuning）確認為有效 mitigation 策略
+- → 強化 CPO 需要熱-光共設計（thermal-optical co-design）的論述

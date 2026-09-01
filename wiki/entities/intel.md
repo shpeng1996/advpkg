@@ -328,3 +328,12 @@ Intel CFO David Zinsner 於 2026-08-26 Deutsche Bank 技術大會補充了 CEO �
 - 三製程整合：**Intel 7（I/O）+ Intel 3（active base tile）+ 18A（compute）**
 
 **修正說明（DRAM）**：本頁 2026-08-14 條目記錄「CEO 暗示重返記憶體」，此 CFO 層級澄清確認：記憶體野心僅指系統架構，非 DRAM 製造回歸。兩者並不矛盾但須區分。
+
+### ⭐ 2026-08-31 更新：SK hynix 傳評估 Intel Foundry 作為 HBM4E Base Die 供應商
+
+*Sources: [[sources/2026-08-31_trendforce_skhynix-intel-hbm4e-base-die]]*
+
+**HBM Base Die 潛在新業務**（傳聞；SK hynix 官方未正式確認）：
+- SK hynix 據傳評估 Intel Foundry 生產 HBM4E base die，以分散 TSMC 依賴並降低成本
+- 分析師指出：若 SK hynix 確認，Samsung 和 Micron 亦可能跟進評估 → Intel IFS 潛在橫跨全三家記憶體廠的 HBM base die 業務
+- 戰略協同：EMIB-T 先進封裝（晶片外部封裝）+ HBM base die 代工（晶片內部） → 兩端切入 HBM 生態系

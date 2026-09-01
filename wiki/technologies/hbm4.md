@@ -1013,3 +1013,28 @@ SK hynix Indiana 廠正式數據（TrendForce 2026-08-28）：HBM4E 量產 **202
 #### HBF 競爭定位澄清
 
 Hot Chips 2026 OXMIQ Labs 分析確認：HBF 在系統聚合層面僅達 HBM **0.6× 頻寬**（HBM-only 1,584 TB/s vs HBF-only 922 TB/s @ 72-GPU rack），HBF **不構成 HBM 主流替代威脅**，定位為 MoE 專家權重冷存儲 / 長上下文 KV cache 的**容量補充層**。
+
+### ⭐ 2026-08-31/09-01 更新：Base Die 供應鏈全景；Samsung HBM5 路線圖
+
+*Sources: [[sources/2026-08-31_trendforce_skhynix-intel-hbm4e-base-die]], [[sources/2026-09-01_trendforce_samsung-hbm5-zhbm-semicon]]*
+
+**HBM Base Die 供應鏈全景（2026-08-31 確立）**：
+| 廠商 | HBM3E | HBM4 | HBM4E | HBM5 |
+|------|-------|------|-------|------|
+| SK hynix | 自製 | TSMC 12nm | 評估 Intel Foundry（傳聞） | — |
+| Samsung | 自製 | 自製 4nm | 自製 | 自製 2nm（目標） |
+| Micron | — | TSMC | TSMC | — |
+
+**TSMC HBM4 Base Die 成本壓力**：
+- SK hynix 估計：TSMC HBM4 base die 成本 = SK hynix core die（1b 製程）的 **3–4 倍**
+- LTA 高佔比制約成本轉嫁；促使 SK hynix 評估多元化（Intel Foundry）
+
+**Samsung HBM5 規格（SEMICON Taiwan 2026-09-01）**：
+- Base die：**2nm**（Samsung in-house）
+- 效能：**2× HBM4E**；效能/W：**+20%**；熱阻：**-20%**
+- 堆疊層數：12/16/**20-Hi**
+- 量產目標：**約 2028**
+
+**HBM5 之後：zHBM（2029+）**：
+- Samsung zHBM：**8× HBM4E 效能**；**3× 效能/W**；**-75~-90% 熱阻**
+- 記憶體直接堆疊於處理器頂部（On-Package xPU 整合）

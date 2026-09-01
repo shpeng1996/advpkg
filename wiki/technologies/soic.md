@@ -139,3 +139,16 @@ SoIC 常與 CoWoS 組合：邏輯晶片先透過 SoIC 3D 堆疊，再整合於 C
 - A14-to-A14 SoIC 的 1.8× I/O 密度增益首次量化（Prior: N2-to-N2 SoIC 為基準）
 
 *Source: wiki/sources/2026-08-11_trendforce_tsmc-cowos-5-5-reticle-99pct-yield-abf.md*
+
+### ⭐ 2026-08-31 更新：SEMICON Taiwan — SoIC 50× 系統運算路線圖量化
+
+*Sources: [[sources/2026-08-31_trendforce_tsmc-soic-cowos-50x-compute-coupe]]*
+
+**系統層級運算目標**（TSMC April Li，SEMICON Taiwan 2026）：
+- SoIC + CoWoS 整合 → 2029 年系統整體運算效能 **50× vs 2024 基準**（確認並強化既有路線圖）
+- 路線：**N2P-on-N3P（2026）→ A14-on-A14（2029）**，互連間距 **4.5µm**
+- AI 需求每年 5× 成長；異質整合是唯一突破路徑
+
+**與 COUPE 整合**：
+- SoIC 接合技術用於整合 EIC + PIC（COUPE 平台基礎）
+- 光電共封裝路線依賴 SoIC 的精確接合能力

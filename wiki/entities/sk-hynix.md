@@ -380,3 +380,22 @@ SK hynix 持有 NVIDIA Vera Rubin HBM 訂單約 **70%**（Jan 2026 報導）；�
 **HBM 定價受益**：
 - 2027 年 HBM 合約價預期漲幅 **>50%**（Bloter）至 **+79% YoY**（UBS）
 - NVIDIA 伺服器漲價 >15% 為 HBM 供應商提供更大議價空間
+
+### ⭐ 2026-08-31 更新：評估 Intel Foundry 作為 HBM4E Base Die 供應商；TSMC 成本壓力
+
+*Sources: [[sources/2026-08-31_trendforce_skhynix-intel-hbm4e-base-die]]*
+
+**HBM Base Die 供應鏈多元化評估**（Herald Business 報導；SK hynix 官方表示「難以確認細節，部分報導不實」）：
+- SK hynix 現行 HBM4 base die 委外 **TSMC 12nm-class** 製程生產
+- TSMC HBM4 base die 成本估計為 SK hynix 自身 core die（1b 製程）的 **3–4 倍**；HBM4E 時代差距預計擴大
+- SK hynix 評估 **Intel Foundry** 作為 HBM4E base die 替代或補充來源
+- 驅動因素：LTA 高佔比使成本轉嫁困難；供應分散可降低成本並提升供應穩定性
+
+**HBM Base Die 路線圖回顧**：
+- HBM3E：**自製 in-house**
+- HBM4（量產中）：**TSMC 12nm-class** 委外
+- HBM4E：**評估 Intel Foundry**（傳聞；未確認）
+
+**Industry Implication**：
+- 若 SK hynix 確認，Samsung/Micron 亦可能評估 Intel Foundry → Intel IFS 潛在重要新業務
+- 強化 HBM base die 成為 Intel Foundry 的戰略切入點（與 EMIB-T 封裝業務協同）
