@@ -2982,3 +2982,31 @@ an（2028–2029 量產世代）為 CoPoS 最可能的首批量產客戶——�
   1. **TSMC COUPE 光學性能首次官方量化**：傳輸損耗 0.06 dB（vs 微凸塊 1.38 dB，減少 96%）；頻寬路線 3.2→12.8+ Tbps；矽光子 2027 年超越光收發器市場 50%——CPO 主流化時程比市場預期更快速，台灣生態系已具規模量產能力。TSMC SoIC+CoWoS 整合 → 50× 系統運算（2024→2029）為首次官方系統層級量化目標。
   2. **HBM Base Die 供應鏈格局重塑**：SK hynix 傳評估 Intel Foundry 作為 HBM4E base die 替代供應商；TSMC HBM4 base die 成本比 SK hynix 自製貴 3–4 倍——揭示 HBM4 時代的新成本結構，Intel Foundry 可能從封裝（EMIB-T）延伸至 base die 代工，兩端切入 HBM 生態系。
   3. **Samsung HBM5 規格官方首揭**：2nm base die（from 4nm）+ 20-Hi 堆疊 + 2028量產；zHBM 8× HBM4E 效能 / -75~-90% 熱阻（2029+）；CUBE 策略確立垂直整合方向——Samsung HBM 技術路線圖清晰度大幅提升，與 SK hynix 差異化路線（in-house base die vs 委外）對比鮮明。
+
+## [2026-09-03] collect | 每日自動蒐集 — NVIDIA-MediaTek XPU 生態系、TSMC 微通道冷卻、混合接合 2026 現況深度分析、Google 記憶體牆量化
+- 搜尋查詢數：7 組（TSMC CoWoS Sep 2026；HBM4/HBM5 Sep 2026；SemiEng Week Review；Intel EMIB Sep 2026；FOPLP Sep 2026；hybrid bonding 2026 roadmap；CPO/UCIe Sep 2026）
+- 成功抓取：4 篇（articles/ 4 篇, papers/ 0 篇, reports/ 0 篇）
+- 失敗/跳過：多篇（SemiEng Week#154 尚未發布；FOPLP/EMIB 搜尋結果均為已收錄舊文；TrendForce 非封裝相關文章略過）
+- 學術代理：UNAVAILABLE ✗
+- 新增 raw 檔案：4 篇
+  - raw/articles/2026-09-01_trendforce_nvidia-mediatek-35b-xpu-ecosystem-ase-packaging.md
+  - raw/articles/2026-09-02_trendforce_tsmc-microchannel-cooling-ai-power-6x-five-years.md
+  - raw/articles/2026-09-02_tomshardware_hybrid-bonding-roadmap-2026-tsmc-intel-hbm-delay.md
+  - raw/articles/2026-09-02_trendforce_google-memory-75pct-server-bom-tpu-memory-wall.md
+- 新增 wiki 頁面：4 頁
+  - wiki/sources/2026-09-01_trendforce_nvidia-mediatek-xpu-ecosystem.md
+  - wiki/sources/2026-09-02_trendforce_tsmc-microchannel-cooling-6x-power.md
+  - wiki/sources/2026-09-02_tomshardware_hybrid-bonding-2026-state-hbm-delay.md
+  - wiki/sources/2026-09-02_trendforce_google-memory-wall-75pct-bom.md
+- 更新 wiki 頁面：7 頁
+  - wiki/entities/nvidia.md（NVIDIA $3.5B MediaTek ECB；NVLink Fusion XPU 生態系；「收費站」架構戰略）
+  - wiki/entities/ase-group.md（ASE+Sigurd 確認為 NVIDIA-MediaTek XPU 封裝生態系受益者）
+  - wiki/entities/tsmc.md（James Chen SEMICON Taiwan：CoWoS 14× 光罩 2029；封裝功耗 600W→4,100W；微通道冷卻路線圖；熱共優化 -40% 熱阻）
+  - wiki/technologies/hybrid-bonding.md（JEDEC 775µm 機制詳解；ECTC 2026 W2W/D2W 最新數據；Besi Kinex 吞吐量；Adeia 專利訴訟 AMD）
+  - wiki/technologies/cowos.md（14× 光罩 2029；4,100W 封裝功耗；微通道冷卻整合）
+  - wiki/concepts/thermal-management.md（TSMC 四層熱管理技術路徑；量化功耗驅動因素；供應鏈影響）
+  - wiki/index.md（頁面數 425→429；來源數 379→383；TSMC/NVIDIA/ASE/CoWoS/hybrid-bonding 描述更新）
+- 主要新知識：
+  1. **TSMC 2029 封裝路線圖首次完整量化**：CoWoS 封裝尺寸 3.3×→14× 光罩、封裝功耗 600W→4,100W、HBM 頻寬 34× 增長——這組數字首次讓行業可以量化評估下一代先進封裝的熱功率挑戰，直接解釋了為何微通道冷卻從「探索性技術」被提升至「TSMC R&D 路線圖」。
+  2. **混合接合 HBM 延後的具體機制終獲官方報導確認**：Tom's Hardware 深度分析明確說明 JEDEC 775µm 決定（2026 年初）允許 16-Hi HBM4 繼續使用 MR-MUF microbump（10µm pitch 不具 HB 經濟效益），同時補充了 Adeia 對 AMD 的專利訴訟（10 件專利，3D V-Cache）——後者為 wiki 首次記錄，建立 IP 訴訟追蹤基準。
+  3. **NVIDIA 以「生態系標準鎖定」取代「硬體銷售」的戰略轉型確立**：$3.5B MediaTek ECB 投資確立 NVLink Fusion 作為 XPU 生態系共通架構；即使超大規模業者自研 GPU 替代品，仍須依賴 NVIDIA 互連與機架架構——ASE、Sigurd 被點名為先進封裝直接受益者。

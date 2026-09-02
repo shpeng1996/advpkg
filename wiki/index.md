@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-09-02
-**頁面總數 Total Pages**：425
-**原始來源數 Sources**：379
+**更新時間 Updated**：2026-09-03
+**頁面總數 Total Pages**：429
+**原始來源數 Sources**：383
 
 ---
 
@@ -15,17 +15,17 @@
 ## 實體 Entities（公司、組織）
 
 - [[entities/powertech]] — Powertech Technology（力成科技）；全球最大合約記憶體封測廠；**PiFO FOPLP NT$70B 投資（2026-08-31）；2027 年中量產；AMD+Broadcom 全額預訂至 2030；新加坡 Broadcom JV；CPO 2027**⭐新增
-- [[entities/tsmc]] — 台積電；全球最大晶圓代工廠；CoWoS/SoIC 技術領導者；**SoIC+CoWoS 50× 系統運算目標（2024→2029）；COUPE 0.06dB 損耗 @ 112G；矽光子 >50% 光收發器市場 2027；CPO 量產 2H26**（SEMICON Taiwan 2026-08-31）；Arizona 1H26 獲利 NT$36B（+663% YoY）；VIS Fab 3 火災（2026-08-27）⭐更新
+- [[entities/tsmc]] — 台積電；全球最大晶圓代工廠；CoWoS/SoIC 技術領導者；**SoIC+CoWoS 50× 系統運算目標（2024→2029）；COUPE 0.06dB 損耗 @ 112G；矽光子 >50% 光收發器市場 2027；CPO 量產 2H26**（SEMICON Taiwan 2026-08-31）；**封裝功耗 600W→4,100W（2024→2029）；微通道冷卻納入 R&D 路線圖；CoWoS 14× 光罩 2029**（2026-09-02）；Arizona 1H26 獲利 NT$36B（+663% YoY）⭐更新
 - [[entities/intel]] — 英特爾；IDM；**潛在 SK hynix HBM4E base die 供應商（傳聞）；若確認可延伸至 Samsung/Micron——HBM 生態系雙端切入（EMIB-T 封裝 + base die 代工）**（2026-08-31）；EMIB-T 2H27→2028→2029 三段時程；40% GM / 30% OM；Clearwater Forest 12 EMIB tiles；DRAM 製造排除⭐更新
 - [[entities/samsung]] — 三星；IDM + Foundry + Memory；**SEMICON Taiwan：HBM5 2× HBM4E / 2nm base die / 20-Hi 堆疊 / 2028量產；zHBM 8× HBM4E / 3× PPA/W / 2029+；zNAND-O 2028樣品；CUBE策略**（2026-09-01）；溫陽 HBM 廠 KRW 6T 2026-09 動工；HBM4 良率~80%；GlaSSEM JV；GAIA 4nm PIM；OpenAI Jalapeño HBM4 供應⭐更新
 - [[entities/sk-hynix]] — SK Hynix；HBM 市場領導者；**評估 Intel Foundry 作為 HBM4E base die 供應商（傳聞）；TSMC HBM4 base die 成本 3–4× 更高；HBM4 使用 TSMC 12nm-class base die**（2026-08-31）；Nature Electronics CPO 路線圖；Indiana HBM4E 量產 3Q29；Hot Chips 2026：混合接合延後至 HBM5；EMIB 列入 2.5D 路線圖；Vera Rubin ~70% HBM 份額⭐更新
 - [[entities/asmpt]] — ASMPT Limited；TCB/混合接合/Photonics-CPO 設備領導廠商；Q1 2026 訂單 27M +71.6% YoY；NEXX 出售給 AMAT⭐新增
-- [[entities/ase-group]] — ASE Group；全球最大 OSAT；CoWoP 面板封裝；**SPIL 斗六廠破土（TWD 100 億/2028 一期）；2026 CapEx $10.5B；2027 LEAP 目標 $7.5B+；FOPLP Q1 2027**；AMD EFB 合作；**COO 吳田玉明確表態 CoWoS/EMIB 不互斥；可承接 EMIB-T 組裝測試業務**（2026-08-19）⭐更新
+- [[entities/ase-group]] — ASE Group；全球最大 OSAT；CoWoP 面板封裝；**SPIL 斗六廠破土（TWD 100 億/2028 一期）；2026 CapEx $10.5B；2027 LEAP 目標 $7.5B+；FOPLP Q1 2027**；AMD EFB 合作；**COO 吳田玉明確表態 CoWoS/EMIB 不互斥；Sigurd 並列為 NVIDIA-MediaTek XPU 生態系封裝受益者**（2026-09-01）⭐更新
 - [[entities/amkor]] — Amkor；全球第二大 OSAT；Arizona $70 億廠（2028 投產）；Intel EMIB 外包夥伴⭐新增
 - [[entities/ev-group]] — EV Group（EVG）；混合接合設備領導者；ECTC 2025 展示無光罩微影與層轉移⭐新增
 - [[entities/besi]] — BE Semiconductor（Besi）；D2W 混合接合設備主供應商；Datacon 8800 CHAMEO；Kinex 平台（Applied Materials 持股 9%）⭐新增
 - [[entities/tel]] — Tokyo Electron（TEL）；RDL 製程設備領導者；Kumamoto 研發基地（¥470 億，2026 春）；Eteris 合資（與 AMAT）⭐新增
-- [[entities/nvidia]] — NVIDIA；Fabless AI GPU 龍頭；CoWoS + SoIC 最大需求方；Rubin Ultra NVL576（100 PFLOPS）；**NVHBM 量化規格確認：+30% BW / -15% 功耗 / +25% XPU 面積（vs HBM4E）；Feynman 2028 首平台；供應承諾 $279B；Q2 FY27 $96.2B**（2026-08-27）；SK Hynix 多年期夥伴；評估 Intel 18A 4晶粒 Feynman（2026-06-09）；**2027 伺服器漲價 >15%；HBM 毛利緩衝 75-80%；Rubin Ultra 4配置 HBM 評估**（2026-08-31）⭐更新
+- [[entities/nvidia]] — NVIDIA；Fabless AI GPU 龍頭；CoWoS + SoIC 最大需求方；Rubin Ultra NVL576（100 PFLOPS）；**NVHBM 量化規格確認：+30% BW / -15% 功耗 / +25% XPU 面積（vs HBM4E）；Feynman 2028 首平台；供應承諾 $279B；Q2 FY27 $96.2B**（2026-08-27）；**$3.5B MediaTek ECB 投資；NVLink Fusion XPU 生態系；ASE+Sigurd 封裝受益**（2026-09-01）⭐更新
 - [[entities/micron]] — Micron；美國記憶體 IDM；HBM4 >11 Gbps（Q2'26 HVM）；**廣島廠 ¥1.5T 擴建動土（2026-07-04）、1γ DRAM + HBM、設備 2H28**；Virginia HBM 封裝廠；$200B 美國投資計畫；**資料中心 DRAM 需求滿足率 <50%（2026-08-10 KeyBanc）；2027 更緊俏；美製溢價納入 SCA 定價**；**Hot Chips 2026：HBM 矽面積 3× DDR5（每代遞增）；記憶體牆惡化論述；Meta Llama3 17.2% 中斷歸因 HBM；HBM4E logic die = TSMC 正式確認；「架構圍繞熱管理」方法論轉變**（2026-08-26）⭐更新
 - [[entities/qualcomm]] — Qualcomm；Fabless SoC；**HBC（High Bandwidth Compute）：3D-LPDDR+有機基板架構，6× BW/W（宣稱），直接挑戰 HBM+CoWoS 路線**（2026-08-29）⭐新增
 - [[entities/amd]] — AMD；Fabless CPU/GPU；Venice 首採 EMIB 等效封裝；MI355X（N3P，2 I/O die）；MI450 aLSI 測試載具；**MI455X Hot Chips 2026：8×N2 XCD（修正）+ CoWoS-L + 12×HBM4 432GB/23.3TB/s / 40.26 PFLOPS；Helios 機架 2.9EF**（2026-08-28）⭐更新
@@ -39,10 +39,10 @@
 
 ## 技術 Technologies
 
-- [[technologies/cowos]] — CoWoS（Chip-on-Wafer-on-Substrate）；TSMC 2.5D 旗艦封裝；**5.5× 良率達 99%（OCP APAC Summit 2026-08-11）；10 封裝設施；ABF 基板成 AI 第二瓶頸；開發週期縮至 1 年**；OSAT 補位生態（ASE CoWoP、Amkor FOCoS）；**訂單全滿，後端封裝溢出至 Intel Malaysia（~US$1.3B HBM）；TSMC CEO 歡迎競爭對手增加封裝產能**（2026-08-19）⭐更新
+- [[technologies/cowos]] — CoWoS（Chip-on-Wafer-on-Substrate）；TSMC 2.5D 旗艦封裝；**5.5× 良率達 99%（OCP APAC Summit 2026-08-11）；10 封裝設施；ABF 基板成 AI 第二瓶頸**；OSAT 補位生態（ASE CoWoP、Amkor FOCoS）；**封裝尺寸 3.3×→14× 光罩（2024→2029）；封裝功耗 600W→4,100W；微通道冷卻整合路線**（2026-09-02）⭐更新
 - [[technologies/copos]] — CoPoS（Chip-on-Panel-on-Substrate）；TSMC 面板級封裝；310×310mm 面板；玻璃核心基板列為下一里程碑（2030+）；TGV 障礙具體化（2026-06-18）⭐更新
 - [[technologies/soic]] — SoIC（System on Integrated Chips）；TSMC 3D 堆疊；SoIC-X 混合接合（**6µm 2025 量產→4.5µm 2029；A14-to-A14 SoIC 2029年 1.8×I/O 密度**）；**SEMICON Taiwan：N2P-on-N3P 2026 → A14-on-A14 2029；SoIC+CoWoS = 50× 系統運算 2029**（2026-08-31）⭐更新
-- [[technologies/hybrid-bonding]] — 混合接合（Cu-Cu）；W2W/D2W/D2D 三情境框架（ECTC 2025）；目標 1M/mm²；**翹曲管理確認為 HVM 製程橫跨全流程的新約束**（2026-07-30）；**Hot Chips 2026：HBM4E 正式跳過；HBM5 2029-2030；SK hynix 首批 HB 設備訂單 ~KRW 200 億**（2026-08-26）；**d-Matrix F2F 36µm 接合三段式比較框架確立（0.37 pJ/bit 量測值，DRAM 兼作中介層）**（2026-08-27）⭐更新
+- [[technologies/hybrid-bonding]] — 混合接合（Cu-Cu）；W2W/D2W/D2D 三情境框架；TSMC SoIC 6µm 量產；Intel Foveros Direct Clearwater Forest（9µm HVM）；**JEDEC 775µm 決定：HBM4 繼續用 MR-MUF microbump；HBM HB 延後至 HBM4E/HBM5（2027 年底起）；Adeia 專利訴訟 AMD；Besi Kinex €476M 路徑；ASMPT-EVG / Hanwha Semitech；Imec/EVG W2W 200nm（ECTC 2026）**（2026-09-02）⭐更新
 - [[technologies/hbm4]] — HBM4；JEDEC JESD270-4；**Base Die 供應鏈全景（SK hynix→TSMC 12nm / Samsung→4nm 自製 / Micron→TSMC；SK hynix 評估 Intel Foundry for HBM4E）；TSMC base die 成本 3–4× 更高；Samsung HBM5 路線（2nm / 20-Hi / 2028）；zHBM 8× HBM4E 效能（2029+）**（2026-08-31/09-01）；AMD MI455X 12 stacks；NVIDIA 三廠認證；775µm 物理上限⭐更新
 - [[technologies/ucie]] — UCIe；Chiplet 互連標準；UCIe 3.0：64GT/s quarter-rate、BER 差異化、Arm CHI 映射、L2 深度睡眠（2026-06-18）；**Wildcat Lake = Intel 首款 UCIe 處理器（UCIe 主流化里程碑）；Diamond Rapids UCIe-S 用於 FHT 互連**（2026-08-24）；**Wildcat Lake 確立 UCIe 封裝降本新用例：以 UCIe + 有機 MCP 取代 Foveros base die（效能 vs 成本雙軌確立）**（2026-08-26）；**Arm AGI：UCIe 16×16@32GT/s = 2TB/s D2D，目前最大量產 UCIe 頻寬案例**（2026-08-28）⭐更新
 - [[technologies/copackaged-optics]] — TSMC-COUPE™ 共封裝光學元件（CPO）；**COUPE 量化：2–4µm 接合、0.06dB @ 112G（vs 微凸塊 1.38dB）、3.2→12.8+ Tbps、WDM 1→16+；矽光子 >50% 光收發器市場 2027；CPO 量產 2H26；熱調諧 overhead 新挑戰（Georgia Tech）**（2026-08-31）；SK hynix CPO 路線圖⭐更新
@@ -66,6 +66,10 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-09-02_tomshardware_hybrid-bonding-2026-state-hbm-delay]] — Tom's Hardware：**混合接合 2026 現況深度分析——TSMC 6µm SoIC 量產；Intel Foveros Direct Clearwater Forest；JEDEC 775µm 使 HBM4 延續 microbump；HBM HB 延至 HBM4E/HBM5；Besi Kinex €476M 路徑；Adeia 專利訴訟 AMD**（2026-09-02）⭐新增
+- [[sources/2026-09-02_trendforce_tsmc-microchannel-cooling-6x-power]] — TrendForce：**TSMC James Chen SEMICON Taiwan：AI 系統功耗 5 年 6×；CoWoS 3.3×→14× 光罩；封裝功耗 600W→4,100W；微通道冷卻納入 R&D 路線圖；熱共優化 -40% 熱阻**（2026-09-02）⭐新增
+- [[sources/2026-09-02_trendforce_google-memory-wall-75pct-bom]] — TrendForce：**Google SEMICON Taiwan：記憶體佔 AI 伺服器 BOM >75%；TPU 8i/8t 雙軌；TurboQuant 6× KV 壓縮；DRAM+NAND 佔 CSP CapEx 47%→68%（2026→2027）**（2026-09-02）⭐新增
+- [[sources/2026-09-01_trendforce_nvidia-mediatek-xpu-ecosystem]] — TrendForce：**NVIDIA $3.5B MediaTek ECB；首次投資台灣上市公司；NVLink Fusion XPU 生態系；ASE+Sigurd 先進封裝受益者；Broadcom/Marvell 競爭格局**（2026-09-01）⭐新增
 - [[sources/2026-09-01_trendforce_samsung-hbm5-zhbm-semicon]] — TrendForce：**Samsung SEMICON Taiwan：HBM5 2× HBM4E / 2nm base die / 20-Hi / 2028量產；zHBM 8× / 3× PPA/W / 2029+；zNAND-O；CUBE 策略**（2026-09-01）⭐新增
 - [[sources/2026-08-31_trendforce_skhynix-intel-hbm4e-base-die]] — TrendForce：**SK hynix 評估 Intel Foundry 作為 HBM4E base die 供應商；TSMC 成本 3–4×；base die 供應鏈三廠策略全景**（2026-08-31）⭐新增
 - [[sources/2026-08-31_trendforce_tsmc-soic-cowos-50x-compute-coupe]] — TrendForce：**TSMC SoIC+CoWoS 50× 系統運算 2024→2029；COUPE 0.06dB @ 112G；3.2→12.8+ Tbps；矽光子 >50% 2027；CPO 量產 2H26**（2026-08-31）⭐新增

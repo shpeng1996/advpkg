@@ -184,3 +184,17 @@ related:
 | 8-Hi HBM4 | **評估中** |
 
 原因：12-Hi HBM4e 良率爬坡不確定性 + DRAM 供應緊張至 2027。HBM4 備案若成真，對 Samsung/SK Hynix HBM4 出貨量有上行影響。
+
+---
+
+### ⭐ 2026-09-01 更新：$3.5B MediaTek 投資——XPU 生態系「收費站」戰略 / NVLink Fusion 平台
+
+*Source: [[sources/2026-09-01_trendforce_nvidia-mediatek-xpu-ecosystem]]*
+
+**NVIDIA 首次投資台灣上市公司**：以 US$3.5B 認購 MediaTek US$3.9B ECB（5 年期、0% 票息、新加坡交易所上市），Alphabet 也參與。轉換價 NT$4,513.75/股（溢價 15%），最大股權稀釋 1.67%。
+
+**戰略邏輯——「AI 架構收費站」**：
+- 合作模式：「NVIDIA GPU + MediaTek SoC」→「NVIDIA AI 平台 + MediaTek 客製化 XPU」
+- MediaTek 提供 **NVLink Fusion 平台**（NVLink Fusion Chiplet + NVLink-C2C + NVHBM）作為超大規模業者開發客製加速器的設計基礎
+- Amazon 已採用類似架構（Trainium 自研晶片 + NVIDIA 互連）；即使超大規模業者以自研 XPU 取代 NVIDIA GPU，仍須依賴 NVIDIA 互連、網路與機架基礎設施
+- 先進封裝直接受益：**ASE** 與 **Sigurd Microelectronics**（與 NVIDIA/MediaTek/TSMC/Google 均有長期合作）

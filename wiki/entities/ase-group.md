@@ -130,3 +130,11 @@ ASE 是全球最大的 OSAT，在 TSMC CoWoS 產能緊缺背景下，CoWoP 技�
 - **兩年累計投資**：ASE/SPIL 合計 **TWD 200 億**，另布局台中、彰化、新竹、台南等廠區
 - **增資**：SPIL 發行 **8.097 億新股**，籌資 **TWD 161.94 億**，主要用於擴充 AI 晶片封裝測試產能（外幣融資需求）
 - **AMD EFB 合作再確認**：SPIL 與 ASE、AMD 共同開發次世代晶圓型 2.5D 橋接互連（EFB）
+
+---
+
+### ⭐ 2026-09-03 更新：NVIDIA-MediaTek XPU 生態系封裝受益者確認
+
+*Source: [[sources/2026-09-01_trendforce_nvidia-mediatek-xpu-ecosystem]]*
+
+TrendForce（引用經濟日報）點名 **ASE** 與 **Sigurd Microelectronics** 為 NVIDIA $3.5B MediaTek 投資後的**先進封裝直接受益者**——兩家廠商均與 NVIDIA、MediaTek、TSMC、Google 有長期封裝合作關係。MediaTek XPU 量產後，封裝業務預期進一步集中於此生態系。

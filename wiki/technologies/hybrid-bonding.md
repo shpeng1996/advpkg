@@ -790,3 +790,38 @@ AMD 在 Hot Chips 2026（2026-08-25）官方披露 **Instinct MI455X（CDNA 5）
 2. **混合接合量產最大規模確認**：MI455X 以 **8 個 N2 XCD** 進行 3D HB 堆疊，是目前 wiki 中確認混合接合使用最多晶片的單一封裝實例（超過 Intel Foveros Direct 3D 的 HB 規模）——AI GPU 推動混合接合量產成熟的核心驅動力進一步確認。
 
 3. **N2-on-N3P 的混合接合節點組合**：首次確認「更先進製程（N2）計算晶片透過混合接合堆疊於次先進製程（N3P）結構晶片」——與 TSMC SoIC-X 路線圖（2025 量產 6µm；目標 2029 量產 4.5µm）完全吻合。
+
+---
+
+### ⭐ 2026-09-02 更新：JEDEC 775µm 機制詳解、Adeia 專利訴訟、設備吞吐量數據（Tom's Hardware 深度分析）
+
+*Source: [[sources/2026-09-02_tomshardware_hybrid-bonding-2026-state-hbm-delay]]*
+
+#### JEDEC 775µm 決定的具體機制
+
+2026 年初 JEDEC 將 HBM 封裝高度限制從 720µm 提高至 **775µm**（+55µm）。這 55µm 的額外空間使 **16-Hi HBM4**（每層晶片可更厚）仍可使用 MR-MUF 微凸塊技術組裝，不需混合接合——因為 HBM4 pad pitch（~10µm）在此情況下移至混合接合尚不具經濟效益。SK hynix 確認繼續以 **MR-MUF** 作為 16-Hi HBM4 主技術，12-Hi 混合接合樣本持續驗證供後代使用。
+
+#### W2W vs. D2W 技術對比（ECTC 2026 最新數據）
+
+| 方法 | 最佳 Pitch（2026） | 特點 |
+|------|-----------------|------|
+| W2W（Imec/EVG） | **200nm** | 最密，每批次整片晶圓對準，需同尺寸 die |
+| D2W（CEA-Leti） | **1µm** | 支援已知良品晶片選取、不同尺寸/節點混合 |
+| TSMC SoIC（量產） | **6µm** | HVM，CoWoS 生態整合 |
+
+表面平坦度要求：高度差 ≤0.2nm；銅墊需低於介電層幾 nm；任何 <1µm 的顆粒均可能造成多墊空洞。
+
+#### 設備生態最新數據
+
+| 廠商 | 平台 | 吞吐量 | 備注 |
+|------|------|--------|------|
+| Applied Materials + Besi | **Kinex** | ~1,600–2,000 晶片/小時 | 首款完整 D2W 整合系統 |
+| Besi Chameo | — | 目標下一代 50nm 對準精度 | — |
+| ASMPT + EV Group | 合作開發 | — | — |
+| Hanwha Semitech | — | — | SK hynix HBM 2027 供應 |
+
+**Besi 財務路線**：HB 設備營收 €36M（2023）→ 路徑 €476M（2026）；H2 2025 訂單 +60% vs H1（HBM4 產線備料啟動）。Applied Materials 持有 Besi 股權；Lam Research 與 Applied Materials 均被報導評估收購 Besi。
+
+#### Adeia 專利訴訟（首次記錄）
+
+**Adeia**（大型接合專利組合持有者）對 **AMD** 提起訴訟，主張 3D V-Cache 混合接合技術侵犯其 10 件專利——此為 wiki 首次記錄，為後續行業 IP 動態追蹤建立基準。
