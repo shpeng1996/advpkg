@@ -3,7 +3,7 @@ title: "HBM4 — High Bandwidth Memory 4"
 category: technology
 tags: [memory, HBM, JEDEC, standards, AI, HPC, HBM4E, cleanroom, capacity, ISSCC2026, ZAM, HB3DM, HBM5, zHBM, HPB, FMS-2026]
 created: 2026-04-24
-updated: 2026-08-31
+updated: 2026-09-04
 sources: [2026-08-13_semieng_1mw-rack-debate-thermal, 2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor, 2026-08-10_trendforce_skhynix-chongqing-sale-global-reset, 2026-08-05_trendforce_samsung-v10-zhbm-hbm5-fms2026, 2026-07-30_trendforce_samsung-ds-q2-2026-hbm4-triple-q3, 2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-03-18_trendforce_intel-emib-malaysia, 2026-01-23_trendforce_hbm4e-samsung-skhynix-mid2026, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-01-13_semiengineering_hbm4-microbumps, 2025-12-18_trendforce_micron-capex-hbm4, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h, 2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-03-03_trendforce_sk-hynix-hbm4-tight-gaps, 2025-08-12_semianalysis_hbm-roadmap, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit, 2026-06-09_astutegroup_hbm-market-share-2026-battle, 2026-06-10_trendforce_samsung-gwangju-packaging-base, 2026-06-15_trendforce_skhynix-hbm4e-sample-timeline-pulled-forward, 2026-06-20_techtimes_skhynix-hbm4e-12layer-samples, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-27_tweaktown_hbm4-16hi-nvidia-supply-fight, 2026-06-26_semieng_chip-week-144, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-14_trendforce_samsung-hbm-hiring-hbm4-hbm4e-hbm5, 2026-07-14_trendforce_skhynix-yongin-y1-feb2027, 2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b, 2026-08-13_trendforce_samsung-skhynix-hbm4-2h-earnings-pricing, 2026-08-25_trendforce_nvidia-server-hike-hbm-price-2027, 2026-08-28_trendforce_skhynix-indiana-hbm4e-3q29-supply-2030, 2026-08-26_tomshardware_hbf-hot-chips-oxmiq-limited-usability]
 related:
   - wiki/entities/sk-hynix.md
@@ -170,6 +170,31 @@ Samsung 在 Flash Memory Summit（FMS）2026 進一步揭示 HBM5 與新一代�
   - ⚠️ 注意：zHBM 為 FMS 2026 首次公開概念，缺乏 JEDEC 標準與量化規格，需後續論文或規格書核實
 
 *Source: TrendForce 2026-08-05 → [[sources/2026-08-05_trendforce_samsung-v10-zhbm-hbm5-fms2026]]*
+
+### ⭐ Samsung Memory Executive Summit：HBM5 目標 4 TB/s、4096-bit 介面推測（2026-09-04 更新）
+
+Samsung 在 **Memory Executive Summit**（SEMICON Taiwan 2026 前夕，2026-09-02）進一步揭示 HBM5 技術目標，Tom's Hardware 分析提供技術深度：
+
+**講者**：Choi Jang-seok（崔章碩），Samsung Electronics DS 部門記憶體業務產品企劃組長
+
+**關鍵量化數據（首次確認）**：
+- **HBM5 每 stack 頻寬目標：~4 TB/s**（= 2× HBM4E 的 ~2 TB/s）——之前 wiki 僅記錄「2× HBM4E 效能」，現在有具體頻寬數字
+- **效能/瓦改善：+20%** vs HBM4E（維持已知目標）
+- **HPB（Heat Path Block）熱阻降低：20%**（維持已知規格；FMS 2026 已確認）
+
+**4,096-bit 介面推測（技術分析，非官方規格）**：
+要達到 4 TB/s（2× HBM4E），HBM5 需採取以下之一：
+1. **介面寬度倍增**：2,048-bit → **4,096-bit**（KAIST 與 Marvell 已提出此構想）
+2. **每 pin 速率倍增**：12 GT/s → 24 GT/s（高速信令工程挑戰極大）
+3. **組合方案**（如 3,072-bit + 中等速率提升）
+
+Tom's Hardware 分析：4,096 I/O 路徑雖在 pJ/bit 面向更優，但 TSV/bump 路由極度複雜，base die 設計挑戰倍增。3,072-bit 組合方案可能更接近工程現實。⚠️ 所有 HBM5 規格仍為推測，正式 JEDEC 規格未公布。
+
+**TSMC 系統級聚合頻寬路線圖（新增）**：
+- TSMC 預期 AI 加速器 2029+ 達 **20–24 HBM5/HBM5E stacks per package**
+- 對應聚合頻寬：**80–96 TB/s per package**（基於 4 TB/s/stack 計算）
+
+*Source: Tom's Hardware 2026-09-02 → [[sources/2026-09-02_tomshardware_samsung-hbm5-4tbps-4096bit-heat-path-block]]*
 
 ### ⭐ 三大廠商 HBM5 熱管理技術路線對比（2026-06-05 更新）
 

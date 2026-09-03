@@ -3010,3 +3010,25 @@ an（2028–2029 量產世代）為 CoPoS 最可能的首批量產客戶——�
   1. **TSMC 2029 封裝路線圖首次完整量化**：CoWoS 封裝尺寸 3.3×→14× 光罩、封裝功耗 600W→4,100W、HBM 頻寬 34× 增長——這組數字首次讓行業可以量化評估下一代先進封裝的熱功率挑戰，直接解釋了為何微通道冷卻從「探索性技術」被提升至「TSMC R&D 路線圖」。
   2. **混合接合 HBM 延後的具體機制終獲官方報導確認**：Tom's Hardware 深度分析明確說明 JEDEC 775µm 決定（2026 年初）允許 16-Hi HBM4 繼續使用 MR-MUF microbump（10µm pitch 不具 HB 經濟效益），同時補充了 Adeia 對 AMD 的專利訴訟（10 件專利，3D V-Cache）——後者為 wiki 首次記錄，建立 IP 訴訟追蹤基準。
   3. **NVIDIA 以「生態系標準鎖定」取代「硬體銷售」的戰略轉型確立**：$3.5B MediaTek ECB 投資確立 NVLink Fusion 作為 XPU 生態系共通架構；即使超大規模業者自研 GPU 替代品，仍須依賴 NVIDIA 互連與機架架構——ASE、Sigurd 被點名為先進封裝直接受益者。
+
+## [2026-09-04] collect | 每日自動蒐集 — SPHBM4 有機基板標準補充、Samsung HBM5 4TB/s 技術深度分析
+- 搜尋查詢數：7 組（TSMC CoWoS Sep 2026；HBM4/HBM5 Sep 2026；hybrid bonding chiplet 2026；Intel EMIB Sep 2026；FOPLP panel-level 2026；SemiEng Sep 2026；UCIe chiplet 2026）
+- 成功抓取：2 篇（articles/ 2 篇, papers/ 0 篇, reports/ 0 篇）
+- 失敗/跳過：多篇（SemiEng Blog Review Sept 2 空白頁；HBM roadmaps Aug 2025 過時；TSMC fab expansion/Intel EMIB/Intel Google talks/AP limits 均為已收錄舊文）
+- ⚠️ 錯誤記錄：SPHBM4 Tom's Hardware 文章（2026-07-08）已於 2026-07-23 收錄，本次重複抓取並建立重複原始檔（2026-07-08_tomshardware_sphbm4-jedec-jesd330-4-organic-substrate.md）與重複 URL 條目。已在 wiki 層級優化處理（SPHBM4 技術頁面新建有效；重複 source 頁面存在但不影響知識完整性）。
+- 學術代理：UNAVAILABLE ✗
+- 新增 raw 檔案：2 篇（其中 1 篇為重複）
+  - raw/articles/2026-07-08_tomshardware_sphbm4-jedec-jesd330-4-organic-substrate.md（⚠️ 與 2026-07-23 已收錄重複）
+  - raw/articles/2026-09-02_tomshardware_samsung-hbm5-4tbps-4096bit-heat-path-block.md（✓ 新）
+- 新增 wiki 頁面：3 頁
+  - wiki/technologies/sphbm4.md（✓ 新建 SPHBM4 技術頁面）
+  - wiki/sources/2026-07-08_tomshardware_sphbm4-jesd330-4-organic-substrate.md（⚠️ 與現有 source 重複）
+  - wiki/sources/2026-09-02_tomshardware_samsung-hbm5-4tbps-4096bit-heat-path-block.md（✓ 新）
+- 更新 wiki 頁面：4 頁
+  - wiki/technologies/hbm4.md（Samsung Memory Executive Summit HBM5 技術深度：4 TB/s 量化確認；4096-bit 介面推測；TSMC 20-24 stacks/package）
+  - wiki/entities/samsung.md（HBM5 4 TB/s 確認；4096-bit 推測；TSMC 20-24 stacks；section 整合更新）
+  - wiki/index.md（頁面數 429→431；來源數 383→384；sphbm4 技術頁面新增；samsung hbm5 source 新增）
+- 主要新知識：
+  1. **HBM5 每 stack 頻寬首次量化確認：~4 TB/s**（= 2× HBM4E ≈ 2 TB/s）——Samsung Memory Executive Summit（SEMICON Taiwan 2026-09-02，Tom's Hardware），搭配 TSMC 20-24 stacks/package 路線圖確立聚合頻寬目標 80-96 TB/s per package（2029+），是 HBM5 時代系統層級的首次量化錨定。
+  2. **4,096-bit 介面是目前最具可信度的 HBM5 技術推測路徑**：Tom's Hardware 技術分析確認 KAIST/Marvell 均已提出此構想；同時說明其工程挑戰（base die TSV 複雜度倍增）——wiki 首次建立 HBM5 介面寬度技術推測框架，有助追蹤後續 JEDEC 規格確認。
+  3. **SPHBM4 技術頁面正式建立**：雖然 wiki 已有 SPHBM4 source 頁面（7月收錄），但技術頁面 wiki/technologies/sphbm4.md 今日正式建立，整合了有機基板路線技術規格、vs CoWoS 關係分析、中國因素、Open Questions 等——補全了「有機基板 HBM4-class 記憶體」作為先進封裝替代路線的系統性知識節點。

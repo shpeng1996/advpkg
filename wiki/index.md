@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-09-03
-**頁面總數 Total Pages**：429
-**原始來源數 Sources**：383
+**更新時間 Updated**：2026-09-04
+**頁面總數 Total Pages**：431
+**原始來源數 Sources**：384
 
 ---
 
@@ -53,6 +53,7 @@
 - [[technologies/glass-substrate]] — 玻璃核心基板（TGV）；**GlaSSEM JV（Samsung EM+Sumitomo，2H27）+ TSMC JPCA 2026 首次公開量化性能數據（COP +16%、電感 -42%）**（2026-07-07）；**Shinko Electric 22 層基板（APS 2026）；GlaSSEM 設備採購 ≥3 次延後，生產線 2H27；Samsung EM 否認認證失敗**（2026-08-23）⭐更新
 - [[technologies/hbf]] — **HBF（High Bandwidth Flash）**；**Sandisk 首次 tape-out（2026-08-14）；2027 樣品、2028 量產（時程修正）；4 HBF GPU=8 HBM GPU（50% GPU 節省）**；SKH+SanDisk 標準化（OCP/UCIe）；Grade 1-3（0.4-3.0 TB/s）；512GB⭐更新
 - [[technologies/tsv]] — **TSV（Through-Silicon Via / 矽穿孔）**；HBM TSV 2–5µm/30–60µm（via-middle）；矽中介層 TSV 5–20µm/80–120µm；8步驟製程流程；NanoTSV（<100nm）2nm+ 背面供電；Amkor Rick Reed 觀點（2026-08-10）⭐新增
+- [[technologies/sphbm4]] — **SPHBM4（JESD330-4）**；Standard Package HBM4；512-bit 窄介面；有機基板（無需 CoWoS / silicon interposer）；22.4–46 GT/s；最高 2.944 TB/s；最大 64 GB；JEDEC 2026-07-08 發布；中階 AI 加速器定位⭐新增
 
 ---
 
@@ -66,6 +67,7 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-09-02_tomshardware_samsung-hbm5-4tbps-4096bit-heat-path-block]] — Tom's Hardware：**Samsung Memory Executive Summit：HBM5 目標 ~4 TB/s/stack（2× HBM4E）；4,096-bit 介面推測（KAIST/Marvell）；HPB -20% 熱阻；TSMC 20-24 stacks/package → 80-96 TB/s**（2026-09-02）⭐新增
 - [[sources/2026-09-02_tomshardware_hybrid-bonding-2026-state-hbm-delay]] — Tom's Hardware：**混合接合 2026 現況深度分析——TSMC 6µm SoIC 量產；Intel Foveros Direct Clearwater Forest；JEDEC 775µm 使 HBM4 延續 microbump；HBM HB 延至 HBM4E/HBM5；Besi Kinex €476M 路徑；Adeia 專利訴訟 AMD**（2026-09-02）⭐新增
 - [[sources/2026-09-02_trendforce_tsmc-microchannel-cooling-6x-power]] — TrendForce：**TSMC James Chen SEMICON Taiwan：AI 系統功耗 5 年 6×；CoWoS 3.3×→14× 光罩；封裝功耗 600W→4,100W；微通道冷卻納入 R&D 路線圖；熱共優化 -40% 熱阻**（2026-09-02）⭐新增
 - [[sources/2026-09-02_trendforce_google-memory-wall-75pct-bom]] — TrendForce：**Google SEMICON Taiwan：記憶體佔 AI 伺服器 BOM >75%；TPU 8i/8t 雙軌；TurboQuant 6× KV 壓縮；DRAM+NAND 佔 CSP CapEx 47%→68%（2026→2027）**（2026-09-02）⭐新增
