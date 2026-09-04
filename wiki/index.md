@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-09-04
-**頁面總數 Total Pages**：431
-**原始來源數 Sources**：384
+**更新時間 Updated**：2026-09-05
+**頁面總數 Total Pages**：433
+**原始來源數 Sources**：386
 
 ---
 
@@ -15,9 +15,9 @@
 ## 實體 Entities（公司、組織）
 
 - [[entities/powertech]] — Powertech Technology（力成科技）；全球最大合約記憶體封測廠；**PiFO FOPLP NT$70B 投資（2026-08-31）；2027 年中量產；AMD+Broadcom 全額預訂至 2030；新加坡 Broadcom JV；CPO 2027**⭐新增
-- [[entities/tsmc]] — 台積電；全球最大晶圓代工廠；CoWoS/SoIC 技術領導者；**SoIC+CoWoS 50× 系統運算目標（2024→2029）；COUPE 0.06dB 損耗 @ 112G；矽光子 >50% 光收發器市場 2027；CPO 量產 2H26**（SEMICON Taiwan 2026-08-31）；**封裝功耗 600W→4,100W（2024→2029）；微通道冷卻納入 R&D 路線圖；CoWoS 14× 光罩 2029**（2026-09-02）；Arizona 1H26 獲利 NT$36B（+663% YoY）⭐更新
+- [[entities/tsmc]] — 台積電；全球最大晶圓代工廠；CoWoS/SoIC 技術領導者；**設備需求半年 +90%（1×→1.9×）；20 座晶圓廠「仍不夠」；生產模式從線性轉為協作**（SEMICON Taiwan 2026-09-03）；封裝功耗 600W→4,100W（2024→2029）；CoWoS 14× 光罩 2029；Arizona 1H26 獲利 NT$36B（+663% YoY）⭐更新
 - [[entities/intel]] — 英特爾；IDM；**潛在 SK hynix HBM4E base die 供應商（傳聞）；若確認可延伸至 Samsung/Micron——HBM 生態系雙端切入（EMIB-T 封裝 + base die 代工）**（2026-08-31）；EMIB-T 2H27→2028→2029 三段時程；40% GM / 30% OM；Clearwater Forest 12 EMIB tiles；DRAM 製造排除⭐更新
-- [[entities/samsung]] — 三星；IDM + Foundry + Memory；**SEMICON Taiwan：HBM5 2× HBM4E / 2nm base die / 20-Hi 堆疊 / 2028量產；zHBM 8× HBM4E / 3× PPA/W / 2029+；zNAND-O 2028樣品；CUBE策略**（2026-09-01）；溫陽 HBM 廠 KRW 6T 2026-09 動工；HBM4 良率~80%；GlaSSEM JV；GAIA 4nm PIM；OpenAI Jalapeño HBM4 供應⭐更新
+- [[entities/samsung]] — 三星；IDM + Foundry + Memory；**cHBM→aHBM→zHBM 三階段路線圖（Hot Chips 2026 完整規格）：PHY>8×4mm→~8.5×1.5mm；HPB>35% 峰值溫降；zHBM 4-high / -70% I/O 功耗 / 2029+**（Tom's Hardware 2026-09-01）；HBM5 2× HBM4E / 2nm base die / 2028量產；OpenAI Jalapeño HBM4；GAIA PIM⭐更新
 - [[entities/sk-hynix]] — SK Hynix；HBM 市場領導者；**評估 Intel Foundry 作為 HBM4E base die 供應商（傳聞）；TSMC HBM4 base die 成本 3–4× 更高；HBM4 使用 TSMC 12nm-class base die**（2026-08-31）；Nature Electronics CPO 路線圖；Indiana HBM4E 量產 3Q29；Hot Chips 2026：混合接合延後至 HBM5；EMIB 列入 2.5D 路線圖；Vera Rubin ~70% HBM 份額⭐更新
 - [[entities/asmpt]] — ASMPT Limited；TCB/混合接合/Photonics-CPO 設備領導廠商；Q1 2026 訂單 27M +71.6% YoY；NEXX 出售給 AMAT⭐新增
 - [[entities/ase-group]] — ASE Group；全球最大 OSAT；CoWoP 面板封裝；**SPIL 斗六廠破土（TWD 100 億/2028 一期）；2026 CapEx $10.5B；2027 LEAP 目標 $7.5B+；FOPLP Q1 2027**；AMD EFB 合作；**COO 吳田玉明確表態 CoWoS/EMIB 不互斥；Sigurd 並列為 NVIDIA-MediaTek XPU 生態系封裝受益者**（2026-09-01）⭐更新
@@ -67,6 +67,8 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-09-03_trendforce_tsmc-equipment-demand-90pct-substrate]] — TrendForce：**SEMICON Taiwan：TSMC 設備需求半年 +90%（1×→1.9×）；20 座晶圓廠「仍不夠」；Unimicron 基板瓶頸 ABF/TGV 依賴日本 SME；>12 次客供會議**（2026-09-03）⭐新增
+- [[sources/2026-09-01_tomshardware_samsung-hot-chips-2026-zhbm-three-phase]] — Tom's Hardware：**Samsung Hot Chips 2026：cHBM→aHBM→zHBM 三階段完整規格；PHY 面積>8×4mm→~8.5×1.5mm；HPB >35% 峰值溫降；Phase 2 二級記憶體擴充；zHBM 4-high / -70% I/O 功耗 / +2.3× BW / 無確定時程（2029+）**（2026-09-01）⭐新增
 - [[sources/2026-09-02_tomshardware_samsung-hbm5-4tbps-4096bit-heat-path-block]] — Tom's Hardware：**Samsung Memory Executive Summit：HBM5 目標 ~4 TB/s/stack（2× HBM4E）；4,096-bit 介面推測（KAIST/Marvell）；HPB -20% 熱阻；TSMC 20-24 stacks/package → 80-96 TB/s**（2026-09-02）⭐新增
 - [[sources/2026-09-02_tomshardware_hybrid-bonding-2026-state-hbm-delay]] — Tom's Hardware：**混合接合 2026 現況深度分析——TSMC 6µm SoIC 量產；Intel Foveros Direct Clearwater Forest；JEDEC 775µm 使 HBM4 延續 microbump；HBM HB 延至 HBM4E/HBM5；Besi Kinex €476M 路徑；Adeia 專利訴訟 AMD**（2026-09-02）⭐新增
 - [[sources/2026-09-02_trendforce_tsmc-microchannel-cooling-6x-power]] — TrendForce：**TSMC James Chen SEMICON Taiwan：AI 系統功耗 5 年 6×；CoWoS 3.3×→14× 光罩；封裝功耗 600W→4,100W；微通道冷卻納入 R&D 路線圖；熱共優化 -40% 熱阻**（2026-09-02）⭐新增

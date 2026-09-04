@@ -3032,3 +3032,23 @@ an（2028–2029 量產世代）為 CoPoS 最可能的首批量產客戶——�
   1. **HBM5 每 stack 頻寬首次量化確認：~4 TB/s**（= 2× HBM4E ≈ 2 TB/s）——Samsung Memory Executive Summit（SEMICON Taiwan 2026-09-02，Tom's Hardware），搭配 TSMC 20-24 stacks/package 路線圖確立聚合頻寬目標 80-96 TB/s per package（2029+），是 HBM5 時代系統層級的首次量化錨定。
   2. **4,096-bit 介面是目前最具可信度的 HBM5 技術推測路徑**：Tom's Hardware 技術分析確認 KAIST/Marvell 均已提出此構想；同時說明其工程挑戰（base die TSV 複雜度倍增）——wiki 首次建立 HBM5 介面寬度技術推測框架，有助追蹤後續 JEDEC 規格確認。
   3. **SPHBM4 技術頁面正式建立**：雖然 wiki 已有 SPHBM4 source 頁面（7月收錄），但技術頁面 wiki/technologies/sphbm4.md 今日正式建立，整合了有機基板路線技術規格、vs CoWoS 關係分析、中國因素、Open Questions 等——補全了「有機基板 HBM4-class 記憶體」作為先進封裝替代路線的系統性知識節點。
+
+## [2026-09-05] collect | 每日自動蒐集 — SEMICON Taiwan 2026 TSMC 設備需求量化；Samsung Hot Chips 2026 zHBM 三階段完整路線圖
+- 搜尋查詢數：7 組（TSMC CoWoS Sep 2026；HBM4/HBM5 Sep 2026；hybrid bonding chiplet 2026；Intel EMIB Diamond Rapids Sep 2026；FOPLP CoPoS panel-level Sep 2026；UCIe chiplet Sep 2026；SemiEng week review Sep 2026）
+- 成功抓取：2 篇（articles/ 2 篇, papers/ 0 篇, reports/ 0 篇）
+- 失敗/跳過：多篇（TSMC AUO FOPLP / ECTC 2026 / Intel EMIB-T / UCIe 2024 / Samsung FMS 2026 / 多篇 TrendForce 已收錄）
+- 學術代理：UNAVAILABLE ✗
+- 新增 raw 檔案：2 篇
+  - raw/articles/2026-09-03_trendforce_tsmc-equipment-demand-90pct-substrate-squeeze.md（✓ 新）
+  - raw/articles/2026-09-01_tomshardware_samsung-hot-chips-2026-three-phase-hbm-zhbm-roadmap.md（✓ 新）
+- 新增 wiki 頁面：2 頁
+  - wiki/sources/2026-09-03_trendforce_tsmc-equipment-demand-90pct-substrate.md（✓ 新）
+  - wiki/sources/2026-09-01_tomshardware_samsung-hot-chips-2026-zhbm-three-phase.md（✓ 新）
+- 更新 wiki 頁面：4 頁
+  - wiki/entities/tsmc.md（設備需求 +90% 量化；Co-COO Cliff Hou；20 座晶圓廠；Unimicron 基板詳情）
+  - wiki/entities/samsung.md（cHBM/aHBM/zHBM Phase 1/2/3 量化細節；HPB >35% 峰值溫降；Phase 2 二級記憶體；zHBM 4-high 熱限制）
+  - wiki/technologies/hbm4.md（三階段路線圖表格補全；長期 CoWoS 顛覆風險框架）
+  - wiki/index.md（頁面數 431→433；來源數 384→386；tsmc/samsung 描述更新）
+- 主要新知識：
+  1. **TSMC 設備需求最新量化**：Co-COO Cliff Hou 在 SEMICON Taiwan 2026-09-03 披露設備需求 1×（2025年底）→ 1.9×（2026年7月），+90% 半年增幅，且 20 座同步建設晶圓廠「仍不夠」——這是迄今最具體的 TSMC 產能壓力量化指標，直接說明 CoWoS/先進封裝設備採購的緊迫性，以及供應鏈協作典範轉移。
+  2. **Samsung zHBM 三階段完整量化規格首次入庫**：Tom's Hardware Hot Chips 2026 深度報導（2026-09-01）揭示 Phase 1（cHBM）PHY 實際尺寸（>8×4mm→~8.5×1.5mm）、HPB 峰值溫降 >35%、Phase 2（aHBM）二級記憶體擴充設計，以及 Phase 3（zHBM）4-high 熱限制（之前 wiki 未記錄）——同時首次建立「zHBM 長期挑戰 CoWoS 商業模式」的風險框架，使先進封裝長期格局分析更完整。

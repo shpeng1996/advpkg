@@ -3,7 +3,7 @@ title: "三星 / Samsung"
 category: entity
 tags: [IDM, foundry, memory, advanced-packaging, X-Cube, HBM, ISSCC2026, I-CubeS, LPDDR6, V10-BV-NAND, zHBM, HBM5, FMS-2026]
 created: 2026-04-24
-updated: 2026-09-04
+updated: 2026-09-05
 sources: [2026-08-26_trendforce_openai-jalapeno-samsung-hbm4, 2026-08-26_trendforce_samsung-gaia-pim-4nm-2027, 2026-08-24_trendforce_hot-chips-2026-samsung-zhbm-skhynix-emib, 2026-08-17_trendforce_samsung-skhynix-1h26-investment-nvidia-absent, 2026-08-14_trendforce_samsung-nrdk-line2-2nm-hbm5-base-die, 2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor, 2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2025-12-30_trendforce_samsung-hbm-surge, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2025-08-05_3dincites_iftle636, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit, 2026-06-10_trendforce_samsung-gwangju-packaging-base, 2026-06-12_digitimes_samsung-packaging-gap-tsmc-intel, 2026-06-15_trendforce_skhynix-hbm4e-sample-timeline-pulled-forward, 2026-06-19_techtimes_vera-rubin-hbm4-suppliers, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-24_techtimes_sk-hynix-dethroned-samsung-ddr5-hbm4, 2026-07-03_trendforce_anthropic-samsung-advanced-packaging, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-07-02_trendforce_samsung-hbm-dummy-die-patent, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo, 2026-07-07_trendforce_samsung-q2-2026-record-krw894t, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-02_trendforce_samsung-sf2p-plus-tsmc-n2-roadmap, 2026-07-14_trendforce_samsung-hbm-hiring-hbm4-hbm4e-hbm5, 2026-07-21_trendforce_samsung-cxl-32-skhynix-imte, 2026-07-24_trendforce_skhynix-3d-stacked-dram-on-logic-on-device-ai]
 related:
   - wiki/entities/tsmc.md
@@ -32,7 +32,15 @@ related:
 
 ## 近期動態 / Recent Developments
 
-- **2026-08-26（⭐最新）**：**OpenAI Jalapeño AI 推理晶片發布——三星傳聞供應 HBM4（6 stacks，216 GiB，15.4 TB/s）；晶片採 TSMC 3nm；Samsung 為首個非 SK Hynix 的主力 HBM4 AI 晶片供應商**（TrendForce 2026-08-26）：
+- **2026-09-01（⭐最新）**：**Tom's Hardware Hot Chips 2026 深度分析：Samsung cHBM→aHBM→zHBM 三階段完整規格首次公開**（Tom's Hardware, Etiido Uko, 2026-09-01）：
+  - **Phase 1（cHBM）量化細節**：HBM PHY 面積從 >**8×4mm → ~8.5×1.5mm**，channel depth 5.5mm → 2mm；記憶體控制器從 XPU 移入 base die（XPU 節省 5–10% 面積 = **10–20% 效能提升**）；SRAM-based repair scheme（失效 C-die 地址重定向至 base die SRAM）
+  - **HPB（Heat Path Block）** 首次量化確認：覆蓋 >50% PHY 面積 → 峰值溫度下降 **>35%**（此為 wiki 首次記錄此關鍵數值）
+  - **Phase 2（aHBM）新細節**：除 PEs，還包括 base die 邊緣連接**二級 LPDDR/HBM 記憶體**（直接連接，比 PCIe 擴充更低延遲）；telemetry/reliability 感測器（溫度/電壓/老化）
+  - **Phase 3（zHBM）完整規格**：目標 **~4-high 堆疊**（vs 傳統 12–16 high）因熱限制；I/O 功耗降低 **~70%**（vs HBM5）；頻寬提升 **~2.3×** + 功耗節省 **~100W**（vs 4-stack HBM4E）；製造需 wafer-on-wafer bonding + hybrid copper bonding；**無確定量產時程，2029 年後**
+  - **長期含義**：zHBM 成熟後，XPU+memory 整合為單一 3D 單元，CoWoS/EMIB 等 2.5D 中介層將不再必要——首次建立此長期商業風險框架
+  *Source: Tom's Hardware 2026-09-01 → [[sources/2026-09-01_tomshardware_samsung-hot-chips-2026-zhbm-three-phase]]*
+
+- **2026-08-26（次新）**：**OpenAI Jalapeño AI 推理晶片發布——三星傳聞供應 HBM4（6 stacks，216 GiB，15.4 TB/s）；晶片採 TSMC 3nm；Samsung 為首個非 SK Hynix 的主力 HBM4 AI 晶片供應商**（TrendForce 2026-08-26）：
   - Jalapeño 整合 6 枚 HBM4 堆疊 → 216 GiB、15.4 TB/s，**700W 額定功耗（持續 ≤550W）**
   - 性能：**1.5×–1.9× 吞吐量/瓦** vs NVIDIA GB200/GB300；**1.7×–3.6× 更低端對端延遲**
   - 若 OpenAI 依 10GW Broadcom 部署協議規模化，Samsung HBM4 訂單將大幅攀升，直接影響 2027 HBM4 市場格局
