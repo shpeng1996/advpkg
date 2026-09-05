@@ -3,7 +3,7 @@ title: "先進封裝地緣政治 / Geopolitics of Advanced Packaging"
 category: concept
 tags: [geopolitics, US-China, CHIPS-Act, supply-chain, chiplet, NAPMP, export-control, glass-substrate, standards-war, BOE, Corning, Absolics]
 created: 2026-04-26
-updated: 2026-08-22
+updated: 2026-09-06-22
 sources: [2026-08-10_trendforce_skhynix-chongqing-sale-global-reset, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-23_trendforce_china-osat-sj-semiconductor-ipo, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-08-05_3dincites_iftle636, 2026-03-23_trendforce_musk-terafab-tsmc-packaging, 2026-04-22_trendforce_sk-hynix-indiana-us-plant, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-16_nokia_pennsylvania-atp-expansion, 2026-06-30_amkor-ir_arizona-7billion-groundbreaking, 2026-06-30_digitimes_us-packaging-capacity-10pct-2032, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-10_tomshardware_micron-250b-us-investment-globalwafers, 2026-07-10_semieng_chip-week-146, 2026-07-14_trendforce_huawei-baidu-npo-msa, 2026-08-21_semieng_chip-week-152]
 related: [wiki/concepts/advanced-packaging-market.md, wiki/entities/amkor.md, wiki/entities/ase-group.md, wiki/technologies/ucie.md]
 ---
@@ -591,3 +591,28 @@ SemiEngineering 分析（2026-08-15）：中國遺留製程（Legacy Node，>28n
 | 韓國 | 政府 $3.5B 基金 + SK Hynix 印第安納 HBM 廠 | $3.5B 基金 + $4B 廠 |
 | 日本 | JASM（TSMC）+ Micron 廣島廠 | ¥1.5T（Micron） |
 | 中國 | 深圳/武漢基金 RMB 280 億 + JCET/Tongfu 擴建 | RMB 280 億基金 |
+
+---
+
+### ⭐ 2026-09-06 更新：印度 Semicon 2.0 計畫 $13.4B——先進封裝地緣政治新玩家
+
+*Source: SemiEngineering Week #154（2026-09-04）→ [[sources/2026-09-04_semieng_chip-week-154]]*
+
+**印度 Semicon 2.0 計畫規模確認**：
+
+- 投資規模：**$13.4B**（較 Semicon 1.0 的 $100 億增加 34%）
+- 聚焦三大領域：**先進封裝（Advanced Packaging）、晶片設計（Chip Design）、代工產能（Fab Capacity）**
+- 先進封裝作為印度半導體策略的核心支柱，是印度切入全球供應鏈的最具可行性路徑（資本需求低於前端晶圓廠）
+
+**全球先進封裝地緣政治版圖更新**：
+
+| 地區 | 主要投資項目 | 規模 |
+|------|-----------|------|
+| 美國 | CHIPS Act NAPMP + Amkor Arizona $70B | $70B（單廠） |
+| 台灣 | TSMC AP7/AP8 + SPIL 斗六廠 | TWD 100B（SPIL 單廠） |
+| 韓國 | 政府 $3.5B 基金 + SK Hynix 印第安納 HBM 廠 | $3.5B 基金 + $4B 廠 |
+| 日本 | JASM（TSMC）+ Micron 廣島廠 | ¥1.5T（Micron） |
+| 中國 | 深圳/武漢基金 RMB 280 億 + JCET/Tongfu 擴建 | RMB 280 億基金 |
+| **印度** | **Semicon 2.0（先進封裝 + 設計 + 代工）** | **$13.4B ⭐新增** |
+
+**分析**：印度以先進封裝作為切入點，是仿效馬來西亞（Intel Penang/Kulim）、越南（Intel SHTP）的「後端封裝先行」策略。Semicon 2.0 資金規模超越多數東南亞競爭者，標誌印度將先進封裝視為半導體主權的第一步。

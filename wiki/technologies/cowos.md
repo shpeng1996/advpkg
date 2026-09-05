@@ -3,7 +3,7 @@ title: "CoWoS — Chip-on-Wafer-on-Substrate"
 category: technology
 tags: [2.5D, interposer, TSMC, AI, HPC, HBM, COUPE, CPO, packaging-constraints, NVIDIA]
 created: 2026-04-24
-updated: 2026-08-28
+updated: 2026-09-06
 sources: [2026-08-13_semieng_1mw-rack-debate-thermal, 2026-08-05_trendforce_tsmc-cowos-cow-outsourcing-osat, 2026-05-24_techtimes_nvidia-computex2026-cowos, 2026-04-24_initial-survey, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-15_trendforce_tsmc-vanguard-stake-sale, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-09_financialcontent_tsmc-130k-cowos-wafers, 2026-06-09_digitimes_tsmc-cowos-soic-capacity-symposium, 2026-06-15_trendforce_tsmc-cowos-gap-narrowing-130k-200k-wafers, 2026-06-21_tomshardware_tsmc-fab-expansion-roadmap, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_tmtpost_tsmc-cowos-capacity-targets-2026-2027, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand]
 related:
   - wiki/entities/tsmc.md
@@ -331,3 +331,25 @@ TSMC 先進封裝研發總監 James Chen 首次官方量化 CoWoS 長期擴展�
 - **封裝功耗**：~600W（2024）→ **~4,100W（2029）**，功耗損耗 **>5×** 增長
 
 這些數字確立了 CoWoS 路線圖的「功耗-頻寬-尺寸三重擴張」框架，同時說明了為何微通道冷卻（microchannel cooling）被納入 TSMC 先進封裝 R&D 路線圖。
+
+---
+
+### ⭐ 2026-09-06 更新：CoWoS 最大整合上限——58 顆大型晶片/封裝；面板封裝不會取代 CoWoS
+
+*Source: Tom's Hardware 2026-09-04 → [[sources/2026-09-04_tomshardware_tsmc-panel-vs-cowos-58dies]]*
+
+**TSMC 官方明確定位 CoWoS vs. 面板封裝（CoPoS/FOPLP）**：
+
+- **CoWoS 晶圓級技術可擴展至整合 58 顆大型晶片**於單一封裝——迄今 wiki 記錄的 CoWoS 最大 die count 量化上限，確立 wafer-level 的物理擴展極限遠超面板級技術。
+- **面板封裝（CoPoS/FOPLP）是補充，非替代**：TSMC 明確表示，在前沿 AI 加速器市場，面板封裝技術「近期內不會取代 CoWoS」。
+- **核心技術差異**：晶圓級製程可實現比面板級更緊密的 die-to-die 互連間距；面板在大尺寸下存在尺寸均一性（dimensional uniformity）挑戰，限制可達到的互連精度。
+- CoPoS HVM 時程再確認：C.C. Wei 確認 **2H28-29 量產**，玻璃核心基板（TGV）為 **2030+ 里程碑**。
+
+**市場定位分工**：
+
+| 技術 | 目標市場 | HVM 時程 | 技術優勢 |
+|------|---------|---------|---------|
+| CoWoS（晶圓級） | 前沿 AI 加速器（NVIDIA/AMD/Google） | 14× 2028；>14× 2029 | 最高互連密度；58+ dies/package |
+| CoPoS（面板級） | 中高端 AI/HPC（成本敏感） | 2H28-29 | 大面積低成本；較低精度 |
+
+此定位釐清終結了「面板封裝是否會取代晶圓封裝」的市場爭議，確立 CoWoS 在前沿 AI 封裝的不可取代地位。

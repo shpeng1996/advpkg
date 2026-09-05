@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-09-05
-**頁面總數 Total Pages**：433
-**原始來源數 Sources**：386
+**更新時間 Updated**：2026-09-06
+**頁面總數 Total Pages**：436
+**原始來源數 Sources**：389
 
 ---
 
@@ -67,6 +67,9 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-09-04_tomshardware_tsmc-panel-vs-cowos-58dies]] — Tom's Hardware：**TSMC 官方聲明面板封裝不會取代 CoWoS；晶圓級可整合 58 顆大型晶片；CoPoS 為補充定位（2H28-29 HVM）**（2026-09-04）⭐新增
+- [[sources/2026-09-04_semieng_chip-week-154]] — SemiEng Week#154：**印度 Semicon 2.0 $13.4B；異質 HBM；300mm 矽光子製程；InP 擴產；$75M 稀土回收**（2026-09-04）⭐新增
+- [[sources/2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap]] — Tom's Hardware：**TSMC North America Symposium 2026：CoWoS >14 reticle 路線圖；48× 計算電晶體；34× 記憶體頻寬；24 HBM5E stacks；2029 成本「數量級」上漲**（2026-04-27）⭐新增
 - [[sources/2026-09-03_trendforce_tsmc-equipment-demand-90pct-substrate]] — TrendForce：**SEMICON Taiwan：TSMC 設備需求半年 +90%（1×→1.9×）；20 座晶圓廠「仍不夠」；Unimicron 基板瓶頸 ABF/TGV 依賴日本 SME；>12 次客供會議**（2026-09-03）⭐新增
 - [[sources/2026-09-01_tomshardware_samsung-hot-chips-2026-zhbm-three-phase]] — Tom's Hardware：**Samsung Hot Chips 2026：cHBM→aHBM→zHBM 三階段完整規格；PHY 面積>8×4mm→~8.5×1.5mm；HPB >35% 峰值溫降；Phase 2 二級記憶體擴充；zHBM 4-high / -70% I/O 功耗 / +2.3× BW / 無確定時程（2029+）**（2026-09-01）⭐新增
 - [[sources/2026-09-02_tomshardware_samsung-hbm5-4tbps-4096bit-heat-path-block]] — Tom's Hardware：**Samsung Memory Executive Summit：HBM5 目標 ~4 TB/s/stack（2× HBM4E）；4,096-bit 介面推測（KAIST/Marvell）；HPB -20% 熱阻；TSMC 20-24 stacks/package → 80-96 TB/s**（2026-09-02）⭐新增

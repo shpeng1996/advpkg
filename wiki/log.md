@@ -3052,3 +3052,27 @@ an（2028–2029 量產世代）為 CoPoS 最可能的首批量產客戶——�
 - 主要新知識：
   1. **TSMC 設備需求最新量化**：Co-COO Cliff Hou 在 SEMICON Taiwan 2026-09-03 披露設備需求 1×（2025年底）→ 1.9×（2026年7月），+90% 半年增幅，且 20 座同步建設晶圓廠「仍不夠」——這是迄今最具體的 TSMC 產能壓力量化指標，直接說明 CoWoS/先進封裝設備採購的緊迫性，以及供應鏈協作典範轉移。
   2. **Samsung zHBM 三階段完整量化規格首次入庫**：Tom's Hardware Hot Chips 2026 深度報導（2026-09-01）揭示 Phase 1（cHBM）PHY 實際尺寸（>8×4mm→~8.5×1.5mm）、HPB 峰值溫降 >35%、Phase 2（aHBM）二級記憶體擴充設計，以及 Phase 3（zHBM）4-high 熱限制（之前 wiki 未記錄）——同時首次建立「zHBM 長期挑戰 CoWoS 商業模式」的風險框架，使先進封裝長期格局分析更完整。
+
+## [2026-09-06] collect | 每日自動蒐集 — TSMC CoWoS 58 dies 晶圓級擴展上限；面板封裝定位釐清；SemiEng Week#154 印度 Semicon 2.0
+- 搜尋查詢數：7 組（TSMC CoWoS Sep 2026；HBM4/HBM5 Sep 2026；Intel EMIB Sep 2026；FOPLP/UCIe/chiplet Sep 2026；SemiEng week review Sep 2026；hybrid bonding Sep 2026；TSMC panel vs CoWoS）
+- 成功抓取：3 篇（articles/ 3 篇, papers/ 0 篇, reports/ 0 篇）
+- 失敗/跳過：多篇（大多數 TrendForce Sep 4-6 文章未出現新關鍵詞；HBM5/hybrid bonding 搜尋結果均為已收錄文章；Intel EMIB Sep 搜尋結果為已收錄舊文）
+- ⚠️ 重複收錄記錄：Tom's Hardware TSMC CoWoS 14-reticle roadmap（2026-04-27）已於 2026-07-12 以不同 slug 收錄（wiki/index.md 第 209 行）；本次另建 raw 檔與 source 摘要頁，內容更完整，不影響知識完整性。
+- 學術代理：UNAVAILABLE ✗
+- 新增 raw 檔案：3 篇
+  - raw/articles/2026-04-27_tomshardware_tsmc-cowos-14reticle-48x-compute-hbm5e-2029.md（⚠️ 部分重複；原文首發 2026-04-27，本次首次完整抓取正文）
+  - raw/articles/2026-09-04_semieng_chip-week-154-india-semicon-heterogeneous-hbm.md（✓ 新）
+  - raw/articles/2026-09-04_tomshardware_tsmc-panel-packaging-wont-replace-cowos-58-dies.md（✓ 新）
+- 新增 wiki 頁面：3 頁
+  - wiki/sources/2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap.md（✓ 新建 source 摘要頁）
+  - wiki/sources/2026-09-04_semieng_chip-week-154.md（✓ 新）
+  - wiki/sources/2026-09-04_tomshardware_tsmc-panel-vs-cowos-58dies.md（✓ 新）
+- 更新 wiki 頁面：4 頁
+  - wiki/technologies/cowos.md（⭐ CoWoS 58 dies/package 晶圓級最大整合上限；面板封裝 vs CoWoS 官方定位分工；updated 2026-09-06）
+  - wiki/technologies/copos.md（⭐ CoPoS 補充定位官方確立；HVM 2H28-29 再確認；2026-09-06）
+  - wiki/concepts/geopolitics-advanced-packaging.md（⭐ 印度 Semicon 2.0 $13.4B 新增；全球版圖表格新增印度行；2026-09-06）
+  - wiki/index.md（頁面數 433→436；來源數 386→389；3 條新 source 條目）
+- 主要新知識：
+  1. **CoWoS 晶圓級最大整合上限首次量化：58 顆大型晶片/封裝**（Tom's Hardware 2026-09-04）——這是 wiki 首次記錄 CoWoS 的物理擴展極限（相較於現有路線圖上限 24 HBM5E + 24 compute chiplets = 48 dies），確立「面板封裝 vs 晶圓封裝」競爭邊界的清晰技術框架。TSMC 官方表態「面板封裝近期不會取代 CoWoS」終結市場爭議。
+  2. **印度正式加入先進封裝地緣政治版圖**：Semicon 2.0 計畫 $13.4B，以先進封裝作為切入點的「後端先行」策略，使全球 AP 投資競爭由美中台韓日五極擴大為六極格局。
+  3. **SemiEng Week #154 (2026-09-04) 覆蓋的 300mm 矽光子製程突破**（MIT + NY CREATES）為 CPO 主流化提供製造可行性依據，補充既有 copackaged-optics.md 在製造路徑上的空白。

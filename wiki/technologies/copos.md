@@ -3,7 +3,7 @@ title: "CoPoS — Chip-on-Panel-on-Substrate"
 category: technology
 tags: [panel-level-packaging, FOPLP, TSMC, CoPoS, AI, HPC, AP7, InFO]
 created: 2026-04-25
-updated: 2026-08-11
+updated: 2026-09-06-11
 sources: [2026-04-13_trendforce_copos-pilot, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2025-09-12_trendforce_foplp-competitive-landscape-2025, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-20_wccftech_tsmc-copos-glass-core-cost-cut, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-04-28_cw_tsmc-copos-move-really-means, 2026-06-14_digitaltrends_tsmc-copos-glass-temporary-carrier, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan]
 related:
   - wiki/technologies/cowos.md
@@ -292,3 +292,18 @@ SCHMID（德國 PCB/IC 基板設備商）揭示：TSMC、Intel、Samsung 及其�
 **wiki 含義**：TSMC 從租用/合作模式升級為直接收購 AUO 廠房，是 CoPoS 戰略由「研發路線圖」轉向「基礎設施確立」的關鍵信號——意味著 TSMC 對 2H28 量產時程具有足夠信心，願意提前鎖定廠房資產。龍潭 Phase 3 規劃一座獨立面板封裝廠，則是 CoPoS 製程基礎設施落地的最具體確認。本次更新同步強化 [[technologies/glass-substrate.md]]（AUO TGV 試產線投資）及 [[entities/tsmc.md]]（龍潭擴廠）的相關條目。
 
 *→ Source: [[sources/2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan.md]]*
+
+---
+
+### ⭐ 2026-09-06 更新：TSMC 官方確立 CoPoS 定位——補充 CoWoS，非替代
+
+*Source: Tom's Hardware 2026-09-04 → [[sources/2026-09-04_tomshardware_tsmc-panel-vs-cowos-58dies]]*
+
+TSMC 於 2026-09-04 透過 Tom's Hardware 報導首次官方清楚劃定 CoPoS 的市場定位：
+
+- **CoPoS 是「補充」而非「替代」CoWoS**：面板封裝技術在前沿 AI 加速器市場「近期內不會取代 CoWoS」。
+- **應用場景定位**：CoPoS 針對中高端 AI/HPC（成本敏感型），CoWoS 保持前沿市場主導（NVIDIA/AMD/Google 旗艦 AI 晶片）。
+- **核心技術限制**：面板在大尺寸下的尺寸均一性（dimensional uniformity）挑戰，限制可達到的 die-to-die 互連精度；相比之下，CoWoS 晶圓級可整合最多 **58 顆大型晶片**。
+- **HVM 時程再確認**：C.C. Wei 確認 CoPoS **2H28-29 HVM**；玻璃核心基板（TGV Glass Core）為下一里程碑（2030+）。
+
+**市場策略意涵**：此定位釐清對 CoPoS 投資方（Powertech PiFO、ASE FOPLP、TSMC 自身嘉義廠）構成重要框架——面板封裝的商業機會集中在「前沿之外」的中高端 AI 市場，而非正面競爭 CoWoS 的最大算力封裝。
