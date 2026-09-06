@@ -3,8 +3,8 @@ title: "SoIC — System on Integrated Chips"
 category: technology
 tags: [3D, SoIC, hybrid-bonding, TSMC, AI, NVIDIA, Feynman]
 created: 2026-04-24
-updated: 2026-08-12
-sources: [2026-04-24_initial-survey, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-03-18_trendforce_nvidia-rubin-feynman-soic, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-23_trendforce_tsmc-roadmap-a12-a13-no-high-na-euv, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-06-21_arxiv_tiny-chiplets-esd-protection-signal-integrity, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand]
+updated: 2026-09-07
+sources: [2026-04-24_initial-survey, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-03-18_trendforce_nvidia-rubin-feynman-soic, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-23_trendforce_tsmc-roadmap-a12-a13-no-high-na-euv, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-06-21_arxiv_tiny-chiplets-esd-protection-signal-integrity, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-06-10_tomshardware_tsmc-fab-expansion-roadmap-n2-cowos-soic]
 related:
   - wiki/entities/tsmc.md
   - wiki/technologies/cowos.md
@@ -118,6 +118,19 @@ SoIC 常與 CoWoS 組合：邏輯晶片先透過 SoIC 3D 堆疊，再整合於 C
 - **⭐ 新增（2026-06-21）**：相關學術研究——Arizona State University / University of Minnesota 團隊（arXiv 2511.10760）指出，傳統 I/O 電路（ESD 保護 + 訊號傳輸）的面積開銷是阻礙 chiplet 微縮至 100mm² 以下的主因；其透過寄生抽取與 SPICE 模擬，提出在 2.5D/3D 封裝情境下可簡化 ESD/訊號電路設計。雖非 SoIC 專屬研究，但與上述 In-SoIC ESD 挑戰方向高度相關，可作為後續細孔距接合 ESD 設計的參考文獻。*(Source: arXiv 2511.10760，2025-11-13；經 Semiconductor Engineering 摘要報導)*
 - 異質材料（邏輯 die + HBM base die）的 CTE 不匹配導致的翹曲問題如何在大規模量產中控制？
 - SoIC-W（Wafer-on-Wafer）的良率瓶頸能否在 2026 年前達到量產水準？
+
+---
+
+## 2026-09-07 更新：容量 CAGR 與廠區分工量化（Tom's Hardware）
+
+*Source: [[sources/2026-06-10_tomshardware_tsmc-fab-expansion-roadmap-n2-cowos-soic]]*
+
+- **SoIC 產能 CAGR 90%（2022–2027）**：Tom's Hardware Anton Shilov 深度報導，台積電官方量化 SoIC 擴產速度為每年複合成長 90%，量產轉換（R&D → HVM）時程較前代縮短 **75%**——是業界已知最快的先進封裝轉量產記錄
+- **廠區容量量化**：
+  - **AP6（竹南）**：~**10,000 wsm** SoIC 月產能（2026 年）
+  - **AP7B（嘉義）**：~**12,000 wsm** SoIC 月產能（2026 年，Phase 2 擴建中）
+  - **AP7（嘉義全廠）**：定位為全球最大 SoIC 封裝基地，以 **NVIDIA Feynman GPU** 為首發重點客戶
+- AP7 是「Feynman-dedicated campus」的隱性定義：Feynman 為 TSMC A16 製程 + SoIC 3D GPU die 首發，全廠 SoIC 產能調度以 Feynman 出貨時程為主軸
 
 ---
 

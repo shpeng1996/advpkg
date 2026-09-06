@@ -3,8 +3,8 @@ title: "HBF — High Bandwidth Flash"
 category: technology
 tags: [HBF, NAND, flash, TSV, stacking, SanDisk, SK-Hynix, Hanmi, TCB, AI-inference, storage-class-memory]
 created: 2026-06-11
-updated: 2026-08-31
-sources: [2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-06-05_trendforce_hbf-equipment-race-sandisk-hanmi, 2026-06-22_trendforce_sandisk-hbf-patent-nand-processor-bonding, 2026-05-14_semieng_flash-hbf-high-bandwidth-version]
+updated: 2026-09-07
+sources: [2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-06-05_trendforce_hbf-equipment-race-sandisk-hanmi, 2026-06-22_trendforce_sandisk-hbf-patent-nand-processor-bonding, 2026-05-14_semieng_flash-hbf-high-bandwidth-version, 2026-08-31_semieng_flint-hbf-llm-inference-huawei-eth-hust, 2026-08-30_semieng_oxford-hybrid-hbm-hbf-hma-llm-inference]
 related:
   - wiki/technologies/hbm4.md
   - wiki/entities/sk-hynix.md
@@ -132,6 +132,7 @@ HBF（High Bandwidth Flash）是將多顆 **3D NAND 快閃記憶體晶片**透�
 - HBF 的 AI 推論場景是否足夠廣泛以支撐量產規模，抑或僅為利基市場？
 - Samsung 何時公布正式 HBF 路線圖？是否直接跳過 TCB 採用 Hybrid Bonding？
 - HBF 與 CXL（Compute Express Link）記憶體擴充方案的競爭與互補關係？
+- HBF 長尾延遲問題能否被硬體管理層（HMA 類方案）充分隱藏，以實現實際 GPU 效能提升？（Oxford HMA 論文指出此為核心未解挑戰）
 
 ---
 
@@ -166,6 +167,43 @@ FMS 2026 HBF 規格新增了封裝指引，包括：
 | NVIDIA 是否支援 HBF | **未承諾**（FMS 2026 確認）|
 | SK Hynix NAND 技術 | 375 層 4D NAND（2027 年初量產）|
 | Samsung HBF 路線圖 | 尚未公布正式路線圖 |
+
+---
+
+## ⭐ 2026-09-07 更新：學術研究前沿——HBM+HBF 異質記憶體架構（FLINT + HMA）
+
+### 1. FLINT：工作負載驅動的 HBF 基板設計（Huawei/ETH Zürich/HUST，arXiv:2608.25062）
+
+*Source: [[sources/2026-08-31_semieng_flint-hbf-llm-inference-huawei-eth-hust]]*
+
+**核心論述**：LLM 推論瓶頸已從算力轉移至記憶體**容量**，HBF 作為多 TB 近加速器容量層是解法，但現有 HBF 方案有三大缺陷：
+
+| 問題 | FLINT 解法 |
+|------|----------|
+| 粗粒度靜態預取無法有效隱藏 µs 延遲 | **硬體 burst-buffer 控制器**：動態聚合+流水線 HBF 讀取，最大化有效頻寬 |
+| NAND refresh 暴露在推論關鍵路徑 | **Phantom-plane refresh**：將 refresh 操作移至讀取前景路徑之外，低成本資源複製 |
+| 通用 SSD FTL 不適合 LLM 唯讀權重 | **Read-only FTL**：以緊湊邏輯-物理映射表取代任意寫入支援，針對權重唯讀特性優化 |
+
+### 2. HMA：硬體管理的異質 HBM+HBF 架構（牛津大學，IEEE CAL 2026）
+
+*Source: [[sources/2026-08-30_semieng_oxford-hybrid-hbm-hbf-hma-llm-inference]]*
+
+**關鍵量化**：**HBF 每 stack 容量 = HBM 的 16×**，頻寬相當——但直接替換 HBM 因長尾延遲飢餓 GPU scheduler 而效能崩潰。
+
+**HMA（Heterogeneous Memory Architecture）設計原則**：
+- HBM 負責延遲敏感資料（激活值、KV cache 熱區）
+- HBF 負責容量敏感資料（模型靜態權重）
+- **prediction-based migration policy**（硬體管理，而非軟體）動態將資料在 HBM/HBF 間遷移，確保 GPU 關鍵路徑不接觸高延遲 HBF
+
+> **學術意義**：確立「硬體管理層是解決 HBF 延遲問題的正確抽象層次」，與 FLINT 互補——FLINT 設計 flash controller，HMA 設計 HBM-HBF 整合介面。
+
+### HBF 容量/頻寬對比更新（含學術量化）
+
+| 記憶體 | 容量/stack | 頻寬 | 延遲 |
+|--------|-----------|------|------|
+| HBM4（12-Hi） | ~36 GB | ~3.3 TB/s | ns |
+| HBF Grade 1 | ~512 GB+ | 0.4 TB/s | µs |
+| **HBF vs HBM 容量比** | **16×（Oxford 量化）** | ≈可比（片級）| 長尾問題 |
 
 ---
 

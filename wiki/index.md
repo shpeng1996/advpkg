@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-09-06
-**頁面總數 Total Pages**：436
-**原始來源數 Sources**：389
+**更新時間 Updated**：2026-09-07
+**頁面總數 Total Pages**：439
+**原始來源數 Sources**：392
 
 ---
 
@@ -51,7 +51,7 @@
 - [[technologies/foveros]] — Foveros；Intel 3D 堆疊；Foveros Direct 3D（<10µm Cu-Cu，2026 量產）；875 GB/s 3D 頻寬；**Diamond Rapids Hot Chips 2026 完整架構（16×18A-P core→4×Intel 3-T base→2×Intel 3 FHT；Foveros Direct 3D HB + substrate copper link；256 P-cores / 1.28GB LLC）；Wildcat Lake 棄用 Foveros → 有機 MCP + UCIe（降本案例）**（2026-08-26）⭐更新
 - [[technologies/foplp]] — FOPLP（扇出面板級封裝）；**CFMEE PLP 2000 通過技術資格認證——中國首套 510×515mm PLP 直寫微影系統（2µm）**（2026-07-07）；**Powertech PiFO NT$70B 投資；AMD+Broadcom 全額預訂 2027；510×515mm 面板；45-90 units/panel；需求至 2030；Singapore Broadcom JV 2028**（2026-08-31）⭐更新
 - [[technologies/glass-substrate]] — 玻璃核心基板（TGV）；**GlaSSEM JV（Samsung EM+Sumitomo，2H27）+ TSMC JPCA 2026 首次公開量化性能數據（COP +16%、電感 -42%）**（2026-07-07）；**Shinko Electric 22 層基板（APS 2026）；GlaSSEM 設備採購 ≥3 次延後，生產線 2H27；Samsung EM 否認認證失敗**（2026-08-23）⭐更新
-- [[technologies/hbf]] — **HBF（High Bandwidth Flash）**；**Sandisk 首次 tape-out（2026-08-14）；2027 樣品、2028 量產（時程修正）；4 HBF GPU=8 HBM GPU（50% GPU 節省）**；SKH+SanDisk 標準化（OCP/UCIe）；Grade 1-3（0.4-3.0 TB/s）；512GB⭐更新
+- [[technologies/hbf]] — **HBF（High Bandwidth Flash）**；**Sandisk 首次 tape-out（2026-08-14）；2027 樣品、2028 量產（時程修正）；4 HBF GPU=8 HBM GPU（50% GPU 節省）**；SKH+SanDisk 標準化（OCP/UCIe）；Grade 1-3（0.4-3.0 TB/s）；512GB；**16× 容量/stack vs HBM（Oxford HMA 2026）；FLINT 三機制（burst-buffer/phantom-refresh/read-only FTL）；HBM+HBF 異質記憶體 LLM 推論學術前沿**⭐更新
 - [[technologies/tsv]] — **TSV（Through-Silicon Via / 矽穿孔）**；HBM TSV 2–5µm/30–60µm（via-middle）；矽中介層 TSV 5–20µm/80–120µm；8步驟製程流程；NanoTSV（<100nm）2nm+ 背面供電；Amkor Rick Reed 觀點（2026-08-10）⭐新增
 - [[technologies/sphbm4]] — **SPHBM4（JESD330-4）**；Standard Package HBM4；512-bit 窄介面；有機基板（無需 CoWoS / silicon interposer）；22.4–46 GT/s；最高 2.944 TB/s；最大 64 GB；JEDEC 2026-07-08 發布；中階 AI 加速器定位⭐新增
 
@@ -70,6 +70,9 @@
 - [[sources/2026-09-04_tomshardware_tsmc-panel-vs-cowos-58dies]] — Tom's Hardware：**TSMC 官方聲明面板封裝不會取代 CoWoS；晶圓級可整合 58 顆大型晶片；CoPoS 為補充定位（2H28-29 HVM）**（2026-09-04）⭐新增
 - [[sources/2026-09-04_semieng_chip-week-154]] — SemiEng Week#154：**印度 Semicon 2.0 $13.4B；異質 HBM；300mm 矽光子製程；InP 擴產；$75M 稀土回收**（2026-09-04）⭐新增
 - [[sources/2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap]] — Tom's Hardware：**TSMC North America Symposium 2026：CoWoS >14 reticle 路線圖；48× 計算電晶體；34× 記憶體頻寬；24 HBM5E stacks；2029 成本「數量級」上漲**（2026-04-27）⭐新增
+- [[sources/2026-08-30_semieng_oxford-hybrid-hbm-hbf-hma-llm-inference]] — 牛津大學：**HBF 16× 容量 vs HBM；HMA 預測式遷移架構解決 HBF 長尾延遲問題；IEEE CAL 2026**（2026-08-30）⭐新增
+- [[sources/2026-08-31_semieng_flint-hbf-llm-inference-huawei-eth-hust]] — FLINT（Huawei/ETH Zürich/HUST）：**HBF+HBM 異質記憶體 LLM 推論；burst-buffer 控制器；phantom-plane refresh；read-only FTL；arXiv:2608.25062**（2026-08-31）⭐新增
+- [[sources/2026-06-10_tomshardware_tsmc-fab-expansion-roadmap-n2-cowos-soic]] — Tom's Hardware（Anton Shilov）：**TSMC One Team + SMP；N2 CAGR 70%；CoWoS 80% CAGR；SoIC 90% CAGR；11 AP 廠區；AP7/AP8 產能量化**（發布 2026-06-10）⭐新增
 - [[sources/2026-09-03_trendforce_tsmc-equipment-demand-90pct-substrate]] — TrendForce：**SEMICON Taiwan：TSMC 設備需求半年 +90%（1×→1.9×）；20 座晶圓廠「仍不夠」；Unimicron 基板瓶頸 ABF/TGV 依賴日本 SME；>12 次客供會議**（2026-09-03）⭐新增
 - [[sources/2026-09-01_tomshardware_samsung-hot-chips-2026-zhbm-three-phase]] — Tom's Hardware：**Samsung Hot Chips 2026：cHBM→aHBM→zHBM 三階段完整規格；PHY 面積>8×4mm→~8.5×1.5mm；HPB >35% 峰值溫降；Phase 2 二級記憶體擴充；zHBM 4-high / -70% I/O 功耗 / +2.3× BW / 無確定時程（2029+）**（2026-09-01）⭐新增
 - [[sources/2026-09-02_tomshardware_samsung-hbm5-4tbps-4096bit-heat-path-block]] — Tom's Hardware：**Samsung Memory Executive Summit：HBM5 目標 ~4 TB/s/stack（2× HBM4E）；4,096-bit 介面推測（KAIST/Marvell）；HPB -20% 熱阻；TSMC 20-24 stacks/package → 80-96 TB/s**（2026-09-02）⭐新增

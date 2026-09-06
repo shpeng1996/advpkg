@@ -2,6 +2,26 @@
 
 ---
 
+## [2026-09-07] collect | 每日自動蒐集 — TSMC 封裝擴廠路線圖 + HBF+HBM 異質記憶體 LLM 推論學術前沿（FLINT + HMA）
+- 搜尋查詢數：7 組（TSMC CoWoS SoIC 2026, SemiEngineering Week #155, HBF memory AI 2026, advanced packaging 先進封裝 九月, HBM HBF heterogeneous memory LLM, TSMC fab expansion roadmap 2026, CoWoS capacity SoIC CAGR）
+- 成功抓取：3 篇（存入 raw/articles/ 1 篇, raw/papers/ 2 篇）
+- 失敗/跳過：多篇（SemiEngineering Week #155 尚未發布——2026-09-07 為週日，預計週五後出版；部分付費牆；重複已收錄 URL）
+- 新增 wiki 頁面：3 頁（全為 sources/）
+  - wiki/sources/2026-06-10_tomshardware_tsmc-fab-expansion-roadmap-n2-cowos-soic.md
+  - wiki/sources/2026-08-31_semieng_flint-hbf-llm-inference-huawei-eth-hust.md
+  - wiki/sources/2026-08-30_semieng_oxford-hybrid-hbm-hbf-hma-llm-inference.md
+- 更新 wiki 頁面：6 頁
+  - wiki/technologies/hbf.md（新增 FLINT + HMA 學術前沿章節；HBF 16× 容量量化；sources 更新）
+  - wiki/technologies/soic.md（新增 SoIC 90% CAGR 2022–2027；AP6 10K/AP7B 12K wsm 廠區產能；sources 更新）
+  - wiki/technologies/cowos.md（sources 更新）
+  - wiki/entities/tsmc.md（sources 更新；updated 2026-09-07）
+  - wiki/index.md（頁面數 436→439；來源數 389→392；3 個新 sources 條目；HBF 描述更新）
+  - wiki/log.md（本次記錄）
+- 主要新知識：
+  1. **Tom's Hardware（Anton Shilov，2026-06-10）TSMC 封裝擴廠定量全覽**：CoWoS CAGR 80%、SoIC CAGR 90%（2022–2027）；11 座 AP 廠；AP8（台南）2026年底 >4 萬片 CoWoS wsm；AP6 ~1 萬片、AP7B ~1.2 萬片 SoIC；「One Team」知識轉移系統（N3 快 20%）；「SMP（Super Manufacturing Platform）」跨廠集中控制系統；N2 CAGR 70%（2026–2028）
+  2. **FLINT（Huawei/ETH Zürich/HUST，arXiv:2608.25062）**：LLM 推論瓶頸轉移至記憶體容量；HBF 作為 TB 級近加速器層；三大機制：硬體 burst-buffer 控制器（動態聚合 HBF 讀取）、phantom-plane refresh（refresh 移出關鍵路徑）、read-only FTL（針對 LLM 唯讀權重優化）
+  3. **牛津大學 HMA（Oxford，IEEE CAL 2026）**：HBF 每 stack 容量 = HBM 的 **16×**；HBF 長尾延遲飢餓 GPU scheduler 是主因；HMA（Heterogeneous Memory Architecture）以硬體管理的 prediction-based migration policy 解決此問題；確立「硬體抽象層是正確解法」原則
+
 ## [2026-08-25] collect | 每日自動蒐集 — 先進封裝最新動態（Hot Chips 2026：Samsung zHBM + Intel Diamond Rapids Foveros Direct 3D）
 - 搜尋查詢數：7 組（Hot Chips 2026 異質整合、SemiEngineering Week #153、TrendForce 8月24–25日、Intel Diamond Rapids、HBM4 SK hynix Samsung、先進封裝 8月最新、UCIe chiplet）
 - 成功抓取：2 篇（存入 raw/articles/ 2 篇, raw/papers/ 0 篇, raw/reports/ 0 篇）
