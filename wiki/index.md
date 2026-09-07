@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-09-07
-**頁面總數 Total Pages**：439
-**原始來源數 Sources**：392
+**更新時間 Updated**：2026-09-08
+**頁面總數 Total Pages**：441
+**原始來源數 Sources**：394
 
 ---
 
@@ -67,6 +67,8 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-09-03_trendforce_china-chip-tool-amec-wellrun-cseac]] — TrendForce：**CSEAC 2026 中國設備本土化——AMEC Primo XD-RIE™（70:1~90:1 深寬比）+ Prefima Unicore™ AM（ALD 鉬）；Leadmicro 先進封裝 CVD 量產；Wellrun 14nm CD-SEM 部署**（2026-09-03）⭐新增
+- [[sources/2026-09-03_trendforce_inp-sumitomo-wuhan-tianyuan]] — TrendForce：**住友化學 4 吋 InP 磊晶晶圓量產啟動（JPY 100 億 2030s 目標）；武漢天源收購中訊半導體 60%（CNY 750 萬）進入 InP 基板市場；AI 資料中心 Optoelectronic Convergence 驅動**（2026-09-03）⭐新增
 - [[sources/2026-09-04_tomshardware_tsmc-panel-vs-cowos-58dies]] — Tom's Hardware：**TSMC 官方聲明面板封裝不會取代 CoWoS；晶圓級可整合 58 顆大型晶片；CoPoS 為補充定位（2H28-29 HVM）**（2026-09-04）⭐新增
 - [[sources/2026-09-04_semieng_chip-week-154]] — SemiEng Week#154：**印度 Semicon 2.0 $13.4B；異質 HBM；300mm 矽光子製程；InP 擴產；$75M 稀土回收**（2026-09-04）⭐新增
 - [[sources/2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap]] — Tom's Hardware：**TSMC North America Symposium 2026：CoWoS >14 reticle 路線圖；48× 計算電晶體；34× 記憶體頻寬；24 HBM5E stacks；2029 成本「數量級」上漲**（2026-04-27）⭐新增

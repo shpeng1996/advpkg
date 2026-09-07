@@ -616,3 +616,26 @@ SemiEngineering 分析（2026-08-15）：中國遺留製程（Legacy Node，>28n
 | **印度** | **Semicon 2.0（先進封裝 + 設計 + 代工）** | **$13.4B ⭐新增** |
 
 **分析**：印度以先進封裝作為切入點，是仿效馬來西亞（Intel Penang/Kulim）、越南（Intel SHTP）的「後端封裝先行」策略。Semicon 2.0 資金規模超越多數東南亞競爭者，標誌印度將先進封裝視為半導體主權的第一步。
+
+---
+
+### 中國設備本土化加速 — CSEAC 2026 / China Equipment Localization Acceleration
+*2026-09-03*
+*Source: TrendForce [[sources/2026-09-03_trendforce_china-chip-tool-amec-wellrun-cseac]]*
+
+第 14 屆 CSEAC（中國半導體設備、材料及核心零組件展覽會）展示中國設備本土化最新進展：
+
+- **AMEC**（中微半導體）：發布 **Primo XD-RIE™**（高深寬比 70:1~90:1，針對超高層數 3D NAND 蝕刻）及 **Prefima Unicore™ AM**（12 吋 ALD 鉬沉積，3D 結構字線填充）。2026 年已連續兩次（SEMICON China 3 月 + CSEAC 9 月）大規模新品發布。
+- **Leadmicro**：CVD 設備進入量產，覆蓋邏輯、**先進封裝**、DRAM、3D NAND——先進封裝設備首現中國本土供應訊號。
+- **Piotech**：PECVD 工具在中國裝機量第一，兼含 3D IC 設備。
+- **Wellrun**：12 吋 CD-SEM 14nm R&D / 22nm HVM，已在中國生產線穩定運行；CD-SEM 本土化率由「幾乎為零」開始改善；已與 CR Micro 簽署戰略合作。
+- **意義**：中國在傳統「不可能本土化」設備（高深寬比蝕刻、CD-SEM）上開始取得實質突破，但量產良率與國際領先水準仍有差距。
+
+### 中國 InP 基板本土化 — 武漢天源入局 / China InP Substrate Localization
+*2026-09-03*
+*Source: TrendForce [[sources/2026-09-03_trendforce_inp-sumitomo-wuhan-tianyuan]]*
+
+- **武漢天源環保** 以 CNY 750 萬收購**中訊半導體（江蘇）60% 股份**，進入 InP 基板市場，附帶 CNY 6,700 萬配套投資。
+- 中訊半導體 InP 現狀：2~4 吋單晶試產，良率 ~30%，4 吋量產化推進中，6 吋 R&D，1H26 無商業收入。
+- 武漢天源為環保公司轉型，代表中國「非傳統資本入局半導體」新趨勢。
+- 對比：日本**住友化學** 已於 2026-08-31 正式啟動 4 吋 InP 磊晶晶圓量產（25 年 GaAs/GaN 磊晶經驗技術轉移，JPY 100 億 2030 年代中期目標）——日本高品質 InP 供給多元化，可緩解 CPO 雷射源短缺。

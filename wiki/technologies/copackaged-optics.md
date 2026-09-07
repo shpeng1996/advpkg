@@ -520,3 +520,26 @@ SK hynix 的戰略聲明（AI Infra 負責人 Seunghoon Hong）：「**記憶體
 - 晶圓級光互連在 LLM MoE 訓練場景中的熱調諧 overhead 被具體量化為新挑戰
 - 鐵電調諧（ferroelectric tuning）確認為有效 mitigation 策略
 - → 強化 CPO 需要熱-光共設計（thermal-optical co-design）的論述
+
+---
+
+### InP 供應鏈動態 / InP Supply Chain Developments
+*2026-09-08 更新*
+*Source: TrendForce [[sources/2026-09-03_trendforce_inp-sumitomo-wuhan-tianyuan]]*
+
+InP（磷化銦）為 CPO 雷射源的核心材料，供應鏈出現重要擴充動態：
+
+**供給端擴充（日本）：**
+- **住友化學（Sumitomo Chemical）** 2026-08-31 宣布在茨城工廠（日立市）正式啟動 **4 吋 InP 磊晶晶圓量產**，正式商業銷售啟動。
+- 住友擁有逾 25 年 GaAs/GaN 磊晶晶圓量產經驗，技術移轉至 InP；具備高均勻度晶體結構與高量產再現性。
+- 目標：**JPY ~100 億**銷售（2030 年代中期），整合至現有化合物半導體組合（GaN/GaAs/InP）。
+- 住友官方驅動敘事：**「AI 資料中心光電融合（Optoelectronic Convergence）」** 趨勢——與 TSMC COUPE、SK hynix CPO 路線圖直接呼應。
+
+**中國 InP 本土化（尚早期）：**
+- **武漢天源環保** 收購中訊半導體 60% 股份（CNY 750 萬 + CNY 6,700 萬配套），進入 InP 基板市場。
+- 中訊現況：2~4 吋試產，單晶良率 ~30%，4 吋量產化推進，6 吋 R&D，1H26 無商業收入。
+- 評估：中國 InP 本土化尚在早期，良率與成本距商業化有明顯差距；中國仍控制全球 ~70% 精煉銦（上游原料），對日本住友的供應安全構成潛在影響。
+
+**InP 供應鏈背景（整合更新）：**
+- 此前 wiki 已記錄：中國控制 ~70% 精煉銦；NVIDIA 投資兩家 InP 雷射供應商；Lumentum CEO 警告 InP 短缺；Coherent 德州 4× 擴產（2026-08-06/09）。
+- 住友量產啟動是具體的供給端應對措施，為 CPO 大規模部署（TSMC CPO 量產 2H26）提供更穩定的材料基礎。

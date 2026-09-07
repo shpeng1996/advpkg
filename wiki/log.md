@@ -3096,3 +3096,22 @@ an（2028–2029 量產世代）為 CoPoS 最可能的首批量產客戶——�
   1. **CoWoS 晶圓級最大整合上限首次量化：58 顆大型晶片/封裝**（Tom's Hardware 2026-09-04）——這是 wiki 首次記錄 CoWoS 的物理擴展極限（相較於現有路線圖上限 24 HBM5E + 24 compute chiplets = 48 dies），確立「面板封裝 vs 晶圓封裝」競爭邊界的清晰技術框架。TSMC 官方表態「面板封裝近期不會取代 CoWoS」終結市場爭議。
   2. **印度正式加入先進封裝地緣政治版圖**：Semicon 2.0 計畫 $13.4B，以先進封裝作為切入點的「後端先行」策略，使全球 AP 投資競爭由美中台韓日五極擴大為六極格局。
   3. **SemiEng Week #154 (2026-09-04) 覆蓋的 300mm 矽光子製程突破**（MIT + NY CREATES）為 CPO 主流化提供製造可行性依據，補充既有 copackaged-optics.md 在製造路徑上的空白。
+
+## [2026-09-08] collect | 每日自動蒐集 — 中國半導體設備本土化 CSEAC 2026；InP 磊晶晶圓供應鏈擴充
+- 搜尋查詢數：7 組（TSMC CoWoS Sep 2026；HBM4/HBM5 Sep 2026；Intel EMIB Sep 2026；FOPLP/UCIe Sep 2026；SemiEng Week#155；hybrid bonding Sep 2026；trendforce Sep 5-8 news）
+- 成功抓取：2 篇（articles/ 2 篇, papers/ 0 篇, reports/ 0 篇）
+- 失敗/跳過：多篇（SemiEng Week#155 未出版（預計 2026-09-11）；大多數 Sep 5-8 TrendForce 文章搜尋結果不可及（date-gated）；AMEC/InP 為最新未收錄核心文章）
+- 學術代理：UNAVAILABLE ✗
+- 新增 raw 檔案：2 篇
+  - raw/articles/2026-09-03_trendforce_china-chip-tool-amec-3d-memory-wellrun-cd-sem.md（✓ 新）
+  - raw/articles/2026-09-03_trendforce_inp-sumitomo-wuhan-tianyuan-epitaxial-wafer.md（✓ 新）
+- 新增 wiki 頁面：2 頁
+  - wiki/sources/2026-09-03_trendforce_china-chip-tool-amec-wellrun-cseac.md（✓ 新）
+  - wiki/sources/2026-09-03_trendforce_inp-sumitomo-wuhan-tianyuan.md（✓ 新）
+- 更新 wiki 頁面：3 頁
+  - wiki/concepts/geopolitics-advanced-packaging.md（⭐ 新增 CSEAC 2026 中國設備本土化條目；AMEC/Leadmicro/Wellrun；中國 InP 基板入局（武漢天源/中訊）；updated 2026-09-08）
+  - wiki/technologies/copackaged-optics.md（⭐ 新增 InP 供應鏈段落：住友 4 吋量產啟動 + 中國本土化早期進展；updated 2026-09-08）
+  - wiki/index.md（頁面數 439→441；來源數 392→394；2 條新 source 條目；updated 2026-09-08）
+- 主要新知識：
+  1. **住友化學 4 吋 InP 磊晶晶圓量產啟動（2026-08-31）**：為 AI 資料中心 CPO 雷射源供應提供重要補給——此前 wiki 已記錄 InP 短缺壓力（NVIDIA 投資 Lumentum/Coherent；中國 ~70% 精煉銦控制），現補充日本高品質磊晶晶圓供給端反應，住友目標 JPY 100 億（2030s），可直接支撐 TSMC COUPE 量產 2H26 的材料需求。
+  2. **中國設備本土化里程碑（CSEAC 2026）**：AMEC 在高深寬比蝕刻（70:1~90:1）取得實質突破；Wellrun 14nm CD-SEM 在中國生產線部署——這兩類設備過去被認為「最難本土化」，其進展對中國在高階設備禁令下的自主化能力評估具有重要意義；Leadmicro 先進封裝 CVD 量產是先進封裝設備本土化首次出現在 wiki 記錄中。
