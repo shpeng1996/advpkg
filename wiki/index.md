@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-09-08
-**頁面總數 Total Pages**：441
-**原始來源數 Sources**：394
+**更新時間 Updated**：2026-09-09
+**頁面總數 Total Pages**：444
+**原始來源數 Sources**：397
 
 ---
 
@@ -67,6 +67,9 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-09-08_semieng_chip-paper-roundup-sept8]] — SemiEng Sept.8 論文彙整：**FLINT HBF LLM；M3D 6T SRAM BEOL pass-gates @ 2nm（Georgia Tech/Synopsys）；Oxford HBM-HBF HMA；可程式 SiPh 干涉儀（UiT/Stanford）；GaN EPFL**（2026-09-08）⭐新增
+- [[sources/2026-09-07_trendforce_skhynix-1c-dram-hbm4e-overtake-1b]] — TrendForce：**SK hynix 1c DRAM 各季佔比量化（10%→13%→24%→34%→35%）；1Q27 首超 1b 成主力製程；HBM4E 2027 HVM；Samsung 1c for HBM4（11.7Gbps）；1d DRAM Samsung 2026-09 開發完成 / SK hynix 2026-12；HBM5E 1d ~2030**（2026-09-07）⭐新增
+- [[sources/2026-09-04_trendforce_micron-hbm-100k-12hi-hbm4]] — TrendForce：**Micron HBM 月產能 40K–50K wsm → 100K wsm（2026年底）；+60K 增量；12-Hi HBM4 佔比年初 20–30% → 年底 ~50%；HBM4 爬坡 2×HBM3；Samsung HBM4 75K wsm / 150K HBM total；NVIDIA 8-Hi + 12-Hi HBM4 雙軌**（2026-09-04）⭐新增
 - [[sources/2026-09-03_trendforce_china-chip-tool-amec-wellrun-cseac]] — TrendForce：**CSEAC 2026 中國設備本土化——AMEC Primo XD-RIE™（70:1~90:1 深寬比）+ Prefima Unicore™ AM（ALD 鉬）；Leadmicro 先進封裝 CVD 量產；Wellrun 14nm CD-SEM 部署**（2026-09-03）⭐新增
 - [[sources/2026-09-03_trendforce_inp-sumitomo-wuhan-tianyuan]] — TrendForce：**住友化學 4 吋 InP 磊晶晶圓量產啟動（JPY 100 億 2030s 目標）；武漢天源收購中訊半導體 60%（CNY 750 萬）進入 InP 基板市場；AI 資料中心 Optoelectronic Convergence 驅動**（2026-09-03）⭐新增
 - [[sources/2026-09-04_tomshardware_tsmc-panel-vs-cowos-58dies]] — Tom's Hardware：**TSMC 官方聲明面板封裝不會取代 CoWoS；晶圓級可整合 58 顆大型晶片；CoPoS 為補充定位（2H28-29 HVM）**（2026-09-04）⭐新增

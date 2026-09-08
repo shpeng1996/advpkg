@@ -3,7 +3,7 @@ title: "美光科技 / Micron Technology"
 category: entity
 tags: [memory, HBM4, DRAM, NAND, CapEx, Virginia, Idaho, New-York, onshoring]
 created: 2026-05-03
-updated: 2026-08-22
+updated: 2026-09-09
 sources: [2025-12-18_trendforce_micron-capex-hbm4, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-03-17_trendforce_gtc2026-key-takeaways, 2025-08-05_3dincites_iftle636-samsung-lsb-micron-virginia, 2026-01-23_trendforce_hbm4e-development, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-26_semieng_chip-week-144, 2026-06-25_thelec_micron-q3-fy2026-record, 2026-07-06_trendforce_micron-hiroshima-fab-hbm-1gamma, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-10_tomshardware_micron-250b-us-investment-globalwafers, 2026-07-10_semieng_chip-week-146, 2026-08-21_semieng_chip-week-152]
 related:
   - wiki/technologies/hbm4.md
@@ -30,6 +30,8 @@ related:
 ---
 
 ## 近期動態 / Recent Developments
+
+- **2026-09-04（⭐最新）**：**Micron HBM 產能目標 100K wsm 年底達成；12-Hi HBM4 佔比升至 50%**——ETNews 報導 Micron HBM 月產能由 2025 年底的 40K–50K wsm 大幅提升，年底前目標達 100K wsm（+60K 增量），主要投入 12-Hi HBM4 供應（佔比：年初 20–30% → 年底 ~50%，服務 NVIDIA Vera Rubin）。HBM4 產能爬坡速度為 HBM3 的 2 倍。韓國競爭對手 SK hynix 與 Samsung 各維持 150K–200K wsm 規模，Micron 達標後仍約為其 1/3–1/2。NVIDIA 同步宣布逐步增加 8-Hi HBM4 配置（熱管理 + 供應彈性）；Micron HBM4E（1-gamma 製程）樣品生產預計 2027 年啟動。*Source: TrendForce 2026-09-04 → [[sources/2026-09-04_trendforce_micron-hbm-100k-12hi-hbm4.md]]*
 
 - **2026-08-21（⭐最新）**：**Micron Research Labs 成立——$10B/10年 Boise, Idaho R&D 據點**（SemiEngineering Week #152）：研究領域明確涵蓋記憶體技術、先進記憶體與運算架構、**封裝**、製造。這是 Micron 首個以「封裝」為明確核心研究領域的長期 R&D 機構，與廣島/維吉尼亞封裝廠共同構成 Micron 封裝技術生態全貌。⭐更新
 
@@ -73,7 +75,7 @@ Micron 是全球三大 HBM 供應商中規模最小者，但在技術速度上�
 | Q3 FY2026 EPS | $24.67 |
 | Q4 FY2026 營收指引 | $50B ± $1B |
 | NVIDIA HBM4 份額（估） | ~10% |
-| HBM 月產能目標（2026 年底） | 約 250K wsm（較 2025 年底 +50%） |
+| HBM 月產能目標（2026 年底） | **100K wsm**（2025年底 40K–50K → +60K 增量；⭐2026-09-04 更新） |
 | FY26 CapEx | ~$270 億 |
 | SCA 積壓合約 | ~$1,000 億（2026–2030） |
 | 客戶預付款 | ~$220 億 |

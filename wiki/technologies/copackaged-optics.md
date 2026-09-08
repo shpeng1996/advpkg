@@ -3,7 +3,7 @@ title: "共封裝光學元件 / Co-Packaged Optics (CPO) — TSMC-COUPE™ & Eco
 category: technology
 tags: [CPO, co-packaged-optics, COUPE, TSMC, GlobalFoundries, Samsung, photonics, AI, HPC, networking, OCI-MSA, DWDM, Broadcom, NVIDIA, glass-substrate, ULCVD, TGV, Spectrum-X, NVL72]
 created: 2026-04-25
-updated: 2026-08-21
+updated: 2026-09-09
 sources: [2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-05-07_trendforce_globalfoundries-silicon-photonics-scale-cpo, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-03-17_coherent_cpo-ofc2026-demo, 2026-06-07_digitimes_jcet-3d-packaging-cpo-plant, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_edn_cpo-technology-status-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-06-24_thelec_corning-glass-bridge-cpo, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-14_trendforce_umc-silith-silicon-photonics-hvm, 2026-07-14_trendforce_huawei-baidu-npo-msa, 2026-07-27_trendforce_presscenter_cpo-switches-nvidia-broadcom-coupe, 2026-06-03_3dincites_intel-foundry-emib-cpo-glass-ectc2026]
 related:
   - wiki/entities/tsmc.md
@@ -543,3 +543,13 @@ InP（磷化銦）為 CPO 雷射源的核心材料，供應鏈出現重要擴充
 **InP 供應鏈背景（整合更新）：**
 - 此前 wiki 已記錄：中國控制 ~70% 精煉銦；NVIDIA 投資兩家 InP 雷射供應商；Lumentum CEO 警告 InP 短缺；Coherent 德州 4× 擴產（2026-08-06/09）。
 - 住友量產啟動是具體的供給端應對措施，為 CPO 大規模部署（TSMC CPO 量產 2H26）提供更穩定的材料基礎。
+
+### ⭐ 2026-09-08 更新：可程式矽光子干涉儀網格（UiT/Stanford）——WDM 波長調諧學術突破
+
+*Source: SemiEng Tech Paper Roundup 2026-09-08 → [[sources/2026-09-08_semieng_chip-paper-roundup-sept8.md]]*
+
+UiT（挪威北極大學）與 Stanford 合作論文：**Intracavity Laser Wavelength Tuning by a Programmable Forward-Only Silicon Photonics Interferometer Mesh**
+- 技術要點：利用可程式化 SiPh 干涉儀網格實現腔內雷射**連續波長調諧**（無需機械移動部件）
+- CPO 相關性：TSMC COUPE WDM 縮放路線圖（1→16+ 通道）需要精確的多波長雷射控制；本技術提供電子可程式化調諧方案，降低 WDM CPO 的波長鎖定複雜度
+- 意義：補充 wiki 在 CPO WDM 元件層面（雷射源可程式化控制）的空白——既有 wiki 已記錄 COUPE 性能（0.06dB @ 112G）與 WDM 通道數路線圖，本論文為晶片級雷射波長控制的學術可行性依據
+

@@ -3115,3 +3115,28 @@ an（2028–2029 量產世代）為 CoPoS 最可能的首批量產客戶——�
 - 主要新知識：
   1. **住友化學 4 吋 InP 磊晶晶圓量產啟動（2026-08-31）**：為 AI 資料中心 CPO 雷射源供應提供重要補給——此前 wiki 已記錄 InP 短缺壓力（NVIDIA 投資 Lumentum/Coherent；中國 ~70% 精煉銦控制），現補充日本高品質磊晶晶圓供給端反應，住友目標 JPY 100 億（2030s），可直接支撐 TSMC COUPE 量產 2H26 的材料需求。
   2. **中國設備本土化里程碑（CSEAC 2026）**：AMEC 在高深寬比蝕刻（70:1~90:1）取得實質突破；Wellrun 14nm CD-SEM 在中國生產線部署——這兩類設備過去被認為「最難本土化」，其進展對中國在高階設備禁令下的自主化能力評估具有重要意義；Leadmicro 先進封裝 CVD 量產是先進封裝設備本土化首次出現在 wiki 記錄中。
+
+## [2026-09-09] collect | 每日自動蒐集 — Micron HBM 產能擴充；SK hynix 1c DRAM 爬坡；SemiEng 論文彙整 Sept.8
+- 搜尋查詢數：7 組（TSMC CoWoS Sep 2026；HBM4/HBM5 Sep 2026；Intel EMIB Sep 2026；FOPLP/UCIe Sep 2026；SemiEng tech papers Sept 8；TrendForce Sep 5-8；advanced packaging Sep 8-9 2026）
+- 成功抓取：3 篇（articles/ 2 篇, papers/ 1 篇, reports/ 0 篇）
+- 失敗/跳過：多篇（SemiEng Week#155 尚未發布（預計 2026-09-11）；大多數 Sep 8-9 TrendForce 文章日期超出可查結果；部分搜尋結果與既有收錄重複）
+- 學術代理：UNAVAILABLE ✗
+- 新增 raw 檔案：3 篇
+  - raw/articles/2026-09-04_trendforce_micron-hbm-100k-wpm-12hi-hbm4-ramp.md（✓ 新）
+  - raw/articles/2026-09-07_trendforce_skhynix-1c-dram-hbm4e-overtake-1b-1q27.md（✓ 新）
+  - raw/papers/2026-09-08_semieng_chip-paper-roundup-sept8-hbf-m3d-sram-sipho.md（✓ 新）
+- 新增 wiki 頁面：3 頁
+  - wiki/sources/2026-09-04_trendforce_micron-hbm-100k-12hi-hbm4.md（✓ 新）
+  - wiki/sources/2026-09-07_trendforce_skhynix-1c-dram-hbm4e-overtake-1b.md（✓ 新）
+  - wiki/sources/2026-09-08_semieng_chip-paper-roundup-sept8.md（✓ 新）
+- 更新 wiki 頁面：6 頁
+  - wiki/entities/micron.md（⭐ HBM 月產能 100K wsm 目標；12-Hi HBM4 50% 年底；NVIDIA 8-Hi/12-Hi 雙軌；updated 2026-09-09）
+  - wiki/entities/sk-hynix.md（⭐ 1c DRAM 各季佔比量化；1Q27 首超 1b；HBM4E 1c core die；1d 開發 2026-12 目標；updated 2026-09-09）
+  - wiki/entities/samsung.md（⭐ 1c for HBM4（11.7Gbps）；1d 開發 Sep 2026；HBM5E 1d ~2030；updated 2026-09-09）
+  - wiki/technologies/hbm4.md（⭐ 三廠 HBM 產能對比表；1c vs 1b 策略分歧；NVIDIA 8-Hi/12-Hi 雙軌；updated 2026-09-09）
+  - wiki/technologies/copackaged-optics.md（⭐ 可程式 SiPh 干涉儀 UiT/Stanford 學術成果；WDM 波長調諧；updated 2026-09-09）
+  - wiki/index.md（頁面數 441→444；來源數 394→397；3 條新 source 條目；updated 2026-09-09）
+- 主要新知識：
+  1. **Micron HBM 產能首次具體量化至 100K wsm 年底目標**：此前 wiki 缺乏 Micron HBM 的絕對產能數字。三廠首次以同一來源並排比較：SK hynix/Samsung 各 150K–200K wsm，Micron 100K wsm——確立 Micron 仍為市場追趕者（約為對手 1/3–1/2），但增速（+60K wsm / +100–150% YoY）為業界最強。NVIDIA 同步引入 8-Hi HBM4 作為熱管理替代配置，打破「Vera Rubin 僅用 12-Hi」的市場認知。
+  2. **Samsung vs SK hynix HBM4 製程策略分歧首次量化**：Samsung 採 1c DRAM（速度優先，11.7 Gbps）、SK hynix 以 1b DRAM（量產穩定優先）——此策略差異解釋了兩家在 HBM4 市佔與技術定位上的分化。SK hynix 1c DRAM 逐季爬坡時程（10→13→24→34→35%）首次在 wiki 完整記錄，為後續 HBM4E 製程討論奠定基礎。
+  3. **1d DRAM 開發競賽時程確立（HBM5E 世代 ~2030）**：Samsung 2026-09 目標完成 1d 開發，SK hynix 落後 3–6 個月——wiki 首次記錄 1d DRAM 開發競賽具體時程及其在 HBM5E（~2030）的應用計畫。
