@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-09-09
-**頁面總數 Total Pages**：444
-**原始來源數 Sources**：397
+**更新時間 Updated**：2026-09-10
+**頁面總數 Total Pages**：447
+**原始來源數 Sources**：400
 
 ---
 
@@ -67,6 +67,9 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-06-10_tomshardware_google-intel-emib-3m-tpu-skhynix]] — Tom's Hardware：**Google 下單 Intel 封裝 >300 萬顆 TPU（2028）；SK hynix 啟動 HBM-on-EMIB 驗證；EMIB vs CoWoS 成本首次量化（數百美元 vs $900–1000/片）；NVIDIA 評估 Feynman 採 Intel 封裝；EMIB-T 包 utilization 90% vs CoWoS 60%**（2026-06-10，補收錄）⭐新增
+- [[sources/2026-09-08_trendforce_cxmt-lpddr6-12800mbps-apple-hbm]] — TrendForce：**CXMT LPDDR6 12,800Mbps 量產啟動（小米 18 Fold）；全球 DRAM 市占 2Q26 升至 9.5%（第四名）；2027 產能 95% 滿載；HBM + 先進封裝投資 RMB 90 億；Apple 供應半公開**（2026-09-08）⭐新增
+- [[sources/2026-09-09_tomshardware_intel-extreme-multichiplet-12x-hbm5-14a]] — Tom's Hardware：**Intel 展示 12× 光罩極端多晶片封裝概念：16 個 14A die + 8 個 18A-PT 底座 + 24 HBM5；EMIB-T+UCIe-A+Foveros Direct 三層互連；超越 TSMC CoWoS 尺寸（概念，2028–2030+）**（2026-09-09）⭐新增
 - [[sources/2026-09-08_semieng_chip-paper-roundup-sept8]] — SemiEng Sept.8 論文彙整：**FLINT HBF LLM；M3D 6T SRAM BEOL pass-gates @ 2nm（Georgia Tech/Synopsys）；Oxford HBM-HBF HMA；可程式 SiPh 干涉儀（UiT/Stanford）；GaN EPFL**（2026-09-08）⭐新增
 - [[sources/2026-09-07_trendforce_skhynix-1c-dram-hbm4e-overtake-1b]] — TrendForce：**SK hynix 1c DRAM 各季佔比量化（10%→13%→24%→34%→35%）；1Q27 首超 1b 成主力製程；HBM4E 2027 HVM；Samsung 1c for HBM4（11.7Gbps）；1d DRAM Samsung 2026-09 開發完成 / SK hynix 2026-12；HBM5E 1d ~2030**（2026-09-07）⭐新增
 - [[sources/2026-09-04_trendforce_micron-hbm-100k-12hi-hbm4]] — TrendForce：**Micron HBM 月產能 40K–50K wsm → 100K wsm（2026年底）；+60K 增量；12-Hi HBM4 佔比年初 20–30% → 年底 ~50%；HBM4 爬坡 2×HBM3；Samsung HBM4 75K wsm / 150K HBM total；NVIDIA 8-Hi + 12-Hi HBM4 雙軌**（2026-09-04）⭐新增

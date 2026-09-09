@@ -3,7 +3,7 @@ title: "先進封裝地緣政治 / Geopolitics of Advanced Packaging"
 category: concept
 tags: [geopolitics, US-China, CHIPS-Act, supply-chain, chiplet, NAPMP, export-control, glass-substrate, standards-war, BOE, Corning, Absolics]
 created: 2026-04-26
-updated: 2026-09-06-22
+updated: 2026-09-10
 sources: [2026-08-10_trendforce_skhynix-chongqing-sale-global-reset, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-23_trendforce_china-osat-sj-semiconductor-ipo, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-08-05_3dincites_iftle636, 2026-03-23_trendforce_musk-terafab-tsmc-packaging, 2026-04-22_trendforce_sk-hynix-indiana-us-plant, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-16_nokia_pennsylvania-atp-expansion, 2026-06-30_amkor-ir_arizona-7billion-groundbreaking, 2026-06-30_digitimes_us-packaging-capacity-10pct-2032, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-10_tomshardware_micron-250b-us-investment-globalwafers, 2026-07-10_semieng_chip-week-146, 2026-07-14_trendforce_huawei-baidu-npo-msa, 2026-08-21_semieng_chip-week-152]
 related: [wiki/concepts/advanced-packaging-market.md, wiki/entities/amkor.md, wiki/entities/ase-group.md, wiki/technologies/ucie.md]
 ---
@@ -639,3 +639,31 @@ SemiEngineering 分析（2026-08-15）：中國遺留製程（Legacy Node，>28n
 - 中訊半導體 InP 現狀：2~4 吋單晶試產，良率 ~30%，4 吋量產化推進中，6 吋 R&D，1H26 無商業收入。
 - 武漢天源為環保公司轉型，代表中國「非傳統資本入局半導體」新趨勢。
 - 對比：日本**住友化學** 已於 2026-08-31 正式啟動 4 吋 InP 磊晶晶圓量產（25 年 GaAs/GaN 磊晶經驗技術轉移，JPY 100 億 2030 年代中期目標）——日本高品質 InP 供給多元化，可緩解 CPO 雷射源短缺。
+
+### ⭐ 2026-09-08 更新：CXMT LPDDR6 量產啟動（12,800 Mbps）；全球 DRAM 市占首破 9%；HBM AP 投資 RMB 90 億
+
+*Sources: [[sources/2026-09-08_trendforce_cxmt-lpddr6-12800mbps-apple-hbm]]*
+
+**CXMT LPDDR6 量產（2026-09）**：
+- 首發：小米 18 Fold（旗艦折疊機）
+- 規格：12,800 Mbps（= Samsung 同等，低於 SK hynix 目標 14,400 Mbps）
+- vs LPDDR5X：+60% 峰值頻寬，-20% 功耗
+
+**2Q26 全球 DRAM 市占更新**：
+| 廠商 | 2Q26 市占 | 1Q26 市占 | 變化 |
+|------|-----------|-----------|------|
+| Samsung | 39.4% | — | — |
+| SK hynix | 24.9% | — | — |
+| Micron | 23.3% | — | — |
+| **CXMT** | **9.5%** | **7.6%** | **+1.9pp** |
+
+**CXMT HBM + 先進封裝投資**：
+- RMB **90 億**（總 IPO 募資 295 億的 30%）專項投入 HBM 及相關**先進封裝技術**
+- HBM 被明確列為「關鍵開發優先項目」——中國 DRAM 廠首次在 IPO 文件量化 AP 投資
+- 結合此前記錄：CXMT 已加入 JEDEC SPHBM4 工作組（2026-07）、200 倍超額 IPO（2026-07）——中國 DRAM 生態「資本+標準+量產」三輪驅動格局進一步強化
+
+**Apple 供應關係半公開化**：
+- CXMT GM Zhao Lun：「歡迎全球高品質客戶合作」（間接確認 Apple 洽談）
+- 限制：CXMT 2027 年產能 95% 稼動率已全訂滿，無法完全滿足 Apple ~6 億 GB 潛在需求
+
+**地緣政治含義**：中國 DRAM 在移動記憶體規格上已與三星同等（12,800 Mbps），在 DRAM 市占上以 9.5% 確立第四名——中國半導體實力從「跟隨追趕」進入「同等規格競爭」的新階段。

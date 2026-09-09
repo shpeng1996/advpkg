@@ -3,7 +3,7 @@ title: "NVIDIA Corporation"
 category: entity
 tags: [fabless, GPU, AI-accelerator, HBM4, CoWoS, SoIC, Rubin, Feynman, NVL576, CPO, Spectrum-X, Constellation]
 created: 2026-05-03
-updated: 2026-08-31
+updated: 2026-09-10
 sources: [2026-05-24_techtimes_nvidia-computex2026-cowos, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-03-18_trendforce_nvidia-rubin-feynman-soic, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-06_trendforce_google-tpu-cautious-adoption-nvidia, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-06-01_trendforce_nvidia-vera-rubin-tsmc-20pct-revenue, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-19_techtimes_vera-rubin-hbm4-suppliers, 2026-06-14_digitaltrends_tsmc-copos-glass-temporary-carrier, 2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b, 2026-07-27_trendforce_presscenter_cpo-switches-nvidia-broadcom-coupe]
 related:
   - wiki/entities/tsmc.md
@@ -198,3 +198,13 @@ related:
 - MediaTek 提供 **NVLink Fusion 平台**（NVLink Fusion Chiplet + NVLink-C2C + NVHBM）作為超大規模業者開發客製加速器的設計基礎
 - Amazon 已採用類似架構（Trainium 自研晶片 + NVIDIA 互連）；即使超大規模業者以自研 XPU 取代 NVIDIA GPU，仍須依賴 NVIDIA 互連、網路與機架基礎設施
 - 先進封裝直接受益：**ASE** 與 **Sigurd Microelectronics**（與 NVIDIA/MediaTek/TSMC/Google 均有長期合作）
+
+### ⭐ 2026-06-10 更新：NVIDIA 評估以 Intel 封裝合封 Feynman 架構多 GPU die（2028）
+
+*Sources: [[sources/2026-06-10_tomshardware_google-intel-emib-3m-tpu-skhynix]]*
+
+**Feynman + Intel 封裝評估（The Information / Tom's Hardware）**：
+- NVIDIA 正評估由 Intel 封裝 Feynman 架構（2028）中將 **4 個 GPU die 合封為一單元**的方案
+- 前提：SK hynix HBM-on-EMIB 驗證需通過，否則 Feynman 仍需依賴 TSMC CoWoS
+- **雙軌並行**：目前 NVIDIA 評估 TSMC（A16+SoIC）與 Intel（14A/18A+EMIB-T）兩條路線（此前 wiki 已記錄）；本文證實評估具體對象為 Feynman 多 die 合封
+- **分析師觀點**：ASIC 客戶（Google、Meta）可較早採用 EMIB；帶寬需求高的 GPU（NVIDIA）須等待 SK hynix 驗證才能跟進——因此 Feynman 2028 採用 Intel 封裝的機率取決於 SK hynix 驗證進度

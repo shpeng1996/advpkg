@@ -3,7 +3,7 @@ title: "SK Hynix"
 category: entity
 tags: [memory, HBM, HBM4, advanced-packaging]
 created: 2026-04-24
-updated: 2026-09-09
+updated: 2026-09-10
 sources: [2026-08-24_trendforce_hot-chips-2026-samsung-zhbm-skhynix-emib, 2026-08-19_trendforce_skhynix-silicon-valley-hbm-codesign-team, 2026-08-17_trendforce_samsung-skhynix-1h26-investment-nvidia-absent, 2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor, 2026-08-10_trendforce_skhynix-chongqing-sale-global-reset, 2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab, 2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h, 2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-04-22_trendforce_sk-hynix-pt7-cheongju, 2026-04-22_trendforce_sk-hynix-indiana-us-plant, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-03-03_trendforce_sk-hynix-hbm4-tight-gaps, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-05_trendforce_hbf-equipment-race-sandisk-hanmi, 2026-06-11_trendforce_skhynix-3x-wafer-2034-375layer-nand, 2026-06-20_techtimes_skhynix-hbm4e-12layer-samples, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-24_techtimes_sk-hynix-dethroned-samsung-ddr5-hbm4, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-06-25_techtimes_sk-hynix-nasdaq-adr-29b, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-22_trendforce_skhynix-q2-record-margin, 2026-07-21_trendforce_samsung-cxl-32-skhynix-imte, 2026-07-24_trendforce_skhynix-3d-stacked-dram-on-logic-on-device-ai, 2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b]
 related:
   - wiki/entities/samsung.md
@@ -401,3 +401,13 @@ SK hynix 持有 NVIDIA Vera Rubin HBM 訂單約 **70%**（Jan 2026 報導）；�
 **Industry Implication**：
 - 若 SK hynix 確認，Samsung/Micron 亦可能評估 Intel Foundry → Intel IFS 潛在重要新業務
 - 強化 HBM base die 成為 Intel Foundry 的戰略切入點（與 EMIB-T 封裝業務協同）
+
+### ⭐ 2026-06-10 更新：SK hynix 啟動 HBM-on-EMIB 封裝驗證（Intel Foundry）
+
+*Sources: [[sources/2026-06-10_tomshardware_google-intel-emib-3m-tpu-skhynix]]*
+
+**HBM-on-EMIB 驗證啟動（Tom's Hardware / The Information）**：
+- SK hynix 正式測試其 HBM 堆疊能否在 Intel EMIB 封裝（而非 TSMC CoWoS 矽中介層）上穩定運作
+- 驗證項目：功率供給路徑、熱行為、訊號完整性——達到 AI 加速器等級要求
+- **戰略意義**：SK hynix 在 Vera Rubin 供應份額預計 ~70%（UBS），其 HBM 認證結果直接決定 Intel EMIB 能否進入 NVIDIA 旗艦 AI GPU 供應鏈
+- 此驗證與「SK hynix 評估 Intel Foundry 作為 HBM4E base die 供應商」（2026-08-31 條目）形成雙向合作框架：**封裝端（HBM-on-EMIB）+ 製造端（base die 代工）**

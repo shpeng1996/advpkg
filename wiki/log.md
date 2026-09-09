@@ -3140,3 +3140,28 @@ an（2028–2029 量產世代）為 CoPoS 最可能的首批量產客戶——�
   1. **Micron HBM 產能首次具體量化至 100K wsm 年底目標**：此前 wiki 缺乏 Micron HBM 的絕對產能數字。三廠首次以同一來源並排比較：SK hynix/Samsung 各 150K–200K wsm，Micron 100K wsm——確立 Micron 仍為市場追趕者（約為對手 1/3–1/2），但增速（+60K wsm / +100–150% YoY）為業界最強。NVIDIA 同步引入 8-Hi HBM4 作為熱管理替代配置，打破「Vera Rubin 僅用 12-Hi」的市場認知。
   2. **Samsung vs SK hynix HBM4 製程策略分歧首次量化**：Samsung 採 1c DRAM（速度優先，11.7 Gbps）、SK hynix 以 1b DRAM（量產穩定優先）——此策略差異解釋了兩家在 HBM4 市佔與技術定位上的分化。SK hynix 1c DRAM 逐季爬坡時程（10→13→24→34→35%）首次在 wiki 完整記錄，為後續 HBM4E 製程討論奠定基礎。
   3. **1d DRAM 開發競賽時程確立（HBM5E 世代 ~2030）**：Samsung 2026-09 目標完成 1d 開發，SK hynix 落後 3–6 個月——wiki 首次記錄 1d DRAM 開發競賽具體時程及其在 HBM5E（~2030）的應用計畫。
+
+## [2026-09-10] collect | 每日自動蒐集 — Intel EMIB-T 業務突破（Google 3M TPU 訂單）；CXMT LPDDR6 量產；Intel 極端多晶片封裝願景
+- 搜尋查詢數：7 組（TSMC CoWoS Sep 2026；HBM4/HBM5 Sep 2026；Intel EMIB/Foveros Sep 2026；FOPLP/UCIe Sep 2026；SemiEng Sep 9-10 2026；TrendForce Sep 8-10；Intel XBM/extreme chiplet 2026）
+- 成功抓取：3 篇（articles/ 2 篇（Google-Intel TPU / CXMT LPDDR6）, articles/ 1 篇（Intel 極端多晶片，partial from search data）, papers/ 0 篇, reports/ 0 篇）
+- 失敗/跳過：多篇（SemiEng Week#155 尚未發布（預計 2026-09-11）；SemiEng Blog Review Sept.9 非封裝主題跳過；Tom's Hardware Intel 極端多晶片 URL 過長 403 → 以搜尋摘要重建；大多數 Sep 9-10 TrendForce 文章重複已收錄）
+- 學術代理：UNAVAILABLE ✗
+- 新增 raw 檔案：3 篇
+  - raw/articles/2026-06-10_tomshardware_google-intel-emib-3m-tpu-skhynix-hbm-qualification.md（✓ 新，補收錄 6/10 重要漏收文章）
+  - raw/articles/2026-09-08_trendforce_cxmt-lpddr6-mass-production-12800mbps-apple.md（✓ 新）
+  - raw/articles/2026-09-09_tomshardware_intel-extreme-multichiplet-12x-reticle-hbm5-14a-18a.md（✓ 新，partial）
+- 新增 wiki 頁面：3 頁
+  - wiki/sources/2026-06-10_tomshardware_google-intel-emib-3m-tpu-skhynix.md（✓ 新）
+  - wiki/sources/2026-09-08_trendforce_cxmt-lpddr6-12800mbps-apple-hbm.md（✓ 新）
+  - wiki/sources/2026-09-09_tomshardware_intel-extreme-multichiplet-12x-hbm5-14a.md（✓ 新）
+- 更新 wiki 頁面：6 頁
+  - wiki/entities/intel.md（⭐ Google 300 萬 TPU 訂單確認；SK hynix HBM-on-EMIB 驗證啟動；EMIB vs CoWoS 首次成本量化；Intel 12× 極端多晶片封裝概念；updated 2026-09-10）
+  - wiki/technologies/emib.md（⭐ Google 訂單；EMIB/CoWoS 成本比較；SK hynix HBM 驗證；12× 光罩極端擴展願景；updated 2026-09-10）
+  - wiki/entities/sk-hynix.md（⭐ HBM-on-EMIB 封裝驗證啟動（雙向合作：封裝端+製造端）；updated 2026-09-10）
+  - wiki/entities/nvidia.md（⭐ Feynman 2028 評估 Intel 封裝（合封 4 GPU die）；updated 2026-09-10）
+  - wiki/concepts/geopolitics-advanced-packaging.md（⭐ CXMT LPDDR6 量產; 2Q26 DRAM 市占 9.5%; RMB 90億 AP投資; Apple 供應半公開; 中國 DRAM 進入「同等規格競爭」新階段；updated 2026-09-10）
+  - wiki/index.md（頁面數 444→447；來源數 397→400；3 條新 source 條目；updated 2026-09-10）
+- 主要新知識：
+  1. **Intel EMIB-T 業務驗證里程碑（Google 300 萬 TPU + SK hynix HBM 驗證）**：wiki 此前記錄 Google/Amazon 為「討論中」；本次升級為 >300 萬顆確認訂單（2028）。更關鍵的是 SK hynix 啟動 HBM-on-EMIB 驗證——這是 EMIB 從「ASIC 封裝替代」升格為「NVIDIA GPU 供應鏈可能選項」的關鍵門檻。EMIB vs CoWoS 成本比：數百美元 vs $900–1,000/片（Bernstein）是 wiki 首次量化此比較。
+  2. **CXMT LPDDR6 量產確立中國 DRAM 規格競爭新地位**：12,800 Mbps 與 Samsung 同等（vs SK hynix 目標 14,400 Mbps），2Q26 全球市占 9.5% 確立第四名。更重要的是 RMB 90 億的 HBM + 先進封裝專項投資——中國 DRAM 廠首次在 IPO 文件明確量化 AP 投資規模，顯示中國 HBM 自主化戰略進入「資本充分配置」階段。
+  3. **Intel 12× 光罩極端多晶片封裝概念**：首次展示超越 TSMC CoWoS 尺寸（12× vs ~9.5×）的技術可行性架構（14A+18A-PT+EMIB-T+Foveros Direct 3D+UCIe-A），以 24 HBM5 堆疊為目標。代表 Intel 從「CoWoS 替代方案」到「超大封裝新主張者」的戰略轉型論述。
