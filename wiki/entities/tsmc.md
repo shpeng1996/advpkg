@@ -3,8 +3,8 @@ title: "台積電 / TSMC"
 category: entity
 tags: [foundry, advanced-packaging, CoWoS, SoIC, CoPoS, COUPE, CPO, InFO, WMCM, aLSI, MRAM, 3nm-pricing]
 created: 2026-04-24
-updated: 2026-09-07
-sources: [2026-04-24_initial-survey, 2026-04-13_trendforce_copos-pilot, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2025-12-18_trendforce_apple-wmcm-a20, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-01-20_trendforce_tsmc-wmcm-apple, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap, 2026-04-23_trendforce_tsmc-roadmap-a12-a13-no-high-na-euv, 2026-05-07_trendforce_tsmc-us-expansion-250b-arizona, 2026-05-12_focustaiwan_tsmc-capex-31b-arizona-20b, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-28_reuters_tsmc-kevin-zhang-energy-efficiency, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-09_financialcontent_tsmc-130k-cowos-wafers, 2026-06-09_digitimes_tsmc-cowos-soic-capacity-symposium, 2026-06-15_trendforce_tsmc-cowos-gap-narrowing-130k-200k-wafers, 2026-06-17_digitimes_amkor-tsmc-10year-arizona-deal, 2026-06-17_trendforce_tsmc-amkor-10year-arizona-advanced-packaging, 2026-06-21_tomshardware_tsmc-fab-expansion-roadmap, 2026-06-27_tmtpost_tsmc-cowos-capacity-targets-2026-2027, 2026-07-02_trendforce_samsung-sf2p-plus-tsmc-n2-roadmap, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-22_trendforce_tsmc-2027-price-hike-hpc, 2026-07-20_trendforce_tsmc-265b-arizona-intel-novalake, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-08-17_trendforce_tsmc-arizona-profit-663pct-1h26, 2026-06-10_tomshardware_tsmc-fab-expansion-roadmap-n2-cowos-soic]
+updated: 2026-09-11
+sources: [2026-09-10_trendforce_tsmc-august-revenue-nt514b-record-fourth-month, 2026-09-10_trendforce_tsmc-taichung-14nm-p1-p2-2027-ahead-of-plan, 2026-04-24_initial-survey, 2026-04-13_trendforce_copos-pilot, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2025-12-18_trendforce_apple-wmcm-a20, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-01-20_trendforce_tsmc-wmcm-apple, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap, 2026-04-23_trendforce_tsmc-roadmap-a12-a13-no-high-na-euv, 2026-05-07_trendforce_tsmc-us-expansion-250b-arizona, 2026-05-12_focustaiwan_tsmc-capex-31b-arizona-20b, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-28_reuters_tsmc-kevin-zhang-energy-efficiency, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-09_financialcontent_tsmc-130k-cowos-wafers, 2026-06-09_digitimes_tsmc-cowos-soic-capacity-symposium, 2026-06-15_trendforce_tsmc-cowos-gap-narrowing-130k-200k-wafers, 2026-06-17_digitimes_amkor-tsmc-10year-arizona-deal, 2026-06-17_trendforce_tsmc-amkor-10year-arizona-advanced-packaging, 2026-06-21_tomshardware_tsmc-fab-expansion-roadmap, 2026-06-27_tmtpost_tsmc-cowos-capacity-targets-2026-2027, 2026-07-02_trendforce_samsung-sf2p-plus-tsmc-n2-roadmap, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-22_trendforce_tsmc-2027-price-hike-hpc, 2026-07-20_trendforce_tsmc-265b-arizona-intel-novalake, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-08-17_trendforce_tsmc-arizona-profit-663pct-1h26, 2026-06-10_tomshardware_tsmc-fab-expansion-roadmap-n2-cowos-soic]
 related:
   - wiki/technologies/cowos.md
   - wiki/technologies/soic.md
@@ -33,7 +33,23 @@ related:
 
 ## 近期動態 / Recent Developments
 
-- **2026-09-03（⭐最新）**：**SEMICON Taiwan 2026：TSMC 設備需求半年暴增 90%；20 座晶圓廠同步建設「仍不夠」**（TrendForce 2026-09-03，引述自由時報、經濟日報、科技新報）：
+- **2026-09-10（⭐最新）**：**TSMC 8 月 2026 營收 NT$514.8B（+53.3% YoY），史上首破 NT$500B，連續第 4 個月創歷史新高；2nm 首次貢獻營收**（TrendForce 2026-09-10）：
+  - **8 月 2026 月收入**：NT$514.8B（+10.1% MoM, +53.3% YoY）——史上首次超越 NT$500B
+  - **A20 Pro（2nm）量產首季出貨** 驅動：iPhone 18 Pro + iPhone Duo（Apple 首款折疊 iPhone）搭載 A20 Pro，2nm 正式進入 TSMC 財報收入貢獻
+  - **1-8 月累計**：NT$3.39T（+39.3% YoY）；2026 全年 USD 成長目標 >40%（CC Wei 法說承諾）
+  - **代工市占**：TSMC Q2 72.5%，Samsung 5.9%，SMIC 5.4%
+  *Source: TrendForce 2026-09-10 → [[sources/2026-09-10_trendforce_tsmc-august-revenue-nt514b]]*
+
+- **2026-09-10（⭐最新）**：**TSMC 台中 1.4nm P1 廠提前至 2H27 量產（原計畫 2028）；三方競賽：TSMC 2H27 > Intel 2028 > Samsung 2029**（TrendForce 2026-09-10）：
+  - **台中中科二期 P1**：樓板施工中，2027-04 完工，**2H27 量產**（提前半年以上）
+  - **P2**：基礎施工中，2027-10 完工，2028 量產；P3 建照已取；P4 申請中
+  - **四廠全部 2028 年完工**，年產值估 ≥NT$500B（可能低估）
+  - **TSMC 傳洽購 AUO L7+L5C 廠房**用於 **CPO（共封裝光學）大尺寸光電整合**——首次確認 AUO 廠房收購目的為 CPO
+  - **Samsung 1.4nm 推遲至 2029**（原計畫 2027），落後 TSMC 超過 2 年
+  - ASML、TEL、KLA 已進駐台中七期重劃區
+  *Source: TrendForce 2026-09-10 → [[sources/2026-09-10_trendforce_tsmc-taichung-14nm-2027]]*
+
+- **2026-09-03（次最新）**：**SEMICON Taiwan 2026：TSMC 設備需求半年暴增 90%；20 座晶圓廠同步建設「仍不夠」**（TrendForce 2026-09-03，引述自由時報、經濟日報、科技新報）：
   - **Co-COO Cliff Hou**：設備需求從 2025 年底 1× 攀升至 2026 年 7 月 **1.9×**，半年增幅 **90%**，是其 30 年職涯中從未見過的速度
   - 台灣同步建設 **13 座晶圓廠**，全球合計接近 **20 座**（以往最多 4–5 座），且 Hou 明確表示「**仍不夠用**」
   - **生產模式典範轉移**：從線性流程轉為強耦合協作——每個參與方不再只確保自身良率，還需確保其成果能被下游夥伴完整利用，要求供應鏈更深度整合

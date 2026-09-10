@@ -3,7 +3,7 @@ title: "先進封裝熱管理 / Thermal Management in Advanced Packaging"
 category: concept
 tags: [thermal-management, liquid-cooling, 3D-IC, CoWoS, heat-dissipation, TIM, ECTC-2025, GaN, power-delivery, co-design]
 created: 2026-04-25
-updated: 2026-08-29
+updated: 2026-09-11
 sources: [2025-12-01_semiengineering_thermal-management, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-02_trendforce_samsung-hbm5-computex2026, 2026-05-21_semieng_hi-roadmap-nature-paper-intel, 2026-08-13_semieng_1mw-rack-debate-thermal, 2026-04-27_semieng_semiconductor-materials-misbehave, 2026-08-21_trendforce_chip-packaging-heat-ai-bottleneck-cpo-stco]
 related:
   - wiki/technologies/cowos.md
@@ -376,3 +376,43 @@ KAIST 金正浩（Kim Joung-ho）教授提出，AI 時代記憶體層次將從 H
 **熱共優化（材料+封裝+晶片設計）**：可降低熱阻達約 **40%**；須在設計早期納入封裝結構、材料與晶片熱點布局的整合考量。
 
 **供應鏈影響**：冷板、歧管、快速斷開接頭、CDU（冷卻分配單元）、熱交換器的規格與需求將隨 AI 機架功耗上升而大幅提升。
+
+---
+
+### ⭐ 2026-09-11 更新：Amkor 兩相冷卻預判 + IBM Nanostack 熱整合需求 + FTCO 框架
+
+*Source: SemiEngineering Week #154 2026-08-24 → [[sources/2026-08-24_semieng_multi-die-assemblies-dominate-2nm]]*
+
+#### Amkor David McCann：兩相冷卻（Two-Phase Cooling）為下一個轉型點
+
+**技術原理**：兩相冷卻利用工作流體的**液→氣相變潛熱**帶走熱量：
+- 液態冷卻劑流入晶片熱點 → 吸熱蒸發（汽化潛熱：水 2,260 kJ/kg；工業冷媒 200–400 kJ/kg）
+- 氣相返回冷凝器，循環利用
+- 散熱密度：**單相液冷 ~100 W/cm² → 兩相沸騰 ~300–1,000 W/cm²**
+
+**觸發條件**：2nm 以下多晶粒封裝（chiplet + HBM 堆疊）局部熱點功率密度可超過 **1 kW/cm²**，超出單相液冷上限；McCann 預判兩相冷卻將成為必要技術路徑而非可選項。
+
+**挑戰**：
+- 可靠性：相變產生的壓力波動可能影響封裝焊點
+- 材料相容性：冷媒與封裝有機基板、underfill 的長期兼容性需驗證
+- 成本：兩相系統所需精密閥門、相分離器增加 BOM 成本
+
+**wiki 更新**：本條目補充了 TSMC 2026-09-02 路線圖中「兩相沸騰（探索中）」的工程細節，與 Amkor 的產業化時程預判相呼應——業界對兩相冷卻的態度正從「長期研究」轉向「確定性路線圖」。
+
+#### IBM Nanostack（3T Library）熱整合需求
+
+IBM Nanostack 的 3D 接合（beveled edge stacking）帶來特有熱管理挑戰：
+- 垂直堆疊層數增加（3T = 三層晶片）→ 垂直熱阻累積，需 **TSV 貫通冷卻路徑** 或薄化晶片降低熱阻
+- +50% performance / +70% energy efficiency / +40% density 的同步實現，要求 thermal budget 與 performance budget 在設計初期同步優化
+
+#### FTCO（Fab Technology Co-Optimization）框架
+
+**定義**：FTCO（Fab Technology Co-Optimization）是在 DTCO（Design-Technology Co-Optimization）基礎上，進一步整合**機械應力優化**與**散熱優化**的三維協同框架：
+
+| 框架 | 涵蓋範圍 |
+|------|---------|
+| DTCO | 製程設計協同 |
+| STCO | 系統-技術協同 |
+| **FTCO** | DTCO + 機械應力 + 散熱 同步優化 |
+
+**意義**：2nm 以下多晶粒封裝已無法按序優化（先設計、再考慮封裝、最後考慮散熱）；FTCO 要求在 tape-out 前，封裝結構/熱路徑/機械應力/製程設計四者同步收斂。這是 Amkor 在 Arizona 廠規劃時採用的方法論。

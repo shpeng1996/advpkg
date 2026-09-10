@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-09-10
-**頁面總數 Total Pages**：447
-**原始來源數 Sources**：400
+**更新時間 Updated**：2026-09-11
+**頁面總數 Total Pages**：452
+**原始來源數 Sources**：404
 
 ---
 
@@ -15,13 +15,14 @@
 ## 實體 Entities（公司、組織）
 
 - [[entities/powertech]] — Powertech Technology（力成科技）；全球最大合約記憶體封測廠；**PiFO FOPLP NT$70B 投資（2026-08-31）；2027 年中量產；AMD+Broadcom 全額預訂至 2030；新加坡 Broadcom JV；CPO 2027**⭐新增
-- [[entities/tsmc]] — 台積電；全球最大晶圓代工廠；CoWoS/SoIC 技術領導者；**設備需求半年 +90%（1×→1.9×）；20 座晶圓廠「仍不夠」；生產模式從線性轉為協作**（SEMICON Taiwan 2026-09-03）；封裝功耗 600W→4,100W（2024→2029）；CoWoS 14× 光罩 2029；Arizona 1H26 獲利 NT$36B（+663% YoY）⭐更新
+- [[entities/tsmc]] — 台積電；全球最大晶圓代工廠；CoWoS/SoIC 技術領導者；**8 月 2026 NT$514.8B（+53.3% YoY）史上首破 NT$500B；2nm 首次貢獻營收（A20 Pro）；1.4nm P1 2H27 量產（提前）；Samsung 1.4nm 推遲至 2029；設備需求半年 +90%**（2026-09-10）；代工市占 72.5%；Arizona 1H26 獲利 NT$36B（+663% YoY）⭐更新
 - [[entities/intel]] — 英特爾；IDM；**潛在 SK hynix HBM4E base die 供應商（傳聞）；若確認可延伸至 Samsung/Micron——HBM 生態系雙端切入（EMIB-T 封裝 + base die 代工）**（2026-08-31）；EMIB-T 2H27→2028→2029 三段時程；40% GM / 30% OM；Clearwater Forest 12 EMIB tiles；DRAM 製造排除⭐更新
 - [[entities/samsung]] — 三星；IDM + Foundry + Memory；**cHBM→aHBM→zHBM 三階段路線圖（Hot Chips 2026 完整規格）：PHY>8×4mm→~8.5×1.5mm；HPB>35% 峰值溫降；zHBM 4-high / -70% I/O 功耗 / 2029+**（Tom's Hardware 2026-09-01）；HBM5 2× HBM4E / 2nm base die / 2028量產；OpenAI Jalapeño HBM4；GAIA PIM⭐更新
 - [[entities/sk-hynix]] — SK Hynix；HBM 市場領導者；**評估 Intel Foundry 作為 HBM4E base die 供應商（傳聞）；TSMC HBM4 base die 成本 3–4× 更高；HBM4 使用 TSMC 12nm-class base die**（2026-08-31）；Nature Electronics CPO 路線圖；Indiana HBM4E 量產 3Q29；Hot Chips 2026：混合接合延後至 HBM5；EMIB 列入 2.5D 路線圖；Vera Rubin ~70% HBM 份額⭐更新
 - [[entities/asmpt]] — ASMPT Limited；TCB/混合接合/Photonics-CPO 設備領導廠商；Q1 2026 訂單 27M +71.6% YoY；NEXX 出售給 AMAT⭐新增
-- [[entities/ase-group]] — ASE Group；全球最大 OSAT；CoWoP 面板封裝；**SPIL 斗六廠破土（TWD 100 億/2028 一期）；2026 CapEx $10.5B；2027 LEAP 目標 $7.5B+；FOPLP Q1 2027**；AMD EFB 合作；**COO 吳田玉明確表態 CoWoS/EMIB 不互斥；Sigurd 並列為 NVIDIA-MediaTek XPU 生態系封裝受益者**（2026-09-01）⭐更新
-- [[entities/amkor]] — Amkor；全球第二大 OSAT；Arizona $70 億廠（2028 投產）；Intel EMIB 外包夥伴⭐新增
+- [[entities/ase-group]] — ASE Group；全球最大 OSAT；CoWoP 面板封裝；**SPIL 斗六廠破土（TWD 100 億/2028 一期）；2026 CapEx $10.5B；2027 LEAP 目標 $7.5B+；FOPLP Q1 2027**；AMD EFB 合作；**COO 吳田玉明確表態 CoWoS/EMIB 不互斥；Sigurd 並列為 NVIDIA-MediaTek XPU 生態系封裝受益者**（2026-09-01）；**interposer 路線圖 40× 確認（5.5×→9×→12×→40×；C.P. Hung, SEMI Strategic Materials Conference）**（2026-08-24）⭐更新
+- [[entities/ibm]] — IBM Research；3D 封裝研究先行者；**Nanostack 3T library +50% perf / +70% energy eff / +40% density；beveled edge stacking；sub-2nm 商業化最激進路徑**（2026-08-24）⭐新增
+- [[entities/amkor]] — Amkor；全球第二大 OSAT；Arizona $70 億廠（2028 投產）；Intel EMIB 外包夥伴；**CEO McCann 預判兩相冷卻（two-phase cooling）為下一散熱轉型**（2026-08-24）⭐更新
 - [[entities/ev-group]] — EV Group（EVG）；混合接合設備領導者；ECTC 2025 展示無光罩微影與層轉移⭐新增
 - [[entities/besi]] — BE Semiconductor（Besi）；D2W 混合接合設備主供應商；Datacon 8800 CHAMEO；Kinex 平台（Applied Materials 持股 9%）⭐新增
 - [[entities/tel]] — Tokyo Electron（TEL）；RDL 製程設備領導者；Kumamoto 研發基地（¥470 億，2026 春）；Eteris 合資（與 AMAT）⭐新增
@@ -67,6 +68,10 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-09-10_trendforce_chinese-ai-chipmakers-hbm-price-hike]] — TrendForce：**華為 950DT +50% 漲價（>RMB 250K）；CXMT HBM3E 試產啟動（首次確認）；Huawei HiBL 1.0/HiZQ 2.0 自有 HBM 命名；灰市 HBM 溢價 +60~80%；DeepSeek 16 萬卡 Ascend 950DT 訂單（內蒙古資料中心）**（2026-09-10）⭐新增
+- [[sources/2026-09-10_trendforce_tsmc-august-revenue-nt514b]] — TrendForce：**TSMC 8 月 2026 NT$514.8B 史上首破 NT$500B（+53.3% YoY）；第 4 個月連續創歷史新高；2nm 首次貢獻營收（A20 Pro）；代工市占 72.5%；iPhone Duo（首款折疊 iPhone）搭載 A20 Pro 2nm**（2026-09-10）⭐新增
+- [[sources/2026-09-10_trendforce_tsmc-taichung-14nm-2027]] — TrendForce：**TSMC 台中 1.4nm P1 2H27 量產（提前半年）；AUO L7+L5C 廠房確認用於 CPO 光電整合；Samsung 1.4nm 推遲至 2029（落後 TSMC 2 年）；ASML/TEL/KLA 進駐台中七期**（2026-09-10）⭐新增
+- [[sources/2026-08-24_semieng_multi-die-assemblies-dominate-2nm]] — SemiEng Week#154：**多晶粒封裝主導 2nm 以下；IBM Nanostack 3T +50%/+70%/+40%；ASE interposer 40× 路線圖；Amkor 兩相冷卻預判；FTCO 框架；2nm 光罩 ~1M CPU 小時**（2026-08-24）⭐新增
 - [[sources/2026-06-10_tomshardware_google-intel-emib-3m-tpu-skhynix]] — Tom's Hardware：**Google 下單 Intel 封裝 >300 萬顆 TPU（2028）；SK hynix 啟動 HBM-on-EMIB 驗證；EMIB vs CoWoS 成本首次量化（數百美元 vs $900–1000/片）；NVIDIA 評估 Feynman 採 Intel 封裝；EMIB-T 包 utilization 90% vs CoWoS 60%**（2026-06-10，補收錄）⭐新增
 - [[sources/2026-09-08_trendforce_cxmt-lpddr6-12800mbps-apple-hbm]] — TrendForce：**CXMT LPDDR6 12,800Mbps 量產啟動（小米 18 Fold）；全球 DRAM 市占 2Q26 升至 9.5%（第四名）；2027 產能 95% 滿載；HBM + 先進封裝投資 RMB 90 億；Apple 供應半公開**（2026-09-08）⭐新增
 - [[sources/2026-09-09_tomshardware_intel-extreme-multichiplet-12x-hbm5-14a]] — Tom's Hardware：**Intel 展示 12× 光罩極端多晶片封裝概念：16 個 14A die + 8 個 18A-PT 底座 + 24 HBM5；EMIB-T+UCIe-A+Foveros Direct 三層互連；超越 TSMC CoWoS 尺寸（概念，2028–2030+）**（2026-09-09）⭐新增

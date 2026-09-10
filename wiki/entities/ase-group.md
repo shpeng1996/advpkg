@@ -3,8 +3,8 @@ title: "ASE Group / 日月光投控"
 category: entity
 tags: [OSAT, advanced-packaging, CoWoP, FOPLP, chiplet, CPO, LEAP]
 created: 2026-04-25
-updated: 2026-08-20
-sources: [2026-08-05_trendforce_tsmc-cowos-cow-outsourcing-osat, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2026-05-08_aseglobal_ase-wus-kaohsiung-focoes-hub, 2026-05-26_semiconductor-digest_ase-310mm-plp-ectc2026, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-11_trendforce_ase-spil-zhunan-plant, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-07-01_trendforce_ase-price-hike-20pct]
+updated: 2026-09-11
+sources: [2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below, 2026-08-05_trendforce_tsmc-cowos-cow-outsourcing-osat, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2026-05-08_aseglobal_ase-wus-kaohsiung-focoes-hub, 2026-05-26_semiconductor-digest_ase-310mm-plp-ectc2026, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-11_trendforce_ase-spil-zhunan-plant, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-07-01_trendforce_ase-price-hike-20pct]
 related:
   - wiki/technologies/cowos.md
   - wiki/technologies/copos.md
@@ -32,7 +32,14 @@ related:
 
 ## 近期動態 / Recent Developments
 
-- **2026-08-19（⭐最新）**：**COO 吳田玉明確表態 CoWoS/EMIB 不互斥；ASE 可承接 EMIB-T 組裝測試業務**（TrendForce 2026-08-19）——隨 TSMC CoWoS 訂單全滿、後端封裝訂單溢出至 Intel Malaysia，ASE COO Tien Wu 公開聲明 CoWoS、EMIB 及其他封裝解決方案並不互斥，ASE 具備採購基板並為採用 Intel EMIB-T 的客戶提供組裝與最終測試服務的能力。此聲明標誌 ASE 由「TSMC CoWoS 獨家代工夥伴」策略轉向「多平台封裝服務商」定位，實質上為 Intel EMIB-T 生態系統背書。
+- **2026-08-24（⭐最新）**：**ASE 中介層路線圖確認 40× 為最終目標（C.P. Hung, SEMI Strategic Materials Conference）**——SemiEngineering Week #154 引述 ASE 技術主管 C.P. Hung 於 SEMI Strategic Materials Conference 揭示 ASE interposer 倍率路線圖：
+  - **5.5×**（當前量產）→ **9×** → **12×** → **40×**（終極目標）
+  - 此前 wiki 記錄最大倍率為 12×（2026-05 ECTC 2026 時程）；40× 為首次確認的長期節點
+  - 中介層面積倍率增長代表 AI 晶片多晶粒整合密度的幾何級提升，服務 2nm 以下世代 chiplet 封裝需求
+  - 脈絡：2nm 以下幾乎全面採用多晶粒架構（SemiEng Week #154 主題），更大中介層是承載更多晶粒的必要基礎設施
+  *Source: SemiEngineering Week #154 2026-08-24 → [[sources/2026-08-24_semieng_multi-die-assemblies-dominate-2nm]]*
+
+- **2026-08-19（次最新）**：**COO 吳田玉明確表態 CoWoS/EMIB 不互斥；ASE 可承接 EMIB-T 組裝測試業務**（TrendForce 2026-08-19）——隨 TSMC CoWoS 訂單全滿、後端封裝訂單溢出至 Intel Malaysia，ASE COO Tien Wu 公開聲明 CoWoS、EMIB 及其他封裝解決方案並不互斥，ASE 具備採購基板並為採用 Intel EMIB-T 的客戶提供組裝與最終測試服務的能力。此聲明標誌 ASE 由「TSMC CoWoS 獨家代工夥伴」策略轉向「多平台封裝服務商」定位，實質上為 Intel EMIB-T 生態系統背書。
   *Source: TrendForce 2026-08-19 → [[sources/2026-08-19_trendforce_intel-emib-t-cowos-spillover-unimicron-ase]]*
 
 - **2026-08-03（次新）**：**ASE 2026 CapEx 再上修至 US$10.5B（歷史新高）；2027 LEAP 目標翻倍至 US$7.5B+；FOPLP Q1 2027；Q4 毛利率將突破 30% 天花板**（TrendForce 2026-07-31，引述 Economic Daily News、TechNews、Storm Media + ASE 官方法說）：

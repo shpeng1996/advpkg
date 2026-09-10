@@ -3165,3 +3165,40 @@ an（2028–2029 量產世代）為 CoPoS 最可能的首批量產客戶——�
   1. **Intel EMIB-T 業務驗證里程碑（Google 300 萬 TPU + SK hynix HBM 驗證）**：wiki 此前記錄 Google/Amazon 為「討論中」；本次升級為 >300 萬顆確認訂單（2028）。更關鍵的是 SK hynix 啟動 HBM-on-EMIB 驗證——這是 EMIB 從「ASIC 封裝替代」升格為「NVIDIA GPU 供應鏈可能選項」的關鍵門檻。EMIB vs CoWoS 成本比：數百美元 vs $900–1,000/片（Bernstein）是 wiki 首次量化此比較。
   2. **CXMT LPDDR6 量產確立中國 DRAM 規格競爭新地位**：12,800 Mbps 與 Samsung 同等（vs SK hynix 目標 14,400 Mbps），2Q26 全球市占 9.5% 確立第四名。更重要的是 RMB 90 億的 HBM + 先進封裝專項投資——中國 DRAM 廠首次在 IPO 文件明確量化 AP 投資規模，顯示中國 HBM 自主化戰略進入「資本充分配置」階段。
   3. **Intel 12× 光罩極端多晶片封裝概念**：首次展示超越 TSMC CoWoS 尺寸（12× vs ~9.5×）的技術可行性架構（14A+18A-PT+EMIB-T+Foveros Direct 3D+UCIe-A），以 24 HBM5 堆疊為目標。代表 Intel 從「CoWoS 替代方案」到「超大封裝新主張者」的戰略轉型論述。
+
+## [2026-09-11] collect | 先進封裝最新動態：TrendForce 9/10 新聞 + SemiEng Week#154
+- 搜尋查詢數：7 組（CoWoS HBM 市場、TSMC 1.4nm 台中、HBM 中國地緣政治、SemiEng latest、TSMC 8月 revenue、multi-die 2nm、Huawei HBM greymarket）
+- 成功抓取：4 篇（存入 raw/articles/ 4 篇）
+  - `2026-09-10_trendforce_chinese-ai-chipmakers-hbm-price-hike-huawei-950dt.md`
+  - `2026-09-10_trendforce_tsmc-august-revenue-nt514b-record-fourth-month.md`
+  - `2026-09-10_trendforce_tsmc-taichung-14nm-p1-p2-2027-ahead-of-plan.md`
+  - `2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below.md`（補收錄 Week#154）
+- 失敗/跳過：SemiEng Week#155（2026-09-11）尚未發布（預期 2026-09-11 出刊，確認 Week#154 仍為最新）
+- 觸發 ingest：4 篇（全部）
+- 新增 source 摘要頁：4 頁
+  - `wiki/sources/2026-09-10_trendforce_chinese-ai-chipmakers-hbm-price-hike.md`
+  - `wiki/sources/2026-09-10_trendforce_tsmc-august-revenue-nt514b.md`
+  - `wiki/sources/2026-09-10_trendforce_tsmc-taichung-14nm-2027.md`
+  - `wiki/sources/2026-08-24_semieng_multi-die-assemblies-dominate-2nm.md`
+- 新增 wiki 實體頁：1 頁（`wiki/entities/ibm.md`）
+- 更新 wiki 頁面：（共 6 頁）
+  - `wiki/entities/tsmc.md`（8月 NT$514.8B 首破 NT$500B；2nm 首次貢獻營收；1.4nm P1 2H27；Samsung 1.4nm 推遲；AUO CPO 確認用途）
+  - `wiki/entities/ase-group.md`（interposer 40× 路線圖確認）
+  - `wiki/entities/amkor.md`（兩相冷卻轉型預判；FTCO 框架）
+  - `wiki/concepts/geopolitics-advanced-packaging.md`（CXMT HBM3E 試產首次確認；Huawei HiBL/HiZQ 命名體系；灰市 HBM 成本量化；DeepSeek 16萬卡 950DT 訂單）
+  - `wiki/concepts/thermal-management.md`（兩相冷卻機制；IBM Nanostack 熱整合；FTCO 三維協同框架）
+  - `wiki/index.md`（頁面總數 447→452；來源數 400→404；新增 IBM 實體）
+- 主要新知識：
+  1. CXMT HBM3E 試產啟動（中國首次本土 HBM3E 技術突破，2026-09 確認）
+  2. TSMC 8 月 2026 首破 NT$500B；2nm 正式進入 TSMC 財報收入（A20 Pro 驅動）
+  3. TSMC 台中 1.4nm P1 提前至 2H27；Samsung 落後至 2029（>2 年差距）
+  4. ASE interposer 40× 路線圖確認（此前最大記錄為 12×）
+  5. Amkor 預判兩相冷卻為 2nm 以下封裝下一個散熱轉型
+  6. FTCO（Fab Technology Co-Optimization）新方法論框架錄入
+  7. IBM Nanostack 3T library：+50%/+70%/+40% 量化指標首次錄入
+
+## [2026-09-11] ingest | 索引更新：頁面總數 452，來源數 404
+- 來源類型：batch（4 篇）
+- 觸及頁面：entities/tsmc.md, entities/ase-group.md, entities/amkor.md, entities/ibm.md（新建）, concepts/geopolitics-advanced-packaging.md, concepts/thermal-management.md（共 6 頁更新 + 1 頁新建）
+- 新增知識：見上方 collect log
+- 矛盾/修正：none（與現有 wiki 論述方向一致，均為補充而非修正）
