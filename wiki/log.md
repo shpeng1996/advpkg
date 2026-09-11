@@ -3202,3 +3202,21 @@ an（2028–2029 量產世代）為 CoPoS 最可能的首批量產客戶——�
 - 觸及頁面：entities/tsmc.md, entities/ase-group.md, entities/amkor.md, entities/ibm.md（新建）, concepts/geopolitics-advanced-packaging.md, concepts/thermal-management.md（共 6 頁更新 + 1 頁新建）
 - 新增知識：見上方 collect log
 - 矛盾/修正：none（與現有 wiki 論述方向一致，均為補充而非修正）
+
+## [2026-09-12] collect | 每日自動蒐集 — 先進封裝最新動態（2026-09-12）
+- 搜尋查詢數：7 組
+- 成功抓取：2 篇（articles/ 2, papers/ 0, reports/ 0）
+- 失敗/跳過：多篇（SemiEng Week#155 空白/未發布 1、Micron 員工獎金非封裝相關跳過 1、YMTC+CXMT HBM 文章 2025-09-02 非最新跳過 1、Samsung-Qualcomm 2nm URL 不在白名單跳過 1）
+- 學術代理：UNAVAILABLE ✗
+- 新增 wiki 頁面：0 頁
+- 更新 wiki 頁面：2 頁
+  - `wiki/technologies/copackaged-optics.md`（新增 Huawei 7.2Tbps NPO；CPO vs NPO 架構完整對比；OPEN NPO 聯盟進展；CPO/NPO 市場 $39B 2030；CSP 策略分歧表格）
+  - `wiki/concepts/geopolitics-advanced-packaging.md`（新增 OPEN NPO 中國標準戰略路線；CXMT LPDDR5X 10.667Gbps 旗艦市場突破；雙供應商里程碑；CXMT 2026-09 進展整合時間軸）
+- 新增 source 摘要頁：2 頁
+  - `wiki/sources/2026-09-11_trendforce_huawei-npo-7-2tbps-cpo-challenge.md`
+  - `wiki/sources/2026-09-11_trendforce_cxmt-lpddr5x-flagship-supply-chain.md`
+- 更新 wiki/index.md（頁面總數 452→454；來源數 404→406）
+- 主要新知識：
+  1. Huawei 7.2Tbps NPO 正式發布（超越 Broadcom CPO 6.4Tbps），確立 CPO 與 NPO 為全球光互連雙主流路線；OPEN NPO 技術規範 Q3 2026 本季預計發布
+  2. Huawei NPO 架構整合於 PCB 層（非晶片封裝內），提供中國廠商繞開 TSMC/Intel 先進封裝壁壘的替代光互連路徑——這是重要的地緣政治技術戰略洞察
+  3. CXMT LPDDR5X 速度達 10.667Gbps（與三星旗艦等同），並進入中國旗艦手機雙供應商供應鏈——中國記憶體從「中低端供應」正式突破至「旗艦市場」

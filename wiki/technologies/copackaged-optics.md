@@ -3,7 +3,7 @@ title: "共封裝光學元件 / Co-Packaged Optics (CPO) — TSMC-COUPE™ & Eco
 category: technology
 tags: [CPO, co-packaged-optics, COUPE, TSMC, GlobalFoundries, Samsung, photonics, AI, HPC, networking, OCI-MSA, DWDM, Broadcom, NVIDIA, glass-substrate, ULCVD, TGV, Spectrum-X, NVL72]
 created: 2026-04-25
-updated: 2026-09-09
+updated: 2026-09-12
 sources: [2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-05-07_trendforce_globalfoundries-silicon-photonics-scale-cpo, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-03-17_coherent_cpo-ofc2026-demo, 2026-06-07_digitimes_jcet-3d-packaging-cpo-plant, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_edn_cpo-technology-status-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-06-24_thelec_corning-glass-bridge-cpo, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-14_trendforce_umc-silith-silicon-photonics-hvm, 2026-07-14_trendforce_huawei-baidu-npo-msa, 2026-07-27_trendforce_presscenter_cpo-switches-nvidia-broadcom-coupe, 2026-06-03_3dincites_intel-foundry-emib-cpo-glass-ectc2026]
 related:
   - wiki/entities/tsmc.md
@@ -552,4 +552,57 @@ UiT（挪威北極大學）與 Stanford 合作論文：**Intracavity Laser Wavel
 - 技術要點：利用可程式化 SiPh 干涉儀網格實現腔內雷射**連續波長調諧**（無需機械移動部件）
 - CPO 相關性：TSMC COUPE WDM 縮放路線圖（1→16+ 通道）需要精確的多波長雷射控制；本技術提供電子可程式化調諧方案，降低 WDM CPO 的波長鎖定複雜度
 - 意義：補充 wiki 在 CPO WDM 元件層面（雷射源可程式化控制）的空白——既有 wiki 已記錄 COUPE 性能（0.06dB @ 112G）與 WDM 通道數路線圖，本論文為晶片級雷射波長控制的學術可行性依據
+
+---
+
+## ⭐ 2026-09-12 更新：Huawei 7.2Tbps NPO 正式發布；CPO vs NPO 雙軌架構確立；市場規模 $39B（2030）
+
+*Source: TrendForce 2026-09-11 → [[sources/2026-09-11_trendforce_huawei-npo-7-2tbps-cpo-challenge]]*
+*Event: China International Optoelectronic Exposition (CIOE), 2026-09-11*
+
+### Huawei NPO 7.2Tbps 技術規格
+
+| 指標 | 數值 |
+|------|------|
+| Huawei NPO 總頻寬 | **7.2 Tbps** |
+| 通道數 × 速率 | 36 channels × 200 Gbps |
+| 對比 Broadcom CPO 光引擎 | 6.4 Tbps |
+| 3.2Tbps NPO 部署時程 | 2026 年（本年內） |
+| 7.2Tbps NPO 廣泛部署 | ~2 年後（~2028） |
+
+### NPO vs CPO 架構對比（⭐首次完整定義並列）
+
+| 面向 | CPO（Co-Packaged Optics）| NPO（Near-Packaged Optics）|
+|------|--------------------------|---------------------------|
+| 整合層次 | **晶片封裝內**（2.5D/3D 封裝，同一基板） | **PCB 板層**（靠近晶片，非封裝內） |
+| 光學元件位置 | 光引擎直接在 switch ASIC/GPU 封裝基板上 | 光引擎在 PCB 上，較可插拔模組更靠近 IC |
+| 可替換性 | 封裝後光學元件無法單獨更換 | **插拔架構（pluggable）**，可個別替換故障元件 |
+| 先進封裝依賴度 | 高（需 CoWoS/SoIC 等 2.5D/3D 整合） | 低（PCB 級整合） |
+| 代表廠商 | NVIDIA Spectrum-X / Broadcom Bailly / TSMC COUPE | **Huawei（OPEN NPO）**；Meta/Microsoft（OCI-MSA NPO 版本） |
+| 中國廠商策略 | 技術壁壘較高（依賴 TSMC 等） | **Huawei NPO 路線繞開先進封裝壁壘** |
+
+### OPEN NPO 聯盟（中國標準主導）
+
+- 發起方：Huawei + 中國移動研究院（China Mobile Research Institute）+ 京東雲（JD Cloud）+ 20+ 供應鏈夥伴
+- 定位：中國首個 NPO 光互連 MSA（Multi-Source Agreement）
+- **技術規範發布**：Q3 2026（本季）
+- **大規模商業化目標**：2027 H1
+- 當前障礙：介面標準碎片化、互操作性不足、供應鏈協調薄弱
+
+### CPO/NPO 合計市場規模（TrendForce 更新）
+
+- **2025**：~$100M
+- **2030**：**$39B+**（此前 wiki 記錄 IDTechEx：$20B by 2036；TrendForce 此新數字更積極，含 NPO 爆炸性成長假設）
+
+### CSP 採購策略分歧（2026-09）
+
+| 陣營 | 偏好架構 | 戰略理由 |
+|------|---------|---------|
+| 中國 CSP（Alibaba、Tencent）| **NPO** | 中期主策略；透過 ODCC 推動 OPEN NPO 標準 |
+| 美國 CSP（Meta、Microsoft）| NPO + CPO | Meta/MS 同時推進 NPO（OCI-MSA NPO）與 CPO；NVIDIA/Broadcom 支持 CPO |
+| NVIDIA / Broadcom / TSMC / Intel | **CPO** | 量產已開始；Spectrum-X 出貨；COUPE 生態確立 |
+
+### 地緣政治含義
+
+Huawei NPO 路線為中國提供一條不需依賴台積電先進封裝技術（CoWoS/SoIC）即可實現高速光互連的替代路徑。中美兩大光互連標準（OPEN NPO vs OCI-MSA）平行發展，台日廠商（Molex、Luxshare 參與 OPEN NPO）同時跨足兩套生態。詳見 [[concepts/geopolitics-advanced-packaging]]。
 

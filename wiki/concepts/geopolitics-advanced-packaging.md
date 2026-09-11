@@ -704,3 +704,33 @@ SemiEngineering 分析（2026-08-15）：中國遺留製程（Legacy Node，>28n
 **地緣政治含義**：
 - 中國 AI 算力生態在 2026-09 出現「三層能力就位」：供給（CXMT HBM3E 試產 + 灰市穩定）→ 晶片（Huawei 950DT HiBL/HiZQ 系統化）→ 部署（DeepSeek 160K 卡大規模落地）
 - 美國出口管制的長期效果日益轉向「成本懲罰」而非「能力阻斷」——中國 AI 算力成本為美國的 3–5×，但能力差距從「代際落後」收窄至「規格接近但成本更高」
+
+### ⭐ 2026-09-12 更新：Huawei 7.2Tbps NPO 標準發布；CXMT LPDDR5X 速度達三星同等；進入旗艦供應鏈
+
+*Sources: [[sources/2026-09-11_trendforce_huawei-npo-7-2tbps-cpo-challenge]], [[sources/2026-09-11_trendforce_cxmt-lpddr5x-flagship-supply-chain]]*
+
+**Huawei OPEN NPO 7.2Tbps——中國光互連標準化戰略**（CIOE 2026-09-11）：
+- Huawei 在 CIOE（中國國際光電博覽會）發布 **7.2Tbps NPO 模組**（36 通道 × 200Gbps）
+- 超越 Broadcom CPO 光引擎（6.4Tbps）成為當前最高頻寬光互連公開規格
+- OPEN NPO MSA 首份技術規範預計 **Q3 2026 本季**發布；商業化目標 2027 H1
+- **戰略意涵**：Huawei NPO 路線整合於 PCB 層（非晶片封裝內），技術路徑不依賴 TSMC/Intel 主導的先進封裝（CoWoS/SoIC/EMIB），為中國提供繞開先進封裝技術壁壘的替代光互連路線
+- 全球標準分軌態勢確立：**OPEN NPO**（Huawei / 中國 CSP）vs **OCI-MSA**（Meta / Microsoft / 美國陣營）
+- 中美 CSP 策略分歧：中國 Alibaba/Tencent 以 NPO 為中期主策略（ODCC 推動）；美國 NVIDIA/Broadcom/TSMC 以 CPO 為量產主線
+- CPO+NPO 合計市場：~$100M（2025）→ **$39B+（2030）**（TrendForce 最新預測）
+
+**CXMT LPDDR5X 速度達三星/SK hynix 旗艦等級**（2026-09）：
+- CXMT LPDDR5X 最高速度：2025-05 量產初期 8.533–9.6 Gbps → **2026-09 達 10.667 Gbps**
+- 三星/SK hynix 頂級 LPDDR5X：10.7 Gbps-class → CXMT 已實質等同頂級規格
+- Samsung + CXMT 雙供應商供應中國旗艦手機（努比亞 NaviX Ultra，中興+字節跳動）
+- **里程碑意義**：中國旗艦手機首次採用韓中雙供應商記憶體（不再純依賴韓國）
+- 但仍存在差距：功耗、散熱、良率競爭力仍有提升空間
+
+**CXMT 進展整合（2026-09 時點）**：
+| 時間 | 里程碑 |
+|------|--------|
+| 2025-05 | LPDDR5X 量產啟動（8.5–9.6 Gbps） |
+| 2026-07 | 加入 JEDEC SPHBM4 工作組；IPO 200× 超額認購 |
+| 2026-09 | LPDDR5X 達 10.667 Gbps（旗艦手機供貨） |
+| 2026-09 | LPDDR6 12,800 Mbps 量產（小米 18 Fold 全球首發） |
+| 2026-09 | HBM3E 試產啟動（中國首次本土 HBM3E） |
+| 2026-09 | 2Q26 全球 DRAM 市占 9.5%（第四名） |

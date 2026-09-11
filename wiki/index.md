@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-09-11
-**頁面總數 Total Pages**：452
-**原始來源數 Sources**：404
+**更新時間 Updated**：2026-09-12
+**頁面總數 Total Pages**：454
+**原始來源數 Sources**：406
 
 ---
 
@@ -68,6 +68,8 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-09-11_trendforce_huawei-npo-7-2tbps-cpo-challenge]] — TrendForce：**Huawei 7.2Tbps NPO 模組（36ch×200G）；OPEN NPO MSA Q3 2026；CPO vs NPO 架構對比；CSP 策略分歧；CPO/NPO 合計市場 $39B 2030**（2026-09-11）⭐新增
+- [[sources/2026-09-11_trendforce_cxmt-lpddr5x-flagship-supply-chain]] — TrendForce：**CXMT LPDDR5X 達 10.667Gbps（=三星旗艦等級）；Samsung+CXMT 雙供應商進入中國旗艦手機（NaviX Ultra）**（2026-09-11）⭐新增
 - [[sources/2026-09-10_trendforce_chinese-ai-chipmakers-hbm-price-hike]] — TrendForce：**華為 950DT +50% 漲價（>RMB 250K）；CXMT HBM3E 試產啟動（首次確認）；Huawei HiBL 1.0/HiZQ 2.0 自有 HBM 命名；灰市 HBM 溢價 +60~80%；DeepSeek 16 萬卡 Ascend 950DT 訂單（內蒙古資料中心）**（2026-09-10）⭐新增
 - [[sources/2026-09-10_trendforce_tsmc-august-revenue-nt514b]] — TrendForce：**TSMC 8 月 2026 NT$514.8B 史上首破 NT$500B（+53.3% YoY）；第 4 個月連續創歷史新高；2nm 首次貢獻營收（A20 Pro）；代工市占 72.5%；iPhone Duo（首款折疊 iPhone）搭載 A20 Pro 2nm**（2026-09-10）⭐新增
 - [[sources/2026-09-10_trendforce_tsmc-taichung-14nm-2027]] — TrendForce：**TSMC 台中 1.4nm P1 2H27 量產（提前半年）；AUO L7+L5C 廠房確認用於 CPO 光電整合；Samsung 1.4nm 推遲至 2029（落後 TSMC 2 年）；ASML/TEL/KLA 進駐台中七期**（2026-09-10）⭐新增
