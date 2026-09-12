@@ -3,7 +3,7 @@ title: "SK Hynix"
 category: entity
 tags: [memory, HBM, HBM4, advanced-packaging]
 created: 2026-04-24
-updated: 2026-09-10
+updated: 2026-09-13
 sources: [2026-08-24_trendforce_hot-chips-2026-samsung-zhbm-skhynix-emib, 2026-08-19_trendforce_skhynix-silicon-valley-hbm-codesign-team, 2026-08-17_trendforce_samsung-skhynix-1h26-investment-nvidia-absent, 2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor, 2026-08-10_trendforce_skhynix-chongqing-sale-global-reset, 2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab, 2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h, 2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-04-22_trendforce_sk-hynix-pt7-cheongju, 2026-04-22_trendforce_sk-hynix-indiana-us-plant, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-03-03_trendforce_sk-hynix-hbm4-tight-gaps, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-05_trendforce_hbf-equipment-race-sandisk-hanmi, 2026-06-11_trendforce_skhynix-3x-wafer-2034-375layer-nand, 2026-06-20_techtimes_skhynix-hbm4e-12layer-samples, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-24_techtimes_sk-hynix-dethroned-samsung-ddr5-hbm4, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-06-25_techtimes_sk-hynix-nasdaq-adr-29b, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-22_trendforce_skhynix-q2-record-margin, 2026-07-21_trendforce_samsung-cxl-32-skhynix-imte, 2026-07-24_trendforce_skhynix-3d-stacked-dram-on-logic-on-device-ai, 2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b]
 related:
   - wiki/entities/samsung.md
@@ -27,7 +27,15 @@ SK Hynix 是 **HBM 市場的領導者**，率先量產 HBM3E，並於 2025 H2 �
 
 ## 近期動態 / Recent Developments
 
-- **2026-09-07（⭐最新）**：**1c DRAM 擴產時程量化；1Q27 首度成為主力製程；HBM4E 以 1c 為 core die**——Chosun Biz 報導 SK hynix 1c DRAM 各季佔比：10%（1Q26）→ 13%（2Q26）→ 24%（3Q26）→ 34%（4Q26）→ 35%（1Q27，首超 1b ~33%）。Samsung 1c 佔比 2Q26 已達 16%，Micron 達 19%，SK hynix 在製程轉換速度上暫落後。**HBM4 策略**：SK hynix 以 1b DRAM + MR-MUF 維持量產穩定性主導出貨量（Samsung 採 1c 追效能 11.7Gbps）。HBM4E 已於 2026-07 提供樣品；1c 提升每晶圓比特產出，改善 2H26+ 成本競爭力。**1d DRAM（HBM5E 世代）**：SK hynix 目標 2026-12 完成 1d 開發（落後 Samsung 3 個月），2027-06 量產準備（落後 Samsung 6 個月）。*Source: TrendForce 2026-09-07 → [[sources/2026-09-07_trendforce_skhynix-1c-dram-hbm4e-overtake-1b.md]]*
+- **2026-09-11（⭐最新）**：**SK hynix Future Forum 2026：確立 3D DRAM 為核心未來技術路線**（SemiEng Week #155, 2026-09-11）：
+  - SK hynix 在 Future Forum 2026 中發布跨越 **HBM、3D DRAM、HBF、CXL、SSD** 的整體記憶體戰略
+  - 記憶體正從「獨立元件」轉型為「系統層次聯合設計（system-level co-design）」——與 AI 加速器晶片廠商、代工廠、系統廠商聯合開發下世代架構
+  - **3D DRAM**（非 HBM，而是新型三維堆疊 DRAM 架構）被正式列為**關鍵未來技術**，對比 Kepler Computing（FeRAM+3D，$468M 同週破殼）形成業界討論共鳴
+  - **HBF**（High Bandwidth Flash）納入整體記憶體生態——確認 SK hynix 關注 HBM+HBF 異質記憶體層次架構
+  - **CXL 記憶體擴展**納入長期路線圖
+  *Source: SemiEng Week #155 2026-09-11 → [[sources/2026-09-11_semieng_chip-week-155]]*
+
+- **2026-09-07（次最新）**：**1c DRAM 擴產時程量化；1Q27 首度成為主力製程；HBM4E 以 1c 為 core die**——Chosun Biz 報導 SK hynix 1c DRAM 各季佔比：10%（1Q26）→ 13%（2Q26）→ 24%（3Q26）→ 34%（4Q26）→ 35%（1Q27，首超 1b ~33%）。Samsung 1c 佔比 2Q26 已達 16%，Micron 達 19%，SK hynix 在製程轉換速度上暫落後。**HBM4 策略**：SK hynix 以 1b DRAM + MR-MUF 維持量產穩定性主導出貨量（Samsung 採 1c 追效能 11.7Gbps）。HBM4E 已於 2026-07 提供樣品；1c 提升每晶圓比特產出，改善 2H26+ 成本競爭力。**1d DRAM（HBM5E 世代）**：SK hynix 目標 2026-12 完成 1d 開發（落後 Samsung 3 個月），2027-06 量產準備（落後 Samsung 6 個月）。*Source: TrendForce 2026-09-07 → [[sources/2026-09-07_trendforce_skhynix-1c-dram-hbm4e-overtake-1b.md]]*
 
 - **2026-08-29（⭐最新）**：**Indiana 先進封裝廠正式破土動工；Purdue University 研發合作協議簽署**（SemiEng Week#153 2026-08-28）：
   - SK hynix 在 West Lafayette, Indiana 正式舉行先進封裝暨研發設施**破土典禮**——美國**首個 HBM 量產中心**正式啟動建設

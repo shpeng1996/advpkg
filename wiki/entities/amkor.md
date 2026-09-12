@@ -3,7 +3,7 @@ title: "Amkor Technology"
 category: entity
 tags: [OSAT, advanced-packaging, FOCoS, Arizona, chiplet, Intel-EMIB]
 created: 2026-04-25
-updated: 2026-09-11
+updated: 2026-09-13
 sources: [2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-05-19_stocktitan_amkor-arizona-peoria-land-expansion, 2026-06-17_digitimes_amkor-tsmc-10year-arizona-deal, 2026-06-17_trendforce_tsmc-amkor-10year-arizona-advanced-packaging, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-30_amkor-ir_arizona-7billion-groundbreaking, 2026-06-30_digitimes_amkor-2.5d-hdfo-growth-2026, 2026-07-23_amkor-ir_nvidia-amkor-1-5b-strategic-partnership]
 related:
   - wiki/technologies/cowos.md
@@ -41,7 +41,17 @@ related:
 - **2026-04-27（⭐最新）**：**2026 第一季財報創歷史新高**——營收 **$1.68B（+27% YoY）**，每股盈餘 $0.33（優於市場預期約 $0.23），EBITDA $285M，毛利率提升至 14.2%，營業利益率 6.0%。先進封裝技術（**HDFO 高密度扇出、Flip-Chip**）是本季超預期主要動能，通訊與高端智慧型手機客戶帶動顯著年增長。第二季展望：營收 $1.75–1.85B、毛利率 14.5–15.5%，預期延續成長動能。對比 2024 全年營收負成長（-2.8%），本季數字顯示先進封裝轉型已開始反映在財報上，與 Arizona 廠擴建、Intel EMIB 合作等戰略投資形成佐證。
   *Source: Business Wire / Amkor Technology 2026-04-27*
 
-- **2026-08-24（⭐最新）**：**Amkor CEO David McCann：兩相冷卻（two-phase cooling）是先進封裝下一個散熱轉型**（SemiEngineering Week #154, 2026-08-24）：
+- **2026-09-08（⭐最新）**：**Amkor Phase 2 亞利桑那廠：總投資擴增至 $12B，潔淨室近三倍**（SemiEng Week #155 / Amkor 官方新聞稿 2026-09-08）：
+  - 總投資從 Phase 1 **$7B → $12B**（+$5B），成為全球 OSAT 史上最大單廠投資規模
+  - Phase 2 新增 **60,000 sqm 潔淨室**（Phase 1: 33,000 sqm → 合計 **~93,000 sqm**，約原計畫 3 倍）
+  - Phase 2 **建設 2027 年底啟動，2029 年完工**；Phase 1 仍維持 2028 年初量產
+  - 廠區合計支援 **>3,500 名員工**
+  - 能力涵蓋：晶圓凸塊（wafer bump）、探針（probe）、封裝、測試
+  - 定位：**美國首座高量產（HVM）OSAT 先進封裝設施**
+  - 背景：驅動因素為客戶承諾超過 Phase 1 原定 33,000 sqm 產能，主要受益者包括 NVIDIA（$1.5B 預付款合作）、TSMC（10 年期協議）
+  *Source: Amkor Technology 官方新聞稿 2026-09-08 → [[sources/2026-09-11_semieng_chip-week-155]]*
+
+- **2026-08-24（次最新）**：**Amkor CEO David McCann：兩相冷卻（two-phase cooling）是先進封裝下一個散熱轉型**（SemiEngineering Week #154, 2026-08-24）：
   - McCann 在 SemiEngineering 多晶粒封裝專題中預判，目前業界以單相液冷為主，**兩相冷卻**（工作流體在系統內發生液→氣相變，利用汽化潛熱帶走熱量）是散熱密度不足時的下一步轉型
   - 兩相冷卻散熱密度理論上達單相液冷的 3–5 倍，適合 2nm 以下 AI 晶片封裝中快速上升的功率密度（>1 kW/cm²）
   - **FTCO（Fab Technology Co-Optimization）**：McCann 同篇提到 FTCO 框架整合散熱優化（DTCO 延伸），Amkor 在 Arizona 廠採用 FTCO 思維規劃散熱基礎設施
@@ -95,7 +105,7 @@ related:
 | 2026 Q1 營收 | **US$1.68B（+27% YoY，單季歷史新高）**；先進封裝（HDFO/Flip-Chip）為主要動能 |
 | 主要競爭對手 | ASE Group（$18.54B）、JCET（$5.00B） |
 | 戰略差異化 | 美國在地製造 + Intel EMIB 合作 |
-| Arizona Campus 投資規模 | $70 億（全球最大 OSAT 單廠投資之一） |
+| Arizona Campus 投資規模 | **$12B 總計**（Phase 1 $7B + Phase 2 至 $12B，Phase 2 建設 2027–2029） |
 
 ---
 

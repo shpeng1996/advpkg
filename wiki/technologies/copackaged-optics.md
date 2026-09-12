@@ -3,7 +3,7 @@ title: "共封裝光學元件 / Co-Packaged Optics (CPO) — TSMC-COUPE™ & Eco
 category: technology
 tags: [CPO, co-packaged-optics, COUPE, TSMC, GlobalFoundries, Samsung, photonics, AI, HPC, networking, OCI-MSA, DWDM, Broadcom, NVIDIA, glass-substrate, ULCVD, TGV, Spectrum-X, NVL72]
 created: 2026-04-25
-updated: 2026-09-12
+updated: 2026-09-13
 sources: [2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-05-07_trendforce_globalfoundries-silicon-photonics-scale-cpo, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-03-17_coherent_cpo-ofc2026-demo, 2026-06-07_digitimes_jcet-3d-packaging-cpo-plant, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_edn_cpo-technology-status-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-06-24_thelec_corning-glass-bridge-cpo, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-14_trendforce_umc-silith-silicon-photonics-hvm, 2026-07-14_trendforce_huawei-baidu-npo-msa, 2026-07-27_trendforce_presscenter_cpo-switches-nvidia-broadcom-coupe, 2026-06-03_3dincites_intel-foundry-emib-cpo-glass-ectc2026]
 related:
   - wiki/entities/tsmc.md
@@ -44,7 +44,15 @@ Co-Packaged Optics（CPO）將**光學引擎（Optical Engine）直接整合至�
 
 ## 發展時程 / Timeline
 
-- **2026-08-18（⭐最新）**：**銅互連物理極限論述確立——光學（CPO）五年內將全面取代業界共識出現**（SemiEngineering 2026-08-13，Bryon Moyer）：
+- **2026-09-11（⭐最新）**：**Ayar Labs CPO 進入高量產（HVM）轉型：累計融資 $650M，Wiwynn 策略投資確認**（SemiEng Week #155, 2026-09-11）：
+  - **Ayar Labs** 宣布最新一輪 **$150M** 融資，累計融資規模達 **$650M**
+  - **Wiwynn**（台灣伺服器 ODM 龍頭，威聯通 / Wistron 旗下）在 2026 年稍早對 Ayar Labs 進行策略投資——代表 CPO 生態系從晶片層延伸至系統整合層（伺服器 ODM）
+  - 資金用途：CPO 技術**大規模量產（HVM）轉型**，主要應用為 **AI scale-up** 網路（GPU 叢集內部高速互連）
+  - 進展背景：Ayar Labs 採用 TeraPHY 電子光子積體電路（EPIC）架構，已完成多輪客戶驗證；本輪資金加速量產能力建設
+  - 市場意義：Wiwynn 投資代表 CSP 供應鏈廠商（非晶片廠）開始主動佈局 CPO 整合能力，與 TSMC-COUPE 路線（晶圓廠主導）形成並行生態
+  *Source: SemiEng Week #155 2026-09-11 → [[sources/2026-09-11_semieng_chip-week-155]]*
+
+- **2026-08-18（次最新）**：**銅互連物理極限論述確立——光學（CPO）五年內將全面取代業界共識出現**（SemiEngineering 2026-08-13，Bryon Moyer）：
   - **銅三重限制**：損耗（loss）、傳輸距離（reach，~1 米 @400G/lane 實用極限）、功耗（power）在 AI rack 頻率下同步收緊
   - **規模化路徑**：Scale-out 先行（CPO 取代可插拔光模組）→ Scale-up 跟進（銅可靠性問題隨頻率上升惡化，待 CPO 可靠性驗證後轉換）
   - **電路交換（Circuit Switching）**：作為光學互連的架構配套，為 AI 訓練流量建立專用路徑，降低延遲、提升頻寬利用率（NVIDIA Spectrum-X 已部分實現）

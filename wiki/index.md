@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-09-12
-**頁面總數 Total Pages**：454
-**原始來源數 Sources**：406
+**更新時間 Updated**：2026-09-13
+**頁面總數 Total Pages**：455
+**原始來源數 Sources**：407
 
 ---
 
@@ -22,7 +22,7 @@
 - [[entities/asmpt]] — ASMPT Limited；TCB/混合接合/Photonics-CPO 設備領導廠商；Q1 2026 訂單 27M +71.6% YoY；NEXX 出售給 AMAT⭐新增
 - [[entities/ase-group]] — ASE Group；全球最大 OSAT；CoWoP 面板封裝；**SPIL 斗六廠破土（TWD 100 億/2028 一期）；2026 CapEx $10.5B；2027 LEAP 目標 $7.5B+；FOPLP Q1 2027**；AMD EFB 合作；**COO 吳田玉明確表態 CoWoS/EMIB 不互斥；Sigurd 並列為 NVIDIA-MediaTek XPU 生態系封裝受益者**（2026-09-01）；**interposer 路線圖 40× 確認（5.5×→9×→12×→40×；C.P. Hung, SEMI Strategic Materials Conference）**（2026-08-24）⭐更新
 - [[entities/ibm]] — IBM Research；3D 封裝研究先行者；**Nanostack 3T library +50% perf / +70% energy eff / +40% density；beveled edge stacking；sub-2nm 商業化最激進路徑**（2026-08-24）⭐新增
-- [[entities/amkor]] — Amkor；全球第二大 OSAT；Arizona $70 億廠（2028 投產）；Intel EMIB 外包夥伴；**CEO McCann 預判兩相冷卻（two-phase cooling）為下一散熱轉型**（2026-08-24）⭐更新
+- [[entities/amkor]] — Amkor；全球第二大 OSAT；**Arizona $12B 總投資（Phase 2 升至 $12B；93K sqm 潔淨室；2029 完工）**；Intel EMIB 外包夥伴；**CEO McCann 預判兩相冷卻（two-phase cooling）為下一散熱轉型**（2026-09-08）⭐更新
 - [[entities/ev-group]] — EV Group（EVG）；混合接合設備領導者；ECTC 2025 展示無光罩微影與層轉移⭐新增
 - [[entities/besi]] — BE Semiconductor（Besi）；D2W 混合接合設備主供應商；Datacon 8800 CHAMEO；Kinex 平台（Applied Materials 持股 9%）⭐新增
 - [[entities/tel]] — Tokyo Electron（TEL）；RDL 製程設備領導者；Kumamoto 研發基地（¥470 億，2026 春）；Eteris 合資（與 AMAT）⭐新增
@@ -68,6 +68,7 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-09-11_semieng_chip-week-155]] — SemiEng Week#155：**Amkor Phase 2 $12B（潔淨室 93K sqm；2029完工）；Kepler Computing $468M FeRAM+3D記憶體（1 OOM vs HBM）；Taiyo+imec 700nm RDL 3層/300mm；Ayar Labs $650M+Wiwynn CPO HVM；DRAM Q2 $155B；頂尖代工 Q2 $53B；Yole $1.5T資料中心 2031**（2026-09-11）⭐新增
 - [[sources/2026-09-11_trendforce_huawei-npo-7-2tbps-cpo-challenge]] — TrendForce：**Huawei 7.2Tbps NPO 模組（36ch×200G）；OPEN NPO MSA Q3 2026；CPO vs NPO 架構對比；CSP 策略分歧；CPO/NPO 合計市場 $39B 2030**（2026-09-11）⭐新增
 - [[sources/2026-09-11_trendforce_cxmt-lpddr5x-flagship-supply-chain]] — TrendForce：**CXMT LPDDR5X 達 10.667Gbps（=三星旗艦等級）；Samsung+CXMT 雙供應商進入中國旗艦手機（NaviX Ultra）**（2026-09-11）⭐新增
 - [[sources/2026-09-10_trendforce_chinese-ai-chipmakers-hbm-price-hike]] — TrendForce：**華為 950DT +50% 漲價（>RMB 250K）；CXMT HBM3E 試產啟動（首次確認）；Huawei HiBL 1.0/HiZQ 2.0 自有 HBM 命名；灰市 HBM 溢價 +60~80%；DeepSeek 16 萬卡 Ascend 950DT 訂單（內蒙古資料中心）**（2026-09-10）⭐新增

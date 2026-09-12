@@ -3,7 +3,7 @@ title: "先進封裝市場 / Advanced Packaging Market"
 category: concept
 tags: [market, forecast, CAGR, supply-chain, HBM, chiplet, geopolitics, equipment, SIA, Omdia, Yole, WFE]
 created: 2026-04-24
-updated: 2026-08-15
+updated: 2026-09-13
 sources: [2026-07-31_semieng_chip-week-149, 2026-04-24_initial-survey, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2026-01-23_trendforce_chip-tools-tel-asml, 2026-03-05_trendforce_intel-emib-billions, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2025-12-18_trendforce_micron-capex-hbm4, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2025-05-13_trendforce_top10-osat-2024, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-04-16_ontoinnovation_dragonfly-g5-qualified, 2026-06-23_communicationstoday_foplp-glass-substrate-market-8b-2030, 2026-06-29_trendforce_china-osat-tongfu-jcet-investment, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-26_semieng_chip-week-144, 2026-07-01_trendforce_ase-price-hike-20pct, 2026-07-04_semieng_chip-week-145, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-07-03_trendforce_anthropic-samsung-advanced-packaging, 2026-05-08_trendforce_ajinomoto-abf-1b-land-buy-2032-margins, 2026-07-24_semieng_chip-week-148]
 related:
   - wiki/entities/tsmc.md
@@ -447,6 +447,26 @@ Anthropic 洽談三星 SF2（2nm）代工＋先進封裝自製 AI ASIC，繼 Goo
 這兩個材料瓶頸共同形成先進封裝基板供應鏈的系統性集中風險。
 
 *Source: TrendForce 2026-05-08（引述 Ajinomoto FY2026 財報、公司公告）*
+
+
+## ⭐ 2026-09-11 更新：DRAM Q2 $155B 歷史新高；頂尖代工 Q2 $53B 紀錄；Yole 資料中心半導體 $1.5T by 2031
+
+**數據來源：SemiEng Week #155 2026-09-11（彙整 TrendForce、SIA、Yole Group 最新數據）**
+
+| 指標 | 數值 | 說明 |
+|------|------|------|
+| 全球 DRAM Q2 2026 營收 | **~$155B**（+60% QoQ） | 史上最高單季 |
+| DRAM 市占（Q2 2026） | Samsung 39% / SK hynix 25% / Micron 23% | TrendForce |
+| 全球頂尖 10 大晶圓代工 Q2 2026 | **~$53B**（+11% QoQ，歷史新高） | TrendForce |
+| SIA 全球半導體 7 月 2026 銷售 | **$147B**（+135% YoY） | SIA |
+| 資料中心半導體市場 2031 | **$1.5 兆（Trillion）** | Yole Group |
+
+**Yole Group 資料中心半導體 $1.5T by 2031 預測核心論述**：
+- AI 驅動邏輯（Logic）、記憶體（Memory）、光學互連（Optical Interconnects）、電源元件（Power Devices）等全面需求爆發
+- **先進封裝**與 **HBM 產能**被 Yole 點名為未來最大兩個瓶頸
+- AI 機架功耗預計在本十年末接近 **1 MW/rack**（印證 CoWoS 微通道冷卻路線圖的必要性）
+
+*Source: SemiEng Week #155 2026-09-11 → [[sources/2026-09-11_semieng_chip-week-155]]*
 
 ## ⭐ 2026-07-13 更新：Yole 最新市場規模基準更新 + 3D IC Alliance 37 家成員 + 旭化成台灣投資
 

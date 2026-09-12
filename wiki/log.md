@@ -3220,3 +3220,24 @@ an（2028–2029 量產世代）為 CoPoS 最可能的首批量產客戶——�
   1. Huawei 7.2Tbps NPO 正式發布（超越 Broadcom CPO 6.4Tbps），確立 CPO 與 NPO 為全球光互連雙主流路線；OPEN NPO 技術規範 Q3 2026 本季預計發布
   2. Huawei NPO 架構整合於 PCB 層（非晶片封裝內），提供中國廠商繞開 TSMC/Intel 先進封裝壁壘的替代光互連路徑——這是重要的地緣政治技術戰略洞察
   3. CXMT LPDDR5X 速度達 10.667Gbps（與三星旗艦等同），並進入中國旗艦手機雙供應商供應鏈——中國記憶體從「中低端供應」正式突破至「旗艦市場」
+
+## [2026-09-13] collect | 每日自動蒐集 — 先進封裝最新動態（2026-09-13）
+- 搜尋查詢數：7 組
+- 成功抓取：1 篇（articles/ 1, papers/ 0, reports/ 0）
+  - `2026-09-11_semieng_chip-week-155-amkor-12b-kepler-rdl-ayarlabs.md`（SemiEng Week#155，前次 2026-09-12 run 確認尚未發布，本次確認已上線）
+- 失敗/跳過：多篇（TrendForce 2026-09-12 無新封裝相關文章；Amkor 官方 IR 頁面 URL 不在 provenance set 無法直接 fetch；其他文章均已在 _collected_urls.txt 中）
+- 學術代理：UNAVAILABLE ✗
+- 新增 wiki 頁面：0 頁
+- 更新 wiki 頁面：4 頁
+  - `wiki/entities/amkor.md`（Phase 2 $12B；93K sqm 潔淨室；2029 完工；市場地位表格 Arizona 投資額更新）
+  - `wiki/entities/sk-hynix.md`（Future Forum 2026：3D DRAM 列為核心未來技術；HBF+CXL+SSD 整體記憶體策略）
+  - `wiki/technologies/copackaged-optics.md`（Ayar Labs $650M 累計融資；Wiwynn 策略投資；CPO HVM 轉型）
+  - `wiki/concepts/advanced-packaging-market.md`（DRAM Q2 $155B +60% QoQ；頂尖 10 大代工 Q2 $53B 歷史新高；SIA 7 月 $147B +135% YoY；Yole 資料中心半導體 $1.5T 2031）
+- 新增 source 摘要頁：1 頁
+  - `wiki/sources/2026-09-11_semieng_chip-week-155.md`
+- 更新 wiki/index.md（頁面總數 454→455；來源數 406→407）
+- 主要新知識：
+  1. **Amkor Phase 2 $12B Arizona**：亞利桑那廠投資規模大幅升級（$7B → $12B），潔淨室達 93K sqm（原計畫 3 倍），2029 年完工——確立全球最大 OSAT 單廠先進封裝 HVM 基地，同時服務 TSMC 代工 + NVIDIA 封裝。
+  2. **Kepler Computing FeRAM+3D**：$468M 融資，宣稱容量較 HBM 高一個數量級，2027 量產目標——代表 HBM 體系外首個有大資金背書的 AI 記憶體替代架構，與 SanDisk HBF 並列為替代路線。
+  3. **Taiyo+imec 700nm RDL**：3 層 300mm 晶圓 RDL，線寬 700nm——遠低於 CoWoS 當前 ~2µm RDL，為超細間距 chiplet 互連預示技術轉型窗口。
+  4. **Yole $1.5T 資料中心半導體 2031**：先進封裝與 HBM 產能被點名為最大未來瓶頸；AI 機架功耗接近 1MW 趨勢確認。
