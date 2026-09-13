@@ -3,7 +3,7 @@ title: "三星 / Samsung"
 category: entity
 tags: [IDM, foundry, memory, advanced-packaging, X-Cube, HBM, ISSCC2026, I-CubeS, LPDDR6, V10-BV-NAND, zHBM, HBM5, FMS-2026]
 created: 2026-04-24
-updated: 2026-09-09
+updated: 2026-09-14
 sources: [2026-08-26_trendforce_openai-jalapeno-samsung-hbm4, 2026-08-26_trendforce_samsung-gaia-pim-4nm-2027, 2026-08-24_trendforce_hot-chips-2026-samsung-zhbm-skhynix-emib, 2026-08-17_trendforce_samsung-skhynix-1h26-investment-nvidia-absent, 2026-08-14_trendforce_samsung-nrdk-line2-2nm-hbm5-base-die, 2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor, 2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2025-12-30_trendforce_samsung-hbm-surge, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2025-08-05_3dincites_iftle636, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit, 2026-06-10_trendforce_samsung-gwangju-packaging-base, 2026-06-12_digitimes_samsung-packaging-gap-tsmc-intel, 2026-06-15_trendforce_skhynix-hbm4e-sample-timeline-pulled-forward, 2026-06-19_techtimes_vera-rubin-hbm4-suppliers, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-24_techtimes_sk-hynix-dethroned-samsung-ddr5-hbm4, 2026-07-03_trendforce_anthropic-samsung-advanced-packaging, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-07-02_trendforce_samsung-hbm-dummy-die-patent, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo, 2026-07-07_trendforce_samsung-q2-2026-record-krw894t, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-02_trendforce_samsung-sf2p-plus-tsmc-n2-roadmap, 2026-07-14_trendforce_samsung-hbm-hiring-hbm4-hbm4e-hbm5, 2026-07-21_trendforce_samsung-cxl-32-skhynix-imte, 2026-07-24_trendforce_skhynix-3d-stacked-dram-on-logic-on-device-ai]
 related:
   - wiki/entities/tsmc.md
@@ -31,6 +31,30 @@ related:
 ---
 
 ## 近期動態 / Recent Developments
+
+- **2026-09-14（⭐最新）**：**Samsung 2nm yield >70%；Taylor 廠首批客戶確認；Foundry 定價力轉強**（TrendForce 2026-09-11）：
+  - Samsung 2nm GAA 良率達 **>70%**（vs 2026 年初 <50%），製程技術穩定化
+  - **Samsung-Qualcomm 2nm 談判：可能延至 2027**——主因為定價分歧，而非技術問題；Qualcomm 求降價，Samsung 維持定價
+  - Samsung Foundry 7 月 2026 提高 4nm/5nm 報價 **+10–15%**（美國/中國客戶）、+5–10%（台灣客戶）；8nm +10%
+  - **Taylor Fab 首批客戶名單曝光**（投產前已滿訂）：**Tesla AI5/AI6、Broadcom 次世代通訊晶片、Arm AI 晶片**（智慧裝置用）
+  - Samsung Foundry Q2'26：全球代工收入排名第 2，市佔 5.9%（Advanced-node 訂單含 HBM base die 持續拉升）
+  - **Exynos 2700** 確認採用 Samsung Foundry SF2P（第二代 2nm）製程，預計用於 Galaxy S27
+  *Source: TrendForce 2026-09-11 → [[sources/2026-09-11_trendforce_samsung-qualcomm-2nm-foundry-pricing]]*
+
+- **2026-09-14（⭐最新）**：**High-NA EUV：Samsung 目標 2028 年導入 DRAM 量產；1c DRAM 4Q26 佔比達 34%**（TrendForce 2026-09-09）：
+  - Samsung 目標 **2028 年**在 DRAM 製程中引入 High-NA EUV（NA 0.55）量產；2025-03 韓國首套設備安裝
+  - High-NA EUV 可將多重曝光步驟數減半，大幅降低製造成本
+  - 應用至先進 DRAM 可強化 HBM 效能，鞏固 HBM4E 市場地位
+  - Samsung 1c DRAM（最先進 10nm 世代）：2Q26 佔比 **~13%** → 4Q26 **~34%**（SK hynix 與 Micron 1c 進度對比：SKH 1c 佔比更高，Micron 達 ~19%）
+  *Source: TrendForce 2026-09-09 → [[sources/2026-09-09_trendforce_highna-euv-samsung-skhynix-dram-2028]]*
+
+- **2026-09-14（⭐最新）**：**Samsung SiPh PIC 自建測試 end-2026；Foundry SiPh 服務 2027 年推出**（TrendForce 2026-09-08）：
+  - 三星導入 FormFactor/MPI 探測台（同 TSMC COUPE 認證設備），目標 2026 年底完成 in-house PIC 晶圓測試
+  - 原先委外（含 imec）的 PIC 驗證工作逐步內製化，正優化 PIC 設計回饋循環
+  - **三星 SiPh 路線圖三階段**：PIC 測試 2026 → EIC-PIC 光學引擎測試 2027 → SiPh 代工服務對外開放 2027；長期目標：CPO 整合至 GPU/CPU 封裝
+  - 一家主要光通訊模組廠已下單三星 SiPh，**2H26 開始量產**
+  - Broadcom 列為潛在三星 SiPh 客戶
+  *Source: TrendForce 2026-09-08 → [[sources/2026-09-08_trendforce_samsung-siliconphotonics-cpo-pic-testing]]*
 
 - **2026-09-07（⭐最新）**：**Samsung 1c DRAM for HBM4（11.7 Gbps）；1d DRAM 開發 Sep 2026 目標；HBM5E 採 1d ~2030**——Chosun Biz 報導 Samsung 與 SK hynix HBM4 製程策略的根本分歧：Samsung 採用 1c DRAM for HBM4，目標 ~11.7 Gbps；SK hynix 以 1b DRAM + MR-MUF 維持量產穩定性。Samsung HBM4 wafer 150K wsm，其中 75K 用於 HBM4（50%）；HBM4 良率 ~80%（與 2026-08 記錄一致）。**1d DRAM 競爭**：Samsung 目標 2026-09 完成 1d 開發，2026-12 開始量產準備，2027 年底前啟動量產；**HBM5E 將採用 1d DRAM，預計 ~2030 年推出**（首次在 wiki 記錄 Samsung HBM5E 採用 1d 的時程）。Samsung DRAM 1c 佔比：2Q26 ~16%，SK hynix 領先者 Micron 達 19%。*Source: TrendForce 2026-09-07 → [[sources/2026-09-07_trendforce_skhynix-1c-dram-hbm4e-overtake-1b.md]]*
 

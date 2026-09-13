@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-09-13
-**頁面總數 Total Pages**：455
-**原始來源數 Sources**：407
+**更新時間 Updated**：2026-09-14
+**頁面總數 Total Pages**：459
+**原始來源數 Sources**：411
 
 ---
 
@@ -67,6 +67,10 @@
 ---
 
 ## 來源摘要 Sources（依日期倒序）
+- [[sources/2026-09-11_trendforce_samsung-qualcomm-2nm-foundry-pricing]] — TrendForce：Samsung 2nm yield >70%；Taylor fab 首批客戶（Tesla/Broadcom/Arm）；Qualcomm 2nm 延至 2027；Foundry 定價提升⭐新增
+- [[sources/2026-09-09_trendforce_highna-euv-samsung-skhynix-dram-2028]] — TrendForce：Samsung/SK hynix High-NA EUV DRAM 2028 目標；SK hynix 1c DRAM 34% Q4'26；Micron 1δ 準備⭐新增
+- [[sources/2026-09-08_trendforce_samsung-siliconphotonics-cpo-pic-testing]] — TrendForce：Samsung SiPh PIC 自建測試 end-2026；SiPh 代工 2027；三階段 CPO 路線圖⭐新增
+- [[sources/2026-06-05_semieng_intel-ectc-2026-emib-t-cpo-glass]] — SemiEng/Intel Foundry：ECTC 2026 EMIB-T 25µm FLI、120mm封裝、64G UCIe；CPO V-groove 玻璃耦合器；TGV 零失效可靠性⭐新增
 
 - [[sources/2026-09-11_semieng_chip-week-155]] — SemiEng Week#155：**Amkor Phase 2 $12B（潔淨室 93K sqm；2029完工）；Kepler Computing $468M FeRAM+3D記憶體（1 OOM vs HBM）；Taiyo+imec 700nm RDL 3層/300mm；Ayar Labs $650M+Wiwynn CPO HVM；DRAM Q2 $155B；頂尖代工 Q2 $53B；Yole $1.5T資料中心 2031**（2026-09-11）⭐新增
 - [[sources/2026-09-11_trendforce_huawei-npo-7-2tbps-cpo-challenge]] — TrendForce：**Huawei 7.2Tbps NPO 模組（36ch×200G）；OPEN NPO MSA Q3 2026；CPO vs NPO 架構對比；CSP 策略分歧；CPO/NPO 合計市場 $39B 2030**（2026-09-11）⭐新增

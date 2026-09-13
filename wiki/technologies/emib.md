@@ -3,7 +3,7 @@ title: "EMIB — Embedded Multi-Die Interconnect Bridge"
 category: technology
 tags: [Intel, 2.5D, silicon-bridge, chiplet, HBM4, Foveros, glass-substrate, EMIB-T, EMIB-M, silicon-capacitors, power-delivery, HLFF, encapsulation, underfill]
 created: 2026-05-03
-updated: 2026-09-10
+updated: 2026-09-14
 sources: [2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-03-05_trendforce_intel-emib-billions, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-03-03_trendforce_intel-clearwater-forest, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks, 2026-06-21_convergedigest_intel-emib-t-multi-die-packaging, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap, 2026-06-05_semieng_intel-ectc2026-emib-cpo-glass-blog, 2026-01-30_tomshardware_intel-ai-chip-test-vehicle-emib-t, 2026-08-04_semieng_from-blueprint-intel-hlff]
 related:
   - wiki/entities/intel.md
@@ -71,6 +71,14 @@ EMIB 是 Intel 的局部矽橋接技術：將一小片高密度矽橋（bridge d
 ---
 
 ## 發展時程 / Timeline
+
+- **2026-09-14（⭐最新）**：**ECTC 2026：EMIB-T 首次完整量化規格——FLI 25µm、120×120mm 封裝、>9× 光罩、HBM4e >12Gbps、UCIe 64Gbps；SPIL 3D SRAM fan-out 合作**（Intel Foundry / SemiEng 2026-06-05）
+  - FLI bump pitch 縮小至 **25 µm**（業界 EMIB-T 最細 pitch 記錄）
+  - 封裝尺寸：最大 **120×120 mm**，整合 **>9× reticle** Si 面積
+  - 信號速度：HBM4e **>12 Gb/s**；UCIe **64 Gb/s**
+  - 確認 EMIB-T = EMIB + TSV 垂直供電雙重整合架構，支援 near-monolithic chiplet 效能
+  - SPIL（矽品精密）合作：Fan-Out Embedded Bridge 中的 3D SRAM chiplet——首個 OSAT-EMIB-T 生態系具體案例
+  *Source: [[sources/2026-06-05_semieng_intel-ectc-2026-emib-t-cpo-glass]]*
 
 - **2026-08-24（⭐最新）**：**Hot Chips 2026：SK hynix 正式在技術會議公開將 EMIB 列入 2.5D HBM 封裝選項清單；SK hynix+Intel 記憶體 JV 傳聞首見主流媒體**（TrendForce 2026-08-24，引述 Wccftech、ServerTheHome）：
   - SK hynix 在 Hot Chips 2026 發表中，**正式比較 CoWoS-S、CoWoS-L、CoWoS-R 與 EMIB** 的機械應力與熱應力差異，標誌 EMIB 獲主要 HBM 供應商官方學術/技術認可為合格的 2.5D 封裝選項（CoWoS 體系以外的第一個被 SK hynix 公開比較的競爭方案）

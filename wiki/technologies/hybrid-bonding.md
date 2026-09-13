@@ -3,7 +3,7 @@ title: "混合接合 / Hybrid Bonding"
 category: technology
 tags: [3D, hybrid-bonding, Cu-Cu, SoIC, ECTC, advanced-packaging, DRAM, COP, 4F2, Sn-damascene, damascene-interconnect, PFAS-free]
 created: 2026-04-24
-updated: 2026-08-28
+updated: 2026-09-14
 sources: [2026-05-21_semiecosystem_ectc2026-cpo-hybridbonding-plp, 2026-04-24_initial-survey, 2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-03-01_3dincites_besi-packaging-power-shift, 2026-01-13_semiengineering_hbm4-microbumps, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-19_semieng_advanced-packaging-limits, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-03-27_3dincites_copper-grain-hybrid-bonding, 2025-01-01_semieng_making-hybrid-bonding-better, 2026-03-02_semieng_making-hybrid-bonding-better, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2026-04-29_semiwiki_cea-leti-ectc2026-hybrid-bonding, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2024-02-09_semianalysis_hybrid-bonding-process-flow, 2026-05-19_semiconductor-digest_ev-group-ectc2026-hybrid-bonding, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-04-19_semiwiki_apple-m5-cucu-hybrid-bonding-shipped, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-18_imec_iii-v-chiplet-rf-laser-bonding, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-29_evgroup_ectc2026-hybrid-bonding-layer-transfer, 2026-06-29_thelec_skhynix-hybrid-bonding-equipment-order, 2026-06-05_semieng_intel-ectc2026-emib-cpo-glass-blog, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-14_trendforce_samsung-hbm-hiring-hybridbonding, 2026-07-16_semieng_fine-pitch-hb-high-volume, 2026-07-16_semieng_alt-materials-hybrid-bonding]
 related:
   - wiki/technologies/soic.md
@@ -108,6 +108,13 @@ related:
   *Source: Semiconductor Digest 2026-05-19（EVG ECTC 2026 宣告）；Semiconductor Digest 2026-03-20（ECTC 2026 官方公告）*
 - **2026-05-28（imec + EVG 200nm W2W HB 世界紀錄 / ECTC 2026）⭐新增**：imec 與 EV Group（EVG）在 ECTC 2026 Session 26 發表 **200nm Cu 接合間距 W2W 混合接合**——全球最精細間距的 robust & high-yielding W2W HB 示範。**<40nm Cu 墊對墊 post-bond overlay，全 300mm 晶圓 100% die 達標**（世界首次）。設備：EVG **GEMINI® FB** 混合/熔融晶圓接合系統。工藝要點：SiCN 介電（imec 首創）+ CMP（均勻性優化，Cu pad 奈米級受控凹陷）+ 預接合微影校正。應用場景：CMOS 2.0 paradigm 的 **logic-to-logic**（高驅動力層+高密度邏輯層）及 memory-to-logic 堆疊。路線圖：imec + EVG 計劃推進至「遠低於 200nm（sub-200nm）」。
   *Source: Semiconductor Digest 2026-05-28（Shannon Davis）*
+
+- **2026-09-14（⭐最新）**：**Intel ECTC 2026 混合接合研究：超低溫 D2W HB；EV Group 100% 晶圓對晶片鍵合疊合精度（高速）**（Intel Foundry / SemiEng 2026-06-05）
+  - **超低溫 D2W 混合接合**：降低接合溫度以支援更多材料組合，降低 D2W 熱損傷風險
+  - **EV Group 合作**：在異質晶片整合中實現 **100% 晶片對晶圓鍵合疊合精度**（高速）——為混合接合量產化的關鍵製程控制里程碑
+  - 混合接合介面熱行為分析（Fouriers Scientific 合作）；銅 via 塑性形變研究（NIST 合作 AFM）
+  - D2W 混合接合中的 Die Distortion 量化研究——支援後續製程補償方案開發
+  *Source: [[sources/2026-06-05_semieng_intel-ectc-2026-emib-t-cpo-glass]]*
 
 - **2026-07-14（⭐最新）**：**Samsung 招募 HBM 混合接合核心人才——多層堆疊混合銅接合、TSV 模組、Cu 墊平坦化**（TrendForce 2026-07-14）：Samsung DS 事業部公開 HBM 封裝製程職位，要求涵蓋：① **多層堆疊混合銅接合（Multi-Stack Hybrid Copper Bonding）**製程開發；② **TSV 模組開發**；③ **HBM 銅墊平坦化（Cu Pad Planarization）**良率攻關。顯示儘管 HBM4E 世代仍使用 TC bonding，Samsung 正積極為 16-high HBM4E 或 HBM5 混合接合導入建立量產能力。技術路徑：Samsung 計畫混合接合與 **HPB（Heat Path Block）散熱技術**聯合部署（已在 HBM4E 驗證，見 2026-07-07），形成「混合接合（降電阻） + HPB（散熱）」的高堆疊 HBM 雙軌方案。SK Hynix 同期亦招募 HBM Foundry Process Integration 人才，指向 TSMC-SK Hynix 的 HBM4 base die 代工整合。以兩大韓廠同步招募混合接合人才，此為 wiki 首次記錄的「業界性混合接合量產準備」訊號。
   *Source: TrendForce 2026-07-14（引述 JobKorea、Incruit）*

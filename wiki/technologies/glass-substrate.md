@@ -3,7 +3,7 @@ title: "玻璃基板 / Glass Core Substrate"
 category: technology
 tags: [glass-substrate, TGV, panel-level, FC-BGA, CoPoS, Absolics, DNP, Rapidus, warpage, SeWaRe, glass-interposer, BOE, ULCVD, non-embedding, Lens-Technology, TPK-KY, Innolux, AUO]
 created: 2026-05-08
-updated: 2026-08-23
+updated: 2026-09-14
 sources: [2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-05-05_trendforce-insights_glass-substrate-development, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-05-29_3dincites_rapidus-2nm-advanced-packaging-ai-foundry, 2026-06-01_trendforce_intel-3dgs-india-glass-substrate, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-06-20_biggo_boe-glass-substrate-pilot, 2026-06-28_economy-ac_glass-substrate-global-race, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-08-18_trendforce_shinko-glass-substrate-22layer-glassem-delay]
 related:
   - wiki/technologies/copos.md
@@ -78,6 +78,13 @@ SeWaRe 是玻璃量產最大障礙——切割/鑽孔時形成的微裂紋成為
 - **2025-Q2**：Absolics（SK Group + Applied Materials JV，Georgia 廠；KRW 300B 投資）宣布 2026 量產目標
 - **2025-Q3**：TSMC CoPoS 確認採用 310mm×310mm 玻璃中介層（~400µm 厚）；2028 量產
 - **2025-12**：DNP 久喜工廠試驗線啟動（510×515mm）；Rapidus 展示 600×600mm 最大玻璃中介層樣品（SEMICON Japan）；Samsung SEMCO 建立玻璃核心基板 mini line
+- **2026-09-14（⭐最新）**：**Intel ECTC 2026 玻璃基板 TGV 可靠性里程碑：銅填充 TGVs 通過嚴苛熱循環零失效；支援 >25µm 多尺寸 TGV 混合設計**（Intel Foundry / SemiEng 2026-06-05）
+  - 銅填充 TGV（Through-Glass Via）：通過最嚴苛熱循環測試**零失效**——首次業界公開可靠性驗證數據
+  - 多種 TGV 類型：低錐角 TGV、混合尺寸 TGV、嵌埋元件腔體（Cavity）——設計靈活性提升
+  - 玻璃尺寸穩定性（vs 有機基板翹曲）：使多層間對準誤差趨近零，支援超大型多晶片封裝
+  - **Intel EMIB-T 首層互連（FLI）bump pitch 縮至 25 µm with glass substrates**——玻璃基板應用確認
+  *Source: [[sources/2026-06-05_semieng_intel-ectc-2026-emib-t-cpo-glass]]*
+
 - **2026-07-28（⭐最新）**：**Intel + Lens Technology（藍思科技）宣布玻璃核心基板先進封裝合作**，量產目標最早 **2H 2027**；**BOE 玻璃基板全自動生產線 2026 H1 已部署**，目標 **2028 HVM**；**TPK-KY** 於台灣建置 TGV 玻璃基板試產線；**Innolux + AUO** 開發方形玻璃基板 FOPLP 方案（台灣面板廠加速切入）。
   *Source: TrendForce 2026-07-28*
 

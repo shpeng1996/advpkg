@@ -3241,3 +3241,33 @@ an（2028–2029 量產世代）為 CoPoS 最可能的首批量產客戶——�
   2. **Kepler Computing FeRAM+3D**：$468M 融資，宣稱容量較 HBM 高一個數量級，2027 量產目標——代表 HBM 體系外首個有大資金背書的 AI 記憶體替代架構，與 SanDisk HBF 並列為替代路線。
   3. **Taiyo+imec 700nm RDL**：3 層 300mm 晶圓 RDL，線寬 700nm——遠低於 CoWoS 當前 ~2µm RDL，為超細間距 chiplet 互連預示技術轉型窗口。
   4. **Yole $1.5T 資料中心半導體 2031**：先進封裝與 HBM 產能被點名為最大未來瓶頸；AI 機架功耗接近 1MW 趨勢確認。
+
+## [2026-09-14] collect | 每日自動蒐集 — 先進封裝最新動態（2026-09-14）
+- 搜尋查詢數：7 組
+- 成功抓取：4 篇（articles/ 4, papers/ 0, reports/ 0）
+  - `2026-09-11_trendforce_samsung-qualcomm-2nm-delay-foundry-pricing-power.md`
+  - `2026-09-09_trendforce_samsung-skhynix-highna-euv-dram-2028.md`
+  - `2026-09-08_trendforce_samsung-siliconphotonics-pic-testing-cpo.md`
+  - `2026-06-05_semieng_intel-ectc-2026-emib-t-cpo-glass-substrates.md`
+- 失敗/跳過：多篇（SemiEng Week#156 尚未發布；TrendForce 9/12–14 無新封裝相關文章；其餘均已在 _collected_urls.txt 中）
+- 學術代理：UNAVAILABLE ✗
+- 新增 wiki 頁面：0 頁
+- 更新 wiki 頁面：8 頁
+  - `wiki/entities/samsung.md`（2nm yield >70%；Taylor fab 首批客戶；Foundry 定價；SiPh PIC 路線圖；High-NA EUV 2028；1c 34% Q4'26）
+  - `wiki/entities/sk-hynix.md`（High-NA EUV 2028；1c 34% Q4'26；Large Size Mask Consortium）
+  - `wiki/entities/intel.md`（EMIB-T ECTC 2026：25µm FLI、120mm、9x reticle、64G UCIe；CPO V-groove；TGV 可靠性）
+  - `wiki/entities/asml.md`（Samsung/SKH High-NA EUV 2028 DRAM 時程；12 英寸光罩 Consortium）
+  - `wiki/technologies/emib.md`（EMIB-T ECTC 2026 規格：FLI 25µm、120mm、9x reticle；SPIL 合作）
+  - `wiki/technologies/copackaged-optics.md`（Samsung SiPh CPO 三階段路線圖；Intel V-groove 玻璃耦合器；TSMC COUPE 2H26 量產確認）
+  - `wiki/technologies/glass-substrate.md`（Intel TGV 銅填充零失效可靠性；多尺寸 TGV；玻璃尺寸穩定性）
+  - `wiki/technologies/hybrid-bonding.md`（Intel ECTC：超低溫 D2W；EV Group 100% overlay）
+- 新增 source 摘要頁：4 頁
+  - `wiki/sources/2026-09-11_trendforce_samsung-qualcomm-2nm-foundry-pricing.md`
+  - `wiki/sources/2026-09-09_trendforce_highna-euv-samsung-skhynix-dram-2028.md`
+  - `wiki/sources/2026-09-08_trendforce_samsung-siliconphotonics-cpo-pic-testing.md`
+  - `wiki/sources/2026-06-05_semieng_intel-ectc-2026-emib-t-cpo-glass.md`
+- 更新 wiki/index.md（頁面總數 455→459；來源數 407→411）
+- 主要新知識：
+  1. **Samsung Foundry 定價力結構性轉強**：2nm yield >70%、Taylor fab 滿訂（Tesla/Broadcom/Arm）、4nm 報價 +10–15%、Qualcomm 談判陷僵局——Samsung Foundry 從「以低價搶單」模式正式轉型為議價主導方，與 TSMC 的價格體系差距縮小。
+  2. **High-NA EUV DRAM 2028 三廠共識**：Samsung、SK hynix、Micron 均在 2026-09 表態 2028 年前後導入 High-NA EUV 至 DRAM 量產；SK hynix 1c 佔比快速爬升（Q4'26 達 34%）並作為 HBM4E 核心製程，確認 EUV 世代換代已進入倒數計時。
+  3. **Intel EMIB-T ECTC 2026 規格落地**：25µm FLI bump pitch、120×120mm 超大封裝、>9× reticle 整合——這些數字將 EMIB-T 定位為與 TSMC CoWoS >14× reticle（2029）競爭的實質技術路徑；TGV 零失效可靠性確認玻璃基板量產可行性；V-groove 玻璃耦合器為 CPO 量產關鍵工程突破。

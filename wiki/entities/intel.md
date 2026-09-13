@@ -36,6 +36,17 @@ related:
 
 ## 近期動態 / Recent Developments
 
+- **2026-09-14（⭐最新）**：**ECTC 2026：EMIB-T 量化規格首次完整公開——25µm FLI bump pitch、120×120mm 封裝、>9× 光罩矽面積、HBM4e >12Gbps、UCIe 64Gbps**（SemiEng/Intel Foundry 2026-06-05）：
+  - **EMIB-T FLI bump pitch**：縮小至 **25 µm**（較業界現有 EMIB 約 55µm 大幅改善）
+  - **封裝尺寸**：支援最大 **120×120 mm**（超大型 AI/HPC 加速器基礎）
+  - **矽面積**：單封裝整合 **>9× 光罩**（reticle）的運算+記憶體矽面積
+  - **信號效能**：HBM4e 連接 **>12 Gb/s**；UCIe 介面 **64 Gb/s**
+  - **SPIL 合作**：Fan-Out Embedded Bridge 中的 3D SRAM chiplet 整合（OSAT 在 EMIB-T 生態系中的角色）
+  - **CPO edge coupler**：Glass fan-out coupler + V-groove 玻璃耦合介面——取代脆弱的 FAU 直接插纖，提升 CPO 量產化製造性
+  - **玻璃基板 TGV 可靠性**：銅填充 TGV 通過嚴苛熱循環零失效；玻璃尺寸穩定性（vs 有機基板翹曲），支援多層精密對準
+  - **混合接合研究**：超低溫 D2W 混合接合；EV Group 合作達成 **100% 晶片對晶圓鍵合疊合精度**（高速）
+  *Source: SemiEng 2026-06-05 → [[sources/2026-06-05_semieng_intel-ectc-2026-emib-t-cpo-glass]]*
+
 - **2026-08-24（⭐最新）**：**Hot Chips 2026：Diamond Rapids Foveros Direct 3D 完整架構首次揭示；Wildcat Lake 確認為 Intel 首款含 UCIe 的處理器；Crescent Island 480 GB LPDDR5X 350W 氣冷 GPU**（Intel Newsroom 2026-08-24）：
   - **Diamond Rapids（Xeon 7）封裝架構**（Hot Chips 2026 首次完整披露）：
     - **16 核心晶片**（Intel 18A-P；16 Panther Cove P-cores/片）經 **Foveros Direct 3D 混合接合**堆疊於 **4 基底晶片**（Intel 3-T）上

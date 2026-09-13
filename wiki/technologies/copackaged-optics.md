@@ -3,7 +3,7 @@ title: "共封裝光學元件 / Co-Packaged Optics (CPO) — TSMC-COUPE™ & Eco
 category: technology
 tags: [CPO, co-packaged-optics, COUPE, TSMC, GlobalFoundries, Samsung, photonics, AI, HPC, networking, OCI-MSA, DWDM, Broadcom, NVIDIA, glass-substrate, ULCVD, TGV, Spectrum-X, NVL72]
 created: 2026-04-25
-updated: 2026-09-13
+updated: 2026-09-14
 sources: [2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-05-07_trendforce_globalfoundries-silicon-photonics-scale-cpo, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-03-17_coherent_cpo-ofc2026-demo, 2026-06-07_digitimes_jcet-3d-packaging-cpo-plant, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_edn_cpo-technology-status-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-06-24_thelec_corning-glass-bridge-cpo, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-14_trendforce_umc-silith-silicon-photonics-hvm, 2026-07-14_trendforce_huawei-baidu-npo-msa, 2026-07-27_trendforce_presscenter_cpo-switches-nvidia-broadcom-coupe, 2026-06-03_3dincites_intel-foundry-emib-cpo-glass-ectc2026]
 related:
   - wiki/entities/tsmc.md
@@ -43,6 +43,20 @@ Co-Packaged Optics（CPO）將**光學引擎（Optical Engine）直接整合至�
 ---
 
 ## 發展時程 / Timeline
+
+- **2026-09-14（⭐最新）**：**Samsung SiPh PIC 自建測試 end-2026；TSMC COUPE 量產 2H26 確認；三星 SiPh 代工 2027**（TrendForce 2026-09-08）
+  - Samsung 使用 TSMC COUPE 認證設備（FormFactor/MPI probe stations）建立 in-house SiPh PIC 測試能力（end-2026）
+  - TSMC COUPE CPO 量產於 **2H26** 正式啟動（已確認）
+  - Samsung SiPh 路線：PIC 測試 2026 → EIC-PIC 光學引擎測試 2027 → SiPh 代工服務開放 2027 → CPO 整合至 GPU/CPU（長期）
+  - CPO 交換器市場放量：**2027–2028** 為關鍵窗口；垂直整合（SiPh設計+光學引擎+先進封裝）成為主流戰略
+  - Broadcom 為三星 SiPh 潛在客戶
+  *Source: [[sources/2026-09-08_trendforce_samsung-siliconphotonics-cpo-pic-testing]]*
+
+- **2026-09-14（⭐最新）**：**Intel ECTC 2026 CPO 成果：V-groove 玻璃耦合器介面；可拆式 edge optical connector**（Intel Foundry / SemiEng 2026-06-05）
+  - **V-groove glass coupler**：以剛性玻璃耦合器取代傳統 FAU（Fiber Array Unit）直接插纖，更耐用且易於量產
+  - **高性能可拆式 edge optical connector**：Glass fan-out coupler + expanded-beam edge connector，低損耗、可拔插、相容高量製造
+  - Intel 定位：CPO 架構將電/光轉換移至封裝，解決電互連頻寬瓶頸；支援 AI scale-up 網路
+  *Source: [[sources/2026-06-05_semieng_intel-ectc-2026-emib-t-cpo-glass]]*
 
 - **2026-09-11（⭐最新）**：**Ayar Labs CPO 進入高量產（HVM）轉型：累計融資 $650M，Wiwynn 策略投資確認**（SemiEng Week #155, 2026-09-11）：
   - **Ayar Labs** 宣布最新一輪 **$150M** 融資，累計融資規模達 **$650M**
