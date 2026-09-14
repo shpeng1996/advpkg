@@ -32,10 +32,14 @@
 AdvancedPackaging/
 ├── CLAUDE.md                      ← 本檔案（作業規範）
 │
+├── .env                           ← API 金鑰（不進版控，Claude 讀取但絕不輸出內容）
+├── .env.example                   ← 金鑰範本
+│
 ├── raw/                           ← 原始資料層（不可修改）
-│   ├── _collected_urls.txt        ← 已蒐集 URL 清單（去重用，Claude 追加寫入）
+│   ├── _collected_urls.txt        ← 已蒐集識別碼清單（去重用，Claude 追加寫入）
 │   ├── articles/                  ← 網路文章、新聞（.md，含 frontmatter）
-│   ├── papers/                    ← 學術論文（.md, .pdf 摘錄）
+│   ├── patents/                   ← 專利（EPO OPS 擷取）⭐v3.0 新增
+│   ├── papers/                    ← 學術論文（OpenAlex 擷取 / .pdf 摘錄）
 │   ├── reports/                   ← 產業/市場報告
 │   └── assets/                    ← 圖片、附件
 │
@@ -159,6 +163,20 @@ related: [wiki/page1.md, wiki/page2.md]   # 相關 wiki 頁面
 
 ## 參考資料 / References
 ```
+
+### 2.4.1 專利與論文的 Raw Frontmatter ⭐v3.0 新增
+
+專利與論文有各自的 frontmatter 欄位（完整規格見 `schedule.md` STEP 5）：
+
+**專利 / Patent（`raw/patents/`）**：除共同欄位外，必須包含
+`publication_number`（如 `US20260262485A1`）、`family_id`（去重主鍵）、`applicants`、`ipc_cpc`、`content_type: patent`
+
+**論文 / Paper（`raw/papers/`）**：除共同欄位外，必須包含
+`doi`（去重主鍵）、`authors`、`institutions`、`venue`、`cited_by_count`、`oa_pdf_url`、`content_type: paper`
+
+> **專利引用原則**：專利是**前瞻訊號而非既成事實**。在 wiki 頁面引用專利時，一律置於「專利訊號 / Patent Signals」小節，並使用有保留的措辭（「某公司於 YYYY-MM 公開之專利顯示…」），不得將專利內容陳述為已量產能力。
+
+---
 
 ### 2.5 來源摘要頁 / Source Summary Page (`wiki/sources/`)
 
@@ -602,6 +620,7 @@ relevance_tags: [CoWoS, HBM4, TSMC, hybrid-bonding]  ← 抓取時初步判斷
 
 ---
 
-*本 CLAUDE.md 由 Claude 協助生成，版本 2.0，2026-04-24。*
+*本 CLAUDE.md 由 Claude 協助生成，版本 3.0，2026-09-14。*
 *v2.0 新增：Collect 自動網路蒐集工作流程（§3.1）、Raw 檔 Frontmatter 規範（§3.1.1）、搜尋策略（§3.1.2）、品質過濾原則（§3.1.3）、_collected_urls.txt 去重機制、Log 格式擴充。*
+*v3.0 新增（2026-09-14）：**三軌資料源架構**——除既有 WebSearch 新聞外，新增 **EPO Open Patent Services v3.2**（專利）與 **OpenAlex**（學術論文）兩個 API 資料源；新增 `raw/patents/` 目錄；新增專利／論文 frontmatter 規範（§2.4.1）與專利引用原則；`_collected_urls.txt` 去重鍵擴充為 URL／`EPO:<family_id>:<pubnum>`／DOI 三種；API 金鑰統一由 `.env` 提供（絕不輸出）。完整執行規格見 `schedule.md`。*
 *如需調整規範，請直接告知 Claude，Claude 將更新本檔案。*

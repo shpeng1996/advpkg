@@ -20,3 +20,9 @@ Desktop.ini
 # Python cache
 __pycache__/
 *.pyc
+
+# Secrets — never commit (added 2026-09-14 with the EPO OPS / OpenAlex data sources)
+.env
+.env.local
+*.key
+*.pem
