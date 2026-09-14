@@ -3,7 +3,7 @@ title: "FOPLP — 扇出面板級封裝 / Fan-Out Panel-Level Packaging"
 category: technology
 tags: [fan-out, panel-level, TSMC, Samsung, ASE, Powertech, Innolux, CoPoS, InFO, cost-reduction]
 created: 2026-05-03
-updated: 2026-09-01
+updated: 2026-09-14
 sources: [2026-07-31_trendforce_ase-capex-record-10-5b-leap-foplp, 2025-09-12_trendforce_foplp-competitive-2025, 2026-04-13_trendforce_copos-pilot, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-21_3dincites_acm-wlp-plp-process-trends, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-15_digitimes_manz-310mm-foplp-ecd-equipment, 2026-06-13_digitimes_linkotech-foplp-rollout-traction, 2026-06-20_prnewswire_manz-asia-310mm-ecd, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_digitimes_tsmc-foplp-timeline-skepticism, 2026-07-06_trendforce_cfmee-plp2000-china-first-plp, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan]
 related:
   - wiki/technologies/copos.md
@@ -257,3 +257,52 @@ Powertech 正式宣布 **NT$70 億（~US$2.2 億）** FOPLP 投資計畫，以�
 **龍潭 Phase 3 面板封裝廠**：TSMC 龍潭 Phase 3 擴建計畫（104 公頃）規劃包含一座獨立面板級封裝廠，與兩座 1.4nm 邏輯廠共同布局，確認 FOPLP/CoPoS 量產基礎設施的落地。
 
 **wiki 含義**：TSMC 直接收購 AUO 廠房是 FOPLP/CoPoS 產能規劃由「路線圖承諾」轉向「資產確立」的最強信號，進一步強化本 wiki 對 2H28 量產目標的可信度評估。與 [[technologies/copos.md]] 2026-08-11 更新互參。
+
+---
+
+## ⭐ 2026-09-14 更新：學術前沿——翹曲預測與 die-first / die-last 製程分歧
+
+翹曲（warpage）是 FOPLP 從實驗線走向量產的**第一號良率障礙**，在本 wiki 中反覆出現卻少有量化處理。2026 年兩篇台灣學術研究補上此缺口。
+
+### 1. 模態感知混合 ML 翹曲預測（NTHU，*Materials*，2026-08-18）
+
+| 項目 | 內容 |
+|------|------|
+| 問題根源 | CTE 失配 + 高分子收縮（解鍵 debonding 後的製程翹曲） |
+| 方法 | Random Forest 判定全域翹曲**模態**機率 → 兩組模態專屬 ANN → 機率加權融合，預測全場翹曲 |
+| 驗證 | 16 組獨立有限元設計，橫跨兩種翹曲模態 |
+| 成果 | 相對單一神經網路，平均與最大誤差皆較低；**面板邊緣與角落改善最顯著** |
+| 附帶 | 分群策略同時降低訓練集規模與計算成本 |
+
+**關鍵事實**：既有單一 ML 模型在**面板邊角**預測最差——而面板越大（510×515mm FOPLP、CoPoS 310×310mm、Samsung 415×510mm），邊角佔比與翹曲幅度越高，此議題越關鍵。
+
+**實務意涵**：若翹曲能在設計階段以秒級 ML 推論預測（取代每次數小時的有限元模擬），面板佈局（die 配置、虛設圖案、EMC 選型）可在投片前優化，直接壓縮良率學習曲線。對 **Powertech PiFO（NT$70B，2027 年中量產）**、**ASE FOPLP（Q1 2027）**等已排定量產時程之專案具直接工程價值。
+
+### 2. Strip-Level Fan-Out（FO-Strip）與 die-last 架構（*Materials Science in Semiconductor Processing*，2026-09-11）
+
+| 項目 | 數值 |
+|------|------|
+| RDL 線寬/線距 | **5 µm / 5 µm** |
+| 扇出區 | 36.5 mm × 29.5 mm |
+| 基板 | **50 mm × 50 mm**（strip level） |
+| 架構 | **die-last** |
+| 熱循環 | JEDEC −40 °C ～ 125 °C |
+| 翹曲驗證 | 3D 有限元 vs **shadow Moiré 實測**一致 |
+| 優化 | RSM + Box–Wilson 中心複合設計（die 厚度、散熱片厚度、EMC／基板核心／underfill 性質） |
+
+**兩項新論點**：
+
+1. **「strip-level」中間路線**：介於 wafer-level 與 panel-level 之間。本頁記錄的面板尺寸競賽預設「越大越省」，本文提示一條**以面積利用率換良率**的折衷路線。
+2. **die-first vs die-last 製程分歧**（本 wiki 首次記錄）：作者主張 **die-last 是取得 5 µm/5 µm 細線 RDL 的關鍵**——RDL 在平整載板上先行製作，不受貼晶後形貌與翹曲干擾。
+
+### RDL 線寬對照尺規（本 wiki 累積）
+
+| 來源 | 線寬/線距 | 性質 |
+|------|-----------|------|
+| SemiEng Week #155 | 700 nm | 研究級 |
+| CFMEE PLP 2000（中國首套 510×515mm 直寫微影） | 2 µm | 量產設備規格 |
+| FO-Strip（本研究，die-last） | 5 µm / 5 µm | 量產導向學術研究 |
+
+⚠ 兩篇皆為模擬／代理模型研究；FO-Strip 的翹曲項有 shadow Moiré 實測交叉驗證，FO-PLP ML 的訓練資料則來自已驗證之有限元模型而非實測面板。
+
+- 引用：`wiki/sources/2026-08-18_materials_foplp-warpage-mode-aware-ml.md`、`wiki/sources/2026-09-11_mssp_fo-strip-die-last-5um-rdl.md`

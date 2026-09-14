@@ -3,7 +3,7 @@ title: "美光科技 / Micron Technology"
 category: entity
 tags: [memory, HBM4, DRAM, NAND, CapEx, Virginia, Idaho, New-York, onshoring]
 created: 2026-05-03
-updated: 2026-09-09
+updated: 2026-09-14
 sources: [2025-12-18_trendforce_micron-capex-hbm4, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-03-17_trendforce_gtc2026-key-takeaways, 2025-08-05_3dincites_iftle636-samsung-lsb-micron-virginia, 2026-01-23_trendforce_hbm4e-development, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-26_semieng_chip-week-144, 2026-06-25_thelec_micron-q3-fy2026-record, 2026-07-06_trendforce_micron-hiroshima-fab-hbm-1gamma, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-10_tomshardware_micron-250b-us-investment-globalwafers, 2026-07-10_semieng_chip-week-146, 2026-08-21_semieng_chip-week-152]
 related:
   - wiki/technologies/hbm4.md
@@ -222,3 +222,20 @@ Micron 的 HBM 熱管理策略與 Samsung（HPB）和 SK Hynix（iHBM）不同�
 
 - Micron HBM 市占：Counterpoint Research 約 **25–30%**（已超越 Samsung 排名第二）
 - Micron HBM4（36GB, 12-Hi）：NVIDIA Vera Rubin 量產出貨中
+
+## 專利訊號 / Patent Signals（2026-09-14 新增）
+
+> 以下為專利前瞻訊號，非已出貨能力。Micron 現行出貨之 HBM3E/HBM4 採用標準「base die 在底層 + 矽中介層」架構。
+
+| 專利號 | 公開日 | 主題 | 意義 |
+|--------|--------|------|------|
+| WO2025212237A1（PCT） | 2025-10-09 | Heat-mitigating high-bandwidth devices in SiP | interface die 移至堆疊**頂層**、I/O 走上表面；上方 communication substrate 橫向連回 host；TIM 直接接觸 |
+
+**架構解讀**：這是「**上方橋接（over-the-top bridge）**」——把 2.5D 橋接層從晶片下方（CoWoS 矽中介層 / EMIB 嵌入式矽橋）搬到晶片**上方**，同時兼作散熱路徑（訊號路徑與熱路徑共用結構）。
+
+**兩層意涵**：
+
+1. **與 Intel 殊途同歸**：Intel US20260271782A1（2026-09-10）亦主張 base die 可移至堆疊中段或頂層。兩家大廠在不到一年內分別提出 base die 位置重構方案，顯示這不是單一公司的異想——詳見 `wiki/technologies/hbm4.md`。
+2. **繞開矽中介層的路線群**：與 Qualcomm HBC（3D-LPDDR + 有機基板，宣稱 6× BW/W）同屬一類。若成立，HBM 對 CoWoS 產能的結構性依賴將被削弱。
+
+- 引用：`wiki/sources/2025-10-09_micron_wo2025212237a1-heat-mitigating-hbm-sip.md`

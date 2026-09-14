@@ -3,7 +3,7 @@ title: "JCET（江蘇長電科技）"
 category: entity
 tags: [OSAT, China, 3D-packaging, CPO, AI-power-modules, advanced-packaging, Shanghai]
 created: 2026-06-22
-updated: 2026-08-22
+updated: 2026-09-14
 sources: [2026-06-07_digitimes_jcet-3d-packaging-cpo-plant, 2026-06-26_semieng_chip-week-144, 2026-07-29_trendforce_china-advanced-packaging-new-capacity-wave, 2026-08-21_semieng_chip-week-152]
 related:
   - wiki/concepts/advanced-packaging-market.md
@@ -50,3 +50,19 @@ JCET 為中國規模最大的封裝測試代工廠（OSAT），近年積極由�
 ## 爭議與未解問題 / Open Questions
 
 - DIGITIMES 對 JCET 報導多數設有付費牆，wiki 對其量化數據（產能、營收明細、技術規格）覆蓋仍不完整，建議後續 collect 優先補充。
+
+## 專利訊號 / Patent Signals（2026-09-14 新增）
+
+> 以下為專利前瞻訊號，非已量產能力。
+
+| 專利號 | 公開日 | 主題 | 意義 |
+|--------|--------|------|------|
+| CN122094515A | 2026-05-26 | Hybrid interposer（玻璃 + 矽，經混合接合） | JCET 在 2.5D 中介層架構上的自主 IP 布局 |
+
+**內容**：於大片玻璃中介層上劃分多個離散功能區，玻璃面與多顆小尺寸矽中介層各形成接合層，經混合接合逐區貼合後塑封切割。**降本邏輯是以便宜的大面積玻璃承載昂貴的小面積矽**——與 TSMC CoWoS-L 以 RDL 承載 LSI 是同一思路，差別在載體材料。
+
+**意涵**：本頁先前僅記錄 JCET 江陰新 3D 封裝廠瞄準 AI 電源模組與 CPO 需求。此專利顯示中國最大 OSAT 在 **2.5D 中介層 + 玻璃 + 混合接合**三項關鍵技術的交集上已有布局，而非僅承接成熟製程外包。
+
+⚠ 中國專利申請案，屬早期布局訊號；公開與量產落地之間通常存在數年落差。
+
+- 引用：`wiki/sources/2026-05-26_jcet_cn122094515a-hybrid-glass-silicon-interposer.md`

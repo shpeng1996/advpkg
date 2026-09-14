@@ -3,7 +3,7 @@ title: "CoWoS — Chip-on-Wafer-on-Substrate"
 category: technology
 tags: [2.5D, interposer, TSMC, AI, HPC, HBM, COUPE, CPO, packaging-constraints, NVIDIA]
 created: 2026-04-24
-updated: 2026-09-06
+updated: 2026-09-14
 sources: [2026-08-13_semieng_1mw-rack-debate-thermal, 2026-08-05_trendforce_tsmc-cowos-cow-outsourcing-osat, 2026-05-24_techtimes_nvidia-computex2026-cowos, 2026-04-24_initial-survey, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-15_trendforce_tsmc-vanguard-stake-sale, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-09_financialcontent_tsmc-130k-cowos-wafers, 2026-06-09_digitimes_tsmc-cowos-soic-capacity-symposium, 2026-06-15_trendforce_tsmc-cowos-gap-narrowing-130k-200k-wafers, 2026-06-21_tomshardware_tsmc-fab-expansion-roadmap, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_tmtpost_tsmc-cowos-capacity-targets-2026-2027, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-06-10_tomshardware_tsmc-fab-expansion-roadmap-n2-cowos-soic]
 related:
   - wiki/entities/tsmc.md
@@ -353,3 +353,32 @@ TSMC 先進封裝研發總監 James Chen 首次官方量化 CoWoS 長期擴展�
 | CoPoS（面板級） | 中高端 AI/HPC（成本敏感） | 2H28-29 | 大面積低成本；較低精度 |
 
 此定位釐清終結了「面板封裝是否會取代晶圓封裝」的市場爭議，確立 CoWoS 在前沿 AI 封裝的不可取代地位。
+
+---
+
+## ⭐ 2026-09-14 更新：2028 年產能倍增目標 + LSI 可靠度專利訊號
+
+### CoWoS 產能路線圖——首次取得 2028 年絕對數字
+
+| 項目 | 2026 年底 | 2028 年底 | 變化 |
+|------|-----------|-----------|------|
+| **TSMC CoWoS** | **~130,000 wpm** | **260,000 wpm** | **倍增（2×）** |
+| **Intel EMIB-T**（CoWoS 等效） | — | 40,000–45,000 /月（2027：15,000–20,000） | — |
+
+**推算**：以 2028 年計，EMIB-T 規模約為 CoWoS 的 **15–17%**——足以構成實質第二供應來源，但短期內無法撼動 TSMC 主導地位。此數字亦為本 wiki 中最長期的 CoWoS 產能錨點（先前記錄止於「供需缺口 20%→10%，2026 年底」）。
+
+⚠ 媒體轉述之供應鏈傳聞（經濟日報／工商時報／Wedbush），非 TSMC／Intel 官方公告。
+
+### 專利訊號 / Patent Signals：LSI top-via 失效模式（US20260090444A1，2026-03-26）
+
+TSMC 專利首次具體揭示 **local silicon interposer（LSI，CoWoS-L 核心元件）** 的一項失效模式：
+
+- **機制**：LSI 的 top via 與**製程膠帶殘留物或其他雜質**發生化學反應 → **金屬原子遷移與 wire growth**（銅鬚／短路）→ 長期可靠度失效。
+- **解法**：多層阻障／包覆（cladding）結構，材料涵蓋 SiOCH, SiO_x, SiON, SiN_x, CuO_x, Ta, Ti, TaN, TiN, Mo, MoN, TaC, TiC, TaCN, TiCN。
+- **製程**：cladding 沉積 → 圖案化 → 濕蝕刻 → 乾蝕刻 → flowable/spin-coat 介電 → CMP。
+
+**意涵**：封裝尺寸自 3.3× 擴至 >14× 光罩（2024→2029）意味單一封裝內 LSI 數量倍增，此類缺陷的累積機率同步放大。**LSI 可靠度工程因此是 CoWoS-L 尺寸擴張的隱性限制條件**，與 Intel EMIB-T 面臨的良率挑戰屬同一問題族。
+
+⚠ 專利為前瞻／工程訊號，非公開規格或已知良率數據。
+
+- 引用：`wiki/sources/2026-09-14_trendforce_tsmc-cowos-double-2028-capacity.md`、`wiki/sources/2026-03-26_tsmc_us20260090444a1-lsi-via-barrier.md`

@@ -3,7 +3,7 @@ title: "HBM4 — High Bandwidth Memory 4"
 category: technology
 tags: [memory, HBM, JEDEC, standards, AI, HPC, HBM4E, cleanroom, capacity, ISSCC2026, ZAM, HB3DM, HBM5, zHBM, HPB, FMS-2026]
 created: 2026-04-24
-updated: 2026-09-09
+updated: 2026-09-14
 sources: [2026-08-13_semieng_1mw-rack-debate-thermal, 2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor, 2026-08-10_trendforce_skhynix-chongqing-sale-global-reset, 2026-08-05_trendforce_samsung-v10-zhbm-hbm5-fms2026, 2026-07-30_trendforce_samsung-ds-q2-2026-hbm4-triple-q3, 2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-03-18_trendforce_intel-emib-malaysia, 2026-01-23_trendforce_hbm4e-samsung-skhynix-mid2026, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-01-13_semiengineering_hbm4-microbumps, 2025-12-18_trendforce_micron-capex-hbm4, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h, 2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-03-03_trendforce_sk-hynix-hbm4-tight-gaps, 2025-08-12_semianalysis_hbm-roadmap, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit, 2026-06-09_astutegroup_hbm-market-share-2026-battle, 2026-06-10_trendforce_samsung-gwangju-packaging-base, 2026-06-15_trendforce_skhynix-hbm4e-sample-timeline-pulled-forward, 2026-06-20_techtimes_skhynix-hbm4e-12layer-samples, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-27_tweaktown_hbm4-16hi-nvidia-supply-fight, 2026-06-26_semieng_chip-week-144, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-14_trendforce_samsung-hbm-hiring-hbm4-hbm4e-hbm5, 2026-07-14_trendforce_skhynix-yongin-y1-feb2027, 2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b, 2026-08-13_trendforce_samsung-skhynix-hbm4-2h-earnings-pricing, 2026-08-25_trendforce_nvidia-server-hike-hbm-price-2027, 2026-08-28_trendforce_skhynix-indiana-hbm4e-3q29-supply-2030, 2026-08-26_tomshardware_hbf-hot-chips-oxmiq-limited-usability]
 related:
   - wiki/entities/sk-hynix.md
@@ -1092,3 +1092,65 @@ Hot Chips 2026 OXMIQ Labs 分析確認：HBF 在系統聚合層面僅達 HBM **0
 - 開始逐步增加 **8-Hi HBM4** 出貨比例（熱管理 + 供應鏈彈性），同時維持 12-Hi HBM4 供應
 - 此前 wiki 僅記錄 12-Hi HBM4 為 NVIDIA Vera Rubin 主流配置；本次確認 8-Hi 已成第二配置軌道
 
+
+---
+
+## 專利訊號 / Patent Signals（2026-09-14 更新）
+
+> 以下內容為專利前瞻訊號，非已量產能力。
+
+### Intel — Sub-1 µm 混合接合 3D 記憶體架構 (CN121605766A, 2026-03-03)
+
+Intel 於 2026-03-03 公開之專利揭示：採用 sub-1 µm 間距混合接合的三維記憶體架構。若此技術成熟，可實現遠高於 HBM TSV（間距 50–55 µm）的垂直互連密度，潛在支援 Memory-on-Logic 超高密度整合。此訊號顯示 Intel 可能在評估繞過 HBM interposer 架構、直接採用混合接合作為記憶體整合路徑。
+
+- 引用：`wiki/sources/2026-03-03_intel_cn121605766a-3d-memory-sub1um-hb.md`
+
+## 學術前沿 / Research Frontier — 熱管理與可靠性（2026-09-14 更新）
+
+**來源**：Do 等人，Micromachines, 2026-09-08（中央大學，南韓）
+
+**關鍵量化發現**：
+
+| 指標 | 數值 |
+|------|------|
+| 每增加 2-Hi 對接面溫升 | 約 +15% |
+| 高熱通量 TIM 選擇 | Indium 焊料優於聚合物 TIM（>100 W/cm² 時） |
+| Samsung HPB 熱阻優勢 | -20%（vs 標準 HBM4 TIM 設計） |
+| DRAM die CTE | ~3.7 ppm/°C（vs TSV Cu 差異導致疲勞） |
+| 可靠性風險閾值 | TSV CTE 不匹配疲勞在 >85°C 循環下顯現 |
+
+此論文獨立驗證了 Samsung Hot Chips 2026 HPB -20% 熱阻聲明，並量化 12-Hi → 16-Hi 的熱挑戰。「+15%/2-Hi 結溫增量」為本 wiki 首次記錄的量化指標。
+
+- DOI：https://doi.org/10.3390/mi17091065
+- 引用：`wiki/sources/2026-09-08_micromachines_hbm-thermal-management-reliability.md`
+
+---
+
+## ⭐ 2026-09-14（第二輪）專利訊號：Base Die 位置重構——Intel 與 Micron 殊途同歸
+
+> 以下為專利前瞻訊號，非已出貨能力。三家記憶體廠現行出貨之 HBM3E/HBM4 全數採用「base die 在底層 + 矽中介層」架構。
+
+自 HBM1 起，「base die（interface/logic die）位於堆疊最底層、承載對外 microbump 介面」是未被挑戰的結構前提。2026-09-10 同日公開的兩件 Intel 專利，加上 Micron 2025-10 的 PCT 案，顯示**至少兩家大廠正在評估把 base die 移出底層**。
+
+| 專利號 | 申請人 | 公開日 | base die 位置 | 主要動機 |
+|--------|--------|--------|--------------|---------|
+| US20260271782A1 | Intel | 2026-09-10 | **堆疊中段**（替代案：頂層） | 平衡各 DRAM die 時序路徑；TSV 貫穿 DRAM 連回底部 microbump |
+| US20260271308A1 | Intel | 2026-09-10 | 仍在底層 | base die interface logic 區為熱點；懸空區堆疊導熱層導向頂部 IHS |
+| WO2025212237A1 | Micron | 2025-10-09 | **堆疊頂層** | I/O 走上表面 + 上方 communication substrate 橫向連回 host；TIM 直接接觸 |
+
+### 為何重要
+
+1. **時序**：Intel 主張中段配置可平衡 DRAM die 間的時序路徑長度，從而在相同製程下支撐更高頻寬或更多堆疊層數——直接對應 HBM4E 16-Hi／HBM5 20-Hi 的時序挑戰。
+2. **散熱**：base die 的 interface logic 區被 Intel 明確指認為主要熱點（所有進出堆疊的高速訊號皆經該區）。把 base die 移向頂部貼近散熱器，或在其上方堆疊導熱層，是兩種對應解法。
+3. **供應鏈意涵**：本頁「Base Die 供應鏈全景」段落（SK hynix→TSMC 12nm / Samsung→4nm 自製 / Micron→TSMC；SK hynix 評估 Intel Foundry for HBM4E）隱含 base die 承載底部 microbump 介面之假設。若 base die 上移，代工廠與記憶體廠之間的製程分工界面（誰做 TSV、誰做 microbump、誰負責熱路徑）將需重新劃分。
+4. **對 CoWoS 的潛在影響**：Micron 的「上方橋接（over-the-top bridge）」把 2.5D 橋接層從晶片下方搬到上方，與 Qualcomm HBC（3D-LPDDR + 有機基板）同屬「繞開矽中介層」路線群。若此類架構成立，HBM 對 CoWoS 產能的結構性依賴將被削弱——但目前仍屬紙面階段。
+
+- 引用：`wiki/sources/2026-09-10_intel_us20260271782a1-hbm-base-die-mid-stack.md`、`wiki/sources/2026-09-10_intel_us20260271308a1-hbm-base-die-thermal.md`、`wiki/sources/2025-10-09_micron_wo2025212237a1-heat-mitigating-hbm-sip.md`
+
+## 學術前沿補充（2026-09-14 第二輪）：控制器端長跨距 ECC
+
+**REACH（RPI + IBM T. J. Watson Research Center）**：提出控制器管理的長跨距 ECC，用於 HBM AI 推論，降低控制器負擔。
+
+與本頁「HBM 可靠性（Meta Llama 3 實測，17.2% 中斷歸因 HBM）」段落同一問題域——HBM 可靠度已成為 AI 推論的系統級瓶頸，**ECC 策略正從 DRAM 內部上移到記憶體控制器層**。
+
+- 引用：`wiki/sources/2026-09-14_semieng_paper-roundup-chipsmore-reach.md`

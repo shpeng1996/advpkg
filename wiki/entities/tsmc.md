@@ -3,7 +3,7 @@ title: "台積電 / TSMC"
 category: entity
 tags: [foundry, advanced-packaging, CoWoS, SoIC, CoPoS, COUPE, CPO, InFO, WMCM, aLSI, MRAM, 3nm-pricing]
 created: 2026-04-24
-updated: 2026-09-11
+updated: 2026-09-14
 sources: [2026-09-10_trendforce_tsmc-august-revenue-nt514b-record-fourth-month, 2026-09-10_trendforce_tsmc-taichung-14nm-p1-p2-2027-ahead-of-plan, 2026-04-24_initial-survey, 2026-04-13_trendforce_copos-pilot, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2025-12-18_trendforce_apple-wmcm-a20, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-01-20_trendforce_tsmc-wmcm-apple, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap, 2026-04-23_trendforce_tsmc-roadmap-a12-a13-no-high-na-euv, 2026-05-07_trendforce_tsmc-us-expansion-250b-arizona, 2026-05-12_focustaiwan_tsmc-capex-31b-arizona-20b, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-28_reuters_tsmc-kevin-zhang-energy-efficiency, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-09_financialcontent_tsmc-130k-cowos-wafers, 2026-06-09_digitimes_tsmc-cowos-soic-capacity-symposium, 2026-06-15_trendforce_tsmc-cowos-gap-narrowing-130k-200k-wafers, 2026-06-17_digitimes_amkor-tsmc-10year-arizona-deal, 2026-06-17_trendforce_tsmc-amkor-10year-arizona-advanced-packaging, 2026-06-21_tomshardware_tsmc-fab-expansion-roadmap, 2026-06-27_tmtpost_tsmc-cowos-capacity-targets-2026-2027, 2026-07-02_trendforce_samsung-sf2p-plus-tsmc-n2-roadmap, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-22_trendforce_tsmc-2027-price-hike-hpc, 2026-07-20_trendforce_tsmc-265b-arizona-intel-novalake, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-08-17_trendforce_tsmc-arizona-profit-663pct-1h26, 2026-06-10_tomshardware_tsmc-fab-expansion-roadmap-n2-cowos-soic]
 related:
   - wiki/technologies/cowos.md
@@ -377,3 +377,39 @@ TSMC 先進封裝研發總監 **James Chen**（SEMICON Taiwan 2026）首次官�
 - 長期目標：消除 TIM 介面，直接晶片-封裝散熱整合（**微通道冷卻**納入 TSMC R&D 路線圖）
 - 熱共優化（材料+封裝+晶片）：降低熱阻達約 **40%**
 - AI 系統總功耗 5 年增長 **~6×**
+
+---
+
+## 專利訊號 / Patent Signals（2026-09-14 更新）
+
+> 以下內容為專利前瞻訊號，非已量產能力。
+
+| 專利號 | 公開日 | 主題 | 意義 |
+|--------|--------|------|------|
+| CN224007096U | 2026-03-17 | Logic + memory over interposer package structure | 2.5D + 3D 協同整合 IP 保護；CoWoS-S × SoIC 橋接架構 |
+| CN122260581A | 2026-06-23 | Photonic engine (grating couplers + microlenses) | COUPE™ 光子引擎封裝 IP；表面法向光柵耦合方式確認 |
+
+台積電 2026 年 H1 的兩件中國實用新型/發明專利，鎖定 **2.5D/3D 整合架構** 與 **CPO 光子引擎封裝**，與其 2H2026 COUPE™ HVM 目標及 CoWoS 演化路徑吻合。
+
+### 專利訊號補充（2026-09-14 第二輪）：CoWoS-L 局部矽橋可靠度
+
+| 專利號 | 公開日 | 主題 | 意義 |
+|--------|--------|------|------|
+| US20260090444A1 | 2026-03-26 | Local silicon interposer die with via barrier structure | 揭示 LSI **top via 與製程膠帶殘留物反應 → 金屬原子遷移 / wire growth** 之失效模式；以多層阻障（SiOCH/SiON/SiN/Ta/Ti/TaN/TiN/Mo 系）解決 |
+
+**意涵**：LSI 是 **CoWoS-L** 的核心元件（功能對應 Intel EMIB 的嵌入式矽橋）。wiki 先前僅記錄 CoWoS-L 的產能與尺寸路線圖，未記錄失效模式。封裝尺寸放大（2029 年 >14× 光罩）意味 LSI 數量倍增，此類缺陷的累積機率同步放大——**可靠度工程是 CoWoS-L 尺寸擴張的隱性限制條件**。可與 digitimes 2026-09 報導的「EMIB-T 良率問題」對照：兩家在局部矽橋路線上面臨同類製程可靠度挑戰。
+
+### ⭐ 2026-09-14 更新：2nm/3nm 產能目標與 CapEx 配比（TrendForce 供應鏈報導）
+
+| 項目 | 2026 年底 | 2027 年中 | 成長 |
+|------|-----------|-----------|------|
+| 2nm | 90,000 wpm | 110,000 wpm | +22% |
+| 3nm | 180,000+ wpm | 210,000 wpm | +16%+ |
+
+- **2026 CapEx：$60–64B**，其中 **70–80% 投入先進製程**
+- 3nm 可望超越 5nm，成為 TSMC 最大營收貢獻製程
+- CoWoS 產能同步倍增（見 `wiki/technologies/cowos.md`）
+
+⚠ 媒體轉述之供應鏈傳聞（經濟日報／工商時報／Wedbush），非官方公告。
+
+- 引用：`wiki/sources/2026-03-26_tsmc_us20260090444a1-lsi-via-barrier.md`、`wiki/sources/2026-09-14_trendforce_tsmc-cowos-double-2028-capacity.md`

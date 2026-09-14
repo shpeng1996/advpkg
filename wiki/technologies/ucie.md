@@ -3,7 +3,7 @@ title: "UCIe — Universal Chiplet Interconnect Express"
 category: technology
 tags: [standards, chiplet, interconnect, UCIe, 3D, hybrid-bonding, UCIe-3.0]
 created: 2026-04-24
-updated: 2026-08-28
+updated: 2026-09-14
 sources: [2026-08-24_intel-newsroom_hot-chips-2026-diamond-rapids-foveros-ucie, 2026-04-24_initial-survey, 2026-04-01_semiengineering_chiplets-2026, 2025-01-28_3dincites_iftle-618-ucie-standard-vs-ucie3, 2025-01-01_semieng_ucie-1-6t-io-chiplets-ai-datacenter, 2025-09-03_uciexpress_ucie30-spec, 2026-03-05_uciexpress_chiplet-summit-2026, 2026-02-12_semieng_ucie3-technical-deepdive]
 related:
   - wiki/technologies/hybrid-bonding.md
@@ -301,3 +301,17 @@ Intel Wildcat Lake（Intel 18A）在 Hot Chips 2026 揭示一個重要的 UCIe �
 | Wildcat Lake (Core) | 有機 MCP | UCIe 替代 Foveros（降本） |
 
 這是 UCIe 在同一家公司不同層級產品中展現「效能 vs 成本」彈性的最直接案例。
+
+---
+
+## ⭐ 2026-09-14 更新：學術前沿——互連層作為運算資源（compute-in-interconnect）
+
+本頁對 chiplet 互連的描述集中於**頻寬與標準**（UCIe 3.0 64 GT/s quarter-rate、Arm AGI 16×16 @ 32 GT/s = 2 TB/s D2D、Intel Wildcat Lake 首款 UCIe 處理器）。新加坡國立大學（NUS）的 **CHIPSMORE** 提出一個架構層的新命題：
+
+> **Compute-in-Interconnect and -Memory Chiplets** — 把運算下放到 **chiplet 之間的互連層**（而不僅是在 chiplet 內部），配合記憶體內運算，加速多模態多請求 LLM 推論。
+
+**意涵**：UCIe 標準目前的設計目標是「讓 chiplet 之間可靠、高頻寬、低功耗地**傳輸**資料」。若互連層本身承載運算，則互連標準需處理的不只是 PHY/協定層，還包括**互連層的功能定義與一致性語意**——這是 UCIe 3.0 之後可能出現的標準演進方向，值得列入長期追蹤。
+
+⚠ 本則來自 SemiEngineering 論文彙整頁，未含完整量化數據；引用具體數字須追溯原始論文。
+
+- 引用：`wiki/sources/2026-09-14_semieng_paper-roundup-chipsmore-reach.md`

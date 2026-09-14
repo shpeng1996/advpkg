@@ -3,7 +3,7 @@ title: "CoPoS — Chip-on-Panel-on-Substrate"
 category: technology
 tags: [panel-level-packaging, FOPLP, TSMC, CoPoS, AI, HPC, AP7, InFO]
 created: 2026-04-25
-updated: 2026-09-06-11
+updated: 2026-09-14
 sources: [2026-04-13_trendforce_copos-pilot, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2025-09-12_trendforce_foplp-competitive-landscape-2025, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-20_wccftech_tsmc-copos-glass-core-cost-cut, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-04-28_cw_tsmc-copos-move-really-means, 2026-06-14_digitaltrends_tsmc-copos-glass-temporary-carrier, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan]
 related:
   - wiki/technologies/cowos.md
@@ -307,3 +307,48 @@ TSMC 於 2026-09-04 透過 Tom's Hardware 報導首次官方清楚劃定 CoPoS �
 - **HVM 時程再確認**：C.C. Wei 確認 CoPoS **2H28-29 HVM**；玻璃核心基板（TGV Glass Core）為下一里程碑（2030+）。
 
 **市場策略意涵**：此定位釐清對 CoPoS 投資方（Powertech PiFO、ASE FOPLP、TSMC 自身嘉義廠）構成重要框架——面板封裝的商業機會集中在「前沿之外」的中高端 AI 市場，而非正面競爭 CoWoS 的最大算力封裝。
+
+---
+
+## 雙軌設備評估（Dual-Track Equipment Evaluation）（2026-06-16 更新）
+
+**來源**：TrendForce, 2026-06-16
+**引用**：`wiki/sources/2026-06-16_trendforce_tsmc-copos-dual-track-eval.md`
+
+TSMC 龍潭 CoPoS 試驗線採用**雙軌並行評估**架構：
+
+| 軌道 | 廠商 |
+|------|------|
+| **全球領導廠商軌** | Applied Materials、Tokyo Electron、SCREEN、DISCO、Lintec、Nitto、Yamada、Tazmo、KLA、Camtek |
+| **台灣本地廠商軌** | Gudeng、Mirle、Scientech、GPTC、Utechzone、VisEra、GPM |
+
+評估標準：製程穩定性、交貨期、成本效率、本地支援能力。
+
+**VisEra 迷你產線**：2026 年在 VisEra 建立迷你生產線，協助驗證台灣本地設備可行性。
+
+**Samsung 競爭**：Samsung 面板封裝採用 **415×510 mm** 規格（vs TSMC 310×310 mm），韓國設備商 GigaVis、Semes、Hanwha Semitech 也進入 PLP 設備市場。
+
+**策略意涵**：雙軌結構同時對沖供應鏈風險（全球）與建立本地台灣設備生態（地緣政治考量）；VisEra 迷你產線為台灣在地化生態的試點。
+
+**最新時程確認**（截至 2026-09-14）：
+
+| 里程碑 | 時程 |
+|--------|------|
+| 試驗線運行 | 2026 進行中 |
+| VisEra 迷你產線 | 2026 |
+| 小批量試產 | 2027 |
+| 量產（HVM） | 2028–2029 |
+
+---
+
+## ⭐ 2026-09-14 更新：面板尺寸擴張的邊角翹曲風險（學術前沿）
+
+CoPoS 採 310×310mm 面板（Samsung 415×510mm、FOPLP 510×515mm）。清華大學（NTHU）2026-08-18 發表的 FO-PLP 翹曲研究指出一項與尺寸直接相關的事實：
+
+> 既有單一 ML／代理模型在**面板邊緣與角落**的翹曲預測誤差最大；模態分離（Random Forest 分類 + 雙 ANN 融合）在此處改善最顯著。
+
+**對 CoPoS 的意涵**：面板越大，邊角佔比與翹曲幅度越高，而邊角正是預測最不可靠的區域。這為 CoPoS 的「面板尺寸 vs 良率」取捨提供了一個先前未被量化的維度——本頁已記錄的雙軌設備評估（全球 vs 台灣廠商）與 VisEra 迷你產線，其驗證重點之一應即為大面板邊角的翹曲控制。
+
+詳見 `wiki/technologies/foplp.md` 之「學術前沿——翹曲預測與 die-first / die-last 製程分歧」段落。
+
+- 引用：`wiki/sources/2026-08-18_materials_foplp-warpage-mode-aware-ml.md`

@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
 **更新時間 Updated**：2026-09-14
-**頁面總數 Total Pages**：459
-**原始來源數 Sources**：411
+**頁面總數 Total Pages**：478
+**原始來源數 Sources**：430
 
 ---
 
@@ -67,6 +67,25 @@
 ---
 
 ## 來源摘要 Sources（依日期倒序）
+- [[sources/2026-09-14_trendforce_tsmc-cowos-double-2028-capacity]] — TrendForce：**TSMC CoWoS 產能 130K→260K wpm（2026 年底→2028 年底，倍增）；Intel EMIB-T 2027 15–20K/月→2028 40–45K/月（約 CoWoS 的 15–17%）；2nm 90K→110K wpm；3nm 180K→210K wpm；2026 CapEx $60–64B（70–80% 先進製程）**（2026-09-14）⭐新增
+- [[sources/2026-09-14_semieng_paper-roundup-chipsmore-reach]] — SemiEng 論文彙整 Sept.14：**NIST underfill 固化/熱耐久建模；NUS CHIPSMORE compute-in-interconnect chiplet；RPI+IBM REACH 控制器端長跨距 HBM ECC；NYCU+TSMC EUV 光罩**（2026-09-14）⭐新增
+- [[sources/2026-09-10_intel_us20260271782a1-hbm-base-die-mid-stack]] — [專利] Intel HBM base die 移至**堆疊中段**（時序平衡）或頂層（散熱）；TSV 貫穿 DRAM die（US20260271782A1, 2026-09-10）⭐新增
+- [[sources/2026-09-10_intel_us20260271308a1-hbm-base-die-thermal]] — [專利] Intel HBM base die **interface logic 區為熱點**；懸空區堆疊導熱層導向頂部 IHS（US20260271308A1, 2026-09-10）⭐新增
+- [[sources/2025-10-09_micron_wo2025212237a1-heat-mitigating-hbm-sip]] — [專利] Micron interface die 移至**堆疊頂層**、I/O 走上表面 + 上方 communication substrate（over-the-top bridge）（WO2025212237A1, 2025-10-09）⭐新增
+- [[sources/2026-03-26_tsmc_us20260090444a1-lsi-via-barrier]] — [專利] TSMC LSI top-via 阻障結構；揭示膠帶殘留物→金屬遷移/wire growth 失效模式（US20260090444A1, 2026-03-26）⭐新增
+- [[sources/2026-05-26_jcet_cn122094515a-hybrid-glass-silicon-interposer]] — [專利] JCET 玻璃+矽混合中介層（混合接合貼合）；以便宜玻璃承載昂貴矽（CN122094515A, 2026-05-26）⭐新增
+- [[sources/2026-06-30_advphotonicsnexus_tgv-3d-fowlp-cpo-optical-engine]] — [論文] A*STAR IME：**>200Gbps/lane 時垂直穿孔成瓶頸；預製 TGV 勝過 TSV/TMV/eBar；3D FOWLP 光引擎支撐 400Gbps/lane**（Advanced Photonics Nexus, 2026-06-30）⭐新增
+- [[sources/2026-08-20_admt_siph-cpo-pic-components-review]] — [論文] 矽光子 CPO 裝置級綜述：五大核心 PIC 元件 + 五大挑戰（含熱管理）（Advanced Materials Technologies, 2026-08-20）⭐新增
+- [[sources/2026-09-11_ichmt_tsv-microchannel-convex-pinfin-cooling]] — [論文] TSV 嵌入式微通道冷卻：**>100 W/cm² 局部熱通量；凸形銷鰭最高溫降 ~20K/平均 ~15K；凹形壓降 -15% 但溫升**（Int. Comm. Heat & Mass Transfer, 2026-09-11）⭐新增
+- [[sources/2026-08-18_materials_foplp-warpage-mode-aware-ml]] — [論文] NTHU：FO-PLP 翹曲模態感知混合 ML 預測；**面板邊緣與角落改善最顯著**（Materials, 2026-08-18）⭐新增
+- [[sources/2026-09-11_mssp_fo-strip-die-last-5um-rdl]] — [論文] FO-Strip die-last 架構：**5µm/5µm RDL；50×50mm 基板；JEDEC −40/125°C；shadow Moiré 交叉驗證**；strip-level 中間路線（MSSP, 2026-09-11）⭐新增
+- [[sources/2026-09-08_micromachines_hbm-thermal-management-reliability]] — HBM 封裝熱管理可靠性：+15%/2-Hi 結溫；HPB -20%；Indium TIM > 聚合物 TIM（中央大學, 2026-09-08）
+- [[sources/2026-09-03_acsami_self-activated-direct-bonding-ald-al2o3]] — 自激活無電漿直接晶圓接合 ALD Al2O3 300mm 展示（橫濱國立大學 × 三菱電機, 2026-09-03）
+- [[sources/2026-06-23_tsmc_cn122260581a-photonic-engine-cpo]] — [專利] TSMC 光子引擎封裝光柵耦合器+微透鏡 CPO（CN122260581A, 2026-06-23）
+- [[sources/2026-09-03_intel_us20260262485a1-hybrid-bonding-via]] — [專利] Intel 混合接合 via 結構 <4 µm 間距（US20260262485A1, 2026-09-03）
+- [[sources/2026-04-07_intel_jp2026059728a-glass-core-edge-coating]] — [專利] Intel 玻璃核心基板邊緣塗層機械強度（JP2026059728A, 2026-04-07）
+- [[sources/2026-03-03_intel_cn121605766a-3d-memory-sub1um-hb]] — [專利] Intel 3D 記憶體 sub-1µm 混合接合（CN121605766A, 2026-03-03）
+- [[sources/2026-06-16_trendforce_tsmc-copos-dual-track-eval]] — TrendForce：TSMC CoPoS 龍潭試驗線雙軌設備評估，310×310mm，VisEra 迷你產線（2026-06-16）
 - [[sources/2026-09-11_trendforce_samsung-qualcomm-2nm-foundry-pricing]] — TrendForce：Samsung 2nm yield >70%；Taylor fab 首批客戶（Tesla/Broadcom/Arm）；Qualcomm 2nm 延至 2027；Foundry 定價提升⭐新增
 - [[sources/2026-09-09_trendforce_highna-euv-samsung-skhynix-dram-2028]] — TrendForce：Samsung/SK hynix High-NA EUV DRAM 2028 目標；SK hynix 1c DRAM 34% Q4'26；Micron 1δ 準備⭐新增
 - [[sources/2026-09-08_trendforce_samsung-siliconphotonics-cpo-pic-testing]] — TrendForce：Samsung SiPh PIC 自建測試 end-2026；SiPh 代工 2027；三階段 CPO 路線圖⭐新增

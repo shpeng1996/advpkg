@@ -3,7 +3,7 @@ title: "英特爾 / Intel"
 category: entity
 tags: [IDM, advanced-packaging, EMIB, Foveros, Intel18A, Clearwater-Forest, Foveros-Direct, glass-substrate, 14A, High-NA-EUV, silicon-capacitors, Google-TPU-v8e, Q2-2026-earnings, Tesla-14A, HLFF, RAMP-C, Secure-Enclave, Rio-Rancho]
 created: 2026-04-24
-updated: 2026-09-10
+updated: 2026-09-14
 sources: [2026-08-24_intel-newsroom_hot-chips-2026-diamond-rapids-foveros-ucie, 2026-04-24_initial-survey, 2026-07-20_trendforce_tsmc-265b-arizona-intel-novalake, 2026-03-18_trendforce_intel-emib-malaysia, 2026-03-03_trendforce_intel-clearwater-forest, 2026-03-05_trendforce_intel-emib-billions, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-04-20_trendforce_intel-foundry-14a-equipment, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-01_semianalysis_cpus-back-datacenter-2026, 2026-04-10_3dincites_intel-gan-chiplet, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks, 2026-06-21_convergedigest_intel-emib-t-multi-die-packaging, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap, 2026-07-01_trendforce_terafab-intel-veteran-hire, 2026-04-07_tomshardware_intel-joins-terafab, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-01-30_tomshardware_intel-ai-chip-test-vehicle-emib-t, 2026-07-14_trendforce_intel-ireland-5b-intel3-europe, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-04_semieng_from-blueprint-intel-hlff, 2026-07-31_semieng_chip-week-149, 2026-08-13_trendforce_intel-memory-reentry-xbm-zam-saimemory]
 related:
   - wiki/entities/tsmc.md
@@ -387,3 +387,30 @@ Intel CFO David Zinsner 於 2026-08-26 Deutsche Bank 技術大會補充了 CEO �
 **時程定位**：2028–2030 年代末；前提是 18A + 14A 節點成熟 + Foveros Direct 3D 完善
 
 **策略意義**：Intel 首次以具體數字（12× reticle, 24 HBM5）聲張「未來封裝尺寸超越 TSMC」的技術可行性，從「CoWoS 替代方案」升格為「超大封裝領域新領導者」的長期定位。
+
+---
+
+## 專利訊號 / Patent Signals（2026-09-14 更新）
+
+> 以下內容為專利前瞻訊號，非已量產能力。
+
+| 專利號 | 公開日 | 主題 | 意義 |
+|--------|--------|------|------|
+| US20260262485A1 | 2026-09-03 | Via structures for hybrid bonding (<4 µm pitch) | Intel 混合接合間距研發進入 <4 µm 階段 |
+| CN121605766A | 2026-03-03 | 3D memory sub-1 µm hybrid bonding | 前瞻 Memory-on-Logic 超高密度整合研究 |
+| JP2026059728A | 2026-04-07 | Glass core substrate edge coating (機械強度) | 玻璃基板邊緣破裂可靠性解決方案 |
+
+Intel 在 2026 年集中布局：**混合接合（<4 µm → sub-1 µm 研究）× 玻璃基板（TGV + 邊緣保護）**兩大方向——與 ECTC 2026 論文揭露的技術方向高度一致。
+
+### 專利訊號補充（2026-09-14 第二輪）：HBM Base Die 位置與熱路徑
+
+| 專利號 | 公開日 | 主題 | 意義 |
+|--------|--------|------|------|
+| US20260271782A1 | 2026-09-10 | Base die placement in HBM systems | base die 由底層移至**中段**（時序平衡）或**頂層**（散熱）；TSV 貫穿 DRAM die 連回底部 microbump |
+| US20260271308A1 | 2026-09-10 | Base die thermal management in HBM | 明確指認 base die **interface logic 區為熱點**；懸空區堆疊導熱層導向頂部 IHS |
+
+**戰略意涵**：Intel 於 2026 年 Q3 同日公開兩件 HBM **內部堆疊架構**專利，對象是 Intel 並不製造的 DRAM（CFO 已於 2026-09-01 正式排除 DRAM 製造）。合理解讀是其 **HBM4E base die 代工**企圖（傳聞 SK hynix 評估 Intel Foundry 為 base die 供應商）不只停留在「照圖代工」，而是嘗試在 base die 的**位置、時序與熱設計**上建立自有 IP 話語權——這會提高 Intel 在記憶體廠談判中的技術槓桿，也與 EMIB-T 封裝端布局形成「base die 代工 + 2.5D 封裝」的雙端切入。
+
+⚠ 專利為前瞻訊號；截至 2026-09 無任何量產 HBM 採用非底層 base die 架構。
+
+- 引用：`wiki/sources/2026-09-10_intel_us20260271782a1-hbm-base-die-mid-stack.md`、`wiki/sources/2026-09-10_intel_us20260271308a1-hbm-base-die-thermal.md`

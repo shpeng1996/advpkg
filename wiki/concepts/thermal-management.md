@@ -3,7 +3,7 @@ title: "先進封裝熱管理 / Thermal Management in Advanced Packaging"
 category: concept
 tags: [thermal-management, liquid-cooling, 3D-IC, CoWoS, heat-dissipation, TIM, ECTC-2025, GaN, power-delivery, co-design]
 created: 2026-04-25
-updated: 2026-09-11
+updated: 2026-09-14
 sources: [2025-12-01_semiengineering_thermal-management, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-02_trendforce_samsung-hbm5-computex2026, 2026-05-21_semieng_hi-roadmap-nature-paper-intel, 2026-08-13_semieng_1mw-rack-debate-thermal, 2026-04-27_semieng_semiconductor-materials-misbehave, 2026-08-21_trendforce_chip-packaging-heat-ai-bottleneck-cpo-stco]
 related:
   - wiki/technologies/cowos.md
@@ -416,3 +416,63 @@ IBM Nanostack 的 3D 接合（beveled edge stacking）帶來特有熱管理挑�
 | **FTCO** | DTCO + 機械應力 + 散熱 同步優化 |
 
 **意義**：2nm 以下多晶粒封裝已無法按序優化（先設計、再考慮封裝、最後考慮散熱）；FTCO 要求在 tape-out 前，封裝結構/熱路徑/機械應力/製程設計四者同步收斂。這是 Amkor 在 Arizona 廠規劃時採用的方法論。
+
+---
+
+## HBM 封裝熱管理量化數據（2026-09-14 更新）
+
+**來源**：Do 等人，Micromachines, 2026-09-08（中央大學，南韓）
+
+HBM 堆疊層數增加帶來的熱挑戰現已有量化文獻支撐：
+
+| 指標 | 數值 | 備注 |
+|------|------|------|
+| 每增加 2-Hi 結溫增量 | ~+15% | 8-Hi → 12-Hi → 16-Hi 路線圖下的熱壁 |
+| 高熱通量 TIM 門檻 | >100 W/cm² | Indium 焊料 > 聚合物 TIM |
+| Samsung HPB 熱阻優勢 | -20% | 相對標準 HBM4 TIM；Hot Chips 2026 獨立驗證 |
+| DRAM die CTE | ~3.7 ppm/°C | vs TSV Cu（~17 ppm/°C）差異 → TSV 疲勞風險 |
+| 可靠性溫度門檻 | >85°C | TSV 焊點熱疲勞循環開始顯現 |
+
+**設計含意**：HBM4E → HBM5（16-Hi 預期）路線圖將使 AI 加速器封裝進入「熱管理決定設計」的時代，熱路徑（TIM、HPB、液冷通道）需在 tape-out 前完成協同優化（參見 FTCO 方法論）。
+
+- 引用：`wiki/sources/2026-09-08_micromachines_hbm-thermal-management-reliability.md`
+
+---
+
+## ⭐ 2026-09-14（第二輪）更新：HBM base die 熱點三方解法對照 + TSV 微通道冷卻量化
+
+### HBM base die interface logic 區——熱點解析度下降到區塊層級
+
+先前本頁的 HBM 熱管理數據（+15%/2-Hi 結溫增量、HPB -20% 熱阻、Indium TIM）皆以**整體堆疊**為單位。Intel 專利 US20260271308A1（2026-09-10 公開）把熱點解析度降到 **base die 內部的 interface logic 區塊**——理由是所有進出堆疊的高速訊號皆經該區。
+
+| 廠商 | 方案 | 熱路徑方向 | 狀態 |
+|------|------|-----------|------|
+| Samsung | HPB（Heat Path Block）；峰值溫降 >35%、熱阻 -20% | 堆疊內導熱結構 | Hot Chips 2026 公開揭露 |
+| Intel | base die 懸空區（DRAM 未覆蓋處）堆疊導熱層 → 頂部 IHS | 由底部熱點向上 | 專利訊號（US20260271308A1） |
+| Micron | interface die 移至堆疊頂、TIM 直接接觸上方 communication substrate | 熱源直接貼近散熱面 | 專利訊號（WO2025212237A1） |
+
+⚠ Intel 與 Micron 欄位為專利前瞻訊號，非已出貨規格。
+
+### TSV 嵌入式微通道冷卻——凸形銷鰭幾何的量化取捨
+
+獨立數值研究（Int. Comm. Heat and Mass Transfer，2026-09-11）為本頁已記錄的「TSMC 微通道冷卻路線圖」補上工程細節：
+
+| 參數 | 數值 |
+|------|------|
+| 3D-IC 局部熱通量 | **>100 W/cm²**（TSV 鄰近區域） |
+| 冷卻介質 / Reynolds 數 | 去離子水，Re = 200–800 |
+| 凹形（concave）鰭片 | 壓降懲罰**最多降低 15%**；但對流換熱係數下降 → TSV 結溫上升 |
+| 凸形（convex）鰭片 | TSV **最高溫降 ~20 K**、**平均溫降 ~15 K**（相對凹形）；代價為壓降升高 |
+
+**兩項新論點**：
+
+1. **TSV 本身是熱源**：該模型納入 TSV 銅芯的**焦耳熱**（電熱全耦合），而非僅把 TSV 當導熱路徑。在 HBM 高層數堆疊（TSV 數以萬計）情境下，此項不可忽略。
+2. **溫降與泵浦功耗的取捨被量化**：~15–20 K 溫降的代價是泵浦壓降升高，泵浦功耗會回吃系統能效——這是單相液冷微通道能否進量產的成本關鍵，也構成本頁已記錄之 Amkor CEO McCann「兩相冷卻為下一散熱轉型」預判的量化背景。
+
+⚠ 純 CFD/FEA 模擬，無實體量測驗證。
+
+### 封裝材料熱機械行為——NIST underfill 建模
+
+NIST + UC San Diego 發表高填充環氧 underfill 的固化演進與熱耐久性預測建模（SemiEng 2026-09-14 彙整）。與本頁「翹曲管理」段落及同日收錄的兩篇翹曲論文（FO-PLP ML 預測、FO-Strip RSM 優化）構成同一主題群：**封裝材料的熱機械行為正在成為量產良率的主要變數**，且開始有標準機構（NIST）介入建模。
+
+- 引用：`wiki/sources/2026-09-10_intel_us20260271308a1-hbm-base-die-thermal.md`、`wiki/sources/2025-10-09_micron_wo2025212237a1-heat-mitigating-hbm-sip.md`、`wiki/sources/2026-09-11_ichmt_tsv-microchannel-convex-pinfin-cooling.md`、`wiki/sources/2026-09-14_semieng_paper-roundup-chipsmore-reach.md`

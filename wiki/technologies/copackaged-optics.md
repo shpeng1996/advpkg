@@ -628,3 +628,51 @@ UiT（挪威北極大學）與 Stanford 合作論文：**Intracavity Laser Wavel
 
 Huawei NPO 路線為中國提供一條不需依賴台積電先進封裝技術（CoWoS/SoIC）即可實現高速光互連的替代路徑。中美兩大光互連標準（OPEN NPO vs OCI-MSA）平行發展，台日廠商（Molex、Luxshare 參與 OPEN NPO）同時跨足兩套生態。詳見 [[concepts/geopolitics-advanced-packaging]]。
 
+
+---
+
+## 專利訊號 / Patent Signals（2026-09-14 更新）
+
+> 以下內容為專利前瞻訊號，非已量產能力。
+
+### TSMC — 光子引擎封裝（光柵耦合器 + 微透鏡）(CN122260581A, 2026-06-23)
+
+台積電於 2026-06-23 公開之中國專利揭示：光子引擎封裝方法，包含**光柵耦合器（grating couplers）+ 微透鏡（microlenses）**陣列之光子晶片與電子晶片的接合整合。此架構與 TSMC COUPE™（Co-packaged Optics Using Photonic Engines）技術路徑完全吻合——COUPE 預計 2H2026 進入 HVM 階段。
+
+**TSMC vs Intel CPO 耦合方式對比**（本次新增）：
+- **TSMC COUPE™**：表面法向光柵耦合（grating coupler，面朝上，光從表面入射）
+- **Intel ECTC 2026**：邊緣耦合 V 形槽玻璃波導（edge-coupled V-groove glass coupler）
+
+兩種方式各有取捨：光柵耦合整合度高但耦合損耗大（~3 dB）；邊緣耦合損耗低但對準精度要求更嚴。
+
+- 引用：`wiki/sources/2026-06-23_tsmc_cn122260581a-photonic-engine-cpo.md`
+
+---
+
+## ⭐ 2026-09-14（第二輪）更新：TGV-FOWLP 光引擎 400G/lane + CPO 裝置級綜述
+
+### 學術前沿：穿孔技術決定 CPO 光引擎的頻寬上限（A*STAR IME，2026-06-30）
+
+- **>200 Gbps/lane 時，垂直穿孔成為封裝電氣瓶頸**，直接限制頻寬密度與訊號完整性。
+- 四種穿孔技術比較（TSV / TMV / eBar / 預製 TGV）中，**預製 TGV 勝出**：最低插入損耗、細間距、最高頻寬密度。
+- 據此設計的 3D FOWLP 光引擎保留電氣餘裕，可支撐 **400 Gbps/lane 級**——比現行量產世代（112G/224G 通道、3.2→12.8 Tbps 模組）超前一至兩代，可作為 CPO 封裝路線圖的前瞻錨點。
+- 附帶產出電子–光子共同設計 PDK。
+
+### 學術前沿：CPO 裝置級技術地圖與五大挑戰（*Advanced Materials Technologies*，2026-08-20）
+
+本頁內容目前以**廠商公告**為主（TSMC COUPE 2H26 量產、Samsung PIC 測試、Huawei 7.2Tbps NPO、Ayar Labs、SK hynix 路線圖）。一份中立綜述提供裝置級參照框架：
+
+- **五大核心 PIC 元件**：雷射源、Si 基調變器、**被動光耦合器**、Ge-on-Si 光偵測器、MUX/DEMUX
+- **五大挑戰**：雷射整合、**熱管理**、元件可靠度、頻寬密度、能源效率
+
+「被動光耦合器」被列為核心元件之一，正對應本頁已記錄的路線分歧：**TSMC COUPE™ 光柵耦合（表面法向）vs Intel ECTC 2026 V-groove 邊緣耦合（玻璃波導）**。
+
+### ⚠ 待追蹤張力：CPO 的熱管理自相矛盾
+
+綜述把「熱管理」列為 CPO 五大挑戰之一，與本 wiki 已收錄的 **Georgia Tech「熱調諧 overhead」**發現互相印證：
+
+> 矽光子調變器／環形諧振器對溫度極度敏感，需熱調諧維持工作點；而 CPO 的定義就是把光引擎放在高功耗 ASIC 旁邊。
+
+兩者存在**結構性矛盾**——這是 CPO 從 demo 走向量產最被低估的工程障礙，建議列為本頁長期追蹤項目。
+
+- 引用：`wiki/sources/2026-06-30_advphotonicsnexus_tgv-3d-fowlp-cpo-optical-engine.md`、`wiki/sources/2026-08-20_admt_siph-cpo-pic-components-review.md`

@@ -832,3 +832,50 @@ AMD 在 Hot Chips 2026（2026-08-25）官方披露 **Instinct MI455X（CDNA 5）
 #### Adeia 專利訴訟（首次記錄）
 
 **Adeia**（大型接合專利組合持有者）對 **AMD** 提起訴訟，主張 3D V-Cache 混合接合技術侵犯其 10 件專利——此為 wiki 首次記錄，為後續行業 IP 動態追蹤建立基準。
+
+---
+
+## 專利訊號 / Patent Signals（2026-09-14 更新）
+
+> 以下內容為專利前瞻訊號，非已量產能力。
+
+### Intel — Via Structures for Hybrid Bonding (<4 µm Pitch) (US20260262485A1, 2026-09-03)
+
+Intel 於 2026-09-03 公開之美國專利揭示：用於混合接合架構的通孔結構，接觸間距**小於 4 µm**，適用於 die-to-die 和 die-to-wafer 堆疊。此訊號與 Intel ECTC 2026 超低溫 D2W 接合揭露（EV Group 100% overlay 精度）相互印證，顯示 Intel 混合接合間距研發已進入 <4 µm 階段，逼近 TSMC SoIC-X 當前生產邊界。
+
+- 引用：`wiki/sources/2026-09-03_intel_us20260262485a1-hybrid-bonding-via.md`
+
+### Intel — 3D Memory Architecture Sub-1 µm Hybrid Bonding (CN121605766A, 2026-03-03)
+
+Intel 於 2026-03-03 公開之中國專利揭示：採用**sub-1 µm 接觸間距**混合接合的三維記憶體架構——遠超過當前 TSMC SoIC（>4 µm）或 imec pilot（~1 µm）的量產水準。此專利顯示 Intel 可能在研究 Memory-on-Logic 超高密度整合路徑，繞過傳統 HBM interposer 架構。屬前瞻訊號，尚未進入量產路線圖。
+
+- 引用：`wiki/sources/2026-03-03_intel_cn121605766a-3d-memory-sub1um-hb.md`
+
+---
+
+## 學術前沿 / Research Frontier（2026-09-14 更新）
+
+### 自激活無電漿直接接合（ALD Al2O3，2026-09-03）
+
+**來源**：Kitagawa 等人，ACS Applied Materials & Interfaces，2026-09-03（橫濱國立大學 × 三菱電機）
+
+**關鍵發現**：首次展示「自激活、無需電漿」的直接晶圓接合機制，藉由原子層沉積（ALD）Al2O3 薄膜的高極性 + 高羥基密度實現 300 mm 晶圓無空洞室溫接合，無需傳統電漿活化步驟（SAB）。
+
+**意義**：當前 SoIC-X、Foveros Direct、imec 試產線均需電漿活化作為直接接合介電面的前處理。若 ALD Al2O3 路線可擴展至生產，可消除電漿非均勻性導致的良率損失——此問題在間距縮小至 <1 µm 時愈加關鍵。屬早期研究成果，需進一步產線驗證。
+
+- DOI：https://doi.org/10.1021/acsami.6c08143
+- 引用：`wiki/sources/2026-09-03_acsami_self-activated-direct-bonding-ald-al2o3.md`
+
+### 專利訊號補充（2026-09-14 第二輪）：玻璃–矽混合接合（JCET CN122094515A，2026-05-26）
+
+本頁記錄的混合接合應用迄今皆為**矽–矽**（W2W / D2W / D2D）。JCET 專利提出**玻璃–矽混合接合**作為中介層製造手段：
+
+- 大片玻璃中介層劃出多個離散功能區，表面形成第一接合層；
+- 多顆小尺寸矽中介層形成第二接合層；
+- 兩者經**混合接合**逐區貼合，再塑封、切割。
+
+**技術意涵**：混合接合的介面材料組合從「Cu/介電 對 Cu/介電（矽基）」擴展到玻璃基板側。玻璃與矽的 CTE 差異、表面平坦度（CMP dishing）與活化條件皆與矽–矽情境不同，是一個尚未在本 wiki 建立的技術分支。
+
+⚠ 中國專利申請案，早期布局訊號；中國 OSAT 專利公開與產能落地之間通常存在數年落差。
+
+- 引用：`wiki/sources/2026-05-26_jcet_cn122094515a-hybrid-glass-silicon-interposer.md`

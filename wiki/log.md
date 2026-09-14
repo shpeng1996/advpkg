@@ -3271,3 +3271,103 @@ an（2028–2029 量產世代）為 CoPoS 最可能的首批量產客戶——�
   1. **Samsung Foundry 定價力結構性轉強**：2nm yield >70%、Taylor fab 滿訂（Tesla/Broadcom/Arm）、4nm 報價 +10–15%、Qualcomm 談判陷僵局——Samsung Foundry 從「以低價搶單」模式正式轉型為議價主導方，與 TSMC 的價格體系差距縮小。
   2. **High-NA EUV DRAM 2028 三廠共識**：Samsung、SK hynix、Micron 均在 2026-09 表態 2028 年前後導入 High-NA EUV 至 DRAM 量產；SK hynix 1c 佔比快速爬升（Q4'26 達 34%）並作為 HBM4E 核心製程，確認 EUV 世代換代已進入倒數計時。
   3. **Intel EMIB-T ECTC 2026 規格落地**：25µm FLI bump pitch、120×120mm 超大封裝、>9× reticle 整合——這些數字將 EMIB-T 定位為與 TSMC CoWoS >14× reticle（2029）競爭的實質技術路徑；TGV 零失效可靠性確認玻璃基板量產可行性；V-groove 玻璃耦合器為 CPO 量產關鍵工程突破。
+
+## [2026-09-14] collect | 每日自動蒐集 — 先進封裝最新動態（三軌執行：新聞 + 專利 + 論文）
+- 搜尋查詢數：新聞 2 組（補充） / 專利 4 組（EPO OPS） / 論文 3 組（OpenAlex）
+- 成功抓取：8 筆（articles/ 1, patents/ 5, papers/ 2, reports/ 0）
+  - **[A] 新聞**：`2026-06-16_trendforce_tsmc-copos-dual-track-eval-vendor-competition.md`（TSMC CoPoS 雙軌設備評估，310×310mm，VisEra 迷你產線）
+  - **[B] 專利**：
+    - `2026-09-14_US20260262485A1_intel-hybrid-bonding-via-structures.md`（Intel HB via <4 µm, 2026-09-03）
+    - `2026-09-14_CN121605766A_intel-3d-memory-sub1um-hybrid-bonding.md`（Intel 3D memory sub-1µm HB, 2026-03-03）
+    - `2026-09-14_CN224007096U_tsmc-logic-memory-package-interposer.md`（TSMC 邏輯+記憶體 interposer 封裝, 2026-03-17）
+    - `2026-09-14_CN122260581A_tsmc-photonic-engine-grating-coupler-cpo.md`（TSMC 光子引擎 CPO, 2026-06-23）
+    - `2026-09-14_JP2026059728A_intel-glass-core-substrate-edge-coating.md`（Intel 玻璃基板邊緣塗層, 2026-04-07）
+  - **[C] 論文**：
+    - `2026-09-14_openalex_self-activated-direct-bonding-ald-al2o3-3d.md`（ACS AMI, 自激活無電漿直接接合, 2026-09-03）
+    - `2026-09-14_openalex_hbm-thermal-management-reliability-advanced-packages.md`（Micromachines, HBM 熱管理 +15%/2-Hi, 2026-09-08）
+- 失敗/跳過：多筆（UCIe 3.0 / CoPoS 加速文章已收錄；OpenAlex Panel query 返回 0 結果；低品質期刊論文 IJICT 過濾；德語 HBM 論文過濾）
+- 資料源狀態：WebSearch ACTIVE ✓ | EPO OPS ACTIVE ✓ | OpenAlex ACTIVE ✓
+- 新增 wiki 頁面：7 頁
+  - `wiki/sources/2026-06-16_trendforce_tsmc-copos-dual-track-eval.md`
+  - `wiki/sources/2026-09-03_intel_us20260262485a1-hybrid-bonding-via.md`
+  - `wiki/sources/2026-03-03_intel_cn121605766a-3d-memory-sub1um-hb.md`
+  - `wiki/sources/2026-06-23_tsmc_cn122260581a-photonic-engine-cpo.md`
+  - `wiki/sources/2026-04-07_intel_jp2026059728a-glass-core-edge-coating.md`
+  - `wiki/sources/2026-09-03_acsami_self-activated-direct-bonding-ald-al2o3.md`
+  - `wiki/sources/2026-09-08_micromachines_hbm-thermal-management-reliability.md`
+- 更新 wiki 頁面：8 頁
+  - `wiki/technologies/hybrid-bonding.md`（Patent Signals Intel <4µm + sub-1µm; Research Frontier ALD Al2O3 無電漿直接接合）
+  - `wiki/technologies/copackaged-optics.md`（Patent Signals TSMC 光子引擎; TSMC 光柵 vs Intel V-groove 耦合對比）
+  - `wiki/technologies/glass-substrate.md`（Patent Signals Intel 玻璃基板邊緣塗層）
+  - `wiki/technologies/hbm4.md`（Patent Signals Intel sub-1µm 3D memory; Research Frontier +15%/2-Hi 熱量化）
+  - `wiki/technologies/copos.md`（雙軌設備評估：全球 vs 台灣廠商; VisEra 迷你產線; Samsung 415×510mm）
+  - `wiki/entities/intel.md`（Patent Signals 表格：3 件 2026 年專利彙整）
+  - `wiki/entities/tsmc.md`（Patent Signals 表格：2 件 2026 年專利彙整）
+  - `wiki/concepts/thermal-management.md`（HBM 熱管理量化數據：+15%/2-Hi; Samsung HPB -20%; CTE 疲勞門檻）
+- 更新 wiki/index.md（頁面總數 459→466；來源數 411→418）
+- 主要新知識：
+  1. **Intel vs TSMC CPO 耦合路線分歧確認**：TSMC COUPE™ 採光柵耦合（表面法向），Intel ECTC 2026 採 V-groove 邊緣耦合（玻璃波導）——兩種架構首次在 wiki 並列比較，為後續追蹤提供框架。
+  2. **HBM 熱管理定量基準建立**：獨立論文確認 +15%/2-Hi 結溫增量、Samsung HPB -20% 熱阻、Indium TIM 高熱通量優勢——這些數字為 HBM4E→HBM5（16-Hi）路線圖的熱牆問題提供量化參照。
+  3. **ALD Al2O3 無電漿直接接合（300mm 展示）**：若可擴展至量產，可消除混合接合電漿活化步驟，在 <1µm 間距時尤具良率意義；目前為早期研究階段。
+- 專利訊號：Intel 2026 Q1–Q3 集中布局混合接合（<4µm via + sub-1µm 3D memory）與玻璃基板（邊緣塗層）；TSMC 2026 Q1–Q2 鎖定 2.5D/3D 整合架構與 CPO 光子引擎封裝——兩家 IP 佈局高度吻合其 ECTC 2026 公開揭露，顯示技術路線正在從研究紙面向專利保護加速轉移。
+
+## [2026-09-14] collect | 每日自動蒐集 — 先進封裝最新動態（第二輪執行；本日首輪見上方條目）
+- 搜尋查詢數：新聞 5 組 / 專利 4 組（EPO OPS）/ 論文 3 組（OpenAlex）
+- 成功抓取：12 筆（articles/ 2, patents/ 5, papers/ 5, reports/ 0）
+  - **[A] 新聞**：
+    - `2026-09-14_trendforce_tsmc-2nm-3nm-capacity-cowos-double-2028.md`（TSMC CoWoS 130K→260K wpm 2028；Intel EMIB-T 40–45K/月 2028）
+    - `2026-09-14_semieng_paper-roundup-sept14-chipsmore-reach-underfill.md`（NIST underfill；NUS CHIPSMORE；RPI+IBM REACH）
+  - **[B] 專利**：
+    - `2026-09-14_US20260271782A1_intel-hbm-base-die-mid-stack-placement.md`（Intel HBM base die 移至堆疊中段/頂層, 2026-09-10）
+    - `2026-09-14_US20260271308A1_intel-hbm-base-die-thermal-heat-transfer-layers.md`（Intel base die interface logic 熱點導熱層, 2026-09-10）
+    - `2026-09-14_WO2025212237A1_micron-heat-mitigating-hbm-sip-top-io.md`（Micron interface die 在頂 + 上方橋接基板, 2025-10-09）
+    - `2026-09-14_US20260090444A1_tsmc-local-silicon-interposer-via-barrier.md`（TSMC LSI top-via 阻障結構, 2026-03-26）
+    - `2026-09-14_CN122094515A_jcet-hybrid-glass-silicon-interposer.md`（JCET 玻璃+矽混合中介層, 2026-05-26）
+  - **[C] 論文**：
+    - `2026-09-14_openalex_tgv-3d-fowlp-copackaged-optical-engine.md`（A*STAR IME, TGV 勝過 TSV/TMV/eBar；400G/lane, 2026-06-30）
+    - `2026-09-14_openalex_siph-cpo-pic-components-industry-review.md`（矽光子 CPO 裝置級綜述, 2026-08-20）
+    - `2026-09-14_openalex_tsv-microchannel-cooling-convex-pinfin.md`（TSV 微通道冷卻凸形銷鰭 -20K/-15K, 2026-09-11）
+    - `2026-09-14_openalex_foplp-warpage-ml-mode-aware-prediction.md`（NTHU, FO-PLP 翹曲模態感知 ML, 2026-08-18）
+    - `2026-09-14_openalex_strip-level-fanout-5um-rdl-warpage-rsm.md`（FO-Strip die-last 5µm/5µm RDL, 2026-09-11）
+- 失敗/跳過：
+  - 付費牆/403：digitimes 4 篇（QuantumDiamonds 混合接合檢測、SoIC vs CoWoS podcast、HBM 混合接合 300°C/CMP dishing、Semicon Taiwan 光子）——`a20260904VL212` 回 HTTP 403，依規則不重試，同域其餘篇一併跳過
+  - 已收錄：SK hynix 美國 HBM 封裝廠、Intel EMIB-T fab rollout、TSMC Tech Symposium 2026、Huawei NPO 7.2Tbps、CoPoS 雙軌評估等
+  - 低相關/贊助內容：semiengineering「Advanced Packaging Changes The Rules for Semiconductor Health and Performance Management」（proteanTecs 贊助文，無新量化數據）
+  - 論文過濾：IJ-ICT 三篇（低品質期刊，同前輪判定）、Zenodo 預印本 2 篇、非半導體封裝主題 6 篇（黑磷 micro-LED、二維半導體遷移率、CT 影像重建等）
+- 資料源狀態：WebSearch ACTIVE ✓ | EPO OPS ACTIVE ✓ | OpenAlex ACTIVE ✓
+- OPS 呼叫數：1 auth + 4 search = 5（配額上限 10，符合）
+- 新增 wiki 頁面：12 頁（全為 source 摘要頁）
+  - `wiki/sources/2026-09-14_trendforce_tsmc-cowos-double-2028-capacity.md`
+  - `wiki/sources/2026-09-14_semieng_paper-roundup-chipsmore-reach.md`
+  - `wiki/sources/2026-09-10_intel_us20260271782a1-hbm-base-die-mid-stack.md`
+  - `wiki/sources/2026-09-10_intel_us20260271308a1-hbm-base-die-thermal.md`
+  - `wiki/sources/2025-10-09_micron_wo2025212237a1-heat-mitigating-hbm-sip.md`
+  - `wiki/sources/2026-03-26_tsmc_us20260090444a1-lsi-via-barrier.md`
+  - `wiki/sources/2026-05-26_jcet_cn122094515a-hybrid-glass-silicon-interposer.md`
+  - `wiki/sources/2026-06-30_advphotonicsnexus_tgv-3d-fowlp-cpo-optical-engine.md`
+  - `wiki/sources/2026-08-20_admt_siph-cpo-pic-components-review.md`
+  - `wiki/sources/2026-09-11_ichmt_tsv-microchannel-convex-pinfin-cooling.md`
+  - `wiki/sources/2026-08-18_materials_foplp-warpage-mode-aware-ml.md`
+  - `wiki/sources/2026-09-11_mssp_fo-strip-die-last-5um-rdl.md`
+- 更新 wiki 頁面：15 頁
+  - `wiki/technologies/hbm4.md`（Base die 位置重構專利訊號三方對照；控制器端 ECC 學術前沿）
+  - `wiki/technologies/cowos.md`（2028 產能 260K wpm；LSI top-via 失效模式專利訊號）
+  - `wiki/technologies/emib.md`（EMIB-T 月產能量級首次揭露；2028 約為 CoWoS 15–17%）
+  - `wiki/technologies/glass-substrate.md`（TGV 首份獨立學術橫向比較；玻璃作為矽中介層載體）
+  - `wiki/technologies/copackaged-optics.md`（TGV-FOWLP 400G/lane；CPO 裝置級綜述；熱管理自相矛盾列為追蹤項）
+  - `wiki/technologies/foplp.md`（翹曲 ML 預測；die-first vs die-last 製程分歧；RDL 線寬對照尺規）
+  - `wiki/technologies/copos.md`（面板尺寸擴張的邊角翹曲風險）
+  - `wiki/technologies/tsv.md`（TSV 焦耳熱；穿孔技術橫向比較，TSV 在高頻情境被 TGV 超越）
+  - `wiki/technologies/ucie.md`（compute-in-interconnect 架構新命題）
+  - `wiki/technologies/hybrid-bonding.md`（玻璃–矽混合接合新分支）
+  - `wiki/concepts/thermal-management.md`（HBM base die 熱點三方解法對照；TSV 微通道量化；NIST underfill）
+  - `wiki/entities/intel.md`（HBM base die 專利訊號 + 戰略解讀）
+  - `wiki/entities/tsmc.md`（LSI 可靠度專利訊號；2nm/3nm 產能與 CapEx 配比）
+  - `wiki/entities/micron.md`（Patent Signals 新章節：over-the-top bridge 架構）
+  - `wiki/entities/jcet.md`（Patent Signals 新章節：玻璃+矽混合中介層）
+- 更新 wiki/index.md（頁面總數 466→478；來源數 418→430）
+- 主要新知識：
+  1. **HBM base die 位置重構成為跨廠趨勢**：Intel 於 2026-09-10 同日公開兩件專利（base die 移至堆疊中段以平衡時序／移至頂層貼近散熱器），而 Micron 2025-10 的 PCT 案亦主張 interface die 置於堆疊頂端、I/O 走上表面並以「上方 communication substrate」橫向連回 host。自 HBM1 以來「base die 在底層」是未被挑戰的結構前提，如今至少兩家大廠同時在此布局 IP——若成立，將改變 base die 代工廠與記憶體廠的製程分工界面，並削弱 HBM 對 CoWoS 矽中介層的結構性依賴。
+  2. **CoWoS 2028 絕對產能首次入庫，EMIB-T 比例可量化**：TSMC CoWoS 自 2026 年底 ~130K wpm 倍增至 2028 年底 260K wpm；Intel EMIB-T 2028 年 40–45K/月，約為 CoWoS 的 15–17%。這把先前僅有時程（2H27→2028→2029）的 EMIB-T 論述轉為可比數量級——足以構成實質第二供應來源，但不構成替代。
+  3. **TGV 取得首份獨立學術背書，且瓶頸判定改寫**：A*STAR IME 橫向比較 TSV/TMV/eBar/預製 TGV，結論 TGV 在插損、間距、頻寬密度三項全勝，並指出 **>200 Gbps/lane 時垂直穿孔（而非水平 RDL）才是封裝電氣瓶頸**。此前 wiki 中 TGV 數據全數來自廠商自述。同時 400 Gbps/lane 被設為 3D FOWLP 光引擎設計目標，超前現行量產世代一至兩代。
+- 專利訊號：本輪五件專利呈現兩條清晰主線——（1）**HBM 堆疊內部架構重構**：Intel × 2 + Micron × 1，共同指向 base die 離開底層，動機為時序平衡與散熱；（2）**2.5D 中介層的成本與可靠度工程**：TSMC 揭示 LSI top-via 因膠帶殘留物導致金屬遷移／wire growth 的失效模式（意味封裝尺寸放大至 >14× 光罩時，LSI 可靠度是隱性限制條件），JCET 則以玻璃承載矽中介層降低成本。兩條主線合看，2026 年的 IP 競爭焦點已從「能不能堆起來」轉向「堆起來之後的時序、散熱與長期可靠度」。

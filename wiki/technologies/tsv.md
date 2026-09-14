@@ -3,7 +3,7 @@ title: "TSV — Through-Silicon Via / 矽穿孔"
 category: technology
 tags: [TSV, HBM, interposer, 3D-IC, CoWoS, manufacturing, backside-power, advanced-packaging]
 created: 2026-08-10
-updated: 2026-08-22
+updated: 2026-09-14
 sources: [2026-04-22_semieng_tsv-complexity-manufacturing-bottleneck, 2026-08-21_semieng_chip-week-152]
 related:
   - wiki/technologies/hbm4.md
@@ -132,3 +132,36 @@ TSV 在可預見的未來仍是 HBM 的核心技術；Hybrid Bonding 將首先�
 - NanoTSV 與背面電源網路（BSPDN）的整合是否會成為 2nm 以下節點的制式設計？
 - CoWoS 從矽中介層（TSV-based CoWoS-S）向有機/玻璃中介層演化後，TSV 的角色如何轉變？
 - TSV 在超過 16-Hi HBM 堆疊中的可靠性能否維持，或必須切換至 Hybrid Bonding？
+
+---
+
+## ⭐ 2026-09-14 更新：TSV 的兩個新命題——焦耳熱與穿孔技術橫向比較
+
+### 1. TSV 本身作為熱源（電熱全耦合模擬）
+
+多數封裝熱模型把 TSV 視為**導熱路徑**。Int. Comm. Heat and Mass Transfer（2026-09-11）的研究明確把 **TSV 銅芯的焦耳熱**納入電熱全耦合模型——在 HBM 高層數堆疊（TSV 數以萬計）情境下，此項不可忽略。
+
+| 參數 | 數值 |
+|------|------|
+| 3D-IC 局部熱通量 | **>100 W/cm²**（TSV 鄰近區域尤甚） |
+| 架構 | TSV 嵌入圓柱形銷鰭（pin-fin）內的微通道散熱 |
+| 冷卻介質 / Re | 去離子水，Re = 200–800 |
+| 凹形鰭片 | 壓降**降低最多 15%**；對流換熱係數下降 → TSV 結溫上升 |
+| 凸形鰭片 | TSV **最高溫降 ~20 K / 平均溫降 ~15 K**（相對凹形）；壓降升高 |
+
+⚠ 純數值模擬，無實體量測驗證。詳見 `wiki/concepts/thermal-management.md`。
+
+### 2. 穿孔技術橫向比較：TSV 不是所有情境的最佳解
+
+A*STAR IME（*Advanced Photonics Nexus*，2026-06-30）在 CPO 光引擎情境下比較四種 through-package via 技術：
+
+| 技術 | 結論 |
+|------|------|
+| TSV（through-silicon via） | 基準 |
+| TMV（through-mold via） | — |
+| eBar（嵌入式基板孔） | — |
+| **預製 TGV（through-glass via）** | **勝出**：最低插入損耗 + 細間距 + 最高頻寬密度（玻璃超低介電損耗） |
+
+**判定**：>200 Gbps/lane 時，**垂直穿孔成為封裝電氣瓶頸**（而非水平 RDL）；TGV 平台可支撐 400 Gbps/lane 級設計。這是本 wiki 首次記錄「TSV 在高頻情境下被其他穿孔技術超越」的獨立學術證據。
+
+- 引用：`wiki/sources/2026-09-11_ichmt_tsv-microchannel-convex-pinfin-cooling.md`、`wiki/sources/2026-06-30_advphotonicsnexus_tgv-3d-fowlp-cpo-optical-engine.md`
