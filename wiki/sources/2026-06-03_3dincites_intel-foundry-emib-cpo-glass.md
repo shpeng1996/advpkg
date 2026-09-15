@@ -45,7 +45,7 @@ related: [wiki/technologies/emib.md, wiki/technologies/copackaged-optics.md, wik
 
 ## 矛盾或修正 / Contradictions / Corrections
 
-- 規格與現有 sources/2026-06-05_semieng_intel-emib-cpo-glass-ectc2026 一致，本文為一手官方來源，可作為確認。
+- 規格與現有 sources/2026-06-05_semieng_intel-ectc-2026-emib-t-cpo-glass 一致，本文為一手官方來源，可作為確認。
 
 ## 觸及的 Wiki 頁面 / Wiki Pages Touched
 

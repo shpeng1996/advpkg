@@ -1,6 +1,8 @@
 ---
 title: "Amkor 2026 第一季財報：營收創紀錄、先進封裝為主要動能"
 category: source
+created: 2026-06-29
+updated: 2026-06-29
 source_type: report
 original_path: raw/articles/2026-06-29_businesswire_amkor-q1-2026-earnings.md
 url: https://www.businesswire.com/news/home/20260427274345/en/Amkor-Technology-Reports-Financial-Results-for-the-First-Quarter-2026

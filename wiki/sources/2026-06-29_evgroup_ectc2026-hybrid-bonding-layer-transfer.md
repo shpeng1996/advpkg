@@ -1,6 +1,8 @@
 ---
 title: "EV Group ECTC 2026：混合接合、層轉移與無光罩微影"
 category: source
+created: 2026-06-29
+updated: 2026-06-29
 source_type: article
 original_path: raw/articles/2026-06-29_evgroup_ectc2026-hybrid-bonding-layer-transfer.md
 url: https://www.evgroup.com/company/news/detail/ev-group-highlights-hybrid-bonding-layer-transfer-and-maskless-lithography-technologies-for-heterogeneous-integration-and-advanced-packaging-at-ectc-2026

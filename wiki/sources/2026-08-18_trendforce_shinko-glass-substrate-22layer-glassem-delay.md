@@ -44,7 +44,7 @@ related:
 ## 矛盾或修正 / Contradictions / Corrections
 
 - Samsung EM 官方聲明（2026-08-19）與 The Elec 業界消息存在**直接矛盾**：The Elec 稱潛在資格認證失敗，Samsung EM 否認。wiki 應以「The Elec 業界說法 vs Samsung EM 官方聲明」並記。
-- GlaSSEM 時程延後與 wiki 現有記錄（[[sources/2026-07-07_trendforce_samsung-em-glassem-jv-sumitomo]]）的「2H27 量產」一致，本文進一步說明延後原因，但未更改最終目標。
+- GlaSSEM 時程延後與 wiki 現有記錄（[[sources/2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo]]）的「2H27 量產」一致，本文進一步說明延後原因，但未更改最終目標。
 
 ## 觸及的 Wiki 頁面 / Wiki Pages Touched
 

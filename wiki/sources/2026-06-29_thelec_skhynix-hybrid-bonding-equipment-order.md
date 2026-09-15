@@ -1,6 +1,8 @@
 ---
 title: "SK hynix 向 Applied Materials、Besi 訂購混合接合設備"
 category: source
+created: 2026-06-29
+updated: 2026-06-29
 source_type: news
 original_path: raw/articles/2026-06-29_thelec_skhynix-hybrid-bonding-equipment-order.md
 url: https://www.thelec.net/news/articleView.html?idxno=6246

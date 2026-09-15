@@ -8,7 +8,7 @@ author: "Anton Shilov"
 publisher: "Tom's Hardware"
 date: 2026-06-10
 created: 2026-09-07
-updated: 2026-09-07
+updated: 2026-09-15
 tags: [TSMC, CoWoS, SoIC, N2, advanced-packaging, fab-expansion]
 sources: [2026-06-10_tomshardware_tsmc-fab-expansion-roadmap-n2-cowos-soic]
 related: [wiki/entities/tsmc.md, wiki/technologies/cowos.md, wiki/technologies/soic.md]
@@ -64,3 +64,11 @@ related: [wiki/entities/tsmc.md, wiki/technologies/cowos.md, wiki/technologies/s
 - wiki/entities/tsmc.md（One Team、SMP、CoWoS 80% CAGR、SoIC 90% CAGR、AP 廠詳情、AI-driven manufacturing、N2 多廠量產）
 - wiki/technologies/cowos.md（80% CAGR、AP8 >40K wsm、-30% HVM 加速）
 - wiki/technologies/soic.md（90% CAGR、AP6 ~10K、AP7B ~12K、-75% HVM 加速、AP7 為 Feynman 主要 SoIC 廠）
+
+## 合併補充 / Merged From Duplicate Collections（2026-09-15 dedupe）
+
+同一 URL 曾被重複抓取，重複頁 `sources/2026-06-10_tomshardware_tsmc-fab-expansion-roadmap-n2-cowos-soic` 已於 2026-09-15 合併至本頁；以下為重複頁中本頁原先未涵蓋的內容：
+
+- **N2 廠區配置**：Fab 20（新竹）與 Fab 22（高雄）共 5 個廠區 phase 同步量產；首年底 ~90K wsm，對比 Intel Fab 52 18A 約 40K wsm。
+- **AP8 為原群創（Innolux）LCD 廠改建（台南）**；台積電共 11 座先進封裝廠（2026-06 口徑）。
+- **財務對照**：TSMC 2025 晶圓代工營收 $103.7B（占總營收 $122.4B 的 84%）；Intel Foundry 2025 虧損 $10.3B（營收 $17.8B，外部代工營收僅 $307M）。

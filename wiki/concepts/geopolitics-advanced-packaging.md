@@ -542,7 +542,7 @@ TrendForce 2026-07-29 報導確認中國在 2026 年下半年啟動新一波以�
 
 ### ⭐ SK Hynix 重慶封裝廠出售評估——後端資產全球重組（2026-08-10）
 
-*Source: TrendForce 2026-08-10 → [[sources/2026-08-10_trendforce_skhynix-chongqing-sale-global-reset.md]]*
+*Source: TrendForce 2026-08-10 → [[sources/2026-08-10_trendforce_skhynix-chongqing-sale-global-reset]]*
 
 SK Hynix 正評估出售重慶 OSAT 封裝廠股份，估值約 **KRW 4 兆元（約 $30 億美元）**，原因包含：
 1. **出口管制壓力**：HBM 等 AI 記憶體出口限制使重慶廠定位尷尬
@@ -550,7 +550,7 @@ SK Hynix 正評估出售重慶 OSAT 封裝廠股份，估值約 **KRW 4 兆元�
 
 **此非中國業務全面退出**：SK Hynix 的 Wuxi DRAM 廠與 Dalian NAND 廠維持運營，中國仍佔其 DRAM 產能 ~30-35%、NAND ~35-40%。重慶廠的出售是**後端封裝（OSAT）的戰略性重組**，而非前端晶圓廠撤資。
 
-**地緣政治含義**：SK Hynix 的動作是「記憶體廠商後端資產去中國化」的首個大規模案例（vs. 此前主要為前端晶圓廠的地緣政治重組）。印第安納廠定位為 HBM 先進封裝中心，是 CHIPS Act 框架下「AI 記憶體封裝回流美國」戰略的具體落地。與 [[entities/amkor.md]] 亞利桑那 $70 億廠並列觀察，美國 HBM 封裝生態雛形正逐步成形。
+**地緣政治含義**：SK Hynix 的動作是「記憶體廠商後端資產去中國化」的首個大規模案例（vs. 此前主要為前端晶圓廠的地緣政治重組）。印第安納廠定位為 HBM 先進封裝中心，是 CHIPS Act 框架下「AI 記憶體封裝回流美國」戰略的具體落地。與 [[entities/amkor]] 亞利桑那 $70 億廠並列觀察，美國 HBM 封裝生態雛形正逐步成形。
 
 ---
 

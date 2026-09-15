@@ -228,7 +228,7 @@ Intel 主導、10+ 大學及 ASE Group/TI/Boeing 共同執筆的最新異質整�
 - 這與本頁既有記錄的「thermal-electrical-mechanical co-design」概念對應，並將**電源（Power）** 明確列為協同設計的第一維約束——先於熱管理甚至效能設計。
 - **IEEE HI Roadmap 2024** 被此論文批評缺乏量化指標（unquantified targets），未能為業界提供足夠清晰的電源傳遞和散熱路線圖方向，需建立更長週期（20 年）的量化路線圖。
 
-**wiki 含義**：GaN 封裝內電源首次明確出現在主流異質整合路線圖文獻中，是「封裝功能複合化」的新信號——封裝不再只是結構/連接，而是主動承擔電源轉換功能。建議在 [[wiki/technologies/emib.md]] 和 [[wiki/entities/intel.md]] 中補充 Intel 封裝內 GaN 電源的相關技術佈局。
+**wiki 含義**：GaN 封裝內電源首次明確出現在主流異質整合路線圖文獻中，是「封裝功能複合化」的新信號——封裝不再只是結構/連接，而是主動承擔電源轉換功能。建議在 [[technologies/emib]] 和 [[entities/intel]] 中補充 Intel 封裝內 GaN 電源的相關技術佈局。
 
 ---
 

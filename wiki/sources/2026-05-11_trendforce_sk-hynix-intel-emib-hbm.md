@@ -8,7 +8,7 @@ author: TrendForce editor
 publisher: TrendForce
 date: 2026-05-11
 created: 2026-05-12
-updated: 2026-05-12
+updated: 2026-09-15
 tags: [SK-Hynix, Intel, EMIB, HBM, CoWoS, 2.5D-packaging, ASIC, Marvell, MediaTek]
 sources: [2026-05-11_trendforce_sk-hynix-intel-emib-25d-packaging-hbm]
 related: [wiki/entities/sk-hynix.md, wiki/entities/intel.md, wiki/technologies/emib.md, wiki/technologies/hbm4.md]
@@ -50,3 +50,10 @@ related: [wiki/entities/sk-hynix.md, wiki/entities/intel.md, wiki/technologies/e
 - `wiki/entities/intel.md` — 更新 EMIB 客戶清單（Marvell、MediaTek）
 - `wiki/technologies/emib.md` — 新增 SK Hynix HBM 測試、ASIC vs GPU 適用性框架強化
 - `wiki/technologies/hbm4.md` — 新增 SK Hynix HBM 在多元封裝環境（不只 CoWoS）的戰略意義
+
+## 合併補充 / Merged From Duplicate Collections（2026-09-15 dedupe）
+
+同一 URL 曾被重複抓取，重複頁 `sources/2026-05-11_trendforce_sk-hynix-intel-emib-hbm` 已於 2026-09-15 合併至本頁；以下為重複頁中本頁原先未涵蓋的內容：
+
+- **EMIB 成本約為 CoWoS 的 ~50%**（TrendForce 引述），頻寬密度較低，適合 ASIC 而非高頻寬 GPU。
+- **EMIB 封裝尺寸 120×120 mm**。

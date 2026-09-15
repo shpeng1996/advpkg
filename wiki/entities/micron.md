@@ -31,7 +31,7 @@ related:
 
 ## 近期動態 / Recent Developments
 
-- **2026-09-04（⭐最新）**：**Micron HBM 產能目標 100K wsm 年底達成；12-Hi HBM4 佔比升至 50%**——ETNews 報導 Micron HBM 月產能由 2025 年底的 40K–50K wsm 大幅提升，年底前目標達 100K wsm（+60K 增量），主要投入 12-Hi HBM4 供應（佔比：年初 20–30% → 年底 ~50%，服務 NVIDIA Vera Rubin）。HBM4 產能爬坡速度為 HBM3 的 2 倍。韓國競爭對手 SK hynix 與 Samsung 各維持 150K–200K wsm 規模，Micron 達標後仍約為其 1/3–1/2。NVIDIA 同步宣布逐步增加 8-Hi HBM4 配置（熱管理 + 供應彈性）；Micron HBM4E（1-gamma 製程）樣品生產預計 2027 年啟動。*Source: TrendForce 2026-09-04 → [[sources/2026-09-04_trendforce_micron-hbm-100k-12hi-hbm4.md]]*
+- **2026-09-04（⭐最新）**：**Micron HBM 產能目標 100K wsm 年底達成；12-Hi HBM4 佔比升至 50%**——ETNews 報導 Micron HBM 月產能由 2025 年底的 40K–50K wsm 大幅提升，年底前目標達 100K wsm（+60K 增量），主要投入 12-Hi HBM4 供應（佔比：年初 20–30% → 年底 ~50%，服務 NVIDIA Vera Rubin）。HBM4 產能爬坡速度為 HBM3 的 2 倍。韓國競爭對手 SK hynix 與 Samsung 各維持 150K–200K wsm 規模，Micron 達標後仍約為其 1/3–1/2。NVIDIA 同步宣布逐步增加 8-Hi HBM4 配置（熱管理 + 供應彈性）；Micron HBM4E（1-gamma 製程）樣品生產預計 2027 年啟動。*Source: TrendForce 2026-09-04 → [[sources/2026-09-04_trendforce_micron-hbm-100k-12hi-hbm4]]*
 
 - **2026-08-21（⭐最新）**：**Micron Research Labs 成立——$10B/10年 Boise, Idaho R&D 據點**（SemiEngineering Week #152）：研究領域明確涵蓋記憶體技術、先進記憶體與運算架構、**封裝**、製造。這是 Micron 首個以「封裝」為明確核心研究領域的長期 R&D 機構，與廣島/維吉尼亞封裝廠共同構成 Micron 封裝技術生態全貌。⭐更新
 
@@ -153,7 +153,7 @@ Micron 的 HBM 熱管理策略與 Samsung（HPB）和 SK Hynix（iHBM）不同�
 
 ### ⭐ HBM4E 客製化路線圖；1-gamma DRAM；TSMC Logic Die；HBM3E -30% 功耗優勢（2026-08-12）
 
-*Source: TrendForce 2026-08-12 → [[sources/2026-08-12_trendforce_micron-hbm4e-custom-era-dual-supplier.md]]*
+*Source: TrendForce 2026-08-12 → [[sources/2026-08-12_trendforce_micron-hbm4e-custom-era-dual-supplier]]*
 
 - **Custom HBM4E 起點**：Micron 確認 HBM4E 為首款客製化 HBM 產品（KeyBanc Tech Leadership Forum 2026，EVP Sumit Sadana）；每位大型客戶將獲專屬 SKU
 - **HBM4E 規格**：
@@ -166,7 +166,7 @@ Micron 的 HBM 熱管理策略與 Samsung（HPB）和 SK Hynix（iHBM）不同�
 
 ### ⭐ 資料中心 DRAM 需求滿足率 <50%；「美製溢價」納入 SCA 定價（2026-08-12）
 
-*Source: TrendForce 2026-08-12 → [[sources/2026-08-12_trendforce_micron-datacenter-demand-below-half.md]]*
+*Source: TrendForce 2026-08-12 → [[sources/2026-08-12_trendforce_micron-datacenter-demand-below-half]]*
 
 - **需求滿足率不足 50%**：Micron EVP Sumit Sadana 於 KeyBanc Tech Leadership Forum（2026-08-10）明確表示，資料中心 DRAM 需求中 Micron 通常只能滿足不到一半
 - **DRAM = 第一大瓶頸**：客戶一致指出 DRAM（而非電力、廠房、或邏輯晶圓）是今日最核心的供應限制
@@ -180,7 +180,7 @@ Micron 的 HBM 熱管理策略與 Samsung（HPB）和 SK Hynix（iHBM）不同�
 
 ## Hot Chips 2026：記憶體牆惡化 / HBM 矽晶圓溢價 / 可靠性（2026-08-26）⭐更新
 
-*Source: Tom's Hardware 2026-08-25 → [[sources/2026-08-25_tomshardware_micron-hot-chips-hbm-wafer-penalty.md]]*
+*Source: Tom's Hardware 2026-08-25 → [[sources/2026-08-25_tomshardware_micron-hot-chips-hbm-wafer-penalty]]*
 
 ### HBM 矽晶圓面積溢價（Raghu Sreeramaneni, HBM Design Architecture Fellow）
 

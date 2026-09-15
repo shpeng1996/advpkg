@@ -3,7 +3,7 @@ title: "JEDEC SPHBM4 標準發布 / JEDEC SPHBM4 Standard Released"
 category: source
 tags: [SPHBM4, JESD330-4, HBM4, JEDEC, organic-substrate, CoWoS, advanced-packaging]
 created: 2026-09-04
-updated: 2026-09-04
+updated: 2026-09-15
 sources: [2026-07-08_tomshardware_sphbm4-jedec-jesd330-4-organic-substrate]
 related: [wiki/technologies/hbm4.md, wiki/technologies/sphbm4.md, wiki/technologies/cowos.md, wiki/entities/samsung.md, wiki/entities/sk-hynix.md, wiki/entities/micron.md]
 source_type: article
@@ -54,3 +54,11 @@ date: 2026-07-08
 - `wiki/technologies/hbm4.md` — 更新（新增 SPHBM4 作為 HBM4-class 有機基板替代路線）
 - `wiki/technologies/cowos.md` — 更新（SPHBM4 降低 CoWoS 壟斷性，新增有機基板競爭路線）
 - `wiki/index.md` — 更新（新增 sphbm4 技術頁面）
+
+## 合併補充 / Merged From Duplicate Collections（2026-09-15 dedupe）
+
+同一 URL 曾被重複抓取，重複頁 `sources/2026-07-08_tomshardware_sphbm4-jesd330-4-organic-substrate` 已於 2026-09-15 合併至本頁；以下為重複頁中本頁原先未涵蓋的內容：
+
+- **JEDEC 工作組成員含 CXMT**：中國 DRAM 廠首次以 JEDEC 正式成員身分參與 HBM 系列標準制定，為地緣政治分析新數據點。
+- **市場定位**：介於 GDDR 與全 HBM4（CoWoS）之間的中階高頻寬記憶體，「並非 GDDR 殺手」。
+- **待追蹤風險**：SPHBM4 若廣泛採用，可能壓縮 2027+ 中階 AI 加速器對 2.5D 矽中介層的需求；目前 wiki 尚無此風險模型。

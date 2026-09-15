@@ -60,7 +60,7 @@ related:
 
 ## 與其他實體的關係 / Relationships
 
-- [[entities/amd.md]]：AMD FOPLP（Zen 7 EFB）+ AI GPU 供應鏈；2027 年全部產能預訂
-- [[entities/ase-group.md]]：主要競爭對手（ASE FOPLP Q1 2027 vs. Powertech PiFO 2027 中）
+- [[entities/amd]]：AMD FOPLP（Zen 7 EFB）+ AI GPU 供應鏈；2027 年全部產能預訂
+- [[entities/ase-group]]：主要競爭對手（ASE FOPLP Q1 2027 vs. Powertech PiFO 2027 中）
 - Broadcom：新加坡 FOPLP JV（加成式 RDL）
 - Micron / Kioxia / SanDisk：傳統記憶體封測客戶（HBM4、NAND）

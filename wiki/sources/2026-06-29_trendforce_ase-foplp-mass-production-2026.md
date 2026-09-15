@@ -1,6 +1,8 @@
 ---
 title: "ASE FOPLP 年底量產目標；15 個擴產專案"
 category: source
+created: 2026-06-29
+updated: 2026-06-29
 source_type: news
 original_path: raw/articles/2026-06-29_trendforce_ase-foplp-mass-production-2026.md
 url: https://www.trendforce.com/news/2026/06/25/news-ase-targets-foplp-mass-production-by-end-2026-launches-15-expansion-projects-this-year-amid-ai-boom/

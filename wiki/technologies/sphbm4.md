@@ -91,9 +91,9 @@ SPHBM4 是 CoWoS 生態的重要「減壓閥」：
 
 ## 相關技術 / Related Technologies
 
-- [[hbm4]] — SPHBM4 使用相同 DRAM stack，介面設計不同
-- [[cowos]] — SPHBM4 的替代封裝路線（無需 CoWoS）
-- [[tsv]] — SPHBM4 仍需 TSV 連接 DRAM stack 層
+- [[technologies/hbm4]] — SPHBM4 使用相同 DRAM stack，介面設計不同
+- [[technologies/cowos]] — SPHBM4 的替代封裝路線（無需 CoWoS）
+- [[technologies/tsv]] — SPHBM4 仍需 TSV 連接 DRAM stack 層
 
 ---
 

@@ -56,7 +56,7 @@ related:
   - Broadcom 列為潛在三星 SiPh 客戶
   *Source: TrendForce 2026-09-08 → [[sources/2026-09-08_trendforce_samsung-siliconphotonics-cpo-pic-testing]]*
 
-- **2026-09-07（⭐最新）**：**Samsung 1c DRAM for HBM4（11.7 Gbps）；1d DRAM 開發 Sep 2026 目標；HBM5E 採 1d ~2030**——Chosun Biz 報導 Samsung 與 SK hynix HBM4 製程策略的根本分歧：Samsung 採用 1c DRAM for HBM4，目標 ~11.7 Gbps；SK hynix 以 1b DRAM + MR-MUF 維持量產穩定性。Samsung HBM4 wafer 150K wsm，其中 75K 用於 HBM4（50%）；HBM4 良率 ~80%（與 2026-08 記錄一致）。**1d DRAM 競爭**：Samsung 目標 2026-09 完成 1d 開發，2026-12 開始量產準備，2027 年底前啟動量產；**HBM5E 將採用 1d DRAM，預計 ~2030 年推出**（首次在 wiki 記錄 Samsung HBM5E 採用 1d 的時程）。Samsung DRAM 1c 佔比：2Q26 ~16%，SK hynix 領先者 Micron 達 19%。*Source: TrendForce 2026-09-07 → [[sources/2026-09-07_trendforce_skhynix-1c-dram-hbm4e-overtake-1b.md]]*
+- **2026-09-07（⭐最新）**：**Samsung 1c DRAM for HBM4（11.7 Gbps）；1d DRAM 開發 Sep 2026 目標；HBM5E 採 1d ~2030**——Chosun Biz 報導 Samsung 與 SK hynix HBM4 製程策略的根本分歧：Samsung 採用 1c DRAM for HBM4，目標 ~11.7 Gbps；SK hynix 以 1b DRAM + MR-MUF 維持量產穩定性。Samsung HBM4 wafer 150K wsm，其中 75K 用於 HBM4（50%）；HBM4 良率 ~80%（與 2026-08 記錄一致）。**1d DRAM 競爭**：Samsung 目標 2026-09 完成 1d 開發，2026-12 開始量產準備，2027 年底前啟動量產；**HBM5E 將採用 1d DRAM，預計 ~2030 年推出**（首次在 wiki 記錄 Samsung HBM5E 採用 1d 的時程）。Samsung DRAM 1c 佔比：2Q26 ~16%，SK hynix 領先者 Micron 達 19%。*Source: TrendForce 2026-09-07 → [[sources/2026-09-07_trendforce_skhynix-1c-dram-hbm4e-overtake-1b]]*
 
 - **2026-09-01（⭐最新）**：**Tom's Hardware Hot Chips 2026 深度分析：Samsung cHBM→aHBM→zHBM 三階段完整規格首次公開**（Tom's Hardware, Etiido Uko, 2026-09-01）：
   - **Phase 1（cHBM）量化細節**：HBM PHY 面積從 >**8×4mm → ~8.5×1.5mm**，channel depth 5.5mm → 2mm；記憶體控制器從 XPU 移入 base die（XPU 節省 5–10% 面積 = **10–20% 效能提升**）；SRAM-based repair scheme（失效 C-die 地址重定向至 base die SRAM）
@@ -272,7 +272,7 @@ related:
   *Source: TrendForce 2026-03-17（引述 Korea JoongAng Daily, Tom's Hardware）*
 
 - **2026-08（⭐最新）**：Samsung HBM4 良率**突破 80%**——從 2 月 <60% 到 8 月提前達成年底目標。TC-NCF 製程改進 + 1c DRAM base die 良率同步達 >80% 是關鍵驅動力。Q3 HBM4 出貨量較 Q2 成長超過 **3 倍**；HBM4 將佔 2H26 三星總 HBM 出貨量 **>60%**。Samsung 設定年度 HBM **市占率目標 38%**（vs SK Hynix 約 50%+）。
-  *Source: TrendForce 2026-08-10 → [[sources/2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor.md]]*
+  *Source: TrendForce 2026-08-10 → [[sources/2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor]]*
 
 - **2026-04-15**：HBM4 1c DRAM **良率仍在 <60%**（目標 H2 2026 達 80% 成熟閾值）；EUV 層數較 SK Hynix 多，加上疊層封裝額外製程，是良率落後的雙重原因。同期三星已將 HBM4 **邏輯晶片（Logic Die）售價上調 40–50%**（自 2026 年初起），4nm 邏輯製程高利用率支撐定價空間。
   *Source: TrendForce 2026-04-15（引述 Chosun Biz, Financial News）*

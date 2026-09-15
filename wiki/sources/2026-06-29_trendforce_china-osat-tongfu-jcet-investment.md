@@ -1,6 +1,8 @@
 ---
 title: "中國 OSAT 投資加碼：Tongfu 募資 44 億人民幣；JCET 入股晶片基金"
 category: source
+created: 2026-06-29
+updated: 2026-06-29
 source_type: news
 original_path: raw/articles/2026-06-29_trendforce_china-osat-tongfu-jcet-investment.md
 url: https://www.trendforce.com/news/2026/01/19/news-chinas-osat-giants-step-up-tongfu-microelectronics-to-raise-rmb-4-4b-jcet-backs-chip-fund/

@@ -55,7 +55,7 @@ Foveros 是 Intel 的 3D 晶片堆疊技術，將多個 die 垂直堆疊於基�
   - 節點分配（全部 Intel Foundry）：核心晶片 18A-P（最新節點），基底晶片 Intel 3-T，FHT Intel 3（前一代）
   - 規模：256 P-cores，1.28 GB LLC，16 記憶體通道，128 lanes PCIe Gen6 + CXL 3.0
   - 意義：Diamond Rapids 是迄今量產多晶片架構中 Foveros Direct 3D 應用規模最大的案例
-  *Source: Intel Newsroom 2026-08-24 → [[wiki/sources/2026-08-24_intel-newsroom_hot-chips-2026-diamond-rapids-foveros-ucie]]*
+  *Source: Intel Newsroom 2026-08-24 → [[sources/2026-08-24_intel-newsroom_hot-chips-2026-diamond-rapids-foveros-ucie]]*
 - **2026-03（MWC）**：Clearwater Forest（Xeon 6+）搭載 **Foveros Direct 3D**（< 10µm Cu-Cu），首顆 3D Cu-Cu 堆疊 Intel 伺服器晶片；同時結合 EMIB 形成 **EMIB 3.5D** 架構
 - **2026-02-15（ISSCC 2026）**：Intel M3DProc 展示——Intel 3 底部 die + 18A 頂部 die；3D Mesh 頻寬 **875 GB/s**；9µm Foveros Direct 接合；3D Mesh 降低延遲、提升吞吐量約 40%
 
@@ -97,7 +97,7 @@ Foveros 是 Intel 的 3D 晶片堆疊技術，將多個 die 垂直堆疊於基�
 
 ## Diamond Rapids：迄今最大規模量產 Foveros Direct 3D（2026-08-26）⭐更新
 
-*Source: TrendForce 2026-08-25 → [[sources/2026-08-25_trendforce_intel-hot-chips-2026-diamond-rapids-wildkat-lake.md]]*
+*Source: TrendForce 2026-08-25 → [[sources/2026-08-25_trendforce_intel-hot-chips-2026-diamond-rapids-wildcat-lake]]*
 
 ### Diamond Rapids 完整封裝架構（Hot Chips 2026 正式披露）
 

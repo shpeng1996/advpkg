@@ -34,4 +34,4 @@ Nokia 並非傳統晶圓代工或 OSAT 廠商，而是作為下游系統/電信�
 
 ## 與其他實體的關係 / Relationships
 
-- 與美國 CHIPS Act 政策資金的受益關係，呼應 [[concepts/geopolitics-advanced-packaging.md]] 中「美國封裝份額過低、需政策扶持」的論述。
+- 與美國 CHIPS Act 政策資金的受益關係，呼應 [[concepts/geopolitics-advanced-packaging]] 中「美國封裝份額過低、需政策扶持」的論述。

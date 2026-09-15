@@ -42,7 +42,7 @@ SK Hynix 是 **HBM 市場的領導者**，率先量產 HBM3E，並於 2025 H2 �
   - **CXL 記憶體擴展**納入長期路線圖
   *Source: SemiEng Week #155 2026-09-11 → [[sources/2026-09-11_semieng_chip-week-155]]*
 
-- **2026-09-07（次最新）**：**1c DRAM 擴產時程量化；1Q27 首度成為主力製程；HBM4E 以 1c 為 core die**——Chosun Biz 報導 SK hynix 1c DRAM 各季佔比：10%（1Q26）→ 13%（2Q26）→ 24%（3Q26）→ 34%（4Q26）→ 35%（1Q27，首超 1b ~33%）。Samsung 1c 佔比 2Q26 已達 16%，Micron 達 19%，SK hynix 在製程轉換速度上暫落後。**HBM4 策略**：SK hynix 以 1b DRAM + MR-MUF 維持量產穩定性主導出貨量（Samsung 採 1c 追效能 11.7Gbps）。HBM4E 已於 2026-07 提供樣品；1c 提升每晶圓比特產出，改善 2H26+ 成本競爭力。**1d DRAM（HBM5E 世代）**：SK hynix 目標 2026-12 完成 1d 開發（落後 Samsung 3 個月），2027-06 量產準備（落後 Samsung 6 個月）。*Source: TrendForce 2026-09-07 → [[sources/2026-09-07_trendforce_skhynix-1c-dram-hbm4e-overtake-1b.md]]*
+- **2026-09-07（次最新）**：**1c DRAM 擴產時程量化；1Q27 首度成為主力製程；HBM4E 以 1c 為 core die**——Chosun Biz 報導 SK hynix 1c DRAM 各季佔比：10%（1Q26）→ 13%（2Q26）→ 24%（3Q26）→ 34%（4Q26）→ 35%（1Q27，首超 1b ~33%）。Samsung 1c 佔比 2Q26 已達 16%，Micron 達 19%，SK hynix 在製程轉換速度上暫落後。**HBM4 策略**：SK hynix 以 1b DRAM + MR-MUF 維持量產穩定性主導出貨量（Samsung 採 1c 追效能 11.7Gbps）。HBM4E 已於 2026-07 提供樣品；1c 提升每晶圓比特產出，改善 2H26+ 成本競爭力。**1d DRAM（HBM5E 世代）**：SK hynix 目標 2026-12 完成 1d 開發（落後 Samsung 3 個月），2027-06 量產準備（落後 Samsung 6 個月）。*Source: TrendForce 2026-09-07 → [[sources/2026-09-07_trendforce_skhynix-1c-dram-hbm4e-overtake-1b]]*
 
 - **2026-08-29（⭐最新）**：**Indiana 先進封裝廠正式破土動工；Purdue University 研發合作協議簽署**（SemiEng Week#153 2026-08-28）：
   - SK hynix 在 West Lafayette, Indiana 正式舉行先進封裝暨研發設施**破土典禮**——美國**首個 HBM 量產中心**正式啟動建設
@@ -231,7 +231,7 @@ SK Hynix 是 **HBM 市場的領導者**，率先量產 HBM3E，並於 2025 H2 �
   - **Kioxia 持股增值**：2018 年 KRW 4 兆投資估值峰值達 ~KRW 60 兆；管理層探討非競爭領域合作
   *Source: TrendForce 2026-06-11（引述 Nikkei、The Elec、Newsis、Hankyung）*
 
-- **2026-06-05（⭐新增）**：**HBF 設備競賽——Hanmi Semiconductor 確認 2H26 首交付 HBF TCB 設備**：SK Hynix + SanDisk 聯合 HBF 標準化聯盟的設備端進展——**Hanmi Semiconductor** 確認為 HBF 主要 TC Bonder 設備供應商，預計 **2H 2026 首批交付**。SanDisk 時程：2H 2026 工程樣品→2027 AI 晶片整合樣品（16 層 NAND 堆疊）。詳見 [[technologies/hbf.md]]。
+- **2026-06-05（⭐新增）**：**HBF 設備競賽——Hanmi Semiconductor 確認 2H26 首交付 HBF TCB 設備**：SK Hynix + SanDisk 聯合 HBF 標準化聯盟的設備端進展——**Hanmi Semiconductor** 確認為 HBF 主要 TC Bonder 設備供應商，預計 **2H 2026 首批交付**。SanDisk 時程：2H 2026 工程樣品→2027 AI 晶片整合樣品（16 層 NAND 堆疊）。詳見 [[technologies/hbf]]。
   *Source: TrendForce 2026-06-05*
 
 - **2026-05-09（新增）⭐**：**HBF 標準化聯盟主導**：SK Hynix 與 SanDisk 於 2026 年 2 月 25 日聯合啟動「HBF Spec. Standardization Consortium Kick-Off」，發布全球 HBF（High Bandwidth Flash）標準化路線圖，瞄準 AI 推論時代（2030 年需求加速）。HBF 是以 TSV 垂直堆疊數百層 NAND flash 的次世代記憶體，技術供應鏈與 HBM 高度重疊（TSV 設備、鍵合材料）。SK Hynix 率先宣布標準化立場，具備先發優勢。
@@ -262,7 +262,7 @@ SK Hynix 是 **HBM 市場的領導者**，率先量產 HBM3E，並於 2025 H2 �
   - **HBM4 良率達 ~80%**（MR-MUF 製程），與 Samsung TC-NCF 路線達到相近水準，確認 SK Hynix 維持技術競爭力。
   - **勞資談判破裂風險**：工會第 5 輪談判拒絕管理層提案，罷工風險上升；若 MR-MUF HBM 封裝線停工將直接衝擊 HBM4 出貨。
   - **重慶封裝廠出售評估**：SK Hynix 正評估出售重慶封裝廠股份（估值約 KRW 4 兆 / ~$30 億美元），非中國業務全退，Wuxi DRAM + Dalian NAND 維持；中國產能佔比：DRAM ~30-35%、NAND ~35-40%。新建 HBM 先進封裝重心轉向韓國（Y2 + M17；KRW 54.3 兆）+ 美國（印第安納州；KRW 5.2 兆，2H28 啟用）。
-  *Source: TrendForce 2026-08-10 → [[sources/2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor.md]]、[[sources/2026-08-10_trendforce_skhynix-chongqing-sale-global-reset.md]]*
+  *Source: TrendForce 2026-08-10 → [[sources/2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor]]、[[sources/2026-08-10_trendforce_skhynix-chongqing-sale-global-reset]]*
 
 - **2026-01**：SK Hynix 確認供應 NVIDIA Vera Rubin 平台 HBM4 約 **~70%** 的需求（高於原先 >50% 預期）。**2025-09** 量產系統就位；大量付費樣品通過 NVIDIA 最終驗證。競爭優勢被認定為「穩定良率」+「大規模量產可靠性」，而非單純技術領先。
   *Source: TrendForce 2026-01-28（引述 Yonhap News）*
@@ -289,7 +289,7 @@ SK Hynix 是 **HBM 市場的領導者**，率先量產 HBM3E，並於 2025 H2 �
 供需失衡
 ### ⭐「One Team」模式記錄；Next Memory Strategy 部門招募（2026-08-12）
 
-*Source: TrendForce 2026-08-12 → [[sources/2026-08-12_trendforce_micron-hbm4e-custom-era-dual-supplier.md]]*
+*Source: TrendForce 2026-08-12 → [[sources/2026-08-12_trendforce_micron-hbm4e-custom-era-dual-supplier]]*
 
 - **SK hynix「One Team」協作模式**（正式命名確認）：
   - **NVIDIA**：定義 HBM 規格與 GPU 整合需求
@@ -331,7 +331,7 @@ SK Hynix 是 **HBM 市場的領導者**，率先量產 HBM3E，並於 2025 H2 �
 
 ## Hot Chips 2026：775 µm 物理上限 / iHBM 詳細機制（2026-08-26）⭐更新
 
-*Source: Tom's Hardware 2026-08-24 → [[sources/2026-08-24_tomshardware_skhynix-hbm5-hybrid-bonding-775-micron.md]]*
+*Source: Tom's Hardware 2026-08-24 → [[sources/2026-08-24_tomshardware_skhynix-hbm5-hybrid-bonding-775-micron]]*
 
 ### 775 µm 物理上限正式量化（Jaesik Lee, VP Package Engineering, SK hynix America）
 

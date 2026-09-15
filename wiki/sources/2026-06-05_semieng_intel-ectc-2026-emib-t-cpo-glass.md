@@ -8,7 +8,7 @@ author: Lori Scott (Intel Foundry Sr. Director of Marketing)
 publisher: Semiconductor Engineering
 date: 2026-06-05
 created: 2026-09-14
-updated: 2026-09-14
+updated: 2026-09-15
 tags: [Intel, EMIB-T, CPO, glass-substrate, TGV, hybrid-bonding, ECTC-2026, UCIe, HBM4e, SPIL]
 sources: [2026-06-05_semieng_intel-ectc-2026-emib-t-cpo-glass]
 related: [wiki/entities/intel.md, wiki/technologies/emib.md, wiki/technologies/copackaged-optics.md, wiki/technologies/glass-substrate.md, wiki/technologies/hybrid-bonding.md, wiki/technologies/ucie.md]
@@ -54,3 +54,12 @@ related: [wiki/entities/intel.md, wiki/technologies/emib.md, wiki/technologies/c
 - `wiki/technologies/copackaged-optics.md` — Intel CPO edge coupler 技術
 - `wiki/technologies/hybrid-bonding.md` — 超低溫 D2W HB、EV Group 100% overlay
 - `wiki/technologies/ucie.md` — EMIB-T 64Gbps UCIe 量化
+
+## 合併補充 / Merged From Duplicate Collections（2026-09-15 dedupe）
+
+同一 URL 曾被重複抓取，重複頁 `sources/2026-06-05_semieng_intel-ectc-2026-emib-t-cpo-glass`、`sources/2026-06-05_semieng_intel-ectc-2026-emib-t-cpo-glass` 已於 2026-09-15 合併至本頁；以下為重複頁中本頁原先未涵蓋的內容：
+
+- **來源性質提醒**：本文為 Intel Foundry 於 SemiEngineering 的贊助部落格（sponsor blog），數據為 Intel 內部宣稱；但 25 µm FLI / 120×120 mm / >9× reticle 等指標與 ECTC 2026 正式論文對應，可信度較高。
+- **鐵磁性熱壓無助焊劑 TCB（fluxless TCB）用於 4× 光罩晶粒堆疊**，為 wiki 記錄最大的單一 TCB 堆疊配置。
+- **混合接合合作研究網絡**：Fouriers Scientific（熱行為研究）、NIST（原子力顯微鏡探測 Cu 塑性）、超低溫 D2W 混合接合；另提及 die distortion 問題。
+- **Intel + SPIL（ASE 子公司）**：扇出嵌入式橋接中的 SRAM 晶粒 3D 整合，為 Intel EMIB 生態向台灣 OSAT 擴展的首個官方論文記錄。

@@ -236,8 +236,10 @@ TSMC COUPE™ 與 GF SCALE 的競爭表明 CPO 市場正從「單一廠商主導
 3. **ULCVD 突破（2026-04）**：全南大學 Han Seung-hoe 教授團隊開發超短脈衝雷射誘導 CVD（ULCVD），可在玻璃基板正背面同時無光罩直接刻寫導電碳電路，突破傳統 TGV/RDL 製程限制。後續計畫擴展至 Cu/Au 金屬配線材料（更適合半導體封裝要求）。
 4. **未來展望**：玻璃基板 CPO 在 2028–2030 年後可能成為「電氣+光學」整合封裝的通用平台，使 CPO 從「晶片封裝邊緣」走向「基板內嵌」的終極形態。
 
-*Source: [[sources
+*Source: TrendForce 2026-04-30 → [[sources/2026-04-30_trendforce_ulcvd-glass-substrate-cpo-laser]]*
+
 ---
+
 ## 2026-05-26 更新 / Update
 
 **新興場景：板內 GPU-HBM 光學互連（2026-05-25）**⭐
@@ -568,7 +570,7 @@ InP（磷化銦）為 CPO 雷射源的核心材料，供應鏈出現重要擴充
 
 ### ⭐ 2026-09-08 更新：可程式矽光子干涉儀網格（UiT/Stanford）——WDM 波長調諧學術突破
 
-*Source: SemiEng Tech Paper Roundup 2026-09-08 → [[sources/2026-09-08_semieng_chip-paper-roundup-sept8.md]]*
+*Source: SemiEng Tech Paper Roundup 2026-09-08 → [[sources/2026-09-08_semieng_chip-paper-roundup-sept8]]*
 
 UiT（挪威北極大學）與 Stanford 合作論文：**Intracavity Laser Wavelength Tuning by a Programmable Forward-Only Silicon Photonics Interferometer Mesh**
 - 技術要點：利用可程式化 SiPh 干涉儀網格實現腔內雷射**連續波長調諧**（無需機械移動部件）

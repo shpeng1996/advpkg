@@ -250,13 +250,13 @@ Powertech 正式宣布 **NT$70 億（~US$2.2 億）** FOPLP 投資計畫，以�
 
 ## ⭐ 2026-08-11 更新：台積電洽購 AUO 兩座廠房，FOPLP 基礎設施垂直整合
 
-*Source: TrendForce 2026-08-10 → [[sources/2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan.md]]*
+*Source: TrendForce 2026-08-10 → [[sources/2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan]]*
 
 台積電正洽談以超過 **TWD 300 億元**收購 AUO 的 L7 與 L5C 廠房，地點鄰近中科。L7 廠配備大面積面板製程設備，可直接供應 FOPLP 量產所需基礎設施；L5C 廠（8.5 代）進一步補強面板處理能力。此舉代表 TSMC FOPLP 戰略從「合作借廠」升級為「直接持有廠房資產」。
 
 **龍潭 Phase 3 面板封裝廠**：TSMC 龍潭 Phase 3 擴建計畫（104 公頃）規劃包含一座獨立面板級封裝廠，與兩座 1.4nm 邏輯廠共同布局，確認 FOPLP/CoPoS 量產基礎設施的落地。
 
-**wiki 含義**：TSMC 直接收購 AUO 廠房是 FOPLP/CoPoS 產能規劃由「路線圖承諾」轉向「資產確立」的最強信號，進一步強化本 wiki 對 2H28 量產目標的可信度評估。與 [[technologies/copos.md]] 2026-08-11 更新互參。
+**wiki 含義**：TSMC 直接收購 AUO 廠房是 FOPLP/CoPoS 產能規劃由「路線圖承諾」轉向「資產確立」的最強信號，進一步強化本 wiki 對 2H28 量產目標的可信度評估。與 [[technologies/copos]] 2026-08-11 更新互參。
 
 ---
 

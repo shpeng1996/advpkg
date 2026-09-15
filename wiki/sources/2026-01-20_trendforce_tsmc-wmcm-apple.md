@@ -8,7 +8,7 @@ author: ""
 publisher: TrendForce
 date: 2026-01-20
 created: 2026-04-27
-updated: 2026-04-27
+updated: 2026-09-15
 tags: [TSMC, WMCM, Apple, InFO, AP3, AP7, mobile-packaging, capacity]
 sources: [2026-01-20_trendforce_tsmc-wmcm-apple]
 related: [wiki/technologies/info-wmcm.md, wiki/entities/tsmc.md]
@@ -48,3 +48,11 @@ related: [wiki/technologies/info-wmcm.md, wiki/entities/tsmc.md]
 
 - `wiki/technologies/info-wmcm.md`（60K wsm 目標；AP3 升級；AP7 Phase 2 Apple 專屬；WMCM 排他窗口 2027–28）
 - `wiki/entities/tsmc.md`（WMCM 60K wsm 2026 目標；AP7 Phase 2 詳情）
+
+## 合併補充 / Merged From Duplicate Collections（2026-09-15 dedupe）
+
+同一 URL 曾被重複抓取，重複頁 `sources/2026-01-20_trendforce_tsmc-wmcm-apple` 已於 2026-09-15 合併至本頁；以下為重複頁中本頁原先未涵蓋的內容：
+
+- Apple iPhone 18 的 **A20 晶片（2nm）** 將從 InFO 升級至 WMCM；Apple 2nm 應用延伸至 **MacBook M 系列**與頭戴裝置 **R2 晶片**。
+- 台積電嘉義 AP7 於 **2026-01-22 首次媒體開放**（tool move-in 階段，第六座先進封裝廠）。
+- **Fab 18 P9（台南）可能轉換為先進封裝廠**；**Fab 14 考慮擴充 40/65nm** 用於 interposer 與 silicon bridge 製造。

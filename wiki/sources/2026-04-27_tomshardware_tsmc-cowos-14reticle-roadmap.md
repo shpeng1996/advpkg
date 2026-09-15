@@ -2,7 +2,7 @@
 title: "Tom's Hardware: TSMC CoWoS >14-Reticle Roadmap — 48× Compute, 24 HBM5E Stacks by 2029"
 category: source
 source_type: article
-original_path: raw/articles/2026-04-27_tomshardware_tsmc-cowos-14reticle-48x-compute-hbm5e-2029.md
+original_path: raw/articles/2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap-2029.md
 url: https://www.tomshardware.com/tech-industry/semiconductors/tsmcs-details-next-gen-cowos-roadmap-over-14-reticle-packages-and-48x-leap-in-compute-power-expected-by-2029-massive-size-enables-24-hbm5e-stacks-and-additional-memory-bandwidth-jump
 author: Anton Shilov
 publisher: Tom's Hardware

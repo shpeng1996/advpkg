@@ -120,9 +120,9 @@ HBF（High Bandwidth Flash）是將多顆 **3D NAND 快閃記憶體晶片**透�
 
 ## 相關技術 / Related Technologies
 
-- [[technologies/hbm4.md]] — HBF 的概念借鑒者；HBM 針對 DRAM，HBF 針對 NAND；兩者可互補共封裝
-- [[technologies/hybrid-bonding.md]] — HBF 未來更高層數堆疊可能採用 Hybrid Bonding
-- [[technologies/tsv.md]] — TSV 是 HBF 堆疊的核心垂直互連技術；HBM TSV 規格（2–5 µm）與 HBF 類似
+- [[technologies/hbm4]] — HBF 的概念借鑒者；HBM 針對 DRAM，HBF 針對 NAND；兩者可互補共封裝
+- [[technologies/hybrid-bonding]] — HBF 未來更高層數堆疊可能採用 Hybrid Bonding
+- [[technologies/tsv]] — TSV 是 HBF 堆疊的核心垂直互連技術；HBM TSV 規格（2–5 µm）與 HBF 類似
 
 ---
 

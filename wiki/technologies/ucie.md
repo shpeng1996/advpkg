@@ -209,7 +209,7 @@ Arm 在 Hot Chips 2026 披露 **AGI 伺服器 CPU** 封裝架構，確認 **UCIe
 | Intel Wildcat Lake | UCIe + 有機 MCP | — | — |
 | **Arm AGI CPU** | **D2D：chiplet ↔ chiplet** | **32 GT/s** | **2 TB/s** |
 
-*Source: Tom's Hardware 2026-08-26 → [[wiki/sources/2026-08-26_tomshardware_arm-agi-hot-chips-2026-ucie-chiplets]]*
+*Source: Tom's Hardware 2026-08-26 → [[sources/2026-08-26_tomshardware_arm-agi-hot-chips-2026-ucie-chiplets]]*
 
 ---
 
@@ -223,7 +223,7 @@ Intel 在 Hot Chips 2026 宣布 **Wildcat Lake（Intel Core Series 3）** 為 **
 - **Diamond Rapids UCIe-S 應用**：Diamond Rapids（Xeon 7）同時揭示 **UCIe-S**（基板版本）用於 Fabric Hub Tile（FHT）與基底晶片的連結，為不同 UCIe 物理形式的量產驗證
 - **對比**：AMD 的 EPYC Venice 採 EMIB 等效技術，非 UCIe-S；Intel 選擇以 UCIe-S 作為 Diamond Rapids 跨晶片互連標準
 
-*Source: Intel Newsroom 2026-08-24 → [[wiki/sources/2026-08-24_intel-newsroom_hot-chips-2026-diamond-rapids-foveros-ucie]]*
+*Source: Intel Newsroom 2026-08-24 → [[sources/2026-08-24_intel-newsroom_hot-chips-2026-diamond-rapids-foveros-ucie]]*
 
 ---
 
@@ -279,7 +279,7 @@ Intel XBM（Cross-Batch Memory）專利揭示 UCIe 的一個全新應用場景�
 
 ## Wildcat Lake：UCIe 驅動封裝降本里程碑（2026-08-26）⭐更新
 
-*Source: TrendForce 2026-08-25 → [[sources/2026-08-25_trendforce_intel-hot-chips-2026-diamond-rapids-wildcat-lake.md]]*
+*Source: TrendForce 2026-08-25 → [[sources/2026-08-25_trendforce_intel-hot-chips-2026-diamond-rapids-wildcat-lake]]*
 
 ### Intel Wildcat Lake — UCIe 作為封裝架構選擇工具
 

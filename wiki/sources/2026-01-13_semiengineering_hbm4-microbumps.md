@@ -3,7 +3,7 @@ title: "HBM4 Sticks With Microbumps, Postponing Hybrid Bonding / HBM4 維持微�
 category: source
 tags: [HBM4, hybrid-bonding, microbumps, JEDEC, testing, ASE-Group, UMC]
 created: 2026-04-30
-updated: 2026-04-30
+updated: 2026-09-15
 sources: [2026-01-13_semiengineering_hbm4-microbumps]
 related: [wiki/technologies/hbm4.md, wiki/technologies/hybrid-bonding.md, wiki/entities/ase-group.md]
 source_type: article
@@ -50,3 +50,12 @@ date: 2026-01-13
 - `wiki/technologies/hbm4.md` — 更新：HBM4 確認微凸塊、JEDEC 高度修訂、10µm 間距、自訂 Base Die、DRFM
 - `wiki/technologies/hybrid-bonding.md` — 更新：HBM4 確認不採用、推遲至 HBM5 的時程、測試障礙說明
 - `wiki/entities/ase-group.md` — 微更新：HBM 封裝測試觀點
+
+## 合併補充 / Merged From Duplicate Collections（2026-09-15 dedupe）
+
+同一 URL 曾被重複抓取，重複頁 `sources/2026-01-13_semiengineering_hbm4-microbumps` 已於 2026-09-15 合併至本頁；以下為重複頁中本頁原先未涵蓋的內容：
+
+- **HBM5 規劃規格**：16 層以上、**4096-bit 介面、4 TB/s** 頻寬，為混合接合大規模導入的目標世代；HBM4E（~2027）為過渡期，18–20 層評估中。
+- **混合接合 + TCB 雙堆疊過渡方案**：DRAM 晶粒先面對面混合接合成對，再以微凸塊背對背堆疊。
+- **HBM die 厚度現況 30–50 µm**，為 HBF（NAND 堆疊）薄化需求基準。
+- **Samsung HBM4E 早期目標（2026-01 披露）**：>13 Gb/s per pin、3.25 TB/s；實際 2026-05-29 首發樣品為 14 Gbps / 3.6 TB/s，超越本文預測。

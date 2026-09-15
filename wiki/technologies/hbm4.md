@@ -419,7 +419,7 @@ HBM 堆疊的 TSV 與矽中介層 TSV 在規格與製程上存在顯著差異：
 
 **關鍵洞察**：HBM 升至 16-Hi 堆疊時，TSV 的製程容差要求提高（更薄的 die、更精確的 reveal），這是 Samsung HBM 人才招募文件中明確提到的攻關方向（2026-07，見上方「市場動態」章節）。
 
-→ 完整 TSV 技術頁面：[[technologies/tsv.md]]
+→ 完整 TSV 技術頁面：[[technologies/tsv]]
 
 ---
 
@@ -461,7 +461,7 @@ NVIDIA NVLink Fusion 新增 **NVHBM** 架構：自訂記憶體控制器整合進
 - [[technologies/hybrid-bonding]] — HBM5 / >20H HBM 的潛在下一代堆疊互連路線
 - [[technologies/ucie]] — HBM base die / logic chiplet 之間的 die-to-die interface 候選標準
 - [[technologies/emib]] — Intel 封裝生態中整合 HBM 的 CoWoS 替代路線
-- [[technologies/tsv.md]] — TSV 完整技術頁面（規格、製程流程、供應鏈）
+- [[technologies/tsv]] — TSV 完整技術頁面（規格、製程流程、供應鏈）
 
 ## 競爭技術比較 / Competing Technologies
 
@@ -739,13 +739,13 @@ HBM 在 TSMC CoWoS 製程中與 GPU 基板共同封裝後，物理上融合為�
 - Vera Rubin NVL72（72 顆 GPU）標配 **20.7TB HBM4**，整體記憶體頻寬 **1.6PB/s**。
 - 若以 Bernstein $53/GB 計算，單套 NVL72 的 HBM4 記憶體 BOM 約 **$109.7M**（20.7TB × $53/GB），佔整體系統成本的顯著比例。
 
-**wiki 含義**：$53/GB 的 HBM4 預測與本 wiki 其他節次的 NVIDIA Vera Rubin BOM 分析（SOCAMM 29% BOM 壓力、記憶體成本過高導致訂單調整）互相呼應——高 HBM4 ASP 是 NVIDIA 調整 Vera Rubin NVL72 配置（SOCAMM 縮減 192GB→96GB）的核心成本背景因素之一。見 [[entities/nvidia.md]] 對應條目。
+**wiki 含義**：$53/GB 的 HBM4 預測與本 wiki 其他節次的 NVIDIA Vera Rubin BOM 分析（SOCAMM 29% BOM 壓力、記憶體成本過高導致訂單調整）互相呼應——高 HBM4 ASP 是 NVIDIA 調整 Vera Rubin NVL72 配置（SOCAMM 縮減 192GB→96GB）的核心成本背景因素之一。見 [[entities/nvidia]] 對應條目。
 
 ---
 
 ## ⭐ 2026-08-11 更新：Samsung HBM4 良率突破 80%；SK Hynix 同達 ~80%；2027 供應仍受限
 
-*Source: TrendForce 2026-08-10 → [[sources/2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor.md]]*
+*Source: TrendForce 2026-08-10 → [[sources/2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor]]*
 
 ### 三廠良率現況（2026-08）
 
@@ -777,7 +777,7 @@ SK Hynix 勞資談判第 5 輪已破裂，工會拒絕接受管理層提案，HB
 
 ## ⭐ 2026-08-13 更新：Custom HBM 時代從 HBM4E 開始；市場向雙/單供應商傾斜；HBM-to-DDR 犧牲比惡化至 4:1
 
-*Source: TrendForce 2026-08-12 → [[sources/2026-08-12_trendforce_micron-hbm4e-custom-era-dual-supplier.md]]*
+*Source: TrendForce 2026-08-12 → [[sources/2026-08-12_trendforce_micron-hbm4e-custom-era-dual-supplier]]*
 
 ### Custom HBM4E 市場結構轉變
 
@@ -869,7 +869,7 @@ SK Hynix 2026 DRAM bit 成長修正至 **mid-20%**（原 20% 估計），主因 
 
 ## Hot Chips 2026 重大更新（2026-08-26）⭐更新
 
-*Sources: [[sources/2026-08-24_tomshardware_skhynix-hbm5-hybrid-bonding-775-micron.md]] + [[sources/2026-08-25_tomshardware_micron-hot-chips-hbm-wafer-penalty.md]]*
+*Sources: [[sources/2026-08-24_tomshardware_skhynix-hbm5-hybrid-bonding-775-micron]] + [[sources/2026-08-25_tomshardware_micron-hot-chips-hbm-wafer-penalty]]*
 
 ### 775 µm 物理上限（最高權威確認）
 

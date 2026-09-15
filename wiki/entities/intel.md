@@ -65,15 +65,15 @@ related:
   *Source: Tom's Hardware 2026-08-11 → [[sources/2026-08-11_tomshardware_intel-19-7b-stock-offering-14a]]*
 
 - **2026-08-06（⭐次新）**：**HLFF 240mm×240mm 封裝架構藍圖（ECTC 2026）+ Intel Foundry RAMP-C 計畫完成 + Rio Rancho 8×→12× 封裝擴產**
-  - **HLFF 架構（SemiEngineering sponsor blog，2026-08-04，Sujit Sharan + Yang Guo）**：Intel Foundry 在 ECTC 2026 展示超大封裝形態（Hyper-Large Form Factor）路線圖，目標最大 **240 mm × 240 mm**（目前 8× reticle = 120×120mm；路線圖近期 12×+，長期 50× 面板級）。關鍵規格：EMIB-T 金屬層 < 2µm，晶片間 >64 Gb/s/通道，離封裝目標 448 Gb/s（CPO 或 co-packaged copper cable）；嵌入式矽電容 1 mF/reticle area；15–25 kW 總功耗，模組化冷卻每模組 >5 kW。封膠突破：EMIB >5×（18-die + 12 HBM stacks）流距 >40mm 零空洞；EMIB >7× 零空洞；**Foveros 2× 通過完整可靠度（700 TC + 1,000h HTOL）**；Foveros 4× 零空洞。詳見 [[technologies/emib.md]] → [[sources/2026-08-04_semieng_from-blueprint-intel-hlff]]
+  - **HLFF 架構（SemiEngineering sponsor blog，2026-08-04，Sujit Sharan + Yang Guo）**：Intel Foundry 在 ECTC 2026 展示超大封裝形態（Hyper-Large Form Factor）路線圖，目標最大 **240 mm × 240 mm**（目前 8× reticle = 120×120mm；路線圖近期 12×+，長期 50× 面板級）。關鍵規格：EMIB-T 金屬層 < 2µm，晶片間 >64 Gb/s/通道，離封裝目標 448 Gb/s（CPO 或 co-packaged copper cable）；嵌入式矽電容 1 mF/reticle area；15–25 kW 總功耗，模組化冷卻每模組 >5 kW。封膠突破：EMIB >5×（18-die + 12 HBM stacks）流距 >40mm 零空洞；EMIB >7× 零空洞；**Foveros 2× 通過完整可靠度（700 TC + 1,000h HTOL）**；Foveros 4× 零空洞。詳見 [[technologies/emib]] → [[sources/2026-08-04_semieng_from-blueprint-intel-hlff]]
   - **Intel Foundry RAMP-C 完成**（SemiEng Week#149，2026-07-31）：與美國國防部完成 RAMP-C（Rapid Assured Microelectronics Prototypes-Commercial）計畫，交付 Intel 18A 驗證原型與設計使能套件（含商業 + 國防客戶）。計畫成果流入 **Secure Enclave**——預計提供可信賴、高量的美國境內 Intel 18A + **先進封裝**（EMIB/Foveros）製造。
   - **Rio Rancho 封裝擴產確認**（SemiEng Week#149，2026-07-31）：Rio Rancho, NM 採用 Foveros、EMIB 和 EMIB-T 擴充先進封裝能力，**目前 8× reticle，2028 年目標 12×+**（與 HLFF 路線圖一致）。
-  *Source: SemiEngineering 2026-08-04 → [[sources/2026-08-04_semieng_from-blueprint-intel-hlff]]；SemiEng Week#149 → [[sources/2026-07-31_semieng_chip-week-149, 2026-08-13_trendforce_intel-memory-reentry-xbm-zam-saimemory]]*
+  *Source: SemiEngineering 2026-08-04 → [[sources/2026-08-04_semieng_from-blueprint-intel-hlff]]；SemiEng Week#149 → [[sources/2026-07-31_semieng_chip-week-149]]、[[sources/2026-08-13_trendforce_intel-memory-reentry-xbm-zam-saimemory]]*
 
-- **2026-08-05（次最新）**：**PSMC 確認成為 EMIB-T 矽電容器獨家供應商；UMC 製造矽橋接器**——TrendForce 2026-08-04 報導供應鏈分工確立：PSMC 透過 12 吋 IPD 平台生產 EMIB-T 矽電容器，已由「通過認證」升級為**獨家（exclusive）供應商**；PSMC 計畫 2H 2027 擴充 8 吋 +5,000 wsm、12 吋 +8,000–10,000 wsm；**UMC** 在台灣與新加坡 12 吋廠製造矽橋接器。EMIB-T 整包封裝成本約 CoWoS 的 **50%**，良率接近 **90%**，HVM 目標 **2027**。EMIB-T 供應鏈最終形態：PSMC（矽電容）→ UMC（矽橋）→ Amkor / Intel 封裝廠（整合）。相關矽電容頁面更新見 [[technologies/emib.md]]。
+- **2026-08-05（次最新）**：**PSMC 確認成為 EMIB-T 矽電容器獨家供應商；UMC 製造矽橋接器**——TrendForce 2026-08-04 報導供應鏈分工確立：PSMC 透過 12 吋 IPD 平台生產 EMIB-T 矽電容器，已由「通過認證」升級為**獨家（exclusive）供應商**；PSMC 計畫 2H 2027 擴充 8 吋 +5,000 wsm、12 吋 +8,000–10,000 wsm；**UMC** 在台灣與新加坡 12 吋廠製造矽橋接器。EMIB-T 整包封裝成本約 CoWoS 的 **50%**，良率接近 **90%**，HVM 目標 **2027**。EMIB-T 供應鏈最終形態：PSMC（矽電容）→ UMC（矽橋）→ Amkor / Intel 封裝廠（整合）。相關矽電容頁面更新見 [[technologies/emib]]。
   *Source: TrendForce 2026-08-04 → [[sources/2026-08-04_trendforce_psmc-exclusive-emib-silicon-capacitor-umc-boost]]*
 
-- **2026-07-29**：**Intel + Lens Technology（藍思科技）玻璃核心基板先進封裝合作宣布**——Intel 與中國精密玻璃/觸控製造商藍思科技建立玻璃核心基板封裝合作，量產目標最早 **2H 2027**。藍思科技為蘋果主要玻璃保護板供應商，具備大面積精密玻璃加工能力，此合作為 Intel EMIB + 玻璃核心基板封裝生態系引入新中國供應鏈節點。詳見 [[technologies/glass-substrate.md]]。
+- **2026-07-29**：**Intel + Lens Technology（藍思科技）玻璃核心基板先進封裝合作宣布**——Intel 與中國精密玻璃/觸控製造商藍思科技建立玻璃核心基板封裝合作，量產目標最早 **2H 2027**。藍思科技為蘋果主要玻璃保護板供應商，具備大面積精密玻璃加工能力，此合作為 Intel EMIB + 玻璃核心基板封裝生態系引入新中國供應鏈節點。詳見 [[technologies/glass-substrate]]。
   *Source: TrendForce 2026-07-28*
 
 - **2026-07-28**：**Intel Ohio Fab 尋求操作合作夥伴——SK hynix 為候選之一；Samsung/Micron 評估 EMIB；EMIB 記憶體整合生態全面擴展**（TrendForce 2026-07-23，引述 Semafor、Barron's、Green Economy News）：
@@ -123,7 +123,7 @@ related:
 - **2026-06-21（補充來源，交叉確認）**：另一篇 Tom's Hardware 報導（Luke James，2026-04-07，引述 WIRED）證實 **Intel 與 Google、Amazon 就先進封裝服務洽談中**，與下方 2026-06-19 條目所述為同一系列報導但版本較早／較簡略。新增揭露的具體財務數據：**Intel Foundry 2025 Q4 營收 $4.5B、營運虧損 $2.5B**；**FY2025 全年營收 $17.8B、虧損 $10.3B，其中外部代工客戶營收僅 $307M**——量化呈現 Intel Foundry 在外部封裝/代工業務轉型初期的虧損規模，可與下方 EMIB-T 商機評論（CFO「每年數十億美元」）對照解讀。
   *Source: Tom's Hardware 2026-04-07（Luke James，引述 WIRED）*
 
-- **2026-06-19（補充來源）**：**Tom's Hardware：EMIB-T 今年內 fab 量產部署，CFO 稱「每年數十億美元」封裝合約**。CFO Dave Zinsner 重申封裝服務商機規模；具名/傳聞客戶補充 **MediaTek、Amazon**（EMIB-T），**Microsoft Maia $15B 合約**（EMIB/Foveros）；首款 EMIB-T 產品可能為 **Jaguar Shores**（Falcon Shores 後繼，測試晶片 92.5×92.5mm，4 運算 tile + 8 個 HBM4 介面）。封裝產能據點補充：**Fab 9（Rio Rancho, NM）**、**Penang（馬來西亞，99% 完工）**、Amkor Songdo K5（外包）。外部客戶量產時程：執行長層級表示「未來一兩年內」。成本/良率比較數據（Bernstein 估算）：EMIB 每晶片成本「低數百美元」對比 CoWoS（Rubin 級）約 $900–1000；EMIB 晶圓利用率 ~90% vs. 中介層方案 ~60%。詳見 [[technologies/emib.md]]。
+- **2026-06-19（補充來源）**：**Tom's Hardware：EMIB-T 今年內 fab 量產部署，CFO 稱「每年數十億美元」封裝合約**。CFO Dave Zinsner 重申封裝服務商機規模；具名/傳聞客戶補充 **MediaTek、Amazon**（EMIB-T），**Microsoft Maia $15B 合約**（EMIB/Foveros）；首款 EMIB-T 產品可能為 **Jaguar Shores**（Falcon Shores 後繼，測試晶片 92.5×92.5mm，4 運算 tile + 8 個 HBM4 介面）。封裝產能據點補充：**Fab 9（Rio Rancho, NM）**、**Penang（馬來西亞，99% 完工）**、Amkor Songdo K5（外包）。外部客戶量產時程：執行長層級表示「未來一兩年內」。成本/良率比較數據（Bernstein 估算）：EMIB 每晶片成本「低數百美元」對比 CoWoS（Rubin 級）約 $900–1000；EMIB 晶圓利用率 ~90% vs. 中介層方案 ~60%。詳見 [[technologies/emib]]。
   *Source: Tom's Hardware 2026-04-09（Luke James）*
 
 - **2026-06-10（⭐最新）**：**ECTC 2026 重磅揭露——EMIB-T 全規格 + CPO 玻璃耦合器 + TGV 可靠度 + D2W 混合接合**（SemiEngineering 深度報導）：
@@ -136,7 +136,7 @@ related:
 - **2026-06-09（最新）⭐**：**Google 3M+ TPU（EMIB）2028 出貨確認；NVIDIA 18A MPW 測試**：TrendForce 報導 Google 訂單細節（與 ECTC 2026 透露消息吻合）：Google 擬採購逾 300 萬顆 EMIB 封裝 TPU，最快 2028 年出貨，約佔 Google 當年 TPU 總採購量的 50%。同時，NVIDIA 正於 **Intel 18A 平台進行 MPW 測試流片**，評估 4 晶粒整合 Feynman GPU 方案。**Tesla 確認為 Intel 14A 首個外部客戶**（另見上方 14A 項目）。
   *Source: TrendForce 2026-06-09（引述 Business Post、Chosun Biz、Korea JoongAng Daily、IT 之家）*
 
-- **2026-06-05（⭐新增）**：**Intel Xeon 6+ 以 Intel 18A 製程正式商業量產——18A 首顆商業 CPU 里程碑**（SemiEngineering Chip Week Review #141）：Intel Xeon 6+ 確認採用 **Intel 18A 製程節點**量產，為 18A 節點首款商業化 CPU 產品（先前 18A 進度曾受質疑）。此里程碑標誌 Intel Foundry 18A 正式進入 **生產（HVM）階段**，而非僅止於工程樣品。背景：18A 採用 RibbonFET（Gate-All-Around）+ PowerVia（背面電源），為 Intel 最先進節點，與 TSMC N2、Samsung SF2 同代競爭。同期報導：**Ayar Labs 贏得 NVIDIA NVLink Fusion CPO 合約**——Ayar Labs 的矽光子光學 I/O 技術（TeraPHY）將整合至 NVIDIA 下一代資料中心互連（NVLink Fusion），搭配光電共封裝（CPO），為 AI 叢集提供超低功耗高頻寬光連接（另見 [[technologies/copackaged-optics.md]]）。此外，SemiEngineering 引述 WSTS 預測 2026 全球半導體市場達 **$1.5 兆**（含 AI 推升動能），2027 進一步成長至 **$1.9 兆**。
+- **2026-06-05（⭐新增）**：**Intel Xeon 6+ 以 Intel 18A 製程正式商業量產——18A 首顆商業 CPU 里程碑**（SemiEngineering Chip Week Review #141）：Intel Xeon 6+ 確認採用 **Intel 18A 製程節點**量產，為 18A 節點首款商業化 CPU 產品（先前 18A 進度曾受質疑）。此里程碑標誌 Intel Foundry 18A 正式進入 **生產（HVM）階段**，而非僅止於工程樣品。背景：18A 採用 RibbonFET（Gate-All-Around）+ PowerVia（背面電源），為 Intel 最先進節點，與 TSMC N2、Samsung SF2 同代競爭。同期報導：**Ayar Labs 贏得 NVIDIA NVLink Fusion CPO 合約**——Ayar Labs 的矽光子光學 I/O 技術（TeraPHY）將整合至 NVIDIA 下一代資料中心互連（NVLink Fusion），搭配光電共封裝（CPO），為 AI 叢集提供超低功耗高頻寬光連接（另見 [[technologies/copackaged-optics]]）。此外，SemiEngineering 引述 WSTS 預測 2026 全球半導體市場達 **$1.5 兆**（含 AI 推升動能），2027 進一步成長至 **$1.9 兆**。
   *Source: SemiEngineering Chip Week Review #141（2026-06-05）*
 
 - **2026-06-01（最新）⭐**：**Intel + 3DGS 印度奧里薩邦 $33 億玻璃基板廠確認**（TrendForce 2026-06-01，引述 Reuters）：
@@ -239,7 +239,7 @@ Intel CEO Lip-Bu Tan 公開表示，他過去因記憶體屬商品性質而避�
 
 ### ⭐ 前 SK Hynix CEO 李錯熹（Seok-Hee Lee）正式就任 Intel Foundry EVP——主導先進封裝（2026-06-18）
 
-*Source: TrendForce 2026-06-19 → [[sources/2026-06-19_trendforce_intel-skhynix-exceo-foundry-evp-emib.md]]*
+*Source: TrendForce 2026-06-19 → [[sources/2026-06-19_trendforce_intel-skhynix-exceo-foundry-evp-emib]]*
 
 - **Seok-Hee Lee** 正式任命為 **Intel Foundry EVP**（2026-06-18 Intel 官方公告），直屬 CEO Lip-Bu Tan
 - **職責範圍**：先進封裝、系統整合、後端技術開發、後端製造（EMIB-T 和 HBI 量產規模化為核心使命）
@@ -274,7 +274,7 @@ Intel 在記憶體領域的新動向形成三軌並進：
 
 ## Hot Chips 2026 封裝架構完整披露（2026-08-25）⭐更新
 
-*Source: TrendForce 2026-08-25 → [[sources/2026-08-25_trendforce_intel-hot-chips-2026-diamond-rapids-wildcat-lake.md]]*
+*Source: TrendForce 2026-08-25 → [[sources/2026-08-25_trendforce_intel-hot-chips-2026-diamond-rapids-wildcat-lake]]*
 
 ### Diamond Rapids 封裝架構量化細節
 

@@ -266,7 +266,7 @@ SCHMID（德國 PCB/IC 基板設備商）揭示：TSMC、Intel、Samsung 及其�
 - 台灣面板廠 FOPLP 的進入時間軸與 TSMC CoPoS（2H28 量產）平行推進；在成熟應用（PMIC、RF）的 FOPLP 已運作中（最大 620×750mm 面板），下一步向 AI/HPC 封裝應用拓展。
 - 此動態與本 wiki 2026-06-18（TrendForce 台灣 FOPLP 面板廠）更新及 2026-04-28（CommonWealth CoPoS 台灣供應鏈）已建立的框架一致，提供時程上的新確認。
 
-**wiki 含義**：台灣面板廠（Innolux、AUO）切入方形玻璃 FOPLP 的行動，進一步強化「台灣面板廠作為 CoPoS/FOPLP 生態補充節點」的定位——不與 TSMC CoPoS 直接競爭，而是在成熟製程端提供先行量產驗證，為整個玻璃基板 FOPLP 供應鏈增加冗餘度。與 [[technologies/glass-substrate.md]] 中 TPK-KY TGV 試產線及 BOE HVM 2028 目標並列觀察，台灣面板廠的切入角度（方形玻璃 FOPLP）與中國廠商（TGV 玻璃基板）、韓國廠商（Absolics 核心基板）各有技術側重。
+**wiki 含義**：台灣面板廠（Innolux、AUO）切入方形玻璃 FOPLP 的行動，進一步強化「台灣面板廠作為 CoPoS/FOPLP 生態補充節點」的定位——不與 TSMC CoPoS 直接競爭，而是在成熟製程端提供先行量產驗證，為整個玻璃基板 FOPLP 供應鏈增加冗餘度。與 [[technologies/glass-substrate]] 中 TPK-KY TGV 試產線及 BOE HVM 2028 目標並列觀察，台灣面板廠的切入角度（方形玻璃 FOPLP）與中國廠商（TGV 玻璃基板）、韓國廠商（Absolics 核心基板）各有技術側重。
 
 ---
 
@@ -289,9 +289,9 @@ SCHMID（德國 PCB/IC 基板設備商）揭示：TSMC、Intel、Samsung 及其�
 - 2027 年：試產（trial production）
 - 2H28–2029 年：量產（HVM, High Volume Manufacturing）
 
-**wiki 含義**：TSMC 從租用/合作模式升級為直接收購 AUO 廠房，是 CoPoS 戰略由「研發路線圖」轉向「基礎設施確立」的關鍵信號——意味著 TSMC 對 2H28 量產時程具有足夠信心，願意提前鎖定廠房資產。龍潭 Phase 3 規劃一座獨立面板封裝廠，則是 CoPoS 製程基礎設施落地的最具體確認。本次更新同步強化 [[technologies/glass-substrate.md]]（AUO TGV 試產線投資）及 [[entities/tsmc.md]]（龍潭擴廠）的相關條目。
+**wiki 含義**：TSMC 從租用/合作模式升級為直接收購 AUO 廠房，是 CoPoS 戰略由「研發路線圖」轉向「基礎設施確立」的關鍵信號——意味著 TSMC 對 2H28 量產時程具有足夠信心，願意提前鎖定廠房資產。龍潭 Phase 3 規劃一座獨立面板封裝廠，則是 CoPoS 製程基礎設施落地的最具體確認。本次更新同步強化 [[technologies/glass-substrate]]（AUO TGV 試產線投資）及 [[entities/tsmc]]（龍潭擴廠）的相關條目。
 
-*→ Source: [[sources/2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan.md]]*
+*→ Source: [[sources/2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan]]*
 
 ---
 

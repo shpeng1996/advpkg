@@ -140,7 +140,7 @@
   - wiki/sources/2026-07-16_trendforce_tsmc-arizona-265b-ap-fabs.md（新建）
   - wiki/sources/2026-07-17_trendforce_tsmc-capex-60-64b-post-earnings.md（新建）
   - wiki/sources/2026-07-17_semieng_chip-week-147.md（新建）
-  - wiki/sources/2026-07-08_tomshardware_jedec-sphbm4-standard.md（新建）
+  - wiki/sources/2026-07-08_tomshardware_sphbm4-jesd330-4-organic-substrate.md（新建）
   - wiki/index.md（更新：302→307 頁；263→268 來源；新增 5 筆 source 條目）
 - 主要新知識：（1）TSMC Q2 2026 淨利 NT$706.56B，Arizona 投資升至 $265B 含 2 座 AP 廠，2026 CapEx 上修至 $60-64B；（2）JEDEC 發布 SPHBM4（JESD330-4）有機基板 HBM4 級標準，不需矽中介層，CXMT 首度確認參與 JEDEC 工作組；（3）印度 Semicon 2.0 $13.2B 含先進封裝；Tower Semi $4B 日本廠含 AP；Cadence AuraStack AI Super Agent 進入封裝 EDA；SEMI 設備 2026 $166B → 2028 $230B 預測
 
@@ -197,9 +197,9 @@
 - 成功抓取：3 篇（存入 raw/articles/ 3 篇）
 - 失敗/跳過：多篇 URL 已在 _collected_urls.txt（昨日 2026-07-05 已收錄）；SemiEngineering Chip Week #146 未發布；TrendForce 標籤頁僅有舊文章；CNBC domain restricted
 - 新增 wiki/sources/ 頁：3 頁
-  - wiki/sources/2026-06-05_semieng_intel-ectc2026-emib-cpo-glass-blog.md（新建）
+  - wiki/sources/2026-06-05_semieng_intel-ectc-2026-emib-t-cpo-glass.md（新建）
   - wiki/sources/2026-03-02_semieng_making-hybrid-bonding-better.md（新建）
-  - wiki/sources/2026-01-13_semieng_hbm4-microbumps-postponing-hybrid-bonding.md（新建）
+  - wiki/sources/2026-01-13_semiengineering_hbm4-microbumps.md（新建）
 - 更新 wiki 頁面：4 頁（共 4 頁）
   - wiki/technologies/hybrid-bonding.md（Yole 21% CAGR 設備子市場；Fouriers Scientific/NIST 研究；die distortion D2W；ultra-low-T D2W；face-to-face HB + back-to-back microbump 混合堆疊方案；updated→2026-07-06）
   - wiki/technologies/emib.md（Fluxless TCB 4× reticle die stack；updated→2026-07-06）
@@ -738,14 +738,14 @@
   - raw/articles/2025-12-22_trendforce_dnp-tgv-glass-substrate-2026.md
   - raw/articles/2025-01-28_3dincites_iftle-618-ucie-standard-vs-ucie3.md
   - raw/articles/2025-01-01_semieng_ucie-1-6t-io-chiplets-ai-datacenter.md
-  - raw/articles/2025-01-01_semieng_making-hybrid-bonding-better.md
+  - raw/articles/2026-03-02_semieng_making-hybrid-bonding-better.md
 - 新增 wiki 頁面：6 頁
   - wiki/technologies/glass-substrate.md（**全新頁面**）
   - wiki/sources/2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding.md
   - wiki/sources/2025-12-22_trendforce_dnp-tgv-glass-substrate-2026.md
   - wiki/sources/2025-01-28_3dincites_iftle-618-ucie-standard-vs-ucie3.md
   - wiki/sources/2025-01-01_semieng_ucie-1-6t-io-chiplets-ai-datacenter.md
-  - wiki/sources/2025-01-01_semieng_making-hybrid-bonding-better.md
+  - wiki/sources/2026-03-02_semieng_making-hybrid-bonding-better.md
 - 更新 wiki 頁面：4 頁
   - wiki/technologies/ucie.md（新增 UCIe-S vs UCIe-A 差異表、三層架構、競爭標準對照、1.6T 驅動力、MDI Alliance 補充；成員數 130 家確認）
   - wiki/technologies/hybrid-bonding.md（新增低溫製程材料路徑：奈米孿晶銅 200°C / Lam Research 奈米晶銅；濺鍍 SiCN <250°C；污染控制機制；玻璃基板上混合接合可靠性）
@@ -1482,7 +1482,7 @@
   2. `2026-06-09_trendforce_samsung-nvidia-hbm5-groq.md` — Samsung HBM4 >11.7 Gbps；HBM4E 4nm/14 Gbps/峰值 16 Gbps；Groq LP40 討論
   3. `2026-06-09_trendforce_skhynix-hanmi-tcbonder-hbm4.md` — SK Hynix TC Bonder 44.2 億韓元；M15X 2H26 啟動；2030 1M wsm
   4. `2026-06-09_trendforce_intel-foundry-google-tpu-nvidia-18a.md` — Google 3M+ EMIB TPU 2028；NVIDIA 18A MPW；Tesla 14A 首外部客戶
-  5. `2026-06-05_semieng_intel-emib-cpo-glass-ectc2026.md` — Intel ECTC 2026：EMIB-T 25µm/120mm/>9×；CPO 玻璃耦合器；TGV 嚴酷熱循環；D2W HB
+  5. `2026-06-05_semieng_intel-ectc-2026-emib-t-cpo-glass.md` — Intel ECTC 2026：EMIB-T 25µm/120mm/>9×；CPO 玻璃耦合器；TGV 嚴酷熱循環；D2W HB
 - 更新 wiki 頁面：9 頁
   - `entities/sk-hynix.md`：新增 2026-06-09（TC Bonder 訂單 + M15X 時程）、2026-06-08（Vera CPU 多平台夥伴關係）
   - `entities/samsung.md`：新增 2026-06-09（HBM4 >11.7 Gbps；HBM4E 4nm base die；Groq LP40 討論；SOCAMM2）
@@ -1672,7 +1672,7 @@
 3. `raw/papers/2026-06-21_arxiv_tiny-chiplets-esd-protection-signal-integrity.md`
 
 ### 新增 Wiki 來源頁
-- `wiki/sources/2026-06-21_tomshardware_tsmc-fab-expansion-roadmap.md`
+- `wiki/sources/2026-06-10_tomshardware_tsmc-fab-expansion-roadmap-n2-cowos-soic.md`
 - `wiki/sources/2026-06-21_tomshardware_intel-google-amazon-packaging-talks.md`
 - `wiki/sources/2026-06-21_arxiv_tiny-chiplets-esd-protection-signal-integrity.md`
 
@@ -3371,3 +3371,26 @@ an（2028–2029 量產世代）為 CoPoS 最可能的首批量產客戶——�
   2. **CoWoS 2028 絕對產能首次入庫，EMIB-T 比例可量化**：TSMC CoWoS 自 2026 年底 ~130K wpm 倍增至 2028 年底 260K wpm；Intel EMIB-T 2028 年 40–45K/月，約為 CoWoS 的 15–17%。這把先前僅有時程（2H27→2028→2029）的 EMIB-T 論述轉為可比數量級——足以構成實質第二供應來源，但不構成替代。
   3. **TGV 取得首份獨立學術背書，且瓶頸判定改寫**：A*STAR IME 橫向比較 TSV/TMV/eBar/預製 TGV，結論 TGV 在插損、間距、頻寬密度三項全勝，並指出 **>200 Gbps/lane 時垂直穿孔（而非水平 RDL）才是封裝電氣瓶頸**。此前 wiki 中 TGV 數據全數來自廠商自述。同時 400 Gbps/lane 被設為 3D FOWLP 光引擎設計目標，超前現行量產世代一至兩代。
 - 專利訊號：本輪五件專利呈現兩條清晰主線——（1）**HBM 堆疊內部架構重構**：Intel × 2 + Micron × 1，共同指向 base die 離開底層，動機為時序平衡與散熱；（2）**2.5D 中介層的成本與可靠度工程**：TSMC 揭示 LSI top-via 因膠帶殘留物導致金屬遷移／wire growth 的失效模式（意味封裝尺寸放大至 >14× 光罩時，LSI 可靠度是隱性限制條件），JCET 則以玻璃承載矽中介層降低成本。兩條主線合看，2026 年的 IP 競爭焦點已從「能不能堆起來」轉向「堆起來之後的時序、散熱與長期可靠度」。
+
+## [2026-09-15] query | 知識庫總整理（幫我總整理這個資料庫）
+- 查詢頁面：index.md, log.md, overview.md, analyses/2026-05-19_lint.md, technologies/cowos.md, technologies/hbm4.md, technologies/hybrid-bonding.md, concepts/advanced-packaging-market.md；另統計 raw/ 全目錄與 _collected_urls.txt
+- 已存檔：analyses/2026-09-15_knowledge-base-consolidation.md（規模與結構、來源分布、八條核心論述、關鍵量化儀表板、實體/技術/概念地圖、健康發現、後續建議）
+- 同步維護：
+  - overview.md 全面重寫（原停留在 2026-04-30，健康快照 2026-05-02 / 64 頁）：核心論述更新為 2026-09 版八條主線；實體/技術表擴充至 21/15 頁；知識空缺清單重列
+  - index.md 新增「分析報告 Analyses」區（4 頁，原先完全缺漏）；補登 14 篇漏登來源頁；修正末行截斷；計數校正（頁面 478→475、來源 430→429）
+- 健康發現（待處理）：_collected_urls.txt 重複 URL 16 組（05-19 時 2 組）；失效 wiki link 約 23 個（裸 slug、wiki/ 前綴、9 個 source slug 日期不符）；lint 建議的 Google/Apple/MediaTek/Absolics/GlobalFoundries/VIS 實體頁未建；概念層僅 3 頁
+- 建議新 collect 主題：Samsung X-Cube/I-Cube 一手資料、HBM4E/HBM5 獨立規格、JEDEC HBM 標準文件、專利軌擴至 Samsung/SK hynix/ASE/Amkor、ECTC/IEDM 2026 論文
+
+## [2026-09-15] lint | Lint 報告 + 去重 + 失效連結修復
+- 問題數：10 類（詳見 analyses/2026-09-15_lint.md）
+- 主要發現：
+  - 重複收錄：_collected_urls.txt 16 組重複 URL → 8 個重複 source 頁合併為 7 個主頁（重複頁改為 redirect 轉向頁，獨有內容以「合併補充」小節併入主頁）；registry 重複行以 `# DUP-OF-Lnn` 前綴標記保留
+  - 失效連結：23 個失效目標 + 40 個 `.md`/`wiki/` 前綴非標準連結 + 1 個未閉合連結（copackaged-optics.md）全部修復；26 個檔案改寫
+  - original_path 不一致：36 個 source 頁的 original_path 指向不存在的 raw 檔名，已改為實際路徑
+  - registry 補登：5 篇 raw（DigiTimes ×4、TrendForce HBM4E 樣品）未登錄，已追加；3 篇重複 raw 副本以註解標記
+  - Frontmatter：5 個 2026-06-29 source 頁缺 created/updated，已補
+  - 待 ingest：raw/articles/2026-07-16_trendforce_tsmc-capex-60-64b-q3-guidance.md、raw/patents/2026-09-14_CN224007096U_tsmc-logic-memory-package-interposer.md 無 source 頁
+  - 過時來源：68 個 source 頁原文日期早於 2026-03-15（>6 個月）
+- 通過項目：0 broken link、0 孤立頁（8 個 redirect 轉向頁除外，已列於 lint 頁）、index 完整
+- 建議新 collect 主題：Samsung X-Cube/I-Cube 一手資料、HBM4E/HBM5 獨立規格、JEDEC HBM 標準文件、專利軌擴至 Samsung/SK hynix/ASE/Amkor、ECTC/IEDM 2026 論文
+- 已存檔：analyses/2026-09-15_lint.md

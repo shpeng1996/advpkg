@@ -7,7 +7,7 @@ updated: 2026-05-05
 sources: [2026-04-07_trendforce_intel-emib-google-amazon-packaging]
 related: [wiki/entities/intel.md, wiki/technologies/emib.md, wiki/entities/tsmc.md, wiki/concepts/geopolitics-advanced-packaging.md]
 source_type: news
-original_path: raw/articles/2026-04-07_trendforce_intel-emib-google-amazon-packaging.md
+original_path: raw/articles/2026-04-07_trendforce_intel-emib-google-amazon.md
 url: https://www.trendforce.com/news/2026/04/07/news-intel-advanced-packaging-reportedly-gains-traction-vs-tsmc-as-google-amazon-weigh-emib-adoption/
 author: TrendForce
 publisher: TrendForce

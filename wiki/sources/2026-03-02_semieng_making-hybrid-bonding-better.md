@@ -3,7 +3,7 @@ title: "Making Hybrid Bonding Better / 混合接合製程改良深度解析"
 category: source
 tags: [hybrid-bonding, Cu-Cu, AMAT, EV-Group, Besi, Lam-Research, 3D-IC, nanotwinned-copper, SiCN, plasma-dicing]
 created: 2026-07-06
-updated: 2026-07-06
+updated: 2026-09-15
 sources: [2026-03-02_semieng_making-hybrid-bonding-better]
 source_type: article
 original_path: raw/articles/2026-03-02_semieng_making-hybrid-bonding-better.md
@@ -56,3 +56,11 @@ related: [wiki/technologies/hybrid-bonding.md, wiki/entities/ev-group.md, wiki/e
 
 - `wiki/technologies/hybrid-bonding.md`（NT 銅退火路線、電漿切割、AMAT 吞吐、Yole CAGR 更新）
 - `wiki/entities/besi.md`（Jonathan Abdilla 引述補充）
+
+## 合併補充 / Merged From Duplicate Collections（2026-09-15 dedupe）
+
+同一 URL 曾被重複抓取，重複頁 `sources/2026-03-02_semieng_making-hybrid-bonding-better` 已於 2026-09-15 合併至本頁；以下為重複頁中本頁原先未涵蓋的內容：
+
+- **Lam Research 奈米晶銅（nanocrystalline copper）路線**（技術總監 Chee Ping Lee）：奈米晶結構加速銅晶粒擴散，與奈米孿晶銅路徑並行降低接合溫度。
+- **污染控制作為第三大失效機制**：D2W 各步驟間的長佇列時間在接合界面引入水分，是主要失效機制之一（與應力、缺陷並列）。
+- 註：本文另一份重複收錄的 raw（`raw/articles/2026-03-02_semieng_making-hybrid-bonding-better.md`）將發布日標為 2025-01-01，疑為預設值；本頁採 2026-03-02。

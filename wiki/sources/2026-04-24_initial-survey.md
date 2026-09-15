@@ -67,13 +67,13 @@ related:
 
 ## 觸及的 Wiki 頁面 / Wiki Pages Touched
 
-- [[wiki/entities/tsmc.md]]（新建）
-- [[wiki/entities/intel.md]]（新建）
-- [[wiki/entities/samsung.md]]（新建）
-- [[wiki/entities/sk-hynix.md]]（新建）
-- [[wiki/technologies/cowos.md]]（新建）
-- [[wiki/technologies/soic.md]]（新建）
-- [[wiki/technologies/hybrid-bonding.md]]（新建）
-- [[wiki/technologies/hbm4.md]]（新建）
-- [[wiki/technologies/ucie.md]]（新建）
-- [[wiki/concepts/advanced-packaging-market.md]]（新建）
+- [[entities/tsmc]]（新建）
+- [[entities/intel]]（新建）
+- [[entities/samsung]]（新建）
+- [[entities/sk-hynix]]（新建）
+- [[technologies/cowos]]（新建）
+- [[technologies/soic]]（新建）
+- [[technologies/hybrid-bonding]]（新建）
+- [[technologies/hbm4]]（新建）
+- [[technologies/ucie]]（新建）
+- [[concepts/advanced-packaging-market]]（新建）

@@ -231,7 +231,7 @@ Unimicron 在 IMAPS JMEP 發表研究，確認玻璃核心基板的封裝互連�
 - **SKC 增資更新——₩1.2 兆（KRW 1.2T）**：SKC 宣布更大規模增資，其中 **KRW 589.6B** 直接注入子公司 Absolics，加速佐治亞廠產能爬坡（超越 2026-03 披露的 ₩1 兆目標）。
 - **Samsung Electro-Mechanics（SEMCO）世宗廠——Broadcom 評估中**：SEMCO 玻璃基板試驗線技術進展取得突破，**Broadcom** 目前正評估採用 SEMCO 玻璃基板用於高速網路 AI 晶片；三星電機垂直整合優勢（HDI 基板 + 玻璃 interposer）為主要差異點。
 - **LG Innotek 龜尾廠 + UTI 夥伴關係**：LG Innotek 龜尾（Gumi）試驗線推進中，並與 **UTI** 建立合作，整合封裝後段測試能力，提供一站式解決方案。
-- **TSMC C.C. Wei 2026-06-04 聲明**：台積電 CEO 魏哲家於股東大會明確表示 CoPoS 需 **2–3 年**才能達量產規模（= HVM 2028–2029），見 [[technologies/copos.md]]。
+- **TSMC C.C. Wei 2026-06-04 聲明**：台積電 CEO 魏哲家於股東大會明確表示 CoPoS 需 **2–3 年**才能達量產規模（= HVM 2028–2029），見 [[technologies/copos]]。
   *Source: TrendForce 2026-06-05*
 
 ---
@@ -635,7 +635,7 @@ TSMC 在 JPCA Show 2026（日本）首次公開玻璃基板 vs 有機基板量�
 
 ## ⭐ 2026-08-11 更新：AUO TWD 86.4 億投資 TGV/RDL 試產線
 
-*Source: TrendForce 2026-08-10 → [[sources/2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan.md]]*
+*Source: TrendForce 2026-08-10 → [[sources/2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan]]*
 
 **AUO（友達光電）** 宣布投入 **TWD 86.4 億元**建設以下試產線：
 - **TGV（Through-Glass Via）**：玻璃穿孔製程
@@ -644,7 +644,7 @@ TSMC 在 JPCA Show 2026（日本）首次公開玻璃基板 vs 有機基板量�
 
 此投資代表台灣面板廠在 Glass Substrate 領域從「大面積玻璃加工」跨向「半導體等級 TGV 製程」的技術升級。值得注意的是，AUO 同時是 TSMC CoPoS 製程合作方（TSMC 正洽購 AUO L7+L5C 廠房），AUO 的 TGV/RDL 投資可能服務於 CoPoS 生態系的材料/製程研發，而非獨立商業基板路線。
 
-**wiki 含義**：AUO 是本 wiki 追蹤的台灣面板廠（Innolux、AUO、TPK-KY）中首家明確公布 TGV+Glass Core 試產線投資金額者，為台灣 Glass Substrate 生態補充了具體的資本承諾數據點。與 [[entities/tsmc.md]] 龍潭擴廠及 [[technologies/copos.md]] 廠房收購更新互參。
+**wiki 含義**：AUO 是本 wiki 追蹤的台灣面板廠（Innolux、AUO、TPK-KY）中首家明確公布 TGV+Glass Core 試產線投資金額者，為台灣 Glass Substrate 生態補充了具體的資本承諾數據點。與 [[entities/tsmc]] 龍潭擴廠及 [[technologies/copos]] 廠房收購更新互參。
 
 ---
 
