@@ -1,9 +1,9 @@
 ---
 title: "SK Hynix"
 category: entity
-tags: [memory, HBM, HBM4, advanced-packaging]
+tags: [memory, HBM, HBM4, advanced-packaging, patent-signal]
 created: 2026-04-24
-updated: 2026-09-14
+updated: 2026-09-15
 sources: [2026-08-24_trendforce_hot-chips-2026-samsung-zhbm-skhynix-emib, 2026-08-19_trendforce_skhynix-silicon-valley-hbm-codesign-team, 2026-08-17_trendforce_samsung-skhynix-1h26-investment-nvidia-absent, 2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor, 2026-08-10_trendforce_skhynix-chongqing-sale-global-reset, 2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab, 2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h, 2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-04-22_trendforce_sk-hynix-pt7-cheongju, 2026-04-22_trendforce_sk-hynix-indiana-us-plant, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-03-03_trendforce_sk-hynix-hbm4-tight-gaps, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-05_trendforce_hbf-equipment-race-sandisk-hanmi, 2026-06-11_trendforce_skhynix-3x-wafer-2034-375layer-nand, 2026-06-20_techtimes_skhynix-hbm4e-12layer-samples, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-24_techtimes_sk-hynix-dethroned-samsung-ddr5-hbm4, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-06-25_techtimes_sk-hynix-nasdaq-adr-29b, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-22_trendforce_skhynix-q2-record-margin, 2026-07-21_trendforce_samsung-cxl-32-skhynix-imte, 2026-07-24_trendforce_skhynix-3d-stacked-dram-on-logic-on-device-ai, 2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b]
 related:
   - wiki/entities/samsung.md
@@ -426,3 +426,36 @@ SK hynix 持有 NVIDIA Vera Rubin HBM 訂單約 **70%**（Jan 2026 報導）；�
 - 驗證項目：功率供給路徑、熱行為、訊號完整性——達到 AI 加速器等級要求
 - **戰略意義**：SK hynix 在 Vera Rubin 供應份額預計 ~70%（UBS），其 HBM 認證結果直接決定 Intel EMIB 能否進入 NVIDIA 旗艦 AI GPU 供應鏈
 - 此驗證與「SK hynix 評估 Intel Foundry 作為 HBM4E base die 供應商」（2026-08-31 條目）形成雙向合作框架：**封裝端（HBM-on-EMIB）+ 製造端（base die 代工）**
+
+---
+
+## 專利訊號 / Patent Signals（2026-09-15 新增）
+
+> 專利為**前瞻訊號，非已出貨能力**。以下均為公開申請案，不代表產品時程。
+
+### 2026 上半年混合接合 IP 佈局：結構 + 製程雙軌
+
+EPO OPS 檢索（2026-09-15）顯示 SK hynix 在 2026 年 6–7 月連續公開三件與晶圓／晶片接合直接相關的申請案：
+
+| 公開號 | 公開日 | family | 請求標的 |
+|--------|--------|--------|----------|
+| **US20260198018A1** | 2026-07-09 | 100392609 | 介電接合層 + 貫穿該層之 connection contact plug + **TSV** 三者串接的記憶體堆疊 |
+| **US20260165219A1** | 2026-06-11 | 100037846 | **對連接墊表面施加負電荷**後於接觸狀態熱處理完成接合 |
+| **US20260173880A1** | 2026-06-18 | 100119831 | 接合介電層與上下 **guard ring** 的相對位置配置 |
+
+### 最重要的判讀：「延後」指量產導入，不是研發收縮
+
+本頁既有記錄：SK hynix 於 **Hot Chips 2026（2026-08）** 公開表示混合接合**不會用於 HBM4E，延後至 HBM5**，HBM4/HBM4E 繼續使用 MR-MUF microbump。
+
+但上述三案的公開日（2026-06-11 / 06-18 / 07-09）**均早於該發言**，申請日更早。公開宣告的是**產品導入時程**，專利圈的是**結構與製程權利**，兩者本就可以脫鉤。
+
+**結論**：SK hynix 的混合接合「延後」應理解為量產導入的延後，而非研發投入的收縮。本頁及 `technologies/hybrid-bonding.md` 既有敘述若被讀成後者，語氣需修正。這與本頁已記錄的 **2026-06-29 TheElec 混合接合設備訂單**、**2026-04-29 TrendForce 混合接合驗證**同屬一組佐證——SK hynix 在說「還不用」的同時，持續買機台、做驗證、圈專利。
+
+### 技術看點
+
+- **US20260165219A1（表面電荷輔助接合）** 是三案中最值得追蹤的一件。混合接合在 HBM 的核心障礙是**退火熱預算**——堆疊 12–16 層時，下層元件已承受多次熱循環。若以表面負電荷輔助可降低達成銅擴散所需的溫度／時間，鬆開的正是最硬的一項約束。
+- **US20260198018A1 與 US20260173880A1 為同一發明人（CHANG HEON YONG）**，顯示內部有專責接合結構的團隊持續產出。US20260173880A1 的 IPC 落在 H10B41/H10B43（3D NAND），代表該接合 IP 同時覆蓋 NAND 的 bonded-CMOS 架構，不限 DRAM/HBM。
+
+⚠ 三案均未揭露任何溫度、時間、pitch 或良率數字。
+
+- 引用：`wiki/sources/2026-07-09_skhynix_us20260198018a1-bonding-insulating-layer-tsv.md`、`wiki/sources/2026-06-11_skhynix_us20260165219a1-negative-charge-pad-bonding.md`、`wiki/sources/2026-06-18_skhynix_us20260173880a1-guard-ring-bonded-structures.md`

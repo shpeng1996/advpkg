@@ -1,9 +1,9 @@
 ---
 title: "玻璃基板 / Glass Core Substrate"
 category: technology
-tags: [glass-substrate, TGV, panel-level, FC-BGA, CoPoS, Absolics, DNP, Rapidus, warpage, SeWaRe, glass-interposer, BOE, ULCVD, non-embedding, Lens-Technology, TPK-KY, Innolux, AUO]
+tags: [glass-substrate, TGV, panel-level, FC-BGA, CoPoS, Absolics, DNP, Rapidus, warpage, SeWaRe, glass-interposer, BOE, ULCVD, non-embedding, Lens-Technology, TPK-KY, Innolux, AUO, LG-Chem, singulation, patent-signal]
 created: 2026-05-08
-updated: 2026-09-14
+updated: 2026-09-15
 sources: [2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-05-05_trendforce-insights_glass-substrate-development, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-05-29_3dincites_rapidus-2nm-advanced-packaging-ai-foundry, 2026-06-01_trendforce_intel-3dgs-india-glass-substrate, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-06-20_biggo_boe-glass-substrate-pilot, 2026-06-28_economy-ac_glass-substrate-global-race, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-08-18_trendforce_shinko-glass-substrate-22layer-glassem-delay]
 related:
   - wiki/technologies/copos.md
@@ -691,3 +691,46 @@ Intel 於 2026-04-07 公開之日本專利揭示：用於框架式玻璃核心�
 ⚠ 中國專利申請案，屬早期布局訊號；中國 OSAT 專利公開與實際產能落地之間通常存在數年落差。
 
 - 引用：`wiki/sources/2026-06-30_advphotonicsnexus_tgv-3d-fowlp-cpo-optical-engine.md`、`wiki/sources/2026-05-26_jcet_cn122094515a-hybrid-glass-silicon-interposer.md`
+
+---
+
+## 2026-09-15 collect 更新
+
+### 廠商全景與時程滑動總盤點（Tom's Hardware, 2026-08-27）
+
+**本頁此前缺少的定錨事實**：截至 2026-08，**尚無任何量產設計採用玻璃核心基板，亦無任何客戶正式確認採用**。本頁所記錄的全部時程皆為廠商自述。
+
+| 廠商 | 投資 / 規模 | 量產目標 | 狀態 |
+|------|-------------|----------|------|
+| **Absolics**（SKC） | $600M，Covington GA；**12,000 m²/年**（≈2–3 百萬顆 H100 尺寸封裝） | **2026 年底** | 封裝級可靠度評估中（台灣）；**原訂 1H24 → 已滑動逾兩年** |
+| **Samsung EM**（GLASEM JV） | ₩482.1B（$310M），平澤；Samsung EM 66% / Dongwoo Fine-Chem（Sumitomo Chemical）34% | **2H27** | 試產取樣自 2024 年底（世宗）；**成熟度評估 40/100** |
+| **Intel** | — | **~2030** | NEPCON 展出首個嵌入 EMIB die 之厚芯玻璃（78×77mm）；原宣稱 AMD 2025–26 採用未實現 |
+| **LG Innotek** | 龜尾廠 | 2027–2028 | 2024 交付原型 |
+| **TSMC** | 嘉義 CoPoS，310×310mm | 試產 2027 / 量產 2H28 | **玻璃整合「評估中，尚未承諾」**；據報在 NVIDIA 施壓下重啟研究 |
+| **Dai Nippon Printing** | 久喜廠，510×515mm | 全面量產 FY2028 | 2025-12 分階段投產；樣品 2026 年初 |
+| **Toppan** | 石川廠 | — | 試產線 2026-07 啟用 |
+| **Nippon Electric Glass** | GC Core 515×510mm / 1mm 厚 | — | 陶瓷強化 |
+| **Rapidus** | 600×600mm 研究 | 2020 年代末 | 供 2nm 計畫 |
+| **BOE** | — | — | 試產線取樣 |
+
+**面板尺寸並未收斂**：310×310（TSMC CoPoS）／510×515（DNP、CFMEE PLP 2000）／515×510（NEG）／600×600（Rapidus 研究）。這對設備與材料商是實質的規格風險——玻璃基板產業尚未出現 300mm 晶圓那樣的單一標準。
+
+**技術指標補充**：互連密度 10×（vs 有機）｜圖案變形 −50%｜CTE 3–10 ppm/°C（矽 2.6）｜翹曲 −50%｜面板面積利用率 >75%（300mm 晶圓約 50%）｜TGV 6µm @ AR>15:1｜堆疊玻璃 220 GHz @ 0.3 dB（Georgia Tech）｜邊緣應力塗層後 **95 → 49 MPa**
+
+**市場**：SEMI 初期量產 ~2028、2028–2040 CAGR **67.2%**；Yole 先進 IC 基板 $31B by 2030。
+
+⚠ **命名待確認**：本頁既有條目記為 **GlaSSEM**，Tom's Hardware 記為 **GLASEM**；投資額與 2H27 時程一致，判定為同一實體之拼寫差異，待一手來源確認。合資方精確化為 **Dongwoo Fine-Chem（Sumitomo Chemical 子公司）持股 34%**。
+
+### 專利訊號 / Patent Signals：LG Chem 玻璃芯基板切單法（CN122342272A, 2026-07-03）
+
+**製程序列**：玻璃芯基板表面形成金屬圖案 → 覆絕緣層 → 移除金屬圖案上方之絕緣層 → 形成保護層 → **移除金屬圖案** → 沿該位置切割。即以犧牲性金屬圖案**預先定義一條無絕緣層覆蓋的乾淨玻璃裸露切割道**。
+
+**三項意涵**：
+
+1. **良率瓶頸在邊緣，不在 TGV。** 本頁既有內容聚焦 TGV 成形（6µm @ AR>15:1）、翹曲、CTE、TGV 電性（220 GHz @ 0.3dB）。本案與既有的「邊緣應力塗層後 95 → 49 MPa」構成兩條獨立證據，指向同一結論：**玻璃基板的產業化關卡集中在邊緣與切單，而非穿孔本身**。直接切穿玻璃＋介電疊層會造成崩邊與微裂紋。
+2. **新申請人入場**：**LG Chem**（化學／材料）與既有名單中的 **LG Innotek**（基板零組件）是集團內兩家不同公司——同一集團在玻璃基板上雙線佈局。
+3. **IPC 分類的供應鏈意涵**：本案落在 **C03C15/00**（玻璃表面化學處理）與 **H05K**（印刷電路板），**完全不在 H01L／H10（半導體）**。玻璃基板的 IP 目前主要由材料與 PCB 體系持有，而非半導體體系——對「玻璃基板由誰主導、誰握議價權」的供應鏈論述是可引用的結構性觀察。
+
+⚠ 中國公開申請案，早期布局訊號；未取得對應之美／歐同族案。
+
+- 引用：`wiki/sources/2026-08-27_tomshardware_glass-substrate-roadmaps-examined.md`、`wiki/sources/2026-07-03_lgchem_cn122342272a-glass-core-substrate-singulation.md`

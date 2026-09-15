@@ -1,9 +1,9 @@
 ---
 title: "混合接合 / Hybrid Bonding"
 category: technology
-tags: [3D, hybrid-bonding, Cu-Cu, SoIC, ECTC, advanced-packaging, DRAM, COP, 4F2, Sn-damascene, damascene-interconnect, PFAS-free]
+tags: [3D, hybrid-bonding, Cu-Cu, SoIC, ECTC, advanced-packaging, DRAM, COP, 4F2, Sn-damascene, damascene-interconnect, PFAS-free, patent-signal, guard-ring, surface-activation]
 created: 2026-04-24
-updated: 2026-09-14
+updated: 2026-09-15
 sources: [2026-05-21_semiecosystem_ectc2026-cpo-hybridbonding-plp, 2026-04-24_initial-survey, 2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-03-01_3dincites_besi-packaging-power-shift, 2026-01-13_semiengineering_hbm4-microbumps, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-19_semieng_advanced-packaging-limits, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-03-27_3dincites_copper-grain-hybrid-bonding, 2026-03-02_semieng_making-hybrid-bonding-better, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2026-04-29_semiwiki_cea-leti-ectc2026-hybrid-bonding, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2024-02-09_semianalysis_hybrid-bonding-process-flow, 2026-05-19_semiconductor-digest_ev-group-ectc2026-hybrid-bonding, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-04-19_semiwiki_apple-m5-cucu-hybrid-bonding-shipped, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-18_imec_iii-v-chiplet-rf-laser-bonding, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-29_evgroup_ectc2026-hybrid-bonding-layer-transfer, 2026-06-29_thelec_skhynix-hybrid-bonding-equipment-order, 2026-06-05_semieng_intel-ectc-2026-emib-t-cpo-glass, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-14_trendforce_samsung-hbm-hiring-hybridbonding, 2026-07-16_semieng_fine-pitch-hb-high-volume, 2026-07-16_semieng_alt-materials-hybrid-bonding]
 related:
   - wiki/technologies/soic.md
@@ -879,3 +879,43 @@ Intel 於 2026-03-03 公開之中國專利揭示：採用**sub-1 µm 接觸間�
 ⚠ 中國專利申請案，早期布局訊號；中國 OSAT 專利公開與產能落地之間通常存在數年落差。
 
 - 引用：`wiki/sources/2026-05-26_jcet_cn122094515a-hybrid-glass-silicon-interposer.md`
+
+---
+
+## 2026-09-15 collect 更新
+
+### 專利訊號 / Patent Signals：SK hynix 的結構＋製程雙軌布局
+
+2026 年上半 SK hynix 連續公開三件與混合接合直接相關的申請案（EPO OPS，2026-09-15 收錄）：
+
+| 公開號 | 公開日 | 請求標的 | 對應 wiki 論點 |
+|--------|--------|----------|----------------|
+| **US20260198018A1** | 2026-07-09 | 介電接合層 + 貫穿接合層之 connection contact plug + TSV 串接 | 結構請求項；教科書定義之混合接合堆疊 |
+| **US20260165219A1** | 2026-06-11 | **對連接墊表面施加負電荷**後接觸熱處理完成接合 | 製程請求項；指向降低退火熱預算 |
+| **US20260173880A1** | 2026-06-18 | 接合介電層與上下 **guard ring** 的相對位置配置 | 長期可靠度；水氣／離子橫向路徑 |
+
+**判讀（需維持假設語氣）**：
+1. **「延後」指的是量產導入，不是研發收縮。** SK hynix 於 Hot Chips 2026（2026-08）公開表示混合接合不用於 HBM4E、延至 HBM5；但上述三案公開日均早於該發言，申請日更早。本頁既有敘述若被讀成「SK hynix 退出混合接合競賽」，語氣需修正。
+2. **良率機制新增第三軸。** 本頁既有框架為 >5µm「缺陷主導」／<2–3µm「應力主導」，兩者皆屬幾何與材料軸。US20260165219A1 引入**表面電化學狀態**軸——若負電荷輔助確可降低退火熱預算，對已堆疊 12–16 層、下層元件熱預算所剩無幾的 HBM 而言，鬆開的是最硬的一項約束。
+3. **接合介電層的兩難首次入庫。** 接合介電層必須連續才能形成氣密接合面，但連續延伸至切割道即成為水氣與可動離子的橫向擴散通道——正是 guard ring 原本要阻斷的路徑。US20260173880A1 即在處理此矛盾。此議題屬「接起來之後能撐多久」，與本頁既有的「能不能接起來」為不同層次。
+
+⚠ 三案皆為公開申請案，非已驗證製程或已量產能力，且均未揭露溫度、時間或良率數字。US20260198018A1 與 US20260173880A1 為同一發明人（CHANG HEON YONG），顯示內部有專責團隊持續產出。
+
+### Bond pitch 世代對照更新：Intel Foveros Direct 第二代目標 3µm
+
+TrendForce Insights（2026-09-10）揭露 **Intel Foveros Direct 第二代以 3µm bond pitch 為目標，已列入路線圖**——本 wiki 此前僅記錄第一代 Clearwater Forest 9µm（1H26 量產）。
+
+| 廠商 / 技術 | 量產 pitch | 下一世代目標 | 時程 |
+|-------------|-----------|--------------|------|
+| TSMC SoIC-X | 6 µm（2025） | 4.5 µm | 2029 |
+| **Intel Foveros Direct 3D** | 9 µm（1H26） | **3 µm（第二代）**⭐新 | **未揭露** |
+| AMAT / EVG（研究，ECTC 2026） | — | 450 nm @ 98% 良率 | 研究階段 |
+| Imec / EVG（研究，ECTC 2026） | — | 200 nm | 研究階段 |
+
+⚠ Intel 3µm 目標**未附時程**。不可據此推論 Intel 將早於 TSMC 達成更細 pitch——目標值已公開、時程未公開，兩者不可互換。
+
+### 材料層：PFAS 法規進入 RDL 介電材料路線圖
+
+Fujifilm 於 ECTC 2026 推出 ZEMATES 產品線的**無 PFAS PBO**，宣稱 **Dk < 3.1** 且不需改動既有產線（AtlasPCB, 2026-05-27）。意義在於 PFAS 替代不再以性能或產線折衷為前提——本頁 `PFAS-free` 標籤此前僅有零星提及，此為首個帶規格數字的條目。
+
+- 引用：`wiki/sources/2026-07-09_skhynix_us20260198018a1-bonding-insulating-layer-tsv.md`、`wiki/sources/2026-06-11_skhynix_us20260165219a1-negative-charge-pad-bonding.md`、`wiki/sources/2026-06-18_skhynix_us20260173880a1-guard-ring-bonded-structures.md`、`wiki/sources/2026-09-10_trendforce_hybrid-bonding-race-soic-foveros.md`、`wiki/sources/2026-05-27_atlaspcb_ectc2026-substrate-market-fujifilm-pbo.md`

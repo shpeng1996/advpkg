@@ -1,9 +1,9 @@
 ---
 title: "Rapidus / Rapidus Corporation"
 category: entity
-tags: [Rapidus, Japan, 2nm, advanced-packaging, AI-foundry, glass-substrate, chiplet, heterogeneous-integration]
+tags: [Rapidus, Japan, 2nm, advanced-packaging, AI-foundry, glass-substrate, chiplet, heterogeneous-integration, panel-level]
 created: 2026-06-01
-updated: 2026-08-22
+updated: 2026-09-15
 sources: [2026-05-29_3dincites_rapidus-2nm-advanced-packaging-ai-foundry, 2026-05-05_trendforce-insights_glass-substrate-development, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-08-21_trendforce_rapidus-panel-level-packaging-8reticle-600mm]
 related: [wiki/technologies/glass-substrate.md, wiki/concepts/geopolitics-advanced-packaging.md, wiki/concepts/advanced-packaging-market.md]
 ---
@@ -95,3 +95,26 @@ Rapidus 定位為「新型代工廠原型」——融合國家願景、全球協
 - **IBM Research**：2nm GAA 製程技術開發合作
 - **Absolics、DNP、Intel**：玻璃基板市場競爭者
 - **TSMC、Samsung、Intel Foundry**：代工市場潛在競爭者（差異化聚焦：速度/日本製造）
+
+---
+
+## 2026-09-15 collect 更新：600mm × 600mm 面板級封裝研究
+
+Tom's Hardware（2026-08-27）玻璃基板廠商盤點指出，Rapidus 正研究 **600mm × 600mm 面板級封裝**以支援其 2nm 計畫，可行性時點落在**2020 年代末**。
+
+**尺寸對照**——Rapidus 研究中的 600mm 是目前全產業公開規劃中最大的面板格式：
+
+| 陣營 | 面板尺寸 |
+|------|----------|
+| TSMC CoPoS | 310 × 310 mm |
+| DNP、CFMEE PLP 2000 | 510 × 515 mm |
+| Nippon Electric Glass GC Core | 515 × 510 mm |
+| **Rapidus（研究）** | **600 × 600 mm** |
+
+本頁既有記錄為「600mm 面板產出 49 件」與「8 倍光罩中介層路線圖（4×→6×→8×）」，此條目補上該面板尺寸在產業座標中的相對位置：**Rapidus 選擇了風險最高、也最能攤薄單位成本的路線**——面板越大，邊角翹曲與良率控制越難（參見 `technologies/foplp.md` 的 mode-aware ML 翹曲研究，指出邊角最難預測），但單位面板產出的封裝數最多。
+
+這與本頁既有的 **IIM 整合製造模式**及**封裝共址策略**一致：Rapidus 作為後進者，在既有玩家已佔據的規格點上競爭沒有勝算，只能在尚未標準化的面板格式上下注。
+
+⚠ 研究階段，非已承諾的產線規格；2020 年代末的可行性評估屬長期展望。
+
+- 引用：`wiki/sources/2026-08-27_tomshardware_glass-substrate-roadmaps-examined.md`

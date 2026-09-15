@@ -453,3 +453,18 @@
 # DUP-RAW（URL 已於上方登錄，此為第二份 raw 副本，無獨立 source 頁）: raw/articles/2026-04-24_trendforce_intel-malaysia-emib-update-2026.md → 同 L12
 # DUP-RAW（URL 已於上方登錄，此為第二份 raw 副本，無獨立 source 頁）: raw/articles/2026-04-24_trendforce_tsmc-copos-pilot-line-june-2026.md → 同 L11
 # DUP-RAW（URL 已於上方登錄，此為第二份 raw 副本，無獨立 source 頁）: raw/articles/2026-06-28_trendforce_cowos-supply-demand-gap-narrowing.md → 同 L222
+2026-09-15 | https://www.tomshardware.com/tech-industry/manufacturing/glass-substrate-roadmap-examined | raw/articles/2026-09-15_tomshardware_glass-substrate-roadmaps-absolics-glasem.md | Glass substrate roadmaps: Absolics final qual, slippage
+2026-09-15 | https://insights.trendforce.com/p/advanced-packaging-hybrid-bonding | raw/articles/2026-09-15_trendforce_hybrid-bonding-race-soic-foveros-pitch.md | Hybrid bonding race: SoIC 6um, Foveros 9um->3um gen2
+# DUP-OF: https://advancedpackaging.news/article/124287/ECTC_2026_spotlights_advanced_packaging = 同一文章之另一 URL 形式，已於 2026-06-25 以 https://advancedpackaging.news/2026/05/26/... 收錄；2026-09-15 collect 偵測後撤回，raw 副本移至 raw/_to_delete/
+2026-09-15 | https://www.atlaspcb.com/news/news-ectc-2026-ai-packaging-record-papers-substrates/ | raw/articles/2026-09-15_atlaspcb_ectc2026-450nm-hybrid-bonding-substrate-market.md | ECTC 2026: 450 papers; AMAT+EVG 450nm 98% yield
+2026-09-15 | https://www.atlaspcb.com/news/news-tsmc-copos-cowos-advanced-packaging-capacity-2026/ | raw/articles/2026-09-15_atlaspcb_tsmc-copos-exclusivity-cowos-capacity-2027.md | TSMC CoPoS exclusivity; CoWoS 170K wpm 2027
+2026-09-15 | EPO:100392609:US20260198018A1 | raw/patents/2026-09-15_US20260198018A1_skhynix-hbm-bonding-insulating-layer-tsv.md | SK hynix: bonding insulating layer + TSV memory stack
+2026-09-15 | EPO:100037846:US20260165219A1 | raw/patents/2026-09-15_US20260165219A1_skhynix-negative-charge-pad-bonding.md | SK hynix: negative-charge pad activation for bonding
+2026-09-15 | EPO:100119831:US20260173880A1 | raw/patents/2026-09-15_US20260173880A1_skhynix-guard-ring-bonded-structures.md | SK hynix: guard ring for bonded circuit structures
+2026-09-15 | EPO:100647165:US20260223669A1 | raw/patents/2026-09-15_US20260223669A1_amkor-tim-flow-layer-sidewall-lid.md | Amkor: TIM-flow layer, sidewall TIM, lid thermal path
+2026-09-15 | EPO:99667689:CN122342272A | raw/patents/2026-09-15_CN122342272A_lgchem-glass-core-substrate-singulation.md | LG Chem: glass core substrate singulation method
+2026-09-15 | https://doi.org/10.1063/5.0336912 | raw/papers/2026-09-15_openalex_fowlp-rdl-interface-delamination-dcb.md | FOWLP RDL interface delamination; DCB toughness -49.6%
+2026-09-15 | https://doi.org/10.3390/mi17091039 | raw/papers/2026-09-15_openalex_advanced-packaging-architectures-comparative-review.md | 2D/2.5D/3D comparative review: interposer/bridge/fan-out
+2026-09-15 | https://doi.org/10.3390/electronics15173800 | raw/papers/2026-09-15_openalex_hbm-reliability-bandwidth-k-out-of-n.md | HBM reliability+bandwidth closed-form k-out-of-N model
+2026-09-15 | https://doi.org/10.1108/mi-11-2025-0233 | raw/papers/2026-09-15_openalex_tsv-rdl-electron-irradiation-geant4-comsol.md | TSV-RDL under 1MeV electron irradiation; Geant4-COMSOL
+2026-09-15 | https://doi.org/10.1109/tc.2026.3703497 | raw/papers/2026-09-15_openalex_diecare-diekill-correct-ecc-hbm.md | DieCARE: die-level ECC for HBM without extra dies

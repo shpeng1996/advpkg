@@ -3,7 +3,7 @@ title: "SoIC — System on Integrated Chips"
 category: technology
 tags: [3D, SoIC, hybrid-bonding, TSMC, AI, NVIDIA, Feynman]
 created: 2026-04-24
-updated: 2026-09-07
+updated: 2026-09-15
 sources: [2026-04-24_initial-survey, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-03-18_trendforce_nvidia-rubin-feynman-soic, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-23_trendforce_tsmc-roadmap-a12-a13-no-high-na-euv, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-06-21_arxiv_tiny-chiplets-esd-protection-signal-integrity, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-06-10_tomshardware_tsmc-fab-expansion-roadmap-n2-cowos-soic]
 related:
   - wiki/entities/tsmc.md
@@ -165,3 +165,17 @@ SoIC 常與 CoWoS 組合：邏輯晶片先透過 SoIC 3D 堆疊，再整合於 C
 **與 COUPE 整合**：
 - SoIC 接合技術用於整合 EIC + PIC（COUPE 平台基礎）
 - 光電共封裝路線依賴 SoIC 的精確接合能力
+
+---
+
+## 2026-09-15 collect 更新：SoIC vs CoWoS 效益比首次量化入庫
+
+TrendForce Insights（2026-09-10）引述 TSMC 說法：**SoIC 相對 CoWoS 達成互連密度 56×、能效 5×**。
+
+本頁此前僅記錄 SoIC 的**絕對值**（6µm 量產 pitch、2029 年 4.5µm、A14-to-A14 1.8× I/O 密度），缺少與 2.5D 路線的直接效益對照。此數據補上了「為何要從 2.5D 走向 3D」的量化依據。
+
+同時佐證本頁既有時程：SoIC 6µm 於 2025 年量產、2029 年推進至 4.5µm——TrendForce 之敘述與本頁一致，構成獨立佐證。
+
+⚠ **56× / 5× 為 TSMC 自述值，且未說明比較基準**（何種 CoWoS 世代、何種 pitch、何種工作負載）。引用時必須標註為廠商宣稱值，不可作為獨立驗證數據使用。
+
+- 引用：`wiki/sources/2026-09-10_trendforce_hybrid-bonding-race-soic-foveros.md`

@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
 **更新時間 Updated**：2026-09-15
-**頁面總數 Total Pages**：476
-**原始來源數 Sources**：429（含 8 個合併轉向頁）
+**頁面總數 Total Pages**：490
+**原始來源數 Sources**：443（含 8 個合併轉向頁）
 
 ---
 
@@ -87,6 +87,20 @@
 > - [[sources/2023-07-05_semianalysis_ai-capacity-cowos-hbm]] — SemiAnalysis：AI 產能限制——CoWoS 與 HBM（2023-07）
 > - [[sources/2022-11-01_semianalysis_packaging-gets-blurry]] — SemiAnalysis：The Future of Packaging Gets Blurry（2022-11）
 
+- [[sources/2026-09-10_trendforce_hybrid-bonding-race-soic-foveros]] — TrendForce Insights：混合接合競賽盤點；**Intel Foveros Direct 第二代目標 3µm（時程未揭露）**；SoIC 6µm 量產→4.5µm(2029)；**SoIC vs CoWoS 互連密度 56× / 能效 5×（TSMC 自述）**；GlobalFoundries SCALE 平台（2026-09-10）⭐新增
+- [[sources/2026-09-08_nanopreceng_fowlp-rdl-interface-delamination]] — Delft + 武漢大學：FOWLP 之 RDL 異質介面分層；DCB 試驗；**Cu/LSF60 能量釋放率隨溫度上升 −49.6%**；熱-機械耦合量化錨點（2026-09-08）⭐新增
+- [[sources/2026-08-30_micromachines_advanced-packaging-architectures-review]] — Shenzhen Univ：2D/2.5D/3D 架構橫向比較綜述；矽中介層／局部矽橋／RDL 扇出／垂直堆疊四分類；七維度交叉檢核骨架（2026-08-30）⭐新增
+- [[sources/2026-08-27_tomshardware_glass-substrate-roadmaps-examined]] — Tom's Hardware：玻璃基板十一家廠商全景與時程滑動；**迄今無任何量產設計採用、無客戶正式確認**；Absolics 2026 年底／GLASEM 2H27（成熟度 40/100）／Intel ~2030；面板尺寸 310–600mm 未收斂（2026-08-27）⭐新增
+- [[sources/2026-08-24_electronics_hbm-reliability-bandwidth-k-out-of-n]] — 中原大學 + 清華大學：HBM 可靠度與頻寬閉式評估；**TSV bundle 建模為 k-out-of-N 閾值子系統**；可靠度與有效頻寬統一框架（2026-08-24）⭐新增
+- [[sources/2026-08-11_microelectronicsint_tsv-rdl-electron-irradiation]] — AMD Canada + 國家空間科學中心：**1 MeV 電子輻照下 TSV-RDL 電-熱-機械耦合劣化**；Geant4-COMSOL 框架；wiki 全新的輻射可靠度維度（2026-08-11）⭐新增
+- [[sources/2026-07-30_amkor_us20260223669a1-tim-flow-layer-sidewall-lid]] — **專利訊號** Amkor：TIM-flow 層 + 側壁 TIM + lid footprint 外無 TIM；封裝**內部**散熱工程；與 McCann 兩相冷卻預判形成雙軌策略（2026-07-30）⭐新增
+- [[sources/2026-07-09_skhynix_us20260198018a1-bonding-insulating-layer-tsv]] — **專利訊號** SK hynix：介電接合層 + 貫穿接點 + TSV 串接之記憶體堆疊；公開日早於 Hot Chips「HB 延至 HBM5」發言（2026-07-09）⭐新增
+- [[sources/2026-07-03_lgchem_cn122342272a-glass-core-substrate-singulation]] — **專利訊號** LG Chem：玻璃芯基板切單法（犧牲性金屬圖案定義切割道）；**玻璃良率瓶頸在邊緣而非 TGV**；IPC 落在 C03C/H05K 而非半導體體系（2026-07-03）⭐新增
+- [[sources/2026-06-18_skhynix_us20260173880a1-guard-ring-bonded-structures]] — **專利訊號** SK hynix：接合介電層與上下 guard ring 配置；接合層作為水氣／離子橫向擴散通道的兩難（2026-06-18）⭐新增
+- [[sources/2026-06-15_ieeetc_diecare-die-level-ecc-hbm]] — Samsung + 成均館大學（IEEE TC）：**DieCARE——不需額外 die 的 HBM die 級容錯 ECC**；跨 die 分散 ECC 位元；呼應 775µm 高度天花板約束（2026-06-15）⭐新增
+- [[sources/2026-06-11_skhynix_us20260165219a1-negative-charge-pad-bonding]] — **專利訊號** SK hynix：**連接墊表面施加負電荷後熱處理接合**；混合接合良率的第三軸（表面電化學狀態）；指向降低退火熱預算（2026-06-11）⭐新增
+- [[sources/2026-05-27_atlaspcb_ectc2026-substrate-market-fujifilm-pbo]] — AtlasPCB：ECTC 2026 約 450 篇論文；**Fujifilm 無 PFAS PBO（Dk<3.1，免產線改動）**；基板市場 $14B(2024)→$22B(2027)（2026-05-27）⭐新增
+- [[sources/2026-05-10_atlaspcb_tsmc-copos-exclusivity-cowos-170k-2027]] — AtlasPCB：**CoWoS 2027 ~170K wpm（補上時間序列中間點；2026→27 僅 +25–30%）**；CoPoS 供應鏈保密控制／護城河定位（2026-05-10）⭐新增
 - [[sources/2026-09-14_trendforce_tsmc-cowos-double-2028-capacity]] — TrendForce：**TSMC CoWoS 產能 130K→260K wpm（2026 年底→2028 年底，倍增）；Intel EMIB-T 2027 15–20K/月→2028 40–45K/月（約 CoWoS 的 15–17%）；2nm 90K→110K wpm；3nm 180K→210K wpm；2026 CapEx $60–64B（70–80% 先進製程）**（2026-09-14）⭐新增
 - [[sources/2026-09-14_semieng_paper-roundup-chipsmore-reach]] — SemiEng 論文彙整 Sept.14：**NIST underfill 固化/熱耐久建模；NUS CHIPSMORE compute-in-interconnect chiplet；RPI+IBM REACH 控制器端長跨距 HBM ECC；NYCU+TSMC EUV 光罩**（2026-09-14）⭐新增
 - [[sources/2026-09-10_intel_us20260271782a1-hbm-base-die-mid-stack]] — [專利] Intel HBM base die 移至**堆疊中段**（時序平衡）或頂層（散熱）；TSV 貫穿 DRAM die（US20260271782A1, 2026-09-10）⭐新增

@@ -1,9 +1,9 @@
 ---
 title: "先進封裝市場 / Advanced Packaging Market"
 category: concept
-tags: [market, forecast, CAGR, supply-chain, HBM, chiplet, geopolitics, equipment, SIA, Omdia, Yole, WFE]
+tags: [market, forecast, CAGR, supply-chain, HBM, chiplet, geopolitics, equipment, SIA, Omdia, Yole, WFE, substrate-market, framework]
 created: 2026-04-24
-updated: 2026-09-13
+updated: 2026-09-15
 sources: [2026-07-31_semieng_chip-week-149, 2026-04-24_initial-survey, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2026-01-23_trendforce_chip-tools-tel-asml, 2026-03-05_trendforce_intel-emib-billions, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2025-12-18_trendforce_micron-capex-hbm4, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2025-05-13_trendforce_top10-osat-2024, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-04-16_ontoinnovation_dragonfly-g5-qualified, 2026-06-23_communicationstoday_foplp-glass-substrate-market-8b-2030, 2026-06-29_trendforce_china-osat-tongfu-jcet-investment, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-26_semieng_chip-week-144, 2026-07-01_trendforce_ase-price-hike-20pct, 2026-07-04_semieng_chip-week-145, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-07-03_trendforce_anthropic-samsung-advanced-packaging, 2026-05-08_trendforce_ajinomoto-abf-1b-land-buy-2032-margins, 2026-07-24_semieng_chip-week-148]
 related:
   - wiki/entities/tsmc.md
@@ -676,3 +676,41 @@ Applied Materials 於 Q3 FY2026 財報（約 2026-08-14 公布）**將全年先�
 - 封裝製程相關技術（ALE、電漿蝕刻、CVD）為主要 R&D 方向之一
 
 **市場意義**：AMAT 從 >50% → >70% 的單季上調（+20 個百分點）顯示 AI 供應鏈對封裝設備的需求加速度超出預期，與 BCC Research $38.6B→$87.6B（CAGR 14.8%）的市場成長預測相互印證。
+
+---
+
+## 2026-09-15 collect 更新
+
+### 基板細分市場：成長率顯著高於先進封裝整體
+
+| 市場 | 規模 | CAGR | 來源 |
+|------|------|------|------|
+| 先進封裝整體 | $43–52B（2025） | **9–10%** | 本頁既有 |
+| **封裝基板（substrate）** | **$14B（2024）→ $22B（2027）** | **~16%** ⭐新 | AtlasPCB, 2026-05-27 |
+| 先進 IC 基板 | $31B by 2030 | — | Yole（經 Tom's Hardware, 2026-08-27） |
+| 玻璃核心基板 | 初期量產 ~2028 | **67.2%（2028–2040）** | SEMI（經 Tom's Hardware, 2026-08-27） |
+
+**判讀**：基板細分市場的成長率（~16%）明顯高於先進封裝整體（9–10%），與本 wiki 已反覆記錄的「**ABF 基板成 AI 第二瓶頸**」論述一致——瓶頸環節的價值捕獲率高於產業平均。玻璃核心基板的 67.2% CAGR 則屬於自極低基期起算，且建立在「2028 年真能量產」的前提上；而 Tom's Hardware 同期盤點明確指出**迄今無任何量產設計採用、無任何客戶正式確認**，此預測應標註為高度不確定。
+
+⚠ AtlasPCB 為二手彙整型媒體；$14B→$22B 一組數字尚待一手市調機構佐證。
+
+### 學術界的四分類框架：技術頁交叉檢核骨架
+
+*Shenzhen University, Micromachines, 2026-08-30*
+
+一份獨立第三方綜述，以同一組維度並列比較四類整合技術：
+
+| 論文分類 | 本 wiki 對應頁 |
+|----------|----------------|
+| 矽中介層（silicon interposer） | `technologies/cowos.md` |
+| 局部矽橋（localized silicon bridge） | `technologies/emib.md` |
+| RDL 扇出平台 | `technologies/foplp.md`、`technologies/info-wmcm.md` |
+| 垂直晶片堆疊 | `technologies/soic.md`、`technologies/foveros.md` |
+
+比較維度：**互連幾何 / 頻寬 / 能效 / 熱與機械約束 / 製造成熟度 / 成本 / 主要失效機制**（七項）。
+
+**為何收錄**：2026-09-15 知識庫總整理報告已指出，本 wiki 技術頁的數據絕大多數來自各廠商自述（TSMC 的 CoWoS/SoIC 數字、Intel 的 EMIB/Foveros 數字），彼此比較基準不一致。這七個維度可作為**交叉檢核骨架**——任一技術頁若在某維度缺漏，即標示為待補。
+
+⚠ MDPI 期刊綜述，非一手實驗或量產資料。作為**框架**引用適當；作為**具體數字**來源則應優先採用廠商一手資料或 ECTC/IEDM 論文。
+
+- 引用：`wiki/sources/2026-05-27_atlaspcb_ectc2026-substrate-market-fujifilm-pbo.md`、`wiki/sources/2026-08-30_micromachines_advanced-packaging-architectures-review.md`、`wiki/sources/2026-08-27_tomshardware_glass-substrate-roadmaps-examined.md`

@@ -3,7 +3,7 @@ title: "英特爾 / Intel"
 category: entity
 tags: [IDM, advanced-packaging, EMIB, Foveros, Intel18A, Clearwater-Forest, Foveros-Direct, glass-substrate, 14A, High-NA-EUV, silicon-capacitors, Google-TPU-v8e, Q2-2026-earnings, Tesla-14A, HLFF, RAMP-C, Secure-Enclave, Rio-Rancho]
 created: 2026-04-24
-updated: 2026-09-14
+updated: 2026-09-15
 sources: [2026-08-24_intel-newsroom_hot-chips-2026-diamond-rapids-foveros-ucie, 2026-04-24_initial-survey, 2026-07-20_trendforce_tsmc-265b-arizona-intel-novalake, 2026-03-18_trendforce_intel-emib-malaysia, 2026-03-03_trendforce_intel-clearwater-forest, 2026-03-05_trendforce_intel-emib-billions, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-04-20_trendforce_intel-foundry-14a-equipment, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-01_semianalysis_cpus-back-datacenter-2026, 2026-04-10_3dincites_intel-gan-chiplet, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks, 2026-06-21_convergedigest_intel-emib-t-multi-die-packaging, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap, 2026-07-01_trendforce_terafab-intel-veteran-hire, 2026-04-07_tomshardware_intel-joins-terafab, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-01-30_tomshardware_intel-ai-chip-test-vehicle-emib-t, 2026-07-14_trendforce_intel-ireland-5b-intel3-europe, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-04_semieng_from-blueprint-intel-hlff, 2026-07-31_semieng_chip-week-149, 2026-08-13_trendforce_intel-memory-reentry-xbm-zam-saimemory]
 related:
   - wiki/entities/tsmc.md
@@ -414,3 +414,28 @@ Intel 在 2026 年集中布局：**混合接合（<4 µm → sub-1 µm 研究）
 ⚠ 專利為前瞻訊號；截至 2026-09 無任何量產 HBM 採用非底層 base die 架構。
 
 - 引用：`wiki/sources/2026-09-10_intel_us20260271782a1-hbm-base-die-mid-stack.md`、`wiki/sources/2026-09-10_intel_us20260271308a1-hbm-base-die-thermal.md`
+
+---
+
+## 2026-09-15 collect 更新
+
+### 玻璃核心基板：商業化時程推遲至 ~2030
+
+Tom's Hardware（2026-08-27）廠商盤點：
+
+- **商業化時程 ~2030**——較本頁既有敘述明顯後推。
+- **原宣稱的 AMD 2025–2026 採用未實現**。
+- 進度亮點：2025 年初已展示玻璃基板上運行的 Windows 系統；1 月 NEPCON 展出**首個嵌入 EMIB die 的厚芯玻璃基板（78mm × 77mm）**——這是玻璃與 Intel 自家橋接技術結合的具體實作。
+- 與 **Lens Technology**（蓋板玻璃廠）進行早期合作洽談。
+
+**判讀**：Intel 曾是玻璃基板最積極的公開倡議者之一，其時程自 2025–26 推遲至 ~2030，與 Absolics（1H24 → 2026 年底）的滑動屬同一現象。嵌入 EMIB die 的厚芯玻璃展示顯示技術路徑清晰，但**距量產設計仍有距離——全產業迄今無任何量產設計採用玻璃核心基板**。
+
+### 混合接合：Foveros Direct 第二代目標 3µm
+
+TrendForce Insights（2026-09-10）：**Foveros Direct 第二代以 3µm bond pitch 為目標，已列入路線圖**。本頁既有記錄為第一代 Clearwater Forest（Xeon 6+）於 1H26 以 **9µm** 量產。
+
+3µm 代表約 3× pitch 微縮（面積密度約 9×）。與 TSMC SoIC 路線圖（6µm 量產 → 4.5µm @2029）相比，Intel 在**量產 pitch 上落後**、在**公開的下一世代目標值上更激進**。
+
+⚠ **Intel 未公開 3µm 的時程**，不可據此推論 Intel 將先於 TSMC 達成更細 pitch。
+
+- 引用：`wiki/sources/2026-08-27_tomshardware_glass-substrate-roadmaps-examined.md`、`wiki/sources/2026-09-10_trendforce_hybrid-bonding-race-soic-foveros.md`

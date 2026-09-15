@@ -1,9 +1,9 @@
 ---
 title: "FOPLP — 扇出面板級封裝 / Fan-Out Panel-Level Packaging"
 category: technology
-tags: [fan-out, panel-level, TSMC, Samsung, ASE, Powertech, Innolux, CoPoS, InFO, cost-reduction]
+tags: [fan-out, panel-level, TSMC, Samsung, ASE, Powertech, Innolux, CoPoS, InFO, cost-reduction, delamination, DCB, CTE]
 created: 2026-05-03
-updated: 2026-09-14
+updated: 2026-09-15
 sources: [2026-07-31_trendforce_ase-capex-record-10-5b-leap-foplp, 2025-09-12_trendforce_foplp-competitive-2025, 2026-04-13_trendforce_copos-pilot, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-21_3dincites_acm-wlp-plp-process-trends, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-15_digitimes_manz-310mm-foplp-ecd-equipment, 2026-06-13_digitimes_linkotech-foplp-rollout-traction, 2026-06-20_prnewswire_manz-asia-310mm-ecd, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_digitimes_tsmc-foplp-timeline-skepticism, 2026-07-06_trendforce_cfmee-plp2000-china-first-plp, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan]
 related:
   - wiki/technologies/copos.md
@@ -306,3 +306,23 @@ Powertech 正式宣布 **NT$70 億（~US$2.2 億）** FOPLP 投資計畫，以�
 ⚠ 兩篇皆為模擬／代理模型研究；FO-Strip 的翹曲項有 shadow Moiré 實測交叉驗證，FO-PLP ML 的訓練資料則來自已驗證之有限元模型而非實測面板。
 
 - 引用：`wiki/sources/2026-08-18_materials_foplp-warpage-mode-aware-ml.md`、`wiki/sources/2026-09-11_mssp_fo-strip-die-last-5um-rdl.md`
+
+---
+
+## 2026-09-15 collect 更新：RDL 介面分層——翹曲之外的第二條失效路徑
+
+*Delft University of Technology + 武漢大學等，Nanotechnology and Precision Engineering, 2026-09-08*
+
+- RDL 內部的**介面分層**由 CTE 失配驅動，是 FOWLP 可靠度的關鍵威脅。
+- 以**雙懸臂梁（DCB）試驗**系統量測各介面斷裂韌性。
+- **斷裂韌性隨溫度上升顯著下降**；具體量化：**Cu/LSF60 介面能量釋放率隨環境溫度上升下降 49.6%**。
+
+**與本頁既有論述的關係**：本頁的扇出可靠度內容目前以**翹曲**為主軸——2026-08-18 收錄的 mode-aware ML 翹曲預測（指出邊角最難預測）、2026-09-11 收錄的 FO-Strip die-last 5µm RDL 與 shadow Moiré 量測。
+
+翹曲是**全域變形**，介面分層是**局部失效**。兩者是同一 CTE 失配問題在不同尺度的表現，本頁此前只記錄了前者。
+
+**最重要的推論**：**−49.6%** 的溫度依賴意味，在 AI 封裝持續走高的接面溫度下（本 wiki 已記錄封裝功耗 600W → 4,100W 的路徑），RDL 介面的可靠度餘裕衰減幅度接近一半。這使「散熱不足」與「機械可靠度」從兩個可分別處理的問題，變成**一個耦合問題**——散熱設計的失敗會直接以介面分層的形式顯現。
+
+⚠ 試片與模擬層級研究，非量產資料。LSF60 為特定介電材料，結論不可直接外推至其他 RDL 材料系統。
+
+- 引用：`wiki/sources/2026-09-08_nanopreceng_fowlp-rdl-interface-delamination.md`

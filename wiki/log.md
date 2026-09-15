@@ -3394,3 +3394,51 @@ an（2028–2029 量產世代）為 CoPoS 最可能的首批量產客戶——�
 - 通過項目：0 broken link、0 孤立頁（8 個 redirect 轉向頁除外，已列於 lint 頁）、index 完整
 - 建議新 collect 主題：Samsung X-Cube/I-Cube 一手資料、HBM4E/HBM5 獨立規格、JEDEC HBM 標準文件、專利軌擴至 Samsung/SK hynix/ASE/Amkor、ECTC/IEDM 2026 論文
 - 已存檔：analyses/2026-09-15_lint.md
+
+## [2026-09-15] collect | 每日自動蒐集 — 先進封裝最新動態
+- 搜尋查詢數：新聞 7 組 / 專利 5 組 / 論文 3 組
+- 成功抓取：14 篇（articles/ 4, patents/ 5, papers/ 5, reports/ 0）
+- 失敗/跳過：4 篇（已收錄 1、過時 1、低相關/離題 2）
+  - **已收錄（重要）**：`advancedpackaging.news` ECTC 2026 一文已抓取並寫檔，ingest 前比對發現與 2026-06-25 收錄之同一文章重複——該站同一文章有兩種 URL 形式（`/2026/05/26/slug/` 與 `/article/124287/Slug`），純 URL 比對無法攔截。raw 副本已移至 `raw/_to_delete/`，registry 改為 `# DUP-OF` 註記
+  - 過時：Tom's Hardware「HBM roadmaps for Micron, Samsung, and SK hynix」（2025-08-06，逾一年且 wiki 已有更新資料）
+  - 離題：OpenAlex 回傳之 CT 影像重建、憲法學、德文資料庫綜述等（已由半導體關鍵詞過濾器攔下）
+- 資料源狀態：WebSearch ACTIVE ✓ | EPO OPS ACTIVE ✓ | OpenAlex ACTIVE ✓
+- OPS 呼叫數：1 auth + 5 search = 6（配額上限 10，符合）
+- 新增 wiki 頁面：14 頁（全為 source 摘要頁）
+  - `wiki/sources/2026-09-10_trendforce_hybrid-bonding-race-soic-foveros.md`
+  - `wiki/sources/2026-09-08_nanopreceng_fowlp-rdl-interface-delamination.md`
+  - `wiki/sources/2026-08-30_micromachines_advanced-packaging-architectures-review.md`
+  - `wiki/sources/2026-08-27_tomshardware_glass-substrate-roadmaps-examined.md`
+  - `wiki/sources/2026-08-24_electronics_hbm-reliability-bandwidth-k-out-of-n.md`
+  - `wiki/sources/2026-08-11_microelectronicsint_tsv-rdl-electron-irradiation.md`
+  - `wiki/sources/2026-07-30_amkor_us20260223669a1-tim-flow-layer-sidewall-lid.md`
+  - `wiki/sources/2026-07-09_skhynix_us20260198018a1-bonding-insulating-layer-tsv.md`
+  - `wiki/sources/2026-07-03_lgchem_cn122342272a-glass-core-substrate-singulation.md`
+  - `wiki/sources/2026-06-18_skhynix_us20260173880a1-guard-ring-bonded-structures.md`
+  - `wiki/sources/2026-06-15_ieeetc_diecare-die-level-ecc-hbm.md`
+  - `wiki/sources/2026-06-11_skhynix_us20260165219a1-negative-charge-pad-bonding.md`
+  - `wiki/sources/2026-05-27_atlaspcb_ectc2026-substrate-market-fujifilm-pbo.md`
+  - `wiki/sources/2026-05-10_atlaspcb_tsmc-copos-exclusivity-cowos-170k-2027.md`
+- 更新 wiki 頁面：16 頁
+  - `wiki/technologies/hybrid-bonding.md`（SK hynix 結構+製程雙軌專利訊號；良率機制新增「表面電化學狀態」第三軸；接合介電層作為水氣橫向通道；Intel 第二代 3µm；Fujifilm 無 PFAS PBO）
+  - `wiki/technologies/glass-substrate.md`（十一家廠商全景表；面板尺寸 310–600mm 未收斂；「零量產設計」定錨；LG Chem 切單專利；「良率瓶頸在邊緣」論點；GLASEM/GlaSSEM 命名待確認）
+  - `wiki/technologies/copos.md`（TSMC 玻璃整合「未承諾」；供應鏈保密控制 vs CoWoS 外包的策略對比；310mm 面板的相對位置）
+  - `wiki/technologies/cowos.md`（2027 ~170K wpm 補上時間序列中間點；擴產非線性——2027 相對放緩）
+  - `wiki/technologies/soic.md`（SoIC vs CoWoS 56×/5× 效益比）
+  - `wiki/technologies/foveros.md`（Foveros Direct 第二代 3µm 目標）
+  - `wiki/technologies/hbm4.md`（DieCARE die 級容錯 ECC；k-out-of-N 可靠度框架；有效頻寬 vs 標稱頻寬）
+  - `wiki/technologies/tsv.md`（TSV bundle 作為閾值子系統；輻射環境可靠度新章節）
+  - `wiki/technologies/foplp.md`（RDL 介面分層：翹曲之外的第二條失效路徑）
+  - `wiki/concepts/thermal-management.md`（Amkor TIM-flow 側壁散熱；熱-機械耦合量化錨點 −49.6%）
+  - `wiki/concepts/advanced-packaging-market.md`（基板細分市場 $14B→$22B；學術四分類七維度檢核骨架）
+  - `wiki/entities/sk-hynix.md`（新增 Patent Signals 章節）
+  - `wiki/entities/amkor.md`（新增 Patent Signals 章節）
+  - `wiki/entities/intel.md`（玻璃商業化推遲至 ~2030；Foveros Direct 3µm）
+  - `wiki/entities/samsung.md`（DieCARE 學術發表；GLASEM JV 資訊精確化）
+  - `wiki/entities/rapidus.md`（600×600mm 面板研究的產業座標）
+- 更新 `wiki/index.md`（頁面總數 476→490；來源數 429→443）、`wiki/overview.md`（健康快照更新；知識空缺「專利軌擴大至 SK hynix/Amkor」標記完成）
+- 主要新知識：
+  1. **SK hynix 對混合接合的「延後」是量產延後，不是研發收縮。** 三件申請案（US20260198018A1 結構、US20260165219A1 製程、US20260173880A1 可靠度）公開日均為 2026-06/07，**早於其在 Hot Chips 2026（2026-08）公開表示「混合接合不用於 HBM4E、延至 HBM5」的發言**。其中 US20260165219A1 主張**對連接墊表面施加負電荷後再熱處理接合**——若有效，攻擊的正是 HBM 採用混合接合最硬的約束（退火熱預算）。wiki 既有敘述若被讀成「SK hynix 退出競賽」需修正語氣。
+  2. **HBM 可靠度首次取得可計算框架與具體解法，且兩者都被 775µm 高度天花板所形塑。** DieCARE（Samsung + 成均館大學，IEEE TC）達成 die 級容錯而**不需額外 die**——這個約束不是學術自限，而是高度預算已滿的物理必然；中原/清華的 k-out-of-N 閉式模型則把 **TSV bundle 視為閾值子系統**，並首次將可靠度與**有效頻寬**統一在同一框架。兩者互補（前者提供手段、後者提供評估），共同回應 Micron 在 Hot Chips 2026 提出的「Meta Llama3 訓練 17.2% 中斷歸因 HBM」——該問題此前在 wiki 中只有陳述、沒有解法。
+  3. **玻璃基板的產業化瓶頸在邊緣與切單，不在 TGV；且全產業迄今零量產設計。** Tom's Hardware 十一家廠商盤點給出 wiki 一直缺少的定錨：**無任何量產設計採用、無客戶正式確認**，Absolics（1H24→2026 年底）與 Intel（2025-26→~2030）皆已滑動多年。同時 LG Chem 專利以犧牲性金屬圖案預先定義乾淨切割道，與既有的「邊緣應力塗層後 95→49 MPa」構成兩條獨立證據指向同一結論。附帶觀察：該案 IPC 落在 C03C/H05K 而**完全不在半導體體系**，反映玻璃基板 IP 的持有者結構。面板尺寸亦未收斂（310/510/515/600mm 四種格式並存）。
+- 專利訊號：本輪五件專利分為三條主線——（1）**SK hynix 的混合接合三連發**，結構、製程、長期可靠度（guard ring 與接合介電層作為水氣／離子橫向通道）三個層次同時佈局，且與其公開的保守時程形成明顯落差；（2）**Amkor 的封裝內部散熱工程**（TIM-flow 層包覆側壁、lid footprint 外刻意無 TIM），顯示在押注兩相冷卻的同時仍在現行 lid+TIM 架構內榨取餘裕，屬 OSAT 典型雙軌策略；（3）**玻璃基板 IP 的持有者結構**——LG Chem（材料體系）而非半導體廠切入切單製程。三條主線的共同點是：2026 年的封裝 IP 競爭已明顯從「能不能做出來」轉向「做出來之後的熱、可靠度與良率」。

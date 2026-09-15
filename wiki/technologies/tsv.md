@@ -1,9 +1,9 @@
 ---
 title: "TSV — Through-Silicon Via / 矽穿孔"
 category: technology
-tags: [TSV, HBM, interposer, 3D-IC, CoWoS, manufacturing, backside-power, advanced-packaging]
+tags: [TSV, HBM, interposer, 3D-IC, CoWoS, manufacturing, backside-power, advanced-packaging, radiation, redundancy, reliability]
 created: 2026-08-10
-updated: 2026-09-14
+updated: 2026-09-15
 sources: [2026-04-22_semieng_tsv-complexity-manufacturing-bottleneck, 2026-08-21_semieng_chip-week-152]
 related:
   - wiki/technologies/hbm4.md
@@ -165,3 +165,32 @@ A*STAR IME（*Advanced Photonics Nexus*，2026-06-30）在 CPO 光引擎情境�
 **判定**：>200 Gbps/lane 時，**垂直穿孔成為封裝電氣瓶頸**（而非水平 RDL）；TGV 平台可支撐 400 Gbps/lane 級設計。這是本 wiki 首次記錄「TSV 在高頻情境下被其他穿孔技術超越」的獨立學術證據。
 
 - 引用：`wiki/sources/2026-09-11_ichmt_tsv-microchannel-convex-pinfin-cooling.md`、`wiki/sources/2026-06-30_advphotonicsnexus_tgv-3d-fowlp-cpo-optical-engine.md`
+
+---
+
+## 2026-09-15 collect 更新
+
+### TSV bundle 作為閾值子系統：冗餘設計首次入庫
+
+*中原大學 + 清華大學，Electronics (MDPI), 2026-08-24*
+
+在 HBM 可靠度的閉式評估框架中，**TSV bundle 本身被建模為閾值子系統（k-out-of-N）**——即容許 bundle 內部分 TSV 失效，整體仍維持功能。
+
+本頁既有內容（製程八步驟、HBM TSV 2–5µm/30–60µm、中介層 TSV 5–20µm/80–120µm、NanoTSV <100nm、TSV 焦耳熱）皆以**單一 TSV 的幾何與物理**為單位。此模型把分析單位提升到 **bundle 層級的統計行為**，並把「TSV 要打多少根」從純頻寬需求問題變成**頻寬 × 冗餘餘裕**的聯合問題。
+
+單顆 die 的可靠度在該框架中由 **DRAM + TSV + 微凸塊**三項組合而成——TSV 被明確列為與 DRAM 本體同級的失效貢獻源，而非可忽略的被動結構。
+
+### 輻射環境下的 TSV-RDL 可靠度：本頁全新缺漏維度
+
+*AMD (Canada) + 中科院國家空間科學中心等，Microelectronics International, 2026-08-11*
+
+- 建立 **Geant4（粒子輸運）+ COMSOL（多物理場）耦合框架**，模擬 **1 MeV 電子**輻照下 TSV-RDL 結構的**電–熱–機械三場耦合**劣化。
+- 目標為辨識主導輻照致失效的關鍵結構參數，供抗輻射封裝設計參考。
+
+**為何重要**：本頁（以及整個 wiki）的 TSV 可靠度論述完全侷限於地面資料中心情境，隱含假設**熱循環與電遷移是唯一的長期劣化來源**。隨著先進封裝進入衛星運算、車用自駕與軍規系統，輻照行為將成為封裝規格的一部分。
+
+**方法論意義**：Geant4 + COMSOL 耦合是把粒子物理模擬接到封裝多物理模擬的做法，可與本 wiki 已收錄的 PINNs／AI 熱設計工具（2026-08-23）並列為封裝模擬方法論的演進條目。
+
+⚠ 純模擬研究，無實測輻照試驗驗證，摘要未給出具體失效閾值。該筆 OpenAlex 記錄的機構欄位有明顯解析錯誤（出現「New York Times」），引用時應以論文原文為準。
+
+- 引用：`wiki/sources/2026-08-24_electronics_hbm-reliability-bandwidth-k-out-of-n.md`、`wiki/sources/2026-08-11_microelectronicsint_tsv-rdl-electron-irradiation.md`

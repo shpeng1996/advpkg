@@ -1,9 +1,9 @@
 ---
 title: "Amkor Technology"
 category: entity
-tags: [OSAT, advanced-packaging, FOCoS, Arizona, chiplet, Intel-EMIB]
+tags: [OSAT, advanced-packaging, FOCoS, Arizona, chiplet, Intel-EMIB, patent-signal, TIM]
 created: 2026-04-25
-updated: 2026-09-13
+updated: 2026-09-15
 sources: [2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-05-19_stocktitan_amkor-arizona-peoria-land-expansion, 2026-06-17_digitimes_amkor-tsmc-10year-arizona-deal, 2026-06-17_trendforce_tsmc-amkor-10year-arizona-advanced-packaging, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-30_amkor-ir_arizona-7billion-groundbreaking, 2026-06-30_digitimes_amkor-2.5d-hdfo-growth-2026, 2026-07-23_amkor-ir_nvidia-amkor-1-5b-strategic-partnership]
 related:
   - wiki/technologies/cowos.md
@@ -123,3 +123,29 @@ related:
 
 - Arizona 廠 Phase 2 的投產時程是否會因政策變化或需求波動而延遲？
 - Amk
+
+---
+
+## 專利訊號 / Patent Signals（2026-09-15 新增）
+
+> 專利為**前瞻訊號，非已出貨能力**。
+
+### US20260223669A1（2026-07-30, family 100647165）：TIM-flow 層與側壁散熱
+
+**請求標的**：於電子元件上方**及側壁**設一層 **TIM-flow layer**（導引熱介面材料流動的專用層）；TIM 敷於其上並包覆元件側壁；lid 覆於 TIM 之上並填滿 lid 與元件間體積；**lid 頂板內側在元件 footprint 之外可實質無 TIM**。
+
+發明人：KWAK YEUN JUN、LEE JI HUN、DO WON CHUL（皆 KR）——顯示由 Amkor 韓國團隊主導。
+
+**兩個設計意圖**：
+1. 散熱面積自「單一頂面」擴張為「頂面 + 側壁」，在不更換冷卻系統的前提下增加有效導熱面積。
+2. footprint 外刻意排除 TIM——lid 外緣多餘 TIM 會造成不均勻應力與翹曲，屬熱-機械複合設計。
+
+### 與本頁既有立場的張力（非矛盾）
+
+本頁已記錄 **CEO McCann 於 2026-09-08 預判兩相冷卻（two-phase cooling）為下一散熱轉型**。本案公開日 2026-07-30，早於該發言。
+
+**判讀**：Amkor 在押注下一代冷卻典範的同時，**仍在現行 lid + TIM 架構內榨取剩餘散熱餘裕**。這是 OSAT 的典型雙軌策略——下一代技術的公開論述負責市場定位，現世代的漸進工程負責出貨。引用 McCann 的兩相冷卻說法時，應避免讀成「Amkor 認為現行架構已到頂」。
+
+⚠ 公開申請案，未揭露任何溫降或熱阻數字，不代表已導入量產產品。
+
+- 引用：`wiki/sources/2026-07-30_amkor_us20260223669a1-tim-flow-layer-sidewall-lid.md`

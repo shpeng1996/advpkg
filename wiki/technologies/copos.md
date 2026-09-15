@@ -3,7 +3,7 @@ title: "CoPoS — Chip-on-Panel-on-Substrate"
 category: technology
 tags: [panel-level-packaging, FOPLP, TSMC, CoPoS, AI, HPC, AP7, InFO]
 created: 2026-04-25
-updated: 2026-09-14
+updated: 2026-09-15
 sources: [2026-04-13_trendforce_copos-pilot, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2025-09-12_trendforce_foplp-competitive-landscape-2025, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-20_wccftech_tsmc-copos-glass-core-cost-cut, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-04-28_cw_tsmc-copos-move-really-means, 2026-06-14_digitaltrends_tsmc-copos-glass-temporary-carrier, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan]
 related:
   - wiki/technologies/cowos.md
@@ -352,3 +352,32 @@ CoPoS 採 310×310mm 面板（Samsung 415×510mm、FOPLP 510×515mm）。清華�
 詳見 `wiki/technologies/foplp.md` 之「學術前沿——翹曲預測與 die-first / die-last 製程分歧」段落。
 
 - 引用：`wiki/sources/2026-08-18_materials_foplp-warpage-mode-aware-ml.md`
+
+---
+
+## 2026-09-15 collect 更新
+
+### TSMC 對玻璃整合的正式立場：「評估中，尚未承諾」
+
+Tom's Hardware（2026-08-27）：TSMC 嘉義 CoPoS 產線（310×310mm，2 月設備到廠、約 6 月試產線完工、試產 2027／量產 2H28）**對玻璃核心基板的整合仍屬「under review, not committed」**，並據報是在 NVIDIA 施壓下才重啟玻璃研究。
+
+這修正了本頁既有敘述中「玻璃核心基板列為下一里程碑（2030+）」可能造成的讀法——**玻璃並非 CoPoS 路線圖上的既定項目，而是一個尚未承諾的選項**。CoPoS 的首發世代不依賴玻璃。
+
+**面板尺寸的產業分歧**（對 CoPoS 的規格風險）：
+
+| 陣營 | 面板尺寸 |
+|------|----------|
+| **TSMC CoPoS** | **310 × 310 mm** |
+| DNP、CFMEE PLP 2000 | 510 × 515 mm |
+| Nippon Electric Glass GC Core | 515 × 510 mm |
+| Rapidus（研究） | 600 × 600 mm |
+
+TSMC 選擇的 310mm 是全產業最小的面板格式。這在良率與翹曲控制上有利（面積小、邊角效應弱——與本 wiki 2026-08-18 收錄之 FO-PLP 翹曲 ML 論文指出「邊角最難預測」相呼應），但**單位面板產出的封裝數少於 510mm 陣營**，長期單位成本是否具競爭力為未解問題。
+
+### 供應鏈保密控制：CoPoS 被定位為護城河而非開放生態
+
+AtlasPCB（2026-05-10）：TSMC 對 CoPoS 供應鏈（台灣設備與材料夥伴）實施**嚴格保密控制**，將面板級 CoPoS 定位為「關鍵競爭護城河」。
+
+這與 TSMC 在 CoWoS 上的做法形成明確對比——本 wiki 已記錄 TSMC **擴大將 CoWoS 前段關鍵步驟外包予 OSAT**（2026-08-05 收錄）。兩者並置的判讀：**TSMC 對成熟世代（CoWoS）採取外包擴產，對下一世代（CoPoS）採取封閉自持**。這是產能瓶頸管理與技術領先維持的分工，而非政策不一致。
+
+- 引用：`wiki/sources/2026-08-27_tomshardware_glass-substrate-roadmaps-examined.md`、`wiki/sources/2026-05-10_atlaspcb_tsmc-copos-exclusivity-cowos-170k-2027.md`

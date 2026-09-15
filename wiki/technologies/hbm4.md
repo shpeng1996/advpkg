@@ -1,9 +1,9 @@
 ---
 title: "HBM4 — High Bandwidth Memory 4"
 category: technology
-tags: [memory, HBM, JEDEC, standards, AI, HPC, HBM4E, cleanroom, capacity, ISSCC2026, ZAM, HB3DM, HBM5, zHBM, HPB, FMS-2026]
+tags: [memory, HBM, JEDEC, standards, AI, HPC, HBM4E, cleanroom, capacity, ISSCC2026, ZAM, HB3DM, HBM5, zHBM, HPB, FMS-2026, ECC, reliability, FIT]
 created: 2026-04-24
-updated: 2026-09-14
+updated: 2026-09-15
 sources: [2026-08-13_semieng_1mw-rack-debate-thermal, 2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor, 2026-08-10_trendforce_skhynix-chongqing-sale-global-reset, 2026-08-05_trendforce_samsung-v10-zhbm-hbm5-fms2026, 2026-07-30_trendforce_samsung-ds-q2-2026-hbm4-triple-q3, 2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-03-18_trendforce_intel-emib-malaysia, 2026-01-23_trendforce_hbm4e-samsung-skhynix-mid2026, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-01-13_semiengineering_hbm4-microbumps, 2025-12-18_trendforce_micron-capex-hbm4, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h, 2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-03-03_trendforce_sk-hynix-hbm4-tight-gaps, 2025-08-12_semianalysis_hbm-roadmap, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit, 2026-06-09_astutegroup_hbm-market-share-2026-battle, 2026-06-10_trendforce_samsung-gwangju-packaging-base, 2026-06-15_trendforce_skhynix-hbm4e-sample-timeline-pulled-forward, 2026-06-20_techtimes_skhynix-hbm4e-12layer-samples, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-27_tweaktown_hbm4-16hi-nvidia-supply-fight, 2026-06-26_semieng_chip-week-144, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-14_trendforce_samsung-hbm-hiring-hbm4-hbm4e-hbm5, 2026-07-14_trendforce_skhynix-yongin-y1-feb2027, 2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b, 2026-08-13_trendforce_samsung-skhynix-hbm4-2h-earnings-pricing, 2026-08-25_trendforce_nvidia-server-hike-hbm-price-2027, 2026-08-28_trendforce_skhynix-indiana-hbm4e-3q29-supply-2030, 2026-08-26_tomshardware_hbf-hot-chips-oxmiq-limited-usability]
 related:
   - wiki/entities/sk-hynix.md
@@ -1154,3 +1154,47 @@ Intel 於 2026-03-03 公開之專利揭示：採用 sub-1 µm 間距混合接合
 與本頁「HBM 可靠性（Meta Llama 3 實測，17.2% 中斷歸因 HBM）」段落同一問題域——HBM 可靠度已成為 AI 推論的系統級瓶頸，**ECC 策略正從 DRAM 內部上移到記憶體控制器層**。
 
 - 引用：`wiki/sources/2026-09-14_semieng_paper-roundup-chipsmore-reach.md`
+
+---
+
+## 2026-09-15 collect 更新：可靠度成為 HBM 的獨立設計軸
+
+本輪收錄兩篇學術論文，首次為本頁的可靠度討論提供**可計算框架**與**具體解法**。此前本頁的可靠度內容僅為定性敘述（775µm 高度天花板、16-Hi 延後、Micron 於 Hot Chips 2026 提出的「Meta Llama3 訓練 17.2% 中斷歸因 HBM」）。
+
+### 學術前沿（一）：DieCARE——不需額外 die 的 die 級容錯 ECC
+
+*Samsung + 成均館大學，IEEE Transactions on Computers, 2026-06-15*
+
+- **資料與 ECC 檢查位元跨多顆 die 分散配置**，搭配彈性 symbol layout，在**不增加任何額外 die** 的前提下達成 die 級容錯（可容忍整顆 die 失效）。
+- 同時最佳化糾錯能力、延遲與面積效率；系統層評估顯示記憶體 **FIT 率下降**。
+
+**架構意涵值得特別標記**：「不需額外 die」並非學術上的自我設限，而是**直接呼應本頁記錄的 775µm 堆疊高度天花板**（JEDEC 決定；SK hynix Hot Chips 2026 表態）。在高度預算已滿的前提下，任何以「多堆一顆冗餘 die」實現的容錯方案在物理上不可行——DieCARE 選擇在既有 die 之間重新分配 ECC 位元，是該約束下的必然設計方向。
+
+這也是本 wiki 首次收錄由記憶體原廠共同掛名、發表於一級期刊的 HBM 容錯架構研究。
+
+⚠ 摘要未給出 FIT 下降的具體倍數，亦未說明適用世代。Samsung 掛名代表產業關注度，**不等於已導入量產產品**。
+
+### 學術前沿（二）：堆疊層數 vs 可靠度的閉式評估框架
+
+*中原大學 + 清華大學，Electronics (MDPI), 2026-08-24*
+
+以「記憶體控制器對每個 channel 僅呈現可用／隔離二元狀態」為建模原語，建立閉式評估：
+
+| 層級 | 處理方式 |
+|------|----------|
+| 單顆 die | 二元元件；**DRAM + TSV + 微凸塊**三項可靠度組合 |
+| **TSV bundle** | **閾值子系統（k-out-of-N）**——容許部分 TSV 失效仍維持功能 |
+| stack 內 die 聚合 | 閾值結構 |
+| 系統內 stack 聚合 | 閾值結構 |
+| 計算複雜度 | 隨規模**線性**成長 |
+
+三項意義：
+1. 把「堆疊更多層 → 可靠度下降多少」從定性敘述變為**可計算量**。
+2. **TSV 作為閾值子系統**——明確把 TSV 冗餘納入模型，可與 `technologies/tsv.md` 的尺寸／密度數據結合估算餘裕。
+3. **可靠度與頻寬統一在同一框架**：被隔離的 channel 既是可靠度事件也是頻寬損失。這為「有效頻寬 vs 標稱頻寬」的落差提供機制解釋——本頁記錄了大量標稱頻寬數字（HBM4 2 TB/s、SPHBM4 2.944 TB/s、MI455X 23.3 TB/s），但從未處理過有效值。
+
+兩篇互補：**DieCARE 提供手段，k-out-of-N 框架提供評估工具**。
+
+⚠ 後者為解析模型，未附任何真實 HBM 元件的實測 FIT 參數；套用至具體世代需自行提供輸入。
+
+- 引用：`wiki/sources/2026-06-15_ieeetc_diecare-die-level-ecc-hbm.md`、`wiki/sources/2026-08-24_electronics_hbm-reliability-bandwidth-k-out-of-n.md`

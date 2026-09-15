@@ -3,7 +3,7 @@ title: "CoWoS — Chip-on-Wafer-on-Substrate"
 category: technology
 tags: [2.5D, interposer, TSMC, AI, HPC, HBM, COUPE, CPO, packaging-constraints, NVIDIA]
 created: 2026-04-24
-updated: 2026-09-14
+updated: 2026-09-15
 sources: [2026-08-13_semieng_1mw-rack-debate-thermal, 2026-08-05_trendforce_tsmc-cowos-cow-outsourcing-osat, 2026-05-24_techtimes_nvidia-computex2026-cowos, 2026-04-24_initial-survey, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-15_trendforce_tsmc-vanguard-stake-sale, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-09_financialcontent_tsmc-130k-cowos-wafers, 2026-06-09_digitimes_tsmc-cowos-soic-capacity-symposium, 2026-06-15_trendforce_tsmc-cowos-gap-narrowing-130k-200k-wafers, 2026-06-10_tomshardware_tsmc-fab-expansion-roadmap-n2-cowos-soic, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_tmtpost_tsmc-cowos-capacity-targets-2026-2027, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand]
 related:
   - wiki/entities/tsmc.md
@@ -382,3 +382,24 @@ TSMC 專利首次具體揭示 **local silicon interposer（LSI，CoWoS-L 核心�
 ⚠ 專利為前瞻／工程訊號，非公開規格或已知良率數據。
 
 - 引用：`wiki/sources/2026-09-14_trendforce_tsmc-cowos-double-2028-capacity.md`、`wiki/sources/2026-03-26_tsmc_us20260090444a1-lsi-via-barrier.md`
+
+---
+
+## 2026-09-15 collect 更新：產能時間序列補上 2027 中間點
+
+AtlasPCB（2026-05-10）給出 **2027 年 CoWoS 產能 ~170,000 wpm**。併入本頁既有數據點後，完整時間序列為：
+
+| 時點 | 產能（wpm） | 對前一點變化 | 來源 |
+|------|------------|--------------|------|
+| 2024 | ~35,000 | — | AtlasPCB |
+| 2026 年底 | **~130,000**（主值，TrendForce）／115,000–140,000（AtlasPCB 區間） | 兩年 **~4×** | TrendForce（主）、AtlasPCB（交叉參考） |
+| **2027** | **~170,000** ⭐新 | **+25–30%** | AtlasPCB |
+| 2028 年底 | 260,000 | **+53%** | TrendForce（2026-09-14 收錄） |
+
+**擴產曲線並非等比——2027 是相對放緩的一年。** 這對本頁既有的「CoWoS 供需缺口自 20% 收斂至 10%（2026 年底）」判斷是重要補充：若 AI 需求維持既有斜率，而 2026→2027 產能僅增 25–30%，**缺口的收斂可能在 2027 停滯甚至逆轉**，直到 2028 的 +53% 擴產到位。此為推論，列為待驗證項。
+
+其餘交期與市況數據（AI 級設計封裝交期 6–12 個月；CoWoS-L 與 CoWoS-S 皆嚴重短缺；ASE/Samsung/Amkor 2026–27 合計 $15B+ 新設施）與本頁既有敘述一致，構成佐證。
+
+⚠ AtlasPCB 為二手彙整型媒體。**170K@2027 一值尚待 TrendForce 或 TSMC 法說會佐證**；其「TSMC 先進封裝產能年增 11×」之表述與本頁一手數據相差一個數量級，已判定為誤差並不予採用。
+
+- 引用：`wiki/sources/2026-05-10_atlaspcb_tsmc-copos-exclusivity-cowos-170k-2027.md`

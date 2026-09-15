@@ -84,8 +84,8 @@ related: [wiki/index.md, wiki/analyses/2026-09-15_knowledge-base-consolidation.m
 
 **缺實體頁（高頻提及）**
 - [ ] Google（65 頁提及）、Apple（47）、Broadcom（37）、MediaTek（20）——AI ASIC / 行動客戶端封裝需求
-- [ ] Applied Materials（40）、Hanwha Semitech（15）——混合接合設備
-- [ ] Absolics（21）、Unimicron（15）、Shinko（6）——玻璃/有機基板
+- [ ] Applied Materials（40）、Hanwha Semitech（15）——混合接合設備　※2026-09-15 新增觸發點：GlobalFoundries SCALE 平台、Fujifilm 無 PFAS PBO
+- [ ] Absolics（21）、Unimicron（15）、Shinko（6）——玻璃/有機基板　※2026-09-15 新增：LG Chem、LG Innotek、DNP、Toppan、NEG、BOE 均已入庫但無獨立頁
 - [ ] GlobalFoundries（15）、VIS/Vanguard（8）——矽光子、矽中介層
 
 **缺概念頁**
@@ -100,17 +100,17 @@ related: [wiki/index.md, wiki/analyses/2026-09-15_knowledge-base-consolidation.m
 - [ ] HBM4E / HBM5 獨立規格頁
 
 **資料源**
-- [ ] 專利軌擴大至 Samsung、SK hynix、ASE、Amkor 申請人
-- [ ] 論文軌鎖定 ECTC / IEDM 2026 與 IEEE Xplore OA
+- [x] 專利軌擴大至 Samsung、SK hynix、ASE、Amkor 申請人 —— 2026-09-15 完成：SK hynix ×3、Amkor ×1、LG Chem ×1（Samsung 僅檢出 2025 年以前案件，ASE 待下輪以 `pa="advanced semiconductor engineering" and pd within "2026"` 收斂）
+- [ ] 論文軌鎖定 ECTC / IEDM 2026 與 IEEE Xplore OA —— 2026-09-15 部分：已收 IEEE TC 一級期刊論文（DieCARE）；ECTC 2026 論文原文仍未直接取得（目前皆為二手報導）
 
 ---
 
-## Wiki 健康狀態 / Wiki Health（2026-09-15）
+## Wiki 健康狀態 / Wiki Health（2026-09-15，daily collect 後更新）
 
-- **頁面總數**：475（實體 21、技術 15、概念 3、來源 429、分析 4、系統頁 3）
-- **原始來源數**：437（articles 413、patents 10、papers 12、reports 2）
-- **操作歷史**：collect 127 次（120 日）、ingest 24、query 2、lint 2；Git 提交 183 次
-- **資料源三軌**：WebSearch ✓ ｜ EPO OPS ✓（2026-09-14 起）｜ OpenAlex ✓（2026-09-14 起）
-- **最近 Lint**：2026-05-19（建議儘速執行新一輪）
-- **已知問題**：`_collected_urls.txt` 重複 URL 16 組；失效 wiki link 約 23 個；6 個 lint 建議實體頁未建
-- **本次已修**：overview 重寫、index 補登 17 頁並新增分析報告區、index 截斷行與計數校正
+- **頁面總數**：490（實體 21、技術 15、概念 3、來源 443、分析 5、系統頁 3）
+- **原始來源數**：451（articles 417、patents 15、papers 17、reports 2）
+- **操作歷史**：collect 128 次（121 日）、ingest 24、query 2、lint 2
+- **資料源三軌**：WebSearch ✓ ｜ EPO OPS ✓ ｜ OpenAlex ✓（三軌均於 2026-09-15 正常運作）
+- **最近 Lint**：2026-09-15
+- **已知問題**：失效 wiki link 已於 2026-09-15 lint 修復；6 個 lint 建議實體頁仍未建（Google/Apple/Broadcom/MediaTek/AMAT/GlobalFoundries 等）
+- **2026-09-15 collect 新增去重機制發現**：`advancedpackaging.news` 同一文章存在兩種 URL 形式（`/YYYY/MM/DD/slug/` 與 `/article/<id>/<Slug>`），純 URL 字串比對無法攔截。已於 registry 以 `# DUP-OF` 註記；**建議後續 lint 增加「標題正規化」二次去重**，比照論文軌 Track C 的做法

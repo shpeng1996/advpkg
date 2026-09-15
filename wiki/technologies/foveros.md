@@ -3,7 +3,7 @@ title: "Foveros — Intel 3D 晶片堆疊技術"
 category: technology
 tags: [Intel, 3D-stacking, hybrid-bonding, Foveros-Direct, micro-bump, TSV, Clearwater-Forest]
 created: 2026-05-03
-updated: 2026-08-25
+updated: 2026-09-15
 sources: [2026-08-24_intel-newsroom_hot-chips-2026-diamond-rapids-foveros-ucie, 2026-03-03_trendforce_intel-clearwater-forest, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-01_semianalysis_cpus-back-datacenter-2026, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap]
 related:
   - wiki/entities/intel.md
@@ -122,3 +122,22 @@ Intel Wildcat Lake（Intel 18A）選擇以**有機 MCP（Multi-Chip Package）+ 
 - **MCP 優勢**：無 base die 成本；組裝良率更高；平台成本降低
 - **代價**：互連密度不如 Foveros Direct（UCIe 串行 vs Foveros 平行 µbump 陣列）
 - **結論**：Foveros 與 MCP 在 Intel 內部形成效能（Foveros）vs 成本（MCP+UCIe）的雙軌產品策略
+
+---
+
+## 2026-09-15 collect 更新：Foveros Direct 第二代目標 3µm
+
+TrendForce Insights（2026-09-10）：**Intel Foveros Direct 第二代以 3µm bond pitch 為目標，已列入路線圖**。
+
+本頁此前記錄的最新世代為 Foveros Direct 3D 隨 Clearwater Forest（Xeon 6+）於 **1H26 以 9µm pitch 量產**。3µm 代表約 **3× 的 pitch 微縮**（面積密度約 9×）。
+
+| 世代 | pitch | 狀態 |
+|------|-------|------|
+| Foveros Direct 3D（第一代） | **9 µm** | 1H26 量產（Clearwater Forest） |
+| **Foveros Direct（第二代）** | **3 µm** | **路線圖目標，時程未揭露** ⭐新 |
+
+**與 TSMC 的相對位置**：TSMC SoIC 路線圖為 6µm（2025 量產）→ 4.5µm（2029）。Intel 的 3µm 在數值上更細，但 **Intel 未公開時程**，因此不可推論 Intel 將先達成更細 pitch。目前可確定的只有：Intel 在量產 pitch 上落後（9µm vs 6µm），而在公開的下一世代目標值上更激進（3µm vs 4.5µm）。
+
+⚠ 目標值已公開、時程未公開，兩者不可互換。
+
+- 引用：`wiki/sources/2026-09-10_trendforce_hybrid-bonding-race-soic-foveros.md`

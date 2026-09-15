@@ -1,9 +1,9 @@
 ---
 title: "先進封裝熱管理 / Thermal Management in Advanced Packaging"
 category: concept
-tags: [thermal-management, liquid-cooling, 3D-IC, CoWoS, heat-dissipation, TIM, ECTC-2025, GaN, power-delivery, co-design]
+tags: [thermal-management, liquid-cooling, 3D-IC, CoWoS, heat-dissipation, TIM, ECTC-2025, GaN, power-delivery, co-design, patent-signal, delamination]
 created: 2026-04-25
-updated: 2026-09-14
+updated: 2026-09-15
 sources: [2025-12-01_semiengineering_thermal-management, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-02_trendforce_samsung-hbm5-computex2026, 2026-05-21_semieng_hi-roadmap-nature-paper-intel, 2026-08-13_semieng_1mw-rack-debate-thermal, 2026-04-27_semieng_semiconductor-materials-misbehave, 2026-08-21_trendforce_chip-packaging-heat-ai-bottleneck-cpo-stco]
 related:
   - wiki/technologies/cowos.md
@@ -476,3 +476,33 @@ HBM 堆疊層數增加帶來的熱挑戰現已有量化文獻支撐：
 NIST + UC San Diego 發表高填充環氧 underfill 的固化演進與熱耐久性預測建模（SemiEng 2026-09-14 彙整）。與本頁「翹曲管理」段落及同日收錄的兩篇翹曲論文（FO-PLP ML 預測、FO-Strip RSM 優化）構成同一主題群：**封裝材料的熱機械行為正在成為量產良率的主要變數**，且開始有標準機構（NIST）介入建模。
 
 - 引用：`wiki/sources/2026-09-10_intel_us20260271308a1-hbm-base-die-thermal.md`、`wiki/sources/2025-10-09_micron_wo2025212237a1-heat-mitigating-hbm-sip.md`、`wiki/sources/2026-09-11_ichmt_tsv-microchannel-convex-pinfin-cooling.md`、`wiki/sources/2026-09-14_semieng_paper-roundup-chipsmore-reach.md`
+
+---
+
+## 2026-09-15 collect 更新
+
+### 專利訊號：Amkor 的「封裝內部」散熱工程（US20260223669A1, 2026-07-30）
+
+本頁既有的散熱路徑清單——直接矽液冷（TSMC, ECTC 2025）、TSV 微通道、兩相冷卻（Amkor CEO McCann 2026-09-08 預判）、CPO + STCO、液冷滲透率 33%→53%→60%——**全部屬於封裝外部的冷卻系統**。Amkor 這件申請案處理的是封裝內部的 TIM 幾何：
+
+- 於元件上方**及側壁**設一層 **TIM-flow layer**（導引 TIM 流動的專用層）；
+- TIM 敷於其上並**包覆元件側壁**；lid 覆於 TIM 之上並填滿 lid 與元件之間體積；
+- **lid 頂板內側在元件 footprint 之外可實質無 TIM**。
+
+**兩個設計意圖**：
+1. **散熱面積自單一頂面擴張為頂面 + 側壁**——在不更換冷卻系統的前提下增加有效導熱面積。
+2. **footprint 外刻意排除 TIM**——這同時是熱設計與機械設計：lid 外緣多餘 TIM 會造成不均勻應力與翹曲。這正是本頁 2026-07-30 記錄的「翹曲管理納入熱-機械複合設計框架」在一個具體結構上的體現。
+
+**與 Amkor 公開立場的張力（非矛盾）**：本頁記錄 McCann 於 2026-09-08 預判兩相冷卻為下一散熱轉型；本案公開日 2026-07-30，顯示 Amkor 在押注下一代冷卻典範的同時，**仍在現行 lid + TIM 架構內榨取剩餘散熱餘裕**。這是 OSAT 的雙軌策略——下一代技術的公開論述負責定位，現世代的漸進工程負責出貨。引用 McCann 說法時應避免讀成「Amkor 認為現行架構已到頂」。
+
+⚠ 公開申請案，未揭露任何溫降或熱阻數字，不代表已導入量產產品。
+
+### 熱-機械耦合的量化錨點：溫度上升直接侵蝕介面可靠度餘裕
+
+*Delft + 武漢大學，Nanotechnology and Precision Engineering, 2026-09-08*
+
+FOWLP 的 RDL 介面斷裂韌性隨溫度上升顯著下降，**Cu/LSF60 介面的能量釋放率降幅達 49.6%**（DCB 試驗）。
+
+本頁的熱-機械複合設計框架此前缺少**方向性的量化錨點**。這個數字提供了一個：在本 wiki 已記錄的封裝功耗路徑（600W → 4,100W）下，散熱不足不只表現為降頻或壽命縮短，而會**直接以 RDL 介面分層的形式**成為機械失效。散熱設計與封裝可靠度不再是可分別最佳化的兩個問題。
+
+- 引用：`wiki/sources/2026-07-30_amkor_us20260223669a1-tim-flow-layer-sidewall-lid.md`、`wiki/sources/2026-09-08_nanopreceng_fowlp-rdl-interface-delamination.md`

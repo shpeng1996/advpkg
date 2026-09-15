@@ -1,9 +1,9 @@
 ---
 title: "三星 / Samsung"
 category: entity
-tags: [IDM, foundry, memory, advanced-packaging, X-Cube, HBM, ISSCC2026, I-CubeS, LPDDR6, V10-BV-NAND, zHBM, HBM5, FMS-2026]
+tags: [IDM, foundry, memory, advanced-packaging, X-Cube, HBM, ISSCC2026, I-CubeS, LPDDR6, V10-BV-NAND, zHBM, HBM5, FMS-2026, ECC, reliability]
 created: 2026-04-24
-updated: 2026-09-14
+updated: 2026-09-15
 sources: [2026-08-26_trendforce_openai-jalapeno-samsung-hbm4, 2026-08-26_trendforce_samsung-gaia-pim-4nm-2027, 2026-08-24_trendforce_hot-chips-2026-samsung-zhbm-skhynix-emib, 2026-08-17_trendforce_samsung-skhynix-1h26-investment-nvidia-absent, 2026-08-14_trendforce_samsung-nrdk-line2-2nm-hbm5-base-die, 2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor, 2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2025-12-30_trendforce_samsung-hbm-surge, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2025-08-05_3dincites_iftle636, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit, 2026-06-10_trendforce_samsung-gwangju-packaging-base, 2026-06-12_digitimes_samsung-packaging-gap-tsmc-intel, 2026-06-15_trendforce_skhynix-hbm4e-sample-timeline-pulled-forward, 2026-06-19_techtimes_vera-rubin-hbm4-suppliers, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-24_techtimes_sk-hynix-dethroned-samsung-ddr5-hbm4, 2026-07-03_trendforce_anthropic-samsung-advanced-packaging, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-07-02_trendforce_samsung-hbm-dummy-die-patent, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo, 2026-07-07_trendforce_samsung-q2-2026-record-krw894t, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-02_trendforce_samsung-sf2p-plus-tsmc-n2-roadmap, 2026-07-14_trendforce_samsung-hbm-hiring-hbm4-hbm4e-hbm5, 2026-07-21_trendforce_samsung-cxl-32-skhynix-imte, 2026-07-24_trendforce_skhynix-3d-stacked-dram-on-logic-on-device-ai]
 related:
   - wiki/entities/tsmc.md
@@ -360,3 +360,34 @@ Samsung（Yonhap News 引述）官方預期：
 - **U**tilization：3D 記憶體架構最佳化（非僅增加堆疊層數）；縮短延遲
 - **B**andwidth：以垂直高速通道取代水平數據路徑
 - **E**fficiency：最小化每 bit 傳輸能耗；最大化效能/W
+
+---
+
+## 2026-09-15 collect 更新
+
+### 學術發表：DieCARE——不需額外 die 的 HBM die 級容錯 ECC
+
+*Samsung（South Korea）+ 成均館大學，IEEE Transactions on Computers, 2026-06-15*
+
+- **資料與 ECC 檢查位元跨多顆 die 分散配置**，搭配彈性 symbol layout，在**不增加任何額外 die** 的前提下達成 die 級容錯（可容忍整顆 die 失效）。
+- 同時最佳化糾錯能力、延遲與面積效率；系統層評估顯示記憶體 **FIT 率下降**。
+
+**為何值得記錄在本頁**：這是本 wiki 首次收錄 Samsung 共同掛名、發表於一級期刊的 HBM 容錯架構研究。其約束條件——**不增加額外 die**——直接呼應本 wiki 已記錄的 **775µm 堆疊高度天花板**：在高度預算已滿的前提下，以冗餘 die 實現容錯在物理上不可行，因此解法必須落在既有 die 之間的位元重分配。
+
+這也為本頁既有的 HBM 路線圖（cHBM → aHBM → zHBM 三階段、HBM5 2028 量產、2nm base die）補上一個此前完全缺漏的軸：**可靠度**。此前本頁的 HBM 論述全部集中在頻寬、容量、功耗與封裝方式。
+
+⚠ 摘要未給出 FIT 下降的具體倍數，亦未說明適用世代。Samsung 掛名代表產業關注度，**不等於已導入量產產品**。
+
+### 玻璃基板 JV 資訊精確化
+
+Tom's Hardware（2026-08-27）對本頁既有的 Samsung EM 玻璃基板 JV 記錄提供更精確資訊：
+
+- JV 名稱記為 **GLASEM**（本 wiki 既有條目記為 **GlaSSEM**，待一手來源確認何者正確）
+- 持股：**Samsung EM 66% / Dongwoo Fine-Chem 34%**（Dongwoo Fine-Chem 為 Sumitomo Chemical 子公司——本 wiki 既有敘述「Samsung EM + Sumitomo」的精確化）
+- 投資額 **₩482.1B（約 $310M）**，平澤廠
+- 首次量產目標 **2H27**（與既有記錄一致）；試產取樣自 2024 年底起於世宗廠進行
+- **成熟度評估 40/100**
+
+與本頁既有的「設備採購 ≥3 次延後、Samsung EM 否認認證失敗」（2026-08-23）相互佐證，不構成矛盾。
+
+- 引用：`wiki/sources/2026-06-15_ieeetc_diecare-die-level-ecc-hbm.md`、`wiki/sources/2026-08-27_tomshardware_glass-substrate-roadmaps-examined.md`
