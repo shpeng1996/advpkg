@@ -3442,3 +3442,64 @@ an（2028–2029 量產世代）為 CoPoS 最可能的首批量產客戶——�
   2. **HBM 可靠度首次取得可計算框架與具體解法，且兩者都被 775µm 高度天花板所形塑。** DieCARE（Samsung + 成均館大學，IEEE TC）達成 die 級容錯而**不需額外 die**——這個約束不是學術自限，而是高度預算已滿的物理必然；中原/清華的 k-out-of-N 閉式模型則把 **TSV bundle 視為閾值子系統**，並首次將可靠度與**有效頻寬**統一在同一框架。兩者互補（前者提供手段、後者提供評估），共同回應 Micron 在 Hot Chips 2026 提出的「Meta Llama3 訓練 17.2% 中斷歸因 HBM」——該問題此前在 wiki 中只有陳述、沒有解法。
   3. **玻璃基板的產業化瓶頸在邊緣與切單，不在 TGV；且全產業迄今零量產設計。** Tom's Hardware 十一家廠商盤點給出 wiki 一直缺少的定錨：**無任何量產設計採用、無客戶正式確認**，Absolics（1H24→2026 年底）與 Intel（2025-26→~2030）皆已滑動多年。同時 LG Chem 專利以犧牲性金屬圖案預先定義乾淨切割道，與既有的「邊緣應力塗層後 95→49 MPa」構成兩條獨立證據指向同一結論。附帶觀察：該案 IPC 落在 C03C/H05K 而**完全不在半導體體系**，反映玻璃基板 IP 的持有者結構。面板尺寸亦未收斂（310/510/515/600mm 四種格式並存）。
 - 專利訊號：本輪五件專利分為三條主線——（1）**SK hynix 的混合接合三連發**，結構、製程、長期可靠度（guard ring 與接合介電層作為水氣／離子橫向通道）三個層次同時佈局，且與其公開的保守時程形成明顯落差；（2）**Amkor 的封裝內部散熱工程**（TIM-flow 層包覆側壁、lid footprint 外刻意無 TIM），顯示在押注兩相冷卻的同時仍在現行 lid+TIM 架構內榨取餘裕，屬 OSAT 典型雙軌策略；（3）**玻璃基板 IP 的持有者結構**——LG Chem（材料體系）而非半導體廠切入切單製程。三條主線的共同點是：2026 年的封裝 IP 競爭已明顯從「能不能做出來」轉向「做出來之後的熱、可靠度與良率」。
+
+## [2026-09-16] collect | 每日自動蒐集 — 先進封裝最新動態
+- 搜尋查詢數：新聞 6 組 / 專利 4 組 / 論文 3 組（論文軌 1 組遭 OpenAlex 429，依規範重試 1 次後跳過）
+- 成功抓取：16 篇（articles/ 6, patents/ 5, papers/ 5, reports/ 0）
+- 失敗/跳過：11 篇（已收錄 6、低相關/離題 4、低訊號venue 1）
+  - **已收錄（去重成功，機制有效）**：專利軌命中 3 件已於 2026-09-14 收錄之家族——`EPO:98053389:US20260271308A1`（Intel HBM base die 熱管理）、`EPO:100985093:US20260271782A1`（Intel base die 置中）、`EPO:100036235:CN122260581A`（TSMC photonic engine）；論文軌命中 3 篇已收錄 DOI——`10.3390/mi17091065`、`10.1063/5.0336912`、`10.3390/mi17091039`、`10.3390/electronics15173800`。**family-id 與 DOI 雙鍵去重均正常運作。**
+  - 離題（已由半導體關鍵詞過濾器攔下）：CT 影像重建（Hy-SAN）、聚脲塗層（ACS Appl. Polym. Mater.，玻璃附著但非 IC 封裝）、汽車板級 underfill/Edgebond（SMTA，板級組裝非先進封裝）
+  - 低訊號 venue：IJICT 三篇 TSV 相關（依 §4.3「跳過 predatory/低訊號 venue」）
+  - 主題跳過：UCIe 查詢回傳結果集中在 2025 年 UCIe 3.0 發布，wiki 已完整收錄，本輪不重複抓取
+- 資料源狀態：WebSearch ACTIVE ✓ | EPO OPS ACTIVE ✓ | OpenAlex ACTIVE ✓（3 查詢中 2 成功；1 組 429，重試 1 次仍 429，依規範跳過）
+- OPS 呼叫數：1 auth + 4 search = **5**（配額上限 10，符合；全部 HTTP 200）
+- ⚠ **執行環境異常（已繞過，不影響產出）**：使用者本機 Linux workspace（device_bash）啟動失敗，本輪改以 device_stage_files / device_commit_files 於雲端容器完成全部作業。**因此 §9「最後以 git 提交」一步本輪無法執行**——所有檔案已寫回 `D:\@source\AdvancedPackaging`，但**未 git add / commit**，需人工或下輪補做。
+- 新增 wiki 頁面：**17 頁**（16 個 source 摘要頁 + 1 個新實體頁）
+  - **新實體頁**：`wiki/entities/silicon-box.md`（純面板級封裝新創；wiki 內已多次提及但無獨立頁）
+  - `wiki/sources/2026-05-28_anysilicon_ase-310mm-panel-focos-bridge.md`
+  - `wiki/sources/2026-05-28_imec_w2w-hybrid-bonding-200nm-pitch.md`
+  - `wiki/sources/2026-06-02_intel_ectc2026-emib-t-cpo-glass.md`
+  - `wiki/sources/2026-06-08_irtnanoelec_d2w-hybrid-bonding-1um-pitch.md`
+  - `wiki/sources/2026-07-07_semieng_panel-inspection-metrology-hdfo.md`
+  - `wiki/sources/2026-08-06_siliconbox_500m-units-panel-scale.md`
+  - `wiki/sources/2026-02-18_siliconbox_ep4697377a1-fanout-panel-metal-sealing-ring.md`
+  - `wiki/sources/2026-07-28_xianfeng_cn122476946a-alignment-mark-protection.md`
+  - `wiki/sources/2026-07-31_ase_cn224583735u-photoelectric-hybrid-rdl.md`
+  - `wiki/sources/2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded.md`
+  - `wiki/sources/2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry.md`
+  - `wiki/sources/2026-08-21_electronics_dual-interposer-hbm-power-integrity.md`
+  - `wiki/sources/2026-08-21_scirep_copper-oxide-reduction-ar-h2-pulsed-plasma.md`
+  - `wiki/sources/2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation.md`
+  - `wiki/sources/2026-09-09_acsaelm_microwave-anneal-cu-cu-150c-3min.md`
+  - `wiki/sources/2026-09-11_mssp_tgv-glass-biaxial-bending-ring-on-ring.md`
+- 更新 wiki 頁面：**16 頁**
+  - `wiki/technologies/hybrid-bonding.md`（W2W 200nm/<40nm overlay vs D2W 1µm 對照；**間距落差首次歸因於機台對準**；微波退火 150°C/3min 為第三條低溫路徑；表面前處理拆為「物理活化 vs 化學還原」雙分量）
+  - `wiki/technologies/foplp.md`（**對位與均勻度為真瓶頸之三方獨立佐證**；檢測成本乘積式爆炸＋KGP 概念；ASE 310mm 兩平台 RDL 對照；ASE「RDL 刻意稀疏化」專利邏輯）
+  - `wiki/technologies/emib.md`（**EMIB-T 120×120mm 與 25µm bump pitch 首次量化**；跨路線封裝尺寸尺規；**橋接架構第三條路線（ASE 模封式）**）
+  - `wiki/technologies/glass-substrate.md`（⚠ **既有「瓶頸在邊緣與切單」論點被限定而非推翻**；TGV 陣列雙軸彎曲與蝕刻變數；Intel TGV 熱循環無失效 vs ~2030 時程沉默）
+  - `wiki/technologies/copackaged-optics.md`（Intel 兩項連接方案一手確認；**CPO IP 三層框架：光子引擎／邊緣連接器／RDL 內部**；ASE 首次以光學 RDL IP 持有者入庫）
+  - `wiki/technologies/hbm4.md`（**堆疊約束新增第四軸：頂層供電**；PDN −66.41%/−65.7%/−66.71%；**775µm 空間三方競用**新增未解問題）
+  - `wiki/technologies/tsv.md`（**環境法規重塑蝕刻化學**；單步驟非 Bosch 消除 scalloping；銅氧化還原機制；HD TSV/TOV 在 1µm D2W 的必要性）
+  - `wiki/technologies/copos.md`（310mm 已是兩家台廠共同格式；面板格式區間端點為 310 與 600；600mm 的檢測成本代價；對位失效第三機制）
+  - `wiki/entities/ase-group.md`（310mm 產線規格；**新增「專利訊號」章節 ×3 件**；SPIL 出現於 Intel ECTC 合作名單）
+  - `wiki/entities/intel.md`（ECTC 2026 一手數據；能力宣告與時程沉默的語氣落差標註）
+  - `wiki/entities/ev-group.md`（GEMINI FB 達 200nm/<40nm；**EVG 同時站在 W2W 已解與 D2W 待解兩端**）
+  - `wiki/entities/ibm.md`（以環境法規驅動重構 TSV 蝕刻化學）
+  - `wiki/entities/onto-innovation.md`（KGP 論述；面板檢測需求的結構性推力）
+  - `wiki/concepts/advanced-packaging-market.md`（**新驅動力條目：環境與法規壓力**；面板反向成本曲線；政策驅動產能樣本）
+  - `wiki/index.md`（頁面總數 490→507；來源數 443→459；新增 silicon-box 實體條目與 16 筆來源條目）
+  - `wiki/overview.md`（健康快照更新；知識空缺 ASE 專利軌與 ECTC 2026 一手資料標記完成）
+- 主要新知識：
+  1. **面板級封裝的真瓶頸是「對位與均勻度（registration & uniformity）」，不是微影解析度——四個彼此獨立的來源同時指向這一點。** Silicon Box 的核心專利（發明人為創辦人本人）主張以 RDL 內建金屬密封環均勻化**大面積電鍍**；上海先鋒的申請案解的是**對位標記在加熱貼片中氧化**導致機器視覺搜尋失敗；SemiEngineering 引 Yole／Bruker 指出**翹曲致 die shift** 大於 FOWLP；而 ASE 的 US20260248002A1 乾脆反轉慣例，讓 **RDL 的 I/O 數低於基板 I/O 數**，主動把路徑移出最脆弱的那一層。意即對位失效至少有**機械、化學/光學、電化學三個機制上獨立的來源**，需要不同解法家族——本 wiki 先前只涵蓋第一項。同時首次取得成本面反向曲線：600mm 面板 @1µm 解析度為 **~10¹² pixels/layer**，RDL 由 3 層走向 9 層，而解析度 5→1µm 使同型相機**慢 4 倍**——檢測成本呈**乘積式**成長，面板的成本優勢不能只用材料利用率計算。**KGP（known-good panel）**概念亦首次入庫。
+  2. **W2W 與 D2W 的間距落差首次被歸因到單一變數：接合機台的逐 die 對準精度。** 同屆 ECTC 2026 上，imec × EV Group 的 W2W 達 **200 nm pitch，post-bond overlay <40 nm 且涵蓋 300mm 晶圓 100% die**（誤差僅佔 pitch 的 20%，是可製造比例而非展示）；CEA-Leti 的 D2W 達 **1 µm**，但其良率確認範圍只到 2 µm，**1 µm 的限制被明確指名為現有機台的對準能力**，並期待下一代達 **0.5 µm (3σ)**。W2W 能領先 5×，正因為整片晶圓一次對準。這把「D2W 微縮的下一步」從材料路線圖問題改寫為**設備商時程問題**——後續應直接追蹤 EVG／Besi／ASMPT 何時宣告 0.5 µm (3σ) 逐 die 對準。量產校準：SoIC 6µm、Foveros Direct 9→3µm，與研究前緣 D2W 1µm 相差約 6×。
+  3. **HBM 堆疊出現第四個架構約束——頂層晶粒的供電品質——且它與散熱層、775µm 高度預算競用同一塊物理空間。** 桂林電子科大的雙中介層方案（在堆疊上方再加一層內嵌電容的中介層）使 PDN 峰值阻抗降 **66.41%／65.7%**、頂層 DRAM 迴路電感降 **66.71%**，三項同步約 −66% 顯示改善來自單一機制（縮短頂層供電迴路）。但該方案佔用的正是 Intel 熱管理專利（US20260271308A1）打算鋪設導熱層的同一塊空間，而 JEDEC 775µm 天花板本身是第三個競用者。**同一塊空間三方競用**，且該論文為純模擬、未報告熱與高度分析——恰好迴避了自身最大的可行性問題。這使本 wiki 既有的「775µm 是 HBM 架構創新的總預算約束」論點取得第三與第四個獨立證據。
+  4. **混合接合的熱預算約束正被兩條獨立路線同時攻擊。** POSTECH 的微波退火 Cu-Cu 接合把基板溫度壓到 **150 °C、時間 3 分鐘**（vs 傳統 ~300 °C / 1 h，降溫 150 °C、時間 20× 縮短），剪切強度 30–32 MPa、比接觸電阻 ~10⁻⁷ Ω·cm²——機制是微波場在**奈米級空氣間隙內被放大**，能量沉積於界面而非基板。這是「改變能量投遞方式」的第三條低溫路徑（既有兩條為材料路徑與壓力/轉移路徑），與 2026-09-15 收錄的 SK hynix 負電荷墊面活化專利（表面電化學狀態）在同一季指向同一約束。⚠ 但微波場在 300mm **圖案化**晶圓上的均勻度未知，駐波問題在放大時很可能成為主導限制。
+  5. **環境法規已成為重塑先進封裝核心單元製程的獨立驅動力，本季第二起。** IBM Research 因 **C₄F₈ 的高 GWP**，改以 CH₄+C₄F₆+BCl₃ 的**單步驟非 Bosch** 深矽蝕刻取代 TSV 慣用 Bosch 製程，並發現 BCl₃ 顯著降低側壁聚合物 F:C 比、且在離子轟擊區效應更明顯（副效益是消除 Bosch 循環的扇貝狀側壁，改善 liner/barrier 覆蓋）。第一起是 Fujifilm 無 PFAS PBO（2026-09-15 收錄，材料側）。兩案分屬**材料**與**製程**兩個層級、行動者分屬**供應商**與 **IDM 研究院**，顯示壓力源自外部法規而非個別廠商偏好。已於 `concepts/advanced-packaging-market.md` 升格為獨立驅動力條目並列入常駐追蹤主題。
+- 專利訊號：本輪五件分為三條主線。（1）**ASE 三連發，且三件所解的問題全部是組裝與材料層級**——模封式橋接解**分層**（CN224583751U）、RDL I/O 反轉解**檢測成本**（US20260248002A1）、光電混合 RDL 解**光罩層數**（CN224583735U）。沒有一件是前端製程問題。這說明 ASE 的 2.5D 策略不是追趕 foundry，而是**繞過 foundry 的成本結構**；同時本 wiki 首次記載橋接架構的**第三條路線**（OSAT 組裝線上的模封內矽橋，不需 foundry 級中介層產線），以及 ASE 作為**光學 RDL 結構 IP 持有者**的新身分。（2）**面板級瓶頸的跨國收斂**——新加坡新創（電鍍均勻度）與中國材料廠（對位標記抗氧化）從完全不同方向指向同一個 registration & uniformity 問題。（3）**發明人訊號**——Silicon Box 的核心專利具名發明人是創辦人 Sehat Sutardja 本人，對一件 2024 優先權案件而言通常標示核心架構主張。⚠ 五件中兩件為中國**實用新型**（僅形式審查）、兩件為**公開申請**（未核准），全部屬布局訊號，已於各頁逐條標註限定。
+- 下輪建議：
+  1. 取得 `10.1016/j.mssp.2026.111165` 全文，補上 TGV 雙軸彎曲強度**絕對數值**與蝕刻製程的貢獻量——這是目前唯一可能調整玻璃基板論點的缺口。
+  2. 追蹤設備商（EVG／Besi／ASMPT）是否宣告 **0.5 µm (3σ) D2W 對準**時程。
+  3. 專利軌下輪輪替至 **Samsung**（本輪未檢索）與 **Amkor/JCET**；ASE 已完成。
+  4. 把 **PFAS／氟化氣體規範、製程 GWP 揭露**列為常駐 collect 主題，觀察是否擴散至第三個單元製程。
+  5. Silicon Box 目前兩筆來源皆為新聞稿或其轉載；建議鎖定 Yole／TechInsights 第三方分析或 ECTC/IMAPS 論文以取得獨立驗證。
+  6. **lint 待辦**：`wiki/index.md` 的來源清單非全域日期排序（2026-05-10 之後重新起始，共 70 組逆序對），為歷次逐批追加所致；本輪新增條目已依日期插入頂段，但整份清單建議下次 lint 一併重排。

@@ -3,8 +3,8 @@ title: "IBM Research / IBM 研究院"
 category: entity
 tags: [research, 3D-packaging, nanostack, hybrid-bonding, sub-2nm, chiplet]
 created: 2026-09-11
-updated: 2026-09-11
-sources: [2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below]
+updated: 2026-09-16
+sources: [2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation]
 related:
   - wiki/technologies/hybrid-bonding.md
   - wiki/concepts/thermal-management.md
@@ -51,3 +51,23 @@ IBM Research 在先進封裝領域定位為技術先行者（technology pioneer�
 - **Samsung**：IBM Power 晶片製造合作夥伴；2nm GAA 技術共同研發
 - **GlobalFoundries**：長期晶圓代工合作夥伴（Albany NanoTech 聯盟）
 - **Intel**：競爭關係（企業 CPU + 高效能運算）
+
+---
+
+## 2026-09-16 collect 更新：單步驟非 Bosch 深矽蝕刻——以環境法規為驅動的 TSV 製程研究
+
+*Source: Richa Agrawal, Nathan Marchack, Robert L. Bruce 等 10 人（IBM Research — Thomas J. Watson Research Center），*J. Vac. Sci. Technol. A*，2026-09-08*
+→ [[sources/2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation]]
+
+- **問題**：TSV 蝕刻慣用的 **Bosch 製程（C₄F₈ + SF₆）**，其中 **C₄F₈ 的全球暖化潛勢（GWP）極高**。
+- **IBM 方案**：以 **CH₄ + C₄F₆** 取代 C₄F₈，加入 **BCl₃** 作為蝕刻添加物搭配 SF₆，構成**單步驟（非交替循環）**系統。
+- **本文發現**：加入 BCl₃ **顯著降低側壁聚合物膜的 F:C 比**（XPS），且**在受離子轟擊區域效應更明顯**——提供一個**深度相依的側壁控制旋鈕**。
+- **表徵**：ToF-SIMS + XPS。
+
+**對本頁的意義**：本 wiki 的 IBM 條目先前集中在 3D 整合與研究合作。本篇把 IBM 定位在一個具體且結構性的位置——**以環境法規為驅動力，重新設計先進封裝的核心單元製程**。
+
+這是本季**第二起**同類案例（第一起為 Fujifilm 無 PFAS PBO，2026-09-15 收錄，材料側）。差異在於：Fujifilm 是材料商回應法規，IBM 則是 **IDM 研究機構主動重構製程化學**。
+
+**單步驟蝕刻的技術副效益**：消除 Bosch 循環固有的**扇貝狀（scalloping）側壁**，直接影響 liner/barrier 覆蓋一致性與 TSV 可靠度。詳見 [[technologies/tsv]]。
+
+⚠ 摘要層級，無量化深寬比或蝕刻率；研究階段製程，未見量產採用。

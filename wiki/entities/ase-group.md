@@ -3,8 +3,8 @@ title: "ASE Group / 日月光投控"
 category: entity
 tags: [OSAT, advanced-packaging, CoWoP, FOPLP, chiplet, CPO, LEAP]
 created: 2026-04-25
-updated: 2026-09-11
-sources: [2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below, 2026-08-05_trendforce_tsmc-cowos-cow-outsourcing-osat, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2026-05-08_aseglobal_ase-wus-kaohsiung-focoes-hub, 2026-05-26_semiconductor-digest_ase-310mm-plp-ectc2026, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-11_trendforce_ase-spil-zhunan-plant, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-07-01_trendforce_ase-price-hike-20pct]
+updated: 2026-09-16
+sources: [2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below, 2026-08-05_trendforce_tsmc-cowos-cow-outsourcing-osat, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2026-05-08_aseglobal_ase-wus-kaohsiung-focoes-hub, 2026-05-26_semiconductor-digest_ase-310mm-plp-ectc2026, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-11_trendforce_ase-spil-zhunan-plant, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-07-01_trendforce_ase-price-hike-20pct, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-31_ase_cn224583735u-photoelectric-hybrid-rdl, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-06-02_intel_ectc2026-emib-t-cpo-glass]
 related:
   - wiki/technologies/cowos.md
   - wiki/technologies/copos.md
@@ -145,3 +145,70 @@ ASE 是全球最大的 OSAT，在 TSMC CoWoS 產能緊缺背景下，CoWoP 技�
 *Source: [[sources/2026-09-01_trendforce_nvidia-mediatek-xpu-ecosystem]]*
 
 TrendForce（引用經濟日報）點名 **ASE** 與 **Sigurd Microelectronics** 為 NVIDIA $3.5B MediaTek 投資後的**先進封裝直接受益者**——兩家廠商均與 NVIDIA、MediaTek、TSMC、Google 有長期封裝合作關係。MediaTek XPU 量產後，封裝業務預期進一步集中於此生態系。
+
+---
+
+## 2026-09-16 collect 更新
+
+### 310mm 面板線：兩個平台的 RDL 精度相差一個量級
+
+*Source: AnySilicon（2026-05-28）→ [[sources/2026-05-28_anysilicon_ase-310mm-panel-focos-bridge]]*
+
+| 項目 | 數值 |
+|------|------|
+| 面板格式 | 310 mm × 310 mm |
+| 可用面積 | **96,100 mm²**（≈ 300 mm 晶圓的 1.36×） |
+| **FOCoS**（Fan-Out Chip-on-Substrate）L/S | **2/2 µm** |
+| **FOCoS-Bridge**（嵌入矽橋）L/S | **8/8 µm** |
+| 目標應用 | AI 處理器、HPC、chiplet 架構 |
+
+本頁先前已記載 ASE 的 310mm 佈局，**首次取得兩平台的 RDL 線寬對照**。8/8 µm 用於 bridge 版本說明：ASE 把高密度需求推給**矽橋本身**，面板 RDL 只做扇出與電源——與 TSMC CoWoS-L（中介層承擔全部密度）的分工不同。
+
+⚠ 該來源未提供量產時程、產能、客戶或良率；與 ASE COO 於 2026-08-03「12 個月內玻璃基板不會量產」的保守語氣並存，顯示 ASE 的面板路線是**有機基板面板先行、玻璃在後**。
+
+---
+
+### 專利訊號 / Patent Signals（2026-09-16 新增）
+
+> 專利為**前瞻訊號，非已量產能力**。以下三件中，兩件為中國**實用新型**（僅形式審查），一件為美國**公開申請**（未核准）。
+
+本輪依知識空缺清單以 `pa="advanced semiconductor engineering" and pd within "2026"` 檢索 EPO OPS，命中 25 件，篩選出三件具封裝架構內容者。三件合起來勾勒出一個一致的策略：**ASE 正在把 2.5D 整合的問題，用組裝與材料的工具解掉。**
+
+#### 1. CN224583751U — 模封式橋接（2026-07-31 公開，家族 100676126）
+
+橋接晶片主動面走 die-to-die 線；**被動面下方的電連接件先以第一模封層包覆，第二模封層再包覆整體**。明述所解問題為**附著力不足／分層**。
+→ [[sources/2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded]]
+
+**意義**：這是 **FOCoS-Bridge 的結構對應物**，也讓本 wiki 首次記載橋接架構的**第三條路線**——既非 Intel EMIB（基板內嵌矽橋 + TSV），也非 TSMC CoWoS-L（矽中介層內含 LSI），而是**OSAT 組裝線上的模封內矽橋**，不需 foundry 級中介層產線。詳見 [[technologies/emib]]。
+
+#### 2. US20260248002A1 — RDL 的 I/O 數**低於**基板 I/O 數（2026-08-20 公開，家族 100903251）
+
+獨立項以一個**不等式**為限定，而非幾何特徵。慣例上 RDL 是高密度層、有機基板是低密度層；本案刻意反轉，**把部分 die-to-die 路徑下沉到基板走**。
+→ [[sources/2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry]]
+
+**意義**：與同輪收錄的面板檢測成本分析對讀（RDL 3→9 層、sub-2 µm L/S、10¹² pixels/layer、5→1 µm 解析度的 4× 產能懲罰），其邏輯清楚——**大面板上的 RDL 是最貴、最受翹曲影響、檢測成本呈乘積成長的一層**。刻意稀疏化 RDL 是以電性效能換取更便宜、更可檢測的面板。若此為量產意圖，ASE 的面板路線不是「矽中介層放大且變便宜」，而是**互連預算的重新分配**。
+
+#### 3. CN224583735U — 光電混合重佈線結構（2026-07-31 公開，家族 100681519）
+
+RDL 中光焊墊與電焊墊並置；光焊墊上疊導光材料，**頂部導電材料兼作光波導的反射界面**。
+→ [[sources/2026-07-31_ase_cn224583735u-photoelectric-hybrid-rdl]]
+
+**意義**：本 wiki 先前把 ASE 在 CPO 中定位為**組裝與產能夥伴**，從未記載其持有**光學互連結構本身**的 IP。其經濟邏輯是重用既有頂部金屬層作反射面，**光層不增加額外光罩層**——OSAT 式成本論證，與 TSMC COUPE 的效能論證（光柵耦合器 + 微透鏡）形成對比。詳見 [[technologies/copackaged-optics]]。
+
+**三件的共同特徵**：所解的問題分別是**分層、成本、光罩層數**——全部是組裝與材料層級的問題，沒有一件是前端製程問題。這與 ASE 的 OSAT 定位高度一致，也說明其 2.5D 策略不是追趕 foundry，而是**繞過 foundry 的成本結構**。
+
+---
+
+### 新關係訊號：SPIL 出現在 Intel ECTC 2026 合作名單
+
+Intel Foundry 的 ECTC 2026 官方部落格列出其 20 篇論文的合作方，包含 **Siliconware Precision Industries（矽品，ASE 集團成員）**。→ [[sources/2026-06-02_intel_ectc2026-emib-t-cpo-glass]]
+
+本 wiki 對 Intel 封裝外包夥伴的敘述過去集中在 **Amkor**。ASE 集團成員出現在其 ECTC 合作名單，值得作為後續追蹤的關係訊號——但**單次論文合作不等於供應鏈關係**，目前僅記錄，不推論。
+
+---
+
+### 新增未解問題
+
+- ASE 模封式橋接的 die-to-die 頻寬與 EMIB 相比如何？公開資料皆無電性數據。
+- US20260248002A1 的 I/O 反轉是量產意圖還是防禦性布局？需追蹤 FOCoS 量產產品的實際 RDL／基板層數。
+- Intel × SPIL 的 ECTC 合作性質為何？

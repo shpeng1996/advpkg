@@ -3,8 +3,8 @@ title: "先進封裝市場 / Advanced Packaging Market"
 category: concept
 tags: [market, forecast, CAGR, supply-chain, HBM, chiplet, geopolitics, equipment, SIA, Omdia, Yole, WFE, substrate-market, framework]
 created: 2026-04-24
-updated: 2026-09-15
-sources: [2026-07-31_semieng_chip-week-149, 2026-04-24_initial-survey, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2026-01-23_trendforce_chip-tools-tel-asml, 2026-03-05_trendforce_intel-emib-billions, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2025-12-18_trendforce_micron-capex-hbm4, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2025-05-13_trendforce_top10-osat-2024, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-04-16_ontoinnovation_dragonfly-g5-qualified, 2026-06-23_communicationstoday_foplp-glass-substrate-market-8b-2030, 2026-06-29_trendforce_china-osat-tongfu-jcet-investment, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-26_semieng_chip-week-144, 2026-07-01_trendforce_ase-price-hike-20pct, 2026-07-04_semieng_chip-week-145, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-07-03_trendforce_anthropic-samsung-advanced-packaging, 2026-05-08_trendforce_ajinomoto-abf-1b-land-buy-2032-margins, 2026-07-24_semieng_chip-week-148]
+updated: 2026-09-16
+sources: [2026-07-31_semieng_chip-week-149, 2026-04-24_initial-survey, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2026-01-23_trendforce_chip-tools-tel-asml, 2026-03-05_trendforce_intel-emib-billions, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2025-12-18_trendforce_micron-capex-hbm4, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2025-05-13_trendforce_top10-osat-2024, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-04-16_ontoinnovation_dragonfly-g5-qualified, 2026-06-23_communicationstoday_foplp-glass-substrate-market-8b-2030, 2026-06-29_trendforce_china-osat-tongfu-jcet-investment, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-26_semieng_chip-week-144, 2026-07-01_trendforce_ase-price-hike-20pct, 2026-07-04_semieng_chip-week-145, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-07-03_trendforce_anthropic-samsung-advanced-packaging, 2026-05-08_trendforce_ajinomoto-abf-1b-land-buy-2032-margins, 2026-07-24_semieng_chip-week-148, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-08-06_siliconbox_500m-units-panel-scale, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry]
 related:
   - wiki/entities/tsmc.md
   - wiki/entities/sk-hynix.md
@@ -714,3 +714,61 @@ Applied Materials 於 Q3 FY2026 財報（約 2026-08-14 公布）**將全年先�
 ⚠ MDPI 期刊綜述，非一手實驗或量產資料。作為**框架**引用適當；作為**具體數字**來源則應優先採用廠商一手資料或 ECTC/IEDM 論文。
 
 - 引用：`wiki/sources/2026-05-27_atlaspcb_ectc2026-substrate-market-fujifilm-pbo.md`、`wiki/sources/2026-08-30_micromachines_advanced-packaging-architectures-review.md`、`wiki/sources/2026-08-27_tomshardware_glass-substrate-roadmaps-examined.md`
+
+---
+
+## 2026-09-16 collect 更新
+
+### 1. ⭐ 新驅動力條目：環境與法規壓力
+
+本頁的「主要驅動力」一節目前以 AI 算力需求、成本、效能為主軸。本輪出現**第二起**環境規範直接重塑先進封裝核心單元製程的案例，足以支持把它升格為一條獨立驅動力：
+
+| 時間 | 案例 | 受影響層級 | 行動者類型 |
+|------|------|-----------|-----------|
+| 2026-09-15 收錄 | **Fujifilm 無 PFAS PBO** | 介電材料 | 材料商回應法規 |
+| **2026-09-16 收錄** | **IBM 單步驟非 Bosch 深矽蝕刻**（以 CH₄+C₄F₆+BCl₃ 取代高 GWP 的 C₄F₈） | **TSV 通孔蝕刻** | **IDM 研究機構主動重構製程化學** |
+
+→ [[sources/2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation]]
+
+**為何值得升格**：兩案分屬材料與製程兩個不同層級，行動者亦不同（材料供應商 vs IDM 研究院），顯示壓力來自**外部法規環境**而非個別廠商偏好。氟化氣體與 PFAS 規範同時作用於**介電材料**與**蝕刻化學**兩條路徑，且兩者都是先進封裝不可繞過的單元製程。
+
+**追蹤建議**：後續 collect 應把 PFAS／氟化氣體規範、半導體製程 GWP 揭露要求列為常駐主題，觀察是否擴散至第三個單元製程（例如清洗、CMP 漿料、光阻）。
+
+### 2. 面板級封裝的反向成本曲線：檢測
+
+*Source: SemiEngineering，Anne Meixner（2026-07-07）→ [[sources/2026-07-07_semieng_panel-inspection-metrology-hdfo]]*
+
+本頁與 [[technologies/foplp]] 的面板成本論述長期以**收益面**為主（材料利用率 <70% → >90%、面積 1.36×～5.1×）。本輪首次取得**成本面**的量化方向：
+
+| 項目 | 現況 → 方向 |
+|------|-----------|
+| RDL 層數 | 3 → **9** |
+| RDL 最小線寬（量產） | 5 µm → **2 µm pitch**（5 年內） |
+| Bump / micropillar pitch | 20 µm → **5 µm** |
+| 光阻厚度 | 50–100 → 450 → **650 µm** |
+| 檢測資料量 | **~10¹² pixels/layer**（600 mm 面板 @1 µm 解析度） |
+| 解析度 5 µm → 1 µm | 同型相機**檢測速度慢 4 倍** |
+
+**結構推論**：10¹² pixels/layer × 最多 9 層，再乘 5→1 µm 的 **4× 產能懲罰**——面板檢測成本呈**乘積式**而非線性成長。**面板級的成本優勢不能只用材料利用率計算。**
+
+**KGP（known-good panel）**概念首次入庫：HDFO 為 chip-last，必須在貼上昂貴 KGD（HBM、TPU）前確認整片面板無缺陷。這使面板路線對檢測設備商（[[entities/onto-innovation]]、KLA、Bruker、Koh Young、Avarustech）的依賴度**高於**晶圓級路線——是本頁「製程控制設備廠」條目的新結構性推力。
+
+Avarustech（Arun Aiyer）對整個轉變的概括：「This migration brings **wafer/fab class requirements onto formats that were historically inspected with PCB-grade sensitivity**.」
+
+### 3. OSAT 的回應：主動降低 RDL 複雜度
+
+ASE 的 **US20260248002A1**（2026-08-20 公開）以一個**不等式**為獨立項限定：**RDL 的 I/O 數 < 基板的 I/O 數**——刻意把部分 die-to-die 路徑下沉到有機基板。→ [[sources/2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry]]
+
+與上一節對讀，這是對檢測成本曲線的**直接經濟回應**：以電性效能換取更便宜、更可檢測的面板。若為量產意圖，則面板級的成本優勢**不只**來自面積利用率，也來自**主動降低 RDL 複雜度**。
+
+⚠ 美國公開申請案，未核准；屬布局訊號。
+
+### 4. 政策驅動產能的具體樣本：Silicon Box
+
+→ 新建實體頁 [[entities/silicon-box]]、[[sources/2026-08-06_siliconbox_500m-units-panel-scale]]
+
+Silicon Box（新加坡）義大利 Novara 廠總投資 **EUR 3.2 B**，其中 **EUR 1.3 B 為 EU Chips Act 補助**，並於 2026-03 取得 **Open EU Foundry** 地位；而公司估值為 **> USD 1.7 B**。
+
+**投資額近乎估值兩倍、且逾四成為公共補助**——這是本 wiki 目前最清楚的「**政策驅動而非現金流驅動**」封裝產能樣本，可與美國 CHIPS Act 條目並列，用於比較兩地的補助結構差異。
+
+（出貨數據：累計 5 億顆、相對 2025-10 為 5×、目標 2026 Q4 初達 15 億顆。⚠ 公司新聞稿數字，良率未量化，無第三方驗證；「顆數」不等於面積或價值。）

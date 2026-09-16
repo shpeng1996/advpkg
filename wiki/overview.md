@@ -2,7 +2,7 @@
 title: "先進封裝知識庫總覽 / Advanced Packaging Wiki Overview"
 category: overview
 created: 2026-04-24
-updated: 2026-09-15
+updated: 2026-09-16
 related: [wiki/index.md, wiki/analyses/2026-09-15_knowledge-base-consolidation.md]
 ---
 
@@ -100,17 +100,29 @@ related: [wiki/index.md, wiki/analyses/2026-09-15_knowledge-base-consolidation.m
 - [ ] HBM4E / HBM5 獨立規格頁
 
 **資料源**
-- [x] 專利軌擴大至 Samsung、SK hynix、ASE、Amkor 申請人 —— 2026-09-15 完成：SK hynix ×3、Amkor ×1、LG Chem ×1（Samsung 僅檢出 2025 年以前案件，ASE 待下輪以 `pa="advanced semiconductor engineering" and pd within "2026"` 收斂）
-- [ ] 論文軌鎖定 ECTC / IEDM 2026 與 IEEE Xplore OA —— 2026-09-15 部分：已收 IEEE TC 一級期刊論文（DieCARE）；ECTC 2026 論文原文仍未直接取得（目前皆為二手報導）
+- [x] 專利軌擴大至 Samsung、SK hynix、ASE、Amkor 申請人 —— 2026-09-15：SK hynix ×3、Amkor ×1、LG Chem ×1。**2026-09-16 完成 ASE**：以 `pa="advanced semiconductor engineering" and pd within "2026"` 命中 25 件，篩出 3 件具封裝架構內容者（模封式橋接、RDL I/O 反轉、光電混合 RDL）。**Samsung 仍未檢出 2026 年案件，下輪輪替至 Samsung + Amkor/JCET。**
+- [x] 論文軌鎖定 ECTC / IEDM 2026 與 IEEE Xplore OA —— **2026-09-16 大幅推進**：取得 Intel Foundry **ECTC 2026 官方一手來源**（20 篇論文、EMIB-T 120×120mm/25µm bump pitch）、imec × EVG **ECTC 2026 W2W 200nm/<40nm overlay** 新聞稿、CEA-Leti **ECTC 2026 D2W 1µm** 發表說明。ECTC 2026 已由「純二手報導」進入「一手機構來源」階段；**IEEE Xplore 論文原文（PDF）仍未直接取得**，下輪續追。
+
+- [ ] **PFAS／氟化氣體規範與製程 GWP 揭露**（2026-09-16 新增）—— 已出現兩起環境法規重塑核心單元製程之案例（Fujifilm 無 PFAS PBO、IBM 非 Bosch 深矽蝕刻），列為常駐 collect 主題，觀察是否擴散至第三個單元製程（清洗、CMP 漿料、光阻）
+- [ ] **設備商 D2W 對準路線圖**（2026-09-16 新增）—— D2W 微縮的單一主導變數已確認為機台逐 die 對準精度；需追蹤 EVG／Besi／ASMPT 是否宣告 0.5 µm (3σ) 時程
+- [ ] **TGV 陣列力學數值**（2026-09-16 新增）—— `10.1016/j.mssp.2026.111165` 僅取得摘要；需全文以補上雙軸彎曲強度絕對值與蝕刻製程貢獻量，方能決定是否進一步調整玻璃基板論點
+
+**缺實體頁（本輪補齊一項）**
+- [x] Silicon Box —— 2026-09-16 完成，見 [[entities/silicon-box]]
 
 ---
 
-## Wiki 健康狀態 / Wiki Health（2026-09-15，daily collect 後更新）
+## Wiki 健康狀態 / Wiki Health（2026-09-16，daily collect 後更新）
 
-- **頁面總數**：490（實體 21、技術 15、概念 3、來源 443、分析 5、系統頁 3）
-- **原始來源數**：451（articles 417、patents 15、papers 17、reports 2）
-- **操作歷史**：collect 128 次（121 日）、ingest 24、query 2、lint 2
-- **資料源三軌**：WebSearch ✓ ｜ EPO OPS ✓ ｜ OpenAlex ✓（三軌均於 2026-09-15 正常運作）
+- **頁面總數**：507（實體 22、技術 15、概念 3、來源 459、分析 5、系統頁 3）
+- **原始來源數**：467（articles 423、patents 20、papers 22、reports 2）
+- **操作歷史**：collect 129 次（122 日）、ingest 24、query 2、lint 2
+- **資料源三軌**：WebSearch ✓ ｜ EPO OPS ✓ ｜ OpenAlex ✓（三軌均於 2026-09-16 正常運作；OpenAlex 3 組查詢中 1 組遇 429，依規範重試 1 次後跳過，另 2 組正常）
+- **OPS 配額**：2026-09-16 使用 5 次呼叫（1 auth + 4 search），上限 10，全部 HTTP 200
 - **最近 Lint**：2026-09-15
-- **已知問題**：失效 wiki link 已於 2026-09-15 lint 修復；6 個 lint 建議實體頁仍未建（Google/Apple/Broadcom/MediaTek/AMAT/GlobalFoundries 等）
-- **2026-09-15 collect 新增去重機制發現**：`advancedpackaging.news` 同一文章存在兩種 URL 形式（`/YYYY/MM/DD/slug/` 與 `/article/<id>/<Slug>`），純 URL 字串比對無法攔截。已於 registry 以 `# DUP-OF` 註記；**建議後續 lint 增加「標題正規化」二次去重**，比照論文軌 Track C 的做法
+- **已知問題**：
+  - 6 個 lint 建議實體頁仍未建（Google／Apple／Broadcom／MediaTek／AMAT／GlobalFoundries 等）
+  - `wiki/index.md` 來源清單非全域日期排序（2026-05-10 之後重新起始，共 70 組逆序對），為歷次逐批追加所致，待下次 lint 重排
+  - **2026-09-16 執行環境異常**：使用者本機 Linux workspace（device_bash）啟動失敗，本輪改以檔案暫存／回寫方式於雲端完成；**因此該日的 git commit 一步未執行**，檔案已寫回磁碟但未進版控，需補做
+- **2026-09-15 去重機制發現（仍有效）**：`advancedpackaging.news` 同一文章存在兩種 URL 形式，純 URL 比對無法攔截；建議 lint 增加「標題正規化」二次去重
+- **2026-09-16 去重機制驗證**：專利軌 family-id 去重攔下 3 件已收錄家族（Intel ×2、TSMC ×1），論文軌 DOI 去重攔下 4 篇已收錄 DOI——**雙鍵去重機制運作正常**

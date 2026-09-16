@@ -3,8 +3,8 @@ title: "英特爾 / Intel"
 category: entity
 tags: [IDM, advanced-packaging, EMIB, Foveros, Intel18A, Clearwater-Forest, Foveros-Direct, glass-substrate, 14A, High-NA-EUV, silicon-capacitors, Google-TPU-v8e, Q2-2026-earnings, Tesla-14A, HLFF, RAMP-C, Secure-Enclave, Rio-Rancho]
 created: 2026-04-24
-updated: 2026-09-15
-sources: [2026-08-24_intel-newsroom_hot-chips-2026-diamond-rapids-foveros-ucie, 2026-04-24_initial-survey, 2026-07-20_trendforce_tsmc-265b-arizona-intel-novalake, 2026-03-18_trendforce_intel-emib-malaysia, 2026-03-03_trendforce_intel-clearwater-forest, 2026-03-05_trendforce_intel-emib-billions, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-04-20_trendforce_intel-foundry-14a-equipment, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-01_semianalysis_cpus-back-datacenter-2026, 2026-04-10_3dincites_intel-gan-chiplet, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks, 2026-06-21_convergedigest_intel-emib-t-multi-die-packaging, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap, 2026-07-01_trendforce_terafab-intel-veteran-hire, 2026-04-07_tomshardware_intel-joins-terafab, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-01-30_tomshardware_intel-ai-chip-test-vehicle-emib-t, 2026-07-14_trendforce_intel-ireland-5b-intel3-europe, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-04_semieng_from-blueprint-intel-hlff, 2026-07-31_semieng_chip-week-149, 2026-08-13_trendforce_intel-memory-reentry-xbm-zam-saimemory]
+updated: 2026-09-16
+sources: [2026-08-24_intel-newsroom_hot-chips-2026-diamond-rapids-foveros-ucie, 2026-04-24_initial-survey, 2026-07-20_trendforce_tsmc-265b-arizona-intel-novalake, 2026-03-18_trendforce_intel-emib-malaysia, 2026-03-03_trendforce_intel-clearwater-forest, 2026-03-05_trendforce_intel-emib-billions, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-04-20_trendforce_intel-foundry-14a-equipment, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-01_semianalysis_cpus-back-datacenter-2026, 2026-04-10_3dincites_intel-gan-chiplet, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks, 2026-06-21_convergedigest_intel-emib-t-multi-die-packaging, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap, 2026-07-01_trendforce_terafab-intel-veteran-hire, 2026-04-07_tomshardware_intel-joins-terafab, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-01-30_tomshardware_intel-ai-chip-test-vehicle-emib-t, 2026-07-14_trendforce_intel-ireland-5b-intel3-europe, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-04_semieng_from-blueprint-intel-hlff, 2026-07-31_semieng_chip-week-149, 2026-08-13_trendforce_intel-memory-reentry-xbm-zam-saimemory, 2026-06-02_intel_ectc2026-emib-t-cpo-glass]
 related:
   - wiki/entities/tsmc.md
   - wiki/entities/samsung.md
@@ -439,3 +439,46 @@ TrendForce Insights（2026-09-10）：**Foveros Direct 第二代以 3µm bond pi
 ⚠ **Intel 未公開 3µm 的時程**，不可據此推論 Intel 將先於 TSMC 達成更細 pitch。
 
 - 引用：`wiki/sources/2026-08-27_tomshardware_glass-substrate-roadmaps-examined.md`、`wiki/sources/2026-09-10_trendforce_hybrid-bonding-race-soic-foveros.md`
+
+---
+
+## 2026-09-16 collect 更新：ECTC 2026 一手來源——EMIB-T 尺寸與 CPO/玻璃可靠度
+
+*Source: Intel Foundry 官方部落格，Lori Scott（Senior Director of Marketing, Intel Foundry），2026-06-02*
+→ [[sources/2026-06-02_intel_ectc2026-emib-t-cpo-glass]]
+⚠ **一手但具行銷性質**：數字為 Intel 自述之能力目標，非第三方驗證。
+
+### EMIB-T 規格首次量化到實體尺寸
+
+| 項目 | 數值 | wiki 先前狀態 |
+|------|------|-------------|
+| 封裝尺寸 | **up to 120 × 120 mm** | 缺（僅有「>9× 光罩」） |
+| 首層互連 bump pitch | **down to 25 µm** | 缺 |
+| 矽含量 | > 9× reticles | 已有 |
+| HBM4E 訊號率（封裝側） | **> 12 Gb/s** | 缺 |
+| UCIe 訊號率 | **64 Gb/s** | 與 UCIe 3.0 一致 |
+
+**120 × 120 mm 的意義**：同輪收錄的 SemiEngineering 面板分析指出矽中介層封裝一般上限約 **100 × 100 mm**（CoWoS 為 80 × 80 mm 及以上）。EMIB-T 能超過該上限，**正因為它不是整片矽中介層**——橋接只在需要處放矽，其餘由有機基板承擔。這是本 wiki 首次能以**單一可比尺寸**表達 EMIB-T 的架構優勢，而非僅以光罩倍數。詳見 [[technologies/emib]]。
+
+⚠ **HBM4E > 12 Gb/s 是封裝側能力，不是記憶體側 JEDEC 規格**，兩者不可混用。
+
+### CPO：兩項連接方案
+
+1. **可拆卸邊緣光連接器**——玻璃扇出耦合器 + expanded-beam edge connector。
+2. **V-groove 硬式玻璃耦合器**——取代傳統 FAU（fiber array unit）。
+
+兩者取向一致：**以剛性玻璃結構取代黏著式光纖陣列**，把光連接從組裝步驟變成結構件。與 GlobalFoundries + Corning 的可拆卸玻璃波導連接器構成同一屆 ECTC 上兩家 foundry 的獨立收斂。詳見 [[technologies/copackaged-optics]]。
+
+### 玻璃核心基板：能力宣告與時程沉默
+
+- **銅填充 TGV「歷經極嚴苛熱循環無失效」**
+- 相對有機材料具優越平坦度與尺寸穩定性
+- 支援「電與光整合於同一平台」
+
+⚠ **語氣落差須並列標註**：本文通篇只述能力、**完全未提時程**，而本 wiki 於 2026-09-15 記載 Intel 玻璃基板商業化已推遲至 **~2030**。兩者不矛盾，但引用時須同時標註，避免被讀成「即將量產」。
+
+### ECTC 2026 論文規模與合作方
+
+共 **20 篇**技術論文，合作方包含 **Siliconware Precision Industries（矽品，ASE 集團）**、Fourier Scientific、**NIST**、**EV Group**。
+
+本 wiki 對 Intel 封裝外包夥伴的敘述過去集中在 Amkor；**SPIL 出現在其 ECTC 合作名單是新的關係訊號**，僅記錄，暫不推論。

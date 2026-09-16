@@ -3,8 +3,8 @@ title: "TSV — Through-Silicon Via / 矽穿孔"
 category: technology
 tags: [TSV, HBM, interposer, 3D-IC, CoWoS, manufacturing, backside-power, advanced-packaging, radiation, redundancy, reliability]
 created: 2026-08-10
-updated: 2026-09-15
-sources: [2026-04-22_semieng_tsv-complexity-manufacturing-bottleneck, 2026-08-21_semieng_chip-week-152]
+updated: 2026-09-16
+sources: [2026-04-22_semieng_tsv-complexity-manufacturing-bottleneck, 2026-08-21_semieng_chip-week-152, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-08-21_scirep_copper-oxide-reduction-ar-h2-pulsed-plasma, 2026-06-08_irtnanoelec_d2w-hybrid-bonding-1um-pitch]
 related:
   - wiki/technologies/hbm4.md
   - wiki/technologies/cowos.md
@@ -194,3 +194,39 @@ A*STAR IME（*Advanced Photonics Nexus*，2026-06-30）在 CPO 光引擎情境�
 ⚠ 純模擬研究，無實測輻照試驗驗證，摘要未給出具體失效閾值。該筆 OpenAlex 記錄的機構欄位有明顯解析錯誤（出現「New York Times」），引用時應以論文原文為準。
 
 - 引用：`wiki/sources/2026-08-24_electronics_hbm-reliability-bandwidth-k-out-of-n.md`、`wiki/sources/2026-08-11_microelectronicsint_tsv-rdl-electron-irradiation.md`
+
+---
+
+## 2026-09-16 collect 更新：蝕刻化學被環境法規重塑；銅表面前處理機制入庫
+
+### 1. 單步驟非 Bosch 深矽蝕刻——驅動力是法規，不是效能
+
+**《Understanding sidewall passivation composition of single-step non-Bosch processes for deep Si etch》**（IBM Research，*J. Vac. Sci. Technol. A*，2026-09-08）→ [[sources/2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation]]
+
+- TSV 蝕刻慣用 **Bosch 製程（C₄F₈ + SF₆）**；問題在於 **C₄F₈ 的全球暖化潛勢（GWP）極高**。
+- IBM 的替代方案：以 **CH₄ + C₄F₆** 取代 C₄F₈，並加入 **BCl₃** 作為蝕刻添加物搭配 SF₆，構成**單步驟（非交替循環）**系統。
+- 本文發現：**加入 BCl₃ 顯著降低側壁聚合物膜的 F:C 比**（XPS 量測），且**在受離子轟擊區域效應更明顯**——這提供了一個**深度相依的側壁控制旋鈕**。
+- 表徵：ToF-SIMS + XPS。
+
+**兩層意義**：
+
+1. **製程層面**：單步驟蝕刻消除 Bosch 循環固有的**扇貝狀（scalloping）側壁**，直接影響 liner/barrier 的覆蓋一致性與 TSV 可靠度。本頁「製程流程」一節應加註此一替代路線。
+2. **結構層面（更重要）**：本研究的動機是**環境法規，不是效能**。這是本季**第二起**環境規範重塑先進封裝核心單元製程的案例——第一起是 **Fujifilm 無 PFAS PBO**（2026-09-15 收錄，材料側），本篇把壓力推進到**通孔蝕刻步驟**，且發生在 IDM 研究機構（[[entities/ibm]]）。
+
+   **建議**：把「環境與法規壓力」升格為 wiki 追蹤的一條**獨立驅動力**，而非零星註記。已於 [[concepts/advanced-packaging-market]] 建立對應條目。
+
+⚠ 摘要層級，無量化深寬比或蝕刻率；研究階段製程，未見量產採用。
+
+### 2. 銅氧化層還原：TSV／微凸塊共用的前處理機制
+
+**《Reduction behavior and mechanism of copper oxide in Ar/H₂ pulsed plasma》**（漢陽大學 × KITECH，*Scientific Reports*，2026-08-21）→ [[sources/2026-08-21_scirep_copper-oxide-reduction-ar-h2-pulsed-plasma]]
+
+該研究明確把**半導體互連、TSV、微凸塊、混合接合**列為共用同一問題的四個場景：空氣暴露或製程形成的氧化層造成接觸電阻上升、界面接合強度下降、元素擴散受阻、可靠度劣化。
+
+關鍵發現：**還原效率與表面狀態對電漿功率、氣體組成的響應方向不同**——機制由**物理表面活化**與**化學還原反應**兩個可獨立調控的分量合成；**脈衝（而非連續）電漿改變的是化學，不只是熱負載**。
+
+實務意涵：「還原乾淨」與「表面活性高」未必同時達成，存在製程窗口取捨。詳見 [[technologies/hybrid-bonding]] 本輪更新。
+
+### 3. HD TSV / TOV 在 D2W 1 µm 的角色
+
+CEA-Leti 的 D2W 混合接合 1 µm 間距展示，其製程模組明列 **high-density TSV** 與 **through-oxide via (TOV)**（→ [[sources/2026-06-08_irtnanoelec_d2w-hybrid-bonding-1um-pitch]]）。這確認了 HD TSV 與混合接合微縮**同步推進**的關係：本頁既有的「TSV 與 Hybrid Bonding 的關係」一節可補記——在 1 µm 級 D2W 中，TOV 與 HD TSV 不是替代關係，而是同一製程堆疊中的必要模組。

@@ -3,8 +3,8 @@ title: "FOPLP — 扇出面板級封裝 / Fan-Out Panel-Level Packaging"
 category: technology
 tags: [fan-out, panel-level, TSMC, Samsung, ASE, Powertech, Innolux, CoPoS, InFO, cost-reduction, delamination, DCB, CTE]
 created: 2026-05-03
-updated: 2026-09-15
-sources: [2026-07-31_trendforce_ase-capex-record-10-5b-leap-foplp, 2025-09-12_trendforce_foplp-competitive-2025, 2026-04-13_trendforce_copos-pilot, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-21_3dincites_acm-wlp-plp-process-trends, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-15_digitimes_manz-310mm-foplp-ecd-equipment, 2026-06-13_digitimes_linkotech-foplp-rollout-traction, 2026-06-20_prnewswire_manz-asia-310mm-ecd, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_digitimes_tsmc-foplp-timeline-skepticism, 2026-07-06_trendforce_cfmee-plp2000-china-first-plp, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan]
+updated: 2026-09-16
+sources: [2026-07-31_trendforce_ase-capex-record-10-5b-leap-foplp, 2025-09-12_trendforce_foplp-competitive-2025, 2026-04-13_trendforce_copos-pilot, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-21_3dincites_acm-wlp-plp-process-trends, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-15_digitimes_manz-310mm-foplp-ecd-equipment, 2026-06-13_digitimes_linkotech-foplp-rollout-traction, 2026-06-20_prnewswire_manz-asia-310mm-ecd, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_digitimes_tsmc-foplp-timeline-skepticism, 2026-07-06_trendforce_cfmee-plp2000-china-first-plp, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-08-06_siliconbox_500m-units-panel-scale, 2026-02-18_siliconbox_ep4697377a1-fanout-panel-metal-sealing-ring, 2026-07-28_xianfeng_cn122476946a-alignment-mark-protection, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded]
 related:
   - wiki/technologies/copos.md
   - wiki/technologies/info-wmcm.md
@@ -326,3 +326,83 @@ Powertech 正式宣布 **NT$70 億（~US$2.2 億）** FOPLP 投資計畫，以�
 ⚠ 試片與模擬層級研究，非量產資料。LSF60 為特定介電材料，結論不可直接外推至其他 RDL 材料系統。
 
 - 引用：`wiki/sources/2026-09-08_nanopreceng_fowlp-rdl-interface-delamination.md`
+
+---
+
+## 2026-09-16 collect 更新：面板級的真瓶頸是「對位與均勻度」，不是微影解析度
+
+本輪四個彼此獨立的來源——一家新加坡新創的核心專利、一家中國材料廠的申請案、一篇產業分析、一條 OSAT 產線公告——指向同一個結論。這是本 wiki 迄今在 FOPLP 議題上最強的收斂訊號。
+
+### 1. 三方獨立佐證：registration & uniformity
+
+| 切入角度 | 具體主張 | 來源 |
+|---------|---------|------|
+| **電鍍均勻度**（新創／製程） | RDL 內建**金屬密封環**以延長電鍍導電路徑，壓平大面板鍍層厚度分布；發明人為 Silicon Box 創辦人 Sehat Sutardja 本人 | [[sources/2026-02-18_siliconbox_ep4697377a1-fanout-panel-metal-sealing-ring]] |
+| **對位標記氧化**（中國／材料） | 金屬對位標記在**加熱貼片製程**中氧化變色 → 機器視覺搜尋失敗、對位偏移；解法是**兼具抗氧化與光學增強的單一功能層** | [[sources/2026-07-28_xianfeng_cn122476946a-alignment-mark-protection]] |
+| **翹曲致 die shift**（產業分析） | 面板翹曲**大於** FOWLP（CTE 效應），造成 die shift 與微影對準誤差 | [[sources/2026-07-07_semieng_panel-inspection-metrology-hdfo]] |
+
+**本頁新論點**：對位失效至少有**三個機制上互相獨立**的來源——機械（翹曲致 die shift）、化學/光學（標記氧化致視覺搜尋失敗）、電化學（鍍層厚度不均致特徵幾何偏差）。本頁既有的面板對位論述只涵蓋第一項。三者需要**不同的解法家族**，不能以單一「翹曲管理」條目概括。
+
+### 2. 檢測成本是面板級的反向成本曲線（本頁全新維度）
+
+*Source: SemiEngineering（Anne Meixner，2026-07-07）*
+
+| 項目 | 現況 | 方向 |
+|------|------|------|
+| 面板格式 | 310×310 mm | → 600×600 mm |
+| 矽中介層封裝上限 | ~100 × 100 mm | （對照組） |
+| RDL 最小線寬（量產） | **5 µm** | → 5 年內 **2 µm pitch** |
+| Bump / micropillar pitch | 20 µm | → **5 µm** |
+| RDL 層數 | **3** | → **9** |
+| 光阻厚度 | 50–100 → 450 µm | → **650 µm**（次世代） |
+| 檢測資料量 | — | **~10¹² pixels/layer**（600 mm 面板 @1 µm 解析度） |
+| 解析度 5 µm → 1 µm | — | 同型相機**檢測速度慢 4 倍** |
+
+**關鍵推論**：10¹² pixels/layer × 最多 9 層 RDL，再乘上 5→1 µm 解析度的 **4× 產能懲罰**——面板檢測成本不是線性增加，而是**乘積式爆炸**。本頁既有的「面積利用率 <70%→>90%」成本論述描述的是**收益面**；這是第一條進入本頁的**成本面反向曲線**。
+
+**KGP（known-good panel）概念首次入庫**：HDFO 採 **chip-last**，必須在貼上昂貴 KGD（HBM、TPU）之前確認整片面板無缺陷。Onto Innovation 的 Monita Pau：「You better make sure that these are defect-free before you commit a very expensive KGD onto the package.」這解釋了為何面板路線對檢測設備商（[[entities/onto-innovation]]、KLA、Bruker、Koh Young、Avarustech）的依賴度**高於**晶圓級路線。
+
+Avarustech 的 Arun Aiyer 一句話概括了整個轉變：「This migration brings **wafer/fab class requirements onto formats that were historically inspected with PCB-grade sensitivity**.」
+
+### 3. ASE 310mm 產線：兩個平台的 RDL 精度相差一個量級
+
+*Source: AnySilicon（2026-05-28）→ [[sources/2026-05-28_anysilicon_ase-310mm-panel-focos-bridge]]*
+
+| 項目 | 數值 |
+|------|------|
+| 面板格式 | 310 mm × 310 mm |
+| 可用面積 | **96,100 mm²** |
+| **FOCoS** L/S | **2/2 µm** |
+| **FOCoS-Bridge** L/S | **8/8 µm** |
+
+本頁先前已記載 ASE 的 310mm 佈局，但**首次取得兩平台的 RDL 線寬對照**。8/8 µm 用於 bridge 版本是關鍵資訊：ASE 的橋接方案把高密度需求推給**矽橋本身**，面板 RDL 只做扇出與電源——與 TSMC CoWoS-L（中介層承擔全部密度）的分工不同。
+
+面積換算基準：96,100 mm² 相對 300 mm 晶圓（~70,700 mm²）約 **1.36×**，相對 CoWoS 單一封裝上限 80×80 mm 則是 **15×**。
+
+⚠ 該來源**未提供**量產時程、產能（panels/month）、客戶或良率。
+
+### 4. ASE 專利訊號：面板 RDL 的「刻意稀疏化」
+
+*→ [[sources/2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry]]、[[sources/2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded]]*
+
+**US20260248002A1（2026-08-20 公開）** 的獨立項以一個**不等式**為限定：**RDL 的 I/O 數 < 基板的 I/O 數**。這是反直覺的——慣例上扇出 RDL 是高密度層、有機基板是低密度層。本案刻意反轉，把部分 die-to-die 路徑下沉到基板。
+
+與上一節的檢測成本曲線對讀，其商業邏輯就清楚了：**大面板上的 RDL 層是最貴、最受翹曲影響、檢測成本呈乘積成長的一層**。把 I/O 移出 RDL、移進有機基板，是以電性效能換取更便宜、更可檢測的面板。
+
+**對本頁既有敘述的細化**：面板級的成本優勢可能**不只**來自面積利用率，也來自**主動降低 RDL 複雜度**。若此為 ASE 的量產意圖，其面板路線不是「矽中介層放大且變便宜」，而是**互連預算的重新分配**。
+
+**CN224583751U（2026-07-31 公開）** 則是 FOCoS-Bridge 的結構對應物：橋接晶片主動面走 die-to-die 線，**被動面下方的電連接件先以第一模封層包覆，再由第二模封層包覆整體**，明述所解問題為**附著力不足／分層**。這與 2026-09-15 收錄的 FOWLP RDL 介面分層（DCB 韌性 −49.6%）併列，構成「**分層是面板／扇出封裝的主要失效家族**」這一論點的第二個獨立證據。
+
+⚠ 兩件中國案均為**實用新型**（形式審查），US 案為**公開申請**（未核准）——皆屬布局訊號，不得表述為 ASE 已量產之能力。
+
+### 5. Silicon Box 出貨基線補上
+
+本頁 2026-08-08 已記載「Silicon Box 2026 年 PLP 產能 10 倍擴大」，但缺絕對數字。現補上：**累計出貨 5 億顆（相對 2025-10 為 5×）；目標 2026 Q4 初達 15 億顆**。→ [[sources/2026-08-06_siliconbox_500m-units-panel-scale]]、新建實體頁 [[entities/silicon-box]]
+
+⚠ 為公司新聞稿數字，良率僅以 "industry-beating" 表述、無量化、無第三方驗證；「顆數」亦不等於面積或價值。
+
+### 新增未解問題
+
+1. **面板檢測的成本拐點在哪裡？** 若 RDL 走到 9 層 + 1 µm 解析度，檢測成本是否吃掉面積利用率帶來的全部成本優勢？wiki 目前兩邊都只有方向、沒有金額。
+2. **ASE 的 I/O 反轉是量產意圖還是防禦性布局？** 需追蹤 FOCoS 量產產品的實際 RDL 層數與基板層數。
+3. **對位失效三機制各自的良率貢獻比重**未知；三者需要不同解法家族，但無人公開拆解過。

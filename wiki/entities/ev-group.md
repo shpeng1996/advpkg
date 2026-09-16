@@ -3,8 +3,8 @@ title: "EV Group (EVG)"
 category: entity
 tags: [equipment, hybrid-bonding, wafer-bonding, maskless-lithography, layer-transfer]
 created: 2026-04-25
-updated: 2026-06-29
-sources: [2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-05-19_semiconductor-digest_ev-group-ectc2026-hybrid-bonding, 2026-06-29_evgroup_ectc2026-hybrid-bonding-layer-transfer]
+updated: 2026-09-16
+sources: [2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-05-19_semiconductor-digest_ev-group-ectc2026-hybrid-bonding, 2026-06-29_evgroup_ectc2026-hybrid-bonding-layer-transfer, 2026-05-28_imec_w2w-hybrid-bonding-200nm-pitch, 2026-06-02_intel_ectc2026-emib-t-cpo-glass]
 related:
   - wiki/technologies/hybrid-bonding.md
   - wiki/technologies/soic.md
@@ -75,3 +75,36 @@ EV Group 是全球混合接合設備的領先供應商之一，與 SUSS MicroTec
 - 混合接合設備的交期（lead time）是否成為產業瓶頸？
 - D2W 製程的對準精度能否突破 <100nm 的要求？
 - 面板級（panel-level）混合接合設備何時商業化？
+
+---
+
+## 2026-09-16 collect 更新：與 imec 共同達成 200 nm W2W 間距、<40 nm 對準
+
+*Source: imec 新聞稿（2026-05-28）→ [[sources/2026-05-28_imec_w2w-hybrid-bonding-200nm-pitch]]*
+
+EVG 與 imec 在 **ECTC 2026** 發表 300 mm 晶圓對晶圓混合接合結果：
+
+| 項目 | 數值 |
+|------|------|
+| Cu pad pitch | **200 nm** |
+| **Post-bond overlay** | **< 40 nm，涵蓋整片 300 mm 晶圓的 100% die** |
+| Pad 排列 | 六角形（hexagonal） |
+| 設計 Cu 密度 | 25% |
+| 介電層 | SiCN |
+| Cu pad recess | 數 nm |
+| 接合前預製互連 | 每片晶圓 4 層可繞線互連 |
+| **機台** | **EVG GEMINI® FB**（hybrid / fusion wafer bonding） |
+
+**對本頁的意義**：本 wiki 先前記載 EVG 在細間距接合的角色以 ECTC 2025／2026 的定性描述為主。本次首度取得**良率級對準指標**——200 nm pitch 搭配 <40 nm overlay，代表對準誤差僅佔 pitch 的 **20%**，是可製造的比例，而非「做出來過」的展示。
+
+雙方明示下一步為「well below 200 nm」，應用指向 **logic-to-logic 與 memory-to-logic** 堆疊——後者直接關聯 HBM base die 議題。
+
+**與 D2W 的對照（本輪關鍵論點）**：同屆 ECTC 上 CEA-Leti 的 **D2W 達 1 µm**，且其 1 µm 良率被明確歸因於**接合機台的對準精度**，並期待下一代機台達 **0.5 µm (3σ)**。W2W 能到 200 nm，正因整片晶圓一次對準。
+
+⇒ **這使 EVG 同時站在兩個問題的解答端**：W2W 已證明其對準能力；D2W 的下一步則直接取決於 EVG（及 Besi、ASMPT）何時宣告 0.5 µm (3σ) 逐 die 對準。詳見 [[technologies/hybrid-bonding]]。
+
+**另記**：EV Group 亦出現在 Intel Foundry ECTC 2026 的 20 篇論文合作方名單中。→ [[sources/2026-06-02_intel_ectc2026-emib-t-cpo-glass]]
+
+### 新增未解問題
+
+- EVG 何時提供 **0.5 µm (3σ)** 的 **die-to-wafer** 對準能力？這是 D2W 微縮的單一主導變數，目前無公開時程。

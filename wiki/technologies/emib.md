@@ -3,8 +3,8 @@ title: "EMIB — Embedded Multi-Die Interconnect Bridge"
 category: technology
 tags: [Intel, 2.5D, silicon-bridge, chiplet, HBM4, Foveros, glass-substrate, EMIB-T, EMIB-M, silicon-capacitors, power-delivery, HLFF, encapsulation, underfill]
 created: 2026-05-03
-updated: 2026-09-14
-sources: [2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-03-05_trendforce_intel-emib-billions, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-03-03_trendforce_intel-clearwater-forest, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks, 2026-06-21_convergedigest_intel-emib-t-multi-die-packaging, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap, 2026-06-05_semieng_intel-ectc-2026-emib-t-cpo-glass, 2026-01-30_tomshardware_intel-ai-chip-test-vehicle-emib-t, 2026-08-04_semieng_from-blueprint-intel-hlff]
+updated: 2026-09-16
+sources: [2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-03-05_trendforce_intel-emib-billions, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-03-03_trendforce_intel-clearwater-forest, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks, 2026-06-21_convergedigest_intel-emib-t-multi-die-packaging, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap, 2026-06-05_semieng_intel-ectc-2026-emib-t-cpo-glass, 2026-01-30_tomshardware_intel-ai-chip-test-vehicle-emib-t, 2026-08-04_semieng_from-blueprint-intel-hlff, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded, 2026-07-07_semieng_panel-inspection-metrology-hdfo]
 related:
   - wiki/entities/intel.md
   - wiki/entities/amkor.md
@@ -319,3 +319,64 @@ Intel Foundry 公開一份官方技術簡報，展示其 **「AI 晶片測試載
 ⚠ 媒體轉述之供應鏈傳聞，非 Intel 官方公告；後續以法說會數據校正。
 
 - 引用：`wiki/sources/2026-09-14_trendforce_tsmc-cowos-double-2028-capacity.md`
+
+---
+
+## 2026-09-16 collect 更新：EMIB-T 實體尺寸與 bump pitch 首次量化；橋接架構出現第三條路線
+
+### 1. Intel 一手來源：EMIB-T 的封裝尺寸與首層 bump pitch
+
+*Source: Intel Foundry 官方部落格（Lori Scott，2026-06-02）→ [[sources/2026-06-02_intel_ectc2026-emib-t-cpo-glass]]*
+⚠ Intel 自述之能力目標，非第三方驗證。
+
+| 項目 | 數值 | 本頁先前狀態 |
+|------|------|------------|
+| 封裝尺寸 | **up to 120 × 120 mm** | **缺**（僅有「>9× 光罩」） |
+| 首層互連 bump pitch | **down to 25 µm** | **缺** |
+| 矽含量 | > 9× reticles | 已有 |
+| HBM4E 訊號率（封裝側） | **> 12 Gb/s** | **缺** |
+| UCIe 訊號率 | **64 Gb/s** | 與 UCIe 3.0 規格一致 |
+
+**120 × 120 mm 為什麼重要**：同批收錄的 SemiEngineering 面板分析指出，**矽中介層封裝一般上限約 100 × 100 mm**，CoWoS 為 80 × 80 mm 及以上。EMIB-T 之所以能超過該上限，**正因為它不是整片矽中介層**——橋接只在需要的地方放矽，其餘由有機基板承擔。這是本 wiki 首次能把 EMIB-T 的架構優勢用**單一可比尺寸**表達，而不只是「光罩倍數」。
+
+由此可建立一條跨路線的尺寸尺規：
+
+| 架構 | 封裝尺寸上限 |
+|------|------------|
+| CoWoS（矽中介層） | 80 × 80 mm 及以上 |
+| 矽中介層封裝（一般） | ~100 × 100 mm |
+| **EMIB-T（局部矽橋）** | **120 × 120 mm** |
+| 面板級（FOPLP / CoPoS） | 310 × 310 mm → 600 × 600 mm |
+
+**25 µm 首層 bump pitch** 補上本頁「關鍵規格」長期缺少的欄位。
+
+**HBM4E >12 Gb/s 的正確讀法**：這是**封裝側的訊號完整性能力**，不是記憶體側的 JEDEC 規格。引用時不可與 [[technologies/hbm4]] 的 HBM4/HBM4E 規格混用。
+
+**新記載**：Intel ECTC 2026 共 20 篇論文，合作方包含 **Siliconware Precision Industries（矽品，ASE 集團成員）**、Fourier Scientific、NIST、EV Group。本 wiki 對 Intel 封裝外包夥伴的敘述過去集中在 Amkor；ASE 集團成員出現在其 ECTC 合作名單中，是值得追蹤的新關係訊號。
+
+### 2. 橋接架構出現第三條路線：OSAT 的模封式橋接
+
+本頁既有敘述把橋接架構視為 **Intel EMIB** 與 **TSMC CoWoS-L** 的兩強之爭。本輪的 ASE 專利顯示存在第三條、不需 foundry 級中介層產線的路線：
+
+**ASE CN224583751U（2026-07-31 公開）** → [[sources/2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded]]
+
+- 橋接晶片**主動面**承載 die-to-die 連接線；**被動面下方**設電連接件做垂直穿越。
+- **第一模封層包覆背面電連接件**，**第二模封層**再包覆橋接晶片與第一模封層。
+- 明述效益：改善背面電連接件的**附著力不足（分層）**。
+
+商業對應物為 ASE 的 **FOCoS-Bridge**（310 mm 面板、RDL **8/8 µm**——見 [[technologies/foplp]]）。注意其 RDL 精度比同線的 FOCoS（2/2 µm）粗一個量級：**ASE 的橋接方案把高密度需求推給矽橋本身，面板 RDL 只做扇出與電源**。
+
+**三條橋接路線的分工對照**：
+
+| 路線 | 橋接載體 | 高密度層在哪 | 產線需求 |
+|------|---------|------------|---------|
+| Intel EMIB / EMIB-T | 有機基板內嵌矽橋 + TSV | 矽橋 | Foundry |
+| TSMC CoWoS-L | 矽中介層內含 LSI | 中介層全域 | Foundry |
+| **ASE FOCoS-Bridge** | **模封內矽橋，背面連接件先行包覆** | **矽橋** | **OSAT 組裝線** |
+
+⚠ ASE 案為**實用新型**（形式審查），屬布局訊號，不構成量產能力證據。
+
+### 新增未解問題
+
+- ASE 模封式橋接的 die-to-die 頻寬與 EMIB 相比如何？公開資料皆無電性數據。
+- Intel × SPIL 的 ECTC 合作是單次論文合作，還是供應鏈關係的前兆？

@@ -3,8 +3,8 @@ title: "HBM4 — High Bandwidth Memory 4"
 category: technology
 tags: [memory, HBM, JEDEC, standards, AI, HPC, HBM4E, cleanroom, capacity, ISSCC2026, ZAM, HB3DM, HBM5, zHBM, HPB, FMS-2026, ECC, reliability, FIT]
 created: 2026-04-24
-updated: 2026-09-15
-sources: [2026-08-13_semieng_1mw-rack-debate-thermal, 2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor, 2026-08-10_trendforce_skhynix-chongqing-sale-global-reset, 2026-08-05_trendforce_samsung-v10-zhbm-hbm5-fms2026, 2026-07-30_trendforce_samsung-ds-q2-2026-hbm4-triple-q3, 2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-03-18_trendforce_intel-emib-malaysia, 2026-01-23_trendforce_hbm4e-samsung-skhynix-mid2026, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-01-13_semiengineering_hbm4-microbumps, 2025-12-18_trendforce_micron-capex-hbm4, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h, 2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-03-03_trendforce_sk-hynix-hbm4-tight-gaps, 2025-08-12_semianalysis_hbm-roadmap, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit, 2026-06-09_astutegroup_hbm-market-share-2026-battle, 2026-06-10_trendforce_samsung-gwangju-packaging-base, 2026-06-15_trendforce_skhynix-hbm4e-sample-timeline-pulled-forward, 2026-06-20_techtimes_skhynix-hbm4e-12layer-samples, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-27_tweaktown_hbm4-16hi-nvidia-supply-fight, 2026-06-26_semieng_chip-week-144, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-14_trendforce_samsung-hbm-hiring-hbm4-hbm4e-hbm5, 2026-07-14_trendforce_skhynix-yongin-y1-feb2027, 2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b, 2026-08-13_trendforce_samsung-skhynix-hbm4-2h-earnings-pricing, 2026-08-25_trendforce_nvidia-server-hike-hbm-price-2027, 2026-08-28_trendforce_skhynix-indiana-hbm4e-3q29-supply-2030, 2026-08-26_tomshardware_hbf-hot-chips-oxmiq-limited-usability]
+updated: 2026-09-16
+sources: [2026-08-13_semieng_1mw-rack-debate-thermal, 2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor, 2026-08-10_trendforce_skhynix-chongqing-sale-global-reset, 2026-08-05_trendforce_samsung-v10-zhbm-hbm5-fms2026, 2026-07-30_trendforce_samsung-ds-q2-2026-hbm4-triple-q3, 2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-03-18_trendforce_intel-emib-malaysia, 2026-01-23_trendforce_hbm4e-samsung-skhynix-mid2026, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-01-13_semiengineering_hbm4-microbumps, 2025-12-18_trendforce_micron-capex-hbm4, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h, 2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-03-03_trendforce_sk-hynix-hbm4-tight-gaps, 2025-08-12_semianalysis_hbm-roadmap, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit, 2026-06-09_astutegroup_hbm-market-share-2026-battle, 2026-06-10_trendforce_samsung-gwangju-packaging-base, 2026-06-15_trendforce_skhynix-hbm4e-sample-timeline-pulled-forward, 2026-06-20_techtimes_skhynix-hbm4e-12layer-samples, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-27_tweaktown_hbm4-16hi-nvidia-supply-fight, 2026-06-26_semieng_chip-week-144, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-14_trendforce_samsung-hbm-hiring-hbm4-hbm4e-hbm5, 2026-07-14_trendforce_skhynix-yongin-y1-feb2027, 2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b, 2026-08-13_trendforce_samsung-skhynix-hbm4-2h-earnings-pricing, 2026-08-25_trendforce_nvidia-server-hike-hbm-price-2027, 2026-08-28_trendforce_skhynix-indiana-hbm4e-3q29-supply-2030, 2026-08-26_tomshardware_hbf-hot-chips-oxmiq-limited-usability, 2026-08-21_electronics_dual-interposer-hbm-power-integrity, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-09-09_acsaelm_microwave-anneal-cu-cu-150c-3min]
 related:
   - wiki/entities/sk-hynix.md
   - wiki/entities/samsung.md
@@ -1198,3 +1198,59 @@ Intel 於 2026-03-03 公開之專利揭示：採用 sub-1 µm 間距混合接合
 ⚠ 後者為解析模型，未附任何真實 HBM 元件的實測 FIT 參數；套用至具體世代需自行提供輸入。
 
 - 引用：`wiki/sources/2026-06-15_ieeetc_diecare-die-level-ecc-hbm.md`、`wiki/sources/2026-08-24_electronics_hbm-reliability-bandwidth-k-out-of-n.md`
+
+---
+
+## 2026-09-16 collect 更新：堆疊約束新增第四軸——頂層供電；775 µm 空間的三方競用
+
+### 1. 電源完整性：本頁先前未記載的第四個堆疊約束
+
+本頁把 HBM 堆疊的約束記為三項：**頻寬、散熱、高度（JEDEC 775 µm）**。本輪的學術論文加入第四項，且它**隨堆疊變高而劣化**——正是 HBM4E／HBM5 前進的方向。
+
+**《Power Integrity Analysis and Evaluation of a Dual-Interposer HBM Structure》**（桂林電子科技大學等，*Electronics*，2026-08-21）→ [[sources/2026-08-21_electronics_dual-interposer-hbm-power-integrity]]
+
+- 問題陳述：高堆疊 HBM 因**供電路徑拉長、寄生電感增加**而面臨關鍵 PI 挑戰，**最頂層 DRAM 晶粒受害最深**。
+- 方案：**interposer–HBM stack–interposer** 雙中介層架構——在堆疊**上方**再加一層內嵌晶片電容的中介層，實現**雙向垂直供電**；上方中介層的 RDL 同時形成平行板電容，與內嵌電容互補。
+- **不需修改既有協定。**
+
+| 指標（0.1–11.2 GHz） | 結果 |
+|---|---|
+| PDN 峰值阻抗 vs. 結構 A（溝槽電容） | **−66.41%** |
+| PDN 峰值阻抗 vs. 結構 B（深溝槽電容） | **−65.7%** |
+| 頂層 DRAM 晶粒迴路電感 | **−66.71%** |
+
+三項指標同時約 **−66%** 的高度一致性值得記錄：改善主要來自**單一機制（縮短頂層供電迴路）**，而非多重效應疊加。
+
+### 2. ⚠ 775 µm 空間的三方競用（本頁新增未解問題）
+
+本篇提出了它自己沒有回答的衝突。**堆疊正上方那一層空間**，目前有三個互斥的用途主張：
+
+| 競用者 | 主張用途 | 來源 |
+|--------|---------|------|
+| (a) 本篇 | **供電中介層**（內嵌電容，雙向供電） | [[sources/2026-08-21_electronics_dual-interposer-hbm-power-integrity]] |
+| (b) Intel 專利 US20260271308A1 | **散熱層堆疊**（base die interface logic 上方導熱至 IHS） | 2026-09-14 收錄 |
+| (c) JEDEC | **高度預算本身**（775 µm 天花板） | [[technologies/hbm4]] 既有記載 |
+
+三者競用同一塊物理空間。本 wiki 此前已記載 DieCARE 之所以能做到「die 級容錯**而不需額外 die**」，其約束不是學術自限而是**高度預算已滿的物理必然**——本輪的 PI 論文與 Intel 熱路徑專利，讓這條「**775 µm 是 HBM 架構創新的總預算約束**」的論點取得第三與第四個獨立證據。
+
+⚠ 本篇為**純模擬**研究，**未報告熱分析與高度分析**——也就是說，它提出的方案恰好迴避了它最大的可行性問題。引用時必須標註。
+
+### 3. 混合接合熱預算：新的攻擊角度
+
+本頁「HBM4 不採用混合接合的技術障礙」一節的核心約束是**退火熱預算**。本輪的 POSTECH 微波退火研究給出目前 wiki 記載中溫度與時間同時最低的一組數據：**150 °C / 3 min**（vs 傳統 ~300 °C / 1 h），剪切強度 30–32 MPa、比接觸電阻 ~10⁻⁷ Ω·cm²。→ [[sources/2026-09-09_acsaelm_microwave-anneal-cu-cu-150c-3min]]
+
+與 2026-09-15 收錄的 SK hynix 負電荷墊面活化專利（US20260165219A1）併看：**兩條完全獨立的路線（能量投遞方式 vs 表面電化學狀態）在同一季指向同一約束**。這強化了本 wiki 的既有判斷——熱預算是 HBM 採用混合接合的單一最硬瓶頸，且它正被多方同時攻擊。
+
+⚠ MWA 為 coupon 級研究，且**微波場在 300 mm 圖案化晶圓上的均勻度未知**。詳見 [[technologies/hybrid-bonding]]。
+
+### 4. 封裝側訊號率：HBM4E > 12 Gb/s（Intel EMIB-T）
+
+Intel 官方宣稱 EMIB-T 的訊號/電源完整性可支撐 **HBM4E > 12 Gb/s**（→ [[sources/2026-06-02_intel_ectc2026-emib-t-cpo-glass]]）。
+
+⚠ **這是封裝側能力，不是記憶體側的 JEDEC 規格**，兩者不可混用。本頁引用時須標註來源為 Intel 封裝能力宣告。
+
+### 新增未解問題
+
+- 雙中介層方案的**高度成本**是多少？在 775 µm 預算下是否可行，作者未答。
+- 若供電中介層與散熱層競用同一空間，是否存在**合併方案**（導熱兼導電的頂層結構）？目前無人提出。
+- 頂層 DRAM 的 PI 劣化在 16-Hi、20-Hi 下的實測數據仍缺；wiki 目前只有模擬。

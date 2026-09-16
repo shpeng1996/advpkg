@@ -468,3 +468,19 @@
 2026-09-15 | https://doi.org/10.3390/electronics15173800 | raw/papers/2026-09-15_openalex_hbm-reliability-bandwidth-k-out-of-n.md | HBM reliability+bandwidth closed-form k-out-of-N model
 2026-09-15 | https://doi.org/10.1108/mi-11-2025-0233 | raw/papers/2026-09-15_openalex_tsv-rdl-electron-irradiation-geant4-comsol.md | TSV-RDL under 1MeV electron irradiation; Geant4-COMSOL
 2026-09-15 | https://doi.org/10.1109/tc.2026.3703497 | raw/papers/2026-09-15_openalex_diecare-diekill-correct-ecc-hbm.md | DieCARE: die-level ECC for HBM without extra dies
+2026-09-16 | https://anysilicon.com/news/ase-launches-310mm-panel-level-packaging-line-for-ai-and-chiplet-applications/ | raw/articles/2026-09-16_anysilicon_ase-310mm-panel-focos-bridge.md | ASE 310mm panel line; FOCoS 2/2um, Bridge 8/8um
+2026-09-16 | https://irtnanoelec.fr/en/actualite/die-to-wafer-hybrid-bonding-at-1-%CE%BCm-pitch-removing-bottleneck-for-ai-hardware/ | raw/articles/2026-09-16_irtnanoelec_d2w-hybrid-bonding-1um-pitch.md | CEA-Leti D2W hybrid bonding 1um pitch, ECTC 2026
+2026-09-16 | https://community.intel.com/t5/Blogs/Intel-Foundry/Systems-Foundry-for-the-AI-Era/How-Intel-Foundry-Packaging-Technologies-Redefine-AI-and-HPC/post/1749493 | raw/articles/2026-09-16_intel_ectc2026-emib-t-cpo-glass.md | Intel ECTC 2026: EMIB-T 120x120mm, 25um bump pitch
+2026-09-16 | https://semiengineering.com/inspection-and-metrology-catching-up-for-high-density-fan-out-panel-packaging/ | raw/articles/2026-09-16_semieng_panel-inspection-metrology-hdfo.md | Panel inspection/metrology; KGP; 10^12 px/layer
+2026-09-16 | https://www.imec-int.com/en/press/imec-and-ev-group-demonstrate-wafer-wafer-hybrid-bonding-200nm-interconnect-pitch-and-record | raw/articles/2026-09-16_imec_w2w-hybrid-bonding-200nm-pitch-40nm-overlay.md | imec+EVG W2W 200nm pitch, <40nm overlay 100% dies
+2026-09-16 | https://lifestyle.middletownlifemagazine.com/story/625093/silicon-box-ships-500m-units-at-high-yield-expands-production-capacity-for-panel-level-packaging/ | raw/articles/2026-09-16_przen_silicon-box-500m-units-panel-scale.md | Silicon Box 500M units shipped; Novara EUR 3.2B
+2026-09-16 | EPO:100681519:CN224583735U | raw/patents/2026-09-16_CN224583735U_ase-photoelectric-hybrid-rdl.md | ASE: photoelectric hybrid RDL, metal as reflector
+2026-09-16 | EPO:100676126:CN224583751U | raw/patents/2026-09-16_CN224583751U_ase-bridge-chip-assembly-molded.md | ASE: molded bridge chip, backside connectors
+2026-09-16 | EPO:100903251:US20260248002A1 | raw/patents/2026-09-16_US20260248002A1_ase-rdl-io-count-less-than-substrate.md | ASE: RDL I/O count less than substrate I/O count
+2026-09-16 | EPO:93211897:EP4697377A1 | raw/patents/2026-09-16_EP4697377A1_siliconbox-fanout-panel-metal-sealing-ring.md | Silicon Box: metal sealing ring for plating uniformity
+2026-09-16 | EPO:100638797:CN122476946A | raw/patents/2026-09-16_CN122476946A_xianfeng-alignment-mark-protection-plp.md | Shanghai Xianfeng: alignment mark anti-oxidation layer
+2026-09-16 | https://doi.org/10.1021/acsaelm.6c01533 | raw/papers/2026-09-16_openalex_microwave-anneal-cu-cu-bonding-150c-3min.md | Microwave anneal Cu-Cu bonding 150C/3min, 30-32 MPa
+2026-09-16 | https://doi.org/10.1038/s41598-026-64670-x | raw/papers/2026-09-16_openalex_copper-oxide-reduction-ar-h2-pulsed-plasma.md | Cu oxide reduction in Ar/H2 pulsed plasma; OES+XPS
+2026-09-16 | https://doi.org/10.1016/j.mssp.2026.111165 | raw/papers/2026-09-16_openalex_tgv-glass-biaxial-bending-ring-on-ring.md | TGV glass biaxial bending strength, ring-on-ring
+2026-09-16 | https://doi.org/10.3390/electronics15163750 | raw/papers/2026-09-16_openalex_dual-interposer-hbm-power-integrity.md | Dual-interposer HBM PDN: -66% impedance/inductance
+2026-09-16 | https://doi.org/10.1116/6.0005520 | raw/papers/2026-09-16_openalex_non-bosch-deep-si-etch-sidewall-passivation.md | IBM non-Bosch deep Si etch; BCl3 lowers F:C ratio

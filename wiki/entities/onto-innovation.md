@@ -3,8 +3,8 @@ title: "Onto Innovation"
 category: entity
 tags: [equipment, process-control, inspection, metrology, fan-out, 2.5D-packaging]
 created: 2026-06-22
-updated: 2026-06-22
-sources: [2026-04-16_ontoinnovation_dragonfly-g5-qualified]
+updated: 2026-09-16
+sources: [2026-04-16_ontoinnovation_dragonfly-g5-qualified, 2026-07-07_semieng_panel-inspection-metrology-hdfo]
 related:
   - wiki/concepts/advanced-packaging-market.md
   - wiki/technologies/copos.md
@@ -42,3 +42,29 @@ Onto Innovation 提供半導體製程全鏈製程控制設備，涵蓋未圖案�
 
 - 服務對象：採用 2.5D/CoWoS 類封裝的晶圓代工廠與 OSAT（具體客戶未公開）。
 - 與 [[entities/tel]]、[[entities/besi]]、[[entities/ev-group]] 同屬先進封裝設備生態系，但聚焦製程控制/檢測而非接合/沉積設備。
+
+---
+
+## 2026-09-16 collect 更新：面板級檢測的 KGP 論述
+
+*Source: SemiEngineering，Anne Meixner（2026-07-07）→ [[sources/2026-07-07_semieng_panel-inspection-metrology-hdfo]]*
+
+Onto Innovation 的 **Monita Pau** 在該文中提出本 wiki 首次記載的 **KGP（known-good panel）** 概念：
+
+> "You better make sure that these are defect-free before you commit a very expensive KGD onto the package."
+
+**背景與意義**：高密度扇出（HDFO）採 **chip-last** 製造，昂貴的 known-good die（HBM、TPU）在製程後段才貼上。因此面板本身必須先通過「已知良好」認證——否則一片壞面板會連帶報廢其上的所有 KGD。
+
+**這解釋了一個結構事實**：面板級路線對檢測設備商的依賴度**高於**晶圓級路線。同文列出的供應商群為 **Onto Innovation、KLA、Avarustech、Bruker（FilmTek）、Koh Young**。
+
+**市場規模的推力（同文數據）**：
+
+| 驅動因素 | 現況 → 方向 |
+|---------|-----------|
+| 面板格式 | 310×310 mm → 600×600 mm |
+| RDL 層數 | 3 → 9 |
+| RDL 最小線寬 | 5 µm → 2 µm pitch（5 年內） |
+| 檢測資料量 | ~10¹² pixels/layer（600 mm @1 µm） |
+| 解析度 5→1 µm 的代價 | 同型相機速度慢 **4 倍** |
+
+資料量與產能懲罰的**乘積效應**，是面板級檢測設備需求的結構性來源——本頁既有的 Dragonfly G5 量產資格條目（2026-04-16）可與此並讀。詳見 [[technologies/foplp]]、[[concepts/advanced-packaging-market]]。

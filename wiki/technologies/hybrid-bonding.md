@@ -3,8 +3,8 @@ title: "混合接合 / Hybrid Bonding"
 category: technology
 tags: [3D, hybrid-bonding, Cu-Cu, SoIC, ECTC, advanced-packaging, DRAM, COP, 4F2, Sn-damascene, damascene-interconnect, PFAS-free, patent-signal, guard-ring, surface-activation]
 created: 2026-04-24
-updated: 2026-09-15
-sources: [2026-05-21_semiecosystem_ectc2026-cpo-hybridbonding-plp, 2026-04-24_initial-survey, 2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-03-01_3dincites_besi-packaging-power-shift, 2026-01-13_semiengineering_hbm4-microbumps, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-19_semieng_advanced-packaging-limits, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-03-27_3dincites_copper-grain-hybrid-bonding, 2026-03-02_semieng_making-hybrid-bonding-better, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2026-04-29_semiwiki_cea-leti-ectc2026-hybrid-bonding, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2024-02-09_semianalysis_hybrid-bonding-process-flow, 2026-05-19_semiconductor-digest_ev-group-ectc2026-hybrid-bonding, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-04-19_semiwiki_apple-m5-cucu-hybrid-bonding-shipped, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-18_imec_iii-v-chiplet-rf-laser-bonding, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-29_evgroup_ectc2026-hybrid-bonding-layer-transfer, 2026-06-29_thelec_skhynix-hybrid-bonding-equipment-order, 2026-06-05_semieng_intel-ectc-2026-emib-t-cpo-glass, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-14_trendforce_samsung-hbm-hiring-hybridbonding, 2026-07-16_semieng_fine-pitch-hb-high-volume, 2026-07-16_semieng_alt-materials-hybrid-bonding]
+updated: 2026-09-16
+sources: [2026-05-21_semiecosystem_ectc2026-cpo-hybridbonding-plp, 2026-04-24_initial-survey, 2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-03-01_3dincites_besi-packaging-power-shift, 2026-01-13_semiengineering_hbm4-microbumps, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-19_semieng_advanced-packaging-limits, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-03-27_3dincites_copper-grain-hybrid-bonding, 2026-03-02_semieng_making-hybrid-bonding-better, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2026-04-29_semiwiki_cea-leti-ectc2026-hybrid-bonding, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2024-02-09_semianalysis_hybrid-bonding-process-flow, 2026-05-19_semiconductor-digest_ev-group-ectc2026-hybrid-bonding, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-04-19_semiwiki_apple-m5-cucu-hybrid-bonding-shipped, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-18_imec_iii-v-chiplet-rf-laser-bonding, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-29_evgroup_ectc2026-hybrid-bonding-layer-transfer, 2026-06-29_thelec_skhynix-hybrid-bonding-equipment-order, 2026-06-05_semieng_intel-ectc-2026-emib-t-cpo-glass, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-14_trendforce_samsung-hbm-hiring-hybridbonding, 2026-07-16_semieng_fine-pitch-hb-high-volume, 2026-07-16_semieng_alt-materials-hybrid-bonding, 2026-06-08_irtnanoelec_d2w-hybrid-bonding-1um-pitch, 2026-05-28_imec_w2w-hybrid-bonding-200nm-pitch, 2026-09-09_acsaelm_microwave-anneal-cu-cu-150c-3min, 2026-08-21_scirep_copper-oxide-reduction-ar-h2-pulsed-plasma]
 related:
   - wiki/technologies/soic.md
   - wiki/technologies/cowos.md
@@ -919,3 +919,66 @@ TrendForce Insights（2026-09-10）揭露 **Intel Foveros Direct 第二代以 3�
 Fujifilm 於 ECTC 2026 推出 ZEMATES 產品線的**無 PFAS PBO**，宣稱 **Dk < 3.1** 且不需改動既有產線（AtlasPCB, 2026-05-27）。意義在於 PFAS 替代不再以性能或產線折衷為前提——本頁 `PFAS-free` 標籤此前僅有零星提及，此為首個帶規格數字的條目。
 
 - 引用：`wiki/sources/2026-07-09_skhynix_us20260198018a1-bonding-insulating-layer-tsv.md`、`wiki/sources/2026-06-11_skhynix_us20260165219a1-negative-charge-pad-bonding.md`、`wiki/sources/2026-06-18_skhynix_us20260173880a1-guard-ring-bonded-structures.md`、`wiki/sources/2026-09-10_trendforce_hybrid-bonding-race-soic-foveros.md`、`wiki/sources/2026-05-27_atlaspcb_ectc2026-substrate-market-fujifilm-pbo.md`
+
+---
+
+## 2026-09-16 collect 更新
+
+### 1. W2W 與 D2W 的間距落差首次被歸因到單一變數：機台對準
+
+同一屆 **ECTC 2026** 上出現兩個新前緣數據，合在一起才有意義：
+
+| 路線 | 間距 | 對準 | 來源 |
+|------|------|------|------|
+| **W2W**（imec × EV Group） | **200 nm** Cu pad pitch | **post-bond overlay < 40 nm，涵蓋 300 mm 晶圓 100% die** | [[sources/2026-05-28_imec_w2w-hybrid-bonding-200nm-pitch]] |
+| **D2W**（CEA-Leti / IRT Nanoelec） | **1 µm**（宣稱世界首例） | 1 µm 良率**受限於現有機台對準精度**；目標下一代 **0.5 µm (3σ)** | [[sources/2026-06-08_irtnanoelec_d2w-hybrid-bonding-1um-pitch]] |
+
+**本頁新論點**：W2W 與 D2W 的 5× 間距落差，其成因已被研究端明確指名為**逐 die 對位的機台精度**，而非表面化學、退火或材料。W2W 整片晶圓一次對準，因此能到 200 nm；D2W 必須逐顆對位，卡在 1 µm。
+
+由此可得一條可追蹤的判準：**D2W 微縮的下一步，取決於接合機台端（EVG／Besi／ASMPT）何時宣告 0.5 µm (3σ) 對準能力**，而不是取決於材料路線圖。這與本頁既有的 ASML D2W overlay <80 nm（模擬驗證）條目互為補充。
+
+**量產與研究的距離（本 wiki 累積校準）**：
+
+- 量產 D2W：SoIC-X **6 µm**、Foveros Direct **9 µm → 3 µm（第二代目標）**
+- 研究 D2W：**1 µm**（良率確認範圍 5→2 µm，電性測試達 10 萬 links）
+- 研究 W2W：**200 nm**
+- ⇒ 量產 D2W 與研究 D2W 相差約 **6×**；研究 D2W 與研究 W2W 相差 **5×**
+
+imec/EVG 的其他新細節：**六角形 pad 排列**（相同最小間距下提高 pad 密度，為 W2W 特有自由度）、設計 Cu 密度 25%、SiCN 介電層、接合前每片晶圓預製四層可繞線互連、Cu pad recess 控制在數 nm、機台為 EVG GEMINI® FB。雙方明示目標為 memory-to-logic 與 logic-to-logic 堆疊。
+
+### 2. 低溫路線新增第三條路徑：改變能量投遞方式
+
+本頁既有的低溫接合路線有兩條——**材料路徑**（NT-Cu、SiCN、BCB、Ag/Ru）與**壓力／轉移路徑**（POSTECH <180 °C、<20 kPa 單步驟轉移接合）。POSTECH 另一組人馬提出第三條：**不改材料、不改壓力，改變熱從哪裡進入**。
+
+**微波退火（MWA）Cu-Cu 接合**（*ACS Applied Electronic Materials*，2026-09-09）→ [[sources/2026-09-09_acsaelm_microwave-anneal-cu-cu-150c-3min]]
+
+| 指標 | 傳統熱壓接合 | 微波退火 |
+|------|------------|---------|
+| 基板溫度 | ~300 °C | **150 °C**（−150 °C） |
+| 接合時間 | ~1 h | **3 min**（20× 縮短） |
+| 剪切強度 | — | **30–32 MPa** |
+| 比接觸電阻 | — | **~10⁻⁷ Ω·cm²** |
+
+**機制**：微波場在兩相對銅面之間的**奈米級空氣間隙內被放大**，於界面產生局部放電——能量沉積在界面而非基板，這正是基板能維持低溫的原因。
+
+這是目前本頁所有低溫接合記載中**溫度與時間同時最低**的一組。
+
+⚠ **未解問題（已列入下方爭議區）**：coupon 級研究；未整合 CMP 與介電層接合；**摘要未說明微波場在整片 300 mm 有圖案金屬晶圓上的均勻度**——駐波均勻性在放大時很可能成為主導限制。
+
+### 3. 「接合前表面電化學狀態」軸取得第一份公開機制研究
+
+本 wiki 於 2026-09-15 新增良率第三軸「表面電化學狀態」（依據 SK hynix US20260165219A1：對連接墊表面施加負電荷後再熱處理）。本輪補上該軸的第一份公開機制性研究：
+
+**Ar/H₂ 脈衝電漿還原氧化銅**（漢陽大學 × KITECH，*Scientific Reports*，2026-08-21）→ [[sources/2026-08-21_scirep_copper-oxide-reduction-ar-h2-pulsed-plasma]]
+
+- 電漿活性物種行為隨**氫氣 On/Off 週期**明顯改變，且與實測還原特性高度相關——**脈衝改變的是化學，不只是熱負載**。
+- **還原效率與表面狀態對功率、氣體組成的響應方向不同**：機制由物理表面活化與化學還原兩個**可獨立調控**的分量合成。
+- 實務意涵：**「還原乾淨」與「表面活性高」未必同時達成**，存在製程窗口取捨。本頁先前把接合前處理視為單一未分化的「表面活化」，此處應改為雙分量描述。
+
+（限制：blanket 銅膜研究，非圖案化接合面；未做接合後電性或強度驗證。）
+
+### 對本頁爭議與未解問題的新增條目
+
+- 微波退火在 **300 mm 圖案化晶圓**上的場均勻度未知；若駐波效應無法抑制，150 °C/3 min 無法放大。
+- **D2W 0.5 µm (3σ) 對準機台**何時出現，是 D2W 路線圖的單一主導變數；尚無設備商公開承諾時程。
+- 表面前處理的「還原 vs 活化」取捨曲線尚無量化；不同低溫路線（MWA、負電荷活化、NT-Cu）是否共用同一取捨，未知。

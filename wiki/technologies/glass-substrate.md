@@ -3,8 +3,8 @@ title: "玻璃基板 / Glass Core Substrate"
 category: technology
 tags: [glass-substrate, TGV, panel-level, FC-BGA, CoPoS, Absolics, DNP, Rapidus, warpage, SeWaRe, glass-interposer, BOE, ULCVD, non-embedding, Lens-Technology, TPK-KY, Innolux, AUO, LG-Chem, singulation, patent-signal]
 created: 2026-05-08
-updated: 2026-09-15
-sources: [2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-05-05_trendforce-insights_glass-substrate-development, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-05-29_3dincites_rapidus-2nm-advanced-packaging-ai-foundry, 2026-06-01_trendforce_intel-3dgs-india-glass-substrate, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-06-20_biggo_boe-glass-substrate-pilot, 2026-06-28_economy-ac_glass-substrate-global-race, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-08-18_trendforce_shinko-glass-substrate-22layer-glassem-delay]
+updated: 2026-09-16
+sources: [2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-05-05_trendforce-insights_glass-substrate-development, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-05-29_3dincites_rapidus-2nm-advanced-packaging-ai-foundry, 2026-06-01_trendforce_intel-3dgs-india-glass-substrate, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-06-20_biggo_boe-glass-substrate-pilot, 2026-06-28_economy-ac_glass-substrate-global-race, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-08-18_trendforce_shinko-glass-substrate-22layer-glassem-delay, 2026-09-11_mssp_tgv-glass-biaxial-bending-ring-on-ring, 2026-06-02_intel_ectc2026-emib-t-cpo-glass]
 related:
   - wiki/technologies/copos.md
   - wiki/technologies/foplp.md
@@ -734,3 +734,47 @@ Intel 於 2026-04-07 公開之日本專利揭示：用於框架式玻璃核心�
 ⚠ 中國公開申請案，早期布局訊號；未取得對應之美／歐同族案。
 
 - 引用：`wiki/sources/2026-08-27_tomshardware_glass-substrate-roadmaps-examined.md`、`wiki/sources/2026-07-03_lgchem_cn122342272a-glass-core-substrate-singulation.md`
+
+---
+
+## 2026-09-16 collect 更新：TGV 陣列本身重回力學檢視；Intel 一手可靠度說法
+
+### 1. ⚠ 對本頁核心論點的限定（非推翻）
+
+本頁與 [[overview]] 於 2026-09-15 確立的論點是：**玻璃基板的產業化瓶頸在邊緣與切單，不在 TGV**（依據：Tom's Hardware 十一家廠商盤點、LG Chem 切單專利、邊緣應力塗層 95→49 MPa）。
+
+本輪收錄的學術論文把 **TGV 陣列本身**重新放回力學檢視：
+
+**《Biaxial bending strength of TGV glass substrates in ring-on-ring tests》**（長庚大學，*Materials Science in Semiconductor Processing*，2026-09-11）→ [[sources/2026-09-11_mssp_tgv-glass-biaxial-bending-ring-on-ring]]
+
+- 明述「**玻璃固有的脆性與裂紋敏感性是普及的主要障礙**」。
+- 以理論 + 數值應力分析研究 **TGV 陣列在 ring-on-ring 雙軸彎曲**下的行為——而非本 wiki 既有數據慣用的三點／四點**單軸**彎曲。
+- 實驗比較**有蝕刻**與**無蝕刻**製程的 TGV 玻璃基板強度，並對應失效模式。
+
+**本頁論述的修正方式**：既有論點**不推翻**，但應由「不在 TGV」放寬為——
+
+> **邊緣與切單是首要瓶頸；TGV 陣列與其蝕刻製程是第二個、尚未量化的強度變數。**
+
+理由：本篇並未主張 TGV 是主要瓶頸，只是測量了 TGV 陣列的雙軸強度，並把強度損失歸因到**蝕刻**這一可控步驟。但「孔陣列在雙軸載荷下的應力集中」是本 wiki 從未記載的維度，且雙軸比單軸更接近封裝實際受力狀態。
+
+⚠ **取得限制**：OpenAlex 僅提供摘要，**具體強度數值不在記錄中**。建議下輪 collect 嘗試取得全文或會議版本，補上數值後再決定是否進一步調整論點。
+
+### 2. Intel 一手來源：TGV 熱循環可靠度
+
+*Source: Intel Foundry 官方部落格（2026-06-02）→ [[sources/2026-06-02_intel_ectc2026-emib-t-cpo-glass]]*
+
+Intel 於 ECTC 2026 的說法：
+
+- **銅填充 TGV「歷經極嚴苛熱循環無失效」**（survived very harsh thermal cycling without failure）
+- 相對有機材料具**優越的平坦度與尺寸穩定性**
+- 支援「**電與光整合於同一平台**」
+
+⚠ **語氣落差須同時標註**：本文通篇只述**能力**，完全**未提時程**——而本 wiki 於 2026-09-15 收錄的資料顯示 Intel 玻璃基板商業化已推遲至 **~2030**。兩者並不矛盾（技術指標可宣告、量產時程仍延後），但任何引用 Intel TGV 可靠度說法之處，都應並列時程狀態，避免被讀成「即將量產」。
+
+此外，「電與光整合於同一平台」與本頁既有的 Corning Glass Bridge CPO 架構、Intel V-groove 玻璃耦合器條目屬同一論述家族，詳見 [[technologies/copackaged-optics]]。
+
+### 新增待確認事項
+
+- TGV 陣列雙軸彎曲強度的**絕對數值**（需原文）。
+- **蝕刻製程**對強度的具體貢獻量（有／無蝕刻的差值）。
+- 既有的「邊緣 95 → 49 MPa」係單軸數據；與雙軸 RoR 數據**不可直接比較**，需建立換算或並列標註規則。

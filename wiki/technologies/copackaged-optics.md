@@ -3,8 +3,8 @@ title: "共封裝光學元件 / Co-Packaged Optics (CPO) — TSMC-COUPE™ & Eco
 category: technology
 tags: [CPO, co-packaged-optics, COUPE, TSMC, GlobalFoundries, Samsung, photonics, AI, HPC, networking, OCI-MSA, DWDM, Broadcom, NVIDIA, glass-substrate, ULCVD, TGV, Spectrum-X, NVL72]
 created: 2026-04-25
-updated: 2026-09-14
-sources: [2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-05-07_trendforce_globalfoundries-silicon-photonics-scale-cpo, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-03-17_coherent_cpo-ofc2026-demo, 2026-06-07_digitimes_jcet-3d-packaging-cpo-plant, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_edn_cpo-technology-status-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-06-24_thelec_corning-glass-bridge-cpo, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-14_trendforce_umc-silith-silicon-photonics-hvm, 2026-07-14_trendforce_huawei-baidu-npo-msa, 2026-07-27_trendforce_presscenter_cpo-switches-nvidia-broadcom-coupe, 2026-06-03_3dincites_intel-foundry-emib-cpo-glass-ectc2026]
+updated: 2026-09-16
+sources: [2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-05-07_trendforce_globalfoundries-silicon-photonics-scale-cpo, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-03-17_coherent_cpo-ofc2026-demo, 2026-06-07_digitimes_jcet-3d-packaging-cpo-plant, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_edn_cpo-technology-status-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-06-24_thelec_corning-glass-bridge-cpo, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-14_trendforce_umc-silith-silicon-photonics-hvm, 2026-07-14_trendforce_huawei-baidu-npo-msa, 2026-07-27_trendforce_presscenter_cpo-switches-nvidia-broadcom-coupe, 2026-06-03_3dincites_intel-foundry-emib-cpo-glass-ectc2026, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-07-31_ase_cn224583735u-photoelectric-hybrid-rdl]
 related:
   - wiki/entities/tsmc.md
   - wiki/technologies/cowos.md
@@ -678,3 +678,46 @@ Huawei NPO 路線為中國提供一條不需依賴台積電先進封裝技術（
 兩者存在**結構性矛盾**——這是 CPO 從 demo 走向量產最被低估的工程障礙，建議列為本頁長期追蹤項目。
 
 - 引用：`wiki/sources/2026-06-30_advphotonicsnexus_tgv-3d-fowlp-cpo-optical-engine.md`、`wiki/sources/2026-08-20_admt_siph-cpo-pic-components-review.md`
+
+---
+
+## 2026-09-16 collect 更新：Intel CPO 一手確認；ASE 進入光學 RDL 結構 IP
+
+### 1. Intel 兩項 CPO 連接方案（一手來源確認）
+
+*Source: Intel Foundry 官方部落格（Lori Scott，2026-06-02）→ [[sources/2026-06-02_intel_ectc2026-emib-t-cpo-glass]]*
+
+本頁 2026-06-25 已依二手報導記載 Intel 的 V-groove 硬式玻璃耦合器。現由**一手來源確認**，並補上第二項：
+
+1. **高效能可拆卸邊緣光連接器**——玻璃扇出耦合器 + expanded-beam edge connector，目標為「low-loss, highly reliable, and detachable optical interfaces」。
+2. **V-groove 硬式玻璃耦合器介面**——取代傳統 **FAU（fiber array unit）**方案。
+
+兩者共同指向同一設計取向：**以剛性玻璃結構取代黏著式光纖陣列**，把光連接從「組裝步驟」變成「結構件」。這與本頁既有的 GlobalFoundries + Corning 可拆卸玻璃波導連接器屬同一收斂（詳見本頁「比較兩種 CPO 連接器方案」一節），現可確認**兩家不同 foundry 在同一屆 ECTC 上獨立走到可拆卸玻璃耦合**。
+
+Intel 同時宣稱玻璃核心基板支援「**電與光整合於同一平台**」（見 [[technologies/glass-substrate]]）。
+
+### 2. ASE 首次以「光學 RDL 結構持有者」身分入庫
+
+*→ [[sources/2026-07-31_ase_cn224583735u-photoelectric-hybrid-rdl]]*
+
+本頁先前把 ASE（與 JCET 等 OSAT）定位為 CPO 的**組裝與產能夥伴**，從未記載其持有光學互連**結構本身**的 IP。
+
+**ASE CN224583735U（2026-07-31 公開，實用新型）**：
+
+- RDL 層中**光焊墊與電焊墊並置**；
+- 光焊墊上方疊**導光材料**；
+- 導光材料上方的**頂部導電材料兼作光波導的反射界面**。
+
+**經濟邏輯值得單獨記錄**：藉由重用既有頂部金屬層作為波導反射面，**光層不增加額外光罩層**。這是 OSAT 式的**成本論證**，與 TSMC COUPE 路線的**效能論證**（光柵耦合器 + 微透鏡，CN122260581A，2026-09-14 收錄）形成清楚對比。
+
+**本頁新論點——CPO 的 IP 競爭發生在不同層級**：
+
+| 參與者 | 切入層 | 主張性質 |
+|--------|--------|---------|
+| TSMC | 光子引擎（photonic engine）內部 | 光柵耦合器 ↔ 微透鏡一對一耦合（效能） |
+| Intel / GlobalFoundries + Corning | 封裝邊緣的光連接器 | 可拆卸玻璃耦合、取代 FAU（可靠度 + 可維修性） |
+| **ASE** | **RDL 層內部** | **金屬層兼作反射界面、不增光罩層（成本）** |
+
+三者不互斥，反而構成一條完整的光路徑分工。本頁後續應以此三層框架整理 CPO 的 IP 地圖。
+
+⚠ ASE 案為**中國實用新型**，僅形式審查、無實質審查——屬**布局訊號**，不構成已驗證製程的證據。

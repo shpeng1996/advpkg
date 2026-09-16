@@ -3,8 +3,8 @@ title: "CoPoS — Chip-on-Panel-on-Substrate"
 category: technology
 tags: [panel-level-packaging, FOPLP, TSMC, CoPoS, AI, HPC, AP7, InFO]
 created: 2026-04-25
-updated: 2026-09-15
-sources: [2026-04-13_trendforce_copos-pilot, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2025-09-12_trendforce_foplp-competitive-landscape-2025, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-20_wccftech_tsmc-copos-glass-core-cost-cut, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-04-28_cw_tsmc-copos-move-really-means, 2026-06-14_digitaltrends_tsmc-copos-glass-temporary-carrier, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan]
+updated: 2026-09-16
+sources: [2026-04-13_trendforce_copos-pilot, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2025-09-12_trendforce_foplp-competitive-landscape-2025, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-20_wccftech_tsmc-copos-glass-core-cost-cut, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-04-28_cw_tsmc-copos-move-really-means, 2026-06-14_digitaltrends_tsmc-copos-glass-temporary-carrier, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-28_xianfeng_cn122476946a-alignment-mark-protection]
 related:
   - wiki/technologies/cowos.md
   - wiki/entities/tsmc.md
@@ -381,3 +381,39 @@ AtlasPCB（2026-05-10）：TSMC 對 CoPoS 供應鏈（台灣設備與材料夥�
 這與 TSMC 在 CoWoS 上的做法形成明確對比——本 wiki 已記錄 TSMC **擴大將 CoWoS 前段關鍵步驟外包予 OSAT**（2026-08-05 收錄）。兩者並置的判讀：**TSMC 對成熟世代（CoWoS）採取外包擴產，對下一世代（CoPoS）採取封閉自持**。這是產能瓶頸管理與技術領先維持的分工，而非政策不一致。
 
 - 引用：`wiki/sources/2026-08-27_tomshardware_glass-substrate-roadmaps-examined.md`、`wiki/sources/2026-05-10_atlaspcb_tsmc-copos-exclusivity-cowos-170k-2027.md`
+
+---
+
+## 2026-09-16 collect 更新：面板格式的產業座標與檢測成本曲線
+
+### 1. 310 mm 不是 TSMC 獨有的格式選擇
+
+*→ [[sources/2026-05-28_anysilicon_ase-310mm-panel-focos-bridge]]、[[sources/2026-07-07_semieng_panel-inspection-metrology-hdfo]]*
+
+ASE 於 2026-05 啟用的面板線同樣採 **310 mm × 310 mm**（可用面積 **96,100 mm²**），支援 FOCoS（RDL 2/2 µm）與 FOCoS-Bridge（RDL 8/8 µm）。本頁既有記載 TrendForce 確認 CoPoS 採 310×310 mm；現在可以確認 **310 mm 已是兩家台廠共同的第一代面板格式**，而非 TSMC 的專屬選擇。
+
+同時，SemiEngineering 把產業的格式區間寫為 **310×310 mm → 600×600 mm**，與 wiki 既有記載的「面板尺寸未收斂（310/510/515/600 mm 四種格式並存）」一致，但補上了**區間的兩個端點就是 310 與 600**這一收斂資訊：510/515 mm 屬曝光設備（USHIO）與材料（Resonac）層級的中間格式，量產格式的實際競爭發生在 310 與 600 兩端。
+
+面積尺規（本 wiki 累積）：
+
+| 格式 | 面積 | 相對 300 mm 晶圓 |
+|------|------|-----------------|
+| 300 mm 晶圓 | ~70,700 mm² | 1.0× |
+| **310 × 310 mm 面板** | **96,100 mm²** | **1.36×** |
+| 600 × 600 mm 面板 | 360,000 mm² | 5.1× |
+
+### 2. 檢測成本：CoPoS 擴張到 600 mm 的隱性代價
+
+SemiEngineering 給出的數字對 CoPoS 的長期路線有直接意涵：**600 mm 面板 @1 µm 解析度的檢測資料量約 10¹² pixels/layer**，而解析度由 5 µm 降到 1 µm 會使同型相機的**檢測速度慢 4 倍**。RDL 層數同時由 3 走向 9。
+
+本頁既有的 CoPoS 成本論述以**材料利用率 <70% → >90%** 為核心。檢測成本是方向相反的一條曲線，且隨面板放大與 RDL 加層呈**乘積**成長。**從 310 mm 走向 600 mm 的決策，不能只用材料利用率計算。**
+
+### 3. 對位失效的第三個機制（材料側）
+
+*→ [[sources/2026-07-28_xianfeng_cn122476946a-alignment-mark-protection]]*
+
+本頁 2026-09-14 已記載「面板尺寸擴張的邊角翹曲風險」。上海先鋒的申請案揭示一個**機制上獨立**的對位失效來源：**金屬對位標記在加熱貼片製程中氧化變色**，導致機器視覺搜尋失敗與對位偏移修正次數上升。解法為兼具抗氧化與光學對比增強的單一功能層。
+
+意即：面板對位失效至少有機械（翹曲致 die shift）、化學/光學（標記氧化）、電化學（鍍層不均）三個來源，需要不同的解法家族。詳見 [[technologies/foplp]] 本輪更新。
+
+⚠ 中國發明申請案，無量產採用證據。
