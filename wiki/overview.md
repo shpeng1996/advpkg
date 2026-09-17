@@ -2,7 +2,7 @@
 title: "先進封裝知識庫總覽 / Advanced Packaging Wiki Overview"
 category: overview
 created: 2026-04-24
-updated: 2026-09-16
+updated: 2026-09-17
 related: [wiki/index.md, wiki/analyses/2026-09-15_knowledge-base-consolidation.md]
 ---
 
@@ -78,13 +78,13 @@ related: [wiki/index.md, wiki/analyses/2026-09-15_knowledge-base-consolidation.m
 
 ---
 
-## 知識空缺 / Knowledge Gaps（2026-09-15 更新）
+## 知識空缺 / Knowledge Gaps（2026-09-17 更新）
 
 前一輪（2026-04/05）列出的 10 項空缺已全部補齊。新一輪空缺：
 
 **缺實體頁（高頻提及）**
 - [ ] Google（65 頁提及）、Apple（47）、Broadcom（37）、MediaTek（20）——AI ASIC / 行動客戶端封裝需求
-- [ ] Applied Materials（40）、Hanwha Semitech（15）——混合接合設備　※2026-09-15 新增觸發點：GlobalFoundries SCALE 平台、Fujifilm 無 PFAS PBO
+- [x] **Applied Materials（40）—— 2026-09-17 完成**，見 [[entities/applied-materials]]（觸發點：AMAT 官方部落格首次提供一手設備規格）。[ ] Hanwha Semitech（15）仍缺——混合接合設備
 - [ ] Absolics（21）、Unimicron（15）、Shinko（6）——玻璃/有機基板　※2026-09-15 新增：LG Chem、LG Innotek、DNP、Toppan、NEG、BOE 均已入庫但無獨立頁
 - [ ] GlobalFoundries（15）、VIS/Vanguard（8）——矽光子、矽中介層
 
@@ -100,29 +100,40 @@ related: [wiki/index.md, wiki/analyses/2026-09-15_knowledge-base-consolidation.m
 - [ ] HBM4E / HBM5 獨立規格頁
 
 **資料源**
-- [x] 專利軌擴大至 Samsung、SK hynix、ASE、Amkor 申請人 —— 2026-09-15：SK hynix ×3、Amkor ×1、LG Chem ×1。**2026-09-16 完成 ASE**：以 `pa="advanced semiconductor engineering" and pd within "2026"` 命中 25 件，篩出 3 件具封裝架構內容者（模封式橋接、RDL I/O 反轉、光電混合 RDL）。**Samsung 仍未檢出 2026 年案件，下輪輪替至 Samsung + Amkor/JCET。**
+- [x] 專利軌擴大至 Samsung、SK hynix、ASE、Amkor 申請人 —— 2026-09-15：SK hynix ×3、Amkor ×1、LG Chem ×1。**2026-09-16 完成 ASE**：以 `pa="advanced semiconductor engineering" and pd within "2026"` 命中 25 件，篩出 3 件具封裝架構內容者（模封式橋接、RDL I/O 反轉、光電混合 RDL）。~~Samsung 仍未檢出 2026 年案件~~ → **2026-09-17 完成 Samsung + JCET**：以 `pa="samsung electronics" and ti,ab="package" and pd within "2026"` 命中 **294 件**（先前查詢式過窄所致），篩出 2 件（中介層測試墊、多孔填料 NCF）；以 `(pa="amkor" or pa="jcet") and pd within "2026"` 命中 **2,633 件**，篩出 3 件 JCET 韓國團隊案件。**下輪輪替至 Amkor（本輪 JCET 訊號蓋過）、Micron、Besi/EVG/ASMPT 設備商。**
 - [x] 論文軌鎖定 ECTC / IEDM 2026 與 IEEE Xplore OA —— **2026-09-16 大幅推進**：取得 Intel Foundry **ECTC 2026 官方一手來源**（20 篇論文、EMIB-T 120×120mm/25µm bump pitch）、imec × EVG **ECTC 2026 W2W 200nm/<40nm overlay** 新聞稿、CEA-Leti **ECTC 2026 D2W 1µm** 發表說明。ECTC 2026 已由「純二手報導」進入「一手機構來源」階段；**IEEE Xplore 論文原文（PDF）仍未直接取得**，下輪續追。
 
 - [ ] **PFAS／氟化氣體規範與製程 GWP 揭露**（2026-09-16 新增）—— 已出現兩起環境法規重塑核心單元製程之案例（Fujifilm 無 PFAS PBO、IBM 非 Bosch 深矽蝕刻），列為常駐 collect 主題，觀察是否擴散至第三個單元製程（清洗、CMP 漿料、光阻）
 - [ ] **設備商 D2W 對準路線圖**（2026-09-16 新增）—— D2W 微縮的單一主導變數已確認為機台逐 die 對準精度；需追蹤 EVG／Besi／ASMPT 是否宣告 0.5 µm (3σ) 時程
 - [ ] **TGV 陣列力學數值**（2026-09-16 新增）—— `10.1016/j.mssp.2026.111165` 僅取得摘要；需全文以補上雙軸彎曲強度絕對值與蝕刻製程貢獻量，方能決定是否進一步調整玻璃基板論點
 
+- [x] **測試／量測／失效分析概念頁**（2026-09-17 新建）—— 見 [[concepts/test-metrology-packaging]]。當日 16 筆來源中 9 筆獨立指向此主題，已升格為與「製程良率」「熱」並列的第三個結構性瓶頸，列為常駐 collect 主題。
+- [ ] **CoWoS「5.5× 良率 99%」的量測邊界**（2026-09-17 新增）—— 該數字是否涵蓋中介層的完整電性篩檢？若否，其意義需重新界定。既有數字未改動。追蹤方式：TSMC 或 OSAT 對 KGI 篩檢率的任何公開表態。
+- [ ] **Samsung 多孔填料 NCF 的目標產品線**（2026-09-17 新增）—— US20260247940A1 方向與「熱優先」論述相反；需確認瞄準 HBM 或 NAND。追蹤方式：後續 Samsung 專利是否出現孔隙率或熱阻數值。
+- [ ] **JCET 韓國團隊（原 STATS ChipPAC Korea）的產能與客戶**（2026-09-17 新增）—— 三件專利的技術層級與江陰廠的 AI 電源模組定位落差極大，需要獨立佐證其量產能力。
+- [ ] **微波能量投遞的第三個應用點**（2026-09-17 新增）—— 已有接合（POSTECH 論文）與解接合（JCET 專利）兩例；觀察是否擴散至底填料固化、NCF 貼合等第三個製程。
+- [ ] **KGD 的標準化定義**（2026-09-17 新增）—— 業界至今視為「抽象詞而非標準化定義」；在 chiplet 跨供應商交易中是未解決的契約基礎問題，亦牽涉 EFI 斷裂下的失效歸責。
+
 **缺實體頁（本輪補齊一項）**
 - [x] Silicon Box —— 2026-09-16 完成，見 [[entities/silicon-box]]
 
 ---
 
-## Wiki 健康狀態 / Wiki Health（2026-09-16，daily collect 後更新）
+## Wiki 健康狀態 / Wiki Health（2026-09-17，daily collect 後更新）
 
-- **頁面總數**：507（實體 22、技術 15、概念 3、來源 459、分析 5、系統頁 3）
-- **原始來源數**：467（articles 423、patents 20、papers 22、reports 2）
-- **操作歷史**：collect 129 次（122 日）、ingest 24、query 2、lint 2
-- **資料源三軌**：WebSearch ✓ ｜ EPO OPS ✓ ｜ OpenAlex ✓（三軌均於 2026-09-16 正常運作；OpenAlex 3 組查詢中 1 組遇 429，依規範重試 1 次後跳過，另 2 組正常）
-- **OPS 配額**：2026-09-16 使用 5 次呼叫（1 auth + 4 search），上限 10，全部 HTTP 200
+- **頁面總數**：525（實體 23、技術 15、概念 4、來源 475、分析 5、系統頁 3）
+- **原始來源數**：483（articles 429、patents 25、papers 27、reports 2）
+- **操作歷史**：collect 130 次（123 日）、ingest 24、query 2、lint 2
+- **資料源三軌**：WebSearch ✓ ｜ EPO OPS ✓ ｜ OpenAlex ✓（三軌均於 2026-09-17 正常運作，無任何 429／403／quota 事件）
+- **OPS 配額**：2026-09-17 使用 5 次呼叫（1 auth + 4 search），上限 10，全部 HTTP 200
 - **最近 Lint**：2026-09-15
+- **本輪新建頁面**：[[concepts/test-metrology-packaging]]、[[entities/applied-materials]]
 - **已知問題**：
-  - 6 個 lint 建議實體頁仍未建（Google／Apple／Broadcom／MediaTek／AMAT／GlobalFoundries 等）
-  - `wiki/index.md` 來源清單非全域日期排序（2026-05-10 之後重新起始，共 70 組逆序對），為歷次逐批追加所致，待下次 lint 重排
-  - **2026-09-16 執行環境異常**：使用者本機 Linux workspace（device_bash）啟動失敗，本輪改以檔案暫存／回寫方式於雲端完成；**因此該日的 git commit 一步未執行**，檔案已寫回磁碟但未進版控，需補做
+  - 5 個 lint 建議實體頁仍未建（Google／Apple／Broadcom／MediaTek／GlobalFoundries 等）；**AMAT 已於 2026-09-17 補齊**
+  - `wiki/index.md` 來源清單非全域日期排序（2026-05-10 之後重新起始，共 70 組逆序對），為歷次逐批追加所致，待下次 lint 重排。**2026-09-17 本輪 16 筆已以程式依發表日插入正確位置**（而非追加於頂），未再新增逆序對
+  - ⚠ **`wiki/technologies/info-wmcm.md` 不是合法 UTF-8**（2026-09-17 發現；位元組位置約 4721 處資料截斷）。該檔可讀但任何 UTF-8 批次處理都會跳過它，**下次 lint 應優先修復編碼**
+  - ~~2026-09-16 的 git commit 未執行~~ → **已於 2026-09-17 補做（commit `1db0032`）**，版控落差已消除
 - **2026-09-15 去重機制發現（仍有效）**：`advancedpackaging.news` 同一文章存在兩種 URL 形式，純 URL 比對無法攔截；建議 lint 增加「標題正規化」二次去重
-- **2026-09-16 去重機制驗證**：專利軌 family-id 去重攔下 3 件已收錄家族（Intel ×2、TSMC ×1），論文軌 DOI 去重攔下 4 篇已收錄 DOI——**雙鍵去重機制運作正常**
+- **2026-09-17 去重機制驗證**：論文軌以「正規化標題 → DOI」雙鍵攔下 **7 篇**已收錄 DOI（含 2026-09-14／15／16 三日收錄者，證明跨日去重有效）；專利軌 family-id 去重本輪未觸發（5 件皆為新家族）；新聞軌 URL 去重攔下 4 篇——**三軌去重運作正常**
+- **2026-09-17 來源日期分布提醒**：本輪 Track A 6 篇中有 3 篇為 2024-11／2025-01／2025-07 的舊文，屬**刻意收錄**（用於建立 wiki 完全缺漏的「測試與量測」基礎背景與時間序列起點）。三篇皆已於 raw 與 source 頁**雙重標註「不得引用為現況」**，並在概念頁的數據表中逐列標註年份
+- **2026-09-17 檢索式教訓**：2026-09-16 判定「Samsung 未檢出 2026 年案件」係**查詢式過窄**所致；本輪改以 `pa="samsung electronics" and ti,ab="package" and pd within "2026"` 即命中 **294 件**。**日後出現「某大廠零命中」時應先懷疑 CQL 而非結論。**

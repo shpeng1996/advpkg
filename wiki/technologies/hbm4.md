@@ -3,7 +3,7 @@ title: "HBM4 — High Bandwidth Memory 4"
 category: technology
 tags: [memory, HBM, JEDEC, standards, AI, HPC, HBM4E, cleanroom, capacity, ISSCC2026, ZAM, HB3DM, HBM5, zHBM, HPB, FMS-2026, ECC, reliability, FIT]
 created: 2026-04-24
-updated: 2026-09-16
+updated: 2026-09-17
 sources: [2026-08-13_semieng_1mw-rack-debate-thermal, 2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor, 2026-08-10_trendforce_skhynix-chongqing-sale-global-reset, 2026-08-05_trendforce_samsung-v10-zhbm-hbm5-fms2026, 2026-07-30_trendforce_samsung-ds-q2-2026-hbm4-triple-q3, 2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-03-18_trendforce_intel-emib-malaysia, 2026-01-23_trendforce_hbm4e-samsung-skhynix-mid2026, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-01-13_semiengineering_hbm4-microbumps, 2025-12-18_trendforce_micron-capex-hbm4, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h, 2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-03-03_trendforce_sk-hynix-hbm4-tight-gaps, 2025-08-12_semianalysis_hbm-roadmap, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit, 2026-06-09_astutegroup_hbm-market-share-2026-battle, 2026-06-10_trendforce_samsung-gwangju-packaging-base, 2026-06-15_trendforce_skhynix-hbm4e-sample-timeline-pulled-forward, 2026-06-20_techtimes_skhynix-hbm4e-12layer-samples, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-27_tweaktown_hbm4-16hi-nvidia-supply-fight, 2026-06-26_semieng_chip-week-144, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-14_trendforce_samsung-hbm-hiring-hbm4-hbm4e-hbm5, 2026-07-14_trendforce_skhynix-yongin-y1-feb2027, 2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b, 2026-08-13_trendforce_samsung-skhynix-hbm4-2h-earnings-pricing, 2026-08-25_trendforce_nvidia-server-hike-hbm-price-2027, 2026-08-28_trendforce_skhynix-indiana-hbm4e-3q29-supply-2030, 2026-08-26_tomshardware_hbf-hot-chips-oxmiq-limited-usability, 2026-08-21_electronics_dual-interposer-hbm-power-integrity, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-09-09_acsaelm_microwave-anneal-cu-cu-150c-3min]
 related:
   - wiki/entities/sk-hynix.md
@@ -1254,3 +1254,53 @@ Intel 官方宣稱 EMIB-T 的訊號/電源完整性可支撐 **HBM4E > 12 Gb/s**
 - 雙中介層方案的**高度成本**是多少？在 775 µm 預算下是否可行，作者未答。
 - 若供電中介層與散熱層競用同一空間，是否存在**合併方案**（導熱兼導電的頂層結構）？目前無人提出。
 - 頂層 DRAM 的 PI 劣化在 16-Hi、20-Hi 下的實測數據仍缺；wiki 目前只有模擬。
+
+---
+
+## 2026-09-17 collect 更新：薄化倍率的製程側數字；測試覆蓋率的 2024 基準；一項方向相反的材料專利（待追蹤）
+
+### 一、775 µm 高度預算的製程側對應數字
+
+**Applied Materials（一手來源，2026-08-18）**：HBM 晶粒**薄化至常規 DRAM 厚度的約 1/25**；**Producer™ Avila™ 2 PECVD** 對應堆疊由 **12 → 16 層以上**，其定位語為在製程中**穩定晶粒**。
+
+📌 本 wiki 既有論述把 **JEDEC 775 µm 視為 HBM 架構創新的總預算約束**（已有四個獨立證據：MR-MUF 微凸塊選擇、Intel 熱管理層、頂層供電雙中介層、混合接合延後）。AMAT 的數字補上**製程側的第五面**：層數能加到 16 層以上，靠的是**薄化倍率**，不是高度預算放寬——而薄化倍率一旦到頂，775 µm 就會直接轉為層數上限。
+
+📌 設備商把賣點放在「**穩定薄化後的晶粒**」而非沉積品質，說明薄化的實際限制已是**處理（handling）**而非減薄本身。與同日收錄之 JCET 微波剝離專利（載板解接合）指向同一問題的兩端。
+
+### 二、測試覆蓋率的 2024 基準線
+
+**SemiEng（2024-11-12）** 提供本 wiki 缺乏的測試端時間序列起點：
+
+| 項目 | 2024 數值 |
+|------|-----------|
+| HBM 凸塊間距 | **25 → 20 → 16–18 µm** |
+| HBM 堆疊層數 | **8 → 12 → 16** |
+| 凸塊總數 | **1 億 → 1.5 億** |
+| 測試訊號頻寬需求 | **224 Gbps / 80 GHz** |
+| 焊錫凸塊 | 45 µm → 最小 **12 µm**；含銀 **<1%** |
+| HPC 元件功耗 | 部分 **>2 kW** |
+
+📌 **凸塊數 1.5 億**與同日收錄之 KGI 篇「晶圓級 pad 25k–50k、pitch <60–75 µm」共同界定了**探針卡無法 100% 覆蓋**的結構性原因。詳見 [[concepts/test-metrology-packaging]]。
+
+> ⚠ 上表為 **2024 年底基準**，不得引用為現況。
+
+### 三、⚠ 專利訊號（方向相反，僅登錄為待追蹤）
+
+**Samsung Electronics, US20260247940A1（2026-08-20，家族 100903221）**：垂直堆疊晶片之間採用**含多孔填料（porous filler）的非導電結構**。申請範圍極為概括，僅主張「多孔填料」此一特徵。
+
+**物理取捨明確**：孔洞降低介電常數與彈性模數（→ 降低 CTE 失配應力），但**同時降低熱傳導率**。
+
+📌 **這與本 wiki 既有論述的方向相反。** 既有記載一致指向**熱優先**：Samsung HPB「>35% 峰值溫降」、Micron「架構圍繞熱管理」的方法論轉變、Intel 熱管理專利在堆疊頂部鋪設導熱層。本件卻暗示 Samsung 在評估一個**以熱換應力/電性**的方案。
+
+**但證據不足以構成矛盾**：
+- 概括式申請案不代表產品方向
+- 分類含 **H10B80/00（記憶體）**，可能瞄準 **NAND** 等非 HBM 堆疊
+- 未揭露孔隙率、材料或任何熱/機械數據
+
+📌 **不調整任何既有 wiki 論點**，僅登錄於下方未解問題。
+
+### 未解問題（新增）
+
+- **Samsung 是否在 HBM（而非 NAND）堆疊中評估多孔填料？** 若是，則本 wiki「HBM 堆疊中熱傳導優先於應力管理」的論點需要重新檢視。目前僅一件概括式申請案，證據極薄。追蹤方式：後續 Samsung 專利是否出現孔隙率數值或熱阻數據。
+
+**來源**：[[sources/2026-08-18_appliedmaterials_hbm-packaging-bottleneck-toolset]]、[[sources/2024-11-12_semieng_packaging-drives-test-metrology-innovation]]、[[sources/2026-08-20_samsung_us20260247940a1-porous-filler-ncf]]

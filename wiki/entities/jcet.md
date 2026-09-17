@@ -3,7 +3,7 @@ title: "JCET（江蘇長電科技）"
 category: entity
 tags: [OSAT, China, 3D-packaging, CPO, AI-power-modules, advanced-packaging, Shanghai]
 created: 2026-06-22
-updated: 2026-09-14
+updated: 2026-09-17
 sources: [2026-06-07_digitimes_jcet-3d-packaging-cpo-plant, 2026-06-26_semieng_chip-week-144, 2026-07-29_trendforce_china-advanced-packaging-new-capacity-wave, 2026-08-21_semieng_chip-week-152]
 related:
   - wiki/concepts/advanced-packaging-market.md
@@ -66,3 +66,37 @@ JCET 為中國規模最大的封裝測試代工廠（OSAT），近年積極由�
 ⚠ 中國專利申請案，屬早期布局訊號；公開與量產落地之間通常存在數年落差。
 
 - 引用：`wiki/sources/2026-05-26_jcet_cn122094515a-hybrid-glass-silicon-interposer.md`
+
+---
+
+## ⭐ 2026-09-17 collect 更新：JCET 韓國團隊具備完整 D2W 堆疊製程研發能力（定位修正）
+
+### 定位修正
+
+本頁先前將 JCET 記為「以產能與地緣為主要籌碼的中國 OSAT」，核心技術段落僅載江陰新 3D 封裝廠與 AI 電源模組／CPO 需求。**2026-09-17 的 EPO OPS 檢索推翻了這個定位的完整性**：JCET 的韓國子公司（**JCET STATS ChipPAC Korea**，原 STATS ChipPAC Korea）在 2026 年第三季於**三個不同製程環節**同步公開專利申請，且共享發明人。
+
+### 三件專利（2026 Q3）
+
+| 公開號 | 公開日 | 家族 ID | 主題 | 發明人 |
+|--------|--------|---------|------|--------|
+| **US20260239928A1** | 2026-08-13 | 100820508 | D2W 混合接合**子堆疊逐層測試** | LEE MINSUNG、**YUN YEOJUN**、**LEE HEESOO** |
+| **CN122766296A** | 2026-09-15 | 101273744 | **微波剝離**載板（PPC＋石墨粉＋酸產生劑） | **尹汝俊**、李敏聖、**李喜秀** |
+| **CN122766387A** | 2026-09-15 | 101256577 | **雙雷射壓縮鍵合**（真空回流） | **尹汝俊**、李承炫、**李喜秀** |
+
+⭐ **尹汝俊（YUN YEOJUN）與李喜秀（LEE HEESOO）同時出現在三件之上。** 同一團隊在一季內於「**接合能量投遞**」「**解接合**」「**堆疊測試**」三個環節布局——這比任何單一專利都更能說明其工作範圍是**整條 D2W 堆疊流程**，而非單點改良。
+
+### 策略解讀
+
+US20260239928A1 的邏輯與本 wiki 2026-09-16 對 ASE 的觀察同型：**OSAT 無法改變接合機台的對準物理，但能重新安排製程順序與測試插入點**。ASE 是「繞過 foundry 的成本結構」，JCET 是「把良率問題轉為成本管理問題」。
+
+📌 **這使該觀察由 ASE 單例升格為 OSAT 的共通策略模式**，並在本 wiki 首次記載於 JCET。
+
+> ⚠ 三件皆為**未核准的公開申請案**（US 為 A1、CN 為發明申請 A，未經實質審查），且 CN 兩件**無任何量化數據**。純布局訊號，不得視為已出貨能力。
+
+### 待追蹤
+
+- JCET 韓國團隊的產能與客戶（此三件專利的技術層級與江陰廠的 AI 電源模組定位落差很大）
+- 微波剝離是否出現第三個微波應用點（見 [[technologies/hybrid-bonding]] 2026-09-17 更新）
+- 逐層測試法在何種單層良率區間才具經濟性
+
+**來源**：[[sources/2026-08-13_jcet_us20260239928a1-hybrid-bonding-substack-test]]、[[sources/2026-09-15_jcet_cn122766296a-microwave-debonding]]、[[sources/2026-09-15_jcet_cn122766387a-dual-laser-bonding]]

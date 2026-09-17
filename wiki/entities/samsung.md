@@ -3,7 +3,7 @@ title: "三星 / Samsung"
 category: entity
 tags: [IDM, foundry, memory, advanced-packaging, X-Cube, HBM, ISSCC2026, I-CubeS, LPDDR6, V10-BV-NAND, zHBM, HBM5, FMS-2026, ECC, reliability]
 created: 2026-04-24
-updated: 2026-09-15
+updated: 2026-09-17
 sources: [2026-08-26_trendforce_openai-jalapeno-samsung-hbm4, 2026-08-26_trendforce_samsung-gaia-pim-4nm-2027, 2026-08-24_trendforce_hot-chips-2026-samsung-zhbm-skhynix-emib, 2026-08-17_trendforce_samsung-skhynix-1h26-investment-nvidia-absent, 2026-08-14_trendforce_samsung-nrdk-line2-2nm-hbm5-base-die, 2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor, 2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2025-12-30_trendforce_samsung-hbm-surge, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2025-08-05_3dincites_iftle636, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit, 2026-06-10_trendforce_samsung-gwangju-packaging-base, 2026-06-12_digitimes_samsung-packaging-gap-tsmc-intel, 2026-06-15_trendforce_skhynix-hbm4e-sample-timeline-pulled-forward, 2026-06-19_techtimes_vera-rubin-hbm4-suppliers, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-24_techtimes_sk-hynix-dethroned-samsung-ddr5-hbm4, 2026-07-03_trendforce_anthropic-samsung-advanced-packaging, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-07-02_trendforce_samsung-hbm-dummy-die-patent, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo, 2026-07-07_trendforce_samsung-q2-2026-record-krw894t, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-02_trendforce_samsung-sf2p-plus-tsmc-n2-roadmap, 2026-07-14_trendforce_samsung-hbm-hiring-hbm4-hbm4e-hbm5, 2026-07-21_trendforce_samsung-cxl-32-skhynix-imte, 2026-07-24_trendforce_skhynix-3d-stacked-dram-on-logic-on-device-ai]
 related:
   - wiki/entities/tsmc.md
@@ -391,3 +391,46 @@ Tom's Hardware（2026-08-27）對本頁既有的 Samsung EM 玻璃基板 JV 記�
 與本頁既有的「設備採購 ≥3 次延後、Samsung EM 否認認證失敗」（2026-08-23）相互佐證，不構成矛盾。
 
 - 引用：`wiki/sources/2026-06-15_ieeetc_diecare-die-level-ecc-hbm.md`、`wiki/sources/2026-08-27_tomshardware_glass-substrate-roadmaps-examined.md`
+
+---
+
+## 2026-09-17 collect 更新：專利軌首次檢出 Samsung 2026 年案件；CPO 路線圖橫向對照
+
+> 📌 本 wiki 2026-09-16 的下輪建議列有「專利軌輪替至 Samsung（本輪未檢出 2026 年案件）」。**2026-09-17 以 `pa="samsung electronics" and ti,ab="package" and pd within "2026"` 命中 294 件**，知識空缺已補。
+
+### 一、專利訊號 ①：內建測試墊的中介層（US20260256000A1，2026-08-27）
+
+家族 `100987711`；發明人 BAEK SEUNGWON、KIM MINKYU、KIM JOONGSUN、HAN PYUNGHWA、HWANG KYUIL。
+
+主張一種**無需中介媒介（without using an intermediate medium）即可提早測試缺陷**的中介層：body layer + wiring layer + through post + interposer pad，並在 wiring layer 連接區設置**連接至部分 interposer pad 的專屬 test pad**。
+
+📌 **分類本身即訊號**：主分類含 **G01R31/2884、G01R31/2896**（半導體測試），而非純封裝結構分類。
+📌 **解法邏輯**：把測試接點與功能接點分離——**不與 pad 密度競爭，而是繞過它**（業界限制為 pad pitch <60–75 µm vs 25k–50k pads）。
+📌 與同期 **JCET US20260239928A1**（D2W 子堆疊逐層測試）構成同方向的兩個切面：**Samsung 測中介層（橫向載體）、JCET 測子堆疊（縱向堆疊）**——本 wiki 首次觀察到「測試左移」在專利層級的**跨公司收斂**。詳見 [[concepts/test-metrology-packaging]]。
+
+### 二、⚠ 專利訊號 ②：多孔填料非導電結構（US20260247940A1，2026-08-20）——方向相反，僅登錄追蹤
+
+家族 `100903221`；發明人 MOON SUNG MIN、YOON SEOK WOO；IPC 含 **H10B80/00（記憶體）**。
+
+垂直堆疊晶片之間採**含多孔填料（pores）的非導電結構**。申請範圍極概括，僅主張此一特徵。
+
+**物理取捨明確**：孔洞降低介電常數與彈性模數（→ 降低 CTE 失配應力），但**同時降低熱傳導率**。這與本頁既有記載的方向相反——Samsung **HPB「>35% 峰值溫降」**、cHBM→aHBM→zHBM 路線圖，一致指向**熱優先**。
+
+**但證據不足以構成矛盾**：概括式申請案不代表產品方向；分類含記憶體，可能瞄準 **NAND** 而非 HBM；未揭露孔隙率或任何熱/機械數據。**不調整任何既有論點**，僅列入 [[technologies/hbm4]] 的未解問題追蹤。
+
+### 三、CPO 路線圖：Samsung 在 CPO 上比在 HBM 上更早導入混合接合
+
+Samsung Foundry CPO 四階段（Tom's Hardware, 2026-08-03）：
+
+| 年份 | 型態 | 指標 |
+|------|------|------|
+| 2026 | 可插拔收發器 | 100 Gbps 級光介面 |
+| 2027 | 堆疊 EIC/PIC | **5 pJ/bit** |
+| 2028 | 交換器基板整合 | **混合銅接合（HCB）10 µm pitch** |
+| 2029–2030 | 中介層整合 | **2 pJ/bit** |
+
+lane 速率 100 → 200 → 400 Gbps。
+
+⭐ **2028 的 HCB 10 µm pitch 承諾，早於本頁既有記載的 HBM 混合接合時程（延後至 HBM4E/HBM5，2027 年底起，且 SK hynix 於 Hot Chips 2026 明言不用於 HBM4E）。** 同一家公司、同一種接合技術，在兩條產品線上的時程判斷不同 → **導入門檻取決於應用而非技術成熟度**：HBM 受 775 µm 高度預算與 MR-MUF 既有投資約束，CPO 無此包袱。
+
+**來源**：[[sources/2026-08-27_samsung_us20260256000a1-interposer-test-pad]]、[[sources/2026-08-20_samsung_us20260247940a1-porous-filler-ncf]]、[[sources/2026-08-03_tomshardware_cpo-foundry-roadmaps-four-way]]

@@ -3,7 +3,7 @@ title: "FOPLP — 扇出面板級封裝 / Fan-Out Panel-Level Packaging"
 category: technology
 tags: [fan-out, panel-level, TSMC, Samsung, ASE, Powertech, Innolux, CoPoS, InFO, cost-reduction, delamination, DCB, CTE]
 created: 2026-05-03
-updated: 2026-09-16
+updated: 2026-09-17
 sources: [2026-07-31_trendforce_ase-capex-record-10-5b-leap-foplp, 2025-09-12_trendforce_foplp-competitive-2025, 2026-04-13_trendforce_copos-pilot, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-21_3dincites_acm-wlp-plp-process-trends, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-15_digitimes_manz-310mm-foplp-ecd-equipment, 2026-06-13_digitimes_linkotech-foplp-rollout-traction, 2026-06-20_prnewswire_manz-asia-310mm-ecd, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_digitimes_tsmc-foplp-timeline-skepticism, 2026-07-06_trendforce_cfmee-plp2000-china-first-plp, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-08-06_siliconbox_500m-units-panel-scale, 2026-02-18_siliconbox_ep4697377a1-fanout-panel-metal-sealing-ring, 2026-07-28_xianfeng_cn122476946a-alignment-mark-protection, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded]
 related:
   - wiki/technologies/copos.md
@@ -406,3 +406,44 @@ Avarustech 的 Arun Aiyer 一句話概括了整個轉變：「This migration bri
 1. **面板檢測的成本拐點在哪裡？** 若 RDL 走到 9 層 + 1 µm 解析度，檢測成本是否吃掉面積利用率帶來的全部成本優勢？wiki 目前兩邊都只有方向、沒有金額。
 2. **ASE 的 I/O 反轉是量產意圖還是防禦性布局？** 需追蹤 FOCoS 量產產品的實際 RDL 層數與基板層數。
 3. **對位失效三機制各自的良率貢獻比重**未知；三者需要不同解法家族，但無人公開拆解過。
+
+---
+
+## 2026-09-17 collect 更新：面板失效機制第四項——光阻圖案的力學穩定性；且驗收指標本身可能選錯
+
+### 面板級失效機制清單（累積）
+
+本頁 2026-09-16 已歸納面板對位失效的**三個機制上獨立的來源**（機械翹曲/die shift、化學-光學的對位標記氧化、電化學的電鍍均勻度）。2026-09-17 補上**第四項，且位於更上游**：
+
+| # | 機制 | 發生階段 | 來源 |
+|---|------|----------|------|
+| 1 | 翹曲致 die shift（機械） | 貼片/模封 | Yole/Bruker via SemiEng（2026-09-16） |
+| 2 | 對位標記氧化致機器視覺失效（化學/光學） | 加熱貼片 | 上海先鋒 CN122476946A（2026-09-16） |
+| 3 | 大面積電鍍不均（電化學） | RDL 電鍍 | Silicon Box EP4697377A1（2026-09-16） |
+| **4** | **乾膜光阻圖案倒塌（高分子力學）** | **微影顯影後** | **KETI/成均館/漢陽，Polymers（2026-09-15）** |
+
+### 第四項細節：DFR 圖案倒塌與沖洗劑選擇
+
+乾膜光阻（DFR）在顯影後因**親水性水–DFR 交互作用**而倒塌。研究比較三種陽離子沖洗劑 **TMAC / CTAC / BHAC**：
+
+- **三者皆降低表面自由能**（即皆提高疏水性）
+- 但結果分歧：**TMAC、CTAC 使倒塌惡化且奈米壓痕顯示機械強度下降；BHAC 阻止倒塌且機械強度提升**
+- 機制：陽離子擴散進入 DFR（共焦拉曼確認），改變化學結構與表觀交聯密度（FTIR + 膨潤試驗）；**BHAC 增強氫鍵結合 → 交聯密度提高 → 機械強韌性改善**
+
+### ⭐ 可操作的製程風險：驗收指標選錯
+
+> **「提高疏水性」本身不足以防止倒塌。**
+
+若面板廠僅以**接觸角／表面自由能**作為沖洗製程的驗收指標，會選到 TMAC/CTAC 這類**使情況惡化**的配方。驗收指標必須改為**機械性質（奈米壓痕）或交聯密度**。這是本輪少見的、可直接落到產線 SOP 的結論。
+
+### 電性驗收數字（首次入庫）
+
+以 BHAC 沖洗劑實際製作出面板級 RDL 中介層，**插入損耗 <1.4 dB @ 0–40 GHz**——本 wiki 首次取得面板級 RDL 中介層的電性驗收數字，可與矽中介層對照。
+
+> ⚠ 限制：未報告良率、面板尺寸、線寬/線距；未說明 BHAC 在量產沖洗槽中的壽命與殘留。**屬實驗室級驗證。**
+
+### 相鄰：載板解接合的微波路徑
+
+**JCET, CN122766296A（2026-09-15）** 的微波剝離（PPC＋石墨粉＋酸產生劑）對大面板尤其相關——若能在**不施加機械應力、不做局部高溫**的條件下完成剝離，對面板翹曲論述是有利變數。⚠ 無任何量化數據，純布局訊號。
+
+**來源**：[[sources/2026-09-15_polymers_panel-rdl-dfr-pattern-collapse]]、[[sources/2026-09-15_jcet_cn122766296a-microwave-debonding]]、[[sources/2025-07-10_semieng_advanced-packaging-reshaping-inspection]]

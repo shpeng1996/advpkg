@@ -3,7 +3,7 @@ title: "Amkor Technology"
 category: entity
 tags: [OSAT, advanced-packaging, FOCoS, Arizona, chiplet, Intel-EMIB, patent-signal, TIM]
 created: 2026-04-25
-updated: 2026-09-15
+updated: 2026-09-17
 sources: [2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-05-19_stocktitan_amkor-arizona-peoria-land-expansion, 2026-06-17_digitimes_amkor-tsmc-10year-arizona-deal, 2026-06-17_trendforce_tsmc-amkor-10year-arizona-advanced-packaging, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-30_amkor-ir_arizona-7billion-groundbreaking, 2026-06-30_digitimes_amkor-2.5d-hdfo-growth-2026, 2026-07-23_amkor-ir_nvidia-amkor-1-5b-strategic-partnership]
 related:
   - wiki/technologies/cowos.md
@@ -149,3 +149,25 @@ related:
 ⚠ 公開申請案，未揭露任何溫降或熱阻數字，不代表已導入量產產品。
 
 - 引用：`wiki/sources/2026-07-30_amkor_us20260223669a1-tim-flow-layer-sidewall-lid.md`
+
+---
+
+## 2026-09-17 collect 更新：Amkor 界定中介層測試覆蓋率的物理上限
+
+**SemiEng〈Screening For Known Good Interposers〉（2025-01-14）**
+
+Amkor 的 **Vineet Pancholi** 提供本 wiki 目前唯一的中介層測試覆蓋率量化限制：
+
+> 晶圓級 pad size 與 pad pitch 已降至 **<60–75 µm**，同時 pad 密度升至 **25,000–50,000**。
+
+📌 這使「**矽中介層以成熟製程製造，很少接受完整電性測試覆蓋**」成為一個**物理結論而非成本選擇**——限制來自探針物理（接點數 vs 間距），**不會隨製程改善自動緩解**。
+
+📌 業界對此的公開承認是術語本身：**PGD（Pretty Good Die）**——在無法達成 KGD 嚴謹度時採用的折衷判準。
+
+📌 Amkor 作為全球第二大 OSAT 且為 Intel EMIB 外包夥伴，其對測試覆蓋率的表態具有產業代表性。與本頁既有的 **CEO McCann 預判兩相冷卻為下一散熱轉型**（2026-09-08）併看：Amkor 高層在**散熱**與**測試**兩個面向都在對外界定下一個結構性限制。
+
+> ⚠ 原文發表於 2025-01-14，數值視為 2025 年初狀態。
+
+詳見 [[concepts/test-metrology-packaging]]。
+
+**來源**：[[sources/2025-01-14_semieng_known-good-interposer-screening]]

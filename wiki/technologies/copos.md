@@ -3,7 +3,7 @@ title: "CoPoS — Chip-on-Panel-on-Substrate"
 category: technology
 tags: [panel-level-packaging, FOPLP, TSMC, CoPoS, AI, HPC, AP7, InFO]
 created: 2026-04-25
-updated: 2026-09-16
+updated: 2026-09-17
 sources: [2026-04-13_trendforce_copos-pilot, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2025-09-12_trendforce_foplp-competitive-landscape-2025, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-20_wccftech_tsmc-copos-glass-core-cost-cut, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-04-28_cw_tsmc-copos-move-really-means, 2026-06-14_digitaltrends_tsmc-copos-glass-temporary-carrier, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-28_xianfeng_cn122476946a-alignment-mark-protection]
 related:
   - wiki/technologies/cowos.md
@@ -417,3 +417,17 @@ SemiEngineering 給出的數字對 CoPoS 的長期路線有直接意涵：**600 
 意即：面板對位失效至少有機械（翹曲致 die shift）、化學/光學（標記氧化）、電化學（鍍層不均）三個來源，需要不同的解法家族。詳見 [[technologies/foplp]] 本輪更新。
 
 ⚠ 中國發明申請案，無量產採用證據。
+
+---
+
+## 2026-09-17 collect 更新：面板 RDL 中介層的電性驗收數字與光阻失效機制
+
+CoPoS 與 FOPLP 共用面板級 RDL 的製程基礎，故本頁同步記載 2026-09-17 收錄之面板 RDL 新資料（完整論述見 [[technologies/foplp]] 2026-09-17 更新）：
+
+1. **面板級 RDL 中介層插入損耗 <1.4 dB @ 0–40 GHz**（KETI／成均館／漢陽大學，Polymers 2026-09-15）——本 wiki 首次取得的面板級 RDL 電性驗收數字。
+2. **失效機制第四項：乾膜光阻圖案倒塌**，發生在微影顯影後，位於既有三項（翹曲 die shift／對位標記氧化／電鍍不均）**更上游**。
+3. ⭐ **驗收指標風險**：三種陽離子沖洗劑皆提高疏水性，但只有 BHAC 提升機械強度並阻止倒塌；TMAC/CTAC 反而惡化。**僅以接觸角/表面自由能驗收會選錯配方。**
+
+> ⚠ 該研究未報告面板尺寸與線寬/線距，無法直接外推至 310 mm 或 600 mm 格式。屬實驗室級驗證。
+
+**來源**：[[sources/2026-09-15_polymers_panel-rdl-dfr-pattern-collapse]]

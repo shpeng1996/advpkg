@@ -3,7 +3,7 @@ title: "UCIe — Universal Chiplet Interconnect Express"
 category: technology
 tags: [standards, chiplet, interconnect, UCIe, 3D, hybrid-bonding, UCIe-3.0]
 created: 2026-04-24
-updated: 2026-09-14
+updated: 2026-09-17
 sources: [2026-08-24_intel-newsroom_hot-chips-2026-diamond-rapids-foveros-ucie, 2026-04-24_initial-survey, 2026-04-01_semiengineering_chiplets-2026, 2025-01-28_3dincites_iftle-618-ucie-standard-vs-ucie3, 2025-01-01_semieng_ucie-1-6t-io-chiplets-ai-datacenter, 2025-09-03_uciexpress_ucie30-spec, 2026-03-05_uciexpress_chiplet-summit-2026, 2026-02-12_semieng_ucie3-technical-deepdive]
 related:
   - wiki/technologies/hybrid-bonding.md
@@ -315,3 +315,28 @@ Intel Wildcat Lake（Intel 18A）在 Hot Chips 2026 揭示一個重要的 UCIe �
 ⚠ 本則來自 SemiEngineering 論文彙整頁，未含完整量化數據；引用具體數字須追溯原始論文。
 
 - 引用：`wiki/sources/2026-09-14_semieng_paper-roundup-chipsmore-reach.md`
+
+---
+
+## 2026-09-17 collect 更新：UCIe 解互通性，不解可診斷性
+
+**Google × TU Delft（Journal of Failure Analysis and Prevention, 2026-08-01）**
+
+核心主張：**共封裝光學、異質整合與 chiplet 已根本性地破壞了電性故障隔離（EFI）流程。** 複雜的封裝繞線與密集 3D 堆疊使故障隔離極度困難；產業歷來依賴 **DFT 篩缺陷、DFD 預測失效位置**，但在先進節點**診斷品質往往不足以刻畫底層失效機制**，且設計複雜度限制了 EFI 所需內部訊號的**可及性與可控性**。
+
+作者主張把 FA 需求**「左移」到設計週期早期**，透過 **DFA（Design for Analysis）**——DFT/DFD 之外的**第三個設計時抽象層**。
+
+### 對本頁的意涵
+
+本頁與本 wiki 既有的 chiplet 論述聚焦於**互連標準與頻寬**（UCIe 3.0 64GT/s、Arm AGI 2TB/s D2D、UCIe-S vs UCIe-A 等），**未觸及多晶粒封裝失效時如何定位**。
+
+📌 **UCIe 解的是互通性，不解可診斷性。** 若 EFI 流程真的被異質整合破壞，chiplet 生態系的「混搭採購」願景會遇到一個常被忽略的障礙。
+
+### 爭議與未解問題（新增）
+
+- **跨供應商 chiplet 的失效隔離歸責**：當一個封裝內含多家供應商的 chiplet，而失效無法被電性隔離到特定 die 時，責任歸屬如何認定？UCIe 規範本身不涵蓋此問題。
+- **KGD 至今無標準化定義**（Teradyne 觀點，2023-12：「它是一個抽象詞而非標準化定義」）。在 chiplet 跨供應商交易中，這是尚未解決的**契約基礎**問題。詳見 [[concepts/test-metrology-packaging]]。
+
+> ⚠ 本篇為綜述與立場論文，無新實驗數據；Google 作者身分**不代表 Google 官方路線圖**。
+
+**來源**：[[sources/2026-08-01_jfap_3dic-failure-analysis-dfa]]

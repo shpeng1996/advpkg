@@ -484,3 +484,19 @@
 2026-09-16 | https://doi.org/10.1016/j.mssp.2026.111165 | raw/papers/2026-09-16_openalex_tgv-glass-biaxial-bending-ring-on-ring.md | TGV glass biaxial bending strength, ring-on-ring
 2026-09-16 | https://doi.org/10.3390/electronics15163750 | raw/papers/2026-09-16_openalex_dual-interposer-hbm-power-integrity.md | Dual-interposer HBM PDN: -66% impedance/inductance
 2026-09-16 | https://doi.org/10.1116/6.0005520 | raw/papers/2026-09-16_openalex_non-bosch-deep-si-etch-sidewall-passivation.md | IBM non-Bosch deep Si etch; BCl3 lowers F:C ratio
+2026-09-17 | https://semiengineering.com/screening-for-known-good-interposers/ | raw/articles/2026-09-17_semieng_known-good-interposer-screening.md | KGI screening: pad pitch <60-75um vs 25-50k pads
+2026-09-17 | https://semiengineering.com/how-advanced-packaging-is-reshaping-inspection/ | raw/articles/2026-09-17_semieng_advanced-packaging-reshaping-inspection.md | Inspection: 4x pixels per half-feature; <30nm optical limit
+2026-09-17 | https://semiengineering.com/advanced-packaging-drives-test-and-metrology-innovations/ | raw/articles/2026-09-17_semieng_packaging-drives-test-metrology-innovation.md | Test/metrology baseline 2024: bump 45->12um, 150M bumps
+2026-09-17 | https://www.tomshardware.com/tech-industry/artificial-intelligence/co-packaged-optics-cpo-foundry-roadmaps-breaking-down-tsmc-intel-samsung-and-globalfoundries-approach-to-next-generation-scale-up-connectivity | raw/articles/2026-09-17_tomshardware_cpo-foundry-roadmaps-four-way.md | CPO 4-foundry roadmap: TSMC/Intel/Samsung/GF pJ-per-bit
+2026-09-17 | https://www.appliedmaterials.com/us/en/newsroom/blogs/tackling-key-hbm-and-advanced-packaging-bottlenecks-for-ai-era.html | raw/articles/2026-09-17_appliedmaterials_hbm-packaging-bottleneck-toolset.md | AMAT first-party: TSV <3um AR>10:1; die 1/25 thickness
+2026-09-17 | https://focustaiwan.tw/business/202609020006 | raw/articles/2026-09-17_focustaiwan_tsmc-kaohsiung-baipu-packaging-hub.md | TSMC Baipu 3ha hub; validation +25-50%; CoWoS CAGR>80%
+2026-09-17 | EPO:100987711:US20260256000A1 | raw/patents/2026-09-17_US20260256000A1_samsung-interposer-test-pad-early-screening.md | Samsung interposer with dedicated test pads (KGI)
+2026-09-17 | EPO:100820508:US20260239928A1 | raw/patents/2026-09-17_US20260239928A1_jcet-hybrid-bonding-substack-test.md | JCET D2W hybrid bonding bilayer sub-stack testing
+2026-09-17 | EPO:101273744:CN122766296A | raw/patents/2026-09-17_CN122766296A_jcet-microwave-debonding-carrier.md | JCET microwave debonding PPC+graphite adhesive
+2026-09-17 | EPO:101256577:CN122766387A | raw/patents/2026-09-17_CN122766387A_jcet-dual-laser-compression-bonding.md | JCET dual-laser compression bonding in vacuum
+2026-09-17 | EPO:100903221:US20260247940A1 | raw/patents/2026-09-17_US20260247940A1_samsung-porous-filler-ncf-stacked-chips.md | Samsung porous-filler NCF between stacked chips
+2026-09-17 | https://doi.org/10.3390/polym18182249 | raw/papers/2026-09-17_openalex_panel-rdl-dfr-pattern-collapse-bhac-rinse.md | Panel RDL DFR collapse: BHAC rinse; IL<1.4dB 0-40GHz
+2026-09-17 | https://doi.org/10.3390/chips5030021 | raw/papers/2026-09-17_openalex_cpo-wafer-level-photonic-probe-card.md | CPO wafer-level probe card; 95.8% converge, 99.4% coupling
+2026-09-17 | https://doi.org/10.1063/5.0333722 | raw/papers/2026-09-17_openalex_lensless-through-silicon-phase-imaging-metrology.md | Lensless through-Si phase imaging 2.19um in-tool metrology
+2026-09-17 | https://doi.org/10.1080/10589759.2026.2728079 | raw/papers/2026-09-17_openalex_hysan-sparse-view-xct-tsv-inspection.md | Hy-SAN sparse-view XCT for TSV; PSNR 39.18dB, 6.10M params
+2026-09-17 | https://doi.org/10.1007/s11668-026-02506-6 | raw/papers/2026-09-17_openalex_3dic-failure-analysis-design-for-analysis.md | Google+TU Delft: 3D IC FA bottleneck, Design-for-Analysis

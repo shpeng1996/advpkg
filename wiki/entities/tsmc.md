@@ -3,7 +3,7 @@ title: "台積電 / TSMC"
 category: entity
 tags: [foundry, advanced-packaging, CoWoS, SoIC, CoPoS, COUPE, CPO, InFO, WMCM, aLSI, MRAM, 3nm-pricing]
 created: 2026-04-24
-updated: 2026-09-14
+updated: 2026-09-17
 sources: [2026-09-10_trendforce_tsmc-august-revenue-nt514b-record-fourth-month, 2026-09-10_trendforce_tsmc-taichung-14nm-p1-p2-2027-ahead-of-plan, 2026-04-24_initial-survey, 2026-04-13_trendforce_copos-pilot, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2025-12-18_trendforce_apple-wmcm-a20, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-01-20_trendforce_tsmc-wmcm-apple, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap, 2026-04-23_trendforce_tsmc-roadmap-a12-a13-no-high-na-euv, 2026-05-07_trendforce_tsmc-us-expansion-250b-arizona, 2026-05-12_focustaiwan_tsmc-capex-31b-arizona-20b, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-28_reuters_tsmc-kevin-zhang-energy-efficiency, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-09_financialcontent_tsmc-130k-cowos-wafers, 2026-06-09_digitimes_tsmc-cowos-soic-capacity-symposium, 2026-06-15_trendforce_tsmc-cowos-gap-narrowing-130k-200k-wafers, 2026-06-17_digitimes_amkor-tsmc-10year-arizona-deal, 2026-06-17_trendforce_tsmc-amkor-10year-arizona-advanced-packaging, 2026-06-10_tomshardware_tsmc-fab-expansion-roadmap-n2-cowos-soic, 2026-06-27_tmtpost_tsmc-cowos-capacity-targets-2026-2027, 2026-07-02_trendforce_samsung-sf2p-plus-tsmc-n2-roadmap, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-22_trendforce_tsmc-2027-price-hike-hpc, 2026-07-20_trendforce_tsmc-265b-arizona-intel-novalake, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-08-17_trendforce_tsmc-arizona-profit-663pct-1h26]
 related:
   - wiki/technologies/cowos.md
@@ -413,3 +413,30 @@ TSMC 先進封裝研發總監 **James Chen**（SEMICON Taiwan 2026）首次官�
 ⚠ 媒體轉述之供應鏈傳聞（經濟日報／工商時報／Wedbush），非官方公告。
 
 - 引用：`wiki/sources/2026-03-26_tsmc_us20260090444a1-lsi-via-barrier.md`、`wiki/sources/2026-09-14_trendforce_tsmc-cowos-double-2028-capacity.md`
+
+---
+
+## 2026-09-17 collect 更新：高雄白埔驗證聚落——瓶頸部分轉移到供應鏈驗證前置時間
+
+**Focus Taiwan（CNA English News），2026-09-02**
+
+| 項目 | 數值 |
+|------|------|
+| 地點 | **高雄白埔工業園區** |
+| 面積 | **3 公頃**，兩棟建築，**模組化可重構** |
+| 用途 | 設備與材料**測試驗證**、製程研發、人才培訓、供應鏈連結（**非量產**） |
+| **驗證效率提升目標** | **25–50%** |
+| **CoWoS 產能 CAGR（至 2027）** | **>80%**，成長延續至 2029 |
+| 合作方 | 經濟部、高雄市政府 |
+
+（原文未揭露投資金額。）
+
+📌 **「驗證效率提升 25–50%」是罕見的量化目標，且對象是驗證而非產能。** TSMC 以 3 公頃專屬園區加速**設備與材料驗證**而非量產——說明在 CoWoS 產能 CAGR >80% 的擴張速率下，**瓶頸已部分轉移到供應鏈驗證的前置時間**。這在**產業組織層級**印證了本日三軌（新聞／專利／論文）共同指向的「測試／驗證左移」主線，詳見 [[concepts/test-metrology-packaging]]。
+
+📌 「模組化、可重構」廠房設計呼應 SemiEng 所述「封裝架構每季到每半年改一次」——**廠房設計本身在對沖架構不穩定性**。
+
+📌 **CoWoS CAGR >80% 至 2027** 為本 wiki 既有 CoWoS 產能數列補上官方口徑成長率。
+
+📌 與 2026-08-11 收錄之「台積電洽購 AUO 兩座廠房」（FOPLP 基礎設施垂直整合）併看：TSMC 在高雄同時布建**量產廠房**與**驗證聚落**兩種設施。
+
+**來源**：[[sources/2026-09-02_focustaiwan_tsmc-kaohsiung-baipu-packaging-hub]]

@@ -3,7 +3,7 @@ title: "TSV — Through-Silicon Via / 矽穿孔"
 category: technology
 tags: [TSV, HBM, interposer, 3D-IC, CoWoS, manufacturing, backside-power, advanced-packaging, radiation, redundancy, reliability]
 created: 2026-08-10
-updated: 2026-09-16
+updated: 2026-09-17
 sources: [2026-04-22_semieng_tsv-complexity-manufacturing-bottleneck, 2026-08-21_semieng_chip-week-152, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-08-21_scirep_copper-oxide-reduction-ar-h2-pulsed-plasma, 2026-06-08_irtnanoelec_d2w-hybrid-bonding-1um-pitch]
 related:
   - wiki/technologies/hbm4.md
@@ -230,3 +230,54 @@ A*STAR IME（*Advanced Photonics Nexus*，2026-06-30）在 CPO 光引擎情境�
 ### 3. HD TSV / TOV 在 D2W 1 µm 的角色
 
 CEA-Leti 的 D2W 混合接合 1 µm 間距展示，其製程模組明列 **high-density TSV** 與 **through-oxide via (TOV)**（→ [[sources/2026-06-08_irtnanoelec_d2w-hybrid-bonding-1um-pitch]]）。這確認了 HD TSV 與混合接合微縮**同步推進**的關係：本頁既有的「TSV 與 Hybrid Bonding 的關係」一節可補記——在 1 µm 級 D2W 中，TOV 與 HD TSV 不是替代關係，而是同一製程堆疊中的必要模組。
+
+---
+
+## 2026-09-17 collect 更新：設備端 TSV 能力上界入庫；薄化倍率與檢測吞吐率
+
+### 一、設備端官方規格：Applied Materials（一手來源）
+
+本 wiki 首次取得 AMAT 一手設備規格（官方部落格，2026-08-18）。
+
+| 產品 | 規格 |
+|------|------|
+| **Nokota™ VMax™ 2 ECD** | TSV **<3 µm**，深寬比 **>10:1**；宣稱高均勻沉積與**無空洞金屬填充** |
+| **Producer™ Avila™ 2 PECVD** | 對應 HBM 堆疊 **12 → 16 層以上**；在製程中**穩定晶粒** |
+| **Opta Quad** | 全晶圓緊密厚度均勻性 |
+| HBM 晶粒薄化 | 薄化至常規 DRAM 厚度的約 **1/25** |
+
+📌 **與本頁既有規格的交叉校準**：本頁載「HBM TSV 2–5 µm / 30–60 µm（via-middle）」為產業通說；AMAT 的 **<3 µm + AR >10:1** 為**設備能力上界**，略優於主流量產規格。與 2026-08-21 收錄之 JCET **11.3:1** 高深寬比 TSV 數據對照，兩者量級一致。
+
+📌 **「薄化至 1/25 厚度」首次入庫**——這是 JEDEC 775 µm 高度預算論述的**製程側對應數字**：層數能加到 16 層以上，靠的是**薄化倍率**，不是高度預算放寬。
+
+📌 Avila 2 的定位語是「在製程中**穩定晶粒**」——設備商已把薄化後晶粒的**處理穩定性**（而非沉積品質）當作賣點，與本 wiki 翹曲／die shift 論述同源。
+
+> ⚠ 廠商自述部落格，無第三方驗證。詳見新建之 [[entities/applied-materials]]。
+
+### 二、薄化流程的另一端：載板解接合（專利訊號）
+
+**JCET, CN122766296A（2026-09-15）**：以 **PPC + 石墨粉 + 光/熱酸產生劑**黏著劑貼合載板，完成**背面處理**後**施加微波能量剝離**。機制為化學解聚（石墨粉吸收微波、PPC 低溫解聚），與雷射解接合（LDB）屬不同家族。
+
+📌 載板剝離是薄化流程的最後一步，也是**翹曲與破片風險最高**的一步。設備商（AMAT，薄化端）與 OSAT（JCET，解接合端）從兩端各自出手，指向同一個限制。
+
+> ⚠ 中國發明申請案，無任何量化數據。純布局訊號。
+
+### 三、TSV 檢測的吞吐率解法：稀疏視角 XCT + 形狀先驗
+
+**Hy-SAN（深圳大學 × 新加坡管理大學，NDT&E, 2026-09-06）**
+
+TSV 的高吞吐非破壞性檢測是關鍵任務。稀疏視角 XCT 可加速，代價是偽影與結構失真。Hy-SAN 以「先解析重建、後 DL 精修」框架，核心 **Shape-Aware Attention 模組學習並運用 TSV 特有的形態先驗**。
+
+| 指標 | 數值 |
+|------|------|
+| 平均 PSNR | **39.18 dB**（SOTA） |
+| 模型大小 | **6.10 M 參數** |
+| 推論速度 | 所有比較之 DL 方法中**最快** |
+
+📌 **這是「檢測成本乘積式成長」問題的演算法側解法範式**：與其增加取像，不如**減少取像並以結構先驗補回**——直接攻擊「取像次數 × 解析度」這個乘積。
+
+📌 ⭐ **關鍵設計選擇是「TSV 特有形態先驗」——即此解法之所以有效，正因為它不是通用模型。** 這暗示檢測 AI 在先進封裝的可行路徑是**逐結構特化**（TSV／bump／RDL／混合接合介面各一套），而非單一通用缺陷模型。與 Nordson 的警告（「深度學習模型常先降採樣再放大，可能損失位置精度」）相互呼應。
+
+> ⚠ **PSNR 是影像品質指標，不等於缺陷偵測率**。作者未報告漏檢率/誤報率，亦未說明產線 XCT 機台的實際 throughput 增益倍率。
+
+**來源**：[[sources/2026-08-18_appliedmaterials_hbm-packaging-bottleneck-toolset]]、[[sources/2026-09-15_jcet_cn122766296a-microwave-debonding]]、[[sources/2026-09-06_ndte_hysan-sparse-view-xct-tsv]]

@@ -3,7 +3,7 @@ title: "混合接合 / Hybrid Bonding"
 category: technology
 tags: [3D, hybrid-bonding, Cu-Cu, SoIC, ECTC, advanced-packaging, DRAM, COP, 4F2, Sn-damascene, damascene-interconnect, PFAS-free, patent-signal, guard-ring, surface-activation]
 created: 2026-04-24
-updated: 2026-09-16
+updated: 2026-09-17
 sources: [2026-05-21_semiecosystem_ectc2026-cpo-hybridbonding-plp, 2026-04-24_initial-survey, 2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-03-01_3dincites_besi-packaging-power-shift, 2026-01-13_semiengineering_hbm4-microbumps, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-19_semieng_advanced-packaging-limits, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-03-27_3dincites_copper-grain-hybrid-bonding, 2026-03-02_semieng_making-hybrid-bonding-better, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2026-04-29_semiwiki_cea-leti-ectc2026-hybrid-bonding, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2024-02-09_semianalysis_hybrid-bonding-process-flow, 2026-05-19_semiconductor-digest_ev-group-ectc2026-hybrid-bonding, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-04-19_semiwiki_apple-m5-cucu-hybrid-bonding-shipped, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-18_imec_iii-v-chiplet-rf-laser-bonding, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-29_evgroup_ectc2026-hybrid-bonding-layer-transfer, 2026-06-29_thelec_skhynix-hybrid-bonding-equipment-order, 2026-06-05_semieng_intel-ectc-2026-emib-t-cpo-glass, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-14_trendforce_samsung-hbm-hiring-hybridbonding, 2026-07-16_semieng_fine-pitch-hb-high-volume, 2026-07-16_semieng_alt-materials-hybrid-bonding, 2026-06-08_irtnanoelec_d2w-hybrid-bonding-1um-pitch, 2026-05-28_imec_w2w-hybrid-bonding-200nm-pitch, 2026-09-09_acsaelm_microwave-anneal-cu-cu-150c-3min, 2026-08-21_scirep_copper-oxide-reduction-ar-h2-pulsed-plasma]
 related:
   - wiki/technologies/soic.md
@@ -982,3 +982,53 @@ imec/EVG 的其他新細節：**六角形 pad 排列**（相同最小間距下�
 - 微波退火在 **300 mm 圖案化晶圓**上的場均勻度未知；若駐波效應無法抑制，150 °C/3 min 無法放大。
 - **D2W 0.5 µm (3σ) 對準機台**何時出現，是 D2W 路線圖的單一主導變數；尚無設備商公開承諾時程。
 - 表面前處理的「還原 vs 活化」取捨曲線尚無量化；不同低溫路線（MWA、負電荷活化、NT-Cu）是否共用同一取捨，未知。
+
+---
+
+## 2026-09-17 collect 更新：測試被插入堆疊過程之中；能量投遞路線擴張至解接合
+
+### 一、D2W 風險管理的第二條路徑——JCET 逐層測試（專利訊號）
+
+本頁既有論述已確立：D2W 相對 W2W 的劣勢在**逐 die 對準精度**，且該限制被明確歸因於**機台能力**（CEA-Leti D2W 1 µm vs imec × EVG W2W 200 nm / post-bond overlay <40 nm，2026-09-16 收錄）。
+
+**JCET STATS ChipPAC Korea, US20260239928A1（公開日 2026-08-13）** 提出的方法不在改善對準，而在**重排製程順序**：
+
+1. 第一、第二晶圓皆具貫穿導電互連（TSV）
+2. **先切單第二晶圓**為晶粒，逐一與第一晶圓上的單元垂直對準，以混合接合接合（D2W）
+3. 切單第一晶圓，形成**雙層互連子堆疊（bilayer interconnect sub-stacks）**
+4. **測試每一個雙層子堆疊**
+
+即：不追求單次接合良率，而是**每加一層就切單並測試，提早剔除壞堆疊**——把良率問題轉為成本管理問題。
+
+📌 **與檢測物理的因果鏈**（同日收錄之 SemiEng〈How Advanced Packaging Is Reshaping Inspection〉）：混合接合介面空洞可能僅**數奈米深**即造成電性不連續，而**光學偵測門檻約 30 nm**。兩者相差一個量級 → **混合接合的缺陷篩選在原理上無法僅靠光學完成** → 只能靠電性測試 → 所以測試必須插入堆疊過程之中。JCET 的專利正是這條推論的產業實作。
+
+> ⚠ **自我限制**：先切單第二晶圓即放棄 W2W 整片一次對準的優勢；逐層切單＋測試每層都有成本。**該方法的經濟性完全取決於單層良率**（良率高則逐層測試是純成本；良率低才划算），專利未揭露適用區間。
+> ⚠ 2026-08-13 公開申請案（A1，未核准），屬布局訊號。
+
+### 二、量測側的新缺口：對準精度的「驗證手段」本身難以整合進機台
+
+坦佩雷大學（Applied Physics Letters, 2026-07-06）以問題設定的方式指出：檢視埋入介面以支撐**接合前對位、接合後偏移驗證、缺陷篩選**是必要的，但**傳統穿矽顯微術依賴物鏡與機械對焦，難以整合進高產出封裝設備**。
+
+其反射式無透鏡穿矽相位成像（1064 nm、單張繞射圖樣、迭代相位恢復、**無物鏡無移動件**）解析度為 **2.19 µm**，並可在堆疊組態下以**數位重對焦做深度選擇性重建**；實測解析出波導、金屬化層、晶片邊緣、**對準標記**與**接合相關缺陷**。
+
+📌 兩個可操作結論：
+1. **價值判準已由「精度」轉向「可整合性」**——2.19 µm 並不突出，重點是 in-tool。
+2. **相位通道對比顯著優於振幅通道** → 既有以強度成像為主的穿矽檢測在原理上處於劣勢。
+
+> ⚠ 2.19 µm **遠不足以直接驗證 <1 µm 的 D2W 對準**；定位是機台內快速篩選與粗對準驗證，不取代高精度計量。未報告吞吐率。
+
+### 三、「改變能量投遞方式」的路線由接合擴張到解接合
+
+2026-09-16 收錄 POSTECH 微波退火 Cu-Cu 接合（基板 **150 °C / 3 分鐘**，機制為微波場在奈米級空氣間隙內被放大）時，本 wiki 將其記為低溫路徑的第三條。
+
+2026-09-17 收錄 **JCET, CN122766296A（2026-09-15）**：以 **PPC + 石墨粉 + 光/熱酸產生劑**的黏著劑塗層貼合載板，完成背面處理後**施加微波能量剝離**。石墨粉為微波吸收體、PPC 為可低溫解聚的犧牲高分子——機制是**化學解聚**而非熱軟化或雷射燒蝕，與現行主流的雷射解接合（LDB）屬不同家族。
+
+📌 **微波由「一篇論文」升格為一條可追蹤的技術路線**：論文＋產業界專利，分屬**接合**與**解接合**兩個製程，共同邏輯相同——**把能量選擇性沉積在目標界面，而非加熱整個基板**。後續應追蹤是否出現第三個應用點（如底填料固化、NCF 貼合）。
+
+### 四、相鄰的焊料路線：雙雷射對稱加熱（JCET, CN122766387A, 2026-09-15）
+
+管芯堆疊置於**兩台雷射器之間**，雙側同時照射使焊料凸塊回流，且**回流期間置於真空室**。雙面同時加熱在原理上消除單面 LAB 的上下溫度梯度（翹曲與焊點不均之因）；真空回流抑制空洞，指向**高可靠度細間距堆疊**。
+
+⭐ **發明人群組訊號**：尹汝俊（YUN YEOJUN）與李喜秀（LEE HEESOO）同時出現在本節的三件 JCET 專利上（子堆疊測試、微波剝離、雙雷射鍵合）。**同一 JCET 韓國團隊在一季內於「接合能量投遞」「解接合」「堆疊測試」三個環節同步布局**——其工作範圍是整條 D2W 堆疊流程。
+
+**來源**：[[sources/2026-08-13_jcet_us20260239928a1-hybrid-bonding-substack-test]]、[[sources/2026-09-15_jcet_cn122766296a-microwave-debonding]]、[[sources/2026-09-15_jcet_cn122766387a-dual-laser-bonding]]、[[sources/2026-07-06_apl_lensless-through-silicon-phase-imaging]]、[[sources/2025-07-10_semieng_advanced-packaging-reshaping-inspection]]

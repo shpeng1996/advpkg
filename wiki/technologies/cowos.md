@@ -3,7 +3,7 @@ title: "CoWoS — Chip-on-Wafer-on-Substrate"
 category: technology
 tags: [2.5D, interposer, TSMC, AI, HPC, HBM, COUPE, CPO, packaging-constraints, NVIDIA]
 created: 2026-04-24
-updated: 2026-09-15
+updated: 2026-09-17
 sources: [2026-08-13_semieng_1mw-rack-debate-thermal, 2026-08-05_trendforce_tsmc-cowos-cow-outsourcing-osat, 2026-05-24_techtimes_nvidia-computex2026-cowos, 2026-04-24_initial-survey, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-15_trendforce_tsmc-vanguard-stake-sale, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-09_financialcontent_tsmc-130k-cowos-wafers, 2026-06-09_digitimes_tsmc-cowos-soic-capacity-symposium, 2026-06-15_trendforce_tsmc-cowos-gap-narrowing-130k-200k-wafers, 2026-06-10_tomshardware_tsmc-fab-expansion-roadmap-n2-cowos-soic, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_tmtpost_tsmc-cowos-capacity-targets-2026-2027, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand]
 related:
   - wiki/entities/tsmc.md
@@ -403,3 +403,51 @@ AtlasPCB（2026-05-10）給出 **2027 年 CoWoS 產能 ~170,000 wpm**。併入�
 ⚠ AtlasPCB 為二手彙整型媒體。**170K@2027 一值尚待 TrendForce 或 TSMC 法說會佐證**；其「TSMC 先進封裝產能年增 11×」之表述與本頁一手數據相差一個數量級，已判定為誤差並不予採用。
 
 - 引用：`wiki/sources/2026-05-10_atlaspcb_tsmc-copos-exclusivity-cowos-170k-2027.md`
+
+---
+
+## 2026-09-17 collect 更新：中介層的電性測試覆蓋率缺口；驗證前置時間成為新瓶頸
+
+### 一、⚠ 既有良率數字的涵蓋範圍待釐清
+
+本頁記載「**5.5× 良率達 99%**」（OCP APAC Summit, 2026-08-11）。2026-09-17 收錄之 SemiEng〈Screening For Known Good Interposers〉（2025-01-14）提出一項**限定**：
+
+> **矽中介層以成熟製程製造，很少接受完整電性測試覆蓋。**
+
+限制來自**探針物理**而非製程能力：晶圓級 pad size/pitch 已降至 **<60–75 µm**，同時 pad 密度升至 **25,000–50,000**（Amkor, Vineet Pancholi）。凸塊總數在 2024 年即達 **1.5 億**（SemiEng 2024-11）。
+
+📌 **本 wiki 不改動既有 99% 的數字**，但登錄一項未解問題：該良率的量測邊界是否涵蓋中介層的完整電性篩檢？若否，其意義需要重新界定。詳見 [[concepts/test-metrology-packaging]]。
+
+📌 業界對此的公開承認是術語本身：**PGD（Pretty Good Die）**——在無法達成 KGD 嚴謹度時的折衷判準。**KGI（Known Good Interposer）** 與 **PGD** 兩詞本輪首次入庫。
+
+### 二、專利訊號：Samsung 以專屬測試墊繞過 pad 密度限制
+
+**Samsung Electronics, US20260256000A1（公開日 2026-08-27，家族 100987711）**
+
+主張一種**無需中介媒介（without using an intermediate medium）即可提早測試缺陷**的中介層：body layer + wiring layer + 貫穿之 through post + interposer pad，並在 wiring layer 連接區設置**連接至部分 interposer pad 的專屬 test pad**。
+
+📌 **分類本身即訊號**：主分類含 **G01R31/2884、G01R31/2896**（半導體測試），而非純封裝結構分類。
+
+📌 **解法邏輯**：把測試接點與功能接點分離——**不與 pad 密度競爭，而是繞過它**。「無需中介媒介」意指不需額外測試載板/轉接結構，正是 2.5D 中介層測試成本高昂的主因之一。
+
+> ⚠ 公開申請案（A1，未核准），屬布局訊號，非已出貨能力。Samsung 為 CoWoS 的競爭者而非使用者，此件的意義在於**產業方向**而非 TSMC 路線。
+
+### 三、產能擴張下，瓶頸部分轉移到供應鏈驗證前置時間
+
+**TSMC 高雄白埔先進封裝聚落（2026-09-02，Focus Taiwan）**
+
+| 項目 | 數值 |
+|------|------|
+| 面積 | **3 公頃**，兩棟建築，模組化可重構 |
+| 用途 | 設備與材料**測試驗證**、製程研發、人才培訓、供應鏈連結（**非量產**） |
+| 驗證效率提升目標 | **25–50%** |
+| **CoWoS 產能 CAGR（至 2027）** | **>80%**，成長延續至 2029 |
+| 合作方 | 經濟部、高雄市政府 |
+
+📌 **「驗證效率提升 25–50%」是罕見的量化目標，且對象是驗證而非產能。** 以 3 公頃專屬園區加速設備與材料驗證，說明在 CAGR >80% 的擴張速率下，**瓶頸已部分轉移到供應鏈驗證的前置時間**——這在產業組織層級印證了本日三軌共同指向的「測試／驗證左移」主線。
+
+📌 「模組化、可重構」廠房設計呼應 SemiEng 所述「封裝架構每季到每半年改一次」——**廠房設計本身在對沖架構不穩定性**。
+
+📌 **CoWoS CAGR >80% 至 2027** 為本頁既有產能數列補上官方口徑成長率。
+
+**來源**：[[sources/2025-01-14_semieng_known-good-interposer-screening]]、[[sources/2026-08-27_samsung_us20260256000a1-interposer-test-pad]]、[[sources/2026-09-02_focustaiwan_tsmc-kaohsiung-baipu-packaging-hub]]

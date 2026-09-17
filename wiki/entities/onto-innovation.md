@@ -3,7 +3,7 @@ title: "Onto Innovation"
 category: entity
 tags: [equipment, process-control, inspection, metrology, fan-out, 2.5D-packaging]
 created: 2026-06-22
-updated: 2026-09-16
+updated: 2026-09-17
 sources: [2026-04-16_ontoinnovation_dragonfly-g5-qualified, 2026-07-07_semieng_panel-inspection-metrology-hdfo]
 related:
   - wiki/concepts/advanced-packaging-market.md
@@ -68,3 +68,23 @@ Onto Innovation 的 **Monita Pau** 在該文中提出本 wiki 首次記載的 **
 | 解析度 5→1 µm 的代價 | 同型相機速度慢 **4 倍** |
 
 資料量與產能懲罰的**乘積效應**，是面板級檢測設備需求的結構性來源——本頁既有的 Dragonfly G5 量產資格條目（2026-04-16）可與此並讀。詳見 [[technologies/foplp]]、[[concepts/advanced-packaging-market]]。
+
+---
+
+## 2026-09-17 collect 更新：可見性退化——檢測問題的性質改變
+
+**SemiEng〈How Advanced Packaging Is Reshaping Inspection〉（2025-07-10）**
+
+Onto Innovation 的 **Damon Tsai**：
+
+> 「多顆晶粒堆疊在一起後，真正的問題有時是**你能不能看到**相關結構。」
+
+📌 這句話標示了檢測問題性質的改變：從「**量得準不準**」（解析度/精度問題）退化為「**看不看得到**」（可見性問題）。前者可用更好的光學解決，後者需要穿透性（IR、X 光）或計算成像（見 [[concepts/test-metrology-packaging]] 之無透鏡穿矽相位成像）。
+
+📌 與本頁既有的 **KGP（known-good panel）論述**（2026-09-16 收錄）及 Dragonfly G5 取得 2.5D AI 封裝量產資格認證併看：Onto 同時在**面板（橫向放大）**與**堆疊（縱向放大）**兩個方向面對可見性問題，且兩者的解法家族不同。
+
+📌 同篇另載檢測端的三條物理天花板（像素平方律 4×／翹曲 >100 µm 超越景深／混合接合空洞數奈米 vs 光學門檻 30 nm），構成本 wiki 新建之測試量測概念頁的核心。
+
+> ⚠ 原文發表於 2025-07-10。
+
+**來源**：[[sources/2025-07-10_semieng_advanced-packaging-reshaping-inspection]]

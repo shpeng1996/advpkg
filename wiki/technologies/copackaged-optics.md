@@ -3,7 +3,7 @@ title: "共封裝光學元件 / Co-Packaged Optics (CPO) — TSMC-COUPE™ & Eco
 category: technology
 tags: [CPO, co-packaged-optics, COUPE, TSMC, GlobalFoundries, Samsung, photonics, AI, HPC, networking, OCI-MSA, DWDM, Broadcom, NVIDIA, glass-substrate, ULCVD, TGV, Spectrum-X, NVL72]
 created: 2026-04-25
-updated: 2026-09-16
+updated: 2026-09-17
 sources: [2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-05-07_trendforce_globalfoundries-silicon-photonics-scale-cpo, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-03-17_coherent_cpo-ofc2026-demo, 2026-06-07_digitimes_jcet-3d-packaging-cpo-plant, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_edn_cpo-technology-status-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-06-24_thelec_corning-glass-bridge-cpo, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-14_trendforce_umc-silith-silicon-photonics-hvm, 2026-07-14_trendforce_huawei-baidu-npo-msa, 2026-07-27_trendforce_presscenter_cpo-switches-nvidia-broadcom-coupe, 2026-06-03_3dincites_intel-foundry-emib-cpo-glass-ectc2026, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-07-31_ase_cn224583735u-photoelectric-hybrid-rdl]
 related:
   - wiki/entities/tsmc.md
@@ -721,3 +721,59 @@ Intel 同時宣稱玻璃核心基板支援「**電與光整合於同一平台**�
 三者不互斥，反而構成一條完整的光路徑分工。本頁後續應以此三層框架整理 CPO 的 IP 地圖。
 
 ⚠ ASE 案為**中國實用新型**，僅形式審查、無實質審查——屬**布局訊號**，不構成已驗證製程的證據。
+
+---
+
+## 2026-09-17 collect 更新：四大代工路線圖首次可橫向比較；CPO 測試成本是架構問題
+
+### 一、四家代工廠 CPO 路線圖橫向對照（Tom's Hardware, 2026-08-03）
+
+本頁先前以 TSMC COUPE 為主軸，缺乏跨廠可比軸。本次首次取得**三個共同指標：pJ/bit、接合 pitch、lane 速率**。
+
+**TSMC — COUPE 三階段**
+
+| 階段 | 位置 | 頻寬 | 其他 |
+|------|------|------|------|
+| Phase 1（2026） | on PCB | **1.6 Tbps**（銅乙太網路 2×） | — |
+| Phase 2 | on substrate | **6.4 Tbps** | 2× 能效、10× 低延遲 |
+| Phase 3 | on interposer | **12.8 Tbps** | 5× 能效、20× 低延遲 |
+
+MRM lane **200 → 400 Gb/s**；頻寬密度 **0.5 Tb/s/mm（2026）→ 4 Tb/s/mm（2030）= 8×**
+
+**Intel — OCI chiplet**：2024 原型 **4 Tbps 雙向**／8 對光纖／**100 m**／lane 32 Gbps × 8 DWDM；次世代 **200G/lane** 支援 800 Gbps 與 1.6 Tbps。**明確限定於運算元件（CPU/GPU/DPU），不做交換器。**
+
+**Samsung Foundry**：2026 可插拔 100 Gbps 級 → 2027 堆疊 EIC/PIC **5 pJ/bit** → 2028 交換器基板整合 **HCB（混合銅接合）10 µm pitch** → 2029–30 中介層整合 **2 pJ/bit**。
+
+**GlobalFoundries — SCALE（merchant）**：50/100 Gbps MRM；**每纖 16 DWDM lane → 單向 1.6 Tb/s**；接合 pitch **110 µm → <45 µm**；vendor-agnostic、可客製、無專有鎖定。
+
+### ⭐ 三個新論點
+
+1. **Samsung 在 CPO 上比在 HBM 上更早導入混合接合。** CPO 路線圖 2028 即承諾 HCB 10 µm pitch，而本 wiki 既有記載為 SK hynix/Samsung 在 HBM 上把混合接合**延後至 HBM4E/HBM5（2027 年底起）**。同一家公司、同一種接合技術，兩條產品線時程判斷不同 → **導入門檻取決於應用而非技術成熟度**（HBM 受 775 µm 與 MR-MUF 既有投資約束，CPO 無此包袱）。
+2. **四家的競爭軸並不相同**（TSMC 比頻寬密度、Samsung 比 pJ/bit、Intel 限定運算端、GF 比開放性）→ 任何「CPO 市占排名」的單一敘事都缺乏共同分母。
+3. **GF 接合 pitch 起點 110 µm，遠寬於邏輯封裝** → **CPO 的封裝難點不在 pitch，在光學對準與熱**。
+
+> ⚠ **語氣限定（非事實矛盾）**：本頁既有記載「CPO 量產 2H26」。四家中只有 TSMC Phase 1 與 Samsung 可插拔在 2026，其餘皆 2027 以後。「CPO 量產」涵蓋的成熟度區間很寬，引用時須指明階段。
+
+### 二、CPO 的測試成本是架構問題，不是設備問題（米蘭理工，Chips 2026-08-02）
+
+光學介面向運算晶粒內移，使**愈來愈高比例的功能特性化必須在探針階段完成**——測試由封裝後**移到晶圓級**。三項新挑戰：**次微米對準**、抵抗動態擾動的**機械穩定性**、**光–電共驗證**。
+
+EclipsePhotonic 方案：壓電定位機構嵌入標準垂直針探針頭 → **六自由度 FAU 操控 + 奈米級定位**，不需特製探針頭；內嵌位移/溫度感測器網路。
+
+| 指標（繼承自底層對準引擎的既發表特性化） | 數值 |
+|------|------|
+| 正規化對準成本 | **1.44 a.u.** |
+| 收斂可靠度 | **95.8%** |
+| 達全域最大光耦合比例 | **99.4%** |
+
+⭐ **「振動 → binning 決策」是新的良率語意**：振動感測器偵測可能影響光耦合的擾動，為 binning 或針對性重測提供上下文——**元件可能沒壞，只是量測當下被擾動**。這在電性測試中罕見，在光學測試中成為常態 → **CPO 的測試資料需要環境上下文才能解讀**。
+
+> ⚠ 作者明確自陳：上表應視為**繼承的演算法基準值**，非完整整合平台的絕對實測表現。
+
+### 三、CPO 破壞電性故障隔離（Google × TU Delft，2026-08-01）
+
+> **共封裝光學、異質整合與 chiplet 已根本性地破壞了電性故障隔離（EFI）流程。**
+
+複雜封裝繞線與密集 3D 堆疊使故障隔離極度困難；DFT/DFD 在先進節點的診斷品質不足以刻畫失效機制。主張以 **DFA（Design for Analysis）** 把 FA 需求左移到設計週期。詳見 [[concepts/test-metrology-packaging]]。
+
+**來源**：[[sources/2026-08-03_tomshardware_cpo-foundry-roadmaps-four-way]]、[[sources/2026-08-02_chips_cpo-wafer-level-probe-card]]、[[sources/2026-08-01_jfap_3dic-failure-analysis-dfa]]
