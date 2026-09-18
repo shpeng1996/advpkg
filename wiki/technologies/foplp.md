@@ -3,7 +3,7 @@ title: "FOPLP — 扇出面板級封裝 / Fan-Out Panel-Level Packaging"
 category: technology
 tags: [fan-out, panel-level, TSMC, Samsung, ASE, Powertech, Innolux, CoPoS, InFO, cost-reduction, delamination, DCB, CTE]
 created: 2026-05-03
-updated: 2026-09-17
+updated: 2026-09-18
 sources: [2026-07-31_trendforce_ase-capex-record-10-5b-leap-foplp, 2025-09-12_trendforce_foplp-competitive-2025, 2026-04-13_trendforce_copos-pilot, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-21_3dincites_acm-wlp-plp-process-trends, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-15_digitimes_manz-310mm-foplp-ecd-equipment, 2026-06-13_digitimes_linkotech-foplp-rollout-traction, 2026-06-20_prnewswire_manz-asia-310mm-ecd, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_digitimes_tsmc-foplp-timeline-skepticism, 2026-07-06_trendforce_cfmee-plp2000-china-first-plp, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-08-06_siliconbox_500m-units-panel-scale, 2026-02-18_siliconbox_ep4697377a1-fanout-panel-metal-sealing-ring, 2026-07-28_xianfeng_cn122476946a-alignment-mark-protection, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded]
 related:
   - wiki/technologies/copos.md
@@ -447,3 +447,28 @@ Avarustech 的 Arun Aiyer 一句話概括了整個轉變：「This migration bri
 **JCET, CN122766296A（2026-09-15）** 的微波剝離（PPC＋石墨粉＋酸產生劑）對大面板尤其相關——若能在**不施加機械應力、不做局部高溫**的條件下完成剝離，對面板翹曲論述是有利變數。⚠ 無任何量化數據，純布局訊號。
 
 **來源**：[[sources/2026-09-15_polymers_panel-rdl-dfr-pattern-collapse]]、[[sources/2026-09-15_jcet_cn122766296a-microwave-debonding]]、[[sources/2025-07-10_semieng_advanced-packaging-reshaping-inspection]]
+
+---
+
+## 2026-09-18 collect 更新：翹曲對策的語彙自材料學轉為結構力學
+
+### 專利訊號 / Patent Signals
+
+**Amkor — CTE balancing about a beam-neutral axis**（US20260165128A1，fam 100037816，公開 2026-06-11；發明人 Mike Kelly 等 3 名）
+
+- 重佈線結構上並置兩顆元件、外圍模封，其上覆一層**金屬結構**；
+- 核心宣稱：**裝置梁中性軸（beam-neutral axis）之上的 CTE 與之下的 CTE 相互平衡**。
+- 同日另一件 US20260165123A1（fam 100037812）以**同一片金屬結構** + TIM + lid 建立散熱路徑。
+
+### 為何對面板級封裝重要
+
+1. ⭐ **翹曲問題被重寫為中性軸上下的 CTE 一階矩平衡**——這是可計算、可設計的量，而非靠試誤配方。本 wiki 既有的翹曲論述（2026-07-30「翹曲管理成為 HVM 核心製程挑戰」）多停留在材料 CTE 與模封收縮。
+2. **對面板的槓桿遠大於對晶圓。** 彎矩隨跨距平方成長；面板尺寸放大後，**配置對稱性的效果遠超材料 CTE 微調**。
+3. 這替本頁既有的**面板失效四機制**（機械翹曲 die shift／對位標記氧化／電鍍不均／光阻圖案力學穩定性）補上一條**設計側對策**，而非只有製程側對策。
+4. 同一片金屬結構同時承擔翹曲平衡與散熱（兩件同日專利）——**熱與機械的設計耦合已到零件層級**。
+
+⚠ **專利為前瞻訊號**：Amkor 於 2026-06 公開之專利顯示其設計方法論，非已宣告之產品規格。
+
+⚠ 本輪 Amkor 專利檢索共 **84 件**命中，絕大多數為通案性「electronic devices and methods」標題；僅本件與 US20260165123A1 具明確結構論點。**Amkor 專利軌輪替至此視為完成。**
+
+來源：[[sources/2026-06-11_epo_amkor-cte-balance-beam-neutral-axis]]

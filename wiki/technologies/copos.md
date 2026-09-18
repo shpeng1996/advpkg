@@ -3,7 +3,7 @@ title: "CoPoS — Chip-on-Panel-on-Substrate"
 category: technology
 tags: [panel-level-packaging, FOPLP, TSMC, CoPoS, AI, HPC, AP7, InFO]
 created: 2026-04-25
-updated: 2026-09-17
+updated: 2026-09-18
 sources: [2026-04-13_trendforce_copos-pilot, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2025-09-12_trendforce_foplp-competitive-landscape-2025, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-20_wccftech_tsmc-copos-glass-core-cost-cut, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-04-28_cw_tsmc-copos-move-really-means, 2026-06-14_digitaltrends_tsmc-copos-glass-temporary-carrier, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-28_xianfeng_cn122476946a-alignment-mark-protection]
 related:
   - wiki/technologies/cowos.md
@@ -431,3 +431,17 @@ CoPoS 與 FOPLP 共用面板級 RDL 的製程基礎，故本頁同步記載 2026
 > ⚠ 該研究未報告面板尺寸與線寬/線距，無法直接外推至 310 mm 或 600 mm 格式。屬實驗室級驗證。
 
 **來源**：[[sources/2026-09-15_polymers_panel-rdl-dfr-pattern-collapse]]
+
+---
+
+## 2026-09-18 collect 更新：TGV 孔徑公差首次有絕對值
+
+武漢大學 × Quartz Corp（挪威）以**雷射改質 + KOH 濕蝕刻**在熔融石英上製得 **25 µm ± 1 µm（±4%）** 的 TGV，並建立涵蓋熱傳導、溶質擴散、化學反應動力學的多物理耦合模型。
+
+對 CoPoS／面板級玻璃路線的意義：**孔徑分散度是 TGV 密度上限的直接約束**——孔間距必須容納 ±4% 的分散度。本 wiki 先前的 TGV 記載只有目標孔徑與深寬比，無製程分散度。
+
+⚠ 基材為熔融石英，與產業主流玻璃核心基板材質不同，數字不可直接外推。
+
+詳見 `technologies/glass-substrate.md` 2026-09-18 更新節。
+
+來源：[[sources/2026-09-11_admt_tgv-laser-koh-etch-25um]]

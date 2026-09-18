@@ -3,7 +3,7 @@ title: "HBM4 — High Bandwidth Memory 4"
 category: technology
 tags: [memory, HBM, JEDEC, standards, AI, HPC, HBM4E, cleanroom, capacity, ISSCC2026, ZAM, HB3DM, HBM5, zHBM, HPB, FMS-2026, ECC, reliability, FIT]
 created: 2026-04-24
-updated: 2026-09-17
+updated: 2026-09-18
 sources: [2026-08-13_semieng_1mw-rack-debate-thermal, 2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor, 2026-08-10_trendforce_skhynix-chongqing-sale-global-reset, 2026-08-05_trendforce_samsung-v10-zhbm-hbm5-fms2026, 2026-07-30_trendforce_samsung-ds-q2-2026-hbm4-triple-q3, 2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-03-18_trendforce_intel-emib-malaysia, 2026-01-23_trendforce_hbm4e-samsung-skhynix-mid2026, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-01-13_semiengineering_hbm4-microbumps, 2025-12-18_trendforce_micron-capex-hbm4, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h, 2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-03-03_trendforce_sk-hynix-hbm4-tight-gaps, 2025-08-12_semianalysis_hbm-roadmap, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit, 2026-06-09_astutegroup_hbm-market-share-2026-battle, 2026-06-10_trendforce_samsung-gwangju-packaging-base, 2026-06-15_trendforce_skhynix-hbm4e-sample-timeline-pulled-forward, 2026-06-20_techtimes_skhynix-hbm4e-12layer-samples, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-27_tweaktown_hbm4-16hi-nvidia-supply-fight, 2026-06-26_semieng_chip-week-144, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-14_trendforce_samsung-hbm-hiring-hbm4-hbm4e-hbm5, 2026-07-14_trendforce_skhynix-yongin-y1-feb2027, 2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b, 2026-08-13_trendforce_samsung-skhynix-hbm4-2h-earnings-pricing, 2026-08-25_trendforce_nvidia-server-hike-hbm-price-2027, 2026-08-28_trendforce_skhynix-indiana-hbm4e-3q29-supply-2030, 2026-08-26_tomshardware_hbf-hot-chips-oxmiq-limited-usability, 2026-08-21_electronics_dual-interposer-hbm-power-integrity, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-09-09_acsaelm_microwave-anneal-cu-cu-150c-3min]
 related:
   - wiki/entities/sk-hynix.md
@@ -1304,3 +1304,43 @@ Intel 官方宣稱 EMIB-T 的訊號/電源完整性可支撐 **HBM4E > 12 Gb/s**
 - **Samsung 是否在 HBM（而非 NAND）堆疊中評估多孔填料？** 若是，則本 wiki「HBM 堆疊中熱傳導優先於應力管理」的論點需要重新檢視。目前僅一件概括式申請案，證據極薄。追蹤方式：後續 Samsung 專利是否出現孔隙率數值或熱阻數據。
 
 **來源**：[[sources/2026-08-18_appliedmaterials_hbm-packaging-bottleneck-toolset]]、[[sources/2024-11-12_semieng_packaging-drives-test-metrology-innovation]]、[[sources/2026-08-20_samsung_us20260247940a1-porous-filler-ncf]]
+
+---
+
+## 2026-09-18 collect 更新：16-Hi 從「技術里程碑」變成「商業判斷分歧點」
+
+### 一、⭐ 三雄首次在同一世代的層數上採取不同策略
+
+| 廠商 | 16-layer HBM4 立場 | 狀態 |
+|------|------------------|------|
+| **SK hynix** | 已量產 | **2026 Q3 量產 48 GB 16-layer**，量產出貨，取得先行者地位 |
+| **Micron** | 保留 | 12-layer 自 2026-03 量產；16-layer **僅出樣，未宣布量產** |
+| **Samsung** | **明確否定** | HBM4 自 2026-02 量產；公開表示 **16-layer 商品化「沒有必要」**，理由為客戶需求有限 |
+
+| 規格 | 數值 |
+|------|------|
+| 16-layer 容量 | **48 GB**（12-layer 為 36 GB，**+33%**） |
+| 目標平台 | NVIDIA **Vera Rubin** |
+| Micron 12-high HBM4 頻寬 | **> 2.8 TB/s / 堆疊** |
+| Samsung HBM3E 12-layer 認證 | 2026-09-14 前通過 |
+
+**意涵**：這是本 wiki 首次記錄記憶體三雄在**同一世代的堆疊層數上策略分歧**。16-Hi 的意義因此從技術里程碑轉為**商業判斷分歧點**——若三星判斷正確，SK hynix 的先行投資報酬將被壓縮；若錯，將重演 HBM3E 的落後。這是一個可在 2027 年驗證的明確對賭。
+
+**與本頁既有論述的一致性**：48 GB／16 層須在 JEDEC **775 µm** 高度預算內完成，代表 **MR-MUF 路線在 16 層仍然守住**——這是對本 wiki 既有記載「HBM4E 正式跳過混合接合、混合接合延後至 HBM5」時程的**間接佐證**。
+
+來源：[[sources/2026-09-15_benzinga_skhynix-16layer-hbm4-48gb]]
+
+### 二、Micron 產能倍增：年底前 +60K wspm
+
+| 項目 | 數值 |
+|------|------|
+| 新增 HBM wafer starts | **+60,000 /月**（2026 年底前） |
+| 擴張後總量 | **~100,000 wspm** |
+| 前一年基準 | 40,000–50,000 wspm（**約翻倍**） |
+| 12-high HBM4 佔比 | 20–30%（年初）→ **最高 50%**（年底） |
+
+⭐ **記憶體端與封裝端的擴張節奏已大致同步。** Micron 單家年底約 100K HBM wpm，對照 CoWoS 全球 120–140K wpm。兩者計量對象不同（HBM 晶圓 vs 封裝晶圓），但數量級相當——過去「HBM 供應充足但 CoWoS 卡住」的單邊瓶頸敘事，需修正為**雙邊同時擴張**。
+
+⚠ Micron 數字標註為「業界估計」，非官方財報揭露，可信度降一級。
+
+來源：[[sources/2026-09-12_sammyfans_micron-hbm-capacity-doubling]]

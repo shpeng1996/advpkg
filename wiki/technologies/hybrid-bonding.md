@@ -3,7 +3,7 @@ title: "混合接合 / Hybrid Bonding"
 category: technology
 tags: [3D, hybrid-bonding, Cu-Cu, SoIC, ECTC, advanced-packaging, DRAM, COP, 4F2, Sn-damascene, damascene-interconnect, PFAS-free, patent-signal, guard-ring, surface-activation]
 created: 2026-04-24
-updated: 2026-09-17
+updated: 2026-09-18
 sources: [2026-05-21_semiecosystem_ectc2026-cpo-hybridbonding-plp, 2026-04-24_initial-survey, 2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-03-01_3dincites_besi-packaging-power-shift, 2026-01-13_semiengineering_hbm4-microbumps, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-19_semieng_advanced-packaging-limits, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-03-27_3dincites_copper-grain-hybrid-bonding, 2026-03-02_semieng_making-hybrid-bonding-better, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2026-04-29_semiwiki_cea-leti-ectc2026-hybrid-bonding, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2024-02-09_semianalysis_hybrid-bonding-process-flow, 2026-05-19_semiconductor-digest_ev-group-ectc2026-hybrid-bonding, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-04-19_semiwiki_apple-m5-cucu-hybrid-bonding-shipped, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-18_imec_iii-v-chiplet-rf-laser-bonding, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-29_evgroup_ectc2026-hybrid-bonding-layer-transfer, 2026-06-29_thelec_skhynix-hybrid-bonding-equipment-order, 2026-06-05_semieng_intel-ectc-2026-emib-t-cpo-glass, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-14_trendforce_samsung-hbm-hiring-hybridbonding, 2026-07-16_semieng_fine-pitch-hb-high-volume, 2026-07-16_semieng_alt-materials-hybrid-bonding, 2026-06-08_irtnanoelec_d2w-hybrid-bonding-1um-pitch, 2026-05-28_imec_w2w-hybrid-bonding-200nm-pitch, 2026-09-09_acsaelm_microwave-anneal-cu-cu-150c-3min, 2026-08-21_scirep_copper-oxide-reduction-ar-h2-pulsed-plasma]
 related:
   - wiki/technologies/soic.md
@@ -1032,3 +1032,107 @@ imec/EVG 的其他新細節：**六角形 pad 排列**（相同最小間距下�
 ⭐ **發明人群組訊號**：尹汝俊（YUN YEOJUN）與李喜秀（LEE HEESOO）同時出現在本節的三件 JCET 專利上（子堆疊測試、微波剝離、雙雷射鍵合）。**同一 JCET 韓國團隊在一季內於「接合能量投遞」「解接合」「堆疊測試」三個環節同步布局**——其工作範圍是整條 D2W 堆疊流程。
 
 **來源**：[[sources/2026-08-13_jcet_us20260239928a1-hybrid-bonding-substack-test]]、[[sources/2026-09-15_jcet_cn122766296a-microwave-debonding]]、[[sources/2026-09-15_jcet_cn122766387a-dual-laser-bonding]]、[[sources/2026-07-06_apl_lensless-through-silicon-phase-imaging]]、[[sources/2025-07-10_semieng_advanced-packaging-reshaping-inspection]]
+
+---
+
+## 2026-09-18 collect 更新：對準精度不再是瓶頸假說；銅的氧化相成為低溫路線的第二理由
+
+### 一、⭐ D2W 對準路線圖結清——且結果推翻了本 wiki 的追蹤前提
+
+`overview.md` 自 2026-09-16 列管空缺「設備商 D2W 對準路線圖 —— 需追蹤 EVG／Besi／ASMPT 是否宣告 **0.5 µm (3σ)** 時程」。答案已取得，且業界實際水準比該追蹤目標**嚴格 5 倍**。
+
+| 指標 | 數值 | 來源 |
+|------|------|------|
+| D2W 逐 die 對準（量產現況） | **100 nm @ 3σ** | AMAT × Besi Kinex |
+| D2W 對準（2026 新機宣告） | **50 nm 或更佳** | 同上 |
+| D2W 對準（路線圖） | **< 25 nm** | 同上 |
+| 吞吐量（量產） | **1,600 die/hr** | 同上 |
+| 吞吐量（上限） | **2,000 die/hr** | 同上 |
+| 表面劣化佇列時間 | ~13 hr → **數分鐘**（約 10×） | 同上 |
+| 機台擴充性 | 最多 **6 個 bonder 模組** | 同上 |
+
+來源：[[sources/2025-11-21_eetimes_amat-besi-d2w-hybrid-bonding-hvm]]（EE Times，2025-11-21；為回答列管空缺而刻意收錄之較舊來源）
+
+### 二、⚠ 對 2026-09-16「對準是主導變數」論點的限定（非推翻）
+
+本頁 2026-09-16 記載：由 imec × EV Group 的 W2W 成果（200 nm pitch、post-bond overlay **<40 nm**）推得「W2W 與 D2W 的間距落差可歸因到單一變數：機台逐 die 對準精度」。
+
+補上 D2W 側數字後，兩者落差為 **<40 nm vs 100 nm，僅約 2.5 倍**——不是數量級。因此：
+
+- 「對準精度是主導變數之一」**維持成立**；
+- 但「D2W 因此停在 6–9 µm pitch」**無法單靠對準精度解釋**。100 nm (3σ) 的對準理論上足以支撐遠小於 6 µm 的 pitch。
+
+➜ **新增未解問題（本輪最重要）**：既然 D2W 對準已達 100 nm (3σ)，**真正把量產 pitch 卡在 6–9 µm 的限制項是什麼？** 候選：顆粒潔淨度、die 翹曲、bond line 平坦度、或純粹的良率經濟（每顆 die 的重工成本）。
+
+一項間接佐證出現在同輪的 SanDisk 專利（見 `technologies/hbf.md`）：其把感測放大器與 bit line **橫向外拉至 die 重疊區之外**，等於用**版圖設計承擔一部分對位裕度**——若機台精度是唯一限制，這個設計就沒有必要。
+
+### 三、⭐ 銅在 250 °C 出現 CuO 相並與母材分離——低溫路線的第二個理由
+
+IBM Research（T.J. Watson）× RPI 對介電層受限的電鍍／雙鑲嵌 Cu 墊做 200–350 °C／30 min 空氣退火：
+
+| 項目 | 結果 |
+|------|------|
+| 低溫端 | **Cu₂O 相主導** |
+| **CuO 出現門檻** | **250 °C**（與 Cu₂O 共存） |
+| 形貌 | Cu 墊膨脹並**凸出介電層表面** |
+| 破壞模式 | 氧化相存在於凸出部分，**可與介電層面下未氧化的 Cu 分離**；FIB 截面見 gap 與 void |
+
+**意涵**：本頁既有論述把「退火期間 Cu 膨脹回填 dishing」視為接合形成的正面機制。本研究顯示——**在有氧環境下，膨脹出來的那一部分正是氧化物，而且會與母材分離**。同一個機制既是成因也是失效源，差別在氧的可及性。
+
+且 **250 °C 恰落在 Cu-Cu 混合接合典型退火窗口（250–350 °C）之內**。這替本頁「低溫製程材料路徑」一節的三條既有路線（POSTECH 微波退火 150 °C／3 min、Pd 表面合金化、電漿／自激活表面處理）補上一個**與熱預算無關的第二理由**：避開 CuO 相的生成。先前所有低溫論證都建立在熱預算與元件保護上，這是第一個相學論證。
+
+⚠ **限定**：本研究在**空氣環境**退火，量產混合接合退火多在惰性或真空環境。250 °C **不可直接套用為產線退火溫度上限**；它界定的是「若有氧可及會發生什麼」，用途在量化製程環境控制的必要性。
+
+來源：[[sources/2026-07-31_jvstb_ibm-cu-pad-oxide-phases-annealing]]
+
+### 四、界面 void 的成因清單擴充至三類
+
+| 類型 | 機制 | 尺度 | 可偵測性 |
+|------|------|------|---------|
+| 外來夾雜 | **顆粒**使接合前緣分裂 | **µm 級** | 現有聲學／光學可攔截 |
+| 接合不全 | 接合前緣未完全閉合 | µm 級 | 可攔截 |
+| **內生剝離** ⭐新增 | **氧化層與未氧化 Cu 分離** | 數 nm–µm | 部分落在偵測門檻以下 |
+
+華中科大（模擬）進一步顯示，**同尺度下顆粒的「形狀」即可讓孔洞高度相差 54%**：
+
+| 指標 | 圓柱形顆粒 | 方形顆粒 | 差異 |
+|------|-----------|---------|------|
+| 接合延遲 | 3.1 s | **4.4 s** | +42% |
+| 界面孔洞高度 | 11.1 µm | **17.1 µm** | **+54%** |
+
+顆粒**位置**的影響為**非單調**。
+
+➜ **通則升格**：現行潔淨度規範只以「≥X nm 顆粒計數」表述，而形狀在同尺度下即造成 54% 差異——這與 2026-09-17 記錄的「面板驗收指標選錯的可操作風險」是**同一類問題**：以易量測量代理難量測量時，代理誤差可達數十個百分點。
+
+⚠ 華中科大數字為**數值模擬**輸出，非實測。
+
+來源：[[sources/2026-08-05_jap_particle-shape-w2w-bonding-voids]]
+
+### 五、⭐ 低溫路線新增第四條軸：換掉接合金屬本身（鈷）
+
+本頁既有的低溫路線全部圍繞 Cu——製程側（微波退火、表面活化）與材料側（NT-Cu、SiCN、BCB、Ag/Ru，SemiEngineering 2026-07-16）。該替代材料清單含 Ag 與 Ru，**不含 Co**。
+
+重慶大學等以分子動力學檢視 **Co/Co** 接觸（623 K／350 °C）：
+
+| 項目 | 結果 |
+|------|------|
+| 最佳結構重疊 | **Co(111)/Co(111)** |
+| 最強 z 向遷移 | Co(100)/Co(110) |
+| 法向負載 | 促進接觸閉合，但**未使結構重疊單調上升** |
+| 粗糙度最佳點 | 波長 **λ = 20 Å**、振幅 **A = 1 Å**（且強烈相依於波長） |
+| HCP-Co 對照 | 4 ns 內維持 HCP 主導 |
+
+⭐ **粗糙度存在最佳值，而非越平越好。** 若在實驗中成立，將與混合接合 CMP「表面越平坦越好」的既有工程假設相左——dishing 控制的目標可能需改寫為「特定空間波長的受控粗糙度」。
+
+📌 **與 IBM 論文構成可檢驗假說**：Cu 在 250 °C 以上生成 CuO 並剝離，是 Cu 路線的內在弱點；若 Co 氧化行為較溫和，即為換金屬的動機之一。**本文未論證此點，此為本 wiki 推論，需後續來源佐證。**
+
+⚠ **純模擬，無實驗接合強度／電阻率／可靠度數據**；作者自陳 D_z^app 為表觀量、Zhou04 EAM 勢函數在 (100)/(111) 表面能排序上有限制。本節結論一律為**假說級**。Co 電阻率高於 Cu 的既知代價未被討論。
+
+來源：[[sources/2026-09-15_mssp_cobalt-low-temp-hybrid-bonding-md]]
+
+### 對「爭議與未解問題」的新增條目
+
+- ⭐ **對準達 100 nm (3σ) 之後，量產 pitch 仍停在 6–9 µm 的真正限制項為何？**（本輪新增，優先）
+- 惰性／真空退火環境下，Cu 墊的氧化相門檻與空氣環境相差多少？250 °C 是否仍有意義？
+- 混合接合的最佳表面粗糙度是否真的非零？若是，CMP 規格需如何改寫？
+- Co 作為混合接合導體的電阻率折衷與實驗接合強度。

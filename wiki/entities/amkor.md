@@ -3,7 +3,7 @@ title: "Amkor Technology"
 category: entity
 tags: [OSAT, advanced-packaging, FOCoS, Arizona, chiplet, Intel-EMIB, patent-signal, TIM]
 created: 2026-04-25
-updated: 2026-09-17
+updated: 2026-09-18
 sources: [2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-05-19_stocktitan_amkor-arizona-peoria-land-expansion, 2026-06-17_digitimes_amkor-tsmc-10year-arizona-deal, 2026-06-17_trendforce_tsmc-amkor-10year-arizona-advanced-packaging, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-30_amkor-ir_arizona-7billion-groundbreaking, 2026-06-30_digitimes_amkor-2.5d-hdfo-growth-2026, 2026-07-23_amkor-ir_nvidia-amkor-1-5b-strategic-partnership]
 related:
   - wiki/technologies/cowos.md
@@ -171,3 +171,27 @@ Amkor 的 **Vineet Pancholi** 提供本 wiki 目前唯一的中介層測試覆�
 詳見 [[concepts/test-metrology-packaging]]。
 
 **來源**：[[sources/2025-01-14_semieng_known-good-interposer-screening]]
+
+---
+
+## 2026-09-18 更新：以梁中性軸 CTE 對稱控制翹曲（專利軌輪替完成）
+
+### 專利訊號 / Patent Signals
+
+**US20260165128A1**（fam 100037816，公開 2026-06-11；發明人 **Mike Kelly**、Chandra Pendyala、Young Do Kweon）
+
+- 重佈線結構上並置兩顆元件、外圍模封，其上覆一層金屬結構；
+- 核心宣稱：**裝置梁中性軸之上的 CTE 與之下的 CTE 相互平衡**。
+
+同日 **US20260165123A1**（fam 100037812）以**同一片金屬結構** + TIM + lid 建立散熱路徑。
+
+**解讀**：
+1. 翹曲對策的語彙自**材料學**（CTE 配方、模封收縮）轉為**結構力學**（中性軸上下的一階矩平衡）——後者可計算、可設計。
+2. 一件解翹曲、一件解散熱，且圍繞同一零件——**熱與機械的設計耦合已下沉到零件層級**。
+3. 對面板級封裝槓桿更大：彎矩隨跨距平方成長，配置對稱性的效果遠超材料 CTE 微調。
+
+⚠ **專利為前瞻訊號**：Amkor 於 2026-06 公開之專利顯示其設計方法論，非已宣告之產品規格。
+
+📌 **專利軌輪替紀錄**：本輪以 `pa="amkor technology" and pd within "2026"` 命中 **84 件**，絕大多數為通案性「electronic devices and methods」標題（基板邊緣端子、雙面模封、影像元件腔體、測試治具等）；僅上述兩件具明確結構論點。**Amkor 專利軌視為完成**，下輪輪替至其他申請人。
+
+來源：[[sources/2026-06-11_epo_amkor-cte-balance-beam-neutral-axis]]

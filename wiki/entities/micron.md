@@ -3,7 +3,7 @@ title: "美光科技 / Micron Technology"
 category: entity
 tags: [memory, HBM4, DRAM, NAND, CapEx, Virginia, Idaho, New-York, onshoring]
 created: 2026-05-03
-updated: 2026-09-14
+updated: 2026-09-18
 sources: [2025-12-18_trendforce_micron-capex-hbm4, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-03-17_trendforce_gtc2026-key-takeaways, 2025-08-05_3dincites_iftle636-samsung-lsb-micron-virginia, 2026-01-23_trendforce_hbm4e-development, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-26_semieng_chip-week-144, 2026-06-25_thelec_micron-q3-fy2026-record, 2026-07-06_trendforce_micron-hiroshima-fab-hbm-1gamma, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-10_tomshardware_micron-250b-us-investment-globalwafers, 2026-07-10_semieng_chip-week-146, 2026-08-21_semieng_chip-week-152]
 related:
   - wiki/technologies/hbm4.md
@@ -239,3 +239,25 @@ Micron 的 HBM 熱管理策略與 Samsung（HPB）和 SK Hynix（iHBM）不同�
 2. **繞開矽中介層的路線群**：與 Qualcomm HBC（3D-LPDDR + 有機基板，宣稱 6× BW/W）同屬一類。若成立，HBM 對 CoWoS 產能的結構性依賴將被削弱。
 
 - 引用：`wiki/sources/2025-10-09_micron_wo2025212237a1-heat-mitigating-hbm-sip.md`
+
+---
+
+## 2026-09-18 更新：HBM 產能年底倍增至約 100K wspm；HBM4 單堆疊 >2.8 TB/s
+
+| 項目 | 數值 |
+|------|------|
+| 新增 HBM wafer starts | **+60,000 /月**（2026 年底前） |
+| 擴張後總量 | **~100,000 wspm** |
+| 前一年基準 | 40,000–50,000 wspm（**約翻倍**） |
+| HBM4 12-high 頻寬 | **> 2.8 TB/s / 堆疊**（供 NVIDIA Vera Rubin） |
+| 12-high 佔 HBM 產出 | 20–30%（年初）→ **最高 50%**（年底） |
+| 16-layer HBM4 | **已出樣，未宣布量產** |
+
+**解讀**：
+1. **>2.8 TB/s** 補上本頁先前缺失的 Micron 一手頻寬數字（既有記錄為 >11 Gbps pin speed）。
+2. Micron 單家年底約 100K HBM wpm，對照 CoWoS 全球 120–140K wpm——**記憶體端與封裝端的擴張節奏已大致同步**，過去「HBM 充足但 CoWoS 卡住」的單邊瓶頸敘事需修正。
+3. 16-layer 策略上 Micron 居中：不像 SK hynix 已量產，也不像 Samsung 明確否定。
+
+⚠ 產能數字標註為「業界估計」，非官方財報揭露。
+
+來源：[[sources/2026-09-12_sammyfans_micron-hbm-capacity-doubling]]、[[sources/2026-09-15_benzinga_skhynix-16layer-hbm4-48gb]]

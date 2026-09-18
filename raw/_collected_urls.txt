@@ -500,3 +500,19 @@
 2026-09-17 | https://doi.org/10.1063/5.0333722 | raw/papers/2026-09-17_openalex_lensless-through-silicon-phase-imaging-metrology.md | Lensless through-Si phase imaging 2.19um in-tool metrology
 2026-09-17 | https://doi.org/10.1080/10589759.2026.2728079 | raw/papers/2026-09-17_openalex_hysan-sparse-view-xct-tsv-inspection.md | Hy-SAN sparse-view XCT for TSV; PSNR 39.18dB, 6.10M params
 2026-09-17 | https://doi.org/10.1007/s11668-026-02506-6 | raw/papers/2026-09-17_openalex_3dic-failure-analysis-design-for-analysis.md | Google+TU Delft: 3D IC FA bottleneck, Design-for-Analysis
+2026-09-18 | https://www.eetimes.com/applied-materials-besi-push-die-to-wafer-hybrid-bonding-toward-high-volume-manufacturing/ | raw/articles/2026-09-18_eetimes_amat-besi-d2w-hybrid-bonding-hvm.md | AMAT+Besi Kinex D2W 100nm 3sigma, 1600 dph
+2026-09-18 | https://www.benzinga.com/news/26/09/61800956/sk-hynix-16-layer-hbm4-nvidia-rubin-micron-samsung | raw/articles/2026-09-18_benzinga_skhynix-16layer-hbm4-48gb-mass-production.md | SK hynix 16-layer HBM4 48GB Q3 mass production
+2026-09-18 | https://www.sammyfans.com/2026/09/12/micron-doubling-hbm-capacity-as-samsung-sk-hynix-scale-up/ | raw/articles/2026-09-18_sammyfans_micron-hbm-capacity-doubling-60k-wspm.md | Micron +60K HBM wspm by end-2026, ~100K total
+2026-09-18 | https://semiengineering.com/chiplet-standards-aim-for-plug-n-play/ | raw/articles/2026-09-18_semieng_chiplet-standards-plug-n-play.md | Chiplet standards: FCSA 1.0.0, JESD-030O, 5 design kits
+2026-09-18 | https://www.laserfocusworld.com/optics/article/55369207/phononic-cooling-is-critical-for-copackaged-optics | raw/articles/2026-09-18_laserfocusworld_cpo-thermoelectric-cooling-phononic.md | CPO TEC sub-0.5C stability; glass interposer 40GHz
+2026-09-18 | https://blogs.sw.siemens.com/semiconductor-packaging/2026/02/05/five-key-trends-of-co-packaged-optics-cpo-in-2026/ | raw/articles/2026-09-18_siemens_cpo-five-key-trends-2026.md | CPO 5 trends: 30W to 9W @1.6T; TeraPHY 8Tbps
+2026-09-18 | EPO:100312115:US20260191064A1 | raw/patents/2026-09-18_US20260191064A1_intel-bottom-up-tgv-plating-airgap.md | Intel bottom-up TGV plating with airgap
+2026-09-18 | EPO:98692272:WO2026164778A1 | raw/patents/2026-09-18_WO2026164778A1_corning-small-diameter-tgv-adhesion-layer.md | Corning small-diameter TGV Ti/Cu adhesion layer
+2026-09-18 | EPO:99632522:US20260136975A1 | raw/patents/2026-09-18_US20260136975A1_intel-partial-liner-tgv-stress.md | Intel partial liner TGV stress relief
+2026-09-18 | EPO:100037816:US20260165128A1 | raw/patents/2026-09-18_US20260165128A1_amkor-cte-balance-beam-neutral-axis.md | Amkor CTE balance about beam-neutral axis
+2026-09-18 | EPO:99884234:US20260150301A1 | raw/patents/2026-09-18_US20260150301A1_sandisk-d2w-bonded-memory-offset-pads.md | SanDisk D2W memory pads outside overlap area
+2026-09-18 | https://doi.org/10.1038/s41928-026-01681-6 | raw/papers/2026-09-18_openalex_nature-electronics-cpo-hpc-ai-roadmap.md | Nature Electronics CPO review: 2D/2.5D/3D roadmap
+2026-09-18 | https://doi.org/10.1116/6.0005605 | raw/papers/2026-09-18_openalex_ibm-cu-pad-oxide-phases-annealing-vias.md | IBM/RPI: CuO appears at 250C, oxide detaches
+2026-09-18 | https://doi.org/10.1063/5.0341214 | raw/papers/2026-09-18_openalex_particle-shape-w2w-bonding-void-dynamics.md | Particle shape: square 4.4s/17.1um vs cyl 3.1s/11.1um
+2026-09-18 | https://doi.org/10.1002/admt.71270 | raw/papers/2026-09-18_openalex_tgv-laser-koh-etch-multiphysics-25um.md | TGV laser+KOH: 25um +/- 1um in fused silica
+2026-09-18 | https://doi.org/10.1016/j.mssp.2026.111179 | raw/papers/2026-09-18_openalex_cobalt-cobalt-low-temp-hybrid-bonding-md.md | Co/Co low-temp hybrid bonding MD; roughness optimum

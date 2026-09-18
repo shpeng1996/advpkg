@@ -3,7 +3,7 @@ title: "HBF — High Bandwidth Flash"
 category: technology
 tags: [HBF, NAND, flash, TSV, stacking, SanDisk, SK-Hynix, Hanmi, TCB, AI-inference, storage-class-memory]
 created: 2026-06-11
-updated: 2026-09-07
+updated: 2026-09-18
 sources: [2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-06-05_trendforce_hbf-equipment-race-sandisk-hanmi, 2026-06-22_trendforce_sandisk-hbf-patent-nand-processor-bonding, 2026-05-14_semieng_flash-hbf-high-bandwidth-version, 2026-08-31_semieng_flint-hbf-llm-inference-huawei-eth-hust, 2026-08-30_semieng_oxford-hybrid-hbm-hbf-hma-llm-inference]
 related:
   - wiki/technologies/hbm4.md
@@ -355,3 +355,31 @@ HBF 需要**非傳統 DMA 路徑**（非 CPU/GPU cache hierarchy）：
 | BW vs HBM | 「近似 HBM 頻寬」 | **系統層面 0.6× HBM**（Grade 3 晶片級可達 HBM4E，但系統聚合仍遜色）|
 | NVIDIA 採用 | 期待採用 | **未承諾**；AMD 同樣未承諾 |
 | 軟體就緒度 | 標準已確立 | **目前推理軟體（vLLM）尚未支援**，需重大改寫 |
+
+---
+
+## 2026-09-18 collect 更新：SanDisk 的 D2W 貼合結構進入專利布局
+
+### 專利訊號 / Patent Signals
+
+**SanDisk — Die-to-Wafer Bonded Memory Structures**（US20260150301A1，fam 99884234，公開 2026-05-28）
+
+同日另有三件近乎相同摘要之案（US20260150754A1／fam 99884269、US20260150753A1／fam 99884271、WO2026111768A1／fam 99889249），構成**跨四個 family-id 的圍籬式布局**。
+
+結構要點：
+
+1. 記憶體 die 以 **D2W** 方式貼合至晶圓上的邏輯 die。
+2. 邏輯 die 的表面金屬墊**位於「不與記憶體 die 重疊」的區域**，其平面落在含接合界面的同一水平面上。
+3. 邏輯 die 內的第二組 bit line **自重疊區橫向延伸至非重疊區**，連接邏輯 die 的感測放大器與記憶體 die 的 bit line。
+
+### 為何重要
+
+1. ⭐ **「測試左移／堆疊後可測性」主線的第三個獨立實例，且首次來自記憶體廠。** 本 wiki 2026-09-17 建立此主線時的兩個實例為 Samsung 中介層專屬 test pad（**結構層，橫向**）與 JCET 子堆疊逐層測試（**製程層，縱向**）。SanDisk 是**版圖層**：把存取點挪到貼合後仍露出的位置，使堆疊完成後仍可探針接觸。三個實例分屬三個層級、三家公司、同一季。
+
+2. ⭐ **同一結構同時放寬 D2W 對位裕度。** 關鍵電性連接不再全部落在 die 對 die 的重疊面積內——**版圖設計正在承擔一部分機台精度的負擔**。這與同輪 EE Times 來源引出的新問題（既然 D2W 對準已達 100 nm (3σ)，為何量產 pitch 停在 6–9 µm）互為佐證：機台精度不是唯一限制。
+
+3. SanDisk 的 D2W 結構布局已進入專利階段，補強本頁既有時程（2026-08 首次 tape-out、2027 樣品、2028 量產）的**製程可信度**。
+
+⚠ **專利為前瞻訊號**：SanDisk 於 2026-05 公開之專利顯示其 D2W 結構方向，**不代表 HBF 量產結構已定**。專利文本未指明適用於 HBF 或既有 3D NAND CBA；IPC 分類（H10B43 系列）偏向 3D NAND，**與 HBF 的關聯為本 wiki 推論，待後續來源佐證**。
+
+來源：[[sources/2026-05-28_epo_sandisk-d2w-bonded-memory-offset-pads]]

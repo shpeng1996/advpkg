@@ -3,7 +3,7 @@ title: "玻璃基板 / Glass Core Substrate"
 category: technology
 tags: [glass-substrate, TGV, panel-level, FC-BGA, CoPoS, Absolics, DNP, Rapidus, warpage, SeWaRe, glass-interposer, BOE, ULCVD, non-embedding, Lens-Technology, TPK-KY, Innolux, AUO, LG-Chem, singulation, patent-signal]
 created: 2026-05-08
-updated: 2026-09-16
+updated: 2026-09-18
 sources: [2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-05-05_trendforce-insights_glass-substrate-development, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-05-29_3dincites_rapidus-2nm-advanced-packaging-ai-foundry, 2026-06-01_trendforce_intel-3dgs-india-glass-substrate, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-06-20_biggo_boe-glass-substrate-pilot, 2026-06-28_economy-ac_glass-substrate-global-race, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-08-18_trendforce_shinko-glass-substrate-22layer-glassem-delay, 2026-09-11_mssp_tgv-glass-biaxial-bending-ring-on-ring, 2026-06-02_intel_ectc2026-emib-t-cpo-glass]
 related:
   - wiki/technologies/copos.md
@@ -778,3 +778,82 @@ Intel 於 ECTC 2026 的說法：
 - TGV 陣列雙軸彎曲強度的**絕對數值**（需原文）。
 - **蝕刻製程**對強度的具體貢獻量（有／無蝕刻的差值）。
 - 既有的「邊緣 95 → 49 MPa」係單軸數據；與雙軸 RoR 數據**不可直接比較**，需建立換算或並列標註規則。
+
+---
+
+## 2026-09-18 collect 更新：TGV 金屬化界面成為玻璃基板的未收斂核心；兩條互斥的工程哲學浮現
+
+### 一、⭐ Intel 在 2026 上半年以至少五種互不相同的手段攻擊同一個 TGV 應力／黏著問題
+
+| 公開號 | 手段 | 公開日 | 本輪收錄 |
+|--------|------|--------|---------|
+| US20260005114A1 | 玻璃核心 hybrid panel **CTE < 11 的框架** | 2026-01-01 | 摘錄 |
+| US20260005126A1 | 玻璃核心側壁 **polymer 塗層** | 2026-01-01 | 摘錄 |
+| US20260136966A1 | **photopolymer 襯層** | 2026-05-14 | 摘錄 |
+| **US20260136975A1** | **部分襯層（partial liner）** | 2026-05-14 | ✅ 源摘要頁 |
+| **US20260191064A1** | **bottom-up 鍍膜 + 刻意保留空氣間隙** | 2026-07-02 | ✅ 源摘要頁 |
+| JP2026119036A | TGV **雙襯層（double liner）** | 2026-07-16 | 摘錄 |
+
+「同一問題、五種以上解法、半年內密集公開」——在本 wiki 的專利軌中，此樣態通常對應**問題尚未解決且被認定為關鍵路徑**。對照 Intel 公開宣稱的玻璃基板 2028–2030 導入時程，**TGV 金屬化界面仍是未收斂項**。
+
+兩項可獨立成立的技術宣稱：
+
+1. **「部分襯層」是物理宣稱，不只是成本優化。** 襯層高度刻意**小於** via 全高、且自單面延伸——若應力沿孔軸均勻分布，此設計無意義。這是本 wiki 首次取得關於 **TGV 應力空間分布不均**的間接證據。
+2. **空氣間隙的用途是應力解耦，而非電性隔離。** Cu 與玻璃的 CTE 差異在熱循環時撕裂界面（見本頁「可靠性挑戰」）；若刻意在銅與玻璃之間留空隙，銅的熱膨脹便不再直接推擠玻璃。這是**用幾何換材料匹配**。⚠ 代價未被專利文本討論：空氣是熱絕緣體，且對高頻特性的影響不明。
+
+另註：US20260191064A1 的發明人達 **22 名**，屬平台級布局而非單點改良。
+
+來源：[[sources/2026-05-14_epo_intel-partial-liner-tgv-stress]]、[[sources/2026-07-02_epo_intel-bottom-up-tgv-plating-airgap]]
+
+### 二、⭐ 兩條互斥的工程哲學：Intel 假設界面終將失效，Corning 假設界面可以做牢
+
+Corning（WO2026164778A1，2026-08-06，小孔徑 TGV）：
+
+| 製程步驟 | 內容 |
+|---------|------|
+| 黏著層 | **Ti + Cu**，PVD 沉積 |
+| 表面處理 | **酸液富化羥基（−OH）** → **矽烷官能化** |
+| 種子層 | **無電鍍（electroless）銅** |
+| 填孔 | 電鍍銅 |
+| 後處理 | **CMP 前退火** |
+
+- **Intel** 走**結構性應力解耦**（空氣間隙、部分襯層、polymer 塗層）——預設 Cu/玻璃界面遲早失效，所以把兩者脫鉤。
+- **Corning** 走**化學性黏著強化**（羥基 + 矽烷 + 無電鍍）——預設界面可以被做牢。
+
+這是本 wiki 首次能把玻璃基板的技術分歧表述為**兩條假設相反的工程路線**，而非單純的廠商差異。兩者孰對，將決定玻璃基板可靠度論證的走向。
+
+另一層訊號：**玻璃基材供應商正把競爭點推到界面化學與金屬化製程**，而非玻璃本身。Corning 做金屬化製程、Quartz Corp（挪威，高純石英原料商）出現在 TGV 學術論文合著名單（見下）——材料供應端往下游整合的兩個獨立證據。
+
+來源：[[sources/2026-08-06_epo_corning-small-diameter-tgv-adhesion]]
+
+⚠ 以上皆為**專利訊號**：Intel 於 2026-05／07、Corning 於 2026-08 公開之專利顯示其技術方向，**不得視為已量產能力**。本頁既有的量產時程記載（SKC/Absolics 2027、GlaSSEM 2H27、ASE「12 個月內不會量產」等）不因本節改動。
+
+### 三、TGV 孔徑公差首次有絕對值：25 µm ± 1 µm（±4%）
+
+武漢大學 × **Quartz Corp（挪威）**，熔融石英，**雷射改質 + KOH 濕蝕刻**兩階段成孔，建立涵蓋**熱傳導、溶質擴散、化學反應動力學**的多物理耦合模型：
+
+| 項目 | 數值 |
+|------|------|
+| 基材 | 熔融石英 fused silica |
+| **孔徑與公差** | **25 µm ± 1 µm（±4%）** |
+| 形貌 | 均勻，經實驗驗證 |
+
+**意涵**：本頁既有 TGV 記載以目標孔徑、深寬比、厚度（JNTC 2.0 mm）為主，**從未有製程分散度數字**。±4% 提供了一個可用來檢驗「TGV 密度上限」宣稱的基準——孔間距必須容納這個分散度。
+
+**成孔與填孔是兩個獨立未收斂的環節**：Corning 解填孔、本文解成孔、A*STAR IME（2026-06-30）比較四種穿孔技術後預製 TGV 勝出。三者構成三個獨立證據，指向同一結論：玻璃基板製程鏈**至少有兩處尚未收斂到單一路線**。
+
+⚠ 基材為熔融石英，與產業主流玻璃核心基板（硼矽酸鹽等）材質不同，公差數字**不可直接外推**。
+
+來源：[[sources/2026-09-11_admt_tgv-laser-koh-etch-25um]]
+
+### 四、既有未解問題之進展
+
+- 📌 **「TGV 陣列力學數值」空缺維持開啟。** `10.1016/j.mssp.2026.111165` 的雙軸彎曲強度絕對值**未被本輪任何來源回答**——本輪取得的是孔徑公差，不是陣列力學強度。
+- 新增：空氣間隙對 TGV **熱傳導與高頻特性**的代價為何？
+- 新增：Corning「small via diameter」的實際數值為何？（摘要未給出，無法與 25 µm 級比較）
+
+### 五、與 CPO 的連結：玻璃中介層 RF 至 40 GHz
+
+Laser Focus World（2026-04-13）指出**玻璃中介層可維持 RF 效能至 40 GHz**。這替本頁與 `technologies/copackaged-optics.md` 之間補上具體連結數字：玻璃不只是機械／CTE 選擇，也是 **RF 選擇**。
+
+來源：[[sources/2026-04-13_laserfocusworld_cpo-thermoelectric-cooling]]

@@ -3,7 +3,7 @@ title: "共封裝光學元件 / Co-Packaged Optics (CPO) — TSMC-COUPE™ & Eco
 category: technology
 tags: [CPO, co-packaged-optics, COUPE, TSMC, GlobalFoundries, Samsung, photonics, AI, HPC, networking, OCI-MSA, DWDM, Broadcom, NVIDIA, glass-substrate, ULCVD, TGV, Spectrum-X, NVL72]
 created: 2026-04-25
-updated: 2026-09-17
+updated: 2026-09-18
 sources: [2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-05-07_trendforce_globalfoundries-silicon-photonics-scale-cpo, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-03-17_coherent_cpo-ofc2026-demo, 2026-06-07_digitimes_jcet-3d-packaging-cpo-plant, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_edn_cpo-technology-status-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-06-24_thelec_corning-glass-bridge-cpo, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-14_trendforce_umc-silith-silicon-photonics-hvm, 2026-07-14_trendforce_huawei-baidu-npo-msa, 2026-07-27_trendforce_presscenter_cpo-switches-nvidia-broadcom-coupe, 2026-06-03_3dincites_intel-foundry-emib-cpo-glass-ectc2026, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-07-31_ase_cn224583735u-photoelectric-hybrid-rdl]
 related:
   - wiki/entities/tsmc.md
@@ -777,3 +777,69 @@ EclipsePhotonic 方案：壓電定位機構嵌入標準垂直針探針頭 → **
 複雜封裝繞線與密集 3D 堆疊使故障隔離極度困難；DFT/DFD 在先進節點的診斷品質不足以刻畫失效機制。主張以 **DFA（Design for Analysis）** 把 FA 需求左移到設計週期。詳見 [[concepts/test-metrology-packaging]]。
 
 **來源**：[[sources/2026-08-03_tomshardware_cpo-foundry-roadmaps-four-way]]、[[sources/2026-08-02_chips_cpo-wafer-level-probe-card]]、[[sources/2026-08-01_jfap_3dic-failure-analysis-dfa]]
+
+---
+
+## 2026-09-18 collect 更新：熱的定義被改寫（穩定度 ≠ 散熱量）；學界路線圖以整合層級為軸
+
+### 一、⭐ CPO 的熱問題與運算晶片的熱問題不同類——本 wiki 先前未區分
+
+| 對象 | 熱約束的性質 | 量化門檻 |
+|------|------------|---------|
+| 運算晶片（GPU/XPU） | **移除瓦數**；可容忍數 °C 波動 | 熱通量、熱阻 |
+| **CPO 雷射／PIC** | **溫度穩定度與均勻度** | **< 0.5 °C** |
+
+`concepts/thermal-management.md` 既有論述以移除瓦數為主軸（液冷滲透率、直接矽液冷、Amkor CEO 之兩相冷卻預判）。但一顆 500 W 的 GPU 可以容忍 ±5 °C，一顆雷射不行。
+
+**溫度波動的後果是光學層面的**：波長漂移、modulation contrast 劣化、**BER 上升**、系統 margin 被吃掉。
+
+➜ **意涵**：CPO 封裝可能需要**與主晶片熱路徑刻意解耦的第二套熱系統**，而非共用同一片冷板。熱電冷卻（TEC）提供決定性、局部化、無移動件的控制；與兩相冷卻並非取捨，而是**分工**（兩相解大熱通量，TEC 解小區域精密控溫）。
+
+| 其他量化 | 數值 |
+|---------|------|
+| 參考系統規模 | **51.2 Tbit/s** CPO 系統 |
+| 玻璃中介層 RF 頻寬 | **至 40 GHz** |
+
+⚠ 來源作者任職於 TEC 供應商 Phononic；**TEC 本身耗電且會把熱推向他處**，此代價未被討論，屬該來源的結構性缺漏。
+
+來源：[[sources/2026-04-13_laserfocusworld_cpo-thermoelectric-cooling]]
+
+### 二、需求側第一原理數字與 1.6T 世代功耗絕對值
+
+| 項目 | 數值 |
+|------|------|
+| **資料中心能耗結構** | **60% 花在資料搬移**，而非運算 |
+| 1.6T 鏈路功耗 | **30 W → 9 W**（−70%） |
+| 效率目標 | sub **pJ/bit** |
+| 3.2T port 出貨預測 | **2029 年 > 1,000 萬個** |
+| Ayar Labs TeraPHY（UCIe 光學） | **8 Tbps** |
+| 雷射 + PIC 市場 | **$2.4B（2023）→ $5.9B（2029）** |
+
+⭐ 「**60% 資料中心能耗花在資料搬移**」是本 wiki 首次記錄的 CPO **需求側第一原理數字**。既有 CPO 論述以頻寬密度與 pJ/bit 為主，缺乏一個把光學投資正當化的系統級論證。若該比例成立，CPO 的報酬不只是加速器效能，而是**資料中心 PUE 以外的第二條省電路徑**。
+
+其餘三項趨勢（測試、標準、熱）與本 wiki 既有論述一致：光學對位公差以**微米**計，遠嚴於電性標準，需量產級自動化光電混合測試——呼應 2026-09-17 記錄的「CPO 測試成本是架構問題」。
+
+⚠ EDA 供應商部落格，市場數字未標註來源機構。
+
+來源：[[sources/2026-02-05_siemens_cpo-five-key-trends-2026]]
+
+### 三、⭐ Nature Electronics 綜述：以「封裝整合層級」而非「速率世代」為路線圖軸
+
+Nature Electronics 9(8): 853–867（2026-08-19，UVa／MIT／NTU／UIUC／Yonsei／**SK Group**）：
+
+- 電性互連的限制被明確歸因為三項物理量：**電阻損耗、電容負載、頻率相依失真**。
+- 綜述橫跨三層：電性子系統 → 電光/光電轉換介面 → 光傳輸網路。
+- **路線圖分期：2D 共封裝光學 → 2.5D 中介層整合 → 3D 異質堆疊。**
+- 關鍵挑戰明列三項：**熱管理、可製造性、標準化**。
+
+**意涵**：本 wiki 既有的 CPO 路線圖全部是廠商版本，以 Tbps 世代排列（2026-09-17 收錄之 TSMC COUPE 1.6→6.4→12.8 Tbps 等四方比較）。學界版本改以 **2D/2.5D/3D** 排列，意味著**光學整合的難度階梯由封裝結構決定，而非由速率決定**——同一速率可由不同整合層級達成，代價不同。這提供了一個與廠商路線圖**正交的分類軸**。
+
+另：**熱管理被學界綜述列為與可製造性、標準化同級的障礙**，而非工程細節。與本輪兩篇產業來源（Siemens、Laser Focus World）構成學界與產業的獨立一致。
+
+⚠ **fetch_status: partial**——Nature 僅公開摘要首段，**摘要中無任何頻寬密度／pJ-per-bit／接合 pitch 數值**。本節未引用任何量化數字。
+
+⚠ **與本 wiki 既有來源 `2026-08-20_trendforce_skhynix-cpo-roadmap-nature-electro…` 所指之 Nature Electronics 論文並非同一篇**（該篇由 SK hynix 主導）；DOI 與正規化標題雙鍵去重均確認為不同著作。
+
+📌 **待補**：取得全文以填上 2D/2.5D/3D 三階段各自的量化門檻——這是目前唯一能讓學界路線圖與廠商路線圖真正對齊的缺口。
+
+來源：[[sources/2026-08-19_natelec_cpo-hpc-ai-roadmap]]

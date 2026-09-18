@@ -3,7 +3,7 @@ title: "先進封裝的測試、量測與失效分析 / Test, Metrology & Failur
 category: concept
 tags: [test, metrology, inspection, failure-analysis, KGD, KGI, KGP, DFA, yield]
 created: 2026-09-17
-updated: 2026-09-17
+updated: 2026-09-18
 sources: [2025-01-14_semieng_known-good-interposer-screening, 2025-07-10_semieng_advanced-packaging-reshaping-inspection, 2024-11-12_semieng_packaging-drives-test-metrology-innovation, 2026-08-01_jfap_3dic-failure-analysis-dfa, 2026-07-06_apl_lensless-through-silicon-phase-imaging, 2026-09-06_ndte_hysan-sparse-view-xct-tsv, 2026-08-02_chips_cpo-wafer-level-probe-card, 2026-08-27_samsung_us20260256000a1-interposer-test-pad, 2026-08-13_jcet_us20260239928a1-hybrid-bonding-substack-test, 2026-07-07_semieng_panel-inspection-metrology-hdfo]
 related:
   - wiki/technologies/hybrid-bonding.md
@@ -168,3 +168,61 @@ CPO 探針卡的振動感測器具雙重角色：偵測可能影響光耦合的�
 - [[sources/2026-08-13_jcet_us20260239928a1-hybrid-bonding-substack-test]]
 - [[sources/2026-09-02_focustaiwan_tsmc-kaohsiung-baipu-packaging-hub]]
 - [[sources/2026-07-07_semieng_panel-inspection-metrology-hdfo]]
+
+---
+
+## 2026-09-18 collect 更新：測試左移出現第三個層級；缺陷依尺度分流；代理指標誤差升格為通則
+
+### 一、⭐ 「測試左移」三個層級、三家公司、同一季——收斂性成立
+
+| 層級 | 公司 | 手段 | 公開日 |
+|------|------|------|--------|
+| **結構層（橫向）** | Samsung | 中介層內建專屬 test pad（US20260256000A1） | 2026-08 |
+| **製程層（縱向）** | JCET | 子堆疊逐層測試（US20260239928A1） | 2026-08 |
+| **版圖層** ⭐新增 | **SanDisk** | **金屬墊與 bit line 外拉至 die 重疊區之外**（US20260150301A1） | **2026-05-28** |
+
+SanDisk 的作法：邏輯 die 的表面金屬墊落在**不與記憶體 die 重疊**的區域，且感測放大器與 bit line 自重疊區橫向延伸而出——**D2W 貼合完成後，探針仍可接觸**。
+
+三個實例分屬三個不同的技術層級、三家不同公司、同一季度。本 wiki 2026-09-17 建立此主線時只有兩例（且都在中介層/堆疊側）；第三例來自**記憶體廠的版圖設計**，證明這不是封裝端的局部現象。
+
+➜ 附帶意涵：同一結構也**放寬了 D2W 的對位裕度**——版圖設計正在承擔一部分機台精度的負擔。詳見 `technologies/hybrid-bonding.md` 2026-09-18 更新。
+
+來源：[[sources/2026-05-28_epo_sandisk-d2w-bonded-memory-offset-pads]]
+
+### 二、⭐ 缺陷應依尺度分流治理，而非混為一談
+
+本頁既有核心論點之一是「偵測門檻 vs 數奈米空洞」的物理天花板。本輪來源顯示**並非所有界面 void 都落在該困境內**：
+
+| 類型 | 機制 | 尺度 | 治理手段 |
+|------|------|------|---------|
+| 外來夾雜 | 顆粒使接合前緣分裂 | **µm 級**（模擬：孔洞高度 11.1–17.1 µm） | **現有聲學／光學可攔截**；靠潔淨度與檢測 |
+| 接合不全 | 接合前緣未閉合 | µm 級 | 可攔截 |
+| **內生剝離** | 氧化層與未氧化 Cu 分離（CuO ≥250 °C） | 數 nm–µm | **部分落在偵測門檻以下**；需新物理 |
+
+➜ 「檢測能力不足」的論述應被拆成兩個問題：**可攔截但未攔截**（流程與成本問題）vs **物理上看不到**（需要新量測原理）。兩者的投資方向完全不同。
+
+### 三、⭐ 「代理指標誤差」升格為跨製程通則
+
+華中科大（模擬）顯示：**同尺度**下，顆粒的**形狀**即可讓界面孔洞高度相差 **54%**（方形 17.1 µm vs 圓柱 11.1 µm），接合延遲相差 42%（4.4 s vs 3.1 s）；顆粒**位置**的影響為**非單調**。
+
+而現行潔淨度規範只以「≥X nm 顆粒的計數」表述。
+
+這與本 wiki 2026-09-17 記錄的「面板驗收指標選錯的可操作風險」是**同一類問題**。兩個獨立實例足以把它升格為通則：
+
+> **以易量測量（尺寸、計數）代理難量測量（形狀、位向、力學穩定性）時，代理誤差可達數十個百分點；驗收指標與失效機制不對齊，是先進封裝量測體系的結構性弱點。**
+
+附帶：**接合前緣分裂**是可量測的中間現象，理論上可作為**線上製程監控訊號**，不必等到接合後檢測。
+
+⚠ 華中科大數字為數值模擬輸出，非實測。
+
+來源：[[sources/2026-08-05_jap_particle-shape-w2w-bonding-voids]]、[[sources/2026-07-31_jvstb_ibm-cu-pad-oxide-phases-annealing]]
+
+### 四、KGD 標準化：出現第一個制度性部分解（PTDK），但空缺不結清
+
+OCP × JEDEC × IEEE 於 2025-01 釋出的五項設計套件中含 **PTDK（Package Test Design Kit）**。
+
+PTDK 把**測試資訊本身做成可交換的設計套件**——它定義「測試資料要用什麼格式交付」，**不定義「什麼叫 KGD」**。因此它解決**介面問題**，不解決本頁記載的**歸責問題**（chiplet 跨供應商交易中的失效歸責與契約基礎）。
+
+➜ 空缺「KGD 的標準化定義」**維持開啟**，改註「已有部分解：PTDK（格式層）」。
+
+來源：[[sources/2026-04-16_semieng_chiplet-standards-plug-n-play]]

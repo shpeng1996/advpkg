@@ -3,7 +3,7 @@ title: "IBM Research / IBM 研究院"
 category: entity
 tags: [research, 3D-packaging, nanostack, hybrid-bonding, sub-2nm, chiplet]
 created: 2026-09-11
-updated: 2026-09-16
+updated: 2026-09-18
 sources: [2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation]
 related:
   - wiki/technologies/hybrid-bonding.md
@@ -71,3 +71,27 @@ IBM Research 在先進封裝領域定位為技術先行者（technology pioneer�
 **單步驟蝕刻的技術副效益**：消除 Bosch 循環固有的**扇貝狀（scalloping）側壁**，直接影響 liner/barrier 覆蓋一致性與 TSV 可靠度。詳見 [[technologies/tsv]]。
 
 ⚠ 摘要層級，無量化深寬比或蝕刻率；研究階段製程，未見量產採用。
+
+---
+
+## 2026-09-18 更新：via 內 Cu 墊的氧化相研究——CuO 於 250 °C 出現並與母材分離
+
+IBM Research（T.J. Watson）× Rensselaer Polytechnic Institute × Albany，發表於 *Journal of Vacuum Science & Technology B*（2026-07-31）。
+
+對象為**電鍍 + 雙鑲嵌製成、受介電層侷限的 Cu 墊**，200–350 °C／30 min／空氣退火：
+
+| 項目 | 結果 |
+|------|------|
+| 低溫端 | **Cu₂O 相主導** |
+| **CuO 出現門檻** | **250 °C**（與 Cu₂O 共存） |
+| 形貌 | Cu 墊膨脹並**凸出介電層表面**（AFM 量測） |
+| 破壞模式 | 氧化相存在於凸出部分，**可與面下未氧化 Cu 分離**；FIB 截面見 gap 與 void |
+| 手段 | AFM、Raman、EDX、FIB |
+
+**意涵**：混合接合賴以成功的機制（退火期間 Cu 膨脹回填 dishing）與其失效機制是**同一件事**，差別在氧的可及性。且 250 °C 恰落在 Cu-Cu 混合接合的典型退火窗口（250–350 °C）內，因此替低溫接合路線提供了**與熱預算無關的第二個理由**——相學理由。
+
+⚠ **空氣環境**退火，量產多在惰性或真空環境；250 °C **不可直接套用為產線退火上限**。
+
+這是本 wiki 記錄的 IBM 第二項「單元製程層級」研究（前一項為 2026-09-16 的非 Bosch 深矽蝕刻，動機為 C₄F₈ 的高 GWP）。兩者共同顯示 IBM Research 的公開產出集中在**製程物理與材料界面**，而非架構宣告。
+
+來源：[[sources/2026-07-31_jvstb_ibm-cu-pad-oxide-phases-annealing]]

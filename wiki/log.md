@@ -3546,3 +3546,43 @@ an（2028–2029 量產世代）為 CoPoS 最可能的首批量產客戶——�
   5. **JCET 韓國團隊的產能與客戶**需獨立佐證——三件專利的技術層級與江陰廠定位落差極大，目前僅有專利單一證據源。
   6. 既有未結案項延續：`10.1016/j.mssp.2026.111165` 全文（TGV 雙軸彎曲絕對值）、IEEE Xplore ECTC 2026 論文原文 PDF、Silicon Box 的第三方獨立驗證。
   7. **lint 待辦（新增，優先）**：⚠ `wiki/technologies/info-wmcm.md` **不是合法 UTF-8**（位元組約 4721 處截斷），任何 UTF-8 批次處理都會跳過它——下次 lint 應優先修復編碼；既有的 index.md 來源清單全域重排待辦仍在（本輪 16 筆已依發表日插入正確位置，未新增逆序對）。
+
+## [2026-09-18] collect | 每日自動蒐集 — 先進封裝最新動態（三軌執行：新聞 + 專利 + 論文）
+- 搜尋查詢數：新聞 9 組 / 專利 4 組（CQL）/ 論文 3 組（OpenAlex filter）
+- 成功抓取：16 篇（articles 6, patents 5, papers 5, reports 0）
+- 失敗/跳過：約 130 篇（已收錄 11：新聞 URL 比對 10 + 專利 family-id 1；付費牆／擷取失敗 3：DIGITIMES 付費牆、Counterpoint 正文未渲染、Elsevier linkinghub 空白；**無摘要而主動棄收 3 篇高相關論文**；低相關或低訊號 ~113：Amkor 84 件中 82 件為通案「electronic devices and methods」、TGV 15 件中含醫療植入物與多層配線板、OpenAlex 三組共 70 筆中多為光電／材料／非半導體封裝）
+- 資料源狀態：WebSearch ACTIVE ✓ | EPO OPS ACTIVE ✓ | OpenAlex ACTIVE ✓（OPS 5 次呼叫／上限 10，全部 HTTP 200；OpenAlex 3 組查詢全部 200，無 429）
+- 新增 wiki 頁面：18 頁
+  - **新實體頁 ×2**：`wiki/entities/corning.md`（康寧，20+ 頁提及，本輪專利軌申請人）、`wiki/entities/sandisk.md`（SanDisk，HBF 主角，20+ 頁提及）
+  - 來源摘要頁 ×16（依慣例以**發表日**而非收錄日命名）
+- 更新 wiki 頁面：16 頁
+  - `wiki/technologies/hybrid-bonding.md`（⭐ **D2W 對準 100 nm @3σ 結清空缺並限定既有歸因**；**CuO 250 °C 門檻**；void 成因擴充至三類；顆粒形狀 +54%；**低溫路線第四軸：換金屬為 Co**）
+  - `wiki/technologies/glass-substrate.md`（⭐ **Intel 五種以上手段攻擊同一 TGV 應力問題**；⭐ **Intel vs Corning 兩條假設相反的工程哲學**；**TGV 25 µm ± 1 µm 首個公差絕對值**）
+  - `wiki/technologies/copackaged-optics.md`（⭐ **熱的定義改寫：穩定度 <0.5 °C ≠ 散熱量**；1.6T 30 W→9 W；**資料中心 60% 能耗在搬移**；**Nature Electronics 以 2D/2.5D/3D 為路線圖軸**）
+  - `wiki/technologies/hbm4.md`（⭐ **三雄首次在同世代層數上分歧**；48 GB 16-Hi Q3 量產；Micron +60K wspm）
+  - `wiki/technologies/ucie.md`（FCSA Rev1.0.0、JESD-030O、五項設計套件；⭐ **標準重心自互連移向組裝與材料**；PTDK 為 KGD 部分解；UCIe 光學延伸 TeraPHY 8 Tbps）
+  - `wiki/technologies/hbf.md`（SanDisk 四件 D2W 圍籬式專利；**測試左移第三例**）
+  - `wiki/technologies/cowos.md`（⭐ **交期 52–78 週首次記錄**；⚠ 年底產能 120–140K wpm 登錄為區間分歧，既有數字未改動）
+  - `wiki/technologies/foplp.md`（Amkor 梁中性軸 CTE 對稱；面板失效四機制首次有**設計側對策**）
+  - `wiki/technologies/copos.md`（TGV 孔徑公差同步）
+  - `wiki/concepts/test-metrology-packaging.md`（⭐ **測試左移三層級收斂**；⭐ **缺陷依尺度分流治理**；⭐ **代理指標誤差升格為通則**；PTDK）
+  - `wiki/concepts/thermal-management.md`（⭐ **熱問題分裂為兩類：熱通量 vs 溫度穩定度**；熱／機械耦合下沉到零件層級）
+  - `wiki/entities/intel.md`、`wiki/entities/amkor.md`、`wiki/entities/besi.md`、`wiki/entities/applied-materials.md`、`wiki/entities/ibm.md`、`wiki/entities/micron.md`、`wiki/entities/sk-hynix.md`、`wiki/entities/samsung.md`
+  - `wiki/index.md`（頁面總數 525→543；來源數 475→491；新增 Corning／SanDisk 實體條目；16 筆來源條目以程式依發表日插入）
+  - `wiki/overview.md`（健康快照更新；D2W 對準空缺標記結清；新增 6 項空缺；新增 Elsevier/Nature 收錄偏差警示）
+- 主要新知識：
+  1. ⭐⭐ **本 wiki 一條既有論點被自己的追蹤目標推翻：D2W 混合接合的量產對準精度已達 100 nm @ 3σ，而 wiki 追蹤的目標值是 0.5 µm——寬了 5 倍。** 更重要的是後果：2026-09-16 本 wiki 由 imec×EVG 的 W2W 成果（200 nm pitch、overlay <40 nm）推得「W2W 與 D2W 的間距落差可歸因到機台逐 die 對準精度」。補上 D2W 側數字後，兩者落差僅 **2.5 倍**（<40 nm vs 100 nm），**不足以解釋量產 pitch 停在 6–9 µm**。「對準是主導變數之一」維持成立，「D2W 因此卡在 6 µm」則不成立。➜ 已列為本輪**最高優先空缺**：真正的限制項是顆粒潔淨度、die 翹曲、bond line 平坦度，還是良率經濟？一項間接佐證來自同輪 SanDisk 專利——其以版圖設計（bit line 外拉）承擔一部分對位裕度，若機台精度是唯一限制，這個設計沒有必要。吞吐量亦首次有量產絕對值：1,600–2,000 die/hr。
+  2. ⭐ **混合接合賴以成功的機制與其失效機制是同一件事，差別只在氧的可及性；且銅的相變門檻恰好落在退火窗口內。** IBM Research × RPI：介電層受限的 Cu 墊在 200–350 °C 空氣退火時，**Cu₂O 於低溫端主導，CuO 於 250 °C 出現**，且氧化相存在於「膨脹凸出介電層表面」的那一部分，**可與面下未氧化的銅分離**（FIB 見 gap 與 void）。本 wiki 既有論述把「退火期間 Cu 膨脹回填 dishing」視為接合形成的正面機制——原來膨脹出來的正是會剝離的氧化物。而 250 °C 落在 Cu-Cu 混合接合典型退火窗口 250–350 °C 之內，這替三條既有低溫路線（微波退火 150 °C／3 min、Pd 表面合金化、表面活化）補上一個**與熱預算無關的第二理由**：避開 CuO 相。⚠ 空氣環境取得，不可直接套用產線，已列為新空缺。
+  3. ⭐ **玻璃基板的技術分歧首次可表述為兩條假設相反的工程哲學，而非廠商差異。** Intel 在 2026 上半年以**至少五種互不相同的手段**攻擊同一個 TGV 應力／黏著問題（photopolymer 襯層、**部分襯層**、側壁 polymer 塗層、**CTE<11 框架**、**bottom-up 鍍膜＋刻意保留空氣間隙**，另有 JP 雙襯層）——這種「同一問題、五種解、半年內密集公開」的樣態對應**關鍵路徑上的未收斂問題**。其中「部分襯層」（高度刻意小於 via 全高、自單面延伸）是一項**物理宣稱**：若應力沿孔軸均勻分布，此設計無意義，故間接指出應力集中於單側界面。對照 Corning 同期專利（Ti/Cu 黏著層＋酸液富化羥基＋矽烷官能化＋無電鍍種子層）：**Intel 賭 Cu/玻璃界面遲早失效所以要脫鉤，Corning 賭界面可以被做牢**。孰對將決定玻璃基板可靠度論證的走向。
+  4. ⭐ **「代理指標誤差」升格為跨製程通則，且第二個實例來自最不可能的地方——潔淨度規範。** 華中科大顯示：**同尺度**下顆粒的**形狀**即可讓界面孔洞高度相差 **54%**（方形 17.1 µm vs 圓柱 11.1 µm），接合延遲相差 42%，且顆粒位置的影響**非單調**。而產線潔淨度規格長期只以「≥X nm 顆粒計數」表述。這與 2026-09-17 記錄的「面板驗收指標選錯的可操作風險」是同一類問題，兩個獨立實例足以成立通則：**以易量測量（尺寸、計數）代理難量測量（形狀、位向、力學穩定性）時，代理誤差可達數十個百分點**。附帶一個分流結論：顆粒型孔洞是 **µm 級**、現有聲學／光學可攔截，與「數 nm 空洞 vs 偵測門檻」的物理天花板**不是同一個問題**，投資方向也不同——「檢測能力不足」應拆成「可攔截但未攔截」與「物理上看不到」兩類。
+  5. ⭐ **CPO 的熱問題與運算晶片的熱問題不同類，本 wiki 先前未區分。** 既有 `thermal-management.md` 以**移除瓦數**為單一主軸。但一顆 500 W 的 GPU 可容忍 ±5 °C，一顆雷射不行——CPO 雷射與 PIC 的約束是**溫度穩定度：< 0.5 °C**，失效表現是波長漂移、modulation contrast 劣化、BER 上升。➜ 熱問題正式分裂為兩類：兩相冷卻（Amkor CEO 2026-09-08 預判）解熱通量、TEC 解小區域精密控溫，**並存而非取捨**；CPO 封裝可能需要與主晶片熱路徑刻意解耦的第二套熱系統。同輪 Nature Electronics 綜述亦把熱管理與可製造性、標準化**並列為同級障礙**，構成學界與產業的獨立一致。另：CPO 需求側首次有第一原理數字——**資料中心 60% 能耗花在資料搬移而非運算**。
+  6. **HBM 競爭首次從「誰先做到」轉為「該不該做」。** SK hynix 2026 Q3 量產 48 GB 16-layer HBM4（+33%），Micron 僅出樣，**Samsung 公開表示 16-layer「沒有必要」**。三雄首次在同一世代的層數上策略分歧，形成可在 2027 年驗證的明確對賭。附帶：48 GB／16 層仍守在 JEDEC 775 µm 內，間接佐證「HBM4E 跳過混合接合、延後至 HBM5」的既有時程判斷。
+- 專利訊號：本輪五件分為三條主線。（1）**玻璃基板 TGV 金屬化界面**——Intel 兩件（bottom-up 鍍膜＋空氣間隙、部分襯層）與 Corning 一件（Ti/Cu 黏著層＋界面化學），三件指向同一個 Cu/玻璃界面，卻代表兩種相反假設；配合 Intel 同期另外三件，顯示這是 Intel 玻璃基板路線上**尚未收斂的關鍵路徑**。（2）**測試左移的第三個層級**——SanDisk 把金屬墊與 bit line 外拉至 die 重疊區之外（US20260150301A1，四個 family-id 圍籬式布局），使 D2W 貼合後仍可探針存取；前兩例為 Samsung 中介層 test pad（結構層）與 JCET 逐層測試（製程層），本例為**版圖層，且首次來自記憶體廠**——三層級、三公司、同一季，收斂性成立。（3）**CTE 管理從材料選擇變成結構配置**——Amkor 以「梁中性軸上下 CTE 對稱平衡」控制翹曲，與 Intel 的「CTE<11 玻璃面板框架」是同一語彙在兩個不同尺度上的出現；Amkor 同日另一件以同一片金屬結構建立散熱路徑，顯示熱與機械的設計耦合已下沉到零件層級。
+- 下輪建議：
+  1. ⭐ **最高優先：追查 D2W pitch 的真正限制項。** 對準已 100 nm (3σ) 仍卡在 6–9 µm——鎖定設備商或 OSAT 對「pitch 微縮第一限制」的公開表態、顆粒潔淨度規格、die 翹曲允收值。
+  2. **專利軌輪替至 Micron 與設備商（Besi／EVG／ASMPT）。** 本輪 Micron 以 `pa="micron technology" and ti,ab="package" and pd within "2026"` 僅命中 **1 件**——依 2026-09-17 的教訓（「某大廠零命中先懷疑檢索式」），應改以 `pa="micron technology" and pd within "2026"` 不加 ti,ab 限定重試。Amkor 已完成。
+  3. **取得惰性／真空環境下 Cu 墊氧化相的對照數據**，以判定 250 °C 門檻對產線的實際意義。
+  4. **追蹤 Co（鈷）作為混合接合導體是否出現第二個來源**——若出現實驗數據（接合強度、電阻率），即可自假說升格為技術路線。
+  5. **評估 Elsevier 系期刊的替代取得管道。** 本輪三篇高相關論文（HBM NCF 選擇性導熱 `10.1016/j.microrel.2026.116286`、Intel Malaysia Cu-Cu 綜述 `10.1007/s00170-026-19077-3`、TGV 熱阻）因 OpenAlex 無 inverted index 且 ScienceDirect／linkinghub 回空白而**主動棄收**——這是**系統性收錄偏差**，Elsevier 系在本 wiki 論文軌中被結構性低估。
+  6. 既有未結案項延續：`10.1016/j.mssp.2026.111165` 全文（TGV 雙軸彎曲絕對值，本輪 admt 論文未回答）、Nature Electronics CPO 綜述全文、CoWoS「5.5× 良率 99%」量測邊界、Samsung US20260247940A1 目標產品線、JCET 韓國團隊產能佐證、微波能量投遞第三應用點、Silicon Box 第三方驗證。
+  7. **lint 待辦（沿用，優先序不變）**：⚠ `wiki/technologies/info-wmcm.md` 非合法 UTF-8（約 4721 位元組處截斷），任何 UTF-8 批次處理都會跳過；`wiki/index.md` 來源清單全域重排。

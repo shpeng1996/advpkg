@@ -3,7 +3,7 @@ title: "先進封裝熱管理 / Thermal Management in Advanced Packaging"
 category: concept
 tags: [thermal-management, liquid-cooling, 3D-IC, CoWoS, heat-dissipation, TIM, ECTC-2025, GaN, power-delivery, co-design, patent-signal, delamination]
 created: 2026-04-25
-updated: 2026-09-15
+updated: 2026-09-18
 sources: [2025-12-01_semiengineering_thermal-management, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-02_trendforce_samsung-hbm5-computex2026, 2026-05-21_semieng_hi-roadmap-nature-paper-intel, 2026-08-13_semieng_1mw-rack-debate-thermal, 2026-04-27_semieng_semiconductor-materials-misbehave, 2026-08-21_trendforce_chip-packaging-heat-ai-bottleneck-cpo-stco]
 related:
   - wiki/technologies/cowos.md
@@ -506,3 +506,27 @@ FOWLP 的 RDL 介面斷裂韌性隨溫度上升顯著下降，**Cu/LSF60 介面�
 本頁的熱-機械複合設計框架此前缺少**方向性的量化錨點**。這個數字提供了一個：在本 wiki 已記錄的封裝功耗路徑（600W → 4,100W）下，散熱不足不只表現為降頻或壽命縮短，而會**直接以 RDL 介面分層的形式**成為機械失效。散熱設計與封裝可靠度不再是可分別最佳化的兩個問題。
 
 - 引用：`wiki/sources/2026-07-30_amkor_us20260223669a1-tim-flow-layer-sidewall-lid.md`、`wiki/sources/2026-09-08_nanopreceng_fowlp-rdl-interface-delamination.md`
+
+---
+
+## 2026-09-18 collect 更新：熱問題分裂為兩類，需求不同、解法不同、可並存
+
+本頁既有論述以**移除瓦數**為單一主軸（液冷滲透率、TSMC 直接矽液冷、翹曲納入熱-機械複合設計框架、Amkor CEO 之兩相冷卻預判）。本輪來源顯示先進封裝的熱問題實際上分為兩類：
+
+| | **第一類：熱通量** | **第二類：溫度穩定度** ⭐新增 |
+|---|---|---|
+| 對象 | 運算晶片（GPU/XPU）、HBM 堆疊 | **CPO 雷射與 PIC** |
+| 約束 | 移除瓦數；可容忍數 °C 波動 | **均勻度與穩定度：< 0.5 °C** |
+| 失效表現 | 降頻、可靠度劣化 | **波長漂移、modulation contrast 劣化、BER 上升、系統 margin 被吃掉** |
+| 主要解法 | 液冷、**兩相冷卻**、TIM、散熱結構 | **熱電冷卻（TEC）**、局部化控溫 |
+| 尺度 | 封裝／機架級 | 元件／局部級 |
+
+➜ **兩者並非取捨而是分工**：兩相冷卻解大熱通量，TEC 解小區域精密控溫；同一封裝中可能同時出現。這也意味著 **CPO 封裝可能需要與主晶片熱路徑刻意解耦的第二套熱系統**，而非共用同一片冷板。
+
+⚠ 來源作者任職於 TEC 供應商 Phononic；**TEC 本身耗電且會把熱推向他處**，此代價未被該來源討論。
+
+### 熱與機械的設計耦合下沉到零件層級
+
+Amkor 同日兩件專利以**同一片金屬結構**分別承擔**翹曲平衡**（梁中性軸上下 CTE 對稱）與**散熱路徑**（金屬結構 + TIM + lid）。翹曲管理的語彙自材料 CTE 轉向結構力學（可計算的一階矩平衡），且熱與機械共用同一零件——本頁 2026-07-30 記載的「翹曲納入熱-機械複合設計框架」因此取得一個具體的工程實例。
+
+來源：[[sources/2026-04-13_laserfocusworld_cpo-thermoelectric-cooling]]、[[sources/2026-06-11_epo_amkor-cte-balance-beam-neutral-axis]]

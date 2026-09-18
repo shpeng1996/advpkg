@@ -3,7 +3,7 @@ title: "Applied Materials（應用材料）"
 category: entity
 tags: [equipment, ECD, PECVD, TSV, HBM, die-thinning, hybrid-bonding, USA]
 created: 2026-09-17
-updated: 2026-09-17
+updated: 2026-09-18
 sources: [2026-08-18_appliedmaterials_hbm-packaging-bottleneck-toolset]
 related:
   - wiki/technologies/tsv.md
@@ -89,3 +89,30 @@ AMAT 在先進封裝的位置不是單一設備，而是**橫跨三個瓶頸單�
 ## 參考資料 / References
 
 - [[sources/2026-08-18_appliedmaterials_hbm-packaging-bottleneck-toolset]]
+
+---
+
+## 2026-09-18 更新：Kinex D2W 混合接合的量產級數字（結清 wiki 長期空缺）
+
+Applied Materials 與 Besi 共同開發的 **Kinex** 平台，首次取得量產級絕對數值：
+
+| 指標 | 數值 |
+|------|------|
+| **逐 die 對準精度（量產現況）** | **100 nm @ 3σ** |
+| 對準精度（2026 新機宣告） | **50 nm 或更佳** |
+| 對準精度（路線圖） | **< 25 nm** |
+| 吞吐量（量產） | **1,600 die/hr** |
+| 吞吐量（上限） | **2,000 die/hr** |
+| 表面劣化佇列時間 | ~13 hr → **數分鐘**（約 **10×** 改善） |
+| 機台擴充性 | 最多 **6 個 bonder 模組**；單片晶圓整合流程 |
+| 效率增益 | 相對微凸塊方案，特定架構 **10×** |
+
+廠商對需求側的外推：未來 AI 加速器封裝尺寸大 **9×**、矽面積 **600×**、單模組 **>400 die**、I/O 密度上看 **10⁶ I/O per mm²**。
+
+⭐ **這組數字結清了 wiki 自 2026-09-16 列管的空缺「設備商 D2W 對準路線圖」**——原追蹤目標為 0.5 µm (3σ)，業界實際水準比該目標**嚴格 5 倍**。
+
+➜ 但也因此**推翻了「D2W pitch 受限於機台對準」的簡單歸因**：100 nm (3σ) 理論上足以支撐遠小於 6 µm 的 pitch。真正的限制項待查。詳見 `technologies/hybrid-bonding.md` 2026-09-18 更新節。
+
+⚠ 本節數字出自 EE Times 2025-11-21 之設備商導向報導，**未經第三方量測驗證**；「2026 年推出 50 nm 系統」為當時之廠商宣告，尚未經 2026 年獨立來源確認。
+
+來源：[[sources/2025-11-21_eetimes_amat-besi-d2w-hybrid-bonding-hvm]]

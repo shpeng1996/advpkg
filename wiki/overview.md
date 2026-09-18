@@ -2,7 +2,7 @@
 title: "先進封裝知識庫總覽 / Advanced Packaging Wiki Overview"
 category: overview
 created: 2026-04-24
-updated: 2026-09-17
+updated: 2026-09-18
 related: [wiki/index.md, wiki/analyses/2026-09-15_knowledge-base-consolidation.md]
 ---
 
@@ -78,7 +78,7 @@ related: [wiki/index.md, wiki/analyses/2026-09-15_knowledge-base-consolidation.m
 
 ---
 
-## 知識空缺 / Knowledge Gaps（2026-09-17 更新）
+## 知識空缺 / Knowledge Gaps（2026-09-18 更新）
 
 前一輪（2026-04/05）列出的 10 項空缺已全部補齊。新一輪空缺：
 
@@ -104,7 +104,7 @@ related: [wiki/index.md, wiki/analyses/2026-09-15_knowledge-base-consolidation.m
 - [x] 論文軌鎖定 ECTC / IEDM 2026 與 IEEE Xplore OA —— **2026-09-16 大幅推進**：取得 Intel Foundry **ECTC 2026 官方一手來源**（20 篇論文、EMIB-T 120×120mm/25µm bump pitch）、imec × EVG **ECTC 2026 W2W 200nm/<40nm overlay** 新聞稿、CEA-Leti **ECTC 2026 D2W 1µm** 發表說明。ECTC 2026 已由「純二手報導」進入「一手機構來源」階段；**IEEE Xplore 論文原文（PDF）仍未直接取得**，下輪續追。
 
 - [ ] **PFAS／氟化氣體規範與製程 GWP 揭露**（2026-09-16 新增）—— 已出現兩起環境法規重塑核心單元製程之案例（Fujifilm 無 PFAS PBO、IBM 非 Bosch 深矽蝕刻），列為常駐 collect 主題，觀察是否擴散至第三個單元製程（清洗、CMP 漿料、光阻）
-- [ ] **設備商 D2W 對準路線圖**（2026-09-16 新增）—— D2W 微縮的單一主導變數已確認為機台逐 die 對準精度；需追蹤 EVG／Besi／ASMPT 是否宣告 0.5 µm (3σ) 時程
+- [x] **設備商 D2W 對準路線圖**（2026-09-16 新增）—— **2026-09-18 結清**：AMAT × Besi **Kinex 量產現況 100 nm @ 3σ**、2026 新機 50 nm、路線圖 <25 nm、吞吐 1,600–2,000 die/hr（[[sources/2025-11-21_eetimes_amat-besi-d2w-hybrid-bonding-hvm]]）。⚠ 原追蹤目標 0.5 µm (3σ) 訂得過寬，業界實際嚴格 5 倍；且此結果**推翻「D2W pitch 受限於機台對準」的簡單歸因**，見下方新增空缺。原文：—— D2W 微縮的單一主導變數已確認為機台逐 die 對準精度；需追蹤 EVG／Besi／ASMPT 是否宣告 0.5 µm (3σ) 時程
 - [ ] **TGV 陣列力學數值**（2026-09-16 新增）—— `10.1016/j.mssp.2026.111165` 僅取得摘要；需全文以補上雙軸彎曲強度絕對值與蝕刻製程貢獻量，方能決定是否進一步調整玻璃基板論點
 
 - [x] **測試／量測／失效分析概念頁**（2026-09-17 新建）—— 見 [[concepts/test-metrology-packaging]]。當日 16 筆來源中 9 筆獨立指向此主題，已升格為與「製程良率」「熱」並列的第三個結構性瓶頸，列為常駐 collect 主題。
@@ -117,23 +117,31 @@ related: [wiki/index.md, wiki/analyses/2026-09-15_knowledge-base-consolidation.m
 **缺實體頁（本輪補齊一項）**
 - [x] Silicon Box —— 2026-09-16 完成，見 [[entities/silicon-box]]
 
+- [ ] ⭐ **D2W 量產 pitch 卡在 6–9 µm 的真正限制項**（2026-09-18 新增，**本輪最高優先**）—— 對準已達 100 nm (3σ)，理論上足以支撐遠小於 6 µm 的 pitch。候選限制項：顆粒潔淨度／die 翹曲／bond line 平坦度／良率經濟（每顆 die 的重工成本）。追蹤方式：設備商或 OSAT 對「pitch 微縮的第一限制」之任何公開表態；ECTC 2027 論文。
+- [ ] **惰性／真空退火環境下 Cu 墊的氧化相門檻**（2026-09-18 新增）—— IBM/RPI 的 250 °C CuO 門檻在**空氣環境**取得，不可直接套用產線。需取得惰性環境的對照數據，才能判定低溫路線的相學理由有多強。
+- [ ] **混合接合的最佳表面粗糙度是否真的非零**（2026-09-18 新增）—— Co/Co 分子動力學顯示粗糙度有最佳值（λ=20 Å、A=1 Å）。若實驗證實，CMP 規格需自「最小粗糙度」改寫為「受控空間波長粗糙度」。⚠ 目前僅模擬。
+- [ ] **Corning「small via diameter」的實際數值**（2026-09-18 新增）—— WO2026164778A1 摘要未給出，無法與既有 25 µm 級 TGV 記錄比較。
+- [ ] **16-Hi HBM4 對賭的驗證**（2026-09-18 新增）—— SK hynix 已量產、Micron 出樣、**Samsung 公開稱「沒有必要」**。三雄首次在同一世代層數上分歧，可在 2027 年驗證。追蹤方式：NVIDIA Vera Rubin 各廠採用比例。
+- [ ] **Nature Electronics CPO 綜述全文**（2026-09-18 新增）—— 需 2D/2.5D/3D 三階段各自的量化門檻（頻寬密度、pJ/bit、接合 pitch），這是讓學界路線圖與廠商路線圖對齊的唯一缺口。
+- [x] **缺實體頁：Corning、SanDisk** —— 2026-09-18 完成，見 [[entities/corning]]、[[entities/sandisk]]（觸發點：兩者同時為本輪專利軌申請人，且各被 20 頁以上引用）
+- 📌 **KGD 標準化定義**（2026-09-17 列管）—— **未結清，但已有部分解**：OCP/JEDEC 的 **PTDK（Package Test Design Kit）** 定義測試資料的交付格式，解決介面問題而非歸責問題。
+
 ---
 
-## Wiki 健康狀態 / Wiki Health（2026-09-17，daily collect 後更新）
+## Wiki 健康狀態 / Wiki Health（2026-09-18，daily collect 後更新）
 
-- **頁面總數**：525（實體 23、技術 15、概念 4、來源 475、分析 5、系統頁 3）
-- **原始來源數**：483（articles 429、patents 25、papers 27、reports 2）
-- **操作歷史**：collect 130 次（123 日）、ingest 24、query 2、lint 2
-- **資料源三軌**：WebSearch ✓ ｜ EPO OPS ✓ ｜ OpenAlex ✓（三軌均於 2026-09-17 正常運作，無任何 429／403／quota 事件）
-- **OPS 配額**：2026-09-17 使用 5 次呼叫（1 auth + 4 search），上限 10，全部 HTTP 200
+- **頁面總數**：**543**（實體 25、技術 15、概念 4、來源 491、分析 5、系統頁 3）
+- **原始來源數**：**499**（articles 435、patents 30、papers 32、reports 2）
+- **操作歷史**：collect 131 次（124 日）、ingest 24、query 2、lint 2
+- **資料源三軌**：WebSearch ✓ ｜ EPO OPS ✓ ｜ OpenAlex ✓（三軌均於 2026-09-18 正常運作，無任何 429／403／quota 事件）
+- **OPS 配額**：2026-09-18 使用 **5 次呼叫**（1 auth + 4 search），上限 10，全部 HTTP 200
 - **最近 Lint**：2026-09-15
-- **本輪新建頁面**：[[concepts/test-metrology-packaging]]、[[entities/applied-materials]]
+- **本輪新建頁面**：[[entities/corning]]、[[entities/sandisk]]
+- **本輪結清空缺**：設備商 D2W 對準路線圖（結果推翻既有歸因）；Corning／SanDisk 實體頁
 - **已知問題**：
-  - 5 個 lint 建議實體頁仍未建（Google／Apple／Broadcom／MediaTek／GlobalFoundries 等）；**AMAT 已於 2026-09-17 補齊**
-  - `wiki/index.md` 來源清單非全域日期排序（2026-05-10 之後重新起始，共 70 組逆序對），為歷次逐批追加所致，待下次 lint 重排。**2026-09-17 本輪 16 筆已以程式依發表日插入正確位置**（而非追加於頂），未再新增逆序對
+  - 5 個 lint 建議實體頁仍未建（Google／Apple／Broadcom／MediaTek／GlobalFoundries）；Hanwha Semitech、Absolics 亦缺
+  - `wiki/index.md` 來源清單非全域日期排序（2026-05-10 之後重新起始），為歷次逐批追加所致，**待下次 lint 重排**。2026-09-17 與 2026-09-18 兩輪皆以程式依發表日插入**局部遞減區段的正確位置**，未惡化但也未修復
   - ⚠ **`wiki/technologies/info-wmcm.md` 不是合法 UTF-8**（2026-09-17 發現；位元組位置約 4721 處資料截斷）。該檔可讀但任何 UTF-8 批次處理都會跳過它，**下次 lint 應優先修復編碼**
-  - ~~2026-09-16 的 git commit 未執行~~ → **已於 2026-09-17 補做（commit `1db0032`）**，版控落差已消除
-- **2026-09-15 去重機制發現（仍有效）**：`advancedpackaging.news` 同一文章存在兩種 URL 形式，純 URL 比對無法攔截；建議 lint 增加「標題正規化」二次去重
-- **2026-09-17 去重機制驗證**：論文軌以「正規化標題 → DOI」雙鍵攔下 **7 篇**已收錄 DOI（含 2026-09-14／15／16 三日收錄者，證明跨日去重有效）；專利軌 family-id 去重本輪未觸發（5 件皆為新家族）；新聞軌 URL 去重攔下 4 篇——**三軌去重運作正常**
-- **2026-09-17 來源日期分布提醒**：本輪 Track A 6 篇中有 3 篇為 2024-11／2025-01／2025-07 的舊文，屬**刻意收錄**（用於建立 wiki 完全缺漏的「測試與量測」基礎背景與時間序列起點）。三篇皆已於 raw 與 source 頁**雙重標註「不得引用為現況」**，並在概念頁的數據表中逐列標註年份
-- **2026-09-17 檢索式教訓**：2026-09-16 判定「Samsung 未檢出 2026 年案件」係**查詢式過窄**所致；本輪改以 `pa="samsung electronics" and ti,ab="package" and pd within "2026"` 即命中 **294 件**。**日後出現「某大廠零命中」時應先懷疑 CQL 而非結論。**
+- **2026-09-18 去重機制驗證**：論文軌以「正規化標題 → DOI」雙鍵運作正常；專利軌 **family-id 去重攔下 1 件**（Amkor CN122476951A，fam 100647165，已於前輪收錄）——此為 family-id 鍵首次實際觸發攔截，機制有效性獲驗證
+- **2026-09-18 來源可得性限制**：Elsevier（ScienceDirect／linkinghub）與 Nature 全文頁在本環境**無法取得摘要全文**——三篇高相關論文（HBM NCF 選擇性導熱、Intel Malaysia Cu-Cu 綜述、TGV 熱阻）因 OpenAlex 無 `abstract_inverted_index` 且出版社頁無法擷取而**主動棄收**。⚠ 這是一個**系統性收錄偏差**：Elsevier 系期刊在本 wiki 的論文軌中被結構性低估，下次 lint 應評估是否需要替代取得管道
+- **2026-09-18 來源日期分布提醒**：本輪 Track A 6 篇中有 4 篇為 2025-11／2026-02／2026-04 的舊文，屬**刻意收錄**——EE Times 篇用於結清列管空缺，SemiEng／Siemens／LFW 三篇用於補 chiplet 標準生態系與 CPO 熱規格的制度面與量化面缺口

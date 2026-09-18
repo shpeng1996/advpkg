@@ -3,7 +3,7 @@ title: "UCIe — Universal Chiplet Interconnect Express"
 category: technology
 tags: [standards, chiplet, interconnect, UCIe, 3D, hybrid-bonding, UCIe-3.0]
 created: 2026-04-24
-updated: 2026-09-17
+updated: 2026-09-18
 sources: [2026-08-24_intel-newsroom_hot-chips-2026-diamond-rapids-foveros-ucie, 2026-04-24_initial-survey, 2026-04-01_semiengineering_chiplets-2026, 2025-01-28_3dincites_iftle-618-ucie-standard-vs-ucie3, 2025-01-01_semieng_ucie-1-6t-io-chiplets-ai-datacenter, 2025-09-03_uciexpress_ucie30-spec, 2026-03-05_uciexpress_chiplet-summit-2026, 2026-02-12_semieng_ucie3-technical-deepdive]
 related:
   - wiki/technologies/hybrid-bonding.md
@@ -340,3 +340,35 @@ Intel Wildcat Lake（Intel 18A）在 Hot Chips 2026 揭示一個重要的 UCIe �
 > ⚠ 本篇為綜述與立場論文，無新實驗數據；Google 作者身分**不代表 Google 官方路線圖**。
 
 **來源**：[[sources/2026-08-01_jfap_3dic-failure-analysis-dfa]]
+
+---
+
+## 2026-09-18 collect 更新：標準重心自互連移向組裝與材料；UCIe 延伸到封裝之外
+
+### 一、Chiplet 標準的四層現況（2026-04 盤點）
+
+| 層級 | 標準／規格 | 狀態 |
+|------|-----------|------|
+| 互連 | **UCIe**、**BoW** | BoW 新增兩支：**BoW Memory**（直接記憶體介面）、**BoW Flexi**（約 **4 Gbps**，低成本系統，年底前釋出） |
+| 系統架構 | **FCSA**（源自 Arm 捐出的 CSA） | **2026-02 生效**，Rev 1.0.0；定義 **3 個合規層級**、**2 種系統組態**（compute-and-hub／compute-tile） |
+| 封裝規格 | **JEDEC JESD-030O** | 2025-02 釋出，納入 OCP **CDXML**；規範封裝材料、pin 位置、land pattern、**footprint layers** |
+| 設計套件 | **5 項**（2025-01 釋出） | CDK、**ADK**（組裝）、**MDK**（材料）、**PTDK**（封裝測試）、Signal/PI Design Kit |
+| 抽象層 | **Universal Link Layer** | **PHY-agnostic**，同時相容 BoW 與 UCIe |
+
+主導組織：**OCP**（協調）× **JEDEC** × **IEEE**。具名貢獻者：Siemens EDA、Synopsys、Alphawave Semi、Cadence、Chipletz。
+
+### 二、⭐ 兩項對本 wiki 論點的推進
+
+1. **標準的重心已從互連轉向組裝與材料。** ADK（組裝）與 MDK（材料）進入標準套件，代表產業承認 chiplet 互通性障礙有相當比例落在**封裝廠與材料商的資訊不對稱**，而非 die-to-die 協定。這擴充了本頁 2026-09-17 的論點「UCIe 解互通性、不解可診斷性」——**UCIe 也不解組裝與材料互通性**。
+
+2. **PTDK 是「KGD 標準化定義」空缺的第一個制度性回應，但不結清該空缺。** 本 wiki 2026-09-17 記錄「業界至今視 KGD 為抽象詞而非標準化定義」，且這是 chiplet 跨供應商交易的契約基礎問題。PTDK 把**測試資訊本身做成可交換的設計套件**——它定義「測試資料要用什麼格式交付」，**不定義「什麼叫 KGD」**，因此解決介面問題而非歸責問題。➜ 空缺維持開啟，改列「已有部分解（PTDK）」。
+
+3. **BoW 按應用分層而非收斂。** BoW Flexi 的 4 Gbps 與 UCIe 3.0 的 64 GT/s 相差逾一個數量級，兩者不在同一市場——chiplet 互連正在分化，而非統一。
+
+### 三、UCIe 的光學延伸
+
+Siemens（2026-02-05）：銅負責封裝內通訊，光學負責封裝對封裝、板級與機架級距離；**Ayar Labs TeraPHY 以 UCIe 光學互連提供 8 Tbps**。這把 UCIe 的角色自「封裝內 chiplet 互連」擴張到「封裝間」，為本頁新增軸線；TeraPHY 為首個具名量化實例。
+
+⚠ 本節主要來源為 2026-04 之較舊整理，刻意收錄以補 chiplet 標準生態系的制度面缺口；「BoW Flexi 年底前釋出」之狀態需以 2026 下半年來源更新。
+
+來源：[[sources/2026-04-16_semieng_chiplet-standards-plug-n-play]]、[[sources/2026-02-05_siemens_cpo-five-key-trends-2026]]
