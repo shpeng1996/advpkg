@@ -3586,3 +3586,7 @@ an（2028–2029 量產世代）為 CoPoS 最可能的首批量產客戶——�
   5. **評估 Elsevier 系期刊的替代取得管道。** 本輪三篇高相關論文（HBM NCF 選擇性導熱 `10.1016/j.microrel.2026.116286`、Intel Malaysia Cu-Cu 綜述 `10.1007/s00170-026-19077-3`、TGV 熱阻）因 OpenAlex 無 inverted index 且 ScienceDirect／linkinghub 回空白而**主動棄收**——這是**系統性收錄偏差**，Elsevier 系在本 wiki 論文軌中被結構性低估。
   6. 既有未結案項延續：`10.1016/j.mssp.2026.111165` 全文（TGV 雙軸彎曲絕對值，本輪 admt 論文未回答）、Nature Electronics CPO 綜述全文、CoWoS「5.5× 良率 99%」量測邊界、Samsung US20260247940A1 目標產品線、JCET 韓國團隊產能佐證、微波能量投遞第三應用點、Silicon Box 第三方驗證。
   7. **lint 待辦（沿用，優先序不變）**：⚠ `wiki/technologies/info-wmcm.md` 非合法 UTF-8（約 4721 位元組處截斷），任何 UTF-8 批次處理都會跳過；`wiki/index.md` 來源清單全域重排。
+
+> **⚠ 2026-09-18 營運附註（git 鎖檔）**：本輪 commit（`bee9c2e`，57 檔）已成功，但過程中發現 **connected-folder 掛載不允許刪除檔案**（`rm`／`unlink` 回 `Operation not permitted`），導致 git 每次操作都會殘留 `.git/index.lock`、`.git/HEAD.lock` 與 `.git/objects/**/tmp_obj_*`。本輪以 `mv` 改名方式清除 2 個 lock 與 **124 個 tmp_obj 殘留檔**（移至 `.git/_stale_tmp_objs/`）後 commit 才得以完成。
+> **影響**：若不處理，`.git/index.lock` 會在下一輪直接阻擋 `git add`／`git commit`；tmp_obj 殘留檔亦會持續累積佔用空間。
+> **建議**：於排程任務設定中為此資料夾開啟刪除權限，或由使用者手動清空 `.git/_stale_tmp_objs/` 並於每輪開始前確認無殘留 lock。**下一輪 collect 開始前應先檢查並以 `mv` 清除 `.git/*.lock`。**
