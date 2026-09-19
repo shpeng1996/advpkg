@@ -3,7 +3,7 @@ title: "TSV — Through-Silicon Via / 矽穿孔"
 category: technology
 tags: [TSV, HBM, interposer, 3D-IC, CoWoS, manufacturing, backside-power, advanced-packaging, radiation, redundancy, reliability]
 created: 2026-08-10
-updated: 2026-09-17
+updated: 2026-09-19
 sources: [2026-04-22_semieng_tsv-complexity-manufacturing-bottleneck, 2026-08-21_semieng_chip-week-152, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-08-21_scirep_copper-oxide-reduction-ar-h2-pulsed-plasma, 2026-06-08_irtnanoelec_d2w-hybrid-bonding-1um-pitch]
 related:
   - wiki/technologies/hbm4.md
@@ -281,3 +281,19 @@ TSV 的高吞吐非破壞性檢測是關鍵任務。稀疏視角 XCT 可加速�
 > ⚠ **PSNR 是影像品質指標，不等於缺陷偵測率**。作者未報告漏檢率/誤報率，亦未說明產線 XCT 機台的實際 throughput 增益倍率。
 
 **來源**：[[sources/2026-08-18_appliedmaterials_hbm-packaging-bottleneck-toolset]]、[[sources/2026-09-15_jcet_cn122766296a-microwave-debonding]]、[[sources/2026-09-06_ndte_hysan-sparse-view-xct-tsv]]
+
+
+## 2026-09-19 collect 更新：阻障層界面熱阻首次入庫（TGV，可外推至 TSV）
+
+**MSMSE 2026-08-24（華中科技大學）**：以非平衡分子動力學預測 **TGV 晶圓中 Cu/Ta 異質界面的界面熱阻（ITR）**。
+
+- **界面存在明顯溫降**；ITR 是 via 熱路徑的實質限制項——**瓶頸不在銅本身，而在阻障層界面**
+- **非單調溫度依賴**：低溫單調遞減；高溫時 Cu 層產生缺陷與結構無序，出現局部溫度擾動
+- 溫度升高使原子振動與擴散增強，**反而降低 ITR**（⚠ 伴隨 Cu 劣化，為陷阱型結果）
+
+➜ 本頁既有的 TSV 記錄集中在**幾何**（HBM TSV 2–5 µm/30–60 µm；矽中介層 TSV 5–20 µm/80–120 µm）與**製程流程**（8 步驟）。**阻障層的熱角色此前無條目。**
+➜ Ta 作為 TSV／TGV 的標準 Cu 擴散阻障層，其界面熱阻在 3D 堆疊的散熱評估中應與電性阻抗並列為設計變數。
+➜ 「代理指標誤差」的又一實例：以**銅填充率／直流電阻**代理熱性能會漏掉阻障層界面。
+
+⚠ 純模擬，無實測，摘要未給 ITR 絕對值；對象為 TGV（玻璃），外推至矽基 TSV 時 Cu/Ta 界面本身相同、但周圍基材導熱差異極大（Si ~150 W/mK vs 玻璃 ~1 W/mK），**不可直接套用整體熱阻結論**。
+⚠ 作者群與 2026-09-18 顆粒形狀 W2W 論文為同一團隊與方法家族，不構成獨立佐證。

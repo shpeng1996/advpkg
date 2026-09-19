@@ -3,7 +3,7 @@ title: "HBM4 — High Bandwidth Memory 4"
 category: technology
 tags: [memory, HBM, JEDEC, standards, AI, HPC, HBM4E, cleanroom, capacity, ISSCC2026, ZAM, HB3DM, HBM5, zHBM, HPB, FMS-2026, ECC, reliability, FIT]
 created: 2026-04-24
-updated: 2026-09-18
+updated: 2026-09-19
 sources: [2026-08-13_semieng_1mw-rack-debate-thermal, 2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor, 2026-08-10_trendforce_skhynix-chongqing-sale-global-reset, 2026-08-05_trendforce_samsung-v10-zhbm-hbm5-fms2026, 2026-07-30_trendforce_samsung-ds-q2-2026-hbm4-triple-q3, 2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-03-18_trendforce_intel-emib-malaysia, 2026-01-23_trendforce_hbm4e-samsung-skhynix-mid2026, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-01-13_semiengineering_hbm4-microbumps, 2025-12-18_trendforce_micron-capex-hbm4, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h, 2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-03-03_trendforce_sk-hynix-hbm4-tight-gaps, 2025-08-12_semianalysis_hbm-roadmap, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit, 2026-06-09_astutegroup_hbm-market-share-2026-battle, 2026-06-10_trendforce_samsung-gwangju-packaging-base, 2026-06-15_trendforce_skhynix-hbm4e-sample-timeline-pulled-forward, 2026-06-20_techtimes_skhynix-hbm4e-12layer-samples, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-27_tweaktown_hbm4-16hi-nvidia-supply-fight, 2026-06-26_semieng_chip-week-144, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-14_trendforce_samsung-hbm-hiring-hbm4-hbm4e-hbm5, 2026-07-14_trendforce_skhynix-yongin-y1-feb2027, 2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b, 2026-08-13_trendforce_samsung-skhynix-hbm4-2h-earnings-pricing, 2026-08-25_trendforce_nvidia-server-hike-hbm-price-2027, 2026-08-28_trendforce_skhynix-indiana-hbm4e-3q29-supply-2030, 2026-08-26_tomshardware_hbf-hot-chips-oxmiq-limited-usability, 2026-08-21_electronics_dual-interposer-hbm-power-integrity, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-09-09_acsaelm_microwave-anneal-cu-cu-150c-3min]
 related:
   - wiki/entities/sk-hynix.md
@@ -1344,3 +1344,46 @@ Intel 官方宣稱 EMIB-T 的訊號/電源完整性可支撐 **HBM4E > 12 Gb/s**
 ⚠ Micron 數字標註為「業界估計」，非官方財報揭露，可信度降一級。
 
 來源：[[sources/2026-09-12_sammyfans_micron-hbm-capacity-doubling]]
+
+
+## 2026-09-19 collect 更新：16-Hi 進入客戶認證；核心 die 反而加厚 24%
+
+### 一、SK hynix 16-Hi HBM4 時序補齊（BigGo Finance 2026-08-24）
+
+| 項目 | 狀態 |
+|------|------|
+| 12-hi HBM4 | 量產（**量產出貨自 2026 Q2**） |
+| 16-hi HBM4 | **客戶資格認證中**（2026-08-24 宣布） |
+| HBM4 速度需求 | 8–10 → **11 Gbps** |
+
+➜ 與本頁既有記錄「SK hynix 2026 Q3 量產 48 GB 16-layer HBM4」時序一致（認證 → 量產），非矛盾；但既有摘要中的「已量產」**應標註其起點為 Q3**。
+
+### 二、⭐ 反直覺的數字：核心 die 厚度增加最多 24%，凸塊 pitch 降至 18 µm 以下
+
+在 JEDEC 775 µm 的固定高度預算內堆到 16 層，直覺是每層都要更薄。SK hynix 的實際做法**相反**：
+
+- **核心 die 厚度：+ 最多 24%**
+- **凸塊 pitch：< 18 µm**（由凸塊側補回高度預算）
+
+可能的解讀：薄化到極限的 die 其**翹曲與強度**已成為良率主因——與同輪 IEEE EPS 取得的 Samsung「die 翹曲允收值 < 100 nm」一致。廠商選擇犧牲部分厚度預算來換翹曲控制。
+
+➜ ⭐ **這是「翹曲已成為第一限制」的第二個獨立證據，且來自量產決策而非實驗室。**
+⚠ 「+24%」僅見於此單一二手來源，未有其他佐證，列為**待確認**。
+
+### 三、18 µm 是 MR-MUF 路線的新低點；混合接合的導入點明確在 20-Hi
+
+| 路線 | pitch |
+|------|-------|
+| microbump / MR-MUF（HBM4 16-hi） | **< 18 µm** |
+| 混合接合（量產） | 6–9 µm |
+
+➜ 兩者仍差 2–3 倍。這把「HBM 何時需要混合接合」量化了：**只要 microbump 還能繼續縮，混合接合就會被推遲**。SK hynix 給出的答案是 **20-hi 以上**——與本 wiki 既有記錄（HBM4E 跳過混合接合、延後至 HBM5）一致。
+
+### 四、Samsung 的 16-hi 立場再獲確認
+
+Samsung：「客戶對 16-hi HBM4 的需求**非常有限**」，但確認具備量產技術能力。
+➜ 與 2026-09-18 記錄的「三雄首次在同一世代層數上分歧」一致；可在 2027 年以 NVIDIA Vera Rubin 各廠採用比例驗證。
+
+### 五、⚠ 一項需並置的時序差異（NineScrolls 2026-09-04）
+
+NineScrolls 稱 SK hynix「**12-high 混合接合樣品驗證中**」，而本 wiki 既有記錄（2026-08-26）為「HBM4E 正式跳過混合接合、延後至 HBM5」。兩者可並存（樣品驗證 ≠ 量產導入），但**樣品驗證在時序上早於既有記錄的跳過決定**，引用時須標註。

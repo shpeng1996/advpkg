@@ -3,7 +3,7 @@ title: "FOPLP — 扇出面板級封裝 / Fan-Out Panel-Level Packaging"
 category: technology
 tags: [fan-out, panel-level, TSMC, Samsung, ASE, Powertech, Innolux, CoPoS, InFO, cost-reduction, delamination, DCB, CTE]
 created: 2026-05-03
-updated: 2026-09-18
+updated: 2026-09-19
 sources: [2026-07-31_trendforce_ase-capex-record-10-5b-leap-foplp, 2025-09-12_trendforce_foplp-competitive-2025, 2026-04-13_trendforce_copos-pilot, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-21_3dincites_acm-wlp-plp-process-trends, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-15_digitimes_manz-310mm-foplp-ecd-equipment, 2026-06-13_digitimes_linkotech-foplp-rollout-traction, 2026-06-20_prnewswire_manz-asia-310mm-ecd, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_digitimes_tsmc-foplp-timeline-skepticism, 2026-07-06_trendforce_cfmee-plp2000-china-first-plp, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-08-06_siliconbox_500m-units-panel-scale, 2026-02-18_siliconbox_ep4697377a1-fanout-panel-metal-sealing-ring, 2026-07-28_xianfeng_cn122476946a-alignment-mark-protection, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded]
 related:
   - wiki/technologies/copos.md
@@ -472,3 +472,21 @@ Avarustech 的 Arun Aiyer 一句話概括了整個轉變：「This migration bri
 ⚠ 本輪 Amkor 專利檢索共 **84 件**命中，絕大多數為通案性「electronic devices and methods」標題；僅本件與 US20260165123A1 具明確結構論點。**Amkor 專利軌輪替至此視為完成。**
 
 來源：[[sources/2026-06-11_epo_amkor-cte-balance-beam-neutral-axis]]
+
+
+## 2026-09-19 collect 更新：面板廠的第二個切入點是 CPO 光學機構件
+
+### ⭐ 專利訊號：AU Optronics 貫孔式光引擎（CN122043677A, 2026-05-15, fam 99727976）
+
+本頁既有記錄「面板廠因消費電子停滯而轉向晶片封裝」，此前的證據**全部在 FOPLP（扇出封裝）方向**。本輪專利軌顯示第二個切入點：**CPO 的光學機構件**。
+
+AUO 的結構：光學基板開貫穿通孔 → 光纖直接置入孔內 → **孔的內側壁本身作為反射元件** → 發光元件由基板下方對準通孔。整體是以**大面積基板加工＋貼合**的思路解決 CPO 的光纖貼附，而非半導體封裝的思路。
+
+⭐ **為何是面板廠**：貫孔式光學基板與 **TGV 屬同一類加工問題**（大面積基板、高深寬比孔、孔壁品質決定性能）。面板廠既有的玻璃處理、大面積曝光與貼合資產可直接複用。
+➜ 本 wiki 應把「**玻璃／大面積基板加工能力**」視為**同時服務 FOPLP、玻璃基板、CPO 三條路線的共用底層**，而非三條獨立路線。這也改變了面板廠轉型的評估方式：不是「面板廠學做封裝」，而是「**面板廠既有的製程資產恰好是這三條路線的共同前置能力**」。
+
+詳見 `wiki/technologies/copackaged-optics.md` 2026-09-19 更新第五節。
+⚠ 專利為前瞻訊號；AUO 公開此件不代表已取得任何 CPO 訂單。本 wiki 尚無 AUO 實體頁。
+
+### 間接佐證
+DIGITIMES 2026-09-15 訪談 Corning，標題明確把 **CPO、玻璃核心基板（GCS）、FOPLP** 並列為新戰場（**該文付費牆，本輪未取得正文**）。AUO 專利為同一論述提供獨立證據。

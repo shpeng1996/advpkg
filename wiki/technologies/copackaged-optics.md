@@ -3,7 +3,7 @@ title: "共封裝光學元件 / Co-Packaged Optics (CPO) — TSMC-COUPE™ & Eco
 category: technology
 tags: [CPO, co-packaged-optics, COUPE, TSMC, GlobalFoundries, Samsung, photonics, AI, HPC, networking, OCI-MSA, DWDM, Broadcom, NVIDIA, glass-substrate, ULCVD, TGV, Spectrum-X, NVL72]
 created: 2026-04-25
-updated: 2026-09-18
+updated: 2026-09-19
 sources: [2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-05-07_trendforce_globalfoundries-silicon-photonics-scale-cpo, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-03-17_coherent_cpo-ofc2026-demo, 2026-06-07_digitimes_jcet-3d-packaging-cpo-plant, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_edn_cpo-technology-status-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-06-24_thelec_corning-glass-bridge-cpo, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-14_trendforce_umc-silith-silicon-photonics-hvm, 2026-07-14_trendforce_huawei-baidu-npo-msa, 2026-07-27_trendforce_presscenter_cpo-switches-nvidia-broadcom-coupe, 2026-06-03_3dincites_intel-foundry-emib-cpo-glass-ectc2026, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-07-31_ase_cn224583735u-photoelectric-hybrid-rdl]
 related:
   - wiki/entities/tsmc.md
@@ -843,3 +843,62 @@ Nature Electronics 9(8): 853–867（2026-08-19，UVa／MIT／NTU／UIUC／Yonse
 📌 **待補**：取得全文以填上 2D/2.5D/3D 三階段各自的量化門檻——這是目前唯一能讓學界路線圖與廠商路線圖真正對齊的缺口。
 
 來源：[[sources/2026-08-19_natelec_cpo-hpc-ai-roadmap]]
+
+
+## 2026-09-19 collect 更新：四條代工路線分歧在封裝方式；面板廠自第三個方向切入
+
+### 一、CPO 已量產，四家代工廠分歧的是封裝而非光學元件（MLQ.ai 2026-08-05）
+
+| 廠商 | 封裝方式 | 關鍵數值 |
+|------|----------|----------|
+| **TSMC** | COUPE，**SoIC-X 接合**（電性 die 堆疊於光子 die） | 2× 功率效率、延遲低 90%；200 Gb/s 微環；**COUPE-on-substrate 2026 投產** |
+| **Broadcom** | 整合 TSMC COUPE | TH5-Bailly **100 Gb/s/lane**（2025-05，**首個量產 CPO**）；TH6-Davisson **102.4 Tb/s**（2025-10） |
+| **NVIDIA** | Spectrum-X Photonics | **200 Gb/s SerDes**，2026 投產；CoreWeave／Lambda／OCI |
+| **Intel** | 光學 I/O chiplet ＋ **晶片上雷射** | 原型 **64 ch × 32 Gb/s 雙向**、8 WDM/光纖對；**5 pJ/bit**（vs 可插拔 15 pJ/bit，**@ 100 m**） |
+| **Samsung Foundry** | 300 mm 矽光子平台 | TCB 光引擎 **2027** → **混合銅接合 2028** → turnkey CPO **2029** |
+| **GlobalFoundries** | SCALE（OCI MSA 相容） | 8/16 波長雙向；50/100 Gb/s 微環；**銅 pitch 110 µm → < 45 µm** |
+
+⚠ MLQ.ai 標示作者為 "MLQ Agent"（AI 生成內容），數值均為二手彙整；Samsung 路線圖轉引自 The Elec。
+
+### 二、⭐ CPO 的接合 pitch 落後運算晶片約兩個世代——瓶頸不在接合
+
+| 場域 | pitch |
+|------|-------|
+| GlobalFoundries CPO 銅 pitch | 110 µm → **< 45 µm** |
+| 運算晶片微凸塊（歷史／最新記憶體） | 40 µm / 10 µm |
+| 混合接合（量產） | 6–9 µm |
+
+Samsung 把混合銅接合排在 **2028**。
+➜ **CPO 目前的瓶頸不在接合 pitch**，而在光學對位、雷射與熱穩定度——與 2026-09-18 記錄的「CPO 的熱約束是溫度穩定度 < 0.5 °C 而非熱通量」一致。
+
+### 三、⭐ 新增路線分類軸：光源位置（on-chip vs remote laser）
+
+**「晶片上雷射」是 Intel 路線的獨有差異項**，其他三家未提及光源整合。這與熱議題直接相關：
+- **雷射整合在封裝內** → 其 < 0.5 °C 的溫度穩定度需求進入封裝熱設計
+- **雷射外置（remote）** → 封裝熱問題減輕，但增加光纖與耦合損耗
+
+➜ 本頁新增「**光源位置**」為路線分類軸。
+
+### 四、能效數字必須帶距離限定
+
+Intel 的 **5 pJ/bit vs 15 pJ/bit** 之比較基準為 **100 m 距離**。
+➜ 本 wiki 首次取得 CPO 能效數字的距離限定。**能效優勢隨距離變化，無距離的 pJ/bit 不可比較**——既有記錄中的 pJ/bit 數字應回頭補註距離。
+
+### 五、⭐⭐ 專利訊號：面板廠（AUO）自第三個方向切入 CPO
+
+**AU Optronics CN122043677A（2026-05-15, fam 99727976）— 貫孔式光引擎與共封裝光學元件**
+
+結構：光學基板開**貫穿通孔**，光纖直接置入孔內；**孔的內側壁本身作為反射元件**；發光元件置於基板下方電路基板上，由下往上對準通孔。
+
+⭐ **這是本 wiki 首個面板廠切入 CPO 的結構性證據。** 既有記錄中面板廠轉向晶片封裝的證據都在 FOPLP 方向；本件顯示第二個切入點是 **CPO 的光學機構件**。
+
+⭐ **技術資產可複用性解釋了為何是面板廠**：貫孔式光學基板在幾何與製程上與 **TGV 屬同一類加工問題**（大面積基板、高深寬比孔、孔壁品質決定性能——此處決定反射效率，TGV 中決定金屬化品質）。面板廠既有的玻璃處理、大面積曝光與貼合資產可直接複用。
+➜ 本 wiki 應把「**玻璃／大面積基板加工能力**」視為**同時服務 FOPLP、玻璃基板、CPO 三條路線的共用底層**，而非三條獨立路線。
+
+⭐ **光引擎機構設計正由三類玩家同時布局**：同輪 OPS 檢索另見 **Samsung US20260079312A1**（光引擎裝置與半導體封裝，2026-03-19；光學黏著層凸起與光纖板腔體對接）與 **SPIL TWI915985B**。IDM／OSAT／面板廠三類各自申請，顯示**光纖貼附的機構方案尚未收斂**——符合 2026-09-18 建立的判讀法則（同一問題、多種解、短期內密集公開 ⇒ 關鍵路徑上的未收斂問題）。
+
+⚠ 專利為前瞻訊號；AUO 公開此件不代表已取得任何 CPO 訂單。本 wiki 尚無 AUO 實體頁。
+➜ 新增未解問題：AUO 在光學機構件上的角色是**零件供應商**還是**封裝服務商**？兩者對 OSAT 競爭格局的意涵完全不同。
+
+### 六、間接佐證：Corning 把 CPO／玻璃核心基板／FOPLP 並列為新戰場
+DIGITIMES 2026-09-15 訪談 Corning 的標題與摘要指出此三者並列為新戰場（**該文付費牆，本輪未取得正文**）。AUO 專利為同一論述提供了獨立證據。

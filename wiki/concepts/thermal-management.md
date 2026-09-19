@@ -3,7 +3,7 @@ title: "先進封裝熱管理 / Thermal Management in Advanced Packaging"
 category: concept
 tags: [thermal-management, liquid-cooling, 3D-IC, CoWoS, heat-dissipation, TIM, ECTC-2025, GaN, power-delivery, co-design, patent-signal, delamination]
 created: 2026-04-25
-updated: 2026-09-18
+updated: 2026-09-19
 sources: [2025-12-01_semiengineering_thermal-management, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-02_trendforce_samsung-hbm5-computex2026, 2026-05-21_semieng_hi-roadmap-nature-paper-intel, 2026-08-13_semieng_1mw-rack-debate-thermal, 2026-04-27_semieng_semiconductor-materials-misbehave, 2026-08-21_trendforce_chip-packaging-heat-ai-bottleneck-cpo-stco]
 related:
   - wiki/technologies/cowos.md
@@ -530,3 +530,60 @@ FOWLP 的 RDL 介面斷裂韌性隨溫度上升顯著下降，**Cu/LSF60 介面�
 Amkor 同日兩件專利以**同一片金屬結構**分別承擔**翹曲平衡**（梁中性軸上下 CTE 對稱）與**散熱路徑**（金屬結構 + TIM + lid）。翹曲管理的語彙自材料 CTE 轉向結構力學（可計算的一階矩平衡），且熱與機械共用同一零件——本頁 2026-07-30 記載的「翹曲納入熱-機械複合設計框架」因此取得一個具體的工程實例。
 
 來源：[[sources/2026-04-13_laserfocusworld_cpo-thermoelectric-cooling]]、[[sources/2026-06-11_epo_amkor-cte-balance-beam-neutral-axis]]
+
+
+## 2026-09-19 collect 更新：熱路徑開始與結構搶面積；熱的第三類後果是元件電性劣化
+
+### 一、⭐ 熱路徑不再是附加子系統，而是與結構搶奪同一份面積預算
+
+本輪兩件專利訊號使 2026-09-18 記錄的「熱管理下沉到零件層級」升格為可陳述的通則：
+
+| 實例 | 結構元素 | 被多工的功能 |
+|------|----------|--------------|
+| Amkor US20260165128A1（2026-09-18） | 同一片金屬結構 | **CTE 平衡 ＋ 散熱路徑** |
+| **IBM US20260123509A1（2026-04-30，本輪）** | **混合接合界面本身** | **鍵結強度 ＋ 散熱** |
+
+IBM 的作法是在同一接合區內分割「接合介電區」與「導熱材料區」，**兩區面積配比成為設計變數**。
+
+⭐ **這與 pitch 微縮直接衝突，且衝突可量化**：導熱區佔去的面積不再貢獻鍵結強度，也不再能放置 Cu 接點。本 wiki 記錄的兩個數字**其實是同一塊面積上的兩個需求**，此前未被並置：
+
+| 需求 | 數值 | 出處 |
+|------|------|------|
+| I/O 密度目標 | **10⁶ I/O / mm²** | AMAT×Besi 外推，2026-09-18 |
+| 散熱需求 | **> 3 W/mm²** | IEEE EPS ECTC 2025 六項致能條件之一 |
+
+➜ 新增未解問題：**接合界面的散熱面積與 I/O 面積的交換率是多少？** 兩方數字皆無。
+
+⚠ IBM 無自有先進封裝量產線；此件屬研究型布局訊號。
+
+### 二、⭐⭐ 熱的第三類後果：被接合元件本身的電性規格劣化（JSTS 2026-08-25）
+
+本頁既有論述把熱後果分為兩類：**熱通量**（移除瓦數，兩相冷卻）與**溫度穩定度**（CPO 雷射 < 0.5 °C，TEC）。本輪新增第三類：
+
+**混合接合式 3D NAND 中，週邊 CMOS 接合於記憶體陣列下方後，底層電路發熱造成垂直溫度梯度，使 Vth 分布展寬，直接侵蝕讀取餘裕與耐久度。**
+
+| 結構 | 抹除後 Vth 偏移（原） | 電壓控制後 |
+|------|----------------------|-----------|
+| BCS（body contact spacer） | 200 mV | 10 mV |
+| **CSOB（channel-hole sidewall ONO butting）** | **850 mV** | 10 mV |
+
+➜ CBA（CMOS bonded to Array）架構的評估新增一軸：把週邊電路移到陣列下方省了面積，代價是**把發熱源移到了記憶體正下方**。
+➜ 解法出現在**電路操作層**（位置相依梯度偏壓、溫度自適應 Vpass），而非封裝層。
+⚠ TCAD 模擬，無矽驗證。
+
+### 三、TGV 的熱瓶頸在阻障層界面，不在銅（MSMSE 2026-08-24）
+
+華中科技大學以非平衡分子動力學預測 TGV 晶圓中 **Cu/Ta 異質界面的界面熱阻（ITR）**：
+
+- **界面存在明顯溫降**；ITR 是 TGV 熱路徑的實質限制項
+- 溫度依賴性**非單調**：低溫單調遞減；**高溫時 Cu 層產生缺陷與結構無序，出現局部溫度擾動**
+- 溫度升高使原子振動與擴散增強，**反而降低 ITR**
+
+⭐ **陷阱型結果**：熱測試中看到高溫下熱阻改善，實際上是材料正在劣化。可靠度評估不可把它當成正面裕度。
+⭐ 亦是「代理指標誤差」的又一實例：以 **TGV 銅填充率／直流電阻**代理熱性能會漏掉阻障層界面——電阻主要由銅決定，熱阻卻主要由界面決定。
+⚠ 純模擬；作者群與 2026-09-18 收錄的顆粒形狀 W2W 論文（`10.1063/5.0341214`）為同一團隊與同一方法家族，**兩者不構成彼此獨立的佐證**。
+
+### 四、「位置相依」成為橫向論述
+
+本輪三個來源各自獨立地把關鍵變數改寫為位置的函數：疊對（全場向量場）、翹曲（晶圓上非均勻，邊緣 vs 中心）、Vth 對策（位置相依梯度偏壓）。
+➜ **3D 堆疊使幾乎每個關鍵變數都變成位置的函數**；熱管理亦然——單一接面溫度或單一熱阻值，正在失去作為規格的意義。

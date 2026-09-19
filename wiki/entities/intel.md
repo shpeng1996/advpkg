@@ -3,7 +3,7 @@ title: "英特爾 / Intel"
 category: entity
 tags: [IDM, advanced-packaging, EMIB, Foveros, Intel18A, Clearwater-Forest, Foveros-Direct, glass-substrate, 14A, High-NA-EUV, silicon-capacitors, Google-TPU-v8e, Q2-2026-earnings, Tesla-14A, HLFF, RAMP-C, Secure-Enclave, Rio-Rancho]
 created: 2026-04-24
-updated: 2026-09-18
+updated: 2026-09-19
 sources: [2026-08-24_intel-newsroom_hot-chips-2026-diamond-rapids-foveros-ucie, 2026-04-24_initial-survey, 2026-07-20_trendforce_tsmc-265b-arizona-intel-novalake, 2026-03-18_trendforce_intel-emib-malaysia, 2026-03-03_trendforce_intel-clearwater-forest, 2026-03-05_trendforce_intel-emib-billions, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-04-20_trendforce_intel-foundry-14a-equipment, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-01_semianalysis_cpus-back-datacenter-2026, 2026-04-10_3dincites_intel-gan-chiplet, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks, 2026-06-21_convergedigest_intel-emib-t-multi-die-packaging, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap, 2026-07-01_trendforce_terafab-intel-veteran-hire, 2026-04-07_tomshardware_intel-joins-terafab, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-01-30_tomshardware_intel-ai-chip-test-vehicle-emib-t, 2026-07-14_trendforce_intel-ireland-5b-intel3-europe, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-04_semieng_from-blueprint-intel-hlff, 2026-07-31_semieng_chip-week-149, 2026-08-13_trendforce_intel-memory-reentry-xbm-zam-saimemory, 2026-06-02_intel_ectc2026-emib-t-cpo-glass]
 related:
   - wiki/entities/tsmc.md
@@ -532,3 +532,23 @@ TrendForce Insights（2026-09-10）：**Foveros Direct 第二代以 3µm bond pi
 ⚠ **專利為前瞻訊號**：Intel 於 2026 上半年公開之專利顯示其技術探索廣度，**不代表任一方案已定案量產**；本頁既有的 Rio Rancho HVM 候選廠等記載不因此改動。
 
 來源：[[sources/2026-05-14_epo_intel-partial-liner-tgv-stress]]、[[sources/2026-07-02_epo_intel-bottom-up-tgv-plating-airgap]]
+
+
+## 2026-09-19 更新：CPO 路線的獨有差異項是「晶片上雷射」；5 pJ/bit @ 100 m
+
+**MLQ.ai 2026-08-05（二手彙整，⚠ AI 生成內容）**：
+
+Intel Optical Compute Interconnect：緊湊光學 I/O chiplet，含矽 PIC、**晶片上雷射（on-chip laser）**、光放大器。
+
+| 項目 | 數值 |
+|------|------|
+| 原型 | **64 通道 × 32 Gb/s 雙向**；每對光纖 **8 個 WDM 通道** |
+| 能效 | **5 pJ/bit**（vs 可插拔模組 15 pJ/bit）**@ 100 m 距離** |
+| 開發目標 | 200 Gb/s/lane PIC，供 800 Gb/s 與 1.6 Tb/s 應用 |
+| 量產客戶／上市日 | **未揭露** |
+
+⭐ **「晶片上雷射」是 Intel 在四條代工 CPO 路線中的獨有差異項**（TSMC、Samsung、GlobalFoundries 均未提及光源整合）。這與熱議題直接相關：雷射整合在封裝內，其 **< 0.5 °C 溫度穩定度需求**就進入封裝熱設計；外置則封裝熱問題減輕但增加耦合損耗。➜ 本 wiki 已於 `copackaged-optics.md` 新增「光源位置」為路線分類軸。
+
+⭐ **能效數字必須帶距離限定**：5 pJ/bit vs 15 pJ/bit 的比較基準是 **100 m**。本 wiki 首次取得 CPO 能效的距離限定；既有記錄中的 pJ/bit 數字應回頭補註距離。
+
+⚠ Intel 是四家中**唯一未揭露具名量產客戶或上市日期**者。

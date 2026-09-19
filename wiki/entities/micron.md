@@ -3,7 +3,7 @@ title: "美光科技 / Micron Technology"
 category: entity
 tags: [memory, HBM4, DRAM, NAND, CapEx, Virginia, Idaho, New-York, onshoring]
 created: 2026-05-03
-updated: 2026-09-18
+updated: 2026-09-19
 sources: [2025-12-18_trendforce_micron-capex-hbm4, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-03-17_trendforce_gtc2026-key-takeaways, 2025-08-05_3dincites_iftle636-samsung-lsb-micron-virginia, 2026-01-23_trendforce_hbm4e-development, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-26_semieng_chip-week-144, 2026-06-25_thelec_micron-q3-fy2026-record, 2026-07-06_trendforce_micron-hiroshima-fab-hbm-1gamma, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-10_tomshardware_micron-250b-us-investment-globalwafers, 2026-07-10_semieng_chip-week-146, 2026-08-21_semieng_chip-week-152]
 related:
   - wiki/technologies/hbm4.md
@@ -261,3 +261,30 @@ Micron 的 HBM 熱管理策略與 Samsung（HPB）和 SK Hynix（iHBM）不同�
 ⚠ 產能數字標註為「業界估計」，非官方財報揭露。
 
 來源：[[sources/2026-09-12_sammyfans_micron-hbm-capacity-doubling]]、[[sources/2026-09-15_benzinga_skhynix-16layer-hbm4-48gb]]
+
+
+## 2026-09-19 更新：首件混合接合界面結構專利入庫
+
+### ⭐ 專利訊號：雜質緻密化的多層介電接合界面（US20260271780A1, 2026-09-10, fam 101213222）
+
+發明人 Su Ying-Tsun [TW]。兩側 die 各自的接合介電層以**引入基質材料的雜質**進行緻密化，接合墊嵌於該緻密化介電層中。
+
+⭐ **本 wiki 首次收錄 Micron 的混合接合界面結構專利。** 此前 Micron 在混合接合論述中的角色僅為「HBM 供應商」與「菊鏈量測」引述者（Scott DeBoer），**無自有結構布局的證據**。
+
+技術定位：介電層工程的**第三條路徑**——不換材料（SiO2 → SiCN），而是改變同一材料的緻密度。這與本輪結清的最高優先空缺直接相關：若 **0.2 nm 表面變異**是量產 pitch 的第一限制，則介電層的 **CMP 行為**是核心變數，而緻密度正是決定移除率與最終粗糙度的參數之一。
+
+⚠ 專利為前瞻訊號。摘要未揭露任何量化數值（緻密度、粗糙度、pitch、溫度），不代表已導入量產。
+➜ 新增未解問題：瞄準 **HBM 的 W2W core-die 堆疊**，還是 **DRAM-on-logic**？摘要未限定。
+
+### 檢索紀律：大廠零命中先懷疑檢索式（再次證實）
+
+| 檢索式 | 命中數 | 日期 |
+|--------|--------|------|
+| `pa="micron technology" and ti,ab="package" and pd within "2026"` | **1** | 2026-09-17 |
+| `pa="micron technology" and pd within "2026"` | **1,692** | 2026-09-19 |
+
+➜ 2026-09-17 建立的規則「某大廠零命中先懷疑檢索式」再次成立，應寫入常規檢索紀律。
+
+### 論述立場：Lau 綜述的機構歸屬（待確認）
+OpenAlex 將 John H. Lau 兩篇 JMEP 2026-09-15 綜述（Cu-Cu 混合接合、玻璃封裝）的機構標示為 **Micron Corporation**。若屬實，這是 Micron 在混合接合與玻璃封裝論述上的公開立場來源，且與其混合接合專利公開日相隔僅 5 天。
+⚠ 機構歸屬來自 OpenAlex 自動比對，**未經一手確認**。

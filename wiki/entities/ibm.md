@@ -3,7 +3,7 @@ title: "IBM Research / IBM 研究院"
 category: entity
 tags: [research, 3D-packaging, nanostack, hybrid-bonding, sub-2nm, chiplet]
 created: 2026-09-11
-updated: 2026-09-18
+updated: 2026-09-19
 sources: [2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation]
 related:
   - wiki/technologies/hybrid-bonding.md
@@ -95,3 +95,17 @@ IBM Research（T.J. Watson）× Rensselaer Polytechnic Institute × Albany，發
 這是本 wiki 記錄的 IBM 第二項「單元製程層級」研究（前一項為 2026-09-16 的非 Bosch 深矽蝕刻，動機為 C₄F₈ 的高 GWP）。兩者共同顯示 IBM Research 的公開產出集中在**製程物理與材料界面**，而非架構宣告。
 
 來源：[[sources/2026-07-31_jvstb_ibm-cu-pad-oxide-phases-annealing]]
+
+
+## 2026-09-19 更新：接合界面兼作散熱路徑
+
+### 專利訊號：混合接合結構含散熱（US20260123509A1, 2026-04-30, fam 99550345）
+
+在同一混合接合區內**分割出兩種區域**：接合介電區（提供鍵結強度）與導熱材料區（提供散熱），**兩區面積配比成為設計變數**。
+
+⭐ **「熱管理下沉到零件層級」的第二個獨立實例**（第一例為 2026-09-18 記錄的 Amkor：同一片金屬結構兼顧 CTE 平衡與散熱路徑）。兩者都表現為**單一結構元素被多工使用**。已足以支持通則：**在 3D 堆疊中，熱路徑不再是附加於結構之上的獨立子系統，而是與結構搶奪同一份面積預算。**
+
+⭐ **與 pitch 微縮直接衝突，且衝突可量化**：導熱區佔去的面積不再貢獻鍵結強度，也不再能放置 Cu 接點。本 wiki 記錄的「I/O 密度目標 **10⁶ I/O/mm²**」（AMAT×Besi 外推）與 IEEE EPS ECTC 2025 的「散熱需求 **> 3 W/mm²**」**是同一塊面積上的兩個需求**，此前未被並置。
+➜ 新增未解問題：接合界面的散熱面積與 I/O 面積的交換率是多少？
+
+⚠ 專利為前瞻訊號；IBM 無自有先進封裝量產線，此件屬研究型布局。

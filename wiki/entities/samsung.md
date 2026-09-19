@@ -3,7 +3,7 @@ title: "三星 / Samsung"
 category: entity
 tags: [IDM, foundry, memory, advanced-packaging, X-Cube, HBM, ISSCC2026, I-CubeS, LPDDR6, V10-BV-NAND, zHBM, HBM5, FMS-2026, ECC, reliability]
 created: 2026-04-24
-updated: 2026-09-18
+updated: 2026-09-19
 sources: [2026-08-26_trendforce_openai-jalapeno-samsung-hbm4, 2026-08-26_trendforce_samsung-gaia-pim-4nm-2027, 2026-08-24_trendforce_hot-chips-2026-samsung-zhbm-skhynix-emib, 2026-08-17_trendforce_samsung-skhynix-1h26-investment-nvidia-absent, 2026-08-14_trendforce_samsung-nrdk-line2-2nm-hbm5-base-die, 2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor, 2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2025-12-30_trendforce_samsung-hbm-surge, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2025-08-05_3dincites_iftle636, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit, 2026-06-10_trendforce_samsung-gwangju-packaging-base, 2026-06-12_digitimes_samsung-packaging-gap-tsmc-intel, 2026-06-15_trendforce_skhynix-hbm4e-sample-timeline-pulled-forward, 2026-06-19_techtimes_vera-rubin-hbm4-suppliers, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-24_techtimes_sk-hynix-dethroned-samsung-ddr5-hbm4, 2026-07-03_trendforce_anthropic-samsung-advanced-packaging, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-07-02_trendforce_samsung-hbm-dummy-die-patent, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo, 2026-07-07_trendforce_samsung-q2-2026-record-krw894t, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-02_trendforce_samsung-sf2p-plus-tsmc-n2-roadmap, 2026-07-14_trendforce_samsung-hbm-hiring-hbm4-hbm4e-hbm5, 2026-07-21_trendforce_samsung-cxl-32-skhynix-imte, 2026-07-24_trendforce_skhynix-3d-stacked-dram-on-logic-on-device-ai]
 related:
   - wiki/entities/tsmc.md
@@ -452,3 +452,26 @@ lane 速率 100 → 200 → 400 Gbps。
 ⚠ 來源為財經媒體二手整理，Samsung 之表態非一手發布原文。
 
 來源：[[sources/2026-09-15_benzinga_skhynix-16layer-hbm4-48gb]]
+
+
+## 2026-09-19 更新：die 翹曲允收值 < 100 nm；CPO 三階段接合路線圖
+
+### ⭐ die 翹曲允收值：< 100 nm（IEEE EPS ECTC 2025 專題，2026-03-11）
+
+Samsung 在 ECTC 2025 混合接合專題中指出「**die 翹曲必須控制在 100 nm 以下**才能成功堆疊」。
+
+⭐ 這是本 wiki 首次取得 die 翹曲允收值的**絕對數字**，且其數量級與機台對準精度（100 nm @ 3σ）**相同**——意味著翹曲誤差會直接吃掉對準預算。若兩者獨立，合成誤差約 141 nm。要把 pitch 自 6 µm 降至 1 µm，**兩個 100 nm 必須同步改善**，而翹曲是材料與製程問題，不是機台問題。詳見 `wiki/technologies/hybrid-bonding.md` 2026-09-19 更新。
+
+### CPO 三階段接合路線圖（The Elec via MLQ.ai 2026-08-05）
+
+Samsung Foundry 於 OFC 2026 發表 300 mm 矽光子平台，路線圖為：
+**熱壓接合（TCB）光引擎 2027 → 混合銅接合 2028 → CPO turnkey 服務 2029**
+
+➜ 與本 wiki 既有的 Samsung CPO 記錄（2029 turnkey）一致，並補上前兩段的接合技術世代。
+➜ 值得注意：Samsung 把 **CPO 的混合接合排在 2028**，而其 HBM 混合接合（zHBM／HBM5）在 2028+ ——兩條路線的混合接合導入時程接近，可能共用產能與設備。
+
+### 專利訊號：光引擎裝置與半導體封裝（US20260079312A1, 2026-03-19, fam 99060956；未收錄為本輪五件之一，備查）
+以**光學黏著層的凸起**與**光纖板的腔體**對接、密封發光元件。與同輪收錄的 AUO 貫孔式光引擎（CN122043677A）機構完全不同——顯示光纖貼附的機構方案在 IDM／OSAT／面板廠三類玩家間**尚未收斂**。
+
+### 16-hi HBM4 立場再獲確認（BigGo 2026-08-24）
+Samsung：「客戶對 16-hi HBM4 的需求**非常有限**」，但確認具備量產技術能力。與 2026-09-18 記錄的三雄分歧一致。

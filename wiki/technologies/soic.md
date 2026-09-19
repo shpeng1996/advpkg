@@ -3,7 +3,7 @@ title: "SoIC — System on Integrated Chips"
 category: technology
 tags: [3D, SoIC, hybrid-bonding, TSMC, AI, NVIDIA, Feynman]
 created: 2026-04-24
-updated: 2026-09-15
+updated: 2026-09-19
 sources: [2026-04-24_initial-survey, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-03-18_trendforce_nvidia-rubin-feynman-soic, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-23_trendforce_tsmc-roadmap-a12-a13-no-high-na-euv, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-06-21_arxiv_tiny-chiplets-esd-protection-signal-integrity, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-06-10_tomshardware_tsmc-fab-expansion-roadmap-n2-cowos-soic]
 related:
   - wiki/entities/tsmc.md
@@ -179,3 +179,14 @@ TrendForce Insights（2026-09-10）引述 TSMC 說法：**SoIC 相對 CoWoS 達�
 ⚠ **56× / 5× 為 TSMC 自述值，且未說明比較基準**（何種 CoWoS 世代、何種 pitch、何種工作負載）。引用時必須標註為廠商宣稱值，不可作為獨立驗證數據使用。
 
 - 引用：`wiki/sources/2026-09-10_trendforce_hybrid-bonding-race-soic-foveros.md`
+
+
+## 2026-09-19 collect 更新：pitch 世代對照與真正限制項
+
+**NineScrolls 2026-09-04**：
+- TSMC SoIC 量產 **6 µm**；路線圖 **4.5 µm（2029）**
+- 節點路線：**N3P-on-N4（現行）→ N2P-on-N2P（2028）→ A14-on-A14（2029）**
+- 對照：Intel Foveros Direct **9 µm**（第二代目標 3 µm）；imec/EVG W2W 示範 200 nm（疊對 <40 nm）；CEA-Leti D2W 1 µm
+
+⭐ **SoIC 的 6 µm 不是設備限制。** 本輪結清的最高優先空缺顯示，量產 pitch 的第一限制是**表面平坦度（拋光後變異 ~0.2 nm，由 CMP 與薄膜製程決定）**，其次是 **die 翹曲（< 100 nm）**，機台對準（100 nm @ 3σ）排在第三。
+➜ TSMC 自 6 µm 走向 4.5 µm 所需的，主要是 CMP 與表面製程能力，而非新一代 bonder。詳見 `wiki/technologies/hybrid-bonding.md` 2026-09-19 更新。

@@ -516,3 +516,19 @@
 2026-09-18 | https://doi.org/10.1063/5.0341214 | raw/papers/2026-09-18_openalex_particle-shape-w2w-bonding-void-dynamics.md | Particle shape: square 4.4s/17.1um vs cyl 3.1s/11.1um
 2026-09-18 | https://doi.org/10.1002/admt.71270 | raw/papers/2026-09-18_openalex_tgv-laser-koh-etch-multiphysics-25um.md | TGV laser+KOH: 25um +/- 1um in fused silica
 2026-09-18 | https://doi.org/10.1016/j.mssp.2026.111179 | raw/papers/2026-09-18_openalex_cobalt-cobalt-low-temp-hybrid-bonding-md.md | Co/Co low-temp hybrid bonding MD; roughness optimum
+2026-09-19 | https://eps.ieee.org/wp-content/uploads/2026/03/Emerging-Technologies_-TC-Article_Hybrid-Bonding_031126_for_EPS_newsletter_FINAL.pdf | raw/articles/2026-09-19_ieee-eps_ectc2025-hybrid-bonding-special-session.md | IEEE EPS: ECTC 2025 hybrid bonding special session
+2026-09-19 | https://ninescrolls.com/news/fine-pitch-hybrid-bonding-targets-6-m-for-volume-as-roadmaps-push-toward-1-m | raw/articles/2026-09-19_ninescrolls_fine-pitch-hb-cmp-surface-prep-6um-1um.md | Fine-pitch HB 6um to 1um: CMP and surface prep
+2026-09-19 | https://ninescrolls.com/news/hybrid-bonding-in-2026-tsmc-ships-6-m-while-its-newest-disclosed-customer/ | raw/articles/2026-09-19_ninescrolls_hybrid-bonding-2026-tsmc-6um-intel-9um.md | HB 2026: TSMC 6um, Intel 9um, 0.2nm polish limit
+2026-09-19 | https://semiengineering.com/metrology-under-pressure-detecting-defects-in-fine-pitch-hybrid-bonding/ | raw/articles/2026-09-19_semieng_metrology-fine-pitch-hybrid-bonding-defects.md | Metrology for fine-pitch HB; no industry standards
+2026-09-19 | https://finance.biggo.com/news/757029bb-1b70-41cd-bf5f-96d6514871ee | raw/articles/2026-09-19_biggo_skhynix-hbm4-16hi-qual-hybrid-bonding-20hi.md | SK hynix 16-Hi HBM4 qual; HB for 20-Hi, pitch <18um
+2026-09-19 | https://mlq.ai/news/cpo-is-shipping-but-foundries-are-taking-four-different-routes/ | raw/articles/2026-09-19_mlq_cpo-four-foundry-routes.md | CPO four foundry routes; Intel 5 pJ/bit, GF 45um pitch
+2026-09-19 | EPO:101213222:US20260271780A1 | raw/patents/2026-09-19_US20260271780A1_micron-hybrid-bond-densified-dielectric.md | Micron hybrid-bond impurity-densified dielectric layers
+2026-09-19 | EPO:100489515:US20260206661A1 | raw/patents/2026-09-19_US20260206661A1_adeia-local-heating-hybrid-bonding-contact.md | Adeia local heating of HB contact via susceptors
+2026-09-19 | EPO:99436762:US20260107808A1 | raw/patents/2026-09-19_US20260107808A1_asmpt-decoupled-floating-bonding-stage.md | ASMPT decoupled floating bonding stage
+2026-09-19 | EPO:99550345:US20260123509A1 | raw/patents/2026-09-19_US20260123509A1_ibm-hybrid-bonding-thermal-dissipation.md | IBM hybrid bonding area with thermal conductive region
+2026-09-19 | EPO:99727976:CN122043677A | raw/patents/2026-09-19_CN122043677A_auo-optical-engine-copackaged-optical-device.md | AUO optical engine through-hole fiber for CPO
+2026-09-19 | https://doi.org/10.5281/zenodo.22719694 | raw/papers/2026-09-19_openalex_bwstar-wafer-level-alignment-full-field-overlay.md | BW-STAR: overlay is a full-field vector field not a scalar
+2026-09-19 | https://doi.org/10.4071/001c.164804 | raw/papers/2026-09-19_openalex_lau-cucu-hybrid-bonding-chiplets-review.md | Lau: Cu-Cu hybrid bonding for chiplets review
+2026-09-19 | https://doi.org/10.4071/001c.169986 | raw/papers/2026-09-19_openalex_lau-glass-packaging-chiplets-review.md | Lau: glass packaging for chiplets review
+2026-09-19 | https://doi.org/10.1088/1361-651X/ae93e6 | raw/papers/2026-09-19_openalex_cu-ta-interfacial-thermal-resistance-tgv.md | Cu/Ta interfacial thermal resistance in TGV wafer
+2026-09-19 | https://doi.org/10.5573/jsts.2026.26.4.292 | raw/papers/2026-09-19_openalex_hb-3dnand-thermal-vth-voltage-control.md | HB 3D NAND Vth 850mV to 10mV via voltage control

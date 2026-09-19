@@ -3,7 +3,7 @@ title: "Foveros — Intel 3D 晶片堆疊技術"
 category: technology
 tags: [Intel, 3D-stacking, hybrid-bonding, Foveros-Direct, micro-bump, TSV, Clearwater-Forest]
 created: 2026-05-03
-updated: 2026-09-15
+updated: 2026-09-19
 sources: [2026-08-24_intel-newsroom_hot-chips-2026-diamond-rapids-foveros-ucie, 2026-03-03_trendforce_intel-clearwater-forest, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-01_semianalysis_cpus-back-datacenter-2026, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap]
 related:
   - wiki/entities/intel.md
@@ -141,3 +141,15 @@ TrendForce Insights（2026-09-10）：**Intel Foveros Direct 第二代以 3µm b
 ⚠ 目標值已公開、時程未公開，兩者不可互換。
 
 - 引用：`wiki/sources/2026-09-10_trendforce_hybrid-bonding-race-soic-foveros.md`
+
+
+## 2026-09-19 collect 更新：Foveros Direct pitch 世代與下一代目標
+
+**NineScrolls 2026-09-04**：
+- Intel Foveros Direct：**9 µm**（2026 Clearwater Forest Xeon 6+）；**第二代目標 3 µm**
+- 對照 TSMC SoIC：6 µm 量產 → 4.5 µm（2029）
+
+⭐ **若兩者目標皆達成，將出現世代交叉**：Intel 目前落後 TSMC 一個世代（9 vs 6 µm），但下一代目標（3 µm）反而比 TSMC 的 4.5 µm 更激進。
+⚠ **兩者時程未對齊**（TSMC 的 4.5 µm 明確標為 2029，Intel 的 3 µm 未標時程），**不可直接比較**。列為待追。
+
+➜ 此外，本輪結清的最高優先空缺顯示 pitch 的第一限制在**表面平坦度（~0.2 nm）**與 **die 翹曲（< 100 nm）**，非機台對準。Intel 要自 9 µm 走到 3 µm，需要的是 CMP／薄膜與薄化製程的能力躍升。

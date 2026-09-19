@@ -3,7 +3,7 @@ title: "ASMPT Limited / ASMPT 有限公司"
 category: entity
 tags: [OSAT, equipment, TCB, hybrid-bonding, CPO, flip-chip, FOPLP, HBM4]
 created: 2026-05-06
-updated: 2026-07-03
+updated: 2026-09-19
 sources: [2026-04-22_asmpt_q1-2026-results, 2026-05-03_globenewswire_amat-acquires-nexx, 2026-05-12_asmpt_ectc2026-firebird-lithobolt]
 related: [wiki/technologies/hybrid-bonding.md, wiki/technologies/copackaged-optics.md, wiki/technologies/hbm4.md, wiki/technologies/foplp.md, wiki/entities/besi.md]
 ---
@@ -75,3 +75,22 @@ ASMPT 分為兩大業務：
 - **EV Group**：D2W 混合接合聯合開發合作（詳見 EV Group 頁面）
 - **Besi**：TCB 與混合接合設備主要競爭對手
 - **主要客戶**：TSMC（透過 TSMC 的邏輯封裝計畫）、SK Hynix、Samsung Memory（HBM4 TCB）、主要資料中心光纖供應商（CPO）
+
+
+## 2026-09-19 更新：解耦浮動接合載台專利；設備商專利軌訊噪比偏低
+
+### 專利訊號：解耦浮動接合載台（US20260107808A1, 2026-04-16, fam 99436762）
+
+線性載具（粗動）與載台本體（細動）**在物理上解耦**，彼此不以機械連接；粗動階段兩者以電磁交互作用一同移動，細動階段載台本體相對於線性載具移動完成定位。效果是**最終定位不繼承線性軸的機械誤差與振動**。
+
+➜ 本 wiki 首次記錄 bonder 的**運動學架構細節**。既有記錄只有精度結果（Besi Kinex 100 nm @ 3σ、路線圖 < 25 nm），無機構原理。此件顯示下一段精度改善來自**振動與機械誤差傳遞路徑的切斷**，屬工程上可預期的漸進改善，而非新物理。
+
+⭐ **本件的價值主要是「反證」**：設備商仍在對準機構上持續投入，但本輪新聞與論文一致指向**量產 pitch 的第一限制項已不是機台對準**（表面平坦度 0.2 nm > die 翹曲 100 nm > 機台對準 100 nm）。「設備側精度持續推進、量產 pitch 停滯」的並存，正是該空缺的核心現象。
+
+### 檢索紀律：設備商純申請人檢索的訊噪比
+
+`(pa="be semiconductor" or pa="ev group" or pa="asmpt") and pd within "2026"` 命中 **64 件**，其中絕大多數為 SMT 打線、取放、材料倉儲、印刷網版等通案機械案件；**僅 1 件與混合接合級擺放精度相關（1.6%）**。
+➜ 建議下輪改以技術詞與申請人的交集（如 `ti,ab="hybrid bonding"`、`ti,ab="bond head"`），而非純申請人檢索。
+
+### 同輪其他 ASMPT 案件（未收錄，備查）
+US20260114310A1（細間距垂直線互連）、US20260206337A1（光學封裝組裝用可移動固化系統，CPO 相關）、KR20260043824A（電子元件缺陷檢測）。

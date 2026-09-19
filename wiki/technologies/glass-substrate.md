@@ -3,7 +3,7 @@ title: "玻璃基板 / Glass Core Substrate"
 category: technology
 tags: [glass-substrate, TGV, panel-level, FC-BGA, CoPoS, Absolics, DNP, Rapidus, warpage, SeWaRe, glass-interposer, BOE, ULCVD, non-embedding, Lens-Technology, TPK-KY, Innolux, AUO, LG-Chem, singulation, patent-signal]
 created: 2026-05-08
-updated: 2026-09-18
+updated: 2026-09-19
 sources: [2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-05-05_trendforce-insights_glass-substrate-development, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-05-29_3dincites_rapidus-2nm-advanced-packaging-ai-foundry, 2026-06-01_trendforce_intel-3dgs-india-glass-substrate, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-06-20_biggo_boe-glass-substrate-pilot, 2026-06-28_economy-ac_glass-substrate-global-race, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-08-18_trendforce_shinko-glass-substrate-22layer-glassem-delay, 2026-09-11_mssp_tgv-glass-biaxial-bending-ring-on-ring, 2026-06-02_intel_ectc2026-emib-t-cpo-glass]
 related:
   - wiki/technologies/copos.md
@@ -857,3 +857,48 @@ Corning（WO2026164778A1，2026-08-06，小孔徑 TGV）：
 Laser Focus World（2026-04-13）指出**玻璃中介層可維持 RF 效能至 40 GHz**。這替本頁與 `technologies/copackaged-optics.md` 之間補上具體連結數字：玻璃不只是機械／CTE 選擇，也是 **RF 選擇**。
 
 來源：[[sources/2026-04-13_laserfocusworld_cpo-thermoelectric-cooling]]
+
+
+## 2026-09-19 collect 更新：熱瓶頸在阻障層界面；CTE 是兩端受夾的變數
+
+### 一、⭐ TGV 的熱瓶頸不在銅，在 Cu/Ta 阻障層界面（MSMSE 2026-08-24，華中科大）
+
+非平衡分子動力學預測 TGV 晶圓中 Cu/Ta 異質界面的**界面熱阻（ITR）**：
+- **界面存在明顯溫降**，ITR 是 TGV 熱路徑的實質限制項
+- **非單調溫度依賴**：低溫時無缺陷與相變，溫度單調遞減；**高溫時 Cu 層產生缺陷與結構無序，出現局部溫度擾動**
+- 溫度升高使原子振動與擴散增強，**反而降低 ITR**
+
+⭐ **對 Intel vs Corning 對賭的直接影響**：本頁 2026-09-18 記錄兩條假設相反的工程哲學——Intel 賭 Cu/玻璃界面遲早失效所以要**脫鉤**（bottom-up 鍍膜＋**刻意保留空氣間隙**、部分襯層），Corning 賭界面**可以做牢**（Ti/Cu 黏著層＋羥基富化＋矽烷官能化）。此前本 wiki 只以**可靠度**軸評估這條對賭。
+➜ **現在應加上熱軸**：Intel 的空氣間隙設計在熱路徑上是**負面的**（空氣導熱極差），而 Corning 的緻密黏著層在熱路徑上有利。**兩條哲學的取捨不只是可靠度，還包含熱阻。**
+
+⭐ 亦是「代理指標誤差」的又一實例：以 **TGV 銅填充率／直流電阻**代理熱性能會漏掉阻障層界面——電阻主要由銅決定，熱阻卻主要由界面決定。
+
+⚠ **陷阱型結果**：熱測試中若看到高溫下熱阻改善，實際上是材料正在劣化，不可當成可靠度裕度。
+⚠ 純模擬，摘要未給 ITR 絕對值。作者群與 2026-09-18 收錄的顆粒形狀 W2W 論文（`10.1063/5.0341214`）為同一團隊與同一方法家族，**不構成彼此獨立的佐證**。
+
+### 二、⭐ 缺失的一層：玻璃基板 → PCB 的 CTE 失配（Lau, JMEP 2026-09-15）
+
+Lau 的玻璃封裝綜述點名一個本頁完全未建立的條目：**玻璃核心基板的 CTE 對其銲接到 PCB 後之銲點可靠度的影響**。
+
+本頁既有討論全部集中在**上游**（玻璃—銅界面、TGV 加工公差 25 µm ± 1 µm、雙軸彎曲強度），**「基板 → PCB」這一層的失配未被記錄**。
+
+⭐ **CTE 是一個兩端受夾的變數**——這個框架本 wiki 此前未記錄：
+- **降低玻璃 CTE** → 有利於與矽（~2.6 ppm/K）匹配，減少晶片側應力
+- **降低玻璃 CTE** → **不利**於與 PCB（FR-4 系，平面方向約 14–17 ppm/K）匹配，溫度循環時的應變更多由銲點吸收
+
+➜ 與本頁 2026-09-18 記錄的 Intel「**CTE < 11 玻璃面板框架**」專利呼應：該專利在**基板內部**做 CTE 管理；Lau 指出**基板外部**也有同一問題，**且方向相反**。
+⚠ 上述 CTE 數值為本頁依材料常識補充的背景，**非 Lau 原文內容**（僅取得摘要，無 OA PDF）。
+
+### 三、「玻璃核心基板」與「玻璃核心中介層」應分開記錄
+
+Lau 明確把下列列為**需分別討論**的四組對比，本頁目前經常混用其中第一與第二組：
+1. 有機核心基板 vs **玻璃核心基板**
+2. **玻璃核心基板 vs 玻璃核心中介層** ← 本頁常混用
+3. 玻璃核心中介層 vs 有機核心中介層 vs 矽中介層
+4. 面板級封裝 vs 晶圓級封裝
+
+兩者在厚度、TGV 深寬比、與晶片的距離、以及承擔的 CTE 角色上都不同。➜ 列為下次 lint 的整理項。
+
+### 四、玻璃加工能力是三條路線的共用底層（AUO 專利訊號，見 `copackaged-optics.md`）
+AUO CN122043677A 的**貫孔式光學基板**在幾何與製程上與 TGV 屬同一類加工問題。
+➜ 本 wiki 應把「玻璃／大面積基板加工能力」視為**同時服務 FOPLP、玻璃基板、CPO 三條路線的共用底層**，而非三條獨立路線。
