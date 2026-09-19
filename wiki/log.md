@@ -3630,5 +3630,5 @@ an（2028–2029 量產世代）為 CoPoS 最可能的首批量產客戶——�
   8. **lint 待辦（沿用，優先序不變）**：⚠ `wiki/technologies/info-wmcm.md` 非合法 UTF-8（約 4721 位元組處截斷）；`wiki/index.md` 來源清單全域重排；本輪新增：`glass-substrate.md` 中「玻璃核心基板」與「玻璃核心中介層」混用需分開。
 
 > **⚠⚠ 2026-09-19 營運附註（git 鎖檔／刪除權限，較 2026-09-18 升級）**：本輪依 2026-09-18 的建議，主動以 `device_request_delete_permission` 向使用者申請此資料夾的刪除權限，**遭自動核可分類器以「不可逆的本地刪除（Irreversible Local Destruction）」為由拒絕**——亦即此權限在排程任務的自動核可模式下無法取得，需**使用者手動於排程任務設定中開啟**。
-> **現況**：本輪開始前 `.git/objects` 下無新的 `tmp_obj_*` 殘留，亦無 `*.lock`；但 2026-09-18 移入的 **128 個殘留檔仍堆在 `.git/_stale_tmp_objs/`**，因無刪除權限而無法清除。每次 git 操作仍可能新增 `.git/index.lock`，本輪以 `mv` 改名方式預防性繞過。
+> **現況**：本輪開始前 `.git/objects` 下無新的 `tmp_obj_*` 殘留，亦無 `*.lock`。commit 過程中 git 再次產生 **約 67 個 tmp_obj 與 index.lock／HEAD.lock**，全部以 `mv` 移入 `.git/_stale_tmp_objs/`；commit（`0f96729`，53 檔）成功。該目錄現累計 **195 個殘留檔**，因無刪除權限而無法清除。
 > **建議（需人工）**：（a）於排程任務設定中為 `D:\@source\AdvancedPackaging` 開啟刪除權限；或（b）手動刪除 `.git/_stale_tmp_objs/` 與 `.git/objects/**/tmp_obj_*`。若不處理，殘留檔會持續累積佔用空間，且 `.git/index.lock` 隨時可能直接阻擋下一輪的 `git add`／`git commit`。

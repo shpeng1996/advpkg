@@ -185,6 +185,6 @@ related: [wiki/index.md, wiki/analyses/2026-09-15_knowledge-base-consolidation.m
   - 5 個 lint 建議實體頁仍未建（Google／Apple／Broadcom／MediaTek／GlobalFoundries）；Hanwha Semitech、Absolics 亦缺；**本輪新增 AUO 缺頁**
   - `wiki/index.md` 來源清單非全域日期排序（2026-05-10 之後重新起始）；2026-09-17～19 三輪皆以程式依發表日插入局部遞減區段的正確位置，未惡化但也未修復，**待下次 lint 重排**
   - ⚠ `wiki/technologies/info-wmcm.md` 不是合法 UTF-8（約 4721 位元組處截斷），任何 UTF-8 批次處理都會跳過，**下次 lint 應優先修復編碼**
-  - ⚠⚠ **營運阻塞（2026-09-19 升級）**：connected-folder 仍不允許刪除檔案；本輪已嘗試向使用者申請刪除權限，**遭自動核可分類器以「不可逆的本地刪除」為由拒絕**。`.git/_stale_tmp_objs/` 下堆積 **128 個 tmp_obj_\* 殘留檔**（2026-09-18 移入，無刪除權限故無法清除），且每次 git 操作都可能殘留 `.git/index.lock`。➜ **需使用者手動處理**：在排程任務設定中為此資料夾開啟刪除權限，或手動清空 `.git/_stale_tmp_objs/` 與 `.git/objects/**/tmp_obj_*`
+  - ⚠⚠ **營運阻塞（2026-09-19 升級）**：connected-folder 仍不允許刪除檔案；本輪已嘗試向使用者申請刪除權限，**遭自動核可分類器以「不可逆的本地刪除」為由拒絕**。`.git/_stale_tmp_objs/` 下累計 **195 個殘留檔**（2026-09-18 的 128 個 + 本輪 commit 再產生的約 67 個，無刪除權限故無法清除），且每次 git 操作都可能殘留 `.git/index.lock`。➜ **需使用者手動處理**：在排程任務設定中為此資料夾開啟刪除權限，或手動清空 `.git/_stale_tmp_objs/` 與 `.git/objects/**/tmp_obj_*`
 - **2026-09-19 去重機制驗證**：**family-id 去重攔下 3 件**（Intel US20260262485A1 fam 100905151、TSMC fam 96347795 與 fam 96174196，皆為前輪已收錄）；論文軌「正規化標題 → DOI」雙鍵攔下 6 篇；新聞軌 URL 比對攔下 8 筆
 - **2026-09-19 來源日期分布提醒**：本輪 Track A 6 篇中有 5 篇為 2025-08～2026-08 的舊文，屬**刻意收錄**——全部用於結清「D2W pitch 真正限制項」這一個列管空缺，該問題的關鍵證據本來就分散在較早的技術深度報導中
