@@ -3,8 +3,8 @@ title: "共封裝光學元件 / Co-Packaged Optics (CPO) — TSMC-COUPE™ & Eco
 category: technology
 tags: [CPO, co-packaged-optics, COUPE, TSMC, GlobalFoundries, Samsung, photonics, AI, HPC, networking, OCI-MSA, DWDM, Broadcom, NVIDIA, glass-substrate, ULCVD, TGV, Spectrum-X, NVL72]
 created: 2026-04-25
-updated: 2026-09-19
-sources: [2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-05-07_trendforce_globalfoundries-silicon-photonics-scale-cpo, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-03-17_coherent_cpo-ofc2026-demo, 2026-06-07_digitimes_jcet-3d-packaging-cpo-plant, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_edn_cpo-technology-status-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-06-24_thelec_corning-glass-bridge-cpo, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-14_trendforce_umc-silith-silicon-photonics-hvm, 2026-07-14_trendforce_huawei-baidu-npo-msa, 2026-07-27_trendforce_presscenter_cpo-switches-nvidia-broadcom-coupe, 2026-06-03_3dincites_intel-foundry-emib-cpo-glass-ectc2026, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-07-31_ase_cn224583735u-photoelectric-hybrid-rdl]
+updated: 2026-09-20
+sources: [2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-05-07_trendforce_globalfoundries-silicon-photonics-scale-cpo, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-03-17_coherent_cpo-ofc2026-demo, 2026-06-07_digitimes_jcet-3d-packaging-cpo-plant, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_edn_cpo-technology-status-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-06-24_thelec_corning-glass-bridge-cpo, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-14_trendforce_umc-silith-silicon-photonics-hvm, 2026-07-14_trendforce_huawei-baidu-npo-msa, 2026-07-27_trendforce_presscenter_cpo-switches-nvidia-broadcom-coupe, 2026-06-03_3dincites_intel-foundry-emib-cpo-glass-ectc2026, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-07-31_ase_cn224583735u-photoelectric-hybrid-rdl, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo]
 related:
   - wiki/entities/tsmc.md
   - wiki/technologies/cowos.md
@@ -902,3 +902,17 @@ Intel 的 **5 pJ/bit vs 15 pJ/bit** 之比較基準為 **100 m 距離**。
 
 ### 六、間接佐證：Corning 把 CPO／玻璃核心基板／FOPLP 並列為新戰場
 DIGITIMES 2026-09-15 訪談 Corning 的標題與摘要指出此三者並列為新戰場（**該文付費牆，本輪未取得正文**）。AUO 專利為同一論述提供了獨立證據。
+
+## 2026-09-20 collect 更新：AUO 在 CPO 的角色確認為零件供應商
+
+2026-09-19 列管的空缺「**AUO 在 CPO 的角色：零件供應商還是封裝服務商？**」**本輪結清**。
+
+BigGo（2026-06-21）：**AUO 不做玻璃核心基板，改以 Micro LED 與光通訊為優先，並與關係企業 Ennostar 合作切入 CPO，提供 AI 伺服器的光通訊解決方案——而非基板、也不是封裝服務。** 目標應用為資料中心內 GPU 間高速傳輸。
+
+➜ 三點意涵：
+
+1. **對 OSAT 競爭格局：AUO 不與 ASE／Amkor 體系競爭**，而是進入**光引擎／光元件供應鏈**。本 wiki 先前依 AUO 專利 CN122043677A（貫孔式光學基板、孔壁即反射元件、光纖直接置入）推測其可能切入封裝服務，**該推測予以修正**。該專利應重新理解為**零件供應商為自身光學元件所做的結構布局**。
+2. **「面板廠轉型」是兩條路而非一條**：Innolux 走**基板材料加工**（玻璃核心，供 TSMC CoPoS，與 Ibiden 合作）；AUO 走**光元件**（CPO，與 Ennostar 合作）。2026-09-19 建立的「面板廠既有的玻璃／大面積加工資產是 FOPLP、玻璃基板、CPO 三條路線的共同前置能力」論述**成立**，但需補一句：**共同前置能力不等於共同落點。**
+3. **CPO 供應鏈的參與者類型再添一類**：既有記錄多為代工廠（TSMC COUPE、Intel、GF）、設備商（ASMPT）、系統商（NVIDIA、Broadcom）。**面板／顯示體系（AUO + Ennostar，Micro LED 背景）為新的一類**，其切入點在光源與光學機構件，而非封裝整合。
+
+⚠ 單一聚合型財經媒體來源（原始出處應為 DIGITIMES，付費牆）；無出貨時程、產能或客戶名單。

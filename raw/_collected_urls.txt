@@ -532,3 +532,19 @@
 2026-09-19 | https://doi.org/10.4071/001c.169986 | raw/papers/2026-09-19_openalex_lau-glass-packaging-chiplets-review.md | Lau: glass packaging for chiplets review
 2026-09-19 | https://doi.org/10.1088/1361-651X/ae93e6 | raw/papers/2026-09-19_openalex_cu-ta-interfacial-thermal-resistance-tgv.md | Cu/Ta interfacial thermal resistance in TGV wafer
 2026-09-19 | https://doi.org/10.5573/jsts.2026.26.4.292 | raw/papers/2026-09-19_openalex_hb-3dnand-thermal-vth-voltage-control.md | HB 3D NAND Vth 850mV to 10mV via voltage control
+2026-09-20 | https://www.bruker.com/en/products-and-solutions/semiconductor-solutions/automated-afm-metrology/resource-library/an-5001-surface-metrology-for-hybrid-bonding-in-advanced-semiconductor-packaging.html | raw/articles/2026-09-20_bruker_afm-surface-metrology-hybrid-bonding-rq-0.1-0.2nm.md | Bruker AN-5001: Rq 0.1-0.2nm, Cu recess 1-5nm
+2026-09-20 | https://www.damnang.com/p/hybrid-bonding-fully-dissected | raw/articles/2026-09-20_damnang_hybrid-bonding-fully-dissected-cmp-gating-factor.md | CMP is the gating factor, not the bonder
+2026-09-20 | https://www.semiconsam.com/p/hbm-hybrid-bonding-the-companies | raw/articles/2026-09-20_semiconsam_hbm-hybrid-bonding-cmp-amat-monopoly.md | AMAT 100% monopoly on hybrid-bonding CMP tools
+2026-09-20 | https://hyperframeresearch.com/2026/06/28/is-applied-materials-betting-on-hybrid-bonding-or-hedging-it/ | raw/articles/2026-09-20_hyperframe_applied-materials-hybrid-bonding-hedge.md | AMAT convergence strategy hedges hybrid bonding
+2026-09-20 | https://exponentialindustry.com/blog/2026-08-13-glass-core-substrates-ai-chip-packaging/ | raw/articles/2026-09-20_exponentialindustry_glass-core-substrate-panel-yield-gap.md | Glass panel yield 70-85% vs organic >90%
+2026-09-20 | https://finance.biggo.com/news/df3d41ae-119c-4b7b-a034-08c53a2fb94d | raw/articles/2026-09-20_biggo_innolux-ibiden-glass-core-auo-ennostar-cpo.md | Innolux-Ibiden glass core; AUO-Ennostar CPO parts
+2026-09-20 | EPO:99226182:US20260096463A1 | raw/patents/2026-09-20_US20260096463A1_adeia-buildup-organic-dielectric-low-temp-bonding.md | Adeia organic+inorganic build-up bonding layer
+2026-09-20 | EPO:100509804:CN122421815A | raw/patents/2026-09-20_CN122421815A_jcet-asymmetric-organic-dielectric-cu-grain-bonding.md | JCET asymmetric organic dielectric and Cu grain size
+2026-09-20 | EPO:99551631:US20260123559A1 | raw/patents/2026-09-20_US20260123559A1_seoultech-hydrocarbon-plasma-low-temp-hybrid-bonding.md | SeoulTech CxHy plasma low-temperature hybrid bonding
+2026-09-20 | EPO:91080510:US20260240057A1 | raw/patents/2026-09-20_US20260240057A1_tokyo-electron-curable-covalent-bonding-layer.md | TEL thermally/photocurable covalent bonding layer
+2026-09-20 | EPO:99016254:JP2026047137A | raw/patents/2026-09-20_JP2026047137A_kaneka-glass-core-polyimide-insulating-layer-quantified.md | Kaneka glass core PI layer: imide 15-38%, 20MPa, Ra 10nm
+2026-09-20 | https://doi.org/10.1038/s41598-026-65922-6 | raw/papers/2026-09-20_openalex_low-k-organic-buffer-tgv-cu-metallization.md | TGV low-k buffer: peel 0.327 to 0.675 N/mm
+2026-09-20 | https://doi.org/10.1016/j.jmrt.2026.08.005 | raw/papers/2026-09-20_openalex_vacuum-assisted-void-free-cu-fill-tgv-ar10.md | Vacuum-assisted void-free Cu fill in AR10 TGV
+2026-09-20 | https://doi.org/10.3390/mi17080920 | raw/papers/2026-09-20_openalex_tgv-cleanability-surface-tension-contact-angle.md | TGV cleanability: outside angle blind to inside state
+2026-09-20 | https://doi.org/10.1016/j.jmrt.2026.09.095 | raw/papers/2026-09-20_openalex_double-sided-dram-sequential-reflow-warpage-stress.md | Warpage net +8.6% but PCB stress +30.5% (Samsung)
+2026-09-20 | https://doi.org/10.1016/j.ymssp.2026.114971 | raw/papers/2026-09-20_openalex_in-situ-wafer-thinning-thickness-monitoring-3um.md | In-situ wafer thinning endpoint 3um, dev <0.5um

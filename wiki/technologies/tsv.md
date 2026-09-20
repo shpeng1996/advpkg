@@ -3,8 +3,8 @@ title: "TSV — Through-Silicon Via / 矽穿孔"
 category: technology
 tags: [TSV, HBM, interposer, 3D-IC, CoWoS, manufacturing, backside-power, advanced-packaging, radiation, redundancy, reliability]
 created: 2026-08-10
-updated: 2026-09-19
-sources: [2026-04-22_semieng_tsv-complexity-manufacturing-bottleneck, 2026-08-21_semieng_chip-week-152, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-08-21_scirep_copper-oxide-reduction-ar-h2-pulsed-plasma, 2026-06-08_irtnanoelec_d2w-hybrid-bonding-1um-pitch]
+updated: 2026-09-20
+sources: [2026-04-22_semieng_tsv-complexity-manufacturing-bottleneck, 2026-08-21_semieng_chip-week-152, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-08-21_scirep_copper-oxide-reduction-ar-h2-pulsed-plasma, 2026-06-08_irtnanoelec_d2w-hybrid-bonding-1um-pitch, 2026-03-13_kaneka_jp2026047137a-glass-core-polyimide-quantified, 2026-08-10_screp_low-k-organic-buffer-tgv-cu-metallization, 2026-08-04_jmrt_vacuum-assisted-void-free-cu-fill-tgv, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring]
 related:
   - wiki/technologies/hbm4.md
   - wiki/technologies/cowos.md
@@ -297,3 +297,31 @@ TSV 的高吞吐非破壞性檢測是關鍵任務。稀疏視角 XCT 可加速�
 
 ⚠ 純模擬，無實測，摘要未給 ITR 絕對值；對象為 TGV（玻璃），外推至矽基 TSV 時 Cu/Ta 界面本身相同、但周圍基材導熱差異極大（Si ~150 W/mK vs 玻璃 ~1 W/mK），**不可直接套用整體熱阻結論**。
 ⚠ 作者群與 2026-09-18 顆粒形狀 W2W 論文為同一團隊與方法家族，不構成獨立佐證。
+
+## 2026-09-20 collect 更新：TGV 填孔的限制在清洗與種子層；晶圓減薄的量測端首次入庫
+
+### 一、TGV 填孔鏈條往上游延伸兩步（詳見 `glass-substrate.md` 同日段落）
+
+1. **清洗**：空氣中有機汙染物提高孔內接觸角；孔外接觸角對孔內狀態**敏感度為零**（ARCH, Micromachines 2026-07-30；TGV 開孔 20 µm／AR 10）。
+2. **種子層**：⭐ **金屬化後的表面比裸玻璃更難潤濕**——先鍍種子層是為了導電，卻降低電鍍液滲入（漢陽／LSIS, JMRT 2026-08-04）。
+3. **電鍍**：添加劑吸附具質傳依賴性 → 孔內**位置相依的沉積速率**；真空輔助潤濕在 **AR 10** 達成無空洞填充，−55~125 °C／100 cycles 無缺陷。
+
+⚠ **TSV vs TGV 的外推限制仍然成立**（2026-09-19 已標注）：以上皆為玻璃基材，矽 TSV 的潤濕與界面化學不同，數值不可直接搬用；**但「限制項不在最後那台機器上」的結構性結論可跨基材參考**。
+
+### 二、絕緣／襯層規格：Kaneka 給出非接合面的粗糙度與應力上限
+
+JP2026047137A：聚醯亞胺絕緣層覆蓋貫孔側壁導電層，限定 **醯亞胺基濃度 15–38%／內應力 ≤20 MPa／Ra ≤10 nm**。➜ 本 wiki 第一個「非接合面」的粗糙度規格，可與混合接合面 Rq 0.1–0.2 nm 直接對照（相差 50–100 倍）。
+
+### 三、⭐ 晶圓減薄的量測端首次入庫
+
+本 wiki 對「die 薄化」一直有目標（AMAT：HBM die 薄化至常規 DRAM 的 1/25）、有後果（翹曲與強度下降成為良率主因）、有允收規格（Samsung <100 nm 翹曲），但**沒有「製程中如何知道現在多厚」**。
+
+天津大學（MSSP 2026-09-18）：水導引光學探頭 + 傅立葉變換厚度萃取 + Z-score 品質判據 + 動態追蹤。
+
+| 項目 | 數值 |
+|------|------|
+| **可控終點厚度** | **低至 3 µm** |
+| **靜態偏差（vs F50）** | **<0.5 µm，量程 3–400 µm** |
+| **有效數據率** | **>80%** |
+
+⚠ 為晶圓減薄一般製程，非專為先進封裝設計；與 HBM／SoIC 實際薄化條件未直接對應。

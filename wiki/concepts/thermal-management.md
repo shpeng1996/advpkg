@@ -3,8 +3,8 @@ title: "先進封裝熱管理 / Thermal Management in Advanced Packaging"
 category: concept
 tags: [thermal-management, liquid-cooling, 3D-IC, CoWoS, heat-dissipation, TIM, ECTC-2025, GaN, power-delivery, co-design, patent-signal, delamination]
 created: 2026-04-25
-updated: 2026-09-19
-sources: [2025-12-01_semiengineering_thermal-management, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-02_trendforce_samsung-hbm5-computex2026, 2026-05-21_semieng_hi-roadmap-nature-paper-intel, 2026-08-13_semieng_1mw-rack-debate-thermal, 2026-04-27_semieng_semiconductor-materials-misbehave, 2026-08-21_trendforce_chip-packaging-heat-ai-bottleneck-cpo-stco]
+updated: 2026-09-20
+sources: [2025-12-01_semiengineering_thermal-management, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-02_trendforce_samsung-hbm5-computex2026, 2026-05-21_semieng_hi-roadmap-nature-paper-intel, 2026-08-13_semieng_1mw-rack-debate-thermal, 2026-04-27_semieng_semiconductor-materials-misbehave, 2026-08-21_trendforce_chip-packaging-heat-ai-bottleneck-cpo-stco, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer]
 related:
   - wiki/technologies/cowos.md
   - wiki/technologies/hybrid-bonding.md
@@ -587,3 +587,33 @@ IBM 的作法是在同一接合區內分割「接合介電區」與「導熱材�
 
 本輪三個來源各自獨立地把關鍵變數改寫為位置的函數：疊對（全場向量場）、翹曲（晶圓上非均勻，邊緣 vs 中心）、Vth 對策（位置相依梯度偏壓）。
 ➜ **3D 堆疊使幾乎每個關鍵變數都變成位置的函數**；熱管理亦然——單一接面溫度或單一熱阻值，正在失去作為規格的意義。
+
+## 2026-09-20 collect 更新：翹曲與應力脫鉤；接合界面成為可分區的設計面
+
+### 一、⭐⭐⭐ 翹曲不能代表熱-機械狀態——第一個帶數字的反證
+
+**KAIST × Samsung × KITECH（JMRT 2026-09-01）**，雙面 DRAM 順序回焊，FEM 含黏彈／黏塑性：
+
+| 項目 | 數值 |
+|------|------|
+| 第一次回焊後翹曲 | **+58.2%** |
+| 第二次回焊後**淨**翹曲 | **+8.6%** |
+| 第二次回焊後 PCB 局部應力 | **最高 +30.5%** |
+| 邊緣銲點面外剪應力 | 顯著上升 |
+
+➜ 本頁於 2026-07-30 已把「翹曲管理納入熱-機械複合設計框架」。本輪把它推進一步：**翹曲回到原值不代表應力回到原值。** 以單一翹曲數值驗收的製程，可能在該數值「合格」時已累積顯著的內部應力。➜ 熱-機械驗收應至少加上**應力集中位置**（本例為邊緣銲點面外剪應力）作為第二個指標。
+
+⭐ **「順序」是獨立變數**：第二次回焊的效果不等於第一次的重複。這是本輪第三個「製程順序本身即設計變數」的實例（另兩個：TGV 種子層降低潤濕性、JCET 逐層測試）。
+
+⚠ 純 FEM 模擬、無實測驗證；對象為 PCB 級雙面 DRAM 模組，非 2.5D/3D 封裝內部，數值不可外推至 HBM 堆疊。
+
+### 二、⭐ 接合界面正在從均質層變成可分區的功能性平面
+
+2026-09-19 列管的空缺「接合界面的散熱面積與 I/O 面積的交換率」本輪**未結清，但出現第二個結構性實例**：
+
+| 案件 | 分區方式 |
+|------|----------|
+| IBM US20260123509A1（2026-04-30，既有） | 同一接合區分割「鍵結介電區」與「導熱材料區」 |
+| **TEL KR20260007564A**（2026-01-14）⭐新 | 同一接合界面的第一／第二區域使用**兩種不同的介電材料** |
+
+➜ 兩家、兩案、同一結構概念。**接合界面應自「單一材料層」改記為可分區的設計面。** ⚠ TEL 案未說明分區目的（散熱？應力？選擇性接合？），故**交換率的數字仍然沒有**，空缺維持開啟。

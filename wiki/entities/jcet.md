@@ -3,8 +3,8 @@ title: "JCET（江蘇長電科技）"
 category: entity
 tags: [OSAT, China, 3D-packaging, CPO, AI-power-modules, advanced-packaging, Shanghai]
 created: 2026-06-22
-updated: 2026-09-17
-sources: [2026-06-07_digitimes_jcet-3d-packaging-cpo-plant, 2026-06-26_semieng_chip-week-144, 2026-07-29_trendforce_china-advanced-packaging-new-capacity-wave, 2026-08-21_semieng_chip-week-152]
+updated: 2026-09-20
+sources: [2026-06-07_digitimes_jcet-3d-packaging-cpo-plant, 2026-06-26_semieng_chip-week-144, 2026-07-29_trendforce_china-advanced-packaging-new-capacity-wave, 2026-08-21_semieng_chip-week-152, 2026-07-17_jcet_cn122421815a-asymmetric-bonding-interface]
 related:
   - wiki/concepts/advanced-packaging-market.md
   - wiki/technologies/copackaged-optics.md
@@ -100,3 +100,31 @@ US20260239928A1 的邏輯與本 wiki 2026-09-16 對 ASE 的觀察同型：**OSAT
 - 逐層測試法在何種單層良率區間才具經濟性
 
 **來源**：[[sources/2026-08-13_jcet_us20260239928a1-hybrid-bonding-substack-test]]、[[sources/2026-09-15_jcet_cn122766296a-microwave-debonding]]、[[sources/2026-09-15_jcet_cn122766387a-dual-laser-bonding]]
+
+## 2026-09-20 collect 更新：⭐ JCET 有兩個地理上獨立的研發群組；提出刻意不對稱的接合界面
+
+### 一、專利訊號：CN122421815A（fam 100509804, 2026-07-17）
+
+混合接合結構，上下兩接合層各含**有機介電層 + 金屬層**，並有兩項不對稱限定：
+
+- **第一（下）有機介電層的機械性質 > 第二（上）有機介電層**
+- **第一（下）金屬層晶粒尺寸 > 第二（上）金屬層**
+
+發明人：魏浩東、曹光龍、唐彥波、鄭麗。
+
+### 二、意涵
+
+1. ⭐⭐ **挑戰本 wiki 所有混合接合記錄隱含的「兩個接合面對稱」假設。** 這是一項**物理宣稱**：若對稱最佳，刻意製造梯度即無意義。推測機制為「軟側順應硬側形貌」，可把雙邊 Rq 規格部分轉為單邊規格 + 順應層。⚠ 摘要未述機制，屬推論。
+2. ⭐ **Cu 晶粒尺寸首次被寫入請求項**（本 wiki 既有記錄把 Cu 側變數限於 recess 與退火條件）。粗晶粒＝較少晶界、細晶粒＝較多擴散路徑，梯度可使原子淨流向單一方向。
+3. ⭐ **PHB（有機介電混合接合）的第三個獨立申請人**（另兩個：Toray 材料商、Adeia IP 持有者）。三個互不重疊的身分、同一季 ➜ 該路線正式升格。JCET 作為 **OSAT** 的參與，意味此路線已進入受託封裝端。
+
+### 三、⭐ 研發組織：兩個地理上獨立的群組
+
+| 群組 | 案件 | 主題 |
+|------|------|------|
+| **韓國團隊**（原 STATS ChipPAC Korea，2026-09-15 收錄） | CN122766296A／CN122766387A／US20260239928A1 | 微波剝離載板、雙雷射壓縮鍵合、逐層堆疊測試 |
+| **中國團隊** ⭐本輪新增 | CN122421815A | 不對稱混合接合結構 |
+
+➜ 本 wiki 先前僅記錄韓國群組，並列管空缺「JCET 韓國團隊的產能與客戶」。**該空缺維持開啟**，但本輪顯示 JCET 的混合接合投入**不限於單一團隊**，兩個群組主題互不重疊（韓國偏製程／設備側，中國偏結構／材料側）。
+
+⚠ 中國申請案，摘要**無任何量化數值**（無機械性質數字、無晶粒尺寸、無溫度、無 pitch），符合本 wiki 對 CN 案的既有觀察。**專利為前瞻訊號，非量產能力。**

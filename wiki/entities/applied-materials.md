@@ -3,8 +3,8 @@ title: "Applied Materials（應用材料）"
 category: entity
 tags: [equipment, ECD, PECVD, TSV, HBM, die-thinning, hybrid-bonding, USA]
 created: 2026-09-17
-updated: 2026-09-18
-sources: [2026-08-18_appliedmaterials_hbm-packaging-bottleneck-toolset]
+updated: 2026-09-20
+sources: [2026-08-18_appliedmaterials_hbm-packaging-bottleneck-toolset, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-06-28_hyperframe_amat-hybrid-bonding-hedge, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq]
 related:
   - wiki/technologies/tsv.md
   - wiki/technologies/hbm4.md
@@ -116,3 +116,42 @@ Applied Materials 與 Besi 共同開發的 **Kinex** 平台，首次取得量產
 ⚠ 本節數字出自 EE Times 2025-11-21 之設備商導向報導，**未經第三方量測驗證**；「2026 年推出 50 nm 系統」為當時之廠商宣告，尚未經 2026 年獨立來源確認。
 
 來源：[[sources/2025-11-21_eetimes_amat-besi-d2w-hybrid-bonding-hvm]]
+
+## 2026-09-20 collect 更新：⭐⭐ AMAT 掌握的是混合接合的限制層本身
+
+### 一、混合接合專用 CMP 設備市占 100%
+
+SemiconSam（2025-09-18）：
+
+| 項目 | 數值 |
+|------|------|
+| **混合接合專用 CMP 設備市占** | **100%（獨占）** |
+| 整體 CMP 市占 | 60% |
+| 競爭者 | Ebara（日）、KC Tech（韓）——**皆無混合接合 CMP 實績** |
+| 持有 Besi 股權 | 9%（2025-04） |
+
+➜ **這與本 wiki 2026-09-19 的核心結論相乘後，改變了 AMAT 在本 wiki 中的定位。** 該輪確立混合接合的限制鏈為 **①表面平坦度 ~0.2 nm（CMP／薄膜）> ②die 翹曲 <100 nm（材料）> ③機台對準 100 nm（設備）**，第一限制比機台對準嚴格 500 倍且不在接合機側。若 CMP 設備確由 AMAT 獨占，則：
+
+**整個產業 pitch 微縮的速率上限，實質由一家設備商的製程能力決定**，而非由接合機的三方競爭（Besi／EVG／ASMPT）決定。
+
+➜ 這也回頭解釋 **AMAT 持股 Besi 9% 的布局邏輯：控制限制層，再參股非限制層。** 本 wiki 先前把該持股理解為「設備商聯盟」，此後應理解為**沿限制鏈的縱向布局**。
+
+⚠ 「100% 獨占」為單一來源（Substack 分析文）主張，無第三方市占統計佐證，**列為待佐證**。追蹤方式：AMAT 法說會、SEMI 設備統計、Ebara／KC Tech 的混合接合 CMP 出貨宣告。
+
+### 二、AMAT 自身的論述是「避險」而非「押注」
+
+HyperFRAME Research（2026-06-28）：AMAT 的策略軸線是**「收斂」（convergence）**——前段 fab 與後段封裝界線模糊化，以「每片晶圓上良率關鍵接觸點的數量」為擴張指標，而非單一 hero tool；並對接合方式的不確定性刻意採取避險姿態。
+
+| 項目 | 數值 |
+|------|------|
+| Centura Prime Epi 佔地 | −20% |
+| 超薄 die 厚度 | 標準晶圓的 **1/25**（與 2026-08-18 官方部落格記錄**交叉一致**） |
+| 支援 HBM 層數 | 12、16 及以上 |
+| HBM 市場 CAGR | 約 20% 中段，至 2030 年代初 |
+| eBeam 量測靈敏度 | sub-10 nm（跨多種基板） |
+
+➜ **兩種讀法並列，本 wiki 不擇一**：（a）獨占地位使其無須押注；（b）AMAT 判斷接合方式仍未收斂，故以量測與製程廣度避險。
+
+### 三、把 fab 級量測下沉到封裝
+
+eBeam sub-10 nm 用於封裝基板。與 **Bruker** 把 AFM（Å 級）／AFP（<10 nm）導入混合接合表面量測，構成**兩個獨立廠商的同向動作** ➜ 佐證本 wiki「量測為第三個結構性瓶頸」的判斷在設備投資端已有對應。

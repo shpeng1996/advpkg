@@ -3,8 +3,8 @@ title: "Besi (BE Semiconductor Industries) — 混合接合設備領導廠商"
 category: entity
 tags: [equipment, hybrid-bonding, die-attach, D2W, TCB, Netherlands]
 created: 2026-04-25
-updated: 2026-09-18
-sources: [2026-03-01_3dincites_besi-packaging-power-shift, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation]
+updated: 2026-09-20
+sources: [2026-03-01_3dincites_besi-packaging-power-shift, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-03-29_damnang_hybrid-bonding-cmp-gating-factor]
 related:
   - wiki/entities/ev-group.md
   - wiki/technologies/hybrid-bonding.md
@@ -122,3 +122,14 @@ Applied Materials 與 Besi 共同開發的 **Kinex** 平台，首次取得量產
 ⚠ 本節數字出自 EE Times 2025-11-21 之設備商導向報導，**未經第三方量測驗證**；「2026 年推出 50 nm 系統」為當時之廠商宣告，尚未經 2026 年獨立來源確認。
 
 來源：[[sources/2025-11-21_eetimes_amat-besi-d2w-hybrid-bonding-hvm]]
+
+## 2026-09-20 collect 更新：Besi 所在的環節不是限制層
+
+兩個獨立來源（Damnang 2026-03-29、NineScrolls 2026-09-04）一致指出混合接合的限制項在**上游 CMP**，不在接合機；SemiconSam（2025-09-18）進一步指出**混合接合專用 CMP 設備由 AMAT 市占 100%**。
+
+➜ 對 Besi 的定位意涵：
+
+1. **Besi（DP-D2W）與 EVG（Co-D2W）所在的接合機環節有多方競爭（另有 ASMPT，Hanmi 預計 2027 加入），而該環節不是 pitch 微縮的限制層。** 本 wiki 既有記錄的 Kinex 量產現況 **100 nm @ 3σ**、2026 新機 50 nm、路線圖 <25 nm 因此應理解為：**在非限制層上持續推進**——這正是 2026-09-19 所指出的「設備商對準路線圖持續推進、量產 pitch 卻不動」現象的成因。
+2. **AMAT 持有 Besi 9% 股權（2025-04）應重新理解為沿限制鏈的縱向布局**：控制限制層（CMP），再參股非限制層（接合機）。本 wiki 先前把該持股理解為「設備商聯盟」。
+
+⚠ 「AMAT 混合接合 CMP 100%」為單一來源主張，待佐證。此段的結論隨該數字成立與否而定。

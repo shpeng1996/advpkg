@@ -3,8 +3,8 @@ title: "Tokyo Electron (TEL) — 東京威力科創"
 category: entity
 tags: [TEL, Tokyo-Electron, equipment, RDL, Eteris, advanced-packaging-equipment, Japan]
 created: 2026-04-26
-updated: 2026-08-05
-sources: [2026-01-23_trendforce_chip-tools-tel-asml]
+updated: 2026-09-20
+sources: [2026-01-23_trendforce_chip-tools-tel-asml, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer]
 related: [wiki/entities/besi.md, wiki/technologies/hybrid-bonding.md, wiki/concepts/advanced-packaging-market.md]
 ---
 
@@ -84,3 +84,25 @@ TEL 在先進封裝設備的定位是 **RDL 製程設備全流程覆蓋**，與 
 - Eteris（TEL+AMAT 合資）的具體產品線與市場定位尚未完全揭露
 - TEL 封裝設備收入是否可分離獨立追蹤（vs 整體前端設備業務）？
 - TEL 熊本研發基地是否針對特定 TSMC 先進封裝製程節點（如 CoPoS RDL、SoIC）？
+
+## 2026-09-20 collect 更新：⭐⭐ TEL 進入接合層「材料」領域，而非只做機台
+
+本 wiki 對 TEL 的既有記錄限於 **RDL 製程設備**、Kumamoto 研發基地（¥470 億，2026 春）與 **Eteris 合資**（與 AMAT）。本輪專利軌首次檢出 TEL 在**接合化學**上的自有布局。
+
+### 專利訊號（2026 年內兩件，發明人重疊）
+
+| 公開號 | family-id | 公開日 | 內容 |
+|--------|-----------|--------|------|
+| **US20260240057A1** | 91080510 | 2026-08-13 | **可熱固化或可光固化的接合層**；施加熱或光，使該層與兩基板分別形成**共價鍵** |
+| **KR20260007564A** | 93215909 | 2026-01-14 | 同一接合界面的**第一／第二區域使用兩種不同的介電材料** |
+
+發明人橫跨美日兩地（Lefevre／Gildea／Madelone 美；Hoshino／Mimura 日；Chae 韓）——**跨區域團隊**。
+
+### 意涵
+
+1. ⭐⭐ **設備商的競爭邊界正在從「機台」移向「機台 + 消耗性材料層」。** 與同輪 AMAT 把 fab 級量測下沉到封裝基板（HyperFRAME 2026-06-28）構成**同方向的兩個獨立實例**。對 OSAT 與 IDM 的意涵：接合製程的價值可能自機台採購轉向材料耗材，改變設備商的營收結構。
+2. ⭐ **「光固化」是能量投遞方式的第四種**（既有三種：外部場加熱整體、內建感受體加熱局部、雙側同時加熱消除梯度）。**以光子而非熱子投遞能量**，本質上不需晶圓整體達到任何溫度。
+3. ⭐ **KR 案的「同一界面、兩種介電材料分區」與 IBM US20260123509A1（鍵結區／導熱區分割）構成同一結構概念的兩個實例** ➜ 接合界面應自「單一材料層」改記為**可分區的設計面**。⚠ TEL 案未說明分區目的。
+4. **「共價鍵結」的明示**把接合機制自「凡得瓦力 → 退火後形成共價鍵」的兩階段敘述，改為由外加能量直接驅動共價鍵形成。若接合層可流動／可固化，初始接觸就不必倚賴奈米級平坦度 ➜ 這是繞過 CMP 限制的候選思路。⚠ 推論，待驗證。
+
+⚠ 兩件摘要**均無量化數值**（無固化溫度、波長、時間、接合強度、pitch），亦未說明是否適用於含金屬的混合接合。**專利為前瞻訊號，非 TEL 已出貨之能力。**

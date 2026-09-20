@@ -3,8 +3,8 @@ title: "CoPoS — Chip-on-Panel-on-Substrate"
 category: technology
 tags: [panel-level-packaging, FOPLP, TSMC, CoPoS, AI, HPC, AP7, InFO]
 created: 2026-04-25
-updated: 2026-09-18
-sources: [2026-04-13_trendforce_copos-pilot, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2025-09-12_trendforce_foplp-competitive-landscape-2025, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-20_wccftech_tsmc-copos-glass-core-cost-cut, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-04-28_cw_tsmc-copos-move-really-means, 2026-06-14_digitaltrends_tsmc-copos-glass-temporary-carrier, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-28_xianfeng_cn122476946a-alignment-mark-protection]
+updated: 2026-09-20
+sources: [2026-04-13_trendforce_copos-pilot, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2025-09-12_trendforce_foplp-competitive-landscape-2025, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-20_wccftech_tsmc-copos-glass-core-cost-cut, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-04-28_cw_tsmc-copos-move-really-means, 2026-06-14_digitaltrends_tsmc-copos-glass-temporary-carrier, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-28_xianfeng_cn122476946a-alignment-mark-protection, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap]
 related:
   - wiki/technologies/cowos.md
   - wiki/entities/tsmc.md
@@ -445,3 +445,10 @@ CoPoS 與 FOPLP 共用面板級 RDL 的製程基礎，故本頁同步記載 2026
 詳見 `technologies/glass-substrate.md` 2026-09-18 更新節。
 
 來源：[[sources/2026-09-11_admt_tgv-laser-koh-etch-25um]]
+
+## 2026-09-20 collect 更新：TSMC 玻璃核心基板量產時程與面板良率差距
+
+- **TSMC 玻璃核心基板量產：2028 年底–2029 年初**（BigGo 2026-06-21），對齊 NVIDIA 次世代 AI 晶片週期。與 wiki 既有記錄（CoPoS 玻璃核心列為 2030+ 里程碑）相比**略為提前**，但來源為聚合型媒體，列為待佐證。
+- **供應鏈**：**Innolux × Ibiden** 開發供 TSMC 的玻璃核心基板，結構為 **玻璃／ABF／玻璃 三層複合**（⚠ 單一來源，本 wiki 既有敘述多以單層玻璃核心理解，列為新空缺）。Innolux 負責玻璃加工——「整個基板中最關鍵的材料」。
+- **面板良率差距首次量化**（Exponential Industry 2026-08-13）：玻璃面板處理良率 **70–85%** vs 成熟有機基板 **>90%**；面板每批次有效封裝面積為 300 mm 晶圓的 **4–6×**。➜ 面板級路線的優勢（面積）與劣勢（良率）首次可並置比較。⚠ 待一手確認。
+- 面板尺寸：標準 510×515 mm、最大 600×600 mm（與 wiki 既有 CoPoS 310×310 mm 為不同世代／不同廠商規格，不可混用）。

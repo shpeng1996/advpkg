@@ -3,8 +3,8 @@ title: "玻璃基板 / Glass Core Substrate"
 category: technology
 tags: [glass-substrate, TGV, panel-level, FC-BGA, CoPoS, Absolics, DNP, Rapidus, warpage, SeWaRe, glass-interposer, BOE, ULCVD, non-embedding, Lens-Technology, TPK-KY, Innolux, AUO, LG-Chem, singulation, patent-signal]
 created: 2026-05-08
-updated: 2026-09-19
-sources: [2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-05-05_trendforce-insights_glass-substrate-development, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-05-29_3dincites_rapidus-2nm-advanced-packaging-ai-foundry, 2026-06-01_trendforce_intel-3dgs-india-glass-substrate, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-06-20_biggo_boe-glass-substrate-pilot, 2026-06-28_economy-ac_glass-substrate-global-race, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-08-18_trendforce_shinko-glass-substrate-22layer-glassem-delay, 2026-09-11_mssp_tgv-glass-biaxial-bending-ring-on-ring, 2026-06-02_intel_ectc2026-emib-t-cpo-glass]
+updated: 2026-09-20
+sources: [2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-05-05_trendforce-insights_glass-substrate-development, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-05-29_3dincites_rapidus-2nm-advanced-packaging-ai-foundry, 2026-06-01_trendforce_intel-3dgs-india-glass-substrate, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-06-20_biggo_boe-glass-substrate-pilot, 2026-06-28_economy-ac_glass-substrate-global-race, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-08-18_trendforce_shinko-glass-substrate-22layer-glassem-delay, 2026-09-11_mssp_tgv-glass-biaxial-bending-ring-on-ring, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-03-13_kaneka_jp2026047137a-glass-core-polyimide-quantified, 2026-08-10_screp_low-k-organic-buffer-tgv-cu-metallization, 2026-08-04_jmrt_vacuum-assisted-void-free-cu-fill-tgv, 2026-07-30_micromachines_tgv-cleanability-surface-tension]
 related:
   - wiki/technologies/copos.md
   - wiki/technologies/foplp.md
@@ -902,3 +902,85 @@ Lau 明確把下列列為**需分別討論**的四組對比，本頁目前經常
 ### 四、玻璃加工能力是三條路線的共用底層（AUO 專利訊號，見 `copackaged-optics.md`）
 AUO CN122043677A 的**貫孔式光學基板**在幾何與製程上與 TGV 屬同一類加工問題。
 ➜ 本 wiki 應把「玻璃／大面積基板加工能力」視為**同時服務 FOPLP、玻璃基板、CPO 三條路線的共用底層**，而非三條獨立路線。
+
+## 2026-09-20 collect 更新：界面賭局出現第三條路；良率差距首次量化；TGV 問題的根因往上游移了兩步
+
+### 一、⭐⭐ 玻璃—銅界面的工程哲學由二分變三分：脫鉤／強化／**緩衝**
+
+2026-09-18 建立的框架是兩條假設相反的路線：**Intel 賭界面必失效（脫鉤：空氣間隙、部分襯層、CTE<11 框架）vs Corning 賭界面可做牢（Ti/Cu 黏著層＋羥基富化＋矽烷官能化）**。本輪出現**第三條**，且由**兩個互不相關的來源獨立收斂**：
+
+| 路線 | 代表 | 做法 |
+|------|------|------|
+| 脫鉤 | Intel | 讓 Cu 與玻璃不要真的黏住（空氣間隙、部分襯層） |
+| 強化 | Corning | 把 Cu/玻璃界面的化學鍵做牢 |
+| **緩衝** ⭐新 | **Kaneka**（JP2026047137A，專利，日本材料商）<br>**KETI／漢陽大學**（10.1038/s41598-026-65922-6，論文，韓國） | **不動界面本身，插入順應性有機層吸收 CTE 失配** |
+
+- **Kaneka**：聚醯亞胺絕緣層，**醯亞胺基濃度 15–38%／內應力 ≤20 MPa／Ra ≤10 nm**。
+- **KETI／漢陽**：low-k 有機緩衝層，O₂ 電漿處理 → 壓合 → 後固化，**不需二次鑽孔**。
+
+➜ 一為日本材料商專利、一為韓國研究機構論文，同一季、同一思路 ➜ **三分法成立。**
+
+### 二、⭐⭐ 玻璃—銅界面黏著首次有絕對數值
+
+| 項目 | 數值 | 來源 |
+|------|------|------|
+| **剝離強度（O₂ 電漿前 → 後）** | **0.327 ± 0.008 → 0.675 ± 0.011 N/mm（+106%）** | KETI／漢陽 |
+| 介電常數／損耗 @28 GHz | 2.384／2.57 × 10⁻³ | 同上 |
+| 熱衝擊耐受 | **500 cycles，−40 ~ 125 °C** 黏著穩定 | 同上 |
+| 絕緣層內應力上限 | ≤20 MPa | Kaneka |
+| 絕緣層 Ra 上限 | ≤10 nm | Kaneka |
+
+➜ 既有界面論述（Intel 五種手段、Corning 矽烷官能化）**全部只有定性描述**。本輪起，「界面能不能做牢」自哲學爭論變成可量測的工程指標，且顯示**單靠 O₂ 電漿前處理即可讓剝離強度翻倍**。
+⚠ KETI 論文之電磁性能為 **HFSS 模擬預測**，非量測；n=3。
+
+### 三、⭐⭐ 障礙首次量化為經濟問題：面板良率 70–85% vs 有機基板 >90%
+
+Exponential Industry（2026-08-13）：
+
+| 項目 | 數值 |
+|------|------|
+| **玻璃面板處理良率（現況）** | **70–85%** |
+| **成熟有機基板良率** | **>90%** |
+| 標準／最大面板 | 510×515 mm／600×600 mm |
+| 玻璃厚度 | 100–500 µm |
+| CTE | ~3 ppm/°C |
+| tan δ／線寬線距 | 0.001–0.003／~2/2 µm |
+| 互連密度 vs 有機 | 10× |
+| 市場 2024 → 2030 | ~$650M → >$8B |
+| 滲透率 | 2027 個位數% → 2030 年代初 30–50% |
+
+➜ 既有障礙論述集中在**技術可行性**與**時程滑動**（Tom's Hardware 2026-08-27：迄今無任何量產設計採用、無客戶正式確認）。**良率差距 5–20 個百分點**，疊加在「成本數倍於 ABF」之上 ➜ **不是做不出來，是做出來不划算**。這比「技術尚未成熟」更能解釋為何時程反覆滑動而非宣告失敗。⚠ 二手彙整內容，良率數字列為**待一手確認**。
+
+### 四、⭐⭐ TGV 問題的根因往上游移了兩步：清洗 → 種子層 → 電鍍
+
+本 wiki 既有的 TGV 空洞論述集中在**電鍍化學與添加劑**。本輪兩篇論文把鏈條往前推：
+
+1. **清洗階段（ARCH, 10.3390/mi17080920）**：空氣中的有機汙染物提高接觸角，阻礙清洗液滲入。**清洗後孔外接觸角恆為 3–4°、與清洗液表面張力無關；孔內接觸角則隨表面張力變化。** 以 27.5 mN/m 清洗後再行無電鍍 Cu → 空洞減少、膜厚變異降低。（TGV：開孔 20 µm／AR 10）
+2. **種子層階段（漢陽／LSIS, 10.1016/j.jmrt.2026.08.005）**：⭐ **反直覺——鍍有金屬的表面比裸玻璃更難潤濕**，先鍍種子層是為了導電，卻降低了後續電鍍液的滲入。
+3. **電鍍階段**：添加劑吸附具質傳依賴性 → 高 AR 孔內**位置相依的沉積速率**。真空輔助潤濕在 **AR 10** 達成無空洞填充，熱衝擊 −55~125 °C／100 cycles 無缺陷。
+
+➜ 兩個橫向結論：
+- **TGV 製程的多數問題本質是高深寬比孔內的潤濕與表面能問題**，而非純材料選擇問題。同輪 KETI 以 O₂ 電漿提升表面能解黏著、ARCH 以降低表面張力解清潔——**同一物理槓桿的兩端**。
+- **製程步驟的順序本身是獨立的設計變數**（種子層降低潤濕性）。與 2026-09-15 JCET「製程順序」測試左移案例同類。
+
+**AR 10** 於本輪三個獨立來源一致出現（Exponential Industry >10:1、ARCH AR 10、漢陽 AR 10）➜ **AR 10 為當前 TGV 的實務工作點**。
+
+### 五、⭐⭐⭐ 代理指標誤差的第五個實例，且是敏感度為零的極端案例
+
+ARCH 的結果把代理量與真實量同時量了出來：**孔外接觸角對孔內狀態的敏感度為零**。產線若以孔外接觸角驗收清洗，將得到 3–4° 的合格結果**無論清洗液是否洗進孔裡**。
+
+➜ 通則（2026-09-18 建立、2026-09-19 擴充為「用錯維度」）再補一條：**代理誤差不只是精度問題；在本例中不是量得不準，是根本量不到。**
+
+### 六、供應鏈與結構：面板雙雄走的是兩條不同的路
+
+BigGo（2026-06-21）：
+
+- **Innolux × Ibiden**：玻璃核心基板供 TSMC，結構為 **玻璃／ABF／玻璃 三層複合**（⚠ 單一來源，本 wiki 既有敘述多以單層玻璃核心理解；若成立會影響 CTE 與翹曲分析，**列為新空缺**）。Innolux 負責玻璃加工。
+- **AUO ≠ 基板**：AUO **不做玻璃核心基板**，改與 **Ennostar** 合作提供 **CPO 的光通訊解決方案（零件）**。
+- TSMC 玻璃核心基板量產：**2028 年底–2029 年初**，對齊 NVIDIA 次世代週期。成本數倍於 ABF。
+
+- **Kaneka**（日本化學材料商，聚醯亞胺薄膜）為本 wiki 全新供應鏈參與者，屬**介電／絕緣層**層級，與原玻璃端（Corning／AGC／SCHOTT／NEG）與加工端（Absolics／Samsung EM／LG Innotek）分屬不同層。
+
+### 七、列管空缺「玻璃 → PCB 的 CTE 失配」首次可計算
+
+玻璃 ~3 ppm/°C、矽 ~2.6–3（匹配良好）、PCB 通常 14–17 ➜ **下游失配約 11–14 ppm/°C，全部由最下游銲點吸收**。與 Lau（2026-09-15）「CTE 是兩端受夾的變數」合併後，該空缺自「無條目」進入「有量級」。同輪 KAIST／Samsung 論文（10.1016/j.jmrt.2026.09.095）雖為有機 PCB，提供了該層級的**分析框架與失效集中點（邊緣銲點面外剪應力）**，可作對照基線。

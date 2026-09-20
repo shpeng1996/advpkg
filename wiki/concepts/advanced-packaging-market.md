@@ -3,8 +3,8 @@ title: "先進封裝市場 / Advanced Packaging Market"
 category: concept
 tags: [market, forecast, CAGR, supply-chain, HBM, chiplet, geopolitics, equipment, SIA, Omdia, Yole, WFE, substrate-market, framework]
 created: 2026-04-24
-updated: 2026-09-17
-sources: [2026-07-31_semieng_chip-week-149, 2026-04-24_initial-survey, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2026-01-23_trendforce_chip-tools-tel-asml, 2026-03-05_trendforce_intel-emib-billions, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2025-12-18_trendforce_micron-capex-hbm4, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2025-05-13_trendforce_top10-osat-2024, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-04-16_ontoinnovation_dragonfly-g5-qualified, 2026-06-23_communicationstoday_foplp-glass-substrate-market-8b-2030, 2026-06-29_trendforce_china-osat-tongfu-jcet-investment, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-26_semieng_chip-week-144, 2026-07-01_trendforce_ase-price-hike-20pct, 2026-07-04_semieng_chip-week-145, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-07-03_trendforce_anthropic-samsung-advanced-packaging, 2026-05-08_trendforce_ajinomoto-abf-1b-land-buy-2032-margins, 2026-07-24_semieng_chip-week-148, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-08-06_siliconbox_500m-units-panel-scale, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry]
+updated: 2026-09-20
+sources: [2026-07-31_semieng_chip-week-149, 2026-04-24_initial-survey, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2026-01-23_trendforce_chip-tools-tel-asml, 2026-03-05_trendforce_intel-emib-billions, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2025-12-18_trendforce_micron-capex-hbm4, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2025-05-13_trendforce_top10-osat-2024, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-04-16_ontoinnovation_dragonfly-g5-qualified, 2026-06-23_communicationstoday_foplp-glass-substrate-market-8b-2030, 2026-06-29_trendforce_china-osat-tongfu-jcet-investment, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-26_semieng_chip-week-144, 2026-07-01_trendforce_ase-price-hike-20pct, 2026-07-04_semieng_chip-week-145, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-07-03_trendforce_anthropic-samsung-advanced-packaging, 2026-05-08_trendforce_ajinomoto-abf-1b-land-buy-2032-margins, 2026-07-24_semieng_chip-week-148, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-08-06_siliconbox_500m-units-panel-scale, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly]
 related:
   - wiki/entities/tsmc.md
   - wiki/entities/sk-hynix.md
@@ -816,3 +816,23 @@ TSMC 於 2026-09-02 宣布在**高雄白埔工業園區**設立 **3 公頃**先�
 📌 這不是單一技術的演進，而是**整條價值鏈對同一約束的分散式回應**——本 wiki 觀察到的第二個此類現象（第一個為 2026-09-16 的「環境法規重塑核心單元製程」）。列為常駐 collect 主題。
 
 **來源**：[[sources/2026-09-02_focustaiwan_tsmc-kaohsiung-baipu-packaging-hub]]、[[sources/2025-01-14_semieng_known-good-interposer-screening]]、[[sources/2025-07-10_semieng_advanced-packaging-reshaping-inspection]]、[[sources/2026-08-01_jfap_3dic-failure-analysis-dfa]]
+
+## 2026-09-20 collect 更新：玻璃／FOPLP 市場規模與設備層集中度
+
+### 一、玻璃基板與 FOPLP 市場
+
+| 項目 | 數值 | 來源 |
+|------|------|------|
+| 玻璃基板市場 2024 | ~$650M | Exponential Industry 2026-08-13 |
+| 玻璃基板市場 2030 | **>$8B** | 同上；Counterpoint（2026-06-22）獨立給出「FOPLP 與玻璃基板 2030 超過 $8B」 |
+| 滲透率 | 2027 個位數% → 2030 年代初 **30–50%** | Exponential Industry |
+| 商業量產起點 | 2027–2028 | 同上 |
+| **面板良率 vs 有機基板** | **70–85% vs >90%** | 同上 |
+
+⚠ 兩個來源的「$8B by 2030」定義不同（Exponential：玻璃基板；Counterpoint：FOPLP + 玻璃基板合計），**不可視為互相佐證**，僅記為量級相近。Counterpoint 正文付費牆，僅標題可得。
+
+### 二、⭐ 設備層集中度：限制製程由單一供應商掌握
+
+SemiconSam（2025-09-18）：**混合接合專用 CMP 設備 AMAT 市占 100%**（整體 CMP 60%）；Ebara、KC Tech 無實績。
+
+➜ 與本 wiki 2026-09-19 確立的「pitch 微縮的第一限制是 CMP／表面製備」相乘，得到一個供應鏈結構性結論：**先進封裝最關鍵製程環節的產能與能力上限，由單一設備商決定。** 對照接合機環節有三家競爭（Besi／EVG／ASMPT，另 Hanmi 預計 2027 加入）——**競爭強度與限制程度恰好相反。** ⚠ 「100%」為單一來源主張，待佐證。
