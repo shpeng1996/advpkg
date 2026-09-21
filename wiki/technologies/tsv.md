@@ -3,7 +3,7 @@ title: "TSV — Through-Silicon Via / 矽穿孔"
 category: technology
 tags: [TSV, HBM, interposer, 3D-IC, CoWoS, manufacturing, backside-power, advanced-packaging, radiation, redundancy, reliability]
 created: 2026-08-10
-updated: 2026-09-20
+updated: 2026-09-21
 sources: [2026-04-22_semieng_tsv-complexity-manufacturing-bottleneck, 2026-08-21_semieng_chip-week-152, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-08-21_scirep_copper-oxide-reduction-ar-h2-pulsed-plasma, 2026-06-08_irtnanoelec_d2w-hybrid-bonding-1um-pitch, 2026-03-13_kaneka_jp2026047137a-glass-core-polyimide-quantified, 2026-08-10_screp_low-k-organic-buffer-tgv-cu-metallization, 2026-08-04_jmrt_vacuum-assisted-void-free-cu-fill-tgv, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring]
 related:
   - wiki/technologies/hbm4.md
@@ -325,3 +325,39 @@ JP2026047137A：聚醯亞胺絕緣層覆蓋貫孔側壁導電層，限定 **醯�
 | **有效數據率** | **>80%** |
 
 ⚠ 為晶圓減薄一般製程，非專為先進封裝設計；與 HBM／SoIC 實際薄化條件未直接對應。
+
+---
+
+## 2026-09-21 collect 更新：深孔量測是訊號預算問題；Ru 作為填充金屬使研磨從流程中消失
+
+### 一、⭐⭐⭐ TSV 陣列深度均勻度的量測，不確定度等於待測變異
+
+**天津大學（Optics & Laser Technology, 2026-09-19）**：10 GHz 電光雙梳飛時測距，重複頻率差 5 MHz、2000 次相干平均。
+
+| 量 | 值 |
+|----|-----|
+| 對雷射干涉儀校正 | 0.4 mm 量程 **RMS 殘差 79.7 nm** |
+| 樣品 | **5×5 TSV 子陣列**，孔徑 **≈10 µm** |
+| 子陣列平均深度 | **109.88 µm**（AR ≈ 11） |
+| 單一 TSV **重複量測標準差** | **≈ 2.18 µm** |
+| 跨子陣列**標準差** | **2.15 µm** |
+
+➜ **2.18 ≈ 2.15**：此配置無法區分「陣列真的不均勻」與「量測在抖」。詳見 [[concepts/test-metrology-packaging]]。
+
+➜ ⭐ **機制：孔底光回訊隨孔徑下降、深寬比上升而急遽衰減。** 與 Onto 的 TGV「需同時量頂／腰／底三個 CD」對照——**越深的孔，越靠近底部的資訊越貴。深孔量測的困難是訊號預算問題，不是解析度問題。** 這也解釋了為何深孔製程特別容易出現「代理指標完全脫鉤」型失效（ARCH：孔外接觸角對孔內清洗狀態零敏感）：**孔內直接量測太貴，產線被迫使用孔外代理量。**
+
+➜ 📌 本頁既有的 TSV 幾何記錄（HBM TSV 2–5 µm/30–60 µm；矽中介層 TSV 5–20 µm/80–120 µm）**均未附量測重複性**，依本輪新訂作業規範標為 ⚠ 待補。
+
+### 二、⭐⭐ nTSV：Ru 填充使研磨自流程中消失
+
+**復旦大學等（Chip, 2026-09-01）**：Ru 基埋入式電源軌（BPR）與 **nTSV** 原位共整合。
+
+- **Ru** 同時作 BPR 與 nTSV 填充金屬（化學穩定性佳）
+- **自對準蝕刻**使 nTSV 直接成形於 BPR 上，**消除關鍵套刻限制**
+- **ALD 無孔洞保形 Ru 金屬化，不需獨立擴散阻障層**
+- ⭐ **以離子束回蝕（ion-beam thinning-back）取代研磨**達成 Ru 精確凹陷——原文明言係為克服該硬質金屬的研磨困難
+- 線電阻 **11.4 – 11.8 Ω/µm**；電遷移經評估並建立多物理模型
+
+➜ 本頁既有的 **NanoTSV（<100 nm，2nm+ 背面供電）**條目首次取得具體的**金屬化與凹陷方案**。
+➜ ⭐⭐ 更重要的推論見 [[technologies/hybrid-bonding]]：**「CMP 是 pitch 微縮第一限制」這句話綁定於 Cu 金屬化**；金屬換成 Ru／Co 等難研磨金屬時，限制層會平移到回蝕均勻度與 ALD 保形性。
+⚠ 本件屬 BSPDN／nTSV，尺度介於前段與中段之間，**不是封裝級 TSV（2–5 µm）或中介層 TSV（5–20 µm）**，結論不可直接類比。

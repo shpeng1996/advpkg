@@ -3,8 +3,8 @@ title: "混合接合 / Hybrid Bonding"
 category: technology
 tags: [3D, hybrid-bonding, Cu-Cu, SoIC, ECTC, advanced-packaging, DRAM, COP, 4F2, Sn-damascene, damascene-interconnect, PFAS-free, patent-signal, guard-ring, surface-activation]
 created: 2026-04-24
-updated: 2026-09-20
-sources: [2026-05-21_semiecosystem_ectc2026-cpo-hybridbonding-plp, 2026-04-24_initial-survey, 2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-03-01_3dincites_besi-packaging-power-shift, 2026-01-13_semiengineering_hbm4-microbumps, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-19_semieng_advanced-packaging-limits, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-03-27_3dincites_copper-grain-hybrid-bonding, 2026-03-02_semieng_making-hybrid-bonding-better, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2026-04-29_semiwiki_cea-leti-ectc2026-hybrid-bonding, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2024-02-09_semianalysis_hybrid-bonding-process-flow, 2026-05-19_semiconductor-digest_ev-group-ectc2026-hybrid-bonding, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-04-19_semiwiki_apple-m5-cucu-hybrid-bonding-shipped, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-18_imec_iii-v-chiplet-rf-laser-bonding, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-29_evgroup_ectc2026-hybrid-bonding-layer-transfer, 2026-06-29_thelec_skhynix-hybrid-bonding-equipment-order, 2026-06-05_semieng_intel-ectc-2026-emib-t-cpo-glass, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-14_trendforce_samsung-hbm-hiring-hybridbonding, 2026-07-16_semieng_fine-pitch-hb-high-volume, 2026-07-16_semieng_alt-materials-hybrid-bonding, 2026-06-08_irtnanoelec_d2w-hybrid-bonding-1um-pitch, 2026-05-28_imec_w2w-hybrid-bonding-200nm-pitch, 2026-09-09_acsaelm_microwave-anneal-cu-cu-150c-3min, 2026-08-21_scirep_copper-oxide-reduction-ar-h2-pulsed-plasma, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-03-29_damnang_hybrid-bonding-cmp-gating-factor, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-04-02_adeia_us20260096463a1-buildup-organic-dielectric-bonding, 2026-07-17_jcet_cn122421815a-asymmetric-bonding-interface, 2026-04-30_seoultech_us20260123559a1-hydrocarbon-plasma-low-temp-bonding, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer]
+updated: 2026-09-21
+sources: [2026-05-21_semiecosystem_ectc2026-cpo-hybridbonding-plp, 2026-04-24_initial-survey, 2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-03-01_3dincites_besi-packaging-power-shift, 2026-01-13_semiengineering_hbm4-microbumps, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-19_semieng_advanced-packaging-limits, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-03-27_3dincites_copper-grain-hybrid-bonding, 2026-03-02_semieng_making-hybrid-bonding-better, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2026-04-29_semiwiki_cea-leti-ectc2026-hybrid-bonding, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2024-02-09_semianalysis_hybrid-bonding-process-flow, 2026-05-19_semiconductor-digest_ev-group-ectc2026-hybrid-bonding, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-04-19_semiwiki_apple-m5-cucu-hybrid-bonding-shipped, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-18_imec_iii-v-chiplet-rf-laser-bonding, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-29_evgroup_ectc2026-hybrid-bonding-layer-transfer, 2026-06-29_thelec_skhynix-hybrid-bonding-equipment-order, 2026-06-05_semieng_intel-ectc-2026-emib-t-cpo-glass, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-14_trendforce_samsung-hbm-hiring-hybridbonding, 2026-07-16_semieng_fine-pitch-hb-high-volume, 2026-07-16_semieng_alt-materials-hybrid-bonding, 2026-06-08_irtnanoelec_d2w-hybrid-bonding-1um-pitch, 2026-05-28_imec_w2w-hybrid-bonding-200nm-pitch, 2026-09-09_acsaelm_microwave-anneal-cu-cu-150c-3min, 2026-08-21_scirep_copper-oxide-reduction-ar-h2-pulsed-plasma, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-03-29_damnang_hybrid-bonding-cmp-gating-factor, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-04-02_adeia_us20260096463a1-buildup-organic-dielectric-bonding, 2026-07-17_jcet_cn122421815a-asymmetric-bonding-interface, 2026-04-30_seoultech_us20260123559a1-hydrocarbon-plasma-low-temp-bonding, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer, 2023-09-13_nccavs_intel-cmp-dishing-requirement-vs-achieved, 2026-03-11_epo_adeia-cmp-for-hybrid-bonding-patent, 2026-09-01_chip_ru-bpr-ntsv-ion-beam-recess, 2026-02-10_epo_shanghai-univ-citric-acid-cu-reduction-sog, 2026-09-21_semiconductorx_cmp-share-lam-sabre-correction, 2026-09-16_jsandwich_cucu-diameter-nonmonotonic-local-optimum, 2026-07-21_lam_sabre-3d-is-ecd-not-cmp]
 related:
   - wiki/technologies/soic.md
   - wiki/technologies/cowos.md
@@ -1348,3 +1348,81 @@ Damnang 給出分段值：**CIS 應用 ~200 nm；邏輯／HPC <100 nm**。
 - **首爾科技大學**（韓，學界）：學界直接專利化製程。
 
 📌 **「接合界面為均質單層」的既有隱含假設已被兩件專利挑戰**：IBM US20260123509A1 在同一接合區分割鍵結區／導熱區；TEL KR20260007564A 在同一界面分區使用兩種不同介電材料。➜ 接合界面應自「單一材料層」改記為**可分區的設計面**。
+
+---
+
+## 2026-09-21 collect 更新：規格 vs 實績的落差首次量化；CMP 限制論取得最強支持，同時取得第一個邊界條件
+
+### 一、⭐⭐⭐ 產線實績落在規格窗之外，靠重工補救——「限制鏈」的第①層尚未達標
+
+**Intel 製程工程師 G. Bahar Basim（NCCAVS CMP User Group, 2023-09-13）**首次提供「需求 vs 實績」的對照：
+
+| 項目 | 數值 |
+|------|------|
+| Cu dishing **需求** | **1–5 nm**（搭配 ~400 °C 退火） |
+| Cu recess **實績** | **5–25 nm**（首道 CMP 後或**單次重工後**） |
+| 退火前 Cu–Cu 間隙 | **9–47 nm** |
+| SiCN 粗糙度 | **RMS 0.10 nm**（可達成） |
+| Cu 熱膨脹 | **1 nm / mm / 50 °C** |
+| POR Cu CMP 時間 | >20 min |
+
+➜ **2026-09-19 建立的限制鏈需要修正一個字。** 既有表述為：①表面平坦度 ~0.2 nm > ②die 翹曲 <100 nm > ③機台對準 100 nm，「第一限制比機台對準嚴格 500 倍且不在設備側」。本件顯示**第①項在產線上不是「已達標但不夠」，而是「尚未穩定達標，需重工」**——實績上限 25 nm 是規格上限 5 nm 的 **5 倍**。這把 2026-09-18 所列候選限制項中的「**良率經濟／每顆 die 的重工成本**」首次與製程數值連上：pitch 微縮受限，不只因為規格難，更因為**達標率低到需要重工，而重工成本隨 die 價值上升**。
+
+➜ **SiCN RMS 0.10 nm 與 Bruker AN-5001 的 Rq 0.1–0.2 nm 相互獨立吻合**（相隔三年、不同來源、不同量測方）。該數值自「單一一手來源」升為**已交叉確認**。
+
+⚠ **本件日期為 2023-09**，比本 wiki 目前主要數據早約三年，「實績 5–25 nm」應視為**基準線**而非現況。**列為新空缺：2026 年的 Cu recess 實績為何？**
+
+📌 **附帶推導（本 wiki 自行計算，非原文）**：以 5 µm 厚 Cu 墊、室溫→400 °C（ΔT ≈ 375 °C）估算，軸向膨脹 ≈ 5 µm × 1 nm/mm/50 °C × 7.5 ≈ **37 nm**，恰落在退火前間隙 9–47 nm 區間內且**上緣幾無餘裕**。➜ 這解釋了為何 recess 一旦偏大無法用更高溫補救：**HBM 的 775 µm／熱預算上限把 ΔT 鎖死**，而膨脹量與 ΔT 成正比。本 wiki 的「775 µm 天花板」與「CMP recess 規格」兩條論述在此首次以物理量連成同一條約束。
+
+### 二、⭐⭐⭐ CMP 限制論取得第三個獨立支持，且形式最強：Adeia 把 CMP 本身寫成專利標題
+
+**Adeia EP4709132A2「CHEMICAL MECHANICAL POLISHING FOR HYBRID BONDING」（2026-03-11，family 65808955）**
+
+技術內容：沉積介電層 → **阻障層** → 導電結構；**先研磨導電結構直到露出介電層上的阻障層，再以選擇性研磨研磨阻障層，露出介電層上的接合面**。即把「一次同時研磨 Cu 與介電層」拆成**兩段，中間以阻障層作為停止層**。
+
+- ⭐ **機制詮釋（本 wiki 推論，摘要未述）**：Cu dishing 的根本困難在 Cu 與介電層研磨速率不同、終點靠時間與選擇比拿捏。夾入一層停止層後，終點改由**阻障層厚度均勻度**決定——**把奈米級高度控制問題轉換為薄膜沉積厚度控制問題**，而後者是成熟得多的能力。**列為新空缺待佐證。**
+- **一家以界面 IP 授權為商業模式的公司，把排他權擴張到製程的哪個環節，是其對「價值卡在哪裡」的直接下注。** 既有兩個支持（Damnang 2026-03-29、SemiconSam 2025-09-18）皆為產業評論；本件是第一個具法律排他性的形式。
+- ⚠ **修正 2026-09-20 對 Adeia 的單向讀法。** 當時記為「Adeia 的 PHB 方案要求 CMP 同時平坦化三種材料，可能反而**加重**限制層負擔」。本件方向相反（**減少**同時研磨的材料數）。➜ 這不是策略矛盾，而是**圍籬式布局跨越技術路線**：Adeia 同時圈住「介電層換成有機物」與「維持無機介電層但改變研磨停止機制」兩條路。本 wiki 2026-09-20 已就其 PHB 三件案觀察到圍籬模式，本輪使該模式自「同一路線內」擴及「不同路線之間」。
+- ⚠ family 65808955 為既有大家族之 **EP 分割案（A2）**，優先權日應早於 2026 年，**不可讀為「2026 年才出現的新想法」**。
+
+### 三、⭐⭐⭐ CMP 限制論的第一個邊界條件：該論述綁定於 Cu
+
+**復旦大學等，《Chip》2026-09-01：Ru 基 BPR 與 nTSV 原位共整合**
+
+- Ru 同時作 BPR 與 nTSV 填充金屬；ALD 達成無孔洞保形金屬化**且不需獨立擴散阻障層**；線電阻 **11.4–11.8 Ω/µm**。
+- ⭐ **以離子束回蝕（ion-beam thinning-back）取代研磨達成 Ru 凹陷**，原文明言係為「克服該硬質金屬的研磨困難」。
+
+➜ 既有三個「繞過／重分配 CMP」的思路（JCET 不對稱接合面、TEL 可固化共價層、本輪 Adeia 阻障停止層）都仍在 CMP 框架內重分配難度；本件是**第四個，也是唯一把 CMP 整個拿掉的**——而且不是為了繞過限制，是**因為材料根本磨不動**。
+
+➜ **論述加註邊界：「pitch 微縮的第一限制是 CMP」綁定於 Cu 金屬化。** 若接合／互連金屬自 Cu 轉向 Ru、Co 等難研磨金屬，限制層會平移（回蝕均勻度、ALD 保形性）。這同時**軟化 2026-09-20 提出的供應鏈風險論述**——「整條產業的 pitch 速率由一家 CMP 設備商決定」只在 Cu 路線持續時成立。
+⚠ 本件屬 BSPDN／nTSV，尺度介於前段與中段之間，**不是封裝級界面**；上述邊界條件推論強度中等，**列為新空缺待更貼近封裝的實例佐證**。
+
+➜ 附帶：**「自對準消除套刻限制」與「提升對準演算法」是兩條相反的解法。** 對準不足時，一條是把對準做得更準（BW-STAR、Besi 100→50→<25 nm），另一條是**讓製程不需要對準**。本 wiki 此前只追蹤前者。**建議新增追蹤：3D 整合中的自對準製程。**
+
+➜ 列管空缺「Co 作為接合金屬的第二個來源」**不結清但應改寫**為更廣的「**後 Cu 互連金屬（Co／Ru）在 3D 整合與封裝界面的落點**」。
+
+### 四、⭐⭐ Cu 氧化物：一個繞過「相門檻」提問方式的答案
+
+**上海大學 CN121511008A（2026-02-10）**：光阻圖案化 → Ti/Cu → 剝離 → **旋塗玻璃（SOG）** → **CMP** → **Ar/H₂ 電漿活化（去有機物、SOG 羥基化，但 Cu 氧化物未徹底還原）** → **檸檬酸浸泡（進一步還原 Cu，同時增強 SOG 親水性）** → 對準接合 → 退火。
+
+1. ⭐⭐⭐ **對列管空缺「惰性／真空退火環境下 Cu 墊的氧化相門檻」給出不同類的答案。** 既有記錄（IBM/RPI）是空氣環境的 250 °C CuO 門檻，本 wiki 列為「需惰性環境對照」。本件的立場**繞過該提問**：Ar/H₂ 電漿活化本身就不足以還原 Cu 氧化物，故再加一道**濕式化學還原**。➜ 若成立，Cu 氧化物**不是退火階段的相變問題，而是接合前表面製備的殘留問題**，手段是化學而非熱。**該空缺的提問方式應修正**：不是「多少溫度生成哪一相」，而是「接合當下表面還剩多少氧化物，用什麼除掉」。
+2. ⭐⭐ **一道製程同時滿足兩個方向相反的表面需求。** 混合接合的根本困難是**同一平面上金屬面要求無氧化物、介電面要求羥基化**；檸檬酸同時做到兩者，為本 wiki 首見。➜ 呼應「限制項不在最後那台機器上」：此處限制既不在接合機也不在 CMP，而在 **CMP 之後、接合之前的表面化學窗口**。
+3. ⭐ **以 SOG 作為接合介電層**（可旋塗、可 CMP、可羥基化）。與 PHB 同屬「更換需要溫度的那一層」，但材料選在**無機側**。➜ PHB 論述應擴寫為「**接合介電層的材料選擇正在被重新打開**」，含有機（Toray／Adeia／JCET）與無機非 CVD（SOG）兩分支。
+⚠ 實驗室製程（Ti/Cu 蒸鍍＋剝離）不具量產性；無 pitch、無強度、無溫度數值。
+
+### 五、⭐⭐ 最高優先空缺查證結果：負面，但產出一條作業規則
+
+2026-09-20 列為最高優先的「查證 AMAT 混合接合 CMP 市占 100%」，本輪**未能佐證亦未能否證**。
+
+- SemiconductorX 稱 **AMAT CMP 全球市占 ~70%、Ebara ~25%**，與 SemiconSam 的「整體 60%」**不一致**；兩者皆無引用、無日期，**彼此無法互相佐證**。
+- ❌ 同頁另稱「**Lam SABRE 3D CMP platform 專門定位於混合接合表面製備**」，經 Lam 官方產品頁與官方部落格（2026-07-21）**否證**——SABRE 3D 為**電化學沉積（ECD）平台**，兩份官方文件皆未提及 CMP 或混合接合。旁證：SemiEng（2022-07-21）設備商列表把 Lam 列為 "copper plating platforms"、Onto 列為 "CMP solutions"。
+- ➜ **空缺維持開啟，並提高證據門檻**：只接受 AMAT 法說會逐字稿、SEMI 設備出貨統計，或 AMAT／Ebara／KC Tech 任一方的正式出貨宣告。
+- ➜ ⭐⭐ **本 wiki 的論述應拆成兩句**：**「CMP 是限制層」——四個獨立來源支持（Damnang、SemiconSam、SemiconductorX、Adeia 專利），可保留**；**「該限制層由單一供應商獨占」——單一來源，維持待證。**
+- ➜ ⭐ **新作業規則（本輪成立）**：**凡「某公司的某產品做某製程」之敘述，一律以該公司官網產品頁複核後方可入庫。** 本輪即依此攔下一次誤記。詳見 [[sources/2026-09-21_semiconductorx_cmp-share-lam-sabre-correction]]。
+
+### 六、通則更新：「關鍵參數不是單調的」增至第六例，且首次出現在幾何參數
+
+**USM × Intel（J. Sandwich Struct. Mater., 2026-09-16）**：Cu–Cu 互連直徑 10→18 µm，翹曲峰值 0.62043→0.55574 µm、疲勞壽命 1.29×10⁶→3.97×10⁶ cycles（**皆單調**），但**最低最大拉應力落在 14 µm、最佳整體力學平衡落在 16 µm**（**非單調**）。
+
+➜ 通則的更精確形式：**同一設計變數對不同失效模式的最佳值不同；「最佳值」只在指定失效模式後才存在。**
+⚠ 10–18 µm 屬 microbump／Cu pillar 尺度，**不可外推至混合接合 6–9 µm pad pitch**；純 FEM。

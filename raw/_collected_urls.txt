@@ -548,3 +548,17 @@
 2026-09-20 | https://doi.org/10.3390/mi17080920 | raw/papers/2026-09-20_openalex_tgv-cleanability-surface-tension-contact-angle.md | TGV cleanability: outside angle blind to inside state
 2026-09-20 | https://doi.org/10.1016/j.jmrt.2026.09.095 | raw/papers/2026-09-20_openalex_double-sided-dram-sequential-reflow-warpage-stress.md | Warpage net +8.6% but PCB stress +30.5% (Samsung)
 2026-09-20 | https://doi.org/10.1016/j.ymssp.2026.114971 | raw/papers/2026-09-20_openalex_in-situ-wafer-thinning-thickness-monitoring-3um.md | In-situ wafer thinning endpoint 3um, dev <0.5um
+2026-09-21 | https://semiconductorx.com/wfe-cmp.php | raw/articles/2026-09-21_semiconductorx_cmp-equipment-share-lam-sabre-correction.md | AMAT 70%/Ebara 25% CMP; Lam SABRE claim disproved
+2026-09-21 | https://nccavs-usergroups.avs.org/wp-content/uploads/2023/09/JointUG923-5-BasimGB.pdf | raw/articles/2023-09-13_nccavs_intel-cmp-challenges-hybrid-wafer-bonding.md | Intel CMP: need 1-5nm dishing, achieve 5-25nm recess
+2026-09-21 | https://ontoinnovation.com/resources/through-the-glass-why-the-rapid-development-of-tgv-demands-rigorous-analysis/ | raw/articles/2025-10-06_onto_tgv-metrology-rigorous-analysis.md | Onto TGV inspection: top/waist/bottom CD, LIDE <3um
+2026-09-21 | https://newsroom.lamresearch.com/blog-sabre-3d-advanced-packaging-interconnects | raw/articles/2026-07-21_lamresearch_sabre-3d-ecd-advanced-packaging.md | Lam primary: SABRE 3D is ECD not CMP
+2026-09-21 | EPO:65808955:EP4709132A2 | raw/patents/2026-03-11_EP4709132A2_adeia-cmp-for-hybrid-bonding.md | Adeia claims CMP itself: barrier as polish stop
+2026-09-21 | EPO:97388424:US20260123495A1 | raw/patents/2026-04-30_US20260123495A1_absolics-glass-substrate-eluted-impurity-spec.md | Absolics glass: P<=1500ppb, Zn<=500ppb, ICP-MS in claim
+2026-09-21 | EPO:97388510:US20260123487A1 | raw/patents/2026-04-30_US20260123487A1_absolics-rdl-cu-grain-aspect-ratio-symmetry.md | Absolics: upper/lower RDL Cu grain ratio C/D 0.85-0.99
+2026-09-21 | EPO:100312438:US20260186421A1 | raw/patents/2026-07-02_US20260186421A1_onto-hybrid-photolithography-direct-write-panel.md | Onto: projection >=1um 50x50mm field + direct write <1um
+2026-09-21 | EPO:98673370:CN121511008A | raw/patents/2026-02-10_CN121511008A_shanghai-univ-citric-acid-cu-reduction-sog-bonding.md | Citric acid reduces Cu oxide and hydrophilises SOG
+2026-09-21 | https://imapsjmep.org/article/169986.pdf | raw/papers/2026-09-15_imapspdf_lau-glass-packaging-FULLTEXT-panel-economics.md | FULLTEXT upgrade of 2026-09-19 DOI 10.4071/001c.169986 (was abstract-only)
+2026-09-21 | https://doi.org/10.1177/10996362261490182 | raw/papers/2026-09-16_openalex_cu-cu-interconnect-diameter-nonmonotonic-reliability.md | Cu-Cu diameter: global monotonic, local optimum 14-16um
+2026-09-21 | https://doi.org/10.1016/j.optlastec.2026.116419 | raw/papers/2026-09-19_openalex_tsv-depth-metrology-dual-comb-tof.md | TSV depth: repeatability 2.18um vs array sigma 2.15um
+2026-09-21 | https://doi.org/10.1016/j.chip.2026.100222 | raw/papers/2026-09-01_openalex_ru-buried-power-rail-ntsv-cointegration.md | Ru BPR+nTSV: ion-beam recess replaces CMP; 11.4-11.8 ohm/um
+2026-09-21 | https://doi.org/10.1021/acsomega.6c07277 | raw/papers/2026-09-19_openalex_polyimide-laser-ablation-patterning-taper.md | PI laser ablation: inverted trapezoid, top 6.4um wider

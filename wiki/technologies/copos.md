@@ -3,7 +3,7 @@ title: "CoPoS — Chip-on-Panel-on-Substrate"
 category: technology
 tags: [panel-level-packaging, FOPLP, TSMC, CoPoS, AI, HPC, AP7, InFO]
 created: 2026-04-25
-updated: 2026-09-20
+updated: 2026-09-21
 sources: [2026-04-13_trendforce_copos-pilot, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2025-09-12_trendforce_foplp-competitive-landscape-2025, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-20_wccftech_tsmc-copos-glass-core-cost-cut, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-04-28_cw_tsmc-copos-move-really-means, 2026-06-14_digitaltrends_tsmc-copos-glass-temporary-carrier, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-28_xianfeng_cn122476946a-alignment-mark-protection, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap]
 related:
   - wiki/technologies/cowos.md
@@ -452,3 +452,21 @@ CoPoS 與 FOPLP 共用面板級 RDL 的製程基礎，故本頁同步記載 2026
 - **供應鏈**：**Innolux × Ibiden** 開發供 TSMC 的玻璃核心基板，結構為 **玻璃／ABF／玻璃 三層複合**（⚠ 單一來源，本 wiki 既有敘述多以單層玻璃核心理解，列為新空缺）。Innolux 負責玻璃加工——「整個基板中最關鍵的材料」。
 - **面板良率差距首次量化**（Exponential Industry 2026-08-13）：玻璃面板處理良率 **70–85%** vs 成熟有機基板 **>90%**；面板每批次有效封裝面積為 300 mm 晶圓的 **4–6×**。➜ 面板級路線的優勢（面積）與劣勢（良率）首次可並置比較。⚠ 待一手確認。
 - 面板尺寸：標準 510×515 mm、最大 600×600 mm（與 wiki 既有 CoPoS 310×310 mm 為不同世代／不同廠商規格，不可混用）。
+
+---
+
+## 2026-09-21 collect 更新：310 × 310 mm 首次取得「為何是這個尺寸」的獨立論證
+
+**John H. Lau（IMAPS JMEP, 2026-09-15，OA 全文）**明確建議 **310 × 310 mm**：
+
+> "The 310mm × 310 mm format strikes a critical balance for HPC and data centers in AI era: it is large enough to capture the area efficiency (cost) and small enough to maintain the processing control (yield)."
+
+➜ 本頁此前只記錄 TSMC CoPoS 採 310×310 mm 的**事實**；本輪首次取得**理由**，且來自 TSMC 之外的獨立作者。
+
+➜ 支撐該建議的量化根據（詳見 [[technologies/foplp]]）：600×600 mm 面板的 pick-and-place 時間為 300 mm 晶圓的 **5.3×**，壓縮成型設備閒置率達 **94%**（2 mm 晶粒）——**面板的面積優勢（4–6×）被逐件處理時間幾乎完全抵銷**。
+
+➜ ⭐ **此論證隱含地把 510×515 mm 與 600 mm 陣營（Powertech PiFO、CFMEE PLP 2000、Rapidus）置於需要辯護的位置**：他們承擔額外的吞吐與良率代價，換取更多面積。本 wiki 目前**沒有該陣營對吞吐量問題的任何公開回應**，**列為新空缺**。
+
+⚠ 單一作者觀點，數字出自模擬；作者現職列為 Micron。
+
+**補充（Onto US20260186421A1, 2026-07-02）**：封裝級投影微影 field size **至少 50 × 50 mm** ➜ 310×310 mm 面板約需 **≈36 次**曝光，600×600 mm 約 **144 次**——曝光次數隨面積線性成長，是「大面板未必更快」的第二個機制。

@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-09-20
-**頁面總數 Total Pages**：575
-**原始來源數 Sources**：523（含 8 個合併轉向頁）
+**更新時間 Updated**：2026-09-21
+**頁面總數 Total Pages**：589
+**原始來源數 Sources**：536（含 8 個合併轉向頁）
 
 ---
 
@@ -14,6 +14,7 @@
 
 ## 實體 Entities（公司、組織）
 
+- [[entities/absolics]] — Absolics（SKC 子公司，與 Applied Materials 合資）；玻璃核心基板**量產先行者**，全球首座專用廠（美國喬治亞）；量產**自 2026 年底推遲至 2027**；⭐ **兩件請求項皆非幾何而是「製程潔淨度」與「微結構對稱性」：溶出雜質 P ≤1,500 ppb／Zn ≤500 ppb（ICP-MS 方法寫入請求項）、上下 RDL 銅晶粒長寬比之比 C/D 0.85–0.99**⭐本輪新建
 - [[entities/corning]] — Corning（康寧）；特種玻璃與光學材料供應商；玻璃核心基板／中介層**基材供應端**，2026-08 起以 **WO2026164778A1** 向下游 TGV 金屬化延伸（Ti/Cu 黏著層＋羥基富化＋矽烷官能化＋無電鍍種子層）；⭐ **與 Intel 形成假設相反的兩條 TGV 工程哲學：Corning 賭界面可做牢，Intel 賭界面必失效**⭐本輪新建
 - [[entities/sandisk]] — SanDisk；NAND Flash IDM；**HBF（High Bandwidth Flash）提出者**（2026-08 首次 tape-out／2027 樣品／2028 量產）；2026-05 公開**四件 D2W 貼合記憶體結構專利**（跨四個 family-id 圍籬式布局）；⭐ **金屬墊與 bit line 外拉至 die 重疊區之外——測試左移的第三個獨立實例，首次來自記憶體廠版圖層**⭐本輪新建
 - [[entities/applied-materials]] — Applied Materials（應用材料）；製程設備商；**一手規格首次入庫：Nokota VMax 2 ECD TSV <3 µm / AR >10:1；Avila 2 PECVD 對應 HBM 12→16 層以上；HBM 晶粒薄化至常規 DRAM 的 1/25**（2026-08-18）；持股 Besi 9%、TEL Eteris 合資、收購 ASMPT NEXX⭐本輪新建
@@ -92,7 +93,11 @@
 > - [[sources/2023-07-05_semianalysis_ai-capacity-cowos-hbm]] — SemiAnalysis：AI 產能限制——CoWoS 與 HBM（2023-07）
 > - [[sources/2022-11-01_semianalysis_packaging-gets-blurry]] — SemiAnalysis：The Future of Packaging Gets Blurry（2022-11）
 
+- [[sources/2026-09-21_semiconductorx_cmp-share-lam-sabre-correction]] — [查證·負面結果] ⭐⭐ **最高優先空缺未結清**：AMAT「混合接合 CMP 市占 100%」未獲佐證（二手數字 70% vs SemiconSam 60% 互不一致）；❌ **同頁「Lam SABRE 3D 為混合接合 CMP 平台」經 Lam 官方否證（實為 ECD 電鍍平台）**；➜ 新作業規則：產品×製程之敘述須以官網複核（2026-09-21）⭐新增
+- [[sources/2026-09-19_olt_tsv-depth-metrology-uncertainty-equals-variation]] — [論文] ⭐⭐⭐ **TSV 深度量測重複性 2.18 µm ≈ 陣列變異 2.15 µm（比值 ~101%）——量測不確定度首次達 100%**；絕對精度 79.7 nm RMS 仍答不出「這批孔一致嗎」；➜ 凡引用均勻度數字必須同時知道重複性（天津大學, O&LT, 2026-09-19）⭐新增
+- [[sources/2026-09-19_acsomega_polyimide-laser-ablation-taper-cost]] — [論文] PI 雷射燒蝕開口呈**倒梯形、頂寬較底寬多 6.4 ± 0.6 µm（面積代價 ~2.7×）**；⭐ 與 Onto 專利合成面板圖案化「粗快／細慢」三段階梯（雷射／投影／直寫）（ACS Omega, 2026-09-19，⚠ 來源品質中下）⭐新增
 - [[sources/2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring]] — [論文] 晶圓減薄**原位厚度監測**：終點可控至 **3 µm**、靜態偏差 **<0.5 µm**、**有效數據率 >80%**（約 1/5 量測被捨棄）；⭐ 與 Cu recess 並置後成立新論述：**量測不確定度已佔規格窗 17–100%，量測能力即製程能力的一部分**（天津大學, MSSP, 2026-09-18）⭐新增
+- [[sources/2026-09-16_jsandwich_cucu-diameter-nonmonotonic-local-optimum]] — [論文] ⭐⭐⭐ Cu–Cu 互連直徑 10→18 µm：翹曲 0.62→0.56 µm、壽命 1.29→3.97×10⁶ cycles **皆單調**，但**最低拉應力落在 14 µm、最佳平衡落在 16 µm**；➜ **翹曲與壽命同向但與局部應力錯位，不可取代之**；Intel 共著（USM × Intel, 2026-09-16）⭐新增
 - [[sources/2026-09-15_polymers_panel-rdl-dfr-pattern-collapse]] — [論文] 面板級 RDL 中介層**乾膜光阻圖案倒塌**；TMAC/CTAC 惡化、**BHAC 阻止倒塌並提升機械強度**；⚠ **提高疏水性≠不倒塌，僅以接觸角驗收會選錯配方**；成品 IL **<1.4 dB @0–40 GHz**（KETI/成均館/漢陽, Polymers, 2026-09-15）⭐新增
 - [[sources/2026-09-15_jcet_cn122766296a-microwave-debonding]] — [專利] JCET **微波剝離載板**（PPC＋石墨粉＋酸產生劑，化學解聚而非雷射燒蝕）；**微波成為可追蹤技術路線的第二個應用點**（接合＋解接合）；⚠ 中國申請案無量化數據（CN122766296A, 2026-09-15）⭐新增
 - [[sources/2026-09-15_jcet_cn122766387a-dual-laser-bonding]] — [專利] JCET **雙雷射壓縮鍵合**（雙側同時加熱消除溫度梯度＋真空回流抑制空洞）；⭐ **發明人群組訊號：同一 JCET 韓國團隊一季內橫跨接合／解接合／堆疊測試三環節**（CN122766387A, 2026-09-15）⭐新增
@@ -100,6 +105,7 @@
 - [[sources/2026-09-15_mssp_cobalt-low-temp-hybrid-bonding-md]] — [論文] ⭐ **以鈷取代銅**的低溫混合接合分子動力學（623 K）；Co(111)/Co(111) 結構重疊最大；**粗糙度有最佳值（λ=20 Å、A=1 Å）而非越平越好**——與 CMP「越平越好」假設相左；⚠ 純模擬、假說級（2026-09-15）
 - [[sources/2026-09-15_jmep_lau-cucu-hybrid-bonding-chiplets-review]] — [論文] Lau：Cu-Cu 混合接合綜述；⭐ **稱其為「老技術、已量產 10 年以上」——提示 wiki 時間軸應拆成 W2W 記憶體/感測器世系與 D2W 邏輯世系兩條起算點**（JMEP/IMAPS, 2026-09-15；⚠ 僅摘要）⭐新增
 - [[sources/2026-09-15_jmep_lau-glass-packaging-chiplets-review]] — [論文] Lau：玻璃封裝綜述；⭐ **點名本 wiki 缺失的一層：玻璃基板→PCB 的 CTE 失配與銲點可靠度**；CTE 是兩端受夾的變數（JMEP/IMAPS, 2026-09-15；⚠ 僅摘要）⭐新增
+- [[sources/2026-09-15_imaps_lau-glass-panel-economics-fulltext]] — [論文·全文升級] ⭐⭐⭐ **玻璃核心使 micro-bump 應變減半（4.43% vs 9.12%）卻使 PCB 側 BGA 應變加倍（19% vs 8.43%，作者標 high risk）**；⭐⭐⭐ **600 mm 面板 pick-and-place 時間為 300 mm 晶圓 5.3×、成型設備閒置 94%——面積優勢被抵銷**；⭐ **310×310 mm 首獲「為何是這尺寸」之論證**（John H. Lau, IMAPS JMEP, 2026-09-15）⭐新增
 - [[sources/2026-09-12_sammyfans_micron-hbm-capacity-doubling]] — Micron **年底前 +60,000 HBM wspm → 約 100,000 wspm（約翻倍）**；12-high HBM4 **>2.8 TB/s/堆疊**，佔比 20–30%→最高 50%；⭐ 記憶體端與封裝端擴張節奏已大致同步（2026-09-12）
 - [[sources/2026-09-12_zenodo_bwstar-wafer-level-alignment-full-field-overlay]] — [論文] BW-STAR：⭐⭐ **疊對是接合後全場殘餘向量場，不是純量「對準精度」**；誤差源含吸盤回彈/薄膜應力/接合波；**負面結果：接合波前緣在現行取樣密度下不可辨識**（⚠ 低影響力期刊、純模擬，僅採概念框架，2026-09-12）⭐新增
 - [[sources/2026-09-11_mssp_tgv-glass-biaxial-bending-ring-on-ring]] — [論文] TGV 玻璃基板**雙軸 ring-on-ring 彎曲強度**；比較有／無蝕刻製程；⚠ 把 TGV 陣列本身重新放回力學檢視，**限定（非推翻）**既有「瓶頸在邊緣與切單」論點（MSSP, 2026-09-11）⭐新增
@@ -113,6 +119,7 @@
 - [[sources/2026-09-04_ninescrolls_hybrid-bonding-2026-tsmc-6um-intel-9um]] — [文章] ⭐⭐ **量產 pitch 的第一限制被量化：拋光後表面變異須 ≤ ~0.2 nm（凡得瓦力作用距離），比機台對準嚴格 500 倍**；TSMC 6→4.5 µm、Intel 9→3 µm；限制項全在 bonder 上游（NineScrolls, 2026-09-04）⭐新增
 - [[sources/2026-09-02_focustaiwan_tsmc-kaohsiung-baipu-packaging-hub]] — TSMC **高雄白埔 3 公頃先進封裝聚落**；**驗證效率目標 +25–50%**（非量產）；**CoWoS 產能 CAGR >80% 至 2027**；⭐ **瓶頸部分轉移到供應鏈驗證前置時間**（Focus Taiwan, 2026-09-02）⭐新增
 - [[sources/2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling]] — [論文] ⭐⭐⭐ **翹曲被證明會騙人**：雙面 DRAM 順序回焊後翹曲淨值僅 **+8.6%**（第一次回焊曾 +58.2%），同時 **PCB 局部應力 +30.5%**；**代理指標「完全脫鉤」型失效的第一個帶數字反證**；⚠ 純 FEM、PCB 級（KAIST × **Samsung** × KITECH, JMRT, 2026-09-01）⭐新增
+- [[sources/2026-09-01_chip_ru-bpr-ntsv-ion-beam-recess]] — [論文] ⭐⭐⭐ **Ru 太硬無法研磨，改以離子束回蝕——「繞過 CMP」第四條路，也是「CMP 為限制層」論述的第一個邊界條件（該論述綁定於 Cu）**；自對準蝕刻消除套刻限制；ALD 無阻障層；11.4–11.8 Ω/µm（復旦等, Chip, 2026-09-01）⭐新增
 - [[sources/2026-08-30_micromachines_advanced-packaging-architectures-review]] — Shenzhen Univ：2D/2.5D/3D 架構橫向比較綜述；矽中介層／局部矽橋／RDL 扇出／垂直堆疊四分類；七維度交叉檢核骨架（2026-08-30）⭐新增
 - [[sources/2026-08-27_tomshardware_glass-substrate-roadmaps-examined]] — Tom's Hardware：玻璃基板十一家廠商全景與時程滑動；**迄今無任何量產設計採用、無客戶正式確認**；Absolics 2026 年底／GLASEM 2H27（成熟度 40/100）／Intel ~2030；面板尺寸 310–600mm 未收斂（2026-08-27）⭐新增
 - [[sources/2026-08-27_samsung_us20260256000a1-interposer-test-pad]] — [專利] Samsung **中介層內建專屬 test pad**，「無需中介媒介即可提早測試缺陷」；主分類為 **G01R31（測試）**；⭐ **KGI 由概念進入結構主張；不與 pad 密度競爭而是繞過它**（US20260256000A1, 2026-08-27）⭐新增
@@ -146,6 +153,7 @@
 - [[sources/2026-07-30_amkor_us20260223669a1-tim-flow-layer-sidewall-lid]] — **專利訊號** Amkor：TIM-flow 層 + 側壁 TIM + lid footprint 外無 TIM；封裝**內部**散熱工程；與 McCann 兩相冷卻預判形成雙軌策略（2026-07-30）⭐新增
 - [[sources/2026-07-28_xianfeng_cn122476946a-alignment-mark-protection]] — [專利] 上海先鋒：**對位標記抗氧化＋光學增強雙功能層**；揭示面板級對位失效的**第三個機制（化學／光學）**，有別於翹曲致 die shift（CN122476946A, 2026-07-28）⭐新增
 - [[sources/2026-07-27_ninescrolls_fine-pitch-hb-cmp-surface-prep]] — [文章] ⭐ **Cu recess 是「窄窗」而非越平越好**（dishing 過深→應力、不足→接不上）；退火基準線 **400 °C × 1–2 hr**（CEA-Leti 100 °C 已示範）；**單一奈米顆粒即致命**；SiCN 為 400 nm pitch 必要條件（NineScrolls, 2026-07-27）⭐新增
+- [[sources/2026-07-21_lam_sabre-3d-is-ecd-not-cmp]] — [一手·否證] Lam 官方：**SABRE 3D 為電化學沉積平台，非 CMP、未涉混合接合**；附帶訊號：Lam 官方封裝敘事主動納入面板級製程（Lam Research, 2026-07-21）⭐新增
 - [[sources/2026-07-17_jcet_cn122421815a-asymmetric-bonding-interface]] — [專利] JCET **刻意不對稱的接合界面**（下硬上軟介電層 + 下粗上細 Cu 晶粒）；⭐⭐ **挑戰本 wiki 隱含的「兩接合面對稱」假設**；**Cu 晶粒尺寸首次寫入請求項**；⭐ 發現 **JCET 有中國／韓國兩個獨立研發群組**（CN122421815A, 2026-07-17）⭐新增
 - [[sources/2026-07-16_adeia_us20260206661a1-local-heating-hybrid-bonding]] — [專利] Adeia US20260206661A1：**預埋磁性/微波敏感材料對接合界面局部加熱**；⭐ 微波能量投遞的第三個應用點——**不是第三個製程，而是同一製程的第三種實作**；低溫路線目標自「降整體溫度」改為「縮小高溫區體積與時間」（fam 100489515, 2026-07-16）⭐新增
 - [[sources/2026-07-09_skhynix_us20260198018a1-bonding-insulating-layer-tsv]] — **專利訊號** SK hynix：介電接合層 + 貫穿接點 + TSV 串接之記憶體堆疊；公開日早於 Hot Chips「HB 延至 HBM5」發言（2026-07-09）⭐新增
@@ -153,6 +161,7 @@
 - [[sources/2026-07-06_apl_lensless-through-silicon-phase-imaging]] — [論文] **反射式無透鏡穿矽相位成像**（1064 nm、單張繞射圖、無物鏡無移動件）；解析 **2.19 µm**；⭐ **價值判準由精度轉向可整合性（in-tool）；相位通道對比優於振幅通道**；⚠ 不足以驗證 <1 µm D2W 對準（坦佩雷大學, APL, 2026-07-06）⭐新增
 - [[sources/2026-07-03_lgchem_cn122342272a-glass-core-substrate-singulation]] — **專利訊號** LG Chem：玻璃芯基板切單法（犧牲性金屬圖案定義切割道）；**玻璃良率瓶頸在邊緣而非 TGV**；IPC 落在 C03C/H05K 而非半導體體系（2026-07-03）⭐新增
 - [[sources/2026-07-02_epo_intel-bottom-up-tgv-plating-airgap]] — [專利] Intel **自底部 TGV 鍍膜、無需側壁種子層**，並**刻意保留銅與玻璃間的空氣間隙**（應力解耦而非電性隔離）；22 名發明人；⚠ 空氣為熱絕緣體之代價未被討論（2026-07-02）
+- [[sources/2026-07-02_epo_onto-hybrid-projection-directwrite-lithography]] — [專利訊號] ⭐⭐ Onto：面板微影**分工**——**≥1 µm 用投影（field ≥50×50 mm）、<1 µm 用直寫**；⭐ 首個封裝級投影視場數值 ➜ 310 mm 面板 ≈36 次曝光、600 mm ≈144 次（US20260186421A1, 2026-07-02）⭐新增
 - [[sources/2026-06-28_hyperframe_amat-hybrid-bonding-hedge]] — [文章] AMAT 以**「收斂」策略避險**而非押注混合接合；fab 級量測（eBeam sub-10 nm）下沉至封裝基板；超薄 die = 標準晶圓 **1/25**（與 2026-08-18 官方記錄交叉一致）（HyperFRAME Research, 2026-06-28）⭐新增
 - [[sources/2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo]] — [新聞] ⭐⭐ **結清空缺：AUO 在 CPO 是零件供應商**（與 Ennostar 提供光通訊方案，非基板、非封裝服務）；**Innolux × Ibiden 玻璃／ABF／玻璃三層複合基板**供 TSMC；TSMC 玻璃核心基板量產 **2028 年底–2029 年初**（BigGo, 2026-06-21）⭐新增
 - [[sources/2026-06-18_skhynix_us20260173880a1-guard-ring-bonded-structures]] — **專利訊號** SK hynix：接合介電層與上下 guard ring 配置；接合層作為水氣／離子橫向擴散通道的兩難（2026-06-18）⭐新增
@@ -174,6 +183,7 @@
 - [[sources/2026-09-10_intel_us20260271308a1-hbm-base-die-thermal]] — [專利] Intel HBM base die **interface logic 區為熱點**；懸空區堆疊導熱層導向頂部 IHS（US20260271308A1, 2026-09-10）⭐新增
 - [[sources/2026-04-30_seoultech_us20260123559a1-hydrocarbon-plasma-low-temp-bonding]] — [專利] 首爾科技大學 **碳氫系（CxHy）電漿前處理之低溫混合接合**；⭐ 表面活化分支的新化學（還原性而非氧化性）；⚠ **明示依賴「熱膨脹」成鍵，與 IBM/RPI 的 CuO 警告對同一機制給出相反評價**（US20260123559A1, 2026-04-30）⭐新增
 - [[sources/2026-04-30_ibm_us20260123509a1-hybrid-bonding-thermal-dissipation]] — [專利] IBM US20260123509A1：**接合區內分割鍵結介電區與導熱區，面積配比成設計變數**；⭐ 熱路徑與結構搶同一份面積：**10⁶ I/O/mm² 與 >3 W/mm² 是同一塊面積上的兩個需求**（fam 99550345, 2026-04-30）⭐新增
+- [[sources/2026-04-30_epo_absolics-glass-substrate-impurity-and-grain-symmetry]] — [專利訊號] ⭐⭐ Absolics 兩件：**溶出雜質 P ≤1,500 ppb／Zn ≤500 ppb 且 ICP-MS 方法寫入請求項**（玻璃基板第五個面向＝化學純度）；⭐⭐⭐ **上下 RDL 銅晶粒長寬比之比 C/D 0.85–0.99——翹曲控制下放到微結構層**（US20260123495A1 / US20260123487A1, 2026-04-30）⭐新增
 - [[sources/2026-04-16_semieng_chiplet-standards-plug-n-play]] — SemiEng：Chiplet 標準四層盤點——**FCSA Rev1.0.0（2026-02 生效）**、**JEDEC JESD-030O**、**五項設計套件含 PTDK**、Universal Link Layer（PHY-agnostic）；⭐ **標準重心自互連移向組裝與材料**；PTDK 為 KGD 空缺的部分解（2026-04-16）
 - [[sources/2026-04-16_asmpt_us20260107808a1-decoupled-floating-bonding-stage]] — [專利] ASMPT US20260107808A1：粗動/細動**物理解耦**的浮動接合載台；⭐ **價值在反證**——設備側精度持續投入、量產 pitch 卻停滯，兩者並存即空缺核心；設備商純申請人檢索訊噪比僅 1.6%（fam 99436762, 2026-04-16）⭐新增
 - [[sources/2026-04-13_laserfocusworld_cpo-thermoelectric-cooling]] — Laser Focus World：CPO 熱約束是**溫度穩定度而非散熱量**——雷射／PIC 需 **< 0.5 °C**；⭐ **熱問題分裂為兩類：兩相冷卻解熱通量、TEC 解精密控溫**；玻璃中介層 RF 至 **40 GHz**；⚠ 供應商撰稿（2026-04-13）
@@ -181,7 +191,9 @@
 - [[sources/2026-03-29_damnang_hybrid-bonding-cmp-gating-factor]] — [文章] ⭐⭐ **「限制項在 CMP 而非 bonder」的第二個獨立來源，且早於 NineScrolls 近半年**；⭐⭐ **對準容差依應用分段：CIS ~200 nm／邏輯・HPC <100 nm**——列管的「imec <50 nm vs 量產 100 nm」矛盾可降級（Damnang Research, 2026-03-29）⭐新增
 - [[sources/2026-03-13_kaneka_jp2026047137a-glass-core-polyimide-quantified]] — [專利] **Kaneka 玻璃核心基板用聚醯亞胺絕緣層**：**醯亞胺基濃度 15–38%／內應力 ≤20 MPa／Ra ≤10 nm**（本輪唯一含量化限定的專利）；⭐⭐ **玻璃界面賭局的第三條路「降低驅動力」**；上下界並存＝參數非單調（JP2026047137A, 2026-03-13）⭐新增
 - [[sources/2026-03-11_ieee-eps_ectc2025-hybrid-bonding-special-session]] — [報告] ⭐⭐ **一手機構來源**（IEEE EPS 通訊）：**Samsung die 翹曲允收 <100 nm**（與機台對準同量級）、imec 對準需求 <50 nm、KLA 量測需 1 nm、**CSAM 僅 ~10 µm 解析度（10,000× 落差）**；PHB <250 °C/0.5 MPa；散熱 >3 W/mm²（2026-03-11）⭐新增
+- [[sources/2026-03-11_epo_adeia-cmp-for-hybrid-bonding-patent]] — [專利訊號] ⭐⭐⭐ **Adeia 把 CMP 本身寫成專利標題**「Chemical Mechanical Polishing for Hybrid Bonding」——「CMP 是限制層」的第三個獨立支持且形式最強；機制為**以阻障層作研磨停止層，把奈米級高度控制轉為薄膜厚度控制**；⚠ 修正 2026-09-20 對 Adeia 的單向讀法（EP4709132A2, 2026-03-11）⭐新增
 - [[sources/2026-02-18_siliconbox_ep4697377a1-fanout-panel-metal-sealing-ring]] — [專利] Silicon Box（發明人為創辦人 Sehat Sutardja 本人）：**RDL 內建金屬密封環以延長電鍍導電路徑**、均勻化大面板鍍層；指向面板瓶頸為**對位與均勻度**而非微影解析度（EP4697377A1, 2026-02-18）⭐新增
+- [[sources/2026-02-10_epo_shanghai-univ-citric-acid-cu-reduction-sog]] — [專利訊號] ⭐⭐⭐ 上海大學：**Ar/H₂ 電漿活化不足以還原 Cu 氧化物**，以**檸檬酸同時還原 Cu 並親水化 SOG**——一道製程滿足兩個方向相反的表面需求；➜ 「Cu 氧化相門檻」空缺的提問方式須修正（CN121511008A, 2026-02-10）⭐新增
 - [[sources/2026-02-05_siemens_cpo-five-key-trends-2026]] — Siemens：CPO 五大趨勢；1.6T 鏈路功耗 **30 W → 9 W**；⭐ **資料中心 60% 能耗花在資料搬移**（CPO 需求側第一原理數字）；Ayar Labs TeraPHY **8 Tbps** UCIe 光學；3.2T port 2029 >1,000 萬個（2026-02-05）
 - [[sources/2025-11-21_eetimes_amat-besi-d2w-hybrid-bonding-hvm]] — EE Times：AMAT × Besi **Kinex**；⭐⭐ **D2W 逐 die 對準量產現況 100 nm @ 3σ**（2026 新機 50 nm、路線圖 <25 nm）、**1,600–2,000 die/hr**、佇列時間 13 hr→數分鐘；**結清「設備商 D2W 對準路線圖」空缺，並推翻「pitch 受限於對準」的簡單歸因**（2025-11-21）
 - [[sources/2025-10-09_micron_wo2025212237a1-heat-mitigating-hbm-sip]] — [專利] Micron interface die 移至**堆疊頂層**、I/O 走上表面 + 上方 communication substrate（over-the-top bridge）（WO2025212237A1, 2025-10-09）⭐新增
@@ -495,6 +507,7 @@
 - [[sources/2026-04-15_trendforce_korea-intel-glass-substrate-standards]] — 玻璃基板標準戰：Intel 2030路線圖 vs Absolics搶先量產 vs BOE中國進入；Corning-Meta $6B協議（2026-04-15）⭐新增
 - [[sources/2026-04-30_trendforce_ulcvd-glass-substrate-cpo-laser]] — ULCVD：全南大學超短脈衝雷射誘導CVD突破玻璃TGV/RDL三維互連瓶頸；CPO應用場景（2026-04-30）⭐新增
 - [[sources/2026-03-05_uciexpress_chiplet-summit-2026]] — Chiplet Summit 2026：UCIe-S Intel+Cadence「Cameron Creek」首次跨廠商互操作示範；UCIe 3.0 Best in Show；Eliyan 等新生態成員（2026-03-05）⭐新增
+- [[sources/2025-10-06_onto_tgv-inspection-three-cds]] — [設備商一手] ⭐ **TGV 需同時量頂／腰／底三個 CD——「孔徑」不是一個數字**；「incomplete debris removal」列為標準缺陷類別，與 ARCH 的孔外接觸角零敏感度構成閉環；LIDE 改質區 <3 µm；玻璃核心基板 2030 年 **2.75 億美元**（最保守值）（Onto Innovation, 2025-10-06）⭐新增
 - [[sources/2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly]] — [文章] ⭐⭐ **混合接合專用 CMP 設備 AMAT 市占 100%**（整體 CMP 60%）；與「CMP 為第一限制」相乘 ➜ **整個產業 pitch 微縮速率由單一設備商決定**，並解釋 AMAT 持股 Besi 9% 的縱向布局；⚠ 單一來源待佐證（SemiconSam, 2025-09-18）⭐新增
 - [[sources/2025-09-03_uciexpress_ucie30-spec]] — UCIe Consortium：UCIe 3.0 官方規格——48/64 GT/s；Raw Mode；100mm sideband；L2 idle 功率閘控；完整向下相容（2025-09-03）⭐新增
 - [[sources/2025-08-12_semieng_metrology-fine-pitch-hybrid-bonding]] — [文章] ⭐⭐ **產業無混合接合檢測標準**：各廠自定疊對容差/平坦度/空洞門檻，**不同廠商的 pitch 數字不可直接比較**；翹曲是空間分布（邊緣 vs 中心 die 應力不同）；與「KGD 標準化定義」空缺合併追蹤（SemiEng, 2025-08-12；刻意收錄舊文）⭐新增
@@ -603,3 +616,5 @@
 - [[sources/2025-01-14_semieng_known-good-interposer-screening]] — SemiEng：**矽中介層很少接受完整電性測試覆蓋**；限制為探針物理（pad pitch **<60–75 µm** vs **25k–50k pads**，Amkor）；**KGI / PGD（Pretty Good Die）** 首次入庫（2025-01-14，⚠ 舊文，作基礎背景）⭐新增
 - [[sources/2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq]] — [報告] ⭐⭐ **結清最高優先空缺：介電層 Rq 0.1–0.2 nm、Cu recess 1–5 nm 取得設備商一手佐證**；⭐ **「平坦度」須拆成三個相差兩個數量級的獨立驗收項**（短程粗糙度／recess／長程形貌 10–25 nm）（Bruker AN-5001, 2025 Rev.A0）⭐新增
 - [[sources/2024-11-12_semieng_packaging-drives-test-metrology-innovation]] — SemiEng：**測試端 2024 基準線**——凸塊 45→12 µm、HBM pitch 25→16–18 µm、層數 8→16、**凸塊數 1→1.5 億**、測試訊號 **224 Gbps/80 GHz**、CD 重複性 **0.1%**（2024-11-12，⚠ 僅作時間序列起點）⭐新增
+
+- [[sources/2023-09-13_nccavs_intel-cmp-dishing-requirement-vs-achieved]] — [簡報] ⭐⭐⭐ **Intel 工程師：Cu dishing 需求 1–5 nm，產線實績 5–25 nm（需重工）——限制鏈第①層尚未達標**；退火前 Cu–Cu 間隙 9–47 nm；Cu 膨脹 1 nm/mm/50 °C；SiCN RMS 0.10 nm 交叉確認 Bruker（NCCAVS, 2023-09-13，⚠ 三年前基準線）⭐新增

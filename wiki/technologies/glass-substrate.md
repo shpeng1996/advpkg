@@ -3,7 +3,7 @@ title: "玻璃基板 / Glass Core Substrate"
 category: technology
 tags: [glass-substrate, TGV, panel-level, FC-BGA, CoPoS, Absolics, DNP, Rapidus, warpage, SeWaRe, glass-interposer, BOE, ULCVD, non-embedding, Lens-Technology, TPK-KY, Innolux, AUO, LG-Chem, singulation, patent-signal]
 created: 2026-05-08
-updated: 2026-09-20
+updated: 2026-09-21
 sources: [2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-05-05_trendforce-insights_glass-substrate-development, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-05-29_3dincites_rapidus-2nm-advanced-packaging-ai-foundry, 2026-06-01_trendforce_intel-3dgs-india-glass-substrate, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-06-20_biggo_boe-glass-substrate-pilot, 2026-06-28_economy-ac_glass-substrate-global-race, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-08-18_trendforce_shinko-glass-substrate-22layer-glassem-delay, 2026-09-11_mssp_tgv-glass-biaxial-bending-ring-on-ring, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-03-13_kaneka_jp2026047137a-glass-core-polyimide-quantified, 2026-08-10_screp_low-k-organic-buffer-tgv-cu-metallization, 2026-08-04_jmrt_vacuum-assisted-void-free-cu-fill-tgv, 2026-07-30_micromachines_tgv-cleanability-surface-tension]
 related:
   - wiki/technologies/copos.md
@@ -984,3 +984,67 @@ BigGo（2026-06-21）：
 ### 七、列管空缺「玻璃 → PCB 的 CTE 失配」首次可計算
 
 玻璃 ~3 ppm/°C、矽 ~2.6–3（匹配良好）、PCB 通常 14–17 ➜ **下游失配約 11–14 ppm/°C，全部由最下游銲點吸收**。與 Lau（2026-09-15）「CTE 是兩端受夾的變數」合併後，該空缺自「無條目」進入「有量級」。同輪 KAIST／Samsung 論文（10.1016/j.jmrt.2026.09.095）雖為有機 PCB，提供了該層級的**分析框架與失效集中點（邊緣銲點面外剪應力）**，可作對照基線。
+
+---
+
+## 2026-09-21 collect 更新：⚠ 玻璃核心的可靠度效益有方向性——封裝內贏、對 PCB 輸
+
+### 一、⭐⭐⭐ 2026-09-19 的推測獲全文證實，且代價比預期大
+
+[[sources/2026-09-15_jmep_lau-glass-packaging-chiplets-review]]（2026-09-19）僅取得摘要，本 wiki 當時依材料常識**推論**「降低玻璃 CTE 有利於與矽匹配，卻不利於與 PCB 匹配——CTE 是一個兩端受夾的變數」，並明確標示為非原文內容。**本輪取得 OA 全文，該推論獲證實並量化**（John H. Lau, IMAPS JMEP, 2026-09-15）：
+
+**累積等效非彈性應變（每循環）**
+
+| 焊點位置 | 玻璃核心 | 有機核心 | 方向 |
+|----------|----------|----------|------|
+| **Micro-bump（有底填料）** | **4.43%** | **9.12%** | 玻璃**優 2.06×** |
+| **BGA 於 PCB（無底填料）** | **19%** | **8.43%** | 玻璃**劣 2.25×** |
+
+原文評語：**"High risk: Glass core introduces more than doubles the inelastic strain on the PCB side."**
+
+**CTE（×10⁻⁶/°C）**：矽晶片 2.5｜矽中介層 2.8｜**玻璃中介層 3–10**｜有機中介層 8–18
+
+➜ ⭐⭐⭐ **本頁既有的全部正面數據都是封裝內部指標**（TSMC JPCA：COP +16%、電感 −42%；KETI／漢陽：剝離強度 0.327→0.675 N/mm，+106%）。本輪首次取得**封裝外部**的數字，方向相反且幅度相當。
+
+➜ **本頁論述自此必須分兩層記錄**：
+- **封裝內（die ↔ 基板）**：玻璃贏——CTE 貼近矽，micro-bump 應變減半。
+- **封裝對板（基板 ↔ PCB）**：玻璃輸——CTE 遠離 FR-4 系 PCB，BGA 應變增為 2.25 倍，作者標為 high risk。
+
+➜ **這不是設計不良，是物理上的兩難**：CTE 只有一個值，**貼近矽即遠離 PCB**。這也重新定位了 2026-09-18 收錄的 **Intel「CTE < 11 玻璃面板框架」專利**——那是在**基板內部**做 CTE 管理；本文指出**基板外部還有一個方向相反的約束**，而該專利並未處理。
+⚠ 應變數字出自模型模擬而非實測；作者現職列為 Micron，須留意記憶體視角。**列為新空缺：是否有實測（熱循環到失效）的對照數據？**
+
+### 二、⭐⭐ Absolics 兩件專利：玻璃基板的第五個面向（化學純度）與第六個面向（微結構對稱）
+
+**US20260123495A1（family 97388424，2026-04-30）—— 以溶出雜質定義基板**
+
+| 元素 | 上限（重量比） |
+|------|----------------|
+| **P（磷）** | **≤ 1,500 ppb** |
+| **Zn（鋅）** | **≤ 500 ppb** |
+
+且**分析方法寫入請求項**：70 mol% 硝酸 + 石墨塊 **200 °C / 16 h** 前處理，依 **KS M 0025:2008** 以 **ICP-MS（PerkinElmer Nexlon2000）** 分析。
+
+- ⭐⭐ 本頁既有面向為：界面黏著（Corning／KETI）、TGV 成孔與填充（Intel／漢陽）、CTE（Intel／Lau）、良率經濟（Exponential）。**離子污染是第五個面向**。P 與 Zn 是玻璃配方與濕製程（磷酸系蝕刻、鍍液）的殘留指紋——主張**製程化學殘留而非結構缺陷**是可靠度關鍵變數。
+- ⭐ **量測方法連同機型與國家標準編號寫入請求項**，為本 wiki 首見，是「量測能力是製程能力的組成部分」論述的**法律層實例**：規格窄到量測方法會改變結論時，方法必須一併定義，否則無法侵權比對。
+- ⚠ 摘要未說明超標導致何種失效（遷移？介電崩潰？黏著劣化？），**列為新空缺**。
+
+**US20260123487A1（family 97388510，2026-04-30）—— 上下 RDL 銅晶粒長寬比之比**
+
+C = 上 RDL 中長短軸比 ≥3:1 之晶粒面積比；D = 下 RDL 同一量；請求項：**0.85 ≤ C/D ≤ 0.99**。
+
+- ⭐⭐⭐ **銅晶粒形貌首次以「上下兩面的比值」而非絕對值被主張。** 2026-09-20 首見 JCET 把 Cu 晶粒**尺寸**寫入請求項（下粗上細，梯度）；本件管制的是**上下 RDL 晶粒長寬比分布的對稱度**。兩件方向相反（一要梯度、一要對稱），但同指一事：**銅的微結構正自「製程結果」變成「可請求的設計參數」**。
+- ⭐⭐ **翹曲控制被下放到微結構層。** 玻璃核心上下 RDL 不對稱為既知翹曲來源，既有解法是層構對稱（Shinko 22 層）。本件主張**即使層構對稱，晶粒形貌不對稱仍造成差異**。
+- ⭐ **上限 0.99 把「完全對稱」排除在請求項外**——「關鍵參數不是單調的」通則的第五例。⚠ 為何刻意不允許完全對稱，摘要未述，**列為新空缺**。
+- 📌 **Absolics 本輪雙重命中，且已被本 wiki 21 頁提及——建議建立實體頁**（已於 overview 知識空缺登記）。
+
+### 三、⭐ TGV 的「孔徑」是三個數字，不是一個
+
+**Onto Innovation（2025-10-06，與 LPKF 合作）**：面板光學檢測同時量 via **頂部／腰部／底部 CD** 與位置精度；LIDE 雷射改質區寬度典型 **<3 µm**；密集互連所需 **L/S 1.5 µm 及以下**；玻璃核心基板營收預估 **2030 年 2.75 億美元**（樂觀情境）。
+
+缺陷分類（設備商列舉）：cracks、CD variation、**incomplete debris removal**、voids、overfill、over-polishing；金屬化後另有 missing via、incomplete via、via crack。
+
+- ⭐⭐ **「清洗殘留」被設備商列為標準缺陷類別，與 ARCH 的零敏感度發現構成閉環。** 2026-09-20 收錄 ARCH（Micromachines）：TGV 清洗後**孔外接觸角恆為 3–4°、與清洗液表面張力完全無關**，即以孔外接觸角驗收時敏感度為零。本件證實該缺陷**不是理論風險，而是檢測設備商日常列舉的類別**。➜ 「代理指標完全脫鉤」型失效在 TGV 清洗一項上，現已同時有**缺陷存在性（Onto）**與**驗收手段失效（ARCH）**兩面證據。
+- ⭐ ➜ **2026-09-20 就「平坦度」建立的通則（同一名詞涵蓋多個獨立驗收項，不指明界面幾無資訊量）本輪擴及「孔徑」，可升格為跨參數的記錄規範。**
+  **附帶影響：列管空缺「Corning small via diameter 的實際數值」的提問方式需修正——應問「頂／腰／底何者」。**
+- 📌 **2.75 億美元（2030）是本 wiki 取得最保守的玻璃核心基板市場數字**，對照 Counterpoint「FOPLP＋玻璃基板 2030 年 >80 億美元」。兩者口徑不同（玻璃核心基板 vs 含 FOPLP），差距達兩個數量級，**應並列記錄而非擇一**。
+⚠ Onto 為設備商行銷文，檢測能力為自述，無第三方驗證。

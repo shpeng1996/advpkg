@@ -3,7 +3,7 @@ title: "先進封裝熱管理 / Thermal Management in Advanced Packaging"
 category: concept
 tags: [thermal-management, liquid-cooling, 3D-IC, CoWoS, heat-dissipation, TIM, ECTC-2025, GaN, power-delivery, co-design, patent-signal, delamination]
 created: 2026-04-25
-updated: 2026-09-20
+updated: 2026-09-21
 sources: [2025-12-01_semiengineering_thermal-management, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-02_trendforce_samsung-hbm5-computex2026, 2026-05-21_semieng_hi-roadmap-nature-paper-intel, 2026-08-13_semieng_1mw-rack-debate-thermal, 2026-04-27_semieng_semiconductor-materials-misbehave, 2026-08-21_trendforce_chip-packaging-heat-ai-bottleneck-cpo-stco, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer]
 related:
   - wiki/technologies/cowos.md
@@ -617,3 +617,42 @@ IBM 的作法是在同一接合區內分割「接合介電區」與「導熱材�
 | **TEL KR20260007564A**（2026-01-14）⭐新 | 同一接合界面的第一／第二區域使用**兩種不同的介電材料** |
 
 ➜ 兩家、兩案、同一結構概念。**接合界面應自「單一材料層」改記為可分區的設計面。** ⚠ TEL 案未說明分區目的（散熱？應力？選擇性接合？），故**交換率的數字仍然沒有**，空缺維持開啟。
+
+---
+
+## 2026-09-21 collect 更新：翹曲作為代理指標的第二個帶數字的反證——這次是「錯位」而非「相反」
+
+**Universiti Sains Malaysia × Intel（J. Sandwich Struct. Mater., 2026-09-16）**：Cu–Cu 接合堆疊晶粒，JEDEC JESD22-A104D 熱循環；序列耦合暫態熱機械模型（矽正交異向彈性 + 銅溫度相依黏塑性），升溫段實驗驗證，**峰值翹曲偏差 <2%**。
+
+互連直徑 **10 → 18 µm**：
+
+| 指標 | 10 µm | 18 µm | 型態 |
+|------|-------|-------|------|
+| 正向變形峰值（翹曲） | 0.62043 µm | **0.55574 µm** | **單調下降** |
+| 預測疲勞壽命 | 1.29×10⁶ | **3.97×10⁶** cycles | **單調上升（3.08×）** |
+| 最低最大拉應力 | — | — | **最佳點 14 µm（非單調）** |
+| 最低塑性功率峰值／整體最平衡 | — | — | **最佳點 16 µm（非單調）** |
+
+### ⭐⭐⭐ 論述修正：翹曲不是「維度上就錯」，而是「與局部最佳化目標錯位」
+
+2026-09-20 記錄 KAIST × Samsung × KITECH：雙面 DRAM 順序回焊後**翹曲淨值僅 +8.6%，同一時刻 PCB 局部應力卻上升 30.5%**——本 wiki 當時將其列為「三個關鍵量在維度上就是錯的」論述的第一個帶數字反證。
+
+本件是**第二個獨立實例，但型態不同**：
+- KAIST×Samsung 是**方向相反**（翹曲看似良好、局部應力惡化）。
+- 本件是**錯位**：翹曲與壽命**同向**（故翹曲並非全無用處），但只看翹曲與壽命會選 18 µm，看局部應力則選 **14–16 µm**。
+
+➜ **更精確的表述**：**翹曲與疲勞壽命同向，因此不是無效指標；但它與局部應力的最佳化目標不一致，因此不可取代局部應力。兩者必須並列量測，不能擇一。**
+➜ 這比 2026-09-20 的「維度上就是錯的」更準確，也更有作業價值——**本 wiki 此前的強表述應予收斂。**
+
+### ⭐⭐ 通則：「關鍵參數不是單調的」增至第六例，且首次出現在幾何參數
+
+前五例皆為材料／微結構／表面（JCET 晶粒梯度、Co/Co 粗糙度最佳值、Kaneka 醯亞胺基 15–38%、Absolics 上下 RDL 晶粒比 C/D 0.85–0.99、Adeia PHB）。本件給出該通則更精確的形式：
+
+> **同一設計變數對不同失效模式的最佳值不同；「最佳值」只在指定失效模式後才存在。**
+
+### ⭐ 大廠同時持有量產規格與指出該規格不足的學術證據——第二例
+
+2026-09-20 記錄：**Samsung** 一方面以翹曲 <100 nm 為允收規格，一方面共著論文指出該指標不足。本輪：**Intel** 為本件共著機構。
+➜ 可記為一條產業觀察：**這是規格與物理認知落差的常態，而非個案。** 本 wiki 引用任一廠商的允收規格時，應同時查其是否已有共著論文指出該規格的限制。
+
+⚠ **10–18 µm 屬 microbump／Cu pillar 尺度，不是混合接合的 6–9 µm pad pitch**，結論不可外推至混合接合界面。純 FEM，僅升溫段有實驗驗證。

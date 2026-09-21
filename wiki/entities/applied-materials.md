@@ -3,7 +3,7 @@ title: "Applied Materials（應用材料）"
 category: entity
 tags: [equipment, ECD, PECVD, TSV, HBM, die-thinning, hybrid-bonding, USA]
 created: 2026-09-17
-updated: 2026-09-20
+updated: 2026-09-21
 sources: [2026-08-18_appliedmaterials_hbm-packaging-bottleneck-toolset, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-06-28_hyperframe_amat-hybrid-bonding-hedge, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq]
 related:
   - wiki/technologies/tsv.md
@@ -155,3 +155,23 @@ HyperFRAME Research（2026-06-28）：AMAT 的策略軸線是**「收斂」（co
 ### 三、把 fab 級量測下沉到封裝
 
 eBeam sub-10 nm 用於封裝基板。與 **Bruker** 把 AFM（Å 級）／AFP（<10 nm）導入混合接合表面量測，構成**兩個獨立廠商的同向動作** ➜ 佐證本 wiki「量測為第三個結構性瓶頸」的判斷在設備投資端已有對應。
+
+---
+
+## 2026-09-21 collect 更新：⚠「混合接合 CMP 市占 100%」查證未通過——降級為待證
+
+2026-09-20 依 SemiconSam（2025-09-18）記錄「**混合接合專用 CMP 設備 AMAT 市占 100%**（整體 CMP 60%）」，並據此推導出本 wiki 最強的供應鏈風險論述之一（「整個產業 pitch 微縮的速率上限，實質由一家設備商的製程能力決定」），同時把 AMAT 持股 Besi 9% 改讀為「控制限制層、再參股非限制層的縱向布局」。該項被列為**下一輪最高優先查證項**。
+
+**本輪查證結果：未能佐證，亦未能否證。**
+
+- 可檢索到的二手來源（SemiconductorX）給出 **AMAT CMP 全球市占 ~70%**（Reflexion 族）、**Ebara ~25%**（F-REX 族）——**與 SemiconSam 的「整體 60%」不一致**，且兩者皆無引用、無日期。
+- 該頁同時被證實含**產品層級錯誤**（將 Lam SABRE 3D 這個**電化學沉積平台**誤述為混合接合 CMP 平台，經 Lam 官方文件否證），**整體可信度不足以採信其任何數字**。
+
+➜ **本頁的記錄修正為**：
+- ✅ **「CMP 是混合接合的關鍵／限制環節」**——四個獨立來源支持（Damnang 2026-03-29、SemiconSam 2025-09-18、SemiconductorX、**Adeia EP4709132A2 專利標題直接為 "Chemical Mechanical Polishing for Hybrid Bonding"**）。**保留。**
+- ⚠ **「AMAT 在該環節市占 100%」**——**單一來源，降級為待證**。基於此數字推導的「一家設備商決定產業 pitch 速率」論述，**須標註為條件式結論**，不得作為其他推論的前提。
+- ⚠ 連帶地，「持股 Besi 9% = 沿限制鏈的縱向布局」這一讀法**亦降級為假說**（該讀法的說服力依賴 100% 這個數字）。
+
+➜ **提高證據門檻**：此後只接受 **AMAT 法說會逐字稿**、**SEMI 設備出貨統計**，或 **AMAT／Ebara／KC Tech 任一方的正式出貨宣告**。
+
+➜ 📌 **新增的反向線索**：本輪 Ru 基 nTSV 論文（復旦, Chip 2026-09-01）顯示，**當填充金屬硬到磨不動時，流程會改用離子束回蝕、CMP 直接消失**。若封裝界面金屬自 Cu 轉向 Ru／Co，**AMAT 在 CMP 的位置（無論市占多少）將不再是限制層**。此為該論述的**時間邊界**，見 [[technologies/hybrid-bonding]]。

@@ -3,7 +3,7 @@ title: "FOPLP — 扇出面板級封裝 / Fan-Out Panel-Level Packaging"
 category: technology
 tags: [fan-out, panel-level, TSMC, Samsung, ASE, Powertech, Innolux, CoPoS, InFO, cost-reduction, delamination, DCB, CTE]
 created: 2026-05-03
-updated: 2026-09-20
+updated: 2026-09-21
 sources: [2026-07-31_trendforce_ase-capex-record-10-5b-leap-foplp, 2025-09-12_trendforce_foplp-competitive-2025, 2026-04-13_trendforce_copos-pilot, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-21_3dincites_acm-wlp-plp-process-trends, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-15_digitimes_manz-310mm-foplp-ecd-equipment, 2026-06-13_digitimes_linkotech-foplp-rollout-traction, 2026-06-20_prnewswire_manz-asia-310mm-ecd, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_digitimes_tsmc-foplp-timeline-skepticism, 2026-07-06_trendforce_cfmee-plp2000-china-first-plp, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-08-06_siliconbox_500m-units-panel-scale, 2026-02-18_siliconbox_ep4697377a1-fanout-panel-metal-sealing-ring, 2026-07-28_xianfeng_cn122476946a-alignment-mark-protection, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo]
 related:
   - wiki/technologies/copos.md
@@ -496,3 +496,49 @@ DIGITIMES 2026-09-15 訪談 Corning，標題明確把 **CPO、玻璃核心基板
 1. **面板處理良率 70–85% vs 成熟有機基板 >90%**（Exponential Industry 2026-08-13）。面板每批次有效封裝面積為 300 mm 晶圓的 **4–6×**。➜ 面板級路線的核心取捨首次可量化：**以 4–6× 的面積效率換取 5–20 個百分點的良率劣勢**。⚠ 二手彙整，待一手確認。
 2. **面板廠轉型必須拆成兩條路**（BigGo 2026-06-21）：**Innolux → 基板材料加工**（玻璃核心，與 Ibiden 合作供 TSMC）；**AUO → 光元件**（CPO，與 Ennostar 合作）。兩者共用玻璃／大面積加工資產，但**落點在供應鏈的不同層**。2026-09-19 的「共同前置能力」論述成立，需補：**共同前置能力不等於共同落點。**
 3. 其他規格參考（同來源）：面板 510×515 mm～600×600 mm、線寬線距 ~2/2 µm、互連密度 10× 有機基板。
+
+---
+
+## 2026-09-21 collect 更新：⭐⭐⭐ 面板經濟學被反轉——面積優勢被逐件處理時間幾乎完全抵銷
+
+### 一、John Lau（IMAPS JMEP, 2026-09-15，OA 全文）的吞吐量數據
+
+**Pick-and-place 處理時間（300 mm 晶圓 vs 600×600 mm 面板）**
+
+| 晶粒尺寸 | 300 mm 晶圓 | 600 mm 面板 | 倍數 |
+|----------|-------------|-------------|------|
+| 2 × 2 mm | 100.1 min | **529.3 min** | **5.3×** |
+| 3 × 3 mm | 44.0 min | **235.2 min** | **5.3×** |
+
+**壓縮成型期間設備閒置率（600 mm 面板）**：2 mm 晶粒 **94%**｜3 mm **88%**｜5 mm **78%**
+
+➜ ⭐⭐⭐ **與 2026-09-20 收錄的 Exponential Industry「面板每批次有效封裝面積為 300 mm 晶圓的 4–6×」量級幾乎相同，方向相反，兩者接近抵銷。**
+
+➜ **本頁的成本論述必須改寫**：
+- ❌ 舊表述（隱含）：面板面積大 4–6×，故單位成本較低。
+- ✅ 新表述：**面板的成本優勢不來自面積，只來自「能避開逐件步驟的那些製程」**（塗佈、曝光、電鍍、成型等批次步驟）。**面板的效益取決於流程中逐件步驟所佔的比例，而非面板尺寸本身。**
+- ➜ 而 **94% 的成型設備閒置率**顯示：即使是批次步驟，其設備稼動也被逐件步驟的節拍拖垮。**面板產線的瓶頸是節拍不匹配，不是單機能力。**
+- ➜ 這與 2026-09-20 收錄的「玻璃面板處理良率 70–85% vs 成熟有機基板 >90%」是同一枚硬幣的兩面：**面板同時承擔吞吐劣勢與良率劣勢，而其唯一優勢（面積）已被前者抵銷大半。**
+
+➜ **作者明確建議 310 × 310 mm**："strikes a critical balance for HPC and data centers in AI era: it is large enough to capture the area efficiency (cost) and small enough to maintain the processing control (yield)."
+本 wiki 此前只記錄「TSMC CoPoS 採 310×310 mm」的事實，**首次取得「為何是這個尺寸」的論證**，並隱含指出更大面板（Rapidus 600 mm、CFMEE 510×515 mm、Powertech PiFO 510×515 mm）**承擔額外的吞吐與良率代價**。⚠ 此為單一作者觀點且為模擬，**列為新空缺：510×515 mm 陣營對吞吐量問題的回應為何？**
+
+**RDL 規格**：HPC／AI 資料中心 RDL 最小 **pitch 0.4 µm**、L/S 可至 **L = S = 0.2 µm（min）**——本 wiki 目前最細的 RDL 要求記錄。
+
+### 二、⭐⭐ 面板圖案化正分化為「粗快／細慢」的混合流程，本輪取得完整階梯
+
+三個互不相關的來源在同一輪拼出一條成本／解析度階梯：
+
+| 技術 | 適用尺寸 | 代價 | 來源 |
+|------|----------|------|------|
+| **雷射燒蝕** | >10 µm 級開口 | 開口呈**倒梯形，頂寬較底寬多 6.4 ± 0.6 µm**（底 10 µm 者頂須容納 ~16.4 µm，**面積代價 ~2.7×**） | ACS Omega, 2026-09-19 |
+| **投影式微影** | **≥ 1 µm** | field size 至少 **50 × 50 mm** | **Onto US20260186421A1**, 2026-07-02 |
+| **直寫式微影** | **< 1 µm** | 逐點，慢 | 同上 |
+
+- ⭐⭐ **Onto 專利主張在同一基板上併用投影與直寫。** 本 wiki 既有兩個極端：CFMEE PLP 2000（510×515 mm **純直寫**、2 µm）與 ASML XT:260（**純投影** 3D DUV）。本件是第一個明確的**分工**方案。
+- ⭐ **50 × 50 mm 視場為本 wiki 首個封裝級投影微影視場數值**。據此估曝光次數：310×310 mm 約 **≈36 次**、600×600 mm 約 **144 次**（未計 stepping overhead）。➜ **與 Lau 的「吞吐量受逐件／逐場處理次數支配而非面積」完全同向，且來源互不相關**（設備商專利 vs 學術綜述）。
+- ⭐ **解析度分界落在 1 µm**，恰位於 Lau 的 L/S 0.2 µm 目標與 Onto 自述 TGV 需求 1.5 µm 之間 ➜ **面板 RDL 正處於「同一層內同時存在需直寫與不需直寫的線」的過渡期**。
+- ➜ **本頁論述自「用哪種微影」改為「一片面板上同時用幾種圖案化技術，以及切換點落在哪」**。這與 Lau 的面板經濟學同向：**面板的成本優勢來自把盡可能多的圖案交給批次／大視場步驟。**
+- 📌 **PI 在本 wiki 第三次以順應層身分出現**（Kaneka 玻璃核心 PI 絕緣層 JP2026047137A；KETI／漢陽 low-k 有機緩衝層）。ACS Omega 補上 PI 的**可圖案化性**面向——**順應層要能被開孔，而開孔方式反過來限制可用線寬**。
+⚠ ACS Omega 一文為小型研究，無材料牌號、無雷射參數、無電性驗證，機構掛名異常，**來源品質中下，僅作方向性參考**。
+⚠ Onto 專利無吞吐量絕對值（wph/pph）、無套刻精度、無成本比較。

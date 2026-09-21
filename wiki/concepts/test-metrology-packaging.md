@@ -3,7 +3,7 @@ title: "先進封裝的測試、量測與失效分析 / Test, Metrology & Failur
 category: concept
 tags: [test, metrology, inspection, failure-analysis, KGD, KGI, KGP, DFA, yield]
 created: 2026-09-17
-updated: 2026-09-20
+updated: 2026-09-21
 sources: [2025-01-14_semieng_known-good-interposer-screening, 2025-07-10_semieng_advanced-packaging-reshaping-inspection, 2024-11-12_semieng_packaging-drives-test-metrology-innovation, 2026-08-01_jfap_3dic-failure-analysis-dfa, 2026-07-06_apl_lensless-through-silicon-phase-imaging, 2026-09-06_ndte_hysan-sparse-view-xct-tsv, 2026-08-02_chips_cpo-wafer-level-probe-card, 2026-08-27_samsung_us20260256000a1-interposer-test-pad, 2026-08-13_jcet_us20260239928a1-hybrid-bonding-substack-test, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-06-28_hyperframe_amat-hybrid-bonding-hedge]
 related:
   - wiki/technologies/hybrid-bonding.md
@@ -339,3 +339,65 @@ BW-STAR 報告：在 **41–197 個取樣標記**下，接合波各向異性核*
 - **AMAT**（HyperFRAME 2026-06-28）：把 fab 級量測部署到封裝基板，eBeam 靈敏度 sub-10 nm；策略軸線為「每片晶圓上良率關鍵接觸點的數量」而非單一 hero tool。
 
 ➜ **兩個獨立廠商的同向動作**，佐證本頁「量測為第三個結構性瓶頸」的判斷在設備投資端已有對應。
+
+---
+
+## 2026-09-21 collect 更新：⭐⭐⭐ 量測不確定度首次達 100%——「製程均勻度」數字可能主要是量測雜訊
+
+### 一、比值表新增第三筆，且是最極端的一筆
+
+**天津大學（Optics & Laser Technology, 2026-09-19）**：10 GHz 電光雙梳飛時測距量測 5×5 TSV 子陣列（孔徑 ≈10 µm）。
+
+| 量 | 值 |
+|----|-----|
+| 校正對照雷射干涉儀 | 0.4 mm 量程 **RMS 殘差 79.7 nm** |
+| 子陣列**平均深度** | **109.88 µm**（AR ≈ 11） |
+| 單一 TSV 深度**重複量測標準差** | **≈ 2.18 µm** |
+| 跨子陣列深度**標準差** | **2.15 µm** |
+
+**2.18 µm（量測在抖）≈ 2.15 µm（陣列真的不均勻）** ➜ **此配置下無法區分兩者。**
+
+| 案例 | 規格窗／待測變異 | 量測不確定度 | 比值 |
+|------|------------------|--------------|------|
+| 混合接合 Cu recess（Bruker AN-5001, 2026-09-20） | 1–5 nm | ~1 nm | **20–100%** |
+| 晶圓減薄終點（天津大學 MSSP, 2026-09-18） | 3 µm | 0.5 µm | **~17%** |
+| **TSV 陣列深度均勻性（天津大學 O&LT, 2026-09-19）** | **2.15 µm** | **2.18 µm** | **~101%** |
+
+### 二、⭐⭐⭐ 新型態：「絕對精度優異」與「答不出產線的問題」並不矛盾
+
+該系統的**絕對**定位能力極強——0.4 mm 量程 RMS 殘差 79.7 nm，相對 109.88 µm 深度僅 **0.07%**。但產線真正要問的是「**這批孔彼此一致嗎**」，而該問題比較的是兩個各自帶 2.18 µm 雜訊的量測值之**差**，訊噪比隨之降到 1:1。
+
+➜ **本頁新增一類失效模式：規格漂亮但答錯問題。** 既有兩類為（a）**精度不足**型、（b）**完全脫鉤**型（ARCH 的孔外接觸角、KAIST×Samsung 的翹曲 vs 局部應力）。本件是第三類——**指標本身有效、精度也足夠，但被用來回答一個它的不確定度無法支撐的衍生問題（差值／變異）。**
+
+### 三、⭐⭐⭐ 橫向論述升級與作業規範
+
+2026-09-20 的版本：「量測不確定度已普遍佔據規格窗的顯著比例；量測能力是製程能力的組成部分，而非其外部的驗證手段。」
+
+**本輪追加**：**當比值逼近 100%，被報告的「製程均勻度」數字可能主要是量測系統本身的雜訊。凡引用陣列／批次均勻度數字（含本 wiki 既有的 TGV、TSV、pad recess 相關記錄），都必須同時知道其量測重複性，否則該數字不可比較、亦不可追蹤趨勢。**
+
+➜ **新作業規範**：日後收錄任何「均勻度／變異／標準差」數字時，於來源頁明確標註**是否附有重複性數據**；未附者標為 ⚠。
+
+⚠ 2.18 vs 2.15 的對照為本 wiki 讀出，**非原文結論**；實驗室系統、單一樣品條件。
+
+### 四、訊號預算：深孔量測的困難不是解析度問題
+
+原文指出：**孔底光回訊隨孔徑下降、深寬比上升而急遽衰減**，這是非接觸光學量測 TSV 的根本困難。
+
+➜ 與 Onto（2025-10-06）的 TGV「需同時量頂／腰／底三個 CD」對照：**兩者都指向同一件事——越深的孔，越靠近底部的資訊越貴。TGV／TSV 的量測困難是訊號預算問題，不是解析度問題。**
+➜ 這也解釋了為何「代理指標完全脫鉤」型失效（ARCH：孔外接觸角對孔內狀態零敏感）在深孔製程特別容易發生：**因為孔內的直接量測太貴，產線被迫使用孔外的代理量。**
+
+### 五、⭐⭐ 來源可信度需要分級——本輪攔下一次誤記
+
+本 wiki 既有的來源分類軸為**一手 / 二手 / 付費牆**。本輪出現第四類：**看似專業、實際含產品層級錯誤的彙整型網站**。
+
+SemiconductorX 具備正確的產業詞彙、合理的市占量級與正確的競爭者名單，卻把 **Lam SABRE 3D（電化學沉積平台）誤述為混合接合 CMP 平台**——經 Lam 官方產品頁與部落格否證。**這種錯誤無法靠內部一致性檢查發現，只能靠一手交叉比對。**
+
+➜ ⭐ **新作業規則：凡「某公司的某產品做某製程」之敘述，一律以該公司官網產品頁複核後方可入庫。**
+➜ **低可信度名單（新建）**：`semiconductorx.com`。
+詳見 [[sources/2026-09-21_semiconductorx_cmp-share-lam-sabre-correction]]。
+
+### 六、量測軌常駐觀察機構：天津大學
+
+**天津大學連兩輪出現於量測軌**（2026-09-20 晶圓減薄原位厚度監測 MSSP；本輪 TSV 深度雙梳測距），取向一致——**把實驗室級光學量測推向產線幾何**。建議列為常駐觀察機構。
+
+**Onto Innovation** 同樣升級為常駐：本輪同時出現於**檢測**（TGV 三個 CD）與**微影**（US20260186421A1 混合曝光）兩側，是設備商「機台 + 量測 + 圖案化」邊界外擴的又一實例。
