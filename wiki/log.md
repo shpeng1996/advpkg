@@ -3780,3 +3780,7 @@ an（2028–2029 量產世代）為 CoPoS 最可能的首批量產客戶——�
   10. **lint 待辦（沿用，優先序不變；已逾 7 日未 lint）**：⚠ `wiki/technologies/info-wmcm.md` 非合法 UTF-8（約 4721 位元組處截斷）——**最優先**；`wiki/index.md` 來源清單全域重排（本輪以程式插入並逐筆驗證前後序，但全檔仍有 **70 組**非遞減相鄰對）；`glass-substrate.md` 中「玻璃核心基板」與「玻璃核心中介層」混用需分開（**本輪 AMAT 與 Micromachines 兩篇皆同時涉及兩者，優先序再上調**）。
 
 > **2026-09-22 營運附註（git 鎖檔）**：本輪開始前檢查 `.git/*.lock` 與 `.git/objects/**/tmp_obj_*`，**皆為 0**；`git status` 為乾淨。刪除權限**仍未開啟**，故沿用 `mv` 處置任何新生成的殘留檔。
+
+> **2026-09-22 補記（commit 後）**：commit `d5bd6b6`（43 檔）成功。過程中 git 再度產生 `index.lock` 與 **43 個 `tmp_obj_*`**，全部以 `mv` 移入 `.git/_stale_tmp_objs/`。⚠ **本輪發現一個先前未記錄的操作細節：`git add -A` 之後若不先把 `index.lock` 移走，隨後的 `git commit` 必然以 "Unable to create index.lock: File exists" 失敗。** 正確序列為：`git add -A` → **`mv .git/index.lock`** → `git commit`。已記於此供後續輪次沿用。
+> ⚠ 另：本輪的 `find .git -name 'tmp_obj_*'` 亦匹配到 `_stale_tmp_objs/` 內既有殘留並重新命名搬移，故該目錄現累計 **1,057 個**檔案（此數字與 2026-09-20/21 記載的 266／327 不可直接比較，計數方式不同）。**下輪起 find 應限定 `.git/objects`，避免重複搬移既有殘留。**
+> **建議（需人工，沿用且已連續五輪）**：（a）於排程任務設定中為 `D:\@source\AdvancedPackaging` 開啟刪除權限；或（b）手動刪除 `.git/_stale_tmp_objs/`。殘留檔每輪約 +40–70。
