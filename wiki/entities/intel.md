@@ -3,7 +3,7 @@ title: "英特爾 / Intel"
 category: entity
 tags: [IDM, advanced-packaging, EMIB, Foveros, Intel18A, Clearwater-Forest, Foveros-Direct, glass-substrate, 14A, High-NA-EUV, silicon-capacitors, Google-TPU-v8e, Q2-2026-earnings, Tesla-14A, HLFF, RAMP-C, Secure-Enclave, Rio-Rancho]
 created: 2026-04-24
-updated: 2026-09-19
+updated: 2026-09-22
 sources: [2026-08-24_intel-newsroom_hot-chips-2026-diamond-rapids-foveros-ucie, 2026-04-24_initial-survey, 2026-07-20_trendforce_tsmc-265b-arizona-intel-novalake, 2026-03-18_trendforce_intel-emib-malaysia, 2026-03-03_trendforce_intel-clearwater-forest, 2026-03-05_trendforce_intel-emib-billions, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-04-20_trendforce_intel-foundry-14a-equipment, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-01_semianalysis_cpus-back-datacenter-2026, 2026-04-10_3dincites_intel-gan-chiplet, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks, 2026-06-21_convergedigest_intel-emib-t-multi-die-packaging, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap, 2026-07-01_trendforce_terafab-intel-veteran-hire, 2026-04-07_tomshardware_intel-joins-terafab, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-01-30_tomshardware_intel-ai-chip-test-vehicle-emib-t, 2026-07-14_trendforce_intel-ireland-5b-intel3-europe, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-04_semieng_from-blueprint-intel-hlff, 2026-07-31_semieng_chip-week-149, 2026-08-13_trendforce_intel-memory-reentry-xbm-zam-saimemory, 2026-06-02_intel_ectc2026-emib-t-cpo-glass]
 related:
   - wiki/entities/tsmc.md
@@ -552,3 +552,18 @@ Intel Optical Compute Interconnect：緊湊光學 I/O chiplet，含矽 PIC、**�
 ⭐ **能效數字必須帶距離限定**：5 pJ/bit vs 15 pJ/bit 的比較基準是 **100 m**。本 wiki 首次取得 CPO 能效的距離限定；既有記錄中的 pJ/bit 數字應回頭補註距離。
 
 ⚠ Intel 是四家中**唯一未揭露具名量產客戶或上市日期**者。
+
+---
+
+## 2026-09-22 collect 更新：⭐⭐ 專利訊號——Intel 把排他權下在 TCB 鍵合頭的噴嘴幾何上
+
+**US20260191069A1**（family 100313000，2026-07-02，發明團隊為越南＋美國）：熱傳耦合器／噴嘴，**相對兩面各有非連續通道（non-continuous channels）**。
+**EP4770413A2**（family 97676746，2026-07-01，**完全不同的美國團隊**）：熱傳耦合器在**與晶片貼附面相反的一側設有腔室（cavity）**。
+兩件皆明指應用於**熱壓鍵合（TCB）形成第一層互連（FLI）**。
+
+- ⭐⭐ **本 wiki 既有的 Intel 封裝專利多在結構層**（EMIB-T、Foveros、玻璃面板框架 CTE < 11）。把**鍵合頭噴嘴的內部流道幾何**寫成請求項，等於主張 **TCB 的瓶頸在鍵合頭的熱均勻性**（⭐ 本 wiki 推論，說明書未如此陳述）。
+- ⭐⭐ ➜ **本 wiki 的「熱」應拆成兩條線：運作熱 vs 製程熱。** 運作熱既有豐富記錄；**製程熱**此前僅有 775 µm 熱預算與退火溫度兩個切入點，本件新增第三個：**鍵合頭本身**。
+- ⭐ **兩個不同 family、不同團隊、相鄰日、各主張一種幾何**——「圍籬式布局」的第三個實例（既有 SanDisk D2W、Adeia），且**首次出現在設備配件層級**。⚠ 這也顯示 **Intel 在自有產線的組裝設備上持有 IP**，與其 IDM 定位一致，但與本 wiki 既有的「Intel 以 EMIB-T 外包 Amkor」記錄並置時值得追問：**外包夥伴使用的是誰的鍵合頭？**
+- ⚠ **溫度、溫度均勻度、升降溫速率、吞吐量全部未揭露。**
+
+⚠ **專利是前瞻訊號，非已出貨能力。**

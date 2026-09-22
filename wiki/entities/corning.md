@@ -3,7 +3,7 @@ title: "康寧 / Corning Incorporated"
 category: entity
 tags: [glass-substrate, TGV, materials, CPO, Corning]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-22
 sources:
   - 2026-08-06_epo_corning-small-diameter-tgv-adhesion
 related:
@@ -58,3 +58,15 @@ related:
 - Corning 的 TGV 金屬化是自用（供應已金屬化的基板）或授權？商業模式未明。
 
 ⚠ **專利為前瞻訊號**：Corning 於 2026-08 公開之專利顯示其佈局方向，**非已商業化製程**。
+
+---
+
+## 2026-09-22 collect 更新：⭐⭐⭐ 獨立第三方確認 Corning 所賭的失效模式是真實的
+
+**Applied Materials（Germany），IMAPS DPC 2026（2026-08-19）** 以有限元素模擬 + 熱循環／退火實驗，識別 TGV 的**兩種主導失效模式**：
+1. **銅剝離 ← 種子層附著力不足**
+2. **玻璃開裂 ← 通孔邊緣應力集中**
+
+➜ ⭐⭐⭐ **Corning WO2026164778A1（2026-08）的 Ti/Cu 黏著層 + 羥基富化 + 矽烷官能化 + 無電鍍種子層，正是針對第 ① 種模式的解。** 本頁 2026-09-18 記錄的「**Corning 賭界面可做牢 vs Intel 賭界面必失效**」兩條相反工程哲學，至此取得一個獨立第三方的確認：**該賭注的標的（種子層界面）確實是兩大失效模式之一**。⚠ **AMAT 未裁定哪一方對**——AMAT 自己的解是**多層 liner 應力緩衝**，等於同時處理 ①（附著）與 ②（應力傳遞），**是第三條路線**。
+
+➜ ⚠ **列管空缺「Corning small via diameter 的實際數值」提問方式再次修正。** 本輪 Micromachines 綜述（2026-09-20）確立 TGV 剖面有**五種形態**（直壁／沙漏／等腰錐／倒錐／底切），且沙漏形的**腰部高度本身是獨立變數**。➜ 新提問形式：**「頂／腰／底何者，以及若為沙漏形，腰在什麼高度」**；並應先確認 Corning 的 TGV 屬五類中何者。

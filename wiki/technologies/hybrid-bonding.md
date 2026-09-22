@@ -3,7 +3,7 @@ title: "混合接合 / Hybrid Bonding"
 category: technology
 tags: [3D, hybrid-bonding, Cu-Cu, SoIC, ECTC, advanced-packaging, DRAM, COP, 4F2, Sn-damascene, damascene-interconnect, PFAS-free, patent-signal, guard-ring, surface-activation]
 created: 2026-04-24
-updated: 2026-09-21
+updated: 2026-09-22
 sources: [2026-05-21_semiecosystem_ectc2026-cpo-hybridbonding-plp, 2026-04-24_initial-survey, 2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-03-01_3dincites_besi-packaging-power-shift, 2026-01-13_semiengineering_hbm4-microbumps, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-19_semieng_advanced-packaging-limits, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-03-27_3dincites_copper-grain-hybrid-bonding, 2026-03-02_semieng_making-hybrid-bonding-better, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2026-04-29_semiwiki_cea-leti-ectc2026-hybrid-bonding, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2024-02-09_semianalysis_hybrid-bonding-process-flow, 2026-05-19_semiconductor-digest_ev-group-ectc2026-hybrid-bonding, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-04-19_semiwiki_apple-m5-cucu-hybrid-bonding-shipped, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-18_imec_iii-v-chiplet-rf-laser-bonding, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-29_evgroup_ectc2026-hybrid-bonding-layer-transfer, 2026-06-29_thelec_skhynix-hybrid-bonding-equipment-order, 2026-06-05_semieng_intel-ectc-2026-emib-t-cpo-glass, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-14_trendforce_samsung-hbm-hiring-hybridbonding, 2026-07-16_semieng_fine-pitch-hb-high-volume, 2026-07-16_semieng_alt-materials-hybrid-bonding, 2026-06-08_irtnanoelec_d2w-hybrid-bonding-1um-pitch, 2026-05-28_imec_w2w-hybrid-bonding-200nm-pitch, 2026-09-09_acsaelm_microwave-anneal-cu-cu-150c-3min, 2026-08-21_scirep_copper-oxide-reduction-ar-h2-pulsed-plasma, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-03-29_damnang_hybrid-bonding-cmp-gating-factor, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-04-02_adeia_us20260096463a1-buildup-organic-dielectric-bonding, 2026-07-17_jcet_cn122421815a-asymmetric-bonding-interface, 2026-04-30_seoultech_us20260123559a1-hydrocarbon-plasma-low-temp-bonding, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer, 2023-09-13_nccavs_intel-cmp-dishing-requirement-vs-achieved, 2026-03-11_epo_adeia-cmp-for-hybrid-bonding-patent, 2026-09-01_chip_ru-bpr-ntsv-ion-beam-recess, 2026-02-10_epo_shanghai-univ-citric-acid-cu-reduction-sog, 2026-09-21_semiconductorx_cmp-share-lam-sabre-correction, 2026-09-16_jsandwich_cucu-diameter-nonmonotonic-local-optimum, 2026-07-21_lam_sabre-3d-is-ecd-not-cmp]
 related:
   - wiki/technologies/soic.md
@@ -1426,3 +1426,53 @@ Damnang 給出分段值：**CIS 應用 ~200 nm；邏輯／HPC <100 nm**。
 
 ➜ 通則的更精確形式：**同一設計變數對不同失效模式的最佳值不同；「最佳值」只在指定失效模式後才存在。**
 ⚠ 10–18 µm 屬 microbump／Cu pillar 尺度，**不可外推至混合接合 6–9 µm pad pitch**；純 FEM。
+
+---
+
+## 2026-09-22 collect 更新：限制鏈出現第四環、dishing 的雙向失效、以及第一件「規避混合接合」的專利
+
+### 1. ⭐⭐⭐ Cu dishing 是雙向失效參數，且控制窗口僅約 2 nm 寬
+綜述（大連交通大學，*J. Sci. Adv. Mater. Devices* 11(2) 101155，2026-03-27）給出至今最完整的單篇量化表：
+
+| 項目 | 數值 |
+|------|------|
+| **Cu dishing 控制（跨多特徵晶圓）** | **3–5 nm** |
+| SiO₂ 粗糙度 | Ra < **0.1 nm** |
+| Cu 粗糙度 | Ra < **0.2 nm** |
+| 最佳化 CMP 之 SiCN | **< 2 Å RMS**（第三個獨立來源 ➜ 升為產業共識值） |
+| 接合能 | SiCN/SiCO 退火後 **2.32 J/m²** vs SiON/SiON **1.5 J/m²** |
+| 剪切強度 | C₂H₄ 電漿 200 °C **38 MPa**；N₂/Ar 250 °C 30 MPa；**Ar/H₂+檸檬酸 200 °C 21 MPa**；nt-Cu 大晶粒 46.1→**57.1 MPa** |
+| 比接觸電阻 | Ru 鈍化 **1.78×10⁻⁷ Ω·cm²**；NaOH 150 °C **3.2×10⁻¹⁰ Ω·cm²** |
+| (100) 取向晶粒 | 接合強度 **+25%** |
+
+- ⭐⭐⭐ **dishing 不足 → 空洞；dishing 過度 → 間隙無法閉合。** 這是本 wiki「關鍵參數不是單調的」清單的**第七例，且是唯一上下界皆有明確物理機制者**。➜ 論述可收斂為：**當一個參數同時服務兩個相反的失效模式，最佳值必然是區間而非極值。**
+- ⚠ **列管空缺「2026 年 Cu recess 產線實績」降級但不關閉。** 2023-09 Intel Basim：需求 1–5 nm、產線實績 5–25 nm。本篇（2026-03）把**控制能力**記為 3–5 nm。若為實驗室水準，則**可達水準與產線實績仍差 2–5 倍**；原因果鏈成立但改述為「**已可達標、尚未穩定**」。追蹤方式改為：**找出一個明確標註為產線的 dishing 分布**。
+- ⚠ **檸檬酸路線的優勢不在強度。** 2026-09-21 收錄的上海大學 CN121511008A（檸檬酸同時還原 Cu 並親水化 SOG）今取得外部錨點 **21 MPa**，**低於 C₂H₄ 電漿 38 MPa 與 N₂/Ar 30 MPa**。其價值主張應改記為**流程簡化**。
+
+### 2. ⭐⭐ 表面製備鏈的第四環：CMP 後清洗（待證）
+NineScrolls（2026-06-01／2026-08-15 更新）主張五段鏈為 CMP → **CMP 後清洗** → 介電面電漿活化 → 銅面製備（queue time）→ 量測，並斷言**「CMP 後清洗是繼 CMP 本身之後最大的單一良率槓桿」**。
+- 量化：介電層 RMS **< 0.5 nm**；銅凹陷**容許窗口常僅約 2 nm 寬**；⭐ **1 µm 顆粒可誘發數百微米寬的空洞（放大 10²–10³ 倍）**——本 wiki 的「潔淨度」首次取得量級。
+- ⭐ **列管空缺「Cu 氧化相門檻」的實務形式被指認為「時間窗」而非「溫度門檻」**：氧化物成長呈**對數**，可操作變數為 **queue time**（數十分鐘–數小時）。
+- ⚠ 該排序主張未附數據，**列為待證的排序修正候選**；2026-09-19 的三層排序（①表面平坦度 > ②die 翹曲 > ③機台對準）不予改寫。
+
+### 3. ⭐⭐⭐ 專利訊號：第一件把「規避混合接合」寫成明示效果的專利
+**珠海天成 CN121666157A**（2026-03-13，family 98995490）：模封開孔填銅 + TSV 熱壓鍵合，自述**「避免了對前道混合鍵合設備與超高潔淨環境的依賴」**，模封盲孔 **AR ≤ 10**，目標晶片為 **InP**（指向 CPO／光電異質整合）。
+➜ 「潔淨度／設備門檻是成本項」自本 wiki 推論升格為**有申請人以排他權下注的商業判斷**（⚠ 中國中型業者，非產業共識）。與 NineScrolls 的顆粒代價量化**互為表裡**——同一輪內取得一個瓶頸的「代價量級」與「規避行為」兩種證據，本 wiki 屬首次。
+➜ ⭐ **新橫向模式：當某製程規格難度陡升時，業界的第二條路不是改進該製程，而是把設計移到規格較鬆的區間**（另例：面板圖案化的粗快／細慢分工）。
+
+### 4. ⭐⭐⭐ 「一次研磨兩種材料」出現兩條方向相反的排他權路線
+- **Adeia EP4709132A2**（2026-03-11）：以阻障層作研磨停止層，**把一次研磨兩種材料拆成兩段**。
+- **TSMC CN120035162A**（2025-05-23，family 95727703）：**二氧化鈦–二氧化矽混合顆粒磨料 + 氧化劑，使兩種材料可同時研磨**。
+➜ **IP 授權商與晶圓廠兩種完全不同的商業模式都在此下注**，比任何單一路線更能佐證「CMP 是限制層」。⚠ TSMC 該件請求項未提及混合接合，僅支持「TSMC 在雙材料同時 CMP 上持有排他權」這個較弱陳述。
+➜ 附帶趨勢：磨料自單一氧化物轉向**含鈦混合顆粒**（另見 YCCHEM WO2026147117A1，2026-07-09；純配方故未選入）。
+
+### 5. ⭐ 設備生態系：Hanmi 的三年落差、CEA+SET、以及 AMAT 的官方產品對照
+- **Hanmi**（Semiconductor Digest，2026-04-10）：第二代混合接合機**原型 2026 年底**、仁川 ₩100B／Class 100 廠房 **2027 上半**、**量產採用 ~2029**。第一代為 2020 年。➜ ⭐ **Hanmi 在 TC bonder 的領先並未轉移到混合接合**：同一家公司在相鄰技術上落後約三年，是「TC bonding 與 hybrid bonding 不是同一條學習曲線」的直接證據。⚠ 未揭露對準精度或吞吐量。
+- **CEA + SET Corporation JP2026501395A**（2026-01-14 公開，**優先權 2022-12-28**）：D2W 直接混合接合方法。➜ ⭐ 對照 CEA-Leti 的 **ECTC 2026 D2W 1 µm** 發表，本 wiki 首次量到同一機構「**排他權布局 → 學術發表**」的間隔約 **3–4 年**。**方法論意涵：論文是落後指標，不是領先指標。** 另：D2W 設備側 IP 不只 Besi／ASMPT／EVG 三強。
+- **AMAT 官方頁（一手）**：明列 **Opta、Catalyst = CMP 平台**；**Insepra™ SiCN = 混合接合表面製備**；合作為 **EVG（W2W）／Besi（D2W）**。官方自陳挑戰三項並列：**無缺陷／對準誤差近零／成本更低**——與本 wiki 的限制鏈同構但**未給排序，且不提表面平坦度**。⚠ 全頁**無市占數字**。
+
+### 6. ⚠ 新增／修正之未解問題
+- [ ] **CMP 後清洗是否真的排在翹曲與對準之前**（NineScrolls 單一來源，無數據）
+- [ ] **明確標註為產線的 2026 年 dishing 分布**（取代原「Cu recess 產線實績」的提問方式）
+- [ ] **queue time 的實際上限**（取代原「Cu 氧化相溫度門檻」的提問方式）
+- [ ] **Hanmi ~2029 與 HBM4E（2027 年底）混合接合導入時程的關係**——若 HB 確於 2027 年底導入，該世代機台由誰供應？

@@ -3,7 +3,7 @@ title: "TSV — Through-Silicon Via / 矽穿孔"
 category: technology
 tags: [TSV, HBM, interposer, 3D-IC, CoWoS, manufacturing, backside-power, advanced-packaging, radiation, redundancy, reliability]
 created: 2026-08-10
-updated: 2026-09-21
+updated: 2026-09-22
 sources: [2026-04-22_semieng_tsv-complexity-manufacturing-bottleneck, 2026-08-21_semieng_chip-week-152, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-08-21_scirep_copper-oxide-reduction-ar-h2-pulsed-plasma, 2026-06-08_irtnanoelec_d2w-hybrid-bonding-1um-pitch, 2026-03-13_kaneka_jp2026047137a-glass-core-polyimide-quantified, 2026-08-10_screp_low-k-organic-buffer-tgv-cu-metallization, 2026-08-04_jmrt_vacuum-assisted-void-free-cu-fill-tgv, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring]
 related:
   - wiki/technologies/hbm4.md
@@ -361,3 +361,16 @@ JP2026047137A：聚醯亞胺絕緣層覆蓋貫孔側壁導電層，限定 **醯�
 ➜ 本頁既有的 **NanoTSV（<100 nm，2nm+ 背面供電）**條目首次取得具體的**金屬化與凹陷方案**。
 ➜ ⭐⭐ 更重要的推論見 [[technologies/hybrid-bonding]]：**「CMP 是 pitch 微縮第一限制」這句話綁定於 Cu 金屬化**；金屬換成 Ru／Co 等難研磨金屬時，限制層會平移到回蝕均勻度與 ALD 保形性。
 ⚠ 本件屬 BSPDN／nTSV，尺度介於前段與中段之間，**不是封裝級 TSV（2–5 µm）或中介層 TSV（5–20 µm）**，結論不可直接類比。
+
+---
+
+## 2026-09-22 collect 更新：以「放寬縱橫比」換製程寬容度的一個實例
+
+**珠海天成 CN121666157A**（2026-03-13，family 98995490）：InP 晶片模封後，在其側邊開設**縱橫比 ≤ 10 的盲孔**並填充電鍍銅形成「模封銅端」，再與 TSV 晶片的露銅端**熱壓鍵合**。申請人自述**「避免了對前道混合鍵合設備與超高潔淨環境的依賴」**。
+
+- ⭐ **刻意把 AR 壓在 ≤ 10**：對照本 wiki 既有的 AMAT Nokota VMax 2 ECD（TSV **<3 µm / AR >10:1**）與 TGV（LIDE、AR >10:1 級），本件**以放寬幾何換取製程寬容度**。
+- ➜ ⭐ **歸納出的橫向模式**：**當某製程的規格難度陡升時，業界的第二條路不是改進該製程，而是把設計移到規格較鬆的區間。** 另一實例為面板圖案化的「粗快／細慢」混合流程（雷射燒蝕 >10 µm → 投影微影 ≥1 µm → 直寫 <1 µm）。
+- ⭐ **「模封層裡的銅通孔」是 TSV 之外的第三種垂直互連路徑**（既有為矽 TSV、玻璃 TGV）。其載體是模封材料，且申請人主張模封材料本身可**緩衝 CTE 失配應力**。
+- ⚠ 無任何電性、熱阻或 pitch 數值；申請人為中國中型業者，**不可讀為產業共識**。
+
+⚠ **專利是前瞻訊號，非已出貨能力。**

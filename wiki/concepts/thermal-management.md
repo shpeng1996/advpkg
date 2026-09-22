@@ -3,7 +3,7 @@ title: "先進封裝熱管理 / Thermal Management in Advanced Packaging"
 category: concept
 tags: [thermal-management, liquid-cooling, 3D-IC, CoWoS, heat-dissipation, TIM, ECTC-2025, GaN, power-delivery, co-design, patent-signal, delamination]
 created: 2026-04-25
-updated: 2026-09-21
+updated: 2026-09-22
 sources: [2025-12-01_semiengineering_thermal-management, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-02_trendforce_samsung-hbm5-computex2026, 2026-05-21_semieng_hi-roadmap-nature-paper-intel, 2026-08-13_semieng_1mw-rack-debate-thermal, 2026-04-27_semieng_semiconductor-materials-misbehave, 2026-08-21_trendforce_chip-packaging-heat-ai-bottleneck-cpo-stco, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer]
 related:
   - wiki/technologies/cowos.md
@@ -656,3 +656,22 @@ IBM 的作法是在同一接合區內分割「接合介電區」與「導熱材�
 ➜ 可記為一條產業觀察：**這是規格與物理認知落差的常態，而非個案。** 本 wiki 引用任一廠商的允收規格時，應同時查其是否已有共著論文指出該規格的限制。
 
 ⚠ **10–18 µm 屬 microbump／Cu pillar 尺度，不是混合接合的 6–9 µm pad pitch**，結論不可外推至混合接合界面。純 FEM，僅升溫段有實驗驗證。
+
+---
+
+## 2026-09-22 collect 更新：⭐⭐ 「熱」應拆成運作熱與製程熱兩條線
+
+本頁至今的記錄幾乎全屬**運作熱**（晶片運轉時的散熱）：微通道冷卻、兩相冷卻、液冷滲透率、TIM 材料、HBM 熱路徑、CPO + STCO。本輪的 Intel 專利迫使本 wiki 承認第二條線。
+
+### 製程熱 / Process-Side Thermal
+定義：**製造與組裝當下的熱管理**，其失效後果是良率與結構缺陷，而非運轉降頻。
+
+本 wiki 目前的三個切入點：
+1. **775 µm 熱預算天花板**（既有）——封裝總厚度與熱膨脹的約束
+2. **退火溫度帶**（既有；本輪補強：低溫混合接合 150–250 °C vs 傳統 350–400 °C，見 [[technologies/hybrid-bonding]]）
+3. ⭐ **鍵合頭本身**（本輪新增）——**Intel US20260191069A1 / EP4770413A2**（2026-07，兩個不同 family、不同團隊）把**熱傳耦合器（TCB 噴嘴）的內部流道幾何**寫成請求項：一件主張**相對兩面的非連續通道**，一件主張**背面腔室**。
+   ➜ ⭐ 讀法：**TCB 的瓶頸在鍵合頭的熱均勻性**（本 wiki 推論，說明書未如此陳述）。⚠ 無任何溫度或均勻度數值。
+
+### ⭐ 為何這個區分重要
+本 wiki 既有的「**架構圍繞熱管理**」（Micron，2026-08-26）與「**兩相冷卻是下一個散熱轉型**」（Amkor CEO，2026-09-08）皆屬運作熱。若不區分，容易把 Intel 這類**製程熱**專利誤讀為產品散熱布局。
+➜ 另一個連結：2026-09-21 已以物理量把 **Cu 熱膨脹 1 nm/mm/50 °C**、**退火前間隙 9–47 nm** 與 **775 µm 熱預算**連成同一條約束——**那條約束整條都屬製程熱**。本輪之後，製程熱有了自己的三個切入點，可獨立成節追蹤。

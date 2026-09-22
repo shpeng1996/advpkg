@@ -562,3 +562,17 @@
 2026-09-21 | https://doi.org/10.1016/j.optlastec.2026.116419 | raw/papers/2026-09-19_openalex_tsv-depth-metrology-dual-comb-tof.md | TSV depth: repeatability 2.18um vs array sigma 2.15um
 2026-09-21 | https://doi.org/10.1016/j.chip.2026.100222 | raw/papers/2026-09-01_openalex_ru-buried-power-rail-ntsv-cointegration.md | Ru BPR+nTSV: ion-beam recess replaces CMP; 11.4-11.8 ohm/um
 2026-09-21 | https://doi.org/10.1021/acsomega.6c07277 | raw/papers/2026-09-19_openalex_polyimide-laser-ablation-patterning-taper.md | PI laser ablation: inverted trapezoid, top 6.4um wider
+2026-09-22 | https://www.semiconductor-digest.com/hanmi-semiconductor-to-launch-second-generation-hybrid-bonder-by-end-of-2026/ | raw/articles/2026-04-10_semiconductor-digest_hanmi-2nd-gen-hybrid-bonder-2029.md | Hanmi 2nd-gen HB prototype end-2026, mass adoption ~2029
+2026-09-22 | https://newsroom.lamresearch.com/wafer-to-panel-lam-scaling-advanced-packaging-panel-level-processing?blog=true | raw/articles/2026-06-25_lamresearch_wafer-to-panel-salzburg-panel-coe.md | Lam primary: ~100x100mm is where wafers stop being efficient
+2026-09-22 | https://www.appliedmaterials.com/us/en/semiconductor/markets-and-inflections/heterogeneous-integration/hybrid-bonding.html | raw/articles/2026-09-22_appliedmaterials_hybrid-bonding-opta-catalyst-cmp-primary.md | AMAT primary: Opta+Catalyst are its HB CMP tools; Insepra SiCN
+2026-09-22 | https://ninescrolls.com/insights/surface-preparation-cu-cu-hybrid-bonding/ | raw/articles/2026-06-01_ninescrolls_surface-preparation-cu-cu-conditioning-chain.md | Post-CMP clean is biggest yield lever after CMP; 1um particle
+2026-09-22 | EPO:98995490:CN121666157A | raw/patents/2026-03-13_CN121666157A_zhuhai-tiancheng-mold-via-tsv-tcb-hybrid-bonding-avoidance.md | Mold-via+TCB to avoid HB tools and ultra-clean rooms
+2026-09-22 | EPO:100313000:US20260191069A1 | raw/patents/2026-07-02_US20260191069A1_intel-heat-transfer-coupler-tcb-nozzle.md | Intel claims TCB bond-head nozzle geometry (also EP4770413A2)
+2026-09-22 | EPO:100479773:CN122396357A | raw/patents/2026-07-14_CN122396357A_meadville-glass-substrate-tcb-cmp-cyclic-stacking.md | Meadville: glass carrier, per-layer TCB+CMP cyclic stacking
+2026-09-22 | EPO:95727703:CN120035162A | raw/patents/2025-05-23_CN120035162A_tsmc-cmp-slurry-titania-silica-dual-material.md | TSMC titania-silica slurry polishes metal+dielectric together
+2026-09-22 | EPO:86329185:JP2026501395A | raw/patents/2026-01-14_JP2026501395A_cea-set-d2w-direct-hybrid-bonding.md | CEA+SET D2W direct hybrid bonding (prio 2022, JP phase)
+2026-09-22 | https://doi.org/10.1016/j.jsamd.2026.101155 | raw/papers/2026-03-27_sciencedirect_cu-cu-bonding-3d-packaging-review-quantitative.md | Cu-Cu review: dishing 3-5nm, Ra<0.1/0.2nm, shear MPa table
+2026-09-22 | https://doi.org/10.3390/mi17091100 | raw/papers/2026-09-20_openalex_tgv-wet-etching-morphology-control-review.md | TGV wet etch: 5 profile classes, 1.257um->25nm sidewall Ra
+2026-09-22 | https://doi.org/10.4071/001c.167752 | raw/papers/2026-08-19_openalex_amat-tgv-thermomechanical-liner-reliability.md | AMAT TGV: seed-layer delamination + via-edge cracking; liner
+2026-09-22 | https://doi.org/10.4071/001c.167018 | raw/papers/2026-08-12_openalex_lujan-plp-cost-analysis-310mm-advanced-fanout.md | Lujan PLP cost model moves 600x600 -> 310x310 (abstract only)
+2026-09-22 | https://doi.org/10.1038/s41598-026-47275-2 | raw/papers/2026-06-15_openalex_foplp-warpage-rdl-first-molding-first-fea.md | FOPLP warpage peaks at debonding; carrier material matters

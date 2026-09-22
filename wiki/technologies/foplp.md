@@ -3,7 +3,7 @@ title: "FOPLP — 扇出面板級封裝 / Fan-Out Panel-Level Packaging"
 category: technology
 tags: [fan-out, panel-level, TSMC, Samsung, ASE, Powertech, Innolux, CoPoS, InFO, cost-reduction, delamination, DCB, CTE]
 created: 2026-05-03
-updated: 2026-09-21
+updated: 2026-09-22
 sources: [2026-07-31_trendforce_ase-capex-record-10-5b-leap-foplp, 2025-09-12_trendforce_foplp-competitive-2025, 2026-04-13_trendforce_copos-pilot, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-21_3dincites_acm-wlp-plp-process-trends, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-15_digitimes_manz-310mm-foplp-ecd-equipment, 2026-06-13_digitimes_linkotech-foplp-rollout-traction, 2026-06-20_prnewswire_manz-asia-310mm-ecd, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_digitimes_tsmc-foplp-timeline-skepticism, 2026-07-06_trendforce_cfmee-plp2000-china-first-plp, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-08-06_siliconbox_500m-units-panel-scale, 2026-02-18_siliconbox_ep4697377a1-fanout-panel-metal-sealing-ring, 2026-07-28_xianfeng_cn122476946a-alignment-mark-protection, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo]
 related:
   - wiki/technologies/copos.md
@@ -542,3 +542,46 @@ DIGITIMES 2026-09-15 訪談 Corning，標題明確把 **CPO、玻璃核心基板
 - 📌 **PI 在本 wiki 第三次以順應層身分出現**（Kaneka 玻璃核心 PI 絕緣層 JP2026047137A；KETI／漢陽 low-k 有機緩衝層）。ACS Omega 補上 PI 的**可圖案化性**面向——**順應層要能被開孔，而開孔方式反過來限制可用線寬**。
 ⚠ ACS Omega 一文為小型研究，無材料牌號、無雷射參數、無電性驗證，機構掛名異常，**來源品質中下，僅作方向性參考**。
 ⚠ Onto 專利無吞吐量絕對值（wph/pph）、無套刻精度、無成本比較。
+
+---
+
+## 2026-09-22 collect 更新：成本模型下修至 310×310；翹曲峰值在 debonding；承載板是新變數；Lam 給出 ~100×100 mm 門檻
+
+### 1. ⭐⭐⭐ 成本模型社群正在向 310×310 mm 收斂
+**Amy Lujan，*Cost Analysis of Panel-level Packaging for HPC and AI Applications*（IMAPS DPC 2026，2026-08-12）**：
+- 本次分析面板 **310 × 310 mm**，作者明言**有別於其先前分析所用的 600 × 600 mm**
+- 對照基準 **300 mm 晶圓**；封裝類型改為 **advanced fan-out**（非 basic fan-out）；設計範例為**大型且複雜的封裝**
+
+➜ ⭐⭐⭐ **「尺寸下修」本身是訊號。** 對照 Lau（2026-09-15）為 310×310 給出的「面積效率 vs 製程控制平衡點」論證，以及其量化的大面板吞吐劣勢（600×600 mm pick-and-place 為 300 mm 晶圓的 **5.3×**；壓縮成型期間設備閒置率 **94%**），本頁的「面板三陣營」記述改為：
+> **310 陣營（TSMC CoPoS、ASE）正取得成本模型側的支持；510×515（Powertech PiFO、CFMEE）與 600×600（Rapidus）陣營，至今對吞吐量問題無任何公開回應。**
+
+⚠⚠ **本篇僅取得摘要，成本節省的方向與幅度完全未知。** 在 Lau 已量化吞吐劣勢、Exponential Industry 已量化良率劣勢（玻璃面板 70–85% vs 有機 >90%）之後，**本篇是否仍得出淨節省、在何種假設下得出，是目前面板論述最關鍵的單一未知數**。➜ **列為下輪最高優先取全文項。**
+
+### 2. ⭐⭐⭐ 翹曲峰值出現在 debonding 階段；承載板材料是此前未記錄的變數
+**成功大學 × 南臺科大，*Scientific Reports*（2026-06-15）**，FEA + 實驗驗證：
+- **molding-first 流程在 debonding（解貼合）階段觀察到翹曲顯著增加**
+- **承載板材料（鋼／玻璃／陶瓷）**會改變翹曲與應力分布 ➜ **本頁新增「承載板」維度**
+- RDL-first 以**平均參考溫度**建模誤差最低；最大 von Mises 應力一致出現在 **RM 1 層與 WAL 層**
+- 面板尺寸 **600×700 mm、680×680 mm**；採 element birth and death 處理製程中材料增減
+
+➜ ⭐⭐⭐ **「真正的瓶頸在被視為輔助步驟的那一步」取得跨技術域的第二個實例**（第一例為本輪混合接合側的「CMP 後清洗是最大良率槓桿」）。⚠ 兩者皆單一來源，列為**橫向論述候選**，不逕行升格。
+➜ ⚠ 本頁既有的翹曲論述集中在**成型與熱循環**；本件指向 **debonding**。單一來源，**不逕行改寫**。
+➜ ⭐ **學界模擬仍在 600–680 mm 級，成本模型已下修至 310×310——研究社群與成本社群出現尺寸分歧。**
+⚠ 各承載板材料的翹曲絕對值、以及 "RM 1／WAL" 的層別定義，摘要層級未給，全文待追。
+
+### 3. ⭐⭐ Lam：封裝超過約 100×100 mm 後晶圓即失去效率；面板尺寸標準業界未定（一手）
+**Lam Research Newsroom，Aaron Fellis（CVP & GM, Global Products），2026-06-25**：
+- ⭐ **封裝尺寸超過約 100 × 100 mm（= 10,000 mm²）後，以傳統晶圓承載即變得沒有效率**——本 wiki 首個設備商給出的「何時必須轉面板」幾何門檻
+- **Salzburg Panel Center of Excellence 於 2026-05-20 啟用**（含專屬濕式化學製程實驗室、試產線）
+- Lam 的切入點為**濕式化學製程與去膠／清洗**
+- 明列挑戰：**邊緣控制與均勻性隨尺寸放大而惡化**、良率管理與自動化需根本重思、⭐ **面板尺寸標準尚未定案**
+
+⚠ **該門檻需與 CoWoS 尺寸路線對照解讀**：14× 光罩約 1,180 mm²，**仍遠小於 10,000 mm²**。若門檻為真，**目前主流 2.5D 封裝尚未跨過該線**——面板的迫切性來自更遠期尺寸，或 Lam 對「效率」的定義與 TSMC 不同。**列為待驗證的橫向論述，不逕行改寫本頁的急迫性敘述。**
+➜ ⭐ **面板軌的設備商分工圖再添一格**：Lam＝濕製程、Onto＝微影與檢測、TEL＝RDL、AMAT＝ECD/CMP。**面板軌與晶圓軌的設備商分工並不相同**（Lam 在晶圓軌以 ECD 與蝕刻著稱）。
+➜ ⭐ **範圍限縮的第二個獨立佐證**：Lam 的「僅大封裝需要面板」與 Lujan 的「大型且複雜的封裝 + advanced fan-out」同向。**本 wiki 應避免「面板取代晶圓」的無條件表述。**
+
+### 4. ⚠ 新增未解問題
+- [ ] **Lujan 310×310 分析的淨成本結論與假設**（最高優先取全文）
+- [ ] **承載板材料（鋼／玻璃／陶瓷）的翹曲絕對值對照**
+- [ ] **debonding 階段翹曲峰值是否有第二個獨立來源**
+- [ ] **Lam 的 ~100×100 mm 門檻與 TSMC CoWoS 14× 光罩路線為何看似矛盾**

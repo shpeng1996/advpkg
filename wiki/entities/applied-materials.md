@@ -3,7 +3,7 @@ title: "Applied Materials（應用材料）"
 category: entity
 tags: [equipment, ECD, PECVD, TSV, HBM, die-thinning, hybrid-bonding, USA]
 created: 2026-09-17
-updated: 2026-09-21
+updated: 2026-09-22
 sources: [2026-08-18_appliedmaterials_hbm-packaging-bottleneck-toolset, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-06-28_hyperframe_amat-hybrid-bonding-hedge, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq]
 related:
   - wiki/technologies/tsv.md
@@ -175,3 +175,35 @@ eBeam sub-10 nm 用於封裝基板。與 **Bruker** 把 AFM（Å 級）／AFP（
 ➜ **提高證據門檻**：此後只接受 **AMAT 法說會逐字稿**、**SEMI 設備出貨統計**，或 **AMAT／Ebara／KC Tech 任一方的正式出貨宣告**。
 
 ➜ 📌 **新增的反向線索**：本輪 Ru 基 nTSV 論文（復旦, Chip 2026-09-01）顯示，**當填充金屬硬到磨不動時，流程會改用離子束回蝕、CMP 直接消失**。若封裝界面金屬自 Cu 轉向 Ru／Co，**AMAT 在 CMP 的位置（無論市占多少）將不再是限制層**。此為該論述的**時間邊界**，見 [[technologies/hybrid-bonding]]。
+
+---
+
+## 2026-09-22 collect 更新：官網一手複核——CMP 產品確認，市占仍無佐證；並以 liner 切入 TGV
+
+### 1. ✅ 產品層事實由官方頁確認（2026-09-21 最高優先空缺的部分結清）
+依 2026-09-21 新設之作業規則（「凡『某公司的某產品做某製程』之敘述，一律以官網產品頁複核」），本輪複核 AMAT 官方混合接合頁：
+
+| 製程段 | AMAT 具名產品 |
+|--------|----------------|
+| 介電沉積 | Producer Invia CVD |
+| 金屬沉積 | Endura / Ventura PVD |
+| 電鍍 | Nokota ECD |
+| **CMP** | **Opta、Catalyst** |
+| 蝕刻 | Centris / Sym3-Y |
+| **混合接合表面製備** | **Insepra™ SiCN** |
+
+官方自陳合作：**EVG（W2W）、Besi（D2W）**。
+➜ ⭐⭐ **「AMAT 以 CMP 產品定位混合接合」首次獲一手確認**（2026-09-21 僅否證了「Lam SABRE 3D = 混合接合 CMP」，並未確認 AMAT 自己有無）。**該規則首次用於正向確認而非攔錯。**
+➜ ⭐ **Insepra™ SiCN 使 SiCN 自「材料選擇」升格為可具名的商用製程平台**，與本 wiki 已跨三源確認的 SiCN RMS 0.10–0.2 nm（含本輪 Cu–Cu 綜述的 <2 Å）在供應端連上。
+
+### 2. ❌ 市占仍未結清
+官方頁**無任何市占數字**。「AMAT 混合接合 CMP 市占 100%」維持**待證**，且**不得作為其他推論的前提**（含「持股 Besi 9% ＝ 沿限制鏈縱向布局」這一讀法，仍為假說）。
+
+### 3. ⚠ AMAT 官方對「挑戰」的表述不含表面平坦度
+官方原文：「達成**無缺陷**的銅對銅接合，且**晶粒對晶粒對準誤差幾近於零**，同時**成本更低**。」
+➜ 三項與本 wiki 2026-09-19 的限制鏈**同構但未給排序**：無缺陷（潔淨度）／對準（設備）／成本（良率經濟）。⚠ **一家把 CMP 列入產品線的公司在公開頁面不把平坦度列為挑戰**，可有兩種讀法（已解決／不願強調）；本 wiki 不裁定，列為觀察。
+
+### 4. ⭐⭐ AMAT 德國：TGV 的兩種失效模式與多層 liner（IMAPS DPC 2026，2026-08-19）
+Poulomi Mukherjee（Applied Materials Germany）：FE 模擬識別 **① 種子層附著不足 → 銅剝離；② 孔緣應力集中 → 玻璃開裂**；以材料建模決定 **liner 的最佳模數與 CTE**，開發**多層 liner** 作應力緩衝，熱循環與退火實驗確認有效。
+➜ ⭐ **與其在混合接合的 Insepra™ SiCN 同屬一個模式：在別人的結構裡賣一層自己的膜。** 「設備商往材料走」在 AMAT 身上現有兩個具名實例，分屬混合接合與玻璃兩條技術線。
+⚠ 僅摘要，無任何數值。

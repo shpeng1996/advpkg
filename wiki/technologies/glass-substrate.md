@@ -3,7 +3,7 @@ title: "玻璃基板 / Glass Core Substrate"
 category: technology
 tags: [glass-substrate, TGV, panel-level, FC-BGA, CoPoS, Absolics, DNP, Rapidus, warpage, SeWaRe, glass-interposer, BOE, ULCVD, non-embedding, Lens-Technology, TPK-KY, Innolux, AUO, LG-Chem, singulation, patent-signal]
 created: 2026-05-08
-updated: 2026-09-21
+updated: 2026-09-22
 sources: [2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-05-05_trendforce-insights_glass-substrate-development, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-05-29_3dincites_rapidus-2nm-advanced-packaging-ai-foundry, 2026-06-01_trendforce_intel-3dgs-india-glass-substrate, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-06-20_biggo_boe-glass-substrate-pilot, 2026-06-28_economy-ac_glass-substrate-global-race, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-08-18_trendforce_shinko-glass-substrate-22layer-glassem-delay, 2026-09-11_mssp_tgv-glass-biaxial-bending-ring-on-ring, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-03-13_kaneka_jp2026047137a-glass-core-polyimide-quantified, 2026-08-10_screp_low-k-organic-buffer-tgv-cu-metallization, 2026-08-04_jmrt_vacuum-assisted-void-free-cu-fill-tgv, 2026-07-30_micromachines_tgv-cleanability-surface-tension]
 related:
   - wiki/technologies/copos.md
@@ -1048,3 +1048,50 @@ C = 上 RDL 中長短軸比 ≥3:1 之晶粒面積比；D = 下 RDL 同一量；
   **附帶影響：列管空缺「Corning small via diameter 的實際數值」的提問方式需修正——應問「頂／腰／底何者」。**
 - 📌 **2.75 億美元（2030）是本 wiki 取得最保守的玻璃核心基板市場數字**，對照 Counterpoint「FOPLP＋玻璃基板 2030 年 >80 億美元」。兩者口徑不同（玻璃核心基板 vs 含 FOPLP），差距達兩個數量級，**應並列記錄而非擇一**。
 ⚠ Onto 為設備商行銷文，檢測能力為自述，無第三方驗證。
+
+---
+
+## 2026-09-22 collect 更新：TGV 的失效在界面與孔緣，不在材料本體；剖面五分類；Lau 兩難的第一個業界回應是「繞過」
+
+### 1. ⭐⭐⭐ 兩種主導失效模式（Applied Materials Germany，IMAPS DPC 2026，2026-08-19）
+有限元素模擬 + 熱循環與退火實驗，識別出 TGV 的兩種主導失效：
+
+| 失效模式 | 成因 |
+|----------|------|
+| **銅剝離（delamination）** | **種子層附著力不足** |
+| **玻璃開裂（cracking）** | **通孔邊緣的應力集中** |
+
+兩者皆高度敏感於**玻璃組成、通孔縱橫比、特徵尺寸**。解法為以材料建模決定 **liner 薄膜的最佳模數與 CTE**，開發**多層 liner** 作為應力緩衝層；實驗確認對兩種模式皆有效。
+
+➜ ⭐⭐⭐ **本頁的論述重心應自「材料選擇」移向「界面工程與孔緣幾何」。** 既有的玻璃論述集中在 CTE 數值（玻璃 3–10 vs 矽 2.5 vs 有機 8–18 ×10⁻⁶/°C）與 Lau 的非彈性應變比值；本件指出**實際壞掉的地方都是製程與幾何問題**。
+➜ ⭐⭐⭐ **與 Corning WO2026164778A1（2026-08）直接對接**：Corning 主張 Ti/Cu 黏著層 + 羥基富化 + 矽烷官能化 + 無電鍍種子層，**正是針對「種子層附著力不足」這一模式的解**。本 wiki 2026-09-18 記錄的「Corning 賭界面可做牢 vs Intel 賭界面必失效」——AMAT 作為獨立第三方**確認該賭注的標的是真實失效模式**，但未裁定勝負。
+➜ ⭐ **AMAT 以 liner（模數 + CTE 雙參數）切入，與其混合接合的 Insepra™ SiCN 同屬一個模式：在別人的結構裡賣一層自己的膜。**
+⚠ **僅取得摘要，無任何數值**（孔徑、AR、MPa、CTE、熱循環條件皆缺）。列管空缺「TGV 陣列力學數值」**提問方式修正為：要「有／無 liner」的對照值**，否則無法分辨量到的是玻璃本體還是界面。
+
+### 2. ⭐⭐⭐ TGV 剖面的五種形態分類（Micromachines 17(9) 1100，2026-09-20）
+1. **直壁** 2. **沙漏形（腰部高度為獨立變數）** 3. **等腰錐形** 4. **倒錐形** 5. **底切形**
+
+| 項目 | 數值 |
+|------|------|
+| Borofloat 33（500 µm，Cr/Au 遮罩，49% HF） | 側壁錐角 **45°–50°**，底切顯著 |
+| 雷射誘發濕蝕刻（LIWE）側壁粗糙度 | **1.257 µm → 25 nm**（~50×） |
+| 大面積陣列孔徑均勻性 | **RSD < 1%**（超音波 + 溫控 + 基板運動）⚠ 未附重複性 |
+| 標準缺陷類型 | 側壁粗糙、內部殘留、微裂紋、氣泡／顆粒夾陷、遮罩邊緣缺陷 |
+
+作者原文：側壁粗糙度、垂直度與內部殘留物「對**種子層覆蓋、銅填充完整性、高頻訊號損耗與熱機械可靠性**有深遠影響」。
+➜ ⭐⭐⭐ **與上一項合看，本 wiki 首次能把 TGV 的蝕刻端與可靠度端連成一條可檢驗的因果鏈：側壁形態 → 種子層覆蓋 → 種子層附著不足 → 銅剝離。**
+➜ ⭐⭐⭐ **列管空缺「Corning small via diameter 的實際數值」提問方式再修正為：「頂／腰／底何者，以及若為沙漏形，腰在什麼高度」。**
+➜ ⭐⭐ **「粗糙度」一詞的跨技術域落差首次量化**：TGV 側壁 25 nm–1.257 µm vs 混合接合 Ra < 0.1–0.2 nm，**相差 2–4 個數量級**。
+➜ ⭐ **新記錄規範：本 wiki 的面板／玻璃幾何一律標註剖面型態，不可只記單一孔徑。** 另見 2026-09-21 的 ACS Omega 聚醯亞胺雷射燒蝕（倒梯形、頂寬較底寬多 6.4 ± 0.6 µm）——**兩種材料、兩種製程，皆以非直壁為預設，直壁是要額外付代價換來的**。
+
+### 3. ⭐⭐⭐ 專利訊號：Lau 兩難的第一個業界回應是「限制用途」而非解決
+**上海美維 CN122396357A**（2026-07-14，family 100479773）：以**CTE 與矽高度匹配的玻璃基板**為堆疊載板，正面做 TGV 與第一互連，接著**循環執行「熱壓鍵合 → 介質包覆 → CMP 減薄 → 層間互連」**達成多層垂直堆疊，最後**背面減薄**做外部互連。自述解決熱應力集中、可靠性不足、**翹曲超標**。
+- ⭐⭐⭐ **玻璃首次以「CTE 與矽匹配」為理由、在請求項層級被當作堆疊載板而非 PCB 側基板。** 它落在 2026-09-21 由 Lau 揭示之兩難的**贏的那一側**（micro-bump 側玻璃優 2.06×），而**完全未處理 PCB 側的劣勢**（玻璃 19% vs 有機 8.43%，作者標 "High risk"）。➜ 本頁新增論述：**玻璃的 CTE 兩難可以用「限制用途」規避，代價是放棄取代有機載板的野心。**
+- ⭐⭐ **CMP 被放在每一層之間**，若成立則 **CMP 次數隨堆疊層數線性成長**——與混合接合側的「dishing 窗口僅約 2 nm 寬」合看，**每多一層就多一次落在窄窗口內的要求**。
+- ⭐ 申請人為 **PCB／載板業者**，構成本 wiki 第二型「邊界外擴」：**載板業者向上游堆疊製程延伸**。
+⚠ 無任何數值；OPS 未回傳 IPC/CPC。
+
+### 4. ⚠ 新增未解問題
+- [ ] **AMAT 多層 liner 的模數與 CTE 實際數值，以及有／無 liner 的熱循環對照數據**
+- [ ] **Corning 的 TGV 剖面屬五類中何者**（決定其「small via diameter」該以頂／腰／底何者比較）
+- [ ] **上海美維方案的堆疊層數上限與 CMP 累積次數的良率代價**

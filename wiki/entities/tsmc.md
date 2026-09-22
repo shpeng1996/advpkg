@@ -3,7 +3,7 @@ title: "台積電 / TSMC"
 category: entity
 tags: [foundry, advanced-packaging, CoWoS, SoIC, CoPoS, COUPE, CPO, InFO, WMCM, aLSI, MRAM, 3nm-pricing]
 created: 2026-04-24
-updated: 2026-09-17
+updated: 2026-09-22
 sources: [2026-09-10_trendforce_tsmc-august-revenue-nt514b-record-fourth-month, 2026-09-10_trendforce_tsmc-taichung-14nm-p1-p2-2027-ahead-of-plan, 2026-04-24_initial-survey, 2026-04-13_trendforce_copos-pilot, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2025-12-18_trendforce_apple-wmcm-a20, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-01-20_trendforce_tsmc-wmcm-apple, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap, 2026-04-23_trendforce_tsmc-roadmap-a12-a13-no-high-na-euv, 2026-05-07_trendforce_tsmc-us-expansion-250b-arizona, 2026-05-12_focustaiwan_tsmc-capex-31b-arizona-20b, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-28_reuters_tsmc-kevin-zhang-energy-efficiency, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-09_financialcontent_tsmc-130k-cowos-wafers, 2026-06-09_digitimes_tsmc-cowos-soic-capacity-symposium, 2026-06-15_trendforce_tsmc-cowos-gap-narrowing-130k-200k-wafers, 2026-06-17_digitimes_amkor-tsmc-10year-arizona-deal, 2026-06-17_trendforce_tsmc-amkor-10year-arizona-advanced-packaging, 2026-06-10_tomshardware_tsmc-fab-expansion-roadmap-n2-cowos-soic, 2026-06-27_tmtpost_tsmc-cowos-capacity-targets-2026-2027, 2026-07-02_trendforce_samsung-sf2p-plus-tsmc-n2-roadmap, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-22_trendforce_tsmc-2027-price-hike-hpc, 2026-07-20_trendforce_tsmc-265b-arizona-intel-novalake, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-08-17_trendforce_tsmc-arizona-profit-663pct-1h26]
 related:
   - wiki/technologies/cowos.md
@@ -440,3 +440,15 @@ TSMC 先進封裝研發總監 **James Chen**（SEMICON Taiwan 2026）首次官�
 📌 與 2026-08-11 收錄之「台積電洽購 AUO 兩座廠房」（FOPLP 基礎設施垂直整合）併看：TSMC 在高雄同時布建**量產廠房**與**驗證聚落**兩種設施。
 
 **來源**：[[sources/2026-09-02_focustaiwan_tsmc-kaohsiung-baipu-packaging-hub]]
+
+---
+
+## 2026-09-22 collect 更新：專利訊號——TSMC 在「雙材料同時 CMP」持有排他權
+
+**CN120035162A**（family 95727703，公開 2025-05-23）：於介電層形成開口 → 以導電材料填充 → **對導電材料與介電層一併實施 CMP**，漿料為**二氧化鈦–二氧化矽混合顆粒磨料 + 氧化劑**。
+
+- ⭐⭐⭐ **與 Adeia EP4709132A2（2026-03-11，"Chemical Mechanical Polishing for Hybrid Bonding"）構成方向相反的兩條路線**：Adeia 以阻障層作研磨停止層**把一次研磨兩種材料拆成兩段**；TSMC 則**設計漿料使兩種材料可同時研磨**。➜ **IP 授權商與晶圓廠兩種完全不同的商業模式都在此下注**，是「CMP 是限制層」目前最強的間接佐證。
+- ⚠ **請求項未提及混合接合，亦無去除率／選擇比／凹陷數值。** **不得逕讀為 TSMC 的混合接合 CMP 方案**；僅支持「TSMC 在雙材料同時 CMP 上持有排他權」這個較弱陳述。
+- ⚠ 公開日 2025-05，超出本 wiki 專利軌慣用的 12 個月窗口，選入係因其落在最高優先論述上。
+
+⚠ **專利是前瞻訊號，非已出貨能力。**

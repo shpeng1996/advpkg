@@ -3,7 +3,7 @@ title: "先進封裝的測試、量測與失效分析 / Test, Metrology & Failur
 category: concept
 tags: [test, metrology, inspection, failure-analysis, KGD, KGI, KGP, DFA, yield]
 created: 2026-09-17
-updated: 2026-09-21
+updated: 2026-09-22
 sources: [2025-01-14_semieng_known-good-interposer-screening, 2025-07-10_semieng_advanced-packaging-reshaping-inspection, 2024-11-12_semieng_packaging-drives-test-metrology-innovation, 2026-08-01_jfap_3dic-failure-analysis-dfa, 2026-07-06_apl_lensless-through-silicon-phase-imaging, 2026-09-06_ndte_hysan-sparse-view-xct-tsv, 2026-08-02_chips_cpo-wafer-level-probe-card, 2026-08-27_samsung_us20260256000a1-interposer-test-pad, 2026-08-13_jcet_us20260239928a1-hybrid-bonding-substack-test, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-06-28_hyperframe_amat-hybrid-bonding-hedge]
 related:
   - wiki/technologies/hybrid-bonding.md
@@ -401,3 +401,30 @@ SemiconductorX 具備正確的產業詞彙、合理的市占量級與正確的�
 **天津大學連兩輪出現於量測軌**（2026-09-20 晶圓減薄原位厚度監測 MSSP；本輪 TSV 深度雙梳測距），取向一致——**把實驗室級光學量測推向產線幾何**。建議列為常駐觀察機構。
 
 **Onto Innovation** 同樣升級為常駐：本輪同時出現於**檢測**（TGV 三個 CD）與**微影**（US20260186421A1 混合曝光）兩側，是設備商「機台 + 量測 + 圖案化」邊界外擴的又一實例。
+
+---
+
+## 2026-09-22 collect 更新：「粗糙度」的跨技術域落差達 2–4 個數量級；又一筆未附重複性的均勻度數字
+
+### 1. ⭐⭐⭐ 「同一名詞涵蓋多個獨立驗收項」取得跨技術域版本
+本頁既有的實例（**平坦度**、**孔徑頂／腰／底**）都在同一技術域內。本輪出現跨域版本：
+
+| 技術域 | 「粗糙度」的規格 | 差距 |
+|--------|------------------|------|
+| 混合接合 Cu / SiO₂ | **Ra < 0.1–0.2 nm**；SiCN **< 2 Å RMS** | — |
+| TGV 側壁（濕蝕刻） | **25 nm（LIWE 最佳）– 1.257 µm（未處理）** | **10²–10⁴ 倍** |
+
+➜ **兩者都叫 roughness，量測方法、可接受範圍與失效後果完全不同。** 任何跨頁引用「粗糙度」時**必須標註技術域**，否則數量級會被誤搬。
+
+### 2. ⚠ 未附重複性的均勻度數字再添一筆
+Micromachines 綜述（2026-09-20）記載大面積 TGV 陣列的**孔徑 RSD < 1%**（超音波輔助 + 溫控 + 基板運動）。
+➜ 依 2026-09-21 新設規範（**凡收錄「均勻度／變異／標準差」數字，須標註是否附有重複性；未附者標 ⚠**），本筆**標 ⚠ 待補**。
+➜ 這條規範的必要性由本 wiki 既有的天津大學雙梳飛時測距案例確立：**單一 TSV 深度重複量測標準差 2.18 µm ≈ 跨陣列標準差 2.15 µm（比值 ~101%）**——在那個案例裡，被報告的「均勻度」主要是量測雜訊。**RSD < 1% 若同樣沒有重複性資料，無法排除同一問題。**
+
+### 3. ⭐⭐ 形態學分類是量測規範的上游
+Micromachines 的**五種 TGV 剖面**（直壁／沙漏／等腰錐／倒錐／底切）為 Onto（2025-10-06）的「頂／腰／底三個 CD」提供了**物理成因**：Onto 給的是量測要求，形態學給的是為何會這樣。
+➜ ⭐ **新記錄規範：幾何驗收項的定義應與形態分類一起記錄。** 否則「腰」在直壁剖面上無意義、在沙漏剖面上卻是主要失效點——**同一份驗收清單套在不同剖面上，資訊量差距極大**。
+
+### 4. ⭐ 待追
+- [ ] TGV 孔徑 RSD < 1% 的重複性（repeatability）數據
+- [ ] 混合接合側的 Ra 規格是否附重複性（本 wiki 既有的 Ra < 0.1/0.2 nm、SiCN < 2 Å 皆未附）
