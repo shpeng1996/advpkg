@@ -3841,3 +3841,9 @@ an（2028–2029 量產世代）為 CoPoS 最可能的首批量產客戶——�
   10. **lint 待辦（本輪結清兩項，新增一項）**：~~`info-wmcm.md` 非合法 UTF-8~~ ✅；~~`index.md` 來源清單全域重排~~ ✅；**沿用**：`glass-substrate.md` 中「玻璃核心基板」與「玻璃核心中介層」混用需分開（**本輪 Fraunhofer 全文已給出可操作的切分依據：依製程鏈 SAP/ABF/PID vs damascene**，優先序再上調）；**新增**：`raw/_titles.tsv` 檢出之 18 組重複 raw 檔待人工處置。
 
 > **2026-09-23 營運附註（git 鎖檔）**：本輪開始前檢查 `.git/*.lock` 與 `.git/objects/**/tmp_obj_*`，**皆為 0**；`git status` 為乾淨。刪除權限**仍未開啟**，故沿用 `mv` 處置任何新生成的殘留檔。依 2026-09-22 之記載，本輪 `find` **限定於 `.git/objects`**，避免重複搬移 `_stale_tmp_objs/` 內既有殘留；commit 序列採 `git add -A` → `mv .git/index.lock` → `git commit`。
+
+> **2026-09-23 補記（commit 後）**：commit `b279d05`（**53 檔**，+3,021 / −242）成功。檔案分布：來源摘要 16、實體 9、技術 5、概念 2、raw 16（articles 5／patents 5／papers 6）、`_titles.tsv` 1、`_collected_urls.txt` 1、`index.md`／`log.md`／`overview.md` 各 1。
+> **驗證步驟（本輪新增為固定收尾程序）**：①`_collected_urls.txt` 新增 16 筆之檔案路徑**全部存在**；②16/16 raw 檔 frontmatter 必要欄位**齊備**；③以 `.env` 三個變數值反向 grep `git show HEAD`、`wiki/`、`raw/`，**0 次命中（無憑證外洩）**；④`index.md` 宣告數字與實體檔案**完全相符**（來源 566 = `wiki/sources/` 實際檔數；總頁數 621 = `find wiki -name '*.md'` 實際檔數）。
+> **git 鎖檔**：`git add` 與 `git commit` 各產生一次 `index.lock`／`HEAD.lock` 與共 **53 個 `tmp_obj_*`**，全部以 `mv` 移入 `.git/_stale_tmp_objs/`（`find` 依 2026-09-22 之記載**限定 `.git/objects`**，未重複搬移既有殘留）。該目錄現累計 **1,147 個**檔案。
+> ⚠ **本輪確認一個比 2026-09-22 記載更精確的失敗模式**：不只 `git add -A` 之後需移走 `index.lock`——**`git status` 等唯讀指令同樣會建立並殘留 `index.lock`**，因此**任何兩個 git 指令之間都必須移鎖**。本輪第一次 commit 即因在 `git add` 與 `git commit` 之間插入了一次 `git status` 而失敗（"Another git process seems to be running"）。**正確作法：把移鎖函式包在同一個 shell 呼叫內，於每次 git 指令前執行。**
+> **建議（需人工，沿用且已連續六輪）**：（a）於排程任務設定中為 `D:\@source\AdvancedPackaging` 開啟刪除權限；或（b）手動刪除 `.git/_stale_tmp_objs/`。**⚠ 該目錄已達 1,147 檔，且每輪約 +50–90，建議本項的優先序自「建議」上調為「應處理」。**
