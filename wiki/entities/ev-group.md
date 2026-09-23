@@ -3,7 +3,7 @@ title: "EV Group (EVG)"
 category: entity
 tags: [equipment, hybrid-bonding, wafer-bonding, maskless-lithography, layer-transfer]
 created: 2026-04-25
-updated: 2026-09-16
+updated: 2026-09-23
 sources: [2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-05-19_semiconductor-digest_ev-group-ectc2026-hybrid-bonding, 2026-06-29_evgroup_ectc2026-hybrid-bonding-layer-transfer, 2026-05-28_imec_w2w-hybrid-bonding-200nm-pitch, 2026-06-02_intel_ectc2026-emib-t-cpo-glass]
 related:
   - wiki/technologies/hybrid-bonding.md
@@ -108,3 +108,34 @@ EVG 與 imec 在 **ECTC 2026** 發表 300 mm 晶圓對晶圓混合接合結果�
 ### 新增未解問題
 
 - EVG 何時提供 **0.5 µm (3σ)** 的 **die-to-wafer** 對準能力？這是 D2W 微縮的單一主導變數，目前無公開時程。
+
+
+---
+
+## 2026-09-23 collect 更新：解接合題材有訊號（輪替規則修正）
+
+### TW202611995A（2026-03-16，family 57223662）
+**Method for the bonding and debonding of substrates**
+
+- 產品基板經**連接層**接合至**載板**，兩者之間施加一層**可溶層**
+- 該可溶層**因與電磁輻射交互作用而溶解**
+- ⭐ **連接層與載板必須對該電磁輻射「至少大部分透明」**
+
+### ⭐⭐⭐ 為何重要
+**補上一條本 wiki 尚未記錄的因果鏈**：
+**解接合方式（雷射穿透）→ 載板須對該波長透明 → 排除多數金屬載板 → 載板材料被解接合製程反向決定 → 而載板材料又決定翹曲。**
+
+➜ 2026-09-22 記下「承載板材料（鋼／玻璃／陶瓷）是此前完全沒有記錄的變數」（成大×南臺 FEA）。**本件顯示它不是自由變數，而是被 debonding 製程與翹曲兩端夾住。**
+⚠ 此為本 wiki 推論（兩個獨立來源的交叉），**非任一來源明述**。
+
+### ⚠ 輪替規則修正
+2026-09-22 把 EV Group 移入「**已確認訊號偏弱**」名單。**本件顯示該判斷只在 W2W 接合題材上成立**——在**暫時接合／解接合**題材上 EVG 有訊號。
+
+➜ ⭐⭐ **輪替名單應按「題材」而非按「公司」維護。** 這是對 2026-09-22 輪替規則的一項修正，適用於所有列入「訊號偏弱」的申請人。
+
+### ⚠ 限制
+family 57223662 為**較早的家族**，本件為 TW 階段公開，**不可解讀為 2026 年的新構想**（延續 2026-09-22 建立的「專利為落後指標」時間位移規則）。摘要無波長、材料、解接合時間或殘留等任何數值。
+
+### 既有定位補充
+- 本輪 AMAT 官方頁再次確認 **EVG = AMAT 的 W2W 混合接合合作夥伴**（Besi 為 D2W）。
+- ⚠ 本輪 TheElec 市場分項顯示 **W2W 占混合接合市場約 95%** ➜ **EVG 所在的區段遠大於 D2W 三強所在的區段**，本 wiki 此前未記錄此比例。

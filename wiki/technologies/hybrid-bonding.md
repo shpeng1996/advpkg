@@ -3,7 +3,7 @@ title: "混合接合 / Hybrid Bonding"
 category: technology
 tags: [3D, hybrid-bonding, Cu-Cu, SoIC, ECTC, advanced-packaging, DRAM, COP, 4F2, Sn-damascene, damascene-interconnect, PFAS-free, patent-signal, guard-ring, surface-activation]
 created: 2026-04-24
-updated: 2026-09-22
+updated: 2026-09-23
 sources: [2026-05-21_semiecosystem_ectc2026-cpo-hybridbonding-plp, 2026-04-24_initial-survey, 2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-03-01_3dincites_besi-packaging-power-shift, 2026-01-13_semiengineering_hbm4-microbumps, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-19_semieng_advanced-packaging-limits, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-03-27_3dincites_copper-grain-hybrid-bonding, 2026-03-02_semieng_making-hybrid-bonding-better, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2026-04-29_semiwiki_cea-leti-ectc2026-hybrid-bonding, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2024-02-09_semianalysis_hybrid-bonding-process-flow, 2026-05-19_semiconductor-digest_ev-group-ectc2026-hybrid-bonding, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-04-19_semiwiki_apple-m5-cucu-hybrid-bonding-shipped, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-18_imec_iii-v-chiplet-rf-laser-bonding, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-29_evgroup_ectc2026-hybrid-bonding-layer-transfer, 2026-06-29_thelec_skhynix-hybrid-bonding-equipment-order, 2026-06-05_semieng_intel-ectc-2026-emib-t-cpo-glass, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-14_trendforce_samsung-hbm-hiring-hybridbonding, 2026-07-16_semieng_fine-pitch-hb-high-volume, 2026-07-16_semieng_alt-materials-hybrid-bonding, 2026-06-08_irtnanoelec_d2w-hybrid-bonding-1um-pitch, 2026-05-28_imec_w2w-hybrid-bonding-200nm-pitch, 2026-09-09_acsaelm_microwave-anneal-cu-cu-150c-3min, 2026-08-21_scirep_copper-oxide-reduction-ar-h2-pulsed-plasma, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-03-29_damnang_hybrid-bonding-cmp-gating-factor, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-04-02_adeia_us20260096463a1-buildup-organic-dielectric-bonding, 2026-07-17_jcet_cn122421815a-asymmetric-bonding-interface, 2026-04-30_seoultech_us20260123559a1-hydrocarbon-plasma-low-temp-bonding, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer, 2023-09-13_nccavs_intel-cmp-dishing-requirement-vs-achieved, 2026-03-11_epo_adeia-cmp-for-hybrid-bonding-patent, 2026-09-01_chip_ru-bpr-ntsv-ion-beam-recess, 2026-02-10_epo_shanghai-univ-citric-acid-cu-reduction-sog, 2026-09-21_semiconductorx_cmp-share-lam-sabre-correction, 2026-09-16_jsandwich_cucu-diameter-nonmonotonic-local-optimum, 2026-07-21_lam_sabre-3d-is-ecd-not-cmp]
 related:
   - wiki/technologies/soic.md
@@ -1476,3 +1476,57 @@ NineScrolls（2026-06-01／2026-08-15 更新）主張五段鏈為 CMP → **CMP 
 - [ ] **明確標註為產線的 2026 年 dishing 分布**（取代原「Cu recess 產線實績」的提問方式）
 - [ ] **queue time 的實際上限**（取代原「Cu 氧化相溫度門檻」的提問方式）
 - [ ] **Hanmi ~2029 與 HBM4E（2027 年底）混合接合導入時程的關係**——若 HB 確於 2027 年底導入，該世代機台由誰供應？
+
+
+---
+
+## 2026-09-23 collect 更新
+
+### 0. ⭐⭐⭐ 敘事重心的結構性修正：D2W 只占混合接合市場的 4.5%
+**TheElec（2026-04-28）**：2025 年混合接合市場 **>US$6B**，其中 **D2W 僅 US$2.75 億（4.5%）**，**其餘 ~95% 為 W2W**（主要是 CIS／記憶體既有量產應用）。
+➜ ⚠ **本頁以及本 wiki 整體的混合接合敘事一直以 D2W 為重心，而 D2W 是「難而新」的那一塊，不是「大」的那一塊。** 讀者容易把「混合接合的困難」誤讀為「混合接合尚未量產」——**W2W 早已是數十億美元規模的量產技術**。
+➜ 機台單價 **₩40–50 億（US$3–3.8M）**；對照 High-NA EUV **€3.5 億**（約 100 倍）。
+➜ ⚠ **ASML 疑似開發 W2W 接合機**，依據僅為**第三方專利分析 + CEO 暗示性表態**（2026-04-15 法說會），屬**弱訊號**；若成立，W2W 側將出現資本規模遠大於既有所有玩家的新進者。
+
+### 1. ⭐⭐⭐ 限制鏈排序首次取得物理機制解釋
+**Au–Au 表面活化直接接合綜述**（*Sensors*，Binghamton × 東京大學，2026-09-19）：
+> **"Compared with thermocompression bonding (TCB), low-temperature and room-temperature bonding impose stricter surface requirements because heat and pressure in TCB can deform asperities and increase real contact area."**
+
+➜ **TCB 自帶「就地整平」機制：熱與壓力會把表面凸起壓平、增加實際接觸面積。混合接合把熱與壓力拿掉之後，表面必須在接觸之前就已經合格。**
+➜ ⭐⭐⭐ **這解釋了本 wiki 的限制鏈為何是這個排序**（①表面平坦度 ~0.2 nm > ②die 翹曲 <100 nm > ③機台對準 100 nm）：**表面平坦度是唯一無法在接合當下被補償的項目。**
+➜ ⭐⭐ **也解釋了「1 µm 顆粒可誘發數百微米寬空洞」**（2026-09-22）：無整平機制時，凸起直接轉為空洞，不會被壓實。
+➜ ⚠ **材料邊界**：本篇為 **Au–Au**（Au 不氧化，Cu 會），故本 wiki 的「Cu 氧化 queue time」論述不適用於本篇。**可安全遷移的是「有無就地整平機制」這一條，因為它是力學而非化學。**
+➜ 附帶：**Ar 電漿促成強接合、O₂ 電漿因生成 Au 氧化物而弱化界面**。與 Cu 側既收錄的 SeoulTech CxHy 電漿、上海大學檸檬酸還原合看——**三者都在處理同一件事：接合前把氧化物拿掉且不讓它長回來。**
+
+### 2. ⭐⭐⭐ 設備側時程收斂於 2029–2030，HBM4E 導入說法缺乏設備側佐證
+**TheElec（2026-07-22）**：Samsung 於**平澤 P5** 規劃 **~50 台 D2W 混合接合機**；**首選 Besi**（備選 Semes、Hanwha Semitech）；**Besi 單價 ₩60 億／台（US$4.6M）**；**安裝 2026 年底起、大規模量產目標 2030**；⚠ **Samsung 要求機台設計變更，延宕交期協議**。
+
+| 來源 | 設備側時間點 |
+|---|---|
+| Hanmi | 量產採用 **~2029** |
+| Samsung 平澤 P5 產線 | 大規模量產 **2030** |
+| SK hynix（Hot Chips 2026） | HB 延後至 **HBM5** |
+
+➜ ⭐⭐⭐ **三個獨立來源收斂。「HBM4E（2027 年底）導入混合接合」的說法缺乏設備側佐證**——本 wiki 既有記載不刪除，但應加註此信心水準。
+➜ ⭐⭐⭐ **資本量級首見**：50 × ₩60 億 ≈ **₩3,000 億（US$2.3B）僅機台**；對照 Hanmi 的**廠房 ₩1,000 億** ➜ **機台與廠房是一個數量級的差距**，本 wiki 此前只記得到廠房側。
+➜ ⭐⭐ **首見採購方反向驅動機台規格**（「Samsung 要求設計變更」）。若變更涉及對準或吞吐，將是目前最直接的「量產方認為機台還差什麼」訊號。**列為新空缺。**
+
+### 3. ⭐⭐⭐ 設備供應格局：韓系不缺席，且 W2W 出現自製玩家
+- **Hanwha Semitech SHB2 Nano**（Korea Herald，2026-02-25）：**對準 0.1 µm**，**2026 H1 客戶測試**，第一代 2022-01 交付。➜ ⭐ **比 Hanmi 的「2026 年底原型」早約一年。** 見新建的 [[entities/hanwha-semitech]]。
+- **Semes（Samsung 子公司）開發 W2W 混合接合機**（KED Global，2026-02-20），另被要求**供應兩條混合接合產線的設備**。➜ **W2W 側出現第三個玩家**（既有為 EVG 與 imec 的 200 nm）。
+- **Hanwha Semitech × Prodrive Technologies（ASML 夥伴）結盟**。⚠ 不逕行與 ASML 的 W2W 推斷合併。
+➜ ⭐⭐ **結清 2026-09-22 空缺**：「若 HB 於 2027 年底導入 HBM4E，Hanmi 是否缺席整個世代？」——**Hanmi 可能缺席，但韓系不缺席。** 空缺提問方式修正為「Hanmi 是否缺席」。
+➜ ⭐⭐ **「TC bonding 與 hybrid bonding 不是同一條學習曲線」自 Hanmi 單一個案擴展為兩家韓系設備商的共同模式**（Hanwha 的 TCB 亦為 ₩900 億級業務、HB 仍在測試），**且本輪同時取得物理機制**（見上第 1 點）。
+
+### 4. ⭐⭐⭐ 專利訊號：Besi 把接合機變成量測儀，但只在 TCB 側
+**Besi WO2026182734A1**（2026-09-03，family 101168492）：於 TCB 過程中、焊料**液相**時量測**焊料表面張力**對應之作用力，與預期值比較以判定接合品質，**無需破壞性測試或抽樣**。
+➜ ⭐⭐⭐ **適用邊界極重要**：Cu–Cu 混合接合**無液相焊料**，故**不適用**。➜ **這強化了「TCB 與 HB 不是同一條學習曲線」：TCB 側已能 inline 非破壞判定接合品質，HB 側仍無對應手段。** 兩者成熟度差距再多一個維度。
+➜ ⭐⭐ **「真正的瓶頸在被視為輔助步驟的那一步」的反向操作**：把檢測併入主步驟，額外機台時間為零。本 wiki 此前只記錄該論述的「瓶頸」一面。
+➜ ⚠ **對 2026-09-22 一個推論的反例**：該輪記「Hanmi 2026 年專利偏機台工程層而非接合物理層」並與「公開具體度落後」同向解讀。**Besi 2026 年的專利同樣集中在機台自身的感測與定位**（本件 ＋ WO2026192456A1 可移動定心銷），**但 Besi 的量產對準實績遠領先**。➜ **「專利偏機台工程層」不可推論為「技術落後」。**
+
+### 5. ⚠ 新增／修正之未解問題
+- [ ] **Samsung 要求 Besi 做的機台設計變更是什麼**（若涉對準或吞吐，是最直接的量產方需求訊號）
+- [ ] **Hanwha Semitech SHB2 Nano 的吞吐量與接合 pitch**；0.1 µm 是否為 3σ、是否為量產實績
+- [ ] **Semes 的 W2W 機台規格與時程**
+- [ ] **ASML 是否確實進入 W2W 接合機市場**（目前僅專利分析推斷 + CEO 暗示）
+- [ ] 原「Hanmi ~2029 與 HBM4E 時程的關係」**改為**：Hanmi 是否缺席 HBM4E 世代（供應者問題已由 Hanwha／Besi／Semes 回答）

@@ -3,7 +3,7 @@ title: "Applied Materials（應用材料）"
 category: entity
 tags: [equipment, ECD, PECVD, TSV, HBM, die-thinning, hybrid-bonding, USA]
 created: 2026-09-17
-updated: 2026-09-22
+updated: 2026-09-23
 sources: [2026-08-18_appliedmaterials_hbm-packaging-bottleneck-toolset, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-06-28_hyperframe_amat-hybrid-bonding-hedge, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq]
 related:
   - wiki/technologies/tsv.md
@@ -207,3 +207,41 @@ eBeam sub-10 nm 用於封裝基板。與 **Bruker** 把 AFM（Å 級）／AFP（
 Poulomi Mukherjee（Applied Materials Germany）：FE 模擬識別 **① 種子層附著不足 → 銅剝離；② 孔緣應力集中 → 玻璃開裂**；以材料建模決定 **liner 的最佳模數與 CTE**，開發**多層 liner** 作應力緩衝，熱循環與退火實驗確認有效。
 ➜ ⭐ **與其在混合接合的 Insepra™ SiCN 同屬一個模式：在別人的結構裡賣一層自己的膜。** 「設備商往材料走」在 AMAT 身上現有兩個具名實例，分屬混合接合與玻璃兩條技術線。
 ⚠ 僅摘要，無任何數值。
+
+
+---
+
+## 2026-09-23 collect 更新：TGV liner 全文（IMAPS 22nd DPC 2026）
+
+> `10.4071/001c.167752` — 2026-09-22 僅取得摘要，本輪取得全文。
+
+### ⭐⭐⭐ 玻璃開裂機制（AMAT 的模型貢獻）
+| 階段 | 機制 |
+|---|---|
+| **受熱 — 裂紋起始** | Cu 膨脹，形成**三點應力位置**，對玻璃施加**過量壓應力** |
+| **冷卻 — 裂紋擴展** | Cu 收縮，產生**軸對稱拉伸力** → **環向裂紋擴展** |
+
+### ⭐⭐⭐ CVD liner 的量化效果
+| 指標 | 值 |
+|---|---|
+| **應力降低** | **至多 60%** |
+| **Ti/Cu 種子層附著力** | **至多 2×**，**無需高溫後製程步驟** |
+| CVD 沉積溫度範圍 | **80–400 °C** |
+
+### 產品層（一手）
+- **CVD5000PLP**：面板 CVD，**沉積溫度 80–400 °C**，用以調校 liner 性質與厚度，**針對不同 TGV 半徑與深寬比緩衝應力**
+- **Topaz PVD**：種子層；訴求薄面板搬運、基板溫控、**雙面處理**、階梯覆蓋、膜附著
+- 共同最佳化流程：濕蝕刻 → **liner** → 種子層 → 電鍍 → via reveal
+
+### ⭐⭐⭐ liner 設計是二維受約束問題
+三種 liner 對照（模擬＋實驗）：高模數/高 CTE、高模數/低 CTE、**低模數/低 CTE（回流後有 delamination 風險）**。
+➜ **「最佳值必然是區間而非極值」論述的第八例，且是首個二維實例**（模數 × CTE 同時受約束 ➜ 設計空間為一個區域）。
+➜ **不是「liner 越軟越好」**：低模數有利緩衝玻璃應力，卻在回流後產生界面剝離風險。
+
+### ⚠ 限制與未結清項
+- 「60%」「2×」均為 **AMAT 內部結構**數據，**無第三方驗證，無絕對值**（無 MPa、無 J/m²、無熱循環次數）。
+- ➜ **2026-09-16 的「TGV 陣列力學數值」空缺僅部分結清**：機制與相對改善已得，**絕對值仍缺**。
+- ❌ **「混合接合 CMP 市占 100%」仍未結清**（2026-09-22 已確認產品層事實為 Opta／Catalyst／Insepra™，市占無任何佐證），**維持待證且不得作為其他推論前提。**
+
+### 定位
+➜ AMAT 的 liner 是 TGV 界面問題的**第三條路線**：**既不賭界面可做牢（Corning）、也不賭界面必失效（Intel），而是插入一層可調的緩衝。** 本 wiki 不裁定勝負。

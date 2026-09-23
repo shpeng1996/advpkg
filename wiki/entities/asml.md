@@ -3,7 +3,7 @@ title: "ASML"
 category: entity
 tags: [equipment, lithography, EUV, hybrid-bonding, DUV, RDL, advanced-packaging, W2W, maglev]
 created: 2026-05-03
-updated: 2026-05-24
+updated: 2026-09-23
 sources: [2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2026-01-23_trendforce_chip-tools-tel-asml, 2026-04-23_trendforce_tsmc-roadmap-a12-a13-no-high-na-euv, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers]
 related:
   - wiki/technologies/hybrid-bonding.md
@@ -136,3 +136,32 @@ ASML 在 ECTC 2026 發表具體 D2W 混合接合製程解決方案（Paper 31.2�
 - HBM5 若延遲（現預期 2029），ASML 的 W2W 市場窗口會縮短嗎？
 - TSMC 不採用 High-NA EUV 的決策是否持久？若 Intel/Samsung 以 High-NA EUV 取得製程優勢，TSMC 是否最終被迫跟進？
 - ASML 2030 年 €600 億高 NA 收入目標是否需大幅下調？
+
+
+---
+
+## 2026-09-23 collect 更新：疑似開發 W2W 混合接合機（弱訊號）
+
+**TheElec（2026-04-28，更新 2026-05-04）**：
+- ASML **可能**開發 **W2W 混合接合設備**——依據為**仁荷大學周昇煥教授的專利分析**，可能沿用 **Twinscan 的雙載台架構**
+- **CEO Christophe Fouquet 於 2026-04-15 法說會**表示 ASML 的微影技術可支援客戶的 3D 整合，「**包括混合接合製程**」（暗示性表態，**非宣告**）
+
+### ⭐⭐⭐ 同篇帶來的市場分項（本 wiki 首次取得）
+| 項目 | 值 |
+|---|---|
+| 混合接合總市場（2025） | **> US$6B** |
+| **D2W** | **US$275M（4.5%）** |
+| **W2W（推算）** | **≈95%** |
+| 混合接合機單價 | **₩40–50 億（US$3–3.8M）** |
+| 對照：High-NA EUV | **€3.5 億（約 100 倍）** |
+
+➜ ⭐⭐⭐ **這對本 wiki 的敘事是一次結構性修正**：本 wiki 的混合接合討論一直以 D2W 為重心，而 **D2W 是「難而新」的那一塊，不是「大」的那一塊**。詳見 [[technologies/hybrid-bonding]]。
+➜ ⭐⭐ **若 ASML 確實進入，W2W 側將出現資本規模遠大於既有所有玩家的新進者**（單價差距 ~100 倍即說明兩者的工程與資本尺度不同量級）。
+
+### ⚠ 證據強度
+**弱訊號**：第三方專利分析推斷 + CEO 暗示性表態，**無產品、無時程、無夥伴宣告**。
+⚠ 同輪 KED Global（2026-02-20）記 **Hanwha Semitech 與 Prodrive Technologies（ASML 供應鏈夥伴）結盟**開發混合接合，方向一致；**但兩篇均未互相引用，本 wiki 不逕行連結。**
+
+### 既有記載
+- XT:260 3D DUV 已出貨（RDL 用）
+- 2026-03（TrendForce）：評估混合接合設備市場進入 —— **本輪取得更具體的依據與市場分項。**

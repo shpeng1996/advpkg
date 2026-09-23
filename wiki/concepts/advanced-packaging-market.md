@@ -3,7 +3,7 @@ title: "先進封裝市場 / Advanced Packaging Market"
 category: concept
 tags: [market, forecast, CAGR, supply-chain, HBM, chiplet, geopolitics, equipment, SIA, Omdia, Yole, WFE, substrate-market, framework]
 created: 2026-04-24
-updated: 2026-09-21
+updated: 2026-09-23
 sources: [2026-07-31_semieng_chip-week-149, 2026-04-24_initial-survey, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2026-01-23_trendforce_chip-tools-tel-asml, 2026-03-05_trendforce_intel-emib-billions, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2025-12-18_trendforce_micron-capex-hbm4, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2025-05-13_trendforce_top10-osat-2024, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-04-16_ontoinnovation_dragonfly-g5-qualified, 2026-06-23_communicationstoday_foplp-glass-substrate-market-8b-2030, 2026-06-29_trendforce_china-osat-tongfu-jcet-investment, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-26_semieng_chip-week-144, 2026-07-01_trendforce_ase-price-hike-20pct, 2026-07-04_semieng_chip-week-145, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-07-03_trendforce_anthropic-samsung-advanced-packaging, 2026-05-08_trendforce_ajinomoto-abf-1b-land-buy-2032-margins, 2026-07-24_semieng_chip-week-148, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-08-06_siliconbox_500m-units-panel-scale, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly]
 related:
   - wiki/entities/tsmc.md
@@ -863,3 +863,38 @@ SemiconSam（2025-09-18）：**混合接合專用 CMP 設備 AMAT 市占 100%**�
 2026-09-20 記錄「⭐ 設備層集中度與競爭強度成反比」，其核心案例為「混合接合 CMP AMAT 市占 100%」（SemiconSam 單一來源）。本輪查證**未能佐證**：SemiconductorX 給出 AMAT ~70%／Ebara ~25% 的**整體** CMP 市占，與 SemiconSam 的「整體 60%」不一致，且該頁已被證實含產品層級錯誤（見 [[concepts/test-metrology-packaging]] 第五節）。
 
 ➜ **本頁的集中度論述應拆成兩句**：**「CMP 是混合接合的限制環節」——四個獨立來源支持，可保留**；**「該環節由單一供應商獨占」——單一來源，維持待證，不得作為推論前提。**
+
+
+---
+
+## 2026-09-23 collect 更新
+
+### 1. ⭐⭐⭐ 混合接合市場分項：D2W 只占 4.5%
+**TheElec（2026-04-28）**：
+
+| 項目 | 值 |
+|---|---|
+| 混合接合總市場（2025） | **> US$6B** |
+| **D2W** | **US$275M（4.5%）** |
+| **W2W（推算）** | **≈95%** |
+| 混合接合機單價 | **₩40–50 億（US$3–3.8M）** |
+| 對照：High-NA EUV 單價 | **€3.5 億**（約 **100 倍**） |
+| Besi 單價（TheElec 2026-07-22） | **₩60 億（US$4.6M）** — 與上列同量級 |
+
+➜ ⭐⭐⭐ **本 wiki 的混合接合敘事一直以 D2W 為重心，而 D2W 只占 4.5%。** 剩下的 ~95% 是 W2W（主要為 CIS／記憶體既有量產應用）。**D2W 是「難而新」的那一塊，不是「大」的那一塊。**
+➜ 韓國業者（Semes、Hanwha Semitech、Hanmi）**目前集中在較小的 D2W 區段**。
+➜ ⭐⭐ **資本門檻量級首見**：Samsung 平澤 P5 的 ~50 台 D2W 機台 ≈ **₩3,000 億（US$2.3B）僅機台**；對照 Hanmi 的廠房投資 ₩1,000 億 ➜ **機台與廠房是一個數量級的差距**。
+
+### 2. ⭐⭐⭐ 成本宣稱的會計邊界問題（新增橫向論述）
+**Amy Lujan（SavanSys，IMAPS 22nd DPC 2026，`10.4071/001c.167018` 全文）**對同一個 310×310 mm 面板封裝做的兩種切法：
+
+| 會計邊界 | 面板優勢的良率容忍度 |
+|---|---|
+| **含 GPU/HBM 晶粒成本**（完整封裝） | **0.5 個百分點** |
+| **排除 GPU/HBM 晶粒成本**（僅扇出部分） | **~60%** |
+
+作者自承：**"Slicing and dicing numbers in this presentation show either a great cost reduction or a tiny cost reduction, depending on which part of the process is isolated."**
+
+➜ ⭐⭐⭐ **新增橫向論述：「面板降本 N%」的宣稱若未聲明是否含前段晶粒成本，資訊量為零——兩種邊界下的結論相差逾兩個數量級。**
+➜ **本 wiki 既記的「面板降本 40–50%」不刪除，但加註邊界**：該數字屬**小封裝／大面板**情境（Lujan 明述），與大型複雜封裝／310 mm 面板不同。
+➜ ⚠ **此論述可外推**：本 wiki 收錄的任何「降本 N%」「省 N%」宣稱，都應追問其會計邊界。**列為常駐檢核規則。**

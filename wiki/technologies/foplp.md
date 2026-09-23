@@ -3,7 +3,7 @@ title: "FOPLP — 扇出面板級封裝 / Fan-Out Panel-Level Packaging"
 category: technology
 tags: [fan-out, panel-level, TSMC, Samsung, ASE, Powertech, Innolux, CoPoS, InFO, cost-reduction, delamination, DCB, CTE]
 created: 2026-05-03
-updated: 2026-09-22
+updated: 2026-09-23
 sources: [2026-07-31_trendforce_ase-capex-record-10-5b-leap-foplp, 2025-09-12_trendforce_foplp-competitive-2025, 2026-04-13_trendforce_copos-pilot, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-21_3dincites_acm-wlp-plp-process-trends, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-15_digitimes_manz-310mm-foplp-ecd-equipment, 2026-06-13_digitimes_linkotech-foplp-rollout-traction, 2026-06-20_prnewswire_manz-asia-310mm-ecd, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_digitimes_tsmc-foplp-timeline-skepticism, 2026-07-06_trendforce_cfmee-plp2000-china-first-plp, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-08-06_siliconbox_500m-units-panel-scale, 2026-02-18_siliconbox_ep4697377a1-fanout-panel-metal-sealing-ring, 2026-07-28_xianfeng_cn122476946a-alignment-mark-protection, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo]
 related:
   - wiki/technologies/copos.md
@@ -585,3 +585,69 @@ DIGITIMES 2026-09-15 訪談 Corning，標題明確把 **CPO、玻璃核心基板
 - [ ] **承載板材料（鋼／玻璃／陶瓷）的翹曲絕對值對照**
 - [ ] **debonding 階段翹曲峰值是否有第二個獨立來源**
 - [ ] **Lam 的 ~100×100 mm 門檻與 TSMC CoWoS 14× 光罩路線為何看似矛盾**
+
+
+---
+
+## 2026-09-23 collect 更新
+
+### 1. ⭐⭐⭐ 面板成本論述的關鍵未知數結清，且結論偏負面
+**Amy Lujan（SavanSys）IMAPS 22nd DPC 2026 全文**（`10.4071/001c.167018`；2026-09-22 僅取得摘要，本輪取得全文）：
+
+> **"So far, before introducing any yield trade-offs, there is a small cost-benefit when building this package on a 310x310mm panel."**
+> **"With a 0.5% yield loss, the panel-based package is no longer cost-effective."**（晶圓側固定在 90.5% 良率）
+
+| 項目 | 值 |
+|---|---|
+| 對象 | 8×(3×3 mm) 橋接晶粒 + 4 組記憶體堆疊 + 2×(20×10 mm) GPU；模組 30×30 mm、基板 50×50 mm |
+| 面板 / 對照 | **310×310 mm** vs 300 mm 晶圓 |
+| **總封裝良率容忍度** | **0.5 個百分點** |
+| **僅計扇出部分（排除 GPU/HBM 成本）之容忍度** | **~60%** |
+| 「整片一次做完」的步驟 | 每面板 **+~20%**、每封裝 **−~40%** |
+| 逐封裝進行的步驟 | Die/HBM Bonding **−5%**、Underfill **+3%** |
+| 各步驟每封裝降幅 | Metallization −42%、C4 −40%、Cu Pillars −39%、**Temp Bond/Debond/Carrier −38%**、Topside RDL −38%、RDL −36%、Mold −27% |
+
+➜ ⭐⭐⭐ **本 wiki 已記玻璃面板良率 70–85% vs 有機 >90%（2026-09-20）——該落差為 5–20 個百分點，是抹平面板優勢所需 0.5 個百分點的 10–40 倍。** 在大型複雜封裝上，**面板的成本優勢在現行良率水準下不成立，且差距達一個數量級以上。**
+➜ ⭐⭐⭐ **新橫向論述：「面板降本 N%」的宣稱若未聲明是否含前段晶粒成本，資訊量為零。** 作者自承「切法不同，可以得出巨大降本或微小降本」。**含晶粒成本 → 容忍度 0.5%；排除 → 容忍度 ~60%，相差逾兩個數量級。**
+➜ ⭐⭐ **可事前套用的判準**：面板優勢 ∝ 製程中「全片一次完成」步驟的成本占比。本 wiki 此前僅有「大型且複雜的封裝」這種定性描述。
+➜ ⚠ **既有的「面板降本 40–50%」不刪除，但加註邊界**：該數字屬**小封裝／大面板**情境，與本篇對象不同（本篇明述）。
+➜ **與 Lam 的 ~100×100 mm 門檻（2026-09-22）合起來把面板窗口夾得極窄**：封裝要夠大才划算，良率又幾乎不能比晶圓差。
+
+### 2. ⭐⭐⭐ 「把公差預算從上游移到下游」——同一策略同年出現在製程鏈的兩個環節
+**ASE × Deca（IMAPS DPC 2026，`10.4071/001c.167502`）**：埋入式橋接晶粒的擺放公差
+> 傳統：**"Requires tight ±3 µm or less bridge die location as fabricated"**
+
+| 墊尺寸 | 位置容差 | 角度容差 |
+|---|---|---|
+| 20 µm | **±10 µm** | ±0.1° |
+| 25 µm | **±15 µm** | ±0.1° |
+| 35 µm | ±12 µm (G1) / **±25 µm (G2)** | ±0.1° / ±0.25° |
+| 45 µm | ±20 µm (G1) / **±40 µm (G2)** | ±0.2° / ±0.4° |
+
+➜ **放寬 3.3×（20 µm 墊）至 13.3×（45 µm 墊 G2）。** 機制為 **Adaptive Patterning**：逐顆量測實際位置，以客製化微影調整 RDL 圖案吻合實際 die shift；**每顆獨立補償，良率不隨橋接晶粒數量惡化**。
+➜ ⭐⭐⭐ **2026-09-22 橫向論述第 3 條首次取得量化實例**（原兩例皆定性）。**論述可收斂為更精確的形式：「當上游的位置精度成本陡升，下游若具備可程式化的圖案能力，最佳解是把公差預算從上游移到下游。」** 關鍵前提是**下游可程式化**——這也解釋了為何同一招不能用在混合接合（HB 的限制在表面平坦度，不是可用微影補償的平面位置量）。
+➜ ⭐⭐⭐ **Besi WO2026192456A1（2026-09-17，可受控移動的定心銷）是同一策略的機構層版本**：**Besi 讓治具遷就載具的尺寸漂移，Deca 讓微影遷就晶粒的位置漂移。同一策略、兩個不同環節、兩家不同公司、同一年。**
+➜ Besi 該件同時補上面板論述的第三個面向：**載具在製程中的尺寸漂移已大到需以排他權保護補償機構**（既有兩個面向：Lam 的幾何門檻、debonding 的形變）。⚠ 摘要無任何數值。
+
+### 3. ⭐⭐⭐ 載板材料不是自由變數——被 debonding 與翹曲兩端夾住
+**EV Group TW202611995A**（2026-03-16，family 57223662）：可溶層因與**電磁輻射**交互作用而溶解，且**連接層與載板必須對該輻射「至少大部分透明」**。
+➜ ⭐⭐⭐ **補上一條本 wiki 尚未記錄的因果鏈**：
+**解接合方式（雷射穿透）→ 載板須對該波長透明 → 排除多數金屬載板 → 載板材料被解接合製程反向決定 → 而載板材料又決定翹曲。**
+➜ 2026-09-22 記下「承載板材料（鋼／玻璃／陶瓷）是此前完全沒有記錄的變數」——**本輪顯示它不是自由變數。** ⚠ 此為本 wiki 推論（兩個獨立來源的交叉），非任一來源明述。
+➜ ⚠ **輪替規則修正**：2026-09-22 把 EV Group 移入「已確認訊號偏弱」。本件顯示該判斷**只在 W2W 接合題材上成立**。**名單應按題材而非按公司維護。**
+➜ ⚠ family 57223662 為**較早的家族**，不可解讀為 2026 年的新構想。
+
+### 4. ⭐⭐ 面板向第二個應用域擴散：車用功率模組
+**AOI Electronics（IMAPS DPC 2026，`10.4071/001c.167027`）**：以面板級封裝同時服務 **AI／資料中心**與**車用 EV 逆變器**；以 shadow moiré 量測翹曲，結論為**「回流溫度下翹曲變化很小」**；提出 EV 逆變器用**次組裝封裝**概念；溫度循環測試**尚未執行**。
+> ⚠ **申請人更正**：2026-09-22 的 log 將本篇記為 **Tokyo Electron**，**全文確認為 AOI ELECTRONICS CO., LTD.（日本香川）**，與 TEL 無關。
+
+➜ ⭐⭐ **這對面板的經濟性論述有直接影響**：Lujan 模型的關鍵因子之一是**設備利用率**，而大型複雜封裝的面板優勢僅 0.5 個百分點良率即被抹平。**若面板線能同時承接良率容忍度高得多的功率模組，利用率可由第二種產品補足。** ⚠ **本篇未做此論證，此為本 wiki 推論**，列為待證。
+➜ ⚠ **對「翹曲峰值在 debonding」的空缺：不得結清。** 本篇（實測）與 2026-09-22 的成大×南臺 FEA **方向一致**——共同指向**翹曲的關鍵時點不在回流**。但本篇**未量測 debonding 階段**，證據型態亦不同。空缺改記為：「**已有一個獨立實測支持『回流不是翹曲峰值』這半句**」。
+➜ 附帶：Lujan 的步驟分解中 **Temp Bond/Debond/Carrier 的每封裝降幅為 −38%**，是面板受益最大的步驟之一 ➜ **debonding 既是翹曲風險最高處，也是面板成本優勢最大處之一。**
+
+### 5. ⚠ 新增／修正之未解問題
+- [ ] ⭐ **學研社群的大面板路線（Fraunhofer IZM 610×457 mm²）是否有成本依據** —— 成本社群已收斂到 310×310 且該尺寸的優勢本身已極脆弱
+- [ ] **Lujan 模型中「面板設備較貴但不誇張」的假設數值**
+- [ ] **面板線同時承接功率模組能否補足利用率**（本 wiki 推論，待證）
+- [ ] **ASE/Deca 公差表是否有實測分布或良率實績**（目前僅設計規則宣稱）
+- [ ] 原「FOPLP 翹曲峰值在 debonding 是否有第二個獨立來源」**改記為**：已有一個獨立實測支持「回流不是峰值」這半句；仍缺 debonding 階段的直接量測

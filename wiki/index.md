@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-09-22
-**頁面總數 Total Pages**：604
-**原始來源數 Sources**：550（含 8 個合併轉向頁）
+**更新時間 Updated**：2026-09-23
+**頁面總數 Total Pages**：621
+**原始來源數 Sources**：566（含 8 個合併轉向頁）
 
 ---
 
@@ -14,6 +14,7 @@
 
 ## 實體 Entities（公司、組織）
 
+- [[entities/hanwha-semitech]] — 한화세미텍 Hanwha Semitech（韓華集團）；D2W 混合接合機**第二家韓系供應商**；**SHB2 Nano 對準 0.1 µm、2026 H1 客戶測試（領先 Hanmi 約一年）**；第一代 2022-01 交付；TCB 機種 SFM5 Expert 2025 年銷售 **>₩900 億**；與 **Prodrive（ASML 夥伴）結盟**；Samsung 平澤 P5 備選供應商；⭐ **「TCB 強、HB 弱」自 Hanmi 個案擴展為韓系共同模式**⭐本輪新建
 - [[entities/hanmi]] — 한미반도체 Hanmi Semiconductor（仁川）；HBM **TC bonder 主要供應商**；混合接合機第一代 2020、**第二代原型 2026 年底、廠房 2027 上半（₩100B/Class 100）、量產採用 ~2029**；⭐ **TC bonder 的領先並未轉移到混合接合（相鄰技術落後約三年）**⭐本輪新建
 - [[entities/absolics]] — Absolics（SKC 子公司，與 Applied Materials 合資）；玻璃核心基板**量產先行者**，全球首座專用廠（美國喬治亞）；量產**自 2026 年底推遲至 2027**；⭐ **兩件請求項皆非幾何而是「製程潔淨度」與「微結構對稱性」：溶出雜質 P ≤1,500 ppb／Zn ≤500 ppb（ICP-MS 方法寫入請求項）、上下 RDL 銅晶粒長寬比之比 C/D 0.85–0.99**⭐本輪新建
 - [[entities/corning]] — Corning（康寧）；特種玻璃與光學材料供應商；玻璃核心基板／中介層**基材供應端**，2026-08 起以 **WO2026164778A1** 向下游 TGV 金屬化延伸（Ti/Cu 黏著層＋羥基富化＋矽烷官能化＋無電鍍種子層）；⭐ **與 Intel 形成假設相反的兩條 TGV 工程哲學：Corning 賭界面可做牢，Intel 賭界面必失效**⭐本輪新建
@@ -86,6 +87,12 @@
 ## 來源摘要 Sources（依日期倒序）
 
 > **補登 / Backfilled（2026-09-15 總整理發現漏登）**
+- [[sources/2026-09-22_appliedmaterials_hybrid-bonding-opta-catalyst-primary]] — [一手] ⭐⭐ **AMAT 官方頁確認 Opta／Catalyst 為其混合接合 CMP 平台、Insepra™ SiCN 為表面製備平台**；⚠ 市占仍無任何佐證，「有產品」與「獨占」須分開記錄（Applied Materials 官網，無日期）⭐新增
+- [[sources/2026-09-21_semiconductorx_cmp-share-lam-sabre-correction]] — [查證·負面結果] ⭐⭐ **最高優先空缺未結清**：AMAT「混合接合 CMP 市占 100%」未獲佐證（二手數字 70% vs SemiconSam 60% 互不一致）；❌ **同頁「Lam SABRE 3D 為混合接合 CMP 平台」經 Lam 官方否證（實為 ECD 電鍍平台）**；➜ 新作業規則：產品×製程之敘述須以官網複核（2026-09-21）⭐新增
+- [[sources/2026-09-20_micromachines_tgv-wet-etch-profile-classes]] — [論文] ⭐⭐⭐ **TGV 剖面五分類（直壁／沙漏／等腰錐／倒錐／底切），沙漏形的「腰部高度」為獨立變數**；側壁粗糙度 **1.257 µm → 25 nm**（LIWE，~50×）；錐角 45°–50°；孔徑 RSD <1%（⚠ 未附重複性）（Micromachines 17(9) 1100, 2026-09-20）⭐新增
+- [[sources/2026-09-19_paper_au-au-surface-activated-stricter-than-tcb]] — [論文] Au–Au 表面活化直接接合綜述：**TCB 的熱與壓力會壓平表面凸起、自帶就地整平，故低溫／室溫接合的表面要求反而更嚴**；平滑 Au <0.5 nm vs 未整平電鍍數十–數百 nm；**Ar 電漿有利／O₂ 電漿有害**（*Sensors*, 2026-09-19）⭐本輪新增
+- [[sources/2026-09-19_olt_tsv-depth-metrology-uncertainty-equals-variation]] — [論文] ⭐⭐⭐ **TSV 深度量測重複性 2.18 µm ≈ 陣列變異 2.15 µm（比值 ~101%）——量測不確定度首次達 100%**；絕對精度 79.7 nm RMS 仍答不出「這批孔一致嗎」；➜ 凡引用均勻度數字必須同時知道重複性（天津大學, O&LT, 2026-09-19）⭐新增
+- [[sources/2026-09-19_acsomega_polyimide-laser-ablation-taper-cost]] — [論文] PI 雷射燒蝕開口呈**倒梯形、頂寬較底寬多 6.4 ± 0.6 µm（面積代價 ~2.7×）**；⭐ 與 Onto 專利合成面板圖案化「粗快／細慢」三段階梯（雷射／投影／直寫）（ACS Omega, 2026-09-19，⚠ 來源品質中下）⭐新增
 > - [[sources/2025-01-28_3dincites_iftle-618-ucie-standard-vs-ucie3]] — IFTLE 618：UCIe Standard vs Advanced vs UCIe 3（2025-01-28）
 > - [[sources/2025-01-01_semieng_ucie-1-6t-io-chiplets-ai-datacenter]] — SemiEng：UCIe 1.6T I/O chiplet 於 AI 資料中心（2025-01）
 > - [[sources/2024-10-01_3dincites_geopolitics-packaging]] — 3DInCites：先進封裝是否為美中晶片戰新戰場（2024-10）
@@ -94,12 +101,8 @@
 > - [[sources/2023-07-05_semianalysis_ai-capacity-cowos-hbm]] — SemiAnalysis：AI 產能限制——CoWoS 與 HBM（2023-07）
 > - [[sources/2022-11-01_semianalysis_packaging-gets-blurry]] — SemiAnalysis：The Future of Packaging Gets Blurry（2022-11）
 
-- [[sources/2026-09-22_appliedmaterials_hybrid-bonding-opta-catalyst-primary]] — [一手] ⭐⭐ **AMAT 官方頁確認 Opta／Catalyst 為其混合接合 CMP 平台、Insepra™ SiCN 為表面製備平台**；⚠ 市占仍無任何佐證，「有產品」與「獨占」須分開記錄（Applied Materials 官網，無日期）⭐新增
-- [[sources/2026-09-21_semiconductorx_cmp-share-lam-sabre-correction]] — [查證·負面結果] ⭐⭐ **最高優先空缺未結清**：AMAT「混合接合 CMP 市占 100%」未獲佐證（二手數字 70% vs SemiconSam 60% 互不一致）；❌ **同頁「Lam SABRE 3D 為混合接合 CMP 平台」經 Lam 官方否證（實為 ECD 電鍍平台）**；➜ 新作業規則：產品×製程之敘述須以官網複核（2026-09-21）⭐新增
-- [[sources/2026-09-20_micromachines_tgv-wet-etch-profile-classes]] — [論文] ⭐⭐⭐ **TGV 剖面五分類（直壁／沙漏／等腰錐／倒錐／底切），沙漏形的「腰部高度」為獨立變數**；側壁粗糙度 **1.257 µm → 25 nm**（LIWE，~50×）；錐角 45°–50°；孔徑 RSD <1%（⚠ 未附重複性）（Micromachines 17(9) 1100, 2026-09-20）⭐新增
-- [[sources/2026-09-19_olt_tsv-depth-metrology-uncertainty-equals-variation]] — [論文] ⭐⭐⭐ **TSV 深度量測重複性 2.18 µm ≈ 陣列變異 2.15 µm（比值 ~101%）——量測不確定度首次達 100%**；絕對精度 79.7 nm RMS 仍答不出「這批孔一致嗎」；➜ 凡引用均勻度數字必須同時知道重複性（天津大學, O&LT, 2026-09-19）⭐新增
-- [[sources/2026-09-19_acsomega_polyimide-laser-ablation-taper-cost]] — [論文] PI 雷射燒蝕開口呈**倒梯形、頂寬較底寬多 6.4 ± 0.6 µm（面積代價 ~2.7×）**；⭐ 與 Onto 專利合成面板圖案化「粗快／細慢」三段階梯（雷射／投影／直寫）（ACS Omega, 2026-09-19，⚠ 來源品質中下）⭐新增
 - [[sources/2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring]] — [論文] 晶圓減薄**原位厚度監測**：終點可控至 **3 µm**、靜態偏差 **<0.5 µm**、**有效數據率 >80%**（約 1/5 量測被捨棄）；⭐ 與 Cu recess 並置後成立新論述：**量測不確定度已佔規格窗 17–100%，量測能力即製程能力的一部分**（天津大學, MSSP, 2026-09-18）⭐新增
+- [[sources/2026-09-17_patent_besi-movable-centering-pin]] — [專利] Besi 可受控移動的定心銷（WO2026192456A1, family 95699597）：**載具在製程中的尺寸漂移已大到需以排他權保護補償機構**；與 Deca Adaptive Patterning 構成同一策略的機構層版本（2026-09-17）⭐本輪新增
 - [[sources/2026-09-16_jsandwich_cucu-diameter-nonmonotonic-local-optimum]] — [論文] ⭐⭐⭐ Cu–Cu 互連直徑 10→18 µm：翹曲 0.62→0.56 µm、壽命 1.29→3.97×10⁶ cycles **皆單調**，但**最低拉應力落在 14 µm、最佳平衡落在 16 µm**；➜ **翹曲與壽命同向但與局部應力錯位，不可取代之**；Intel 共著（USM × Intel, 2026-09-16）⭐新增
 - [[sources/2026-09-15_polymers_panel-rdl-dfr-pattern-collapse]] — [論文] 面板級 RDL 中介層**乾膜光阻圖案倒塌**；TMAC/CTAC 惡化、**BHAC 阻止倒塌並提升機械強度**；⚠ **提高疏水性≠不倒塌，僅以接觸角驗收會選錯配方**；成品 IL **<1.4 dB @0–40 GHz**（KETI/成均館/漢陽, Polymers, 2026-09-15）⭐新增
 - [[sources/2026-09-15_jcet_cn122766296a-microwave-debonding]] — [專利] JCET **微波剝離載板**（PPC＋石墨粉＋酸產生劑，化學解聚而非雷射燒蝕）；**微波成為可追蹤技術路線的第二個應用點**（接合＋解接合）；⚠ 中國申請案無量化數據（CN122766296A, 2026-09-15）⭐新增
@@ -109,269 +112,208 @@
 - [[sources/2026-09-15_jmep_lau-cucu-hybrid-bonding-chiplets-review]] — [論文] Lau：Cu-Cu 混合接合綜述；⭐ **稱其為「老技術、已量產 10 年以上」——提示 wiki 時間軸應拆成 W2W 記憶體/感測器世系與 D2W 邏輯世系兩條起算點**（JMEP/IMAPS, 2026-09-15；⚠ 僅摘要）⭐新增
 - [[sources/2026-09-15_jmep_lau-glass-packaging-chiplets-review]] — [論文] Lau：玻璃封裝綜述；⭐ **點名本 wiki 缺失的一層：玻璃基板→PCB 的 CTE 失配與銲點可靠度**；CTE 是兩端受夾的變數（JMEP/IMAPS, 2026-09-15；⚠ 僅摘要）⭐新增
 - [[sources/2026-09-15_imaps_lau-glass-panel-economics-fulltext]] — [論文·全文升級] ⭐⭐⭐ **玻璃核心使 micro-bump 應變減半（4.43% vs 9.12%）卻使 PCB 側 BGA 應變加倍（19% vs 8.43%，作者標 high risk）**；⭐⭐⭐ **600 mm 面板 pick-and-place 時間為 300 mm 晶圓 5.3×、成型設備閒置 94%——面積優勢被抵銷**；⭐ **310×310 mm 首獲「為何是這尺寸」之論證**（John H. Lau, IMAPS JMEP, 2026-09-15）⭐新增
+- [[sources/2026-09-14_trendforce_tsmc-cowos-double-2028-capacity]] — TrendForce：**TSMC CoWoS 產能 130K→260K wpm（2026 年底→2028 年底，倍增）；Intel EMIB-T 2027 15–20K/月→2028 40–45K/月（約 CoWoS 的 15–17%）；2nm 90K→110K wpm；3nm 180K→210K wpm；2026 CapEx $60–64B（70–80% 先進製程）**（2026-09-14）⭐新增
+- [[sources/2026-09-14_semieng_paper-roundup-chipsmore-reach]] — SemiEng 論文彙整 Sept.14：**NIST underfill 固化/熱耐久建模；NUS CHIPSMORE compute-in-interconnect chiplet；RPI+IBM REACH 控制器端長跨距 HBM ECC；NYCU+TSMC EUV 光罩**（2026-09-14）⭐新增
 - [[sources/2026-09-12_sammyfans_micron-hbm-capacity-doubling]] — Micron **年底前 +60,000 HBM wspm → 約 100,000 wspm（約翻倍）**；12-high HBM4 **>2.8 TB/s/堆疊**，佔比 20–30%→最高 50%；⭐ 記憶體端與封裝端擴張節奏已大致同步（2026-09-12）
 - [[sources/2026-09-12_zenodo_bwstar-wafer-level-alignment-full-field-overlay]] — [論文] BW-STAR：⭐⭐ **疊對是接合後全場殘餘向量場，不是純量「對準精度」**；誤差源含吸盤回彈/薄膜應力/接合波；**負面結果：接合波前緣在現行取樣密度下不可辨識**（⚠ 低影響力期刊、純模擬，僅採概念框架，2026-09-12）⭐新增
 - [[sources/2026-09-11_mssp_tgv-glass-biaxial-bending-ring-on-ring]] — [論文] TGV 玻璃基板**雙軸 ring-on-ring 彎曲強度**；比較有／無蝕刻製程；⚠ 把 TGV 陣列本身重新放回力學檢視，**限定（非推翻）**既有「瓶頸在邊緣與切單」論點（MSSP, 2026-09-11）⭐新增
 - [[sources/2026-09-11_admt_tgv-laser-koh-etch-25um]] — [論文] 武漢大學 × **Quartz Corp**：雷射改質＋KOH 蝕刻於熔融石英製得 **TGV 25 µm ± 1 µm（±4%）**；⭐ 本 wiki 首次取得 **TGV 孔徑製程分散度絕對值**；📌 未回答既有「TGV 陣列力學數值」空缺（2026-09-11）
+- [[sources/2026-09-11_ichmt_tsv-microchannel-convex-pinfin-cooling]] — [論文] TSV 嵌入式微通道冷卻：**>100 W/cm² 局部熱通量；凸形銷鰭最高溫降 ~20K/平均 ~15K；凹形壓降 -15% 但溫升**（Int. Comm. Heat & Mass Transfer, 2026-09-11）⭐新增
+- [[sources/2026-09-11_mssp_fo-strip-die-last-5um-rdl]] — [論文] FO-Strip die-last 架構：**5µm/5µm RDL；50×50mm 基板；JEDEC −40/125°C；shadow Moiré 交叉驗證**；strip-level 中間路線（MSSP, 2026-09-11）⭐新增
+- [[sources/2026-09-11_trendforce_samsung-qualcomm-2nm-foundry-pricing]] — TrendForce：Samsung 2nm yield >70%；Taylor fab 首批客戶（Tesla/Broadcom/Arm）；Qualcomm 2nm 延至 2027；Foundry 定價提升⭐新增
+- [[sources/2026-09-11_semieng_chip-week-155]] — SemiEng Week#155：**Amkor Phase 2 $12B（潔淨室 93K sqm；2029完工）；Kepler Computing $468M FeRAM+3D記憶體（1 OOM vs HBM）；Taiyo+imec 700nm RDL 3層/300mm；Ayar Labs $650M+Wiwynn CPO HVM；DRAM Q2 $155B；頂尖代工 Q2 $53B；Yole $1.5T資料中心 2031**（2026-09-11）⭐新增
+- [[sources/2026-09-11_trendforce_huawei-npo-7-2tbps-cpo-challenge]] — TrendForce：**Huawei 7.2Tbps NPO 模組（36ch×200G）；OPEN NPO MSA Q3 2026；CPO vs NPO 架構對比；CSP 策略分歧；CPO/NPO 合計市場 $39B 2030**（2026-09-11）⭐新增
+- [[sources/2026-09-11_trendforce_cxmt-lpddr5x-flagship-supply-chain]] — TrendForce：**CXMT LPDDR5X 達 10.667Gbps（=三星旗艦等級）；Samsung+CXMT 雙供應商進入中國旗艦手機（NaviX Ultra）**（2026-09-11）⭐新增
 - [[sources/2026-09-10_trendforce_hybrid-bonding-race-soic-foveros]] — TrendForce Insights：混合接合競賽盤點；**Intel Foveros Direct 第二代目標 3µm（時程未揭露）**；SoIC 6µm 量產→4.5µm(2029)；**SoIC vs CoWoS 互連密度 56× / 能效 5×（TSMC 自述）**；GlobalFoundries SCALE 平台（2026-09-10）⭐新增
 - [[sources/2026-09-10_micron_us20260271780a1-densified-dielectric-hybrid-bond]] — [專利] Micron US20260271780A1：**以雜質緻密化的多層介電接合界面**；介電層工程第三條路徑（不換材料、改緻密度）；⭐ wiki 首件 Micron 混合接合結構專利（fam 101213222, 2026-09-10）⭐新增
+- [[sources/2026-09-10_intel_us20260271782a1-hbm-base-die-mid-stack]] — [專利] Intel HBM base die 移至**堆疊中段**（時序平衡）或頂層（散熱）；TSV 貫穿 DRAM die（US20260271782A1, 2026-09-10）⭐新增
+- [[sources/2026-09-10_intel_us20260271308a1-hbm-base-die-thermal]] — [專利] Intel HBM base die **interface logic 區為熱點**；懸空區堆疊導熱層導向頂部 IHS（US20260271308A1, 2026-09-10）⭐新增
+- [[sources/2026-09-10_trendforce_chinese-ai-chipmakers-hbm-price-hike]] — TrendForce：**華為 950DT +50% 漲價（>RMB 250K）；CXMT HBM3E 試產啟動（首次確認）；Huawei HiBL 1.0/HiZQ 2.0 自有 HBM 命名；灰市 HBM 溢價 +60~80%；DeepSeek 16 萬卡 Ascend 950DT 訂單（內蒙古資料中心）**（2026-09-10）⭐新增
+- [[sources/2026-09-10_trendforce_tsmc-august-revenue-nt514b]] — TrendForce：**TSMC 8 月 2026 NT$514.8B 史上首破 NT$500B（+53.3% YoY）；第 4 個月連續創歷史新高；2nm 首次貢獻營收（A20 Pro）；代工市占 72.5%；iPhone Duo（首款折疊 iPhone）搭載 A20 Pro 2nm**（2026-09-10）⭐新增
+- [[sources/2026-09-10_trendforce_tsmc-taichung-14nm-2027]] — TrendForce：**TSMC 台中 1.4nm P1 2H27 量產（提前半年）；AUO L7+L5C 廠房確認用於 CPO 光電整合；Samsung 1.4nm 推遲至 2029（落後 TSMC 2 年）；ASML/TEL/KLA 進駐台中七期**（2026-09-10）⭐新增
 - [[sources/2026-09-09_acsaelm_microwave-anneal-cu-cu-150c-3min]] — [論文] **微波退火 Cu-Cu 接合：150 °C / 3 min**（vs 傳統 ~300 °C / 1 h，降溫 150 °C、時間 20× 縮短）；剪切強度 30–32 MPa；比接觸電阻 ~10⁻⁷ Ω·cm²；機制為奈米間隙內微波場放大（POSTECH, ACS Appl. Electron. Mater., 2026-09-09）⭐新增
+- [[sources/2026-09-09_trendforce_highna-euv-samsung-skhynix-dram-2028]] — TrendForce：Samsung/SK hynix High-NA EUV DRAM 2028 目標；SK hynix 1c DRAM 34% Q4'26；Micron 1δ 準備⭐新增
+- [[sources/2026-09-09_tomshardware_intel-extreme-multichiplet-12x-hbm5-14a]] — Tom's Hardware：**Intel 展示 12× 光罩極端多晶片封裝概念：16 個 14A die + 8 個 18A-PT 底座 + 24 HBM5；EMIB-T+UCIe-A+Foveros Direct 三層互連；超越 TSMC CoWoS 尺寸（概念，2028–2030+）**（2026-09-09）⭐新增
 - [[sources/2026-09-08_nanopreceng_fowlp-rdl-interface-delamination]] — Delft + 武漢大學：FOWLP 之 RDL 異質介面分層；DCB 試驗；**Cu/LSF60 能量釋放率隨溫度上升 −49.6%**；熱-機械耦合量化錨點（2026-09-08）⭐新增
 - [[sources/2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation]] — [論文] IBM **單步驟非 Bosch 深矽蝕刻**（CH₄+C₄F₆+BCl₃ 取代高 GWP 之 C₄F₈）；BCl₃ 降低側壁聚合物 F:C 比；**驅動力是環境法規而非效能**（JVST A, 2026-09-08）⭐新增
+- [[sources/2026-09-08_micromachines_hbm-thermal-management-reliability]] — HBM 封裝熱管理可靠性：+15%/2-Hi 結溫；HPB -20%；Indium TIM > 聚合物 TIM（中央大學, 2026-09-08）
+- [[sources/2026-09-08_trendforce_samsung-siliconphotonics-cpo-pic-testing]] — TrendForce：Samsung SiPh PIC 自建測試 end-2026；SiPh 代工 2027；三階段 CPO 路線圖⭐新增
+- [[sources/2026-09-08_trendforce_cxmt-lpddr6-12800mbps-apple-hbm]] — TrendForce：**CXMT LPDDR6 12,800Mbps 量產啟動（小米 18 Fold）；全球 DRAM 市占 2Q26 升至 9.5%（第四名）；2027 產能 95% 滿載；HBM + 先進封裝投資 RMB 90 億；Apple 供應半公開**（2026-09-08）⭐新增
+- [[sources/2026-09-08_semieng_chip-paper-roundup-sept8]] — SemiEng Sept.8 論文彙整：**FLINT HBF LLM；M3D 6T SRAM BEOL pass-gates @ 2nm（Georgia Tech/Synopsys）；Oxford HBM-HBF HMA；可程式 SiPh 干涉儀（UiT/Stanford）；GaN EPFL**（2026-09-08）⭐新增
+- [[sources/2026-09-07_trendforce_skhynix-1c-dram-hbm4e-overtake-1b]] — TrendForce：**SK hynix 1c DRAM 各季佔比量化（10%→13%→24%→34%→35%）；1Q27 首超 1b 成主力製程；HBM4E 2027 HVM；Samsung 1c for HBM4（11.7Gbps）；1d DRAM Samsung 2026-09 開發完成 / SK hynix 2026-12；HBM5E 1d ~2030**（2026-09-07）⭐新增
 - [[sources/2026-09-06_ndte_hysan-sparse-view-xct-tsv]] — [論文] **Hy-SAN：TSV 稀疏視角 XCT** 形狀感知重建；PSNR **39.18 dB** / **6.10 M 參數** / 推論最快；⭐ **有效性來自「不是通用模型」——檢測 AI 走逐結構特化路線**；⚠ PSNR≠缺陷偵測率（深圳大學, NDT&E, 2026-09-06）⭐新增
 - [[sources/2026-09-04_ninescrolls_hybrid-bonding-2026-tsmc-6um-intel-9um]] — [文章] ⭐⭐ **量產 pitch 的第一限制被量化：拋光後表面變異須 ≤ ~0.2 nm（凡得瓦力作用距離），比機台對準嚴格 500 倍**；TSMC 6→4.5 µm、Intel 9→3 µm；限制項全在 bonder 上游（NineScrolls, 2026-09-04）⭐新增
+- [[sources/2026-09-04_trendforce_micron-hbm-100k-12hi-hbm4]] — TrendForce：**Micron HBM 月產能 40K–50K wsm → 100K wsm（2026年底）；+60K 增量；12-Hi HBM4 佔比年初 20–30% → 年底 ~50%；HBM4 爬坡 2×HBM3；Samsung HBM4 75K wsm / 150K HBM total；NVIDIA 8-Hi + 12-Hi HBM4 雙軌**（2026-09-04）⭐新增
+- [[sources/2026-09-04_tomshardware_tsmc-panel-vs-cowos-58dies]] — Tom's Hardware：**TSMC 官方聲明面板封裝不會取代 CoWoS；晶圓級可整合 58 顆大型晶片；CoPoS 為補充定位（2H28-29 HVM）**（2026-09-04）⭐新增
+- [[sources/2026-09-04_semieng_chip-week-154]] — SemiEng Week#154：**印度 Semicon 2.0 $13.4B；異質 HBM；300mm 矽光子製程；InP 擴產；$75M 稀土回收**（2026-09-04）⭐新增
+- [[sources/2026-09-03_patent_besi-inline-bond-quality-surface-tension]] — [專利] Besi 以**液相焊料表面張力在接合當下判定品質、無需破壞性測試**（WO2026182734A1, family 101168492）：本 wiki 第一件把量測移進接合動作本身的專利；⚠ **僅適用 TCB，不適用混合接合**（2026-09-03）⭐本輪新增
+- [[sources/2026-09-03_acsami_self-activated-direct-bonding-ald-al2o3]] — 自激活無電漿直接晶圓接合 ALD Al2O3 300mm 展示（橫濱國立大學 × 三菱電機, 2026-09-03）
+- [[sources/2026-09-03_intel_us20260262485a1-hybrid-bonding-via]] — [專利] Intel 混合接合 via 結構 <4 µm 間距（US20260262485A1, 2026-09-03）
+- [[sources/2026-09-03_trendforce_china-chip-tool-amec-wellrun-cseac]] — TrendForce：**CSEAC 2026 中國設備本土化——AMEC Primo XD-RIE™（70:1~90:1 深寬比）+ Prefima Unicore™ AM（ALD 鉬）；Leadmicro 先進封裝 CVD 量產；Wellrun 14nm CD-SEM 部署**（2026-09-03）⭐新增
+- [[sources/2026-09-03_trendforce_inp-sumitomo-wuhan-tianyuan]] — TrendForce：**住友化學 4 吋 InP 磊晶晶圓量產啟動（JPY 100 億 2030s 目標）；武漢天源收購中訊半導體 60%（CNY 750 萬）進入 InP 基板市場；AI 資料中心 Optoelectronic Convergence 驅動**（2026-09-03）⭐新增
+- [[sources/2026-09-03_trendforce_tsmc-equipment-demand-90pct-substrate]] — TrendForce：**SEMICON Taiwan：TSMC 設備需求半年 +90%（1×→1.9×）；20 座晶圓廠「仍不夠」；Unimicron 基板瓶頸 ABF/TGV 依賴日本 SME；>12 次客供會議**（2026-09-03）⭐新增
 - [[sources/2026-09-02_focustaiwan_tsmc-kaohsiung-baipu-packaging-hub]] — TSMC **高雄白埔 3 公頃先進封裝聚落**；**驗證效率目標 +25–50%**（非量產）；**CoWoS 產能 CAGR >80% 至 2027**；⭐ **瓶頸部分轉移到供應鏈驗證前置時間**（Focus Taiwan, 2026-09-02）⭐新增
+- [[sources/2026-09-02_tomshardware_samsung-hbm5-4tbps-4096bit-heat-path-block]] — Tom's Hardware：**Samsung Memory Executive Summit：HBM5 目標 ~4 TB/s/stack（2× HBM4E）；4,096-bit 介面推測（KAIST/Marvell）；HPB -20% 熱阻；TSMC 20-24 stacks/package → 80-96 TB/s**（2026-09-02）⭐新增
+- [[sources/2026-09-02_tomshardware_hybrid-bonding-2026-state-hbm-delay]] — Tom's Hardware：**混合接合 2026 現況深度分析——TSMC 6µm SoIC 量產；Intel Foveros Direct Clearwater Forest；JEDEC 775µm 使 HBM4 延續 microbump；HBM HB 延至 HBM4E/HBM5；Besi Kinex €476M 路徑；Adeia 專利訴訟 AMD**（2026-09-02）⭐新增
+- [[sources/2026-09-02_trendforce_tsmc-microchannel-cooling-6x-power]] — TrendForce：**TSMC James Chen SEMICON Taiwan：AI 系統功耗 5 年 6×；CoWoS 3.3×→14× 光罩；封裝功耗 600W→4,100W；微通道冷卻納入 R&D 路線圖；熱共優化 -40% 熱阻**（2026-09-02）⭐新增
+- [[sources/2026-09-02_trendforce_google-memory-wall-75pct-bom]] — TrendForce：**Google SEMICON Taiwan：記憶體佔 AI 伺服器 BOM >75%；TPU 8i/8t 雙軌；TurboQuant 6× KV 壓縮；DRAM+NAND 佔 CSP CapEx 47%→68%（2026→2027）**（2026-09-02）⭐新增
 - [[sources/2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling]] — [論文] ⭐⭐⭐ **翹曲被證明會騙人**：雙面 DRAM 順序回焊後翹曲淨值僅 **+8.6%**（第一次回焊曾 +58.2%），同時 **PCB 局部應力 +30.5%**；**代理指標「完全脫鉤」型失效的第一個帶數字反證**；⚠ 純 FEM、PCB 級（KAIST × **Samsung** × KITECH, JMRT, 2026-09-01）⭐新增
 - [[sources/2026-09-01_chip_ru-bpr-ntsv-ion-beam-recess]] — [論文] ⭐⭐⭐ **Ru 太硬無法研磨，改以離子束回蝕——「繞過 CMP」第四條路，也是「CMP 為限制層」論述的第一個邊界條件（該論述綁定於 Cu）**；自對準蝕刻消除套刻限制；ALD 無阻障層；11.4–11.8 Ω/µm（復旦等, Chip, 2026-09-01）⭐新增
+- [[sources/2026-09-01_tomshardware_samsung-hot-chips-2026-zhbm-three-phase]] — Tom's Hardware：**Samsung Hot Chips 2026：cHBM→aHBM→zHBM 三階段完整規格；PHY 面積>8×4mm→~8.5×1.5mm；HPB >35% 峰值溫降；Phase 2 二級記憶體擴充；zHBM 4-high / -70% I/O 功耗 / +2.3× BW / 無確定時程（2029+）**（2026-09-01）⭐新增
+- [[sources/2026-09-01_trendforce_nvidia-mediatek-xpu-ecosystem]] — TrendForce：**NVIDIA $3.5B MediaTek ECB；首次投資台灣上市公司；NVLink Fusion XPU 生態系；ASE+Sigurd 先進封裝受益者；Broadcom/Marvell 競爭格局**（2026-09-01）⭐新增
+- [[sources/2026-09-01_trendforce_samsung-hbm5-zhbm-semicon]] — TrendForce：**Samsung SEMICON Taiwan：HBM5 2× HBM4E / 2nm base die / 20-Hi / 2028量產；zHBM 8× / 3× PPA/W / 2029+；zNAND-O；CUBE 策略**（2026-09-01）⭐新增
+- [[sources/2026-09-01_semieng_paper-roundup-sep1]] — SemiEng：**Sep 1 論文彙整：UCLA 3D-IC 基準集；Georgia Tech 晶圓級光互連熱調諧；UM-Dearborn 生成式液冷（已收錄）**（2026-09-01）⭐新增
+- [[sources/2026-08-31_semieng_flint-hbf-llm-inference-huawei-eth-hust]] — FLINT（Huawei/ETH Zürich/HUST）：**HBF+HBM 異質記憶體 LLM 推論；burst-buffer 控制器；phantom-plane refresh；read-only FTL；arXiv:2608.25062**（2026-08-31）⭐新增
+- [[sources/2026-08-31_trendforce_skhynix-intel-hbm4e-base-die]] — TrendForce：**SK hynix 評估 Intel Foundry 作為 HBM4E base die 供應商；TSMC 成本 3–4×；base die 供應鏈三廠策略全景**（2026-08-31）⭐新增
+- [[sources/2026-08-31_trendforce_tsmc-soic-cowos-50x-compute-coupe]] — TrendForce：**TSMC SoIC+CoWoS 50× 系統運算 2024→2029；COUPE 0.06dB @ 112G；3.2→12.8+ Tbps；矽光子 >50% 2027；CPO 量產 2H26**（2026-08-31）⭐新增
+- [[sources/2026-08-31_trendforce_powertech-nt70b-foplp-pifo-ai-2027]] — TrendForce：**Powertech NT$70B PiFO FOPLP；2027 年中 AI 晶片面板級量產；AMD+Broadcom 全額預訂至 2030；510×515mm；Broadcom 新加坡 JV；CPO 2027**（2026-08-31）⭐新增
+- [[sources/2026-08-31_trendforce_intel-emib-t-stride-2029-dram-ruled-out]] — TrendForce：**Intel CFO Zinsner：EMIB-T 2H27 啟動/2028 穩定/2029 全速；40% GM / 30% OM；每客戶數十億美元；Clearwater Forest 12 EMIB tiles；DRAM 製造正式排除**（2026-08-31）⭐新增
 - [[sources/2026-08-30_micromachines_advanced-packaging-architectures-review]] — Shenzhen Univ：2D/2.5D/3D 架構橫向比較綜述；矽中介層／局部矽橋／RDL 扇出／垂直堆疊四分類；七維度交叉檢核骨架（2026-08-30）⭐新增
+- [[sources/2026-08-30_semieng_oxford-hybrid-hbm-hbf-hma-llm-inference]] — 牛津大學：**HBF 16× 容量 vs HBM；HMA 預測式遷移架構解決 HBF 長尾延遲問題；IEEE CAL 2026**（2026-08-30）⭐新增
+- [[sources/2026-08-28_trendforce_skhynix-indiana-hbm4e-3q29-supply-2030]] — TrendForce：**SK hynix Indiana HBM4E 量產 3Q29；$4B+$458M CHIPS；CEO Kwak 供應至 2030；客戶 2027 需求 +60-100%；Kioxia 合作訊號；Samsung Taylor P1 試產 2026-09**（2026-08-31）⭐新增
+- [[sources/2026-08-28_trendforce_vis-fab3-fire-8inch-capacity]] — TrendForce：**VIS Fab 3 桃園火災（2026-08-27）；8 吋產能 Q3 ~90% 利用率；TSMC 持股 19%；PMIC 供應鏈緊張；2027 再漲價**（2026-08-28）⭐新增
+- [[sources/2026-08-28_semieng_week-153-nvhbm-qualcomm-hbc-sk-hynix-indiana]] — SemiEng Week#153：**SK hynix Indiana HBM 廠破土；NVHBM；Qualcomm HBC；Mitsubishi NTE 填充材料；Microsoft Maia 200**（2026-08-28）⭐新增
+- [[sources/2026-08-28_arxiv_um-dearborn-generative-design-liquid-cooling-2-5d-3d]] — arXiv 2608.22787 UM-Dearborn：**生成式設計液冷通道，-33.6% GPU 溫度 / -72.8% 壓降**（2026-08-28）⭐新增
 - [[sources/2026-08-27_tomshardware_glass-substrate-roadmaps-examined]] — Tom's Hardware：玻璃基板十一家廠商全景與時程滑動；**迄今無任何量產設計採用、無客戶正式確認**；Absolics 2026 年底／GLASEM 2H27（成熟度 40/100）／Intel ~2030；面板尺寸 310–600mm 未收斂（2026-08-27）⭐新增
 - [[sources/2026-08-27_samsung_us20260256000a1-interposer-test-pad]] — [專利] Samsung **中介層內建專屬 test pad**，「無需中介媒介即可提早測試缺陷」；主分類為 **G01R31（測試）**；⭐ **KGI 由概念進入結構主張；不與 pad 密度競爭而是繞過它**（US20260256000A1, 2026-08-27）⭐新增
+- [[sources/2026-08-27_trendforce_nvidia-279b-supply-nvhbm]] — TrendForce：**NVIDIA Q2 FY27 $96.2B 財報；供應承諾 $279B（+134% QoQ）；NVHBM +30% BW / -15% 功耗 / +25% XPU 面積；Amazon Trainium4 首採；Feynman 2028 NVHBM 平台**（2026-08-27）⭐新增
+- [[sources/2026-08-26_tomshardware_hbf-hot-chips-oxmiq-limited-usability]] — Tom's Hardware Hot Chips 2026：**OXMIQ HBF 分析——0.6× HBM 頻寬 / 14× 容量；Grade 1/2/3（384G/1.5T/3.1T）；MoE/KV 用例；vLLM 需重大改寫；NVIDIA/AMD 未承諾採用**（2026-08-31）⭐新增
+- [[sources/2026-08-26_tomshardware_arm-agi-hot-chips-2026-ucie-chiplets]] — Tom's Hardware Hot Chips 2026：**Arm AGI 雙 N3P chiplet 伺服器 CPU（UCIe 16×16 32GT/s = 2TB/s D2D；136 Neoverse V3 核心；DDR5-8800；300W TDP；<100ns DRAM 延遲）；UCIe 晶片互連量產最大規模案例**（2026-08-26）⭐新增
+- [[sources/2026-08-26_trendforce_openai-jalapeno-samsung-hbm4]] — TrendForce：**OpenAI Jalapeño 首款推理 ASIC（TSMC 3nm + 6×HBM4 stacks，216GiB/15.4TB/s，700W）；三星傳聞為 HBM4 供應商；beats NVIDIA GB300 1.5-1.9× THR/W；Gen2 tape-out 即將**（2026-08-26）⭐新增
+- [[sources/2026-08-26_trendforce_samsung-gaia-pim-4nm-2027]] — TrendForce：**Samsung GAIA AI PC SoC（4nm PIM）——LPDDR5X-PIM 3.01× 吞吐量提升；首款商業化 PIM 產品候選；2027 量產；JEDEC LPDDR6-PIM 接近定稿**（2026-08-26）⭐新增
+- [[sources/2026-08-26_tomshardware_dmatrix-raptor-3d-dram-36um]] — Tom's Hardware Hot Chips 2026：**d-Matrix Raptor F2F 36µm 接合 3D DRAM 加速器（TSMC N4P + 自訂 DRAM，100TB/s，0.37 pJ/bit，2027 目標）；DRAM 兼作中介層；無需 CoWoS**（2026-08-26）⭐新增
 - [[sources/2026-08-25_jsts_hb-3dnand-thermal-vth-voltage-control]] — [論文] ⭐ **混合接合的第三類代價：被接合元件本身的電性劣化**；CBA 3D NAND 因底層 CMOS 熱梯度使 Vth 偏移達 **850 mV**，以位置相依偏壓壓至 10 mV；**解法在電路層而非封裝層**（JSTS, 2026-08-25；⚠ TCAD 模擬）⭐新增
+- [[sources/2026-08-25_trendforce_nvidia-server-hike-hbm-price-2027]] — TrendForce：**NVIDIA 2027 伺服器漲價 >15%；HBM ASP +50-79%（UBS +79%）；DDR5 獲利翻轉 HBM 40ppt；NVIDIA 毛利緩衝 75-80%；Rubin Ultra 4配置 HBM 評估**（2026-08-31）⭐新增
+- [[sources/2026-08-25_servethehome_amd-mi455x-hot-chips-2026-cowos-l-hbm4]] — ServeTheHome Hot Chips 2026：**AMD MI455X 8×N2 XCD 3D 混合接合（⚠️ 修正：非 4）+ CoWoS-L + 12×HBM4 432GB/23.3TB/s / 40.26 PFLOPS MXFP4；Helios 機架 2.9EF/31TB HBM4/1.7PB/s**（2026-08-25）⭐新增
+- [[sources/2026-08-25_tomshardware_micron-hot-chips-hbm-wafer-penalty]] — Tom's Hardware Hot Chips 2026：**Micron HBM 矽面積 3× DDR5（每代遞增）；記憶體牆惡化論述；Meta Llama3 17.2% 中斷歸因 HBM；HBM4E logic die = TSMC 確認；「架構圍繞熱管理」轉變；2027 供應惡化三條件**⭐新增
+- [[sources/2026-08-25_trendforce_intel-hot-chips-2026-diamond-rapids-wildcat-lake]] — TrendForce Hot Chips 2026：**Diamond Rapids 完整封裝（16×18A-P/4×Intel 3-T/2×Intel 3；Foveros Direct 3D+substrate copper link；256 cores/1.28GB LLC）；Wildcat Lake = UCIe+有機MCP取代Foveros；Crescent Island 350W LPDDR5X 推論GPU**⭐新增
+- [[sources/2026-08-25_tomshardware_lg-packaging-laser-direct-imaging]] — Tom's Hardware：**LG-PRI 無光罩 LDI 微影工具供 OSAT（1.5µm L/S → ~3µm 節距）；非傳統廠商進入封裝設備市場；CoWoS 持續供需緊張背景**⭐新增
 - [[sources/2026-08-24_electronics_hbm-reliability-bandwidth-k-out-of-n]] — 中原大學 + 清華大學：HBM 可靠度與頻寬閉式評估；**TSV bundle 建模為 k-out-of-N 閾值子系統**；可靠度與有效頻寬統一框架（2026-08-24）⭐新增
 - [[sources/2026-08-24_biggo_skhynix-hbm4-16hi-qual-hybrid-bonding-20hi]] — [新聞] SK hynix 16-hi HBM4 進入客戶認證；⭐ **反直覺：核心 die 反而加厚最多 24%、凸塊 pitch 降至 <18 µm**（翹曲成為第一限制的量產側證據）；混合接合導入點明確在 **20-hi**（BigGo, 2026-08-24）⭐新增
 - [[sources/2026-08-24_msmse_cu-ta-interfacial-thermal-resistance-tgv]] — [論文] TGV 熱瓶頸**不在銅、在 Cu/Ta 阻障層界面**；⭐ **為 Intel（空氣間隙脫鉤）vs Corning（界面做牢）的對賭加上熱軸**；高溫下熱阻下降但伴隨 Cu 劣化（陷阱型結果）（華中科大, MSMSE, 2026-08-24；⚠ 純模擬）⭐新增
+- [[sources/2026-08-24_semieng_multi-die-assemblies-dominate-2nm]] — SemiEng Week#154：**多晶粒封裝主導 2nm 以下；IBM Nanostack 3T +50%/+70%/+40%；ASE interposer 40× 路線圖；Amkor 兩相冷卻預判；FTCO 框架；2nm 光罩 ~1M CPU 小時**（2026-08-24）⭐新增
+- [[sources/2026-08-24_tomshardware_skhynix-hbm5-hybrid-bonding-775-micron]] — Tom's Hardware Hot Chips 2026：**SK hynix 775µm 物理上限確立；混合接合正式延後 HBM5（2029-2030）；iHBM D2D PHY 嵌入導熱塊 >30% 熱阻降；三廠商熱管理方案並排比較；EMIB 正式納入 2.5D 路線圖**⭐新增
+- [[sources/2026-08-24_trendforce_hot-chips-2026-samsung-zhbm-skhynix-emib]] — TrendForce Hot Chips 2026：**Samsung zHBM +70% 功率效率/+230% DRAM 頻寬 vs HBM4e；HPB 50% PHY 覆蓋/>35% 降溫；SK hynix iHBM >30% 熱阻降低；EMIB 正式列入 2.5D 選項；SK hynix+Intel JV 傳聞**⭐新增
+- [[sources/2026-08-24_intel-newsroom_hot-chips-2026-diamond-rapids-foveros-ucie]] — Intel Newsroom Hot Chips 2026：**Diamond Rapids Foveros Direct 3D 完整架構（16×18A-P/4×Intel 3-T/2×Intel 3）；Wildcat Lake = Intel 首款 UCIe 處理器；Crescent Island 480GB LPDDR5X 350W 氣冷**⭐新增
 - [[sources/2026-08-21_electronics_dual-interposer-hbm-power-integrity]] — [論文] **雙中介層 HBM**（interposer–stack–interposer）：PDN 峰值阻抗 **−66.41%/−65.7%**、頂層 DRAM 迴路電感 **−66.71%**；⚠ 與 775 µm 高度預算及 Intel 散熱層專利**競用同一空間**（Electronics, 2026-08-21）⭐新增
 - [[sources/2026-08-21_scirep_copper-oxide-reduction-ar-h2-pulsed-plasma]] — [論文] **Ar/H₂ 脈衝電漿還原氧化銅**：還原效率與表面狀態對功率／氣體組成響應方向**不同**；物理活化與化學還原為兩個可獨立調控分量（Scientific Reports, 2026-08-21）⭐新增
+- [[sources/2026-08-21_trendforce_chip-packaging-heat-ai-bottleneck-cpo-stco]] — TrendForce：**AI 晶片 TDP >1kW；液冷滲透率 33%→53%→60%（2025–2027）；HBF/HBS 次代 AI 記憶體熱管理論述；PINNs/深度 RL 封裝設計；CPO+STCO 為熱管理雙路徑**⭐新增
+- [[sources/2026-08-21_trendforce_rapidus-panel-level-packaging-8reticle-600mm]] — TrendForce：**Rapidus 8倍光罩中介層路線圖（~2030）；600mm面板49件產出；IIM整合製造模式；Lam Research Kallisto；OCP APAC Summit 2026-08-21**⭐新增
+- [[sources/2026-08-21_semieng_chip-week-152]] — SemiEngineering Week #152：**Micron Research Labs $10B/10年（封裝R&D）；JCET 11.3:1 HSR-TSV樣品；Samsung代工漲15%；Socionext 18A-P；NSSTS白宮政策點名先進封裝；CPO路線圖Nature**⭐新增
 - [[sources/2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry]] — [專利] ASE：**RDL 的 I/O 數＜基板 I/O 數**——刻意稀疏化面板 RDL、把 die-to-die 路徑下沉到基板；對面板檢測成本曲線的經濟回應（US20260248002A1, 2026-08-20）⭐新增
 - [[sources/2026-08-20_samsung_us20260247940a1-porous-filler-ncf]] — [專利] Samsung 堆疊晶片間**含多孔填料之非導電結構**；⚠ **方向與既有「熱優先」論述相反（以熱換應力/電性），但證據極薄，僅登錄追蹤**（US20260247940A1, 2026-08-20）⭐新增
+- [[sources/2026-08-20_admt_siph-cpo-pic-components-review]] — [論文] 矽光子 CPO 裝置級綜述：五大核心 PIC 元件 + 五大挑戰（含熱管理）（Advanced Materials Technologies, 2026-08-20）⭐新增
+- [[sources/2026-08-20_trendforce_samsung-onyang-hbm-fab-krw6t-p5-triple]] — TrendForce：**Samsung 溫陽 HBM 廠 KRW 6T（389,825m²）2026-09 動工；韓國「三大國家躍進」首個落地項目；P5 申請三廠房（350%→490% 容積率，6 潔淨室，>1.5× 產能）；HBM4 良率~80%；P5 完工 2030**（2026-08-21 收錄；原文 2026-08-20）⭐新增
+- [[sources/2026-08-20_trendforce_skhynix-cpo-roadmap-nature-electronics]] — TrendForce：**SK hynix × UVA Nature Electronics CPO 路線圖——頻寬牆（Bandwidth Wall）論述；>100 Tb/s / <1 pJ/bit / <10 ns；2D→2.5D 中介層→3D 光子中介層三層路徑；µLED 並行光互連；SK hynix 宣示 AI 基礎設施戰略夥伴轉型**（2026-08-21 收錄；原文 2026-08-20）⭐新增
 - [[sources/2026-08-19_natelec_cpo-hpc-ai-roadmap]] — [論文] **Nature Electronics 9(8):853–867** CPO 綜述（UVa／MIT／NTU／SK Group）；⭐ **路線圖以「封裝整合層級」2D→2.5D→3D 為軸，而非速率世代**——與廠商路線圖正交；三大挑戰：熱管理／可製造性／標準化；⚠ partial fetch，無量化數值（2026-08-19）
 - [[sources/2026-08-19_imaps_amat-tgv-liner-two-failure-modes]] — [論文] ⭐⭐⭐ **AMAT：TGV 兩大失效模式為「種子層附著不足→銅剝離」與「孔緣應力集中→玻璃開裂」；多層 liner 以模數＋CTE 雙參數最佳化為解**；⭐ 獨立第三方確認 Corning 所賭的界面模式為真（IMAPS DPC 2026, 2026-08-19，⚠ 僅摘要無數值）⭐新增
+- [[sources/2026-08-19_trendforce_skhynix-silicon-valley-hbm-codesign-team]] — TrendForce：**SK Hynix 矽谷 HBM Architect Design Team（San Jose）——$150-260K；1xnm DRAM+≤3nm foundry；與 NVIDIA/AMD/Broadcom 聯合開發下世代 AI 工廠記憶體架構；co-design 護城河形成；Samsung 同步跟進招募**（2026-08-20 收錄；原文 2026-08-19）⭐新增
+- [[sources/2026-08-19_trendforce_intel-emib-t-cowos-spillover-unimicron-ase]] — TrendForce：**CoWoS 訂單全滿，後端封裝溢出至 Intel Malaysia（~US$1.3B HBM）；Intel EMIB-T 封裝良率~90%，基板良率成主要瓶頸；Unimicron HVM 2027（初始良率目標~50%）；ASE COO 表態 CoWoS/EMIB 不互斥**（2026-08-20 收錄；原文 2026-08-19）⭐新增
 - [[sources/2026-08-18_appliedmaterials_hbm-packaging-bottleneck-toolset]] — **Applied Materials 一手設備規格**（本 wiki 首次）：Nokota VMax 2 ECD **TSV <3 µm / AR >10:1**；Avila 2 PECVD 對應 HBM **12→16 層以上**；**HBM 晶粒薄化至常規 DRAM 的 1/25**（AMAT 官方, 2026-08-18）⭐新增
+- [[sources/2026-08-18_materials_foplp-warpage-mode-aware-ml]] — [論文] NTHU：FO-PLP 翹曲模態感知混合 ML 預測；**面板邊緣與角落改善最顯著**（Materials, 2026-08-18）⭐新增
+- [[sources/2026-08-18_trendforce_shinko-glass-substrate-22layer-glassem-delay]] — TrendForce：**Shinko Electric 22 層玻璃基板（11 Cu 層/側，APS 2026）；DNP 埼玉試產線確認（2025-12）；GlaSSEM 設備採購 ≥3 次延後；Samsung EM 否認失敗認證；2H27 生產線/2028 量產**⭐新增
+- [[sources/2026-08-18_semieng_technical-paper-roundup-chiplet-3d]] — SemiEngineering（Aug 18 論文摘要）：**2.5D PIM Chiplet PDN 電壓驟降（ReVolt/Washington St.+UW-Madison）；FAPlace 2.5D 中介層尺寸最佳化（A*STAR）；3D-IC 系統級故障分析硬體（Google+TU Delft）**（2026-08-19 收錄；原文 2026-08-18）⭐新增
+- [[sources/2026-08-17_trendforce_samsung-skhynix-1h26-investment-nvidia-absent]] — TrendForce：**Samsung+SKH 1H26 設施投資 KRW 43.2T（+35.1%）；100% 稼動率；NVIDIA 未列三星前五大客戶；SKH NVIDIA 佔比 13.35%（↓ FY2025 ~24%）；Micron Ventures Paradigm Fund $250M**（2026-08-19 收錄；原文 2026-08-17）⭐新增
+- [[sources/2026-08-17_trendforce_tsmc-arizona-profit-663pct-1h26]] — TrendForce：**TSMC Arizona 1H26 獲利 NT$36.066B（+663% YoY）超越南京廠；四大海外子公司合計 NT$58.5B（+215%）；Q2 環比 -8.2%（折舊增加）；CFO：海外廠毛利稀釋 2-3ppt→3-4ppt；JASM 轉虧為盈**（2026-08-19 收錄；原文 2026-08-17）⭐新增
+- [[sources/2026-08-15_semieng_chip-week-151-amat-lam-korea-china]] — SemiEngineering Week #151：**Applied Materials FY2026 封裝設備成長 >70%；Lam Research $3B/5年 R&D 擴建；韓國 $3.5B 半導體基金；中國遺留製程晶片 2030 年逼近全球 50%；SPIL 斗六廠確認**（2026-08-15 收錄；原文 2026-08-15）⭐新增
+- [[sources/2026-08-14_trendforce_sandisk-hbf-tapeout-investor-day]] — TrendForce：**Sandisk 投資者日——首款 HBF 產品 tape-out 完成；2027 樣品、2028 量產；4 HBF GPU=8 HBM GPU（AI 推論 50% GPU 節省）；Sandisk FY28-30 mid-to-high teens 成長、80% 毛利率；NBM 協議 8 家客戶含 3 美國超大規模業者**（2026-08-15 收錄；原文 2026-08-14）⭐新增
+- [[sources/2026-08-14_trendforce_applied-materials-packaging-70pct-q3-2026]] — TrendForce：**Applied Materials Q3 FY2026——封裝設備成長預測上調至 >70%（前次 >50%）；Q3 史上最高季度環比成長；DRAM 2H26 加速；中國 Q3 最大市場**（2026-08-15 收錄；原文 2026-08-14）⭐新增
+- [[sources/2026-08-14_trendforce_samsung-nrdk-2nm-hbm5-base-die]] — TrendForce：**三星 NRD-K Line 2 轉型代工——製造 2nm HBM5 邏輯底層；GAA 架構；>50% 速度要求超 HBM4E；2H28 開啟；send fab 模式；NRD-K KRW 20 兆 3 條線至 2030**（2026-08-15 收錄；原文 2026-08-14）⭐新增
 - [[sources/2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer]] — [專利] **Tokyo Electron 熱固化／光固化共價接合層**；⭐⭐ **設備商進入接合層「材料」領域**；**光固化＝能量投遞的第四種方式（改變能量載體）**；同申請人 KR 案於**同一界面分區使用兩種介電材料**（US20260240057A1, 2026-08-13）⭐新增
 - [[sources/2026-08-13_exponentialindustry_glass-core-panel-yield-gap]] — [文章] ⭐ **玻璃面板良率 70–85% vs 有機基板 >90%**——玻璃基板障礙首次自「技術可行性」轉為**可量化的經濟問題**；面板 510×515~600×600 mm；CTE ~3 ppm/°C；市場 $650M(2024)→>$8B(2030)；⚠ 二手彙整待一手確認（Exponential Industry, 2026-08-13）⭐新增
 - [[sources/2026-08-13_jcet_us20260239928a1-hybrid-bonding-substack-test]] — [專利] JCET **D2W 混合接合每加一層即切單並測試雙層子堆疊**；⭐ **測試被插入堆疊過程之中（因空洞數奈米＜光學門檻 30 nm，無法靠檢測篩出）**；⚠ 經濟性取決於單層良率（US20260239928A1, 2026-08-13）⭐新增
+- [[sources/2026-08-13_semieng_coppers-grip-ai-scaling-slip]] — SemiEngineering：**銅互連物理極限論述——損耗/距離/功耗三重限制；CPO 取代可插拔光模組；電路交換配套架構；2030 年代全光化業界共識；CPO 功耗 -70% vs 可插拔**（2026-08-18 收錄；原文 2026-08-13）⭐新增
+- [[sources/2026-08-13_semieng_1mw-rack-debate-thermal]] — SemiEngineering：**1MW 機架辯論——CoWoS 熱通量 200–600 W/cm²；AI 機架功率 200–400kW→1MW（2027–28）；液冷門檻 >100kW；HBM 接面溫度上限 85°C**（2026-08-17 收錄；原文 2026-08-13）⭐新增
+- [[sources/2026-08-13_trendforce_intel-memory-reentry-xbm-zam-saimemory]] — TrendForce：**Intel CEO 暗示重返記憶體；ZAM（8-die HBM替代架構）；Saimemory JV（Intel+SoftBank）；前 SK Hynix CEO 李錯熹加盟；XBM UCIe 無中介層路線 2030+；Terafab 記憶體生產推測**（2026-08-14 收錄；原文 2026-08-13）⭐新增
+- [[sources/2026-08-13_trendforce_samsung-skhynix-hbm4-2h-earnings-pricing]] — TrendForce：**HBM4 ASP 首次量化 $31–32/GB（NVIDIA）/$35–36/GB（其他 ASIC）；Samsung Q3 HBM4 3× QoQ；H2 >60% HBM4；DRAM Q3 +13–18%；SK Hynix HBM3e LTA 定價澄清；SOCAMM2 bit 成長上修至 mid-20%**（2026-08-14 收錄；原文 2026-08-13）⭐新增
+- [[sources/2026-08-12_news_samsung-em-glass-reliability-failure]] — Samsung Electro-Mechanics 玻璃基板**樣品未通過客戶可靠度驗證**；量產 2H27→2028→**2028+**；設備採購自 2025-11 反覆延後；LG Innotek 改走人形機器人影像感測器；⚠⚠ **與 2026-08-23 的廠方否認直接衝突**（2026-08-12）⭐本輪新增
 - [[sources/2026-08-12_imaps_lujan-plp-cost-model-310mm-shift]] — [論文] ⭐⭐ **成本模型社群自 600×600 下修至 310×310 mm**；範圍限縮於「大型且複雜的封裝 + advanced fan-out」；⚠⚠ 淨成本結論未取得，列**下輪最高優先取全文**（Amy Lujan, IMAPS DPC 2026, 2026-08-12）⭐新增
+- [[sources/2026-08-12_trendforce_micron-datacenter-demand-below-half]] — TrendForce：**Micron 資料中心 DRAM 需求滿足率 <50%（KeyBanc Forum）；2027 更緊俏；16 SCA ~50% 營收覆蓋；「美製溢價」已納入定價；伺服器 DRAM Q3 +13–18%**（2026-08-16 收錄；原文 2026-08-12）⭐新增
+- [[sources/2026-08-12_trendforce_ase-spil-douliu-cowos-2028]] — TrendForce：**ASE/SPIL 斗六廠破土（TWD 100 億/6 公頃/2028 一期）；CoWoS 先進封裝；TSMC 月產能 14 萬套（2026 末）→22 萬套（2027 末）；TSMC 董事會批准 US$294 億 CapEx；SPIL 增資 TWD 162 億**（2026-08-13 收錄）⭐新增
+- [[sources/2026-08-12_trendforce_micron-hbm4e-custom-era-dual-supplier]] — TrendForce：**Micron HBM4E 為 Custom HBM 時代起點；市場可能向雙/單供應商傾斜；HBM-to-DDR 犧牲比 3:1→4:1；HBM4E logic die = TSMC；SK hynix「One Team」模式（SK+NVIDIA+TSMC）**（2026-08-13 收錄）⭐新增
 - [[sources/2026-08-11_microelectronicsint_tsv-rdl-electron-irradiation]] — AMD Canada + 國家空間科學中心：**1 MeV 電子輻照下 TSV-RDL 電-熱-機械耦合劣化**；Geant4-COMSOL 框架；wiki 全新的輻射可靠度維度（2026-08-11）⭐新增
+- [[sources/2026-08-11_tomshardware_intel-19-7b-stock-offering-14a]] — Tom's Hardware：**Intel $19.7B 股票發行（$95/股）；$1,000 億超額認購（5×）；14A HVM 2028；Ohio >$1,000 億；市值 $900B→$4,910 億**（2026-08-18 收錄；原文 2026-08-11）⭐新增
+- [[sources/2026-08-11_semieng_hbm-testbed-3d-assembly-yield]] — SemiEngineering：**HBM 成為 3D 封裝良率/DFT 主實驗場；TSV/微凸塊三層缺陷模型；探針污染良率風險；HBM5 混合接合 DFT 質變；左移測試方法論**（2026-08-18 收錄；原文 2026-08-11）⭐新增
+- [[sources/2026-08-11_trendforce_tsmc-cowos-5-5-reticle-99pct-yield-abf]] — TrendForce：**TSMC 5.5× CoWoS 量產良率 99%（VP Jun He @ OCP APAC Summit）；SoIC 4.5µm 2029；A14-to-A14 SoIC 1.8× I/O 密度；ABF 基板成 AI 第二瓶頸；開發週期 2 年→1 年**（2026-08-12 收錄）⭐新增
+- [[sources/2026-08-11_bccresearch_advanced-chip-packaging-market-87b-2030]] — BCC Research：**先進晶片封裝市場 $38.6B（2024）→ $87.6B（2030），CAGR 14.8%；汽車 AP CAGR 16.1%；APAC $19.9B；封裝從商品製程轉型為 IP 密集工業**（2026-08-12 收錄）⭐新增
 - [[sources/2026-08-10_screp_low-k-organic-buffer-tgv-cu-metallization]] — [論文] TGV **低-k 有機緩衝層**：O₂ 電漿使剝離強度 **0.327 → 0.675 N/mm（+106%）**、Dk 2.384 @28GHz、500 次 −40/125 °C 熱衝擊；⭐⭐ **玻璃—銅界面賭局的第三條路「緩衝」**（與 Kaneka 專利獨立收斂）；本 wiki 首個界面黏著絕對值（KETI／漢陽, Sci Rep, 2026-08-10）⭐新增
+- [[sources/2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan]] — TrendForce：**TSMC 洽購 AUO L7+L5C 廠房（>TWD 300 億）供 FOPLP+CoPoS；AUO TWD 86.4 億 TGV/RDL 試產線；龍潭 Phase 3（104 公頃）2×1.4nm + 1×面板封裝廠；C.C. Wei 確認 310mm CoPoS 2H28-29 HVM**（2026-08-11 收錄）⭐新增
+- [[sources/2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor]] — TrendForce：**Samsung HBM4 良率達 80%（2 月 <60%→8 月提前達標）；TC-NCF 改進；Q3 出貨 3×；HBM4 佔 2H26 >60%；市占目標 38%；SK Hynix HBM4 ~80% via MR-MUF；勞資第 5 輪破裂；HBM 供應受限至 2027（+50-60% YoY 仍低於需求）**（2026-08-11 收錄）⭐新增
+- [[sources/2026-08-10_trendforce_skhynix-chongqing-sale-global-reset]] — TrendForce：**SK Hynix 評估出售重慶封裝廠股份（KRW 4 兆 ~$30 億）；中國 DRAM 30-35%/NAND 35-40% 產能；非全退；印第安納 HBM 封裝中心 2H28；Y2+M17 KRW 54.3 兆平行推進；全球後端資產重組**（2026-08-11 收錄）⭐新增
+- [[sources/2026-08-07_trendforce_skhynix-y2-fab-samsung-p5-expansion]] — TrendForce：**SK Hynix 董事會批准 KRW 54.3T 投資——Y2 龍仁廠（KRW 35.2T，2027-07 建設，2029-06 潔淨室）；M17 清州 NAND（KRW 19.1T）；Samsung P5 提前 6 個月、P5 Fab 2 平行建設**（2026-08-09 收錄；原文 2026-08-07）⭐新增
+- [[sources/2026-08-07_semieng_chip-week-150]] — SemiEngineering Week #150：**FMS 2026 HBF/zHBM/zNAND-O；Terafab $16.8B；Silicon Box PLP 10×；WSTS H1 $702B/全年 ~$1.65T；Lumilens $9 億；AMD 收購 Taalas；US GAO 批評 CHIPS Act AP R&D 重組**（2026-08-08 收錄；原文 2026-08-07）⭐新增
+- [[sources/2026-08-07_trendforce_terafab-texas-16-8b-memory]] — TrendForce：**Terafab 德州一期 $16.8B 正式確認（路透社）；1 億平方英尺；3,000 工作；記憶體工程師招募（sub-20nm DRAM + MRAM/RRAM/3D DRAM）；AI5 Samsung+TSMC / AI6 Samsung / AI6.5 TSMC**（2026-08-08 收錄；原文 2026-08-07）⭐新增
+- [[sources/2026-08-07_trendforce_18-chinese-glass-substrate]] — TrendForce：**中國 18 家企業加速玻璃基板佈局——Crystal-Optech（Corning Glass Bridge 獨家光路）、WG Tech（TGV ≤5µm/100:1）、BOE（20 層 AI 載板交付）；Hymson Laser（+144% Q1'26）、DR Laser（LACE 量產）；TrendForce 官方預測：主流化 2030+ 年後**（2026-08-08 收錄；原文 2026-08-07）⭐新增
+- [[sources/2026-08-07_trendforce_china-big-fund-phase-iii-pivot]] — TrendForce：**中國大基金三期轉向——三大支柱：先進封裝（Anhui Juhe Chiplet 平台 18%）、設備（Tuojing Jianke HBM HB 設備 RMB 4.5 億）、AI 算力（YunSilicon/TsingMicro/Aijieko）；Phase III = 卡脖子技術精準突破策略**（2026-08-08 收錄；原文 2026-08-07）⭐新增
 - [[sources/2026-08-06_siliconbox_500m-units-panel-scale]] — Silicon Box：**累計出貨 5 億顆（5× since 2025-10）；目標 15 億顆 by 早 Q4 2026；Novara EUR 3.2B / EU 補助 EUR 1.3B；Open EU Foundry（2026-03）；估值 >USD 1.7B**（PRZen wire, 2026-08-06）⚠ 公司新聞稿⭐新增
+
 - [[sources/2026-08-06_epo_corning-small-diameter-tgv-adhesion]] — [專利] **Corning 小孔徑 TGV**：Ti/Cu 黏著層（PVD）＋酸液富化羥基＋矽烷官能化＋**無電鍍銅種子層**＋CMP 前退火；⭐ **化學性黏著強化路線，與 Intel 的結構性應力解耦假設相反**；玻璃基材商往下游金屬化整合（2026-08-06）
+- [[sources/2026-08-06_trendforce_inp-shortage-ai-optical-bottleneck]] — TrendForce：**InP（磷化銦）短缺超越 DRAM/NAND——Lumentum CEO 警告；NVIDIA $40B 投資兩家供應商；中國控制 ~70% 全球精煉銦；CPO 驅動 InP 雷射源需求；China InP ecosystem 圖**（2026-08-09 收錄；原文 2026-08-06）⭐新增
+- [[sources/2026-08-06_tomshardware_samsung-zhbm-bvnand-fms2026]] — Tom's Hardware（Anton Shilov）：**Samsung FMS 2026 深度技術分析——zHBM（HBM 接合至邏輯晶片頂部，宣稱 8×HBM5）；zNAND-O（4~8 層 NAND 堆疊邏輯，邊緣 AI）；BV-NAND V10（400+層 28Gb/mm² 5600MT/s 量產）；全部依賴晶圓接合技術**（2026-08-09 收錄；原文 2026-08-06）⭐新增
+- [[sources/2026-08-06_trendforce_nittobo-tglass-fy2027-forecast]] — TrendForce：**Nittobo T-glass FY2027 淨利潤 JPY 20B；三倍產能仍不夠；NVIDIA/Apple/Google 搶佔 2026 年配額**（2026-08-07 收錄；原文 2026-08-06）⭐新增
 - [[sources/2026-08-05_jap_particle-shape-w2w-bonding-voids]] — [論文] 華中科大：**顆粒形狀**決定 W2W 孔洞——方形 vs 圓柱 **17.1 vs 11.1 µm（+54%）**、延遲 4.4 vs 3.1 s；⭐ **現行「≥X nm 顆粒計數」潔淨度規範在物理上不足以預測良率**；顆粒位置影響非單調；⚠ 模擬（2026-08-05）
 - [[sources/2026-08-05_mlq_cpo-four-foundry-routes]] — [文章] CPO 四條代工路線分歧在**封裝方式**；⭐ **新增路線分類軸：光源位置（Intel 晶片上雷射 vs 其餘）**；Intel 5 pJ/bit **@100 m**（vs 可插拔 15）；GF 銅 pitch 110→<45 µm；Samsung TCB 2027→HB 2028→turnkey 2029（MLQ.ai, 2026-08-05；⚠ AI 生成內容）⭐新增
+- [[sources/2026-08-05_trendforce_tsmc-cowos-cow-outsourcing-osat]] — TrendForce：**TSMC 擴大 CoW 外包至 ASE/SPIL；NVIDIA 預訂 800-850K wsm；2026 供需缺口 20%；AMD 支持 OSAT 自建 CoW**（2026-08-07 收錄；原文 2026-08-05）⭐新增
+- [[sources/2026-08-05_trendforce_samsung-v10-zhbm-hbm5-fms2026]] — TrendForce：**Samsung FMS 2026：V10 BV-NAND 400+層 +58%密度供應NVIDIA；zHBM 8×HBM5 custom IP整合；HBM5 HPB -20%熱阻；zNAND-O端側AI；SK Hynix V10 375層 2027**（2026-08-06 收錄；原文 2026-08-05）⭐新增
 - [[sources/2026-08-04_jmrt_vacuum-assisted-void-free-cu-fill-tgv]] — [論文] TGV **真空輔助潤濕**達成 **AR 10 無空洞銅填充**；⭐ 反直覺：**金屬化後的表面比裸玻璃更難潤濕**（製程順序即設計變數）；📌 **修正本 wiki 的「Elsevier 系統性偏差」描述——應限於非 OA 篇目**（漢陽／LSIS, JMRT, 2026-08-04）⭐新增
+- [[sources/2026-08-04_semieng_from-blueprint-intel-hlff]] — SemiEngineering（Intel Foundry）：**Intel ECTC 2026 HLFF 240×240mm 封裝藍圖；EMIB >5× 18-die+12-HBM void-free；EMIB >7× void-free；Foveros 2×/4× void-free；2× 通過700TC+1000hHTOL；路線圖12×→50× panel-scale**（2026-08-06 收錄；原文 2026-08-04）⭐新增
+- [[sources/2026-08-04_trendforce_psmc-exclusive-emib-silicon-capacitor-umc-boost]] — TrendForce：**PSMC 升格為 Intel EMIB-T 矽電容器獨家供應商（12" IPD 平台）；2H 2027 擴產 8"+12" wsm；UMC 台灣+新加坡製造矽橋接器；EMIB-T 成本約 CoWoS 50%；良率~90%；HVM 2027**（2026-08-05 收錄；原文 2026-08-04）⭐新增
+- [[sources/2026-08-04_trendforce_hbf-standard-fms2026-skhynix-sandisk]] — TrendForce：**FMS 2026 HBF 首份正式規格：OCP/UCIe、512GB、Grade 1-3（0.4-3.0 TB/s）；Google DeepMind+Tenstorrent 確認支援；NVIDIA 未承諾；SK Hynix V10 375 層 NAND 2027 年初量產**（2026-08-05 收錄；原文 2026-08-04）⭐新增
 - [[sources/2026-08-03_tomshardware_cpo-foundry-roadmaps-four-way]] — **CPO 四大代工路線圖首次可橫向比較**：TSMC COUPE 1.6→6.4→12.8 Tbps、頻寬密度 0.5→4 Tb/s/mm；Samsung **5→2 pJ/bit、2028 HCB 10 µm**；Intel **限定運算端不做交換器**；GF **110→<45 µm**（Tom's Hardware, 2026-08-03）⭐新增
+- [[sources/2026-08-03_trendforce_zj-innolight-hkex-ipo-inp-bottleneck]] — TrendForce：**ZJ Innolight HKEX 創紀錄 IPO（HKD 534 億）；1.6T 光模組帶動 InP 基板瓶頸；Coherent 德州 4× 擴產+NVIDIA $20 億 LTA；中國雲南鍺業+有研半導體+天津寬禁 InP 本土化**（2026-08-05 收錄；原文 2026-08-03）⭐新增
+- [[sources/2026-08-03_trendforce_kumamoto-m71-tsmc-jasm-tel-restart]] — TrendForce：**M7.1 熊本地震（2026-07-28）；JASM Fab 1 停機設備檢查無復工時程；TEL 08-03 復工；Sony 08-04 復工全量恢復預計 8 月中；Renesas 西木 07-29/川尻 08-05 復工**（2026-08-05 收錄；原文 2026-08-03）⭐新增
 - [[sources/2026-08-02_chips_cpo-wafer-level-probe-card]] — [論文] **CPO 晶圓級光學測試探針卡**；六自由度 FAU＋奈米級定位；收斂可靠度 **95.8%**、達全域最大耦合 **99.4%**；⭐ **「振動→binning 決策」是新的良率語意：元件可能沒壞，只是量測當下被擾動**（米蘭理工, Chips, 2026-08-02）⭐新增
 - [[sources/2026-08-01_jfap_3dic-failure-analysis-dfa]] — [論文] **Google × TU Delft：CPO／異質整合／chiplet 根本性破壞電性故障隔離（EFI）**；DFT/DFD 已不足，主張 **DFA（Design for Analysis）**；⭐ **良率爬坡被 FA 而非製程限制；UCIe 解互通性不解可診斷性**（JFAP, 2026-08-01）⭐新增
 - [[sources/2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded]] — [專利] ASE：**模封式橋接**——橋接晶片背面連接件先以第一模封層包覆再整體包覆；所解問題為分層；**橋接架構第三條路線（OSAT 組裝線，非 foundry）**（CN224583751U, 2026-07-31）⭐新增
 - [[sources/2026-07-31_ase_cn224583735u-photoelectric-hybrid-rdl]] — [專利] ASE：**光電混合 RDL**——頂部導電材料兼作光波導反射界面，**光層不增加額外光罩層**；OSAT 式成本論證 vs TSMC COUPE 效能論證（CN224583735U, 2026-07-31）⭐新增
 - [[sources/2026-07-31_jvstb_ibm-cu-pad-oxide-phases-annealing]] — [論文] IBM Research × RPI：via 內 Cu 墊退火 200–350 °C；⭐ **CuO 於 250 °C 出現並可與母材分離**（FIB 見 gap/void）——恰落在混合接合典型退火窗口內，為低溫路線提供**與熱預算無關的相學理由**；⚠ 空氣環境（2026-07-31）
-- [[sources/2026-07-30_micromachines_tgv-cleanability-surface-tension]] — [論文] ⭐⭐⭐ **代理指標「敏感度為零」的極端案例**：TGV 清洗後**孔外接觸角恆為 3–4°、與清洗液表面張力無關**，孔內卻隨之變化；➜ 空洞根因被推至**電鍍前兩步（清洗）**；汙染源為空氣中有機物（ARCH, Micromachines, 2026-07-30）⭐新增
-- [[sources/2026-07-30_amkor_us20260223669a1-tim-flow-layer-sidewall-lid]] — **專利訊號** Amkor：TIM-flow 層 + 側壁 TIM + lid footprint 外無 TIM；封裝**內部**散熱工程；與 McCann 兩相冷卻預判形成雙軌策略（2026-07-30）⭐新增
-- [[sources/2026-07-28_xianfeng_cn122476946a-alignment-mark-protection]] — [專利] 上海先鋒：**對位標記抗氧化＋光學增強雙功能層**；揭示面板級對位失效的**第三個機制（化學／光學）**，有別於翹曲致 die shift（CN122476946A, 2026-07-28）⭐新增
-- [[sources/2026-07-27_ninescrolls_fine-pitch-hb-cmp-surface-prep]] — [文章] ⭐ **Cu recess 是「窄窗」而非越平越好**（dishing 過深→應力、不足→接不上）；退火基準線 **400 °C × 1–2 hr**（CEA-Leti 100 °C 已示範）；**單一奈米顆粒即致命**；SiCN 為 400 nm pitch 必要條件（NineScrolls, 2026-07-27）⭐新增
-- [[sources/2026-07-21_lam_sabre-3d-is-ecd-not-cmp]] — [一手·否證] Lam 官方：**SABRE 3D 為電化學沉積平台，非 CMP、未涉混合接合**；附帶訊號：Lam 官方封裝敘事主動納入面板級製程（Lam Research, 2026-07-21）⭐新增
-- [[sources/2026-07-17_jcet_cn122421815a-asymmetric-bonding-interface]] — [專利] JCET **刻意不對稱的接合界面**（下硬上軟介電層 + 下粗上細 Cu 晶粒）；⭐⭐ **挑戰本 wiki 隱含的「兩接合面對稱」假設**；**Cu 晶粒尺寸首次寫入請求項**；⭐ 發現 **JCET 有中國／韓國兩個獨立研發群組**（CN122421815A, 2026-07-17）⭐新增
-- [[sources/2026-07-16_adeia_us20260206661a1-local-heating-hybrid-bonding]] — [專利] Adeia US20260206661A1：**預埋磁性/微波敏感材料對接合界面局部加熱**；⭐ 微波能量投遞的第三個應用點——**不是第三個製程，而是同一製程的第三種實作**；低溫路線目標自「降整體溫度」改為「縮小高溫區體積與時間」（fam 100489515, 2026-07-16）⭐新增
-- [[sources/2026-07-14_patent_meadville-glass-carrier-per-layer-cmp]] — [專利] ⭐⭐⭐ **玻璃首次以「CTE 與矽匹配」為由、在請求項層級作為堆疊載板；Lau 兩難的第一個業界回應是「限制用途」而非解決**；⭐⭐ CMP 放在每一層之間 ➜ 次數隨層數線性成長（CN122396357A / 上海美維, 2026-07-14）⭐新增
-- [[sources/2026-07-09_skhynix_us20260198018a1-bonding-insulating-layer-tsv]] — **專利訊號** SK hynix：介電接合層 + 貫穿接點 + TSV 串接之記憶體堆疊；公開日早於 Hot Chips「HB 延至 HBM5」發言（2026-07-09）⭐新增
-- [[sources/2026-07-07_semieng_panel-inspection-metrology-hdfo]] — SemiEng（Anne Meixner）：面板檢測與量測；**RDL 3→9 層、5→2 µm；光阻 650 µm；600 mm 面板 ~10¹² pixels/layer；5→1 µm 解析度速度慢 4×**；**KGP（known-good panel）概念首次入庫**（2026-07-07）⭐新增
-- [[sources/2026-07-06_apl_lensless-through-silicon-phase-imaging]] — [論文] **反射式無透鏡穿矽相位成像**（1064 nm、單張繞射圖、無物鏡無移動件）；解析 **2.19 µm**；⭐ **價值判準由精度轉向可整合性（in-tool）；相位通道對比優於振幅通道**；⚠ 不足以驗證 <1 µm D2W 對準（坦佩雷大學, APL, 2026-07-06）⭐新增
-- [[sources/2026-07-03_lgchem_cn122342272a-glass-core-substrate-singulation]] — **專利訊號** LG Chem：玻璃芯基板切單法（犧牲性金屬圖案定義切割道）；**玻璃良率瓶頸在邊緣而非 TGV**；IPC 落在 C03C/H05K 而非半導體體系（2026-07-03）⭐新增
-- [[sources/2026-07-02_epo_intel-bottom-up-tgv-plating-airgap]] — [專利] Intel **自底部 TGV 鍍膜、無需側壁種子層**，並**刻意保留銅與玻璃間的空氣間隙**（應力解耦而非電性隔離）；22 名發明人；⚠ 空氣為熱絕緣體之代價未被討論（2026-07-02）
-- [[sources/2026-07-02_epo_onto-hybrid-projection-directwrite-lithography]] — [專利訊號] ⭐⭐ Onto：面板微影**分工**——**≥1 µm 用投影（field ≥50×50 mm）、<1 µm 用直寫**；⭐ 首個封裝級投影視場數值 ➜ 310 mm 面板 ≈36 次曝光、600 mm ≈144 次（US20260186421A1, 2026-07-02）⭐新增
-- [[sources/2026-07-02_patent_intel-tcb-bond-head-nozzle]] — [專利] ⭐⭐ **Intel 把排他權下在 TCB 鍵合頭噴嘴的流道幾何上；兩個 family、不同團隊、相鄰日各主張一種幾何**；➜ 「熱」須拆成運作熱 vs 製程熱（US20260191069A1 + EP4770413A2, 2026-07-02）⭐新增
-- [[sources/2026-06-28_hyperframe_amat-hybrid-bonding-hedge]] — [文章] AMAT 以**「收斂」策略避險**而非押注混合接合；fab 級量測（eBeam sub-10 nm）下沉至封裝基板；超薄 die = 標準晶圓 **1/25**（與 2026-08-18 官方記錄交叉一致）（HyperFRAME Research, 2026-06-28）⭐新增
-- [[sources/2026-06-25_lamresearch_wafer-to-panel-100mm-threshold]] — [一手] ⭐⭐ **Lam：封裝超過約 100×100 mm 後晶圓即失去效率**（首個設備商給出的面板轉換幾何門檻）；**面板尺寸標準業界未定**；Salzburg Panel CoE 2026-05-20 啟用（Lam Research Newsroom, 2026-06-25）⭐新增
-- [[sources/2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo]] — [新聞] ⭐⭐ **結清空缺：AUO 在 CPO 是零件供應商**（與 Ennostar 提供光通訊方案，非基板、非封裝服務）；**Innolux × Ibiden 玻璃／ABF／玻璃三層複合基板**供 TSMC；TSMC 玻璃核心基板量產 **2028 年底–2029 年初**（BigGo, 2026-06-21）⭐新增
-- [[sources/2026-06-18_skhynix_us20260173880a1-guard-ring-bonded-structures]] — **專利訊號** SK hynix：接合介電層與上下 guard ring 配置；接合層作為水氣／離子橫向擴散通道的兩難（2026-06-18）⭐新增
-- [[sources/2026-06-15_ieeetc_diecare-die-level-ecc-hbm]] — Samsung + 成均館大學（IEEE TC）：**DieCARE——不需額外 die 的 HBM die 級容錯 ECC**；跨 die 分散 ECC 位元；呼應 775µm 高度天花板約束（2026-06-15）⭐新增
-- [[sources/2026-06-15_scirep_foplp-warpage-debonding-carrier]] — [論文] ⭐⭐⭐ **FOPLP 翹曲峰值出現在 debonding 階段，不在成型**；**承載板材料（鋼／玻璃／陶瓷）為本 wiki 此前未記錄的變數**；➜ 「瓶頸在被視為輔助步驟的那一步」跨域第二例（Sci. Rep., 成功大學×南臺科大, 2026-06-15）⭐新增
-- [[sources/2026-06-11_skhynix_us20260165219a1-negative-charge-pad-bonding]] — **專利訊號** SK hynix：**連接墊表面施加負電荷後熱處理接合**；混合接合良率的第三軸（表面電化學狀態）；指向降低退火熱預算（2026-06-11）⭐新增
-- [[sources/2026-06-11_epo_amkor-cte-balance-beam-neutral-axis]] — [專利] Amkor **梁中性軸上下 CTE 對稱平衡**控制翹曲；⭐ **翹曲語彙自材料學轉為結構力學**（可計算的一階矩平衡）；同日另件以同一片金屬結構建散熱路徑——熱／機械耦合下沉到零件層級；Amkor 專利軌完成（2026-06-11）
-- [[sources/2026-06-08_irtnanoelec_d2w-hybrid-bonding-1um-pitch]] — CEA-Leti / IRT Nanoelec：**D2W 混合接合 1 µm 間距（宣稱世界首例）**；良率確認 5→2 µm；**1 µm 瓶頸明確歸因於機台對準**，目標下一代 0.5 µm (3σ)；10 萬 links 電性測試（ECTC 2026, 2026-06-08）⭐新增
-- [[sources/2026-06-02_intel_ectc2026-emib-t-cpo-glass]] — Intel Foundry 官方（ECTC 2026）：**EMIB-T 封裝 up to 120×120 mm、首層 bump pitch 25 µm、HBM4E >12 Gb/s、UCIe 64 Gb/s**；CPO 可拆卸邊緣連接器 + V-groove 玻璃耦合器；**銅填充 TGV 熱循環無失效**；20 篇論文（含 SPIL、NIST、EVG）（2026-06-02）⭐新增
-- [[sources/2026-06-01_ninescrolls_post-cmp-clean-yield-lever]] — [待證] ⭐⭐ **「CMP 後清洗是繼 CMP 之後最大的單一良率槓桿」——限制鏈第四環候選**；**1 µm 顆粒 → 數百 µm 空洞（10²–10³ 倍）**；介電 RMS <0.5 nm；銅凹陷窗口僅約 2 nm 寬；氧化物呈對數成長 ➜ 可操作變數是 **queue time**（NineScrolls, 2026-06-01/08-15）⭐新增
-- [[sources/2026-05-28_imec_w2w-hybrid-bonding-200nm-pitch]] — imec × EV Group：**W2W 混合接合 200 nm pitch；post-bond overlay <40 nm 涵蓋 300 mm 晶圓 100% die**；六角 pad 排列、Cu 密度 25%、SiCN、EVG GEMINI FB（ECTC 2026, 2026-05-28）⭐新增
-- [[sources/2026-05-28_anysilicon_ase-310mm-panel-focos-bridge]] — AnySilicon：**ASE 310×310 mm 面板線（可用面積 96,100 mm²）；FOCoS L/S 2/2 µm、FOCoS-Bridge L/S 8/8 µm**；⚠ 無時程／產能／客戶／良率（2026-05-28）⭐新增
-- [[sources/2026-05-28_epo_sandisk-d2w-bonded-memory-offset-pads]] — [專利] SanDisk **D2W 貼合：金屬墊與 bit line 外拉至 die 重疊區之外**，貼合後仍可探針存取；⭐ **測試左移第三個獨立實例（版圖層，首次來自記憶體廠）**；⭐ 同時放寬 D2W 對位裕度——版圖承擔機台精度負擔（2026-05-28）
-- [[sources/2026-05-27_atlaspcb_ectc2026-substrate-market-fujifilm-pbo]] — AtlasPCB：ECTC 2026 約 450 篇論文；**Fujifilm 無 PFAS PBO（Dk<3.1，免產線改動）**；基板市場 $14B(2024)→$22B(2027)（2026-05-27）⭐新增
-- [[sources/2026-05-15_auo_cn122043677a-optical-engine-copackaged-optics]] — [專利] AUO CN122043677A：貫孔式光引擎（孔壁即反射元件）；⭐⭐ **面板廠切入 CPO 的首個結構性證據**；⭐ **玻璃/大面積基板加工能力是 FOPLP、玻璃基板、CPO 三條路線的共用底層**（fam 99727976, 2026-05-15）⭐新增
-- [[sources/2026-05-14_epo_intel-partial-liner-tgv-stress]] — [專利] Intel **TGV 部分襯層**（高度 < via 全高、自單面延伸）；⭐ **是物理宣稱而非成本優化——間接指出 TGV 應力集中於單側界面**；並列出 Intel 半年內攻擊同一問題的**五種以上互不相同解法**（2026-05-14）
-- [[sources/2026-05-10_atlaspcb_tsmc-copos-exclusivity-cowos-170k-2027]] — AtlasPCB：**CoWoS 2027 ~170K wpm（補上時間序列中間點；2026→27 僅 +25–30%）**；CoPoS 供應鏈保密控制／護城河定位（2026-05-10）⭐新增
-- [[sources/2026-09-14_trendforce_tsmc-cowos-double-2028-capacity]] — TrendForce：**TSMC CoWoS 產能 130K→260K wpm（2026 年底→2028 年底，倍增）；Intel EMIB-T 2027 15–20K/月→2028 40–45K/月（約 CoWoS 的 15–17%）；2nm 90K→110K wpm；3nm 180K→210K wpm；2026 CapEx $60–64B（70–80% 先進製程）**（2026-09-14）⭐新增
-- [[sources/2026-09-14_semieng_paper-roundup-chipsmore-reach]] — SemiEng 論文彙整 Sept.14：**NIST underfill 固化/熱耐久建模；NUS CHIPSMORE compute-in-interconnect chiplet；RPI+IBM REACH 控制器端長跨距 HBM ECC；NYCU+TSMC EUV 光罩**（2026-09-14）⭐新增
-- [[sources/2026-09-10_intel_us20260271782a1-hbm-base-die-mid-stack]] — [專利] Intel HBM base die 移至**堆疊中段**（時序平衡）或頂層（散熱）；TSV 貫穿 DRAM die（US20260271782A1, 2026-09-10）⭐新增
-- [[sources/2026-09-10_intel_us20260271308a1-hbm-base-die-thermal]] — [專利] Intel HBM base die **interface logic 區為熱點**；懸空區堆疊導熱層導向頂部 IHS（US20260271308A1, 2026-09-10）⭐新增
-- [[sources/2026-04-30_seoultech_us20260123559a1-hydrocarbon-plasma-low-temp-bonding]] — [專利] 首爾科技大學 **碳氫系（CxHy）電漿前處理之低溫混合接合**；⭐ 表面活化分支的新化學（還原性而非氧化性）；⚠ **明示依賴「熱膨脹」成鍵，與 IBM/RPI 的 CuO 警告對同一機制給出相反評價**（US20260123559A1, 2026-04-30）⭐新增
-- [[sources/2026-04-30_ibm_us20260123509a1-hybrid-bonding-thermal-dissipation]] — [專利] IBM US20260123509A1：**接合區內分割鍵結介電區與導熱區，面積配比成設計變數**；⭐ 熱路徑與結構搶同一份面積：**10⁶ I/O/mm² 與 >3 W/mm² 是同一塊面積上的兩個需求**（fam 99550345, 2026-04-30）⭐新增
-- [[sources/2026-04-30_epo_absolics-glass-substrate-impurity-and-grain-symmetry]] — [專利訊號] ⭐⭐ Absolics 兩件：**溶出雜質 P ≤1,500 ppb／Zn ≤500 ppb 且 ICP-MS 方法寫入請求項**（玻璃基板第五個面向＝化學純度）；⭐⭐⭐ **上下 RDL 銅晶粒長寬比之比 C/D 0.85–0.99——翹曲控制下放到微結構層**（US20260123495A1 / US20260123487A1, 2026-04-30）⭐新增
-- [[sources/2026-04-16_semieng_chiplet-standards-plug-n-play]] — SemiEng：Chiplet 標準四層盤點——**FCSA Rev1.0.0（2026-02 生效）**、**JEDEC JESD-030O**、**五項設計套件含 PTDK**、Universal Link Layer（PHY-agnostic）；⭐ **標準重心自互連移向組裝與材料**；PTDK 為 KGD 空缺的部分解（2026-04-16）
-- [[sources/2026-04-16_asmpt_us20260107808a1-decoupled-floating-bonding-stage]] — [專利] ASMPT US20260107808A1：粗動/細動**物理解耦**的浮動接合載台；⭐ **價值在反證**——設備側精度持續投入、量產 pitch 卻停滯，兩者並存即空缺核心；設備商純申請人檢索訊噪比僅 1.6%（fam 99436762, 2026-04-16）⭐新增
-- [[sources/2026-04-13_laserfocusworld_cpo-thermoelectric-cooling]] — Laser Focus World：CPO 熱約束是**溫度穩定度而非散熱量**——雷射／PIC 需 **< 0.5 °C**；⭐ **熱問題分裂為兩類：兩相冷卻解熱通量、TEC 解精密控溫**；玻璃中介層 RF 至 **40 GHz**；⚠ 供應商撰稿（2026-04-13）
-- [[sources/2026-04-10_semiconductor-digest_hanmi-2nd-gen-hybrid-bonder]] — [時程] ⭐⭐ **Hanmi 第二代混合接合機：2026 年底原型、2027 上半廠房（₩100B/Class 100）、~2029 量產採用**；➜ **TC bonder 的領先並未轉移到混合接合**（同公司相鄰技術落後三年）（Semiconductor Digest, 2026-04-10）⭐新增
-- [[sources/2026-04-02_adeia_us20260096463a1-buildup-organic-dielectric-bonding]] — [專利] **Adeia 有機介電層貼金屬側壁 + 無機層在外**的堆疊式接合層；⭐⭐ **結清「PHB 第二來源」空缺並超出門檻——一季內 Toray／Adeia／JCET 三個互不重疊的申請人，正式升格為第五條低溫路線**；2026 年內三個 family-id 圍籬式布局（US20260096463A1, 2026-04-02）⭐新增
-- [[sources/2026-03-29_damnang_hybrid-bonding-cmp-gating-factor]] — [文章] ⭐⭐ **「限制項在 CMP 而非 bonder」的第二個獨立來源，且早於 NineScrolls 近半年**；⭐⭐ **對準容差依應用分段：CIS ~200 nm／邏輯・HPC <100 nm**——列管的「imec <50 nm vs 量產 100 nm」矛盾可降級（Damnang Research, 2026-03-29）⭐新增
-- [[sources/2026-03-27_jsamd_cu-cu-bonding-review-dishing-3-5nm]] — [論文] ⭐⭐⭐ **本 wiki 最完整單篇量化來源：Cu dishing 控制 3–5 nm、Ra<0.1/0.2 nm、SiCN <2 Å、剪切強度全表、接合能 SiCN/SiCO 2.32 vs SiON 1.5 J/m²**；⭐⭐⭐ **dishing 雙向失效（不足→空洞／過度→間隙不閉合）**；(100) 取向 +25%（J. Sci. Adv. Mater. Devices 11(2) 101155, 2026-03-27）⭐新增
-- [[sources/2026-03-13_kaneka_jp2026047137a-glass-core-polyimide-quantified]] — [專利] **Kaneka 玻璃核心基板用聚醯亞胺絕緣層**：**醯亞胺基濃度 15–38%／內應力 ≤20 MPa／Ra ≤10 nm**（本輪唯一含量化限定的專利）；⭐⭐ **玻璃界面賭局的第三條路「降低驅動力」**；上下界並存＝參數非單調（JP2026047137A, 2026-03-13）⭐新增
-- [[sources/2026-03-13_patent_zhuhai-tiancheng-hybrid-bonding-avoidance]] — [專利] ⭐⭐⭐ **首見把「規避混合接合設備與超高潔淨環境」寫成明示技術效果的專利**；模封開孔 AR ≤10 + TSV 熱壓鍵合；目標晶片 InP（CPO 指向）➜ 潔淨度／設備門檻是成本項，自推論升格為有人以排他權下注（CN121666157A / 珠海天成, 2026-03-13）⭐新增
-- [[sources/2026-03-11_ieee-eps_ectc2025-hybrid-bonding-special-session]] — [報告] ⭐⭐ **一手機構來源**（IEEE EPS 通訊）：**Samsung die 翹曲允收 <100 nm**（與機台對準同量級）、imec 對準需求 <50 nm、KLA 量測需 1 nm、**CSAM 僅 ~10 µm 解析度（10,000× 落差）**；PHB <250 °C/0.5 MPa；散熱 >3 W/mm²（2026-03-11）⭐新增
-- [[sources/2026-03-11_epo_adeia-cmp-for-hybrid-bonding-patent]] — [專利訊號] ⭐⭐⭐ **Adeia 把 CMP 本身寫成專利標題**「Chemical Mechanical Polishing for Hybrid Bonding」——「CMP 是限制層」的第三個獨立支持且形式最強；機制為**以阻障層作研磨停止層，把奈米級高度控制轉為薄膜厚度控制**；⚠ 修正 2026-09-20 對 Adeia 的單向讀法（EP4709132A2, 2026-03-11）⭐新增
-- [[sources/2026-02-18_siliconbox_ep4697377a1-fanout-panel-metal-sealing-ring]] — [專利] Silicon Box（發明人為創辦人 Sehat Sutardja 本人）：**RDL 內建金屬密封環以延長電鍍導電路徑**、均勻化大面板鍍層；指向面板瓶頸為**對位與均勻度**而非微影解析度（EP4697377A1, 2026-02-18）⭐新增
-- [[sources/2026-02-10_epo_shanghai-univ-citric-acid-cu-reduction-sog]] — [專利訊號] ⭐⭐⭐ 上海大學：**Ar/H₂ 電漿活化不足以還原 Cu 氧化物**，以**檸檬酸同時還原 Cu 並親水化 SOG**——一道製程滿足兩個方向相反的表面需求；➜ 「Cu 氧化相門檻」空缺的提問方式須修正（CN121511008A, 2026-02-10）⭐新增
-- [[sources/2026-02-05_siemens_cpo-five-key-trends-2026]] — Siemens：CPO 五大趨勢；1.6T 鏈路功耗 **30 W → 9 W**；⭐ **資料中心 60% 能耗花在資料搬移**（CPO 需求側第一原理數字）；Ayar Labs TeraPHY **8 Tbps** UCIe 光學；3.2T port 2029 >1,000 萬個（2026-02-05）
-- [[sources/2026-01-14_patent_cea-set-d2w-hybrid-bonding-jp-phase]] — [專利·時序] ⭐ **CEA + SET 的 D2W 直接混合接合，優先權 2022-12，ECTC 2026 才發表 ➜ 同一機構「排他權布局→學術發表」間隔約 3–4 年；論文是落後指標而非領先指標**（JP2026501395A, 2026-01-14，⚠ 優先權早於 2026）⭐新增
-- [[sources/2025-11-21_eetimes_amat-besi-d2w-hybrid-bonding-hvm]] — EE Times：AMAT × Besi **Kinex**；⭐⭐ **D2W 逐 die 對準量產現況 100 nm @ 3σ**（2026 新機 50 nm、路線圖 <25 nm）、**1,600–2,000 die/hr**、佇列時間 13 hr→數分鐘；**結清「設備商 D2W 對準路線圖」空缺，並推翻「pitch 受限於對準」的簡單歸因**（2025-11-21）
-- [[sources/2025-10-09_micron_wo2025212237a1-heat-mitigating-hbm-sip]] — [專利] Micron interface die 移至**堆疊頂層**、I/O 走上表面 + 上方 communication substrate（over-the-top bridge）（WO2025212237A1, 2025-10-09）⭐新增
-- [[sources/2026-03-26_tsmc_us20260090444a1-lsi-via-barrier]] — [專利] TSMC LSI top-via 阻障結構；揭示膠帶殘留物→金屬遷移/wire growth 失效模式（US20260090444A1, 2026-03-26）⭐新增
-- [[sources/2026-05-26_jcet_cn122094515a-hybrid-glass-silicon-interposer]] — [專利] JCET 玻璃+矽混合中介層（混合接合貼合）；以便宜玻璃承載昂貴矽（CN122094515A, 2026-05-26）⭐新增
-- [[sources/2026-06-30_advphotonicsnexus_tgv-3d-fowlp-cpo-optical-engine]] — [論文] A*STAR IME：**>200Gbps/lane 時垂直穿孔成瓶頸；預製 TGV 勝過 TSV/TMV/eBar；3D FOWLP 光引擎支撐 400Gbps/lane**（Advanced Photonics Nexus, 2026-06-30）⭐新增
-- [[sources/2026-08-20_admt_siph-cpo-pic-components-review]] — [論文] 矽光子 CPO 裝置級綜述：五大核心 PIC 元件 + 五大挑戰（含熱管理）（Advanced Materials Technologies, 2026-08-20）⭐新增
-- [[sources/2026-09-11_ichmt_tsv-microchannel-convex-pinfin-cooling]] — [論文] TSV 嵌入式微通道冷卻：**>100 W/cm² 局部熱通量；凸形銷鰭最高溫降 ~20K/平均 ~15K；凹形壓降 -15% 但溫升**（Int. Comm. Heat & Mass Transfer, 2026-09-11）⭐新增
-- [[sources/2026-08-18_materials_foplp-warpage-mode-aware-ml]] — [論文] NTHU：FO-PLP 翹曲模態感知混合 ML 預測；**面板邊緣與角落改善最顯著**（Materials, 2026-08-18）⭐新增
-- [[sources/2026-09-11_mssp_fo-strip-die-last-5um-rdl]] — [論文] FO-Strip die-last 架構：**5µm/5µm RDL；50×50mm 基板；JEDEC −40/125°C；shadow Moiré 交叉驗證**；strip-level 中間路線（MSSP, 2026-09-11）⭐新增
-- [[sources/2026-09-08_micromachines_hbm-thermal-management-reliability]] — HBM 封裝熱管理可靠性：+15%/2-Hi 結溫；HPB -20%；Indium TIM > 聚合物 TIM（中央大學, 2026-09-08）
-- [[sources/2026-09-03_acsami_self-activated-direct-bonding-ald-al2o3]] — 自激活無電漿直接晶圓接合 ALD Al2O3 300mm 展示（橫濱國立大學 × 三菱電機, 2026-09-03）
-- [[sources/2026-06-23_tsmc_cn122260581a-photonic-engine-cpo]] — [專利] TSMC 光子引擎封裝光柵耦合器+微透鏡 CPO（CN122260581A, 2026-06-23）
-- [[sources/2026-09-03_intel_us20260262485a1-hybrid-bonding-via]] — [專利] Intel 混合接合 via 結構 <4 µm 間距（US20260262485A1, 2026-09-03）
-- [[sources/2026-04-07_intel_jp2026059728a-glass-core-edge-coating]] — [專利] Intel 玻璃核心基板邊緣塗層機械強度（JP2026059728A, 2026-04-07）
-- [[sources/2026-03-03_intel_cn121605766a-3d-memory-sub1um-hb]] — [專利] Intel 3D 記憶體 sub-1µm 混合接合（CN121605766A, 2026-03-03）
-- [[sources/2026-06-16_trendforce_tsmc-copos-dual-track-eval]] — TrendForce：TSMC CoPoS 龍潭試驗線雙軌設備評估，310×310mm，VisEra 迷你產線（2026-06-16）
-- [[sources/2026-09-11_trendforce_samsung-qualcomm-2nm-foundry-pricing]] — TrendForce：Samsung 2nm yield >70%；Taylor fab 首批客戶（Tesla/Broadcom/Arm）；Qualcomm 2nm 延至 2027；Foundry 定價提升⭐新增
-- [[sources/2026-09-09_trendforce_highna-euv-samsung-skhynix-dram-2028]] — TrendForce：Samsung/SK hynix High-NA EUV DRAM 2028 目標；SK hynix 1c DRAM 34% Q4'26；Micron 1δ 準備⭐新增
-- [[sources/2026-09-08_trendforce_samsung-siliconphotonics-cpo-pic-testing]] — TrendForce：Samsung SiPh PIC 自建測試 end-2026；SiPh 代工 2027；三階段 CPO 路線圖⭐新增
-- [[sources/2026-06-05_semieng_intel-ectc-2026-emib-t-cpo-glass]] — SemiEng/Intel Foundry：ECTC 2026 EMIB-T 25µm FLI、120mm封裝、64G UCIe；CPO V-groove 玻璃耦合器；TGV 零失效可靠性⭐新增｜合併自重複收錄（2026-09-15 dedupe）
-
-- [[sources/2026-09-11_semieng_chip-week-155]] — SemiEng Week#155：**Amkor Phase 2 $12B（潔淨室 93K sqm；2029完工）；Kepler Computing $468M FeRAM+3D記憶體（1 OOM vs HBM）；Taiyo+imec 700nm RDL 3層/300mm；Ayar Labs $650M+Wiwynn CPO HVM；DRAM Q2 $155B；頂尖代工 Q2 $53B；Yole $1.5T資料中心 2031**（2026-09-11）⭐新增
-- [[sources/2026-09-11_trendforce_huawei-npo-7-2tbps-cpo-challenge]] — TrendForce：**Huawei 7.2Tbps NPO 模組（36ch×200G）；OPEN NPO MSA Q3 2026；CPO vs NPO 架構對比；CSP 策略分歧；CPO/NPO 合計市場 $39B 2030**（2026-09-11）⭐新增
-- [[sources/2026-09-11_trendforce_cxmt-lpddr5x-flagship-supply-chain]] — TrendForce：**CXMT LPDDR5X 達 10.667Gbps（=三星旗艦等級）；Samsung+CXMT 雙供應商進入中國旗艦手機（NaviX Ultra）**（2026-09-11）⭐新增
-- [[sources/2026-09-10_trendforce_chinese-ai-chipmakers-hbm-price-hike]] — TrendForce：**華為 950DT +50% 漲價（>RMB 250K）；CXMT HBM3E 試產啟動（首次確認）；Huawei HiBL 1.0/HiZQ 2.0 自有 HBM 命名；灰市 HBM 溢價 +60~80%；DeepSeek 16 萬卡 Ascend 950DT 訂單（內蒙古資料中心）**（2026-09-10）⭐新增
-- [[sources/2026-09-10_trendforce_tsmc-august-revenue-nt514b]] — TrendForce：**TSMC 8 月 2026 NT$514.8B 史上首破 NT$500B（+53.3% YoY）；第 4 個月連續創歷史新高；2nm 首次貢獻營收（A20 Pro）；代工市占 72.5%；iPhone Duo（首款折疊 iPhone）搭載 A20 Pro 2nm**（2026-09-10）⭐新增
-- [[sources/2026-09-10_trendforce_tsmc-taichung-14nm-2027]] — TrendForce：**TSMC 台中 1.4nm P1 2H27 量產（提前半年）；AUO L7+L5C 廠房確認用於 CPO 光電整合；Samsung 1.4nm 推遲至 2029（落後 TSMC 2 年）；ASML/TEL/KLA 進駐台中七期**（2026-09-10）⭐新增
-- [[sources/2026-08-24_semieng_multi-die-assemblies-dominate-2nm]] — SemiEng Week#154：**多晶粒封裝主導 2nm 以下；IBM Nanostack 3T +50%/+70%/+40%；ASE interposer 40× 路線圖；Amkor 兩相冷卻預判；FTCO 框架；2nm 光罩 ~1M CPU 小時**（2026-08-24）⭐新增
-- [[sources/2026-06-10_tomshardware_google-intel-emib-3m-tpu-skhynix]] — Tom's Hardware：**Google 下單 Intel 封裝 >300 萬顆 TPU（2028）；SK hynix 啟動 HBM-on-EMIB 驗證；EMIB vs CoWoS 成本首次量化（數百美元 vs $900–1000/片）；NVIDIA 評估 Feynman 採 Intel 封裝；EMIB-T 包 utilization 90% vs CoWoS 60%**（2026-06-10，補收錄）⭐新增
-- [[sources/2026-09-08_trendforce_cxmt-lpddr6-12800mbps-apple-hbm]] — TrendForce：**CXMT LPDDR6 12,800Mbps 量產啟動（小米 18 Fold）；全球 DRAM 市占 2Q26 升至 9.5%（第四名）；2027 產能 95% 滿載；HBM + 先進封裝投資 RMB 90 億；Apple 供應半公開**（2026-09-08）⭐新增
-- [[sources/2026-09-09_tomshardware_intel-extreme-multichiplet-12x-hbm5-14a]] — Tom's Hardware：**Intel 展示 12× 光罩極端多晶片封裝概念：16 個 14A die + 8 個 18A-PT 底座 + 24 HBM5；EMIB-T+UCIe-A+Foveros Direct 三層互連；超越 TSMC CoWoS 尺寸（概念，2028–2030+）**（2026-09-09）⭐新增
-- [[sources/2026-09-08_semieng_chip-paper-roundup-sept8]] — SemiEng Sept.8 論文彙整：**FLINT HBF LLM；M3D 6T SRAM BEOL pass-gates @ 2nm（Georgia Tech/Synopsys）；Oxford HBM-HBF HMA；可程式 SiPh 干涉儀（UiT/Stanford）；GaN EPFL**（2026-09-08）⭐新增
-- [[sources/2026-09-07_trendforce_skhynix-1c-dram-hbm4e-overtake-1b]] — TrendForce：**SK hynix 1c DRAM 各季佔比量化（10%→13%→24%→34%→35%）；1Q27 首超 1b 成主力製程；HBM4E 2027 HVM；Samsung 1c for HBM4（11.7Gbps）；1d DRAM Samsung 2026-09 開發完成 / SK hynix 2026-12；HBM5E 1d ~2030**（2026-09-07）⭐新增
-- [[sources/2026-09-04_trendforce_micron-hbm-100k-12hi-hbm4]] — TrendForce：**Micron HBM 月產能 40K–50K wsm → 100K wsm（2026年底）；+60K 增量；12-Hi HBM4 佔比年初 20–30% → 年底 ~50%；HBM4 爬坡 2×HBM3；Samsung HBM4 75K wsm / 150K HBM total；NVIDIA 8-Hi + 12-Hi HBM4 雙軌**（2026-09-04）⭐新增
-- [[sources/2026-09-03_trendforce_china-chip-tool-amec-wellrun-cseac]] — TrendForce：**CSEAC 2026 中國設備本土化——AMEC Primo XD-RIE™（70:1~90:1 深寬比）+ Prefima Unicore™ AM（ALD 鉬）；Leadmicro 先進封裝 CVD 量產；Wellrun 14nm CD-SEM 部署**（2026-09-03）⭐新增
-- [[sources/2026-09-03_trendforce_inp-sumitomo-wuhan-tianyuan]] — TrendForce：**住友化學 4 吋 InP 磊晶晶圓量產啟動（JPY 100 億 2030s 目標）；武漢天源收購中訊半導體 60%（CNY 750 萬）進入 InP 基板市場；AI 資料中心 Optoelectronic Convergence 驅動**（2026-09-03）⭐新增
-- [[sources/2026-09-04_tomshardware_tsmc-panel-vs-cowos-58dies]] — Tom's Hardware：**TSMC 官方聲明面板封裝不會取代 CoWoS；晶圓級可整合 58 顆大型晶片；CoPoS 為補充定位（2H28-29 HVM）**（2026-09-04）⭐新增
-- [[sources/2026-09-04_semieng_chip-week-154]] — SemiEng Week#154：**印度 Semicon 2.0 $13.4B；異質 HBM；300mm 矽光子製程；InP 擴產；$75M 稀土回收**（2026-09-04）⭐新增
-- [[sources/2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap]] — Tom's Hardware：**TSMC North America Symposium 2026：CoWoS >14 reticle 路線圖；48× 計算電晶體；34× 記憶體頻寬；24 HBM5E stacks；2029 成本「數量級」上漲**（2026-04-27）⭐新增
-- [[sources/2026-08-30_semieng_oxford-hybrid-hbm-hbf-hma-llm-inference]] — 牛津大學：**HBF 16× 容量 vs HBM；HMA 預測式遷移架構解決 HBF 長尾延遲問題；IEEE CAL 2026**（2026-08-30）⭐新增
-- [[sources/2026-08-31_semieng_flint-hbf-llm-inference-huawei-eth-hust]] — FLINT（Huawei/ETH Zürich/HUST）：**HBF+HBM 異質記憶體 LLM 推論；burst-buffer 控制器；phantom-plane refresh；read-only FTL；arXiv:2608.25062**（2026-08-31）⭐新增
-- [[sources/2026-06-10_tomshardware_tsmc-fab-expansion-roadmap-n2-cowos-soic]] — Tom's Hardware（Anton Shilov）：**TSMC One Team + SMP；N2 CAGR 70%；CoWoS 80% CAGR；SoIC 90% CAGR；11 AP 廠區；AP7/AP8 產能量化**（發布 2026-06-10）⭐新增｜合併自重複收錄（2026-09-15 dedupe）
-- [[sources/2026-09-03_trendforce_tsmc-equipment-demand-90pct-substrate]] — TrendForce：**SEMICON Taiwan：TSMC 設備需求半年 +90%（1×→1.9×）；20 座晶圓廠「仍不夠」；Unimicron 基板瓶頸 ABF/TGV 依賴日本 SME；>12 次客供會議**（2026-09-03）⭐新增
-- [[sources/2026-09-01_tomshardware_samsung-hot-chips-2026-zhbm-three-phase]] — Tom's Hardware：**Samsung Hot Chips 2026：cHBM→aHBM→zHBM 三階段完整規格；PHY 面積>8×4mm→~8.5×1.5mm；HPB >35% 峰值溫降；Phase 2 二級記憶體擴充；zHBM 4-high / -70% I/O 功耗 / +2.3× BW / 無確定時程（2029+）**（2026-09-01）⭐新增
-- [[sources/2026-09-02_tomshardware_samsung-hbm5-4tbps-4096bit-heat-path-block]] — Tom's Hardware：**Samsung Memory Executive Summit：HBM5 目標 ~4 TB/s/stack（2× HBM4E）；4,096-bit 介面推測（KAIST/Marvell）；HPB -20% 熱阻；TSMC 20-24 stacks/package → 80-96 TB/s**（2026-09-02）⭐新增
-- [[sources/2026-09-02_tomshardware_hybrid-bonding-2026-state-hbm-delay]] — Tom's Hardware：**混合接合 2026 現況深度分析——TSMC 6µm SoIC 量產；Intel Foveros Direct Clearwater Forest；JEDEC 775µm 使 HBM4 延續 microbump；HBM HB 延至 HBM4E/HBM5；Besi Kinex €476M 路徑；Adeia 專利訴訟 AMD**（2026-09-02）⭐新增
-- [[sources/2026-09-02_trendforce_tsmc-microchannel-cooling-6x-power]] — TrendForce：**TSMC James Chen SEMICON Taiwan：AI 系統功耗 5 年 6×；CoWoS 3.3×→14× 光罩；封裝功耗 600W→4,100W；微通道冷卻納入 R&D 路線圖；熱共優化 -40% 熱阻**（2026-09-02）⭐新增
-- [[sources/2026-09-02_trendforce_google-memory-wall-75pct-bom]] — TrendForce：**Google SEMICON Taiwan：記憶體佔 AI 伺服器 BOM >75%；TPU 8i/8t 雙軌；TurboQuant 6× KV 壓縮；DRAM+NAND 佔 CSP CapEx 47%→68%（2026→2027）**（2026-09-02）⭐新增
-- [[sources/2026-09-01_trendforce_nvidia-mediatek-xpu-ecosystem]] — TrendForce：**NVIDIA $3.5B MediaTek ECB；首次投資台灣上市公司；NVLink Fusion XPU 生態系；ASE+Sigurd 先進封裝受益者；Broadcom/Marvell 競爭格局**（2026-09-01）⭐新增
-- [[sources/2026-09-01_trendforce_samsung-hbm5-zhbm-semicon]] — TrendForce：**Samsung SEMICON Taiwan：HBM5 2× HBM4E / 2nm base die / 20-Hi / 2028量產；zHBM 8× / 3× PPA/W / 2029+；zNAND-O；CUBE 策略**（2026-09-01）⭐新增
-- [[sources/2026-08-31_trendforce_skhynix-intel-hbm4e-base-die]] — TrendForce：**SK hynix 評估 Intel Foundry 作為 HBM4E base die 供應商；TSMC 成本 3–4×；base die 供應鏈三廠策略全景**（2026-08-31）⭐新增
-- [[sources/2026-08-31_trendforce_tsmc-soic-cowos-50x-compute-coupe]] — TrendForce：**TSMC SoIC+CoWoS 50× 系統運算 2024→2029；COUPE 0.06dB @ 112G；3.2→12.8+ Tbps；矽光子 >50% 2027；CPO 量產 2H26**（2026-08-31）⭐新增
-- [[sources/2026-09-01_semieng_paper-roundup-sep1]] — SemiEng：**Sep 1 論文彙整：UCLA 3D-IC 基準集；Georgia Tech 晶圓級光互連熱調諧；UM-Dearborn 生成式液冷（已收錄）**（2026-09-01）⭐新增
-- [[sources/2026-08-31_trendforce_powertech-nt70b-foplp-pifo-ai-2027]] — TrendForce：**Powertech NT$70B PiFO FOPLP；2027 年中 AI 晶片面板級量產；AMD+Broadcom 全額預訂至 2030；510×515mm；Broadcom 新加坡 JV；CPO 2027**（2026-08-31）⭐新增
-- [[sources/2026-08-31_trendforce_intel-emib-t-stride-2029-dram-ruled-out]] — TrendForce：**Intel CFO Zinsner：EMIB-T 2H27 啟動/2028 穩定/2029 全速；40% GM / 30% OM；每客戶數十億美元；Clearwater Forest 12 EMIB tiles；DRAM 製造正式排除**（2026-08-31）⭐新增
-- [[sources/2026-08-28_trendforce_skhynix-indiana-hbm4e-3q29-supply-2030]] — TrendForce：**SK hynix Indiana HBM4E 量產 3Q29；$4B+$458M CHIPS；CEO Kwak 供應至 2030；客戶 2027 需求 +60-100%；Kioxia 合作訊號；Samsung Taylor P1 試產 2026-09**（2026-08-31）⭐新增
-- [[sources/2026-08-25_trendforce_nvidia-server-hike-hbm-price-2027]] — TrendForce：**NVIDIA 2027 伺服器漲價 >15%；HBM ASP +50-79%（UBS +79%）；DDR5 獲利翻轉 HBM 40ppt；NVIDIA 毛利緩衝 75-80%；Rubin Ultra 4配置 HBM 評估**（2026-08-31）⭐新增
-- [[sources/2026-08-26_tomshardware_hbf-hot-chips-oxmiq-limited-usability]] — Tom's Hardware Hot Chips 2026：**OXMIQ HBF 分析——0.6× HBM 頻寬 / 14× 容量；Grade 1/2/3（384G/1.5T/3.1T）；MoE/KV 用例；vLLM 需重大改寫；NVIDIA/AMD 未承諾採用**（2026-08-31）⭐新增
-- [[sources/2026-08-28_trendforce_vis-fab3-fire-8inch-capacity]] — TrendForce：**VIS Fab 3 桃園火災（2026-08-27）；8 吋產能 Q3 ~90% 利用率；TSMC 持股 19%；PMIC 供應鏈緊張；2027 再漲價**（2026-08-28）⭐新增
-- [[sources/2026-08-27_trendforce_nvidia-279b-supply-nvhbm]] — TrendForce：**NVIDIA Q2 FY27 $96.2B 財報；供應承諾 $279B（+134% QoQ）；NVHBM +30% BW / -15% 功耗 / +25% XPU 面積；Amazon Trainium4 首採；Feynman 2028 NVHBM 平台**（2026-08-27）⭐新增
-- [[sources/2026-08-28_semieng_week-153-nvhbm-qualcomm-hbc-sk-hynix-indiana]] — SemiEng Week#153：**SK hynix Indiana HBM 廠破土；NVHBM；Qualcomm HBC；Mitsubishi NTE 填充材料；Microsoft Maia 200**（2026-08-28）⭐新增
-- [[sources/2026-08-28_arxiv_um-dearborn-generative-design-liquid-cooling-2-5d-3d]] — arXiv 2608.22787 UM-Dearborn：**生成式設計液冷通道，-33.6% GPU 溫度 / -72.8% 壓降**（2026-08-28）⭐新增
 - [[sources/2026-07-31_benzinga_tsmc-emib-like-kinsus]] — Benzinga：**TSMC EMIB-Like 矽橋封裝（聯手欣興 Kinsus）；NVIDIA 評估 Intel EMIB**（2026-07-31）⭐新增
-- [[sources/2026-08-26_tomshardware_arm-agi-hot-chips-2026-ucie-chiplets]] — Tom's Hardware Hot Chips 2026：**Arm AGI 雙 N3P chiplet 伺服器 CPU（UCIe 16×16 32GT/s = 2TB/s D2D；136 Neoverse V3 核心；DDR5-8800；300W TDP；<100ns DRAM 延遲）；UCIe 晶片互連量產最大規模案例**（2026-08-26）⭐新增
-- [[sources/2026-08-25_servethehome_amd-mi455x-hot-chips-2026-cowos-l-hbm4]] — ServeTheHome Hot Chips 2026：**AMD MI455X 8×N2 XCD 3D 混合接合（⚠️ 修正：非 4）+ CoWoS-L + 12×HBM4 432GB/23.3TB/s / 40.26 PFLOPS MXFP4；Helios 機架 2.9EF/31TB HBM4/1.7PB/s**（2026-08-25）⭐新增
-- [[sources/2026-06-05_sdxcentral_nvidia-hbm4-triple-supplier-vera-rubin]] — SDxCentral Computex 2026：**NVIDIA Jensen Huang 確認三廠 HBM4 全認證（SK Hynix ~70% / 三星 ~20-25% / Micron ~5-10%）；三星 2026-01 認證/2026-02 量產；HBM4 交期延至 2028**（2026-06-05 原文，2026-08-28 收錄）⭐新增
-- [[sources/2026-08-26_trendforce_openai-jalapeno-samsung-hbm4]] — TrendForce：**OpenAI Jalapeño 首款推理 ASIC（TSMC 3nm + 6×HBM4 stacks，216GiB/15.4TB/s，700W）；三星傳聞為 HBM4 供應商；beats NVIDIA GB300 1.5-1.9× THR/W；Gen2 tape-out 即將**（2026-08-26）⭐新增
-- [[sources/2026-08-26_trendforce_samsung-gaia-pim-4nm-2027]] — TrendForce：**Samsung GAIA AI PC SoC（4nm PIM）——LPDDR5X-PIM 3.01× 吞吐量提升；首款商業化 PIM 產品候選；2027 量產；JEDEC LPDDR6-PIM 接近定稿**（2026-08-26）⭐新增
-- [[sources/2026-08-26_tomshardware_dmatrix-raptor-3d-dram-36um]] — Tom's Hardware Hot Chips 2026：**d-Matrix Raptor F2F 36µm 接合 3D DRAM 加速器（TSMC N4P + 自訂 DRAM，100TB/s，0.37 pJ/bit，2027 目標）；DRAM 兼作中介層；無需 CoWoS**（2026-08-26）⭐新增
-- [[sources/2026-08-25_tomshardware_micron-hot-chips-hbm-wafer-penalty]] — Tom's Hardware Hot Chips 2026：**Micron HBM 矽面積 3× DDR5（每代遞增）；記憶體牆惡化論述；Meta Llama3 17.2% 中斷歸因 HBM；HBM4E logic die = TSMC 確認；「架構圍繞熱管理」轉變；2027 供應惡化三條件**⭐新增
-- [[sources/2026-08-25_trendforce_intel-hot-chips-2026-diamond-rapids-wildcat-lake]] — TrendForce Hot Chips 2026：**Diamond Rapids 完整封裝（16×18A-P/4×Intel 3-T/2×Intel 3；Foveros Direct 3D+substrate copper link；256 cores/1.28GB LLC）；Wildcat Lake = UCIe+有機MCP取代Foveros；Crescent Island 350W LPDDR5X 推論GPU**⭐新增
-- [[sources/2026-08-24_tomshardware_skhynix-hbm5-hybrid-bonding-775-micron]] — Tom's Hardware Hot Chips 2026：**SK hynix 775µm 物理上限確立；混合接合正式延後 HBM5（2029-2030）；iHBM D2D PHY 嵌入導熱塊 >30% 熱阻降；三廠商熱管理方案並排比較；EMIB 正式納入 2.5D 路線圖**⭐新增
-- [[sources/2026-08-25_tomshardware_lg-packaging-laser-direct-imaging]] — Tom's Hardware：**LG-PRI 無光罩 LDI 微影工具供 OSAT（1.5µm L/S → ~3µm 節距）；非傳統廠商進入封裝設備市場；CoWoS 持續供需緊張背景**⭐新增
-- [[sources/2026-08-24_trendforce_hot-chips-2026-samsung-zhbm-skhynix-emib]] — TrendForce Hot Chips 2026：**Samsung zHBM +70% 功率效率/+230% DRAM 頻寬 vs HBM4e；HPB 50% PHY 覆蓋/>35% 降溫；SK hynix iHBM >30% 熱阻降低；EMIB 正式列入 2.5D 選項；SK hynix+Intel JV 傳聞**⭐新增
-- [[sources/2026-08-24_intel-newsroom_hot-chips-2026-diamond-rapids-foveros-ucie]] — Intel Newsroom Hot Chips 2026：**Diamond Rapids Foveros Direct 3D 完整架構（16×18A-P/4×Intel 3-T/2×Intel 3）；Wildcat Lake = Intel 首款 UCIe 處理器；Crescent Island 480GB LPDDR5X 350W 氣冷**⭐新增
-- [[sources/2026-08-21_trendforce_chip-packaging-heat-ai-bottleneck-cpo-stco]] — TrendForce：**AI 晶片 TDP >1kW；液冷滲透率 33%→53%→60%（2025–2027）；HBF/HBS 次代 AI 記憶體熱管理論述；PINNs/深度 RL 封裝設計；CPO+STCO 為熱管理雙路徑**⭐新增
-- [[sources/2026-08-18_trendforce_shinko-glass-substrate-22layer-glassem-delay]] — TrendForce：**Shinko Electric 22 層玻璃基板（11 Cu 層/側，APS 2026）；DNP 埼玉試產線確認（2025-12）；GlaSSEM 設備採購 ≥3 次延後；Samsung EM 否認失敗認證；2H27 生產線/2028 量產**⭐新增
-- [[sources/2026-08-21_trendforce_rapidus-panel-level-packaging-8reticle-600mm]] — TrendForce：**Rapidus 8倍光罩中介層路線圖（~2030）；600mm面板49件產出；IIM整合製造模式；Lam Research Kallisto；OCP APAC Summit 2026-08-21**⭐新增
-- [[sources/2026-08-21_semieng_chip-week-152]] — SemiEngineering Week #152：**Micron Research Labs $10B/10年（封裝R&D）；JCET 11.3:1 HSR-TSV樣品；Samsung代工漲15%；Socionext 18A-P；NSSTS白宮政策點名先進封裝；CPO路線圖Nature**⭐新增
-- [[sources/2026-08-20_trendforce_samsung-onyang-hbm-fab-krw6t-p5-triple]] — TrendForce：**Samsung 溫陽 HBM 廠 KRW 6T（389,825m²）2026-09 動工；韓國「三大國家躍進」首個落地項目；P5 申請三廠房（350%→490% 容積率，6 潔淨室，>1.5× 產能）；HBM4 良率~80%；P5 完工 2030**（2026-08-21 收錄；原文 2026-08-20）⭐新增
-- [[sources/2026-08-20_trendforce_skhynix-cpo-roadmap-nature-electronics]] — TrendForce：**SK hynix × UVA Nature Electronics CPO 路線圖——頻寬牆（Bandwidth Wall）論述；>100 Tb/s / <1 pJ/bit / <10 ns；2D→2.5D 中介層→3D 光子中介層三層路徑；µLED 並行光互連；SK hynix 宣示 AI 基礎設施戰略夥伴轉型**（2026-08-21 收錄；原文 2026-08-20）⭐新增
-- [[sources/2026-08-19_trendforce_skhynix-silicon-valley-hbm-codesign-team]] — TrendForce：**SK Hynix 矽谷 HBM Architect Design Team（San Jose）——$150-260K；1xnm DRAM+≤3nm foundry；與 NVIDIA/AMD/Broadcom 聯合開發下世代 AI 工廠記憶體架構；co-design 護城河形成；Samsung 同步跟進招募**（2026-08-20 收錄；原文 2026-08-19）⭐新增
-- [[sources/2026-08-19_trendforce_intel-emib-t-cowos-spillover-unimicron-ase]] — TrendForce：**CoWoS 訂單全滿，後端封裝溢出至 Intel Malaysia（~US$1.3B HBM）；Intel EMIB-T 封裝良率~90%，基板良率成主要瓶頸；Unimicron HVM 2027（初始良率目標~50%）；ASE COO 表態 CoWoS/EMIB 不互斥**（2026-08-20 收錄；原文 2026-08-19）⭐新增
-- [[sources/2026-08-18_semieng_technical-paper-roundup-chiplet-3d]] — SemiEngineering（Aug 18 論文摘要）：**2.5D PIM Chiplet PDN 電壓驟降（ReVolt/Washington St.+UW-Madison）；FAPlace 2.5D 中介層尺寸最佳化（A*STAR）；3D-IC 系統級故障分析硬體（Google+TU Delft）**（2026-08-19 收錄；原文 2026-08-18）⭐新增
-- [[sources/2026-08-17_trendforce_samsung-skhynix-1h26-investment-nvidia-absent]] — TrendForce：**Samsung+SKH 1H26 設施投資 KRW 43.2T（+35.1%）；100% 稼動率；NVIDIA 未列三星前五大客戶；SKH NVIDIA 佔比 13.35%（↓ FY2025 ~24%）；Micron Ventures Paradigm Fund $250M**（2026-08-19 收錄；原文 2026-08-17）⭐新增
-- [[sources/2026-08-17_trendforce_tsmc-arizona-profit-663pct-1h26]] — TrendForce：**TSMC Arizona 1H26 獲利 NT$36.066B（+663% YoY）超越南京廠；四大海外子公司合計 NT$58.5B（+215%）；Q2 環比 -8.2%（折舊增加）；CFO：海外廠毛利稀釋 2-3ppt→3-4ppt；JASM 轉虧為盈**（2026-08-19 收錄；原文 2026-08-17）⭐新增
-- [[sources/2026-08-13_semieng_coppers-grip-ai-scaling-slip]] — SemiEngineering：**銅互連物理極限論述——損耗/距離/功耗三重限制；CPO 取代可插拔光模組；電路交換配套架構；2030 年代全光化業界共識；CPO 功耗 -70% vs 可插拔**（2026-08-18 收錄；原文 2026-08-13）⭐新增
-- [[sources/2026-08-11_tomshardware_intel-19-7b-stock-offering-14a]] — Tom's Hardware：**Intel $19.7B 股票發行（$95/股）；$1,000 億超額認購（5×）；14A HVM 2028；Ohio >$1,000 億；市值 $900B→$4,910 億**（2026-08-18 收錄；原文 2026-08-11）⭐新增
-- [[sources/2026-08-11_semieng_hbm-testbed-3d-assembly-yield]] — SemiEngineering：**HBM 成為 3D 封裝良率/DFT 主實驗場；TSV/微凸塊三層缺陷模型；探針污染良率風險；HBM5 混合接合 DFT 質變；左移測試方法論**（2026-08-18 收錄；原文 2026-08-11）⭐新增
-- [[sources/2026-08-13_semieng_1mw-rack-debate-thermal]] — SemiEngineering：**1MW 機架辯論——CoWoS 熱通量 200–600 W/cm²；AI 機架功率 200–400kW→1MW（2027–28）；液冷門檻 >100kW；HBM 接面溫度上限 85°C**（2026-08-17 收錄；原文 2026-08-13）⭐新增
-- [[sources/2026-06-17_trendforce_tsmc-amkor-10year-arizona-ap]] — TrendForce：**TSMC-Amkor 10 年期亞利桑那先進封裝協議；Amkor HVM 2028；TSMC AP 設施 2029（CoWoS+3D-IC）；Amkor +67 英畝用地；美國晶片供應鏈閉環確立**（2026-08-17 收錄；原文 2026-06-17）⭐新增
-- [[sources/2026-04-27_semieng_semiconductor-materials-misbehave]] — SemiEngineering：**半導體材料異常行為——CTE 失配翹曲機制；STCO 成為 3D-IC 強制方法論；實驗室-量產落差擴大；AI/數位孿生用於多物理場封裝設計；製程視窗資格認證標準化**（2026-08-17 收錄；原文 2026-04-27）⭐新增
-- [[sources/2026-08-12_trendforce_micron-datacenter-demand-below-half]] — TrendForce：**Micron 資料中心 DRAM 需求滿足率 <50%（KeyBanc Forum）；2027 更緊俏；16 SCA ~50% 營收覆蓋；「美製溢價」已納入定價；伺服器 DRAM Q3 +13–18%**（2026-08-16 收錄；原文 2026-08-12）⭐新增
-- [[sources/2026-06-19_trendforce_intel-skhynix-exceo-foundry-evp-emib]] — TrendForce：**Intel 任命 SK hynix 前 CEO 李錯熹（Seok-Hee Lee）為 Foundry EVP——主管先進封裝 EMIB-T/HBI 量產規模化；Google >300 萬 TPU 2028；NVIDIA 評估 18A；HBI 技術正式命名**（2026-08-16 收錄；原文 2026-06-19）⭐新增
-- [[sources/2026-08-15_semieng_chip-week-151-amat-lam-korea-china]] — SemiEngineering Week #151：**Applied Materials FY2026 封裝設備成長 >70%；Lam Research $3B/5年 R&D 擴建；韓國 $3.5B 半導體基金；中國遺留製程晶片 2030 年逼近全球 50%；SPIL 斗六廠確認**（2026-08-15 收錄；原文 2026-08-15）⭐新增
-- [[sources/2026-08-14_trendforce_sandisk-hbf-tapeout-investor-day]] — TrendForce：**Sandisk 投資者日——首款 HBF 產品 tape-out 完成；2027 樣品、2028 量產；4 HBF GPU=8 HBM GPU（AI 推論 50% GPU 節省）；Sandisk FY28-30 mid-to-high teens 成長、80% 毛利率；NBM 協議 8 家客戶含 3 美國超大規模業者**（2026-08-15 收錄；原文 2026-08-14）⭐新增
-- [[sources/2026-08-14_trendforce_applied-materials-packaging-70pct-q3-2026]] — TrendForce：**Applied Materials Q3 FY2026——封裝設備成長預測上調至 >70%（前次 >50%）；Q3 史上最高季度環比成長；DRAM 2H26 加速；中國 Q3 最大市場**（2026-08-15 收錄；原文 2026-08-14）⭐新增
-- [[sources/2026-08-14_trendforce_samsung-nrdk-2nm-hbm5-base-die]] — TrendForce：**三星 NRD-K Line 2 轉型代工——製造 2nm HBM5 邏輯底層；GAA 架構；>50% 速度要求超 HBM4E；2H28 開啟；send fab 模式；NRD-K KRW 20 兆 3 條線至 2030**（2026-08-15 收錄；原文 2026-08-14）⭐新增
-- [[sources/2026-08-13_trendforce_intel-memory-reentry-xbm-zam-saimemory]] — TrendForce：**Intel CEO 暗示重返記憶體；ZAM（8-die HBM替代架構）；Saimemory JV（Intel+SoftBank）；前 SK Hynix CEO 李錯熹加盟；XBM UCIe 無中介層路線 2030+；Terafab 記憶體生產推測**（2026-08-14 收錄；原文 2026-08-13）⭐新增
-- [[sources/2026-08-13_trendforce_samsung-skhynix-hbm4-2h-earnings-pricing]] — TrendForce：**HBM4 ASP 首次量化 $31–32/GB（NVIDIA）/$35–36/GB（其他 ASIC）；Samsung Q3 HBM4 3× QoQ；H2 >60% HBM4；DRAM Q3 +13–18%；SK Hynix HBM3e LTA 定價澄清；SOCAMM2 bit 成長上修至 mid-20%**（2026-08-14 收錄；原文 2026-08-13）⭐新增
-- [[sources/2026-08-12_trendforce_ase-spil-douliu-cowos-2028]] — TrendForce：**ASE/SPIL 斗六廠破土（TWD 100 億/6 公頃/2028 一期）；CoWoS 先進封裝；TSMC 月產能 14 萬套（2026 末）→22 萬套（2027 末）；TSMC 董事會批准 US$294 億 CapEx；SPIL 增資 TWD 162 億**（2026-08-13 收錄）⭐新增
-- [[sources/2026-08-12_trendforce_micron-hbm4e-custom-era-dual-supplier]] — TrendForce：**Micron HBM4E 為 Custom HBM 時代起點；市場可能向雙/單供應商傾斜；HBM-to-DDR 犧牲比 3:1→4:1；HBM4E logic die = TSMC；SK hynix「One Team」模式（SK+NVIDIA+TSMC）**（2026-08-13 收錄）⭐新增
-- [[sources/2026-08-11_trendforce_tsmc-cowos-5-5-reticle-99pct-yield-abf]] — TrendForce：**TSMC 5.5× CoWoS 量產良率 99%（VP Jun He @ OCP APAC Summit）；SoIC 4.5µm 2029；A14-to-A14 SoIC 1.8× I/O 密度；ABF 基板成 AI 第二瓶頸；開發週期 2 年→1 年**（2026-08-12 收錄）⭐新增
-- [[sources/2026-08-11_bccresearch_advanced-chip-packaging-market-87b-2030]] — BCC Research：**先進晶片封裝市場 $38.6B（2024）→ $87.6B（2030），CAGR 14.8%；汽車 AP CAGR 16.1%；APAC $19.9B；封裝從商品製程轉型為 IP 密集工業**（2026-08-12 收錄）⭐新增
-- [[sources/2026-05-14_semieng_flash-hbf-high-bandwidth-version]] — SemiEngineering / Bryon Moyer：**HBF 技術深度剖析——多陣列平行化讀取路徑重設計；HBF vs HBM 對比（容量 3Tb vs 192GB）；AI 推論記憶體層次（HBF 權重→HBM 激活值→SRAM）；Synopsys/Rambus PHY；UMC base die；Cynthia Hsu（SanDisk VP）**（2026-08-10 收錄；原文 2026-05-14）⭐新增
-- [[sources/2026-04-22_semieng_tsv-complexity-manufacturing-bottleneck]] — SemiEngineering / Laura Peters：**TSV 製造瓶頸深度報導——HBM TSV 2–5µm/30–60µm vs 中介層 TSV 5–20µm/80–120µm；8步驟製程流程（蝕刻→填銅→CMP→背研→reveal）；NanoTSV（<100nm）背面供電；Amkor Rick Reed 容差洞察；AI 需求造成 HBM+CoWoS 同步短缺**（2026-08-10 收錄；原文 2026-04-22）⭐新增
-- [[sources/2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan]] — TrendForce：**TSMC 洽購 AUO L7+L5C 廠房（>TWD 300 億）供 FOPLP+CoPoS；AUO TWD 86.4 億 TGV/RDL 試產線；龍潭 Phase 3（104 公頃）2×1.4nm + 1×面板封裝廠；C.C. Wei 確認 310mm CoPoS 2H28-29 HVM**（2026-08-11 收錄）⭐新增
-- [[sources/2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor]] — TrendForce：**Samsung HBM4 良率達 80%（2 月 <60%→8 月提前達標）；TC-NCF 改進；Q3 出貨 3×；HBM4 佔 2H26 >60%；市占目標 38%；SK Hynix HBM4 ~80% via MR-MUF；勞資第 5 輪破裂；HBM 供應受限至 2027（+50-60% YoY 仍低於需求）**（2026-08-11 收錄）⭐新增
-- [[sources/2026-08-10_trendforce_skhynix-chongqing-sale-global-reset]] — TrendForce：**SK Hynix 評估出售重慶封裝廠股份（KRW 4 兆 ~$30 億）；中國 DRAM 30-35%/NAND 35-40% 產能；非全退；印第安納 HBM 封裝中心 2H28；Y2+M17 KRW 54.3 兆平行推進；全球後端資產重組**（2026-08-11 收錄）⭐新增
-- [[sources/2026-08-07_trendforce_skhynix-y2-fab-samsung-p5-expansion]] — TrendForce：**SK Hynix 董事會批准 KRW 54.3T 投資——Y2 龍仁廠（KRW 35.2T，2027-07 建設，2029-06 潔淨室）；M17 清州 NAND（KRW 19.1T）；Samsung P5 提前 6 個月、P5 Fab 2 平行建設**（2026-08-09 收錄；原文 2026-08-07）⭐新增
-- [[sources/2026-08-06_trendforce_inp-shortage-ai-optical-bottleneck]] — TrendForce：**InP（磷化銦）短缺超越 DRAM/NAND——Lumentum CEO 警告；NVIDIA $40B 投資兩家供應商；中國控制 ~70% 全球精煉銦；CPO 驅動 InP 雷射源需求；China InP ecosystem 圖**（2026-08-09 收錄；原文 2026-08-06）⭐新增
-- [[sources/2026-08-06_tomshardware_samsung-zhbm-bvnand-fms2026]] — Tom's Hardware（Anton Shilov）：**Samsung FMS 2026 深度技術分析——zHBM（HBM 接合至邏輯晶片頂部，宣稱 8×HBM5）；zNAND-O（4~8 層 NAND 堆疊邏輯，邊緣 AI）；BV-NAND V10（400+層 28Gb/mm² 5600MT/s 量產）；全部依賴晶圓接合技術**（2026-08-09 收錄；原文 2026-08-06）⭐新增
-- [[sources/2026-08-07_semieng_chip-week-150]] — SemiEngineering Week #150：**FMS 2026 HBF/zHBM/zNAND-O；Terafab $16.8B；Silicon Box PLP 10×；WSTS H1 $702B/全年 ~$1.65T；Lumilens $9 億；AMD 收購 Taalas；US GAO 批評 CHIPS Act AP R&D 重組**（2026-08-08 收錄；原文 2026-08-07）⭐新增
-- [[sources/2026-08-07_trendforce_terafab-texas-16-8b-memory]] — TrendForce：**Terafab 德州一期 $16.8B 正式確認（路透社）；1 億平方英尺；3,000 工作；記憶體工程師招募（sub-20nm DRAM + MRAM/RRAM/3D DRAM）；AI5 Samsung+TSMC / AI6 Samsung / AI6.5 TSMC**（2026-08-08 收錄；原文 2026-08-07）⭐新增
-- [[sources/2026-08-07_trendforce_18-chinese-glass-substrate]] — TrendForce：**中國 18 家企業加速玻璃基板佈局——Crystal-Optech（Corning Glass Bridge 獨家光路）、WG Tech（TGV ≤5µm/100:1）、BOE（20 層 AI 載板交付）；Hymson Laser（+144% Q1'26）、DR Laser（LACE 量產）；TrendForce 官方預測：主流化 2030+ 年後**（2026-08-08 收錄；原文 2026-08-07）⭐新增
-- [[sources/2026-08-07_trendforce_china-big-fund-phase-iii-pivot]] — TrendForce：**中國大基金三期轉向——三大支柱：先進封裝（Anhui Juhe Chiplet 平台 18%）、設備（Tuojing Jianke HBM HB 設備 RMB 4.5 億）、AI 算力（YunSilicon/TsingMicro/Aijieko）；Phase III = 卡脖子技術精準突破策略**（2026-08-08 收錄；原文 2026-08-07）⭐新增
-- [[sources/2026-08-06_trendforce_nittobo-tglass-fy2027-forecast]] — TrendForce：**Nittobo T-glass FY2027 淨利潤 JPY 20B；三倍產能仍不夠；NVIDIA/Apple/Google 搶佔 2026 年配額**（2026-08-07 收錄；原文 2026-08-06）⭐新增
-- [[sources/2026-08-05_trendforce_tsmc-cowos-cow-outsourcing-osat]] — TrendForce：**TSMC 擴大 CoW 外包至 ASE/SPIL；NVIDIA 預訂 800-850K wsm；2026 供需缺口 20%；AMD 支持 OSAT 自建 CoW**（2026-08-07 收錄；原文 2026-08-05）⭐新增
-- [[sources/2026-08-05_trendforce_samsung-v10-zhbm-hbm5-fms2026]] — TrendForce：**Samsung FMS 2026：V10 BV-NAND 400+層 +58%密度供應NVIDIA；zHBM 8×HBM5 custom IP整合；HBM5 HPB -20%熱阻；zNAND-O端側AI；SK Hynix V10 375層 2027**（2026-08-06 收錄；原文 2026-08-05）⭐新增
-- [[sources/2026-08-04_semieng_from-blueprint-intel-hlff]] — SemiEngineering（Intel Foundry）：**Intel ECTC 2026 HLFF 240×240mm 封裝藍圖；EMIB >5× 18-die+12-HBM void-free；EMIB >7× void-free；Foveros 2×/4× void-free；2× 通過700TC+1000hHTOL；路線圖12×→50× panel-scale**（2026-08-06 收錄；原文 2026-08-04）⭐新增
 - [[sources/2026-07-31_semieng_chip-week-149]] — SemiEngineering Week#149：**CHIPS Act $874M 7 家（GlobalFoundries $300M 3D HB CPO、Kepler $245M、Multibeam $140M AP）；Intel Rio Rancho 8×→12×；ASE CapEx ~$10B；UMC SiPh+AP擴廠；SIA $796B→$1.5T；Omdia +94%；SK Group+Nvidia $500B+；RAMP-C完成**（2026-08-06 收錄；原文 2026-07-31）⭐新增
-- [[sources/2026-08-04_trendforce_psmc-exclusive-emib-silicon-capacitor-umc-boost]] — TrendForce：**PSMC 升格為 Intel EMIB-T 矽電容器獨家供應商（12" IPD 平台）；2H 2027 擴產 8"+12" wsm；UMC 台灣+新加坡製造矽橋接器；EMIB-T 成本約 CoWoS 50%；良率~90%；HVM 2027**（2026-08-05 收錄；原文 2026-08-04）⭐新增
-- [[sources/2026-08-04_trendforce_hbf-standard-fms2026-skhynix-sandisk]] — TrendForce：**FMS 2026 HBF 首份正式規格：OCP/UCIe、512GB、Grade 1-3（0.4-3.0 TB/s）；Google DeepMind+Tenstorrent 確認支援；NVIDIA 未承諾；SK Hynix V10 375 層 NAND 2027 年初量產**（2026-08-05 收錄；原文 2026-08-04）⭐新增
-- [[sources/2026-08-03_trendforce_zj-innolight-hkex-ipo-inp-bottleneck]] — TrendForce：**ZJ Innolight HKEX 創紀錄 IPO（HKD 534 億）；1.6T 光模組帶動 InP 基板瓶頸；Coherent 德州 4× 擴產+NVIDIA $20 億 LTA；中國雲南鍺業+有研半導體+天津寬禁 InP 本土化**（2026-08-05 收錄；原文 2026-08-03）⭐新增
-- [[sources/2026-08-03_trendforce_kumamoto-m71-tsmc-jasm-tel-restart]] — TrendForce：**M7.1 熊本地震（2026-07-28）；JASM Fab 1 停機設備檢查無復工時程；TEL 08-03 復工；Sony 08-04 復工全量恢復預計 8 月中；Renesas 西木 07-29/川尻 08-05 復工**（2026-08-05 收錄；原文 2026-08-03）⭐新增
-- [[sources/2026-06-03_3dincites_intel-foundry-emib-cpo-glass]] — Intel Foundry @ 3DInCites：**ECTC 2026 EMIB-T 完整規格（25µm FLI/120×120mm/>9×/12Gbps/64Gbps UCIe）；V-groove 硬式玻璃耦合器取代 FAU；銅填充 TGV 零熱循環失效；Intel+SPIL 3D SRAM chiplet**（2026-08-04 收錄；原文 2026-06-03）⭐新增
-- [[sources/2026-05-21_semieng_hi-roadmap-nature-paper]] — SemiEngineering（引述 Nature Reviews EE 2026-03）：**Intel 主導 HI 路線圖論文：AI 算力 3 個月翻倍；GaN 封裝內電源；HB 接合介面可靠性開放挑戰；IEEE HI Roadmap 2024 量化指標不足**（2026-08-04 收錄；原文 2026-05-21）⭐新增
-- [[sources/2026-05-05_trendforce_intel-emib-expansion-us-vietnam]] — TrendForce：**Intel EMIB 美國+越南雙軌擴產；台灣設備商 E&R/C Sun/AblePrint 2H26 交貨；SHTP $4.115B/46.6ha/3.8B units；Panther Lake+Wildcat Lake（18A）越南量產**（2026-08-04 收錄；原文 2026-05-05）⭐新增
-- [[sources/2026-07-24_semieng_chip-week-148]] — SemiEngineering Week #148：**Yole 先進封裝 $55B→$120B+（2031）；Intel Foundry Q2 +31%；Amkor $1.5B NVIDIA 訂單；Nokia 收購 NXP Chandler InP 廠；AMD Helios 量產；AMD 投資 Anthropic $5B；Cornell NbAs 奈米線替代銅研究**（2026-08-04 收錄；原文 2026-07-24）⭐新增
 - [[sources/2026-07-31_trendforce_tsmc-emib-like-packaging-kinsus]] — TrendForce：**TSMC 研發類 EMIB 矽橋封裝，聯手欣興；Google 第九代 TPU 可能轉向 Intel EMIB；Intel EMIB-T HVM 2027；欣興 Unimicron 基板初始良率 50%**（2026-08-03 收錄；原文 2026-07-31）⭐新增
 - [[sources/2026-07-31_trendforce_ase-capex-record-10-5b-leap-foplp]] — TrendForce：**ASE 2026 CapEx 再上修至 US$10.5B（歷史新高）；2027 LEAP 目標 US$7.5B+；FOPLP Q1 2027；CPO 低量部署年底；玻璃基板 12 個月內不會量產；Q4 毛利率可能突破 30%**（2026-08-03 收錄；原文 2026-07-31）⭐新增
+- [[sources/2026-07-30_micromachines_tgv-cleanability-surface-tension]] — [論文] ⭐⭐⭐ **代理指標「敏感度為零」的極端案例**：TGV 清洗後**孔外接觸角恆為 3–4°、與清洗液表面張力無關**，孔內卻隨之變化；➜ 空洞根因被推至**電鍍前兩步（清洗）**；汙染源為空氣中有機物（ARCH, Micromachines, 2026-07-30）⭐新增
+- [[sources/2026-07-30_amkor_us20260223669a1-tim-flow-layer-sidewall-lid]] — **專利訊號** Amkor：TIM-flow 層 + 側壁 TIM + lid footprint 外無 TIM；封裝**內部**散熱工程；與 McCann 兩相冷卻預判形成雙軌策略（2026-07-30）⭐新增
 - [[sources/2026-07-30_trendforce_samsung-ds-q2-2026-hbm4-triple-q3]] — TrendForce：**Samsung DS Q2 2026 正式財報——DS 部門 KRW 89.5T 占合併 99.7%；HBM4 Q3 營收三倍成長；H2 HBM4 佔比 >60%；DRAM ASP +mid-40%；MX 首次季虧損；AI 記憶體短缺延伸至 2027–2028**（2026-08-03 收錄；原文 2026-07-30）⭐新增
 - [[sources/2026-07-30_trendforce_silicon-photonics-foundry-landscape]] — TrendForce：**矽光子代工格局多極量產——UMC+SILITH 新加坡 12" HVM；Tower Semiconductor Arai 廠 12" SiPh+AP Q4 2027；GF Fotonix（收購 AMF）；TSMC COUPE 量產確認；中國 CanSemi 12" 產線；2027 為矽光子代工產能釋放關鍵節點**（2026-07-31 收錄；原文 2026-07-30）⭐新增
 - [[sources/2026-07-29_trendforce_china-ap-new-capacity-wave]] — TrendForce：**中國先進封裝新一輪擴產潮——5-7 月近 10 個重大項目合計≈RMB 400 億；JCET 臨港 RMB 78 億；Forehope RMB 103 億；USC/HITS RMB 75 億；HKC 紹興 RMB 40 億；Hotchip/Mingtai/Huatian/Biwin 等新進者**（2026-07-31 收錄；原文 2026-07-29）⭐新增
 - [[sources/2026-07-29_semieng_warpage-management-advanced-packaging]] — SemiEngineering：**翹曲管理成為 HVM 核心製程挑戰——更大更薄封裝使翹曲惡化；混合接合平整度要求；FOPLP 面板尺寸放大效應；CTE 失配跨材料問題**（2026-07-30 收錄；原文 2026-07-29）⭐新增
-- [[sources/2026-07-16_trendforce_tsmc-welcomes-intel-emib]] — TrendForce：**TSMC CEO C.C. Wei 公開歡迎 Intel EMIB——「looks good」；封裝產能限制客戶成長；NVIDIA Feynman/Google HumuFish/Amazon Trainium 3 為 EMIB 潛在客戶；記憶體廠 86% 毛利率令 Wei「嫉妒」**（2026-07-30 收錄；原文 2026-07-16）⭐新增
 - [[sources/2026-07-29_trendforce_china-semiconductor-investment-funds]] — TrendForce：**中國新一波半導體投資基金——深圳 RMB 100 億（2026-07-20）；武漢 RMB 180 億母基金 + 4 子基金（含先進封裝）；AMEC LP（RMB 30 億上海基金）；USI LP（RMB 5000 萬）**（2026-07-30 收錄；原文 2026-07-29）⭐新增
 - [[sources/2026-07-29_skhynix_q2-2026-earnings]] — SK hynix 官方新聞稿：**Q2 2026 正式財報——營收 KRW 79.3187T（+257% YoY）；營業利益 KRW 60.5426T（+557%）；Op Margin 76%（歷史新高）；淨利 KRW 93.9226T（+1,242%）；HBM4 批量出貨確認**（2026-07-30 收錄；原文 2026-07-29）⭐新增
+- [[sources/2026-07-28_xianfeng_cn122476946a-alignment-mark-protection]] — [專利] 上海先鋒：**對位標記抗氧化＋光學增強雙功能層**；揭示面板級對位失效的**第三個機制（化學／光學）**，有別於翹曲致 die shift（CN122476946A, 2026-07-28）⭐新增
 - [[sources/2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe]] — TrendForce：**玻璃基板 CoPoS 生態新局——Intel + Lens Technology HVM 2H27；BOE 全自動線 HVM 2028；Powertech 加入 AMD AI 供應鏈 2Q26；Powertech+Broadcom 新加坡 JV（加成式 RDL）；Innolux+AUO 方形玻璃基板 FOPLP；TPK-KY TGV 試產線**（2026-07-29 收錄）⭐新增
 - [[sources/2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b]] — TrendForce：**NVIDIA Vera Rubin SOCAMM 腰斬 192GB→96GB；HBM4 BOM 29%；LPDDR5X 60% 供應缺口；Bernstein HBM4 ASP $53/GB（2027）；NVIDIA-SK Group $500B LOI**（2026-07-29 收錄）⭐新增
+- [[sources/2026-07-27_ninescrolls_fine-pitch-hb-cmp-surface-prep]] — [文章] ⭐ **Cu recess 是「窄窗」而非越平越好**（dishing 過深→應力、不足→接不上）；退火基準線 **400 °C × 1–2 hr**（CEA-Leti 100 °C 已示範）；**單一奈米顆粒即致命**；SiCN 為 400 nm pitch 必要條件（NineScrolls, 2026-07-27）⭐新增
 - [[sources/2026-07-27_trendforce_presscenter_cpo-switches-nvidia-broadcom-coupe]] — TrendForce：**CPO 交換器商業化——NVIDIA Spectrum-X 400Tb/s 出貨（TSMC COUPE）；Broadcom Bailly 51.2T -70% 功耗（Delta/Micas ODM，Meta 驗證）；3 大商業化瓶頸；2027–2028 hyperscaler 大量部署**（2026-07-29 收錄）⭐新增
 - [[sources/2026-07-27_trendforce_q2-memory-earnings-preview]] — TrendForce：**Q2 Memory Earnings Preview——Samsung KRW 171T Revenue / KRW 86–90T Op Profit（51% margin，史上最高季度科技企業獲利）；SK hynix KRW 84.1T / 64.1T（75–77% margin，超越 TSMC）；LTA 70% AI 客戶占比**（2026-07-28 收錄；原文 2026-07-27）
 - [[sources/2026-07-27_trendforce_tsmc-2nm-samsung-broadcom-foundry]] — TrendForce：**TSMC 2nm Baoshan 廠 20K wsm（2026-05）、N2P H2 2026 量產、5 廠 CAGR 70%（2026-28）；Samsung-Broadcom MOU（HBM4+SF2 ASIC）；Anthropic MOU 正式簽署（2nm 設計/製造/封裝）；Tesla AI6 Samsung Taylor；TSMC 2nm ASP $30K→$33K（2027 漲後）**（2026-07-28 收錄；原文 2026-07-27）⭐新增
-- [[sources/2026-07-23_trendforce_skhynix-intel-ohio-fab-emib]] — TrendForce：**SK hynix Intel Ohio Fab 潛在操作合作夥伴（早期）；SK hynix+Samsung+Micron 三大記憶體廠同時評估 Intel EMIB + HBM 整合——EMIB 記憶體客戶擴展里程碑；Indiana $4B 封裝廠動工確認**（2026-07-28 收錄；原文 2026-07-23）⭐新增
+- [[sources/2026-07-24_semieng_chip-week-148]] — SemiEngineering Week #148：**Yole 先進封裝 $55B→$120B+（2031）；Intel Foundry Q2 +31%；Amkor $1.5B NVIDIA 訂單；Nokia 收購 NXP Chandler InP 廠；AMD Helios 量產；AMD 投資 Anthropic $5B；Cornell NbAs 奈米線替代銅研究**（2026-08-04 收錄；原文 2026-07-24）⭐新增
 - [[sources/2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand]] — TrendForce：**AMD MI455X 發布（CoWoS-L + SoIC + 12 HBM4，432GB/22.3 TB/s/40 PFLOPs FP4）；EPYC Venice 高端採 CoWoS-L；SoIC 產能 EOY 2026 上修至 15–20K wsm；Zen 7 + Powertech FOPLP 試產 2H26；CoW 外包 ASE；矽中介層 UMC/Vanguard**（2026-07-27 收錄；原文 2026-07-24）⭐新增
 - [[sources/2026-07-24_trendforce_skhynix-3d-stacked-dram-on-logic]] — TrendForce：**SK hynix 啟動 3D-Stacked DRAM-on-Logic 商業工程（美國客戶）；HBM4→HBF→3D DRAM-on-Logic 三層路線圖；Samsung+imec+KU Leuven+Lam 氧化物半導體單片 3D DRAM 論文（模擬）**（2026-07-27 收錄；原文 2026-07-24）⭐新增
 - [[sources/2026-07-24_trendforce_intel-14a-forward-2028-q2-earnings]] — TrendForce：**Intel 14A 風險生產提前至 2H 2027（提前 1 年）；HVM 2028（提前 1 年）；Q2 2026 $16.1B 超預期；Intel Foundry $5.77B；Tesla 首位 14A 外部客戶；18A-P 風險生產已啟動**（2026-07-27 收錄；原文 2026-07-24）⭐新增
 - [[sources/2026-07-24_trendforce_skc-absolics-glass-substrate-delayed-2027]] — TrendForce：**SKC/Absolics 玻璃基板量產延後 2026→2027；AMD+AWS 評估樣品 4 月起交付；Intel 2030 全轉玻璃；Samsung EM/LG Innotek 均 2027+；SKC 連續 15 季虧損**（2026-07-26 收錄；原文 2026-07-24）⭐新增
 - [[sources/2026-07-24_trendforce_hkc-advanced-packaging-cny4b]] — TrendForce：**HKC（惠科）CNY 40 億（~US$5.5 億）浙江紹興先進封裝廠——12 吋異質整合封測線、月產能 2,000 萬顆、3 年建設；顯示廠跨界封裝趨勢**（2026-07-26 收錄；原文 2026-07-24）⭐新增
-- [[sources/2026-07-22_trendforce_samsung-hb-mass-production-besi]] — TrendForce：**Samsung 平澤 ~50 台 D2W 混合接合機量產線（2026 年底設備安裝）；BESI 首選（KRW ~60 億/台）；SEMES 已資格認證；3D Cube-H 發布；cHBM 邏輯晶片架構；HBM 量產 2029–2030**（2026-07-26 收錄；原文 2026-07-22）⭐新增
+- [[sources/2026-07-23_trendforce_skhynix-intel-ohio-fab-emib]] — TrendForce：**SK hynix Intel Ohio Fab 潛在操作合作夥伴（早期）；SK hynix+Samsung+Micron 三大記憶體廠同時評估 Intel EMIB + HBM 整合——EMIB 記憶體客戶擴展里程碑；Indiana $4B 封裝廠動工確認**（2026-07-28 收錄；原文 2026-07-23）⭐新增
 - [[sources/2026-07-23_amkor-ir_nvidia-amkor-1-5b-partnership]] — Amkor 官方新聞稿：**NVIDIA-Amkor $1.5B 多年期策略夥伴關係——NVIDIA 預付款支持 Arizona 先進封裝擴充；高密度互連+異質整合；Amkor +17%**（2026-07-25 收錄；原文 2026-07-23）⭐新增
-- [[sources/2026-07-15_trendforce_psmc-intel-emib-silicon-capacitor]] — TrendForce：**PSMC 12 吋矽電容取得 Intel EMIB 認證，進入穩定量產；2027 目標 10K wsm；3D AI Foundry 5%→20%；PSMC Q2 毛利率 28%（+27% QoQ）；DRAM 漲 45%**（2026-07-25 收錄；原文 2026-07-15）⭐新增
-- [[sources/2026-07-15_trendforce_v-die-mosaic-vertical-memory]] — TrendForce：**V-Die（UNIST）4× HBM4 互連密度 + MOSAIC（東京大學）感應耦合 3× 熱導率——VLSI 2026 後 HBM 學術架構；均為研究階段，非商業替代方案**（2026-07-25 收錄；原文 2026-07-15）⭐新增
+- [[sources/2026-07-22_news_samsung-50-tool-d2w-line-pyeongtaek]] — Samsung 平澤 P5 規劃 **~50 台 D2W 混合接合機**；首選 Besi（**₩60 億/台**，總額 ≈**₩3,000 億**）；安裝 2026 年底、**大規模量產 2030**；⚠ Samsung 要求機台設計變更（2026-07-22）⭐本輪新增
+- [[sources/2026-07-22_trendforce_samsung-hb-mass-production-besi]] — TrendForce：**Samsung 平澤 ~50 台 D2W 混合接合機量產線（2026 年底設備安裝）；BESI 首選（KRW ~60 億/台）；SEMES 已資格認證；3D Cube-H 發布；cHBM 邏輯晶片架構；HBM 量產 2029–2030**（2026-07-26 收錄；原文 2026-07-22）⭐新增
 - [[sources/2026-07-22_trendforce_tsmc-2027-price-hike-hpc]] — TrendForce：**TSMC 2027 漲價 5–10% 基本 + HPC 溢價 10–15%；HPC 佔 Q2 晶圓營收 66%；NVIDIA 佔 TSMC 總營收 22%；Apple A20 Pro 晶片成本 +$10–20**（2026-07-24 收錄；原文 2026-07-22）⭐新增
 - [[sources/2026-07-22_trendforce_skhynix-q2-record-margin]] — TrendForce：**SK hynix Q2 2026 預估營業利益率 74.6–77%（歷史新高）；KRW 80.9T 營收 +264% YoY；KRW 60.4T 利潤 +556% YoY；正式財報 2026-07-29；HBM4 LTA 鎖定主要 AI 客戶**（2026-07-24 收錄；原文 2026-07-22）⭐新增
+- [[sources/2026-07-21_lam_sabre-3d-is-ecd-not-cmp]] — [一手·否證] Lam 官方：**SABRE 3D 為電化學沉積平台，非 CMP、未涉混合接合**；附帶訊號：Lam 官方封裝敘事主動納入面板級製程（Lam Research, 2026-07-21）⭐新增
 - [[sources/2026-07-21_trendforce_samsung-cxl-32-skhynix-imte]] — TrendForce：**Samsung CMM-D 3.2（CXL 3.2）2026 年底量產（容量 +50%、頻寬 ×2）；SK hynix IMTE 推論效率 +35.7%；CXL 定位為 HBM（熱）↔ DDR5（冷）之間的暖記憶體新層次**（2026-07-24 收錄；原文 2026-07-21）⭐新增
 - [[sources/2026-07-20_trendforce_tsmc-265b-arizona-intel-novalake]] — TrendForce：**TSMC $265B 美國佈局確認（12 廠 + AP 設施）；建廠成本 4–5 倍於台灣；Intel Nova Lake 80–90% 運算晶片回歸 18A 製程（良率 85%）；AMD Venice 維持 TSMC 2nm**（2026-07-24 收錄；原文 2026-07-20）⭐新增
-- [[sources/2026-07-16_semieng_fine-pitch-hb-high-volume]] — SemiEngineering：**細間距混合接合量產化——6 µm 商業間距共識（Amkor Kelly）；D2W 對準是最核心挑戰（CEA-Leti Najem）；跨組織製程窗口是 HVM 新前沿（Lam Edelberg）；誤差預算 9 大要素**（2026-07-24 收錄；原文 2026-07-16）⭐新增
-- [[sources/2026-07-16_semieng_alt-materials-hybrid-bonding]] — SemiEngineering：**混合接合替代材料——NT-Cu（孿晶界阻礙接合，Osaka U 矛盾發現）；SiCN（imec 確認量產強度更高）；Ag/Ru 鈍化（抗氧化無需真空）；BCB 聚合物（降應力但 CMP 困難；Ar 電漿硬化解法）**（2026-07-24 收錄；原文 2026-07-16）⭐新增
+- [[sources/2026-07-17_jcet_cn122421815a-asymmetric-bonding-interface]] — [專利] JCET **刻意不對稱的接合界面**（下硬上軟介電層 + 下粗上細 Cu 晶粒）；⭐⭐ **挑戰本 wiki 隱含的「兩接合面對稱」假設**；**Cu 晶粒尺寸首次寫入請求項**；⭐ 發現 **JCET 有中國／韓國兩個獨立研發群組**（CN122421815A, 2026-07-17）⭐新增
 - [[sources/2026-07-17_semieng_chip-week-147]] — SemiEngineering：**Week #147——Intel 18A HVM Panther Lake；TSMC $265B Arizona（2AP廠）；Tower Semi $4B 日本（SiPh+AP）；JEDEC SPHBM4；Nanya $16B DRAM；CXMT IPO 200x；India Semicon 2.0 $13.2B；SEMI $166B/$230B 設備；Cadence AuraStack AI Super Agent**（2026-07-23 收錄；原文 2026-07-17）⭐新增
 - [[sources/2026-07-17_trendforce_tsmc-capex-60-64b-post-earnings]] — TrendForce：**TSMC 2026 CapEx 上修至 $60-64B（原 $52-56B）；Q3 Revenue $44.6-45.8B；Citi $77B(2027)/$86B(2028)；GF Sec $90B(2028)；MS：2027 wafer price hike 5-10%；Goldman：low-mid single digit；N2 CAGR >70%；EUV +10%（TSMC 抵制中）**（2026-07-23 收錄；原文 2026-07-16-17）⭐新增
+- [[sources/2026-07-16_patent_amkor-coaxial-test-pusher]] — [專利] Amkor 同軸纜線貫穿測試壓件（US20260202438A1, family 100490887）：**待測封裝的頻率已高到「測試接點本身」成為量測誤差源**；測試左移首次出現在測試硬體側（2026-07-16）⭐本輪新增
+- [[sources/2026-07-16_adeia_us20260206661a1-local-heating-hybrid-bonding]] — [專利] Adeia US20260206661A1：**預埋磁性/微波敏感材料對接合界面局部加熱**；⭐ 微波能量投遞的第三個應用點——**不是第三個製程，而是同一製程的第三種實作**；低溫路線目標自「降整體溫度」改為「縮小高溫區體積與時間」（fam 100489515, 2026-07-16）⭐新增
+- [[sources/2026-07-16_trendforce_tsmc-welcomes-intel-emib]] — TrendForce：**TSMC CEO C.C. Wei 公開歡迎 Intel EMIB——「looks good」；封裝產能限制客戶成長；NVIDIA Feynman/Google HumuFish/Amazon Trainium 3 為 EMIB 潛在客戶；記憶體廠 86% 毛利率令 Wei「嫉妒」**（2026-07-30 收錄；原文 2026-07-16）⭐新增
+- [[sources/2026-07-16_semieng_fine-pitch-hb-high-volume]] — SemiEngineering：**細間距混合接合量產化——6 µm 商業間距共識（Amkor Kelly）；D2W 對準是最核心挑戰（CEA-Leti Najem）；跨組織製程窗口是 HVM 新前沿（Lam Edelberg）；誤差預算 9 大要素**（2026-07-24 收錄；原文 2026-07-16）⭐新增
+- [[sources/2026-07-16_semieng_alt-materials-hybrid-bonding]] — SemiEngineering：**混合接合替代材料——NT-Cu（孿晶界阻礙接合，Osaka U 矛盾發現）；SiCN（imec 確認量產強度更高）；Ag/Ru 鈍化（抗氧化無需真空）；BCB 聚合物（降應力但 CMP 困難；Ar 電漿硬化解法）**（2026-07-24 收錄；原文 2026-07-16）⭐新增
 - [[sources/2026-07-16_trendforce_tsmc-arizona-265b-ap-fabs]] — TrendForce：**TSMC Arizona 再加碼 $100B → 總計 $265B；10 座邏輯廠 + 2 座先進封裝廠；AI 晶片需求強勁至 2030；完整美國本地化 AP 能力**（2026-07-23 收錄；原文 2026-07-16）⭐新增
 - [[sources/2026-07-16_trendforce_tsmc-q2-2026-earnings-record]] — TrendForce：**TSMC Q2 2026 淨利 NT$706.56B（+77.4% YoY，歷史新高）；毛利率 67.7%；2nm=3%、3nm=30%、5nm=33%；EPS NT$27.25；ADR +5%**（2026-07-23 收錄；原文 2026-07-16）⭐新增
+- [[sources/2026-07-15_trendforce_psmc-intel-emib-silicon-capacitor]] — TrendForce：**PSMC 12 吋矽電容取得 Intel EMIB 認證，進入穩定量產；2027 目標 10K wsm；3D AI Foundry 5%→20%；PSMC Q2 毛利率 28%（+27% QoQ）；DRAM 漲 45%**（2026-07-25 收錄；原文 2026-07-15）⭐新增
+- [[sources/2026-07-15_trendforce_v-die-mosaic-vertical-memory]] — TrendForce：**V-Die（UNIST）4× HBM4 互連密度 + MOSAIC（東京大學）感應耦合 3× 熱導率——VLSI 2026 後 HBM 學術架構；均為研究階段，非商業替代方案**（2026-07-25 收錄；原文 2026-07-15）⭐新增
+- [[sources/2026-07-14_patent_meadville-glass-carrier-per-layer-cmp]] — [專利] ⭐⭐⭐ **玻璃首次以「CTE 與矽匹配」為由、在請求項層級作為堆疊載板；Lau 兩難的第一個業界回應是「限制用途」而非解決**；⭐⭐ CMP 放在每一層之間 ➜ 次數隨層數線性成長（CN122396357A / 上海美維, 2026-07-14）⭐新增
 - [[sources/2026-07-14_trendforce_huawei-baidu-open-npo-msa]] — TrendForce：**Huawei + Baidu 聯合 20+ 夥伴發布 OPEN NPO MSA——中國首個 NPO 光互連標準；Q3 2026 首版規範；2027 H1 商業部署；對抗美系 OCI-MSA（Meta/Microsoft）**（2026-07-15 收錄；原文 2026-07-14）⭐新增
 - [[sources/2026-07-14_trendforce_intel-ireland-5b-intel3-europe]] — TrendForce：**Intel 愛爾蘭 Fab 34 追加 €50 億（~$57 億）；Intel 3 成歐洲最先進節點；Diamond Rapids Xeon 7 I/O Die 落腳 Fab 34；佔 Intel 2026 全年 capex 30%；Apollo 股份 $142 億已於 2026-04 回購**（2026-07-15 收錄；原文 2026-07-14）⭐新增
 - [[sources/2026-07-14_trendforce_samsung-hbm-hiring-hybridbonding]] — TrendForce：**Samsung DS 事業部 6 個 HBM 核心職位（多層堆疊混合銅接合、TSV 模組、Cu 墊平坦化）；三線並進 HBM4 量產 + HBM4E 送樣 + HBM5 研發；HPB + 混合接合高堆疊雙軌路徑**（2026-07-15 收錄；原文 2026-07-14）⭐新增
@@ -379,44 +321,40 @@
 - [[sources/2026-07-14_trendforce_umc-silith-silicon-photonics-hvm]] — TrendForce：**UMC + SILITH 完成矽光子 200G/lane HVM——新加坡 12 吋廠首批交貨；Innolight/Coherent 客戶；UMC 2027 封裝服務；2028 TFLN 開放平台；CPO/NPO 市場 >$390 億 by 2030（TrendForce 新預測）**（2026-07-15 收錄；原文 2026-07-14）⭐新增
 - [[sources/2026-07-13_trendforce_tsmc-june-revenue-q2-cowos-copos]] — TrendForce：**TSMC 2026-06 月收入 NT$442.7B（歷史新高，+67.9% YoY）；Q2 季度新高；分析師預期全年 +40% YoY；CoWoS 2027 年目標上修至 200 萬套（前估 135 萬）；CoPoS 量產 2029–2030、初始 40K–50K wsm**（2026-07-14 收錄；原文 2026-07-13）⭐新增
 - [[sources/2026-07-13_trendforce_skhynix-hbm-5-6x-demand-qualcomm-hbc]] — TrendForce：**SK hynix 主席：客戶要求供應量 5–6 倍；CEO：2027 年史上最嚴峻記憶體短缺；Qualcomm HBC 首現（LPDDR on logic die，6x bandwidth/watt vs HBM）；Lutnick 施壓在美建廠；SK Group $100 億美國 AI 業務**（2026-07-14 收錄；原文 2026-07-13）⭐新增
-- [[sources/2026-07-09_trendforce_nvidia-rosa-cpu-tsmc-a16-spr-2028]] — TrendForce：**NVIDIA Rosa CPU 評估 TSMC A16 SPR 背面供電（2028 資料中心平台）；128+ Rigel 核心；IPC >+50% vs Vera；CMP 需求 +15–20%；載板晶圓 ASP >4x；Vera 客戶：Perplexity+OpenAI+Anthropic+Oracle**（2026-07-14 收錄；原文 2026-07-09）⭐新增
 - [[sources/2026-07-12_techtimes_sk-hynix-nasdaq-debut]] — TechTimes：**SKHY Nasdaq 首日 +13%（$168.01）、市值 $1.27T；實際籌資 $265 億（史上最大境外美國上市）；CoWoS 物理鎖定機制深度分析；HBM 71.5% 利潤率；印第安那州 West Lafayette AP 廠 $40 億 2028 投產；Q2 財報 2026-07-29**（2026-07-13 收錄；原文 2026-07-12）⭐新增
 - [[sources/2026-07-10_trendforce_postech-chip-stacking]] — TrendForce：**POSTECH 10 層晶片堆疊 4× 12-Hi HBM 密度；< 180°C 低溫 < 20 kPa 低壓；單步驟 transfer+bond；14 µm 超薄晶片；Kim Seok 教授；Results in Engineering**（2026-07-13 收錄；原文 2026-07-10）⭐新增
 - [[sources/2026-07-10_economy-ac_tsmc-ecosystem-taiwan]] — Economy.ac：**Yole AP 市場 $37.8B（2023）→$69.5B（2029）CAGR 10.7%；3D IC Alliance 37 家（Chroma ATE、Scientech、Grand Process）；CoPoS 2028 Morgan Stanley 預測；旭化成 Sunfort 台灣 NT$4 億；Kinsus 2–3 年採購週期；ASE CoWoS 20K–25K wsm EOY 2026**（2026-07-13 收錄；原文 2026-07-10）⭐新增
-- [[sources/2026-07-08_tomshardware_sphbm4-jesd330-4-organic-substrate]] — Tom's Hardware：**JEDEC SPHBM4（JESD330-4）標準發布**：512-bit 窄介面、有機基板免矽中介層、22.4–46 GT/s、最高 2.944 TB/s、64 GB；CXMT 列 JEDEC 工作組（2026-07-08）｜合併自重複收錄（2026-09-15 dedupe）
-- [[sources/2026-07-08_trendforce_intel-xbm-patent]] — TrendForce：**Intel XBM 專利：UCIe 32 GT/s 串行連結 + BEOL 1T1C DRAM 取代 HBM 矽中介層；MoP 格式；HBM4 腳位相容；0.5–5 GB/stack；商用 2030 年後**（2026-07-13 收錄；原文 2026-07-08）⭐新增
-- [[sources/2026-06-14_digitaltrends_tsmc-copos-glass-temporary-carrier]] — Digital Trends / Ming-Chi Kuo：**CoPoS 玻璃 = 臨時製程載具（非玻璃核心基板）；啟動門檻 >9.5× reticle；NVIDIA Feynman 首發採用；2H28 量產**（2026-07-12 收錄；原文 2026-06-14）⭐新增
-- [[sources/2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap]] — Tom's Hardware / TSMC North America Symposium：**CoWoS 路線圖 2027→9.5×（120×150mm 基板）→ 2028→14×（20 compute chiplets + 20 HBM5）→ 2029→>14×（24 HBM5E）；48×計算成長 2024-2029**（2026-07-12 收錄；原文 2026-04-27）⭐新增
 - [[sources/2026-07-10_semieng_chip-week-146]] — SemiEngineering Week #146：**Micron $250B US 投資（2035）、紐約 Clay 廠提前開工；Apple-Broadcom $30B+；全球半導體銷售 5 月 $121B（+104% YoY）史上最高；iMAPS CHIPCon 先進封裝討論；Meta AI 晶片 9 月量產**（2026-07-11 收錄；原文 2026-07-10）⭐新增
 - [[sources/2026-07-10_tomshardware_micron-250b-globalwafers-dram]] — Tom's Hardware：**Micron $250B → $500M GlobalWafers 300mm 矽晶圓廠（美國唯一）；10 年供應協議；40% DRAM 美國製造目標；Ford 車用記憶體合約**（2026-07-11 收錄；原文 2026-07-10）⭐新增
-- [[sources/2026-01-30_tomshardware_intel-ai-chip-test-vehicle-emib-t]] — Tom's Hardware：**Intel AI 晶片測試載具——8X 光罩 SiP（4 邏輯+12 HBM4+EMIB-T+18A-PT）；「今日可製造」；Jaguar Shores 2027 採用此架構；18A-PT 節點首次記錄**（2026-07-11 收錄；原文 2026-01-30）⭐新增
+- [[sources/2026-07-09_skhynix_us20260198018a1-bonding-insulating-layer-tsv]] — **專利訊號** SK hynix：介電接合層 + 貫穿接點 + TSV 串接之記憶體堆疊；公開日早於 Hot Chips「HB 延至 HBM5」發言（2026-07-09）⭐新增
+- [[sources/2026-07-09_trendforce_nvidia-rosa-cpu-tsmc-a16-spr-2028]] — TrendForce：**NVIDIA Rosa CPU 評估 TSMC A16 SPR 背面供電（2028 資料中心平台）；128+ Rigel 核心；IPC >+50% vs Vera；CMP 需求 +15–20%；載板晶圓 ASP >4x；Vera 客戶：Perplexity+OpenAI+Anthropic+Oracle**（2026-07-14 收錄；原文 2026-07-09）⭐新增
+- [[sources/2026-07-08_tomshardware_sphbm4-jesd330-4-organic-substrate]] — Tom's Hardware：**JEDEC SPHBM4（JESD330-4）標準發布**：512-bit 窄介面、有機基板免矽中介層、22.4–46 GT/s、最高 2.944 TB/s、64 GB；CXMT 列 JEDEC 工作組（2026-07-08）｜合併自重複收錄（2026-09-15 dedupe）
+- [[sources/2026-07-08_trendforce_intel-xbm-patent]] — TrendForce：**Intel XBM 專利：UCIe 32 GT/s 串行連結 + BEOL 1T1C DRAM 取代 HBM 矽中介層；MoP 格式；HBM4 腳位相容；0.5–5 GB/stack；商用 2030 年後**（2026-07-13 收錄；原文 2026-07-08）⭐新增
 - [[sources/2026-07-08_trendforce_tsmc-pic-capacity-coupe]] — TrendForce：**TSMC PIC 產能三段曲線 500→10K→15K→25K wsm；200Gbps MRM BER<1E-08 量產；NVIDIA/Broadcom/AMD 首批 COUPE 客戶；COUPE+SoIC+CoWoS AI 光電平台**（2026-07-10 收錄；原文 2026-07-08）⭐新增
-- [[sources/2026-05-08_trendforce_ajinomoto-abf-2032-plant]] — TrendForce：**Ajinomoto ABF >95% 全球市占；FY2026 電子材料利潤 ¥54.6B（+35%）、利潤率 >50%；第三廠岐阜 JPY12 億土地、2028 建設、2032 量產**（2026-07-10 收錄；原文 2026-05-08）⭐新增
 - [[sources/2026-07-08_trendforce_dram-price-fixing-hbm-collusion]] — TrendForce：**美國 DRAM 反壟斷集體訴訟（Samsung/SK hynix/Micron）；HBM 擴產首次成為反壟斷法律論據；4 年漲幅 ~700%；歷史判例 2022 年駁回**（2026-07-09 收錄；原文 2026-07-08）⭐新增
-- [[sources/2026-07-02_trendforce_skhynix-removes-price-cap-lta]] — TrendForce：**SK hynix 移除 LTA 價格上限（業界唯一）；合約期限延長至 3–5 年；Micron SCA 設價格上下限；第 16 份 SCA 簽約 GM（汽車供應鏈）**（2026-07-09 收錄；原文 2026-07-02）⭐新增
-- [[sources/2026-07-02_trendforce_samsung-sf2p-plus-tsmc-n2-roadmap]] — TrendForce：**Samsung SF2P+ 2027-28；SF2X AI/HPC；SF1.4 2029；TSMC N2P 2H26/N2U 2028 全 IP 相容；A16 SPR 2026 就緒**（2026-07-09 收錄；原文 2026-07-02）⭐新增
+- [[sources/2026-07-07_semieng_panel-inspection-metrology-hdfo]] — SemiEng（Anne Meixner）：面板檢測與量測；**RDL 3→9 層、5→2 µm；光阻 650 µm；600 mm 面板 ~10¹² pixels/layer；5→1 µm 解析度速度慢 4×**；**KGP（known-good panel）概念首次入庫**（2026-07-07）⭐新增
 - [[sources/2026-07-07_trendforce_samsung-skhynix-hb-delay-16hi-hbm4e]] — TrendForce：**Samsung/SK hynix 正式推遲 HBM 混合接合；16-High HBM4E 為最早導入點；JEDEC 討論 HBM5 高度 ~1,000µm；Samsung HPB 已驗證；SK hynix iHBM 定位 HBM5；Hanmi Wide TC Bonder 受益**（2026-07-08 收錄；原文 2026-07-07）⭐新增
 - [[sources/2026-07-07_trendforce_samsung-q2-2026-record-krw894t]] — TrendForce：**Samsung Q2 2026 營業利益 KRW 89.4T（+1,810% YoY，歷史新高，52.3% 毛利率）；DRAM ASP +50% QoQ；NAND ASP +60% QoQ；超越 Nvidia+Apple；記憶體超循環峰值確認**（2026-07-08 收錄；原文 2026-07-07）⭐新增
+- [[sources/2026-07-06_apl_lensless-through-silicon-phase-imaging]] — [論文] **反射式無透鏡穿矽相位成像**（1064 nm、單張繞射圖、無物鏡無移動件）；解析 **2.19 µm**；⭐ **價值判準由精度轉向可整合性（in-tool）；相位通道對比優於振幅通道**；⚠ 不足以驗證 <1 µm D2W 對準（坦佩雷大學, APL, 2026-07-06）⭐新增
 - [[sources/2026-07-06_trendforce_micron-hiroshima-fab-hbm-1gamma]] — TrendForce：**Micron 廣島廠 ¥1.5T 擴建動土（2026-07-04），1γ DRAM + HBM，EUV，設備 2H28；METI 補貼上限 ¥5,000 億**（2026-07-07 收錄；原文 2026-07-06；fetch_status: partial）⭐新增
 - [[sources/2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo]] — TrendForce：**Samsung EM + Dongwoo Fine-Chem（住友化學子公司）成立「GlaSSEM」JV；KRW 4,800 億；2H27 量產；+ TSMC JPCA Show 2026 玻璃基板量化性能首次公開（COP +16%、CTE -19%、模量 +31%、電源電阻 -27%、電感 -42%）**（2026-07-07 收錄；原文 2026-07-06）⭐新增
 - [[sources/2026-07-06_trendforce_cfmee-plp2000-china-first-plp]] — TrendForce：**CFMEE PLP 2000 通過技術資格認證——中國首套 510×515mm PLP 直寫微影系統；最大面板 600×600mm；2µm 解析度；CoPoS/FOPLP/玻璃基板支援；港股 IPO 2026-06-26（~US$4.1 億）**（2026-07-07 收錄；原文 2026-07-06）⭐新增
-- [[sources/2026-03-02_semieng_making-hybrid-bonding-better]] — SemiEngineering：**Making Hybrid Bonding Better — AMAT 300°C/5min 100× 吞吐；NT Cu 200°C 退火；SiCN PVD <250°C；plasma dicing 粒子控制；Yole 21% CAGR（HB 設備，2025–2030）；Synopsys 3D-aware EDA**（2026-07-06 收錄；原文 2026-03-02）⭐新增｜合併自重複收錄（2026-09-15 dedupe）
-- [[sources/2026-07-03_trendforce_china-tglass-guangyuan]] — TrendForce：**中國 T-glass 光遠新材 $1B 河南廠（客戶 Panasonic/Resonac）；勝宏 CCL NVIDIA Rubin 認證；江豐電子韓國廠供 SK Hynix/Samsung；紅樹林光刻膠港交所 IPO 申請**（2026-07-05 收錄；原文 2026-07-03）⭐新增
-- [[sources/2026-07-02_trendforce_samsung-hbm-dummy-die-patent]] — TrendForce：**Samsung HBM5 Dummy Die 專利——三段式梯形側壁+雷射分割；HPB 整合；16 層 HBM5 良率 40–60% 首次量化**（2026-07-05 收錄；原文 2026-07-02）⭐新增
-- [[sources/2026-06-25_techtimes_sk-hynix-nasdaq-adr-29b]] — Tech Times：**SK hynix Nasdaq ADR $29B（史上最大，超越 Alibaba 2014）；100% 用於 P&T7 HBM 封裝廠+龍仁 Y1 fab+EUV；2026-07-10 掛牌；SKHY**（2026-07-05 收錄；原文 2026-06-25）⭐新增
 - [[sources/2026-07-04_semieng_chip-week-145]] — SemiEngineering Week #145：**300mm 記憶體設備 >$50B（+29%，史上首次）；DRAM $37B、NAND $14B；8 吋代工利用率 88%；代工報價 +5–15%；Nvidia AI 新創收益分潤算力方案；80 新創募資 $8.4B**（2026-07-04 收錄；partial）⭐新增
+- [[sources/2026-07-03_lgchem_cn122342272a-glass-core-substrate-singulation]] — **專利訊號** LG Chem：玻璃芯基板切單法（犧牲性金屬圖案定義切割道）；**玻璃良率瓶頸在邊緣而非 TGV**；IPC 落在 C03C/H05K 而非半導體體系（2026-07-03）⭐新增
+- [[sources/2026-07-03_trendforce_china-tglass-guangyuan]] — TrendForce：**中國 T-glass 光遠新材 $1B 河南廠（客戶 Panasonic/Resonac）；勝宏 CCL NVIDIA Rubin 認證；江豐電子韓國廠供 SK Hynix/Samsung；紅樹林光刻膠港交所 IPO 申請**（2026-07-05 收錄；原文 2026-07-03）⭐新增
 - [[sources/2026-07-03_trendforce_anthropic-samsung-advanced-packaging]] — TrendForce：**Anthropic 洽談三星 SF2（2nm）代工+先進封裝自製 AI ASIC；早期洽談；Clive Chan（前 OpenAI 晶片計畫）已到職；三星 Series H 戰略夥伴**（2026-07-04 收錄；原文 2026-07-03）⭐新增
+- [[sources/2026-07-02_epo_intel-bottom-up-tgv-plating-airgap]] — [專利] Intel **自底部 TGV 鍍膜、無需側壁種子層**，並**刻意保留銅與玻璃間的空氣間隙**（應力解耦而非電性隔離）；22 名發明人；⚠ 空氣為熱絕緣體之代價未被討論（2026-07-02）
+- [[sources/2026-07-02_epo_onto-hybrid-projection-directwrite-lithography]] — [專利訊號] ⭐⭐ Onto：面板微影**分工**——**≥1 µm 用投影（field ≥50×50 mm）、<1 µm 用直寫**；⭐ 首個封裝級投影視場數值 ➜ 310 mm 面板 ≈36 次曝光、600 mm ≈144 次（US20260186421A1, 2026-07-02）⭐新增
+- [[sources/2026-07-02_patent_intel-tcb-bond-head-nozzle]] — [專利] ⭐⭐ **Intel 把排他權下在 TCB 鍵合頭噴嘴的流道幾何上；兩個 family、不同團隊、相鄰日各主張一種幾何**；➜ 「熱」須拆成運作熱 vs 製程熱（US20260191069A1 + EP4770413A2, 2026-07-02）⭐新增
+- [[sources/2026-07-02_trendforce_skhynix-removes-price-cap-lta]] — TrendForce：**SK hynix 移除 LTA 價格上限（業界唯一）；合約期限延長至 3–5 年；Micron SCA 設價格上下限；第 16 份 SCA 簽約 GM（汽車供應鏈）**（2026-07-09 收錄；原文 2026-07-02）⭐新增
+- [[sources/2026-07-02_trendforce_samsung-sf2p-plus-tsmc-n2-roadmap]] — TrendForce：**Samsung SF2P+ 2027-28；SF2X AI/HPC；SF1.4 2029；TSMC N2P 2H26/N2U 2028 全 IP 相容；A16 SPR 2026 就緒**（2026-07-09 收錄；原文 2026-07-02）⭐新增
+- [[sources/2026-07-02_trendforce_samsung-hbm-dummy-die-patent]] — TrendForce：**Samsung HBM5 Dummy Die 專利——三段式梯形側壁+雷射分割；HPB 整合；16 層 HBM5 良率 40–60% 首次量化**（2026-07-05 收錄；原文 2026-07-02）⭐新增
 - [[sources/2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment]] — TrendForce：**SK hynix KRW 100T（80T M17 NAND 2029；20T P&T7 封裝中心 2027）；Samsung KRW 140T（56T HBM 廠、8T 電機 AI 基板世宗）；SK Group 1GW AI 資料中心**（2026-07-04 收錄；原文 2026-07-02）⭐新增
-- [[sources/2026-06-30_trendforce_samsung-skhynix-800t-expansion]] — TrendForce：**Samsung+SK hynix KRW 800T 合計擴產；81T P&T7 封裝中心；P5+P6 同步；龍仁 4 廠 2045→2033；設備排擠效應恐衝擊台積電/Intel；南亞 NT$52B 利基轉型**（2026-07-04 收錄；原文 2026-06-30）⭐新增
-- [[sources/2026-04-07_tomshardware_intel-joins-terafab]] — Tom's Hardware：**Intel 正式加入 TeraFab（SpaceX/xAI/Tesla），明確點名「封裝」為核心貢獻（EMIB/Foveros）；目標 1 TW/year 算力；Lip-Bu Tan 公開背書**（2026-07-04 補收錄；原文 2026-04-07）⭐新增
-- [[sources/2026-06-30_thelec_amat-six-packaging-systems]] — The Elec：**AMAT 發布 6 款新封裝設備：Centura Prime Epi、Opta CMP（HB 專用）、Nokota VMax2 ECD、Producer Avila2 PECVD、VeritySEM 7AP、SEMVision G7AP**（2026-07-03 收錄；原文 2026-06-30）⭐新增
-- [[sources/2026-06-24_thelec_corning-glass-bridge-cpo]] — The Elec：**Corning Glass Bridge 離子交換波導（≥30µm、<2dB），GlassWorks AI 平台，TGV 玻璃基板 CPO 整合架構；Meta/NVIDIA/Amazon 長期合約**（2026-07-03 收錄；原文 2026-06-24）⭐新增
-- [[sources/2026-06-25_thelec_micron-q3-fy2026-record]] — The Elec：**Micron Q3 FY2026 史上最高季度業績：營收 $41.456B（+345.7%），HBM4 >$1B/3個月，16 SCA 合約 $1000億積壓，Q4 指引 $500億**（2026-07-03 收錄；原文 2026-06-25）⭐新增
-- [[sources/2026-05-12_asmpt_ectc2026-firebird-lithobolt]] — ASMPT：**FIREBIRD™ 系列 TCB（AOR 技術、2.0µm精度、>500套量產）；LITHOBOLT™ G2 D2W（>10,000 互連/mm²，Cu-Cu 無空洞）**（2026-07-03 收錄；原文 2026-05-12）⭐新增
-- [[sources/2026-06-19_thelec_jntc-2mm-tgv-glass-substrate]] — The Elec：**JNTC 開發全球首款 2.0mm TGV 玻璃基板；產品覆蓋 0.3–2.0mm；2027 量產目標**（2026-07-03 收錄；原文 2026-06-19）⭐新增
 - [[sources/2026-07-01_trendforce_ase-price-hike-20pct]] — TrendForce：**ASE CoWoS/FoCoS 報價漲逾 20%；OSAT 稼動率滿載；物理 AI 定義下一波需求**（2026-07-02 收錄；原文 2026-07-01）⭐新增
 - [[sources/2026-07-01_trendforce_terafab-intel-veteran-hire]] — TrendForce：**TeraFab 首位重量級招募 Gary Jiang（Intel 18A 廠長）出任總監；投資 $55B→$119B；Intel 14A 合作再確認；ASML 參與確認**（2026-07-02 收錄；原文 2026-07-01）⭐新增
-- [[sources/2026-06-26_semieng_chip-week-144]] — SemiEngineering Week #144：**JCET 計劃上海先進封裝廠 ~$1.15B**；AMAT 推出 CMP/沉積/電子束封裝設備新系列；Micron HBM4 12H 出貨 >$1B（量產斜率 2×HBM3E）；GF W2W 接合認證（2026-07-01 收錄；原文 2026-06-26）⭐新增
+- [[sources/2026-06-30_advphotonicsnexus_tgv-3d-fowlp-cpo-optical-engine]] — [論文] A*STAR IME：**>200Gbps/lane 時垂直穿孔成瓶頸；預製 TGV 勝過 TSV/TMV/eBar；3D FOWLP 光引擎支撐 400Gbps/lane**（Advanced Photonics Nexus, 2026-06-30）⭐新增
+- [[sources/2026-06-30_trendforce_samsung-skhynix-800t-expansion]] — TrendForce：**Samsung+SK hynix KRW 800T 合計擴產；81T P&T7 封裝中心；P5+P6 同步；龍仁 4 廠 2045→2033；設備排擠效應恐衝擊台積電/Intel；南亞 NT$52B 利基轉型**（2026-07-04 收錄；原文 2026-06-30）⭐新增
+- [[sources/2026-06-30_thelec_amat-six-packaging-systems]] — The Elec：**AMAT 發布 6 款新封裝設備：Centura Prime Epi、Opta CMP（HB 專用）、Nokota VMax2 ECD、Producer Avila2 PECVD、VeritySEM 7AP、SEMVision G7AP**（2026-07-03 收錄；原文 2026-06-30）⭐新增
 - [[sources/2026-06-30_digitimes_tsmc-foplp-timeline-skepticism]] — DIGITIMES：**南韓媒體稱 TSMC 2027 年 PLP 量產，台灣業界消息人士質疑時程過早**；TSMC 仍評估多種先進封裝選項（partial）（2026-06-30 收錄；原文 2026-06-16）⭐新增
 - [[sources/2026-06-30_trendforce_ase-six-plants-cpo-2026]] — TrendForce：**ASE Renwu 廠動土，今年六廠同步建廠創史上最大規模**；Renwu 投資 NT$108.3億；CEO Tien Wu 首次證實 CPO 量產今年（2026）啟動（2026-06-30 收錄；原文 2026-04-10）⭐新增
 - [[sources/2026-06-30_amkor-ir_arizona-7billion-groundbreaking]] — Amkor 官方新聞稿：**亞利桑那 Peoria 廠動土，投資擴增至 $70 億**；Apple/NVIDIA/TSMC 高層聯合致詞；2028 年初量產（一手來源補強既有記錄）（2026-06-30 收錄；原文 2025-10-06）⭐新增
@@ -427,125 +365,149 @@
 - [[sources/2026-06-29_businesswire_amkor-q1-2026-earnings]] — Business Wire：**Amkor 2026 Q1 營收創歷史新高 $1.68B（+27% YoY）**；HDFO/Flip-Chip 先進封裝為主要動能（2026-06-29 收錄；原文 2026-04-27）⭐新增
 - [[sources/2026-06-29_evgroup_ectc2026-hybrid-bonding-layer-transfer]] — EV Group：**ECTC 2026 官方新聞稿**——450nm pitch Cu-Cu 混合接合 98% 良率 2000萬互連；300nm SiCN 50nm overlay；IR LayerRelease（2026-06-29 收錄；原文 2026-05-19）⭐新增
 - [[sources/2026-06-29_trendforce_china-osat-tongfu-jcet-investment]] — TrendForce：**中國 OSAT 投資加碼**——Tongfu 私募 RMB44億；JCET 入股 RMB134.6億晶片基金；2025H1 淨利成長 Forehope+118.6%/JCET+52.4%（2026-06-29 收錄；原文 2026-01-19）⭐新增
+- [[sources/2026-06-28_hyperframe_amat-hybrid-bonding-hedge]] — [文章] AMAT 以**「收斂」策略避險**而非押注混合接合；fab 級量測（eBeam sub-10 nm）下沉至封裝基板；超薄 die = 標準晶圓 **1/25**（與 2026-08-18 官方記錄交叉一致）（HyperFRAME Research, 2026-06-28）⭐新增
 - [[sources/2026-06-28_economy-ac_glass-substrate-global-race]] — The Economy：**玻璃基板全球競賽——中國陣營擴大至 BOE/Visionox/AKM Meadville/雲天半導體，日本 Ibiden/DNP 目標 2028**；首次記載專利集中於 Intel/Corning/Schott（2026-06-28 收錄；原文 2026-06-11）⭐新增
 - [[sources/2026-06-27_tmtpost_tsmc-cowos-capacity-targets]] — TMTPost：**台積電上修 2026–2027 CoWoS 產能目標**；嘉義 AP7 SoIC 產線轉產 CoWoS；台南 AP8 新增 P2 廠（2026-06-27 收錄；原文 2026-01-29）⭐新增
 - [[sources/2026-06-27_tweaktown_hbm4-16hi-nvidia-supply-fight]] — TweakTown：**NVIDIA 要求 2026 Q4 前交付 16-Hi HBM4**；三大廠接合材料（TC-NCF vs MR-MUF）/厚度路線對比；JEDEC 775µm 高度天花板（2026-06-27 收錄；原文 2025-12-28）⭐新增
 - [[sources/2026-06-27_edn_cpo-technology-status-2026]] — EDN：**CPO 2026 現況回顧**——Marvell/Broadcom/Ayar Labs 2025 進展；市場預測首次併入（IDTechEx $20B by 2036, 37% CAGR；Yole 2028-30 量產窗）（2026-06-27 收錄；原文 2025-12-30）⭐新增
 - [[sources/2026-06-27_intel_foundry-direct-connect-2025-packaging]] — Intel 投資者新聞稿：**Foundry Direct Connect 2025 一手來源**——EMIB-T/Foveros-R/B/Foveros Direct <5µm pitch 原始公告（2025-04-29）；校正既有 wiki「2026 公布」時間誤差；新增 Amkor 合作、Chiplet Alliance（2026-06-27 收錄；原文 2025-04-29）⭐新增
+- [[sources/2026-06-26_semieng_chip-week-144]] — SemiEngineering Week #144：**JCET 計劃上海先進封裝廠 ~$1.15B**；AMAT 推出 CMP/沉積/電子束封裝設備新系列；Micron HBM4 12H 出貨 >$1B（量產斜率 2×HBM3E）；GF W2W 接合認證（2026-07-01 收錄；原文 2026-06-26）⭐新增
+- [[sources/2026-06-25_lamresearch_wafer-to-panel-100mm-threshold]] — [一手] ⭐⭐ **Lam：封裝超過約 100×100 mm 後晶圓即失去效率**（首個設備商給出的面板轉換幾何門檻）；**面板尺寸標準業界未定**；Salzburg Panel CoE 2026-05-20 啟用（Lam Research Newsroom, 2026-06-25）⭐新增
+- [[sources/2026-06-25_techtimes_sk-hynix-nasdaq-adr-29b]] — Tech Times：**SK hynix Nasdaq ADR $29B（史上最大，超越 Alibaba 2014）；100% 用於 P&T7 HBM 封裝廠+龍仁 Y1 fab+EUV；2026-07-10 掛牌；SKHY**（2026-07-05 收錄；原文 2026-06-25）⭐新增
+- [[sources/2026-06-25_thelec_micron-q3-fy2026-record]] — The Elec：**Micron Q3 FY2026 史上最高季度業績：營收 $41.456B（+345.7%），HBM4 >$1B/3個月，16 SCA 合約 $1000億積壓，Q4 指引 $500億**（2026-07-03 收錄；原文 2026-06-25）⭐新增
+- [[sources/2026-06-24_thelec_corning-glass-bridge-cpo]] — The Elec：**Corning Glass Bridge 離子交換波導（≥30µm、<2dB），GlassWorks AI 平台，TGV 玻璃基板 CPO 整合架構；Meta/NVIDIA/Amazon 長期合約**（2026-07-03 收錄；原文 2026-06-24）⭐新增
 - [[sources/2026-06-24_techtimes_sk-hynix-dethroned-samsung-ddr5-hbm4]] — Tech Times：**SK hynix 市值反超三星（26年來首次），韓股 KOSPI 隔日重挫**；SK hynix Q1 營業利益率72%；SK hynix 申請 Nasdaq ADR（SKHY），目標 2026-07-10 掛牌（2026-06-26 收錄）⭐新增
+- [[sources/2026-06-23_tsmc_cn122260581a-photonic-engine-cpo]] — [專利] TSMC 光子引擎封裝光柵耦合器+微透鏡 CPO（CN122260581A, 2026-06-23）
 - [[sources/2026-06-23_communicationstoday_foplp-glass-substrate-market-8b-2030]] — Communications Today（引述 Counterpoint Research）：**FOPLP+玻璃基板市場 2024 $650M → 2030 >$8.1B**；AI/HPC 佔 FOPLP 營收 45.6%；東亞佔產能 84.8%；PTI 首次於玻璃基板語境提及（2026-06-26 收錄）⭐新增
-- [[sources/2026-06-21_convergedigest_intel-emib-t-multi-die-packaging]] — Converge Digest：**Intel Foundry 官方部落格公開 EMIB-T 藍圖**——晶圓利用率~90%，光罩面積 >8×→2028 目標>12×，16+ HBM4/5 堆疊／30+ 橋接器；前 SK Hynix CEO 李錯熹轉任 Intel Foundry 封裝負責人（2026-06-26 收錄）⭐新增
-- [[sources/2026-04-28_cw_tsmc-copos-move-really-means]] — CommonWealth Magazine：**CoWoS/CoPoS/FOPLP 三層技術定位解析**；首批 12 家具名台灣 CoPoS 供應鏈廠商（Chroma ATE、Scientech、C Sun、GMM、APT、GPTC、Ta Liang、V5、Favite、Gudeng Precision、Li-Din、SemTek、Manz）（2026-06-26 收錄）⭐新增
 - [[sources/2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix]] — TrendForce：**Samsung HBM4 營收破 $1B vs SK hynix 放緩量產保 DRAM 毛利**——策略分歧首現（2026-06-25 收錄）⭐新增
 - [[sources/2026-06-22_trendforce_sandisk-hbf-patent-nand-processor-bonding]] — TrendForce：**SanDisk CBA 新專利**——處理器接合於 NAND tile，與 HBM 共享中介層（2026-06-25 收錄）⭐新增
-- [[sources/2026-06-16_nokia_pennsylvania-atp-expansion]] — Nokia：**賓州 Allentown ATP 產能擴大**，CHIPS Act 資金支持，美國 ATP 占比 <2%（2026-06-25 收錄）⭐新增
-- [[sources/2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging]] — Advanced Packaging News：**ECTC 2026 技術亮點**——混合接合 450nm/98%良率、CPO 專題場次、面板級 CMP/曝光技術（2026-06-25 收錄）⭐新增
-- [[sources/2026-06-20_wccftech_tsmc-copos-glass-core-cost-cut]] — Wccftech：**TSMC 加速 CoPoS 取代 CoWoS**；玻璃核心基板降本 30%；材料利用率 <70%→>90%；JPCA Show 2026 簡報細節；Arizona 2029-30 參與 CoPoS（2026-06-22 收錄）⭐新增
-- [[sources/2026-06-07_digitimes_jcet-3d-packaging-cpo-plant]] — DIGITIMES：**JCET 江陰新 3D 封裝廠**瞄準 AI 電源模組、CPO 需求（partial/paywalled）（2026-06-22 收錄）⭐新增
-- [[sources/2026-04-16_ontoinnovation_dragonfly-g5-qualified]] — Onto Innovation：**Dragonfly G5 取得 2.5D AI 封裝量產資格**；AI 封裝需求年成長 ~30%（2026-06-22 收錄）⭐新增
-- [[sources/2026-03-17_coherent_cpo-ofc2026-demo]] — Coherent：**OFC 2026 多架構 CPO 展示**——6.4T 矽光子、VCSEL 多模、InP 400G/lane 調制器（2026-06-22 收錄）⭐新增
+- [[sources/2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo]] — [新聞] ⭐⭐ **結清空缺：AUO 在 CPO 是零件供應商**（與 Ennostar 提供光通訊方案，非基板、非封裝服務）；**Innolux × Ibiden 玻璃／ABF／玻璃三層複合基板**供 TSMC；TSMC 玻璃核心基板量產 **2028 年底–2029 年初**（BigGo, 2026-06-21）⭐新增
+- [[sources/2026-06-21_convergedigest_intel-emib-t-multi-die-packaging]] — Converge Digest：**Intel Foundry 官方部落格公開 EMIB-T 藍圖**——晶圓利用率~90%，光罩面積 >8×→2028 目標>12×，16+ HBM4/5 堆疊／30+ 橋接器；前 SK Hynix CEO 李錯熹轉任 Intel Foundry 封裝負責人（2026-06-26 收錄）⭐新增
 - [[sources/2026-06-21_tomshardware_intel-google-amazon-packaging-talks]] — Tom's Hardware：**Intel 傳與 Google、Amazon 洽談先進封裝**（與既有 TrendForce 同日報導交叉確認）；新增 Intel Foundry 2025 Q4/全年財務虧損細節（$10.3B 虧損／$307M 外部營收）（2026-06-21）⭐新增
 - [[sources/2026-06-21_arxiv_tiny-chiplets-esd-protection-signal-integrity]] — arXiv：**微型 Chiplet 之 ESD 保護與訊號完整性機會**（ASU/UMN）——chiplet I/O 電路面積開銷限制 chiplet 微縮至 100mm² 以下；fetch_status: partial（摘要層級）（2026-06-21）⭐新增
+- [[sources/2026-06-20_wccftech_tsmc-copos-glass-core-cost-cut]] — Wccftech：**TSMC 加速 CoPoS 取代 CoWoS**；玻璃核心基板降本 30%；材料利用率 <70%→>90%；JPCA Show 2026 簡報細節；Arizona 2029-30 參與 CoPoS（2026-06-22 收錄）⭐新增
 - [[sources/2026-06-20_techtimes_skhynix-hbm4e-12layer-samples]] — Tech Times：SK hynix 正式出貨 12 層 HBM4E 樣品（2026-06-18）；48GB/16Gbps/4TB·s/能效+20%+/熱阻-17%；1c DRAM 首用（2026-06-20）⭐新增
 - [[sources/2026-06-20_prnewswire_manz-asia-310mm-ecd]] — PR Newswire：Manz Asia 全球首套 310mm×310mm PLP ECD 量產系統交付完整細節；玻璃/金屬載板雙路線；Omni x-series（310/510/700mm）（2026-06-20）⭐新增
 - [[sources/2026-06-20_biggo_boe-glass-substrate-pilot]] — BigGo Finance：BOE 玻璃基板試產線自動化運轉但未達量產良率；實際 300片/月 vs 設計 1,000片/月；2027 起逐步放量；A股概念股 4-6月 +74% 後回落（2026-06-20）⭐新增
+- [[sources/2026-06-19_trendforce_intel-skhynix-exceo-foundry-evp-emib]] — TrendForce：**Intel 任命 SK hynix 前 CEO 李錯熹（Seok-Hee Lee）為 Foundry EVP——主管先進封裝 EMIB-T/HBI 量產規模化；Google >300 萬 TPU 2028；NVIDIA 評估 18A；HBI 技術正式命名**（2026-08-16 收錄；原文 2026-06-19）⭐新增
+- [[sources/2026-06-19_thelec_jntc-2mm-tgv-glass-substrate]] — The Elec：**JNTC 開發全球首款 2.0mm TGV 玻璃基板；產品覆蓋 0.3–2.0mm；2027 量產目標**（2026-07-03 收錄；原文 2026-06-19）⭐新增
 - [[sources/2026-06-19_tomshardware_intel-emib-t-fab-rollout]] — Tom's Hardware：**Intel EMIB-T 今年內 fab 量產部署**——45µm→35/25µm 凸塊間距路線圖、0.25pJ/bit 能效、MIM 電容+Cu 接地層、CoWoS-L 成本/良率對比（$900-1000 vs 低數百美元）、Jaguar Shores 首款產品推測（2026-06-19）⭐新增
 - [[sources/2026-06-19_techtimes_vera-rubin-hbm4-suppliers]] — Tech Times：**Vera Rubin 全面量產，Samsung/SK hynix/Micron 三大 HBM4 供應商確認**；Vera CPU 交付 Anthropic/OpenAI/SpaceX/Oracle；三星/LG 股價反應（2026-06-19）⭐新增
 - [[sources/2026-06-19_iconnect007_copos-foplp-glass-core]] — I-Connect007（轉載 TrendForce）：TSMC CoPoS/FOPLP/玻璃核心基板——**與 2026-06-18 來源內容重複，已標記，未重複更新技術頁面**（2026-06-19）⭐新增
+- [[sources/2026-06-18_skhynix_us20260173880a1-guard-ring-bonded-structures]] — **專利訊號** SK hynix：接合介電層與上下 guard ring 配置；接合層作為水氣／離子橫向擴散通道的兩難（2026-06-18）⭐新增
 - [[sources/2026-06-18_trendforce_copos-glass-foplp-taiwan]] — TrendForce：**TSMC CoPoS 310×310mm 面板再確認；玻璃核心基板列為下一里程碑（2030 年後）**；TGV 技術障礙具體化；台灣面板廠 FOPLP 量產實績 620×750mm（2026-06-18）⭐新增
 - [[sources/2026-06-18_wccftech_intel-glass-cpo-ofc2026]] — Wccftech：**Intel OFC 2026 玻璃基板 + CPO 原型曝光**（4+4+8 chiplet + 8 CPO 晶片）；量產時程落後 Nvidia/AMD（2029-30 vs 2027-28）（2026-06-18）⭐新增
 - [[sources/2026-06-18_semieng_ucie3-technical-deepdive]] — SemiEngineering：**UCIe 3.0 技術細節深度解析**——64GT/s quarter-rate、BER 差異化、Arm CHI 映射、open-drain 緊急降頻接腳（2026-06-18）⭐新增
 - [[sources/2026-06-18_imec_iii-v-chiplet-rf-laser-bonding]] — imec：**雷射輔助接合用於 III-V Chiplet 系統級整合**；300mm RF 矽中介層平台；對位精度 <600nm（2026-06-18）⭐新增
+- [[sources/2026-06-17_trendforce_tsmc-amkor-10year-arizona-ap]] — TrendForce：**TSMC-Amkor 10 年期亞利桑那先進封裝協議；Amkor HVM 2028；TSMC AP 設施 2029（CoWoS+3D-IC）；Amkor +67 英畝用地；美國晶片供應鏈閉環確立**（2026-08-17 收錄；原文 2026-06-17）⭐新增
 - [[sources/2026-06-17_digitimes_amkor-tsmc-arizona-deal]] — DIGITIMES：**TSMC + Amkor 簽署 10 年期亞利桑那先進封裝協議**；美國本土晶圓代工 + OSAT 一站式供應鏈（2026-06-17）⭐新增
+- [[sources/2026-06-16_trendforce_tsmc-copos-dual-track-eval]] — TrendForce：TSMC CoPoS 龍潭試驗線雙軌設備評估，310×310mm，VisEra 迷你產線（2026-06-16）
+- [[sources/2026-06-16_nokia_pennsylvania-atp-expansion]] — Nokia：**賓州 Allentown ATP 產能擴大**，CHIPS Act 資金支持，美國 ATP 占比 <2%（2026-06-25 收錄）⭐新增
+- [[sources/2026-06-15_ieeetc_diecare-die-level-ecc-hbm]] — Samsung + 成均館大學（IEEE TC）：**DieCARE——不需額外 die 的 HBM die 級容錯 ECC**；跨 die 分散 ECC 位元；呼應 775µm 高度天花板約束（2026-06-15）⭐新增
+- [[sources/2026-06-15_scirep_foplp-warpage-debonding-carrier]] — [論文] ⭐⭐⭐ **FOPLP 翹曲峰值出現在 debonding 階段，不在成型**；**承載板材料（鋼／玻璃／陶瓷）為本 wiki 此前未記錄的變數**；➜ 「瓶頸在被視為輔助步驟的那一步」跨域第二例（Sci. Rep., 成功大學×南臺科大, 2026-06-15）⭐新增
 - [[sources/2026-06-15_trendforce_skhynix-hbm4e-sample-timeline]] — TrendForce：**SK hynix HBM4E 樣品時程提前至 6-7 月**；Samsung 1c+4nm/14-16Gbps/4TB/s；NVIDIA Rubin Ultra 384GB/GPU（2026-06-15）⭐新增
 - [[sources/2026-06-15_trendforce_tsmc-cowos-gap-narrowing]] — TrendForce：**TSMC CoWoS 供需缺口 20%→10%**（2026 年底）；~200K wsm 總產能；CoPoS 認證 6 月/試產 2027 中/量產 2028-29（2026-06-15）⭐新增
 - [[sources/2026-06-15_digitimes_manz-foplp-ecd-equipment]] — DIGITIMES：**Manz Asia 首台 310mm FOPLP ECD 量產設備交付**（2026-06-15）⭐新增
+- [[sources/2026-06-14_digitaltrends_tsmc-copos-glass-temporary-carrier]] — Digital Trends / Ming-Chi Kuo：**CoPoS 玻璃 = 臨時製程載具（非玻璃核心基板）；啟動門檻 >9.5× reticle；NVIDIA Feynman 首發採用；2H28 量產**（2026-07-12 收錄；原文 2026-06-14）⭐新增
 - [[sources/2026-06-13_digitimes_linkotech-foplp-traction]] — DIGITIMES：**Linkotech FOPLP 設備獲 LEO 衛星客戶認證**，1H26 首批交付（2026-06-13）⭐新增
 - [[sources/2026-06-12_digitimes_samsung-packaging-gap]] — DIGITIMES：**Samsung 先進封裝能力仍落後 TSMC、Intel**，儘管 HBM/晶圓代工有進展（2026-06-12）⭐新增
+- [[sources/2026-06-11_skhynix_us20260165219a1-negative-charge-pad-bonding]] — **專利訊號** SK hynix：**連接墊表面施加負電荷後熱處理接合**；混合接合良率的第三軸（表面電化學狀態）；指向降低退火熱預算（2026-06-11）⭐新增
+- [[sources/2026-06-11_epo_amkor-cte-balance-beam-neutral-axis]] — [專利] Amkor **梁中性軸上下 CTE 對稱平衡**控制翹曲；⭐ **翹曲語彙自材料學轉為結構力學**（可計算的一階矩平衡）；同日另件以同一片金屬結構建散熱路徑——熱／機械耦合下沉到零件層級；Amkor 專利軌完成（2026-06-11）
 - [[sources/2026-06-11_trendforce_ase-spil-zhunan-plant]] — TrendForce：**SPIL 收購台灣光罩竹南廠 NT$28 億**（2026 年第 5 次收購，合計 >NT$227 億）；TSMC 測試設備外包至 ASE/SPIL/KYEC；ASE 5 月營收 NT$630.3 億 YoY +28.6%（2026-06-11）⭐新增
 - [[sources/2026-06-11_trendforce_applied-materials-singapore-500m]] — TrendForce：**Applied Materials $500M 新加坡園區開幕**；先進封裝設備 2026 年 +50%；WFE 成長 >80% 來自先進領域；AI 資料中心 $7T 4-5 年投資；8 季滾動預測（2026-06-11）⭐新增
 - [[sources/2026-06-11_trendforce_skhynix-3x-wafer-2034-375layer-nand]] — TrendForce：**SK Hynix 2034 年三倍晶圓產能路線圖**；龍仁叢集提前 10 年（2027→原 2045）；375 層 NAND 年底量產；字元線 W→Mo 材料革新；Kioxia 峰值估值 KRW 60 兆（2026-06-11）⭐新增
-- [[sources/2026-06-05_semieng_chip-week-review-141-intel18a-nikon]] — SemiEngineering #141：**Intel Xeon 6+ 18A 首款商業 CPU**；Nikon 1.5µm/65PPH 封裝微影；WSTS $1.5T（2026）/$1.9T（2027）；AI 機架 4,500 chips/95% BOM；Ayar Labs NVLink Fusion CPO 設計定案（2026-06-05）⭐新增
+- [[sources/2026-06-10_tomshardware_google-intel-emib-3m-tpu-skhynix]] — Tom's Hardware：**Google 下單 Intel 封裝 >300 萬顆 TPU（2028）；SK hynix 啟動 HBM-on-EMIB 驗證；EMIB vs CoWoS 成本首次量化（數百美元 vs $900–1000/片）；NVIDIA 評估 Feynman 採 Intel 封裝；EMIB-T 包 utilization 90% vs CoWoS 60%**（2026-06-10，補收錄）⭐新增
+- [[sources/2026-06-10_tomshardware_tsmc-fab-expansion-roadmap-n2-cowos-soic]] — Tom's Hardware（Anton Shilov）：**TSMC One Team + SMP；N2 CAGR 70%；CoWoS 80% CAGR；SoIC 90% CAGR；11 AP 廠區；AP7/AP8 產能量化**（發布 2026-06-10）⭐新增｜合併自重複收錄（2026-09-15 dedupe）
 - [[sources/2026-06-10_trendforce_samsung-gwangju-packaging-base]] — TrendForce：**三星光州封裝基地（35 年首座獨立封裝廠）**；TCB 231K/月 + HCB 19.5K/月（2026 年底）；TCB→HCB 2029 轉型；越南 $15 億測試廠（2026-06-10）⭐新增
 - [[sources/2026-06-10_trendforce_china-glass-substrate-boe-visionox]] — TrendForce：**BOE+Corning MOU（2026-05-20）**；WG Tech TGV 100:1 / 5µm；DR Laser TGV 設備出貨；Visionox 玻璃基板供應鏈（2026-06-10）⭐新增
-- [[sources/2026-06-05_trendforce_glass-substrate-2027-launch-roadmap]] — TrendForce：**SKC KRW 1.2T + Absolics KRW 589.6B 注資**；Samsung EM Broadcom 評估；LG Innotek Gumi+UTI；TSMC C.C. Wei 2-3 年 CoPoS 聲明（2026-06-05）⭐新增
-- [[sources/2026-06-05_trendforce_hbf-equipment-race-sandisk-hanmi]] — TrendForce：**HBF TCB 設備競賽**；Hanmi 2H26 首交付；SanDisk 2H26 樣品/2027 AI 整合；16 層 NAND；SK Hynix+SanDisk 標準化（2026-06-05）⭐新增
 - [[sources/2026-06-09_trendforce_intel-foundry-google-tpu-nvidia-18a]] — TrendForce：Google 下訂 3M+ Intel EMIB TPU（2028）；NVIDIA 18A MPW 測試流片（4晶粒 Feynman GPU 評估）；Tesla 14A 首外部客戶確認（2026-06-09）⭐新增
 - [[sources/2026-06-09_trendforce_skhynix-hanmi-tcbonder-hbm4]] — TrendForce：SK Hynix 44.2 億韓元 TC Bonder 訂單（漢美；~15 台）；M15X 2H26 啟動 40K→80K wsm；2030 目標 1M wsm（2026-06-09）⭐新增
 - [[sources/2026-06-09_trendforce_samsung-nvidia-hbm5-groq]] — TrendForce：Samsung HBM4 >11.7 Gbps 確認；HBM4E 4nm base die / 14 Gbps / 峰值 16 Gbps；Groq LP40 與 NVIDIA 討論代工；SOCAMM2 Vera CPU（2026-06-09）⭐新增
-- [[sources/2026-06-08_trendforce_skhynix-nvidia-vera-cpu-partnership]] — TrendForce：SK Hynix 多年期 NVIDIA 夥伴關係（Vera Rubin HBM4 + Vera CPU LPDDR5X 1.2 TB/s <30W + RTX Spark + Jetson Thor）；非獨家多源策略（2026-06-08）⭐新增
 - [[sources/2026-06-09_financialcontent_tsmc-130k-cowos-wafers]] — FinancialContent/TokenRing AI：分析估計台積電 2026 年底 CoWoS 月產能達 13 萬片晶圓（4 倍成長）；CoWoS-L／SoIC 策略；客戶配額估計 NVIDIA~60%／Broadcom~15%／AMD~11%（2026-06-09）⭐新增
 - [[sources/2026-06-09_astutegroup_hbm-market-share-2026-battle]] — Astute Group：2025 Q2 整體 HBM 市場份額 SK Hynix 62%／Micron 21%／Samsung 17%；2026 HBM4 量產轉折預測；釐清與 Vera Rubin 平台配額估計之口徑差異（2026-06-09）⭐新增
 - [[sources/2026-06-09_digitimes_tsmc-cowos-soic-capacity-symposium]] — DIGITIMES：台積電 2026 技術論壇官方證實全球興建 18 座新廠／先進封裝設施因應 AI 需求（partial/paywalled）（2026-06-09）⭐新增
 - [[sources/2026-06-09_digitimes_auo-innolux-cpo-foplp-panel]] — DIGITIMES 分析：台灣面板雙雄 AUO、Innolux 跨業進入 CPO／FOPLP 半導體封裝領域，新興角色首次收錄（partial/paywalled）（2026-06-09）⭐新增
 - [[sources/2026-06-09_digitimes_ase-panel-level-packaging-310mm]] — DIGITIMES：ASE 鎖定 2026 年全自動 310×310mm 面板級封裝產線；ASE 創紀錄 85 億美元資本支出、Powertech FOPLP 433 億新台幣投資（partial/paywalled）（2026-06-09）⭐新增
-- [[sources/2026-05-31_techtimes_samsung-hbm4e-ships-first]] — Tech Times：Samsung HBM4E 全球首發出貨（12層/14-16Gbps/3.6TB·s/48GB）；Q1 2026 半導體營益年增 756%；市值首破 2,000 兆韓元；多家券商上修目標價（2026-05-31）⭐新增
+- [[sources/2026-06-08_irtnanoelec_d2w-hybrid-bonding-1um-pitch]] — CEA-Leti / IRT Nanoelec：**D2W 混合接合 1 µm 間距（宣稱世界首例）**；良率確認 5→2 µm；**1 µm 瓶頸明確歸因於機台對準**，目標下一代 0.5 µm (3σ)；10 萬 links 電性測試（ECTC 2026, 2026-06-08）⭐新增
+- [[sources/2026-06-08_trendforce_skhynix-nvidia-vera-cpu-partnership]] — TrendForce：SK Hynix 多年期 NVIDIA 夥伴關係（Vera Rubin HBM4 + Vera CPU LPDDR5X 1.2 TB/s <30W + RTX Spark + Jetson Thor）；非獨家多源策略（2026-06-08）⭐新增
+- [[sources/2026-06-07_digitimes_jcet-3d-packaging-cpo-plant]] — DIGITIMES：**JCET 江陰新 3D 封裝廠**瞄準 AI 電源模組、CPO 需求（partial/paywalled）（2026-06-22 收錄）⭐新增
+- [[sources/2026-06-05_semieng_intel-ectc-2026-emib-t-cpo-glass]] — SemiEng/Intel Foundry：ECTC 2026 EMIB-T 25µm FLI、120mm封裝、64G UCIe；CPO V-groove 玻璃耦合器；TGV 零失效可靠性⭐新增｜合併自重複收錄（2026-09-15 dedupe）
+- [[sources/2026-06-05_sdxcentral_nvidia-hbm4-triple-supplier-vera-rubin]] — SDxCentral Computex 2026：**NVIDIA Jensen Huang 確認三廠 HBM4 全認證（SK Hynix ~70% / 三星 ~20-25% / Micron ~5-10%）；三星 2026-01 認證/2026-02 量產；HBM4 交期延至 2028**（2026-06-05 原文，2026-08-28 收錄）⭐新增
+- [[sources/2026-06-05_semieng_chip-week-review-141-intel18a-nikon]] — SemiEngineering #141：**Intel Xeon 6+ 18A 首款商業 CPU**；Nikon 1.5µm/65PPH 封裝微影；WSTS $1.5T（2026）/$1.9T（2027）；AI 機架 4,500 chips/95% BOM；Ayar Labs NVLink Fusion CPO 設計定案（2026-06-05）⭐新增
+- [[sources/2026-06-05_trendforce_glass-substrate-2027-launch-roadmap]] — TrendForce：**SKC KRW 1.2T + Absolics KRW 589.6B 注資**；Samsung EM Broadcom 評估；LG Innotek Gumi+UTI；TSMC C.C. Wei 2-3 年 CoPoS 聲明（2026-06-05）⭐新增
+- [[sources/2026-06-05_trendforce_hbf-equipment-race-sandisk-hanmi]] — TrendForce：**HBF TCB 設備競賽**；Hanmi 2H26 首交付；SanDisk 2H26 樣品/2027 AI 整合；16 層 NAND；SK Hynix+SanDisk 標準化（2026-06-05）⭐新增
 - [[sources/2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang]] — Tech Times：黃仁勳證實三大廠 HBM4 同步量產，Vera Rubin Q3 出貨；2048-bit/32 channel 規格躍進；16-high 堆疊 30µm/720µm 門檻；供應比重估計（2026-06-05）⭐新增
-- [[sources/2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie]] — TrendForce：SK 集團會長與台積電董事長兩年來首度會面；HBM4 base die 委外台積電 12nm；HBM4E 評估台積電 3nm；CoWoS 產能重申（2026-06-04）⭐新增
-- [[sources/2026-05-19_stocktitan_amkor-arizona-peoria-land-expansion]] — Amkor/Stock Titan：亞利桑那 Peoria 園區新增 67 英畝土地；目標美國首座高量產先進封裝 OSAT 設施（2026-05-19）⭐新增
 - [[sources/2026-06-05_trendforce_hbm5-thermal-three-makers]] — TrendForce：Samsung HPB + SK Hynix iHBM + Micron TSV trench cooling；三廠 HBM5 熱管理技術路線全面對比；D2D PHY 為共同熱源識別點（2026-06-05）⭐新增
-- [[sources/2026-05-xx_semiengineering_hybrid-bonding-manufacturability]] — SemiEngineering：混合接合量產化深度分析；D2W 對準/吞吐量瓶頸（Intel）；AMAT 300°C 5-min 退火 100× 吞吐；EVG 矽載體可重複使用；Fluidic Self-Alignment（Intel+CEA-Leti）⭐新增
+- [[sources/2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie]] — TrendForce：SK 集團會長與台積電董事長兩年來首度會面；HBM4 base die 委外台積電 12nm；HBM4E 評估台積電 3nm；CoWoS 產能重申（2026-06-04）⭐新增
+- [[sources/2026-06-03_3dincites_intel-foundry-emib-cpo-glass]] — Intel Foundry @ 3DInCites：**ECTC 2026 EMIB-T 完整規格（25µm FLI/120×120mm/>9×/12Gbps/64Gbps UCIe）；V-groove 硬式玻璃耦合器取代 FAU；銅填充 TGV 零熱循環失效；Intel+SPIL 3D SRAM chiplet**（2026-08-04 收錄；原文 2026-06-03）⭐新增
 - [[sources/2026-06-03_electronics360_gf-sivers-silicon-photonics-cpo-scale]] — Electronics360：GlobalFoundries + Sivers Semiconductors 雷射陣列整合 SCALE CPO 平台；GF 完整矽光子 CPO 堆疊（IC+封裝+光源）（2026-06-03）⭐新增
 - [[sources/2026-06-03_electronics360_nvidia-tsmc-ai-fab-computex2026]] — Electronics360：NVIDIA + TSMC AI 導入晶圓廠全流程；cuLitho 20-50%、cuEST 50×、FabTwin；COMPUTEX 2026 宣布（2026-06-03）⭐新增
-- [[sources/2026-05-28_semiconductor-digest_imec-evg-200nm-hybrid-bonding-ectc2026]] — Semiconductor Digest：imec + EV Group 200nm W2W 混合接合世界紀錄；<40nm overlay 全晶圓 100% die；ECTC 2026 Session 26（2026-05-28）⭐新增
 - [[sources/2026-06-03_digitimes_naura-plp-descum-tool]] — Digitimes：北方華創（Naura）首批 600mm×600mm PLP 去膠渣設備出貨；中國前端設備龍頭進入面板封裝設備市場（2026-06-03）⭐新增
+- [[sources/2026-06-02_intel_ectc2026-emib-t-cpo-glass]] — Intel Foundry 官方（ECTC 2026）：**EMIB-T 封裝 up to 120×120 mm、首層 bump pitch 25 µm、HBM4E >12 Gb/s、UCIe 64 Gb/s**；CPO 可拆卸邊緣連接器 + V-groove 玻璃耦合器；**銅填充 TGV 熱循環無失效**；20 篇論文（含 SPIL、NIST、EVG）（2026-06-02）⭐新增
 - [[sources/2026-06-02_trendforce_samsung-hbm5-computex2026]] — TrendForce：Samsung COMPUTEX 2026 首次展示 HBM5 模型；2nm base die；12/16/20 層；量產 ~2028；HPB 熱管理驗證（2026-06-02）⭐新增
 - [[sources/2026-06-02_trendforce_sk-chair-computex2026-memory-shortage]] — TrendForce：SK 會長首次 COMPUTEX——記憶體短缺至 2030；5 年產能翻倍；HBM4（1b+TSMC12nm）/ HBM4E（1c+TSMC3nm）製程確認；Jensen Huang 展場互動（2026-06-02）⭐新增
+- [[sources/2026-06-01_ninescrolls_post-cmp-clean-yield-lever]] — [待證] ⭐⭐ **「CMP 後清洗是繼 CMP 之後最大的單一良率槓桿」——限制鏈第四環候選**；**1 µm 顆粒 → 數百 µm 空洞（10²–10³ 倍）**；介電 RMS <0.5 nm；銅凹陷窗口僅約 2 nm 寬；氧化物呈對數成長 ➜ 可操作變數是 **queue time**（NineScrolls, 2026-06-01/08-15）⭐新增
 - [[sources/2026-06-01_trendforce_nvidia-vera-rubin-tsmc-20pct-revenue]] — TrendForce：NVIDIA Vera Rubin 量產啟動；TSMC 最大客戶 >20% 收入份額；首批出貨 2026 年 7 月；機架 $7.8M（2026-06-01）⭐新增
 - [[sources/2026-06-01_trendforce_intel-3dgs-india-glass-substrate]] — TrendForce：Intel + 3DGS 印度奧里薩邦 $33 億玻璃基板廠；70K 片/年；3D HI 模組 13K 個；5–6 年建設（2026-06-01）⭐新增
 - [[sources/2026-06-01_trendforce_computex2026-cpo-mediatek-largan]] — TrendForce：COMPUTEX 2026 CPO 聚焦；MediaTek 400Gbps CPO；Largan FAU 玻璃元件首秀；Wiwynn+Ayar Labs（2026-06-01）⭐新增
+- [[sources/2026-05-31_techtimes_samsung-hbm4e-ships-first]] — Tech Times：Samsung HBM4E 全球首發出貨（12層/14-16Gbps/3.6TB·s/48GB）；Q1 2026 半導體營益年增 756%；市值首破 2,000 兆韓元；多家券商上修目標價（2026-05-31）⭐新增
 - [[sources/2026-05-29_3dincites_rapidus-2nm-advanced-packaging-ai-foundry]] — 3D InCites：Rapidus CTO Rozalia Beica——AI Foundry 哲學；2nm+封裝共址；600×600mm 玻璃基板；Innovative Integrated Manufacturing（2026-05-29）⭐新增
 - [[sources/2026-05-29_trendforce_samsung-hbm4e-industry-first-samples]] — TrendForce：Samsung 業界首發 HBM4E 樣品；14 Gbps / 3.6 TB/s / 48 GB / +20% vs HBM4；SK Hynix 時程提前；Micron 2027（2026-05-29）⭐新增
 - [[sources/2026-05-29_trendforce_mediatek-ceo-tsmc-emib-intel]] — TrendForce：MediaTek CEO 重申 TSMC 長期夥伴；Google v8e 推論 TPU→Intel EMIB 確認；Samsung Jay Lee 訪台（2026-05-29）⭐新增
+- [[sources/2026-05-28_imec_w2w-hybrid-bonding-200nm-pitch]] — imec × EV Group：**W2W 混合接合 200 nm pitch；post-bond overlay <40 nm 涵蓋 300 mm 晶圓 100% die**；六角 pad 排列、Cu 密度 25%、SiCN、EVG GEMINI FB（ECTC 2026, 2026-05-28）⭐新增
+- [[sources/2026-05-28_anysilicon_ase-310mm-panel-focos-bridge]] — AnySilicon：**ASE 310×310 mm 面板線（可用面積 96,100 mm²）；FOCoS L/S 2/2 µm、FOCoS-Bridge L/S 8/8 µm**；⚠ 無時程／產能／客戶／良率（2026-05-28）⭐新增
+- [[sources/2026-05-28_epo_sandisk-d2w-bonded-memory-offset-pads]] — [專利] SanDisk **D2W 貼合：金屬墊與 bit line 外拉至 die 重疊區之外**，貼合後仍可探針存取；⭐ **測試左移第三個獨立實例（版圖層，首次來自記憶體廠）**；⭐ 同時放寬 D2W 對位裕度——版圖承擔機台精度負擔（2026-05-28）
+- [[sources/2026-05-28_semiconductor-digest_imec-evg-200nm-hybrid-bonding-ectc2026]] — Semiconductor Digest：imec + EV Group 200nm W2W 混合接合世界紀錄；<40nm overlay 全晶圓 100% die；ECTC 2026 Session 26（2026-05-28）⭐新增
 - [[sources/2026-05-28_reuters_tsmc-kevin-zhang-energy-efficiency]] — Reuters：TSMC Kevin Zhang 阿姆斯特丹——能源效率取代算力成首要限制；先進封裝/CPO 核心路徑；N2→A14 能耗 -30%（2026-05-28）⭐新增
-- [[sources/2026-05-26_semiconductor-digest_ase-310mm-plp-ectc2026]] — Semiconductor Digest：ASE 業界首條自動化 310mm PLP 產線發表（ECTC 2026）；FOCoS 2/2µm；FOCoS-Bridge 8/8µm；2027 H1 量產（2026-05-26）⭐新增
 - [[sources/2026-05-28_trendforce_intel-emib-silicon-capacitors-google-v8e]] — TrendForce：Intel EMIB 2027 矽電容整合（Google v8e 首採）；Samsung EM ₩1.557 兆合約；Murata 3× 產能擴張（2026-05-28）⭐新增
+- [[sources/2026-05-27_atlaspcb_ectc2026-substrate-market-fujifilm-pbo]] — AtlasPCB：ECTC 2026 約 450 篇論文；**Fujifilm 無 PFAS PBO（Dk<3.1，免產線改動）**；基板市場 $14B(2024)→$22B(2027)（2026-05-27）⭐新增
 - [[sources/2026-05-27_trendforce_tsmc-3nm-price-hike-cowos-cpo]] — TrendForce：TSMC 3nm ASP 2H26 最高漲 15%；Fab 18 Q2 175K wsm；Jensen Huang+C.C. Wei 晚餐；COUPE + Spectrum-X 連結（2026-05-27）⭐新增
 - [[sources/2026-05-27_nvidia_gtc-taipei-computex2026-vera-rubin-nvl72]] — NVIDIA Blog：GTC Taipei COMPUTEX 2026 Vera Rubin NVL72 完整架構；Spectrum-X CPO 量產出貨；Constellation 園區揭幕；2H26 驚喜新產品預告（2026-05-27）⭐新增
-- [[sources/2026-05-21_fujifilm_ectc2026-sn-damascene-pfas-free-pbo]] — Fujifilm：ECTC 2026 Sn 大馬士革微凸塊替代方案；1.0µm L/S Cu 大馬士革互連（imec）；PFAS-free PBO 2026 商業化（2026-05-21）⭐新增
-- [[sources/2026-05-24_techtimes_nvidia-computex2026-cowos]] — TechTimes：NVIDIA COMPUTEX 2026 Jensen Huang 訪台積電；Vera Rubin 6-chip；CoWoS >50% NVIDIA 鎖定；中國市場 0%；Q1 FY2027 $81.62B（2026-05-24）⭐新增
-- [[sources/2026-05-21_semiecosystem_ectc2026-cpo-hybridbonding-plp]] — Semiecosystem：ECTC 2026 CPO/混合接合/面板封裝論文預覽；AMAT 450nm 缺陷機制；GF+Corning CPO；Ushio 510mm 玻璃（2026-05-21）⭐新增
+- [[sources/2026-05-26_jcet_cn122094515a-hybrid-glass-silicon-interposer]] — [專利] JCET 玻璃+矽混合中介層（混合接合貼合）；以便宜玻璃承載昂貴矽（CN122094515A, 2026-05-26）⭐新增
+- [[sources/2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging]] — Advanced Packaging News：**ECTC 2026 技術亮點**——混合接合 450nm/98%良率、CPO 專題場次、面板級 CMP/曝光技術（2026-06-25 收錄）⭐新增
+- [[sources/2026-05-26_semiconductor-digest_ase-310mm-plp-ectc2026]] — Semiconductor Digest：ASE 業界首條自動化 310mm PLP 產線發表（ECTC 2026）；FOCoS 2/2µm；FOCoS-Bridge 8/8µm；2027 H1 量產（2026-05-26）⭐新增
 - [[sources/2026-05-26_trendforce_intel-rio-rancho-glass-substrate]] — Intel Rio Rancho 全球首座玻璃基板 HVM 候選廠；矽光子代工開放；EMIB 現有客戶 AWS/Cisco；Apple/Google/Microsoft/NVIDIA/Tesla 洽談中（2026-05-26）⭐新增
 - [[sources/2026-05-26_trendforce_sk-hynix-ihbm-hbm5]] — SK Hynix iHBM 技術發表：D2D PHY ICE 冷卻元件嵌入；熱阻 -30%；WLP+MR-MUF 量產；目標 HBM5（2026-05-26）⭐新增
-- [[sources/2026-05-20_trendforce_intel-emib-substrate-prepayments]] — Intel CEO JP Morgan 確認 EMIB-T 基板預付款；台 4 家日 2 家供應商；Ibiden ¥500B 3 年計畫；EMIB-M 6→8–12×（2026-05-20）⭐新增
 - [[sources/2026-05-25_trendforce_hbm-gpu-separation-optical]] — GPU-HBM 分離架構討論；光學互連突破岸線限制；OSAT 監控中（2026-05-25）⭐新增
 - [[sources/2026-05-25_trendforce_amd-zen7-a14-pti-foplp]] — AMD Zen 7 (Grimlock) TSMC A14；PTI FOPLP 評估；面板型 EFB 業界首款驗證（2026-05-25）⭐新增
+- [[sources/2026-05-24_techtimes_nvidia-computex2026-cowos]] — TechTimes：NVIDIA COMPUTEX 2026 Jensen Huang 訪台積電；Vera Rubin 6-chip；CoWoS >50% NVIDIA 鎖定；中國市場 0%；Q1 FY2027 $81.62B（2026-05-24）⭐新增
 - [[sources/2026-05-22_trendforce_micron-hbm4e-2027-tsmc]] — Micron HBM4E 2027 TSMC 邏輯晶片確認；1-gamma DRAM；India 全訂滿（2026-05-22）⭐新增
-- [[sources/2026-05-19_trendforce_schmid-tsmc-plp-310mm]] — SCHMID：TSMC CoPoS 310×310mm 推進；三種面板尺寸標準化；Absolics 試產（2026-05-19）⭐新增
 - [[sources/2026-05-22_trendforce_psmc-intel-saimemory-hb3dm]] — PSMC+Intel+SAIMEMORY：ZAM/HB3DM 9層 Via-in-One 3D記憶體；5.3TB/s>2.5×HBM4；原型2027量產2029（2026-05-22）⭐新增
+- [[sources/2026-05-21_semieng_hi-roadmap-nature-paper]] — SemiEngineering（引述 Nature Reviews EE 2026-03）：**Intel 主導 HI 路線圖論文：AI 算力 3 個月翻倍；GaN 封裝內電源；HB 接合介面可靠性開放挑戰；IEEE HI Roadmap 2024 量化指標不足**（2026-08-04 收錄；原文 2026-05-21）⭐新增
+- [[sources/2026-05-21_fujifilm_ectc2026-sn-damascene-pfas-free-pbo]] — Fujifilm：ECTC 2026 Sn 大馬士革微凸塊替代方案；1.0µm L/S Cu 大馬士革互連（imec）；PFAS-free PBO 2026 商業化（2026-05-21）⭐新增
+- [[sources/2026-05-21_semiecosystem_ectc2026-cpo-hybridbonding-plp]] — Semiecosystem：ECTC 2026 CPO/混合接合/面板封裝論文預覽；AMAT 450nm 缺陷機制；GF+Corning CPO；Ushio 510mm 玻璃（2026-05-21）⭐新增
 - [[sources/2026-05-21_trendforce_amd-lisa-su-tsmc-10b-packaging]] — AMD Lisa Su訪TSMC；>US$10B台灣封裝投資；Venice TSMC 2nm量產；EFB+PTI面板型首款認證；COMPUTEX 2026（2026-05-21）⭐新增
-- [[sources/2026-05-15_trendforce_applied-materials-packaging-surge]] — Applied Materials >50%封裝設備成長2026；2QFY26 $7.91B；MATCH Act風險$710M衝擊（2026-05-15）⭐新增
+- [[sources/2026-05-20_trendforce_intel-emib-substrate-prepayments]] — Intel CEO JP Morgan 確認 EMIB-T 基板預付款；台 4 家日 2 家供應商；Ibiden ¥500B 3 年計畫；EMIB-M 6→8–12×（2026-05-20）⭐新增
 - [[sources/2026-05-20_semiconductor-digest_ectc2026-showcase-papers]] — ECTC 2026 技術展示：450nm Cu-Cu HB 98%良率（AMAT）；ASML D2W overlay <80nm；6.4Tbps CPO（AIST）；USHIO 510mm 玻璃18倍光罩無拼接（2026-05-20）⭐新增
-- [[sources/2026-04-19_semiwiki_apple-m5-cucu-hybrid-bonding]] — Apple M5 Cu-Cu混合接合確認出貨（2026-03）；Unimicron ICEP-HBS Japan確認⭐新增
-- [[sources/2026-05-08_trendforce_skc-absolics-glass-substrate-2026]] — SKC/Absolics：2026年底量產全球首例玻璃基板；AMD/AWS測試確認；非嵌入型新專案；Apple M5/M6推測（2026-05-08）⭐新增
-- [[sources/2026-04-15_trendforce_korea-intel-glass-substrate-standards]] — 玻璃基板標準戰：Intel 2030路線圖 vs Absolics搶先量產 vs BOE中國進入；Corning-Meta $6B協議（2026-04-15）⭐新增
-- [[sources/2026-04-30_trendforce_ulcvd-glass-substrate-cpo-laser]] — ULCVD：全南大學超短脈衝雷射誘導CVD突破玻璃TGV/RDL三維互連瓶頸；CPO應用場景（2026-04-30）⭐新增
-- [[sources/2026-03-05_uciexpress_chiplet-summit-2026]] — Chiplet Summit 2026：UCIe-S Intel+Cadence「Cameron Creek」首次跨廠商互操作示範；UCIe 3.0 Best in Show；Eliyan 等新生態成員（2026-03-05）⭐新增
-- [[sources/2025-10-06_onto_tgv-inspection-three-cds]] — [設備商一手] ⭐ **TGV 需同時量頂／腰／底三個 CD——「孔徑」不是一個數字**；「incomplete debris removal」列為標準缺陷類別，與 ARCH 的孔外接觸角零敏感度構成閉環；LIDE 改質區 <3 µm；玻璃核心基板 2030 年 **2.75 億美元**（最保守值）（Onto Innovation, 2025-10-06）⭐新增
-- [[sources/2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly]] — [文章] ⭐⭐ **混合接合專用 CMP 設備 AMAT 市占 100%**（整體 CMP 60%）；與「CMP 為第一限制」相乘 ➜ **整個產業 pitch 微縮速率由單一設備商決定**，並解釋 AMAT 持股 Besi 9% 的縱向布局；⚠ 單一來源待佐證（SemiconSam, 2025-09-18）⭐新增
-- [[sources/2025-09-03_uciexpress_ucie30-spec]] — UCIe Consortium：UCIe 3.0 官方規格——48/64 GT/s；Raw Mode；100mm sideband；L2 idle 功率閘控；完整向下相容（2025-09-03）⭐新增
-- [[sources/2025-08-12_semieng_metrology-fine-pitch-hybrid-bonding]] — [文章] ⭐⭐ **產業無混合接合檢測標準**：各廠自定疊對容差/平坦度/空洞門檻，**不同廠商的 pitch 數字不可直接比較**；翹曲是空間分布（邊緣 vs 中心 die 應力不同）；與「KGD 標準化定義」空缺合併追蹤（SemiEng, 2025-08-12；刻意收錄舊文）⭐新增
-- [[sources/2025-07-10_semieng_advanced-packaging-reshaping-inspection]] — SemiEng：**檢測三條物理天花板**——**特徵減半需 4× 像素**（像素平方律第一原理）、單 die 翹曲 **>100 µm** 超越景深、**混合接合空洞數奈米 vs 光學門檻 30 nm**；「能不能看到」取代「量得準不準」（2025-07-10，⚠ 舊文，作基礎背景）⭐新增
-- [[sources/2025-05-23_patent_tsmc-dual-material-cmp-slurry]] — [專利] ⭐⭐⭐ **TSMC 主張鈦–矽混合磨料一次研磨金屬與介電，與 Adeia「拆成兩段」方向相反 ➜ IP 授權商與晶圓廠兩種商業模式都在 CMP 下注**（CN120035162A, 2025-05-23，⚠ 超出 12 個月窗口）⭐新增
-- [[sources/2025-05-13_trendforce_top10-osat-2024]] — TrendForce：2024年全球OSAT前十大——ASE $18.54B（45%）；JCET +19.3%；HT-Tech +26%；前十大合計 $41.56B（2025-05-13）⭐新增
+- [[sources/2026-05-19_stocktitan_amkor-arizona-peoria-land-expansion]] — Amkor/Stock Titan：亞利桑那 Peoria 園區新增 67 英畝土地；目標美國首座高量產先進封裝 OSAT 設施（2026-05-19）⭐新增
+- [[sources/2026-05-19_trendforce_schmid-tsmc-plp-310mm]] — SCHMID：TSMC CoPoS 310×310mm 推進；三種面板尺寸標準化；Absolics 試產（2026-05-19）⭐新增
 - [[sources/2026-05-19_semiconductor-digest_ev-group-ectc2026-hybrid-bonding]] — EV Group ECTC 2026：450nm Cu-Cu W2W HB 98% 良率（+AMAT）；300nm HB；D2W+Intel；面板微影（2026-05-19）⭐新增
+- [[sources/2026-05-15_auo_cn122043677a-optical-engine-copackaged-optics]] — [專利] AUO CN122043677A：貫孔式光引擎（孔壁即反射元件）；⭐⭐ **面板廠切入 CPO 的首個結構性證據**；⭐ **玻璃/大面積基板加工能力是 FOPLP、玻璃基板、CPO 三條路線的共用底層**（fam 99727976, 2026-05-15）⭐新增
+- [[sources/2026-05-xx_semiengineering_hybrid-bonding-manufacturability]] — SemiEngineering：混合接合量產化深度分析；D2W 對準/吞吐量瓶頸（Intel）；AMAT 300°C 5-min 退火 100× 吞吐；EVG 矽載體可重複使用；Fluidic Self-Alignment（Intel+CEA-Leti）⭐新增
+- [[sources/2026-05-15_trendforce_applied-materials-packaging-surge]] — Applied Materials >50%封裝設備成長2026；2QFY26 $7.91B；MATCH Act風險$710M衝擊（2026-05-15）⭐新增
+- [[sources/2026-05-15_trendforce_tsmc-vanguard-stake-sale]] — TSMC 出售 VIS 持股 8.1%（~27.1%→19%）；聚焦 CoWoS/SoIC/2nm；VIS 矽中介層合作不變（2026-05-15）⭐新增
+- [[sources/2026-05-14_epo_intel-partial-liner-tgv-stress]] — [專利] Intel **TGV 部分襯層**（高度 < via 全高、自單面延伸）；⭐ **是物理宣稱而非成本優化——間接指出 TGV 應力集中於單側界面**；並列出 Intel 半年內攻擊同一問題的**五種以上互不相同解法**（2026-05-14）
+- [[sources/2026-05-14_semieng_flash-hbf-high-bandwidth-version]] — SemiEngineering / Bryon Moyer：**HBF 技術深度剖析——多陣列平行化讀取路徑重設計；HBF vs HBM 對比（容量 3Tb vs 192GB）；AI 推論記憶體層次（HBF 權重→HBM 激活值→SRAM）；Synopsys/Rambus PHY；UMC base die；Cynthia Hsu（SanDisk VP）**（2026-08-10 收錄；原文 2026-05-14）⭐新增
 - [[sources/2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow]] — TSMC Taiwan Tech Sym：AI 晶圓 11×；CoWoS >14× 2029（24 HBM）；SoWX 64 HBM；COUPE 4×（2026-05-14）⭐新增
 - [[sources/2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm]] — SK Hynix CEO 出席 MS CEO Summit；Maia 200 HBM3E；Microsoft CapEx $190B（2026-05-14）⭐新增
-- [[sources/2026-05-08_aseglobal_ase-wus-kaohsiung-focoes-hub]] — ASE+WUS 高雄楠梓 FOCoS/FCBGA AI 封裝基地；113K sqm；2029-09 完工；>2000 就業（2026-05-08）⭐新增
-- [[sources/2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor]] — Samsung US$4B 越南太原省封裝廠（首期 $2B）；Amkor Bac Ninh 累計 $1.6B 擴產（2026-04-10）⭐新增
-- [[sources/2026-05-15_trendforce_tsmc-vanguard-stake-sale]] — TSMC 出售 VIS 持股 8.1%（~27.1%→19%）；聚焦 CoWoS/SoIC/2nm；VIS 矽中介層合作不變（2026-05-15）⭐新增
 - [[sources/2026-05-13_digitimes_hanwha-foplp-spacex]] — Hanwha Semitech FO-PLP 設備供 SpaceX 網路晶片量產（2H26）；太空晶片首次確認為 FOPLP 需求場景（2026-05-13）⭐新增
+- [[sources/2026-05-12_asmpt_ectc2026-firebird-lithobolt]] — ASMPT：**FIREBIRD™ 系列 TCB（AOR 技術、2.0µm精度、>500套量產）；LITHOBOLT™ G2 D2W（>10,000 互連/mm²，Cu-Cu 無空洞）**（2026-07-03 收錄；原文 2026-05-12）⭐新增
 - [[sources/2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos]] — MediaTek 雙封裝策略確認：EMIB（AI ASIC）+ CoWoS-S（AI GPU）；Google TPU 8t/v8e 分層封裝；Douglas Yu 加入；EMIB-M 6×→8–12×（2026-05-12）⭐新增
 - [[sources/2026-05-12_semiwiki_imec-iclink-tsmc-3dfabric]] — imec IC-Link 加入 TSMC 3DFabric® Alliance；歐洲/北美首要 ASIC 整合夥伴；SoIC/CoWoS/InFO/SoW™（2026-05-12）⭐新增
 - [[sources/2026-05-12_focustaiwan_tsmc-capex-31b-arizona-20b]] — TSMC 董事會批准 US$31.28B 資本預算 + TSMC Arizona 注資最高 $20B；Q1 EPS NT$22.08 季度新高；股利 NT$7（2026-05-12）⭐新增
 - [[sources/2026-05-11_trendforce_sk-hynix-intel-emib-hbm]] — SK Hynix 測試 Intel EMIB 整合 HBM；CoWoS 替代方案評估；Marvell+MediaTek 新增 EMIB 評估（2026-05-11）⭐新增｜合併自重複收錄（2026-09-15 dedupe）
 - [[sources/2026-05-11_trendforce_intel-nvidia-foundry-emib-apple]] — Intel CEO 確認 NVIDIA 新產品合作；NVIDIA 評估 Feynman I/O die 採用 14A/18A+EMIB；Apple-Intel 代工初步協議（2026-05-11）⭐新增
+- [[sources/2026-05-10_atlaspcb_tsmc-copos-exclusivity-cowos-170k-2027]] — AtlasPCB：**CoWoS 2027 ~170K wpm（補上時間序列中間點；2026→27 僅 +25–30%）**；CoPoS 供應鏈保密控制／護城河定位（2026-05-10）⭐新增
+- [[sources/2026-05-08_trendforce_ajinomoto-abf-2032-plant]] — TrendForce：**Ajinomoto ABF >95% 全球市占；FY2026 電子材料利潤 ¥54.6B（+35%）、利潤率 >50%；第三廠岐阜 JPY12 億土地、2028 建設、2032 量產**（2026-07-10 收錄；原文 2026-05-08）⭐新增
+- [[sources/2026-05-08_trendforce_skc-absolics-glass-substrate-2026]] — SKC/Absolics：2026年底量產全球首例玻璃基板；AMD/AWS測試確認；非嵌入型新專案；Apple M5/M6推測（2026-05-08）⭐新增
+- [[sources/2026-05-08_aseglobal_ase-wus-kaohsiung-focoes-hub]] — ASE+WUS 高雄楠梓 FOCoS/FCBGA AI 封裝基地；113K sqm；2029-09 完工；>2000 就業（2026-05-08）⭐新增
 - [[sources/2026-05-07_trendforce_tsmc-us-expansion-250b-arizona]] — TSMC US 投資上看 $250B；亞利桑那首座先進封裝廠申請許可（2026-05-07）⭐新增
 - [[sources/2026-05-07_trendforce_globalfoundries-silicon-photonics-scale-cpo]] — GlobalFoundries SCALE CPO 平台（OCI MSA 原生合規）；矽光子 2028 年 $1B+（2026-05-07）⭐新增
 - [[sources/2026-05-07_techwireasia_malaysia-advanced-packaging-lam]] — TechWireAsia：馬來西亞先進封裝中端定位；Lam Research 設備商視角；HBM 短缺→傳統記憶體現貨化；面板封裝 R&D 市場就緒（2026-05-07）⭐新增
 - [[sources/2026-05-06_trendforce_vis-vsmc-silicon-interposer]] — VIS/VSMC 新加坡廠加入矽中介層生產，進入 CoWoS 供應鏈；2027 量產（2026-05-06）⭐新增
 - [[sources/2026-05-06_trendforce_google-tpu-cautious-adoption-nvidia]] — Google TPU 外銷遇冷；AI 雲端 GPU 99% 仍是 NVIDIA；CoWoS 需求集中度不變（2026-05-06）⭐新增
 - [[sources/2026-05-06_semiwiki_tsmc-arizona-ap1-packaging]] — TSMC Arizona AP1 先進封裝廠 2H26 動工確認（SoIC + CoW）；9 期建設；5-6 超計畫廠房（2026-05-08）⭐新增
+- [[sources/2026-05-05_trendforce_intel-emib-expansion-us-vietnam]] — TrendForce：**Intel EMIB 美國+越南雙軌擴產；台灣設備商 E&R/C Sun/AblePrint 2H26 交貨；SHTP $4.115B/46.6ha/3.8B units；Panther Lake+Wildcat Lake（18A）越南量產**（2026-08-04 收錄；原文 2026-05-05）⭐新增
 - [[sources/2026-05-05_trendforce-insights_glass-substrate-development]] — TrendForce Insights：Intel "No SeWaRe" 里程碑（EMIB + 玻璃核心基板）；CoPoS 玻璃中介層定位；Absolics/DNP/Rapidus/Samsung 路線圖（2026-05-05）⭐新增
 - [[sources/2026-05-05_trendforce_intel-emib-expansion-us-vietnam]] — Intel EMIB 全球擴產：俄勒岡+越南；台灣設備訂單 E&R/C Sun/AblePrint 2H26 交貨（2026-05-05）⭐新增
 - [[sources/2026-05-05_trendforce_ase-powertech-kyec-capex]] — TrendForce：ASE+Powertech+KYEC 三大 OSAT 合計 NT$370B CapEx（第三年歷史新高）；Powertech FOPLP 良率升至 95%；ASE CPO 量產確認（2026-05-05）⭐新增
@@ -554,16 +516,26 @@
 - [[sources/2026-05-04_trendforce_intel-emib-90pct-yield]] — Intel EMIB 90% 良率里程碑；Google TPU v8e 2H27 + Meta CPU 2H28 確認採用；EMIB-T 12× reticle 2028（2026-05-04）⭐新增
 - [[sources/2026-05-03_globenewswire_amat-acquires-nexx]] — Applied Materials 20M 收購 ASMPT NEXX 面板 ECD 設備（2026-05-03）⭐新增
 - [[sources/2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo]] — Samsung Foundry 矽光子 PDK 就緒；CPO Turnkey 2029 路線圖；CPO 35% 滲透率 2030（2026-05-01）⭐新增
+- [[sources/2026-04-30_seoultech_us20260123559a1-hydrocarbon-plasma-low-temp-bonding]] — [專利] 首爾科技大學 **碳氫系（CxHy）電漿前處理之低溫混合接合**；⭐ 表面活化分支的新化學（還原性而非氧化性）；⚠ **明示依賴「熱膨脹」成鍵，與 IBM/RPI 的 CuO 警告對同一機制給出相反評價**（US20260123559A1, 2026-04-30）⭐新增
+- [[sources/2026-04-30_ibm_us20260123509a1-hybrid-bonding-thermal-dissipation]] — [專利] IBM US20260123509A1：**接合區內分割鍵結介電區與導熱區，面積配比成設計變數**；⭐ 熱路徑與結構搶同一份面積：**10⁶ I/O/mm² 與 >3 W/mm² 是同一塊面積上的兩個需求**（fam 99550345, 2026-04-30）⭐新增
+- [[sources/2026-04-30_epo_absolics-glass-substrate-impurity-and-grain-symmetry]] — [專利訊號] ⭐⭐ Absolics 兩件：**溶出雜質 P ≤1,500 ppb／Zn ≤500 ppb 且 ICP-MS 方法寫入請求項**（玻璃基板第五個面向＝化學純度）；⭐⭐⭐ **上下 RDL 銅晶粒長寬比之比 C/D 0.85–0.99——翹曲控制下放到微結構層**（US20260123495A1 / US20260123487A1, 2026-04-30）⭐新增
+- [[sources/2026-04-30_trendforce_ulcvd-glass-substrate-cpo-laser]] — ULCVD：全南大學超短脈衝雷射誘導CVD突破玻璃TGV/RDL三維互連瓶頸；CPO應用場景（2026-04-30）⭐新增
 - [[sources/2026-04-30_trendforce-insights_glass-fiber-cloth-shortage]] — TrendForce Insights：T-glass/NER-glass 短缺；Nittobo 90% 市占漲價 +20–30%；NVIDIA Rubin 基板 8,000mm²；緩解不早於 2027-H2（2026-04-30）⭐新增
 - [[sources/2026-04-30_trendforce_ai-supply-chain-arms-race]] — TrendForce：AI 競爭演變供應鏈軍備競賽；CoWoS 持續短缺；3nm 瓶頸；2027 年緩解預測（2026-04-30）⭐新增
 - [[sources/2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation]] — SK Hynix 12H HBM 混合接合驗證完成；AMAT+Besi inline HB 系統首批量產設備採購（2026-04-29）⭐新增
 - [[sources/2026-04-29_trendforce_intel-foundry-apple-18ap-google]] — Intel Foundry：Apple M 系列評估 18A-P；Google EMIB；Tesla 14A 首位外部客戶（2026-04-29）⭐新增
 - [[sources/2026-04-29_semiwiki_cea-leti-ectc2026-hybrid-bonding]] — CEA-Leti ECTC 2026：D2W 混合接合 1µm 首次示範；超低溫 100°C 退火突破（2026-04-29）⭐新增
+- [[sources/2026-04-28_news_asml-w2w-bonder-d2w-only-4.5pct]] — ⭐⭐⭐ **混合接合市場 >US$6B，D2W 僅 US$275M（4.5%），W2W 約 95%**——本 wiki 敘事重心的結構性修正；機台 ₩40–50 億 vs High-NA EUV €3.5 億（~100×）；ASML 疑似開發 W2W 接合機（**弱訊號**）（2026-04-28）⭐本輪新增
+- [[sources/2026-04-28_cw_tsmc-copos-move-really-means]] — CommonWealth Magazine：**CoWoS/CoPoS/FOPLP 三層技術定位解析**；首批 12 家具名台灣 CoPoS 供應鏈廠商（Chroma ATE、Scientech、C Sun、GMM、APT、GPTC、Ta Liang、V5、Favite、Gudeng Precision、Li-Din、SemTek、Manz）（2026-06-26 收錄）⭐新增
 - [[sources/2026-04-28_trendforce_tsmc-cowos-asp-profit-driver]] — TSMC CoWoS ASP ~$10K/片 = 7nm 水準；先進封裝成關鍵獲利驅動器（2026-04-28）⭐新增
+- [[sources/2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap]] — Tom's Hardware：**TSMC North America Symposium 2026：CoWoS >14 reticle 路線圖；48× 計算電晶體；34× 記憶體頻寬；24 HBM5E stacks；2029 成本「數量級」上漲**（2026-04-27）⭐新增
+- [[sources/2026-04-27_semieng_semiconductor-materials-misbehave]] — SemiEngineering：**半導體材料異常行為——CTE 失配翹曲機制；STCO 成為 3D-IC 強制方法論；實驗室-量產落差擴大；AI/數位孿生用於多物理場封裝設計；製程視窗資格認證標準化**（2026-08-17 收錄；原文 2026-04-27）⭐新增
+- [[sources/2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap]] — Tom's Hardware / TSMC North America Symposium：**CoWoS 路線圖 2027→9.5×（120×150mm 基板）→ 2028→14×（20 compute chiplets + 20 HBM5）→ 2029→>14×（24 HBM5E）；48×計算成長 2024-2029**（2026-07-12 收錄；原文 2026-04-27）⭐新增
 - [[sources/2026-04-27_semieng_tsmc-tech-symposium-2026-numbers]] — SemiEngineering：TSMC Tech Symposium 2026 數字——A12/A13 2029、CoWoS >98%、SoW-X 64 HBM（2026-04-27）⭐新增
 - [[sources/2026-04-24_initial-survey]] — 先進封裝產業與學術趨勢初步調查（知識庫建立基礎來源，2026-04-24）
 - [[sources/2026-04-23_trendforce_tsmc-roadmap-a12-a13-no-high-na-euv]] — TSMC A12/A13 宣布 2029 無需 High-NA EUV；A16 延至 2027；ASML 衝擊（2026-04-23）⭐新增
 - [[sources/2026-04-23_trendforce_china-osat-sj-semiconductor-ipo]] — 中國 OSAT SJ Semiconductor STAR Market IPO RMB 50 億；中國 2.5D 封裝市佔 85%（2026-04-23）⭐新增
+- [[sources/2026-04-22_semieng_tsv-complexity-manufacturing-bottleneck]] — SemiEngineering / Laura Peters：**TSV 製造瓶頸深度報導——HBM TSV 2–5µm/30–60µm vs 中介層 TSV 5–20µm/80–120µm；8步驟製程流程（蝕刻→填銅→CMP→背研→reveal）；NanoTSV（<100nm）背面供電；Amkor Rick Reed 容差洞察；AI 需求造成 HBM+CoWoS 同步短缺**（2026-08-10 收錄；原文 2026-04-22）⭐新增
 - [[sources/2026-04-22_trendforce_sk-hynix-pt7-cheongju]] — SK Hynix P&T7 清州廠動工；KRW 19 兆；WLP 2028-02；150K sqm（2026-04-22）⭐新增
 - [[sources/2026-04-22_trendforce_sk-hynix-indiana-us-plant]] — SK Hynix 美國印第安納廠動工；$3.87B；HBM4E/HBM5；2H28 投產（2026-04-22）⭐新增
 - [[sources/2026-04-22_semiwiki_tsmc-symposium-2026]] — TSMC 2026 Tech Symposium：14-reticle CoWoS（2028）、COUPE CPO 量產、A14 SoIC（2026-04-22）⭐新增
@@ -571,35 +543,70 @@
 - [[sources/2026-04-21_3dincites_acm-wlp-plp-process-trends]] — ACM Research：WLP/PLP 製程趨勢；ECP/PECVD/濕製程；前端嚴格度向後端遷移（2026-04-21）⭐新增
 - [[sources/2026-04-20_trendforce_intel-foundry-14a-equipment]] — Intel Foundry 設備訂單 +50% YoY；14A High-NA EUV 年底吸引重大客戶（2026-04-20）⭐新增
 - [[sources/2026-04-20_trendforce_ase-samsung-amkor-capacity]] — OSAT 封裝產能競賽加速：ASE K28 廠、Samsung、Amkor Arizona 並進（2026-04-20）⭐新增
+- [[sources/2026-04-19_semiwiki_apple-m5-cucu-hybrid-bonding]] — Apple M5 Cu-Cu混合接合確認出貨（2026-03）；Unimicron ICEP-HBS Japan確認⭐新增
+- [[sources/2026-04-16_semieng_chiplet-standards-plug-n-play]] — SemiEng：Chiplet 標準四層盤點——**FCSA Rev1.0.0（2026-02 生效）**、**JEDEC JESD-030O**、**五項設計套件含 PTDK**、Universal Link Layer（PHY-agnostic）；⭐ **標準重心自互連移向組裝與材料**；PTDK 為 KGD 空缺的部分解（2026-04-16）
+- [[sources/2026-04-16_asmpt_us20260107808a1-decoupled-floating-bonding-stage]] — [專利] ASMPT US20260107808A1：粗動/細動**物理解耦**的浮動接合載台；⭐ **價值在反證**——設備側精度持續投入、量產 pitch 卻停滯，兩者並存即空缺核心；設備商純申請人檢索訊噪比僅 1.6%（fam 99436762, 2026-04-16）⭐新增
+- [[sources/2026-04-16_ontoinnovation_dragonfly-g5-qualified]] — Onto Innovation：**Dragonfly G5 取得 2.5D AI 封裝量產資格**；AI 封裝需求年成長 ~30%（2026-06-22 收錄）⭐新增
 - [[sources/2026-04-16_trendforce_tsmc-q1-q2-earnings]] — TSMC Q1 創紀錄（淨利 NT$572.5B）+ Q2 2026 展望 $40.2B；CapEx 確定高端 $52–56B（2026-04-16）⭐新增
 - [[sources/2026-04-16_trendforce_tsmc-cowos-emib-rivalry]] — TSMC CEO 回應 EMIB 競爭；CoWoS 2026 年底 115K–140K wsm；CoPoS 2026-02 設備安裝完成（2026-04-16）⭐新增
+- [[sources/2026-04-15_trendforce_korea-intel-glass-substrate-standards]] — 玻璃基板標準戰：Intel 2030路線圖 vs Absolics搶先量產 vs BOE中國進入；Corning-Meta $6B協議（2026-04-15）⭐新增
 - [[sources/2026-04-15_trendforce_hbm4-strategies-diverge]] — HBM4 策略分歧：Samsung <60% 良率 vs SK Hynix 減產 30%（2026-04-15）⭐新增
+- [[sources/2026-04-13_laserfocusworld_cpo-thermoelectric-cooling]] — Laser Focus World：CPO 熱約束是**溫度穩定度而非散熱量**——雷射／PIC 需 **< 0.5 °C**；⭐ **熱問題分裂為兩類：兩相冷卻解熱通量、TEC 解精密控溫**；玻璃中介層 RF 至 **40 GHz**；⚠ 供應商撰稿（2026-04-13）
 - [[sources/2026-04-13_trendforce_sandisk-hbf-pilot-line]] — TrendForce：SanDisk HBF 試驗線 2H26；SK Hynix+SanDisk 標準化聯盟；Samsung HBF 專利佈局（2026-04-13）⭐新增
 - [[sources/2026-04-13_trendforce_copos-pilot]] — TrendForce：TSMC CoPoS 試驗線 2026-06 完工；量產 2028–29（2026-04-13）⭐新增
+- [[sources/2026-04-10_semiconductor-digest_hanmi-2nd-gen-hybrid-bonder]] — [時程] ⭐⭐ **Hanmi 第二代混合接合機：2026 年底原型、2027 上半廠房（₩100B/Class 100）、~2029 量產採用**；➜ **TC bonder 的領先並未轉移到混合接合**（同公司相鄰技術落後三年）（Semiconductor Digest, 2026-04-10）⭐新增
+- [[sources/2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor]] — Samsung US$4B 越南太原省封裝廠（首期 $2B）；Amkor Bac Ninh 累計 $1.6B 擴產（2026-04-10）⭐新增
 - [[sources/2026-04-10_3dincites_intel-gan-chiplet]] — Intel Foundry：全球最薄 GaN Chiplet 19µm / 300mm / 單片 CMOS 整合（IEDM 2025，2026-04-10）⭐新增
+- [[sources/2026-04-07_intel_jp2026059728a-glass-core-edge-coating]] — [專利] Intel 玻璃核心基板邊緣塗層機械強度（JP2026059728A, 2026-04-07）
+- [[sources/2026-04-07_tomshardware_intel-joins-terafab]] — Tom's Hardware：**Intel 正式加入 TeraFab（SpaceX/xAI/Tesla），明確點名「封裝」為核心貢獻（EMIB/Foveros）；目標 1 TW/year 算力；Lip-Bu Tan 公開背書**（2026-07-04 補收錄；原文 2026-04-07）⭐新增
 - [[sources/2026-04-07_trendforce_intel-emib-google-amazon]] — TrendForce：Intel EMIB 吸引 Google/Amazon；40% 毛利率目標；客戶預付；2H26 承諾時間表（2026-04-07）⭐新增
+- [[sources/2026-04-02_adeia_us20260096463a1-buildup-organic-dielectric-bonding]] — [專利] **Adeia 有機介電層貼金屬側壁 + 無機層在外**的堆疊式接合層；⭐⭐ **結清「PHB 第二來源」空缺並超出門檻——一季內 Toray／Adeia／JCET 三個互不重疊的申請人，正式升格為第五條低溫路線**；2026 年內三個 family-id 圍籬式布局（US20260096463A1, 2026-04-02）⭐新增
 - [[sources/2026-04-01_trendforce_nvidia-rubin-ultra-dual-die]] — NVIDIA Rubin Ultra 雙裸片因封裝限制確認；NVL576 規格（100 PFLOPS、1 TB HBM4E）（2026-04-01）⭐新增
 - [[sources/2026-04-01_trendforce_jedec-hbm-height-relax-900um]] — JEDEC 擬鬆綁 HBM4E 高度至 ~900µm；可能延緩混合接合採用（2026-04-01）⭐新增
 - [[sources/2026-04-01_semiengineering_chiplets-2026]] — Chiplets 2026：產業現況調查；互連生態、良率、商業模型（2026-04-01）⭐新增
+- [[sources/2026-03-29_damnang_hybrid-bonding-cmp-gating-factor]] — [文章] ⭐⭐ **「限制項在 CMP 而非 bonder」的第二個獨立來源，且早於 NineScrolls 近半年**；⭐⭐ **對準容差依應用分段：CIS ~200 nm／邏輯・HPC <100 nm**——列管的「imec <50 nm vs 量產 100 nm」矛盾可降級（Damnang Research, 2026-03-29）⭐新增
+- [[sources/2026-03-27_jsamd_cu-cu-bonding-review-dishing-3-5nm]] — [論文] ⭐⭐⭐ **本 wiki 最完整單篇量化來源：Cu dishing 控制 3–5 nm、Ra<0.1/0.2 nm、SiCN <2 Å、剪切強度全表、接合能 SiCN/SiCO 2.32 vs SiON 1.5 J/m²**；⭐⭐⭐ **dishing 雙向失效（不足→空洞／過度→間隙不閉合）**；(100) 取向 +25%（J. Sci. Adv. Mater. Devices 11(2) 101155, 2026-03-27）⭐新增
 - [[sources/2026-03-27_3dincites_copper-grain-hybrid-bonding]] — MacDermid Alpha：銅晶粒結構工程化提升混合接合良率（2026-03-27）⭐新增
+- [[sources/2026-03-26_tsmc_us20260090444a1-lsi-via-barrier]] — [專利] TSMC LSI top-via 阻障結構；揭示膠帶殘留物→金屬遷移/wire growth 失效模式（US20260090444A1, 2026-03-26）⭐新增
 - [[sources/2026-03-23_trendforce_musk-terafab-tsmc-packaging]] — Tesla Terafab 構想：先進封裝是最佳切入點；TSMC 短期威脅有限（2026-03-23）⭐新增
 - [[sources/2026-03-23_trendforce_asml-hybrid-bonding-equipment]] — ASML 評估混合接合設備市場；Prodrive/VDL-ETG 合作；XT:260 已出貨（2026-03-23）⭐新增
 - [[sources/2026-03-20_semiconductor-digest_ectc2026-keynote]] — ECTC 2026 大會預覽：ASE CEO Tien Wu 主題演講；450+ 論文；Sony 2µm CoW 三層堆疊；量子+光子+AI 特別議程（2026-03-20）⭐新增
 - [[sources/2026-03-19_semieng_advanced-packaging-limits]] — SemiEngineering：先進封裝物理極限——翹曲、玻璃脆性、混合接合良率轉換點（2026-03-19）⭐新增
 - [[sources/2026-03-18_trendforce_nvidia-rubin-feynman-soic]] — NVIDIA Rubin Ultra/Feynman 拉動 TSMC SoIC；Besi/AMAT/TEL 受益；混合接合 CAGR 21%（2026-03-18）⭐新增
 - [[sources/2026-03-18_trendforce_intel-emib-malaysia]] — TrendForce：Intel 馬來西亞廠 2026 投產；EMIB-T HBM4 路線圖（2026-03-18）⭐新增
+- [[sources/2026-03-17_coherent_cpo-ofc2026-demo]] — Coherent：**OFC 2026 多架構 CPO 展示**——6.4T 矽光子、VCSEL 多模、InP 400G/lane 調制器（2026-06-22 收錄）⭐新增
 - [[sources/2026-03-17_trendforce_gtc2026-key-takeaways]] — GTC 2026 要點：Groq3 Samsung Foundry；Micron HBM4 HVM Q1'26；Feynman TSMC A16 + 3D 堆疊（2026-03-17）⭐新增
+- [[sources/2026-03-16_patent_evgroup-laser-soluble-release-layer]] — [專利] EVG 雷射可溶層解接合（TW202611995A, family 57223662）：**載板必須對輻射透明** ➜ **載板材料被解接合製程反向決定，而載板材料又決定翹曲**；輪替名單應按題材而非按公司維護（2026-03-16）⭐本輪新增
+- [[sources/2026-03-13_kaneka_jp2026047137a-glass-core-polyimide-quantified]] — [專利] **Kaneka 玻璃核心基板用聚醯亞胺絕緣層**：**醯亞胺基濃度 15–38%／內應力 ≤20 MPa／Ra ≤10 nm**（本輪唯一含量化限定的專利）；⭐⭐ **玻璃界面賭局的第三條路「降低驅動力」**；上下界並存＝參數非單調（JP2026047137A, 2026-03-13）⭐新增
+- [[sources/2026-03-13_patent_zhuhai-tiancheng-hybrid-bonding-avoidance]] — [專利] ⭐⭐⭐ **首見把「規避混合接合設備與超高潔淨環境」寫成明示技術效果的專利**；模封開孔 AR ≤10 + TSV 熱壓鍵合；目標晶片 InP（CPO 指向）➜ 潔淨度／設備門檻是成本項，自推論升格為有人以排他權下注（CN121666157A / 珠海天成, 2026-03-13）⭐新增
 - [[sources/2026-03-13_trendforce_besi-takeover-interest-lam-amat]] — Besi 傳遭 Lam Research、Applied Materials 收購接觸（Reuters）（2026-03-13）⭐新增
+- [[sources/2026-03-11_ieee-eps_ectc2025-hybrid-bonding-special-session]] — [報告] ⭐⭐ **一手機構來源**（IEEE EPS 通訊）：**Samsung die 翹曲允收 <100 nm**（與機台對準同量級）、imec 對準需求 <50 nm、KLA 量測需 1 nm、**CSAM 僅 ~10 µm 解析度（10,000× 落差）**；PHB <250 °C/0.5 MPa；散熱 >3 W/mm²（2026-03-11）⭐新增
+- [[sources/2026-03-11_epo_adeia-cmp-for-hybrid-bonding-patent]] — [專利訊號] ⭐⭐⭐ **Adeia 把 CMP 本身寫成專利標題**「Chemical Mechanical Polishing for Hybrid Bonding」——「CMP 是限制層」的第三個獨立支持且形式最強；機制為**以阻障層作研磨停止層，把奈米級高度控制轉為薄膜厚度控制**；⚠ 修正 2026-09-20 對 Adeia 的單向讀法（EP4709132A2, 2026-03-11）⭐新增
+- [[sources/2026-03-05_paper_lujan-plp-cost-fulltext-half-point-yield]] — ⭐⭐⭐ **[FULLTEXT] Lujan 面板成本分析結清最高優先空缺：310×310 mm 有淨節省，但 0.5 個百分點的良率差距即完全抹平**；排除 GPU/HBM 成本時容忍度 ~60%（**相差逾兩個數量級**）；整片一次做完的步驟每封裝 −~40%（IMAPS 22nd DPC 2026）⭐本輪新增
+- [[sources/2026-03-05_paper_amat-tgv-liner-fulltext-stress-adhesion]] — ⭐⭐⭐ **[FULLTEXT] AMAT TGV：玻璃開裂分「受熱起始（三點壓應力）／冷卻擴展（軸對稱拉伸→環向裂紋）」兩階段**；**CVD liner 降應力至多 60%、種子層附著至多 2×**；liner 的模數×CTE 為二維受約束（IMAPS 22nd DPC 2026）⭐本輪新增
+- [[sources/2026-03-05_paper_ase-deca-adaptive-patterning-tolerance]] — ⭐⭐⭐ ASE×Deca：埋入式橋接晶粒擺放公差 **±3 µm → ±10–40 µm（3.3–13.3×）**，靠 Adaptive Patterning 讓**微影遷就晶粒**；每顆獨立補償故良率不隨橋接數惡化（IMAPS 22nd DPC 2026）⭐本輪新增
+- [[sources/2026-03-05_paper_fraunhofer-izm-glass-core-roadmap]] — Fraunhofer IZM 玻璃核心基板逐年路線：**TGV ≤50 → ≤30 µm**、RDL **SAP 5 → 2 µm L/S**（研究中 damascene 1 µm）；**同厚度下玻璃孔徑是有機的 1/3（50 vs 150 µm）**；PVD 受 AR 限制，改用底部向上電鍍（IMAPS 22nd DPC 2026）⭐本輪新增
+- [[sources/2026-03-05_paper_aoi-electronics-panel-reliability-ev-inverter]] — AOI Electronics（⚠ **非 Tokyo Electron，2026-09-22 申請人誤記之更正**）面板級封裝可靠度：shadow moiré 測得**回流溫度下翹曲變化很小**；面板線同時服務 AI 與**車用 EV 逆變器**（IMAPS 22nd DPC 2026）⭐本輪新增
+- [[sources/2026-03-05_uciexpress_chiplet-summit-2026]] — Chiplet Summit 2026：UCIe-S Intel+Cadence「Cameron Creek」首次跨廠商互操作示範；UCIe 3.0 Best in Show；Eliyan 等新生態成員（2026-03-05）⭐新增
 - [[sources/2026-03-05_trendforce_intel-emib-billions]] — Intel EMIB 億元商機：2H26 潛在數十億美元營收；Google TPU v9 評估（2026-03-05）⭐新增
+- [[sources/2026-03-03_intel_cn121605766a-3d-memory-sub1um-hb]] — [專利] Intel 3D 記憶體 sub-1µm 混合接合（CN121605766A, 2026-03-03）
 - [[sources/2026-03-03_trendforce_skc-absolics-glass-substrate-1t]] — SKC/Absolics ₩1T 增資；佐治亞廠全球首座專用廠；雙軌策略；Lens Technology 進入 TGV；Google/Microsoft 設計驗證（2026-03-03）⭐新增
 - [[sources/2026-03-03_trendforce_sk-hynix-hbm4-packaging-tight-gaps]] — SK Hynix HBM4 封裝創新：DRAM 增厚+縮小層間距+新型 MUF；MR-MUF 框架內中間優化路徑（2026-03-03）⭐新增
 - [[sources/2026-03-03_trendforce_intel-clearwater-forest]] — Intel Clearwater Forest 18A + Foveros Direct 3D（<10µm）+ EMIB 3.5D（MWC 2026）⭐新增
+- [[sources/2026-03-02_semieng_making-hybrid-bonding-better]] — SemiEngineering：**Making Hybrid Bonding Better — AMAT 300°C/5min 100× 吞吐；NT Cu 200°C 退火；SiCN PVD <250°C；plasma dicing 粒子控制；Yole 21% CAGR（HB 設備，2025–2030）；Synopsys 3D-aware EDA**（2026-07-06 收錄；原文 2026-03-02）⭐新增｜合併自重複收錄（2026-09-15 dedupe）
 - [[sources/2026-03-01_semianalysis_cpus-back-datacenter-2026]] — SemiAnalysis：CPUs 重回資料中心主角；AMD Venice EMIB 等效；MI450 aLSI 測試（2026-03-01）⭐新增
 - [[sources/2026-03-01_ieee-eps_ectc2025-hybrid-bonding]] — IEEE EPS：ECTC 2025 混合接合特別議程摘要（2026-03-01）⭐新增
 - [[sources/2026-03-01_3dincites_besi-packaging-power-shift]] — Besi D2W 混合接合設備；Kinex 平台 HVM 就緒；Applied Materials 9% 持股（2026-03-01）⭐新增
 - [[sources/2026-02-26_trendforce_hbm-cleanroom-race]] — 記憶體三巨頭 HBM 無塵室競賽；三廠商合計 +80–100% 產能；Samsung P3 廠（2026-02-26）⭐新增
+- [[sources/2026-02-25_news_hanwha-semitech-shb2-nano]] — ⭐⭐⭐ Hanwha Semitech **SHB2 Nano 對準 0.1 µm、2026 H1 客戶測試**（第一代 2022-01）——**比 Hanmi 早約一年，結清「HBM4E 世代機台由誰供應」空缺**；TCB SFM5 Expert 2025 年 >₩900 億（2026-02-25）⭐本輪新增
 - [[sources/2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab]] — SK Hynix 自研 HBM4 系統級測試設備；深化 TSMC CoWoS 合作（2026-02-25）⭐新增
+- [[sources/2026-02-20_news_semes-w2w-hanwha-prodrive]] — **Semes（Samsung 子公司）開發 W2W 混合接合機**（W2W 第三個玩家）；Hanwha Semitech 與 **Prodrive（ASML 夥伴）結盟**；Samsung 400 層 V-NAND 2026、HBM4 產能 +70%（2026-02-20）⭐本輪新增
+- [[sources/2026-02-18_siliconbox_ep4697377a1-fanout-panel-metal-sealing-ring]] — [專利] Silicon Box（發明人為創辦人 Sehat Sutardja 本人）：**RDL 內建金屬密封環以延長電鍍導電路徑**、均勻化大面板鍍層；指向面板瓶頸為**對位與均勻度**而非微影解析度（EP4697377A1, 2026-02-18）⭐新增
 - [[sources/2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi]] — SemiAnalysis ISSCC 2026：HBM4 微凸塊、TSMC Active LSI、UCIe-S、OCI MSA、AMD MI355X（2026-02-15）⭐新增
+- [[sources/2026-02-10_epo_shanghai-univ-citric-acid-cu-reduction-sog]] — [專利訊號] ⭐⭐⭐ 上海大學：**Ar/H₂ 電漿活化不足以還原 Cu 氧化物**，以**檸檬酸同時還原 Cu 並親水化 SOG**——一道製程滿足兩個方向相反的表面需求；➜ 「Cu 氧化相門檻」空缺的提問方式須修正（CN121511008A, 2026-02-10）⭐新增
+- [[sources/2026-02-06_patent_kla-multi-pass-optical-measurement]] — [專利] **本 wiki 首件 KLA 專利**（CN121488155A, family 94172525）：量測光束多次入射晶圓——**硬體極限已達時，以取樣次數換訊噪比**；呼應 TSV 深度量測「重複性 2.18 µm ≈ 陣列分散 2.15 µm」（2026-02-06）⭐本輪新增
+- [[sources/2026-02-05_siemens_cpo-five-key-trends-2026]] — Siemens：CPO 五大趨勢；1.6T 鏈路功耗 **30 W → 9 W**；⭐ **資料中心 60% 能耗花在資料搬移**（CPO 需求側第一原理數字）；Ayar Labs TeraPHY **8 Tbps** UCIe 光學；3.2T port 2029 >1,000 萬個（2026-02-05）
+- [[sources/2026-01-30_tomshardware_intel-ai-chip-test-vehicle-emib-t]] — Tom's Hardware：**Intel AI 晶片測試載具——8X 光罩 SiP（4 邏輯+12 HBM4+EMIB-T+18A-PT）；「今日可製造」；Jaguar Shores 2027 採用此架構；18A-PT 節點首次記錄**（2026-07-11 收錄；原文 2026-01-30）⭐新增
 - [[sources/2026-01-29_trendforce_emib-challenges-nvidia-14a-18a]] — EMIB 功率上限（5-6 kW Feynman 不可行）；NVIDIA 14A/18A I/O die 方案；IVR 需求（2026-01-29）⭐新增
 - [[sources/2026-01-28_trendforce_skhynix-two-thirds-nvidia-hbm4]] — SK Hynix ~70% NVIDIA HBM4 份額；Samsung HBM4 同等定價 >$600（2026-01-28）⭐新增
 - [[sources/2026-01-26_trendforce_intel-glass-substrate-emib]] — Intel 厚芯玻璃基板 + EMIB 整合；AI 資料中心定位；HVM 2027–28（2026-01-26）⭐新增
@@ -607,6 +614,7 @@
 - [[sources/2026-01-23_trendforce_chip-tools-tel-asml]] — TEL/ASML/AMAT 加速布局先進封裝；TEL Kumamoto ¥470 億；Eteris 合資（2026-01-23）⭐新增
 - [[sources/2026-01-21_trendforce_tsmc-ap-capex-ap7-copos]] — TSMC 先進封裝 CapEx CAGR 24%（2025–27）；AP7 嘉義 WMCM + CoPoS 定位確認（2026-01-21）⭐新增
 - [[sources/2026-01-20_trendforce_tsmc-wmcm-apple]] — TSMC WMCM 產能 2027 年倍增（AP3/AP7 並行；Apple 排他窗口詳情）（2026-01-20）⭐新增｜合併自重複收錄（2026-09-15 dedupe）
+- [[sources/2026-01-14_patent_cea-set-d2w-hybrid-bonding-jp-phase]] — [專利·時序] ⭐ **CEA + SET 的 D2W 直接混合接合，優先權 2022-12，ECTC 2026 才發表 ➜ 同一機構「排他權布局→學術發表」間隔約 3–4 年；論文是落後指標而非領先指標**（JP2026501395A, 2026-01-14，⚠ 優先權早於 2026）⭐新增
 - [[sources/2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h]] — SK Hynix MR-MUF 確認用於 HBM4 16H；30µm die thinning；CES 2026 展示（2026-01-13）⭐新增
 - [[sources/2026-01-13_semiengineering_hbm4-microbumps]] — SemiEngineering：HBM4 維持微凸塊封裝；混合接合延後至 HBM5+（2026-01-13）⭐新增｜合併自重複收錄（2026-09-15 dedupe）
 - [[sources/2026-01-12_trendforce_tsmc-mature-node-reallocation-cowos]] — TSMC 重新分配 45–90nm 成熟節點產能至 CoWoS；Fab14/8 吋廠轉用（2026-01-12）⭐新增
@@ -622,12 +630,21 @@
 - [[sources/2025-12-01_trendforce_intel-amkor-songdo-emib-outsource]] — Intel 首次 EMIB 外包至 Amkor Songdo K5；EMIB-M 量產/EMIB-T 2026-27；2,700 億韓元投資（2025-12-01）⭐新增
 - [[sources/2025-12-01_semiengineering_thermal-management]] — 先進封裝熱管理：TSMC 直接矽液冷、3D 熱點、TIM 演進（2025-12）⭐新增
 - [[sources/2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding]] — IFTLE 648：Unimicron 玻璃核心基板 + Cu-Cu 混合接合可靠性研究（2025-12-01）⭐新增
+- [[sources/2025-11-21_eetimes_amat-besi-d2w-hybrid-bonding-hvm]] — EE Times：AMAT × Besi **Kinex**；⭐⭐ **D2W 逐 die 對準量產現況 100 nm @ 3σ**（2026 新機 50 nm、路線圖 <25 nm）、**1,600–2,000 die/hr**、佇列時間 13 hr→數分鐘；**結清「設備商 D2W 對準路線圖」空缺，並推翻「pitch 受限於對準」的簡單歸因**（2025-11-21）
+- [[sources/2025-10-09_micron_wo2025212237a1-heat-mitigating-hbm-sip]] — [專利] Micron interface die 移至**堆疊頂層**、I/O 走上表面 + 上方 communication substrate（over-the-top bridge）（WO2025212237A1, 2025-10-09）⭐新增
 - [[sources/2025-10-07_trendforce_hybrid-bonder-market-2b]] — 混合接合設備市場 $2B（2028）；韓國 Hanmi/Hanwha/LG 競爭；Besi/ASMPT 全球領先（2025-10-07）⭐新增
+- [[sources/2025-10-06_onto_tgv-inspection-three-cds]] — [設備商一手] ⭐ **TGV 需同時量頂／腰／底三個 CD——「孔徑」不是一個數字**；「incomplete debris removal」列為標準缺陷類別，與 ARCH 的孔外接觸角零敏感度構成閉環；LIDE 改質區 <3 µm；玻璃核心基板 2030 年 **2.75 億美元**（最保守值）（Onto Innovation, 2025-10-06）⭐新增
 - [[sources/2025-09-19_trendforce_stmicro-foplp-france]] — STMicro 法國面板級封裝試驗線 2026 Q3 啟動（2025-09-19）⭐新增
+- [[sources/2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly]] — [文章] ⭐⭐ **混合接合專用 CMP 設備 AMAT 市占 100%**（整體 CMP 60%）；與「CMP 為第一限制」相乘 ➜ **整個產業 pitch 微縮速率由單一設備商決定**，並解釋 AMAT 持股 Besi 9% 的縱向布局；⚠ 單一來源待佐證（SemiconSam, 2025-09-18）⭐新增
 - [[sources/2025-09-12_trendforce_foplp-competitive-2025]] — FOPLP 競爭格局：Powertech 90% 良率；TSMC 玻璃 vs Samsung；Resonac+AMAT+TEL 生態（2025-09-12）⭐新增
+- [[sources/2025-09-03_uciexpress_ucie30-spec]] — UCIe Consortium：UCIe 3.0 官方規格——48/64 GT/s；Raw Mode；100mm sideband；L2 idle 功率閘控；完整向下相容（2025-09-03）⭐新增
+- [[sources/2025-08-12_semieng_metrology-fine-pitch-hybrid-bonding]] — [文章] ⭐⭐ **產業無混合接合檢測標準**：各廠自定疊對容差/平坦度/空洞門檻，**不同廠商的 pitch 數字不可直接比較**；翹曲是空間分布（邊緣 vs 中心 die 應力不同）；與「KGD 標準化定義」空缺合併追蹤（SemiEng, 2025-08-12；刻意收錄舊文）⭐新增
 - [[sources/2025-08-12_semianalysis_hbm-roadmap]] — SemiAnalysis：HBM roadmap；HBM4 custom base die、shoreline area、XPU-HBM routing density 與 CoWoS 依賴（2025-08-12）⭐新增
 - [[sources/2025-08-05_3dincites_iftle636-samsung-lsb-micron-virginia]] — IFTLE 636：三星 LSB 矽橋接 Chiplet；Micron 維吉尼亞 HBM 封裝廠計畫（2025-08-05）⭐新增
+- [[sources/2025-07-10_semieng_advanced-packaging-reshaping-inspection]] — SemiEng：**檢測三條物理天花板**——**特徵減半需 4× 像素**（像素平方律第一原理）、單 die 翹曲 **>100 µm** 超越景深、**混合接合空洞數奈米 vs 光學門檻 30 nm**；「能不能看到」取代「量得準不準」（2025-07-10，⚠ 舊文，作基礎背景）⭐新增
 - [[sources/2025-07-01_3dincites_micron-onshore-tsmc-copos]] — IFTLE 634：Micron 本土化投資；TSMC CoPoS 面板級封裝動態（2025-07-01）⭐新增
+- [[sources/2025-05-23_patent_tsmc-dual-material-cmp-slurry]] — [專利] ⭐⭐⭐ **TSMC 主張鈦–矽混合磨料一次研磨金屬與介電，與 Adeia「拆成兩段」方向相反 ➜ IP 授權商與晶圓廠兩種商業模式都在 CMP 下注**（CN120035162A, 2025-05-23，⚠ 超出 12 個月窗口）⭐新增
+- [[sources/2025-05-13_trendforce_top10-osat-2024]] — TrendForce：2024年全球OSAT前十大——ASE $18.54B（45%）；JCET +19.3%；HT-Tech +26%；前十大合計 $41.56B（2025-05-13）⭐新增
 - [[sources/2025-01-14_semieng_known-good-interposer-screening]] — SemiEng：**矽中介層很少接受完整電性測試覆蓋**；限制為探針物理（pad pitch **<60–75 µm** vs **25k–50k pads**，Amkor）；**KGI / PGD（Pretty Good Die）** 首次入庫（2025-01-14，⚠ 舊文，作基礎背景）⭐新增
 - [[sources/2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq]] — [報告] ⭐⭐ **結清最高優先空缺：介電層 Rq 0.1–0.2 nm、Cu recess 1–5 nm 取得設備商一手佐證**；⭐ **「平坦度」須拆成三個相差兩個數量級的獨立驗收項**（短程粗糙度／recess／長程形貌 10–25 nm）（Bruker AN-5001, 2025 Rev.A0）⭐新增
 - [[sources/2024-11-12_semieng_packaging-drives-test-metrology-innovation]] — SemiEng：**測試端 2024 基準線**——凸塊 45→12 µm、HBM pitch 25→16–18 µm、層數 8→16、**凸塊數 1→1.5 億**、測試訊號 **224 Gbps/80 GHz**、CD 重複性 **0.1%**（2024-11-12，⚠ 僅作時間序列起點）⭐新增

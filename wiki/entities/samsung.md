@@ -3,7 +3,7 @@ title: "三星 / Samsung"
 category: entity
 tags: [IDM, foundry, memory, advanced-packaging, X-Cube, HBM, ISSCC2026, I-CubeS, LPDDR6, V10-BV-NAND, zHBM, HBM5, FMS-2026, ECC, reliability]
 created: 2026-04-24
-updated: 2026-09-19
+updated: 2026-09-23
 sources: [2026-08-26_trendforce_openai-jalapeno-samsung-hbm4, 2026-08-26_trendforce_samsung-gaia-pim-4nm-2027, 2026-08-24_trendforce_hot-chips-2026-samsung-zhbm-skhynix-emib, 2026-08-17_trendforce_samsung-skhynix-1h26-investment-nvidia-absent, 2026-08-14_trendforce_samsung-nrdk-line2-2nm-hbm5-base-die, 2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor, 2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2025-12-30_trendforce_samsung-hbm-surge, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2025-08-05_3dincites_iftle636, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit, 2026-06-10_trendforce_samsung-gwangju-packaging-base, 2026-06-12_digitimes_samsung-packaging-gap-tsmc-intel, 2026-06-15_trendforce_skhynix-hbm4e-sample-timeline-pulled-forward, 2026-06-19_techtimes_vera-rubin-hbm4-suppliers, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-24_techtimes_sk-hynix-dethroned-samsung-ddr5-hbm4, 2026-07-03_trendforce_anthropic-samsung-advanced-packaging, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-07-02_trendforce_samsung-hbm-dummy-die-patent, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo, 2026-07-07_trendforce_samsung-q2-2026-record-krw894t, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-02_trendforce_samsung-sf2p-plus-tsmc-n2-roadmap, 2026-07-14_trendforce_samsung-hbm-hiring-hbm4-hbm4e-hbm5, 2026-07-21_trendforce_samsung-cxl-32-skhynix-imte, 2026-07-24_trendforce_skhynix-3d-stacked-dram-on-logic-on-device-ai]
 related:
   - wiki/entities/tsmc.md
@@ -475,3 +475,47 @@ Samsung Foundry 於 OFC 2026 發表 300 mm 矽光子平台，路線圖為：
 
 ### 16-hi HBM4 立場再獲確認（BigGo 2026-08-24）
 Samsung：「客戶對 16-hi HBM4 的需求**非常有限**」，但確認具備量產技術能力。與 2026-09-18 記錄的三雄分歧一致。
+
+
+---
+
+## 2026-09-23 collect 更新
+
+### 1. ⭐⭐⭐ 玻璃基板：樣品未通過客戶可靠度驗證（與廠方否認衝突）
+**BigGo Finance（2026-08-12）**：
+- **送樣未通過客戶端可靠度驗證**，須重製重送；消息來源稱「目前不可能在一兩週內完成新樣品製作」
+- **量產時程三次後退**：原訂 2H2027 → 2026-07 修正為 2028 → 業界推估 **2028 之後**
+- **設備採購自 2025-11 起反覆延後**；**原訂 2027-04 到機計畫已放棄**
+- 組織：合資 **GlaSSEM**（與 Dongwoo Fine-Chem）；量產廠**平澤**、樣品線**世宗**
+
+➜ ⚠⚠ **與本 wiki 2026-08-23 記錄的「Samsung EM 否認認證失敗」直接衝突**，且本篇**早於**該否認。**本 wiki 不裁定**；但**時程的三次後退是雙方都不否認的客觀事實**。
+➜ ⭐⭐ **失敗環節的層級與本輪 AMAT TGV 全文指認的失效模式一致**（種子層附著不足、孔緣玻璃開裂，皆屬可靠度）——兩個獨立來源、不同角度，指向同一層級。詳見 [[technologies/glass-substrate]]。
+
+### 2. ⭐⭐⭐ 混合接合：平澤 P5 規劃 ~50 台 D2W 機台，量產目標 2030
+**TheElec（2026-07-22，Jeong Il Joo）**：
+| 項目 | 值 |
+|---|---|
+| 機台數 / 地點 | **~50 台 D2W**，**平澤 P5** |
+| 首選供應商 | **Besi**（備選 **Semes**、**Hanwha Semitech**） |
+| **Besi 單價** | **₩60 億／台（US$4.6M）** ➜ 總額推算 **≈₩3,000 億（US$2.3B）** |
+| 安裝 / 量產 | **2026 年底起** / **大規模量產 2030** |
+| 應用 | 次世代 HBM、先進邏輯；**整合 logic die 的 custom HBM** |
+| ⚠ 卡關 | **Samsung 要求機台設計變更，延宕交期協議** |
+
+➜ ⭐⭐⭐ **2030 與 Hanmi 的 ~2029、SK hynix 的「HB 延後至 HBM5」三者收斂** ➜ **「HBM4E（2027 年底）導入混合接合」缺乏設備側佐證。**
+➜ ⭐⭐ **首見採購方反向驅動機台規格**——列為待追蹤。
+
+### 3. ⭐⭐ Semes 自製 W2W 混合接合機
+**KED Global（2026-02-20）**：
+- **Semes（Samsung 子公司）正開發新的 W2W 混合接合機**；另被要求**供應兩條混合接合產線的設備**（TheElec 2026-07-22 印證）
+- Samsung 計畫在韓國建立混合接合產線「以挑戰 TSMC」
+- **目標 2026 年達 400 層 V-NAND**
+- **HBM4 DRAM 產能提升 70%**（NVIDIA、AMD 需求）；HBM4 於 **2026-02 中**量產
+
+➜ ⭐⭐ **Samsung 正同時從設備端（Semes）與製造端垂直整合混合接合**，且 **Semes 走的是 W2W**——與 Besi／Hanwha／Hanmi 的 D2W 不同區段。
+➜ ⚠ **400 層 V-NAND 值得與本 wiki 2026-09-19 的「HB 3D NAND Vth 控制」論文合看：NAND 是混合接合目前最接近量產的應用，而非 HBM**——與本輪 TheElec 的市場分項（W2W 占 ~95%）同向。
+
+### 4. ⚠ 新增之未解問題
+- [ ] **Samsung EM 未通過的是哪一項可靠度測試**（若為熱循環，可與 AMAT 的環向裂紋機制直接對接）
+- [ ] **Samsung 要求 Besi 做的機台設計變更內容**
+- [ ] **Semes W2W 機台的規格與時程**

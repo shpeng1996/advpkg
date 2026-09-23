@@ -3,7 +3,7 @@ title: "玻璃基板 / Glass Core Substrate"
 category: technology
 tags: [glass-substrate, TGV, panel-level, FC-BGA, CoPoS, Absolics, DNP, Rapidus, warpage, SeWaRe, glass-interposer, BOE, ULCVD, non-embedding, Lens-Technology, TPK-KY, Innolux, AUO, LG-Chem, singulation, patent-signal]
 created: 2026-05-08
-updated: 2026-09-22
+updated: 2026-09-23
 sources: [2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-05-05_trendforce-insights_glass-substrate-development, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-05-29_3dincites_rapidus-2nm-advanced-packaging-ai-foundry, 2026-06-01_trendforce_intel-3dgs-india-glass-substrate, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-06-20_biggo_boe-glass-substrate-pilot, 2026-06-28_economy-ac_glass-substrate-global-race, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-08-18_trendforce_shinko-glass-substrate-22layer-glassem-delay, 2026-09-11_mssp_tgv-glass-biaxial-bending-ring-on-ring, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-03-13_kaneka_jp2026047137a-glass-core-polyimide-quantified, 2026-08-10_screp_low-k-organic-buffer-tgv-cu-metallization, 2026-08-04_jmrt_vacuum-assisted-void-free-cu-fill-tgv, 2026-07-30_micromachines_tgv-cleanability-surface-tension]
 related:
   - wiki/technologies/copos.md
@@ -1095,3 +1095,75 @@ C = 上 RDL 中長短軸比 ≥3:1 之晶粒面積比；D = 下 RDL 同一量；
 - [ ] **AMAT 多層 liner 的模數與 CTE 實際數值，以及有／無 liner 的熱循環對照數據**
 - [ ] **Corning 的 TGV 剖面屬五類中何者**（決定其「small via diameter」該以頂／腰／底何者比較）
 - [ ] **上海美維方案的堆疊層數上限與 CMP 累積次數的良率代價**
+
+
+---
+
+## 2026-09-23 collect 更新
+
+### 1. ⭐⭐⭐ 玻璃開裂的完整機制：起始與擴展發生在熱循環的相反半程
+**Applied Materials，IMAPS 22nd DPC 2026 全文**（`10.4071/001c.167752`；2026-09-22 僅摘要，本輪取得全文）：
+
+| 階段 | 機制 |
+|---|---|
+| **受熱 — 裂紋起始** | Cu 膨脹，於孔內形成**三點應力位置**，對玻璃施加**過量壓應力** |
+| **冷卻 — 裂紋擴展** | Cu 收縮，產生**軸對稱拉伸力**，導致**環向（circumferential）裂紋擴展** |
+
+➜ ⭐⭐⭐ **這解釋了兩件本 wiki 此前只能描述而無法解釋的事**：（a）為何 TGV 失效以**熱循環次數**而非峰值溫度為主導變數；（b）為何**環向裂紋**是 TGV 的特徵失效形貌。
+➜ **本 wiki 2026-09-22 提出「玻璃論述重心應自材料選擇移向界面工程與孔緣幾何」，本輪取得機制層完整佐證。**
+
+### 2. ⭐⭐⭐ CVD liner 的量化效果（結清 2026-09-22 列管的「有／無 liner 對照值」）
+| 指標 | 值 |
+|---|---|
+| **應力降低** | **至多 60%**（liner 作為 stress buffer layer） |
+| **Ti/Cu 種子層附著力** | **至多 2×**，且**無需高溫後製程步驟** |
+| CVD 沉積溫度範圍 | **80–400 °C**（CVD5000PLP 面板 CVD） |
+| 流程 | 濕蝕刻 → **liner 沉積** → 種子層沉積 → 電鍍 → via reveal |
+| ⚠ 雙軸彎曲強度絕對值、熱循環次數、MPa／J·m⁻² | **全部未揭露** |
+
+➜ ⚠ **2026-09-16 的「TGV 陣列力學數值」空缺僅部分結清：機制與相對改善已得，絕對值仍缺。**
+➜ ⚠ 「60%」與「2×」均為 **AMAT 內部結構**數據，無第三方驗證。
+
+### 3. ⭐⭐⭐ liner 的模數 × CTE 是二維互相拉扯的設計空間
+AMAT 以模擬＋實驗比較三種 liner：**高模數/高 CTE**、**高模數/低 CTE**、**低模數/低 CTE**——後者標註**回流後有 delamination 風險**。
+➜ ⭐⭐⭐ **「當一個參數同時服務兩個相反的失效模式，最佳值必然是區間而非極值」的第八例，且是首個二維實例。** Cu dishing（第七例）為一維上下界；本例是**模數與 CTE 兩個參數同時受約束，設計空間為一個區域而非一段區間**。
+➜ **這不是「liner 越軟越好」**：低模數有利於緩衝玻璃應力，卻在回流後產生界面剝離風險。
+
+### 4. ⭐⭐ Fraunhofer IZM 的逐年路線與「玻璃孔徑是有機的 1/3」
+**Lars Böttcher, Fraunhofer IZM（IMAPS DPC 2026，`10.4071/001c.167746`）**：
+
+| 階段 | TGV | 玻璃厚度 | RDL |
+|---|---|---|---|
+| 現況 | ≤50 µm | ≥700 µm | SAP **5 µm L/S**、via 15 µm、**ABF** |
+| 次階段 | ≤50 µm | ≥700 µm | SAP **2 µm L/S**、via 10 µm、**PID** |
+| **Year 4** | **≤30 µm** | ≥700 µm | SAP 2 µm L/S、**via 5 µm**、PID |
+| 研究中 | — | — | 面板級光敏介電、**damascene 1 µm L/S** |
+
+- **縮放趨勢**：L/S **10 → 5 → 2 µm**；via **60 → 15 → 5 → 1 µm**；間距 **150 → 100 → 50 → 25 µm**
+- ⭐⭐ **同厚度下的孔徑對照**：玻璃 TGV **50 µm @ ≤500 µm 厚** vs 玻璃織物／有機基 DK **150 µm @ 500 µm 厚** ➜ **玻璃孔徑是有機的 1/3**（本 wiki 首次能把「玻璃的密度優勢」化為單一比值）
+- 開孔方式：電漿孔 13 µm、雷射孔 13 µm、**PID 孔 8 µm**；面板實作 **610×457 mm²**，RDL 5 µm L/S
+- ⭐⭐ **PVD 受深寬比限制，僅支持中等 TGV 密度**；改用**底部向上電鍍**可達 **500 µm 玻璃核心中的 10 µm TGV** ➜ 與 2026-09-20 的「真空輔助無孔洞 Cu 填充 AR10 TGV」指向**同一瓶頸的兩種解**
+- ⚠ **TGV 金屬化鏈的末端是 CMP** ➜ 與 2026-09-22 的「上海美維逐層 CMP」合看，**「CMP 是限制層」的適用範圍自混合接合擴及玻璃基板**
+
+➜ ⭐⭐ **lint 待辦取得可操作依據**：2026-09-22 列管「玻璃核心基板 vs 玻璃核心中介層混用需分開」。本篇 GCS 走 **SAP／ABF／PID 基板製程鏈**，中介層走 **damascene** ➜ **拆頁應依製程鏈而非依用途。**
+
+### 5. ⭐⭐⭐ 矛盾記錄：Samsung EM 玻璃樣品「未通過客戶可靠度驗證」
+**BigGo Finance（2026-08-12）**：
+- **送樣未通過客戶端可靠度驗證**，須重製重送
+- **量產時程三次後退**：原訂 2H2027 → 2026-07 修正為 2028 → 業界推估 **2028 之後**
+- **設備採購自 2025-11 起反覆延後**；**原訂 2027-04 到機計畫已放棄**
+- 組織：**GlaSSEM**（與 Dongwoo Fine-Chem）；量產廠平澤、樣品線世宗
+- **LG Innotek 改走人形機器人影像感測器**用玻璃基板，先累積經驗再擴入半導體封裝
+
+➜ ⚠⚠ **與本 wiki 2026-08-23 記錄的「Samsung EM 否認認證失敗」直接衝突**，且本篇（2026-08-12）**早於**該否認。**本 wiki 不裁定**，記錄三點：
+1. 兩造說法並存：媒體（多次、具體）vs 廠方否認。
+2. **時程的三次後退是雙方都不否認的客觀事實**，本身為間接佐證。
+3. ⭐⭐ **失敗環節的層級與本輪 AMAT 全文指認的失效模式一致**：AMAT 指認 TGV 兩大失效為**種子層附著不足**與**孔緣玻璃開裂**，**皆屬可靠度範疇**。Samsung EM 卡在「客戶可靠度驗證」——**兩個獨立來源、不同角度，指向同一層級的問題。**
+➜ ⭐⭐ **玻璃基板的產業瓶頸首次被定位到一個具體閘門：客戶可靠度驗證**，而非產能、良率或成本。
+➜ ⭐⭐ **LG Innotek 的迂迴是本 wiki 第三個「降低要求以先取得經驗」的實例**，但此處放寬的不是製程規格而是**應用領域的可靠度門檻**（機器人影像感測器 vs AI 伺服器）。
+
+### 6. ⚠ 新增／修正之未解問題
+- [ ] ⭐ **Fraunhofer 的 610×457 mm² 大面板路線是否有成本依據**（成本社群已收斂到 310×310，且該尺寸優勢本身極脆弱）
+- [ ] **AMAT liner 的絕對值**：模數／CTE 具體數字、雙軸彎曲強度、熱循環次數（相對改善已得，絕對值仍缺）
+- [ ] **Samsung EM 未通過的是哪一項可靠度測試**（若為熱循環，則與 AMAT 的環向裂紋機制可直接對接）
+- [ ] **Corning 的 TGV 屬五種剖面中的哪一種**（延續 2026-09-22 的第三次提問修正）

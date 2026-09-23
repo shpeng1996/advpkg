@@ -576,3 +576,19 @@
 2026-09-22 | https://doi.org/10.4071/001c.167752 | raw/papers/2026-08-19_openalex_amat-tgv-thermomechanical-liner-reliability.md | AMAT TGV: seed-layer delamination + via-edge cracking; liner
 2026-09-22 | https://doi.org/10.4071/001c.167018 | raw/papers/2026-08-12_openalex_lujan-plp-cost-analysis-310mm-advanced-fanout.md | Lujan PLP cost model moves 600x600 -> 310x310 (abstract only)
 2026-09-22 | https://doi.org/10.1038/s41598-026-47275-2 | raw/papers/2026-06-15_openalex_foplp-warpage-rdl-first-molding-first-fea.md | FOPLP warpage peaks at debonding; carrier material matters
+2026-09-23 | https://www.koreaherald.com/article/10682137 | raw/articles/2026-02-25_koreaherald_hanwha-semitech-shb2-nano-0.1um-hybrid-bonder.md | Hanwha Semitech SHB2 Nano: 0.1um alignment, H1 2026 test
+2026-09-23 | https://finance.biggo.com/news/2e9bec2b-d71e-4f6d-a200-6ce90ee80930 | raw/articles/2026-08-12_biggo_samsung-em-glass-sample-reliability-failure-beyond-2028.md | Samsung EM glass samples FAILED reliability verification
+2026-09-23 | https://www.kedglobal.com/korean-chipmakers/newsView/ked202602200004 | raw/articles/2026-02-20_kedglobal_samsung-semes-hanwha-hybrid-bonder-development.md | Semes builds W2W bonder; Hanwha allies with Prodrive
+2026-09-23 | https://www.thelec.net/news/articleView.html?idxno=12385 | raw/articles/2026-07-22_thelec_samsung-50-tool-d2w-hybrid-bonding-line-pyeongtaek-p5.md | Samsung 50 D2W tools P5; Besi KRW6B each; HVM 2030
+2026-09-23 | https://www.thelec.net/news/articleView.html?idxno=10055 | raw/articles/2026-04-28_thelec_asml-w2w-hybrid-bonder-market-w2w-vs-d2w.md | ASML may build W2W bonder; D2W only 4.5% of $6B market
+2026-09-23 | EPO:101168492:WO2026182734A1 | raw/patents/2026-09-03_WO2026182734A1_besi-solder-surface-tension-inline-bond-quality.md | Besi: liquid solder surface tension = inline bond quality
+2026-09-23 | EPO:57223662:TW202611995A | raw/patents/2026-03-16_TW202611995A_evgroup-laser-soluble-release-layer-bond-debond.md | EVG laser-soluble release layer; carrier must be transparent
+2026-09-23 | EPO:94172525:CN121488155A | raw/patents/2026-02-06_CN121488155A_kla-multi-pass-optical-measurement.md | KLA multi-pass optical measurement (first KLA patent)
+2026-09-23 | EPO:95699597:WO2026192456A1 | raw/patents/2026-09-17_WO2026192456A1_besi-movable-centering-pin-carrier-positioning.md | Besi movable centering pin: carrier dimension drift
+2026-09-23 | EPO:100490887:US20260202438A1 | raw/patents/2026-07-16_US20260202438A1_amkor-socket-test-jig-coaxial-pusher.md | Amkor coaxial cable through test pusher (signal integrity)
+2026-09-23 | https://imapsource.org/article/167018.pdf | raw/papers/2026-03-05_imapspdf_lujan-plp-cost-FULLTEXT-half-point-yield-erases-benefit.md | FULLTEXT 10.4071/001c.167018: 0.5pt yield erases panel gain
+2026-09-23 | https://imapsource.org/article/167752.pdf | raw/papers/2026-03-05_imapspdf_amat-tgv-liner-FULLTEXT-60pct-stress-2x-adhesion.md | FULLTEXT 10.4071/001c.167752: liner -60% stress, 2x adhesion
+2026-09-23 | https://doi.org/10.4071/001c.167746 | raw/papers/2026-03-05_imapspdf_fraunhofer-izm-glass-core-tgv-rdl-four-year-roadmap.md | Fraunhofer IZM glass core: TGV 50->30um, RDL 5->2->1um L/S
+2026-09-23 | https://doi.org/10.4071/001c.167502 | raw/papers/2026-03-05_imapspdf_ase-deca-adaptive-patterning-bridge-placement-tolerance.md | ASE/Deca: bridge placement +-3um -> +-10-40um (3-13x)
+2026-09-23 | https://doi.org/10.4071/001c.167027 | raw/papers/2026-03-05_imapspdf_aoi-electronics-panel-level-reliability-ev-inverter.md | AOI Electronics (NOT TEL) panel reliability; EV inverter
+2026-09-23 | https://doi.org/10.3390/s26185939 | raw/papers/2026-09-19_openalex_au-au-surface-activated-bonding-stricter-than-tcb.md | Au-Au: TCB deforms asperities, so RT bonding is stricter

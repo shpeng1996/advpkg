@@ -3,7 +3,7 @@ title: "ASE Group / 日月光投控"
 category: entity
 tags: [OSAT, advanced-packaging, CoWoP, FOPLP, chiplet, CPO, LEAP]
 created: 2026-04-25
-updated: 2026-09-16
+updated: 2026-09-23
 sources: [2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below, 2026-08-05_trendforce_tsmc-cowos-cow-outsourcing-osat, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2026-05-08_aseglobal_ase-wus-kaohsiung-focoes-hub, 2026-05-26_semiconductor-digest_ase-310mm-plp-ectc2026, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-11_trendforce_ase-spil-zhunan-plant, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-07-01_trendforce_ase-price-hike-20pct, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-31_ase_cn224583735u-photoelectric-hybrid-rdl, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-06-02_intel_ectc2026-emib-t-cpo-glass]
 related:
   - wiki/technologies/cowos.md
@@ -212,3 +212,38 @@ Intel Foundry 的 ECTC 2026 官方部落格列出其 20 篇論文的合作方，
 - ASE 模封式橋接的 die-to-die 頻寬與 EMIB 相比如何？公開資料皆無電性數據。
 - US20260248002A1 的 I/O 反轉是量產意圖還是防禦性布局？需追蹤 FOCoS 量產產品的實際 RDL／基板層數。
 - Intel × SPIL 的 ECTC 合作性質為何？
+
+
+---
+
+## 2026-09-23 collect 更新：Adaptive Patterning 把擺放公差放寬 3–13 倍
+
+**ASE Group × Deca Technologies，IMAPS 22nd DPC 2026**（`10.4071/001c.167502`）
+作者：Cliff Sandstrom、Benedict San Jose、Erick Talain（Deca）；Jen-Kuang Fang、Ping-Feng Yang、Sheng-Feng Huang、Ping-Ching Shen（ASE）
+
+### ⭐⭐⭐ 核心數據
+> 傳統埋入式橋接：**"Requires tight ±3 µm or less bridge die location as fabricated"**
+
+| 墊尺寸 | 位置容差 | 角度容差 |
+|---|---|---|
+| 20 µm | **±10 µm** | ±0.1° |
+| 25 µm | **±15 µm** | ±0.1° |
+| 35 µm | ±12 µm (G1) / **±25 µm (G2)** | ±0.1° / ±0.25° |
+| 45 µm | ±20 µm (G1) / **±40 µm (G2)** | ±0.2° / ±0.4° |
+
+➜ **放寬 3.3×（20 µm 墊）至 13.3×（45 µm 墊 Gen 2）。**
+
+### 機制與良率策略
+- **Adaptive Patterning**：逐顆晶粒量測實際位置 → **客製化微影**調整 RDL 圖案吻合實際 die shift
+- **每顆橋接晶粒獨立補償** ➜ **良率不隨橋接晶粒數量惡化**（這正是傳統作法的主要良率風險）
+- **MFiT（M-Series Fanout Interposer Technology）**：橋接晶粒建 RDL 與 Cu bump → 貼於載板 1 → **EMC 包封成模封扇出中介層**
+- **EMC–bridge die 複合結構**緩解 CTE 失配
+- 細間距 RDL **只做在小尺寸橋接晶粒上**（晶粒越小良率越好）；**只用已知良品橋接晶粒**
+
+### ⭐⭐⭐ 對本 wiki 論述的貢獻
+1. **2026-09-22 橫向論述第 3 條首次取得量化實例**（原兩例皆定性）：**「當某製程規格難度陡升時，業界的第二條路不是改進該製程，而是把設計移到規格較鬆的區間。」**
+2. **論述可收斂為更精確的形式**：**「當上游的位置精度成本陡升，下游若具備可程式化的圖案能力，最佳解是把公差預算從上游移到下游。」** ➜ 關鍵前提是**下游可程式化**，這也解釋了為何同一招不能用在混合接合（HB 的限制在表面平坦度，不是可用微影補償的平面位置量）。
+3. ⭐⭐⭐ **與 Besi WO2026192456A1（可移動定心銷）構成同一策略的機構層版本**：Besi 讓治具遷就載具，Deca 讓微影遷就晶粒。
+
+### ⚠ 限制
+公差表為**設計規則宣稱**，未附實測分布或良率實績；「Gen 1／Gen 2」無年份錨定。

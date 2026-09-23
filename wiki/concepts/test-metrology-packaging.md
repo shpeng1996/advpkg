@@ -3,7 +3,7 @@ title: "先進封裝的測試、量測與失效分析 / Test, Metrology & Failur
 category: concept
 tags: [test, metrology, inspection, failure-analysis, KGD, KGI, KGP, DFA, yield]
 created: 2026-09-17
-updated: 2026-09-22
+updated: 2026-09-23
 sources: [2025-01-14_semieng_known-good-interposer-screening, 2025-07-10_semieng_advanced-packaging-reshaping-inspection, 2024-11-12_semieng_packaging-drives-test-metrology-innovation, 2026-08-01_jfap_3dic-failure-analysis-dfa, 2026-07-06_apl_lensless-through-silicon-phase-imaging, 2026-09-06_ndte_hysan-sparse-view-xct-tsv, 2026-08-02_chips_cpo-wafer-level-probe-card, 2026-08-27_samsung_us20260256000a1-interposer-test-pad, 2026-08-13_jcet_us20260239928a1-hybrid-bonding-substack-test, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-06-28_hyperframe_amat-hybrid-bonding-hedge]
 related:
   - wiki/technologies/hybrid-bonding.md
@@ -428,3 +428,38 @@ Micromachines 的**五種 TGV 剖面**（直壁／沙漏／等腰錐／倒錐／
 ### 4. ⭐ 待追
 - [ ] TGV 孔徑 RSD < 1% 的重複性（repeatability）數據
 - [ ] 混合接合側的 Ra 規格是否附重複性（本 wiki 既有的 Ra < 0.1/0.2 nm、SiCN < 2 Å 皆未附）
+
+
+---
+
+## 2026-09-23 collect 更新：量測往前推的三個獨立實例
+
+> ⚠ **三件同年出現，但彼此無任何引用關係，僅為同向觀察，不得合併敘述為單一趨勢。**
+
+### 1. ⭐⭐⭐ 接合端：Besi 把接合機本身變成量測儀
+**WO2026182734A1**（2026-09-03，family 101168492，Besi Switzerland AG）：TCB 過程中、焊料仍為**液相**時，量測對應**焊料表面張力**的作用力，與預期值比較以判定接合品質——**可在接合過程中或其後極短時間內完成，無需破壞性測試或抽樣**。
+
+➜ ⭐⭐⭐ **本 wiki 第一件把「量測」移進「接合動作本身」的專利。** 既有的「測試左移」實例皆在**版圖層**（SanDisk 把金屬墊與 bit line 外拉）或**製程後檢測**（Onto、Bruker）。本件用接合頭既有的力感測，**不外加設備**。
+➜ ⭐⭐ **「真正的瓶頸在被視為輔助步驟的那一步」的反向操作**：把輔助步驟（檢測）併入主步驟，額外機台時間為零。**本 wiki 此前只記錄了該論述的「瓶頸」一面，未記錄「合併」這一面。**
+➜ ⭐⭐⭐ ⚠ **適用邊界**：明示為 **TCB 且焊料液相**；Cu–Cu 混合接合無液相焊料，**不適用**。➜ **TCB 側已能 inline 非破壞判定，HB 側仍無對應手段。**
+
+### 2. ⭐⭐ 測試端：Amkor 把同軸結構做進測試壓件
+**US20260202438A1**（2026-07-16，family 100490887，Amkor Technology Singapore Holding）：具**貫穿孔的壓件（pusher）**，纜線為**同軸結構**（內導體／介電層／外導體），內外導體之第一端均自壓件下側露出。
+
+➜ 同軸結構的用途只有一個：**在壓件穿孔處維持特性阻抗、抑制串音與反射**。➜ ⭐⭐ **待測封裝的訊號頻率已高到「測試接點本身」成為量測誤差源。**
+➜ **「測試左移」實例首次出現在測試硬體側。**
+➜ **對既有空缺「KGD 的標準化定義」**：即使在既有的封裝後測試環節，**量測基礎設施本身仍在演進**；在 chiplet 跨供應商交易中，「良率如何量、由誰的治具量」與 KGD 定義同屬未決問題。
+➜ ⚠ 無任何頻率、阻抗或插入損耗數值。附記：**Amkor 2026 年 EPO 公開 85 件**，絕大多數為標題高度一致的 "ELECTRONIC DEVICES AND METHODS OF MANUFACTURING" 系列，本件是少數題材明確者。**結清 2026-09-17 列管的「下輪輪替至 Amkor」。**
+
+### 3. ⭐⭐ 量測端：KLA 以「多次通過」換訊噪比（本 wiki 首件 KLA 專利）
+**CN121488155A**（2026-02-06，family 94172525，KLA-Tencor）：量測光束在照明源與偵測器之間的光路中**多次入射晶圓表面**——或多次入射**同一量測點**，或入射**不同量測點**（各點製作同一標稱待測結構的實例）。
+
+➜ ⭐⭐ **量測端的訊噪比瓶頸已到需以排他權保護「取樣策略」的程度。** 本 wiki 2026-09-21 已記下 TSV 深度量測的關鍵觀察：**量測重複性 2.18 µm 與陣列本身的分散 2.15 µm 同級**——**量測不確定度已逼近待測變異**。本件是設備商對同一類問題的回應：**不改變光學極限，用取樣次數換訊噪比。**
+➜ ⭐⭐ **歸納出的模式與本 wiki 既有論述同族**：**當單次量測訊噪比不足且硬體極限已達，做法是增加取樣次數而非提升單次精度**——與「把設計移到規格較鬆的區間」屬同一族的**迴避式工程策略**，只是發生在量測端而非製程端。
+➜ ⚠ **本件未提及先進封裝任一具體應用**，為通用晶圓量測。**不得用以支持任何封裝專屬結論。**
+➜ ⭐ **結清 2026-09-22 列管的量測軌待輪替申請人（KLA／Bruker）之 KLA 一項。**
+
+### 4. ⚠ 新增之未解問題
+- [ ] **Besi 的液相表面張力法有無偵測率／解析度數據**
+- [ ] **混合接合是否存在任何 inline 非破壞品質判定手段**（目前本 wiki 一件也沒有）
+- [ ] **Amkor 測試治具對應的訊號頻率帶**

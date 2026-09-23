@@ -3,7 +3,7 @@ title: "Besi (BE Semiconductor Industries) — 混合接合設備領導廠商"
 category: entity
 tags: [equipment, hybrid-bonding, die-attach, D2W, TCB, Netherlands]
 created: 2026-04-25
-updated: 2026-09-20
+updated: 2026-09-23
 sources: [2026-03-01_3dincites_besi-packaging-power-shift, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-03-29_damnang_hybrid-bonding-cmp-gating-factor]
 related:
   - wiki/entities/ev-group.md
@@ -133,3 +133,29 @@ Applied Materials 與 Besi 共同開發的 **Kinex** 平台，首次取得量產
 2. **AMAT 持有 Besi 9% 股權（2025-04）應重新理解為沿限制鏈的縱向布局**：控制限制層（CMP），再參股非限制層（接合機）。本 wiki 先前把該持股理解為「設備商聯盟」。
 
 ⚠ 「AMAT 混合接合 CMP 100%」為單一來源主張，待佐證。此段的結論隨該數字成立與否而定。
+
+
+---
+
+## 2026-09-23 collect 更新
+
+### 2026 年兩件專利：皆在「機台自身的感測與定位」
+1. ⭐⭐⭐ **WO2026182734A1**（2026-09-03，family 101168492，Besi Switzerland AG）：**以液相焊料的表面張力在接合當下判定接合品質，無需破壞性測試或抽樣。**
+   ➜ 本 wiki 第一件把量測移進接合動作本身的專利。⚠ **僅適用 TCB（焊料液相），不適用 Cu–Cu 混合接合。**
+2. ⭐⭐ **WO2026192456A1**（2026-09-17，family 95699597，Besi Netherlands B.V.）：底部治具的**定心銷可受控地沿平行於支撐面的方向移動**。
+   ➜ 「定心銷可移動」本身是一則關於載具尺寸的證詞：**載具在製程中的尺寸漂移已大到需以排他權保護補償機構。** ⚠ 摘要無任何數值。
+   ➜ ⭐⭐⭐ **與 ASE／Deca 的 Adaptive Patterning 構成同一策略的兩個層級**：Besi 在機構層讓治具遷就載具，Deca 在微影層讓圖案遷就晶粒。**同一策略、兩個環節、兩家公司、同一年。**
+
+### ⚠ 對 2026-09-22 一個推論的反例（重要）
+2026-09-22 記載「**Hanmi 2026 年專利偏向機台工程層而非接合物理層**」，並與「公開具體度落後」同向解讀為訊號偏弱。
+
+**Besi 2026 年的兩件專利同樣集中在機台自身的感測與定位**——但 **Besi 的量產對準實績為 100 nm @ 3σ、吞吐 1,600–2,000 die/hr，遠領先同業。**
+
+➜ ⭐⭐ **結論：「專利偏機台工程層」不可推論為「技術落後」。** 該推論應在 [[entities/hanmi]] 同步加註本反例。
+
+### 商業動態
+- **Samsung 平澤 P5 的 ~50 台 D2W 混合接合機產線：Besi 為首選供應商**（協商中；備選 Semes、Hanwha Semitech）。
+- ⭐⭐ **單價約 ₩60 億／台（US$4.6M）** ➜ 該訂單機台總額推算 **≈₩3,000 億（US$2.3B）**。本 wiki 首次取得混合接合機單價。
+  - ⚠ 跨來源一致性：TheElec 2026-04-28 記混合接合機約 **₩40–50 億**，與本數字同量級。
+- ⚠ **Samsung 要求機台設計變更，延宕交期協議**——列為待追蹤（若涉對準或吞吐，是最直接的量產方需求訊號）。
+- 安裝 **2026 年底**起；大規模量產目標 **2030**。

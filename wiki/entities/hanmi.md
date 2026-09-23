@@ -3,7 +3,7 @@ title: "한미반도체 / Hanmi Semiconductor（韓美半導體）"
 category: entity
 tags: [Hanmi, TC-bonder, hybrid-bonding, HBM, HBF, equipment, Korea]
 created: 2026-09-22
-updated: 2026-09-22
+updated: 2026-09-23
 sources:
   - 2026-04-10_semiconductor-digest_hanmi-2nd-gen-hybrid-bonder
   - 2025-10-07_trendforce_hybrid-bonder-market-2b-2028
@@ -71,3 +71,35 @@ Hanmi 在 TC bonder 是市場領先者（SK hynix 大單、HBF 軌首批交付�
 - `raw/articles/2025-10-07_trendforce_hybrid-bonder-market-2b-2028.md`
 - `raw/articles/2026-06-09_trendforce_skhynix-hanmi-tcbonder-hbm4-ramp.md`
 - `raw/articles/2026-06-05_trendforce_hbf-equipment-race-hanmi-tcbonder.md`
+
+
+---
+
+## 2026-09-23 collect 更新
+
+### ⭐⭐⭐ 空缺的提問方式修正：Hanmi 可能缺席，但韓系不缺席
+2026-09-22 建立的空缺原為：「若 HB 確於 2027 年底導入 HBM4E，該世代機台由誰供應？Hanmi 是否缺席整個世代？」
+
+**本輪取得答案的前半**：
+
+| 供應商 | 第二代混合接合機里程碑 |
+|---|---|
+| **Hanwha Semitech** | **2026 H1 客戶性能測試**（SHB2 Nano，對準 **0.1 µm**） |
+| **Hanmi** | **2026 年底原型**；廠房 2027 上半（₩100B／Class 100）；**量產採用 ~2029** |
+| Besi | 量產中（100 nm @ 3σ、1,600–2,000 die/hr）；Samsung P5 ~50 台的**首選供應商** |
+| Semes（Samsung 自製） | 開發中，**W2W**（不同區段） |
+
+➜ **Hanwha Semitech 領先 Hanmi 約一年。** 空缺提問方式修正為「**Hanmi 是否缺席**」——「**該世代由誰供應**」已有答案。見新建的 [[entities/hanwha-semitech]]。
+
+### ⭐⭐ 「TC 強、HB 弱」不是 Hanmi 個案，是韓系設備商的共同模式
+**Hanwha Semitech 的 TCB 機種 SFM5 Expert 於 2025 年銷售額逾 ₩900 億，而其混合接合機仍在客戶測試階段**——**與 Hanmi 完全同型**。
+
+➜ 本 wiki 2026-09-22 的論述「**TC bonding 與 hybrid bonding 不是同一條學習曲線**」原本建立在 Hanmi **單一個案**上，**本輪擴展為兩家公司的共同模式**。
+➜ ⭐⭐⭐ **且本輪同時取得物理機制**：Au–Au 直接接合綜述（`10.3390/s26185939`）指出 **TCB 的熱與壓力會壓平表面凸起、自帶就地整平，而低溫／室溫直接接合沒有這個機制**。➜ 該論述現有**商業證據（兩家公司）＋物理機制**兩層支撐。
+
+### ⚠ 對 2026-09-22 一項推論的反例（重要）
+2026-09-22 記載：「Hanmi 2026 年的四件專利**偏向機台工程層而非接合物理層**」，並與「公開具體度明顯落後 Besi Kinex」**同向解讀**為訊號偏弱。
+
+**本輪反例**：**Besi 2026 年的兩件專利同樣集中在機台自身的感測與定位**（WO2026182734A1 液相焊料表面張力測接合品質、WO2026192456A1 可移動定心銷），**而 Besi 的量產實績遠領先同業。**
+
+➜ ⭐⭐ **「專利偏機台工程層」不可推論為「技術落後」。** 原記載的兩項觀察應**拆開**：「公開具體度落後」仍成立（Hanmi 未揭露任何對準精度或吞吐量）；「專利偏機台工程層」**不再作為佐證**。

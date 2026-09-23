@@ -3,7 +3,7 @@ title: "CoPoS — Chip-on-Panel-on-Substrate"
 category: technology
 tags: [panel-level-packaging, FOPLP, TSMC, CoPoS, AI, HPC, AP7, InFO]
 created: 2026-04-25
-updated: 2026-09-21
+updated: 2026-09-23
 sources: [2026-04-13_trendforce_copos-pilot, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2025-09-12_trendforce_foplp-competitive-landscape-2025, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-20_wccftech_tsmc-copos-glass-core-cost-cut, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-04-28_cw_tsmc-copos-move-really-means, 2026-06-14_digitaltrends_tsmc-copos-glass-temporary-carrier, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-28_xianfeng_cn122476946a-alignment-mark-protection, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap]
 related:
   - wiki/technologies/cowos.md
@@ -470,3 +470,22 @@ CoPoS 與 FOPLP 共用面板級 RDL 的製程基礎，故本頁同步記載 2026
 ⚠ 單一作者觀點，數字出自模擬；作者現職列為 Micron。
 
 **補充（Onto US20260186421A1, 2026-07-02）**：封裝級投影微影 field size **至少 50 × 50 mm** ➜ 310×310 mm 面板約需 **≈36 次**曝光，600×600 mm 約 **144 次**——曝光次數隨面積線性成長，是「大面板未必更快」的第二個機制。
+
+
+---
+
+## 2026-09-23 collect 更新：310×310 mm 的成本基礎比本 wiki 此前假設的脆弱
+
+CoPoS 採 **310×310 mm** 面板。本輪取得 **Amy Lujan（SavanSys）IMAPS 22nd DPC 2026 全文**（`10.4071/001c.167018`），該篇正是以 **310×310 mm 上的大型複雜封裝**為對象：
+
+> **"So far, before introducing any yield trade-offs, there is a small cost-benefit when building this package on a 310x310mm panel."**
+> **"With a 0.5% yield loss, the panel-based package is no longer cost-effective."**
+
+➜ ⭐⭐⭐ **對 CoPoS 的直接意涵：310×310 mm 的成本優勢存在，但容忍度只有 0.5 個百分點的良率。** 本 wiki 已記玻璃面板良率 **70–85%** vs 有機 **>90%**（2026-09-20）——**該落差是容忍度的 10–40 倍**。
+➜ **這使 CoPoS 的成敗幾乎完全繫於良率，而非面板尺寸帶來的幾何效益。** 本 wiki 此前把「310×310 mm 面板」記為 CoPoS 的優勢項，**應改記為：優勢真實但極窄，良率是唯一決定變數。**
+➜ ⚠ **TSMC 未公開 CoPoS 的良率或成本模型**，故本段為**以第三方成本模型推得的邊界條件**，非對 TSMC 具體方案的評價。
+
+### 載具與解接合的新約束
+- **EV Group TW202611995A**：雷射可溶層解接合**要求載板對該波長透明** ➜ **載板材料被解接合製程反向決定**，而載板材料又決定翹曲（詳見 [[technologies/foplp]]）。
+- **Besi WO2026192456A1**：**可受控移動的定心銷** ➜ **載具在製程中的尺寸漂移已大到需以排他權保護補償機構**。
+➜ 兩件皆指向同一件事：**面板尺度下，載具本身已成為一個需要主動管理的變數**，而非被動的承載件。

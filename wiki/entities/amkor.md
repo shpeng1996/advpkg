@@ -3,7 +3,7 @@ title: "Amkor Technology"
 category: entity
 tags: [OSAT, advanced-packaging, FOCoS, Arizona, chiplet, Intel-EMIB, patent-signal, TIM]
 created: 2026-04-25
-updated: 2026-09-18
+updated: 2026-09-23
 sources: [2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-05-19_stocktitan_amkor-arizona-peoria-land-expansion, 2026-06-17_digitimes_amkor-tsmc-10year-arizona-deal, 2026-06-17_trendforce_tsmc-amkor-10year-arizona-advanced-packaging, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-30_amkor-ir_arizona-7billion-groundbreaking, 2026-06-30_digitimes_amkor-2.5d-hdfo-growth-2026, 2026-07-23_amkor-ir_nvidia-amkor-1-5b-strategic-partnership]
 related:
   - wiki/technologies/cowos.md
@@ -195,3 +195,31 @@ Amkor 的 **Vineet Pancholi** 提供本 wiki 目前唯一的中介層測試覆�
 📌 **專利軌輪替紀錄**：本輪以 `pa="amkor technology" and pd within "2026"` 命中 **84 件**，絕大多數為通案性「electronic devices and methods」標題（基板邊緣端子、雙面模封、影像元件腔體、測試治具等）；僅上述兩件具明確結構論點。**Amkor 專利軌視為完成**，下輪輪替至其他申請人。
 
 來源：[[sources/2026-06-11_epo_amkor-cte-balance-beam-neutral-axis]]
+
+
+---
+
+## 2026-09-23 collect 更新：測試治具的高頻訊號完整性
+
+> ⭐ **結清 2026-09-17 列管的「下輪輪替至 Amkor」。**
+
+### US20260202438A1（2026-07-16，family 100490887）— SOCKET SYSTEM TEST JIG AND METHODS
+- 插座測試治具含一**具貫穿孔的壓件（pusher）**
+- 纜線總成為**同軸結構**：內導體 / 介電層 / 外導體
+- 纜線穿過貫穿孔，**內導體與外導體之第一端均自壓件下側露出**
+
+### ⭐⭐ 為何重要
+同軸結構的用途只有一個：**在壓件穿孔處維持特性阻抗、抑制串音與反射。**
+➜ **待測封裝的訊號頻率已高到「測試接點本身」成為量測誤差源。**
+➜ **本 wiki 的「測試左移」實例首次出現在測試硬體側**（既有皆在晶粒／版圖側：SanDisk 把金屬墊與 bit line 外拉）。
+➜ **對既有空缺「KGD 的標準化定義」**：即使在既有的封裝後測試環節，量測基礎設施本身仍在演進；在 chiplet 跨供應商交易中，「良率如何量、由誰的治具量」與 KGD 定義同屬未決問題。
+
+### 專利組合觀察
+⚠ **Amkor 2026 年 EPO 公開 85 件**，絕大多數為標題高度一致的 **"ELECTRONIC DEVICES AND METHODS OF MANUFACTURING ELECTRONIC DEVICES"** 系列（多由 Amkor Technology Singapore Holding 申請）。本件是**少數題材明確者**。
+➜ **以標題檢索 Amkor 專利幾乎無效**，後續輪替應改以技術詞（如 `ti,ab="test"`、`ti,ab="bridge"`）收斂。**此為本輪的檢索作業經驗，列入下輪規則。**
+
+### ⚠ 限制
+摘要無任何頻率、特性阻抗或插入損耗數值，屬定性訊號。
+
+### 既有待追項延續
+- [ ] **Amkor（Intel EMIB-T 外包夥伴）使用的是誰的 TCB 鍵合頭**（2026-09-22 新增，本輪未取得）
