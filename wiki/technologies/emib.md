@@ -3,7 +3,7 @@ title: "EMIB — Embedded Multi-Die Interconnect Bridge"
 category: technology
 tags: [Intel, 2.5D, silicon-bridge, chiplet, HBM4, Foveros, glass-substrate, EMIB-T, EMIB-M, silicon-capacitors, power-delivery, HLFF, encapsulation, underfill]
 created: 2026-05-03
-updated: 2026-09-16
+updated: 2026-09-24
 sources: [2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-03-05_trendforce_intel-emib-billions, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-03-03_trendforce_intel-clearwater-forest, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks, 2026-06-21_convergedigest_intel-emib-t-multi-die-packaging, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap, 2026-06-05_semieng_intel-ectc-2026-emib-t-cpo-glass, 2026-01-30_tomshardware_intel-ai-chip-test-vehicle-emib-t, 2026-08-04_semieng_from-blueprint-intel-hlff, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded, 2026-07-07_semieng_panel-inspection-metrology-hdfo]
 related:
   - wiki/entities/intel.md
@@ -380,3 +380,29 @@ Intel Foundry 公開一份官方技術簡報，展示其 **「AI 晶片測試載
 
 - ASE 模封式橋接的 die-to-die 頻寬與 EMIB 相比如何？公開資料皆無電性數據。
 - Intel × SPIL 的 ECTC 合作是單次論文合作，還是供應鏈關係的前兆？
+
+---
+
+## ⭐⭐⭐ 2026-09-24 更新：EMIB-T 首個良率數字——三家基板廠 2027 年底初期量產目標僅 50%；Intel 以「獲利保證機制」買下良率學習曲線
+
+來源：[[sources/2026-08-10_chaincatcher_emib-t-50pct-yield-target-profit-guarantee]]（一手為欣興 Unimicron 2026-07-29 法說會）
+
+### 事實
+1. 欣興表示 EMIB-T「**尚未成熟**」。
+2. 三家基板供應商（**Unimicron、Ibiden、Shinkawa**〔⚠ 疑為 **Shinko Electric** 之轉寫誤植，本 wiki 未逕行更正〕）於 **2027 年底初期量產時，目標良率僅 50%**。
+3. 根因：EMIB-T 把矽橋**直接埋入基板**而非使用矽中介層 ➜ **基板供應商成為關鍵路徑**（對照 CoWoS-L 使用中介層）。
+4. **Google 第九代 TPU** 將於 **2028 量產**時採用 EMIB-T，**MediaTek 負責晶片協同設計**。
+5. ⭐ **Intel 對供應商提供「獲利保證機制」**：良率不佳時仍可獲利；達 50% 良率後利潤率高於公司平均。
+
+### 為何重要
+1. ⭐⭐⭐ **本頁此前只有 Intel CFO Zinsner 的 2H27→2028→2029 三段式時程與 40% GM / 30% OM，無任何良率佐證。** 本輪首次取得數字——且是**目標值**（50%）而非實績。
+   ⚠ **不可與 CoWoS「5.5× 良率 99%」直接相減**：後者的量測邊界本身即本 wiki 列管空缺，且兩者計量對象不同（封裝 vs 基板）。**僅可記載：EMIB-T 的基板端把初期門檻設在 50%。**
+2. ⭐⭐⭐ **「把矽橋埋進基板」的代價首次被定位到供應鏈位置：良率風險自晶圓廠（中介層）換手到基板廠。**
+   ➜ 本 wiki「邊界外擴／責任轉移」論述的**新型態**——不是誰向外擴張，而是**良率風險換手**。
+3. ⭐⭐⭐ **獲利保證機制是新的產業工具：以商業合約買下供應商的良率學習曲線。**
+   ➜ 本 wiki 此前記錄的風險轉移皆為**技術性**（ASE/Deca 把公差預算自上游移到下游、Besi 讓治具遷就載具）。本件是**財務性**的第一例。
+   ➜ **新橫向論述候選**：「當良率學習曲線的成本落在供應商而收益落在買方時，買方會以合約把該成本買回來。」⚠ 單一來源，列候選不逕行升格。
+4. ⭐ **EMIB-T 首個確認客戶入庫**：Google TPU v9（2028 MP）、MediaTek 協同設計。與本 wiki 既有之「NVIDIA $3.5B MediaTek ECB 投資、NVLink Fusion XPU 生態系」（2026-09-01）並列 ➜ **MediaTek 同時出現在 NVIDIA 與 Google/Intel 兩條 XPU 路線上。**
+5. ⭐ **Ibiden 與 Shinko 皆為本 wiki 列管缺頁實體**，本篇是它們首次以「EMIB-T 良率關鍵路徑」身分出現 ➜ **建頁優先序上調。**
+
+⚠ 二手轉述，本 wiki 未取得欣興法說會逐字稿。

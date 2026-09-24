@@ -3,7 +3,7 @@ title: "先進封裝熱管理 / Thermal Management in Advanced Packaging"
 category: concept
 tags: [thermal-management, liquid-cooling, 3D-IC, CoWoS, heat-dissipation, TIM, ECTC-2025, GaN, power-delivery, co-design, patent-signal, delamination]
 created: 2026-04-25
-updated: 2026-09-22
+updated: 2026-09-24
 sources: [2025-12-01_semiengineering_thermal-management, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-02_trendforce_samsung-hbm5-computex2026, 2026-05-21_semieng_hi-roadmap-nature-paper-intel, 2026-08-13_semieng_1mw-rack-debate-thermal, 2026-04-27_semieng_semiconductor-materials-misbehave, 2026-08-21_trendforce_chip-packaging-heat-ai-bottleneck-cpo-stco, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer]
 related:
   - wiki/technologies/cowos.md
@@ -675,3 +675,50 @@ IBM 的作法是在同一接合區內分割「接合介電區」與「導熱材�
 ### ⭐ 為何這個區分重要
 本 wiki 既有的「**架構圍繞熱管理**」（Micron，2026-08-26）與「**兩相冷卻是下一個散熱轉型**」（Amkor CEO，2026-09-08）皆屬運作熱。若不區分，容易把 Intel 這類**製程熱**專利誤讀為產品散熱布局。
 ➜ 另一個連結：2026-09-21 已以物理量把 **Cu 熱膨脹 1 nm/mm/50 °C**、**退火前間隙 9–47 nm** 與 **775 µm 熱預算**連成同一條約束——**那條約束整條都屬製程熱**。本輪之後，製程熱有了自己的三個切入點，可獨立成節追蹤。
+
+---
+
+## ⭐⭐⭐ 2026-09-24 更新：熱管理取得「整合位置」三分法——D2C / D2P / 散熱片，及其取捨軸
+
+來源：[[sources/2026-09-24_paper_tudelft-direct-to-package-microfluidic]]（TU Delft × TNO × Nexperia, *Communications Engineering* 2026-03-25）
+
+> ⚠ **適用域**：該研究為**功率電子（QFN、Nexperia）**，非 AI/HPC 封裝。**絕對數值不可外推**；可用的是架構分類與機制。
+
+### 1. ⭐⭐⭐ 新軸線：整合位置
+
+| 架構 | 微流道位置 | 熱性能 | 製程代價 |
+|---|---|---|---|
+| **D2C**（direct-to-chip） | **半導體基板內** | 最佳 | 製造複雜、整合困難（Erp et al. 2020） |
+| **D2P**（direct-to-package）★本篇 | **封裝基板內** | Nusselt 數與 D2C 相當（>10） | **傳統後段製程即可**（黏晶、打線、封膠） |
+| 散熱片 | 封裝外 | 最差 | 體積大、耗冷卻液、**必須 TIM** |
+
+➜ **取捨軸：整合位置越靠近接面，熱性能越好，但製程越脫離既有後段產線。**
+➜ D2P 的主張正是「取得接近 D2C 的性能，同時留在傳統後段製程內」——**與本 wiki「把設計移到規格較鬆的區間」論述同型，但移動的是整合層級而非製程規格。**
+➜ 本頁此前以個案記載（CoWoS 微通道整合路線、Georgia Tech 晶圓級矽微通道 + eTSV、Amkor CEO McCann 預判之兩相冷卻）；本輪首次取得**分類架構**。
+
+### 2. 量化（功率電子場景）
+| 項目 | 數值 |
+|---|---|
+| 熱通量 | 最高 **~625 W/cm²** |
+| 穩態接面溫度 | 微流道 **~43 °C** / 散熱片 ~78 °C / 空氣 ~220 °C |
+| 溫降倍數 | vs 空氣 **6–7×**；vs 散熱片 **2–3×** |
+| 流道 | **0.3 × 0.5 mm** 蛇形，入出口長 ~50 mm |
+| 流量 | 0.1 / 0.15 / 0.2 mL/s |
+| 冷卻液體積 | **~2–4 mL**（對照 Tesla Model S 散熱系統 6.4 L） |
+| COP | **>10³** @ΔT=60 °C；**>10⁴** @ΔT=275 °C |
+| 最大輸入功率 | **~37–41 W** @ΔT=275 °C |
+| 上下銅板 | 各 0.1 mm |
+
+結構：三層銅（上板 0.1 mm + 蝕刻中層蛇形流道 + 下板 0.1 mm），層間以**銀填充環氧導電膠**接合；晶粒**銀燒結**（250 °C、無加壓、氮氣）直貼銅基板，**不需 TIM**。
+
+### 3. ⭐⭐⭐ 冷卻結構與封裝結構競爭同一塊面積
+**濕潤面積約為晶片 footprint 的 78%；其餘 ~22% 被接合用環氧佔去。**
+➜ 此前本頁未記錄此類代價。與本 wiki「同一參數服務兩個相反失效模式」系列同型，但**爭的是面積而非參數值**。
+➜ 新形式：**「封裝內的冷卻結構不是加上去的，是從別的功能手上要來的面積。」**
+
+### 4. 📌 追蹤點
+- **免 TIM**：本頁的熱論述中 TIM 一向被視為既定熱阻層。若「銀燒結直貼 + 封裝內微流道」可規避，**AI 封裝側是否有同型解法**為新追蹤點。
+- **相變流體**：作者列為後續工作，與 Amkor CEO McCann（2026-09-08）預判「兩相冷卻為下一散熱轉型」方向一致，但**本篇尚未實作**。
+
+### ⚠ 不得外推
+625 W/cm² 與 43 °C 皆在 QFN 功率元件、**輸入功率僅 37–41 W** 下取得。本 wiki 記載之 AI 封裝功耗為 **600 W → 4,100 W（2024→2029）**，晶片面積與熱分布完全不同。

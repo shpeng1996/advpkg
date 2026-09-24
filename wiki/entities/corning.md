@@ -3,7 +3,7 @@ title: "康寧 / Corning Incorporated"
 category: entity
 tags: [glass-substrate, TGV, materials, CPO, Corning]
 created: 2026-09-18
-updated: 2026-09-22
+updated: 2026-09-24
 sources:
   - 2026-08-06_epo_corning-small-diameter-tgv-adhesion
 related:
@@ -70,3 +70,27 @@ related:
 ➜ ⭐⭐⭐ **Corning WO2026164778A1（2026-08）的 Ti/Cu 黏著層 + 羥基富化 + 矽烷官能化 + 無電鍍種子層，正是針對第 ① 種模式的解。** 本頁 2026-09-18 記錄的「**Corning 賭界面可做牢 vs Intel 賭界面必失效**」兩條相反工程哲學，至此取得一個獨立第三方的確認：**該賭注的標的（種子層界面）確實是兩大失效模式之一**。⚠ **AMAT 未裁定哪一方對**——AMAT 自己的解是**多層 liner 應力緩衝**，等於同時處理 ①（附著）與 ②（應力傳遞），**是第三條路線**。
 
 ➜ ⚠ **列管空缺「Corning small via diameter 的實際數值」提問方式再次修正。** 本輪 Micromachines 綜述（2026-09-20）確立 TGV 剖面有**五種形態**（直壁／沙漏／等腰錐／倒錐／底切），且沙漏形的**腰部高度本身是獨立變數**。➜ 新提問形式：**「頂／腰／底何者，以及若為沙漏形，腰在什麼高度」**；並應先確認 Corning 的 TGV 屬五類中何者。
+
+---
+
+## 2026-09-24 更新：玻璃供應商的地位被重新定位——拋光等級決定下游良率上限
+
+來源：[[sources/2026-09-24_paper_planoptik-starting-surface-quality-tgv-chain]]（Plan Optik AG, IMAPS 22nd DPC 2026）
+
+**Plan Optik AG**（德國玻璃晶圓／基板供應商，Jonas Discher, Head of Sales WLP & AP；合作 TU Dresden、TU Clausthal、Fraunhofer ENAS、TU Chemnitz）提出：
+
+> **起始表面品質直接影響機械穩定性與製程良率**——蝕刻會**曝露原材的潛在微缺陷與次表面損傷**，使其成為應力集中點。
+
+以硼矽玻璃與熔融石英各自的「標準拋光 vs MDF 進階拋光」對照佐證。
+
+➜ ⭐⭐⭐ **本 wiki 的 TGV 因果鏈往上游延長一環，新首環是採購規格而非製程參數：**
+**原材次表面損傷 → 蝕刻曝露為應力集中點 → 破裂／良率／可靠度** → （既有）側壁形態 → 種子層覆蓋 → 附著不足 → 銅剝離
+➜ **完整鏈現為五環。這解釋了玻璃供應商（Corning、Plan Optik、NEG）的地位為何高於「原料商」：其交付的拋光等級決定下游的良率上限。**
+
+### 對 Corning 的具體意涵
+1. 本頁既有記載 Corning 自 2026-08 起以 **WO2026164778A1** 向下游 TGV 金屬化延伸（Ti/Cu 黏著層＋羥基富化＋矽烷官能化＋無電鍍種子層）。**Plan Optik 的論點顯示 Corning 還有一個更上游、更難被取代的槓桿：拋光與次表面損傷控制。**
+2. 📌 **列管空缺（Corning small via diameter）之提問方式第四次修正**：除「頂／腰／底何者、沙漏形的腰在什麼高度」之外，現應追加：**該數值是在何種起始拋光等級（raw / DSP / MDF）下量得**——否則無法分辨量到的是設計值還是原材品質的結果。
+3. ⚠ Plan Optik 未給出 MDF 拋光的量化規格（Ra、次表面損傷深度），故本項為**機制指認而非可比數值**。
+
+### 附帶：Corning 的 TGV 工程哲學對照再獲一個維度
+本頁既有論述「Corning 賭界面可做牢，Intel 賭界面必失效」。本輪 Intel 的**三件 liner 圍籬案**（雙 liner / 光聚合物 / 部分 liner，見 [[entities/intel]] 2026-09-24）使 Intel 一側的投注更明確；而 Okuno（同輪）以 ZnO 黏結層達成**破壞面落在本體而非界面**，則是 **Corning 一側論點的第一個獨立實驗支持**（但來自另一家公司、另一種化學）。

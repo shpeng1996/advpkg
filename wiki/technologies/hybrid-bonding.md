@@ -3,7 +3,7 @@ title: "混合接合 / Hybrid Bonding"
 category: technology
 tags: [3D, hybrid-bonding, Cu-Cu, SoIC, ECTC, advanced-packaging, DRAM, COP, 4F2, Sn-damascene, damascene-interconnect, PFAS-free, patent-signal, guard-ring, surface-activation]
 created: 2026-04-24
-updated: 2026-09-23
+updated: 2026-09-24
 sources: [2026-05-21_semiecosystem_ectc2026-cpo-hybridbonding-plp, 2026-04-24_initial-survey, 2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-03-01_3dincites_besi-packaging-power-shift, 2026-01-13_semiengineering_hbm4-microbumps, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-19_semieng_advanced-packaging-limits, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-03-27_3dincites_copper-grain-hybrid-bonding, 2026-03-02_semieng_making-hybrid-bonding-better, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2026-04-29_semiwiki_cea-leti-ectc2026-hybrid-bonding, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2024-02-09_semianalysis_hybrid-bonding-process-flow, 2026-05-19_semiconductor-digest_ev-group-ectc2026-hybrid-bonding, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-04-19_semiwiki_apple-m5-cucu-hybrid-bonding-shipped, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-18_imec_iii-v-chiplet-rf-laser-bonding, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-29_evgroup_ectc2026-hybrid-bonding-layer-transfer, 2026-06-29_thelec_skhynix-hybrid-bonding-equipment-order, 2026-06-05_semieng_intel-ectc-2026-emib-t-cpo-glass, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-14_trendforce_samsung-hbm-hiring-hybridbonding, 2026-07-16_semieng_fine-pitch-hb-high-volume, 2026-07-16_semieng_alt-materials-hybrid-bonding, 2026-06-08_irtnanoelec_d2w-hybrid-bonding-1um-pitch, 2026-05-28_imec_w2w-hybrid-bonding-200nm-pitch, 2026-09-09_acsaelm_microwave-anneal-cu-cu-150c-3min, 2026-08-21_scirep_copper-oxide-reduction-ar-h2-pulsed-plasma, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-03-29_damnang_hybrid-bonding-cmp-gating-factor, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-04-02_adeia_us20260096463a1-buildup-organic-dielectric-bonding, 2026-07-17_jcet_cn122421815a-asymmetric-bonding-interface, 2026-04-30_seoultech_us20260123559a1-hydrocarbon-plasma-low-temp-bonding, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer, 2023-09-13_nccavs_intel-cmp-dishing-requirement-vs-achieved, 2026-03-11_epo_adeia-cmp-for-hybrid-bonding-patent, 2026-09-01_chip_ru-bpr-ntsv-ion-beam-recess, 2026-02-10_epo_shanghai-univ-citric-acid-cu-reduction-sog, 2026-09-21_semiconductorx_cmp-share-lam-sabre-correction, 2026-09-16_jsandwich_cucu-diameter-nonmonotonic-local-optimum, 2026-07-21_lam_sabre-3d-is-ecd-not-cmp]
 related:
   - wiki/technologies/soic.md
@@ -1530,3 +1530,72 @@ NineScrolls（2026-06-01／2026-08-15 更新）主張五段鏈為 CMP → **CMP 
 - [ ] **Semes 的 W2W 機台規格與時程**
 - [ ] **ASML 是否確實進入 W2W 接合機市場**（目前僅專利分析推斷 + CEO 暗示）
 - [ ] 原「Hanmi ~2029 與 HBM4E 時程的關係」**改為**：Hanmi 是否缺席 HBM4E 世代（供應者問題已由 Hanwha／Besi／Semes 回答）
+
+---
+
+## ⭐⭐⭐ 2026-09-24 更新：W2W 已在 140 nm 間距——本頁的 pitch 敘述與限制鏈必須分列 W2W / D2W
+
+來源：[[sources/2026-09-24_paper_tel-w2w-140nm-pitch-hybrid-bonding]]（TEL, IMAPS 22nd DPC 2026）、[[sources/2026-09-24_paper_atotech-copper-microstructure-qtime]]（Atotech, 同會議）、[[sources/2026-04-16_semieng_glass-carrier-reuse-degradation]]
+
+### 1. ⭐⭐⭐ 敘述結構性修正：W2W 與 D2W 的 pitch 差 43–64 倍
+
+| | 量產／實證 pitch | 來源 |
+|---|---|---|
+| **D2W** | **6 µm**（TSMC SoIC-X）、**9 µm**（Intel Foveros Direct） | 既有 |
+| **W2W** | **140 nm**（無孔洞接合＋銅晶粒跨界面成長，TEM 確認） | TEL, DPC 2026 |
+
+➜ **本頁此前把「混合接合 pitch 卡在 6–9 µm」寫成整體狀態，應改為「D2W 卡在 6–9 µm；W2W 已在 140 nm」。**
+➜ 與 2026-09-23 取得之市場結構（**W2W ≈95%、D2W 僅 4.5%（US$275M/>US$6B）**）互相印證：**D2W 是難而新的那一塊，既不是大的、也不是領先的那一塊。**
+
+### 2. ⭐⭐⭐ 限制鏈的適用範圍必須標註為「僅 D2W」
+
+本 wiki 2026-09-19 建立之限制鏈：**①表面平坦度 ~0.2 nm > ②die 翹曲 <100 nm > ③機台對準 100 nm**。
+- **W2W 沒有第②層**（整片晶圓，無逐 die 翹曲項）
+- **W2W 的第③層已達 <50 nm 實測**（冠軍晶圓；75% 的殘差 <30 nm；三片熔融接合晶圓 99.5% 點位 <40 nm）；新硬體方案模擬可至 **14.6 nm M+3σ**
+➜ **限制鏈自此標註「僅適用 D2W」。**
+
+### 3. TEL 140 nm 載具量化（DPC 2026）
+| 項目 | 數值 |
+|---|---|
+| 未最佳化殘差（沿用 500 nm 配方） | 80–110 nm |
+| 最佳化後（T17） | <50 nm；Rx 41.2 / Ry 49.4 / Rs 50.3 nm |
+| 4 項殘差 M+3σ | Res X 85.6 / Res Y 111.4 nm |
+| 線性項 | Tx 0.1 nm、Ty −13.1 nm、旋轉 0.07 µrad、縮放 0.13 ppm |
+| 新硬體（**模擬**） | 70 nm → **14.6 nm M+3σ** |
+
+⚠ **載具僅有接合墊，無電性測試**（作者列為 next step：多層 140nmP 載具）。**140 nm 目前只證明「接得起來」，未證明「導得通、可靠」。**
+⭐ **Y 方向錯位較高，歸因於六角形接合墊佈局** ➜ **版圖對稱性本身進入對準預算**；本 wiki 此前記錄的錯位來源皆為製程/設備側，這是第一個**設計側**來源。
+⭐ TEL 自列應用為 SRAM-on-Logic、3D NAND、CIS、3D-SoC——**皆 W2W，無一為 HBM**，與 SK hynix「HB 延後至 HBM5」一致。
+
+### 4. ⭐⭐⭐ Q-time 是兩個獨立機制共用的同一工程量（Atotech）
+
+本 wiki 2026-09-22 已把「惰性環境 Cu 氧化相門檻」的提問方式修正為「實務形式是**時間窗（queue time）**而非溫度門檻」。Atotech 全文顯示 Q-time 另有**第二個完全獨立的機制**：
+
+| | 機制 | 可操作變數 | 量值 |
+|---|---|---|---|
+| 既有 | **表面氧化**（對數成長） | 環境（惰性/真空） | 數十分鐘–數小時 |
+| **新增** | **體材再結晶** | **電鍍電流density、摻雜** | **0.5 ASD >3 週 / 2.0 ASD <2 小時** |
+
+➜ **必須分開記載，否則「Q-time 短」會被誤歸於單一原因。** fg-Cu 的明文製程要求為「**Cu-Cu 接合前不得再結晶（Q-time > 1 個月）**」。
+
+### 5. ⭐⭐⭐ 三種 ECD 銅無一全勝——「最佳值是區間不是極值」的第一個離散版本
+
+| | nt-Cu | cg-Cu | fg-Cu（摻雜） |
+|---|---|---|---|
+| 孔填充 | **不佳** | 優異 | 優異 |
+| **CMP 相容性** | **困難（粗糙度、硬度）** | 已驗證 | 預期良好 |
+| 跨界面晶粒成長 | 輕微 | 條件相依 | **優異** |
+| 接合溫度 | **<200 °C** | **>300 °C** | 可調（摻雜） |
+
+- 再結晶溫度可由摻雜調整：Spherolyte Cu DB 起始 ~65 °C / 峰值 ~96 °C；**Everplate Cu 300 起始 ~120 °C / 峰值 ~155 °C**
+- 再結晶兩條路徑：**底部向上**（與種子層磊晶，常自**孔壁**起始）／**應力誘發**（孤立大晶粒未連種子層 ＝ 內應力為根因）
+- ⭐⭐⭐ **孔徑越小、孔越深 ⇒ 再結晶越快 ⇒ Q-time 越短。產業推進的微縮方向正是讓貯存窗口變窄的方向。**
+
+➜ ⭐⭐⭐ **「CMP 是限制層」取得全新作用方向：CMP 反向限制上游材料選擇。** nt-Cu 因 CMP 困難（粗糙度、硬度）而在選材表上被扣分——不是「CMP 做不到」，而是「**因為 CMP 做不到，某些銅微結構不能用**」。與 2026-09-21 復旦 Ru nTSV「金屬硬到磨不動時 CMP 直接消失」為**同一機制的相反結局**。
+
+### 6. ⭐⭐ 顆粒污染：第二個獨立來源（仍無量化）
+**Amkor（Mike Kelly, VP）具名表態：顆粒污染是 OSAT 導入混合接合的「第一級關切（first-order concern）」**（SemiEng 2026-04-16）。
+- 首例為 NineScrolls（2026-09-22，單一來源、無數據）
+➜ 「CMP 後清洗是第二大良率槓桿」空缺自「單一來源」升為**「兩個獨立來源、皆無量化」**。**維持不逕行插入限制鏈第四環。**
+
+⚠ Atotech 全文標示 "MKS CONFIDENTIAL"，為供應商公開發表，無第三方驗證，未給接合強度或良率絕對值。

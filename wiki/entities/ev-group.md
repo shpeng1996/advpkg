@@ -3,7 +3,7 @@ title: "EV Group (EVG)"
 category: entity
 tags: [equipment, hybrid-bonding, wafer-bonding, maskless-lithography, layer-transfer]
 created: 2026-04-25
-updated: 2026-09-23
+updated: 2026-09-24
 sources: [2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-05-19_semiconductor-digest_ev-group-ectc2026-hybrid-bonding, 2026-06-29_evgroup_ectc2026-hybrid-bonding-layer-transfer, 2026-05-28_imec_w2w-hybrid-bonding-200nm-pitch, 2026-06-02_intel_ectc2026-emib-t-cpo-glass]
 related:
   - wiki/technologies/hybrid-bonding.md
@@ -139,3 +139,24 @@ family 57223662 為**較早的家族**，本件為 TW 階段公開，**不可解
 ### 既有定位補充
 - 本輪 AMAT 官方頁再次確認 **EVG = AMAT 的 W2W 混合接合合作夥伴**（Besi 為 D2W）。
 - ⚠ 本輪 TheElec 市場分項顯示 **W2W 占混合接合市場約 95%** ➜ **EVG 所在的區段遠大於 D2W 三強所在的區段**，本 wiki 此前未記錄此比例。
+
+---
+
+## 2026-09-24 更新：EVG 的「透明性要求」推論鏈延長一節，並取得實驗佐證（非 EVG 自身資料）
+
+來源：[[sources/2026-09-24_paper_kimm-excimer-laser-debonding-threshold]]（KIMM × SeoulTech × ZEUS, JLMN 2026-08）
+
+本 wiki 2026-09-23 自 **EVG TW202611995A**（雷射可溶層解接合）推得一條**本 wiki 自有的推論鏈**（非 EVG 明述）：
+> 解接合方式 → 連接層與載板須對該輻射透明 → 排除多數金屬載板 → **載板材料被解接合製程反向決定** → 而載板材料又決定翹曲
+
+### 本輪的實驗佐證與延長
+KIMM 的 308 nm 準分子雷射解接合研究顯示：在**反轉結構**（玻璃 / 黏著層 / 釋放層 / Si）中，**黏著層（C1301）也必須對 308 nm 透明**——這是反轉結構可行的前提。
+
+➜ ⭐⭐⭐ **更新後的鏈：解接合波長 → 載板 *與* 位於釋放層之前的所有層皆須透明 → 材料選擇空間逐層收窄。**
+➜ 比原推論**嚴格一級**（不只載板，而是光路上的每一層），且**本輪為實驗佐證而非推論**。
+➜ 相關量化（KIMM）：釋放層 T1107 厚 2.2 µm、**T = 0.1% @308 nm**、OPD ≈189 nm；**單發解接合閾值 >220 mJ/cm²**（160 mJ/cm² 需 10 發）。
+
+### 📌 對 EVG 的追蹤點
+本 wiki 目前**沒有 EVG 自身對「光路上各層透明度規格」的公開表述**。追蹤方式：EVG 後續專利或 ECTC/DPC 發表是否出現**黏著層透射率**或**光路預算**的具體規格；若出現，可將上述推論鏈自「本 wiki 推論」升格為「供應商明述」。
+
+（另記：2026-09-23 已載「輪替名單應按題材而非按公司」；本輪的 EVG 相關進展正是**由第三方論文帶來**，而非 EVG 自身檢索——支持該項作業修正。）

@@ -3,7 +3,7 @@ title: "美光科技 / Micron Technology"
 category: entity
 tags: [memory, HBM4, DRAM, NAND, CapEx, Virginia, Idaho, New-York, onshoring]
 created: 2026-05-03
-updated: 2026-09-19
+updated: 2026-09-24
 sources: [2025-12-18_trendforce_micron-capex-hbm4, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-03-17_trendforce_gtc2026-key-takeaways, 2025-08-05_3dincites_iftle636-samsung-lsb-micron-virginia, 2026-01-23_trendforce_hbm4e-development, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-26_semieng_chip-week-144, 2026-06-25_thelec_micron-q3-fy2026-record, 2026-07-06_trendforce_micron-hiroshima-fab-hbm-1gamma, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-10_tomshardware_micron-250b-us-investment-globalwafers, 2026-07-10_semieng_chip-week-146, 2026-08-21_semieng_chip-week-152]
 related:
   - wiki/technologies/hbm4.md
@@ -288,3 +288,28 @@ Micron 的 HBM 熱管理策略與 Samsung（HPB）和 SK Hynix（iHBM）不同�
 ### 論述立場：Lau 綜述的機構歸屬（待確認）
 OpenAlex 將 John H. Lau 兩篇 JMEP 2026-09-15 綜述（Cu-Cu 混合接合、玻璃封裝）的機構標示為 **Micron Corporation**。若屬實，這是 Micron 在混合接合與玻璃封裝論述上的公開立場來源，且與其混合接合專利公開日相隔僅 5 天。
 ⚠ 機構歸屬來自 OpenAlex 自動比對，**未經一手確認**。
+
+---
+
+## 2026-09-24 更新：專利軌輪替完成——US20260282214A1 貫穿封裝錨加強件＋阻尼裝置；兼記檢索式失效
+
+來源：[[sources/2026-09-24_patent_micron-stiffener-through-package-anchors]]
+
+### 本輪命中（`pa="micron technology" and ti,ab="package" and pd within "2026"`，共 3 件）
+| 公開號 | family-id | 公開日 | 內容 |
+|---|---|---|---|
+| **US20260282214A1** | 92460401 | 2026-09-17 | 加強件裝置：上加強件 + 下加強件（含**貫穿封裝錨**）+ **阻尼裝置** |
+| US20260283054A1 | 101295473 | 2026-09-17 | 低溫（cryogenic）環境封裝：**高熵合金核心 + 銦摻雜焊料塗層**之焊球、金屬核心基板 |
+| WO2026049956A1 | 98899693 | 2026-03-05 | 記憶體封裝內加入含**冗餘儲存**之附加晶粒（取代模組上元件） |
+
+### 為何重要
+1. ⭐⭐ **「貫穿封裝錨」把加強件自表面貼附改為機械鎖固——加強件不再只抵抗彎矩，而是接管了部分板的結構角色**；且引入**阻尼（動態）**而非僅剛度（靜態）。
+2. ⭐⭐ **新分線：翹曲論述應區分「製程翹曲」與「服役期機械負載」。** 本 wiki 的翹曲討論幾乎全集中在製程階段（回流、debonding、molding）。本件處理**封裝成品在使用中的機械行為**，是「服役期」線的第一個具體證據。
+   ➜ 與 2026-09-22 把「熱」拆為**運作熱／製程熱**為同一手法的第二次應用。
+
+### ⚠⚠ 作業面：檢索式失效（重要）
+**本輪 Micron 查詢僅命中 3 件，且無任何 HBM 堆疊或混合接合相關案件。**
+- 這**不得解讀為 Micron 在該領域無布局**——而是檢索式失效：Micron 的 HBM 結構案件未以 "package" 出現於標題/摘要。
+- **同型教訓**：2026-09-23 已記「Amkor 以標題檢索幾乎無效（85 件標題幾乎皆為 ELECTRONIC DEVICES AND METHODS OF MANUFACTURING）」。
+➜ **下輪 Micron 應改以技術詞（"through silicon via"、"stack"、"hybrid bond"、"microbump"、"base die"）收斂，而非 "package"。**
+（低溫封裝件屬低溫/太空應用，與本 wiki 主線關聯薄弱，僅備查。）

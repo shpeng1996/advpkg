@@ -3,7 +3,7 @@ title: "Tokyo Electron (TEL) — 東京威力科創"
 category: entity
 tags: [TEL, Tokyo-Electron, equipment, RDL, Eteris, advanced-packaging-equipment, Japan]
 created: 2026-04-26
-updated: 2026-09-20
+updated: 2026-09-24
 sources: [2026-01-23_trendforce_chip-tools-tel-asml, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer]
 related: [wiki/entities/besi.md, wiki/technologies/hybrid-bonding.md, wiki/concepts/advanced-packaging-market.md]
 ---
@@ -106,3 +106,36 @@ TEL 在先進封裝設備的定位是 **RDL 製程設備全流程覆蓋**，與 
 4. **「共價鍵結」的明示**把接合機制自「凡得瓦力 → 退火後形成共價鍵」的兩階段敘述，改為由外加能量直接驅動共價鍵形成。若接合層可流動／可固化，初始接觸就不必倚賴奈米級平坦度 ➜ 這是繞過 CMP 限制的候選思路。⚠ 推論，待驗證。
 
 ⚠ 兩件摘要**均無量化數值**（無固化溫度、波長、時間、接合強度、pitch），亦未說明是否適用於含金屬的混合接合。**專利為前瞻訊號，非 TEL 已出貨之能力。**
+
+---
+
+## ⭐⭐⭐ 2026-09-24 更新：TEL 於 140 nm 間距達成無孔洞 W2W 混合接合（IMAPS 22nd DPC 2026）
+
+來源：[[sources/2026-09-24_paper_tel-w2w-140nm-pitch-hybrid-bonding]]
+
+作者群橫跨三個 TEL 實體：**TEL Technology Center America LLC**（Tuchman, Netzband, Greklek, Son, Raley）、**Tokyo Electron Kyushu Limited**（Tan, Taniguchi, Nagata）、**Tokyo Electron America Inc**（Ip）。
+
+### 成果
+| 項目 | 數值 |
+|---|---|
+| 測試載具間距 | **140 nm**（僅接合墊） |
+| 未最佳化殘差（沿用 500 nm 配方） | 80–110 nm |
+| 最佳化後（冠軍晶圓 T17） | **<50 nm**；Rx 41.2 / Ry 49.4 / Rs 50.3 nm |
+| 4 片晶圓中殘差 <30 nm 之比例 | **75%** |
+| 三片標準熔融接合晶圓 | **99.5% 點位殘差 <40 nm** |
+| 4 項殘差 M+3σ | Res X 85.6 / Res Y 111.4 nm |
+| 線性項 | Tx 0.1 nm、Ty −13.1 nm、旋轉 0.07 µrad、縮放 0.13 ppm |
+| 新硬體方案（**多物理場模擬**） | 70 nm → **14.6 nm M+3σ** |
+
+- 退火後 TEM：**無孔洞接合，銅晶粒跨越接合界面成長**
+- 製程：表面活化電漿（SAP）成 Si-OH → DIW 沖洗 → 對準接合 → 退火（Si-O-Si + Cu-Cu）→ 邊緣修整與研磨
+- 自列應用：SRAM-on-Logic、3D NAND、CIS、3D-SoC
+- 引用其自家先行工作：N. Ip,「Distortion Simulation for Direct Wafer-to-Wafer Bonding Process」, ECTC 2023
+
+### 為何重要
+1. ⭐⭐⭐ **TEL 由此成為本 wiki 在 W2W 側的主要設備證據來源。** 本頁此前的 TEL 定位為「RDL 製程設備領導者」＋Kumamoto 研發基地＋Eteris 合資；**接合設備能力此前無量化記載**。
+2. ⭐⭐⭐ **W2W 與 D2W 的 pitch 差 43–64 倍**（D2W 量產 6–9 µm）➜ 促成本 wiki 對混合接合敘述的結構性修正與限制鏈適用範圍標註，詳見 [[technologies/hybrid-bonding]] 2026-09-24 更新。
+3. ⭐⭐ **Y 方向錯位較高，歸因於六角形接合墊佈局** ➜ **版圖對稱性本身進入對準預算**（本 wiki 第一個設計側錯位來源）。
+4. ⭐⭐ 銅晶粒跨界面成長的 TEM 證據，與同會議 Atotech 的化學側機制（fg-Cu 再結晶）**互為獨立佐證**。
+5. ⚠ **載具僅有接合墊，無電性測試**（next step：多層 140nmP 載具）；14.6 nm 為**模擬值**。
+6. 📌 **設備商輪替狀態更新**：TEL 在 W2W 側已有一手量化發表；本 wiki 在 **D2W 側**的設備量化仍僅有 AMAT×Besi（Kinex 100 nm @3σ 量產、2026 新機 50 nm、路線圖 <25 nm）。

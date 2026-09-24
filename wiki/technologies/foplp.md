@@ -3,7 +3,7 @@ title: "FOPLP — 扇出面板級封裝 / Fan-Out Panel-Level Packaging"
 category: technology
 tags: [fan-out, panel-level, TSMC, Samsung, ASE, Powertech, Innolux, CoPoS, InFO, cost-reduction, delamination, DCB, CTE]
 created: 2026-05-03
-updated: 2026-09-23
+updated: 2026-09-24
 sources: [2026-07-31_trendforce_ase-capex-record-10-5b-leap-foplp, 2025-09-12_trendforce_foplp-competitive-2025, 2026-04-13_trendforce_copos-pilot, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-21_3dincites_acm-wlp-plp-process-trends, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-15_digitimes_manz-310mm-foplp-ecd-equipment, 2026-06-13_digitimes_linkotech-foplp-rollout-traction, 2026-06-20_prnewswire_manz-asia-310mm-ecd, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_digitimes_tsmc-foplp-timeline-skepticism, 2026-07-06_trendforce_cfmee-plp2000-china-first-plp, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-08-06_siliconbox_500m-units-panel-scale, 2026-02-18_siliconbox_ep4697377a1-fanout-panel-metal-sealing-ring, 2026-07-28_xianfeng_cn122476946a-alignment-mark-protection, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo]
 related:
   - wiki/technologies/copos.md
@@ -651,3 +651,62 @@ DIGITIMES 2026-09-15 訪談 Corning，標題明確把 **CPO、玻璃核心基板
 - [ ] **面板線同時承接功率模組能否補足利用率**（本 wiki 推論，待證）
 - [ ] **ASE/Deca 公差表是否有實測分布或良率實績**（目前僅設計規則宣稱）
 - [ ] 原「FOPLP 翹曲峰值在 debonding 是否有第二個獨立來源」**改記為**：已有一個獨立實測支持「回流不是峰值」這半句；仍缺 debonding 階段的直接量測
+
+---
+
+## ⭐⭐⭐ 2026-09-24 更新：載板不是可無限攤提的固定成本；解接合的 220 mJ/cm² 單發閾值；透明性要求向下傳播一層
+
+來源：[[sources/2026-04-16_semieng_glass-carrier-reuse-degradation]]、[[sources/2026-09-24_paper_kimm-excimer-laser-debonding-threshold]]
+
+### 1. ⭐⭐⭐ 玻璃載板重複使用會劣化——成本模型的新變數
+**SemiEng（2026-04-16）**：**重複使用之玻璃載板在約 43 µm 處出現崩缺與微缺陷；衝擊韌性較新品「明顯下降」。**
+➜ **載板不是可無限攤提的固定成本。** 這直接影響 Lujan（IMAPS DPC 2026）成本分析的邊界。本 wiki 2026-09-23 已立常駐規則「任何降本 N% 宣稱都要追問會計邊界」——**載板攤提次數就是一個具體的邊界項**，且本輪首次有**量測到的劣化**而非假設支撐。
+⚠ 「~43 µm」的量測條件（重複使用次數、熱歷程）未載明，**不可換算為載板壽命次數**。
+
+### 2. ⭐⭐⭐ 308 nm 準分子雷射解接合：閾值行為與結構選擇（KIMM × SeoulTech × ZEUS, JLMN 2026-08）
+
+| 項目 | 數值 |
+|---|---|
+| 波長／光束 | 308 nm；勻化平頂 **200 mm × 0.4 mm** |
+| 能量密度（最大／使用） | 460 / **140–300 mJ/cm²** |
+| **單發解接合閾值** | **>220 mJ/cm²** |
+| 160 mJ/cm² 所需發數 | **10** |
+| 量產建議窗口 | **220–300 mJ/cm²、0% 重疊、單發**（以 WPH 計最佳） |
+| 釋放層 T1107 | 2.2 µm；**T = 0.1% @308 nm**；OPD ≈189 nm |
+| 黏著層 C1301 | 45–50 µm |
+| 殘留釋放層厚（反轉、220 mJ/cm²、0%） | 2.32 µm |
+| 烘烤 | 180 °C 與 220 °C，各 300 s |
+| 適用背景 | 厚度 **<30 µm** 超薄晶圓易翹曲破裂 |
+
+⭐⭐ **220 mJ/cm² 是閾值而非斜率**：低於它，代價不是「稍差」而是**發數自 1 跳到 10（吞吐降一個數量級）**。
+➜ 本 wiki「關鍵參數不是單調的」系列再添一例，但型態為**階梯（閾值）**而非既有六例的**區間**，**應分開記載**。
+
+### 3. ⭐⭐⭐ 結構選擇決定「清潔負擔落在誰身上」
+
+| 結構 | 疊構 | 解接合後殘留物落點 |
+|---|---|---|
+| 標準 | 玻璃 / 釋放層 / 黏著層 / Si | **玻璃載板**（消耗品／重複使用品） |
+| **反轉** | 玻璃 / 黏著層 / 釋放層 / Si | **Si 元件晶圓**（產品）；但解接合面平滑（STEM 顯示 Pt 層均勻） |
+
+作者選**反轉結構**（因面平滑），即選擇**把清潔負擔放在產品側**。
+➜ 與本頁第 1 節（載板重複使用會劣化）合看：**載板側的負擔有代價，因為載板不是無限耐用。這是「清潔成本 vs 載板壽命」的真實交換，而非單純製程偏好。**
+➜ 本 wiki「把負擔移到別處」論述的新型態（前例皆為公差預算下移：ASE/Deca 微影層、Besi 機構層）。
+
+### 4. ⭐⭐⭐ 透明性要求向下傳播到第二層——2026-09-23 之推論鏈延長且取得實驗佐證
+- 原推論（自 **EVG TW202611995A**）：解接合方式 → 載板須透明 → 排除多數金屬載板 → **載板材料被解接合製程反向決定** → 載板材料決定翹曲
+- 本篇實驗：**在反轉結構中，黏著層（C1301）也必須對 308 nm 透明**——此為反轉結構可行的前提
+➜ **更新鏈：解接合波長 → 載板 *與* 位於釋放層之前的所有層皆須透明 → 材料選擇空間逐層收窄。**
+➜ 比原推論嚴格一級，且**本篇為實驗佐證而非推論**。
+
+### 5. 📌 列管空缺：部分進展，不結清
+「**FOPLP 翹曲峰值在 debonding 階段是否有第二個獨立來源**」：
+- **可用**：解接合能量閾值行為、殘留物落點、結構選擇後果，首次取得一手實驗數據
+- **不可用**：本篇為**晶圓級（W）非面板級（P）**，且**未直接量測 debonding 過程中的翹曲**
+➜ 空缺**維持開啟**，提問方式收斂為：「**在單發、220–300 mJ/cm² 窗口下，面板級載板的翹曲峰值是否仍落在 debonding？**」
+
+### 6. 其他（SemiEng 2026-04-16）
+- **310 × 310 mm** 中間格式受到認真對待；42-reticle 設計跨距約 100 × 150 mm 或更大（單 reticle ≈26 × 33 mm）；Synopsys 預期本十年走向「數十個 reticle」
+- 先進設計含 **30 個以上埋入式矽橋**（對照 Intel Clearwater Forest 的 12 EMIB tiles）➜ 橋接晶粒數自 10 級距走向 30+，使 ASE/Deca「Adaptive Patterning 使良率不隨橋接晶粒數惡化」之價值隨數量放大
+- RDL 目標解析度降至 **2 µm 甚至以下**
+- Brewer Science：HBM DRAM 晶粒的極限減薄需要新的暫時接合材料
+⚠ 該篇**未給出面板 vs 晶圓的成本或吞吐量對比數字**。

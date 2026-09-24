@@ -3,7 +3,7 @@ title: "TSV — Through-Silicon Via / 矽穿孔"
 category: technology
 tags: [TSV, HBM, interposer, 3D-IC, CoWoS, manufacturing, backside-power, advanced-packaging, radiation, redundancy, reliability]
 created: 2026-08-10
-updated: 2026-09-22
+updated: 2026-09-24
 sources: [2026-04-22_semieng_tsv-complexity-manufacturing-bottleneck, 2026-08-21_semieng_chip-week-152, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-08-21_scirep_copper-oxide-reduction-ar-h2-pulsed-plasma, 2026-06-08_irtnanoelec_d2w-hybrid-bonding-1um-pitch, 2026-03-13_kaneka_jp2026047137a-glass-core-polyimide-quantified, 2026-08-10_screp_low-k-organic-buffer-tgv-cu-metallization, 2026-08-04_jmrt_vacuum-assisted-void-free-cu-fill-tgv, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring]
 related:
   - wiki/technologies/hbm4.md
@@ -374,3 +374,37 @@ JP2026047137A：聚醯亞胺絕緣層覆蓋貫孔側壁導電層，限定 **醯�
 - ⚠ 無任何電性、熱阻或 pitch 數值；申請人為中國中型業者，**不可讀為產業共識**。
 
 ⚠ **專利是前瞻訊號，非已出貨能力。**
+
+---
+
+## ⭐⭐⭐ 2026-09-24 更新：貫孔的瓶頸在金屬化不在成孔——濺鍍在 AR≈10 失效，成孔可達 AR 20–25:1
+
+來源：[[sources/2026-09-24_paper_okuno-zno-seed-sputtering-ar-wall]]、[[sources/2025-09-18_semieng_tgv-etch-vs-metallization-ar-mismatch]]、[[sources/2026-09-24_patent_cit-ase-tgv-copper-resistance]]
+
+本輪的發現雖以 **TGV**（玻璃）為載體，但其結論適用於整個「深貫孔金屬化」問題域，故在本頁同步記載。
+
+| 製程段 | 能力上限 | 來源 |
+|---|---|---|
+| 成孔（深紫外雷射蝕刻，玻璃） | **AR 20:1 – 25:1** | SemiEng 2025-09 |
+| **濺鍍種子層** | **AR ≈10 即難以成膜**（φ80 µm × 厚 0.8 mm） | **Okuno, IMAPS DPC 2026** |
+| 濕製程種子層 + PPR/DC 填充 | **AR 10–11 無孔洞** | Okuno 實績 |
+
+➜ ⭐⭐⭐ **「深寬比」在成孔端與金屬化端的能力相差一倍以上；受限的一端是金屬化。**
+➜ 與本頁既有之「真空輔助無孔洞 Cu 填充 AR10」（2026-09-20）**同一數量級**，且兩者皆為**金屬化端**的數字 ➜ **AR ≈10 是目前深貫孔金屬化的共同天花板，跨越玻璃與矽兩種基材。**
+
+### PVD 深寬比牆的三條互斥解法（本輪同時到齊）
+| 路線 | 代表 | 策略 |
+|---|---|---|
+| ① 底部向上電鍍 | Fraunhofer IZM；Intel US20260191064A1 | 放棄側壁種子層 |
+| ② **全濕式種子層** | Okuno（ZnO 黏結層） | 放棄真空製程 |
+| ③ **改良濺鍍（ASE）** | CIT Co.（KR）EP4800151A1 | 不放棄 PVD |
+
+### ⭐⭐ 新驗收指標：孔電阻（而非僅幾何與形貌）
+- **CIT EP4800151A1** 請求項明文 **上下電阻 ≤0.1 Ω** ——量的實為**孔內覆蓋均勻度**（側壁不均會使上下量測值分歧）
+- **Plan Optik**（學術側）：**有效導電率低於塊材銅 ➜ 孔電阻上升**；**側壁粗糙度直接影響有效導電率**
+➜ 兩個獨立來源、不同角度，指向同一物理量。
+⚠ CIT 未給孔徑/厚度/量測方法，**不可與其他來源的貫孔電阻並列比較**；Plan Optik 未給導電率比值。
+
+### ⭐⭐ 銅微結構與深寬比的新耦合（Atotech, IMAPS DPC 2026）
+**孔徑越小、孔越深 ⇒ 細晶銅再結晶越快 ⇒ Q-time 越短**（0.5 ASD >3 週 / 2.0 ASD <2 小時）。
+➜ **深寬比同時壓迫「鍍得進去」與「鍍完之後撐得住」兩端。** 詳見 [[technologies/hybrid-bonding]] 2026-09-24 更新第 4–5 節。

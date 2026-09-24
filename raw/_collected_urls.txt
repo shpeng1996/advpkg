@@ -592,3 +592,18 @@
 2026-09-23 | https://doi.org/10.4071/001c.167502 | raw/papers/2026-03-05_imapspdf_ase-deca-adaptive-patterning-bridge-placement-tolerance.md | ASE/Deca: bridge placement +-3um -> +-10-40um (3-13x)
 2026-09-23 | https://doi.org/10.4071/001c.167027 | raw/papers/2026-03-05_imapspdf_aoi-electronics-panel-level-reliability-ev-inverter.md | AOI Electronics (NOT TEL) panel reliability; EV inverter
 2026-09-23 | https://doi.org/10.3390/s26185939 | raw/papers/2026-09-19_openalex_au-au-surface-activated-bonding-stricter-than-tcb.md | Au-Au: TCB deforms asperities, so RT bonding is stricter
+2026-09-24 | https://www.techtimes.com/articles/327959/20260923/boe-completes-glass-core-substrate-qualification-ships-customers-chip-level-testing.htm | raw/articles/2026-09-23_techtimes_boe-glass-core-substrate-qualification.md | BOE玻璃核心基板產線認證；20層9-2-9；良率60-70%
+2026-09-24 | https://www.chaincatcher.com/en/article/2281751 | raw/articles/2026-08-10_chaincatcher_intel-emib-t-yield-50pct-substrate-suppliers.md | Intel EMIB-T初期量產目標良率僅50%；獲利保證機制
+2026-09-24 | https://semiengineering.com/panel-level-packagings-second-wave-meets-engineering-reality/ | raw/articles/2026-04-16_semieng_panel-level-packaging-second-wave-engineering-reality.md | 面板二波：玻璃載板重複使用43µm崩缺、韌性下降
+2026-09-24 | https://semiengineering.com/glass-substrates-gain-momentum/ | raw/articles/2025-09-18_semieng_glass-substrates-gain-momentum.md | 玻璃基板動能：TGV成孔AR20-25:1對照金屬化AR10
+2026-09-24 | EPO:100212955:JP2026119036A | raw/patents/2026-09-24_JP2026119036A_intel-double-liner-tgv.md | Intel TGV雙liner：以楊氏模數區分兩層
+2026-09-24 | EPO:96221293:EP4800151A1 | raw/patents/2026-09-24_EP4800151A1_cit-atomic-sputtering-epitaxy-tgv-copper.md | CIT原子層濺鍍磊晶TGV銅；上下電阻≤0.1Ω
+2026-09-24 | EPO:99763638:US20260136966A1 | raw/patents/2026-09-24_US20260136966A1_intel-photopolymer-liner-tgv.md | Intel TGV光聚合物liner（可微影圖案化）
+2026-09-24 | EPO:96012658:CN122439424A | raw/patents/2026-09-24_CN122439424A_dongwoo-glass-organic-reinforcement-layer.md | Dongwoo玻璃基板有機強化層以壓縮力抑翹曲
+2026-09-24 | EPO:92460401:US20260282214A1 | raw/patents/2026-09-24_US20260282214A1_micron-stiffener-through-package-anchors-dampers.md | Micron貫穿封裝錨加強件＋阻尼裝置
+2026-09-24 | https://doi.org/10.4071/001c.167735 | raw/papers/2026-09-24_openalex_tel-w2w-140nm-pitch-hybrid-bonding-misalignment.md | TEL W2W 140nm間距混合接合；殘差<50nm
+2026-09-24 | https://doi.org/10.2961/jlmn.2026.02.2010 | raw/papers/2026-09-24_openalex_kimm-308nm-excimer-laser-debonding-tbdb.md | KIMM 308nm準分子雷射解接合；220mJ/cm²單發閾值
+2026-09-24 | https://doi.org/10.4071/001c.167486 | raw/papers/2026-09-24_openalex_atotech-low-temp-hybrid-bonding-copper-microstructure.md | Atotech低溫混合接合銅微結構；Q-time 2h–3週
+2026-09-24 | https://doi.org/10.4071/001c.167498 | raw/papers/2026-09-24_openalex_okuno-zno-binder-glass-seed-high-ar-through-hole.md | Okuno ZnO黏結層玻璃種子；濺鍍AR≥10失效
+2026-09-24 | https://doi.org/10.4071/001c.167503 | raw/papers/2026-09-24_openalex_planoptik-glass-core-material-tgv-metallization-requirements.md | Plan Optik玻璃核心：起始表面品質為TGV鏈新首環
+2026-09-24 | https://doi.org/10.1038/s44172-026-00620-9 | raw/papers/2026-09-24_natcommeng_direct-to-package-microfluidic-cooling.md | TU Delft D2P封裝內微流道冷卻625W/cm²

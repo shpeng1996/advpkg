@@ -3,7 +3,7 @@ title: "先進封裝市場 / Advanced Packaging Market"
 category: concept
 tags: [market, forecast, CAGR, supply-chain, HBM, chiplet, geopolitics, equipment, SIA, Omdia, Yole, WFE, substrate-market, framework]
 created: 2026-04-24
-updated: 2026-09-23
+updated: 2026-09-24
 sources: [2026-07-31_semieng_chip-week-149, 2026-04-24_initial-survey, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2026-01-23_trendforce_chip-tools-tel-asml, 2026-03-05_trendforce_intel-emib-billions, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2025-12-18_trendforce_micron-capex-hbm4, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2025-05-13_trendforce_top10-osat-2024, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-04-16_ontoinnovation_dragonfly-g5-qualified, 2026-06-23_communicationstoday_foplp-glass-substrate-market-8b-2030, 2026-06-29_trendforce_china-osat-tongfu-jcet-investment, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-26_semieng_chip-week-144, 2026-07-01_trendforce_ase-price-hike-20pct, 2026-07-04_semieng_chip-week-145, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-07-03_trendforce_anthropic-samsung-advanced-packaging, 2026-05-08_trendforce_ajinomoto-abf-1b-land-buy-2032-margins, 2026-07-24_semieng_chip-week-148, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-08-06_siliconbox_500m-units-panel-scale, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly]
 related:
   - wiki/entities/tsmc.md
@@ -898,3 +898,39 @@ SemiconSam（2025-09-18）：**混合接合專用 CMP 設備 AMAT 市占 100%**�
 ➜ ⭐⭐⭐ **新增橫向論述：「面板降本 N%」的宣稱若未聲明是否含前段晶粒成本，資訊量為零——兩種邊界下的結論相差逾兩個數量級。**
 ➜ **本 wiki 既記的「面板降本 40–50%」不刪除，但加註邊界**：該數字屬**小封裝／大面板**情境（Lujan 明述），與大型複雜封裝／310 mm 面板不同。
 ➜ ⚠ **此論述可外推**：本 wiki 收錄的任何「降本 N%」「省 N%」宣稱，都應追問其會計邊界。**列為常駐檢核規則。**
+
+---
+
+## ⭐⭐⭐ 2026-09-24 更新：玻璃成本溢價 30–50% 首見；EMIB-T 的「獲利保證機制」是財務性的風險轉移工具
+
+來源：[[sources/2026-09-23_techtimes_boe-glass-core-qualification-yield-cost-premium]]、[[sources/2026-08-10_chaincatcher_emib-t-50pct-yield-target-profit-guarantee]]、[[sources/2026-04-16_semieng_glass-carrier-reuse-degradation]]
+
+### 1. ⭐⭐⭐ 玻璃 vs 有機的直接成本溢價：30–50%
+本 wiki 的面板/玻璃成本論述此前只有：
+- **Lujan（IMAPS DPC 2026）**：310×310 mm 面板在大型複雜封裝上有淨節省，但 **0.5 個百分點良率差即完全抹平**；排除 GPU/HBM 晶粒成本時容忍度變 ~60%（**同一分析、兩種會計邊界，結論相差逾兩個數量級**）
+- **市場規模**：Onto 2.75 億美元（2030，僅玻璃核心基板）vs Counterpoint >80 億美元（2030，FOPLP＋玻璃基板）——**相差兩個數量級**
+
+本輪新增：**玻璃成本溢價 30–50%**（BOE 報導）。
+➜ **合併後的結論比任一單獨來源更嚴厲：面板/玻璃的成本論述不只需要追平良率，還需吸收 30–50% 的基材溢價。**
+⚠⚠ **溢價的會計邊界未載明**（是否含良率損失？含 ABF？）。依本 wiki 2026-09-23 常駐規則（**任何「降本/溢價 N%」宣稱都必須追問其會計邊界**），**此數字在邊界釐清前不得用於任何成本推算**，僅記為「存在一個 30–50% 量級的基材溢價宣稱」。
+
+### 2. ⚠⚠ 良率數字口徑衝突（本 wiki 不裁定）
+| 來源 | 玻璃 | 有機 |
+|---|---|---|
+| 既有記載 | **70–85%** | **>90%** |
+| BOE 報導（2026-09-23） | **60–70%** | **80–90%** |
+➜ **差距（約 20 個百分點）一致，絕對值不一致。兩組並列，皆標 ⚠（皆為二手、無一手出處）。**
+➜ 對照 Lujan 之 0.5 個百分點容忍度：**差距為容忍度的 40–60 倍**（原記 10–40 倍，取較保守數字後上修）。**結論方向不受口徑差異影響。**
+
+### 3. ⭐⭐⭐ 成本模型新增一個此前未記錄的邊界項：載板攤提次數
+**SemiEng（2026-04-16）**：**重複使用之玻璃載板在約 43 µm 處出現崩缺與微缺陷；衝擊韌性較新品明顯下降。**
+➜ **載板不是可無限攤提的固定成本。** 這是 2026-09-23 之「會計邊界檢核規則」的**第一個具體、且有量測支撐的邊界項**（此前的邊界項皆為分析假設，如是否計入 GPU/HBM 晶粒成本）。
+➜ 且與解接合結構選擇耦合：**標準 TBW 結構把殘留物留在載板上，反轉結構留在產品晶圓上——選前者即加速載板劣化。**「清潔成本 vs 載板壽命」是一組真實交換（見 [[technologies/foplp]] 2026-09-24 更新）。
+⚠ 「~43 µm」未載明重複使用次數與熱歷程，**不可換算為壽命次數**。
+
+### 4. ⭐⭐⭐ 風險轉移的第二種型態：財務性（此前記錄者皆為技術性）
+**Intel 對 EMIB-T 基板供應商提供「獲利保證機制」**：良率不佳時仍可獲利；達 50% 良率後利潤率高於公司平均（三家供應商 2027 年底初期量產目標良率僅 **50%**）。
+- 既有（技術性風險轉移）：ASE/Deca 把公差預算自上游移到下游（微影層）、Besi 可移動定心銷（機構層）
+- **新增（財務性）**：以商業合約買下供應商的良率學習曲線
+➜ **新橫向論述候選**：「**當良率學習曲線的成本落在供應商而收益落在買方時，買方會以合約把該成本買回來。**」⚠ 單一來源，列候選**不逕行升格**。
+➜ 附帶：EMIB-T 把矽橋直接埋入基板 ⇒ **良率風險自晶圓廠（中介層）換手到基板廠** ➜ 這是「邊界外擴」論述的新型態：不是誰向外擴張，而是**風險換手**。

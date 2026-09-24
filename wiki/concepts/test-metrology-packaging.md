@@ -3,7 +3,7 @@ title: "先進封裝的測試、量測與失效分析 / Test, Metrology & Failur
 category: concept
 tags: [test, metrology, inspection, failure-analysis, KGD, KGI, KGP, DFA, yield]
 created: 2026-09-17
-updated: 2026-09-23
+updated: 2026-09-24
 sources: [2025-01-14_semieng_known-good-interposer-screening, 2025-07-10_semieng_advanced-packaging-reshaping-inspection, 2024-11-12_semieng_packaging-drives-test-metrology-innovation, 2026-08-01_jfap_3dic-failure-analysis-dfa, 2026-07-06_apl_lensless-through-silicon-phase-imaging, 2026-09-06_ndte_hysan-sparse-view-xct-tsv, 2026-08-02_chips_cpo-wafer-level-probe-card, 2026-08-27_samsung_us20260256000a1-interposer-test-pad, 2026-08-13_jcet_us20260239928a1-hybrid-bonding-substack-test, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-06-28_hyperframe_amat-hybrid-bonding-hedge]
 related:
   - wiki/technologies/hybrid-bonding.md
@@ -463,3 +463,37 @@ Micromachines 的**五種 TGV 剖面**（直壁／沙漏／等腰錐／倒錐／
 - [ ] **Besi 的液相表面張力法有無偵測率／解析度數據**
 - [ ] **混合接合是否存在任何 inline 非破壞品質判定手段**（目前本 wiki 一件也沒有）
 - [ ] **Amkor 測試治具對應的訊號頻率帶**
+
+---
+
+## 2026-09-24 更新：「粗糙度」跨技術域的數量級差距再獲一例；孔電阻成為新驗收指標；Q-time 是兩機制共用的同一量
+
+來源：[[sources/2026-09-24_paper_planoptik-starting-surface-quality-tgv-chain]]、[[sources/2026-09-24_patent_cit-ase-tgv-copper-resistance]]、[[sources/2026-09-24_paper_atotech-copper-microstructure-qtime]]、[[sources/2026-09-24_paper_tel-w2w-140nm-pitch-hybrid-bonding]]
+
+### 1. ⚠ 「同一名詞涵蓋多個獨立驗收項」再獲一例（2026-09-22 橫向論述第 8 條）
+**Plan Optik 把雷射蝕刻 TGV 的側壁 Ra ≈0.8 µm 描述為「平滑、無裂紋」。**
+對照本 wiki 既有記載：
+| 技術域 | 粗糙度 | 評價語 |
+|---|---|---|
+| TGV 側壁 | 25 nm – **1.257 µm**（本輪 +0.8 µm） | 0.8 µm 被稱「**平滑**」 |
+| 混合接合表面 | Ra **<0.1–0.2 nm**；SiCN <2 Å | 為第一限制項 |
+➜ **相差 3–4 個數量級，且同一個詞在兩域的褒貶方向可以相反。作業規範再確認：跨頁引用「粗糙度」必須標註技術域。**
+
+### 2. ⭐⭐ 新驗收指標：孔電阻（量的其實是覆蓋均勻度）
+- **CIT EP4800151A1**（排他權側）：請求項明文 **TGV 上下電阻 ≤0.1 Ω**
+- **Plan Optik**（學術側）：**有效導電率低於塊材銅 ➜ 孔電阻上升 ➜ 限制 RF 設計彈性**；**側壁粗糙度直接影響有效導電率**
+➜ 「上下電阻」是一個巧妙的代理量：**側壁覆蓋不均會使上下量測值分歧**，故單一電阻值可同時承載「通不通」與「勻不勻」兩件事。
+➜ 本 wiki 的 TGV 驗收項此前皆為**幾何與形貌**（孔徑、錐度、Ra、頂/腰/底 CD）；**本輪首次出現電性驗收項。**
+⚠ 依 2026-09-21 規範：**CIT 未附量測方法與重複性，標 ⚠**；Plan Optik 未給導電率比值。
+
+### 3. ⭐⭐⭐ Q-time 是兩個獨立物理機制共用的同一工程量
+| 機制 | 可操作變數 | 量值 |
+|---|---|---|
+| **表面氧化**（對數成長） | 環境（惰性/真空）、queue time | 數十分鐘–數小時 |
+| **體材再結晶**（Atotech，本輪） | **電鍍電流密度、摻雜** | **0.5 ASD >3 週 / 2.0 ASD <2 小時** |
+➜ **量測/管制上必須分開處理，否則「Q-time 短」會被誤歸於單一原因。** 且**孔徑越小、孔越深 ⇒ 再結晶越快 ⇒ Q-time 越短**（微縮方向與貯存窗口方向相反）。
+
+### 4. ⭐ 一個品質良好的分布型數據範例（供後續比對）
+**TEL 140 nm W2W 混合接合**的殘差數據**附有重複性與分位**：4 片晶圓、75% 殘差 <30 nm、三片熔融接合晶圓 99.5% 點位 <40 nm、4 項殘差 M+3σ（Res X 85.6 / Res Y 111.4 nm）。
+➜ 依本 wiki 2026-09-21 新設規範（**凡收錄「均勻度／變異／標準差」數字，須標註是否附有重複性；未附者標 ⚠**），**本筆為少數不需標 ⚠ 者，可作為「合格揭露格式」的正面範例。**
+➜ ⚠ 但其 14.6 nm M+3σ 為**模擬值**，且載具**未做電性測試**——**「量測品質好」與「結論成熟」是兩回事。**

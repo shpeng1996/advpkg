@@ -3,7 +3,7 @@ title: "英特爾 / Intel"
 category: entity
 tags: [IDM, advanced-packaging, EMIB, Foveros, Intel18A, Clearwater-Forest, Foveros-Direct, glass-substrate, 14A, High-NA-EUV, silicon-capacitors, Google-TPU-v8e, Q2-2026-earnings, Tesla-14A, HLFF, RAMP-C, Secure-Enclave, Rio-Rancho]
 created: 2026-04-24
-updated: 2026-09-22
+updated: 2026-09-24
 sources: [2026-08-24_intel-newsroom_hot-chips-2026-diamond-rapids-foveros-ucie, 2026-04-24_initial-survey, 2026-07-20_trendforce_tsmc-265b-arizona-intel-novalake, 2026-03-18_trendforce_intel-emib-malaysia, 2026-03-03_trendforce_intel-clearwater-forest, 2026-03-05_trendforce_intel-emib-billions, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-04-20_trendforce_intel-foundry-14a-equipment, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-01_semianalysis_cpus-back-datacenter-2026, 2026-04-10_3dincites_intel-gan-chiplet, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks, 2026-06-21_convergedigest_intel-emib-t-multi-die-packaging, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap, 2026-07-01_trendforce_terafab-intel-veteran-hire, 2026-04-07_tomshardware_intel-joins-terafab, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-01-30_tomshardware_intel-ai-chip-test-vehicle-emib-t, 2026-07-14_trendforce_intel-ireland-5b-intel3-europe, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-04_semieng_from-blueprint-intel-hlff, 2026-07-31_semieng_chip-week-149, 2026-08-13_trendforce_intel-memory-reentry-xbm-zam-saimemory, 2026-06-02_intel_ectc2026-emib-t-cpo-glass]
 related:
   - wiki/entities/tsmc.md
@@ -567,3 +567,36 @@ Intel Optical Compute Interconnect：緊湊光學 I/O chiplet，含矽 PIC、**�
 - ⚠ **溫度、溫度均勻度、升降溫速率、吞吐量全部未揭露。**
 
 ⚠ **專利是前瞻訊號，非已出貨能力。**
+
+---
+
+## ⭐⭐⭐ 2026-09-24 更新：EMIB-T 基板端初期良率目標僅 50%＋獲利保證機制；TGV liner 三軸圍籬布局
+
+來源：[[sources/2026-08-10_chaincatcher_emib-t-50pct-yield-target-profit-guarantee]]、[[sources/2026-09-24_patent_intel-tgv-liner-three-axis-fence]]、[[sources/2026-09-23_techtimes_boe-glass-core-qualification-yield-cost-premium]]
+
+### 1. EMIB-T 良率（首個數字）
+- 欣興 **2026-07-29 法說會**：EMIB-T「尚未成熟」
+- 三家基板供應商（**Unimicron、Ibiden、Shinkawa**〔⚠ 疑為 Shinko Electric 轉寫誤植〕）**2027 年底初期量產目標良率 50%**
+- 根因：矽橋**直接埋入基板**而非用中介層 ➜ **基板供應商成為關鍵路徑**
+- ⭐ **Intel 提供供應商「獲利保證機制」**：良率不佳時仍可獲利；達 50% 良率後利潤率高於公司平均
+- 客戶：**Google 第九代 TPU（2028 量產採用）**，**MediaTek 協同設計**
+➜ 本頁此前只有 CFO Zinsner 的 2H27→2028→2029 三段式時程與 40% GM / 30% OM，**無良率佐證**。⚠ 不可與 CoWoS「5.5× 良率 99%」直接相減（量測邊界與計量對象皆不同）。
+➜ 詳見 [[technologies/emib]] 2026-09-24 更新。
+
+### 2. ⭐⭐⭐ 玻璃基板：TGV liner 的三軸圍籬式布局
+| 公開號 | family-id | 公開日 | 自由度 |
+|---|---|---|---|
+| **JP2026119036A** | 100212955 | 2026-07-16 | **徑向**：雙 liner，以**第一/第二楊氏模數**區分（優先權 US 19/010,496, 2025-01-06；發明人 Stacey、Mohammadigharehni、Page、Heaton、Seneviratne） |
+| **US20260136966A1** | 99763638 | 2026-05-14 | **手段**：**光聚合物** liner（可微影定義 ➜「哪裡要 liner」成為設計變數） |
+| US20260136975A1（已收） | 99632522 | 2026-05-14 | **軸向**：**部分 liner**（高度 < TGV 高度） |
+| US20260191064A1（已收） | 100312115 | 2026-07-02 | 底部向上 TGV 電鍍（放棄側壁種子層） |
+| US20260005114A1 | 98367295 | 2026-01-01 | 玻璃核心混合面板之**框架，CTE < 11**（本輪檢出，未單獨收錄） |
+| US20260005126A1 | 98368460 | 2026-01-01 | 玻璃核心**側壁聚合物塗層**（本輪檢出，未單獨收錄） |
+
+➜ ⭐⭐⭐ **三件 liner 案正好涵蓋 liner 的三個正交自由度（軸向、徑向、圖案化手段）——圍籬式布局的教科書形狀**，且落在**單一製程步驟的參數空間**而非產品結構上（對照 SanDisk 2026-05 之四件跨四 family-id 產品結構圍籬）。
+➜ 使本 wiki 2026-09-23 自 AMAT 推得之「**liner 的模數 × CTE 是二維互相拉扯的設計空間**」取得排他權層級證據：**JP2026119036A 拒絕一維折衷，改以兩層不同楊氏模數把二維空間拆成兩個一維問題**——**首見 liner 的力學參數本身寫進請求項**。
+📌 **追蹤點**：光聚合物屬**低模數**一端，依 AMAT 機制應面臨回流剝離；觀察後續案件是否出現耐回流數據。
+⚠ 六件**皆無任何量化數值**（US20260005114A1 的「CTE < 11」為唯一例外，且屬框架材料而非 liner）。
+
+### 3. 玻璃基板一手數字補充
+- **2026-01 展示 45 µm 凸塊間距**（BOE 報導引述）；累計投資 >US$1B ⚠ 二手，待佐證

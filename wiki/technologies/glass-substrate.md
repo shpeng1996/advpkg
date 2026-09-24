@@ -3,7 +3,7 @@ title: "玻璃基板 / Glass Core Substrate"
 category: technology
 tags: [glass-substrate, TGV, panel-level, FC-BGA, CoPoS, Absolics, DNP, Rapidus, warpage, SeWaRe, glass-interposer, BOE, ULCVD, non-embedding, Lens-Technology, TPK-KY, Innolux, AUO, LG-Chem, singulation, patent-signal]
 created: 2026-05-08
-updated: 2026-09-23
+updated: 2026-09-24
 sources: [2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-05-05_trendforce-insights_glass-substrate-development, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-05-29_3dincites_rapidus-2nm-advanced-packaging-ai-foundry, 2026-06-01_trendforce_intel-3dgs-india-glass-substrate, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-06-20_biggo_boe-glass-substrate-pilot, 2026-06-28_economy-ac_glass-substrate-global-race, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-08-18_trendforce_shinko-glass-substrate-22layer-glassem-delay, 2026-09-11_mssp_tgv-glass-biaxial-bending-ring-on-ring, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-03-13_kaneka_jp2026047137a-glass-core-polyimide-quantified, 2026-08-10_screp_low-k-organic-buffer-tgv-cu-metallization, 2026-08-04_jmrt_vacuum-assisted-void-free-cu-fill-tgv, 2026-07-30_micromachines_tgv-cleanability-surface-tension]
 related:
   - wiki/technologies/copos.md
@@ -1167,3 +1167,84 @@ AMAT 以模擬＋實驗比較三種 liner：**高模數/高 CTE**、**高模數/
 - [ ] **AMAT liner 的絕對值**：模數／CTE 具體數字、雙軸彎曲強度、熱循環次數（相對改善已得，絕對值仍缺）
 - [ ] **Samsung EM 未通過的是哪一項可靠度測試**（若為熱循環，則與 AMAT 的環向裂紋機制可直接對接）
 - [ ] **Corning 的 TGV 屬五種剖面中的哪一種**（延續 2026-09-22 的第三次提問修正）
+
+---
+
+## ⭐⭐⭐ 2026-09-24 更新：TGV 的瓶頸在金屬化不在成孔；因果鏈新增上游首環；Intel 對 liner 做三軸圍籬
+
+來源：[[sources/2026-09-24_paper_okuno-zno-seed-sputtering-ar-wall]]、[[sources/2025-09-18_semieng_tgv-etch-vs-metallization-ar-mismatch]]、[[sources/2026-09-24_paper_planoptik-starting-surface-quality-tgv-chain]]、[[sources/2026-09-24_patent_intel-tgv-liner-three-axis-fence]]、[[sources/2026-09-24_patent_cit-ase-tgv-copper-resistance]]、[[sources/2026-09-24_patent_dongwoo-organic-reinforcement-compressive]]、[[sources/2026-09-23_techtimes_boe-glass-core-qualification-yield-cost-premium]]
+
+### 1. ⭐⭐⭐ 能鑽出的孔，比能鍍滿的孔深一倍以上
+
+| 製程段 | 能力上限 | 來源 |
+|---|---|---|
+| 成孔：深紫外雷射蝕刻 | **AR 20:1 – 25:1** | SemiEng 2025-09 |
+| 成孔：200 µm 玻璃（一般） | AR 4:1 – 20:1 | 同上 |
+| 成孔：LIDE 最小孔徑 | **3 µm**（間距 5 µm） | 同上 |
+| **濺鍍種子層** | **AR ≈10 即難以成膜** | **Okuno, IMAPS DPC 2026** |
+| **濕製程種子層 + PPR/DC** | **AR 10（500/800 µm）、AR 11（1000 µm）無孔洞** | Okuno 實績（φ80 µm） |
+
+➜ **本頁的 TGV 論述重心應自「成孔技術」移向「金屬化」。** 這與 Fraunhofer IZM（2026-09-23）「PVD 受深寬比限制，改用底部向上電鍍」為同一件事的兩個側面，**本輪首次取得兩側的數字對照**。
+⚠ SemiEng 該篇發表於 2025-09；**若 2026 年濺鍍側已改善，錯配幅度需重估**。追蹤點：是否出現 AR >10 的濺鍍種子層實績。
+
+### 2. ⭐⭐⭐ PVD 深寬比牆的三條互斥解法，本輪同時到齊
+
+| 路線 | 代表 | 策略 | 量化實績 |
+|---|---|---|---|
+| ① 底部向上電鍍 | Fraunhofer IZM；Intel US20260191064A1 | **放棄側壁種子層** | — |
+| ② **全濕式種子層** | **Okuno（ZnO 黏結層）** | **放棄真空製程** | **AR 10–11 無孔洞** |
+| ③ **改良濺鍍（ASE）** | **CIT Co.（KR）EP4800151A1** | **不放棄 PVD** | 請求 **上下電阻 ≤0.1 Ω** |
+
+➜ **三家公司同年攻同一堵牆，路線彼此不相容。本 wiki 首次能對單一瓶頸列出三條完整且互斥的產業解法。**
+
+### 3. ⭐⭐⭐ 因果鏈往上游延長一環，新首環是「買進來的玻璃」
+
+- 原鏈（2026-09-22）：**側壁形態 → 種子層覆蓋 → 附著不足 → 銅剝離**
+- **Plan Optik 新增前置環**：**原材次表面損傷 → 蝕刻將其曝露為應力集中點 → 破裂／良率下降／可靠度疑慮**
+  （以硼矽玻璃與熔融石英各自的「標準拋光 vs MDF 進階拋光」對照佐證）
+
+➜ **完整鏈現為五環，且第一環是採購規格而非製程參數。** 這解釋了玻璃供應商（Corning、Plan Optik、NEG）的地位為何高於「原料商」：**其交付的拋光等級決定下游良率上限。**
+
+### 4. ⭐⭐⭐ 孔電阻正在成為 TGV 的驗收指標（此前本頁的驗收項皆為幾何與形貌）
+- **Plan Optik（學術側）**：有效 TGV 導電率**低於塊材銅** ➜ 孔電阻上升 ➜ **直接限制 RF 設計彈性**；且**側壁粗糙度直接影響有效導電率**
+- **CIT（排他權側）**：請求項明文 **上下電阻 ≤0.1 Ω**（量的實為**孔內覆蓋均勻度**——側壁不均會使上下量測值分歧）
+➜ 兩個獨立來源、不同角度，指向同一物理量。
+⚠ CIT 未給孔徑/厚度/量測方法，**不可與其他來源的 TGV 電阻並列比較**。
+
+### 5. ⭐⭐⭐ 修正 2026-09-22 橫向論述第 6 條
+原記「**TGV 的失效在界面與孔緣，不在材料本體**」。Okuno 顯示：剝離後的膜**在玻璃側與膜側兩側皆含 Zn** ➜ **破壞面在 ZnO 層內部（內聚破壞），不在界面** ➜ 界面強度高於黏結層本體。
+➜ **修正形式：「TGV 的失效預設落在界面；把它移回本體，正是黏結層工程要達成的事。」**（非推翻原論述，而是指出它可工程、非本質。）
+
+### 6. ⭐⭐⭐ Intel 對 liner 做三軸圍籬式布局
+| 公開號 | family-id | 自由度 |
+|---|---|---|
+| **JP2026119036A**（2026-07-16） | 100212955 | **徑向**：雙 liner，以**第一/第二楊氏模數**區分 |
+| **US20260136966A1**（2026-05-14） | 99763638 | **手段**：**光聚合物** liner（可微影定義） |
+| US20260136975A1（已收） | 99632522 | **軸向**：**部分 liner**（高度 < TGV 高度） |
+
+➜ 三件正好涵蓋 liner 的三個正交自由度。本 wiki 2026-09-23 自 AMAT 推得之「**liner 的模數 × CTE 是二維互相拉扯的設計空間**」取得排他權層級證據：**JP2026119036A 拒絕在一維折衷，改以兩層不同楊氏模數把二維空間拆成兩個一維問題**——**首次看到 liner 的力學參數本身被寫進請求項**。
+📌 追蹤點：光聚合物屬**低模數**一端，依 AMAT 機制應面臨回流剝離；觀察 Intel 後續案件是否出現耐回流數據。
+⚠ 三件**皆無任何量化數值**。
+
+### 7. ⭐⭐⭐ 玻璃並未消除翹曲，只是把它移到另一個界面
+**Dongwoo Fine-Chem CN122439424A**（2026-07-21）：玻璃基板需**表面之有機強化層施加壓縮力**，以緩衝玻璃本體受拉之應力，從而抑制多層配線基板的整體翹曲。同申請人 CN122477757A（2026-07-28）同構。
+➜ 與 Lau（2026-09-21）「玻璃核心使 micro-bump 應變 9.12%→4.43%（減半），卻使 PCB 側 BGA 應變 8.43%→19%（加倍有餘）」為**同型觀察的第二例**：**同一組玻璃的好處與代價都落在不同界面上。**
+➜ ⭐ **翹曲控制手段再下移一層：從「選材料」到「預加應力」。** 更新論述：**「當幾何與材料都已被上游鎖定，剩下的自由度是在層與層之間分配殘餘應力的正負號。」**（前兩例為 JCET 晶粒尺寸梯度、Absolics RDL 晶粒長寬比之比 0.85–0.99，皆在金屬層；本例首次在有機層。）
+（註：Dongwoo 已見於本頁 2026-07-07 之 Samsung EM「GlaSSEM」JV 記載，本輪首次以獨立申請人身分入庫。）
+
+### 8. BOE 產線認證完成（2026-09-23）＋ 成本溢價首見
+- 疊構 **20 層 9-2-9**；面板 **>100 × 100 mm**；全線貫通驗證（TGV 鑽孔→銅電鍍→ABF 增層→後段）
+- 累計投資 **CNY 13.8 億（≈US$206M）**；量產決策 **2027 H1**；全規模 **2028、15,000 片/月**
+- 客戶已進入「**實際貼裝 CPU/GPU 並在伺服器中運行**」階段；未揭露客戶名
+- ⭐⭐⭐ **玻璃成本溢價 30–50%**（相對有機）——本 wiki 首次取得直接成本溢價數字
+- ⚠⚠ **良率數字衝突**：本篇記玻璃 **60–70%** vs 有機 **80–90%**；本 wiki 既有記載為玻璃面板 **70–85%** vs 有機 **>90%**。**兩組並列，皆標 ⚠，本 wiki 不裁定。** 差距（約 20 個百分點）一致。
+  ➜ 對照 Lujan「**0.5 個百分點良率差即完全抹平面板成本優勢**」：**差距為容忍度的 40–60 倍**（原記 10–40 倍，取較保守數字後上修）。
+- ⚠ 溢價的**會計邊界未載明**（是否含良率損失？含 ABF？）；依 2026-09-23 常駐規則，**邊界釐清前不得用於任何降本推算**。
+- 其他（本篇所述，皆待佐證）：Innolux 領先 12–18 個月（出樣 NXP/ST/SpaceX）；Intel 2026-01 展示 **45 µm** 凸塊間距；BOE 20 層與 Shinko 22 層落在同一級距。
+
+### 9. 其他新增數值
+- **Plan Optik 雷射誘導蝕刻 TGV**：孔徑 **<30 µm**；側壁 **Ra ≈0.8 µm**（被描述為「平滑」）；金屬化厚度沿孔深控制 **3–15 µm**
+- **硼矽玻璃 @2.4 GHz**：εr = **4.56**、tan δ = **0.0064**
+- ⭐ **玻璃的適用下限首見**：**<10 GHz 既有 PCB 方案已足夠**；**硼矽適用 <5 GHz，更高頻應改石英**
+  ➜ 這是「玻璃不是通用替代品」的**第三個獨立限縮**（前二：Lam 的 >~100×100 mm、Lujan 的大型複雜封裝）
+- ⚠ **Ra ≈0.8 µm 再證作業規範**：本頁 TGV 側壁粗糙度區間為 25 nm–1.257 µm，而混合接合 Ra <0.1–0.2 nm（**相差 3–4 個數量級**）。0.8 µm 落偏高端卻被稱「平滑」 ➜ **跨頁引用「粗糙度」必須標註技術域。**
