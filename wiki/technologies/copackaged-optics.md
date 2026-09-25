@@ -3,7 +3,7 @@ title: "共封裝光學元件 / Co-Packaged Optics (CPO) — TSMC-COUPE™ & Eco
 category: technology
 tags: [CPO, co-packaged-optics, COUPE, TSMC, GlobalFoundries, Samsung, photonics, AI, HPC, networking, OCI-MSA, DWDM, Broadcom, NVIDIA, glass-substrate, ULCVD, TGV, Spectrum-X, NVL72]
 created: 2026-04-25
-updated: 2026-09-20
+updated: 2026-09-25
 sources: [2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-05-07_trendforce_globalfoundries-silicon-photonics-scale-cpo, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-03-17_coherent_cpo-ofc2026-demo, 2026-06-07_digitimes_jcet-3d-packaging-cpo-plant, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_edn_cpo-technology-status-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-06-24_thelec_corning-glass-bridge-cpo, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-14_trendforce_umc-silith-silicon-photonics-hvm, 2026-07-14_trendforce_huawei-baidu-npo-msa, 2026-07-27_trendforce_presscenter_cpo-switches-nvidia-broadcom-coupe, 2026-06-03_3dincites_intel-foundry-emib-cpo-glass-ectc2026, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-07-31_ase_cn224583735u-photoelectric-hybrid-rdl, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo]
 related:
   - wiki/entities/tsmc.md
@@ -916,3 +916,41 @@ BigGo（2026-06-21）：**AUO 不做玻璃核心基板，改以 Micro LED 與光
 3. **CPO 供應鏈的參與者類型再添一類**：既有記錄多為代工廠（TSMC COUPE、Intel、GF）、設備商（ASMPT）、系統商（NVIDIA、Broadcom）。**面板／顯示體系（AUO + Ennostar，Micro LED 背景）為新的一類**，其切入點在光源與光學機構件，而非封裝整合。
 
 ⚠ 單一聚合型財經媒體來源（原始出處應為 DIGITIMES，付費牆）；無出貨時程、產能或客戶名單。
+
+---
+
+## 2026-09-25 更新
+
+### ⭐⭐⭐ CPO 的排他權戰場首次自晶圓廠／IDM 下移到基板廠——且是兩家同時
+| 公開號 | family-id | 公開日 | 申請人 | 重心 |
+|---|---|---|---|---|
+| **WO2026186472A1** | 101216428 | 2026-09-10 | **IBIDEN** | 波導之**對準／評估標記 + 環繞堤壩**（可為對準、評估、辨識標記或二維碼） |
+| **US20260251844A1** | 100985754 | 2026-08-27 | **SHINKO** | 雙波導耦合之**分區支撐**：第三包覆層**邊緣直接接觸**第一表面，**芯重疊區經黏著層**置於第二表面；兩表面間設**凹槽** |
+
+➜ 本頁既有之 CPO 論述集中在 **TSMC COUPE**（接合 2–4 µm、0.06 dB @112G vs 微凸塊 1.38 dB、3.2→12.8+ Tbps、2H26 量產）與 **SK hynix 路線圖**，設備側有 ASMPT。**基板端從未作為獨立的排他權主體出現。**
+➜ **新論述候選：「當某功能開始出現在基板廠的申請案中，代表該功能正在被視為基板的一部分而非附加元件。」** ⚠ 兩件，列候選。
+➜ ⭐⭐ **Ibiden 案的重心不在光學性能而在「如何對準與如何檢驗」** ➜ 見下方「內建驗證結構」。
+⚠ **兩件皆無任何量化值**（無波導尺寸、折射率、耦合損耗、對準精度、黏著層厚度、波長）；Shinko 案**未載明材料體系**（未言明 SiN/SiO₂ 或高分子）➜ **不可用以支持或反駁 Cornell 關於高分子波導的主張。**
+⚠ 推論（本 wiki，非摘要主張）：Ibiden 之堤壩暗示後續濕製程／塗佈會污染標記；Shinko 之凹槽合理推測為控制黏著層厚度或溢流——**若後者成立，黏著層厚度即為耦合效率的關鍵製程變數。**
+
+### ⭐⭐⭐ 波導該住在哪一層：三個答案，同一輪
+| 答案 | 來源 | 材料 |
+|---|---|---|
+| **RDL 頂層**（PIC 上到 RDL 最上層） | Cornell / FuzeHub | **SiO₂ RDL + SiN 波導**（與晶片側同製程） |
+| **佈線板本體** | Ibiden、Shinko | 未載明 |
+| **封裝級高分子波導**（與 chip-first 扇出相容） | imec / Ghent | **高分子** |
+
+### ⚠⚠ 尺寸失配 vs 實測耦合：Cornell 與 imec 結論相反，本 wiki 不裁定
+| | **Cornell**（`10.4071/001c.166918`） | **imec / Ghent**（arXiv:2503.02712） |
+|---|---|---|
+| 層次 | **原理**：PIC 上 SiN/SiO₂（RI 1.9/1.45）**~500 nm × 300 nm**；RDL 中高分子（1.6/1.5）**~5000 nm × 3000 nm** ⇒ **10× 尺寸差 = 損耗** | **實測**：以 "Mono" 法設計 SiN taper 達成相位匹配 ⇒ **SiN↔高分子耦合接近 1 dB（O-band，TE/TM 皆可）**；**晶片對晶片、晶片對光纖 <2 dB** |
+| 政策結論 | **必須改用 SiO₂ RDL** | **高分子路線已達可用損耗**，且與 chip-first 扇出晶圓級封裝相容 |
+
+➜ **兩者不是同層次的矛盾**（一談原理性失配，一談工程後的實測），**但政策結論相反。**
+➜ ⭐⭐⭐ **本頁的 CPO 損耗預算自此至少有兩個獨立環節**：**晶粒接合界面**（COUPE 0.06 dB）與**波導轉接界面**（imec ~1 dB）。此前本頁只有前者。
+➜ ⭐⭐ **「原理性劣勢不等於實務性劣勢」的乾淨案例**，可用於校準本 wiki 對其他原理性論證（CTE 比、深寬比）的採信程度。
+➜ 📌 **新空缺（本輪 CPO 主線追蹤項）**：**高分子波導在熱循環與吸濕後的耦合損耗漂移。** Cornell 論點的另一半（服役期穩定性、吸濕、最高溫耐受）在 imec 資料中**完全未被檢驗**；Cornell 亦未反駁 imec 的耦合數字。**這是目前唯一能分開兩方的實驗。**
+⚠ imec 原文為 **2025-03 arXiv preprint**，非同儕審查終稿；**「接近 1 dB」未標註為峰值／平均／最差值**，不可與其他 dB 數並列比較。
+
+### ⭐ CPO 與面板級封裝首次接上
+imec 之途徑（a）「以標準微影直接在光子晶片表面圖案化高分子波導，**與 chip-first 扇出晶圓級封裝相容**」——本 wiki 此前 CPO 與 FOPLP 幾乎是兩條平行線。

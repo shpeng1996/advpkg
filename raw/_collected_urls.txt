@@ -607,3 +607,18 @@
 2026-09-24 | https://doi.org/10.4071/001c.167498 | raw/papers/2026-09-24_openalex_okuno-zno-binder-glass-seed-high-ar-through-hole.md | Okuno ZnO黏結層玻璃種子；濺鍍AR≥10失效
 2026-09-24 | https://doi.org/10.4071/001c.167503 | raw/papers/2026-09-24_openalex_planoptik-glass-core-material-tgv-metallization-requirements.md | Plan Optik玻璃核心：起始表面品質為TGV鏈新首環
 2026-09-24 | https://doi.org/10.1038/s44172-026-00620-9 | raw/papers/2026-09-24_natcommeng_direct-to-package-microfluidic-cooling.md | TU Delft D2P封裝內微流道冷卻625W/cm²
+2026-09-25 | https://electronics-journal.com/news/114311-ionized-sputtering-for-glass-substrate-packaging | raw/articles/2026-09-25_electronics-journal_hipims-ionized-sputtering-glass-tgv.md | HiPIMS離子化濺鍍玻璃TGV；離子化率>70%
+2026-09-25 | https://semiengineering.com/integration-of-high-density-polymer-waveguides-with-silicon-photonics-for-cpo-imec-ghent/ | raw/articles/2026-09-25_semieng_imec-ghent-polymer-waveguide-cpo-coupling.md | imec高分子波導CPO耦合~1dB；反證Cornell
+2026-09-25 | https://semiengineering.com/the-rise-of-panel-level-packaging/ | raw/articles/2026-09-25_semieng_rise-of-panel-level-packaging.md | 面板級封裝六種尺寸；Yole 2024 $160M/80k片
+2026-09-25 | https://semiengineering.com/electromigration-concerns-grow-in-advanced-packages/ | raw/articles/2026-09-25_semieng_electromigration-concerns-advanced-packages.md | 先進封裝電遷移；ASE銅柱Ea 1.12eV
+2026-09-25 | https://semiengineering.com/next-gen-3d-chip-packaging-race-begins/ | raw/articles/2026-09-25_semieng_next-gen-3d-packaging-race-w2w-700nm.md | 歷史錨點：imec W2W 700nm(2022)
+2026-09-25 | EPO:99957829:JP2026108527A | raw/patents/2026-09-25_JP2026108527A_intel-tgv-organic-seed-layer.md | Intel TGV有機種子層；玻璃平坦度→<3um L/S
+2026-09-25 | EPO:99884050:US20260150629A1 | raw/patents/2026-09-25_US20260150629A1_ibm-laser-debonding-test-structures.md | IBM BEOL內建雷射解接合測試結構
+2026-09-25 | EPO:100667148:CN122497397A | raw/patents/2026-09-25_CN122497397A_jcet-glass-carrier-groove-warpage.md | JCET玻璃載板溝槽抑制封裝翹曲
+2026-09-25 | EPO:101216428:WO2026186472A1 | raw/patents/2026-09-25_WO2026186472A1_ibiden-optical-waveguide-target-marks.md | Ibiden佈線板光波導對準標記+堤壩
+2026-09-25 | EPO:100985754:US20260251844A1 | raw/patents/2026-09-25_US20260251844A1_shinko-waveguide-optical-coupling.md | Shinko雙波導光耦合；黏著層分區支撐
+2026-09-25 | https://doi.org/10.4071/001c.167759 | raw/papers/2026-09-25_openalex_ase-12inch-glass-carrier-impact-toughness-reuse.md | ASE 12吋玻璃載板衝擊韌性；新0.82 vs 再用0.47
+2026-09-25 | https://doi.org/10.4071/001c.167028 | raw/papers/2026-09-25_openalex_dnp-fine-pitch-rdl-glass-em-lifetime.md | DNP玻璃上細線距RDL；EM壽命10,000倍
+2026-09-25 | https://doi.org/10.4071/001c.166918 | raw/papers/2026-09-25_openalex_cornell-glass-on-glass-sio2-rdl.md | Cornell玻璃RDL論；訊號TGV是可避免的
+2026-09-25 | https://doi.org/10.4071/001c.167775 | raw/papers/2026-09-25_openalex_tel-laser-liftoff-carrier-reuse-thermal-detection.md | TEL雷射剝離載板再用；熱見證結構≤200°C
+2026-09-25 | https://doi.org/10.4071/001c.167496 | raw/papers/2026-09-25_openalex_asu-molded-core-substrate-warpage-nn.md | ASU模封核心基板翹曲PINN代理模型

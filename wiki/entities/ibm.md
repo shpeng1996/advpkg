@@ -3,7 +3,7 @@ title: "IBM Research / IBM 研究院"
 category: entity
 tags: [research, 3D-packaging, nanostack, hybrid-bonding, sub-2nm, chiplet]
 created: 2026-09-11
-updated: 2026-09-19
+updated: 2026-09-25
 sources: [2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation]
 related:
   - wiki/technologies/hybrid-bonding.md
@@ -109,3 +109,21 @@ IBM Research（T.J. Watson）× Rensselaer Polytechnic Institute × Albany，發
 ➜ 新增未解問題：接合界面的散熱面積與 I/O 面積的交換率是多少？
 
 ⚠ 專利為前瞻訊號；IBM 無自有先進封裝量產線，此件屬研究型布局。
+
+---
+
+## 2026-09-25 更新
+
+### 專利訊號：BEOL 內建雷射解接合測試結構
+**US20260150629A1**（family 99884050，公開 2026-05-28）
+發明人：CHEN QIANWEN、RUBIN JOSHUA MARK、POLOMOFF NICHOLAS ALEXANDER、**KNICKERBOCKER JOHN**
+IPC：H10P74/203、/207、/23、/273、/277
+
+請求項要旨：半導體結構含 BEOL 區域（兩層金屬互連 + 其間 ILD），以及**配置於 BEOL 區域內之雷射解接合測試結構**——由**置於 ILD 內之可測試金屬板層**、**一組測試墊**、**一組自測試墊延伸至該金屬板層之貫孔**構成。
+
+➜ ⭐⭐⭐ **「測試左移」的第四個獨立實例，且型態全新**：前三例皆為元件／版圖層把測試結構外移或前移；**本件是把量測結構埋進產品的 BEOL，用以監控一個「封裝製程步驟」（雷射解接合）而非元件本身。**
+➜ ⭐⭐ **與同輪 TEL 論文構成「同一問題、兩條方法學」**：TEL 以材料相變當溫度計（離線、破壞性、用於校準）；IBM 以可電測金屬板（可線上、非破壞、用於量產監控）。**兩者互補。** 詳見 [[concepts/test-metrology-packaging]]。
+➜ ⭐ 發明人含 **John Knickerbocker**（IBM 3D 整合長期主導者）⇒ 提高該布局屬策略性而非例行的可能性。
+➜ **IBM 在本 wiki 的定位自「3D 封裝研究先行者（Nanostack、beveled edge stacking）」擴展到「封裝製程的量測方法學」。**
+
+⚠ **專利是訊號不是事實**：不得陳述為已量產之產線監控手段。摘要**無任何量化值**；未載明雷射波長／脈寬，亦未載明係用於載板解接合或元件層轉移 ➜ **不可逕自歸入 FOPLP 或 W2W 任一情境。**

@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-09-24
-**頁面總數 Total Pages**：635
-**原始來源數 Sources**：580（含 8 個合併轉向頁）
+**更新時間 Updated**：2026-09-25
+**頁面總數 Total Pages**：650
+**原始來源數 Sources**：594（含 8 個合併轉向頁）
 
 ---
 
@@ -14,6 +14,7 @@
 
 ## 實體 Entities（公司、組織）
 
+- [[entities/dnp]] — 大日本印刷 Dai Nippon Printing（千葉）；同時做 **RDL interposer / glass interposer / glass core substrate** 三類；**DNP-SAP 以無機介電+阻障金屬隔開 Cu 與 PID**；⭐⭐⭐ **首度一手量化：Ea 0.9 → >1.23 eV、MTTF 0.7–10 hr → >1000 hr、t₀.₁% 外推 10,000×；B-HAST 120→200 hr；40 GHz/1000 TCT 劣化與線寬無關**；面板 300×400 mm、TGV φ100 µm（2026-09-25）⭐本輪新建
 - [[entities/hanwha-semitech]] — 한화세미텍 Hanwha Semitech（韓華集團）；D2W 混合接合機**第二家韓系供應商**；**SHB2 Nano 對準 0.1 µm、2026 H1 客戶測試（領先 Hanmi 約一年）**；第一代 2022-01 交付；TCB 機種 SFM5 Expert 2025 年銷售 **>₩900 億**；與 **Prodrive（ASML 夥伴）結盟**；Samsung 平澤 P5 備選供應商；⭐ **「TCB 強、HB 弱」自 Hanmi 個案擴展為韓系共同模式**⭐本輪新建
 - [[entities/hanmi]] — 한미반도체 Hanmi Semiconductor（仁川）；HBM **TC bonder 主要供應商**；混合接合機第一代 2020、**第二代原型 2026 年底、廠房 2027 上半（₩100B/Class 100）、量產採用 ~2029**；⭐ **TC bonder 的領先並未轉移到混合接合（相鄰技術落後約三年）**⭐本輪新建
 - [[entities/absolics]] — Absolics（SKC 子公司，與 Applied Materials 合資）；玻璃核心基板**量產先行者**，全球首座專用廠（美國喬治亞）；量產**自 2026 年底推遲至 2027**；⭐ **兩件請求項皆非幾何而是「製程潔淨度」與「微結構對稱性」：溶出雜質 P ≤1,500 ppb／Zn ≤500 ppb（ICP-MS 方法寫入請求項）、上下 RDL 銅晶粒長寬比之比 C/D 0.85–0.99**⭐本輪新建
@@ -86,6 +87,20 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-09-25_paper_cornell-glass-on-glass-sio2-rdl]] — [論文] ⭐⭐⭐ **細線距訊號 TGV 可能是自找的：高分子 RDL 只能 3–4 層 ⇒ 必須雙面佈線 ⇒ 訊號才要穿過基板；改 SiO₂ damascene RDL 單面 9–10 層後只剩 ~80 µm power/IO TGV，AR 牆不在路徑上**；⭐⭐⭐ **σ ~ 1/r、MTTF ~ r²**；高分子 ILD 做不了混合接合；波導 10× 尺寸差（Cornell/FuzeHub, IMAPS DPC 2026）⭐新增
+- [[sources/2026-09-25_paper_dnp-glass-rdl-electromigration-lifetime]] — [論文] ⭐⭐⭐ **RDL 微縮的第二堵牆是電遷移**：無機介電覆蓋使 **Ea 0.9 → >1.23 eV**、**MTTF 0.7–10 hr → >1000 hr**、t₀.₁% 外推 **10,000×**；B-HAST 120 hr → 200 hr；40 GHz/1000 TCT 劣化與線寬無關；TGV φ100 µm/1.0 mm 節距（DNP, IMAPS DPC 2026）⭐新增
+- [[sources/2026-09-25_paper_ase-glass-carrier-edge-toughness-reuse]] — [論文] ⭐⭐⭐ **玻璃載板重複使用的量化代價：正規化衝擊韌性 0.82 → 0.47（−43%）**；邊緣研磨 Rz 1.536 vs 6.497 µm ⇒ 韌性 ~7.0 vs ~1.5；⚠⚠ **修正本 wiki 對「43 µm」的誤讀（受損區寬度，非深度門檻）**（ASE, IMAPS DPC 2026）⭐新增
+- [[sources/2026-09-25_paper_tel-laser-liftoff-carrier-reuse-thermal]] — [論文] ⭐⭐⭐ **LLO 載板重複使用（CSAM 無空洞、Rq 1.9–2.3 nm、DIW −90%）**；⭐⭐⭐ **以離子佈植（800–1000 °C）與矽化物相變（200–650 °C）當溫度計量測奈秒脈衝熱損傷；加 ENG Stack 後 ≤200 °C**；⭐⭐ **雷射節距↑ ⇒ 粗糙度↓ 且 吞吐↑（同向改善，第三種參數型態）**（TEL, IMAPS DPC 2026）⭐新增
+- [[sources/2026-09-25_patent_intel-tgv-organic-seed-layer]] — [專利] ⭐⭐⭐ **TGV 金屬化第四條互斥路線：有機種子材料層**（前三為底部向上電鍍／全濕式 ZnO／改良濺鍍）；⭐⭐⭐ **「玻璃平坦度 → <3 µm L/S 可直接圖案化」首見於排他權文件**；同軸電感置於核心 TGV（Intel JP2026108527A, 2026-06-30）⭐新增
+- [[sources/2026-09-25_patent_ibm-laser-debonding-test-structures]] — [專利] ⭐⭐⭐ **「測試左移」第四例且型態全新：把可電測金屬板埋進 BEOL 以監控雷射解接合**——監控的是封裝製程步驟而非元件；與同輪 TEL 構成「校準 vs 監控」互補雙路線；發明人含 John Knickerbocker（IBM US20260150629A1, 2026-05-28）⭐新增
+- [[sources/2026-09-25_patent_ibiden-shinko-substrate-optical-waveguide]] — [專利] ⭐⭐⭐ **CPO 排他權戰場首次自晶圓廠下移到基板廠：Ibiden 與 Shinko 兩週內各自申請「基板內光波導」**；Ibiden 重心在對準／評估標記+環繞堤壩（內建驗證結構第三例）；⚠⚠ **附帶證實：以申請人檢索 Ibiden/Shinko/Unimicron（348 件）看不到 EMIB-T**（WO2026186472A1 / US20260251844A1）⭐新增
+- [[sources/2026-09-25_patent_jcet-glass-carrier-groove-warpage]] — [專利] ⭐⭐ **翹曲控制手段下移第四型：在載板本體內以溝槽分配剛度**（自由區溝槽面積 > 週邊區）；與同輪 ASE 構成玻璃載板的強度側與翹曲側兩端，且皆來自 OSAT（JCET CN122497397A, 2026-07-31）⭐新增
+- [[sources/2026-09-25_article_imec-polymer-waveguide-cpo-coupling]] — [文章] ⭐⭐⭐ **與同輪 Cornell 結論相反：SiN↔高分子波導耦合接近 1 dB（O-band，TE/TM），晶片對晶片與晶片對光纖 <2 dB**，以 "Mono" 法設計 SiN taper 相位匹配；與 chip-first 扇出相容 ⇒ **CPO 損耗預算自此有接合界面與波導轉接兩環節**（imec×Ghent, arXiv:2503.02712）⭐新增
+- [[sources/2026-09-25_article_rise-of-panel-level-packaging]] — [文章] ⭐⭐ **曝光場上限 250×250 mm 小於所有面板尺寸 ⇒ 拼接次數隨面積等比增加（310×310→700×700 為 5.1×）**；面板尺寸擴充至六種；**Yole 2024：$160 M／80,000 片（≈330,000 片 300 mm 當量）→ 2030 $650 M**；利用率改善門檻 3.5× 光罩（SemiEng, 2025-07-24）⭐新增
+- [[sources/2026-09-25_article_electromigration-advanced-packages]] — [文章] ⭐⭐ **ASE 銅柱 Ea 1.12 ± 0.03 eV**，與 DNP 之 RDL（0.9 / >1.23 eV）構成三組活化能對照；EM 失效判準（+100% 失效／+20% 最大容許）首次入庫；Synopsys：電流密度已逼近設計規則上限；⚠ 原文含誤植 "<5nm L/S"（SemiEng, 2024-04-18）⭐新增
+- [[sources/2026-09-25_article_hipims-ionized-sputtering-tgv]] — [文章] ⭐⭐ **為「改良濺鍍」路線補上設備商（TRUMPF）與離子化率 >70%**；⚠⚠ **全篇無 AR／階梯覆蓋率數值 ⇒ 2026-09-24 之「濺鍍側深寬比實績」空缺未結清**；②全濕式與③乾式的對立升格為「整條製程是濕的還是乾的」（Electronics Journal, 2026-09-03）⭐新增
+- [[sources/2026-09-25_paper_asu-molded-core-substrate-warpage-nn]] — [論文] ⭐⭐ **第三條基板路線：模封核心基板（Deca 扇出製程）**；路線圖 µbump 25→sub-10 µm、RDL L/S 2/2→0.5/0.5 µm、**無 capture pad via 5→2 µm**、VIB 35→20 µm；**翹曲控制第四類手段：製程排程**（PMC 黏彈鬆弛為主導釋放機制）；⚠⚠ 全篇無翹曲絕對值（ASU×SHIELD USA, IMAPS DPC 2026）⭐新增
+- [[sources/2026-09-25_article_w2w-700nm-2022-anchor]] — [文章] ⭐⭐ **歷史錨點：imec W2W 700 nm（2022-01）** ⇒ W2W 軌跡 700→200→140 nm（四年 5×）vs D2W 9→6 µm（四年 1.5×）**⇒ 兩條學習曲線斜率不同，落差正在擴大**；⚠⚠ 跨軌跡不可比（研究 vs 量產）（SemiEng, 2022-01-31）⭐新增
 - [[sources/2026-09-24_paper_tel-w2w-140nm-pitch-hybrid-bonding]] — [論文] ⭐⭐⭐ **TEL 於 140 nm 間距達成無孔洞 W2W 混合接合（銅晶粒跨界面成長，TEM）；殘差 <50 nm，75% <30 nm；新硬體模擬 14.6 nm M+3σ**——**W2W 與 D2W 的 pitch 差 43–64 倍，限制鏈自此標註「僅適用 D2W」**；⚠ 僅接合墊、無電性測試（IMAPS 22nd DPC 2026）⭐新增
 - [[sources/2026-09-24_paper_atotech-copper-microstructure-qtime]] — [論文] ⭐⭐⭐ **Q-time 是氧化與再結晶兩個獨立機制共用的同一工程量：0.5 ASD >3 週 vs 2.0 ASD <2 小時（>250×）**；⭐⭐⭐ **三種 ECD 銅四軸無一全勝——「最佳值是區間」的首個離散版本**；⭐⭐⭐ **CMP 反向限制上游材料選擇**；孔越窄越深 ⇒ Q-time 越短（IMAPS DPC 2026）⭐新增
 - [[sources/2026-09-24_paper_okuno-zno-seed-sputtering-ar-wall]] — [論文] ⭐⭐⭐ **濺鍍在 AR≈10 即難以成膜（φ80 µm×0.8 mm）；全濕式 ZnO 黏結層達 AR 10–11 無孔洞**；⭐⭐ **剝離膜兩側皆含 Zn ⇒ 破壞面在本體而非界面**（IMAPS DPC 2026, Okuno Chemical）⭐新增

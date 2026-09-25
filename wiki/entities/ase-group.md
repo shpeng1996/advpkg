@@ -3,7 +3,7 @@ title: "ASE Group / 日月光投控"
 category: entity
 tags: [OSAT, advanced-packaging, CoWoP, FOPLP, chiplet, CPO, LEAP]
 created: 2026-04-25
-updated: 2026-09-23
+updated: 2026-09-25
 sources: [2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below, 2026-08-05_trendforce_tsmc-cowos-cow-outsourcing-osat, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2026-05-08_aseglobal_ase-wus-kaohsiung-focoes-hub, 2026-05-26_semiconductor-digest_ase-310mm-plp-ectc2026, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-11_trendforce_ase-spil-zhunan-plant, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-07-01_trendforce_ase-price-hike-20pct, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-31_ase_cn224583735u-photoelectric-hybrid-rdl, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-06-02_intel_ectc2026-emib-t-cpo-glass]
 related:
   - wiki/technologies/cowos.md
@@ -247,3 +247,31 @@ Intel Foundry 的 ECTC 2026 官方部落格列出其 20 篇論文的合作方，
 
 ### ⚠ 限制
 公差表為**設計規則宣稱**，未附實測分布或良率實績；「Gen 1／Gen 2」無年份錨定。
+
+---
+
+## 2026-09-25 更新
+
+### 一手論文：12 吋晶圓級玻璃載板的邊緣衝擊韌性方法學
+**IMAPS 22nd DPC 2026（`10.4071/001c.167759`）**
+作者：Wu-Lung Wang、Yu-Sheng Hsiao、Wiwy Wudjud、Yi-Hsuan Tsai、Chin-Li Kao、Chen-Chao Wang、Lihong Cao、Chieh Lo、**Chih-Pin Hung**
+
+- 試片：**直徑 300 mm、厚 1.0 mm、CTE 4.0 ppm/°C**；玻璃載板 CTE 可調 **3.4–12.6 ppm/°C**；宣稱支撐 **515×510 mm 或 600×600 mm** 面板
+- 自建方法：**擺錘衝擊試驗**（質量 25–500 g、臂長 0.25–1.0 m、角度 0–90°；衝擊能量正規化 0–1）；量測 3D 白光干涉儀 + **>50,000 fps / 1 MP** 高速攝影
+- **第一研究（邊緣研磨精細度）**：Rz **1.536 µm** vs **6.497 µm** ➜ 正規化韌性 **~7.0 vs ~1.5**（約 **4.7×**）
+- **第二研究（新 vs 重複使用）**：韌性 **0.82 vs 0.47（−43%）**；重複使用載板邊緣**受損區寬約 43 µm**
+- 損傷歸因：fan-out 製程與清洗製程之**機械應力與化學暴露**
+
+➜ ⭐⭐⭐ **ASE 是本 wiki 2026-09-24 所立之「玻璃載板不是可無限攤提的固定成本」論述的原始一手來源**，且本篇提供了此前二手轉述中沒有的數字（0.82 → 0.47）。
+➜ ⭐⭐⭐ **並修正了本 wiki 對「43 µm」的誤讀**（原記為深度門檻，實為受損區寬度）——詳見 [[technologies/foplp]]。
+➜ ⭐⭐ **「起始表面品質決定下游良率」取得第二個實例，作用對象自基板（Plan Optik）擴展到載板（ASE）**：**新形式「玻璃件的機械可靠度由其最後一道機械加工的精細度決定，而非由玻璃本身的材料等級決定」**（兩例分別落在拋光（面）與研磨（邊））。
+➜ ASE 之角色自「CoWoP 面板封裝／FOPLP 產能」擴展到**玻璃載板的可靠度方法學**；**Chih-Pin Hung（洪志斌）**為本 wiki 既有之 ASE 技術發言人之一。
+
+⚠ 衝擊能量為**正規化值（0–1）**，未給絕對焦耳值 ➜ **不可與其他文獻並列比較**；**重複使用僅一輪**，未給多輪劣化曲線；未給良率或成本換算。
+
+### 電遷移：ASE 銅柱活化能入庫（經 SemiEng 2024-04-18 轉述）
+- 測試條件 **10 kA/cm²**；**150 / 160 / 180 °C**
+- **FCQFN 封裝銅柱互連活化能 1.12 ± 0.03 eV**
+- **最大容許電流 >2 A**（10 年、105 °C、0.1% 失效率）
+➜ 與同輪 DNP 之 RDL 活化能（0.9 eV / >1.23 eV）構成三組對照，詳見 [[concepts/test-metrology-packaging]]。
+⚠ 三者結構與量測條件皆不同，**不得作為性能排名。** 該 SemiEng 文含明顯誤植（"<5nm lines and spaces"），其數字應降低採信等級。

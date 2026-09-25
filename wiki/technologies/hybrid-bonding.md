@@ -3,7 +3,7 @@ title: "混合接合 / Hybrid Bonding"
 category: technology
 tags: [3D, hybrid-bonding, Cu-Cu, SoIC, ECTC, advanced-packaging, DRAM, COP, 4F2, Sn-damascene, damascene-interconnect, PFAS-free, patent-signal, guard-ring, surface-activation]
 created: 2026-04-24
-updated: 2026-09-24
+updated: 2026-09-25
 sources: [2026-05-21_semiecosystem_ectc2026-cpo-hybridbonding-plp, 2026-04-24_initial-survey, 2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-03-01_3dincites_besi-packaging-power-shift, 2026-01-13_semiengineering_hbm4-microbumps, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-19_semieng_advanced-packaging-limits, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-03-27_3dincites_copper-grain-hybrid-bonding, 2026-03-02_semieng_making-hybrid-bonding-better, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2026-04-29_semiwiki_cea-leti-ectc2026-hybrid-bonding, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2024-02-09_semianalysis_hybrid-bonding-process-flow, 2026-05-19_semiconductor-digest_ev-group-ectc2026-hybrid-bonding, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-04-19_semiwiki_apple-m5-cucu-hybrid-bonding-shipped, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-18_imec_iii-v-chiplet-rf-laser-bonding, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-29_evgroup_ectc2026-hybrid-bonding-layer-transfer, 2026-06-29_thelec_skhynix-hybrid-bonding-equipment-order, 2026-06-05_semieng_intel-ectc-2026-emib-t-cpo-glass, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-14_trendforce_samsung-hbm-hiring-hybridbonding, 2026-07-16_semieng_fine-pitch-hb-high-volume, 2026-07-16_semieng_alt-materials-hybrid-bonding, 2026-06-08_irtnanoelec_d2w-hybrid-bonding-1um-pitch, 2026-05-28_imec_w2w-hybrid-bonding-200nm-pitch, 2026-09-09_acsaelm_microwave-anneal-cu-cu-150c-3min, 2026-08-21_scirep_copper-oxide-reduction-ar-h2-pulsed-plasma, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-03-29_damnang_hybrid-bonding-cmp-gating-factor, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-04-02_adeia_us20260096463a1-buildup-organic-dielectric-bonding, 2026-07-17_jcet_cn122421815a-asymmetric-bonding-interface, 2026-04-30_seoultech_us20260123559a1-hydrocarbon-plasma-low-temp-bonding, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer, 2023-09-13_nccavs_intel-cmp-dishing-requirement-vs-achieved, 2026-03-11_epo_adeia-cmp-for-hybrid-bonding-patent, 2026-09-01_chip_ru-bpr-ntsv-ion-beam-recess, 2026-02-10_epo_shanghai-univ-citric-acid-cu-reduction-sog, 2026-09-21_semiconductorx_cmp-share-lam-sabre-correction, 2026-09-16_jsandwich_cucu-diameter-nonmonotonic-local-optimum, 2026-07-21_lam_sabre-3d-is-ecd-not-cmp]
 related:
   - wiki/technologies/soic.md
@@ -1599,3 +1599,50 @@ NineScrolls（2026-06-01／2026-08-15 更新）主張五段鏈為 CMP → **CMP 
 ➜ 「CMP 後清洗是第二大良率槓桿」空缺自「單一來源」升為**「兩個獨立來源、皆無量化」**。**維持不逕行插入限制鏈第四環。**
 
 ⚠ Atotech 全文標示 "MKS CONFIDENTIAL"，為供應商公開發表，無第三方驗證，未給接合強度或良率絕對值。
+
+---
+
+## 2026-09-25 更新
+
+### ⭐⭐⭐ 「混合接合是兩條學習曲線」自單一時點升級為時間序列——且落差正在擴大
+2026-09-24 以 TEL 的 W2W 140 nm 對照 D2W 量產 6–9 µm，得出 **43–64 倍**落差。本輪取得 2022 年的錨點（SemiEng 2022-01-31：**imec W2W 700 nm**、**TSMC SoIC 當時 9 µm**），使兩條曲線可比較斜率：
+
+**W2W（研究側）**
+| 時間 | 節距 | 來源 |
+|---|---|---|
+| 2022-01 | **700 nm** | imec |
+| 2026（ECTC 2026） | **200 nm** | imec × EVG（overlay <40 nm） |
+| 2026（IMAPS DPC 2026） | **140 nm** | TEL（無孔洞；⚠ 僅接合墊、未電性測試） |
+➜ 約四年 **5 倍**
+
+**D2W（量產側）**
+| 時間 | 節距 | 來源 |
+|---|---|---|
+| 2022-01 | **9 µm** | TSMC SoIC |
+| 2025 | **6 µm** | TSMC SoIC 量產 |
+➜ 約四年 **1.5 倍**
+
+➜ ⭐⭐⭐ **兩條曲線不只有落差，斜率也不同（5× vs 1.5×）⇒ 落差正在擴大而非收斂。**
+➜ ⭐ 「混合接合起點為 10 µm 及以下」在 2022 年即已成立，而 2026 年 D2W 量產仍在 6 µm ⇒ **D2W 四年間並未跨越一個數量級。**
+⚠⚠ **兩條軌跡各自內部可比，跨軌跡不可比**：W2W 全為研究成果、D2W 全為量產節距。**43–64 倍的落差混合了「研究 vs 量產」與「W2W vs D2W」兩個變因，本 wiki 引用時必須同時陳述這一點。**
+⚠ **imec 700 nm 未載明良率、overlay 或電性驗證** ➜ 與 TEL 140 nm 之「僅接合墊、未電性測試」為同類保留 ⇒ **W2W 這條曲線自始至終都缺電性驗證。**
+📌 **既有空缺延續且未進展**：D2W 陣營對此落差的任何公開表態——本 wiki 仍為零。
+
+### ⭐⭐ 高分子 ILD 可能排除混合接合選項（候選論述，單一來源）
+**Cornell / FuzeHub（`10.4071/001c.166918`）**：
+| ILD | MicroBump | Hybrid Bonding |
+|---|---|---|
+| Polymer ILD | Yes | **No** |
+| Glass ILD | Yes | **Yes** |
+理由：若 ILD 為有機／高分子，接合所需之剛性／變形要求會排擠 CTE、損耗等其他要求；**Cu/Ox 混合接合為 SOTA，領先高分子數年**。
+➜ 若成立，則**選高分子 RDL 等於在封裝層放棄混合接合選項** ⇒ **RDL 介電材料選擇與 3D 堆疊路線耦合**，本 wiki 此前視為兩個獨立主題。
+⚠ **單一來源、且為立場論文，列候選論述，不逕行升格。**
+
+### ⭐⭐ 雷射剝離（LLO）進入混合接合的前後段流程
+**TEL（`10.4071/001c.167775`）**：IR LLO 應用清單明列 **HBM、W2W memory、3DIC（SoC disaggregation）**；fusion 與 hybrid bonding 為 D2W／HBM／AI 的必要步驟，LLO 用以釋放永久接合之 Si 載板而**不需膠層或背磨**。
+➜ 熱損傷偵測與工程堆疊詳見 [[sources/2026-09-25_paper_tel-laser-liftoff-carrier-reuse-thermal]]。
+➜ ⭐ **「熱應拆成運作熱與製程熱」的製程熱一側新增第四個切入點：雷射熱預算**（既有三點：775 µm 熱預算、退火溫度帶、鍵合頭本身）。其特殊性在於**瞬態且空間局部** ⇒ **「製程熱」不是一個同質的類別。**
+➜ ⭐ **「透明性／可穿透性逐層傳播」自 UV（308 nm，KIMM）擴展到 IR**：本例中 IR 需穿透 Si 載板與其上各層 ⇒ 2026-09-24 之推論鏈形式不變，**取得第二個波段的實例。**
+
+### 本輪 TEL 第二度入庫
+2026-09-24（W2W 140 nm 接合）與本輪（LLO 載板重複使用與熱偵測）**連續兩輪**，見 [[entities/tel]]。

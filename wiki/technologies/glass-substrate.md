@@ -3,7 +3,7 @@ title: "玻璃基板 / Glass Core Substrate"
 category: technology
 tags: [glass-substrate, TGV, panel-level, FC-BGA, CoPoS, Absolics, DNP, Rapidus, warpage, SeWaRe, glass-interposer, BOE, ULCVD, non-embedding, Lens-Technology, TPK-KY, Innolux, AUO, LG-Chem, singulation, patent-signal]
 created: 2026-05-08
-updated: 2026-09-24
+updated: 2026-09-25
 sources: [2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-05-05_trendforce-insights_glass-substrate-development, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-05-29_3dincites_rapidus-2nm-advanced-packaging-ai-foundry, 2026-06-01_trendforce_intel-3dgs-india-glass-substrate, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-06-20_biggo_boe-glass-substrate-pilot, 2026-06-28_economy-ac_glass-substrate-global-race, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-08-18_trendforce_shinko-glass-substrate-22layer-glassem-delay, 2026-09-11_mssp_tgv-glass-biaxial-bending-ring-on-ring, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-03-13_kaneka_jp2026047137a-glass-core-polyimide-quantified, 2026-08-10_screp_low-k-organic-buffer-tgv-cu-metallization, 2026-08-04_jmrt_vacuum-assisted-void-free-cu-fill-tgv, 2026-07-30_micromachines_tgv-cleanability-surface-tension]
 related:
   - wiki/technologies/copos.md
@@ -1248,3 +1248,63 @@ AMAT 以模擬＋實驗比較三種 liner：**高模數/高 CTE**、**高模數/
 - ⭐ **玻璃的適用下限首見**：**<10 GHz 既有 PCB 方案已足夠**；**硼矽適用 <5 GHz，更高頻應改石英**
   ➜ 這是「玻璃不是通用替代品」的**第三個獨立限縮**（前二：Lam 的 >~100×100 mm、Lujan 的大型複雜封裝）
 - ⚠ **Ra ≈0.8 µm 再證作業規範**：本頁 TGV 側壁粗糙度區間為 25 nm–1.257 µm，而混合接合 Ra <0.1–0.2 nm（**相差 3–4 個數量級**）。0.8 µm 落偏高端卻被稱「平滑」 ➜ **跨頁引用「粗糙度」必須標註技術域。**
+
+---
+
+## 2026-09-25 更新（IMAPS DPC 2026 場館掃描第二輪 + 專利軌）
+
+### 10. ⭐⭐⭐ TGV 金屬化的互斥解法自三條增為四條——且第四條放棄的是「無機種子層」本身
+**Intel JP2026108527A**（2026-06-30，family 99957829）：標題明示 **有機種子材料層（organic seed material layer）**。
+
+| # | 路線 | 代表來源 | 放棄了什麼 |
+|---|---|---|---|
+| ① | 底部向上電鍍 | Fraunhofer / Intel US20260191064A1 | 側壁種子層 |
+| ② | 全濕式種子層（ZnO） | Okuno（唯一有量產級實績） | 真空製程 |
+| ③ | 改良濺鍍 / **離子化 PVD（HiPIMS）** | CIT EP4800151A1；**TRUMPF（2026-09-03）** | 不放棄 PVD |
+| ④ | **有機種子材料層** | **Intel JP2026108527A** | **無機種子層** |
+
+➜ **一堵牆、四條互不相容的解法，分別由研究機構、化學材料商、設備商、IDM 提出。**「該瓶頸真實且尚無共識解」的證據再強一級。
+➜ ⭐⭐ **②與③的對立自「材料選擇」升格為「整條製程是濕的還是乾的」**（Okuno 全濕式 vs 超短脈衝雷射成孔＋HiPIMS 全乾式）⇒ **產線投資結構亦互不相容，互斥性比原記載更強。**
+⚠ Intel 案之摘要**未描述該有機種子層**（僅標題載明）；**取得請求項全文前不得斷言其材料、厚度或覆蓋能力，亦不得與 ①②③ 做性能比較。**
+
+### 11. ⚠⚠ 「濺鍍側 2026 年深寬比實績」空缺未結清（2026-09-24 列次高優先）
+**HiPIMS 一文（Electronics Journal, 2026-09-03）**：離子化率**經常 >70%**；宣稱可於高 AR 窄孔達成孔底與側壁**緻密無空洞覆蓋**；對照 DC 磁控濺鍍「經常空洞與側壁覆蓋不完整」；設備商 **TRUMPF**。
+⚠⚠ **全篇無任何 AR 數值、階梯覆蓋率或孔徑** ➜ **空缺維持開啟**；本頁對「濺鍍在 AR≈10 即難以成膜」（Okuno）之記載**不修改**。
+📌 追蹤對象新增 **TRUMPF**（與 AMAT / TEL / Evatec 並列）。⚠ 該文標註「with AI assistance」撰寫，須經一手複核後方可升格。
+
+### 12. ⭐⭐⭐ 玻璃平坦度 → RDL 線距：因果連結首見於排他權文件，且附帶數字
+Intel JP2026108527A：RDL 金屬化特徵**以可直接圖案化之最細線距（例如 <3 µm L/S）橋接多晶粒，此得益於玻璃的平坦度**。課題欄為「**低翹曲且高製造良率**」。並揭示**同軸電感結構置於基板核心之 TGV**。
+➜ 本頁既有之玻璃優勢為 CTE 可調、剛性、尺寸穩定；**平坦度作為「解鎖 RDL 線距」的機制此前僅見於論文與供應商簡報。**
+📌 **新空缺**：**RDL 線距的第一限制項是「基板平坦度」還是「介電材料」？** Cornell 稱高分子卡在 1–2 µm 須換 SiO₂ damascene；Intel 稱玻璃夠平即可直接圖案化到 <3 µm。**兩者不矛盾（3 > 2）但限制項歸因不同。** 追蹤方式：任何在**同一基板平坦度**下比較高分子與無機介電之可達 L/S 的資料。
+
+### 13. ⭐⭐⭐ Cornell：細線距訊號 TGV 可能是「選了高分子 RDL」的後果，不是玻璃封裝的必需品
+**Cornell / FuzeHub（IMAPS DPC 2026，`10.4071/001c.166918`）**：
+- 高分子 RDL **CTE ~30–60** vs 玻璃 ~1–3 ⇒ **約 50 倍**；冷卻後內建應力 ⇒ **SeWaRe 剝離／切割後裂紋**，作者稱**「仍是延後玻璃基板導入的主要問題」**。
+- **高分子 RDL 層數上限 3–4 層** ⇒ 現行 POR 上下各 3–4 層平衡應力 ⇒ **「必須」有訊號 TGV 穿過基板**。
+- 改用 **SiO₂ damascene RDL**：9–10 層可全部置於單面 ⇒ **不需小孔徑訊號 TGV**；**僅剩 Power/IO TGV（~80 µm）**，訊號 TGV（~30 µm、極密）消失。
+- **σ ~ ΔCTE·ΔT·(1/r)；MTTF ~ r²** ⇒ **小孔徑本身就是可靠度懲罰項，且為平方關係。**
+- 高分子橫向卡在 **1–2 µm L/S**；Cu/Oxide BEOL 已小 10 倍。
+- **高分子 ILD 做不了混合接合；玻璃 ILD 可以**（microbump 30–50 µm；混合接合 <10 µm）。⚠ 單一來源、立場論文，**列候選不逕行升格。**
+- εr：SiO₂ 3.9 / F-SiO₂ 3.4 / SiCOH 3.2 / 高分子 3.3–2.7（**作者承認高分子在此佔優**）。
+➜ ⭐⭐⭐ **本頁自 2026-09-24 建立的「TGV 瓶頸在金屬化」論述須加註一個上游條件句：該瓶頸的存在前提是「訊號必須穿過基板」，而該前提來自 RDL 介電材料的選擇。**
+➜ **新形式（橫向論述）：「在追問一個瓶頸怎麼突破之前，應先追問它是被哪一個上游選擇製造出來的。」**
+➜ ⭐⭐ **玻璃基板的阻礙清單新增第五項**（既有四項：TGV 金屬化、翹曲/CTE、成本溢價 30–50%、良率）：**高分子 RDL 與玻璃的 CTE 失配（SeWaRe）。**
+⚠ 立場論文，無作者自身新量測；**未處理 damascene 在面板尺寸（515×510 mm）上的可行性**（晶圓廠 BEOL 為 300 mm 晶圓）、亦無成本／良率數字。
+
+### 14. ⭐⭐⭐ 玻璃上的細線距 RDL 有第二堵牆：電遷移（DNP 一手數據）
+**DNP（IMAPS DPC 2026，`10.4071/001c.167028`）** — **DNP-SAP**：以**無機介電層 + 阻障金屬**隔開 Cu 與 PID。
+| 項目 | 傳統（Cu/PID） | DNP-SAP |
+|---|---|---|
+| B-HAST 130 °C/85%/3.5 V，L/S 1.0/1.0 µm | **120 hr 絕緣破壞** | **200 hr 仍絕緣** |
+| MTTF（2 µm, 2.5E6 A/cm², 130/230 °C） | **0.7 hr** | **>1000 hr** |
+| 活化能 Ea | **0.9 eV** | **>1.23 eV** |
+| t₀.₁% 壽命外推 | 基準 | **約 10,000×** |
+- TCT **JEDEC Class H（150/−55 °C）1000 cycles** 後，**40 GHz 插入損耗劣化被顯著抑制且與線寬無關**。
+- 面板 **300×400 mm**；封裝 160×160 mm；**結構 2-2-2**；**TGV φ100 µm / 玻璃厚 1.0 mm / 節距 1.0 mm**；build-up **L/S 30/30 µm**。
+- **玻璃 εr 5.8 / tanδ 0.006**（⚠ **未標註頻率**；**不可與本頁硼矽 @2.4 GHz 的 εr 4.56 / tanδ 0.0064 並列比較**——玻璃種類與頻率皆不同。兩筆並存即顯示「玻璃」在電性上不是單一材料）。
+➜ ⭐⭐⭐ **新論述：「RDL 微縮受兩道獨立天花板限制——上方是微影畫不畫得出來，下方是電流密度撐不撐得住；兩者可被不同技術分別解除。」** 本頁既有 RDL 進展全部以 L/S 表達，**此前完全沒有電性壽命這條軸。**
+➜ ⭐⭐ **DNP 的 TGV φ100 µm / 1.0 mm 節距與 Cornell 的「大孔徑少孔數」主張方向一致——兩個獨立來源，同一輪。**
+⚠ **「10,000×」為外推值**（MTTF 皆 >1000 hr 未失效下限、Ea 為 >1.23 eV 下限）➜ 引用時必須同時陳述「以 Black's equation 自未失效下限外推」。
+
+### 15. ⭐⭐ 玻璃載板應自「FOPLP 耗材」升格為獨立追蹤對象
+本輪同時取得強度側（ASE）與翹曲側（JCET）兩個一手來源，詳見 [[technologies/foplp]] 2026-09-25 段。

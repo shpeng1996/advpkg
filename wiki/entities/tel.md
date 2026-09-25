@@ -3,7 +3,7 @@ title: "Tokyo Electron (TEL) — 東京威力科創"
 category: entity
 tags: [TEL, Tokyo-Electron, equipment, RDL, Eteris, advanced-packaging-equipment, Japan]
 created: 2026-04-26
-updated: 2026-09-24
+updated: 2026-09-25
 sources: [2026-01-23_trendforce_chip-tools-tel-asml, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer]
 related: [wiki/entities/besi.md, wiki/technologies/hybrid-bonding.md, wiki/concepts/advanced-packaging-market.md]
 ---
@@ -139,3 +139,26 @@ TEL 在先進封裝設備的定位是 **RDL 製程設備全流程覆蓋**，與 
 4. ⭐⭐ 銅晶粒跨界面成長的 TEM 證據，與同會議 Atotech 的化學側機制（fg-Cu 再結晶）**互為獨立佐證**。
 5. ⚠ **載具僅有接合墊，無電性測試**（next step：多層 140nmP 載具）；14.6 nm 為**模擬值**。
 6. 📌 **設備商輪替狀態更新**：TEL 在 W2W 側已有一手量化發表；本 wiki 在 **D2W 側**的設備量化仍僅有 AMAT×Besi（Kinex 100 nm @3σ 量產、2026 新機 50 nm、路線圖 <25 nm）。
+
+---
+
+## 2026-09-25 更新（連續第二輪入庫）
+
+### 雷射剝離（LLO）：載板重複使用與熱損傷量化偵測
+**TEL Technology Center America / Tokyo Electron America，IMAPS 22nd DPC 2026（`10.4071/001c.167775`）**
+作者：Joshua Peck、Jungrae Park、Joshua Hooge、Ilseok Son
+
+- **IR 短脈衝雷射**釋放永久接合之 Si 載板，移除 **~750 µm** Si 基板，**不需膠層、不需背磨**
+- 製程自「邊修→CMP→接合→研磨→濕蝕→CMP」縮為「**CMP→接合→LLO→CMP**」
+- **DIW 用量減少 90%**、無污泥、無耗材、**載板可重複使用**
+- 兩種犧牲層（Film A / B）皆示範**重加工後再接合、CSAM 無空洞**；載板 **Rq 2.320 nm / TTV 16.340 nm（A）**、**Rq 1.900 nm / TTV 11.24 nm（B）**
+- ⭐ **加大雷射節距 ⇒ 粗糙度↓ 且 吞吐↑**（同向改善）
+- ⭐⭐⭐ **熱損傷量化方法**：以**離子佈植（800–1000 °C，ToF-SIMS）**與**金屬矽化物相變（I: 500–650 °C、II: 200–600 °C，XRD）**作為溫度見證；**加 ENG Stack 後 Metal Stack I <500 °C、Metal Stack II ≤200 °C**（皆為偵測下限）
+- 應用清單：CIS、3D NAND、VCT DRAM、Logic BSPDN／CFET、**HBM、W2W memory、3DIC**；已驗證 **NAND（Film A）**、**W2W Memory（Film B）**
+
+➜ **TEL 連續兩輪提供本 wiki 最高價值的一手量化**（2026-09-24：W2W 140 nm 無孔洞接合；本輪：LLO 載板重複使用 + 熱偵測方法學）。
+➜ ⭐⭐ **TEL 的能力版圖自「RDL 製程設備」與「接合設備」擴展到「解接合 / 層轉移」**——**即涵蓋 3D 整合的接合與拆解兩端。** 這是本 wiki 既有之「邊界外擴：設備商向材料／相鄰製程擴張」的又一實例，且方向是**沿同一製程鏈往後延伸。**
+
+⚠ 犧牲層與釋放層**材料未揭露**；雷射**波長、能量密度、節距絕對值皆未給**；溫度結果為「低於偵測下限」非實測值；**重複使用僅示範一次**；作者明列**再現性仍在進行中**。
+⚠ **OpenAlex 機構欄位錯誤**：該筆記錄之 institutions 被解析為「Electoral Commission」「In-Q-Tel」（係將 "TEL Technology Center, America" 與原文誤植之 "Tokyo Election America" 錯配）➜ **作業提醒：OpenAlex 的 institutions 欄位對 TEL 不可信，須以 PDF 原文為準。**
+⚠ 原文載有 TEL 保密聲明；本 wiki 僅整合其公開發表之會議論文內容。

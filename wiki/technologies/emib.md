@@ -3,7 +3,7 @@ title: "EMIB — Embedded Multi-Die Interconnect Bridge"
 category: technology
 tags: [Intel, 2.5D, silicon-bridge, chiplet, HBM4, Foveros, glass-substrate, EMIB-T, EMIB-M, silicon-capacitors, power-delivery, HLFF, encapsulation, underfill]
 created: 2026-05-03
-updated: 2026-09-24
+updated: 2026-09-25
 sources: [2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-03-05_trendforce_intel-emib-billions, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-03-03_trendforce_intel-clearwater-forest, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks, 2026-06-21_convergedigest_intel-emib-t-multi-die-packaging, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap, 2026-06-05_semieng_intel-ectc-2026-emib-t-cpo-glass, 2026-01-30_tomshardware_intel-ai-chip-test-vehicle-emib-t, 2026-08-04_semieng_from-blueprint-intel-hlff, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded, 2026-07-07_semieng_panel-inspection-metrology-hdfo]
 related:
   - wiki/entities/intel.md
@@ -406,3 +406,20 @@ Intel Foundry 公開一份官方技術簡報，展示其 **「AI 晶片測試載
 5. ⭐ **Ibiden 與 Shinko 皆為本 wiki 列管缺頁實體**，本篇是它們首次以「EMIB-T 良率關鍵路徑」身分出現 ➜ **建頁優先序上調。**
 
 ⚠ 二手轉述，本 wiki 未取得欣興法說會逐字稿。
+
+---
+
+## 2026-09-25 更新（作業面：檢索路徑失效）
+
+### ⚠⚠ 以申請人檢索 Ibiden / Shinko / Unimicron 無法看到 EMIB-T
+2026-09-24 因 EMIB-T 良率關鍵路徑身分，將此三家基板供應商之專利檢索優先序上調。**本輪執行結果為負面：**
+- 檢索式：`(pa="ibiden" or pa="shinko" or pa="unimicron") and pd within "2026"` ➜ **命中 348 件**
+- 前 25 件中**無任何橋接埋入／矽橋／基板腔體相關案件**
+- 實際內容集中在：**光波導**（Ibiden WO2026186472A1、Shinko US20260251844A1）、**靜電吸盤／基板固定裝置**（Shinko 多件）、電池隔熱片（Ibiden）、一般佈線板與互連基板
+
+➜ **與 2026-09-24 對 Micron、Amkor、Bruker、Semes 的發現同型**（申請人檢索無效或被主業稀釋），**這是第三至五個實例。**
+➜ ⭐ **歸納**：**當一家公司的專利組合中，目標技術只佔極小比例時，申請人檢索必然失效——必須改以技術詞收斂。**
+📌 **下輪改以技術詞檢索 EMIB-T 路徑**：`ti,ab="bridge" and ti,ab="embedded"`、`ti,ab="silicon bridge"`、`ti,ab="cavity" and ti,ab="substrate"`、`ti,ab="bridge die"`。
+📌 **附帶發現**：Shinko 與 Ibiden 2026 年公開之封裝相關布局，**重心明顯落在光波導** ➜ 見 [[technologies/copackaged-optics]] 2026-09-25 段。**EMIB-T 的基板側排他權活動，本 wiki 目前一件也沒看到。**
+
+⚠ 本頁既有之 EMIB-T 記載（2027 年底初期量產目標良率 **50%**、Intel 對供應商提供獲利保證機制、三家基板供應商）**不因本輪而改動**——本輪只是證實該資訊無法由專利軌取得。

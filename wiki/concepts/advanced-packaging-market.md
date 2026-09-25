@@ -3,7 +3,7 @@ title: "先進封裝市場 / Advanced Packaging Market"
 category: concept
 tags: [market, forecast, CAGR, supply-chain, HBM, chiplet, geopolitics, equipment, SIA, Omdia, Yole, WFE, substrate-market, framework]
 created: 2026-04-24
-updated: 2026-09-24
+updated: 2026-09-25
 sources: [2026-07-31_semieng_chip-week-149, 2026-04-24_initial-survey, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2026-01-23_trendforce_chip-tools-tel-asml, 2026-03-05_trendforce_intel-emib-billions, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2025-12-18_trendforce_micron-capex-hbm4, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2025-05-13_trendforce_top10-osat-2024, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-04-16_ontoinnovation_dragonfly-g5-qualified, 2026-06-23_communicationstoday_foplp-glass-substrate-market-8b-2030, 2026-06-29_trendforce_china-osat-tongfu-jcet-investment, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-26_semieng_chip-week-144, 2026-07-01_trendforce_ase-price-hike-20pct, 2026-07-04_semieng_chip-week-145, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-07-03_trendforce_anthropic-samsung-advanced-packaging, 2026-05-08_trendforce_ajinomoto-abf-1b-land-buy-2032-margins, 2026-07-24_semieng_chip-week-148, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-08-06_siliconbox_500m-units-panel-scale, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly]
 related:
   - wiki/entities/tsmc.md
@@ -934,3 +934,44 @@ SemiconSam（2025-09-18）：**混合接合專用 CMP 設備 AMAT 市占 100%**�
 - **新增（財務性）**：以商業合約買下供應商的良率學習曲線
 ➜ **新橫向論述候選**：「**當良率學習曲線的成本落在供應商而收益落在買方時，買方會以合約把該成本買回來。**」⚠ 單一來源，列候選**不逕行升格**。
 ➜ 附帶：EMIB-T 把矽橋直接埋入基板 ⇒ **良率風險自晶圓廠（中介層）換手到基板廠** ➜ 這是「邊界外擴」論述的新型態：不是誰向外擴張，而是**風險換手**。
+
+---
+
+## 2026-09-25 更新
+
+### ⭐⭐⭐ 面板級封裝的絕對市場規模首次入庫——所有成本爭論都發生在一個很小的市場上
+**Yole Group（經 SemiEng 2025-07-24 轉述）**
+| 年 | 產值 | 面板數 |
+|---|---|---|
+| 2024 | **$160 M** | **80,000 片**（≈**330,000 片 300 mm 當量**） |
+| 2030 | **$650 M** | **~220,000 片** |
+➜ 值約 **4 倍**、量約 **3 倍**。
+➜ ⚠⚠ **重要定位**：本 wiki 累積了大量關於面板成本模型的論述（Lujan 的淨節省、載板攤提、玻璃溢價 30–50%、良率 0.5 個百分點容忍度），**但這些爭論目前發生在一個 2024 年僅 $160 M 的市場上。** 引用任何面板成本結論時應同時陳述此規模。
+⚠ 文章日期 2025-07-24，2024 基準須注意時效；亦未說明該統計的範圍邊界（是否含測試、是否含載板）。
+
+### ⭐⭐⭐ 「載板不是可無限攤提的固定成本」自二手轉述升格為一手量化
+**ASE（IMAPS DPC 2026，`10.4071/001c.167759`）** 為該論述的原始來源，並給出轉述中沒有的數字：
+- **新載板正規化衝擊韌性 0.82 → 重複使用後 0.47（−43%）**
+- 重複使用載板邊緣**受損區寬約 43 µm**（⚠ **非**「43 µm 深度門檻」，見下方修正）
+- 同時：**邊緣研磨精細度** Rz 1.536 µm vs 6.497 µm ⇒ 韌性 ~7.0 vs ~1.5（**4.7×**）
+➜ **面板成本模型中的載板攤提項，現在有了一個可代入的劣化比例（−43% / 單次使用）。**
+⚠⚠ **仍無多輪重複使用的劣化曲線，亦無載板壽命上限** ⇒ **仍不足以計算實際攤提次數。** 該空缺維持開啟。
+
+### ⚠⚠ 修正：「43 µm」的語意（影響 Lujan 淨結論之邊界項）
+- 舊記載（SemiEng 2026-04-16 轉述）把 43 µm 讀作**深度／厚度門檻**。
+- 一手來源（ASE）：為**受損區域的寬度**。
+- ➜ **不存在「43 µm 門檻」**；任何以其為前提的推論須撤回。詳見 [[technologies/foplp]]。
+
+### ⭐⭐ 成本模型新增一個方向相反的項：LLO 的載板重複使用是成本與環境同向的節省
+**TEL（`10.4071/001c.167775`）**：IR 雷射剝離取代機械背磨——
+- **不消耗晶圓**（載板可重複使用）、**無耗材**（無磨輪、研漿）
+- **DIW 用量減少 90%**、**無污泥**、無複雜清洗步驟
+- 製程步驟自六步縮為四步
+➜ 本 wiki 的環境法規線索（PFAS／GWP 揭露，2026-09-16 列為常駐主題）**首次出現「以製程替換取得環境效益，且該效益與成本效益同向」的案例。**
+➜ ⭐⭐ **與 ASE 的玻璃載板劣化併看，得出本輪的成本側核心結論：「載板重複使用的經濟性不取決於載板材料，而取決於分離面落在哪一層。」** 落在載板本體（玻璃，經歷全製程+化學清洗）則劣化；落在犧牲層（矽，LLO）則不劣化。
+⚠ TEL 未給任何成本數字；「減少 90% DIW」為單一指標，**不構成總擁有成本比較。**
+
+### ⭐⭐ 面板放大的效益被曝光場上限稀釋
+步進機曝光場相容尺寸上限 **250 × 250 mm**，小於所有已列面板尺寸（310×310 至 700×700 mm）。
+➜ 面板面積自 310×310 增至 700×700 為 **5.1 倍**，曝光場不變 ⇒ **拼接次數同步增加 5.1 倍。**
+➜ **任何「面板越大越省」的推算都必須把拼接次數計入。** 詳見 [[technologies/foplp]]。

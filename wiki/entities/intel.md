@@ -3,7 +3,7 @@ title: "英特爾 / Intel"
 category: entity
 tags: [IDM, advanced-packaging, EMIB, Foveros, Intel18A, Clearwater-Forest, Foveros-Direct, glass-substrate, 14A, High-NA-EUV, silicon-capacitors, Google-TPU-v8e, Q2-2026-earnings, Tesla-14A, HLFF, RAMP-C, Secure-Enclave, Rio-Rancho]
 created: 2026-04-24
-updated: 2026-09-24
+updated: 2026-09-25
 sources: [2026-08-24_intel-newsroom_hot-chips-2026-diamond-rapids-foveros-ucie, 2026-04-24_initial-survey, 2026-07-20_trendforce_tsmc-265b-arizona-intel-novalake, 2026-03-18_trendforce_intel-emib-malaysia, 2026-03-03_trendforce_intel-clearwater-forest, 2026-03-05_trendforce_intel-emib-billions, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-04-20_trendforce_intel-foundry-14a-equipment, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-01_semianalysis_cpus-back-datacenter-2026, 2026-04-10_3dincites_intel-gan-chiplet, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks, 2026-06-21_convergedigest_intel-emib-t-multi-die-packaging, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap, 2026-07-01_trendforce_terafab-intel-veteran-hire, 2026-04-07_tomshardware_intel-joins-terafab, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-01-30_tomshardware_intel-ai-chip-test-vehicle-emib-t, 2026-07-14_trendforce_intel-ireland-5b-intel3-europe, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-04_semieng_from-blueprint-intel-hlff, 2026-07-31_semieng_chip-week-149, 2026-08-13_trendforce_intel-memory-reentry-xbm-zam-saimemory, 2026-06-02_intel_ectc2026-emib-t-cpo-glass]
 related:
   - wiki/entities/tsmc.md
@@ -600,3 +600,28 @@ Intel Optical Compute Interconnect：緊湊光學 I/O chiplet，含矽 PIC、**�
 
 ### 3. 玻璃基板一手數字補充
 - **2026-01 展示 45 µm 凸塊間距**（BOE 報導引述）；累計投資 >US$1B ⚠ 二手，待佐證
+
+---
+
+## 2026-09-25 更新
+
+### 專利訊號：TGV 含「有機種子材料層」（玻璃布局的第二個維度）
+**JP2026108527A**（family 99957829，公開 2026-06-30）
+申請人：**インテル・コーポレーション（Intel Corporation）**——⚠ **epodoc 申請人欄為空，以 original 欄確認；與 2026-09-24 之 JP2026119036A 同一資料品質型態。作業規範：Intel 之 JP 案應固定改以 original 欄確認申請人。**
+IPC：H10W20/20、/42、/435、/4421、H10W44/501、H10W70/05、/095
+
+摘要要旨：
+- **【課題】提供具有低翹曲與高製造良率之 TGV 玻璃基板**
+- 玻璃兩面各堆疊佈線結構；RDL 金屬化特徵**以可直接圖案化之最細線距（例如 <3 µm L/S）橋接多晶粒，此得益於玻璃的平坦度**
+- 金屬化特徵將多晶粒連接至基板核心之**同軸電感結構或其他 TGV 結構**
+- 標題明示：**有機種子材料層（organic seed material layer）**
+
+➜ ⭐⭐⭐ **TGV 金屬化的互斥解法自三條增為四條，Intel 提供的是第四條（放棄無機種子層）。** 四條分別由研究機構、化學材料商、設備商、IDM 提出——詳見 [[technologies/glass-substrate]]。
+  ⚠ 摘要**未描述該有機種子層**（僅標題載明）；**取得請求項全文前不得斷言其材料、厚度或覆蓋能力。**
+➜ ⭐⭐⭐ **「玻璃平坦度 → 可直接圖案化的最細線距」首次出現在排他權文件，且附數字（<3 µm L/S）。**
+  📌 **新空缺**：**RDL 線距的第一限制項是基板平坦度還是介電材料？**（Cornell 稱高分子材料卡在 1–2 µm 須換 SiO₂ damascene）
+➜ ⭐⭐ **同軸電感置於基板核心之 TGV** ——與同輪 Cornell「被動元件應放進 RDL」為**同一方向的兩個獨立來源，但實作層不同**（Intel 在核心 TGV / Cornell 在 RDL）。**新論述候選：「封裝正在回收被動元件——問題只剩它們該住在 RDL 還是住在核心。」**
+➜ **Intel 之玻璃布局現有兩個維度**：liner 三軸圍籬（2026-09-24：JP2026119036A / US20260136966A1 / US20260136975A1）+ **種子層材料體系（本件）**。
+
+⚠ **專利是訊號不是事實**：不得陳述為已量產製程。**本件無任何量化請求項**（無 AR、覆蓋率、厚度、電阻）——**「專利軌訊號以定性為主」連續第五輪成立。**
+📌 既有未結清項延續（本輪無進展）：US20260005114A1（玻璃核心混合面板框架，CTE < 11）、US20260005126A1（玻璃核心側壁聚合物塗層）、熱傳耦合器溫度均勻度、EMIB-T 外包夥伴 Amkor 使用誰的鍵合頭。

@@ -3,7 +3,7 @@ title: "TSV — Through-Silicon Via / 矽穿孔"
 category: technology
 tags: [TSV, HBM, interposer, 3D-IC, CoWoS, manufacturing, backside-power, advanced-packaging, radiation, redundancy, reliability]
 created: 2026-08-10
-updated: 2026-09-24
+updated: 2026-09-25
 sources: [2026-04-22_semieng_tsv-complexity-manufacturing-bottleneck, 2026-08-21_semieng_chip-week-152, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-08-21_scirep_copper-oxide-reduction-ar-h2-pulsed-plasma, 2026-06-08_irtnanoelec_d2w-hybrid-bonding-1um-pitch, 2026-03-13_kaneka_jp2026047137a-glass-core-polyimide-quantified, 2026-08-10_screp_low-k-organic-buffer-tgv-cu-metallization, 2026-08-04_jmrt_vacuum-assisted-void-free-cu-fill-tgv, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring]
 related:
   - wiki/technologies/hbm4.md
@@ -408,3 +408,32 @@ JP2026047137A：聚醯亞胺絕緣層覆蓋貫孔側壁導電層，限定 **醯�
 ### ⭐⭐ 銅微結構與深寬比的新耦合（Atotech, IMAPS DPC 2026）
 **孔徑越小、孔越深 ⇒ 細晶銅再結晶越快 ⇒ Q-time 越短**（0.5 ASD >3 週 / 2.0 ASD <2 小時）。
 ➜ **深寬比同時壓迫「鍍得進去」與「鍍完之後撐得住」兩端。** 詳見 [[technologies/hybrid-bonding]] 2026-09-24 更新第 4–5 節。
+
+---
+
+## 2026-09-25 更新
+
+### ⭐⭐⭐ 孔徑的解析尺度律首次入庫：σ ~ 1/r，MTTF ~ r²
+**Cornell / FuzeHub（IMAPS DPC 2026，`10.4071/001c.166918`）**：
+- 熱應力 **σ ~ ΔCTE · ΔT · (1/r)**
+- 可靠度 **MTTF ~ r²**
+- 並區分兩類孔：**Power/IO TGV ~80 µm 直徑** vs **訊號 TGV ~30 µm 直徑且極密**
+
+➜ 本 wiki 此前的 TGV 孔徑討論只有兩個方向相反的定性項：**越小越好（互連密度）** vs **越小越難（金屬化／AR 牆）**。
+➜ ⭐⭐⭐ **本條新增第三項，且為定量、平方關係：小孔徑本身即是可靠度的懲罰項。**
+➜ 三項合看，**「TGV 孔徑」是本 wiki 第九個「最佳值必然是區間而非極值」的實例，且是首個三個方向同時有明確物理機制者**（密度↑ / 金屬化↓ / 可靠度↓↓）。
+
+### ⭐⭐⭐ 訊號 TGV 的存在前提是 RDL 介電材料的選擇
+Cornell 的推論鏈：**高分子 RDL 層數上限 3–4 層 ⇒ 必須上下雙面佈線 ⇒ 訊號必須穿過基板 ⇒ 需要小孔徑高密度訊號 TGV。**
+改用 **SiO₂ damascene RDL**（9–10 層單面）⇒ **訊號 TGV 消失，只剩 ~80 µm 的 Power/IO TGV** ⇒ **AR 牆不在路徑上。**
+➜ ⭐⭐⭐ 這是本 wiki 橫向論述第 3 條（「業界的第二條路不是改進該製程，而是把設計移到規格較鬆的區間」）**目前最強的實例，且槓桿位置在兩層之外。**
+➜ **新形式：「在追問一個瓶頸怎麼突破之前，應先追問它是被哪一個上游選擇製造出來的。」**
+⚠ Cornell 為立場論文，無自身新量測；此鏈為其論證，本 wiki 列為**高價值待驗證論述**，非既成事實。
+
+### ⭐⭐ 保守幾何路線的第二個獨立來源
+**DNP（`10.4071/001c.167028`）**：其玻璃核心基板實作採 **TGV φ100 µm、玻璃厚 1.0 mm、節距 1.0 mm**，並在此幾何上取得完整的 B-HAST／TCT／EM 資料。
+➜ 與 Cornell 的「大孔徑、少孔數」主張**方向一致**，且 DNP 是**有實測資料的一方** ⇒ **本 wiki 不應把「TGV 越細越先進」當作單一路線。**
+
+### 📌 追蹤
+- **RDL 線距的第一限制項為基板平坦度或介電材料？**（Intel JP2026108527A 稱玻璃平坦度使 <3 µm L/S 可直接圖案化；Cornell 稱高分子材料卡在 1–2 µm）
+- **Cornell 的 σ ~ 1/r 與 MTTF ~ r² 是否有實驗佐證**（本篇未給係數與適用範圍）
