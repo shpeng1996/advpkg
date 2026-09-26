@@ -3,8 +3,8 @@ title: "先進封裝地緣政治 / Geopolitics of Advanced Packaging"
 category: concept
 tags: [geopolitics, US-China, CHIPS-Act, supply-chain, chiplet, NAPMP, export-control, glass-substrate, standards-war, BOE, Corning, Absolics]
 created: 2026-04-26
-updated: 2026-09-10
-sources: [2026-08-10_trendforce_skhynix-chongqing-sale-global-reset, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-23_trendforce_china-osat-sj-semiconductor-ipo, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-08-05_3dincites_iftle636, 2026-03-23_trendforce_musk-terafab-tsmc-packaging, 2026-04-22_trendforce_sk-hynix-indiana-us-plant, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-16_nokia_pennsylvania-atp-expansion, 2026-06-30_amkor-ir_arizona-7billion-groundbreaking, 2026-06-30_digitimes_us-packaging-capacity-10pct-2032, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-10_tomshardware_micron-250b-us-investment-globalwafers, 2026-07-10_semieng_chip-week-146, 2026-07-14_trendforce_huawei-baidu-npo-msa, 2026-08-21_semieng_chip-week-152]
+updated: 2026-09-26
+sources: [2026-08-10_trendforce_skhynix-chongqing-sale-global-reset, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-23_trendforce_china-osat-sj-semiconductor-ipo, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-08-05_3dincites_iftle636, 2026-03-23_trendforce_musk-terafab-tsmc-packaging, 2026-04-22_trendforce_sk-hynix-indiana-us-plant, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-16_nokia_pennsylvania-atp-expansion, 2026-06-30_amkor-ir_arizona-7billion-groundbreaking, 2026-06-30_digitimes_us-packaging-capacity-10pct-2032, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-10_tomshardware_micron-250b-us-investment-globalwafers, 2026-07-10_semieng_chip-week-146, 2026-07-14_trendforce_huawei-baidu-npo-msa, 2026-08-21_semieng_chip-week-152, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_asi-1um-hdbu-substrate]
 related: [wiki/concepts/advanced-packaging-market.md, wiki/entities/amkor.md, wiki/entities/ase-group.md, wiki/technologies/ucie.md]
 ---
 
@@ -734,3 +734,24 @@ SemiEngineering 分析（2026-08-15）：中國遺留製程（Legacy Node，>28n
 | 2026-09 | LPDDR6 12,800 Mbps 量產（小米 18 Fold 全球首發） |
 | 2026-09 | HBM3E 試產啟動（中國首次本土 HBM3E） |
 | 2026-09 | 2Q26 全球 DRAM 市占 9.5%（第四名） |
+
+---
+
+## 2026-09-26 collect 更新
+
+### ⭐⭐ 美國本土先進封裝的兩個具體個案，附量化基線
+**SkyWater Technology（`10.4071/001c.167756`）**
+| 項目 | 值 |
+|---|---|
+| 美國全球晶圓製造份額 | **1990 年 37% → 2024 年 < 10%** |
+| **美國全球封裝（含先進封裝）產能份額** | **約 3%** |
+| eFOCUS 獎助 | **$120M** Cornerstone RESHAPE（2023-11，SkyWater + Osceola County, Florida） |
+| 美國政府計畫規模 | **~$50B**（CHIPS for America、NAPMP 等） |
+| 民間投資 | 2020 年起 30 州 **140 項計畫、$640B** |
+| 技術來源 | **Deca Technologies M-Series Gen1.5/Gen2.5 授權（2022 起）** |
+| 狀態 | 樣品 2026 年內；**LVM 約 2027** |
+
+**American Semiconductor（`10.4071/001c.167499`）**：2024 年為 CHIPS NOFO1 TA1/TA3 基板八項入選技術之一，**未獲 CHIPS 資助**，但自行延續 HDBU 開發與商轉；另有 **DARPA 多年合約**（美國先進基板短缺、國安應用）。
+➜ ⭐⭐ **「本土化」在這兩個個案中都不是由 CHIPS 直接資助達成的**：SkyWater 走 RESHAPE + 州政府公私合夥（Osceola County 擁廠、SkyWater 營運），ASI 走 DARPA 合約。➜ **本 wiki 首次能指出美國先進封裝本土化的資金路徑不只一條，且 CHIPS 並非唯一或必要條件。**
+⚠ 兩者皆為小規模／原型階段（SkyWater 面板僅 300 mm；ASI 僅 2 層金屬、200 mm 載板）。⚠「未獲 CHIPS 資助」為 ASI 原文自述，本 wiki 不引申評價。
+➜ **缺實體頁候選新增：SkyWater Technology**（美國本土 FOWLP 純代工，Deca 授權）。本輪首次出現，不建頁，列管。

@@ -3,8 +3,8 @@ title: "先進封裝的測試、量測與失效分析 / Test, Metrology & Failur
 category: concept
 tags: [test, metrology, inspection, failure-analysis, KGD, KGI, KGP, DFA, yield]
 created: 2026-09-17
-updated: 2026-09-25
-sources: [2025-01-14_semieng_known-good-interposer-screening, 2025-07-10_semieng_advanced-packaging-reshaping-inspection, 2024-11-12_semieng_packaging-drives-test-metrology-innovation, 2026-08-01_jfap_3dic-failure-analysis-dfa, 2026-07-06_apl_lensless-through-silicon-phase-imaging, 2026-09-06_ndte_hysan-sparse-view-xct-tsv, 2026-08-02_chips_cpo-wafer-level-probe-card, 2026-08-27_samsung_us20260256000a1-interposer-test-pad, 2026-08-13_jcet_us20260239928a1-hybrid-bonding-substack-test, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-06-28_hyperframe_amat-hybrid-bonding-hedge]
+updated: 2026-09-26
+sources: [2025-01-14_semieng_known-good-interposer-screening, 2025-07-10_semieng_advanced-packaging-reshaping-inspection, 2024-11-12_semieng_packaging-drives-test-metrology-innovation, 2026-08-01_jfap_3dic-failure-analysis-dfa, 2026-07-06_apl_lensless-through-silicon-phase-imaging, 2026-09-06_ndte_hysan-sparse-view-xct-tsv, 2026-08-02_chips_cpo-wafer-level-probe-card, 2026-08-27_samsung_us20260256000a1-interposer-test-pad, 2026-08-13_jcet_us20260239928a1-hybrid-bonding-substack-test, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-06-28_hyperframe_amat-hybrid-bonding-hedge, 2026-09-26_paper_ibm-amine-post-cmp-clean, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_lpkf-lide-glass-ap-cpo]
 related:
   - wiki/technologies/hybrid-bonding.md
   - wiki/technologies/cowos.md
@@ -548,3 +548,37 @@ Micromachines 的**五種 TGV 剖面**（直壁／沙漏／等腰錐／倒錐／
 ### 📌 作業規範新增（本輪觸發）
 凡本 wiki 記載之單一數字，其**單位語意（門檻／尺寸／比例）**若係由二手轉述推得，在取得一手來源前應標 ⚠。
 **首個實際觸發案例**：玻璃載板「43 µm」——二手轉述使其讀來像**深度門檻**，一手來源（ASE）實為**受損區寬度**。詳見 [[technologies/foplp]]。
+
+---
+
+## 2026-09-26 collect 更新
+
+### ⭐⭐⭐ CMP 後清洗：從「單一來源的排序主張」到「兩個獨立來源的環節事實」
+2026-09-22 列為空缺：「**『CMP 後清洗是第二大良率槓桿』是否成立**（NineScrolls 單一來源、無數據）—— 若成立，2026-09-19 的限制鏈排序（①表面平坦度 > ②die 翹曲 > ③機台對準）須插入第四環」。
+**IBM（ASMC 2026，2026-05-11）**「Implementing amine-based cleaning chemical for post CMP cleaning of Cu for BEOL interconnect and Hybrid bonding Applications」（Arunkumar G V、Wei-Tsu Tseng、Jeffrey Lang、Emiko Motoyama、Donald Canaperi、Govind Bajpai、Michael Wedlake）：以**胺基清洗配方**對比傳統 **TMAH**，測試涵蓋 **2 nm 節點 Cu thin/fat wires 與混合接合用 TSV**，並主張改善先進節點良率。
+➜ **空缺部分結清**：
+- 「post-CMP 清洗是**獨立且重要**的良率環節」—— **成立**（兩個獨立來源）
+- 「它是**排在 CMP 之後的第二大**」—— **仍為 NineScrolls 單一來源之排序主張，維持待證**，故**限制鏈暫不插入第四環**
+⚠⚠ IBM 篇**全篇無量化值**（顆粒移除效率、缺陷數、腐蝕/粗糙度皆未公開）。📌 追蹤 ASMC 2026 全文。
+
+### ⭐⭐⭐ 環境與職業健康規範是單元製程選擇的獨立驅動力——第三個實例，假設成立
+2026-09-16 將「**PFAS／氟化氣體規範與製程 GWP 揭露**」列為常駐 collect 主題，當時有兩例（Fujifilm 無 PFAS PBO、IBM 非 Bosch 深矽蝕刻），追蹤問題為「是否擴散至第三個單元製程（**清洗**、CMP 漿料、光阻）」。
+➜ ⭐⭐⭐ **本輪「清洗」這一格被填上**：IBM 明言 TMAH 在製造現場**已產生環境與職業健康顧慮**，並以此作為更換 post-CMP 清洗化學的公開理由之一。➜ **該常駐主題的假設成立：環安規範已是先進封裝單元製程選擇的獨立驅動力，而非附帶條件。**
+⚠ 但**三例中的兩例來自 IBM**（非 Bosch 蝕刻、本篇）—— 此集中性可能只反映 IBM 的發表偏好，**不宜逕推為產業趨勢**。📌 追蹤第三個非 IBM 來源。
+
+### ⭐⭐ 「混合接合的製程化學由 BEOL 供應鏈提供」第二個實例
+第一例為 AMAT Insepra™ SiCN = 混合接合表面製備（2026-09-21 官網複核確認）。本輪 IBM 一篇論文同時涵蓋 **2 nm BEOL 細線與混合接合 TSV**。
+➜ **「混合接合的製程化學正由 BEOL 供應鏈提供，而非封裝供應鏈」** —— 兩個獨立實例。
+
+### ⭐ 封裝設計規則進入 EDA 標準流程：SkyWater PDK 交付 Calibre DRC
+**SkyWater（`10.4071/001c.167756`）** 之 FOWLP PDK 交付物含 **Design Rule Manual、Design Guide、Tech Files、Calibre DRC、AP Preview Tool**，並附六階段成熟度分級（Early Access → Engineering → **Fully Qualified**）與日期。
+➜ 與 2026-09-17「KGD 缺標準化定義」、OCP/JEDEC **PTDK**（定義測試資料交付格式）屬同一「**chiplet 跨供應商契約基礎**」議題群。➜ ⭐ **本 wiki 首次看到封裝設計規則以具名 EDA 工具的 DRC 形式交付，且附「完全認證」的日期承諾（Q1'28 / Q2'28）。**
+
+### ⭐ 「同一名詞涵蓋多個獨立驗收項」本輪新增第三個技術域
+| 技術域 | 粗糙度規格 | 來源 |
+|---|---|---|
+| 混合接合表面 | **Ra < 0.1–0.2 nm**；SiCN < 2 Å RMS | 2026-09-22、本輪綜述 |
+| TGV 側壁 | **25 nm – 1.257 µm** | 2026-09-22 |
+| **玻璃腔體（LIDE）** | **波紋 ±100 nm、粗糙度 ±30 nm** | **LPKF（本輪）** |
+➜ **跨頁引用「粗糙度」必須標註技術域**（三域之間相差 2–4 個數量級）。
+同理，**dishing 亦須標註技術域**：RDL CMP **< 90 nm 且與 over-CMP 比例無關**（Amkor ETR）vs 混合接合 **1–5 nm 且要求精密控制** —— **差 20–90 倍**。

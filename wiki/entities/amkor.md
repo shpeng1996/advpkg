@@ -3,9 +3,10 @@ title: "Amkor Technology"
 category: entity
 tags: [OSAT, advanced-packaging, FOCoS, Arizona, chiplet, Intel-EMIB, patent-signal, TIM]
 created: 2026-04-25
-updated: 2026-09-23
-sources: [2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-05-19_stocktitan_amkor-arizona-peoria-land-expansion, 2026-06-17_digitimes_amkor-tsmc-10year-arizona-deal, 2026-06-17_trendforce_tsmc-amkor-10year-arizona-advanced-packaging, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-30_amkor-ir_arizona-7billion-groundbreaking, 2026-06-30_digitimes_amkor-2.5d-hdfo-growth-2026, 2026-07-23_amkor-ir_nvidia-amkor-1-5b-strategic-partnership]
+updated: 2026-09-26
+sources: [2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-05-19_stocktitan_amkor-arizona-peoria-land-expansion, 2026-06-17_digitimes_amkor-tsmc-10year-arizona-deal, 2026-06-17_trendforce_tsmc-amkor-10year-arizona-advanced-packaging, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-30_amkor-ir_arizona-7billion-groundbreaking, 2026-06-30_digitimes_amkor-2.5d-hdfo-growth-2026, 2026-07-23_amkor-ir_nvidia-amkor-1-5b-strategic-partnership, 2026-09-26_article_amkor-embedded-trace-rdl, 2026-09-26_article_semiwiki-cowos-capacity-double-2028]
 related:
+  - wiki/technologies/rdl.md
   - wiki/technologies/cowos.md
   - wiki/entities/intel.md
   - wiki/entities/ase-group.md
@@ -223,3 +224,18 @@ Amkor 的 **Vineet Pancholi** 提供本 wiki 目前唯一的中介層測試覆�
 
 ### 既有待追項延續
 - [ ] **Amkor（Intel EMIB-T 外包夥伴）使用的是誰的 TCB 鍵合頭**（2026-09-22 新增，本輪未取得）
+
+## 近期動態 / Recent Developments（2026-09-26 collect 更新）
+
+- **2026-09-26（技術，⭐⭐⭐）**：**ETR（Embedded Trace RDL）確立為 RDL 圖案化的第三條路線。** WonChul Do 等（Amkor Technology Korea，Semiconductor Engineering 2023-06-15）：
+  - **L/S 2 µm / 1 µm**；via 頂 **3.15 µm** / 底 **1.64 µm**
+  - **已示範 4 層 RDL**（含 2 µm 堆疊 **pad-less via**）；**製程能力可達 6 層**
+  - **步驟數比 dual damascene 少 40%、比 SAP 少 33%**；**單次 UV 曝光**同時定義 trace 與 via（vs damascene 兩次光刻）
+  - **Dishing < 90 nm 且與 over-CMP 比例無關**；Cu CMP overburden ~4 µm @ 900 nm/min；塗佈厚度變異 0.47 → **0.12 µm**
+  - 結構優勢：**無需 capture pad**、**三面阻障金屬**、Cu 表面較平滑（高頻電子散射↓）、無 SAP 之種子層底切／側壁蝕刻／細間距 Cu 崩塌
+  - JEDEC：T/C G 1500 cy、UHAST 360 hr、HTS 1000 hr、BHAST 96 hr @3.3V/85%RH/130 °C 皆 pass
+  - ➜ ⚠⚠ **「能力 6 層」與 Cornell（2026-09-25）「高分子 RDL 因應力只能疊 3–4 層」直接衝突。並列不裁定**；但 Amkor 未給 6 層的翹曲或可靠度數據（JEDEC 結果對應層數未明示）。
+  - ➜ ⭐⭐ **「無 capture pad via」第二個獨立來源**（第一為 ASU 模封核心基板，2026-09-25）➜ 升格為「兩家獨立提出的非線寬型 RDL 微縮手段」。
+  - 詳見 [[technologies/rdl]]（本輪新建）。
+- **2026-09-26（市場，⭐）**：SemiWiki（2026-09-18）重申 **Amkor Arizona 量產起始 2028**，並指 CoWoS 產能缺口持續 ⇒ OSAT 取得成為 **permanent second source** 的機會。
+- **2026-09-26（IMAPS DPC 2026，未採用但已入索引）**：Amkor 於同一會議另有三篇（`10.4071/001c.167731` fcMLF 封裝、`167765` 車用核心封裝材料與互連演進、`166928` 以先進 AP 塗層抑制高功率元件界面剝離、`167016` Chiplets & Advanced IC Packaging）。📌 **列為下輪候選。**

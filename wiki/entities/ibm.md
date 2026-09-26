@@ -3,8 +3,8 @@ title: "IBM Research / IBM 研究院"
 category: entity
 tags: [research, 3D-packaging, nanostack, hybrid-bonding, sub-2nm, chiplet]
 created: 2026-09-11
-updated: 2026-09-25
-sources: [2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation]
+updated: 2026-09-26
+sources: [2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-09-26_paper_ibm-amine-post-cmp-clean]
 related:
   - wiki/technologies/hybrid-bonding.md
   - wiki/concepts/thermal-management.md
@@ -127,3 +127,15 @@ IPC：H10P74/203、/207、/23、/273、/277
 ➜ **IBM 在本 wiki 的定位自「3D 封裝研究先行者（Nanostack、beveled edge stacking）」擴展到「封裝製程的量測方法學」。**
 
 ⚠ **專利是訊號不是事實**：不得陳述為已量產之產線監控手段。摘要**無任何量化值**；未載明雷射波長／脈寬，亦未載明係用於載板解接合或元件層轉移 ➜ **不可逕自歸入 FOPLP 或 W2W 任一情境。**
+
+## 近期動態 / Recent Developments（2026-09-26 collect 更新）
+
+- **2026-09-26（製程化學，⭐⭐⭐）**：**ASMC 2026（2026-05-11）**「Implementing amine-based cleaning chemical for post CMP cleaning of Cu for BEOL interconnect and **Hybrid bonding** Applications」（Arunkumar G V、Wei-Tsu Tseng、Jeffrey Lang、Emiko Motoyama、Donald Canaperi、Govind Bajpai、Michael Wedlake）：
+  - 以**胺基（amine-based）清洗配方**對比傳統 **TMAH** 基清洗劑
+  - 測試對象涵蓋 **2 nm 節點 Cu thin wires、Cu fat wires，以及混合接合用 TSV**
+  - 明言 TMAH 在製造現場**已產生環境與職業健康顧慮**
+  - ➜ ⭐⭐⭐ **使 2026-09-22 之空缺「CMP 後清洗是第二大良率槓桿是否成立」部分結清**（環節事實成立、排序主張待證）
+  - ➜ ⭐⭐⭐ **使 2026-09-16 之常駐主題「環境法規重塑核心單元製程」取得第三個實例（清洗），該主題的假設成立**
+  - ➜ ⭐⭐ **「混合接合的製程化學正由 BEOL 供應鏈提供」第二個實例**（第一為 AMAT Insepra™ SiCN）
+  - ⚠ **三個環安實例中有兩個來自 IBM**（非 Bosch 深矽蝕刻、本篇）—— 集中性可能只反映 IBM 發表偏好，**不宜逕推為產業趨勢**
+  - ⚠⚠ **全篇無量化值**。📌 追蹤 ASMC 2026 全文（顆粒移除效率與缺陷數）。

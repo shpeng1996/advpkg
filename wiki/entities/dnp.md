@@ -3,9 +3,10 @@ title: "大日本印刷 / Dai Nippon Printing (DNP)"
 category: entity
 tags: [DNP, glass-substrate, RDL, interposer, TGV, electromigration, reliability, panel-level, photomask]
 created: 2026-09-25
-updated: 2026-09-25
-sources: [2026-09-25_paper_dnp-glass-rdl-electromigration-lifetime, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026]
+updated: 2026-09-26
+sources: [2026-09-25_paper_dnp-glass-rdl-electromigration-lifetime, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-09-26_paper_asi-1um-hdbu-substrate]
 related:
+  - wiki/technologies/rdl.md
   - wiki/technologies/glass-substrate.md
   - wiki/technologies/tsv.md
   - wiki/technologies/foplp.md
@@ -83,3 +84,9 @@ related:
 - [ ] 玻璃 **εr 5.8 / tanδ 0.006 的量測頻率**（未標註，故不可與 Plan Optik 硼矽 @2.4 GHz 之 4.56 / 0.0064 並列）
 - [ ] DNP 的**產能、客戶與量產時程**
 - [ ] DNP-SAP 之 **10,000× 是否有實測（非外推）佐證**
+
+## 2026-09-26 collect 註記
+
+- **RDL 論述移出**：DNP 之細線距 RDL 電遷移成果（**Ea 0.9 → >1.23 eV；MTTF 0.7 hr → >1000 hr；t₀.₁% 外推 10,000×**，2026-09-25）自 2026-09-26 起同時收錄於新建之 [[technologies/rdl]]，作為「RDL 微縮的第二道天花板（電流密度）」之主要證據。本頁內容不變。
+- ⚠ **本輪新增之對照使該成果的幾何前提更需注意**：RDL 金屬厚度在不同路線間相差 4–8 倍（American Semiconductor **0.2–0.4 µm** vs imec/JSR damascene CMP 後 **1.6 µm**）。📌 **凡以電流密度（A/cm²）表述之 EM 結論，不可跨路線比較。**
+- **2026-09-26 專利軌輪替**：本輪原計畫以 `pa="dai nippon printing" and ti,ab="wiring" and pd within "2026"` 檢索 DNP 是否有對應之 RDL 結構專利，**OPS 回 404（No results found）**。➜ 依 2026-09-25 之歸納（申請人檢索在目標技術佔比極小時失效），**下輪應改技術詞**（如 `ti,ab="barrier metal" and ti,ab="redistribution"`、`ti,ab="inorganic insulating" and ti,ab="wiring layer"`）。

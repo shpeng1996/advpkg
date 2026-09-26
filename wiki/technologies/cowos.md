@@ -3,8 +3,8 @@ title: "CoWoS — Chip-on-Wafer-on-Substrate"
 category: technology
 tags: [2.5D, interposer, TSMC, AI, HPC, HBM, COUPE, CPO, packaging-constraints, NVIDIA]
 created: 2026-04-24
-updated: 2026-09-18
-sources: [2026-08-13_semieng_1mw-rack-debate-thermal, 2026-08-05_trendforce_tsmc-cowos-cow-outsourcing-osat, 2026-05-24_techtimes_nvidia-computex2026-cowos, 2026-04-24_initial-survey, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-15_trendforce_tsmc-vanguard-stake-sale, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-09_financialcontent_tsmc-130k-cowos-wafers, 2026-06-09_digitimes_tsmc-cowos-soic-capacity-symposium, 2026-06-15_trendforce_tsmc-cowos-gap-narrowing-130k-200k-wafers, 2026-06-10_tomshardware_tsmc-fab-expansion-roadmap-n2-cowos-soic, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_tmtpost_tsmc-cowos-capacity-targets-2026-2027, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand]
+updated: 2026-09-26
+sources: [2026-08-13_semieng_1mw-rack-debate-thermal, 2026-08-05_trendforce_tsmc-cowos-cow-outsourcing-osat, 2026-05-24_techtimes_nvidia-computex2026-cowos, 2026-04-24_initial-survey, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-15_trendforce_tsmc-vanguard-stake-sale, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-09_financialcontent_tsmc-130k-cowos-wafers, 2026-06-09_digitimes_tsmc-cowos-soic-capacity-symposium, 2026-06-15_trendforce_tsmc-cowos-gap-narrowing-130k-200k-wafers, 2026-06-10_tomshardware_tsmc-fab-expansion-roadmap-n2-cowos-soic, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_tmtpost_tsmc-cowos-capacity-targets-2026-2027, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-26_paper_yole-advanced-packaging-market-ai-era]
 related:
   - wiki/entities/tsmc.md
   - wiki/technologies/soic.md
@@ -474,3 +474,38 @@ AtlasPCB（2026-05-10）給出 **2027 年 CoWoS 產能 ~170,000 wpm**。併入�
 **52–78 週的交期**是一個獨立於產能的新指標：它衡量的是**訂單排隊長度**而非產出速率。與產能數字並列，可構成「擴張速度 vs 排隊長度」的雙指標——產能翻倍但交期仍逾一年，代表需求成長率仍高於產能成長率。
 
 來源：[[sources/2026-09-15_benzinga_skhynix-16layer-hbm4-48gb]]
+
+---
+
+## 2026-09-26 collect 更新
+
+### ⭐⭐ 產能絕對值首次入庫：130K → 260K wpm（2026 年底 → 2028）
+**SemiWiki（Daniel Nenni，2026-09-18）**：CoWoS 產能自 **2026 年底約 130,000 片/月（300 mm 當量）** 倍增至 **2028 年 260,000 片/月**。Amkor Arizona 量產起始 **2028**。MediaTek 同時支援 Intel 與 TSMC 兩個封裝平台。
+➜ 本頁既有記載為相對敘述與供需缺口百分比（20% → 10%，2026-06-15 TrendForce）。**兩者現可交叉：若 2026 年底缺口 10% 而產能 130K wpm，則缺口約 13K wpm 當量。**
+➜ 核心論點：即使倍增，**持續超額需求仍給 Intel（EMIB／EMIB-T／Foveros）與 OSAT（ASE、Amkor）留下成為 permanent second sources 的空間**。⭐ 此為「CoWoS/EMIB 不互斥」的**第二個獨立論證路徑**（2026-09-01 ASE 吳田玉自技術互補性論證；本篇自產能短缺的結構性後果論證）。
+⚠ 產能數字標示為「reportedly」，**非 TSMC 一手宣告**；依 2026-09-21 官網複核規則應標 ⚠。
+
+### ⚠⚠ 中介層光罩倍數：Yole 與本頁既有記載不一致且方向相反
+**Yole（`10.4071/001c.167738`，IMAPS DPC 2026）** 之中介層尺寸階梯：
+
+| 年份 | 技術 | 光罩倍數 | 中介層面積 |
+|---|---|---|---|
+| 2012 | CoWoS-S | **1×** | **~830 mm²** |
+| 2019 | CoWoS-S / CoWoS-R | **2×** | **~1,630 mm²** |
+| 2023 | CoWoS-S | **3.3×** | **~2,800 mm²** |
+| 2025 | CoWoS-L / CoWoS-R | **5.5×** | **~4,565 mm²** |
+| 2027 | CoWoS-L | — | — |
+| 2029 | **CoWoP** | — | — |
+| **> 2030** | **CoPoS** | **9.5×** | **~7,885 mm²** |
+
+本頁既有記載為「封裝尺寸 **3.3× → 14× 光罩（2024 → 2029）**」（2026-09-02）。
+➜ ⚠⚠ **兩組數字不一致：本 wiki 記 2029 年達 14×，Yole 記 >2030 才 9.5×。並列不裁定，列為追蹤項。**
+➜ **可能成因：14× 為 TSMC 路線圖宣告，9.5× 為 Yole 對量產採用的估計。** 若如此，該差距即為**「宣告 vs 採用」的時間位移** —— 與 2026-09-22「論文是落後指標，排他權佈局與發表間隔 3–4 年」為**同型觀察的反面：路線圖是領先指標，採用是落後指標。**
+
+### ⭐⭐ 「移除 IC 基板」被明確列為 CoWoP/CoPoS 的設計目標
+Yole 對 CoWoP/CoPoS 方向的描述為「cost-efficient, high power and signal integrity solutions, **removing IC substrates**」。
+➜ 與本頁既有之「**ABF 基板成 AI 第二瓶頸**」（2026-08-11 OCP APAC Summit）連成一條因果鏈：**ABF 基板是瓶頸 ⇒ 下一代面板路線的設計目標之一就是把它拿掉。** ⭐⭐ **本 wiki 首次能解釋 CoWoP 的動機，而非僅記錄其存在。**
+
+### ⭐⭐ 封裝放大的分母：每片晶圓晶粒數 16 → 14 → 4
+Yole 封裝尺寸對照：**AMD MI300** ~75×75 mm²（2,927 mm² / 3.5× 光罩，**4 dies/wafer**）；**NVIDIA Blackwell** ~70×80 mm²（~7,885 mm² / 9.5× 光罩）；**NVIDIA Rubin Ultra > 150×100 mm²**。每片晶圓晶粒數序列 **16 → 14 → 4**。
+➜ **為「封裝放大 ⇒ 單位成本上升」提供本 wiki 首個直接量化的分母。**

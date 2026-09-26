@@ -622,3 +622,21 @@
 2026-09-25 | https://doi.org/10.4071/001c.166918 | raw/papers/2026-09-25_openalex_cornell-glass-on-glass-sio2-rdl.md | Cornell玻璃RDL論；訊號TGV是可避免的
 2026-09-25 | https://doi.org/10.4071/001c.167775 | raw/papers/2026-09-25_openalex_tel-laser-liftoff-carrier-reuse-thermal-detection.md | TEL雷射剝離載板再用；熱見證結構≤200°C
 2026-09-25 | https://doi.org/10.4071/001c.167496 | raw/papers/2026-09-25_openalex_asu-molded-core-substrate-warpage-nn.md | ASU模封核心基板翹曲PINN代理模型
+2026-09-26 | https://www.inelectronics.co.uk/taiyo-pushes-rdl-packaging-into-700nm-regime/ | raw/articles/2026-09-26_inelectronics_taiyo-imec-700nm-dual-damascene-rdl.md | Taiyo+imec 700nm 有機 dual-damascene RDL
+2026-09-26 | https://semiengineering.com/one-micron-damascene-redistribution-for-fan-out-wafer-level-packaging-using-a-photosensitive-dielectric-material/ | raw/articles/2026-09-26_semieng_imec-1um-damascene-rdl-photosensitive-dielectric.md | 歷史錨點：imec/JSR 1um damascene RDL(2019)
+2026-09-26 | https://semiengineering.com/high-density-fan-out-packaging-with-fine-pitch-embedded-trace-rdl/ | raw/articles/2026-09-26_semieng_amkor-embedded-trace-rdl-2-1um.md | Amkor ETR RDL 2/1um；步驟比damascene少40%
+2026-09-26 | https://semiwiki.com/semiconductor-manufacturers/tsmc/373574-tsmcs-cowos-capacity-to-double-by-2028-and-rivals-will-still-win-orders/ | raw/articles/2026-09-26_semiwiki_cowos-capacity-130k-to-260k-2028.md | CoWoS 產能 130K->260K wpm (2026->2028)
+2026-09-26 | https://www.ttm.com/sites/default/files/documents/Polymer-Waveguides-for-Co-Packaged-Optics.pdf | raw/reports/2026-09-26_dupont-ttm_polymer-waveguides-cpo-reliability.md | DuPont/TTM 高分子波導；10x迴焊+1000hr 85/85 <5%
+2026-09-26 | EPO:94126336:EP4712758A1 | raw/patents/2026-09-26_EP4712758A1_intel-glass-layer-stack-interconnect-bridge-cavity.md | Intel 玻璃層腔體內埋互連橋
+2026-09-26 | EPO:94975750:CN121400149A | raw/patents/2026-09-26_CN121400149A_intel-bridge-die-over-glass-patch.md | Intel 橋管芯+玻璃貼片；自對準via；內嵌被動
+2026-09-26 | EPO:98279638:CN121311056A | raw/patents/2026-09-26_CN121311056A_zhuhai-tiancheng-dual-depth-tsv-silicon-bridge.md | 珠海天成 雙深度TSV矽轉接板埋矽橋
+2026-09-26 | EPO:98630598:CN121487634A | raw/patents/2026-09-26_CN121487634A_beijing-xinli-hybrid-bonding-pad-dishing-activation.md | 北京芯力 混合接合淺碟凹陷+旋塗水Si-OH活化
+2026-09-26 | EPO:100489513:US20260206611A1 | raw/patents/2026-09-26_US20260206611A1_er-eng-glass-interposer-tgv-dual-carrier.md | E&R 雙載板TGV電鍍；玻璃中介層免薄化
+2026-09-26 | https://doi.org/10.4071/001c.167500 | raw/papers/2026-09-26_openalex_evatec-panel-scale-thinfilm-deposition-650mm.md | Evatec 面板級薄膜沉積至650mm；310mm三理由
+2026-09-26 | https://doi.org/10.4071/001c.167501 | raw/papers/2026-09-26_openalex_lpkf-lide-glass-ap-cpo-directwrite-waveguide.md | LPKF LIDE沙漏孔taper可調；玻璃內直寫波導
+2026-09-26 | https://doi.org/10.4071/001c.167756 | raw/papers/2026-09-26_openalex_skywater-fowlp-300mm-pdk-roadmap.md | SkyWater FOWLP PDK 4層RDL/2um；面板僅300mm
+2026-09-26 | https://doi.org/10.4071/001c.167499 | raw/papers/2026-09-26_openalex_asi-1um-hdbu-substrate-polyimide.md | ASI 1um/4um PI基板但僅2層；Cu厚0.2-0.4um
+2026-09-26 | https://doi.org/10.4071/001c.167738 | raw/papers/2026-09-26_openalex_yole-advanced-packaging-market-ai-era.md | Yole AP市場 40B->80B；CoWoS 1x->9.5x階梯
+2026-09-26 | https://doi.org/10.1016/j.jsamd.2026.101155 | raw/papers/2026-09-26_openalex_dalian-cucu-bonding-review-jsamd101155.md | Cu-Cu綜述：150C>30MPa vs 200C 17MPa
+2026-09-26 | https://research.ibm.com/publications/implementing-amine-based-cleaning-chemical-for-post-cmp-cleaning-of-cu-for-beol-interconnect-and-hybrid-bonding-applications | raw/papers/2026-09-26_ibm_asmc2026-amine-post-cmp-clean.md | IBM 胺基post-CMP清洗取代TMAH；環安驅動
+2026-09-26 | DEDUP-CORRECTION | raw/papers/2026-09-26_openalex_dalian-cucu-bonding-review-jsamd101155.md | 去重失誤：同DOI已於2026-09-22收錄，本檔改列為補充擷取

@@ -3,9 +3,10 @@ title: "玻璃基板 / Glass Core Substrate"
 category: technology
 tags: [glass-substrate, TGV, panel-level, FC-BGA, CoPoS, Absolics, DNP, Rapidus, warpage, SeWaRe, glass-interposer, BOE, ULCVD, non-embedding, Lens-Technology, TPK-KY, Innolux, AUO, LG-Chem, singulation, patent-signal]
 created: 2026-05-08
-updated: 2026-09-25
-sources: [2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-05-05_trendforce-insights_glass-substrate-development, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-05-29_3dincites_rapidus-2nm-advanced-packaging-ai-foundry, 2026-06-01_trendforce_intel-3dgs-india-glass-substrate, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-06-20_biggo_boe-glass-substrate-pilot, 2026-06-28_economy-ac_glass-substrate-global-race, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-08-18_trendforce_shinko-glass-substrate-22layer-glassem-delay, 2026-09-11_mssp_tgv-glass-biaxial-bending-ring-on-ring, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-03-13_kaneka_jp2026047137a-glass-core-polyimide-quantified, 2026-08-10_screp_low-k-organic-buffer-tgv-cu-metallization, 2026-08-04_jmrt_vacuum-assisted-void-free-cu-fill-tgv, 2026-07-30_micromachines_tgv-cleanability-surface-tension]
+updated: 2026-09-26
+sources: [2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-05-05_trendforce-insights_glass-substrate-development, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-05-29_3dincites_rapidus-2nm-advanced-packaging-ai-foundry, 2026-06-01_trendforce_intel-3dgs-india-glass-substrate, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-06-20_biggo_boe-glass-substrate-pilot, 2026-06-28_economy-ac_glass-substrate-global-race, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-08-18_trendforce_shinko-glass-substrate-22layer-glassem-delay, 2026-09-11_mssp_tgv-glass-biaxial-bending-ring-on-ring, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-03-13_kaneka_jp2026047137a-glass-core-polyimide-quantified, 2026-08-10_screp_low-k-organic-buffer-tgv-cu-metallization, 2026-08-04_jmrt_vacuum-assisted-void-free-cu-fill-tgv, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_patent_er-eng-glass-interposer-dual-carrier, 2026-09-26_paper_yole-advanced-packaging-market-ai-era]
 related:
+  - wiki/technologies/rdl.md
   - wiki/technologies/copos.md
   - wiki/technologies/foplp.md
   - wiki/technologies/hybrid-bonding.md
@@ -1308,3 +1309,59 @@ Intel JP2026108527A：RDL 金屬化特徵**以可直接圖案化之最細線距�
 
 ### 15. ⭐⭐ 玻璃載板應自「FOPLP 耗材」升格為獨立追蹤對象
 本輪同時取得強度側（ASE）與翹曲側（JCET）兩個一手來源，詳見 [[technologies/foplp]] 2026-09-25 段。
+
+---
+
+## 2026-09-26 collect 更新
+
+### 1. ⚠⚠ 修正：玻璃 CTE 不是單一數字，它與厚度／角色配對——既有「50×」推算須加註
+**LPKF × Fraunhofer IZM（`10.4071/001c.167501`）** 把玻璃架構分三階梯，且 **CTE 隨角色與厚度而異**：
+
+| 架構 | 玻璃 CTE | 典型厚度 | 目標 |
+|---|---|---|---|
+| 玻璃中介層 | **≈ 3** | **< 400 µm** | 取代昂貴的大面積矽中介層 |
+| 玻璃核心基板 | **≈ 7** | **> 800 µm** | 核心層 via 密度須高於有機核心，才能讓額外中介層變得多餘 |
+| **2 層玻璃核心基板（2L-GCS）** | ≈ 3–7 | **1–2 mm 以上** | 大封裝 + 高 IO 密度 + 功能性特徵；未來整合 CPO |
+
+➜ ⚠⚠ **2026-09-25 以「高分子 RDL CTE ~30–60 vs 玻璃 ~1–3」得出的 50× 落差，僅成立於 CTE≈3 之中介層級玻璃。核心基板級玻璃（CTE≈7）之落差約 4–9×，非 50×。凡引用該比值處必須加註此條件。**
+➜ 並與本頁既有之「『玻璃』在電性上不是單一材料」（εr 5.8 vs 4.56）構成**同一結論的第二個維度：玻璃在機械上也不是單一材料。**
+➜ 原文另言：既有玻璃架構「clearly derived from existing Si on organics designs」，**2L-GCS 是第一個專為玻璃而設計、而非沿用矽/有機設計的封裝架構**。
+
+### 2. ⭐⭐⭐ 沙漏形不是缺陷，是雷射濕蝕刻路線的預設剖面，且 taper 可調
+**LIDE（Laser Induced Deep Etching）**：第一步單一雷射脈衝可結構化**厚達 1.1 mm** 的玻璃，**脈衝定位精度 >5 µm，Cp >1.33**；第二步濕蝕刻沿改質區異向蝕刻，**形成沙漏形孔（hourglass），且 taper 可調（tuneable taper）**。
+➜ **「Corning small via diameter」空缺第四次修正提問方式。** 2026-09-22 已改為「頂／腰／底何者，若為沙漏形，腰在什麼高度」。本篇顯示沙漏形是**製程固有產物而非變異**，且 taper 是**可設計參數** ➜ **提問應改為：「該廠商把 taper 調到什麼值、為什麼？」**
+
+### 3. ⭐⭐ 同一雷射製程可做 TGV、盲孔、腔體與貫穿切割——腔體首次取得表面規格
+LIDE 以焦深與改質位置控制，同一製程涵蓋 **TGV / BGV（盲孔）/ 腔體 / 貫穿切割**。**封閉腔體**可為嵌入元件設計專屬環境：熱管理由**垂直（TGV 數量與密度）與水平（周圍 TGV 密度）**兩軸設計，並可做電性屏蔽。
+**腔體表面品質：波紋 ±100 nm、粗糙度 ±30 nm。**
+➜ ⭐⭐ 與混合接合之 Ra <0.1–0.2 nm 相差 **2–3 個數量級** ➜ 「同一名詞涵蓋多個獨立驗收項，跨頁引用『粗糙度』必須標註技術域」**本輪新增第三個技術域（玻璃腔體）**。
+
+### 4. ⭐⭐⭐ 玻璃腔體埋橋：設備可行性與排他權布局首次同時到位
+- **設備側**：LPKF 證明腔體做得出來，且附表面規格（上條）。
+- **排他權側**：**Intel EP4712758A1（fam 94126336，2026-03-18）** ——「first glass layer having a **cavity**; second glass layer; **interconnect bridge at least partially in the cavity**」。
+- **另一條互斥幾何**：**Intel CN121400149A（fam 94975750，2026-01-23）** —— 橋管芯下方放**玻璃貼片（glass patch）**；玻璃結構含 glass via，其下方之基板 via 與該 glass via **自對準**；玻璃結構內可含**嵌入式電感或電容**。
+➜ **EMIB 與玻璃核心基板兩條主線首次在同一批排他權文件內結構性結合**（本頁與 [[technologies/emib]] 自此互為主線）。
+➜ **Intel 同時以兩條互斥幾何布局 ⇒ 內部路線選擇尚未收斂。**
+➜ ⭐⭐⭐ **「封裝正在回收被動元件」第三個獨立實例、第三種實作層**：Intel JP2026108527A（同軸電感置於核心 TGV）／Cornell（被動元件放進 RDL）／**Intel CN121400149A（玻璃貼片內嵌電感或電容）**。皆為 2026 年案件。
+⚠ 專利為前瞻訊號，**不得解讀為 EMIB-T 已採用玻璃腔體或玻璃貼片**；Intel CFO 公開之 EMIB-T 時程仍為 2H27→2028→2029。
+
+### 5. ⭐⭐ TGV 解法空間出現「流程軸」，並揭露一個本頁未記載的關卡：薄化
+**E&R Engineering US20260206611A1（fam 100489513，2026-07-16，台灣）**：**雙載板轉移流程**（貼載板一 → 成孔 → 側壁種子層 → 貼載板二 → 撕載板一 → 電鍍 → 撕載板二），宣稱**玻璃中介層無需後續薄化**且導電柱**完全填滿**貫孔。IPC 落於 **C03C（玻璃表面處理）與 C25D（電鍍）而非 H01L/H10W** —— 分類上被歸為玻璃加工。
+➜ ⭐⭐ 既有四條 TGV 金屬化路線**全部圍繞「種子層用什麼材料、怎麼附著」**；本件保留傳統側壁無機種子層，改動的是**載板與製程順序**。➜ **新論述形式：「TGV 金屬化的解法空間不只有材料軸，還有流程軸。」本件為流程軸第一例，不應並列為第五條材料路線。**
+➜ ⭐⭐ **「免薄化」反向揭示：既有流程中玻璃中介層是要被薄化的，而薄化本身帶來破片與翹曲風險。** 本頁既有 TGV 論述以**成孔**與**金屬化**為兩大關卡，薄化從未作為獨立關卡出現。方向與 2026-09-25 ASE「載板邊緣受損區寬 43 µm、韌性 0.82→0.47」之機械脆弱性一致。
+📌 **新空缺：玻璃中介層薄化製程的破片率／良率代價為何？**
+
+### 6. ⭐ 玻璃疊層接合與矽混合接合對顆粒的哲學相反
+**TensorBonding**（LPKF）：高速偏轉雷射產生延伸熔池，**可跨越單位數微米的玻璃間隙**，**補償 TTV 與顆粒造成之間隙**；熱負載高度局部化，可施用於緊鄰 LIDE 微結構處。
+**TensorAblation**：雷射自切割道移除 RDL，避免 singulation 後 SEWARE；**玻璃表面無缺陷 ⇒ 破裂強度提升**；低 taper、尺寸受控。
+工具路線圖：**Nexar-LIDE / -Ablate / -Bond / -DirectWrite**。
+➜ **混合接合對顆粒零容忍（1 µm 顆粒可誘發數百 µm 空洞）；TensorBonding 把顆粒當可補償變數。** ➜ **「接合」在玻璃疊層與矽混合接合之間不是同一件事。**
+➜ TensorAblation 與 2026-09-25 ASE「邊緣研磨 Rz 決定韌性」同屬**「玻璃件的機械可靠度由其最後一道機械加工的精細度決定」** —— **第三個實例，且作用對象自面與邊擴展到切割道。**
+
+### 7. Yole 對玻璃核心的定位（未給結論）
+Yole（`10.4071/001c.167738`）設問「**A lasting trend or a failing attempt?**」，定位為「raising interconnect density and package performance **beyond what the existing materials can support at the core level**」，並指出玻璃核心與有機核心**角色相同**（機械支撐、佈線、晶粒與板間連接），差別在玻璃「brings a stronger basic role with additional features」。市場分 AI 相關（AI/運算 GPU）與非 AI 相關（伺服器 CPU/XPU、5G/6G、RF 與相位陣列模組）。
+⚠ **本簡報未給結論，不得引用為 Yole 的立場。**
+
+### 8. ⚠ 未結清項延續
+📌 **玻璃體內直寫波導未給傳播損耗（dB/cm）或耦合損耗** ⇒ 無法與 DuPont/TTM（0.088–0.5 dB/cm）或 imec（~1 dB 耦合）比較。見 [[technologies/copackaged-optics]]。
+📌 lint 待辦**沿用**：本頁「玻璃核心基板」與「玻璃核心中介層」需拆分 —— **本輪 LPKF 以 CTE 3 vs 7 / 厚度 <400 µm vs >800 µm 提供第四個獨立依據，且首次是量化的。優先序再上調。**

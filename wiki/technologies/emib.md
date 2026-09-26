@@ -3,8 +3,8 @@ title: "EMIB — Embedded Multi-Die Interconnect Bridge"
 category: technology
 tags: [Intel, 2.5D, silicon-bridge, chiplet, HBM4, Foveros, glass-substrate, EMIB-T, EMIB-M, silicon-capacitors, power-delivery, HLFF, encapsulation, underfill]
 created: 2026-05-03
-updated: 2026-09-25
-sources: [2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-03-05_trendforce_intel-emib-billions, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-03-03_trendforce_intel-clearwater-forest, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks, 2026-06-21_convergedigest_intel-emib-t-multi-die-packaging, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap, 2026-06-05_semieng_intel-ectc-2026-emib-t-cpo-glass, 2026-01-30_tomshardware_intel-ai-chip-test-vehicle-emib-t, 2026-08-04_semieng_from-blueprint-intel-hlff, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded, 2026-07-07_semieng_panel-inspection-metrology-hdfo]
+updated: 2026-09-26
+sources: [2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-03-05_trendforce_intel-emib-billions, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-03-03_trendforce_intel-clearwater-forest, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks, 2026-06-21_convergedigest_intel-emib-t-multi-die-packaging, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap, 2026-06-05_semieng_intel-ectc-2026-emib-t-cpo-glass, 2026-01-30_tomshardware_intel-ai-chip-test-vehicle-emib-t, 2026-08-04_semieng_from-blueprint-intel-hlff, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_patent_zhuhai-tiancheng-dual-depth-tsv-silicon-bridge, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-26_paper_yole-advanced-packaging-market-ai-era]
 related:
   - wiki/entities/intel.md
   - wiki/entities/amkor.md
@@ -423,3 +423,39 @@ Intel Foundry 公開一份官方技術簡報，展示其 **「AI 晶片測試載
 📌 **附帶發現**：Shinko 與 Ibiden 2026 年公開之封裝相關布局，**重心明顯落在光波導** ➜ 見 [[technologies/copackaged-optics]] 2026-09-25 段。**EMIB-T 的基板側排他權活動，本 wiki 目前一件也沒看到。**
 
 ⚠ 本頁既有之 EMIB-T 記載（2027 年底初期量產目標良率 **50%**、Intel 對供應商提供獲利保證機制、三家基板供應商）**不因本輪而改動**——本輪只是證實該資訊無法由專利軌取得。
+
+---
+
+## 2026-09-26 collect 更新
+
+### ⭐⭐⭐ 專利訊號：「橋要埋進什麼材料裡」本輪一次取得三件、兩個答案
+2026-09-25 之作業面發現 2 指出：以申請人檢索 Ibiden/Shinko/Unimicron 追 EMIB-T 完全失效（命中 348 件、前 25 件 0 相關），並歸納「**當目標技術在一家公司的專利組合中只佔極小比例時，申請人檢索必然失效**」，建議下輪改技術詞。**本輪改技術詞後一次命中三件：**
+
+| 公開號 | family-id | 公開日 | 申請人 | 橋的載體 |
+|---|---|---|---|---|
+| **EP4712758A1** | 94126336 | 2026-03-18 | Intel Corp [US] | **玻璃層內之腔體**（第一玻璃層開腔、橋至少部分置於腔內、上疊第二玻璃層） |
+| **CN121400149A** | 94975750 | 2026-01-23 | Intel Corp | **玻璃貼片（glass patch）墊於橋下**；玻璃結構含 glass via，其下方基板 via 與之**自對準**；玻璃結構內可含**嵌入式電感或電容** |
+| **CN121311056A** | 98279638 | 2026-01-09 | **珠海天成先進半導體** | **矽轉接板**（兩次圖案化／蝕刻／電鍍做出**兩種不同深度的 TSV**），明載用途為**埋入矽橋**，宣稱降低**矽橋與埋入基板之 CTE 失配熱應力** |
+
+Intel 兩件之共同發明人：**DUAN GANG、PIETAMBARAM SRINIVAS V**。IPC 皆 H10W 系列。
+⚠ **三件摘要全數無量化值**（腔體深度、玻璃貼片厚度、TSV 深度/孔徑、對位公差、被動元件值全缺）➜ **「專利軌訊號以定性為主」連續第六輪成立。**
+
+**由此得到的論述**：
+1. ⭐⭐⭐ **EMIB 與玻璃核心基板兩條主線首次在同一批排他權文件內結構性結合。** 本頁與 [[technologies/glass-substrate]] 自此互為主線，而非兩條獨立線。
+2. ⭐⭐⭐ **Intel 以兩條互斥幾何各自布局（腔體埋 vs 貼片墊）⇒ 內部路線選擇尚未收斂。** 此為可直接引用的排他權型態判讀。
+3. ⭐⭐⭐ **新橫向論述（候選）：「橋要埋進什麼材料裡」目前有玻璃與矽兩個答案，選擇的判準被珠海天成明確指認為 CTE 失配。** 珠海天成的邏輯直白：既然橋是矽，就把埋它的載體也做成矽，CTE 失配自然消失 —— ⚠ **代價是放棄玻璃的低 Dk/Df 與大面板可擴展性（此取捨為本 wiki 推論，非原文主張）。**
+4. ⭐⭐ **「自對準」首次作為 TGV/基板 via 的對位手段出現。** 既有 TGV 對位論述集中於雷射定位精度（LPKF LIDE >5 µm, Cp>1.33）與曝光場拼接次數；**自對準把對位需求從設備移回結構設計**，與 2026-09-19「限制鏈第一限制不在設備側」屬同類思路。
+5. ⭐⭐ **珠海天成第二次出現，且呈現與第一次相同的設計哲學。** 第一次為 2026-09-21「AR ≤10 模封銅孔 + TCB 規避混合接合」。兩件皆**選一條規格較鬆的路徑繞開難製程** ➜ 支持既有論述「當某製程規格難度陡升時，業界的第二條路不是改進該製程，而是把設計移到規格較鬆的區間」——**第三例，且首次由同一公司提供兩例，使該論述自「產業傾向」升格為「可在單一公司層級觀察到的一致策略」。**
+
+### ⭐ 檢索方法學：技術詞與申請人檢索的召回／精確特性完全相反
+本輪 `ti,ab="cavity" and ti,ab="interconnect bridge"` → total=**1**（即 EP4712758A1）；`(ti,ab="bridge die" or ti,ab="embedded bridge") and pd within "2026"` → total=**1**（即 CN121400149A）；`ti,ab="silicon bridge" and pd within "2026"` → total=**1**（即 CN121311056A）。
+➜ **技術詞檢索命中率極低（各 1 件）但精確度 100%；申請人檢索為高召回、零精確。** ➜ **作業改進（固定沿用）：追特定技術時一律用技術詞，且應同時投入多組近義片語以補召回。**
+
+### ⭐ 分析機構已把「橋的載體」承認為分類軸
+Yole（`10.4071/001c.167738`）之高階封裝技術分類含 **「2.5D/3.5D EMIB Bridge」與「2.5D Bridge in Mold」兩個獨立類別**。➜ 與本輪三件專利相互印證。
+
+### 產能背景：缺口本身是 EMIB 的市場機會
+SemiWiki（2026-09-18）：CoWoS 產能自 **2026 年底 ~130K wpm** 倍增至 **2028 年 260K wpm**，但需求仍超額 ⇒ Intel（EMIB／EMIB-T／Foveros）與 OSAT 取得成為 **permanent second sources** 的機會。
+➜ ⭐ **「CoWoS/EMIB 不互斥」取得第二個獨立論證路徑**：2026-09-01 ASE COO 吳田玉自**技術互補性**論證；本篇自**產能短缺的結構性後果**論證。
+⚠ 產能數字標示為「reportedly」，非 TSMC 一手宣告。
+⚠ **本輪三件專利皆不得解讀為 EMIB-T 已採用該結構**；Intel CFO Zinsner 公開之 EMIB-T 時程仍為 **2H27 → 2028 → 2029 三段式**。

@@ -3,8 +3,8 @@ title: "SoIC — System on Integrated Chips"
 category: technology
 tags: [3D, SoIC, hybrid-bonding, TSMC, AI, NVIDIA, Feynman]
 created: 2026-04-24
-updated: 2026-09-19
-sources: [2026-04-24_initial-survey, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-03-18_trendforce_nvidia-rubin-feynman-soic, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-23_trendforce_tsmc-roadmap-a12-a13-no-high-na-euv, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-06-21_arxiv_tiny-chiplets-esd-protection-signal-integrity, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-06-10_tomshardware_tsmc-fab-expansion-roadmap-n2-cowos-soic]
+updated: 2026-09-26
+sources: [2026-04-24_initial-survey, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-03-18_trendforce_nvidia-rubin-feynman-soic, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-23_trendforce_tsmc-roadmap-a12-a13-no-high-na-euv, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-06-21_arxiv_tiny-chiplets-esd-protection-signal-integrity, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-06-10_tomshardware_tsmc-fab-expansion-roadmap-n2-cowos-soic, 2026-09-26_paper_dalian-cucu-bonding-review]
 related:
   - wiki/entities/tsmc.md
   - wiki/technologies/cowos.md
@@ -190,3 +190,15 @@ TrendForce Insights（2026-09-10）引述 TSMC 說法：**SoIC 相對 CoWoS 達�
 
 ⭐ **SoIC 的 6 µm 不是設備限制。** 本輪結清的最高優先空缺顯示，量產 pitch 的第一限制是**表面平坦度（拋光後變異 ~0.2 nm，由 CMP 與薄膜製程決定）**，其次是 **die 翹曲（< 100 nm）**，機台對準（100 nm @ 3σ）排在第三。
 ➜ TSMC 自 6 µm 走向 4.5 µm 所需的，主要是 CMP 與表面製程能力，而非新一代 bonder。詳見 `wiki/technologies/hybrid-bonding.md` 2026-09-19 更新。
+
+---
+
+## 2026-09-26 collect 更新
+
+### ⭐⭐ Cu–Cu 綜述之補充擷取：溫度—強度關係與研究 pitch
+> ⚠⚠ **來源更正**：該 DOI **已於 2026-09-22 收錄**；本輪為去重失誤下的補充擷取。**接觸電阻兩值既有檔已含，非本輪新知**；本輪新擷取者為 **Ru 鈍化 17.16 MPa** 與對位需求數字。
+**`10.1016/j.jsamd.2026.101155`（大連交通大學，2026-03-27，綜述、轉引）**：
+- **接觸電阻**（⚠ 既有檔已含）：1.78×10⁻⁷ Ω·cm²（Ru 鈍化）／3.2×10⁻¹⁰ Ω·cm²（NaOH + 150 °C 退火）—— **跨三個數量級**
+- **溫度不是接合強度的主導變數**：150 °C NaOH **>30.4 MPa** 強於 200 °C Ru 鈍化 **17.16 MPa**
+- 研究 pitch 已達 **0.4–0.5 µm**，對照 SoIC-X 量產 **6 µm（2025）→ 4.5 µm（2029）**，落差約 **12–15 倍**
+⚠⚠ 各文獻結構與量測條件不同，**絕不得作為性能排名**。詳見 [[technologies/hybrid-bonding]] 2026-09-26 段（含限制鏈依 pitch 條件化之新論述）。

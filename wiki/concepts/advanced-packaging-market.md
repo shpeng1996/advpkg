@@ -3,8 +3,8 @@ title: "先進封裝市場 / Advanced Packaging Market"
 category: concept
 tags: [market, forecast, CAGR, supply-chain, HBM, chiplet, geopolitics, equipment, SIA, Omdia, Yole, WFE, substrate-market, framework]
 created: 2026-04-24
-updated: 2026-09-25
-sources: [2026-07-31_semieng_chip-week-149, 2026-04-24_initial-survey, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2026-01-23_trendforce_chip-tools-tel-asml, 2026-03-05_trendforce_intel-emib-billions, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2025-12-18_trendforce_micron-capex-hbm4, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2025-05-13_trendforce_top10-osat-2024, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-04-16_ontoinnovation_dragonfly-g5-qualified, 2026-06-23_communicationstoday_foplp-glass-substrate-market-8b-2030, 2026-06-29_trendforce_china-osat-tongfu-jcet-investment, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-26_semieng_chip-week-144, 2026-07-01_trendforce_ase-price-hike-20pct, 2026-07-04_semieng_chip-week-145, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-07-03_trendforce_anthropic-samsung-advanced-packaging, 2026-05-08_trendforce_ajinomoto-abf-1b-land-buy-2032-margins, 2026-07-24_semieng_chip-week-148, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-08-06_siliconbox_500m-units-panel-scale, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly]
+updated: 2026-09-26
+sources: [2026-07-31_semieng_chip-week-149, 2026-04-24_initial-survey, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2026-01-23_trendforce_chip-tools-tel-asml, 2026-03-05_trendforce_intel-emib-billions, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2025-12-18_trendforce_micron-capex-hbm4, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2025-05-13_trendforce_top10-osat-2024, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-04-16_ontoinnovation_dragonfly-g5-qualified, 2026-06-23_communicationstoday_foplp-glass-substrate-market-8b-2030, 2026-06-29_trendforce_china-osat-tongfu-jcet-investment, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-26_semieng_chip-week-144, 2026-07-01_trendforce_ase-price-hike-20pct, 2026-07-04_semieng_chip-week-145, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-07-03_trendforce_anthropic-samsung-advanced-packaging, 2026-05-08_trendforce_ajinomoto-abf-1b-land-buy-2032-margins, 2026-07-24_semieng_chip-week-148, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-08-06_siliconbox_500m-units-panel-scale, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-26_article_semiwiki-cowos-capacity-double-2028]
 related:
   - wiki/entities/tsmc.md
   - wiki/entities/sk-hynix.md
@@ -975,3 +975,48 @@ SemiconSam（2025-09-18）：**混合接合專用 CMP 設備 AMAT 市占 100%**�
 步進機曝光場相容尺寸上限 **250 × 250 mm**，小於所有已列面板尺寸（310×310 至 700×700 mm）。
 ➜ 面板面積自 310×310 增至 700×700 為 **5.1 倍**，曝光場不變 ⇒ **拼接次數同步增加 5.1 倍。**
 ➜ **任何「面板越大越省」的推算都必須把拼接次數計入。** 詳見 [[technologies/foplp]]。
+
+---
+
+## 2026-09-26 collect 更新
+
+### ⭐⭐⭐ Yole 一手簡報：先進封裝市場的絕對規模與結構
+**`10.4071/001c.167738`｜Gabriela Pereira, Yole Group｜IMAPS 22nd DPC, Phoenix AZ, 2026-03-04**
+
+| 項目 | 數值 |
+|---|---|
+| 半導體元件產業歷史基線 CAGR | **6.4%**；未來 5 年 **6.7%** |
+| 元件營收 | 2025 **~$750B** → 2030 **~$1,000B** |
+| **先進封裝市場** | **2024 > $40B → 2030 > $80B，CAGR 9.5%** |
+| 其中 **2.5D/3D** | **$10.2B（2024）** |
+| **高階封裝營收 CAGR** | **~16%** |
+
+平台分類：ED、WLCSP、FCBGA、FCCSP、FO、SiP、2.5D/3D。
+高階封裝技術分類（**本輪新增可引用之分類軸**）：2.5D Si interposer、2.5D Mold interposer、2.5D RDL interposer、**2.5D/3.5D EMIB Bridge**、**2.5D Bridge in Mold**、Glass interposers、「CoWoP」、Co-Package Optics、3D Logic/Memory、3D Stacked DRAM、3D HBM、3D NAND、**3D Optical Engine**、Hybrid/Fusion Bonding、CBA DRAM、TCB/MR-MUF。
+
+### ⭐⭐⭐ 面板級封裝在市場中的相對位置首次可計算
+對照 2026-09-25 取得之 Yole 面板級封裝絕對規模（**2024 $160 M / 80,000 片 ≈ 330,000 片 300 mm 當量 → 2030 $650 M / ~220,000 片**）：
+➜ **面板級封裝約占 2024 年先進封裝市場 0.4%、占 2.5D/3D 約 1.6%。**
+➜ ⭐⭐⭐ **本 wiki 關於面板成本、良率、尺寸選擇的所有爭論，其標的市場規模由此得到精確定位。** 2026-09-25 所記「本 wiki 關於面板成本與良率的所有爭論，目前發生在一個 2024 年僅 $160 M 的市場上」**自此有分母。**
+
+### ⭐⭐⭐ PLP 的兩個獨立驅動力——解消一個 2026-09-22 的「矛盾」
+| | 驅動力① 高量製造 | 驅動力② 大封裝尺寸 |
+|---|---|---|
+| 動機 | 規模經濟 | 面積效率（未占用載板面積更少 ⇒ 良率↑ 成本↓） |
+| 終端 | 行動與消費、車用 | 工業、國防航太、**AI 與 HPC**、網路、高階 PC、**CPO** |
+| 封裝複雜度 | **低至中階** | **高階** |
+| 取代對象 | **FOWLP 與 QFN** | **晶圓級 2.5D 中介層與 UHD FOWLP** |
+
+時程：第一波約 **2016–2018**；下一波 **2026–2030 放量**。
+面積：300 mm 晶圓 **70,695 mm²** vs >600×600 mm 面板 **>360,000 mm²（≈5.1×）**。
+➜ ⭐⭐⭐ **2026-09-22 空缺「Lam 的 ~100×100 mm 效率界線 vs CoWoS 14× 光罩路線為何看似矛盾」取得結構性解答**：Lam 的界線屬驅動力②；低中階封裝走的是驅動力①。**空缺標為部分結清**（仍缺 Lam 原始定義的量測邊界）。
+
+### ⭐⭐ 封裝放大的成本分母：每片晶圓晶粒數 16 → 14 → 4
+AMD MI300 ~75×75 mm²（2,927 mm² / 3.5× 光罩，**4 dies/wafer**）；NVIDIA Blackwell ~70×80 mm²（~7,885 mm² / 9.5× 光罩）；**NVIDIA Rubin Ultra > 150×100 mm²**。
+➜ **本 wiki 首個「封裝放大 ⇒ 單位成本上升」的直接量化分母。**
+
+### ⭐⭐ CoWoS 產能絕對值：130K → 260K wpm
+SemiWiki（2026-09-18）：**2026 年底 ~130K wpm（300 mm 當量）→ 2028 年 260K wpm**。⚠ 標示「reportedly」。詳見 [[technologies/cowos]]。
+
+### ⚠⚠ 待釐清：中介層光罩倍數兩組數字衝突
+本 wiki 記 **14× 於 2029**（2026-09-02）；Yole 記 **9.5× 於 >2030**。**並列不裁定。** 可能成因為「TSMC 路線圖宣告 vs Yole 量產採用估計」的時間位移。詳見 [[technologies/cowos]]。

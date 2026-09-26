@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-09-25
-**頁面總數 Total Pages**：650
-**原始來源數 Sources**：594（含 8 個合併轉向頁）
+**更新時間 Updated**：2026-09-26
+**頁面總數 Total Pages**：667
+**原始來源數 Sources**：610（含 8 個合併轉向頁；其中 1 頁為 2026-09-26 之去重失誤更正／補充擷取頁，**本輪實際新來源 16 篇**）
 
 ---
 
@@ -48,6 +48,7 @@
 
 ## 技術 Technologies
 
+- [[technologies/rdl]] — **RDL 重分佈層（2026-09-26 新建）**；三條圖案化路線並列（**SAP / dual damascene / Amkor ETR——ETR 步驟數比 damascene 少 40%**）；⭐⭐⭐ **「damascene ⇒ 無機介電」是錯誤前提：Taiyo×imec 700 nm 與 imec/JSR 1.0 µm 皆為有機感光介電**；⭐⭐⭐ **線寬 vs 層數互換關係**（ASI 1 µm/**2 層** ↔ Amkor 2/1 µm/**6 層能力**）；**兩道獨立天花板（微影 / 電遷移）**；面板可行性四來源同向指向 300–310 mm⭐本輪新建
 - [[technologies/cowos]] — CoWoS（Chip-on-Wafer-on-Substrate）；TSMC 2.5D 旗艦封裝；**5.5× 良率達 99%（OCP APAC Summit 2026-08-11）；10 封裝設施；ABF 基板成 AI 第二瓶頸**；OSAT 補位生態（ASE CoWoP、Amkor FOCoS）；**封裝尺寸 3.3×→14× 光罩（2024→2029）；封裝功耗 600W→4,100W；微通道冷卻整合路線**（2026-09-02）⭐更新
 - [[technologies/copos]] — CoPoS（Chip-on-Panel-on-Substrate）；TSMC 面板級封裝；310×310mm 面板；玻璃核心基板列為下一里程碑（2030+）；TGV 障礙具體化（2026-06-18）⭐更新
 - [[technologies/soic]] — SoIC（System on Integrated Chips）；TSMC 3D 堆疊；SoIC-X 混合接合（**6µm 2025 量產→4.5µm 2029；A14-to-A14 SoIC 2029年 1.8×I/O 密度**）；**SEMICON Taiwan：N2P-on-N3P 2026 → A14-on-A14 2029；SoIC+CoWoS = 50× 系統運算 2029**（2026-08-31）⭐更新
@@ -87,6 +88,22 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-09-26_paper_yole-advanced-packaging-market-ai-era]] — ⭐⭐⭐ Yole：先進封裝 **2024 >$40B → 2030 >$80B（CAGR 9.5%）**，其中 2.5D/3D **$10.2B**；**CoWoS 光罩階梯 1×(2012)→9.5×(>2030)**；**PLP 兩個獨立驅動力**（解消 Lam 100×100 mm 之「矛盾」）；⚠⚠ **與本 wiki 14×/2029 記載衝突**
+- [[sources/2026-09-26_paper_evatec-panel-scale-thinfilm-deposition]] — ⭐⭐⭐ Evatec：**CLN310（310 mm）／CLN600（至 650×650 mm）**，應用明列 **Low Temp. Dielectrics + RDL** ⇒ **最高優先空缺「>300 mm 可行性」部分結清：設備不是障礙**；⭐⭐⭐ **「規格不隨面板放大而放寬」**；310 mm 三理由（CTE／線密度／12″ 設備再用）
+- [[sources/2026-09-26_paper_lpkf-lide-glass-ap-cpo]] — ⭐⭐⭐ LPKF×Fraunhofer IZM：**沙漏形是 LIDE 固有產物且 taper 可調**（Corning 空缺第四次修正提問）；**玻璃 CTE≈3/<400 µm 中介層 vs ≈7/>800 µm 核心 ⇒ 既有「50×」推算須加註**；**玻璃體內直寫波導 = 波導層級第四答案**；腔體 ±100 nm/±30 nm
+- [[sources/2026-09-26_patent_intel-bridge-in-glass-two-families]] — ⭐⭐⭐ Intel **EP4712758A1（腔體埋橋）+ CN121400149A（玻璃貼片墊橋）兩件不同 family ⇒ 內部路線未收斂**；**EMIB 與玻璃基板兩主線首次在排他權層合流**；**被動元件回收第三例**；**自對準 via**
+- [[sources/2026-09-26_report_dupont-ttm-polymer-waveguide-reliability]] — ⭐⭐⭐ DuPont×TTM：**10× 迴焊與 1000 hr 85/85 後插入損耗變化 <5%** ⇒ **第二高優先空缺（高分子波導熱/濕漂移）首個量化答案**；傳播損耗 0.088–0.5 dB/cm；⚠⚠ 相對值、FR4 基材、無第三方驗證
+- [[sources/2026-09-26_paper_dalian-cucu-bonding-review]] — ⚠ **去重失誤更正／補充擷取**（同 DOI 已於 2026-09-22 收錄）：本輪新擷取之 **對位 600→<250 nm／次微米 <100 nm** 與 **Ru 鈍化 17.16 MPa** 支撐兩條論述（**限制鏈排序是 pitch 的函數**、**溫度不是強度主導變數**）；其餘數值既有檔已含
+- [[sources/2026-09-26_paper_ibm-amine-post-cmp-clean]] — ⭐⭐⭐ IBM ASMC 2026：**胺基 post-CMP 清洗取代 TMAH** ⇒ **「CMP 後清洗是獨立良率環節」第二個獨立來源**；**「環安規範重塑單元製程」第三例（清洗）⇒ 常駐主題假設成立**；⚠⚠ 全篇無量化值
+- [[sources/2026-09-26_article_amkor-embedded-trace-rdl]] — ⭐⭐⭐ Amkor ETR：**步驟比 dual damascene 少 40%／SAP 少 33%**；2/1 µm、**示範 4 層、能力 6 層**（⚠⚠ 與 Cornell「3–4 層」衝突）；**dishing <90 nm 且與 over-CMP 比例無關**；無 capture pad via 第二來源
+- [[sources/2026-09-26_article_taiyo-imec-700nm-damascene-rdl]] — ⭐⭐⭐ Taiyo×imec **700 nm dual-damascene，介電為有機 FPIM**，三層、300 mm；1.6 µm(2025)→700 nm(2026)→目標 ≤500 nm ⇒ **拆開 Cornell「damascene ⇒ 無機」的隱含前提**
+- [[sources/2026-09-26_paper_skywater-fowlp-pdk-roadmap]] — ⭐⭐⭐ SkyWater：**帶日期與成熟度分級的 FOWLP PDK**（2→4 層，**Q1'28/Q2'28 才完全認證**；**L/S ≤2 µm 七季不動**）；**面板流程僅 300 mm**；美國封裝產能僅 ~3%；eFOCUS $120M
+- [[sources/2026-09-26_paper_asi-1um-hdbu-substrate]] — ⭐⭐⭐ American Semiconductor：**PI 介電 1 µm/4 µm L/S 但僅 2 層金屬**、**Cu 厚 0.2–0.4 µm**、單層版**不需 via** ⇒ **「線寬 vs 層數互換關係」成形**；📌 RDL 金屬厚度跨路線差 4–8 倍
+- [[sources/2026-09-26_patent_zhuhai-tiancheng-dual-depth-tsv-silicon-bridge]] — ⭐⭐⭐ 珠海天成：**矽轉接板 + 雙深度 TSV 埋矽橋，判準明載為 CTE 失配** ⇒ 「橋要埋進什麼材料」出現與 Intel 相反的答案；**同一公司第二次以「繞開難製程」為策略**
+- [[sources/2026-09-26_patent_beijing-xinli-hybrid-bonding-dishing-activation]] — ⭐⭐⭐ 北京芯力：**「淺碟狀凹坑」寫入請求項**（「凹陷是刻意的」第二個獨立來源）；**電漿轟擊 + 旋塗水富集 Si–OH**（介電活化新步驟；乾/濕對立跨技術域重現）；⚠⚠ 標題稱「修復」但內容未見 rework 機制
+- [[sources/2026-09-26_patent_er-eng-glass-interposer-dual-carrier]] — ⭐⭐ E&R Engineering：**雙載板轉移使玻璃中介層免薄化** ⇒ **TGV 解法空間出現「流程軸」**（非第五條材料路線）；並揭露本 wiki 未記載的關卡：**薄化**
+- [[sources/2026-09-26_article_semiwiki-cowos-capacity-double-2028]] — ⭐⭐ CoWoS 產能 **~130K wpm（2026 年底）→ 260K wpm（2028）**；缺口留給 Intel 與 OSAT 成為 permanent second source（「CoWoS/EMIB 不互斥」第二條論證路徑）；⚠ reportedly
+- [[sources/2026-09-26_article_imec-1um-damascene-rdl-2019-anchor]] — ⭐⭐⭐ 歷史錨點 imec×JSR×Ultratech（2019）：有機感光 damascene **1.0 µm L/S、CD 1012 nm/3σ 105 nm**、**四步 CMP**、Ti/Cu 30/150 nm、CMP 後 Cu 高 1.6 µm；⚠ 1.0 µm 良率 100% > 1.6 µm 90%（反直覺）
 - [[sources/2026-09-25_paper_cornell-glass-on-glass-sio2-rdl]] — [論文] ⭐⭐⭐ **細線距訊號 TGV 可能是自找的：高分子 RDL 只能 3–4 層 ⇒ 必須雙面佈線 ⇒ 訊號才要穿過基板；改 SiO₂ damascene RDL 單面 9–10 層後只剩 ~80 µm power/IO TGV，AR 牆不在路徑上**；⭐⭐⭐ **σ ~ 1/r、MTTF ~ r²**；高分子 ILD 做不了混合接合；波導 10× 尺寸差（Cornell/FuzeHub, IMAPS DPC 2026）⭐新增
 - [[sources/2026-09-25_paper_dnp-glass-rdl-electromigration-lifetime]] — [論文] ⭐⭐⭐ **RDL 微縮的第二堵牆是電遷移**：無機介電覆蓋使 **Ea 0.9 → >1.23 eV**、**MTTF 0.7–10 hr → >1000 hr**、t₀.₁% 外推 **10,000×**；B-HAST 120 hr → 200 hr；40 GHz/1000 TCT 劣化與線寬無關；TGV φ100 µm/1.0 mm 節距（DNP, IMAPS DPC 2026）⭐新增
 - [[sources/2026-09-25_paper_ase-glass-carrier-edge-toughness-reuse]] — [論文] ⭐⭐⭐ **玻璃載板重複使用的量化代價：正規化衝擊韌性 0.82 → 0.47（−43%）**；邊緣研磨 Rz 1.536 vs 6.497 µm ⇒ 韌性 ~7.0 vs ~1.5；⚠⚠ **修正本 wiki 對「43 µm」的誤讀（受損區寬度，非深度門檻）**（ASE, IMAPS DPC 2026）⭐新增

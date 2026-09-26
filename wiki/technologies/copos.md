@@ -3,9 +3,10 @@ title: "CoPoS — Chip-on-Panel-on-Substrate"
 category: technology
 tags: [panel-level-packaging, FOPLP, TSMC, CoPoS, AI, HPC, AP7, InFO]
 created: 2026-04-25
-updated: 2026-09-23
-sources: [2026-04-13_trendforce_copos-pilot, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2025-09-12_trendforce_foplp-competitive-landscape-2025, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-20_wccftech_tsmc-copos-glass-core-cost-cut, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-04-28_cw_tsmc-copos-move-really-means, 2026-06-14_digitaltrends_tsmc-copos-glass-temporary-carrier, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-28_xianfeng_cn122476946a-alignment-mark-protection, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap]
+updated: 2026-09-26
+sources: [2026-04-13_trendforce_copos-pilot, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2025-09-12_trendforce_foplp-competitive-landscape-2025, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-20_wccftech_tsmc-copos-glass-core-cost-cut, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-04-28_cw_tsmc-copos-move-really-means, 2026-06-14_digitaltrends_tsmc-copos-glass-temporary-carrier, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-28_xianfeng_cn122476946a-alignment-mark-protection, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition]
 related:
+  - wiki/technologies/rdl.md
   - wiki/technologies/cowos.md
   - wiki/entities/tsmc.md
   - wiki/concepts/advanced-packaging-market.md
@@ -489,3 +490,16 @@ CoPoS 採 **310×310 mm** 面板。本輪取得 **Amy Lujan（SavanSys）IMAPS 2
 - **EV Group TW202611995A**：雷射可溶層解接合**要求載板對該波長透明** ➜ **載板材料被解接合製程反向決定**，而載板材料又決定翹曲（詳見 [[technologies/foplp]]）。
 - **Besi WO2026192456A1**：**可受控移動的定心銷** ➜ **載具在製程中的尺寸漂移已大到需以排他權保護補償機構**。
 ➜ 兩件皆指向同一件事：**面板尺度下，載具本身已成為一個需要主動管理的變數**，而非被動的承載件。
+
+---
+
+## 2026-09-26 collect 更新
+
+### ⚠⚠ Yole 的 CoPoS 時程與本 wiki 既有記載不一致
+**Yole（`10.4071/001c.167738`，IMAPS DPC 2026）** 之中介層階梯把 **CoWoP 置於 2029、CoPoS 置於 >2030（9.5× 光罩 / ~7,885 mm²）**，並將兩者的方向描述為「cost-efficient, high power and signal integrity solutions, **removing IC substrates**」。
+➜ ⚠⚠ 本 wiki 既有記載為「封裝尺寸 3.3× → **14× 光罩（2024→2029）**」（2026-09-02）。**兩組不一致，並列不裁定。可能成因：14× 為 TSMC 路線圖宣告，9.5× 為 Yole 對量產採用的估計。** 詳見 [[technologies/cowos]] 2026-09-26 段。
+➜ ⭐⭐ **「移除 IC 基板」被明確列為 CoPoS/CoWoP 的設計目標**，與既有「ABF 基板成 AI 第二瓶頸」連成因果鏈 ⇒ **本 wiki 首次能解釋 CoPoS 路線的動機。**
+
+### 面板尺寸：四個獨立來源同向指向「小面板優先」
+本輪 Evatec（設備商，310 mm）與 SkyWater（實際建線者，300 mm 面板）加入，與 Lau/Lujan 成本模型（310×310）及曝光場物理上限（≤250×250 mm）構成四個理由互不重疊的來源。
+➜ **CoPoS 的 310×310 mm 面板選擇自此有四個外部佐證，而非僅 TSMC 之單方選擇。** 詳見 [[technologies/foplp]]、[[technologies/rdl]]。

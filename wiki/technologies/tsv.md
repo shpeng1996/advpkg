@@ -3,8 +3,8 @@ title: "TSV — Through-Silicon Via / 矽穿孔"
 category: technology
 tags: [TSV, HBM, interposer, 3D-IC, CoWoS, manufacturing, backside-power, advanced-packaging, radiation, redundancy, reliability]
 created: 2026-08-10
-updated: 2026-09-25
-sources: [2026-04-22_semieng_tsv-complexity-manufacturing-bottleneck, 2026-08-21_semieng_chip-week-152, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-08-21_scirep_copper-oxide-reduction-ar-h2-pulsed-plasma, 2026-06-08_irtnanoelec_d2w-hybrid-bonding-1um-pitch, 2026-03-13_kaneka_jp2026047137a-glass-core-polyimide-quantified, 2026-08-10_screp_low-k-organic-buffer-tgv-cu-metallization, 2026-08-04_jmrt_vacuum-assisted-void-free-cu-fill-tgv, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring]
+updated: 2026-09-26
+sources: [2026-04-22_semieng_tsv-complexity-manufacturing-bottleneck, 2026-08-21_semieng_chip-week-152, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-08-21_scirep_copper-oxide-reduction-ar-h2-pulsed-plasma, 2026-06-08_irtnanoelec_d2w-hybrid-bonding-1um-pitch, 2026-03-13_kaneka_jp2026047137a-glass-core-polyimide-quantified, 2026-08-10_screp_low-k-organic-buffer-tgv-cu-metallization, 2026-08-04_jmrt_vacuum-assisted-void-free-cu-fill-tgv, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring, 2026-09-26_patent_zhuhai-tiancheng-dual-depth-tsv-silicon-bridge, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_patent_er-eng-glass-interposer-dual-carrier, 2026-09-26_paper_lpkf-lide-glass-ap-cpo]
 related:
   - wiki/technologies/hbm4.md
   - wiki/technologies/cowos.md
@@ -437,3 +437,26 @@ Cornell 的推論鏈：**高分子 RDL 層數上限 3–4 層 ⇒ 必須上下�
 ### 📌 追蹤
 - **RDL 線距的第一限制項為基板平坦度或介電材料？**（Intel JP2026108527A 稱玻璃平坦度使 <3 µm L/S 可直接圖案化；Cornell 稱高分子材料卡在 1–2 µm）
 - **Cornell 的 σ ~ 1/r 與 MTTF ~ r² 是否有實驗佐證**（本篇未給係數與適用範圍）
+
+---
+
+## 2026-09-26 collect 更新
+
+### ⭐⭐ 同一基板上兩種深度的 TSV——本 wiki 首見的 TSV 幾何型態
+**珠海天成 CN121311056A（fam 98279638，2026-01-09）**：以**兩次圖案化／兩次蝕刻／兩次電鍍**做出**兩種不同深度的 TSV 孔與銅柱**；轉接板本體為**矽晶圓**，用途明載為**埋入矽橋**，宣稱降低**矽橋與埋入基板之間的 CTE 失配熱應力**。
+➜ 本頁既有 TSV 論述**皆假設單一深度族群**。⚠ 摘要未給兩種 TSV 的深度、孔徑或 AR；「兩次電鍍」的良率與成本代價亦未述。
+➜ 詳見 [[technologies/emib]] 2026-09-26 段（「橋要埋進什麼材料裡」的三件專利、兩個答案）。
+
+### ⭐⭐ 「自對準」：把對位需求從設備移回結構設計
+**Intel CN121400149A（fam 94975750，2026-01-23）**：玻璃結構含 **glass via**，**其下方之基板 via 與該 glass via 自對準（self-aligned）**。
+➜ 本頁與 [[technologies/glass-substrate]] 既有之 TGV/via 對位論述集中於**雷射定位精度**（LPKF LIDE >5 µm, Cp>1.33）與**曝光場拼接次數**（≤250×250 mm）。**自對準是第三條路線，且它不要求設備更精準，而是讓結構自己決定位置。** 與 2026-09-19「限制鏈的第一限制不在設備側」屬同類思路。
+
+### ⭐⭐ TGV 流程軸：免薄化，並揭露一個未記載的關卡
+**E&R Engineering US20260206611A1（fam 100489513，2026-07-16，台灣）**：雙載板轉移流程使**玻璃中介層無需後續薄化**，且導電柱**完全填滿**貫孔。IPC 落於 **C03C / C25D**（玻璃加工與電鍍）而非 H01L/H10W。
+➜ 既有四條 TGV 金屬化路線全部圍繞**種子層材料與附著**；本件改動的是**載板與製程順序** ➜ **「TGV 金屬化的解法空間不只有材料軸，還有流程軸」，本件為流程軸第一例，不並列為第五條材料路線。**
+➜ **「免薄化」反向揭示：既有流程中玻璃中介層是要被薄化的，而薄化本身帶來破片與翹曲風險。** 本頁既有關卡為**成孔**與**金屬化**，薄化從未獨立出現。
+📌 **新空缺：玻璃中介層薄化製程的破片率／良率代價為何？**
+
+### 沙漏形是雷射濕蝕刻的預設剖面
+**LPKF LIDE（`10.4071/001c.167501`）**：單一雷射脈衝可結構化**厚達 1.1 mm** 玻璃，**脈衝定位精度 >5 µm，Cp >1.33**；濕蝕刻沿改質區異向蝕刻 ⇒ **沙漏形孔，taper 可調**。同一製程亦可做 **BGV（盲孔）、腔體、貫穿切割**。
+➜ 「Corning small via diameter」空缺第四次修正提問：**應改問「該廠商把 taper 調到什麼值、為什麼」。** 詳見 [[technologies/glass-substrate]]。
