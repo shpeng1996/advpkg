@@ -3,8 +3,8 @@ title: "RDL — 重分佈層 / Redistribution Layer"
 category: technology
 tags: [RDL, SAP, dual-damascene, embedded-trace, ETR, polyimide, FPIM, CMP, electromigration, panel-level, pad-less-via]
 created: 2026-09-26
-updated: 2026-09-26
-sources: [2026-09-26_article_taiyo-imec-700nm-damascene-rdl, 2026-09-26_article_imec-1um-damascene-rdl-2019-anchor, 2026-09-26_article_amkor-embedded-trace-rdl, 2026-09-26_paper_asi-1um-hdbu-substrate, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-25_paper_dnp-glass-rdl-electromigration-lifetime, 2026-09-25_paper_cornell-glass-on-glass-sio2-rdl, 2026-09-25_paper_asu-molded-core-substrate-warpage]
+updated: 2026-09-27
+sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2026-09-27_paper_purdue-ru-cu-em-lifetime-blacks-n-0154, 2026-09-27_paper_copper-interconnect-scaling-roadmap-lines-per-mm, 2026-09-26_article_taiyo-imec-700nm-damascene-rdl, 2026-09-26_article_imec-1um-damascene-rdl-2019-anchor, 2026-09-26_article_amkor-embedded-trace-rdl, 2026-09-26_paper_asi-1um-hdbu-substrate, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-25_paper_dnp-glass-rdl-electromigration-lifetime, 2026-09-25_paper_cornell-glass-on-glass-sio2-rdl, 2026-09-25_paper_asu-molded-core-substrate-warpage]
 related:
   - wiki/technologies/foplp.md
   - wiki/technologies/glass-substrate.md
@@ -127,3 +127,53 @@ RDL 是在晶粒或封裝面上以薄膜製程做出的細線佈線層，把晶�
 - [[technologies/copos]] / [[technologies/cowos]] —— 中介層被取消時 RDL 承擔的密度責任上升
 - [[technologies/copackaged-optics]] —— 波導是否住在 RDL 頂層為 CPO 的四個答案之一
 - [[technologies/hybrid-bonding]] —— 兩者共用 CMP 作為限制層，但 dishing 規格相差 20–90 倍（RDL <90 nm vs HB 1–5 nm）
+
+
+---
+
+## 銅厚：45× 的落差與「導體縱橫比」新指標 ★★★（2026-09-27 結清）
+
+2026-09-26 列為**最高優先空缺**的「RDL 金屬厚度的跨路線共識值」本輪結清。**答案是：沒有共識值，而且落差比原估計大一個數量級。**
+
+| 路線／來源 | 線寬 L/S | **銅厚** | 層數 | **導體縱橫比（厚/寬）** |
+|-----------|---------|---------|------|----------------------|
+| ASI HDBU（2026-09-26） | 1 µm / 4 µm | **0.2–0.4 µm** | 2 | **0.2–0.4 : 1** |
+| Taiyo × imec FPIM dual-damascene（2026-09-26） | 700 nm | — | 3 | 未給 |
+| imec × JSR × Ultratech damascene（2019 錨點） | 1.0 µm | **1.6 µm**（CMP 後） | — | **1.6 : 1** |
+| SkyWater FOWLP PDK（2026-09-26） | ≤2 µm | — | 4（2028 全認證） | 未給 |
+| **Amkor HDFO 細線（2026-09-27）** | **2 µm / 10 µm** | **3 µm／層** | **3** | **1.5 : 1**（2 µm 線） |
+| **Amkor WLP（2026-09-27）** | **5–20 µm** | **5–9 µm** | — | **~0.45–1.8 : 1** |
+| Amkor ETR（2026-09-26） | 2/1 µm | — | 已示範 4、能力 6 | 未給 |
+
+➜ **完整銅厚分佈 0.2–9 µm，落差 45×**（原估 4–8×）。
+➜ ⭐⭐⭐ **新指標建議：RDL 應以「導體縱橫比」而非銅厚單獨表述。** Amkor HDFO 的 1.5:1 與 ASI 的 0.2–0.4:1 **差 4–7.5 倍**；若只看線寬，兩者看似同級（1–2 µm），實則導體截面差一個數量級。**不引入此指標，則「線寬微縮」與「銅厚縮減」會被誤讀為同一件事。**
+➜ ⭐⭐⭐ **新作業規範：凡以電流密度（A/cm²）或 MTTF 表述的 RDL 可靠度結論，若未同時標明銅厚與線寬，一律視為不可跨路線引用。** 既有受影響者包含 [[sources/2026-09-25_paper_dnp-glass-rdl-electromigration-lifetime]] 之 MTTF 外推。
+
+## 電遷移：Black 方程的 n 是失效機制的指紋 ★★★（2026-09-27 新建）
+
+| 來源 | 對象 | **E_a** | **n** | 失效機制 |
+|------|------|--------|-------|---------|
+| **Amkor HDFO（2026-09-27，實測）** | Cu RDL 2/10 µm、3 µm 厚、Ti/Cu 種子 | **0.74 eV** | **1.88** | **Cu/passivation 界面剝離 + 銅氧化 ⇒ 導體面積縮減** |
+| DNP 玻璃 RDL（2026-09-25，一手） | 無機介電 + 阻障金屬 | **0.9 → >1.23 eV** | 未給 | — |
+| **Purdue（2026-09-27，模擬）** | **釕** 68 × 68 nm | **1.045 eV** | **0.154** | 空孔成核 → 成長 |
+
+➜ ⭐⭐⭐ **新橫向論述：「Black 方程的 n 不是材料常數，而是失效機制的指紋。」** n≈2 對應面積縮減型（界面剝離／氧化）；n≪1 對應空孔成長主導。**兩者差一個數量級以上。**
+➜ ⭐⭐⭐ **新作業規範：凡引用 Black 方程外推壽命者，必須同時標明 n 與其來源機制；不同 n 的外推結果不可並列。**
+➜ ⭐⭐ **E_a 首次可跨金屬化路線並列（0.74–1.23 eV），跨越「Cu+Ti/Cu 種子」「Cu+無機介電/阻障金屬」「釕」三種方案。**
+➜ ⚠⚠ Purdue 篇標題稱「Ruthenium **and Copper**」但**未給銅的對照數據**；**不得記述為「釕優於銅」**。⚠ 68 nm 屬 BEOL 尺度，與封裝級 RDL 差 1.5–2 個數量級。
+
+## 第三個微縮軸：lines/mm；以及第四個限制：熱 ★★★（2026-09-27 新建）
+
+`10.4071/001c.167762`（[[sources/2026-09-27_paper_copper-interconnect-scaling-roadmap-lines-per-mm]]）把 RDL 微縮表述為**三個需協調推進的軸：datarate、layer count、line density（lines-per-mm）**，並列出三類限制：**電阻性、電容性、附著性**。
+
+➜ ⭐⭐⭐ **2026-09-26 的「線寬 vs 層數互換關係」應改述為三維權衡；lines/mm 是本 wiki 尚未追蹤的維度。**
+➜ ⭐⭐⭐ **新橫向論述候選：「RDL 微縮後，限制項自導體截面轉移至散熱路徑。」** Amkor WLP 實測：較厚矽基板對大線寬熔斷電流改善 **+42%**、對細線僅 **+6.7%**，原因是薄線電阻高、焦耳熱比例更高。➜ **熱是第四個限制，且它在細線區才顯現。**
+➜ ⭐⭐⭐ **升格論述：「附著性在先進封裝中已是與電性並列的一階設計限制。」** 三個獨立技術域：TGV 孔壁（AMAT／Corning／奧野／武漢大學）、**RDL/passivation 界面剝離（Amkor 實測）**、玻璃載板邊緣韌性（ASE）。
+➜ ⚠ 該篇為模型外推（「頻寬可漲一個數量級」），**無新實測**；⚠ **OpenAlex 未登錄作者機構**，取得歸屬前不得視為某廠商的路線宣告。
+
+### 與 CPO 的正面衝突（2026-09-27）
+同一場會議（IMAPS 22nd DPC 2026）兩篇 keynote 級發表結論相反：
+- **本篇**：銅可再漲一個數量級，**不需立即轉向光子**。
+- **GlobalFoundries**（[[sources/2026-09-27_globalfoundries_siph-cpo-bandwidth-density-coupling-budget]]）：銅 **<1 Tb/s/mm、>5 pJ/bit** vs 光 **>5 Tb/s/mm、2–5 pJ/bit**，主張範式轉移。
+
+➜ **本 wiki 首次在同一資料源、同一時點捕捉到 CPO 的核心爭點。並列不裁定。** ⚠ 兩者的「Tb/s/mm」定義（每 mm 邊長 vs 每 mm² 面積）未確認，**比值不得相除**。

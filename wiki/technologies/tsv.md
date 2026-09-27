@@ -3,8 +3,8 @@ title: "TSV — Through-Silicon Via / 矽穿孔"
 category: technology
 tags: [TSV, HBM, interposer, 3D-IC, CoWoS, manufacturing, backside-power, advanced-packaging, radiation, redundancy, reliability]
 created: 2026-08-10
-updated: 2026-09-26
-sources: [2026-04-22_semieng_tsv-complexity-manufacturing-bottleneck, 2026-08-21_semieng_chip-week-152, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-08-21_scirep_copper-oxide-reduction-ar-h2-pulsed-plasma, 2026-06-08_irtnanoelec_d2w-hybrid-bonding-1um-pitch, 2026-03-13_kaneka_jp2026047137a-glass-core-polyimide-quantified, 2026-08-10_screp_low-k-organic-buffer-tgv-cu-metallization, 2026-08-04_jmrt_vacuum-assisted-void-free-cu-fill-tgv, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring, 2026-09-26_patent_zhuhai-tiancheng-dual-depth-tsv-silicon-bridge, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_patent_er-eng-glass-interposer-dual-carrier, 2026-09-26_paper_lpkf-lide-glass-ap-cpo]
+updated: 2026-09-27
+sources: [2026-09-27_wuhanuniv_cn121548325a-tgv-micro-nano-anchor-molecular-bridging, 2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-27_semieng_chip-week-156-india-tata-besi-izmo, 2026-04-22_semieng_tsv-complexity-manufacturing-bottleneck, 2026-08-21_semieng_chip-week-152, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-08-21_scirep_copper-oxide-reduction-ar-h2-pulsed-plasma, 2026-06-08_irtnanoelec_d2w-hybrid-bonding-1um-pitch, 2026-03-13_kaneka_jp2026047137a-glass-core-polyimide-quantified, 2026-08-10_screp_low-k-organic-buffer-tgv-cu-metallization, 2026-08-04_jmrt_vacuum-assisted-void-free-cu-fill-tgv, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring, 2026-09-26_patent_zhuhai-tiancheng-dual-depth-tsv-silicon-bridge, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_patent_er-eng-glass-interposer-dual-carrier, 2026-09-26_paper_lpkf-lide-glass-ap-cpo]
 related:
   - wiki/technologies/hbm4.md
   - wiki/technologies/cowos.md
@@ -460,3 +460,47 @@ Cornell 的推論鏈：**高分子 RDL 層數上限 3–4 層 ⇒ 必須上下�
 ### 沙漏形是雷射濕蝕刻的預設剖面
 **LPKF LIDE（`10.4071/001c.167501`）**：單一雷射脈衝可結構化**厚達 1.1 mm** 玻璃，**脈衝定位精度 >5 µm，Cp >1.33**；濕蝕刻沿改質區異向蝕刻 ⇒ **沙漏形孔，taper 可調**。同一製程亦可做 **BGV（盲孔）、腔體、貫穿切割**。
 ➜ 「Corning small via diameter」空缺第四次修正提問：**應改問「該廠商把 taper 調到什麼值、為什麼」。** 詳見 [[technologies/glass-substrate]]。
+
+
+---
+
+## TGV 金屬化第五條路線：孔壁形貌軸 ★★★（2026-09-27 新建）
+
+**武漢大學 CN121548325A**（fam 98749508，[[sources/2026-09-27_wuhanuniv_cn121548325a-tgv-micro-nano-anchor-molecular-bridging]]）在孔壁與銅主體之間設**四層梯度**：
+
+**微納錨釘結構層（孔內壁凹凸點陣）→ 分子橋連層 → 導電金屬種子層 → 銅主體**
+
+| 宣稱 | 值 |
+|------|-----|
+| TGV 深徑比 | **≥10:1**，無空洞電鍍填充 |
+| 局部互連 L/S | **≤1 µm**（玻璃橋嵌入玻璃基板） |
+| 目標整合規模 | **≥16 顆矽基芯粒** 2.5D |
+
+### 五條路線的自由度互不重疊
+
+| # | 來源 | 改動的自由度 |
+|---|------|-------------|
+| 1 | Corning WO2026164778A1 | **材料**：Ti/Cu 黏著層 + 羥基富化 + 矽烷官能化 + 無電鍍種子 |
+| 2 | Intel（多件） | **材料/製程**：有機種子層、部分 liner、底部向上電鍍 |
+| 3 | 奧野化學（2026-09-24） | **材料**：金屬氧化物作為黏結層 |
+| 4 | E&R Engineering US20260206611A1 | **流程順序**：雙載板轉移使玻璃中介層免薄化 |
+| 5 | **武漢大學 CN121548325A** | **孔壁幾何**：微納錨釘機械互鎖 + 分子橋連化學接合 |
+
+➜ ⭐⭐⭐ **2026-09-26 的「TGV 的失效在界面與孔緣，不在材料本體」首次取得一件以該論述為整體設計前提的排他權文件。**
+➜ ⭐⭐ **「粗糙度是雙面刃」的第四個技術域，且方向與前三個相反。** 混合接合要 Ra <0.1–0.2 nm（越平越好）、TGV 側壁 25 nm–1.257 µm（視為缺陷）、LPKF 腔體 ±30 nm；**本件把孔壁粗糙度當成刻意追求的正向變數。** ➜ **新橫向論述候選：「粗糙度不是單向劣化指標，而是有目標值的設計變數；其最佳值的方向隨界面要承擔機械互鎖或原子級接合而反轉。」** 與 2026-09-18「混合接合的最佳粗糙度是否真的非零」（Co/Co 分子動力學）在兩個相反技術域同時出現同一問題形式。
+➜ ⚠⚠ 學術機構單一申請案，**無量產佐證**；「無空洞」與「≤1 µm」為請求項主張，**未附量測分布、良率或重複性**（依 2026-09-21 規範標 ⚠）。⚠ 「≥16 顆芯粒」為應用宣稱。
+
+## TGV 深寬比：AR 20 級自單一來源升為兩個 ★★（2026-09-27）
+
+| 來源 | AR | 條件 |
+|------|-----|------|
+| **AGC（一手實績）** | **1:20** | @ **1.0 mm** 厚無鹼玻璃 |
+| **Intel CN122270166A（專利例示）** | **>20:1** | 玻璃中介層（e.g. 值，非量測） |
+| 武漢大學 CN121548325A | ≥10:1 | 宣稱無空洞 |
+
+⚠ 專利例示值**不得與實測值等價並列**。
+
+## TSV 外溢至非 HBM 記憶體 ★（2026-09-27）
+
+- **Micron 512 GB DDR5 伺服器模組**以 TSV 垂直堆疊 DRAM 晶粒（[[sources/2026-09-27_semieng_chip-week-156-india-tata-besi-izmo]]）。本 wiki 既有 TSV 記述多集中於 HBM 與中介層。
+- 與 2026-07-15「V-Die Mosaic 垂直記憶體」同屬「TSV 外溢至標準 DRAM」的趨勢。⚠ 無 TSV 尺寸、層數或 pitch 數據。

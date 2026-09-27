@@ -3,8 +3,8 @@ title: "混合接合 / Hybrid Bonding"
 category: technology
 tags: [3D, hybrid-bonding, Cu-Cu, SoIC, ECTC, advanced-packaging, DRAM, COP, 4F2, Sn-damascene, damascene-interconnect, PFAS-free, patent-signal, guard-ring, surface-activation]
 created: 2026-04-24
-updated: 2026-09-26
-sources: [2026-05-21_semiecosystem_ectc2026-cpo-hybridbonding-plp, 2026-04-24_initial-survey, 2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-03-01_3dincites_besi-packaging-power-shift, 2026-01-13_semiengineering_hbm4-microbumps, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-19_semieng_advanced-packaging-limits, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-03-27_3dincites_copper-grain-hybrid-bonding, 2026-03-02_semieng_making-hybrid-bonding-better, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2026-04-29_semiwiki_cea-leti-ectc2026-hybrid-bonding, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2024-02-09_semianalysis_hybrid-bonding-process-flow, 2026-05-19_semiconductor-digest_ev-group-ectc2026-hybrid-bonding, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-04-19_semiwiki_apple-m5-cucu-hybrid-bonding-shipped, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-18_imec_iii-v-chiplet-rf-laser-bonding, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-29_evgroup_ectc2026-hybrid-bonding-layer-transfer, 2026-06-29_thelec_skhynix-hybrid-bonding-equipment-order, 2026-06-05_semieng_intel-ectc-2026-emib-t-cpo-glass, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-14_trendforce_samsung-hbm-hiring-hybridbonding, 2026-07-16_semieng_fine-pitch-hb-high-volume, 2026-07-16_semieng_alt-materials-hybrid-bonding, 2026-06-08_irtnanoelec_d2w-hybrid-bonding-1um-pitch, 2026-05-28_imec_w2w-hybrid-bonding-200nm-pitch, 2026-09-09_acsaelm_microwave-anneal-cu-cu-150c-3min, 2026-08-21_scirep_copper-oxide-reduction-ar-h2-pulsed-plasma, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-03-29_damnang_hybrid-bonding-cmp-gating-factor, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-04-02_adeia_us20260096463a1-buildup-organic-dielectric-bonding, 2026-07-17_jcet_cn122421815a-asymmetric-bonding-interface, 2026-04-30_seoultech_us20260123559a1-hydrocarbon-plasma-low-temp-bonding, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer, 2023-09-13_nccavs_intel-cmp-dishing-requirement-vs-achieved, 2026-03-11_epo_adeia-cmp-for-hybrid-bonding-patent, 2026-09-01_chip_ru-bpr-ntsv-ion-beam-recess, 2026-02-10_epo_shanghai-univ-citric-acid-cu-reduction-sog, 2026-09-21_semiconductorx_cmp-share-lam-sabre-correction, 2026-09-16_jsandwich_cucu-diameter-nonmonotonic-local-optimum, 2026-07-21_lam_sabre-3d-is-ecd-not-cmp, 2026-09-26_paper_dalian-cucu-bonding-review, 2026-09-26_patent_beijing-xinli-hybrid-bonding-dishing-activation, 2026-09-26_paper_ibm-amine-post-cmp-clean]
+updated: 2026-09-27
+sources: [2026-09-27_paper_binghamton-ibm-pad-scaling-resistance-variability, 2026-09-27_intel_us20260223702a1-direct-bonding-embedded-bridge-organic-cavity, 2026-05-21_semiecosystem_ectc2026-cpo-hybridbonding-plp, 2026-04-24_initial-survey, 2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-03-01_3dincites_besi-packaging-power-shift, 2026-01-13_semiengineering_hbm4-microbumps, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-19_semieng_advanced-packaging-limits, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-03-27_3dincites_copper-grain-hybrid-bonding, 2026-03-02_semieng_making-hybrid-bonding-better, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2026-04-29_semiwiki_cea-leti-ectc2026-hybrid-bonding, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2024-02-09_semianalysis_hybrid-bonding-process-flow, 2026-05-19_semiconductor-digest_ev-group-ectc2026-hybrid-bonding, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-04-19_semiwiki_apple-m5-cucu-hybrid-bonding-shipped, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-18_imec_iii-v-chiplet-rf-laser-bonding, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-29_evgroup_ectc2026-hybrid-bonding-layer-transfer, 2026-06-29_thelec_skhynix-hybrid-bonding-equipment-order, 2026-06-05_semieng_intel-ectc-2026-emib-t-cpo-glass, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-14_trendforce_samsung-hbm-hiring-hybridbonding, 2026-07-16_semieng_fine-pitch-hb-high-volume, 2026-07-16_semieng_alt-materials-hybrid-bonding, 2026-06-08_irtnanoelec_d2w-hybrid-bonding-1um-pitch, 2026-05-28_imec_w2w-hybrid-bonding-200nm-pitch, 2026-09-09_acsaelm_microwave-anneal-cu-cu-150c-3min, 2026-08-21_scirep_copper-oxide-reduction-ar-h2-pulsed-plasma, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-03-29_damnang_hybrid-bonding-cmp-gating-factor, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-04-02_adeia_us20260096463a1-buildup-organic-dielectric-bonding, 2026-07-17_jcet_cn122421815a-asymmetric-bonding-interface, 2026-04-30_seoultech_us20260123559a1-hydrocarbon-plasma-low-temp-bonding, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer, 2023-09-13_nccavs_intel-cmp-dishing-requirement-vs-achieved, 2026-03-11_epo_adeia-cmp-for-hybrid-bonding-patent, 2026-09-01_chip_ru-bpr-ntsv-ion-beam-recess, 2026-02-10_epo_shanghai-univ-citric-acid-cu-reduction-sog, 2026-09-21_semiconductorx_cmp-share-lam-sabre-correction, 2026-09-16_jsandwich_cucu-diameter-nonmonotonic-local-optimum, 2026-07-21_lam_sabre-3d-is-ecd-not-cmp, 2026-09-26_paper_dalian-cucu-bonding-review, 2026-09-26_patent_beijing-xinli-hybrid-bonding-dishing-activation, 2026-09-26_paper_ibm-amine-post-cmp-clean]
 related:
   - wiki/technologies/rdl.md
   - wiki/technologies/soic.md
@@ -1703,3 +1703,34 @@ NineScrolls（2026-06-01／2026-08-15 更新）主張五段鏈為 CMP → **CMP 
 ### 6. ⭐ 與 RDL 的 dishing 規格差 20–90 倍
 Amkor ETR（見 [[technologies/rdl]]）之 RDL CMP **dishing <90 nm 且與 over-CMP 比例無關**；混合接合為 **1–5 nm 且要求精密控制**。
 ➜ **同一物理量在兩個技術域裡，一個要求不敏感、一個要求精準；跨頁引用「dishing」必須標註技術域。**
+
+
+---
+
+## 限制鏈在 2 µm pitch 處新增一環：晶粒取向 ★★★（2026-09-27）
+
+**Binghamton University × IBM**（*Materialia*，[[sources/2026-09-27_paper_binghamton-ibm-pad-scaling-resistance-variability]]）以互連微縮為自變數直接量測：
+
+| 項目 | 值 |
+|------|-----|
+| **墊直徑** | **4 µm → 0.8 µm** |
+| **pitch** | **10 µm → 2 µm** |
+| 互連密度 | **~250,000 interconnects/mm²** |
+| 接合後晶粒取向 | **{220}** |
+| 量測結構 | Kelvin test structures |
+| 核心發現 | **墊越小 ⇒ 接合品質對晶粒取向依賴性越高、電阻變異範圍越寬**（但仍達理論電阻值） |
+| 控制點 | **接合前的晶粒特性** ⇒ 在電鍍/退火，不在接合機台 |
+
+➜ ⭐⭐⭐ **2026-09-26 的「限制鏈的排序是 pitch 的函數」首次取得一個直接以 pitch 為自變數的實驗**（原論述由 Cu–Cu 綜述的間接數值推得）。**限制鏈在 2 µm pitch 處新增一環：晶粒取向（材料／電鍍側），且它隨 pitch 連續加劇而非門檻式出現。**
+➜ ⭐⭐⭐ **新橫向論述：「在混合接合的微縮終局，良率的限制項不是平均電阻達不到理論值，而是變異度拉不下來。」** 與 2026-09-19 限制鏈的「表面平坦度 ~0.2 nm」構成同一結論的兩面：**規格的難點在分布的尾端，不在中位數。** 並與同日 Amkor HDFO EM 篇（失效模式隨線寬質變）在兩個技術域同向。
+➜ ⭐⭐⭐ **「銅晶粒取向是一階變數」自兩個來源增至第三個，且本篇首次把它與電阻「變異度」而非平均值連起來**（既有：3DInCites 銅晶粒 2026-03-27、Atotech 微結構工程 2026-09-24）。
+➜ ⭐⭐ **{220} 為本 wiki 首見的具體晶面記述。** ➜ **新空缺：Absolics 請求項之「上下 RDL 銅晶粒長寬比之比 C/D 0.85–0.99」與本篇的 {220} 取向是否描述同一物理量？**
+➜ ⭐⭐ **250,000 interconnects/mm² 為本 wiki 首個以「每 mm² 互連數」表述的密度值**，為 imec 200 nm、TEL 140 nm W2W pitch 提供第二種可換算單位。
+➜ ⚠⚠ **非 OA**；Kelvin 結構的**絕對電阻值與變異絕對值（σ 或 range）未取得** ⇒ **列下輪追蹤，這是「變異度是限制項」能否升格為完整論述的唯一缺口。**
+➜ ⚠ 墊徑 0.8 µm / pitch 2 µm 屬研究尺度，與 6–9 µm 量產 pitch 差 3–4 倍；引用須標明適用區間。
+➜ ⭐ IBM 在「界面化學與微結構」子領域**連續第三輪出現**（JVSTB Cu 墊氧化相 2026-07-31、ASMC 胺基 post-CMP 清洗 2026-09-26、本篇）。⚠ 集中性可能只反映發表偏好。
+
+## 直接接合外溢至 EMIB 式埋入橋 ★★（2026-09-27）
+
+**Intel US20260223702A1** 標題明載 direct bonding，對象是**埋入基板的橋晶粒**而非晶粒堆疊。詳見 [[technologies/emib]]。
+➜ **新空缺：direct-bonded bridge 的目標 pitch**（EMIB-T 25 µm vs 混合接合量產 6–9 µm，差 3–4 倍）。

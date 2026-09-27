@@ -3,8 +3,8 @@ title: "EMIB — Embedded Multi-Die Interconnect Bridge"
 category: technology
 tags: [Intel, 2.5D, silicon-bridge, chiplet, HBM4, Foveros, glass-substrate, EMIB-T, EMIB-M, silicon-capacitors, power-delivery, HLFF, encapsulation, underfill]
 created: 2026-05-03
-updated: 2026-09-26
-sources: [2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-03-05_trendforce_intel-emib-billions, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-03-03_trendforce_intel-clearwater-forest, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks, 2026-06-21_convergedigest_intel-emib-t-multi-die-packaging, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap, 2026-06-05_semieng_intel-ectc-2026-emib-t-cpo-glass, 2026-01-30_tomshardware_intel-ai-chip-test-vehicle-emib-t, 2026-08-04_semieng_from-blueprint-intel-hlff, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_patent_zhuhai-tiancheng-dual-depth-tsv-silicon-bridge, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-26_paper_yole-advanced-packaging-market-ai-era]
+updated: 2026-09-27
+sources: [2026-09-27_intel_us20260223702a1-direct-bonding-embedded-bridge-organic-cavity, 2026-09-27_intel_cn122270166a-stacked-glass-silicon-bridge-assembly-ar20, 2026-09-27_samsung_us20260144093a1-bridge-on-tgv-mold-fixed, 2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-03-05_trendforce_intel-emib-billions, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-03-03_trendforce_intel-clearwater-forest, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks, 2026-06-21_convergedigest_intel-emib-t-multi-die-packaging, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap, 2026-06-05_semieng_intel-ectc-2026-emib-t-cpo-glass, 2026-01-30_tomshardware_intel-ai-chip-test-vehicle-emib-t, 2026-08-04_semieng_from-blueprint-intel-hlff, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_patent_zhuhai-tiancheng-dual-depth-tsv-silicon-bridge, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-26_paper_yole-advanced-packaging-market-ai-era]
 related:
   - wiki/entities/intel.md
   - wiki/entities/amkor.md
@@ -459,3 +459,29 @@ SemiWiki（2026-09-18）：CoWoS 產能自 **2026 年底 ~130K wpm** 倍增至 *
 ➜ ⭐ **「CoWoS/EMIB 不互斥」取得第二個獨立論證路徑**：2026-09-01 ASE COO 吳田玉自**技術互補性**論證；本篇自**產能短缺的結構性後果**論證。
 ⚠ 產能數字標示為「reportedly」，非 TSMC 一手宣告。
 ⚠ **本輪三件專利皆不得解讀為 EMIB-T 已採用該結構**；Intel CFO Zinsner 公開之 EMIB-T 時程仍為 **2H27 → 2028 → 2029 三段式**。
+
+
+---
+
+## 橋的載體幾何：六種答案，且「埋／不埋」是更上位的分歧 ★★★（2026-09-27 擴充）
+
+完整對照表見 [[technologies/glass-substrate]]「專利訊號」段。摘要：
+
+- **Intel 四種互斥幾何、四個不同 family、三組不同的發明人團隊** ⇒ **內部路線選擇明確尚未收斂，且更可能是多團隊平行下注。**
+- **珠海天成**：矽轉接板（判準明載 CTE 失配）。
+- **Samsung US20260144093A1**：**橋置於 TGV 之上、以模封層固定 — 唯一「不埋」的答案。** ➜ **新橫向論述：「埋／不埋」是比「埋進什麼」更上位的分歧軸。**
+- **武漢大學**：玻璃橋 in 玻璃基板 — 唯一同質解。
+
+## ⭐⭐ Direct bonding 進入 EMIB 式埋入橋（2026-09-27 新建）
+
+**Intel US20260223702A1**（fam 95860446，[[sources/2026-09-27_intel_us20260223702a1-direct-bonding-embedded-bridge-organic-cavity]]）**標題明載 direct bonding**，結構為：玻璃層走導電貫孔 → 有機介電層開腔 → **TGV 落在腔體投影範圍內** → 橋置腔中並耦合至該 TGV。
+
+- 本 wiki 既有 EMIB 敘述中，橋與基板的連接**一律是 bump / TCB 級**（EMIB-T 一手值 **25 µm bump pitch**）；混合接合／直接接合則屬 SoIC / Foveros / HBM 領域。**本件首次把兩條技術線接在一起。**
+- ➜ **新空缺（高價值）：若 EMIB 的橋改用直接接合，其目標 pitch 為何？** EMIB-T 的 25 µm 與混合接合量產 6–9 µm 差 **3–4 倍**；若 Intel 意在把橋接介面拉進混合接合區間，則 **EMIB 的頻寬密度上限須重估**。
+- 「TGV 落在腔體投影內」為明確的**電性路徑最短化**主張，與 AGC 的「填滿與否對 30 GHz SI 無顯著差異」共同指向：**玻璃核心的電性優勢主要來自路徑幾何，而非導體填充率。**
+- ⚠ **全篇無量化值**（無 pitch、無 TGV 尺寸、無對準規格、無良率）。專利訊號，非已出貨能力。
+
+## EMIB × 玻璃核心的展品層證據早於排他權層 ★（2026-09-27）
+
+Intel 於 **2026-01 NEPCON Japan** 展出 **EMIB + 玻璃核心基板原型**（[[sources/2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm]]）。
+➜ 2026-09-26 記為「EMIB 與玻璃基板兩條主線首次在排他權層合流」；**本條顯示展品層的合流早了約 8 個月**，與 2026-09-22「論文是落後指標」的時間位移觀察同型（排他權／展品／發表三者的時序須分別標註）。

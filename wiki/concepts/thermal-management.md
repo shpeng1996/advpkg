@@ -3,8 +3,8 @@ title: "先進封裝熱管理 / Thermal Management in Advanced Packaging"
 category: concept
 tags: [thermal-management, liquid-cooling, 3D-IC, CoWoS, heat-dissipation, TIM, ECTC-2025, GaN, power-delivery, co-design, patent-signal, delamination]
 created: 2026-04-25
-updated: 2026-09-24
-sources: [2025-12-01_semiengineering_thermal-management, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-02_trendforce_samsung-hbm5-computex2026, 2026-05-21_semieng_hi-roadmap-nature-paper-intel, 2026-08-13_semieng_1mw-rack-debate-thermal, 2026-04-27_semieng_semiconductor-materials-misbehave, 2026-08-21_trendforce_chip-packaging-heat-ai-bottleneck-cpo-stco, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer]
+updated: 2026-09-27
+sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2025-12-01_semiengineering_thermal-management, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-02_trendforce_samsung-hbm5-computex2026, 2026-05-21_semieng_hi-roadmap-nature-paper-intel, 2026-08-13_semieng_1mw-rack-debate-thermal, 2026-04-27_semieng_semiconductor-materials-misbehave, 2026-08-21_trendforce_chip-packaging-heat-ai-bottleneck-cpo-stco, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer]
 related:
   - wiki/technologies/cowos.md
   - wiki/technologies/hybrid-bonding.md
@@ -722,3 +722,22 @@ IBM 的作法是在同一接合區內分割「接合介電區」與「導熱材�
 
 ### ⚠ 不得外推
 625 W/cm² 與 43 °C 皆在 QFN 功率元件、**輸入功率僅 37–41 W** 下取得。本 wiki 記載之 AI 封裝功耗為 **600 W → 4,100 W（2024→2029）**，晶片面積與熱分布完全不同。
+
+
+---
+
+## 熱是 RDL 微縮的第四個限制，且只在細線區顯現 ★★★（2026-09-27）
+
+**Amkor WLP 級 Cu RDL 電流特性**（[[sources/2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current]]）：
+
+| 條件 | 較厚矽基板帶來的熔斷電流改善 |
+|------|---------------------------|
+| **大截面（178.9 µm²）** | **+42%** |
+| **小截面（18.5 µm²）** | **+6.7%** |
+
+原文歸因：薄線電阻高 ⇒ **焦耳熱比例更高**。
+
+➜ ⭐⭐⭐ **新橫向論述候選：「RDL 微縮後，限制項自導體截面轉移至散熱路徑。」** 厚基板（=更好的散熱路徑）對粗線有效、對細線幾乎無效 ⇒ **細線的瓶頸不在能不能導,而在熱往哪裡走**。
+➜ 與 `10.4071/001c.167762` 的「電阻／電容／附著三大限制」**互補：熱是第四個，且它是尺寸相依的。**
+➜ ⚠ **熔斷電流（秒級、熱主導）與 EM 壽命（千小時級、質量傳輸主導）是兩個不同失效模式**，本節數值**不得用於 EM 推論**。
+➜ 與既有「熱應拆成運作熱與製程熱兩條線」（2026-09-22）並列：**本節屬運作熱，且是本 wiki 首個把運作熱與導體幾何直接連起來的量化資料點。**

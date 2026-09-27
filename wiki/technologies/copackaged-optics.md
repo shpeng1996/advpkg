@@ -3,8 +3,8 @@ title: "共封裝光學元件 / Co-Packaged Optics (CPO) — TSMC-COUPE™ & Eco
 category: technology
 tags: [CPO, co-packaged-optics, COUPE, TSMC, GlobalFoundries, Samsung, photonics, AI, HPC, networking, OCI-MSA, DWDM, Broadcom, NVIDIA, glass-substrate, ULCVD, TGV, Spectrum-X, NVL72]
 created: 2026-04-25
-updated: 2026-09-26
-sources: [2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-05-07_trendforce_globalfoundries-silicon-photonics-scale-cpo, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-03-17_coherent_cpo-ofc2026-demo, 2026-06-07_digitimes_jcet-3d-packaging-cpo-plant, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_edn_cpo-technology-status-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-06-24_thelec_corning-glass-bridge-cpo, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-14_trendforce_umc-silith-silicon-photonics-hvm, 2026-07-14_trendforce_huawei-baidu-npo-msa, 2026-07-27_trendforce_presscenter_cpo-switches-nvidia-broadcom-coupe, 2026-06-03_3dincites_intel-foundry-emib-cpo-glass-ectc2026, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-07-31_ase_cn224583735u-photoelectric-hybrid-rdl, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-09-26_report_dupont-ttm-polymer-waveguide-reliability, 2026-09-26_paper_lpkf-lide-glass-ap-cpo]
+updated: 2026-09-27
+sources: [2026-09-27_globalfoundries_siph-cpo-bandwidth-density-coupling-budget, 2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-27_paper_copper-interconnect-scaling-roadmap-lines-per-mm, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-05-07_trendforce_globalfoundries-silicon-photonics-scale-cpo, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-03-17_coherent_cpo-ofc2026-demo, 2026-06-07_digitimes_jcet-3d-packaging-cpo-plant, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_edn_cpo-technology-status-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-06-24_thelec_corning-glass-bridge-cpo, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-14_trendforce_umc-silith-silicon-photonics-hvm, 2026-07-14_trendforce_huawei-baidu-npo-msa, 2026-07-27_trendforce_presscenter_cpo-switches-nvidia-broadcom-coupe, 2026-06-03_3dincites_intel-foundry-emib-cpo-glass-ectc2026, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-07-31_ase_cn224583735u-photoelectric-hybrid-rdl, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-09-26_report_dupont-ttm-polymer-waveguide-reliability, 2026-09-26_paper_lpkf-lide-glass-ap-cpo]
 related:
   - wiki/technologies/rdl.md
   - wiki/entities/tsmc.md
@@ -1002,3 +1002,56 @@ imec 之途徑（a）「以標準微影直接在光子晶片表面圖案化高�
 2 層玻璃核心基板（2L-GCS）示範件同時整合 **LIDE 的 TGV 與腔體**、**DirectWrite 波導**、**TensorAblation RDL 移除**、**TensorBonding 玻璃接合**，並標明 **CPO coupling capability**；**封閉腔體**可為嵌入元件（含 PIC）設計專屬環境，熱管理由垂直與水平 TGV 密度兩軸設計，並可電性屏蔽。腔體表面**波紋 ±100 nm、粗糙度 ±30 nm**。
 ➜ ⭐⭐ **本 wiki 首次看到 CPO 的光學耦合、熱管理與電性屏蔽由同一個基板結構同時承擔**，而非分屬不同層級。
 ➜ Yole 之高階封裝技術分類亦已列 **「3D Optical Engine」** 為獨立類別（`10.4071/001c.167738`）。
+
+
+---
+
+## 銅 vs 光：首次來自同一來源的頻寬密度與能耗對照 ★★★（2026-09-27）
+
+**GlobalFoundries**（Jean Trewhella, Director of SiPh Packaging Development；IMAPS 22nd DPC 2026；製造地 **Malta, New York**）——[[sources/2026-09-27_globalfoundries_siph-cpo-bandwidth-density-coupling-budget]]
+
+| 互連 | 頻寬密度 | 能耗 |
+|------|---------|------|
+| **銅** | **<1 Tb/s/mm** | **>5 pJ/bit** |
+| **光** | **>5 Tb/s/mm** | **2–5 pJ/bit** |
+
+其他：Ge 光二極體頻寬 **120 GHz**；NVIDIA NVL72 使用 **5,184 條直連銅雙絞線**（銅方案的規模參照）。
+
+➜ ⭐⭐⭐ **2026-09-18 空缺「Nature Electronics CPO 綜述全文」部分結清。** 該空缺要「頻寬密度、pJ/bit、接合 pitch」三項以對齊學界與廠商路線圖；**本篇一次給出前兩項。追蹤標的縮小為「接合 pitch 的門檻值」。**
+➜ ⚠ 「Tb/s/mm」定義（每 mm 邊長 vs 每 mm² 面積）未確認，**不得與其他來源的頻寬密度相除比較**。
+
+### ⚠⚠ 同一場會議、結論相反（2026-09-27）
+`10.4071/001c.167762`（[[sources/2026-09-27_paper_copper-interconnect-scaling-roadmap-lines-per-mm]]）主張銅的聚合互連頻寬可再漲**一個數量級**，且**「不需要立即轉向光子或特殊互連」**。
+➜ **本 wiki 首次在同一資料源、同一時點捕捉到 CPO 的核心爭點。並列不裁定。** 價值高於任何二手報導的「業界分歧」描述。
+➜ ⚠ 該篇為模型外推、無新實測、**OpenAlex 未登錄作者機構**（取得歸屬前不得視為某廠商的路線宣告）。
+
+## 損耗預算：首次可端到端分項至四個環節 ★★★（2026-09-27）
+
+| 環節 | 值 | 來源 |
+|------|-----|------|
+| 晶粒接合 | **0.06 dB** | 既有 |
+| 波導轉接 | **~1 dB** | 既有 |
+| 波導本體傳播 | **0.088 dB/cm（MM 850 nm）～0.2–0.5 dB/cm（SM 1310 nm）** | DuPont × TTM（2026-09-26） |
+| **光纖 → PIC 耦合鏈** | **多尖端 SiN SSC ~0.4 dB**（PDL <0.25 dB、波長相依 <0.2 dB）；**32 通道 V-groove 陣列 TE/TM 皆 <1 dB**（127 µm pitch、被動對準）；**Corning 玻璃橋 <1.5 dB/facet（TE）** | **GlobalFoundries（2026-09-27）** |
+
+➜ ⭐⭐⭐ **「波導該住在哪一層」的四個答案中，玻璃橋這一支首次有了 dB 數值** ➜ 部分回應 2026-09-26「四個答案無法量化排序」的空缺。
+➜ ⭐⭐ **Corning 玻璃橋的光學損耗首次由第三方廠商給出數值**（既有為 Corning 自身的 TGV 界面工程專利與 thelec 二手報導）。
+
+### 模場直徑與對準容差的三層分佈
+光纖 MFD **9.25 µm** vs SiN 波導 MFD **1 µm**（SSC 要橋接的落差）；PIC FEOL 特徵 **10–50 nm** ／ SSC 容差 **±1.0 µm** ／ 可插拔光纖插頭 **5–20 µm**。
+➜ ⭐⭐ **「把對準精度自機台轉移到微影」**（雷射以 flip-chip hybrid 整合，靠微影定義的 PIC 腔體特徵達成次微米 x/y 對準）為本 wiki 首見的策略表述，與 2026-09-26「製程手法與材料選擇是兩個獨立自由度」屬同型的「換一個自由度」思路。
+➜ ⚠⚠ **「光學元件對晶圓貼合 0.3–0.5 nm」極可能為 µm 之誤植**（0.3 nm 低於原子間距量級）。**取得原始投影片確認前不得引用。**
+
+## 高分子波導：首份帶年份的廠商路線圖 ★★★（2026-09-27，AGC）
+
+[[sources/2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference]]
+
+| 類型 | 2027 | 2028 | >2030 |
+|------|------|------|-------|
+| **Ribbon PWG**（Fiber→PIC） | 本質損耗 **0.20 dB/cm**；adiabatic/垂直耦合；**HTS 150 °C pass** | **<0.20 dB/cm** 且多層化（>2028） | — |
+| **Dry-film PWG**（PIC→PIC） | **0.20 dB/cm**、**5–10 cm**、**CTE 70 ppm/°C** | **0.15 dB/cm**、**>10 cm** | **<0.10 dB/cm**、**>20 cm**、**CTE <50 ppm/°C** |
+
+CPO 世代參照：現行可插拔 Tx **1.6 Tbps/件**；**TH6-Davisson（2025）6.4 Tbps 光 I/O × 16 件 = 102.4 Tbps** 交換機；51.2 Tbps 交換 ASIC 需求已宣告。
+
+➜ ⚠⚠ **DuPont/TTM 的實測 0.088 dB/cm（MM 850 nm）已優於 AGC 的 2030 目標 <0.10 dB/cm。** 若同為 MM 850 nm 則矛盾；若波長/模態不同則不可比。**並列不裁定 ➜ 新空缺：兩組 dB/cm 的波長與模態基準。**
+➜ ⭐⭐ **PWG 的 CTE 目標（2027 70 → 2030 <50 ppm/°C）為本 wiki 首見的波導材料 CTE 規格**，且比有機基板（15 ppm/°C）高 **3–5 倍** ➜ **新空缺：高分子波導與玻璃核心的 CTE 落差**（2026-09-26「DuPont/TTM 在封裝級基材上的漂移絕對值」空缺的機械側對應項）。

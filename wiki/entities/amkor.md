@@ -3,8 +3,8 @@ title: "Amkor Technology"
 category: entity
 tags: [OSAT, advanced-packaging, FOCoS, Arizona, chiplet, Intel-EMIB, patent-signal, TIM]
 created: 2026-04-25
-updated: 2026-09-26
-sources: [2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-05-19_stocktitan_amkor-arizona-peoria-land-expansion, 2026-06-17_digitimes_amkor-tsmc-10year-arizona-deal, 2026-06-17_trendforce_tsmc-amkor-10year-arizona-advanced-packaging, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-30_amkor-ir_arizona-7billion-groundbreaking, 2026-06-30_digitimes_amkor-2.5d-hdfo-growth-2026, 2026-07-23_amkor-ir_nvidia-amkor-1-5b-strategic-partnership, 2026-09-26_article_amkor-embedded-trace-rdl, 2026-09-26_article_semiwiki-cowos-capacity-double-2028]
+updated: 2026-09-27
+sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-05-19_stocktitan_amkor-arizona-peoria-land-expansion, 2026-06-17_digitimes_amkor-tsmc-10year-arizona-deal, 2026-06-17_trendforce_tsmc-amkor-10year-arizona-advanced-packaging, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-30_amkor-ir_arizona-7billion-groundbreaking, 2026-06-30_digitimes_amkor-2.5d-hdfo-growth-2026, 2026-07-23_amkor-ir_nvidia-amkor-1-5b-strategic-partnership, 2026-09-26_article_amkor-embedded-trace-rdl, 2026-09-26_article_semiwiki-cowos-capacity-double-2028]
 related:
   - wiki/technologies/rdl.md
   - wiki/technologies/cowos.md
@@ -239,3 +239,22 @@ Amkor 的 **Vineet Pancholi** 提供本 wiki 目前唯一的中介層測試覆�
   - 詳見 [[technologies/rdl]]（本輪新建）。
 - **2026-09-26（市場，⭐）**：SemiWiki（2026-09-18）重申 **Amkor Arizona 量產起始 2028**，並指 CoWoS 產能缺口持續 ⇒ OSAT 取得成為 **permanent second source** 的機會。
 - **2026-09-26（IMAPS DPC 2026，未採用但已入索引）**：Amkor 於同一會議另有三篇（`10.4071/001c.167731` fcMLF 封裝、`167765` 車用核心封裝材料與互連演進、`166928` 以先進 AP 塗層抑制高功率元件界面剝離、`167016` Chiplets & Advanced IC Packaging）。📌 **列為下輪候選。**
+
+
+---
+
+## 近期動態（2026-09-27）：Amkor 成為本 wiki 的 RDL 量化基準來源 ★★★
+
+本輪收錄 Amkor Technology Korea 兩篇技術論文摘要，使 Amkor 在 RDL 議題上有**三種獨立技術主張**（ETR 嵌入式走線、WLP 電流特性、HDFO 電遷移）：
+
+### WLP 級 Cu RDL 電流特性（JeongMin Ju，2024-08-15）
+線寬 **5–20 µm**、**銅厚 5–9 µm**、截面 18.5–178.9 µm²。大／小截面熔斷電流差 **+306%**；較厚矽基板對大線寬改善 **+42%**、對細線僅 **+6.7%**；長度增加使熔斷電流降 **~25%**；三次方程預測模型 R = **0.99**。
+➜ ⭐⭐⭐ **散熱路徑在細線區主導 ⇒ 新橫向論述候選：「RDL 微縮後，限制項自導體截面轉移至散熱路徑。」**
+
+### HDFO 細線 Cu RDL 電遷移（JiHye Kwon，2024-01-18）
+線寬 **2 / 10 µm**、長 1,000 µm、**銅厚 3 µm/層 × 三層**、每層下方 Ti/Cu 種子層。電流密度 **7.5–12.5 × 10⁵ A/cm²** @ **174–194 °C**（2 µm 線：12.5 × 10⁵ @ 157 °C）。**E_a = 0.74 eV、n = 1.88**；判準電阻 +20%，試驗最長 **10,000 hr**。
+**失效在 Cu RDL 與 passivation 的界面（剝離 + 銅氧化 ⇒ 導體面積縮減），不在銅本體。** 失效模式隨線寬質變：10 µm 線兩階段、2 µm 線單階段緩升。**晶粒尺寸為關鍵變數。**
+➜ ⭐⭐⭐ **2026-09-26 最高優先空缺「RDL 金屬厚度的跨路線共識值」由此兩篇結清**：完整分佈 **0.2–9 µm，落差 45×**（詳見 [[technologies/rdl]]）。
+➜ ⭐⭐⭐ **與 Purdue 模擬（n = 0.154）構成 Black 方程 n 的跨來源對照，差一個數量級** ➜ **新論述：「n 是失效機制的指紋。」**
+➜ ⭐⭐ **RDL/passivation 界面剝離為「附著性是一階設計限制」的第二個技術域。**
+➜ ⚠ 兩篇均為 **2024 年**發表；Amkor 的 RDL 製程自此已推進（ETR 為 2026 年）。**銅厚 5–9 µm 應理解為當時 WLP 主流值，非 Amkor 現行細線能力。** ⚠ n / E_a 為該特定結構之值，非銅的普適常數。

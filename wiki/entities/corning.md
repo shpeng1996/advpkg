@@ -3,7 +3,7 @@ title: "康寧 / Corning Incorporated"
 category: entity
 tags: [glass-substrate, TGV, materials, CPO, Corning]
 created: 2026-09-18
-updated: 2026-09-24
+updated: 2026-09-27
 sources:
   - 2026-08-06_epo_corning-small-diameter-tgv-adhesion
 related:
@@ -94,3 +94,13 @@ related:
 
 ### 附帶：Corning 的 TGV 工程哲學對照再獲一個維度
 本頁既有論述「Corning 賭界面可做牢，Intel 賭界面必失效」。本輪 Intel 的**三件 liner 圍籬案**（雙 liner / 光聚合物 / 部分 liner，見 [[entities/intel]] 2026-09-24）使 Intel 一側的投注更明確；而 Okuno（同輪）以 ZnO 黏結層達成**破壞面落在本體而非界面**，則是 **Corning 一側論點的第一個獨立實驗支持**（但來自另一家公司、另一種化學）。
+
+
+---
+
+## 近期動態（2026-09-27）：玻璃橋的光學損耗首次由第三方給出數值 ★★
+
+**GlobalFoundries** 在 IMAPS 22nd DPC 2026 的 SiPh CPO keynote 中引用 **Corning 玻璃橋：<1.5 dB/facet（TE）**（[[sources/2026-09-27_globalfoundries_siph-cpo-bandwidth-density-coupling-budget]]）。
+
+➜ **本 wiki 既有 Corning 記述為 TGV 界面工程（WO2026164778A1）與玻璃橋 CPO（2026-06-24 thelec 二手）；本條是第一個由第三方廠商給出 Corning 玻璃橋光學損耗數值的一手來源。**
+➜ 使「波導該住在哪一層」的四個答案中，**玻璃橋這一支首次有了 dB 數值**（詳見 [[technologies/copackaged-optics]]）。

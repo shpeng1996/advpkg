@@ -3,8 +3,8 @@ title: "FOPLP — 扇出面板級封裝 / Fan-Out Panel-Level Packaging"
 category: technology
 tags: [fan-out, panel-level, TSMC, Samsung, ASE, Powertech, Innolux, CoPoS, InFO, cost-reduction, delamination, DCB, CTE]
 created: 2026-05-03
-updated: 2026-09-26
-sources: [2026-07-31_trendforce_ase-capex-record-10-5b-leap-foplp, 2025-09-12_trendforce_foplp-competitive-2025, 2026-04-13_trendforce_copos-pilot, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-21_3dincites_acm-wlp-plp-process-trends, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-15_digitimes_manz-310mm-foplp-ecd-equipment, 2026-06-13_digitimes_linkotech-foplp-rollout-traction, 2026-06-20_prnewswire_manz-asia-310mm-ecd, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_digitimes_tsmc-foplp-timeline-skepticism, 2026-07-06_trendforce_cfmee-plp2000-china-first-plp, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-08-06_siliconbox_500m-units-panel-scale, 2026-02-18_siliconbox_ep4697377a1-fanout-panel-metal-sealing-ring, 2026-07-28_xianfeng_cn122476946a-alignment-mark-protection, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-26_paper_skywater-fowlp-pdk-roadmap]
+updated: 2026-09-27
+sources: [2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-07-31_trendforce_ase-capex-record-10-5b-leap-foplp, 2025-09-12_trendforce_foplp-competitive-2025, 2026-04-13_trendforce_copos-pilot, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-21_3dincites_acm-wlp-plp-process-trends, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-15_digitimes_manz-310mm-foplp-ecd-equipment, 2026-06-13_digitimes_linkotech-foplp-rollout-traction, 2026-06-20_prnewswire_manz-asia-310mm-ecd, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_digitimes_tsmc-foplp-timeline-skepticism, 2026-07-06_trendforce_cfmee-plp2000-china-first-plp, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-08-06_siliconbox_500m-units-panel-scale, 2026-02-18_siliconbox_ep4697377a1-fanout-panel-metal-sealing-ring, 2026-07-28_xianfeng_cn122476946a-alignment-mark-protection, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-26_paper_skywater-fowlp-pdk-roadmap]
 related:
   - wiki/technologies/rdl.md
   - wiki/technologies/copos.md
@@ -839,3 +839,29 @@ Yole：**先進封裝 2024 >$40B → 2030 >$80B（CAGR 9.5%）**；其中 **2.5D
 
 ### RDL 移出本頁
 本頁原本承擔大量 RDL 論述。2026-09-26 起 RDL 取得獨立頁 ➜ 見 [[technologies/rdl]]（含三條圖案化路線、規格矩陣、線寬 vs 層數互換關係、兩道獨立天花板）。
+
+
+---
+
+## ⭐⭐⭐ Lam 的「~100×100 mm」是區間的下界，不是一條界線（2026-09-27 空缺趨於結清）
+
+2026-09-22 列為空缺：「Lam 的『~100×100 mm 後晶圓失去效率』與 CoWoS 14× 光罩（~1,180 mm²）路線為何看似矛盾」。
+
+**The Elec（2026-07-02）指出 Lam Research 提供 600 mm 面板相容設備。**
+➜ **Lam 同時說「>~100 mm 才值得用面板」與「我的機台做到 600 mm」，兩者其實一致——前者是下界、後者是設備上界。Lam 給的是一個區間。**
+➜ **與 Evatec 構成設備側的第二個「下界—上界」對照**：CLN310 支援 310 mm、CLN600 支援最大 650 × 650 mm（2026-09-26）。
+➜ ⚠ **Lam「~100×100 mm」的原始量測邊界仍未取得**，該追蹤項維持開啟。
+
+## 市場分母：三組數字，分歧在「2024 年的計入範圍」★★★（2026-09-27）
+
+| 來源 | 2024 | 2030 | 範圍 |
+|------|------|------|------|
+| **Yole**（2026-09-26） | **$160 M** | — | 面板級封裝（不含玻璃基板？） |
+| communicationstoday（2026-06-23） | — | **$8 B** | FOPLP + 玻璃基板 |
+| **The Elec**（2026-09-27） | **$650 M** | **>$8.1 B** | **FO-PLP + 玻璃基板** |
+
+➜ ⭐⭐⭐ **Yole 的 $160 M 與 The Elec 的 $650 M 差 4×，而兩個 2030 數字幾乎一致（$8 B vs $8.1 B）⇒ 分歧在計入範圍而非成長率。**
+➜ **新作業規範：引用面板級市場規模必須標明是否含玻璃基板，兩種算法在起始年差 4 倍。**
+➜ **並使 2026-09-26 的「面板級封裝約占 2024 年先進封裝市場 0.4%」須加註「採用 Yole 定義」。**
+
+其他：**AI/HPC 佔 2030 年該市場 45.6%**；**台／日／中合計掌握 2030 年 84.8% 的製造**（見 [[concepts/geopolitics-advanced-packaging]]）。

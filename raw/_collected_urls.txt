@@ -640,3 +640,18 @@
 2026-09-26 | https://doi.org/10.1016/j.jsamd.2026.101155 | raw/papers/2026-09-26_openalex_dalian-cucu-bonding-review-jsamd101155.md | Cu-Cu綜述：150C>30MPa vs 200C 17MPa
 2026-09-26 | https://research.ibm.com/publications/implementing-amine-based-cleaning-chemical-for-post-cmp-cleaning-of-cu-for-beol-interconnect-and-hybrid-bonding-applications | raw/papers/2026-09-26_ibm_asmc2026-amine-post-cmp-clean.md | IBM 胺基post-CMP清洗取代TMAH；環安驅動
 2026-09-26 | DEDUP-CORRECTION | raw/papers/2026-09-26_openalex_dalian-cucu-bonding-review-jsamd101155.md | 去重失誤：同DOI已於2026-09-22收錄，本檔改列為補充擷取
+2026-09-27 | https://semiengineering.com/current-characterization-of-various-cu-rdl-designs-in-wafer-level-packages-wlp/ | raw/articles/2026-09-27_semieng_amkor-cu-rdl-fusing-current-thickness-5-9um.md | Amkor WLP Cu RDL 銅厚5-9um；熔斷電流+306%
+2026-09-27 | https://semiengineering.com/electromigration-performance-of-fine-line-cu-redistribution-layer-rdl-for-hdfo-packaging/ | raw/articles/2026-09-27_semieng_amkor-em-fine-line-cu-rdl-hdfo.md | Amkor HDFO Cu厚3um/層；Ea 0.74eV、n=1.88
+2026-09-27 | https://www.tradingkey.com/analysis/stocks/us-stocks/261969147-tsm-ibiden-abf-copos-tradingkey | raw/articles/2026-09-27_tradingkey_tsmc-ibiden-innolux-copos-glass-validation-data.md | CoPoS驗證：0.8mm玻璃核心85x110mm；翹曲-16%
+2026-09-27 | https://www.thelec.net/news/articleView.html?idxno=11912 | raw/articles/2026-09-27_thelec_intel-tsmc-plp-market-tenfold-8-1b-2030.md | PLP市場650M(2024)->8.1B(2030)；Lam 600mm
+2026-09-27 | https://semiengineering.com/chip-industry-week-in-review-156/ | raw/articles/2026-09-27_semieng_chip-week-156-micron-tsv-tata-besi-izmo.md | Chip Week 156：印度雙條目Tata x Besi、Izmo
+2026-09-27 | EPO:100238113:US20260182414A1 | raw/patents/2026-09-27_US20260182414A1_intel-asymmetric-buildup-cte-gradient-glass-core.md | Intel 不對稱堆疊+CTE梯度玻璃核心
+2026-09-27 | EPO:100036088:CN122270166A | raw/patents/2026-09-27_CN122270166A_intel-stacked-glass-silicon-bridge-interposer-ar20.md | Intel 玻璃矽橋疊成組件埋核心層；AR>20:1
+2026-09-27 | EPO:95860446:US20260223702A1 | raw/patents/2026-09-27_US20260223702A1_intel-direct-bonding-embedded-bridge-glass-via-cavity.md | Intel 有機層開腔+TGV投影內；direct bonding
+2026-09-27 | EPO:99804083:US20260144093A1 | raw/patents/2026-09-27_US20260144093A1_samsung-glass-core-interposer-bridge-on-tgv.md | Samsung 橋置於TGV之上以模封固定（不埋）
+2026-09-27 | EPO:98749508:CN121548325A | raw/patents/2026-09-27_CN121548325A_wuhan-univ-tgv-micro-nano-anchor-molecular-bridging.md | 武漢大學 TGV微納錨釘+分子橋連；L/S<=1um
+2026-09-27 | https://doi.org/10.4071/001c.167737 | raw/papers/2026-09-27_openalex_purdue-ru-cu-em-lifetime-physics-model.md | Purdue 釕EM模擬 68nm；n=0.154、Ea=1.045eV
+2026-09-27 | https://doi.org/10.4071/001c.167762 | raw/papers/2026-09-27_openalex_copper-interconnect-scaling-roadmap-ai-hpc.md | 銅互連路線圖：lines/mm第三軸；銅夠用論
+2026-09-27 | https://doi.org/10.1016/j.mtla.2026.102903 | raw/papers/2026-09-27_openalex_binghamton-ibm-pad-scaling-interface-resistance-variability.md | Binghamton x IBM 墊4->0.8um；變異隨微縮加寬
+2026-09-27 | https://doi.org/10.4071/001c.166903 | raw/papers/2026-09-27_openalex_globalfoundries-siph-cpo-paradigm-shift.md | GF CPO：銅<1 vs 光>5 Tb/s/mm；2-5 pJ/bit
+2026-09-27 | https://doi.org/10.4071/001c.166907 | raw/papers/2026-09-27_openalex_agc-glass-core-fully-filled-vs-conformal-tgv-pwg-roadmap.md | AGC 填滿vs conformal TGV電性無差；PWG路線圖

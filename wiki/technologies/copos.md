@@ -3,8 +3,8 @@ title: "CoPoS — Chip-on-Panel-on-Substrate"
 category: technology
 tags: [panel-level-packaging, FOPLP, TSMC, CoPoS, AI, HPC, AP7, InFO]
 created: 2026-04-25
-updated: 2026-09-26
-sources: [2026-04-13_trendforce_copos-pilot, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2025-09-12_trendforce_foplp-competitive-landscape-2025, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-20_wccftech_tsmc-copos-glass-core-cost-cut, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-04-28_cw_tsmc-copos-move-really-means, 2026-06-14_digitaltrends_tsmc-copos-glass-temporary-carrier, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-28_xianfeng_cn122476946a-alignment-mark-protection, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition]
+updated: 2026-09-27
+sources: [2026-09-27_tradingkey_copos-glass-validation-08mm-85x110mm, 2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-04-13_trendforce_copos-pilot, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2025-09-12_trendforce_foplp-competitive-landscape-2025, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-20_wccftech_tsmc-copos-glass-core-cost-cut, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-04-28_cw_tsmc-copos-move-really-means, 2026-06-14_digitaltrends_tsmc-copos-glass-temporary-carrier, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-28_xianfeng_cn122476946a-alignment-mark-protection, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition]
 related:
   - wiki/technologies/rdl.md
   - wiki/technologies/cowos.md
@@ -503,3 +503,44 @@ CoPoS 採 **310×310 mm** 面板。本輪取得 **Amy Lujan（SavanSys）IMAPS 2
 ### 面板尺寸：四個獨立來源同向指向「小面板優先」
 本輪 Evatec（設備商，310 mm）與 SkyWater（實際建線者，300 mm 面板）加入，與 Lau/Lujan 成本模型（310×310）及曝光場物理上限（≤250×250 mm）構成四個理由互不重疊的來源。
 ➜ **CoPoS 的 310×310 mm 面板選擇自此有四個外部佐證，而非僅 TSMC 之單方選擇。** 詳見 [[technologies/foplp]]、[[technologies/rdl]]。
+
+
+---
+
+## 驗證數據與試片幾何首次公開 ★★（2026-09-27）
+
+[[sources/2026-09-27_tradingkey_copos-glass-validation-08mm-85x110mm]]（TSMC × Ibiden × Innolux 三方，**模擬結果**）
+
+| 指標 | 改善 |
+|------|------|
+| 封裝翹曲 | **−16%** |
+| 熱膨脹係數 | **−19%** |
+| 彈性模數 | **+31%** |
+| PI 電阻 | **−27%** |
+| 電感 | **−42%** |
+
+| 試片 | 值 |
+|------|-----|
+| 玻璃核心厚度 | **0.8 mm** |
+| 封裝規格 | **5× reticle CoW** |
+| 整體尺寸 | **85 × 110 mm（9,350 mm²）** |
+| 結果 | 「no severe warpage or delamination occurred」 |
+| **良率** | **未揭露** |
+
+- **9,350 mm²** 約為 Yole 之 5.5× 階（~4,565 mm²）的**兩倍面積**，仍小於 NVIDIA Rubin Ultra（>150 × 100 mm²）。
+- **0.8 mm 落在 LPKF 的「核心基板級（>800 µm）」而非「中介層級（<400 µm）」** ➜ 與 AGC 的 1:20 AR @ 1.0 mm 一致，**三個來源對「核心基板級玻璃厚度約 0.8–1.0 mm」收斂。**
+- ⚠⚠ **全為模擬，非實測**；且其百分比幅度遠小於 AGC 的材料對材料值（CTE −77%、模數 +357%）➜ **見 [[technologies/glass-substrate]] 新作業規範：材料對材料 vs 基板對基板差 3–10 倍。**
+
+## 量產時程：三來源一致，本輪未變動 ★（2026-09-27）
+
+| 來源 | 時程 |
+|------|------|
+| TrendForce（2026-04-13） | 2028–29 ramp |
+| **tradingkey（2026-06-16，魏哲家）** | 已建試產線；**2–3 年內大規模量產（⇒ 2028–29）** |
+| **The Elec（2026-07-02）** | 2026 建試產線 → **2027 試產 → 2028 下半量產** |
+
+## ⚠ 新空缺：CoPoS 試產線的實際執行場址（2026-09-27）
+
+- **The Elec**：於**采鈺 VisEra** 建試產線。⚠ VisEra 為 TSMC 與豪威合資之**影像感測器廠**。
+- 既有記述另有 **TSMC × AUO 於龍潭**（[[sources/2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan]]）。
+➜ **兩說並列不裁定。** 面板尺寸 **310 × 310 mm** 則已取得**第五個獨立來源**（Lau/Lujan 成本模型、Evatec、SkyWater 300 mm、Schmid、本輪 The Elec）。

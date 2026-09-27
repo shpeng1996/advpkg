@@ -3,8 +3,8 @@ title: "玻璃基板 / Glass Core Substrate"
 category: technology
 tags: [glass-substrate, TGV, panel-level, FC-BGA, CoPoS, Absolics, DNP, Rapidus, warpage, SeWaRe, glass-interposer, BOE, ULCVD, non-embedding, Lens-Technology, TPK-KY, Innolux, AUO, LG-Chem, singulation, patent-signal]
 created: 2026-05-08
-updated: 2026-09-26
-sources: [2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-05-05_trendforce-insights_glass-substrate-development, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-05-29_3dincites_rapidus-2nm-advanced-packaging-ai-foundry, 2026-06-01_trendforce_intel-3dgs-india-glass-substrate, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-06-20_biggo_boe-glass-substrate-pilot, 2026-06-28_economy-ac_glass-substrate-global-race, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-08-18_trendforce_shinko-glass-substrate-22layer-glassem-delay, 2026-09-11_mssp_tgv-glass-biaxial-bending-ring-on-ring, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-03-13_kaneka_jp2026047137a-glass-core-polyimide-quantified, 2026-08-10_screp_low-k-organic-buffer-tgv-cu-metallization, 2026-08-04_jmrt_vacuum-assisted-void-free-cu-fill-tgv, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_patent_er-eng-glass-interposer-dual-carrier, 2026-09-26_paper_yole-advanced-packaging-market-ai-era]
+updated: 2026-09-27
+sources: [2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-27_tradingkey_copos-glass-validation-08mm-85x110mm, 2026-09-27_intel_us20260182414a1-asymmetric-buildup-cte-gradient-glass, 2026-09-27_samsung_us20260144093a1-bridge-on-tgv-mold-fixed, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-05-05_trendforce-insights_glass-substrate-development, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-05-29_3dincites_rapidus-2nm-advanced-packaging-ai-foundry, 2026-06-01_trendforce_intel-3dgs-india-glass-substrate, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-06-20_biggo_boe-glass-substrate-pilot, 2026-06-28_economy-ac_glass-substrate-global-race, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-08-18_trendforce_shinko-glass-substrate-22layer-glassem-delay, 2026-09-11_mssp_tgv-glass-biaxial-bending-ring-on-ring, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-03-13_kaneka_jp2026047137a-glass-core-polyimide-quantified, 2026-08-10_screp_low-k-organic-buffer-tgv-cu-metallization, 2026-08-04_jmrt_vacuum-assisted-void-free-cu-fill-tgv, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_patent_er-eng-glass-interposer-dual-carrier, 2026-09-26_paper_yole-advanced-packaging-market-ai-era]
 related:
   - wiki/technologies/rdl.md
   - wiki/technologies/copos.md
@@ -1365,3 +1365,79 @@ Yole（`10.4071/001c.167738`）設問「**A lasting trend or a failing attempt?*
 ### 8. ⚠ 未結清項延續
 📌 **玻璃體內直寫波導未給傳播損耗（dB/cm）或耦合損耗** ⇒ 無法與 DuPont/TTM（0.088–0.5 dB/cm）或 imec（~1 dB 耦合）比較。見 [[technologies/copackaged-optics]]。
 📌 lint 待辦**沿用**：本頁「玻璃核心基板」與「玻璃核心中介層」需拆分 —— **本輪 LPKF 以 CTE 3 vs 7 / 厚度 <400 µm vs >800 µm 提供第四個獨立依據，且首次是量化的。優先序再上調。**
+
+
+---
+
+## 填滿 vs Conformal TGV：電性上沒差 ★★★（2026-09-27 新建，AGC 一手）
+
+**AGC Inc.**（[[sources/2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference]]）以同一測試載具（Glass 606、0.64 mm、TGV φ80 µm、面板 95 × 95 mm、表面銅 16 µm）對照兩種金屬化：
+
+| 組態 | Fully-filled | Conformal |
+|------|-------------|-----------|
+| Sdd21 @ 30 GHz，兩對 TGV | **−2.11 dB**（單對 −0.09） | **−2.08 dB**（單對 −0.06） |
+| Sdd21 @ 30 GHz，四對 TGV | **−2.18 dB**（單對 −0.06） | **−2.15 dB**（單對 −0.05） |
+| PI：1,250 A 下電壓波動 | **795–802 mV** | **796–802 mV** |
+
+原文結論：「**No significant difference observed between fully-filled and conformal TGV**」。
+
+➜ ⭐⭐⭐ **新橫向論述：「TGV 要不要填滿，是機械與製程問題，不是電性問題。」** 本 wiki 既有五條 TGV 金屬化路線（Corning／Intel／奧野／E&R／武漢大學）**全部圍繞如何填得更好**；本對照顯示在 30 GHz 級，填滿的電性回報趨近於零。
+➜ ⭐⭐⭐ **新作業規範：凡以「電性需求」正當化 full-fill 者，須加註本對照值。**
+➜ ⭐⭐ **與 CoPoS 驗證數據（−27% 電阻／−42% 電感）合讀，可首次寫成：玻璃核心帶來 PI 增益，而該增益不依賴 TGV 是否填滿。**
+➜ ⚠ 僅測至 **30 GHz**，僅 2/4 對 TGV 之組態；更高頻或更大陣列未涵蓋。
+
+## 玻璃不是單一材料：第三層級（單片內部梯度）★★★（2026-09-27 擴充）
+
+| 層級 | 來源 | 證據 |
+|------|------|------|
+| ① 用途分級 | LPKF（2026-09-26） | 中介層 CTE≈3 / <400 µm；核心基板 CTE≈7 / >800 µm；2L-GCS 3–7 / 1–2 mm+ |
+| ② **同一供應商產品線分歧** | **AGC（2026-09-27，一手）** | **ER-Y1：CTE 3.5 / 88 GPa**；**EN-A1：CTE 5.8 / 75 GPa**（CTE 差 1.66×、模數差 1.17×） |
+| ③ **單片內部梯度** | **Intel US20260182414A1（2026-09-27，專利）** | **CTE 梯度玻璃核心**：上表面匹配晶粒、下表面匹配 build-up layers |
+
+**AGC 一手物性對照表（本 wiki 首次取得玻璃廠的 CTE × 模數並列值）**
+
+| 材料 | CTE (ppm/°C) | Young's Modulus (GPa) |
+|------|-------------|----------------------|
+| 矽 | 2.8 | 131 |
+| ER-Y1（無鹼玻璃） | **3.5** | **88** |
+| EN-A1（無鹼玻璃） | **5.8** | **75** |
+| 有機基板 | 15 | 19.25（Poisson 0.17） |
+| 銅 | 17 | — |
+| Buffer | 20（25–150 °C）／49（150–240 °C） | — |
+
+➜ ⭐⭐⭐ **lint 待辦「`glass-substrate.md` 中『玻璃核心基板』與『玻璃核心中介層』需拆分」取得第五個依據，且首次來自同一供應商的產品線分歧 ⇒ 優先序再上調。**
+➜ ⭐⭐ **Intel 的 CTE 梯度案同時把「匹配對象」明確寫成晶粒而非載板**（判準：提高 attach yield）——這是一個路線宣告，因為兩端不可兼顧。⚠ 該專利**全篇無量化值**。
+
+### ⚠⚠ 新作業規範：材料對材料 vs 基板對基板（2026-09-27）
+- **AGC 材料對材料**：CTE 15 → 3.5（**−77%**）、模數 19.25 → 88（**+357%**）
+- **CoPoS 三方模擬，基板對基板**：CTE **−19%**、模數 **+31%**（[[sources/2026-09-27_tradingkey_copos-glass-validation-08mm-85x110mm]]）
+
+➜ **兩者差 3–10 倍。合理解釋是後者比較的是「玻璃／ABF／玻璃三層複合基板整體」而非玻璃材料本身。**
+➜ **凡引用玻璃的物性改善幅度，必須標明是材料對材料還是基板對基板。**
+
+## 核心基板級玻璃的厚度：三來源收斂於 0.8–1.0 mm ★★（2026-09-27）
+
+| 來源 | 厚度 | 附帶值 |
+|------|------|--------|
+| LPKF（2026-09-26） | 核心基板 **>800 µm**（CTE≈7） | 中介層 <400 µm（CTE≈3） |
+| **AGC（2026-09-27）** | 最大 AR **1:20 @ 1.0 mm**；測試範圍 200–1,000 µm | 孔徑 50–100 µm、pitch 150 µm、conformal 銅厚 16 µm |
+| **CoPoS 試片（2026-09-27）** | **0.8 mm** 玻璃核心 | 5× reticle CoW、**85 × 110 mm**（9,350 mm²） |
+
+⚠ AGC 的「100 vias/mm²」與「孔徑 50–100 µm / pitch 150 µm」幾何上不自洽（150 µm 六方最密約 51 vias/mm²）➜ **可能為不同組態數值混列，列待確認。**
+
+## 專利訊號：橋的載體幾何已有六種答案，且「埋／不埋」是更上位的分歧 ★★★（2026-09-27）
+
+| # | 申請人 | 公開號 / family | 幾何 |
+|---|--------|----------------|------|
+| 1 | Intel | EP4712758A1 / 94126336 | 玻璃層**開腔**、橋置腔內、上疊第二玻璃層 |
+| 2 | Intel | CN121400149A / 94975750 | 橋下**墊玻璃貼片**；glass via 與基板 via 自對準 |
+| 3 | **Intel** | **CN122270166A / 100036088** | 橋**先與玻璃中介層疊成組件**，再整體埋入**核心層**；TGV **AR >20:1** |
+| 4 | **Intel** | **US20260223702A1 / 95860446** | 腔體開在**有機介電層**、玻璃層只導通；**TGV 落在腔體投影內**；標題明載 **direct bonding** |
+| 5 | 珠海天成 | CN121311056A / 98279638 | **矽轉接板** + 兩種深度 TSV 埋矽橋（判準：降低 CTE 失配） |
+| 6 | **Samsung** | **US20260144093A1 / 99804083** | **橋置於 TGV「之上」、以模封層固定 — 唯一「不埋」的答案** |
+| （+） | **武漢大學** | **CN121548325A / 98749508** | **玻璃橋埋在玻璃基板中 — 唯一的同質解**；局部 L/S **≤1 µm** |
+
+➜ ⭐⭐⭐ **2026-09-26 的「Intel 以兩條互斥幾何各自布局 ⇒ 內部路線選擇尚未收斂」本輪強化為四條，且三件的發明人團隊各不相同**（Malaysia 團隊／Kamgaing 單獨／Marin 等八人）➜ **更可能是「多個內部團隊平行下注」而非單一團隊搖擺。**
+➜ ⭐⭐⭐ **新橫向論述：「埋／不埋」是比「埋進什麼」更上位的分歧軸。**
+➜ ⭐ **模封式橋接自 ASE 單一來源（CN224583751U）擴為兩家**；Yole 的「2.5D Bridge in Mold」分類申請人自 1 家增至 2 家。
+➜ ⚠ **本輪五件專利全部無量化值**；「專利軌訊號以定性為主」連續第七輪成立。

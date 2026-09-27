@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-09-26
-**頁面總數 Total Pages**：667
-**原始來源數 Sources**：610（含 8 個合併轉向頁；其中 1 頁為 2026-09-26 之去重失誤更正／補充擷取頁，**本輪實際新來源 16 篇**）
+**更新時間 Updated**：2026-09-27
+**頁面總數 Total Pages**：684
+**原始來源數 Sources**：625（含 8 個合併轉向頁、1 個去重失誤更正頁；**本輪新增 15 篇：articles 5 / patents 5 / papers 5**）⭐ 以檔案計數交叉驗證：`find wiki -name '*.md'` = **684**，sources 目錄 = **625**，與加總一致
 
 ---
 
@@ -14,6 +14,8 @@
 
 ## 實體 Entities（公司、組織）
 
+- [[entities/agc]] — AGC Inc.（旭硝子）；特種玻璃供應商，日系對應 Corning 之角色；⭐⭐⭐ **填滿 vs conformal TGV 在 30 GHz 電性無顯著差異（Sdd21 −2.11 vs −2.08 dB；1,250 A 下 795–802 vs 796–802 mV）**；**無鹼玻璃 ER-Y1 CTE 3.5/88 GPa vs EN-A1 5.8/75 GPa**；TGV **AR 1:20 @ 1.0 mm**、孔徑 50–100 µm；**PWG 年度路線圖（Dry-film 2027 0.20 → >2030 <0.10 dB/cm、CTE 70 → <50 ppm/°C）**；封裝尺寸 3.5×(2024)→>8.0×(2030)⭐本輪新建
+- [[entities/globalfoundries]] — GlobalFoundries（格羅方德）；矽光子與 CPO 封裝的代工側一手來源；廠址 **Malta, New York**；⭐⭐⭐ **銅 <1 Tb/s/mm & >5 pJ/bit vs 光 >5 Tb/s/mm & 2–5 pJ/bit**；**SSC ~0.4 dB / 32 通道 V-groove <1 dB / Corning 玻璃橋 <1.5 dB/facet**；Ge PD **120 GHz**；**把對準精度自機台轉移到微影**；⚠⚠ 「0.3–0.5 nm」疑為 µm 誤植⭐本輪新建
 - [[entities/dnp]] — 大日本印刷 Dai Nippon Printing（千葉）；同時做 **RDL interposer / glass interposer / glass core substrate** 三類；**DNP-SAP 以無機介電+阻障金屬隔開 Cu 與 PID**；⭐⭐⭐ **首度一手量化：Ea 0.9 → >1.23 eV、MTTF 0.7–10 hr → >1000 hr、t₀.₁% 外推 10,000×；B-HAST 120→200 hr；40 GHz/1000 TCT 劣化與線寬無關**；面板 300×400 mm、TGV φ100 µm（2026-09-25）⭐本輪新建
 - [[entities/hanwha-semitech]] — 한화세미텍 Hanwha Semitech（韓華集團）；D2W 混合接合機**第二家韓系供應商**；**SHB2 Nano 對準 0.1 µm、2026 H1 客戶測試（領先 Hanmi 約一年）**；第一代 2022-01 交付；TCB 機種 SFM5 Expert 2025 年銷售 **>₩900 億**；與 **Prodrive（ASML 夥伴）結盟**；Samsung 平澤 P5 備選供應商；⭐ **「TCB 強、HB 弱」自 Hanmi 個案擴展為韓系共同模式**⭐本輪新建
 - [[entities/hanmi]] — 한미반도체 Hanmi Semiconductor（仁川）；HBM **TC bonder 主要供應商**；混合接合機第一代 2020、**第二代原型 2026 年底、廠房 2027 上半（₩100B/Class 100）、量產採用 ~2029**；⭐ **TC bonder 的領先並未轉移到混合接合（相鄰技術落後約三年）**⭐本輪新建
@@ -87,6 +89,22 @@
 ---
 
 ## 來源摘要 Sources（依日期倒序）
+
+- [[sources/2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current]] — ⭐⭐⭐ Amkor WLP：**銅厚 5–9 µm**（⇒ **最高優先空缺「RDL 銅厚共識值」結清：分佈 0.2–9 µm，落差 45×**）；大/小截面熔斷電流 **+306%**；**厚基板對粗線 +42% vs 細線僅 +6.7% ⇒ 熱是第四個限制且尺寸相依**；⚠ 2024 年發表
+- [[sources/2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188]] — ⭐⭐⭐ Amkor HDFO：**Cu 3 µm/層 × 三層、E_a 0.74 eV、n 1.88**；**失效在 Cu/passivation 界面剝離+氧化，不在銅本體**；**失效模式隨線寬質變（10 µm 兩階段 / 2 µm 單階段）**；⇒ **新論述「Black 的 n 是失效機制的指紋」**（vs Purdue n=0.154）
+- [[sources/2026-09-27_paper_purdue-ru-cu-em-lifetime-blacks-n-0154]] — ⭐⭐⭐ Purdue：**釕 68×68 nm EM 物理模型，Black n = 0.154 / E_a = 1.045 eV**；J 1–50 MA/cm²、T 150–325 °C；⇒ **E_a 首次跨金屬化路線並列 0.74–1.23 eV**；⚠⚠ **標題稱「Ru and Cu」但無銅對照數據**；⚠ 全為模擬、BEOL 尺度
+- [[sources/2026-09-27_paper_copper-interconnect-scaling-roadmap-lines-per-mm]] — ⭐⭐⭐ 銅互連微縮路線圖：**lines/mm 為第三個獨立軸**；三類限制 **電阻/電容/附著**；**主張銅可再漲一個數量級、「不需立即轉向光子」** ⇒ **與同場 GlobalFoundries 結論相反，並列不裁定**；⚠ 模型外推、⚠ OpenAlex 未登錄機構
+- [[sources/2026-09-27_paper_binghamton-ibm-pad-scaling-resistance-variability]] — ⭐⭐⭐ Binghamton × IBM：**墊 4→0.8 µm / pitch 10→2 µm（~250,000 interconnects/mm²）**，接合後趨向 **{220}**；**仍達理論電阻值但變異範圍更寬** ⇒ **新論述「限制項是變異度而非中位數」**；限制鏈於 2 µm pitch 新增晶粒取向環；⚠⚠ 非 OA，變異絕對值未取得
+- [[sources/2026-09-27_globalfoundries_siph-cpo-bandwidth-density-coupling-budget]] — ⭐⭐⭐ GlobalFoundries：**銅 <1 Tb/s/mm & >5 pJ/bit vs 光 >5 Tb/s/mm & 2–5 pJ/bit** ⇒ **Nature Electronics CPO 空缺部分結清**；**損耗預算首次端到端四環節**（SSC ~0.4 / V-groove <1 / **Corning 玻璃橋 <1.5 dB/facet**）；⚠⚠ 「0.3–0.5 nm」疑為 µm 誤植
+- [[sources/2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference]] — ⭐⭐⭐ AGC（首見實體）：**填滿 vs conformal TGV 在 30 GHz 電性無顯著差異（−2.11 vs −2.08 dB）** ⇒ **新論述「填不填滿是機械問題不是電性問題」**；**ER-Y1 3.5/88 GPa vs EN-A1 5.8/75 GPa**（玻璃非單一材料第二層級）；**PWG 年度路線圖**；AR 1:20 @ 1.0 mm
+- [[sources/2026-09-27_tradingkey_copos-glass-validation-08mm-85x110mm]] — ⭐⭐ CoPoS 驗證數據首公開：**0.8 mm 玻璃核心、5× reticle CoW、85 × 110 mm**；翹曲 **−16%**／CTE **−19%**／模數 **+31%**／電阻 **−27%**／電感 **−42%**；⚠⚠ **全為模擬、無良率**；⇒ **新規範「材料對材料 vs 基板對基板差 3–10 倍」**
+- [[sources/2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm]] — ⭐⭐⭐ The Elec：**PLP+玻璃 $650M(2024) → $8.1B(2030)** ⇒ **與 Yole $160M 差 4× ⇒ 分歧在計入範圍非成長率**；**Lam 有 600 mm 面板設備 ⇒ 「~100 mm 界線」其實是區間下界，空缺趨於結清**；**台/日/中 84.8%**；310 mm 第五來源
+- [[sources/2026-09-27_intel_cn122270166a-stacked-glass-silicon-bridge-assembly-ar20]] — ⭐⭐⭐ Intel：**橋先與玻璃中介層疊成組件再整體埋入核心層**；TGV **AR >20:1**（例示）⇒ **橋載體幾何的 Intel 第三種幾何；四條互斥路線、三組不同發明人團隊 ⇒ 多團隊平行下注**；測試左移第四例
+- [[sources/2026-09-27_intel_us20260223702a1-direct-bonding-embedded-bridge-organic-cavity]] — ⭐⭐⭐ Intel：**腔體開在有機層、玻璃層只導通、TGV 落在腔體投影內**（與 EP4712758A1 恰為互補反面）；**標題明載 direct bonding ⇒ EMIB 與混合接合首次在同一件排他權文件相接**；⇒ **新空缺：direct-bonded bridge 的目標 pitch**
+- [[sources/2026-09-27_samsung_us20260144093a1-bridge-on-tgv-mold-fixed]] — ⭐⭐⭐ Samsung：**橋置於 TGV「之上」、以模封層固定 —— 六種橋載體中唯一「不埋」的答案** ⇒ **新論述「埋／不埋是比埋進什麼更上位的分歧軸」**；模封式橋接自 ASE 一家擴為兩家；I-Cube/LSB 建頁材料
+- [[sources/2026-09-27_intel_us20260182414a1-asymmetric-buildup-cte-gradient-glass]] — ⭐⭐ Intel（Malaysia 團隊）：**不對稱 build-up + CTE 梯度玻璃核心**；**CTE 匹配對象明寫為晶粒而非載板**（判準：attach yield）⇒ **「玻璃非單一材料」第三層級（單片內部梯度）**；⚠ 全篇無量化值
+- [[sources/2026-09-27_wuhanuniv_cn121548325a-tgv-micro-nano-anchor-molecular-bridging]] — ⭐⭐⭐ 武漢大學：**孔壁微納錨釘 + 分子橋連層 ⇒ TGV 金屬化第五條路線，自由度是「孔壁形貌」**；AR ≥10:1 無空洞、局部 L/S **≤1 µm**、**玻璃橋 in 玻璃（唯一同質解）**；⇒ **新論述「粗糙度的最佳值方向隨界面角色反轉」**；⚠⚠ 學術單一案無量產佐證
+- [[sources/2026-09-27_semieng_chip-week-156-india-tata-besi-izmo]] — ⭐⭐ Chip Week 156：**印度同期兩條獨立條目（Tata × Besi Assam、Izmo 矽光子）⇒ 印度為第七個地緣節點**；**Micron 512 GB DDR5 以 TSV 堆疊（TSV 外溢至非 HBM 記憶體）**；⚠ 本期無 HBM／混合接合／玻璃條目
 
 - [[sources/2026-09-26_paper_yole-advanced-packaging-market-ai-era]] — ⭐⭐⭐ Yole：先進封裝 **2024 >$40B → 2030 >$80B（CAGR 9.5%）**，其中 2.5D/3D **$10.2B**；**CoWoS 光罩階梯 1×(2012)→9.5×(>2030)**；**PLP 兩個獨立驅動力**（解消 Lam 100×100 mm 之「矛盾」）；⚠⚠ **與本 wiki 14×/2029 記載衝突**
 - [[sources/2026-09-26_paper_evatec-panel-scale-thinfilm-deposition]] — ⭐⭐⭐ Evatec：**CLN310（310 mm）／CLN600（至 650×650 mm）**，應用明列 **Low Temp. Dielectrics + RDL** ⇒ **最高優先空缺「>300 mm 可行性」部分結清：設備不是障礙**；⭐⭐⭐ **「規格不隨面板放大而放寬」**；310 mm 三理由（CTE／線密度／12″ 設備再用）

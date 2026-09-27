@@ -3,8 +3,8 @@ title: "美光科技 / Micron Technology"
 category: entity
 tags: [memory, HBM4, DRAM, NAND, CapEx, Virginia, Idaho, New-York, onshoring]
 created: 2026-05-03
-updated: 2026-09-24
-sources: [2025-12-18_trendforce_micron-capex-hbm4, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-03-17_trendforce_gtc2026-key-takeaways, 2025-08-05_3dincites_iftle636-samsung-lsb-micron-virginia, 2026-01-23_trendforce_hbm4e-development, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-26_semieng_chip-week-144, 2026-06-25_thelec_micron-q3-fy2026-record, 2026-07-06_trendforce_micron-hiroshima-fab-hbm-1gamma, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-10_tomshardware_micron-250b-us-investment-globalwafers, 2026-07-10_semieng_chip-week-146, 2026-08-21_semieng_chip-week-152]
+updated: 2026-09-27
+sources: [2026-09-27_semieng_chip-week-156-india-tata-besi-izmo, 2025-12-18_trendforce_micron-capex-hbm4, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-03-17_trendforce_gtc2026-key-takeaways, 2025-08-05_3dincites_iftle636-samsung-lsb-micron-virginia, 2026-01-23_trendforce_hbm4e-development, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-26_semieng_chip-week-144, 2026-06-25_thelec_micron-q3-fy2026-record, 2026-07-06_trendforce_micron-hiroshima-fab-hbm-1gamma, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-10_tomshardware_micron-250b-us-investment-globalwafers, 2026-07-10_semieng_chip-week-146, 2026-08-21_semieng_chip-week-152]
 related:
   - wiki/technologies/hbm4.md
   - wiki/entities/sk-hynix.md
@@ -313,3 +313,13 @@ OpenAlex 將 John H. Lau 兩篇 JMEP 2026-09-15 綜述（Cu-Cu 混合接合、�
 - **同型教訓**：2026-09-23 已記「Amkor 以標題檢索幾乎無效（85 件標題幾乎皆為 ELECTRONIC DEVICES AND METHODS OF MANUFACTURING）」。
 ➜ **下輪 Micron 應改以技術詞（"through silicon via"、"stack"、"hybrid bond"、"microbump"、"base die"）收斂，而非 "package"。**
 （低溫封裝件屬低溫/太空應用，與本 wiki 主線關聯薄弱，僅備查。）
+
+
+---
+
+## 近期動態（2026-09-27）：TSV 用於標準 DDR5 模組 ★
+
+推出 **512 GB DDR5 伺服器模組**，以 **TSV** 垂直堆疊 DRAM 晶粒互連（[[sources/2026-09-27_semieng_chip-week-156-india-tata-besi-izmo]]）。
+
+➜ 屬**主流伺服器 DRAM 以 TSV 堆疊**，而非 HBM ➜ 與 2026-07-15「V-Die Mosaic 垂直記憶體」同屬「**TSV 外溢至非 HBM 記憶體**」的趨勢。
+➜ ⚠ **無 TSV 尺寸、層數或 pitch 數據。**

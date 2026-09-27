@@ -3,8 +3,8 @@ title: "先進封裝的測試、量測與失效分析 / Test, Metrology & Failur
 category: concept
 tags: [test, metrology, inspection, failure-analysis, KGD, KGI, KGP, DFA, yield]
 created: 2026-09-17
-updated: 2026-09-26
-sources: [2025-01-14_semieng_known-good-interposer-screening, 2025-07-10_semieng_advanced-packaging-reshaping-inspection, 2024-11-12_semieng_packaging-drives-test-metrology-innovation, 2026-08-01_jfap_3dic-failure-analysis-dfa, 2026-07-06_apl_lensless-through-silicon-phase-imaging, 2026-09-06_ndte_hysan-sparse-view-xct-tsv, 2026-08-02_chips_cpo-wafer-level-probe-card, 2026-08-27_samsung_us20260256000a1-interposer-test-pad, 2026-08-13_jcet_us20260239928a1-hybrid-bonding-substack-test, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-06-28_hyperframe_amat-hybrid-bonding-hedge, 2026-09-26_paper_ibm-amine-post-cmp-clean, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_lpkf-lide-glass-ap-cpo]
+updated: 2026-09-27
+sources: [2026-09-27_paper_binghamton-ibm-pad-scaling-resistance-variability, 2026-09-27_paper_purdue-ru-cu-em-lifetime-blacks-n-0154, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2025-01-14_semieng_known-good-interposer-screening, 2025-07-10_semieng_advanced-packaging-reshaping-inspection, 2024-11-12_semieng_packaging-drives-test-metrology-innovation, 2026-08-01_jfap_3dic-failure-analysis-dfa, 2026-07-06_apl_lensless-through-silicon-phase-imaging, 2026-09-06_ndte_hysan-sparse-view-xct-tsv, 2026-08-02_chips_cpo-wafer-level-probe-card, 2026-08-27_samsung_us20260256000a1-interposer-test-pad, 2026-08-13_jcet_us20260239928a1-hybrid-bonding-substack-test, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-06-28_hyperframe_amat-hybrid-bonding-hedge, 2026-09-26_paper_ibm-amine-post-cmp-clean, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_lpkf-lide-glass-ap-cpo]
 related:
   - wiki/technologies/hybrid-bonding.md
   - wiki/technologies/cowos.md
@@ -582,3 +582,30 @@ Micromachines 的**五種 TGV 剖面**（直壁／沙漏／等腰錐／倒錐／
 | **玻璃腔體（LIDE）** | **波紋 ±100 nm、粗糙度 ±30 nm** | **LPKF（本輪）** |
 ➜ **跨頁引用「粗糙度」必須標註技術域**（三域之間相差 2–4 個數量級）。
 同理，**dishing 亦須標註技術域**：RDL CMP **< 90 nm 且與 over-CMP 比例無關**（Amkor ETR）vs 混合接合 **1–5 nm 且要求精密控制** —— **差 20–90 倍**。
+
+
+---
+
+## 量測的重心自「中位數」移向「分布尾端」★★★（2026-09-27）
+
+本輪三個獨立來源同向指出：**可靠度與良率的限制項是變異度，不是平均值。**
+
+| 來源 | 證據 |
+|------|------|
+| **Binghamton × IBM**（混合接合） | 墊 4 → 0.8 µm、pitch 10 → 2 µm：**仍達理論電阻值，但電阻變異範圍更寬** |
+| **Amkor HDFO**（RDL EM） | **失效模式隨線寬質變**：10 µm 線兩階段、2 µm 線單階段 ⇒ 同一平均條件下的失效路徑不同 |
+| 既有（2026-09-19 限制鏈） | 表面平坦度 **~0.2 nm** 為第一限制 ⇒ 難點在極值規格而非典型值 |
+
+➜ ⭐⭐⭐ **新橫向論述：「規格的難點在分布的尾端，不在中位數。」** ➜ **量測需求隨之改變：需要的是分布（σ、range、重複性），而非代表值。**
+➜ **本 wiki 自 2026-09-21 起要求「重複性數據」的規範，本輪取得其理論依據** —— 既有待證項（TGV 孔徑 RSD <1%、混合接合 Ra 規格是否附重複性）由此升格為結構性需求而非個案要求。
+
+## 可靠度外推方法的新規範：Black 方程必須標明 n 與其機制 ★★★（2026-09-27）
+
+| 來源 | 對象 | **E_a** | **n** | 機制 |
+|------|------|--------|-------|------|
+| Amkor HDFO（實測） | Cu RDL 2/10 µm、3 µm 厚 | **0.74 eV** | **1.88** | Cu/passivation 界面剝離 + 氧化 ⇒ 面積縮減 |
+| DNP 玻璃 RDL（一手） | 無機介電 + 阻障金屬 | **0.9 → >1.23 eV** | 未給 | — |
+| Purdue（模擬） | 釕 68 × 68 nm | **1.045 eV** | **0.154** | 空孔成核 → 成長 |
+
+➜ ⭐⭐⭐ **「Black 方程的 n 不是材料常數，而是失效機制的指紋。」n 差一個數量級以上 ⇒ 不同 n 的壽命外推不可並列。**
+➜ ⚠ Amkor 指出以 Black 方程外推（0.1% 失效率）時，最大電流容量隨溫度呈**指數**而非正比變化 ⇒ **外推的溫度基準必須明示。**

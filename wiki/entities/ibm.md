@@ -3,8 +3,8 @@ title: "IBM Research / IBM 研究院"
 category: entity
 tags: [research, 3D-packaging, nanostack, hybrid-bonding, sub-2nm, chiplet]
 created: 2026-09-11
-updated: 2026-09-26
-sources: [2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-09-26_paper_ibm-amine-post-cmp-clean]
+updated: 2026-09-27
+sources: [2026-09-27_paper_binghamton-ibm-pad-scaling-resistance-variability, 2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-09-26_paper_ibm-amine-post-cmp-clean]
 related:
   - wiki/technologies/hybrid-bonding.md
   - wiki/concepts/thermal-management.md
@@ -139,3 +139,14 @@ IPC：H10P74/203、/207、/23、/273、/277
   - ➜ ⭐⭐ **「混合接合的製程化學正由 BEOL 供應鏈提供」第二個實例**（第一為 AMAT Insepra™ SiCN）
   - ⚠ **三個環安實例中有兩個來自 IBM**（非 Bosch 深矽蝕刻、本篇）—— 集中性可能只反映 IBM 發表偏好，**不宜逕推為產業趨勢**
   - ⚠⚠ **全篇無量化值**。📌 追蹤 ASMC 2026 全文（顆粒移除效率與缺陷數）。
+
+
+---
+
+## 近期動態（2026-09-27）：混合接合界面微結構，連續第三輪出現 ★★
+
+**Binghamton University × IBM**，*Materialia*（[[sources/2026-09-27_paper_binghamton-ibm-pad-scaling-resistance-variability]]）：以墊徑 **4 → 0.8 µm**、pitch **10 → 2 µm**（~250,000 interconnects/mm²）為自變數，發現接合後微結構趨向 **{220}** 取向，**墊越小則接合品質對晶粒取向依賴性越高、電阻變異範圍越寬**（但仍達理論電阻值），且**控制點在接合前的晶粒特性**（電鍍／退火），不在接合機台。
+
+➜ ⭐⭐⭐ **新橫向論述：「在混合接合的微縮終局，良率的限制項不是平均電阻達不到理論值，而是變異度拉不下來。」**
+➜ **IBM 在「界面化學與微結構」子領域連續第三輪出現**：JVSTB Cu 墊氧化相（2026-07-31）、ASMC 胺基 post-CMP 清洗（2026-09-26）、本篇。⚠ 集中性可能只反映其發表偏好，不足以推論產業份額。
+➜ ⚠⚠ **非 OA**；Kelvin 結構的絕對電阻值與變異絕對值未取得，列下輪追蹤。

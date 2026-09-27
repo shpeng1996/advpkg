@@ -3,8 +3,8 @@ title: "先進封裝市場 / Advanced Packaging Market"
 category: concept
 tags: [market, forecast, CAGR, supply-chain, HBM, chiplet, geopolitics, equipment, SIA, Omdia, Yole, WFE, substrate-market, framework]
 created: 2026-04-24
-updated: 2026-09-26
-sources: [2026-07-31_semieng_chip-week-149, 2026-04-24_initial-survey, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2026-01-23_trendforce_chip-tools-tel-asml, 2026-03-05_trendforce_intel-emib-billions, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2025-12-18_trendforce_micron-capex-hbm4, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2025-05-13_trendforce_top10-osat-2024, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-04-16_ontoinnovation_dragonfly-g5-qualified, 2026-06-23_communicationstoday_foplp-glass-substrate-market-8b-2030, 2026-06-29_trendforce_china-osat-tongfu-jcet-investment, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-26_semieng_chip-week-144, 2026-07-01_trendforce_ase-price-hike-20pct, 2026-07-04_semieng_chip-week-145, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-07-03_trendforce_anthropic-samsung-advanced-packaging, 2026-05-08_trendforce_ajinomoto-abf-1b-land-buy-2032-margins, 2026-07-24_semieng_chip-week-148, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-08-06_siliconbox_500m-units-panel-scale, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-26_article_semiwiki-cowos-capacity-double-2028]
+updated: 2026-09-27
+sources: [2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-07-31_semieng_chip-week-149, 2026-04-24_initial-survey, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2026-01-23_trendforce_chip-tools-tel-asml, 2026-03-05_trendforce_intel-emib-billions, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2025-12-18_trendforce_micron-capex-hbm4, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2025-05-13_trendforce_top10-osat-2024, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-04-16_ontoinnovation_dragonfly-g5-qualified, 2026-06-23_communicationstoday_foplp-glass-substrate-market-8b-2030, 2026-06-29_trendforce_china-osat-tongfu-jcet-investment, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-26_semieng_chip-week-144, 2026-07-01_trendforce_ase-price-hike-20pct, 2026-07-04_semieng_chip-week-145, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-07-03_trendforce_anthropic-samsung-advanced-packaging, 2026-05-08_trendforce_ajinomoto-abf-1b-land-buy-2032-margins, 2026-07-24_semieng_chip-week-148, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-08-06_siliconbox_500m-units-panel-scale, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-26_article_semiwiki-cowos-capacity-double-2028]
 related:
   - wiki/entities/tsmc.md
   - wiki/entities/sk-hynix.md
@@ -1020,3 +1020,21 @@ SemiWiki（2026-09-18）：**2026 年底 ~130K wpm（300 mm 當量）→ 2028 �
 
 ### ⚠⚠ 待釐清：中介層光罩倍數兩組數字衝突
 本 wiki 記 **14× 於 2029**（2026-09-02）；Yole 記 **9.5× 於 >2030**。**並列不裁定。** 可能成因為「TSMC 路線圖宣告 vs Yole 量產採用估計」的時間位移。詳見 [[technologies/cowos]]。
+
+
+---
+
+## 面板級市場的三組數字：分歧在計入範圍，不在成長率 ★★★（2026-09-27）
+
+| 來源 | 2024 | 2030 | 計入範圍 |
+|------|------|------|---------|
+| **Yole**（2026-09-26，一手簡報） | **$160 M** | — | 面板級封裝 |
+| communicationstoday（2026-06-23） | — | **$8 B** | FOPLP + 玻璃基板 |
+| **The Elec**（2026-09-27） | **$650 M** | **>$8.1 B** | **FO-PLP + 玻璃基板** |
+
+➜ ⭐⭐⭐ **Yole 的 $160 M 與 The Elec 的 $650 M 差 4×，而兩個 2030 數字幾乎一致（$8 B vs $8.1 B）** ⇒ **分歧在「2024 年的計入範圍」而非成長率預期。**
+➜ ⭐⭐⭐ **新作業規範：引用面板級市場規模時必須標明是否含玻璃基板，兩種算法在起始年差 4 倍。**
+➜ ⚠⚠ **既有結論須加註條件**：2026-09-26 的「面板級封裝約占 2024 年先進封裝市場 **0.4%**、占 2.5D/3D 約 **1.6%**」係以 Yole 的 $160 M ÷ Yole 的 >$40B 求得，**兩端同源故比值有效**，但**須標明「採用 Yole 定義（不含玻璃基板）」**；若改用 The Elec 的 $650 M，占比約 **1.6%**（近 4 倍）。
+
+其他：**AI/HPC 佔 2030 年該市場 45.6%**（The Elec）。
+➜ 對照 Yole 的 PLP 兩個獨立驅動力（①高量製造 ②大封裝尺寸），**45.6% 的 AI/HPC 佔比顯示到 2030 年驅動力②已接近市場的一半** —— 這是本 wiki 首次能對該二分法給出權重。

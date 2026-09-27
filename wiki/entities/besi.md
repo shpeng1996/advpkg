@@ -3,8 +3,8 @@ title: "Besi (BE Semiconductor Industries) — 混合接合設備領導廠商"
 category: entity
 tags: [equipment, hybrid-bonding, die-attach, D2W, TCB, Netherlands]
 created: 2026-04-25
-updated: 2026-09-23
-sources: [2026-03-01_3dincites_besi-packaging-power-shift, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-03-29_damnang_hybrid-bonding-cmp-gating-factor]
+updated: 2026-09-27
+sources: [2026-09-27_semieng_chip-week-156-india-tata-besi-izmo, 2026-03-01_3dincites_besi-packaging-power-shift, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-03-29_damnang_hybrid-bonding-cmp-gating-factor]
 related:
   - wiki/entities/ev-group.md
   - wiki/technologies/hybrid-bonding.md
@@ -159,3 +159,13 @@ Applied Materials 與 Besi 共同開發的 **Kinex** 平台，首次取得量產
   - ⚠ 跨來源一致性：TheElec 2026-04-28 記混合接合機約 **₩40–50 億**，與本數字同量級。
 - ⚠ **Samsung 要求機台設計變更，延宕交期協議**——列為待追蹤（若涉對準或吞吐，是最直接的量產方需求訊號）。
 - 安裝 **2026 年底**起；大規模量產目標 **2030**。
+
+
+---
+
+## 近期動態（2026-09-27）：客戶分佈擴及印度 ★★
+
+**Tata Electronics × Besi** 於 Tata 位於**印度 Assam** 的封裝廠合作開發先進封裝能力（[[sources/2026-09-27_semieng_chip-week-156-india-tata-besi-izmo]]）。
+
+➜ **本 wiki 首次記錄 Besi 在印度的佈局**，使其客戶分佈自 Samsung／AMAT 合資關係擴展至新興區域；**Besi 是印度進入先進封裝的設備側切入點。**
+➜ ⚠ 「合作開發能力」為**意向層級**：**無投資金額、無產能、無時程、無機種**。

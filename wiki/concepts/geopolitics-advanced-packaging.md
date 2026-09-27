@@ -3,8 +3,8 @@ title: "先進封裝地緣政治 / Geopolitics of Advanced Packaging"
 category: concept
 tags: [geopolitics, US-China, CHIPS-Act, supply-chain, chiplet, NAPMP, export-control, glass-substrate, standards-war, BOE, Corning, Absolics]
 created: 2026-04-26
-updated: 2026-09-26
-sources: [2026-08-10_trendforce_skhynix-chongqing-sale-global-reset, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-23_trendforce_china-osat-sj-semiconductor-ipo, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-08-05_3dincites_iftle636, 2026-03-23_trendforce_musk-terafab-tsmc-packaging, 2026-04-22_trendforce_sk-hynix-indiana-us-plant, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-16_nokia_pennsylvania-atp-expansion, 2026-06-30_amkor-ir_arizona-7billion-groundbreaking, 2026-06-30_digitimes_us-packaging-capacity-10pct-2032, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-10_tomshardware_micron-250b-us-investment-globalwafers, 2026-07-10_semieng_chip-week-146, 2026-07-14_trendforce_huawei-baidu-npo-msa, 2026-08-21_semieng_chip-week-152, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_asi-1um-hdbu-substrate]
+updated: 2026-09-27
+sources: [2026-09-27_semieng_chip-week-156-india-tata-besi-izmo, 2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-08-10_trendforce_skhynix-chongqing-sale-global-reset, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-23_trendforce_china-osat-sj-semiconductor-ipo, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-08-05_3dincites_iftle636, 2026-03-23_trendforce_musk-terafab-tsmc-packaging, 2026-04-22_trendforce_sk-hynix-indiana-us-plant, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-16_nokia_pennsylvania-atp-expansion, 2026-06-30_amkor-ir_arizona-7billion-groundbreaking, 2026-06-30_digitimes_us-packaging-capacity-10pct-2032, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-10_tomshardware_micron-250b-us-investment-globalwafers, 2026-07-10_semieng_chip-week-146, 2026-07-14_trendforce_huawei-baidu-npo-msa, 2026-08-21_semieng_chip-week-152, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_asi-1um-hdbu-substrate]
 related: [wiki/concepts/advanced-packaging-market.md, wiki/entities/amkor.md, wiki/entities/ase-group.md, wiki/technologies/ucie.md]
 ---
 
@@ -755,3 +755,27 @@ SemiEngineering 分析（2026-08-15）：中國遺留製程（Legacy Node，>28n
 ➜ ⭐⭐ **「本土化」在這兩個個案中都不是由 CHIPS 直接資助達成的**：SkyWater 走 RESHAPE + 州政府公私合夥（Osceola County 擁廠、SkyWater 營運），ASI 走 DARPA 合約。➜ **本 wiki 首次能指出美國先進封裝本土化的資金路徑不只一條，且 CHIPS 並非唯一或必要條件。**
 ⚠ 兩者皆為小規模／原型階段（SkyWater 面板僅 300 mm；ASI 僅 2 層金屬、200 mm 載板）。⚠「未獲 CHIPS 資助」為 ASI 原文自述，本 wiki 不引申評價。
 ➜ **缺實體頁候選新增：SkyWater Technology**（美國本土 FOWLP 純代工，Deca 授權）。本輪首次出現，不建頁，列管。
+
+
+---
+
+## 面板級封裝的地緣集中度：台／日／中 84.8%（2030）★★（2026-09-27）
+
+**The Elec**（[[sources/2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm]]）：**台灣、日本、中國合計掌握 2030 年 84.8% 的面板級封裝製造。**
+
+➜ 與既有記述**互不矛盾且互補**：美國在整體封裝產能約 **~3%（2026）→ ~10%（2032）**；**在面板級這一新興段的參與度更低。**
+➜ 基板開發者清單亦以東亞為主：Ibiden、Innolux、BOE、Visionox、Absolics（SKC，美國喬治亞廠）、Samsung Electro-Mechanics、LG Innotek。**Absolics 是清單中唯一在美國設專用廠者**（量產已自 2026 年底推遲至 2027）。
+➜ 設備側則非東亞集中：**Lam Research（600 mm 面板相容）**、**Corning**（美）、**Evatec**（瑞士）、**Schmid / Manz**（德）。➜ **新橫向論述候選：「面板級封裝的地緣集中在製造端，而非設備與材料端」** —— 與本 wiki 既有的晶圓級格局（設備亦高度集中於美／荷／日）**型態不同**。
+
+## 印度成為第七個地緣節點 ★★（2026-09-27）
+
+Chip Week 156 同期出現**兩條獨立的印度先進封裝條目**（[[sources/2026-09-27_semieng_chip-week-156-india-tata-besi-izmo]]）：
+
+| 主體 | 內容 |
+|------|------|
+| **Tata Electronics × Besi** | 於 Tata 位於**印度 Assam** 的封裝廠合作開發先進封裝能力 |
+| **Izmo Microsystems** | 於印度發布**量產階段**的矽光子與先進封裝能力 |
+
+➜ **本 wiki 既有節點為美、台、韓、日、中、東南亞（馬來西亞／越南／新加坡）；印度應新增為第七個獨立節點。**
+➜ **Besi 是設備側切入點** —— 與馬來西亞（Lam、Intel EMIB）、越南（Samsung × Amkor）的型態一致：**新興節點的進入路徑都是「既有設備商 + 當地集團」，而非本土設備自主。**
+➜ ⚠ Tata × Besi 為**意向層級**（無金額、產能、時程）；⚠ Izmo 的量產宣稱**無第三方驗證**，依 2026-09-21 規範**不得記述為既成產能**，僅列觀察名單。
