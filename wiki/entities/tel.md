@@ -3,7 +3,7 @@ title: "Tokyo Electron (TEL) — 東京威力科創"
 category: entity
 tags: [TEL, Tokyo-Electron, equipment, RDL, Eteris, advanced-packaging-equipment, Japan]
 created: 2026-04-26
-updated: 2026-09-25
+updated: 2026-09-28
 sources: [2026-01-23_trendforce_chip-tools-tel-asml, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer]
 related: [wiki/entities/besi.md, wiki/technologies/hybrid-bonding.md, wiki/concepts/advanced-packaging-market.md]
 ---
@@ -162,3 +162,30 @@ TEL 在先進封裝設備的定位是 **RDL 製程設備全流程覆蓋**，與 
 ⚠ 犧牲層與釋放層**材料未揭露**；雷射**波長、能量密度、節距絕對值皆未給**；溫度結果為「低於偵測下限」非實測值；**重複使用僅示範一次**；作者明列**再現性仍在進行中**。
 ⚠ **OpenAlex 機構欄位錯誤**：該筆記錄之 institutions 被解析為「Electoral Commission」「In-Q-Tel」（係將 "TEL Technology Center, America" 與原文誤植之 "Tokyo Election America" 錯配）➜ **作業提醒：OpenAlex 的 institutions 欄位對 TEL 不可信，須以 PDF 原文為準。**
 ⚠ 原文載有 TEL 保密聲明；本 wiki 僅整合其公開發表之會議論文內容。
+
+---
+
+## ⭐ 2026-09-28 更新：接合誘發疊對變形 <3 nm M+3σ（扣除掃描機雜訊後）
+
+**「Demonstration of <5nm Overlay Distortion for Backside Power Delivery Through Control of Wafer Conditions and Processing」（IMAPS DPC 2026，2026-08-17）**
+
+| 項目 | 數值 |
+|------|------|
+| 校正前初始實測疊對 | 約 **80 nm M+3σ** |
+| CPE6 六項校正後（模擬） | **<4.5 nm M+3σ** |
+| 重工並施加校正後（實際） | **<7 nm M+3σ**，90% 晶圓面積 <4 nm |
+| **扣除掃描機雜訊後，接合製程本身的貢獻** | **<3 nm M+3σ** ⭐ |
+| 接合後退火 | **200–400 °C** |
+| 中心變形 / 應力環 / 邊緣變形 | **降 90% / 可完全消除 / 降 >50%** |
+
+**三個不可校正失配來源**：接合起始點、晶圓邊緣、晶圓中半徑的應力環。**線性變形最大貢獻者＝表面組成**；晶圓間變異主因＝整合流程（多晶圓機台的批次位置指紋）。
+
+### 三項推論
+1. ⭐⭐⭐ **TEL 在本 wiki 的定位自「RDL 製程設備領導者」擴為「接合形變的量化能力擁有者」。**
+2. ⭐⭐⭐ **「扣除掃描機雜訊後 <3 nm」是 2026-09-21「重複性數據」作業規範被一手來源滿足的第一個案例。**
+3. ⭐⭐ **接合缺陷首次被指認為可定位、可歸因、可完全消除的「系統性指紋」**，而非純隨機分布（詳見 [[concepts/test-metrology-packaging]]）。
+
+📌 **長期空缺「TEL 140 nm 載具的電性結果」仍未結清**——本件不是該載具。
+⚠ 本件情境為 **BSPD（前段背面供電）**，其 <4 nm 目標**不可直接套用到封裝級混合接合的節距推論**。
+
+**來源**：[[sources/2026-09-28_paper_tel-backside-power-overlay-distortion-sub5nm]]

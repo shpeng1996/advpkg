@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-09-27
-**頁面總數 Total Pages**：684
-**原始來源數 Sources**：625（含 8 個合併轉向頁、1 個去重失誤更正頁；**本輪新增 15 篇：articles 5 / patents 5 / papers 5**）⭐ 以檔案計數交叉驗證：`find wiki -name '*.md'` = **684**，sources 目錄 = **625**，與加總一致
+**更新時間 Updated**：2026-09-28
+**頁面總數 Total Pages**：702
+**原始來源數 Sources**：640（含 8 個合併轉向頁、1 個去重失誤更正頁；**本輪新增 15 篇：articles 4 / reports 1 / patents 5 / papers 5**）⭐ 以檔案計數交叉驗證：`find wiki -name '*.md'` = **702**，sources 目錄 = **640**，與加總一致
 
 ---
 
@@ -14,6 +14,8 @@
 
 ## 實體 Entities（公司、組織）
 
+- [[entities/resonac]] — Resonac（レゾナック，原昭和電工材料）；日系封裝材料商；⭐⭐⭐ **混合接合用耐化學切割膠帶：80 °C 浸泡重量變化 9–36% → <1.3%；60 °C 清洗後晶粒飛散 >200 顆 → 0 顆；取放 100%（180/180）**；**電漿切割道寬 1 µm**（wiki 首見）；⇒ **「輔助步驟才是瓶頸」第四例且唯一量化者**⭐本輪新建
+- [[entities/etron]] — 鈺創科技 Etron × ND Hi Tech Lab（台灣）；記憶體/IP fabless；⭐⭐⭐ **US20260090421A1：貫穿散熱孔 TTV 與 TGV 對接、獨立散熱層** ⇒ **玻璃基板第六條自由度＝貫穿方向的熱通道；「熱是第四個限制」首次進入排他權層**；⚠ 全篇無量化值⭐本輪新建
 - [[entities/agc]] — AGC Inc.（旭硝子）；特種玻璃供應商，日系對應 Corning 之角色；⭐⭐⭐ **填滿 vs conformal TGV 在 30 GHz 電性無顯著差異（Sdd21 −2.11 vs −2.08 dB；1,250 A 下 795–802 vs 796–802 mV）**；**無鹼玻璃 ER-Y1 CTE 3.5/88 GPa vs EN-A1 5.8/75 GPa**；TGV **AR 1:20 @ 1.0 mm**、孔徑 50–100 µm；**PWG 年度路線圖（Dry-film 2027 0.20 → >2030 <0.10 dB/cm、CTE 70 → <50 ppm/°C）**；封裝尺寸 3.5×(2024)→>8.0×(2030)⭐本輪新建
 - [[entities/globalfoundries]] — GlobalFoundries（格羅方德）；矽光子與 CPO 封裝的代工側一手來源；廠址 **Malta, New York**；⭐⭐⭐ **銅 <1 Tb/s/mm & >5 pJ/bit vs 光 >5 Tb/s/mm & 2–5 pJ/bit**；**SSC ~0.4 dB / 32 通道 V-groove <1 dB / Corning 玻璃橋 <1.5 dB/facet**；Ge PD **120 GHz**；**把對準精度自機台轉移到微影**；⚠⚠ 「0.3–0.5 nm」疑為 µm 誤植⭐本輪新建
 - [[entities/dnp]] — 大日本印刷 Dai Nippon Printing（千葉）；同時做 **RDL interposer / glass interposer / glass core substrate** 三類；**DNP-SAP 以無機介電+阻障金屬隔開 Cu 與 PID**；⭐⭐⭐ **首度一手量化：Ea 0.9 → >1.23 eV、MTTF 0.7–10 hr → >1000 hr、t₀.₁% 外推 10,000×；B-HAST 120→200 hr；40 GHz/1000 TCT 劣化與線寬無關**；面板 300×400 mm、TGV φ100 µm（2026-09-25）⭐本輪新建
@@ -50,6 +52,7 @@
 
 ## 技術 Technologies
 
+- [[technologies/glass-carrier]] — **玻璃載板與玻璃核心的邊界工程（2026-09-28 新建）**；三個子問題（**邊緣／框／解接合**）；⭐⭐⭐ **Intel 框 CTE<11（可由框材料 + 銅百分比調節）＝「玻璃非單一材料」第四層級，且是第一個把調節手段放在玻璃之外的**；**Intel 側壁高分子塗層 ⇒ 玻璃邊緣韌性首次進入排他權層**；⭐⭐⭐ **承載「真正的瓶頸在被視為輔助步驟的那一步」論述（四實例：CMP 後清洗／debonding／雷射剝離材料／Resonac 切割膠帶）**；2026-09-26 判定建頁、2026-09-27 列必辦，本輪完成⭐本輪新建
 - [[technologies/rdl]] — **RDL 重分佈層（2026-09-26 新建）**；三條圖案化路線並列（**SAP / dual damascene / Amkor ETR——ETR 步驟數比 damascene 少 40%**）；⭐⭐⭐ **「damascene ⇒ 無機介電」是錯誤前提：Taiyo×imec 700 nm 與 imec/JSR 1.0 µm 皆為有機感光介電**；⭐⭐⭐ **線寬 vs 層數互換關係**（ASI 1 µm/**2 層** ↔ Amkor 2/1 µm/**6 層能力**）；**兩道獨立天花板（微影 / 電遷移）**；面板可行性四來源同向指向 300–310 mm⭐本輪新建
 - [[technologies/cowos]] — CoWoS（Chip-on-Wafer-on-Substrate）；TSMC 2.5D 旗艦封裝；**5.5× 良率達 99%（OCP APAC Summit 2026-08-11）；10 封裝設施；ABF 基板成 AI 第二瓶頸**；OSAT 補位生態（ASE CoWoP、Amkor FOCoS）；**封裝尺寸 3.3×→14× 光罩（2024→2029）；封裝功耗 600W→4,100W；微通道冷卻整合路線**（2026-09-02）⭐更新
 - [[technologies/copos]] — CoPoS（Chip-on-Panel-on-Substrate）；TSMC 面板級封裝；310×310mm 面板；玻璃核心基板列為下一里程碑（2030+）；TGV 障礙具體化（2026-06-18）⭐更新
@@ -89,6 +92,22 @@
 ---
 
 ## 來源摘要 Sources（依日期倒序）
+
+- [[sources/2026-09-28_paper_imec-3d-volumetric-dram-on-gpu-thermal-envelope]] — ⭐⭐⭐ imec arXiv 2609.24343：**3D volumetric DRAM-on-GPU，121.7 → 103.4 °C**；**容量—頻寬—溫度三維對照（337/506/674 GB ↔ 58.8/88.2/117.6 TB/s）**；⭐⭐⭐ **「最有價值的設計點不是最密的那一個」⇒「最佳值是區間」論述首次作用在系統層**；**模封代價與導熱係數同向（矽 1–2 / 銅 3–4 / 鑽石 5–6 °C）**；⚠⚠ 純模擬、預印本
+- [[sources/2026-09-28_paper_tel-backside-power-overlay-distortion-sub5nm]] — ⭐⭐⭐ Tokyo Electron：**扣除掃描機雜訊後接合製程本身僅 <3 nm M+3σ**；**應力環可完全消除／中心變形降 90%／邊緣降 >50%**；⇒ **對準誤差首次拆為「機台逐 die」與「接合誘發形變場」兩個不可互換來源**；**接合缺陷是系統性指紋而非隨機**；⚠ BSPD 情境
+- [[sources/2026-09-28_paper_resonac-chemical-resistant-dicing-tape-hybrid-bonding]] — ⭐⭐⭐ Resonac（首見實體）：**晶粒飛散 >200 顆 → 0 顆、重量變化 9–36% → <1.3%、取放 100%**；⇒ **混合接合限制鏈最前端插入第 0 環（晶粒保持）**；**「輔助步驟才是瓶頸」第四例且唯一量化者**；**電漿切割道寬 1 µm**；⚠ 供應商自述、5 mm 晶粒偏大
+- [[sources/2026-09-28_paper_texasam-direct-al-cu-bonding-no-ubm]] — ⭐⭐⭐ Texas A&M：**直接 Al–Cu 接合免 UBM** ⇒ **接合金屬組合擴為四組（Cu–Cu／Ru-SiO₂／Ag–Cu／Al–Cu）**；**鋁氧化物比銅難控得多 ⇒「惰性環境氧化門檻」空缺須依金屬分拆**；**首次以 RF S 參數判定接合品質**；⚠⚠ 全篇無量化值
+- [[sources/2026-09-28_paper_samsung-ultrathick-pr-high-ar-cu-pillar-lpddr]] — ⭐⭐⭐ Samsung：**光阻 >220 µm / AR>8.1 / 節距 <60 µm / 512 I/O / >200 GB/s**；⭐⭐⭐ **低 NA(<0.12) 反而更好 ⇒ 新論述「微影分裂為細線窄膜與粗線厚膜兩個相反極端」**；**電鍍模具厚度自 0.2 µm 到 220 µm 跨三個數量級**
+- [[sources/2026-09-28_intel_us20260005114a1-frames-glass-core-hybrid-panels-cte11]] — ⭐⭐⭐ Intel：**玻璃核心「框」CTE <11，由框材料 + 銅百分比調節** ⇒ **「玻璃非單一材料」第四層級（第一個把調節放在玻璃之外）**；⭐ **「專利軌連續七輪無量化值」紀錄中斷**；📌 新空缺：hybrid panel 的非玻璃區域是什麼
+- [[sources/2026-09-28_etron_us20260090421a1-ttv-tgv-thermal-dissipation-layer]] — ⭐⭐⭐ 鈺創 Etron × ND Hi Tech（首見實體）：**TTV 與 TGV 對接、獨立散熱層** ⇒ **玻璃基板第六條自由度＝貫穿方向的熱通道**；**「熱是第四個限制」首次進入排他權層**；📌 新空缺：TTV/TGV 孔徑節距是否須一致（⇒ 散熱密度被電性節距綁定）
+- [[sources/2026-09-28_samsung_us20260068717a1-bridge-die-second-mold-film]] — ⭐⭐⭐ Samsung：**橋置 RDL 背面、第二模封層包覆**（2026-03-05，早於既有那件兩個半月）⇒ **「不埋」是自 2026 Q1 起的連續布局，非單一嘗試**；**模封式橋接申請人 ASE + Samsung 共三件**；📌 新空缺：跨 RDL 橋接是否有額外節距下限
+- [[sources/2026-09-28_samsung_us20260090411a1-bridge-die-mold-plus-protective-film]] — ⭐⭐⭐ Samsung：**側面用模封膜、背面用保護膜**；**同拓撲、相隔 20 天、兩個不同 family，差別只在背面材料** ⇒ **新候選論述「橋的每個表面是獨立的設計變數」**；**Intel 式「平行下注」首次在 Samsung 出現且粒度更細**
+- [[sources/2026-09-28_intel_us20260005126a1-glass-core-polymer-sidewall-coating]] — ⭐⭐⭐ Intel：**玻璃核心「側壁」高分子塗層** ⇒ **玻璃邊緣韌性自 ASE 定性表述首次進入排他權層**；**「附著性是一階設計限制」第四個技術域**；⚠⚠ 95→49 MPa（Tom's）手段相同但不得歸因於本件
+- [[sources/2026-09-28_bitschips_yole-high-end-packaging-51b-2031-d2w-hb-cagr65]] — ⭐⭐⭐ Yole：**D2W 混合接合 CAGR 約 65%（全場最高）／CoWoS-L 28.1%／3D NAND HB 22.2%** ⇒ **混合接合首次有依情境分項的市場成長率**；**件數 +33% vs 金額 27% CAGR ⇒ 成長全來自每件價值提升**；**前六大占 97%**；⚠⚠ 三個 Yole 口徑未釐清
+- [[sources/2026-09-28_siliconanalysts_hbm4-16hi-volume-cowos-leadtime-78-weeks]] — ⭐⭐⭐ **CoWoS 交期 52–78 週＝本 wiki 第三個獨立供需指標**；⚠⚠ **缺口在收斂、交期卻在拉長（新空缺）**；**SK hynix HBM4 16-Hi 量產出貨、48 GB**；Broadcom 配額約 15%
+- [[sources/2026-09-28_semieng_chip-week-157-imec-3d-dram-yole-51b]] — ⭐⭐⭐ Chip Week 157：**imec 121.7→103.4 °C**、**Yole 高階封裝 2031 >$51B**、**Brewer Science 高溫雷射剝離材料（debonding 第三訊號）**、**GUC HBM4E PHY on TSMC N2P（base die 生態新增 IP 層）**、Samsung 2027 HBM4 產出加倍
+- [[sources/2026-09-28_imec_3d-hbm-on-gpu-stco-141-to-70c]] — ⭐⭐⭐ imec（2025-12）：**3D HBM-on-GPU 以 STCO 自 141.7 → 70.8 °C，逼近 2.5D 的 69.1 °C（殘差 1.7 °C）**；**代價標價為 28% 工作負載損失** ⇒「熱不是門檻，是交換率」；⚠⚠ **與 arXiv 篇為兩個不同研究，數字不得並列**
+- [[sources/2026-09-28_researchandmarkets_hbm-advanced-packaging-materials-2027-2037]] — ⭐ Research and Markets：⚠⚠ **公告無任何絕對數值，不得作為量化來源**；唯一價值為**以 CR1/CR3/HHI 衡量材料集中度的方法框架** ⇒ 可量化檢驗「面板級地緣集中在製造端而非設備材料端」候選論述
 
 - [[sources/2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current]] — ⭐⭐⭐ Amkor WLP：**銅厚 5–9 µm**（⇒ **最高優先空缺「RDL 銅厚共識值」結清：分佈 0.2–9 µm，落差 45×**）；大/小截面熔斷電流 **+306%**；**厚基板對粗線 +42% vs 細線僅 +6.7% ⇒ 熱是第四個限制且尺寸相依**；⚠ 2024 年發表
 - [[sources/2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188]] — ⭐⭐⭐ Amkor HDFO：**Cu 3 µm/層 × 三層、E_a 0.74 eV、n 1.88**；**失效在 Cu/passivation 界面剝離+氧化，不在銅本體**；**失效模式隨線寬質變（10 µm 兩階段 / 2 µm 單階段）**；⇒ **新論述「Black 的 n 是失效機制的指紋」**（vs Purdue n=0.154）

@@ -3,7 +3,7 @@ title: "玻璃基板 / Glass Core Substrate"
 category: technology
 tags: [glass-substrate, TGV, panel-level, FC-BGA, CoPoS, Absolics, DNP, Rapidus, warpage, SeWaRe, glass-interposer, BOE, ULCVD, non-embedding, Lens-Technology, TPK-KY, Innolux, AUO, LG-Chem, singulation, patent-signal]
 created: 2026-05-08
-updated: 2026-09-27
+updated: 2026-09-28
 sources: [2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-27_tradingkey_copos-glass-validation-08mm-85x110mm, 2026-09-27_intel_us20260182414a1-asymmetric-buildup-cte-gradient-glass, 2026-09-27_samsung_us20260144093a1-bridge-on-tgv-mold-fixed, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-05-05_trendforce-insights_glass-substrate-development, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-05-29_3dincites_rapidus-2nm-advanced-packaging-ai-foundry, 2026-06-01_trendforce_intel-3dgs-india-glass-substrate, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-06-20_biggo_boe-glass-substrate-pilot, 2026-06-28_economy-ac_glass-substrate-global-race, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-08-18_trendforce_shinko-glass-substrate-22layer-glassem-delay, 2026-09-11_mssp_tgv-glass-biaxial-bending-ring-on-ring, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-03-13_kaneka_jp2026047137a-glass-core-polyimide-quantified, 2026-08-10_screp_low-k-organic-buffer-tgv-cu-metallization, 2026-08-04_jmrt_vacuum-assisted-void-free-cu-fill-tgv, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_patent_er-eng-glass-interposer-dual-carrier, 2026-09-26_paper_yole-advanced-packaging-market-ai-era]
 related:
   - wiki/technologies/rdl.md
@@ -1441,3 +1441,55 @@ Yole（`10.4071/001c.167738`）設問「**A lasting trend or a failing attempt?*
 ➜ ⭐⭐⭐ **新橫向論述：「埋／不埋」是比「埋進什麼」更上位的分歧軸。**
 ➜ ⭐ **模封式橋接自 ASE 單一來源（CN224583751U）擴為兩家**；Yole 的「2.5D Bridge in Mold」分類申請人自 1 家增至 2 家。
 ➜ ⚠ **本輪五件專利全部無量化值**；「專利軌訊號以定性為主」連續第七輪成立。
+
+---
+
+## ⭐ 2026-09-28 更新：「玻璃非單一材料」第四層級（框）、側壁塗層、以及第六條自由度（熱通道）
+
+### 1. ⭐⭐⭐ 第四層級：調節對象移到玻璃「之外」——框（frame）
+
+**Intel US20260005114A1「FRAMES FOR GLASS CORE HYBRID PANELS」（2026-01-01 公開，family 98367295）**：框的 **CTE < 11**，可由**框材料選擇**與**框材料中銅的百分比**兩個連續變數操縱；框可圍住面板／子面板／晶圓，並可含多個腔體容納各自的玻璃核心。
+
+| 層級 | 調節對象 | 證據 | 日期 |
+|------|---------|------|------|
+| ① 用途分級 | 不同產品用不同玻璃 | LPKF：中介層 CTE≈3/<400 µm vs 核心 ≈7/>800 µm | 2026-09-26 |
+| ② 同一供應商產品線分歧 | 同廠兩支料號 | AGC：ER-Y1 3.5 ppm/88 GPa vs EN-A1 5.8 ppm/75 GPa | 2026-09-27 |
+| ③ 單片內部梯度 | 一片玻璃內上下不同 | Intel US20260182414A1 CTE 梯度核心 | 2026-09-27 |
+| ④ **框／載體層級** | **玻璃不動，改動邊界條件** | **Intel US20260005114A1，CTE <11** | **2026-09-28** |
+
+➜ **本頁「玻璃 CTE 3–10 ppm/°C 可調」之記載須加註：該區間指玻璃本體；框的 CTE（<11）是另一個獨立的設計變數，不可混用。**
+
+⭐ **並且：2026-09-27 記載之「專利軌訊號以定性為主，連續第七輪成立」本輪中斷** —— 本件帶量化界定（CTE <11）。⚠ 僅為請求項上界，未給單位、溫度區間與量測方法。
+
+📌 **新空缺：「hybrid panel」的非玻璃區域是什麼材料、占比多少？** 該詞暗示面板上同時存在玻璃核心與非玻璃區域，與本 wiki 既有「全玻璃 vs 全有機」的二分不同。
+
+### 2. ⭐⭐⭐ 玻璃核心「側壁」的高分子塗層
+
+**Intel US20260005126A1（2026-01-01 公開，family 98368460）**：玻璃核心的**側壁（切割後的邊緣）**上有一層**高分子塗層**。被處理的既不是 TGV 孔壁，也不是上下表面。
+
+- ➜ **「玻璃載板／核心的邊緣韌性」自 ASE 的定性表述首次進入排他權層。**
+- ➜ **「附著性／界面已是一階設計限制」論述取得第四個技術域**（既有：TGV 孔壁、RDL/passivation 界面、玻璃載板邊緣韌性〔定性〕）。
+- ⚠⚠ 2026-08-27 Tom's Hardware 記載「邊緣應力自 **95 MPa 降至 49 MPa**（edge-coating）」與本件手段相同，**但本件摘要無數值，該數字不得歸因於本件**。兩者須分標來源層級（報導層 vs 排他權層）。
+- ⭐ **US20260005114A1（框）與 US20260005126A1（側壁塗層）同日公開，構成 Intel 對玻璃「外圍」的兩注互補布局**（框＝機械與 CTE；塗層＝斷裂起始點）——與 2026-09-27 記錄的「四條互斥橋幾何」型態不同，顯示 Intel 在不同子問題上採不同下注模式。
+
+### 3. ⭐⭐⭐ 第六條自由度：貫穿方向的熱通道（TTV ↔ TGV）
+
+**鈺創 Etron × ND Hi Tech Lab US20260090421A1（2026-03-26 公開，family 99140773）**：玻璃基材兩面各一層 RDL，**另加獨立的散熱層疊在玻璃基材上，其貫穿散熱孔（TTV）延伸至 TGV** —— 電性通道與熱通道**在同一垂直軸上串接**。
+
+| # | 自由度 | 代表案 |
+|---|--------|--------|
+| 1 | 孔的成形 | LIDE（LPKF）／雷射 |
+| 2 | 孔壁材料（黏著／阻障／襯層） | Corning WO2026164778A1、Intel 光聚合物／部分襯層 |
+| 3 | 孔壁形貌 | 武漢大學 CN121548325A（微納錨釘） |
+| 4 | 核心的 CTE（單片內梯度） | Intel US20260182414A1 |
+| 5 | 橋的埋法 | Intel／Samsung／珠海天成 |
+| 6 | **貫穿方向的熱通道（TTV↔TGV）** | **Etron/ND Hi Tech US20260090421A1** |
+
+- ➜ **2026-09-27 新增之「熱是繼電阻／電容／附著之後的第四個限制」首次出現在排他權層**（既有證據全來自 Amkor 熔斷電流實測）。
+- ➜ **本頁「優勢與限制」之「玻璃導熱差」記述須加註：業界已有以獨立散熱層 + TTV 繞開的排他權布局。**
+- 📌 **新空缺：TTV 與 TGV 的孔徑／節距是否須一致？** 若須一致，散熱密度將被電性節距綁定——這是尚未被討論的耦合。
+- ⭐ **鈺創（Etron）與 ND Hi Tech Lab 皆為本 wiki 首見實體。玻璃基板申請人自基板商（Absolics/Corning/DNP/AGC/Dongwoo）與 IDM（Intel/Samsung）擴及記憶體 fabless。**
+
+**來源**：[[sources/2026-09-28_intel_us20260005114a1-frames-glass-core-hybrid-panels-cte11]]、[[sources/2026-09-28_intel_us20260005126a1-glass-core-polymer-sidewall-coating]]、[[sources/2026-09-28_etron_us20260090421a1-ttv-tgv-thermal-dissipation-layer]]
+
+⚠ 三件皆為專利，屬前瞻訊號而非已出貨能力；除 CTE <11 外**全無量化值**。

@@ -3,7 +3,7 @@ title: "先進封裝熱管理 / Thermal Management in Advanced Packaging"
 category: concept
 tags: [thermal-management, liquid-cooling, 3D-IC, CoWoS, heat-dissipation, TIM, ECTC-2025, GaN, power-delivery, co-design, patent-signal, delamination]
 created: 2026-04-25
-updated: 2026-09-27
+updated: 2026-09-28
 sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2025-12-01_semiengineering_thermal-management, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-02_trendforce_samsung-hbm5-computex2026, 2026-05-21_semieng_hi-roadmap-nature-paper-intel, 2026-08-13_semieng_1mw-rack-debate-thermal, 2026-04-27_semieng_semiconductor-materials-misbehave, 2026-08-21_trendforce_chip-packaging-heat-ai-bottleneck-cpo-stco, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer]
 related:
   - wiki/technologies/cowos.md
@@ -741,3 +741,63 @@ IBM 的作法是在同一接合區內分割「接合介電區」與「導熱材�
 ➜ 與 `10.4071/001c.167762` 的「電阻／電容／附著三大限制」**互補：熱是第四個，且它是尺寸相依的。**
 ➜ ⚠ **熔斷電流（秒級、熱主導）與 EM 壽命（千小時級、質量傳輸主導）是兩個不同失效模式**，本節數值**不得用於 EM 推論**。
 ➜ 與既有「熱應拆成運作熱與製程熱兩條線」（2026-09-22）並列：**本節屬運作熱，且是本 wiki 首個把運作熱與導體幾何直接連起來的量化資料點。**
+
+---
+
+## ⭐ 2026-09-28 更新：imec 兩篇 3D 記憶體熱模擬——「最有價值的設計點不是最密的那一個」
+
+⚠⚠ **本節記載 imec 的兩個不同研究。兩者基線不同、架構不同、緩解手段不同，兩組數字不得並列成同一條路線圖。**
+
+### A. 2025-12 新聞稿：3D HBM-on-GPU + STCO
+
+架構：每封裝 4 個 HBM stack、每 stack **12 顆混合接合 DRAM 晶粒**，以**微凸塊**直接置於 GPU 上。
+
+| 組態 | 峰值溫度 |
+|------|---------|
+| 3D HBM-on-GPU（未緩解） | **141.7 °C** |
+| 僅 GPU 降頻 | 約 100 °C |
+| **STCO 全套後** | **70.8 °C** |
+| **2.5D 對照基準** | **69.1 °C** |
+
+STCO 手段：技術層（HBM stack 合併、熱矽最佳化）＋ 系統層（GPU 頻率縮放、雙面冷卻）。
+
+⭐⭐⭐ **「3D 的熱代價可被工程手段收斂到接近 2.5D」是本 wiki 首次取得的端到端量化：殘差僅 1.7 °C。**
+⭐⭐⭐ **但代價被明確標價：GPU 降頻造成 AI 訓練步驟 28% 的工作負載損失**（4× 頻寬提升可部分補回）➜ **「熱不是門檻，是交換率」。**
+
+### B. 2026-09-21 arXiv 2609.24343：3D volumetric DRAM-on-GPU
+
+架構：**垂直取向的 DRAM 晶粒 + 交錯冷卻腔（interleaved cooling cavities）**——與 A 的水平堆疊完全不同。
+
+| 組態 | 峰值溫度 |
+|------|---------|
+| HBM-on-GPU 基線 | **121.7 °C** |
+| 3 mm 矽腔 volumetric（等容量） | **103.4 °C（−18.3 °C）** |
+| 5 mm 銅腔 1D1CC | **100.2 °C** |
+| 5 mm 銅腔 2ThinnerD1CC | **118.7 °C** |
+| 加 MC/NoC 層 | 118.72 → **122.63 °C（+約 4 °C）** |
+
+| 組態（5 mm 銅腔） | 容量 | 頻寬 |
+|------------------|------|------|
+| 1D1CC | **337 GB** | **58.8 TB/s** |
+| 2D1CC | **506 GB** | **88.2 TB/s** |
+| 2ThinnerD1CC | **674 GB** | **117.6 TB/s** |
+
+- Stack 高度掃描 **3–10 mm**；容量 **202 GB（3 mm）→ 674 GB（10 mm）**
+- **模封造成的熱代價：矽 1–2 °C、銅 3–4 °C、鑽石 5–6 °C**
+- 微凸塊接合熱參數：**導熱 3.6 W·m⁻¹、厚度 13 µm、節距 30 µm**（wiki 首見的接合層熱傳導一手參數）
+
+### 三條新論述
+
+1. ⭐⭐⭐ **「當一個參數同時服務兩個相反的失效模式時，最佳值必然是區間而非極值」首次作用在系統層而非單元製程層。** 既有七例全部是製程參數（Cu dishing、粗糙度、溫度…）；**本件的參數是「堆疊密度」，兩個相反的失效是「容量/頻寬不足」與「熱失控」，且飽和機制被指認為 compute-bound。** 作者原文：**「最有價值的 volumetric 設計點不是最密的那一個」**，典型最佳點落在 **1D1CC-5 mm**。
+
+2. ⭐⭐⭐ **新候選論述：「在 3D 堆疊中，導熱材料的選擇不能只看導熱係數，因為封裝步驟（模封）的代價與導熱係數同向增加。」** 鑽石導熱最佳但模封代價最大（5–6 °C vs 矽 1–2 °C）➜ **材料排序被製程代價部分抵銷。** 與 2026-09-27「附著性是一階設計限制」屬同型態：**理想材料屬性被界面／製程現實反轉。**
+
+3. ⭐⭐ **MC/NoC 層只帶來約 +4 °C**，推翻「把記憶體控制器搬進堆疊會顯著惡化熱」的直覺預期。
+
+### 新作業規範（本輪）
+
+⚠ **凡引用 imec 的 3D 記憶體熱模擬數字，必須標明是 2025-12 的 HBM-on-GPU 篇（141.7→70.8 °C）或 2026-09 的 volumetric 篇（121.7→103.4 °C）。** 兩者基線差 20 °C，混用會造成嚴重誤讀。
+
+⚠⚠ **兩篇皆為純熱模擬，無矽驗證；後者為 arXiv 預印本，未經同儕審查。**
+
+**來源**：[[sources/2026-09-28_imec_3d-hbm-on-gpu-stco-141-to-70c]]、[[sources/2026-09-28_paper_imec-3d-volumetric-dram-on-gpu-thermal-envelope]]、[[sources/2026-09-28_etron_us20260090421a1-ttv-tgv-thermal-dissipation-layer]]（TTV↔TGV 熱通道）

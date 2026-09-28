@@ -3,7 +3,7 @@ title: "英特爾 / Intel"
 category: entity
 tags: [IDM, advanced-packaging, EMIB, Foveros, Intel18A, Clearwater-Forest, Foveros-Direct, glass-substrate, 14A, High-NA-EUV, silicon-capacitors, Google-TPU-v8e, Q2-2026-earnings, Tesla-14A, HLFF, RAMP-C, Secure-Enclave, Rio-Rancho]
 created: 2026-04-24
-updated: 2026-09-27
+updated: 2026-09-28
 sources: [2026-09-27_intel_us20260182414a1-asymmetric-buildup-cte-gradient-glass, 2026-09-27_intel_cn122270166a-stacked-glass-silicon-bridge-assembly-ar20, 2026-09-27_intel_us20260223702a1-direct-bonding-embedded-bridge-organic-cavity, 2026-08-24_intel-newsroom_hot-chips-2026-diamond-rapids-foveros-ucie, 2026-04-24_initial-survey, 2026-07-20_trendforce_tsmc-265b-arizona-intel-novalake, 2026-03-18_trendforce_intel-emib-malaysia, 2026-03-03_trendforce_intel-clearwater-forest, 2026-03-05_trendforce_intel-emib-billions, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-04-20_trendforce_intel-foundry-14a-equipment, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-01_semianalysis_cpus-back-datacenter-2026, 2026-04-10_3dincites_intel-gan-chiplet, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks, 2026-06-21_convergedigest_intel-emib-t-multi-die-packaging, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap, 2026-07-01_trendforce_terafab-intel-veteran-hire, 2026-04-07_tomshardware_intel-joins-terafab, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-01-30_tomshardware_intel-ai-chip-test-vehicle-emib-t, 2026-07-14_trendforce_intel-ireland-5b-intel3-europe, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-04_semieng_from-blueprint-intel-hlff, 2026-07-31_semieng_chip-week-149, 2026-08-13_trendforce_intel-memory-reentry-xbm-zam-saimemory, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition]
 related:
   - wiki/entities/tsmc.md
@@ -660,3 +660,25 @@ IPC：H10W20/20、/42、/435、/4421、H10W44/501、H10W70/05、/095
 ➜ **EMIB × 玻璃核心的展品層合流早於排他權層約 8 個月**：2026-01 NEPCON Japan 已展出 EMIB + 玻璃核心基板原型。
 ➜ ⚠ **五件本輪專利全部無量化值。** 專利訊號，非已出貨能力。
 ➜ 📌 **2026-09-26 建議 6（追 Intel JP2026108527A 之 US/EP 同族公開）本輪已檢索：該 family（99957829）於 `ti,ab="bridge" and ti,ab="glass" and pd within "2026"` 命中，但仍僅見 JP 公開案，未見 US/EP 同族 ⇒ 空缺維持開啟。**
+
+---
+
+## ⭐ 2026-09-28 更新：玻璃核心的「外圍」兩注——框（CTE<11）與側壁高分子塗層
+
+本輪自 EPO OPS `ti,ab="through glass via" and pd within "2026"` 取得 Intel 兩件同日公開（2026-01-01）之案件，**兩者處理的都不是玻璃本體，而是玻璃的邊界**：
+
+| 案號 | family | 對象 | 手段 | 量化值 |
+|------|--------|------|------|--------|
+| **US20260005114A1** | 98367295 | **框（frame）** | 框材料選擇 + **框中銅的百分比** | **CTE < 11** ⭐ |
+| **US20260005126A1** | 98368460 | **玻璃核心側壁（切割邊緣）** | **高分子塗層** | 無 |
+
+### 三項推論
+
+1. ⭐⭐⭐ **「玻璃在機械上不是單一材料」取得第四層級，且 Intel 貢獻了其中兩級**（③單片內部 CTE 梯度 US20260182414A1、④框層級 US20260005114A1）。
+2. ⭐⭐⭐ **2026-09-27 記載之「專利軌訊號以定性為主連續第七輪成立」本輪中斷**——US20260005114A1 帶有 **CTE <11** 的量化界定（⚠ 僅上界，未給單位、溫度區間與量測方法）。
+3. ⭐⭐ **本組兩注互補而非互斥**（框＝機械與 CTE；塗層＝斷裂起始點），**與 2026-09-27 記錄的「四條互斥橋幾何、三組不同發明人團隊」型態不同** ➜ **Intel 在不同子問題上採不同下注模式：橋的幾何是互斥探索，玻璃的邊界是互補補強。**
+
+📌 **新空缺：「hybrid panel」（US20260005114A1 標題用語）的非玻璃區域是什麼材料、占比多少？**
+📌 ⚠⚠ 2026-08-27 Tom's Hardware 之「邊緣應力 95 MPa → 49 MPa（edge-coating）」**與 US20260005126A1 手段相同但不得互相歸因**（專利無數值）。
+
+**來源**：[[sources/2026-09-28_intel_us20260005114a1-frames-glass-core-hybrid-panels-cte11]]、[[sources/2026-09-28_intel_us20260005126a1-glass-core-polymer-sidewall-coating]]

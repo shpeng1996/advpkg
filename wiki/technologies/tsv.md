@@ -3,7 +3,7 @@ title: "TSV — Through-Silicon Via / 矽穿孔"
 category: technology
 tags: [TSV, HBM, interposer, 3D-IC, CoWoS, manufacturing, backside-power, advanced-packaging, radiation, redundancy, reliability]
 created: 2026-08-10
-updated: 2026-09-27
+updated: 2026-09-28
 sources: [2026-09-27_wuhanuniv_cn121548325a-tgv-micro-nano-anchor-molecular-bridging, 2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-27_semieng_chip-week-156-india-tata-besi-izmo, 2026-04-22_semieng_tsv-complexity-manufacturing-bottleneck, 2026-08-21_semieng_chip-week-152, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-08-21_scirep_copper-oxide-reduction-ar-h2-pulsed-plasma, 2026-06-08_irtnanoelec_d2w-hybrid-bonding-1um-pitch, 2026-03-13_kaneka_jp2026047137a-glass-core-polyimide-quantified, 2026-08-10_screp_low-k-organic-buffer-tgv-cu-metallization, 2026-08-04_jmrt_vacuum-assisted-void-free-cu-fill-tgv, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring, 2026-09-26_patent_zhuhai-tiancheng-dual-depth-tsv-silicon-bridge, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_patent_er-eng-glass-interposer-dual-carrier, 2026-09-26_paper_lpkf-lide-glass-ap-cpo]
 related:
   - wiki/technologies/hbm4.md
@@ -504,3 +504,28 @@ Cornell 的推論鏈：**高分子 RDL 層數上限 3–4 層 ⇒ 必須上下�
 
 - **Micron 512 GB DDR5 伺服器模組**以 TSV 垂直堆疊 DRAM 晶粒（[[sources/2026-09-27_semieng_chip-week-156-india-tata-besi-izmo]]）。本 wiki 既有 TSV 記述多集中於 HBM 與中介層。
 - 與 2026-07-15「V-Die Mosaic 垂直記憶體」同屬「TSV 外溢至標準 DRAM」的趨勢。⚠ 無 TSV 尺寸、層數或 pitch 數據。
+
+---
+
+## ⭐ 2026-09-28 更新：TTV（Through Thermal Via）與 TGV 對接——貫穿孔的第二種用途
+
+**鈺創 Etron × ND Hi Tech Lab US20260090421A1（2026-03-26 公開，family 99140773）**
+
+一種含導熱材料之複合基板：玻璃基材兩面各一層 RDL，**另加一獨立的散熱層（thermal dissipation layer）疊在玻璃基材上，其貫穿散熱孔（TTV）延伸至 TGV**。
+
+### 為何重要
+
+- ⭐⭐⭐ **貫穿孔在本 wiki 中首次不是為了導電，而是為了導熱**，且**熱通道與電性通道被刻意安排在同一垂直軸上串接**（TTV extending to the TGV）。
+- ⭐⭐⭐ **2026-09-27 新增之「熱是繼電阻／電容／附著之後的第四個限制」首次出現在排他權層**（既有證據全來自 Amkor 熔斷電流實測，屬論文/新聞層）。
+- ⭐⭐ **玻璃低導熱（相對矽）一向被視為玻璃基板的固有弱點；本件顯示業界的回應不是換材料，而是在玻璃旁另疊一層散熱層並打穿它。**
+
+### 新空缺
+
+- 📌 ⭐ **TTV 與 TGV 的孔徑／節距是否須一致？** 若須一致，**散熱密度將被電性節距綁定**——這是一個尚未被討論的耦合，且會讓「加密 I/O」與「加強散熱」成為同一個受限資源的競爭者。
+- 📌 TTV 的孔徑、導熱係數、熱阻皆未揭露（摘要無任何量化值）。
+
+⭐ **鈺創（Etron，台灣 DRAM/IP 廠）與 ND Hi Tech Lab 皆為本 wiki 首見實體。**
+
+**來源**：[[sources/2026-09-28_etron_us20260090421a1-ttv-tgv-thermal-dissipation-layer]]
+
+⚠ 專利為前瞻訊號，非已出貨能力。

@@ -3,7 +3,7 @@ title: "先進封裝市場 / Advanced Packaging Market"
 category: concept
 tags: [market, forecast, CAGR, supply-chain, HBM, chiplet, geopolitics, equipment, SIA, Omdia, Yole, WFE, substrate-market, framework]
 created: 2026-04-24
-updated: 2026-09-27
+updated: 2026-09-28
 sources: [2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-07-31_semieng_chip-week-149, 2026-04-24_initial-survey, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2026-01-23_trendforce_chip-tools-tel-asml, 2026-03-05_trendforce_intel-emib-billions, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2025-12-18_trendforce_micron-capex-hbm4, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2025-05-13_trendforce_top10-osat-2024, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-04-16_ontoinnovation_dragonfly-g5-qualified, 2026-06-23_communicationstoday_foplp-glass-substrate-market-8b-2030, 2026-06-29_trendforce_china-osat-tongfu-jcet-investment, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-26_semieng_chip-week-144, 2026-07-01_trendforce_ase-price-hike-20pct, 2026-07-04_semieng_chip-week-145, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-07-03_trendforce_anthropic-samsung-advanced-packaging, 2026-05-08_trendforce_ajinomoto-abf-1b-land-buy-2032-margins, 2026-07-24_semieng_chip-week-148, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-08-06_siliconbox_500m-units-panel-scale, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-26_article_semiwiki-cowos-capacity-double-2028]
 related:
   - wiki/entities/tsmc.md
@@ -1038,3 +1038,58 @@ SemiWiki（2026-09-18）：**2026 年底 ~130K wpm（300 mm 當量）→ 2028 �
 
 其他：**AI/HPC 佔 2030 年該市場 45.6%**（The Elec）。
 ➜ 對照 Yole 的 PLP 兩個獨立驅動力（①高量製造 ②大封裝尺寸），**45.6% 的 AI/HPC 佔比顯示到 2030 年驅動力②已接近市場的一半** —— 這是本 wiki 首次能對該二分法給出權重。
+
+---
+
+## ⭐ 2026-09-28 更新：Yole 高階封裝 2031 >$51B——混合接合首次有依情境分項的 CAGR
+
+**Yole（經 Bits&Chips 2026-09-25 與 Chip Week 157 兩個獨立管道）**
+
+### 整體
+| 項目 | 數值 |
+|------|------|
+| 2031 高階封裝營收 | **>$51B**（約 5×） |
+| CAGR（2025–2031） | **27%** |
+| 封裝件數成長 | **+33%** |
+| 晶圓需求成長 | **+30%** |
+
+⭐⭐⭐ **三者的落差本身是結論**：金額六年約 4.2×，而件數僅 +33%、晶圓僅 +30% ➜ **高階封裝的成長幾乎全來自「每件價值提升」（更大封裝、更多 HBM、更多光罩倍數），而非件數增加。**
+
+### 依技術別 CAGR ★本輪最有價值的一組
+| 技術區隔 | CAGR |
+|----------|------|
+| **D2W 混合接合** | **約 65%** |
+| W2W 混合接合 | 更快，但基期更小 |
+| Mold interposer（CoWoS-L） | **28.1%** |
+| 3D NAND（混合接合） | **22.2%** |
+| CPO | 2025 近乎零 → 2031 **數億美元** |
+
+➜ **混合接合首次有依情境分項的市場成長率**（既有僅有設備面：Yole TCB+HB 設備 2030 $1.3B）。**D2W 65% vs 3D NAND 22.2% 的三倍落差，量化了「3D NAND 是混合接合的存量市場、D2W 邏輯/記憶體堆疊是增量市場」。**
+
+### 依終端市場（2031）
+- 電信與基礎設施：**>$36B（70%）**
+- 行動與消費性：次大
+- 車用：成長最快，**CAGR 36%**
+
+### 市場集中度
+- **前六大（Intel、TSMC、YMTC、SK hynix、Samsung、Micron）約占 2025 年營收 97%**
+
+➜ **高階封裝營收主要記在 IDM／代工／記憶體廠帳上，OSAT 在此定義下幾乎不入列** ⇒ 直接回應 overview 之「**OSAT 競爭格局**」缺概念頁：該頁**必須先界定「高階封裝營收如何歸屬」**，否則會與 ASE（全球最大 OSAT）的營收規模產生表面矛盾。
+
+### ⚠⚠ 三個 Yole 數字的定義邊界未釐清
+
+| 數字 | 範圍 | CAGR | 來源日期 |
+|------|------|------|---------|
+| 先進封裝 2024 >$40B → **2030 >$80B** | 全部先進封裝 | 9.5% | 2026-09-26 |
+| 其中 **2.5D/3D $10.2B** | 2.5D/3D | — | 2026-09-26 |
+| **高階封裝 2031 >$51B** | 「high-end」 | **27%** | **2026-09-28** |
+
+**「高階」顯然不等於 2.5D/3D（$10.2B），也不等於全部先進封裝（$80B）。三者並列保留，定義釐清前不得相除或作為比值引用。**
+
+➜ **此為 2026-09-27 新增之作業規範（10）（面板級市場三個分母的分歧須歸因於計入範圍）的第二次適用，且這次三個數字來自同一機構（Yole）。** ➜ **規範（10）應自「面板級」推廣為通則：凡同一機構出現多個口徑的市場數字，必須先標明口徑再引用。**
+
+### 其他
+- ⚠ **CPO「2031 數億美元」與 2026-07 TrendForce「2027–2028 放量」看似保守**；統計口徑（CPO 封裝產值 vs CPO 交換器系統產值）未確認，**不得相除或排序**。
+- 📌 Research and Markets「HBM 與先進封裝材料 2027–2037」報告（2026-09-28）**公告中無任何絕對數值**，唯一方法論價值為**以 CR1/CR3/HHI 衡量材料集中度** ➜ 是候選論述「面板級封裝的地緣集中在製造端而非設備與材料端」首個可量化檢驗的框架。
+
+**來源**：[[sources/2026-09-28_bitschips_yole-high-end-packaging-51b-2031-d2w-hb-cagr65]]、[[sources/2026-09-28_semieng_chip-week-157-imec-3d-dram-yole-51b]]、[[sources/2026-09-28_researchandmarkets_hbm-advanced-packaging-materials-2027-2037]]

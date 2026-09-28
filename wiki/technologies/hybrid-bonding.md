@@ -3,7 +3,7 @@ title: "混合接合 / Hybrid Bonding"
 category: technology
 tags: [3D, hybrid-bonding, Cu-Cu, SoIC, ECTC, advanced-packaging, DRAM, COP, 4F2, Sn-damascene, damascene-interconnect, PFAS-free, patent-signal, guard-ring, surface-activation]
 created: 2026-04-24
-updated: 2026-09-27
+updated: 2026-09-28
 sources: [2026-09-27_paper_binghamton-ibm-pad-scaling-resistance-variability, 2026-09-27_intel_us20260223702a1-direct-bonding-embedded-bridge-organic-cavity, 2026-05-21_semiecosystem_ectc2026-cpo-hybridbonding-plp, 2026-04-24_initial-survey, 2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-03-01_3dincites_besi-packaging-power-shift, 2026-01-13_semiengineering_hbm4-microbumps, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-19_semieng_advanced-packaging-limits, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-03-27_3dincites_copper-grain-hybrid-bonding, 2026-03-02_semieng_making-hybrid-bonding-better, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2026-04-29_semiwiki_cea-leti-ectc2026-hybrid-bonding, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2024-02-09_semianalysis_hybrid-bonding-process-flow, 2026-05-19_semiconductor-digest_ev-group-ectc2026-hybrid-bonding, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-04-19_semiwiki_apple-m5-cucu-hybrid-bonding-shipped, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-18_imec_iii-v-chiplet-rf-laser-bonding, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-29_evgroup_ectc2026-hybrid-bonding-layer-transfer, 2026-06-29_thelec_skhynix-hybrid-bonding-equipment-order, 2026-06-05_semieng_intel-ectc-2026-emib-t-cpo-glass, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-14_trendforce_samsung-hbm-hiring-hybridbonding, 2026-07-16_semieng_fine-pitch-hb-high-volume, 2026-07-16_semieng_alt-materials-hybrid-bonding, 2026-06-08_irtnanoelec_d2w-hybrid-bonding-1um-pitch, 2026-05-28_imec_w2w-hybrid-bonding-200nm-pitch, 2026-09-09_acsaelm_microwave-anneal-cu-cu-150c-3min, 2026-08-21_scirep_copper-oxide-reduction-ar-h2-pulsed-plasma, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-03-29_damnang_hybrid-bonding-cmp-gating-factor, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-04-02_adeia_us20260096463a1-buildup-organic-dielectric-bonding, 2026-07-17_jcet_cn122421815a-asymmetric-bonding-interface, 2026-04-30_seoultech_us20260123559a1-hydrocarbon-plasma-low-temp-bonding, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer, 2023-09-13_nccavs_intel-cmp-dishing-requirement-vs-achieved, 2026-03-11_epo_adeia-cmp-for-hybrid-bonding-patent, 2026-09-01_chip_ru-bpr-ntsv-ion-beam-recess, 2026-02-10_epo_shanghai-univ-citric-acid-cu-reduction-sog, 2026-09-21_semiconductorx_cmp-share-lam-sabre-correction, 2026-09-16_jsandwich_cucu-diameter-nonmonotonic-local-optimum, 2026-07-21_lam_sabre-3d-is-ecd-not-cmp, 2026-09-26_paper_dalian-cucu-bonding-review, 2026-09-26_patent_beijing-xinli-hybrid-bonding-dishing-activation, 2026-09-26_paper_ibm-amine-post-cmp-clean]
 related:
   - wiki/technologies/rdl.md
@@ -1734,3 +1734,94 @@ Amkor ETR（見 [[technologies/rdl]]）之 RDL CMP **dishing <90 nm 且與 over-
 
 **Intel US20260223702A1** 標題明載 direct bonding，對象是**埋入基板的橋晶粒**而非晶粒堆疊。詳見 [[technologies/emib]]。
 ➜ **新空缺：direct-bonded bridge 的目標 pitch**（EMIB-T 25 µm vs 混合接合量產 6–9 µm，差 3–4 倍）。
+
+---
+
+## ⭐ 2026-09-28 更新：接合金屬擴為四組、對準誤差拆為兩個獨立來源、限制鏈最前端插入第 0 環
+
+### 1. ⭐⭐⭐ 限制鏈新增第 0 環：晶粒在抵達接合機台之前是否還在膠帶上
+
+**Resonac「Chemical Resistant Dicing Tape for Hybrid Bonding Process」（IMAPS DPC 2026，2026-08-11）**
+
+| 項目 | 傳統 DCT | 新開發 DCT |
+|------|----------|-----------|
+| 80 °C 鹼性／溶劑液浸泡 10 min 之重量變化 | **9–36%**（黏著層脫落、捲曲） | **<1.3%**（無脫落無捲曲） |
+| 60 °C 化學清洗後晶粒飛散數 | **>200 顆** | **0 顆** |
+| 化學清洗後取放成功率 | — | **100%（180 顆/晶圓）** |
+
+製程條件：8 吋晶圓、厚 150 µm、晶粒 5 mm 見方、**電漿切割道寬 1 µm**；UV 10 mW/cm²、累積 350 mJ/cm²；取放高度 1.0 mm／速度 1.0 mm/s。
+
+➜ **限制鏈（2026-09-19 建立、2026-09-27 擴充）本輪自最前端再插入一環，完整版為：**
+
+**⓪ 晶粒保持（膠帶耐化性） → ① 表面平坦度**與化學組成** → ② die 翹曲 → ③ 機台對準 → ④ 晶粒取向（2 µm pitch 起，連續加劇）**
+
+- ⭐ **「>200 顆飛散 → 0 顆」是本 wiki 目前最直觀的良率斷崖數據，且原因不在接合機台、不在表面平坦度、不在 CMP。**
+- ⭐ **首次揭露「電漿切割的沉積層」是 D2W 特有的污染源**，並把清洗溫度（60–80 °C）與膠帶耐化性連上。
+- ⭐ **切割道寬 1 µm** 為 wiki 首見的電漿切割道寬數據（對比機械切割數十 µm）➜ **D2W 面積效率的隱形來源。**
+- 📌 **新空缺：電漿切割沉積層的化學組成？是否與 SiCN 接合面製備相容？**
+- ⚠ 供應商自述對照實驗，傳統 DCT 未具名；5 mm 見方晶粒偏大，HBM 級細小晶粒未驗證。
+
+### 2. ⭐⭐⭐ 對準誤差首次被拆為兩個不可互換的獨立來源
+
+**Tokyo Electron「Demonstration of <5nm Overlay Distortion for Backside Power Delivery」（IMAPS DPC 2026，2026-08-17）**
+
+| 項目 | 數值 |
+|------|------|
+| 校正前初始實測疊對 | 約 **80 nm M+3σ** |
+| CPE6 六項校正後（模擬） | **<4.5 nm M+3σ** |
+| 重工並施加校正後（實際） | **<7 nm M+3σ**，90% 晶圓面積 <4 nm |
+| **扣除掃描機雜訊後，接合製程本身的貢獻** | **<3 nm M+3σ** |
+| 接合後退火 | **200–400 °C** |
+| 中心變形可降低 / 應力環 / 邊緣變形 | **90% / 可完全消除 / >50%** |
+
+**三個不可校正失配來源**：**接合起始點**、**晶圓邊緣**、**晶圓中半徑處的應力環**。
+**線性變形最大貢獻者＝表面組成**；晶圓間變異主因＝整合流程（多晶圓機台依批次位置的系統性指紋）。
+
+➜ **對準誤差的兩個來源：**
+
+| | D2W 機台逐 die 對準 | W2W/fusion 接合誘發形變場 |
+|---|---|---|
+| 現況 | Besi Kinex 量產 **100 nm @3σ** | **<3 nm M+3σ**（扣雜訊後） |
+| 路線 | 2026 新機 50 nm → <25 nm | 目標 <4 nm 全晶圓 |
+| 物理 | 機械定位 | 晶圓級應力/形變 |
+
+⭐ **兩者數量級不同、物理不同、治理手段不同，不得互相引用或並列排序。** 這填補了 2026-09-18「D2W pitch 受限於機台對準」被推翻後留下的表述空白。
+
+⭐⭐⭐ **「扣除掃描機雜訊後接合本身 <3 nm」是 2026-09-21「重複性數據」作業規範被一手來源滿足的第一個案例** ➜ 該規範自「要求」升格為「已有可援引範例」。
+
+⭐⭐⭐ **限制鏈第 ① 環須自「表面平坦度」擴為「表面平坦度 + 表面化學組成」**（TEL：線性變形最大貢獻者是 surface composition）。
+
+⚠ 本件情境為 BSPD（前段背面供電），**其 <4 nm 目標不可直接套用到封裝級混合接合的節距推論**。
+
+### 3. ⭐⭐⭐ 接合金屬組合自「Cu–Cu 主線」擴為至少四組
+
+**Texas A&M「Process Integration of Direct Al-Cu Bonding」（IMAPS DPC 2026，2026-08-17）**
+
+| # | 金屬組合 | 來源 | 狀態 |
+|---|---------|------|------|
+| 1 | **Cu–Cu** | 主線（TSMC SoIC 6 µm、Intel Foveros Direct 9 µm） | 量產 |
+| 2 | **Ru/SiO₂** | 哈工大 × 明星大學 `10.1016/j.jallcom.2026.191266` | ⚠ **全文兩度取得失敗**（Elsevier 阻擋） |
+| 3 | **Ag–Cu** | KITECH × 大阪大 `10.1016/j.matchar.2026.117046` | 未採（列下輪） |
+| 4 | **Al–Cu** | **本件 Texas A&M** | 實驗室 |
+
+關鍵論點：
+- **22nm 等先進 CMOS 的 BEOL 頂層金屬是鋁**，中介層頂層是銅 ⇒ **異種金屬界面才是實際問題**
+- 業界既有解法是加 **UBM 阻障層**；本件主張**直接 Al–Cu 接合可行，省去 UBM**
+- ⭐ **障礙明確歸因於氧化物：銅氧化物成長慢、可控；鋁氧化物成長難控**，須惰性環境或真空
+- 手段：**表面活化 + 氧化物去除 + 保持惰性直到接合**
+- 元件：**GlobalFoundries 22nm CMOS FDSOI**；接合於 Rice University（Finetech Fineplacer Lambda）
+- ⭐ **首次以 RF（50 Ω CPW/CPS、S 參數）作為接合品質判準**，而非電阻或剪切強度
+
+➜ **直接回應長期未結清空缺「惰性環境 Cu 氧化相門檻（queue time 形式）」：鋁的氧化控制難度遠高於銅 ⇒ 該空缺須自「銅」分拆為「依金屬分別討論」，且鋁的 queue time 窗口應顯著更短。**
+
+➜ **新候選論述：「先進封裝的第二條價值軸是步驟數，且它與規格軸互相獨立。」** 本件（省 UBM）與 2026-09-26 Amkor ETR（步驟比 dual damascene 少 40%）為同型態的兩個實例。
+
+⚠⚠ **本文無任何量化值**（摘要明載量測結果將於延伸摘要呈現）——**不得記述為「Al–Cu 已達成 X 性能」。**
+
+### 4. ⭐⭐⭐ 市場面：D2W 混合接合 CAGR 約 65%，為全場最高
+
+**Yole（via Bits&Chips，2026-09-25）**：D2W 混合接合 **CAGR 約 65%**；W2W 更快但基期更小；**3D NAND（混合接合）22.2%**；mold interposer（CoWoS-L）28.1%。
+
+➜ **混合接合首次有依情境分項的市場成長率**（既有僅設備面 Yole $1.3B/2030）。**D2W 65% vs 3D NAND 22.2% 的三倍落差，量化了「3D NAND 是存量市場、D2W 邏輯/記憶體堆疊是增量市場」。**
+
+**來源**：[[sources/2026-09-28_paper_resonac-chemical-resistant-dicing-tape-hybrid-bonding]]、[[sources/2026-09-28_paper_tel-backside-power-overlay-distortion-sub5nm]]、[[sources/2026-09-28_paper_texasam-direct-al-cu-bonding-no-ubm]]、[[sources/2026-09-28_bitschips_yole-high-end-packaging-51b-2031-d2w-hb-cagr65]]

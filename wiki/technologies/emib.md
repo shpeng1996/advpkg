@@ -3,7 +3,7 @@ title: "EMIB — Embedded Multi-Die Interconnect Bridge"
 category: technology
 tags: [Intel, 2.5D, silicon-bridge, chiplet, HBM4, Foveros, glass-substrate, EMIB-T, EMIB-M, silicon-capacitors, power-delivery, HLFF, encapsulation, underfill]
 created: 2026-05-03
-updated: 2026-09-27
+updated: 2026-09-28
 sources: [2026-09-27_intel_us20260223702a1-direct-bonding-embedded-bridge-organic-cavity, 2026-09-27_intel_cn122270166a-stacked-glass-silicon-bridge-assembly-ar20, 2026-09-27_samsung_us20260144093a1-bridge-on-tgv-mold-fixed, 2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-03-05_trendforce_intel-emib-billions, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-03-03_trendforce_intel-clearwater-forest, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks, 2026-06-21_convergedigest_intel-emib-t-multi-die-packaging, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap, 2026-06-05_semieng_intel-ectc-2026-emib-t-cpo-glass, 2026-01-30_tomshardware_intel-ai-chip-test-vehicle-emib-t, 2026-08-04_semieng_from-blueprint-intel-hlff, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_patent_zhuhai-tiancheng-dual-depth-tsv-silicon-bridge, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-26_paper_yole-advanced-packaging-market-ai-era]
 related:
   - wiki/entities/intel.md
@@ -485,3 +485,35 @@ SemiWiki（2026-09-18）：CoWoS 產能自 **2026 年底 ~130K wpm** 倍增至 *
 
 Intel 於 **2026-01 NEPCON Japan** 展出 **EMIB + 玻璃核心基板原型**（[[sources/2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm]]）。
 ➜ 2026-09-26 記為「EMIB 與玻璃基板兩條主線首次在排他權層合流」；**本條顯示展品層的合流早了約 8 個月**，與 2026-09-22「論文是落後指標」的時間位移觀察同型（排他權／展品／發表三者的時序須分別標註）。
+
+---
+
+## ⭐ 2026-09-28 更新：Samsung 模封式橋接再增兩件——「橋的每個表面是獨立的設計變數」
+
+本輪自 EPO OPS 檢索式 `ti,ab="bridge" and ti,ab="mold" and pd within "2026"` 取得 Samsung 兩件新案（另一件 US20260144093A1 已於 2026-09-27 收錄）。
+
+### Samsung 橋載體三件對照
+
+| 案號 | family | 公開日 | 橋的位置 | 朝向晶粒面 | 側面 | 背面 |
+|------|--------|--------|---------|-----------|------|------|
+| **US20260068717A1** | 98899522 | **2026-03-05** | **RDL 背面**（晶粒在另一面） | 接 RDL | 第二模封層 | 第二模封層 |
+| **US20260090411A1** | 99140804 | **2026-03-26** | **RDL 下表面** | 接 RDL | **模封膜** | **保護膜** |
+| US20260144093A1 | 99804083 | 2026-05-21 | **TGV 之上**，模封固定 | 接 TGV 上方 | 模封（含凸塊側面） | — |
+
+### 三項推論
+
+1. ⭐⭐⭐ **2026-09-27 建立的「埋／不埋是比埋進什麼更上位的分歧軸」，其 Samsung 側不是單一案。** 最早的一件（2026-03-05）比既有記載的那件早了兩個半月，且幾何不同。➜ **Samsung 的「不埋」是自 2026 Q1 起的連續布局。**
+
+2. ⭐⭐⭐ **「模封式橋接」的申請人自 ASE 一家擴為 ASE + Samsung，Samsung 側本輪一次增加兩件（合計三件）。** ➜ **Yole 的「2.5D Bridge in Mold」分類已不再是邊緣選項。**
+
+3. ⭐⭐⭐ **新候選論述：「在模封式橋接中，橋的每一個表面是獨立的設計變數，而非一次成型的包覆問題。」** 同一申請人、同一拓撲、相隔 20 天的兩件不同 family，**差別只在橋背面的包覆材料**（第二模封層 vs 保護膜）。➜ **2026-09-27「Intel 多團隊平行下注」的型態首次在 Samsung 出現，且下注粒度更細**——不是路線之爭，是同一路線內部的材料分歧。
+
+### 新空缺
+
+- 📌 ⭐ **跨 RDL 的橋接，其 D2D 走線須穿過 RDL 的 via，是否構成額外的節距下限？** 橋在 RDL 的「背面」而非同側，與 Intel EMIB（橋埋在基板頂層、與晶粒同側）在拓撲上根本不同。**若確有額外下限，則「模封式橋接是低成本替代」的既有定位須修正**（低成本但節距天花板更低）。
+- 📌 **US20260090411A1 保護膜之材料與功能未揭露。** 合理假設為翹曲控制或研磨停止層，**但無任何佐證，不得記述為散熱或翹曲用途。** 追蹤方式：後續 Samsung 同族案是否出現熱阻、翹曲量或研磨製程之請求項。
+- 📌 **Samsung I-Cube / LSB 技術缺頁**（overview 列管中）本輪累積第三、四件建頁材料，建頁條件趨於達成。
+
+**來源**：[[sources/2026-09-28_samsung_us20260068717a1-bridge-die-second-mold-film]]、[[sources/2026-09-28_samsung_us20260090411a1-bridge-die-mold-plus-protective-film]]
+
+⚠ 專利為前瞻訊號，非已出貨能力。兩件**均無量化值**（無節距、無層數、無尺寸）。

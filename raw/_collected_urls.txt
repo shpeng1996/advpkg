@@ -655,3 +655,18 @@
 2026-09-27 | https://doi.org/10.1016/j.mtla.2026.102903 | raw/papers/2026-09-27_openalex_binghamton-ibm-pad-scaling-interface-resistance-variability.md | Binghamton x IBM 墊4->0.8um；變異隨微縮加寬
 2026-09-27 | https://doi.org/10.4071/001c.166903 | raw/papers/2026-09-27_openalex_globalfoundries-siph-cpo-paradigm-shift.md | GF CPO：銅<1 vs 光>5 Tb/s/mm；2-5 pJ/bit
 2026-09-27 | https://doi.org/10.4071/001c.166907 | raw/papers/2026-09-27_openalex_agc-glass-core-fully-filled-vs-conformal-tgv-pwg-roadmap.md | AGC 填滿vs conformal TGV電性無差；PWG路線圖
+2026-09-28 | https://siliconanalysts.com/newsletter/qual-watch/2026-09-14 | raw/articles/2026-09-28_siliconanalysts_hbm4-16hi-volume-cowos-leadtime-78-weeks.md | HBM4 16-Hi volume; CoWoS lead time 52-78 weeks
+2026-09-28 | https://semiengineering.com/chip-industry-week-in-review-157/ | raw/articles/2026-09-28_semieng_chip-week-157-imec-3d-dram-yole-51b.md | Chip Week 157: imec 3D DRAM, Yole $51B, Brewer
+2026-09-28 | https://bits-chips.com/article/ai-drives-high-end-packaging-market-past-51b-by-2031/ | raw/articles/2026-09-28_bitschips_yole-high-end-packaging-51b-2031-d2w-hb-cagr65.md | Yole high-end pkg $51B 2031; D2W HB CAGR ~65%
+2026-09-28 | https://www.imec-int.com/en/press/imec-mitigates-thermal-bottleneck-3d-hbm-gpu-architectures-using-system-technology-co | raw/articles/2026-09-28_imec_3d-hbm-on-gpu-stco-141-to-70c.md | imec 3D HBM-on-GPU STCO 141.7 to 70.8 C
+2026-09-28 | https://www.globenewswire.com/news-release/2026/09/28/3369584/28124/en/high-bandwidth-memory-hbm-and-advanced-packaging-materials-market-for-ai-semiconductors-2027-2037-hybrid-bonding-glass-substrates-and-advanced-cooling-unlock-growth.html | raw/reports/2026-09-28_researchandmarkets_hbm-advanced-packaging-materials-2027-2037.md | HBM & AP materials market 2027-2037 (announcement)
+2026-09-28 | EPO:98367295:US20260005114A1 | raw/patents/2026-09-28_US20260005114A1_intel-frames-glass-core-hybrid-panels-cte11.md | Intel frames for glass core hybrid panels, CTE<11
+2026-09-28 | EPO:99140773:US20260090421A1 | raw/patents/2026-09-28_US20260090421A1_etron-ndhitech-ttv-tgv-thermal-dissipation.md | Etron/ND Hi Tech TTV meeting TGV thermal path
+2026-09-28 | EPO:98899522:US20260068717A1 | raw/patents/2026-09-28_US20260068717A1_samsung-bridge-die-second-mold-film.md | Samsung bridge die under RDL, second mold film
+2026-09-28 | EPO:99140804:US20260090411A1 | raw/patents/2026-09-28_US20260090411A1_samsung-bridge-die-mold-protective-film.md | Samsung bridge die mold film + protective film
+2026-09-28 | EPO:98368460:US20260005126A1 | raw/patents/2026-09-28_US20260005126A1_intel-glass-core-polymer-sidewall-coating.md | Intel polymer coating on glass core sidewall
+2026-09-28 | https://arxiv.org/abs/2609.24343 | raw/papers/2026-09-28_arxiv_imec-3d-volumetric-dram-on-gpu-thermal-envelope.md | imec 3D volumetric DRAM-on-GPU thermal envelope
+2026-09-28 | https://doi.org/10.4071/001c.167490 | raw/papers/2026-09-28_openalex_texasam-direct-al-cu-bonding-no-ubm.md | Texas A&M direct Al-Cu bonding, no UBM
+2026-09-28 | https://doi.org/10.4071/001c.167494 | raw/papers/2026-09-28_openalex_tel-backside-power-overlay-distortion-sub5nm.md | TEL bonding-induced overlay distortion <3nm
+2026-09-28 | https://doi.org/10.4071/001c.166914 | raw/papers/2026-09-28_openalex_samsung-ultrathick-pr-high-ar-cu-pillar.md | Samsung ultra-thick PR >220um, AR>8.1, 512 I/O
+2026-09-28 | https://doi.org/10.4071/001c.166933 | raw/papers/2026-09-28_openalex_resonac-chemical-resistant-dicing-tape-hb.md | Resonac chem-resistant dicing tape for D2W HB

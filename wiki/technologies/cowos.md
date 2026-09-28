@@ -3,7 +3,7 @@ title: "CoWoS — Chip-on-Wafer-on-Substrate"
 category: technology
 tags: [2.5D, interposer, TSMC, AI, HPC, HBM, COUPE, CPO, packaging-constraints, NVIDIA]
 created: 2026-04-24
-updated: 2026-09-26
+updated: 2026-09-28
 sources: [2026-08-13_semieng_1mw-rack-debate-thermal, 2026-08-05_trendforce_tsmc-cowos-cow-outsourcing-osat, 2026-05-24_techtimes_nvidia-computex2026-cowos, 2026-04-24_initial-survey, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-15_trendforce_tsmc-vanguard-stake-sale, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-09_financialcontent_tsmc-130k-cowos-wafers, 2026-06-09_digitimes_tsmc-cowos-soic-capacity-symposium, 2026-06-15_trendforce_tsmc-cowos-gap-narrowing-130k-200k-wafers, 2026-06-10_tomshardware_tsmc-fab-expansion-roadmap-n2-cowos-soic, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_tmtpost_tsmc-cowos-capacity-targets-2026-2027, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-26_paper_yole-advanced-packaging-market-ai-era]
 related:
   - wiki/entities/tsmc.md
@@ -509,3 +509,34 @@ Yole 對 CoWoP/CoPoS 方向的描述為「cost-efficient, high power and signal 
 ### ⭐⭐ 封裝放大的分母：每片晶圓晶粒數 16 → 14 → 4
 Yole 封裝尺寸對照：**AMD MI300** ~75×75 mm²（2,927 mm² / 3.5× 光罩，**4 dies/wafer**）；**NVIDIA Blackwell** ~70×80 mm²（~7,885 mm² / 9.5× 光罩）；**NVIDIA Rubin Ultra > 150×100 mm²**。每片晶圓晶粒數序列 **16 → 14 → 4**。
 ➜ **為「封裝放大 ⇒ 單位成本上升」提供本 wiki 首個直接量化的分母。**
+
+---
+
+## ⭐ 2026-09-28 更新：CoWoS 交期 52–78 週——本 wiki 第三個獨立的供需指標
+
+**Silicon Analysts Weekly, Qual Watch #14（2026-09-14）**
+
+| 項目 | 數值 |
+|------|------|
+| **CoWoS 交期（lead time）** | **52–78 週** |
+| TSMC CoWoS 產能 2026 | 約 120,000–130,000 wpm |
+| TSMC CoWoS 產能 2027 | 約 141,000–170,000 wpm（部分估至 200,000） |
+| Broadcom CoWoS 配額 | 約 **150,000–240,000 片晶圓（約占總配額 15%）** |
+
+### ⭐⭐⭐ 三個供需指標首次並列，並出現張力
+
+| # | 指標 | 現況 | 來源 |
+|---|------|------|------|
+| 1 | 產能（wpm） | 2026 年底 120–140K | 多來源 |
+| 2 | 供需缺口 | 2026 年底自 20% 收斂至 **10%** | TrendForce 2026-06-15 |
+| 3 | **交期** | **52–78 週（約 12–18 個月）** | **Silicon Analysts 2026-09-14** |
+
+⚠⚠ **缺口在收斂、交期卻在拉長**（同來源 2026-08-25 記為「超過 12 個月」，本期具體化為上界 78 週）。
+
+📌 **新空缺：缺口收斂與交期拉長是否矛盾？** 最合理的解釋為「**新增產能已被長約預訂，故現貨交期仍長**」，但**無任何佐證，不得作為結論記載**。追蹤方式：TSMC 或 OSAT 對 CoWoS 長約比例的任何公開表態。
+
+⭐ **Broadcom 約 15% 配額補上既有「NVIDIA 逾半、Broadcom 第二、AMD 第三」序列中的絕對值。**
+
+⚠ 本來源為訂閱制電子報之公開摘要，數字多為區間而非單點，且部分標為「估計」；引用時須保留區間。
+
+**來源**：[[sources/2026-09-28_siliconanalysts_hbm4-16hi-volume-cowos-leadtime-78-weeks]]

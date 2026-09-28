@@ -3,7 +3,7 @@ title: "HBM4 — High Bandwidth Memory 4"
 category: technology
 tags: [memory, HBM, JEDEC, standards, AI, HPC, HBM4E, cleanroom, capacity, ISSCC2026, ZAM, HB3DM, HBM5, zHBM, HPB, FMS-2026, ECC, reliability, FIT]
 created: 2026-04-24
-updated: 2026-09-20
+updated: 2026-09-28
 sources: [2026-08-13_semieng_1mw-rack-debate-thermal, 2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor, 2026-08-10_trendforce_skhynix-chongqing-sale-global-reset, 2026-08-05_trendforce_samsung-v10-zhbm-hbm5-fms2026, 2026-07-30_trendforce_samsung-ds-q2-2026-hbm4-triple-q3, 2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-03-18_trendforce_intel-emib-malaysia, 2026-01-23_trendforce_hbm4e-samsung-skhynix-mid2026, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-01-13_semiengineering_hbm4-microbumps, 2025-12-18_trendforce_micron-capex-hbm4, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h, 2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-03-03_trendforce_sk-hynix-hbm4-tight-gaps, 2025-08-12_semianalysis_hbm-roadmap, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit, 2026-06-09_astutegroup_hbm-market-share-2026-battle, 2026-06-10_trendforce_samsung-gwangju-packaging-base, 2026-06-15_trendforce_skhynix-hbm4e-sample-timeline-pulled-forward, 2026-06-20_techtimes_skhynix-hbm4e-12layer-samples, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-27_tweaktown_hbm4-16hi-nvidia-supply-fight, 2026-06-26_semieng_chip-week-144, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-14_trendforce_samsung-hbm-hiring-hbm4-hbm4e-hbm5, 2026-07-14_trendforce_skhynix-yongin-y1-feb2027, 2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b, 2026-08-13_trendforce_samsung-skhynix-hbm4-2h-earnings-pricing, 2026-08-25_trendforce_nvidia-server-hike-hbm-price-2027, 2026-08-28_trendforce_skhynix-indiana-hbm4e-3q29-supply-2030, 2026-08-26_tomshardware_hbf-hot-chips-oxmiq-limited-usability, 2026-08-21_electronics_dual-interposer-hbm-power-integrity, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-09-09_acsaelm_microwave-anneal-cu-cu-150c-3min, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-03-29_damnang_hybrid-bonding-cmp-gating-factor, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling]
 related:
   - wiki/entities/sk-hynix.md
@@ -1413,3 +1413,38 @@ SemiconSam（**2025-09-18**）當時記載：**Samsung 自 HBM4E 16-high、SK hy
 KAIST × **Samsung** × KITECH（JMRT 2026-09-01）以雙面 DRAM 模組為對象，顯示**翹曲淨值僅 +8.6% 而 PCB 局部應力 +30.5%**——翹曲作為單一純量會低估熱-機械風險。
 
 ⚠ 對象為 PCB 級模組，**非 HBM 堆疊內部**，數值不可外推。但與本 wiki 既有的「Samsung die 翹曲允收 <100 nm」並讀，顯示**以翹曲數值驗收**這個做法在記憶體廠內部已有相反的學術證據。詳見 `wiki/concepts/thermal-management.md` 與 `wiki/concepts/test-metrology-packaging.md` 同日段落。
+
+---
+
+## ⭐ 2026-09-28 更新：SK hynix 16-Hi 轉量產（48 GB）、Samsung 2027 產出加倍、GUC 進入 HBM4E PHY 生態
+
+### 1. 三廠階段落差明確化（Silicon Analysts, 2026-09-14）
+
+| 廠商 | HBM4 狀態 | 細節 |
+|------|-----------|------|
+| **SK hynix** | **2026 Q3 量產出貨** | 供 Vera Rubin，**48 GB 組態**（16-Hi） |
+| Samsung | **最終認證階段** | 與 NVIDIA；12-Hi 亦在最終認證 |
+| Micron | （本期未提） | — |
+
+位元市占：SK hynix **50–62%**；Samsung **17–33%**（Q1 21–22% → Q2 約 33%，季增明顯）。
+
+➜ **「16-Hi 量產」自 2026-09 的傳聞層進入出貨層，且 48 GB 是本 wiki 首次取得的 16-Hi 單堆疊容量。**
+
+### 2. Samsung 2027 產出至少加倍（Chip Week 157，2026-09-25）
+
+Samsung 擬於 **2027 年將 HBM4 家族產出至少加倍**（Seoul Economic Daily）。➜ 與上述「Q2 位元市占自 21–22% 升至約 33%」方向一致。
+
+### 3. ⭐ GUC 進入 HBM4E base die／PHY 生態（Chip Week 157）
+
+**GUC 之 HBM4E PHY 與控制器已在 TSMC N2P 上 design-ready**，並獲客戶 AI ASIC 採用。
+
+➜ **HBM4E base die 供應鏈本輪新增第五個名字，且身分型態不同：**
+
+| 角色 | 名單 |
+|------|------|
+| Base die 代工 | TSMC（SK hynix 12nm-class、Micron）、Samsung（4nm 自製）、**Intel Foundry（傳聞，SK hynix 評估中）** |
+| **PHY／控制器 IP 與 ASIC 設計服務** | **GUC（on TSMC N2P）** ⭐新增 |
+
+➜ **既有記載全部是「誰做 base die」；GUC 是第一個以「誰做 base die 上的 PHY」身分出現的名字** ⇒ overview 列管之「**HBM base die 供應鏈**」缺概念頁，其分層架構本輪首次清楚：**製造層（代工）／IP 層（PHY、控制器）／整合層（記憶體廠）。**
+
+**來源**：[[sources/2026-09-28_siliconanalysts_hbm4-16hi-volume-cowos-leadtime-78-weeks]]、[[sources/2026-09-28_semieng_chip-week-157-imec-3d-dram-yole-51b]]

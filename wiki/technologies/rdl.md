@@ -3,7 +3,7 @@ title: "RDL — 重分佈層 / Redistribution Layer"
 category: technology
 tags: [RDL, SAP, dual-damascene, embedded-trace, ETR, polyimide, FPIM, CMP, electromigration, panel-level, pad-less-via]
 created: 2026-09-26
-updated: 2026-09-27
+updated: 2026-09-28
 sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2026-09-27_paper_purdue-ru-cu-em-lifetime-blacks-n-0154, 2026-09-27_paper_copper-interconnect-scaling-roadmap-lines-per-mm, 2026-09-26_article_taiyo-imec-700nm-damascene-rdl, 2026-09-26_article_imec-1um-damascene-rdl-2019-anchor, 2026-09-26_article_amkor-embedded-trace-rdl, 2026-09-26_paper_asi-1um-hdbu-substrate, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-25_paper_dnp-glass-rdl-electromigration-lifetime, 2026-09-25_paper_cornell-glass-on-glass-sio2-rdl, 2026-09-25_paper_asu-molded-core-substrate-warpage]
 related:
   - wiki/technologies/foplp.md
@@ -177,3 +177,46 @@ RDL 是在晶粒或封裝面上以薄膜製程做出的細線佈線層，把晶�
 - **GlobalFoundries**（[[sources/2026-09-27_globalfoundries_siph-cpo-bandwidth-density-coupling-budget]]）：銅 **<1 Tb/s/mm、>5 pJ/bit** vs 光 **>5 Tb/s/mm、2–5 pJ/bit**，主張範式轉移。
 
 ➜ **本 wiki 首次在同一資料源、同一時點捕捉到 CPO 的核心爭點。並列不裁定。** ⚠ 兩者的「Tb/s/mm」定義（每 mm 邊長 vs 每 mm² 面積）未確認，**比值不得相除**。
+
+---
+
+## ⭐ 2026-09-28 更新：先進封裝的微影分裂為兩個相反的極端——細線窄膜 vs 粗線厚膜
+
+**Samsung「Ultra-Thick PR Patterning for High Aspect Ratio Fine Pitch Cu Pillars Enabling Advanced LPDDR Packaging」（IMAPS DPC 2026，2026-08-11）**
+
+| 項目 | 數值 |
+|------|------|
+| 目標記憶體頻寬 | **>200 GB/s** |
+| 傳統打線最小節距 | 60 µm |
+| 本案銅柱節距 | **<60 µm** |
+| 銅柱深寬比 | **AR > 8.1** |
+| I/O 數 | **最高 512 pins** |
+| **光阻膜厚** | **>220 µm** |
+| **曝光機數值孔徑** | **低 NA < 0.12** |
+
+### ⭐⭐⭐ 新候選論述：微影的兩個相反極端
+
+wiki 既有微影記載**全部朝更細線寬走**：ASML XT:260 3D DUV、CFMEE PLP 2000 之 2 µm 直寫、USHIO 510×515 mm 無拼接曝光、Taiyo×imec 700 nm dual damascene、Amkor ETR 2/1 µm。
+
+**本件是第一個朝更厚膜走的一手案例，且其機台需求方向相反——要降低 NA（<0.12），不是提高 NA。** 理由：低 NA 顯著改善超厚光阻的**焦深裕度**，有利垂直側壁、低 taper；垂直側壁降低孔洞的上下尺寸差，才能可靠定義細節距銅柱。
+
+➜ **「先進封裝的微影分裂為兩個相反的極端——細線窄膜（RDL）與粗線厚膜（銅柱／電鍍阻劑），二者不共用機台最佳化方向。」**
+
+⭐ 與 IMAPS 同場之 `10.4071/001c.166942`（Development of Thick High Aspect Ratio Plating Resist Technology，本輪未採）**構成同一主題的第二個獨立來源** ⇒ 厚膜微影為 IMAPS DPC 2026 的獨立主題群，非孤例。
+
+### ⭐⭐⭐ 與「導體縱橫比」指標的銜接：同一封裝內電鍍模具厚度跨三個數量級
+
+2026-09-27 建立的 RDL 銅厚分佈為 **0.2–9 µm**（ASI 0.2–0.4 / imec-JSR 1.6 / Amkor HDFO 3 per layer / Amkor WLP 5–9），落差 45×。
+
+**本件的銅柱側電鍍模具厚度為 220 µm。**
+
+➜ **同一片封裝內，電鍍模具厚度自 0.2 µm 到 220 µm，跨越三個數量級（約 1,000×）。**
+
+➜ **2026-09-27 之作業規範（7）（凡以 A/cm² 或 MTTF 表述的 RDL 可靠度結論，未同時標明銅厚與線寬者不可跨路線引用）須擴及銅柱側**：銅柱與 RDL 的電流承載結論**不得互相援引**。
+
+⚠ 本件未給銅柱本身的直徑與高度絕對值（僅 AR 與光阻厚度），**不得反推節距與柱徑組合**。⚠ 未給良率與可靠度數據。
+
+### 相關
+- **512 pins / <60 µm / >200 GB/s 構成行動端「寬 I/O」的具體規格錨點**，可與 [[entities/qualcomm]] 的 **HBC（3D-LPDDR + 有機基板，宣稱 6× BW/W）** 對照——兩者是同一問題（行動端記憶體頻寬）的兩種答案：**加 I/O vs 改架構。**
+
+**來源**：[[sources/2026-09-28_paper_samsung-ultrathick-pr-high-ar-cu-pillar-lpddr]]
