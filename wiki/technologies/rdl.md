@@ -3,7 +3,7 @@ title: "RDL — 重分佈層 / Redistribution Layer"
 category: technology
 tags: [RDL, SAP, dual-damascene, embedded-trace, ETR, polyimide, FPIM, CMP, electromigration, panel-level, pad-less-via]
 created: 2026-09-26
-updated: 2026-09-28
+updated: 2026-09-29
 sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2026-09-27_paper_purdue-ru-cu-em-lifetime-blacks-n-0154, 2026-09-27_paper_copper-interconnect-scaling-roadmap-lines-per-mm, 2026-09-26_article_taiyo-imec-700nm-damascene-rdl, 2026-09-26_article_imec-1um-damascene-rdl-2019-anchor, 2026-09-26_article_amkor-embedded-trace-rdl, 2026-09-26_paper_asi-1um-hdbu-substrate, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-25_paper_dnp-glass-rdl-electromigration-lifetime, 2026-09-25_paper_cornell-glass-on-glass-sio2-rdl, 2026-09-25_paper_asu-molded-core-substrate-warpage]
 related:
   - wiki/technologies/foplp.md
@@ -220,3 +220,59 @@ wiki 既有微影記載**全部朝更細線寬走**：ASML XT:260 3D DUV、CFMEE
 - **512 pins / <60 µm / >200 GB/s 構成行動端「寬 I/O」的具體規格錨點**，可與 [[entities/qualcomm]] 的 **HBC（3D-LPDDR + 有機基板，宣稱 6× BW/W）** 對照——兩者是同一問題（行動端記憶體頻寬）的兩種答案：**加 I/O vs 改架構。**
 
 **來源**：[[sources/2026-09-28_paper_samsung-ultrathick-pr-high-ar-cu-pillar-lpddr]]
+
+---
+
+## 2026-09-29 更新：層數上限延至 12 層；imec 試產線 1.3 µm；厚膜端取得第二個獨立來源
+
+### 1. ⭐⭐⭐ 層數端的新上限：ASE FOCoS 最高 12 層
+
+（TrendForce，更新 2026-09-11）
+
+| 項目 | 數值 |
+|------|------|
+| ASE FOCoS 互連密度 | **50×** 傳統 flip-chip |
+| ASE FOCoS-Bridge | **200×+** |
+| **ASE FOCoS RDL 層數** | **3–6 層，最高至 12 層** |
+
+➜ 本頁既有之「線寬 vs 層數互換關係」兩點為 **ASI 1 µm / 2 層** 與 **Amkor 2/1 µm / 6 層能力**。**12 層把層數軸延長一倍。**
+⚠ **本件未給 FOCoS 12 層對應的線寬，故該點尚不能放入同一張互換曲線**，僅能記為層數端新上限。
+📌 **新空缺：ASE FOCoS 12 層 RDL 對應的線寬／節距。**
+
+### 2. ⭐⭐⭐ imec NanoIC 試產線：RDL 1.3 µm、微凸塊 20 µm
+
+（⚠ 二手來源，見下方品質註記）
+
+細線寬端的既有序列：Taiyo×imec **700 nm** → imec/JSR **1.0 µm** → **imec NanoIC 試產線 1.3 µm（新）** → ASI **1 µm** ／ Amkor ETR **2/1 µm** ／ CFMEE 直寫 **2 µm**。
+
+➜ **1.3 µm 可視為 imec 自家研究值（700 nm–1.0 µm）的「試產線落地值」**，填上研究線與量產線之間的空檔。
+- 同來源：**微凸塊節距 20 µm**；**UCIe-Advanced 通訊速度 +40%、每位元能耗 −15%**（⚠ **基準線未述，列待證，不得單獨引用**）。
+⚠⚠ **來源品質**：3D InCites 客座投稿（Vyansa Intelligence），二手轉述、未附原始出處、發布日僅能定到 2026-09。**依 2026-09-21 所立之官網複核規則，上述數字在被其他頁引用前應另尋一手來源複核。**
+
+### 3. ⭐⭐⭐ 厚膜端第二個獨立來源：>50 µm 是關鍵門檻，且競爭要素是「相容現有曝光機」
+
+（IMAPS DPC 2026，`10.4071/001c.166942`）
+
+| 項目 | 內容 |
+|------|------|
+| 關鍵厚度門檻 | **>50 µm** |
+| 化學系統 | **化學增幅型負型** |
+| 去除 | 商用去除劑／標準溶劑顯影液，**無殘留**，不需專有 stripper |
+| 曝光機 | 需**相容於「widely available exposure tools」** |
+| 選負型之理由 | 機械穩定、感光速度快、操作成本低、對多數基材附著較佳 |
+
+➜ **2026-09-28 記載之 Samsung「超厚光阻 >220 µm、AR>8.1、節距 <60 µm、低 NA <0.12 改善焦深」取得第二個獨立來源**，且由**材料供應商側**提出：Samsung 給**元件側需求**，本件給**材料側門檻**。
+➜ **「先進封裝的微影分裂為兩個相反極端」論述取得第二根支柱**，且本件明確指出**厚膜端的競爭要素是「與現有曝光機相容」**——與細線寬端（直寫、投影微影、ASML XT:260 專用機）方向相反。**兩個極端不共用機台最佳化方向，亦不共用商業邏輯。**
+➜ ⭐⭐ **「厚銅 + 高 AR ⇒ 垂直互連並減少層數」是互換關係的第三種取捨方向**，且**首次把特徵厚度當成交換變數**（前兩種以線寬交換層數）。
+⚠ 本件**未給實際達成的 AR、厚度、側壁角或解析度**，量化程度低於 Samsung 篇。
+📌 **新空缺：該負型光阻實際達成的厚度與 AR 為何？與 Samsung 的 220 µm / AR>8.1 是否同級？**
+
+### 4. ⭐⭐ adaptive patterning 的價值首次以四個獨立機制表述
+
+本頁既有記載僅有 Amkor/Deca 之步驟數（比 damascene 少 40%）與 2/1 µm 能力。IMAPS DPC 2026 該篇補上四個機制：
+1. **取消 capture pad 尺寸限制** ⇒ 可細化節距；
+2. **吸收晶粒位置的自然變異**；
+3. **最小接墊上可開最大導孔** ⇒ 接觸電阻更佳；
+4. **省掉額外的介電與金屬層** ⇒ 降成本。
+
+**來源**：[[sources/2026-09-29_trendforce_advanced-packaging-market-trends-outlook]]、[[sources/2026-09-29_3dincites-vyansa_advanced-packaging-foundation-next-gen]]、[[sources/2026-09-29_imaps-dpc2026_thick-high-ar-plating-resist]]

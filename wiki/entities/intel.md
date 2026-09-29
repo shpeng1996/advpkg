@@ -3,7 +3,7 @@ title: "英特爾 / Intel"
 category: entity
 tags: [IDM, advanced-packaging, EMIB, Foveros, Intel18A, Clearwater-Forest, Foveros-Direct, glass-substrate, 14A, High-NA-EUV, silicon-capacitors, Google-TPU-v8e, Q2-2026-earnings, Tesla-14A, HLFF, RAMP-C, Secure-Enclave, Rio-Rancho]
 created: 2026-04-24
-updated: 2026-09-28
+updated: 2026-09-29
 sources: [2026-09-27_intel_us20260182414a1-asymmetric-buildup-cte-gradient-glass, 2026-09-27_intel_cn122270166a-stacked-glass-silicon-bridge-assembly-ar20, 2026-09-27_intel_us20260223702a1-direct-bonding-embedded-bridge-organic-cavity, 2026-08-24_intel-newsroom_hot-chips-2026-diamond-rapids-foveros-ucie, 2026-04-24_initial-survey, 2026-07-20_trendforce_tsmc-265b-arizona-intel-novalake, 2026-03-18_trendforce_intel-emib-malaysia, 2026-03-03_trendforce_intel-clearwater-forest, 2026-03-05_trendforce_intel-emib-billions, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-04-20_trendforce_intel-foundry-14a-equipment, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-01_semianalysis_cpus-back-datacenter-2026, 2026-04-10_3dincites_intel-gan-chiplet, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks, 2026-06-21_convergedigest_intel-emib-t-multi-die-packaging, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap, 2026-07-01_trendforce_terafab-intel-veteran-hire, 2026-04-07_tomshardware_intel-joins-terafab, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-01-30_tomshardware_intel-ai-chip-test-vehicle-emib-t, 2026-07-14_trendforce_intel-ireland-5b-intel3-europe, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-04_semieng_from-blueprint-intel-hlff, 2026-07-31_semieng_chip-week-149, 2026-08-13_trendforce_intel-memory-reentry-xbm-zam-saimemory, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition]
 related:
   - wiki/entities/tsmc.md
@@ -682,3 +682,37 @@ IPC：H10W20/20、/42、/435、/4421、H10W44/501、H10W70/05、/095
 📌 ⚠⚠ 2026-08-27 Tom's Hardware 之「邊緣應力 95 MPa → 49 MPa（edge-coating）」**與 US20260005126A1 手段相同但不得互相歸因**（專利無數值）。
 
 **來源**：[[sources/2026-09-28_intel_us20260005114a1-frames-glass-core-hybrid-panels-cte11]]、[[sources/2026-09-28_intel_us20260005126a1-glass-core-polymer-sidewall-coating]]
+
+---
+
+## 2026-09-29 更新：TGV 襯層圍籬擴為五件（釕入列）；EMIB-T 光罩倍數首見數字
+
+### ⭐⭐⭐ TGV 界面工程：五件襯層專利 + 一件奈米線專利
+
+| 公開號 | 策略 | family | 量化值 |
+|--------|------|--------|--------|
+| US20260136975A1 | 部分襯層 | 99632522 | 無（已收錄） |
+| US20260136966A1 | 光聚合物襯層 | 99763638 | 無（已收錄） |
+| US20260182404A1 | 高分子 buffer 層 | 97593224 | ⚠ 未採 |
+| US20260129770A1 | 噴霧熱裂解介電襯層 | 99634986 | ⚠ 未採 |
+| **US20260130245A1** | **多層襯層（介電 + Ru/Cu + 第三導體）** | 99478464 | **有：0.1–100 nm／5–20 nm／100–250 nm** |
+| **US20260182403A1** | **ZnO 奈米線 + Pd 活化 + 鍍銅種子層** | 100238116 | 無 |
+
+➜ **五種平行下注、同一子問題（TGV 界面），密度高於 2026-09-28 記錄之「框 + 側壁塗層」互補下注。**
+➜ ⭐⭐⭐ **釕（Ru）首次以 TGV 襯層金屬進入 Intel 的排他權層**（5–20 nm），使 overview 列管之「釕在先進封裝中的角色」取得第三個獨立來源、並且是第一個廠商證據。
+➜ ⭐⭐ **「專利軌以定性為主」本輪第二度中斷，但量化值集中於 Intel**：2026-09-28 為 Intel 框（CTE<11），本輪為 Intel 多層襯層（三個厚度區間）。本輪其餘四件（Samsung 三件、Intel ZnO 一件）全無數值 ⇒ **趨勢未反轉，但可觀察到「量化值集中於單一申請人」的型態。**
+➜ ⭐⭐ **US20260182403A1 顯示 Intel 向載板業的濕製程化學取用**（Pd 活化 + 無電鍍為 PCB／載板成熟製程）——「邊界外擴」的第三型態。
+
+### ⭐⭐⭐ EMIB-T 光罩倍數（TrendForce，更新 2026-09-11）
+
+| 項目 | 數值 |
+|------|------|
+| 目前光罩倍數 | **>8×** |
+| 規劃 | **2028 年 >12×** |
+| 量產爬坡 | **2027**（目標客戶為 ASIC 廠） |
+| 良率 | 已有改善報告，**大規模驗證仍待完成** |
+
+➜ 與 CoWoS（5.5× 現在 → >14× 於 2029）**兩條曲線交叉**：EMIB-T 現在較大、2029 目標較小。⚠ **兩家口徑是否相同未經證實，不得直接相減。**
+- ⚠ 二手補充（需一手複核）：EMIB-T **整合矽含量 >9 光罩**、**HBM4e >12 Gb/s**、**UCIe 介面 64 Gb/s**。注意「>9 光罩矽含量」與「>8× 光罩封裝尺寸」是**兩個不同的量**。
+
+**來源**：[[sources/2026-09-29_epo_intel-us20260130245a1-multiple-liners-tgv-ruthenium]]、[[sources/2026-09-29_epo_intel-us20260182403a1-zno-nanowires-tgv]]、[[sources/2026-09-29_trendforce_advanced-packaging-market-trends-outlook]]、[[sources/2026-09-29_3dincites-vyansa_advanced-packaging-foundation-next-gen]]

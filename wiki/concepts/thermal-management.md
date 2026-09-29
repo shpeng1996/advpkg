@@ -3,7 +3,7 @@ title: "先進封裝熱管理 / Thermal Management in Advanced Packaging"
 category: concept
 tags: [thermal-management, liquid-cooling, 3D-IC, CoWoS, heat-dissipation, TIM, ECTC-2025, GaN, power-delivery, co-design, patent-signal, delamination]
 created: 2026-04-25
-updated: 2026-09-28
+updated: 2026-09-29
 sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2025-12-01_semiengineering_thermal-management, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-02_trendforce_samsung-hbm5-computex2026, 2026-05-21_semieng_hi-roadmap-nature-paper-intel, 2026-08-13_semieng_1mw-rack-debate-thermal, 2026-04-27_semieng_semiconductor-materials-misbehave, 2026-08-21_trendforce_chip-packaging-heat-ai-bottleneck-cpo-stco, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer]
 related:
   - wiki/technologies/cowos.md
@@ -801,3 +801,29 @@ STCO 手段：技術層（HBM stack 合併、熱矽最佳化）＋ 系統層（G
 ⚠⚠ **兩篇皆為純熱模擬，無矽驗證；後者為 arXiv 預印本，未經同儕審查。**
 
 **來源**：[[sources/2026-09-28_imec_3d-hbm-on-gpu-stco-141-to-70c]]、[[sources/2026-09-28_paper_imec-3d-volumetric-dram-on-gpu-thermal-envelope]]、[[sources/2026-09-28_etron_us20260090421a1-ttv-tgv-thermal-dissipation-layer]]（TTV↔TGV 熱通道）
+
+---
+
+## 2026-09-29 更新：供電成為與熱並列的「第二個物理預算」
+
+Saras（IMAPS DPC 2026 `10.4071/001c.166924`）描述的**正回饋迴路**與本頁所載熱問題的結構**完全同型**：
+
+> 封裝尺寸變大 → 矽面積變大 → 功率密度上升 → **需要更多電**，而**可放被動元件與電源模組的空間卻更少**。
+
+即**同一個「尺寸增長」同時加劇需求並壓縮供給** ——這正是本頁描述熱問題時的結構。
+
+➜ ⭐⭐⭐ **供電應與熱並列為「封裝層的第二個物理預算」**，而非電性設計的下游議題。本輪三個互相獨立、分屬三類組織的來源同日指向此主題，已另建 **[[concepts/power-delivery-packaging]]** 承載。
+
+| 尺度 | 數值 | 來源 |
+|------|------|------|
+| 單封裝功率（AI 加速器） | **>2,000 W**，數千安培 | Saras, IMAPS DPC 2026 |
+| 3D HI 供電方法論 | **multi-kW** | University of Minnesota |
+| **機櫃功率** | **120 kW → 600 kW** | OFC 2026 彙整 |
+| 2030 美國電力用於 AI | **>15%** | Saras |
+
+### 📌 新空缺：供電與熱是否在同一個設計變數上衝突？
+
+兩者都想要「更短的垂直路徑」與「更多的垂直通道」，但**熱要高導熱材料、電要低電阻材料**，且多一層晶粒（如 NPC 以混合接合堆在處理器下方）必然有熱代價——依本頁所載 imec 數據（模封熱代價：矽 1–2 °C、銅 3–4 °C、鑽石 5–6 °C）。
+⚠ **本 wiki 目前無任何來源同時處理兩者。** 列為常駐追蹤。
+
+**來源**：[[sources/2026-09-29_imaps-dpc2026_saras-stile-evr-vertical-pdn]]、[[sources/2026-09-29_imaps-dpc2026_nanoporous-silicon-capacitor-pdn]]、[[sources/2026-09-29_semieng_tech-paper-roundup-sept29-multikw-3dhi-pdn]]、[[sources/2026-09-29_semiwiki_ofc2026-siph-cpo-oci-ocs-summary]]

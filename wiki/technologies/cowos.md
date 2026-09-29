@@ -3,7 +3,7 @@ title: "CoWoS — Chip-on-Wafer-on-Substrate"
 category: technology
 tags: [2.5D, interposer, TSMC, AI, HPC, HBM, COUPE, CPO, packaging-constraints, NVIDIA]
 created: 2026-04-24
-updated: 2026-09-28
+updated: 2026-09-29
 sources: [2026-08-13_semieng_1mw-rack-debate-thermal, 2026-08-05_trendforce_tsmc-cowos-cow-outsourcing-osat, 2026-05-24_techtimes_nvidia-computex2026-cowos, 2026-04-24_initial-survey, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-15_trendforce_tsmc-vanguard-stake-sale, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-09_financialcontent_tsmc-130k-cowos-wafers, 2026-06-09_digitimes_tsmc-cowos-soic-capacity-symposium, 2026-06-15_trendforce_tsmc-cowos-gap-narrowing-130k-200k-wafers, 2026-06-10_tomshardware_tsmc-fab-expansion-roadmap-n2-cowos-soic, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_tmtpost_tsmc-cowos-capacity-targets-2026-2027, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-26_paper_yole-advanced-packaging-market-ai-era]
 related:
   - wiki/entities/tsmc.md
@@ -540,3 +540,42 @@ Yole 封裝尺寸對照：**AMD MI300** ~75×75 mm²（2,927 mm² / 3.5× 光罩
 ⚠ 本來源為訂閱制電子報之公開摘要，數字多為區間而非單點，且部分標為「估計」；引用時須保留區間。
 
 **來源**：[[sources/2026-09-28_siliconanalysts_hbm4-16hi-volume-cowos-leadtime-78-weeks]]
+
+---
+
+## 2026-09-29 更新：5.5× 良率修正為「典型 >98%、峰值 99%」；COUPE 結構首見面積分配
+
+### 1. ⭐⭐⭐ 良率數字修正（長期空缺部分結清）
+
+TrendForce（發布 2026-08-18、**更新 2026-09-11**）：CoWoS 5.5× 的良率為 **「consistently topping 98% across multiple AI customer products」，峰值 99%**。
+
+➜ **既有記載（2026-08-11 OCP APAC Summit）之「5.5× 良率達 99%」應修正為「典型 >98%，峰值 99%」。** 同一來源體系的較新更新，故採**修正而非並列保留**。
+➜ ⚠ **overview 列管空缺「CoWoS『5.5× 良率 99%』的量測邊界」只結清了一半**：數字本身收窄了，但**「該良率是否涵蓋中介層的完整電性篩檢（KGI 篩檢率）」仍未解，空缺維持開啟。**
+- 其他同來源數字：規劃 **2029 年超越 14× 光罩**（與既有一致）。
+
+### 2. ⭐⭐⭐ TSMC COUPE 的結構分解——FAU 占 PIC 面積 40%
+
+（SemiEng 2026-04-06）
+
+| 項目 | 數值 |
+|------|------|
+| PIC 製程 | **65 nm SOI** 矽光子 |
+| EIC 製程 | **7 nm FF CMOS** |
+| PIC + EIC 面積 | 約 **65 mm²** |
+| **fiber array unit（FAU）占 PIC 面積** | **40%** |
+| 連接器 | **MPO-16**（收發光纖）／**MPO-12**（雷射光纖） |
+
+➜ **本 wiki 首次取得 CPO 的面積分配數字。** 既有 CPO 記載（[[entities/globalfoundries]]：銅 <1 Tb/s/mm & >5 pJ/bit vs 光 >5 Tb/s/mm & 2–5 pJ/bit；SSC ~0.4 dB／32 通道 V-groove <1 dB／Corning 玻璃橋 <1.5 dB/facet）全為**頻寬密度與損耗**。➜ **若 FAU 占 PIC 四成面積，則 CPO 微縮的第一限制是光纖耦合的面積與對準，不是 PIC 電路。**
+➜ **與本輪專利軌形成閉環**：Samsung US20260150758A1（光路橋 + 波導垂直重疊 + 透明支撐層作對外出口）正是把 FAU 的面積與對準負擔自 PIC 表面搬離的結構解法。見 [[technologies/emib]] 2026-09-29 更新。
+➜ ⭐⭐ **COUPE 的兩顆晶粒製程世代相差極大（65 nm SOI vs 7 nm FF）**，是「異質整合的價值在於各層各用最合適世代」最乾淨的一個實例。
+📌 **新空缺：FAU 的 40% 是否隨通道數縮放？** 若不隨之等比成長，CPO 的面積代價會隨頻寬提升而相對下降。
+
+### 3. ⭐⭐ 封裝功耗與機櫃功率並列後的供電意涵
+
+既有記載：封裝功耗 **600 W → 4,100 W（2024→2029）**。本輪新增兩個同方向數字：
+- **機櫃功率 120 kW → 600 kW**（OFC 2026 彙整）
+- **University of Minnesota：multi-kW 供電方法論 for 3D 異質整合**（SemiEng 技術論文彙編 2026-09-29）
+
+➜ 三者與 Saras 之 **>2,000 W／數千安培** 同量級 ⇒ 已另建 [[concepts/power-delivery-packaging]] 承載此主題。
+
+**來源**：[[sources/2026-09-29_trendforce_advanced-packaging-market-trends-outlook]]、[[sources/2026-09-29_semieng_all-ai-interconnects-optical-5-years]]、[[sources/2026-09-29_semieng_tech-paper-roundup-sept29-multikw-3dhi-pdn]]

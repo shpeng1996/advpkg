@@ -3,7 +3,7 @@ title: "ASE Group / 日月光投控"
 category: entity
 tags: [OSAT, advanced-packaging, CoWoP, FOPLP, chiplet, CPO, LEAP]
 created: 2026-04-25
-updated: 2026-09-25
+updated: 2026-09-29
 sources: [2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below, 2026-08-05_trendforce_tsmc-cowos-cow-outsourcing-osat, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2026-05-08_aseglobal_ase-wus-kaohsiung-focoes-hub, 2026-05-26_semiconductor-digest_ase-310mm-plp-ectc2026, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-11_trendforce_ase-spil-zhunan-plant, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-07-01_trendforce_ase-price-hike-20pct, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-31_ase_cn224583735u-photoelectric-hybrid-rdl, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-06-02_intel_ectc2026-emib-t-cpo-glass]
 related:
   - wiki/technologies/cowos.md
@@ -275,3 +275,23 @@ Intel Foundry 的 ECTC 2026 官方部落格列出其 20 篇論文的合作方，
 - **最大容許電流 >2 A**（10 年、105 °C、0.1% 失效率）
 ➜ 與同輪 DNP 之 RDL 活化能（0.9 eV / >1.23 eV）構成三組對照，詳見 [[concepts/test-metrology-packaging]]。
 ⚠ 三者結構與量測條件皆不同，**不得作為性能排名。** 該 SemiEng 文含明顯誤植（"<5nm lines and spaces"），其數字應降低採信等級。
+
+---
+
+## 2026-09-29 更新：FOCoS 互連密度與 RDL 層數首見數字
+
+（TrendForce，更新 2026-09-11）
+
+| 項目 | 數值 |
+|------|------|
+| FOCoS 互連密度 | **50×** 傳統 flip-chip |
+| **FOCoS-Bridge** | **200×+** |
+| **FOCoS RDL 層數** | **3–6 層，最高至 12 層** |
+
+➜ ⭐⭐⭐ **「12 層」是本 wiki 所見之 RDL 層數新上限**，把 [[technologies/rdl]] 記載之「線寬 vs 層數互換關係」的層數軸延長一倍（既有兩點：ASI 1 µm/2 層、Amkor 2/1 µm/6 層能力）。
+⚠ **本件未給 12 層對應的線寬／節距，故該點尚不能放入同一張互換曲線。** 📌 列為新空缺。
+➜ ⭐⭐ **FOCoS-Bridge 的 200×+ vs FOCoS 的 50×（4 倍差）** 首次量化了「加橋」帶來的互連密度增益，可與 [[technologies/emib]] 之橋幾何討論並列。
+➜ 同來源亦記 **SPIL（FOEB）** 與 ASE 並列為 Taiwan OSAT 的內嵌橋推進者，與既有記載（SPIL 斗六廠、FOPLP Q1 2027）一致。
+➜ **與既有吳田玉表態自洽**：CoWoS/EMIB 不互斥——本輪 EMIB-T（>8×→>12× 於 2028）與 CoWoS（5.5×→>14× 於 2029）兩條曲線交叉，正是「不互斥」的量化形式。
+
+**來源**：[[sources/2026-09-29_trendforce_advanced-packaging-market-trends-outlook]]

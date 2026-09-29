@@ -3,7 +3,7 @@ title: "玻璃基板 / Glass Core Substrate"
 category: technology
 tags: [glass-substrate, TGV, panel-level, FC-BGA, CoPoS, Absolics, DNP, Rapidus, warpage, SeWaRe, glass-interposer, BOE, ULCVD, non-embedding, Lens-Technology, TPK-KY, Innolux, AUO, LG-Chem, singulation, patent-signal]
 created: 2026-05-08
-updated: 2026-09-28
+updated: 2026-09-29
 sources: [2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-27_tradingkey_copos-glass-validation-08mm-85x110mm, 2026-09-27_intel_us20260182414a1-asymmetric-buildup-cte-gradient-glass, 2026-09-27_samsung_us20260144093a1-bridge-on-tgv-mold-fixed, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-05-05_trendforce-insights_glass-substrate-development, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-05-29_3dincites_rapidus-2nm-advanced-packaging-ai-foundry, 2026-06-01_trendforce_intel-3dgs-india-glass-substrate, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-06-20_biggo_boe-glass-substrate-pilot, 2026-06-28_economy-ac_glass-substrate-global-race, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-08-18_trendforce_shinko-glass-substrate-22layer-glassem-delay, 2026-09-11_mssp_tgv-glass-biaxial-bending-ring-on-ring, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-03-13_kaneka_jp2026047137a-glass-core-polyimide-quantified, 2026-08-10_screp_low-k-organic-buffer-tgv-cu-metallization, 2026-08-04_jmrt_vacuum-assisted-void-free-cu-fill-tgv, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_patent_er-eng-glass-interposer-dual-carrier, 2026-09-26_paper_yole-advanced-packaging-market-ai-era]
 related:
   - wiki/technologies/rdl.md
@@ -1493,3 +1493,71 @@ Yole（`10.4071/001c.167738`）設問「**A lasting trend or a failing attempt?*
 **來源**：[[sources/2026-09-28_intel_us20260005114a1-frames-glass-core-hybrid-panels-cte11]]、[[sources/2026-09-28_intel_us20260005126a1-glass-core-polymer-sidewall-coating]]、[[sources/2026-09-28_etron_us20260090421a1-ttv-tgv-thermal-dissipation-layer]]
 
 ⚠ 三件皆為專利，屬前瞻訊號而非已出貨能力；除 CTE <11 外**全無量化值**。
+
+---
+
+## 2026-09-29 更新：Intel 的 TGV 襯層圍籬擴為五件（含釕）；ZnO 奈米線開出第三條金屬化路線
+
+### 1. ⭐⭐⭐ TGV 襯層：五件、五種策略、同一子問題
+
+| 公開號 | 策略 | family | 收錄狀態 |
+|--------|------|--------|---------|
+| US20260136975A1 | **部分**襯層（partial liner） | 99632522 | 已收錄（2026-09-28 前） |
+| US20260136966A1 | **光聚合物**襯層（photopolymer） | 99763638 | 已收錄 |
+| US20260182404A1 | **高分子 buffer 層** | 97593224 | 2026-09-29 檢出、未採 |
+| US20260129770A1 | **噴霧熱裂解**沉積介電襯層 | 99634986 | 2026-09-29 檢出、未採 |
+| **US20260130245A1** | **多層襯層（介電 + Ru/Cu + 第三導體）** | 99478464 | **2026-09-29 收錄** |
+
+➜ **這不是路線之爭，而是同一子問題的五種平行下注**，型態與 2026-09-28 記錄之 Intel「框 + 側壁塗層」互補下注一致但密度更高。
+➜ **強化既有論述「TGV 的失效在界面與孔緣，不在材料本體」：Intel 把注全押在界面層。**
+
+### 2. ⭐⭐⭐ US20260130245A1 的量化值——且釕首次進入玻璃基板的排他權層
+
+| 層 | 性質 | 材料 | 寬度 |
+|----|------|------|------|
+| 第一襯層 | 介電 | — | **0.1–100 nm** |
+| 第二襯層 | 導電 | **釕（Ru）或銅** | **5–20 nm** |
+| 第三襯層 | 導電 | ⚠ 未指明 | **100–250 nm** |
+| 主填充 | 導電 | Cu | — |
+
+請求項明言目的為 **alleviating stresses**（緩解應力），非附著或阻障。
+
+➜ **overview 列管之次高優先項「釕在先進封裝中的角色」取得第三個獨立來源，且為第一個廠商排他權證據**（既有兩例皆為論文：2026-09-28 之 Purdue Ru/Cu 電遷移壽命模型、哈爾濱工大 × 明星大學 Ru/SiO₂ 低溫混合接合）。Ru 落在 **5–20 nm** 的典型阻障／襯層厚度區間，與 BEOL 用法一致。
+➜ **長期空缺「TGV 陣列力學須取得『有／無 liner』對照值」的提問方式應再修正為：「幾層襯層、各層多厚、各層負責哪一種失效」。**
+📌 **新空缺：第三襯層（100–250 nm，導電）的材料與功能為何？** 厚度比第二襯層厚一個數量級，不像阻障層，較可能是種子層或應力緩衝層。
+
+### 3. ⭐⭐⭐ TGV 金屬化的第三條路線：孔壁長 ZnO 奈米線
+
+**US20260182403A1（2026-06-25，family 100238116，發明人 9 名）**：於玻璃核心孔洞內**長出氧化鋅奈米線** → 沉積**鈀粒子作活化劑** → 沉積**銅種子層** → 電鍍成孔。奈米線與 Pd 粒子可**均勻沉積於孔側壁** ⇒ 得到均勻銅種子層；奈米線另作為**銅與玻璃間的熱膨脹緩衝**。
+
+| 路線 | 作法 | 賭注 |
+|------|------|------|
+| **Corning WO2026164778A1**（2026-08） | Ti/Cu 黏著層＋羥基富化＋矽烷官能化＋無電鍍種子層 | **界面可做牢** |
+| **Intel 襯層族**（五件） | 介電／金屬襯層隔開並吸收應力 | **界面必失效** |
+| **Intel US20260182403A1** | 孔壁長 ZnO 奈米線森林、Pd 活化、鍍銅 | **把界面做成三維咬合結構** |
+
+➜ ⭐⭐⭐ **一個結構同時服務兩個原本分屬不同層的功能**：種子層均勻度的載體（解決 AMAT 所指認之「種子層附著／覆蓋不足 → 銅剝離」因果鏈起點）＋熱膨脹緩衝。
+➜ ⭐⭐⭐ **它把 TGV 界面工程從「平坦膜」推到「三維柱狀界面」，方向與混合接合完全相反。** 混合接合側一切規範朝**極小粗糙度**走（Ra <0.1–0.2 nm、SiCN <2 Å）；本件反而**主動長出高表面積結構**。➜ 與 2026-09-21 記載之「TGV 側壁粗糙度 25 nm–1.257 µm vs 混合接合 Ra <0.1–0.2 nm，相差 2–4 個數量級」互相印證，並**說清成因：兩者對界面的物理需求相反（一個要咬合、一個要貼合）**。
+➜ **新候選論述：「封裝內存在兩類界面——靠機械咬合者與靠原子貼合者；兩者的粗糙度規範不可互相援引。」**（可與 2026-09-28 之作業規範（14）並列。）
+➜ ⭐⭐ **「邊界外擴」第三型態：IDM 向載板業取用濕製程化學**（Pd 活化 + 無電鍍為 PCB／載板業成熟製程）。前兩型為設備商向材料／相鄰製程擴張（TEL／AMAT／Onto）、載板業者向堆疊製程延伸（上海美維）。
+📌 **新空缺：ZnO 奈米線在後續高溫製程與長期偏壓／濕熱下是否穩定？** ZnO 為兩性氧化物、酸鹼與濕氣下易溶，而 TGV 可靠度驗證正是 B-HAST／TCT（參見 [[entities/dnp]]：B-HAST 120→200 hr）。摘要完全未觸及可靠度。
+
+### 4. ⭐⭐ 矽烷偶合劑化學跨出玻璃基板域
+
+Amkor（IMAPS DPC 2026，`10.4071/001c.166928`）以**矽烷（SiH）偶合劑**處理**焊料 ↔ EMC** 界面，機制字面上與 Corning 的 TGV 金屬化相同（**SiH 基在水存在下與羥基化氧化層形成共價鍵，另一端有機官能基接有機材料**）。
+➜ **這是「同一界面化學跨越玻璃基板與功率封裝兩個不相干技術域」的第一個實例** ⇒ **建議在 wiki 內建立橫向索引**，避免兩處各自記載而看不出是同一化學。詳見 [[sources/2026-09-29_imaps-dpc2026_amkor-ap-coating-solder-emc-delamination]]。
+
+### 5. ⚠ 玻璃核心基板市場出現第三個口徑
+
+| 來源 | 數字 | 範圍 | 年 |
+|------|------|------|----|
+| Onto | **$275M** | **僅**玻璃核心基板 | 2030 |
+| Counterpoint | **>$8B** | FOPLP ＋ 玻璃基板 | 2030 |
+| Vyansa（3D InCites 客座，⚠ 二手） | **$13B** | 玻璃核心基板「機會」 | **2040** |
+
+➜ 因年份不同（2040 vs 2030）**不能直接並列**，但顯示「數十億美元級」在市場社群已成共識，**Onto 的 $275M 為明顯離群值**。
+➜ **既有空缺維持開啟，提問方式改為：Onto 的 $275M 是否只計「基板本體出貨值」而排除 RDL 與加工？**
+
+**來源**：[[sources/2026-09-29_epo_intel-us20260130245a1-multiple-liners-tgv-ruthenium]]、[[sources/2026-09-29_epo_intel-us20260182403a1-zno-nanowires-tgv]]、[[sources/2026-09-29_imaps-dpc2026_amkor-ap-coating-solder-emc-delamination]]、[[sources/2026-09-29_3dincites-vyansa_advanced-packaging-foundation-next-gen]]
+
+⚠ 專利為前瞻訊號，非已量產結構。US20260182403A1 **全篇無量化值**。

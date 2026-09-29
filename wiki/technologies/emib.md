@@ -3,7 +3,7 @@ title: "EMIB — Embedded Multi-Die Interconnect Bridge"
 category: technology
 tags: [Intel, 2.5D, silicon-bridge, chiplet, HBM4, Foveros, glass-substrate, EMIB-T, EMIB-M, silicon-capacitors, power-delivery, HLFF, encapsulation, underfill]
 created: 2026-05-03
-updated: 2026-09-28
+updated: 2026-09-29
 sources: [2026-09-27_intel_us20260223702a1-direct-bonding-embedded-bridge-organic-cavity, 2026-09-27_intel_cn122270166a-stacked-glass-silicon-bridge-assembly-ar20, 2026-09-27_samsung_us20260144093a1-bridge-on-tgv-mold-fixed, 2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-03-05_trendforce_intel-emib-billions, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-03-03_trendforce_intel-clearwater-forest, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks, 2026-06-21_convergedigest_intel-emib-t-multi-die-packaging, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap, 2026-06-05_semieng_intel-ectc-2026-emib-t-cpo-glass, 2026-01-30_tomshardware_intel-ai-chip-test-vehicle-emib-t, 2026-08-04_semieng_from-blueprint-intel-hlff, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_patent_zhuhai-tiancheng-dual-depth-tsv-silicon-bridge, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-26_paper_yole-advanced-packaging-market-ai-era]
 related:
   - wiki/entities/intel.md
@@ -517,3 +517,59 @@ Intel 於 **2026-01 NEPCON Japan** 展出 **EMIB + 玻璃核心基板原型**（
 **來源**：[[sources/2026-09-28_samsung_us20260068717a1-bridge-die-second-mold-film]]、[[sources/2026-09-28_samsung_us20260090411a1-bridge-die-mold-plus-protective-film]]
 
 ⚠ 專利為前瞻訊號，非已出貨能力。兩件**均無量化值**（無節距、無層數、無尺寸）。
+
+---
+
+## 2026-09-29 更新：橋的三個新自由度（接合方式／光／層數）＋ EMIB-T 光罩倍數首見數字
+
+### 1. ⭐⭐⭐ Samsung 模封式橋接第四件——差異點自「表面材料」轉為「接合方式」
+
+**US20260282955A1（2026-09-17，family 101296689）**：橋下方的 connection conductor 分為**兩組**（第一組覆蓋橋、第二組覆蓋 connection post）；第一組每一結構含 **connection pad + upper connection solder（接觸橋）+ lower connection solder** ⇒ **橋以三段式焊料接上，而非 RDL 直接接觸。**
+
+| 公開號 | 公開日 | family | 差異點 |
+|--------|--------|--------|--------|
+| US20260068717A1 | 2026-03-05 | 98899522 | 橋置 RDL 背面 ＋ **第二模封層** |
+| US20260090411A1 | 2026-03-26 | 99140804 | 側面**模封膜** ＋ 背面**保護膜** |
+| US20260144093A1 | 2026-05-21 | 99804083 | **玻璃核心**中介層 |
+| **US20260282955A1** | **2026-09-17** | **101296689** | **三段式焊料接合** |
+
+➜ **2026-09-28 之候選論述應擴充為：「在模封式橋接中，橋的每一個表面**與其接合方式**都是獨立的設計變數。」**
+➜ 「橋區」與「垂直貫穿區」的連接結構在**同一製程層內被分開設計**，與 [[technologies/rdl]] 之「粗快／細慢混合流程」同型態，但首次落在連接結構而非圖案化。
+
+### 2. ⭐⭐⭐ 橋首次搬運光而非電：Samsung 光路橋晶片
+
+**US20260150758A1（2026-05-28，family 99884273）**：RDL 基板上 **EIC** 與**光路橋晶片**水平並列，**PIC** 疊在兩者之上；橋內第一波導與 PIC 內第二波導**在垂直方向部分重疊**（疊置式耦合，非端面對接）；PIC 上方之**透明支撐層**為對外光學出口。
+
+**US20260157197A1（2026-06-04，family 99956993）**：同一中介層內**並置「光學橋晶片」與「（電性）橋晶片」，兩者橫向分離** ⇒ **不是光取代電，而是光橋與電橋共存。**（本輪未單獨收錄，列下輪優先候選。）
+
+➜ 本 wiki 既有橋載體記載（Intel EMIB／EMIB-T、ASE FOCoS-Bridge、SPIL FOEB、Samsung 模封式橋接四件）**全部是電性橋**。
+➜ **它攻擊的是已被量化的瓶頸**：TSMC COUPE 之 **PIC+EIC 約 65 mm²，其中 FAU 占 PIC 面積 40%**（SemiEng 2026-04-06）。把耦合結構自 PIC 表面移到獨立橋晶片，正是搬走 FAU 的面積與對準負擔。**新聞軌給量、專利軌給解，同一輪對上。**
+📌 **新空缺：疊置波導的重疊長度與耦合損耗（dB）** ——唯一能與 [[entities/globalfoundries]] 既有記載（SSC ~0.4 dB／32 通道 V-groove <1 dB／Corning 玻璃橋 <1.5 dB/facet）比較的量。
+
+### 3. ⭐⭐⭐ 橋首次垂直堆疊：Samsung US20260101823A1
+
+**US20260101823A1（2026-04-09，family 99315173）**：封裝基板內容納一個**橋晶片結構**，由**多個橋晶片垂直堆疊**組成，且**各層尺寸互不相同**（唯一的結構性限定）。
+
+➜ 既有所有橋記載**橋一律是單層平面元件**；本件加入**層數**與**各層尺寸**兩個新自由度。
+➜ 與 2026-09-27 記載之「四條互斥橋幾何」的關係是**正交而非第五條**——層數可與那四條中任一條疊加。
+➜ **新候選論述：「橋不是一個元件，而是一個可分層的子封裝。」**
+⚠ 推論性說明（摘要未述）：逐層縮小的堆疊可**以階梯式覆蓋不同跨距的晶粒對**，即一個橋結構同時服務短跨距（高密度）與長跨距（低密度）連接。
+📌 **新空缺：堆疊橋的層數上限與層間連接方式（TSV？微凸塊？混合接合？）** ——這決定它是不是變相的 3D 中介層。
+
+### 4. ⭐⭐⭐ EMIB-T 光罩倍數首見數字，且與 CoWoS 兩條曲線交叉
+
+（TrendForce，更新 2026-09-11）
+
+| 技術 | 現況光罩倍數 | 規劃 |
+|------|-------------|------|
+| **Intel EMIB-T** | **>8×** | **2028 年 >12×**；量產爬坡 **2027** |
+| TSMC CoWoS | 5.5× | 2029 年 **>14×** |
+
+➜ **EMIB-T 目前較大、2029 目標較小** ⇒ 兩條曲線在尺寸軸上**交叉而非取代**，與 [[entities/ase-group]] 所載吳田玉「CoWoS/EMIB 不互斥」表態一致。
+⚠⚠ **兩家「光罩倍數」是否同口徑未經證實，不得直接相減比較。** 且 3D InCites 客座文所載 EMIB-T「整合矽含量 >9 光罩」是**矽面積**，與 TrendForce 的「>8× 光罩封裝尺寸」是**兩個不同的量**，**不得混用。**
+- 其他 EMIB-T 新數字（⚠ 二手，需一手複核）：**HBM4e >12 Gb/s**、**UCIe 介面 64 Gb/s**。
+- ⚠ **新信號（待證傳聞）**：TrendForce 稱「傳 TSMC 正自行開發 EMIB 的替代方案」（reportedly）。既有記載中 TSMC 的橋接路線一片空白。**不得作為結論。**
+
+**來源**：[[sources/2026-09-29_epo_samsung-us20260282955a1-molded-bridge-solder-attach]]、[[sources/2026-09-29_epo_samsung-us20260150758a1-optical-path-bridge]]、[[sources/2026-09-29_epo_samsung-us20260101823a1-stacked-bridge-chips]]、[[sources/2026-09-29_trendforce_advanced-packaging-market-trends-outlook]]、[[sources/2026-09-29_3dincites-vyansa_advanced-packaging-foundation-next-gen]]
+
+⚠ 專利為前瞻訊號，非已出貨能力。本輪三件 Samsung 專利**均無量化值**。

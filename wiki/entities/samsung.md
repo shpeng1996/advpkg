@@ -3,7 +3,7 @@ title: "三星 / Samsung"
 category: entity
 tags: [IDM, foundry, memory, advanced-packaging, X-Cube, HBM, ISSCC2026, I-CubeS, LPDDR6, V10-BV-NAND, zHBM, HBM5, FMS-2026, ECC, reliability]
 created: 2026-04-24
-updated: 2026-09-28
+updated: 2026-09-29
 sources: [2026-09-27_samsung_us20260144093a1-bridge-on-tgv-mold-fixed, 2026-08-26_trendforce_openai-jalapeno-samsung-hbm4, 2026-08-26_trendforce_samsung-gaia-pim-4nm-2027, 2026-08-24_trendforce_hot-chips-2026-samsung-zhbm-skhynix-emib, 2026-08-17_trendforce_samsung-skhynix-1h26-investment-nvidia-absent, 2026-08-14_trendforce_samsung-nrdk-line2-2nm-hbm5-base-die, 2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor, 2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2025-12-30_trendforce_samsung-hbm-surge, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2025-08-05_3dincites_iftle636, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit, 2026-06-10_trendforce_samsung-gwangju-packaging-base, 2026-06-12_digitimes_samsung-packaging-gap-tsmc-intel, 2026-06-15_trendforce_skhynix-hbm4e-sample-timeline-pulled-forward, 2026-06-19_techtimes_vera-rubin-hbm4-suppliers, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-24_techtimes_sk-hynix-dethroned-samsung-ddr5-hbm4, 2026-07-03_trendforce_anthropic-samsung-advanced-packaging, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-07-02_trendforce_samsung-hbm-dummy-die-patent, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo, 2026-07-07_trendforce_samsung-q2-2026-record-krw894t, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-02_trendforce_samsung-sf2p-plus-tsmc-n2-roadmap, 2026-07-14_trendforce_samsung-hbm-hiring-hbm4-hbm4e-hbm5, 2026-07-21_trendforce_samsung-cxl-32-skhynix-imte, 2026-07-24_trendforce_skhynix-3d-stacked-dram-on-logic-on-device-ai]
 related:
   - wiki/entities/tsmc.md
@@ -571,3 +571,45 @@ Samsung：「客戶對 16-hi HBM4 的需求**非常有限**」，但確認具備
 **2027 年將 HBM4 家族產出至少加倍**（Seoul Economic Daily via Chip Week 157，2026-09-25）；HBM 位元市占 Q1 21–22% → Q2 約 33%。
 
 **來源**：[[sources/2026-09-28_samsung_us20260068717a1-bridge-die-second-mold-film]]、[[sources/2026-09-28_samsung_us20260090411a1-bridge-die-mold-plus-protective-film]]、[[sources/2026-09-28_paper_samsung-ultrathick-pr-high-ar-cu-pillar-lpddr]]、[[sources/2026-09-28_semieng_chip-week-157-imec-3d-dram-yole-51b]]
+
+---
+
+## 2026-09-29 更新：矽光子時程與光橋專利布局對齊；橋的下注維度擴為四個
+
+### ⭐⭐⭐ 矽光子三段時程（OFC 2026）與專利布局自洽
+
+| 階段 | 時程 |
+|------|------|
+| 平台／技術完成 | **2027 年底** |
+| **量產** | **2028** |
+| GPU + HBM 整合 | **2029** |
+| CPO turnkey（既有記載） | 2029 |
+
+➜ 本輪檢出之兩件光橋專利落在平台完成前約 **18 個月**：
+- **US20260150758A1（2026-05-28，family 99884273）**：**光路橋晶片**，橋內第一波導與 PIC 內第二波導**垂直重疊**耦合；PIC 上方**透明支撐層**為對外光學出口。
+- **US20260157197A1（2026-06-04，family 99956993）**：同一中介層內**並置光學橋晶片與電性橋晶片**（橫向分離）⇒ **不是光取代電，而是光橋與電橋共存。**（本輪未單獨收錄，列下輪優先候選。）
+
+➜ **這是本 wiki 少見的「時程宣告 ↔ 專利布局」對齊實例**：宣告在 OFC 2026（2026-03），布局公開於 2026-05／06，量產目標 2028。
+
+### ⭐⭐⭐ 橋的下注維度自「表面材料」擴為四個
+
+| 公開號 | 公開日 | 下注維度 |
+|--------|--------|---------|
+| US20260068717A1 | 2026-03-05 | 表面材料（第二模封層） |
+| US20260090411A1 | 2026-03-26 | 表面材料（模封膜／保護膜） |
+| **US20260101823A1** | **2026-04-09** | **層數＋各層尺寸**（垂直堆疊橋） |
+| US20260144093A1 | 2026-05-21 | 載體材料（玻璃核心中介層） |
+| **US20260150758A1** | **2026-05-28** | **傳輸媒介（光而非電）** |
+| US20260157197A1 | 2026-06-04 | 光橋與電橋共存 |
+| **US20260282955A1** | **2026-09-17** | **接合方式**（三段式焊料） |
+
+➜ **七件、六個月、至少五個不同的下注維度。** 2026-09-28 記錄之「Samsung 下注粒度細到橋的每一個表面」本輪擴大為：**表面材料、層數、載體材料、傳輸媒介、接合方式。**
+➜ 詳見 [[technologies/emib]] 2026-09-29 更新。
+
+⚠ 本輪三件 Samsung 專利**全無量化值**；專利為前瞻訊號，非已出貨能力。
+
+### 其他
+- **HBM 供應現況（既有記載延續）**：HBM4（含 12-Hi）仍在與 NVIDIA 的最終認證階段；擬 2027 年 HBM4 產出至少加倍。
+- ⚠ **Samsung 之超厚光阻（>220 µm、AR>8.1、低 NA <0.12）本輪取得材料供應商側的第二個獨立來源**，見 [[technologies/rdl]]。
+
+**來源**：[[sources/2026-09-29_semiwiki_ofc2026-siph-cpo-oci-ocs-summary]]、[[sources/2026-09-29_epo_samsung-us20260150758a1-optical-path-bridge]]、[[sources/2026-09-29_epo_samsung-us20260101823a1-stacked-bridge-chips]]、[[sources/2026-09-29_epo_samsung-us20260282955a1-molded-bridge-solder-attach]]

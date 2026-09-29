@@ -670,3 +670,18 @@
 2026-09-28 | https://doi.org/10.4071/001c.167494 | raw/papers/2026-09-28_openalex_tel-backside-power-overlay-distortion-sub5nm.md | TEL bonding-induced overlay distortion <3nm
 2026-09-28 | https://doi.org/10.4071/001c.166914 | raw/papers/2026-09-28_openalex_samsung-ultrathick-pr-high-ar-cu-pillar.md | Samsung ultra-thick PR >220um, AR>8.1, 512 I/O
 2026-09-28 | https://doi.org/10.4071/001c.166933 | raw/papers/2026-09-28_openalex_resonac-chemical-resistant-dicing-tape-hb.md | Resonac chem-resistant dicing tape for D2W HB
+2026-09-29 | https://semiengineering.com/all-ai-data-center-interconnects-will-be-optical-within-5-years/ | raw/articles/2026-09-29_semieng_all-ai-interconnects-optical-5-years.md | COUPE PIC+EIC 65mm2, FAU=40% of PIC
+2026-09-29 | https://semiwiki.com/forum/threads/ofc-2026-summary-how-silicon-photonics-cpo-oci-and-ocs-are-redefining-the-physical-boundaries-of-data-centers.24852/ | raw/articles/2026-09-29_semiwiki_ofc2026-siph-cpo-oci-ocs-summary.md | OFC2026: Samsung SiPh 2028, Meta 90M-hr CPO
+2026-09-29 | https://insights.trendforce.com/p/advanced-packaging-market-trends | raw/articles/2026-09-29_trendforce_advanced-packaging-market-trends-outlook.md | CoWoS yield >98% typ/99% peak; FOCoS RDL 12L
+2026-09-29 | https://semiengineering.com/chip-industry-technical-paper-roundup-sept-29/ | raw/articles/2026-09-29_semieng_tech-paper-roundup-sept29-multikw-3dhi-pdn.md | UMN multi-kW power delivery for 3D HI
+2026-09-29 | https://www.3dincites.com/2026/09/advanced-packaging-the-foundation-of-next-generation-semiconductor-innovation/ | raw/articles/2026-09-29_3dincites-vyansa_advanced-packaging-foundation-next-gen.md | imec NanoIC RDL 1.3um; UCIe-Adv +40%/-15%
+2026-09-29 | EPO:101296689:US20260282955A1 | raw/patents/2026-09-29_US20260282955A1_samsung-molded-bridge-solder-attach.md | Samsung molded bridge #4, solder attach
+2026-09-29 | EPO:99884273:US20260150758A1 | raw/patents/2026-09-29_US20260150758A1_samsung-optical-path-bridge-chip-waveguide.md | Samsung optical path bridge chip, WG overlap
+2026-09-29 | EPO:99315173:US20260101823A1 | raw/patents/2026-09-29_US20260101823A1_samsung-stacked-bridge-chips-different-sizes.md | Samsung vertically stacked bridge chips
+2026-09-29 | EPO:99478464:US20260130245A1 | raw/patents/2026-09-29_US20260130245A1_intel-multiple-liners-tgv-ruthenium.md | Intel multi-liner TGV, Ru 5-20nm
+2026-09-29 | EPO:100238116:US20260182403A1 | raw/patents/2026-09-29_US20260182403A1_intel-zno-nanowires-tgv-seed.md | Intel ZnO nanowire + Pd TGV seed layer
+2026-09-29 | https://doi.org/10.4071/001c.166923 | raw/papers/2026-09-29_openalex_nanoporous-silicon-capacitor-pdn.md | NPC 4-8 uF/mm2, PDN Z -92%, HB stacking
+2026-09-29 | https://doi.org/10.4071/001c.166924 | raw/papers/2026-09-29_openalex_saras-stile-evr-vertical-pdn.md | Saras eVR STILE, >2000W vertical PDN
+2026-09-29 | https://doi.org/10.4071/001c.167031 | raw/papers/2026-09-29_openalex_unt-cu-al-dual-metal-passivation.md | UNT Cu-Al galvanic corrosion, dual passivation
+2026-09-29 | https://doi.org/10.4071/001c.166942 | raw/papers/2026-09-29_openalex_thick-high-ar-plating-resist.md | Thick high-AR plating resist, >50um threshold
+2026-09-29 | https://doi.org/10.4071/001c.166928 | raw/papers/2026-09-29_openalex_amkor-ap-coating-solder-emc-delamination.md | Amkor silane AP coating, solder-EMC delam

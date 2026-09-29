@@ -3,7 +3,7 @@ title: "台積電 / TSMC"
 category: entity
 tags: [foundry, advanced-packaging, CoWoS, SoIC, CoPoS, COUPE, CPO, InFO, WMCM, aLSI, MRAM, 3nm-pricing]
 created: 2026-04-24
-updated: 2026-09-28
+updated: 2026-09-29
 sources: [2026-09-27_tradingkey_copos-glass-validation-08mm-85x110mm, 2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-09-10_trendforce_tsmc-august-revenue-nt514b-record-fourth-month, 2026-09-10_trendforce_tsmc-taichung-14nm-p1-p2-2027-ahead-of-plan, 2026-04-24_initial-survey, 2026-04-13_trendforce_copos-pilot, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2025-12-18_trendforce_apple-wmcm-a20, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-01-20_trendforce_tsmc-wmcm-apple, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap, 2026-04-23_trendforce_tsmc-roadmap-a12-a13-no-high-na-euv, 2026-05-07_trendforce_tsmc-us-expansion-250b-arizona, 2026-05-12_focustaiwan_tsmc-capex-31b-arizona-20b, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-28_reuters_tsmc-kevin-zhang-energy-efficiency, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-09_financialcontent_tsmc-130k-cowos-wafers, 2026-06-09_digitimes_tsmc-cowos-soic-capacity-symposium, 2026-06-15_trendforce_tsmc-cowos-gap-narrowing-130k-200k-wafers, 2026-06-17_digitimes_amkor-tsmc-10year-arizona-deal, 2026-06-17_trendforce_tsmc-amkor-10year-arizona-advanced-packaging, 2026-06-10_tomshardware_tsmc-fab-expansion-roadmap-n2-cowos-soic, 2026-06-27_tmtpost_tsmc-cowos-capacity-targets-2026-2027, 2026-07-02_trendforce_samsung-sf2p-plus-tsmc-n2-roadmap, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-22_trendforce_tsmc-2027-price-hike-hpc, 2026-07-20_trendforce_tsmc-265b-arizona-intel-novalake, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-08-17_trendforce_tsmc-arizona-profit-663pct-1h26, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-26_paper_yole-advanced-packaging-market-ai-era]
 related:
   - wiki/technologies/cowos.md
@@ -488,3 +488,17 @@ TSMC 先進封裝研發總監 **James Chen**（SEMICON Taiwan 2026）首次官�
 ⭐ 另：**Synopsys × TSMC 擴大支援 CoWoS 與 CPO 上的整合式電壓調節器（IVR）**（Chip Week 157，2026-09-25）➜ 與 IMAPS 的 PDN 主題同向：**供電網路正在上移到封裝層。**
 
 **來源**：[[sources/2026-09-28_siliconanalysts_hbm4-16hi-volume-cowos-leadtime-78-weeks]]、[[sources/2026-09-28_semieng_chip-week-157-imec-3d-dram-yole-51b]]
+
+---
+
+## 2026-09-29 更新：CoWoS 良率數字修正；COUPE 結構首見面積分配；「自研 EMIB 替代方案」傳聞
+
+1. ⭐⭐⭐ **CoWoS 5.5× 良率修正為「典型 >98%、峰值 99%」**（TrendForce，更新 2026-09-11）。既有記載（2026-08-11 OCP APAC Summit）之「99%」實為峰值。➜ 詳見 [[technologies/cowos]]。⚠ 該良率是否涵蓋中介層完整電性篩檢（KGI）**仍未解。**
+
+2. ⭐⭐⭐ **COUPE 的結構分解首次可得**（SemiEng 2026-04-06）：**PIC = 65 nm SOI、EIC = 7 nm FF CMOS、合計約 65 mm²、其中 FAU 占 PIC 面積 40%**；連接器 MPO-16（收發）／MPO-12（雷射）。➜ **CPO 微縮的第一限制是光纖耦合的面積與對準，不是 PIC 電路。** 且 **65 nm SOI ＋ 7 nm FF 是「各層各用最合適世代」最乾淨的實例。**
+
+3. ⚠ **新信號（待證傳聞）**：TrendForce 稱「傳 TSMC 正自行開發 **EMIB 的替代方案**」（reportedly）。既有記載中 TSMC 的橋接路線一片空白（橋由 Intel／ASE／SPIL／Samsung 推進）。**不得作為結論，需一手佐證。**
+
+4. **CoWoS 光罩路線圖（既有記載複核一致）**：5.5× 現況 → **2029 年 >14×**。
+
+**來源**：[[sources/2026-09-29_trendforce_advanced-packaging-market-trends-outlook]]、[[sources/2026-09-29_semieng_all-ai-interconnects-optical-5-years]]

@@ -3,7 +3,7 @@ title: "NVIDIA Corporation"
 category: entity
 tags: [fabless, GPU, AI-accelerator, HBM4, CoWoS, SoIC, Rubin, Feynman, NVL576, CPO, Spectrum-X, Constellation]
 created: 2026-05-03
-updated: 2026-09-19
+updated: 2026-09-29
 sources: [2026-05-24_techtimes_nvidia-computex2026-cowos, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-03-18_trendforce_nvidia-rubin-feynman-soic, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-06_trendforce_google-tpu-cautious-adoption-nvidia, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-06-01_trendforce_nvidia-vera-rubin-tsmc-20pct-revenue, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-19_techtimes_vera-rubin-hbm4-suppliers, 2026-06-14_digitaltrends_tsmc-copos-glass-temporary-carrier, 2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b, 2026-07-27_trendforce_presscenter_cpo-switches-nvidia-broadcom-coupe]
 related:
   - wiki/entities/tsmc.md
@@ -218,3 +218,21 @@ related:
 
 ➜ 與本 wiki 既有記錄（TrendForce 2026-07-27：NVIDIA 與 Broadcom 開始 CPO 交換器量產爬坡）一致，並補上 SerDes 速率與三家具名採用者。
 ➜ 對照 Broadcom：TH5-Bailly 為**首個量產 CPO**（2025-05，100 Gb/s/lane），TH6-Davisson 102.4 Tb/s（2025-10，整合 TSMC COUPE）。**「首個量產 CPO」的時間點應記為 2025-05 而非 2026。**
+
+---
+
+## 2026-09-29 更新：CPO 損耗數字、Lumentum 投資、Amkor 協議
+
+| 項目 | 數值 | 來源 |
+|------|------|------|
+| CPO 傳輸波段／損耗 | **~1300–1320 nm，僅 1 dB** | SemiEng 2026-04-06 |
+| scale-up CPO 部署 | **2027/2028**（Feynman NVLink 8） | 同上 |
+| Rubin scale-up CPO | 預期 **1,000+ GPU pod** | 同上 |
+| **對 Lumentum 投資** | **$2B（已執行）** | OFC 2026 彙整 |
+| ⚠ Amkor × NVIDIA（2026-07） | **$1.5B** 先進封裝與開發協議（美國產能） | ⚠ 二手，需一手複核 |
+
+➜ ⭐⭐ **「1 dB 損耗 @ 1300–1320 nm」是本 wiki 首見 NVIDIA CPO 的損耗數字**，可與 [[entities/globalfoundries]] 既有記載（SSC ~0.4 dB／32 通道 V-groove <1 dB／Corning 玻璃橋 <1.5 dB/facet）並列。⚠ 口徑未明（是否為端到端？含耦合？），**不得直接與上述逐段損耗相加或比較。**
+➜ **NVIDIA 為 OCI MSA 創始成員之一**（與 AMD、Broadcom、Meta、Microsoft、OpenAI）⇒ 光 I/O 標準化由**買方主導**，與 UCIe 由供應側主導的型態相反。
+➜ 對照 **Google TPUv7 pod（9,216 TPU／144 櫃、OCS 省電 40%）** —— 超大規模業者的光互連已有實測級數字。
+
+**來源**：[[sources/2026-09-29_semieng_all-ai-interconnects-optical-5-years]]、[[sources/2026-09-29_semiwiki_ofc2026-siph-cpo-oci-ocs-summary]]、[[sources/2026-09-29_3dincites-vyansa_advanced-packaging-foundation-next-gen]]

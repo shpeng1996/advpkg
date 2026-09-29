@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-09-28
-**頁面總數 Total Pages**：702
-**原始來源數 Sources**：640（含 8 個合併轉向頁、1 個去重失誤更正頁；**本輪新增 15 篇：articles 4 / reports 1 / patents 5 / papers 5**）⭐ 以檔案計數交叉驗證：`find wiki -name '*.md'` = **702**，sources 目錄 = **640**，與加總一致
+**更新時間 Updated**：2026-09-29
+**頁面總數 Total Pages**：718
+**原始來源數 Sources**：655（含 8 個合併轉向頁、1 個去重失誤更正頁；**本輪新增 15 篇：articles 4 / reports 1 / patents 5 / papers 5**）⭐ 以檔案計數交叉驗證：`find wiki -name '*.md'` = **718**，sources 目錄 = **655**，與加總一致
 
 ---
 
@@ -76,6 +76,7 @@
 
 - [[concepts/test-metrology-packaging]] — **先進封裝的測試、量測與失效分析**；三條物理天花板（探針物理／像素平方律／偵測門檻 vs 數奈米空洞）；**良率三來源，其中測試端與 FA 端不隨製程改善而緩解**；⭐ **2026 Q3「測試左移」跨公司收斂（Samsung 結構／JCET 製程順序／米蘭理工 測試階段／Google DFA 設計階段／TSMC 產業組織）**⭐本輪新建
 - [[concepts/advanced-packaging-market]] — 市場規模（2025：$43–52B，CAGR 9–10%）、供應鏈、技術市佔、2026–2030 趨勢
+- [[concepts/power-delivery-packaging]] — **封裝層的供電網路 PDN（2026-09-29 新建）**；⭐⭐⭐ **供電＝封裝層的第二個物理預算，結構與熱完全同型**（Saras 正回饋迴路：尺寸↑ ⇒ 需求↑ 且 供給空間↓）；三個獨立來源同日升格（NPC **4→8 µF/mm²**、PDN 阻抗 **−92%**、>10 年／Saras eVR **>2,000 W、數千安培**、垂直供電／UMN **multi-kW for 3D HI**）；⭐⭐⭐ **混合接合首次用於被動元件**（NPC Gen-4 直接堆疊於處理器下方）；⭐⭐⭐ **垂直供電是晶片／基板／模組三層級同步的同一場轉向**；機櫃 **120→600 kW**⭐本輪新建
 - [[concepts/thermal-management]] — 先進封裝熱管理；TSMC CoWoS 直接矽液冷（ECTC 2025）；**翹曲管理納入熱-機械複合設計框架**（2026-07-30）；**液冷滲透率 33%→53%→60%（2025–27）；HBF/HBS 熱管理延伸；PINNs/AI 設計工具；CPO+STCO 雙路徑**（2026-08-23）⭐更新
 - [[concepts/geopolitics-advanced-packaging]] — 先進封裝地緣政治；美中晶片戰；CHIPS Act；**深圳 RMB 100 億 + 武漢 RMB 180 億半導體基金（2026-07-29）**⭐更新
 
@@ -93,6 +94,20 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-09-29_epo_intel-us20260130245a1-multiple-liners-tgv-ruthenium]] — [專利] ⭐⭐⭐ **Intel US20260130245A1：TGV 三層襯層，介電 0.1–100 nm／Ru 或 Cu 5–20 nm／導體 100–250 nm**；⭐⭐⭐ **釕首次進入玻璃基板排他權層 ⇒「釕在先進封裝中的角色」取得第三個獨立來源、第一個廠商證據**；⭐⭐⭐ **Intel TGV 襯層圍籬擴為五件五策略**；⭐⭐ 專利軌量化值第二度出現且集中於 Intel（2026-05-07）⭐本輪新增
+- [[sources/2026-09-29_epo_intel-us20260182403a1-zno-nanowires-tgv]] — [專利] ⭐⭐⭐ **Intel US20260182403A1：TGV 孔壁長 ZnO 奈米線 + Pd 活化 + 鍍銅種子層——TGV 金屬化第三條路線**；⭐⭐⭐ **一個結構同解「種子層覆蓋均勻度」與「熱膨脹緩衝」**；⭐⭐⭐ **「兩類界面」論述成形（機械咬合 vs 原子貼合），解釋粗糙度差 2–4 個數量級的成因**；⭐⭐ 邊界外擴第三型態＝IDM 取用載板業濕製程化學；⚠ 全篇無量化值（2026-06-25）⭐本輪新增
+- [[sources/2026-09-29_epo_samsung-us20260150758a1-optical-path-bridge]] — [專利] ⭐⭐⭐ **Samsung US20260150758A1：光路橋晶片——本 wiki 首見「橋」搬運光而非電**；波導垂直重疊耦合 + 透明支撐層作對外光學出口；⭐⭐⭐ **它攻擊的是已被量化的瓶頸：FAU 占 PIC 面積 40% ⇒ 新聞軌給量、專利軌給解，同輪閉環**；US20260157197A1 確認光橋與電橋同中介層共存（2026-05-28）⭐本輪新增
+- [[sources/2026-09-29_epo_samsung-us20260101823a1-stacked-bridge-chips]] — [專利] ⭐⭐⭐ **Samsung US20260101823A1：橋晶片垂直堆疊、各層尺寸不同——橋自「平面元件」變成「可分層的子封裝」**；與 2026-09-27 之四條互斥橋幾何**正交而非第五條**；⚠ 全篇無量化值（2026-04-09）⭐本輪新增
+- [[sources/2026-09-29_epo_samsung-us20260282955a1-molded-bridge-solder-attach]] — [專利] ⭐⭐⭐ **Samsung 模封式橋接第四件（2026-09-17，本輪最新專利）：差異點自「橋的表面材料」轉為「橋的接合方式」（三段式焊料）** ⇒ 候選論述擴充為「橋的每個表面**與其接合方式**都是獨立設計變數」；Samsung 七件／六個月／五個下注維度⭐本輪新增
+- [[sources/2026-09-29_imaps-dpc2026_nanoporous-silicon-capacitor-pdn]] — [論文] ⭐⭐⭐ **奈米孔矽電容 4→8 µF/mm²、PDN 阻抗 −92%、可靠度 >10 年**；⭐⭐⭐ **Gen-4 以混合接合把 NPC 晶粒直接堆疊於處理器下方 ⇒ 混合接合首次用於被動元件，驗收指標自 I/O 節距（µm）改為 PDN 阻抗（Ω）**；「封裝回收被動元件」第四個實作層且唯一完整量化者（IMAPS DPC 2026, 2026-08-11）⭐本輪新增
+- [[sources/2026-09-29_imaps-dpc2026_saras-stile-evr-vertical-pdn]] — [論文] ⭐⭐⭐ **Saras eVR STIle：AI 加速器 >2,000 W／數千安培；側向 PDN 已近物理極限 ⇒ 轉向垂直供電（基板層或模組層）**；⭐⭐⭐ **正回饋迴路（尺寸↑ ⇒ 需求↑ 且 供給空間↓）與熱問題結構完全同型 ⇒ 供電＝第二個物理預算**；⭐⭐⭐ 垂直供電是晶片／基板／模組三層級同步的轉向；2030 美國 >15% 電力用於 AI（2026-08-11）⭐本輪新增
+- [[sources/2026-09-29_imaps-dpc2026_unt-cu-al-dual-metal-passivation]] — [論文] ⭐⭐⭐ **UNT：Cu–Al 為電偶對（Al 墊陽極、Cu 線陰極），Cl⁻ 攻擊原生 Al₂O₃ 並催化點蝕——為 2026-09-28 Texas A&M「鋁氧化物難控」補上機制**；⭐⭐⭐ **推翻「步驟數軸與規格軸互相獨立」：免 UBM 的代價是可靠度**；⭐⭐⭐ 結清「Cu 氧化門檻依金屬分拆」之 Al 側；AEC-Q100 Grade-0（2026-08-12）⭐本輪新增
+- [[sources/2026-09-29_imaps-dpc2026_amkor-ap-coating-solder-emc-delamination]] — [論文] ⭐⭐⭐ **Amkor：焊料–EMC 剝離有兩個獨立成因（CTE 失配 + 無化學鍵）；粗化與電漿清洗只能改善咬合那一半 ⇒「界面工程的手段必須成對出現」**；⭐⭐⭐ **矽烷偶合劑化學跨越玻璃基板（Corning TGV）與功率封裝兩個不相干技術域——本 wiki 首例**；「附著性是一階設計限制」第五域（2026-08-11）⭐本輪新增
+- [[sources/2026-09-29_imaps-dpc2026_thick-high-ar-plating-resist]] — [論文] ⭐⭐⭐ **厚膜高 AR 電鍍阻劑：>50 µm 為關鍵門檻、化學增幅型負型、競爭要素是相容現有曝光機**——2026-09-28 Samsung 超厚光阻（220 µm/AR>8.1）之**材料側第二個獨立來源**；⭐⭐⭐ **「微影兩個相反極端」取得第二根支柱，且厚膜端商業邏輯（相容舊機台）與細線寬端相反**；⭐⭐ 特徵厚度＝互換關係第三個交換變數；adaptive patterning 四機制（2026-08-11）⭐本輪新增
+- [[sources/2026-09-29_semieng_all-ai-interconnects-optical-5-years]] — SemiEng：⭐⭐⭐ **TSMC COUPE 結構分解首見面積分配——PIC 65 nm SOI + EIC 7 nm FF、合計約 65 mm²、FAU 占 PIC 面積 40% ⇒ CPO 微縮第一限制是光纖耦合面積與對準，不是 PIC 電路**；NVIDIA CPO ~1300–1320 nm／1 dB；Google TPUv7 pod 9,216 顆/144 櫃、OCS 省電 40%；Lumentum R300 300×300/<1.5 dB（2026-04-06）⭐本輪新增
+- [[sources/2026-09-29_trendforce_advanced-packaging-market-trends-outlook]] — [報告] ⭐⭐⭐ **CoWoS 良率修正：5.5× 為「典型 >98%、峰值 99%」——長期空缺半數結清**；⭐⭐⭐ **ASE FOCoS RDL 最高 12 層（層數軸延長一倍）**、FOCoS 50×／FOCoS-Bridge 200×+；⭐⭐⭐ **EMIB-T >8×→>12×（2028）與 CoWoS 5.5×→>14×（2029）兩條曲線交叉**；⚠ 傳 TSMC 自研 EMIB 替代方案（更新 2026-09-11）⭐本輪新增
+- [[sources/2026-09-29_semiwiki_ofc2026-siph-cpo-oci-ocs-summary]] — SemiWiki/SEMIVISION：⭐⭐⭐ **Samsung 矽光子三段時程（平台 2027 年底／量產 2028／GPU+HBM 2029）與其光橋專利布局自洽**；⭐⭐⭐ **Meta 完成 9,000 萬小時 CPO 可靠度驗證（本 wiki 首見 CPO 可靠度時數，⚠ 口徑未明不得換算 MTBF）**；機櫃 120→600 kW；OCI MSA 由買方主導（2026-03-30）⭐本輪新增
+- [[sources/2026-09-29_semieng_tech-paper-roundup-sept29-multikw-3dhi-pdn]] — SemiEng 技術論文彙編：⭐⭐⭐ **UMN「Multi-kW 供電方法論 for 3D 異質整合」——本輪供電主題第三個獨立來源（唯一學界），達成升格為結構性瓶頸之條件 ⇒ 新建 [[concepts/power-delivery-packaging]]**；⚠ **構成「論文是落後指標」之反例 ⇒ 該論述限定為「排他權→學術發表」間隔**；本期 AP 條目 1/8（2026-09-29，本輪最新來源）⭐本輪新增
 - [[sources/2026-09-28_paper_imec-3d-volumetric-dram-on-gpu-thermal-envelope]] — ⭐⭐⭐ imec arXiv 2609.24343：**3D volumetric DRAM-on-GPU，121.7 → 103.4 °C**；**容量—頻寬—溫度三維對照（337/506/674 GB ↔ 58.8/88.2/117.6 TB/s）**；⭐⭐⭐ **「最有價值的設計點不是最密的那一個」⇒「最佳值是區間」論述首次作用在系統層**；**模封代價與導熱係數同向（矽 1–2 / 銅 3–4 / 鑽石 5–6 °C）**；⚠⚠ 純模擬、預印本
 - [[sources/2026-09-28_paper_tel-backside-power-overlay-distortion-sub5nm]] — ⭐⭐⭐ Tokyo Electron：**扣除掃描機雜訊後接合製程本身僅 <3 nm M+3σ**；**應力環可完全消除／中心變形降 90%／邊緣降 >50%**；⇒ **對準誤差首次拆為「機台逐 die」與「接合誘發形變場」兩個不可互換來源**；**接合缺陷是系統性指紋而非隨機**；⚠ BSPD 情境
 - [[sources/2026-09-28_paper_resonac-chemical-resistant-dicing-tape-hybrid-bonding]] — ⭐⭐⭐ Resonac（首見實體）：**晶粒飛散 >200 顆 → 0 顆、重量變化 9–36% → <1.3%、取放 100%**；⇒ **混合接合限制鏈最前端插入第 0 環（晶粒保持）**；**「輔助步驟才是瓶頸」第四例且唯一量化者**；**電漿切割道寬 1 µm**；⚠ 供應商自述、5 mm 晶粒偏大

@@ -3,7 +3,7 @@ title: "康寧 / Corning Incorporated"
 category: entity
 tags: [glass-substrate, TGV, materials, CPO, Corning]
 created: 2026-09-18
-updated: 2026-09-27
+updated: 2026-09-29
 sources:
   - 2026-08-06_epo_corning-small-diameter-tgv-adhesion
 related:
@@ -104,3 +104,19 @@ related:
 
 ➜ **本 wiki 既有 Corning 記述為 TGV 界面工程（WO2026164778A1）與玻璃橋 CPO（2026-06-24 thelec 二手）；本條是第一個由第三方廠商給出 Corning 玻璃橋光學損耗數值的一手來源。**
 ➜ 使「波導該住在哪一層」的四個答案中，**玻璃橋這一支首次有了 dB 數值**（詳見 [[technologies/copackaged-optics]]）。
+
+---
+
+## 2026-09-29 更新：矽烷偶合劑化學跨出玻璃基板域
+
+Amkor（IMAPS DPC 2026 `10.4071/001c.166928`）以**矽烷（SiH）偶合劑**處理**焊料 ↔ EMC** 界面，其鍵結機制與 Corning **WO2026164778A1**（2026-08）之 TGV 金屬化**字面相同**：
+
+> SiH 基在**水存在下**與無機側的**羥基化氧化層**形成共價鍵；另一端之**有機官能基**與有機材料（EMC／PID）鍵結。
+
+➜ ⭐⭐⭐ **這是「同一界面化學跨越玻璃基板與功率封裝兩個不相干技術域」的第一個實例。** 兩處若各自記載，將看不出是同一化學。➜ **建議在 wiki 內建立橫向索引**（見 [[technologies/glass-substrate]] 2026-09-29 更新第 4 節）。
+➜ 這也使 Corning「賭界面可做牢」的工程哲學獲得一個**技術域外的獨立支持**：同一化學在功率封裝的焊料／EMC 界面亦被選用。
+➜ 對照本輪 Intel 的第三條路線（**US20260182403A1**：ZnO 奈米線森林 + Pd 活化）—— **Corning 與 Intel 的分歧本輪擴為三種界面哲學**：可做牢（化學鍵）／必失效（襯層隔離）／做成三維咬合（奈米線）。
+
+📌 **既有空缺延續（本輪無進展）**：Corning 之 TGV「small via diameter」究竟指**頂／腰／底**何者；若為沙漏形，腰在什麼高度。
+
+**來源**：[[sources/2026-09-29_imaps-dpc2026_amkor-ap-coating-solder-emc-delamination]]、[[sources/2026-09-29_epo_intel-us20260182403a1-zno-nanowires-tgv]]

@@ -3,7 +3,7 @@ title: "Amkor Technology"
 category: entity
 tags: [OSAT, advanced-packaging, FOCoS, Arizona, chiplet, Intel-EMIB, patent-signal, TIM]
 created: 2026-04-25
-updated: 2026-09-27
+updated: 2026-09-29
 sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-05-19_stocktitan_amkor-arizona-peoria-land-expansion, 2026-06-17_digitimes_amkor-tsmc-10year-arizona-deal, 2026-06-17_trendforce_tsmc-amkor-10year-arizona-advanced-packaging, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-30_amkor-ir_arizona-7billion-groundbreaking, 2026-06-30_digitimes_amkor-2.5d-hdfo-growth-2026, 2026-07-23_amkor-ir_nvidia-amkor-1-5b-strategic-partnership, 2026-09-26_article_amkor-embedded-trace-rdl, 2026-09-26_article_semiwiki-cowos-capacity-double-2028]
 related:
   - wiki/technologies/rdl.md
@@ -258,3 +258,35 @@ Amkor 的 **Vineet Pancholi** 提供本 wiki 目前唯一的中介層測試覆�
 ➜ ⭐⭐⭐ **與 Purdue 模擬（n = 0.154）構成 Black 方程 n 的跨來源對照，差一個數量級** ➜ **新論述：「n 是失效機制的指紋。」**
 ➜ ⭐⭐ **RDL/passivation 界面剝離為「附著性是一階設計限制」的第二個技術域。**
 ➜ ⚠ 兩篇均為 **2024 年**發表；Amkor 的 RDL 製程自此已推進（ETR 為 2026 年）。**銅厚 5–9 µm 應理解為當時 WLP 主流值，非 Amkor 現行細線能力。** ⚠ n / E_a 為該特定結構之值，非銅的普適常數。
+
+---
+
+## 2026-09-29 更新：以一手論文補上界面化學能力；NVIDIA $1.5B 協議
+
+### ⭐⭐⭐ 焊料–EMC 剝離：兩個獨立成因與矽烷 AP 塗層
+
+（IMAPS DPC 2026 `10.4071/001c.166928`，作者 Hidenori Higashi）
+
+| 項目 | 內容 |
+|------|------|
+| 失效界面 | **焊料 ↔ EMC**（**非** lead frame ↔ EMC） |
+| 成因① | 焊料與 EMC 之 **CTE 顯著不同** |
+| 成因② | 兩者**沒有化學鍵** |
+| 既有手段（對 LF 有效） | 表面粗化、電漿清洗 |
+| 既有手段的缺口 | **在焊料側難以施行** |
+| 本件手段 | **矽烷（SiH）偶合劑**作附著促進劑（AP 塗層） |
+| 鍵結機制 | SiH 基在**水存在下**與無機側**羥基化氧化層**成共價鍵；另一端有機官能基接 EMC |
+
+➜ ⭐⭐⭐ **「附著性是一階設計限制」取得第五個技術域**，且本件是**唯一把「無化學鍵」與「CTE 失配」明確並列為兩個獨立成因**者。既有四域：TGV 種子層附著與 Intel 側壁塗層、有機介電對銅、解接合與雷射剝離材料。
+➜ **關鍵洞見**：粗化與電漿清洗**只能改善「機械咬合」那一半**，對「沒有化學鍵」那一半無效——這正是同一手段在 LF 上成立、在焊料上失效的原因。
+➜ **新候選論述：「界面強度有兩個彼此不可替代的來源——機械咬合與化學鍵；一項手段只能改善其中之一，因此界面工程的手段必須成對出現。」**
+➜ ⭐⭐⭐ **矽烷偶合劑化學在本 wiki 第二度出現，且跨越不相干技術域**：第一次為 **Corning WO2026164778A1**（2026-08）之玻璃 TGV 金屬化（羥基富化 + 矽烷官能化 + 無電鍍種子層）。**兩者機制字面相同。** ⇒ **建議建立橫向索引**，見 [[technologies/glass-substrate]]。
+➜ ⭐⭐ 與同會議 UNT 篇（`10.4071/001c.167031`：Cu–Al 電偶腐蝕、EMC 吸濕帶入 Cl⁻）構成 **EMC 界面的兩面**：本件為**力學／鍵結**面、UNT 為**化學／輸送**面。➜ **建議 EMC 自「一種封裝材料」升格為獨立的失效介面主題。**
+
+⚠ **摘要未給量化改善**（無附著強度 MPa、剝離面積比、TCT 循環數、MSL 等級）。
+📌 **新空缺**：AP 塗層處理後的附著強度絕對值與 TCT／HAST 剝離面積對照；該矽烷偶合劑與混合接合面製備之 SiCN 是否化學相容。
+
+### 商業面
+- ⚠ 二手（需一手複核）：**Amkor × NVIDIA（2026-07）$15 億**先進封裝與開發協議，擴充美國產能。➜ 與既有 **Arizona $12B 總投資（Phase 2、93K sqm 潔淨室、2029 完工）** 構成同一擴產敘事的**客戶側佐證**。
+
+**來源**：[[sources/2026-09-29_imaps-dpc2026_amkor-ap-coating-solder-emc-delamination]]、[[sources/2026-09-29_3dincites-vyansa_advanced-packaging-foundation-next-gen]]
