@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-09-29
-**頁面總數 Total Pages**：718
-**原始來源數 Sources**：655（含 8 個合併轉向頁、1 個去重失誤更正頁；**本輪新增 15 篇：articles 4 / reports 1 / patents 5 / papers 5**）⭐ 以檔案計數交叉驗證：`find wiki -name '*.md'` = **718**，sources 目錄 = **655**，與加總一致
+**更新時間 Updated**：2026-09-30
+**頁面總數 Total Pages**：734
+**原始來源數 Sources**：670（含 8 個合併轉向頁、1 個去重失誤更正頁；**本輪新增 15 篇：articles 5 / patents 5 / papers 5**）⭐ 以檔案計數交叉驗證：`find wiki -name '*.md'` = **734**，sources 目錄 = **670**，與加總一致（718 + 15 來源頁 + 1 新實體頁 = 734）
 
 ---
 
@@ -14,6 +14,7 @@
 
 ## 實體 Entities（公司、組織）
 
+- [[entities/infineon]] — Infineon Technologies（英飛凌）；德系功率半導體 IDM；⭐⭐⭐ **本 wiki 唯一的封裝層供電（PDN）電源側一手來源**；⭐⭐⭐ **「要讓真正的垂直供電發生，必須突破 3 A/mm² 的密度障壁」**；⭐⭐⭐ **PDN 總電阻 90–140 µΩ（橫向）→ 10–15 µΩ（BVM，−89%）→ 7–10 µΩ（基板內建，−93%）**；電流密度 0.4/0.6(2024)→1.0/1.5→2.0(2025)→>3→>4 A/mm²，每 2–3 年加倍；機櫃 <250 kW → ~600 kW+(2027+) → **>1 MW(2029+)**；處理器 ~0.4→~1→>2→**2–4 kW**；⚠ µΩ 單位為推定⭐本輪新建
 - [[entities/resonac]] — Resonac（レゾナック，原昭和電工材料）；日系封裝材料商；⭐⭐⭐ **混合接合用耐化學切割膠帶：80 °C 浸泡重量變化 9–36% → <1.3%；60 °C 清洗後晶粒飛散 >200 顆 → 0 顆；取放 100%（180/180）**；**電漿切割道寬 1 µm**（wiki 首見）；⇒ **「輔助步驟才是瓶頸」第四例且唯一量化者**⭐本輪新建
 - [[entities/etron]] — 鈺創科技 Etron × ND Hi Tech Lab（台灣）；記憶體/IP fabless；⭐⭐⭐ **US20260090421A1：貫穿散熱孔 TTV 與 TGV 對接、獨立散熱層** ⇒ **玻璃基板第六條自由度＝貫穿方向的熱通道；「熱是第四個限制」首次進入排他權層**；⚠ 全篇無量化值⭐本輪新建
 - [[entities/agc]] — AGC Inc.（旭硝子）；特種玻璃供應商，日系對應 Corning 之角色；⭐⭐⭐ **填滿 vs conformal TGV 在 30 GHz 電性無顯著差異（Sdd21 −2.11 vs −2.08 dB；1,250 A 下 795–802 vs 796–802 mV）**；**無鹼玻璃 ER-Y1 CTE 3.5/88 GPa vs EN-A1 5.8/75 GPa**；TGV **AR 1:20 @ 1.0 mm**、孔徑 50–100 µm；**PWG 年度路線圖（Dry-film 2027 0.20 → >2030 <0.10 dB/cm、CTE 70 → <50 ppm/°C）**；封裝尺寸 3.5×(2024)→>8.0×(2030)⭐本輪新建
@@ -94,6 +95,21 @@
 
 ## 來源摘要 Sources（依日期倒序）
 
+- [[sources/2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier]] — [論文] ⭐⭐⭐ **Infineon：垂直供電的密度障壁＝3 A/mm²**；⭐⭐⭐ **PDN 總電阻 90–140 → 10–15（−89%）→ 7–10 µΩ（−93%）**；電流密度世代階梯 0.4→2.0→>4 A/mm²（每 2–3 年加倍）；橫向 PDN 於 GPU >850–1,000 A 時損耗 >100 W；BVM −85% 損耗／−55% 尺寸；機櫃 **>1 MW(2029+)**；處理器 **2–4 kW**；48 V 故障佔系統故障 ~50%；⚠ µΩ 為推定（2026-08-11）⭐本輪新增
+- [[sources/2026-09-30_arxiv_umn-multi-kw-power-delivery-3d-hi]] — [論文] ⭐⭐⭐ **UMN arXiv 2609.24904：功率密度 1–10 vs 2D 之 0.1–0.5 W/mm²（差一個數量級）**；**電流密度 0.8–2.5 A/mm²、總電流 100–2,400 A**；48/54 V → IBV → ~0.8 V，2–3 級；**IR drop ~2% Vdd、雜訊 10% Vdd（DC 2–3%）**；效率 ≥90%（S1 97–98%／S2 ~90%）；⭐⭐⭐ **2 kW @90% ⇒ >200 W 變成熱 ⇒「供電與熱衝突」空缺結清**（2026-09-21）⭐本輪新增
+- [[sources/2026-09-30_semieng_bspdn-thermal-dissipation-barriers]] — [文章] ⭐⭐⭐ **BSPDN 峰值溫度 +14 °C（imec）／80 vs 57 °C（陽明交大）換取 IR drop −20~30%、頻率 +2–6%、面積 −5–15%** ⇒ **供電與熱是同一預算的兩端，兌換率在晶粒層是幾何**；晶圓減薄 >700 µm → **1–3 µm**；套刻 ~10 nm／**3 nm（direct connect，與 TEL <3 nm 對上）**；步驟數 −40%(18A)（2026-02-23）⭐本輪新增
+- [[sources/2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery]] — [文章] ⭐⭐⭐ **Intel Foundry 一手投稿（發布當日）：供電技術清單 PowerVia(18A) → PowerDirect(14A)、Omni MIM、eMIM-T（基板內嵌 MIM + TSV）、eDTC、EMIB-T** ⇒ **Intel 一家覆蓋垂直供電軸七個落點，本 wiki 首例**；資料中心 **104 GW(2025) → 132(2026) → 290 GW(2030)**；AI 伺服器佔 31%(2026)、2027 超越傳統（2026-09-30）⭐本輪新增
+- [[sources/2026-09-30_trendforce_intel-emib-substrate-yield-45-percent]] — [新聞] ⭐⭐⭐ **EMIB 基板良率 30%(2Q26) → 45%(現在) → 50%(4Q26) → 60%(1Q27)——本 wiki 首見 EMIB 側良率** ⇒ **與 CoWoS >98%（封裝）差一個級距，「誰領先」須指定軸**；⭐⭐⭐ **ABF↔矽橋 CTE 失配為主要限制項（第三個 CTE 失配位置）**；TSV 下方用 NCF（NCF 首次跨到橋接基板）；Ibiden／Shinko／Unimicron，Google 2027 採用；⚠⚠ 全篇 reportedly 待證（2026-09-23）⭐本輪新增
+- [[sources/2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids]] — [論文] ⭐⭐⭐ **大阪大 × 奧野：無電鍍銅層奈米孔洞體積分率 4.5%／9.6%（單 nm～十 nm，沿界面）**；⭐⭐⭐ **Pd 沿界面與孔洞表面偏析、殘留有機物致電阻率升高** ⇒ **「Pd 活化 + 無電鍍」（Corning／Intel ZnO／安捷利三條路線共用）的代價首次量化**；鍍速為控制變數；⇒ **「輔助步驟才是瓶頸」第六例（200–300 nm 種子層）**；⚠ 兩樣品、無重複性（2026-08-19）⭐本輪新增
+- [[sources/2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation]] — [論文] ⭐⭐⭐ **Schrödinger：濺鍍銅界面剝離強度 PMDA-ODA 0.7 g/mm、BPDA-PPD 1.2 g/mm，且「兩者對銅的附著都弱」** ⇒ **「附著是一階設計限制」五個技術域中首次出現絕對值**；PID 模數 2.4 GPa、Tg 380 vs 304 °C、Dk 3.345(5–40 GHz)；⚠⚠ **Df 模擬誤差 50% ⇒ 新作業規範（20）**（2026-08-11）⭐本輪新增
+- [[sources/2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth]] — [論文] ⭐⭐⭐ **上海交大：TGV 中介層 3 dB 頻寬 >110 GHz vs TSV >67 GHz（1.64×，皆為實作量測）** ⇒ **「玻璃電性優於矽」首次有同條件數字**；支援 128 GBaud、光引擎 112 GBaud；⇒ **CPO 瓶頸清單補上「中介層頻寬」**；與 Samsung 光橋（攻面積）分頭攻同一瓶頸；⚠ 未取得全文（2026-05-25）⭐本輪新增
+- [[sources/2026-09-30_epo_intel-jp2026116680a-glass-core-embedded-inductor-clusters]] — [專利] ⭐⭐⭐ **Intel JP2026116680A：玻璃層開孔 → 填介電 → 兩叢電感貫穿（兩叢隔開、介電連續）** ⇒ **玻璃核心自「訊號與機械載體」升格為被動元件的機殼**；⭐⭐⭐ **PDN 主題首件專利證據、第四類組織**；內嵌被動元件第三個垂直落點；⚠ 全篇無量化值（2026-07-10）⭐本輪新增
+- [[sources/2026-09-30_epo_intel-us20260040982a1-glass-package-liquid-metal-socketing]] — [專利] ⭐⭐⭐ **Intel US20260040982A1：井狀材料 + 貫穿孔 + 液態金屬 + 薄介電取代 BGA 出腳** ⇒ **對已量化之「PCB 側 BGA 應變 8.43%→19%（Lau, high risk）」的結構解**；⭐⭐⭐ **玻璃 CTE 三條路線全是規避，無一正面解決**；液態金屬為本 wiki 首見封裝互連材料；⚠ 全篇無量化值（2026-02-05）⭐本輪新增
+- [[sources/2026-09-30_epo_xiamen-anjieli-cn121335557a-silane-parylene-tgv]] — [專利] ⭐⭐⭐ **厦門安捷利美維 CN121335557A：矽烷偶合劑（結合層）+ parylene（緩衝層）+ 種子層** ⇒ **矽烷第三個技術域且公開最早（2026-01）**；⭐⭐⭐ **證明「界面可做牢」與「界面必失效」兩種哲學可串聯為兩層不同的膜 ⇒ 三角改述為「三種賭法」**；parylene 為首見 TGV 襯層材料；IPC 全在 B05D/C25D（2026-01-13）⭐本輪新增
+- [[sources/2026-09-30_epo_intel-us20260191037a1-localized-embedded-bridge-in-core]] — [專利] ⭐⭐⭐ **Intel US20260191037A1：橋置於基板核心腔體，且同一顆 die 的兩個 DDR PHY 一走橋內走線、一走增層走線** ⇒ **「橋可按 I/O 群組局部投放」——橋的第六與第七個維度（所在層、投放粒度）**；橋首次與 DDR 綁定；發明人四／五位在馬來西亞；CPC 含 H10W70/618（2026-07-02）⭐本輪新增
+- [[sources/2026-09-30_epo_amosense-wo2026019155a1-multilayer-glass-core-frit-bonding]] — [專利] ⭐⭐ **Amosense WO2026019155A1：玻璃熔塊膏 + 真空二次燒結 → 兩片玻璃芯氣密接合成多層玻璃芯** ⇒ **「多層玻璃核心」本 wiki 首見**；⭐⭐⭐ **邊界外擴第四型態：玻璃製造業者以自身製程進入基板層（IPC 全在 C03）**；玻璃–玻璃為第六種被追蹤界面；同申請人另有導電膏填槽取代電鍍 TGV；⚠ 全篇無量化值（2026-01-22）⭐本輪新增
+- [[sources/2026-09-30_semieng_one-substrate-no-longer-rules-them-all]] — [文章] ⭐⭐ **基板路線三分（ABF／玻璃核心／矽中介層），不再有單一主流**；⭐⭐⭐ **Intel 提出 "known good substrate"（KGS）+ Amkor「每個客戶都需客製開發」⇒ KGD 缺口在基板層重演**；**Shinko 提供 4/6/8 層核心、客戶要求內嵌被動元件 ⇒ 新作業規範（21）**；Synopsys 缺材料技術檔案；AMAT 著手襯層 CTE 與模數（2026-09-28）⭐本輪新增
+- [[sources/2026-09-30_intel_us-advanced-packaging-reticle-8x-12x-fab9]] — [新聞] ⭐⭐ **Intel 官網一手：光罩倍數「現在 8× → 2028 >12×」自二手升格為一手確認**（官網複核規則第二次正向確認）；**EMIB-T 由 Intel 自述為「具整合供電通道」的變體、2026 導入**；Fab 9 Rio Rancho 2,700 員工／500 供應商；⚠⚠ **一手來源也不給口徑 ⇒ 作業規範（16）維持，追蹤改為找 mm² 絕對值**（2026-07-29）⭐本輪新增
 - [[sources/2026-09-29_epo_intel-us20260130245a1-multiple-liners-tgv-ruthenium]] — [專利] ⭐⭐⭐ **Intel US20260130245A1：TGV 三層襯層，介電 0.1–100 nm／Ru 或 Cu 5–20 nm／導體 100–250 nm**；⭐⭐⭐ **釕首次進入玻璃基板排他權層 ⇒「釕在先進封裝中的角色」取得第三個獨立來源、第一個廠商證據**；⭐⭐⭐ **Intel TGV 襯層圍籬擴為五件五策略**；⭐⭐ 專利軌量化值第二度出現且集中於 Intel（2026-05-07）⭐本輪新增
 - [[sources/2026-09-29_epo_intel-us20260182403a1-zno-nanowires-tgv]] — [專利] ⭐⭐⭐ **Intel US20260182403A1：TGV 孔壁長 ZnO 奈米線 + Pd 活化 + 鍍銅種子層——TGV 金屬化第三條路線**；⭐⭐⭐ **一個結構同解「種子層覆蓋均勻度」與「熱膨脹緩衝」**；⭐⭐⭐ **「兩類界面」論述成形（機械咬合 vs 原子貼合），解釋粗糙度差 2–4 個數量級的成因**；⭐⭐ 邊界外擴第三型態＝IDM 取用載板業濕製程化學；⚠ 全篇無量化值（2026-06-25）⭐本輪新增
 - [[sources/2026-09-29_epo_samsung-us20260150758a1-optical-path-bridge]] — [專利] ⭐⭐⭐ **Samsung US20260150758A1：光路橋晶片——本 wiki 首見「橋」搬運光而非電**；波導垂直重疊耦合 + 透明支撐層作對外光學出口；⭐⭐⭐ **它攻擊的是已被量化的瓶頸：FAU 占 PIC 面積 40% ⇒ 新聞軌給量、專利軌給解，同輪閉環**；US20260157197A1 確認光橋與電橋同中介層共存（2026-05-28）⭐本輪新增

@@ -3,8 +3,8 @@ title: "玻璃基板 / Glass Core Substrate"
 category: technology
 tags: [glass-substrate, TGV, panel-level, FC-BGA, CoPoS, Absolics, DNP, Rapidus, warpage, SeWaRe, glass-interposer, BOE, ULCVD, non-embedding, Lens-Technology, TPK-KY, Innolux, AUO, LG-Chem, singulation, patent-signal]
 created: 2026-05-08
-updated: 2026-09-29
-sources: [2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-27_tradingkey_copos-glass-validation-08mm-85x110mm, 2026-09-27_intel_us20260182414a1-asymmetric-buildup-cte-gradient-glass, 2026-09-27_samsung_us20260144093a1-bridge-on-tgv-mold-fixed, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-05-05_trendforce-insights_glass-substrate-development, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-05-29_3dincites_rapidus-2nm-advanced-packaging-ai-foundry, 2026-06-01_trendforce_intel-3dgs-india-glass-substrate, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-06-20_biggo_boe-glass-substrate-pilot, 2026-06-28_economy-ac_glass-substrate-global-race, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-08-18_trendforce_shinko-glass-substrate-22layer-glassem-delay, 2026-09-11_mssp_tgv-glass-biaxial-bending-ring-on-ring, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-03-13_kaneka_jp2026047137a-glass-core-polyimide-quantified, 2026-08-10_screp_low-k-organic-buffer-tgv-cu-metallization, 2026-08-04_jmrt_vacuum-assisted-void-free-cu-fill-tgv, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_patent_er-eng-glass-interposer-dual-carrier, 2026-09-26_paper_yole-advanced-packaging-market-ai-era]
+updated: 2026-09-30
+sources: [2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-27_tradingkey_copos-glass-validation-08mm-85x110mm, 2026-09-27_intel_us20260182414a1-asymmetric-buildup-cte-gradient-glass, 2026-09-27_samsung_us20260144093a1-bridge-on-tgv-mold-fixed, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-05-05_trendforce-insights_glass-substrate-development, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-05-29_3dincites_rapidus-2nm-advanced-packaging-ai-foundry, 2026-06-01_trendforce_intel-3dgs-india-glass-substrate, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-06-20_biggo_boe-glass-substrate-pilot, 2026-06-28_economy-ac_glass-substrate-global-race, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-08-18_trendforce_shinko-glass-substrate-22layer-glassem-delay, 2026-09-11_mssp_tgv-glass-biaxial-bending-ring-on-ring, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-03-13_kaneka_jp2026047137a-glass-core-polyimide-quantified, 2026-08-10_screp_low-k-organic-buffer-tgv-cu-metallization, 2026-08-04_jmrt_vacuum-assisted-void-free-cu-fill-tgv, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_patent_er-eng-glass-interposer-dual-carrier, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-30_epo_xiamen-anjieli-cn121335557a-silane-parylene-tgv, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth, 2026-09-30_epo_intel-jp2026116680a-glass-core-embedded-inductor-clusters, 2026-09-30_epo_intel-us20260040982a1-glass-package-liquid-metal-socketing, 2026-09-30_epo_amosense-wo2026019155a1-multilayer-glass-core-frit-bonding, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all]
 related:
   - wiki/technologies/rdl.md
   - wiki/technologies/copos.md
@@ -1561,3 +1561,164 @@ Amkor（IMAPS DPC 2026，`10.4071/001c.166928`）以**矽烷（SiH）偶合劑**
 **來源**：[[sources/2026-09-29_epo_intel-us20260130245a1-multiple-liners-tgv-ruthenium]]、[[sources/2026-09-29_epo_intel-us20260182403a1-zno-nanowires-tgv]]、[[sources/2026-09-29_imaps-dpc2026_amkor-ap-coating-solder-emc-delamination]]、[[sources/2026-09-29_3dincites-vyansa_advanced-packaging-foundation-next-gen]]
 
 ⚠ 專利為前瞻訊號，非已量產結構。US20260182403A1 **全篇無量化值**。
+
+---
+
+## 2026-09-30 collect 新增 / Added 2026-09-30
+
+### ⭐⭐⭐ 修正：三種界面哲學並非互斥，前兩者可串聯
+
+2026-09-29 立下的三角為：**Corning 賭「界面可做牢」（化學鍵）／Intel 襯層族賭「界面必失效」
+（隔離與吸收應力）／Intel ZnO 賭「把界面做成三維咬合」。**
+
+**厦門安捷利美維 CN121335557A（公開 2026-01-13）推翻其互斥性：**
+
+`玻璃芯 → TGV 成孔 → 清洗與活化 → **矽烷偶合劑（結合層）** → **parylene（緩衝層）** → 金屬種子層 → 導電層 → 內層線路`
+
+➜ **先用矽烷做化學鍵（Corning 路線），再疊 parylene 當應力緩衝層（Intel 襯層路線）。**
+➜ **三角應改述為「三種賭法」而非「三條互斥路線」。**
+➜ 並且這給了 2026-09-29 論述 2（「界面工程的手段必須成對出現」）一個**結構形式**：
+**化學鍵層與應力緩衝層是兩層不同的膜，不是同一層膜的兩種性質。**
+
+**parylene 是本頁首見的 TGV 襯層材料**（既有：部分襯層／光聚合物襯層／高分子 buffer／
+噴霧熱裂解介電／多層襯層含釕 5–20 nm）。CVD 成膜、階梯覆蓋性極佳，與高 AR TGV 需求相符。
+⚠ 無型號、無厚度、無 CTE／Tg、無附著強度。
+
+### ⭐⭐⭐ 矽烷偶合劑：第三個技術域，且時間最早
+
+| 域 | 來源 | 用途 | 公開 |
+|----|------|------|------|
+| 玻璃 TGV 金屬化 | Corning WO2026164778A1 | 羥基富化 + 矽烷官能化 + 無電鍍種子層 | 2026-08 |
+| 功率封裝焊料／EMC | Amkor（IMAPS DPC 2026） | 矽烷（SiH）AP 塗層 | 2026-08 |
+| **玻璃 TGV（中國載板業）** | **厦門安捷利美維 CN121335557A** | **矽烷 + parylene 雙層** | **2026-01** |
+
+➜ **2026-09-29 之建議「建立化學／機制橫向索引」自「建議」升為「必須」。**
+
+### ⭐⭐⭐ 無電鍍種子層的固有缺陷首次被量化（Pd 偏析 + 4.5–9.6% 奈米孔洞）
+
+**大阪大 × 奧野製藥（IMAPS DPC 2026, `10.4071/001c.167758`）** 對有機基板堆疊微孔底部接點：
+
+| 項目 | 數值 |
+|------|------|
+| 奈米孔洞直徑 | **單一 nm ～ 十 nm 級** |
+| **奈米孔洞體積分率（3D STEM 斷層）** | **4.5% 與 9.6%（兩樣品）** |
+| 無電鍍銅層厚度 | **200–300 nm** |
+| 鍍浴溫度掃描 | 22 / 27 / 32 / 37 °C（pH 12.5） |
+
+結論：**Pd 沿界面與奈米孔洞表面偏析**；殘留元素被捕陷 ⇒ **電阻率升高**；
+孔洞降低**有效接合面積**；鍍速影響孔洞形成。
+
+➜ ⭐⭐⭐ **三條 TGV 金屬化路線（Corning、Intel ZnO + Pd 活化、安捷利）全部依賴
+「Pd 活化 + 無電鍍種子層」這道載板成熟濕製程，而本件顯示該製程自身帶有界面缺陷。**
+➜ **新論述：「以成熟載板濕製程解決先進封裝界面問題，會把載板製程自身的界面缺陷一併帶進來。」**
+➜ 這是 2026-09-29「邊界外擴第三型態（IDM 向載板業取用濕製程化學）」的**第一個代價證據**。
+⚠ **本件量測對象為有機基板微孔，非玻璃 TGV；外推至玻璃路線需另行佐證**（列為空缺）。
+
+### ⭐⭐⭐ 玻璃中介層 vs 矽中介層：首次有同條件的頻寬對比
+
+**上海交大（Advanced Photonics Nexus, `10.1117/1.apn.5.3.036019`, 2026-05-25）**，
+兩種中介層皆為實作並量測：
+
+| 中介層 | 3 dB 頻寬 | 比值 |
+|--------|----------|------|
+| **TSV（矽）** | **>67 GHz** | 1.00 |
+| **TGV（玻璃）** | **>110 GHz** | **1.64×** |
+
+支援 **128 GBaud** 訊號；CPO 收發器（設計＋模擬）可支撐 **112 GBaud 光引擎**。
+
+➜ **「玻璃電性優於矽」這句話第一次有同條件數字。** 既有比較全為材料常數層級
+（介電常數、CTE、模數）或單側量測（AGC：填滿 vs conformal TGV 於 30 GHz，
+Sdd21 −2.11 vs −2.08 dB ——比較的是「TGV 的兩種填法」，不是「玻璃 vs 矽」）。
+⚠ **未取得全文**：孔徑／AR／玻璃種類／通道數／串音／重複性皆缺。**列下輪最高優先取全文項。**
+
+### ⭐⭐⭐ 玻璃核心的第七個功能面：被動元件的機殼
+
+**Intel JP2026116680A（公開 2026-07-10）**：玻璃層開孔 → 孔內填介電 →
+**第一叢電感**貫穿 → **第二叢電感**貫穿同一介電（兩叢隔開，但介電連續）。
+
+➜ 本頁現有全部記載圍繞 **TGV 成孔／TGV 金屬化與襯層／熱通道／RDL 與介電／翹曲與 CTE／
+橋與載體幾何** ——亦即把玻璃視為**訊號與機械載體**。
+➜ **新論述：「玻璃核心的價值不只在電性與剛性，也在它可以是被動元件的機殼。」**
+➜ **這是 2026-09-29 建議之「本頁按主題重組為六段」的第七段候選。**
+➜ 與 [[concepts/power-delivery-packaging]] 直接同軸，並與 Infineon 之
+「substrate-integrated vertical power delivery（7–10 µΩ，−93%）」在同一架構位置對齊
+（Infineon 給效益、Intel 給請求項）。
+⚠ 全篇無量化值。
+
+### ⭐⭐⭐ CTE 兩難：三條已知路線全是規避，無一正面解決
+
+**Intel US20260040982A1「GLASS PACKAGE WITH LIQUID METAL SOCKETING」（公開 2026-02-05）**：
+以**井狀材料 + 貫穿孔 + 液態金屬 + 薄介電保護層**取代 BGA 出腳，對接可相容液態金屬的插座。
+
+➜ 這是本頁首次看到針對 **2026-09-21 已量化之「PCB 側 BGA 應變 8.43% → 19%（Lau，high risk）」**
+所提出的結構解：**直接取消剛性焊點。**
+
+| # | 規避型態 | 作法 | 代價 |
+|---|---------|------|------|
+| 1 | 限制玻璃的用途（上海美維） | 玻璃只當堆疊載板、外部互連走背面 | 放棄取代有機載板 |
+| 2 | 襯層吸收應力（Intel 襯層族） | 隔離與緩衝 | 多道製程、界面增多 |
+| 3 | **改變介面的物理狀態（Intel 本件）** | **固態焊點 → 液態金屬** | **可插拔／液金可靠度未知** |
+
+➜ **新論述：「玻璃核心的 CTE 問題目前沒有任何一條路線試圖正面解決，三條已知路線全是規避。」**
+➜ **「液態金屬」是本 wiki 首見的封裝互連材料**（既有：焊料、銅、導電膠、導電膏）。
+➜ **問題的量（Lau，模擬）與結構的解（Intel，排他權）對上** ——
+2026-09-29 首見於 CPO（FAU 40% ↔ Samsung 光橋）之閉環在**玻璃 CTE 主題**的第二例。
+
+### ⭐⭐⭐ 多層玻璃核心：玻璃芯自己也可以是多層的
+
+**Amosense WO2026019155A1（韓國，公開 2026-01-22）**：
+玻璃芯表面塗**玻璃熔塊膏**→一次預燒結成接合玻璃層→疊上另一片玻璃芯→
+**真空氣氛下二次主燒結，氣密接合**。IPC 全在 **C03（玻璃）**，無任何封裝分類。
+
+- 同申請人本輪另見 3 件（WO2026034861A1／WO2026034862A1／WO2026019154A1）；
+  其中 **WO2026034862A1 以「開槽 → 槽壁鍍接合金屬 → 導電膏填槽成電極」取代電鍍 TGV**
+  ➜ **TGV 導體形成出現第三條路線**（電鍍填充／conformal 鍍／**導電膏填充**）。⚠ 本輪未單獨收錄。
+- 對照 **Intel EP4712758A1**（STACKS OF GLASS LAYERS，family 94126336，已收錄）：
+  **兩家、兩種完全不同的堆疊玻璃作法** ——Intel 走封裝流程，Amosense 走玻璃製造流程。
+
+➜ **新論述：「玻璃基板的『層』不只是 RDL 的層，玻璃芯自己也可以是多層的。」**
+➜ **邊界外擴第四型態：玻璃／陶瓷製造業者以自身製程進入基板層**
+（前三型皆為封裝側向外取用：設備商→材料、載板業→堆疊、IDM→濕製程化學）。
+➜ **玻璃–玻璃（經熔塊）是本 wiki 第六種被追蹤的封裝界面，且是唯一「兩側材料相同、
+界面材料不同」者** ——既有的「CTE 失配在異種材料界面」框架不足以描述它。
+➜ **「氣密（hermetic）」是本頁首見的驗收要求**，指向內嵌空腔／內嵌元件的應用
+（與 Intel JP2026116680A 在結構上同族）。
+⚠ 全篇無量化值（熔塊組成、燒結溫度、真空度、接合強度、層數上限皆缺）。
+
+### 其他
+
+- **Applied Materials 著手「襯層的 CTE 與模數」**（SemiEng 2026-09-28）——
+  與 Intel 襯層族五件、安捷利 parylene 同一問題。
+  ➜ ⭐⭐ **設備商（AMAT）、IDM（Intel）、載板業（安捷利）三方同時在做 TGV 襯層。**
+  ⚠ AMAT 未給數值。
+- **Shinko Electric 提供 4/6/8 層核心結構，客戶要求內嵌被動元件**（SemiEng 2026-09-28）。
+  ➜ ⚠ **「層數」在基板上有兩個獨立的軸：核心層數與 RDL 層數；跨頁引用「層數」須標明是哪一軸。**
+
+### 2026-09-30 新增空缺
+
+- [ ] ⭐⭐ **玻璃 TGV 的無電鍍種子層是否有與有機基板微孔同等的孔洞率（4.5–9.6%）與 Pd 偏析？**
+  ——這是把大阪大結論外推到 Corning／Intel／安捷利路線的前提。
+- [ ] ⭐⭐ **TGV 頻寬優勢（110 vs 67 GHz）的成因拆解**：介電損耗、矽基板損耗，或幾何？
+  不拆解則無法判斷該優勢能否隨微縮保持。
+- [ ] ⭐ **矽烷種類**（APTES？GPTMS？）與 **parylene 型號／厚度／CTE／Tg**，
+  及其在後續高溫製程下的穩定性。
+- [ ] ⭐ **液態金屬種類（鎵基？）與對銅／鎳／鋁的侵蝕性**；可插拔次數、接觸電阻、高溫洩漏；
+  「薄介電保護層」是否即為防侵蝕而設。
+- [ ] ⭐ **熔塊層的 CTE 與 Tg** ——不知此值則無法與 AGC 之 ER-Y1（3.5 ppm/°C, 88 GPa）／
+  EN-A1（5.8, 75 GPa）並列，也無法判斷熔塊層自身是否成為新的應力集中點。
+- [ ] **多層玻璃芯的層間對準精度與層數上限**；TGV 是否需貫穿多層。
+- [ ] **Intel JP2026116680A 之「兩叢電感隔開但介電連續」的動機。**
+- [ ] **4/6/8 層核心各自對應的線寬／厚度／CTE**（Shinko）。
+- [ ] **AMAT 襯層 CTE／模數的數值。**
+- [ ] 本件之玻璃核心開孔填介電再植入電感，**與 TGV 金屬化共用哪些製程步驟**
+  ——若共用，則與 Intel 襯層族屬同一製程平台。
+
+### 2026-09-30 新增來源
+
+- [[sources/2026-09-30_epo_xiamen-anjieli-cn121335557a-silane-parylene-tgv]]
+- [[sources/2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids]]
+- [[sources/2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth]]
+- [[sources/2026-09-30_epo_intel-jp2026116680a-glass-core-embedded-inductor-clusters]]
+- [[sources/2026-09-30_epo_intel-us20260040982a1-glass-package-liquid-metal-socketing]]
+- [[sources/2026-09-30_epo_amosense-wo2026019155a1-multilayer-glass-core-frit-bonding]]
+- [[sources/2026-09-30_semieng_one-substrate-no-longer-rules-them-all]]

@@ -3,8 +3,8 @@ title: "Applied Materials（應用材料）"
 category: entity
 tags: [equipment, ECD, PECVD, TSV, HBM, die-thinning, hybrid-bonding, USA]
 created: 2026-09-17
-updated: 2026-09-23
-sources: [2026-08-18_appliedmaterials_hbm-packaging-bottleneck-toolset, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-06-28_hyperframe_amat-hybrid-bonding-hedge, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq]
+updated: 2026-09-30
+sources: [2026-08-18_appliedmaterials_hbm-packaging-bottleneck-toolset, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-06-28_hyperframe_amat-hybrid-bonding-hedge, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_epo_xiamen-anjieli-cn121335557a-silane-parylene-tgv]
 related:
   - wiki/technologies/tsv.md
   - wiki/technologies/hbm4.md
@@ -245,3 +245,51 @@ Poulomi Mukherjee（Applied Materials Germany）：FE 模擬識別 **① 種子�
 
 ### 定位
 ➜ AMAT 的 liner 是 TGV 界面問題的**第三條路線**：**既不賭界面可做牢（Corning）、也不賭界面必失效（Intel），而是插入一層可調的緩衝。** 本 wiki 不裁定勝負。
+
+---
+
+## 2026-09-30 collect 新增 / Added 2026-09-30
+
+### ⭐⭐ TGV 襯層：三方同時在做（設備商 / IDM / 載板業）
+
+**SemiEngineering（2026-09-28）**：**Applied Materials 處理「銅填 TGV 與周圍玻璃膨脹不同」
+的問題，並著手於襯層的 CTE 與模數。** ⚠ **未給數值。**
+
+➜ 對照同輪其他兩方：
+
+| 方 | 手段 | 證據 |
+|----|------|------|
+| **設備商（AMAT）** | **襯層的 CTE 與模數** | SemiEng 2026-09-28 |
+| IDM（Intel） | 襯層族五件（部分襯層／光聚合物／高分子 buffer／噴霧熱裂解介電／多層襯層含釕 5–20 nm）＋ ZnO 奈米線三維咬合 | EPO OPS |
+| 載板業（厦門安捷利美維） | **矽烷結合層 + parylene 緩衝層** | CN121335557A（本輪） |
+
+➜ ⭐⭐ **「TGV 襯層」已成為設備商、IDM 與載板業三方同時投入的環節** ——
+與 2026-09-29 之「Intel 把注全押在 TGV 的界面層」互相補強：**不只 Intel，是整條鏈。**
+➜ 這也延續 AMAT 既有的「邊界外擴第一型態」（設備商向材料／相鄰製程擴張）：
+**AMAT 從設備走到襯層材料的 CTE 與模數。**
+➜ ⚠ **AMAT 未給數值，故無法與 AGC 之玻璃 CTE（ER-Y1 3.5 / EN-A1 5.8 ppm/°C）
+或模數（88 / 75 GPa）並列** ——**這正是判斷襯層能否吸收 CTE 失配的必要條件。**
+
+### ⭐ 同篇之其他設備／材料側表態
+
+- **Lam Research**：**同時支援多條競爭的基板路線**（不押單一路線）
+- **Brewer Science**：開發**應用專屬的臨時鍵合材料**
+- **Synopsys**：指出業界**缺乏描述熱／電行為的材料技術檔案**
+- **Mitsubishi Chemical Group**：強調客製化需求
+
+➜ ⭐ **「設備商不押單一路線」（Lam）與「AMAT 深入襯層材料」（本輪）
+是兩種相反的設備商策略** ——前者押**製程平台的通用性**，後者押**特定界面的專屬解**。
+➜ **新論述候選：「基板路線三分（ABF／玻璃核心／矽中介層）之下，設備商分化為
+『支援全部』與『深耕一處』兩種策略。」**
+
+### 2026-09-30 新增空缺
+
+- [ ] ⭐⭐ **AMAT 襯層的 CTE 與模數數值** ——⚠ 與 AGC 之玻璃物性並列後才有意義。
+- [ ] ⭐ **AMAT 是否有對應的襯層排他權布局**（本輪未檢索其專利，列下輪 Track B 輪替對象）。
+- [ ] **「AMAT 混合接合 CMP 市占 100%」仍未結清**（2026-09-21 起列管，門檻已提高；本輪無進展）。
+- [ ] **Lam「同時支援多條路線」的具體產品分工。**
+
+### 2026-09-30 新增來源
+
+- [[sources/2026-09-30_semieng_one-substrate-no-longer-rules-them-all]]
+- [[sources/2026-09-30_epo_xiamen-anjieli-cn121335557a-silane-parylene-tgv]]

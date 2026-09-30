@@ -685,3 +685,18 @@
 2026-09-29 | https://doi.org/10.4071/001c.167031 | raw/papers/2026-09-29_openalex_unt-cu-al-dual-metal-passivation.md | UNT Cu-Al galvanic corrosion, dual passivation
 2026-09-29 | https://doi.org/10.4071/001c.166942 | raw/papers/2026-09-29_openalex_thick-high-ar-plating-resist.md | Thick high-AR plating resist, >50um threshold
 2026-09-29 | https://doi.org/10.4071/001c.166928 | raw/papers/2026-09-29_openalex_amkor-ap-coating-solder-emc-delamination.md | Amkor silane AP coating, solder-EMC delam
+2026-09-30 | https://trendforce.com/news/2026/09/23/breaking-intel-emib-substrate-yields-reportedly-hit-45-suppliers-eye-60-by-1q27 | raw/articles/2026-09-30_trendforce_intel-emib-substrate-yield-45-percent.md | Intel EMIB substrate yield 45%, 60% by 1Q27
+2026-09-30 | https://semiengineering.com/data-center-energy-trends-force-a-rethink-of-chip-power-delivery/ | raw/articles/2026-09-30_semieng_data-center-energy-rethink-chip-power-delivery.md | Intel PowerDirect/eMIM-T; DC 104-290 GW
+2026-09-30 | https://semiengineering.com/backside-power-delivery-creates-fab-tool-thermal-dissipation-barriers/ | raw/articles/2026-09-30_semieng_backside-power-delivery-thermal-dissipation-barriers.md | BSPDN +14C, 80 vs 57C; IR drop -20-30%
+2026-09-30 | https://semiengineering.com/one-substrate-no-longer-rules-them-all/ | raw/articles/2026-09-30_semieng_one-substrate-no-longer-rules-them-all.md | Shinko 4/6/8-layer cores; known good substrate
+2026-09-30 | https://www.intel.com/content/www/us/en/newsroom/news/intel-foundry/intels-us-advanced-packaging-enables-next-generation-ai-semiconductors.html | raw/articles/2026-09-30_intel_us-advanced-packaging-reticle-8x-12x-fab9.md | Intel 1st-party: reticle 8x now, >12x 2028
+2026-09-30 | EPO:95400541:JP2026116680A | raw/patents/2026-09-30_JP2026116680A_intel-glass-core-embedded-power-inductor-clusters.md | Intel glass core w/ embedded inductor clusters
+2026-09-30 | EPO:98652292:US20260040982A1 | raw/patents/2026-09-30_US20260040982A1_intel-glass-package-liquid-metal-socketing.md | Intel glass package liquid metal socketing
+2026-09-30 | EPO:97554664:CN121335557A | raw/patents/2026-09-30_CN121335557A_xiamen-anjieli-silane-parylene-tgv-metallization.md | Xiamen Anjieli silane+parylene TGV metallization
+2026-09-30 | EPO:100312105:US20260191037A1 | raw/patents/2026-09-30_US20260191037A1_intel-localized-embedded-bridge-in-core-ddr.md | Intel localized embedded bridge in core, DDR
+2026-09-30 | EPO:98437875:WO2026019155A1 | raw/patents/2026-09-30_WO2026019155A1_amosense-glass-frit-vacuum-bonded-multilayer-glass-core.md | Amosense glass-frit vacuum multilayer glass core
+2026-09-30 | https://arxiv.org/abs/2609.24904 | raw/papers/2026-09-30_arxiv_umn-multi-kw-power-delivery-3d-hi.md | UMN multi-kW PDN: 0.8-2.5 A/mm2, 2kW=200W loss
+2026-09-30 | https://doi.org/10.4071/001c.166905 | raw/papers/2026-09-30_openalex_infineon-power-packaging-grid-to-core-3a-mm2.md | Infineon 3 A/mm2 barrier; PDN 140->7 uOhm
+2026-09-30 | https://doi.org/10.4071/001c.167758 | raw/papers/2026-09-30_openalex_osaka-okuno-weak-micro-via-nanovoids-electroless-cu.md | Osaka weak micro-via: Pd segregation, 4.5/9.6% voids
+2026-09-30 | https://doi.org/10.4071/001c.166916 | raw/papers/2026-09-30_openalex_schrodinger-polyimide-cu-adhesion-molecular-simulation.md | Schrodinger Cu/PI peel 0.7 & 1.2 g/mm
+2026-09-30 | https://doi.org/10.1117/1.apn.5.3.036019 | raw/papers/2026-09-30_openalex_sjtu-high-density-cpo-tsv-tgv-interposers.md | SJTU TGV 110GHz vs TSV 67GHz, 128 GBaud

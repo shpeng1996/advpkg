@@ -3,8 +3,8 @@ title: "先進封裝熱管理 / Thermal Management in Advanced Packaging"
 category: concept
 tags: [thermal-management, liquid-cooling, 3D-IC, CoWoS, heat-dissipation, TIM, ECTC-2025, GaN, power-delivery, co-design, patent-signal, delamination]
 created: 2026-04-25
-updated: 2026-09-29
-sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2025-12-01_semiengineering_thermal-management, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-02_trendforce_samsung-hbm5-computex2026, 2026-05-21_semieng_hi-roadmap-nature-paper-intel, 2026-08-13_semieng_1mw-rack-debate-thermal, 2026-04-27_semieng_semiconductor-materials-misbehave, 2026-08-21_trendforce_chip-packaging-heat-ai-bottleneck-cpo-stco, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer]
+updated: 2026-09-30
+sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2025-12-01_semiengineering_thermal-management, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-02_trendforce_samsung-hbm5-computex2026, 2026-05-21_semieng_hi-roadmap-nature-paper-intel, 2026-08-13_semieng_1mw-rack-debate-thermal, 2026-04-27_semieng_semiconductor-materials-misbehave, 2026-08-21_trendforce_chip-packaging-heat-ai-bottleneck-cpo-stco, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_arxiv_umn-multi-kw-power-delivery-3d-hi, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier]
 related:
   - wiki/technologies/cowos.md
   - wiki/technologies/hybrid-bonding.md
@@ -827,3 +827,72 @@ Saras（IMAPS DPC 2026 `10.4071/001c.166924`）描述的**正回饋迴路**與�
 ⚠ **本 wiki 目前無任何來源同時處理兩者。** 列為常駐追蹤。
 
 **來源**：[[sources/2026-09-29_imaps-dpc2026_saras-stile-evr-vertical-pdn]]、[[sources/2026-09-29_imaps-dpc2026_nanoporous-silicon-capacitor-pdn]]、[[sources/2026-09-29_semieng_tech-paper-roundup-sept29-multikw-3dhi-pdn]]、[[sources/2026-09-29_semiwiki_ofc2026-siph-cpo-oci-ocs-summary]]
+
+---
+
+## 2026-09-30 collect 新增 / Added 2026-09-30
+
+### ⭐⭐⭐ 修正：供電與熱不是同型的兩個預算，而是同一個預算的兩端
+
+2026-09-29 建立 [[concepts/power-delivery-packaging]] 時記下：
+「供電是封裝層的第二個物理預算，**其結構與熱完全同型**」（依 Saras 的正回饋迴路）。
+
+**2026-09-30 修正：不是同型的兩個預算，而是同一個預算的兩端；
+兌換率在兩個層級各有一種形式，且兩者都已量化。**
+
+| 層級 | 衝突的形式 | 量化 | 來源 |
+|------|-----------|------|------|
+| **晶粒層** | **幾何**：移除基板既是供電的手段，也是散熱的損失 | **IR drop −20~30%、頻率 +2–6%、面積 −5–15%，換取峰值溫度 +14 °C（imec）～+23 °C（陽明交大，80 vs 57 °C）** | SemiEng 2026-02-23 |
+| **封裝層** | **能量**：轉換損耗直接變成熱 | **2 kW @ 90% 效率 ⇒ >200 W 需主動移除** | UMN arXiv 2609.24904 |
+
+➜ **新論述：「供電與熱的衝突不是兩種材料需求的矛盾，而是同一個動作同時是一方的手段、
+另一方的損失；在晶粒層那個動作是『移除基板』，在封裝層是『做一次電壓轉換』。」**
+
+➜ ⭐⭐⭐ **與本頁既有之 imec 模封熱代價對照**（矽 1–2 / 銅 3–4 / 鑽石 5–6 °C）：
+**移除基板的熱代價（+14 °C，同為 imec）比加一層模封材料大 2–7 倍。**
+⚠ 兩者量測對象不同（晶粒背面 vs 模封層），**不得相減**，僅量級可比。
+
+➜ ⚠ **imec +14 °C 與陽明交大 +23 °C 不一致**（兩個獨立來源、同一現象、皆為模擬、
+皆未附重複性）➜ **記為區間 +14～+23 °C，不取單值。**
+
+### ⭐⭐ 熱作為「供電效率的下游」：一個新的熱源類別
+
+UMN（arXiv 2609.24904）：系統效率目標 **≥90%**（Stage 1 97–98%、Stage 2 ~90%）；
+**2 kW 負載下 >200 W 的轉換損耗需主動移除**；且**調節器自身會受鄰近高功率區塊的局部熱點影響**。
+
+➜ 本頁既有熱源分類為**運作熱**（晶粒功耗）與**製程熱**（熱預算、退火溫度帶、鍵合頭）
+（2026-09-22 論述 7）。
+➜ **新增第三類：供電轉換熱** ——它既不在晶粒裡，也不在製程裡，而在**封裝內的電源元件裡**，
+且其大小由效率決定，**是唯一可以用「提高效率」直接減少的熱源。**
+➜ 並且它與 [[concepts/power-delivery-packaging]] 之「把調節器搬到離負載更近處」**方向衝突**：
+**越近負載 ⇒ PDN 損耗越低，但轉換熱越靠近本來就最熱的地方。**
+
+### ⭐ 溫度上限的分級（UMN）
+
+| 等級 | 上限 |
+|------|------|
+| 商用 | **85 °C** |
+| 高階 | **105 °C** |
+| 車用／軍用 | **125 °C** |
+
+➜ 本頁首見的封裝溫度上限分級；可與陽明交大之 BSPDN 最高溫 **80 °C** 對照
+——**80 °C 已幾乎觸及商用 85 °C 上限。**
+
+### 2026-09-30 新增空缺
+
+- [ ] ⭐⭐⭐ **BSPDN 的熱代價是否可用封裝層手段（TIM、微流道、鑽石）補回，補回多少？**
+  ——這是本頁與 [[concepts/power-delivery-packaging]] 的唯一缺口。
+- [ ] ⭐⭐ **「調節器越靠近負載」與「轉換熱越靠近熱點」的取捨曲線** ——
+  是否存在最佳距離？本 wiki 無任何來源處理。
+- [ ] ⭐⭐ **IR drop 降幅與溫升的取捨：nTSV 密度是否存在最佳值？**
+  （與 2026-09-21 論述 4 同型。）
+- [ ] ⭐ **以混合接合把 NPC 電容堆到處理器下方的熱代價**（2026-09-29 列管，本輪無進展）。
+- [ ] **PowerDirect（Intel 14A，第二代 BSPDN）是否改善了熱代價**
+  ——Intel 本輪一手投稿完全未提熱。
+- [ ] **>200 W 轉換損耗的空間分布**（集中於調節器？分散於 PDN 的 I²R？）。
+
+### 2026-09-30 新增來源
+
+- [[sources/2026-09-30_semieng_bspdn-thermal-dissipation-barriers]]
+- [[sources/2026-09-30_arxiv_umn-multi-kw-power-delivery-3d-hi]]
+- [[sources/2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier]]

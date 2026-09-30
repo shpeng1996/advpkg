@@ -3,13 +3,14 @@ title: "康寧 / Corning Incorporated"
 category: entity
 tags: [glass-substrate, TGV, materials, CPO, Corning]
 created: 2026-09-18
-updated: 2026-09-29
+updated: 2026-09-30
 sources:
   - 2026-08-06_epo_corning-small-diameter-tgv-adhesion
 related:
   - wiki/technologies/glass-substrate.md
   - wiki/technologies/copackaged-optics.md
   - wiki/technologies/copos.md
+sources: [2026-09-30_epo_xiamen-anjieli-cn121335557a-silane-parylene-tgv, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_epo_amosense-wo2026019155a1-multilayer-glass-core-frit-bonding, 2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth]
 ---
 
 # 康寧 / Corning Incorporated
@@ -120,3 +121,82 @@ Amkor（IMAPS DPC 2026 `10.4071/001c.166928`）以**矽烷（SiH）偶合劑**�
 📌 **既有空缺延續（本輪無進展）**：Corning 之 TGV「small via diameter」究竟指**頂／腰／底**何者；若為沙漏形，腰在什麼高度。
 
 **來源**：[[sources/2026-09-29_imaps-dpc2026_amkor-ap-coating-solder-emc-delamination]]、[[sources/2026-09-29_epo_intel-us20260182403a1-zno-nanowires-tgv]]
+
+---
+
+## 2026-09-30 collect 新增 / Added 2026-09-30
+
+### ⭐⭐⭐ 「界面可做牢」（化學鍵）路線：取得第三個採用者，但採用方式與 Corning 不同
+
+**厦門安捷利美維 CN121335557A（公開 2026-01-13）** 的 TGV 流程：
+
+`玻璃芯 → TGV 成孔 → 清洗與活化 → **矽烷偶合劑（結合層）** → **parylene（緩衝層）** → 金屬種子層 → 導電層`
+
+➜ **矽烷偶合劑的第三個技術域，且其公開日（2026-01）早於 Corning WO2026164778A1（2026-08）。**
+
+| 域 | 來源 | 用途 | 公開 |
+|----|------|------|------|
+| **玻璃 TGV（Corning）** | WO2026164778A1 | 羥基富化 + 矽烷官能化 + 無電鍍種子層 | 2026-08 |
+| 功率封裝焊料／EMC | Amkor（IMAPS DPC 2026） | 矽烷（SiH）AP 塗層 | 2026-08 |
+| **玻璃 TGV（中國載板業）** | **安捷利美維 CN121335557A** | **矽烷 + parylene 雙層** | **2026-01** |
+
+➜ ⭐⭐⭐ **關鍵差異：Corning 是「矽烷 → 種子層」（純化學鍵路線）；
+安捷利是「矽烷 → parylene 緩衝層 → 種子層」（化學鍵 + 應力緩衝串聯）。**
+➜ **因此 2026-09-29 所立之三角（Corning「界面可做牢」／Intel 襯層族「界面必失效」／
+Intel ZnO「三維咬合」）應改述為「三種賭法」而非「三條互斥路線」
+——前兩者可串聯為兩層不同的膜。**
+➜ **並且這意味 Corning 的純化學鍵路線是三者中最「乾淨」但也最沒有第二道防線的一條。**
+
+### ⭐⭐⭐ Corning 路線的新張力：無電鍍種子層自身的界面缺陷
+
+**大阪大 × 奧野製藥（IMAPS DPC 2026, `10.4071/001c.167758`）** 對無電鍍銅層：
+
+| 項目 | 數值 |
+|------|------|
+| 奈米孔洞直徑 | **單一 nm ～ 十 nm 級，沿界面分布** |
+| **體積分率** | **4.5% 與 9.6%（兩樣品）** |
+| 無電鍍銅層厚度 | **200–300 nm** |
+
+**Pd 沿界面與奈米孔洞表面偏析**；殘留元素被捕陷 ⇒ **電阻率升高**；孔洞**降低有效接合面積**。
+
+➜ ⚠⚠ **這對 Corning 的「矽烷 + 無電鍍種子層」路線構成張力：
+矽烷把玻璃↔銅的界面做牢，但無電鍍層自身含 4.5–9.6% 的孔洞與 Pd 偏析。**
+➜ **記為張力而非矛盾**：大阪大量測對象為**有機基板微孔**，非玻璃 TGV；
+**外推需另行佐證。** 列為空缺。
+➜ **且這是本 wiki 首次能問出：「界面做牢了，但緊鄰界面的那 200–300 nm 金屬本身牢不牢？」**
+
+### ⭐⭐ 玻璃的競爭者增加：多層玻璃芯與導電膏填槽
+
+**Amosense（韓國）本輪命中 4 件玻璃基板案**，其中：
+- **WO2026019155A1**：玻璃熔塊膏 + **真空二次燒結**，將兩片玻璃芯**氣密接合**成多層芯
+- **WO2026034862A1**：**開槽 → 槽壁鍍接合金屬 → 導電膏填槽成電極**（取代電鍍 TGV）
+
+➜ ⭐ **TGV 導體形成出現第三條路線**（電鍍填充／conformal 鍍／**導電膏填充**）
+——Corning 與 AGC 的記載皆在前兩條。
+➜ ⭐ **「多層玻璃芯」是本 wiki 首見**；Corning 之記載皆為單片玻璃芯。
+見 [[technologies/glass-substrate]]、[[entities/agc]]。
+
+### ⭐⭐ 玻璃中介層的電性優勢首次量化（對 Corning 論述有利）
+
+**上海交大（`10.1117/1.apn.5.3.036019`）**：
+**TGV 中介層 3 dB 頻寬 >110 GHz vs TSV >67 GHz（1.64×）**，皆為實作量測。
+➜ **這是「玻璃電性優於矽」第一次有同條件數字，對 Corning 的核心訴求構成正面支持。**
+⚠ 玻璃種類未述，**不知是否為 Corning 材料。**
+
+### 2026-09-30 新增空缺
+
+- [ ] ⭐⭐ **玻璃 TGV 的無電鍍種子層是否有與有機基板微孔同等的孔洞率（4.5–9.6%）與 Pd 偏析？**
+  ——這是把大阪大結論外推到 Corning 路線的前提，**也是本輪對 Corning 最關鍵的新問題。**
+- [ ] ⭐⭐ **Corning 的矽烷路線是否另有應力緩衝層？** 若無，則它是三條路線中唯一
+  「只有一道防線」者。
+- [ ] ⭐ **上海交大所用玻璃種類是否為 Corning 材料；TGV 頻寬優勢的成因拆解。**
+- [ ] **Corning「small via diameter」的頂／腰／底數值**（2026-09-18 起列管，
+  提問方式已三度修正，本輪仍無進展）。
+- [ ] **Corning 是否有多層玻璃芯或導電膏填槽的對應布局。**
+
+### 2026-09-30 新增來源
+
+- [[sources/2026-09-30_epo_xiamen-anjieli-cn121335557a-silane-parylene-tgv]]
+- [[sources/2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids]]
+- [[sources/2026-09-30_epo_amosense-wo2026019155a1-multilayer-glass-core-frit-bonding]]
+- [[sources/2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth]]

@@ -3,8 +3,8 @@ title: "Foveros — Intel 3D 晶片堆疊技術"
 category: technology
 tags: [Intel, 3D-stacking, hybrid-bonding, Foveros-Direct, micro-bump, TSV, Clearwater-Forest]
 created: 2026-05-03
-updated: 2026-09-19
-sources: [2026-08-24_intel-newsroom_hot-chips-2026-diamond-rapids-foveros-ucie, 2026-03-03_trendforce_intel-clearwater-forest, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-01_semianalysis_cpus-back-datacenter-2026, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap]
+updated: 2026-09-30
+sources: [2026-08-24_intel-newsroom_hot-chips-2026-diamond-rapids-foveros-ucie, 2026-03-03_trendforce_intel-clearwater-forest, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-01_semianalysis_cpus-back-datacenter-2026, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap, 2026-09-30_intel_us-advanced-packaging-reticle-8x-12x-fab9, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery]
 related:
   - wiki/entities/intel.md
   - wiki/technologies/emib.md
@@ -153,3 +153,63 @@ TrendForce Insights（2026-09-10）：**Intel Foveros Direct 第二代以 3µm b
 ⚠ **兩者時程未對齊**（TSMC 的 4.5 µm 明確標為 2029，Intel 的 3 µm 未標時程），**不可直接比較**。列為待追。
 
 ➜ 此外，本輪結清的最高優先空缺顯示 pitch 的第一限制在**表面平坦度（~0.2 nm）**與 **die 翹曲（< 100 nm）**，非機台對準。Intel 要自 9 µm 走到 3 µm，需要的是 CMP／薄膜與薄化製程的能力躍升。
+
+---
+
+## 2026-09-30 collect 新增 / Added 2026-09-30
+
+### ⭐⭐ 光罩倍數「8× 現在 → >12× 2028」由 Intel 一手來源確認
+
+**Intel 官網（2026-07-29）**：
+
+| 量 | 數值 |
+|----|------|
+| **光罩倍數（現在）** | **industry standard 的 8×** |
+| **光罩倍數（2028）** | **over 12×** |
+| EMIB-T 導入 | **2026** |
+| 廠址 | **Intel Fab 9, Rio Rancho, New Mexico**（2,700 員工、500 供應商） |
+
+技術組合：**Foveros**（矽中介層上堆疊 chiplet）、**EMIB**、
+**EMIB-T**（原文描述為「具整合供電通道」的 EMIB 變體）。
+
+➜ ⭐⭐ **此前本 wiki 之記載（2026-09-29）來自二手報導（3D InCites 客座投稿，
+依作業規範（18）需一手複核）。本輪複核通過，數字不變，證據等級上升。**
+➜ ⚠⚠ **口徑仍未釐清：一手來源也只說 "8x the industry standard"，
+未說明是封裝面積、中介層面積或矽面積。作業規範（16）仍適用 ——
+不得與 CoWoS 5.5×／14× 相減。**
+**追蹤方式改為：尋找 Intel 技術論文或 IEDM/ECTC 發表中的 mm² 絕對值。**
+
+### ⚠ 本輪兩篇 Intel 一手來源皆未提 Foveros Direct 3D 與 Foveros-R/B
+
+- Intel 官網（2026-07-29）技術清單：**Foveros、EMIB、EMIB-T** 三項
+- Intel Foundry 投稿（SemiEng, 2026-09-30）：**PowerVia／PowerDirect／Omni MIM／
+  eMIM-T／eDTC／EMIB-T**（全為供電向，無 Foveros 變體）
+
+➜ 對照 2025 年 Direct Connect 之路線圖（本 wiki 既有記載）：
+**EMIB-T、Foveros-R/B、Foveros Direct 3D 三項並列。**
+➜ ⚠ **本輪兩篇一手來源的技術清單較窄，且皆以 EMIB-T 為主角，原因不明。**
+➜ **列為空缺：Foveros Direct 3D 的時程是否有變動？**
+（注意：不得由「未提及」推論「取消」——這只是本輪一手來源的覆蓋範圍較窄。）
+
+### ⭐ 背面供電：Foveros 堆疊與 BSPDN 的熱代價疊加
+
+**SemiEng（2026-02-23）**：BSPDN 使峰值溫度 **+14 °C（imec）～+23 °C（陽明交大，80 vs 57 °C）**，
+換取 IR drop **−20~30%**；晶圓減薄 **>700 µm → 1–3 µm**；
+Intel **PowerVia（18A）** 已量產、**PowerDirect（14A）** 在後。
+
+➜ ⚠ **Foveros 為 3D 堆疊，本身已有熱代價（imec 模封代價：矽 1–2 / 銅 3–4 / 鑽石 5–6 °C）；
+若同時採 BSPDN，兩項熱代價是否疊加、如何疊加，本 wiki 無任何來源處理。**
+➜ **列為空缺，且與 [[concepts/thermal-management]]、[[concepts/power-delivery-packaging]] 同軸。**
+
+### 2026-09-30 新增空缺
+
+- [ ] ⭐⭐ **光罩倍數的口徑**（封裝／中介層／矽面積）；追蹤 mm² 絕對值。
+- [ ] ⭐⭐ **Foveros 3D 堆疊的熱代價與 BSPDN 的熱代價是否疊加。**
+- [ ] ⭐ **Foveros Direct 3D / Foveros-R/B 的時程**（本輪兩篇一手來源皆未提）。
+- [ ] **Fab 9 的產能數字**（官網僅給員工與供應商數）。
+
+### 2026-09-30 新增來源
+
+- [[sources/2026-09-30_intel_us-advanced-packaging-reticle-8x-12x-fab9]]
+- [[sources/2026-09-30_semieng_bspdn-thermal-dissipation-barriers]]
+- [[sources/2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery]]

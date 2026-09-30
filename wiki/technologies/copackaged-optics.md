@@ -3,8 +3,8 @@ title: "共封裝光學元件 / Co-Packaged Optics (CPO) — TSMC-COUPE™ & Eco
 category: technology
 tags: [CPO, co-packaged-optics, COUPE, TSMC, GlobalFoundries, Samsung, photonics, AI, HPC, networking, OCI-MSA, DWDM, Broadcom, NVIDIA, glass-substrate, ULCVD, TGV, Spectrum-X, NVL72]
 created: 2026-04-25
-updated: 2026-09-27
-sources: [2026-09-27_globalfoundries_siph-cpo-bandwidth-density-coupling-budget, 2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-27_paper_copper-interconnect-scaling-roadmap-lines-per-mm, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-05-07_trendforce_globalfoundries-silicon-photonics-scale-cpo, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-03-17_coherent_cpo-ofc2026-demo, 2026-06-07_digitimes_jcet-3d-packaging-cpo-plant, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_edn_cpo-technology-status-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-06-24_thelec_corning-glass-bridge-cpo, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-14_trendforce_umc-silith-silicon-photonics-hvm, 2026-07-14_trendforce_huawei-baidu-npo-msa, 2026-07-27_trendforce_presscenter_cpo-switches-nvidia-broadcom-coupe, 2026-06-03_3dincites_intel-foundry-emib-cpo-glass-ectc2026, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-07-31_ase_cn224583735u-photoelectric-hybrid-rdl, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-09-26_report_dupont-ttm-polymer-waveguide-reliability, 2026-09-26_paper_lpkf-lide-glass-ap-cpo]
+updated: 2026-09-30
+sources: [2026-09-27_globalfoundries_siph-cpo-bandwidth-density-coupling-budget, 2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-27_paper_copper-interconnect-scaling-roadmap-lines-per-mm, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-05-07_trendforce_globalfoundries-silicon-photonics-scale-cpo, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-03-17_coherent_cpo-ofc2026-demo, 2026-06-07_digitimes_jcet-3d-packaging-cpo-plant, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_edn_cpo-technology-status-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-06-24_thelec_corning-glass-bridge-cpo, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-14_trendforce_umc-silith-silicon-photonics-hvm, 2026-07-14_trendforce_huawei-baidu-npo-msa, 2026-07-27_trendforce_presscenter_cpo-switches-nvidia-broadcom-coupe, 2026-06-03_3dincites_intel-foundry-emib-cpo-glass-ectc2026, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-07-31_ase_cn224583735u-photoelectric-hybrid-rdl, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-09-26_report_dupont-ttm-polymer-waveguide-reliability, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all]
 related:
   - wiki/technologies/rdl.md
   - wiki/entities/tsmc.md
@@ -1055,3 +1055,64 @@ CPO 世代參照：現行可插拔 Tx **1.6 Tbps/件**；**TH6-Davisson（2025�
 
 ➜ ⚠⚠ **DuPont/TTM 的實測 0.088 dB/cm（MM 850 nm）已優於 AGC 的 2030 目標 <0.10 dB/cm。** 若同為 MM 850 nm 則矛盾；若波長/模態不同則不可比。**並列不裁定 ➜ 新空缺：兩組 dB/cm 的波長與模態基準。**
 ➜ ⭐⭐ **PWG 的 CTE 目標（2027 70 → 2030 <50 ppm/°C）為本 wiki 首見的波導材料 CTE 規格**，且比有機基板（15 ppm/°C）高 **3–5 倍** ➜ **新空缺：高分子波導與玻璃核心的 CTE 落差**（2026-09-26「DuPont/TTM 在封裝級基材上的漂移絕對值」空缺的機械側對應項）。
+
+---
+
+## 2026-09-30 collect 新增 / Added 2026-09-30
+
+### ⭐⭐⭐ 中介層頻寬：CPO 瓶頸清單的新一項，且 TGV 勝 TSV 1.64×
+
+**上海交大（Advanced Photonics Nexus, `10.1117/1.apn.5.3.036019`, 2026-05-25）**，
+兩種中介層皆為**實作並量測**：
+
+| 中介層 | 3 dB 頻寬 |
+|--------|----------|
+| **TSV（矽）** | **>67 GHz** |
+| **TGV（玻璃）** | **>110 GHz（1.64×）** |
+| 支援訊號速率 | **128 GBaud** |
+| 光引擎速率（設計＋模擬） | **112 GBaud** |
+
+➜ ⭐⭐⭐ **本頁既有量化記載皆為頻寬密度（GlobalFoundries：銅 <1 vs 光 >5 Tb/s/mm）、
+能效（>5 vs 2–5 pJ/bit）、耦合損耗（SSC ~0.4 dB／32 通道 V-groove <1 dB／
+Corning 玻璃橋 <1.5 dB/facet）與面積（FAU 占 PIC 面積 40%）。
+中介層自身的 3 dB 頻寬此前完全空白。**
+➜ ⭐⭐ **玻璃在 CPO 的角色自「載體／光學橋」擴為「高頻電性通道」。**
+既有玻璃 × CPO 記載為 Corning 玻璃橋（<1.5 dB/facet，光學）與玻璃體內直寫波導（光學）。
+➜ ⚠ 與 GlobalFoundries 之 **Ge PD 120 GHz** 同量級，但**兩者為不同物理量**
+（光偵測器頻寬 vs 中介層電性頻寬），**不得並列為同一條曲線**；
+惟可說**電性中介層已不再是光鏈路中最窄的一環。**
+
+### ⭐⭐ 與 Samsung 光橋專利對軸：同一瓶頸的兩個環節
+
+| 陣營 | 攻擊的環節 | 手段 | 證據 |
+|------|-----------|------|------|
+| **Samsung** | **面積**（FAU 占 PIC 40%） | 把光耦合結構搬離 PIC 表面（光路橋、波導垂直重疊、透明支撐層） | US20260150758A1、US20260157197A1 |
+| **上海交大** | **頻寬** | 把電性中介層做到 110 GHz 以支撐 112 GBaud 光引擎 | 本篇 |
+
+➜ **新論述：「CPO 的限制同時存在於光耦合的面積與電性中介層的頻寬，兩者由不同陣營分頭攻。」**
+
+### 其他
+
+- **SemiEng（2026-09-28）**：**CPO 被列為基板路線分化的三大應用驅動之一**
+  （與 AI/HPC、車用並列），且被描述為「需求獨特（unique requirements）」的新興架構。
+  ➜ ⭐ **CPO 首次以「基板需求驅動者」的身分出現，而非僅以光學規格出現。**
+- **Nature Electronics 之 CPO 綜述**（`10.1038/s41928-026-01681-6`，2026-08-19）
+  於本輪 OpenAlex CPO 軌再度命中，但 **OpenAlex 無摘要、無 OA PDF**
+  ⇒ **長期空缺「Nature Electronics CPO 綜述全文（2D/2.5D/3D 三階段各自的量化門檻）」
+  連續第三輪未取得。** 依 2026-09-28 之降級規則，下輪起**降為「暫不可得」。**
+
+### 2026-09-30 新增空缺
+
+- [ ] ⭐⭐ **TGV 頻寬優勢（110 vs 67 GHz）的成因拆解**：介電損耗（tan δ）、
+  矽的 substrate loss，或幾何（孔徑／襯層）？**不拆解則無法判斷該優勢能否隨微縮保持。**
+- [ ] ⭐ **上海交大全文**：TGV 孔徑／間距／AR、玻璃種類、通道數、串音、
+  完整插入損耗曲線，以及 110 GHz 是否附重複性。**列下輪最高優先取全文項。**
+- [ ] ⭐ **128 GBaud（中介層實測）與 112 GBaud（光引擎設計）之間的 16 GBaud 落差**
+  是設計餘裕還是量測條件差異。
+- [ ] **CPO 對基板的「獨特需求」具體是什麼**（SemiEng 未展開）。
+- [ ] **缺實體頁候選**：上海交通大學（何祖源／杜江兵團隊）——本 wiki 首見之中國矽光子封裝一手來源。
+
+### 2026-09-30 新增來源
+
+- [[sources/2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth]]
+- [[sources/2026-09-30_semieng_one-substrate-no-longer-rules-them-all]]

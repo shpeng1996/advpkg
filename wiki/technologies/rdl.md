@@ -3,8 +3,8 @@ title: "RDL — 重分佈層 / Redistribution Layer"
 category: technology
 tags: [RDL, SAP, dual-damascene, embedded-trace, ETR, polyimide, FPIM, CMP, electromigration, panel-level, pad-less-via]
 created: 2026-09-26
-updated: 2026-09-29
-sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2026-09-27_paper_purdue-ru-cu-em-lifetime-blacks-n-0154, 2026-09-27_paper_copper-interconnect-scaling-roadmap-lines-per-mm, 2026-09-26_article_taiyo-imec-700nm-damascene-rdl, 2026-09-26_article_imec-1um-damascene-rdl-2019-anchor, 2026-09-26_article_amkor-embedded-trace-rdl, 2026-09-26_paper_asi-1um-hdbu-substrate, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-25_paper_dnp-glass-rdl-electromigration-lifetime, 2026-09-25_paper_cornell-glass-on-glass-sio2-rdl, 2026-09-25_paper_asu-molded-core-substrate-warpage]
+updated: 2026-09-30
+sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2026-09-27_paper_purdue-ru-cu-em-lifetime-blacks-n-0154, 2026-09-27_paper_copper-interconnect-scaling-roadmap-lines-per-mm, 2026-09-26_article_taiyo-imec-700nm-damascene-rdl, 2026-09-26_article_imec-1um-damascene-rdl-2019-anchor, 2026-09-26_article_amkor-embedded-trace-rdl, 2026-09-26_paper_asi-1um-hdbu-substrate, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-25_paper_dnp-glass-rdl-electromigration-lifetime, 2026-09-25_paper_cornell-glass-on-glass-sio2-rdl, 2026-09-25_paper_asu-molded-core-substrate-warpage, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all]
 related:
   - wiki/technologies/foplp.md
   - wiki/technologies/glass-substrate.md
@@ -276,3 +276,98 @@ wiki 既有微影記載**全部朝更細線寬走**：ASML XT:260 3D DUV、CFMEE
 4. **省掉額外的介電與金屬層** ⇒ 降成本。
 
 **來源**：[[sources/2026-09-29_trendforce_advanced-packaging-market-trends-outlook]]、[[sources/2026-09-29_3dincites-vyansa_advanced-packaging-foundation-next-gen]]、[[sources/2026-09-29_imaps-dpc2026_thick-high-ar-plating-resist]]
+
+---
+
+## 2026-09-30 collect 新增 / Added 2026-09-30
+
+### ⭐⭐⭐ 「附著是一階設計限制」首次取得絕對值：Cu／聚醯亞胺剝離強度 0.7 與 1.2 g/mm
+
+**Schrödinger（IMAPS DPC 2026, `10.4071/001c.166916`）** ——MD + DFT 模擬，
+並與實驗剝離強度對照：
+
+| 聚合物（濺鍍銅界面） | 剝離強度 |
+|---------------------|---------|
+| **PMDA-ODA** | **0.7 g/mm** |
+| **BPDA-PPD** | **1.2 g/mm** |
+
+**作者結論：模擬結果一致顯示兩種聚醯亞胺對銅的附著都弱。**
+
+➜ ⭐⭐⭐ 本 wiki 既有「附著是一階設計限制」五個技術域（TGV 種子層附著、焊料／EMC 剝離、
+Cu–Al 電偶腐蝕、厚膜光阻、Amkor AP 塗層）**全部只有定性敘述或相對改善幅度，無一有絕對值。**
+➜ **新論述：「同一材料族（聚醯亞胺）內部的附著差異即可達 1.7 倍，
+因此『用什麼介電』與『界面怎麼處理』是同等級的設計變數。」**
+➜ **並且它給了「界面工程的手段必須成對出現」（2026-09-29 論述 2）一個可計算的判準：
+在不做任何界面處理時，純化學結構所能提供的附著上限就是 0.7–1.2 g/mm。**
+亦即 Amkor 所說的「另一半」（化學鍵）有了基線值。
+
+### ⭐⭐ RDL 介電的熱機械與電性（模擬值，附誤差）
+
+| 性質 | PID 材料 | PMDA-ODA |
+|------|----------|----------|
+| 模數 | **2.4 GPa（13%）** | n/a |
+| **Tg** | **380 °C（3%）** | **304 °C（18%）** |
+| Dk | **3.345（5%）** | ~3.2（6%） |
+| Df | **0.0033（50%）** | ~0.002（23%） |
+
+PMDA-ODA 於 **1 GHz**；PID 為 **5–40 GHz** 特徵值。
+
+➜ ⭐⭐ **Tg 380 vs 304 °C 是本頁首見的 RDL 介電 Tg 並列值**
+——屬「製程熱」線（2026-09-22 論述 7），與混合接合退火溫度帶、775 µm 熱預算同軸。
+➜ ⭐ **Dk 3.345 於 5–40 GHz** 可與 AGC 之 TGV 30 GHz 電性記載同頻段並列。
+➜ ⚠⚠ **Df 的模擬誤差達 50%** ⇒ **以模擬篩選低損耗介電材料，在 Df 這個指標上目前不可行；
+Dk（5–6%）可行。** 見 [[concepts/test-metrology-packaging]]。
+
+### ⭐⭐⭐ 微孔底部接點：無電鍍銅層的奈米孔洞與 Pd 偏析
+
+**大阪大 × 奧野製藥（IMAPS DPC 2026, `10.4071/001c.167758`）**
+——作者稱之為 **「隱藏的威脅：弱微孔（Weak Micro Via）」**：
+
+| 項目 | 數值 |
+|------|------|
+| 奈米孔洞直徑 | **單一 nm ～ 十 nm 級**，**沿界面分布** |
+| **體積分率（3D STEM 斷層）** | **4.5% 與 9.6%（兩樣品）** |
+| 無電鍍銅層 | **200–300 nm** |
+| 電解鍍銅 | 15 µm（另組 base 20 µm） |
+| 鍍浴 | pH 12.5；溫度掃 22 / 27 / 32 / 37 °C |
+
+結論：**Pd 沿界面與孔洞表面偏析**；**殘留元素被捕陷 ⇒ 電阻率升高**；
+**孔洞降低有效接合面積**（加上 Ni 的添加）；**鍍速影響孔洞形成**。
+
+➜ ⭐⭐⭐ **「真正的瓶頸在被視為輔助步驟的那一步」（2026-09-22 論述 2）取得第六例，
+且是第一個帶體積分率的量化實例。** 那一步是 **200–300 nm 的無電鍍種子層**
+——厚度只有其上電解銅的 1/50 ～ 1/100，卻決定整個微孔接點的強度與電阻率。
+➜ ⭐⭐ **「電阻率」首次被歸因到奈米尺度的殘留有機物**
+（既有 RDL 電阻討論皆在線寬、厚度與晶粒尺寸層級：JCET 晶粒尺寸梯度、Absolics 長寬比）。
+➜ ⭐ **控制變數是「鍍速」而非終點條件** ——與 2026-09-22 之「惰性環境 Cu 氧化是
+queue time 而非溫度門檻」同型。
+⚠ 僅兩樣品、未附重複性（依 2026-09-21 作業規範標 ⚠）。
+
+### ⭐⭐ 「層數」有兩個獨立的軸
+
+**Shinko Electric（SemiEng, 2026-09-28）提供 4 層、6 層、8 層三種核心結構。**
+
+➜ 本頁既有層數記載皆為 **RDL 層數**（ASI 1 µm/2 層、Amkor 2/1 µm/6 層、
+ASE FOCoS 3–6 層最高 12 層、imec NanoIC RDL 1.3 µm）。
+➜ ⚠ **新作業規範候選：「層數」在基板上有兩個獨立的軸——核心層數與 RDL 層數；
+跨頁引用「層數」須標明是哪一軸。**（與 2026-09-21 之「粗糙度須標註技術域」同型。）
+
+### 2026-09-30 新增空缺
+
+- [ ] ⭐⭐ **實測剝離強度的絕對值出處**（Schrödinger 之 0.7／1.2 g/mm 為
+  「模擬趨勢與實驗剝離強度一致」之引用，原始實驗文獻需另尋）。
+- [ ] ⭐⭐ **經界面處理（矽烷、電漿、粗化）後的剝離強度** ——方能量出「手段成對」的實際增益。
+- [ ] ⭐ **Df 模擬誤差 50% 的成因**（力場？取樣時間？材料本身分散？）。
+- [ ] ⭐ **4.5% vs 9.6% 孔洞率對應的鍍速／溫度各為何。**
+- [ ] **Pd 偏析量（at.%）與孔洞內殘留有機物的化學種類。**
+- [ ] **「有效接合面積降低」對剝離強度的量化影響** ——⚠ 與 Schrödinger 的 0.7／1.2 g/mm
+  材料系統不同（Cu/Cu vs Cu/聚醯亞胺），**不得直接比較。**
+- [ ] **4/6/8 層核心各自對應的線寬／厚度。**
+- [ ] **缺實體頁候選（本輪首見）**：**Schrödinger**（計算化學／材料模擬軟體商，
+  屬「模擬工具進入封裝材料選擇」的新型參與者）；**Okuno Chemical Industries（奧野製藥）**。
+
+### 2026-09-30 新增來源
+
+- [[sources/2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation]]
+- [[sources/2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids]]
+- [[sources/2026-09-30_semieng_one-substrate-no-longer-rules-them-all]]

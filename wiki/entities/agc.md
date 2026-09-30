@@ -3,8 +3,8 @@ title: "AGC Inc. — 旭硝子"
 category: entity
 tags: [AGC, glass-substrate, TGV, polymer-waveguide, copackaged-optics, CTE, alkali-free-glass]
 created: 2026-09-27
-updated: 2026-09-27
-sources: [2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference]
+updated: 2026-09-30
+sources: [2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-30_epo_amosense-wo2026019155a1-multilayer-glass-core-frit-bonding, 2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth]
 related:
   - wiki/technologies/glass-substrate.md
   - wiki/technologies/tsv.md
@@ -90,3 +90,66 @@ related:
 - ⚠ **無良率、吞吐、成本、重複性數據**；面板 **95 × 95 mm** 屬測試載具級，遠小於 310 mm 級討論。
 - **PWG 與玻璃核心的 CTE 落差**（PWG 2027 目標 70 ppm/°C vs 玻璃 3.5–5.8）為新空缺。
 - ⚠ OpenAlex 未登錄本篇機構；AGC 歸屬自 PDF 內文確認。
+
+---
+
+## 2026-09-30 collect 新增 / Added 2026-09-30
+
+### ⭐⭐⭐ 玻璃基材競爭者增加一位：Amosense（韓），且切入方式與 AGC 正交
+
+**Amosense Co., Ltd.（주식회사 아모센스）** 於本輪 `ti,ab="glass core" and pd within "2026"`
+檢索中命中 **4 件**（WO2026019154A1、**WO2026019155A1**、WO2026034861A1、WO2026034862A1）：
+
+| 專利 | 作法 |
+|------|------|
+| **WO2026019155A1**（2026-01-22） | **玻璃熔塊膏 + 一次預燒結 → 疊第二片玻璃芯 → 真空二次主燒結 → 氣密接合成多層玻璃芯** |
+| **WO2026034862A1**（2026-02-12） | **玻璃芯開槽 → 槽壁鍍接合金屬層 → 以含導電粒子之導電膏填槽成電極** |
+
+➜ ⭐⭐⭐ **兩件的 IPC 全落在 C03（玻璃製造與處理），無任何 H10W／H01L 封裝分類**
+——與 AGC 的定位（特種玻璃供應商，但發言落在 TGV 規格、CTE × 模數、PWG 路線圖等
+**封裝語彙**）形成對比。
+➜ **AGC 是「玻璃廠用封裝的語言」；Amosense 是「玻璃廠用玻璃的語言」。**
+➜ **邊界外擴第四型態：玻璃／陶瓷製造業者以自身製程進入基板層**
+（前三型皆為封裝側向外取用）。
+
+### ⭐⭐ 「多層玻璃芯」與 AGC 的 CTE × 模數表無法對接
+
+AGC 本頁既有之材料物性（本 wiki 唯一的玻璃廠 CTE × 模數並列值）：
+
+| 材料 | CTE (ppm/°C) | Young's Modulus (GPa) |
+|------|-------------|----------------------|
+| ER-Y1（無鹼玻璃） | **3.5** | **88** |
+| EN-A1（無鹼玻璃） | **5.8** | **75** |
+| （對照）矽 | 2.8 | 131 |
+
+➜ ⚠⚠ **Amosense 的熔塊層是第三種材料，其 CTE 與 Tg 通常與無鹼玻璃不同，
+且原文完全未給** ⇒ **無法與上表並列，也無法判斷熔塊層自身是否成為新的應力集中點。**
+➜ **並且這是本 wiki 第六種被追蹤的封裝界面，且是唯一「兩側材料相同、界面材料不同」者**
+——既有的「CTE 失配在異種材料界面」框架**不足以描述它**。
+
+### ⭐⭐ TGV 電性：AGC 之 30 GHz 對照與上海交大之 110 GHz 屬不同層級的量
+
+| 來源 | 量測對象 | 頻率／頻寬 | 結果 |
+|------|---------|-----------|------|
+| **AGC**（本頁既有，2026-09-27） | **填滿 vs conformal TGV** | **30 GHz** | Sdd21 **−2.11 vs −2.08 dB**（無顯著差異） |
+| **上海交大**（本輪） | **TGV 中介層 vs TSV 中介層** | **3 dB 頻寬** | **>110 GHz vs >67 GHz（1.64×）** |
+
+➜ ⭐⭐ **兩者回答的是不同問題**：AGC 問「TGV 怎麼填」，上海交大問「玻璃還是矽」。
+➜ **合起來首次形成一條完整的論證：玻璃中介層的頻寬優於矽（1.64×），
+而在玻璃內部，填滿與 conformal 在 30 GHz 沒有顯著差異。**
+⚠ **兩者頻率範圍不同（30 GHz vs 3 dB 頻寬 110 GHz），不得相減或合併為單一曲線。**
+⚠ 上海交大未述玻璃種類，**不知是否為 AGC 材料。**
+
+### 2026-09-30 新增空缺
+
+- [ ] ⭐⭐ **熔塊層的 CTE 與 Tg**（Amosense）——不知此值則無法與 AGC 之 ER-Y1／EN-A1 並列。
+- [ ] ⭐ **AGC 是否有多層玻璃芯或導電膏填槽的對應布局**（本輪未檢索其專利，列下輪 Track B）。
+- [ ] ⭐ **AGC 之填滿 vs conformal 在 >30 GHz（如 110 GHz 級）是否仍無顯著差異**
+  ——上海交大的數字使這個問題變得有意義。
+- [ ] **缺實體頁候選（本輪首見）**：**Amosense（아모센스）** ——韓國材料／元件商，
+  單一查詢即命中 4 件玻璃基板案。
+
+### 2026-09-30 新增來源
+
+- [[sources/2026-09-30_epo_amosense-wo2026019155a1-multilayer-glass-core-frit-bonding]]
+- [[sources/2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth]]

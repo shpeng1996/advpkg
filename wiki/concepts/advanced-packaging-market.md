@@ -3,8 +3,8 @@ title: "先進封裝市場 / Advanced Packaging Market"
 category: concept
 tags: [market, forecast, CAGR, supply-chain, HBM, chiplet, geopolitics, equipment, SIA, Omdia, Yole, WFE, substrate-market, framework]
 created: 2026-04-24
-updated: 2026-09-29
-sources: [2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-07-31_semieng_chip-week-149, 2026-04-24_initial-survey, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2026-01-23_trendforce_chip-tools-tel-asml, 2026-03-05_trendforce_intel-emib-billions, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2025-12-18_trendforce_micron-capex-hbm4, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2025-05-13_trendforce_top10-osat-2024, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-04-16_ontoinnovation_dragonfly-g5-qualified, 2026-06-23_communicationstoday_foplp-glass-substrate-market-8b-2030, 2026-06-29_trendforce_china-osat-tongfu-jcet-investment, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-26_semieng_chip-week-144, 2026-07-01_trendforce_ase-price-hike-20pct, 2026-07-04_semieng_chip-week-145, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-07-03_trendforce_anthropic-samsung-advanced-packaging, 2026-05-08_trendforce_ajinomoto-abf-1b-land-buy-2032-margins, 2026-07-24_semieng_chip-week-148, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-08-06_siliconbox_500m-units-panel-scale, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-26_article_semiwiki-cowos-capacity-double-2028]
+updated: 2026-09-30
+sources: [2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-07-31_semieng_chip-week-149, 2026-04-24_initial-survey, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2026-01-23_trendforce_chip-tools-tel-asml, 2026-03-05_trendforce_intel-emib-billions, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2025-12-18_trendforce_micron-capex-hbm4, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2025-05-13_trendforce_top10-osat-2024, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-04-16_ontoinnovation_dragonfly-g5-qualified, 2026-06-23_communicationstoday_foplp-glass-substrate-market-8b-2030, 2026-06-29_trendforce_china-osat-tongfu-jcet-investment, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-26_semieng_chip-week-144, 2026-07-01_trendforce_ase-price-hike-20pct, 2026-07-04_semieng_chip-week-145, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-07-03_trendforce_anthropic-samsung-advanced-packaging, 2026-05-08_trendforce_ajinomoto-abf-1b-land-buy-2032-margins, 2026-07-24_semieng_chip-week-148, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-08-06_siliconbox_500m-units-panel-scale, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent]
 related:
   - wiki/entities/tsmc.md
   - wiki/entities/sk-hynix.md
@@ -1126,3 +1126,92 @@ SemiWiki（2026-09-18）：**2026 年底 ~130K wpm（300 mm 當量）→ 2028 �
 - IC 基板市場 **$15.1B（2024）→ $37.1B（2033）**（IMAPS DPC 2026 電鍍製程篇引用）
 
 **來源**：[[sources/2026-09-29_3dincites-vyansa_advanced-packaging-foundation-next-gen]]、[[sources/2026-09-29_semieng_all-ai-interconnects-optical-5-years]]、[[sources/2026-09-29_semiwiki_ofc2026-siph-cpo-oci-ocs-summary]]
+
+---
+
+## 2026-09-30 collect 新增 / Added 2026-09-30
+
+### ⭐⭐ 資料中心用電：三組不可互換的口徑
+
+| 口徑 | 數值 | 來源 |
+|------|------|------|
+| **全球資料中心絕對量** | **104 GW(2025) → 132 GW(2026, +27%) → 290 GW(2030)** | Intel Foundry 投稿（SemiEng, 2026-09-30） |
+| 佔全球電力比 | **2% → ~7%（2030）** | Infineon（IMAPS DPC 2026） |
+| 佔美國電力比（AI） | **>15%（2030）** | Saras（2026-09-29） |
+
+⚠ **三者分別是「絕對量／全球佔比／美國佔比」，依作業規範不得互換或相減。**
+
+其他：
+- **AI 最佳化伺服器佔資料中心耗電 31%（2026）**，且**預計 2027 年超越傳統伺服器**（Intel）
+- **訓練前沿 AI 模型算力每 3.4 個月加倍（自 2012 起）**（Infineon）
+- **資料中心 2027 年用電較 2022 年 +90%**（Infineon）
+- 資料中心佔能源相關 GHG 排放 **1%**（Infineon）
+
+### ⭐⭐ 機櫃功率：600 kW 成為業界共識點，但起點相差兩倍
+
+| 來源 | 機櫃功率階梯 |
+|------|-------------|
+| OFC 2026 彙整（2026-09-29） | **120 kW → 600 kW** |
+| **Infineon（本輪）** | **<250 kW（現在）→ ~600 kW+（2027+）→ >1 MW（2029+）** |
+
+➜ ⭐⭐ **600 kW 這一點由兩個獨立來源支持，可視為業界共識點；
+但起點（120 vs <250 kW）相差約兩倍，⚠ 不得相減。**
+➜ **>1 MW/rack（2029+）是本 wiki 首見的 MW 級機櫃數字。**
+⚠ Infineon 篇內部另有一組「Server racks <60 → ~100 → >150 kW → 600 kW–1 MW」，
+原文未說明與 `<250 kW/rack` 之差異，**疑分屬「整櫃含供電」與「運算機櫃」，不合併。**
+
+### ⭐⭐ 處理器／封裝功耗：foundry 側與電源側首次可並列
+
+| 來源 | 階梯 |
+|------|------|
+| CoWoS 路線圖（既有） | **600 W → 4,100 W（2024 → 2029）** |
+| **Infineon（本輪）** | **~0.4 kW → ~1 kW → >2 kW → 2–4 kW** |
+| Saras（2026-09-29） | 單封裝 **>2,000 W**，數千安培 |
+
+➜ ⭐⭐ **封裝功耗上限自此有 foundry 側（TSMC 路線圖）與電源側（Infineon）
+兩個獨立來源，且量級一致（2–4 kW ↔ 4,100 W）。**
+➜ Infineon 另給**模組功率階梯 3 kW → 8 kW → 12 kW → >12 kW。**
+
+### ⭐ IC 基板市場：$15.1B(2024) → $37.1B(2033)
+
+**IMAPS DPC 2026（`10.4071/001c.167760`，本輪已見未採）** 引述之 IC 基板市場規模：
+**2024 年 151 億美元 → 2033 年 371 億美元。**
+⚠ **二手引述、未給機構來源，依作業規範（18）不得被其他頁單獨引用；列為待證。**
+➜ 可與既有兩個玻璃核心基板口徑對照（Onto：2.75 億美元 @2030，僅玻璃核心基板；
+Counterpoint：>80 億美元 @2030，FOPLP＋玻璃基板）——
+**三者口徑各異，「玻璃核心基板市場規模的口徑分歧」空缺（2026-09-21）維持開啟。**
+
+### ⭐⭐ 基板市場結構：產值成長快於出貨量
+
+**SemiEng（2026-09-28）引 Prismark：基板產值的成長快於出貨量的成長；
+成長主軸為伺服器用大尺寸 FC-BGA。**
+⚠ **未給百分比，且為二手引述（作業規範 18），不得被其他頁引用。**
+➜ 但方向上與「基板路線三分（ABF／玻璃核心／矽中介層）、CPO 需求獨特、
+每個客戶都需客製開發」一致：**單價上升而非量增。**
+
+### ⭐⭐ EMIB 基板供應鏈的商業結構（待證）
+
+**TrendForce（2026-09-23，多處 "reportedly"）**：
+Ibiden／Shinko／Unimicron 供應；Samsung Electro-Mechanics 與 LG Innotek 爭取進入；
+現有供應商具 **7–8 年量產經驗**；**Ibiden 已自 Google、Amazon 與 Intel 取得預付款**；
+**Google 預計 2027 採用 EMIB-T**；AWS 測試中；**CoWoS-L 預期維持主流至 2028。**
+➜ ⭐ **「預付款」是本 wiki 首見的先進封裝基板產能鎖定形式**
+（既有產能鎖定記載為 NVIDIA 對 Amkor 的 $1.5B、TSMC CoPoS 獨家）。
+⚠ **全部待一手佐證。**
+
+### 2026-09-30 新增空缺
+
+- [ ] ⭐ **兩組機櫃口徑的定義**（Infineon）。
+- [ ] ⭐ **IC 基板市場 $15.1B → $37.1B 的原始機構來源。**
+- [ ] **「基板產值成長快於出貨量」的百分比與 Prismark 原始出處。**
+- [ ] **Ibiden 預付款的金額與產能對應。**
+- [ ] **缺實體頁候選（本輪首見／升級）**：**Ibiden**（全球最大 FC-BGA、EMIB 基板主供應商）、
+  **Shinko Electric**（本輪由 6 頁提及升為兩篇來源同時點名）、**Prismark**（市場研究機構）、
+  **Mitsubishi Chemical Group**。
+
+### 2026-09-30 新增來源
+
+- [[sources/2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery]]
+- [[sources/2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier]]
+- [[sources/2026-09-30_semieng_one-substrate-no-longer-rules-them-all]]
+- [[sources/2026-09-30_trendforce_intel-emib-substrate-yield-45-percent]]

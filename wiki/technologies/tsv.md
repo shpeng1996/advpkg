@@ -3,8 +3,8 @@ title: "TSV — Through-Silicon Via / 矽穿孔"
 category: technology
 tags: [TSV, HBM, interposer, 3D-IC, CoWoS, manufacturing, backside-power, advanced-packaging, radiation, redundancy, reliability]
 created: 2026-08-10
-updated: 2026-09-28
-sources: [2026-09-27_wuhanuniv_cn121548325a-tgv-micro-nano-anchor-molecular-bridging, 2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-27_semieng_chip-week-156-india-tata-besi-izmo, 2026-04-22_semieng_tsv-complexity-manufacturing-bottleneck, 2026-08-21_semieng_chip-week-152, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-08-21_scirep_copper-oxide-reduction-ar-h2-pulsed-plasma, 2026-06-08_irtnanoelec_d2w-hybrid-bonding-1um-pitch, 2026-03-13_kaneka_jp2026047137a-glass-core-polyimide-quantified, 2026-08-10_screp_low-k-organic-buffer-tgv-cu-metallization, 2026-08-04_jmrt_vacuum-assisted-void-free-cu-fill-tgv, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring, 2026-09-26_patent_zhuhai-tiancheng-dual-depth-tsv-silicon-bridge, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_patent_er-eng-glass-interposer-dual-carrier, 2026-09-26_paper_lpkf-lide-glass-ap-cpo]
+updated: 2026-09-30
+sources: [2026-09-27_wuhanuniv_cn121548325a-tgv-micro-nano-anchor-molecular-bridging, 2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-27_semieng_chip-week-156-india-tata-besi-izmo, 2026-04-22_semieng_tsv-complexity-manufacturing-bottleneck, 2026-08-21_semieng_chip-week-152, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-08-21_scirep_copper-oxide-reduction-ar-h2-pulsed-plasma, 2026-06-08_irtnanoelec_d2w-hybrid-bonding-1um-pitch, 2026-03-13_kaneka_jp2026047137a-glass-core-polyimide-quantified, 2026-08-10_screp_low-k-organic-buffer-tgv-cu-metallization, 2026-08-04_jmrt_vacuum-assisted-void-free-cu-fill-tgv, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring, 2026-09-26_patent_zhuhai-tiancheng-dual-depth-tsv-silicon-bridge, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_patent_er-eng-glass-interposer-dual-carrier, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth]
 related:
   - wiki/technologies/hbm4.md
   - wiki/technologies/cowos.md
@@ -529,3 +529,77 @@ Cornell 的推論鏈：**高分子 RDL 層數上限 3–4 層 ⇒ 必須上下�
 **來源**：[[sources/2026-09-28_etron_us20260090421a1-ttv-tgv-thermal-dissipation-layer]]
 
 ⚠ 專利為前瞻訊號，非已出貨能力。
+
+---
+
+## 2026-09-30 collect 新增 / Added 2026-09-30
+
+### ⭐⭐⭐ BSPDN 的熱代價首次量化：+14～+23 °C 換 IR drop −20~30%
+
+**SemiEngineering（2026-02-23, Laura Peters）** ——本頁 BSPDN 段此前只有製程數值
+（TEL <5 nm overlay、復旦 Ru nTSV），無任何效益／代價的並列量化：
+
+| 項目 | 數值 | 來源 |
+|------|------|------|
+| **峰值溫度增幅（相對正面 PDN）** | **+14 °C** | imec 模擬 |
+| **BSPDN vs FSPDN 最高溫** | **80 °C vs 57 °C（+23 °C）** | 國立陽明交通大學 |
+| **IR drop 降幅** | **20–30%**（另處記最高 30%） | — |
+| 最高頻率提升 | **+2–6%** | — |
+| 核心面積縮減 | **5–15%** | — |
+| 單元密度改善（內嵌記憶體） | **5–10%** | — |
+| 光罩／步驟數縮減 | **>40%（Intel 18A）** | — |
+| **晶圓減薄** | **>700 µm → 1–3 µm** | — |
+| 基板減薄 | **775 µm → 數十 µm** | — |
+| **套刻預算** | **~10 nm（標準）／3 nm（direct connect）** | — |
+
+➜ ⭐⭐⭐ **這結清了 2026-09-29 之空缺「供電與熱是否在同一個設計變數上衝突」，
+且結論比原提問更強：衝突不在材料性質層，而在同一個幾何動作上 ——
+「移除基板」同時是供電的手段與散熱的損失。**
+見 [[concepts/power-delivery-packaging]]、[[concepts/thermal-management]]。
+➜ ⭐⭐ **套刻預算 3 nm（direct connect）與 TEL 之「接合誘發套刻畸變 <3 nm」
+（2026-09-28 收錄）在數值上完全對上** ⇒ **需求端與製程端首次閉合。**
+➜ ⭐ **「光罩／步驟數縮減 >40%」** 是 2026-09-28「步驟數是第二條價值軸」的第三個實例
+（前兩例：免 UBM、免 post-bake）。
+⚠ imec 之 +14 °C 與陽明交大之 +23 °C 不一致（兩獨立來源、同一現象、皆為模擬、皆未附重複性）
+➜ **記為區間 +14～+23 °C，不取單值。**
+
+### ⭐⭐ eMIM-T：基板內嵌 MIM 電容 + TSV（Intel，本 wiki 首見命名）
+
+**Intel Foundry 投稿（SemiEng, 2026-09-30）** 列出的供電技術清單中包含：
+
+| 技術 | 內容 |
+|------|------|
+| **eMIM-T** | **基板內嵌 MIM 電容 + 貫穿矽孔（TSV）** |
+| eDTC | 內嵌深溝電容（規劃中） |
+| Omni MIM | 晶粒內 MIM 電容 |
+| PowerVia / PowerDirect | 第一／第二代背面供電（18A / 14A） |
+
+➜ ⭐⭐ **TSV 在本 wiki 首次以「基板內電容的垂直接腳」身分出現**
+（既有 TSV 角色：中介層垂直互連、HBM 堆疊、背面供電 nTSV）。
+➜ **同一目的（縮短電容到負載的路徑）出現兩種互斥手段：
+混合接合堆疊（NPC，2026-09-29）vs 基板內嵌 + TSV（Intel eMIM-T）。**
+⚠ **Intel 未給電容密度，故無法與 NPC 之 4 → 8 µF/mm² 比較。**
+
+### ⭐⭐ TSV vs TGV 的電性對比（首次同條件）
+
+上海交大（`10.1117/1.apn.5.3.036019`）：**TSV 中介層 3 dB 頻寬 >67 GHz，
+TGV >110 GHz（1.64×）**，皆為實作量測，支援 128 GBaud。
+➜ 見 [[technologies/copackaged-optics]]、[[technologies/glass-substrate]]。
+➜ **這是本 wiki 首次能說出「矽中介層的電性上限在哪」的具體數字。**
+
+### 2026-09-30 新增空缺
+
+- [ ] ⭐⭐ **IR drop 降幅與溫升的取捨曲線：nTSV 密度是否存在最佳值？**
+  （與 2026-09-21 論述 4「同一設計變數對不同失效模式的最佳值不同」同型。）
+- [ ] ⭐⭐ **eMIM-T 的 TSV 尺寸與節距**；它是否即 nano-TSV 尺度。
+- [ ] ⭐ **1–3 µm 晶圓厚度下的機械良率／破片率。**
+- [ ] ⭐ **PowerDirect 相對 PowerVia 的改進項**，以及它是否改善了熱代價
+  （Intel 本輪投稿完全未提熱）。
+- [ ] **「背面金屬節距可放寬」的放寬幅度**（相對正面幾倍？）。
+- [ ] **TSV 頻寬 67 GHz 的限制項**（矽 substrate loss？孔徑？襯層？）。
+
+### 2026-09-30 新增來源
+
+- [[sources/2026-09-30_semieng_bspdn-thermal-dissipation-barriers]]
+- [[sources/2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery]]
+- [[sources/2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth]]

@@ -3,8 +3,8 @@ title: "先進封裝的測試、量測與失效分析 / Test, Metrology & Failur
 category: concept
 tags: [test, metrology, inspection, failure-analysis, KGD, KGI, KGP, DFA, yield]
 created: 2026-09-17
-updated: 2026-09-28
-sources: [2026-09-27_paper_binghamton-ibm-pad-scaling-resistance-variability, 2026-09-27_paper_purdue-ru-cu-em-lifetime-blacks-n-0154, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2025-01-14_semieng_known-good-interposer-screening, 2025-07-10_semieng_advanced-packaging-reshaping-inspection, 2024-11-12_semieng_packaging-drives-test-metrology-innovation, 2026-08-01_jfap_3dic-failure-analysis-dfa, 2026-07-06_apl_lensless-through-silicon-phase-imaging, 2026-09-06_ndte_hysan-sparse-view-xct-tsv, 2026-08-02_chips_cpo-wafer-level-probe-card, 2026-08-27_samsung_us20260256000a1-interposer-test-pad, 2026-08-13_jcet_us20260239928a1-hybrid-bonding-substack-test, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-06-28_hyperframe_amat-hybrid-bonding-hedge, 2026-09-26_paper_ibm-amine-post-cmp-clean, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_lpkf-lide-glass-ap-cpo]
+updated: 2026-09-30
+sources: [2026-09-27_paper_binghamton-ibm-pad-scaling-resistance-variability, 2026-09-27_paper_purdue-ru-cu-em-lifetime-blacks-n-0154, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2025-01-14_semieng_known-good-interposer-screening, 2025-07-10_semieng_advanced-packaging-reshaping-inspection, 2024-11-12_semieng_packaging-drives-test-metrology-innovation, 2026-08-01_jfap_3dic-failure-analysis-dfa, 2026-07-06_apl_lensless-through-silicon-phase-imaging, 2026-09-06_ndte_hysan-sparse-view-xct-tsv, 2026-08-02_chips_cpo-wafer-level-probe-card, 2026-08-27_samsung_us20260256000a1-interposer-test-pad, 2026-08-13_jcet_us20260239928a1-hybrid-bonding-substack-test, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-06-28_hyperframe_amat-hybrid-bonding-hedge, 2026-09-26_paper_ibm-amine-post-cmp-clean, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent]
 related:
   - wiki/technologies/hybrid-bonding.md
   - wiki/technologies/cowos.md
@@ -647,3 +647,79 @@ Micromachines 的**五種 TGV 剖面**（直壁／沙漏／等腰錐／倒錐／
 ➜ **並使混合接合的限制鏈在最前端插入第 0 環**（見 [[technologies/hybrid-bonding]]）：**⓪ 晶粒保持 → ① 表面平坦度與化學組成 → ② die 翹曲 → ③ 機台對準 → ④ 晶粒取向。**
 
 **來源**：[[sources/2026-09-28_paper_tel-backside-power-overlay-distortion-sub5nm]]、[[sources/2026-09-28_paper_resonac-chemical-resistant-dicing-tape-hybrid-bonding]]
+
+---
+
+## 2026-09-30 collect 新增 / Added 2026-09-30
+
+### ⭐⭐⭐ 「已知良品」的定義缺口擴散到基板：KGS（Known Good Substrate）
+
+**SemiEngineering（2026-09-28）**：**Intel Foundry 朝「矽級的良率基礎設施」推進，
+並強調 "known good substrate"（KGS）**；同篇 **Amkor 稱大尺寸多層結構的良率挑戰使
+「每個客戶都需客製開發」。**
+
+➜ 本頁 2026-09-17 列管之空缺：**「KGD 的標準化定義」** ——業界至今視為
+「抽象詞而非標準化定義」，在 chiplet 跨供應商交易中是未解決的契約基礎問題，
+亦牽涉 EFI 斷裂下的失效歸責。
+➜ **本輪顯示同一個問題在基板層重演：Intel 需要「已知良品基板」，但同樣沒有標準化定義。**
+➜ ⭐⭐⭐ **新論述：「『已知良品』的定義缺口不只在晶粒（KGD），也在基板（KGS）；
+凡供應鏈上出現一道新的交接面，就出現一個新的『已知良品』定義問題。」**
+➜ 這與同篇「Amkor 稱每個客戶都需客製開發」互相支持：**沒有標準，就只能逐客戶定義。**
+➜ 並與 2026-09-17 之 OCP/JEDEC **PTDK（Package Test Design Kit）** 同型：
+**PTDK 解決的是交付格式，不是歸責；KGS 目前連格式都沒有。**
+
+### ⭐⭐ 「缺乏材料技術檔案」：量到的值沒有可被設計工具消費的格式
+
+同篇 **Synopsys 指出業界缺乏描述熱／電行為的「材料技術檔案（material technology files）」。**
+
+➜ **問題不在量不到，而在量到的值沒有可被設計工具消費的格式。**
+➜ 與 PTDK 同型（交付格式問題），也與 2026-09-29 之「熱／電行為需並列量測」呼應。
+➜ ⭐ **新論述：「量測失效模式之外還有第四類問題——量到的值無法被下游工具消費。
+這不是量測問題，是介面問題。」**（既有三類：精度不足型／完全脫鉤型／規格漂亮但答錯問題型。）
+
+### ⭐⭐⭐ 量測／模擬不確定度：第四例，且是模擬版本首例
+
+**Schrödinger（IMAPS DPC 2026, `10.4071/001c.166916`）** 之 MD/DFT 模擬與實驗對照：
+
+| 性質 | 模擬值（與實驗之差異） |
+|------|----------------------|
+| Tg | 380 °C（**3%**）／304 °C（**18%**） |
+| 模數 | 2.4 GPa（**13%**） |
+| Dk | 3.345（**5%**）／~3.2（**6%**） |
+| **Df** | **0.0033（50%）／~0.002（23%）** |
+
+作者自述：**介電常數可算到約 6% 精度**；誤差有**兩個來源——模擬本身，以及材料本身的不確定度。**
+
+➜ 2026-09-21 論述 1（「量測不確定度可以達到與訊號同量級」）既有三例
+（Cu recess 20–100%、晶圓減薄 ~17%、TSV 深度重複性 2.18 µm ≈ 陣列變異 2.15 µm）
+**全為量測**。**本件為模擬版本首例。**
+➜ ⭐⭐ **實務結論：以模擬篩選低損耗介電材料，在 Df 這個指標上目前不可行（誤差 23–50%）；
+在 Dk（5–6%）與 Tg（3–18%）上可行。**
+➜ ⭐⭐⭐ **新作業規範候選（20）：凡引用模擬所得之材料性質，須標註該性質的模擬誤差；
+未標註者與量測值並列時標 ⚠。** 這是 2026-09-21 之「均勻度／變異數字須標註重複性」
+規範在模擬側的對應物。
+
+### ⭐⭐ 一個量測不確定度的新來源：3D STEM 斷層的樣本數
+
+**大阪大（`10.4071/001c.167758`）** 之無電鍍銅奈米孔洞體積分率為 **4.5% 與 9.6%**
+——⚠ **兩個樣品、相差超過兩倍、未附重複性。**
+➜ 依 2026-09-21 規範標 ⚠；且**在只有兩個樣品時，「4.5% vs 9.6%」無法區分
+是製程變異還是量測變異。**
+➜ 這與 TSV 深度量測案（重複性 2.18 µm ≈ 陣列變異 2.15 µm）屬同一型：
+**樣本數／重複性不足使差值失去意義。**
+
+### 2026-09-30 新增空缺
+
+- [ ] ⭐⭐⭐ **KGS 的定義與篩檢方式**（電性？光學？層間對準？翹曲？）——與 KGD 缺口併案追蹤。
+- [ ] ⭐⭐ **「材料技術檔案」目前由誰定義、進展如何**（JEDEC？OCP？Si2？EDA 廠自訂？）。
+- [ ] ⭐ **Df 模擬誤差 50% 的成因**（力場？取樣時間？材料本身分散？）。
+- [ ] **3D STEM 斷層量測孔洞體積分率的重複性。**
+- [ ] **CoWoS-L 的基板層良率**（用以與 EMIB 基板之 45% 同口徑比較）——目前完全空白。
+- [ ] **EMIB 基板良率 45% 的口徑**（基板成品？含橋嵌入？最終封裝？）。
+
+### 2026-09-30 新增來源
+
+- [[sources/2026-09-30_semieng_one-substrate-no-longer-rules-them-all]]
+- [[sources/2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation]]
+- [[sources/2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids]]
+- [[sources/2026-09-30_trendforce_intel-emib-substrate-yield-45-percent]]

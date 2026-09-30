@@ -3,8 +3,8 @@ title: "三星 / Samsung"
 category: entity
 tags: [IDM, foundry, memory, advanced-packaging, X-Cube, HBM, ISSCC2026, I-CubeS, LPDDR6, V10-BV-NAND, zHBM, HBM5, FMS-2026, ECC, reliability]
 created: 2026-04-24
-updated: 2026-09-29
-sources: [2026-09-27_samsung_us20260144093a1-bridge-on-tgv-mold-fixed, 2026-08-26_trendforce_openai-jalapeno-samsung-hbm4, 2026-08-26_trendforce_samsung-gaia-pim-4nm-2027, 2026-08-24_trendforce_hot-chips-2026-samsung-zhbm-skhynix-emib, 2026-08-17_trendforce_samsung-skhynix-1h26-investment-nvidia-absent, 2026-08-14_trendforce_samsung-nrdk-line2-2nm-hbm5-base-die, 2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor, 2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2025-12-30_trendforce_samsung-hbm-surge, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2025-08-05_3dincites_iftle636, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit, 2026-06-10_trendforce_samsung-gwangju-packaging-base, 2026-06-12_digitimes_samsung-packaging-gap-tsmc-intel, 2026-06-15_trendforce_skhynix-hbm4e-sample-timeline-pulled-forward, 2026-06-19_techtimes_vera-rubin-hbm4-suppliers, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-24_techtimes_sk-hynix-dethroned-samsung-ddr5-hbm4, 2026-07-03_trendforce_anthropic-samsung-advanced-packaging, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-07-02_trendforce_samsung-hbm-dummy-die-patent, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo, 2026-07-07_trendforce_samsung-q2-2026-record-krw894t, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-02_trendforce_samsung-sf2p-plus-tsmc-n2-roadmap, 2026-07-14_trendforce_samsung-hbm-hiring-hbm4-hbm4e-hbm5, 2026-07-21_trendforce_samsung-cxl-32-skhynix-imte, 2026-07-24_trendforce_skhynix-3d-stacked-dram-on-logic-on-device-ai]
+updated: 2026-09-30
+sources: [2026-09-27_samsung_us20260144093a1-bridge-on-tgv-mold-fixed, 2026-08-26_trendforce_openai-jalapeno-samsung-hbm4, 2026-08-26_trendforce_samsung-gaia-pim-4nm-2027, 2026-08-24_trendforce_hot-chips-2026-samsung-zhbm-skhynix-emib, 2026-08-17_trendforce_samsung-skhynix-1h26-investment-nvidia-absent, 2026-08-14_trendforce_samsung-nrdk-line2-2nm-hbm5-base-die, 2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor, 2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2025-12-30_trendforce_samsung-hbm-surge, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2025-08-05_3dincites_iftle636, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit, 2026-06-10_trendforce_samsung-gwangju-packaging-base, 2026-06-12_digitimes_samsung-packaging-gap-tsmc-intel, 2026-06-15_trendforce_skhynix-hbm4e-sample-timeline-pulled-forward, 2026-06-19_techtimes_vera-rubin-hbm4-suppliers, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-24_techtimes_sk-hynix-dethroned-samsung-ddr5-hbm4, 2026-07-03_trendforce_anthropic-samsung-advanced-packaging, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-07-02_trendforce_samsung-hbm-dummy-die-patent, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo, 2026-07-07_trendforce_samsung-q2-2026-record-krw894t, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-02_trendforce_samsung-sf2p-plus-tsmc-n2-roadmap, 2026-07-14_trendforce_samsung-hbm-hiring-hbm4-hbm4e-hbm5, 2026-07-21_trendforce_samsung-cxl-32-skhynix-imte, 2026-07-24_trendforce_skhynix-3d-stacked-dram-on-logic-on-device-ai, 2026-09-30_epo_intel-us20260191037a1-localized-embedded-bridge-in-core, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent]
 related:
   - wiki/entities/tsmc.md
   - wiki/entities/intel.md
@@ -613,3 +613,82 @@ Samsung：「客戶對 16-hi HBM4 的需求**非常有限**」，但確認具備
 - ⚠ **Samsung 之超厚光阻（>220 µm、AR>8.1、低 NA <0.12）本輪取得材料供應商側的第二個獨立來源**，見 [[technologies/rdl]]。
 
 **來源**：[[sources/2026-09-29_semiwiki_ofc2026-siph-cpo-oci-ocs-summary]]、[[sources/2026-09-29_epo_samsung-us20260150758a1-optical-path-bridge]]、[[sources/2026-09-29_epo_samsung-us20260101823a1-stacked-bridge-chips]]、[[sources/2026-09-29_epo_samsung-us20260282955a1-molded-bridge-solder-attach]]
+
+---
+
+## 2026-09-30 collect 新增 / Added 2026-09-30
+
+### ⭐⭐⭐ 「橋」的專利賽局定調：Samsung 與 Intel 的雙人局
+
+2026-09-29 記下 Samsung 七件、六個月、至少五個下注維度（表面材料／層數／載體材料／
+傳輸媒介／接合方式），並提問**「橋的維度是否為 Samsung 獨有」**。
+
+**本輪 Track B 檢索回答了這個問題：**
+
+| 查詢 | 命中 | 說明 |
+|------|------|------|
+| `pa="samsung electronics" and ti,ab="bridge" and pd within "2026"` | **21 件** | 13 封裝相關、3 採用；**5 件為 MBCFET 雜訊** |
+| **`pa="intel" and ti,ab="bridge" and pd within "2026"`** | **9 件** | 本輪採用 1 件（US20260191037A1） |
+| **`pa="advanced semiconductor engineering" and ti,ab="bridge" and pd within "2026"`** | **1 件** | CN224583751U 模封式橋接實用新型 |
+
+➜ **答案：不是 Samsung 獨有，但也不是全業界的。目前是 Samsung 與 Intel 的雙人賽局，
+ASE 幾乎缺席。**
+➜ ⚠ **部分修正 2026-09-16 對 ASE 的印象**：ASE 有橋的案子（當時以 `pa=` 命中 25 件、
+篩出模封式橋接），但**標題／摘要不用 "bridge" 這個詞** ⇒ **詞彙檢索會系統性低估 ASE。**
+
+### ⭐⭐⭐ Intel 開出第六個維度，且與 Samsung 的五個維度正交
+
+**Intel US20260191037A1「LOCALIZED EMBEDDED BRIDGE IN CORE」（2026-07-02）**：
+**橋位於封裝基板核心的腔體中**，且同一顆 die 的**兩個 DDR PHY 走兩條不同路徑**
+（一走橋內走線、一走核心之上增層走線）。
+
+| # | 維度 | 首見者 |
+|---|------|--------|
+| 1 | 表面材料 | Samsung |
+| 2 | 層數（垂直堆疊、各層尺寸不同） | Samsung（US20260101823A1） |
+| 3 | 載體材料 | Samsung |
+| 4 | 傳輸媒介（電 / **光**） | Samsung（US20260150758A1、US20260157197A1） |
+| 5 | 接合方式（RDL 直接接觸 / **三段式焊料**） | Samsung（US20260282955A1） |
+| **6** | **所在層（RDL／增層 / 中介層 / 基板核心腔體）** | **Intel（US20260191037A1）** |
+| **7（新）** | **投放粒度（全 I/O / 按 I/O 群組局部）** | **Intel（同件）** |
+
+➜ ⭐⭐⭐ **新論述：「橋不是全有全無的選擇，而是可按 I/O 群組局部投放的資源。」**
+➜ **兩家的下注風格相反：Samsung 賭「橋本身可以變成什麼」（材料、層數、媒介、接合），
+Intel 賭「橋該放在哪、該鋪多少」（位置、粒度）。**
+見 [[technologies/emib]]。
+
+### ⭐⭐ 玻璃基板：Samsung 同輪另有一件（本輪未單獨收錄）
+
+`ti,ab="glass core"` 檢索中另見：
+- **US20260053034A1**（Samsung Electronics，2026-02-19，family 98776460）：
+  **玻璃基板（玻璃芯 + 貫穿孔）+ 上 RDL 結構（多層）+ 兩顆 chip structure + 封裝膠
+  + 下 RDL 結構**
+- **JP2026047085A**（**Samsung Electro-Mechanics**，2026-03-13，family 98899332）：
+  玻璃層貫穿孔內置絕緣材＋通孔，金屬通孔含**多層 conformal 金屬層**；
+  **問題陳述明示為「確保種子金屬層的附著性」與「防止填孔電鍍時的漏鍍（non-plating）」**
+
+➜ ⭐⭐ **Samsung Electro-Mechanics 的問題陳述與本輪大阪大論文（無電鍍層孔洞、Pd 偏析）
+以及 Corning／Intel／安捷利的襯層路線完全同軸：種子層附著與漏鍍。**
+➜ **「附著是一階設計限制」在玻璃 TGV 這一域已有五個獨立申請人／機構同指。**
+⚠ 兩件本輪未單獨收錄（配額已滿），**列下輪優先項。**
+
+### ⭐ 其他
+
+- **Samsung Electro-Mechanics 與 LG Innotek 正爭取進入 Intel EMIB 基板供應鏈**
+  （TrendForce 2026-09-23，⚠ 待證）。
+  ➜ 若成立，則 **Samsung 集團同時是 Intel 的封裝競爭者與其基板供應商候選。**
+
+### 2026-09-30 新增空缺
+
+- [ ] ⭐⭐ **US20260053034A1 與 JP2026047085A 的請求項細節**（下輪優先收錄）。
+- [ ] ⭐ **Samsung 是否有「橋的所在層」或「局部投放」維度的對應布局**
+  ——若無，則這兩個維度是 Intel 獨有。
+- [ ] ⭐ **疊置波導的重疊長度與耦合損耗 dB**（2026-09-29 列管，本輪無進展）。
+- [ ] ⭐ **堆疊橋的層數上限與層間連接方式**（2026-09-29 列管，本輪無進展）。
+- [ ] **Samsung 多孔填料 NCF（US20260247940A1）的目標產品線**（2026-09-17 列管，無進展）。
+- [ ] **追 US20260157197A1（family 99956993）之同族**（2026-09-29 列管，本輪未執行）。
+
+### 2026-09-30 新增來源
+
+- [[sources/2026-09-30_epo_intel-us20260191037a1-localized-embedded-bridge-in-core]]
+- [[sources/2026-09-30_trendforce_intel-emib-substrate-yield-45-percent]]

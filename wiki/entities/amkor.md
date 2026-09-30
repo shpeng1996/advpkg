@@ -3,8 +3,8 @@ title: "Amkor Technology"
 category: entity
 tags: [OSAT, advanced-packaging, FOCoS, Arizona, chiplet, Intel-EMIB, patent-signal, TIM]
 created: 2026-04-25
-updated: 2026-09-29
-sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-05-19_stocktitan_amkor-arizona-peoria-land-expansion, 2026-06-17_digitimes_amkor-tsmc-10year-arizona-deal, 2026-06-17_trendforce_tsmc-amkor-10year-arizona-advanced-packaging, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-30_amkor-ir_arizona-7billion-groundbreaking, 2026-06-30_digitimes_amkor-2.5d-hdfo-growth-2026, 2026-07-23_amkor-ir_nvidia-amkor-1-5b-strategic-partnership, 2026-09-26_article_amkor-embedded-trace-rdl, 2026-09-26_article_semiwiki-cowos-capacity-double-2028]
+updated: 2026-09-30
+sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-05-19_stocktitan_amkor-arizona-peoria-land-expansion, 2026-06-17_digitimes_amkor-tsmc-10year-arizona-deal, 2026-06-17_trendforce_tsmc-amkor-10year-arizona-advanced-packaging, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-30_amkor-ir_arizona-7billion-groundbreaking, 2026-06-30_digitimes_amkor-2.5d-hdfo-growth-2026, 2026-07-23_amkor-ir_nvidia-amkor-1-5b-strategic-partnership, 2026-09-26_article_amkor-embedded-trace-rdl, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent]
 related:
   - wiki/technologies/rdl.md
   - wiki/technologies/cowos.md
@@ -290,3 +290,71 @@ Amkor 的 **Vineet Pancholi** 提供本 wiki 目前唯一的中介層測試覆�
 - ⚠ 二手（需一手複核）：**Amkor × NVIDIA（2026-07）$15 億**先進封裝與開發協議，擴充美國產能。➜ 與既有 **Arizona $12B 總投資（Phase 2、93K sqm 潔淨室、2029 完工）** 構成同一擴產敘事的**客戶側佐證**。
 
 **來源**：[[sources/2026-09-29_imaps-dpc2026_amkor-ap-coating-solder-emc-delamination]]、[[sources/2026-09-29_3dincites-vyansa_advanced-packaging-foundation-next-gen]]
+
+---
+
+## 2026-09-30 collect 新增 / Added 2026-09-30
+
+### ⭐⭐⭐ 「附著的另一半」取得基線值：Cu／聚醯亞胺 0.7 與 1.2 g/mm
+
+2026-09-29 記下 Amkor 的機制式論證：**界面強度有兩個彼此不可替代的來源——
+機械咬合與化學鍵；粗化與電漿清洗只處理咬合那一半**，故同一手段在 lead frame 上成立、
+在焊料側失效（焊料與 EMC **既 CTE 失配、又無化學鍵**），因而改用**矽烷（SiH）偶合劑。**
+
+**本輪 Schrödinger（IMAPS DPC 2026, `10.4071/001c.166916`）給出「另一半」的基線值：**
+
+| 聚合物（濺鍍銅界面） | 剝離強度 |
+|---------------------|---------|
+| **PMDA-ODA** | **0.7 g/mm** |
+| **BPDA-PPD** | **1.2 g/mm** |
+
+**作者結論：兩種聚醯亞胺對銅的附著都弱。**
+
+➜ ⭐⭐⭐ **這是本 wiki「附著是一階設計限制」五個技術域中首次出現絕對值**
+（Amkor AP 塗層、TGV 種子層、Cu–Al、厚膜光阻、焊料／EMC 此前全為定性或相對值）。
+➜ **意義：在不做任何界面處理時，純化學結構所能提供的附著上限就是 0.7–1.2 g/mm；
+亦即 Amkor 所稱的「化學鍵那一半」有了比較基線。**
+⚠ **材料系統不同**（Schrödinger 為 Cu／聚醯亞胺，Amkor 為焊料／EMC），
+**不得直接比較絕對值**；可比較的是「弱」這個定性判斷與 1.7 倍的族內差異。
+➜ **Amkor AP 塗層之附著強度絕對值與 TCT 剝離面積**（2026-09-29 列管）**仍缺**，
+但現在有了可對照的量級。
+
+### ⭐⭐⭐ 大尺寸多層基板的良率：「每個客戶都需客製開發」
+
+**SemiEngineering（2026-09-28）**：
+- **Amkor 指出大尺寸多層結構（large-body multilayer）的良率挑戰，
+  並稱每個客戶都需客製開發（custom development per customer）。**
+- 同篇 **Intel Foundry 強調 "known good substrate"（KGS）**，朝「矽級的良率基礎設施」推進。
+
+➜ ⭐⭐⭐ **兩者互相支持，並指向同一個結構性問題：沒有標準，就只能逐客戶定義。**
+➜ 這是 2026-09-17 列管之 **「KGD 的標準化定義」** 空缺在**基板層**的重演。
+➜ **新論述：「『已知良品』的定義缺口不只在晶粒（KGD），也在基板（KGS）；
+凡供應鏈上出現一道新的交接面，就出現一個新的『已知良品』定義問題。」**
+見 [[concepts/test-metrology-packaging]]。
+➜ ⚠ **對 Amkor 的商業意義**：若基板良率無法標準化，OSAT 的**客製開發工作量**
+就是進入門檻，也是成本。此與其既有之「NVIDIA $1.5B 預付」結構同型
+（**以資本鎖定不可標準化的產能**）。
+
+### ⭐⭐ EMIB 基板供應鏈中未見 Amkor（僅載板業者）
+
+**TrendForce（2026-09-23，待證）**：EMIB 基板供應商為
+**Ibiden／Shinko Electric／Unimicron**，Samsung Electro-Mechanics 與 LG Innotek 爭取進入。
+➜ ⚠ **Amkor 不在此列** ——本 wiki 既有記載為「Intel 之 EMIB-T 外包夥伴 Amkor」，
+亦即 **Amkor 的角色在組裝端而非基板端。**
+➜ **這釐清了一個此前模糊之處：EMIB 的「基板」與「封裝組裝」是兩個不同的供應環節。**
+➜ 既有空缺「Amkor 使用誰的 TCB 鍵合頭」仍未解。
+
+### 2026-09-30 新增空缺
+
+- [ ] ⭐⭐ **Amkor AP 塗層之附著強度絕對值與 TCT 剝離面積**（2026-09-29 列管，本輪無進展，
+  但已有 0.7–1.2 g/mm 的量級可對照）。
+- [ ] ⭐⭐ **「每個客戶都需客製開發」的工作量與成本結構** ——這是 OSAT 在基板側的護城河或負擔？
+- [ ] ⭐ **KGS 的定義與篩檢方式**（與 KGD 併案追蹤）。
+- [ ] **Amkor 在 EMIB 供應鏈中的確切分工**（組裝？橋嵌入？測試？）。
+- [ ] **Amkor 使用誰的 TCB 鍵合頭**（既有空缺，無進展）。
+
+### 2026-09-30 新增來源
+
+- [[sources/2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation]]
+- [[sources/2026-09-30_semieng_one-substrate-no-longer-rules-them-all]]
+- [[sources/2026-09-30_trendforce_intel-emib-substrate-yield-45-percent]]
