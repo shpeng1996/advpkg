@@ -8,7 +8,7 @@ updated: 2026-09-22
 original_path: raw/articles/2026-09-22_appliedmaterials_hybrid-bonding-opta-catalyst-cmp-primary.md
 url: https://www.appliedmaterials.com/us/en/semiconductor/markets-and-inflections/heterogeneous-integration/hybrid-bonding.html
 publisher: "Applied Materials"
-date: unknown
+date:  # unknown
 related:
   - wiki/technologies/hybrid-bonding.md
   - wiki/entities/applied-materials.md

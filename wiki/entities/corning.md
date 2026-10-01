@@ -6,11 +6,14 @@ created: 2026-09-18
 updated: 2026-09-30
 sources:
   - 2026-08-06_epo_corning-small-diameter-tgv-adhesion
+  - 2026-09-30_epo_xiamen-anjieli-cn121335557a-silane-parylene-tgv
+  - 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids
+  - 2026-09-30_epo_amosense-wo2026019155a1-multilayer-glass-core-frit-bonding
+  - 2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth
 related:
   - wiki/technologies/glass-substrate.md
   - wiki/technologies/copackaged-optics.md
   - wiki/technologies/copos.md
-sources: [2026-09-30_epo_xiamen-anjieli-cn121335557a-silane-parylene-tgv, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_epo_amosense-wo2026019155a1-multilayer-glass-core-frit-bonding, 2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth]
 ---
 
 # 康寧 / Corning Incorporated

@@ -8,7 +8,7 @@ updated: 2026-09-22
 original_path: raw/articles/2026-06-01_ninescrolls_surface-preparation-cu-cu-conditioning-chain.md
 url: https://ninescrolls.com/insights/surface-preparation-cu-cu-hybrid-bonding/
 publisher: "NineScrolls LLC"
-date: 2026-06-01（2026-08-15 更新）
+date: 2026-06-01  # 2026-08-15 更新
 related:
   - wiki/technologies/hybrid-bonding.md
   - wiki/concepts/test-metrology-packaging.md
