@@ -3,7 +3,7 @@ title: "玻璃基板 / Glass Core Substrate"
 category: technology
 tags: [glass-substrate, TGV, panel-level, FC-BGA, CoPoS, Absolics, DNP, Rapidus, warpage, SeWaRe, glass-interposer, BOE, ULCVD, non-embedding, Lens-Technology, TPK-KY, Innolux, AUO, LG-Chem, singulation, patent-signal]
 created: 2026-05-08
-updated: 2026-09-30
+updated: 2026-10-01
 sources: [2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-27_tradingkey_copos-glass-validation-08mm-85x110mm, 2026-09-27_intel_us20260182414a1-asymmetric-buildup-cte-gradient-glass, 2026-09-27_samsung_us20260144093a1-bridge-on-tgv-mold-fixed, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-05-05_trendforce-insights_glass-substrate-development, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-05-29_3dincites_rapidus-2nm-advanced-packaging-ai-foundry, 2026-06-01_trendforce_intel-3dgs-india-glass-substrate, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-06-20_biggo_boe-glass-substrate-pilot, 2026-06-28_economy-ac_glass-substrate-global-race, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-08-18_trendforce_shinko-glass-substrate-22layer-glassem-delay, 2026-09-11_mssp_tgv-glass-biaxial-bending-ring-on-ring, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-03-13_kaneka_jp2026047137a-glass-core-polyimide-quantified, 2026-08-10_screp_low-k-organic-buffer-tgv-cu-metallization, 2026-08-04_jmrt_vacuum-assisted-void-free-cu-fill-tgv, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_patent_er-eng-glass-interposer-dual-carrier, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-30_epo_xiamen-anjieli-cn121335557a-silane-parylene-tgv, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth, 2026-09-30_epo_intel-jp2026116680a-glass-core-embedded-inductor-clusters, 2026-09-30_epo_intel-us20260040982a1-glass-package-liquid-metal-socketing, 2026-09-30_epo_amosense-wo2026019155a1-multilayer-glass-core-frit-bonding, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all]
 related:
   - wiki/technologies/rdl.md
@@ -1722,3 +1722,99 @@ Sdd21 −2.11 vs −2.08 dB ——比較的是「TGV 的兩種填法」，不是
 - [[sources/2026-09-30_epo_intel-us20260040982a1-glass-package-liquid-metal-socketing]]
 - [[sources/2026-09-30_epo_amosense-wo2026019155a1-multilayer-glass-core-frit-bonding]]
 - [[sources/2026-09-30_semieng_one-substrate-no-longer-rules-them-all]]
+
+## 2026-10-01 新增：材料選擇的第二維度、玻璃層作為元件基材、TGV 參數不可移植
+
+### ⭐⭐⭐ 玻璃材料選擇首次出現物理判準，且與 CTE 互不相干
+
+中科院微電子所（`10.1016/j.mssp.2026.111206`，2026-09-26，LIDE 飛秒雷射，**八種市售玻璃**）：
+
+- **高非橋氧（NBO）玻璃易發生細絲不穩定性（filamentation instability）**
+- 以 **Raman 導出之「去聚合結構單元比例」與 TGV 側壁粗糙度建立定量關聯**（相同 LIDE 條件下）
+- 辨識出**細絲伴生之新月形微孔洞**與（暫定推論之）雷射誘導成分不均勻性，為扭曲改質通道、造成不均勻蝕刻者
+- 提出**抑制不穩定細絲軸向傳播的脈衝能量調控策略**
+- 側壁起伏與粗糙度**同時劣化金屬化可靠性、電性表現與熱機械穩定性三者**
+
+➜ **新論述（⭐⭐⭐）**：「**玻璃基板的材料選擇是至少兩個互不相干維度的妥協：熱機械（CTE／模數）與可加工性（NBO／網絡聚合度）。本頁此前只處理前者。**」
+  既有材料軸全為熱機械常數：**AGC ER-Y1（3.5 ppm/°C, 88 GPa）／EN-A1（5.8, 75 GPa）**。
+➜ **立即產生之新問題（⭐⭐）**：低 NBO（高聚合度）玻璃的 CTE 與模數是否反而不利？**若兩維度衝突，則「最佳玻璃」不存在，只有最佳折衷。** 本 wiki 無任何來源處理。
+➜ **「真正的瓶頸在被視為輔助步驟的那一步」取得第七例，且型態不同**：第六例為 200–300 nm 無電鍍種子層（一個步驟）；本例為**材料化學在雷射改質階段留下的印記**，不是任何單一步驟的產物。
+  **新論述（⭐⭐）**：「**瓶頸不只藏在被輕視的步驟裡，也藏在被當成常數的材料參數裡。**」
+➜ ⚠ **本頁既有「玻璃優於矽」論述（TGV 3 dB 頻寬 >110 GHz vs TSV >67 GHz，上海交大）須加上條件**：該優勢的前提是 **TGV 本身做得夠好**，而側壁粗糙度會同時傷害電性。
+➜ ⚠ 為 2026-09-30 列管之「Corning『small via diameter』之頂／腰／底」空缺提供解釋框架：若側壁起伏源於細絲不穩定性，則頂／腰／底的差異可能**不是錐度，而是軸向不穩定性的空間分佈**。（**此為本 wiki 推論，非原文主張。**）
+
+### ⭐⭐⭐ TGV 參數不可跨玻璃牌號移植——兩篇獨立證據
+
+KAIST × 國家奈米加工中心（`10.1016/j.optlastec.2026.116355`，2026-09-11，皮秒準貝塞爾光束，10% HF）：
+
+| 變數 | 結果 |
+|------|------|
+| 最佳脈寬 | **石英偏好 10 ps**（較深、較均勻、錐角較低）；**D263 偏好 7 ps**（**相反**） |
+| 圓偏振（D263 @7 ps, 負焦點偏移） | **蝕刻深度 +16–18%**，錐角降低 |
+| 圓偏振（D263 @10 ps） | **效果可忽略** |
+| 焦點偏移 | 兩材料皆：**正 Z 偏移一致產生更深穿透** |
+
+➜ **兩篇（飛秒 LIDE vs 皮秒準貝塞爾、兩組玻璃）從不同方法抵達同一結論：TGV 品質強烈依賴玻璃成分，最佳參數不可跨牌號移植。**
+  D263 為**含鹼玻璃**（高 NBO 相容），其需較短脈寬正是為避免細絲軸向傳播 ⇒ 兩篇互相印證。（⚠ **兩篇未互相引用，此串接為本 wiki 推論。**）
+➜ **供應鏈含意（⭐⭐⭐）**：**換玻璃供應商等於重新開發 TGV 製程窗口。**
+➜ ⭐⭐ **偏振是本頁全新的 TGV 製程變數**（既有變數：雷射類型、脈寬、能量、蝕刻劑、深寬比、襯層）。
+➜ ⭐⭐ **本頁首個明確的 TGV 參數交互作用實例**：圓偏振在 7 ps／負偏移下有效、10 ps 下無效。
+  **新論述**：「**TGV 製程參數之間存在強交互作用，不可逐一最佳化；參數窗口是聯合的，而非各軸獨立的。**」
+  （與 2026-09-30 之「手段成對」同型，但發生在製程參數層而非材料層。）
+➜ ⭐⭐ **錐角首次與具體參數掛鉤**：可由**脈寬 × 焦點偏移 × 偏振**三者調控。
+➜ ⚠⚠ **方法學限制**：10% HF 濕蝕刻與 MEMS 慣用製程相同，**非量產級工法**。本篇數值屬**研究級參數指引**，**不得當作產線規格**，亦不得與 AMAT／Corning 的量產 TGV 數字並列比較。
+
+### ⭐⭐⭐ 玻璃層本身可以是被動元件的基材（不只是機殼）
+
+**Intel JP2026053265A**（族 94125492，2026-03-25，發明人 DUAN GANG／LIU MINGLU／PIETAMBARAM）：
+基板含**第一玻璃層**、**接合於其上之第二玻璃層**，及**埋入第一玻璃層中之深溝槽電容（DTC）**。
+
+➜ **2026-09-30 論述 10（玻璃核心＝被動元件機殼）取得第二個、類型不同的證據。**
+  前一例 JP2026116680A：玻璃層**開孔 → 填介電 → 兩叢電感貫穿**（電感，元件在孔內）。
+  本件：**電容，直接埋入玻璃層本體**。
+  ➜ 該論述強化為「**玻璃層不只是元件的容器，它本身可以是被動元件的基材。**」
+  ➜ ⚠ 兩件同屬 Intel ⇒ **單一廠商的雙重下注**，尚不能推論為業界共識。
+➜ **「兩片玻璃層接合」與 Amosense WO2026019155A1 構成多層玻璃芯的第二條路線**：
+  Amosense = 玻璃熔塊 + 真空二次燒結 + 氣密接合（**玻璃製造製程**）；Intel = 玻璃層接合（**半導體接合製程**）。
+  ➜ 「玻璃芯自己也可以是多層的」不再是單一廠商特例；**兩家從製程譜系的兩端抵達同一結構**。
+  ⚠ 兩者接合方式未必同型，**不得混記為同一工法**。
+➜ ⭐⭐ **IPC 方向可作為「邊界外擴」的方向判準**：Amosense IPC **全在 C03（玻璃）**，無封裝分類；Intel 本件 IPC **跨 H10D（元件）+ H10W（封裝）**，無玻璃材料分類。
+  **新論述**：「**IDM 從元件側進入玻璃；玻璃廠從材料側進入基板。兩者在基板層相遇，但各自帶著自己的分類體系與失效語言。**」
+➜ ⚠ **本頁既有玻璃價值軸為電性、剛性、CTE、TGV 頻寬四項，無「元件基材」一軸** ⇒ 本件與 JP2026116680A 合計已足以新增**第五軸**。
+
+### ⭐⭐ 核心層功能化不限玻璃（三種核心材料）
+
+| 路線 | 核心材料 | 做法 | 出處 |
+|------|---------|------|------|
+| Intel | **玻璃** | 開孔填電感 / 埋入 DTC | JP2026116680A / JP2026053265A |
+| **Shinko** | **有機（推定）** | **核心層貫穿腔體，元件坐落於腔體端面銲墊** | US20260293748A1（本輪） |
+| **SHIELD USA** | **模封核心** | fan-out 模封核心嵌入電容、電感、晶粒、VIB | `10.4071/001c.167741`（本輪） |
+| Saras | 核心內 tile | 電容 tile（單層 130–150 µm，核心 0.8–1.6 mm） | 本輪訪談 |
+
+➜ **2026-09-30 論述 10 擴述為**：「**核心層正在從結構件轉為元件容器，且此轉向橫跨玻璃、有機與模封三種核心材料。**」
+➜ Shinko 之腔體為**貫穿**而非凹穴、銲墊同時是腔體端面 ⇒ 暗示目標為**薄化整體厚度**而非單純容納元件。
+➜ **與同期 Ibiden US20260271740A1 為同題兩解**：Ibiden 選**增層介電**開孔（導體墊作雷射止擋），Shinko 選**核心層**貫穿腔體。**兩大日系基板廠同期、各自處理「元件如何進基板」。**
+
+### ⭐⭐ 玻璃芯進入「建廠＋電力」階段（首個基礎設施量級）
+
+**Shinko 茂原廠**（原 Japan Display，2026-09-30）：總用地 **373,000 m²**、無塵室 **179,000 m²**、可用電力 **>100 MW**、交割 **2027-03 底**、投產 **FY2028**；**22 層玻璃基板＝兩面各 11 層銅佈線**（首次拆解）。
+詳見 [[entities/shinko]]。
+
+➜ 既有玻璃記載全在材料、TGV 製程、良率（玻璃面板 70–85% vs 有機 >90%）層級，**無任何產能或基礎設施數字**。
+➜ **邊界外擴第五型態：面板廠的廠房與電力資產進入先進封裝。** 玻璃基板偏好大面積方形基板，與面板廠房設備同型 ⇒ **面板產業的衰退資產成為先進封裝的現成基礎設施；這是結構性資產轉移，而非單純財務交易。**
+➜ ⚠ **FY2028 投產 ⇒ 2027 年內玻璃芯基板不會有來自此廠的量產供給。**
+➜ ⚠ **美國 CHIPS 法案同期在「有機／模封」而非玻璃上下注**（SHIELD USA，本輪）⇒ **「玻璃是唯一下一代核心」的隱含假設須加上對照項。**
+
+### 2026-10-01 新增空缺
+
+- [ ] ⭐⭐⭐ 八種玻璃的牌號、SiO₂ wt% 與 NBO 濃度 —— 缺此則無法對應 AGC／Corning／NEG 實際產品
+- [ ] ⭐⭐⭐ Raman 去聚合比例 vs 側壁粗糙度的**實際數值與相關係數**（須 OA 全文或向作者索取）
+- [ ] ⭐⭐ 低 NBO（高聚合度）玻璃的 CTE 與模數是否反而不利 —— **兩維度是否衝突**
+- [ ] ⭐⭐ Intel JP2026053265A 之電容密度、玻璃中開深溝槽的方式與深寬比、兩玻璃層接合方式與氣密性
+- [ ] ⭐⭐ 深溝槽電容埋入後玻璃的雙軸彎曲強度代價（與 TGV 力學論文對軸）
+- [ ] ⭐⭐ Shinko 22 層兩面對稱增層對**翹曲**的含意；US20260293748A1 之核心層材質
+- [ ] ⭐⭐ 錐角、深度、側壁粗糙度的**絕對值**（KAIST 篇僅給相對變化）；石英的偏振效應（未做）
+- [ ] ⭐ 圓偏振 +16–18% 深度增益的物理機制（抑制細絲？降低自聚焦？）
+- [ ] ⭐ 新月形微孔洞是否與大阪大之無電鍍銅奈米孔洞（4.5%／9.6%）在同一界面疊加
+- [ ] ⭐ 脈衝能量調控策略的參數窗口與對 throughput 的影響
+- [ ] 族 94125492 之 US／EP 同族與請求項全文

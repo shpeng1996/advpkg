@@ -3,7 +3,7 @@ title: "先進封裝市場 / Advanced Packaging Market"
 category: concept
 tags: [market, forecast, CAGR, supply-chain, HBM, chiplet, geopolitics, equipment, SIA, Omdia, Yole, WFE, substrate-market, framework]
 created: 2026-04-24
-updated: 2026-09-30
+updated: 2026-10-01
 sources: [2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-07-31_semieng_chip-week-149, 2026-04-24_initial-survey, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2026-01-23_trendforce_chip-tools-tel-asml, 2026-03-05_trendforce_intel-emib-billions, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2025-12-18_trendforce_micron-capex-hbm4, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2025-05-13_trendforce_top10-osat-2024, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-04-16_ontoinnovation_dragonfly-g5-qualified, 2026-06-23_communicationstoday_foplp-glass-substrate-market-8b-2030, 2026-06-29_trendforce_china-osat-tongfu-jcet-investment, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-26_semieng_chip-week-144, 2026-07-01_trendforce_ase-price-hike-20pct, 2026-07-04_semieng_chip-week-145, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-07-03_trendforce_anthropic-samsung-advanced-packaging, 2026-05-08_trendforce_ajinomoto-abf-1b-land-buy-2032-margins, 2026-07-24_semieng_chip-week-148, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-08-06_siliconbox_500m-units-panel-scale, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent]
 related:
   - wiki/entities/tsmc.md
@@ -1215,3 +1215,46 @@ Ibiden／Shinko／Unimicron 供應；Samsung Electro-Mechanics 與 LG Innotek �
 - [[sources/2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier]]
 - [[sources/2026-09-30_semieng_one-substrate-no-longer-rules-them-all]]
 - [[sources/2026-09-30_trendforce_intel-emib-substrate-yield-45-percent]]
+
+## 2026-10-01 新增：封裝基板資本支出的兩個一手／準一手落點
+
+### ⭐⭐⭐ Ibiden（一手，2026-02-03）
+
+| 項目 | 數值 |
+|------|------|
+| 總投資 | **約 5,000 億日圓**（FY2026–FY2028 三年期） |
+| 第一期 | **約 2,200 億日圓**（Gama 廠 Cell6 及既有設施） |
+| Ono 廠 | 進一步擴產**仍在評估中** |
+| 量產起點 | **FY2027 起依序投產** |
+| 需求驅動 | AI 伺服器與高效能伺服器之「強勁客戶需求」 |
+
+⚠ **產能數字（片／月、面積）未揭露 ⇒ 不得由投資額反推產能。**
+
+### ⭐⭐⭐ Shinko 茂原廠（二手，2026-09-30，待官方複核）
+
+| 項目 | 數值 |
+|------|------|
+| 標的 | **Japan Display 茂原工廠**（千葉縣） |
+| 總用地／無塵室 | **約 373,000 m² ／ 約 179,000 m²** |
+| **可用電力** | **> 100 MW** |
+| 收購價 | **未揭露**；**JDI 認列約 514 億日圓特別利益** |
+| 交割／投產 | **2027-03 底 ／ FY2028** |
+| 用途 | **玻璃芯基板**（22 層＝兩面各 11 層銅） |
+| 落敗競標者 | **Micron**、資料中心業者等 |
+
+### ⭐⭐⭐ 市場含意
+
+1. **2026 年內日系兩大基板廠皆無新增供給上線。**
+   Ibiden FY2027、Shinko FY2028 ⇒ **2026 年的 AI 封裝基板緊俏無供給側解方**，只能靠良率爬坡（EMIB 基板 45% → 60% @1Q27，⚠ 二手傳聞）。
+2. ⭐⭐ **「日系兩大基板廠的下注時程相差一年、材料路線相異」** —— Ibiden 有機 ABF 擴既有廠區；Shinko 玻璃芯收購面板廠。**不是快慢之差，而是兩種賭法。**
+3. ⭐⭐ **資本支出的可比性問題**：Ibiden 給的是**三年投資額**，Shinko 給的是**廠房資產規模（面積、電力）**，**兩者口徑完全不同，不得並列比較投入強度。**
+   ➜ 本 wiki 目前**無任一基板廠的「每單位產能資本支出」數字**，故無法判斷玻璃與有機路線的資本效率差異。列為⭐⭐⭐空缺。
+4. ⚠ **>100 MW 的電力規模**本身是一個新的市場指標：本 wiki 此前的封裝產能指標全為**片／月或面積**（如 CoWoS 115,000–140,000 wpm @2026 底），**無電力維度**。
+   ➜ **新開放問題（⭐⭐）**：先進封裝（尤其玻璃／面板級）的產能瓶頸是否正在從設備與無塵室移向**電力供應**？
+
+### 2026-10-01 新增空缺
+
+- [ ] ⭐⭐⭐ 基板廠的「每單位產能資本支出」（玻璃 vs 有機之資本效率）—— 兩側皆無數字
+- [ ] ⭐⭐⭐ Gama Cell6 的產能數值；5,000 億日圓中玻璃芯的佔比
+- [ ] ⭐⭐ 先進封裝產能瓶頸是否正從設備／無塵室移向電力
+- [ ] 📌 **既有未結清項延續**：IC 基板市場 \$15.1B(2024) → \$37.1B(2033) 的原始機構來源；「基板產值成長快於出貨量」（Prismark）的百分比與原始出處 —— 本輪無進展

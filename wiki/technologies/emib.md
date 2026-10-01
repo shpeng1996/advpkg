@@ -3,7 +3,7 @@ title: "EMIB — Embedded Multi-Die Interconnect Bridge"
 category: technology
 tags: [Intel, 2.5D, silicon-bridge, chiplet, HBM4, Foveros, glass-substrate, EMIB-T, EMIB-M, silicon-capacitors, power-delivery, HLFF, encapsulation, underfill]
 created: 2026-05-03
-updated: 2026-09-30
+updated: 2026-10-01
 sources: [2026-09-27_intel_us20260223702a1-direct-bonding-embedded-bridge-organic-cavity, 2026-09-27_intel_cn122270166a-stacked-glass-silicon-bridge-assembly-ar20, 2026-09-27_samsung_us20260144093a1-bridge-on-tgv-mold-fixed, 2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-03-05_trendforce_intel-emib-billions, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-03-03_trendforce_intel-clearwater-forest, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks, 2026-06-21_convergedigest_intel-emib-t-multi-die-packaging, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap, 2026-06-05_semieng_intel-ectc-2026-emib-t-cpo-glass, 2026-01-30_tomshardware_intel-ai-chip-test-vehicle-emib-t, 2026-08-04_semieng_from-blueprint-intel-hlff, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_patent_zhuhai-tiancheng-dual-depth-tsv-silicon-bridge, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-09-30_epo_intel-us20260191037a1-localized-embedded-bridge-in-core, 2026-09-30_intel_us-advanced-packaging-reticle-8x-12x-fab9, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery]
 related:
   - wiki/entities/intel.md
@@ -710,3 +710,44 @@ US20260026373A1（橋 die 翻轉置於核心內，未收錄）、US20260231807A1
 - [[sources/2026-09-30_epo_intel-us20260191037a1-localized-embedded-bridge-in-core]]
 - [[sources/2026-09-30_intel_us-advanced-packaging-reticle-8x-12x-fab9]]
 - [[sources/2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery]]
+
+## 2026-10-01 新增：基板供給的時點上界（Ibiden 一手資本支出）
+
+**Ibiden 官網投資者公告（一手，2026-02-03）** —— 見 [[entities/ibiden]]（本輪新建）：
+
+| 項目 | 數值 |
+|------|------|
+| 總投資 | **約 5,000 億日圓**（FY2026–FY2028） |
+| 第一期 | **約 2,200 億日圓**（Gama 廠 Cell6 及既有設施） |
+| 量產起點 | **FY2027 起依序投產** |
+| 產能數字／層數／線寬 | ⚠ **未揭露** |
+
+➜ ⭐⭐⭐ **「FY2027 起投產」給 ABF／FC-BGA 供給緊俏的解除時點一個上界 ⇒ 2026 年內不會有 Gama Cell6 的新增供給。**
+➜ **與本頁既有 EMIB 基板良率路線圖合讀**（TrendForce 2026-09-23，⚠ 原文多處 "reportedly"，屬待證傳聞）：
+
+| 時點 | EMIB 基板良率 | 基板新產能 |
+|------|--------------|-----------|
+| 2Q26 | ~30% | — |
+| 2026-09 | **~45%** | — |
+| 4Q26 目標 | 50% | — |
+| **1Q27 目標** | **60%** | — |
+| **FY2027** | — | **Ibiden Gama Cell6 起投** |
+
+➜ **新論述（⭐⭐⭐）**：「**Intel EMIB 的基板瓶頸在 2027 年同時面臨『良率爬坡』與『新產能方上線』兩個變數，兩者皆落在 2027，無一在 2026。**」
+  ➜ 這對 2026-09-30 論述 7（「EMIB-T 與 CoWoS 的競爭在不同軸上有相反的排序」）補上**時間軸**：
+  **良率軸的落後（~45% vs CoWoS >98%，⚠ 口徑不同不得相減）其改善與產能擴充同時落在 2027，故 2026 年內該軸不會翻轉。**
+➜ ⚠ **不得由投資額反推產能**（沿用既有「口徑未給不得換算」規範）。
+➜ ⚠ **Ibiden 之 5,000 億日圓是否含玻璃芯產線未揭露** ⇒ 不得假設其全數投入有機 ABF。
+
+### 旁及：日系兩大基板廠的兩種賭法
+
+**Ibiden：FY2027、有機 ABF、既有廠區擴 Cell**（見 [[entities/ibiden]]）
+**Shinko：FY2028、玻璃芯、收購 JDI 茂原面板廠**（見 [[entities/shinko]]）
+➜ **新論述（⭐⭐）**：「**日系兩大基板廠的下注時程相差一年、材料路線相異：這不是同一條路線的快慢之差，而是兩種賭法。**」
+➜ ⚠ 兩家同為 EMIB 基板供應商 ⇒ **Intel 的基板供應同時暴露於兩種路線的風險**。
+
+### 2026-10-01 新增空缺
+
+- [ ] ⭐⭐⭐ Gama Cell6 的產能單位與數值；是否為玻璃芯產線或純 ABF
+- [ ] ⭐⭐ Ibiden 的 ABF↔矽橋 CTE 失配對策（TrendForce 指為主要良率限制項，未給數值）
+- [ ] 📌 **既有未結清項延續**：EMIB 基板良率 45% 的口徑（基板成品？含橋嵌入？最終封裝？）；CoWoS-L 的基板層良率（同口徑對照，仍完全空白）；ABF ↔ 矽橋 CTE 失配的量化值；EMIB-T 供電通道的容量與通道數 —— **本輪均無進展**

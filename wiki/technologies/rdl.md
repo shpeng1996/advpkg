@@ -3,7 +3,7 @@ title: "RDL — 重分佈層 / Redistribution Layer"
 category: technology
 tags: [RDL, SAP, dual-damascene, embedded-trace, ETR, polyimide, FPIM, CMP, electromigration, panel-level, pad-less-via]
 created: 2026-09-26
-updated: 2026-09-30
+updated: 2026-10-01
 sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2026-09-27_paper_purdue-ru-cu-em-lifetime-blacks-n-0154, 2026-09-27_paper_copper-interconnect-scaling-roadmap-lines-per-mm, 2026-09-26_article_taiyo-imec-700nm-damascene-rdl, 2026-09-26_article_imec-1um-damascene-rdl-2019-anchor, 2026-09-26_article_amkor-embedded-trace-rdl, 2026-09-26_paper_asi-1um-hdbu-substrate, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-25_paper_dnp-glass-rdl-electromigration-lifetime, 2026-09-25_paper_cornell-glass-on-glass-sio2-rdl, 2026-09-25_paper_asu-molded-core-substrate-warpage, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all]
 related:
   - wiki/technologies/foplp.md
@@ -371,3 +371,30 @@ ASE FOCoS 3–6 層最高 12 層、imec NanoIC RDL 1.3 µm）。
 - [[sources/2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation]]
 - [[sources/2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids]]
 - [[sources/2026-09-30_semieng_one-substrate-no-longer-rules-them-all]]
+
+## 2026-10-01 新增：橫向製程可以決定垂直解析度（VIB）
+
+**SHIELD USA**（`10.4071/001c.167741`，IMAPS DPC 2026，2026-08-19）之 **VIB（Vertical Interconnect Block）**：
+先在**平面矽晶圓**上製作多層佈線 → 切割成互連塊 → **旋轉 90 度**置放 → 嵌入模封核心形成貫穿連接。
+因佈線為**橫向製作**，臨界尺寸可達 **≤ 20 µm**、深寬比 **AR > 15**，且支援**非直線（non-rectilinear）圖形**。
+
+➜ ⭐⭐⭐ **新論述**：「**垂直互連不必垂直地做出來；把橫向結構旋轉，可以把縱向製程的限制換成橫向製程的限制。**」
+  ➜ 本頁（RDL／增層佈線）的解析度能力因此成為**垂直互連的解析度來源**，而非只是平面扇出的手段。
+  ➜ 這是本 wiki 首見 **RDL 製程能力被用來解決貫穿互連問題**。
+➜ ⚠ VIB 需切割、旋轉、置放三個額外步驟；**throughput、對準精度、良率全部未給** ⇒ **不得判定其優於 TSV／TGV。**
+  詳見 [[technologies/foplp]]。
+
+### 旁及：玻璃 fan-out 之 RDL 粗糙度與傳輸損耗
+
+**`10.1038/s41378-026-01399-7`**（北京大學，Microsystems & Nanoengineering，2026-07-23，**本輪 Track C 候選但未收錄為 raw**）：
+以 **LIDE** 製作高精度腔體供晶粒嵌入；經最佳化 **CMP** 使 **RDL 表面粗糙度降低 97%**，**傳輸損耗壓至 0.25 dB/mm 以下**；Ka 波段微系統（GaN 放大器 + 矽基開關）於 28 GHz 達發射增益 **26.08 dB**、接收雜訊指數 **2.73 dB**，面積 **6 × 3 mm²**。
+
+➜ ⭐⭐ **「RDL 表面粗糙度 → 傳輸損耗」第一次有同篇內的量化鏈**（粗糙度 −97% ⇒ <0.25 dB/mm）。
+➜ ⚠ 本件為 **Ka 波段 RF 微系統**，非數位 I/O 封裝；其 dB/mm 數字**不得直接套用於 chiplet 互連**。
+  列為下輪候選（本輪專利／論文各取 5 件上限）。
+
+### 2026-10-01 新增空缺
+
+- [ ] ⭐⭐⭐ VIB 的 throughput、對準精度、良率、電性
+- [ ] ⭐⭐ RDL 粗糙度與數位 I/O 插入損耗的對應關係（本 wiki 僅有 RF 波段數字）
+- [ ] ⭐ `10.1038/s41378-026-01399-7` 之 CMP 後絕對粗糙度（Ra/Rq）數值

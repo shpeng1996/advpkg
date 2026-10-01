@@ -3,7 +3,7 @@ title: "FOPLP — 扇出面板級封裝 / Fan-Out Panel-Level Packaging"
 category: technology
 tags: [fan-out, panel-level, TSMC, Samsung, ASE, Powertech, Innolux, CoPoS, InFO, cost-reduction, delamination, DCB, CTE]
 created: 2026-05-03
-updated: 2026-09-27
+updated: 2026-10-01
 sources: [2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-07-31_trendforce_ase-capex-record-10-5b-leap-foplp, 2025-09-12_trendforce_foplp-competitive-2025, 2026-04-13_trendforce_copos-pilot, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-21_3dincites_acm-wlp-plp-process-trends, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-15_digitimes_manz-310mm-foplp-ecd-equipment, 2026-06-13_digitimes_linkotech-foplp-rollout-traction, 2026-06-20_prnewswire_manz-asia-310mm-ecd, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_digitimes_tsmc-foplp-timeline-skepticism, 2026-07-06_trendforce_cfmee-plp2000-china-first-plp, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-08-06_siliconbox_500m-units-panel-scale, 2026-02-18_siliconbox_ep4697377a1-fanout-panel-metal-sealing-ring, 2026-07-28_xianfeng_cn122476946a-alignment-mark-protection, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-26_paper_skywater-fowlp-pdk-roadmap]
 related:
   - wiki/technologies/rdl.md
@@ -865,3 +865,57 @@ Yole：**先進封裝 2024 >$40B → 2030 >$80B（CAGR 9.5%）**；其中 **2.5D
 ➜ **並使 2026-09-26 的「面板級封裝約占 2024 年先進封裝市場 0.4%」須加註「採用 Yole 定義」。**
 
 其他：**AI/HPC 佔 2030 年該市場 45.6%**；**台／日／中合計掌握 2030 年 84.8% 的製造**（見 [[concepts/geopolitics-advanced-packaging]]）。
+
+## 2026-10-01 新增：SHIELD USA 模封核心 + VIB —— 繞過深寬比的垂直互連
+
+### ⭐⭐⭐ `10.4071/001c.167741`（IMAPS DPC 2026，2026-08-19，OA PDF 可得）
+
+**SHIELD USA** = Substrate-based Heterogeneous Integration Enabling Leadership Demonstration for the USA，由 **CHIPS and Science Act** 資助；本篇**首次公開技術進度**。
+第一作者 **Georgios Dogiamis**（長期為 Intel 封裝研究代表人物；⚠ 摘要未列機構，不得逕認本計畫為 Intel 主導）。
+
+| 項目 | 內容 |
+|------|------|
+| 核心結構 | **模封核心（molded core）基板**，以 **fan-out 技術**製造 |
+| 核心內嵌 | **主動與被動元件（明示 inductors and capacitors）、晶粒、VIB** |
+| 佈線 | **雙面 RDL** |
+| **VIB 深寬比** | **AR > 15** |
+| **VIB 臨界尺寸** | **≤ 20 µm**，且**可做非直線（non-rectilinear）圖形** |
+| VIB 製法 | 先在**平面矽晶圓**上製作多層佈線 → 切割成互連塊 → **旋轉 90 度**置放 → 嵌入模封核心形成貫穿連接 |
+| 內嵌被動元件連接 | 上下表面皆為**低電阻率厚銅** |
+| throughput／對準精度／良率 | ⚠ **全部未給** |
+
+### ⭐⭐⭐ VIB 改寫「垂直互連受深寬比限制」這一前提
+
+原文明言 VIB 提供之垂直互連「**不受深寬比限制**，有別於傳統 through-mold via、機械／雷射鑽孔 via，以及 TSV 或 TGV」。
+
+➜ 機制：**把橫向製作的多層佈線旋轉 90 度變成垂直互連。**
+➜ **垂直互連的解析度因此由微影（橫向製程）決定，而非鑽孔／蝕刻（縱向製程）** ⇒ 故可達 ≤20 µm 並支援非直線圖形。
+➜ **新論述（⭐⭐⭐）**：「**垂直互連不必垂直地做出來；把橫向結構旋轉，可以把縱向製程的限制換成橫向製程的限制。**」
+➜ ⚠⚠ **這是對本 wiki 整個 TGV／TSV 深寬比論述的側翼挑戰**（本輪另兩篇 TGV 論文正是在縱向製程內部優化）。
+  但 VIB 需**切割、旋轉、置放**三個額外步驟，**throughput 與對準精度未給** ⇒ **不得判定優劣**，只能記為「**存在一條繞過深寬比的路徑**」。
+
+### ⭐⭐⭐ 「核心層功能化」第四條路線，且唯一明示同時嵌入電感與電容
+
+| 路線 | 核心材料 | 出處 |
+|------|---------|------|
+| Intel | 玻璃 | JP2026116680A（電感）／JP2026053265A（DTC） |
+| Shinko | 有機（推定） | US20260293748A1 |
+| Saras | 核心內 tile | 2026-04-24 訪談 |
+| **SHIELD USA** | **模封核心** | 本篇（**電感＋電容＋晶粒＋VIB**） |
+
+➜ 強化本輪跨頁論述：**核心層正從結構件轉為元件容器，橫跨玻璃、有機、模封三種材料。**
+
+### ⭐⭐ 美國 CHIPS 法案在「有機／模封基板」而非玻璃上下注
+
+本 wiki 既有下一代核心基板論述以玻璃為主（Intel、Corning、AGC、Absolics、Samsung、Amosense、Shinko）。
+➜ **「玻璃是唯一下一代核心」的隱含假設須加上對照項**：存在一條**國家資助、以模封 fan-out 為核心**的競爭路線。
+➜ **與 Shinko 茂原廠（本輪）形成地緣對照**：日本以**面板廠房＋電力＋玻璃**押注；美國以 **CHIPS ＋模封 fan-out** 押注。**兩者都指向大面積方形基板，但材料路線相反。**
+
+### 2026-10-01 新增空缺
+
+- [ ] ⭐⭐⭐ VIB 的 throughput、置放對準精度、良率 —— 缺此值無法與 TGV／TSV 比較
+- [ ] ⭐⭐⭐ VIB 的電性（每通道電阻、電感）與熱性能
+- [ ] ⭐⭐⭐ **OA 全文（https://imapsource.org/article/167741.pdf）之量測數據 —— 列為下一輪高優先取回項**
+- [ ] ⭐⭐ 模封核心內嵌電容的電容密度（µF/mm²），與 Empower 2.3、NPC 4–8 對照
+- [ ] ⭐⭐ 模封核心的 CTE 與 Tg，與 ABF、玻璃（AGC ER-Y1 3.5 ppm/°C）對照
+- [ ] ⭐ SHIELD USA 參與廠商名單與分工（摘要未列機構）

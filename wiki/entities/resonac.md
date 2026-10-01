@@ -3,7 +3,7 @@ title: "Resonac（レゾナック，原昭和電工材料）"
 category: entity
 tags: [Resonac, materials, dicing-tape, hybrid-bonding, D2W, plasma-dicing, Japan]
 created: 2026-09-28
-updated: 2026-09-28
+updated: 2026-10-01
 related:
   - wiki/technologies/hybrid-bonding.md
   - wiki/technologies/glass-carrier.md
@@ -49,3 +49,16 @@ related:
 
 ## 來源 / Sources
 - [[sources/2026-09-28_paper_resonac-chemical-resistant-dicing-tape-hybrid-bonding]]
+
+## 2026-10-01 新增：Saras 的銅箔基板（CCL）供應商
+
+Power Electronic Tips（2026-04-24，訪 Saras CBO Eelco Bergman）在 Saras STILE 內嵌被動元件技術的具名供應鏈中，列 **Resonac 為銅箔基板（copper clad laminate）供應商**。
+
+➜ ⭐ **本 wiki 首次取得 Resonac 在「內嵌被動元件／垂直供電」主題上的下游關係。** 既有 Resonac 記載以封裝材料（ABF 類、模封材）為主。
+➜ 關聯尺度：Saras 之**單層電容厚度 130–150 µm**、核心基板 **0.8–1.6 mm**、tile **5×8 ～ 10×10 mm**（每 tile 一組 2×2 電容陣列）。
+➜ ⚠ 原文未說明 Resonac 供應的 CCL 規格、是否為專用料號，亦未說明其在內嵌製程中的角色（核心層本體？增層？）。
+
+### 2026-10-01 新增空缺
+
+- [ ] ⭐ Resonac 供予 Saras 之 CCL 料號與規格；是否為內嵌被動元件專用
+- [ ] Resonac 在核心層功能化（元件入核心）主題上的其他客戶

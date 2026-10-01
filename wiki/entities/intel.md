@@ -3,7 +3,7 @@ title: "英特爾 / Intel"
 category: entity
 tags: [IDM, advanced-packaging, EMIB, Foveros, Intel18A, Clearwater-Forest, Foveros-Direct, glass-substrate, 14A, High-NA-EUV, silicon-capacitors, Google-TPU-v8e, Q2-2026-earnings, Tesla-14A, HLFF, RAMP-C, Secure-Enclave, Rio-Rancho]
 created: 2026-04-24
-updated: 2026-09-30
+updated: 2026-10-01
 sources: [2026-09-27_intel_us20260182414a1-asymmetric-buildup-cte-gradient-glass, 2026-09-27_intel_cn122270166a-stacked-glass-silicon-bridge-assembly-ar20, 2026-09-27_intel_us20260223702a1-direct-bonding-embedded-bridge-organic-cavity, 2026-08-24_intel-newsroom_hot-chips-2026-diamond-rapids-foveros-ucie, 2026-04-24_initial-survey, 2026-07-20_trendforce_tsmc-265b-arizona-intel-novalake, 2026-03-18_trendforce_intel-emib-malaysia, 2026-03-03_trendforce_intel-clearwater-forest, 2026-03-05_trendforce_intel-emib-billions, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-04-20_trendforce_intel-foundry-14a-equipment, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-01_semianalysis_cpus-back-datacenter-2026, 2026-04-10_3dincites_intel-gan-chiplet, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks, 2026-06-21_convergedigest_intel-emib-t-multi-die-packaging, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap, 2026-07-01_trendforce_terafab-intel-veteran-hire, 2026-04-07_tomshardware_intel-joins-terafab, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-01-30_tomshardware_intel-ai-chip-test-vehicle-emib-t, 2026-07-14_trendforce_intel-ireland-5b-intel3-europe, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-04_semieng_from-blueprint-intel-hlff, 2026-07-31_semieng_chip-week-149, 2026-08-13_trendforce_intel-memory-reentry-xbm-zam-saimemory, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-09-30_intel_us-advanced-packaging-reticle-8x-12x-fab9, 2026-09-30_epo_intel-jp2026116680a-glass-core-embedded-inductor-clusters, 2026-09-30_epo_intel-us20260040982a1-glass-package-liquid-metal-socketing, 2026-09-30_epo_intel-us20260191037a1-localized-embedded-bridge-in-core, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids]
 related:
   - wiki/entities/tsmc.md
@@ -850,3 +850,35 @@ Intel 給結構請求項（玻璃核心內嵌電感叢）。**
 - [[sources/2026-09-30_trendforce_intel-emib-substrate-yield-45-percent]]（⭐⭐⭐ 待證）
 - [[sources/2026-09-30_semieng_bspdn-thermal-dissipation-barriers]]（PowerVia 熱代價）
 - [[sources/2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids]]（Pd 活化的代價）
+
+## 2026-10-01 新增：玻璃層內深溝槽電容（供電軸第八個落點）
+
+### ⭐⭐⭐ JP2026053265A（族 94125492，2026-03-25）
+
+發明人：DUAN GANG、LIU MINGLU、PIETAMBARAM SRINIVAS VENKATA RAMANUJA
+
+> 積體電路封裝基板含**第一玻璃層**、**接合於其上之第二玻璃層**，及**埋入第一玻璃層中之深溝槽電容**。
+
+➜ ⭐⭐⭐ **2026-09-30 論述 10（玻璃核心＝被動元件機殼）第二個、類型不同的證據。**
+  前一例 JP2026116680A：玻璃層**開孔 → 填介電 → 兩叢電感貫穿**（**電感**，元件在孔內）。
+  本件：**電容，直接埋入玻璃層本體**。
+  ➜ 強化為「**玻璃層不只是元件的容器，它本身可以是被動元件的基材。**」
+  ➜ ⚠ 兩件同屬 Intel ⇒ **單一廠商的雙重下注**，尚不能推論為業界共識。
+➜ ⭐⭐⭐ **「兩片玻璃層接合」與 Amosense WO2026019155A1 構成多層玻璃芯的第二條路線**：Amosense 以玻璃製造製程（熔塊＋真空二次燒結），Intel 以半導體接合製程。**兩家從製程譜系的兩端抵達同一結構。**
+➜ ⭐⭐ **IPC 跨 H10D（元件）+ H10W（封裝），無玻璃材料分類**；Amosense 則**全在 C03（玻璃）**。
+  **新論述**：「**IDM 從元件側進入玻璃；玻璃廠從材料側進入基板。兩者在基板層相遇，但各自帶著自己的分類體系與失效語言。**」
+➜ **垂直供電軸的 Intel 落點更新為八個**：PowerVia 18A → PowerDirect 14A → Omni MIM → eMIM-T → eDTC → EMIB-T → 玻璃核心內嵌電感（JP2026116680A）→ **玻璃層內 DTC（JP2026053265A，本輪）**。
+  ⚠ 但 2026-09-30 論述 3 之「Intel 一家覆蓋該軸」須修正：TSMC 本輪亦進入晶粒背面端（見 [[entities/tsmc]]）。
+➜ ⚠ 日本公開案摘要為「課題／解決手段」格式，**無任何實施例數值**（電容密度、溝槽深寬比、玻璃厚度、接合方式皆未揭露）。族 94125492 之 US／EP 同族未查。
+
+### 旁及：SHIELD USA 之第一作者為 Intel 封裝研究代表人物
+
+本輪 Track C 之 **SHIELD USA**（CHIPS 法案資助，模封核心 + VIB，`10.4071/001c.167741`）第一作者 **Georgios Dogiamis** 長期為 Intel 封裝研究代表人物。
+⚠ **摘要未列作者所屬機構**，故**不得逕認本計畫為 Intel 主導**；僅記為人員關聯，列為待查。
+
+### 2026-10-01 新增空缺
+
+- [ ] ⭐⭐ JP2026053265A 之電容密度、溝槽深寬比、兩玻璃層接合方式與氣密性
+- [ ] ⭐⭐ 玻璃中開深溝槽的方式（雷射？乾蝕刻？）；與 TGV 製程是否共用
+- [ ] ⭐ 族 94125492 之 US／EP 同族與請求項全文
+- [ ] ⭐ SHIELD USA 之參與機構名單與 Intel 的角色

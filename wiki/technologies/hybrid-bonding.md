@@ -3,7 +3,7 @@ title: "混合接合 / Hybrid Bonding"
 category: technology
 tags: [3D, hybrid-bonding, Cu-Cu, SoIC, ECTC, advanced-packaging, DRAM, COP, 4F2, Sn-damascene, damascene-interconnect, PFAS-free, patent-signal, guard-ring, surface-activation]
 created: 2026-04-24
-updated: 2026-09-29
+updated: 2026-10-01
 sources: [2026-09-27_paper_binghamton-ibm-pad-scaling-resistance-variability, 2026-09-27_intel_us20260223702a1-direct-bonding-embedded-bridge-organic-cavity, 2026-05-21_semiecosystem_ectc2026-cpo-hybridbonding-plp, 2026-04-24_initial-survey, 2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-03-01_3dincites_besi-packaging-power-shift, 2026-01-13_semiengineering_hbm4-microbumps, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-19_semieng_advanced-packaging-limits, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-03-27_3dincites_copper-grain-hybrid-bonding, 2026-03-02_semieng_making-hybrid-bonding-better, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2026-04-29_semiwiki_cea-leti-ectc2026-hybrid-bonding, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2024-02-09_semianalysis_hybrid-bonding-process-flow, 2026-05-19_semiconductor-digest_ev-group-ectc2026-hybrid-bonding, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-04-19_semiwiki_apple-m5-cucu-hybrid-bonding-shipped, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-18_imec_iii-v-chiplet-rf-laser-bonding, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-29_evgroup_ectc2026-hybrid-bonding-layer-transfer, 2026-06-29_thelec_skhynix-hybrid-bonding-equipment-order, 2026-06-05_semieng_intel-ectc-2026-emib-t-cpo-glass, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-14_trendforce_samsung-hbm-hiring-hybridbonding, 2026-07-16_semieng_fine-pitch-hb-high-volume, 2026-07-16_semieng_alt-materials-hybrid-bonding, 2026-06-08_irtnanoelec_d2w-hybrid-bonding-1um-pitch, 2026-05-28_imec_w2w-hybrid-bonding-200nm-pitch, 2026-09-09_acsaelm_microwave-anneal-cu-cu-150c-3min, 2026-08-21_scirep_copper-oxide-reduction-ar-h2-pulsed-plasma, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-03-29_damnang_hybrid-bonding-cmp-gating-factor, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-04-02_adeia_us20260096463a1-buildup-organic-dielectric-bonding, 2026-07-17_jcet_cn122421815a-asymmetric-bonding-interface, 2026-04-30_seoultech_us20260123559a1-hydrocarbon-plasma-low-temp-bonding, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer, 2023-09-13_nccavs_intel-cmp-dishing-requirement-vs-achieved, 2026-03-11_epo_adeia-cmp-for-hybrid-bonding-patent, 2026-09-01_chip_ru-bpr-ntsv-ion-beam-recess, 2026-02-10_epo_shanghai-univ-citric-acid-cu-reduction-sog, 2026-09-21_semiconductorx_cmp-share-lam-sabre-correction, 2026-09-16_jsandwich_cucu-diameter-nonmonotonic-local-optimum, 2026-07-21_lam_sabre-3d-is-ecd-not-cmp, 2026-09-26_paper_dalian-cucu-bonding-review, 2026-09-26_patent_beijing-xinli-hybrid-bonding-dishing-activation, 2026-09-26_paper_ibm-amine-post-cmp-clean]
 related:
   - wiki/technologies/rdl.md
@@ -1863,3 +1863,45 @@ Intel **US20260182403A1**（2026-06-25）在 TGV 孔壁**主動長出氧化鋅�
 ⚠ UNT 篇**未給鈍化後的量化改善**（無腐蝕速率、HAST 小時、壽命倍數）。
 
 **來源**：[[sources/2026-09-29_imaps-dpc2026_nanoporous-silicon-capacitor-pdn]]、[[sources/2026-09-29_epo_intel-us20260182403a1-zno-nanowires-tgv]]、[[sources/2026-09-29_imaps-dpc2026_unt-cu-al-dual-metal-passivation]]
+
+## 2026-10-01 新增：混合接合的用途清單新增「接合被動元件」
+
+**IBM US20260107832A1**（族 99436783，2026-04-16，發明人 ZOU LIJUAN／LI TAO／XIE RUILONG／ZHANG JINGYUN／GLUSCHENKOV OLEG）：
+
+> 背面深溝槽電容**先行預製（prebuilt）**，再以**混合接合製程**整合於半導體裝置之**背面**；該界面含**介電—介電接合**與**金屬—金屬接合**。
+
+同名另案 **US20260018508A1**（族 **98388952**，2026-01-15）：⚠ **族號不同故非同族續案**，為兩個獨立族的同名案 ⇒ **IBM 於此主題有兩次獨立佈局。**
+
+並見 **TSMC US20260293628A1**（本輪）：**DTC 晶粒鍵合於 BSPDN 背面**（記憶體晶粒鍵合於正面）。
+
+### ⭐⭐⭐ 「prebuilt」與本頁論述軸的張力
+
+本頁既有混合接合記載的**對象**全為**邏輯—邏輯、邏輯—記憶體、晶圓—晶圓對準**，**論述軸為對準精度競賽**：
+
+| 來源 | 對準精度 |
+|------|---------|
+| AMAT × Besi Kinex（量產現況） | **100 nm @ 3σ**；2026 新機 **50 nm**；路線圖 **<25 nm** |
+| imec × EVG（W2W） | **200 nm／<40 nm overlay** |
+| CEA-Leti（D2W） | **1 µm** |
+
+本輪兩件（IBM、TSMC）把混合接合用於**電容整合**。**電容對對準精度的要求遠低於 I/O**——電容只需電源／地兩個電位的連接，不需逐一對應的細節距 I/O 陣列。
+
+➜ **新開放問題（⭐⭐⭐）**：**接合被動元件是否成為混合接合良率門檻遠低的入門市場？**
+  若是，則「混合接合受對準精度限制」這一論述須加上**應用分層**：
+  **I/O 接合受 pitch 支配；被動元件接合可能受完全不同的因素（面積、翹曲、熱、接合面潔淨度）支配。**
+➜ 這同時給 2026-09-18 之「D2W pitch 受限於對準精度」**推翻結論**一個新的側面：若存在一類對 pitch 不敏感的接合應用，則對準精度路線圖的商業意義須重新界定。
+➜ ⚠ **本輪僅記為開放問題，不改寫上表任何既有對準數字。** 兩件專利摘要**均未給對準規格**。
+
+### ⭐⭐⭐ 「prebuilt」是本輪語義上最關鍵的單字
+
+它明示電容**先獨立製造、再接合**，而非與主晶粒共製。本輪四家五件 DTC 案中，**只有 IBM 本件在摘要層級直接寫出這一點**。
+➜ 支撐本輪跨頁論述：「**去耦電容正從『主晶粒／中介層裡的一塊區域』變成『獨立製造、再被接合或埋入的物件』。**」
+  完整證據鏈見 [[concepts/power-delivery-packaging]] 與 [[sources/2026-10-01_dtc-independent-object-crosscut]]。
+
+### 2026-10-01 新增空缺
+
+- [ ] ⭐⭐⭐ 以混合接合整合電容所需之對準規格（是否遠寬於邏輯接合的 50–100 nm？）
+- [ ] ⭐⭐ IBM 預製電容的基材（矽？玻璃？）與其 CTE 對晶背接合應力的影響
+- [ ] ⭐⭐ TSMC US20260293628A1 之接合方式是否為混合接合；pad pitch
+- [ ] ⭐⭐ US20260018508A1（族 98388952）與 US20260107832A1 的技術差異
+- [ ] ⭐ 晶背同時放 DTC 與背面供電網路時的面積競爭

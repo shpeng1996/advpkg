@@ -3,7 +3,7 @@ title: "美光科技 / Micron Technology"
 category: entity
 tags: [memory, HBM4, DRAM, NAND, CapEx, Virginia, Idaho, New-York, onshoring]
 created: 2026-05-03
-updated: 2026-09-27
+updated: 2026-10-01
 sources: [2026-09-27_semieng_chip-week-156-india-tata-besi-izmo, 2025-12-18_trendforce_micron-capex-hbm4, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-03-17_trendforce_gtc2026-key-takeaways, 2025-08-05_3dincites_iftle636-samsung-lsb-micron-virginia, 2026-01-23_trendforce_hbm4e-development, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-26_semieng_chip-week-144, 2026-06-25_thelec_micron-q3-fy2026-record, 2026-07-06_trendforce_micron-hiroshima-fab-hbm-1gamma, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-10_tomshardware_micron-250b-us-investment-globalwafers, 2026-07-10_semieng_chip-week-146, 2026-08-21_semieng_chip-week-152]
 related:
   - wiki/technologies/hbm4.md
@@ -323,3 +323,20 @@ OpenAlex 將 John H. Lau 兩篇 JMEP 2026-09-15 綜述（Cu-Cu 混合接合、�
 
 ➜ 屬**主流伺服器 DRAM 以 TSV 堆疊**，而非 HBM ➜ 與 2026-07-15「V-Die Mosaic 垂直記憶體」同屬「**TSV 外溢至非 HBM 記憶體**」的趨勢。
 ➜ ⚠ **無 TSV 尺寸、層數或 pitch 數據。**
+
+## 2026-10-01 新增：競標 JDI 茂原廠落敗（動機不明，列管）
+
+Tech Times（2026-09-30）：**Shinko Electric 取得 Japan Display 茂原工廠**（千葉縣，總用地約 373,000 m²、無塵室約 179,000 m²、可用電力 **>100 MW**），用於**玻璃芯基板**生產；交割 2027-03 底、投產 FY2028。
+**競標落敗者含 Micron Technology**、資料中心業者，及至少一家其他半導體／資料中心標的方。
+
+➜ ⚠ ⭐⭐ **Micron 爭取同一座面板廠的動機不明**，列為空缺。可能用途：
+  1. **HBM 後段**（茂原鄰近 Micron 廣島？⚠ 地理關係未查，不得假設）
+  2. **玻璃中介層／玻璃基板**
+  3. 純廠房與電力資產（>100 MW 對記憶體後段亦有價值）
+➜ **若為玻璃相關，則「記憶體廠也在評估玻璃路線」是本 wiki 全新的方向。** 既有玻璃押注者全為代工／IDM／基板／玻璃廠，**無任何記憶體廠**。
+➜ ⚠ 本件為二手報導（Tech Times），且 Micron 未公開表態；**不得由競標行為推論其技術路線**。追蹤方式：Micron 對玻璃基板或玻璃中介層的任何公開表態、專利或設備採購。
+
+### 2026-10-01 新增空缺
+
+- [ ] ⭐⭐ Micron 競標茂原廠的用途（HBM 後段？玻璃？純廠房／電力？）
+- [ ] Micron 是否有玻璃基板／玻璃中介層相關專利（下輪 OPS `pa="micron" and ti,ab="glass"` 候選檢索式）

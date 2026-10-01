@@ -3,7 +3,7 @@ title: "先進封裝地緣政治 / Geopolitics of Advanced Packaging"
 category: concept
 tags: [geopolitics, US-China, CHIPS-Act, supply-chain, chiplet, NAPMP, export-control, glass-substrate, standards-war, BOE, Corning, Absolics]
 created: 2026-04-26
-updated: 2026-09-27
+updated: 2026-10-01
 sources: [2026-09-27_semieng_chip-week-156-india-tata-besi-izmo, 2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-08-10_trendforce_skhynix-chongqing-sale-global-reset, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-23_trendforce_china-osat-sj-semiconductor-ipo, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-08-05_3dincites_iftle636, 2026-03-23_trendforce_musk-terafab-tsmc-packaging, 2026-04-22_trendforce_sk-hynix-indiana-us-plant, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-16_nokia_pennsylvania-atp-expansion, 2026-06-30_amkor-ir_arizona-7billion-groundbreaking, 2026-06-30_digitimes_us-packaging-capacity-10pct-2032, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-10_tomshardware_micron-250b-us-investment-globalwafers, 2026-07-10_semieng_chip-week-146, 2026-07-14_trendforce_huawei-baidu-npo-msa, 2026-08-21_semieng_chip-week-152, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_asi-1um-hdbu-substrate]
 related: [wiki/concepts/advanced-packaging-market.md, wiki/entities/amkor.md, wiki/entities/ase-group.md, wiki/technologies/ucie.md]
 ---
@@ -779,3 +779,45 @@ Chip Week 156 同期出現**兩條獨立的印度先進封裝條目**（[[source
 ➜ **本 wiki 既有節點為美、台、韓、日、中、東南亞（馬來西亞／越南／新加坡）；印度應新增為第七個獨立節點。**
 ➜ **Besi 是設備側切入點** —— 與馬來西亞（Lam、Intel EMIB）、越南（Samsung × Amkor）的型態一致：**新興節點的進入路徑都是「既有設備商 + 當地集團」，而非本土設備自主。**
 ➜ ⚠ Tata × Besi 為**意向層級**（無金額、產能、時程）；⚠ Izmo 的量產宣稱**無第三方驗證**，依 2026-09-21 規範**不得記述為既成產能**，僅列觀察名單。
+
+## 2026-10-01 新增：CHIPS 法案在基板「技術路線」上的下注；日美兩條大面積方形基板路線
+
+### ⭐⭐ 美國：CHIPS 法案資助有機／模封核心基板（SHIELD USA）
+
+**`10.4071/001c.167741`**（IMAPS DPC 2026，2026-08-19，**首次公開技術進度**）：
+**SHIELD USA** = Substrate-based Heterogeneous Integration Enabling Leadership Demonstration for the USA，由 **CHIPS and Science Act** 資助。
+目標：**模封核心（molded core）基板**，以 fan-out 技術製造，核心內嵌主動與被動元件（電感、電容）、晶粒與 **VIB**（AR>15、CD ≤20 µm），雙面 RDL。
+原文自述願景：「**enable a domestic ecosystem of new materials, processes, equipment and designs**」，於一系列 demonstrator 與 product exemplar 上驗證。
+
+➜ ⭐⭐ **本 wiki 首次看到 CHIPS 法案的封裝投入不只是產能，而包含「基板結構的技術路線選擇」。**
+  既有 CHIPS 相關記載以產能、人才、設備在地化為主。
+➜ ⭐⭐ **且其選擇與日本相反**：本 wiki 既有下一代核心基板論述以**玻璃**為主（Intel、Corning、AGC、Absolics、Samsung、Amosense、Shinko）；SHIELD USA 選**有機／模封**。
+  ➜ **「玻璃是唯一下一代核心」的隱含假設須加上對照項：存在一條國家資助的競爭路線。**
+➜ ⚠ 摘要為預告式語法（"will present／will be discussed"），**參與機構名單未列**；第一作者 Georgios Dogiamis 長期為 Intel 封裝研究代表人物，但**不得逕認本計畫為 Intel 主導**。
+
+### ⭐⭐⭐ 日美兩條路線都指向大面積方形基板，但材料相反
+
+| | 日本（Shinko） | 美國（SHIELD USA） |
+|---|---|---|
+| 載體 | **玻璃芯** | **模封核心（有機）** |
+| 取得方式 | **收購 JDI 茂原面板廠**（373,000 m²、無塵室 179,000 m²、**>100 MW**） | **CHIPS 法案資助**之材料／製程／設備生態系 |
+| 時程 | 交割 2027-03、投產 **FY2028** | 技術進度首度公開（2026-08） |
+| 共同點 | **大面積方形基板** | **大面積方形基板** |
+
+➜ ⭐⭐⭐ **新論述**：「**玻璃基板偏好大面積方形基板，與面板廠的廠房與設備同型，故面板產業的衰退資產成為先進封裝的現成基礎設施。這是一次結構性的資產轉移，而非單純的財務交易。**」
+  ➜ **邊界外擴第五型態**（前四型態見 2026-09-29／30）：**面板廠的廠房與電力資產進入先進封裝。**
+  ➜ 日本的路徑是**資產轉用**；美國的路徑是**生態系補助**。**兩者要解的是同一個幾何問題（方形、大面積），但手段分別是存量資產與新建生態。**
+
+### ⭐⭐ 基板供給時程的地緣含意
+
+**Ibiden：FY2027（有機 ABF、既有廠區擴 Cell6、約 5,000 億日圓／三年）**
+**Shinko：FY2028（玻璃芯、收購面板廠）**
+➜ **2026 年內日系兩大基板廠皆無新增供給上線** ⇒ 2026 年的 AI 封裝基板緊俏**無供給側解方**，只能靠良率爬坡（EMIB 基板 45% → 60% @1Q27）。
+➜ ⚠ 競標茂原廠落敗者含 **Micron**；若其動機與玻璃相關，則**記憶體廠亦在評估玻璃路線**（本 wiki 全新方向，見 [[entities/micron]]）。
+
+### 2026-10-01 新增空缺
+
+- [ ] ⭐⭐ SHIELD USA 的參與廠商名單與分工；與 Intel 的關係
+- [ ] ⭐⭐ Micron 競標茂原廠的用途
+- [ ] ⭐ FICT（富士通系高階 PCB）取得茂原廠西側 232,000 m² 的用途
+- [ ] ⭐ SHIELD USA 是否有對應的設備與材料在地化清單（「domestic materials」具體為何）

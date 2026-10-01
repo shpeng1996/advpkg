@@ -3,7 +3,7 @@ title: "TSV — Through-Silicon Via / 矽穿孔"
 category: technology
 tags: [TSV, HBM, interposer, 3D-IC, CoWoS, manufacturing, backside-power, advanced-packaging, radiation, redundancy, reliability]
 created: 2026-08-10
-updated: 2026-09-30
+updated: 2026-10-01
 sources: [2026-09-27_wuhanuniv_cn121548325a-tgv-micro-nano-anchor-molecular-bridging, 2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-27_semieng_chip-week-156-india-tata-besi-izmo, 2026-04-22_semieng_tsv-complexity-manufacturing-bottleneck, 2026-08-21_semieng_chip-week-152, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-08-21_scirep_copper-oxide-reduction-ar-h2-pulsed-plasma, 2026-06-08_irtnanoelec_d2w-hybrid-bonding-1um-pitch, 2026-03-13_kaneka_jp2026047137a-glass-core-polyimide-quantified, 2026-08-10_screp_low-k-organic-buffer-tgv-cu-metallization, 2026-08-04_jmrt_vacuum-assisted-void-free-cu-fill-tgv, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring, 2026-09-26_patent_zhuhai-tiancheng-dual-depth-tsv-silicon-bridge, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_patent_er-eng-glass-interposer-dual-carrier, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth]
 related:
   - wiki/technologies/hbm4.md
@@ -603,3 +603,24 @@ TGV >110 GHz（1.64×）**，皆為實作量測，支援 128 GBaud。
 - [[sources/2026-09-30_semieng_bspdn-thermal-dissipation-barriers]]
 - [[sources/2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery]]
 - [[sources/2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth]]
+
+## 2026-10-01 新增：深寬比不是唯一路徑（VIB 的側翼挑戰）
+
+**SHIELD USA**（`10.4071/001c.167741`，2026-08-19）之 **VIB（Vertical Interconnect Block）** 原文明言：
+提供一種「**不受深寬比限制**」的垂直互連，**有別於傳統 through-mold via、機械／雷射鑽孔 via，以及 TSV 或 TGV**。
+做法：橫向製作多層佈線 → 切割 → **旋轉 90 度** → 嵌入模封核心。CD **≤ 20 µm**，AR **> 15**，可非直線圖形。
+
+➜ ⭐⭐⭐ **本頁（及 [[technologies/glass-substrate]]）之深寬比競賽論述取得第一個側翼挑戰者。**
+  本輪另兩篇 TGV 論文（中科院微電子所 NBO／側壁粗糙度；KAIST 石英 vs D263 參數）是在**縱向製程內部**優化；VIB 主張**繞過縱向製程**。
+➜ **新論述（⭐⭐⭐）**：「**垂直互連不必垂直地做出來；把橫向結構旋轉，可以把縱向製程的限制換成橫向製程的限制。**」
+➜ ⚠⚠ **不得判定優劣。** VIB 需切割、旋轉、置放三個額外步驟，而其 **throughput、對準精度、良率全部未給**。
+  本 wiki 僅記為「**存在一條繞過深寬比的路徑**」，並列保留兩個方向，不判定收斂。
+
+### 旁及：TSV vs TGV 熱界面
+
+本輪 OpenAlex glass 軌命中 `10.1088/1361-651x/ae93e6`（華中科技大學，**已在庫**）：TSV 中 **Cu/Ta 異質結構之界面熱阻**。列為既有記載之延續，本輪無新增。
+
+### 2026-10-01 新增空缺
+
+- [ ] ⭐⭐⭐ VIB 的 throughput、置放對準精度、良率、電性與熱性能
+- [ ] ⭐⭐ VIB 與 TSV／TGV 在「單位垂直通道成本」上的對照（本 wiki 兩側皆無此數字）

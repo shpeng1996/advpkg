@@ -3,7 +3,7 @@ title: "先進封裝熱管理 / Thermal Management in Advanced Packaging"
 category: concept
 tags: [thermal-management, liquid-cooling, 3D-IC, CoWoS, heat-dissipation, TIM, ECTC-2025, GaN, power-delivery, co-design, patent-signal, delamination]
 created: 2026-04-25
-updated: 2026-09-30
+updated: 2026-10-01
 sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2025-12-01_semiengineering_thermal-management, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-02_trendforce_samsung-hbm5-computex2026, 2026-05-21_semieng_hi-roadmap-nature-paper-intel, 2026-08-13_semieng_1mw-rack-debate-thermal, 2026-04-27_semieng_semiconductor-materials-misbehave, 2026-08-21_trendforce_chip-packaging-heat-ai-bottleneck-cpo-stco, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_arxiv_umn-multi-kw-power-delivery-3d-hi, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier]
 related:
   - wiki/technologies/cowos.md
@@ -896,3 +896,42 @@ UMN（arXiv 2609.24904）：系統效率目標 **≥90%**（Stage 1 97–98%、S
 - [[sources/2026-09-30_semieng_bspdn-thermal-dissipation-barriers]]
 - [[sources/2026-09-30_arxiv_umn-multi-kw-power-delivery-3d-hi]]
 - [[sources/2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier]]
+
+## 2026-10-01 新增：供電轉換熱取得絕對比例；晶背面積競爭
+
+### ⭐⭐⭐ 第三類熱源（供電轉換熱）首個絕對比例：約 40% 的總負載功率
+
+arXiv 2606.28837（UIC × Georgia Tech × Penn State，2026-06-27）：
+**封裝 PDN 損耗可耗散為熱者達總負載功率之約 40%**；傳統方案系統端到端效率 **<70%**，提出之 DVPD 達 **84%**（48 V→1 V @1 kW）／**87.6%**（75% 面積利用、1–50 kW 負載範圍）。
+
+➜ **1 kW 晶片在最壞情況下約有 400 W 的熱來自供電路徑本身，與運作熱同量級。**
+➜ 2026-09-22 論述 7 之兩類熱源為**運作熱**與**製程熱**；2026-09-30 論述 18 新增**第三類＝供電轉換熱**，但當時只有定性敘述。
+➜ **本輪使該類熱源第一次可量化** ⇒ 2026-09-30 論述 1（供電與熱是同一預算的兩端）從結構性主張**升格為可量化主張**：
+  **兌換率在晶粒層是幾何（移除基板），在封裝層是效率，而效率缺口的絕對值已知（約 30 個百分點，最壞情況下約 40% 負載功率成為熱）。**
+➜ ⚠「可達（up to）」為**上界非典型值**；條件（哪一種 PDN、哪一電流密度下）未給，列為⭐⭐⭐空缺。
+➜ 定性前身：SemiEng（2025-06，本輪收錄，⚠ 舊口徑）「**每一毫歐的電阻都換成瓦數的熱**」。
+  ⚠ 此一對照本身有價值：該論述在業界已流通一年以上，本 wiki 於 2026-09-30 才建立，**而其絕對值到 2026-10 才取得**。
+
+### ⭐⭐ 晶背的面積競爭：BSPDN 與 DTC 晶粒
+
+**TSMC US20260293628A1**（本輪）：第一晶粒具 **BSPDN**；**DTC 晶粒鍵合於背面之 PDN 之上**；**記憶體晶粒鍵合於正面**。
+➜ **同一顆主晶粒兩面都被功能化。**
+➜ ⚠ **晶背散熱路徑被元件佔用。** 本 wiki 已記 imec 之 **BSPDN 峰值溫度 +14 °C**；本件是否使該代價**疊加**，**本 wiki 無任何來源處理**。
+➜ 2026-09-30 已列管空缺「**Foveros 3D 堆疊的熱代價與 BSPDN 的熱代價是否疊加、如何疊加**」——**本件使該空缺更急迫**，且新增一個疊加項（鍵合於晶背的被動元件晶粒）。
+
+### ⭐ TIM：材料值不等於接合後有效值
+
+本輪 SemiEng（2025-06，⚠ 舊口徑）：**銦合金 TIM 導熱率約 80 W/m·K**。
+本輪 Track C 之 TIM 綜述（`10.1002/admt.71344`，SNU × UIUC，2026-09-24，**未收錄為 raw**）主張：
+**bulk 或 effective 導熱率的提升，不會等比轉換為接合後（bonded）的熱性能**；真實接頭的傳熱由三個耦合設計域支配——複合材內部傳輸、接合界面接觸與 bondline 行為、製程定義的路徑架構。
+
+➜ **80 W/m·K 是材料值，不是接合後有效值。** 本 wiki 記載時必須標明，否則會重複該綜述所批評的錯誤。
+➜ 與 2026-09-30 論述 19（「量到的值無法被下游工具消費」）同型：**量測值與可用值之間有一道轉換損失。**
+
+### 2026-10-01 新增空缺
+
+- [ ] ⭐⭐⭐ 「約 40% 負載功率成為 PDN 熱」的條件（哪一種 PDN？哪一電流密度？）
+- [ ] ⭐⭐⭐ 晶背同時承載 BSPDN + DTC 晶粒時的熱代價是否與 imec +14 °C 疊加
+- [ ] ⭐⭐ 「調節器越靠近負載」與「轉換熱越靠近熱點」的取捨曲線（2026-09-30 列管，本輪未進展）
+- [ ] ⭐ 銦合金 TIM 的接合後有效熱阻（而非 bulk 導熱率）
+- [ ] ⭐ `10.1002/admt.71344` 全文之三設計域量化判準（列為下輪候選）

@@ -4249,3 +4249,38 @@ an（2028–2029 量產世代）為 CoPoS 最可能的首批量產客戶——�
   7. 📌 **既有未結清項延續（本輪無進展）**：`10.1016/j.mtla.2026.102903`（Binghamton×IBM 電阻變異 σ/range——連續第三輪）、`10.1016/j.mssp.2026.111165` 全文（TGV 陣列力學，須「幾層襯層／各層多厚／各層負責哪一種失效」）、Lam「~100×100 mm」原始量測邊界、Samsung US20260247940A1 目標產品線、JCET 韓國團隊產能佐證、Silicon Box 第三方驗證、PHB 量化數據、16-Hi HBM4 對賭驗證、AMAT 混合接合 CMP 市占、Amkor 使用誰的 TCB 鍵合頭、`info-wmcm.md` 被截斷句子重建、Samsung 要求 Besi 做的機台設計變更、TEL 140 nm 載具電性結果、2026 年濺鍍側深寬比實績、2026 年 Cu recess 產線 dishing 分布、Intel JP2026108527A 之 US/EP 同族、北京芯力 CN121487634A 請求項全文、玻璃中介層薄化的破片率／良率代價、玻璃體內直寫波導的 dB/cm、Lujan 310×310 mm PLP 成本分析淨結論、**Corning「small via diameter」之頂／腰／底（提問方式已三度修正，仍無進展）**、Intel 第三襯層（100–250 nm）之材料與功能、ZnO 奈米線在 B-HAST／TCT 下之穩定性、疊置波導重疊長度與耦合損耗、堆疊橋層數上限、FAU 40% 是否隨通道數縮放、ASE FOCoS 12 層對應線寬、UCIe-Advanced「+40%/−15%」基準線、OCS 是否計入先進封裝口徑、Meta「9,000 萬小時」口徑、**D2W 陣營對 W2W 落差的公開表態（仍為零）**。
   8. 📌 **降級項**：**`10.1038/s41928-026-01681-6`（Nature Electronics CPO 綜述）** ——第三輪仍無摘要、無 OA PDF，依 2026-09-28 規則**降級為「暫不可得」，停止列為高優先**；替代途徑為 `10.1117/1.apn.5.3.030101`（Advanced Photonics Nexus 之 CPO 綜述，本輪已見未採，⚠ 非 OA）與本輪已採之上海交大篇。**`10.1016/j.jallcom.2026.191266`（Ru/SiO₂）維持 2026-09-29 之降級狀態。**
   9. **lint 待辦**：**沿用且優先序再上調**：`glass-substrate.md` 本輪再增一大段（矽烷第三域 + 三種哲學可串聯 + 多層玻璃芯 + 液態金屬 + 玻璃核心＝被動元件機殼 + TGV 110 GHz），**已逾 1,720 行**；**2026-09-29 所建議之六段重組應加入第七段「玻璃核心作為元件載體」，且建議本輪即執行**；`hybrid-bonding.md` **本輪未觸及，維持 1,950 行**，重組優先序不變；`emib.md` 本輪新增五大段（良率軸、橋的第六/第七維度、EMIB-T＝供電、專利賽局），**建議檢查與 `technologies/cowos.md` 新增之「三軸比較表」是否重複**；**新建之 [[concepts/power-delivery-packaging]] 本輪自 87 行增至 235 行**，⭐ **應檢查與 `thermal-management.md`（本輪亦增一大段）、`tsv.md`（BSPDN 段）、`entities/infineon.md`、`entities/intel.md` 之間的重複敘述——本輪同一組數字（+14 °C／−20~30%／>200 W／3 A/mm²／µΩ 三階）在五個頁面出現，是本 wiki 目前最嚴重的重複風險**；**⭐ 建立「化學／機制橫向索引」自建議升為必須**（矽烷已橫跨三域）；**「已入庫但無獨立頁且未列管」全域掃描連續第三輪未執行，延續**；`raw/_titles.tsv` 之重複 raw 檔 **19 組**（本輪未新增）待人工處置。
+
+## [2026-10-01] collect | 每日自動蒐集 — 先進封裝最新動態
+- 搜尋查詢數：新聞 8 組 / 專利 4 組 / 論文 3 組
+- 成功抓取：15 篇（articles 5, patents 5, papers 5, reports 0）
+- 失敗/跳過：6 篇（已收錄 1〔atlaspcb TSMC CoPoS 2026-05，2026-09-15 已在庫〕、低相關/無數值 3〔sarasmicro.com Viewpoint 2026 全篇無數值且 2025-12 過舊、marklapedus substack Saras 訪談無日期無規格、semiengineering 電磁遷移篇已在庫〕、已在庫重複 2〔trendforce 2026-08-18 Shinko 22 層、trendforce 2026-07-07 混合接合時程〕）
+  - 另：OpenAlex 三軌共 75 筆候選中，**見而未採 7 筆**並列入下輪候選：`10.1002/admt.71344`（TIM 多維熱路徑綜述，SNU×UIUC，已用於 thermal-management 之對照論證但未建 raw）、`10.1038/s41378-026-01399-7`（北大 Ka 波段玻璃 fan-out，RDL 粗糙度 −97%／<0.25 dB/mm，已用於 rdl.md 旁及）、`10.3390/electronics15174023`（Gachon 片上 LDO for HBM 綜述）、`10.1016/j.mssp.2026.111205`（低溫銲料綜述）、`10.34139/jscs.2026.16.3.1`（IEC 63567-4 雷射切割尺寸精度標準草案，與 test-metrology 主題相關）、`10.1109/jssc.2026.3713507`（**0.73 A/mm³ 體積型 IVR，JSSC——與 A/mm² 障壁直接對軸，但 OpenAlex 無摘要，依規則「無摘要則跳過」未採，⭐ 列為下輪以 WebSearch 直取全文之高優先項**）、`10.1007/s00170-026-19077-3`（Intel 馬來西亞 Cu–Cu 熱機械耦合，無摘要）
+- 資料源狀態：WebSearch ACTIVE ✓ | EPO OPS ACTIVE ✓（4 次檢索 + 0 次明細呼叫，發明人與 IPC 均由檢索回應直接取得，總呼叫 5 次含 auth，遠低於 10 次上限）| OpenAlex ACTIVE ✓（⚠ 見下方「環境異常」）
+- 新增 wiki 頁面：18 頁
+  - `wiki/entities/ibiden.md`（⭐⭐⭐ 2026-09-30 列為⭐最高優先缺頁；建頁理由：取得其官網投資者公告，為本 wiki 第一個 Ibiden 一手數字）
+  - `wiki/entities/shinko.md`（⭐⭐⭐ 同為⭐最高優先缺頁；建頁理由：同日兩個獨立管道——茂原廠收購新聞＋US20260293748A1）
+  - `wiki/sources/2026-10-01_dtc-independent-object-crosscut.md`（⭐⭐⭐ 橫向綜整頁；15 筆中 9 筆獨立指向同一結構轉向）
+  - `wiki/sources/` × 15（2026-10-01_* 其餘全部）
+- 更新 wiki 頁面：15 頁
+  - `wiki/concepts/power-delivery-packaging.md`（⭐⭐⭐ 新增整節：電容物件化證據表、頻域分層、電流密度供需兩側對照、供電轉換熱 ~40%、電容密度落點表、IBV 判準、面積稅層級相反、第零層＝導體材料、阻抗層設計自由度；13 項新空缺）
+  - `wiki/technologies/glass-substrate.md`（⭐⭐⭐ 材料選擇第二維度＝NBO、TGV 參數不可移植、偏振變數、玻璃層作為元件基材、核心層功能化不限玻璃、玻璃芯基礎設施量級；**已逾 1,830 行**）
+  - `wiki/entities/tsmc.md`（⭐⭐⭐ 本 wiki 首見 TSMC BSPDN 訊號；DTC 兩種形態；族號時序）
+  - `wiki/technologies/hybrid-bonding.md`（⭐⭐⭐ 用途新增「接合被動元件」＋對準精度應用分層開放問題）
+  - `wiki/entities/ibm.md`（⭐⭐⭐ 供電側首個訊號；"prebuilt" 語義）
+  - `wiki/concepts/thermal-management.md`（⭐⭐⭐ 供電轉換熱首個絕對比例；晶背面積競爭；TIM 材料值≠有效值）
+  - `wiki/technologies/foplp.md`（⭐⭐⭐ SHIELD USA 模封核心 + VIB）
+  - `wiki/entities/intel.md`（⭐⭐⭐ 玻璃層內 DTC；供電軸落點增至八個）
+  - `wiki/concepts/geopolitics-advanced-packaging.md`（⭐⭐⭐ CHIPS 在基板技術路線上的下注；日美兩條大面積方形基板路線）
+  - `wiki/technologies/emib.md`（⭐⭐⭐ 基板供給時點上界；良率與產能同落 2027）
+  - `wiki/concepts/advanced-packaging-market.md`（⭐⭐⭐ 兩個基板資本支出落點；電力維度新指標）
+  - `wiki/technologies/tsv.md`（⭐⭐⭐ VIB 側翼挑戰）、`wiki/technologies/rdl.md`（⭐⭐⭐ 橫向製程決定垂直解析度）
+  - `wiki/entities/infineon.md`（⭐⭐⭐ 3 A/mm² 取得需求側第二落點，成因仍未結清）
+  - `wiki/entities/samsung.md`（⭐⭐ 供電主題的學術管道首見）、`wiki/entities/micron.md`（⭐⭐ 茂原廠競標落敗列管）、`wiki/entities/resonac.md`（⭐ Saras 之 CCL 供應商）
+  - `wiki/index.md`（頁數 734→752、來源 670→686、新增 2 實體 + 16 來源條目）、`wiki/overview.md`（4 項結清/部分結清、26 條橫向論述、34 項新空缺、4 條新作業規範）
+- 主要新知識：**本輪 15 筆來源中 9 筆獨立指向同一結構轉向——去耦電容正從「主晶粒／中介層裡的一塊區域」變成「獨立製造、再被接合或埋入的物件」**（IBM 預製後混合接合於晶背、TSMC DTC 晶粒鍵合於 BSPDN 背面、Intel 埋入玻璃層本體、TSMC 基板內 DTC 區域、Shinko 有機核心貫穿腔體、SHIELD USA 模封核心嵌入、**Empower 已量產之基板內嵌矽電容 ≈2.3 µF/mm²**、Saras 核心內 tile）；且**每家把電容放在自己最強的那個介面上 ⇒ 載體選擇是既有製程優勢的投射而非技術收斂**。第二個主軸是**封裝層供電的邊界第一次有供需兩側獨立落點**：arXiv 2606.28837 之「目標 2–4 A/mm²、現有 <1」與 Infineon 之「>3 A/mm² 門檻」落在同一數量級（⚠ 截面口徑未對齊不得相減），同篇並給出**封裝 PDN 熱可達總負載功率約 40%**，使「供電轉換熱」這一第三類熱源首次可量化。第三個是**兩篇獨立 TGV 論文同時否定「TGV 製程可跨玻璃牌號移植」**，且中科院篇把側壁粗糙度歸因於玻璃網絡去聚合（NBO）而非製程參數 ⇒ **玻璃材料選擇是熱機械與可加工性兩個互不相干維度的妥協，本 wiki 此前只處理前者**。
+- 專利訊號：**四家五件深溝槽電容案（Intel 埋入玻璃層、TSMC ×2、IBM 預製後混合接合、Shinko 核心腔體）指向「電容物件化」**；其中 **TSMC US20260293628A1 為本 wiki 首見 TSMC BSPDN 訊號 ⇒ 修正 2026-09-30「Intel 一家覆蓋垂直供電軸」之論述**（⚠ 但 Intel PowerVia 已出貨、TSMC 僅為公開案，成熟度不同）；**IBM 以混合接合整合被動元件，開啟「對準精度門檻遠低的入門市場」這一新問題**；**TSMC 把 DTC 置於 PDN 外側（比 PDN 更遠離晶體管），與「越靠近負載越好」方向相反，為本輪最高優先新問題**。
+- ⚠ **環境異常（兩項，需人工處置）**：
+  1. **OpenAlex 自雲端容器呼叫全數 429**（"Insufficient budget... no API key, counts against the free daily budget shared by everyone on your network's IP address"，retryAfter 13872s）。依 spec §ERROR HANDLING 等待後重試仍失敗；改自使用者本機 shell（device_bash，獨立 IP）呼叫後**三軌全部 200 成功**，故 Track C 未降級。**根因：雲端容器出口 IP 為共用，OpenAlex 免費額度已被同 IP 其他用戶耗盡；且 `.env` 無 OpenAlex API key。** ➜ **建議：向 OpenAlex 申請免費 API key 並加入 `.env`（如 `OPENALEX_KEY`），並更新 `schedule.md` §4 之 curl 範例加上 `Authorization: Bearer` 或 `api_key` 參數**，否則本軌在雲端環境將持續不穩定。
+  2. **本機 Linux workspace（device_bash）於開場約 70 秒內三次回報 starting/unavailable**，期間改以 device_list_dir／device_stage_files 讀取 spec 與上下文；workspace 隨後恢復，其後全部檔案寫入均於本機完成。**本輪無因此遺漏任何步驟**，但若未來 workspace 持續不可用，則 spec 所假設的 bash heredoc 寫檔流程會失效。
+- ⚠ **spec 與實作漂移（需修 `schedule.md`）**：spec §QUALITY RULES 載「Never modify any file under `raw/` except `_collected_urls.txt`（append-only）」，但 `raw/_titles.tsv`（236 KB，689 行，標題正規化去重登錄檔）**實為歷輪 collect 持續 append 維護**（其 mtime 與 `_collected_urls.txt` 同步）。而 spec §4.3 所要求的「先以正規化標題去重，再以 DOI 去重」**必須依賴該檔**（`_collected_urls.txt` 僅存 ≤60 字元摘要，不含完整標題）。本輪已依歷輪慣例 append 5 筆論文（並於 `$HOME/_titles.tsv.bak` 留備份）。➜ **建議：將 `_titles.tsv` 明確列入 spec 的 append-only 例外清單，並在 §4.3 寫明其格式（normalized_title \t title \t url \t path）。**
+- ⚠ **git 未提交**：spec 末句要求「After the routine finishes, stage and commit all changes with today's date as the commit message」。本輪**未執行 git commit**——該操作會改寫使用者 repo 的版本歷史，且本次為無人看守的排程執行，故僅完成檔案寫入，commit 留待使用者確認。工作區變更已就緒（`git status` 可見 18 新檔 + 17 修改檔）。

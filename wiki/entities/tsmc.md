@@ -3,7 +3,7 @@ title: "台積電 / TSMC"
 category: entity
 tags: [foundry, advanced-packaging, CoWoS, SoIC, CoPoS, COUPE, CPO, InFO, WMCM, aLSI, MRAM, 3nm-pricing]
 created: 2026-04-24
-updated: 2026-09-29
+updated: 2026-10-01
 sources: [2026-09-27_tradingkey_copos-glass-validation-08mm-85x110mm, 2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-09-10_trendforce_tsmc-august-revenue-nt514b-record-fourth-month, 2026-09-10_trendforce_tsmc-taichung-14nm-p1-p2-2027-ahead-of-plan, 2026-04-24_initial-survey, 2026-04-13_trendforce_copos-pilot, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2025-12-18_trendforce_apple-wmcm-a20, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-01-20_trendforce_tsmc-wmcm-apple, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap, 2026-04-23_trendforce_tsmc-roadmap-a12-a13-no-high-na-euv, 2026-05-07_trendforce_tsmc-us-expansion-250b-arizona, 2026-05-12_focustaiwan_tsmc-capex-31b-arizona-20b, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-28_reuters_tsmc-kevin-zhang-energy-efficiency, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-09_financialcontent_tsmc-130k-cowos-wafers, 2026-06-09_digitimes_tsmc-cowos-soic-capacity-symposium, 2026-06-15_trendforce_tsmc-cowos-gap-narrowing-130k-200k-wafers, 2026-06-17_digitimes_amkor-tsmc-10year-arizona-deal, 2026-06-17_trendforce_tsmc-amkor-10year-arizona-advanced-packaging, 2026-06-10_tomshardware_tsmc-fab-expansion-roadmap-n2-cowos-soic, 2026-06-27_tmtpost_tsmc-cowos-capacity-targets-2026-2027, 2026-07-02_trendforce_samsung-sf2p-plus-tsmc-n2-roadmap, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-22_trendforce_tsmc-2027-price-hike-hpc, 2026-07-20_trendforce_tsmc-265b-arizona-intel-novalake, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-08-17_trendforce_tsmc-arizona-profit-663pct-1h26, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-26_paper_yole-advanced-packaging-market-ai-era]
 related:
   - wiki/technologies/cowos.md
@@ -502,3 +502,41 @@ TSMC 先進封裝研發總監 **James Chen**（SEMICON Taiwan 2026）首次官�
 4. **CoWoS 光罩路線圖（既有記載複核一致）**：5.5× 現況 → **2029 年 >14×**。
 
 **來源**：[[sources/2026-09-29_trendforce_advanced-packaging-market-trends-outlook]]、[[sources/2026-09-29_semieng_all-ai-interconnects-optical-5-years]]
+
+## 2026-10-01 新增：本 wiki 首見 TSMC BSPDN 訊號；DTC 的兩種形態
+
+### ⭐⭐⭐ US20260293628A1（族 101375944，2026-09-24）—— BSPDN + 鍵合 DTC 晶粒
+
+發明人：CHEN HSIEN-WEI、LIU MONSEN、LAI CHIEH-LUNG、LIN MENG-LIANG
+
+> 第一半導體晶粒具**背面供電網路（BSPDN）**；至少一額外功能晶粒於接合界面與之鍵合。功能晶粒可為**記憶體晶粒（鍵合於 PDN 相反側之正面）**，或／並且**深溝槽電容（DTC）晶粒（鍵合於背面之 PDN 之上）**。
+
+➜ ⭐⭐⭐ **本 wiki 首見 TSMC 的 BSPDN 專利訊號。** 既有 BSPDN 記載全為 **Intel（PowerVia 18A、PowerDirect 14A）** 與 **imec（峰值溫度 +14 °C）**。
+  ➜ **修正 2026-09-30 論述 3**：原記「垂直供電…**Intel 一家已覆蓋其中七個落點**」⇒ 該軸的**晶粒背面端已不再由 Intel 獨佔**。
+  ⚠⚠ **仍不得推論 TSMC 具備 BSPDN 量產能力**：Intel PowerVia 已於 18A **出貨**，TSMC 本件僅為 **2026-09-24 公開案**。**兩者處於不同成熟度階段。**
+➜ ⭐⭐⭐ **DTC 晶粒位於 PDN 的更外側（比 PDN 更遠離晶體管）**，與「電容越靠近負載越好」的既有直覺方向相反。
+  **新問題（本輪最高優先）**：面積驅動（晶背是唯一剩餘可用面積）還是物理驅動（BSPDN 低阻抗已使該段距離不再支配）？
+  詳見 [[concepts/power-delivery-packaging]]。
+➜ ⭐⭐ **「同一顆主晶粒兩面都被功能化」**（正面記憶體 + 背面 DTC）。與 2026-09-30 論述 6（橋可按 I/O 群組局部投放）同型但正交：前者是**平面上的粒度**，本件是**兩個面的分工**。
+➜ ⚠ 摘要語為 "may provide increased functionality... improved signal integrity and power integrity" —— **純定性，無任何數值**（接合方式、pitch、電容密度、節點、時程全部未揭露）。
+
+### ⭐⭐ US20260247985A1（族 88004239，2026-08-20）—— 基板內 DTC 區域，長條單元正交兩群
+
+發明人：KUO FU-CHIANG
+
+> DTC 區域含多個 DTC 單元，每單元含溝槽、第一／第二導電層與夾於其間之介電層。**每一單元為長條形；第一群沿第一方向水平延伸，第二群沿第二方向延伸。**
+
+➜ ⭐⭐ **本 wiki 首見 DTC 的「平面佈局」而非「溝槽剖面」成為專利標的。** 可能動機：抵銷單向長條結構之**應力各向異性**，或兼顧兩方向的電流路徑與接點密度。⚠ 摘要未說明動機。
+➜ ⭐⭐ **族號序列顯示 TSMC 此線研發最早**：本輪四家五件 DTC 案之族號 **88004239（本件）< 94125492（Intel 玻璃）< 98388952／99436783（IBM）< 101375944（TSMC BSPDN）< 101420684（Shinko）**。
+  ⚠ **此為由族號推論之時序，非申請日實證**；最早優先權日未查。
+➜ ⭐ **TSMC 同時押注兩種 DTC 形態**：可鍵合的獨立晶粒（US20260293628A1）與基板內的區域（本件）。
+➜ ⚠ 本件「substrate」**未界定**（矽中介層？載板？主晶粒？）⇒ **不得歸入 CoWoS 中介層論述，亦不得歸入載板論述**，直到請求項全文確認。
+
+### 2026-10-01 新增空缺
+
+- [ ] ⭐⭐⭐ DTC 晶粒置於 PDN 背面而非更靠近負載的動機
+- [ ] ⭐⭐ TSMC BSPDN 的製程節點與時程；與 N2／A16 的關係（本件未提）
+- [ ] ⭐⭐ 兩件 DTC 案的電容密度；是否為同一技術
+- [ ] ⭐⭐ US20260293628A1 之接合方式是否為混合接合；pad pitch
+- [ ] ⭐ 族 88004239 之最早優先權日；US20260247985A1「substrate」所指層級
+- [ ] ⭐ 長條單元正交排列的動機（應力？電流路徑？密度？）

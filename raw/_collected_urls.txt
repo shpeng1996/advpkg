@@ -700,3 +700,18 @@
 2026-09-30 | https://doi.org/10.4071/001c.167758 | raw/papers/2026-09-30_openalex_osaka-okuno-weak-micro-via-nanovoids-electroless-cu.md | Osaka weak micro-via: Pd segregation, 4.5/9.6% voids
 2026-09-30 | https://doi.org/10.4071/001c.166916 | raw/papers/2026-09-30_openalex_schrodinger-polyimide-cu-adhesion-molecular-simulation.md | Schrodinger Cu/PI peel 0.7 & 1.2 g/mm
 2026-09-30 | https://doi.org/10.1117/1.apn.5.3.036019 | raw/papers/2026-09-30_openalex_sjtu-high-density-cpo-tsv-tgv-interposers.md | SJTU TGV 110GHz vs TSV 67GHz, 128 GBaud
+2026-10-01 | https://www.ibiden.com/company/2026/02/notice-regarding-capital-investment-plan-for-high-performance-ic-package-substrates.html | raw/articles/2026-10-01_ibiden_500bn-yen-ic-substrate-capex-gama-cell6.md | Ibiden JPY500bn IC substrate capex, Gama Cell6
+2026-10-01 | https://www.globenewswire.com/news-release/2026/02/10/3235362/0/en/Empower-Introduces-High-Density-Embedded-Silicon-Capacitors-to-Advance-Next-Generation-AI-and-HPC-Performance.html | raw/articles/2026-10-01_globenewswire_empower-ecap-embedded-silicon-capacitors.md | Empower ECAP embedded Si cap ~2.3 uF/mm2 in MP
+2026-10-01 | https://www.powerelectronictips.com/embedded-passives-enhance-vertical-power-delivery/ | raw/articles/2026-10-01_powerelectronictips_saras-embedded-passives-vertical-power.md | Saras embedded passives 130-150um, 2-10MHz
+2026-10-01 | https://www.techtimes.com/articles/328324/20260930/shinko-beats-micron-japan-display-factory-glass-substrate-ai-push-begins.htm | raw/articles/2026-10-01_techtimes_shinko-mobara-jdi-fab-glass-core.md | Shinko buys JDI Mobara fab for glass-core, FY2028
+2026-10-01 | https://semiengineering.com/power-delivery-challenges-for-ai-chips/ | raw/articles/2026-10-01_semieng_power-delivery-challenges-ai-chips.md | AI power delivery: Mo -50% Rc, In TIM 80 W/mK
+2026-10-01 | EPO:94125492:JP2026053265A | raw/patents/2026-10-01_JP2026053265A_intel-glass-layer-stack-deep-trench-capacitor.md | Intel DTC embedded in bonded glass layer stack
+2026-10-01 | EPO:101375944:US20260293628A1 | raw/patents/2026-10-01_US20260293628A1_tsmc-bspdn-bonded-dtc-die.md | TSMC BSPDN with DTC die bonded on backside
+2026-10-01 | EPO:88004239:US20260247985A1 | raw/patents/2026-10-01_US20260247985A1_tsmc-dtc-region-orthogonal-units.md | TSMC DTC region, orthogonal elongated units
+2026-10-01 | EPO:99436783:US20260107832A1 | raw/patents/2026-10-01_US20260107832A1_ibm-backside-dtc-hybrid-bonded.md | IBM prebuilt backside DTC via hybrid bonding
+2026-10-01 | EPO:101420684:US20260293748A1 | raw/patents/2026-10-01_US20260293748A1_shinko-core-cavity-embedded-component.md | Shinko through-core cavity embedded component
+2026-10-01 | https://arxiv.org/abs/2606.28837 | raw/papers/2026-10-01_arxiv_uic-vertical-power-delivery-framework.md | UIC vertical power delivery: 2-4 A/mm2 target
+2026-10-01 | https://doi.org/10.4071/001c.167741 | raw/papers/2026-10-01_openalex_shield-usa-molded-core-vib-substrate.md | SHIELD USA molded core + VIB AR>15, <=20um
+2026-10-01 | https://doi.org/10.1016/j.mssp.2026.111206 | raw/papers/2026-10-01_openalex_tgv-sidewall-undulation-nbo-glass-network.md | TGV sidewall undulation from glass NBO content
+2026-10-01 | https://doi.org/10.1016/j.optlastec.2026.116355 | raw/papers/2026-10-01_openalex_tgv-quartz-d263-picosecond-polarization.md | TGV quartz vs D263: 7 vs 10ps, circ pol +16-18%
+2026-10-01 | https://doi.org/10.3390/electronics15163523 | raw/papers/2026-10-01_openalex_pdn-decap-via-codesign-genetic-algorithm.md | PDN via+decap co-design, fewer decaps (KU+Samsung)
