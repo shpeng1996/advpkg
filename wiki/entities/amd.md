@@ -3,8 +3,8 @@ title: "超微半導體 / AMD (Advanced Micro Devices)"
 category: entity
 tags: [fabless, CPU, GPU, chiplet, Zen6, EFB, I-CubeS, Milan, EPYC, MI-series, Venice, COMPUTEX2026, MI455X, CoWoS-L, SoIC, FOPLP]
 created: 2026-05-03
-updated: 2026-08-28
-sources: [2026-03-01_semianalysis_cpus-back-datacenter-2026, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-21_trendforce_amd-lisa-su-tsmc-10b-taiwan-packaging, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-07-24_semieng_chip-week-148]
+updated: 2026-10-02
+sources: [2026-03-01_semianalysis_cpus-back-datacenter-2026, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-21_trendforce_amd-lisa-su-tsmc-10b-taiwan-packaging, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-07-24_semieng_chip-week-148, 2026-10-02_epo_amd-us20260282956a1-silicon-bridge-decap, 2026-10-02_trendforce_cowos-l-mainstream-through-2028]
 related:
   - wiki/entities/tsmc.md
   - wiki/entities/samsung.md
@@ -82,3 +82,31 @@ AMD 在 AI GPU 市場是 NVIDIA 的主要挑戰者（Instinct MI 系列），但
   - **Zen 7 規格**：16 核心/CCD；3D V-Cache（L3 最高 224MB/CCD）；FP512；嵌入式 AI 加速器；IPC +15–25%（其中 ~8pp 來自快取）
   - **AMD 透過 Parade Technologies 開發下世代 ASIC 互連晶片**（6nm/12nm，已進入試產）
   - Lisa Su 親訪 PTI，確認 PTI 在 AMD 封裝策略中的核心供應商地位
+
+## 2026-10-02 新增：AMD 首次以自有申請人進入橋的排他權層 ★★★
+
+**US20260282956A1「CHIP PACKAGE WITH SILICON BRIDGE」**（族 **101296687**，公開日 **2026-09-17**，CPC 含 **H10W70/618**）
+**發明人**：Deepak Vasant Kulkarni、Alan D. Smith、**Raja Swaminathan**、Manish Dubey、Kaushik Mysore
+
+**結構**：
+- 多枚矽橋**同層**置於基板上，電性與機械性皆耦合至基板；**RDL 疊於橋上**；邏輯元件（含一或多顆 compute die）與記憶體堆疊再置於 RDL 之上、彼此相鄰。
+- **橋內含記憶體控制器** ⇒ 橋承載**主動邏輯**。
+- **至少一枚橋內含多個去耦電容** ⇒ 橋成為**電容載體**。
+
+➜ ⭐⭐⭐ **本 wiki 對 AMD 橋式封裝（EFB）的認識此前全部來自 ASE 合作之二手報導；本件是第一個 AMD 自有一手專利。**
+➜ ⭐⭐⭐ **為 [[technologies/emib]] 的「橋的維度」軸新增兩個維度**（橋是否承載主動邏輯／被動元件），且 AMD 同時在兩者落點。
+➜ ⭐⭐⭐ **為 [[concepts/power-delivery-packaging]] 之「去耦電容物件化」論述提供第八個載體，且是唯一位於中介層平面內、同時服務兩顆晶粒的位置。**
+➜ **把記憶體控制器放進橋**，意味著 HBM/記憶體介面的實體位置從 compute die 移到橋上 ⇒ 與 **Marvell Custom HBM 之「HBM PHY 佔地 −60%」**（本輪 SemiAnalysis）**方向相同、手段不同**：Marvell 搬到 base die，AMD 搬到橋。⚠ **此對照為本 wiki 歸納，兩件無任何共同來源。**
+
+⚠⚠ **限制**：
+- **全篇無量化值**（無 pitch、無電容密度、無層數、無面積）⇒ **不得與 Intel EMIB-T 橋內 MIM 500 fF/µm² 比較**，僅能並列為「兩家都把電容放進橋裡」。
+- **2026-09-17 公開之申請案，非量產能力**；**MI400／MI450（2H26 發表）是否採用此結構無任何佐證。**
+
+*Source: [[sources/2026-10-02_epo_amd-us20260282956a1-silicon-bridge-decap]]*
+
+### 2026-10-02 新增空缺
+
+- [ ] ⭐⭐⭐ AMD 橋內去耦電容的密度與面積佔比
+- [ ] ⭐⭐⭐ 橋內記憶體控制器的實作層級（完整控制器或僅 PHY？）與對 compute die 面積的節省量
+- [ ] ⭐⭐ MI400／MI450 的實際封裝結構（CoWoS-L？EFB？本件結構？）
+- [ ] ⭐⭐ AMD 其他橋相關家族（下輪以 `pa="advanced micro devices" and cpc="H10W70/618"` 檢索）

@@ -3,8 +3,8 @@ title: "NVIDIA Corporation"
 category: entity
 tags: [fabless, GPU, AI-accelerator, HBM4, CoWoS, SoIC, Rubin, Feynman, NVL576, CPO, Spectrum-X, Constellation]
 created: 2026-05-03
-updated: 2026-09-29
-sources: [2026-05-24_techtimes_nvidia-computex2026-cowos, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-03-18_trendforce_nvidia-rubin-feynman-soic, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-06_trendforce_google-tpu-cautious-adoption-nvidia, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-06-01_trendforce_nvidia-vera-rubin-tsmc-20pct-revenue, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-19_techtimes_vera-rubin-hbm4-suppliers, 2026-06-14_digitaltrends_tsmc-copos-glass-temporary-carrier, 2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b, 2026-07-27_trendforce_presscenter_cpo-switches-nvidia-broadcom-coupe]
+updated: 2026-10-02
+sources: [2026-05-24_techtimes_nvidia-computex2026-cowos, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-03-18_trendforce_nvidia-rubin-feynman-soic, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-06_trendforce_google-tpu-cautious-adoption-nvidia, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-06-01_trendforce_nvidia-vera-rubin-tsmc-20pct-revenue, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-19_techtimes_vera-rubin-hbm4-suppliers, 2026-06-14_digitaltrends_tsmc-copos-glass-temporary-carrier, 2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b, 2026-07-27_trendforce_presscenter_cpo-switches-nvidia-broadcom-coupe, 2026-10-02_trendforce_nvidia-glass-substrate-2028-taiwan, 2026-10-02_trendforce_cowos-l-mainstream-through-2028]
 related:
   - wiki/entities/tsmc.md
   - wiki/entities/sk-hynix.md
@@ -236,3 +236,32 @@ related:
 ➜ 對照 **Google TPUv7 pod（9,216 TPU／144 櫃、OCS 省電 40%）** —— 超大規模業者的光互連已有實測級數字。
 
 **來源**：[[sources/2026-09-29_semieng_all-ai-interconnects-optical-5-years]]、[[sources/2026-09-29_semiwiki_ofc2026-siph-cpo-oci-ocs-summary]]、[[sources/2026-09-29_3dincites-vyansa_advanced-packaging-foundation-next-gen]]
+
+## 2026-10-02 新增：首次出現在玻璃基板的需求端 ★★★
+
+TrendForce（2026-09-30）—— ⚠⚠ **全文為「reportedly」之產業傳聞，非 NVIDIA 官方確認；以下敘述須永久保留此限定。**
+
+- NVIDIA **正評估玻璃基板用於次世代 AI 晶片封裝**；合作夥伴包含德國設備商 **SCHMID**。
+- **要求韓、日、台三地基板廠「兩年內完成開發」** ⇒ **2028 年前採用有可能**。
+- 執行長**黃仁勳曾與 SK 集團會長會面**討論次世代半導體技術，**含玻璃基板**。
+- 產業自述警語：**製程良率與客戶認證仍是大規模商業化的關鍵障礙。**
+
+台系供應鏈動向（同一來源）：**AUO**（玻璃加工/RDL/金屬化，試產線規劃，**資本支出 NT$8.6B**）、**Innolux**（TGV，客戶驗證中，**620×670 mm**）、**Corning**（半導體級玻璃，與 AUO 共同展出 **510×515 mm**）、**GTOC**（熱成形，TGV，已提專利）、**TPK-KY**（TGV，**中壢試產線自 2026-09 初運作**）。
+
+➜ ⭐⭐⭐ **若傳聞為真，玻璃基板將自「供給端（基板廠／foundry）推動」轉為「最大客戶（NVIDIA）拉動」—— 動力學完全不同。** 本 wiki 既有玻璃需求端僅有 Intel（自用）與推測性的 AI 需求。
+➜ ⭐⭐⭐ **「兩年內完成開發」是本 wiki 第一個由終端客戶設定的基板開發期限。**
+➜ ⭐⭐ **NVIDIA 的封裝技術選擇版圖再擴一格**：既有 CoWoS-L（主力）、EMIB-T（評估/傳聞，2026-05）、FOPLP／CoWoP（透過 OSAT）、**玻璃基板（本輪新增，傳聞）** ⇒ **新論述：NVIDIA 對封裝載體採「多路並行評估」而非單押。** ⚠ 各路進度與承諾程度完全不同，**不得並列為同等承諾。**
+
+### 本輪其他相關（TrendForce 2026-09-18）
+
+NVIDIA GPU 出貨 **2026 年 +~30% YoY**；**CoWoS-L 預期維持主流至 2028**；GB/VR 機櫃級方案列為 NVIDIA 的封裝需求主體。
+⚠ **+~30% 為出貨量，非封裝面積或 CoWoS 片數** ⇒ 不得用於推算 CoWoS 產能需求（單晶片面積同期在增長）。
+
+### 2026-10-02 新增空缺
+
+- [ ] ⭐⭐⭐ **NVIDIA 玻璃基板傳聞的任何一手佐證**（NVIDIA 或基板廠官方說法）
+- [ ] ⭐⭐⭐ **「兩年內完成開發」的具體交付定義**（樣品？認證？量產？）
+- [ ] ⭐⭐ **NVIDIA 若採玻璃，對應哪一世代產品與哪一種封裝（CoWoS-L 的基板層？獨立玻璃中介層？）**
+- [ ] 📌 既有未結清項：NVIDIA 是否實際採用 EMIB-T；Vera Rubin 的 HBM 份額 —— **本輪無進展**
+
+*Sources: [[sources/2026-10-02_trendforce_nvidia-glass-substrate-2028-taiwan]]、[[sources/2026-10-02_trendforce_cowos-l-mainstream-through-2028]]*

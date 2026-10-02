@@ -3,8 +3,8 @@ title: "共封裝光學元件 / Co-Packaged Optics (CPO) — TSMC-COUPE™ & Eco
 category: technology
 tags: [CPO, co-packaged-optics, COUPE, TSMC, GlobalFoundries, Samsung, photonics, AI, HPC, networking, OCI-MSA, DWDM, Broadcom, NVIDIA, glass-substrate, ULCVD, TGV, Spectrum-X, NVL72]
 created: 2026-04-25
-updated: 2026-09-30
-sources: [2026-09-27_globalfoundries_siph-cpo-bandwidth-density-coupling-budget, 2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-27_paper_copper-interconnect-scaling-roadmap-lines-per-mm, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-05-07_trendforce_globalfoundries-silicon-photonics-scale-cpo, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-03-17_coherent_cpo-ofc2026-demo, 2026-06-07_digitimes_jcet-3d-packaging-cpo-plant, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_edn_cpo-technology-status-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-06-24_thelec_corning-glass-bridge-cpo, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-14_trendforce_umc-silith-silicon-photonics-hvm, 2026-07-14_trendforce_huawei-baidu-npo-msa, 2026-07-27_trendforce_presscenter_cpo-switches-nvidia-broadcom-coupe, 2026-06-03_3dincites_intel-foundry-emib-cpo-glass-ectc2026, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-07-31_ase_cn224583735u-photoelectric-hybrid-rdl, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-09-26_report_dupont-ttm-polymer-waveguide-reliability, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all]
+updated: 2026-10-02
+sources: [2026-09-27_globalfoundries_siph-cpo-bandwidth-density-coupling-budget, 2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-27_paper_copper-interconnect-scaling-roadmap-lines-per-mm, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-05-07_trendforce_globalfoundries-silicon-photonics-scale-cpo, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-03-17_coherent_cpo-ofc2026-demo, 2026-06-07_digitimes_jcet-3d-packaging-cpo-plant, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_edn_cpo-technology-status-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-06-24_thelec_corning-glass-bridge-cpo, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-14_trendforce_umc-silith-silicon-photonics-hvm, 2026-07-14_trendforce_huawei-baidu-npo-msa, 2026-07-27_trendforce_presscenter_cpo-switches-nvidia-broadcom-coupe, 2026-06-03_3dincites_intel-foundry-emib-cpo-glass-ectc2026, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-07-31_ase_cn224583735u-photoelectric-hybrid-rdl, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-09-26_report_dupont-ttm-polymer-waveguide-reliability, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_bitschips_besi-q1-2026-hybrid-bonding-orders]
 related:
   - wiki/technologies/rdl.md
   - wiki/entities/tsmc.md
@@ -1116,3 +1116,60 @@ Corning 玻璃橋 <1.5 dB/facet）與面積（FAU 占 PIC 面積 40%）。
 
 - [[sources/2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth]]
 - [[sources/2026-09-30_semieng_one-substrate-no-longer-rules-them-all]]
+
+## 2026-10-02 新增：PIC 載體選擇的熱理由、Lightmatter 組裝實績、混合接合進入 CPO ★★★
+
+來源：SemiAnalysis ECTC 2026 綜整（2026-07-02）＋ Bits&Chips Besi Q1 2026（2026-04-23）。
+
+### 1. ⭐⭐⭐ PIC 放在有機基板上比放在矽中介層/橋上涼 4–5 倍，熱瞬態差約 10 倍
+
+**Marvell OMIB**（Optical Multi-Chip Interconnect Bridge）：
+
+| 指標 | 有機基板 | 矽中介層／橋 | 比值 |
+|------|---------|-------------|------|
+| PIC 溫升（滿 XPU 功率） | **<5 °C** | **~20–25 °C** | **4–5×** |
+| PIC 熱瞬態 | **~10 °C/s** | **~100–120 °C/s** | **~10×** |
+| 宣稱頻寬密度 | **1.8 Tbps/mm²** | — | — |
+
+➜ **新論述（⭐⭐⭐）**：「**CPO 的 PIC 載體選擇第一次有熱的量化理由，且方向與『矽導熱優於有機』的直覺相反。** 此處決定的不是材料導熱率，而是 PIC 與高功率 XPU 之間的熱耦合路徑 —— 矽中介層把 XPU 的熱橫向帶到 PIC，有機基板則隔開它。」⚠ **此機制解釋為本 wiki 推論，原文未明述** ⇒ 新空缺⭐⭐⭐。
+➜ **對本頁既有載體論述是一個方向性的新約束**：本 wiki 既有 CPO 載體敘述（GlobalFoundries 之 SSC/V-groove/Corning 玻璃橋耦合損耗、上海交大 TGV 110 GHz vs TSV 67 GHz、LPKF 玻璃 CPO）皆以**光學與電性**為選擇依據，**從未以熱為依據。**
+➜ **熱瞬態（°C/s）是本頁首見的指標** ⇒ 對 PIC 的波長穩定性（熱光係數）有直接影響。⚠ 原文未給波長漂移數值。
+
+**Marvell Photonic Fabric EIC**：四組 **56 Gb/s** TX-RX 對 ＝ 單向 **224 Gb/s**，**TSMC N5**。
+
+### 2. ⭐⭐⭐ Lightmatter Passage M1000：本頁第一組大面積光學中介層的組裝與熱實績
+
+| 項目 | 數值 |
+|------|------|
+| 中介層 | **~2,100 mm²，四 tile** |
+| 封裝翹曲 | **~59 µm @260 °C**；降溫後 **~56 µm** |
+| 電性組裝良率 | **>95%** |
+| 熱測試 | **每象限 170 W（功率密度 1.47 W/mm²）** |
+| PIC 溫度 | **~100 °C**（25 °C 冷卻液、**1.8 LPM/kW**） |
+| 封裝驗證 | **>900 W 散熱，跨約 3 reticles** |
+
+➜ **新論述（⭐⭐⭐）**：「**光學中介層已被驗證到 >900 W／約 3 reticles／>95% 電性組裝良率，故 CPO 的瓶頸在 2026 年已不是『能不能組起來』，而是 PIC 本身能在多熱的環境工作（此處約 100 °C）。**」
+➜ **翹曲 59 → 56 µm（260 °C → 降溫）僅回復約 5%** ⇒ **大面積光學中介層的翹曲幾乎是不可逆的**（⚠ 原文未如此表述，為本 wiki 讀法）⇒ 新空缺：此殘餘翹曲對光纖耦合對位的影響。
+➜ **1.8 LPM/kW** 可與 TSMC 微流道之 4 LPM@4 kW（＝1 LPM/kW）對照 ⇒ **相差 1.8×，顯示流量需求強烈依賴架構。** ⚠ 冷卻液與溫升條件不同，不得相減。
+
+### 3. ⭐⭐ 混合接合首次被設備商列入 CPO 的目標領域
+
+Besi（2026-04-23）把 **CPO** 明確列入混合接合的「已宣告未來採用」領域（與邏輯、記憶體、消費性並列），且 Q1 2026 混合接合客戶已達 **20 家**。
+
+➜ **本頁此前未把混合接合列為 CPO 的接合手段之一。** 既有 CPO 接合敘述集中在光纖耦合（SSC、V-groove、玻璃橋）與 PIC 貼合。
+➜ **新連結**：若 CPO 採混合接合，則 PIC 與 EIC 之間的界面要求（對準精度、溫度、表面）將與邏輯/記憶體堆疊落在同一技術軸上 ⇒ 見 [[technologies/hybrid-bonding]]。⚠ Besi 未給 CPO 的 pitch 或時程。
+*Source: [[sources/2026-10-02_bitschips_besi-q1-2026-hybrid-bonding-orders]]*
+
+### 4. ⭐⭐ 玻璃的 CPO 耦合面規格（LPKF，本 wiki 2026-09-26 已入庫，本輪交叉引用）
+
+LPKF 之 CPO 耦合能力條件為 **表面波紋 ±100 nm、表面粗糙度 ±30 nm**。
+➜ **可與本輪 SEMCO CN122054433A 的「玻璃上下表面刻意粗於孔壁」並讀**：⚠ **兩者口徑與目的完全不同**（CPO 光耦合面 vs 鍍層附著面），**不得混用**；但這正說明**同一片玻璃的不同區域對粗糙度有相反的要求** ⇒ 新空缺：CPO 耦合區與金屬化區的粗糙度如何分區製作。
+
+### 2026-10-02 新增空缺
+
+- [ ] ⭐⭐⭐ **「PIC 在有機基板上比在矽中介層上涼 4–5×」的機制**（橫向熱擴散？熱耦合路徑長度？）
+- [ ] ⭐⭐⭐ **PIC 於 ~100 °C 下的波長漂移與鏈路預算代價**（Lightmatter 給了溫度，未給光學後果）
+- [ ] ⭐⭐ **M1000 殘餘翹曲 ~56 µm 對光纖/FAU 對位的影響**
+- [ ] ⭐⭐ **CPO 採混合接合的 pitch 目標與時程**（Besi 未給）
+- [ ] ⭐⭐ **同一片玻璃上 CPO 耦合區（Ra ±30 nm）與金屬化區（刻意粗化）如何分區製作**
+- [ ] 📌 既有未結清項延續：`10.1038/s41928-026-01681-6`（Nature Electronics CPO 綜述）維持「暫不可得」降級；FAU 40% 是否隨通道數縮放；疊置波導重疊長度與耦合損耗；玻璃體內直寫波導 dB/cm；GlobalFoundries「0.3–0.5 nm」疑為 µm 誤植 —— **本輪均無進展**

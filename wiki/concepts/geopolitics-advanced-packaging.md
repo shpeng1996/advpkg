@@ -3,8 +3,8 @@ title: "先進封裝地緣政治 / Geopolitics of Advanced Packaging"
 category: concept
 tags: [geopolitics, US-China, CHIPS-Act, supply-chain, chiplet, NAPMP, export-control, glass-substrate, standards-war, BOE, Corning, Absolics]
 created: 2026-04-26
-updated: 2026-10-01
-sources: [2026-09-27_semieng_chip-week-156-india-tata-besi-izmo, 2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-08-10_trendforce_skhynix-chongqing-sale-global-reset, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-23_trendforce_china-osat-sj-semiconductor-ipo, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-08-05_3dincites_iftle636, 2026-03-23_trendforce_musk-terafab-tsmc-packaging, 2026-04-22_trendforce_sk-hynix-indiana-us-plant, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-16_nokia_pennsylvania-atp-expansion, 2026-06-30_amkor-ir_arizona-7billion-groundbreaking, 2026-06-30_digitimes_us-packaging-capacity-10pct-2032, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-10_tomshardware_micron-250b-us-investment-globalwafers, 2026-07-10_semieng_chip-week-146, 2026-07-14_trendforce_huawei-baidu-npo-msa, 2026-08-21_semieng_chip-week-152, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_asi-1um-hdbu-substrate]
+updated: 2026-10-02
+sources: [2026-09-27_semieng_chip-week-156-india-tata-besi-izmo, 2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-08-10_trendforce_skhynix-chongqing-sale-global-reset, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-23_trendforce_china-osat-sj-semiconductor-ipo, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-08-05_3dincites_iftle636, 2026-03-23_trendforce_musk-terafab-tsmc-packaging, 2026-04-22_trendforce_sk-hynix-indiana-us-plant, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-16_nokia_pennsylvania-atp-expansion, 2026-06-30_amkor-ir_arizona-7billion-groundbreaking, 2026-06-30_digitimes_us-packaging-capacity-10pct-2032, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-10_tomshardware_micron-250b-us-investment-globalwafers, 2026-07-10_semieng_chip-week-146, 2026-07-14_trendforce_huawei-baidu-npo-msa, 2026-08-21_semieng_chip-week-152, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_asi-1um-hdbu-substrate, 2026-10-02_trendforce_nvidia-glass-substrate-2028-taiwan, 2026-10-02_trendforce_intel-microled-glass-24-layer]
 related: [wiki/concepts/advanced-packaging-market.md, wiki/entities/amkor.md, wiki/entities/ase-group.md, wiki/technologies/ucie.md]
 ---
 
@@ -821,3 +821,38 @@ Chip Week 156 同期出現**兩條獨立的印度先進封裝條目**（[[source
 - [ ] ⭐⭐ Micron 競標茂原廠的用途
 - [ ] ⭐ FICT（富士通系高階 PCB）取得茂原廠西側 232,000 m² 的用途
 - [ ] ⭐ SHIELD USA 是否有對應的設備與材料在地化清單（「domestic materials」具體為何）
+
+## 2026-10-02 新增：台系面板廠入列玻璃基板、印度首次出現 ★★
+
+### 1. ⭐⭐⭐ 玻璃基板的三地競局首次三方皆有具名清單
+
+TrendForce（2026-09-30，⚠ NVIDIA 相關敘述為 **reportedly**）：
+
+| 陣營 | 具名者 |
+|------|--------|
+| **日系** | Shinko（茂原廠）、Ibiden、DNP、Toppan、AGC、NEG |
+| **韓系** | Absolics（SKC×AMAT，喬治亞廠）、Samsung Electro-Mechanics、Amosense |
+| **台系（本輪新增）** | **AUO**（玻璃加工/RDL/金屬化，試產線規劃，**NT$8.6B**）、**Innolux**（TGV，**620×670 mm**，客戶驗證中）、**TPK-KY**（TGV，**中壢試產線自 2026-09 初運作**）、**GTOC**（熱成形，已提專利） |
+| **材料（跨陣營）** | Corning（與 AUO 共同展出 **510×515 mm**） |
+| **設備** | SCHMID（德，NVIDIA 夥伴）、LPKF（德，LIDE 工具平台 510×515 mm） |
+| **中國大陸** | Lens、BOE（既有）＋ **厦門安捷利美維、北京芯力、上海先封科技（2026-10-01／10-02 新增）** |
+
+➜ **延伸 2026-10-01 論述 8（面板廠的廠房與電力資產進入先進封裝）與論述 9（日美兩條大面積方形基板路線）**：本輪顯示**台灣走的是第三條路 —— 以面板廠的玻璃加工能力（而非基板廠的疊層能力，也不是模封 fan-out）切入**。
+➜ **新論述（⭐⭐⭐）**：「**玻璃基板的入口至少有三種：基板廠的疊層能力（日系 Shinko/Ibiden）、化學與設備的合資（韓系 Absolics＝SKC×AMAT）、面板廠的大面積玻璃加工能力（台系 AUO/Innolux/TPK-KY）。三者的強項與弱項互補而不重疊，故短期內不會收斂。**」
+➜ **若 NVIDIA 傳聞為真，「兩年內完成開發」的時間壓力是跨三地同時施加的** ⇒ 這是本頁第一個由單一終端客戶同時對三個國家供應鏈設定期限的案例。⚠ 須永久保留 reportedly 限定。
+*Source: [[sources/2026-10-02_trendforce_nvidia-glass-substrate-2028-taiwan]]*
+
+### 2. ⭐⭐ 印度首次進入本頁的先進封裝版圖
+
+TrendForce（2026-09-22，Intel 微 LED 玻璃基板專利報導）：**Intel 印度廠規劃年產 70,000 片玻璃基板、5,000 萬組裝單元；量產 2028–2030。**
+
+➜ **本頁此前完全無印度。** ⚠ **兩個產能數字層級不同（基板 vs 組裝單元），不得相除**；且**與既有「Intel 2025-08 停止內部玻璃核心基板投資」須並列標注時序。**
+➜ **新空缺（⭐⭐）**：印度在先進封裝（尤其組裝測試端）的政策與產能全貌，本 wiki 空白。
+*Source: [[sources/2026-10-02_trendforce_intel-microled-glass-24-layer]]*
+
+### 2026-10-02 新增空缺
+
+- [ ] ⭐⭐⭐ **310×310 / 510×515 / 620×670 mm 三種面板尺寸是否會分裂成三個不相容的生態系**
+- [ ] ⭐⭐ **印度先進封裝的政策與產能全貌**
+- [ ] ⭐⭐ **台系面板廠切入玻璃基板的技術落差項**（面板玻璃加工 ≠ 半導體級基板；良率與潔淨度要求差距未知）
+- [ ] 📌 既有未結清項：CHIPS 在基板技術路線上的下注、日美兩條大面積方形基板路線的匯流點 —— **本輪無進展**

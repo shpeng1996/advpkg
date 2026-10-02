@@ -3,8 +3,8 @@ title: "RDL — 重分佈層 / Redistribution Layer"
 category: technology
 tags: [RDL, SAP, dual-damascene, embedded-trace, ETR, polyimide, FPIM, CMP, electromigration, panel-level, pad-less-via]
 created: 2026-09-26
-updated: 2026-10-01
-sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2026-09-27_paper_purdue-ru-cu-em-lifetime-blacks-n-0154, 2026-09-27_paper_copper-interconnect-scaling-roadmap-lines-per-mm, 2026-09-26_article_taiyo-imec-700nm-damascene-rdl, 2026-09-26_article_imec-1um-damascene-rdl-2019-anchor, 2026-09-26_article_amkor-embedded-trace-rdl, 2026-09-26_paper_asi-1um-hdbu-substrate, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-25_paper_dnp-glass-rdl-electromigration-lifetime, 2026-09-25_paper_cornell-glass-on-glass-sio2-rdl, 2026-09-25_paper_asu-molded-core-substrate-warpage, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all]
+updated: 2026-10-02
+sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2026-09-27_paper_purdue-ru-cu-em-lifetime-blacks-n-0154, 2026-09-27_paper_copper-interconnect-scaling-roadmap-lines-per-mm, 2026-09-26_article_taiyo-imec-700nm-damascene-rdl, 2026-09-26_article_imec-1um-damascene-rdl-2019-anchor, 2026-09-26_article_amkor-embedded-trace-rdl, 2026-09-26_paper_asi-1um-hdbu-substrate, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-25_paper_dnp-glass-rdl-electromigration-lifetime, 2026-09-25_paper_cornell-glass-on-glass-sio2-rdl, 2026-09-25_paper_asu-molded-core-substrate-warpage, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_shanghai-xianfeng-cn122622683a-glass-interposer-bridge, 2026-10-02_imaps-dpc2026_defect-free-coplanar-copper-via-fill]
 related:
   - wiki/technologies/foplp.md
   - wiki/technologies/glass-substrate.md
@@ -398,3 +398,54 @@ ASE FOCoS 3–6 層最高 12 層、imec NanoIC RDL 1.3 µm）。
 - [ ] ⭐⭐⭐ VIB 的 throughput、對準精度、良率、電性
 - [ ] ⭐⭐ RDL 粗糙度與數位 I/O 插入損耗的對應關係（本 wiki 僅有 RF 波段數字）
 - [ ] ⭐ `10.1038/s41378-026-01399-7` 之 CMP 後絕對粗糙度（Ra/Rq）數值
+
+## 2026-10-02 新增：RDL 的量產線與路線圖首次並列；玻璃面 RDL 密度成為獨立限制 ★★★
+
+### 1. ⭐⭐⭐ RDL 線寬：量產 2/2 µm、路線圖 1/1 µm，且 UCIe-A 在 8 層 RDL 上達 0.77 UI @32 GT/s
+
+SemiAnalysis ECTC 2026 綜整（2026-07-02）：
+
+| 項目 | 數值 |
+|------|------|
+| **現行量產 L/S** | **2/2 µm** |
+| **路線圖目標** | **1/1 µm**（emerging） |
+| GUC / TSMC **UCIe-A** | **8 層 RDL 上 32 GT/s 眼寬 0.77 UI** |
+
+➜ **本頁第一次有「量產線」與「路線圖」並列的 L/S 落點。** 既有敘述多為單點或廠商宣稱。
+➜ **UCIe-A 在 8 層 RDL 上達 0.77 UI @32 GT/s** ⇒ 與 [[technologies/ucie]] 既有「UCIe-Advanced +40%/−15%」之基準線空缺相關（⚠ 本件未給基準線，該空缺不結清）。
+
+### 2. ⭐⭐⭐ 玻璃表面的 RDL 密度上限首次成為一個被寫進請求項的限制
+
+**上海先封 CN122622683A**（族 100912127，2026-08-21）：玻璃基底開貫穿容納開口並**嵌設互連橋**，限定**橋的線路密度 > 玻璃上下兩面 RDL 的線路密度**；申請人自述動機為「**玻璃表面線路密度不足**」。
+
+➜ **新論述（⭐⭐⭐）**：「**RDL 的可達密度取決於它長在什麼上面。** 玻璃面的 RDL 密度低於矽/有機面，故玻璃中介層必須外掛局部高密度橋 —— 這使 RDL 從『一種製程能力』變成『一種與載體綁定的能力』。」
+⚠ **本件無量化值**（未給玻璃面 L/S）⇒ **新空缺⭐⭐⭐：玻璃面 RDL 的 L/S 實績（µm）**，對照本頁之量產 2/2 µm。
+*Source: [[sources/2026-10-02_epo_shanghai-xianfeng-cn122622683a-glass-interposer-bridge]]*
+
+### 3. ⭐⭐⭐ IC 基板的鍍銅共平面性規格：世代間緊縮 2× 與 5×
+
+IMAPS DPC 2026（`10.4071/001c.167760`，OA 全文已解析）：
+
+| 項目 | 驗證案 1（孔 65×40 µm） | 驗證案 2（孔 70×50 µm） | 緊縮 |
+|------|----------------------|----------------------|------|
+| WIU R 規格 | **<6 µm**（實測 2.204–4.733） | **<3 µm**（實測 1.043–2.27） | **2×** |
+| Bump 規格 | **<5 µm**（實測 1.155） | **<1 µm**（實測 0.178） | **5×** |
+| Cavity | **0%**（實測 0） | **0%** | — |
+| 表面厚度（規格 20 µm） | **19.82** | **19.78** | — |
+
+另：目標 L/S **<10/10 µm**（現行大 L/S >15/15 µm）、目標封裝 **>100×100 mm**、鍍液壽命至 **300 Ah/L**、通孔案板厚 **1.2 mm**／孔徑 **150 µm**（TP_IPC 規格 >110%，實測 96.8–182.6%）、**2 µm 閃蝕後仍抗 V-pitting**、**可免除 post-bake**。
+
+➜ **新論述（⭐⭐⭐）**：「**bottom-up 填充是機制層級的答案而非參數調整**：V-pitting、seam void、鍍層不均三種缺陷同屬一個『填充方向』問題，由抑制劑／加速劑／整平劑配方決定。」
+➜ **與 2026-09-30 大阪大（`10.4071/001c.167758`：無電鍍銅 4.5–9.6% 奈米孔洞 + Pd 偏析為弱微孔根因）形成完整對軸**：**孔洞問題首次同時具備失效側量測與製程側解方（實測 Cavity = 0%）。**
+⚠ **Throwing power 實測散佈 96.8–182.6%、規格僅 >110%** ⇒ 不得將高值解讀為更佳。
+⚠⚠ **簡報內「線寬微縮階梯 10 → 5 → 2 → 1 µm → 100 nm」的終點與本頁量產 2/2 µm 差 10×** ⇒ **視為長期願景，不得與路線圖並列。**
+⚠ **OpenAlex 未給作者機構**；內容指向鍍液／添加劑供應商，**不得歸屬至特定公司。**
+*Source: [[sources/2026-10-02_imaps-dpc2026_defect-free-coplanar-copper-via-fill]]*
+
+### 2026-10-02 新增空缺
+
+- [ ] ⭐⭐⭐ **玻璃面 RDL 的 L/S 實績（µm）**
+- [ ] ⭐⭐ **2/2 → 1/1 µm 的瓶頸項**（微影？電鍍？對位？本件指向電鍍與共平面性，但未明述）
+- [ ] ⭐⭐ **UCIe-A 0.77 UI @32 GT/s 的 BER 與功耗條件**
+- [ ] ⭐ **Throwing power 各欄的量測條件**
+- [ ] 📌 既有未結清項延續：ASE FOCoS 12 層對應線寬、UCIe-Advanced「+40%/−15%」基準線、橫向製程決定垂直解析度之量化 —— **本輪均無進展**

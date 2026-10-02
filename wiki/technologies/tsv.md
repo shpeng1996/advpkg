@@ -3,8 +3,8 @@ title: "TSV — Through-Silicon Via / 矽穿孔"
 category: technology
 tags: [TSV, HBM, interposer, 3D-IC, CoWoS, manufacturing, backside-power, advanced-packaging, radiation, redundancy, reliability]
 created: 2026-08-10
-updated: 2026-10-01
-sources: [2026-09-27_wuhanuniv_cn121548325a-tgv-micro-nano-anchor-molecular-bridging, 2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-27_semieng_chip-week-156-india-tata-besi-izmo, 2026-04-22_semieng_tsv-complexity-manufacturing-bottleneck, 2026-08-21_semieng_chip-week-152, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-08-21_scirep_copper-oxide-reduction-ar-h2-pulsed-plasma, 2026-06-08_irtnanoelec_d2w-hybrid-bonding-1um-pitch, 2026-03-13_kaneka_jp2026047137a-glass-core-polyimide-quantified, 2026-08-10_screp_low-k-organic-buffer-tgv-cu-metallization, 2026-08-04_jmrt_vacuum-assisted-void-free-cu-fill-tgv, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring, 2026-09-26_patent_zhuhai-tiancheng-dual-depth-tsv-silicon-bridge, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_patent_er-eng-glass-interposer-dual-carrier, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth]
+updated: 2026-10-02
+sources: [2026-09-27_wuhanuniv_cn121548325a-tgv-micro-nano-anchor-molecular-bridging, 2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-27_semieng_chip-week-156-india-tata-besi-izmo, 2026-04-22_semieng_tsv-complexity-manufacturing-bottleneck, 2026-08-21_semieng_chip-week-152, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-08-21_scirep_copper-oxide-reduction-ar-h2-pulsed-plasma, 2026-06-08_irtnanoelec_d2w-hybrid-bonding-1um-pitch, 2026-03-13_kaneka_jp2026047137a-glass-core-polyimide-quantified, 2026-08-10_screp_low-k-organic-buffer-tgv-cu-metallization, 2026-08-04_jmrt_vacuum-assisted-void-free-cu-fill-tgv, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring, 2026-09-26_patent_zhuhai-tiancheng-dual-depth-tsv-silicon-bridge, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_patent_er-eng-glass-interposer-dual-carrier, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth, 2026-10-02_epo_semco-cn122054433a-glass-surface-roughness, 2026-10-02_trendforce_intel-microled-glass-24-layer, 2026-10-02_imaps-dpc2026_defect-free-coplanar-copper-via-fill, 2026-10-02_microrel_tudelft-google-3dic-fa-hardware]
 related:
   - wiki/technologies/hbm4.md
   - wiki/technologies/cowos.md
@@ -624,3 +624,41 @@ TGV >110 GHz（1.64×）**，皆為實作量測，支援 128 GBaud。
 
 - [ ] ⭐⭐⭐ VIB 的 throughput、置放對準精度、良率、電性與熱性能
 - [ ] ⭐⭐ VIB 與 TSV／TGV 在「單位垂直通道成本」上的對照（本 wiki 兩側皆無此數字）
+
+## 2026-10-02 新增：TGV 的粗糙度分面設計、玻璃通孔 0 ppm、FA 硬體的 pitch 上限 ★★
+
+### 1. ⭐⭐⭐ TGV 的粗糙度是分面設計變數：上下表面刻意粗於孔壁
+
+**SEMCO CN122054433A**（族 99735101，2026-05-15，IPC 含 H05K3/426 電鍍）。請求項核心為粗糙度不等式：
+Ra(玻璃上/下表面) **>** Ra(孔壁)；Ra(金屬通孔上/下端面) **>** Ra(孔壁)。
+
+➜ **與 2026-10-01 入庫之中科院微電子所論文（側壁粗糙度為根本問題、歸因 NBO）方向相反而不矛盾**：**孔壁要光（電性、金屬化可靠性、熱機械），上下表面要粗（鍍層與介電層附著）。**
+➜ **種子層附著手段自此分兩類**：化學官能化（Corning 矽烷、Intel ZnO+Pd、厦門安捷利矽烷+parylene）與**機械粗化（本件，第四條路線）**。詳見 [[technologies/glass-substrate]]。
+⚠⚠ **只給不等式、無 Ra 絕對值** ⇒ 無法與 AGC／Corning／中科院／LPKF（±30 nm）比較。
+
+### 2. ⭐⭐⭐ 玻璃通孔不導通 0 ppm、無缺陷 24 層（Intel）
+
+TrendForce（2026-09-22，Intel 微 LED 玻璃基板專利報導）：**工程樣品 ~78×77 mm、通孔不導通 0 ppm、無缺陷 24 層**；製程序 **雷射誘導蝕刻 → 化學蝕刻 → 銅電鍍 TGV → 晶粒嵌入 → 氮化矽接合層**。
+
+➜ **本頁第一個玻璃 TGV 的缺陷率絕對數字。** ⚠ 廠商/專利自述，樣本數與條件未給，**不得作為產業水準**。
+➜ 與 SemiAnalysis 之「Intel 24 層玻璃核心面板 510×515 mm、銅填 TGV」為**兩個獨立來源、同一層數**，⚠ **尺度相差約 44×，不得合併。**
+
+### 3. ⭐⭐⭐ 無電鍍/電鍍銅填孔的孔洞問題：失效側與製程側首次對軸
+
+IMAPS DPC 2026（`10.4071/001c.167760`）：**bottom-up 填充**消除 **V-pitting、seam void、鍍層不均**；通孔案 **板厚 1.2 mm／孔徑 150 µm**（AR 8:1），**實測 Cavity 0%**；TP_IPC 規格 >110%（實測散佈 96.8–182.6%）；**2 µm 閃蝕後仍抗 V-pitting**；**可免除 post-bake**。
+
+➜ 與 2026-09-30 大阪大（無電鍍銅 **4.5–9.6% 奈米孔洞 + Pd 偏析**為弱微孔根因）**形成完整對軸**：⭐次高優先空缺「把大阪大結果外推到玻璃 TGV」**取得製程側的對照答案**（⚠ 本件為 IC 基板之樹脂微孔與通孔，**非玻璃 TGV**，故空缺**不結清**，但外推路徑更清楚）。
+➜ **新橫向論述（⭐⭐⭐）**：「**在導體裡孔洞是缺陷（必須 0%），在磁芯裡孔洞是設計（刻意引入以提高電阻率）。**」後者見本輪 Tyndall FeCoB-N（[[concepts/power-delivery-packaging]]）。
+
+### 4. ⭐⭐ TIV（Through Interposer Via）與 FA 硬體的 pitch 上限
+
+TU Delft × Google（2026-07-03）：以 **~210 µm interposer pin pitch** 的 DRAM 卡經 **TIV** 把 PoP 上層外移，換取下層晶粒的 EFI 直視光路，達 **6.3 Gbps**。
+
+➜ **新論述（⭐⭐）**：「**FA 硬體的互連能力（~210 µm）落後產品（EMIB-T 36/35 µm、混合接合 µm 級）約一個數量級以上 —— 這本身就是 3D 封裝可分析性的硬上限。**」⚠ 本 wiki 歸納，原文未做此對照。詳見 [[concepts/test-metrology-packaging]]。
+
+### 2026-10-02 新增空缺
+
+- [ ] ⭐⭐⭐ **玻璃 TGV 各面的 Ra 目標值與對應失效模式**
+- [ ] ⭐⭐ **Intel 玻璃 TGV 0 ppm 的樣本數、孔數與量測方法**
+- [ ] ⭐⭐ **bottom-up 填充能否移植到玻璃 TGV**（本件為 IC 基板樹脂微孔與通孔）
+- [ ] 📌 既有未結清項延續：`10.1016/j.mssp.2026.111165` 全文（TGV 陣列力學：幾層襯層／各層多厚／各層負責哪一種失效）、Intel 第三襯層（100–250 nm）材料與功能、2026 年濺鍍側深寬比實績、Cu recess 產線 dishing 分布 —— **本輪均無進展**

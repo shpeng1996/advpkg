@@ -3,8 +3,8 @@ title: "先進封裝的測試、量測與失效分析 / Test, Metrology & Failur
 category: concept
 tags: [test, metrology, inspection, failure-analysis, KGD, KGI, KGP, DFA, yield]
 created: 2026-09-17
-updated: 2026-09-30
-sources: [2026-09-27_paper_binghamton-ibm-pad-scaling-resistance-variability, 2026-09-27_paper_purdue-ru-cu-em-lifetime-blacks-n-0154, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2025-01-14_semieng_known-good-interposer-screening, 2025-07-10_semieng_advanced-packaging-reshaping-inspection, 2024-11-12_semieng_packaging-drives-test-metrology-innovation, 2026-08-01_jfap_3dic-failure-analysis-dfa, 2026-07-06_apl_lensless-through-silicon-phase-imaging, 2026-09-06_ndte_hysan-sparse-view-xct-tsv, 2026-08-02_chips_cpo-wafer-level-probe-card, 2026-08-27_samsung_us20260256000a1-interposer-test-pad, 2026-08-13_jcet_us20260239928a1-hybrid-bonding-substack-test, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-06-28_hyperframe_amat-hybrid-bonding-hedge, 2026-09-26_paper_ibm-amine-post-cmp-clean, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent]
+updated: 2026-10-02
+sources: [2026-09-27_paper_binghamton-ibm-pad-scaling-resistance-variability, 2026-09-27_paper_purdue-ru-cu-em-lifetime-blacks-n-0154, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2025-01-14_semieng_known-good-interposer-screening, 2025-07-10_semieng_advanced-packaging-reshaping-inspection, 2024-11-12_semieng_packaging-drives-test-metrology-innovation, 2026-08-01_jfap_3dic-failure-analysis-dfa, 2026-07-06_apl_lensless-through-silicon-phase-imaging, 2026-09-06_ndte_hysan-sparse-view-xct-tsv, 2026-08-02_chips_cpo-wafer-level-probe-card, 2026-08-27_samsung_us20260256000a1-interposer-test-pad, 2026-08-13_jcet_us20260239928a1-hybrid-bonding-substack-test, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-06-28_hyperframe_amat-hybrid-bonding-hedge, 2026-09-26_paper_ibm-amine-post-cmp-clean, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-10-02_microrel_tudelft-google-3dic-fa-hardware, 2026-10-02_imaps-dpc2026_gelpak-universal-carriers-singulated-die]
 related:
   - wiki/technologies/hybrid-bonding.md
   - wiki/technologies/cowos.md
@@ -723,3 +723,50 @@ Micromachines 的**五種 TGV 剖面**（直壁／沙漏／等腰錐／倒錐／
 - [[sources/2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation]]
 - [[sources/2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids]]
 - [[sources/2026-09-30_trendforce_intel-emib-substrate-yield-45-percent]]
+
+## 2026-10-02 新增：EFI 光學屏障首見硬體解法，以及「輔助步驟」的 OEE 落點 ★★★
+
+### 1. ⭐⭐⭐ 「EFI 斷裂／光學路徑被遮蔽」首次取得硬體解法與量化落點
+
+**TU Delft × Google**（Microelectronics Reliability，2026-07-03，作者含 Willem Dirk van Driel、G Q Zhang 與六位 Google 作者）：
+
+- 原文明確命名問題：**3D IC（如 PoP）的元件堆疊在電性失效隔離（EFI）時形成「光學屏障」（optical barrier）**。
+- 解法：把上層 DRAM 搬到專設 DRAM 卡上，以 **~210 µm interposer pin pitch**（原文稱 smallest possible）經 **TIV（Through Interposer Via）** 連回原位 ⇒ 換取下層晶粒的直視光路（LoS），同時保持 DRAM 功能。
+- 達成 **最高 6.3 Gbps**（DDR training test），可跑標準 **Android** 壓力應用；平台為 **SLT（System-Level Test）**。
+
+➜ **新論述（⭐⭐⭐）**：「**3D 封裝的可測性有兩條互補路線：設計期預留（測試左移）與分析期拆解重連（測試外移）。**」本頁既有三個「左移」實例（SanDisk 版圖金屬墊與 bit line 外拉、中介層測試墊、RDL I/O 反轉）**皆需產品配合**；本件相反，**在失效分析階段用硬體把被遮蔽的那一層實體移開** —— 成本高，但**不需要產品預先配合**。
+➜ **新論述（⭐⭐）**：「**FA 硬體的互連能力落後產品約一個數量級以上（~210 µm vs EMIB-T 36/35 µm、混合接合 µm 級），這本身就是 3D 封裝可分析性的硬上限。**」⚠ 此對照為本 wiki 歸納，原文未做。
+➜ **Google 首次以技術性一手管道出現在本 wiki**（此前皆為 TPU 需求面二手報導）⇒ 對⭐缺實體頁 Google（65 頁提及）是第一個技術觸發點。
+⚠ **fetch_status: partial**（無 OA PDF）⇒ FA use cases、硬體限制、改善方向三節未知；DRAM card 的「stringent design rules」細節未知。
+*Source: [[sources/2026-10-02_microrel_tudelft-google-3dic-fa-hardware]]*
+
+### 2. ⭐⭐⭐ 「輔助步驟才是瓶頸」第五個量化實例，且第一次以 OEE 為單位
+
+**Gel-Pak（Delphon）**，IMAPS DPC 2026：無凹槽（pocketless）、微紋理通用載具。
+
+| 項目 | 傳統 | 通用載具 | 差異 |
+|------|------|---------|------|
+| **拾取成功率** | **98.5–99%** | **>99.8%** | — |
+| **OEE** | **~60–70%** | **~80–90%** | **+15~20%** |
+| 拾取速度 | — | 每次省 **0.5–1.5 s** | **UPH +20~25%** |
+| 表面接觸 | — | **<2%**，邊緣無接觸 | Quality **+1~3%** |
+| 吞吐（情境） | — | 低量手動 ~5–10%；高量自動 ~15–30%；**小/脆晶粒 <1 mm 達 50%** | — |
+| 尺寸涵蓋 | — | 微米級至 **75 mm**；其他基材 **75–450 mm**；相容 **200/300 mm SEMI 晶圓** | — |
+| 探針清潔 | — | 磨耗 **−15~20%**；清潔效率 **+~30%（T ≤ −30 °C 與 T ≥ 150 °C）** | 首過良率 **+~1~3%** |
+
+➜ **本 wiki 第一個封裝產線「整體設備效率（OEE）」的絕對落點（60–70% → 80–90%）。** 既有四個「輔助步驟」實例（Resonac 切割膠帶、TEL 載具、AMAT 薄化、本輪 167760 之免 post-bake）皆只有單一製程指標。
+➜ **新論述（⭐⭐⭐）**：「**KGD 的爭議不只是『測了什麼』，還有『從測完到裝上去之間掉了多少』。**」搬運本身造成 **0.2–1.5%** 的損失（98.5–99% → >99.8%），而原文明言 **首過良率 <1% 的損失即具重大成本意義** ⇒ **搬運損失與電性篩檢落在同一量級。** 本頁長期空缺「KGD 的標準化定義」此前只處理電性篩檢。
+➜ **新論述（⭐⭐）**：「**晶粒越小，搬運的邊際成本越高**（<1 mm 晶粒吞吐增益達 50%，一般情境 15–30%）⇒ 這是 chiplet 細分化（die disaggregation）的一個此前未記錄的反向成本項。」
+➜ **寬溫域測試的具體困難點首次入庫**：探針清潔效率在 **T ≤ −30 °C 與 T ≥ 150 °C** 兩個極端各 **+~30%**。
+⚠⚠ **全部數值皆為供應商自述之對照改善幅度，無第三方驗證、無基準線定義（哪一台機、哪一種晶粒）** ⇒ **不得作為產業平均值引用。**
+⚠ 「仿生」細節（何種生物結構、微紋理尺度）未給。
+*Source: [[sources/2026-10-02_imaps-dpc2026_gelpak-universal-carriers-singulated-die]]*
+
+### 2026-10-02 新增空缺
+
+- [ ] ⭐⭐⭐ **TU Delft×Google 論文全文**（FA use cases、硬體限制、DRAM card 設計規則）
+- [ ] ⭐⭐⭐ **FA 硬體的 pin pitch 能否隨產品 pitch 微縮**（若不能，則愈先進的封裝愈不可分析）
+- [ ] ⭐⭐ **Gel-Pak 數值的基準線定義與第三方驗證**
+- [ ] ⭐⭐ **搬運損失（0.2–1.5%）與電性篩檢損失在 KGD 契約中如何歸責**
+- [ ] ⭐ **微紋理載具的仿生原型與紋理尺度**
+- [ ] 📌 既有未結清項延續：KGD 的標準化定義、CoWoS「5.5× 良率 99%」的量測邊界、`raw/_titles.tsv` 19 組重複 raw 檔待人工處置 —— **本輪均無進展**

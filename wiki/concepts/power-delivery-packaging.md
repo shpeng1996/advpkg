@@ -3,8 +3,8 @@ title: "封裝層的供電網路 / Power Delivery Networks at the Package Level"
 category: concept
 tags: [PDN, power-delivery, vertical-power, eVR, capacitor, inductor, passive-integration, hybrid-bonding, rack-power]
 created: 2026-09-29
-updated: 2026-10-01
-sources: [2026-09-29_imaps-dpc2026_nanoporous-silicon-capacitor-pdn, 2026-09-29_imaps-dpc2026_saras-stile-evr-vertical-pdn, 2026-09-29_semieng_tech-paper-roundup-sept29-multikw-3dhi-pdn, 2026-09-29_semiwiki_ofc2026-siph-cpo-oci-ocs-summary, 2026-09-30_arxiv_umn-multi-kw-power-delivery-3d-hi, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_epo_intel-jp2026116680a-glass-core-embedded-inductor-clusters]
+updated: 2026-10-02
+sources: [2026-09-29_imaps-dpc2026_nanoporous-silicon-capacitor-pdn, 2026-09-29_imaps-dpc2026_saras-stile-evr-vertical-pdn, 2026-09-29_semieng_tech-paper-roundup-sept29-multikw-3dhi-pdn, 2026-09-29_semiwiki_ofc2026-siph-cpo-oci-ocs-summary, 2026-09-30_arxiv_umn-multi-kw-power-delivery-3d-hi, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_epo_intel-jp2026116680a-glass-core-embedded-inductor-clusters, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_imaps-dpc2026_delo-die-side-capacitor-encapsulation, 2026-10-02_epo_samsung-cn122602880a-ivr-capacitor-interposer-core, 2026-10-02_jmmm_tyndall-fecob-n-pwrsoc-magnetics, 2026-10-02_epo_amd-us20260282956a1-silicon-bridge-decap]
 related:
   - wiki/concepts/thermal-management.md
   - wiki/technologies/hybrid-bonding.md
@@ -351,3 +351,79 @@ arXiv 2606.28837 評估三架構：**A1 = 48→1 V（單級）、A2 = 48→24→
 - [ ] ⭐ 鉬 50% 接觸電阻降幅的量測尺度、節點、量產狀態
 - [ ] ⭐ Saras 核心內實際疊置層數（本 wiki 之 5–12 層為純幾何上限推算）
 - [ ] ⭐ TSMC US20260247985A1 之長條單元正交排列的動機（應力？電流路徑？密度？）
+
+## 2026-10-02 新增：電容密度階梯首次成形、在位基準線入庫、第三個限制項候選 ★★★
+
+### 1. ⭐⭐⭐ 電容密度階梯：越靠近負載，面密度越低
+
+本輪取得第三個電容密度落點，使 2026-10-01 論述 3（去耦是頻域分層任務）第一次能配上一個**密度刻度**：
+
+| 位置 | 面密度 | 來源 | 口徑 |
+|------|--------|------|------|
+| **橋內 MIM**（Intel EMIB-T） | **500 fF/µm² = 0.5 µF/mm²** | SemiAnalysis ECTC 2026（2026-10-02 入庫） | 原文未定義 |
+| **基板內嵌矽電容**（Empower ECAP，**已量產**） | **≈2.30–2.34 µF/mm²** | 本 wiki 由 9.34 µF/2×2 mm 等三組推算（2026-10-01） | **容值 ÷ 封裝外形面積** |
+| **奈米多孔矽電容**（Murata NPC） | **4 → 8 µF/mm²** | IMAPS DPC 2026（2026-09-29 入庫） | 未確認 |
+
+➜ **新論述（⭐⭐⭐）**：「**去耦電容的面密度與它離負載的距離呈反向：最近的那一層（橋內／晶粒內 MIM）密度最低，最遠的那一層（獨立矽電容元件）密度最高。**」
+➜ 這與 2026-10-01 論述 3（頻域分層：on-die MIM → 晶背/鍵合 DTC → 基板內嵌 2–10 MHz → MLCC → VRM）**方向一致且互為因果**：高頻段要的是低 ESL 而非大容值，故容許低密度。
+⚠⚠ **三個數字的口徑互不相同（Intel 未定義、Empower 為本 wiki 推算之封裝外形面密度、Murata 未確認）⇒ 不得相減、不得排序為「技術優劣」，僅能作為「量級階梯」。**
+⚠ **Intel 的 0.5 µF/mm² 使「混合接合堆疊 vs 基板內嵌」兩路線的比較問題更複雜，而非更簡單**：現在是三個口徑未對齊的數字，空缺不結清。
+
+### 2. ⭐⭐⭐ 在位基準線入庫：DSC（die-side capacitor）是現行量產做法，而它的瓶頸是空間不是電性
+
+DELO（IMAPS DPC 2026，2026-03-04 簡報）：
+
+| 項目 | 數值 |
+|------|------|
+| 元件規格 | **0201 = 0.65 × 0.35 mm**；另測 **0402** |
+| 封膠（DELO PHOTOBOND） | **無填料**；**Young's modulus 10 MPa**；**Tg −40 °C**；**CTE >100 ppm/K**；**伸長率 90%**；黏度 **16,000 mPas** |
+| 固化 | **10–60 s @ 1,000 mW/cm²，LED 400 nm**（UV 噴射點膠） |
+| 可靠性 | MSL1、HTS 168/500 h @150 °C、uHAST 96 h @130 °C/85%RH、TCT −55~+125 °C ×1,000、reflow 5× @260 °C |
+| 主戰場 | **LGA 封裝（CPU）** |
+| 三組挑戰 | 極小 KOZ／極窄 die-to-component 間距／受限封膠高度；高量產相容性與點膠精度；全套可靠性 |
+
+➜ **新論述（⭐⭐⭐）**：「**業界把電容往基板內與晶背搬，不只是因為貼附的電性不夠好，而是因為貼附的空間已經用完。**」本 wiki 此前只記錄電性理由（迴路電感）。
+➜ **「去耦電容物件化」（2026-10-01 論述 1）的八個載體之外，DSC 是第九個位置，也是唯一已大量量產的在位做法**；其實體尺寸（0201 = 0.65×0.35 mm = **0.2275 mm²**）使「埋入 vs 貼附」第一次能用面積比較。
+➜ **新論述（⭐⭐⭐，本 wiki 歸納）**：「**在 KOZ 極小且元件極脆的位置，界面材料的任務從『約束』轉為『順從』。**」DSC 封膠（10 MPa、CTE >100 ppm/K、Tg −40 °C、90% 伸長）與本 wiki 其他界面材料（底填料、NCF、ABF，皆追求高模數／低 CTE）**方向完全相反**。⚠ 原文未如此表述。
+*Source: [[sources/2026-10-02_imaps-dpc2026_delo-die-side-capacitor-encapsulation]]*
+
+### 3. ⭐⭐⭐ 調節器與電容被當成一個不可分割的物件一起搬進中介層核心
+
+**Samsung CN122602880A**（族 100862645，2026-08-18，發明人兩位皆日本姓名）：中介層**內部**同時容納 **IVR 晶片**與**第一電容器**；中介層＝芯層＋上下佈線層＋貫穿通孔；**核心限定：IVR 晶片與電容器至少一部分在垂直方向上彼此重疊**。
+
+➜ **供電落點地圖新增一格：中介層核心層內（調節器＋電容）。**
+➜ **新論述（⭐⭐⭐）**：「**『越靠近負載越好』的實作不是把電容單獨搬近，而是把『調節器＋其輸出電容』當成一個不可分割的物件一起搬，並要求兩者垂直對齊以最小化迴路。**」
+➜ **Samsung 在供電軸自此有專利管道**（此前僅有 2026-10-01 之高麗大合著學術管道）。
+⚠⚠ **2026-10-01 列為⭐⭐⭐最高優先的「調節器越近負載 vs 轉換熱越近熱點」取捨曲線仍不結清**：本件把轉換熱源放進中介層核心（熱路徑上位於晶粒與基板之間），**但原文完全未討論熱**。
+⚠ **全篇無量化值**（無效率、無電容值、無厚度）⇒ 不得與 Infineon µΩ 三階或 arXiv 2606.28837 之 84%／87.6% 效率比較。
+*Source: [[sources/2026-10-02_epo_samsung-cn122602880a-ivr-capacitor-interposer-core]]*
+
+### 4. ⭐⭐⭐ 「3 A/mm² 密度障壁」的成因出現第三個候選：磁性元件
+
+Tyndall National Institute × University College Cork（JMMM，2026-09-02）：柱狀 FeCoB-N 薄膜，目標 **>100 MHz 整合式 PwrSoC**。
+
+| 參數 | 5 mTorr → 10 mTorr |
+|------|--------------------|
+| 電阻率 ρ | **1,897 → 3,024 µΩ·cm** |
+| 矯頑力 Hc | **91 → 135 Oe** |
+| 飽和磁通密度 Bs | **1.66 → 1.40 T** |
+| µ′ @100 MHz | **12 → 7** |
+| FMR | **全部 >1 GHz** |
+| FEM 模擬（5 mTorr 核心 vs 空芯 stripline） | 電感 **+~180%**、Q **+~155%**（@≥100 MHz） |
+
+➜ **三個候選限制項現已齊備**：**熱**（arXiv 2606.28837：PDN 熱達負載功率約 40%）、**導體材料**（SemiEng：鉬接觸電阻比鎢低 50%）、**磁芯**（本件：Bs 1.4–1.66 T 與磁芯損耗限制可通過電流與可縮小佔地）。
+⚠⚠ **本件完全未給 A/mm²、未引用 3 A/mm²** ⇒ **此連結為本 wiki 之假設，不得記為已證實。**
+➜ **新論述（⭐⭐⭐）**：「**磁芯是一條與玻璃材料選擇同構的妥協曲線：單一製程參數（濺鍍壓力）同時使電阻率變好而磁性能變壞，故不存在最佳值，只有最佳折衷。**」且模擬採用的最佳點是 **5 mTorr（低壓、高 Bs、高 µ′）** ⇒ **結論偏向「不要過度追求電阻率」**（⚠ 本 wiki 推論）。
+➜ **新橫向論述（⭐⭐⭐）**：「**在導體裡孔洞是缺陷，在磁芯裡孔洞是設計。**」對照本輪 `10.4071/001c.167760`（鍍銅 Cavity 必須 0%）與 2026-09-30 大阪大（無電鍍銅孔洞 4.5–9.6% 為失效根因）。
+⚠ 本件 **>100 MHz** 與 Saras 內嵌電容之 **2–10 MHz** 相差 10–50×，**但不是同一元件層級**（開關頻率/電感 vs 基板內嵌去耦電容）⇒ 不得並列比較；惟此差距本身是頻域分層的一個新刻度。
+*Source: [[sources/2026-10-02_jmmm_tyndall-fecob-n-pwrsoc-magnetics]]*
+
+### 2026-10-02 新增空缺
+
+- [ ] ⭐⭐⭐ **Intel 橋內 MIM 500 fF/µm² 的口徑**（MIM 佔地面密度？橋面積面密度？）—— 無此則三個密度落點仍不可比
+- [ ] ⭐⭐⭐ **DSC 服務的頻段落點**（頻域分層缺此一層）；以及 DSC 與基板內嵌電容在同一封裝內是否並存
+- [ ] ⭐⭐⭐ **Samsung CN122602880A 的轉換效率與電容值**；IVR 置於中介層核心的熱代價
+- [ ] ⭐⭐ **FeCoB-N 的膜厚、電感器幾何、損耗分項（渦流 vs 磁滯）**，以及是否有量測（而非 FEM）結果
+- [ ] ⭐⭐ **磁芯 Bs 與可達 A/mm² 的定量關係**（若能建立，則 3 A/mm² 障壁的成因可結清）
+- [ ] ⭐⭐ **DSC 封膠的 TCT 結果**（原文列為後續動作，尚未公開）
+- [ ] 📌 既有未結清項延續：2–4 A/mm²（arXiv）與 >3 A/mm²（Infineon）的截面口徑；「約 40% 負載功率成為 PDN 熱」的條件；A1/A2/A3 分項效率；Empower ECAP 厚度/體密度/ESL/ESR；NPC 口徑定義；以混合接合整合電容所需之對準規格 —— **本輪均無進展**

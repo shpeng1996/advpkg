@@ -3,8 +3,8 @@ title: "CoPoS — Chip-on-Panel-on-Substrate"
 category: technology
 tags: [panel-level-packaging, FOPLP, TSMC, CoPoS, AI, HPC, AP7, InFO]
 created: 2026-04-25
-updated: 2026-09-27
-sources: [2026-09-27_tradingkey_copos-glass-validation-08mm-85x110mm, 2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-04-13_trendforce_copos-pilot, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2025-09-12_trendforce_foplp-competitive-landscape-2025, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-20_wccftech_tsmc-copos-glass-core-cost-cut, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-04-28_cw_tsmc-copos-move-really-means, 2026-06-14_digitaltrends_tsmc-copos-glass-temporary-carrier, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-28_xianfeng_cn122476946a-alignment-mark-protection, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition]
+updated: 2026-10-02
+sources: [2026-09-27_tradingkey_copos-glass-validation-08mm-85x110mm, 2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-04-13_trendforce_copos-pilot, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2025-09-12_trendforce_foplp-competitive-landscape-2025, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-20_wccftech_tsmc-copos-glass-core-cost-cut, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-04-28_cw_tsmc-copos-move-really-means, 2026-06-14_digitaltrends_tsmc-copos-glass-temporary-carrier, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-28_xianfeng_cn122476946a-alignment-mark-protection, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-10-02_trendforce_nvidia-glass-substrate-2028-taiwan, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_imaps-dpc2026_defect-free-coplanar-copper-via-fill]
 related:
   - wiki/technologies/rdl.md
   - wiki/technologies/cowos.md
@@ -544,3 +544,35 @@ CoPoS 採 **310×310 mm** 面板。本輪取得 **Amy Lujan（SavanSys）IMAPS 2
 - **The Elec**：於**采鈺 VisEra** 建試產線。⚠ VisEra 為 TSMC 與豪威合資之**影像感測器廠**。
 - 既有記述另有 **TSMC × AUO 於龍潭**（[[sources/2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan]]）。
 ➜ **兩說並列不裁定。** 面板尺寸 **310 × 310 mm** 則已取得**第五個獨立來源**（Lau/Lujan 成本模型、Evatec、SkyWater 300 mm、Schmid、本輪 The Elec）。
+
+## 2026-10-02 新增：面板尺寸出現第三個規格（620×670 mm）★★
+
+TrendForce（2026-09-30）：**Innolux 以 620 × 670 mm 格式與客戶驗證 TGV**；**Corning 與 AUO 共同展出 510 × 515 mm**。
+
+本頁既有的面板尺寸落點加上本輪新增：
+
+| 尺寸 | 推動者 | 面積（相對 310×310） |
+|------|--------|---------------------|
+| **310 × 310 mm** | TSMC CoPoS／SCHMID（本 wiki 既有，2026-05-19） | **1.00×** |
+| **510 × 515 mm** | Intel 玻璃核心面板／Corning×AUO／LPKF 工具平台（Nexar 全系列） | **2.73×** |
+| **620 × 670 mm（本輪新增）** | **Innolux（面板廠）** | **4.32×** |
+| （參考）240 × 240 mm | Intel EMIB-T 四分之一面板測試載具（本輪 SemiAnalysis） | 0.60× |
+
+➜ **新論述（⭐⭐⭐）**：「**面板級封裝的『面板』至今不是一個規格而是三個，且差異來源不是技術世代而是推動者的出身**：foundry 從晶圓級往上長（310×310），基板/設備端收斂在 510×515，**面板廠則直接搬用自己的既有尺寸（620×670）**。」
+➜ 與 2026-10-01 論述 8（面板廠的廠房與電力資產進入先進封裝）接合：**面板廠帶進來的不只是廠房與電力，還有它自己的尺寸標準。**
+⚠ **Innolux 620×670 的 TGV 規格（孔徑、AR、密度）未給。**
+⚠ **三種尺寸能否共存於同一供應鏈、設備是否可跨尺寸，無任何來源說明** ⇒ 新空缺⭐⭐⭐。
+
+### 相關（本輪交叉）
+
+- **LPKF 工具平台（本 wiki 2026-09-26 已入庫）全系列面板為 510×515 mm²**，TRL：LIDE **9**、Ablate **6–7**、Bond **6**、DirectWrite **5** ⇒ **設備端的成熟度集中在 510×515**，這對 620×670 是一個現成的障礙。
+- **IMAPS DPC 2026（`10.4071/001c.167760`）之 IC 基板鍍銅目標封裝尺寸為 >100×100 mm**，L/S **<10/10 µm** ⇒ 鍍銅端的目標尺寸遠小於面板端 ⇒ **「面板級」在不同製程環節指的不是同一個尺度。**
+
+### 2026-10-02 新增空缺
+
+- [ ] ⭐⭐⭐ **三種面板尺寸能否共存／設備是否可跨尺寸**
+- [ ] ⭐⭐ **Innolux 620×670 mm 的 TGV 規格與良率**
+- [ ] ⭐⭐ **TSMC CoPoS 310×310 是否會隨玻璃導入而改尺寸**
+- [ ] 📌 既有未結清項：Lujan 310×310 mm PLP 成本分析淨結論 —— **本輪無進展**
+
+*Sources: [[sources/2026-10-02_trendforce_nvidia-glass-substrate-2028-taiwan]]、[[sources/2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo]]、[[sources/2026-10-02_imaps-dpc2026_defect-free-coplanar-copper-via-fill]]*

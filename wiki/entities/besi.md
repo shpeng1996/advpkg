@@ -3,8 +3,8 @@ title: "Besi (BE Semiconductor Industries) — 混合接合設備領導廠商"
 category: entity
 tags: [equipment, hybrid-bonding, die-attach, D2W, TCB, Netherlands]
 created: 2026-04-25
-updated: 2026-09-27
-sources: [2026-09-27_semieng_chip-week-156-india-tata-besi-izmo, 2026-03-01_3dincites_besi-packaging-power-shift, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-03-29_damnang_hybrid-bonding-cmp-gating-factor]
+updated: 2026-10-02
+sources: [2026-09-27_semieng_chip-week-156-india-tata-besi-izmo, 2026-03-01_3dincites_besi-packaging-power-shift, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-03-29_damnang_hybrid-bonding-cmp-gating-factor, 2026-10-02_bitschips_besi-q1-2026-hybrid-bonding-orders, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo]
 related:
   - wiki/entities/ev-group.md
   - wiki/technologies/hybrid-bonding.md
@@ -169,3 +169,40 @@ Applied Materials 與 Besi 共同開發的 **Kinex** 平台，首次取得量產
 
 ➜ **本 wiki 首次記錄 Besi 在印度的佈局**，使其客戶分佈自 Samsung／AMAT 合資關係擴展至新興區域；**Besi 是印度進入先進封裝的設備側切入點。**
 ➜ ⚠ 「合作開發能力」為**意向層級**：**無投資金額、無產能、無時程、無機種**。
+
+## 2026-10-02 新增：Q1 2026 訂單倍增、混合接合客戶 20 家 ★★★
+
+Bits&Chips（2026-04-23，作者 Paul van Gerven）：
+
+| 項目 | 數值 |
+|------|------|
+| Q1 2026 訂單 | **€269.7 M**，**YoY >2×** |
+| Q1 2026 營收 | **€184.9 M**，**YoY +28.3%** |
+| **Book-to-bill（本 wiki 計算）** | **≈1.46** |
+| **混合接合客戶數** | **20 家** |
+| Q2 2026 營收指引 | **+30~40%** |
+| 當期應用 | 高階行動裝置、**2.5D AI 運算** |
+| 已宣告未來領域 | 邏輯、記憶體、**共同封裝光學（CPO）**、消費性 |
+| CEO Richard Blickman | 「混合接合採用的步調正在加快，因為我們正接近 **2027–2030** 期間預期的新 AI 相關產品導入時點」 |
+
+➜ ⭐⭐⭐ **「20 家混合接合客戶」是本 wiki 第一個混合接合採用廣度的絕對數字**，且**遠多於本 wiki 已點名的廠商數** ⇒ **存在一批本 wiki 完全未追蹤的採用者。**
+➜ ⭐⭐⭐ **設備訂單（2026 Q1 倍增、book-to-bill ≈1.46）與採用方自述時程（2027–2030）之間的落差首次量化。** ⚠ 設備提前 1–3 年進場為常態，兩者不必然矛盾，但本 wiki 無法判定究竟是「採用將提前」或「設備將閒置」。
+➜ ⭐⭐ **CPO 首次被 Besi 明確列入混合接合目標領域** ⇒ 見 [[technologies/copackaged-optics]]。
+➜ ⭐⭐ **「高階行動裝置」並列為當期應用** ⇒ 混合接合非只服務 HPC。
+
+⚠ **€269.7 M 為全產品線訂單，不得當作混合接合設備市場規模。**
+⚠ **「20 家」未區分研發與量產採購，不得推論量產家數。**
+⚠ 日期 2026-04-23（約 5.3 個月前），位於 CLAUDE.md §3.1.3「近 6 個月」邊界內但偏舊。
+
+### 相關（本輪交叉）
+
+- **AMAT / EV Group：450 nm pitch @ 98% 良率**（SemiAnalysis ECTC 2026）⇒ 與本 wiki 既有 **AMAT × Besi Kinex 量產 100 nm @3σ 對準、2026 新機 50 nm、路線 <25 nm、吞吐 1,600–2,000 die/hr** 為**不同指標**（pitch 與良率 vs 對準精度與吞吐），⚠ **不得混用。**
+
+### 2026-10-02 新增空缺
+
+- [ ] ⭐⭐⭐ **那 20 家客戶是誰**（追蹤方式：Besi/ASMPT/AMAT 法說會、設備採購公告）
+- [ ] ⭐⭐⭐ **Q2/Q3 2026 實績是否達成 +30~40% 指引**
+- [ ] ⭐⭐ **Besi 混合接合機台的 CPO 版本規格與時程**
+- [ ] 📌 既有未結清項：Samsung 要求 Besi 做的機台設計變更 —— **本輪無進展**
+
+*Source: [[sources/2026-10-02_bitschips_besi-q1-2026-hybrid-bonding-orders]]*

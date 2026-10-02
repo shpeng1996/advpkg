@@ -3,8 +3,8 @@ title: "玻璃基板 / Glass Core Substrate"
 category: technology
 tags: [glass-substrate, TGV, panel-level, FC-BGA, CoPoS, Absolics, DNP, Rapidus, warpage, SeWaRe, glass-interposer, BOE, ULCVD, non-embedding, Lens-Technology, TPK-KY, Innolux, AUO, LG-Chem, singulation, patent-signal]
 created: 2026-05-08
-updated: 2026-10-01
-sources: [2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-27_tradingkey_copos-glass-validation-08mm-85x110mm, 2026-09-27_intel_us20260182414a1-asymmetric-buildup-cte-gradient-glass, 2026-09-27_samsung_us20260144093a1-bridge-on-tgv-mold-fixed, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-05-05_trendforce-insights_glass-substrate-development, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-05-29_3dincites_rapidus-2nm-advanced-packaging-ai-foundry, 2026-06-01_trendforce_intel-3dgs-india-glass-substrate, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-06-20_biggo_boe-glass-substrate-pilot, 2026-06-28_economy-ac_glass-substrate-global-race, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-08-18_trendforce_shinko-glass-substrate-22layer-glassem-delay, 2026-09-11_mssp_tgv-glass-biaxial-bending-ring-on-ring, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-03-13_kaneka_jp2026047137a-glass-core-polyimide-quantified, 2026-08-10_screp_low-k-organic-buffer-tgv-cu-metallization, 2026-08-04_jmrt_vacuum-assisted-void-free-cu-fill-tgv, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_patent_er-eng-glass-interposer-dual-carrier, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-30_epo_xiamen-anjieli-cn121335557a-silane-parylene-tgv, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth, 2026-09-30_epo_intel-jp2026116680a-glass-core-embedded-inductor-clusters, 2026-09-30_epo_intel-us20260040982a1-glass-package-liquid-metal-socketing, 2026-09-30_epo_amosense-wo2026019155a1-multilayer-glass-core-frit-bonding, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all]
+updated: 2026-10-02
+sources: [2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-27_tradingkey_copos-glass-validation-08mm-85x110mm, 2026-09-27_intel_us20260182414a1-asymmetric-buildup-cte-gradient-glass, 2026-09-27_samsung_us20260144093a1-bridge-on-tgv-mold-fixed, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-05-05_trendforce-insights_glass-substrate-development, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-05-29_3dincites_rapidus-2nm-advanced-packaging-ai-foundry, 2026-06-01_trendforce_intel-3dgs-india-glass-substrate, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-06-20_biggo_boe-glass-substrate-pilot, 2026-06-28_economy-ac_glass-substrate-global-race, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-08-18_trendforce_shinko-glass-substrate-22layer-glassem-delay, 2026-09-11_mssp_tgv-glass-biaxial-bending-ring-on-ring, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-03-13_kaneka_jp2026047137a-glass-core-polyimide-quantified, 2026-08-10_screp_low-k-organic-buffer-tgv-cu-metallization, 2026-08-04_jmrt_vacuum-assisted-void-free-cu-fill-tgv, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_patent_er-eng-glass-interposer-dual-carrier, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-30_epo_xiamen-anjieli-cn121335557a-silane-parylene-tgv, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth, 2026-09-30_epo_intel-jp2026116680a-glass-core-embedded-inductor-clusters, 2026-09-30_epo_intel-us20260040982a1-glass-package-liquid-metal-socketing, 2026-09-30_epo_amosense-wo2026019155a1-multilayer-glass-core-frit-bonding, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-10-02_epo_shanghai-xianfeng-cn122622683a-glass-interposer-bridge, 2026-10-02_epo_semco-cn122054433a-glass-surface-roughness, 2026-10-02_trendforce_nvidia-glass-substrate-2028-taiwan, 2026-10-02_trendforce_intel-microled-glass-24-layer, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo]
 related:
   - wiki/technologies/rdl.md
   - wiki/technologies/copos.md
@@ -1818,3 +1818,99 @@ KAIST × 國家奈米加工中心（`10.1016/j.optlastec.2026.116355`，2026-09-
 - [ ] ⭐ 新月形微孔洞是否與大阪大之無電鍍銅奈米孔洞（4.5%／9.6%）在同一界面疊加
 - [ ] ⭐ 脈衝能量調控策略的參數窗口與對 throughput 的影響
 - [ ] 族 94125492 之 US／EP 同族與請求項全文
+
+## 2026-10-02 新增：第五個維度（表面佈線密度）、粗糙度分面設計、需求端出現 NVIDIA ★★★
+
+> ⚠ **lint 待辦**：本頁本輪再增一大段，**已明顯超過 1,900 行**。2026-09-29／30／10-01 連續三輪建議之段落重組（現應為七段，本輪須再加第八段「玻璃面佈線密度的上限與其補救」）**優先序再上調為必須**。
+
+### 1. ⭐⭐⭐ 第五個維度：玻璃的表面佈線密度上限，以及它為何需要外掛橋來補
+
+**上海先封科技 CN122622683A**（族 100912127，2026-08-21，本 wiki 首見申請人，六名發明人）：
+
+- 玻璃基底開**貫穿容納開口** → 開口內**嵌設帶互連線路的互連橋**。
+- 限定：**橋的線路密度 > 玻璃基底上下兩面 RDL 的線路密度**。
+- 申請人自述分工：**玻璃基底＝垂直導通（TGV）＋全局佈線（保留低介電常數、低高頻損耗、熱穩定性）；橋＝局部細間距高密度短距互連**。
+- 申請人自述動機（原文）：**「彌補玻璃表面線路密度不足導致有限封裝尺寸空間高密度互連不足的缺點」**。
+
+➜ **本頁此前處理四個維度：熱機械（CTE／模數）、TGV 製程可加工性（NBO／網絡聚合度）、介電損耗、以及（2026-10-01 起）核心層的功能化空間。本件新增第五個：表面佈線密度上限。**
+➜ **新論述（⭐⭐⭐）**：「**玻璃不是矽中介層的直接替代品，而是一個需要搭配局部高密度橋的載體。** 其結構與 Intel EMIB 的『用小塊高密度載體補大面積載體的密度不足』**同形**，只是被補的對象從有機基板換成玻璃。」
+➜ **與 2026-10-01 論述 6/7 互補**：那兩條說「玻璃難加工」（NBO 決定側壁粗糙度；製程不可跨牌號移植），本件說「**即使加工成功，玻璃面上做不出足夠細的線**」。
+⚠ **本件無任何量化值**（未給橋的線寬／間距、未給玻璃面 RDL 密度、未給開口尺寸）⇒ **「玻璃面 RDL 的 L/S 實績」為新空缺**。對照本輪 SemiAnalysis：有機/矽 RDL **現行量產 2/2 µm、路線圖 1/1 µm**。
+➜ **中國大陸的玻璃基板專利活動已自材料與 TGV 金屬化延伸到架構層**（本輪為第三個大陸新申請人，前為厦門安捷利美維、北京芯力）。
+*Source: [[sources/2026-10-02_epo_shanghai-xianfeng-cn122622683a-glass-interposer-bridge]]*
+
+### 2. ⭐⭐⭐ 粗糙度不是單一指標而是分面的設計變數：SEMCO 刻意讓上下表面比孔壁更粗
+
+**Samsung Electro-Mechanics CN122054433A**（族 99735101，2026-05-15，發明人 JI YONG-WAN，IPC 含 **H05K3/426 電鍍**）。請求項核心是三個表面之間的**粗糙度不等式**：
+
+- Ra(玻璃上/下表面) **>** Ra(玻璃側面／孔壁)
+- Ra(金屬通孔上/下端面) **>** Ra(玻璃側面／孔壁)
+
+➜ **新論述（⭐⭐⭐）**：「**粗糙度在玻璃基板上不是單一的好壞指標，而是分面的設計變數：孔壁要光（電性、金屬化可靠性、熱機械穩定性），上下表面要粗（鍍層與介電層的附著）。**」
+➜ **方向與 2026-10-01 入庫之中科院微電子所論文（`10.1016/j.mssp.2026.111206`）相反而不矛盾**：該篇把**側壁**粗糙度認定為同時劣化三者的根本問題並歸因於 NBO；本件處理的是**上下表面**。
+➜ **部分回應⭐次高優先空缺「把大阪大『無電鍍層 4.5–9.6% 孔洞 + Pd 偏析』外推到玻璃 TGV」：種子層附著的手段自此分為兩大類。**
+
+| 類別 | 手段 | 落點 |
+|------|------|------|
+| **化學官能化** | 矽烷（Corning WO2026164778A1）、ZnO 奈米線 + Pd 活化（Intel）、矽烷 + parylene 串聯（厦門安捷利美維 CN121335557A） | 三條 |
+| **機械粗化（本輪新增）** | **以表面形貌取得附著力**（SEMCO CN122054433A） | 第四條 |
+
+➜ **金屬通孔端面也被要求粗化** ⇒ 不只玻璃-鍍層界面，**銅-後續介電層界面**同樣納入同一設計原則。
+⚠⚠ **請求項只給不等式，不給絕對值（無 Ra 的 nm 數字）** ⇒ **無法與 AGC、Corning、中科院、本輪 LPKF（表面波紋 ±100 nm／粗糙度 ±30 nm，CPO 耦合用）之任何數字比較。**
+*Source: [[sources/2026-10-02_epo_semco-cn122054433a-glass-surface-roughness]]*
+
+### 3. ⭐⭐⭐ 需求端第一次出現 NVIDIA，且面板尺寸出現第三個規格
+
+TrendForce（2026-09-30，⚠ **全文為 reportedly 之產業傳聞，非 NVIDIA 官方確認**）：
+
+- NVIDIA 評估玻璃基板用於次世代 AI 晶片封裝；夥伴含德國 **SCHMID**；**要求韓日台基板廠「兩年內完成開發」** ⇒ 2028 前採用有可能；黃仁勳曾與 SK 集團會長討論含玻璃基板之次世代技術。
+
+| 供應商 | 角色 | 狀態與數值 |
+|--------|------|-----------|
+| **AUO 友達** | 玻璃加工、RDL、金屬化 | 規劃試產線，**資本支出 NT$8.6B** |
+| **Innolux 群創** | TGV | 客戶驗證中，**620 × 670 mm** |
+| **Corning** | 半導體級玻璃 | 與 AUO 共同展出 **510 × 515 mm** |
+| **GTOC** | 熱成形 | 開發 TGV，已提專利 |
+| **TPK-KY 宸鴻** | TGV | **中壢試產線自 2026-09 初運作** |
+
+➜ **新論述（⭐⭐⭐）**：「**若傳聞為真，玻璃基板將自「供給端（基板廠／foundry）推動」轉為「最大客戶（NVIDIA）拉動」，動力學完全不同。**」⚠ 須永久保留 reportedly 限定。
+➜ **面板尺寸三落點**：**310×310 mm**（TSMC CoPoS／SCHMID）、**510×515 mm**（Intel／Corning／LPKF 工具平台）、**620×670 mm（Innolux，本輪新增）**。620×670 比 510×515 面積大約 **1.58×**。
+➜ **新論述（⭐⭐⭐）**：「**面板廠帶進先進封裝的不只是廠房與電力（2026-10-01 論述 8），還有它自己的尺寸標準。**」⚠ 不同尺寸能否共存於同一供應鏈，無來源說明 ⇒ 新空缺。
+➜ **台／日／韓三地玻璃陣營首次三方皆有具名清單**（日：Shinko/Ibiden/DNP/Toppan/AGC/NEG；韓：Absolics/SEMCO/Amosense；台：AUO/Innolux/TPK-KY/GTOC + Corning 材料）。
+*Source: [[sources/2026-10-02_trendforce_nvidia-glass-substrate-2028-taiwan]]*
+
+### 4. ⭐⭐⭐ Intel 玻璃核心 24 層取得兩個獨立來源，且首次有通孔缺陷率絕對數字
+
+| 來源 | 層數 | 尺度 | 其他 |
+|------|------|------|------|
+| SemiAnalysis ECTC 2026（2026-07-02） | **24 層** | **510 × 515 mm 面板** | 銅填 TGV |
+| TrendForce（2026-09-22，Intel 微 LED 玻璃基板專利報導） | **24 層（無缺陷）** | **~78 × 77 mm 工程樣品** | **通孔不導通 0 ppm**；製程序：雷射誘導蝕刻→化學蝕刻→銅電鍍 TGV→晶粒嵌入→氮化矽接合層；印度廠 **70,000 片/年玻璃基板、5,000 萬組裝單元**；量產 **2028–2030** |
+
+➜ **0 ppm 通孔不導通是本頁第一個玻璃 TGV 的缺陷率絕對數字**（既有皆為定性或間接：Absolics 溶出雜質 ppb 請求項、STATS ChipPAC 邊緣塗層 −33.5% 翹曲）。⚠ 廠商/專利自述，**樣本數與條件未給，不得作為產業水準**。
+⚠⚠ **兩個 24 層的尺度相差約 44×（510×515 vs 78×77 mm）⇒ 不得合併為單一結論。**
+➜ **印度首次進入本頁的玻璃基板地理版圖。** ⚠ 兩個產能數字層級不同（基板 vs 組裝單元），**不得相除**。
+➜ **玻璃核心的邊緣是獨立失效源**：SemiAnalysis 載 **STATS ChipPAC 邊緣塗層使翹曲 −33.5%，且未塗層玻璃核心封裝可靠性測試直接失敗**。本頁首次取得此量化證據。
+⚠ **與既有「Intel 2025-08 停止內部玻璃核心基板投資」（IFTLE 638）並列時須標注時序**：本件原始申請 2022、報導 2026-09、量產 2028–2030 ⇒ **三者不足以判定 Intel 玻璃路線現況。**
+*Sources: [[sources/2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo]]、[[sources/2026-10-02_trendforce_intel-microled-glass-24-layer]]*
+
+### 5. ⭐⭐ 「玻璃核心＝元件機殼」本輪取得四個同向證據
+
+2026-10-01 建立之論述（玻璃核心正變成可容納異質元件的通用載體）本輪新增：
+
+1. **發光元件**：Intel 微 LED 奈米線嵌入玻璃，TGV 直接供電（TrendForce 2026-09-22）
+2. **調節器＋電容**：Samsung CN122602880A（IVR 晶片與電容垂直重疊於核心層內；⚠ 核心材料未限定為玻璃）
+3. **互連橋**：上海先封 CN122622683A（見上）
+4. **被動元件與散熱件**：SEMCO 玻璃腔體系列（CN122206283A／CN122138733A／CN122094530A／US20260143595A1／US20260122771A1 貫穿腔與盲腔內嵌元件；**CN121940955A 散熱件埋入玻璃層內**）—— ⚠ **本輪見而未採，列下輪候選**
+
+➜ **其中 CN121940955A 與 [[entities/etron]] 之「貫穿散熱孔 TTV 與 TGV 對接」構成「玻璃內熱通道」的第二個獨立實例。**
+
+### 2026-10-02 新增空缺
+
+- [ ] ⭐⭐⭐ **玻璃面 RDL 的 L/S 實績（µm）** —— 無此則「玻璃需要外掛橋」只是定性主張（對照：有機/矽 RDL 量產 2/2 µm、路線 1/1 µm）
+- [ ] ⭐⭐⭐ **玻璃基板各面的 Ra 目標值分別是多少、分別由哪一種失效決定**（SEMCO 只給不等式）
+- [ ] ⭐⭐⭐ **310×310 / 510×515 / 620×670 mm 三種面板尺寸能否共存於同一供應鏈**；以及 Innolux 620×670 的 TGV 規格
+- [ ] ⭐⭐ **Intel 24 層的兩個尺度之間（78×77 → 510×515 mm）良率如何變化**
+- [ ] ⭐⭐ **玻璃邊緣塗層的材料與機制**（STATS ChipPAC −33.5% 翹曲；未塗層直接失敗）
+- [ ] ⭐⭐ **AUO NT$8.6B 對應的產能與尺寸**（⚠ 金額不得反推產能）；TPK-KY 中壢試產線的產能／尺寸／良率
+- [ ] ⭐ **SEMCO 45 件玻璃案之 Range 26-45 續掃**，以及下輪第一順位 **US20260255473A1（玻璃作為「皮」而非「核」：上下各一層薄玻璃夾有機絕緣層）**
+- [ ] 📌 既有未結清項延續：Corning「small via diameter」之頂/腰/底（已四度修正提問方式）、Intel 第三襯層（100–250 nm）材料與功能、ZnO 奈米線在 B-HAST/TCT 下穩定性、玻璃中介層薄化的破片率/良率代價、玻璃體內直寫波導的 dB/cm、低 NBO 玻璃的 CTE/模數是否反而不利 —— **本輪均無進展**

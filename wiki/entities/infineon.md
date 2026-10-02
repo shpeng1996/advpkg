@@ -3,8 +3,8 @@ title: "Infineon Technologies — 英飛凌"
 category: entity
 tags: [Infineon, power-delivery-packaging, PDN, vertical-power-delivery, BVM, current-density, 48V, rack-power]
 created: 2026-09-30
-updated: 2026-10-01
-sources: [2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier]
+updated: 2026-10-02
+sources: [2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-10-02_jmmm_tyndall-fecob-n-pwrsoc-magnetics]
 related:
   - wiki/concepts/power-delivery-packaging.md
   - wiki/concepts/thermal-management.md
@@ -146,3 +146,42 @@ arXiv 2606.28837（UIC × Georgia Tech × Penn State，2026-06-27，Madhavan Swa
 - [ ] ⭐⭐⭐ 2–4 A/mm²（arXiv）與 >3 A/mm²（Infineon）是否同一截面口徑
 - [ ] ⭐⭐⭐ 3 A/mm² 障壁的物理限制項（**連續第二輪未結清**）
 - [ ] 📌 **既有未結清項延續**：BVM 之「10–15 µ」單位確認（本 wiki 之 µΩ 為推定）；兩組機櫃口徑的定義（`<250 kW/rack` vs `<60 kW`）；「約 50% 的 48 V 系統故障與 48 V 電源相關」之口徑 —— 本輪均無進展
+
+## 2026-10-02 新增：3 A/mm² 障壁的第三個候選限制項；Infineon 專利軌本輪無收穫 ★★
+
+### 1. ⚠ Infineon 專利軌已執行，無封裝 PDN 收穫
+
+依 2026-09-30 之建議 1（⭐最高優先：查證「3 A/mm² 密度障壁」的物理限制項，並將 Infineon 專利列為 Track B 輪替對象），本輪執行：
+
+| 檢索式 | 命中 |
+|--------|------|
+| `pa="infineon" and ti,ab="power" and ti,ab="substrate" and pd within "2026"` | **僅 2 件** |
+
+命中者：**US20260165111A1**（Infineon Technologies Austria，2026-06-11，Semiconductor Device Metallization Contact Structure）、**CN121463521A**（同申請人，2026-02-03，Power semiconductor device）—— **皆為功率元件本體，與封裝層 PDN 無關。**
+
+➜ **結論：Infineon 的封裝層供電工作並未以此類詞彙進入 2026 年公開案。** ⚠ 依 2026-09-30 作業規範（23），**不得據此斷言 Infineon 無相關專利**，僅能說**此檢索式無效**。
+➜ **追蹤方式更新**：改以 `pa="infineon" and ti,ab="voltage regulator"`、`pa="infineon" and ti,ab="inductor"`，或 CPC（IVR 類 H10W44/5 系列）；並優先追 Infineon 於 **APEC／PCIM／IMAPS** 的其他發表。
+
+### 2. ⭐⭐⭐ 第三個候選限制項：磁性元件（Tyndall × UCC）
+
+JMMM（2026-09-02）柱狀 FeCoB-N 薄膜，目標 **>100 MHz 整合式 PwrSoC**：
+
+| 參數 | 5 mTorr → 10 mTorr |
+|------|--------------------|
+| 電阻率 ρ | **1,897 → 3,024 µΩ·cm** |
+| 矯頑力 Hc | **91 → 135 Oe** |
+| **飽和磁通密度 Bs** | **1.66 → 1.40 T** |
+| µ′ @100 MHz | **12 → 7** |
+| FMR | **全部 >1 GHz** |
+| FEM 模擬（5 mTorr 核心 vs 空芯 stripline） | 電感 **+~180%**、Q **+~155%**（@≥100 MHz） |
+
+➜ **三個候選限制項現已齊備**：**熱**（arXiv 2606.28837：PDN 熱達負載功率約 40%）、**導體材料**（SemiEng：鉬接觸電阻比鎢低 50%）、**磁芯**（本件：Bs 與磁芯損耗限制可通過電流與可縮小佔地）。
+⚠⚠ **本件完全未給 A/mm²、未引用 3 A/mm²、未提及 Infineon** ⇒ **此連結為本 wiki 之假設，不得記為已證實。**
+➜ **若能建立「磁芯 Bs ↔ 可達 A/mm²」的定量關係，則 3 A/mm² 門檻成因可結清** ⇒ 追蹤方式自此改為此項。
+*Source: [[sources/2026-10-02_jmmm_tyndall-fecob-n-pwrsoc-magnetics]]*
+
+### 2026-10-02 新增空缺
+
+- [ ] ⭐⭐⭐ **3 A/mm² 障壁的物理限制項** —— **連續第三輪無進展**；追蹤方式本輪更新為「磁芯 Bs ↔ A/mm² 的定量關係」
+- [ ] ⭐⭐ **Infineon 封裝層 PDN 的專利布局**（本輪檢索式無效，須改以 voltage regulator／inductor／CPC 切入）
+- [ ] 📌 既有未結清項：BVM 之 µΩ 單位佐證、機櫃與處理器功耗數字的起點口徑 —— **本輪均無進展**

@@ -4288,3 +4288,49 @@ an（2028–2029 量產世代）為 CoPoS 最可能的首批量產客戶——�
   **處置**：依 `daily_git_push.bat` 既有做法（該批次檔開頭即刪除 `.git\index.lock`／`HEAD.lock`／`index.new`），將三個 lock **搬移**（非刪除）至 `_to_delete/stale_git_locks_2026-10-01/`，commit 後再次搬移新產生的 lock，確認 `.git/*.lock` 已清空、工作區乾淨。`_to_delete/` 已在 `.gitignore` 中，未進入提交。
   ⚠ **殘留**：`.git/objects/` 下有 **66 個 `tmp_obj_*` 檔**無法刪除（同一刪除權限限制）。**不影響 repo 完整性**（git 忽略這些檔名），但會逐輪累積；`daily_git_push.bat` 僅清 lock、不清 tmp_obj。➜ **建議在 `daily_git_push.bat` 加入 `del /f /q .git\objects\*\tmp_obj_*`，或由使用者定期執行 `git gc`。**
   ⚠ **未 push**：本輪只做本地 commit，未 `git push`（遠端推送留給 `daily_git_push.bat`）。
+
+## [2026-10-02] collect | 每日自動蒐集 — 先進封裝最新動態
+- 搜尋查詢數：新聞 7 組 / 專利 3 組 / 論文 3 組
+- 成功抓取：15 篇（articles 5, patents 5, papers 5, reports 0）
+- 失敗/跳過：13 篇（**已收錄 8**〔semiengineering: advanced-packaging-limits / glass-substrates-gain-momentum / panel-level-packagings-second-wave / the-rise-of-panel-level-packaging / tsmc-tech-symposium-2026；trendforce 5.5-reticle-cowos、schmid-310x310、chinas-lens-boe-glass；3dincites advanced-packaging-foundation〕、**過舊 3**〔semiengineering STAMP-2.5D 2025-05、what-works-best-for-chiplets 2024-04、Microsoft microfluidics 2025-09 —— 皆依 CLAUDE.md §3.1.3「近 6 個月」跳過〕、**無日期/無規格 2**〔AT&S 玻璃核心 2025-10 全篇無量化、Yole glass-core strategy insight 無日期無規格〕）
+  - **另：OpenAlex 論文軌 4 筆經 `_collected_urls.txt` 比對發現已收錄而正確跳過** —— `10.4071/001c.167501`（LPKF 玻璃 AP/CPO，2026-09-26 已收）、`10.4071/001c.167494`（TEL BSPDN overlay，2026-09-28 已收）、`10.4071/001c.166923`（Murata 奈米多孔矽電容，2026-09-29 已收）、`10.4071/001c.166924`（Saras STILE，2026-09-29 已收）。**⚠ 此四筆皆為 2026-09-30 所列之「下輪優先候選」，顯示該候選清單未與去重登錄檔交叉比對** ➜ **新作業建議：下輪候選清單寫入 log 前應先過一次 `_collected_urls.txt`。**
+  - 見而未採並列下輪候選（9 筆）：**Qualcomm US20260282961A1**（橋對位結構）、**Qualcomm US20260293712A1**（並置晶粒 device-to-device 橋＋雙晶粒 TSV＋基板雙路徑）、**Intel EP4815713A2**（橋晶粒屏蔽＋dummy die）、**SEMCO US20260255473A1**（玻璃作為「皮」而非「核」，**下輪第一順位**）、**SEMCO CN121940955A**（散熱件埋入玻璃層內）、**SEMCO US20260143595A1 / US20260129747A1 / US20260122773A1**、**TSMC US20260243980A1**；論文側：`10.1016/j.chip.2026.100222`（⚠ 已收錄）、`10.4071/001c.167017`（Lam CPO，摘要僅為條列）、`10.1016/j.mee.2026.112501`（CFET 混合供電，無摘要）、`10.35848/1347-4065/ae8afb`（Cu 互連劣化機制）、`10.4071/001c.165750`（Cadence 電源完整性）
+- 資料源狀態：WebSearch ACTIVE ✓ | EPO OPS ACTIVE ✓（**4 次呼叫：1 auth + 3 檢索，0 次明細呼叫** —— 發明人、IPC、摘要均由檢索回應直接取得，遠低於 10 次上限）| OpenAlex **ACTIVE ⚠ 降級運作**（見下方「環境異常」）
+- 新增 wiki 頁面：16 頁
+  - `wiki/entities/adeia.md`（⭐⭐⭐ 建頁觸發點：本 wiki 第一件 Adeia 自有專利入庫 US20260247631A1；此前僅以「混合接合授權方」散見於多頁）
+  - `wiki/sources/2026-10-02_*` × 15
+- 更新 wiki 頁面：21 頁
+  - `wiki/technologies/emib.md`（⭐⭐⭐ 七大段：**EMIB-T pitch 階段修正（已驗證 36/35 µm、25 µm 測試中）**、橋內 MIM 500 fF/µm²、橋的第八/九/十維度、**CPC H10W70/618 方法論（148 件 vs 詞彙法 2 件）**、玻璃內嵌橋、CoWoS-L 並存窗口）
+  - `wiki/concepts/power-delivery-packaging.md`（⭐⭐⭐ **電容密度階梯首次成形（0.5 / ≈2.3 / 4–8 µF/mm²）**、DSC 在位基準線、IVR＋電容埋入核心、**3 A/mm² 障壁第三個候選＝磁芯**）
+  - `wiki/technologies/glass-substrate.md`（⭐⭐⭐ **第五個維度＝表面佈線密度上限**、**粗糙度分面設計**、NVIDIA 需求端、面板尺寸第三規格、24 層兩來源＋0 ppm；**已逾 1,900 行**）
+  - `wiki/technologies/hybrid-bonding.md`（⭐⭐⭐ **20 家客戶 + book-to-bill ≈1.46 vs 2027–2030 時程落差**、W2W 研究紀錄 vs 可量產良率點 2.25×、HCB 熱效益分層）
+  - `wiki/concepts/test-metrology-packaging.md`（⭐⭐⭐ **EFI 光學屏障首見硬體解法**、**OEE 60–70%→80–90%**、KGD 搬運損失）
+  - `wiki/concepts/thermal-management.md`（⭐⭐⭐ 微流道能力階梯與第一個可靠性數字、**CPO 載體的熱理由（反直覺）**、HCB 稀釋 2–3.5×）
+  - `wiki/technologies/hbm4.md`（⭐⭐⭐ **HBM4E 同時收緊中介層層數與功耗兩個預算**、Marvell Custom HBM 量化、眼寬實測）
+  - `wiki/technologies/rdl.md`（⭐⭐⭐ 量產 2/2 → 路線 1/1 µm、玻璃面 RDL 密度成為獨立限制、IC 基板共平面性世代緊縮 2×/5×）
+  - `wiki/technologies/copackaged-optics.md`（⭐⭐⭐ Marvell OMIB 熱、Lightmatter M1000 組裝實績、混合接合進入 CPO）
+  - `wiki/technologies/cowos.md`（⭐⭐⭐ **CoWoS-S＝2 SoC + 8 HBM**、主流至 2028、微流道實測、**新空缺：LSI 是否內建電容**）
+  - `wiki/technologies/tsv.md`（⭐⭐⭐ TGV 粗糙度分面、玻璃通孔 0 ppm、bottom-up 填充對軸、FA 硬體 pitch 上限）
+  - `wiki/technologies/copos.md`（⭐⭐⭐ **面板尺寸三規格，差異來源是推動者出身而非技術世代**）
+  - `wiki/concepts/advanced-packaging-market.md`（⭐⭐ IC 基板市場 15.1→37.1B、CSP ASIC 時程表、AUO NT$8.6B、Besi book-to-bill）
+  - `wiki/concepts/geopolitics-advanced-packaging.md`（⭐⭐⭐ **玻璃基板入口三種（基板廠疊層／化學設備合資／面板廠玻璃加工）**、印度首次入庫）
+  - `wiki/entities/intel.md`（⭐⭐⭐ pitch 階段修正、橋內 MIM＝第九個電容落點、玻璃 24 層兩來源、細晶銅 175–200 °C）
+  - `wiki/entities/samsung.md`（⭐⭐⭐ 供電軸首見專利管道、HBM4E 雙重預算、SEMCO 45 件玻璃案、**建議新建 SEMCO 頁**）
+  - `wiki/entities/amd.md`（⭐⭐⭐ 首次以自有申請人進入橋的排他權層）
+  - `wiki/entities/qualcomm.md`（⭐⭐ 首次出現在橋式 2.5D 排他權層；**HBC 與橋案的方向張力列為新空缺**）
+  - `wiki/entities/besi.md`（⭐⭐⭐ Q1 2026 訂單倍增、20 家客戶）
+  - `wiki/entities/nvidia.md`（⭐⭐⭐ 首次出現在玻璃基板需求端；多路並行評估論述）
+  - `wiki/entities/infineon.md`（⭐⭐ **Infineon 專利軌已執行但無收穫**；3 A/mm² 第三個候選）
+  - `wiki/index.md`（頁數 752→768、來源 686→701、新增 1 實體 + 15 來源條目）、`wiki/overview.md`（8 項結清/部分結清、**26 條橫向論述**、**2 條新作業規範（24)(25)**、30+ 項新空缺、lint 待辦上調）
+- 主要新知識：**本輪的主線是「橋不再只是佈線，而是元件載體」—— 六個獨立落點同時出現**：Intel EMIB-T **橋內 MIM 500 fF/µm²（PDN AC 阻抗 >82% 改善）**、AMD **橋內記憶體控制器＋去耦電容**、Marvell OMIB **橋搬運光**、Samsung 光路橋（既有）、上海先封 **玻璃內嵌互連橋**、Qualcomm **橋對位結構**；使「橋的維度」軸自七個擴至十個（新增：是否承載主動邏輯／是否承載被動元件／側）。第二個主軸是**2026-10-01 之「去耦電容物件化」論述首次配上密度與頻率刻度**：三個落點（橋內 MIM **0.5** ＜ 基板內嵌矽電容 **≈2.3** ＜ 奈米多孔矽電容 **4→8 µF/mm²**）顯示 **面密度與離負載距離呈反向**，且 DELO 的 DSC 資料給出在位基準線（0201 ＝ 0.65×0.35 mm，封膠刻意很軟：10 MPa／Tg −40 °C／CTE >100 ppm/K）⇒ **業界把電容往內搬的理由不只是電性，而是「貼附的空間已經用完」**；Samsung CN122602880A 更把**調節器與其輸出電容當成一個不可分割的物件**一起埋進中介層核心並要求垂直重疊。第三個是 **Samsung HBM4E 的雙重預算緊縮（8 層中介層已比估計需求少 20%、其中 75% 給訊號、功耗 +86% vs HBM3E）⇒ 這為「電容必須搬離中介層」提供了一個此前未記錄的結構性理由：中介層裡已經沒有空間了。**
+- 專利訊號：**本輪五件的主線自上一輪的「電容物件化」轉為「橋的功能化」，並由單一 CPC 檢索一次性打開多人賽局。**（1）⭐⭐⭐ **AMD 首次以自有申請人進入橋層**（US20260282956A1：橋內記憶體控制器＋去耦電容），為「電容物件化」第八個載體且本 wiki 首見「橋即電容載體」。（2）⭐⭐⭐ **Adeia（混合接合基礎專利權利人，發明人含 Uzoh）開出第十個維度「側」**（US20260247631A1：上下各一枚連接元件）；Qualcomm US20260293712A1 落在同一維度 ⇒ **「橋在上方」已是兩家布局。**（3）⭐⭐⭐ **Samsung 在供電軸自此有專利管道**（CN122602880A，IVR＋電容垂直重疊於中介層核心，發明人兩位皆日本姓名 ⚠ 不得作為組織歸屬結論）。（4）⭐⭐⭐ **玻璃議題出現架構層的中國大陸新申請人**（上海先封 CN122622683A），並開出玻璃基板第五個維度（表面佈線密度上限）。（5）⭐⭐⭐ **SEMCO CN122054433A 以粗糙度不等式把「分面設計」寫進請求項**，使玻璃 TGV 種子層附著自此分為化學官能化與機械粗化兩大類。⚠ **量化狀況：五件之中無一件有量化值**（2026-10-01 亦為零）➜ **「專利軌訊號以定性為主」連續第二輪成立。**
+- 作業面發現（五項）：
+  1. ⭐⭐⭐ **2026-09-30 建議（b)「以 CPC H10W70/618 突破 direct-bonded bridge 的詞彙檢索失敗」本輪執行並大獲成功：CPC 回 148 件，詞彙法僅 2 件（且皆已收錄）。** 前 25 件即產出本輪兩件採用案（AMD、Adeia）與七個新/擴充落點（Qualcomm ×2、ASE、Shinko、Ciena、Innolux、Hana Micron、上海先封）。➜ **新作業規範（24）：橋議題一律以該 CPC 為主檢索軸。本輪僅掃 25/148，餘 123 件列下輪第一順位分頁續掃。**
+  2. ⭐⭐⭐ **IMAPS DPC 2026 之 DOI 直取 + OA PDF + pdftotext 流程連續第二輪驗證為單位配額產出最高者**：本輪以 5 次單筆 DOI 查詢取回完整詮釋資料，下載 7 份 OA PDF 並解析，產出 3 篇採用案（167760／167773／167772）。**命中率：2026-09-30 所列優先候選 3/3 全部可用，連續第五輪滿分。**
+  3. ⚠⚠ **但 2026-09-30 之優先候選清單有 4 筆其實早已收錄**（167501、167494、166923、166924）⇒ **候選清單與去重登錄檔未交叉比對。** 本輪在送出 OpenAlex 查詢後才以 `_collected_urls.txt` 發現，浪費 4 次查詢。➜ **新作業建議：下輪候選清單寫入 log 前先過一次 `_collected_urls.txt`；收集前先比對、而非收集後比對。**
+  4. ⚠⚠ **新聞軌的可用率本輪進一步下降：18 個候選 URL 中僅 5 篇可用（27.8%）。** 失敗分布：**已收錄 8**、**過舊 3**（2024-04、2025-05、2025-09 —— 搜尋引擎對 2026 年 9/10 月內容的索引明顯落後）、**無日期或無規格 2**。➜ **觀察：semiengineering.com 的先進封裝主題已近飽和（本輪 5 個候選全部已收錄）；trendforce.com 仍為最穩定的新增來源（本輪 3 篇採用皆出自此）；SemiAnalysis newsletter 首次入庫且為本輪最高價值單一來源（單篇含 40+ 量化數據點），應列為常駐候選。** 並：**2026-10-01 所列之 digitimes／electronicsweekly 降權本輪已執行（主動 blocked）。**
+  5. ⚠⚠ **本機 Linux workspace（device_bash）本輪完全不可用** —— 開場三次回報 starting，第四次回報 **「Workspace unavailable. The isolated Linux environment on this device failed to start.」**，其後未再恢復。**全程改以 device_list_dir / device_stage_files / device_commit_files 完成**：spec 與上下文以 stage 讀取，15 個 raw 檔與 38 個 wiki 檔於雲端容器產生後以 device_commit_files 寫回。➜ **本輪無因此遺漏任何 collect／ingest 步驟，但 spec §STEP 5 所假設的 bash heredoc 寫檔流程與 §QUALITY RULES 末句的 git commit 均無法執行（見下）。**
+- ⚠ **環境異常（兩項，需人工處置）**：
+  1. **device_bash（本機 workspace）啟動失敗，連續不可用。** 2026-10-01 已記錄其開場約 70 秒內三次 starting 後恢復；本輪**未恢復**。➜ **建議：（a）在 `schedule.md` 增列「workspace 不可用時的替代寫檔路徑（device_commit_files）」；（b）請使用者檢查 Claude 桌面應用的本機工作區狀態。** 若此狀態延續，**每輪的 git commit 都會被跳過**（見下）。
+  2. **OpenAlex 降級運作：單筆 DOI 查詢全部 200，但 `/works` 片語檢索第一次 429、重試後 200、第三次（bonding 軌）連續兩次 429。** 錯誤訊息同 2026-10-01：「Insufficient budget… no API key, counts against the free daily budget shared by everyone on your network's IP address」。本輪 Track C 因 DOI 直取與 PDN 軌已填滿配額而未降級，但**「bonding 軌加 `is_oa:true`」之建議連續第三輪未能執行**。➜ **2026-10-01 之建議未處置，本輪重申且上調為⭐⭐⭐：向 OpenAlex 申請免費 API key 加入 `.env`（如 `OPENALEX_KEY`），並更新 `schedule.md` §4 的 curl 範例加上 `api_key` 參數。**
+- ⚠ **未執行 git commit**：spec §QUALITY RULES 末句要求「After the routine finishes, stage and commit all changes with today's date as the commit message」。**本輪因 device_bash 不可用而無法執行任何 git 操作**（device_commit_files 只寫檔，不能跑 git）。➜ **工作區檔案已全部寫回 `D:\@source\AdvancedPackaging`，但處於未提交狀態（untracked/modified）。建議使用者執行 `daily_git_push.bat`，或下次 workspace 恢復時補提交。** 並：2026-10-01 所記之 `.git/objects/` 下 **66 個 `tmp_obj_*` 殘留檔**本輪未處理（同樣需 shell）。

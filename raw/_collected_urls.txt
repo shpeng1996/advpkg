@@ -715,3 +715,18 @@
 2026-10-01 | https://doi.org/10.1016/j.mssp.2026.111206 | raw/papers/2026-10-01_openalex_tgv-sidewall-undulation-nbo-glass-network.md | TGV sidewall undulation from glass NBO content
 2026-10-01 | https://doi.org/10.1016/j.optlastec.2026.116355 | raw/papers/2026-10-01_openalex_tgv-quartz-d263-picosecond-polarization.md | TGV quartz vs D263: 7 vs 10ps, circ pol +16-18%
 2026-10-01 | https://doi.org/10.3390/electronics15163523 | raw/papers/2026-10-01_openalex_pdn-decap-via-codesign-genetic-algorithm.md | PDN via+decap co-design, fewer decaps (KU+Samsung)
+2026-10-02 | https://newsletter.semianalysis.com/p/ectc2026 | raw/articles/2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo-roundup.md | ECTC2026: EMIB-T 36/35um, bridge MIM 500fF/um2
+2026-10-02 | https://www.trendforce.com/news/2026/09/30/news-nvidia-reportedly-explores-glass-substrates-2028-adoption-possible-as-taiwan-suppliers-step-up/ | raw/articles/2026-10-02_trendforce_nvidia-glass-substrate-2028-taiwan-suppliers.md | NVIDIA glass substrate 2028; Innolux 620x670mm
+2026-10-02 | https://www.trendforce.com/news/2026/09/22/news-intel-unveils-micro-led-based-glass-substrate-packaging-technology-patent/ | raw/articles/2026-10-02_trendforce_intel-microled-glass-substrate-patent.md | Intel microLED glass: 24-layer, 0ppm via, 78x77mm
+2026-10-02 | https://www.trendforce.com/presscenter/news/20260918-13241.html | raw/articles/2026-10-02_trendforce_cowos-l-mainstream-through-2028.md | CoWoS-L mainstream to 2028; CoWoS-S = 2 SoC + 8 HBM
+2026-10-02 | https://bits-chips.com/article/besi-sees-orders-double-on-hybrid-bonding-demand/ | raw/articles/2026-10-02_bitschips_besi-q1-2026-hybrid-bonding-orders.md | Besi Q1'26 EUR269.7M orders; 20 HB customers
+2026-10-02 | EPO:101296687:US20260282956A1 | raw/patents/2026-10-02_US20260282956A1_amd-silicon-bridge-memory-controller-decap.md | AMD silicon bridge w/ memory controller + decaps
+2026-10-02 | EPO:100903940:US20260247631A1 | raw/patents/2026-10-02_US20260247631A1_adeia-dual-sided-connecting-element.md | Adeia bridges both above and below proc+memory
+2026-10-02 | EPO:100862645:CN122602880A | raw/patents/2026-10-02_CN122602880A_samsung-ivr-capacitor-in-interposer-core.md | Samsung IVR die + cap vertically overlapped in core
+2026-10-02 | EPO:100912127:CN122622683A | raw/patents/2026-10-02_CN122622683A_glass-interposer-embedded-bridge.md | Shanghai Xianfeng glass interposer w/ embedded bridge
+2026-10-02 | EPO:99735101:CN122054433A | raw/patents/2026-10-02_CN122054433A_semco-glass-surface-roughness-tgv.md | SEMCO glass top/bottom Ra > sidewall Ra (TGV)
+2026-10-02 | https://doi.org/10.4071/001c.167760 | raw/papers/2026-10-02_openalex_defect-free-coplanar-copper-via-fill-ic-substrate.md | Bottom-up Cu via fill: 0% cavity, no post-bake
+2026-10-02 | https://doi.org/10.4071/001c.167773 | raw/papers/2026-10-02_openalex_delo-die-side-capacitor-encapsulation.md | DELO DSC encapsulant: 10MPa, Tg -40C, 0201 size
+2026-10-02 | https://doi.org/10.4071/001c.167772 | raw/papers/2026-10-02_openalex_gelpak-universal-carriers-singulated-die.md | Gel-Pak carriers: pick 99.8%, OEE 60-70->80-90%
+2026-10-02 | https://doi.org/10.1016/j.microrel.2026.116230 | raw/papers/2026-10-02_openalex_3dic-system-level-fa-hardware-pop-tiv.md | TUDelft+Google 3D IC FA: 210um pitch, 6.3Gbps
+2026-10-02 | https://doi.org/10.1016/j.jmmm.2026.174549 | raw/papers/2026-10-02_openalex_fecob-n-columnar-films-pwrsoc-magnetics.md | Tyndall FeCoB-N: 1897-3024uOhm.cm, L+180%, Q+155%

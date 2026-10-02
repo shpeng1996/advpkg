@@ -3,8 +3,8 @@ title: "先進封裝熱管理 / Thermal Management in Advanced Packaging"
 category: concept
 tags: [thermal-management, liquid-cooling, 3D-IC, CoWoS, heat-dissipation, TIM, ECTC-2025, GaN, power-delivery, co-design, patent-signal, delamination]
 created: 2026-04-25
-updated: 2026-10-01
-sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2025-12-01_semiengineering_thermal-management, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-02_trendforce_samsung-hbm5-computex2026, 2026-05-21_semieng_hi-roadmap-nature-paper-intel, 2026-08-13_semieng_1mw-rack-debate-thermal, 2026-04-27_semieng_semiconductor-materials-misbehave, 2026-08-21_trendforce_chip-packaging-heat-ai-bottleneck-cpo-stco, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_arxiv_umn-multi-kw-power-delivery-3d-hi, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier]
+updated: 2026-10-02
+sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2025-12-01_semiengineering_thermal-management, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-02_trendforce_samsung-hbm5-computex2026, 2026-05-21_semieng_hi-roadmap-nature-paper-intel, 2026-08-13_semieng_1mw-rack-debate-thermal, 2026-04-27_semieng_semiconductor-materials-misbehave, 2026-08-21_trendforce_chip-packaging-heat-ai-bottleneck-cpo-stco, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_arxiv_umn-multi-kw-power-delivery-3d-hi, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_samsung-cn122602880a-ivr-capacitor-interposer-core, 2026-10-02_imaps-dpc2026_delo-die-side-capacitor-encapsulation]
 related:
   - wiki/technologies/cowos.md
   - wiki/technologies/hybrid-bonding.md
@@ -935,3 +935,75 @@ arXiv 2606.28837（UIC × Georgia Tech × Penn State，2026-06-27）：
 - [ ] ⭐⭐ 「調節器越靠近負載」與「轉換熱越靠近熱點」的取捨曲線（2026-09-30 列管，本輪未進展）
 - [ ] ⭐ 銦合金 TIM 的接合後有效熱阻（而非 bulk 導熱率）
 - [ ] ⭐ `10.1002/admt.71344` 全文之三設計域量化判準（列為下輪候選）
+
+## 2026-10-02 新增：微流道冷卻的能力階梯與第一個可靠性數字；CPO 載體的熱理由 ★★★
+
+### 1. ⭐⭐⭐ 微流道冷卻首次有完整的能力階梯，且與既有兩個獨立來源同量級
+
+SemiAnalysis ECTC 2026 綜整（2026-07-02）：
+
+| 方案（TSMC CoWoS-R，直達矽） | 散熱能力 |
+|------|---------|
+| 傳統（1–2 LPM） | **1.9–2.3 kW** |
+| 無蓋冷板 lidless cold plate | **2.5–3.0 kW** |
+| **矽微柱 micropillar** | **4 kW @ 4 LPM；5.3 kW @ 8 LPM** |
+| 全測試載具均勻散熱 | **>5 kW** |
+
+➜ **三個獨立來源的交叉驗證**：本表（TSMC，實測載具）、既有 **CoWoS 4,100 W @2029**（foundry 路線圖）、Infineon **處理器 2–4 kW**（電源側）⇒ **「封裝級散熱上限落在數 kW」已由三方獨立支持。** ⚠ 口徑不同（實測 vs 路線圖 vs 功率預算），**不得合併為單一曲線。**
+➜ **新論述（⭐⭐⭐）**：「**冷卻能力隨冷卻液流量而增（4 kW@4LPM → 5.3 kW@8LPM：流量 2× 換得散熱 1.33×），是明顯的報酬遞減** ⇒ 流量不是免費的設計旋鈕。」⚠ 泵功耗未給。
+
+**Microsoft GH200 微流道**：
+
+| 指標 | 數值 |
+|------|------|
+| GPU junction-to-inlet 熱阻 | **−51~60% @ 1 LPM** |
+| HBM 熱改善 | **27–37%** |
+| 封裝總熱阻 | **−50%** |
+| **阻塞事件** | **約 4,370 次觀測中 9 次，歷時 6 個月** |
+
+➜ **本頁第一個微流道冷卻的可靠性數字（9/4,370 ≈ 0.21%，6 個月）。** 既有記載（Amkor CEO McCann 預判兩相冷卻為下一散熱轉型，2026-09-08）只有方向判斷。
+➜ **新空缺（⭐⭐⭐）**：**阻塞事件的後果**（可回復？需拆機？導致晶片損壞？）—— 無此則 0.21% 無法換算成可用性。
+
+### 2. ⭐⭐⭐ CPO 的 PIC 載體選擇首次有熱的量化理由，且方向反直覺
+
+**Marvell OMIB**（Optical Multi-Chip Interconnect Bridge）：
+
+| 指標 | 有機基板 | 矽中介層／橋 | 比值 |
+|------|---------|-------------|------|
+| PIC 溫升（滿 XPU 功率） | **<5 °C** | **~20–25 °C** | **4–5×** |
+| PIC 熱瞬態 | **~10 °C/s** | **~100–120 °C/s** | **~10×** |
+
+➜ **新論述（⭐⭐⭐）**：「**把 PIC 放在有機基板上比放在矽中介層/橋上對 PIC 更友善 4–5 倍（溫升）與約 10 倍（熱瞬態）** —— 與『矽導熱優於有機』的直覺相反，因為此處決定的不是材料導熱率，而是 **PIC 與高功率 XPU 之間的熱耦合路徑長度**。」⚠ 此機制解釋為本 wiki 推論，原文未明述 ⇒ 新空缺。
+➜ **對 [[technologies/copackaged-optics]] 的載體選擇論述是一個方向性的新約束。**
+
+**Lightmatter Passage M1000**（熱側）：**每象限 170 W（功率密度 1.47 W/mm²）**；**PIC 約 100 °C**（25 °C 冷卻液、**1.8 LPM/kW**）；封裝驗證 **>900 W，跨約 3 reticles**；翹曲 **~59 µm @260 °C → ~56 µm**（降溫後）。
+
+➜ **1.8 LPM/kW 是本頁第一個「單位功率所需冷卻液流量」的規格落點**，可與上表 TSMC 的 4 LPM@4kW（＝1 LPM/kW）對照 ⇒ **兩者相差 1.8×，顯示流量需求強烈依賴架構。** ⚠ 冷卻液種類與溫升條件不同，**不得相減。**
+
+### 3. ⭐⭐ 混合接合的熱效益會被串聯熱阻稀釋 2–3.5 倍
+
+Samsung HCB（詳見 [[technologies/hybrid-bonding]]）：HBM **內部**熱阻 **−12.2%（氣）/−12.9%（液）**，但 HBM **總**熱阻僅 **−3.5%（氣）/−7.7%（液）**；等效為入口溫度可 **+1~2 °C** 或同溫下封裝功率 **+~4%**；堆疊層級 HCB vs TCB **−19%**，**4× pad 密度時 −29.1%**。
+
+➜ **新論述（⭐⭐）**：「**接合層的熱阻改善傳到封裝總體時會被串聯的其他熱阻稀釋約 2–3.5 倍；且液冷下稀釋較輕（−7.7% vs −3.5%）⇒ 冷卻方式與接合方式不是獨立的設計選擇。**」
+➜ **4× pad 密度只換得 1.53× 的效益增幅（19% → 29.1%）** ⇒ 明顯報酬遞減。
+
+### 4. ⭐⭐ 供電轉換熱的落點再增一個，但取捨曲線仍空白
+
+**Samsung CN122602880A**（2026-08-18）把 **IVR 晶片與電容垂直重疊置於中介層核心層內** ⇒ **轉換熱源落在熱路徑上「晶粒與基板之間」。**
+
+➜ 2026-10-01 列為⭐⭐⭐最高優先的新問題「**調節器越近負載（PDN 損耗低）vs 轉換熱越近熱點**」的取捨曲線**仍完全空白**：本件只證實「業界選擇了這個落點」，**原文未討論熱**。
+
+### 5. ⭐⭐ 玻璃內的熱通道出現第二個獨立實例（見而未採，列管）
+
+**SEMCO CN121940955A**（族 99517467，2026-04-28，本輪見而未採）：**散熱件埋入玻璃層內**，且與玻璃上下表面隔開。
+
+➜ 與 [[entities/etron]] 之「貫穿散熱孔 TTV 與 TGV 對接、獨立散熱層」構成**「玻璃基板內建熱通道」的第二個獨立實例** ⇒ 2026-09 所建立之「熱是玻璃基板的第四個限制」論述取得第二個專利證據。⚠ 本件未入庫，**列下輪 Track B 候選。**
+
+### 2026-10-02 新增空缺
+
+- [ ] ⭐⭐⭐ **微流道阻塞事件（9/4,370，6 個月）的後果與可回復性**
+- [ ] ⭐⭐⭐ **「PIC 在有機基板上比在矽中介層上涼 4–5×」的機制**（熱耦合路徑長度？矽的橫向擴散把 XPU 熱帶到 PIC？）
+- [ ] ⭐⭐ **微流道的泵功耗**（流量 2× 換散熱 1.33×，若泵功耗非線性則最佳流量存在）
+- [ ] ⭐⭐ **1.8 LPM/kW（Lightmatter）vs 1 LPM/kW（TSMC 4kW@4LPM）的口徑差異**
+- [ ] ⭐⭐ **HCB 熱效益被稀釋的串聯熱阻分項**（哪一段吃掉了改善）
+- [ ] 📌 既有未結清項延續：「調節器越近負載 vs 轉換熱越近熱點」取捨曲線、Foveros 3D 與 BSPDN 熱代價是否疊加、TIM 材料值≠有效值的量化、晶背面積競爭 —— **本輪均無進展**
