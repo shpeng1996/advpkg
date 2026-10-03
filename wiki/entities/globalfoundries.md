@@ -3,7 +3,7 @@ title: "GlobalFoundries — 格羅方德"
 category: entity
 tags: [GlobalFoundries, silicon-photonics, copackaged-optics, PIC, SiPh, foundry, Malta-NY]
 created: 2026-09-27
-updated: 2026-09-27
+updated: 2026-10-03
 sources: [2026-09-27_globalfoundries_siph-cpo-bandwidth-density-coupling-budget]
 related:
   - wiki/technologies/copackaged-optics.md
@@ -63,3 +63,24 @@ related:
 - ⚠ 「Tb/s/mm」定義（每 mm 邊長 vs 每 mm² 面積）未確認，**不得與其他來源的頻寬密度相除比較**。
 - **CPO 的接合 pitch 門檻值**仍未取得（2026-09-18 空缺之剩餘部分）。
 - 無良率、吞吐、成本數據。
+
+---
+
+## 2026-10-03 更新：對準精度的三條路徑中，GF 代表「微影」一路
+
+**本輪 DELO 補上第三條路徑（膠材）**，使 CPO 對準精度的解法成為三條：
+
+| 路徑 | 做法 | 代表 |
+|------|------|------|
+| **機台** | 主動對準機台精度 | 設備商 |
+| **微影** | **把對準精度自機台轉移到微影** | **GlobalFoundries（既有）** |
+| **膠材** | **低且均勻的固化收縮** | DELO（本輪） |
+
+> ⭐⭐⭐ **三者與 Deca 的 Adaptive Patterning（把 die shift 交給量測＋每面板客製微影）同形：精度不必在原處解決，可外包給另一個製程環節。**
+
+**新量化基準（DELO）**：主動對準容許度以 MFD 計 —— **SMF28 9.5 µm vs UHNA4 4 µm（相差約 2.4×）**。
+⚠ **口徑不同**：GF 的既有數字為**損耗結果**（SSC ~0.4 dB／32 通道 V-groove <1 dB／Corning 玻璃橋 <1.5 dB/facet），DELO 的為**幾何容許度**，**不得互換或相減。**
+
+⚠ **既有⭐⭐ 註記「0.3–0.5 nm 疑為 µm 誤植」本輪無進展。**
+
+見 [[sources/2026-10-03_imaps_delo-optical-adhesive-alignment]]。

@@ -4334,3 +4334,52 @@ an（2028–2029 量產世代）為 CoPoS 最可能的首批量產客戶——�
   1. **device_bash（本機 workspace）啟動失敗，連續不可用。** 2026-10-01 已記錄其開場約 70 秒內三次 starting 後恢復；本輪**未恢復**。➜ **建議：（a）在 `schedule.md` 增列「workspace 不可用時的替代寫檔路徑（device_commit_files）」；（b）請使用者檢查 Claude 桌面應用的本機工作區狀態。** 若此狀態延續，**每輪的 git commit 都會被跳過**（見下）。
   2. **OpenAlex 降級運作：單筆 DOI 查詢全部 200，但 `/works` 片語檢索第一次 429、重試後 200、第三次（bonding 軌）連續兩次 429。** 錯誤訊息同 2026-10-01：「Insufficient budget… no API key, counts against the free daily budget shared by everyone on your network's IP address」。本輪 Track C 因 DOI 直取與 PDN 軌已填滿配額而未降級，但**「bonding 軌加 `is_oa:true`」之建議連續第三輪未能執行**。➜ **2026-10-01 之建議未處置，本輪重申且上調為⭐⭐⭐：向 OpenAlex 申請免費 API key 加入 `.env`（如 `OPENALEX_KEY`），並更新 `schedule.md` §4 的 curl 範例加上 `api_key` 參數。**
 - ⚠ **未執行 git commit**：spec §QUALITY RULES 末句要求「After the routine finishes, stage and commit all changes with today's date as the commit message」。**本輪因 device_bash 不可用而無法執行任何 git 操作**（device_commit_files 只寫檔，不能跑 git）。➜ **工作區檔案已全部寫回 `D:\@source\AdvancedPackaging`，但處於未提交狀態（untracked/modified）。建議使用者執行 `daily_git_push.bat`，或下次 workspace 恢復時補提交。** 並：2026-10-01 所記之 `.git/objects/` 下 **66 個 `tmp_obj_*` 殘留檔**本輪未處理（同樣需 shell）。
+
+## [2026-10-03] collect | 每日自動蒐集 — 先進封裝最新動態
+- 搜尋查詢數：**新聞 8 組 / 專利 4 組 / 論文 3 組**
+- 成功抓取：**14 篇**（articles **4**, patents **5**, papers **5**, reports 0）
+- 失敗/跳過：**約 24 篇**（已收錄 **11**、過舊 **7**、低信度或無數據 **3**、無新增價值 **3**）
+- 資料源狀態：**WebSearch ACTIVE ✓** | **EPO OPS ACTIVE ✓**（**5 次呼叫：1 auth + 4 檢索，0 次明細呼叫** —— 發明人、IPC/CPC、摘要、公開日均由檢索回應直接取得，遠低於 10 次上限）| **OpenAlex ACTIVE ✓**（**本輪全程 200，無 429** —— 連續三輪的降級運作本輪未重現；⚠ `OPENALEX_KEY` 仍為空，見下方環境事項）
+- 新增 wiki 頁面：**16 頁**
+  - `wiki/entities/semco.md`（⭐⭐⭐ 建頁觸發點：**本 wiki 第一件 SEMCO 載體架構層專利入庫（US20260231796A1）＋首次一手產業財務數據（$1.2B／2027 Q3）**；列管自 2026-10-02 之⭐⭐⭐缺實體頁）
+  - `wiki/concepts/substrate-materials-supply-chain.md`（⭐⭐ 建頁觸發點：**ABF 一手產業整理首次把市場集中度、缺口時程、世代路線圖與擴產投資集中於一處並附數字**；列管多輪之缺概念頁）
+  - `wiki/sources/2026-10-03_*` × 14
+- 更新 wiki 頁面：**19 頁**
+  - `wiki/technologies/glass-substrate.md`（⭐⭐⭐ 四大段：**第六個維度＝厚度**、**Intel TGV 界面四路線成形**、**核心層三條對立路線（功能化／取消／加厚）**、**橋補載體第三型**；⚠ **已達 1,992 行**）
+  - `wiki/technologies/hybrid-bonding.md`（⭐⭐⭐ **queue time 首次量化（Cu/O 1.30→0.73）**、**真空 vs 常壓電漿的取捨**、**記憶體用例 <20 專案/年 @ pitch <10 µm**、與上海大學 CN121511008A 的張力；⚠ **已達 2,056 行**）
+  - `wiki/technologies/emib.md`（⭐⭐⭐ 四大段：**第十一維度（免 TSV／懸掛）**、**橋的第三種定性＝被動元件**、**橋補載體第三型**、**CPC 檢索方法論與 Intel 占比 32%**）
+  - `wiki/technologies/foplp.md`（⭐⭐⭐ **第四種面板尺寸 600 mm ＋次單位 75×250 mm**、**面板的兩個獨立經濟驅動力**、Adaptive Patterning、MCV、兩次封膠兩次平坦化）
+  - `wiki/concepts/power-delivery-packaging.md`（⭐⭐⭐ **被動元件物件化擴及電阻且瓶頸為公差**、Qualcomm 垂直對齊電容、**DELO 兩膠 630× 對照**、Intel 整合電感未採管道）
+  - `wiki/concepts/test-metrology-packaging.md`（⭐⭐⭐ **可測性第三型態「讓缺陷可見」**、**「合格狀態有保存期限」**、2.5D 成像 AOI 與量測—製程閉環、清洗取得法規與成本驅動力）
+  - `wiki/technologies/hbm4.md`（⭐⭐⭐ **TSMC × Winbond**、custom HBM 四步流程與議約不確定性、**PHY 效益兩口徑禁止相減**）
+  - `wiki/technologies/copackaged-optics.md`（⭐⭐⭐ **對準精度三條路徑：機台／微影／膠材**、一膠 vs 兩膠、**MFD 9.5 vs 4 µm**、OB6268 完整性質）
+  - `wiki/technologies/tsv.md`（⭐⭐⭐ **襯層的空間分布成為設計變數**、2.5D AOI、**2 mm 厚玻璃的 AR 空缺**）
+  - `wiki/technologies/rdl.md`（⭐⭐⭐ **載體綁定的密度上限推廣為通用論述**、**RDL 自固定圖案變成依量測生成的圖案**、mSAP 電阻整合與方位效應）
+  - `wiki/technologies/copos.md`（⭐⭐ 面板尺寸表擴為四種、TSMC 面板級時程口徑差異、**設備生態落在 510×515 而非 310×310**）
+  - `wiki/concepts/advanced-packaging-market.md`（⭐⭐⭐ **最上游集中度高於最下游**、ABF 缺口與漲價、**漲價先於擴產見效**、**用量放大係數約 10×**）
+  - `wiki/concepts/geopolitics-advanced-packaging.md`（⭐⭐⭐ **ABF 對中國出貨 −30%＝本 wiki 槓桿強度最高的管制措施**、韓系玻璃四玩家、日韓時程落差）
+  - `wiki/concepts/thermal-management.md`（⭐⭐ 光學膠 Tg 202 °C vs PIC ~100 °C；玻璃核心＝元件機殼第五個證據）
+  - `wiki/entities/intel.md`（⭐⭐⭐ **TGV 界面四路線＋發明人重疊證明多路線並進**、**橋的反向布局**、**CPC 前 50 名占 8 件 32%**）
+  - `wiki/entities/ibiden.md`（⭐⭐⭐ **2.8× 產能倍數＋層數與尺寸路線圖全部結清**、**玻璃核心 ~2030 且理由為翹曲控制**）
+  - `wiki/entities/qualcomm.md`（⭐⭐⭐ **插槽讀法部分結清 HBC 張力，空缺降為⭐⭐並改述**）
+  - `wiki/entities/corning.md`（⭐⭐⭐ **與 Intel 的工程哲學對立完全成形**；small via 空缺改以 2.5D／三 CD 口徑追蹤）
+  - `wiki/entities/tsmc.md`（⭐⭐⭐ **× Winbond 新分工**、面板級時程口徑差異、設備生態反向訊號）
+  - 另：`wiki/entities/agc.md`（⭐⭐ **產品組合橫跨玻璃與有機**）、`wiki/entities/sk-hynix.md`（資源受限自述）、`wiki/entities/globalfoundries.md`（三條對準路徑中的微影一路）、`wiki/entities/onto-innovation.md`（三 CD 要求之量測端配套首例）、`wiki/entities/amd.md`（**US20260182429A1 雙層玻璃核心＋光學分類，列下輪第一順位**）
+  - `wiki/index.md`（頁數 768→784、來源 701→715、新增 1 實體 + 1 概念 + 14 來源條目）、`wiki/overview.md`（**8 項結清/部分結清、26 條橫向論述、2 條新作業規範（26)(27)、20+ 項新空缺、lint 待辦上調**）
+- 主要新知識：**本輪的主線是「界面工程的兩種哲學同時成熟」—— Corning 賭界面可以做牢（Ti/Cu 黏著層＋羥基富化＋矽烷官能化＋無電鍍種子層），而 Intel 的四條路線全部承認界面會失效（ZnO+Pd 官能化／雙襯層／部分襯層僅端部／聚合物緩衝層），且本輪新增的兩條使這個組合成形，其中聚合物緩衝層是唯一的「順從型」解法。更關鍵的是發明人重疊（Heaton Thomas 同時列名後兩件）首次讓本 wiki 能證明這是「多路線並進」而非「路線更替」。** 第二個主軸是 **DELO 以同一供應商、同一屆會議的兩個產品給出「約束 vs 順從」的兩個極端：DSC 封膠 10 MPa／Tg −40 °C／CTE >100 ppm/K／伸長率 90% vs 光學膠 OB6268 6,300 MPa／Tg 202 °C／CTE 37 ppm/K／伸長率 1.0% —— 模數相差 630 倍**，使 2026-10-02 論述 4 可改寫為更強的形式（膠材沒有單一的好方向，目標值由該界面的主導失效模式決定）。第三個是 **Plasmatreat 的 XPS 表首次把「queue time」從定性建議變成可排程數字：Cu/O 1.30（1h）→ 0.94（4h）→ 0.73（12h），而未處理基準為 0.69 ⇒ 有效窗約 1–4 h、12 h 幾近失效**；併同既有 Gel-Pak 搬運損失（0.2–1.5%）成立新論述「**合格狀態有保存期限**」，並為限制鏈補上一個正交軸。第四個是產業側：**ABF 一手整理給出「有機基板每邊超過約 120 mm 即失去可用平坦度」這個本 wiki 首個有機→玻璃交棒點的絕對數字，且與 Ibiden 2030 年 130×130 mm 目標、Ibiden 把玻璃核心放在 ~2030 且理由為翹曲控制三者完全吻合 ⇒「玻璃核心何時需要」在 Ibiden 路線圖裡是由封裝尺寸決定的時間點，而非技術偏好。** 並據此首次把玻璃核心時程拆為**依角色分層的三個時程（設備與基材 2026–27／專用廠 2027–28／主流 FC-BGA 基板廠 ~2030）**，使「玻璃基板量產延期」的既有敘事得到結構性解釋。
+- 專利訊號：**本輪五件的主線自上一輪的「橋的功能化」轉為「TGV 界面的工程哲學」，並在橋議題上出現一個與上一輪方向相反的布局。**（1）⭐⭐⭐ **Intel 以兩件同期案（US20260191063A1 部分襯層僅端部、US20260182404A1 聚合物緩衝層）補齊 TGV 界面四路線**，其中「襯層的位置」首次成為請求項層級的設計變數，在排他權層承認**孔緣與孔身的失效機制不同**。（2）⭐⭐⭐ **Intel CN122349366A 把東西從橋裡拿掉**（純佈線、免 TSV、可懸掛並於封裝底部露出、供電經柵狀金屬自周界外側跨入）⇒ 「橋的維度」軸自十擴至十一；**與 2026-10-02 主線並列而非推翻。**（3）⭐⭐⭐ **Qualcomm 以兩個獨立家族（98366373／98366085）把基板介電層內的同一位置分別填入「橋（被動元件）」與「記憶體（主動元件）」**，使該位置可讀為一個**可替換的插槽**，部分結清 HBC 與橋案的張力。（4）⭐⭐⭐ **SEMCO US20260231796A1 以「無核心＋有機橋」使「局部高密度橋補救載體密度上限」確立為跨載體通用手法（第三型）**，且同一家公司同時押注玻璃核心與完全無核心。（5）⚠ **量化狀況：五件之中無一件有量化值**（2026-10-01、10-02 亦為零）➜ **「專利軌訊號以定性為主」連續第三輪成立。**
+- 作業面發現（六項）：
+  1. ⭐⭐⭐ **新作業規範（26）：OpenAlex 報 `best_oa_location: null` 不等於全文不可得。** 本輪 `167020` 經 OpenAlex 報無 OA 位置，但 `https://imapsource.org/article/167020.pdf` 回 **HTTP 200／34.6 MB**，而**該 PDF 正是本輪最高價值的量化來源**（XPS 表與接觸角表皆出自此）。➜ **若依 OpenAlex 的 OA 欄位篩選，本輪最重要的量化發現會整個漏掉。**
+  2. ⭐⭐⭐ **新作業規範（27）：EPO OPS 的 HTTP 404 不表示 CQL 格式錯誤。** 本輪兩次 404 的回應體皆為 `SERVER.EntityNotFound / No results found`，即**零命中**。`schedule.md` §ERROR HANDLING 現載「404 → CQL 格式錯誤，簡化後重試一次」**應修正**為「先讀 fault code」。並：**`pa="amkor"` 回 404 而 `pa="amkor technology"` 回 89 件**，因其 epodoc 申請人全名為 `AMKOR TECH SINGAPORE HOLDING PTE LTD` ⇒ **與規範（23）併用，申請人檢索須先確認 OPS 的名稱寫法。** 另附帶發現：**Amkor 的專利標題幾乎全為 `ELECTRONIC DEVICES AND METHODS OF MANUFACTURING ELECTRONIC DEVICES`，標題篩選對該申請人完全無效，必須讀摘要或改用 CPC。**
+  3. ⭐⭐⭐ **2026-10-02 之作業建議「候選清單寫入 log 前先過一次 `_collected_urls.txt`；收集前先比對、而非收集後比對」本輪已執行且零浪費。** 具體做法：以 `primary_location.source.id:S4210197219` 一次取回 IMAPSource 457 筆、在本機與 `_collected_urls.txt` 比對後得 **61 筆未收錄**，再對其中 8 筆候選作單次批量 DOI 查詢。**全程 OpenAlex 僅 3 次呼叫、0 次浪費**（對照 2026-10-02 浪費 4 次）。
+  4. ⭐⭐ **作業規範（24）（橋議題以 CPC `H10W70/618` 為主檢索軸）第二輪執行，再次成立。** 本輪掃描第 **26–50** 名區段（前 25 名於 2026-10-02 掃完），**5 件採用案中有 4 件出自此**。⭐ 並發現 **Intel 在該 CPC 2026 年前 50 名中占 8 件（32%）**（⚠ 僅抽樣，不得外推至 148 件全體）。**尚餘約 98 件（第 51–148 名）列下輪第一順位續掃。**
+  5. ⚠⚠ **新聞軌的可用率本輪再度下降：約 24 個候選 URL 中僅 4 篇可用（約 17%，上一輪 27.8%）。** 失敗分布：**已收錄 11**、**過舊 7**（2024-10 metrology、2025-05 Broadcom CPO、2025-08 CoWoS 利用率、2025-11 SEMCO JV 與 Amkor 測試文、2020/2022 Deca 兩篇）、**低信度或無數據 3**、**無新增價值 3**。➜ **觀察：semiengineering.com 與 trendforce.com 本輪皆已近飽和**（trendforce 四個候選全部已收錄）；**本輪四篇可用者有三篇來自此前未用過的來源（tomshardware、thelec.net、digitaltoday.co.kr）** ⇒ **新聞軌應主動擴張至韓系英文媒體（thelec、digitaltoday、sedaily）與一般科技媒體的深度產業稿（tomshardware）**，而非繼續在既有五家上加查詢。並：**最高價值的單一來源（ABF 整理）來自 tomshardware —— 一個此前不在優先清單上的來源。**
+  6. ⚠ **真實的去重失誤一件（既有、非本輪產生）**：DOI `10.1016/j.jsamd.2026.101155` 於 L574（2026-09-22）與 L640（2026-09-26）各收一次，對應兩個不同 raw 檔。**依 §QUALITY RULES 本輪未作修正，僅記錄並列入 lint 待辦。**
+- ⚠ **本輪與 spec 的兩處偏離（主動申報）**：
+  1. **專利採用 5 件符合 spec，但其中兩件（Intel 部分襯層／Intel 聚合物緩衝層）屬同一發現的兩個家族。** 若視為一個發現則本輪實為 4 個獨立發現。保留兩件的理由是**「四條路線成形」這個結論需要兩件同時在庫才站得住**，且兩件的 CPC 組合不同（分屬不同製程環節）。
+  2. **新聞軌僅 4 篇，低於 spec §STEP 2 的「5–10 篇」下限。** 原因為可用率下降（見作業面發現 5），而非查詢不足（8 組查詢）。總收錄 14 篇仍遠高於 §ERROR HANDLING 的「少於 3 篇即警告」門檻，故未觸發警告。
+- ⚠ **環境事項（兩項）**：
+  1. ✓ **`device_bash`（本機 Linux workspace）本輪全程正常。** 2026-10-02 所記之「Workspace unavailable，全輪不可用」已恢復；**本輪全部 raw 與 wiki 檔案均以 spec §STEP 5 所假設的 bash heredoc 流程直接寫入 `D:\@source\AdvancedPackaging`，未使用 device_commit_files。** ➜ **2026-10-02 之建議（a）「在 schedule.md 增列 workspace 不可用時的替代寫檔路徑」仍值得補上，作為備援文件。**
+  2. ⚠⚠ **`OPENALEX_KEY` 仍為空（連續第四輪未處置）。** 本輪 OpenAlex 全程 200、未遇 429，故未受影響，但**這是運氣而非結構改善**——錯誤訊息明載配額依網路 IP 共享。**建議維持⭐⭐⭐：向 OpenAlex 申請免費 API key 加入 `.env`，並更新 `schedule.md` §4 的 curl 範例加上 `api_key` 參數。**
+  3. 📌 **`.git/objects/` 下殘留的 `tmp_obj_*` 檔本輪為 76 個**（2026-10-01 記為 66 個，持續增加）。本輪未處理（屬 git 內部狀態，非 collect 流程產物）。**建議人工執行 `git gc` 或檢查 2026-10-01 所記之 git lock 問題是否仍在復現。**
+- ✓ **git commit：本輪已執行**（詳見下方提交記錄）。並：2026-10-02 所記「未執行 git commit、檔案處於未提交狀態」已由 2026-10-03 07:00 的 `e83645a` 提交完成（研判為 `daily_git_push.bat`），**該待辦已結清。**

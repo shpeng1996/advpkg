@@ -3,7 +3,7 @@ title: "台積電 / TSMC"
 category: entity
 tags: [foundry, advanced-packaging, CoWoS, SoIC, CoPoS, COUPE, CPO, InFO, WMCM, aLSI, MRAM, 3nm-pricing]
 created: 2026-04-24
-updated: 2026-10-01
+updated: 2026-10-03
 sources: [2026-09-27_tradingkey_copos-glass-validation-08mm-85x110mm, 2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-09-10_trendforce_tsmc-august-revenue-nt514b-record-fourth-month, 2026-09-10_trendforce_tsmc-taichung-14nm-p1-p2-2027-ahead-of-plan, 2026-04-24_initial-survey, 2026-04-13_trendforce_copos-pilot, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2025-12-18_trendforce_apple-wmcm-a20, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-01-20_trendforce_tsmc-wmcm-apple, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap, 2026-04-23_trendforce_tsmc-roadmap-a12-a13-no-high-na-euv, 2026-05-07_trendforce_tsmc-us-expansion-250b-arizona, 2026-05-12_focustaiwan_tsmc-capex-31b-arizona-20b, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-28_reuters_tsmc-kevin-zhang-energy-efficiency, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-09_financialcontent_tsmc-130k-cowos-wafers, 2026-06-09_digitimes_tsmc-cowos-soic-capacity-symposium, 2026-06-15_trendforce_tsmc-cowos-gap-narrowing-130k-200k-wafers, 2026-06-17_digitimes_amkor-tsmc-10year-arizona-deal, 2026-06-17_trendforce_tsmc-amkor-10year-arizona-advanced-packaging, 2026-06-10_tomshardware_tsmc-fab-expansion-roadmap-n2-cowos-soic, 2026-06-27_tmtpost_tsmc-cowos-capacity-targets-2026-2027, 2026-07-02_trendforce_samsung-sf2p-plus-tsmc-n2-roadmap, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-22_trendforce_tsmc-2027-price-hike-hpc, 2026-07-20_trendforce_tsmc-265b-arizona-intel-novalake, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-08-17_trendforce_tsmc-arizona-profit-663pct-1h26, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-26_paper_yole-advanced-packaging-market-ai-era]
 related:
   - wiki/technologies/cowos.md
@@ -540,3 +540,27 @@ TSMC 先進封裝研發總監 **James Chen**（SEMICON Taiwan 2026）首次官�
 - [ ] ⭐⭐ US20260293628A1 之接合方式是否為混合接合；pad pitch
 - [ ] ⭐ 族 88004239 之最早優先權日；US20260247985A1「substrate」所指層級
 - [ ] ⭐ 長條單元正交排列的動機（應力？電流路徑？密度？）
+
+---
+
+## 2026-10-03 更新：× Winbond 記憶體堆疊合作；面板級封裝時程
+
+### ⭐⭐⭐ TSMC × Winbond：代工廠負責堆疊的新分工
+
+> **TSMC 宣布與 Winbond（華邦電）合作：Winbond 供應記憶體晶圓，TSMC 負責堆疊組裝 —— 減輕其他三大記憶體廠的壓力。**
+
+- **本 wiki 首次記錄的「非三大記憶體廠」HBM 類供應路徑。**
+- ⭐⭐⭐ **分工方向與既有完全相反**：既有為「記憶體廠自行堆疊、代工廠只供 base die」（TSMC 供 SK hynix HBM4 之 12nm-class base die）；本件為「記憶體廠只供晶圓、**代工廠負責堆疊**」。
+  ➜ **base die 的製程外移，正在把「誰負責堆疊」也一起鬆動。** ⚠ 本 wiki 歸納。
+- **Winbond 為本 wiki 新進實體**（尚無獨立頁；⚠ 本 wiki 對其 DRAM 製程世代與產能全無紀錄）。
+- ⚠ **未揭露**：產品世代、容量、時程、客戶。**新空缺⭐⭐⭐。**
+
+### 面板級封裝時程（二手整理，2026-09-10）
+
+> **TSMC 面板級封裝：試產 2027、量產 2028 H2。**
+
+⚠ **與本 wiki 既有紀錄（CoPoS 試驗線 2026、量產自 2029）口徑可能不同**（「面板級封裝」vs「CoPoS」未必同指）；**並列記錄，不合併。** **新空缺⭐⭐：TSMC「面板級封裝」與「CoPoS」在對外時程表述上是否為同一件事。**
+
+⚠ **設備生態的反向訊號**：**Philoptics 的 2 mm 玻璃 TGV 設備落在 510×515 mm**，又一家設備商未向 TSMC 的 **310×310 mm** 收斂（既有觀察：LPKF 全系列工具 TRL 集中在 510×515）。見 [[technologies/copos]]。
+
+見 [[sources/2026-10-03_semieng_custom-hbm-business-model]]、[[sources/2026-10-03_tomshardware_abf-substrate-state-2026]]。

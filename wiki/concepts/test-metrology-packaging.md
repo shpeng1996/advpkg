@@ -3,7 +3,7 @@ title: "先進封裝的測試、量測與失效分析 / Test, Metrology & Failur
 category: concept
 tags: [test, metrology, inspection, failure-analysis, KGD, KGI, KGP, DFA, yield]
 created: 2026-09-17
-updated: 2026-10-02
+updated: 2026-10-03
 sources: [2026-09-27_paper_binghamton-ibm-pad-scaling-resistance-variability, 2026-09-27_paper_purdue-ru-cu-em-lifetime-blacks-n-0154, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2025-01-14_semieng_known-good-interposer-screening, 2025-07-10_semieng_advanced-packaging-reshaping-inspection, 2024-11-12_semieng_packaging-drives-test-metrology-innovation, 2026-08-01_jfap_3dic-failure-analysis-dfa, 2026-07-06_apl_lensless-through-silicon-phase-imaging, 2026-09-06_ndte_hysan-sparse-view-xct-tsv, 2026-08-02_chips_cpo-wafer-level-probe-card, 2026-08-27_samsung_us20260256000a1-interposer-test-pad, 2026-08-13_jcet_us20260239928a1-hybrid-bonding-substack-test, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-06-28_hyperframe_amat-hybrid-bonding-hedge, 2026-09-26_paper_ibm-amine-post-cmp-clean, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-10-02_microrel_tudelft-google-3dic-fa-hardware, 2026-10-02_imaps-dpc2026_gelpak-universal-carriers-singulated-die]
 related:
   - wiki/technologies/hybrid-bonding.md
@@ -770,3 +770,57 @@ Micromachines 的**五種 TGV 剖面**（直壁／沙漏／等腰錐／倒錐／
 - [ ] ⭐⭐ **搬運損失（0.2–1.5%）與電性篩檢損失在 KGD 契約中如何歸責**
 - [ ] ⭐ **微紋理載具的仿生原型與紋理尺度**
 - [ ] 📌 既有未結清項延續：KGD 的標準化定義、CoWoS「5.5× 良率 99%」的量測邊界、`raw/_titles.tsv` 19 組重複 raw 檔待人工處置 —— **本輪均無進展**
+
+---
+
+## 2026-10-03 更新：第三種可測性型態「讓缺陷可見」；表面處理的保存期限；2.5D 成像 AOI
+
+### ⭐⭐⭐ 可測性的第三種型態：讓缺陷可見
+
+既有兩種型態（2026-10-02 論述 9）：
+- **設計期預留（測試左移）** —— 需產品配合
+- **分析期拆解重連（測試外移）** —— TU Delft × Google FA 硬體，成本高但不需產品預先配合
+
+**本輪新增第三種：以封裝幾何換取檢測方式。**
+**Deca MDQFN 的可潤濕側面（wettable flanks）**：封裝側面形成可見焊角 ⇒ **組裝後可用 AVI（自動視覺檢測）而非 X-ray**，降低檢測成本與複雜度，簡化重工。
+- 對照傳統 QFN 的**隱藏焊點**：位於封裝下方、組裝後不可見、**必須用 X-ray**、有未檢出空洞或錯位的風險。
+
+> ⭐⭐⭐ **「讓缺陷可見」與前兩種型態的差別在於它不改測試流程，而改封裝幾何。** ⚠ 本 wiki 歸納。
+> ➜ **三種型態對「成本落在誰身上」的答案不同**：左移＝產品設計者；外移＝失效分析方；**可見化＝封裝架構設計者。**
+
+### ⭐⭐⭐ 新增橫向論述：「合格狀態有保存期限」
+
+| 實例 | 量化 |
+|------|------|
+| **表面處理的效益會過期**（本輪） | Plasmatreat：Cu/O **1.30（1h）→ 0.94（4h）→ 0.73（12h）**，未處理基準 **0.69** ⇒ **有效窗約 1–4 h** |
+| **KGD 從測完到裝上去之間的搬運損失**（既有） | Gel-Pak：拾取 **98.5–99% → >99.8%**，搬運損失 **0.2–1.5%** |
+| **電漿活化的衰退**（本輪） | 接觸角：真空 19.2° → **29.6°（45 min）**；常壓 27.6° → **56.8°（45 min）** |
+
+> ⭐⭐⭐ **本 wiki 的限制鏈（①表面平坦度 ~0.2 nm ＞ ②die 翹曲 <100 nm ＞ ③機台對準 100 nm）之外，應加上一個正交軸：「①與②的達成狀態能保存多久」。**
+> ➜ 這也解釋了為何**真空電漿（活化更深、衰退更慢）與常壓電漿（可線上、免批次）的取捨不是製程能力問題，而是排程問題。**
+
+詳見 [[technologies/hybrid-bonding]]、[[sources/2026-10-03_imaps_plasmatreat-cuox-reduction-queue-time]]。
+
+### 量測手段：2.5D 成像 AOI 與高速光學掃描器
+
+| 手段 | 用途 | 來源 |
+|------|------|------|
+| **高解析 2.5D 成像 AOI** | **TGV 孔檢測**；評估階段 **0 ppm / 100 萬孔** | Philoptics（本輪） |
+| **高速光學掃描器** | **量測實際晶粒位置以生成客製微影圖案** | Deca Adaptive Patterning（本輪） |
+| **XPS（Cu 2p、O 1s、C 1s）** | **接合前表面氧化態與碳污染驗收** | Plasmatreat（本輪） |
+| **接觸角** | **表面活化程度與其衰退** | Plasmatreat（本輪） |
+
+> ⭐⭐ **2.5D 成像**為 **[[entities/onto-innovation]]「TGV 需同時量頂／腰／底三個 CD」**這一要求的**量測端配套首例**。
+> ➜ 既有⭐⭐⭐空缺「Corning small via diameter 屬何種剖面、若為沙漏形腰在什麼高度」**本輪未結清**，但**量測手段已存在**，追蹤方式可改為「要求廠商以 2.5D／三 CD 口徑揭露」。
+> ⭐⭐ **Deca 的高速光學掃描器是本 wiki 首個「量測結果直接驅動後續製程圖案生成」的閉環實例** —— 量測不再只是驗收，而是製程輸入。
+
+### 清洗類製程：取得獨立的（法規與成本）驅動力
+
+**Shellback HydrOzone**：以**氣相臭氧＋薄水邊界層（最高 95 °C）**取代 Piranha（SPM）與 NMP／DMSO；剝除速率量級 **~1,000–1,200 vs ~140 nm/min（約 10×）**；自述 **擁有成本 −50%、占地 −80%**（⚠ 供應商主張、無第三方佐證）。
+- ⚠ 本篇為**光阻剝除**，**非 CMP 後清洗** ⇒ 既有⭐空缺「CMP 後清洗是否為第二大良率槓桿」**維持開啟**。
+- ⭐⭐ 但**清洗類製程首次在本 wiki 取得獨立的法規與成本驅動力**，而非僅附屬於良率。
+- ⭐⭐ **「−80% 占地」是本 wiki 首見把設備占地當作可量化競爭項的來源**，可與面板級封裝的設備閒置率（Lau：成型設備閒置 94%）並列為「廠房資源」這一類限制。
+
+### 相關來源
+
+[[sources/2026-10-03_imaps_plasmatreat-cuox-reduction-queue-time]]、[[sources/2026-10-03_imaps_deca-panel-level-fanout-qfn]]、[[sources/2026-10-03_thelec_philoptics-tgv-2mm-glass]]、[[sources/2026-10-03_imaps_hydrozone-ozone-resist-strip]]

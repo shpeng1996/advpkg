@@ -3,7 +3,7 @@ title: "EMIB — Embedded Multi-Die Interconnect Bridge"
 category: technology
 tags: [Intel, 2.5D, silicon-bridge, chiplet, HBM4, Foveros, glass-substrate, EMIB-T, EMIB-M, silicon-capacitors, power-delivery, HLFF, encapsulation, underfill]
 created: 2026-05-03
-updated: 2026-10-02
+updated: 2026-10-03
 sources: [2026-09-27_intel_us20260223702a1-direct-bonding-embedded-bridge-organic-cavity, 2026-09-27_intel_cn122270166a-stacked-glass-silicon-bridge-assembly-ar20, 2026-09-27_samsung_us20260144093a1-bridge-on-tgv-mold-fixed, 2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-03-05_trendforce_intel-emib-billions, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-03-03_trendforce_intel-clearwater-forest, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks, 2026-06-21_convergedigest_intel-emib-t-multi-die-packaging, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap, 2026-06-05_semieng_intel-ectc-2026-emib-t-cpo-glass, 2026-01-30_tomshardware_intel-ai-chip-test-vehicle-emib-t, 2026-08-04_semieng_from-blueprint-intel-hlff, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_patent_zhuhai-tiancheng-dual-depth-tsv-silicon-bridge, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-09-30_epo_intel-us20260191037a1-localized-embedded-bridge-in-core, 2026-09-30_intel_us-advanced-packaging-reticle-8x-12x-fab9, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_amd-us20260282956a1-silicon-bridge-decap, 2026-10-02_epo_adeia-us20260247631a1-dual-sided-connecting-element, 2026-10-02_epo_shanghai-xianfeng-cn122622683a-glass-interposer-bridge, 2026-10-02_trendforce_cowos-l-mainstream-through-2028]
 related:
   - wiki/entities/intel.md
@@ -843,3 +843,77 @@ TrendForce（2026-09-18）：**CoWoS-L 預期維持主流至 2028**；CoWoS-S �
 - [ ] ⭐⭐ **EMIB-T 之 36/35 µm「2× reticle」與既有「8× 現在 / >12× 2028」光罩倍數敘述的口徑如何對齊**
 - [ ] ⭐⭐ **Intel EP4815713A2「橋晶粒屏蔽結構」+ dummy die 的用途**（屏蔽何種耦合？dummy die 是支撐或熱？）
 - [ ] 📌 既有未結清項延續：EMIB-T 供電通道容量（A 或 A/mm²，本輪仍未得）、EMIB 基板良率 45% 的口徑、CoWoS-L 基板層良率、ABF↔矽橋 CTE 失配數值、Ibiden Gama Cell6 產能單位 —— **本輪均無進展**
+
+---
+
+## 2026-10-03 更新：橋的第十一維度（免 TSV／懸掛）；橋的第三種定性；橋補載體的第三型
+
+### ⭐⭐⭐ 第十一個維度：是否承載垂直供電路徑（是否含 TSV）／是否懸掛並於底部露出
+
+**Intel CN122349366A（2026-07-07，family 97752214）**「中介層封裝用的懸掛式晶粒對晶粒互連橋」：
+- 橋晶粒**可不含 TSV（free of TSVs）**
+- 橋晶粒**可被懸掛（suspended），於封裝底部露出**
+- **供電經柵狀供電／接地金屬層，自橋晶粒周界外側延伸進入周界內、並跨越佈線結構之上**
+- 發明人 7 名，姓名型態以德語系為主（⚠ 依作業規範不得由姓名推論組織歸屬）
+
+> ⭐⭐⭐ **這是與 2026-10-02 主線方向相反的實例，必須並列而非取代。**
+>
+> | 方向 | 實例 |
+> |------|------|
+> | **往橋裡加東西**（2026-10-02 主線） | Intel EMIB-T 橋內 MIM（500 fF/µm²，PDN AC 阻抗 >82% 改善）、AMD 橋內記憶體控制器＋去耦電容、Marvell OMIB 橋內光路、Samsung 光路橋、上海先封玻璃內嵌橋 |
+> | **把東西從橋裡拿掉** | **本件：橋純佈線、免 TSV，供電自周界外側以柵狀金屬跨越進來** |
+>
+> ⚠ **本 wiki 的處置：記為「同一時期兩個方向並存」，不修改既有論述。**
+
+- ⭐⭐ **「橋在封裝底部露出」為本 wiki 首見的橋位置型態**，可能提供獨立的散熱／供電界面。⚠ 原文未討論熱，為本 wiki 推論。**新空缺：懸掛橋的熱路徑與機械支撐。**
+- ⭐⭐ **「免 TSV」在成本與良率上的意義**：TSV 是橋成本與良率的主要項之一。⚠ 原文未提成本，本 wiki 推論。**新空缺：免 TSV 橋的成本差。**
+- ⚠ **「可以不含 TSV」「可被懸掛」皆為選用式措辭（may be）**，非必要技術特徵。
+
+見 [[sources/2026-10-03_epo_intel-hanging-bridge-tsv-free]]。
+
+### ⭐⭐⭐ 橋的第三種定性：橋 = 被動元件
+
+**Qualcomm US20260182412A1（2026-06-25，family 98366373）**：請求項把**「被動元件」定義為「包含一個橋」**，並另含**電容互連為垂直對齊**的電容。
+
+**同族姊妹件 US20260182361A1（family 98366085）** 句構幾近逐字相同，僅把埋入物由**橋（被動元件）**換成**記憶體（主動元件）** ⇒ **兩個獨立家族的圍籬式布局。**
+
+> ⭐⭐⭐ **本 wiki 讀法：Qualcomm 的布局不是在「要不要 2.5D」上選邊，而是把基板介電層內的那個位置當成一個可替換的插槽（slot）—— 橋、記憶體、電容皆為可插入物。**
+> ➜ **這能同時解釋既有⭐⭐⭐空缺「Qualcomm 的 HBC（不需 2.5D）與其兩件橋案（2.5D 細化）之間的張力」。空缺降為⭐⭐，並改述為「該插槽讀法是否能由後續 Qualcomm 申請案佐證」。**
+> ⚠ 本 wiki 歸納，原文未如此表述。
+
+- **橋的三種定性並列**：**佈線結構**（EMIB 原型）／**元件載體**（2026-10-02）／**被動元件本身**（本輪）。三者不相互取代。
+- **「是否承載被動元件」維度（第 9 維）首次由第三家申請人支持**（既有 Intel EMIB-T、AMD）。
+- ⚠ **兩件皆無任何量化值**（無容值、無密度、無對齊容許偏差）；依作業規範（25）**不得與橋內 MIM 0.5 µF/mm² 等密度落點並列排序**（本件口徑＝未定義）。
+
+見 [[sources/2026-10-03_epo_qualcomm-bridge-as-passive-vertical-cap]]。
+
+### ⭐⭐⭐ 橋補載體密度上限：第三型（被補者為無核心有機）
+
+**SEMCO US20260231796A1（2026-08-06）**：**無核心中介層內嵌有機橋**，請求項限定**橋線寬 < 無核心線寬**。
+
+| 型態 | 被補的載體 | 橋材料 | 限定 |
+|------|-----------|--------|------|
+| 第一型 | 有機基板 | 矽 | — |
+| 第二型 | 玻璃 | 未限定 | 橋密度 > 玻璃兩面 RDL 密度 |
+| **第三型** | **無核心有機** | **有機化合物** | **橋線寬 < 無核心線寬** |
+
+➜ ⭐⭐⭐ **「橋補矽」的 EMIB 邏輯已推廣為通用論述：任何載體都有其佈線密度上限，內嵌局部高密度橋是通用補救。**
+➜ ⭐⭐ **「橋為有機」為本 wiki 首見的橋材料選擇**（既有幾乎皆為矽或玻璃內嵌）。**新空缺：有機橋的可達線寬。**
+
+見 [[sources/2026-10-03_epo_semco-coreless-interposer-organic-bridge]]。
+
+### 本輪檢索方法論
+
+- **作業規範（24）（橋議題以 CPC `H10W70/618` 為主檢索軸）第二輪執行，再次成立**：該 CPC 2026 年共 **148 件**，本輪掃描第 **26–50** 名區段（前 25 名於 2026-10-02 掃完），**產出 5 件採用案中的 4 件**。
+- ⭐⭐ **新發現：Intel 在該 CPC 2026 年前 50 名中占 8 件（32%）** —— CN122349366A、US20260191063A1、US20260191037A1、CN122318840A、CN122318219A、US20260182414A1、US20260182404A1、US20260198346A1。⚠ 僅為前 50 名之抽樣，**不得外推為 148 件全體的分布**。
+- **尚餘約 98 件未掃（第 51–148 名），列下輪第一順位分頁續掃。**
+
+### ⚠ 本輪新增空缺
+
+- [ ] ⭐⭐⭐ **懸掛橋的熱路徑、機械支撐與底部露出的用途**
+- [ ] ⭐⭐⭐ **柵狀供電金屬自周界外跨入的電流容量**（與既有未結清項「EMIB-T 供電通道容量 A 或 A/mm²」同軸，本輪仍未得數值）
+- [ ] ⭐⭐ **免 TSV 橋的成本與良率差**
+- [ ] ⭐⭐ **有機橋（SEMCO）的可達線寬 µm**
+- [ ] ⭐⭐ **Qualcomm「垂直對齊」的對齊對象與容許偏差**
+- [ ] ⭐⭐ **CoWoS-L 的 LSI 是否同樣可免 TSV**（既有空缺「LSI 是否內建電容或主動邏輯」的孿生問題）
+- [ ] 📌 **見而未採並列下輪候選**：**AMD US20260182429A1**（中介層與基板**兩層都用玻璃核心**，且含 **G02B6/421 光學分類** —— **下輪第一順位**）、**Intel CN122318840A**（玻璃層內整合電感＋導電聚合物隔離層，對應 3 A/mm² 磁芯軸）、**Intel US20260191037A1**（核心內局部內嵌橋，family 100312105 **已收錄**）、**Adeia US20260198334A1**（中介層內嵌橋晶粒）、**Samsung US20260198378A1**（被動元件模組，堆疊式）、**STATS ChipPAC CN122349363A**（模封中介層內嵌橋模組）、**Intel CN122318219A**（封裝內嵌記憶體）、**PanelSemi US20260206619A1**（基板架構）、**SEMCO CN122421197A**（PCB 與其內嵌中介層）

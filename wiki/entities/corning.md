@@ -3,7 +3,7 @@ title: "康寧 / Corning Incorporated"
 category: entity
 tags: [glass-substrate, TGV, materials, CPO, Corning]
 created: 2026-09-18
-updated: 2026-09-30
+updated: 2026-10-03
 sources:
   - 2026-08-06_epo_corning-small-diameter-tgv-adhesion
   - 2026-09-30_epo_xiamen-anjieli-cn121335557a-silane-parylene-tgv
@@ -203,3 +203,23 @@ Intel ZnO「三維咬合」）應改述為「三種賭法」而非「三條互�
 - [[sources/2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids]]
 - [[sources/2026-09-30_epo_amosense-wo2026019155a1-multilayer-glass-core-frit-bonding]]
 - [[sources/2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth]]
+
+---
+
+## 2026-10-03 更新：與 Intel 的工程哲學對立完全成形
+
+**Intel 本輪再增兩條 TGV 界面路線**（部分襯層僅端部 US20260191063A1；**聚合物緩衝層** US20260182404A1），使其路線數達四條，**且全部屬於「承認界面會失效」。**
+
+| | **Corning** | **Intel** |
+|---|-----------|----------|
+| 賭注 | **界面可以做牢** | **界面必定失效** |
+| 手段 | Ti/Cu 黏著層＋羥基富化＋矽烷官能化＋無電鍍種子層（WO2026164778A1） | 多層襯層／選擇性幾何（僅端部）／**機械順從（聚合物緩衝）**／ZnO+Pd 官能化 |
+| 商業位置 | **材料供應商：賣界面品質** | **封裝整合者：買可容錯的結構** |
+
+> ⭐⭐⭐ **兩種回應對應兩種商業位置** —— ⚠ 本 wiki 歸納。**兩者皆無可靠度數字，無法判定孰優。**
+
+📌 **既有⭐⭐⭐空缺「Corning small via diameter 的實際數值與剖面形態（頂／腰／底何者；若為沙漏形，腰在什麼高度）」本輪未結清**，但 **Philoptics 之高解析 2.5D 成像 AOI** 顯示量測手段已存在 ⇒ **追蹤方式改為「要求以 2.5D／三 CD 口徑揭露」。** 見 [[sources/2026-10-03_thelec_philoptics-tgv-2mm-glass]]。
+
+另：Corning 列名 Broadcom CPO 生態系夥伴（2025-05 一手，**日期已逾六個月收錄門檻，未建 raw 檔，僅記錄**）。
+
+見 [[sources/2026-10-03_epo_intel-polymer-tgv-buffer]]、[[sources/2026-10-03_epo_intel-partial-liners-tgv]]。

@@ -3,7 +3,7 @@ title: "封裝層的供電網路 / Power Delivery Networks at the Package Level"
 category: concept
 tags: [PDN, power-delivery, vertical-power, eVR, capacitor, inductor, passive-integration, hybrid-bonding, rack-power]
 created: 2026-09-29
-updated: 2026-10-02
+updated: 2026-10-03
 sources: [2026-09-29_imaps-dpc2026_nanoporous-silicon-capacitor-pdn, 2026-09-29_imaps-dpc2026_saras-stile-evr-vertical-pdn, 2026-09-29_semieng_tech-paper-roundup-sept29-multikw-3dhi-pdn, 2026-09-29_semiwiki_ofc2026-siph-cpo-oci-ocs-summary, 2026-09-30_arxiv_umn-multi-kw-power-delivery-3d-hi, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_epo_intel-jp2026116680a-glass-core-embedded-inductor-clusters, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_imaps-dpc2026_delo-die-side-capacitor-encapsulation, 2026-10-02_epo_samsung-cn122602880a-ivr-capacitor-interposer-core, 2026-10-02_jmmm_tyndall-fecob-n-pwrsoc-magnetics, 2026-10-02_epo_amd-us20260282956a1-silicon-bridge-decap]
 related:
   - wiki/concepts/thermal-management.md
@@ -427,3 +427,67 @@ Tyndall National Institute × University College Cork（JMMM，2026-09-02）：�
 - [ ] ⭐⭐ **磁芯 Bs 與可達 A/mm² 的定量關係**（若能建立，則 3 A/mm² 障壁的成因可結清）
 - [ ] ⭐⭐ **DSC 封膠的 TCT 結果**（原文列為後續動作，尚未公開）
 - [ ] 📌 既有未結清項延續：2–4 A/mm²（arXiv）與 >3 A/mm²（Infineon）的截面口徑；「約 40% 負載功率成為 PDN 熱」的條件；A1/A2/A3 分項效率；Empower ECAP 厚度/體密度/ESL/ESR；NPC 口徑定義；以混合接合整合電容所需之對準規格 —— **本輪均無進展**
+
+---
+
+## 2026-10-03 更新：被動元件物件化擴及電阻，且每種被動元件卡在不同限制項
+
+### ⭐⭐⭐ 新增橫向論述
+
+> **「被動元件物件化是一條通用趨勢，但每種被動元件卡在不同的限制項上，因此不得以同一進度表論斷。」**
+
+| 被動元件 | 主導限制項 | 量化證據 |
+|---------|-----------|---------|
+| **電容** | **面密度與離負載距離的反向關係** ＋ **貼附空間已用完** | 橋內 MIM **0.5** ＜ 基板內嵌矽電容 **≈2.3** ＜ 奈米多孔矽電容 **4→8 µF/mm²**（⚠ 三口徑不同）；DSC **0201 = 0.65×0.35 mm** |
+| **電阻（本輪新增）** | **公差** | mSAP **±20–25%** vs **目標 ±15%**；傳統減成法 **>±30%**（254 µm 電阻） |
+
+➜ ⭐⭐⭐ **「把被動元件搬進基板」在電阻上尚未跨過可用門檻** —— 動機（省面積、消除通孔、降低寄生）與電容完全同形，但卡的地方不同。
+
+**電阻側的次級發現**：精度由**線寬控制**（已良好）與**長度控制**（變異明顯）共同決定，而**後者受蝕刻機行進方向支配**（垂直者較佳）。⇒ **本 wiki 首次記錄「元件電性規格受機台行進方向影響」。**
+
+⚠ **應用情境為模組與 IC 封裝基板，非 2.5D/3D 中介層**（後者為 Samsung CN122602880A、Empower、Murata 的場域），**不得外推**。
+
+見 [[sources/2026-10-03_imaps_ohmega-ticer-embedded-thin-film-resistors]]。
+
+### ⭐⭐⭐ 電容物件化新落點：請求項限定的是幾何而非容值
+
+**Qualcomm US20260182412A1 / US20260182361A1（2026-06-25，family 98366373 / 98366085）**：
+- 封裝基板介電層內埋入**被動元件（＝一個橋）**或**主動元件（＝記憶體）**
+- 併同一個**電容互連為「垂直對齊（vertically aligned）」**的電容
+- 兩件句構幾近逐字相同、發明人相同（Lane Ryan、Weng Li-Sheng）、同日公開，**family-id 不同 ⇒ 兩個獨立家族的圍籬式布局**
+
+> ⭐⭐⭐ **新意不在「放哪裡」，而在請求項限定的是電容互連的「垂直對齊」這一幾何關係，而非容值或位置。**
+> ⚠ **兩件皆無任何量化值**；依作業規範（25）**本件口徑＝未定義，不得與 0.5 / 2.3 / 4–8 µF/mm² 三個落點並列排序。**
+> ⭐⭐ **本 wiki 讀法**：Qualcomm 把基板介電層內的那個位置當成**可替換的插槽（slot）** —— 橋、記憶體、電容皆為可插入物。詳見 [[technologies/emib]] 與 [[entities/qualcomm]]。
+
+**新空缺⭐⭐**：「垂直對齊」的對齊對象與容許偏差。
+
+### ⭐⭐⭐ 界面材料「約束 vs 順從」的兩端由同一供應商同時提供
+
+| 性質 | **DELO DSC 封膠**（晶粒側電容，2026-10-02） | **DELO OB6268**（光學膠，本輪） | 倍率 |
+|------|------------------------------------------|-------------------------------|------|
+| Young's modulus | **10 MPa** | **6,300 MPa** | **630×** |
+| Tg | **−40 °C** | **202 °C** | **+242 °C** |
+| CTE | **>100 ppm/K** | **37 ppm/K** | **約 1/3** |
+| 伸長率 | **90 %** | **1.0 %** | **1/90** |
+
+> ⭐⭐⭐ **2026-10-02 論述 4 可改寫為更強的形式：「封裝膠材沒有單一的『好』方向。模數與 CTE 的目標值由該界面的主導失效模式決定，而同一供應商會同時供應相差 600 倍的兩端。」**
+> 並：**Intel 的聚合物 TGV 緩衝層（US20260182404A1）是同一論述在 TGV 內部的第三個實例** —— 見 [[technologies/glass-substrate]]。
+> ⚠ 不同產品線、不同應用，**不得相減或排序為技術優劣**（作業規範 25）；本表僅示方向對立。
+
+### 供電結構：柵狀供電自橋周界外側跨入
+
+**Intel CN122349366A**：橋晶粒**可免 TSV**、**可懸掛並於封裝底部露出**；**供電經柵狀供電／接地金屬層自周界外側延伸進入周界內、跨越佈線結構之上。**
+➜ ⭐⭐ **與既有「把電容與調節器往橋與核心層裡搬」的方向相反：本件把供電路徑從橋裡拿出來、繞道周界。** ⚠ 並列記錄，不修改既有論述。
+⚠ **無電流容量數值** —— 既有未結清項「EMIB-T 供電通道容量（A 或 A/mm²）」本輪仍無進展。
+
+### 📌 3 A/mm² 障壁：本輪無進展，但出現一個未採的專利管道
+
+- 三個候選成因維持不變：**熱**（PDN 熱達負載功率約 40%）、**導體材料**（鉬接觸電阻比鎢低 50%）、**磁性元件**（Tyndall×UCC：Bs 1.4–1.66 T、µ′@100MHz 7–12、ρ 1,897–3,024 µΩ·cm）。**仍無任何來源把三者之任一與 3 A/mm² 連起來。**
+- 📌 **見而未採：Intel CN122318840A（2026-06-30，family 97446354）「玻璃層內整合電感＋導電聚合物隔離層」** —— 導電聚合物置於種子層與磁性材料之間作為隔離層，以**降低渦流造成的電感效率劣化**。
+  ➜ **這是本 wiki 首個落在「磁芯 ↔ 封裝整合」交集的 Intel 專利管道**，且同時是「玻璃核心＝元件機殼」的第五個同向證據。**列下輪第一順位（⭐⭐）。**
+  ⚠ 摘要無量化值（無 Bs、無 µ′、無 ρ、無電感值）。
+
+### 相關來源
+
+[[sources/2026-10-03_imaps_ohmega-ticer-embedded-thin-film-resistors]]、[[sources/2026-10-03_epo_qualcomm-bridge-as-passive-vertical-cap]]、[[sources/2026-10-03_imaps_delo-optical-adhesive-alignment]]、[[sources/2026-10-03_epo_intel-hanging-bridge-tsv-free]]、[[sources/2026-10-03_epo_intel-polymer-tgv-buffer]]

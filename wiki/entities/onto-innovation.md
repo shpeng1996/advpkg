@@ -3,7 +3,7 @@ title: "Onto Innovation"
 category: entity
 tags: [equipment, process-control, inspection, metrology, fan-out, 2.5D-packaging]
 created: 2026-06-22
-updated: 2026-09-21
+updated: 2026-10-03
 sources: [2026-04-16_ontoinnovation_dragonfly-g5-qualified, 2026-07-07_semieng_panel-inspection-metrology-hdfo]
 related:
   - wiki/concepts/advanced-packaging-market.md
@@ -122,3 +122,16 @@ Onto Innovation 的 **Damon Tsai**：
 ➜ **本輪起應改記為：量測／檢測 ＋ 封裝微影的雙軌設備商，且兩軌都明確瞄準面板級。**
 ➜ 這是 2026-09-20 建立的「**設備商競爭邊界自『機台』移向『機台 + 消耗性材料層 / 相鄰製程』**」訊號的第三個實例（既有：TEL 進入接合層材料、AMAT 把 fab 級量測下沉到封裝基板）。Onto 的方向與前兩者不同——**不是往材料走，而是往相鄰製程（檢測 → 微影）橫向擴張**。
 ➜ 附帶：Onto 在 SemiEng 2022 年的設備商列表中即被列為 "CMP solutions" 提供者。⚠ 其在 CMP 的實際地位本 wiki 無獨立資料，**列為新空缺**（與「AMAT 混合接合 CMP 市占」查證相關）。
+
+---
+
+## 2026-10-03 更新：「頂／腰／底三 CD」要求取得量測端配套首例
+
+**Philoptics（2026-09-29）** 之 TGV 設備搭配 **高解析 2.5D 成像 AOI**，評估階段 **0 ppm / 100 萬孔**。
+
+> ⭐⭐ **這是本 wiki 首次看到 Onto 所主張的「TGV 需同時量頂／腰／底三個 CD」在另一家設備商的產品上有對應的量測能力（2.5D 成像）。**
+> ➜ 既有⭐⭐⭐空缺「**Corning small via diameter 屬何種剖面、若為沙漏形腰在什麼高度**」**本輪未結清**，但**量測手段已存在** ⇒ **追蹤方式改為「要求廠商以 2.5D／三 CD 口徑揭露」，而非等待單一數字。**
+
+⚠ **Philoptics 未說明其 2.5D 成像是否量測三個 CD**，僅稱「高解析 2.5D 成像」。本 wiki 不得據此斷言其能力等同 Onto。
+
+見 [[sources/2026-10-03_thelec_philoptics-tgv-2mm-glass]]。

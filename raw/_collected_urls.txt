@@ -730,3 +730,17 @@
 2026-10-02 | https://doi.org/10.4071/001c.167772 | raw/papers/2026-10-02_openalex_gelpak-universal-carriers-singulated-die.md | Gel-Pak carriers: pick 99.8%, OEE 60-70->80-90%
 2026-10-02 | https://doi.org/10.1016/j.microrel.2026.116230 | raw/papers/2026-10-02_openalex_3dic-system-level-fa-hardware-pop-tiv.md | TUDelft+Google 3D IC FA: 210um pitch, 6.3Gbps
 2026-10-02 | https://doi.org/10.1016/j.jmmm.2026.174549 | raw/papers/2026-10-02_openalex_fecob-n-columnar-films-pwrsoc-magnetics.md | Tyndall FeCoB-N: 1897-3024uOhm.cm, L+180%, Q+155%
+2026-10-03 | https://www.tomshardware.com/tech-industry/semiconductors/the-state-of-abf-substrates-in-data-center-silicon-in-2026-solving-the-supply-crunch-and-material-wall-beneath-every-ai-accelerator | raw/articles/2026-10-03_tomshardware_abf-substrate-state-2026-supply-wall.md | ABF gap 10/21/40%; organic flat limit 120mm/side
+2026-10-03 | https://thelec.net/news/articleView.html?idxno=14249 | raw/articles/2026-10-03_thelec_philoptics-tgv-2mm-glass-510x515.md | Philoptics 2mm TGV, 510x515, 0ppm/1M holes
+2026-10-03 | https://semiengineering.com/how-will-the-custom-hbm-business-work/ | raw/articles/2026-10-03_semieng_how-custom-hbm-business-works.md | Custom HBM: TSMC x Winbond; <20 proj/yr HB <10um
+2026-10-03 | https://www.digitaltoday.co.kr/en/view/68878/jntc-secures-full-tgv-glass-substrate-lineup-from-0-3-mm-to-2-0-mm-thickness | raw/articles/2026-10-03_digitaltoday_jntc-tgv-glass-0p3-to-2mm-lineup.md | JNTC TGV 0.3-2.0mm, 3mm in dev, no cracks
+2026-10-03 | EPO:100312113:US20260191063A1 | raw/patents/2026-10-03_US20260191063A1_intel-partial-liners-through-glass-via.md | Intel partial TGV liner at via end regions
+2026-10-03 | EPO:97593224:US20260182404A1 | raw/patents/2026-10-03_US20260182404A1_intel-polymer-tgv-buffer-layer.md | Intel polymer buffer layer between glass and TGV
+2026-10-03 | EPO:97752214:CN122349366A | raw/patents/2026-10-03_CN122349366A_intel-hanging-die-to-die-bridge.md | Intel hanging TSV-free bridge, grid power around
+2026-10-03 | EPO:98366373:US20260182412A1 | raw/patents/2026-10-03_US20260182412A1_qualcomm-vertically-aligned-capacitor-interconnects-bridge.md | Qualcomm bridge-as-passive + vert aligned cap
+2026-10-03 | EPO:100749851:US20260231796A1 | raw/patents/2026-10-03_US20260231796A1_semco-coreless-interposer-organic-bridge.md | SEMCO coreless interposer w/ organic bridge
+2026-10-03 | https://doi.org/10.4071/001c.167020 | raw/papers/2026-10-03_openalex_plasmatreat-cuox-reduction-queue-time.md | Plasmatreat CuOx: Cu/O 1.30(1h)->0.73(12h)
+2026-10-03 | https://doi.org/10.4071/001c.167022 | raw/papers/2026-10-03_openalex_hydrozone-ozone-gas-resist-strip-piranha-replacement.md | HydrOzone gas-phase O3 strip, ~10x dissolved
+2026-10-03 | https://doi.org/10.4071/001c.167744 | raw/papers/2026-10-03_openalex_ohmega-ticer-embedded-thin-film-resistors-msap.md | Embedded NiCr resistors: +/-20-25% vs 15% target
+2026-10-03 | https://doi.org/10.4071/001c.166910 | raw/papers/2026-10-03_openalex_delo-optical-adhesive-alignment-photonic-packaging.md | DELO OB6268: 6300MPa/Tg202C vs DSC 10MPa/-40C
+2026-10-03 | https://doi.org/10.4071/001c.167495 | raw/papers/2026-10-03_openalex_deca-microchip-panel-level-fanout-qfn-600mm.md | Deca MDQFN 600mm panel, strip 75x250, AP no reticle

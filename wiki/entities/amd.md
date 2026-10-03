@@ -3,7 +3,7 @@ title: "超微半導體 / AMD (Advanced Micro Devices)"
 category: entity
 tags: [fabless, CPU, GPU, chiplet, Zen6, EFB, I-CubeS, Milan, EPYC, MI-series, Venice, COMPUTEX2026, MI455X, CoWoS-L, SoIC, FOPLP]
 created: 2026-05-03
-updated: 2026-10-02
+updated: 2026-10-03
 sources: [2026-03-01_semianalysis_cpus-back-datacenter-2026, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-21_trendforce_amd-lisa-su-tsmc-10b-taiwan-packaging, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-07-24_semieng_chip-week-148, 2026-10-02_epo_amd-us20260282956a1-silicon-bridge-decap, 2026-10-02_trendforce_cowos-l-mainstream-through-2028]
 related:
   - wiki/entities/tsmc.md
@@ -110,3 +110,17 @@ AMD 在 AI GPU 市場是 NVIDIA 的主要挑戰者（Instinct MI 系列），但
 - [ ] ⭐⭐⭐ 橋內記憶體控制器的實作層級（完整控制器或僅 PHY？）與對 compute die 面積的節省量
 - [ ] ⭐⭐ MI400／MI450 的實際封裝結構（CoWoS-L？EFB？本件結構？）
 - [ ] ⭐⭐ AMD 其他橋相關家族（下輪以 `pa="advanced micro devices" and cpc="H10W70/618"` 檢索）
+
+---
+
+## 2026-10-03 更新：見而未採之候選（下輪第一順位）
+
+📌 **US20260182429A1（2026-06-25，family 100215102）「CHIP PACKAGE WITH AN INTERPOSER HAVING A GLASS CORE AND A SUBSTRATE HAVING A GLASS CORE」**
+- 摘要要旨：封裝基板含**玻璃基板核心**＋上下兩面 RDL；**中介層另含玻璃中介層核心**＋上下兩面 RDL；第一晶粒貼附於中介層第一面。
+- 發明人：Neerukatti Rajesh Kumar、Mysore Kaushik、Kulkarni Deepak Vasant（均 [US]）
+- CPC 含 **G02B6/421（光學耦合）**、H10W42/121、H10W70/611、/614、/618、/635、/68、/685、/692、H10W72/072、H10W90/00、H10W90/401
+
+> ⭐⭐⭐ **兩個層級同時採用玻璃核心（中介層＋基板），且分類含光學耦合** —— 若成立，則為本 wiki 首見「玻璃核心堆疊兩層」與「玻璃核心 × CPO」的交集。
+> **本輪因 Intel TGV 襯層與橋議題占滿額度而未採，列下輪第一順位（⭐⭐⭐）。**
+
+既有紀錄不變：AMD **US20260282956A1**（橋內記憶體控制器＋去耦電容，2026-10-02）為本 wiki 首見「橋即電容載體」，且 AMD 與 Marvell **把記憶體控制器分別搬到橋與 base die ⇒ 方向相同手段不同**（⚠ 本 wiki 歸納，兩件無共同來源）。

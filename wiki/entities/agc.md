@@ -3,7 +3,7 @@ title: "AGC Inc. — 旭硝子"
 category: entity
 tags: [AGC, glass-substrate, TGV, polymer-waveguide, copackaged-optics, CTE, alkali-free-glass]
 created: 2026-09-27
-updated: 2026-09-30
+updated: 2026-10-03
 sources: [2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-30_epo_amosense-wo2026019155a1-multilayer-glass-core-frit-bonding, 2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth]
 related:
   - wiki/technologies/glass-substrate.md
@@ -153,3 +153,17 @@ AGC 本頁既有之材料物性（本 wiki 唯一的玻璃廠 CTE × 模數並�
 
 - [[sources/2026-09-30_epo_amosense-wo2026019155a1-multilayer-glass-core-frit-bonding]]
 - [[sources/2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth]]
+
+---
+
+## 2026-10-03 更新：⭐⭐ 產品組合橫跨玻璃與有機兩種載體
+
+**新事實**：AGC 之 **fastRise HF** 作為**有機增層預浸料（build-up prepreg）**出現在 IMAPS DPC 2026 的埋入式薄膜電阻測試載具中（6 層 2+2+2 有機疊構，核心為 Panasonic R-1515V 低 CTE）。
+
+> ⭐⭐ **此前本 wiki 只記錄 AGC 的玻璃端能力**（無鹼玻璃 ER-Y1 CTE 3.5/88 GPa vs EN-A1 5.8/75 GPa；TGV AR 1:20 @ 1.0 mm、孔徑 50–100 µm；填滿 vs conformal TGV 在 30 GHz 無顯著差異；PWG 年度路線圖）。
+> ➜ **AGC 同時供應玻璃基材與有機增層材料，是本 wiki 此前未記錄的事實。**
+> ➜ ⭐⭐ **這對「玻璃基板的入口至少有三種、短期內不會收斂」（2026-10-02 論述 13）有一個補充：材料商可同時服務兩種載體，因此不急於選邊 —— 載體路線之爭的壓力落在基板廠與整合者身上，而非材料商。** ⚠ 本 wiki 歸納。
+
+⚠ **未揭露**：fastRise HF 的 Dk/Df、CTE、模數、與玻璃核心的相容性；以及該產品線相對 AGC 玻璃業務的規模。**新空缺⭐⭐。**
+
+見 [[sources/2026-10-03_imaps_ohmega-ticer-embedded-thin-film-resistors]]。

@@ -3,7 +3,7 @@ title: "RDL — 重分佈層 / Redistribution Layer"
 category: technology
 tags: [RDL, SAP, dual-damascene, embedded-trace, ETR, polyimide, FPIM, CMP, electromigration, panel-level, pad-less-via]
 created: 2026-09-26
-updated: 2026-10-02
+updated: 2026-10-03
 sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2026-09-27_paper_purdue-ru-cu-em-lifetime-blacks-n-0154, 2026-09-27_paper_copper-interconnect-scaling-roadmap-lines-per-mm, 2026-09-26_article_taiyo-imec-700nm-damascene-rdl, 2026-09-26_article_imec-1um-damascene-rdl-2019-anchor, 2026-09-26_article_amkor-embedded-trace-rdl, 2026-09-26_paper_asi-1um-hdbu-substrate, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-25_paper_dnp-glass-rdl-electromigration-lifetime, 2026-09-25_paper_cornell-glass-on-glass-sio2-rdl, 2026-09-25_paper_asu-molded-core-substrate-warpage, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_shanghai-xianfeng-cn122622683a-glass-interposer-bridge, 2026-10-02_imaps-dpc2026_defect-free-coplanar-copper-via-fill]
 related:
   - wiki/technologies/foplp.md
@@ -449,3 +449,52 @@ IMAPS DPC 2026（`10.4071/001c.167760`，OA 全文已解析）：
 - [ ] ⭐⭐ **UCIe-A 0.77 UI @32 GT/s 的 BER 與功耗條件**
 - [ ] ⭐ **Throwing power 各欄的量測條件**
 - [ ] 📌 既有未結清項延續：ASE FOCoS 12 層對應線寬、UCIe-Advanced「+40%/−15%」基準線、橫向製程決定垂直解析度之量化 —— **本輪均無進展**
+
+---
+
+## 2026-10-03 更新：載體綁定的密度上限成為通用論述；Adaptive Patterning；mSAP 整合被動元件
+
+### ⭐⭐⭐ 「RDL 的可達密度取決於它長在什麼上面」推廣為通用論述
+
+2026-10-02 論述 22 原為玻璃專屬觀察；本輪由 [[entities/semco]] US20260231796A1 推廣：
+
+| 型態 | 被補的載體 | 橋材料 | 請求項限定 |
+|------|-----------|--------|-----------|
+| 第一型 | 有機基板 | 矽 | — |
+| 第二型 | 玻璃 | 未限定 | 橋線路密度 > 玻璃兩面 RDL 密度 |
+| **第三型** | **無核心有機** | **有機化合物** | **橋線寬 < 無核心線寬** |
+
+➜ **任何載體都有其佈線密度上限，「內嵌局部高密度橋」是通用補救手法。**
+⚠ **新空缺⭐⭐：有機橋（SEMCO）的可達線寬 µm** —— 既有基準為**有機/矽 RDL 量產 2/2 µm、路線 1/1 µm**；本件僅給相對關係，無法交叉。
+
+### Adaptive Patterning：RDL 圖案成為每面板客製的變數
+
+**Deca（本輪）**：**量測實際晶粒位置（高速光學掃描器）→ 動態生成微影圖案 → LDI 曝光**，**每片面板一個獨一無二圖案，無光罩尺寸限制**。
+- **Adaptive Alignment**：整個 RDL 平移旋轉至量測位置（封裝外形與 UBM／焊球固定）
+- **Adaptive Routing**：只動態調整 RDL 一小部分（適合多晶粒佈線）
+- 舊資料旁證（Deca EPTC 2021，未收錄為 raw）：**20 µm 面陣列元件界面 pitch**、**2 µm L/S RDL 及以下**
+
+> ⭐⭐⭐ **RDL 自「一個固定的圖案」變成「一個依量測結果生成的圖案」。** 這是本 wiki 首次記錄 RDL 設計與製程量測形成閉環。
+⚠ 代價未量化（LDI 解析度、產出率、運算成本）。
+
+### mSAP 整合薄膜電阻：公差是瓶頸
+
+**Ohmega Ticer × Green Source Fabrication（本輪）**：
+
+| 項目 | 數值 |
+|------|------|
+| 製程 | **mSAP** |
+| 電阻／導體箔 | **3 µm 銅載體上薄電阻層**；**NiCr 或 NiP** |
+| 目標阻值 | **100 Ω**；**電阻尺寸 254 / 127 µm** |
+| 疊構 | **6 層 2+2+2 有機**；核心 **Panasonic R-1515V（低 CTE）**；增層 **[[entities/agc]] fastRise HF** |
+| 銅層厚 | **18 / 9 / 3 µm** |
+| **公差（mSAP, 254 µm）** | **±20–25%**（目標 **±15%**；傳統減成法 **>±30%**） |
+
+- ⭐⭐⭐ **「同一名詞涵蓋多個獨立驗收項」的又一例，且本例的分項之一是設備變數**：電阻精度由**線寬控制**（已良好）與**長度控制**（變異明顯）共同決定，後者受**蝕刻機行進方向**支配（**垂直於行進方向者公差較佳**）。➜ **本 wiki 首次記錄「元件電性規格受機台行進方向影響」。**
+- ⭐⭐ **「消除通孔」是埋入被動元件的獨立效益**（通孔數減少 → 互連長度縮短 → 寄生 L/C 降低），與「省面積」並列。
+- ⚠ **未給片電阻絕對值（Ω/sq）、TCR、TCT／HAST**；**Trial 2 僅有「標準差下降」的定性陳述**。
+- ⚠ **應用為模組與 IC 封裝基板，非 2.5D/3D 中介層**，不得外推。
+
+### 相關來源
+
+[[sources/2026-10-03_epo_semco-coreless-interposer-organic-bridge]]、[[sources/2026-10-03_imaps_deca-panel-level-fanout-qfn]]、[[sources/2026-10-03_imaps_ohmega-ticer-embedded-thin-film-resistors]]

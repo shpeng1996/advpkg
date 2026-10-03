@@ -3,7 +3,7 @@ title: "共封裝光學元件 / Co-Packaged Optics (CPO) — TSMC-COUPE™ & Eco
 category: technology
 tags: [CPO, co-packaged-optics, COUPE, TSMC, GlobalFoundries, Samsung, photonics, AI, HPC, networking, OCI-MSA, DWDM, Broadcom, NVIDIA, glass-substrate, ULCVD, TGV, Spectrum-X, NVL72]
 created: 2026-04-25
-updated: 2026-10-02
+updated: 2026-10-03
 sources: [2026-09-27_globalfoundries_siph-cpo-bandwidth-density-coupling-budget, 2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-27_paper_copper-interconnect-scaling-roadmap-lines-per-mm, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-05-07_trendforce_globalfoundries-silicon-photonics-scale-cpo, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-03-17_coherent_cpo-ofc2026-demo, 2026-06-07_digitimes_jcet-3d-packaging-cpo-plant, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_edn_cpo-technology-status-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-06-24_thelec_corning-glass-bridge-cpo, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-14_trendforce_umc-silith-silicon-photonics-hvm, 2026-07-14_trendforce_huawei-baidu-npo-msa, 2026-07-27_trendforce_presscenter_cpo-switches-nvidia-broadcom-coupe, 2026-06-03_3dincites_intel-foundry-emib-cpo-glass-ectc2026, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-07-31_ase_cn224583735u-photoelectric-hybrid-rdl, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-09-26_report_dupont-ttm-polymer-waveguide-reliability, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_bitschips_besi-q1-2026-hybrid-bonding-orders]
 related:
   - wiki/technologies/rdl.md
@@ -1173,3 +1173,71 @@ LPKF 之 CPO 耦合能力條件為 **表面波紋 ±100 nm、表面粗糙度 ±3
 - [ ] ⭐⭐ **CPO 採混合接合的 pitch 目標與時程**（Besi 未給）
 - [ ] ⭐⭐ **同一片玻璃上 CPO 耦合區（Ra ±30 nm）與金屬化區（刻意粗化）如何分區製作**
 - [ ] 📌 既有未結清項延續：`10.1038/s41928-026-01681-6`（Nature Electronics CPO 綜述）維持「暫不可得」降級；FAU 40% 是否隨通道數縮放；疊置波導重疊長度與耦合損耗；玻璃體內直寫波導 dB/cm；GlobalFoundries「0.3–0.5 nm」疑為 µm 誤植 —— **本輪均無進展**
+
+---
+
+## 2026-10-03 更新：對準精度的第三條路徑＝膠材；一膠 vs 兩膠；MFD 容許度
+
+### ⭐⭐⭐ 對準精度有三條彼此獨立的路徑
+
+| 路徑 | 做法 | 來源 |
+|------|------|------|
+| **機台** | 主動對準機台精度 | 既有（設備商） |
+| **微影** | 把對準精度自機台轉移到微影 | [[entities/globalfoundries]]（既有） |
+| **膠材** | **低且均勻的固化收縮** | **DELO（本輪）** |
+
+> ⭐⭐⭐ **這與 Deca 的 Adaptive Patterning（把 die shift 交給量測＋每面板客製微影）屬同一思考型態：精度不必在原處解決，可外包給另一個製程環節。**
+> ➜ **本輪三例同形：GlobalFoundries（機台→微影）、DELO（機台→膠材）、Deca（放置精度→量測＋客製微影）。** 見 [[sources/2026-10-03_imaps_deca-panel-level-fanout-qfn]]。
+
+### ⭐⭐⭐ 一膠法 vs 兩膠法
+
+| 位置 | 需求 |
+|------|------|
+| **膠在光路中** | **高穿透率**、**折射率匹配** |
+| **膠在光路外** | **結構性接合**、**與主動對準相容** |
+
+- **兩膠法**：光學膠 + 結構膠 + 應力釋放膠（分別最佳化）—— **現況**
+- **一膠法**：單膠同時承擔光學與結構 —— 原文明言**具挑戰性**
+- **膠材在 PIC／矽光子中的位置**：覆層、邊緣耦合、**V 型槽接合**、光學耦合、應力釋放、PIC／光學元件貼附
+
+### ⭐⭐ 主動對準容許度：MFD
+
+| 光纖 | 覆層直徑 | **MFD** |
+|------|---------|--------|
+| **SMF28** | 125 µm | **9.5 µm** |
+| **UHNA4** | 125 µm | **4 µm** |
+
+> ⭐⭐ **MFD 相差約 2.4×** ⇒ **採用 UHNA4 以提升耦合效率的代價是對準容許度縮小約 2.4 倍。** ⚠ 本 wiki 歸納。
+> 這是本 wiki 首個對準容許度的量化基準，可與 [[entities/globalfoundries]] 的 **SSC ~0.4 dB／32 通道 V-groove <1 dB／Corning 玻璃橋 <1.5 dB/facet** 並列（⚠ 口徑不同：前者為幾何容許度、後者為損耗結果，不得互換）。
+
+### DELO DUALBOND OB6268 性質（單步膠）
+
+| 性質 | 數值 |
+|------|------|
+| 斷裂伸長率 | **1.0 %** |
+| **Young's modulus** | **6,300 MPa** |
+| **Tg** | **202 °C** |
+| **CTE** | **37 ppm/K** |
+| **RI @ 1550 nm** | **1.495** |
+| **穿透率 @ 1550 nm（50 µm）** | **> 98 %** |
+| **收縮率** | **0.7 vol. %** |
+
+**可靠度**：兩組 5 通道 UHNA4 FAU 邊緣耦合，**260 °C ×3 回流**前後量測耦合效率。⚠ **插入損耗前後 dB 值在文字層被圖形截斷，本 wiki 不引用點值。**
+
+- ⭐⭐ **Tg 202 °C vs Lightmatter 之 PIC ~100 °C 工作溫度**：光學膠的熱餘裕約為 PIC 工作溫度的兩倍 ⇒ **在「PIC 能在多熱的環境工作」這個 2026 年的真正瓶頸上，膠材不是限制項。** ⚠ 本 wiki 歸納，兩來源無關聯。
+
+### 供應商側事實
+
+**DELO**：家族企業、德國巴伐利亞、**FY24/25 營收 €245M**、**員工 1,100+**、**研發占營收 15%**。
+➜ 使本 wiki 能把「材料供應商規模」與其在封裝界面的影響力對照（相較 Ajinomoto 之 ABF ≥95% 市占、€ 級營收不詳）。
+
+### ⚠ 本輪新增空缺
+
+- [ ] ⭐⭐⭐ **「膠材路徑」能達到的對準精度絕對值（µm 或 nm）** —— 原文只給膠材性質，未給精度
+- [ ] ⭐⭐ **OB6268 的插入損耗前後 dB** 與 **長期 TCT／吸水率／填料系統**
+- [ ] ⭐⭐ **UHNA4（MFD 4 µm）在量產中的實際採用比例** —— 若主流仍為 SMF28，則容許度縮小 2.4× 的代價尚未被支付
+- [ ] 📌 **既有未結清項延續**：**Nature Electronics CPO 綜述全文** `10.1038/s41928-026-01681-6`（本輪未命中，維持降級）；**「PIC 在有機基板上比在矽中介層上涼 4–5×」的機制**（Marvell OMIB，本輪無進展）
+
+### 相關來源
+
+[[sources/2026-10-03_imaps_delo-optical-adhesive-alignment]]

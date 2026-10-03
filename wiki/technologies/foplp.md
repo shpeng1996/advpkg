@@ -3,7 +3,7 @@ title: "FOPLP — 扇出面板級封裝 / Fan-Out Panel-Level Packaging"
 category: technology
 tags: [fan-out, panel-level, TSMC, Samsung, ASE, Powertech, Innolux, CoPoS, InFO, cost-reduction, delamination, DCB, CTE]
 created: 2026-05-03
-updated: 2026-10-01
+updated: 2026-10-03
 sources: [2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-07-31_trendforce_ase-capex-record-10-5b-leap-foplp, 2025-09-12_trendforce_foplp-competitive-2025, 2026-04-13_trendforce_copos-pilot, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-21_3dincites_acm-wlp-plp-process-trends, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-15_digitimes_manz-310mm-foplp-ecd-equipment, 2026-06-13_digitimes_linkotech-foplp-rollout-traction, 2026-06-20_prnewswire_manz-asia-310mm-ecd, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_digitimes_tsmc-foplp-timeline-skepticism, 2026-07-06_trendforce_cfmee-plp2000-china-first-plp, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-08-06_siliconbox_500m-units-panel-scale, 2026-02-18_siliconbox_ep4697377a1-fanout-panel-metal-sealing-ring, 2026-07-28_xianfeng_cn122476946a-alignment-mark-protection, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-26_paper_skywater-fowlp-pdk-roadmap]
 related:
   - wiki/technologies/rdl.md
@@ -919,3 +919,67 @@ Yole：**先進封裝 2024 >$40B → 2030 >$80B（CAGR 9.5%）**；其中 **2.5D
 - [ ] ⭐⭐ 模封核心內嵌電容的電容密度（µF/mm²），與 Empower 2.3、NPC 4–8 對照
 - [ ] ⭐⭐ 模封核心的 CTE 與 Tg，與 ABF、玻璃（AGC ER-Y1 3.5 ppm/°C）對照
 - [ ] ⭐ SHIELD USA 參與廠商名單與分工（摘要未列機構）
+
+---
+
+## 2026-10-03 更新：第四種面板尺寸與「次單位」；面板的第二個經濟驅動力
+
+### ⭐⭐⭐ 第四種面板尺寸，且首次揭露「次單位」也隨推動者出身而來
+
+| 尺寸 | 推動者 | 出身 | **次單位** |
+|------|--------|------|-----------|
+| **310×310 mm** | TSMC／SCHMID | foundry（自晶圓級往上長） | — |
+| **510×515 mm** | Intel／[[entities/corning]]／LPKF／**Philoptics** | 基板與設備 | — |
+| **620×670 mm** | Innolux | 面板廠（直接搬用既有尺寸） | — |
+| **600 mm 方形** | **Deca（+ [[entities/ase-group]]）** | **後段封裝／扇出** | **75 × 250 mm 傳統條帶** |
+
+> ⭐⭐⭐ **2026-10-02 論述 12 應擴充為：每個推動者不只帶進自己的尺寸，還帶進自己的「次單位」—— Deca 的 600 mm 面板是為了讓條帶格式（75×250 mm）與既有後段設備相容。**
+
+⚠ **待證（新空缺）**：依 Deca 自家 EPTC 2021 發表（thinkdeca.com，2022-03-05，**舊資料，本輪未收錄為 raw**）該格式被稱為 **「SEMI standard 600 mm square format」**、**每面板可用面積 +500%**。**若成立，則四種尺寸中只有 600 mm 是標準機構尺寸，其餘三種為廠商尺寸** —— 這會改變「三種尺寸能否共存」這個既有⭐⭐⭐空缺的性質。
+
+**現況**：Deca **現行量產仍在 300 mm 晶圓**，600 mm 面板為**計畫擴產** —— ⚠ **不得陳述為已量產的面板產線。**
+
+### ⭐⭐⭐ 新增橫向論述：面板級封裝有兩個彼此獨立的經濟驅動力
+
+| 驅動力 | 內容 | 來源 |
+|--------|------|------|
+| **(a) 大型複雜封裝的面積效率** | 僅 >~100×100 mm 才划算；大型且複雜 + advanced fan-out | Lam、Lujan、TSMC CoPoS（既有） |
+| **(b) 商品級封裝的供應鏈去客製化** | **擺脫導線架的庫存碎片化與供應鏈僵固** | **Deca × Microchip MDQFN（本輪）** |
+
+> ➜ ⭐⭐⭐ **既有論述「面板的適用範圍被兩個獨立來源同向限縮」（2026-09-22 論述 10）只適用於 (a)，應明文加上此限定條件。**
+> **MDQFN 是商品級小封裝（遠小於 100×100 mm）而仍採面板，理由不是面積效率而是供應鏈。** ⚠ 本 wiki 歸納；原文未與 Lam／Lujan 對話。**此為反例而非矛盾，既有論述不刪除。**
+
+### Adaptive Patterning：對 die shift 的答案是量測而非收緊
+
+**die shift 兩來源**：**晶粒機械放置變異** ＋ **封膠期間位移**。
+
+| 步驟 | 內容 |
+|------|------|
+| 1. **量測** | **高速光學掃描器**量測實際晶粒位置 |
+| 2. **最佳化** | 依量測資料**動態產生微影圖案** |
+| 3. **曝光** | **LDI**；**每片面板一個獨一無二圖案，無光罩尺寸限制** |
+
+**兩種方法**：**Adaptive Alignment**（整個 RDL 平移旋轉；封裝外形與 UBM／焊球固定）／**Adaptive Routing**（只動態調整 RDL 一小部分；適合多晶粒佈線）。
+
+> ⭐⭐⭐ **「no reticle size limitations」是既有⭐⭐⭐空缺「Lam 的『~100×100 mm 後晶圓失去效率』與 CoWoS 14× 光罩路線為何看似矛盾」的一個結構性答案候選：若採無光罩 LDI ＋ 每面板客製圖案，光罩尺寸不再是限制項，兩者遂不在同一限制軸上。**
+> ⚠ **代價未被量化**（LDI 解析度、產出率、每面板圖案生成的運算成本）；且**適用於 RDL 層，不等於能解決中介層或 2.5D 的光罩限制。** 空缺維持開啟但改述。
+
+### MDQFN 製程流程與既有空缺的交集
+
+Cu stud 輸入晶圓 → 切單與晶粒貼附 → **第一次封膠** → **載板解鍵合** → 背面塗層 → **第一次平坦化** → RDL（PRDL1）→ **模封銅通孔 MCV1** → **第二次封膠** → **第二次平坦化** → Cu LGA 電鍍 → SMS 電鍍 → 最終切單
+
+- ⭐⭐ **兩次封膠 ＋ 兩次平坦化 ＋ 一次解鍵合** ⇒ 直接對應既有兩項列管空缺：**FOPLP 翹曲峰值在 debonding 階段是否有第二個獨立來源**、**逐層 CMP 的累積次數與良率代價**。⚠ **本篇未給任一階段的翹曲或良率數值**，空缺維持。
+- ⭐⭐ **模封銅通孔（MCV）為「把垂直互連做在模封料裡而非矽裡」的第二個獨立實例**（第一為珠海天成 AR ≤10 模封銅孔 + TCB 規避混合接合）。➜ **既有論述「業界的第二條路不是改進該製程，而是把設計移到規格較鬆的區間」第三例。**
+
+### 傳統 QFN 的限制（作為面板化的動因）
+
+**架構**：導線架與打線帶來寄生電感、限制封裝高度與佈線密度、形成機械應力點；**裸露銅**易腐蝕需保護鍍層；**隱藏焊點**無法光學檢測、須用 X-ray。
+**供應鏈**：**客製導線架變體使庫存碎片化**、複雜化供應鏈、提高成本。
+
+- ⭐⭐ **可潤濕側面＝以封裝幾何換取檢測方式**（X-ray → AVI）。➜ **「測試左移／外移」之外的第三種型態 ——「讓缺陷可見」。** ⚠ 本 wiki 歸納。詳見 [[concepts/test-metrology-packaging]]。
+
+**市場**：QFN **USD 124M（2023）→ 258.4M（2032）**，CAGR **8.5%**（引自 semiconductorinsight.com）。⚠⚠ **量級相對於 QFN 實際出貨量明顯偏低，疑為某一細分市場，引用時須標註存疑。**
+
+### 相關來源
+
+[[sources/2026-10-03_imaps_deca-panel-level-fanout-qfn]]

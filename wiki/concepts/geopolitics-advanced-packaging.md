@@ -3,7 +3,7 @@ title: "先進封裝地緣政治 / Geopolitics of Advanced Packaging"
 category: concept
 tags: [geopolitics, US-China, CHIPS-Act, supply-chain, chiplet, NAPMP, export-control, glass-substrate, standards-war, BOE, Corning, Absolics]
 created: 2026-04-26
-updated: 2026-10-02
+updated: 2026-10-03
 sources: [2026-09-27_semieng_chip-week-156-india-tata-besi-izmo, 2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-08-10_trendforce_skhynix-chongqing-sale-global-reset, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-23_trendforce_china-osat-sj-semiconductor-ipo, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-08-05_3dincites_iftle636, 2026-03-23_trendforce_musk-terafab-tsmc-packaging, 2026-04-22_trendforce_sk-hynix-indiana-us-plant, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-16_nokia_pennsylvania-atp-expansion, 2026-06-30_amkor-ir_arizona-7billion-groundbreaking, 2026-06-30_digitimes_us-packaging-capacity-10pct-2032, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-10_tomshardware_micron-250b-us-investment-globalwafers, 2026-07-10_semieng_chip-week-146, 2026-07-14_trendforce_huawei-baidu-npo-msa, 2026-08-21_semieng_chip-week-152, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_asi-1um-hdbu-substrate, 2026-10-02_trendforce_nvidia-glass-substrate-2028-taiwan, 2026-10-02_trendforce_intel-microled-glass-24-layer]
 related: [wiki/concepts/advanced-packaging-market.md, wiki/entities/amkor.md, wiki/entities/ase-group.md, wiki/technologies/ucie.md]
 ---
@@ -856,3 +856,41 @@ TrendForce（2026-09-22，Intel 微 LED 玻璃基板專利報導）：**Intel �
 - [ ] ⭐⭐ **印度先進封裝的政策與產能全貌**
 - [ ] ⭐⭐ **台系面板廠切入玻璃基板的技術落差項**（面板玻璃加工 ≠ 半導體級基板；良率與潔淨度要求差距未知）
 - [ ] 📌 既有未結清項：CHIPS 在基板技術路線上的下注、日美兩條大面積方形基板路線的匯流點 —— **本輪無進展**
+
+---
+
+## 2026-10-03 更新：材料層的地緣政治化首次量化；韓系玻璃供應鏈擴張
+
+### ⭐⭐⭐ ABF 膜的出口管制化：首個量化數字
+
+> **Ajinomoto「近期削減對中國的 ABF 膜出貨 30%」**（[[sources/2026-10-03_tomshardware_abf-substrate-state-2026]]）
+
+- **本 wiki 首次在「最上游材料」這一層取得地緣政治化的量化數字。**
+- ⭐⭐⭐ **其槓桿強度在本 wiki 所有已記錄的管制措施中最高**：Ajinomoto 的 ABF 膜市占 **≥95%**，次者 Sekisui 僅低個位數 ⇒ **無可替代來源**。
+  對照：設備管制有多家供應商可繞道、EDA 管制有替代工具、代工管制有成熟節點替代；**ABF 膜沒有。**
+- ⚠ **未揭露**：措施性質（企業自主決定？出口許可？）、起始時點、是否區分世代、是否涵蓋其子公司。**新空缺⭐⭐⭐。**
+- ⚠ 與本 wiki 既有「中國大陸封裝自主化」敘事的關係：若 ABF 為硬限制，則**中國大陸的先進封裝自主化在材料層有一個無法以產能投資繞過的缺口**。⚠ 本 wiki 推論，列新空缺。
+
+### 韓系玻璃基板供應鏈擴張為四個獨立玩家
+
+| 玩家 | 角色 | 本輪新增事實 |
+|------|------|-------------|
+| [[entities/absolics]]（SKC×AMAT） | 專用廠量產先行者 | 美國 CHIPS Act **$100M**；喬治亞州 |
+| [[entities/semco]] | 基板廠＋玻璃核心合資 | **$1.2B 擴產、量產 2027 Q3**（⚠ 與其他說法不一致）；Sumitomo 合資、Dongwoo Fine-Chem 平澤廠 |
+| **JNTC（+ Comet）** | **TGV 玻璃基板，0.3–2.0 mm 全線** | **韓國首條量產線；台／韓基板廠驗證完成、日本廠測試中；2 家全球半導體公司專案** |
+| **Philoptics** | **TGV 設備（2 mm、510×515 mm）** | **評估 0 ppm / 100 萬孔** |
+
+> ⭐⭐ **「玻璃基板的入口至少有三種」（2026-10-02 論述 13）在韓系內部即已出現三種**：化學與設備合資（Absolics）／基板廠疊層（SEMCO）／**基材加工＋併購金屬化（JNTC+Comet）**，再加**設備（Philoptics）**。
+> ➜ **韓系的佈局密度高於日系與台系**，但**量產時程的對外說法最不一致**（見 [[entities/semco]] 之待證事項）。⚠ 本 wiki 歸納。
+
+### 日韓的玻璃核心時程落差
+
+- **[[entities/ibiden]]（日）：玻璃核心 ~2030**，理由為**翹曲控制**
+- **[[entities/semco]]（韓）：2027 Q3（說法不一）**
+- **[[entities/shinko]]（日）：JDI 茂原廠，交割 2027-03、投產 FY2028**
+
+➜ ⭐⭐ **日系的時程比韓系晚 1–3 年，且日系給出的理由（翹曲控制、尺寸門檻 120 mm/邊）是需求驅動；韓系未給等價的需求理由。** ⚠ 本 wiki 歸納，列新空缺。
+
+### 相關來源
+
+[[sources/2026-10-03_tomshardware_abf-substrate-state-2026]]、[[sources/2026-10-03_digitaltoday_jntc-tgv-thickness-lineup]]、[[sources/2026-10-03_thelec_philoptics-tgv-2mm-glass]]

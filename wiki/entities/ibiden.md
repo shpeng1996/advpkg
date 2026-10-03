@@ -3,7 +3,7 @@ title: "Ibiden — イビデン"
 category: entity
 tags: [Ibiden, FC-BGA, ABF, substrate, capex, EMIB, AI-server, Gama, Ono]
 created: 2026-10-01
-updated: 2026-10-01
+updated: 2026-10-03
 sources: [2026-10-01_ibiden-500bn-capex, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-10-01_shinko-mobara-glass-core-fab]
 related:
   - wiki/technologies/emib.md
@@ -68,3 +68,44 @@ related:
 - [ ] Ono 工廠擴產決策時點
 - [ ] Ibiden 基板內光波導佈局（WO2026133925A1、WO2026105606A1）與 CPO 的關係
 - [ ] Ibiden 的層數／線寬規格；與 Shinko 22 層玻璃基板的對照
+
+---
+
+## 2026-10-03 更新：⭐⭐⭐ 產能倍數、層數與尺寸路線圖全部結清
+
+> **2026-10-02 曾註記「⚠ 產能／層數／線寬全部未揭露，不得由投資額反推產能」。本輪結清。**
+
+### 產能
+
+| 項目 | 數值 |
+|------|------|
+| 投資 | **¥5,000 億（約 $3.1B）FY2026–2028**（既有：第一期約 2,200 億，Gama 廠 Cell6） |
+| **目標產能** | **2028 年達 2024 年的 2.8 倍**（ASIC／AI 伺服器基板） |
+
+➜ **投入與產出兩端自此皆有數字**；既有「2026 年內無新增供給、FY2027 起依序投產」的時程判斷不變。
+
+### ⭐⭐⭐ 世代路線圖
+
+| 指標 | 2026 | 2028 | 2030+ |
+|------|------|------|-------|
+| **本體尺寸** | **90×90 mm** | **110×110 mm** | **130×130 mm 以上** |
+| **層數（堆疊）** | **10-X-10** | **12-X-12** | **14-X-14** |
+
+（產業層級之 L/S 世代：**9/12 → 8/8 → 6/7 µm（2027 初）**，非 Ibiden 專屬）
+
+### ⭐⭐⭐ 玻璃核心的定位：~2030，理由是翹曲控制
+
+> **Ibiden 把玻璃核心放在 2030 左右，作為「翹曲控制」的解法。**
+
+- ⭐⭐⭐ **與「有機基板每邊超過約 120 mm 即失去可用平坦度」併看，Ibiden 的 2030 年目標尺寸 130×130 mm 恰好跨過該門檻。**
+  ➜ **「玻璃核心何時需要」在 Ibiden 的路線圖裡不是技術偏好問題，而是由封裝尺寸決定的時間點。** ⚠ 本 wiki 歸納。
+- ⭐⭐ **Ibiden 的時程（~2030）顯著晚於韓系（[[entities/semco]] 2027 Q3？、[[entities/absolics]] 2027）與 [[entities/shinko]]（FY2028 投產）** ⇒ 詳見 [[concepts/substrate-materials-supply-chain]] 之「玻璃核心時程依角色分三層」。
+
+### 市場地位
+
+- **Unimicron ＋ Ibiden ＋ [[entities/shinko]] 合計約占基板市場四分之三。**
+- ⚠ **[[entities/semco]] 未被列入該三家之內**，其市占本 wiki 空白。
+
+### 相關來源
+
+[[sources/2026-10-03_tomshardware_abf-substrate-state-2026]]

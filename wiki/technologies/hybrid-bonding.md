@@ -3,7 +3,7 @@ title: "混合接合 / Hybrid Bonding"
 category: technology
 tags: [3D, hybrid-bonding, Cu-Cu, SoIC, ECTC, advanced-packaging, DRAM, COP, 4F2, Sn-damascene, damascene-interconnect, PFAS-free, patent-signal, guard-ring, surface-activation]
 created: 2026-04-24
-updated: 2026-10-02
+updated: 2026-10-03
 sources: [2026-09-27_paper_binghamton-ibm-pad-scaling-resistance-variability, 2026-09-27_intel_us20260223702a1-direct-bonding-embedded-bridge-organic-cavity, 2026-05-21_semiecosystem_ectc2026-cpo-hybridbonding-plp, 2026-04-24_initial-survey, 2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-03-01_3dincites_besi-packaging-power-shift, 2026-01-13_semiengineering_hbm4-microbumps, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-19_semieng_advanced-packaging-limits, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-03-27_3dincites_copper-grain-hybrid-bonding, 2026-03-02_semieng_making-hybrid-bonding-better, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2026-04-29_semiwiki_cea-leti-ectc2026-hybrid-bonding, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2024-02-09_semianalysis_hybrid-bonding-process-flow, 2026-05-19_semiconductor-digest_ev-group-ectc2026-hybrid-bonding, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-04-19_semiwiki_apple-m5-cucu-hybrid-bonding-shipped, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-18_imec_iii-v-chiplet-rf-laser-bonding, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-29_evgroup_ectc2026-hybrid-bonding-layer-transfer, 2026-06-29_thelec_skhynix-hybrid-bonding-equipment-order, 2026-06-05_semieng_intel-ectc-2026-emib-t-cpo-glass, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-14_trendforce_samsung-hbm-hiring-hybridbonding, 2026-07-16_semieng_fine-pitch-hb-high-volume, 2026-07-16_semieng_alt-materials-hybrid-bonding, 2026-06-08_irtnanoelec_d2w-hybrid-bonding-1um-pitch, 2026-05-28_imec_w2w-hybrid-bonding-200nm-pitch, 2026-09-09_acsaelm_microwave-anneal-cu-cu-150c-3min, 2026-08-21_scirep_copper-oxide-reduction-ar-h2-pulsed-plasma, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-03-29_damnang_hybrid-bonding-cmp-gating-factor, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-04-02_adeia_us20260096463a1-buildup-organic-dielectric-bonding, 2026-07-17_jcet_cn122421815a-asymmetric-bonding-interface, 2026-04-30_seoultech_us20260123559a1-hydrocarbon-plasma-low-temp-bonding, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer, 2023-09-13_nccavs_intel-cmp-dishing-requirement-vs-achieved, 2026-03-11_epo_adeia-cmp-for-hybrid-bonding-patent, 2026-09-01_chip_ru-bpr-ntsv-ion-beam-recess, 2026-02-10_epo_shanghai-univ-citric-acid-cu-reduction-sog, 2026-09-21_semiconductorx_cmp-share-lam-sabre-correction, 2026-09-16_jsandwich_cucu-diameter-nonmonotonic-local-optimum, 2026-07-21_lam_sabre-3d-is-ecd-not-cmp, 2026-09-26_paper_dalian-cucu-bonding-review, 2026-09-26_patent_beijing-xinli-hybrid-bonding-dishing-activation, 2026-09-26_paper_ibm-amine-post-cmp-clean, 2026-10-02_bitschips_besi-q1-2026-hybrid-bonding-orders, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_adeia-us20260247631a1-dual-sided-connecting-element]
 related:
   - wiki/technologies/rdl.md
@@ -1979,3 +1979,78 @@ SemiAnalysis ECTC 2026 綜整（2026-07-02）另給出三個降溫／細間距�
 - [ ] ⭐⭐ **HCB 熱效益被稀釋 2–3.5 倍的串聯熱阻分項**（哪一段吃掉了改善）
 - [ ] ⭐⭐ **Adeia 的混合接合專利組合規模與到期時程**（見 [[entities/adeia]]）
 - [ ] 📌 既有未結清項延續：D2W 陣營對 W2W 落差的公開表態（仍為零）、PHB 量化數據、AMAT 混合接合 CMP 市占、Amkor 使用誰的 TCB 鍵合頭、Samsung 要求 Besi 做的機台設計變更、以混合接合整合被動元件所需之對準規格 —— **本輪均無進展**
+
+---
+
+## 2026-10-03 更新：queue time 首次量化；真空 vs 常壓電漿；記憶體用例的年度專案數
+
+> ⚠ **本頁已達 1,981 行。** 重組優先序不變（僅次於 glass-substrate）。本輪更新壓縮為條列。
+
+### ⭐⭐⭐ 「接合當下表面還剩多少氧化物，用什麼除掉」—— 空缺結清（附量化窗口）
+
+**Plasmatreat（IMAPS DPC 2026，`10.4071/001c.167020`）** 以**常壓成形氣電漿（N₂ 95% / H₂ 5%，距離 15 mm，速度 17／13 mm/s）**還原 CuOx，XPS 定量：
+
+| 樣品 | Cu(0) % | Cu(I) % | Cu(II) % | Cu total % | **Cu/O** |
+|------|---------|---------|----------|-----------|----------|
+| Reference（未處理） | **2.3** | 72.5 | 25.1 | 24.9 | **0.69** |
+| 處理後 **1 h** | **50.6** | 48.0 | **1.3** | 27.5 | **1.30** |
+| **4 h** | 45.5 | 50.1 | 4.4 | 21.8 | **0.94** |
+| **12 h** | **36.6** | 59.6 | 3.9 | 14.4 | **0.73** |
+
+> ⭐⭐⭐ **本 wiki 讀法：以 Cu/O 為單一指標，有效窗約 1–4 h；12 h 時（0.73）已幾近回到未處理基準（0.69）。**
+> ➜ **2026-09-22 把該空缺的提問方式自「多少溫度生成哪一相」改為「接合當下表面還剩多少氧化物」、並把可操作變數指認為 queue time（數十分鐘–數小時）—— 本輪取得量化窗口，該改述獲證實。**
+
+**既有 CuOx 去除／抑制手段（原文整理）**：助焊劑、**蟻酸蒸氣**、**微刷洗**；保護鍍層 **ENIG／ImSn／ImAg／ENEPIG**。
+**銅柱覆晶互連在 >220 °C 易氧化**（⚠ 與 IBM/RPI 空氣環境 250 °C CuO 門檻情境不同，**不得合併**）。
+**Sn 與 Ag 氧化物亦可還原**（Sn 12.8%→21.7%；Ag 14.7%→58.0%）⇒ 電漿還原自銅專屬擴為多金屬手段。
+
+### ⭐⭐⭐ 真空電漿 vs 常壓電漿：活化品質與產線形式的取捨
+
+接觸角（度）：
+
+| | 處理前 | 處理後 | +15 min | +30 min | +45 min |
+|---|-------|-------|---------|---------|---------|
+| **低壓（真空）氬電漿** | 64.8 | **19.2** | 24.8 | 26.6 | **29.6** |
+| **Openair（常壓）電漿** | 69.2 | **27.6** | 34.8 | 46.0 | **56.8** |
+
+- **真空活化更深（19.2° vs 27.6°）且衰退更慢（45 min 後 29.6° vs 56.8°）**
+- **常壓的價值在可線上、免真空、免批次**（原文明言真空式的既有困難為「處理後表面穩定性差，接合必須在數小時內完成」＋「批次處理」）
+- ⚠ **兩組處理前基準不同（64.8° vs 69.2°），不得直接相減**；僅比較衰退斜率。
+
+> ⭐⭐⭐ **「真正的瓶頸在被視為輔助步驟的那一步」第五例，且首次把取捨定位在「活化品質 vs 產線形式（inline vs batch）」而非製程能力本身。**
+
+### ⭐⭐⭐ 新增橫向論述：「表面處理的效益是會過期的庫存」
+
+與既有論述「**KGD 的爭議不只是測了什麼，還有從測完到裝上去之間掉了多少**」（Gel-Pak：拾取 98.5–99% → >99.8%，搬運損失 0.2–1.5%）**同形**：兩者都是**「合格狀態的保存期限」**問題，而非製程能力問題。
+➜ **本 wiki 的限制鏈（①表面平坦度 ~0.2 nm ＞ ②die 翹曲 <100 nm ＞ ③機台對準 100 nm）之外，應加上一個正交軸：「①與②的達成狀態能保存多久」。**
+
+### ⚠ 與上海大學 CN121511008A 的張力（新空缺）
+
+**上海大學 CN121511008A** 曾主張 **Ar/H₂ 電漿活化本身不足以還原 Cu 氧化物**，改以檸檬酸濕式還原。
+**本輪 Plasmatreat 以 N₂95%/H₂5% 常壓成形氣得到 Cu(II) 25.1% → 1.3%** 的還原結果。
+⚠ **兩者氣體組成、壓力、情境皆不同（Ar/H₂ 低壓 vs N₂/H₂ 常壓），不足以判定孰對。**
+➜ **新空缺⭐⭐⭐：電漿還原 Cu 氧化物的充分性取決於哪些條件（氣體組成？壓力？是否需濕式輔助？）。**
+
+### ⚠ 不得外推至混合接合
+
+本篇為**銅柱／覆晶／打線**情境。混合接合的 Ra 要求 **<0.1–0.2 nm**，與本情境相差 **2–4 個數量級**（本 wiki 粗糙度跨域註記）。
+➜ **混合接合側的 queue time 仍為空缺⭐⭐⭐**，但本輪已確立「應該問 queue time」這個問法是對的。
+
+### ⭐⭐⭐ 記憶體-on-logic 用例：年度專案數與 pitch 門檻
+
+**Semiconductor Engineering（2026-08-20）**：
+> **每年少於 20 個專案**採用「標準 DRAM 晶粒直接堆疊在 host 之上」的做法（**混合接合，pitch <10 µm**），以換取更低延遲與功耗。
+
+- ⭐⭐⭐ **本 wiki 第一個把混合接合「採用規模」（而非設備訂單或路線圖時程）量化的數字。**
+- ⚠⚠ **與 Besi「20 家混合接合客戶」數字接近但口徑完全不同**（年度專案數 vs 設備客戶數）—— **不得互相印證。** 惟兩者同時指向「混合接合的實際落地規模仍是兩位數量級」。
+- ⭐⭐ **部分修正既有「HBM4 堅持微凸塊、混合接合延後至 HBM5」的敘事**：在 HBM 標準堆疊之外，已有 <20 個/年的 host-上-DRAM 混合接合專案在跑。➜ **混合接合在記憶體領域不是「尚未開始」，而是「在標準產品之外、以客製專案形式小量進行」。**
+
+### 清洗軸：第三個單元製程被環境法規重塑
+
+**Shellback HydrOzone（`10.4071/001c.167022`）**：以**氣相臭氧＋薄水邊界層（最高 95 °C）**取代 **Piranha（SPM）與 NMP／DMSO**；剝除速率量級 **~1,000–1,200 nm/min vs 溶解臭氧 ~140 nm/min（約 10×）**；自述 **擁有成本 −50%、占地 −80%**（⚠ 供應商主張、無第三方佐證）。
+- ⚠ 本篇為**光阻剝除**，**非 CMP 後清洗** ⇒ 既有⭐空缺「CMP 後清洗是否為第二大良率槓桿」**維持開啟**。
+- ⭐⭐ 但本篇使**清洗類製程首次在本 wiki 取得獨立的（法規與成本）驅動力**，而非僅附屬於良率。
+
+### 相關來源
+
+[[sources/2026-10-03_imaps_plasmatreat-cuox-reduction-queue-time]]、[[sources/2026-10-03_semieng_custom-hbm-business-model]]、[[sources/2026-10-03_imaps_hydrozone-ozone-resist-strip]]

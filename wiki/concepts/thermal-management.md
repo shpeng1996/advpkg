@@ -3,7 +3,7 @@ title: "先進封裝熱管理 / Thermal Management in Advanced Packaging"
 category: concept
 tags: [thermal-management, liquid-cooling, 3D-IC, CoWoS, heat-dissipation, TIM, ECTC-2025, GaN, power-delivery, co-design, patent-signal, delamination]
 created: 2026-04-25
-updated: 2026-10-02
+updated: 2026-10-03
 sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2025-12-01_semiengineering_thermal-management, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-02_trendforce_samsung-hbm5-computex2026, 2026-05-21_semieng_hi-roadmap-nature-paper-intel, 2026-08-13_semieng_1mw-rack-debate-thermal, 2026-04-27_semieng_semiconductor-materials-misbehave, 2026-08-21_trendforce_chip-packaging-heat-ai-bottleneck-cpo-stco, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_arxiv_umn-multi-kw-power-delivery-3d-hi, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_samsung-cn122602880a-ivr-capacitor-interposer-core, 2026-10-02_imaps-dpc2026_delo-die-side-capacitor-encapsulation]
 related:
   - wiki/technologies/cowos.md
@@ -1007,3 +1007,18 @@ Samsung HCB（詳見 [[technologies/hybrid-bonding]]）：HBM **內部**熱阻 *
 - [ ] ⭐⭐ **1.8 LPM/kW（Lightmatter）vs 1 LPM/kW（TSMC 4kW@4LPM）的口徑差異**
 - [ ] ⭐⭐ **HCB 熱效益被稀釋的串聯熱阻分項**（哪一段吃掉了改善）
 - [ ] 📌 既有未結清項延續：「調節器越近負載 vs 轉換熱越近熱點」取捨曲線、Foveros 3D 與 BSPDN 熱代價是否疊加、TIM 材料值≠有效值的量化、晶背面積競爭 —— **本輪均無進展**
+
+---
+
+## 2026-10-03 更新：光學膠的熱餘裕高於 PIC 本身
+
+- **DELO DUALBOND OB6268（光學／結構單步膠）：Tg 202 °C**、CTE 37 ppm/K、通過 **260 °C 峰值回流 ×3**。
+- 對照 **Lightmatter M1000 之 PIC 工作溫度 ~100 °C**（25 °C 冷卻液、1.8 LPM/kW）。
+
+> ⭐⭐ **光學膠的熱餘裕約為 PIC 工作溫度的兩倍** ⇒ **在「PIC 能在多熱的環境工作」這個 2026 年的真正瓶頸上，膠材不是限制項。** ⚠ 本 wiki 歸納，兩來源無關聯、口徑不同（Tg 為材料轉移點、~100 °C 為運作溫度），**不得相減。**
+
+- 另：**[[entities/semco]] CN121940955A**（散熱件埋入玻璃層內，見而未採）與 **Intel CN122318840A**（玻璃層內整合電感，含導電聚合物隔離層以降低渦流）使**「玻璃核心＝元件機殼」的同向證據增至五個**，其中**兩個與熱／磁相關** —— 見 [[technologies/glass-substrate]]、[[concepts/power-delivery-packaging]]。
+
+- 📌 **既有未結清項延續**：**微流道阻塞事件的後果與可回復性**、**泵功耗**、**「PIC 在有機基板上比在矽中介層上涼 4–5×」的機制** —— **本輪均無進展。**
+
+見 [[sources/2026-10-03_imaps_delo-optical-adhesive-alignment]]。

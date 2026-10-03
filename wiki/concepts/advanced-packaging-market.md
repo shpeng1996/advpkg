@@ -3,7 +3,7 @@ title: "先進封裝市場 / Advanced Packaging Market"
 category: concept
 tags: [market, forecast, CAGR, supply-chain, HBM, chiplet, geopolitics, equipment, SIA, Omdia, Yole, WFE, substrate-market, framework]
 created: 2026-04-24
-updated: 2026-10-02
+updated: 2026-10-03
 sources: [2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-07-31_semieng_chip-week-149, 2026-04-24_initial-survey, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2026-01-23_trendforce_chip-tools-tel-asml, 2026-03-05_trendforce_intel-emib-billions, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2025-12-18_trendforce_micron-capex-hbm4, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2025-05-13_trendforce_top10-osat-2024, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-04-16_ontoinnovation_dragonfly-g5-qualified, 2026-06-23_communicationstoday_foplp-glass-substrate-market-8b-2030, 2026-06-29_trendforce_china-osat-tongfu-jcet-investment, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-26_semieng_chip-week-144, 2026-07-01_trendforce_ase-price-hike-20pct, 2026-07-04_semieng_chip-week-145, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-07-03_trendforce_anthropic-samsung-advanced-packaging, 2026-05-08_trendforce_ajinomoto-abf-1b-land-buy-2032-margins, 2026-07-24_semieng_chip-week-148, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-08-06_siliconbox_500m-units-panel-scale, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-10-02_imaps-dpc2026_defect-free-coplanar-copper-via-fill, 2026-10-02_trendforce_cowos-l-mainstream-through-2028, 2026-10-02_trendforce_nvidia-glass-substrate-2028-taiwan, 2026-10-02_bitschips_besi-q1-2026-hybrid-bonding-orders]
 related:
   - wiki/entities/tsmc.md
@@ -1308,3 +1308,54 @@ Bits&Chips（2026-04-23）：訂單 **€269.7 M（YoY >2×）**、營收 **€1
 - [ ] ⭐⭐ **Besi Q2/Q3 2026 實績是否達成 +30~40% 指引**
 - [ ] ⭐⭐ **各 CSP ASIC 的封裝選擇（CoWoS-L / EMIB-T / FOPLP）與量**
 - [ ] 📌 既有未結清項延續：CoWoS 絕對產能、OCS 是否計入先進封裝口徑、Yole 市場數字與本頁其他來源的口徑對齊 —— **本輪均無進展**
+
+---
+
+## 2026-10-03 更新：ABF 缺口時程與擴產投資；材料層的集中度高於產能層
+
+> ⭐ **本輪新建 [[concepts/substrate-materials-supply-chain]]**，基板與材料的完整數據移至該頁；本節僅保留市場面摘要與橫向論述。
+
+### ⭐⭐⭐ 橫向論述：先進封裝最上游的集中度遠高於最下游，而產業敘事的注意力分布恰好相反
+
+| 層級 | 集中度 |
+|------|--------|
+| **ABF 膜（最上游材料）** | **Ajinomoto ≥95%** |
+| ABF 基板製造 | Unimicron＋Ibiden＋Shinko **約 3/4** |
+| 2.5D 封裝產能 | TSMC ＋ 多家 OSAT |
+| 混合接合設備 | Besi／ASMPT／EVG／Hanmi／Hanwha **五家以上** |
+
+⚠ 本 wiki 歸納。
+
+### ABF 缺口與價格
+
+| 期間 | ABF 缺口 |
+|------|---------|
+| 2026 H2 | **約 10%** |
+| 2027 | **約 21%** |
+| 2028 | **可能 >40%** |
+
+- 基板**面積**需求 **CAGR 約 39%（2025–2028）**
+- **Ajinomoto**：產能 **200 萬 m²／月**、2026 Q2 滿載、**2026 Q3 漲價約 30%**
+- **用量放大係數約 10×**：單一先進 AI 基板 = **3.5 倍板面積 × 3 倍 ABF 層數（18 vs 6）** ⇒ **封裝產能翻倍 ≠ 材料需求翻倍**
+- **SAP 製程負載指數**（2024=1.0）：**1.8（2026）→ 2.5（2028）**
+
+### ⭐⭐ 橫向論述：漲價先於擴產見效
+
+- Ajinomoto **2026 Q3 +30%**；[[entities/ase-group]] 先進封裝報價 **+20% 以上**（既有）
+- 擴產案的產出多落在 **2027–2028**（Ibiden FY2027 起依序投產、[[entities/semco]] 2027 Q3、Kinsus 2027）
+➜ **缺口與新增供給在時間上錯開約一到兩年；價格是這一層目前唯一的即時調節機制。** ⚠ 本 wiki 歸納。
+
+### 記憶體側
+
+- **記憶體廠未來 1.5–2 年產能已賣光**（Khurram Malik, Marvell，2026-08-20）
+- **Custom HBM 進入資料中心：一年、或許兩年內**
+- 需求端不區分標準或客製 ⇒ custom HBM 不額外加重既有產能負擔，但**使供給預測更複雜**
+
+### 其他市場數字
+
+- **NVIDIA 至 2025 年底累計約 320 萬顆 Blackwell GPU 封裝**（每顆需一片 ABF 基板）
+- **QFN 市場 USD 124M（2023）→ 258.4M（2032）、CAGR 8.5%** —— ⚠⚠ **量級相對 QFN 實際出貨量明顯偏低，疑為某一細分市場；引自 semiconductorinsight.com，引用時須標註存疑。**
+
+### 相關來源
+
+[[sources/2026-10-03_tomshardware_abf-substrate-state-2026]]、[[sources/2026-10-03_semieng_custom-hbm-business-model]]、[[sources/2026-10-03_imaps_deca-panel-level-fanout-qfn]]

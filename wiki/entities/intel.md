@@ -3,7 +3,7 @@ title: "英特爾 / Intel"
 category: entity
 tags: [IDM, advanced-packaging, EMIB, Foveros, Intel18A, Clearwater-Forest, Foveros-Direct, glass-substrate, 14A, High-NA-EUV, silicon-capacitors, Google-TPU-v8e, Q2-2026-earnings, Tesla-14A, HLFF, RAMP-C, Secure-Enclave, Rio-Rancho]
 created: 2026-04-24
-updated: 2026-10-02
+updated: 2026-10-03
 sources: [2026-09-27_intel_us20260182414a1-asymmetric-buildup-cte-gradient-glass, 2026-09-27_intel_cn122270166a-stacked-glass-silicon-bridge-assembly-ar20, 2026-09-27_intel_us20260223702a1-direct-bonding-embedded-bridge-organic-cavity, 2026-08-24_intel-newsroom_hot-chips-2026-diamond-rapids-foveros-ucie, 2026-04-24_initial-survey, 2026-07-20_trendforce_tsmc-265b-arizona-intel-novalake, 2026-03-18_trendforce_intel-emib-malaysia, 2026-03-03_trendforce_intel-clearwater-forest, 2026-03-05_trendforce_intel-emib-billions, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-04-20_trendforce_intel-foundry-14a-equipment, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-01_semianalysis_cpus-back-datacenter-2026, 2026-04-10_3dincites_intel-gan-chiplet, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks, 2026-06-21_convergedigest_intel-emib-t-multi-die-packaging, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap, 2026-07-01_trendforce_terafab-intel-veteran-hire, 2026-04-07_tomshardware_intel-joins-terafab, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-01-30_tomshardware_intel-ai-chip-test-vehicle-emib-t, 2026-07-14_trendforce_intel-ireland-5b-intel3-europe, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-04_semieng_from-blueprint-intel-hlff, 2026-07-31_semieng_chip-week-149, 2026-08-13_trendforce_intel-memory-reentry-xbm-zam-saimemory, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-09-30_intel_us-advanced-packaging-reticle-8x-12x-fab9, 2026-09-30_epo_intel-jp2026116680a-glass-core-embedded-inductor-clusters, 2026-09-30_epo_intel-us20260040982a1-glass-package-liquid-metal-socketing, 2026-09-30_epo_intel-us20260191037a1-localized-embedded-bridge-in-core, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_trendforce_intel-microled-glass-24-layer]
 related:
   - wiki/entities/tsmc.md
@@ -929,3 +929,47 @@ SemiAnalysis：**Intel 細晶銅（fine-grain copper）在 175–200 °C 達均�
 - [ ] ⭐⭐ **Intel 玻璃 24 層自 78×77 mm 到 510×515 mm 的良率變化**
 - [ ] ⭐⭐ **細晶銅 175–200 °C 的 pitch 與良率條件**
 - [ ] 📌 既有未結清項延續：EMIB-T 供電通道容量（A 或 A/mm²）、EMIB 基板良率 45% 口徑、Intel 第三襯層（100–250 nm）材料與功能、Intel JP2026108527A 之 US/EP 同族、光罩倍數的 mm² 絕對值 —— **本輪均無進展**
+
+---
+
+## 2026-10-03 更新：TGV 界面四路線成形；橋的反向布局；該 CPC 前 50 名占 32%
+
+### ⭐⭐⭐ TGV 界面工程：四條並行且互斥的路線
+
+> **專利為前瞻訊號非既成事實。** 不得陳述 Intel 已量產任一路線。
+
+| 路線 | 機制類型 | 公布號 / family | pd | 收錄 |
+|------|---------|----------------|----|------|
+| ZnO + Pd 化學官能化 | 附著（化學） | 既有 | — | 已收錄 |
+| 雙襯層 double liners | 附著（多層） | US20260198346A1 / 100212955 | — | 前輪 |
+| **部分襯層，僅端部 end regions** | **附著（幾何選擇性）** | **US20260191063A1 / 100312113** | 2026-07-02 | **本輪** |
+| **聚合物緩衝層（玻璃與 TGV 之間）** | **順從（機械解耦）** | **US20260182404A1 / 97593224** | 2026-06-25 | **本輪** |
+
+- ⭐⭐⭐ **發明人重疊（Heaton Thomas 同時列名後兩件）證明為同一團隊的「多路線並進」而非「路線更替」** —— 本 wiki 首次能以此方式證明該區別。
+- ⭐⭐⭐ **與 [[entities/corning]] 的工程哲學對立至此完全成形**：Corning 四項手段全為附著強化；**Intel 四條路線全為「承認界面會失效」**（多層／選擇性幾何／機械順從）。➜ **兩種回應對應兩種商業位置：材料供應商賣界面品質，封裝整合者買可容錯的結構。** ⚠ 本 wiki 歸納。
+- **部分襯層件之發明人 8 名**（Stacey、Mohammadighaleni、Page、Schichtel、Li、Nie、Heaton、Seneviratne）；**聚合物件 8 名**（Saeedifard、Kang、Lteif、Narute、Cho、Duan、Grujicic、Heaton）。
+- ⚠ **兩件皆無任何量化值**。⚠ **新空缺：聚合物緩衝層對 TGV 高頻損耗的代價**；**「端部」是頂／底兩端或單端。**
+
+見 [[sources/2026-10-03_epo_intel-partial-liners-tgv]]、[[sources/2026-10-03_epo_intel-polymer-tgv-buffer]]。
+
+### ⭐⭐⭐ 橋架構：與 2026-10-02 主線方向相反的布局
+
+**CN122349366A（2026-07-07，family 97752214）「懸掛式晶粒對晶粒互連橋」**：
+- 橋晶粒**可不含 TSV**、**可被懸掛並於封裝底部露出**
+- **供電經柵狀供電／接地金屬層，自橋晶粒周界外側延伸進入周界內、跨越佈線結構之上**
+- 發明人 7 名，**姓名型態以德語系為主**（⚠ 依作業規範不得由姓名推論組織歸屬）
+
+> ⭐⭐⭐ **Intel 同時在「往橋裡加東西」（EMIB-T 橋內 MIM 500 fF/µm²、PDN AC 阻抗 >82% 改善）與「把東西從橋裡拿掉」（本件：純佈線、免 TSV、供電繞道）兩個方向布局。**
+> ⚠ **並列記錄，不修改既有論述。** 詳見 [[technologies/emib]]。
+
+### ⭐⭐ 檢索方法論：Intel 在 CPC H10W70/618（2026）前 50 名占 8 件（32%）
+
+CN122349366A、US20260191063A1、US20260191037A1（family 100312105，**已收錄**）、CN122318840A、CN122318219A、US20260182414A1（**已收錄**）、US20260182404A1、US20260198346A1（**已收錄**）。
+
+⚠ **僅為前 50 名之抽樣，不得外推為 148 件全體的分布。** 餘約 98 件列下輪第一順位續掃。
+
+### 📌 本輪見而未採（列候選）
+
+- **CN122318840A（family 97446354，2026-06-30）「玻璃層內整合電感＋導電聚合物隔離層」** —— 導電聚合物置於種子層與磁性材料之間，**降低渦流造成的電感效率劣化**。⭐⭐ **本 wiki 首個落在「磁芯 ↔ 封裝整合」交集的 Intel 專利管道**，且為「玻璃核心＝元件機殼」第五個同向證據。**列下輪第一順位。** ⚠ 摘要無量化值。
+- **CN122318219A**（封裝內嵌記憶體）
+- **EP4815713A2**（橋晶粒屏蔽＋dummy die）—— **自 2026-10-02 列管，本輪再度未採**

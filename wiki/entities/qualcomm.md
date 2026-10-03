@@ -3,7 +3,7 @@ title: "Qualcomm"
 category: entity
 tags: [fabless, mobile, AI, HBC, HBM-alternative, LPDDR, SoC]
 created: 2026-08-29
-updated: 2026-10-02
+updated: 2026-10-03
 sources: [2026-08-28_semieng_week-153-nvhbm-qualcomm-hbc-sk-hynix-indiana]
 related: [wiki/technologies/hbm4.md, wiki/entities/sk-hynix.md, wiki/entities/nvidia.md]
 ---
@@ -90,3 +90,36 @@ related: [wiki/technologies/hbm4.md, wiki/entities/sk-hynix.md, wiki/entities/nv
 *Sources: [[sources/2026-10-02_epo_amd-us20260282956a1-silicon-bridge-decap]]（同一檢索）、[[sources/2026-10-02_epo_adeia-us20260247631a1-dual-sided-connecting-element]]（同一檢索與同一維度）*
 
 > ⚠ **本節兩件 Qualcomm 專利於本輪為「見而未取用為 raw 檔」**（Track B 每日 5 件配額已由 AMD／Adeia／Samsung／上海先封／SEMCO 填滿），故無獨立 source 頁；**內容來自本輪 OPS 檢索回應之標題、摘要、發明人與 IPC，已足以支持上述敘述。列下輪 Track B 候選。**
+
+---
+
+## 2026-10-03 更新：橋案與 HBC 的張力取得一個解釋；橋被定性為被動元件
+
+### ⭐⭐⭐ 兩件圍籬式專利
+
+| 公布號 | family-id | 埋入之元件 | 額外 CPC |
+|--------|-----------|-----------|---------|
+| **US20260182412A1** | **98366373** | **被動元件 = 橋** | — |
+| **US20260182361A1** | **98366085** | **主動元件 = 記憶體** | H01G4/228、H01G4/33、H10B80/00 |
+
+- 兩件 **pd 2026-06-25**、**發明人相同（Lane Ryan、Weng Li-Sheng，僅 2 名）**、摘要句構幾近逐字相同，**但 family-id 不同 ⇒ 兩個獨立家族的圍籬式布局。**
+- 共同結構：封裝基板介電層內埋入該元件，**併同一個「電容互連為垂直對齊」的電容**。
+
+### ⭐⭐⭐ 既有空缺的部分結清
+
+既有⭐⭐⭐空缺：**「Qualcomm 的 HBC（不需 2.5D）與其兩件橋案（2.5D 細化）之間的張力如何解釋」**（2026-10-02 列管）。
+
+> **本 wiki 讀法**：本件把**橋歸類為「被動元件」**，姊妹件在同一位置改放**記憶體（主動元件）**。
+> ➜ **Qualcomm 的布局不是在「要不要 2.5D」上選邊，而是把基板介電層內的那個位置當成一個可替換的插槽（slot）—— 橋、記憶體、電容皆為可插入物。** 這能同時解釋 HBC 與橋案並存。
+> ⚠ **本 wiki 歸納，原文未如此表述。**
+> ➜ **空缺降為⭐⭐，並改述為：「該插槽讀法是否能由後續 Qualcomm 申請案佐證（例如同一位置再出現第三種插入物）。」**
+
+### 其他
+
+- ⭐⭐ **「橋 = 被動元件」是本 wiki 第三種橋的定性**（既有：佈線結構、元件載體），三者並列不相互取代。詳見 [[technologies/emib]]。
+- **「是否承載被動元件」維度（第 9 維）首次由第三家申請人支持**（既有 Intel EMIB-T、AMD）。
+- ⚠ **兩件皆無任何量化值**（無容值、無密度、無對齊容許偏差）；本件口徑＝未定義，**不得與橋內 MIM 0.5 µF/mm² 等落點並列排序**（作業規範 25）。
+- ⚠ **新空缺⭐⭐：「垂直對齊」的對齊對象與容許偏差。**
+- 📌 **既有見而未採延續**：**US20260282961A1**（橋對位結構）、**US20260293712A1**（並置晶粒 device-to-device 橋＋雙晶粒 TSV＋基板雙路徑）—— 自 2026-10-02 列管，**本輪再度未採。**
+
+見 [[sources/2026-10-03_epo_qualcomm-bridge-as-passive-vertical-cap]]。

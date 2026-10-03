@@ -3,7 +3,7 @@ title: "TSV — Through-Silicon Via / 矽穿孔"
 category: technology
 tags: [TSV, HBM, interposer, 3D-IC, CoWoS, manufacturing, backside-power, advanced-packaging, radiation, redundancy, reliability]
 created: 2026-08-10
-updated: 2026-10-02
+updated: 2026-10-03
 sources: [2026-09-27_wuhanuniv_cn121548325a-tgv-micro-nano-anchor-molecular-bridging, 2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-27_semieng_chip-week-156-india-tata-besi-izmo, 2026-04-22_semieng_tsv-complexity-manufacturing-bottleneck, 2026-08-21_semieng_chip-week-152, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-08-21_scirep_copper-oxide-reduction-ar-h2-pulsed-plasma, 2026-06-08_irtnanoelec_d2w-hybrid-bonding-1um-pitch, 2026-03-13_kaneka_jp2026047137a-glass-core-polyimide-quantified, 2026-08-10_screp_low-k-organic-buffer-tgv-cu-metallization, 2026-08-04_jmrt_vacuum-assisted-void-free-cu-fill-tgv, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring, 2026-09-26_patent_zhuhai-tiancheng-dual-depth-tsv-silicon-bridge, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_patent_er-eng-glass-interposer-dual-carrier, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth, 2026-10-02_epo_semco-cn122054433a-glass-surface-roughness, 2026-10-02_trendforce_intel-microled-glass-24-layer, 2026-10-02_imaps-dpc2026_defect-free-coplanar-copper-via-fill, 2026-10-02_microrel_tudelft-google-3dic-fa-hardware]
 related:
   - wiki/technologies/hbm4.md
@@ -662,3 +662,37 @@ TU Delft × Google（2026-07-03）：以 **~210 µm interposer pin pitch** 的 D
 - [ ] ⭐⭐ **Intel 玻璃 TGV 0 ppm 的樣本數、孔數與量測方法**
 - [ ] ⭐⭐ **bottom-up 填充能否移植到玻璃 TGV**（本件為 IC 基板樹脂微孔與通孔）
 - [ ] 📌 既有未結清項延續：`10.1016/j.mssp.2026.111165` 全文（TGV 陣列力學：幾層襯層／各層多厚／各層負責哪一種失效）、Intel 第三襯層（100–250 nm）材料與功能、2026 年濺鍍側深寬比實績、Cu recess 產線 dishing 分布 —— **本輪均無進展**
+
+---
+
+## 2026-10-03 更新：襯層的空間分布成為設計變數；厚玻璃的 AR 空缺
+
+### ⭐⭐⭐ 專利訊號：襯層的「位置」首次成為請求項層級的設計變數
+
+> **專利為前瞻訊號非既成事實。**
+
+- **Intel US20260191063A1（2026-07-02，family 100312113）**：TGV 內的襯層**只部分覆蓋孔壁**，且**該部分覆蓋可位於通孔的端部區域（end regions）**。
+  ➜ 此前本 wiki 的 TGV 襯層討論只有「有／無」與「材料」兩軸；**本件加入沿孔深的空間分布。**
+  ➜ ⭐⭐⭐ **在排他權層承認「孔緣與孔身的失效機制不同」** —— 直接強化既有論述「TGV 的失效在界面與孔緣，不在材料本體」。
+- **Intel US20260182404A1（2026-06-25，family 97593224）**：**玻璃核心層與 TGV 之間插入一層聚合物**（順從型／機械解耦，與前者的附著型相反）。
+- **兩件發明人重疊（Heaton Thomas）** ⇒ 同一團隊的多路線並進。完整四路線對照表見 [[technologies/glass-substrate]]。
+
+⚠ **兩件皆無任何量化值**（無孔徑、無端部區域比例、無襯層厚度、無聚合物材料族與介電性質、無可靠度數字）。
+
+### 量測端：2.5D 成像 AOI
+
+- **Philoptics（2026-09-29）**：**高解析 2.5D 成像 AOI**，評估階段 **0 ppm / 100 萬孔**。
+  ➜ 為 **Onto Innovation「TGV 需同時量頂／腰／底三個 CD」**這一要求的**量測端配套首例**。
+  ➜ ⚠ 既有⭐⭐⭐空缺「Corning small via diameter 屬何種剖面、若為沙漏形腰在什麼高度」**本輪未結清**，但量測手段已存在，追蹤方式可改為「要求廠商以 2.5D／三 CD 口徑揭露」。
+
+### ⚠ 新空缺：厚玻璃的可達縱橫比
+
+**JNTC 2.0 mm（3.0 mm 在研）** 與 **Philoptics 2 mm 設備** 使玻璃厚度進入 2 mm 級，但兩者皆未給孔徑或 AR。
+- 若維持 **AGC 的 AR 1:20 @ 1.0 mm**，則 2 mm 需 **孔徑 100 µm**
+- 若維持 **孔徑 50 µm**，則需 **AR 1:40**
+
+➜ **兩條路徑分別撞上既有的兩項限制**（孔徑放大 → 表面佈線面積損失；AR 加倍 → 底部填充與種子層覆蓋）。**本 wiki 無任何 2 mm 級 AR 數據。**
+
+### 相關來源
+
+[[sources/2026-10-03_epo_intel-partial-liners-tgv]]、[[sources/2026-10-03_epo_intel-polymer-tgv-buffer]]、[[sources/2026-10-03_thelec_philoptics-tgv-2mm-glass]]、[[sources/2026-10-03_digitaltoday_jntc-tgv-thickness-lineup]]
