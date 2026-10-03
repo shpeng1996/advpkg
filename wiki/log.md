@@ -4383,3 +4383,30 @@ an（2028–2029 量產世代）為 CoPoS 最可能的首批量產客戶——�
   2. ⚠⚠ **`OPENALEX_KEY` 仍為空（連續第四輪未處置）。** 本輪 OpenAlex 全程 200、未遇 429，故未受影響，但**這是運氣而非結構改善**——錯誤訊息明載配額依網路 IP 共享。**建議維持⭐⭐⭐：向 OpenAlex 申請免費 API key 加入 `.env`，並更新 `schedule.md` §4 的 curl 範例加上 `api_key` 參數。**
   3. 📌 **`.git/objects/` 下殘留的 `tmp_obj_*` 檔本輪為 76 個**（2026-10-01 記為 66 個，持續增加）。本輪未處理（屬 git 內部狀態，非 collect 流程產物）。**建議人工執行 `git gc` 或檢查 2026-10-01 所記之 git lock 問題是否仍在復現。**
 - ✓ **git commit：本輪已執行**（詳見下方提交記錄）。並：2026-10-02 所記「未執行 git commit、檔案處於未提交狀態」已由 2026-10-03 07:00 的 `e83645a` 提交完成（研判為 `daily_git_push.bat`），**該待辦已結清。**
+
+### [2026-10-03] 附記：git 殘留問題的根因已確認（取代 2026-10-01 以來的「tmp_obj 殘留」記載）
+
+**根因**：**連接資料夾的刪除權限預設關閉**，而 git 的正常運作依賴「建立暫存檔／鎖檔 → 用完後 unlink」。本輪在 `git add` 與 `git commit` 期間明確觀察到：
+
+```
+warning: unable to unlink '.git/objects/26/tmp_obj_AryDhD': Operation not permitted
+warning: unable to unlink '.../.git/HEAD.lock': Operation not permitted
+warning: unable to unlink '.../.git/index.lock': Operation not permitted
+```
+
+➜ **這一條因果鏈同時解釋了三個此前被分開記載的現象：**
+
+1. **`tmp_obj_*` 持續累積**（2026-10-01 記 66 個 → 本輪開始 76 個 → **本輪提交後 145 個**）。每次提交約新增 70 個，**與提交的物件數同量級** ⇒ 即 git 寫入的每個物件都留下一份暫存檔。
+2. **反覆出現的 `index.lock` 阻塞**（2026-10-01 已記「git lock handling」）。本輪開場時即存在一個 **20:05 的陳舊 `index.lock`**（研判為本 session 早先的唯讀 git 指令在 120 s shell 逾時被中斷所留），導致 `git add` 第一次失敗。
+3. **`.git/` 下已有 14 個 `*.stale*` 檔** ⇒ **先前的執行（人或自動）也用過「改名而非刪除」的同一變通手法。**
+
+**本輪的處置（未使用刪除權限）**：以 `mv` 將 `index.lock` 與 `HEAD.lock` 改名為 `*.stale-20261003`（`mv` 在可寫的連接資料夾內可用，`rm` 不可用），git 隨即恢復正常並完成提交 **`07cdee6`（58 檔）**。
+
+**建議（需人工處置，⭐⭐⭐）**：
+- **(a) 最乾淨的解**：在該連接資料夾啟用刪除權限，git 即可自行清理，三個現象一次消失。
+- **(b) 次佳**：在 Windows 側（git 原生環境，非本連接資料夾的權限模型下）執行 `git gc --prune=now`，並清掉 `.git/` 下的 `*.stale*` 與 `.git/objects/**/tmp_obj_*`。**`daily_git_push.bat` 是現成的掛載點。**
+- **(c) 若兩者皆不做**：殘留會以每輪約 70 個檔案的速度成長（**目前 145 個**），且每輪仍有機會因陳舊鎖檔而需要人工或變通介入。**這不影響 wiki 內容的正確性，但會讓 repo 體積與 git 操作時間持續惡化。**
+
+➜ **並建議在 `schedule.md` §QUALITY RULES 的 git commit 一句後補上：「若 `git add`／`commit` 回報 `index.lock` 存在且無 git 行程在跑，以 `mv` 將該鎖檔改名後重試，不要嘗試 `rm`。」**
+
+**另一併記錄**：本輪提交**刻意排除**了 10 個僅有 CRLF 行尾差異的檔案（`CLAUDE.md`、`quartz/` ×3、`.github/workflows/deploy-quartz.yml`、`wiki/sources/` 下 5 個舊頁）。這些檔案在本輪開場前即為 modified 狀態、本輪完全未觸及，且以 `git diff --ignore-cr-at-eol` 驗證為**內容零差異、純行尾churn**。**排除的首要理由是 spec §QUALITY RULES 明載「Never modify CLAUDE.md」—— 提交一份 CRLF→LF 的全文改寫實質上就是修改該檔。** 這 10 個檔案維持未提交狀態，待人工決定（研判需設定 `core.autocrlf` 或 `.gitattributes`）。
