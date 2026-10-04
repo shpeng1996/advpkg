@@ -4453,3 +4453,8 @@ warning: unable to unlink '.../.git/index.lock': Operation not permitted
   1. ✓ **`device_bash`（本機 Linux workspace）本輪全程正常。** 全部 raw 與 wiki 檔案均以 spec §STEP 5 所假設的 bash heredoc 流程直接寫入 `D:\@source\AdvancedPackaging`，未使用 device_commit_files。
   2. ⚠⚠ **`OPENALEX_KEY` 仍為空（連續第五輪未處置）。** 本輪 OpenAlex 全程 200、未遇 429。**維持建議⭐⭐⭐：申請免費 API key 加入 `.env`，並更新 `schedule.md` §4 的 curl 範例加上 `api_key`。**
   3. 📌 **git 殘留問題**：2026-10-03 已確認根因為**連接資料夾的刪除權限預設關閉**（git 需要 unlink 暫存檔與鎖檔）。本輪提交狀況見下方提交記錄。**2026-10-03 的三項建議（(a) 啟用刪除權限 / (b) Windows 側 `git gc --prune=now` / (c) 不處理則每輪約增 70 個殘留檔）仍待人工處置。**
+- ✓ **git commit：本輪已執行 —— `1375f58`（55 檔）。**
+  - 流程：開場 `git status`／`git diff` 之後出現 **20:38 的陳舊 `index.lock`**（研判為本 session 先前的唯讀 git 指令所留，與 2026-10-03 所記型態相同），依 2026-10-03 的處置以 **`mv` 改名為 `index.lock.stale-20261004`**（`rm` 在連接資料夾內不可用），git 隨即恢復正常。**`.git/` 下的 `*.stale*` 檔累計 17 個。**
+  - **`tmp_obj_*` 殘留：本輪開始前 145 個 → 提交後 215 個（+70）**，與 2026-10-03 所記的「每次提交約新增 70 個，與提交物件數同量級」完全一致 ⇒ **根因（連接資料夾刪除權限預設關閉）未變，建議 (a)/(b) 仍待人工處置。**
+  - 本輪提交**刻意排除 10 個僅有 CRLF 行尾差異的檔案**（`CLAUDE.md`、`quartz/` ×3、`.github/workflows/deploy-quartz.yml`、`wiki/sources/` 下 5 個舊頁）。已以 `git diff --ignore-cr-at-eol --numstat` 逐檔驗證為**內容零差異、純行尾 churn**，且本輪完全未觸及。**首要排除理由仍為 spec §QUALITY RULES「Never modify CLAUDE.md」。** 這 10 個檔案維持未提交狀態，待人工決定（研判需設定 `core.autocrlf` 或 `.gitattributes`）—— **此待辦自 2026-10-03 起連續第二輪未結清。**
+  - `.claude/` 目錄為未追蹤狀態，本輪未提交（與先前輪次一致）。
