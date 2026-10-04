@@ -3,7 +3,7 @@ title: "共封裝光學元件 / Co-Packaged Optics (CPO) — TSMC-COUPE™ & Eco
 category: technology
 tags: [CPO, co-packaged-optics, COUPE, TSMC, GlobalFoundries, Samsung, photonics, AI, HPC, networking, OCI-MSA, DWDM, Broadcom, NVIDIA, glass-substrate, ULCVD, TGV, Spectrum-X, NVL72]
 created: 2026-04-25
-updated: 2026-10-03
+updated: 2026-10-04
 sources: [2026-09-27_globalfoundries_siph-cpo-bandwidth-density-coupling-budget, 2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-27_paper_copper-interconnect-scaling-roadmap-lines-per-mm, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-05-07_trendforce_globalfoundries-silicon-photonics-scale-cpo, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-03-17_coherent_cpo-ofc2026-demo, 2026-06-07_digitimes_jcet-3d-packaging-cpo-plant, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_edn_cpo-technology-status-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-06-24_thelec_corning-glass-bridge-cpo, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-14_trendforce_umc-silith-silicon-photonics-hvm, 2026-07-14_trendforce_huawei-baidu-npo-msa, 2026-07-27_trendforce_presscenter_cpo-switches-nvidia-broadcom-coupe, 2026-06-03_3dincites_intel-foundry-emib-cpo-glass-ectc2026, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-07-31_ase_cn224583735u-photoelectric-hybrid-rdl, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-09-26_report_dupont-ttm-polymer-waveguide-reliability, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_bitschips_besi-q1-2026-hybrid-bonding-orders]
 related:
   - wiki/technologies/rdl.md
@@ -1241,3 +1241,25 @@ LPKF 之 CPO 耦合能力條件為 **表面波紋 ±100 nm、表面粗糙度 ±3
 ### 相關來源
 
 [[sources/2026-10-03_imaps_delo-optical-adhesive-alignment]]
+
+## [2026-10-04] 膠材路徑取得「與佈線同台設備」的第一例；CPO 進入設備商的平台命名層
+
+### ⭐⭐ 1. 「對準精度三條路徑」之膠材一路：首次與佈線共用同一台設備
+
+- 既有三條路徑：**機台**（Besi/AMAT Kinex 100 nm @3σ）／**微影**（[[entities/globalfoundries]]「把對準精度自機台轉移到微影」）／**膠材**（DELO 光學膠 OB6268）。
+- 本輪 **Scrona** 的 EHD 平台**同時處理電性與光學材料**：光學聚合物、量子點墨水、光學封裝的間隙填充與精密光學結構，且印刷後的光學層可再以**奈米壓印**圖案化。
+- ➜ **本 wiki 第一例「把膠材與佈線放在同一台設備上」**，即對準精度的三條路徑在設備層出現收斂的可能。
+- ⚠ 供應商自述、無量化（無插入損耗、無對準精度數字）。
+
+### ⭐ 2. CPO 進入 AMAT × Besi 的平台命名層
+
+- EPIC Center 的四個方向中，**CPO 互連與 DoW/DoD/DoP 並列** ➜ CPO 的接合需求已被設備商視為與 3D 堆疊同級的平台項目，而非附屬應用。
+- ⚠ 無規格、無時程。
+
+### ⭐ 3. 玻璃側的 CPO 波導供應端新增一家
+
+- **Shinko Eng. Lab** 的 TGCV 應用方向明列 **CPO 波導**（併同玻璃基板、HBM 載體、背面製程的暫時貼合）➜ 玻璃—光學的供應端在韓系新增一家設備／材料商。⚠ 無規格。
+
+### 相關來源
+
+[[sources/2026-10-04_openalex_scrona-maskless-additive-ehd-rdl]]、[[sources/2026-10-04_thelec_amat-besi-epic-center-dop]]、[[sources/2026-10-04_thelec_shindo-tgcv-glass-cte]]

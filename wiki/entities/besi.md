@@ -3,7 +3,7 @@ title: "Besi (BE Semiconductor Industries) — 混合接合設備領導廠商"
 category: entity
 tags: [equipment, hybrid-bonding, die-attach, D2W, TCB, Netherlands]
 created: 2026-04-25
-updated: 2026-10-02
+updated: 2026-10-04
 sources: [2026-09-27_semieng_chip-week-156-india-tata-besi-izmo, 2026-03-01_3dincites_besi-packaging-power-shift, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-03-29_damnang_hybrid-bonding-cmp-gating-factor, 2026-10-02_bitschips_besi-q1-2026-hybrid-bonding-orders, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo]
 related:
   - wiki/entities/ev-group.md
@@ -206,3 +206,18 @@ Bits&Chips（2026-04-23，作者 Paul van Gerven）：
 - [ ] 📌 既有未結清項：Samsung 要求 Besi 做的機台設計變更 —— **本輪無進展**
 
 *Source: [[sources/2026-10-02_bitschips_besi-q1-2026-hybrid-bonding-orders]]*
+
+## [2026-10-04] EPIC Center：與 AMAT 共同開發，平台延伸至 DoP 與 CPO
+
+- 與 **[[entities/applied-materials]]** 的合作自 **2020 年新加坡聯合中心**升級至矽谷 **EPIC Center**（總投資 **USD 5B**；**2026-10-12 啟用**；參與者 >10 家，具名含 Samsung、SK hynix、Micron、TSMC、Broadcom）。
+- **Kinex** 於報導中被描述為「**業界第一套整合式 D2W 混合接合系統**」（前一年推出）—— 與本頁既載的 Kinex 平台（AMAT 持股 Besi 9%）、Datacon 8800 CHAMEO 一致。
+- ⭐⭐⭐ 合作標的除 D2W 混合接合與 **TCB** 的延伸外，明列 **DoW / DoD / DoP（die-on-panel）** 與 **CPO 互連** 四個平台方向 ➜ **DoP 是 wiki 首見的「混合接合 × 面板」設備商平台命名。**
+- ⚠ 無規格、無時程、無客戶；USD 5B 為整體投資，不得歸因於單一項目。
+
+### ⚠ 新空缺
+
+- **SK hynix 2026-03 的第一張量產 HB 設備訂單（單一 inline、約 ₩200 億／USD 15M）由誰取得，本輪未揭露** ➜ Besi、[[entities/asmpt]]、[[entities/hanmi]]、[[entities/hanwha-semitech]] 之一。**列下輪追蹤。**
+
+### 相關來源
+
+[[sources/2026-10-04_thelec_amat-besi-epic-center-dop]]

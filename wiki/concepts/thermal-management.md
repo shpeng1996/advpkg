@@ -3,7 +3,7 @@ title: "先進封裝熱管理 / Thermal Management in Advanced Packaging"
 category: concept
 tags: [thermal-management, liquid-cooling, 3D-IC, CoWoS, heat-dissipation, TIM, ECTC-2025, GaN, power-delivery, co-design, patent-signal, delamination]
 created: 2026-04-25
-updated: 2026-10-03
+updated: 2026-10-04
 sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2025-12-01_semiengineering_thermal-management, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-02_trendforce_samsung-hbm5-computex2026, 2026-05-21_semieng_hi-roadmap-nature-paper-intel, 2026-08-13_semieng_1mw-rack-debate-thermal, 2026-04-27_semieng_semiconductor-materials-misbehave, 2026-08-21_trendforce_chip-packaging-heat-ai-bottleneck-cpo-stco, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_arxiv_umn-multi-kw-power-delivery-3d-hi, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_samsung-cn122602880a-ivr-capacitor-interposer-core, 2026-10-02_imaps-dpc2026_delo-die-side-capacitor-encapsulation]
 related:
   - wiki/technologies/cowos.md
@@ -1022,3 +1022,66 @@ Samsung HCB（詳見 [[technologies/hybrid-bonding]]）：HBM **內部**熱阻 *
 - 📌 **既有未結清項延續**：**微流道阻塞事件的後果與可回復性**、**泵功耗**、**「PIC 在有機基板上比在矽中介層上涼 4–5×」的機制** —— **本輪均無進展。**
 
 見 [[sources/2026-10-03_imaps_delo-optical-adhesive-alignment]]。
+
+## [2026-10-04] 三項結構性更新：量測口徑、熱的第三度拆分、以及「不散熱而改路」
+
+### ⭐⭐⭐ 1. 新引用規則：「導熱係數」至少有三個不可互換的口徑
+
+SNU × UIUC 的 TIM 綜述明確指出：**TIM 的 bulk／effective 導熱係數提升，不會等比例轉化為接合後（bonded）的熱性能。**
+
+| 口徑 | 意義 |
+|------|------|
+| **bulk** | 材料本體 |
+| **effective** | 複合體等效 |
+| **bonded** | **真實接頭** —— 由接合界面接觸與 bondline 行為共同決定 |
+
+➜ ⭐⭐⭐ **與 2026-09-22 論述「同一名詞涵蓋多個獨立驗收項」同型**（既有跨技術域版本：TGV 側壁粗糙度 25 nm–1.257 µm vs 混合接合 Ra <0.1–0.2 nm，相差 2–4 個數量級）。
+➜ **本頁自此起引用任何導熱數字，必須標註口徑。** 本頁既有條目幾乎全以單一材料或結構的數字記載（光學膠 Tg 202 °C、DiaCool、兩相冷卻、HPB >35% 峰值溫降）—— **接頭（joint）而非材料才是熱路徑的決定者。**
+
+### ⭐⭐⭐ 2. 「熱」的第三度拆分：製程定義的路徑架構
+
+| 次序 | 拆分軸 | 來源 |
+|------|--------|------|
+| 1 | **運作熱 vs 製程熱** | 2026-09-22 |
+| 2 | **界面 vs 本體** | TGV 論述（AMAT） |
+| **3** | **複合體內傳輸 / 接合界面與 bondline / 製程定義的路徑架構** | **SNU×UIUC TIM 綜述（本輪）** |
+
+- 第三域指出熱路徑**由組裝製程決定，而非由材料配方決定**。
+- ➜ ⭐⭐⭐ **把本 wiki 核心論述「真正的瓶頸在被視為輔助步驟的那一步」自良率軸首次延伸到熱軸。**
+
+### ⭐⭐⭐ 3. 新類別：不散熱而改路（Intel US20260165143A1）
+
+- 本頁既有處置手段**全為散熱**（TIM、微通道、HPB、兩相冷卻）。
+- Intel 本件以**冗餘晶粒 + 嵌於橋內的熱控開關**，**依溫度選擇啟用哪顆晶粒** ⇒ **迴避**熱點而非散除。
+- ➜ **本 wiki 第一個落在排他權層的「熱→架構」閉環控制**，且與既有全部條目**正交**。
+- ⚠⚠ **「thermally controlled」僅出現在標題，摘要未證實**；替代讀法為**冗餘／良率修補**。**待證，不得作為其他推論的前提。** 列下輪取請求項全文。
+
+### ⭐⭐ 4. 製程熱的第四個切入點：回焊溫度
+
+| # | 切入點 | 來源 |
+|---|--------|------|
+| 1 | 775 µm 熱預算 | JEDEC／HBM |
+| 2 | 退火溫度帶 | **本輪取得具體落點：KITECH Cu-Cu 250 °C / 10 MPa（10 MPa 為 wiki 首見的 HB 壓力值）** |
+| 3 | 鍵合頭本身 | Intel 雙 family 專利 |
+| **4** | **回焊溫度** | **Gachon LTS 綜述（本輪）：Sn–Bi／含 In 低溫焊料降低回焊所致翹曲** |
+
+➜ 並且**回焊本身**成為一個獨立的**翹曲來源**（既有來源：die 翹曲 <100 nm、FOPLP debonding 峰值、有機基板 120 mm/邊、玻璃/PCB CTE 失配）。
+
+### ⭐⭐ 5. HB 的熱效益首次有數字
+
+- **混合接合熱阻改善約 −35%（vs MR-MUF）**；跨世代**熱負擔 2.2×**，層數每兩世代加倍。
+- ⚠ **projected，非量測**；量測邊界（整疊／單界面／含 TIM）未界定。詳見 [[technologies/hybrid-bonding]]。
+
+### ⭐⭐ 6. 順從性是熱接頭的設計變數，不是缺陷
+
+- TIM 綜述：外界面受**潤濕、順從性、壓力、流變、穩定性**共同塑形。
+- ➜ 2026-10-03「約束 vs 順從」框架（DELO 兩極，模數差 630 倍）取得**熱版本**：**膠材沒有單一好方向，目標值由該界面的主導失效模式決定。**
+
+### ⚠ 新空缺
+
+- **IBM GB2644659A 的橋含主動元件與 BSPDN，卻完全未觸及散熱** —— 而橋埋在基板內（或晶粒之下）是熱路徑最差的位置。本 wiki 自 [[entities/micron]] 起已立「架構圍繞熱管理」方法論 ➜ **列下輪追蹤：IBM 是否有配套的橋散熱布局。**
+- TIM 綜述**無任何量化值、無 OA 全文、未指認具名產品** ➜ 無法與 [[entities/resonac]]／DELO／DiaCool 對接。且為**綜述**，依「論文是落後指標」不得作時程推論。
+
+### 相關來源
+
+[[sources/2026-10-04_openalex_snu-uiuc-tim-heat-path-engineering]]、[[sources/2026-10-04_epo_intel-thermal-switch-in-emib-bridge]]、[[sources/2026-10-04_openalex_gachon-low-temperature-solders]]、[[sources/2026-10-04_ninescrolls_skhynix-hb-hbm5-775um]]、[[sources/2026-10-04_openalex_kitech-glucose-vapor-cu-oxide-reduction]]

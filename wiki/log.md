@@ -4410,3 +4410,46 @@ warning: unable to unlink '.../.git/index.lock': Operation not permitted
 ➜ **並建議在 `schedule.md` §QUALITY RULES 的 git commit 一句後補上：「若 `git add`／`commit` 回報 `index.lock` 存在且無 git 行程在跑，以 `mv` 將該鎖檔改名後重試，不要嘗試 `rm`。」**
 
 **另一併記錄**：本輪提交**刻意排除**了 10 個僅有 CRLF 行尾差異的檔案（`CLAUDE.md`、`quartz/` ×3、`.github/workflows/deploy-quartz.yml`、`wiki/sources/` 下 5 個舊頁）。這些檔案在本輪開場前即為 modified 狀態、本輪完全未觸及，且以 `git diff --ignore-cr-at-eol` 驗證為**內容零差異、純行尾churn**。**排除的首要理由是 spec §QUALITY RULES 明載「Never modify CLAUDE.md」—— 提交一份 CRLF→LF 的全文改寫實質上就是修改該檔。** 這 10 個檔案維持未提交狀態，待人工決定（研判需設定 `core.autocrlf` 或 `.gitattributes`）。
+
+## [2026-10-04] collect | 每日自動蒐集 — 先進封裝最新動態
+- 搜尋查詢數：新聞 **9 組** / 專利 **2 組**（CPC `H10W70/618` 第 51–75、76–100 名區段）/ 論文 **2 組**
+- 成功抓取：**14 篇**（articles **4**, patents **5**, papers **5**, reports 0）
+- 失敗/跳過：**約 32 篇**（付費牆／403 **2**：digitimes a20260929PD221「Beyond 16 layers」、digitimes a20261001PD200「Unimicron 湖口 NT$100 億」；已收錄 **13**；過舊 **4**（semiengineering「What's Next In Advanced Packaging」實為 2019-06、daystar 轉載之 Unimicron 土地案為 2021-03、trendforce CPO 兩篇 2026-04/05）；低信度或市場報告 **8**；論文軌非半導體或低相關 **約 5**）
+- 資料源狀態：**WebSearch ACTIVE ✓ | EPO OPS ACTIVE ✓ | OpenAlex ACTIVE ✓**
+- 新增 wiki 頁面：**15 頁** — `wiki/entities/deca-tech.md`（新實體）＋ 14 個來源摘要頁（`wiki/sources/2026-10-04_*`）
+- 更新 wiki 頁面：**23 頁**
+  - `wiki/technologies/emib.md`（⭐⭐⭐ **橋的維度自十一一次擴至十五**：第 12 維主動控制邏輯／第 13 維包覆面數／第 14 維自有供電網路／第 15 維是否為實體元件；**第 10 維「側」自候選升格為成立論述**；**「橋的免 TSV 化」升格為跨公司共同手法**；「局部高密度橋」第四型）
+  - `wiki/technologies/hybrid-bonding.md`（⭐⭐⭐ **口徑收斂為「最早 HBM5」**、**熱阻 −35% / 核心晶粒 +24% / pitch <18 µm**、**DoP 使載體自 wafer 擴張到 panel**、**「電漿是唯一路徑」已有三個獨立來源質疑**）
+  - `wiki/technologies/tsv.md`（⭐⭐⭐ **第三道微縮天花板＝應力，性質為「不是製程做不到，是應力管不住」**、**Cu 晶粒→有效模數 2 倍→Si 殘留應力**、**接上 Absolics 請求項的物理機制**）
+  - `wiki/technologies/rdl.md`（⭐⭐⭐ **圖案化路線三→四條**、**第一個「繞過平坦度」而非「改善平坦度」的路線**、**垂直互連新拓撲「沿側壁爬升」**、免光罩四供應商）
+  - `wiki/technologies/glass-substrate.md`（⭐⭐⭐ **「玻璃非單一材料」第五層級＝孔內填充材料**、**玻璃核心 BGA 側風險同時出現結構側與材料側兩種獨立解法**、交棒點「可能是半徑而非時間點」候選讀法）
+  - `wiki/technologies/hbm4.md`（**HBM4 互連量級首見：>20,000 TSV、16,148 bumps @12.8×11 mm**、厚度上限三世代值、**焊料往低溫演化的平行路線**）
+  - `wiki/technologies/foplp.md`（⭐⭐⭐ **DoP＝混合接合第四種載體**、面板圖案化「從縮光罩轉向不用光罩」、Deca 路線完整性）
+  - `wiki/technologies/glass-carrier.md`（debonding 實例擴至六、**Intel 在載體層選的是「順從」**、Heaton Thomas 第三次出現）
+  - `wiki/technologies/copackaged-optics.md`（**膠材路徑首次與佈線同台設備**、CPO 進入設備商平台命名層）
+  - `wiki/concepts/thermal-management.md`（⭐⭐⭐ **新引用規則：導熱係數至少有 bulk／effective／bonded 三個不可互換口徑**、**「熱」的第三度拆分**、**新類別「不散熱而改路」**、製程熱第四切入點＝回焊溫度）
+  - `wiki/concepts/power-delivery-packaging.md`（⭐⭐⭐ **第三種供電位置＝橋的背面**；⚠ 本頁「第二個一手量化來源」仍為空缺）
+  - `wiki/concepts/test-metrology-packaging.md`（**overlay 量測獨立成機種**、**新領域＝熱量測**、Raman+EBSD 方法論參考）
+  - `wiki/concepts/substrate-materials-supply-chain.md`（**「邊界外擴」第三型態**、**焊料首次進入基板材料鏈的討論**、⚠ Unimicron 湖口案未取得）
+  - `wiki/entities/intel.md`（兩件新專利：玻璃＋有機同板、橋內嵌熱控開關；**第二個地理團隊＝馬來西亞**）
+  - `wiki/entities/ibm.md`（**BSPDN 進橋**；⚠⚠ 最大未解張力＝完全未觸及散熱）
+  - `wiki/entities/jcet.md`（**韓國團隊第四件案件**；空缺改述為「穩定的技術分工」）
+  - `wiki/entities/sk-hynix.md`（HB 最早 HBM5、HBM4 規格表、**三雄第二個同世代分歧**）
+  - `wiki/entities/hanmi.md`（⭐⭐⭐ **空缺結清：~2029 與客戶實際導入時點對齊，「缺席整個世代」的疑問消失**；新空缺＝USD 15M 訂單得標者）
+  - `wiki/entities/absolics.md`（⭐⭐⭐ **「銅晶粒長寬比寫進請求項」取得外部物理機制佐證**）
+  - `wiki/entities/adeia.md`（⭐⭐⭐ **「側」升格為成立論述**；結構 vs 可實施的對照）
+  - 另：`wiki/entities/applied-materials.md`（EPIC Center USD 5B／2026-10-12；與 Insepra™ 的張力）、`wiki/entities/besi.md`（DoP／CPO 平台）、`wiki/entities/ev-group.md`（機種盤點；⚠ 兩個量化數字非新數據）
+  - `wiki/index.md`（頁數 784→**799**、來源 715→**729**、新增 1 實體 + 14 來源條目）
+- 主要新知識：**本輪的主線是「橋」這個物件在一輪之內被四個互不相關的申請人從四個方向重新定義，使「橋的維度」軸自十一一次擴張到十五。** 四個方向分別是：Intel 把**一個熱控開關**放進橋（第 12 維，主動控制邏輯）、Deca 用**模封料五面包覆**做橋（第 13 維，包覆面數）、IBM 把**完整邏輯晶粒剖面含 BSPDN** 放進橋（第 14 維，自有供電網路）、Scrona 以**跨越樹脂溝槽的直寫液滴**做出一座沒有橋元件的橋（第 15 維，是否為實體元件）。**更關鍵的是兩個此前標為「候選」的讀法本輪同時升格**：（a）**「側（sidedness）」**取得第二個獨立來源（Adeia 是 IP 授權公司、JCET Korea 是 OSAT 量產團隊），且形式收斂為更強的「**單一橋元件本身可雙面出接點**」；（b）**「橋的免 TSV 化」**取得第二個獨立來源（Intel 矽橋 vs Deca 模封橋），兩家無關係、兩種載體、同一拓撲結論（橋只做橫向佈線，垂直路徑繞周界）⇒ 自「Intel 的單一布局」升格為跨公司共同手法。第二個主軸是 **論文軌本輪一次命中兩個列管已久的空缺，且兩者都是「把既有專利請求項接上物理機制」**：Purdue × UCLA 以 **Cu 晶粒結構使 out-of-plane 有效彈性模數變異 2 倍、Si 殘留應力隨之上升** 解釋了 [[entities/absolics]] 為何把「上下 RDL 銅晶粒長寬比之比 C/D 0.85–0.99」寫進請求項（**管制的是上下不對稱所致的彎矩**）—— 這是本 wiki **首次把一件專利的請求項與一篇論文的物理機制接成完整因果鏈**；並據此為 [[technologies/tsv]] 立下**第三道微縮天花板＝應力**，其性質與前兩道（微影、電遷移）完全不同：**設備端已能做 3 µm（AMAT Nokota VMax 2），而可靠度端的物理正是在 3 µm 開始惡化 ⇒ 不是製程做不到，是應力管不住。** 第三個是 **KITECH 以葡萄糖蒸氣在接合腔內原位還原 Cu 氧化物並明文宣告取代電漿前處理**，這給出「惰性環境 Cu 氧化」這個經三度修正的空缺的**結構性解**：Plasmatreat 的 queue time 量化（1.30@1h→0.73@12h）是**縮短等待**，本篇是**讓等待不再重要** ➜ **2026-10-03 新立的「合格狀態有保存期限」不被推翻，但適用範圍須限定為「表面處理與接合分離」的流程**；併同上海大學的濕式還原，**「電漿是混合接合表面製備的唯一／最佳路徑」此隱含前提現已有三個獨立來源、三種不同手段質疑**，與 AMAT Insepra™ SiCN 構成張力。第四個是 **SK hynix 把混合接合明確推遲到 HBM5**（非 HBM4E），這一句同時做了三件事：**結清 [[entities/hanmi]] 的時程矛盾**（~2029 與 Counterpoint 的 2029–2030 一致，「Hanmi 缺席整個世代」的疑問消失）、**修正本 wiki 既載的「HBM4E/HBM5（2027 年底起）」口徑**、並首次把 HB 的效益量化在**熱軸與厚度軸**（熱阻約 −35%、同 Z 高度核心晶粒可厚 **24%**）⇒ **論述修正：HB 的真正賣點是「厚度預算的再分配」，不是單純 pitch 微縮。** 第五個是 **玻璃核心的 BGA 側風險本輪同時出現兩種獨立解法**：Intel US20260005081A1 的**玻璃層＋有機聚醯亞胺框**（結構側，且框的位置正好在 2026-09-21 Lau 所量化的 BGA 應變 8.43%→19% 惡化的那一側）與 Gachon 低溫焊料綜述的**路線圖明文含 glass-core packages**（材料側）—— 這是本輪跨軌最強的一組呼應，且使「有機→玻璃交棒」出現第三種可能：**同一基板內的空間分工，交棒點或許是一個半徑而非一個時間點。**
+- 專利訊號：**本輪五件的主線自上一輪的「TGV 界面的工程哲學」轉為「橋這個物件的本體論」——橋是什麼、由什麼做、有幾個面、自己有不有電、以至於需不需要是一個實體。**（1）⭐⭐⭐ **Intel US20260165143A1 把熱控開關嵌入橋**，使「熱→架構」閉環控制首次落在排他權層，並為 [[concepts/thermal-management]] 新增一個與既有全部條目（皆為散熱）正交的類別：**不散熱而改路**。⚠ 「thermally controlled」僅見於標題，待證。（2）⭐⭐⭐ **Deca US20260136970A1 的模封免孔橋**使「橋的載體」自矽／有機／玻璃擴至**模封料**，且是第一件把「兩種 pitch 的空間邊界＝橋的 footprint」寫成幾何定義者。（3）⭐⭐⭐ **IBM GB2644659A 把 BEOL/MOL/主動層/BSPDN 整個放進橋**，是「橋＝主動元件」路線的最極端一端，並為 [[concepts/power-delivery-packaging]] 新增第三種供電位置。（4）⭐⭐⭐ **JCET STATS ChipPAC Korea TW202612031A 的雙面橋晶粒**使「側」升格，且揭示同一「橋」概念在 **EMIB（橋先埋基板）與 ETS（橋先上載體、建 RDL、移除載體）兩種截然不同的製造順序**下各自取得排他權 ⇒ 「橋是可替換插槽」擴充為「生成插槽的製程順序也可替換」。（5）⭐⭐⭐ **Intel US20260005081A1 的玻璃＋有機同板**是本 wiki 第一件在排他權層把兩種載體材料放進同一片基板者。（6）⚠ **量化狀況：五件之中無一件有量化值**（2026-10-01、10-02、10-03 亦為零）➜ **「專利軌訊號以定性為主」連續第四輪成立。**
+- 作業面發現（五項）：
+  1. ⭐⭐⭐ **作業規範（24）（橋議題以 CPC `H10W70/618` 為主檢索軸）第三輪執行，本輪是三輪中命中率最高的一輪。** 本輪掃描第 **51–100** 名區段（前 25 名於 2026-10-02、第 26–50 名於 2026-10-03 掃完），**50 件中 46 件未收錄，5 件採用案中有 4 件出自此**。**尚餘約 48 件（第 101–148 名）列下輪續掃，掃完即該 CPC 之 2026 年全體（148 件）結清。**
+  2. ⭐⭐⭐ **OPS 呼叫數本輪為 2 次（1 次 auth + 2 次 search，共 3 次 HTTP），遠低於 spec §3.5 的「≤10 次」上限，且零浪費。** 做法：**不做細節呼叫（detail call），全部欄位（標題／申請人／發明人／CPC／摘要／family-id／公開日）皆自 `search/biblio` 的回應中解析取得。** 兩次 search 的 `Range=51-75`、`76-100` 各回 25 件完整 biblio，**摘要欄位齊備（46/46 件 abs=True）** ➜ **建議列為新作業規範（28）：`published-data/search/biblio` 已足以完成本 wiki 的專利篩選與入庫，detail 呼叫僅在需要請求項全文時才用。** 這把每輪 OPS 預算自 ~10 次降到 3 次。
+  3. ⚠⚠ **新聞軌可用率連續第三輪下降：約 27 個候選 URL 中僅 4 篇可用（約 15%；上兩輪為 17%、27.8%）。** 失敗分布：**已收錄 13**、**過舊 4**、**403/付費牆 2**（digitimes 兩篇，**本輪兩次 digitimes 嘗試皆 403，依 spec 未重試**）、**低信度或市場報告 8**。➜ **觀察：2026-10-03 所建議的「主動擴張至韓系英文媒體」本輪生效 —— 四篇可用者有兩篇來自 thelec.net。** 並：**semiengineering.com 本輪 6 個候選全部已收錄或過舊（其中一篇標題看似新穩但實為 2019-06 舊文，發布日期需逐篇核對）**，確認該來源已飽和。
+  4. ⚠⚠ **IFTLE 系列已於 2025-12-30 以「IFTLE 652: The End」終止。** 本 wiki 既收錄 6 期（608/618/634/636/648/651）。➜ **`schedule.md` §STEP 1 的優先網域清單中，3dincites.com 的 IFTLE 專欄不再是活躍來源**，應改以該站其他欄目或替代來源（建議：`advancedpackaging.news`、`semianalysis.com` 的 ECTC/ISSCC 專題）填補。**這是本輪唯一的來源結構性損失。**
+  5. ⭐⭐ **論文軌本輪採「廣撈＋本機比對」策略，OpenAlex 僅 2 次呼叫、0 次浪費。** 做法：一次 6 片語 OR 查詢（`title_and_abstract.search` 全部雙引號 + `|`，`type:article`，`from_publication_date:2026-04-01`，50 筆）＋一次 IMAPSource 來源查詢（`primary_location.source.id:S4210197219`，100 筆），合計 150 筆於本機以**正規化標題優先、DOI 其次**比對 `_collected_urls.txt` 與 `raw/papers/` 的 frontmatter，得 **64 筆候選**後人工篩 5 筆。➜ **2026-10-02 所立「收集前先比對、而非收集後比對」連續第二輪零浪費。** ⚠ **並發現 IMAPSource 查詢的 457 筆中有大量 2007–2012 年的舊會議論文被標為 2026-07-27/28 的 `publication_date`（OpenAlex 的回填日期），內容為 3M 連接器、e2v 微處理器等 ⇒ 該來源的 `publication_date` 不可作為新舊判準，須以內容核對。**
+- ⚠ **本輪與 spec 的一處偏離（主動申報）**：**新聞軌僅 4 篇，低於 §STEP 2 的「5–10 篇」下限（連續第二輪）。** 原因為可用率下降（見作業面發現 3），而非查詢不足（9 組查詢）。總收錄 14 篇遠高於 §ERROR HANDLING 的「少於 3 篇即警告」門檻，故未觸發警告。➜ **建議：§STEP 2 的「5–10 篇」下限應改為「在可用候選耗盡的前提下不設下限，但須於 log 記錄候選數與失敗分布」**，以免未來輪次反覆申報同一偏離。
+- ⚠ **環境事項（三項）**：
+  1. ✓ **`device_bash`（本機 Linux workspace）本輪全程正常。** 全部 raw 與 wiki 檔案均以 spec §STEP 5 所假設的 bash heredoc 流程直接寫入 `D:\@source\AdvancedPackaging`，未使用 device_commit_files。
+  2. ⚠⚠ **`OPENALEX_KEY` 仍為空（連續第五輪未處置）。** 本輪 OpenAlex 全程 200、未遇 429。**維持建議⭐⭐⭐：申請免費 API key 加入 `.env`，並更新 `schedule.md` §4 的 curl 範例加上 `api_key`。**
+  3. 📌 **git 殘留問題**：2026-10-03 已確認根因為**連接資料夾的刪除權限預設關閉**（git 需要 unlink 暫存檔與鎖檔）。本輪提交狀況見下方提交記錄。**2026-10-03 的三項建議（(a) 啟用刪除權限 / (b) Windows 側 `git gc --prune=now` / (c) 不處理則每輪約增 70 個殘留檔）仍待人工處置。**

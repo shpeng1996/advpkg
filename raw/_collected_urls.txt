@@ -744,3 +744,17 @@
 2026-10-03 | https://doi.org/10.4071/001c.167744 | raw/papers/2026-10-03_openalex_ohmega-ticer-embedded-thin-film-resistors-msap.md | Embedded NiCr resistors: +/-20-25% vs 15% target
 2026-10-03 | https://doi.org/10.4071/001c.166910 | raw/papers/2026-10-03_openalex_delo-optical-adhesive-alignment-photonic-packaging.md | DELO OB6268: 6300MPa/Tg202C vs DSC 10MPa/-40C
 2026-10-03 | https://doi.org/10.4071/001c.167495 | raw/papers/2026-10-03_openalex_deca-microchip-panel-level-fanout-qfn-600mm.md | Deca MDQFN 600mm panel, strip 75x250, AP no reticle
+2026-10-04 | https://www.thelec.net/news/articleView.html?idxno=14384 | raw/articles/2026-10-04_thelec_amat-besi-epic-center-d2w-hybrid-bonding-dop.md | AMAT x Besi EPIC Center $5B; DoP die-on-panel HB
+2026-10-04 | https://www.thelec.net/news/articleView.html?idxno=14303 | raw/articles/2026-10-04_thelec_shindo-eng-lab-tgcv-glass-cte-0-10ppm.md | Shindo TGCV: CTE 0-10ppm/C, 30um via, AR 20:1
+2026-10-04 | https://ninescrolls.com/news/sk-hynix-rules-out-hybrid-bonding-for-hbm4e-775-micron-ceiling-keeps-mr-muf/ | raw/articles/2026-10-04_ninescrolls_skhynix-rules-out-hb-hbm4e-775um-mrmuf.md | HB only at HBM5; -35% Rth, +24% die, 16148 bumps
+2026-10-04 | https://chiplet-marketplace.com/insights/news/ev-group-hybrid-bonding-layer-transfer-lithography-heterogeneous-integration-semicon-west-2026 | raw/articles/2026-10-04_chipletmarketplace_evg-semicon-west-2026-equipment-lineup.md | EVG lineup: EVG40 D2W overlay metrology, IR LayerRelease
+2026-10-04 | EPO:95782775:US20260005081A1 | raw/patents/2026-10-04_US20260005081A1_intel-hybrid-glass-organic-substrate-polyimide-frame.md | Intel glass layer + organic polyimide frame substrate
+2026-10-04 | EPO:100037829:US20260165143A1 | raw/patents/2026-10-04_US20260165143A1_intel-thermally-controlled-switch-in-emib-bridge.md | Intel thermally controlled switch embedded in EMIB bridge
+2026-10-04 | EPO:97383989:TW202612031A | raw/patents/2026-10-04_TW202612031A_jcet-korea-double-sided-bridge-die.md | JCET Korea double-sided bridge die on ETS carrier
+2026-10-04 | EPO:99763640:US20260136970A1 | raw/patents/2026-10-04_US20260136970A1_deca-fully-molded-bridge-interposer.md | Deca fully molded via-free bridge, dual pitch zones
+2026-10-04 | EPO:97869711:GB2644659A | raw/patents/2026-10-04_GB2644659A_ibm-bridge-chip-with-backside-pdn.md | IBM bridge chip w/ active layer + backside PDN
+2026-10-04 | https://doi.org/10.1016/j.apsusc.2026.168527 | raw/papers/2026-10-04_openalex_kitech-glucose-vapor-cu-oxide-reduction-bonding.md | KITECH glucose vapor CuOx reduction, 250C/10MPa, plasma-free
+2026-10-04 | https://doi.org/10.1002/aelm.70600 | raw/papers/2026-10-04_openalex_purdue-ucla-cu-microstructure-tsv-residual-stress.md | Cu grain -> 2x effective modulus -> Si residual stress
+2026-10-04 | https://doi.org/10.4071/001c.167026 | raw/papers/2026-10-04_openalex_scrona-maskless-additive-ehd-rdl-wirebond-replacement.md | Scrona EHD: 20+ steps removed, resist <10um, seed <2um
+2026-10-04 | https://doi.org/10.1002/admt.71344 | raw/papers/2026-10-04_openalex_snu-uiuc-tim-multidimensional-heat-path-engineering.md | TIM: bulk k does not equal bonded performance, 3 domains
+2026-10-04 | https://doi.org/10.1016/j.mssp.2026.111205 | raw/papers/2026-10-04_openalex_gachon-nanoparticle-low-temperature-solders-lts.md | LTS SnBi/In: reflow warpage, glass-core + bridge roadmap

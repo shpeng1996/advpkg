@@ -3,7 +3,7 @@ title: "Applied Materials（應用材料）"
 category: entity
 tags: [equipment, ECD, PECVD, TSV, HBM, die-thinning, hybrid-bonding, USA]
 created: 2026-09-17
-updated: 2026-09-30
+updated: 2026-10-04
 sources: [2026-08-18_appliedmaterials_hbm-packaging-bottleneck-toolset, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-06-28_hyperframe_amat-hybrid-bonding-hedge, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_epo_xiamen-anjieli-cn121335557a-silane-parylene-tgv]
 related:
   - wiki/technologies/tsv.md
@@ -293,3 +293,21 @@ Poulomi Mukherjee（Applied Materials Germany）：FE 模擬識別 **① 種子�
 
 - [[sources/2026-09-30_semieng_one-substrate-no-longer-rules-them-all]]
 - [[sources/2026-09-30_epo_xiamen-anjieli-cn121335557a-silane-parylene-tgv]]
+
+## [2026-10-04] EPIC Center 啟用（2026-10-12）；混合接合平台延伸至 die-on-panel
+
+- **EPIC Center**（Equipment and Process Innovation and Commercialization，矽谷）：**總投資 USD 5B**，**2026-10-12 啟用典禮**，報導時處於最後準備階段。
+- 與 **[[entities/besi]]** 的合作自 **2020 年的新加坡聯合中心**升級至此；**Kinex** 被描述為「業界第一套整合式 D2W 混合接合系統」（前一年推出）。
+- 參與者 **>10 家公司／機構**，具名者含 **Samsung、SK hynix、Micron、TSMC、Broadcom** ➜ 為本頁既載的整合策略（**持股 Besi 9%**、TEL **Eteris** 合資、**收購 ASMPT NEXX**）補上**客戶側**的一塊：三大記憶體廠＋最大晶圓代工廠＋最大 ASIC 客戶同處一個前期設備開發場域。
+- ⭐⭐⭐ **平台方向明列四項：DoW（die-on-wafer）／DoD（die-on-die）／DoP（die-on-panel）＋ CPO 互連。** **DoP 是本 wiki 第一次見到設備商把「面板」列為混合接合的載體** ➜ 使 [[technologies/hybrid-bonding]] 與 [[technologies/foplp]] 兩條此前平行的線首次交會。
+- ⚠⚠ **USD 5B 為 EPIC Center 整體投資，不得歸因於混合接合或 DoP 單一項目。**
+- ⚠ **DoP 僅有平台名稱：無面板尺寸、無對準規格、無時程、無客戶** ➜ 記為**訊號**，不得表述為「已可在面板上做混合接合」。**2026-10-12 為下一輪可追蹤的具體事件（屆時應有規格揭露）。**
+
+### ⚠ 與本輪論文軌的張力
+
+- 本頁的 **Insepra™ SiCN 混合接合表面製備平台**（2026-09-22 以官網一手複核正向確認）與本輪 KITECH 的「葡萄糖氣相還原、明文取代電漿前處理」構成張力。
+- ➜ **「電漿是混合接合表面製備的唯一／最佳路徑」這個隱含前提，本 wiki 現有三個獨立來源質疑**（上海大學濕式、Plasmatreat 的有效窗量化、KITECH 氣相）。詳見 [[technologies/hybrid-bonding]]。⚠ 三者皆非產線實績。
+
+### 相關來源
+
+[[sources/2026-10-04_thelec_amat-besi-epic-center-dop]]、[[sources/2026-10-04_openalex_kitech-glucose-vapor-cu-oxide-reduction]]

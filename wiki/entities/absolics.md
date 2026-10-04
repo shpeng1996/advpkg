@@ -3,7 +3,7 @@ title: "Absolics（SKC 子公司）"
 category: entity
 tags: [glass-substrate, TGV, Absolics, SKC, RDL, copper-grain, contamination, US-supply-chain]
 created: 2026-09-21
-updated: 2026-09-21
+updated: 2026-10-04
 sources:
   - 2026-04-30_epo_absolics-glass-substrate-impurity-and-grain-symmetry
   - 2026-07-24_trendforce_skc-absolics-glass-substrate-delayed-2027
@@ -69,3 +69,18 @@ Absolics 的兩件請求項**都不是幾何或機械規格**，而是**組成�
 - [ ] C/D 為何不允許完全對稱（上限 0.99）？
 - [ ] 2027 年量產時程是否再次滑動？（既有紀錄已自 2026 年底推遲一次）
 - [ ] Applied Materials 在該 JV 中的角色範圍（設備供應？製程共同開發？）——與 AMAT 在 CMP／量測的縱向布局是否相關
+
+## [2026-10-04] ⭐⭐⭐ 「銅晶粒長寬比寫進請求項」的物理機制取得外部佐證
+
+- 本頁既載的兩件請求項皆非幾何，而是**製程潔淨度**（溶出雜質 P ≤1,500 ppb／Zn ≤500 ppb，ICP-MS 方法寫入請求項）與**微結構對稱性**（**上下 RDL 銅晶粒長寬比之比 C/D 0.85–0.99**）。2026-09-21 收錄時，本 wiki **無法解釋為何晶粒長寬比值得寫進請求項**。
+- 本輪 **Purdue × UCLA**（[[sources/2026-10-04_openalex_purdue-cu-microstructure-tsv-stress]]）給出機制：
+  - **銅是彈性異向性材料**；
+  - **晶粒取向決定有效彈性模數**（out-of-plane 有效模數**隨晶粒結構變異達 2 倍**）；
+  - **有效模數決定施加於周圍材料的殘留應力**。
+- ➜ ⭐⭐⭐ **據此，Absolics 管制的是「上下 RDL 不對稱所導致的彎矩」。這是本 wiki 第一次能把一件專利的請求項與一篇論文的物理機制接成完整因果鏈。**
+- ⚠ **兩者材料系統不同**（Si/TSV vs 玻璃/RDL）：**機制類比成立，數值不可互借。** Absolics 的 C/D 0.85–0.99 與論文的「2 倍模數變異」**不得互相換算**。
+- ⚠ 本頁既載的量產時程（**自 2026 年底推遲至 2027**，美國喬治亞專用廠）**本輪未改動**。
+
+### 相關來源
+
+[[sources/2026-10-04_openalex_purdue-cu-microstructure-tsv-stress]]

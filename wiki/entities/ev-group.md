@@ -3,7 +3,7 @@ title: "EV Group (EVG)"
 category: entity
 tags: [equipment, hybrid-bonding, wafer-bonding, maskless-lithography, layer-transfer]
 created: 2026-04-25
-updated: 2026-09-24
+updated: 2026-10-04
 sources: [2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-05-19_semiconductor-digest_ev-group-ectc2026-hybrid-bonding, 2026-06-29_evgroup_ectc2026-hybrid-bonding-layer-transfer, 2026-05-28_imec_w2w-hybrid-bonding-200nm-pitch, 2026-06-02_intel_ectc2026-emib-t-cpo-glass]
 related:
   - wiki/technologies/hybrid-bonding.md
@@ -160,3 +160,33 @@ KIMM 的 308 nm 準分子雷射解接合研究顯示：在**反轉結構**（玻
 本 wiki 目前**沒有 EVG 自身對「光路上各層透明度規格」的公開表述**。追蹤方式：EVG 後續專利或 ECTC/DPC 發表是否出現**黏著層透射率**或**光路預算**的具體規格；若出現，可將上述推論鏈自「本 wiki 推論」升格為「供應商明述」。
 
 （另記：2026-09-23 已載「輪替名單應按題材而非按公司」；本輪的 EVG 相關進展正是**由第三方論文帶來**，而非 EVG 自身檢索——支持該項作業修正。）
+
+## [2026-10-04] SEMICON West 2026 設備線盤點：overlay 量測獨立成機種
+
+### 機種（本輪新增紀錄）
+
+| 機種 | 功能 |
+|------|------|
+| **GEMINI® FB** | 量產型自動化 W2W 混合接合與熔接 |
+| **EVG®320 D2W** | D2W 接合，含表面處理與 **collective die transfer** |
+| **EVG®40 D2W** | ⭐⭐ **D2W overlay 量測系統（高解析）—— 量測獨立成產品線** |
+| **ComBond®** | 高真空接合，光學透明界面 |
+| **EVG®850 TB/DB** | 晶圓薄化，用於雷射二極體與**超薄 ASIC 堆疊** |
+| **LITHOSCALE® XT** | 無光罩曝光（MLE™），宣稱 **stitch-free patterning** 且高吞吐 |
+| **IR LayerRelease™** | 紅外雷射層轉移，自矽載體剝離超薄膜（稱奈米級精度） |
+
+### 為何重要
+
+- ⭐⭐ **EVG®40 D2W 為 [[concepts/test-metrology-packaging]] 的「量測—製程閉環」論述提供設備端的產品化證據**；與 [[entities/onto-innovation]]（Dragonfly G5）並列為第二個「量測端追上製程端」實例，且本例來自**接合設備商自己** ➜ **「邊界外擴」的另一方向：接合設備商向量測延伸。**
+- ⭐⭐ **LITHOSCALE XT 的「stitch-free」是本 wiki 第一個「以無光罩曝光消除面板拼接」的宣稱** ➜ 與 Scrona、Deca、CFMEE 並列為本輪「免光罩」的四個獨立供應商之一（見 [[technologies/rdl]]、[[technologies/foplp]]）。
+- ⭐ **IR LayerRelease™** 使 debonding 軸再增一條獨立路線（[[technologies/glass-carrier]] 的「輔助步驟才是瓶頸」第六個實例）。
+
+### ⚠ 本輪的兩個量化數字並非新數據
+
+- **<40 nm post-bond overlay（300 mm 上 100% 晶粒）** 與 **200 nm Cu 互連 pitch** 本 wiki 已載（Imec/EVG **ECTC 2026**）；本輪為同一組數字在 **SEMICON West 2026** 的重述。
+- ⚠ 來源為**第三方網站轉載的新聞稿**（chiplet-marketplace.com），非 evgroup.com 原文 ➜ 依規範（22）標註為二手轉載，**所有數字僅作佐證，不作首要引用。**
+- ⚠ stitch-free 與 IR LayerRelease 的精度**皆無量化**。
+
+### 相關來源
+
+[[sources/2026-10-04_chipletmarketplace_evg-semicon-west-2026]]

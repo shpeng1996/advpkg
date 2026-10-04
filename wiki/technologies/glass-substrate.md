@@ -3,7 +3,7 @@ title: "玻璃基板 / Glass Core Substrate"
 category: technology
 tags: [glass-substrate, TGV, panel-level, FC-BGA, CoPoS, Absolics, DNP, Rapidus, warpage, SeWaRe, glass-interposer, BOE, ULCVD, non-embedding, Lens-Technology, TPK-KY, Innolux, AUO, LG-Chem, singulation, patent-signal]
 created: 2026-05-08
-updated: 2026-10-03
+updated: 2026-10-04
 sources: [2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-27_tradingkey_copos-glass-validation-08mm-85x110mm, 2026-09-27_intel_us20260182414a1-asymmetric-buildup-cte-gradient-glass, 2026-09-27_samsung_us20260144093a1-bridge-on-tgv-mold-fixed, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-05-05_trendforce-insights_glass-substrate-development, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-05-29_3dincites_rapidus-2nm-advanced-packaging-ai-foundry, 2026-06-01_trendforce_intel-3dgs-india-glass-substrate, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-06-20_biggo_boe-glass-substrate-pilot, 2026-06-28_economy-ac_glass-substrate-global-race, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-08-18_trendforce_shinko-glass-substrate-22layer-glassem-delay, 2026-09-11_mssp_tgv-glass-biaxial-bending-ring-on-ring, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-03-13_kaneka_jp2026047137a-glass-core-polyimide-quantified, 2026-08-10_screp_low-k-organic-buffer-tgv-cu-metallization, 2026-08-04_jmrt_vacuum-assisted-void-free-cu-fill-tgv, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_patent_er-eng-glass-interposer-dual-carrier, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-30_epo_xiamen-anjieli-cn121335557a-silane-parylene-tgv, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth, 2026-09-30_epo_intel-jp2026116680a-glass-core-embedded-inductor-clusters, 2026-09-30_epo_intel-us20260040982a1-glass-package-liquid-metal-socketing, 2026-09-30_epo_amosense-wo2026019155a1-multilayer-glass-core-frit-bonding, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-10-02_epo_shanghai-xianfeng-cn122622683a-glass-interposer-bridge, 2026-10-02_epo_semco-cn122054433a-glass-surface-roughness, 2026-10-02_trendforce_nvidia-glass-substrate-2028-taiwan, 2026-10-02_trendforce_intel-microled-glass-24-layer, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo]
 related:
   - wiki/technologies/rdl.md
@@ -1990,3 +1990,42 @@ TrendForce（2026-09-30，⚠ **全文為 reportedly 之產業傳聞，非 NVIDI
 - **韓系玻璃玩家增至第四個**：既有 Absolics（SKC×AMAT）、SEMCO、SKC；本輪加入 **JNTC（+ Comet，鍍／蝕刻）**、**Philoptics（設備）**。
 - **「邊界外擴」第三型態＝基材／加工商以併購取得金屬化**（JNTC 併 Comet）。既有兩型：設備商向材料／相鄰製程擴張（TEL、AMAT、Onto）、載板業者向上游堆疊製程延伸（上海美維）；第四型為材料商向下游金屬化延伸（Corning WO2026164778A1）。
 - ⚠ **新空缺：2 mm 厚玻璃的可達 TGV AR**（若維持 AGC 的 1:20，孔徑需 100 µm；若維持 50 µm 孔徑，AR 需 1:40）。
+
+## [2026-10-04] CTE 調節手段進入孔內（第五層級）；BGA 側風險同時出現結構側與材料側解法
+
+### ⭐⭐⭐ 1. 「玻璃非單一材料」取得第五層級：孔內填充材料
+
+| 層級 | 調節手段 | 來源 |
+|------|---------|------|
+| 1 | 玻璃組成選擇 | [[entities/agc]]：ER-Y1 CTE **3.5**/88 GPa vs EN-A1 **5.8**/75 GPa |
+| 2 | **玻璃之外**的框材料 + 銅百分比 | [[entities/intel]]：框 **CTE < 11** |
+| 3 | 襯層的有無與位置 | Intel TGV 四路線（部分襯層僅端部、雙襯層等） |
+| 4 | 界面官能化 | [[entities/corning]] WO2026164778A1（Ti/Cu 黏著層＋羥基富化＋矽烷官能化） |
+| **5** | **孔內填充材料（陶瓷）** | **Shinko Eng. Lab TGCV：CTE 可調 0–10 ppm/°C（本輪新增）** |
+
+- Shindo（Shindo Eng. Lab，韓國始興，1989 年成立，本體為顯示器真空貼合設備商）：**TGCV = Through Glass Ceramic Via**；目標**孔徑 30 µm**、**AR 約 20:1**、**基板厚度 0.34–0.68 mm**；成孔走**微影**而非雷射。
+- ⚠⚠ **「CTE 0–10 ppm/°C」的量測對象未界定**（孔內填充物本體？含玻璃的複合基板？）➜ **在界定前不得與 AGC 或 Intel 的 CTE 數字並列比較，也不得用於改寫既有 CTE 記錄。**
+- ⚠ 單一來源、無量產時程、無半導體客戶具名（11 家索樣公司列為汽車／顯示／材料）。
+- ⭐ **AR 約 20:1 與 AGC 的「AR 1:20 @ 1.0 mm」同量級**；厚度區間落在 Shinko／JNTC 既有區間內 ➜ **互為獨立佐證，非新高。**
+
+### ⭐⭐⭐ 2. 玻璃核心的 BGA 側風險：本輪同時出現兩種獨立解法
+
+2026-09-21 結清的 Lau 量化發現：**玻璃核心使 micro-bump 應變 9.12% → 4.43%（減半），同時使 PCB 側 BGA 應變 8.43% → 19%（加倍有餘），作者標 high risk。**
+
+本輪兩個獨立來源各自給出一條解法：
+
+| 解法側 | 來源 | 內容 |
+|--------|------|------|
+| **結構側** | **Intel US20260005081A1** | **玻璃層 + 圍繞其的有機框（含聚醯亞胺）** —— 有機框的位置**正好在 BGA 應變惡化的那一側** |
+| **材料側** | **Gachon LTS 綜述** | **Sn–Bi／含 In 低溫焊料降低回焊所致翹曲**，應用路線圖**明文含 glass-core packages** |
+
+- ➜ ⭐⭐⭐ **本輪跨軌最強的一組呼應。** ⚠ **兩者皆未明文指向 BGA 應變；此連結為本 wiki 的推論。**
+- ⭐⭐⭐ **Intel 本件是本 wiki 第一件在排他權層把「玻璃」與「有機」放進同一片基板者。** 既有敘事視兩者為**世代交棒**（交棒點由封裝尺寸決定，2026-10-03 取得「每邊約 120 mm」的絕對數字；[[entities/ibiden]] 把玻璃核心放在 ~2030 且理由為翹曲控制）。
+  ➜ **第三種可能：同一基板內的空間分工** —— 中央玻璃（剛性、低 CTE、支援細線寬）＋周界有機（吸收與 PCB 的 CTE 失配）。
+  ➜ **候選讀法（不改寫既有時程）：交棒點可能不是一個時間點，而是一個基板內的半徑。**
+- ⚠ **Intel 本件完全未揭露玻璃與有機框的界面如何處理** —— 而 2026-10-03 的主線正是「界面工程的兩種哲學」。**本件最關鍵的未知。**
+- ⚠ 本件無任何量化值（框寬度、CTE、玻璃厚度、PI 種類全部未給）。
+
+### 相關來源
+
+[[sources/2026-10-04_thelec_shindo-tgcv-glass-cte]]、[[sources/2026-10-04_epo_intel-hybrid-glass-organic-substrate]]、[[sources/2026-10-04_openalex_gachon-low-temperature-solders]]、[[sources/2026-10-04_openalex_purdue-cu-microstructure-tsv-stress]]

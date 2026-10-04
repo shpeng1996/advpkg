@@ -3,7 +3,7 @@ title: "先進封裝的測試、量測與失效分析 / Test, Metrology & Failur
 category: concept
 tags: [test, metrology, inspection, failure-analysis, KGD, KGI, KGP, DFA, yield]
 created: 2026-09-17
-updated: 2026-10-03
+updated: 2026-10-04
 sources: [2026-09-27_paper_binghamton-ibm-pad-scaling-resistance-variability, 2026-09-27_paper_purdue-ru-cu-em-lifetime-blacks-n-0154, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2025-01-14_semieng_known-good-interposer-screening, 2025-07-10_semieng_advanced-packaging-reshaping-inspection, 2024-11-12_semieng_packaging-drives-test-metrology-innovation, 2026-08-01_jfap_3dic-failure-analysis-dfa, 2026-07-06_apl_lensless-through-silicon-phase-imaging, 2026-09-06_ndte_hysan-sparse-view-xct-tsv, 2026-08-02_chips_cpo-wafer-level-probe-card, 2026-08-27_samsung_us20260256000a1-interposer-test-pad, 2026-08-13_jcet_us20260239928a1-hybrid-bonding-substack-test, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-06-28_hyperframe_amat-hybrid-bonding-hedge, 2026-09-26_paper_ibm-amine-post-cmp-clean, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-10-02_microrel_tudelft-google-3dic-fa-hardware, 2026-10-02_imaps-dpc2026_gelpak-universal-carriers-singulated-die]
 related:
   - wiki/technologies/hybrid-bonding.md
@@ -824,3 +824,26 @@ Micromachines 的**五種 TGV 剖面**（直壁／沙漏／等腰錐／倒錐／
 ### 相關來源
 
 [[sources/2026-10-03_imaps_plasmatreat-cuox-reduction-queue-time]]、[[sources/2026-10-03_imaps_deca-panel-level-fanout-qfn]]、[[sources/2026-10-03_thelec_philoptics-tgv-2mm-glass]]、[[sources/2026-10-03_imaps_hydrozone-ozone-resist-strip]]
+
+## [2026-10-04] 兩項擴張：overlay 量測獨立成機種；熱量測進入視野
+
+### ⭐⭐ 1. overlay 量測獨立成產品線（設備端實例）
+
+- **[[entities/ev-group]] EVG®40 D2W** 是一台**專為 D2W overlay 量測**的獨立機種。
+- ➜ 本頁既有的「**量測—製程閉環**」論述（2026-10-03，2.5D 成像 AOI 與量測—製程閉環）取得**設備端的產品化證據**：此前本 wiki 僅記錄對準精度數字（Kinex 100 nm @3σ、EVG/imec <40 nm overlay），**未記錄其量測端配套**。
+- ⭐ 與既有的 [[entities/onto-innovation]]（三 CD 要求之量測端配套首例，Dragonfly G5）並列為**第二個「量測端追上製程端」的實例**，且本例來自**接合設備商自己**而非專職量測商 ➜ **「邊界外擴」的另一方向：接合設備商向量測延伸。**
+- ⚠ 無量化（未給該機台的量測重複性或精度）。
+
+### ⭐⭐ 2. 新領域：熱量測
+
+- SNU × UIUC 的 TIM 綜述**明文把 metrology 列為「把傳輸增益轉為實效」的必要條件**，與 degradation、reliability 並列。
+- ➜ 本頁既有條目集中在**電性／光學／尺寸**量測；**熱量測此前完全空白。**
+- ⚠ 綜述、無量化、未指認任何量測標準或設備 ➜ 僅記為**領域缺口的指認**，不作為能力紀錄。
+
+### ⭐ 3. 本輪另一個量測組合（方法論參考）
+
+- Purdue × UCLA 以 **Raman（Si 應力成像）+ EBSD（Cu 晶粒 → 有效模數）** 量化 TSV 殘留應力 ➜ 此組合正是既有空缺「**TGV 陣列力學數值（需有／無 liner 對照值）**」所需的方法。詳見 [[technologies/tsv]]。
+
+### 相關來源
+
+[[sources/2026-10-04_chipletmarketplace_evg-semicon-west-2026]]、[[sources/2026-10-04_openalex_snu-uiuc-tim-heat-path-engineering]]、[[sources/2026-10-04_openalex_purdue-cu-microstructure-tsv-stress]]

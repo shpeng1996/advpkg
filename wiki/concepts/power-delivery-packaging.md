@@ -3,7 +3,7 @@ title: "封裝層的供電網路 / Power Delivery Networks at the Package Level"
 category: concept
 tags: [PDN, power-delivery, vertical-power, eVR, capacitor, inductor, passive-integration, hybrid-bonding, rack-power]
 created: 2026-09-29
-updated: 2026-10-03
+updated: 2026-10-04
 sources: [2026-09-29_imaps-dpc2026_nanoporous-silicon-capacitor-pdn, 2026-09-29_imaps-dpc2026_saras-stile-evr-vertical-pdn, 2026-09-29_semieng_tech-paper-roundup-sept29-multikw-3dhi-pdn, 2026-09-29_semiwiki_ofc2026-siph-cpo-oci-ocs-summary, 2026-09-30_arxiv_umn-multi-kw-power-delivery-3d-hi, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_epo_intel-jp2026116680a-glass-core-embedded-inductor-clusters, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_imaps-dpc2026_delo-die-side-capacitor-encapsulation, 2026-10-02_epo_samsung-cn122602880a-ivr-capacitor-interposer-core, 2026-10-02_jmmm_tyndall-fecob-n-pwrsoc-magnetics, 2026-10-02_epo_amd-us20260282956a1-silicon-bridge-decap]
 related:
   - wiki/concepts/thermal-management.md
@@ -491,3 +491,28 @@ Tyndall National Institute × University College Cork（JMMM，2026-09-02）：�
 ### 相關來源
 
 [[sources/2026-10-03_imaps_ohmega-ticer-embedded-thin-film-resistors]]、[[sources/2026-10-03_epo_qualcomm-bridge-as-passive-vertical-cap]]、[[sources/2026-10-03_imaps_delo-optical-adhesive-alignment]]、[[sources/2026-10-03_epo_intel-hanging-bridge-tsv-free]]、[[sources/2026-10-03_epo_intel-polymer-tgv-buffer]]
+
+## [2026-10-04] 第三種供電位置：橋的背面（IBM GB2644659A）
+
+### ⭐⭐⭐ 供電位置的三個落點
+
+| 落點 | 來源 | 量化 |
+|------|------|------|
+| **橫向 / BVM / 基板內建** | [[entities/infineon]] | PDN 總電阻 **90–140 µΩ（橫向）→ 10–15 µΩ（BVM，−89%）→ 7–10 µΩ（基板內建，−93%）**（⚠ µΩ 單位為推定） |
+| **晶粒背面（BSPDN）** | [[technologies/tsv]] NanoTSV（<100 nm），2nm+ | — |
+| **橋的背面** | **IBM GB2644659A（本輪新增）** | **無任何數值** |
+
+- IBM 本件的橋剖面自上而下為 **BEOL → MOL → 主動元件層 → BSPDN**，BSPDN 耦接至該主動層的元件。
+- ➜ **這是 Infineon 所列三級階梯之外的一個新落點**，且本 wiki 首次在排他權層見到「橋自己有電源網路」。
+- ⚠⚠ **無任何電阻或電流密度數值，不得與 Infineon 的 µΩ 階梯並列比較**，亦不得用於推論其是否優於既有三級。
+- ⚠ **橋的供電由何處進入（周界？基板？）未揭露** ➜ 與本輪 Deca／Intel 的「垂直路徑繞到周界」結論是否相容，無法判斷。
+- ⚠ 標題的「flexible power and signal distribution」之「flexible」在摘要中**無對應結構** ➜ **以摘要為準。**
+
+### 本頁的來源結構仍然單薄
+
+- 本頁此前的唯一一手量化來源為 [[entities/infineon]]（3 A/mm² 密度障壁；電流密度 0.4/0.6(2024)→1.0/1.5→2.0(2025)→>3→>4 A/mm²；機櫃 <250 kW → ~600 kW+(2027+) → >1 MW(2029+)）。
+- 本輪新增的是**專利訊號而非量測** ➜ **本頁的「第二個一手量化來源」仍為空缺，維持⭐⭐⭐。**
+
+### 相關來源
+
+[[sources/2026-10-04_epo_ibm-bridge-chip-backside-pdn]]

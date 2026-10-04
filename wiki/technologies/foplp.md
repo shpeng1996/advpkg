@@ -3,7 +3,7 @@ title: "FOPLP — 扇出面板級封裝 / Fan-Out Panel-Level Packaging"
 category: technology
 tags: [fan-out, panel-level, TSMC, Samsung, ASE, Powertech, Innolux, CoPoS, InFO, cost-reduction, delamination, DCB, CTE]
 created: 2026-05-03
-updated: 2026-10-03
+updated: 2026-10-04
 sources: [2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-07-31_trendforce_ase-capex-record-10-5b-leap-foplp, 2025-09-12_trendforce_foplp-competitive-2025, 2026-04-13_trendforce_copos-pilot, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-21_3dincites_acm-wlp-plp-process-trends, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-15_digitimes_manz-310mm-foplp-ecd-equipment, 2026-06-13_digitimes_linkotech-foplp-rollout-traction, 2026-06-20_prnewswire_manz-asia-310mm-ecd, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_digitimes_tsmc-foplp-timeline-skepticism, 2026-07-06_trendforce_cfmee-plp2000-china-first-plp, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-08-06_siliconbox_500m-units-panel-scale, 2026-02-18_siliconbox_ep4697377a1-fanout-panel-metal-sealing-ring, 2026-07-28_xianfeng_cn122476946a-alignment-mark-protection, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-26_paper_skywater-fowlp-pdk-roadmap]
 related:
   - wiki/technologies/rdl.md
@@ -983,3 +983,33 @@ Cu stud 輸入晶圓 → 切單與晶粒貼附 → **第一次封膠** → **載
 ### 相關來源
 
 [[sources/2026-10-03_imaps_deca-panel-level-fanout-qfn]]
+
+## [2026-10-04] 面板首次成為混合接合的載體（DoP）；免光罩成為面板圖案化的共同方向
+
+### ⭐⭐⭐ 1. DoP（die-on-panel）：混合接合的第四種載體
+
+- AMAT × Besi **EPIC Center**（矽谷；總投資 **USD 5B**；**2026-10-12 啟用**；參與者 >10 家，具名含 Samsung、SK hynix、Micron、TSMC、Broadcom）明列四個平台方向：**DoW / DoD / DoP** 與 CPO 互連。
+- ➜ [[technologies/hybrid-bonding]] 既有的 **W2W／D2W／D2D 三情境全部以晶圓為載體**；**DoP 使本頁與混合接合兩條此前平行的技術線首次交會。**
+- ⚠⚠ **僅有平台名稱：無面板尺寸、無對準規格、無時程、無客戶。** 記為**訊號**，不得表述為「已可在面板上做混合接合」。並：**USD 5B 為 EPIC Center 整體投資，不得歸因於 DoP。**
+
+### ⭐⭐ 2. 面板級圖案化：四個獨立供應商同向走「免光罩」
+
+| 供應商 | 手段 | 已演示 |
+|--------|------|--------|
+| **Scrona**（本輪） | 多噴嘴 MEMS EHD 直寫 | 光阻 **<10 µm**、種子層 **<2 µm**；可在 2.5D/3D 形貌順形印刷 |
+| **[[entities/ev-group]]**（本輪） | LITHOSCALE® XT 無光罩曝光（MLE™） | 宣稱 **stitch-free patterning**（⚠ 無量化） |
+| **Deca**（2026-10-03） | Adaptive Patterning | MDQFN **600 mm 面板**、strip 75×250、免光罩 |
+| **CFMEE**（2026-07-07） | PLP 2000 直寫微影 | **510×515 mm、2 µm** |
+
+- ➜ **新論述候選：面板級圖案化的主流解法正從「縮光罩」轉向「不用光罩」。**
+- ⭐⭐⭐ 並且 Scrona 明文把「**嚴格的基板平坦度要求**」指認為傳統微影路線的前提，而本路線**宣稱不需要** ➜ 面板（大面積 ⇒ 平坦度最差）正是這個論點的最大受益情境。詳見 [[technologies/rdl]]。
+
+### ⭐⭐ 3. Deca 的路線完整性
+
+- Deca 本輪第二度入庫（2026-10-03 MDQFN 600 mm 面板論文 + 本輪 **US20260136970A1 全模封免孔橋**）。
+- ➜ **Deca 在「面板 + 免光罩圖案化 + 模封橋」上是一條完整自成體系的路線**，與 TSMC（矽 + 光罩）／Intel（矽橋 + 玻璃核心）皆不同。**G03F7/\* 分類（微影類出現在封裝案件）是這條路線的 CPC 指紋。**
+- 見新建頁 [[entities/deca-tech]]。
+
+### 相關來源
+
+[[sources/2026-10-04_thelec_amat-besi-epic-center-dop]]、[[sources/2026-10-04_openalex_scrona-maskless-additive-ehd-rdl]]、[[sources/2026-10-04_epo_deca-fully-molded-bridge-interposer]]

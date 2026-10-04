@@ -3,7 +3,7 @@ title: "HBM4 — High Bandwidth Memory 4"
 category: technology
 tags: [memory, HBM, JEDEC, standards, AI, HPC, HBM4E, cleanroom, capacity, ISSCC2026, ZAM, HB3DM, HBM5, zHBM, HPB, FMS-2026, ECC, reliability, FIT]
 created: 2026-04-24
-updated: 2026-10-03
+updated: 2026-10-04
 sources: [2026-08-13_semieng_1mw-rack-debate-thermal, 2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor, 2026-08-10_trendforce_skhynix-chongqing-sale-global-reset, 2026-08-05_trendforce_samsung-v10-zhbm-hbm5-fms2026, 2026-07-30_trendforce_samsung-ds-q2-2026-hbm4-triple-q3, 2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-03-18_trendforce_intel-emib-malaysia, 2026-01-23_trendforce_hbm4e-samsung-skhynix-mid2026, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-01-13_semiengineering_hbm4-microbumps, 2025-12-18_trendforce_micron-capex-hbm4, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h, 2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-03-03_trendforce_sk-hynix-hbm4-tight-gaps, 2025-08-12_semianalysis_hbm-roadmap, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit, 2026-06-09_astutegroup_hbm-market-share-2026-battle, 2026-06-10_trendforce_samsung-gwangju-packaging-base, 2026-06-15_trendforce_skhynix-hbm4e-sample-timeline-pulled-forward, 2026-06-20_techtimes_skhynix-hbm4e-12layer-samples, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-27_tweaktown_hbm4-16hi-nvidia-supply-fight, 2026-06-26_semieng_chip-week-144, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-14_trendforce_samsung-hbm-hiring-hbm4-hbm4e-hbm5, 2026-07-14_trendforce_skhynix-yongin-y1-feb2027, 2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b, 2026-08-13_trendforce_samsung-skhynix-hbm4-2h-earnings-pricing, 2026-08-25_trendforce_nvidia-server-hike-hbm-price-2027, 2026-08-28_trendforce_skhynix-indiana-hbm4e-3q29-supply-2030, 2026-08-26_tomshardware_hbf-hot-chips-oxmiq-limited-usability, 2026-08-21_electronics_dual-interposer-hbm-power-integrity, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-09-09_acsaelm_microwave-anneal-cu-cu-150c-3min, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-03-29_damnang_hybrid-bonding-cmp-gating-factor, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_trendforce_cowos-l-mainstream-through-2028, 2026-10-02_microrel_tudelft-google-3dic-fa-hardware]
 related:
   - wiki/entities/sk-hynix.md
@@ -1572,3 +1572,39 @@ TU Delft × Google（2026-07-03）：PoP 中 DRAM 疊於邏輯之上造成 **EFI
 ### 相關來源
 
 [[sources/2026-10-03_semieng_custom-hbm-business-model]]
+
+## [2026-10-04] HBM4 互連量級首見；HB 推遲至 HBM5；焊料的平行演化
+
+### 1. ⭐⭐⭐ HBM4 的互連總量級（本 wiki 首見）
+
+| 項目 | 值 |
+|------|-----|
+| 16-Hi 容量 | **48 GB / cube**（**客戶驗證中**）；12-Hi **量產中** |
+| 核心晶粒厚度 | **約 50 µm**；die-to-die 間距相對 12-Hi **減半** |
+| TSV 數 | **> 20,000 / 顆** |
+| base die 微凸塊 | **16,148 顆 @ 12.8 × 11 mm** ⇒ 約 **115 bumps/mm²**（⚠ 本 wiki 推算） |
+| 目標頻寬／效率 | **> 2 TB/s**；功耗效率 **+40%** |
+| 微凸塊 pitch | **約 30 µm**（MR-MUF） |
+| 跨世代熱負擔 | **2.2×**；層數每兩世代加倍 |
+
+### 2. 厚度上限的三個世代值
+
+- **HBM3E 以前 720 µm → 現行 775 µm（JEDEC，對齊標準 300 mm 邏輯晶圓厚度）→ 20-Hi 討論值 825–900 µm（未定案）。**
+- ⚠ **新空缺：825–900 µm 的 20-Hi 討論由誰提出、在 JEDEC 哪個工作組，未揭露。**
+
+### 3. ⭐⭐ 推進空缺「16-Hi HBM4 對賭的驗證」
+
+- SK hynix 側：**16-Hi 48 GB 已進入客戶驗證**。
+- Samsung「沒有必要」之表態**未改變**；Micron 出樣狀態未更新。
+- 驗證點仍為 **NVIDIA Vera Rubin 各廠採用比例** —— 本輪取得一個座標：**SK hynix 約 70% 份額，且 Vera Rubin 全量以 MR-MUF 出貨。**
+
+### 4. ⭐⭐ 焊料不是被取代，而是同時在往低溫演化（新平行路線）
+
+- 本頁既載「JEDEC 775 µm 決定：HBM4 繼續用 MR-MUF microbump」。本輪論文軌給出該策略的材料側延伸：
+  - **Gachon LTS 綜述**（[[sources/2026-10-04_openalex_gachon-low-temperature-solders]]）：Sn–Bi／含 In 低溫焊料**降低回焊所致翹曲**，路線圖明文含 **LPDDR-class packages** 與 **bridge/substrate-level chiplet integration**。
+  - 與 **KITECH 的 Cu-Cu 直接接合**（取消焊料，溫度仍 250 °C）方向相反。
+- ➜ **本 wiki 的「無凸塊化」敘事應併記這條平行路線。** ⚠ 綜述、無量化值，不得作時程推論。
+
+### 相關來源
+
+[[sources/2026-10-04_ninescrolls_skhynix-hb-hbm5-775um]]、[[sources/2026-10-04_openalex_gachon-low-temperature-solders]]

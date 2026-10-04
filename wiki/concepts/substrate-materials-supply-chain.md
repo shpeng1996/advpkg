@@ -3,7 +3,7 @@ title: "基板與材料供應鏈 / Substrate & Materials Supply Chain（ABF・T-
 category: concept
 tags: [ABF, Ajinomoto, substrate, supply-chain, Ibiden, Unimicron, Shinko, SEMCO, Kinsus, Nan-Ya-PCB, glass-core, warpage, bottleneck]
 created: 2026-10-03
-updated: 2026-10-03
+updated: 2026-10-04
 sources: [2026-10-03_tomshardware_abf-substrate-state-2026, 2026-10-03_thelec_philoptics-tgv-2mm-glass, 2026-10-03_digitaltoday_jntc-tgv-thickness-lineup, 2026-10-03_epo_semco-coreless-interposer-organic-bridge]
 related: [technologies/glass-substrate.md, concepts/advanced-packaging-market.md, concepts/geopolitics-advanced-packaging.md, entities/ibiden.md, entities/shinko.md, entities/semco.md, entities/absolics.md, entities/agc.md]
 ---
@@ -156,3 +156,33 @@ AI 加速器封裝之下的**載板層**供應鏈，由三層構成：
 - [[sources/2026-10-03_digitaltoday_jntc-tgv-thickness-lineup]]
 - [[sources/2026-10-03_epo_semco-coreless-interposer-organic-bridge]]
 - [[sources/2026-10-03_imaps_ohmega-ticer-embedded-thin-film-resistors]]（AGC fastRise HF；Panasonic R-1515V）
+
+## [2026-10-04] 韓系玻璃玩家再增一家（設備側）；焊料首次進入基板材料鏈的討論
+
+### ⭐⭐ 1. 「邊界外擴」第三型態：顯示設備商橫移至半導體封裝
+
+| 型態 | 內容 | 實例 |
+|------|------|------|
+| 1 | 設備商向材料／相鄰製程擴張 | TEL、AMAT、[[entities/onto-innovation]] |
+| 2 | 載板業者向上游堆疊製程延伸 | 上海美維 |
+| **3** | **同一製程能力跨產業轉用** | **Shinko Eng. Lab（本輪）**：LCD/OLED/可折疊的真空貼合 → 玻璃基板、HBM 載體、CPO 波導、背面製程暫時貼合 |
+
+- 第三型與面板廠（AUO／Innolux）進入 FOPLP、[[entities/powertech]] 的路徑同型。
+- 規格：**TGCV CTE 可調 0–10 ppm/°C**（⚠ 量測對象未界定）、孔徑目標 **30 µm**、**AR 約 20:1**、厚度 **0.34–0.68 mm**、以**微影**成孔。
+- 商業訊號：**11 家全球公司索取樣品**（汽車／顯示／材料，⚠ **無半導體客戶**）；**2026 H1 研發支出 ₩846.44M（營收 9.45%）**，CEO 願提高至 20%+。
+- ➜ **既有「韓系玻璃四玩家」清單應增列設備／材料側的 Shinko Eng. Lab**（與 [[entities/semco]]、[[entities/absolics]]、JNTC、Philoptics 並列）。⚠ 其角色為**設備與製程供應**，非基板量產商，不得併入產能統計。
+
+### ⭐⭐ 2. 焊料首次進入基板材料鏈的討論
+
+- Gachon 的低溫焊料（LTS）綜述把**應用路線圖明文指向 glass-core packages** 與 **bridge/substrate-level chiplet integration**。
+- 機制上與本 wiki 既有鏈條吻合：玻璃核心 CTE 低（3.5–5.8 ppm/°C）⇒ 與 PCB 失配更大 ⇒ 2026-09-21 Lau 的 **PCB 側 BGA 應變 8.43%→19%（high risk）** ⇒ **降低回焊溫度 = 降低該界面熱應變幅度**。
+- ➜ **基板材料鏈的討論此前止於核心材料（ABF／T-glass／玻璃）與增層；本輪首次向下延伸到「基板與 PCB 之間的接合材料」。**
+- ⚠ 綜述、無量化值、無 OA 全文、無採用案例具名。
+
+### ⭐ 3. 未更新項（本輪嘗試但未取得）
+
+- **Unimicron 2026-10-01 的 NT$100 億湖口土地案**（ABF 擴產）—— digitimes **HTTP 403**，本輪未取得。既有 ABF 缺口與擴產記載（[[concepts/advanced-packaging-market]]：ABF 缺口 10/21/40%、漲價先於擴產見效）**未改動**。列下輪以其他來源續追。
+
+### 相關來源
+
+[[sources/2026-10-04_thelec_shindo-tgcv-glass-cte]]、[[sources/2026-10-04_openalex_gachon-low-temperature-solders]]

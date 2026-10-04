@@ -3,7 +3,7 @@ title: "TSV — Through-Silicon Via / 矽穿孔"
 category: technology
 tags: [TSV, HBM, interposer, 3D-IC, CoWoS, manufacturing, backside-power, advanced-packaging, radiation, redundancy, reliability]
 created: 2026-08-10
-updated: 2026-10-03
+updated: 2026-10-04
 sources: [2026-09-27_wuhanuniv_cn121548325a-tgv-micro-nano-anchor-molecular-bridging, 2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-27_semieng_chip-week-156-india-tata-besi-izmo, 2026-04-22_semieng_tsv-complexity-manufacturing-bottleneck, 2026-08-21_semieng_chip-week-152, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-08-21_scirep_copper-oxide-reduction-ar-h2-pulsed-plasma, 2026-06-08_irtnanoelec_d2w-hybrid-bonding-1um-pitch, 2026-03-13_kaneka_jp2026047137a-glass-core-polyimide-quantified, 2026-08-10_screp_low-k-organic-buffer-tgv-cu-metallization, 2026-08-04_jmrt_vacuum-assisted-void-free-cu-fill-tgv, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring, 2026-09-26_patent_zhuhai-tiancheng-dual-depth-tsv-silicon-bridge, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_patent_er-eng-glass-interposer-dual-carrier, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth, 2026-10-02_epo_semco-cn122054433a-glass-surface-roughness, 2026-10-02_trendforce_intel-microled-glass-24-layer, 2026-10-02_imaps-dpc2026_defect-free-coplanar-copper-via-fill, 2026-10-02_microrel_tudelft-google-3dic-fa-hardware]
 related:
   - wiki/technologies/hbm4.md
@@ -696,3 +696,49 @@ TU Delft × Google（2026-07-03）：以 **~210 µm interposer pin pitch** 的 D
 ### 相關來源
 
 [[sources/2026-10-03_epo_intel-partial-liners-tgv]]、[[sources/2026-10-03_epo_intel-polymer-tgv-buffer]]、[[sources/2026-10-03_thelec_philoptics-tgv-2mm-glass]]、[[sources/2026-10-03_digitaltoday_jntc-tgv-thickness-lineup]]
+
+## [2026-10-04] 第三道微縮天花板：應力。「不是製程做不到，是應力管不住」
+
+### ⭐⭐⭐ 1. Cu 晶粒結構使有效彈性模數變異 2 倍
+
+| 項目 | 值 |
+|------|-----|
+| TSV 直徑 | **3 µm**（⚠ 依文義補回之推定值，須取全文確認） |
+| 退火 | **400 °C / 60 min**（同上註） |
+| Cu out-of-plane 有效模數隨晶粒結構的變異 | **2 倍** |
+| Si 平均殘留應力 | **隨 Cu 的 out-of-plane 有效模數上升**；影響**隨距 TSV 距離遞減** |
+| 殘留應力絕對值（MPa） | **未給** ⚠ |
+| 量測方法 | **Raman**（Si 應力成像）+ **EBSD**（Cu 晶粒 → 有效模數） |
+
+來源：Purdue × UCLA，[[sources/2026-10-04_openalex_purdue-cu-microstructure-tsv-stress]]
+
+### ⭐⭐⭐ 2. 新增第三道微縮天花板
+
+- 本頁既有兩道天花板為**微影**與**電遷移**（與 [[technologies/rdl]] 共用）。
+- 本輪新增**第三道：應力**。機制為 **TSV 越小，grain-to-via diameter ratio 越大，微結構效應越被放大** —— 一個**與微縮方向相反**的放大效應。
+- ⭐⭐⭐ **關鍵對照**：設備端已能做 **3 µm**（[[entities/applied-materials]] Nokota VMax 2 ECD **TSV <3 µm / AR >10:1**），而可靠度端的物理**正是在 3 µm 開始惡化**。
+  ➜ **論述：這道天花板不是「製程做不到」，而是「應力管不住」。** 這是本 wiki 第一道性質如此的天花板。
+
+### ⭐⭐⭐ 3. 新橫向論述（跨材料域）
+
+- 既有論述「**TGV 的失效在界面與孔緣，不在材料本體**」出自 AMAT 的玻璃案例。
+- 本篇是**矽側的鏡像結果**：應力集中在孔周圍且隨距離遞減。
+- ➜ **貫穿孔（TSV 或 TGV）的可靠度問題本質上是「孔與周圍材料的界面應力場」問題，與基材是矽或玻璃無關。** 兩個獨立材料域、兩個獨立來源。
+
+### ⭐⭐ 4. 把 [[entities/absolics]] 的請求項接上物理機制
+
+- 2026-09-21 收錄的 Absolics 請求項之一為**上下 RDL 銅晶粒長寬比之比 C/D 0.85–0.99**，當時本 wiki 無法解釋為何晶粒長寬比值得寫進請求項。
+- 本篇給出機制：**銅是彈性異向性材料；晶粒取向 → 有效模數 → 施加於周圍材料的殘留應力。Absolics 管制的是上下不對稱所導致的彎矩。**
+- ➜ **本 wiki 首次能把一件專利的請求項與一篇論文的物理機制接成因果鏈。**
+- ⚠ 兩者材料系統不同（Si/TSV vs 玻璃/RDL）：**機制類比成立，數值不可互借。**
+
+### ⭐⭐ 5. 既有空缺「TGV 陣列力學數值」的方法論部分
+
+- 該空缺的最新形式為「需要**有／無 liner** 的對照值，否則無法分辨量到的是玻璃本體還是界面」。
+- 本篇示範的 **Raman + EBSD 雙量測組合**正是取得該對照值所需的方法 ➜ 列為方法論參考。
+
+### ⚠ 新空缺
+
+- **殘留應力絕對值（MPa）** —— 本篇最有價值的缺口，且 **OA 全文可取（Wiley pdfdirect）**，依 2026-10-03 作業規範（26）**列下輪取全文第一順位**（同時確認 3 µm / 400 °C 推定值）。
+- 未說明 via-middle 或 via-last，未給 AR。
+- 「模數變異 2 倍」是量測範圍或理論極值（Cu <111> vs <100>），摘要未分辨。

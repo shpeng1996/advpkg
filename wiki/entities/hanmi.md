@@ -3,7 +3,7 @@ title: "한미반도체 / Hanmi Semiconductor（韓美半導體）"
 category: entity
 tags: [Hanmi, TC-bonder, hybrid-bonding, HBM, HBF, equipment, Korea]
 created: 2026-09-22
-updated: 2026-09-23
+updated: 2026-10-04
 sources:
   - 2026-04-10_semiconductor-digest_hanmi-2nd-gen-hybrid-bonder
   - 2025-10-07_trendforce_hybrid-bonder-market-2b-2028
@@ -103,3 +103,16 @@ Hanmi 在 TC bonder 是市場領先者（SK hynix 大單、HBF 軌首批交付�
 **本輪反例**：**Besi 2026 年的兩件專利同樣集中在機台自身的感測與定位**（WO2026182734A1 液相焊料表面張力測接合品質、WO2026192456A1 可移動定心銷），**而 Besi 的量產實績遠領先同業。**
 
 ➜ ⭐⭐ **「專利偏機台工程層」不可推論為「技術落後」。** 原記載的兩項觀察應**拆開**：「公開具體度落後」仍成立（Hanmi 未揭露任何對準精度或吞吐量）；「專利偏機台工程層」**不再作為佐證**。
+
+## [2026-10-04] ⭐⭐⭐ 時程矛盾解除：~2029 量產採用與 SK hynix 的 HBM5 口徑一致
+
+- 本頁既載：混合接合機**第二代原型 2026 年底、廠房 2027 上半（₩100B／Class 100）、量產採用 ~2029**。
+- 2026-09-22 列管的空缺為：「**若 HB 確於 2027 年底導入（HBM4E），該世代機台由誰供應？Hanmi 是否缺席整個世代？**」
+- 本輪 [[entities/sk-hynix]] 的表態（2026-09-01）：**HB 不會在 HBM4E 就緒，最早 HBM5**；**Counterpoint Research 預期全面量產 2029–2030**。
+- ➜ ⭐⭐⭐ **空缺結清：Hanmi 的 ~2029 不是落後，而是與客戶的實際導入時點對齊。** 原空缺所假設的「HBM4E 於 2027 年底導入 HB」前提**不成立**，因此「Hanmi 缺席整個世代」的疑問消失。
+- ⚠ **但本頁既載的另一條論述不變**：「**TC bonder 的領先並未轉移到混合接合（相鄰技術落後約三年）**」—— 本輪未取得新證據，維持原狀。
+- ⚠ 並：**SK hynix 2026-03 的第一張量產 HB 設備訂單（單一 inline、約 USD 15M）由誰取得，本輪未揭露** ➜ **新空缺：該訂單是否為 Hanmi、[[entities/hanwha-semitech]]、[[entities/besi]] 或 [[entities/asmpt]]。** 這決定韓系供應商在 HBM5 世代的實際位置。
+
+### 相關來源
+
+[[sources/2026-10-04_ninescrolls_skhynix-hb-hbm5-775um]]

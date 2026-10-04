@@ -3,7 +3,7 @@ title: "混合接合 / Hybrid Bonding"
 category: technology
 tags: [3D, hybrid-bonding, Cu-Cu, SoIC, ECTC, advanced-packaging, DRAM, COP, 4F2, Sn-damascene, damascene-interconnect, PFAS-free, patent-signal, guard-ring, surface-activation]
 created: 2026-04-24
-updated: 2026-10-03
+updated: 2026-10-04
 sources: [2026-09-27_paper_binghamton-ibm-pad-scaling-resistance-variability, 2026-09-27_intel_us20260223702a1-direct-bonding-embedded-bridge-organic-cavity, 2026-05-21_semiecosystem_ectc2026-cpo-hybridbonding-plp, 2026-04-24_initial-survey, 2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-03-01_3dincites_besi-packaging-power-shift, 2026-01-13_semiengineering_hbm4-microbumps, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-19_semieng_advanced-packaging-limits, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-03-27_3dincites_copper-grain-hybrid-bonding, 2026-03-02_semieng_making-hybrid-bonding-better, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2026-04-29_semiwiki_cea-leti-ectc2026-hybrid-bonding, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2024-02-09_semianalysis_hybrid-bonding-process-flow, 2026-05-19_semiconductor-digest_ev-group-ectc2026-hybrid-bonding, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-04-19_semiwiki_apple-m5-cucu-hybrid-bonding-shipped, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-18_imec_iii-v-chiplet-rf-laser-bonding, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-29_evgroup_ectc2026-hybrid-bonding-layer-transfer, 2026-06-29_thelec_skhynix-hybrid-bonding-equipment-order, 2026-06-05_semieng_intel-ectc-2026-emib-t-cpo-glass, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-14_trendforce_samsung-hbm-hiring-hybridbonding, 2026-07-16_semieng_fine-pitch-hb-high-volume, 2026-07-16_semieng_alt-materials-hybrid-bonding, 2026-06-08_irtnanoelec_d2w-hybrid-bonding-1um-pitch, 2026-05-28_imec_w2w-hybrid-bonding-200nm-pitch, 2026-09-09_acsaelm_microwave-anneal-cu-cu-150c-3min, 2026-08-21_scirep_copper-oxide-reduction-ar-h2-pulsed-plasma, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-03-29_damnang_hybrid-bonding-cmp-gating-factor, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-04-02_adeia_us20260096463a1-buildup-organic-dielectric-bonding, 2026-07-17_jcet_cn122421815a-asymmetric-bonding-interface, 2026-04-30_seoultech_us20260123559a1-hydrocarbon-plasma-low-temp-bonding, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer, 2023-09-13_nccavs_intel-cmp-dishing-requirement-vs-achieved, 2026-03-11_epo_adeia-cmp-for-hybrid-bonding-patent, 2026-09-01_chip_ru-bpr-ntsv-ion-beam-recess, 2026-02-10_epo_shanghai-univ-citric-acid-cu-reduction-sog, 2026-09-21_semiconductorx_cmp-share-lam-sabre-correction, 2026-09-16_jsandwich_cucu-diameter-nonmonotonic-local-optimum, 2026-07-21_lam_sabre-3d-is-ecd-not-cmp, 2026-09-26_paper_dalian-cucu-bonding-review, 2026-09-26_patent_beijing-xinli-hybrid-bonding-dishing-activation, 2026-09-26_paper_ibm-amine-post-cmp-clean, 2026-10-02_bitschips_besi-q1-2026-hybrid-bonding-orders, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_adeia-us20260247631a1-dual-sided-connecting-element]
 related:
   - wiki/technologies/rdl.md
@@ -2054,3 +2054,50 @@ SemiAnalysis ECTC 2026 綜整（2026-07-02）另給出三個降溫／細間距�
 ### 相關來源
 
 [[sources/2026-10-03_imaps_plasmatreat-cuox-reduction-queue-time]]、[[sources/2026-10-03_semieng_custom-hbm-business-model]]、[[sources/2026-10-03_imaps_hydrozone-ozone-resist-strip]]
+
+## [2026-10-04] 三項更新：HB 推遲到 HBM5、熱阻量化、載體擴張至面板
+
+### 1. ⭐⭐⭐ SK hynix 把混合接合推遲到 HBM5（口徑收斂）
+
+- **原記載**「HBM HB 延後至 HBM4E/HBM5（2027 年底起）」**應收斂為「最早 HBM5」**。依據：SK hynix 2026-09-01 表態（[[sources/2026-10-04_ninescrolls_skhynix-hb-hbm5-775um]]）。
+- **Counterpoint Research：HB 全面進入 HBM 量產 2029–2030。**
+- **2026-03 SK hynix 下第一張量產 HB 設備訂單**：單一 inline 系統、**約 ₩200 億／USD 15M**（wiki 首見的 HB 量產機台單機價格量級）。
+- ⚠ **Samsung 2025-05 曾宣示 HBM4 採混合銅接合** ➜ 三雄在「HB 何時導入」上分歧，與既有「16-Hi 層數分歧」構成**第二個同世代分歧**。
+
+### 2. ⭐⭐⭐ HB 的效益首次量化在熱軸與厚度軸
+
+| 項目 | 值 | 性質 |
+|------|-----|------|
+| 熱阻改善（vs MR-MUF） | **約 −35%** | ⚠ projected，非量測；量測邊界未界定 |
+| 同 Z 高度下核心晶粒可增厚 | **+24%**（20-Hi 情境） | — |
+| HB 後 bump pitch | **< 18 µm**（vs MR-MUF 約 30 µm） | — |
+| 退火溫度 | **> 200 °C** | — |
+
+➜ ⭐⭐⭐ **論述修正：HB 的真正賣點是「厚度預算的再分配」，不是單純 pitch 微縮。** 775 µm 上限（HBM3E 以前 720 µm；20-Hi 討論值 825–900 µm）之下，HB 省下的接合層厚度**還給矽**。
+
+### 3. ⭐⭐⭐ 混合接合的載體自 wafer 擴張到 panel（DoP）
+
+- AMAT × Besi 的 **EPIC Center**（矽谷，總投資 **USD 5B**，**2026-10-12 啟用**）明列四個平台方向：**DoW / DoD / DoP（die-on-panel）** 與 CPO 互連。
+- ➜ **既有 W2W／D2W／D2D 三情境框架全部以晶圓為載體；DoP 在設備商平台命名層級把 panel 列為第四種載體**，使本頁與 [[technologies/foplp]] 兩條此前平行的線首次交會。
+- ⚠ **僅有平台名稱：無面板尺寸、無對準規格、無時程、無客戶** ➜ 記為**訊號**，不得表述為「已可在面板上做混合接合」。
+
+### 4. ⭐⭐⭐ 表面製備：「電漿是唯一／最佳路徑」已有三個獨立來源質疑
+
+| 來源 | 手段 | 立場 |
+|------|------|------|
+| 上海大學 CN121511008A（2026-09-21） | 檸檬酸**濕式**還原 | 主張 Ar/H₂ 電漿**本身不足**以還原 Cu 氧化物 |
+| Plasmatreat（2026-10-03） | **保留電漿**，量化有效窗 | Cu/O 1.30@1h → 0.94@4h → 0.73@12h（未處理基準 0.69）⇒ 有效窗約 1–4 h |
+| **KITECH（2026-10-04，本輪）** | **葡萄糖蒸氣氣相還原**，接合腔內原位 | **明文宣告取代電漿前處理**；250 °C / 10 MPa / 低真空 |
+
+- ➜ **新論述候選：「電漿是混合接合表面製備的唯一／最佳路徑」這個隱含前提，現有三個獨立來源質疑**，與 [[entities/applied-materials]] 的 Insepra™ SiCN 平台構成張力。
+- ➜ ⭐⭐⭐ **「合格狀態有保存期限」（2026-10-03 新立）取得反例類型：** KITECH 的原位除氧**讓等待不再重要**（結構性解），Plasmatreat 的 queue time 是**縮短等待**（管理性解）。**論述不被推翻，但適用範圍須加限定：僅適用於「表面處理與接合分離」的流程。**
+- ⚠ KITECH 省掉的是**步驟，不是熱**（250 °C 並不低）；無良率／強度／電阻數據；未給 Cu/O 比，**無法與 Plasmatreat XPS 表同口徑比較**。
+- ⚠ **新空缺：葡萄糖在 250 °C 下的碳殘留**（糖類熱解）完全未提 —— 該路線進產線的第一個疑問。
+
+### 5. ⚠ EVG 設備線盤點（非新數據）
+
+- [[sources/2026-10-04_chipletmarketplace_evg-semicon-west-2026]]：**<40 nm post-bond overlay（300 mm 上 100% 晶粒）、200 nm Cu pitch 兩個數字本頁已有**（Imec/EVG ECTC 2026），本輪為同一組數字在 SEMICON West 的重述。新增價值僅在機種盤點：**EVG®40 D2W（D2W overlay 量測獨立成機種）**、EVG®850 TB/DB（超薄 ASIC 堆疊薄化）、IR LayerRelease™（紅外層轉移）、LITHOSCALE® XT（無光罩、宣稱 stitch-free）。
+
+### 相關來源
+
+[[sources/2026-10-04_ninescrolls_skhynix-hb-hbm5-775um]]、[[sources/2026-10-04_thelec_amat-besi-epic-center-dop]]、[[sources/2026-10-04_openalex_kitech-glucose-vapor-cu-oxide-reduction]]、[[sources/2026-10-04_chipletmarketplace_evg-semicon-west-2026]]

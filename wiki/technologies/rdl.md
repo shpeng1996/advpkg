@@ -3,7 +3,7 @@ title: "RDL — 重分佈層 / Redistribution Layer"
 category: technology
 tags: [RDL, SAP, dual-damascene, embedded-trace, ETR, polyimide, FPIM, CMP, electromigration, panel-level, pad-less-via]
 created: 2026-09-26
-updated: 2026-10-03
+updated: 2026-10-04
 sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2026-09-27_paper_purdue-ru-cu-em-lifetime-blacks-n-0154, 2026-09-27_paper_copper-interconnect-scaling-roadmap-lines-per-mm, 2026-09-26_article_taiyo-imec-700nm-damascene-rdl, 2026-09-26_article_imec-1um-damascene-rdl-2019-anchor, 2026-09-26_article_amkor-embedded-trace-rdl, 2026-09-26_paper_asi-1um-hdbu-substrate, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-25_paper_dnp-glass-rdl-electromigration-lifetime, 2026-09-25_paper_cornell-glass-on-glass-sio2-rdl, 2026-09-25_paper_asu-molded-core-substrate-warpage, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_shanghai-xianfeng-cn122622683a-glass-interposer-bridge, 2026-10-02_imaps-dpc2026_defect-free-coplanar-copper-via-fill]
 related:
   - wiki/technologies/foplp.md
@@ -498,3 +498,57 @@ IMAPS DPC 2026（`10.4071/001c.167760`，OA 全文已解析）：
 ### 相關來源
 
 [[sources/2026-10-03_epo_semco-coreless-interposer-organic-bridge]]、[[sources/2026-10-03_imaps_deca-panel-level-fanout-qfn]]、[[sources/2026-10-03_imaps_ohmega-ticer-embedded-thin-film-resistors]]
+
+## [2026-10-04] 圖案化路線自三條擴為四條；第一個「繞過平坦度」而非「改善平坦度」的路線
+
+### ⭐⭐⭐ 1. 第四條圖案化路線：全加法免光罩直寫（EHD）
+
+| 路線 | 性質 | 步驟數 |
+|------|------|--------|
+| SAP | 半加成 | — |
+| dual damascene | 減法（CMP） | 基準 |
+| **Amkor ETR** | 嵌入式佈線 | **比 damascene 少 40%** |
+| **全加法免光罩 EHD 直寫（Scrona，本輪新增）** | **完全不含減法步驟** | **未給**（⚠ 缺口） |
+
+- 本篇給出可同口徑比較的基準：**傳統微影／減法路線 20+ 道步驟**（ETR 若以 20 步為基準即約 12 步）。
+- 已演示能力：**直寫光阻 < 10 µm**（省 spin-coat／曝光／顯影）、**直寫種子層 < 2 µm**（省 blanket plating／蝕刻）、MOD／奈米顆粒墨水直接金屬化。
+- ⚠ **平台宣稱「sub-micron」與已演示值相差一個數量級以上** ➜ **本 wiki 引用時只採 <10 µm / <2 µm。**
+
+### ⭐⭐⭐ 2. 第一個主張「繞過平坦度要求」的路線
+
+本 wiki 最長的一條限制鏈此前全部指向**改善平坦度**：
+
+- 混合接合限制鏈第①層 = **表面平坦度 ~0.2 nm**（2026-09-19 結清）。
+- FOPLP／面板的翹曲與 **debonding 階段**峰值（2026-09-22）。
+- 有機基板「**每邊超過約 120 mm 即失去可用平坦度**」（2026-10-03，ABF 一手整理）。
+
+Scrona 明文把「嚴格的基板平坦度要求」指認為**傳統微影路線的前提**，並宣稱本路線不需要（可在 **2.5D/3D 形貌上順形印刷**，跨階、孔、溝槽）。
+
+➜ ⭐⭐⭐ **2026-09-22 論述「當某製程規格難度陡升時，業界的第二條路不是改進該製程，而是把設計移到規格較鬆的區間」的第三例，且是唯一把規格整個移除而非放寬者。**（既有兩例：珠海天成以 AR ≤10 模封銅孔 + TCB 規避混合接合；面板圖案化的粗快／細慢分工。）
+
+### ⭐⭐⭐ 3. 垂直互連的新拓撲：沿側壁爬升
+
+- 既有垂直互連手段**全為「孔＋填充」**（TSV／TGV／studs／周界垂直互連）。
+- Scrona 提出**沿晶粒垂直側壁導引液滴**，以及**跨越樹脂填充溝槽連接鄰接晶粒**。
+- ➜ 後者在功能上**就是一座橋，但不含任何橋元件** ⇒ 「橋的維度」軸新增**第十五個維度：橋是否為實體元件**（見 [[technologies/emib]]）。
+
+### ⭐⭐ 4. 新論述候選：面板級圖案化正從「縮光罩」轉向「不用光罩」
+
+本輪起已有**四個獨立供應商**：
+
+1. **Scrona** EHD 直寫（本輪）
+2. **[[entities/ev-group]] LITHOSCALE® XT**（本輪，無光罩曝光 MLE™，宣稱 **stitch-free patterning**）
+3. **Deca Adaptive Patterning**（2026-10-03，MDQFN 600 mm 面板、免光罩）
+4. **CFMEE PLP 2000** 直寫微影 2 µm（2026-07-07，510×515 mm）
+
+- ⭐ 其中 **LITHOSCALE XT 的「stitch-free」是本 wiki 第一個「以無光罩曝光消除面板拼接」的宣稱**（⚠ 無量化）。
+
+### ⚠ 缺口
+
+- Scrona 自身的**步驟數**未給 ➜ 無法完成 SAP / damascene / ETR / EHD 四方比較。
+- **印刷式種子層的附著力與電遷移完全未觸及**，而本頁第二道天花板正是電遷移。
+- Scrona 為**供應商自述的會議發表**，無良率、無可靠度、無吞吐絕對值 ➜ 不得作為路線可行性的結論性依據。**OA 全文可取（imapsource.org），列下輪取全文項。**
+
+### 相關來源
+
+[[sources/2026-10-04_openalex_scrona-maskless-additive-ehd-rdl]]、[[sources/2026-10-04_chipletmarketplace_evg-semicon-west-2026]]、[[sources/2026-10-04_epo_deca-fully-molded-bridge-interposer]]

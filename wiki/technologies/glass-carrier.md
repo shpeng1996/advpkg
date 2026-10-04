@@ -3,7 +3,7 @@ title: "玻璃載板與玻璃核心的邊界工程 / Glass Carrier & Glass Core 
 category: technology
 tags: [glass-carrier, glass-substrate, panel-level, debonding, edge-strength, CTE, warpage, TGV]
 created: 2026-09-28
-updated: 2026-09-28
+updated: 2026-10-04
 status: new
 related:
   - wiki/technologies/glass-substrate.md
@@ -92,3 +92,30 @@ related:
 - [[sources/2026-09-28_paper_resonac-chemical-resistant-dicing-tape-hybrid-bonding]]
 - [[sources/2026-09-28_semieng_chip-week-157-imec-3d-dram-yole-51b]]（Brewer Science）
 - 2026-09-26 LPKF×Fraunhofer IZM；2026-09-25 ASE／JCET 玻璃載板條目（見 `glass-substrate.md`）
+
+## [2026-10-04] debonding 的第五與第六個實例；載體層的「順從」選擇
+
+### ⭐ 1. 「真正的瓶頸在被視為輔助步驟的那一步」—— 實例擴至六
+
+| # | 實例 | 來源 |
+|---|------|------|
+| 1 | CMP 後清洗 | NineScrolls（2026-09-22） |
+| 2 | debonding（FOPLP 翹曲峰值） | 2026-09-22 |
+| 3 | 雷射剝離材料 | 既有 |
+| 4 | [[entities/resonac]] 耐化學切割膠帶（唯一量化者） | 2026-09-28 |
+| **5** | **載體移除（carrier removal）寫入 OSAT 請求項** | **JCET Korea TW202612031A（本輪）** |
+| **6** | **IR LayerRelease™（紅外雷射層轉移）成為獨立機種** | **[[entities/ev-group]]（本輪）** |
+
+- ➜ **debonding 已有第三家設備商投入**（既有 EVG 之外的兩家見前輪紀錄），且**首次出現在 OSAT 的請求項層級**。
+- ⚠ 兩者皆**無量化**（IR LayerRelease 僅稱「奈米級精度」）。
+
+### ⭐⭐⭐ 2. 載體／基板層的「約束 vs 順從」：Intel 在這一層選的是順從
+
+- 2026-09-28 既載：**Intel 框 CTE<11，可由框材料 + 銅百分比調節**，是第一個把調節手段放在玻璃之外的。
+- 本輪 **Intel US20260005081A1** 把該框**具名為聚醯亞胺** —— 一個 **CTE 遠高於玻璃、模數遠低於玻璃**的**順從型**材料。
+- ➜ 與 2026-10-03 新立的「約束 vs 順從」框架（DELO 光學膠 **6,300 MPa / Tg 202 °C / CTE 37 ppm/K / 伸長率 1.0%** vs DSC 封膠 **10 MPa / Tg −40 °C / CTE >100 ppm/K / 伸長率 90%**，模數差 **630 倍**）同型：**Intel 在載體層選的是順從。**
+- ⭐ 發明人 **HEATON THOMAS S 第三次出現**（前兩次為 2026-10-03 的 Intel TGV 部分襯層與聚合物緩衝層）➜ 其涉及範圍自**孔界面**擴大到**基板架構**，強化「多路線並進而非路線更替」的證明。
+
+### 相關來源
+
+[[sources/2026-10-04_epo_jcet-korea-double-sided-bridge]]、[[sources/2026-10-04_chipletmarketplace_evg-semicon-west-2026]]、[[sources/2026-10-04_epo_intel-hybrid-glass-organic-substrate]]

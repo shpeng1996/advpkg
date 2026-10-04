@@ -3,7 +3,7 @@ title: "Adeia / Adeia Semiconductor Technologies"
 category: entity
 tags: [IP-licensing, hybrid-bonding, DBI, bridge, Uzoh, patent]
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-04
 sources: [2026-10-02_epo_adeia-us20260247631a1-dual-sided-connecting-element]
 related:
   - wiki/technologies/hybrid-bonding.md
@@ -51,3 +51,15 @@ related:
 - [ ] ⭐⭐⭐ 具名被授權方與授權條件（本 wiki 無任何一手來源）
 - [ ] ⭐⭐ US20260247631A1 的「雙側橋」是容錯還是頻寬倍增；上側橋對 TTV／共平面性的額外要求
 - [ ] ⭐⭐ Adeia 是否有給出 pitch 數值的其他家族成員（下輪以 `pa="adeia"` 單獨檢索，並依 2026-09-30 作業規範（23）複核）
+
+## [2026-10-04] ⭐⭐⭐ 「側（sidedness）」自單一來源升格為成立論述
+
+- 本頁既載：**US20260247631A1**（處理器與記憶體橫向並置，**上下各一枚連接元件**）為「橋的維度」軸第十個維度「**側（sidedness）**」的來源，發明人含 **Cyprian Emeka Uzoh**。收錄時為**單一來源**。
+- 本輪取得第二個獨立實例：**[[entities/jcet]] STATS ChipPAC Korea TW202612031A** —— **OSAT 量產製程團隊**，且兩面接點做在**同一顆橋晶粒**上（Adeia 是上下各一枚**獨立**元件）。
+- ➜ ⭐⭐⭐ **兩個獨立來源、兩種完全不同的商業模式（IP 授權公司 vs OSAT）** ➜ 依本 wiki 慣例**自候選升格為成立論述**，且形式收斂為更強的版本：**單一橋元件本身可以雙面出接點。**
+- ⭐ 這也為本頁既載的「**不製造，其專利不預示任何量產時程**」提供一個對照：**同一個技術概念，由 OSAT 提出時帶有具體製程順序（ETS：橋先上載體 → 建 RDL → 移除載體 → 貼晶粒），由 Adeia 提出時只有結構。** ➜ **兩者合讀才構成「可實施」的完整圖像** —— 這是本頁「授權對象空白」這個空缺的一個間接線索（⚠ 不得據此推論 JCET 為其被授權方）。
+- ⚠ 本頁既有空缺（授權對象、專利組合規模、到期時程）**本輪全部未推進。**
+
+### 相關來源
+
+[[sources/2026-10-04_epo_jcet-korea-double-sided-bridge]]

@@ -3,7 +3,7 @@ title: "JCET（江蘇長電科技）"
 category: entity
 tags: [OSAT, China, 3D-packaging, CPO, AI-power-modules, advanced-packaging, Shanghai]
 created: 2026-06-22
-updated: 2026-09-25
+updated: 2026-10-04
 sources: [2026-06-07_digitimes_jcet-3d-packaging-cpo-plant, 2026-06-26_semieng_chip-week-144, 2026-07-29_trendforce_china-advanced-packaging-new-capacity-wave, 2026-08-21_semieng_chip-week-152, 2026-07-17_jcet_cn122421815a-asymmetric-bonding-interface]
 related:
   - wiki/concepts/advanced-packaging-market.md
@@ -148,3 +148,28 @@ US20260239928A1 的邏輯與本 wiki 2026-09-16 對 ASE 的觀察同型：**OSAT
 ⚠ **專利是訊號不是事實**：不得陳述為已導入之量產載板規格。摘要**無任何量化值**（無溝槽深度／寬度／面積比、無翹曲改善量、無載板尺寸厚度）。
 ⚠ **CN 案，未見 EP/US 同族公開** ➜ 依 2026-09-23 對 KR 優先案之處置原則，**不應據此推論國際布局意圖，亦不應解讀為訊號偏弱。**
 📌 既有空缺延續：**JCET 韓國團隊（原 STATS ChipPAC Korea）的產能與客戶**，本輪無進展。
+
+## [2026-10-04] TW202612031A：韓國團隊的第四件案件，雙面橋晶粒
+
+- 公開 **2026-03-16**，family **97383989**；申請人 **JCET STATS CHIPPAC KOREA LTD [KR]**（原 STATS ChipPAC Korea）；發明人 LEE SEUNG-HYUN、YUN YEO-JUN、LEE HEE-SOO。
+- 請求項：橋晶粒**第一面與相對的第二面各有接點**；橋置於載體上 → 第一導電層／第一絕緣層 → 開孔 → 第二導電層耦接第一面接點 → **移除載體** → 晶粒耦接第一導電層與橋的**第二面**接點。
+- ⭐⭐⭐ **「側（sidedness）」維度的第二個獨立實例，且來自完全不同的商業模式。** 第一例為 [[entities/adeia]]（**IP 授權公司**，上下各一枚獨立連接元件）；本件來自 **OSAT 量產製程團隊**，且兩面接點做在**同一顆橋晶粒**上 ➜ 論述收斂為更強形式：**單一橋元件本身可雙面出接點**，自候選**升格為成立論述**。
+- ⭐⭐⭐ **製程順序為 ETS／嵌入式扇出（橋先上載體、建 RDL、移除載體、再貼晶粒），不是 EMIB 的「橋先埋進基板」** ➜ 同一個「橋」概念在**兩種截然不同的製造順序**下各自取得排他權，支持 2026-10-03 的「橋是一個可替換插槽」讀法：**不只位置可替換，生成插槽的製程順序也可替換。**
+- ⭐ **載體移除再次出現在請求項層** ➜ [[technologies/glass-carrier]] 的「debonding 是輔助步驟中的真瓶頸」取得**第五個實例**（本件為 OSAT 側）。
+
+### ⭐⭐ 空缺改述：韓國團隊與江陰團隊的技術分工
+
+- 2026-09-17 列管的空缺原為「三件專利的技術層級與江陰廠的 AI 電源模組定位落差極大，需要獨立佐證其量產能力」。
+- 本件為該團隊**第四件**入庫案件，技術層級**再度落在先進橋接而非電源模組**。
+- ➜ **改述：落差不是抽樣誤差，而是穩定的事實 —— JCET 的韓國團隊（先進橋接／ETS）與江陰團隊（AI 電源模組、CPO、3D 封裝廠）在技術軸上分工明確。**
+- ⚠ **產能與客戶仍完全空白，空缺維持開啟。**
+
+### ⚠ 查證項
+
+- **未揭露是否含 TSV。** 若雙面接點不經 TSV 連通，本件與 Intel CN122349366A（免 TSV 橋）**同向**；若含 TSV 則**方向相反**。**這一點決定本件的解讀，列下輪查證第一順位。**
+- 「double-sided」的第二面接點**如何在 RDL 建構過程中保持可接取**未揭露 —— 本件核心製程難點。
+- 無量化值。專利為前瞻訊號。
+
+### 相關來源
+
+[[sources/2026-10-04_epo_jcet-korea-double-sided-bridge]]
