@@ -3,7 +3,7 @@ title: "Besi (BE Semiconductor Industries) — 混合接合設備領導廠商"
 category: entity
 tags: [equipment, hybrid-bonding, die-attach, D2W, TCB, Netherlands]
 created: 2026-04-25
-updated: 2026-10-04
+updated: 2026-10-05
 sources: [2026-09-27_semieng_chip-week-156-india-tata-besi-izmo, 2026-03-01_3dincites_besi-packaging-power-shift, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-03-29_damnang_hybrid-bonding-cmp-gating-factor, 2026-10-02_bitschips_besi-q1-2026-hybrid-bonding-orders, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo]
 related:
   - wiki/entities/ev-group.md
@@ -221,3 +221,15 @@ Bits&Chips（2026-04-23，作者 Paul van Gerven）：
 ### 相關來源
 
 [[sources/2026-10-04_thelec_amat-besi-epic-center-dop]]
+
+## [2026-10-05] Kynex 的「1 小時內」與 EPIC Center 的雙重身分
+
+- ⭐⭐⭐ **AMAT–Besi Kynex 走完全部混合接合製程「1 小時內」，對照單機串接「最長 10 小時」**（約 10×）。⚠⚠ **口徑未界定，不得換算為 die/hr，不得與既載 1,600–2,000 die/hr 或 100 nm @ 3σ 並列。** ⚠ 「Kynex」與既載「Kinex」拼寫不一致，待官網複核。
+  - ➜ **使本公司的競爭論述新增一條：護城河有一部分在搬運與排程（叢集整合），不只在接合頭。** 詳見 [[technologies/hybrid-bonding]]。
+- ⭐⭐ **Besi 列入 AMAT EPIC Center 的參與夥伴名單**（與 Kioxia 同批新增，2026-10-02）⇒ **與 AMAT 的關係自「被持股 9%」擴為「資本 + 研發雙層」。**
+- ⭐⭐ **競爭對手側動態**：[[entities/hanwha-semitech]] 以**多供應商拼裝叢集**（Cymechs EFEM／自有電漿活化／Zeus 清洗／自有接合機）於 **2026-04** 交付 SK hynix；業界推估同級 **Kynex 系統 ₩150–200 億**（非揭露值）。
+  - ➜ **本 wiki 首次有 Besi 整合平台的價格量級參照，以及第一個明確以「叢集 vs 叢集」競爭的對手。**
+
+### 相關來源
+
+[[sources/2026-10-05_thelec_hanwha-shb2-nano-cluster]]、[[sources/2026-10-05_semieng_wir158-semco-fcbga-hbm-wafer-share]]

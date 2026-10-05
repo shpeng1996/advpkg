@@ -3,7 +3,7 @@ title: "한미반도체 / Hanmi Semiconductor（韓美半導體）"
 category: entity
 tags: [Hanmi, TC-bonder, hybrid-bonding, HBM, HBF, equipment, Korea]
 created: 2026-09-22
-updated: 2026-10-04
+updated: 2026-10-05
 sources:
   - 2026-04-10_semiconductor-digest_hanmi-2nd-gen-hybrid-bonder
   - 2025-10-07_trendforce_hybrid-bonder-market-2b-2028
@@ -116,3 +116,16 @@ Hanmi 在 TC bonder 是市場領先者（SK hynix 大單、HBF 軌首批交付�
 ### 相關來源
 
 [[sources/2026-10-04_ninescrolls_skhynix-hb-hbm5-775um]]
+
+## [2026-10-05] 2026-03 那張 HB 訂單出現強候選（但未結清）
+
+- ⭐⭐⭐ **本頁 2026-10-04 新立之空缺「SK hynix 2026-03 第一張量產 HB 設備訂單（單一 inline、約 ₩200 億／USD 15M）由誰取得」取得強候選：[[entities/hanwha-semitech]]。**
+  - 依據：Hanwha 的 **SHB2 Nano D2W 混合接合叢集於 2026-04 交付 SK hynix**（時點相鄰）、**客戶相同**、**形態相符**（inline／cluster）、**價格量級相符**（業界推估同級 Kynex 系統 ₩150–200 億）。
+  - ⚠⚠ **來源未稱其為該筆訂單 ⇒ 列為候選，不得斷言；空缺維持開啟。**
+- ⭐⭐ **「TC 強、HB 弱」的韓系共同模式本輪取得第一個鬆動跡象，但不在本公司**：Hanwha 同時在 TCB（HBM4 追加訂單，規模與本公司已揭露之 **₩442 億**案相當）與 HB（叢集已進客戶現場）兩軸推進。
+  - ➜ **本頁既載論述「TC bonder 的領先並未轉移到混合接合（相鄰技術落後約三年）」維持不變**，但**競爭格局須加註：同屬韓系的 Hanwha 在 HB 軸已先一步進入客戶現場。**
+- ⚠ **本輪未取得本公司任何新動態**（第二代原型 2026 年底／廠房 2027 上半／量產採用 ~2029 皆未更新）。
+
+### 相關來源
+
+[[sources/2026-10-05_thelec_hanwha-shb2-nano-cluster]]

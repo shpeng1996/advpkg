@@ -3,7 +3,7 @@ title: "TSV — Through-Silicon Via / 矽穿孔"
 category: technology
 tags: [TSV, HBM, interposer, 3D-IC, CoWoS, manufacturing, backside-power, advanced-packaging, radiation, redundancy, reliability]
 created: 2026-08-10
-updated: 2026-10-04
+updated: 2026-10-05
 sources: [2026-09-27_wuhanuniv_cn121548325a-tgv-micro-nano-anchor-molecular-bridging, 2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-27_semieng_chip-week-156-india-tata-besi-izmo, 2026-04-22_semieng_tsv-complexity-manufacturing-bottleneck, 2026-08-21_semieng_chip-week-152, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-08-21_scirep_copper-oxide-reduction-ar-h2-pulsed-plasma, 2026-06-08_irtnanoelec_d2w-hybrid-bonding-1um-pitch, 2026-03-13_kaneka_jp2026047137a-glass-core-polyimide-quantified, 2026-08-10_screp_low-k-organic-buffer-tgv-cu-metallization, 2026-08-04_jmrt_vacuum-assisted-void-free-cu-fill-tgv, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring, 2026-09-26_patent_zhuhai-tiancheng-dual-depth-tsv-silicon-bridge, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_patent_er-eng-glass-interposer-dual-carrier, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth, 2026-10-02_epo_semco-cn122054433a-glass-surface-roughness, 2026-10-02_trendforce_intel-microled-glass-24-layer, 2026-10-02_imaps-dpc2026_defect-free-coplanar-copper-via-fill, 2026-10-02_microrel_tudelft-google-3dic-fa-hardware]
 related:
   - wiki/technologies/hbm4.md
@@ -742,3 +742,13 @@ TU Delft × Google（2026-07-03）：以 **~210 µm interposer pin pitch** 的 D
 - **殘留應力絕對值（MPa）** —— 本篇最有價值的缺口，且 **OA 全文可取（Wiley pdfdirect）**，依 2026-10-03 作業規範（26）**列下輪取全文第一順位**（同時確認 3 µm / 400 °C 推定值）。
 - 未說明 via-middle 或 via-last，未給 AR。
 - 「模數變異 2 倍」是量測範圍或理論極值（Cu <111> vs <100>），摘要未分辨。
+
+## [2026-10-05] 貫穿孔的界面處置新增「以連續性取代界面」；橋內 TSV 回歸
+
+- ⭐⭐⭐ **Intel EP4739074A1（2026-05-06）：孔內導體的第二部分凸出玻璃核心表面之外，且與孔內部分表面連續（in continuity）。** ➜ **為貫穿孔的界面處置新增第三種哲學：以連續性取代界面**（既有兩種：改善附著／以緩衝層吸收應力）。**與 2026-10-04 所立之「貫穿孔的可靠度問題本質是孔與周圍材料的界面應力場，與基材是矽或玻璃無關」同向** —— 本案的處置正是讓金屬跨過界面而不中斷。詳見 [[technologies/glass-substrate]]。
+- ⭐⭐⭐ **TSMC US20260255994A1：橋晶粒內含 through substrate via，背面另有 conductive via。** ➜ **「橋的免 TSV 化」須條件化為「橋在下的拓撲」；橋在上時 TSV 回到橋內。** 這是本輪 TSV 在「橋」這個物件上的位置變化，詳見 [[technologies/emib]]。
+- ⚠ **本輪未取得殘留應力絕對值（MPa）** ⇒ 2026-10-04 所立之「第三道微縮天花板＝應力」維持原狀，**Purdue × UCLA OA 全文仍列下輪取全文第一順位。**
+
+### 相關來源
+
+[[sources/2026-10-05_epo_intel-glass-core-crack-reduction]]、[[sources/2026-10-05_epo_tsmc-bridge-die-with-tsv]]

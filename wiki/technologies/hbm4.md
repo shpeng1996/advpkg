@@ -3,7 +3,7 @@ title: "HBM4 — High Bandwidth Memory 4"
 category: technology
 tags: [memory, HBM, JEDEC, standards, AI, HPC, HBM4E, cleanroom, capacity, ISSCC2026, ZAM, HB3DM, HBM5, zHBM, HPB, FMS-2026, ECC, reliability, FIT]
 created: 2026-04-24
-updated: 2026-10-04
+updated: 2026-10-05
 sources: [2026-08-13_semieng_1mw-rack-debate-thermal, 2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor, 2026-08-10_trendforce_skhynix-chongqing-sale-global-reset, 2026-08-05_trendforce_samsung-v10-zhbm-hbm5-fms2026, 2026-07-30_trendforce_samsung-ds-q2-2026-hbm4-triple-q3, 2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-03-18_trendforce_intel-emib-malaysia, 2026-01-23_trendforce_hbm4e-samsung-skhynix-mid2026, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-01-13_semiengineering_hbm4-microbumps, 2025-12-18_trendforce_micron-capex-hbm4, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h, 2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-03-03_trendforce_sk-hynix-hbm4-tight-gaps, 2025-08-12_semianalysis_hbm-roadmap, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit, 2026-06-09_astutegroup_hbm-market-share-2026-battle, 2026-06-10_trendforce_samsung-gwangju-packaging-base, 2026-06-15_trendforce_skhynix-hbm4e-sample-timeline-pulled-forward, 2026-06-20_techtimes_skhynix-hbm4e-12layer-samples, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-27_tweaktown_hbm4-16hi-nvidia-supply-fight, 2026-06-26_semieng_chip-week-144, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-14_trendforce_samsung-hbm-hiring-hbm4-hbm4e-hbm5, 2026-07-14_trendforce_skhynix-yongin-y1-feb2027, 2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b, 2026-08-13_trendforce_samsung-skhynix-hbm4-2h-earnings-pricing, 2026-08-25_trendforce_nvidia-server-hike-hbm-price-2027, 2026-08-28_trendforce_skhynix-indiana-hbm4e-3q29-supply-2030, 2026-08-26_tomshardware_hbf-hot-chips-oxmiq-limited-usability, 2026-08-21_electronics_dual-interposer-hbm-power-integrity, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-09-09_acsaelm_microwave-anneal-cu-cu-150c-3min, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-03-29_damnang_hybrid-bonding-cmp-gating-factor, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_trendforce_cowos-l-mainstream-through-2028, 2026-10-02_microrel_tudelft-google-3dic-fa-hardware]
 related:
   - wiki/entities/sk-hynix.md
@@ -1608,3 +1608,24 @@ TU Delft × Google（2026-07-03）：PoP 中 DRAM 疊於邏輯之上造成 **EFI
 ### 相關來源
 
 [[sources/2026-10-04_ninescrolls_skhynix-hb-hbm5-775um]]、[[sources/2026-10-04_openalex_gachon-low-temperature-solders]]
+
+## [2026-10-05] HBM 的產能排擠首次量化在晶圓比例；16-Hi 48 GB 取得一手確認；WoW 不是同一級距
+
+- ⭐⭐⭐ **HBM 將吃掉 DRAM 晶圓產能的近三成。** Samsung 主管表述：**「HBM is expected to consume nearly 30% of DRAM manufacturers' wafer capacity in 2027, up from about 20% currently」** ⇒ **本 wiki 第一個把 HBM 的產能排擠效應量化在晶圓產能比例上的數字**（既有記載集中於層數、厚度、bump 數與價格）。⚠ 業者口徑，非 JEDEC 或 TrendForce 統計。
+  - ➜ **與本輪 TSMC×Winbond 一案形成因果呼應：正是因為 HBM 吃掉三成晶圓，才有「負擔不起 HBM 溢價者」的替代市場。**
+- ⭐⭐⭐ **HBM4 = 16-layer / 48 GB、base die 採 TSMC 先進邏輯製程 —— 由 [[entities/sk-hynix]] 一手確認**（TSMC Technology Symposium 2026，2026-04-23）。此前本 wiki 此一事實多倚二手報導；既載之「16-Hi 48 GB 客戶驗證中」與本一手表述一致。
+  - ➜ **對列管空缺「HBM base die 供應鏈」給出一手錨點**：**記憶體廠承認 base die 在代工廠**，且與其「記憶體與邏輯整合」願景並置（CDO 安現語）⇒ **2026-10-04 論述 16（base die 製程外移正在鬆動「誰負責堆疊」）取得來自記憶體廠自身的佐證**，而非僅由 TSMC×Winbond 的反向案例推得。
+- ⭐⭐⭐ **「代工廠在記憶體鏈中的位置不是單一的，而是依客戶議價能力而變」—— 本輪可見同一家代工廠同時扮演兩種角色：**
+  - 對 **SK hynix**：**base die 供應者**（記憶體廠自行堆疊）
+  - 對 **Winbond**：**堆疊與封裝執行者**（記憶體廠只供晶圓）
+- ⭐⭐⭐ **WoW／CUBE 與 HBM 不在同一條路線圖上，本輪首次有數字支撐。** TSMC × Winbond：**20 nm →16 nm**、容量 **1–8 Gb**、**I/O 1,024→4,096**、**頻寬 32–256 GB/s**、架構 **DRAM 在下／SoC 在上**、CUBE **2028 約佔 Winbond DRAM 業務 40%**。
+  - **與 HBM4 的 >2 TB/s @ 16,148 bumps 並列，量級差約 8–60×** ⇒ **本 wiki 不應把兩者放在同一條路線圖上。**
+  - ➜ **結清 2026-10-04 所立⭐⭐⭐空缺之前三項**（世代／容量／時程）；⚠ **客戶仍空白。**
+  - ⚠⚠ **來源為 semicone.com（本 wiki 首次使用，無其他記錄）⇒ 所有數值標為待第二來源佐證，不得升格為既載基準值。**
+- ⭐⭐ **「DRAM 在下」是本 wiki 首見的堆疊順序。** 既有 3D 記憶體全部是記憶體疊在上（HBM 堆於 base die 上、SK hynix 的 DRAM-on-logic）。➜ **新空缺：順序差異的物理後果（熱路徑、TSV 方向、哪一側承受組裝應力）本輪來源完全未觸及。**
+- ⭐⭐ **SK hynix 後續方案兩條取得一手表述**：**HBF（logic-based NAND）** 與 **3D Stacked DRAM on Logic** —— 後者與 Winbond 案的「DRAM 在下」方向相反 ⇒ **WoW 的上下順序本身是一個設計變數，本 wiki 首次有兩個相反實例可對照。** 另見 [[technologies/hbf]]。
+- ⚠ **本輪未取得 HBM 側混合接合的新時程 ⇒ 不改動 2026-10-04 結論「HB 最早 HBM5」。**
+
+### 相關來源
+
+[[sources/2026-10-05_semieng_wir158-semco-fcbga-hbm-wafer-share]]、[[sources/2026-10-05_skhynix_tsmc-symposium-hbm4-custom-hbm]]、[[sources/2026-10-05_semicone_tsmc-winbond-wow-cube]]

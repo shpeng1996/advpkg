@@ -3,7 +3,7 @@ title: "한화세미텍 / Hanwha Semitech（韓華半導體技術）"
 category: entity
 tags: [Hanwha-Semitech, hybrid-bonding, TC-bonder, D2W, HBM, equipment, Korea, Prodrive]
 created: 2026-09-23
-updated: 2026-09-23
+updated: 2026-10-05
 sources:
   - 2026-02-25_news_hanwha-semitech-shb2-nano
   - 2026-02-20_news_semes-w2w-hanwha-prodrive
@@ -78,3 +78,28 @@ Hanwha 的 **TCB 已是 ₩900 億級業務，混合接合仍在客戶測試階�
 - [ ] 0.1 µm 是否為 3σ，以及是否為量產實績
 - [ ] 客戶名稱與量產日期
 - [ ] Prodrive 合作的實質內容，以及是否與 ASML 的 W2W 動向相關
+
+## [2026-10-05] ⭐⭐⭐ SHB2 Nano 已交付 SK hynix；並揭露叢集 vs 單機約 10× 的時間差
+
+- ⭐⭐⭐ **狀態變更：自「2026 H1 客戶測試」進入「客戶現場」。** **SHB2 Nano（D2W 混合接合叢集系統）於 2026-04 交付 [[entities/sk-hynix]]**，現正進行品質評估與最佳化。
+- ⭐⭐⭐ **叢集組成（多供應商拼裝，與 AMAT–Besi 的單一整合平台對打）**：
+
+  | 模組 | 供應者 |
+  |------|--------|
+  | EFEM（晶圓傳送） | **Cymechs** |
+  | 電漿活化 | **Hanwha Semitech 自有** |
+  | 清洗 | **Zeus** |
+  | 混合接合機 | **Hanwha Semitech SHB2 Nano** |
+
+  ⭐ **Cymechs、Zeus 為本 wiki 首次具名之韓系模組商。**
+- ⭐⭐⭐ **走完全部製程的時間：單機串接「最長 10 小時」 vs AMAT–Besi Kynex「1 小時內」。**
+  - ➜ **為 [[technologies/hybrid-bonding]] 新增時間軸**，並支撐新論述候選**「混合接合的導入障礙有一部分不在精度而在串接」**。
+  - ⚠⚠ **本公司系統自身的對位精度與處理時間未給**（本頁既載對準 **0.1 µm** 為前一輪之規格宣稱，**不得與本輪的 10 h / 1 h 混用**）。⚠ **10 h / 1 h 的口徑未界定，不得換算為 die/hr。**
+- ⭐⭐ **TCB 軸同步推進**：取得 **HBM4 用 TCB 追加訂單**，規模與 [[entities/hanmi]] 已揭露之 **₩442 億**案相當（推估）。
+  - ➜ ⭐⭐ **「TCB 強、HB 弱」此韓系共同模式本輪在本公司出現第一個鬆動跡象：兩軸同時推進，且 HB 已進客戶現場。** ⚠ 仍無量產採用宣告。
+- ⭐⭐ **為 [[entities/hanmi]] 2026-10-04 之空缺（2026-03 第一張量產 HB 訂單得標者）之強候選** —— ⚠ **來源未如此表述，列為候選不得斷言。**
+- ⚠ **SHB2 Nano 的金額未揭露**；業界推估同級 Kynex 系統 **₩150–200 億**（非本公司數字）。
+
+### 相關來源
+
+[[sources/2026-10-05_thelec_hanwha-shb2-nano-cluster]]

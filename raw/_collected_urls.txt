@@ -758,3 +758,15 @@
 2026-10-04 | https://doi.org/10.4071/001c.167026 | raw/papers/2026-10-04_openalex_scrona-maskless-additive-ehd-rdl-wirebond-replacement.md | Scrona EHD: 20+ steps removed, resist <10um, seed <2um
 2026-10-04 | https://doi.org/10.1002/admt.71344 | raw/papers/2026-10-04_openalex_snu-uiuc-tim-multidimensional-heat-path-engineering.md | TIM: bulk k does not equal bonded performance, 3 domains
 2026-10-04 | https://doi.org/10.1016/j.mssp.2026.111205 | raw/papers/2026-10-04_openalex_gachon-nanoparticle-low-temperature-solders-lts.md | LTS SnBi/In: reflow warpage, glass-core + bridge roadmap
+2026-10-05 | https://semiengineering.com/chip-industry-week-in-review-158 | raw/articles/2026-10-05_semieng_chip-industry-week-in-review-158-semco-fcbga-hbm-wafer-share.md | SEMCO $4.9B FCBGA KR+VN; HBM 20->30% DRAM wafers 2027
+2026-10-05 | https://news.skhynix.com/en/tsmc-technology-symposium-2026/ | raw/articles/2026-10-05_skhynix_tsmc-symposium-2026-hbm4-48gb-16hi-custom-hbm-hbf.md | HBM4 16Hi 48GB, TSMC logic base die; HBF, DRAM-on-logic
+2026-10-05 | https://www.semicone.com/article-479.html | raw/articles/2026-10-05_semicone_tsmc-winbond-wow-cube-dram-bottom-soc-top.md | TSMC x Winbond WoW CUBE: 20->16nm, 1-8Gb, 32-256GB/s
+2026-10-05 | https://finance.biggo.com/news/60d9ad67-2614-4c2e-87b6-30b60ffa029b | raw/articles/2026-10-05_biggo_corning-glass-110c-refractive-index-cpo-waveguide.md | Corning glass 110C/5yr dn<1.5%; TGV <10um AR 50:1 LIDE
+2026-10-05 | https://www.tomshardware.com/tech-industry/semiconductors/ajinomoto-reportedly-cuts-abf-chip-packaging-film-supply-to-china-by-30-percent | raw/articles/2026-10-05_tomshardware_ajinomoto-abf-china-30pct-cut-substitutes.md | ABF cut = allocation not licence; CN self-suff <5%
+2026-10-05 | https://www.thelec.net/news/articleView.html?idxno=6400 | raw/articles/2026-10-05_thelec_semco-glass-substrate-samples-apple-sumitomo-jv.md | SEMCO glass samples to Apple; Sejong pilot, MP after 2027
+2026-10-05 | https://www.thelec.net/news/articleView.html?idxno=11199 | raw/articles/2026-10-05_thelec_hanwha-semitech-shb2-nano-d2w-cluster-skhynix.md | Hanwha SHB2 Nano D2W cluster; standalone 10h vs Kynex 1h
+2026-10-05 | EPO:94608665:EP4739074A1 | raw/patents/2026-10-05_EP4739074A1_intel-glass-core-crack-reduction-protruding-conductor.md | Intel glass-core crack: continuous protruding via metal
+2026-10-05 | EPO:91129725:KR20260007608A | raw/patents/2026-10-05_KR20260007608A_amd-glass-interposer-cavity-interconnect-bridge.md | AMD bridge inside glass interposer cavity
+2026-10-05 | EPO:82323300:US20260255994A1 | raw/patents/2026-10-05_US20260255994A1_tsmc-bridge-die-with-tsv-backside-via-encapsulant.md | TSMC over-die bridge WITH TSV + backside via
+2026-10-05 | EPO:90359808:KR20260119943A | raw/patents/2026-10-05_KR20260119943A_apple-local-interconnect-air-gap-cavity-wire.md | Apple local interconnect: wire spanning air-gap cavity
+2026-10-05 | EPO:92146871:US20260231801A1 | raw/patents/2026-10-05_US20260231801A1_mitsui-hybrid-bonding-organic-bonding-layer.md | Mitsui: Si dies hybrid-bonded to ORGANIC bonding layer

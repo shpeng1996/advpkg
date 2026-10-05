@@ -3,7 +3,7 @@ title: "HBF — High Bandwidth Flash"
 category: technology
 tags: [HBF, NAND, flash, TSV, stacking, SanDisk, SK-Hynix, Hanmi, TCB, AI-inference, storage-class-memory]
 created: 2026-06-11
-updated: 2026-09-18
+updated: 2026-10-05
 sources: [2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-06-05_trendforce_hbf-equipment-race-sandisk-hanmi, 2026-06-22_trendforce_sandisk-hbf-patent-nand-processor-bonding, 2026-05-14_semieng_flash-hbf-high-bandwidth-version, 2026-08-31_semieng_flint-hbf-llm-inference-huawei-eth-hust, 2026-08-30_semieng_oxford-hybrid-hbm-hbf-hma-llm-inference]
 related:
   - wiki/technologies/hbm4.md
@@ -383,3 +383,12 @@ HBF 需要**非傳統 DMA 路徑**（非 CPU/GPU cache hierarchy）：
 ⚠ **專利為前瞻訊號**：SanDisk 於 2026-05 公開之專利顯示其 D2W 結構方向，**不代表 HBF 量產結構已定**。專利文本未指明適用於 HBF 或既有 3D NAND CBA；IPC 分類（H10B43 系列）偏向 3D NAND，**與 HBF 的關聯為本 wiki 推論，待後續來源佐證**。
 
 來源：[[sources/2026-05-28_epo_sandisk-d2w-bonded-memory-offset-pads]]
+
+## [2026-10-05] 一手來源：HBF 被 SK hynix 定性為「logic-based NAND」
+
+- ⭐⭐ **[[entities/sk-hynix]] 於 TSMC Technology Symposium 2026（2026-04-23，一手）把 HBF 列為規劃中的後續方案，定性為「以邏輯為基礎、強化資料傳輸的 NAND」**，與「3D Stacked DRAM on Logic」並列為兩條後續路線。
+- ➜ **本頁此前的 HBF 記載多倚二手；本輪為一手定性補強。**⚠ **無容量、頻寬、層數或時程。**
+
+### 相關來源
+
+[[sources/2026-10-05_skhynix_tsmc-symposium-hbm4-custom-hbm]]

@@ -3,7 +3,7 @@ title: "Applied Materials（應用材料）"
 category: entity
 tags: [equipment, ECD, PECVD, TSV, HBM, die-thinning, hybrid-bonding, USA]
 created: 2026-09-17
-updated: 2026-10-04
+updated: 2026-10-05
 sources: [2026-08-18_appliedmaterials_hbm-packaging-bottleneck-toolset, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-06-28_hyperframe_amat-hybrid-bonding-hedge, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_epo_xiamen-anjieli-cn121335557a-silane-parylene-tgv]
 related:
   - wiki/technologies/tsv.md
@@ -311,3 +311,18 @@ Poulomi Mukherjee（Applied Materials Germany）：FE 模擬識別 **① 種子�
 ### 相關來源
 
 [[sources/2026-10-04_thelec_amat-besi-epic-center-dop]]、[[sources/2026-10-04_openalex_kitech-glucose-vapor-cu-oxide-reduction]]
+
+## [2026-10-05] EPIC Center 夥伴名單擴充；Kynex 的時間軸數字首次出現
+
+- ⭐⭐ **EPIC Center 夥伴名單新增 Kioxia 與 Besi**（2026-10-02）。2026-10-04 既載名單為 >10 家（Samsung／SK hynix／Micron／TSMC／Broadcom）、總投資 USD 5B、2026-10-12 啟用。
+  - ➜ ⭐⭐ **Besi 同時是「被投資對象」（AMAT 持股 9%）與「中心參與夥伴」** —— 本 wiki 第一次見到 AMAT–Besi 關係在同一機構內同時具備資本與研發兩層。
+  - ⚠ **USD 5B 仍為中心整體投資，不得歸因於 HB 或 DoP。**
+- ⭐⭐⭐ **Kynex（既載拼寫 Kinex）首次出現時間軸數字：走完全部混合接合製程「1 小時內」，對照單機串接「最長 10 小時」。**
+  - ➜ **本 wiki 的混合接合量化此前全部落在空間軸與溫度軸；時間軸此前僅有 1,600–2,000 die/hr 單點，無對照組。** ➜ **新論述候選：「混合接合的導入障礙有一部分不在精度而在串接」**（詳見 [[technologies/hybrid-bonding]]）。
+  - ⚠⚠ **口徑未界定（每片晶圓？每批？幾顆晶粒？）⇒ 不得換算為 die/hr，不得與既載 1,600–2,000 die/hr 並列。**
+  - ⚠ **「Kynex」vs 既載「Kinex」拼寫不一致 ⇒ 兩者指同一平台為待確認，須以 AMAT 或 Besi 官網複核。本輪不改既有記載。**
+- ⚠ **「AMAT 混合接合 CMP 市占 100%」仍未結清**（自 2026-09-20 列管）；本輪無新證據。
+
+### 相關來源
+
+[[sources/2026-10-05_semieng_wir158-semco-fcbga-hbm-wafer-share]]、[[sources/2026-10-05_thelec_hanwha-shb2-nano-cluster]]

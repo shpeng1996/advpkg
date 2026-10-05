@@ -3,7 +3,7 @@ title: "Samsung Electro-Mechanics / 三星電機（SEMCO）"
 category: entity
 tags: [SEMCO, substrate, ABF, glass-core, coreless, interposer, MLCC, Korea]
 created: 2026-10-03
-updated: 2026-10-03
+updated: 2026-10-05
 sources: [2026-10-03_epo_semco-coreless-interposer-organic-bridge, 2026-10-03_tomshardware_abf-substrate-state-2026, 2026-10-02_epo_semco-glass-surface-roughness-tgv]
 related: [concepts/substrate-materials-supply-chain.md, technologies/glass-substrate.md, technologies/emib.md, entities/samsung.md, entities/absolics.md, entities/shinko.md, entities/ibiden.md]
 ---
@@ -89,3 +89,18 @@ related: [concepts/substrate-materials-supply-chain.md, technologies/glass-subst
 - ⭐⭐ **無核心中介層的有機橋可達線寬（µm）**；以及該路線與 SEMCO 玻璃核心路線是否服務同一客戶群
 - ⭐⭐ **Sumitomo 合資的投資金額、產能與股權比例**
 - ⭐ **MLCC 業務與「去耦電容物件化」趨勢的關係** —— SEMCO 同時是 MLCC 大廠與基板廠；若電容往基板內搬，**SEMCO 在供應鏈兩端同時受益與受損**，本 wiki 完全空白
+
+## [2026-10-05] 玻璃核心的客戶側首次具名（Apple）；FC-BGA 擴產擴及越南
+
+- ⭐⭐⭐ **玻璃基板送樣對象首次具名：Apple（自 2025 年起），此前先送 Broadcom。** Apple 自研 AI 伺服器晶片代號 **"Baltra"**（與 Broadcom 合作，預期 TSMC 製造）。
+  - ➜ **本 wiki 的玻璃核心敘事此前只有供給側時程分層；本輪補上需求側第一個錨點，且該錨點落在「2027 之後量產」那一層。**
+  - ➜ **並成為 [[entities/apple]] 建頁的第二個觸發點。**
+- ⭐⭐⭐ **約 US$4.9B 擴 FC-BGA 封裝基板產能，地點為南韓 + 越南**（2026-10-02）—— **本 wiki 首次記錄 SEMCO 的越南基板產能**，亦是基板擴產地理擴散的第三個節點（既有日／韓／台）。
+- ⚠⚠ **投資數字三個口徑並記，不得合併或互相替換**：**約 US$4.9B**（FC-BGA 擴產，2026-10-02）／**$1.2B**（ABF 擴產，既載）／**₩6.78 兆**（AI 晶片封裝基板總投資，2026-04；≈US$4.8–5.0B，與第一項量級相符但口徑可能不同）。
+- ⚠ **玻璃核心的基地記載須併記兩處**：既載為 Dongwoo Fine-Chem **平澤**廠（合資脈絡，初期量產基地），本輪為**世宗（Sejong）**廠（試產線運行中）⇒ **可能分屬試產與量產，不得合併或互相覆寫。**
+- 📌 **量產時程空缺（三個互不一致說法）本輪不收斂，但可記：「2027 年之後／2027 後由合資公司開始」已有兩個獨立來源。** 與住友化學的玻璃核心材料合資案預期 **2026 H2** 定案（本輪確認）。
+- ⚠ **ABF 市占仍空白；45 件玻璃案的技術分布仍僅抽樣兩件。**
+
+### 相關來源
+
+[[sources/2026-10-05_thelec_semco-glass-samples-apple]]、[[sources/2026-10-05_semieng_wir158-semco-fcbga-hbm-wafer-share]]

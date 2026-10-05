@@ -3,7 +3,7 @@ title: "先進封裝地緣政治 / Geopolitics of Advanced Packaging"
 category: concept
 tags: [geopolitics, US-China, CHIPS-Act, supply-chain, chiplet, NAPMP, export-control, glass-substrate, standards-war, BOE, Corning, Absolics]
 created: 2026-04-26
-updated: 2026-10-03
+updated: 2026-10-05
 sources: [2026-09-27_semieng_chip-week-156-india-tata-besi-izmo, 2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-08-10_trendforce_skhynix-chongqing-sale-global-reset, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-23_trendforce_china-osat-sj-semiconductor-ipo, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-08-05_3dincites_iftle636, 2026-03-23_trendforce_musk-terafab-tsmc-packaging, 2026-04-22_trendforce_sk-hynix-indiana-us-plant, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-16_nokia_pennsylvania-atp-expansion, 2026-06-30_amkor-ir_arizona-7billion-groundbreaking, 2026-06-30_digitimes_us-packaging-capacity-10pct-2032, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-10_tomshardware_micron-250b-us-investment-globalwafers, 2026-07-10_semieng_chip-week-146, 2026-07-14_trendforce_huawei-baidu-npo-msa, 2026-08-21_semieng_chip-week-152, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_asi-1um-hdbu-substrate, 2026-10-02_trendforce_nvidia-glass-substrate-2028-taiwan, 2026-10-02_trendforce_intel-microled-glass-24-layer]
 related: [wiki/concepts/advanced-packaging-market.md, wiki/entities/amkor.md, wiki/entities/ase-group.md, wiki/technologies/ucie.md]
 ---
@@ -894,3 +894,18 @@ TrendForce（2026-09-22，Intel 微 LED 玻璃基板專利報導）：**Intel �
 ### 相關來源
 
 [[sources/2026-10-03_tomshardware_abf-substrate-state-2026]]、[[sources/2026-10-03_digitaltoday_jntc-tgv-thickness-lineup]]、[[sources/2026-10-03_thelec_philoptics-tgv-2mm-glass]]
+
+## [2026-10-05] ABF 管制的性質確認為企業配額，不是出口許可；替代天花板在層數
+
+- ⭐⭐⭐ **性質確認：Ajinomoto 對中國大陸 ABF 減供 30% 是企業自主的產能配額決定，不是政府出口許可。** 報導歸因「AI 需求下的產能配置」，並指其具**「明顯的報復觀感」（obvious retaliatory optics）**。
+  ➜ **本頁的管制措施清單自此應分兩類：政府措施（出口許可、實體清單、雙用途管制）與企業配額決定。** 後者此前在本頁完全沒有條目，而**其槓桿強度在本 wiki 所記錄的全部措施中最高（ABF 無可替代來源）** ⇒ ⭐⭐⭐ **新論述：「槓桿最強的那一手，可能不是政府出的。」**
+- ⭐⭐⭐ **區分對象是客戶優先序而非產品世代**：優先日本客戶與供應 NVIDIA／AMD／Intel 加速器 FC-BGA 基板的核心海外帳戶。⚠ **起始時點未揭露。**
+- ⭐⭐⭐ **替代能力的天花板是增層層數，不是良率。** 華正新材 CBF 量產良率 **>85%**（據報通過華為 Ascend 可靠性測試）；Lotus NBF **9 層以下全部已驗證**、9–11 層開發中；宏昌 GBF 小量試產、**Q4 放大**。**而 AI 加速器需要的是 18 層級。**
+  ➜ **「自主化能否繞過材料缺口」的提問形式改為「在幾層以下能繞過」。**
+- ⭐⭐ **地緣脈絡的時間序**：2026-01 中方禁對日本軍方關聯終端用戶出口雙用途物項 → **2026 H1 對日稀土出口年減約 51%** → 2026-08 ABF 減供報導。⚠ **因果關係為報導推論，本 wiki 僅記錄時間序。**
+- ⭐⭐ **中國大陸 ABF 自給率 <5%**（本 wiki 第一個該項量化值）。
+- ⭐ **對照：基板組裝產能正往東南亞擴散**（SEMCO 越南、Toppan 新加坡、VSMC 新加坡）⇒ **組裝可外移、材料不可**，兩者的地理風險性質不同。詳見 [[concepts/substrate-materials-supply-chain]]。
+
+### 相關來源
+
+[[sources/2026-10-05_tomshardware_ajinomoto-abf-china-cut]]、[[sources/2026-10-05_semieng_wir158-semco-fcbga-hbm-wafer-share]]

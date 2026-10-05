@@ -3,7 +3,7 @@ title: "基板與材料供應鏈 / Substrate & Materials Supply Chain（ABF・T-
 category: concept
 tags: [ABF, Ajinomoto, substrate, supply-chain, Ibiden, Unimicron, Shinko, SEMCO, Kinsus, Nan-Ya-PCB, glass-core, warpage, bottleneck]
 created: 2026-10-03
-updated: 2026-10-04
+updated: 2026-10-05
 sources: [2026-10-03_tomshardware_abf-substrate-state-2026, 2026-10-03_thelec_philoptics-tgv-2mm-glass, 2026-10-03_digitaltoday_jntc-tgv-thickness-lineup, 2026-10-03_epo_semco-coreless-interposer-organic-bridge]
 related: [technologies/glass-substrate.md, concepts/advanced-packaging-market.md, concepts/geopolitics-advanced-packaging.md, entities/ibiden.md, entities/shinko.md, entities/semco.md, entities/absolics.md, entities/agc.md]
 ---
@@ -186,3 +186,51 @@ AI 加速器封裝之下的**載板層**供應鏈，由三層構成：
 ### 相關來源
 
 [[sources/2026-10-04_thelec_shindo-tgcv-glass-cte]]、[[sources/2026-10-04_openalex_gachon-low-temperature-solders]]
+
+## [2026-10-05] ⭐⭐⭐ ABF 替代能力的天花板是層數；基板擴產擴散到越南
+
+### ⭐⭐⭐ 1. Ajinomoto 對中國大陸減供 30%：措施性質與替代者名單
+
+**結清 2026-10-03 所立⭐⭐⭐空缺的第一問與第三問：**
+
+- **性質＝企業自主的產能配額決定，不是政府出口許可。** 報導歸因為「AI 需求下的產能配置」，並指其具「明顯的報復觀感」（⚠ 動機推論，本 wiki 不採信為事實）。
+- **區分的對象是客戶而非產品世代**：優先日本客戶與供應 NVIDIA／AMD／Intel 加速器 FC-BGA 基板的核心海外帳戶。
+- ⚠ **第二問（起始時點）仍未結清。**
+
+**量化兩端**：Ajinomoto **>95%** 市占 vs 中國大陸自給率 **<5%**（後者為本 wiki 第一個 ABF 自主化程度的量化值）。
+
+**中國大陸替代者（本 wiki 首份具名清單）**：
+
+| 公司 | 產品 | 狀態（2026-08） |
+|------|------|----------------|
+| 華正新材 Huazheng | **CBF** | **量產良率 >85%**；據報通過華為 Ascend 系統可靠性測試 |
+| Lotus Holdings | **NBF** | **9 層以下全部已驗證**；9–11 層開發中 |
+| 宏昌電子 Hongchang | **GBF** | 小量試產，**Q4 放大** |
+
+➜ ⭐⭐⭐ **與本頁既載之「單一先進 AI 基板 = 3.5× 板面積 × 3× ABF 層數（18 vs 6）」直接對撞：AI 加速器需要的正是 18 層級，而替代者的已驗證區間是 ≤9 層。**
+➜ ⭐⭐⭐ **因此「中國大陸能否繞過 ABF」的正確形式不是「能／不能」，而是「在幾層以下能」。** 本輪對該議題最重要的一次改寫。
+➜ ⚠ **空缺「Ajinomoto 之外是否有第二家能供先進世代 ABF」不結清** —— 三家替代者皆未宣稱高層數世代。
+➜ **本輪據此新建 [[entities/ajinomoto]]**（2026-10-04 lint 列為下輪第一順位缺頁）。
+
+### ⭐⭐⭐ 2. 「擴產投資」新增地理維度：基板往東南亞，材料仍在日本
+
+- **[[entities/semco]]：約 US$4.9B 擴 FC-BGA，地點為南韓 + 越南**（本 wiki 首次記錄 SEMCO 的越南基板產能）
+- **Toppan：首座海外 FC-BGA 廠落在新加坡**，產品為 AI 處理器與網通用「大面積、高層數」基板
+- **VSMC（VIS–NXP）：新加坡 300 mm 廠開幕**，評估第二廠
+
+➜ ⭐⭐⭐ **與本輪 Ajinomoto 一案構成同一結構的兩端：組裝可外移，材料不可。** 基板擴產的地理擴散出現第三個節點（越南；既有日／韓／台），而 ABF 仍集中在日本。
+
+⚠ **三個 SEMCO 投資數字口徑不同，並記不合併**：約 **US$4.9B**（FC-BGA 擴產，2026-10-02）／**$1.2B**（ABF 擴產，既載）／**₩6.78 兆**（AI 晶片封裝基板總投資，2026-04）。
+
+### ⭐ 3. 材料商跨入接合界面：既有型態的第二個實例（非新型態）
+
+**三井化學 US20260231801A1**（混合接合到有機接合層，CPC 首項 **C08G73/12** 聚醯亞胺）⇒ **「高分子材料商向接合界面結構延伸」的第二個實例（第一為 Toray 的 PHB）。** ⚠ **不是新型態** —— 既有四型為設備商向材料／相鄰製程擴張（TEL、AMAT、Onto）／載板業者向上游堆疊延伸（上海美維）／基材加工商以併購取得金屬化（JNTC 併 Comet）／材料商向下游金屬化延伸（Corning）。**可記之處在 CPC 指紋：同一文件橫跨高分子合成與封裝結構兩個分類樹。** 詳見 [[technologies/hybrid-bonding]]。
+
+### ⚠ 4. 未更新項
+
+- **Unimicron 2026-10-01 的 NT$100 億湖口土地案**：本輪未再嘗試（digitimes 連續兩輪 403），維持列管。
+- **ABF 缺口 10/21/40% 的推估來源與方法**：本輪無進展。
+
+### 相關來源
+
+[[sources/2026-10-05_tomshardware_ajinomoto-abf-china-cut]]、[[sources/2026-10-05_semieng_wir158-semco-fcbga-hbm-wafer-share]]、[[sources/2026-10-05_thelec_semco-glass-samples-apple]]、[[sources/2026-10-05_epo_mitsui-hybrid-bonding-organic-layer]]

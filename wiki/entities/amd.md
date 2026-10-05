@@ -3,7 +3,7 @@ title: "超微半導體 / AMD (Advanced Micro Devices)"
 category: entity
 tags: [fabless, CPU, GPU, chiplet, Zen6, EFB, I-CubeS, Milan, EPYC, MI-series, Venice, COMPUTEX2026, MI455X, CoWoS-L, SoIC, FOPLP]
 created: 2026-05-03
-updated: 2026-10-03
+updated: 2026-10-05
 sources: [2026-03-01_semianalysis_cpus-back-datacenter-2026, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-21_trendforce_amd-lisa-su-tsmc-10b-taiwan-packaging, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-07-24_semieng_chip-week-148, 2026-10-02_epo_amd-us20260282956a1-silicon-bridge-decap, 2026-10-02_trendforce_cowos-l-mainstream-through-2028]
 related:
   - wiki/entities/tsmc.md
@@ -124,3 +124,17 @@ AMD 在 AI GPU 市場是 NVIDIA 的主要挑戰者（Instinct MI 系列），但
 > **本輪因 Intel TGV 襯層與橋議題占滿額度而未採，列下輪第一順位（⭐⭐⭐）。**
 
 既有紀錄不變：AMD **US20260282956A1**（橋內記憶體控制器＋去耦電容，2026-10-02）為本 wiki 首見「橋即電容載體」，且 AMD 與 Marvell **把記憶體控制器分別搬到橋與 base die ⇒ 方向相同手段不同**（⚠ 本 wiki 歸納，兩件無共同來源）。
+
+## [2026-10-05] 第二件封裝結構專利：布局自「橋的內部」推到「橋的外部」
+
+- ⭐⭐⭐ **KR20260007608A（2026-01-14，fam 91129725）：玻璃中介層內開腔體、腔體中置互連橋**，該橋連接兩個 chip module 的電路部。發明人含 **SWAMINATHAN RAJA**（AMD 封裝架構長期署名人）、KULKARNI DEEPAK VASANT、BOYAPATI SRI RANGA SAI、WILKERSON BRETT P。CPC 含 **G02B6/4274**（光學耦合）⇒ 同族可能另涵蓋光路，摘要未述。
+  - ⚠⚠ **本節初稿誤記兩項，已於同輪自我更正**：（a）記本件為「本 wiki 首見 AMD 在封裝載體結構本身的布局」—— **不成立**，本頁 2026-10-02 已載 **US20260282956A1「CHIP PACKAGE WITH SILICON BRIDGE」**（橋內含記憶體控制器與去耦電容，2026-09-17 公開），且**與本件共用發明人 KULKARNI DEEPAK VASANT、SWAMINATHAN RAJA**；（b）記本件為「橋的載體第七種」—— **不成立**，既有上海先封 CN122622683A 與 Intel EP4712758A1 在前。
+  - ➜ ⭐⭐ **更正後可說的是軸的移動：第一件處理「橋裡面放什麼」（元件載體），本件處理「橋放在什麼裡面」（載體的腔體）—— 同一組人在一個月內把布局自橋的內部推到橋的外部。**
+  - ➜ ⭐⭐⭐ **並且：AMD 是「橋嵌在玻璃中介層腔體」此架構的第三個申請人，且第一個以晶片設計商（需求側）身分布局者**（既有兩者為封裝／基板側的中國新創與 IDM）⇒ **該架構首次出現需求側的排他權布局。**
+  - ⭐ 同主題另有 **EP4706099A1**（fam 93293024，摘要空白）⇒ **AMD 在此主題至少兩個 family。**
+  - ⚠ 腔體為貫穿或盲腔、橋是否免 TSV、玻璃厚度與 TGV 規格皆未給；無量化值。
+- ⭐ **另記（本輪未入庫）**：AMD 亦出現於本輪 Ajinomoto 一案的受保護客戶名單中（「供應 NVIDIA／AMD／Intel 加速器 FC-BGA 基板的核心海外帳戶」）⇒ **AMD 在 ABF 配額上屬受優先供應的一側。**
+
+### 相關來源
+
+[[sources/2026-10-05_epo_amd-glass-interposer-cavity-bridge]]、[[sources/2026-10-05_tomshardware_ajinomoto-abf-china-cut]]

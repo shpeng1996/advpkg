@@ -3,7 +3,7 @@ title: "混合接合 / Hybrid Bonding"
 category: technology
 tags: [3D, hybrid-bonding, Cu-Cu, SoIC, ECTC, advanced-packaging, DRAM, COP, 4F2, Sn-damascene, damascene-interconnect, PFAS-free, patent-signal, guard-ring, surface-activation]
 created: 2026-04-24
-updated: 2026-10-04
+updated: 2026-10-05
 sources: [2026-09-27_paper_binghamton-ibm-pad-scaling-resistance-variability, 2026-09-27_intel_us20260223702a1-direct-bonding-embedded-bridge-organic-cavity, 2026-05-21_semiecosystem_ectc2026-cpo-hybridbonding-plp, 2026-04-24_initial-survey, 2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-03-01_3dincites_besi-packaging-power-shift, 2026-01-13_semiengineering_hbm4-microbumps, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-19_semieng_advanced-packaging-limits, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-03-27_3dincites_copper-grain-hybrid-bonding, 2026-03-02_semieng_making-hybrid-bonding-better, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2026-04-29_semiwiki_cea-leti-ectc2026-hybrid-bonding, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2024-02-09_semianalysis_hybrid-bonding-process-flow, 2026-05-19_semiconductor-digest_ev-group-ectc2026-hybrid-bonding, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-04-19_semiwiki_apple-m5-cucu-hybrid-bonding-shipped, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-18_imec_iii-v-chiplet-rf-laser-bonding, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-29_evgroup_ectc2026-hybrid-bonding-layer-transfer, 2026-06-29_thelec_skhynix-hybrid-bonding-equipment-order, 2026-06-05_semieng_intel-ectc-2026-emib-t-cpo-glass, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-14_trendforce_samsung-hbm-hiring-hybridbonding, 2026-07-16_semieng_fine-pitch-hb-high-volume, 2026-07-16_semieng_alt-materials-hybrid-bonding, 2026-06-08_irtnanoelec_d2w-hybrid-bonding-1um-pitch, 2026-05-28_imec_w2w-hybrid-bonding-200nm-pitch, 2026-09-09_acsaelm_microwave-anneal-cu-cu-150c-3min, 2026-08-21_scirep_copper-oxide-reduction-ar-h2-pulsed-plasma, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-03-29_damnang_hybrid-bonding-cmp-gating-factor, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-04-02_adeia_us20260096463a1-buildup-organic-dielectric-bonding, 2026-07-17_jcet_cn122421815a-asymmetric-bonding-interface, 2026-04-30_seoultech_us20260123559a1-hydrocarbon-plasma-low-temp-bonding, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer, 2023-09-13_nccavs_intel-cmp-dishing-requirement-vs-achieved, 2026-03-11_epo_adeia-cmp-for-hybrid-bonding-patent, 2026-09-01_chip_ru-bpr-ntsv-ion-beam-recess, 2026-02-10_epo_shanghai-univ-citric-acid-cu-reduction-sog, 2026-09-21_semiconductorx_cmp-share-lam-sabre-correction, 2026-09-16_jsandwich_cucu-diameter-nonmonotonic-local-optimum, 2026-07-21_lam_sabre-3d-is-ecd-not-cmp, 2026-09-26_paper_dalian-cucu-bonding-review, 2026-09-26_patent_beijing-xinli-hybrid-bonding-dishing-activation, 2026-09-26_paper_ibm-amine-post-cmp-clean, 2026-10-02_bitschips_besi-q1-2026-hybrid-bonding-orders, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_adeia-us20260247631a1-dual-sided-connecting-element]
 related:
   - wiki/technologies/rdl.md
@@ -2101,3 +2101,28 @@ SemiAnalysis ECTC 2026 綜整（2026-07-02）另給出三個降溫／細間距�
 ### 相關來源
 
 [[sources/2026-10-04_ninescrolls_skhynix-hb-hbm5-775um]]、[[sources/2026-10-04_thelec_amat-besi-epic-center-dop]]、[[sources/2026-10-04_openalex_kitech-glucose-vapor-cu-oxide-reduction]]、[[sources/2026-10-04_chipletmarketplace_evg-semicon-west-2026]]
+
+## [2026-10-05] PHB 路線第四個申請人（且首見「重構陣列」拓撲）；並新增時間軸（叢集 vs 單機 10×）
+
+> 依 lint 待辦（本頁已逾 2,000 行），本輪更新以條列為主，論證留在來源頁。
+
+- ⭐⭐ **PHB（有機／聚合物介電混合接合）路線取得第四個獨立申請人。** 三井化學 **US20260231801A1**（2026-08-06，fam 92146871）：**有機接合層＝有機絕緣層 + 金屬墊**，多顆矽晶粒二維排列並**與之混合接合**，晶粒間以樹脂模封填隙。CPC 首項為 **C08G73/12（聚醯亞胺類高分子）**。
+  - ➜ **既有三者為 Toray（材料商，<250 °C／0.5 MPa，2026-09-19）／Adeia（IP 與技術授權方，US20260096463A1，有機層貼金屬側壁 + 無機層在外）／JCET（OSAT，CN122421815A，雙面有機且機械性質與 Cu 晶粒尺寸刻意不對稱）。** 三井化學與 Toray 同屬日系高分子材料商 ⇒ **申請人類型重複，不是新增。**
+  - ➜ **對該路線的意義是「加厚」而非「開啟」**：**四個申請人、三種身分、三個國家，約四個月內** ⇒ **2026-09-20 所作之升格（有機介電混合接合自「平行路線」升格為技術路線）得到第四個獨立佐證，升格結論維持且更穩固。**
+  - ⚠⚠ **本輪 ingest 曾一度誤記本件為「本頁第一件把混合接合與有機介電寫進同一請求項者」，並據此主張「混合接合＝無機介電」自本輪降為待證前提 —— 兩者皆不成立，已於同輪更正。** 根因與作業規範建議見 [[sources/2026-10-05_epo_mitsui-hybrid-bonding-organic-layer]] 的「矛盾或修正」節。**本頁既有之 Ra <0.1–0.2 nm／SiCN <2 Å 規格體系的適用範圍記載（無機介電體系）維持原狀，不因本輪改寫。**
+  - ⭐⭐⭐ **本件真正的新意不在接合面的材料，而在接合的拓撲：受體面是一個有機接合層平台，多顆矽晶粒以二維陣列接合其上，再以樹脂填隙。** 既有三件 PHB 案全部是**接合面的材料配置**，拓撲仍為 W2W 或 D2W；**「晶粒陣列重構在一個有機載體上」是本 wiki 首見。**
+    ➜ **與 2026-10-04 AMAT×Besi 的 DoP（die-on-panel）形態相容 —— DoP 此前僅有設備商的平台命名，本件是其在材料與結構側的第一個對應物。** 另見 [[technologies/foplp]]。⚠ **本件未提面板、未給尺寸 ⇒ 方向性佐證，不得表述為「已可在面板上做混合接合」。**
+  - ⚠⚠ **最關鍵未知：有機介電在接合／退火溫度下的尺寸穩定性，摘要完全未觸及** —— **既有三件 PHB 案同樣未給 ⇒ 這是整條 PHB 路線共同的空白，不是本件獨有。** ⚠ 材質僅能自 CPC 推測為聚醯亞胺類。無任何量化值。
+  - ⭐ **「邊界外擴」之「高分子材料商向接合界面結構延伸」取得第二個實例**（第一為 Toray）。⚠ **不是新型態。**
+- ⭐⭐⭐ **本頁新增時間軸：走完全部製程的總時間，單機串接 vs 整合叢集相差約 10×。**
+  **單機串接最長 10 小時；AMAT–Besi Kynex 1 小時內**（[[entities/hanwha-semitech]] 之 SHB2 Nano D2W 叢集已於 **2026-04** 交付 [[entities/sk-hynix]]，現正品質評估）。
+  - ➜ ⭐⭐⭐ **新論述候選：「混合接合的導入障礙有一部分不在精度而在串接。」** 若單機串接要 10 小時而整合叢集 1 小時，則**設備商的護城河是搬運與排程，不只是接合頭** —— 與核心論述「真正的瓶頸在被視為輔助步驟的那一步」同向，但指向的是**步驟之間**而非某個步驟。
+  - **本頁的混合接合量化此前全部落在空間軸（pitch／Ra／dishing／overlay）與溫度軸；時間軸此前僅有 Besi/AMAT 的 1,600–2,000 die/hr 單點，無對照組。**
+  - ⚠⚠ **10 小時 vs 1 小時的口徑未界定**（每片晶圓？每批？含多少顆晶粒？）⇒ **不得換算為 die/hr，不得與既載 1,600–2,000 die/hr 並列。**
+  - ⚠ **「Kynex」與本 wiki 既載之「Kinex」拼寫不一致**（既載：Kinex 量產對位 100 nm @ 3σ）⇒ **兩種拼寫指同一平台為待確認，須以 AMAT／Besi 官網複核；本輪不改既有記載。**
+  - ⭐⭐ **韓系以多供應商拼裝對抗單一整合平台**：Cymechs（EFEM）／Hanwha（電漿活化）／Zeus（清洗）／Hanwha（接合機）—— Cymechs、Zeus 為本 wiki 首次具名。
+- ⭐ **[[entities/sk-hynix]] 一手來源（TSMC Symposium 2026）把 SoIC 描述為「3D 垂直堆疊、採混合接合」**，為既有記載的一手補強；⚠ **本輪未取得 HB 在 HBM 的新時程 ⇒ 不改動 2026-10-04 結論「HB 最早 HBM5」。**
+
+### 相關來源
+
+[[sources/2026-10-05_epo_mitsui-hybrid-bonding-organic-layer]]、[[sources/2026-10-05_thelec_hanwha-shb2-nano-cluster]]、[[sources/2026-10-05_skhynix_tsmc-symposium-hbm4-custom-hbm]]

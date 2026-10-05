@@ -3,7 +3,7 @@ title: "SK Hynix"
 category: entity
 tags: [memory, HBM, HBM4, advanced-packaging, patent-signal]
 created: 2026-04-24
-updated: 2026-10-04
+updated: 2026-10-05
 sources: [2026-08-24_trendforce_hot-chips-2026-samsung-zhbm-skhynix-emib, 2026-08-19_trendforce_skhynix-silicon-valley-hbm-codesign-team, 2026-08-17_trendforce_samsung-skhynix-1h26-investment-nvidia-absent, 2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor, 2026-08-10_trendforce_skhynix-chongqing-sale-global-reset, 2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab, 2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h, 2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-04-22_trendforce_sk-hynix-pt7-cheongju, 2026-04-22_trendforce_sk-hynix-indiana-us-plant, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-03-03_trendforce_sk-hynix-hbm4-tight-gaps, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-05_trendforce_hbf-equipment-race-sandisk-hanmi, 2026-06-11_trendforce_skhynix-3x-wafer-2034-375layer-nand, 2026-06-20_techtimes_skhynix-hbm4e-12layer-samples, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-24_techtimes_sk-hynix-dethroned-samsung-ddr5-hbm4, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-06-25_techtimes_sk-hynix-nasdaq-adr-29b, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-22_trendforce_skhynix-q2-record-margin, 2026-07-21_trendforce_samsung-cxl-32-skhynix-imte, 2026-07-24_trendforce_skhynix-3d-stacked-dram-on-logic-on-device-ai, 2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b]
 related:
   - wiki/entities/samsung.md
@@ -572,3 +572,23 @@ SK Group 出現在 Nature Electronics CPO 綜述（2026-08-19，UVa／MIT／NTU 
 ### 相關來源
 
 [[sources/2026-10-04_ninescrolls_skhynix-hb-hbm5-775um]]
+
+## [2026-10-05] 一手來源：HBM4 16-Hi 48 GB + TSMC 邏輯 base die；HB 叢集設備已進場
+
+- ⭐⭐⭐ **TSMC Technology Symposium 2026（2026-04-23，SK hynix 官方 newsroom，一手）**：
+  - **HBM4 = 16-layer / 48 GB、base die 採 TSMC 先進邏輯製程** —— 此前本 wiki 此事實多倚二手報導。
+  - **HBM3E 12-layer 已搭載 NVIDIA GB300。**
+  - 伺服器 DRAM：3DS RDIMM **256 GB**、MRDIMM **128 GB**、RDIMM **64 GB**（1c nm）、SOCAMM2 **192 GB**（1c nm）。
+  - **承諾自標準 HBM 走向 custom HBM**；後續方案兩條：**HBF（logic-based NAND）** 與 **3D Stacked DRAM on Logic**。
+  - CDO 安現（Ahn Hyun）：「Integration of memory and logic technologies represents a new breakthrough that can transcend the limitations of existing architectures.」
+  - ➜ ⭐⭐⭐ **為列管空缺「HBM base die 供應鏈」給出一手錨點：記憶體廠自己承認 base die 在代工廠**，且與「記憶體與邏輯整合」願景並置 ⇒ **2026-10-04 論述 16 取得來自記憶體廠自身的佐證。**
+- ⭐⭐⭐ **[[entities/hanwha-semitech]] 的 SHB2 Nano D2W 混合接合叢集已於 2026-04 交付本公司**，現正品質評估與最佳化。叢集組成：Cymechs EFEM／Hanwha 電漿活化／Zeus 清洗／Hanwha 接合機。
+  - **走完全程時間：單機串接最長 10 小時 vs AMAT–Besi Kynex 1 小時內。**
+  - ➜ **為 2026-10-04 新立之空缺「2026-03 第一張量產 HB 設備訂單（單一 inline、約 ₩200 億／USD 15M）得標者」補上強候選但未結清**：時點相鄰（2026-03 下單／2026-04 交機）、客戶相同、形態相符、推估價量級相符（Kynex 同級 ₩150–200 億）。⚠ **本篇未稱其為該筆訂單 ⇒ 列為候選，不得斷言。**
+- ⭐⭐ **3D Stacked DRAM on Logic（DRAM 疊於 SoC 上）與本輪 TSMC×Winbond 的「DRAM 在下」方向相反** ⇒ **WoW 的上下順序是設計變數，本 wiki 首次有兩個相反實例。**
+- ⚠ **本輪未取得 HB 在 HBM 的新時程 ⇒ 不改動 2026-10-04 之「HB 最早 HBM5」。**
+- ⚠ **HBM 佔 DRAM 晶圓產能 20%→30%（2027）為 Samsung 主管口徑，非本公司表述**，記於 [[technologies/hbm4]]。
+
+### 相關來源
+
+[[sources/2026-10-05_skhynix_tsmc-symposium-hbm4-custom-hbm]]、[[sources/2026-10-05_thelec_hanwha-shb2-nano-cluster]]

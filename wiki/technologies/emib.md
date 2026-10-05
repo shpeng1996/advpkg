@@ -3,7 +3,7 @@ title: "EMIB — Embedded Multi-Die Interconnect Bridge"
 category: technology
 tags: [Intel, 2.5D, silicon-bridge, chiplet, HBM4, Foveros, glass-substrate, EMIB-T, EMIB-M, silicon-capacitors, power-delivery, HLFF, encapsulation, underfill]
 created: 2026-05-03
-updated: 2026-10-04
+updated: 2026-10-05
 sources: [2026-09-27_intel_us20260223702a1-direct-bonding-embedded-bridge-organic-cavity, 2026-09-27_intel_cn122270166a-stacked-glass-silicon-bridge-assembly-ar20, 2026-09-27_samsung_us20260144093a1-bridge-on-tgv-mold-fixed, 2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-03-05_trendforce_intel-emib-billions, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-03-03_trendforce_intel-clearwater-forest, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks, 2026-06-21_convergedigest_intel-emib-t-multi-die-packaging, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap, 2026-06-05_semieng_intel-ectc-2026-emib-t-cpo-glass, 2026-01-30_tomshardware_intel-ai-chip-test-vehicle-emib-t, 2026-08-04_semieng_from-blueprint-intel-hlff, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_patent_zhuhai-tiancheng-dual-depth-tsv-silicon-bridge, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-09-30_epo_intel-us20260191037a1-localized-embedded-bridge-in-core, 2026-09-30_intel_us-advanced-packaging-reticle-8x-12x-fab9, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_amd-us20260282956a1-silicon-bridge-decap, 2026-10-02_epo_adeia-us20260247631a1-dual-sided-connecting-element, 2026-10-02_epo_shanghai-xianfeng-cn122622683a-glass-interposer-bridge, 2026-10-02_trendforce_cowos-l-mainstream-through-2028]
 related:
   - wiki/entities/intel.md
@@ -972,3 +972,46 @@ TrendForce（2026-09-18）：**CoWoS-L 預期維持主流至 2028**；CoWoS-S �
 ### 相關來源
 
 [[sources/2026-10-04_epo_intel-thermal-switch-in-emib-bridge]]、[[sources/2026-10-04_epo_deca-fully-molded-bridge-interposer]]、[[sources/2026-10-04_epo_ibm-bridge-chip-backside-pdn]]、[[sources/2026-10-04_epo_jcet-korea-double-sided-bridge]]、[[sources/2026-10-04_openalex_scrona-maskless-additive-ehd-rdl]]
+
+## [2026-10-05] ⭐⭐⭐ 橋的維度自十五擴至十七；且第一次出現維度之間的依賴關係
+
+本輪專利軌三件橋案（TSMC、AMD、Apple）把「橋」這個物件在同一輪內放到三個互不重疊的位置：**主晶粒之上**、**玻璃中介層的腔體內**、**空氣間隙腔體的上方**。
+
+### ⭐⭐⭐ 1. 第十六維＝橋相對主晶粒的上下位置，且它是上位變數
+
+**TSMC US20260255994A1（2026-08-27，fam 82323300）**：橋晶粒置於兩顆主晶粒**之上**（over），橋內含 **through substrate via**，背面另有與該 TSV 電連接的 conductive via，由 encapsulant layer 側向包覆；雙層模封。
+
+- ⭐⭐⭐ **這是「橋的免 TSV 化」在升格後一輪內即取得的反向證據，且來自最大的 2.5D 供應者。** 2026-10-04 以 Intel（矽橋）＋ Deca（模封橋）把「橋只做橫向佈線、垂直路徑繞周界」升格為跨公司共同手法。
+- ➜ **處置：條件化而非撤回。** 修正後的形式為：
+  > **免 TSV 是「橋在下」（埋入基板／中介層）拓撲下的手法。當橋改為「在上」（架於主晶粒之上），垂直路徑無處可繞，TSV 回到橋內。**
+- ➜ ⭐⭐⭐ **因此第十六維不是並列的自由變數，而是決定第一維（是否需要 TSV）的上位變數 —— 本頁首次在「橋的維度」各軸之間建立依賴關係。** 此前十五維皆為並列。
+- ⚠ **「橋在上」把橋放進晶粒與散熱面之間，本件完全未觸及散熱** ⇒ 與 2026-10-04 IBM 橋案（橋含主動層卻未觸及散熱）為同型缺口第二例 ➜ **新論述候選：「橋的位置之爭同時是熱路徑之爭，而所有申請人都迴避了這一段。」**
+- ⚠ 本件不是 CoWoS-L（雙層模封、橋在上，形態更近 InFO 系列）⇒ **不得據此斷言 CoWoS-L 的 LSI 含 TSV**；空缺「CoWoS-L 的 LSI 是否同樣可免 TSV」維持開啟。
+
+### ⭐⭐⭐ 2. 第十七維＝橋的介電質是否為物質（Apple）
+
+**Apple KR20260119943A（2026-08-04，fam 90359808）**：局部互連以填入 **low-k 或空氣間隙（air gap）** 的腔體製成，die-to-die 繞線路徑**包含跨越該腔體的金屬線**。
+
+- ⭐⭐⭐ 既有的橋全部以固體介電承載佈線（矽氧化物／有機介電／模封料／玻璃）。本案使介電從「選哪一種材料」變成**「要不要有材料」**。
+- ➜ **與 2026-10-04 Scrona 的第十五維（橋是否為實體元件）是同一方向的第二步** ⇒ **更強的讀法：「橋」正在被解構為一組功能，而非一個物件。**
+- ⭐⭐⭐ **新張力（同一申請人內部）**：Apple 同批另一件 US20260018527A1 是**跨元件 RDL 的應力緩解圖案** —— 一件為電性挖空橋、一件為機械應力改圖案，**方向相反、同一公司同一時期** ⇒ 與 SEMCO（同時押注核心層功能化與取消）並列為第二例。
+- ⭐⭐ **「用 fan-out 把 bump pitch 放寬」是反直覺用法** ⇒ 「把設計移到規格較鬆的區間」第四例。
+- ⭐⭐ **「多個局部互連可縮小 ESD」是本頁首見之「橋的拓撲 ↔ 電路保護」關聯**；橋的功能化此前集中在電容、記憶體控制器、光引擎、供電網路、熱控開關 —— **ESD 是第六種功能，且是第一個純電路設計層的理由。**
+
+### ⭐⭐⭐ 3. 「橋嵌在玻璃中介層的腔體裡」取得第三個申請人，且第一次來自晶片設計商（AMD）
+
+**AMD KR20260007608A（2026-01-14，fam 91129725）**：玻璃中介層把兩個 chip module 與封裝基板結合，**其腔體內置互連橋**。
+
+- ⚠⚠ **本節初稿曾記為「橋的載體第七種＝玻璃中介層的腔體」與「局部高密度橋第四型」，兩者皆不成立，已於同輪自我更正。** 本頁既有之**第二型本來就是玻璃中介層**（上海先封 CN122622683A，申請人自述動機為「玻璃表面 RDL 線路密度不足」），另有 Intel EP4712758A1（玻璃層堆疊 + 橋 + 腔體）⇒ **本件是既有型態的另一個實例，載體清單維持六種、型態清單維持三型。**
+- ⭐⭐⭐ **更正後的新意在申請人身分：既有兩者為封裝／基板側（中國新創）與 IDM，AMD 是第一個以晶片設計商（需求側）身分為此架構申請排他權者。** ➜ **該架構自「供給側提案」首次出現需求側的排他權布局 —— 這對判斷落地機率的意義大於再多一個結構變體。**
+- ⭐⭐ **軸的移動（同一組發明人，一個月內）**：AMD 第一件封裝結構專利 **US20260282956A1「CHIP PACKAGE WITH SILICON BRIDGE」**（2026-09-17 公開，橋內含記憶體控制器與去耦電容）處理**「橋裡面放什麼」**；本件處理**「橋放在什麼裡面」**。兩件共用發明人 **KULKARNI DEEPAK VASANT**、**SWAMINATHAN RAJA**。
+- ⭐ 同主題另有 **EP4706099A1**（fam 93293024，摘要空白）⇒ AMD 在此主題至少兩個 family。
+- ⚠ 腔體為貫穿或盲腔、橋是否免 TSV 皆未揭露 ⇒ **不納入「橋的免 TSV 化」的計數。**
+
+### ⚠ 4. 量化狀況
+
+**本輪三件橋案無一給出量化值**（pitch、腔體尺寸、線寬全無）➜ **「專利軌訊號以定性為主」連續第五輪成立。**
+
+### 相關來源
+
+[[sources/2026-10-05_epo_tsmc-bridge-die-with-tsv]]、[[sources/2026-10-05_epo_apple-local-interconnect-air-gap]]、[[sources/2026-10-05_epo_amd-glass-interposer-cavity-bridge]]

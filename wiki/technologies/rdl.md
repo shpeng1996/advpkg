@@ -3,7 +3,7 @@ title: "RDL — 重分佈層 / Redistribution Layer"
 category: technology
 tags: [RDL, SAP, dual-damascene, embedded-trace, ETR, polyimide, FPIM, CMP, electromigration, panel-level, pad-less-via]
 created: 2026-09-26
-updated: 2026-10-04
+updated: 2026-10-05
 sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2026-09-27_paper_purdue-ru-cu-em-lifetime-blacks-n-0154, 2026-09-27_paper_copper-interconnect-scaling-roadmap-lines-per-mm, 2026-09-26_article_taiyo-imec-700nm-damascene-rdl, 2026-09-26_article_imec-1um-damascene-rdl-2019-anchor, 2026-09-26_article_amkor-embedded-trace-rdl, 2026-09-26_paper_asi-1um-hdbu-substrate, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-25_paper_dnp-glass-rdl-electromigration-lifetime, 2026-09-25_paper_cornell-glass-on-glass-sio2-rdl, 2026-09-25_paper_asu-molded-core-substrate-warpage, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_shanghai-xianfeng-cn122622683a-glass-interposer-bridge, 2026-10-02_imaps-dpc2026_defect-free-coplanar-copper-via-fill]
 related:
   - wiki/technologies/foplp.md
@@ -552,3 +552,13 @@ Scrona 明文把「嚴格的基板平坦度要求」指認為**傳統微影路�
 ### 相關來源
 
 [[sources/2026-10-04_openalex_scrona-maskless-additive-ehd-rdl]]、[[sources/2026-10-04_chipletmarketplace_evg-semicon-west-2026]]、[[sources/2026-10-04_epo_deca-fully-molded-bridge-interposer]]
+
+## [2026-10-05] 跨元件 RDL 的應力緩解進入排他權層；以及與「挖空橋」的內部張力
+
+- ⭐⭐ **Apple US20260018527A1（2026-01-15，fam 88193604）：跨越多個元件的 RDL，含可緩解元件之間 RDL 應力的圖案化佈線區域。** ➜ **本頁此前的 RDL 討論集中在圖案化路線（SAP／dual damascene／Amkor ETR／Scrona 免光罩四條）與線寬；「以佈線圖案本身當作應力管理手段」是新的一類。**
+  - ⚠ 本件本輪未單獨入庫（列為 Apple 同族觀察），無量化值。
+- ⭐⭐⭐ **與同批 Apple KR20260119943A（局部互連跨越空氣間隙）方向相反** —— 一件**為電性挖空**、一件**為機械應力改圖案**，出自同一公司同一時期 ➜ **「同一家公司同時在相反方向布局」第二例**（第一例為 SEMCO 的核心層功能化 vs 取消）。詳見 [[technologies/emib]]、[[entities/apple]]。
+
+### 相關來源
+
+[[sources/2026-10-05_epo_apple-local-interconnect-air-gap]]

@@ -3,7 +3,7 @@ title: "FOPLP — 扇出面板級封裝 / Fan-Out Panel-Level Packaging"
 category: technology
 tags: [fan-out, panel-level, TSMC, Samsung, ASE, Powertech, Innolux, CoPoS, InFO, cost-reduction, delamination, DCB, CTE]
 created: 2026-05-03
-updated: 2026-10-04
+updated: 2026-10-05
 sources: [2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-07-31_trendforce_ase-capex-record-10-5b-leap-foplp, 2025-09-12_trendforce_foplp-competitive-2025, 2026-04-13_trendforce_copos-pilot, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-21_3dincites_acm-wlp-plp-process-trends, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-15_digitimes_manz-310mm-foplp-ecd-equipment, 2026-06-13_digitimes_linkotech-foplp-rollout-traction, 2026-06-20_prnewswire_manz-asia-310mm-ecd, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_digitimes_tsmc-foplp-timeline-skepticism, 2026-07-06_trendforce_cfmee-plp2000-china-first-plp, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-08-06_siliconbox_500m-units-panel-scale, 2026-02-18_siliconbox_ep4697377a1-fanout-panel-metal-sealing-ring, 2026-07-28_xianfeng_cn122476946a-alignment-mark-protection, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-26_paper_skywater-fowlp-pdk-roadmap]
 related:
   - wiki/technologies/rdl.md
@@ -1013,3 +1013,14 @@ Cu stud 輸入晶圓 → 切單與晶粒貼附 → **第一次封膠** → **載
 ### 相關來源
 
 [[sources/2026-10-04_thelec_amat-besi-epic-center-dop]]、[[sources/2026-10-04_openalex_scrona-maskless-additive-ehd-rdl]]、[[sources/2026-10-04_epo_deca-fully-molded-bridge-interposer]]
+
+## [2026-10-05] DoP 取得材料與結構側的第一個對應物（有機接合層上的重構陣列）
+
+- ⭐⭐⭐ **三井化學 US20260231801A1（2026-08-06）：多顆矽晶粒二維排列、混合接合到「有機接合層」（有機絕緣層 + 金屬墊），晶粒間以樹脂模封填隙。**
+  - ➜ **拓撲上是「D2W 混合接合到一個非晶圓的受體面」，而該受體面可落在載板或面板上** ⇒ **與 2026-10-04 AMAT×Besi 的 DoP（die-on-panel）形態相容，是「混合接合的載體自 wafer 擴張到 panel」的材料側佐證**（DoP 既有僅為設備商的平台命名，無面板尺寸／對準規格／時程）。
+  - ⚠ **本件未提面板、未給尺寸、未給溫度與 Ra** ⇒ **記為方向性佐證，不得表述為「已可在面板上做混合接合」。**
+  - ⭐⭐ **本件的新意在拓撲而不在材料**：有機介電混合接合（PHB）本 wiki 自 2026-09-19／09-20 已有 Toray／Adeia／JCET 三個申請人，但三者的拓撲皆為 W2W 或 D2W；**「晶粒陣列重構在一個有機載體上」是本 wiki 首見**。詳見 [[technologies/hybrid-bonding]]。
+
+### 相關來源
+
+[[sources/2026-10-05_epo_mitsui-hybrid-bonding-organic-layer]]

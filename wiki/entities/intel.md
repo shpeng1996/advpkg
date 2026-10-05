@@ -3,7 +3,7 @@ title: "英特爾 / Intel"
 category: entity
 tags: [IDM, advanced-packaging, EMIB, Foveros, Intel18A, Clearwater-Forest, Foveros-Direct, glass-substrate, 14A, High-NA-EUV, silicon-capacitors, Google-TPU-v8e, Q2-2026-earnings, Tesla-14A, HLFF, RAMP-C, Secure-Enclave, Rio-Rancho]
 created: 2026-04-24
-updated: 2026-10-04
+updated: 2026-10-05
 sources: [2026-09-27_intel_us20260182414a1-asymmetric-buildup-cte-gradient-glass, 2026-09-27_intel_cn122270166a-stacked-glass-silicon-bridge-assembly-ar20, 2026-09-27_intel_us20260223702a1-direct-bonding-embedded-bridge-organic-cavity, 2026-08-24_intel-newsroom_hot-chips-2026-diamond-rapids-foveros-ucie, 2026-04-24_initial-survey, 2026-07-20_trendforce_tsmc-265b-arizona-intel-novalake, 2026-03-18_trendforce_intel-emib-malaysia, 2026-03-03_trendforce_intel-clearwater-forest, 2026-03-05_trendforce_intel-emib-billions, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-04-20_trendforce_intel-foundry-14a-equipment, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-01_semianalysis_cpus-back-datacenter-2026, 2026-04-10_3dincites_intel-gan-chiplet, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks, 2026-06-21_convergedigest_intel-emib-t-multi-die-packaging, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap, 2026-07-01_trendforce_terafab-intel-veteran-hire, 2026-04-07_tomshardware_intel-joins-terafab, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-01-30_tomshardware_intel-ai-chip-test-vehicle-emib-t, 2026-07-14_trendforce_intel-ireland-5b-intel3-europe, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-04_semieng_from-blueprint-intel-hlff, 2026-07-31_semieng_chip-week-149, 2026-08-13_trendforce_intel-memory-reentry-xbm-zam-saimemory, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-09-30_intel_us-advanced-packaging-reticle-8x-12x-fab9, 2026-09-30_epo_intel-jp2026116680a-glass-core-embedded-inductor-clusters, 2026-09-30_epo_intel-us20260040982a1-glass-package-liquid-metal-socketing, 2026-09-30_epo_intel-us20260191037a1-localized-embedded-bridge-in-core, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_trendforce_intel-microled-glass-24-layer]
 related:
   - wiki/entities/tsmc.md
@@ -1002,3 +1002,16 @@ CN122349366A、US20260191063A1、US20260191037A1（family 100312105，**已收�
 ### 相關來源
 
 [[sources/2026-10-04_epo_intel-hybrid-glass-organic-substrate]]、[[sources/2026-10-04_epo_intel-thermal-switch-in-emib-bridge]]
+
+## [2026-10-05] 玻璃核心的裂紋處置：以連續性取代界面
+
+- ⭐⭐⭐ **EP4739074A1（2026-05-06，fam 94608665）「METHODS AND APPARATUS TO REDUCE CRACKING IN GLASS CORES」** —— **本 wiki 第一件把「玻璃核心裂紋」直接寫進標題的排他權文件**。結構：玻璃核心貫穿孔內的導電材料，其第二部分**凸出玻璃表面之外**且與孔內部分**表面連續（in continuity）**。發明人 3 位（RAMANUJA PIETAMBARAM SRINIVAS VENKATA、IBRAHIM TAREK、**TANIKELLA RAVINDRA**）。
+  - ➜ **為 [[technologies/glass-substrate]] 的界面工程新增第三種哲學：以連續性取代界面**（既有：改善界面附著／以緩衝層吸收應力——後者亦為 Intel）。
+  - ➜ **處置點在孔口的金屬幾何 ⇒ 讀法：起裂點被認定在孔口**（⚠ 本 wiki 推論，摘要未述）。
+  - ➜ **與 2026-10-04 US20260005081A1（玻璃層＋有機聚醯亞胺框）並讀：Intel 在玻璃核心風險上同時走「結構分工（框）」與「界面連續化（本案）」兩條 ⇒ 其玻璃路線不是單點押注。**
+  - ⚠ 無量化值；凸出部的成形方式與高度未知。
+- ⚠⚠ **待查證（下輪最高優先）**：本輪另一來源（聚合網站）稱 **「Intel 已出貨首款玻璃基板處理器（Clearwater Forest）」** —— **本 wiki 無此記錄**，且與既有「玻璃核心量產推遲」敘事張力明顯。**須以 Intel 一手來源複核（依 2026-09-21 官網複核規則），在複核前不得作為事實引用。**
+
+### 相關來源
+
+[[sources/2026-10-05_epo_intel-glass-core-crack-reduction]]、[[sources/2026-10-05_biggo_corning-glass-110c-cpo]]

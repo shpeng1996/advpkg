@@ -3,7 +3,7 @@ title: "康寧 / Corning Incorporated"
 category: entity
 tags: [glass-substrate, TGV, materials, CPO, Corning]
 created: 2026-09-18
-updated: 2026-10-03
+updated: 2026-10-05
 sources:
   - 2026-08-06_epo_corning-small-diameter-tgv-adhesion
   - 2026-09-30_epo_xiamen-anjieli-cn121335557a-silane-parylene-tgv
@@ -223,3 +223,16 @@ Intel ZnO「三維咬合」）應改述為「三種賭法」而非「三條互�
 另：Corning 列名 Broadcom CPO 生態系夥伴（2025-05 一手，**日期已逾六個月收錄門檻，未建 raw 檔，僅記錄**）。
 
 見 [[sources/2026-10-03_epo_intel-polymer-tgv-buffer]]、[[sources/2026-10-03_epo_intel-partial-liners-tgv]]。
+
+## [2026-10-05] ⭐⭐⭐ 玻璃的驗收項在 CPO 情境下是光學壽命，不是機械或介電性質
+
+- ⭐⭐⭐ **新玻璃配方：110 °C 連續五年、折射率變化 <1.5%**；對照傳統離子交換玻璃**同溫三個月即失效**。用途為**在單一玻璃基板上同時整合光波導與電路**（CPO）。
+  - ⭐⭐⭐ **衡量量是折射率隨時間的漂移** —— 本 wiki 所記 Corning 的玻璃規格此前皆為機械或製程相關；**光學壽命是第三類，且只在 CPO 情境成立** ⇒ **「玻璃非單一材料」新增第六層級（見 [[technologies/glass-substrate]]）。**
+  - ⭐⭐⭐ **110 °C 的口徑被界定為「AI 封裝滿載運作時的局部熱點溫度」** —— 本 wiki 第一次看到玻璃耐熱規格綁定在**封裝內熱點**而非製程溫度。
+- ⭐⭐ **TGV「最佳解」表述為孔徑 <10 µm／AR 50:1，手段為 LIDE。** ⚠⚠ 若成立為本 wiki 最高 AR 記錄（既有 AGC 1:20 @1.0 mm、Shindo 約 20:1）；**來源為聚合網站且未標明量產或演示值 ⇒ 待證，不改既有記錄，且不得與 Corning 既載之 TGV 記載合併。**
+- ⚠⚠ **可信度註記**：本輪來源為 **finance.biggo.com**（聚合網站，原始出處未標明）。**依 2026-09-21 官網複核規則，本節全部數值在取得 Corning 一手來源前標為待證。**
+- 📌 **列管空缺「Corning small via diameter 的實際數值（頂／腰／底何者；若沙漏形，腰在什麼高度）」不因本輪結清** —— 本篇的「<10 µm」未界定量測位置。
+
+### 相關來源
+
+[[sources/2026-10-05_biggo_corning-glass-110c-cpo]]

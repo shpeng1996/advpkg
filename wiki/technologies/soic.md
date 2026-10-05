@@ -3,7 +3,7 @@ title: "SoIC — System on Integrated Chips"
 category: technology
 tags: [3D, SoIC, hybrid-bonding, TSMC, AI, NVIDIA, Feynman]
 created: 2026-04-24
-updated: 2026-09-26
+updated: 2026-10-05
 sources: [2026-04-24_initial-survey, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-03-18_trendforce_nvidia-rubin-feynman-soic, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-23_trendforce_tsmc-roadmap-a12-a13-no-high-na-euv, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-06-21_arxiv_tiny-chiplets-esd-protection-signal-integrity, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-06-10_tomshardware_tsmc-fab-expansion-roadmap-n2-cowos-soic, 2026-09-26_paper_dalian-cucu-bonding-review]
 related:
   - wiki/entities/tsmc.md
@@ -202,3 +202,12 @@ TrendForce Insights（2026-09-10）引述 TSMC 說法：**SoIC 相對 CoWoS 達�
 - **溫度不是接合強度的主導變數**：150 °C NaOH **>30.4 MPa** 強於 200 °C Ru 鈍化 **17.16 MPa**
 - 研究 pitch 已達 **0.4–0.5 µm**，對照 SoIC-X 量產 **6 µm（2025）→ 4.5 µm（2029）**，落差約 **12–15 倍**
 ⚠⚠ 各文獻結構與量測條件不同，**絕不得作為性能排名**。詳見 [[technologies/hybrid-bonding]] 2026-09-26 段（含限制鏈依 pitch 條件化之新論述）。
+
+## [2026-10-05] 一手來源補強：SoIC = 3D 垂直堆疊、採混合接合
+
+- ⭐ **[[entities/sk-hynix]] 於 TSMC Technology Symposium 2026（2026-04-23，一手）把 SoIC 描述為「3D vertical stacking with hybrid bonding」**，與 CoWoS（2.5D 併排）、InFO（降厚度）並列。➜ 既有記載之一手補強，無新量化規格。
+- ⚠ **本輪未取得 SoIC 的新 pitch 或世代時程。**
+
+### 相關來源
+
+[[sources/2026-10-05_skhynix_tsmc-symposium-hbm4-custom-hbm]]

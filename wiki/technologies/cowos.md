@@ -3,7 +3,7 @@ title: "CoWoS — Chip-on-Wafer-on-Substrate"
 category: technology
 tags: [2.5D, interposer, TSMC, AI, HPC, HBM, COUPE, CPO, packaging-constraints, NVIDIA]
 created: 2026-04-24
-updated: 2026-10-02
+updated: 2026-10-05
 sources: [2026-08-13_semieng_1mw-rack-debate-thermal, 2026-08-05_trendforce_tsmc-cowos-cow-outsourcing-osat, 2026-05-24_techtimes_nvidia-computex2026-cowos, 2026-04-24_initial-survey, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-15_trendforce_tsmc-vanguard-stake-sale, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-09_financialcontent_tsmc-130k-cowos-wafers, 2026-06-09_digitimes_tsmc-cowos-soic-capacity-symposium, 2026-06-15_trendforce_tsmc-cowos-gap-narrowing-130k-200k-wafers, 2026-06-10_tomshardware_tsmc-fab-expansion-roadmap-n2-cowos-soic, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_tmtpost_tsmc-cowos-capacity-targets-2026-2027, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-09-30_intel_us-advanced-packaging-reticle-8x-12x-fab9, 2026-10-02_trendforce_cowos-l-mainstream-through-2028, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_amd-us20260282956a1-silicon-bridge-decap]
 related:
   - wiki/entities/tsmc.md
@@ -685,3 +685,17 @@ SemiAnalysis ECTC 2026（2026-07-02）：
 - [ ] ⭐⭐ **CoWoS-S「2 SoC + 8 HBM」是否為 5.5× reticle 之對應容量**（兩個數字的口徑關係未明）
 - [ ] ⭐⭐ **微流道實測 >5 kW 與路線圖 4,100 W @2029 的口徑差異**
 - [ ] 📌 既有未結清項延續：CoWoS 絕對產能、CoWoS-L vs -S 比例、CoWoS「5.5× 良率 99%」的量測邊界、CoWoS-L 基板層良率 —— **本輪均無進展**
+
+## [2026-10-05] TSMC 的「橋在上且含 TSV」；以及代工廠在記憶體鏈中的雙重角色
+
+- ⭐⭐⭐ **TSMC US20260255994A1（2026-08-27，fam 82323300）顯示「橋在主晶粒之上且含 TSV」的拓撲。** 橋晶粒含 through substrate via，背面另有與其電連接的 conductive via 並由 encapsulant layer 側向包覆；雙層模封（第一層包主晶粒、第二層包橋）。發明人含 **YEH DER-CHYANG**。
+  - ➜ ⭐⭐⭐ **這是「橋的免 TSV 化」（2026-10-04 升格為跨公司共同手法）的第一個反向證據**，處置為**條件化**：**免 TSV 屬「橋在下」拓撲；橋在上時垂直路徑無處可繞，TSV 回到橋內。** 詳見 [[technologies/emib]]。
+  - ⚠ **本件不是 CoWoS-L**（雙層模封、橋在上，形態更近 InFO 系列）⇒ **空缺「CoWoS-L 的 LSI 是否同樣可免 TSV」維持開啟，不得據本件推論。**
+  - ⚠ **「橋在上」把橋放進晶粒與散熱面之間，本件未觸及散熱** ⇒ 與 IBM 橋案同型缺口第二例。
+- ⭐⭐⭐ **代工廠在記憶體鏈中的角色依客戶而異（本輪兩個同期實例）：** 對 [[entities/sk-hynix]] 是 **HBM4 base die 供應者**（記憶體廠自行堆疊）；對 **Winbond** 是 **WoW 堆疊與封裝的執行者**（記憶體廠只供客製 DRAM 晶圓）。
+  - **WoW／CUBE 規格：20→16 nm、1–8 Gb、I/O 1,024→4,096、32–256 GB/s、DRAM 在下／SoC 在上、2028 約佔 Winbond DRAM 業務 40%**；定位為**負擔不起 HBM 溢價的邊緣 AI**。⚠ 二手來源，待佐證。
+- ⭐⭐ **SK hynix 一手來源把 TSMC 三項封裝技術並列**：CoWoS（2.5D 併排）／InFO（降厚度）／SoIC（3D 垂直堆疊、採混合接合）。
+
+### 相關來源
+
+[[sources/2026-10-05_epo_tsmc-bridge-die-with-tsv]]、[[sources/2026-10-05_semicone_tsmc-winbond-wow-cube]]、[[sources/2026-10-05_skhynix_tsmc-symposium-hbm4-custom-hbm]]

@@ -3,7 +3,7 @@ title: "共封裝光學元件 / Co-Packaged Optics (CPO) — TSMC-COUPE™ & Eco
 category: technology
 tags: [CPO, co-packaged-optics, COUPE, TSMC, GlobalFoundries, Samsung, photonics, AI, HPC, networking, OCI-MSA, DWDM, Broadcom, NVIDIA, glass-substrate, ULCVD, TGV, Spectrum-X, NVL72]
 created: 2026-04-25
-updated: 2026-10-04
+updated: 2026-10-05
 sources: [2026-09-27_globalfoundries_siph-cpo-bandwidth-density-coupling-budget, 2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-27_paper_copper-interconnect-scaling-roadmap-lines-per-mm, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-05-07_trendforce_globalfoundries-silicon-photonics-scale-cpo, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-03-17_coherent_cpo-ofc2026-demo, 2026-06-07_digitimes_jcet-3d-packaging-cpo-plant, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_edn_cpo-technology-status-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-06-24_thelec_corning-glass-bridge-cpo, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-14_trendforce_umc-silith-silicon-photonics-hvm, 2026-07-14_trendforce_huawei-baidu-npo-msa, 2026-07-27_trendforce_presscenter_cpo-switches-nvidia-broadcom-coupe, 2026-06-03_3dincites_intel-foundry-emib-cpo-glass-ectc2026, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-07-31_ase_cn224583735u-photoelectric-hybrid-rdl, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-09-26_report_dupont-ttm-polymer-waveguide-reliability, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_bitschips_besi-q1-2026-hybrid-bonding-orders]
 related:
   - wiki/technologies/rdl.md
@@ -1263,3 +1263,18 @@ LPKF 之 CPO 耦合能力條件為 **表面波紋 ±100 nm、表面粗糙度 ±3
 ### 相關來源
 
 [[sources/2026-10-04_openalex_scrona-maskless-additive-ehd-rdl]]、[[sources/2026-10-04_thelec_amat-besi-epic-center-dop]]、[[sources/2026-10-04_thelec_shindo-tgcv-glass-cte]]
+
+## [2026-10-05] ⭐⭐⭐ CPO 的玻璃驗收項是「光學性質的長期穩定性」，而非機械或介電性質
+
+- ⭐⭐⭐ **Corning 新玻璃配方：110 °C 連續五年、折射率變化 <1.5%**；對照傳統離子交換玻璃**同溫三個月即失效**。應用為**在單一玻璃基板上同時整合光波導與電路**。
+  - ⭐⭐⭐ **衡量量是折射率隨時間的漂移 —— 本頁此前所有玻璃相關規格都是機械（CTE、彎曲強度、翹曲）或介電（Dk/Df、損耗）。** 光學穩定性是第三類，且**只在 CPO 情境成立**。
+  - ⭐⭐⭐ **110 °C 的口徑被明確界定為「AI 封裝滿載運作時的局部熱點溫度」** —— 本 wiki 第一次看到玻璃的耐熱規格被綁定在**封裝內熱點**而非製程溫度。
+    ➜ **與 [[concepts/thermal-management]] 的接點：熱點溫度此前只作為散熱設計的輸入；本篇把它變成材料壽命規格的輸入。**
+  - ➜ ⭐⭐⭐ **新空缺形式（部分回應列管之「Nature Electronics CPO 綜述全文」）**：**CPO 的玻璃規格鏈至少有「光學穩定性／波導損耗／TGV 幾何」三段，本 wiki 僅有第一段與第三段的單點值。** 本篇給的不是頻寬密度或 pJ/bit，而是**材料端的壽命門檻**。
+- ⭐⭐ **TGV「最佳解」被表述為孔徑 <10 µm／AR 50:1，手段為 LIDE。** ⚠⚠ 若成立將是本 wiki 最高 AR 記錄（既有 AGC 1:20、Shindo 約 20:1）；**來源為聚合網站、未標明量產或演示值 ⇒ 待證，不改既有記錄。**
+- ⭐ 點名的生態系（Schott/AGC 材料、Intel/TSMC/Samsung 驗證、BOE/WG Tech 面板、雷射加工與銅電鍍設備）與本 wiki 既載名單一致，無新增實體。
+- ⚠ **2026-10-04 所記「膠材路徑首次與佈線同台設備」未因本輪變動；「膠材路徑能達到的對準精度絕對值」空缺維持。**
+
+### 相關來源
+
+[[sources/2026-10-05_biggo_corning-glass-110c-cpo]]
