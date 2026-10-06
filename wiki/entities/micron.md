@@ -3,8 +3,8 @@ title: "美光科技 / Micron Technology"
 category: entity
 tags: [memory, HBM4, DRAM, NAND, CapEx, Virginia, Idaho, New-York, onshoring]
 created: 2026-05-03
-updated: 2026-10-01
-sources: [2026-09-27_semieng_chip-week-156-india-tata-besi-izmo, 2025-12-18_trendforce_micron-capex-hbm4, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-03-17_trendforce_gtc2026-key-takeaways, 2025-08-05_3dincites_iftle636-samsung-lsb-micron-virginia, 2026-01-23_trendforce_hbm4e-development, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-26_semieng_chip-week-144, 2026-06-25_thelec_micron-q3-fy2026-record, 2026-07-06_trendforce_micron-hiroshima-fab-hbm-1gamma, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-10_tomshardware_micron-250b-us-investment-globalwafers, 2026-07-10_semieng_chip-week-146, 2026-08-21_semieng_chip-week-152]
+updated: 2026-10-06
+sources: [2026-09-27_semieng_chip-week-156-india-tata-besi-izmo, 2025-12-18_trendforce_micron-capex-hbm4, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-03-17_trendforce_gtc2026-key-takeaways, 2025-08-05_3dincites_iftle636-samsung-lsb-micron-virginia, 2026-01-23_trendforce_hbm4e-development, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-26_semieng_chip-week-144, 2026-06-25_thelec_micron-q3-fy2026-record, 2026-07-06_trendforce_micron-hiroshima-fab-hbm-1gamma, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-10_tomshardware_micron-250b-us-investment-globalwafers, 2026-07-10_semieng_chip-week-146, 2026-08-21_semieng_chip-week-152, 2026-10-06_epo_micron-interposer-embedded-active-buffers]
 related:
   - wiki/technologies/hbm4.md
   - wiki/entities/sk-hynix.md
@@ -340,3 +340,30 @@ Tech Times（2026-09-30）：**Shinko Electric 取得 Japan Display 茂原工廠
 
 - [ ] ⭐⭐ Micron 競標茂原廠的用途（HBM 後段？玻璃？純廠房／電力？）
 - [ ] Micron 是否有玻璃基板／玻璃中介層相關專利（下輪 OPS `pa="micron" and ti,ab="glass"` 候選檢索式）
+
+---
+
+## 2026-10-06 collect 更新：記憶體廠在中介層結構上的布局
+
+### ⭐⭐⭐ US20260304790A1「High-Efficiency Embedded Active Component for Enhanced Channel Loss Compensation」
+
+**2026-10-01 公開**｜fam **101460583**｜發明人 **KARIM ATAUL M、HOLLIS TIMOTHY M**｜CPC H10B80/00、H10W70/614、H10W70/635、H10W90/10、H10W90/724
+
+- 兩顆 IC 置於同一中介層；中介層內的導電通道被**切成兩段**，兩段之間插入**內嵌主動元件（embedded buffers）**，**逐通道一個** ⇒ 中介層本身承擔**訊號再生**。
+- 動機在標題明載：**通道損耗補償（channel loss compensation）**。
+
+➜ **對本 wiki 的意義有兩層**：
+
+1. **技術面：功能化自橋擴到中介層，且驅動力不同。** 本 wiki 的功能化論述此前集中在橋（六種功能：電容、記憶體控制器、光引擎、供電網路、熱控開關、ESD 縮減），中介層一直被當成被動佈線層。**候選新論述：「封裝內的功能化有兩種動機 —— 增加功能，與修復既有通道；後者此前在本 wiki 無條目。」**
+2. **身分面：申請人是記憶體廠而非代工廠或封裝廠。** 本 wiki 2026-10-05 才記下「代工廠在記憶體鏈中的位置依客戶議價能力而變」（TSMC 對 SK hynix 供 HBM4 base die、對 Winbond 執行 WoW 堆疊）。本件顯示**記憶體廠自身也在中介層結構上布局** ⇒ 中介層的提案方名單再擴一位。
+   ⚠ **本輪未以 `raw/` 全文或 `_titles.tsv` 檢索查核 Micron 的中介層布局是否為首見，依作業規範（31）不作「首見」主張。**
+
+➜ 📌 **與本輪 Tenstorrent US20260282966A1 構成同輪兩個「中介層被重新定義」案例，方向相反**：Micron 讓它**變主動**，Tenstorrent 讓它**變小且分散**。
+
+⚠ **專利為前瞻訊號**：Micron 於 2026-10 公開之專利顯示此方向，**不得陳述為已量產**。
+⚠ **全件零量化值**（無 dB、無 Gb/s、無 pJ/bit）—— 而本件本質上是**增益換功耗與延遲**的取捨，無數值則無法評估成立區間。
+🔎 **新空缺**：內嵌緩衝器的**功耗與延遲代價**；標的是 **HBM 介面**還是封裝內一般長通道；主動元件以何種形式嵌入（埋入晶粒？中介層本身即主動矽？）—— 後者決定這是「主動中介層」還是「中介層內埋主動晶片」兩種完全不同的製造路線。
+
+### 相關來源
+
+[[sources/2026-10-06_epo_micron-interposer-embedded-active-buffers]]

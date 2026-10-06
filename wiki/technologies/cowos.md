@@ -3,8 +3,8 @@ title: "CoWoS — Chip-on-Wafer-on-Substrate"
 category: technology
 tags: [2.5D, interposer, TSMC, AI, HPC, HBM, COUPE, CPO, packaging-constraints, NVIDIA]
 created: 2026-04-24
-updated: 2026-10-05
-sources: [2026-08-13_semieng_1mw-rack-debate-thermal, 2026-08-05_trendforce_tsmc-cowos-cow-outsourcing-osat, 2026-05-24_techtimes_nvidia-computex2026-cowos, 2026-04-24_initial-survey, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-15_trendforce_tsmc-vanguard-stake-sale, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-09_financialcontent_tsmc-130k-cowos-wafers, 2026-06-09_digitimes_tsmc-cowos-soic-capacity-symposium, 2026-06-15_trendforce_tsmc-cowos-gap-narrowing-130k-200k-wafers, 2026-06-10_tomshardware_tsmc-fab-expansion-roadmap-n2-cowos-soic, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_tmtpost_tsmc-cowos-capacity-targets-2026-2027, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-09-30_intel_us-advanced-packaging-reticle-8x-12x-fab9, 2026-10-02_trendforce_cowos-l-mainstream-through-2028, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_amd-us20260282956a1-silicon-bridge-decap]
+updated: 2026-10-06
+sources: [2026-08-13_semieng_1mw-rack-debate-thermal, 2026-08-05_trendforce_tsmc-cowos-cow-outsourcing-osat, 2026-05-24_techtimes_nvidia-computex2026-cowos, 2026-04-24_initial-survey, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-15_trendforce_tsmc-vanguard-stake-sale, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-09_financialcontent_tsmc-130k-cowos-wafers, 2026-06-09_digitimes_tsmc-cowos-soic-capacity-symposium, 2026-06-15_trendforce_tsmc-cowos-gap-narrowing-130k-200k-wafers, 2026-06-10_tomshardware_tsmc-fab-expansion-roadmap-n2-cowos-soic, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_tmtpost_tsmc-cowos-capacity-targets-2026-2027, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-09-30_intel_us-advanced-packaging-reticle-8x-12x-fab9, 2026-10-02_trendforce_cowos-l-mainstream-through-2028, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_amd-us20260282956a1-silicon-bridge-decap, 2026-10-06_epo_micron-interposer-embedded-active-buffers, 2026-10-06_epo_tenstorrent-discrete-pitch-adapter-substrates, 2026-10-06_openalex_gatech-terahertz-nde-8layer-interposer]
 related:
   - wiki/entities/tsmc.md
   - wiki/technologies/soic.md
@@ -699,3 +699,42 @@ SemiAnalysis ECTC 2026（2026-07-02）：
 ### 相關來源
 
 [[sources/2026-10-05_epo_tsmc-bridge-die-with-tsv]]、[[sources/2026-10-05_semicone_tsmc-winbond-wow-cube]]、[[sources/2026-10-05_skhynix_tsmc-symposium-hbm4-custom-hbm]]
+
+---
+
+## 2026-10-06 collect 更新：中介層自此有三個被重新定義的方向
+
+本輪同時出現三件把「中介層」這個物件本身重新定義的來源，方向互不相同：
+
+| 方向 | 來源 | 中介層變成什麼 |
+|------|------|---------------|
+| **變主動** | **Micron US20260304790A1**（2026-10-01, fam 101460583） | 通道切兩段，中間插**內嵌主動緩衝器**，逐通道一個 ⇒ 中介層承擔**訊號再生** |
+| **變小且分散** | **Tenstorrent US20260282966A1**（2026-09-17, fam 101296683） | 整片中介層換成**逐 chiplet 一片的離散節距轉接基板** |
+| **換材料** | **Microchip WO2026206376A1**（2026-10-01, fam 97352271） | 本體換成**非晶質 poly-SiC 陶瓷**，孔以**犧牲矽心軸**定義 |
+
+### 1. ⭐⭐⭐ 功能化自橋擴到中介層，且驅動力不同
+
+**Micron US20260304790A1**（發明人 KARIM ATAUL M、HOLLIS TIMOTHY M；CPC H10B80/00、H10W70/614、H10W70/635、H10W90/10、H10W90/724）：兩顆 IC 置於同一中介層，中介層內的導電通道被切成兩段，兩段之間插入**內嵌主動元件（embedded buffers）**，動機在標題明載為**通道損耗補償**。
+
+- 本 wiki 的「功能化」論述此前**集中在橋**（橋內含電容／記憶體控制器／光引擎／供電網路／熱控開關／ESD 縮減六種），中介層一直被當成**被動佈線層**（唯一例外是 2026-10-04 IBM 的橋含主動層）。
+- **候選新論述：「封裝內的功能化有兩種動機 —— 增加功能，與修復既有通道；後者此前在本 wiki 無條目。」** 前六種功能都是「多塞一個東西進去」，本件是「讓既有的線還能用」。
+- **身分面**：申請人是**記憶體廠**。2026-10-05 本 wiki 才記下「代工廠在記憶體鏈中的位置依客戶議價能力而變」；本件顯示記憶體廠自身也在中介層結構上布局。⚠ **本輪未以 `raw/` 全文檢索查核 Micron 的中介層布局是否為首見，依作業規範（31）不作「首見」主張。**
+- ⚠ **全件零量化值**（無 dB、無 Gb/s、無 pJ/bit）—— 而本件本質上是一個**增益換功耗與延遲**的取捨，無數值則無法評估成立區間。
+- ⚠ **專利為前瞻訊號**：Micron 於 2026-10 公開之專利顯示此方向，**不得陳述為已量產**。
+
+### 2. ⭐⭐⭐ 「局部化」可用於吸收規格不一致，而非只用於提升密度
+
+**Tenstorrent US20260282966A1**：每顆 chiplet 底下各放一片**獨立的節距轉接基板**，把該 chiplet 的節距轉成共用基板的節距；自述效益為「不同節距的 chiplet 可共存於同一封裝，且成本低」。
+
+- 與既載的「**局部高密度橋**」三型態構成對照：橋的局部化目的是**局部提高密度**；本件的局部化目的是**局部改變節距**。兩者都放棄「一整片中介層」，但所換取的東西不同。
+- 同時是「**把設計移到規格較鬆的區間**」第五例且方向相反 —— 既有四例皆為**讓單一設計避開嚴格規格**，本件是**容忍多個互不相同的規格共存**。詳見 [[technologies/ucie]]。
+- ⚠ **專利為前瞻訊號**；全件零量化值（未給節距數字、層數、成本比較）。
+
+### 3. ⭐⭐ 多層中介層的檢測新增 THz 模態
+
+**Georgia Tech 3D Packaging Research Center（`10.1016/j.mssp.2026.111189`, 2026-10-05）**：以**兆赫茲電磁波**對**8 層中介層**做非破壞檢測，標的為**對位偏移、孔洞、翹曲**三類；**偏振影響可偵測深度**；以去卷積＋非監督式學習揭示缺陷區。
+⚠ **除「8 層」外零量化值**（無解析度、無深度上限、無偵測率） ⇒ 僅可作為**模態存在性**之證據。詳見 [[concepts/test-metrology-packaging]]。
+
+### 相關來源
+
+[[sources/2026-10-06_epo_micron-interposer-embedded-active-buffers]]、[[sources/2026-10-06_epo_tenstorrent-discrete-pitch-adapter-substrates]]、[[sources/2026-10-06_epo_microchip-polysic-ceramic-interposer-mandrel-vias]]、[[sources/2026-10-06_openalex_gatech-terahertz-nde-8layer-interposer]]

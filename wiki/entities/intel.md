@@ -3,8 +3,8 @@ title: "英特爾 / Intel"
 category: entity
 tags: [IDM, advanced-packaging, EMIB, Foveros, Intel18A, Clearwater-Forest, Foveros-Direct, glass-substrate, 14A, High-NA-EUV, silicon-capacitors, Google-TPU-v8e, Q2-2026-earnings, Tesla-14A, HLFF, RAMP-C, Secure-Enclave, Rio-Rancho]
 created: 2026-04-24
-updated: 2026-10-05
-sources: [2026-09-27_intel_us20260182414a1-asymmetric-buildup-cte-gradient-glass, 2026-09-27_intel_cn122270166a-stacked-glass-silicon-bridge-assembly-ar20, 2026-09-27_intel_us20260223702a1-direct-bonding-embedded-bridge-organic-cavity, 2026-08-24_intel-newsroom_hot-chips-2026-diamond-rapids-foveros-ucie, 2026-04-24_initial-survey, 2026-07-20_trendforce_tsmc-265b-arizona-intel-novalake, 2026-03-18_trendforce_intel-emib-malaysia, 2026-03-03_trendforce_intel-clearwater-forest, 2026-03-05_trendforce_intel-emib-billions, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-04-20_trendforce_intel-foundry-14a-equipment, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-01_semianalysis_cpus-back-datacenter-2026, 2026-04-10_3dincites_intel-gan-chiplet, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks, 2026-06-21_convergedigest_intel-emib-t-multi-die-packaging, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap, 2026-07-01_trendforce_terafab-intel-veteran-hire, 2026-04-07_tomshardware_intel-joins-terafab, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-01-30_tomshardware_intel-ai-chip-test-vehicle-emib-t, 2026-07-14_trendforce_intel-ireland-5b-intel3-europe, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-04_semieng_from-blueprint-intel-hlff, 2026-07-31_semieng_chip-week-149, 2026-08-13_trendforce_intel-memory-reentry-xbm-zam-saimemory, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-09-30_intel_us-advanced-packaging-reticle-8x-12x-fab9, 2026-09-30_epo_intel-jp2026116680a-glass-core-embedded-inductor-clusters, 2026-09-30_epo_intel-us20260040982a1-glass-package-liquid-metal-socketing, 2026-09-30_epo_intel-us20260191037a1-localized-embedded-bridge-in-core, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_trendforce_intel-microled-glass-24-layer]
+updated: 2026-10-06
+sources: [2026-09-27_intel_us20260182414a1-asymmetric-buildup-cte-gradient-glass, 2026-09-27_intel_cn122270166a-stacked-glass-silicon-bridge-assembly-ar20, 2026-09-27_intel_us20260223702a1-direct-bonding-embedded-bridge-organic-cavity, 2026-08-24_intel-newsroom_hot-chips-2026-diamond-rapids-foveros-ucie, 2026-04-24_initial-survey, 2026-07-20_trendforce_tsmc-265b-arizona-intel-novalake, 2026-03-18_trendforce_intel-emib-malaysia, 2026-03-03_trendforce_intel-clearwater-forest, 2026-03-05_trendforce_intel-emib-billions, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-04-20_trendforce_intel-foundry-14a-equipment, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-01_semianalysis_cpus-back-datacenter-2026, 2026-04-10_3dincites_intel-gan-chiplet, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks, 2026-06-21_convergedigest_intel-emib-t-multi-die-packaging, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap, 2026-07-01_trendforce_terafab-intel-veteran-hire, 2026-04-07_tomshardware_intel-joins-terafab, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-01-30_tomshardware_intel-ai-chip-test-vehicle-emib-t, 2026-07-14_trendforce_intel-ireland-5b-intel3-europe, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-04_semieng_from-blueprint-intel-hlff, 2026-07-31_semieng_chip-week-149, 2026-08-13_trendforce_intel-memory-reentry-xbm-zam-saimemory, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-09-30_intel_us-advanced-packaging-reticle-8x-12x-fab9, 2026-09-30_epo_intel-jp2026116680a-glass-core-embedded-inductor-clusters, 2026-09-30_epo_intel-us20260040982a1-glass-package-liquid-metal-socketing, 2026-09-30_epo_intel-us20260191037a1-localized-embedded-bridge-in-core, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_trendforce_intel-microled-glass-24-layer, 2026-10-06_intel_clearwater-forest-no-glass-foveros-9um-3um-emib-45um, 2026-10-06_atlaspcb_clearwater-forest-glass-core-claim-unsourced, 2026-10-06_epo_intel-bridge-chiplet-shield-dummy-die, 2026-10-06_epo_intel-mold-extension-package-to-package-topside-bridge]
 related:
   - wiki/entities/tsmc.md
   - wiki/entities/samsung.md
@@ -1015,3 +1015,44 @@ CN122349366A、US20260191063A1、US20260191037A1（family 100312105，**已收�
 ### 相關來源
 
 [[sources/2026-10-05_epo_intel-glass-core-crack-reduction]]、[[sources/2026-10-05_biggo_corning-glass-110c-cpo]]
+
+---
+
+## 2026-10-06 collect 更新：Clearwater Forest 玻璃一事結清為否；兩組二手數字升格為一手；兩件新專利
+
+### 1. ⭐⭐⭐ 「Intel 已出貨首款玻璃基板處理器（Clearwater Forest）」—— 結清，結論為否
+
+本頁 2026-10-05 將此列為**下輪最高優先待查證**（當時來源為聚合網站，本 wiki 無此記錄且與「玻璃核心量產推遲」敘事張力明顯）。本輪依 **2026-09-21 官網複核規則**執行，**結論為不成立**：
+
+- **Intel 官網「Cutting-edge Process Technologies for Data Center」（Intel Foundry Resource Library，2026-10-06 取得）在 Clearwater Forest 的脈絡下完全未提及玻璃基板**，所載封裝為 **Foveros Direct 3D ＋ EMIB 3.5D**；頁面另有 **FCBGA 2D+** 一節提及**有機基板**（定位為成本最佳化方案），但未對 CWF 基材類型作任何聲明。
+- 該主張表述最明確的出處為 **AtlasPCB（2026-05-25）**，稱 CWF 為「首款以玻璃核心基板高量製造的商用 IC 產品」、「互連密度 +50%、消除大尺寸封裝翹曲」—— **該頁對此未提供任何一手引用**（其所引 ETNews、IC&PCB Union 係關於中國大陸競爭者，與 CWF 基材無關）。
+- 分析者 Ian Cutress 於 X 公開否認，並稱玻璃核心屬 2030 年代技術（⚠ 社群平台發言，僅記錄立場，不作為技術規格來源）。
+- ⚠ **「官網未提及」≠「官方否認」。** 若日後出現 Intel 一手來源明載玻璃核心用於某款出貨產品，本結論應重新檢視。
+
+➜ **處置：該主張不得作為事實引用，亦不得作為任何推論之前提。** 本頁 2026-10-05 所加的「⚠⚠ 待查證（下輪最高優先）」一條，狀態改為**已查證・結論為否**。
+
+### 2. ⭐⭐ 兩組既載的二手數字升格為一手（官網複核規則第三次用於正向確認）
+
+| 項目 | 一手表述 | 本頁既載 | 處置 |
+|------|---------|---------|------|
+| Foveros Direct 3D 第一代 pitch | **9 µm** | 9 µm（二手） | **一手確認，數字不變** |
+| Foveros Direct 3D 第二代 pitch | **3 µm** | 3 µm（TrendForce Insights 2026-09-10，二手） | **一手確認，數字不變** |
+| **EMIB 第一代 bump pitch** | **55 µm** | **（無）** | **新增一手基準值** |
+| EMIB 第二代 bump pitch | **45 µm** | 45 µm（Tom's Hardware 2026-06-19，二手） | **一手確認** |
+
+原文：*"The first generation of Foveros Direct 3D will use copper bonding at a pitch of 9um while the second generation will shrink the pitch to just 3um."*；*"...2nd generation EMIB technology (bump pitch scaled from 55 micron to 45 micron)..."*
+
+➜ **重點不只是數字，而是「第一代／第二代」這個世代關係本身首度出現在同一個一手句子裡。**
+⚠ **「<5 µm（18A-PT，2025-04-29 官方新聞稿）」與本次的「第二代 3 µm」是否為同一目標的不同表述，仍未結清。**
+⚠ 該官網頁**無發布／更新日期**，引用應連同取得日（2026-10-06）並記。同日另嘗試取得 `xeon-6-plus-product-deck.pdf` 回 **HTTP 403，未取得**。
+
+### 3. 近期專利（本輪兩件，⚠ 皆為前瞻訊號，不得陳述為已出貨能力）
+
+- **2026-09-30：EP4815713A2「METHODS OF FORMING BRIDGE CHIPLET SHIELD STRUCTURES」**（fam 97874987，發明人 **COLLINS ANDREW** 單人；CPC 首項 **H10W42/121 屏蔽**，另含 H10W70/618）。橋晶粒埋於基板內，第一端在 IC 晶粒下方並耦接，**第二端位於一顆 dummy die 之下** ⇒ **橋的對手端可以不是功能晶粒**，為「橋正在被解構為一組功能而非一個物件」目前最極端的一例；並為「橋的功能化」**候選第七種功能（電磁屏蔽）**。⚠ 摘要未說明屏蔽機制，列為候選不逕行升格。零量化值。
+- **2026-10-01：US20260305351A1「PACKAGE WITH MOLD EXTENSION TO ENABLE PACKAGE-TO-PACKAGE TOPSIDE BRIDGE ATTACH」**（fam 101460564，發明人 MALLIK DEBENDRA、MANEPALLI RAHUL N、AGRAHARAM SAIRAM、ALUR AMRUTHAVALLI PALLAVI、VISWANATH RAM S）。**橋自 die-to-die 擴到 package-to-package，且走頂側**；垂直路徑由模封層中的柱體承擔而非基板 TSV ⇒ **第 16 維（橋的上下位置）自二值擴為三值**。
+  **同團隊同日之相鄰家族**：US20260305392A1（fam 101460568，**該層上表面平坦度優於基板上表面**）、US20260305464A1（fam 101460572，**晶粒高度均化**、晶粒背面外露）、CN122847211A（fam 101430658，中文用語「**Z 高度重置層**」）⇒ **候選新論述「平坦度可以被製造，而不只是被要求」**（⚠ 本 wiki 推論，全族零量化值，候選不逕行升格）。
+  ⚠ 本件**同樣未觸及散熱** ⇒ 2026-10-05 所記「橋的位置之爭同時是熱路徑之爭，而所有申請人都迴避了這一段」之**第三例**。
+
+### 相關來源
+
+[[sources/2026-10-06_intel_clearwater-forest-no-glass-foveros-9um-3um-emib-45um]]、[[sources/2026-10-06_atlaspcb_clearwater-forest-glass-core-claim-unsourced]]、[[sources/2026-10-06_epo_intel-bridge-chiplet-shield-dummy-die]]、[[sources/2026-10-06_epo_intel-mold-extension-package-to-package-topside-bridge]]

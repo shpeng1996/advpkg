@@ -3,8 +3,8 @@ title: "封裝層的供電網路 / Power Delivery Networks at the Package Level"
 category: concept
 tags: [PDN, power-delivery, vertical-power, eVR, capacitor, inductor, passive-integration, hybrid-bonding, rack-power]
 created: 2026-09-29
-updated: 2026-10-04
-sources: [2026-09-29_imaps-dpc2026_nanoporous-silicon-capacitor-pdn, 2026-09-29_imaps-dpc2026_saras-stile-evr-vertical-pdn, 2026-09-29_semieng_tech-paper-roundup-sept29-multikw-3dhi-pdn, 2026-09-29_semiwiki_ofc2026-siph-cpo-oci-ocs-summary, 2026-09-30_arxiv_umn-multi-kw-power-delivery-3d-hi, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_epo_intel-jp2026116680a-glass-core-embedded-inductor-clusters, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_imaps-dpc2026_delo-die-side-capacitor-encapsulation, 2026-10-02_epo_samsung-cn122602880a-ivr-capacitor-interposer-core, 2026-10-02_jmmm_tyndall-fecob-n-pwrsoc-magnetics, 2026-10-02_epo_amd-us20260282956a1-silicon-bridge-decap]
+updated: 2026-10-06
+sources: [2026-09-29_imaps-dpc2026_nanoporous-silicon-capacitor-pdn, 2026-09-29_imaps-dpc2026_saras-stile-evr-vertical-pdn, 2026-09-29_semieng_tech-paper-roundup-sept29-multikw-3dhi-pdn, 2026-09-29_semiwiki_ofc2026-siph-cpo-oci-ocs-summary, 2026-09-30_arxiv_umn-multi-kw-power-delivery-3d-hi, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_epo_intel-jp2026116680a-glass-core-embedded-inductor-clusters, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_imaps-dpc2026_delo-die-side-capacitor-encapsulation, 2026-10-02_epo_samsung-cn122602880a-ivr-capacitor-interposer-core, 2026-10-02_jmmm_tyndall-fecob-n-pwrsoc-magnetics, 2026-10-02_epo_amd-us20260282956a1-silicon-bridge-decap, 2026-10-06_openalex_auburn-nife-tsv-magnetic-shield-package]
 related:
   - wiki/concepts/thermal-management.md
   - wiki/technologies/hybrid-bonding.md
@@ -516,3 +516,40 @@ Tyndall National Institute × University College Cork（JMMM，2026-09-02）：�
 ### 相關來源
 
 [[sources/2026-10-04_epo_ibm-bridge-chip-backside-pdn]]
+
+---
+
+## 2026-10-06 collect 更新：封裝內磁性材料須依用途分兩類，兩組 µ 值不可互相援引
+
+**Auburn University（`10.1021/acsaenm.6c00380`, 2026-09-18, ACS Applied Engineering Materials）**：脈衝反向電鍍 **NiFe 80:20**，構成**連續背板 ＋ 全填充 TSV ＋ 順形覆蓋層**的**封閉磁性殼體**。
+
+| 項目 | 數值 |
+|------|------|
+| 低場相對導磁率 μr | **> 10⁴** |
+| 軟磁溫區 | **室溫 → 2 K** |
+| 屏蔽因子（**FEA**，以實測 μr(H) 為輸入） | **SF_v ≈ 114、SF_h ≈ 187 @ 25 µT** |
+| 有效衰減場區 | **62–200 µT** |
+
+### ⭐⭐ 新增第三條同型援引禁令
+
+本頁既載之磁性元件條目為 **Tyndall × UCC**：**Bs 1.4–1.66 T、µ′@100 MHz 7–12、ρ 1,897–3,024 µΩ·cm**，列為 **3 A/mm² 障壁**的三個候選限制項之一（另二為**熱**：PDN 熱達負載功率約 40%；**導體材料**：鉬接觸電阻比鎢低 50%）。
+
+| | Tyndall × UCC（既載） | Auburn（本輪） |
+|---|---------------------|----------------|
+| 用途 | **能量轉換**（電感磁芯） | **場排除**（屏蔽） |
+| 關心的指標 | **高頻 µ′ 與損耗** | **低場 µr 與飽和** |
+| µ 值 | **7–12 @ 100 MHz** | **>10⁴ @ 低場** |
+
+**兩者 µ 相差三個數量級，正因為量測頻率與場強完全不同。**
+➜ **禁令：「封裝內磁性材料」的 µ 值跨頁引用必須標註用途、頻率與場強；能量轉換用與場排除用的兩組數字不可互相援引。**
+➜ 這與本 wiki 既有的兩條同型禁令同屬一類：(a)「靠機械咬合的界面 vs 靠原子貼合的界面，粗糙度規範不可互相援引」；(b)「跨技術域引用『粗糙度』必須標註技術域（TGV 側壁 25 nm–1.257 µm vs 混合接合 Ra <0.1–0.2 nm）」。**本條為第三條。**
+
+### 其他
+
+- ⚠ **屏蔽因子為 FEA 模擬值**，非量到失效的實測（依本 wiki 對 Lau 玻璃核心應變數字的既有處置標為模擬值）。
+- ⚠ **應用語境為低溫量子／超導系統，非 AI 加速器封裝**；其前提（弱靜磁場即可劣化超導元件）在 AI 加速器不存在 ⇒ 本件**不改變 3 A/mm² 障壁的任何候選限制項**。
+- 📌 **與本輪專利軌的 Intel EP4815713A2（橋晶粒屏蔽結構）並讀**，構成同輪兩個獨立「屏蔽」案例 ⇒ **候選新論述「屏蔽正在自系統層（機殼）下移到封裝層」**，⚠ 兩件皆非 AI 加速器語境，列為候選不逕行升格。
+
+### 相關來源
+
+[[sources/2026-10-06_openalex_auburn-nife-tsv-magnetic-shield-package]]、[[sources/2026-10-06_epo_intel-bridge-chiplet-shield-dummy-die]]

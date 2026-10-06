@@ -3,8 +3,8 @@ title: "RDL — 重分佈層 / Redistribution Layer"
 category: technology
 tags: [RDL, SAP, dual-damascene, embedded-trace, ETR, polyimide, FPIM, CMP, electromigration, panel-level, pad-less-via]
 created: 2026-09-26
-updated: 2026-10-05
-sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2026-09-27_paper_purdue-ru-cu-em-lifetime-blacks-n-0154, 2026-09-27_paper_copper-interconnect-scaling-roadmap-lines-per-mm, 2026-09-26_article_taiyo-imec-700nm-damascene-rdl, 2026-09-26_article_imec-1um-damascene-rdl-2019-anchor, 2026-09-26_article_amkor-embedded-trace-rdl, 2026-09-26_paper_asi-1um-hdbu-substrate, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-25_paper_dnp-glass-rdl-electromigration-lifetime, 2026-09-25_paper_cornell-glass-on-glass-sio2-rdl, 2026-09-25_paper_asu-molded-core-substrate-warpage, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_shanghai-xianfeng-cn122622683a-glass-interposer-bridge, 2026-10-02_imaps-dpc2026_defect-free-coplanar-copper-via-fill]
+updated: 2026-10-06
+sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2026-09-27_paper_purdue-ru-cu-em-lifetime-blacks-n-0154, 2026-09-27_paper_copper-interconnect-scaling-roadmap-lines-per-mm, 2026-09-26_article_taiyo-imec-700nm-damascene-rdl, 2026-09-26_article_imec-1um-damascene-rdl-2019-anchor, 2026-09-26_article_amkor-embedded-trace-rdl, 2026-09-26_paper_asi-1um-hdbu-substrate, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-25_paper_dnp-glass-rdl-electromigration-lifetime, 2026-09-25_paper_cornell-glass-on-glass-sio2-rdl, 2026-09-25_paper_asu-molded-core-substrate-warpage, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_shanghai-xianfeng-cn122622683a-glass-interposer-bridge, 2026-10-02_imaps-dpc2026_defect-free-coplanar-copper-via-fill, 2026-10-06_epo_intel-mold-extension-package-to-package-topside-bridge, 2026-10-06_openalex_gatech-terahertz-nde-8layer-interposer]
 related:
   - wiki/technologies/foplp.md
   - wiki/technologies/glass-substrate.md
@@ -562,3 +562,17 @@ Scrona 明文把「嚴格的基板平坦度要求」指認為**傳統微影路�
 ### 相關來源
 
 [[sources/2026-10-05_epo_apple-local-interconnect-air-gap]]
+
+---
+
+## 2026-10-06 collect 更新
+
+- ⭐⭐ **「Z 高度重置層」是一個新的封裝結構名詞。** **Intel 的模封延伸層家族**（US20260305351A1 / US20260305392A1 / US20260305464A1；中文同族 CN122847211A 用語為「模制延伸部和 **Z 高度重置層**」）在基板之上另加一層，層中埋柱體、層上做焊盤，並同時承擔**平坦化（該層上表面平坦度優於基板上表面）、互連（柱體提供垂直路徑、上下焊盤共中心線）、散熱介面（晶粒背面外露）** 三個角色。
+  ➜ 🔎 **新空缺：該層上的互連是矽橋還是 RDL？** 若為 RDL，則本頁的線寬／層數論述需延伸到「模封層上的 RDL」這個新載體；若為矽橋，則屬 [[technologies/emib]] 的範疇。本輪無法判定。
+  ⚠ **專利為前瞻訊號**；全族摘要只給相對關係，**無任何 µm/nm 數值**。
+- ⭐⭐ **多層佈線堆疊的內部檢測新增 THz 模態。** **Georgia Tech 3D PRC（`10.1016/j.mssp.2026.111189`, 2026-10-05）**：以兆赫茲波對 **8 層中介層**做非破壞檢測，標的為**對位偏移、孔洞、翹曲**；**偏振影響可偵測深度**。
+  ⚠ 除「8 層」外零量化值 ⇒ 僅可作為模態存在性之證據。🔎 **對金屬層（RDL、Cu 柱）的穿透限制未知** —— 這正是本頁最關心的一點。
+
+### 相關來源
+
+[[sources/2026-10-06_epo_intel-mold-extension-package-to-package-topside-bridge]]、[[sources/2026-10-06_openalex_gatech-terahertz-nde-8layer-interposer]]

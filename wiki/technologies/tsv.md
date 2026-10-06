@@ -3,8 +3,8 @@ title: "TSV — Through-Silicon Via / 矽穿孔"
 category: technology
 tags: [TSV, HBM, interposer, 3D-IC, CoWoS, manufacturing, backside-power, advanced-packaging, radiation, redundancy, reliability]
 created: 2026-08-10
-updated: 2026-10-05
-sources: [2026-09-27_wuhanuniv_cn121548325a-tgv-micro-nano-anchor-molecular-bridging, 2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-27_semieng_chip-week-156-india-tata-besi-izmo, 2026-04-22_semieng_tsv-complexity-manufacturing-bottleneck, 2026-08-21_semieng_chip-week-152, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-08-21_scirep_copper-oxide-reduction-ar-h2-pulsed-plasma, 2026-06-08_irtnanoelec_d2w-hybrid-bonding-1um-pitch, 2026-03-13_kaneka_jp2026047137a-glass-core-polyimide-quantified, 2026-08-10_screp_low-k-organic-buffer-tgv-cu-metallization, 2026-08-04_jmrt_vacuum-assisted-void-free-cu-fill-tgv, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring, 2026-09-26_patent_zhuhai-tiancheng-dual-depth-tsv-silicon-bridge, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_patent_er-eng-glass-interposer-dual-carrier, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth, 2026-10-02_epo_semco-cn122054433a-glass-surface-roughness, 2026-10-02_trendforce_intel-microled-glass-24-layer, 2026-10-02_imaps-dpc2026_defect-free-coplanar-copper-via-fill, 2026-10-02_microrel_tudelft-google-3dic-fa-hardware]
+updated: 2026-10-06
+sources: [2026-09-27_wuhanuniv_cn121548325a-tgv-micro-nano-anchor-molecular-bridging, 2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-27_semieng_chip-week-156-india-tata-besi-izmo, 2026-04-22_semieng_tsv-complexity-manufacturing-bottleneck, 2026-08-21_semieng_chip-week-152, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-08-21_scirep_copper-oxide-reduction-ar-h2-pulsed-plasma, 2026-06-08_irtnanoelec_d2w-hybrid-bonding-1um-pitch, 2026-03-13_kaneka_jp2026047137a-glass-core-polyimide-quantified, 2026-08-10_screp_low-k-organic-buffer-tgv-cu-metallization, 2026-08-04_jmrt_vacuum-assisted-void-free-cu-fill-tgv, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring, 2026-09-26_patent_zhuhai-tiancheng-dual-depth-tsv-silicon-bridge, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_patent_er-eng-glass-interposer-dual-carrier, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth, 2026-10-02_epo_semco-cn122054433a-glass-surface-roughness, 2026-10-02_trendforce_intel-microled-glass-24-layer, 2026-10-02_imaps-dpc2026_defect-free-coplanar-copper-via-fill, 2026-10-02_microrel_tudelft-google-3dic-fa-hardware, 2026-10-06_epo_microchip-polysic-ceramic-interposer-mandrel-vias, 2026-10-06_openalex_auburn-nife-tsv-magnetic-shield-package, 2026-10-06_thelec_sec-xray-tsv-tgv-inspection-1um]
 related:
   - wiki/technologies/hbm4.md
   - wiki/technologies/cowos.md
@@ -752,3 +752,48 @@ TU Delft × Google（2026-07-03）：以 **~210 µm interposer pin pitch** 的 D
 ### 相關來源
 
 [[sources/2026-10-05_epo_intel-glass-core-crack-reduction]]、[[sources/2026-10-05_epo_tsmc-bridge-die-with-tsv]]
+
+---
+
+## 2026-10-06 collect 更新：孔的成形哲學分兩類；TSV 的第四種用途
+
+### 1. ⭐⭐⭐ 「留出來的孔」vs「開出來的孔」—— 孔的成形哲學新增第二類
+
+**Microchip WO2026206376A1（2026-10-01, fam 97352271；發明人 NAGEL STEVE、CHEN BOMY；CPC H10P72/7424、H10W70/09、H10W70/095、H10W70/611、H10W70/635、H10W99/00）**：
+
+1. 中介層本體為**非晶質 poly-SiC 陶瓷**（SiC 粉末加熱加壓成形）—— 非單晶矽、非玻璃、非有機樹脂 ⇒ **中介層基材清單自三類擴為四類（新增陶瓷）。**
+2. **孔的定義方式顛倒**：先在矽晶圓上刻出**矽心軸（mandrel）**，於心軸外圍成形陶瓷，**移除心軸**留下貫穿開口，最後填入導體。**矽晶圓在此是犧牲模具，不是最終基材。**
+
+➜ **本頁既載的 TSV／TGV 成形法全部屬「在既成基材上開孔」**（雷射改質＋濕蝕刻、LIDE、Bosch／非 Bosch 深矽蝕刻、濕蝕刻形態控制…），**其失效論述也全部圍繞同一條因果鏈：孔壁形態 → 種子層覆蓋 → 附著不足 → 銅剝離**。本件的孔壁**不是蝕刻面，而是陶瓷對矽心軸的複製面** ⇒ **既有的「側壁粗糙度 25 nm–1.257 µm」「沙漏形腰部高度」「頂／腰／底三個 CD」整組論述在此架構下不適用**，問題須改為「**心軸的側壁品質與脫模行為**」。
+
+➜ **「以犧牲結構定義最終幾何」在本 wiki 的第二個實例**（第一為 2026-10-05 Apple KR20260119943A 的 air gap 腔體，當時留下「是否需犧牲層」為空缺）。兩件分屬不同公司與不同標的（孔 vs 腔），但方法同型。
+
+⚠ **全件零量化值**（無孔徑、節距、AR、CTE、熱導）。⚠ **專利為前瞻訊號**：Microchip 於 2026-10 公開之專利顯示其在陶瓷中介層上的布局，**不得據此認定已有量產能力或產品採用**。
+🔎 **新空缺**：poly-SiC 的 **CTE 與熱導**（SiC 熱導遠高於矽與玻璃 ⇒ 若成立，這是「中介層同時當散熱件」的候選路線，而本件完全未提熱）；**心軸移除的選擇性與脫模良率**。
+
+### 2. ⭐⭐⭐ TSV 的用途清單新增第四項：結構性磁屏蔽
+
+**Auburn University（`10.1021/acsaenm.6c00380`, 2026-09-18）**：以脈衝反向電鍍製 **NiFe 80:20**，構成**連續背板 ＋ 全填充 TSV ＋ 順形覆蓋層**的**封閉磁性殼體**。
+
+| 項目 | 數值 |
+|------|------|
+| 低場相對導磁率 μr | **> 10⁴** |
+| 軟磁溫區 | **室溫 → 2 K** |
+| 屏蔽因子（FEA，以實測 μr(H) 為輸入） | **SF_v ≈ 114、SF_h ≈ 187 @ 25 µT** |
+| 有效衰減場區 | **62–200 µT** |
+
+- 本頁既載的 TSV 功能為**訊號路徑、供電路徑、散熱路徑**。本件的 TSV **不導任何東西，而是圍住一個區域** ⇒ 第四種用途。
+- ⚠ **屏蔽因子為 FEA 模擬值**，非量到失效的實測（依本 wiki 對 Lau 玻璃核心應變數字的既有處置標為模擬值）。
+- ⚠ **應用語境為低溫量子／超導系統，非 AI 加速器封裝**；其前提（弱靜磁場即可劣化超導元件）在 AI 加速器不存在。
+- 🔎 **新空缺**：全填充 NiFe TSV 的**應力與熱膨脹後果**（NiFe 的 CTE 與模數與 Cu 不同，而本頁既載 Cu 填充 TSV 的殘留應力已是可靠度議題）；該殼體**如何與訊號／供電 TSV 共存於同一晶圓**（若互斥，則屏蔽是以面積換取的）。
+
+### 3. ⭐⭐ TSV 檢測：1 µm 級 X 光與「管壽命」這個新軸
+
+**The Elec（2026-05-21）**：韓國檢測設備商 **SEC**（⚠ 非 Samsung Electronics）推出 **Semi Scan TSV**（HBM 混合接合與 TSV，**1 µm 級**）與 **Semi Scan Panel**（TGV 與面板級，**1 µm 級**）兩條分立產品線；另有 Semi Scan Wafer（3–5 µm）。自有 hybrid open-tube X 光管**壽命 10,000 h vs 傳統 300–500 h（約 20–33×）**。
+
+➜ ⭐ **本 wiki 的量測論述新增一個此前不在視野內的軸：量測設備的消耗件壽命。** 既有論述一律圍繞解析度與不確定度；300–500 h 的管壽在 24/7 量產線上意味著每月換管。
+⚠ **數值皆為公司自述、無第三方驗證，「1 µm 級」為等級而非規格值且未附重複性** ⇒ 依 2026-09-21 規範標 ⚠，不得升格為基準值。
+
+### 相關來源
+
+[[sources/2026-10-06_epo_microchip-polysic-ceramic-interposer-mandrel-vias]]、[[sources/2026-10-06_openalex_auburn-nife-tsv-magnetic-shield-package]]、[[sources/2026-10-06_thelec_sec-xray-tsv-tgv-inspection-1um]]

@@ -3,8 +3,8 @@ title: "FOPLP — 扇出面板級封裝 / Fan-Out Panel-Level Packaging"
 category: technology
 tags: [fan-out, panel-level, TSMC, Samsung, ASE, Powertech, Innolux, CoPoS, InFO, cost-reduction, delamination, DCB, CTE]
 created: 2026-05-03
-updated: 2026-10-05
-sources: [2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-07-31_trendforce_ase-capex-record-10-5b-leap-foplp, 2025-09-12_trendforce_foplp-competitive-2025, 2026-04-13_trendforce_copos-pilot, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-21_3dincites_acm-wlp-plp-process-trends, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-15_digitimes_manz-310mm-foplp-ecd-equipment, 2026-06-13_digitimes_linkotech-foplp-rollout-traction, 2026-06-20_prnewswire_manz-asia-310mm-ecd, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_digitimes_tsmc-foplp-timeline-skepticism, 2026-07-06_trendforce_cfmee-plp2000-china-first-plp, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-08-06_siliconbox_500m-units-panel-scale, 2026-02-18_siliconbox_ep4697377a1-fanout-panel-metal-sealing-ring, 2026-07-28_xianfeng_cn122476946a-alignment-mark-protection, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-26_paper_skywater-fowlp-pdk-roadmap]
+updated: 2026-10-06
+sources: [2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-07-31_trendforce_ase-capex-record-10-5b-leap-foplp, 2025-09-12_trendforce_foplp-competitive-2025, 2026-04-13_trendforce_copos-pilot, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-21_3dincites_acm-wlp-plp-process-trends, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-15_digitimes_manz-310mm-foplp-ecd-equipment, 2026-06-13_digitimes_linkotech-foplp-rollout-traction, 2026-06-20_prnewswire_manz-asia-310mm-ecd, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_digitimes_tsmc-foplp-timeline-skepticism, 2026-07-06_trendforce_cfmee-plp2000-china-first-plp, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-08-06_siliconbox_500m-units-panel-scale, 2026-02-18_siliconbox_ep4697377a1-fanout-panel-metal-sealing-ring, 2026-07-28_xianfeng_cn122476946a-alignment-mark-protection, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage, 2026-10-06_thelec_sec-xray-tsv-tgv-inspection-1um]
 related:
   - wiki/technologies/rdl.md
   - wiki/technologies/copos.md
@@ -1024,3 +1024,32 @@ Cu stud 輸入晶圓 → 切單與晶粒貼附 → **第一次封膠** → **載
 ### 相關來源
 
 [[sources/2026-10-05_epo_mitsui-hybrid-bonding-organic-layer]]
+
+---
+
+## 2026-10-06 collect 更新：面板翹曲的第三條處置路線，以及面板量測的供給側
+
+### 1. ⭐⭐⭐ 以負膨脹填料抵銷翹曲 —— 施力點不在基材也不在製程，而在封裝膠
+
+**Semiconductor Engineering（2026-09-17, Bryon Moyer）**：
+
+- 翹曲源於不同 CTE 材料被接合在一起，**封裝與面板越大越嚴重**。
+- **Mitsubishi Chemical Group 已將負熱膨脹（NTE）填料商品化**：**β-eucryptite**（天然，陶瓷用）、**zirconium tungstate**（合成，**三個維度皆為負膨脹**）；混入**環氧模封膠（EMC）**與**底填料（underfill）**，可預混於樹脂或以獨立填料供應。
+- 機制：並非單靠真負 CTE 材料，而是「**一個基體包覆另一個材料以限制其膨脹**」。
+- 商業化三門檻：**寬溫域性能、均勻混入樹脂、雜質不得放出 α 粒子**。
+
+➜ 本頁既載的面板翹曲處置集中在**製程與承載**（承載板材料、debonding 階段的峰值、翹曲補償曝光、分區對位）。**本件是第三條路線：讓封裝膠自己不膨脹。**
+➜ ⚠ **本文零量化值**（無 CTE 值、無翹曲改善百分比、無溫域）；就玻璃基板所稱的翹曲「毫米級」為受訪者口語量級，非量測值 ⇒ **僅可作為方法類別存在與商品化狀態之證據。**
+➜ 🔎 **新空缺**：NTE 填料在**面板尺度（310×310 mm 以上）**是否仍有效（既載的面板翹曲問題正是尺度放大後才顯著）；填料添加對模封膠**流動性與填充率**的代價。
+
+### 2. 📌 面板級量測：1 µm 級 X 光已有分立產品線
+
+**The Elec（2026-05-21）**：韓國檢測設備商 **SEC**（⚠ 非 Samsung Electronics）的 **Semi Scan Panel** 專攻 **TGV 與面板級封裝**，解析度 **1 µm 級**，與其 **Semi Scan TSV**（HBM 混合接合與 TSV，同為 1 µm 級）為**兩條分立產品線**；另有 Semi Scan Wafer（3–5 µm）。
+➜ **面板路線在量測供給側已有對應**，不再只是基材與製程的問題。
+⚠ 數值皆為公司自述、無第三方驗證；「1 µm 級」為等級而非規格值且未附重複性 ⇒ 標 ⚠，不得升格為基準值。
+
+📌 **新增實體（未建頁）**：Mitsubishi Chemical Group。
+
+### 相關來源
+
+[[sources/2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage]]、[[sources/2026-10-06_thelec_sec-xray-tsv-tgv-inspection-1um]]

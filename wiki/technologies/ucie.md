@@ -3,8 +3,8 @@ title: "UCIe — Universal Chiplet Interconnect Express"
 category: technology
 tags: [standards, chiplet, interconnect, UCIe, 3D, hybrid-bonding, UCIe-3.0]
 created: 2026-04-24
-updated: 2026-09-18
-sources: [2026-08-24_intel-newsroom_hot-chips-2026-diamond-rapids-foveros-ucie, 2026-04-24_initial-survey, 2026-04-01_semiengineering_chiplets-2026, 2025-01-28_3dincites_iftle-618-ucie-standard-vs-ucie3, 2025-01-01_semieng_ucie-1-6t-io-chiplets-ai-datacenter, 2025-09-03_uciexpress_ucie30-spec, 2026-03-05_uciexpress_chiplet-summit-2026, 2026-02-12_semieng_ucie3-technical-deepdive]
+updated: 2026-10-06
+sources: [2026-08-24_intel-newsroom_hot-chips-2026-diamond-rapids-foveros-ucie, 2026-04-24_initial-survey, 2026-04-01_semiengineering_chiplets-2026, 2025-01-28_3dincites_iftle-618-ucie-standard-vs-ucie3, 2025-01-01_semieng_ucie-1-6t-io-chiplets-ai-datacenter, 2025-09-03_uciexpress_ucie30-spec, 2026-03-05_uciexpress_chiplet-summit-2026, 2026-02-12_semieng_ucie3-technical-deepdive, 2026-10-06_epo_tenstorrent-discrete-pitch-adapter-substrates]
 related:
   - wiki/technologies/hybrid-bonding.md
   - wiki/technologies/hbm4.md
@@ -372,3 +372,36 @@ Siemens（2026-02-05）：銅負責封裝內通訊，光學負責封裝對封裝
 ⚠ 本節主要來源為 2026-04 之較舊整理，刻意收錄以補 chiplet 標準生態系的制度面缺口；「BoW Flexi 年底前釋出」之狀態需以 2026 下半年來源更新。
 
 來源：[[sources/2026-04-16_semieng_chiplet-standards-plug-n-play]]、[[sources/2026-02-05_siemens_cpo-five-key-trends-2026]]
+
+---
+
+## 2026-10-06 collect 更新：chiplet 互通性的障礙清單新增一個純物理層項目
+
+### ⭐⭐⭐ 連接節距不一致 —— 而解法不是統一節距
+
+**Tenstorrent US20260282966A1（2026-09-17, fam 101296683；發明人 NABOVATI AYDIN [CA]、BAILEY DANIEL WILLIAM [US]；CPC H10W70/611、H10W70/65、H10W70/685、H10W90/00、H10W90/401、H10W90/701）**：
+
+- 每顆 chiplet 底下各放一片**獨立的（discrete）節距轉接基板**，把該 chiplet 的節距轉成**共用基板**的節距。
+- 轉接片是**逐 chiplet 分離的小片**，而非一整片覆蓋全封裝的中介層。
+- 自述效益：**不同節距的 chiplet 可共存於同一封裝，且成本低。**
+
+➜ **本頁既載的 chiplet 互通論述集中在協定與測試交付**：UCIe 各版本、OCP/JEDEC 的 **PTDK（Package Test Design Kit，解決測試資料交付格式）**、**KGD 至今無標準化定義**、EFI 斷裂下的失效歸責。**本件指出的是一個純物理層障礙：不同供應商 chiplet 的 bump pitch 本身不同。**
+
+➜ ⭐⭐⭐ **候選新論述：「局部化不只用於提升密度（局部高密度橋），也可用於吸收規格的不一致。」**
+這同時是本 wiki「**把設計移到規格較鬆的區間**」的**第五例，但方向相反**：
+
+| | 既有四例 | 本件 |
+|---|---------|------|
+| 做法 | 讓**單一設計**避開嚴格規格 | **容忍多個互不相同的規格共存** |
+| 實例 | 珠海天成以 AR≤10 模封銅孔避開混合接合；面板圖案化的粗快／細慢分工；Apple 以 fan-out 放寬 bump pitch | 逐 chiplet 一片轉接基板 |
+| 手段 | 以**大片／單一規格**統一 | 以**小片分散** |
+
+⚠ **專利為前瞻訊號**：Tenstorrent 於 2026-09 公開之專利顯示此方向，**不得陳述為已有產品採用**。⚠ **全件零量化值**（未給節距數字、層數、成本比較）。
+
+🔎 **新空缺**：轉接片的**節距轉換比上限**（決定它能吸收多大的規格差）；轉接片是**矽、玻璃還是有機**；逐 chiplet 分離是否意味著**每顆 chiplet 多一道接合界面** ⇒ 若是，則此方案**以良率換互通性**，是一個可量化的取捨，而該案未量化。
+
+📌 **新增實體頁**：[[entities/tenstorrent]]（本輪建立）。
+
+### 相關來源
+
+[[sources/2026-10-06_epo_tenstorrent-discrete-pitch-adapter-substrates]]

@@ -3,8 +3,8 @@ title: "Foveros — Intel 3D 晶片堆疊技術"
 category: technology
 tags: [Intel, 3D-stacking, hybrid-bonding, Foveros-Direct, micro-bump, TSV, Clearwater-Forest]
 created: 2026-05-03
-updated: 2026-09-30
-sources: [2026-08-24_intel-newsroom_hot-chips-2026-diamond-rapids-foveros-ucie, 2026-03-03_trendforce_intel-clearwater-forest, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-01_semianalysis_cpus-back-datacenter-2026, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap, 2026-09-30_intel_us-advanced-packaging-reticle-8x-12x-fab9, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery]
+updated: 2026-10-06
+sources: [2026-08-24_intel-newsroom_hot-chips-2026-diamond-rapids-foveros-ucie, 2026-03-03_trendforce_intel-clearwater-forest, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-01_semianalysis_cpus-back-datacenter-2026, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap, 2026-09-30_intel_us-advanced-packaging-reticle-8x-12x-fab9, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-10-06_intel_clearwater-forest-no-glass-foveros-9um-3um-emib-45um]
 related:
   - wiki/entities/intel.md
   - wiki/technologies/emib.md
@@ -213,3 +213,39 @@ Intel **PowerVia（18A）** 已量產、**PowerDirect（14A）** 在後。
 - [[sources/2026-09-30_intel_us-advanced-packaging-reticle-8x-12x-fab9]]
 - [[sources/2026-09-30_semieng_bspdn-thermal-dissipation-barriers]]
 - [[sources/2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery]]
+
+---
+
+## 2026-10-06 collect 更新：9 µm／3 µm 世代關係取得一手確認；Clearwater Forest 與玻璃基板無關
+
+### 1. ⭐⭐⭐ Foveros Direct 3D 的世代 pitch —— 一手確認
+
+**Intel 官網「Cutting-edge Process Technologies for Data Center」（Intel Foundry Resource Library，2026-10-06 取得）**：
+
+> "The first generation of Foveros Direct 3D will use copper bonding at a pitch of **9um** while the second generation will shrink the pitch to just **3um**."
+
+| 世代 | pitch | 本頁既載 | 處置 |
+|------|-------|---------|------|
+| 第一代 | **9 µm** | 9 µm（1H26 量產，Clearwater Forest；二手報導） | **一手確認，數字不變** |
+| 第二代 | **3 µm** | 3 µm（TrendForce Insights 2026-09-10，二手） | **一手確認，數字不變** |
+
+➜ **本次確認的重點不只是數字，而是「第一代／第二代」這個世代關係本身。** 此前 9 µm 與 3 µm 分屬不同來源、不同時間、不同性質（量產現況 vs 路線圖），**本次首度出現在同一個一手句子裡並以世代並列** ⇒ 本頁 2026-06-27 所記之「pitch 數字校正說明」（<5 µm 官方目標 vs <10 µm 量產現況並存）可與本次一手敘述並讀：**官方自身的最新表述是 9 µm → 3 µm 兩代制**。
+⚠ **「<5 µm（18A-PT，2025-04-29 官方新聞稿）」與本次的「第二代 3 µm」是否為同一個目標的不同表述，仍未結清**；三個數字（<5 µm、3 µm、<10 µm／9 µm）的關係應持續追蹤是否收斂。
+
+### 2. ⭐⭐⭐ Clearwater Forest 不搭載玻璃核心基板
+
+2026-10-05 本 wiki 列為**最高優先**之待查證項（某聚合網站稱「Intel 已出貨首款玻璃基板處理器（Clearwater Forest）」）**本輪結清，結論為否**：
+
+- **Intel 官網在 Clearwater Forest 的脈絡下完全未提及玻璃基板**，所載封裝為 **Foveros Direct 3D ＋ EMIB 3.5D**；頁面另有 FCBGA 2D+ 一節提及**有機基板**（定位為成本最佳化方案），但未對 CWF 基材類型作任何聲明。
+- 該主張之表述最明確的出處（AtlasPCB, 2026-05-25）**未提供任何一手引用**。
+- ⚠ 「官網未提及」≠「官方否認」。完整處置見 [[sources/2026-10-06_atlaspcb_clearwater-forest-glass-core-claim-unsourced]]。
+
+### 3. 架構敘述（補充，與既載一致）
+
+> "This unit of CPU chiplets sitting atop a large 'local' cache becomes a complete compute module, which can then be replicated to scale up compute capability."
+
+—— 與本頁既載之 Clearwater Forest「18A 計算晶粒 → Foveros Direct 3D → Intel 3 基底晶粒」架構一致，未帶來新資訊。
+
+### 相關來源
+
+[[sources/2026-10-06_intel_clearwater-forest-no-glass-foveros-9um-3um-emib-45um]]、[[sources/2026-10-06_atlaspcb_clearwater-forest-glass-core-claim-unsourced]]

@@ -3,7 +3,7 @@ title: "康寧 / Corning Incorporated"
 category: entity
 tags: [glass-substrate, TGV, materials, CPO, Corning]
 created: 2026-09-18
-updated: 2026-10-05
+updated: 2026-10-06
 sources:
   - 2026-08-06_epo_corning-small-diameter-tgv-adhesion
   - 2026-09-30_epo_xiamen-anjieli-cn121335557a-silane-parylene-tgv
@@ -236,3 +236,17 @@ Intel ZnO「三維咬合」）應改述為「三種賭法」而非「三條互�
 ### 相關來源
 
 [[sources/2026-10-05_biggo_corning-glass-110c-cpo]]
+
+---
+
+## 2026-10-06 collect 更新：110 °C／5 年／折射率 <1.5% 的一手複核 —— 本輪執行，未取得
+
+本頁 2026-10-05 自聚合網站（finance.biggo.com）收錄 CPO 玻璃的三項規格（**封裝內局部熱點 110 °C、5 年光學壽命、折射率變化 <1.5%**），並標記 **⚠⚠ 待一手複核**。
+
+**本輪依 2026-09-21 官網複核規則執行，以 corning.com 為限檢索，未取得任何對應之一手文件。** 所得皆為不相關產品線的技術資料（AR 波導用高折射率玻璃晶圓的光學特性化、高折射率鏡片、Gorilla Glass、ULE 7972、Polarcor 偏光片、柔性 AMOLED 基板 TIP 503）。
+
+➜ **處置**：
+- **該組數字維持「待第二來源佐證」狀態，不得升格為既載基準值**，亦不得作為其他推論之前提。
+- 2026-10-05 所記之作業建議「下輪優先以一手來源複核本輪兩個最高價值的二手數字（Corning 110 °C／5 年、TSMC×Winbond 規格表）」—— **Corning 一項本輪已執行，結果為負面（查無）；TSMC×Winbond 一項本輪未執行，順延。**
+- 📌 **本次為官網複核規則第一次「查無」結案**（此前三次分別為：攔錯一次 —— AMAT CMP 產品層；正向確認兩次 —— Intel 光罩倍數、本輪 Intel Foveros／EMIB pitch）。**「查無」與「否證」不同：查無只代表官網未公開，不代表數字錯誤。**
+- 🔎 **追蹤方式更新**：改以 **Corning 的 CPO／玻璃基板專屬產品頁或白皮書**、**OFC／ECOC 的 Corning 發表**，或**客戶側（CPO 整合商）的規格引用**為目標，而非一般玻璃產品資料表。

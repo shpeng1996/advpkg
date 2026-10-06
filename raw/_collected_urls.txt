@@ -770,3 +770,18 @@
 2026-10-05 | EPO:82323300:US20260255994A1 | raw/patents/2026-10-05_US20260255994A1_tsmc-bridge-die-with-tsv-backside-via-encapsulant.md | TSMC over-die bridge WITH TSV + backside via
 2026-10-05 | EPO:90359808:KR20260119943A | raw/patents/2026-10-05_KR20260119943A_apple-local-interconnect-air-gap-cavity-wire.md | Apple local interconnect: wire spanning air-gap cavity
 2026-10-05 | EPO:92146871:US20260231801A1 | raw/patents/2026-10-05_US20260231801A1_mitsui-hybrid-bonding-organic-bonding-layer.md | Mitsui: Si dies hybrid-bonded to ORGANIC bonding layer
+2026-10-06 | https://www.intel.com/content/www/us/en/foundry/library/advanced-process-technologies-for-data-center.html | raw/articles/2026-10-06_intel_clearwater-forest-no-glass-foveros-9um-3um-emib-45um.md | Intel 1st-party: CWF no glass; 9->3um; EMIB 55->45um
+2026-10-06 | https://www.atlaspcb.com/blog/glass-core-substrate-ai-packaging-intel-clearwater-forest/ | raw/articles/2026-10-06_atlaspcb_clearwater-forest-glass-core-claim-unsourced.md | CWF glass-core claim: no primary source cited
+2026-10-06 | https://xenospectrum.com/en/ajinomoto-abf-china-supply/ | raw/articles/2026-10-06_xenospectrum_ajinomoto-abf-cut-unconfirmed-layers-per-side.md | ABF cut UNCONFIRMED; ABF ~11 layers PER SIDE 2026
+2026-10-06 | https://www.thelec.net/news/articleView.html?idxno=10672 | raw/articles/2026-10-06_thelec_sec-xray-tsv-tgv-inspection-1um.md | SEC X-ray 1um for TSV+TGV; tube life 10,000h
+2026-10-06 | https://semiengineering.com/negative-expansion-materials-resist-warpage/ | raw/articles/2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage.md | Mitsubishi Chem negative-CTE filler in EMC/underfill
+2026-10-06 | EPO:97352271:WO2026206376A1 | raw/patents/2026-10-06_WO2026206376A1_microchip-polysic-ceramic-interposer-mandrel-vias.md | Microchip poly-SiC ceramic interposer, mandrel vias
+2026-10-06 | EPO:97874987:EP4815713A2 | raw/patents/2026-10-06_EP4815713A2_intel-bridge-chiplet-shield-dummy-die.md | Intel bridge shield; 2nd edge under a DUMMY die
+2026-10-06 | EPO:101460564:US20260305351A1 | raw/patents/2026-10-06_US20260305351A1_intel-mold-extension-package-to-package-topside-bridge.md | Intel mold extension: package-to-package topside bridge
+2026-10-06 | EPO:101460583:US20260304790A1 | raw/patents/2026-10-06_US20260304790A1_micron-interposer-embedded-active-buffers.md | Micron: active buffers embedded IN the interposer
+2026-10-06 | EPO:101296683:US20260282966A1 | raw/patents/2026-10-06_US20260282966A1_tenstorrent-discrete-pitch-adapter-substrates.md | Tenstorrent per-chiplet discrete pitch adapter substrate
+2026-10-06 | https://doi.org/10.1116/6.0005656 | raw/papers/2026-10-06_openalex_kuleuven-imec-n2-plasma-sin-cap-cu-oxide.md | N2+SiN cap: 98.7% CuOx, 0.75nm RMS, 10 days stable
+2026-10-06 | https://doi.org/10.1021/acs.langmuir.6c03389 | raw/papers/2026-10-06_openalex_n2-plasma-sio2-activation-w2w-bonding.md | N2 plasma on SiO2 for W2W; activation has an optimum
+2026-10-06 | https://doi.org/10.1016/j.mssp.2026.111189 | raw/papers/2026-10-06_openalex_gatech-terahertz-nde-8layer-interposer.md | GaTech terahertz NDE of 8-layer interposer
+2026-10-06 | https://doi.org/10.1088/1361-6528/aeae46 | raw/papers/2026-10-06_openalex_tongji-wafer-embedded-pitch-standard-pose-correction.md | Pitch standard: <1nm dev, U=1.17-1.34nm k=2
+2026-10-06 | https://doi.org/10.1021/acsaenm.6c00380 | raw/papers/2026-10-06_openalex_auburn-nife-tsv-magnetic-shield-package.md | NiFe-filled TSV as magnetic shield; SF 114/187

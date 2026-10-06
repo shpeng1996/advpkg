@@ -3,8 +3,8 @@ title: "味の素 / Ajinomoto Co., Inc.（ABF 味之素增層膜）"
 category: entity
 tags: [Ajinomoto, ABF, substrate, supply-chain, bottleneck, geopolitics, Japan]
 created: 2026-10-05
-updated: 2026-10-05
-sources: [2026-10-05_tomshardware_ajinomoto-abf-china-cut]
+updated: 2026-10-06
+sources: [2026-10-05_tomshardware_ajinomoto-abf-china-cut, 2026-10-06_xenospectrum_ajinomoto-abf-cut-unconfirmed-layers-per-side]
 related: [concepts/substrate-materials-supply-chain.md, concepts/geopolitics-advanced-packaging.md, concepts/advanced-packaging-market.md, entities/ibiden.md, entities/shinko.md, entities/semco.md]
 ---
 
@@ -63,3 +63,40 @@ related: [concepts/substrate-materials-supply-chain.md, concepts/geopolitics-adv
 ## 參考資料 / References
 
 [[sources/2026-10-05_tomshardware_ajinomoto-abf-china-cut]]、[[concepts/substrate-materials-supply-chain]]、[[concepts/geopolitics-advanced-packaging]]
+
+---
+
+## 2026-10-06 collect 更新：減供一事未經確認；並取得 ABF 層數與尺寸的長期演進（口徑為「每面」）
+
+**來源**：XenoSpectrum（2026-08-20）
+
+### 1. ⚠⚠⚠ 「對中國大陸減供 30%」—— 事件本身未經確認
+
+| 項目 | 本件所載 |
+|------|---------|
+| 事件是否確認 | **未確認**（*"Whether such a change actually occurred has not been confirmed."*；並稱「尚未到可以用『斷供』或制裁來討論的階段」） |
+| Ajinomoto 的回應 | **既未確認亦未否認**；2026-06-30 資料僅稱對整條供應鏈的供應體系無疑慮 |
+| 原始出處 | **JW Insights（集微網），2026-08-12** |
+| 原始報導的細節 | **未指明目標期間、合約條件、產品等級、各客戶量，亦無任何具名說法** |
+| 起始時點 | **仍未揭露** |
+
+➜ 本頁與 [[concepts/geopolitics-advanced-packaging]] 於 2026-10-05 以此案所立之「**企業配額決定**」類別**保留但須加註：其唯一案例為一則未經當事企業確認的報導**，且在取得第二個案例或 Ajinomoto 確認之前不得作為其他推論之前提。
+➜ ⚠ **另有「漲價 30%」的說法流通中**（聚合網站，本輪未取得可靠一手來源故未收錄）。**「減供 30%」與「漲價 30%」是兩個不同的 30%，不得混用或互相印證。**
+
+### 2. ⭐⭐⭐ ABF 層數與基板尺寸的長期演進（本 wiki 首次取得，且**口徑為「每面」**）
+
+| 項目 | 1999 | 2023 | 2026 | 2031+ |
+|------|------|------|------|-------|
+| **ABF 層數（每面 per side）** | ~3 | — | **~11** | **~13（預估）** |
+| 基板尺寸（方形邊長） | — | ~70 mm | **~100 mm** | **~120 mm（預估）** |
+
+- ABF 市占：**自上市以來 >95%**（與本頁既載之 >95% 一致）
+- ABF 開發投資：**2023–2030 共 250 億日圓**（本頁既載另有 ¥1.2B 土地購置、岐阜第三廠 2032、ABF 毛利 >50%）
+
+➜ ⚠⚠ **這組數字觸發本輪最重要的一處口徑修正**：本 wiki 既載之「單一先進 AI 基板 ＝ 3.5× 板面積 × **3× ABF 層數（18 vs 6）**」與替代者「**Lotus ≤9 層已驗證**」**皆未標明是每面或合計**，而 Ajinomoto 自身口徑是**每面**（2026 約 11 層／面，即合計約 22 層）。兩種讀法會得出相反結論。
+➜ **處置：既載數值不改動，但三組數字自此一律標註「⚠ 口徑未定（每面／合計）」，且「替代者層數天花板 vs AI 加速器所需層數」的比較在口徑釐清前不得支撐任何方向的結論。** 詳見 [[concepts/substrate-materials-supply-chain]]。
+➜ **新增最高優先空缺**：確認「18」「6」「≤9」各自的口徑。
+
+### 相關來源
+
+[[sources/2026-10-06_xenospectrum_ajinomoto-abf-cut-unconfirmed-layers-per-side]]

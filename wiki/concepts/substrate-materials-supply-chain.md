@@ -3,8 +3,8 @@ title: "基板與材料供應鏈 / Substrate & Materials Supply Chain（ABF・T-
 category: concept
 tags: [ABF, Ajinomoto, substrate, supply-chain, Ibiden, Unimicron, Shinko, SEMCO, Kinsus, Nan-Ya-PCB, glass-core, warpage, bottleneck]
 created: 2026-10-03
-updated: 2026-10-05
-sources: [2026-10-03_tomshardware_abf-substrate-state-2026, 2026-10-03_thelec_philoptics-tgv-2mm-glass, 2026-10-03_digitaltoday_jntc-tgv-thickness-lineup, 2026-10-03_epo_semco-coreless-interposer-organic-bridge]
+updated: 2026-10-06
+sources: [2026-10-03_tomshardware_abf-substrate-state-2026, 2026-10-03_thelec_philoptics-tgv-2mm-glass, 2026-10-03_digitaltoday_jntc-tgv-thickness-lineup, 2026-10-03_epo_semco-coreless-interposer-organic-bridge, 2026-10-06_xenospectrum_ajinomoto-abf-cut-unconfirmed-layers-per-side, 2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage]
 related: [technologies/glass-substrate.md, concepts/advanced-packaging-market.md, concepts/geopolitics-advanced-packaging.md, entities/ibiden.md, entities/shinko.md, entities/semco.md, entities/absolics.md, entities/agc.md]
 ---
 
@@ -234,3 +234,51 @@ AI 加速器封裝之下的**載板層**供應鏈，由三層構成：
 ### 相關來源
 
 [[sources/2026-10-05_tomshardware_ajinomoto-abf-china-cut]]、[[sources/2026-10-05_semieng_wir158-semco-fcbga-hbm-wafer-share]]、[[sources/2026-10-05_thelec_semco-glass-samples-apple]]、[[sources/2026-10-05_epo_mitsui-hybrid-bonding-organic-layer]]
+
+---
+
+## 2026-10-06 collect 更新：ABF 層數的口徑問題，以及 CTE 處置的第三條路線
+
+### 1. ⚠⚠⚠ 「18 層 vs ≤9 層」這組比較的口徑未定 —— 兩種讀法得出相反結論
+
+**XenoSpectrum（2026-08-20）給出 Ajinomoto 自身揭露的演進序列，且其層數口徑為「每面（per side）」**：
+
+| 項目 | 1999 | 2023 | 2026 | 2031+ |
+|------|------|------|------|-------|
+| **ABF 層數（每面）** | ~3 | — | **~11** | **~13（預估）** |
+| 基板尺寸（方形邊長） | — | ~70 mm | **~100 mm** | **~120 mm（預估）** |
+
+- ABF 市占：**自上市以來 >95%**；ABF 開發投資 **2023–2030 共 250 億日圓**。
+
+本頁與 [[overview]] 既載之核心比較為：
+> 「單一先進 AI 基板 ＝ 3.5× 板面積 × **3× ABF 層數（18 vs 6）**」，而替代者 **Lotus NBF ≤9 層已驗證、9–11 層開發中**（另：華正新材 CBF 良率 >85%、宏昌 GBF 小量試產、中國大陸自給率 <5%）⇒ 「能否繞過 ABF」的正確形式是「在幾層以下能」。
+
+**Ajinomoto 自身的 2026 世代是每面約 11 層，即雙面合計約 22 層。** 於是：
+
+| 若本 wiki 的「18 層」是… | 與 Ajinomoto 2026 世代（每面 11／合計 22）的關係 | 對「能否繞過」的結論 |
+|---|---|---|
+| **合計** | AI 加速器所需（18 合計）**低於** Ajinomoto 當前世代 | 若 Lotus 的 ≤9 層也是合計，差距約 2× |
+| **每面** | AI 加速器所需（合計 36）**遠高於** Ajinomoto 當前世代 | 差距更大，連 Ajinomoto 都還沒到 |
+
+且 **Lotus 的「≤9 層」是每面或合計，本 wiki 亦未載明。**
+
+➜ **處置（此為口徑問題，不是數值錯誤）**：
+1. **既載數值一律不改動。**
+2. **「18 vs 6」「≤9 層已驗證」「9–11 層開發中」三組數字自此一律標註「⚠ 口徑未定（每面／合計）」。**
+3. **「替代者的層數天花板 vs AI 加速器所需層數」這組比較，在口徑釐清前不得支撐任何方向的結論**，包括本 wiki 2026-10-05 所寫之「良率已達標、系統級驗證已過，而驗證區間止於 ≤9 層」。該句的**事實部分保留**，其**推論部分降階為待證**。
+4. **新增最高優先空缺：確認「18」「6」「≤9」各自的口徑。** 追蹤方式：Ajinomoto／Lotus／華正新材的技術資料或法說會對層數的定義寫法。
+
+➜ 📌 **本 wiki 既載之「凡討論材料自主化，須區分『做得出來』與『做得到那個規格』」仍然成立，但本輪顯示還要再加一層：「做得到那個規格」必須先確定那個規格的口徑。**
+
+### 2. ⭐⭐⭐ CTE 失配的第三種處置哲學：以負膨脹填料抵銷
+
+**Semiconductor Engineering（2026-09-17, Bryon Moyer）**：**Mitsubishi Chemical Group 已將負熱膨脹（NTE）填料商品化** —— **β-eucryptite**（天然，陶瓷用）與 **zirconium tungstate**（合成，**三維皆負膨脹**），混入 **EMC** 與**底填料**；機制為「基體包覆另一材料以限制其膨脹」。
+
+- 本 wiki 既有兩種處置：**選材匹配**（玻璃 CTE 可調至近矽）、**限制用途以迴避**（上海美維：玻璃只當堆疊載板）⇒ **本件把施力點自基板層下移到界面材料層。**
+- **商業化三門檻**：寬溫域性能、均勻混入樹脂、**雜質不得放出 α 粒子** ⇒ ⭐⭐ **把填料純度與軟錯誤率連起來**，本 wiki 此前完全沒有 α 粒子／軟錯誤的條目。
+- ⚠ **該文零量化值**（無 CTE 值、無翹曲改善百分比、無溫域）。
+- 📌 **新增實體（未建頁）**：**Mitsubishi Chemical Group** —— 材料供應鏈清單自此多一家**非 ABF 的日系封裝材料商**，且其切入點是**模封膠與底填料**而非基板膜。
+
+### 相關來源
+
+[[sources/2026-10-06_xenospectrum_ajinomoto-abf-cut-unconfirmed-layers-per-side]]、[[sources/2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage]]

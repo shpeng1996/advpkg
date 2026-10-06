@@ -3,8 +3,8 @@ title: "先進封裝的測試、量測與失效分析 / Test, Metrology & Failur
 category: concept
 tags: [test, metrology, inspection, failure-analysis, KGD, KGI, KGP, DFA, yield]
 created: 2026-09-17
-updated: 2026-10-04
-sources: [2026-09-27_paper_binghamton-ibm-pad-scaling-resistance-variability, 2026-09-27_paper_purdue-ru-cu-em-lifetime-blacks-n-0154, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2025-01-14_semieng_known-good-interposer-screening, 2025-07-10_semieng_advanced-packaging-reshaping-inspection, 2024-11-12_semieng_packaging-drives-test-metrology-innovation, 2026-08-01_jfap_3dic-failure-analysis-dfa, 2026-07-06_apl_lensless-through-silicon-phase-imaging, 2026-09-06_ndte_hysan-sparse-view-xct-tsv, 2026-08-02_chips_cpo-wafer-level-probe-card, 2026-08-27_samsung_us20260256000a1-interposer-test-pad, 2026-08-13_jcet_us20260239928a1-hybrid-bonding-substack-test, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-06-28_hyperframe_amat-hybrid-bonding-hedge, 2026-09-26_paper_ibm-amine-post-cmp-clean, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-10-02_microrel_tudelft-google-3dic-fa-hardware, 2026-10-02_imaps-dpc2026_gelpak-universal-carriers-singulated-die]
+updated: 2026-10-06
+sources: [2026-09-27_paper_binghamton-ibm-pad-scaling-resistance-variability, 2026-09-27_paper_purdue-ru-cu-em-lifetime-blacks-n-0154, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2025-01-14_semieng_known-good-interposer-screening, 2025-07-10_semieng_advanced-packaging-reshaping-inspection, 2024-11-12_semieng_packaging-drives-test-metrology-innovation, 2026-08-01_jfap_3dic-failure-analysis-dfa, 2026-07-06_apl_lensless-through-silicon-phase-imaging, 2026-09-06_ndte_hysan-sparse-view-xct-tsv, 2026-08-02_chips_cpo-wafer-level-probe-card, 2026-08-27_samsung_us20260256000a1-interposer-test-pad, 2026-08-13_jcet_us20260239928a1-hybrid-bonding-substack-test, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-06-28_hyperframe_amat-hybrid-bonding-hedge, 2026-09-26_paper_ibm-amine-post-cmp-clean, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-10-02_microrel_tudelft-google-3dic-fa-hardware, 2026-10-02_imaps-dpc2026_gelpak-universal-carriers-singulated-die, 2026-10-06_openalex_gatech-terahertz-nde-8layer-interposer, 2026-10-06_openalex_tongji-wafer-embedded-pitch-standard-pose-correction, 2026-10-06_thelec_sec-xray-tsv-tgv-inspection-1um]
 related:
   - wiki/technologies/hybrid-bonding.md
   - wiki/technologies/cowos.md
@@ -847,3 +847,58 @@ Micromachines 的**五種 TGV 剖面**（直壁／沙漏／等腰錐／倒錐／
 ### 相關來源
 
 [[sources/2026-10-04_chipletmarketplace_evg-semicon-west-2026]]、[[sources/2026-10-04_openalex_snu-uiuc-tim-heat-path-engineering]]、[[sources/2026-10-04_openalex_purdue-cu-microstructure-tsv-stress]]
+
+---
+
+## 2026-10-06 collect 更新：新增一個模態、一個參數軸、校正鏈的源頭，以及一個候選的第四類失效模式
+
+本輪三件來源全部落在本頁，是本輪**單頁收穫最集中的一次**。
+
+### 1. ⭐⭐⭐ 量測模態清單新增 THz
+
+**Georgia Tech 3D Packaging Research Center（`10.1016/j.mssp.2026.111189`, 2026-10-05；Georgia Tech ECE/MSE ＋ Georgia Tech-CNRS IRL 2958）**：
+
+- 以**兆赫茲（THz）電磁波**對 **8 層中介層**做非破壞檢測（NDE）。
+- 標的缺陷**三類：對位偏移（misalignment）、孔洞（voids）、翹曲（warpage）** —— 恰為本頁既載的三大良率殺手，且是**第一個宣稱「一個模態同時處理三者」的來源**（既載一向是一個指標一個工具）。
+- **偏振（polarization）影響可偵測深度** ⇒ ⭐⭐ **新增一個量測參數軸**。本頁既有的參數軸為解析度、重複性、不確定度、視野、速度；**偏振此前未出現。**
+- 訊號處理：**去卷積 ＋ 非監督式學習**。
+
+⚠⚠ **本件最須追問的是口徑而非能力。** 除「8 層」外**零量化值**（無空間解析度、無深度上限、無偵測率／偽陽率）。本頁 2026-09-21 已立「**量測失效模式第三類：規格漂亮但答錯問題**」—— **THz 若無解析度與不確定度數字，無法判斷它能回答「有無缺陷」還是「缺陷多大」，而翹曲與對位偏移本質上都是量值問題。** ⇒ 本件僅可作為**模態存在性**之證據。
+🔎 新空缺：THz 的解析度與深度上限；**對金屬層（RDL、Cu 柱）的穿透限制**；非監督式學習在無標註資料下的**偽陽率驗證方式**。
+
+### 2. ⭐⭐⭐ 校正鏈的源頭 —— 本頁此前缺的最上游一環
+
+**同濟大學（`10.1088/1361-6528/aeae46`, 2026-09-30, Nanotechnology）**：
+
+| 項目 | 數值 |
+|------|------|
+| 校正後與嵌埋前參考值之偏差 | **全部 < 1 nm** |
+| **擴展不確定度（k=2）** | **1.17–1.34 nm** |
+| 偏差與 yaw 角 | **單調遞增** |
+| 量測手段 | 觸針輪廓儀（tilt、yaw）＋ SEM（roll） |
+
+- 傳統多層膜節距標準件均勻性極佳但**尺寸太小無法用於晶圓級**；嵌入晶圓可得晶圓級標準件，**但嵌埋這個動作本身引入 tilt／yaw／roll 誤差**，且**單一特性化方法無法量化三維取向**。
+- ⭐ **本件少見地同時給出偏差與擴展不確定度並標明 k 值** —— 直接符合本頁 2026-09-21 所立規範。
+- ➜ **直接支撐既載論述「量測不確定度可以達到 100%，此時『製程均勻度』數字主要是量測雜訊」**（既載最極端一筆：天津大學 TSV 深度量測重複性 2.18 µm ≈ 陣列變異 2.15 µm）。**本件顯示即使在標準件層級，量測鏈上每加一道工序就加一項不確定度** —— 這是本 wiki 首次有標準件層級的實例。
+- ⭐⭐ **候選的量測失效模式第四類：自由度不足 —— 工具的維度少於問題的維度。** 既有三類為**精度不足**型、**完全脫鉤**型、**規格漂亮但答錯問題**型。本件以**兩種互補儀器分攤三個自由度**作為解法。
+- ⚠⚠ **口徑警告（引用時必須並記）**：**1.17–1.34 nm (k=2) 是節距標準件的不確定度，不是封裝對位或混合接合 overlay 的能力值。** 既載之混合接合機台對準 **100 nm (3σ)**、W2W overlay **<40 nm**、AMAT×Besi D2W **100 nm @3σ** 皆為不同量測對象，**不可並列比較**，否則會得出「標準件比機台準 100 倍所以機台還有空間」這類錯誤推論。
+
+### 3. ⭐⭐ 新增一個此前不在本頁視野內的軸：量測設備的消耗件壽命
+
+**The Elec（2026-05-21）**：韓國檢測設備商 **SEC**（⚠ **非 Samsung Electronics**）：
+
+| 產品 | 標的 | 解析度 | 狀態（2026-05） |
+|------|------|--------|----------------|
+| Semi Scan TSV | HBM 混合接合、TSV | **1 µm 級** | 開發完成預計 Q2–Q3 |
+| Semi Scan Panel | **TGV、面板級封裝** | **1 µm 級** | 同上 |
+| Semi Scan Wafer | 晶圓 | 3–5 µm | 2026-03 完成，客戶評估中 |
+
+- 自有 **hybrid open-tube** X 光管**壽命 10,000 h vs 傳統 300–500 h（約 20–33×）**。
+- ➜ **本頁的量測論述一向圍繞解析度與不確定度；本件指出量產檢測的另一個限制是設備可用度與消耗件成本** —— 300–500 h 的管壽在 24/7 量產線上意味著每月換管。
+- ➜ 📌 **解析度與標的製程綁定**：封裝內的接合／孔需 **1 µm 級**，晶圓級 **3–5 µm** ⇒ 嚴 3–5 倍。
+- ➜ 📌 **與 THz 件並讀，構成同輪兩個「新堆疊／新基材帶動新量測」實例**，可與本頁核心論述（量測為第三個結構性瓶頸，與製程良率、熱並列）並列。
+- ⚠ 商業指標（2026 營收 450–520 億韓元／市占 2.6%；2027 營收 700–850 億韓元／市占 3.9%）與技術數值**皆為公司自述、無第三方驗證**；「1 µm 級」為等級而非規格值且**未附重複性** ⇒ 標 ⚠，**不得升格為基準值**。
+
+### 相關來源
+
+[[sources/2026-10-06_openalex_gatech-terahertz-nde-8layer-interposer]]、[[sources/2026-10-06_openalex_tongji-wafer-embedded-pitch-standard-pose-correction]]、[[sources/2026-10-06_thelec_sec-xray-tsv-tgv-inspection-1um]]

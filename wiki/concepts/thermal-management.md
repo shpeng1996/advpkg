@@ -3,8 +3,8 @@ title: "先進封裝熱管理 / Thermal Management in Advanced Packaging"
 category: concept
 tags: [thermal-management, liquid-cooling, 3D-IC, CoWoS, heat-dissipation, TIM, ECTC-2025, GaN, power-delivery, co-design, patent-signal, delamination]
 created: 2026-04-25
-updated: 2026-10-04
-sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2025-12-01_semiengineering_thermal-management, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-02_trendforce_samsung-hbm5-computex2026, 2026-05-21_semieng_hi-roadmap-nature-paper-intel, 2026-08-13_semieng_1mw-rack-debate-thermal, 2026-04-27_semieng_semiconductor-materials-misbehave, 2026-08-21_trendforce_chip-packaging-heat-ai-bottleneck-cpo-stco, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_arxiv_umn-multi-kw-power-delivery-3d-hi, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_samsung-cn122602880a-ivr-capacitor-interposer-core, 2026-10-02_imaps-dpc2026_delo-die-side-capacitor-encapsulation]
+updated: 2026-10-06
+sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2025-12-01_semiengineering_thermal-management, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-02_trendforce_samsung-hbm5-computex2026, 2026-05-21_semieng_hi-roadmap-nature-paper-intel, 2026-08-13_semieng_1mw-rack-debate-thermal, 2026-04-27_semieng_semiconductor-materials-misbehave, 2026-08-21_trendforce_chip-packaging-heat-ai-bottleneck-cpo-stco, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_arxiv_umn-multi-kw-power-delivery-3d-hi, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_samsung-cn122602880a-ivr-capacitor-interposer-core, 2026-10-02_imaps-dpc2026_delo-die-side-capacitor-encapsulation, 2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage]
 related:
   - wiki/technologies/cowos.md
   - wiki/technologies/hybrid-bonding.md
@@ -1085,3 +1085,18 @@ SNU × UIUC 的 TIM 綜述明確指出：**TIM 的 bulk／effective 導熱係數
 ### 相關來源
 
 [[sources/2026-10-04_openalex_snu-uiuc-tim-heat-path-engineering]]、[[sources/2026-10-04_epo_intel-thermal-switch-in-emib-bridge]]、[[sources/2026-10-04_openalex_gachon-low-temperature-solders]]、[[sources/2026-10-04_ninescrolls_skhynix-hb-hbm5-775um]]、[[sources/2026-10-04_openalex_kitech-glucose-vapor-cu-oxide-reduction]]
+
+---
+
+## 2026-10-06 collect 更新：封裝膠與底填料的第三個設計目標
+
+**Semiconductor Engineering（2026-09-17, Bryon Moyer）**：**Mitsubishi Chemical Group 已將負熱膨脹（NTE）填料商品化**（**β-eucryptite**、**zirconium tungstate**（三維皆負膨脹）），混入**環氧模封膠（EMC）**與**底填料（underfill）**，以抵銷樹脂的正膨脹。受訪者 Sanjiv Bhatt（Mitsubishi Chemical）：*"Our negative-CTE filler contracts as temperature rises, offsetting the natural expansion of the resin."*
+
+- 本頁既載的封裝膠／底填料填料論述集中在**熱傳導**（高導熱填料的形態與取向、BN、液態金屬、石墨片、垂直排列）與**低溫組裝**（Sn–Bi／In 低溫焊料降低回流翹曲但變脆）。**本件是第三個設計目標：熱膨脹的主動抵銷。**
+- ➜ **候選新論述：「同一個填料系統正在同時被要求導熱、不膨脹、且不放射 α 粒子」** —— 三者互相牽制（高填充率有利導熱，但純度與流動性受限）。這是本 wiki「**同一參數同時服務兩個相反的失效模式**」在**材料配方層**的實例，且此例為**三個目標而非兩個**。
+- ⚠ **該文零量化值**：無 CTE 值、無熱導值、無翹曲改善百分比、無溫域。「毫米級」翹曲為受訪者口語量級。
+- 🔎 **新空缺**：NTE 填料的加入對 **EMC／underfill 熱導率**的影響（若 NTE 填料本身導熱差，則與既載的高導熱填料路線直接衝突 —— 本文完全未提此取捨）。
+
+### 相關來源
+
+[[sources/2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage]]
