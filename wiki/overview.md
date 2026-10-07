@@ -1453,6 +1453,17 @@ related: [wiki/index.md, wiki/analyses/2026-09-15_knowledge-base-consolidation.m
 - ⭐ **Amkor TW202607900A（fam 98776443）：RDL 基板上下兩面各一道混合接合，第二道界面位於第一道的投影範圍內** —— 本 wiki 此前無此拓撲條目。**列下輪專利軌優先項。**
 - ⭐ **缺實體頁（本輪新進而無頁）**：**Wolfspeed**（本輪唯一的一手 SiC 中介層主張者，且已為 SiC 熱導數值之唯一來源）、**中國科學院半導體研究所**、**Université de Sherbrooke／3IT**、**proteanTecs／Modus Test／Teradyne／Advantest**（測試側四家，皆為 semiengineering 電阻件之受訪機構）。既有清單延續：Microchip Technology、Mitsubishi Chemical Group、SEC、Exosens、Georgia Tech 3D PRC、Auburn University、同濟大學、中國工程物理研究院、Google／Apple／Broadcom／MediaTek／GlobalFoundries／Hanwha Semitech／SET Corporation、Entegris、Lam Research、AUO／Innolux／Kaneka。
 
+**本輪的事後更正與一項安全性發現（寫檔完成後 `device_bash` 恢復可用所致）**
+
+- ✅ **git 已於本輪提交（`4500ca8`「2026-10-07」，58 檔），`git status` 事後乾淨；尚未 push（`ahead 1`）。**
+- ⚠⚠ **更正：「2026-10-05／10-06 兩輪累計未提交」不成立。** git log 顯示兩輪工作已分別由 `5f48d4d`（2026-10-06，53 檔）與 `7d89e45`（2026-10-07 07:00，53 檔）提交，高機率為 `daily_git_push.bat` 依排程補上。
+  ➜ ⭐⭐ **新作業規範（候選）：「本輪未提交」不應記為待辦，而應記為「待 `daily_git_push.bat` 或人工補上」，並在次輪開場即以 `git log` 複核；否則待辦會在 log 中累積成一個不存在的問題。**
+- ⚠⚠ **更正：`tmp_obj_*` 殘留自 215 增至 288（+73）** ⇒ 2026-10-03／10-04 所估「每輪約增 70 個」**本輪獲得驗證**；`.git/` 下另已累積 **32 個歷史鎖檔殘留**（本輪的 `HEAD.lock` 已改名為 `stale-HEAD.lock-20261007`）。➜ **Windows 側 `git gc --prune=now` 之建議優先度提高。**
+- ⚠⚠ **環境事項 1 須修正為：`device_bash` 在 collect 階段全程不可用，但在寫檔完成後恢復可用。** ⇒ **作業規範（29）（以 commit_files 路徑完成全部讀寫）仍第三輪成立，但應補一句：「流程結束前應再試一次 `device_bash`，因其可能在 session 中途恢復 —— 本輪正因如此才得以提交。」**
+- ⚠⚠⚠ **安全性發現（與蒐集無關，列為最高優先人工處置項）：`origin` remote 的 URL 內嵌明文 GitHub personal access token（`https://<user>:<token>@github.com/...` 形式，位於 `.git/config` 的 `remote.origin.url`）。**
+  依 §QUALITY RULES 之精神，**本 wiki 不記錄該 token 之任何字元**，僅記錄其形式與位置。⚠ 風險：任何能讀取此資料夾的程序或工具皆可讀到（本輪即出現在一次 `git remote -v` 輸出中）。
+  ➜ **建議（須人工執行，本流程未代為變更）**：①GitHub 上撤銷並重新產生該 token；②改用 credential helper（Windows：`git config --global credential.helper manager`）或 SSH key；③`git remote set-url origin https://github.com/<owner>/<repo>.git`。
+
 **lint 待辦（沿用並更新）**
 
 - ⚠⚠⚠ **`technologies/glass-substrate.md` 與 `technologies/hybrid-bonding.md` 的段落重組連續第五輪未執行。** 本輪已再次依自我約束把兩頁更新**壓縮為純條列、論證全部留在來源頁**（glass-substrate 約 +1.6 KB、hybrid-bonding 約 +2.3 KB）。**2026-10-05 與 10-06 的建議（以「不做 collect、只做重組」的方式處理，或改為人工指定一輪專做重組）連續第三輪未執行。** ➜ **建議升級為：下一次人工互動時優先處理此事，否則本待辦將只會持續累積。**

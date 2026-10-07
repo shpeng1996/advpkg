@@ -4589,4 +4589,18 @@ warning: unable to unlink '.../.git/index.lock': Operation not permitted
   1. ⚠⚠⚠ **`device_bash`（本機 Linux workspace）連續第三輪全程不可用** —— 首次回「Workspace still starting」，等待約 25 秒後回「**Workspace unavailable. The isolated Linux environment on this device failed to start.**」。**處置同 2026-10-05／10-06**：改以 `device_list_dir` ＋ `device_stage_files` ＋ 雲端容器 ＋ `device_commit_files` 完成全部讀寫。**作業規範（29）第三輪成立。** ➜ **建議人工檢查該環境為何無法啟動；此事已連續三輪，且它同時是 git 無法提交的唯一原因。**
   2. ⚠⚠⚠ **`OPENALEX_KEY` 仍為空（連續第八輪未處置），本輪第三次造成實質代價。** 雲端容器出口 IP 的 OpenAlex 免費額度再度耗盡。**作業規範（30）（`OPENALEX_KEY` 為「必要」）維持最高優先；規範（32）是繞道而非解法** —— 該途徑依賴使用者電腦在線，而本輪 `device_bash` 不可用卻內建瀏覽器可用，顯示兩者的可用性彼此獨立，繞道並非穩定保障。
   3. 📌 **git 殘留問題**：本輪未觸及（無本機 shell，未執行任何 git 操作）。2026-10-03／10-04 的三項建議（(a) 啟用刪除權限／(b) Windows 側 `git gc --prune=now`／(c) 不處理則每輪約增 70 個殘留檔）仍待人工處置；`tmp_obj_*` 殘留維持 **215 個**（本輪未新增，因未提交）。
-- ⚠⚠ **git commit：本輪未執行。** `git add`／`git commit` 需要本機 shell，而 `device_bash` 全程不可用（環境事項 1）。**本輪的 16 個 raw 檔、16 個新 wiki 頁、23 個更新 wiki 頁與 `raw/_collected_urls.txt` 的 16 行追加均已寫入磁碟，但維持未提交狀態。** 連同 2026-10-05 的 12 個 raw 檔／14 個新頁／25 個更新頁與 2026-10-06 的 15 個 raw 檔／16 個新頁／20 個更新頁，**累計三輪未提交（共 43 個 raw 檔、46 個新 wiki 頁、68 個更新 wiki 頁）。** ➜ **待 `device_bash` 恢復，或人工以 `daily_git_push.bat` 提交。** 並：**自 2026-10-03 起列管的「10 個僅有 CRLF 行尾差異之檔案」待辦連續第五輪未結清。**
+- ✅ **git commit：本輪已執行（但須連同兩項更正一併閱讀）。**
+  **`device_bash`（本機 Linux workspace）在本輪的 collect 階段全程不可用（見環境事項 1），但在寫檔完成後的最後一次嘗試可用** ⇒ 本輪得以直接提交。
+  - **本輪提交：`4500ca8`「2026-10-07」，58 個檔案**（16 raw ＋ 16 新 wiki 頁 ＋ 23 更新 wiki 頁 ＋ `raw/_collected_urls.txt` 的 16 行追加 ＋ ⚠ `.claude/settings.local.json`（12 行，係工作區既有之未追蹤變更，被 `git add -A` 一併納入，非本輪所生））；`git status` 事後為乾淨（0 行）。
+  - ⚠⚠ **更正一：「累計三輪未提交」之說法不成立。** 本輪提交前檢視 git log 發現 **2026-10-05 與 2026-10-06 兩輪的工作已分別由 `5f48d4d`「2026-10-06」（53 檔）與 `7d89e45`「2026-10-07 07:00:04 +0800」（53 檔）提交**，高機率為 `daily_git_push.bat` 依排程執行所致。
+    ➜ ⭐⭐ **作業面結論：前兩輪 log 所記之「未提交」僅在該輪結束的那一刻成立，而排程的 .bat 會在次日補上 ⇒ 本 wiki 此後不應把「本輪未提交」記為待辦，而應記為「本輪未由本流程提交，待 `daily_git_push.bat` 或人工補上」，並在次輪開場即以 `git log` 複核。**
+  - ⚠ **尚未 push**：`git status -sb` 為 `## main...origin/main [ahead 1]`。**本流程不執行 push**（spec §QUALITY RULES 僅要求 stage 與 commit），待 `daily_git_push.bat` 或人工推送。
+  - ⚠ **git 鎖檔**：本輪的 commit 再度留下 `.git/HEAD.lock`（連接資料夾不允許刪除），已依既有慣例改名為 `.git/stale-HEAD.lock-20261007` 以免後續 git 指令失敗。⚠ **`.git/` 下已累積 32 個此類歷史鎖檔殘留。**
+  - ⚠⚠ **更正二：`tmp_obj_*` 殘留自 215 增至 288（+73）**，與 2026-10-03／10-04 所估之「每輪約增 70 個」一致 ⇒ **該估計本輪獲得驗證**；(b) Windows 側 `git gc --prune=now` 之建議優先度應提高。
+  - **自 2026-10-03 起列管的「10 個僅有 CRLF 行尾差異之檔案」待辦連續第五輪未結清。**
+- ⚠⚠⚠ **本輪另發現一項與蒐集無關、但應優先告知使用者的事項（不涉及 `.env`）**：
+  **`origin` remote 的 URL 內嵌了一個明文的 GitHub personal access token（`https://<user>:<token>@github.com/...` 形式）。**
+  - 依 §QUALITY RULES 之精神（不得輸出任何金鑰），**本 wiki 不記錄該 token 之任何字元**；此處僅記錄「該形式存在」這個事實與其位置（`.git/config` 的 `remote.origin.url`）。
+  - ⚠ **風險**：該 token 可被任何能讀取此資料夾的程序或工具讀到（本輪即在一次 `git remote -v` 的輸出中出現），且它不受 `.gitignore` 保護（`.git/config` 本身不進版控，但也不會被遮蔽）。
+  - ➜ **建議（須人工執行，本流程不代為變更帳號或憑證設定）**：①在 GitHub 上**撤銷並重新產生**該 token；②改以 **credential helper**（Windows 為 `git config --global credential.helper manager`）或 **SSH key** 取代 URL 內嵌；③把 remote 改回不含憑證的形式 `git remote set-url origin https://github.com/<owner>/<repo>.git`。
+  - ⚠ **本流程未對該設定做任何變更**，亦未執行 push。
