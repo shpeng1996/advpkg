@@ -3,8 +3,8 @@ title: "封裝層的供電網路 / Power Delivery Networks at the Package Level"
 category: concept
 tags: [PDN, power-delivery, vertical-power, eVR, capacitor, inductor, passive-integration, hybrid-bonding, rack-power]
 created: 2026-09-29
-updated: 2026-10-06
-sources: [2026-09-29_imaps-dpc2026_nanoporous-silicon-capacitor-pdn, 2026-09-29_imaps-dpc2026_saras-stile-evr-vertical-pdn, 2026-09-29_semieng_tech-paper-roundup-sept29-multikw-3dhi-pdn, 2026-09-29_semiwiki_ofc2026-siph-cpo-oci-ocs-summary, 2026-09-30_arxiv_umn-multi-kw-power-delivery-3d-hi, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_epo_intel-jp2026116680a-glass-core-embedded-inductor-clusters, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_imaps-dpc2026_delo-die-side-capacitor-encapsulation, 2026-10-02_epo_samsung-cn122602880a-ivr-capacitor-interposer-core, 2026-10-02_jmmm_tyndall-fecob-n-pwrsoc-magnetics, 2026-10-02_epo_amd-us20260282956a1-silicon-bridge-decap, 2026-10-06_openalex_auburn-nife-tsv-magnetic-shield-package]
+updated: 2026-10-07
+sources: [2026-09-29_imaps-dpc2026_nanoporous-silicon-capacitor-pdn, 2026-09-29_imaps-dpc2026_saras-stile-evr-vertical-pdn, 2026-09-29_semieng_tech-paper-roundup-sept29-multikw-3dhi-pdn, 2026-09-29_semiwiki_ofc2026-siph-cpo-oci-ocs-summary, 2026-09-30_arxiv_umn-multi-kw-power-delivery-3d-hi, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_epo_intel-jp2026116680a-glass-core-embedded-inductor-clusters, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_imaps-dpc2026_delo-die-side-capacitor-encapsulation, 2026-10-02_epo_samsung-cn122602880a-ivr-capacitor-interposer-core, 2026-10-02_jmmm_tyndall-fecob-n-pwrsoc-magnetics, 2026-10-02_epo_amd-us20260282956a1-silicon-bridge-decap, 2026-10-06_openalex_auburn-nife-tsv-magnetic-shield-package, 2026-10-07_epo_amkor-bspdn-oriented-package-embedded-ipd, 2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch]
 related:
   - wiki/concepts/thermal-management.md
   - wiki/technologies/hybrid-bonding.md
@@ -553,3 +553,25 @@ Tyndall National Institute × University College Cork（JMMM，2026-09-02）：�
 ### 相關來源
 
 [[sources/2026-10-06_openalex_auburn-nife-tsv-magnetic-shield-package]]、[[sources/2026-10-06_epo_intel-bridge-chiplet-shield-dummy-die]]
+
+## [2026-10-07] ⭐⭐⭐ 去耦電容的位置隨供電面一起下沉到基板中央；封裝內功能化的動機擴為三種
+
+- ⭐⭐⭐ **去耦電容首次取得一個具體的幾何落點：內嵌於基板的「中央區域」，正對晶粒供電面的正下方。**（Amkor US20260305405A1，2026-10-01 公開）
+  請求項：基板含一個**內嵌於基板中央區域的整合被動元件（IPD）**；耦接之模組中第一顆元件的層序為 **power region（朝向基板）→ transistor region → signal region（朝上）**。
+  - 既載之同向敘事為「電壓調節器與去耦電容正移近晶粒，含移入封裝內」（本輪 semiengineering `an-explosion-in-interconnect-complexity` 亦述，但無幾何）⇒ **本件把「移近」具體化為「埋進基板、且埋在正下方」。**
+  - ➜ ⭐⭐⭐ **候選新論述：「背面供電把供電與訊號分到封裝的相反兩側 —— 基板側專責供電（含去耦），RDL 側專責訊號。」** ⚠ 候選不逕行升格（摘要未定義 "power region"；零量化值）。
+- ⭐⭐⭐ **封裝內「功能化」的動機自兩種擴為三種。**
+  | # | 動機 | 代表 | 載體 |
+  |---|------|------|------|
+  | 1 | **增加功能** | 電容、記憶體控制器、光引擎、供電網路、熱控開關、ESD 縮減、電磁屏蔽 | 橋 |
+  | 2 | **修復既有通道**（2026-10-06） | Micron US20260304790A1 內嵌主動緩衝器 | 中介層 |
+  | 3 | **⭐新 縮短供電迴路** | **Amkor US20260305405A1 內嵌 IPD** | **封裝基板** |
+  - ➜ **三種動機的載體各不相同（橋／中介層／基板）** ⇒ **候選新論述：「封裝內功能化已擴及全部三種承載結構，但每一種承載結構各自只對應一種動機。」**
+- ⭐⭐ **Wolfspeed 一手把「封裝內供電（IPPD）」與「D2C 液冷」並列為同一材料路線（300 mm SiC）的配套** ⇒ **熱與供電在同一篇一手文件中被綁在一起** ⇒ 支撐既載論述「同一參數／同一結構被同時要求多個互相衝突的目標」之**結構層版本**（既有為材料配方層：同一填料系統被同時要求導熱、不膨脹、不放射 α 粒子）。
+- ⭐ **晶片功耗進入「千瓦級」**（semiengineering, 2026-01-22），且電壓調節器與去耦電容正內移。
+- ⚠ **CPC 警示**：Amkor 該件 CPC 首項為 `H10W42/121`（屏蔽），與 2026-10-06 之 Intel EP4815713A2 同，**但該件摘要完全無屏蔽相關敘述** ⇒ **不列為「屏蔽自系統層下移到封裝層」之第三案例。**
+- 📌 **既載之第三條同型援引禁令（封裝內磁性材料依用途分兩類，µ′@100MHz 7–12 vs μr >10⁴ 不可互相援引）本輪未變動。**
+
+### 相關來源
+
+[[sources/2026-10-07_epo_amkor-bspdn-oriented-package-embedded-ipd]]、[[sources/2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk]]、[[sources/2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch]]

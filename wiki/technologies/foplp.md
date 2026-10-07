@@ -3,8 +3,8 @@ title: "FOPLP — 扇出面板級封裝 / Fan-Out Panel-Level Packaging"
 category: technology
 tags: [fan-out, panel-level, TSMC, Samsung, ASE, Powertech, Innolux, CoPoS, InFO, cost-reduction, delamination, DCB, CTE]
 created: 2026-05-03
-updated: 2026-10-06
-sources: [2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-07-31_trendforce_ase-capex-record-10-5b-leap-foplp, 2025-09-12_trendforce_foplp-competitive-2025, 2026-04-13_trendforce_copos-pilot, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-21_3dincites_acm-wlp-plp-process-trends, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-15_digitimes_manz-310mm-foplp-ecd-equipment, 2026-06-13_digitimes_linkotech-foplp-rollout-traction, 2026-06-20_prnewswire_manz-asia-310mm-ecd, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_digitimes_tsmc-foplp-timeline-skepticism, 2026-07-06_trendforce_cfmee-plp2000-china-first-plp, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-08-06_siliconbox_500m-units-panel-scale, 2026-02-18_siliconbox_ep4697377a1-fanout-panel-metal-sealing-ring, 2026-07-28_xianfeng_cn122476946a-alignment-mark-protection, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage, 2026-10-06_thelec_sec-xray-tsv-tgv-inspection-1um]
+updated: 2026-10-07
+sources: [2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-07-31_trendforce_ase-capex-record-10-5b-leap-foplp, 2025-09-12_trendforce_foplp-competitive-2025, 2026-04-13_trendforce_copos-pilot, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-21_3dincites_acm-wlp-plp-process-trends, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-15_digitimes_manz-310mm-foplp-ecd-equipment, 2026-06-13_digitimes_linkotech-foplp-rollout-traction, 2026-06-20_prnewswire_manz-asia-310mm-ecd, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_digitimes_tsmc-foplp-timeline-skepticism, 2026-07-06_trendforce_cfmee-plp2000-china-first-plp, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-08-06_siliconbox_500m-units-panel-scale, 2026-02-18_siliconbox_ep4697377a1-fanout-panel-metal-sealing-ring, 2026-07-28_xianfeng_cn122476946a-alignment-mark-protection, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage, 2026-10-06_thelec_sec-xray-tsv-tgv-inspection-1um, 2026-10-07_epo_evg-zonewise-adaptive-litho-die-shift, 2026-10-07_epo_evg-inorganic-dual-release-layer-common-solvent]
 related:
   - wiki/technologies/rdl.md
   - wiki/technologies/copos.md
@@ -1053,3 +1053,29 @@ Cu stud 輸入晶圓 → 切單與晶粒貼附 → **第一次封膠** → **載
 ### 相關來源
 
 [[sources/2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage]]、[[sources/2026-10-06_thelec_sec-xray-tsv-tgv-inspection-1um]]
+
+## [2026-10-07] ⭐⭐⭐ 對位誤差的第三種處置哲學＝分區自適應曝光；解接合被優化的那一步是「清洗」
+
+- ⭐⭐⭐ **對位誤差出現第三種處置哲學：不消除、不收緊，而是接受並逐區補償。**
+  **EV Group WO2026201292A1**（2026-10-01 公開）請求：①依目標位置備好曝光計畫 → ②量出各功能單元（晶粒）**實際位置** → ③把基板**切成區（zones）**，每區至少含一個功能單元 → ④算出各單元／各區之偏差 → ⑤**逐區／逐單元改寫曝光計畫**。
+  | # | 哲學 | 代表 |
+  |---|------|------|
+  | 1 | **提升機台對準精度** | AMAT × Besi Kinex：量產 100 nm @3σ → 2026 新機 50 nm → 路線圖 <25 nm |
+  | 2 | **自對準製程消除套刻限制** | 復旦（2026-09-21 列為空缺「3D 整合中的自對準製程」） |
+  | 3 | **⭐新 讓圖案追著誤差走（分區自適應）** | **EVG WO2026201292A1** |
+  - ➜ 這同時是既載核心論述「**當某製程規格難度陡升時，業界的第二條路不是改進該製程，而是把設計移到規格較鬆的區間**」的**第六例**，且該論述此時已有三個方向：**讓單一設計避開嚴格規格**（四例）／**容忍多規格共存**（Tenstorrent, 2026-10-06）／**讓後續步驟追著前面的誤差**（本件）。
+  - ⭐⭐ **補償粒度自「整片一個校正模型」下放到「逐區、逐功能單元」** ⇒ 2026-10-06 之「局部化不只用於提升密度，也可用於吸收規格的不一致」自**硬體**（局部橋、逐 chiplet 轉接片）擴及**製程控制**。
+  - ⭐⭐ **本頁既有之圖案化三段階梯（雷射燒蝕 >10 µm／側壁代價 6.4 µm → 投影微影 ≥1 µm／50×50 mm 視場 → 直寫 <1 µm）是解析度軸；本件新增自適應軸** ⇒ 問題自「用哪種圖案化」「切換點落在哪」再擴為「**圖案是否隨實際位置改寫**」。
+  - ⚠⚠ **零量化值**（無區數、無殘餘套刻、無視場、無吞吐），且 **CPC 全落在微影分類（G03F），無任何封裝分類** ⇒ **僅作路線存在性證據，不得與既載之 100 nm (3σ)／W2W overlay <40 nm／<5 nm（backside power, IMAPS 2026）／140 nm pitch 並列比較。**
+  - ⚠ **跨軌同名警示**：論文軌既載之 IMAPS DPC 2026 `10.4071/001c.167502`「Scalable Density Advancement in Embedded Bridge Interposers through **Adaptive Patterning®**」—— **Adaptive Patterning 為 Deca Technologies 註冊商標，本件申請人為 EV Group** ⇒ **兩者是否同一路線或有授權關係，本輪無法判定；不得假設同源，亦不得據此宣稱該路線已有兩個獨立佐證。** 列為新空缺。
+- ⭐⭐ **解接合（debonding）內部仍可再細分，而被優化的那一步是「清洗」而非「分離」。**
+  **EV Group WO2026175479A1**（2026-08-27）：載板與產品基板以**全無機**之雙層系統（分離層＋一層與之不同的附加層）暫時接合 → **雷射照射分離層**完成分離 → **以一道共用溶劑在一個共同清洗步驟中同時移除兩層的殘留**。
+  - ➜ 既載核心論述「真正的瓶頸在被視為輔助步驟的那一步」已有兩個實例（混合接合的 CMP 後清洗、FOPLP 的 debonding）⇒ 本件使其**自「某步驟被低估」深化為「被低估的步驟內部還有一個更被低估的子步驟」**。
+  - ➜ ⭐⭐ **候選新論述：「清洗是跨製程域的共同瓶頸；它之所以被低估，是因為它不改變幾何、只去除殘留，因此不出現在任何規格表上。」**（清洗在本 wiki 第二度成為主角。）
+  - ⭐ **「釋離層全無機化」為本 wiki 首見之明確主張** ⇒ ⚠ **推論（摘要未述）：熱預算上限因此被抬高**；若成立，則「製程熱的三個切入點」**新增第四個：暫時接合／釋離層的耐溫上限。** 列為候選。
+  - ⚠⚠ **2026-09-22 之空缺「FOPLP 翹曲峰值在 debonding 階段是否有第二個獨立來源；承載板材料（鋼／玻璃／陶瓷）的翹曲絕對值」本件無助於結清** —— 本件處理殘留與清洗，不處理翹曲。零量化值。
+- 📌 **本輪 EV Group 出現兩件（圖案化＋解接合），皆落在 FOPLP／FOWLP 的既知瓶頸步驟** ⇒ 既載之「邊界外擴：設備商向材料／相鄰製程擴張（TEL、AMAT、Onto）」取得**第四個案例，且其擴張方向是溶劑／化學。**
+
+### 相關來源
+
+[[sources/2026-10-07_epo_evg-zonewise-adaptive-litho-die-shift]]、[[sources/2026-10-07_epo_evg-inorganic-dual-release-layer-common-solvent]]

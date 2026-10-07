@@ -3,8 +3,8 @@ title: "Amkor Technology"
 category: entity
 tags: [OSAT, advanced-packaging, FOCoS, Arizona, chiplet, Intel-EMIB, patent-signal, TIM]
 created: 2026-04-25
-updated: 2026-09-30
-sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-05-19_stocktitan_amkor-arizona-peoria-land-expansion, 2026-06-17_digitimes_amkor-tsmc-10year-arizona-deal, 2026-06-17_trendforce_tsmc-amkor-10year-arizona-advanced-packaging, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-30_amkor-ir_arizona-7billion-groundbreaking, 2026-06-30_digitimes_amkor-2.5d-hdfo-growth-2026, 2026-07-23_amkor-ir_nvidia-amkor-1-5b-strategic-partnership, 2026-09-26_article_amkor-embedded-trace-rdl, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent]
+updated: 2026-10-07
+sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-05-19_stocktitan_amkor-arizona-peoria-land-expansion, 2026-06-17_digitimes_amkor-tsmc-10year-arizona-deal, 2026-06-17_trendforce_tsmc-amkor-10year-arizona-advanced-packaging, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-30_amkor-ir_arizona-7billion-groundbreaking, 2026-06-30_digitimes_amkor-2.5d-hdfo-growth-2026, 2026-07-23_amkor-ir_nvidia-amkor-1-5b-strategic-partnership, 2026-09-26_article_amkor-embedded-trace-rdl, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-10-07_epo_amkor-bspdn-oriented-package-embedded-ipd, 2026-10-07_openalex_amkor-kelly-three-interposer-routes, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch]
 related:
   - wiki/technologies/rdl.md
   - wiki/technologies/cowos.md
@@ -358,3 +358,26 @@ Amkor 的 **Vineet Pancholi** 提供本 wiki 目前唯一的中介層測試覆�
 - [[sources/2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation]]
 - [[sources/2026-09-30_semieng_one-substrate-no-longer-rules-them-all]]
 - [[sources/2026-09-30_trendforce_intel-emib-substrate-yield-45-percent]]
+
+## [2026-10-07] collect 更新
+
+### 近期動態（補列）
+
+- **2026-10-01**：公開 **US20260305405A1**（家族 101430780，發明人皆韓籍）—— **為背面供電晶粒而設計的封裝**：基板含**內嵌於基板中央區域的 IPD**；模組中第一顆元件層序為 **power region（朝基板）→ transistor region → signal region（朝上）**；transistor region 之上有**支撐結構**承載**上方 RDL**；**垂直互連位於元件側壁旁**；最上方加蓋。⚠ 零量化值、未點名產品或客戶，依「專利是前瞻訊號而非既成事實」處置。
+- **2026-08-12**：**Mike Kelly** 於 **IMAPS DPC 2026** 發表〈Chiplets & Advanced IC Packaging〉（`10.4071/001c.167016`），一手給出**三條並列路線**：**HDFO**（OSAT 自製之高密度銅＋有機介電 fan-out 中介層）／**帶橋模組**／**自晶圓廠取得之矽中介層**，並明言「**最終目標是用適合該產品需求的中介層**」。另把**超潔淨環境、新等級精度、新的電性測試方法（E-Test）**列為高密度模組的使能條件。
+- **2026-01-22**：Mike Kelly 為 semiengineering〈An Explosion In Interconnect Complexity〉受訪者之一。
+- **2026-02-10**（既載脈絡）：Amkor 未出現於 semiengineering 電阻／測試一文，惟該文與上述 E-Test 主張同向。
+
+### 本輪新知
+
+- ⭐⭐⭐ **Amkor 的分類法為本 wiki 中介層分類新增第三軸（構成與採購軸）**，並支撐「HDFO 與『有機中介層』不是同一件事」之區辨 ⇒ 詳見 [[technologies/cowos]]。
+- ⭐⭐⭐ **Amkor 不主張任一中介層路線勝出** ⇒ 既載原則「避免『某路線取代某路線』之無條件表述」取得**第三個支撐，且首次來自 OSAT 一手。**
+- ⚠⚠ **獨立性警示**：**Mike Kelly 本輪出現三次（兩篇 semiengineering 受訪＋一篇 IMAPS 發表）** ⇒ **本輪關於 Amkor 觀點的三筆來源實為一人三次發言，不得作為多個獨立來源使用。**
+- ⚠⚠ **作業面：單以申請人檢索 Amkor 的訊噪比極差。** `pa="amkor" and pd within "2026"` 命中 **90 件**，前 25 名區段中**約 23 件標題為完全相同的 "ELECTRONIC DEVICES AND METHODS OF MANUFACTURING ELECTRONIC DEVICES"（或其中譯），且內容重心偏向 MEMS 麥克風、引線框、QFN、散熱片、測試座治具等非 AI 封裝架構標的。**
+  ➜ **建議：Amkor 的檢索式必須與技術詞複合**（如 `pa="amkor" and ti,ab="interposer"`）。
+  ➜ **2026-09-17 列管之「專利軌輪替至 Amkor」事由本輪由論文軌結清，而非由專利軌結清。**
+- 📌 **列管未採用（下輪優先）**：**TW202607900A（家族 98776443，2026-02-16）** —— **RDL 基板上下兩面各一道混合接合，且第二道接合界面位於第一道的投影範圍內**，另有晶粒側壁旁之垂直互連。⭐⭐ 雙面混合接合至 RDL 基板，為本 wiki 此前無條目之拓撲。
+
+### 相關來源
+
+[[sources/2026-10-07_epo_amkor-bspdn-oriented-package-embedded-ipd]]、[[sources/2026-10-07_openalex_amkor-kelly-three-interposer-routes]]、[[sources/2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch]]

@@ -3,8 +3,8 @@ title: "先進封裝的測試、量測與失效分析 / Test, Metrology & Failur
 category: concept
 tags: [test, metrology, inspection, failure-analysis, KGD, KGI, KGP, DFA, yield]
 created: 2026-09-17
-updated: 2026-10-06
-sources: [2026-09-27_paper_binghamton-ibm-pad-scaling-resistance-variability, 2026-09-27_paper_purdue-ru-cu-em-lifetime-blacks-n-0154, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2025-01-14_semieng_known-good-interposer-screening, 2025-07-10_semieng_advanced-packaging-reshaping-inspection, 2024-11-12_semieng_packaging-drives-test-metrology-innovation, 2026-08-01_jfap_3dic-failure-analysis-dfa, 2026-07-06_apl_lensless-through-silicon-phase-imaging, 2026-09-06_ndte_hysan-sparse-view-xct-tsv, 2026-08-02_chips_cpo-wafer-level-probe-card, 2026-08-27_samsung_us20260256000a1-interposer-test-pad, 2026-08-13_jcet_us20260239928a1-hybrid-bonding-substack-test, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-06-28_hyperframe_amat-hybrid-bonding-hedge, 2026-09-26_paper_ibm-amine-post-cmp-clean, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-10-02_microrel_tudelft-google-3dic-fa-hardware, 2026-10-02_imaps-dpc2026_gelpak-universal-carriers-singulated-die, 2026-10-06_openalex_gatech-terahertz-nde-8layer-interposer, 2026-10-06_openalex_tongji-wafer-embedded-pitch-standard-pose-correction, 2026-10-06_thelec_sec-xray-tsv-tgv-inspection-1um]
+updated: 2026-10-07
+sources: [2026-09-27_paper_binghamton-ibm-pad-scaling-resistance-variability, 2026-09-27_paper_purdue-ru-cu-em-lifetime-blacks-n-0154, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2025-01-14_semieng_known-good-interposer-screening, 2025-07-10_semieng_advanced-packaging-reshaping-inspection, 2024-11-12_semieng_packaging-drives-test-metrology-innovation, 2026-08-01_jfap_3dic-failure-analysis-dfa, 2026-07-06_apl_lensless-through-silicon-phase-imaging, 2026-09-06_ndte_hysan-sparse-view-xct-tsv, 2026-08-02_chips_cpo-wafer-level-probe-card, 2026-08-27_samsung_us20260256000a1-interposer-test-pad, 2026-08-13_jcet_us20260239928a1-hybrid-bonding-substack-test, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-06-28_hyperframe_amat-hybrid-bonding-hedge, 2026-09-26_paper_ibm-amine-post-cmp-clean, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-10-02_microrel_tudelft-google-3dic-fa-hardware, 2026-10-02_imaps-dpc2026_gelpak-universal-carriers-singulated-die, 2026-10-06_openalex_gatech-terahertz-nde-8layer-interposer, 2026-10-06_openalex_tongji-wafer-embedded-pitch-standard-pose-correction, 2026-10-06_thelec_sec-xray-tsv-tgv-inspection-1um, 2026-10-07_semieng_kelvin-resistance-probe-access-pitch-limit, 2026-10-07_openalex_amkor-kelly-three-interposer-routes, 2026-10-07_epo_besi-deformable-die-forming-bond-tool]
 related:
   - wiki/technologies/hybrid-bonding.md
   - wiki/technologies/cowos.md
@@ -902,3 +902,38 @@ Micromachines 的**五種 TGV 剖面**（直壁／沙漏／等腰錐／倒錐／
 ### 相關來源
 
 [[sources/2026-10-06_openalex_gatech-terahertz-nde-8layer-interposer]]、[[sources/2026-10-06_openalex_tongji-wafer-embedded-pitch-standard-pose-correction]]、[[sources/2026-10-06_thelec_sec-xray-tsv-tgv-inspection-1um]]
+
+## [2026-10-07] ⭐⭐⭐ 新增一條量測軸：探測的可接取性節距上限；量測失效模式新增「反向」第五類
+
+- ⭐⭐⭐ **新增一條此前完全不在本 wiki 視野內的量測軸：電性探測的可接取性節距上限。**
+  | 可接取性 | 節距 | 原文 |
+  |---------|------|------|
+  | BGA 球 | **300–400 µm** | "BGA balls at 300 to 400 microns are accessible" |
+  | C4／microbump | **50–80 µm** | "C4 and micro bumps at 50 to 80 microns are manageable" |
+  | 混合接合（Cu–Cu、Si–Si） | ⚠ **文中列為所討論技術，但未列入可接取之列** | — |
+  - **本 wiki 既有的節距條目全部是接合側的**（混合接合 6–9 µm／9 µm／3 µm、W2W 140 nm、EMIB 55→45→35/25 µm、有機中介層 2–5 µm、封裝基板 25–50 µm）⇒ **接合節距與可探測節距之間已差一到兩個數量級，且差距隨微縮持續擴大。**
+  - ➜ ⭐⭐⭐ **候選新論述：「節距微縮使電性驗證失去物理接取點；KGD 的契約問題因此獲得一個物理層的成因，而非僅是定義問題。」**
+    既載之 KGD 線索有兩塊：2026-09-17 之空缺「KGD 的標準化定義」（業界視為「抽象詞而非標準化定義」）與 2026-09-22 之部分解（OCP/JEDEC 的 **PTDK** 解決**交付格式**而非**歸責**）。本輪補上第三塊：**即使格式與歸責都談好了，仍有一段互連在物理上量不到。**
+  - 🔎 **同輪跨軌呼應**：Amkor（Mike Kelly, IMAPS DPC 2026）稱高密度模組需在**超潔淨環境**中以**新等級精度**製造，並把**新的電性測試方法**列為使能條件，理由是要讓「非常寬的實體 die-die 總線」在量產規模下高良率實現。⚠⚠ **但 Mike Kelly 同時是該篇 semiengineering 的受訪者 ⇒ 本輪兩筆不構成兩個獨立來源。**
+- ⭐⭐⭐ **量測失效模式清單新增第五類，且方向與前四類相反。**
+  | # | 類型 | 問題在 |
+  |---|------|-------|
+  | ① | 精度不足型 | 量測端 |
+  | ② | 完全脫鉤型（代理指標無效） | 量測端 |
+  | ③ | 規格漂亮但答錯問題型（衍生量超出不確定度） | 量測端 |
+  | ④ | 自由度不足型（工具維度少於問題維度，2026-10-06 候選） | 量測端 |
+  | **⑤** | **⭐新 被當作雜訊而丟棄的東西其實是訊號** | **判讀端** |
+  - 原文：測試資料中的「noise」往往是**互連電阻的真實變異**，它**在不同次插拔之間改變**。
+  - ➜ ⭐⭐⭐ **與既載核心論述構成互為鏡像的一對**：既載說「你以為是製程變異，其實是量測雜訊」（天津大學 TSV：重複性 2.18 µm ≈ 陣列變異 2.15 µm）；本件說「你以為是量測雜訊，其實是製程變異」。
+    **兩者並存意味著：在不確定度與真實變異同量級的區間，沒有任何單次量測可以區分兩者 —— 只有重複性與統計分布可以。**
+  - ➜ **2026-09-21 所立之作業規範補強為：「凡收錄均勻度／變異／標準差數字，須標註是否附有重複性；未附重複性者，不得判定其為製程變異或量測雜訊中的任一方。」**
+- ⭐⭐⭐ **古典 Kelvin 四線量測的兩個隱含前提在先進封裝中皆已失效**：①待測元件電阻不再是主導項；②接觸電阻不再穩定。可觀測之電阻變動為**「a few milliohms」而雜訊背景可超過訊號**；**50 mΩ 的接點「一次可接受、下一次有問題」。**
+  - 作者提出 **"Kelvin Everywhere"**：保留「激勵與觀測分離」原理，但以**資料與相關性**而非探針實現 —— 持續追蹤電阻、對製程脈絡正規化、以**小差值的統計分析取代絕對門檻**。
+- ⭐⭐ **校正鏈論述新增第三層：wafer／package／system 三個測試階段之間的校正不一致。** 既有兩層為：標準件嵌埋本身引入誤差（同濟，2026-10-06，偏差 <1 nm／U=1.17–1.34 nm k=2）與深孔量測之訊號預算問題（2026-09-21）。並：資料孤島、自適應門檻難訂、組織壁壘被列為未解挑戰。
+- ⭐⭐ **本輪出現第一個以「接合當下的量測／施力」處理幾何的設備案例**：Besi DE102025103085A1 的可變形晶粒成形元件 ⇒ **幾何不是只能被量測，也可以被施加。** 與 2026-09-18 之空缺「混合接合的最佳表面粗糙度是否真的非零」屬同型問題的不同層級。
+- ⭐ **新增實體提及（皆無獨立頁）**：proteanTecs、Modus Test、Teradyne、Advantest。
+- ⚠ **本輪一數之口徑警示**：GPU 先進異質整合封裝 **ASP >$25k（2030）** 為**單一封裝售價**，與既載之市場總額數字量綱不同，**不可互相換算。**
+
+### 相關來源
+
+[[sources/2026-10-07_semieng_kelvin-resistance-probe-access-pitch-limit]]、[[sources/2026-10-07_openalex_amkor-kelly-three-interposer-routes]]、[[sources/2026-10-07_epo_besi-deformable-die-forming-bond-tool]]

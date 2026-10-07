@@ -3,8 +3,8 @@ title: "SK Hynix"
 category: entity
 tags: [memory, HBM, HBM4, advanced-packaging, patent-signal]
 created: 2026-04-24
-updated: 2026-10-05
-sources: [2026-08-24_trendforce_hot-chips-2026-samsung-zhbm-skhynix-emib, 2026-08-19_trendforce_skhynix-silicon-valley-hbm-codesign-team, 2026-08-17_trendforce_samsung-skhynix-1h26-investment-nvidia-absent, 2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor, 2026-08-10_trendforce_skhynix-chongqing-sale-global-reset, 2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab, 2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h, 2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-04-22_trendforce_sk-hynix-pt7-cheongju, 2026-04-22_trendforce_sk-hynix-indiana-us-plant, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-03-03_trendforce_sk-hynix-hbm4-tight-gaps, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-05_trendforce_hbf-equipment-race-sandisk-hanmi, 2026-06-11_trendforce_skhynix-3x-wafer-2034-375layer-nand, 2026-06-20_techtimes_skhynix-hbm4e-12layer-samples, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-24_techtimes_sk-hynix-dethroned-samsung-ddr5-hbm4, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-06-25_techtimes_sk-hynix-nasdaq-adr-29b, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-22_trendforce_skhynix-q2-record-margin, 2026-07-21_trendforce_samsung-cxl-32-skhynix-imte, 2026-07-24_trendforce_skhynix-3d-stacked-dram-on-logic-on-device-ai, 2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b]
+updated: 2026-10-07
+sources: [2026-08-24_trendforce_hot-chips-2026-samsung-zhbm-skhynix-emib, 2026-08-19_trendforce_skhynix-silicon-valley-hbm-codesign-team, 2026-08-17_trendforce_samsung-skhynix-1h26-investment-nvidia-absent, 2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor, 2026-08-10_trendforce_skhynix-chongqing-sale-global-reset, 2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab, 2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h, 2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-04-22_trendforce_sk-hynix-pt7-cheongju, 2026-04-22_trendforce_sk-hynix-indiana-us-plant, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-03-03_trendforce_sk-hynix-hbm4-tight-gaps, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-05_trendforce_hbf-equipment-race-sandisk-hanmi, 2026-06-11_trendforce_skhynix-3x-wafer-2034-375layer-nand, 2026-06-20_techtimes_skhynix-hbm4e-12layer-samples, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-24_techtimes_sk-hynix-dethroned-samsung-ddr5-hbm4, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-06-25_techtimes_sk-hynix-nasdaq-adr-29b, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-22_trendforce_skhynix-q2-record-margin, 2026-07-21_trendforce_samsung-cxl-32-skhynix-imte, 2026-07-24_trendforce_skhynix-3d-stacked-dram-on-logic-on-device-ai, 2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b, 2026-10-07_skhynix_cpo-nature-electronics-100tbps-1pjbit-10ns]
 related:
   - wiki/entities/samsung.md
   - wiki/technologies/hbm4.md
@@ -592,3 +592,23 @@ SK Group 出現在 Nature Electronics CPO 綜述（2026-08-19，UVa／MIT／NTU 
 ### 相關來源
 
 [[sources/2026-10-05_skhynix_tsmc-symposium-hbm4-custom-hbm]]、[[sources/2026-10-05_thelec_hanwha-shb2-nano-cluster]]
+
+## [2026-10-07] collect 更新：CPO 路線圖自二手升格為一手，並新增「運算 3× vs 互連 1.4×」
+
+> ⚠ **定位（查核型）**：同一篇論文之路線圖已於 **2026-08-21** 透過 TrendForce（引述 SK hynix 官方／ZDNet Korea）收錄；論文摘要亦已於 2026-09-18 以 DOI `10.1038/s41928-026-01681-6` 收錄。本輪取得的是 **SK hynix 官方新聞室一手版本**（2026-08-20）。
+
+- ⭐⭐ **既載之三項量化目標自二手升格為一手**：每節點 **>100 Tb/s**、**<1 pJ/bit**、晶片對晶片 **<10 ns**。
+  依 2026-09-21 所立之官網複核規則，本次為該規則**第四次用於正向確認**（前三：AMAT Opta/Catalyst/Insepra；Intel Foveros Direct 9/3 µm 與 EMIB 55→45 µm；一次「查無」結案：Corning 110 °C）。
+  ⚠ **三項皆為目標值，升格僅提升出處可信度，不改變其為目標而非已達成規格之性質。**
+- ⭐⭐⭐ **新增一組此前不在庫的數字：運算吞吐約每兩年成長 3 倍，而互連頻寬同期間僅成長 1.4 倍。**（原文："interconnect bandwidth has only advanced 1.4-fold over the same period"）
+  既載之「頻寬牆」論述（2026-08-21）為**三項定性限制**（~1 米實用傳輸極限／能耗隨距離線性增加／訊號複雜度隨頻率爆炸）⇒ 本輪首獲**成長率的量化對照。**
+  - ➜ ⭐⭐⭐ **新增論述：「互連與運算的成長率差距約 2 倍／兩年 —— 這解釋了為何 CPO 的驅動力被記憶體廠表述為『追上』而非『提升』。」**
+  - ⚠ **口徑未定**：原文未說明「運算吞吐」與「互連頻寬」各自的量測基準（單晶片／單節點／叢集；峰值／實效），亦未給起算年 ⇒ **標 ⚠ 口徑未定，不得與本 wiki 其他頻寬數字並列。**（本輪三個口徑案例之一。）
+- ⭐ **合作機構自既載之「SK hynix × UVA」補為五校一企**：通訊作者 **Seunghoon Hong（SK hynix，AI Infra Team Lead）**與 **Prof. Kyusang Lee（University of Virginia）**；合作機構另有 **UIUC、NTU、MIT、Yonsei**（個別共同作者未具名）。
+- ⭐ **通訊作者職稱為 "AI Infra Team Lead"（非記憶體研發職稱）** ⇒ 與既載之「記憶體廠商正從組件供應轉型為 AI 系統整體效能的戰略夥伴」自述一致，並顯示該公司已設置系統層級的組織單位。
+- 📌 **既載 2026-08-21 條目中兩項本件未覆蓋者維持原狀、不改動**：超薄光子材料與 **µLED** 大規模並行光學互連之未來方向；以及「早期商業化開始」（UVA Lee）之表述。
+- 📌 **16-Hi HBM4 對賭的驗證**（2026-09-18 列管）本輪未結清：檢索所得之「NVIDIA 已就 Vera Rubin 認證三家 HBM4 供應商」報導**彼此互相矛盾且全為聚合網站**，依 2026-10-06 所立之附加條件（「該議題的二手來源品質極差，不接受聚合網站單一來源」）**本輪不收錄任何一筆。**
+
+### 相關來源
+
+[[sources/2026-10-07_skhynix_cpo-nature-electronics-100tbps-1pjbit-10ns]]

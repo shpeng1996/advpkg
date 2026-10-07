@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:www.thelec.net)",
+      "WebFetch(domain:finance.yahoo.com)",
+      "WebFetch(domain:www.trendforce.com)",
+      "WebFetch(domain:www.technetbooks.com)",
+      "WebFetch(domain:bits-chips.com)"
+    ]
+  }
+}

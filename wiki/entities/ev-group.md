@@ -3,8 +3,8 @@ title: "EV Group (EVG)"
 category: entity
 tags: [equipment, hybrid-bonding, wafer-bonding, maskless-lithography, layer-transfer]
 created: 2026-04-25
-updated: 2026-10-04
-sources: [2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-05-19_semiconductor-digest_ev-group-ectc2026-hybrid-bonding, 2026-06-29_evgroup_ectc2026-hybrid-bonding-layer-transfer, 2026-05-28_imec_w2w-hybrid-bonding-200nm-pitch, 2026-06-02_intel_ectc2026-emib-t-cpo-glass]
+updated: 2026-10-07
+sources: [2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-05-19_semiconductor-digest_ev-group-ectc2026-hybrid-bonding, 2026-06-29_evgroup_ectc2026-hybrid-bonding-layer-transfer, 2026-05-28_imec_w2w-hybrid-bonding-200nm-pitch, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-10-07_epo_evg-zonewise-adaptive-litho-die-shift, 2026-10-07_epo_evg-inorganic-dual-release-layer-common-solvent]
 related:
   - wiki/technologies/hybrid-bonding.md
   - wiki/technologies/soic.md
@@ -190,3 +190,25 @@ KIMM 的 308 nm 準分子雷射解接合研究顯示：在**反轉結構**（玻
 ### 相關來源
 
 [[sources/2026-10-04_chipletmarketplace_evg-semicon-west-2026]]
+
+## [2026-10-07] collect 更新
+
+### 近期動態（補列）
+
+- **2026-10-01**：公開 **WO2026201292A1**（家族 95154196，發明人 Malzer Alois、Eibelhuber Martin）—— **分區自適應微影曝光**：依目標位置備好曝光計畫 → 量出各功能單元（晶粒）**實際位置** → 把基板**切成區（zones）**，每區至少含一個功能單元 → 算出各單元／各區之偏差 → **逐區／逐單元改寫曝光計畫。** CPC 全落在微影分類（G03F），無封裝分類。
+- **2026-08-27**：公開 **WO2026175479A1**（家族 94733881）—— **全無機雙層釋離系統**（分離層＋一層與之不同的附加層，兩者皆為無機）＋**雷射分離**＋**一道共用溶劑在一個共同清洗步驟中同時移除兩層殘留。**
+- **2026-06-25**：WO2026130706A1（家族 94192511）—— 載板基板堆疊之製造方法（⚠ 摘要無技術內容，本輪未收錄）。
+- 另：2026-09-24 DE112013007864B4（接合層施加方法，德文）、2026-05-16 TW202621423A（暫時接合與釋離）、2026-05-15 WO2026098776A1（電漿腔監控）—— 本輪未收錄，列為 EVG 之製程／設備布局背景。
+
+### 本輪新知
+
+- ⭐⭐⭐ **EVG 提出對位誤差的第三種處置哲學：不消除、不收緊，而是接受並逐區補償。** 既有兩條為提升機台對準精度（AMAT × Besi Kinex 100 nm → 50 nm → <25 nm）與自對準製程消除套刻限制（復旦）⇒ 詳見 [[technologies/foplp]]。
+- ⭐⭐ **解接合內部被再細分，而 EVG 優化的那一步是「清洗」而非「分離」** ⇒ 既載核心論述「真正的瓶頸在被視為輔助步驟的那一步」自「某步驟被低估」深化為「被低估的步驟內部還有一個更被低估的子步驟」。
+- ⭐⭐ **「釋離層全無機化」為本 wiki 首見之明確主張** ⇒ ⚠ 推論（摘要未述）：熱預算上限因此被抬高；若成立則「製程熱三個切入點」新增第四個。
+- ⭐⭐ **EVG 成為既載論述「邊界外擴：設備商向材料／相鄰製程擴張」之第四個案例**（既有 TEL、AMAT、Onto），且**其擴張方向是溶劑／化學**（該件同時請求「用於該方法之溶劑」）。
+- ⚠ **跨軌同名警示**：論文軌既載之 IMAPS DPC 2026 `10.4071/001c.167502` 使用 **Adaptive Patterning®**（**Deca Technologies 註冊商標**）；**EVG 本件與之是否同一路線或有授權關係，本輪無法判定** ⇒ 列為新空缺，不得假設同源。
+- ⚠⚠ **兩件皆零量化值** ⇒ 僅作路線存在性證據。
+
+### 相關來源
+
+[[sources/2026-10-07_epo_evg-zonewise-adaptive-litho-die-shift]]、[[sources/2026-10-07_epo_evg-inorganic-dual-release-layer-common-solvent]]

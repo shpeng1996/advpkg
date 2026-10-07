@@ -3,8 +3,8 @@ title: "CoWoS — Chip-on-Wafer-on-Substrate"
 category: technology
 tags: [2.5D, interposer, TSMC, AI, HPC, HBM, COUPE, CPO, packaging-constraints, NVIDIA]
 created: 2026-04-24
-updated: 2026-10-06
-sources: [2026-08-13_semieng_1mw-rack-debate-thermal, 2026-08-05_trendforce_tsmc-cowos-cow-outsourcing-osat, 2026-05-24_techtimes_nvidia-computex2026-cowos, 2026-04-24_initial-survey, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-15_trendforce_tsmc-vanguard-stake-sale, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-09_financialcontent_tsmc-130k-cowos-wafers, 2026-06-09_digitimes_tsmc-cowos-soic-capacity-symposium, 2026-06-15_trendforce_tsmc-cowos-gap-narrowing-130k-200k-wafers, 2026-06-10_tomshardware_tsmc-fab-expansion-roadmap-n2-cowos-soic, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_tmtpost_tsmc-cowos-capacity-targets-2026-2027, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-09-30_intel_us-advanced-packaging-reticle-8x-12x-fab9, 2026-10-02_trendforce_cowos-l-mainstream-through-2028, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_amd-us20260282956a1-silicon-bridge-decap, 2026-10-06_epo_micron-interposer-embedded-active-buffers, 2026-10-06_epo_tenstorrent-discrete-pitch-adapter-substrates, 2026-10-06_openalex_gatech-terahertz-nde-8layer-interposer]
+updated: 2026-10-07
+sources: [2026-08-13_semieng_1mw-rack-debate-thermal, 2026-08-05_trendforce_tsmc-cowos-cow-outsourcing-osat, 2026-05-24_techtimes_nvidia-computex2026-cowos, 2026-04-24_initial-survey, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-15_trendforce_tsmc-vanguard-stake-sale, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-09_financialcontent_tsmc-130k-cowos-wafers, 2026-06-09_digitimes_tsmc-cowos-soic-capacity-symposium, 2026-06-15_trendforce_tsmc-cowos-gap-narrowing-130k-200k-wafers, 2026-06-10_tomshardware_tsmc-fab-expansion-roadmap-n2-cowos-soic, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_tmtpost_tsmc-cowos-capacity-targets-2026-2027, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-09-30_intel_us-advanced-packaging-reticle-8x-12x-fab9, 2026-10-02_trendforce_cowos-l-mainstream-through-2028, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_amd-us20260282956a1-silicon-bridge-decap, 2026-10-06_epo_micron-interposer-embedded-active-buffers, 2026-10-06_epo_tenstorrent-discrete-pitch-adapter-substrates, 2026-10-06_openalex_gatech-terahertz-nde-8layer-interposer, 2026-10-07_epo_cas-freestanding-3c-sic-interposer, 2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk, 2026-10-07_openalex_amkor-kelly-three-interposer-routes, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch]
 related:
   - wiki/entities/tsmc.md
   - wiki/technologies/soic.md
@@ -738,3 +738,29 @@ SemiAnalysis ECTC 2026（2026-07-02）：
 ### 相關來源
 
 [[sources/2026-10-06_epo_micron-interposer-embedded-active-buffers]]、[[sources/2026-10-06_epo_tenstorrent-discrete-pitch-adapter-substrates]]、[[sources/2026-10-06_epo_microchip-polysic-ceramic-interposer-mandrel-vias]]、[[sources/2026-10-06_openalex_gatech-terahertz-nde-8layer-interposer]]
+
+## [2026-10-07] ⭐⭐⭐ 中介層基材的第四類（陶瓷／SiC）自候選升格為暫定論述；並新增第三套分類軸
+
+- ⭐⭐⭐ **「陶瓷／SiC 中介層」在兩輪內取得三個獨立來源、分屬兩個軌道 ⇒ 依既立門檻自候選升格為暫定論述。**
+  | # | 來源 | 型態 | 關鍵內容 |
+  |---|------|------|---------|
+  | 1 | **Microchip WO2026206376A1**（2026-10-06） | 專利 | **非晶質 poly-SiC** 本體＋**犧牲矽心軸**定義孔 |
+  | 2 | **中科院半導體所 CN122206278A**（本輪） | 專利 | **雙面 3C-SiC 磊晶**後濕蝕刻去矽 ⇒ **自立膜 100–200 µm** |
+  | 3 | **Wolfspeed**（本輪，**一手**） | 產業 | **300 mm SiC**；熱導 **370–490 W/m·K**（稱 ≤3× 矽）；概念中介層 **100×100 mm** |
+  - ⚠⚠⚠ **引用禁令（新立）：三件之材料狀態互不相同（非晶質 poly-SiC／3C-SiC 磊晶膜／塊材 SiC 晶圓），SiC 熱導對多型與缺陷密度極敏感 ⇒ 三者之數值一律不得互相援引。** 2026-10-06 之空缺「poly-SiC 中介層的 CTE 與熱導」**維持開啟，且應依多型拆成三個子問題。**
+  - ⚠ **三件之中只有產業側（Wolfspeed）把「熱」當作動機；兩件專利皆完全未提熱。** 此落差本身列管。
+  - ⚠ **三件皆未提 CTE。** **不得因「換成陶瓷」而假設 CTE 問題同時被解決。**
+- ⭐⭐⭐ **中介層的功能化動機自兩種擴為三種。** 既有兩種（2026-10-06）：**增加功能**（電容、記憶體控制器、光引擎、供電網路、熱控開關、ESD）與**修復既有通道**（Micron US20260304790A1 內嵌緩衝器）。本輪新增第三種：**讓中介層兼任熱路徑的主結構**（Wolfspeed：「lateral and vertical heat spreading」）⇒ 且其手段是**基材本體**而非 TSV。
+  - ➜ ⭐⭐ **候選新論述：「散熱正在自附加結構（蓋、TIM、散熱片）往承載結構本身移動。」**（與 2026-10-06 之候選「屏蔽自系統層下移到封裝層」同型、不同物理。）
+- ⭐⭐⭐ **中介層出現第三套分類軸（Amkor 一手）。** 既有兩軸為 **基材軸**（矽／玻璃／有機／陶瓷）與本輪新增之 **繞線層級軸**（on-die／TSV／中介層／封裝基板／PCB，共 5 個平台，兩端相差約 6 個數量級）。第三軸為 **構成與採購軸**（Amkor, Mike Kelly, IMAPS DPC 2026）：**HDFO（OSAT 自製之高密度銅＋有機介電 fan-out）／帶橋模組／自晶圓廠取得之矽中介層。**
+  - ➜ ⭐⭐⭐ **新論述：「HDFO 與『有機中介層』不是同一件事」** —— 前者描述**誰做、怎麼構成**，後者描述**基材是什麼**。本頁此後引用兩者須分辨。
+  - ⭐⭐⭐ **Amkor 明言最終目標是「用適合該產品需求的中介層」，不主張任一路線勝出** ⇒ 既載原則「避免『某路線取代某路線』之無條件表述」取得**第三個支撐，且首次來自 OSAT 一手**。
+  - ⚠⚠ **獨立性警示**：Mike Kelly 同時為本輪兩篇 semiengineering 之受訪者與該 IMAPS 件之作者 ⇒ **本輪三筆 Amkor 觀點來源實為一人三次發言，不得作為多個獨立來源。**
+- ⭐⭐ **有機中介層的節距與層數首次與封裝基板並排**：有機中介層 **2–5 µm**／今日約 **4** 層→預期 **8–9** 層；封裝基板 **25–50 µm**。金屬厚 **1.5–2.0 µm**、介電總厚 **15–20 µm**（矽基板上）。
+  - ⚠⚠ **這使 2026-10-06 之最高優先空缺（ABF「18 層／6 層／Lotus ≤9 層」之口徑）再加一層：不只「每面或合計」未定，連「哪個物件」都未定（封裝基板堆疊層 vs 有機中介層繞線層）。** ⚠ 「有機中介層 8–9 層」與「Lotus ≤9 層」數字巧合接近，**正因如此更不得互相印證。**
+- ⭐ **100 × 100 mm 這個尺寸落在既載之未解矛盾上**：Lam 稱「~100×100 mm 後晶圓失去效率」而 CoWoS 14× 光罩約 1,180 mm²（相差近一個數量級）。Wolfspeed 的概念中介層正為 **100×100 mm 且載體是 300 mm 圓晶圓（非面板）**。
+  - ➜ **該矛盾問法修正為：「~100×100 mm 是『圓晶圓的上限』還是『面板的下限』？兩個社群可能在講同一個數字的兩側。」**
+
+### 相關來源
+
+[[sources/2026-10-07_epo_cas-freestanding-3c-sic-interposer]]、[[sources/2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk]]、[[sources/2026-10-07_openalex_amkor-kelly-three-interposer-routes]]、[[sources/2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch]]

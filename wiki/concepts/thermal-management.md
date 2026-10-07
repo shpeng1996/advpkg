@@ -3,8 +3,8 @@ title: "先進封裝熱管理 / Thermal Management in Advanced Packaging"
 category: concept
 tags: [thermal-management, liquid-cooling, 3D-IC, CoWoS, heat-dissipation, TIM, ECTC-2025, GaN, power-delivery, co-design, patent-signal, delamination]
 created: 2026-04-25
-updated: 2026-10-06
-sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2025-12-01_semiengineering_thermal-management, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-02_trendforce_samsung-hbm5-computex2026, 2026-05-21_semieng_hi-roadmap-nature-paper-intel, 2026-08-13_semieng_1mw-rack-debate-thermal, 2026-04-27_semieng_semiconductor-materials-misbehave, 2026-08-21_trendforce_chip-packaging-heat-ai-bottleneck-cpo-stco, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_arxiv_umn-multi-kw-power-delivery-3d-hi, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_samsung-cn122602880a-ivr-capacitor-interposer-core, 2026-10-02_imaps-dpc2026_delo-die-side-capacitor-encapsulation, 2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage]
+updated: 2026-10-07
+sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2025-12-01_semiengineering_thermal-management, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-02_trendforce_samsung-hbm5-computex2026, 2026-05-21_semieng_hi-roadmap-nature-paper-intel, 2026-08-13_semieng_1mw-rack-debate-thermal, 2026-04-27_semieng_semiconductor-materials-misbehave, 2026-08-21_trendforce_chip-packaging-heat-ai-bottleneck-cpo-stco, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_arxiv_umn-multi-kw-power-delivery-3d-hi, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_samsung-cn122602880a-ivr-capacitor-interposer-core, 2026-10-02_imaps-dpc2026_delo-die-side-capacitor-encapsulation, 2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage, 2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk, 2026-10-07_epo_cas-freestanding-3c-sic-interposer, 2026-10-07_openalex_diamond-d2w-direct-bonding-vdw-45mpa, 2026-10-07_openalex_lau-silicon-bridge-microbump-reliability]
 related:
   - wiki/technologies/cowos.md
   - wiki/technologies/hybrid-bonding.md
@@ -1100,3 +1100,30 @@ SNU × UIUC 的 TIM 綜述明確指出：**TIM 的 bulk／effective 導熱係數
 ### 相關來源
 
 [[sources/2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage]]
+
+## [2026-10-07] ⭐⭐⭐ 散熱自「附加結構」往「承載結構本身」移動；SiC 中介層兼任熱路徑
+
+- ⭐⭐⭐ **候選新論述：「散熱正在自附加結構（蓋、TIM、散熱片）往承載結構本身移動。」**
+  **Wolfspeed（一手，2026-03-10，CTO Elif Balkas）**主張 **SiC 中介層「同時強化橫向與縱向散熱」**（"SiC-based interposers enhance lateral and vertical heat spreading"），SiC 散熱片實現多方向熱傳導。
+  | 項目 | 數值 |
+  |------|------|
+  | SiC 熱導 | **370–490 W/m·K**（稱 ≤3× 矽；⚠ **未給矽的對照值**） |
+  | 晶圓 | **300 mm** |
+  | 概念中介層 | **100 × 100 mm**（圖說明標 conceptual） |
+  | 封裝外形趨勢 | 最大 **3×** |
+  | 功耗耗散趨勢 | 最高 **5×** |
+  - 與 2026-10-06 之候選「屏蔽正在自系統層（機殼）下移到封裝層」**同型、不同物理** ⇒ ⭐⭐ **可合併為一條更上位的候選：「系統層的功能正在逐項下移到封裝的承載結構。」**（目前兩個物理：熱、磁／電磁。）
+  - ⚠⚠⚠ **引用禁令（新立）**：該 370–490 W/m·K 指**塊材 SiC 晶圓**（高機率 4H 多型），**不得與本輪 CAS 件之 3C-SiC 磊晶自立膜（100–200 µm）或 2026-10-06 Microchip 件之非晶質 poly-SiC 互相援引** —— SiC 熱導對多型與缺陷密度極敏感。
+  - ⚠⚠ **2026-10-06 之空缺「poly-SiC 中介層的 CTE 與熱導」維持開啟，並應依多型拆成三個子問題**（非晶質 poly-SiC／3C-SiC 磊晶膜／塊材 4H-SiC）。
+  - ⚠ **本輪三個 SiC 來源之中只有產業側（Wolfspeed）把熱當作動機；兩件專利皆完全未提熱** ⇒ 此落差本身列管。
+  - ⚠ **三件皆未提 CTE** ⇒ **不得因「換成陶瓷」而假設 CTE 問題同時被解決。**
+- ⭐⭐ **IPPD（封裝內供電）與 D2C 液冷在同一篇一手文件中被綁為同一路線的配套** ⇒ 既載之「同一參數服務相反失效模式」自**材料配方層**（NTE 填料被同時要求導熱、不膨脹、不放射 α 粒子）擴及**結構層**。
+- ⭐⭐ **翹曲處置哲學新增第四條：對稱性。** 既有三條為選材匹配 CTE／限制用途迴避（上海美維）／負膨脹填料抵銷（Mitsubishi Chemical, 2026-10-06）。本輪新增：**雙面等厚磊晶使應力在幾何上自相抵銷**（CAS CN122206278A）⇒ 施力點在**製程對稱性**。⚠ 只在「兩面都可以長」之製程中成立。
+- ⭐ **鑽石散熱整合路線取得缺失的接合端數據，但不得作為散熱性能之證據。** `10.1016/j.diamond.2026.114218`：單晶鑽石 **15／20 µm** 薄片並排直接接合至 **100 mm 石英晶圓**，(100) 取向**剪切強度 45.1 MPa**，**凡得瓦力主導**。
+  - ⚠ **該件語境為量子光電，完全未提熱導、熱阻或界面熱阻** ⇒ **僅作「鑽石可被 D2W 直接接合至大面積載板」之存在性證據。** 既載之 `10.1007/s10853-026-13776-8`（鑽石異質整合散熱綜述）仍因三處無摘要而未收錄。
+- ⭐ **堆疊晶片的散熱路徑受限且鄰近晶粒之熱互相疊加；晶片功耗進入千瓦級**（semiengineering, 2026-01-22）⇒ 與既載一致，無新數值。
+- 📌 **「橋的位置之爭同時是熱路徑之爭，而所有申請人都迴避了這一段」** —— 本輪首見以熱機模擬為方法的橋研究（Lau, `10.1016/j.microrel.2026.116262`），**但其摘要同樣未給任何熱路徑結論**（零量化值）。
+
+### 相關來源
+
+[[sources/2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk]]、[[sources/2026-10-07_epo_cas-freestanding-3c-sic-interposer]]、[[sources/2026-10-07_openalex_diamond-d2w-direct-bonding-vdw-45mpa]]、[[sources/2026-10-07_openalex_lau-silicon-bridge-microbump-reliability]]

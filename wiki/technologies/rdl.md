@@ -3,8 +3,8 @@ title: "RDL — 重分佈層 / Redistribution Layer"
 category: technology
 tags: [RDL, SAP, dual-damascene, embedded-trace, ETR, polyimide, FPIM, CMP, electromigration, panel-level, pad-less-via]
 created: 2026-09-26
-updated: 2026-10-06
-sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2026-09-27_paper_purdue-ru-cu-em-lifetime-blacks-n-0154, 2026-09-27_paper_copper-interconnect-scaling-roadmap-lines-per-mm, 2026-09-26_article_taiyo-imec-700nm-damascene-rdl, 2026-09-26_article_imec-1um-damascene-rdl-2019-anchor, 2026-09-26_article_amkor-embedded-trace-rdl, 2026-09-26_paper_asi-1um-hdbu-substrate, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-25_paper_dnp-glass-rdl-electromigration-lifetime, 2026-09-25_paper_cornell-glass-on-glass-sio2-rdl, 2026-09-25_paper_asu-molded-core-substrate-warpage, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_shanghai-xianfeng-cn122622683a-glass-interposer-bridge, 2026-10-02_imaps-dpc2026_defect-free-coplanar-copper-via-fill, 2026-10-06_epo_intel-mold-extension-package-to-package-topside-bridge, 2026-10-06_openalex_gatech-terahertz-nde-8layer-interposer]
+updated: 2026-10-07
+sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2026-09-27_paper_purdue-ru-cu-em-lifetime-blacks-n-0154, 2026-09-27_paper_copper-interconnect-scaling-roadmap-lines-per-mm, 2026-09-26_article_taiyo-imec-700nm-damascene-rdl, 2026-09-26_article_imec-1um-damascene-rdl-2019-anchor, 2026-09-26_article_amkor-embedded-trace-rdl, 2026-09-26_paper_asi-1um-hdbu-substrate, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-25_paper_dnp-glass-rdl-electromigration-lifetime, 2026-09-25_paper_cornell-glass-on-glass-sio2-rdl, 2026-09-25_paper_asu-molded-core-substrate-warpage, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_shanghai-xianfeng-cn122622683a-glass-interposer-bridge, 2026-10-02_imaps-dpc2026_defect-free-coplanar-copper-via-fill, 2026-10-06_epo_intel-mold-extension-package-to-package-topside-bridge, 2026-10-06_openalex_gatech-terahertz-nde-8layer-interposer, 2026-10-07_epo_amkor-bspdn-oriented-package-embedded-ipd, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-07_openalex_amkor-kelly-three-interposer-routes]
 related:
   - wiki/technologies/foplp.md
   - wiki/technologies/glass-substrate.md
@@ -576,3 +576,21 @@ Scrona 明文把「嚴格的基板平坦度要求」指認為**傳統微影路�
 ### 相關來源
 
 [[sources/2026-10-06_epo_intel-mold-extension-package-to-package-topside-bridge]]、[[sources/2026-10-06_openalex_gatech-terahertz-nde-8layer-interposer]]
+
+## [2026-10-07] ⭐⭐⭐ 背面供電把供電與訊號分到封裝的相反兩側；RDL 側專責訊號
+
+- ⭐⭐⭐ **本 wiki 首見之「以背面供電（BSPDN）為前提而設計的封裝」。**（Amkor US20260305405A1，2026-10-01 公開，家族 101430780）
+  請求項把第一顆元件的層序明寫為 **power region（朝向基板）→ transistor region → signal region（朝上）**；transistor region 之上有**支撐結構**承載**上方 RDL**；**垂直互連位於元件側壁旁**並耦接至上方 RDL；第二批元件置於其上並耦接該 RDL；最上方加**蓋**。
+  - 本 wiki 既載之 BSPDN 條目全部停留在**晶片層**（含 IMAPS DPC 2026 `10.4071/001c.167494`「Demonstration of <5nm Overlay Distortion for Backside Power Delivery」）⇒ 本件是其**封裝層後果。**
+  - ➜ ⭐⭐⭐ **候選新論述：「背面供電把供電與訊號分到封裝的相反兩側，於是封裝的上下兩面各自專責一種網路 —— 基板側專責供電、RDL 側專責訊號。」**
+    ⚠ **候選不逕行升格**：摘要未定義 "power region" 究竟是背面供電網路還是僅為朝下之供電面；全件**零量化值**（無電容值、無電阻、無節距、無層數）、**未點名任何產品或客戶。**
+- ⭐⭐ **「結構件兼承載互連」取得第三個案例，且三例分屬三種位置。** 既有兩例皆為 Intel（2026-10-06）：**模封延伸層／Z 高度重置層**（晶粒旁，其上表面承載互連）與 **dummy die**（晶粒下，橋的第二端在其下）。本件之 **support structure 位於晶粒上並承載上方 RDL。**
+- ⭐⭐ **垂直路徑再一次不走基板 TSV** —— 本件走**晶粒側壁旁的垂直互連** ⇒ 2026-10-06 所立之「垂直路徑的免 TSV 化」同向案例。⚠ 本件**無橋**，故**不歸入第 16 維（橋的上下位置）**，僅記為同型案例。
+- ⭐⭐ **有機中介層的繞線層數與節距首次與封裝基板並排，而兩者是不同物件**：有機中介層 **2–5 µm**／今日約 **4** 層→預期 **8–9** 層；封裝基板 **25–50 µm**。金屬厚 **1.5–2.0 µm**、介電總厚 **15–20 µm**（矽基板上）。
+  - ⚠⚠ **此點直接影響 2026-10-06 之最高優先空缺（ABF 層數口徑）** —— 詳見 [[concepts/substrate-materials-supply-chain]] 之本輪條目（新增「⚠ 物件未定」一層）。
+  - ⭐ **並：「繞線平台」自 2 個增為 5 個**（on-die／TSV／中介層／封裝基板／PCB），兩端尺度相差約**六個數量級** ⇒ 既載之「同一名詞涵蓋多個獨立驗收項，跨頁引用須標技術域」規範**自粗糙度、孔徑擴及節距。**
+- ⭐ **「HDFO 與『有機中介層』不是同一件事」**（Amkor 一手）—— 前者描述誰做、怎麼構成（OSAT 以 fan-out 流程自製之高密度銅＋有機介電），後者描述基材 ⇒ 本頁此後引用兩者須分辨。
+
+### 相關來源
+
+[[sources/2026-10-07_epo_amkor-bspdn-oriented-package-embedded-ipd]]、[[sources/2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch]]、[[sources/2026-10-07_openalex_amkor-kelly-three-interposer-routes]]

@@ -3,8 +3,8 @@ title: "共封裝光學元件 / Co-Packaged Optics (CPO) — TSMC-COUPE™ & Eco
 category: technology
 tags: [CPO, co-packaged-optics, COUPE, TSMC, GlobalFoundries, Samsung, photonics, AI, HPC, networking, OCI-MSA, DWDM, Broadcom, NVIDIA, glass-substrate, ULCVD, TGV, Spectrum-X, NVL72]
 created: 2026-04-25
-updated: 2026-10-05
-sources: [2026-09-27_globalfoundries_siph-cpo-bandwidth-density-coupling-budget, 2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-27_paper_copper-interconnect-scaling-roadmap-lines-per-mm, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-05-07_trendforce_globalfoundries-silicon-photonics-scale-cpo, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-03-17_coherent_cpo-ofc2026-demo, 2026-06-07_digitimes_jcet-3d-packaging-cpo-plant, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_edn_cpo-technology-status-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-06-24_thelec_corning-glass-bridge-cpo, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-14_trendforce_umc-silith-silicon-photonics-hvm, 2026-07-14_trendforce_huawei-baidu-npo-msa, 2026-07-27_trendforce_presscenter_cpo-switches-nvidia-broadcom-coupe, 2026-06-03_3dincites_intel-foundry-emib-cpo-glass-ectc2026, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-07-31_ase_cn224583735u-photoelectric-hybrid-rdl, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-09-26_report_dupont-ttm-polymer-waveguide-reliability, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_bitschips_besi-q1-2026-hybrid-bonding-orders]
+updated: 2026-10-07
+sources: [2026-09-27_globalfoundries_siph-cpo-bandwidth-density-coupling-budget, 2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-27_paper_copper-interconnect-scaling-roadmap-lines-per-mm, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-05-07_trendforce_globalfoundries-silicon-photonics-scale-cpo, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-03-17_coherent_cpo-ofc2026-demo, 2026-06-07_digitimes_jcet-3d-packaging-cpo-plant, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_edn_cpo-technology-status-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-06-24_thelec_corning-glass-bridge-cpo, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-14_trendforce_umc-silith-silicon-photonics-hvm, 2026-07-14_trendforce_huawei-baidu-npo-msa, 2026-07-27_trendforce_presscenter_cpo-switches-nvidia-broadcom-coupe, 2026-06-03_3dincites_intel-foundry-emib-cpo-glass-ectc2026, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-07-31_ase_cn224583735u-photoelectric-hybrid-rdl, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-09-26_report_dupont-ttm-polymer-waveguide-reliability, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_bitschips_besi-q1-2026-hybrid-bonding-orders, 2026-10-07_openalex_mit-cpo-vs-pluggable-switch-power-calibration, 2026-10-07_skhynix_cpo-nature-electronics-100tbps-1pjbit-10ns]
 related:
   - wiki/technologies/rdl.md
   - wiki/entities/tsmc.md
@@ -1278,3 +1278,32 @@ LPKF 之 CPO 耦合能力條件為 **表面波紋 ±100 nm、表面粗糙度 ±3
 ### 相關來源
 
 [[sources/2026-10-05_biggo_corning-glass-110c-cpo]]
+
+## [2026-10-07] ⭐⭐⭐ CPO 節能數字隨系統邊界變動近兩倍；真正的競爭者是 LPO 而非 DSP 可插拔
+
+- ⭐⭐⭐ **同一項技術的能效改善幅度隨系統邊界從 23% → 44% → 18%，且非單調。**（Alan Evans, MIT, JLT 2026-05-28, `10.1109/jlt.2026.3697988`）
+  | 比較 | 收發器能效 | ＋switch ASIC host SERDES | 整機 switch 功耗 |
+  |------|-----------|--------------------------|-----------------|
+  | CPO vs **LPO** | **23%** | **44%** | **18%** |
+  | CPO vs **DSP 可插拔** | **67%** | **69%** | **36%** |
+  - ➜ ⭐⭐⭐ **新增引用規範：本頁此後引用任何 CPO 節能數字，必須同時標明三個邊界之一 —— ①收發器 only ②含 host SERDES ③整機 switch。未標者視為不可引用。**
+  - ⭐⭐⭐ **23% → 44%（納入 SERDES 後變好）與 44% → 18%（擴到整機後變差）方向相反** ⇒ **系統邊界的擴大不是單調地稀釋，而是取決於被納入的那一塊本身是不是瓶頸。** 這是既載核心論述「真正的瓶頸在被視為輔助步驟的那一步」的**鏡像面：真正的節省也會被系統邊界稀釋。**
+- ⭐⭐⭐ **CPO 的真正競爭者是 LPO，不是 DSP 可插拔。** 既載敘事以「CPO vs 可插拔」二分為主；本件把可插拔拆成 **LPO（線性，無 DSP）**與 **DSP 可插拔**，而 **CPO 對 LPO 的優勢（23%）遠小於對 DSP（67%）** ⇒ 對「CPO 何時導入」的判讀有直接影響。
+- ⭐⭐⭐ **「口徑未定」本輪由領域內作者主動指認。** 原文：*"Reported power consumption savings vary greatly and there is ambiguity about what is included and what generation of technology is used."*
+  ➜ **新增橫向論述：「當一個領域的宣稱值彼此相差數倍時，第一篇有價值的論文往往不是量得更準，而是先把口徑定義清楚。」**（本輪三個口徑案例之一；另兩為 ABF 的三個 30%、SiC 熱導的多型差異。）
+- 📌 **2026-09-18 之空缺「Nature Electronics CPO 綜述全文 —— 需 2D/2.5D/3D 三階段各自的量化門檻」本輪取得兩筆新證據，但不結清，問法修正。**
+  - 本件給的是**技術世代間的比較百分比**；**SK hynix 官方新聞室一手版本**（2026-08-20）給的是**架構層級的絕對目標**（>100 Tb/s／<1 pJ/bit／<10 ns）且**明確未逐階段分配**。兩者皆非階段門檻。
+  - ➜ **空缺問法修正為：「三階段的量化門檻是否真的存在，或領域目前只有『單一組整體目標 ＋ 世代間比較值』兩種數字？」** 追蹤方式改為 OIF／CPO Collaboration 的分階段規格文件、OFC／ECOC 的路線圖議程。
+- ⭐⭐ **既載之 2026-08-21 條目（SK hynix 路線圖，來源為 TrendForce 引述）本輪自二手升格為一手**，並補上兩組新欄位：
+  - ⭐⭐⭐ **運算吞吐約每兩年成長 3 倍，而互連頻寬同期間僅成長 1.4 倍** —— 既載之「頻寬牆」為三項定性限制（~1 m 實用傳輸極限／能耗隨距離線性增加／訊號複雜度隨頻率爆炸），本輪首獲**成長率量化對照**。
+    ➜ **新增論述：「互連與運算的成長率差距約 2 倍／兩年 —— 這解釋了為何 CPO 的驅動力被記憶體廠表述為『追上』而非『提升』。」**
+    ⚠ **口徑未定**：原文未說明兩者各自的量測基準（單晶片／單節點／叢集；峰值／實效）亦未給起算年 ⇒ **不得與本 wiki 其他頻寬數字並列。**
+  - ⭐ **合作機構自既載之「SK hynix × UVA」補為五校一企**：＋UIUC、NTU、MIT、Yonsei（個別共同作者未具名）。
+  - ⚠ 本次為 2026-09-21 官網複核規則之**第四次正向確認**；三項數字**仍為目標值**，升格僅提升出處可信度。
+  - 📌 既載 2026-08-21 條目中之**超薄光子材料與 µLED 並行光學互連**、以及「早期商業化開始」（UVA Lee）**本件官方版未提，維持原狀不改動。**
+- ⭐ **設備側新增一個 CPO 組裝案例**：ASMPT US20260206337A1（2026-07-16，家族 100418025）—— 可移動固化系統，光學對位頭完成對位、點膠、貼合後，**在搬送途中以隨載台移動的 UV 系統同步固化** ⇒ 與 2026-10-03 所立之「對準精度的第三條路徑＝膠材」同向（本輪未單獨收錄，列管）。
+- ⚠ **既載之 Corning「110 °C／5 年／折射率 <1.5%」於本輪兩筆 CPO 來源中皆無對應** ⇒ 2026-10-06「查無」結案維持，該組數字仍待第二來源佐證。
+
+### 相關來源
+
+[[sources/2026-10-07_openalex_mit-cpo-vs-pluggable-switch-power-calibration]]、[[sources/2026-10-07_skhynix_cpo-nature-electronics-100tbps-1pjbit-10ns]]

@@ -3,8 +3,8 @@ title: "CoPoS — Chip-on-Panel-on-Substrate"
 category: technology
 tags: [panel-level-packaging, FOPLP, TSMC, CoPoS, AI, HPC, AP7, InFO]
 created: 2026-04-25
-updated: 2026-10-03
-sources: [2026-09-27_tradingkey_copos-glass-validation-08mm-85x110mm, 2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-04-13_trendforce_copos-pilot, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2025-09-12_trendforce_foplp-competitive-landscape-2025, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-20_wccftech_tsmc-copos-glass-core-cost-cut, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-04-28_cw_tsmc-copos-move-really-means, 2026-06-14_digitaltrends_tsmc-copos-glass-temporary-carrier, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-28_xianfeng_cn122476946a-alignment-mark-protection, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-10-02_trendforce_nvidia-glass-substrate-2028-taiwan, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_imaps-dpc2026_defect-free-coplanar-copper-via-fill]
+updated: 2026-10-07
+sources: [2026-09-27_tradingkey_copos-glass-validation-08mm-85x110mm, 2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-04-13_trendforce_copos-pilot, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2025-09-12_trendforce_foplp-competitive-landscape-2025, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-20_wccftech_tsmc-copos-glass-core-cost-cut, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-04-28_cw_tsmc-copos-move-really-means, 2026-06-14_digitaltrends_tsmc-copos-glass-temporary-carrier, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-28_xianfeng_cn122476946a-alignment-mark-protection, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-10-02_trendforce_nvidia-glass-substrate-2028-taiwan, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_imaps-dpc2026_defect-free-coplanar-copper-via-fill, 2026-10-07_sedaily_tsmc-copos-ap7-line-complete-one-year-yield]
 related:
   - wiki/technologies/rdl.md
   - wiki/technologies/cowos.md
@@ -609,3 +609,18 @@ TrendForce（2026-09-30）：**Innolux 以 620 × 670 mm 格式與客戶驗證 T
 ### 相關來源
 
 [[sources/2026-10-03_imaps_deca-panel-level-fanout-qfn]]、[[sources/2026-10-03_thelec_philoptics-tgv-2mm-glass]]、[[sources/2026-10-03_tomshardware_abf-substrate-state-2026]]
+
+## [2026-10-07] ⭐⭐ CoPoS 時間軸補上缺失的一段：建線之後還有約一年的良率穩定期
+
+- ⭐⭐ **「約一年才穩定技術與良率」是本 wiki 首見之 CoPoS 良率成熟期量級。**（Seoul Economic Daily, 2026-08-11，引述台灣《經濟日報》）
+  既載之 CoPoS 條目有尺寸（**310 × 310 mm**）、時程（試產線 2026、量產 2028–29）、雙軌評估（2026-06）與產線完工，但**自始沒有「從通線到良率穩定要多久」這一段。**
+  - ➜ ⭐⭐ **候選新論述：「面板級的時程風險主要不在建線，而在建線之後的那一年。」**
+  - **CoPoS 的時間軸因此可拆為三段且首尾相接、無緩衝**：建線（已完成，2026-08）→ 良率穩定（約 1 年，即約 2027 年中）→ 量產（2028）⇒ **任一段延誤即直接推遲量產。**
+- ⭐ **新增地理落點：Advanced Packaging Fab 7（AP7），台灣嘉義**（既載有 AP7 2026 產出目標與亞利桑那 P6 作為美國封裝樞杻之評估，但 CoPoS 之廠區此前未具名）。
+- 📌 量產時點：業界原預期 **2028–2029**；**Morgan Stanley 近期預測可能 2028 起**（與既載一致，無變動）。
+- ⚠⚠ **來源層級：本件為三手。** 產線完工引自台灣《經濟日報》、2028 預測引自 Morgan Stanley、其餘為未具名業界預期 ⇒ **無 TSMC 一手說法；「約一年」一數標 ⚠ 未經當事方確認，不得作為任何時程推論之前提。** ⚠ 無設備商具名、無良率、無吞吐數值。
+- 📌 **2026-09-21 之空缺「510×515／600 mm 面板陣營對吞吐量問題的回應」本件無助於結清**（TSMC 屬 310×310 陣營）；既載之面板吞吐／良率劣勢（Lau：pick-and-place 5.3×、成型設備閒置 94%；玻璃面板 70–85% vs 有機 >90%）**仍未獲任何陣營回應。**
+
+### 相關來源
+
+[[sources/2026-10-07_sedaily_tsmc-copos-ap7-line-complete-one-year-yield]]

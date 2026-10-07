@@ -3,8 +3,8 @@ title: "基板與材料供應鏈 / Substrate & Materials Supply Chain（ABF・T-
 category: concept
 tags: [ABF, Ajinomoto, substrate, supply-chain, Ibiden, Unimicron, Shinko, SEMCO, Kinsus, Nan-Ya-PCB, glass-core, warpage, bottleneck]
 created: 2026-10-03
-updated: 2026-10-06
-sources: [2026-10-03_tomshardware_abf-substrate-state-2026, 2026-10-03_thelec_philoptics-tgv-2mm-glass, 2026-10-03_digitaltoday_jntc-tgv-thickness-lineup, 2026-10-03_epo_semco-coreless-interposer-organic-bridge, 2026-10-06_xenospectrum_ajinomoto-abf-cut-unconfirmed-layers-per-side, 2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage]
+updated: 2026-10-07
+sources: [2026-10-03_tomshardware_abf-substrate-state-2026, 2026-10-03_thelec_philoptics-tgv-2mm-glass, 2026-10-03_digitaltoday_jntc-tgv-thickness-lineup, 2026-10-03_epo_semco-coreless-interposer-organic-bridge, 2026-10-06_xenospectrum_ajinomoto-abf-cut-unconfirmed-layers-per-side, 2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage, 2026-10-07_atlaspcb_abf-price-30pct-third-distinct-30-figure, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch]
 related: [technologies/glass-substrate.md, concepts/advanced-packaging-market.md, concepts/geopolitics-advanced-packaging.md, entities/ibiden.md, entities/shinko.md, entities/semco.md, entities/absolics.md, entities/agc.md]
 ---
 
@@ -282,3 +282,27 @@ AI 加速器封裝之下的**載板層**供應鏈，由三層構成：
 ### 相關來源
 
 [[sources/2026-10-06_xenospectrum_ajinomoto-abf-cut-unconfirmed-layers-per-side]]、[[sources/2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage]]
+
+## [2026-10-07] ⚠⚠⚠ ABF 的「30%」確認為三個互不相同的數字；層數口徑再加一層「物件未定」
+
+- ⚠⚠⚠ **2026-10-06 所記之「兩個不同的 30%，不得混用」本輪升級為三個，並取得各自的最早報導時點。**
+  | # | 主張 | 最早報導 | 出處層級 |
+  |---|------|---------|---------|
+  | 1 | **ABF 膜漲價 ~30%**，2026 Q3 生效 | **2026-05-13** DigiTimes `a20260513PD230`（⚠ 403／付費牆，本輪未取得正文）＋《工商時報》＋WCCFTech | 三家二手；**無 Ajinomoto 在案聲明** |
+  | 2 | **ABF 基板現貨價近月漲 >30%** | 同文 | 二手，**獨立主張** |
+  | 3 | **對中國大陸減供 30%** | **2026-08-12** JW Insights／集微網 | ⚠ **未經確認** |
+  - ⭐⭐⭐ **關鍵新事實是時序：漲價 30% 的報導比減供 30% 的報導早約三個月，且漲價一文完全未提中國。**
+    ➜ **兩事在原始報導層面沒有任何關聯；任何把「減供」與「漲價」當成同一事件兩面的敘述，都是後續轉述所建構的。**
+  - ➜ **引用禁令強化為：「ABF 的三個 30%（膜價／基板現貨價／對中減供量）必須各自標註所指量綱與最早出處；三者不得互相印證，亦不得合併為一個『30% 事件』。」**
+- ⭐⭐⭐ **本 wiki 首次取得「ABF 膜占基板 BoM 比例」：~10–15%。** 這是把「膜漲價」換算成「基板漲價」的唯一橋樑，作者並據以推出下游影響**成品 ABF 基板 3–6%**、**封裝後 AI 晶片 1–2%**；另載基板廠標準漲價 **5–10%**（2026 H2 生效）、供給缺口延續至 **2027 年底**。
+  - ⚠⚠ **10–15% 為作者括號內自述、無出處**，而 3–6%／1–2% 又建立在它之上 ⇒ **整條換算鏈建立在一個無出處的比例上。三數一律標 ⚠ 作者自算；可記為目前唯一的 BoM 占比線索，不得作為成本推論之前提。**
+- ⚠⚠ **Ajinomoto 市占口徑分歧**：**90%+**（AtlasPCB，無出處）vs **95%**（XenoSpectrum／ChemNet 等，無一手出處）⇒ **「Ajinomoto 市占」自此標 ⚠ 口徑未定（90%+／95%）**；追蹤方式：Ajinomoto 法說會或 IR 之自述市占。
+- ⚠⚠ **2026-10-06 之最高優先空缺（「18 層／6 層／Lotus ≤9 層」之每面／合計口徑）本輪再加一層：物件未定。**
+  semiengineering（2026-01-22）明寫**有機中介層**今日約 **4** 層→預期 **8–9** 層、節距 **2–5 µm**，而**封裝基板**節距為 **25–50 µm** ⇒ 兩者是**不同節距級別的不同物件**。既載之「18 vs 6」「≤9 層」「9–11 層」**皆未指明是封裝基板堆疊層或有機中介層繞線層。**
+  - ➜ **處置：既載數值一律不改動；該組數字自此標註兩層警示 —— ⚠ 口徑未定（每面／合計）＋ ⚠ 物件未定（封裝基板 vs 有機中介層）。空缺問法自「每面或合計」擴為「哪個物件、每面或合計」。**
+  - ⚠ **「有機中介層 8–9 層」與「Lotus ≤9 層」數字巧合接近 —— 正因如此更不得互相印證。**
+- 📌 **DigiTimes 本輪兩度回 403（連續第二輪）**；2026-10-06 之最高優先空缺「Ajinomoto 減供一事是否發生、有無任何具名來源」**本輪未結清** —— 本輪檢索所得之減供報導（FT Mercati、Tom's Hardware、ChemNet、BigGo、thecekodok、ic-pcb 等）**全部回溯至同一則 JW Insights 稿，無任何一家取得具名確認。**
+
+### 相關來源
+
+[[sources/2026-10-07_atlaspcb_abf-price-30pct-third-distinct-30-figure]]、[[sources/2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch]]

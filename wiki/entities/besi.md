@@ -3,8 +3,8 @@ title: "Besi (BE Semiconductor Industries) — 混合接合設備領導廠商"
 category: entity
 tags: [equipment, hybrid-bonding, die-attach, D2W, TCB, Netherlands]
 created: 2026-04-25
-updated: 2026-10-05
-sources: [2026-09-27_semieng_chip-week-156-india-tata-besi-izmo, 2026-03-01_3dincites_besi-packaging-power-shift, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-03-29_damnang_hybrid-bonding-cmp-gating-factor, 2026-10-02_bitschips_besi-q1-2026-hybrid-bonding-orders, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo]
+updated: 2026-10-07
+sources: [2026-09-27_semieng_chip-week-156-india-tata-besi-izmo, 2026-03-01_3dincites_besi-packaging-power-shift, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-03-29_damnang_hybrid-bonding-cmp-gating-factor, 2026-10-02_bitschips_besi-q1-2026-hybrid-bonding-orders, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-07_epo_besi-deformable-die-forming-bond-tool]
 related:
   - wiki/entities/ev-group.md
   - wiki/technologies/hybrid-bonding.md
@@ -233,3 +233,24 @@ Bits&Chips（2026-04-23，作者 Paul van Gerven）：
 ### 相關來源
 
 [[sources/2026-10-05_thelec_hanwha-shb2-nano-cluster]]、[[sources/2026-10-05_semieng_wir158-semco-fcbga-hbm-wafer-share]]
+
+## [2026-10-07] collect 更新
+
+### 近期動態（補列）
+
+- **2026-07-30**：**Besi Switzerland AG** 同日公開兩件接合工具專利：
+  - **DE102025103085A1（家族 98897124）** —— 接合工具含**可變形的晶粒成形元件（Dieformungselement）**，其作用面**接觸晶粒並在接合過程中對晶粒施力**；成形元件與工具本體之間設有**界面區**，使成形元件能**因受力而朝本體方向變形**（刻意的受控順從性）。
+  - **DE102025103083A1（家族 98897139）** —— 請求接合工具、接合頭、die bonder，以及一個**「為接合動作成形『目標』（Formen eines Targets）」的系統** ⇒ 標的自成形晶粒擴到**成形被接合的那一側**。⚠ 該件摘要僅列請求項類別，無技術內容。
+- **2026-09-03**：WO2026182734A1（家族 101168492，液態焊料表面張力＝線上接合品質）—— ⚠ **本輪檢索再度命中，但已於 2026-09-23 收錄**，依 §QUALITY RULES 不重複收錄。
+
+### 本輪新知
+
+- ⭐⭐⭐ **Besi 成為候選論述「平坦度可以被製造，而不只是被要求」的第二個獨立案例，使該論述自候選升格為暫定論述。** 第一例（2026-10-06）為 Intel 模封延伸層家族（結構／材料側，作用於接合之前）；本件為**工具側、作用於接合當下** ⇒ 詳見 [[technologies/hybrid-bonding]]（含升格當輪所明載之三項邊界條件）。
+- ⭐⭐⭐ **限制鏈第②層（die 翹曲 <100 nm，既載歸因「材料，Samsung」）出現一條旁路：由工具在接合當下施力補償。** 既載排序與數值不改動，僅加註。
+- ⭐⭐ **「鍵合頭本身是製程切入點」取得第三例，且第一次以順從性而非熱為機制** ⇒ 候選論述：「鍵合頭正在自『傳熱與傳力的被動介面』變成一個可設計的順從結構。」
+- ⚠⚠ **零量化值**（無施力、無變形量、無殘餘翹曲、無節距），且**未指明製程域（TCB vs 混合接合）**。Besi 既載產品線同時涵蓋 TCB（領先）與混合接合（Kinex，與 AMAT 合作）⇒ **申請人身分不足以判定製程域。**
+- 📌 **本輪 Besi 由設備商輪替檢索命中**：`(pa="besi" or pa="ev group" or pa="asmpt") and pd within "2026"`，命中 **91 件**（取前 25 名區段）⇒ 該檢索式訊噪比良好（遠優於同輪 Amkor 的 90 件同名標題），**建議保留為設備商軌之標準檢索式。**
+
+### 相關來源
+
+[[sources/2026-10-07_epo_besi-deformable-die-forming-bond-tool]]

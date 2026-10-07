@@ -3,8 +3,8 @@ title: "味の素 / Ajinomoto Co., Inc.（ABF 味之素增層膜）"
 category: entity
 tags: [Ajinomoto, ABF, substrate, supply-chain, bottleneck, geopolitics, Japan]
 created: 2026-10-05
-updated: 2026-10-06
-sources: [2026-10-05_tomshardware_ajinomoto-abf-china-cut, 2026-10-06_xenospectrum_ajinomoto-abf-cut-unconfirmed-layers-per-side]
+updated: 2026-10-07
+sources: [2026-10-05_tomshardware_ajinomoto-abf-china-cut, 2026-10-06_xenospectrum_ajinomoto-abf-cut-unconfirmed-layers-per-side, 2026-10-07_atlaspcb_abf-price-30pct-third-distinct-30-figure]
 related: [concepts/substrate-materials-supply-chain.md, concepts/geopolitics-advanced-packaging.md, concepts/advanced-packaging-market.md, entities/ibiden.md, entities/shinko.md, entities/semco.md]
 ---
 
@@ -100,3 +100,24 @@ related: [concepts/substrate-materials-supply-chain.md, concepts/geopolitics-adv
 ### 相關來源
 
 [[sources/2026-10-06_xenospectrum_ajinomoto-abf-cut-unconfirmed-layers-per-side]]
+
+## [2026-10-07] collect 更新：三個 30% 的時序與量綱確認
+
+- ⚠⚠⚠ **2026-10-06 所記之「兩個不同的 30%」本輪確認為三個，並取得各自的最早報導時點與量綱。**
+  | # | 主張 | 最早報導 | 量綱 | 出處層級 |
+  |---|------|---------|------|---------|
+  | 1 | **ABF 膜漲價 ~30%**，2026 Q3 生效 | **2026-05-13** DigiTimes `a20260513PD230`（⚠ 403）＋《工商時報》＋WCCFTech | **價格** | 三家二手；**無 Ajinomoto 在案聲明** |
+  | 2 | **ABF 基板現貨價近月漲 >30%** | 同文 | **價格**（下游） | 二手，獨立主張 |
+  | 3 | **對中國大陸減供 30%** | **2026-08-12** JW Insights／集微網 | **配額** | ⚠ **未經確認** |
+  - ⭐⭐⭐ **關鍵新事實：價格類的 30% 比配額類的 30% 早約三個月，且漲價一文完全未提中國。**
+    ➜ **兩事在原始報導層面沒有任何關聯；任何把「減供」與「漲價」當成同一事件兩面的敘述，都是後續轉述所建構的。**
+  - ➜ **引用禁令：三個 30% 必須各自標註量綱與最早出處；不得互相印證，不得合併為一個「30% 事件」。**
+- ⭐⭐⭐ **本 wiki 首次取得 ABF 膜占基板 BoM 的比例：~10–15%**（⚠ AtlasPCB 作者括號內自述、無出處）。作者並據以推算下游影響：**成品 ABF 基板 3–6%**、**封裝後 AI 晶片 1–2%**。另載基板廠標準漲價 **5–10%**（2026 H2 生效）、供給缺口延續至 **2027 年底**。
+  ⚠⚠ **整條換算鏈建立在一個無出處的比例上 ⇒ 三數一律標 ⚠ 作者自算，不得作為成本推論之前提。**
+- ⚠⚠ **市占口徑分歧：90%+（AtlasPCB，無出處）vs 95%（XenoSpectrum／ChemNet，無一手出處）** ⇒ **「Ajinomoto 市占」自此標 ⚠ 口徑未定。** 追蹤方式：Ajinomoto 法說會或 IR 之自述市占。
+- 📌 **2026-10-06 之最高優先空缺「減供一事是否發生、有無任何具名來源」本輪未結清。** 本輪檢索所得之減供報導（FT Mercati、Tom's Hardware、ChemNet、BigGo、thecekodok、ic-pcb 等）**全部回溯至同一則 JW Insights 稿，無任何一家取得具名確認。** ⚠ **DigiTimes 連續第二輪回 403。**
+- 📌 **既載之 ABF 層數口徑（每面：1999 ~3 → 2026 ~11 → 2031+ ~13；基板邊長 70 → 100 → 120 mm）本輪未變動**，但「18 層／6 層／Lotus ≤9 層」之比較**再加一層警示：⚠ 物件未定（封裝基板堆疊層 vs 有機中介層繞線層）** ⇒ 詳見 [[concepts/substrate-materials-supply-chain]]。
+
+### 相關來源
+
+[[sources/2026-10-07_atlaspcb_abf-price-30pct-third-distinct-30-figure]]

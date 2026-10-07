@@ -3,8 +3,8 @@ title: "先進封裝地緣政治 / Geopolitics of Advanced Packaging"
 category: concept
 tags: [geopolitics, US-China, CHIPS-Act, supply-chain, chiplet, NAPMP, export-control, glass-substrate, standards-war, BOE, Corning, Absolics]
 created: 2026-04-26
-updated: 2026-10-06
-sources: [2026-09-27_semieng_chip-week-156-india-tata-besi-izmo, 2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-08-10_trendforce_skhynix-chongqing-sale-global-reset, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-23_trendforce_china-osat-sj-semiconductor-ipo, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-08-05_3dincites_iftle636, 2026-03-23_trendforce_musk-terafab-tsmc-packaging, 2026-04-22_trendforce_sk-hynix-indiana-us-plant, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-16_nokia_pennsylvania-atp-expansion, 2026-06-30_amkor-ir_arizona-7billion-groundbreaking, 2026-06-30_digitimes_us-packaging-capacity-10pct-2032, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-10_tomshardware_micron-250b-us-investment-globalwafers, 2026-07-10_semieng_chip-week-146, 2026-07-14_trendforce_huawei-baidu-npo-msa, 2026-08-21_semieng_chip-week-152, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_asi-1um-hdbu-substrate, 2026-10-02_trendforce_nvidia-glass-substrate-2028-taiwan, 2026-10-02_trendforce_intel-microled-glass-24-layer, 2026-10-06_xenospectrum_ajinomoto-abf-cut-unconfirmed-layers-per-side]
+updated: 2026-10-07
+sources: [2026-09-27_semieng_chip-week-156-india-tata-besi-izmo, 2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-08-10_trendforce_skhynix-chongqing-sale-global-reset, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-23_trendforce_china-osat-sj-semiconductor-ipo, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-08-05_3dincites_iftle636, 2026-03-23_trendforce_musk-terafab-tsmc-packaging, 2026-04-22_trendforce_sk-hynix-indiana-us-plant, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-16_nokia_pennsylvania-atp-expansion, 2026-06-30_amkor-ir_arizona-7billion-groundbreaking, 2026-06-30_digitimes_us-packaging-capacity-10pct-2032, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-10_tomshardware_micron-250b-us-investment-globalwafers, 2026-07-10_semieng_chip-week-146, 2026-07-14_trendforce_huawei-baidu-npo-msa, 2026-08-21_semieng_chip-week-152, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_asi-1um-hdbu-substrate, 2026-10-02_trendforce_nvidia-glass-substrate-2028-taiwan, 2026-10-02_trendforce_intel-microled-glass-24-layer, 2026-10-06_xenospectrum_ajinomoto-abf-cut-unconfirmed-layers-per-side, 2026-10-07_atlaspcb_abf-price-30pct-third-distinct-30-figure]
 related: [wiki/concepts/advanced-packaging-market.md, wiki/entities/amkor.md, wiki/entities/ase-group.md, wiki/technologies/ucie.md]
 ---
 
@@ -948,3 +948,28 @@ TrendForce（2026-09-22，Intel 微 LED 玻璃基板專利報導）：**Intel �
 ### 相關來源
 
 [[sources/2026-10-06_xenospectrum_ajinomoto-abf-cut-unconfirmed-layers-per-side]]
+
+## [2026-10-07] ⚠⚠⚠ 「企業配額決定」這個類別的唯一案例，其所依據的三個 30% 本輪確認為互不相同的三件事
+
+- ⚠⚠⚠ **2026-10-05 以 Ajinomoto 案新立之論述「管制措施清單自此分兩類：政府措施 vs 企業配額決定，而槓桿最強的那一手不是政府出的」—— 本輪未撤回，但其證據基礎再度被削弱。**
+  2026-10-06 已記：事件**未經確認**、Ajinomoto **既未確認亦未否認**、原始出處為 **JW Insights（集微網）2026-08-12** 且無期間／合約／產品等級／客戶量／具名說法。
+  **本輪新增的事實是「三個 30% 的時序與量綱」：**
+  | # | 主張 | 最早報導 | 性質 |
+  |---|------|---------|------|
+  | 1 | **ABF 膜漲價 ~30%**，2026 Q3 生效 | **2026-05-13** DigiTimes（＋《工商時報》、WCCFTech） | **價格**，非配額；**完全未提中國** |
+  | 2 | **ABF 基板現貨價近月漲 >30%** | 同文 | **價格**，獨立主張 |
+  | 3 | **對中國大陸減供 30%** | **2026-08-12** JW Insights | **配額**；⚠ 未經確認 |
+  - ⭐⭐⭐ **關鍵：價格類的 30% 比配額類的 30% 早約三個月，且與中國無關。**
+    ➜ **「企業配額決定」這個類別的唯一案例，其數字與一個更早、更有來源、且與地緣政治無關的價格事件共用同一個百分比。** 這使**混淆的風險從「兩個 30% 可能被互相印證」升級為「配額敘事可能是價格敘事的誤讀」**（⚠ 本 wiki 僅記此可能性，無證據支持任一方）。
+  - ➜ **處置（維持條件化，不撤回，但加嚴）**：分類洞見本身保留；該類別此後必須同時加註 ——「①本類別目前的唯一案例為未經確認之報導；②該案例的 30% 與同年更早的兩個價格類 30% 共用數字而量綱不同。」**在取得第二案例或當事方確認前，不得作為任何推論之前提。**
+- ⚠⚠ **2026-10-06 之最高優先空缺「Ajinomoto 減供一事是否發生、有無任何具名來源」本輪未結清，且再得一例支持既立規範。**
+  本輪檢索所得之減供報導（FT Mercati、Tom's Hardware、ChemNet、BigGo Finance、thecekodok、ic-pcb Union 等）**全部回溯至同一則 JW Insights 稿，無任何一家取得具名確認** ⇒ **「五家媒體轉述同一則無具名報導，不等於兩個獨立來源」再得一例。** ⚠ **DigiTimes 本輪兩度回 403（連續第二輪）。**
+- ⚠ **Ajinomoto 市占口徑分歧**：**90%+**（AtlasPCB，無出處）vs **95%**（XenoSpectrum／ChemNet，無一手出處）⇒ **標 ⚠ 口徑未定。** 追蹤方式：Ajinomoto 法說會或 IR 之自述市占。
+- ⚠⚠ **來源可信度第四軸新增一個樣態：「標題用語強於其所持證據」。**
+  AtlasPCB 該文標題欄寫「Ajinomoto Confirms」、內文稱 Ajinomoto「has informed IC substrate manufacturers」，**但頁面上並無任何 Ajinomoto 新聞稿、引述或在案聲明**，支撐全部來自第三方報導。並須並記 2026-10-06 之既有紀錄：**同一網站於 2026-05-25 發布「Intel Clearwater Forest 使用玻璃核心基板」且未提供任何一手引用，該主張已於 2026-10-06 以 Intel 官網複核結清為否。**
+  - ➜ **處置：AtlasPCB 不列入低信度名單**（其報導的事件本身可在他處交叉查到），**但標註為「標題用語強於其所持證據」之來源類型。** 既有樣態：「看似專業、實際含產品層級錯誤的彙整型網站」（semiconductorx.com）。本輪另新增第三個樣態，見 [[technologies/tsv]]（「論文自身的應用範圍遠大於其標題所稱者」）。
+- 📌 **本輪未新增任何政府措施類案例。**
+
+### 相關來源
+
+[[sources/2026-10-07_atlaspcb_abf-price-30pct-third-distinct-30-figure]]

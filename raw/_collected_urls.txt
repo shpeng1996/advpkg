@@ -785,3 +785,19 @@
 2026-10-06 | https://doi.org/10.1016/j.mssp.2026.111189 | raw/papers/2026-10-06_openalex_gatech-terahertz-nde-8layer-interposer.md | GaTech terahertz NDE of 8-layer interposer
 2026-10-06 | https://doi.org/10.1088/1361-6528/aeae46 | raw/papers/2026-10-06_openalex_tongji-wafer-embedded-pitch-standard-pose-correction.md | Pitch standard: <1nm dev, U=1.17-1.34nm k=2
 2026-10-06 | https://doi.org/10.1021/acsaenm.6c00380 | raw/papers/2026-10-06_openalex_auburn-nife-tsv-magnetic-shield-package.md | NiFe-filled TSV as magnetic shield; SF 114/187
+2026-10-07 | https://semiengineering.com/resistance-in-advanced-packages-is-now-a-system-level-problem/ | raw/articles/2026-10-07_semieng_kelvin-resistance-probe-access-pitch-limit.md | Kelvin breaks down; probe access ends at 50-80um
+2026-10-07 | https://semiengineering.com/an-explosion-in-interconnect-complexity/ | raw/articles/2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch.md | 5 routing platforms; organic interposer 2-5um, 4->8-9 layers
+2026-10-07 | https://news.skhynix.com/en/cpo-in-nature-electronics/ | raw/articles/2026-10-07_skhynix_cpo-nature-electronics-100tbps-1pjbit-10ns.md | SK hynix CPO 1st-party: compute 3x vs interconnect 1.4x
+2026-10-07 | https://www.wolfspeed.com/knowledge-center/article/wolfspeeds-300-mm-silicon-carbide-technology-as-a-materials-foundation-for-next-generation-ai-and-hpc-advanced-packaging/ | raw/articles/2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk.md | Wolfspeed 1st-party: SiC 370-490 W/mK interposer
+2026-10-07 | https://en.sedaily.com/international/2026/08/11/tsmc-completes-line-for-next-gen-copos-packaging-sees-year | raw/articles/2026-10-07_sedaily_tsmc-copos-ap7-line-complete-one-year-yield.md | TSMC CoPoS line at AP7 Chiayi; ~1yr to stabilize
+2026-10-07 | https://www.atlaspcb.com/news/news-ajinomoto-abf-substrate-price-increase-2026/ | raw/articles/2026-10-07_atlaspcb_abf-price-30pct-third-distinct-30-figure.md | ABF: THREE distinct 30% figures; film ~10-15% of BoM
+2026-10-07 | EPO:95154196:WO2026201292A1 | raw/patents/2026-10-07_WO2026201292A1_evg-zonewise-adaptive-litho-die-shift.md | EVG: zone-wise adaptive exposure to actual die positions
+2026-10-07 | EPO:98897124:DE102025103085A1 | raw/patents/2026-10-07_DE102025103085A1_besi-deformable-die-forming-bond-tool.md | Besi: deformable die-forming bond tool shapes the die
+2026-10-07 | EPO:100058910:CN122206278A | raw/patents/2026-10-07_CN122206278A_cas-freestanding-3c-sic-interposer-double-sided-epi.md | CAS: freestanding 3C-SiC interposer 100-200um, Si sacrificial
+2026-10-07 | EPO:101430780:US20260305405A1 | raw/patents/2026-10-07_US20260305405A1_amkor-bspdn-oriented-package-embedded-ipd.md | Amkor: power region faces substrate; IPD in substrate centre
+2026-10-07 | EPO:94733881:WO2026175479A1 | raw/patents/2026-10-07_WO2026175479A1_evg-inorganic-dual-release-layer-common-solvent.md | EVG: all-inorganic dual release layers, one common solvent
+2026-10-07 | https://doi.org/10.1109/jlt.2026.3697988 | raw/papers/2026-10-07_openalex_mit-cpo-vs-pluggable-switch-power-calibration.md | CPO vs LPO/DSP: 23/67% -> 44/69% -> switch 18/36%
+2026-10-07 | https://doi.org/10.1063/5.0345777 | raw/papers/2026-10-07_openalex_cuos-alloy-interconnect-oxidation-adhesion.md | Cu(Os) alloy: seed-layer adhesion 52.3 MPa, 14-15x Cu
+2026-10-07 | https://doi.org/10.1016/j.diamond.2026.114218 | raw/papers/2026-10-07_openalex_diamond-d2w-direct-bonding-vdw-45mpa.md | Diamond D2W: 45.1 MPa shear, van der Waals dominated
+2026-10-07 | https://doi.org/10.4071/001c.167016 | raw/papers/2026-10-07_openalex_amkor-kelly-three-interposer-routes.md | Amkor: HDFO / bridge / Si interposer are a CHOICE
+2026-10-07 | https://doi.org/10.1016/j.microrel.2026.116262 | raw/papers/2026-10-07_openalex_lau-silicon-bridge-microbump-reliability.md | Lau: silicon bridge microbump reliability (no numbers)
