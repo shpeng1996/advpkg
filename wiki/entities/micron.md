@@ -3,8 +3,8 @@ title: "美光科技 / Micron Technology"
 category: entity
 tags: [memory, HBM4, DRAM, NAND, CapEx, Virginia, Idaho, New-York, onshoring]
 created: 2026-05-03
-updated: 2026-10-06
-sources: [2026-09-27_semieng_chip-week-156-india-tata-besi-izmo, 2025-12-18_trendforce_micron-capex-hbm4, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-03-17_trendforce_gtc2026-key-takeaways, 2025-08-05_3dincites_iftle636-samsung-lsb-micron-virginia, 2026-01-23_trendforce_hbm4e-development, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-26_semieng_chip-week-144, 2026-06-25_thelec_micron-q3-fy2026-record, 2026-07-06_trendforce_micron-hiroshima-fab-hbm-1gamma, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-10_tomshardware_micron-250b-us-investment-globalwafers, 2026-07-10_semieng_chip-week-146, 2026-08-21_semieng_chip-week-152, 2026-10-06_epo_micron-interposer-embedded-active-buffers]
+updated: 2026-10-08
+sources: [2026-09-27_semieng_chip-week-156-india-tata-besi-izmo, 2025-12-18_trendforce_micron-capex-hbm4, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-03-17_trendforce_gtc2026-key-takeaways, 2025-08-05_3dincites_iftle636-samsung-lsb-micron-virginia, 2026-01-23_trendforce_hbm4e-development, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-26_semieng_chip-week-144, 2026-06-25_thelec_micron-q3-fy2026-record, 2026-07-06_trendforce_micron-hiroshima-fab-hbm-1gamma, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-10_tomshardware_micron-250b-us-investment-globalwafers, 2026-07-10_semieng_chip-week-146, 2026-08-21_semieng_chip-week-152, 2026-10-06_epo_micron-interposer-embedded-active-buffers, 2026-10-08_micron-cryogenic-package-hea-solder]
 related:
   - wiki/technologies/hbm4.md
   - wiki/entities/sk-hynix.md
@@ -367,3 +367,23 @@ Tech Times（2026-09-30）：**Shinko Electric 取得 Japan Display 茂原工廠
 ### 相關來源
 
 [[sources/2026-10-06_epo_micron-interposer-embedded-active-buffers]]
+
+---
+
+## [2026-10-08] 專利訊號：低溫環境封裝（HEA 核心銲球）
+
+**US20260283054A1（族 101295473，2026-09-17 公開；發明人 GAN CHONG LEONG、HUANG CHEN YU，兩位均署台灣）**
+
+Micron 於 2026-09 公開之專利顯示：**基板含金屬核心，其強度規格定義在低溫（cryogenic）門檻以下之溫度區間**；記憶體系統（控制器 ＋ 一枚或多枚記憶體晶粒）耦接於該基板；電路板以多顆銲球與基板耦接，而**每顆銲球為「高熵合金（HEA）核心 ＋ 外包銦（In）摻雜銲錫合金鍍層」之複合結構**。
+
+- ⭐⭐⭐ **本 wiki 首見「低溫」成為封裝的設計條件** —— 既載溫度軸全部朝高溫 ⇒ 溫度自單向的「要散掉多少」變成**雙向的規格區間**。
+- ⭐⭐ **「核心 ＋ 鍍層」之複合銲球為本 wiki 首見之銲球內部結構分層**（既載銲點條目皆視銲球為單一材料）；**HEA 作為銲球核心**亦為首見材料類別。
+- ⭐⭐ **請求項的驗收項是低溫強度與鍍層成分而非幾何** ⇒ 延續既載觀察（Absolics 以製程潔淨度與微結構對稱性入請求項）：排他權標的正從幾何移向材料狀態與環境條件。
+
+⚠ **Hedge**：專利為前瞻訊號，非已出貨能力。⚠ **全篇無量化值**（無溫度門檻、無 HEA 組成、無摻銦比例、無強度值）⇒ 「專利軌訊號以定性為主」連續第八輪成立。⚠ **目標產品線未載**（量子運算低溫記憶體？車用？航太？）⇒ 新空缺。⚠ 兩位發明人署台灣，**本件未載廠址，不得據以推論 Micron 台灣封測基地之關聯**。
+
+📌 **作業面**：本輪以 `pa="micron technology" and ti,ab="package" and pd within "2026"` 檢索僅得 **3 件**（另兩件為記憶體封裝冗餘儲存 WO2026049956A1 與一件重複），⇒ **既載列管之「專利軌輪替至 Micron」本輪結清，但該檢索式對 Micron 的召回明顯偏低**，下次應改以 CPC 或不加 `ti,ab="package"` 之較寬軸。
+
+### 相關來源
+
+- [[sources/2026-10-08_micron-cryogenic-package-hea-solder]]

@@ -3,7 +3,7 @@ title: "鈺創科技 Etron Technology（與 ND Hi Tech Lab）"
 category: entity
 tags: [Etron, ND-Hi-Tech-Lab, Taiwan, glass-substrate, TGV, TTV, thermal-management, DRAM, fabless]
 created: 2026-09-28
-updated: 2026-09-28
+updated: 2026-10-08
 related:
   - wiki/technologies/glass-substrate.md
   - wiki/technologies/tsv.md
@@ -45,3 +45,21 @@ related:
 - [[sources/2026-09-28_etron_us20260090421a1-ttv-tgv-thermal-dissipation-layer]]
 
 ⚠ 目前 wiki 對此二實體的全部認識**僅來自一件專利摘要**，**無量化值、無產品、無量產佐證**。
+
+---
+
+## [2026-10-08] ⭐⭐⭐ 專利訊號第二件：液體直接流經基板腔體
+
+**TW202522705A（族 97224453，2025-06-01 公開；申請人 ND HI TECHNOLOGIES LAB ＋ ETRON TECHNOLOGY；發明人 LU CHAO-CHUN、TONG HO-MING）**
+
+Etron／ND Hi Tech 於 2025-06 公開之專利顯示：**基板本身具第一腔體供液體通過**，上方冷板之第二腔體與之**連通**，液體在兩腔體間流動；處理器晶粒由**正面或背面供電網路**供電，記憶體與控制晶粒堆疊其上，並有**高熱導（HTC）互連**置於晶粒之間與／或並列。明示目的為超越單面拓撲，達成**雙面或多面的散熱、供電與訊號**。
+
+- ⭐⭐⭐ **本 wiki 第一件把工作流體引入載體內部者。** 既載同向證據（本頁前件 US20260090421A1 之貫穿散熱孔 TTV／TGV、SiC／玻璃基板熱導）**全屬固體傳導** ⇒ 既載「散熱自附加結構往承載結構本身移動」達到最強形式：**承載結構即流道本體。**
+- ⭐⭐⭐ **三種功能（熱／電／訊號）同時雙面化** ⇒ 既載「封裝的上下兩面各自專責一種網路」須擴寫為「**封裝的面正在成為被分配的資源**」，熱為被分配的第三項。
+- ⭐⭐ Etron 在本 wiki 的定位自「玻璃基板熱通道」擴為「**封裝熱—電—訊號拓撲的提案者**」，且**連續兩輪入庫**（2026-09-28 US20260090421A1、本輪 TW202522705A）。
+
+⚠ **Hedge**：**Etron 為 fabless，不製造封裝，本件不預示任何量產時程。** ⚠ **兩件屬不同 family；且兩件皆無任何量化值**（本件無流量、壓損、腔體尺寸、熱阻）⇒ 不存在互相援引數值的可能。⚠ **OPS biblio 回應未載本件分類**。⚠ date 2025-06-01，距今約十六個月。
+
+### 相關來源
+
+- [[sources/2026-10-08_etron-liquid-through-substrate-cavity]]

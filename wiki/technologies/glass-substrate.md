@@ -3,8 +3,8 @@ title: "玻璃基板 / Glass Core Substrate"
 category: technology
 tags: [glass-substrate, TGV, panel-level, FC-BGA, CoPoS, Absolics, DNP, Rapidus, warpage, SeWaRe, glass-interposer, BOE, ULCVD, non-embedding, Lens-Technology, TPK-KY, Innolux, AUO, LG-Chem, singulation, patent-signal]
 created: 2026-05-08
-updated: 2026-10-07
-sources: [2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-27_tradingkey_copos-glass-validation-08mm-85x110mm, 2026-09-27_intel_us20260182414a1-asymmetric-buildup-cte-gradient-glass, 2026-09-27_samsung_us20260144093a1-bridge-on-tgv-mold-fixed, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-05-05_trendforce-insights_glass-substrate-development, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-05-29_3dincites_rapidus-2nm-advanced-packaging-ai-foundry, 2026-06-01_trendforce_intel-3dgs-india-glass-substrate, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-06-20_biggo_boe-glass-substrate-pilot, 2026-06-28_economy-ac_glass-substrate-global-race, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-08-18_trendforce_shinko-glass-substrate-22layer-glassem-delay, 2026-09-11_mssp_tgv-glass-biaxial-bending-ring-on-ring, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-03-13_kaneka_jp2026047137a-glass-core-polyimide-quantified, 2026-08-10_screp_low-k-organic-buffer-tgv-cu-metallization, 2026-08-04_jmrt_vacuum-assisted-void-free-cu-fill-tgv, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_patent_er-eng-glass-interposer-dual-carrier, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-30_epo_xiamen-anjieli-cn121335557a-silane-parylene-tgv, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth, 2026-09-30_epo_intel-jp2026116680a-glass-core-embedded-inductor-clusters, 2026-09-30_epo_intel-us20260040982a1-glass-package-liquid-metal-socketing, 2026-09-30_epo_amosense-wo2026019155a1-multilayer-glass-core-frit-bonding, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-10-02_epo_shanghai-xianfeng-cn122622683a-glass-interposer-bridge, 2026-10-02_epo_semco-cn122054433a-glass-surface-roughness, 2026-10-02_trendforce_nvidia-glass-substrate-2028-taiwan, 2026-10-02_trendforce_intel-microled-glass-24-layer, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-06_atlaspcb_clearwater-forest-glass-core-claim-unsourced, 2026-10-06_intel_clearwater-forest-no-glass-foveros-9um-3um-emib-45um, 2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage, 2026-10-06_thelec_sec-xray-tsv-tgv-inspection-1um, 2026-10-07_epo_cas-freestanding-3c-sic-interposer, 2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk, 2026-10-07_epo_evg-inorganic-dual-release-layer-common-solvent]
+updated: 2026-10-08
+sources: [2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-27_tradingkey_copos-glass-validation-08mm-85x110mm, 2026-09-27_intel_us20260182414a1-asymmetric-buildup-cte-gradient-glass, 2026-09-27_samsung_us20260144093a1-bridge-on-tgv-mold-fixed, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-05-05_trendforce-insights_glass-substrate-development, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-05-29_3dincites_rapidus-2nm-advanced-packaging-ai-foundry, 2026-06-01_trendforce_intel-3dgs-india-glass-substrate, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-06-20_biggo_boe-glass-substrate-pilot, 2026-06-28_economy-ac_glass-substrate-global-race, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-08-18_trendforce_shinko-glass-substrate-22layer-glassem-delay, 2026-09-11_mssp_tgv-glass-biaxial-bending-ring-on-ring, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-03-13_kaneka_jp2026047137a-glass-core-polyimide-quantified, 2026-08-10_screp_low-k-organic-buffer-tgv-cu-metallization, 2026-08-04_jmrt_vacuum-assisted-void-free-cu-fill-tgv, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_patent_er-eng-glass-interposer-dual-carrier, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-30_epo_xiamen-anjieli-cn121335557a-silane-parylene-tgv, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth, 2026-09-30_epo_intel-jp2026116680a-glass-core-embedded-inductor-clusters, 2026-09-30_epo_intel-us20260040982a1-glass-package-liquid-metal-socketing, 2026-09-30_epo_amosense-wo2026019155a1-multilayer-glass-core-frit-bonding, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-10-02_epo_shanghai-xianfeng-cn122622683a-glass-interposer-bridge, 2026-10-02_epo_semco-cn122054433a-glass-surface-roughness, 2026-10-02_trendforce_nvidia-glass-substrate-2028-taiwan, 2026-10-02_trendforce_intel-microled-glass-24-layer, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-06_atlaspcb_clearwater-forest-glass-core-claim-unsourced, 2026-10-06_intel_clearwater-forest-no-glass-foveros-9um-3um-emib-45um, 2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage, 2026-10-06_thelec_sec-xray-tsv-tgv-inspection-1um, 2026-10-07_epo_cas-freestanding-3c-sic-interposer, 2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk, 2026-10-07_epo_evg-inorganic-dual-release-layer-common-solvent, 2026-10-08_rdl-free-glass-interposer-trench, 2026-10-08_pku-embedded-glass-fanout-roughness, 2026-10-08_uestc-tapered-tgv-skin-current]
 related:
   - wiki/technologies/rdl.md
   - wiki/technologies/copos.md
@@ -2087,3 +2087,60 @@ TrendForce（2026-09-30，⚠ **全文為 reportedly 之產業傳聞，非 NVIDI
 ### 相關來源
 
 [[sources/2026-10-07_epo_cas-freestanding-3c-sic-interposer]]、[[sources/2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk]]、[[sources/2026-10-07_epo_evg-inorganic-dual-release-layer-common-solvent]]
+
+---
+
+## [2026-10-08] ⭐⭐⭐ RDL 這個物件被取消；表面粗糙度支配 mmWave 損耗；錐角自缺陷改列為設計自由度
+
+本輪論文軌 5 筆中 **3 筆**為玻璃／TGV（上海大學、北京大學、UESTC），另檢視未採之 KETI 回顧與 HUST 分子動力學各 1 筆。
+
+### ⭐⭐⭐ 論述一：免 RDL 玻璃中介層 —— 連佈線層都併入承載結構
+
+**上海大學（10.1109/tcpmt.2026.3698072，2026-05-29）**：**以基材表面之淺溝槽取代水平 RDL**；溝槽與 TGV **以同一製程（LIWE，雷射誘發濕蝕刻）成形**，並以**真空輔助吸入銀奈米粒子高分子（ANFP）同時金屬化**。
+
+| 項目 | 數值 |
+|------|------|
+| TGV | **φ50 µm × 高 500 µm**（AR 1:10） |
+| 溝槽 | **截面邊長 50 µm × 長 2,500 µm** |
+| 填充時間 | **5 秒內**（TGV ＋ 溝槽同時） |
+| daisy-chain 電阻 | **<90 mΩ @ 23 °C**（原文自稱 preliminary） |
+| 被消除之製程 | **銅電鍍**（連帶消除 RDL 分層風險） |
+
+➜ ⭐⭐⭐ **既載玻璃中介層條目一律由「TGV（垂直）＋ RDL（水平）」兩件組成；本件把水平佈線改為基材本身的淺溝槽** ⇒ **既載論述「系統層功能正在逐項下移到封裝的承載結構」在此達到極端形式。**
+➜ ⭐⭐⭐ **既載「業界的第二條路是把設計移到規格較鬆的區間」取得第七例，且為此前未見之「整步移除」型** —— 本件繞過的不是缺陷，而是**產生缺陷的那個製程本身**（銅電鍍）。
+⚠⚠ **不得主張電性等效**：<90 mΩ 為 daisy-chain 平均、原文自稱 preliminary；**銀奈米粒子高分子之電阻率遠高於電鍍銅**，原文對電性僅稱 "acceptable"。無可靠度循環數、無高頻特性、無節距能力。
+
+### ⭐⭐⭐ 論述二：表面粗糙度首次成為玻璃封裝的主要損耗歸因
+
+**北京大學（10.1038/s41378-026-01399-7，2026-07-23）**：以 **LIDE** 成形高垂直度玻璃腔體供晶粒嵌入；**最佳化 CMP 使 RDL 表面粗糙度降低 97%**，據此把**傳輸損耗壓至 <0.25 dB/mm**；製作 Ka 頻段低噪放＋天線微系統，另示 **GaN 功放 ＋ 矽開關**之異質收發模組。
+
+➜ ⭐⭐⭐ 既載玻璃損耗論述以**介電常數／介質損耗**為主（AGC Sdd21、PWG dB/cm 路線圖）；本件指出**在 mmWave，RDL 的幾何表面狀態可支配傳輸損耗**。
+➜ ⭐⭐⭐ **與既載 2026-10-07 之核心升級（「接合的驗收項正在自材料與化學移向幾何與表面狀態」，源自 Sherbrooke/3IT 鑽石鍵合之「潔淨度與粗糙度勝過化學」）在同一方向上取得第二個完全獨立的領域（RF 佈線 vs 鍵合界面）** ⇒ **該論述可自「接合」擴寫為「封裝的介面」通則。**
+  ⚠ 依 2026-10-07 之規範（升格須檢查發言人而非只檢查出版物）：兩來源為 **Sherbrooke/3IT 鑽石團隊** 與 **北京大學微納團隊**，**無人員重疊**，門檻在人物層亦成立。
+➜ ⭐⭐⭐ **「把晶粒嵌入腔體」序列新增第三種載體**：Shinko US20260293748A1（有機核心貫穿腔體）、Apple KR20260119943A（介電質腔體）之外，本件為**玻璃腔體 ＋ LIDE ＋ 扇出**，且是**唯一給出電性結果者**。
+⚠⚠ **「97%」為相對降幅、絕對粗糙度未給** ⇒ 依既立規範（相對改善須標明基準）**不可單獨引用**；Nature OA 全文可取得 ⇒ 下輪可結清。
+⚠ 本件屬 **RF 微系統而非 AI／HPC 封裝** ⇒ 不得與 CoWoS／EMIB 同列；<0.25 dB/mm 亦不得與 PWG 之 dB/cm 直接換算比較。
+
+### ⭐⭐⭐ 論述三：錐角不是缺陷，而是設計變數
+
+**UESTC（10.1109/tcpmt.2026.3700943，2026-06-08）**：提出**含皮膚電流之錐形 TGV 解析電感模型**並界定適用頻率範圍；於 **200 °C** 顯示**錐角會重分布銅柱內應力並降低 Cu/玻璃界面之應力集中**；以**雷射功率、超音波功率、HF 濃度、蝕刻溫度、氟化銨濃度**五項達成錐度精確控制。
+
+➜ ⭐⭐⭐ **部分推進既載空缺「TGV 陣列力學數值」（2026-09-16）**：該空缺追蹤雙軸彎曲強度絕對值與**蝕刻製程貢獻量**；本件給出**五個可調製程因子的完整清單**但**未給貢獻權重** ⇒ **空缺自「完全空白」降級為「因子已知、權重未知」，不結清。**
+➜ ⭐⭐⭐ 既載玻璃條目一貫視錐形側壁為**待消除之非理想**；本件主張其可**重分布應力** ⇒ 「把設計移到規格較鬆的區間」取得**第八例**，型別為**「把製程缺陷改列為設計自由度」**，與既載 EVG 分區自適應曝光同向。
+➜ ⭐⭐ **「現有模型無法描述非垂直孔之皮膚電流」為本 wiki 首見之「模型能力缺口」明示陳述。**
+
+⚠⚠ **與既載 AGC 之表面張力（並列，不互相反駁）**：AGC 稱**填滿 vs conformal TGV 在 30 GHz 電性無顯著差異**（Sdd21 −2.11 vs −2.08 dB）；本件稱**孔的錐度在高頻重要**。**一談填充方式、一談孔的輪廓，物件不同** ⇒ 列入矛盾追蹤，兩者並列。
+
+### 2026-10-08 新增空缺
+
+- [ ] ⭐⭐ **北大 97% 粗糙度降幅之絕對基準值**（Nature OA 全文可取得，下輪可結清）。
+- [ ] ⭐⭐ **UESTC 五個蝕刻因子之貢獻權重與最佳錐角數值。**
+- [ ] ⭐⭐ **UESTC 同團隊姊妹作 `10.1109/tcpmt.2026.3694441`（應力緩衝層與環狀／淺溝槽隔離之 FEM，2026-05-18）** —— 本輪為避免單一團隊占比過高而未收錄，**列為下輪優先候選**。
+- [ ] ⭐⭐ **KETI 之 TGV 缺陷譜全文**（`10.3390/mi17060720`，2026-06-14，本輪檢視未採）—— 其缺陷分類（voids／seams／pinch-off／seed 不連續／Cu-玻璃分層／玻璃裂紋／Cu protrusion）是本 wiki 目前最完整者，應於下輪收錄為缺陷譜基準頁。
+- [ ] ⭐ **免 RDL 中介層之可靠度循環數與高頻特性。**
+
+### 相關來源
+
+- [[sources/2026-10-08_rdl-free-glass-interposer-trench]]
+- [[sources/2026-10-08_pku-embedded-glass-fanout-roughness]]
+- [[sources/2026-10-08_uestc-tapered-tgv-skin-current]]

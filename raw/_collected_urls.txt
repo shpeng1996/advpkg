@@ -801,3 +801,18 @@
 2026-10-07 | https://doi.org/10.1016/j.diamond.2026.114218 | raw/papers/2026-10-07_openalex_diamond-d2w-direct-bonding-vdw-45mpa.md | Diamond D2W: 45.1 MPa shear, van der Waals dominated
 2026-10-07 | https://doi.org/10.4071/001c.167016 | raw/papers/2026-10-07_openalex_amkor-kelly-three-interposer-routes.md | Amkor: HDFO / bridge / Si interposer are a CHOICE
 2026-10-07 | https://doi.org/10.1016/j.microrel.2026.116262 | raw/papers/2026-10-07_openalex_lau-silicon-bridge-microbump-reliability.md | Lau: silicon bridge microbump reliability (no numbers)
+2026-10-08 | https://semiengineering.com/voltage-regulation-moves-into-the-package/ | raw/articles/2026-10-08_semieng_voltage-regulation-moves-into-package.md | IVR in package: >5 A/mm2, 3000 A EM limit
+2026-10-08 | https://www.businesswire.com/news/home/20250825729793/en/Ferric-Launches-New-Integrated-Voltage-Regulator-for-AI-and-High-Performance-Processors | raw/articles/2026-10-08_businesswire_ferric-fe1766-ivr-160a-current-density.md | Ferric Fe1766: 160 A / >4.5 A/mm2 / 35.5 mm2
+2026-10-08 | https://www.electronicdesign.com/technologies/power/article/55237347/electronic-design-empowers-voltage-regulator-ic-enables-vertical-power-delivery-for-ai-chips | raw/articles/2026-10-08_electronicdesign_empower-crescendo-vertical-power-delivery.md | Empower Crescendo: >3000 A, ECAP Si caps
+2026-10-08 | https://semiengineering.com/singulated-die-test-ensures-stacked-die-quality-as-power-density-rises/ | raw/articles/2026-10-08_semieng_advantest-singulated-die-test-100wcm2.md | Advantest SDT: 100 W/cm2 quad-site ATI
+2026-10-08 | https://semiengineering.com/wafer-test-challenges-for-chiplets/ | raw/articles/2026-10-08_semieng_formfactor-wafer-test-chiplets-45um-probe.md | FormFactor: 45 um microbump probe pitch (2020)
+2026-10-08 | EPO:100311723:WO2026139941A1 | raw/patents/2026-10-08_WO2026139941A1_silverbrook-wafer-scale-substrate-continuity-kgd.md | Silverbrook: known-good-site substrate test
+2026-10-08 | EPO:97224453:TW202522705A | raw/patents/2026-10-08_TW202522705A_etron-ndhitech-liquid-through-substrate-cavity.md | Etron: liquid through substrate cavity cooling
+2026-10-08 | EPO:101295473:US20260283054A1 | raw/patents/2026-10-08_US20260283054A1_micron-cryogenic-package-hea-solder.md | Micron: cryogenic package, HEA-core solder
+2026-10-08 | EPO:94873288:US20250087646A1 | raw/patents/2026-10-08_US20250087646A1_samsung-stacked-rdl-package-bspdn-layer.md | Samsung: stacked RDL package w/ BSPDN layer
+2026-10-08 | EPO:95484286:US20250140648A1 | raw/patents/2026-10-08_US20250140648A1_ibm-w2w-bonded-deep-trench-cap-bspdn.md | IBM: W2W bonded deep-trench cap + BSPDN
+2026-10-08 | https://doi.org/10.4071/001c.165476 | raw/papers/2026-10-08_openalex_ase-probing-needle-taguchi-scrub-length.md | ASE: probing needle Taguchi scrub length
+2026-10-08 | https://doi.org/10.1109/tcpmt.2026.3698072 | raw/papers/2026-10-08_openalex_shanghaiu-rdl-free-glass-interposer-trench.md | RDL-free glass interposer: trench + ANFP 5 s
+2026-10-08 | https://doi.org/10.1109/tcsi.2026.3698102 | raw/papers/2026-10-08_openalex_zju-8module-fivr-90a-matrix-current-sharing.md | ZJU: 8-module FIVR 90 A, 10.6% sharing
+2026-10-08 | https://doi.org/10.1038/s41378-026-01399-7 | raw/papers/2026-10-08_openalex_pku-embedded-glass-fanout-ka-band-rdl-cmp.md | PKU: embedded glass fan-out, CMP -97% rough
+2026-10-08 | https://doi.org/10.1109/tcpmt.2026.3700943 | raw/papers/2026-10-08_openalex_uestc-tapered-tgv-skin-current-taper-stress.md | UESTC: tapered TGV skin current + taper stress

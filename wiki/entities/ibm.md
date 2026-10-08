@@ -3,8 +3,8 @@ title: "IBM Research / IBM 研究院"
 category: entity
 tags: [research, 3D-packaging, nanostack, hybrid-bonding, sub-2nm, chiplet]
 created: 2026-09-11
-updated: 2026-10-04
-sources: [2026-09-27_paper_binghamton-ibm-pad-scaling-resistance-variability, 2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-09-26_paper_ibm-amine-post-cmp-clean]
+updated: 2026-10-08
+sources: [2026-09-27_paper_binghamton-ibm-pad-scaling-resistance-variability, 2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-09-26_paper_ibm-amine-post-cmp-clean, 2026-10-08_ibm-w2w-bonded-deep-trench-capacitor]
 related:
   - wiki/technologies/hybrid-bonding.md
   - wiki/concepts/thermal-management.md
@@ -197,3 +197,27 @@ IPC：H10P74/203、/207、/23、/273、/277
 ### 相關來源
 
 [[sources/2026-10-04_epo_ibm-bridge-chip-backside-pdn]]
+
+---
+
+## [2026-10-08] 專利訊號：深溝電容做進被鍵合的元件晶圓層（去耦電容載體第四種）
+
+**US20250140648A1（族 95484286，2025-05-01 公開；發明人 CHOI KISIK、HOOK TERENCE B、XIE RUILONG、ZHOU HUIMEI）**
+
+IBM 於 2025-05 公開之專利顯示：一顆晶片含**兩層元件層，由兩片晶圓鍵合而成**；**第一層含溝槽式元件，明示例為深溝電容**，接至第一正面互連佈線；兩層之正面互連佈線以**接合金屬塞（joined metal plugs）** 相連（**鍵合介面即互連介面**）；**第二層主動元件接至背面供電網路（BSPDN）**。
+
+- ⭐⭐ **既載「去耦電容物件化」軸（2026-10-01 立，九筆來源／五家廠商／三種載體）新增第四種載體：「被鍵合的元件晶圓層」。**
+  | | 既載 IBM | 本輪 IBM |
+  |---|---|---|
+  | 專利 | US20260107832A1（族 99436783） | **US20250140648A1（族 95484286）** |
+  | 電容位置 | **晶背** | **被鍵合之下層元件晶圓層內（與主動元件同層）** |
+  | 時序 | 混合接合**之後**附加 | **接合之前**即已存在 |
+  ⇒ **同一公司、同一軸、第二種載體，且兩者時序相反。**
+- ⭐ **「鍵合介面同時是互連介面」** 可與既載混合接合條目並讀。
+
+⚠⚠ **本輪 ingest 之自我更正（已於同輪完成）**：初判曾誤記本件為「本 wiki 首見之去耦電容位置軸」並擬立候選論述；**該軸早於 2026-10-01 成立，且 IBM 本身已在該表內**。根因：未先檢索既載頁即據單輪證據判新（與 2026-10-05 同型）。
+⚠ **本件未使用 "hybrid bonding" 一詞**，不得逕記為混合接合案例。⚠ **本件主體仍是元件層結構**，封裝相關性在於 W2W 鍵合與被動元件配置 ⇒ 不得當作 IBM 的封裝產品路線圖證據。⚠ date 2025-05-01，距今約十七個月。⚠ 全篇無量化值。
+
+### 相關來源
+
+- [[sources/2026-10-08_ibm-w2w-bonded-deep-trench-capacitor]]

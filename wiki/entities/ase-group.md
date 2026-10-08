@@ -3,8 +3,8 @@ title: "ASE Group / 日月光投控"
 category: entity
 tags: [OSAT, advanced-packaging, CoWoP, FOPLP, chiplet, CPO, LEAP]
 created: 2026-04-25
-updated: 2026-09-29
-sources: [2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below, 2026-08-05_trendforce_tsmc-cowos-cow-outsourcing-osat, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2026-05-08_aseglobal_ase-wus-kaohsiung-focoes-hub, 2026-05-26_semiconductor-digest_ase-310mm-plp-ectc2026, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-11_trendforce_ase-spil-zhunan-plant, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-07-01_trendforce_ase-price-hike-20pct, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-31_ase_cn224583735u-photoelectric-hybrid-rdl, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-06-02_intel_ectc2026-emib-t-cpo-glass]
+updated: 2026-10-08
+sources: [2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below, 2026-08-05_trendforce_tsmc-cowos-cow-outsourcing-osat, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2026-05-08_aseglobal_ase-wus-kaohsiung-focoes-hub, 2026-05-26_semiconductor-digest_ase-310mm-plp-ectc2026, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-11_trendforce_ase-spil-zhunan-plant, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-07-01_trendforce_ase-price-hike-20pct, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-31_ase_cn224583735u-photoelectric-hybrid-rdl, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-10-08_ase-probing-needle-scrub-length, 2026-10-08_semieng_voltage-regulation-in-package]
 related:
   - wiki/technologies/cowos.md
   - wiki/technologies/copos.md
@@ -295,3 +295,24 @@ Intel Foundry 的 ECTC 2026 官方部落格列出其 20 篇論文的合作方，
 ➜ **與既有吳田玉表態自洽**：CoWoS/EMIB 不互斥——本輪 EMIB-T（>8×→>12× 於 2028）與 CoWoS（5.5×→>14× 於 2029）兩條曲線交叉，正是「不互斥」的量化形式。
 
 **來源**：[[sources/2026-09-29_trendforce_advanced-packaging-market-trends-outlook]]
+
+---
+
+## [2026-10-08] ⭐⭐⭐ 一手測試研究首次入庫：探針幾何以田口法最佳化 scrub length
+
+**論文 `10.4071/001c.165476`（IMAPSource Proceedings，2026-07-23；作者 Meng-Kai Shih、Yi-Shao Lai，ASE 台灣；全文 PDF 公開）**
+
+以**田口法 L18（2¹ × 3⁷）直交表**求使 **scrub length（探針尖端在晶圓級探測中滑行的長度）最小**之探針幾何，納入**八個幾何因子**（tip shape、needle diameter、beam length、taper length、knee diameter、shooting angle、tip length、tip diameter），並對各因子重要度排序。動機明示為**延長探針壽命 ⇒ 降低測試成本**。
+
+- ⭐⭐⭐ **「scrub length」為本 wiki 首見之探測物理量，且是機械磨耗量而非電性量** ⇒ 既載「電性探測可接取性節距」軸（2026-10-07 立）自單一維度（節距）擴為兩維度（**＋由八個幾何因子決定的機械壽命量**）。
+- ⭐⭐⭐ **ASE 在本 wiki 的角色自「封裝產能與路線圖的受訪方」擴為「測試方法的自有研究者」** ⇒ 既載「測試／量測為第三個結構性瓶頸」（2026-09-17 升格）首次取得**產業內自有研究**的直接佐證，而非媒體轉述。
+- ⭐⭐ **最佳化目標是降低測試成本而非提高覆蓋率** ⇒ 與同輪 FormFactor 的兩條覆蓋率產品線指向同一經濟結構：**測試的設計變數被成本而非正確性主導。**
+- 📌 同輪 ASE 另有 **Vikas Gupta（Director of Engineering and Technical Promotion）** 於 SemiEng 供電專題中主張**垂直供電與在負載附近做最後降壓**，並稱單一元件 TGP 已「well over 1,000 W」。
+
+⚠ 摘要未給 scrub length 絕對值與因子排序 ⇒ **全文 PDF 公開可取得，列為下輪可結清之空缺。**
+⚠ 依 2026-10-07 之規範（檢查發言人而非只檢查出版物）：本輪 ASE 出現**兩次但為兩位不同人員**（Shih/Lai 論文、Gupta 受訪），**不構成同一人多次發言之重複計數**。
+
+### 相關來源
+
+- [[sources/2026-10-08_ase-probing-needle-scrub-length]]
+- [[sources/2026-10-08_semieng_voltage-regulation-in-package]]

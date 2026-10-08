@@ -3,8 +3,8 @@ title: "RDL — 重分佈層 / Redistribution Layer"
 category: technology
 tags: [RDL, SAP, dual-damascene, embedded-trace, ETR, polyimide, FPIM, CMP, electromigration, panel-level, pad-less-via]
 created: 2026-09-26
-updated: 2026-10-07
-sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2026-09-27_paper_purdue-ru-cu-em-lifetime-blacks-n-0154, 2026-09-27_paper_copper-interconnect-scaling-roadmap-lines-per-mm, 2026-09-26_article_taiyo-imec-700nm-damascene-rdl, 2026-09-26_article_imec-1um-damascene-rdl-2019-anchor, 2026-09-26_article_amkor-embedded-trace-rdl, 2026-09-26_paper_asi-1um-hdbu-substrate, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-25_paper_dnp-glass-rdl-electromigration-lifetime, 2026-09-25_paper_cornell-glass-on-glass-sio2-rdl, 2026-09-25_paper_asu-molded-core-substrate-warpage, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_shanghai-xianfeng-cn122622683a-glass-interposer-bridge, 2026-10-02_imaps-dpc2026_defect-free-coplanar-copper-via-fill, 2026-10-06_epo_intel-mold-extension-package-to-package-topside-bridge, 2026-10-06_openalex_gatech-terahertz-nde-8layer-interposer, 2026-10-07_epo_amkor-bspdn-oriented-package-embedded-ipd, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-07_openalex_amkor-kelly-three-interposer-routes]
+updated: 2026-10-08
+sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2026-09-27_paper_purdue-ru-cu-em-lifetime-blacks-n-0154, 2026-09-27_paper_copper-interconnect-scaling-roadmap-lines-per-mm, 2026-09-26_article_taiyo-imec-700nm-damascene-rdl, 2026-09-26_article_imec-1um-damascene-rdl-2019-anchor, 2026-09-26_article_amkor-embedded-trace-rdl, 2026-09-26_paper_asi-1um-hdbu-substrate, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-25_paper_dnp-glass-rdl-electromigration-lifetime, 2026-09-25_paper_cornell-glass-on-glass-sio2-rdl, 2026-09-25_paper_asu-molded-core-substrate-warpage, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_shanghai-xianfeng-cn122622683a-glass-interposer-bridge, 2026-10-02_imaps-dpc2026_defect-free-coplanar-copper-via-fill, 2026-10-06_epo_intel-mold-extension-package-to-package-topside-bridge, 2026-10-06_openalex_gatech-terahertz-nde-8layer-interposer, 2026-10-07_epo_amkor-bspdn-oriented-package-embedded-ipd, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-07_openalex_amkor-kelly-three-interposer-routes, 2026-10-08_rdl-free-glass-interposer-trench, 2026-10-08_pku-embedded-glass-fanout-roughness, 2026-10-08_samsung-stacked-rdl-package-bspdn-layer]
 related:
   - wiki/technologies/foplp.md
   - wiki/technologies/glass-substrate.md
@@ -594,3 +594,17 @@ Scrona 明文把「嚴格的基板平坦度要求」指認為**傳統微影路�
 ### 相關來源
 
 [[sources/2026-10-07_epo_amkor-bspdn-oriented-package-embedded-ipd]]、[[sources/2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch]]、[[sources/2026-10-07_openalex_amkor-kelly-three-interposer-routes]]
+
+---
+
+## [2026-10-08] ⭐⭐⭐ RDL 的兩個反向發展：被整步取消，與被表面狀態支配
+
+1. ⭐⭐⭐ **被取消**：上海大學**以基材淺溝槽取代水平 RDL**（免 RDL 玻璃中介層），溝槽與 TGV 同製程（LIWE）成形、同時以銀奈米粒子高分子金屬化，**消除銅電鍍與 RDL 分層風險**；<90 mΩ @ 23 °C（daisy-chain 平均，preliminary）。⇒ **RDL 作為一個獨立「層」的必要性首次被請求項層級以外的實作挑戰。**
+2. ⭐⭐⭐ **被表面狀態支配**：北京大學以最佳化 CMP 使 **RDL 表面粗糙度降低 97%**，據此把傳輸損耗壓至 **<0.25 dB/mm**（Ka 頻段）⇒ **在 mmWave，RDL 的幾何表面狀態可支配傳輸損耗，而非介電材料。** ⚠ 97% 為相對降幅、絕對值未給，不可單獨引用。
+3. ⭐⭐ **層間互連的免 TSV 化**：Samsung **US20250087646A1** 以**貫穿模封之導電柱**連接三層 RDL 基板（無基板核心之堆疊式扇出）⇒ 與既載 Deca US20260136970A1（模封免孔橋、垂直互連在周界）同族手法 ⇒ **既載「橋／載體的免 TSV 化」可擴及「堆疊層間互連的免 TSV 化」。**
+
+### 相關來源
+
+- [[sources/2026-10-08_rdl-free-glass-interposer-trench]]
+- [[sources/2026-10-08_pku-embedded-glass-fanout-roughness]]
+- [[sources/2026-10-08_samsung-stacked-rdl-package-bspdn-layer]]

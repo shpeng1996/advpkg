@@ -3,8 +3,8 @@ title: "封裝層的供電網路 / Power Delivery Networks at the Package Level"
 category: concept
 tags: [PDN, power-delivery, vertical-power, eVR, capacitor, inductor, passive-integration, hybrid-bonding, rack-power]
 created: 2026-09-29
-updated: 2026-10-07
-sources: [2026-09-29_imaps-dpc2026_nanoporous-silicon-capacitor-pdn, 2026-09-29_imaps-dpc2026_saras-stile-evr-vertical-pdn, 2026-09-29_semieng_tech-paper-roundup-sept29-multikw-3dhi-pdn, 2026-09-29_semiwiki_ofc2026-siph-cpo-oci-ocs-summary, 2026-09-30_arxiv_umn-multi-kw-power-delivery-3d-hi, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_epo_intel-jp2026116680a-glass-core-embedded-inductor-clusters, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_imaps-dpc2026_delo-die-side-capacitor-encapsulation, 2026-10-02_epo_samsung-cn122602880a-ivr-capacitor-interposer-core, 2026-10-02_jmmm_tyndall-fecob-n-pwrsoc-magnetics, 2026-10-02_epo_amd-us20260282956a1-silicon-bridge-decap, 2026-10-06_openalex_auburn-nife-tsv-magnetic-shield-package, 2026-10-07_epo_amkor-bspdn-oriented-package-embedded-ipd, 2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch]
+updated: 2026-10-08
+sources: [2026-09-29_imaps-dpc2026_nanoporous-silicon-capacitor-pdn, 2026-09-29_imaps-dpc2026_saras-stile-evr-vertical-pdn, 2026-09-29_semieng_tech-paper-roundup-sept29-multikw-3dhi-pdn, 2026-09-29_semiwiki_ofc2026-siph-cpo-oci-ocs-summary, 2026-09-30_arxiv_umn-multi-kw-power-delivery-3d-hi, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_epo_intel-jp2026116680a-glass-core-embedded-inductor-clusters, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_imaps-dpc2026_delo-die-side-capacitor-encapsulation, 2026-10-02_epo_samsung-cn122602880a-ivr-capacitor-interposer-core, 2026-10-02_jmmm_tyndall-fecob-n-pwrsoc-magnetics, 2026-10-02_epo_amd-us20260282956a1-silicon-bridge-decap, 2026-10-06_openalex_auburn-nife-tsv-magnetic-shield-package, 2026-10-07_epo_amkor-bspdn-oriented-package-embedded-ipd, 2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-08_semieng_voltage-regulation-in-package, 2026-10-08_ferric-fe1766-current-density-denominator, 2026-10-08_empower-crescendo-regulator-side, 2026-10-08_zju-8module-fivr-current-sharing, 2026-10-08_samsung-stacked-rdl-package-bspdn-layer, 2026-10-08_ibm-w2w-bonded-deep-trench-capacitor, 2026-10-08_etron-liquid-through-substrate-cavity]
 related:
   - wiki/concepts/thermal-management.md
   - wiki/technologies/hybrid-bonding.md
@@ -575,3 +575,105 @@ Tyndall National Institute × University College Cork（JMMM，2026-09-02）：�
 ### 相關來源
 
 [[sources/2026-10-07_epo_amkor-bspdn-oriented-package-embedded-ipd]]、[[sources/2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk]]、[[sources/2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch]]
+
+---
+
+## [2026-10-08] ⭐⭐⭐ A/mm² 的分母首次被反推出來；併聯的代價首次被量化
+
+本輪 15 筆來源中 **7 筆**指向供電（新聞 3、專利 3、論文 1）。
+
+### ⭐⭐⭐ 論述一：A/mm² 這條軸此前無法比較，現在有了判準
+
+本 wiki 自 2026-09-30 起累積了四個 A/mm² 落點，但**從未確認過任一個的分母**。本輪由 Ferric 一手規格反推成功：
+
+**160 A ÷ 35.5 mm²（矽面積，8 × 4.4 mm）= 4.507 A/mm²**，與其自述「>4.5 A/mm²」吻合至三位有效數字。
+（若以封裝佔位 4.2 × 8 = 33.6 mm² 反推得 4.76，與「>4.5」之敘述較不吻合。）
+➜ **Ferric 之分母＝矽晶粒面積。** 此為本 wiki 首次能回答「這個 A/mm² 的分母是什麼」。
+
+| 來源 | 數值 | 分母 | 狀態 |
+|------|------|------|------|
+| **Infineon**（供應側路線圖，2026-09-30） | 0.4 → 2.0 → **>3（明示障壁）** → >4 | **電源模組**，截面口徑未確認 | ⚠ 未確認 |
+| **arXiv 2606.28837**（需求側，2026-10-01） | 目標 **2–4**／現況 **<1** | **系統供電網路**，截面口徑未確認 | ⚠ 未確認 |
+| **Ferric Fe1766**（本輪，產品一手） | **>4.5** | **矽晶粒面積（本 wiki 反推確認）** | **✓ 已確認** |
+| **SemiEng 某客戶**（本輪，Ferric CEO 轉述） | **>5** | 口徑未確認 | ⚠ 未確認 |
+
+⚠⚠⚠ **新引用規範（本輪立）：凡引用任何 A/mm² 數字，必須同時標明其分母屬下列哪一類 —— ①電源模組佔地、②系統供電網路截面、③矽晶粒面積、④未確認。未標者不得引用，不得排序，不得相減，不得宣告任何「障壁已被突破」。**
+➜ 據此：**「Ferric >4.5 已跨過 Infineon 的 3 A/mm² 障壁」是一個不成立的推論**，因兩者分母不同類。既載空缺「3 A/mm² 障壁的物理限制項」**仍未結清**，但其**可比性問題本輪部分結清**。
+
+### ⭐⭐⭐ 論述二：三家都走「大量小模組併聯」，只有一家說出代價
+
+| 來源 | 併聯規模 | 總量 | 代價是否量化 |
+|------|---------|------|-------------|
+| **Ferric Fe1766**（產品） | **64 顆** | **>10 kW** | ✗ 未提 |
+| **Empower Crescendo**（產品） | **至 50 顆** | **>3,000 A** | ✗ 未提 |
+| **浙大 FIVR**（學術原型，28 nm） | **8 模組** | **90 A** | ✓ **分流精度 10.6% 內、模組間溫差 <10.5 °C、峰值效率 85.6%** |
+
+➜ ⭐⭐⭐ **「把調壓器切成多模組併聯」本身就引入一個新的限制項：電流不均。** 本 wiki 此前之供電變數為電流密度、電阻、電感體積，**不均衡從未入列**。
+➜ ⭐⭐⭐ **且不均衡直接翻譯成熱不均（<10.5 °C）** ⇒ 既載「供電與熱是同一預算的兩端」取得**第二種耦合路徑**：
+  - 路徑一（既載，arXiv 2606.28837）：**PDN 自身發熱**，可達總負載功率約 40%（上界）。
+  - 路徑二（本輪，浙大）：**分流不均造成局部過熱**。
+➜ 浙大之解法（每模組僅與相鄰兩模組交換電流資訊，形成重疊橫縱迴路）**免除長距離訊號傳輸** ⇒ 與既載「局部高密度補救全域密度上限」同型：**用局部性換全域一致性。**
+
+⚠⚠ **不得比較之三組**：
+1. **浙大 90 A 不可與 Ferric 160 A 比優劣** —— 一為學術原型、一為商品。
+2. **浙大無面積 ⇒ 無 A/mm² ⇒ 不可進入上表。**
+3. **頻率三數不得排成單一軸**：浙大 **50 MHz（切換頻率）**、Ferric **>10 MHz（調節頻寬）**、Empower **<1 MHz（傳統基準，切換頻率）** —— 口徑不同。僅可記為「三個來源一致指向頻率大幅上移」。
+
+### ⭐⭐⭐ 論述三：電遷移門檻首次有數值，但與「可交付電流」撞號
+
+- **Empower 發言人（SemiEng）**：**電遷移極限約自 3,000 A 起開始觸及**；現況 1,000–1,500 A，可能再約倍增。
+- **Empower 產品（Electronic Design, 2024-10-22）**：Crescendo 至 50 顆併聯可**交付 >3,000 A**。
+
+⚠⚠ **同一家公司、同一數字 3,000 A、兩個相反口徑（極限起點 vs 可交付量）。** 本輪**不合併、不選邊**，列為新空缺（下方）。這是既載「口徑未定」模式的第四個案例，且**首次發生在同一家公司的兩個管道之間**。
+
+### ⭐⭐ 電壓鏈：級數與中間值尚無一致敘述
+
+| 來源 | 電壓鏈 |
+|------|--------|
+| SemiEng（本輪，日期未知） | 48 V（或 54 V）→ **12 V 或 6 V** → 晶片電壓（**未給**） |
+| Empower（本輪，2024-10-22） | **12 V** → **3–4 V** → 核心（典型 **<1 V**） |
+
+➜ **兩條並列，不合併。** 二者皆未給完整鏈路；本 wiki 記為「資料中心電壓鏈的級數與中間值尚無一致敘述」。
+
+### ⭐⭐ 供電損耗占比：新落點，但與既載 40% 不同口徑
+
+- **本輪（Ferric, SemiEng）**：**傳導與供電損耗可達總功率之 10–20%。**
+- **既載（arXiv 2606.28837）**：**封裝 PDN 損耗可耗散為熱者達總負載功率之約 40%（up to）。**
+
+⚠⚠ **一為「損耗占總功率」、一為「熱占負載功率之上界」** ⇒ **不得互相印證、不得相減、不得視為同一量的兩次量測。**
+
+### ⭐⭐ 去耦電容物件化軸：新增第四種載體（既有論述之新落點，非新論述）
+
+⚠ **本輪 ingest 初判曾誤記為新軸，已於同輪自我更正**（該軸已於 2026-10-01 以九筆來源／五家廠商／三種載體立起）。
+
+| 公司 | 專利／產品 | 電容位置 | 時序 |
+|------|-----------|---------|------|
+| IBM（既載） | US20260107832A1 | **晶背** | 混合接合**之後**附加 |
+| **IBM（本輪）** | **US20250140648A1** | **被鍵合之下層元件晶圓層內（與主動元件同層）** | **接合之前**即已存在 |
+
+➜ **同一公司、同一軸、第二種載體，且兩者時序相反。** 載體清單自「矽晶背／玻璃／有機—模封核心／基板」增列**「被鍵合的元件晶圓層」**。
+
+### ⭐⭐ BSPDN 自製程選項變成封裝介面（第三個獨立來源）
+
+**Samsung US20250087646A1（2025-03-13）** 把 BSPDN 寫成**堆疊式扇出封裝中第二顆晶粒的一層**，與貫穿孔、貫穿模封導電柱、三層 RDL 並列。
+➜ 既載「封裝的上下兩面各自專責一種網路」取得**第三個獨立來源**：Amkor US20260305405A1（基板側）、Etron TW202522705A（本輪，熱＋電＋訊號三者雙面化）、Samsung（本件，記憶體／邏輯堆疊側）。
+➜ 且 Etron 件使該論述**須擴寫為「封裝的面正在成為被分配的資源」，熱是被分配的第三項。**
+
+### 2026-10-08 新增空缺
+
+- [ ] ⭐⭐⭐ **Empower「3,000 A」的兩個口徑何者為準**（電遷移極限起點 vs 可交付量）；追蹤方式：Empower 後續技術文件是否分開陳述兩者。
+- [ ] ⭐⭐⭐ **「>5 A/mm² 客戶實績」之分母是否與 Fe1766 的矽面積口徑相同**（同一位發言人，但兩個管道）。
+- [ ] ⭐⭐ **Infineon「電源模組」A/mm² 的分母定義**（模組佔地？互連截面？）—— 此為上表四列中唯一仍可能由廠商文件結清者。
+- [ ] ⭐⭐ **Ferric Fe1766 的切換頻率、效率曲線、輸入／輸出電壓、製程節點**（全部未揭露）。
+- [ ] ⭐⭐ **併聯不均衡在商品級 IVR 上的數值**（Ferric 64 顆、Empower 50 顆皆未提；僅有浙大 8 模組的學術值）。
+- [ ] ⭐ **資料中心電壓鏈的完整級數與核心電壓**（兩個來源皆未給末端）。
+
+### 相關來源
+
+- [[sources/2026-10-08_semieng_voltage-regulation-in-package]]
+- [[sources/2026-10-08_ferric-fe1766-current-density-denominator]]
+- [[sources/2026-10-08_empower-crescendo-regulator-side]]
+- [[sources/2026-10-08_zju-8module-fivr-current-sharing]]
+- [[sources/2026-10-08_samsung-stacked-rdl-package-bspdn-layer]]
+- [[sources/2026-10-08_ibm-w2w-bonded-deep-trench-capacitor]]
+- [[sources/2026-10-08_etron-liquid-through-substrate-cavity]]

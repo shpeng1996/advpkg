@@ -3,8 +3,8 @@ title: "TSV — Through-Silicon Via / 矽穿孔"
 category: technology
 tags: [TSV, HBM, interposer, 3D-IC, CoWoS, manufacturing, backside-power, advanced-packaging, radiation, redundancy, reliability]
 created: 2026-08-10
-updated: 2026-10-07
-sources: [2026-09-27_wuhanuniv_cn121548325a-tgv-micro-nano-anchor-molecular-bridging, 2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-27_semieng_chip-week-156-india-tata-besi-izmo, 2026-04-22_semieng_tsv-complexity-manufacturing-bottleneck, 2026-08-21_semieng_chip-week-152, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-08-21_scirep_copper-oxide-reduction-ar-h2-pulsed-plasma, 2026-06-08_irtnanoelec_d2w-hybrid-bonding-1um-pitch, 2026-03-13_kaneka_jp2026047137a-glass-core-polyimide-quantified, 2026-08-10_screp_low-k-organic-buffer-tgv-cu-metallization, 2026-08-04_jmrt_vacuum-assisted-void-free-cu-fill-tgv, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring, 2026-09-26_patent_zhuhai-tiancheng-dual-depth-tsv-silicon-bridge, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_patent_er-eng-glass-interposer-dual-carrier, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth, 2026-10-02_epo_semco-cn122054433a-glass-surface-roughness, 2026-10-02_trendforce_intel-microled-glass-24-layer, 2026-10-02_imaps-dpc2026_defect-free-coplanar-copper-via-fill, 2026-10-02_microrel_tudelft-google-3dic-fa-hardware, 2026-10-06_epo_microchip-polysic-ceramic-interposer-mandrel-vias, 2026-10-06_openalex_auburn-nife-tsv-magnetic-shield-package, 2026-10-06_thelec_sec-xray-tsv-tgv-inspection-1um, 2026-10-07_epo_cas-freestanding-3c-sic-interposer, 2026-10-07_openalex_cuos-alloy-interconnect-oxidation-adhesion, 2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk]
+updated: 2026-10-08
+sources: [2026-09-27_wuhanuniv_cn121548325a-tgv-micro-nano-anchor-molecular-bridging, 2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-27_semieng_chip-week-156-india-tata-besi-izmo, 2026-04-22_semieng_tsv-complexity-manufacturing-bottleneck, 2026-08-21_semieng_chip-week-152, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-08-21_scirep_copper-oxide-reduction-ar-h2-pulsed-plasma, 2026-06-08_irtnanoelec_d2w-hybrid-bonding-1um-pitch, 2026-03-13_kaneka_jp2026047137a-glass-core-polyimide-quantified, 2026-08-10_screp_low-k-organic-buffer-tgv-cu-metallization, 2026-08-04_jmrt_vacuum-assisted-void-free-cu-fill-tgv, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring, 2026-09-26_patent_zhuhai-tiancheng-dual-depth-tsv-silicon-bridge, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_patent_er-eng-glass-interposer-dual-carrier, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth, 2026-10-02_epo_semco-cn122054433a-glass-surface-roughness, 2026-10-02_trendforce_intel-microled-glass-24-layer, 2026-10-02_imaps-dpc2026_defect-free-coplanar-copper-via-fill, 2026-10-02_microrel_tudelft-google-3dic-fa-hardware, 2026-10-06_epo_microchip-polysic-ceramic-interposer-mandrel-vias, 2026-10-06_openalex_auburn-nife-tsv-magnetic-shield-package, 2026-10-06_thelec_sec-xray-tsv-tgv-inspection-1um, 2026-10-07_epo_cas-freestanding-3c-sic-interposer, 2026-10-07_openalex_cuos-alloy-interconnect-oxidation-adhesion, 2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk, 2026-10-08_rdl-free-glass-interposer-trench, 2026-10-08_uestc-tapered-tgv-skin-current]
 related:
   - wiki/technologies/hbm4.md
   - wiki/technologies/cowos.md
@@ -819,3 +819,19 @@ TU Delft × Google（2026-07-03）：以 **~210 µm interposer pin pitch** 的 D
 ### 相關來源
 
 [[sources/2026-10-07_epo_cas-freestanding-3c-sic-interposer]]、[[sources/2026-10-07_openalex_cuos-alloy-interconnect-oxidation-adhesion]]、[[sources/2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk]]
+
+---
+
+## [2026-10-08] TGV：填充時間落點、電感模型缺口
+
+- ⭐⭐ **TGV 填充時間首見數值**：上海大學免 RDL 方案中，互連之 TGV（**φ50 µm × 高 500 µm**，AR 1:10）與溝槽（50 µm 邊長 × 2,500 µm）**於 5 秒內同時完全填滿**（真空輔助吸入銀奈米粒子高分子 ANFP）。⚠ **此為聚合物基填充，不得與銅電鍍之填充時間同軸比較。**
+- ⭐⭐ **電感模型缺口（UESTC）**：明示**現有 TGV 電感模型描述非垂直（錐形）孔之皮膚電流的能力有限**；該文提出含皮膚電流之解析模型並界定適用頻率範圍。本 wiki 首見之「模型能力缺口」明示陳述。
+- ⭐ **錐角之力學作用（UESTC，200 °C）**：錐角**重分布銅柱內應力、降低 Cu/玻璃界面應力集中** ⇒ 錐度自「待消除之製程非理想」改列為設計變數。⚠ 無錐角數值區間、無應力絕對值。
+- 📌 另檢視未採：**HUST `10.1088/1361-651x/ae93e6`（2026-08-24）** 以非平衡分子動力學預測 **TGV 晶圓中 Cu/Ta 異質結構之介面熱阻**，指出高溫下因 Cu 層缺陷生成與結構失序而出現**局部溫度波動**，且升溫使介面熱阻**下降**。⚠ 純模擬、摘要無絕對值 ⇒ 列為下輪候選。
+
+詳見 [[technologies/glass-substrate]] 之 2026-10-08 段。
+
+### 相關來源
+
+- [[sources/2026-10-08_rdl-free-glass-interposer-trench]]
+- [[sources/2026-10-08_uestc-tapered-tgv-skin-current]]

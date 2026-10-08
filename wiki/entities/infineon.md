@@ -3,8 +3,8 @@ title: "Infineon Technologies — 英飛凌"
 category: entity
 tags: [Infineon, power-delivery-packaging, PDN, vertical-power-delivery, BVM, current-density, 48V, rack-power]
 created: 2026-09-30
-updated: 2026-10-02
-sources: [2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-10-02_jmmm_tyndall-fecob-n-pwrsoc-magnetics]
+updated: 2026-10-08
+sources: [2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-10-02_jmmm_tyndall-fecob-n-pwrsoc-magnetics, 2026-10-08_ferric-fe1766-current-density-denominator, 2026-10-08_semieng_voltage-regulation-in-package]
 related:
   - wiki/concepts/power-delivery-packaging.md
   - wiki/concepts/thermal-management.md
@@ -185,3 +185,25 @@ JMMM（2026-09-02）柱狀 FeCoB-N 薄膜，目標 **>100 MHz 整合式 PwrSoC**
 - [ ] ⭐⭐⭐ **3 A/mm² 障壁的物理限制項** —— **連續第三輪無進展**；追蹤方式本輪更新為「磁芯 Bs ↔ A/mm² 的定量關係」
 - [ ] ⭐⭐ **Infineon 封裝層 PDN 的專利布局**（本輪檢索式無效，須改以 voltage regulator／inductor／CPC 切入）
 - [ ] 📌 既有未結清項：BVM 之 µΩ 單位佐證、機櫃與處理器功耗數字的起點口徑 —— **本輪均無進展**
+
+---
+
+## [2026-10-08] ⚠⚠⚠ 「3 A/mm² 障壁」加註不可比較警示
+
+本輪由 **Ferric Fe1766** 一手規格反推確認其 A/mm² 之分母為**矽晶粒面積**（160 A ÷ 35.5 mm² = 4.507，與自述「>4.5」吻合至三位有效數字）。
+
+⚠⚠⚠ **因此本頁之電流密度路線圖（0.4/0.6 → 1.0/1.5 → 2.0 → >3 → >4 A/mm²）與明示門檻「要讓真正的垂直供電發生，必須突破 3 A/mm² 的密度障壁」，自本輪起須加註：**
+
+> **本頁數字之分母為「電源模組」，其截面定義（模組佔地？互連截面？）本 wiki 從未確認。**
+> **不得與以「矽晶粒面積」為分母之數字（Ferric >4.5 A/mm²、SemiEng 某客戶 >5 A/mm²）比較大小，亦不得據此宣告本障壁已被突破。**
+
+➜ 本頁數值**完全不改動**；僅加註可比性限制。
+➜ 既載空缺「3 A/mm² 障壁的物理限制項」**仍未結清**（候選三項：熱、導體材料、磁性元件；仍無來源把任一項與 3 A/mm² 連起來）。
+➜ **新空缺（本輪，⭐⭐）**：**Infineon 電源模組 A/mm² 的分母定義** —— 此為四個落點中唯一仍可能由廠商文件結清者。
+
+詳見 [[concepts/power-delivery-packaging]] 之 2026-10-08 段與本輪新引用規範。
+
+### 相關來源
+
+- [[sources/2026-10-08_ferric-fe1766-current-density-denominator]]
+- [[sources/2026-10-08_semieng_voltage-regulation-in-package]]

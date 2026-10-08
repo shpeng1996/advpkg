@@ -3,8 +3,8 @@ title: "先進封裝的測試、量測與失效分析 / Test, Metrology & Failur
 category: concept
 tags: [test, metrology, inspection, failure-analysis, KGD, KGI, KGP, DFA, yield]
 created: 2026-09-17
-updated: 2026-10-07
-sources: [2026-09-27_paper_binghamton-ibm-pad-scaling-resistance-variability, 2026-09-27_paper_purdue-ru-cu-em-lifetime-blacks-n-0154, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2025-01-14_semieng_known-good-interposer-screening, 2025-07-10_semieng_advanced-packaging-reshaping-inspection, 2024-11-12_semieng_packaging-drives-test-metrology-innovation, 2026-08-01_jfap_3dic-failure-analysis-dfa, 2026-07-06_apl_lensless-through-silicon-phase-imaging, 2026-09-06_ndte_hysan-sparse-view-xct-tsv, 2026-08-02_chips_cpo-wafer-level-probe-card, 2026-08-27_samsung_us20260256000a1-interposer-test-pad, 2026-08-13_jcet_us20260239928a1-hybrid-bonding-substack-test, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-06-28_hyperframe_amat-hybrid-bonding-hedge, 2026-09-26_paper_ibm-amine-post-cmp-clean, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-10-02_microrel_tudelft-google-3dic-fa-hardware, 2026-10-02_imaps-dpc2026_gelpak-universal-carriers-singulated-die, 2026-10-06_openalex_gatech-terahertz-nde-8layer-interposer, 2026-10-06_openalex_tongji-wafer-embedded-pitch-standard-pose-correction, 2026-10-06_thelec_sec-xray-tsv-tgv-inspection-1um, 2026-10-07_semieng_kelvin-resistance-probe-access-pitch-limit, 2026-10-07_openalex_amkor-kelly-three-interposer-routes, 2026-10-07_epo_besi-deformable-die-forming-bond-tool]
+updated: 2026-10-08
+sources: [2026-09-27_paper_binghamton-ibm-pad-scaling-resistance-variability, 2026-09-27_paper_purdue-ru-cu-em-lifetime-blacks-n-0154, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2025-01-14_semieng_known-good-interposer-screening, 2025-07-10_semieng_advanced-packaging-reshaping-inspection, 2024-11-12_semieng_packaging-drives-test-metrology-innovation, 2026-08-01_jfap_3dic-failure-analysis-dfa, 2026-07-06_apl_lensless-through-silicon-phase-imaging, 2026-09-06_ndte_hysan-sparse-view-xct-tsv, 2026-08-02_chips_cpo-wafer-level-probe-card, 2026-08-27_samsung_us20260256000a1-interposer-test-pad, 2026-08-13_jcet_us20260239928a1-hybrid-bonding-substack-test, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-06-28_hyperframe_amat-hybrid-bonding-hedge, 2026-09-26_paper_ibm-amine-post-cmp-clean, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-10-02_microrel_tudelft-google-3dic-fa-hardware, 2026-10-02_imaps-dpc2026_gelpak-universal-carriers-singulated-die, 2026-10-06_openalex_gatech-terahertz-nde-8layer-interposer, 2026-10-06_openalex_tongji-wafer-embedded-pitch-standard-pose-correction, 2026-10-06_thelec_sec-xray-tsv-tgv-inspection-1um, 2026-10-07_semieng_kelvin-resistance-probe-access-pitch-limit, 2026-10-07_openalex_amkor-kelly-three-interposer-routes, 2026-10-07_epo_besi-deformable-die-forming-bond-tool, 2026-10-08_silverbrook-known-good-site-substrate-test, 2026-10-08_ase-probing-needle-scrub-length, 2026-10-08_formfactor-45um-probe-pitch-good-enough-die, 2026-10-08_advantest-singulated-die-test-thermal]
 related:
   - wiki/technologies/hybrid-bonding.md
   - wiki/technologies/cowos.md
@@ -937,3 +937,66 @@ Micromachines 的**五種 TGV 剖面**（直壁／沙漏／等腰錐／倒錐／
 ### 相關來源
 
 [[sources/2026-10-07_semieng_kelvin-resistance-probe-access-pitch-limit]]、[[sources/2026-10-07_openalex_amkor-kelly-three-interposer-routes]]、[[sources/2026-10-07_epo_besi-deformable-die-forming-bond-tool]]
+
+---
+
+## [2026-10-08] ⭐⭐⭐ KGD 的邏輯被反轉為「已知良好站位」；探測多出一個機械磨耗維度；熱限制進入量測環境
+
+本輪 15 筆來源中 **4 筆**獨立指向測試／量測（新聞 2、專利 1、論文 1），且**四筆分屬四種機構類型**（測試機商 Advantest、探針卡商 FormFactor、OSAT 自有研究 ASE、個人申請人 Silverbrook）。
+
+### ⭐⭐⭐ 論述一：KGD 的問題被反轉 —— 從「晶粒好不好」到「站位好不好」
+
+**WO2026139941A1（Silverbrook，2026-07-02）**：以 **reticle 尺寸 MEMS 探針卡**，在組裝**之前**逐一（step-and-repeat）驗證晶圓級矽電路板（WSSCB）上**被動互連**之連通性，產出**載體佈線的缺陷圖**，**不需全晶圓探測、不需加電**；之後才把 KGD 堆疊（邏輯＋HBM）micro-bond 到**被驗證為有效的站位**。
+
+➜ ⭐⭐⭐ **「已知良好站位 / known good site」是本 wiki 既有 KGD 線索此前完全不在視野內的第四塊**（既有三塊：2026-09-17 定義空缺、2026-09-22 PTDK 只解交付格式、2026-10-07 可接取性節距）。
+➜ ⭐⭐⭐ **其方法論的核心是「把測試的充分性要求降到剛好足以產生缺陷圖為止」**（不加電、只驗被動連通）⇒ 與本輪 FormFactor 的「全覆蓋 vs 有限覆蓋」**構成同一取捨的兩個層級**：晶粒側（測多少）與載體側（測什麼）。
+⚠ **Hedge**：申請人為個人（澳洲），非產線廠商；**全篇無量化值**；**不得據以推論 wafer-scale 封裝之量產時程**，亦不得與 Cerebras 等業者混同。
+📌 **作業面**：本件主分類為 **G01R（量測／測試）而非 H10W** ⇒ **本 wiki 此前之專利檢索軸全在 H10W／H01L 系，測試議題須增列 G01R。**
+
+### ⭐⭐⭐ 論述二：探測的限制不只是節距，還有一個機械磨耗量
+
+**ASE 一手論文（10.4071/001c.165476，2026-07-23，Meng-Kai Shih／Yi-Shao Lai）**：以**田口法 L18（2¹ × 3⁷）** 求使 **scrub length（探針尖端滑行長度）最小**之探針幾何，納入**八個幾何因子**（tip shape、needle diameter、beam length、taper length、knee diameter、shooting angle、tip length、tip diameter）並排序其重要度。
+
+➜ ⭐⭐⭐ **「scrub length」為本 wiki 首見之探測物理量，且是機械磨耗量而非電性量。** 既載之可接取性節距軸（2026-10-07 立）只有**節距**一個維度 ⇒ **探針的可用性同時受一個由八個幾何因子決定的機械壽命量支配。**
+➜ ⭐⭐⭐ **出自 OSAT 自有研究**，使「測試／量測為第三個結構性瓶頸」自媒體轉述升格為**產業內自有研究的直接佐證**。
+⚠ 摘要未給 scrub length 絕對值與因子排序；**全文 PDF 公開可取得** ⇒ 下輪可結清。
+
+### ⭐⭐⭐ 論述三：可接取性節距軸補上第三格（⚠ 但三格年份相差六年）
+
+| 可接取性 | 節距 | 出處／年份 |
+|---|---|---|
+| BGA 球 | **300–400 µm** | 2026-10-07 既載 |
+| C4／microbump | **50–80 µm** | 2026-10-07 既載 |
+| **microbump grid-array（探針卡實作）** | **45 µm（FormFactor Altius）** | **本輪，⚠ 2020-03-10** |
+| 混合接合（Cu–Cu、Si–Si） | **仍未列入可接取之列** | — |
+
+⚠⚠ **45 µm 與既載 50–80 µm 區間重疊但更小，而兩者年份相差六年** ⇒ **不得合併為單一區間、不得取交集、不得據此主張節距能力在六年內已進步或未進步。** 三格並列並各自標註年份。
+
+### ⭐⭐⭐ 論述四：熱限制首次出現在「量測環境」而非運轉中
+
+**Advantest 一手（SemiEng 贊助專欄，2026-03-10，Brent Bullock）**：示範 **100 W/cm² 四站式主動熱介面（ATI）** 測試 **6 nm CPU chiplet 晶粒**；以探針負載板上之 ADC 擷取電流、電壓與接面溫度；比較高溫晶圓分選、高溫封裝測試與兩個高溫 SDT 插入點。設備為 V93000 ＋ HA1200。
+
+➜ ⭐⭐⭐ **「100 W/cm²」是本 wiki 首見之「測試當下」熱預算數值。** 既載熱數字全屬運轉中（TDP、熱阻、冷板、兩相冷卻）⇒ **熱限制首次搬進量測環境本身**，使核心論述「真正的瓶頸在被視為輔助步驟的那一步」取得測試軌之一例。
+➜ ⭐⭐ **SDT 為 KGD 的實作層交付點**（單顆化之後、堆疊之前），且**約自 2015 年即存在** ⇒ 不得記為新技術；其成為話題的原因依原文為**功率密度上升**。
+⚠ 贊助專欄、帶商業立場；**覆蓋率與功率密度皆未量化**（"excellent"、"dramatic"）⇒ 不得用以支撐任何覆蓋率主張。
+
+### ⭐⭐ 「Good Enough Die」：KGD 未定義之歷時延長為至少六年
+
+FormFactor（2020-03-10）已使用 **"Good Enough Die"** 一詞且**當時亦未給正式定義**；同文稱以 KGD 方式測試每一顆 DRAM 晶粒「往往不具經濟可行性」，並把**全覆蓋 KGD（Altius）與有限覆蓋高吞吐（SmartMatrix，接受 "acceptable risk"）做成兩條產品線**。
+
+➜ ⭐⭐⭐ 既載空缺「KGD 的標準化定義」（2026-09-17）之**歷時長度自「現況」延長為至少六年**，且顯示業界**早已需要一個比 KGD 更弱的名詞**而始終未定義之。
+➜ ⭐⭐ **經濟性被寫進了探針卡的產品分層** ⇒ 為 KGD 契約問題提供**設備側成因**（此前本 wiki 只有契約側與物理側）。
+
+### 2026-10-08 新增空缺
+
+- [ ] ⭐⭐⭐ **需求側（IDM／fabless）對測試成本的表態** —— 本輪測試軌四個來源中三個為供應側（Advantest／ASE／FormFactor），**買方觀點全空白**。
+- [ ] ⭐⭐ **ASE 論文之 scrub length 絕對值與八因子排序**（全文 PDF 公開可取得，下輪可結清）。
+- [ ] ⭐⭐ **「已知良好站位」是否有第二個來源** —— 目前僅一件個人申請專利；若出現 OSAT 或代工廠的同向布局，該讀法可自單例升為論述。
+- [ ] ⭐ **混合接合節距的電性可接取方案** —— 連續第二輪在所有來源中皆未列入可接取之列。
+
+### 相關來源
+
+- [[sources/2026-10-08_silverbrook-known-good-site-substrate-test]]
+- [[sources/2026-10-08_ase-probing-needle-scrub-length]]
+- [[sources/2026-10-08_formfactor-45um-probe-pitch-good-enough-die]]
+- [[sources/2026-10-08_advantest-singulated-die-test-thermal]]
