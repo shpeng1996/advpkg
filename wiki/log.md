@@ -4642,3 +4642,10 @@ warning: unable to unlink '.../.git/index.lock': Operation not permitted
   1. ✅ **`device_bash` 全程可用**（連續三輪不可用後首次恢復）；OPS 與 OpenAlex 皆自該環境成功呼叫。
   2. ⚠⚠ **`OPENALEX_KEY` 仍為空（連續第九輪未處置）**，惟**本輪未造成實質代價**（`device_bash` 出口 IP 額度充足）。規範（30）維持。
   3. 📌 **git 殘留問題**：本輪開場以 `git log` 複核（依 2026-10-07 建議），結果為 **`tmp_obj_*` 殘留自 288 降為 0**，且 `git status -sb` 為乾淨之 `## main...origin/main`（無 ahead）⇒ **2026-10-03／10-04 列管之建議 (b)「Windows 側 `git gc --prune=now`」研判已由人工或排程執行完畢，該待辦本輪結清。** ⚠ **`.git/` 下之歷史鎖檔殘留仍有 34 個**（含歷輪改名之 `stale-HEAD.lock-*`），待人工清理。⚠ **2026-10-07 所報之「`origin` remote URL 內嵌明文 GitHub personal access token」本輪未複查亦未變更**（本流程不代為變更憑證設定）；該項建議（撤銷並重新產生 token、改用 credential helper 或 SSH key、把 remote 改回不含憑證之形式）**仍待人工處置，優先度維持最高**。
+- ✅ **git commit：本輪已執行。**
+  - **本輪提交：`4b0b04b`「2026-10-08」，49 個檔案**（15 raw ＋ 16 新 wiki 頁〔15 來源 ＋ 1 實體〕＋ 14 更新 wiki 頁 ＋ `index.md`／`overview.md`／`log.md` ＋ `raw/_collected_urls.txt` 的 15 行追加）；`git status --porcelain` 事後為乾淨（0 行）。
+  - ⚠ **尚未 push**：`git status -sb` 為 `## main...origin/main [ahead 1]`。**本流程不執行 push**（spec §QUALITY RULES 僅要求 stage 與 commit），待 `daily_git_push.bat` 或人工推送。
+  - ⚠ **git 鎖檔**：本輪 `git add` 與 `commit` 各留下一個無法刪除之鎖檔（連接資料夾不允許刪除），依既有慣例改名為 `.git/stale-index.lock-20261008-*` 與 `.git/stale-HEAD.lock-20261008`。⚠ **`.git/` 下此類殘留累計 36 個。**
+  - ⚠⚠ **更正本輪「作業面發現 3（git 殘留）」之一半**：該項所記之「`tmp_obj_*` 殘留自 288 降為 0」在**本輪開場時為真**（研判人工或排程已執行 `git gc`），但**本輪自身的 `git add -A` 又產生了 353 個新的 `tmp_obj_*`**（因連接資料夾不允許刪除，git 無法清掉自己的暫存物件；`git add` 執行兩次故數量高於單輪約 70 個之歷史估計）。
+    ➜ **結論修正為：建議 (b)「Windows 側 `git gc --prune=now`」並未結清，而是「每輪結束後都需要再執行一次」** —— 開場為 0 只證明上一次 gc 有效，不證明問題已解決。
+    ➜ ⭐⭐ **作業面建議：此後 log 應記「開場 tmp_obj 數」與「收場 tmp_obj 數」兩個值，而非單一值**，否則同一個數字會在不同輪之間看起來自相矛盾。
