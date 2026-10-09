@@ -4692,3 +4692,10 @@ warning: unable to unlink '.../.git/index.lock': Operation not permitted
   3. 📌 **git 殘留問題本輪未複查**（無 `device_bash` 即無法執行 `git log` / `git status`）。既載待辦維持：`.git/` 下歷史鎖檔殘留約 36 個；每輪 `git add -A` 產生之 `tmp_obj_*` 需 Windows 側 `git gc --prune=now`（2026-10-08 已確認該待辦**每輪都需重跑一次，開場為 0 不證明問題解決**）。
   4. ⚠⚠⚠ **2026-10-07 所報之「`origin` remote URL 內嵌明文 GitHub personal access token」本輪未複查亦未變更**（無 `device_bash`）。建議維持最高優先度且**仍待人工處置**：①在 GitHub 撤銷並重新產生該 token；②改用 credential helper（Windows：`git config --global credential.helper manager`）或 SSH key；③`git remote set-url origin https://github.com/<owner>/<repo>.git`。**本流程不代為變更憑證設定。**
 - ❌ **git commit：本輪未執行**（原因見環境事項 1）。`git status` 亦無法取得。**本輪所有檔案變更（15 raw ＋ 16 新 wiki 頁〔15 來源 ＋ 1 實體〕＋ 16 更新 wiki 頁 ＋ `raw/_collected_urls.txt` 的 15 行追加）皆已寫入工作目錄，但未進版控。**
+- ✅⚠ **更正（同輪）：git commit 本輪最終已執行。** 上條「未執行」在寫入時為真，但**在全部 51 個檔案以 `device_commit_files` 落盤之後、流程收尾前再試一次 `device_bash`，該環境已可用**（依 2026-10-07 所立之「流程結束前應再試一次」建議）。
+  - **本輪提交：`4c21589`「2026-10-09」**；`git status --porcelain` 事後為 **0 行（乾淨）**。
+  - ⚠ **尚未 push**：`git status -sb` 為 `## main...origin/main [ahead 1]`。**本流程不執行 push**（spec §QUALITY RULES 僅要求 stage 與 commit），待 `daily_git_push.bat` 或人工推送。
+  - ⚠ **git 鎖檔**：本輪 commit 再度留下 `.git/HEAD.lock`（連接資料夾不允許刪除），依既有慣例改名為 `.git/stale-HEAD.lock-20261009`。`.git/` 下 `stale-*.lock-*` 形式之殘留目前為 **6 個**（⚠ 與 2026-10-08 所記之「累計 36 個」不一致 —— 研判其間曾有人工清理，或前輪之計數含非 `stale-*` 形式之鎖檔；**本 wiki 不代為推斷，僅記錄本輪實測值 6**）。
+  - ⚠⚠ **`tmp_obj_*` 收場為 419 個**（本輪開場值因 `device_bash` 不可用而**未能量測**）。依 2026-10-08 所立之「應記開場與收場兩個值」規範，**本輪只有收場值 ⇒ 本輪無法判斷淨增量**。建議 (b)「Windows 側 `git gc --prune=now`」維持待辦。
+  - ⭐⭐ **作業面結論（本輪新得）：`device_bash` 的不可用是「可能在單次 session 內恢復」的 —— 本輪流程開場與中段兩次皆失敗，收尾時成功。** ➜ **此後不應在開場失敗後就把 git commit 記為放棄；應在流程結束前固定再試一次。** 2026-10-07 之該建議本輪**第二次證明有效**（上輪亦為收尾時恢復）。
+  - 📌 **惟其餘需要 `device_bash` 的複核項（`git log` 開場複核、`tmp_obj` 開場值、`origin` remote URL 內嵌 token 之複查）在恢復時已錯過時點**，故環境事項 3、4 所記之「本輪未複查」維持不變；⚠⚠⚠ **remote URL 內嵌明文 GitHub token 之人工處置建議，優先度維持最高。**
