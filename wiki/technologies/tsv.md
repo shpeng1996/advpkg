@@ -3,8 +3,8 @@ title: "TSV — Through-Silicon Via / 矽穿孔"
 category: technology
 tags: [TSV, HBM, interposer, 3D-IC, CoWoS, manufacturing, backside-power, advanced-packaging, radiation, redundancy, reliability]
 created: 2026-08-10
-updated: 2026-10-08
-sources: [2026-09-27_wuhanuniv_cn121548325a-tgv-micro-nano-anchor-molecular-bridging, 2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-27_semieng_chip-week-156-india-tata-besi-izmo, 2026-04-22_semieng_tsv-complexity-manufacturing-bottleneck, 2026-08-21_semieng_chip-week-152, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-08-21_scirep_copper-oxide-reduction-ar-h2-pulsed-plasma, 2026-06-08_irtnanoelec_d2w-hybrid-bonding-1um-pitch, 2026-03-13_kaneka_jp2026047137a-glass-core-polyimide-quantified, 2026-08-10_screp_low-k-organic-buffer-tgv-cu-metallization, 2026-08-04_jmrt_vacuum-assisted-void-free-cu-fill-tgv, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring, 2026-09-26_patent_zhuhai-tiancheng-dual-depth-tsv-silicon-bridge, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_patent_er-eng-glass-interposer-dual-carrier, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth, 2026-10-02_epo_semco-cn122054433a-glass-surface-roughness, 2026-10-02_trendforce_intel-microled-glass-24-layer, 2026-10-02_imaps-dpc2026_defect-free-coplanar-copper-via-fill, 2026-10-02_microrel_tudelft-google-3dic-fa-hardware, 2026-10-06_epo_microchip-polysic-ceramic-interposer-mandrel-vias, 2026-10-06_openalex_auburn-nife-tsv-magnetic-shield-package, 2026-10-06_thelec_sec-xray-tsv-tgv-inspection-1um, 2026-10-07_epo_cas-freestanding-3c-sic-interposer, 2026-10-07_openalex_cuos-alloy-interconnect-oxidation-adhesion, 2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk, 2026-10-08_rdl-free-glass-interposer-trench, 2026-10-08_uestc-tapered-tgv-skin-current]
+updated: 2026-10-09
+sources: [2026-09-27_wuhanuniv_cn121548325a-tgv-micro-nano-anchor-molecular-bridging, 2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-27_semieng_chip-week-156-india-tata-besi-izmo, 2026-04-22_semieng_tsv-complexity-manufacturing-bottleneck, 2026-08-21_semieng_chip-week-152, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-08-21_scirep_copper-oxide-reduction-ar-h2-pulsed-plasma, 2026-06-08_irtnanoelec_d2w-hybrid-bonding-1um-pitch, 2026-03-13_kaneka_jp2026047137a-glass-core-polyimide-quantified, 2026-08-10_screp_low-k-organic-buffer-tgv-cu-metallization, 2026-08-04_jmrt_vacuum-assisted-void-free-cu-fill-tgv, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring, 2026-09-26_patent_zhuhai-tiancheng-dual-depth-tsv-silicon-bridge, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_patent_er-eng-glass-interposer-dual-carrier, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth, 2026-10-02_epo_semco-cn122054433a-glass-surface-roughness, 2026-10-02_trendforce_intel-microled-glass-24-layer, 2026-10-02_imaps-dpc2026_defect-free-coplanar-copper-via-fill, 2026-10-02_microrel_tudelft-google-3dic-fa-hardware, 2026-10-06_epo_microchip-polysic-ceramic-interposer-mandrel-vias, 2026-10-06_openalex_auburn-nife-tsv-magnetic-shield-package, 2026-10-06_thelec_sec-xray-tsv-tgv-inspection-1um, 2026-10-07_epo_cas-freestanding-3c-sic-interposer, 2026-10-07_openalex_cuos-alloy-interconnect-oxidation-adhesion, 2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk, 2026-10-08_rdl-free-glass-interposer-trench, 2026-10-08_uestc-tapered-tgv-skin-current, 2026-10-09_cas-2013-microchannel-interposer-ebg, 2026-10-09_nycu-itri-cu-pad-protrusion-aspect-ratio]
 related:
   - wiki/technologies/hbm4.md
   - wiki/technologies/cowos.md
@@ -835,3 +835,49 @@ TU Delft × Google（2026-07-03）：以 **~210 µm interposer pin pitch** 的 D
 
 - [[sources/2026-10-08_rdl-free-glass-interposer-trench]]
 - [[sources/2026-10-08_uestc-tapered-tgv-skin-current]]
+
+---
+
+## [2026-10-09] ⭐⭐⭐ 「載體正在被佈管」這條候選論述取得十三年前的反證 —— 變化在採用端，不在構想端
+
+### ⭐⭐⭐ 一、中科院 CN103199086A（2013）＝第三例，但年份是 2013
+
+2026-10-08 立下候選論述「**載體正在從被鑽孔的板變成被佈管的體**」，當時兩個落點為：
+1. **Etron TW202522705A**（2026）—— 液體直接流經基板腔體並與上方冷板腔體連通
+2. **上海大學**（2026）—— 銀奈米粒子高分子吸入基材淺溝槽以取代水平 RDL
+
+並註明「⚠ 兩件不同軌道／團隊／流體，**升格待第三例**」。
+
+本輪以 `ti,ab="microchannel" and ti,ab="interposer"` 檢出 **中科院微電子所 CN103199086A**：矽基中介層內含**具電磁屏蔽功能的微流道**，側壁做 **EBG**。**它是第三例 —— 但公開日為 2013-07-10。**
+
+➜ ⭐⭐⭐ **該候選論述必須改寫**：
+> **真正新的不是「把流道做進載體本體」這個構想（至少十三年前即已存在的排他權布局），而是它在 2026 年同時出現在產業申請人（Etron）與量產導向學術團隊（上海大學）手上。變化在採用端，不在構想端。**
+
+➜ ⭐⭐⭐ **既載論述「論文／專利是落後指標」的時間位移上界自 3–4 年拉到十三年。** 既載數據為 CEA 之 D2W 混合接合「優先權 2022-12 → ECTC 2026 發表」約 3–4 年；本件顯示**構想可以領先採用十年以上**。
+⚠⚠ **本 wiki 未檢索該族之後續延續案或被引狀況** ⇒ **不得據此判斷該構想曾被實作或曾被放棄。**
+
+*Source: [[sources/2026-10-09_cas-2013-microchannel-interposer-ebg]]*
+
+### ⭐⭐⭐ 二、流道同時是電性結構（詳見 [[concepts/thermal-management]]）
+
+既載之微流道／液冷落點**全為純熱用途**。本件在流道側壁做 EBG，使**同一個幾何特徵同時服務散熱與抑制基板損耗** ⇒ 比既載「封裝的面正在成為被分配的資源」更強：**不是不同的面各自專責一種網路，而是同一特徵同時服務兩個網路。**
+⚠ **無任何量化值**（無流量、無熱阻、無損耗 dB）。
+
+### ⭐⭐ 三、縱橫比的內部最大值：H/R ≈ 1.2
+
+**NYCU × ITRI**（`10.1016/j.mssp.2026.111252`，2026-10-07）之定體積計算預測，Cu/SiO₂ 通孔的熱膨脹量在 **H/R ≈ 1.2**、**ΔV/S ≈ 0.9** 附近出現一個**寬的最大值**。
+
+➜ 既載論述「**關鍵參數不是單調的；同一設計變數對不同失效模式的最佳值不同**」之**第七例，且為幾何縱橫比上的第二例**（第六例為 USM × Intel 之 TSV 直徑 10→18 µm：最低局部拉應力落在 14 µm、最佳平衡落在 16 µm）。
+⚠ 本件之最大值為**計算結果**，非實測掃掠。
+
+### 2026-10-09 新增空缺
+
+- [ ] ⭐⭐⭐ **「載體通道化」整條線至今零量化值** —— 2013 年件、Etron 連續兩件、上海大學件皆未給流量、熱阻或損耗數值。
+- [ ] ⭐⭐ **CN103199086A 之族是否有延續案或被引** —— 決定該 2013 構想是被實作還是被放棄。
+- [ ] ⭐⭐ **H/R ≈ 1.2 之實測掃掠佐證。**
+- [ ] 📌 **作業面**：`microchannel` × `interposer` 於標題／摘要層全庫僅 1 件命中，與既載之 `ti,ab="known good die"`（1 件）、`ti,ab="co-packaged optics"`（2 件）同型 ⇒ **本輪為第三例；此類主題應改以 CPC 檢索。**
+
+### 本輪新增來源
+
+- [[sources/2026-10-09_cas-2013-microchannel-interposer-ebg]]（⭐⭐⭐ 十三年前先例；流道兼電性結構）
+- [[sources/2026-10-09_nycu-itri-cu-pad-protrusion-aspect-ratio]]（⭐⭐ H/R ≈ 1.2）

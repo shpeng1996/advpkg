@@ -3,7 +3,7 @@ title: "Ferric, Inc."
 category: entity
 tags: [Ferric, IVR, vertical-power-delivery, power-delivery, inductor, A-per-mm2, fabless]
 created: 2026-10-08
-updated: 2026-10-08
+updated: 2026-10-09
 related:
   - wiki/concepts/power-delivery-packaging.md
   - wiki/entities/infineon.md
@@ -54,3 +54,22 @@ related:
 
 - [[sources/2026-10-08_ferric-fe1766-current-density-denominator]]
 - [[sources/2026-10-08_semieng_voltage-regulation-in-package]]
+
+---
+
+## [2026-10-09] 160 A 這個電流額定成為三種分母的對照基準
+
+2026-10-08 已判定 **Ferric Fe1766 之 A/mm² 分母＝矽晶粒面積**（160 A ÷ 35.5 mm²（8 × 4.4 mm）= 4.507，吻合自述「>4.5」至三位有效數字）。
+
+本輪取得 **Infineon TDM2354xT，電流額定同樣為 160 A**，使本 wiki 得到**同一電流值在三種分母下的三個數字**：
+
+| 來源 | 電流 | 分母 | 分母類別（規範 34）| A/mm² |
+|------|------|------|-------------------|-------|
+| **Ferric Fe1766** | **160 A** | **35.5 mm²（矽晶粒）** | ③矽晶粒面積 | **4.51** |
+| Infineon TDM2354xT | **160 A** | 64 mm²（8 × 8 mm 模組佔地）| ①電源模組佔地 | **2.50** |
+| Infineon TDM2354xT（廠商口徑）| **160 A** | 100 mm²（隱含，≈1.56×佔地）| ④未確認 | **1.60** |
+
+➜ ⭐⭐⭐ **相差 2.8 倍，而交付電流完全相同。** Ferric 之落點因此自「本 wiki 唯一已確認分母的 A/mm²」升為**整條軸的對照基準**。
+⚠ **仍不得與 Infineon 任一數字相減或排序**（分母不同類）。既載空缺「**>5 A/mm² 客戶實績之分母是否與 Fe1766 之矽面積口徑相同**」**本輪無進展。**
+
+*Source: [[sources/2026-10-09_infineon-tdm2354-dual-phase-denominator]]*

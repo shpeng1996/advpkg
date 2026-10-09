@@ -3,8 +3,8 @@ title: "Infineon Technologies — 英飛凌"
 category: entity
 tags: [Infineon, power-delivery-packaging, PDN, vertical-power-delivery, BVM, current-density, 48V, rack-power]
 created: 2026-09-30
-updated: 2026-10-08
-sources: [2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-10-02_jmmm_tyndall-fecob-n-pwrsoc-magnetics, 2026-10-08_ferric-fe1766-current-density-denominator, 2026-10-08_semieng_voltage-regulation-in-package]
+updated: 2026-10-09
+sources: [2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-10-02_jmmm_tyndall-fecob-n-pwrsoc-magnetics, 2026-10-08_ferric-fe1766-current-density-denominator, 2026-10-08_semieng_voltage-regulation-in-package, 2026-10-09_infineon-tdm2354-dual-phase-denominator, 2026-10-09_infineon-tdm2454-quad-phase-denominator]
 related:
   - wiki/concepts/power-delivery-packaging.md
   - wiki/concepts/thermal-management.md
@@ -207,3 +207,50 @@ JMMM（2026-09-02）柱狀 FeCoB-N 薄膜，目標 **>100 MHz 整合式 PwrSoC**
 
 - [[sources/2026-10-08_ferric-fe1766-current-density-denominator]]
 - [[sources/2026-10-08_semieng_voltage-regulation-in-package]]
+
+---
+
+## [2026-10-09] ⭐⭐⭐ A/mm² 的分母被定性，且自家兩組序列互不相容
+
+### 產品序列首次被釘樁
+
+| 產品 | 日期 | 相數 | 電流 | 模組佔地 | 自述 A/mm² | 佔地口徑 | 隱含分母 | 隱含/佔地 |
+|------|------|------|------|---------|-----------|---------|---------|----------|
+| **TDM2354xD / TDM2354xT** | 2024-10-22 | 2 | **160 A**（xT）| **8 × 8 = 64 mm²** | **1.6** | 2.50 | **100 mm²** | **1.5625×** |
+| **TDM2454xx** | 2025-03-10 | 4 | **280 A** | **10 × 9 = 90 mm²** | **2.0** | 3.11 | **140 mm²** | **1.556×** |
+
+前代鏈：TDM2254xD / TDM2354xD（2024）→ TDM2454xx（2025）。功率級為 **OptiMOS 6** 矽溝槽 N 通道 MOSFET。
+其他特徵：**封裝內嵌電容層**、低矮磁性元件設計、支援**拼接（tiling）**（電／熱／機械三者皆為理由）、搭配 **XDP 控制器**（可減少板上輸出電容最多 **50%**）。
+
+### ⭐⭐⭐ 結論一：分母不是模組佔地，而是一個跨世代一致的 1.56 倍面積
+
+**兩個世代、兩個相數、兩個獨立管道，隱含分母與模組佔地的比例一致為 1.56 倍（偏差 0.4%）** ⇒ 不是捨入誤差所能解釋。
+➜ 既載空缺「**Infineon 電源模組 A/mm² 的分母定義**」**部分結清**：✅ 排除模組佔地；✅ 建立 1.56 倍關係；❌ 該面積對應何種實體（候選：含 keep-out 之解決方案佔地／含輸入輸出電容之總面積）未知。
+⚠ **本輪已嘗試 Infineon 官網 VRM 頁（`infineon.com/technology/ai/we-power-ai/vrm`），該頁內容為空（僅標題與導覽選單，無任何規格）** ⇒ 追蹤方式改為**產品資料表（datasheet）**。
+
+### ⚠⚠⚠ 結論二：Infineon 自家至少有兩組互不相容的 A/mm² 序列
+
+本 wiki 既載之 Infineon 供給側路線圖為 **0.4/0.6（2024）→ 1.0/1.5 → 2.0（2025）→ >3 → >4 A/mm²**（含明示門檻「要讓真正的垂直供電發生，必須突破 3 A/mm² 的密度障壁」）。
+本輪之 **1.6 A/mm² 發布於 2024-10**，而路線圖把 **2024 標為 0.4/0.6** ⇒ **同一公司、同一年份、自家公開數字相差 2.7–4 倍。**
+
+➜ 本 wiki **不修改既載路線圖數值**，而記為矛盾：**Infineon 至少以兩組序列對外發言（路線圖圖表 vs 產品新聞稿），兩組皆未附分母，唯一交會點為 2.0（2025）。**
+➜ ⚠⚠ **「Infineon 已跨過自己的 3 A/mm² 障壁」不得推論**：佔地口徑之 3.11 A/mm² 與障壁所用口徑是否同類仍未確認。
+
+### ⭐⭐⭐ 結論三：同一個 160 A，三種分母，三個數字
+
+| 來源 | 電流 | 分母 | A/mm² |
+|------|------|------|-------|
+| [[entities/ferric]] Fe1766（2026-10-08 判定分母＝矽晶粒面積）| **160 A** | 35.5 mm² | **4.51** |
+| Infineon TDM2354xT（模組佔地口徑）| **160 A** | 64 mm² | **2.50** |
+| Infineon TDM2354xT（廠商口徑）| **160 A** | 100 mm²（隱含）| **1.60** |
+
+⇒ **相差 2.8 倍，而交付電流完全相同。** 為作業規範（34）之最強單一案例。
+
+### 2026-10-09 新增空缺
+
+- [ ] ⭐⭐⭐ **1.56 倍隱含面積對應何種實體面積** —— 改以資料表追蹤。
+- [ ] ⭐⭐⭐ **路線圖之 0.4/0.6（2024）與產品新聞稿之 1.6（2024-10）如何並存。**
+- [ ] ⭐⭐ **TDM2454xx 之效率與開關頻率**（兩篇原文皆未給）。
+- [ ] ⭐⭐ **「封裝內嵌電容層」之電容值、密度、ESL/ESR。**
+
+*Source: [[sources/2026-10-09_infineon-tdm2354-dual-phase-denominator]]、[[sources/2026-10-09_infineon-tdm2454-quad-phase-denominator]]*

@@ -3,7 +3,7 @@ title: "鈺創科技 Etron Technology（與 ND Hi Tech Lab）"
 category: entity
 tags: [Etron, ND-Hi-Tech-Lab, Taiwan, glass-substrate, TGV, TTV, thermal-management, DRAM, fabless]
 created: 2026-09-28
-updated: 2026-10-08
+updated: 2026-10-09
 related:
   - wiki/technologies/glass-substrate.md
   - wiki/technologies/tsv.md
@@ -63,3 +63,17 @@ Etron／ND Hi Tech 於 2025-06 公開之專利顯示：**基板本身具第一�
 ### 相關來源
 
 - [[sources/2026-10-08_etron-liquid-through-substrate-cavity]]
+
+---
+
+## [2026-10-09] ⚠ 其「液體流經基板腔體」之構想取得一個十三年前的先例
+
+2026-10-08 收錄之 **Etron TW202522705A**（液體直接流經基板腔體並與上方冷板腔體連通）當時被記為「**本 wiki 第一件把工作流體引入載體內部**者」，並與上海大學件共同構成候選論述「載體正在從被鑽孔的板變成被佈管的體」（註明升格待第三例）。
+
+本輪檢出 **中科院微電子所 CN103199086A（公開 2013-07-10）**：矽基中介層內含**具電磁屏蔽功能的微流道**，側壁做 **EBG**，明示該流道**同時散熱與改善電性能**。
+
+➜ ⚠⚠ **「第一件」之表述須修正為「本 wiki 既載之 2026 年同向案件中的第一件」** —— 把流道做進載體本體的構想**至少十三年前即已存在於排他權布局中**。
+➜ ⭐⭐⭐ **據此，候選論述改寫為：變化在採用端，不在構想端**（詳見 [[technologies/tsv]]）。
+➜ ⚠ **Etron 件之技術內容與數值不改動**（該件與 CAS 件之流體、載體材料、應用均不同；且 Etron 件**連續兩件熱結構案皆無任何量化值**，該空缺維持）。
+
+*Source: [[sources/2026-10-09_cas-2013-microchannel-interposer-ebg]]*

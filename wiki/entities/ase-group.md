@@ -3,8 +3,8 @@ title: "ASE Group / 日月光投控"
 category: entity
 tags: [OSAT, advanced-packaging, CoWoP, FOPLP, chiplet, CPO, LEAP]
 created: 2026-04-25
-updated: 2026-10-08
-sources: [2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below, 2026-08-05_trendforce_tsmc-cowos-cow-outsourcing-osat, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2026-05-08_aseglobal_ase-wus-kaohsiung-focoes-hub, 2026-05-26_semiconductor-digest_ase-310mm-plp-ectc2026, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-11_trendforce_ase-spil-zhunan-plant, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-07-01_trendforce_ase-price-hike-20pct, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-31_ase_cn224583735u-photoelectric-hybrid-rdl, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-10-08_ase-probing-needle-scrub-length, 2026-10-08_semieng_voltage-regulation-in-package]
+updated: 2026-10-09
+sources: [2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below, 2026-08-05_trendforce_tsmc-cowos-cow-outsourcing-osat, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2026-05-08_aseglobal_ase-wus-kaohsiung-focoes-hub, 2026-05-26_semiconductor-digest_ase-310mm-plp-ectc2026, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-11_trendforce_ase-spil-zhunan-plant, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-07-01_trendforce_ase-price-hike-20pct, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-31_ase_cn224583735u-photoelectric-hybrid-rdl, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-10-08_ase-probing-needle-scrub-length, 2026-10-08_semieng_voltage-regulation-in-package, 2026-10-09_ieie-probe-card-mlc-signal-integrity]
 related:
   - wiki/technologies/cowos.md
   - wiki/technologies/copos.md
@@ -316,3 +316,21 @@ Intel Foundry 的 ECTC 2026 官方部落格列出其 20 篇論文的合作方，
 
 - [[sources/2026-10-08_ase-probing-needle-scrub-length]]
 - [[sources/2026-10-08_semieng_voltage-regulation-in-package]]
+
+---
+
+## [2026-10-09] 其 scrub length 田口法研究取得同類方法的第二例（韓國側，不同物理量）
+
+2026-10-08 收錄之 ASE 一手論文（`10.4071/001c.165476`，Meng-Kai Shih、Yi-Shao Lai）以**田口法 L18（2¹×3⁷）** 最佳化八個探針幾何因子以**最小化 scrub length**。
+
+本輪取得 **IEIE（韓國）`10.5573/ieie.2026.63.8.40`**（2026-08-27）：以**全因子 DOE + ANOVA** 最佳化探針卡**多層陶瓷中 16 分支傳輸線**的**接收端 Eye hold time**。
+
+| 來源 | DOE 流派 | 最佳化目標 | 物理量 | 機構類型 |
+|------|---------|-----------|--------|---------|
+| **ASE**（台灣） | 田口法 L18 | 最小化 scrub length | 機械磨耗 | OSAT |
+| **IEIE**（韓國） | 全因子 + ANOVA | Eye hold time | 訊號完整性 | ⚠ 機構不明 |
+
+➜ ⭐⭐⭐ **候選論述「探針卡設計正從經驗工藝轉為統計化的實驗設計學科」升為並列敘述**（不同國別、不同機構類型、不同物理量、不同 DOE 流派），**但不逕升為通則**（仍缺需求側／IDM 側第三例）。詳見 [[concepts/test-metrology-packaging]]。
+⚠ **ASE 件之全文 PDF 公開可取得，2026-10-08 列為「下輪可結清」之空缺（scrub length 絕對值與八因子排序），但本輪未執行** —— 該 DOI 已在 `raw/_collected_urls.txt` 內，依 spec §QUALITY RULES「不得重複抓取已收錄之 URL」⇒ **須改以其他管道（如 IMAPSource PDF 直連）取全文**，列為下輪作業項。
+
+*Source: [[sources/2026-10-09_ieie-probe-card-mlc-signal-integrity]]*

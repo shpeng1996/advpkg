@@ -3,8 +3,8 @@ title: "封裝層的供電網路 / Power Delivery Networks at the Package Level"
 category: concept
 tags: [PDN, power-delivery, vertical-power, eVR, capacitor, inductor, passive-integration, hybrid-bonding, rack-power]
 created: 2026-09-29
-updated: 2026-10-08
-sources: [2026-09-29_imaps-dpc2026_nanoporous-silicon-capacitor-pdn, 2026-09-29_imaps-dpc2026_saras-stile-evr-vertical-pdn, 2026-09-29_semieng_tech-paper-roundup-sept29-multikw-3dhi-pdn, 2026-09-29_semiwiki_ofc2026-siph-cpo-oci-ocs-summary, 2026-09-30_arxiv_umn-multi-kw-power-delivery-3d-hi, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_epo_intel-jp2026116680a-glass-core-embedded-inductor-clusters, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_imaps-dpc2026_delo-die-side-capacitor-encapsulation, 2026-10-02_epo_samsung-cn122602880a-ivr-capacitor-interposer-core, 2026-10-02_jmmm_tyndall-fecob-n-pwrsoc-magnetics, 2026-10-02_epo_amd-us20260282956a1-silicon-bridge-decap, 2026-10-06_openalex_auburn-nife-tsv-magnetic-shield-package, 2026-10-07_epo_amkor-bspdn-oriented-package-embedded-ipd, 2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-08_semieng_voltage-regulation-in-package, 2026-10-08_ferric-fe1766-current-density-denominator, 2026-10-08_empower-crescendo-regulator-side, 2026-10-08_zju-8module-fivr-current-sharing, 2026-10-08_samsung-stacked-rdl-package-bspdn-layer, 2026-10-08_ibm-w2w-bonded-deep-trench-capacitor, 2026-10-08_etron-liquid-through-substrate-cavity]
+updated: 2026-10-09
+sources: [2026-09-29_imaps-dpc2026_nanoporous-silicon-capacitor-pdn, 2026-09-29_imaps-dpc2026_saras-stile-evr-vertical-pdn, 2026-09-29_semieng_tech-paper-roundup-sept29-multikw-3dhi-pdn, 2026-09-29_semiwiki_ofc2026-siph-cpo-oci-ocs-summary, 2026-09-30_arxiv_umn-multi-kw-power-delivery-3d-hi, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_epo_intel-jp2026116680a-glass-core-embedded-inductor-clusters, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_imaps-dpc2026_delo-die-side-capacitor-encapsulation, 2026-10-02_epo_samsung-cn122602880a-ivr-capacitor-interposer-core, 2026-10-02_jmmm_tyndall-fecob-n-pwrsoc-magnetics, 2026-10-02_epo_amd-us20260282956a1-silicon-bridge-decap, 2026-10-06_openalex_auburn-nife-tsv-magnetic-shield-package, 2026-10-07_epo_amkor-bspdn-oriented-package-embedded-ipd, 2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-08_semieng_voltage-regulation-in-package, 2026-10-08_ferric-fe1766-current-density-denominator, 2026-10-08_empower-crescendo-regulator-side, 2026-10-08_zju-8module-fivr-current-sharing, 2026-10-08_samsung-stacked-rdl-package-bspdn-layer, 2026-10-08_ibm-w2w-bonded-deep-trench-capacitor, 2026-10-08_etron-liquid-through-substrate-cavity, 2026-10-09_infineon-tdm2354-dual-phase-denominator, 2026-10-09_infineon-tdm2454-quad-phase-denominator, 2026-10-09_semiwiki-tsmc-oip-2026-verification]
 related:
   - wiki/concepts/thermal-management.md
   - wiki/technologies/hybrid-bonding.md
@@ -677,3 +677,71 @@ Tyndall National Institute × University College Cork（JMMM，2026-09-02）：�
 - [[sources/2026-10-08_samsung-stacked-rdl-package-bspdn-layer]]
 - [[sources/2026-10-08_ibm-w2w-bonded-deep-trench-capacitor]]
 - [[sources/2026-10-08_etron-liquid-through-substrate-cavity]]
+
+---
+
+## [2026-10-09] ⭐⭐⭐ Infineon 的 A/mm² 分母被定性：不是模組佔地，而是一個跨世代一致的 1.56 倍面積
+
+### ⭐⭐⭐ 論述一：兩個世代、兩個獨立管道，得出同一個比例
+
+2026-10-08 以 Ferric Fe1766 的一手規格反推出其分母＝**矽晶粒面積**（160 ÷ 35.5 = 4.507，吻合自述「>4.5」至三位有效數字），並立下**作業規範（34）**。本輪對 **Infineon** 做同一件事，結果是**否證加上一個系統性的比例**：
+
+| 產品 | 日期 | 電流 | 模組佔地 | 自述 A/mm² | 佔地口徑 A/mm² | 隱含分母 | 隱含/佔地 |
+|------|------|------|---------|-----------|---------------|---------|----------|
+| **TDM2354xT**（雙相） | 2024-10-22 | **160 A** | 8 × 8 = **64 mm²** | **1.6** | 2.50 | **100 mm²** | **1.5625×** |
+| **TDM2454xx**（四相） | 2025-03-10 | **280 A** | 10 × 9 = **90 mm²** | **2.0** | 3.11 | **140 mm²** | **1.556×** |
+
+➜ **比例一致至 0.4% 以內。** 這不是捨入誤差所能解釋的巧合 ⇒ **Infineon 的 A/mm² 使用一個系統性、跨世代一致的面積口徑，其大小約為模組佔地的 1.56 倍，而不是模組佔地本身。**
+
+➜ 既載空缺「**Infineon 電源模組 A/mm² 的分母定義**」（2026-10-08 列為四列中唯一可能由廠商文件結清者）**部分結清**：
+- ✅ **排除**：不是模組佔地。
+- ✅ **建立**：隱含面積 ≈ 1.56 × 佔地，且跨世代一致。
+- ❌ **未結清**：該 1.56 倍對應何種實體面積。候選為①含 keep-out 之「解決方案佔地」、②含輸入／輸出電容之總面積。**原文兩篇皆未說明。**
+
+*Source: [[sources/2026-10-09_infineon-tdm2354-dual-phase-denominator]]、[[sources/2026-10-09_infineon-tdm2454-quad-phase-denominator]]*
+
+### ⭐⭐⭐ 論述二：同一個 160 A，依分母不同可報為 4.51 / 2.50 / 1.60 A/mm²
+
+| 來源 | 電流 | 分母 | 分母類別（規範 34）| A/mm² |
+|------|------|------|-------------------|-------|
+| **Ferric Fe1766**（2026-10-08 已判定） | **160 A** | 35.5 mm²（8 × 4.4 mm 矽晶粒）| ③矽晶粒面積 | **4.51** |
+| **Infineon TDM2354xT**（本輪） | **160 A** | 64 mm²（8 × 8 mm 模組佔地）| ①電源模組佔地 | **2.50** |
+| **Infineon TDM2354xT**（本輪，廠商口徑） | **160 A** | 100 mm²（隱含）| ④未確認（≈1.56×佔地）| **1.60** |
+
+➜ ⭐⭐⭐ **相差 2.8 倍，而實際交付的電流完全相同。** 這是**作業規範（34）最強的單一案例**，也是本 wiki 第一次能以單一電流值把「分母決定一切」這件事做成一張表。
+➜ **推論：A/mm² 在未標分母時所傳達的資訊量接近於零。** 規範（34）自「引用規範」升格為**本頁的結構性前提**。
+
+### ⭐⭐ 論述三：Infineon 自家至少有兩組互不相容的 A/mm² 序列
+
+本頁既載之 Infineon 供給側路線圖為 **0.4/0.6（2024）→ 1.0/1.5 → 2.0（2025）→ >3 → >4 A/mm²**。本輪之 **1.6 A/mm² 發布於 2024-10** ⇒ **同一公司、同一年份、自家公開數字相差 2.7–4 倍。**
+
+➜ 本 wiki **不修改既載路線圖數值**，而記為矛盾：**Infineon 至少以兩組序列對外發言 —— 路線圖圖表 vs 產品新聞稿 —— 兩組皆未附分母，唯一交會點為 2.0（2025）。**
+➜ ⚠⚠ **因此「Infineon 已跨過自己的 3 A/mm² 障壁」不得推論**：佔地口徑之 3.11 A/mm² 與障壁所用口徑是否同類，仍未確認。
+➜ 既載空缺「**3 A/mm² 障壁的物理限制項**」維持未結清；三個候選成因（熱／導體材料／磁性元件）本輪**無進展**。
+
+### ⭐ 論述四：供電上移到封裝層，首次取得晶圓廠自述級佐證
+
+本頁既載之「供電網路正在上移到封裝層」之來源結構為**設備商 + EDA + 電源 IC 商**（含 Synopsys × TSMC 之 IVR 工具支援，2026-09-25）。本輪 **TSMC 2026 OIP 論壇**中，**TSMC 自身**把 **整合式電壓調節（integrated voltage regulation）、電容（capacitors）、熱 DTCO** 與 **COUPE** 並列為系統層級技術 ⇒ **來源結構擴為「含晶圓廠本身」。**
+⚠ 該表述**無任何數值**（無效率、無電流、無面積）⇒ 僅作結構性引用。
+
+*Source: [[sources/2026-10-09_semiwiki-tsmc-oip-2026-verification]]*
+
+### ⭐ 去耦電容載體清單新增兩個候選落點
+
+既載四種載體：矽電容（Empower ECAP）、晶背 DTC（IBM）、接合前元件晶圓內 DTC（IBM US20250140648A1）、晶粒側封裝電容（DELO）。本輪新增**兩個候選**：
+1. **Infineon TDM2454xx 之「封裝內嵌電容層（embedded capacitor layer within the package）」** ⚠ 無電容值、無密度 ⇒ **不得與 ECAP 等量比較。**
+2. **TSMC US20260202467A1 之探測基板內 IPD** —— ⚠⚠ **該件未提去耦或電容值；「量測硬體成為第五種載體」為本 wiki 之假設，不得記為已證實。**
+
+### 2026-10-09 新增空缺
+
+- [ ] ⭐⭐⭐ **Infineon 之 1.56 倍隱含面積對應何種實體面積**（解決方案佔地？含電容總面積？）—— 可由 Infineon 產品規格書或應用指南結清。**本輪已嘗試官網 VRM 頁但該頁內容為空（僅導覽選單），未取得任何規格** ⇒ 追蹤方式改為**資料表（datasheet）**。
+- [ ] ⭐⭐⭐ **Infineon 路線圖圖表之 0.4/0.6（2024）與產品新聞稿之 1.6（2024-10）如何並存** —— 兩者是否分屬不同層級（單相 vs 模組）或不同分母。
+- [ ] ⭐⭐ **TDM2454xx 之效率與開關頻率**（兩篇原文皆未給）。
+- [ ] ⭐⭐ **Infineon「封裝內嵌電容層」之電容值、密度與 ESL/ESR** —— 缺此值則無法與 Empower ECAP 對照。
+- [ ] 📌 既有未結清項延續：3 A/mm² 障壁的物理限制項；Empower「3,000 A」的兩個口徑；「>5 A/mm² 客戶實績」之分母；併聯不均衡在商品級 IVR 上的數值；資料中心電壓鏈的完整級數 —— **本輪均無進展。**
+
+### 本輪新增來源
+
+- [[sources/2026-10-09_infineon-tdm2354-dual-phase-denominator]]（⭐⭐⭐ 160 A / 64 mm² / 1.6；1.5625× 隱含分母）
+- [[sources/2026-10-09_infineon-tdm2454-quad-phase-denominator]]（⭐⭐⭐ 280 A / 90 mm² / 2.0；1.556× 隱含分母；封裝內嵌電容層）
+- [[sources/2026-10-09_semiwiki-tsmc-oip-2026-verification]]（⭐ IVR＋電容＋熱 DTCO 由 TSMC 自列為系統支柱）

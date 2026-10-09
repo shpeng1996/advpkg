@@ -816,3 +816,18 @@
 2026-10-08 | https://doi.org/10.1109/tcsi.2026.3698102 | raw/papers/2026-10-08_openalex_zju-8module-fivr-90a-matrix-current-sharing.md | ZJU: 8-module FIVR 90 A, 10.6% sharing
 2026-10-08 | https://doi.org/10.1038/s41378-026-01399-7 | raw/papers/2026-10-08_openalex_pku-embedded-glass-fanout-ka-band-rdl-cmp.md | PKU: embedded glass fan-out, CMP -97% rough
 2026-10-08 | https://doi.org/10.1109/tcpmt.2026.3700943 | raw/papers/2026-10-08_openalex_uestc-tapered-tgv-skin-current-taper-stress.md | UESTC: tapered TGV skin current + taper stress
+2026-10-09 | https://semiwiki.com/semiconductor-manufacturers/tsmc/374104-tsmc-2026-oip-ecosystem-forum-summary | raw/articles/2026-10-09_semiwiki_tsmc-oip-2026-coupe-cowos-system-level.md | TSMC OIP 2026: 5.5x in prod, 4Tb/s/mm 2030
+2026-10-09 | https://www.eenewseurope.com/en/quad-phase-power-module-for-ai-vertical-power-delivery/ | raw/articles/2026-10-09_eenewseurope_infineon-tdm2454-quad-phase-280a-2a-mm2.md | Infineon TDM2454xx: 280 A / 10x9 mm / 2 A/mm2
+2026-10-09 | https://www.engineersgarage.com/infineons-dual-phase-power-modules-deliver-1-6-a-mm%C2%B2-current-density/ | raw/articles/2026-10-09_engineersgarage_infineon-tdm2354-dual-phase-160a-1p6-a-mm2.md | Infineon TDM2354xT: 160 A / 8x8 mm / 1.6 A/mm2
+2026-10-09 | https://www.hdinresearch.com/news/1320 | raw/articles/2026-10-09_hdinresearch_probe-card-market-150k-pins-sub50um.md | Probe card mkt: >150k pins, sub-50 um pitch
+2026-10-09 | https://www.all-about-industries.com/panel-level-packaging-at-tsmc-first-copos-pilot-line-2026-mass-production-from-2029-a-46222908685203d0c28cea97fcf7557c/ | raw/articles/2026-10-09_allaboutindustries_tsmc-copos-ap7-chiayi-pilot-2026-mp-2029.md | TSMC CoPoS 12.2in panel, AP7 Chiayi phase 4
+2026-10-09 | EPO:101501227:US20260309748A1 | raw/patents/2026-10-09_US20260309748A1_tsmc-cantilever-holder-probe-card.md | TSMC: cantilever holder probe card w/ components
+2026-10-09 | EPO:100490890:US20260202467A1 | raw/patents/2026-10-09_US20260202467A1_tsmc-impedance-control-probing-substrate.md | TSMC: impedance-controlled probing substrate IPD
+2026-10-09 | EPO:98005590:EP4815705A1 | raw/patents/2026-10-09_EP4815705A1_intel-voltage-contrast-backside-virtual-ground.md | Intel: voltage contrast for backside, virtual GND
+2026-10-09 | EPO:99313277:WO2026195677A1 | raw/patents/2026-10-09_WO2026195677A1_quantware-qpu-measurement-stage.md | QuantWare: QPU measurement stage, detachable probe
+2026-10-09 | EPO:48721536:CN103199086A | raw/patents/2026-10-09_CN103199086A_cas-microchannel-interposer-ebg-sidewall.md | CAS 2013: microchannel interposer w/ EBG sidewall
+2026-10-09 | https://doi.org/10.1016/j.mssp.2026.111252 | raw/papers/2026-10-09_openalex_nycu-itri-cu-sio2-pad-protrusion-aspect-ratio.md | NYCU/ITRI: Cu pad protrusion 8.4/3.7/2.3 nm
+2026-10-09 | https://doi.org/10.1109/tcpmt.2026.3694441 | raw/papers/2026-10-09_openalex_uestc-tapered-tgv-stress-relief-structures.md | UESTC: tapered TGV stress-relief buffer+trench
+2026-10-09 | https://doi.org/10.3390/mi17060720 | raw/papers/2026-10-09_openalex_keti-tgv-process-integration-reliability-review.md | KETI: TGV defect spectrum + plugging review
+2026-10-09 | https://doi.org/10.5573/ieie.2026.63.8.40 | raw/papers/2026-10-09_openalex_ieie-probe-card-mlc-16branch-signal-integrity-doe.md | IEIE: probe card MLC 16-branch SI, DOE+ANOVA
+2026-10-09 | https://doi.org/10.1016/j.engfracmech.2026.112662 | raw/papers/2026-10-09_openalex_bjut-thermomech-phase-field-imc-tgv-fracture.md | BJUT: thermo-mech phase-field IMC+TGV fracture

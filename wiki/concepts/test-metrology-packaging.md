@@ -3,8 +3,8 @@ title: "先進封裝的測試、量測與失效分析 / Test, Metrology & Failur
 category: concept
 tags: [test, metrology, inspection, failure-analysis, KGD, KGI, KGP, DFA, yield]
 created: 2026-09-17
-updated: 2026-10-08
-sources: [2026-09-27_paper_binghamton-ibm-pad-scaling-resistance-variability, 2026-09-27_paper_purdue-ru-cu-em-lifetime-blacks-n-0154, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2025-01-14_semieng_known-good-interposer-screening, 2025-07-10_semieng_advanced-packaging-reshaping-inspection, 2024-11-12_semieng_packaging-drives-test-metrology-innovation, 2026-08-01_jfap_3dic-failure-analysis-dfa, 2026-07-06_apl_lensless-through-silicon-phase-imaging, 2026-09-06_ndte_hysan-sparse-view-xct-tsv, 2026-08-02_chips_cpo-wafer-level-probe-card, 2026-08-27_samsung_us20260256000a1-interposer-test-pad, 2026-08-13_jcet_us20260239928a1-hybrid-bonding-substack-test, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-06-28_hyperframe_amat-hybrid-bonding-hedge, 2026-09-26_paper_ibm-amine-post-cmp-clean, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-10-02_microrel_tudelft-google-3dic-fa-hardware, 2026-10-02_imaps-dpc2026_gelpak-universal-carriers-singulated-die, 2026-10-06_openalex_gatech-terahertz-nde-8layer-interposer, 2026-10-06_openalex_tongji-wafer-embedded-pitch-standard-pose-correction, 2026-10-06_thelec_sec-xray-tsv-tgv-inspection-1um, 2026-10-07_semieng_kelvin-resistance-probe-access-pitch-limit, 2026-10-07_openalex_amkor-kelly-three-interposer-routes, 2026-10-07_epo_besi-deformable-die-forming-bond-tool, 2026-10-08_silverbrook-known-good-site-substrate-test, 2026-10-08_ase-probing-needle-scrub-length, 2026-10-08_formfactor-45um-probe-pitch-good-enough-die, 2026-10-08_advantest-singulated-die-test-thermal]
+updated: 2026-10-09
+sources: [2026-09-27_paper_binghamton-ibm-pad-scaling-resistance-variability, 2026-09-27_paper_purdue-ru-cu-em-lifetime-blacks-n-0154, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2025-01-14_semieng_known-good-interposer-screening, 2025-07-10_semieng_advanced-packaging-reshaping-inspection, 2024-11-12_semieng_packaging-drives-test-metrology-innovation, 2026-08-01_jfap_3dic-failure-analysis-dfa, 2026-07-06_apl_lensless-through-silicon-phase-imaging, 2026-09-06_ndte_hysan-sparse-view-xct-tsv, 2026-08-02_chips_cpo-wafer-level-probe-card, 2026-08-27_samsung_us20260256000a1-interposer-test-pad, 2026-08-13_jcet_us20260239928a1-hybrid-bonding-substack-test, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-06-28_hyperframe_amat-hybrid-bonding-hedge, 2026-09-26_paper_ibm-amine-post-cmp-clean, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-10-02_microrel_tudelft-google-3dic-fa-hardware, 2026-10-02_imaps-dpc2026_gelpak-universal-carriers-singulated-die, 2026-10-06_openalex_gatech-terahertz-nde-8layer-interposer, 2026-10-06_openalex_tongji-wafer-embedded-pitch-standard-pose-correction, 2026-10-06_thelec_sec-xray-tsv-tgv-inspection-1um, 2026-10-07_semieng_kelvin-resistance-probe-access-pitch-limit, 2026-10-07_openalex_amkor-kelly-three-interposer-routes, 2026-10-07_epo_besi-deformable-die-forming-bond-tool, 2026-10-08_silverbrook-known-good-site-substrate-test, 2026-10-08_ase-probing-needle-scrub-length, 2026-10-08_formfactor-45um-probe-pitch-good-enough-die, 2026-10-08_advantest-singulated-die-test-thermal, 2026-10-09_tsmc-cantilever-probe-card-patent, 2026-10-09_tsmc-impedance-control-probing-patent, 2026-10-09_intel-voltage-contrast-backside-patent, 2026-10-09_ieie-probe-card-mlc-signal-integrity, 2026-10-09_hdin-probe-card-market-pin-count, 2026-10-09_quantware-qpu-measurement-stage-patent]
 related:
   - wiki/technologies/hybrid-bonding.md
   - wiki/technologies/cowos.md
@@ -1000,3 +1000,116 @@ FormFactor（2020-03-10）已使用 **"Good Enough Die"** 一詞且**當時亦�
 - [[sources/2026-10-08_ase-probing-needle-scrub-length]]
 - [[sources/2026-10-08_formfactor-45um-probe-pitch-good-enough-die]]
 - [[sources/2026-10-08_advantest-singulated-die-test-thermal]]
+
+---
+
+## [2026-10-09] ⭐⭐⭐ 測試軸一次新增三個維度，且探針卡的設計權首次出現在晶圓廠手上
+
+本輪 15 筆來源中 **7 筆**獨立指向測試／量測（新聞 1、專利 4、論文 2）—— **為本 wiki 單輪最高比例**，且**七筆分屬六種機構類型**（晶圓廠 TSMC ×2、IDM Intel、量子硬體商 QuantWare、市場研究 HDIN、學界 IEIE、以及隔輪延續之 ASE／Advantest／FormFactor）。
+
+### ⭐⭐⭐ 一、探針卡的設計權：代工廠首次成為申請人
+
+既載之測試硬體來源**全為供應側**：探針卡商（FormFactor）、ATE（Advantest）、OSAT 自有研究（ASE）、個人申請人（Silverbrook）、學界／KETI。本輪出現**兩件 TSMC 自己的探針卡／探測基板專利**：
+
+| 公開號 | 日期 | 內容 | 分類 |
+|--------|------|------|------|
+| **US20260309748A1** | **2026-10-08** | 懸臂座結構 + 埋入之懸臂探針 + **貼附於座上的輔助電路板與電氣元件** | G01R1/06727、G01R1/0675、G01R3/00、G01R31/2601、G01R31/2886 |
+| **US20260202467A1** | 2026-07-16 | **非導電基板**上之**阻抗控制疊層** + **IPD** + **GND 屏蔽** + 防串音金屬核心 | G01R31/2886 |
+
+➜ 同一申請人、同一 CPC、相隔不到三個月 ⇒ 依本 wiki 判準（單一來源不升格、兩個獨立落點可並列），**「代工廠正把測試硬體內化為自有設計變數」自候選升為並列敘述。**
+⚠⚠ **僅限排他權層面：無任何產品、產能或採購佐證。** 本 wiki 既載之 FormFactor 關係（其 probe station 經 TSMC COUPE 認證）**不因此改寫**，僅列為觀察項。
+📌 兩件皆以 `cpc="G01R31/2886" and pd within "2026"`（命中 136 件）檢出 ⇒ **2026-10-08 所立之「測試議題須增列 G01R 檢索軸」本輪取得三件採用案的驗證。**
+
+*Source: [[sources/2026-10-09_tsmc-cantilever-probe-card-patent]]、[[sources/2026-10-09_tsmc-impedance-control-probing-patent]]*
+
+### ⭐⭐⭐ 二、第五維度：訊號完整性 —— 探測從機械問題變成高頻電路問題
+
+既載之探測限制四維度：
+
+| # | 維度 | 驗收量 | 來源 |
+|---|------|--------|------|
+| 1 | 可接取性節距 | 45 µm（microbump）／90 µm 級 | FormFactor ⚠2020、Kelvin 電阻 2026-10-07 |
+| 2 | 機械磨耗 | **scrub length** | ASE 田口法 L18（2026-10-08）|
+| 3 | 測試當下熱預算 | **100 W/cm²** 四站式主動熱介面 | Advantest（2026-10-08）|
+| 4 | 站位連通性 | 被動連通性缺陷圖 | Silverbrook WO2026139941A1（2026-10-08）|
+| **5** | **訊號完整性** ⭐新 | **阻抗、EMI、串音；Eye hold time、S 參數** | **TSMC US20260202467A1 + IEIE `10.5573/ieie.2026.63.8.40`** |
+
+➜ 第五維度**同時由排他權側與學術側取得**，且依 2026-10-07 之機構重疊檢查規範複核：**TSMC vs 韓國 IEIE 作者群，作者與機構完全無重疊** ⇒ **可並列。**
+
+### ⭐⭐⭐ 三、第六維度：規模（針腳數）—— >150,000 針，與 16 分支互為需求與代價
+
+| 項目 | 數值 | 來源 |
+|------|------|------|
+| HBM3/HBM3E 堆疊**針腳數** | **> 150,000** | HDIN Research（2026-05-11）⚠ |
+| MLC 探針卡**分支數** | **16 分支傳輸線** | IEIE（2026-08-27）|
+| 晶圓 burn-in 溫度循環 | **−40 ～ +150 °C** | HDIN ⚠ |
+
+➜ ⭐⭐⭐ **「針腳數」把測試限制自「單點能否接觸」改寫為「十五萬次接觸必須同時成立」—— 一個規模問題，此前完全不在本 wiki 的測試變數清單內。**
+➜ ⭐⭐⭐ **IEIE 的 16 分支正是其實作代價**：並行度不是單純複製通道，而是在一片陶瓷裡做分支，而分支帶來阻抗不連續與耦合 ⇒ **並行度與訊號完整性互相換取。** 落在既載論述「同一參數同時服務兩個相反失效模式 ⇒ 最佳值為區間」之上（分支數同時服務吞吐與訊號完整性）。⚠ IEIE 未做分支數掃掠，**此銜接為本 wiki 之推論。**
+⚠⚠ **HDIN 之品質警示**：自述 AI 輔助撰寫；標題 $5.5B 與本文之 3.5–5.5 billion 區間不一致；細分資料僅存付費 PDF。**其數字僅可作結構性引用。**
+
+### ⭐⭐ 四、第七維度：認證前置期 12–24 個月
+
+HDIN 稱探針卡**客戶認證週期 12–24 個月**。既載 HBM4E 混合接合導入時程（2027 年底）之討論中，**探針卡前置期從未被計入** ⇒ 若需 12–24 個月，則服務該世代的探針卡必須在量產前**一至兩年即定案**。
+➜ 這使「探針卡供應」自一個產能問題變成一個**時程耦合**問題，與既載空缺「Hanmi ~2029 量產採用與 HBM4E（2027 年底）混合接合導入的關係」同型。
+
+### ⭐⭐⭐ 五、第三類電氣驗證路徑：不接觸的電壓對比
+
+既載之晶圓級電氣驗證**僅兩類**：
+1. **探針接觸**（FormFactor／ASE／TSMC 本輪兩件／Advantest）
+2. **被動連通性逐站驗證**（Silverbrook：不加電、只驗通不通）
+
+本輪 **Intel EP4815705A1（2026-09-30）** 為**第三類**：於**背面金屬化區域**執行**電壓對比（voltage contrast）檢測**，並可含一個**虛擬接地層**。
+➜ ⭐⭐⭐ **電壓對比是唯一不需機械接觸的一類** ⇒ **不受節距與 scrub length 限制** ⇒ 2026-10-08 所立之「已知良好站位」軸多出一條新的取得路徑。
+➜ ⭐⭐ **「虛擬接地層」是為了量測而加進結構的一層** ⇒ 既載論述「**測試結構正在侵入產品結構**」（既載同向例：Samsung 中介層測試墊，2026-09-17）在**背面／BSPDN 世代**取得實例。
+⚠ 摘要未說明該層僅存於測試晶片或進入量產結構，**本 wiki 不代為判定。**
+📌 `voltage contrast` 為本 wiki 全庫首見（依規範 35 事前 grep 複核：0 命中）。
+
+*Source: [[sources/2026-10-09_intel-voltage-contrast-backside-patent]]*
+
+### ⭐⭐⭐ 六、探針卡設計正從經驗工藝轉為統計化的實驗設計學科
+
+| 來源 | 日期 | DOE 流派 | 最佳化目標 | 物理量 |
+|------|------|---------|-----------|--------|
+| **ASE**（台灣、OSAT）| 2026-10-08 | **田口法 L18（2¹×3⁷）** | 最小化 **scrub length** | 機械磨耗 |
+| **IEIE**（韓國、機構不明）| 2026-08-27 | **全因子 + ANOVA** | 最佳化 **Eye hold time** | 訊號完整性 |
+
+➜ 兩例分屬不同國別、不同機構類型、不同物理量、不同 DOE 流派 ⇒ **本 wiki 判定此候選可升為並列敘述，但不逕升為通則**（仍缺需求側／IDM 側第三例）。
+➜ IEIE 另給出一條可引用的作業樣式：**電路模擬 → 2.5D EM → 3D EM → 原型** 的逐階段收斂（先以便宜模型縮小空間、再以昂貴模型排序、最後只做一次原型）。⚠ 未給各階段成本或耗時。
+
+### ⭐⭐ 七、探測的幾何模型出現第二型態：從「落針」到「對接」
+
+既載探測模型**皆為探針自上方落於測試墊**（cantilever、垂直、MEMS step-and-repeat）。**QuantWare WO2026195677A1（2026-09-24）** 之夾持平台與量測平台**在腔體內相對移動並對接**，探針接觸為**可拆卸式耦合**，另含**對準手段**。
+➜ ⭐⭐ **候選論述：對準精度正從接合製程擴散到量測環境。** 與既載之 **D2W 機台逐 die 對準精度 100 nm (3σ)** 屬同一類問題（兩個可動件對位）。⚠ **單一來源，不升格。**
+⚠⚠ **應用語境為量子運算，非 AI 加速器封裝** ⇒ 依既有處置慣例，**不改變任何 AI 封裝路線圖數值。**
+
+### 本輪結清／降級／並列
+
+| 項目 | 本輪處置 |
+|------|---------|
+| **「探測的限制正從機械轉為電性」** | 候選 → **並列敘述**（TSMC 專利 + IEIE 論文，機構無重疊）|
+| **「探針卡設計轉為統計化 DOE 學科」** | 候選 → **並列敘述**（ASE + IEIE）；**不升為通則**（缺第三例）|
+| **「代工廠把測試硬體內化」** | 候選 → **並列敘述**（TSMC 兩件）；⚠ 僅排他權層面 |
+| **「可接取性節距」三格階梯** | **不變**。HDIN 之 sub-50 µm **不得用於收窄區間**（市場研究、非量測、無年份歸屬）；2026-10-08 之「三格相差六年、不得合併」禁令**維持** |
+| **「需求側（IDM／fabless）對測試成本的表態」** | **未結清**。本輪七筆測試軌來源中，供應側 4（TSMC ×2、Intel、QuantWare）、第三方研究 1（HDIN）、機構不明 1（IEIE）、學術回顧 1（KETI）⇒ **買方觀點仍全空白，連續第二輪。** |
+| **「KGD 的標準化定義」** | **未結清**；本輪無新進展 |
+
+### 2026-10-09 新增空缺
+
+- [ ] ⭐⭐⭐ **TSMC 兩件探針卡專利是否對應任何自製或自用計畫** —— 排他權與採購行為之間完全沒有橋。追蹤方式：TSMC 法說會、探針卡商之客戶結構表態、ECTC 2027。
+- [ ] ⭐⭐⭐ **>150,000 針之廠商側實作數字** —— 本輪取得需求數字，但無任何探針卡商的對應產品規格。
+- [ ] ⭐⭐ **IEIE 論文作者之機構隸屬**（OpenAlex `institutions: []`）—— 無法判定學界或供應側 ⇒ **依規範不得計入「需求側表態」。**
+- [ ] ⭐⭐ **電壓對比檢測的解析度與吞吐** —— Intel 件無任何數值；若要與探針式驗證比較，需缺陷尺寸下限與每片晶圓耗時。
+- [ ] ⭐⭐ **Intel 之「虛擬接地層」是否進入量產結構**（或僅存於測試晶片）。
+- [ ] ⭐⭐ **探針卡認證 12–24 個月是否因 HBM 世代而異**（HDIN 未分層）。
+- [ ] ⭐ **缺實體頁：Technoprobe**（⚠ 本 wiki 全庫首見，被並列為探針卡市場 anchor）、**Advantest**（連續第二輪列管）。**FormFactor 本輪已補建**，見 [[entities/formfactor]]。
+- [ ] ⭐ **ASE 論文之 scrub length 絕對值與八因子排序**（2026-10-08 列為可結清項）—— **本輪未執行**（該 DOI 已在 `_collected_urls.txt` 內，依 spec §QUALITY RULES 不得重複抓取同一 URL；須改以其他管道取全文）。
+
+### 本輪新增來源
+
+- [[sources/2026-10-09_tsmc-cantilever-probe-card-patent]]（⭐⭐⭐ 晶圓廠首次申請探針卡硬體）
+- [[sources/2026-10-09_tsmc-impedance-control-probing-patent]]（⭐⭐⭐ 阻抗控制探測基板、IPD、GND 屏蔽）
+- [[sources/2026-10-09_intel-voltage-contrast-backside-patent]]（⭐⭐⭐ 第三類電氣驗證：不接觸）
+- [[sources/2026-10-09_ieie-probe-card-mlc-signal-integrity]]（⭐⭐⭐ 16 分支、Eye hold time、全因子 DOE）
+- [[sources/2026-10-09_hdin-probe-card-market-pin-count]]（⭐⭐⭐ >150,000 針、12–24 月認證、⚠ 低可信度）
+- [[sources/2026-10-09_quantware-qpu-measurement-stage-patent]]（⭐⭐ 落針 → 對接）

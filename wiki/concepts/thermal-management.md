@@ -3,8 +3,8 @@ title: "先進封裝熱管理 / Thermal Management in Advanced Packaging"
 category: concept
 tags: [thermal-management, liquid-cooling, 3D-IC, CoWoS, heat-dissipation, TIM, ECTC-2025, GaN, power-delivery, co-design, patent-signal, delamination]
 created: 2026-04-25
-updated: 2026-10-08
-sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2025-12-01_semiengineering_thermal-management, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-02_trendforce_samsung-hbm5-computex2026, 2026-05-21_semieng_hi-roadmap-nature-paper-intel, 2026-08-13_semieng_1mw-rack-debate-thermal, 2026-04-27_semieng_semiconductor-materials-misbehave, 2026-08-21_trendforce_chip-packaging-heat-ai-bottleneck-cpo-stco, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_arxiv_umn-multi-kw-power-delivery-3d-hi, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_samsung-cn122602880a-ivr-capacitor-interposer-core, 2026-10-02_imaps-dpc2026_delo-die-side-capacitor-encapsulation, 2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage, 2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk, 2026-10-07_epo_cas-freestanding-3c-sic-interposer, 2026-10-07_openalex_diamond-d2w-direct-bonding-vdw-45mpa, 2026-10-07_openalex_lau-silicon-bridge-microbump-reliability, 2026-10-08_etron-liquid-through-substrate-cavity, 2026-10-08_micron-cryogenic-package-hea-solder, 2026-10-08_advantest-singulated-die-test-thermal]
+updated: 2026-10-09
+sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2025-12-01_semiengineering_thermal-management, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-02_trendforce_samsung-hbm5-computex2026, 2026-05-21_semieng_hi-roadmap-nature-paper-intel, 2026-08-13_semieng_1mw-rack-debate-thermal, 2026-04-27_semieng_semiconductor-materials-misbehave, 2026-08-21_trendforce_chip-packaging-heat-ai-bottleneck-cpo-stco, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_arxiv_umn-multi-kw-power-delivery-3d-hi, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_samsung-cn122602880a-ivr-capacitor-interposer-core, 2026-10-02_imaps-dpc2026_delo-die-side-capacitor-encapsulation, 2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage, 2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk, 2026-10-07_epo_cas-freestanding-3c-sic-interposer, 2026-10-07_openalex_diamond-d2w-direct-bonding-vdw-45mpa, 2026-10-07_openalex_lau-silicon-bridge-microbump-reliability, 2026-10-08_etron-liquid-through-substrate-cavity, 2026-10-08_micron-cryogenic-package-hea-solder, 2026-10-08_advantest-singulated-die-test-thermal, 2026-10-09_cas-2013-microchannel-interposer-ebg, 2026-10-09_bjut-thermomech-phase-field-imc-tgv]
 related:
   - wiki/technologies/cowos.md
   - wiki/technologies/hybrid-bonding.md
@@ -1170,3 +1170,48 @@ SNU × UIUC 的 TIM 綜述明確指出：**TIM 的 bulk／effective 導熱係數
 - [[sources/2026-10-08_etron-liquid-through-substrate-cavity]]
 - [[sources/2026-10-08_micron-cryogenic-package-hea-solder]]
 - [[sources/2026-10-08_advantest-singulated-die-test-thermal]]
+
+---
+
+## [2026-10-09] ⭐⭐⭐ 熱與電共用同一個幾何特徵；失效的正回饋首次被建模
+
+### ⭐⭐⭐ 一、微流道側壁做 EBG —— 同一個特徵同時服務散熱與電性
+
+既載之微流道／液冷落點**全為純熱用途**：Etron TW202522705A（液體流經基板腔體，2026-10-08）、EMIB-T microfluidic、冷板。
+**中科院微電子所 CN103199086A（公開 2013-07-10）** 在矽基中介層的**微流道側壁上做電磁帶隙結構（EBG）**，使該流道**不僅散熱，同時改善電性能、降低基板損耗**；並明示**微流道的位置本身是可調變數**。
+
+➜ ⭐⭐⭐ **此前本 wiki 的「封裝的面正在成為被分配的資源」論述假設的是：不同的面各自專責一種網路。本件更強 —— 同一個幾何特徵同時服務兩個網路。**
+➜ 亦落在既載論述「**同一參數同時服務兩個相反的失效模式 ⇒ 最佳值必然是區間而非極值**」之鄰域：「調整微流道位置」正是同一變數被熱與電同時拉動。
+⚠⚠ **無任何量化值**（無流量、無熱阻、無損耗 dB）⇒ **不得用於任何數值比較。**
+⚠⚠ **日期為 2013，距今十三年** —— 其對「載體通道化」論述的時間意涵見 [[technologies/tsv]]。
+
+*Source: [[sources/2026-10-09_cas-2013-microchannel-interposer-ebg]]*
+
+### ⭐⭐ 二、裂紋的屏障效應：失效是正回饋，不是單向劣化
+
+既載之熱—力耦合論述有兩條路徑：①PDN 自身發熱達負載功率約 40% 上界；②分流不均造成局部過熱（浙大 8 模組 FIVR）。
+**北京工大等（`10.1016/j.engfracmech.2026.112662`，2026-09-24）** 的熱機械相場模型引入**依損傷而變的熱傳導率**，以捕捉**裂紋的屏障效應（barrier effect of cracks）**。
+
+➜ ⭐⭐ **候選論述：一旦裂了，熱就過不去，於是局部更熱，於是裂得更快 —— 封裝的失效是正回饋。** 這是本頁第三種熱—力耦合路徑。
+⚠⚠ **數值方法論文、無實測、無絕對值**（無 MPa、無循環數、無壽命）⇒ **候選，不升格，且不得作為任何可靠度數值之依據。**
+
+*Source: [[sources/2026-10-09_bjut-thermomech-phase-field-imc-tgv]]*
+
+### ⭐ 三、量測環境的熱限制新增一個方向：低溫側
+
+既載 2026-10-08 之「**熱限制首次出現在量測環境**」（Advantest 100 W/cm² 四站式主動熱介面）為**高溫側**。本輪兩筆為**低溫／寬溫側**：
+- **HDIN**：晶圓 burn-in 溫度循環 **−40 ～ +150 °C** ⚠（市場研究、低可信度）
+- **QuantWare WO2026195677A1**：QPU 之**測試腔體**內量測 ⚠（摘要**未提任何溫度數值**，低溫僅由 QPU 常識推得；應用語境為量子運算，**不改變任何 AI 封裝路線圖數值**）
+
+➜ 既載 2026-10-08 之「溫度軸首次朝低溫側延伸」（Micron US20260283054A1）取得第二個**並列**落點，⚠ **不升格**（兩件之耦合僅在「低溫」一詞）。
+
+### 2026-10-09 新增空缺
+
+- [ ] ⭐⭐⭐ **微流道同時作為 EBG 的任何量化值**（損耗改善 dB、熱阻、流量）—— 2013 年件無；Etron 連續兩件亦無 ⇒ **「載體通道化」整條線至今零量化值。**
+- [ ] ⭐⭐ **「裂紋屏障效應」之實測佐證** —— 目前僅一篇數值方法論文。
+- [ ] 📌 既有未結清項延續：3 A/mm² 障壁的熱成因；Etron 基板流道之任何量化值 —— **本輪無進展。**
+
+### 本輪新增來源
+
+- [[sources/2026-10-09_cas-2013-microchannel-interposer-ebg]]（⭐⭐⭐ 流道兼電性結構；⚠ 2013）
+- [[sources/2026-10-09_bjut-thermomech-phase-field-imc-tgv]]（⭐⭐ 裂紋屏障效應）

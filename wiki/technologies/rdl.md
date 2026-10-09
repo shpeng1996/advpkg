@@ -3,8 +3,8 @@ title: "RDL — 重分佈層 / Redistribution Layer"
 category: technology
 tags: [RDL, SAP, dual-damascene, embedded-trace, ETR, polyimide, FPIM, CMP, electromigration, panel-level, pad-less-via]
 created: 2026-09-26
-updated: 2026-10-08
-sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2026-09-27_paper_purdue-ru-cu-em-lifetime-blacks-n-0154, 2026-09-27_paper_copper-interconnect-scaling-roadmap-lines-per-mm, 2026-09-26_article_taiyo-imec-700nm-damascene-rdl, 2026-09-26_article_imec-1um-damascene-rdl-2019-anchor, 2026-09-26_article_amkor-embedded-trace-rdl, 2026-09-26_paper_asi-1um-hdbu-substrate, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-25_paper_dnp-glass-rdl-electromigration-lifetime, 2026-09-25_paper_cornell-glass-on-glass-sio2-rdl, 2026-09-25_paper_asu-molded-core-substrate-warpage, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_shanghai-xianfeng-cn122622683a-glass-interposer-bridge, 2026-10-02_imaps-dpc2026_defect-free-coplanar-copper-via-fill, 2026-10-06_epo_intel-mold-extension-package-to-package-topside-bridge, 2026-10-06_openalex_gatech-terahertz-nde-8layer-interposer, 2026-10-07_epo_amkor-bspdn-oriented-package-embedded-ipd, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-07_openalex_amkor-kelly-three-interposer-routes, 2026-10-08_rdl-free-glass-interposer-trench, 2026-10-08_pku-embedded-glass-fanout-roughness, 2026-10-08_samsung-stacked-rdl-package-bspdn-layer]
+updated: 2026-10-09
+sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2026-09-27_paper_purdue-ru-cu-em-lifetime-blacks-n-0154, 2026-09-27_paper_copper-interconnect-scaling-roadmap-lines-per-mm, 2026-09-26_article_taiyo-imec-700nm-damascene-rdl, 2026-09-26_article_imec-1um-damascene-rdl-2019-anchor, 2026-09-26_article_amkor-embedded-trace-rdl, 2026-09-26_paper_asi-1um-hdbu-substrate, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-25_paper_dnp-glass-rdl-electromigration-lifetime, 2026-09-25_paper_cornell-glass-on-glass-sio2-rdl, 2026-09-25_paper_asu-molded-core-substrate-warpage, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_shanghai-xianfeng-cn122622683a-glass-interposer-bridge, 2026-10-02_imaps-dpc2026_defect-free-coplanar-copper-via-fill, 2026-10-06_epo_intel-mold-extension-package-to-package-topside-bridge, 2026-10-06_openalex_gatech-terahertz-nde-8layer-interposer, 2026-10-07_epo_amkor-bspdn-oriented-package-embedded-ipd, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-07_openalex_amkor-kelly-three-interposer-routes, 2026-10-08_rdl-free-glass-interposer-trench, 2026-10-08_pku-embedded-glass-fanout-roughness, 2026-10-08_samsung-stacked-rdl-package-bspdn-layer, 2026-10-09_keti-tgv-defect-spectrum-plugging-review]
 related:
   - wiki/technologies/foplp.md
   - wiki/technologies/glass-substrate.md
@@ -608,3 +608,17 @@ Scrona 明文把「嚴格的基板平坦度要求」指認為**傳統微影路�
 - [[sources/2026-10-08_rdl-free-glass-interposer-trench]]
 - [[sources/2026-10-08_pku-embedded-glass-fanout-roughness]]
 - [[sources/2026-10-08_samsung-stacked-rdl-package-bspdn-layer]]
+
+---
+
+## [2026-10-09] ⭐⭐ 「不導電塞孔 + 另行佈線」是 TGV 互連的一整類被忽略路線
+
+**KETI × 韓國工業技術大學**之 TGV 聚焦回顧（`10.3390/mi17060720`，2026-06-14）把下列列為與導電填充**並列**的工程選項：**聚合物／介電質塞孔、塞孔後重鑽、導電膠塞孔、Cu/塞孔混成結構**，取捨軸為**電性能 / 可製造性 / 良率 / 成本**。
+
+➜ ⭐⭐ **其對 RDL 的意涵**：若通孔本身不導電，則**垂直互連的責任被推回到 RDL 層或背面佈線** ⇒ 與既載之**上海美維「玻璃只當堆疊載板、外部互連走背面」**屬同方向第二型態。
+➜ 與既載之**上海大學「以基材淺溝槽 + 銀奈米粒子取代水平 RDL」**（2026-10-08）方向**相反**：後者是把 RDL 的功能移進基材，前者是把通孔的功能移回 RDL／背面。
+⇒ ⭐⭐ **候選論述：互連的責任正在基材與 RDL 之間雙向移動，而決定方向的是良率與可製造性，不是電性最佳化。** ⚠ 兩例皆單一來源 ⇒ **候選，不升格。**
+
+⚠ **回顧文、非一手量測；無任何塞孔路線的電性代價數值**（插入損耗、阻抗）⇒ **不得作為數值依據。**
+
+*Source: [[sources/2026-10-09_keti-tgv-defect-spectrum-plugging-review]]*
