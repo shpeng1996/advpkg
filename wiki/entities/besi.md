@@ -3,7 +3,7 @@ title: "Besi (BE Semiconductor Industries) — 混合接合設備領導廠商"
 category: entity
 tags: [equipment, hybrid-bonding, die-attach, D2W, TCB, Netherlands]
 created: 2026-04-25
-updated: 2026-10-07
+updated: 2026-10-10
 sources: [2026-09-27_semieng_chip-week-156-india-tata-besi-izmo, 2026-03-01_3dincites_besi-packaging-power-shift, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-03-29_damnang_hybrid-bonding-cmp-gating-factor, 2026-10-02_bitschips_besi-q1-2026-hybrid-bonding-orders, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-07_epo_besi-deformable-die-forming-bond-tool]
 related:
   - wiki/entities/ev-group.md
@@ -254,3 +254,30 @@ Bits&Chips（2026-04-23，作者 Paul van Gerven）：
 ### 相關來源
 
 [[sources/2026-10-07_epo_besi-deformable-die-forming-bond-tool]]
+
+---
+
+## [2026-10-10] ⭐⭐⭐ 混合接合設備地位首次有數量級（份額預期、累計訂單、2030 台數）
+
+**來源**：The Next Web（Cristian Dina, 2026-10-06），轉述 BofA／Bernstein 與 Besi 自家揭露。
+
+| 項目 | 數值 | 性質 |
+|------|------|------|
+| 混合接合機份額（**2028E**） | ⭐ **約 75%（每四台中三台）** | **Bernstein 預期**（⚠ 賣方研究，單一來源） |
+| **累計混合接合訂單** | ⭐ **>150 台** | **Besi 2025 年報（一手）** |
+| **2030 年前出貨（樂觀情境）** | ⭐ **>2,000 台** | **Besi 2026-08 投資人說明（一手，自述為樂觀）** |
+| 股價 | 單日最多 **−6.4%**；距 6 月高點 **−40%**；YTD **+45%**；上季 Stoxx 600 最差 | 市場 |
+| AMAT 持股 | **9%**（自 2025-04） | 既載 |
+
+➜ ⭐⭐⭐ **本頁此前全為定性**（「D2W 混合接合設備主供應商」、Datacon 8800 CHAMEO、Kinex 平台）**，從未有份額、台數或累計訂單。**
+➜ ⭐⭐ **>150 台累計 → >2,000 台（2030）＝ 13 倍以上擴張預期**；與既載導入時程對照（HBM 混合接合延至 HBM5／2029–2030；Hanmi 量產採用 ~2029）⇒ **設備商的台數預期與記憶體廠的導入延後落在同一時間窗。**
+➜ ⚠ 依既載市占查證門檻，**Bernstein 之 75% 記錄但不得作為其他推論之前提**。
+
+### ⚠⚠ BofA 降評：ASML 之威脅與既載限制鏈的張力
+
+- **BofA 降 Besi 至 neutral、目標價近乎腰斬**（⚠ 未給具體數字）；分析師（Didier Scemama 團隊）稱威脅「未反映在股價」且將持續成為 overhang；⚠ **但並未假設 ASML 取得顯著市占。**
+- BofA 的論證：**「製造商難以穩定地在所需精度下做出可用晶片，而精度正是 ASML 所售之物。」**
+- ⚠⚠ **與既載限制鏈牴觸**：既載結論為**第一限制（表面平坦度 ~0.2 nm，CMP／薄膜）不在設備側，且比機台對準（100 nm）嚴格 500 倍。** **BofA 未指明其所謂精度是對準精度還是表面精度** ⇒ **本 wiki 不裁決，記為矛盾。**
+- 併購背景：Reuters（2026-03）報導 **Lam Research 與 AMAT 曾接觸 Besi**，Besi 聘 Morgan Stanley（⚠ 二手轉述二手）。
+
+**本輪新增來源**：[[sources/2026-10-10_asml-besi-hybrid-bonder-share-numbers]]

@@ -3,7 +3,7 @@ title: "GlobalFoundries — 格羅方德"
 category: entity
 tags: [GlobalFoundries, silicon-photonics, copackaged-optics, PIC, SiPh, foundry, Malta-NY]
 created: 2026-09-27
-updated: 2026-10-03
+updated: 2026-10-10
 sources: [2026-09-27_globalfoundries_siph-cpo-bandwidth-density-coupling-budget]
 related:
   - wiki/technologies/copackaged-optics.md
@@ -84,3 +84,31 @@ related:
 ⚠ **既有⭐⭐ 註記「0.3–0.5 nm 疑為 µm 誤植」本輪無進展。**
 
 見 [[sources/2026-10-03_imaps_delo-optical-adhesive-alignment]]。
+
+---
+
+## [2026-10-10] ⭐⭐⭐ 角色自「矽光子／CPO 代工側」擴為「CoWoS-S 矽中介層受託代工」
+
+| 項目 | 內容 |
+|------|------|
+| 合約 | **US$2B／五年**（與 TSMC），含後續加產能機制 |
+| 廠址 | **Malta, New York**（本頁既載之整合光子廠所在地；將增設產能） |
+| 對象 | ⭐ **CoWoS-S** 矽中介層（**CoWoS-L 未納入**） |
+| 量產爬坡 | **2028 H1** |
+| 角色定位 | **manufacturing service（受託代工）**，**非 TSMC 之供應商**；將生產多個終端客戶各自的中介層設計 |
+| 發言 | Ed Kaste（GF CMOS 事業資深副總）："By providing manufacturing service using GF's trusted U.S. manufacturing footprint" |
+| 產能／片數／晶圓尺寸 | ⚠ **全部未揭露，不得反推** |
+
+➜ ⭐⭐⭐ **本 wiki 首見 TSMC 把 CoWoS 關鍵結構件的製造交給另一家晶圓代工廠**（既載外擴皆在 OSAT 側）。
+➜ ⭐⭐ **GF 須把設計規則、製程與 qualification 對齊 CoWoS 流程**；**IP 歸屬方式報導明言不清**。
+➜ ⚠⚠ **兩個未經證實之能力問題**（報導自提）：**大面積中介層的光罩縫合（reticle stitching）**；**是否能延伸至 CoWoS-L**。
+➜ 📌 本頁既有之 Malta 廠敘述為**整合光子廠**；本件之中介層產能是否同廠同線**未揭露** ⇒ 不得假設共用。
+➜ ⚠ 「釋放 TSMC 產能」「客戶可宣稱美國製造」等語為**報導端推論**，非雙方表態。
+
+### 新增空缺
+
+- [ ] ⭐⭐⭐ GF 是否具備光罩縫合能力與其中介層最大倍數。
+- [ ] ⭐⭐ 中介層產線與既有整合光子廠的關係（共用或獨立）。
+- [ ] ⭐⭐ 跨公司交付中介層的驗收規格。
+
+**本輪新增來源**：[[sources/2026-10-10_globalfoundries-tsmc-2b-interposer-deal]]、[[sources/2026-10-10_semieng-week159-test-capex-keysight-subthz]]

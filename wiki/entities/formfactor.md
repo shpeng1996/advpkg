@@ -3,7 +3,7 @@ title: "FormFactor / FormFactor, Inc."
 category: entity
 tags: [FormFactor, probe-card, wafer-test, KGD, test-metrology, Altius, SmartMatrix, equipment]
 created: 2026-10-09
-updated: 2026-10-09
+updated: 2026-10-10
 sources:
   - 2026-10-08_formfactor-45um-probe-pitch-good-enough-die
   - 2026-10-09_hdinresearch_probe-card-market-150k-pins-sub50um
@@ -75,3 +75,45 @@ FormFactor 的 **Altius（全覆蓋 KGD）** 與 **SmartMatrix（有限覆蓋、
 - [ ] ⭐⭐ **FormFactor 之個別市占** —— 依市占查證門檻，僅接受法說會逐字稿、SEMI 統計或官方宣告。
 - [ ] ⭐⭐ **FormFactor 對 >150,000 針（HBM3/3E）之產品側回應** —— 本輪取得針腳數需求，但無任何廠商側的實作數字。
 - [ ] ⭐ **"Good Enough Die" 是否已在 2020–2026 之間取得定義。**
+
+---
+
+## [2026-10-10] ⭐⭐⭐ 針腳數供應側數字出現（~100,000+）、零作用力接觸列為長期願景、一個明示的不可行
+
+**來源**：FormFactor 部落格「From Commodity to Enabler」（轉載 **Advantest Talks Semi** 節目，主持 Keith Schaub；受訪者 **首席商務長 Aasutosh Dave**）。⚠ **該頁無作者、無發布日期** ⇒ `fetch_status: partial`，**不得作為時效性依據**。
+
+### ⭐⭐⭐ 針腳數與架構
+
+| 應用 | 數值 |
+|------|------|
+| **HBM** | **約 100,000 針以上**，**常跨多顆晶粒**；客戶要求 ⭐ **one-touchdown（單次落針）** |
+| **邏輯 SoC** | **一次一顆晶粒**；數萬針；**4×／10×／16× multi-site** 以降低測試成本 |
+| RF／車用／行動 | 軟性基板 **Pyramid** 探針；2D／3D／flex 架構 |
+
+➜ ⭐⭐⭐ **既載空缺「>150,000 針之廠商側實作數字」部分結清，但出現的是一個不同的數字**：HDIN Research（2026-05-11，⚠ 低可信度）之 **>150,000**（「HBM3/3E **堆疊**」）vs 本件之 **~100,000+**（「HBM **探針卡**，常跨多晶粒」）⇒ **差 1.5 倍，且物件描述不同** ⇒ **「針腳數」須指明是單晶粒、單堆疊或單次落針覆蓋範圍。**
+➜ **SmartMatrix 3D MEMS**（既載產品線）用於 HBM 時須同時處理**堆疊之 base die 與 core die、大電流、極細節距、頻寬，以及嚴格的作用力與平面度控制**。
+➜ ⭐⭐⭐ **探測可行性的四個決定變數**（原文）：**針腳數、節距、載流能力、頻寬**。
+
+### ⭐⭐⭐ 願景與明示之不可行（罕見）
+
+| 構想 | 本頁定位 |
+|------|---------|
+| ⭐ **靜電式零作用力接觸，節距 sub-15 µm** | **長期願景** |
+| **10 萬針陣列、每針一個獨立 MEMS 致動器** | ⭐ **以今日規模而言不可行（impractical）** |
+| 探針卡上整合矽光子收發器 | 困難，但與 CPO 方向一致 |
+| 自我修復探針 | 科幻 |
+
+➜ ⭐⭐⭐ **「零作用力」為本 wiki 全庫首見**；其意義在於**既載探測限制鏈（節距 → scrub length → 機械磨耗 → 作用力與平面度）全部源於「要施力才能接觸」**，而靜電接觸移除該前提之源頭。⚠ **自述為願景，不得與已申請排他權者同級並列。**
+➜ 📌 **引用慣例：供應商自述之不可行，與自述之規格同等可引用，且更不易被行銷稀釋。**
+
+### 服務與需求側
+
+- 客戶常要求探針卡支援於 **24–48 小時**內（⚠ **服務回應時間**，不得與既載「認證前置期 12–24 個月」混用）；指標為 **MTBF／MTBI／First Time Right**；台灣服務產能**加倍**，並於 **Texas, Farmer's Branch** 設廠。
+- **良率與 KGD 被定位為「策略性」**；**scrap 成本**被列為「晶圓測試不再是 commodity」之理由；**測試策略正反向影響設計決策**。
+- 矽光子：客戶問的是「**何時**」而非「是否」。⚠ **仍是供應商轉述客戶，不計入買方直述。**
+
+### ⚠⚠ 來源獨立性
+
+**Advantest 持有 FormFactor 少數股權**（2025-01-15，份額未揭露）且為策略夥伴；**本件即為 Advantest 節目內容之轉載** ⇒ **本件與 Advantest 之來源不獨立。**
+
+**本輪新增來源**：[[sources/2026-10-10_formfactor-100k-pins-zero-force-vision]]、[[sources/2026-10-10_advantest-stakes-probe-card-suppliers]]

@@ -3,7 +3,7 @@ title: "封裝層的供電網路 / Power Delivery Networks at the Package Level"
 category: concept
 tags: [PDN, power-delivery, vertical-power, eVR, capacitor, inductor, passive-integration, hybrid-bonding, rack-power]
 created: 2026-09-29
-updated: 2026-10-09
+updated: 2026-10-10
 sources: [2026-09-29_imaps-dpc2026_nanoporous-silicon-capacitor-pdn, 2026-09-29_imaps-dpc2026_saras-stile-evr-vertical-pdn, 2026-09-29_semieng_tech-paper-roundup-sept29-multikw-3dhi-pdn, 2026-09-29_semiwiki_ofc2026-siph-cpo-oci-ocs-summary, 2026-09-30_arxiv_umn-multi-kw-power-delivery-3d-hi, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_epo_intel-jp2026116680a-glass-core-embedded-inductor-clusters, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_imaps-dpc2026_delo-die-side-capacitor-encapsulation, 2026-10-02_epo_samsung-cn122602880a-ivr-capacitor-interposer-core, 2026-10-02_jmmm_tyndall-fecob-n-pwrsoc-magnetics, 2026-10-02_epo_amd-us20260282956a1-silicon-bridge-decap, 2026-10-06_openalex_auburn-nife-tsv-magnetic-shield-package, 2026-10-07_epo_amkor-bspdn-oriented-package-embedded-ipd, 2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-08_semieng_voltage-regulation-in-package, 2026-10-08_ferric-fe1766-current-density-denominator, 2026-10-08_empower-crescendo-regulator-side, 2026-10-08_zju-8module-fivr-current-sharing, 2026-10-08_samsung-stacked-rdl-package-bspdn-layer, 2026-10-08_ibm-w2w-bonded-deep-trench-capacitor, 2026-10-08_etron-liquid-through-substrate-cavity, 2026-10-09_infineon-tdm2354-dual-phase-denominator, 2026-10-09_infineon-tdm2454-quad-phase-denominator, 2026-10-09_semiwiki-tsmc-oip-2026-verification]
 related:
   - wiki/concepts/thermal-management.md
@@ -745,3 +745,80 @@ Tyndall National Institute × University College Cork（JMMM，2026-09-02）：�
 - [[sources/2026-10-09_infineon-tdm2354-dual-phase-denominator]]（⭐⭐⭐ 160 A / 64 mm² / 1.6；1.5625× 隱含分母）
 - [[sources/2026-10-09_infineon-tdm2454-quad-phase-denominator]]（⭐⭐⭐ 280 A / 90 mm² / 2.0；1.556× 隱含分母；封裝內嵌電容層）
 - [[sources/2026-10-09_semiwiki-tsmc-oip-2026-verification]]（⭐ IVR＋電容＋熱 DTCO 由 TSMC 自列為系統支柱）
+
+---
+
+## [2026-10-10] ⚠⚠⚠ 2026-10-09 之「1.56 倍隱含面積」被推翻：那不是面積比，是峰值／連續電流比
+
+### 一、事實
+
+**Mouser 之 Infineon TDM2454xx 產品頁**同時標示：
+
+- **「280 A peak power density」** ⇒ 標為 **peak**
+- **「>2.0 A/mm² TDC (thermally managed)」** ⇒ 標為 **TDC（熱管理後之連續值）**
+
+| 產品 | 電流（標註） | 佔地 | 自述 A/mm²（標註） | 以佔地回推之連續電流 | 峰值／連續 |
+|------|-------------|------|-------------------|-------------------|-----------|
+| **TDM2454xx**（四相，2025-03） | **280 A（peak）** | 10×9 = **90 mm²** | **>2.0（TDC）** | 2.0 × 90 = **180 A** | **280/180 = 1.556** |
+| **TDM2354xT**（雙相，2024-10） | **160 A** | 8×8 = **64 mm²** | **1.6** | 1.6 × 64 = **102.4 A** | **160/102.4 = 1.5625** |
+
+### 二、處置：空缺關閉，但不是因為找到了答案
+
+2026-10-09 由上表之 1.5625 與 1.556（偏差 0.4%）推得「**Infineon 使用一個系統性、跨世代一致、約為模組佔地 1.56 倍的面積口徑**」，並把空缺「Infineon 分母定義」記為「**部分結清：排除模組佔地**」。
+
+➜ ⚠⚠⚠ **該推論不成立。** 1.56 倍**可完整由「峰值 vs TDC」解釋，無須假設任何第二種面積** ⇒ **「排除模組佔地」這一步被撤回；分母很可能就是模組佔地（90 mm²／64 mm²），落差在分子。**
+➜ **空缺「Infineon 的 1.56 倍隱含面積對應何種實體面積」予以關閉 —— 不是因為找到了那個面積，而是因為該面積很可能不存在。**
+➜ ⚠ **2026-10-09 之表格不刪除**，改標為「**已被 2026-10-10 修正**」。
+
+### 三、⭐⭐⭐ 新增作業規範（37）：分子也有口徑
+
+**凡引用任何 A/mm² 或 A 數字，除依規範（34）標明分母類別外，必須標明分子為「峰值」或「熱管理後連續（TDC）」；兩種分子不得相除、不得並列排序。**
+
+➜ **理由**：規範（34）只管分母。本輪顯示**混用分子即可偽造出一個不存在的分母**，而該偽造物在兩個世代間一致到 0.4%，**看起來正是一個系統性口徑的樣子。**
+➜ ⭐⭐⭐ **三輪構成一個完整的方法論案例**：2026-10-08 以一次算術**解出**一個分母；2026-10-09 以同一算術**否證**一個分母；2026-10-10 發現該否證本身建立在一個**未檢查的分子假設**上。
+  ➜ **當兩個數字不自洽時有兩個可疑處（分子與分母），而前兩輪只檢查了其中一個。**
+
+### 四、A/mm² 落點表（依規範 34 ＋ 37 重修）
+
+| 來源 | 電流 | 分子口徑 | 分母 | 分母類別 | A/mm² |
+|------|------|---------|------|---------|-------|
+| Ferric Fe1766 | 160 A | ⚠ **未標**（自述 >4.5） | 35.5 mm²（矽晶粒） | ③ | **4.51** |
+| Infineon TDM2354xT | 160 A | **推定 peak** | 64 mm²（模組佔地） | ① | 2.50（本 wiki 計算） |
+| **Infineon TDM2354xT（廠商口徑）** | **102.4 A（推定 TDC）** | **TDC** | **64 mm²（模組佔地）** | **①** | **1.60（廠商自述）** |
+| **Infineon TDM2454xx（廠商口徑）** | **180 A（推定 TDC）** | **TDC** | **90 mm²（模組佔地）** | **①** | **>2.0（廠商自述）** |
+| Infineon 路線圖 | — | ⚠ 未標 | ⚠ 未確認 | ④ | 0.4/0.6 → 2.0 → >3 → >4 |
+| arXiv 2606.28837（需求側） | — | ⚠ 未標 | 系統供電網路截面 | ② | 目標 2–4／現況 <1 |
+| SemiEng 某客戶 | — | ⚠ 未標 | ⚠ 未確認 | ④ | >5 |
+
+➜ ⚠⚠ **Ferric 的 4.51（160 ÷ 35.5）亦須重新標註**：既載已確認分母為矽晶粒面積，**但從未確認 160 A 是峰值或連續值** ⇒ 依規範（37），該落點之分子口徑為**未標** ⇒ **「Ferric >4.5 已跨過 Infineon 的 3 A/mm² 障壁」此前因分母不可比而不成立，現在因分子亦不可比而更不成立。**
+➜ ⭐⭐ **既載「Infineon 自家兩組序列互不相容」之空缺獲得候選解釋**：若路線圖為**系統供電網路截面**（類別②）而產品稿為**模組佔地＋TDC**（類別①），則兩組序列本不可比。⚠ 推測；空缺維持開啟，但**追蹤方式改為：先確認路線圖那條線的分子與分母，而非尋找中間值。**
+
+### ⭐⭐⭐ 五、去耦電容的位置軸首次有數字，而限制項是底填料不是電感
+
+**Amkor US20260314484A1（公開 2026-10-08）**請求項：**被動元件距模組 ≤100 µm**、且**距底填料圓角（fillet）≤50 µm**；模組之**模封側壁朝向該被動元件**；兩側各一顆被動元件，皆被底填料覆蓋。
+
+➜ ⭐⭐⭐ **本軸（2026-10-01 以九筆來源／五家廠商／三種載體立起）之落點此前全部是「放在哪一層／哪一面」**（晶背 DTC、基板內嵌、Empower ECAP、中介層內）。**本件問的是「放多近」，並給了 100 µm。**
+➜ ⭐⭐⭐ **第二個數字揭露真正的限制項是製程而非電性**：要靠近模組，擋路的是**底填料圓角會爬上來**；**50 µm 是與圓角共存的容許距離。**
+  ➜ ⇒ 既載論述「**真正的瓶頸在被視為輔助步驟的那一步**」取得**第五例，首次出現在底填料**（既有四例：混合接合 CMP 後清洗、FOPLP debonding、Resonac 切割膠帶、測試）。
+  ➜ ⭐⭐⭐ **其形式比前四例更乾淨**：前四例是「某步驟的良率拖垮整體」；**本例是某步驟的幾何副產物直接決定另一個電性設計變數的上限** —— 底填料圓角決定去耦電容能放多近，因而決定迴路電感的下限。⚠ 該因果鏈之後半段（距離→電感→性能）**本件未述，為本 wiki 推論。**
+➜ ⚠ 請求項只寫 **passive device**，未指明為去耦電容 ⇒ 連結為本 wiki 讀法；惟其**對稱配置＋被底填料覆蓋**與分散式去耦配置高度一致。
+➜ ⚠ **請求項的數字是排他權邊界，通常比實作值寬鬆** ⇒ 不得當成業界規格值。
+
+### ⭐ 六、其他
+
+- **Infineon TDM2454xx 自述「整合內嵌電容（integrated embedded capacitors）」** ⇒ 既載空缺「Infineon『封裝內嵌電容層』之電容值／密度／ESL/ESR」**本輪確認該特徵存在於產品層，但四個數字仍全部空白。**
+- **「footprint designed for tiling arrays of modules」** ⇒ 既載「併聯的代價」論述（Ferric 64 顆 >10 kW、Empower 至 50 顆 >3,000 A、浙大 8 模組分流精度 10.6%／溫差 <10.5 °C）取得**第四家廠商的併聯意圖陳述**，⚠ 仍未提代價。
+
+### 2026-10-10 新增／異動空缺
+
+- [x] ⭐⭐⭐ **「Infineon 的 1.56 倍隱含面積對應何種實體面積」—— 關閉**（該面積很可能不存在）。
+- [ ] ⭐⭐⭐ **Infineon TDC 的定義條件**（環境溫度？風速？熱阻邊界？）—— 結案仍須 datasheet；追蹤目標自「找出 1.56 倍對應的面積」改為「**確認 TDC 的定義條件**」。
+- [ ] ⭐⭐⭐ **Ferric Fe1766 之 160 A 是峰值或連續值** —— 依規範（37）新增；未知前不得與任何 Infineon 數字比較。
+- [ ] ⭐⭐ **Amkor 100 µm／50 µm 與迴路電感的量化關係** —— 本件未述，本 wiki 推論。
+- [ ] ⭐⭐ **該被動元件是否為去耦電容**（請求項未指明）。
+- [ ] ⭐ **Infineon 內嵌電容之電容值／密度／ESL／ESR**（既載，本輪未前進）。
+
+### 本輪新增來源
+
+- [[sources/2026-10-10_infineon-peak-vs-tdc-overturns-156x-area]]（⚠⚠⚠ 推翻 2026-10-09 主線）
+- [[sources/2026-10-10_amkor-passive-placement-quantified-claim]]（⭐⭐⭐ 100 µm／50 µm）

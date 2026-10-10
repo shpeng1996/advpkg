@@ -3,7 +3,7 @@ title: "先進封裝的測試、量測與失效分析 / Test, Metrology & Failur
 category: concept
 tags: [test, metrology, inspection, failure-analysis, KGD, KGI, KGP, DFA, yield]
 created: 2026-09-17
-updated: 2026-10-09
+updated: 2026-10-10
 sources: [2026-09-27_paper_binghamton-ibm-pad-scaling-resistance-variability, 2026-09-27_paper_purdue-ru-cu-em-lifetime-blacks-n-0154, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2025-01-14_semieng_known-good-interposer-screening, 2025-07-10_semieng_advanced-packaging-reshaping-inspection, 2024-11-12_semieng_packaging-drives-test-metrology-innovation, 2026-08-01_jfap_3dic-failure-analysis-dfa, 2026-07-06_apl_lensless-through-silicon-phase-imaging, 2026-09-06_ndte_hysan-sparse-view-xct-tsv, 2026-08-02_chips_cpo-wafer-level-probe-card, 2026-08-27_samsung_us20260256000a1-interposer-test-pad, 2026-08-13_jcet_us20260239928a1-hybrid-bonding-substack-test, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-06-28_hyperframe_amat-hybrid-bonding-hedge, 2026-09-26_paper_ibm-amine-post-cmp-clean, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-10-02_microrel_tudelft-google-3dic-fa-hardware, 2026-10-02_imaps-dpc2026_gelpak-universal-carriers-singulated-die, 2026-10-06_openalex_gatech-terahertz-nde-8layer-interposer, 2026-10-06_openalex_tongji-wafer-embedded-pitch-standard-pose-correction, 2026-10-06_thelec_sec-xray-tsv-tgv-inspection-1um, 2026-10-07_semieng_kelvin-resistance-probe-access-pitch-limit, 2026-10-07_openalex_amkor-kelly-three-interposer-routes, 2026-10-07_epo_besi-deformable-die-forming-bond-tool, 2026-10-08_silverbrook-known-good-site-substrate-test, 2026-10-08_ase-probing-needle-scrub-length, 2026-10-08_formfactor-45um-probe-pitch-good-enough-die, 2026-10-08_advantest-singulated-die-test-thermal, 2026-10-09_tsmc-cantilever-probe-card-patent, 2026-10-09_tsmc-impedance-control-probing-patent, 2026-10-09_intel-voltage-contrast-backside-patent, 2026-10-09_ieie-probe-card-mlc-signal-integrity, 2026-10-09_hdin-probe-card-market-pin-count, 2026-10-09_quantware-qpu-measurement-stage-patent]
 related:
   - wiki/technologies/hybrid-bonding.md
@@ -1060,7 +1060,7 @@ HDIN 稱探針卡**客戶認證週期 12–24 個月**。既載 HBM4E 混合接�
 2. **被動連通性逐站驗證**（Silverbrook：不加電、只驗通不通）
 
 本輪 **Intel EP4815705A1（2026-09-30）** 為**第三類**：於**背面金屬化區域**執行**電壓對比（voltage contrast）檢測**，並可含一個**虛擬接地層**。
-➜ ⭐⭐⭐ **電壓對比是唯一不需機械接觸的一類** ⇒ **不受節距與 scrub length 限制** ⇒ 2026-10-08 所立之「已知良好站位」軸多出一條新的取得路徑。
+➜ ⭐⭐⭐ **電壓對比是唯一不需機械接觸的一類**（⚠⚠ **2026-10-10 修正為「兩類」** —— Advantest US20260219310A1／US20260243821A1 之近場 RF 感應同樣不需機械接觸，見本頁 2026-10-10 節）⇒ **不受節距與 scrub length 限制** ⇒ 2026-10-08 所立之「已知良好站位」軸多出一條新的取得路徑。
 ➜ ⭐⭐ **「虛擬接地層」是為了量測而加進結構的一層** ⇒ 既載論述「**測試結構正在侵入產品結構**」（既載同向例：Samsung 中介層測試墊，2026-09-17）在**背面／BSPDN 世代**取得實例。
 ⚠ 摘要未說明該層僅存於測試晶片或進入量產結構，**本 wiki 不代為判定。**
 📌 `voltage contrast` 為本 wiki 全庫首見（依規範 35 事前 grep 複核：0 命中）。
@@ -1113,3 +1113,159 @@ HDIN 稱探針卡**客戶認證週期 12–24 個月**。既載 HBM4E 混合接�
 - [[sources/2026-10-09_ieie-probe-card-mlc-signal-integrity]]（⭐⭐⭐ 16 分支、Eye hold time、全因子 DOE）
 - [[sources/2026-10-09_hdin-probe-card-market-pin-count]]（⭐⭐⭐ >150,000 針、12–24 月認證、⚠ 低可信度）
 - [[sources/2026-10-09_quantware-qpu-measurement-stage-patent]]（⭐⭐ 落針 → 對接）
+
+---
+
+## [2026-10-10] ⭐⭐⭐ 「不需機械接觸」自一類變四個落點；測試熱湊齊控制迴路；量測處置新增第四種「不量而推」
+
+本輪 15 筆中 **9 筆**指向測試／量測（**超越 2026-10-09 之 7/15，再創單輪最高比例**）。
+
+### ⭐⭐⭐ 一、脫離機械接觸：一輪內四個落點，但只有兩個有排他權
+
+2026-10-09 本頁記 Intel EP4815705A1 之電壓對比為「**唯一**不需機械接觸的一類」。該敘述**本輪即被推翻**。
+
+| # | 落點 | 機制 | 物件 | 性質 |
+|---|------|------|------|------|
+| 1 | **Intel EP4815705A1**（既載） | 電子束**電壓對比** | 背面金屬化區域（＋虛擬接地層） | 排他權 |
+| **2** | **Advantest US20260219310A1** | ⭐ **近場 RF 感應**（探針移至接點附近，於導線中感應訊號） | **中介層／矽橋**（被動佈線） | 排他權 |
+| **3** | **Advantest US20260243821A1** | 同上，**平行化＋探針在驅動期間移動** | 同上 | 排他權 |
+| **4** | **FormFactor**（部落格） | ⭐ **靜電式零作用力接觸**，目標節距 **sub-15 µm** | 一般晶圓測試 | ⚠ **自述為長期願景** |
+
+➜ ⭐⭐⭐ **其結構意義**：本頁既有的探測限制鏈（節距 → scrub length → 機械磨耗 → 作用力與平面度）**全部源於「要施力才能接觸」這一個前提**。四個落點都在攻擊該前提本身，而不是改善鏈上任何一環。
+➜ ⭐⭐⭐ **但三種機制的適用範圍互不重疊，不構成一條路線：**
+- **電壓對比**：需電子束與可見之金屬化面；不需加電。
+- **RF 感應**：需「兩接點由一條導線相連」的**拓撲** ⇒ **只能驗被動連通性與傳輸特性，不能驗元件功能**。
+- **靜電接觸**：仍然接觸，只是把**力**降到零 ⇒ 仍受節距限制（故才有 sub-15 µm 的目標值）。
+
+➜ ⚠⚠ **依規範（35）已 grep 既載頁**：`zero-force`／`零作用力` **零命中**；`contactless` 僅 `technologies/hbm4.md` 一處（不同語境）；`非接觸` 僅本頁 L384（深孔光學量測之訊號budget）⇒ 上述「首見」判定成立。
+
+### ⭐⭐⭐ 二、中介層篩檢：空缺不結清，但「是否有人在做」首次有答案
+
+既載空缺「**CoWoS『5.5× 良率 99%』是否涵蓋中介層的完整電性篩檢**」（2026-09-17 列管）至今零證據。
+
+**Advantest 兩件之 DUT 恰為「interposers and silicon bridges」，且已布局到平行化與掃描式** ⇒ **ATE 廠正為這一類被動件專門開發篩檢方法。**
+
+➜ ⚠⚠⚠ **空缺維持開啟。** 本件改變的是「**是否有人在做這件事**」，不是「**TSMC 做了沒有**」。兩件專利不提客戶、不提 TSMC、不提良率，**不得推論該篩檢已存在於任何量產流程，亦不得推論 99% 涵蓋或不涵蓋它。**
+➜ ⭐⭐ 連帶：既載 **Silverbrook WO2026139941A1**（已知良好站位；**不加電只驗被動連通性**）自單一來源升為**並列敘述** —— 本輪 Advantest 同為被動連通性驗證，申請人為日系 ATE 廠，機構完全無重疊。
+
+### ⭐⭐⭐ 三、探測幾何第三型態，且吞吐的變數跟著換了
+
+落針（接觸）→ **對接**（QuantWare WO2026195677A1，2026-10-09）→ ⭐ **近接掃描**（Advantest，不接觸且移動中）。
+
+➜ ⭐⭐⭐ 既載測試吞吐討論**全部建立在落針次數**之上（one-touchdown、multi-site **4×／10×／16×**）；**掃描式的吞吐變數是掃描速度** ⇒ **兩者在維度上不可換算。**
+➜ ⚠ Advantest 兩件**零吞吐數字** ⇒ 不得與 multi-site 倍數比較或相除。
+
+### ⭐⭐⭐ 四、第六維度（針腳數）：供應側數字出現了，而且和需求側數字不一樣
+
+既載空缺「**>150,000 針之廠商側實作數字**」（2026-10-09 列管）本輪**部分結清，且結清方式是出現了一個不同的數字。**
+
+| 口徑 | 數值 | 來源 | 物件描述 |
+|------|------|------|---------|
+| 市場研究（需求側） | **>150,000** | HDIN Research, 2026-05-11（⚠ 低可信度） | 「HBM3/HBM3E **堆疊**」 |
+| **供應側（探針卡商）** | **約 100,000 以上** | **FormFactor CCO（Advantest Talks Semi）** | 「HBM 探針卡，**常跨多顆晶粒**」 |
+| 供應側（邏輯 SoC） | **數萬**，一次一顆晶粒 | 同上 | 單一 SoC |
+
+➜ ⭐⭐⭐ **兩者差 1.5 倍，但更重要的是物件描述不同** ⇒ **「針腳數」這個維度本身必須指明是一顆晶粒、一個堆疊，還是一次落針所覆蓋的全部晶粒。**
+➜ 📌 **這是既載「同一名詞涵蓋多個獨立驗收項」的第三個版本**（前兩例：粗糙度跨技術域相差 2–4 個數量級；A/mm² 之分母四類）。
+➜ ⭐⭐ **one-touchdown（單次落針）為本 wiki 首見之需求用語**，且它解釋了 10 萬級的來源：**要單次落針覆蓋整個堆疊，針數就必須等於整個堆疊的墊數。**
+➜ ⭐⭐⭐ **探測可行性的四個決定變數**（FormFactor 原文）：**針腳數、節距、載流能力、頻寬** —— 本頁此前把這四項分散在不同維度討論，**本件首次把它們列為同一組約束。**
+
+### ⭐⭐⭐ 五、測試熱：自「能散多少」進到「閉環控制」，三要素齊備
+
+既載（2026-10-08）測試熱只有一個落點：Advantest **100 W/cm² 四站式主動熱介面**（熱源＝DUT，性質＝被動散熱能力）。
+
+| 要素 | 來源 | 內容 |
+|------|------|------|
+| **量** | Technoprobe **WO2026171391A1**（⚠ 檢視未收錄為 raw） | 探針系統內建**異種金屬接面熱電偶**量 DUT／晶圓溫度 |
+| **移除** | Technoprobe **WO2026162211A1** | 空間轉換器內**微流道**散除**探針卡自身主動元件**之熱功率 **PT2** |
+| **預測與調控** | Advantest **US20260235663A1** | 依感測器資料預測晶粒內「關注區域」溫度，回頭改**測試控制參數**（分類含 **G06N20/00**） |
+
+➜ ⭐⭐⭐ **測試熱預算須拆成兩項：DUT 熱 vs 儀器熱。** 既載全部測試熱數字皆為 DUT 側；Technoprobe 的 PT2 是**探針卡自己發的熱**。既載「熱應拆成運作熱與製程熱兩條線」於**測試域再分一次**。
+➜ ⚠⚠⚠ **獨立性警示**：**Advantest 持有 Technoprobe 2.5% 股份並為策略夥伴**（2025-01-15）⇒ 上表為「**兩個法人**」而非「兩個獨立陣營」，**不得作為業界共識之證據**，只能作為該陣營完整布局之證據。
+➜ 📌 **新增引用慣例：凡以「兩家獨立供應商同向」作為升格依據者，須先檢查股權關係。**
+
+### ⭐⭐⭐ 六、探針卡「自被動互連變成整合式多物理系統」—— 命題出自申請人本人
+
+**Venuti（Chips, 2026-07-09，`10.3390/chips5030018`）**：「探針卡須自**被動互連**演化為能支撐高電壓、高電流密度與快速切換瞬態的**整合式多物理系統**」；並列出新興解法：陶瓷絕緣、⭐ **受控氣氛測試環境**、⭐ **整合式感測**、先進熱管理；提出**結構化分類法與路線圖**。
+
+➜ ⭐⭐⭐ **這正是 2026-10-09（TSMC 把電氣元件放上懸臂座）與本輪（Technoprobe 把主動元件放上空間轉換器並為其配冷卻）的明文版本。**
+➜ ⚠⚠ **但作者 Elena Venuti 即 Technoprobe WO2026171391A1 之發明人** ⇒ **本文與該公司專利屬同一主張的兩種表達，不構成兩個獨立來源。** 升格「測試硬體正從被動互連變成主動系統」仍須靠 **TSMC（晶圓廠）與 Advantest（ATE 廠）兩個外部申請人**，而這兩者確實存在 ⇒ **該讀法升為並列敘述。**
+➜ ⚠⚠ **技術域**：該回顧之元件域為 **WBG／UWBG（SiC/GaN/AlN/Diamond/β-Ga₂O₃/h-BN）**，非 AI/HPC 封裝 ⇒ 可移植者為框架與分類法，**不可移植者為具體電性規格**。
+➜ ⭐⭐ **「受控氣氛測試環境」為本 wiki 全庫首見**：既載測試環境變數只有溫度與熱流。
+
+### ⭐⭐⭐ 七、量測處置新增第四種：不量而推
+
+本頁既有三類**失效模式**（精度不足／完全脫鉤／規格漂亮但答錯問題），其共同前提是**先量到再判斷**。本輪出現兩個落點把這個前提拿掉：
+
+- **Advantest US20260235663A1**：溫度**預測**（而非量測）→ 決定測試控制參數。
+- **SUSTech CMP 回顧（`10.3390/ma19194205`）**：⭐ **虛擬量測（virtual metrology）** 與**智慧 run-to-run 控制**列為 CMP 之方向。
+
+➜ ⭐⭐⭐ **新增第四種處置：不量而推。** 其風險形式與前三類不同：**前三類的失效都可以用更好的量測解決；第四類的失效是模型與真值的偏離，而該偏離本身也需要量測才能知道。**
+➜ ⚠ 兩個落點一為排他權、一為學術回顧，**皆非量產證據** ⇒ 列**候選**，不升格。
+➜ ⭐⭐ **ML 同輪出現在兩個既載瓶頸環節（測試控制、CMP 控制）**；**G06N20/00 為本 wiki 專利軌首見之機器學習分類。**
+
+### ⭐⭐⭐ 八、需求側：表態仍空白，但資本行為有了第一個落點
+
+既載空缺「**需求側（IDM／fabless）對測試成本的表態**」（2026-10-08 列管，連續兩輪未結清）。
+
+**SemiEng #159（2026-10-09）：Samsung 據報於越南投資約 $3.9B 於記憶體測試設施。**
+
+➜ **處置：部分結清，但形式與預期不同** —— 既載追蹤方式設定為「買方的公開表態」，**實際出現的是一筆資本支出，不是一句話**。$3.9B 為本 wiki 所記最大的單一測試相關投資。
+➜ ⚠⚠ 三項限制：①「據報」，非 Samsung 正式公告；②**記憶體測試 ≠ 先進封裝測試**（雖 HBM 使兩者高度重疊）；③無產能、無時程、無設備組合 ⇒ **不得用於推論任何探針卡或 ATE 需求量。**
+➜ ⚠ **FormFactor 所轉述之需求側語句**（良率與 KGD 為「策略性」、客戶要求 one-touchdown、客戶問矽光子測試「何時」而非「是否」）**仍是供應商轉述客戶，不計入買方直述。**
+
+### ⭐⭐ 九、THz 模態：論文與商品在同一週，但做的不是同一件事
+
+既載 2026-10-06 收錄 Georgia Tech-Europe × CNRS 之 **8 層中介層 THz NDE**（並記空缺：解析度與深度上限未知）。**SemiEng #159（2026-10-09）：Keysight 推出連續式晶圓上 sub-THz 特性量測方法。**
+
+➜ ⚠⚠ **不得記為「該論文被產品化」。** 論文做的是**離線缺陷成像（NDE）**；Keysight 做的是**晶圓上元件特性量測（characterization）** —— **同一波段、兩種用途、兩個社群。**
+➜ ⭐⭐ 但對既載論述「**論文／專利是落後指標**」仍構成一個方向相反的個案：既載時間位移為 **3–4 年（CEA D2W）至十三年（CAS 微流道）**，本例**接近零**。⇒ **該論述應補上條件：時間位移的大小取決於構想與產品之間是否需要新的製程能力；量測模態的位移可以接近零，因為它不改變產線結構。** ⚠ 單一個案，列候選。
+➜ **既載 THz 之解析度／深度上限空缺不因本件結清。**
+
+### ⭐⭐ 十、burn-in 回到晶圓級測試論述
+
+**Venuti 回顧**：晶圓級測試自**參數式篩檢**走向**受 burn-in 啟發的可靠度導向方法論**（SiC 以體二極體特性化做早期缺陷偵測）。
+**SemiEng #159**：**Teradyne** 於 Titan HP **系統級測試（SLT）**平台加入 **burn-in**。
+➜ 一篇回顧與一個產品公告在同一週同向。⚠ **元件域與測試層級皆不同**（WBG 晶圓級 vs 系統級）⇒ 列**並列**，不升格。
+
+### ⭐⭐ 十一、一個罕見的「明示不可行」
+
+**FormFactor**：**10 萬針陣列各配一個獨立 MEMS 致動器 ⇒ 以今日規模而言不可行（impractical）**；自我修復探針 ⇒「科幻」。
+➜ 📌 **引用慣例：供應商自述之不可行，與自述之規格同等可引用，且更不易被行銷稀釋。** 本 wiki 幾乎全部由「可以做到什麼」構成，**本件提供一個被供應商自己劃掉的設計空間。**
+
+### 本輪結清／降級／並列
+
+| 項目 | 處置 |
+|------|------|
+| **「電壓對比是唯一不需機械接觸」** | ⚠⚠ **推翻 → 改為兩類**（四個落點，兩個有排他權） |
+| **「>150,000 針之廠商側數字」** | **部分結清**：供應側為 **~100,000+**；兩者物件描述不同，記為口徑差異 |
+| **「需求側對測試成本的表態」** | **部分結清**：論述仍空白，**資本行為**有一個落點（Samsung ~$3.9B） |
+| **「中介層的完整電性篩檢」** | **不結清**；但供應側能力證據首次出現 |
+| **「測試硬體正從被動互連變成主動系統」** | 候選 → **並列敘述**（TSMC ＋ Advantest 兩個外部申請人；Technoprobe 之專利與論文同屬一方） |
+| **「對準精度正從接合擴散到量測」**（2026-10-09 候選） | **本輪無進展** |
+| 探針卡設計權之採購佐證／電壓對比之解析度 | **本輪皆無進展** |
+| **測試熱** | 自「被動散熱能力」擴為「量／移除／預測三要素」，⚠ 但僅一個陣營 |
+
+### 2026-10-10 新增空缺
+
+- [ ] ⭐⭐⭐ **非接觸 RF 感應測試的解析度、最小可偵測缺陷與吞吐** —— 兩件專利零量化值；若無此三者，無法判斷它能取代或只能補充接觸式篩檢。
+- [ ] ⭐⭐⭐ **RF 感應只能驗被動連通性，那麼中介層的「完整電性篩檢」到底包含哪些項目** —— 本頁至今沒有這張清單，而既載空缺（CoWoS 99% 的量測邊界）實際上需要它才能回答。
+- [ ] ⭐⭐⭐ **PT2（探針卡自身發熱）的量級** —— 請求項為其命名卻未給值。
+- [ ] ⭐⭐⭐ **「靜電零作用力接觸」是否有第二個來源** —— 目前僅 FormFactor 一句願景，無專利、無論文。
+- [ ] ⭐⭐ **針腳數的三種口徑（單晶粒／單堆疊／單次落針）各自的數值** —— 本輪只知兩個數字不同口徑，不知哪個對應哪個。
+- [ ] ⭐⭐ **Technoprobe 之 WO2026171391A1（熱電偶）與 WO2026189684A1（彈性止擋）** —— 本輪檢視未採，列**下輪優先候選**。
+- [ ] ⭐⭐ **「受控氣氛測試環境」之實際參數**（氧濃度／濕度／惰性氣體）。
+- [ ] ⭐⭐ **Samsung 越南測試投資之設備組合與時程** —— 決定該 $3.9B 是否與先進封裝測試相關。
+- [ ] ⭐ **Keysight sub-THz 量測之頻段、解析度與是否可用於封裝堆疊**（與既載 THz NDE 空缺合併追蹤）。
+- [ ] ⭐ **FormFactor 之 24–48 小時服務回應與既載 12–24 個月認證前置期之間的工作分解** —— 兩者差三個數量級，中間發生什麼未知。
+
+### 本輪新增來源
+
+- [[sources/2026-10-10_advantest-contactless-interposer-test-patents]]（⭐⭐⭐ 第二類非接觸；中介層／矽橋）
+- [[sources/2026-10-10_advantest-ml-thermal-prediction-in-test]]（⭐⭐⭐ 熱閉環；G06N20 首見）
+- [[sources/2026-10-10_technoprobe-microfluidic-probe-card]]（⭐⭐⭐ PT2；微流道第四落點）
+- [[sources/2026-10-10_venuti-probe-card-passive-to-multiphysics]]（⭐⭐⭐ 命題；⚠ 同一方）
+- [[sources/2026-10-10_formfactor-100k-pins-zero-force-vision]]（⭐⭐⭐ ~100k 針；零作用力願景；明示不可行）
+- [[sources/2026-10-10_advantest-stakes-probe-card-suppliers]]（⭐⭐⭐ 來源獨立性之檢查項）
+- [[sources/2026-10-10_semieng-week159-test-capex-keysight-subthz]]（⭐⭐⭐ Samsung $3.9B；Keysight sub-THz）
+- [[sources/2026-10-10_sustech-intelligent-cmp-virtual-metrology]]（⭐⭐⭐ 虛擬量測＝第四種處置）

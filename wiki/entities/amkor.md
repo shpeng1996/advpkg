@@ -3,7 +3,7 @@ title: "Amkor Technology"
 category: entity
 tags: [OSAT, advanced-packaging, FOCoS, Arizona, chiplet, Intel-EMIB, patent-signal, TIM]
 created: 2026-04-25
-updated: 2026-10-08
+updated: 2026-10-10
 sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-05-19_stocktitan_amkor-arizona-peoria-land-expansion, 2026-06-17_digitimes_amkor-tsmc-10year-arizona-deal, 2026-06-17_trendforce_tsmc-amkor-10year-arizona-advanced-packaging, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-30_amkor-ir_arizona-7billion-groundbreaking, 2026-06-30_digitimes_amkor-2.5d-hdfo-growth-2026, 2026-07-23_amkor-ir_nvidia-amkor-1-5b-strategic-partnership, 2026-09-26_article_amkor-embedded-trace-rdl, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-10-07_epo_amkor-bspdn-oriented-package-embedded-ipd, 2026-10-07_openalex_amkor-kelly-three-interposer-routes, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-08_semieng_voltage-regulation-in-package]
 related:
   - wiki/technologies/rdl.md
@@ -395,3 +395,33 @@ Amkor 的 **Vineet Pancholi** 提供本 wiki 目前唯一的中介層測試覆�
 ### 相關來源
 
 - [[sources/2026-10-08_semieng_voltage-regulation-in-package]]
+
+---
+
+## [2026-10-10] ⭐⭐⭐ 首件結構層排他權入庫：被動元件距模組 ≤100 µm、距底填料圓角 ≤50 µm
+
+**US20260314484A1**（公開 **2026-10-08**，family 101501054；發明人六名全為韓國）請求項：
+
+- **被動元件距模組 ≤100 µm**；**距底填料圓角（fillet）≤50 µm**；
+- 模組兩側各一顆被動元件，**皆被底填料覆蓋**；
+- 模組之**模封側壁朝向該被動元件**。
+
+➜ ⭐⭐⭐ **既載本頁內容全為產能、投資與外包關係**（Arizona $12B、93K sqm、Intel EMIB 外包夥伴、CEO McCann 預判兩相冷卻），**無任何結構層排他權內容** ⇒ 本件為首例。
+➜ ⭐⭐⭐ **兩個數字寫在請求項內**，打斷既載「專利軌訊號以定性為主」連續九輪的紀錄（⚠ 本輪五件中僅此一件有數字，**模式被打斷但未被推翻**）。
+➜ ⭐⭐⭐ **真正的限制項是底填料圓角，不是電感** ⇒ 既載論述「真正的瓶頸在被視為輔助步驟的那一步」取得**第五例，首次出現在底填料**（詳見 `concepts/power-delivery-packaging` 2026-10-10 節）。
+➜ ⚠ 請求項只寫 **passive device**，未指明為去耦電容；請求項數字為**排他權邊界**，通常比實作值寬鬆。
+
+### 📌 檢索慣例（本輪新得）
+
+本輪 OPS 以 `pa="amkor" and pd within "2026"` 命中 **94 件**，但標題幾乎全為通用語（"ELECTRONIC DEVICES AND METHODS OF MANUFACTURING ELECTRONIC DEVICES"）⇒ ⭐⭐ **Amkor 的檢索必須靠摘要而非標題**；既載「專利軌輪替至 Amkor」（2026-09-17 列管）**本輪結清**。
+
+### ⚠ 時程不一致（並列記錄，不覆寫）
+
+| 來源 | 敘述 |
+|------|------|
+| 既載本頁 | Arizona **Phase 2 升至 $12B；93K sqm 潔淨室；2029 完工** |
+| Tom's Hardware（2026-10-08） | **Peoria 廠預定 2028 年初投產** |
+
+➜ **兩者物件可能不同**（投產 vs 全期完工）⇒ **本 wiki 不合併、不覆寫**，列為待釐清。
+
+**本輪新增來源**：[[sources/2026-10-10_amkor-passive-placement-quantified-claim]]、[[sources/2026-10-10_globalfoundries-tsmc-2b-interposer-deal]]

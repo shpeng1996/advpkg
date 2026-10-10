@@ -831,3 +831,18 @@
 2026-10-09 | https://doi.org/10.3390/mi17060720 | raw/papers/2026-10-09_openalex_keti-tgv-process-integration-reliability-review.md | KETI: TGV defect spectrum + plugging review
 2026-10-09 | https://doi.org/10.5573/ieie.2026.63.8.40 | raw/papers/2026-10-09_openalex_ieie-probe-card-mlc-16branch-signal-integrity-doe.md | IEIE: probe card MLC 16-branch SI, DOE+ANOVA
 2026-10-09 | https://doi.org/10.1016/j.engfracmech.2026.112662 | raw/papers/2026-10-09_openalex_bjut-thermomech-phase-field-imc-tgv-fracture.md | BJUT: thermo-mech phase-field IMC+TGV fracture
+2026-10-10 | https://www.tomshardware.com/tech-industry/semiconductors/globalfoundries-to-produce-silicon-interposers-for-tsmcs-cowos-in-the-us-five-year-agreement-valued-at-usd2-billion | raw/articles/2026-10-10_tomshardware_globalfoundries-tsmc-2b-cowos-s-interposer-malta.md | GF x TSMC $2B CoWoS-S interposer, Malta NY, 1H28
+2026-10-10 | https://semiengineering.com/chip-industry-week-in-review-159/ | raw/articles/2026-10-10_semieng_chip-week-159-samsung-vietnam-test-keysight-subthz.md | SemiEng #159: Samsung $3.9B VN test, Keysight sub-THz
+2026-10-10 | https://thenextweb.com/news/besi-asml-hybrid-bonding-dutch | raw/articles/2026-10-10_thenextweb_asml-hybrid-bonding-threat-besi-bofa-bernstein-75pct.md | ASML threat to Besi: Bernstein 75% 2028, >150 orders
+2026-10-10 | https://www.mouser.com/es/new/infineon/infineon-tdm2454-quad-phase-power-modules | raw/articles/2026-10-10_mouser_infineon-tdm2454-peak-vs-tdc-280a-2a-mm2.md | Infineon TDM2454: 280A PEAK vs 2.0 A/mm2 TDC
+2026-10-10 | https://www.formfactor.com/blog/2026/from-commodity-to-enabler-wafer-test-at-the-heart-of-the-ai-era/ | raw/articles/2026-10-10_formfactor_wafer-test-100k-pins-zero-force-sub15um.md | FormFactor: ~100k pins HBM, zero-force sub-15um vision
+2026-10-10 | https://www.electronicspecifier.com/news/advantest-invests-in-technoprobe-and-formfactor/ | raw/articles/2026-10-10_electronicspecifier_advantest-stakes-technoprobe-formfactor.md | Advantest 2.5% Technoprobe + minority FormFactor
+2026-10-10 | EPO:98570156:US20260219310A1 | raw/patents/2026-10-10_US20260219310A1_advantest-contactless-rf-interposer-bridge-test.md | Advantest: contactless RF test of interposer/bridge
+2026-10-10 | EPO:100839076:US20260243821A1 | raw/patents/2026-10-10_US20260243821A1_advantest-parallel-contactless-moving-probes.md | Advantest: parallel contactless, probes move while driving
+2026-10-10 | EPO:95397257:WO2026162211A1 | raw/patents/2026-10-10_WO2026162211A1_technoprobe-microfluidic-cooled-probe-card.md | Technoprobe: microfluidic-cooled probe card, PT2
+2026-10-10 | EPO:100768589:US20260235663A1 | raw/patents/2026-10-10_US20260235663A1_advantest-ml-thermal-prediction-test.md | Advantest: thermal prediction+regulation in test, G06N20
+2026-10-10 | EPO:101501054:US20260314484A1 | raw/patents/2026-10-10_US20260314484A1_amkor-passive-100um-underfill-fillet-50um.md | Amkor: passive <=100um from module, <=50um from fillet
+2026-10-10 | https://doi.org/10.3390/chips5030018 | raw/papers/2026-10-10_openalex_venuti-technoprobe-probe-card-multiphysics-review.md | Venuti/Technoprobe: probe card as multiphysics system
+2026-10-10 | https://doi.org/10.1016/j.matdes.2026.117198 | raw/papers/2026-10-10_openalex_skku-cu-msa-unidirectional-tgv-filling-2p3x.md | SKKU: Cu-MSA unidirectional TGV fill, 2.30x productivity
+2026-10-10 | https://doi.org/10.3390/ma19194205 | raw/papers/2026-10-10_openalex_sustech-intelligent-cmp-ml-multiscale-review.md | SUSTech: intelligent CMP, angstrom-level, virtual metrology
+2026-10-10 | https://doi.org/10.1002/smtd.71031 | raw/papers/2026-10-10_openalex_chemnitz-slid-bonding-flexible-10um-pillar.md | Chemnitz: patterned SLID, 10um pillar on 5um PI

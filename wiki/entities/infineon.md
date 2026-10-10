@@ -3,7 +3,7 @@ title: "Infineon Technologies — 英飛凌"
 category: entity
 tags: [Infineon, power-delivery-packaging, PDN, vertical-power-delivery, BVM, current-density, 48V, rack-power]
 created: 2026-09-30
-updated: 2026-10-09
+updated: 2026-10-10
 sources: [2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-10-02_jmmm_tyndall-fecob-n-pwrsoc-magnetics, 2026-10-08_ferric-fe1766-current-density-denominator, 2026-10-08_semieng_voltage-regulation-in-package, 2026-10-09_infineon-tdm2354-dual-phase-denominator, 2026-10-09_infineon-tdm2454-quad-phase-denominator]
 related:
   - wiki/concepts/power-delivery-packaging.md
@@ -254,3 +254,28 @@ JMMM（2026-09-02）柱狀 FeCoB-N 薄膜，目標 **>100 MHz 整合式 PwrSoC**
 - [ ] ⭐⭐ **「封裝內嵌電容層」之電容值、密度、ESL/ESR。**
 
 *Source: [[sources/2026-10-09_infineon-tdm2354-dual-phase-denominator]]、[[sources/2026-10-09_infineon-tdm2454-quad-phase-denominator]]*
+
+---
+
+## [2026-10-10] ⚠⚠⚠ 2026-10-09 之「1.56 倍隱含面積」被推翻：那是峰值／連續電流比，不是面積比
+
+**Mouser 之 TDM2454xx 產品頁**同時標示 **「280 A peak power density」**（標 **peak**）與 **「>2.0 A/mm² TDC (thermally managed)」**（標 **TDC／熱管理後連續值**）。
+
+| 產品 | 電流（標註） | 佔地 | 自述 A/mm²（標註） | 回推之連續電流 | 峰值／連續 |
+|------|-------------|------|-------------------|---------------|-----------|
+| **TDM2454xx**（四相） | **280 A（peak）** | 10×9 = **90 mm²** | **>2.0（TDC）** | **180 A** | **1.556** |
+| **TDM2354xT**（雙相） | **160 A** | 8×8 = **64 mm²** | **1.6** | **102.4 A** | **1.5625** |
+
+➜ ⚠⚠⚠ **2026-10-09 之結論（「Infineon 使用一個系統性、跨世代一致、約為模組佔地 1.56 倍的面積口徑」）不成立。** 該 1.56 倍**可完整由峰值 vs TDC 解釋，無須假設第二種面積** ⇒ **分母很可能就是模組佔地，落差在分子。**
+➜ **空缺「1.56 倍隱含面積對應何種實體面積」關閉** —— 不是因為找到了那個面積，而是因為**該面積很可能不存在**。既載 2026-10-09 之表格不刪除，改標為「已被 2026-10-10 修正」。
+➜ ⭐⭐⭐ **據此於 `concepts/power-delivery-packaging` 新增作業規範（37）：引用 A/mm² 時除分母類別外，必須標明分子為峰值或 TDC。**
+
+### 其他本輪確認之產品層事實
+
+- **TDM2454xx 封裝 10 × 9 × 5 mm**；自述 footprint「**designed for tiling arrays of modules**」⇒ 既載「併聯」論述取得**第四家廠商的併聯意圖陳述**（⚠ 仍未提代價）。
+- **自述含「整合內嵌電容（integrated embedded capacitors）」** ⇒ 既載空缺「Infineon 封裝內嵌電容層之電容值／密度／ESL/ESR」**確認該特徵存在於產品層，四個數字仍全部空白。**
+- ⚠ 切換頻率／效率／輸入輸出電壓**仍全部空白**（既載空缺「TDM2454xx 之效率與開關頻率」**本輪未前進**）。
+- ⚠ **TDM2354xT 世代之基準分離為類推**：該世代兩篇新聞稿（Power Electronics News 2024-10-09、engineersgarage）**皆未標 peak 或 TDC**。
+- ⚠ **「280 A peak power density」把電流值配上「power density」名稱** ⇒ 該頁文案精度有限；**結案仍須 datasheet**，惟追蹤目標改為「**確認 TDC 的定義條件**」。
+
+**本輪新增來源**：[[sources/2026-10-10_infineon-peak-vs-tdc-overturns-156x-area]]

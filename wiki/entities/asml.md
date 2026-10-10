@@ -3,7 +3,7 @@ title: "ASML"
 category: entity
 tags: [equipment, lithography, EUV, hybrid-bonding, DUV, RDL, advanced-packaging, W2W, maglev]
 created: 2026-05-03
-updated: 2026-09-23
+updated: 2026-10-10
 sources: [2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2026-01-23_trendforce_chip-tools-tel-asml, 2026-04-23_trendforce_tsmc-roadmap-a12-a13-no-high-na-euv, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers]
 related:
   - wiki/technologies/hybrid-bonding.md
@@ -165,3 +165,25 @@ ASML 在 ECTC 2026 發表具體 D2W 混合接合製程解決方案（Paper 31.2�
 ### 既有記載
 - XT:260 3D DUV 已出貨（RDL 用）
 - 2026-03（TrendForce）：評估混合接合設備市場進入 —— **本輪取得更具體的依據與市場分項。**
+
+---
+
+## [2026-10-10] ⚠⚠ 混合接合進入狀態本輪未前進，但該不確定性首次被第三方定價
+
+- **ASML 公開表態仍止於評估**：CEO **Christophe Fouquet（2026-04）**稱 ASML「持續評估如何支援客戶的混合接合」；ASML **去年已出貨首個先進封裝產品**。
+- **BofA 降 Besi 至 neutral、目標價近乎腰斬**，理由為 ASML 的威脅「未反映在股價」；⚠ **分析師並未假設 ASML 取得顯著市占。**
+- ⚠ **無任何時程**；⚠ **未說明 W2W 或 D2W。**
+
+➜ ⚠⚠⚠ **本頁所依據之 ASML 混合接合來源，連續四筆皆為第三方推測，零一手確認：**
+
+| # | 日期 | 來源 | 內容 |
+|---|------|------|------|
+| 1 | 2026-01-23 | TrendForce | 設備巨頭加速進入先進封裝（TEL／ASML／AMAT） |
+| 2 | 2026-03-23 | TrendForce | ASML「據報」評估混合接合設備；Prodrive／VDL-ETG 夥伴 |
+| 3 | 2026-04-28 | TheElec | ASML「可能」做 W2W 機；D2W 僅佔 $6B 市場之 **4.5%** |
+| **4** | **2026-10-06** | **The Next Web（BofA）** | **威脅未反映在股價；無時程、無機型** |
+
+➜ 📌 **引用慣例：本頁不得作為「ASML 已進入混合接合」之依據。** 改變的是**第三方對該不確定性的定價**，不是 ASML 的進度。
+➜ **新增空缺**：⭐⭐⭐ ASML 進入混合接合的任何**一手**確認與時程；以及 **W2W 或 D2W**。
+
+**本輪新增來源**：[[sources/2026-10-10_asml-besi-hybrid-bonder-share-numbers]]

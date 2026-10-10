@@ -3,7 +3,7 @@ title: "CoWoS — Chip-on-Wafer-on-Substrate"
 category: technology
 tags: [2.5D, interposer, TSMC, AI, HPC, HBM, COUPE, CPO, packaging-constraints, NVIDIA]
 created: 2026-04-24
-updated: 2026-10-09
+updated: 2026-10-10
 sources: [2026-08-13_semieng_1mw-rack-debate-thermal, 2026-08-05_trendforce_tsmc-cowos-cow-outsourcing-osat, 2026-05-24_techtimes_nvidia-computex2026-cowos, 2026-04-24_initial-survey, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-15_trendforce_tsmc-vanguard-stake-sale, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-09_financialcontent_tsmc-130k-cowos-wafers, 2026-06-09_digitimes_tsmc-cowos-soic-capacity-symposium, 2026-06-15_trendforce_tsmc-cowos-gap-narrowing-130k-200k-wafers, 2026-06-10_tomshardware_tsmc-fab-expansion-roadmap-n2-cowos-soic, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_tmtpost_tsmc-cowos-capacity-targets-2026-2027, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-09-30_intel_us-advanced-packaging-reticle-8x-12x-fab9, 2026-10-02_trendforce_cowos-l-mainstream-through-2028, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_amd-us20260282956a1-silicon-bridge-decap, 2026-10-06_epo_micron-interposer-embedded-active-buffers, 2026-10-06_epo_tenstorrent-discrete-pitch-adapter-substrates, 2026-10-06_openalex_gatech-terahertz-nde-8layer-interposer, 2026-10-07_epo_cas-freestanding-3c-sic-interposer, 2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk, 2026-10-07_openalex_amkor-kelly-three-interposer-routes, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-09_semiwiki-tsmc-oip-2026-verification]
 related:
   - wiki/entities/tsmc.md
@@ -787,3 +787,55 @@ SemiAnalysis ECTC 2026（2026-07-02）：
 ➜ 既載空缺「**CoWoS「5.5× 良率 99%」的量測邊界**」（2026-09-17 列管）**本件未結清** —— 本件僅稱「in production」，未提良率或篩檢範圍。
 
 *Source: [[sources/2026-10-09_semiwiki-tsmc-oip-2026-verification]]*
+
+---
+
+## [2026-10-10] ⭐⭐⭐ 中介層「是誰做的」首次有第二個答案：GlobalFoundries 以 US$2B／五年代工 CoWoS-S 矽中介層
+
+**來源**：Tom's Hardware（Anton Shilov, 2026-10-08）＋ SemiEng #159（2026-10-09，交叉佐證）。
+
+| 項目 | 內容 |
+|------|------|
+| 合約 | **US$2B／五年**，含後續加產能機制 |
+| 廠址 | **GlobalFoundries, Malta, New York**（將增設產能） |
+| 對象 | ⭐ **CoWoS-S**（明示；**CoWoS-L 未納入**） |
+| 量產爬坡 | **2028 H1** |
+| GF 角色 | **manufacturing service（受託代工）**，非 TSMC 之供應商；生產**多個終端客戶各自的中介層設計** |
+| 產能／片數／晶圓尺寸 | ⚠ **全部未揭露** |
+
+### ⭐⭐⭐ 一、本 wiki 首見 TSMC 把 CoWoS 的關鍵結構件製造交給另一家晶圓代工廠
+
+既載 CoWoS 供應鏈外擴**皆在 OSAT 側**（Amkor 承接 EMIB、ASE/SPIL 承接面板、Powertech PiFO、Silicon Box 面板），**中介層本體一直被視為 TSMC 自製**。
+➜ 依規範（35）已 grep `entities/globalfoundries.md`：內容為**矽光子／CPO 與 CHIPS Act 補助**，**無任何中介層代工記錄** ⇒ 本判定成立。
+➜ ⇒ **CoWoS 的垂直整合敘述須改寫**：**CoWoS-S 的中介層自 2028 H1 起有第二個製造點，且該製造點屬競爭對手。**
+
+### ⭐⭐ 二、光罩縫合首次成為一個「供應商能力問題」
+
+既載 reticle 倍數路線圖（**5.5× 已量產 → 9× → 12× → 40×**；**>14 光罩**）全部以 TSMC／ASE 的能力表述。
+**報導明確提出：大面積中介層需光罩縫合（reticle stitching），GF 能否處理未知；GF 能否延伸至 CoWoS-L 亦未知。**
+➜ ⭐⭐ **候選論述：reticle 倍數不是一個技術規格，而是一個與特定廠商綁定的能力。** ⚠ 單一來源且為**記者提問而非廠商表態**，不升格。
+
+### ⭐⭐ 三、美國境內鏈的缺口被精確定位在 HBM
+
+邏輯（Arizona）＋**中介層（New York）**＋封裝（Arizona，TSMC 和／或 Amkor；**Amkor Peoria 預定 2028 年初投產**）可在境內閉合，**唯 HBM 仍須自亞洲供應**，直到 Micron（Virginia HBM 封裝廠）與 SK hynix（Indiana，HBM4E 量產 3Q29）落成。
+➜ **本件把三份既載產能資料接成一條可檢驗的時間線。**
+➜ ⚠ **中介層產出 ≠ 成品處理器**：仍受 chip-on-wafer 組裝與測試產能限制；**TSMC 與 Amkor 之 CoWoS 組裝分工未揭露**（報導自提）。
+
+### ⭐⭐⭐ 四、連帶：中介層的電性篩檢能力同輪出現供應側證據
+
+既載空缺「**CoWoS『5.5× 良率 99%』是否涵蓋中介層的完整電性篩檢**」—— 同輪 **Advantest US20260219310A1／US20260243821A1** 之 DUT 恰為「**interposers and silicon bridges**」。
+➜ **若中介層自 2028 起由第二家廠製造，則「交付時如何證明它是良品」從一個內部製程問題變成一個跨公司的驗收問題。**
+➜ ⚠⚠ **兩件事本輪為並置，無任何來源把它們連起來** ⇒ **本連結為本 wiki 之讀法，須標為推論。**
+
+### 2026-10-10 新增空缺
+
+- [ ] ⭐⭐⭐ **GF 是否具備光罩縫合能力，以及其中介層的最大倍數。**
+- [ ] ⭐⭐⭐ **跨公司交付中介層的驗收規格為何**（與 KGD／KGI 標準化空缺合併追蹤）。
+- [ ] ⭐⭐ **GF 之中介層產能、片數與晶圓尺寸**（全部未揭露，不得反推）。
+- [ ] ⭐⭐ **CoWoS-L 是否也會外包**（本件僅 CoWoS-S）。
+- [ ] ⭐ **IP 歸屬方式**（報導明言不清）。
+
+### 本輪新增來源
+
+- [[sources/2026-10-10_globalfoundries-tsmc-2b-interposer-deal]]
+- [[sources/2026-10-10_semieng-week159-test-capex-keysight-subthz]]

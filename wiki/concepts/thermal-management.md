@@ -3,7 +3,7 @@ title: "先進封裝熱管理 / Thermal Management in Advanced Packaging"
 category: concept
 tags: [thermal-management, liquid-cooling, 3D-IC, CoWoS, heat-dissipation, TIM, ECTC-2025, GaN, power-delivery, co-design, patent-signal, delamination]
 created: 2026-04-25
-updated: 2026-10-09
+updated: 2026-10-10
 sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2025-12-01_semiengineering_thermal-management, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-02_trendforce_samsung-hbm5-computex2026, 2026-05-21_semieng_hi-roadmap-nature-paper-intel, 2026-08-13_semieng_1mw-rack-debate-thermal, 2026-04-27_semieng_semiconductor-materials-misbehave, 2026-08-21_trendforce_chip-packaging-heat-ai-bottleneck-cpo-stco, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_arxiv_umn-multi-kw-power-delivery-3d-hi, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_samsung-cn122602880a-ivr-capacitor-interposer-core, 2026-10-02_imaps-dpc2026_delo-die-side-capacitor-encapsulation, 2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage, 2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk, 2026-10-07_epo_cas-freestanding-3c-sic-interposer, 2026-10-07_openalex_diamond-d2w-direct-bonding-vdw-45mpa, 2026-10-07_openalex_lau-silicon-bridge-microbump-reliability, 2026-10-08_etron-liquid-through-substrate-cavity, 2026-10-08_micron-cryogenic-package-hea-solder, 2026-10-08_advantest-singulated-die-test-thermal, 2026-10-09_cas-2013-microchannel-interposer-ebg, 2026-10-09_bjut-thermomech-phase-field-imc-tgv]
 related:
   - wiki/technologies/cowos.md
@@ -1215,3 +1215,49 @@ SNU × UIUC 的 TIM 綜述明確指出：**TIM 的 bulk／effective 導熱係數
 
 - [[sources/2026-10-09_cas-2013-microchannel-interposer-ebg]]（⭐⭐⭐ 流道兼電性結構；⚠ 2013）
 - [[sources/2026-10-09_bjut-thermomech-phase-field-imc-tgv]]（⭐⭐ 裂紋屏障效應）
+
+---
+
+## [2026-10-10] ⭐⭐ 微流道的第四個落點在量測硬體裡；測試熱須拆成 DUT 熱與儀器熱
+
+### ⭐⭐⭐ 一、「載體正在從被鑽孔的板變成被佈管的體」第四例，且首次不在產品封裝裡
+
+| # | 來源 | 載體 | 流體 | 用途 |
+|---|------|------|------|------|
+| 1 | **CAS CN103199086A**（⚠ **2013-07-10**） | 矽基中介層 | 液 | 散熱 ＋ **側壁 EBG（同時為電性結構）** |
+| 2 | **Etron TW202522705A** | 基板腔體（與上方冷板腔體連通） | 液 | 散熱 |
+| 3 | **上海大學**（免 RDL 玻璃中介層） | 基材淺溝槽 | 銀奈米粒子高分子 | **導電**（取代水平 RDL） |
+| **4** | **Technoprobe WO2026162211A1**（2026-08-06） | ⭐ **探針卡之空間轉換器 ＋ manifold** | 冷卻流體 | 散熱（**散的是探針卡自身主動元件的熱**） |
+
+➜ 依**作業規範（36）**：**微流道構想本身非業界首見（2013 即有）** ⇒ 本件之新處在**位置**而非構想，與既載 2026-10-09 之改寫（「變化在採用端，不在構想端」）一致。
+➜ ⚠ 本件之流體為**純散熱用途**，不具 CAS 件「流道同時是電性結構」之性質 ⇒ **不得用以強化該讀法。**
+➜ ⭐⭐ **既載「犧牲／功能化結構的尺度正在放大」序列再加一節**：腔體（Apple）→ 孔（Microchip）→ 整個基材本體（CAS）→ 基板腔體作為流道（Etron）→ **測試儀器的空間轉換器（Technoprobe）**。
+
+### ⭐⭐⭐ 二、測試熱預算須拆成兩項
+
+既載測試熱只有一個落點：**Advantest 100 W/cm² 四站式主動熱介面**（2026-10-08），其熱源為 **DUT**。
+
+**Technoprobe WO2026162211A1** 之請求項為**探針卡自身的發熱命名為 PT2**（暗示另有 PT1 ＝ DUT 之熱），並為其配微流道。
+
+➜ ⭐⭐⭐ **既載「熱應拆成運作熱與製程熱兩條線」於測試域再分一次：DUT 熱 vs 儀器熱。**
+➜ **成因**：既載 2026-10-09 之 TSMC US20260309748A1 與本輪 Technoprobe 件同向把**主動元件推到最靠晶圓的那一面**（縮短元件與訊號的距離）⇒ **距離縮短的代價是熱源進入探針卡。**
+➜ ⚠⚠ **零量化值**（無流量、無熱阻、無 PT2 瓦數、無溫升）⇒ **無法判斷這是邊際改善還是一個新的限制項。**
+
+### ⭐⭐ 三、熱的控制自「散除」擴為「預測並調控」
+
+**Advantest US20260235663A1**（2026-08-13）：依感測器資料預測晶粒內「**關注區域**」溫度，回頭改**測試控制參數**；分類含 **G06N20/00（機器學習）**。
+
+➜ 既載熱數字皆為**能力值**（散多少、多少 W/cm²、多少 µΩ）；本件是**控制律**。
+➜ ⭐ **「關注區域」顯示熱調控的空間粒度已降到晶粒內部** ⇒ 與既載浙大 8 模組 FIVR 之「模組間溫差 <10.5 °C」同屬局部化趨勢，但一在供電、一在測試。
+➜ ⚠⚠ **獨立性**：Advantest 持有 Technoprobe **2.5%** 並為策略夥伴 ⇒ 本節兩件為「**兩個法人**」而非兩個獨立陣營。
+
+### 2026-10-10 新增空缺
+
+- [ ] ⭐⭐⭐ **PT2 的量級** —— 若無量級，「測試熱須拆兩項」只能是定性敘述。
+- [ ] ⭐⭐ **探針卡微流道之流量、流道尺寸、熱阻與溫升**（全部空白）。
+- [ ] ⭐⭐ **「載體通道化」整條線至今零量化值**（既載，本輪第四例仍無值 ⇒ **連續四例無值**）。
+
+### 本輪新增來源
+
+- [[sources/2026-10-10_technoprobe-microfluidic-probe-card]]
+- [[sources/2026-10-10_advantest-ml-thermal-prediction-in-test]]
