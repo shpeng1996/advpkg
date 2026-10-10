@@ -4739,3 +4739,9 @@ warning: unable to unlink '.../.git/index.lock': Operation not permitted
   1. ⚠⚠⚠ **`origin` remote URL 內嵌明文 GitHub personal access token 之問題本輪複查，仍然存在、未變更。** `git remote get-url origin` 之形式為 `https://<token>@github.com/shpeng1996/advpkg.git`（本流程僅以 `sed` 遮罩後檢視，**未曾輸出該 token**）。➜ **建議維持最高優先且仍待人工處置**：①在 GitHub 撤銷並重新產生該 token；②改用 credential helper（Windows：`git config --global credential.helper manager`）或 SSH key；③`git remote set-url origin https://github.com/shpeng1996/advpkg.git`。**本流程不代為變更憑證設定。**（既載自 2026-10-07 起列管，本輪為**首次完成複查**——前兩輪因 `device_bash` 不可用而未能複查。）
   2. ⭐ **git 鎖檔與 `tmp_obj_*` 本輪開場即近乎乾淨**：`.git/` 下 `stale-*.lock-*` 形式之殘留 **7 個**（2026-10-09 收場為 6）、`tmp_obj_*` **1 個**（2026-10-09 收場為 **419**）⇒ ⭐⭐ **研判其間已有人工 `git gc --prune=now` 執行** ⇒ 既載待辦「Windows 側 `git gc`」**本輪確認已被處理**，但依 2026-10-08 之結論，**開場為低值不證明問題解決**，維持每輪記錄開場與收場兩個值。
   3. ⚠ **`OPENALEX_KEY` 仍為空**（連續第十一輪）；`.env` 內現有變數僅 `OPS_KEY`／`OPS_SECRET`／`OPENALEX_MAILTO`，**無任何變數為空值**。本輪未因此受阻。
+- ✅ **git commit：本輪已執行。**
+  - **本輪提交：`d7506b6`「2026-10-10」**；`git status --porcelain` 事後為 **0 行（乾淨）**；異動檔數 **50**（15 raw ＋ 17 新 wiki 頁〔15 來源含 1 合併轉向 ＋ 2 實體〕＋ 15 更新 wiki 頁 ＋ `raw/_collected_urls.txt` 之 15 行追加 ＋ `wiki/log.md` 本身）。
+  - ⚠ **尚未 push**：`git status -sb` 為 `## main...origin/main [ahead 1]`。**本流程不執行 push**（spec §QUALITY RULES 僅要求 stage 與 commit），待 `daily_git_push.bat` 或人工推送。
+  - ⚠ **git 鎖檔**：本輪 commit 再度留下 `.git/HEAD.lock`（連接資料夾不允許刪除），依既有慣例改名為 `.git/stale-HEAD.lock-20261010`。`.git/` 下 **`stale-*.lock-*` 形式之殘留收場為 8**（開場 7，本輪 +1）；`.git/` 根目錄下含 "lock" 字樣之檔案共 **40**（多為歷輪不同命名慣例之殘留，建議人工一次清理）。
+  - ⚠⚠ **`tmp_obj_*`：開場 1 → 收場 484。** ⇒ **本輪淨增 483**，與 2026-10-09 之收場值 419 同量級 ⇒ ⭐⭐ **確認「每輪 `git add -A` 產生數百個 `tmp_obj_*`」是穩定可重現的現象，而非偶發**；其根因為連接資料夾不允許 `unlink`，git 無法清除自己的暫存物件。➜ **既載待辦「Windows 側 `git gc --prune=now`」維持，且本輪首次取得完整的開場／收場對照以量化其增量。**
+  - ✅ **git 於本輪結束時仍可正常運作**（`git status -sb`、`git log` 皆正常），鎖檔改名未造成損壞。
