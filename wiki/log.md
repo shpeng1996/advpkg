@@ -4793,3 +4793,15 @@ warning: unable to unlink '.../.git/index.lock': Operation not permitted
   1. ⭐ **`device_bash` 全程可用**；OPS 與 OpenAlex 皆自該環境成功呼叫，**全部讀寫均以 spec 所設計之 bash heredoc 路徑完成，未使用 `device_stage_files`／`device_commit_files` 繞道** ⇒ **作業規範（29）本輪不適用。**
   2. ⚠ **`OPENALEX_KEY` 仍為空（連續第十二輪未處置）**，但本輪**未造成實質代價**（`device_bash` 出口 IP 額度充足，六組查詢零 429）⇒ 規範（30）維持「必要但未緊迫」。`.env` 內現有變數僅 `OPS_KEY`／`OPS_SECRET`／`OPENALEX_MAILTO`，**無任何變數為空值**。
   3. ⚠⚠⚠ **`origin` remote URL 內嵌明文 GitHub personal access token 之問題本輪複查，仍然存在、未變更。** 形式為 `https://<token>@github.com/shpeng1996/advpkg.git`（本流程僅以 `sed` 遮罩後檢視，**未曾輸出該 token**）。➜ **建議維持最高優先且仍待人工處置**：①在 GitHub 撤銷並重新產生該 token；②改用 credential helper（Windows：`git config --global credential.helper manager`）或 SSH key；③`git remote set-url origin https://github.com/shpeng1996/advpkg.git`。**本流程不代為變更憑證設定。**（既載自 2026-10-07 起列管。）
+- ✅ **git commit：本輪已執行。**
+  - **本輪提交：`38bbf4e`「2026-10-11」，59 個檔案**（15 raw ＋ 15 新 wiki 來源頁 ＋ 25 更新 wiki 頁〔含 `index.md`／`overview.md`／`log.md`〕＋ `raw/_collected_urls.txt` 的 15 行追加）；`git status --porcelain` 事後為 **0 行（乾淨）**。
+  - ⚠ **尚未 push**：`git status -sb` 為 `## main...origin/main [ahead 1]`。**本流程不執行 push**（spec §QUALITY RULES 僅要求 stage 與 commit），待 `daily_git_push.bat` 或人工推送。
+  - ⚠ **git 鎖檔**：本輪 commit 留下 `.git/HEAD.lock`（連接資料夾不允許刪除），依既有慣例改名為 `.git/stale-HEAD.lock-20261011`。`.git/` 下 **`stale-*.lock-*` 形式之殘留收場為 10**（2026-10-10 收場為 8）；`.git/` 根目錄下含 "lock" 字樣之檔案 **42**（開場 41）。
+  - ✅ **git 於本輪結束時仍可正常運作**（`git status -sb`、`git log` 皆正常），鎖檔改名未造成損壞。
+- ⚠⚠⚠ **更正（同輪）：本輪「作業面發現 6」與 `index.md` 所記之「`tmp_obj_*` 開場為 0」是錯的 —— 那是一個量測方法錯誤，不是一個事實。**
+  - 開場所用之命令為 `ls .git/objects | grep -c tmp_obj`，**只列 `.git/objects/` 的第一層（即 2 字元雜湊目錄名），不會進入子目錄**，而 `tmp_obj_*` 全部位於 `.git/objects/<xx>/` 之下 ⇒ **該命令必然回 0，與實際殘留量無關。**
+  - 以 `find .git/objects -name 'tmp_obj_*' | wc -l` 量得**收場為 558**（2026-10-10 收場為 484，開場 1）。
+  - ➜ ⚠ **因此本輪無法給出可信的開場值，也無法計算本輪淨增量**；收場 558 與既載 419／484 同量級，**支持「每輪 `git add -A` 產生數百個 `tmp_obj_*`」為穩定現象**，但本輪不構成新證據。
+  - ➜ 📌 **新增作業規範（45）：`tmp_obj_*` 與 `.git` 殘留之計數必須以 `find` 遞迴，不得以 `ls | grep` 計 —— 且凡報出一個「開場 vs 收場」對照時，兩個值必須以同一個命令取得。** 既載 2026-10-08 所立之「應記開場與收場兩個值」規範在此補上其量測方法。
+  - ➜ ⚠ 這是 **2026-10-05（規範 31）、10-08（兩度誤判「本 wiki 首見」）、10-10（撤回 1.56 倍）之後，本 wiki 第四次同輪自我更正**；⚠ **但前三次錯在推論，本次錯在量測命令** —— 📌 **故規範（35）（36）（事前檢索、檢索最早日期）皆無法攔下此類錯誤；能攔下的只有「對自己的量測命令做一次反向驗證」。**
+  - ⚠ **既載待辦「Windows 側 `git gc --prune=now`」維持**（收場 558 需清理）。
