@@ -3,7 +3,7 @@ title: "基板與材料供應鏈 / Substrate & Materials Supply Chain（ABF・T-
 category: concept
 tags: [ABF, Ajinomoto, substrate, supply-chain, Ibiden, Unimicron, Shinko, SEMCO, Kinsus, Nan-Ya-PCB, glass-core, warpage, bottleneck]
 created: 2026-10-03
-updated: 2026-10-07
+updated: 2026-10-11
 sources: [2026-10-03_tomshardware_abf-substrate-state-2026, 2026-10-03_thelec_philoptics-tgv-2mm-glass, 2026-10-03_digitaltoday_jntc-tgv-thickness-lineup, 2026-10-03_epo_semco-coreless-interposer-organic-bridge, 2026-10-06_xenospectrum_ajinomoto-abf-cut-unconfirmed-layers-per-side, 2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage, 2026-10-07_atlaspcb_abf-price-30pct-third-distinct-30-figure, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch]
 related: [technologies/glass-substrate.md, concepts/advanced-packaging-market.md, concepts/geopolitics-advanced-packaging.md, entities/ibiden.md, entities/shinko.md, entities/semco.md, entities/absolics.md, entities/agc.md]
 ---
@@ -306,3 +306,32 @@ AI 加速器封裝之下的**載板層**供應鏈，由三層構成：
 ### 相關來源
 
 [[sources/2026-10-07_atlaspcb_abf-price-30pct-third-distinct-30-figure]]、[[sources/2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch]]
+
+---
+
+## 2026-10-11 更新：PFAS 覆蓋面擴至三個製程群；以及供應短缺驅動封裝架構變更的第一個設計側案例
+
+### 1. ⭐⭐⭐ PFAS：第三個單元製程群，且其中一個是既載瓶頸步驟
+
+既載兩例：**Fujifilm 無 PFAS PBO**（介電質）、**IBM 非 Bosch 深矽蝕刻**（蝕刻）。本輪（Brewer Science 經 SemiEngineering，2025-03-20）新增三個落點：
+
+| 製程群 | PFAS 依賴 | 無 PFAS 替代（供應商自述） |
+|--------|-----------|---------------------------|
+| **微影／抗反射** | **PAG／TAG 往往含 PFAS** | i-Line／KrF／ArF／**EUV** BARC 與底層、hardmask／spin-on-carbon、EUV 超薄底層 |
+| **清洗與蝕刻** | PFAS 系界面活性劑與清洗劑 | **ProTEK** 保護塗層（濕蝕刻用） |
+| **暫時接合／解接合** ⭐ | — | **BrewerBOND（含 VersaLayer，高溫高應力）**，支援**化學／機械／雷射／光子四種解接合** |
+| 其他依賴（無替代敘述） | 電漿 PFCs 與含氟氣體、設備冷卻劑與潤滑劑、機台／管路塗層、高壓防電弧 | — |
+
+**法規與數值**：美 EPA 飲用水 MCL **4 ppt**（PFOA／PFOS）；長鏈定義 **≥8 個全氟化碳**（PFOS 為 6）；EU **Annex XVII** 提案針對 **C9–C14 PFCAs、PFHxS、PFHxA**（**無日期**）；供應商自訂 **2028** 全面移除。
+⚠⚠ **4 ppt 是排放端門檻，不是製程材料驗收值**；**2028 為單一供應商自訂目標，非法規期限** ⇒ **不得推出任何「法規生效年」。**
+⚠ 贊助專欄；⚠ **底填料／TIM／介電質之 PFAS 敘述全無** ⇒ 空缺不結清，但**提問方式改寫**為「哪些封裝步驟的材料已有無 PFAS 版本、哪些還沒有」。
+
+### 2. ⭐⭐⭐ H-Cube：供應短缺驅動封裝架構變更的第一個「設計側」案例
+
+Samsung 官方（Tech Blog, 2025-05-26；內容基礎 2022 Samsung Foundry Forum）：**H-Cube（Hybrid Cube）把一塊大面積 ABF 基板拆成「較小的 ABF／FBGA 基板 + 較大的 HDI 基板」兩層**，官方自述效益為降低封裝成本與簡化 PCB 供應鏈管理，**動機明載為 PCB 短缺**。
+
+➜ ⭐⭐⭐ **既載同型案例皆為供應側動作**（Ajinomoto 對中國大陸減供 30%、2026 Q3 ABF 漲價 +30%、中國大陸 ABF 自給率 <5%）；**本件是設計側反應，方向相反。**
+➜ ⭐⭐⭐ **它同時給出「載體密度／面積上限」的第二種處置**：既載第一種為**局部加密**（在載體內塞高密度橋，已有四型：Intel 矽橋、SEMCO 有機橋、Deca 模封橋、Samsung 玻璃核心上之橋）；**H-Cube 是分層拆解**（把載體拆成「小面積高階」＋「大面積低階」）。兩者成本動機相同，手法相反。
+⚠ 本件日期 2025-05、內容 2022 ⇒ **不得作為 2026 現況之證據**；H-Cube 是否已量產本 wiki 無來源。
+
+*Sources: [[sources/2026-10-11_pfas-temporary-bonding-third-process-area]]、[[sources/2026-10-11_samsung-cube-family-official-taxonomy-h-cube]]*

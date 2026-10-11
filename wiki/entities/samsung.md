@@ -3,7 +3,7 @@ title: "三星 / Samsung"
 category: entity
 tags: [IDM, foundry, memory, advanced-packaging, X-Cube, HBM, ISSCC2026, I-CubeS, LPDDR6, V10-BV-NAND, zHBM, HBM5, FMS-2026, ECC, reliability]
 created: 2026-04-24
-updated: 2026-10-10
+updated: 2026-10-11
 sources: [2026-09-27_samsung_us20260144093a1-bridge-on-tgv-mold-fixed, 2026-08-26_trendforce_openai-jalapeno-samsung-hbm4, 2026-08-26_trendforce_samsung-gaia-pim-4nm-2027, 2026-08-24_trendforce_hot-chips-2026-samsung-zhbm-skhynix-emib, 2026-08-17_trendforce_samsung-skhynix-1h26-investment-nvidia-absent, 2026-08-14_trendforce_samsung-nrdk-line2-2nm-hbm5-base-die, 2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor, 2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2025-12-30_trendforce_samsung-hbm-surge, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2025-08-05_3dincites_iftle636, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit, 2026-06-10_trendforce_samsung-gwangju-packaging-base, 2026-06-12_digitimes_samsung-packaging-gap-tsmc-intel, 2026-06-15_trendforce_skhynix-hbm4e-sample-timeline-pulled-forward, 2026-06-19_techtimes_vera-rubin-hbm4-suppliers, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-24_techtimes_sk-hynix-dethroned-samsung-ddr5-hbm4, 2026-07-03_trendforce_anthropic-samsung-advanced-packaging, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-07-02_trendforce_samsung-hbm-dummy-die-patent, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo, 2026-07-07_trendforce_samsung-q2-2026-record-krw894t, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-02_trendforce_samsung-sf2p-plus-tsmc-n2-roadmap, 2026-07-14_trendforce_samsung-hbm-hiring-hbm4-hbm4e-hbm5, 2026-07-21_trendforce_samsung-cxl-32-skhynix-imte, 2026-07-24_trendforce_skhynix-3d-stacked-dram-on-logic-on-device-ai, 2026-09-30_epo_intel-us20260191037a1-localized-embedded-bridge-in-core, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-10-02_epo_samsung-cn122602880a-ivr-capacitor-interposer-core, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_semco-cn122054433a-glass-surface-roughness, 2026-10-08_samsung-stacked-rdl-package-bspdn-layer]
 related:
   - wiki/entities/tsmc.md
@@ -810,3 +810,37 @@ Samsung 於 2025-03 公開之專利顯示：**三層重佈線基板交替堆疊�
 - [ ] ⭐ 該投資與既載 Samsung 封裝測試布局（平澤 P5、HBM 產線）之關係。
 
 **本輪新增來源**：[[sources/2026-10-10_semieng-week159-test-capex-keysight-subthz]]
+
+---
+
+## 2026-10-11 更新：官方 Cube 家族分類學（H-Cube 為本 wiki 全庫首見）＋ 底填料塗佈控制之排他權
+
+### 1. ⭐⭐⭐ 官方 Cube 分類學（Samsung Tech Blog, 2025-05-26；內容基礎 2022 Samsung Foundry Forum）
+
+| 名稱 | 層級 | 官方定義與規格 |
+|------|------|----------------|
+| **I-CubeS** | 2.5D | 矽中介層。**I-CubeS 8 = 3× reticle 中介層，承載 8 顆 HBM + 2 顆 logic die** |
+| **I-CubeE** | 2.5D | **Embedded Silicon Bridge die**；官方自述為「**大型中介層的低成本替代**」；擴展目標**最多 12 顆 HBM**，量產目標 **2025** |
+| **H-Cube（Hybrid Cube）** ⭐ | 2.5D | **把一塊大面積 ABF 基板拆成「較小的 ABF／FBGA 基板 + 較大的 HDI 基板」兩層**；效益＝降低封裝成本、簡化 PCB 供應鏈；**動機明載為 PCB 短缺** |
+| **X-Cube** | 3D | **micro-bump 型量產目標 2024**；**bump-less Cu-to-Cu 直接接合目標 2026**（全文**未使用 "hybrid bonding" 一詞**） |
+| **ISC（Integrated Stack Capacitor）** | — | 開發中，無規格 |
+| **無 buffer die 之 logic 上 3D 堆疊 DRAM** | 3D | 與 Memory Division 共同開發，瞄準次世代 HPC，無規格 |
+
+➜ ⭐⭐⭐ **H-Cube 為本 wiki 全庫首見之名詞**（判定前已依規範（35）執行 `grep -ril "H-Cube" wiki/` = 0）；其結構意義見 [[concepts/substrate-materials-supply-chain]]（載體密度上限的第二種處置＝分層拆解）。
+➜ ⭐⭐ **I-CubeE 的官方動機是成本，不是密度** —— 本 wiki 此前對 LSB／內嵌橋的讀法一直是「補救載體密度上限」（密度動機）。兩者不互斥，但**官方口徑此前未入庫**。
+➜ ⚠ **口徑不可比**：Samsung 以 **HBM 顆數**（8 → 12）描述 I-Cube 路線圖；TSMC／ASE 以 **reticle 倍數**描述 ⇒ 依規範（34）（37），**不得互換或排序**。
+➜ ⚠ **X-Cube bump-less 官方時程 2026** 與既載「HBM 混合接合延後、最早導入點 16-Hi HBM4E（2027+）」**對象不同**（X-Cube 為 logic 3D，非 HBM）⇒ 並列，非矛盾。
+➜ ⚠⚠ **本件無法驗證其自身路線圖**：2024（X-Cube micro-bump）與 2025（I-CubeE 12 HBM）兩個里程碑是否達成，本 wiki 無來源可證 ⇒ 列為新空缺。
+➜ ⚠ 日期 2025-05、內容 2022 ⇒ **不得作為 2026 現況之證據**；也為 `overview.md` 長期列管之「缺技術頁：Samsung X-Cube / I-Cube / LSB」添官方建頁材料。
+
+### 2. ⭐⭐ 底填料塗佈的控制側排他權（US20260026386A1，family 98431944，2026-01-22）
+
+- **基板台上設多個 heating blocks**；dispensing head 對多個接合區塗佈底填料；**imaging device 成像；control unit 依影像「彼此獨立地」控制各加熱塊。**
+- ⇒ 底填料塗佈自「固定配方＋均勻加熱」改為「**影像回授＋逐區獨立溫控**」的閉環。
+- ⭐⭐ **「輔助步驟長出自己的控制律」第三落點**（前兩例：Advantest 測試溫度 ML 預測、SUSTech CMP 虛擬量測）；本件形式最素樸——**量了就改**。
+- ⭐ **請求項的標的自「做出什麼」擴及「怎麼調」。**
+- 📌 **分類落在 H05B（電加熱）而非 H10W／H01L** ⇒ 底填料控制側排他權**不在封裝分類軸上**。
+- ⚠ **零量化值**（無溫度範圍、無分區數、無黏度、無圓角尺寸、無產出率）；「溫度→黏度→圓角」為本 wiki 推論，非該件所述。
+- ⚠ **專利為前瞻訊號**：不得敘述 Samsung 產線已採用。
+
+*Sources: [[sources/2026-10-11_samsung-cube-family-official-taxonomy-h-cube]]、[[sources/2026-10-11_samsung-underfill-closed-loop-control]]*

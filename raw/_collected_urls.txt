@@ -846,3 +846,18 @@
 2026-10-10 | https://doi.org/10.1016/j.matdes.2026.117198 | raw/papers/2026-10-10_openalex_skku-cu-msa-unidirectional-tgv-filling-2p3x.md | SKKU: Cu-MSA unidirectional TGV fill, 2.30x productivity
 2026-10-10 | https://doi.org/10.3390/ma19194205 | raw/papers/2026-10-10_openalex_sustech-intelligent-cmp-ml-multiscale-review.md | SUSTech: intelligent CMP, angstrom-level, virtual metrology
 2026-10-10 | https://doi.org/10.1002/smtd.71031 | raw/papers/2026-10-10_openalex_chemnitz-slid-bonding-flexible-10um-pillar.md | Chemnitz: patterned SLID, 10um pillar on 5um PI
+2026-10-11 | https://semiconductor.samsung.com/news-events/tech-blog/going-beyond-the-limits-with-advanced-heterogeneous-integration/ | raw/articles/2026-10-11_samsung_i-cube-x-cube-h-cube-taxonomy-bumpless-2026.md | Samsung official: I-CubeS/E, H-Cube, X-Cube bumpless 2026
+2026-10-11 | https://www.tomshardware.com/tech-industry/semiconductors/custom-ai-asics-examined-from-broadcom-to-mtia | raw/articles/2026-10-11_tomshardware_custom-ai-asic-broadcom-xdsip-6000mm2-12hbm.md | Broadcom 3.5D XDSiP >6000mm2 12 HBM; TPU/MTIA specs
+2026-10-11 | https://semiengineering.com/four-things-every-engineer-should-know-about-pfas/ | raw/articles/2026-10-11_semieng_brewer-pfas-free-temporary-bonding-barc-2028.md | PFAS: temporary bonding + BARC PFAS-free, 2028 target
+2026-10-11 | https://www.atlaspcb.com/news/news-skc-absolics-290-million-glass-substrate-semiconductor-packaging-2026/ | raw/articles/2026-10-11_atlaspcb_skc-absolics-401b-rights-offering-72000m2-phase2.md | SKC-Absolics W401.1B; 12,000 to 72,000 m2/yr; AMAT 29.95%
+2026-10-11 | https://xenospectrum.com/en/nvidia-glass-substrate-2028-customer-qualification/ | raw/articles/2026-10-11_xenospectrum_nvidia-glass-before-2028-auo-8p6b-schmid-tgv.md | NVIDIA glass pre-2028; 18,000mm2 9.5x; AUO NT$8.6B; SCHMID
+2026-10-11 | EPO:95555544:WO2026171391A1 | raw/patents/2026-10-11_WO2026171391A1_technoprobe-thermocouple-test-element.md | Technoprobe: thermocouple test element in test system
+2026-10-11 | EPO:98899394:US20260068186A1 | raw/patents/2026-10-11_US20260068186A1_etron-lateral-hbm-side-edge-pads-liquid-cooling.md | Etron: lateral HBM, side-edge pads, sidewall liquid cooling
+2026-10-11 | EPO:98431944:US20260026386A1 | raw/patents/2026-10-11_US20260026386A1_samsung-underfill-dispensing-closed-loop.md | Samsung: underfill dispense, image-fed per-zone heating
+2026-10-11 | EPO:98996665:CN121665722A | raw/patents/2026-10-11_CN121665722A_statschippac-peripheral-wall-photonic-underfill-dam.md | STATS ChipPAC: peripheral wall keeps underfill off optics
+2026-10-11 | EPO:100418025:US20260206337A1 | raw/patents/2026-10-11_US20260206337A1_asmpt-moving-uv-cure-optical-package.md | ASMPT: UV cure while conveying away from align head
+2026-10-11 | https://doi.org/10.1016/j.applthermaleng.2026.133538 | raw/papers/2026-10-11_openalex_cas-simit-sjtu-topology-optimized-microchannel-logic-hbm.md | CAS SIMIT/SJTU: topo-opt microchannel -30% Rth -57% pump
+2026-10-11 | https://doi.org/10.1016/j.matdes.2026.117168 | raw/papers/2026-10-11_openalex_ceprei-hit-tgv-electromigration-three-failure-modes.md | CEPREI/HIT: TGV EM 3 failure modes, corner current crowding
+2026-10-11 | https://doi.org/10.3390/electronics15174023 | raw/papers/2026-10-11_openalex_gachon-on-chip-ldo-hbm-power-integrity-psij.md | Gachon: on-chip LDO for HBM, PSIJ to eye margin
+2026-10-11 | https://doi.org/10.1145/3857352 | raw/papers/2026-10-11_openalex_iod-chiplet-mesh-noc-bbat-2p6x.md | IOD chiplet mesh NoC BBAT 2.6x, +5.4% NoC area
+2026-10-11 | https://doi.org/10.3390/chips5040035 | raw/papers/2026-10-11_openalex_ntu-tau-law-epic-temporal-optimization.md | NTU: tau-Law EPIC latency axis incl EO/OE conversion

@@ -3,7 +3,7 @@ title: "GlobalFoundries — 格羅方德"
 category: entity
 tags: [GlobalFoundries, silicon-photonics, copackaged-optics, PIC, SiPh, foundry, Malta-NY]
 created: 2026-09-27
-updated: 2026-10-10
+updated: 2026-10-11
 sources: [2026-09-27_globalfoundries_siph-cpo-bandwidth-density-coupling-budget]
 related:
   - wiki/technologies/copackaged-optics.md
@@ -112,3 +112,16 @@ related:
 - [ ] ⭐⭐ 跨公司交付中介層的驗收規格。
 
 **本輪新增來源**：[[sources/2026-10-10_globalfoundries-tsmc-2b-interposer-deal]]、[[sources/2026-10-10_semieng-week159-test-capex-keysight-subthz]]
+
+---
+
+## 2026-10-11 更新：對準成本的兩個分項 —— 精度 vs 佔機時間
+
+既載本頁記 GF 之一手論述：**「把對準精度自機台轉移到微影」**（SSC ~0.4 dB／32 通道 V-groove <1 dB／Corning 玻璃橋 <1.5 dB/facet；Ge PD 120 GHz）。
+
+本輪 **ASMPT US20260206337A1**（2026-07-16）顯示另一個方向：**仍把對準放在機台（optical alignment head），改善的是對準之後的時間** —— 封裝在被送離對準頭的途中，由隨輸送器移動的 UV 系統**同時固化**黏著劑。
+
+➜ ⭐⭐ **光學對準的成本有兩個分項：精度與佔機時間；業界分別在攻擊不同的一項，兩者不矛盾。**
+➜ 這與既載「**真正的瓶頸在被視為輔助步驟的那一步**」相連：固化此前被視為附屬動作，而它佔用的是最昂貴的那一站。
+
+*Source: [[sources/2026-10-11_asmpt-cure-off-critical-path]]*

@@ -3,7 +3,7 @@ title: "UCIe — Universal Chiplet Interconnect Express"
 category: technology
 tags: [standards, chiplet, interconnect, UCIe, 3D, hybrid-bonding, UCIe-3.0]
 created: 2026-04-24
-updated: 2026-10-06
+updated: 2026-10-11
 sources: [2026-08-24_intel-newsroom_hot-chips-2026-diamond-rapids-foveros-ucie, 2026-04-24_initial-survey, 2026-04-01_semiengineering_chiplets-2026, 2025-01-28_3dincites_iftle-618-ucie-standard-vs-ucie3, 2025-01-01_semieng_ucie-1-6t-io-chiplets-ai-datacenter, 2025-09-03_uciexpress_ucie30-spec, 2026-03-05_uciexpress_chiplet-summit-2026, 2026-02-12_semieng_ucie3-technical-deepdive, 2026-10-06_epo_tenstorrent-discrete-pitch-adapter-substrates]
 related:
   - wiki/technologies/hybrid-bonding.md
@@ -405,3 +405,24 @@ Siemens（2026-02-05）：銅負責封裝內通訊，光學負責封裝對封裝
 ### 相關來源
 
 [[sources/2026-10-06_epo_tenstorrent-discrete-pitch-adapter-substrates]]
+
+---
+
+## 2026-10-11 更新：互通性的代價也在佈局自由度
+
+**ACM TACO**（`10.1145/3857352`，2026-10-06）明載：**IOD（I/O Die）chiplet 為了跨產品彈性與重用，其所有記憶體控制器與 die-to-die 介面的位置被固定在周界（fixed peripheral placement）**；該僵固佈局造成 mesh NoC 的**嚴重且非均勻的擁塞**，使橫截面頻寬未被充分利用，形成系統層級瓶頸。作者提出 BBAT（機率式路由提示，**重用既有 cache-coherent 交易協定做回授、無需自訂訊號線**）：
+
+| 指標 | 值 |
+|------|-----|
+| 合成流量**峰值**改善（vs DOR） | **2.6×** |
+| 實務合成流量混合 | **1.1×–1.8×** |
+| memory-bound SPEC CPU2017 | **1.2×–1.7×**；vs 既有自適應法 **+7–10% 吞吐** |
+| **面積代價** | **NoC 總面積 +5.4%** |
+
+➜ 📌 **既載 UCIe 論述此前全從電氣層、協定層與互通性切入；本件指出標準化與重用的代價會以「實體佈局被凍結」的形式出現**，並一路傳導到系統效能 ⇒ **互通性的代價不只在電氣層與協定層，也在佈局自由度。**
+➜ ⭐⭐ **與既載 Tenstorrent US20260282966A1 構成同一問題的兩個層級處置**：Tenstorrent 以**封裝層的逐 chiplet 離散節距轉接基板**吸收節距不一致；本件以**晶片內路由演算法**吸收介面位置不一致所致的擁塞。
+  ➜ **候選論述：「chiplet 重用所凍結的那些實體決定，會分別在封裝層與架構層各自被補償一次。」**（⚠ 兩例、跨層級、無機構重疊，**不升格**）
+⚠⚠ 本件為**架構／模擬**研究，無封裝製程內容，無矽實測；**不得由其引出任何封裝規格**。
+⚠ OpenAlex 機構欄為錯誤比對（"American Rock Mechanics Association"）⇒ 該來源 `fetch_status: partial`，機構留空。
+
+*Source: [[sources/2026-10-11_iod-chiplet-frozen-peripheral-placement]]*

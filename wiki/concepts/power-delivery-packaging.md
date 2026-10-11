@@ -3,7 +3,7 @@ title: "封裝層的供電網路 / Power Delivery Networks at the Package Level"
 category: concept
 tags: [PDN, power-delivery, vertical-power, eVR, capacitor, inductor, passive-integration, hybrid-bonding, rack-power]
 created: 2026-09-29
-updated: 2026-10-10
+updated: 2026-10-11
 sources: [2026-09-29_imaps-dpc2026_nanoporous-silicon-capacitor-pdn, 2026-09-29_imaps-dpc2026_saras-stile-evr-vertical-pdn, 2026-09-29_semieng_tech-paper-roundup-sept29-multikw-3dhi-pdn, 2026-09-29_semiwiki_ofc2026-siph-cpo-oci-ocs-summary, 2026-09-30_arxiv_umn-multi-kw-power-delivery-3d-hi, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_epo_intel-jp2026116680a-glass-core-embedded-inductor-clusters, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_imaps-dpc2026_delo-die-side-capacitor-encapsulation, 2026-10-02_epo_samsung-cn122602880a-ivr-capacitor-interposer-core, 2026-10-02_jmmm_tyndall-fecob-n-pwrsoc-magnetics, 2026-10-02_epo_amd-us20260282956a1-silicon-bridge-decap, 2026-10-06_openalex_auburn-nife-tsv-magnetic-shield-package, 2026-10-07_epo_amkor-bspdn-oriented-package-embedded-ipd, 2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-08_semieng_voltage-regulation-in-package, 2026-10-08_ferric-fe1766-current-density-denominator, 2026-10-08_empower-crescendo-regulator-side, 2026-10-08_zju-8module-fivr-current-sharing, 2026-10-08_samsung-stacked-rdl-package-bspdn-layer, 2026-10-08_ibm-w2w-bonded-deep-trench-capacitor, 2026-10-08_etron-liquid-through-substrate-cavity, 2026-10-09_infineon-tdm2354-dual-phase-denominator, 2026-10-09_infineon-tdm2454-quad-phase-denominator, 2026-10-09_semiwiki-tsmc-oip-2026-verification]
 related:
   - wiki/concepts/thermal-management.md
@@ -822,3 +822,49 @@ Tyndall National Institute × University College Cork（JMMM，2026-09-02）：�
 
 - [[sources/2026-10-10_infineon-peak-vs-tdc-overturns-156x-area]]（⚠⚠⚠ 推翻 2026-10-09 主線）
 - [[sources/2026-10-10_amkor-passive-placement-quantified-claim]]（⭐⭐⭐ 100 µm／50 µm）
+
+---
+
+## ⭐⭐⭐ 2026-10-11 更新：第三條耦合路徑（PSIJ）、訊號層指標組、以及 A/cm² 與 A/mm² 的分母區別
+
+### 1. ⭐⭐⭐ 供電與其他瓶頸的耦合路徑：第三條
+
+| 路徑 | 機制 | 來源 | 狀態 |
+|------|------|------|------|
+| ① | **PDN 自身發熱**（約 40% 上界） | 既載 | 既載 |
+| ② | **分流不均 → 局部過熱**（浙江大學 8 模組 FIVR：分流精度 10.6% 內、模組間溫差 <10.5 °C、峰值效率 85.6%） | 既載 2026-10-08 | 既載 |
+| **③** ⭐ | **PSIJ（power supply-induced jitter）：供壓擾動 → 高速時鐘／資料路徑抖動 → 眼圖餘裕** | Gachon University 回顧 `10.3390/electronics15174023`（2026-09-05） | **本輪新增** |
+
+➜ ⭐⭐⭐ **這把「供電」連到既載 2026-10-09 新增的「訊號完整性」維度**（TSMC 阻抗／EMI／串音；韓國 IEIE 之 Eye hold time／S 參數）⇒ **兩個此前並列的結構性瓶頸首次由一個具名機制連起來。**
+
+### 2. ⭐⭐⭐ 新增「訊號層指標」組
+
+既載本頁指標全為電性或熱性（A/mm²、µΩ、kW、效率 %、分流精度 %、溫差 °C）。本輪新增一組：
+
+| 訊號層指標 | 來源 | 分母／量測條件 |
+|------------|------|----------------|
+| **data rate** | 同上 | ⚠ 未知 |
+| **jitter** | 同上 | ⚠ 未知 |
+| **eye margin（眼圖餘裕）** | 同上 | ⚠ 未知 |
+
+⚠⚠ 該回顧**摘要零絕對值** ⇒ **不得由其引出任何數字**；其價值在**分類與驗收口徑**。
+
+### 3. ⭐⭐ 片上 LDO 的四類架構（學術分類）
+
+**fast-transient／wideband high-PSR／high-current 與 distributed／capacitor-less 與 digital-hybrid**。
+➜ 既載 **Ferric**（64 顆 → >10 kW）、**Empower**（至 50 顆 → >3,000 A）、**浙江大學**（8 模組 FIVR）之「併聯」路線在此確認為一個**獨立的架構類別**，而非個別產品選擇。
+📌 既載空缺「**3 A/mm² 障壁的物理限制項**」**不受本件影響** —— 本件談 **on-chip LDO（point of load）**，而既載 A/mm² 落點分屬**電源模組佔地／系統 PDN 截面／矽晶粒面積**三類；⚠ **本件不提供第四類分母，也不可用來比較前三類**（規範 34）。
+
+### 4. ⚠⚠⚠ A/cm² 進入本 wiki —— 與 A/mm² 不可換算
+
+本輪 **CEPREI × 哈工大**（`10.1016/j.matdes.2026.117168`）以 **2.3 / 2.8 / 3.0 × 10⁵ A/cm²** 對 TGV 做原位電遷移實驗。
+
+| 單位 | 分母（物理意義） | 用途 | 既載落點 |
+|------|------------------|------|----------|
+| **A/mm²** | **封裝／電源模組／矽晶粒的平面佔地** | 供電密度 | Infineon 0.4→2.0→>3→>4；Ferric >4.5（分母＝矽晶粒 35.5 mm²）；arXiv 需求側 2–4 |
+| **A/cm²** ⭐新增 | **導體的橫截面** | 電遷移／電流密度 | TGV 2.3–3.0 × 10⁵ |
+
+➜ ⚠⚠⚠ **兩者雖同為「電流／面積」，分母的物理意義完全不同 ⇒ 不得換算、不得排序、不得相減、不得並列於同一圖表。** 這是**規範（34）（37）在本輪的第二次套用**（第一次為同輪之 mm² 面積軸，見 [[technologies/cowos]]）。
+➜ 📌 **依規範（37），引用任何 A 數字仍須標明分子為峰值或 TDC**；本輪 TGV 之 A/cm² 為**施加的恆定測試電流密度**，屬第三類分子口徑（實驗施加值），須另標。
+
+*Sources: [[sources/2026-10-11_ldo-psij-power-to-signal-integrity]]、[[sources/2026-10-11_tgv-electromigration-three-regimes]]*

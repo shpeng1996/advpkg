@@ -3,7 +3,7 @@ title: "ASMPT Limited / ASMPT 有限公司"
 category: entity
 tags: [OSAT, equipment, TCB, hybrid-bonding, CPO, flip-chip, FOPLP, HBM4]
 created: 2026-05-06
-updated: 2026-09-19
+updated: 2026-10-11
 sources: [2026-04-22_asmpt_q1-2026-results, 2026-05-03_globenewswire_amat-acquires-nexx, 2026-05-12_asmpt_ectc2026-firebird-lithobolt]
 related: [wiki/technologies/hybrid-bonding.md, wiki/technologies/copackaged-optics.md, wiki/technologies/hbm4.md, wiki/technologies/foplp.md, wiki/entities/besi.md]
 ---
@@ -94,3 +94,28 @@ ASMPT 分為兩大業務：
 
 ### 同輪其他 ASMPT 案件（未收錄，備查）
 US20260114310A1（細間距垂直線互連）、US20260206337A1（光學封裝組裝用可移動固化系統，CPO 相關）、KR20260043824A（電子元件缺陷檢測）。
+
+---
+
+## 2026-10-11 更新：光學封裝組裝 —— 把固化移出對準站的關鍵路徑
+
+### US20260206337A1（公開 2026-07-16，family 100418025）—— MOVABLE CURING SYSTEM FOR ASSEMBLING OPTICAL PACKAGES
+
+發明人：YAN HONG、TANG CHUN TING、YANG LIANCHENG、WONG CHI PIU、NG YIN FUN
+分類：**G02B6/42、G02B6/4245、G02B6/4251、G02B7/02**（光學）＋ H10F39/\*
+
+1. 第一光學元件置於 **transporter** 上，輸送至 **optical alignment head** 處；
+2. 以對準頭把第一元件**對準**第二元件；
+3. 塗佈黏著劑，第二元件貼附形成光學封裝；
+4. ⭐⭐⭐ **其後輸送器把封裝送離對準頭，並「同時」以安裝於輸送器上、隨之移動的 UV 系統固化黏著劑。**
+
+➜ ⭐⭐⭐ **既載「真正的瓶頸在被視為輔助步驟的那一步」取得第一個「以時序而非以材料／良率解決」的實例**：前五例（CMP 後清洗、FOPLP debonding、Resonac 切割膠帶、測試、Amkor 底填料圓角）皆為該步驟自身的良率或幾何造成限制；**本件的限制是該步驟佔用了一台昂貴對準機的時間，處置是把它移出關鍵路徑。**
+➜ ⭐⭐ **與既載 FLINT 論文之「phantom-plane refresh 把 refresh 移出關鍵路徑」為同一手法在完全不同領域的出現** ⇒ **候選觀察：「瓶頸的第一個處置常常不是加快那一步，而是把它移出關鍵路徑。」**（⚠ 兩例跨域過大，不升格）
+➜ ⭐⭐ **CPO 組裝瓶頸在黏著劑**：本件（設備側）＋ STATS ChipPAC CN121665722A（OSAT 側，周壁擋底填料）＋ Namics `10.5104/jiep.29.376`（材料側，⚠ 摘要空、未收錄）⇒ 三側同向，依規範（41）檢查無關係。
+➜ ⭐ **對準成本的兩個分項**：既載 GlobalFoundries 攻擊**精度**（把對準精度自機台轉移到微影）；本件攻擊**佔機時間**。兩者不矛盾。
+
+⚠ **零量化值**（無 UV 劑量、無固化時間、無吞吐量、無對準精度）。
+⚠⚠ **檢索策略修正**：`(pa="asmpt" or pa="kulicke and soffa") and pd within "2026"` 命中 **71 件**，絕大多數為打線、送料、印刷、廢料處理等後段通用機構（GB／DE 實用新型佔比高），與先進封裝架構相關者僅個位數 ⇒ **設備商以申請人檢索的訊噪比遠低於以技術片語檢索**。既載「下輪輪替至 Besi／EVG／ASMPT 設備商」**就 ASMPT 與 K&S 部分結清**，建議改以技術片語（hybrid bonding、bond head、D2W alignment）檢索。
+⚠ **另檢視未採**：K&S **US20260144174A1**（先偏移成像、再移動對準後接合，family 99804139）列下輪候選。
+
+*Source: [[sources/2026-10-11_asmpt-cure-off-critical-path]]*

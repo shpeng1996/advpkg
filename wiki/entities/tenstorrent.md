@@ -3,7 +3,7 @@ title: "Tenstorrent — AI 加速器設計商 / AI Accelerator Designer"
 category: entity
 tags: [AI-ASIC, chiplet, RISC-V, fabless, pitch-adapter, packaging-IP]
 created: 2026-10-06
-updated: 2026-10-06
+updated: 2026-10-11
 sources: [2026-10-06_US20260282966A1_tenstorrent-discrete-pitch-adapter-substrates]
 related:
   - wiki/technologies/ucie.md
@@ -45,3 +45,19 @@ related:
 - 轉接片是**矽、玻璃還是有機**
 - 逐 chiplet 分離是否意味著**每顆 chiplet 多一道接合界面** ⇒ 若是，則此方案以**良率**換**互通性**，是一個可量化的取捨，而該案未量化
 - Tenstorrent 自身產品是否採用此方案，或此為防禦性布局
+
+---
+
+## 2026-10-11 更新：與架構層的對照 —— chiplet 重用所凍結的實體決定會被補償兩次
+
+**ACM TACO**（`10.1145/3857352`，2026-10-06）指出：**IOD（I/O Die）chiplet 為了跨產品彈性與重用，其所有記憶體控制器與 die-to-die 介面的位置被固定在周界**，造成 mesh NoC 嚴重且非均勻的擁塞；其處置 BBAT 為**晶片內的機率式自適應路由**（峰值 2.6× vs DOR；SPEC CPU2017 memory-bound 1.2×–1.7×；**NoC 面積代價 +5.4%**）。
+
+➜ ⭐⭐ **與既載 Tenstorrent US20260282966A1（逐 chiplet 一片離散節距轉接基板，使不同節距的 chiplet 共存於同一封裝）構成同一問題的兩個層級處置**：
+- **封裝層（Tenstorrent）**：吸收 chiplet 之間的**節距**不一致。
+- **架構層（本件）**：吸收介面**位置**不一致所致的擁塞。
+
+➜ **候選論述：「chiplet 重用所凍結的那些實體決定，會分別在封裝層與架構層各自被補償一次。」**（⚠ 兩例、跨層級、無機構重疊，**不升格**）
+⚠⚠ 本件為架構／模擬研究，無封裝製程內容、無矽實測；**不得由其引出任何封裝規格**。
+⚠ 該來源之 OpenAlex 機構欄為錯誤比對 ⇒ `fetch_status: partial`，機構留空。
+
+*Source: [[sources/2026-10-11_iod-chiplet-frozen-peripheral-placement]]*

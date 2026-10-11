@@ -1,8 +1,8 @@
 # Advanced Packaging Wiki — Index
 
-**更新時間 Updated**：2026-10-10
-**頁面總數 Total Pages**：894
-**原始來源數 Sources**：817（含 9 個合併轉向頁、1 個去重失誤更正頁、1 個橫向綜整頁；**本輪新增 15 篇：articles 6 / patents 5 / papers 4 —— 三軌全數執行；⭐ `device_bash`（使用者電腦 Linux workspace）本輪全程可用，git 狀態開場即為乾淨且與 origin 同步；⭐ OpenAlex 經 `device_bash` 五組查詢全部 HTTP 200（作業規範 33 第二次成立，無需繞道瀏覽器）；⚠⚠ **本輪 OpenAlex 四個高優先候選（Elsevier／Springer 2026 年文章）之摘要在 OpenAlex、Crossref、Semantic Scholar 三個獨立管道皆為空** ⇒ 判定為出版社側之摘要未釋出，非 OpenAlex 索引落後**）⭐ 以檔案計數交叉驗證：877 + 15 來源頁 + 2 新實體頁（advantest、technoprobe）= **894**，sources 目錄 = **817**（817 + 46 entities + 17 technologies + 6 concepts + 5 analyses + 3 根目錄頁 = 894 ✓）
+**更新時間 Updated**：2026-10-11
+**頁面總數 Total Pages**：909
+**原始來源數 Sources**：832（含 9 個合併轉向頁、1 個去重失誤更正頁、1 個橫向綜整頁；**本輪新增 15 篇：articles 5 / patents 5 / papers 5 —— 三軌全數執行；⭐ `device_bash`（使用者電腦 Linux workspace）本輪全程可用，git 狀態開場即為乾淨且與 origin 同步、`tmp_obj_*` 開場為 0；⭐ OpenAlex 經 `device_bash` 原路徑六組查詢全部 HTTP 200（作業規範 33 第三次成立）；⭐ EPO OPS 僅 7 次 HTTP（1 auth + 5 search + **1 次 POST 批次取 8 件摘要**）—— 批次 abstract 端點為本輪新得之額度節約手法；⚠⚠ **本輪一次取得五個封裝面積 mm² 數字，其中三個的量測對象未經來源定義 ⇒ 於 `cowos.md` 立「mm² 落點表」並明令不得排序相減（規範 34／37 首次在錯誤發生前套用）**；⚠⚠ **Applied Materials 持有 Absolics 29.95% ⇒ 依規範（41）改寫既載「TGV 失效在界面與孔緣」之來源獨立性**）⭐ 以檔案計數交叉驗證：894 + 15 來源頁 = **909**，sources 目錄 = **832**（832 + 46 entities + 17 technologies + 6 concepts + 5 analyses + 3 根目錄頁 = 909 ✓）
 
 ---
 
@@ -107,6 +107,22 @@
 ---
 
 ## 來源摘要 Sources（依日期倒序）
+- [[sources/2026-10-11_nvidia-glass-pressure-18000mm2-schmid-tgv]] — ⭐⭐⭐ **TSMC 2027 年 9.5-reticle CoWoS 封裝基板外形 120×150 mm ≈ 18,000 mm²（本 wiki 首個 CoWoS 基板絕對面積）**；SCHMID 稱 **TGV 金屬化為最大技術障礙**（設備商側獨立佐證）；**AUO capex NT$8.6B** 含 TGV／RDL／玻璃核心試產線；⚠ Absolics 早期試作「每隔幾天數百片玻璃面板破裂」（MIT Tech Review，無分母）；⚠ TSMC 玻璃驗證封裝內容已收錄且既載更完整 ⇒ 查核型
+- [[sources/2026-10-11_custom-ai-asic-xdsip-package-area-mm2]] — ⭐⭐⭐ **Broadcom 3.5D XDSiP：SoIC + CoWoS 疊加，封裝面積 >6,000 mm²、最多 12 HBM（vs 傳統 2.5D ~2,500 mm²）；「3.5D」與 "XDSiP" 皆本 wiki 全庫首見**；Google TPU v7 Ironwood 由 **Broadcom + MediaTek** 共同開發（N3P，HBM3E 192 GB / 7.37 TB/s）；CoWoS 配額絕對片數首現（595K／150K／105K）；⚠ 七個需求側專案中僅兩個揭露封裝技術
+- [[sources/2026-10-11_samsung-cube-family-official-taxonomy-h-cube]] — ⭐⭐⭐ **Samsung 官方 Cube 分類學：H-Cube 為本 wiki 全庫首見 —— 把大面積 ABF 基板拆成「小 ABF/FBGA + 大 HDI」兩層，動機官方明載為 PCB 短缺 ⇒ 載體密度上限的第二種處置（分層拆解）**；I-CubeE 官方定位為「大型中介層的低成本替代」（成本動機，非密度）；I-CubeS 8 = 3× reticle + 8 HBM + 2 logic；X-Cube bump-less Cu-Cu 官方時程 2026；⚠ 內容基礎為 2022 Foundry Forum
+- [[sources/2026-10-11_absolics-phase2-72000m2-amat-stake]] — ⭐⭐⭐ **Absolics 第二期 12,000 → 72,000 m²/年（6×）；股權 SKC 70.05% / AMAT 29.95% ⇒ 依規範（41）改寫既載「TGV 失效在界面與孔緣」之獨立性**；₩401.1B 增資、₩589.6B（2026–2028）；資金用途自述為**認證與良率**而非擴產；⚠ 量產時程三說並列
+- [[sources/2026-10-11_pfas-temporary-bonding-third-process-area]] — ⭐⭐⭐ **PFAS 擴散至三個新製程群（光阻／BARC 含 EUV、清洗、暫時接合與解接合），其中暫時接合／解接合是本 wiki 既載的瓶頸步驟 ⇒ 該瓶頸新增第四種壓力來源：化學法規**；EPA MCL 4 ppt、EU Annex XVII（C9–C14 PFCAs／PFHxS／PFHxA，無日期）、供應商自訂 2028 全面移除；⚠ 贊助專欄
+- [[sources/2026-10-11_etron-lateral-hbm-sidewall-assignment]] — ⭐⭐⭐ **Etron US20260068186A1：「memory stack」由水平分離的晶粒構成、I/O 走第一側壁 edge pads、對面側壁交給上方液冷 ⇒「免 TSV 化」第四型（問題被取消而非繞過）；「封裝的面成為被分配的資源」自封裝降到晶粒層級；Adeia「側（sidedness）」維度第二落點 ⇒ 連接維度記為上／下／側(連接)／側(散熱)**；⚠ 零量化值；⚠ CN 同族 family-id 不同（去重邊界案例）
+- [[sources/2026-10-11_statschippac-underfill-keepout-optical]] — ⭐⭐⭐ **STATS ChipPAC CN121665722A：扇出 RDL 貫穿開孔對準光子電路、周壁把底填料擋在光路之外 ⇒ 底填料的第三個失效方向「不能進到某些地方」，理由首次是光學**；CPO 組裝側排他權首次在 OSAT 手上；⚠⚠ 內含 family 去重偽陽性之完整記錄（Silverbrook 底填料件）；📌 須增列 H10F 檢索軸
+- [[sources/2026-10-11_samsung-underfill-closed-loop-control]] — ⭐⭐⭐ **Samsung US20260026386A1：底填料塗佈改為「影像回授 + 逐區獨立溫控」⇒「輔助步驟長出自己的控制律」第三落點（測試＝ML 預測／CMP＝虛擬量測／底填料＝量了就改，恰覆蓋量測→模型→致動三種成熟度）**；請求項標的自「做出什麼」擴及「怎麼調」；📌 分類落在 H05B 而非 H10W
+- [[sources/2026-10-11_asmpt-cure-off-critical-path]] — ⭐⭐⭐ **ASMPT US20260206337A1：邊輸送邊 UV 固化（光源隨工件移動）⇒「輔助步驟才是瓶頸」第一個「以時序解決」的實例 —— 限制不是良率或幾何，而是它佔用了最昂貴的那一站**；與 FLINT 之 phantom-plane refresh 同手法跨域出現；CPO 組裝瓶頸在黏著劑之設備側落點；⚠⚠ 設備商以申請人檢索訊噪比極低（71 件中僅個位數相關）
+- [[sources/2026-10-11_technoprobe-thermocouple-measure-leg]] — ⭐⭐⭐ **Technoprobe WO2026171391A1：異種金屬熱電偶做進測試系統本體 ⇒ 測試熱「量／移除／預測」三要素全部在庫，但依規範（41）為單一陣營的完整布局（Technoprobe ×2 + Advantest ×1，後者持前者 2.5%）**；⭐⭐⭐ 發明人 VENUTI ELENA 即 Chips 回顧作者，**規範（38）自推定升級為已驗證**；⚠ 零量化值
+- [[sources/2026-10-11_tgv-electromigration-three-regimes]] — ⭐⭐⭐ **CEPREI × 哈工大：TGV 原位電遷移 —— 2.3／2.8／3.0 × 10⁵ A/cm² 三個鄰近區間（僅 1.3 倍）對應三種互不相同的失效模式；且最低密度下已界面分層而電阻幾乎不變 ⇒ 以電阻為唯一監測量會漏掉該失效**；⭐⭐⭐ **FEA：電流擁塞峰值在 TGV–RDL 轉角、超過孔最窄截面處 ⇒「孔緣幾何」精確定位，Corning 剖面空缺在可靠度意涵上降級**；⚠ A/cm² 與 A/mm² 分母意義不同不得換算
+- [[sources/2026-10-11_microchannel-topology-optimization-quantified]] — ⭐⭐⭐ **CAS SIMIT × 上海交大：logic-HBM 之 MCHS 拓撲最佳化 —— 熱阻 −30%、泵送功率 −57%、散熱器內最大熱致 von Mises 應力 35.59 → 10.75 MPa（−70%）⇒ 微流道軸第一個帶數字的落點，且冷卻結構自身成為第三個承受熱應力的對象**；與 Etron 件構成「改冷卻 vs 改佈局」兩條獨立路線；⚠ 純模擬；⚠ inter-die ΔT 未給（新空缺）
+- [[sources/2026-10-11_ldo-psij-power-to-signal-integrity]] — ⭐⭐⭐ **Gachon 回顧：PSIJ（power supply-induced jitter）⇒ 供電與訊號完整性兩個此前並列的瓶頸首次由一個具名機制連起來（第三條耦合路徑：供壓擾動 → 時鐘/資料抖動 → 眼圖餘裕）；`power-delivery-packaging` 新增「訊號層指標」組（data rate / jitter / eye margin）**；併聯確認為獨立架構類別；⚠ 回顧且摘要零絕對值
+- [[sources/2026-10-11_iod-chiplet-frozen-peripheral-placement]] — ⭐⭐⭐ **ACM TACO：IOD chiplet 為了跨產品重用，其所有 memory controller 與 D2D 介面位置被固定在周界 ⇒ 互通性的代價不只在電氣層與協定層，也在佈局自由度**；BBAT 峰值 2.6×、SPEC memory-bound 1.2–1.7×、**NoC 面積 +5.4%**；與 Tenstorrent 構成封裝層／架構層兩次補償；⚠ OpenAlex 機構欄錯誤（規範 43）
+- [[sources/2026-10-11_epic-latency-axis-tau-law]] — ⭐⭐ **NTU τ-Law：CPO 的第三個指標軸＝延遲，且電光／光電（EO-OE）轉換延遲是與傳播延遲同級的獨立分項**（既載 CPO 指標僅頻寬密度與能效）⇒ 新空缺：EO/OE 轉換延遲典型值；⚠ 摘要零絕對值，本輪論文軌訊號最弱者，收錄理由為其指標軸
+
 
 - [[sources/2026-10-10_infineon-peak-vs-tdc-overturns-156x-area]] — [文章／產品頁] ⭐⭐⭐⭐⭐ **Mouser 之 Infineon TDM2454xx 產品頁同時標「280 A peak power density」（peak）與「>2.0 A/mm² TDC (thermally managed)」（熱管理後連續值）** ⇒ ⚠⚠⚠ **推翻 2026-10-09 之主線結論：1.56 倍不是面積比而是峰值／連續電流比（2.0×90=180 A，280/180=1.556；1.6×64=102.4 A，160/102.4=1.5625）⇒「排除模組佔地」撤回，分母很可能就是模組佔地，落差在分子**；⇒ **空缺「1.56 倍隱含面積對應何種實體面積」關閉 —— 因為該面積很可能不存在**；⇒ ⭐⭐⭐ **新增作業規範（37）：引用 A/mm² 除分母類別外必須標明分子為峰值或 TDC**；⇒ ⭐⭐⭐ **三輪方法論案例：高度自洽的否證仍然可能是錯的**；⚠ 2354 世代之基準分離為類推（兩篇新聞稿皆未標 peak/TDC）；⚠ 通路商頁面，結案仍須 datasheet
 - [[sources/2026-10-10_advantest-contactless-interposer-test-patents]] — [專利] ⭐⭐⭐⭐⭐ **US20260219310A1（族 98570156，2026-07-30）＋US20260243821A1（族 100839076，2026-08-20，Advantest）：探針移至接點「附近」而不落針，以 RF 訊號在連接兩接點的導線中感應並量測；後件平行化且請求項明載「探針在驅動與量測期間移動」；DUT 明示為中介層與矽橋；分類全在 G01R 系** ⇒ ⚠⚠ **使 2026-10-09 所立「電壓對比是唯一不需機械接觸的一類」改為兩類（機制完全不同：電子束電壓對比 vs 近場 RF 感應）**；⇒ ⭐⭐⭐ **DUT 恰為既載空缺之物件（中介層的完整電性篩檢）—— 顯示 ATE 廠正為此開發方法，但空缺不結清：本件不提客戶、不提 TSMC、不提良率**；⇒ ⭐⭐ **「被動不加電驗證」自 Silverbrook 單一來源升為並列敘述**；⇒ ⭐⭐ **探測幾何第三型態：落針→對接→近接掃描，且吞吐變數自落針次數改為掃描速度**；⚠ 兩件零量化值

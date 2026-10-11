@@ -3,7 +3,7 @@ title: "CoPoS — Chip-on-Panel-on-Substrate"
 category: technology
 tags: [panel-level-packaging, FOPLP, TSMC, CoPoS, AI, HPC, AP7, InFO]
 created: 2026-04-25
-updated: 2026-10-09
+updated: 2026-10-11
 sources: [2026-09-27_tradingkey_copos-glass-validation-08mm-85x110mm, 2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-04-13_trendforce_copos-pilot, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2025-09-12_trendforce_foplp-competitive-landscape-2025, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-20_wccftech_tsmc-copos-glass-core-cost-cut, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-04-28_cw_tsmc-copos-move-really-means, 2026-06-14_digitaltrends_tsmc-copos-glass-temporary-carrier, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-28_xianfeng_cn122476946a-alignment-mark-protection, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-10-02_trendforce_nvidia-glass-substrate-2028-taiwan, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_imaps-dpc2026_defect-free-coplanar-copper-via-fill, 2026-10-07_sedaily_tsmc-copos-ap7-line-complete-one-year-yield, 2026-10-09_tsmc-copos-ap7-chiayi-panel-size]
 related:
   - wiki/technologies/rdl.md
@@ -652,3 +652,15 @@ TrendForce（2026-09-30）：**Innolux 以 620 × 670 mm 格式與客戶驗證 T
 ⚠ 本件**無良率、無成本數字** ⇒ **不得據此調整本頁任何既載良率或成本值。**
 
 *Source: [[sources/2026-10-09_tsmc-copos-ap7-chiayi-panel-size]]*
+
+---
+
+## 2026-10-11 更新：9,350 mm² 取得其比較基準
+
+本輪取得 **TSMC 2027 年 9.5-reticle CoWoS 封裝基板外形 = 120 × 150 mm ≈ 18,000 mm²**（XenoSpectrum，引 TECH+／工商時報）。
+
+- 既載 CoPoS 玻璃驗證試片外形 **85 × 110 mm = 9,350 mm²**（0.8 mm 玻璃核心、5× reticle）⇒ **約為 18,000 mm² 的 51.9%**。
+- ⚠ 文中自承此為**跨世代比較**（5× 試片 vs 9.5× 量產基板），**不代表成熟度**。
+- ⚠ 既載另記 9,350 mm² 約為 Yole 5.5× 階（~4,565 mm²）的兩倍；該 4,565 之量測對象**未經來源確認** ⇒ 依規範（34）（37），完整落點表與使用規則見 [[technologies/cowos]]「mm² 落點表」。
+
+*Source: [[sources/2026-10-11_nvidia-glass-pressure-18000mm2-schmid-tgv]]*

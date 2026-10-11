@@ -3,7 +3,7 @@ title: "HBM4 — High Bandwidth Memory 4"
 category: technology
 tags: [memory, HBM, JEDEC, standards, AI, HPC, HBM4E, cleanroom, capacity, ISSCC2026, ZAM, HB3DM, HBM5, zHBM, HPB, FMS-2026, ECC, reliability, FIT]
 created: 2026-04-24
-updated: 2026-10-05
+updated: 2026-10-11
 sources: [2026-08-13_semieng_1mw-rack-debate-thermal, 2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor, 2026-08-10_trendforce_skhynix-chongqing-sale-global-reset, 2026-08-05_trendforce_samsung-v10-zhbm-hbm5-fms2026, 2026-07-30_trendforce_samsung-ds-q2-2026-hbm4-triple-q3, 2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-03-18_trendforce_intel-emib-malaysia, 2026-01-23_trendforce_hbm4e-samsung-skhynix-mid2026, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-01-13_semiengineering_hbm4-microbumps, 2025-12-18_trendforce_micron-capex-hbm4, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h, 2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-03-03_trendforce_sk-hynix-hbm4-tight-gaps, 2025-08-12_semianalysis_hbm-roadmap, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit, 2026-06-09_astutegroup_hbm-market-share-2026-battle, 2026-06-10_trendforce_samsung-gwangju-packaging-base, 2026-06-15_trendforce_skhynix-hbm4e-sample-timeline-pulled-forward, 2026-06-20_techtimes_skhynix-hbm4e-12layer-samples, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-27_tweaktown_hbm4-16hi-nvidia-supply-fight, 2026-06-26_semieng_chip-week-144, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-14_trendforce_samsung-hbm-hiring-hbm4-hbm4e-hbm5, 2026-07-14_trendforce_skhynix-yongin-y1-feb2027, 2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b, 2026-08-13_trendforce_samsung-skhynix-hbm4-2h-earnings-pricing, 2026-08-25_trendforce_nvidia-server-hike-hbm-price-2027, 2026-08-28_trendforce_skhynix-indiana-hbm4e-3q29-supply-2030, 2026-08-26_tomshardware_hbf-hot-chips-oxmiq-limited-usability, 2026-08-21_electronics_dual-interposer-hbm-power-integrity, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-09-09_acsaelm_microwave-anneal-cu-cu-150c-3min, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-03-29_damnang_hybrid-bonding-cmp-gating-factor, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_trendforce_cowos-l-mainstream-through-2028, 2026-10-02_microrel_tudelft-google-3dic-fa-hardware]
 related:
   - wiki/entities/sk-hynix.md
@@ -1629,3 +1629,36 @@ TU Delft × Google（2026-07-03）：PoP 中 DRAM 疊於邏輯之上造成 **EFI
 ### 相關來源
 
 [[sources/2026-10-05_semieng_wir158-semco-fcbga-hbm-wafer-share]]、[[sources/2026-10-05_skhynix_tsmc-symposium-hbm4-custom-hbm]]、[[sources/2026-10-05_semicone_tsmc-winbond-wow-cube]]
+
+---
+
+## 2026-10-11 更新：logic-HBM 非均勻熱源的兩種處置（改冷卻 vs 改佈局）
+
+### 1. ⭐⭐⭐ 改冷卻：拓撲最佳化微流道（學術，首個帶數字的微流道落點）
+
+**CAS 上海微系統所 × 上海交大**（`10.1016/j.applthermaleng.2026.133538`，2026-10-07）：
+
+| 指標 | 直通微流道基準 → 拓撲最佳化 |
+|------|------------------------------|
+| 最大熱阻 | **−約 30%** |
+| 泵送功率 | **−57%** |
+| 散熱器內最大熱致 von Mises 應力 | **35.59 → 10.75 MPa（−70%）** |
+
+- 幾何作用分工：**進／出口配置主導主流路**；**二級分支縮短固體傳導路徑以抑制局部熱點**。
+- 在不同流量與**不同 logic 功率占比**下仍保有優勢。
+- ⚠ **純模擬**（CFD + 熱機耦合 FEA），無實驗；無幾何、材料、流體、絕對流量 ⇒ **不可與既載任何實測應力值比較**。
+- ⚠ **inter-die ΔT 的改善值未給** ⇒ 📌 **新空缺：拓撲最佳化後 logic 與 HBM 之間的晶粒間溫差是多少？** 這正是既載 Samsung HPB（峰值溫降 >35%）與 zHBM 論述所缺的對照口徑。
+
+### 2. ⭐⭐⭐ 改佈局：把「堆疊」拆平（專利訊號，⚠ 非量產能力）
+
+**Etron × ND Hi Tech Lab US20260068186A1**（2026-03-05）：memory stack 由**水平分離**的晶粒構成，**I/O 走第一側壁 edge pads 直連基板**，**對面側壁交給上方液冷結構**，processor die 並置。
+⚠ **零量化值**；⚠ **專利為前瞻訊號，不得敘述為已存在之 HBM 架構選項**。
+
+➜ ⭐⭐⭐ **兩者構成「同一問題、相反處置」的一組**（論文固定佈局而最佳化冷卻；專利改掉佈局以遷就冷卻）；依規範（41）檢查：機構、人員、資金無任何重疊 ⇒ **可並列為兩條獨立路線。**
+
+### 3. 供電完整性：PSIJ 進入 HBM 的驗收口徑
+
+**Gachon University 回顧**（`10.3390/electronics15174023`，2026-09-05）把 HBM／NPU／SoC 的片上 LDO 要求列為：高電流密度、**奈秒級穩定與最小 droop**、寬頻 PSR、無電容穩定運作，並**抑制 PSIJ（power supply-induced jitter）**；評比指標含 **data rate / jitter / eye margin**。
+⚠ 回顧且摘要**零絕對值** ⇒ 不得由其引出任何數字。詳見 [[concepts/power-delivery-packaging]]。
+
+*Sources: [[sources/2026-10-11_microchannel-topology-optimization-quantified]]、[[sources/2026-10-11_etron-lateral-hbm-sidewall-assignment]]、[[sources/2026-10-11_ldo-psij-power-to-signal-integrity]]*

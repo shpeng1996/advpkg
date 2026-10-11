@@ -3,7 +3,7 @@ title: "FOPLP — 扇出面板級封裝 / Fan-Out Panel-Level Packaging"
 category: technology
 tags: [fan-out, panel-level, TSMC, Samsung, ASE, Powertech, Innolux, CoPoS, InFO, cost-reduction, delamination, DCB, CTE]
 created: 2026-05-03
-updated: 2026-10-08
+updated: 2026-10-11
 sources: [2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-07-31_trendforce_ase-capex-record-10-5b-leap-foplp, 2025-09-12_trendforce_foplp-competitive-2025, 2026-04-13_trendforce_copos-pilot, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-21_3dincites_acm-wlp-plp-process-trends, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-15_digitimes_manz-310mm-foplp-ecd-equipment, 2026-06-13_digitimes_linkotech-foplp-rollout-traction, 2026-06-20_prnewswire_manz-asia-310mm-ecd, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_digitimes_tsmc-foplp-timeline-skepticism, 2026-07-06_trendforce_cfmee-plp2000-china-first-plp, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-08-06_siliconbox_500m-units-panel-scale, 2026-02-18_siliconbox_ep4697377a1-fanout-panel-metal-sealing-ring, 2026-07-28_xianfeng_cn122476946a-alignment-mark-protection, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage, 2026-10-06_thelec_sec-xray-tsv-tgv-inspection-1um, 2026-10-07_epo_evg-zonewise-adaptive-litho-die-shift, 2026-10-07_epo_evg-inorganic-dual-release-layer-common-solvent, 2026-10-08_pku-embedded-glass-fanout-roughness]
 related:
   - wiki/technologies/rdl.md
@@ -1093,3 +1093,22 @@ Cu stud 輸入晶圓 → 切單與晶粒貼附 → **第一次封膠** → **載
 ### 相關來源
 
 - [[sources/2026-10-08_pku-embedded-glass-fanout-roughness]]
+
+---
+
+## 2026-10-11 更新：debonding 瓶頸的第四種壓力來源 —— 化學法規
+
+既載「**真正的瓶頸在被視為輔助步驟的那一步**」之第二例為 **FOPLP 的 debonding**、第四例為 **Resonac 的混合接合用耐化學切割膠帶**。此前該瓶頸的壓力來源有三：
+
+1. **良率**（翹曲峰值出現在 debonding 階段）
+2. **熱**（製程熱預算）
+3. **機械**（晶粒飛散：60 °C 清洗後 >200 顆 → 0 顆）
+
+⭐⭐⭐ **本輪新增第四種：化學法規。** Brewer Science（經 SemiEngineering 贊助專欄，2025-03-20）揭露其**無 PFAS 之暫時接合材料 BrewerBOND（含 VersaLayer，高溫高應力用途）支援化學／機械／雷射／光子四種解接合路徑**，並自訂 **2028 年前全面移除所有 PFAS** 之目標。
+
+➜ ⭐⭐ **「四種解接合路徑都支援」被當成供應商賣點 ⇒ 解接合路徑本身已是一個競爭維度**，而非單一製程選擇。
+➜ ⚠⚠ **2028 為單一供應商自訂目標，非法規期限**；EU Annex XVII 提案（針對 C9–C14 PFCAs、PFHxS、PFHxA）**無日期**；美 EPA 之 **4 ppt** 為**飲用水 MCL**，**不是製程材料驗收值** ⇒ **本 wiki 不得由此推出任何「法規生效年」。**
+➜ ⚠ 贊助專欄；供應商自述之產品覆蓋度無百分比、無第三方佐證。
+➜ ⚠ **本件無底填料、無 TIM、無介電質之 PFAS 敘述** ⇒ 封裝材料中氟化物依賴度最高的幾類仍未被涵蓋。
+
+*Source: [[sources/2026-10-11_pfas-temporary-bonding-third-process-area]]*

@@ -3,7 +3,7 @@ title: "Advantest — 愛德萬測試"
 category: entity
 tags: [Advantest, ATE, test, probe-card, contactless, thermal, machine-learning, G01R]
 created: 2026-10-10
-updated: 2026-10-10
+updated: 2026-10-11
 sources: [2026-10-10_advantest-contactless-interposer-test-patents, 2026-10-10_advantest-ml-thermal-prediction-in-test, 2026-10-10_advantest-stakes-probe-card-suppliers, 2026-10-10_formfactor-100k-pins-zero-force-vision]
 related:
   - wiki/concepts/test-metrology-packaging.md
@@ -65,3 +65,21 @@ related:
 - [ ] ⭐⭐ **「依感測器資料預測」是否真以機器學習實作** —— 歸屬來自 CPC 分類（G06N20/00），**請求項文字未指明方法**。
 - [ ] ⭐⭐ **2025-01 之股權比例是否仍然成立**（距今約 21 個月）；FormFactor 持股比例始終未揭露。
 - [ ] ⭐ **Advantest 之 ATE 側量化規格** —— 本 wiki 僅有 100 W/cm² 一個數字；營收、市占、機種全部空白。
+
+---
+
+## 2026-10-11 更新：測試熱「三要素」其餘兩件已確認同屬 Technoprobe ⇒ 獨立性標註強化
+
+本輪收錄 **Technoprobe WO2026171391A1**（熱電偶做進測試系統本體，family 95555544），使測試熱的「**量／移除／預測**」三要素全部在庫：
+
+| 動作 | 件 | 申請人 |
+|------|-----|--------|
+| 量 | WO2026171391A1（本輪） | **Technoprobe** |
+| 移除 | WO2026162211A1（空間轉換器微流道，PT2） | **Technoprobe** |
+| **預測** | **US20260235663A1（ML 溫度預測與調控，含 G06N20/00）** | **Advantest** |
+
+➜ ⚠⚠⚠ **依規範（41）：Advantest 持有 Technoprobe 2.5%（並持有 FormFactor 未揭露份額之少數股權），三方皆為策略夥伴 ⇒ 上表不可計為三個獨立來源。** 本 wiki 此後呈現該三要素時**必須同時呈現此股權關係**。
+➜ ⭐⭐ **量測派與模型派在同一陣營內並存**：Advantest 以 **ML 預測**區域溫度，Technoprobe 以**熱電偶直接量** ⇒ ⚠ **不得讀作「業界尚未收斂」，只能讀作「同一陣營同時押注兩種解」。** 這同時使既載「量測處置第四種：不量而推」取得其**對照組**。
+➜ 既載「測試硬體正從被動互連變成主動系統」之升格依據**維持**以 **TSMC（晶圓廠，2026-10-09 兩件 G01R 系）＋ Advantest（ATE 廠）** 兩個外部申請人為準（2026-10-10 所作之更正不變）。
+
+*Source: [[sources/2026-10-11_technoprobe-thermocouple-measure-leg]]*

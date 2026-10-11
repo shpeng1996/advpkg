@@ -3,7 +3,7 @@ title: "Technoprobe — 泰克諾探針"
 category: entity
 tags: [Technoprobe, probe-card, MEMS, microfluidic, thermal, integrated-sensing, G01R, Italy]
 created: 2026-10-10
-updated: 2026-10-10
+updated: 2026-10-11
 sources: [2026-10-10_technoprobe-microfluidic-probe-card, 2026-10-10_venuti-probe-card-passive-to-multiphysics, 2026-10-10_advantest-stakes-probe-card-suppliers]
 related:
   - wiki/concepts/test-metrology-packaging.md
@@ -66,3 +66,40 @@ related:
 - [ ] ⭐⭐ **「受控氣氛測試環境」的實際參數**（氧濃度？濕度？惰性氣體？）—— 單一來源、WBG 語境、無數值。
 - [ ] ⭐⭐ **WBG 與 AI 封裝兩個元件域的探針卡需求有多少共用技術** —— 本頁兩個主要來源分屬不同域。
 - [ ] ⭐ **產能、客戶、營收、機種型號全部空白。**
+
+---
+
+## ⭐⭐⭐ 2026-10-11 更新：第三件專利入庫；發明人與論文作者為同一人已由 OPS 證實
+
+### WO2026171391A1（公開 2026-08-20，family 95555544）—— TEST SYSTEM WITH TEMPERATURE MONITORING
+
+發明人：**VETTORI RICCARDO、VENUTI ELENA**；分類 **G01R1/073、G01R31/2863、G01R31/2874**（全在 G01R 系）
+
+- 測試系統內建 **test element** 監測 **DUT 或晶圓本身**的溫度；
+- 兩條分支各含**不同導電材料**之部分，於 **junction region** 相接，該區具 **contact end**；
+- 測試時 contact end 位於 DUT 或晶圓處，另一端為參考溫度；**材料選擇使電路產生與溫差成正比之電位差**；
+- ⇒ **異種金屬熱電偶做進測試硬體本體**，而非讀取 DUT 內建感測器。
+
+### ⭐⭐⭐ 規範（38）自推定升級為已驗證
+
+2026-10-10 本 wiki 由 OpenAlex 空白機構欄推回：Chips 回顧（`10.3390/chips5030018`，「探針卡須自**被動互連**演化為**整合式多物理系統**」）之作者 **Elena Venuti** 即 Technoprobe 之專利發明人（當時為**推定**）。
+➜ **本輪由 OPS 的 inventor 欄直接證實同一人。** ⇒ **規範（38）（以專利發明人補 OpenAlex 空白機構欄）自推定升級為已驗證**；並再次確認該論文命題與 Technoprobe 的專利布局**同屬一方**。
+
+### Technoprobe 之測試熱布局（⚠ 與 Advantest 同陣營）
+
+| 動作 | 件 | 申請人 |
+|------|-----|--------|
+| **量** | **WO2026171391A1（本輪）** | **Technoprobe** |
+| **移除** | WO2026162211A1（空間轉換器微流道，散除 PT2） | **Technoprobe** |
+| **預測** | US20260235663A1（ML 溫度預測與調控，G06N20/00） | Advantest |
+
+⚠⚠⚠ **依規範（41）：Advantest 持有 Technoprobe 2.5% 並為策略夥伴，且「量」「移除」兩件同申請人 ⇒ 三件不可計為三個獨立來源；這是一個陣營的完整布局，不是業界共識。**
+⭐⭐ **量測派與模型派在同一陣營內並存**（熱電偶直接量 vs ML 預測）⇒ ⚠ 不得讀作「業界尚未收斂」。
+
+### 既載候選維持
+
+**WO2026189684A1**（公開 2026-09-17，family 95784238，PROBE HEAD WITH CONTACT PROBES HAVING IMPROVED HOLDING PROPERTIES）：本輪已取得摘要 —— 探針本體設**縱向開口形成雙臂**，於導孔內形成**彈性止擋（elastic stopper）**，未入孔時橫向直徑大於導孔、入孔後彈性變形以達機械保持。⚠ 因 spec §3.4「選出前 5 件」上限，**本輪未收為 raw，維持下輪候選**。
+
+⚠ **本件零量化值**（無溫度解析度、無響應時間、無熱電偶材料對、無接觸面積）。⚠ **專利為前瞻訊號**：不得敘述 Technoprobe 已出貨內建熱電偶之探針卡。
+
+*Source: [[sources/2026-10-11_technoprobe-thermocouple-measure-leg]]*

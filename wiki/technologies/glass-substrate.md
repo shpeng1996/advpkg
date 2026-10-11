@@ -3,7 +3,7 @@ title: "玻璃基板 / Glass Core Substrate"
 category: technology
 tags: [glass-substrate, TGV, panel-level, FC-BGA, CoPoS, Absolics, DNP, Rapidus, warpage, SeWaRe, glass-interposer, BOE, ULCVD, non-embedding, Lens-Technology, TPK-KY, Innolux, AUO, LG-Chem, singulation, patent-signal]
 created: 2026-05-08
-updated: 2026-10-10
+updated: 2026-10-11
 sources: [2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-27_tradingkey_copos-glass-validation-08mm-85x110mm, 2026-09-27_intel_us20260182414a1-asymmetric-buildup-cte-gradient-glass, 2026-09-27_samsung_us20260144093a1-bridge-on-tgv-mold-fixed, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-05-05_trendforce-insights_glass-substrate-development, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-05-29_3dincites_rapidus-2nm-advanced-packaging-ai-foundry, 2026-06-01_trendforce_intel-3dgs-india-glass-substrate, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-06-20_biggo_boe-glass-substrate-pilot, 2026-06-28_economy-ac_glass-substrate-global-race, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-08-18_trendforce_shinko-glass-substrate-22layer-glassem-delay, 2026-09-11_mssp_tgv-glass-biaxial-bending-ring-on-ring, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-03-13_kaneka_jp2026047137a-glass-core-polyimide-quantified, 2026-08-10_screp_low-k-organic-buffer-tgv-cu-metallization, 2026-08-04_jmrt_vacuum-assisted-void-free-cu-fill-tgv, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_patent_er-eng-glass-interposer-dual-carrier, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-30_epo_xiamen-anjieli-cn121335557a-silane-parylene-tgv, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth, 2026-09-30_epo_intel-jp2026116680a-glass-core-embedded-inductor-clusters, 2026-09-30_epo_intel-us20260040982a1-glass-package-liquid-metal-socketing, 2026-09-30_epo_amosense-wo2026019155a1-multilayer-glass-core-frit-bonding, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-10-02_epo_shanghai-xianfeng-cn122622683a-glass-interposer-bridge, 2026-10-02_epo_semco-cn122054433a-glass-surface-roughness, 2026-10-02_trendforce_nvidia-glass-substrate-2028-taiwan, 2026-10-02_trendforce_intel-microled-glass-24-layer, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-06_atlaspcb_clearwater-forest-glass-core-claim-unsourced, 2026-10-06_intel_clearwater-forest-no-glass-foveros-9um-3um-emib-45um, 2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage, 2026-10-06_thelec_sec-xray-tsv-tgv-inspection-1um, 2026-10-07_epo_cas-freestanding-3c-sic-interposer, 2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk, 2026-10-07_epo_evg-inorganic-dual-release-layer-common-solvent, 2026-10-08_rdl-free-glass-interposer-trench, 2026-10-08_pku-embedded-glass-fanout-roughness, 2026-10-08_uestc-tapered-tgv-skin-current, 2026-10-09_keti-tgv-defect-spectrum-plugging-review, 2026-10-09_uestc-tapered-tgv-stress-relief, 2026-10-09_bjut-thermomech-phase-field-imc-tgv]
 related:
   - wiki/technologies/rdl.md
@@ -2257,3 +2257,78 @@ TrendForce（2026-09-30，⚠ **全文為 reportedly 之產業傳聞，非 NVIDI
 ### 本輪新增來源
 
 - [[sources/2026-10-10_skku-cu-msa-unidirectional-tgv-filling]]
+
+---
+
+## ⭐⭐⭐ 2026-10-11 更新：Absolics 第二期產能、SCHMID 的瓶頸表態、以及 TGV 失效點的精確定位
+
+### 1. Absolics：第二期 12,000 → 72,000 m²/年（6×）；股權 SKC 70.05% / AMAT 29.95%
+
+| 項目 | 值 | 狀態 |
+|------|-----|------|
+| 第一期產能 | **12,000 m²/年** | 既載（本頁 L706） |
+| **第二期產能** | **72,000 m²/年（6×）** | ⭐**本輪新增** |
+| 第一期投資／潔淨室 | **$240M** / **120,000 sq ft** | ⭐新增 |
+| 一＋二期總規劃 | **$600M** | 既載 |
+| CHIPS Act 直接補助 | **$75M** | 既載 |
+| **股權** | **SKC 70.05% / Applied Materials 29.95%** | ⭐**新增** |
+| 本次增資 / 三年計畫 | **₩401.1B（$290M）** / **₩589.6B（$426M，2026–2028）** | ⭐新增 |
+| 資金用途（自述） | **客戶評估、認證、良率改善** + 設備升級（**非擴產**） | ⭐新增 |
+
+⚠⚠ **m²/年 與矽側之 wsm（片／月）量綱不同，不得換算或排序**；既載對 12,000 m² 所做之「≈2–3 百萬顆 H100 尺寸封裝」換算**不代為外推至 72,000 m²**。
+
+### 2. ⚠⚠ 量產時程：三說並列，不覆寫既載
+
+| 說法 | 來源 | 日期 |
+|------|------|------|
+| **2026 年底** | 既載本頁 L706；另 Tom's Hardware | 既載 / 2026-08-27 |
+| **最早 2027 初次商業出貨**，有意義量能 **2028–2029** | AtlasPCB（引首爾經濟） | 2026-08-28 |
+| 量產滑至 **2027**，最終可靠度測試 2026 完成 | 韓媒七月報導（經 XenoSpectrum 彙整） | 2026-07 |
+
+➜ **三說共存，本輪不刪既載值。**
+
+### 3. ⭐⭐ 供應商時程集體後滑（本輪彙整，⚠ 各家原始表態日期不一，非同時點橫斷面）
+
+| 供應商 | 本輪所記時程 |
+|--------|--------------|
+| **SEMCO（GlaSSEM）** | 材料 **2H 2027** / 成品 **2028**；The Elec 報設備訂單延後，可能 **2028 或更晚**；KIPOST 稱首筆設備訂單最快 10 月 |
+| **Absolics** | 見上（2027+） |
+| **DNP** | 量產體系 **FY2028**（2028-04–2029-03） |
+| **AUO** | ⭐ **capex NT$8.6B**（含 TGV／RDL／玻璃核心試產線）；董事長稱還需 **2–3 年**成熟 ⚠ 該金額為公司總 capex，**不得視為玻璃投資額** |
+| Innolux、TPK-KY | 自承仍需時間，無數字 |
+
+➜ **全體落點自 2026–2027 移至 2027–2029**，但既載「量產先行者」排序不變。
+
+### 4. ⭐⭐ SCHMID（設備商）：TGV 金屬化為最大技術障礙
+
+既載 2026-10-10 所立「玻璃的瓶頸自兩項變三項（翹曲／CTE／**TGV 金屬化**）」在此取得**設備商側的獨立佐證**（既載來源為 SKKU Cu-MSA 與 KETI 缺陷譜，皆為學術）。SCHMID 並把**終端客戶認證**列為另一關鍵觀察項（與 Absolics 之資金用途自述同向）。
+⚠ 依規範（41）已檢查：SCHMID 與 SKKU／KETI 無股權或刊物關係。
+
+### 5. ⚠ 操持破損：是否為第四個瓶頸？
+
+引 **MIT Technology Review**：Absolics 早期量產試作中「**每隔幾天就有數百片玻璃面板破裂**」。
+⚠⚠ **二手引述、無分母（破裂率？佔投片比例？）、無日期** ⇒ **僅記為「早期試作存在機械破損問題」之定性佐證，不得量化。**
+➜ 📌 **新空缺：面板本體的操持破損是否應列為玻璃的第四個瓶頸（與翹曲／CTE／TGV 金屬化並列）？**
+
+### 6. ⭐⭐⭐ TGV 的失效點被精確定位到 TGV–RDL 轉角（學術，原位實驗 + FEA）
+
+**CEPREI × 哈工大**（`10.1016/j.matdes.2026.117168`，2026-10-01）以 daisy-chain TGV 原位電遷移實驗：
+
+| 電流密度 | 主導失效模式 | 電阻行為 |
+|----------|--------------|----------|
+| **2.3 × 10⁵ A/cm²** | **RDL／玻璃界面分層** | ⚠ **電阻幾乎不變** |
+| **2.8 × 10⁵ A/cm²** | **電遷移空洞核生與成長** | 線性上升 |
+| **3.0 × 10⁵ A/cm²** | **熱機耦合：TGV–RDL 轉角玻璃開裂 + RDL 塑性變形** | 加速上升 |
+
+- ⭐⭐⭐ **FEA：TGV–RDL 轉角有顯著電流擁塞，其局部電流密度超過孔最窄截面處**；溫度場與幾何特徵共同決定應力集中位置。
+- ➜ 📌 **既載「孔緣幾何」此後應明確指為「TGV 與 RDL 的交界轉角」，而非孔本體的任何剖面（頂／腰／底）。**
+- ➜ ⚠ 既載空缺「**Corning small via diameter 屬何種剖面、沙漏腰在何高度**」**在可靠度意涵上降級**（其電性與製程意涵仍成立，但「決定電流擁塞」已不是它的理由）。
+- ➜ ⭐⭐⭐ **1.3 倍的電流密度區間對應三種互不相同的失效機制** ⇒ **單一加速因子的壽命外推在 TGV 上不成立**；且**最低電流密度下已分層而電阻幾乎不變 ⇒ 以電阻為唯一監測量會漏掉該失效**（量測可及性問題，見 [[concepts/test-metrology-packaging]]）。
+- ⚠⚠⚠ **A/cm²（電流密度，分母＝導體橫截面）與既載 A/mm²（供電密度，分母＝封裝或晶粒平面佔地）物理意義完全不同，不得換算、不得排序、不得相減**（規範 34／37）。
+- ⚠ 本件無 TGV 幾何、無溫度絕對值、無 MTTF、無試樣數 ⇒ **不得與 DNP MTTF >1000 hr 或 AGC 795–802 mV @1,250 A 比較**；既載空缺「TGV 陣列力學數值（有／無 liner 對照）」**不結清**。
+
+### 7. ⚠ 獨立性修正（規範 41）
+
+**Applied Materials 持有 Absolics 29.95%** ⇒ **AMAT 的「TGV 失效在界面與孔緣（種子層附著、孔緣應力集中）」與 Absolics 的量產宣告／專利此後不得計為兩個獨立來源。** 該論述之獨立性改以其餘來源為準：**KETI 缺陷譜、SKKU Cu-MSA、CEPREI × 哈工大、SCHMID**。
+
+*Sources: [[sources/2026-10-11_absolics-phase2-72000m2-amat-stake]]、[[sources/2026-10-11_nvidia-glass-pressure-18000mm2-schmid-tgv]]、[[sources/2026-10-11_tgv-electromigration-three-regimes]]*

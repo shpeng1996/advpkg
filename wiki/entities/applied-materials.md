@@ -3,7 +3,7 @@ title: "Applied Materials（應用材料）"
 category: entity
 tags: [equipment, ECD, PECVD, TSV, HBM, die-thinning, hybrid-bonding, USA]
 created: 2026-09-17
-updated: 2026-10-05
+updated: 2026-10-11
 sources: [2026-08-18_appliedmaterials_hbm-packaging-bottleneck-toolset, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-06-28_hyperframe_amat-hybrid-bonding-hedge, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_epo_xiamen-anjieli-cn121335557a-silane-parylene-tgv]
 related:
   - wiki/technologies/tsv.md
@@ -326,3 +326,18 @@ Poulomi Mukherjee（Applied Materials Germany）：FE 模擬識別 **① 種子�
 ### 相關來源
 
 [[sources/2026-10-05_semieng_wir158-semco-fcbga-hbm-wafer-share]]、[[sources/2026-10-05_thelec_hanwha-shb2-nano-cluster]]
+
+---
+
+## ⚠⚠⚠ 2026-10-11 更新：持有 Absolics 29.95% —— 依規範（41）改寫其玻璃／TGV 發言之獨立性
+
+本輪取得 Absolics 之精確股權結構：**SKC 70.05% / Applied Materials 29.95%**（AtlasPCB, 2026-08-28，引首爾經濟 2026-08-21）。既載僅記「與 Applied Materials 合資」。
+
+➜ ⚠⚠⚠ **依作業規範（41）（凡以「N 家獨立來源同向」作為升格依據者，須先檢查股權與刊物／節目關係）：**
+**AMAT 的「TGV 失效在界面與孔緣（種子層附著、孔緣應力集中）」與 Absolics 的量產宣告及專利此後不得計為兩個獨立來源。**
+既載玻璃／TGV 論述中原以兩者並列者，獨立性改以其餘來源為準：**KETI 缺陷譜（七項）、SKKU Cu-MSA 單向填充、CEPREI × 哈工大電遷移、SCHMID（設備商）**。
+
+➜ 📌 **這是規範（41）自 2026-10-10 設立以來的第二次實際應用，且第一次改寫的是一條既載的技術論述**（第一次為 Advantest／Technoprobe／FormFactor 之測試軌升格依據）。
+➜ ⚠ **既載 AMAT 其餘持股關係**（Besi 9%、TEL Eteris 合資、收購 ASMPT NEXX）此前已記，本輪新增 Absolics 一項 ⇒ **AMAT 在本 wiki 中是股權關係最密集的實體，凡以 AMAT 為來源的論述皆須先查該清單。**
+
+*Source: [[sources/2026-10-11_absolics-phase2-72000m2-amat-stake]]*

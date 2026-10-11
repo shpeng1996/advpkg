@@ -3,7 +3,7 @@ title: "鈺創科技 Etron Technology（與 ND Hi Tech Lab）"
 category: entity
 tags: [Etron, ND-Hi-Tech-Lab, Taiwan, glass-substrate, TGV, TTV, thermal-management, DRAM, fabless]
 created: 2026-09-28
-updated: 2026-10-09
+updated: 2026-10-11
 related:
   - wiki/technologies/glass-substrate.md
   - wiki/technologies/tsv.md
@@ -77,3 +77,40 @@ Etron／ND Hi Tech 於 2025-06 公開之專利顯示：**基板本身具第一�
 ➜ ⚠ **Etron 件之技術內容與數值不改動**（該件與 CAS 件之流體、載體材料、應用均不同；且 Etron 件**連續兩件熱結構案皆無任何量化值**，該空缺維持）。
 
 *Source: [[sources/2026-10-09_cas-2013-microchannel-interposer-ebg]]*
+
+---
+
+## ⭐⭐⭐ 2026-10-11 更新：第三件入庫專利 —— 三件構成一條「熱的通路要走哪條幾何路徑」的主線
+
+### US20260068186A1（Etron × ND Hi Tech Lab，公開 2026-03-05，family 98899394）
+
+**HIGH-BANDWIDTH MEMORY STACK WITH SIDE EDGE INTERCONNECTION AND LIQUID COOLING STRUCTURE**
+發明人：**TONG HO-MING**、**LU CHAO-CHUN**；分類 H10B80/00、H10W90/00、H10W72/834、H10W90/288
+
+- 「memory stack」由**多顆水平彼此分離（horizontally separate）**的晶粒構成 —— ⚠ **名為 stack，幾何上不是垂直堆疊。**
+- 每顆晶粒有四個側壁；**第一側壁設 edge pads**，**基板位於其下並與每顆晶粒之 edge pads 電性連接**。
+- processor die 置於基板之上、與 memory stack **並置**。
+- ⭐⭐⭐ **液冷結構位於兩者之上，經由每顆晶粒之「與 edge pad 相對的第二側壁」以及 processor die 頂面**與兩者熱耦合。
+
+### Etron 三件專利的主線
+
+| 件 | 熱的幾何路徑 | 年 |
+|----|--------------|-----|
+| **US20260090421A1** | **貫穿散熱孔 TTV 與 TGV 對接、獨立散熱層**（玻璃基板第六條自由度） | 2026 |
+| **TW202522705A** | **液體直接流經基板腔體**並與上方冷板腔體連通（本 wiki 第一件把工作流體引入載體內部者） | 2026 |
+| **US20260068186A1** ⭐ | **晶粒側壁熱耦合至上方液冷結構** | 本輪 |
+
+➜ ⭐⭐ **三件各走不同路徑（貫穿／基板腔體／晶粒側壁）** ⇒ Etron 自「玻璃基板第六條自由度」的單點，升為**本 wiki 中熱路徑幾何布局密度最高的 fabless 申請人**。
+
+### 結構意義
+
+- ⭐⭐⭐ **「免 TSV 化」第四型**，且性質與前三型不同（前三型繞過 TSV，本型取消「需要 TSV 的那個幾何」）。詳見 [[technologies/tsv]]。
+- ⭐⭐⭐ **「封裝的面正在成為被分配的資源」自封裝層級下降到晶粒層級** —— 同一顆晶粒的兩個相對側壁分別指派給**電性**與**熱**，為該論述目前最細粒度的落點。
+- ⭐⭐ **Adeia 所立之「側（sidedness）」維度第二個獨立落點並更進一步** ⇒ 連接的維度記為四個互斥指派：**上、下、側（連接）、側（散熱）**。
+- ⭐⭐ **與本輪論文 `10.1016/j.applthermaleng.2026.133538`（CAS SIMIT × 上海交大）構成「同一問題、相反處置」**：論文固定佈局而最佳化冷卻幾何；本件改掉佈局以遷就冷卻。依規範（41）檢查：機構、人員、資金無重疊。
+
+⚠ **零量化值**（無流量、無熱阻、無側壁 pad 節距、無晶粒數、無面積代價）。
+⚠ **專利為前瞻訊號**；Etron 為 fabless/IP 商，其專利**不預示任何量產時程**。
+⚠ **去重邊界案例**：同發明之中國同族 **CN122028438A** 在 OPS 之 family-id 為 **99686008**（≠ 98899394），申請人亦不同（QUANXIN SEMICONDUCTOR EMPEROR INTEGRATE + ETRON）⇒ **family 級去重在本例會把同一發明計為兩件**；本輪僅收錄 US 件。
+
+*Sources: [[sources/2026-10-11_etron-lateral-hbm-sidewall-assignment]]、[[sources/2026-10-11_microchannel-topology-optimization-quantified]]*

@@ -3,7 +3,7 @@ title: "先進封裝的測試、量測與失效分析 / Test, Metrology & Failur
 category: concept
 tags: [test, metrology, inspection, failure-analysis, KGD, KGI, KGP, DFA, yield]
 created: 2026-09-17
-updated: 2026-10-10
+updated: 2026-10-11
 sources: [2026-09-27_paper_binghamton-ibm-pad-scaling-resistance-variability, 2026-09-27_paper_purdue-ru-cu-em-lifetime-blacks-n-0154, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2025-01-14_semieng_known-good-interposer-screening, 2025-07-10_semieng_advanced-packaging-reshaping-inspection, 2024-11-12_semieng_packaging-drives-test-metrology-innovation, 2026-08-01_jfap_3dic-failure-analysis-dfa, 2026-07-06_apl_lensless-through-silicon-phase-imaging, 2026-09-06_ndte_hysan-sparse-view-xct-tsv, 2026-08-02_chips_cpo-wafer-level-probe-card, 2026-08-27_samsung_us20260256000a1-interposer-test-pad, 2026-08-13_jcet_us20260239928a1-hybrid-bonding-substack-test, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-06-28_hyperframe_amat-hybrid-bonding-hedge, 2026-09-26_paper_ibm-amine-post-cmp-clean, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-10-02_microrel_tudelft-google-3dic-fa-hardware, 2026-10-02_imaps-dpc2026_gelpak-universal-carriers-singulated-die, 2026-10-06_openalex_gatech-terahertz-nde-8layer-interposer, 2026-10-06_openalex_tongji-wafer-embedded-pitch-standard-pose-correction, 2026-10-06_thelec_sec-xray-tsv-tgv-inspection-1um, 2026-10-07_semieng_kelvin-resistance-probe-access-pitch-limit, 2026-10-07_openalex_amkor-kelly-three-interposer-routes, 2026-10-07_epo_besi-deformable-die-forming-bond-tool, 2026-10-08_silverbrook-known-good-site-substrate-test, 2026-10-08_ase-probing-needle-scrub-length, 2026-10-08_formfactor-45um-probe-pitch-good-enough-die, 2026-10-08_advantest-singulated-die-test-thermal, 2026-10-09_tsmc-cantilever-probe-card-patent, 2026-10-09_tsmc-impedance-control-probing-patent, 2026-10-09_intel-voltage-contrast-backside-patent, 2026-10-09_ieie-probe-card-mlc-signal-integrity, 2026-10-09_hdin-probe-card-market-pin-count, 2026-10-09_quantware-qpu-measurement-stage-patent]
 related:
   - wiki/technologies/hybrid-bonding.md
@@ -1269,3 +1269,49 @@ HDIN 稱探針卡**客戶認證週期 12–24 個月**。既載 HBM4E 混合接�
 - [[sources/2026-10-10_advantest-stakes-probe-card-suppliers]]（⭐⭐⭐ 來源獨立性之檢查項）
 - [[sources/2026-10-10_semieng-week159-test-capex-keysight-subthz]]（⭐⭐⭐ Samsung $3.9B；Keysight sub-THz）
 - [[sources/2026-10-10_sustech-intelligent-cmp-virtual-metrology]]（⭐⭐⭐ 虛擬量測＝第四種處置）
+
+---
+
+## ⭐⭐⭐ 2026-10-11 更新：測試熱三要素全部在庫（但同屬一陣營）、電阻單一監測量之失效、閉環化第三落點
+
+### 1. ⭐⭐⭐ 測試熱的「量／移除／預測」三要素全部在庫
+
+| 動作 | 件 | 申請人 | 收錄 |
+|------|-----|--------|------|
+| **量** | **WO2026171391A1**（family 95555544，2026-08-20）：異種金屬**熱電偶**做進測試系統本體；兩分支於 junction region 相接，contact end 測試時位於 **DUT 或晶圓**處，另一端為參考溫度，材料選擇使電路產生**與溫差成正比之電位差** | **Technoprobe** | ✅ **本輪** |
+| **移除** | WO2026162211A1：空間轉換器內微流道，散除**探針卡自身主動元件**之熱功率 **PT2** | Technoprobe | 既載 2026-10-10 |
+| **預測** | US20260235663A1：測試中區域溫度**預測**與調控，分類含 **G06N20/00** | Advantest | 既載 2026-10-10 |
+
+➜ ⚠⚠⚠ **依作業規範（41）：Advantest 持有 Technoprobe 2.5% 並為策略夥伴，且「量」與「移除」兩件同申請人 ⇒ 三件不可計為三個獨立來源。**
+**本表所呈現的是一個陣營的完整布局，不是業界共識。** 這與 2026-10-10 對「測試硬體正從被動互連變成主動系統」所作的同型更正一致（該命題之升格依據已改以 **TSMC（晶圓廠）＋ Advantest（ATE 廠）** 兩個外部申請人為準）。
+➜ ⭐⭐⭐ **「量」件之發明人 VENUTI ELENA 即 2026-10-10 收錄之 Chips 回顧（`10.3390/chips5030018`，「探針卡須自被動互連演化為整合式多物理系統」）作者** —— 該輪係由論文機構欄推回專利發明人（**規範（38）首例，當時為推定**），**本輪由 OPS inventor 欄直接證實** ⇒ **規範（38）自推定升級為已驗證**，並再次確認論文命題與專利布局**同屬一方**。
+➜ ⭐⭐ **量測派與模型派在同一陣營內並存**：Advantest 以 ML **預測**、Technoprobe 以熱電偶**直接量** ⇒ ⚠ **不得讀作「業界尚未收斂」，只能讀作「同一陣營同時押注兩種解」**；這同時使既載「量測處置第四種：不量而推」取得其**對照組**。
+⚠ 「量」件**零量化值**（無溫度解析度、無響應時間、無熱電偶材料對、無接觸面積）⇒ 無法判斷其精度是否足以支撐既載 Advantest 之 **100 W/cm²** 熱介面所需的控制。
+
+### 2. ⭐⭐⭐ 「以電阻為唯一監測量」在某個區間會整個失效 —— 量測可及性的新實例
+
+**CEPREI × 哈工大**（`10.1016/j.matdes.2026.117168`，2026-10-01）對 daisy-chain TGV 做原位電遷移：
+
+| 電流密度 | 主導失效模式 | 電阻行為 |
+|----------|--------------|----------|
+| **2.3 × 10⁵ A/cm²** | **RDL／玻璃界面分層** | ⚠⚠ **電阻幾乎不變** |
+| 2.8 × 10⁵ | 電遷移空洞 | 線性上升 |
+| 3.0 × 10⁵ | TGV–RDL 轉角玻璃開裂 + RDL 塑變 | 加速上升 |
+
+➜ ⭐⭐⭐ **最低電流密度下已發生界面分層，而電阻幾乎不變 ⇒ 以電阻為唯一驗收量會漏掉該失效。** 本件所用的第二個量為**剖面 SEM（破壞性）**。
+➜ 📌 **新空缺：是否存在非破壞性、可在線的 RDL／玻璃界面分層偵測量？** 既載 **GaTech-Europe × CNRS 之 THz NDE**（2026-10-10 在庫）為候選。
+➜ ⇒ 既載「同一名詞涵蓋多個獨立驗收項」在此取得變體：**同一個監測量（電阻）在不同應力區間的靈敏度可以是零。**
+
+### 3. ⭐⭐ 「輔助步驟長出自己的控制律」第三落點（本輪）
+
+| 環節 | 件／來源 | 形式 | 成熟度 |
+|------|----------|------|--------|
+| 測試 | Advantest US20260235663A1（既載） | **ML 預測**後回頭改參數 | 模型 |
+| CMP | SUSTech 智慧 CMP 回顧（既載） | **虛擬量測** | 模型 |
+| **底填料** ⭐ | **Samsung US20260026386A1**（family 98431944，2026-01-22） | **imaging device 成像 → control unit 依影像「彼此獨立地」控制多個 heating blocks** | **量測→致動（最素樸）** |
+
+➜ ⭐⭐ **候選論述：「被視為輔助的步驟，正在各自長出感測—回授—致動的閉環。」** 三例恰好覆蓋**量測 → 模型 → 致動**三種成熟度；機構無重疊（規範 41 已檢查），但**皆為單一來源，升格待第四例**。
+⚠ Samsung 件**零量化值**；「溫度→黏度→圓角」之因果鏈為**本 wiki 推論**，非該件所述。
+📌 **分類軸發現（本輪共三個）**：底填料控制側落在 **H05B（電加熱）**、光電封裝落在 **H10F**、測試落在 **G01R** —— 三者**皆不在本 wiki 既有的 H10W／H01L 檢索軸上。**
+
+*Sources: [[sources/2026-10-11_technoprobe-thermocouple-measure-leg]]、[[sources/2026-10-11_tgv-electromigration-three-regimes]]、[[sources/2026-10-11_samsung-underfill-closed-loop-control]]*

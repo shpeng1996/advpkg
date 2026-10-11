@@ -3,7 +3,7 @@ title: "先進封裝熱管理 / Thermal Management in Advanced Packaging"
 category: concept
 tags: [thermal-management, liquid-cooling, 3D-IC, CoWoS, heat-dissipation, TIM, ECTC-2025, GaN, power-delivery, co-design, patent-signal, delamination]
 created: 2026-04-25
-updated: 2026-10-10
+updated: 2026-10-11
 sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2025-12-01_semiengineering_thermal-management, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-02_trendforce_samsung-hbm5-computex2026, 2026-05-21_semieng_hi-roadmap-nature-paper-intel, 2026-08-13_semieng_1mw-rack-debate-thermal, 2026-04-27_semieng_semiconductor-materials-misbehave, 2026-08-21_trendforce_chip-packaging-heat-ai-bottleneck-cpo-stco, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_arxiv_umn-multi-kw-power-delivery-3d-hi, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_samsung-cn122602880a-ivr-capacitor-interposer-core, 2026-10-02_imaps-dpc2026_delo-die-side-capacitor-encapsulation, 2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage, 2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk, 2026-10-07_epo_cas-freestanding-3c-sic-interposer, 2026-10-07_openalex_diamond-d2w-direct-bonding-vdw-45mpa, 2026-10-07_openalex_lau-silicon-bridge-microbump-reliability, 2026-10-08_etron-liquid-through-substrate-cavity, 2026-10-08_micron-cryogenic-package-hea-solder, 2026-10-08_advantest-singulated-die-test-thermal, 2026-10-09_cas-2013-microchannel-interposer-ebg, 2026-10-09_bjut-thermomech-phase-field-imc-tgv]
 related:
   - wiki/technologies/cowos.md
@@ -1261,3 +1261,53 @@ SNU × UIUC 的 TIM 綜述明確指出：**TIM 的 bulk／effective 導熱係數
 
 - [[sources/2026-10-10_technoprobe-microfluidic-probe-card]]
 - [[sources/2026-10-10_advantest-ml-thermal-prediction-in-test]]
+
+---
+
+## ⭐⭐⭐ 2026-10-11 更新：微流道軸第一個帶數字的落點；以及冷卻結構自身的熱應力
+
+### 1. 微流道／載體通道化落點表（本輪新增兩格）
+
+| # | 落點 | 位置 | 量化 | 年 |
+|---|------|------|------|-----|
+| 1 | CAS **CN103199086A** | 矽中介層內微流道 + 側壁 EBG（流道同時是電性結構） | 無 | **2013** |
+| 2 | Etron **TW202522705A** | 液體流經基板腔體，與上方冷板腔體連通 | 無 | 2026 |
+| 3 | 上海大學（⚠ 非流體冷卻） | 淺溝槽吸入銀奈米高分子取代水平 RDL | 有（<90 mΩ、5 秒填滿） | 2026 |
+| 4 | Technoprobe **WO2026162211A1** | 探針卡空間轉換器內微流道，散除儀器自身熱功率 PT2 | 無 | 2026 |
+| **5** ⭐ | **Etron US20260068186A1** | **晶粒「第二側壁」熱耦合至上方液冷結構** | 無 | 本輪 |
+| **6** ⭐ | **CAS SIMIT × 上海交大**（`10.1016/j.applthermaleng.2026.133538`） | **logic-HBM 2.5D 之 MCHS 拓撲最佳化** | ⭐⭐⭐ **有** | 本輪 |
+
+➜ ⭐⭐⭐ **第 6 格是該軸第一個帶數字的落點**（前五格全為排他權且零量化值）：
+
+| 指標 | 直通微流道基準 → 拓撲最佳化 |
+|------|------------------------------|
+| 最大熱阻 | **−約 30%** |
+| **泵送功率** | **−57%** |
+| 散熱器內最大熱致 von Mises 應力 | **35.59 → 10.75 MPa（−70%）** |
+
+- 幾何作用分工：**進／出口配置主導主流路**；**二級分支縮短固體傳導路徑以抑制局部熱點**。
+- ⚠ 純模擬；無幾何、材料、流體、絕對流量；泵送功率無絕對 W 值。
+
+### 2. ⭐⭐⭐ 冷卻結構本身也是一個承受熱應力的結構件
+
+35.59 → 10.75 MPa 是**散熱器本體內**的熱致應力，不是封裝、bump 或 TGV 的應力。
+➜ 既載「**熱應拆成運作熱與製程熱兩條線**」須再補一句：**冷卻結構本身是第三個承受熱應力的對象。**
+⚠ 該值為模擬 ⇒ **不可與既載實測值比較**（如 Lau 之 micro-bump 應變 9.12%→4.43%、PCB 側 BGA 8.43%→19%）。
+
+### 3. ⭐⭐ 「冷卻能力也必須被分配，而非均勻供給」
+
+作者明指既有 MCHS 研究**多在標稱工況下談熱流強化**，未同時處理非均勻負載、工況變動、晶粒間溫差與熱致應力 ⇒ 既載「**封裝的面正在成為被分配的資源**」在熱側取得其學術版本。
+⚠ **inter-die ΔT 的改善值未給** ⇒ 📌 **新空缺（見 overview）。**
+
+### 4. 測試熱：量／移除／預測三要素全部在庫，但同屬一個陣營
+
+| 動作 | 件 | 申請人 |
+|------|-----|--------|
+| **量** | **WO2026171391A1（本輪收錄）**：異種金屬熱電偶做進測試系統本體，contact end 置於 DUT 或晶圓處，產生與溫差成正比之電位差 | Technoprobe |
+| **移除** | WO2026162211A1：空間轉換器微流道散除 PT2 | Technoprobe |
+| **預測** | US20260235663A1：ML 預測區域溫度並回頭改測試控制參數（G06N20/00） | Advantest |
+
+⚠⚠⚠ **依規範（41）：Advantest 持有 Technoprobe 2.5% 並為策略夥伴 ⇒ 三件不可計為三個獨立來源；這是一個陣營的完整布局，不是業界共識。**
+⭐⭐⭐ **「量」件之發明人 VENUTI ELENA 即 2026-10-10 收錄之 Chips 回顧（`10.3390/chips5030018`）作者，本輪由 OPS inventor 欄直接證實** ⇒ **規範（38）自推定升級為已驗證。**
+
+*Sources: [[sources/2026-10-11_microchannel-topology-optimization-quantified]]、[[sources/2026-10-11_etron-lateral-hbm-sidewall-assignment]]、[[sources/2026-10-11_technoprobe-thermocouple-measure-leg]]*

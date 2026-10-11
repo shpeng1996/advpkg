@@ -3,7 +3,7 @@ title: "CoWoS — Chip-on-Wafer-on-Substrate"
 category: technology
 tags: [2.5D, interposer, TSMC, AI, HPC, HBM, COUPE, CPO, packaging-constraints, NVIDIA]
 created: 2026-04-24
-updated: 2026-10-10
+updated: 2026-10-11
 sources: [2026-08-13_semieng_1mw-rack-debate-thermal, 2026-08-05_trendforce_tsmc-cowos-cow-outsourcing-osat, 2026-05-24_techtimes_nvidia-computex2026-cowos, 2026-04-24_initial-survey, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-15_trendforce_tsmc-vanguard-stake-sale, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-09_financialcontent_tsmc-130k-cowos-wafers, 2026-06-09_digitimes_tsmc-cowos-soic-capacity-symposium, 2026-06-15_trendforce_tsmc-cowos-gap-narrowing-130k-200k-wafers, 2026-06-10_tomshardware_tsmc-fab-expansion-roadmap-n2-cowos-soic, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_tmtpost_tsmc-cowos-capacity-targets-2026-2027, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-09-30_intel_us-advanced-packaging-reticle-8x-12x-fab9, 2026-10-02_trendforce_cowos-l-mainstream-through-2028, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_amd-us20260282956a1-silicon-bridge-decap, 2026-10-06_epo_micron-interposer-embedded-active-buffers, 2026-10-06_epo_tenstorrent-discrete-pitch-adapter-substrates, 2026-10-06_openalex_gatech-terahertz-nde-8layer-interposer, 2026-10-07_epo_cas-freestanding-3c-sic-interposer, 2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk, 2026-10-07_openalex_amkor-kelly-three-interposer-routes, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-09_semiwiki-tsmc-oip-2026-verification]
 related:
   - wiki/entities/tsmc.md
@@ -839,3 +839,45 @@ SemiAnalysis ECTC 2026（2026-07-02）：
 
 - [[sources/2026-10-10_globalfoundries-tsmc-2b-interposer-deal]]
 - [[sources/2026-10-10_semieng-week159-test-capex-keysight-subthz]]
+
+---
+
+## ⭐⭐⭐ 2026-10-11 更新：mm² 落點表 —— 封裝面積軸自誕生即不可排序
+
+本輪（2026-10-11）首次同時取得多個以 **mm²** 表示的封裝／基板面積數字。依**作業規範（34）（37）**（任何數字須標明分母／分子口徑，未標者不得排序、不得相減、不得宣告障壁突破），本頁立下列落點表，**並逐格標註量測對象**。
+
+| mm² | 對象描述（來源原文） | 量測對象判定 | 來源 | 日期 |
+|-----|----------------------|--------------|------|------|
+| **~2,500** | "conventional 2.5D" | ⚠ **未確認** | Tom's Hardware（引 Broadcom 平台敘述） | 2026-05-21 |
+| **~4,565** | 5.5× reticle 階 | ⚠ **研判為中介層面積，未經來源確認** | Yole（既載） | 既載 |
+| **>6,000** | Broadcom 3.5D XDSiP「封裝面積」，最多 12 HBM | ⚠ **未確認** | Tom's Hardware | 2026-05-21 |
+| **9,350** | 0.8 mm 玻璃核心 CoPoS 試片，5× reticle，**85 × 110 mm** | ✅ **封裝外形** | TSMC × Ibiden × Innolux（既載 2026-09-27；本輪 XenoSpectrum 為第二來源） | 2026-06-11 |
+| **18,000** | TSMC **2027 年 9.5-reticle** CoWoS **封裝基板外形**，**120 × 150 mm** | ✅ **基板外形** | XenoSpectrum（引 TECH+／工商時報） | 2026-09-30 |
+
+➜ ⚠⚠⚠ **使用規則**：
+1. 僅「量測對象判定」欄為 ✅ 的兩格可互相比較（9,350 / 18,000 ≈ **51.9%**，且該比較**跨世代**，文中自承不代表成熟度）。
+2. 標 ⚠ 者**不得與任何其他格排序、相減或相除**。
+3. **不得由本表宣告任何「封裝面積障壁」被突破或達成。**
+4. ⚠ mm² 與 **reticle 倍數**（5.5×／9×／9.5×／12×／14×／40×）之換算僅在同一來源明示時成立；本 wiki **不代為換算**。
+
+### ⭐ 「3.5D」進入業界用語
+
+**Broadcom 3.5D XDSiP** 自述為 **SoIC face-to-face 3D 堆疊 + CoWoS 2.5D** 之組合；首顆 2nm compute SoC 為 **4 顆 N2 compute die + 1 顆 I/O die + 6 顆 HBM 模組**。
+➜ 既載 AMD MI455X（8 XCD 以 SoIC 混合接合堆疊 + CoWoS-L + 12 HBM4）為同一拓撲，但本 wiki 從未記過「3.5D」這個層級命名 ⇒ 📌 **CLAUDE.md §5.1 之技術分類體系應補一層：3.5D ＝ 3D 堆疊 die 再置於 2.5D 載體。**
+*Source: [[sources/2026-10-11_custom-ai-asic-xdsip-package-area-mm2]]*
+
+### CoWoS 配額：絕對片數首次出現
+
+| 客戶 | 佔比（既載 L80 已有，查核一致） | **絕對片數（⭐本輪新增）** |
+|------|--------------------------------|---------------------------|
+| NVIDIA | ~60% | **約 595,000 片** |
+| Broadcom | ~15% | **約 150,000 片** |
+| AMD | ~11% | **約 105,000 片** |
+
+⚠ 片數為**年量**，既載「2026 年底 13 萬 wpm」為**月產能**，**量綱不同，不得互推**。
+⚠ CoWoS 產能另記：2025 約 **65–75K wpm** → 2026 目標 **120–130K wpm**（與既載 115–140K／130K 並列，不改既載）。
+
+### ⚠ 5.5× 良率：並列記錄
+
+本輪 XenoSpectrum 引 TSMC 2026 北美技術論壇為 **>98%**；既載本 wiki 記 **99%**。**並列，不改既載。** 兩者皆未說明是否涵蓋中介層的完整電性篩檢 ⇒ 既載空缺「CoWoS 5.5× 良率 99% 的量測邊界」**不結清**。
+*Sources: [[sources/2026-10-11_nvidia-glass-pressure-18000mm2-schmid-tgv]]、[[sources/2026-10-11_custom-ai-asic-xdsip-package-area-mm2]]*

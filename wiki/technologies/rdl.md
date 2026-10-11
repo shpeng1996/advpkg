@@ -3,7 +3,7 @@ title: "RDL — 重分佈層 / Redistribution Layer"
 category: technology
 tags: [RDL, SAP, dual-damascene, embedded-trace, ETR, polyimide, FPIM, CMP, electromigration, panel-level, pad-less-via]
 created: 2026-09-26
-updated: 2026-10-09
+updated: 2026-10-11
 sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2026-09-27_paper_purdue-ru-cu-em-lifetime-blacks-n-0154, 2026-09-27_paper_copper-interconnect-scaling-roadmap-lines-per-mm, 2026-09-26_article_taiyo-imec-700nm-damascene-rdl, 2026-09-26_article_imec-1um-damascene-rdl-2019-anchor, 2026-09-26_article_amkor-embedded-trace-rdl, 2026-09-26_paper_asi-1um-hdbu-substrate, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-25_paper_dnp-glass-rdl-electromigration-lifetime, 2026-09-25_paper_cornell-glass-on-glass-sio2-rdl, 2026-09-25_paper_asu-molded-core-substrate-warpage, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_shanghai-xianfeng-cn122622683a-glass-interposer-bridge, 2026-10-02_imaps-dpc2026_defect-free-coplanar-copper-via-fill, 2026-10-06_epo_intel-mold-extension-package-to-package-topside-bridge, 2026-10-06_openalex_gatech-terahertz-nde-8layer-interposer, 2026-10-07_epo_amkor-bspdn-oriented-package-embedded-ipd, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-07_openalex_amkor-kelly-three-interposer-routes, 2026-10-08_rdl-free-glass-interposer-trench, 2026-10-08_pku-embedded-glass-fanout-roughness, 2026-10-08_samsung-stacked-rdl-package-bspdn-layer, 2026-10-09_keti-tgv-defect-spectrum-plugging-review]
 related:
   - wiki/technologies/foplp.md
@@ -622,3 +622,25 @@ Scrona 明文把「嚴格的基板平坦度要求」指認為**傳統微影路�
 ⚠ **回顧文、非一手量測；無任何塞孔路線的電性代價數值**（插入損耗、阻抗）⇒ **不得作為數值依據。**
 
 *Source: [[sources/2026-10-09_keti-tgv-defect-spectrum-plugging-review]]*
+
+---
+
+## 2026-10-11 更新：RDL 的兩個新落點 —— 光路開孔＋底填料禁入區；RDL／玻璃界面分層
+
+### 1. 扇出 RDL 的貫穿開孔與周壁（STATS ChipPAC CN121665722A，2026-03-13）
+
+- 扇出式增層互連結構中**貫穿形成開口**，**開口周圍形成周壁結構**；
+- **光子晶粒置於其上，其光子電路與開口對齊**；
+- **周壁之上刻意保留一道間隙**；底填料或封膠沉積於增層結構與光子晶粒之間。
+
+➜ ⭐⭐⭐ **底填料在本 wiki 此前只有兩個失效方向（填不滿、爬太遠）；本件新增第三個：不能進到某些地方（禁入區），且理由首次是光學。**
+➜ 📌 **底填料的設計變數自「量與邊界」擴為「量、邊界、禁入區」三項。**
+⚠ 零量化值（無開口尺寸、無周壁高度、無間隙高度、無對齊公差）。⚠ 專利為前瞻訊號。
+
+### 2. ⭐⭐ RDL／玻璃界面分層是 TGV 在最低電流密度下的主導失效模式
+
+**CEPREI × 哈工大**（`10.1016/j.matdes.2026.117168`）：在 **2.3 × 10⁵ A/cm²** 下，失效由 **RDL／玻璃界面分層**主導，而**電阻幾乎不變**；在 **3.0 × 10⁵ A/cm²** 下則出現 **TGV–RDL 轉角玻璃開裂 + RDL 塑性變形**。FEA 顯示**電流擁塞峰值在 TGV–RDL 轉角，超過孔最窄截面處**。
+➜ ⇒ **RDL 不只是佈線層，它與載體的交界是 TGV 結構的失效起點。**
+⚠ A/cm²（導體橫截面）與 A/mm²（平面佔地）分母意義不同，不得換算或排序（規範 34／37）。
+
+*Sources: [[sources/2026-10-11_statschippac-underfill-keepout-optical]]、[[sources/2026-10-11_tgv-electromigration-three-regimes]]*

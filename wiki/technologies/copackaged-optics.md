@@ -3,7 +3,7 @@ title: "共封裝光學元件 / Co-Packaged Optics (CPO) — TSMC-COUPE™ & Eco
 category: technology
 tags: [CPO, co-packaged-optics, COUPE, TSMC, GlobalFoundries, Samsung, photonics, AI, HPC, networking, OCI-MSA, DWDM, Broadcom, NVIDIA, glass-substrate, ULCVD, TGV, Spectrum-X, NVL72]
 created: 2026-04-25
-updated: 2026-10-09
+updated: 2026-10-11
 sources: [2026-09-27_globalfoundries_siph-cpo-bandwidth-density-coupling-budget, 2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-27_paper_copper-interconnect-scaling-roadmap-lines-per-mm, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-05-07_trendforce_globalfoundries-silicon-photonics-scale-cpo, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-03-17_coherent_cpo-ofc2026-demo, 2026-06-07_digitimes_jcet-3d-packaging-cpo-plant, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_edn_cpo-technology-status-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-06-24_thelec_corning-glass-bridge-cpo, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-14_trendforce_umc-silith-silicon-photonics-hvm, 2026-07-14_trendforce_huawei-baidu-npo-msa, 2026-07-27_trendforce_presscenter_cpo-switches-nvidia-broadcom-coupe, 2026-06-03_3dincites_intel-foundry-emib-cpo-glass-ectc2026, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-07-31_ase_cn224583735u-photoelectric-hybrid-rdl, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-09-26_report_dupont-ttm-polymer-waveguide-reliability, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_bitschips_besi-q1-2026-hybrid-bonding-orders, 2026-10-07_openalex_mit-cpo-vs-pluggable-switch-power-calibration, 2026-10-07_skhynix_cpo-nature-electronics-100tbps-1pjbit-10ns, 2026-10-09_semiwiki-tsmc-oip-2026-verification]
 related:
   - wiki/technologies/rdl.md
@@ -1329,3 +1329,33 @@ LPKF 之 CPO 耦合能力條件為 **表面波紋 ±100 nm、表面粗糙度 ±3
 📌 既載空缺「**Nature Electronics CPO 綜述全文（需 2D/2.5D/3D 三階段各自的量化門檻）**」**本件未結清** —— 本件未給分階段門檻。
 
 *Source: [[sources/2026-10-09_semiwiki-tsmc-oip-2026-verification]]*
+
+---
+
+## ⭐⭐⭐ 2026-10-11 更新：組裝瓶頸在黏著劑；以及延遲成為第三個指標軸
+
+### 1. ⭐⭐⭐ 「CPO 的組裝瓶頸在黏著劑／底填料，而不在光學本身」—— 本輪三個互相獨立的落點
+
+| 側 | 來源 | 處置 | 狀態 |
+|----|------|------|------|
+| **設備** | **ASMPT US20260206337A1**（2026-07-16，family 100418025） | **邊輸送邊 UV 固化** —— 把固化移出對準站的關鍵路徑；UV 光源安裝於輸送器上隨工件移動 | ✅ 收錄 |
+| **OSAT** | **STATS ChipPAC CN121665722A**（2026-03-13，family 98996665） | 扇出 RDL 貫穿開孔對準光子電路，**開口周圍設周壁結構把底填料擋在光路之外**，並刻意保留間隙 | ✅ 收錄 |
+| **材料** | Namics `10.5104/jiep.29.376`（JIEP, 2026-08-31） | **CPO 用透明光學黏著劑** | ⚠ 本輪檢出但 OpenAlex 摘要為空，**未收錄**；列下輪候選 |
+
+➜ **依規範（41）檢查：三者無股權或刊物關係。** 設備側與 OSAT 側兩個已收錄落點同向，材料側待取得。
+➜ ⭐⭐ **OSAT 在 CPO 的角色自「封裝代工」擴及「光路幾何的設計者」**（⚠ 僅排他權層面，無產能或客戶佐證）。既載 CPO 來源以代工廠（TSMC COUPE）、玻璃／光學供應商（Corning、AGC、GlobalFoundries）與設備商為主。
+➜ ⭐⭐ **對準成本有兩個分項**：**精度**（既載 GlobalFoundries：把對準精度自機台轉移到微影）與**佔機時間**（ASMPT：把固化移出關鍵路徑）—— 業界分別在攻擊不同的一項，兩者不矛盾。
+➜ 📌 **分類軸**：STATS ChipPAC 件分類含大量 **H10F（光電元件）** 碼，與本 wiki 既有封裝檢索軸（H10W／H01L／G01R）皆不重疊 ⇒ **光電封裝議題此後應增列 H10F 檢索軸。**
+
+### 2. ⭐⭐⭐ 延遲：CPO 的第三個指標軸（本 wiki 此前完全空白）
+
+| 指標軸 | 既載值 | 來源 |
+|--------|--------|------|
+| **頻寬密度** | 銅 <1 Tb/s/mm vs 光 >5 Tb/s/mm；路線圖 0.5（2026）→ 4 Tb/s/mm（2030） | GlobalFoundries（一手）、既載 |
+| **能效** | 銅 >5 pJ/bit vs 光 2–5 pJ/bit | GlobalFoundries（一手） |
+| **延遲** ⭐新增 | ⚠ **無任何數值**；但被拆為三個可分別歸因的分項：**電互連延遲 / 光傳播延遲 / 電光—光電（EO-OE）轉換延遲** | NTU `10.3390/chips5040035`（2026-10-09） |
+
+➜ 📌 **新空缺：CPO 的 EO/OE 轉換延遲典型值為多少？相對於電互連延遲的比例為何？** 這是既載「Nature Electronics CPO 綜述全文」空缺之外的**第二個 CPO 量化缺口**。
+⚠ 該文提出以**時間常數 τ** 為跨層級統一最佳化目標（作者自創命名「τ-Law」，**非業界或標準用語**），摘要零絕對值、驗證僅為 proof-of-concept 配置間相對比較 ⇒ **其價值在指標軸，不在數據。**
+
+*Sources: [[sources/2026-10-11_asmpt-cure-off-critical-path]]、[[sources/2026-10-11_statschippac-underfill-keepout-optical]]、[[sources/2026-10-11_epic-latency-axis-tau-law]]*

@@ -3,7 +3,7 @@ title: "NVIDIA Corporation"
 category: entity
 tags: [fabless, GPU, AI-accelerator, HBM4, CoWoS, SoIC, Rubin, Feynman, NVL576, CPO, Spectrum-X, Constellation]
 created: 2026-05-03
-updated: 2026-10-02
+updated: 2026-10-11
 sources: [2026-05-24_techtimes_nvidia-computex2026-cowos, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-03-18_trendforce_nvidia-rubin-feynman-soic, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-06_trendforce_google-tpu-cautious-adoption-nvidia, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-06-01_trendforce_nvidia-vera-rubin-tsmc-20pct-revenue, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-19_techtimes_vera-rubin-hbm4-suppliers, 2026-06-14_digitaltrends_tsmc-copos-glass-temporary-carrier, 2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b, 2026-07-27_trendforce_presscenter_cpo-switches-nvidia-broadcom-coupe, 2026-10-02_trendforce_nvidia-glass-substrate-2028-taiwan, 2026-10-02_trendforce_cowos-l-mainstream-through-2028]
 related:
   - wiki/entities/tsmc.md
@@ -265,3 +265,26 @@ NVIDIA GPU 出貨 **2026 年 +~30% YoY**；**CoWoS-L 預期維持主流至 2028*
 - [ ] 📌 既有未結清項：NVIDIA 是否實際採用 EMIB-T；Vera Rubin 的 HBM 份額 —— **本輪無進展**
 
 *Sources: [[sources/2026-10-02_trendforce_nvidia-glass-substrate-2028-taiwan]]、[[sources/2026-10-02_trendforce_cowos-l-mainstream-through-2028]]*
+
+---
+
+## 2026-10-11 更新：對玻璃基板的需求側施壓（據報）＋ CoWoS 配額絕對片數
+
+### 1. ⚠ 玻璃基板：據報催促供應鏈，最快 2028 年前導入
+
+**據報 NVIDIA 正催促台／韓／日基板廠加速玻璃基板開發，最快可能在 2028 年前導入**（XenoSpectrum 2026-09-30，引台灣工商時報引韓媒）。
+⚠⚠ **文中自承不清楚是 NVIDIA 何人所述**；**未揭露哪一款產品／世代**會首先採用；SCHMID 之 CSO 僅稱 Intel／NVIDIA／AMD 供應鏈中多家公司表達興趣。
+⚠ 文中「2027 年 6 月底」為該文**自行推導之觀察基準點**，非 NVIDIA 或供應商設定之期限。
+➜ 既載本 wiki 已記 TSMC「在 NVIDIA 施壓下重啟玻璃研究」（`glass-substrate.md` L710）、Absolics「爭取 NVIDIA 訂單」、Corning 與 Meta／NVIDIA／Amazon 之多年期合約 ⇒ **本件為同一方向的第四筆，但仍全為「據報」。**
+
+### 2. CoWoS 配額：絕對片數首次出現
+
+| 客戶 | 佔比（既載） | **絕對片數（⭐新增）** |
+|------|--------------|----------------------|
+| **NVIDIA** | **~60%** | **約 595,000 片** |
+| Broadcom | ~15% | 約 150,000 片 |
+| AMD | ~11% | 約 105,000 片 |
+
+⚠ 片數為**年量**，既載「2026 年底 13 萬 wpm」為**月產能**，**量綱不同，不得互推**。
+
+*Sources: [[sources/2026-10-11_nvidia-glass-pressure-18000mm2-schmid-tgv]]、[[sources/2026-10-11_custom-ai-asic-xdsip-package-area-mm2]]*

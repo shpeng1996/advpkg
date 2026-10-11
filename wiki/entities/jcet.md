@@ -3,7 +3,7 @@ title: "JCET（江蘇長電科技）"
 category: entity
 tags: [OSAT, China, 3D-packaging, CPO, AI-power-modules, advanced-packaging, Shanghai]
 created: 2026-06-22
-updated: 2026-10-04
+updated: 2026-10-11
 sources: [2026-06-07_digitimes_jcet-3d-packaging-cpo-plant, 2026-06-26_semieng_chip-week-144, 2026-07-29_trendforce_china-advanced-packaging-new-capacity-wave, 2026-08-21_semieng_chip-week-152, 2026-07-17_jcet_cn122421815a-asymmetric-bonding-interface]
 related:
   - wiki/concepts/advanced-packaging-market.md
@@ -173,3 +173,26 @@ US20260239928A1 的邏輯與本 wiki 2026-09-16 對 ASE 的觀察同型：**OSAT
 ### 相關來源
 
 [[sources/2026-10-04_epo_jcet-korea-double-sided-bridge]]
+
+---
+
+## 2026-10-11 更新：STATS ChipPAC 之光電封裝布局 —— 以周壁把底填料擋在光路之外
+
+### CN121665722A（STATS ChipPAC Pte Ltd，公開 2026-03-13，family 98996665）
+
+發明人：YANG QUANFENG、ZHENG YIXIANG、ZUO JIAN、CAI PEIYAN、CHEN GUIZHONG
+分類：**H10F55/20、H10F71/00、H10F77/413/50/933**（光電）＋ H10W70/635、H10W74/\*、H10W90/\*
+
+- 扇出式增層互連結構中**貫穿形成開口**，**開口周圍形成周壁結構（peripheral wall structure）**；
+- **光子晶粒置於其上，其光子電路與該開口對齊**；
+- **周壁之上刻意保留一道間隙（gap）**；底填料或封膠沉積於增層結構與光子晶粒之間。
+
+➜ ⭐⭐⭐ **底填料的第三個失效方向：不能進到某些地方（禁入區），且理由首次是光學**（既載兩個方向為「填不滿」與「爬太遠」—— 後者即 Amkor US20260314484A1 之圓角侵佔電容落點 ≤50 µm）。
+➜ ⭐⭐ **CPO 的組裝側排他權首次出現在 OSAT 手上** ⇒ **OSAT 在 CPO 的角色自「封裝代工」擴及「光路幾何的設計者」**（⚠ 僅排他權層面，無產能或客戶佐證）。
+➜ 📌 **分類軸**：本件含大量 **H10F（光電元件）** 碼，與本 wiki 既有封裝檢索軸（H10W／H01L／G01R）皆不重疊 ⇒ **光電封裝議題此後應增列 H10F 檢索軸。**
+
+⚠ **零量化值**（無開口尺寸、無周壁高度、無間隙高度、無對齊公差）。
+⚠ **既載空缺「JCET 韓國團隊（原 STATS ChipPAC Korea）的產能與客戶」不受本件影響** —— 本件發明人全為中文姓名，研判為中國大陸或新加坡團隊，**與該空缺所指之韓國團隊不同；空缺維持開啟。**
+⚠ **專利為前瞻訊號**：不得敘述 JCET／STATS ChipPAC 已量產此光路開孔結構。
+
+*Source: [[sources/2026-10-11_statschippac-underfill-keepout-optical]]*

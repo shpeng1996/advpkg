@@ -3,7 +3,7 @@ title: "Absolics（SKC 子公司）"
 category: entity
 tags: [glass-substrate, TGV, Absolics, SKC, RDL, copper-grain, contamination, US-supply-chain]
 created: 2026-09-21
-updated: 2026-10-04
+updated: 2026-10-11
 sources:
   - 2026-04-30_epo_absolics-glass-substrate-impurity-and-grain-symmetry
   - 2026-07-24_trendforce_skc-absolics-glass-substrate-delayed-2027
@@ -84,3 +84,39 @@ Absolics 的兩件請求項**都不是幾何或機械規格**，而是**組成�
 ### 相關來源
 
 [[sources/2026-10-04_openalex_purdue-cu-microstructure-tsv-stress]]
+
+---
+
+## ⭐⭐⭐ 2026-10-11 更新：第二期產能 6×、股權精確值、資金用途落在認證
+
+| 項目 | 值 | 狀態 |
+|------|-----|------|
+| 第一期產能 | **12,000 m²/年** | 既載 |
+| **第二期產能** | **72,000 m²/年（6 倍）** | ⭐**新增** |
+| 第一期投資 / 潔淨室 | **$240M** / **120,000 sq ft** | ⭐新增 |
+| 一＋二期總規劃 | **$600M** | 既載 |
+| CHIPS Act 直接補助 | **$75M** | 既載 |
+| **股權** | **SKC 70.05% / Applied Materials 29.95%** | ⭐**新增**（既載僅「與 AMAT 合資」） |
+| 本次增資 | **₩401.1B（約 $290M）** rights offering（公告 2026-08-21） | ⭐新增 |
+| 三年投資計畫 | **₩589.6B（約 $426M），2026–2028** | ⭐新增 |
+| **資金用途（自述）** | **客戶評估、認證、良率改善** + Covington 設備升級（**非擴產**） | ⭐新增 |
+| 狀態 | PoC 測試至 2026 H1；**2026 H2 擴大評估**；embedding 與 non-embedding 兩類均在可靠度認證中；**2026 Q1 已產出量產樣品** | 更新 |
+
+### ⚠⚠ 量產時程：三說並列（不覆寫既載）
+
+| 說法 | 來源 |
+|------|------|
+| **2026 年底** | 既載；另 Tom's Hardware 2026-08-27 |
+| **最早 2027 初次商業出貨**，有意義量能 **2028–2029** | AtlasPCB 2026-08-28（引首爾經濟） |
+| 量產滑至 **2027**，最終可靠度測試 2026 完成 | 韓媒 2026-07（經 XenoSpectrum 彙整） |
+
+### ⚠⚠⚠ 獨立性修正（規範 41）
+
+**AMAT 持股 29.95%** ⇒ **AMAT 的玻璃／TGV 技術發言（「TGV 失效在界面與孔緣：種子層附著、孔緣應力集中」）與 Absolics 的量產宣告／專利（溶出雜質 P ≤1,500 ppb／Zn ≤500 ppb；RDL 銅晶粒長寬比 C/D 0.85–0.99）此後不得計為兩個獨立來源。**
+該論述之獨立性改以其餘來源為準：**KETI 缺陷譜、SKKU Cu-MSA、CEPREI × 哈工大電遷移、SCHMID**。
+
+### ⚠ 操持破損（二手，無分母）
+
+引 **MIT Technology Review**：早期量產試作中「**每隔幾天就有數百片玻璃面板破裂**」。⚠ **無分母、無日期 ⇒ 不得量化**；僅記為「早期試作存在機械破損問題」之定性佐證。
+
+*Sources: [[sources/2026-10-11_absolics-phase2-72000m2-amat-stake]]、[[sources/2026-10-11_nvidia-glass-pressure-18000mm2-schmid-tgv]]*
