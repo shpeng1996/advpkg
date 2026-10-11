@@ -2,7 +2,7 @@
 
 **更新時間 Updated**：2026-10-11
 **頁面總數 Total Pages**：909
-**原始來源數 Sources**：832（含 9 個合併轉向頁、1 個去重失誤更正頁、1 個橫向綜整頁；**本輪新增 15 篇：articles 5 / patents 5 / papers 5 —— 三軌全數執行；⭐ `device_bash`（使用者電腦 Linux workspace）本輪全程可用，git 狀態開場即為乾淨且與 origin 同步、`tmp_obj_*` 開場為 0；⭐ OpenAlex 經 `device_bash` 原路徑六組查詢全部 HTTP 200（作業規範 33 第三次成立）；⭐ EPO OPS 僅 7 次 HTTP（1 auth + 5 search + **1 次 POST 批次取 8 件摘要**）—— 批次 abstract 端點為本輪新得之額度節約手法；⚠⚠ **本輪一次取得五個封裝面積 mm² 數字，其中三個的量測對象未經來源定義 ⇒ 於 `cowos.md` 立「mm² 落點表」並明令不得排序相減（規範 34／37 首次在錯誤發生前套用）**；⚠⚠ **Applied Materials 持有 Absolics 29.95% ⇒ 依規範（41）改寫既載「TGV 失效在界面與孔緣」之來源獨立性**）⭐ 以檔案計數交叉驗證：894 + 15 來源頁 = **909**，sources 目錄 = **832**（832 + 46 entities + 17 technologies + 6 concepts + 5 analyses + 3 根目錄頁 = 909 ✓）
+**原始來源數 Sources**：832（含 9 個合併轉向頁、1 個去重失誤更正頁、1 個橫向綜整頁；**本輪新增 15 篇：articles 5 / patents 5 / papers 5 —— 三軌全數執行；⭐ `device_bash`（使用者電腦 Linux workspace）本輪全程可用，git 狀態開場即為乾淨且與 origin 同步（⚠ 同輪更正：開場 `tmp_obj_*` 計數因命令未遞迴而無效，收場以 find 量得 558）；⭐ OpenAlex 經 `device_bash` 原路徑六組查詢全部 HTTP 200（作業規範 33 第三次成立）；⭐ EPO OPS 僅 7 次 HTTP（1 auth + 5 search + **1 次 POST 批次取 8 件摘要**）—— 批次 abstract 端點為本輪新得之額度節約手法；⚠⚠ **本輪一次取得五個封裝面積 mm² 數字，其中三個的量測對象未經來源定義 ⇒ 於 `cowos.md` 立「mm² 落點表」並明令不得排序相減（規範 34／37 首次在錯誤發生前套用）**；⚠⚠ **Applied Materials 持有 Absolics 29.95% ⇒ 依規範（41）改寫既載「TGV 失效在界面與孔緣」之來源獨立性**）⭐ 以檔案計數交叉驗證：894 + 15 來源頁 = **909**，sources 目錄 = **832**（832 + 46 entities + 17 technologies + 6 concepts + 5 analyses + 3 根目錄頁 = 909 ✓）
 
 ---
 
