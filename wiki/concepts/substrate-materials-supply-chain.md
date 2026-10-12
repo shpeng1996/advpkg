@@ -3,7 +3,7 @@ title: "基板與材料供應鏈 / Substrate & Materials Supply Chain（ABF・T-
 category: concept
 tags: [ABF, Ajinomoto, substrate, supply-chain, Ibiden, Unimicron, Shinko, SEMCO, Kinsus, Nan-Ya-PCB, glass-core, warpage, bottleneck]
 created: 2026-10-03
-updated: 2026-10-11
+updated: 2026-10-12
 sources: [2026-10-03_tomshardware_abf-substrate-state-2026, 2026-10-03_thelec_philoptics-tgv-2mm-glass, 2026-10-03_digitaltoday_jntc-tgv-thickness-lineup, 2026-10-03_epo_semco-coreless-interposer-organic-bridge, 2026-10-06_xenospectrum_ajinomoto-abf-cut-unconfirmed-layers-per-side, 2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage, 2026-10-07_atlaspcb_abf-price-30pct-third-distinct-30-figure, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch]
 related: [technologies/glass-substrate.md, concepts/advanced-packaging-market.md, concepts/geopolitics-advanced-packaging.md, entities/ibiden.md, entities/shinko.md, entities/semco.md, entities/absolics.md, entities/agc.md]
 ---
@@ -335,3 +335,34 @@ Samsung 官方（Tech Blog, 2025-05-26；內容基礎 2022 Samsung Foundry Forum
 ⚠ 本件日期 2025-05、內容 2022 ⇒ **不得作為 2026 現況之證據**；H-Cube 是否已量產本 wiki 無來源。
 
 *Sources: [[sources/2026-10-11_pfas-temporary-bonding-third-process-area]]、[[sources/2026-10-11_samsung-cube-family-official-taxonomy-h-cube]]*
+
+## 2026-10-12 新增：玻璃供應側的第四類參與者；以及「以化學配方換掉一項製程氣體」
+
+### ⭐⭐⭐ 玻璃基板供應側新增第四類參與者
+
+- **Intel × Lens Technology（藍思科技，2026-07-27）**：Lens 貢獻**精密玻璃加工、雷射製造、玻璃基板研發與大規模量產**。
+- ⇒ 📌 既載供應側三類（**基板廠** Absolics/SKC、SEMCO、Shinko、Unimicron、Ibiden；**玻璃材料廠** Corning、NEG、AGC、Schott；**設備／製程商** SCHMID、AMAT、LPKF）**新增第四類：消費電子蓋板玻璃／精密玻璃加工廠。**
+  ⇒ **「誰能把玻璃做成基板」的答案應包含「誰已經在大量切割、鑽孔與雷射加工玻璃」。**
+- ⚠⚠ **MOU 層級，零量化值、無第三方佐證、未提及玻璃芯或面板。** 與既載 Shinko（22 層＝兩面各 11 層銅、茂原廠 FY2028）之揭露密度差距極大，**不得並列為同等強度之佐證。**
+- ⚠ 既載**規範（41）**（AMAT 持 Absolics 29.95%／SKC 70.05%，兩者不計為獨立來源）維持適用；既載 TGV 論述仍以 **KETI、SKKU Cu-MSA、CEPREI × 哈工大、SCHMID** 為準。
+
+### ⭐⭐⭐ 「以化學配方換掉一項製程氣體」
+
+- **SeoulTech（10.5781/jwj.2026.44.4.2，2026-08-31）：在大氣中完成加壓輔助之 Cu-Cu 燒結接合**，以**甘醇基還原性溶劑中 CuO 的原位還原**取代成形氣（forming gas）／真空腔。**Cu:CuO = 8:2 最佳；300 °C／10 MPa／大氣中，5 min 達剪切強度 25.1 MPa；7:3 時還原不完全、bond-line 殘留氧化物而退化。**
+- ⇒ 📌 **其手法與既載 Resonac 耐化學切割膠帶同型（把製程條件的要求轉嫁給材料配方），但更進一步：Resonac 是讓材料承受條件，本件是讓材料自己製造條件。**
+- ⇒ 📌 **「輔助步驟」的處置此後記為兩類：把該步驟做得更好，或把該步驟的功能移進材料裡使其消失。** 詳見 `technologies/hybrid-bonding.md`。
+- ⚠ **本件與 PFAS 常駐主題鄰接但未提及任何法規動機，不計為 PFAS 論述之佐證。** 既載 PFAS 三個新製程群（光阻／BARC 含 EUV、清洗與界面活性劑、暫時接合與解接合材料）與「**解接合路徑本身已是一個競爭維度**」維持不變。
+- ⚠⚠ **目標應用為功率模組 die-attach，非 AI 加速器封裝**；**需加壓 10 MPa**，非無壓燒結。其數字不得套用於 HBM 或 chiplet 之接合預算。
+
+### ⚠ 材料與 die shift 的關聯（2026-10-12 新增）
+
+- ⭐⭐ **轉移膠帶在模封時膨脹、封膠冷卻時收縮 ⇒ 面板翹曲並使晶粒位移**（SemiEng，Fraunhofer IZM 脈絡）。
+  ⇒ 📌 **die shift 的材料側成因此後記為「兩個相反方向的體積變化，發生在同一製程的兩個時點」**，而非單一材料的 CTE 不匹配。詳見 `technologies/foplp.md`。
+- 其他材料側陳述（⚠ 全部無數值）：有機介電質中的銅柱因 CTE 不匹配與收縮在銅／介電質界面產生裂紋（Tanja Braun, Fraunhofer IZM）；環氧封膠受熱與電場應力脆化 ⇒ 介電崩潰與濕氣侵入（Tina Thomas et al., Fraunhofer IZM）；矽膠熱／化學穩定但不耐水；**雙層封裝材 = 耐濕剛性聚胺酯 + 順應性矽膠**（U. Maryland）。
+
+### ⚠ 低 k 介電質（2026-10-12 新增，鄰接）
+
+- **非多孔 aBN：k ≈ 2、楊氏模數 ~50 GPa**，被提為 BEOL 互連**與混合接合界面**之候選（⚠ 回顧值非實測）。
+  ⇒ **「降 k 與維持機械強韌度是一組取捨，而多孔化是把取捨推到可靠度極限的那條路」** —— 本輪取得該取捨的兩個端點（另一端為既載 Apple 之空氣間隙腔體）。詳見 `entities/apple.md`、`technologies/hybrid-bonding.md`。
+
+來源：[[sources/2026-10-12_intel-lens-technology-glass-substrate]]、[[sources/2026-10-12_in-air-cu-sinter-auxiliary-step-removed]]、[[sources/2026-10-12_die-shift-fourth-remedy-custom-interposer]]、[[sources/2026-10-12_abn-nonporous-lowk-bonding-interface]]

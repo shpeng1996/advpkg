@@ -3,7 +3,7 @@ title: "先進封裝市場 / Advanced Packaging Market"
 category: concept
 tags: [market, forecast, CAGR, supply-chain, HBM, chiplet, geopolitics, equipment, SIA, Omdia, Yole, WFE, substrate-market, framework]
 created: 2026-04-24
-updated: 2026-10-03
+updated: 2026-10-12
 sources: [2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-07-31_semieng_chip-week-149, 2026-04-24_initial-survey, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2026-01-23_trendforce_chip-tools-tel-asml, 2026-03-05_trendforce_intel-emib-billions, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2025-12-18_trendforce_micron-capex-hbm4, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2025-05-13_trendforce_top10-osat-2024, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-04-16_ontoinnovation_dragonfly-g5-qualified, 2026-06-23_communicationstoday_foplp-glass-substrate-market-8b-2030, 2026-06-29_trendforce_china-osat-tongfu-jcet-investment, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-26_semieng_chip-week-144, 2026-07-01_trendforce_ase-price-hike-20pct, 2026-07-04_semieng_chip-week-145, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-07-03_trendforce_anthropic-samsung-advanced-packaging, 2026-05-08_trendforce_ajinomoto-abf-1b-land-buy-2032-margins, 2026-07-24_semieng_chip-week-148, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-08-06_siliconbox_500m-units-panel-scale, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-10-02_imaps-dpc2026_defect-free-coplanar-copper-via-fill, 2026-10-02_trendforce_cowos-l-mainstream-through-2028, 2026-10-02_trendforce_nvidia-glass-substrate-2028-taiwan, 2026-10-02_bitschips_besi-q1-2026-hybrid-bonding-orders]
 related:
   - wiki/entities/tsmc.md
@@ -1359,3 +1359,40 @@ Bits&Chips（2026-04-23）：訂單 **€269.7 M（YoY >2×）**、營收 **€1
 ### 相關來源
 
 [[sources/2026-10-03_tomshardware_abf-substrate-state-2026]]、[[sources/2026-10-03_semieng_custom-hbm-business-model]]、[[sources/2026-10-03_imaps_deca-panel-level-fanout-qfn]]
+
+## 2026-10-12 新增：中介層段的外包、HBM4 的三段串列化、以及雙向曝險數字
+
+### ⭐⭐⭐ 瓶頸的形狀：可外包段與不可外包段
+
+- **TSMC × GlobalFoundries：約 20 億美元、初始期五年、GF 紐約州 Malta 廠、2028 H1 放量**，GF 供應 **CoWoS 生態系所用之矽中介層（含內嵌深溝槽電容）**。
+- ⇒ 📌 **既載 CoWoS 瓶頸論述以總產能為單一軸；本筆把它拆成可外包段（中介層）與不可外包段（接合）。**
+- ⚠⚠ **紓解時點 2028，非 2027** ⇒ 來源推論 2027 年配額與定價槓桿仍在 TSMC 手上。
+- ⚠ 推導值（非 GF 公告）：約 **4 億美元／年**，約為 GF **2025 年營收 67.9 億美元**之 **6%**；來源自評信心度 **85%**。
+- ⚠ 「CoWoS 產能售罄至 2026」出現於同一來源但**未標出處**，僅記為並列說法。
+
+### ⭐⭐⭐ HBM4 的產出被三段串列化鎖定
+
+- **Altsets 四段式結構**：先進 DRAM 晶粒 → **邏輯 base die** → **堆疊與封裝** → 加速器平台。堆疊與封裝段加入接合、良率、熱、封裝四類限制。
+- ⭐ **說明性示例（本文自建假設，非實測）**：**100 DRAM 堆疊 / 80 相容 base die / 70 完成組裝 ⇒ 成品 70；單獨再加 20 個 DRAM 堆疊，成品數不增加。**
+- ⇒ 📌 **「多投入上游不增加產出」此命題首次以 HBM 為對象出現。** 既載同形狀論述（CoWoS 配額 9,350/18,000 = 51.9%；Ajinomoto 對中國大陸減供 30% 且替代天花板在增層層數）皆為**單一瓶頸**；本件是**三段相乘**。
+- ⇒ 📌 **且 base die 同時是最貴的一項（成本為 core die 的 3–4 倍，⚠ 業界消息來源）與經常是 min() 裡最小的一項** ⇒ **一個「貴且會卡」的中間節點。**
+
+### ⚠ 雙向曝險（第三方估算，不得與財報並列）
+
+| 關係 | 數值 |
+|------|------|
+| NVIDIA 佔 SK hynix 營收 ／ SK hynix 佔 NVIDIA COGS | **27.88% ／ 27.33%**（近乎對稱 ⇒ 互為最大單一對手方） |
+| NVIDIA 佔 Micron 營收 ／ Micron 佔 NVIDIA COGS | **17.62% ／ 14.00%** |
+| Apple 佔 SK hynix 營收 ／ SK hynix 佔 Apple COGS | 8.75% ／ 1.76% |
+| Micron COGS 構成 | ASML 11.91%、Lam 5.52%、AMAT 3.84%、KLA 2.84%、Shin-Etsu 1.34% |
+| Micron 佔 ASML 營收 | 7.64% |
+
+- ⚠⚠ **全部為 Altsets 自家估算，非公司揭露。** 不得與任何財報數字並列排序。
+- SK hynix 稱與**約 10 家主要客戶**有長期協議。
+
+### ⚠ base die 的排他權競爭者包含不製造任何一層的第三方
+
+- **Neurophos WO2026207273A1（2026-10-01）**：**位址空間切兩個子集**，第二子集導向 **base die 上的 local processing logic**。申請人為**光子運算新創**，既非記憶體廠、亦非代工廠、亦非加速器廠。
+- ⇒ 📌 **既載空缺「HBM base die 供應鏈」之範圍應擴大：它不只是一條供應鏈，也是一個排他權競爭的場所。** ⚠ 零量化值，專利為前瞻訊號。
+
+來源：[[sources/2026-10-12_globalfoundries-2b-tsmc-interposer-malta]]、[[sources/2026-10-12_hbm4-second-supply-chain-serialization]]、[[sources/2026-10-12_skhynix-intel-foundry-hbm4e-base-die]]、[[sources/2026-10-12_neurophos-base-die-as-compute-site]]

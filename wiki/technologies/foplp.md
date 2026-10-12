@@ -3,7 +3,7 @@ title: "FOPLP — 扇出面板級封裝 / Fan-Out Panel-Level Packaging"
 category: technology
 tags: [fan-out, panel-level, TSMC, Samsung, ASE, Powertech, Innolux, CoPoS, InFO, cost-reduction, delamination, DCB, CTE]
 created: 2026-05-03
-updated: 2026-10-11
+updated: 2026-10-12
 sources: [2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-07-31_trendforce_ase-capex-record-10-5b-leap-foplp, 2025-09-12_trendforce_foplp-competitive-2025, 2026-04-13_trendforce_copos-pilot, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-21_3dincites_acm-wlp-plp-process-trends, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-15_digitimes_manz-310mm-foplp-ecd-equipment, 2026-06-13_digitimes_linkotech-foplp-rollout-traction, 2026-06-20_prnewswire_manz-asia-310mm-ecd, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_digitimes_tsmc-foplp-timeline-skepticism, 2026-07-06_trendforce_cfmee-plp2000-china-first-plp, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-08-06_siliconbox_500m-units-panel-scale, 2026-02-18_siliconbox_ep4697377a1-fanout-panel-metal-sealing-ring, 2026-07-28_xianfeng_cn122476946a-alignment-mark-protection, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage, 2026-10-06_thelec_sec-xray-tsv-tgv-inspection-1um, 2026-10-07_epo_evg-zonewise-adaptive-litho-die-shift, 2026-10-07_epo_evg-inorganic-dual-release-layer-common-solvent, 2026-10-08_pku-embedded-glass-fanout-roughness]
 related:
   - wiki/technologies/rdl.md
@@ -1112,3 +1112,41 @@ Cu stud 輸入晶圓 → 切單與晶粒貼附 → **第一次封膠** → **載
 ➜ ⚠ **本件無底填料、無 TIM、無介電質之 PFAS 敘述** ⇒ 封裝材料中氟化物依賴度最高的幾類仍未被涵蓋。
 
 *Source: [[sources/2026-10-11_pfas-temporary-bonding-third-process-area]]*
+
+## 2026-10-12 新增：die shift 的補償對象可以列成四類，而「把機台對準做更準」只是其中之一
+
+### ⭐⭐⭐ 四類補償對象（本輪一次補齊兩類）
+
+| # | 補償對象 | 手法 | 來源 | 量化值 |
+|---|----------|------|------|--------|
+| 1 | **曝光** | 分區自適應微影（zone-wise adaptive litho） | EV Group WO2026201292A1（既載 2026-10-07） | ⚠ 無 |
+| 2 | **對手件** | **以 maskless litho 量測最終晶粒位置，再做一片「RDL 焊墊位置已調整」的客製中介層** | ⭐ **Fraunhofer IZM**（本輪，SemiEng） | ⚠ 無；**來源明言成本與產出可行性未知** |
+| 3 | **放置方式** | **矽橋上的預製凹穴（pre-fabricated wells）** | ⭐ **Intel EMIB（Gang Duan）**（本輪，SemiEng） | ⚠ 無 |
+| 4 | **載體自身** | **反應層局部觸發使基板變形，把結構推到目標位置** | ⭐ **EV Group WO2026092821A1**（本輪，專利） | ⚠ 無 |
+| （基準） | **機台** | 逐 die 對準精度 | AMAT × Besi Kinex **100 nm @3σ**；2026 新機 **50 nm**；路線圖 **<25 nm**（既載） | ✓ 有 |
+
+⇒ 📌 **既載「D2W pitch 受限於機台逐 die 對準」之簡單歸因已於 2026-09-18 被推翻一次；本輪首次給出它被推翻之後的完整形狀——機台只是五個可下手處之一。**
+⇒ ⚠⚠ **方法論警訊：五類之中只有「機台」這一類有量化值。** 其餘四類全為定性（三件專利 + 一則無日期文章）⇒ **不得據此排序各類處置的有效性，亦不得宣告任何一類優於機台路線。**
+
+### ⭐⭐⭐ die shift 的材料側成因首次被說出
+
+- **轉移膠帶在模封時膨脹；封膠冷卻時收縮** ⇒ **面板翹曲並使晶粒位移**（SemiEng，Fraunhofer IZM 脈絡）。
+- ⇒ 📌 **die shift 的成因此後記為「兩個相反方向的體積變化，發生在同一製程的兩個時點」**，而非單一材料的 CTE 不匹配。
+- ⚠ 既載 FOPLP 論述把翹曲與 debonding 列為瓶頸，但**未曾指出這兩種高分子的 CTE 方向相反且作用時點不同**。
+
+### ⭐⭐ EV Group 同時持有兩條互斥路線
+
+- **WO2026201292A1**：接受基板的位置、**改曝光**去配合；**WO2026092821A1**：接受曝光、**改基板**去配合。相隔五個月公開。
+- ⇒ 📌 **「同一公司在相反方向布局」之第三例**（前兩例：Apple 挖空橋 vs RDL 應力改圖案；SEMCO 玻璃芯 vs 完全無核心）。**設備商對同一製程問題同時持有兩條互斥路線的排他權，應記為一種布局型態，而非矛盾。**
+
+### ⭐⭐ RDL-first 的載體可以是彈性體（2026-10-12 新增）
+
+- **CETC × 東南大學（10.1108/mi-02-2026-0050）**：**12 吋晶圓級 RDL-first，PDMS 作為最終基材**；流程為暫時載板 → RDL → 覆晶接合 → PDMS 模封。
+- ⇒ 📌 **「載體的材料」新增一格：載體可以是柔性的，而使其可能的機制正是 RDL-first 的順序本身——佈線不必在一個會變形的表面上完成，因為佈線先做好、變形後發生。**
+- ⚠⚠ **應用域為可穿戴／植入式 RF 原型（顱內訊號處理），非 AI 加速器封裝**；其 pitch、密度與熱預算**不可比**。本筆之效力僅及於「RDL-first 的載體材料範圍」這一條結構性論述。詳見 `technologies/rdl.md`。
+
+### ⚠ 面板級設備生態（並列佐證，不升格）
+
+- **矩形面板減少浪費，但製程與檢測設備多為晶圓最佳化**（SemiEng）——既載已有多個落點，本筆為並列佐證。
+
+來源：[[sources/2026-10-12_die-shift-fourth-remedy-custom-interposer]]、[[sources/2026-10-12_evg-wafer-as-actuator]]、[[sources/2026-10-12_rdl-first-on-an-elastomer]]

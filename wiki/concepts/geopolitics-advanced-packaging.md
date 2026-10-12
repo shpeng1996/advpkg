@@ -3,7 +3,7 @@ title: "先進封裝地緣政治 / Geopolitics of Advanced Packaging"
 category: concept
 tags: [geopolitics, US-China, CHIPS-Act, supply-chain, chiplet, NAPMP, export-control, glass-substrate, standards-war, BOE, Corning, Absolics]
 created: 2026-04-26
-updated: 2026-10-07
+updated: 2026-10-12
 sources: [2026-09-27_semieng_chip-week-156-india-tata-besi-izmo, 2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-08-10_trendforce_skhynix-chongqing-sale-global-reset, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-23_trendforce_china-osat-sj-semiconductor-ipo, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-08-05_3dincites_iftle636, 2026-03-23_trendforce_musk-terafab-tsmc-packaging, 2026-04-22_trendforce_sk-hynix-indiana-us-plant, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-16_nokia_pennsylvania-atp-expansion, 2026-06-30_amkor-ir_arizona-7billion-groundbreaking, 2026-06-30_digitimes_us-packaging-capacity-10pct-2032, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-10_tomshardware_micron-250b-us-investment-globalwafers, 2026-07-10_semieng_chip-week-146, 2026-07-14_trendforce_huawei-baidu-npo-msa, 2026-08-21_semieng_chip-week-152, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_asi-1um-hdbu-substrate, 2026-10-02_trendforce_nvidia-glass-substrate-2028-taiwan, 2026-10-02_trendforce_intel-microled-glass-24-layer, 2026-10-06_xenospectrum_ajinomoto-abf-cut-unconfirmed-layers-per-side, 2026-10-07_atlaspcb_abf-price-30pct-third-distinct-30-figure]
 related: [wiki/concepts/advanced-packaging-market.md, wiki/entities/amkor.md, wiki/entities/ase-group.md, wiki/technologies/ucie.md]
 ---
@@ -973,3 +973,27 @@ TrendForce（2026-09-22，Intel 微 LED 玻璃基板專利報導）：**Intel �
 ### 相關來源
 
 [[sources/2026-10-07_atlaspcb_abf-price-30pct-third-distinct-30-figure]]
+
+## 2026-10-12 新增：中介層的美國本土化，與玻璃基板的中國大陸加工能力
+
+### ⭐⭐⭐ 矽中介層首次出現美國本土來源
+
+- **GlobalFoundries × TSMC：約 20 億美元、初始期五年、GF 紐約州 Malta 廠、2028 H1 放量**，產品為**矽中介層（含內嵌深溝槽電容）**，供 **TSMC 的 CoWoS 生態系**。
+- 來源框架：「**AI 加速器封裝的第一個美國本土中介層來源**」（⚠ 本文框架，非獨立佐證）。
+- ⇒ 📌 **既載本頁之本土化論述以 CHIPS Act 補助與產能遷移為軸**（既載 Absolics 喬治亞廠 $75M CHIPS Act 補助為同型落點）。**本筆的性質不同：它是一筆由民間客戶（TSMC）驅動的供應來源在地化，而非補助驅動。**
+- ⚠⚠ **時點為 2028 H1**，⇒ **2026–2027 年內對地緣風險分散無實質效果。**
+- ⚠ 未揭露節點、產能、CoWoS 層級，**不得據此估算可替代比例。**
+
+### ⭐⭐ 玻璃基板：Intel 的加工夥伴在中國大陸
+
+- **Intel × Lens Technology（藍思科技，2026-07-27）**：Lens 貢獻**精密玻璃加工、雷射製造、玻璃基板研發與大規模量產**。
+- ⇒ 📌 **本頁既已提及 Lens Technology；本筆為其首次以玻璃基板角色入庫之一手來源。**
+  ⇒ ⚠⚠ **值得記為一個張力點：Intel 的玻璃基板路線同時押注日系基板廠（Shinko，茂原廠 FY2028）與中國大陸精密玻璃加工商（Lens）**，而既載本頁之供應鏈風險論述（ABF、玻璃、材料）多以「減少對單一地區依賴」為軸。
+- ⚠⚠ **MOU 層級，無投資額、無廠區、無時程、無產能、零量化值** ⇒ **不得推論任何產能配置或地緣意圖。**
+
+### ⚠ HBM base die 的代工歸屬亦具地緣面向（2026-10-12）
+
+- **SK hynix 據報考慮自 HBM4E 起改用 Intel Foundry 製作 base die**（⚠ 業界消息來源，無官方確認），理由含**降低對 TSMC 集中度**與**議價槓桿**（後者為分析師觀點）。
+- ⚠ **與既載 2026-03-20 TrendForce 件（考慮 TSMC 3nm）方向相反，兩者皆為消息來源層級** ⇒ **並列記為未定案，不得取其一為定論。**
+
+來源：[[sources/2026-10-12_globalfoundries-2b-tsmc-interposer-malta]]、[[sources/2026-10-12_intel-lens-technology-glass-substrate]]、[[sources/2026-10-12_skhynix-intel-foundry-hbm4e-base-die]]

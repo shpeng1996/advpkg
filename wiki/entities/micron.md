@@ -3,7 +3,7 @@ title: "美光科技 / Micron Technology"
 category: entity
 tags: [memory, HBM4, DRAM, NAND, CapEx, Virginia, Idaho, New-York, onshoring]
 created: 2026-05-03
-updated: 2026-10-08
+updated: 2026-10-12
 sources: [2026-09-27_semieng_chip-week-156-india-tata-besi-izmo, 2025-12-18_trendforce_micron-capex-hbm4, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-03-17_trendforce_gtc2026-key-takeaways, 2025-08-05_3dincites_iftle636-samsung-lsb-micron-virginia, 2026-01-23_trendforce_hbm4e-development, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-26_semieng_chip-week-144, 2026-06-25_thelec_micron-q3-fy2026-record, 2026-07-06_trendforce_micron-hiroshima-fab-hbm-1gamma, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-10_tomshardware_micron-250b-us-investment-globalwafers, 2026-07-10_semieng_chip-week-146, 2026-08-21_semieng_chip-week-152, 2026-10-06_epo_micron-interposer-embedded-active-buffers, 2026-10-08_micron-cryogenic-package-hea-solder]
 related:
   - wiki/technologies/hbm4.md
@@ -387,3 +387,23 @@ Micron 於 2026-09 公開之專利顯示：**基板含金屬核心，其強度�
 ### 相關來源
 
 - [[sources/2026-10-08_micron-cryogenic-package-hea-solder]]
+
+## 2026-10-12 新增：封裝層修復的排他權；以及出貨時程與曝險數字
+
+### 專利訊號 / Patent Signals（2026-10-12 新增，本頁首批 Micron 專利之一）
+
+- ⭐⭐⭐ **WO2026049956A1（family 98899693，2026-03-05，發明人 ROONEY RANDALL J 等）**：記憶體封裝內除多顆記憶體元件外**另加一顆 additional die**；其一類實施為該 die 含**冗餘儲存，存放「多顆」記憶體元件上缺陷記憶胞所對應的資料**，且**可補充亦可取代各顆元件自身的冗餘記憶體**；該 die 的元件亦可**減少或消除模組層級上的若干元件**。
+  ⇒ 📌 **修復資源的位階首次上移：既載缺陷處置全在晶粒內（內建冗餘列／行、修復熔絲）或裝配前（KGD／KGI 篩選），本件把修復資源做成堆疊裡的一個鄰居。**
+  ⇒ 📌 **這使既載長期空缺「KGD 的標準化定義」更難成立，並應記為兩層問題：量測口徑（如何證明是好的）與歸屬口徑（對哪一種封裝而言是好的）。** 若封裝能替代各顆的冗餘，則「可接受的缺陷胞數量」是**晶粒與封裝的組合**的性質，而非晶粒的性質。
+  ⇒ 📌 **與既載 Samsung "H-Cube"（把大面積 ABF 拆成較小 ABF/FBGA + 較大 HDI，2026-10-11）構成同一邊界的兩個相反方向**：H-Cube 把功能推出去分層，本件把模組零件吸進封裝。
+  ⚠ **零量化值**（無冗餘容量、無修復率、無面積代價）；分類全為 **G11C**（含 G11C29/12），**無封裝結構碼**。專利為前瞻訊號，不得推論任何 Micron 產品已採此架構。
+- ⚠ **本輪另檢得但未收**（本頁僅記存在）：**US20260283054A1（family 101295473，低溫／cryogenic 環境之封裝組成）與 US20260282214A1（family 92460401，stiffener 裝置）皆為 family 層級已收錄。**
+- ⚠ **檢索觀察**：`pa="micron" and ti,ab="package" and pd within "2026"` 僅命中 **3 件** ⇒ 📌 **Micron 在「標題／摘要含 package」之布局極稀疏，其封裝相關排他權須改以 G11C 分類或結構語檢索**（與本輪 Neurophos、Besi 兩件同屬「封裝排他權落在 G11C」之結論）。
+
+### 出貨與曝險（2026-10-12 新增）
+
+- **2026-06 自述：HBM4 已對其領先客戶平台大量出貨**；**HBM4 為 12 層 36 GB、2,048-bit 介面**；**目標 2026 年底達 15,000 片 HBM4 晶圓**。
+- ⚠ **base die 代工歸屬仍為空白**——Altsets 明示「未指名 Micron 的 base die 代工廠」⇒ 📌 **此空白本身列為可追蹤事實（見 `overview.md` 新增空缺）。**
+- ⚠ **第三方估算（Altsets，非公司揭露）**：NVIDIA 佔 Micron 營收 **17.62%**、Micron 佔 NVIDIA COGS **14.00%**；Micron 之 COGS 構成：ASML 11.91%、Lam 5.52%、AMAT 3.84%、KLA 2.84%、Shin-Etsu 1.34%；Micron 佔 ASML 營收 7.64%。**不得與公司財報數字並列。**
+
+來源：[[sources/2026-10-12_micron-package-level-repair]]、[[sources/2026-10-12_hbm4-30um-thinning-775um-ceiling]]、[[sources/2026-10-12_hbm4-second-supply-chain-serialization]]

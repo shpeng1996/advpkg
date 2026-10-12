@@ -3,7 +3,7 @@ title: "EMIB — Embedded Multi-Die Interconnect Bridge"
 category: technology
 tags: [Intel, 2.5D, silicon-bridge, chiplet, HBM4, Foveros, glass-substrate, EMIB-T, EMIB-M, silicon-capacitors, power-delivery, HLFF, encapsulation, underfill]
 created: 2026-05-03
-updated: 2026-10-07
+updated: 2026-10-12
 sources: [2026-09-27_intel_us20260223702a1-direct-bonding-embedded-bridge-organic-cavity, 2026-09-27_intel_cn122270166a-stacked-glass-silicon-bridge-assembly-ar20, 2026-09-27_samsung_us20260144093a1-bridge-on-tgv-mold-fixed, 2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-03-05_trendforce_intel-emib-billions, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-03-03_trendforce_intel-clearwater-forest, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks, 2026-06-21_convergedigest_intel-emib-t-multi-die-packaging, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap, 2026-06-05_semieng_intel-ectc-2026-emib-t-cpo-glass, 2026-01-30_tomshardware_intel-ai-chip-test-vehicle-emib-t, 2026-08-04_semieng_from-blueprint-intel-hlff, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_patent_zhuhai-tiancheng-dual-depth-tsv-silicon-bridge, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-09-30_epo_intel-us20260191037a1-localized-embedded-bridge-in-core, 2026-09-30_intel_us-advanced-packaging-reticle-8x-12x-fab9, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_amd-us20260282956a1-silicon-bridge-decap, 2026-10-02_epo_adeia-us20260247631a1-dual-sided-connecting-element, 2026-10-02_epo_shanghai-xianfeng-cn122622683a-glass-interposer-bridge, 2026-10-02_trendforce_cowos-l-mainstream-through-2028, 2026-10-06_epo_intel-bridge-chiplet-shield-dummy-die, 2026-10-06_epo_intel-mold-extension-package-to-package-topside-bridge, 2026-10-06_intel_clearwater-forest-no-glass-foveros-9um-3um-emib-45um, 2026-10-07_openalex_lau-silicon-bridge-microbump-reliability, 2026-10-07_openalex_amkor-kelly-three-interposer-routes]
 related:
   - wiki/entities/intel.md
@@ -1090,3 +1090,19 @@ US20260305351A1 的**同一發明團隊、同日公開的相鄰家族**：
 ### 相關來源
 
 [[sources/2026-10-07_openalex_lau-silicon-bridge-microbump-reliability]]、[[sources/2026-10-07_openalex_amkor-kelly-three-interposer-routes]]
+
+## 2026-10-12 新增：預製凹穴作為 die shift 的「放置方式」處置；EMIB 首次進入記憶體廠的比較表
+
+- ⭐⭐ **Gang Duan（Intel）：EMIB 以矽橋上的預製凹穴（pre-fabricated wells）放置晶粒，藉此降低 die shift。**
+  ⇒ 此為 die shift **四類補償對象中的第三類（放置方式）**，見 `technologies/foplp.md` 之完整對照表。
+  ⇒ 📌 **其性質與另三類不同：第 1、2、4 類都是「事後補償」（量到偏差再改曝光／改對手件／改基板），本件是「事前約束」——以幾何讓晶粒無法偏離。**
+  ⚠ **無任何數值**（無凹穴深度、無 die shift 改善量）；來源為未標日期之 SemiEngineering 文章（推定 2025），**不得作為時效性依據**。
+
+- ⭐⭐⭐ **EMIB 第一次被一家記憶體廠放進 2.5D 平台的比較表。**
+  **Hot Chips：SK hynix America 封裝工程副總 Lee Jae-sik 表示公司正在比較 TSMC 的 CoWoS-S 與 CoWoS-L 以及 Intel 的 EMIB。**（可歸因之公開陳述）
+  ⇒ 📌 **既載把 CoWoS／EMIB 的競爭記為代工廠之間爭取加速器客戶；本筆使 2.5D 平台的採購決策者記為至少兩類：加速器設計者與記憶體供應者。**
+  ⚠ 僅為「比較中」之表態，**不得推論任何採用決定**。
+- ⚠ 相關：**SK hynix 據報考慮自 HBM4E 起改用 Intel Foundry 製作 base die**（業界消息來源，無官方確認）；「Intel 關係可能擴及先進封裝」為來源明示之推測，**不記為訊號**。
+- ⚠ **既載 Ibiden（EMIB／EMIB-T 基板主供應商）之 2027 投產時程不變**：FY2026–FY2028 約 5,000 億日圓、第一期約 2,200 億（Gama 廠 Cell6），FY2027 起依序投產 ⇒ **2026 年內無新增供給。**
+
+來源：[[sources/2026-10-12_die-shift-fourth-remedy-custom-interposer]]、[[sources/2026-10-12_skhynix-intel-foundry-hbm4e-base-die]]

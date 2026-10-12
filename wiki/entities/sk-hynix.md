@@ -3,7 +3,7 @@ title: "SK Hynix"
 category: entity
 tags: [memory, HBM, HBM4, advanced-packaging, patent-signal]
 created: 2026-04-24
-updated: 2026-10-07
+updated: 2026-10-12
 sources: [2026-08-24_trendforce_hot-chips-2026-samsung-zhbm-skhynix-emib, 2026-08-19_trendforce_skhynix-silicon-valley-hbm-codesign-team, 2026-08-17_trendforce_samsung-skhynix-1h26-investment-nvidia-absent, 2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor, 2026-08-10_trendforce_skhynix-chongqing-sale-global-reset, 2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab, 2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h, 2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-04-22_trendforce_sk-hynix-pt7-cheongju, 2026-04-22_trendforce_sk-hynix-indiana-us-plant, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-03-03_trendforce_sk-hynix-hbm4-tight-gaps, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-05_trendforce_hbf-equipment-race-sandisk-hanmi, 2026-06-11_trendforce_skhynix-3x-wafer-2034-375layer-nand, 2026-06-20_techtimes_skhynix-hbm4e-12layer-samples, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-24_techtimes_sk-hynix-dethroned-samsung-ddr5-hbm4, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-06-25_techtimes_sk-hynix-nasdaq-adr-29b, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-22_trendforce_skhynix-q2-record-margin, 2026-07-21_trendforce_samsung-cxl-32-skhynix-imte, 2026-07-24_trendforce_skhynix-3d-stacked-dram-on-logic-on-device-ai, 2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b, 2026-10-07_skhynix_cpo-nature-electronics-100tbps-1pjbit-10ns]
 related:
   - wiki/entities/samsung.md
@@ -612,3 +612,37 @@ SK Group 出現在 Nature Electronics CPO 綜述（2026-08-19，UVa／MIT／NTU 
 ### 相關來源
 
 [[sources/2026-10-07_skhynix_cpo-nature-electronics-100tbps-1pjbit-10ns]]
+
+## 2026-10-12 新增：base die 的成本比、代工分散，以及 775 µm 的材料側代價
+
+### ⭐⭐⭐ base die 成本結構首次量化
+
+- **HBM4 之 TSMC base die 成本為 core die 的 3–4 倍**（⚠ 業界消息來源，非官方）。
+- **base die 節點：TSMC 12 奈米級**；**core die 節點：SK hynix 自家 1b（10 奈米級）**。
+- ⇒ 📌 **一個 HBM 堆疊裡最貴的單一晶粒不是任何一顆記憶體，而是那顆邏輯底座。** 這解釋了為何「分散 base die 供應」在 2026 年同時出現在 SK hynix 與 Samsung 身上——**動機是成本而非產能**。
+
+### 代工歸屬的世代軌跡
+
+| 世代 | base die 來源 |
+|------|----------------|
+| HBM3E | **SK hynix 自製** |
+| HBM4 | **TSMC 12 nm 級** |
+| HBM4E | ⚠ **據報考慮 Intel Foundry**（無官方確認；節點未揭露） |
+
+- ⚠⚠ **與既載 2026-03-20 TrendForce 件（考慮 TSMC 3nm 做 HBM4E logic die）方向相反** ⇒ 📌 **兩者皆為消息來源層級，並列記為「HBM4E base die 的代工歸屬在 2026 年內尚未定案」，不得取其一為定論。**
+- 分散供應之四個理由：降低 TSMC 集中度、多供應商結構、議價槓桿、**支援 custom HBM（base die 依個別 AI 客戶客製）**（後兩項為分析師觀點）。
+
+### ⭐⭐⭐ 2.5D 平台的採購決策者不只加速器設計者
+
+- **Hot Chips：SK hynix America 封裝工程副總 Lee Jae-sik 表示公司正在比較 TSMC 的 CoWoS-S 與 CoWoS-L 以及 Intel 的 EMIB。**（可歸因之公開陳述）
+- ⇒ 📌 **既載把 CoWoS 與 EMIB 的競爭記為代工廠之間爭取加速器客戶；本筆顯示記憶體廠自己也在選平台 ⇒ 2.5D 平台的採購決策者此後記為至少兩類。**
+
+### 775 µm 高度上限的材料側代價
+
+- ⭐⭐⭐ **把 DRAM 晶圓減薄至 30 µm**，以塞進 **JEDEC 775 µm** 封裝高度上限；堆疊接合採 **MR-MUF（非混合接合）**。
+- **16 層 HBM4 48 GB、頻寬 >2 TB/s**（CES 2026）；**HBM4E 12 層 48GB 樣品**（Computex 2026, 2026-06）。
+- ⚠⚠ **量產口徑衝突，並列保留**：EETimes 記「計畫 **2026 Q3 量產**」；Altsets 記 SK hynix 自稱「**2026 Q2 起大量出貨**」⇒ 📌 **mass production 與 mass shipments 為兩個不同口徑，不得互相替換。**
+- 稱與**約 10 家主要客戶**有長期協議。
+- ⚠ **第三方估算（Altsets，非公司揭露）**：NVIDIA 佔其營收 **27.88%**，其佔 NVIDIA COGS **27.33%**（近乎對稱）；Apple 佔其營收 8.75%。
+
+來源：[[sources/2026-10-12_skhynix-intel-foundry-hbm4e-base-die]]、[[sources/2026-10-12_hbm4-30um-thinning-775um-ceiling]]、[[sources/2026-10-12_hbm4-second-supply-chain-serialization]]

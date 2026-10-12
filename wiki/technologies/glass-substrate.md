@@ -3,7 +3,7 @@ title: "玻璃基板 / Glass Core Substrate"
 category: technology
 tags: [glass-substrate, TGV, panel-level, FC-BGA, CoPoS, Absolics, DNP, Rapidus, warpage, SeWaRe, glass-interposer, BOE, ULCVD, non-embedding, Lens-Technology, TPK-KY, Innolux, AUO, LG-Chem, singulation, patent-signal]
 created: 2026-05-08
-updated: 2026-10-11
+updated: 2026-10-12
 sources: [2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-27_tradingkey_copos-glass-validation-08mm-85x110mm, 2026-09-27_intel_us20260182414a1-asymmetric-buildup-cte-gradient-glass, 2026-09-27_samsung_us20260144093a1-bridge-on-tgv-mold-fixed, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-05-05_trendforce-insights_glass-substrate-development, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-05-29_3dincites_rapidus-2nm-advanced-packaging-ai-foundry, 2026-06-01_trendforce_intel-3dgs-india-glass-substrate, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-06-20_biggo_boe-glass-substrate-pilot, 2026-06-28_economy-ac_glass-substrate-global-race, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-08-18_trendforce_shinko-glass-substrate-22layer-glassem-delay, 2026-09-11_mssp_tgv-glass-biaxial-bending-ring-on-ring, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-03-13_kaneka_jp2026047137a-glass-core-polyimide-quantified, 2026-08-10_screp_low-k-organic-buffer-tgv-cu-metallization, 2026-08-04_jmrt_vacuum-assisted-void-free-cu-fill-tgv, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_patent_er-eng-glass-interposer-dual-carrier, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-30_epo_xiamen-anjieli-cn121335557a-silane-parylene-tgv, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth, 2026-09-30_epo_intel-jp2026116680a-glass-core-embedded-inductor-clusters, 2026-09-30_epo_intel-us20260040982a1-glass-package-liquid-metal-socketing, 2026-09-30_epo_amosense-wo2026019155a1-multilayer-glass-core-frit-bonding, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-10-02_epo_shanghai-xianfeng-cn122622683a-glass-interposer-bridge, 2026-10-02_epo_semco-cn122054433a-glass-surface-roughness, 2026-10-02_trendforce_nvidia-glass-substrate-2028-taiwan, 2026-10-02_trendforce_intel-microled-glass-24-layer, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-06_atlaspcb_clearwater-forest-glass-core-claim-unsourced, 2026-10-06_intel_clearwater-forest-no-glass-foveros-9um-3um-emib-45um, 2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage, 2026-10-06_thelec_sec-xray-tsv-tgv-inspection-1um, 2026-10-07_epo_cas-freestanding-3c-sic-interposer, 2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk, 2026-10-07_epo_evg-inorganic-dual-release-layer-common-solvent, 2026-10-08_rdl-free-glass-interposer-trench, 2026-10-08_pku-embedded-glass-fanout-roughness, 2026-10-08_uestc-tapered-tgv-skin-current, 2026-10-09_keti-tgv-defect-spectrum-plugging-review, 2026-10-09_uestc-tapered-tgv-stress-relief, 2026-10-09_bjut-thermomech-phase-field-imc-tgv]
 related:
   - wiki/technologies/rdl.md
@@ -2332,3 +2332,22 @@ TrendForce（2026-09-30，⚠ **全文為 reportedly 之產業傳聞，非 NVIDI
 **Applied Materials 持有 Absolics 29.95%** ⇒ **AMAT 的「TGV 失效在界面與孔緣（種子層附著、孔緣應力集中）」與 Absolics 的量產宣告／專利此後不得計為兩個獨立來源。** 該論述之獨立性改以其餘來源為準：**KETI 缺陷譜、SKKU Cu-MSA、CEPREI × 哈工大、SCHMID**。
 
 *Sources: [[sources/2026-10-11_absolics-phase2-72000m2-amat-stake]]、[[sources/2026-10-11_nvidia-glass-pressure-18000mm2-schmid-tgv]]、[[sources/2026-10-11_tgv-electromigration-three-regimes]]*
+
+## 2026-10-12 新增：玻璃基板的供應側候選名單新增第四類參與者
+
+- ⭐⭐⭐ **Intel × Lens Technology（藍思科技）策略合作（2026-07-27 Intel 新聞稿）**：目的為「探索加速**玻璃基板**封裝方案之開發」。**Lens 貢獻精密玻璃加工、雷射製造、玻璃基板研發與大規模量產**；Intel 貢獻封裝與架構專長。
+- ⇒ 📌 **玻璃基板的供應側候選名單新增一類本 wiki 此前沒有的參與者。** 既載供應側全部屬三類：
+  | 類 | 既載成員 |
+  |----|----------|
+  | **基板廠** | Absolics/SKC、SEMCO、Shinko、Unimicron、Ibiden |
+  | **玻璃材料廠** | Corning、NEG、AGC、Schott |
+  | **設備／製程商** | SCHMID、Applied Materials、LPKF |
+  | ⭐ **第四類：消費電子蓋板玻璃／精密玻璃加工廠** | ⭐ **Lens Technology（本輪）** |
+  ⇒ **「誰能把玻璃做成基板」的答案此後應包含「誰已經在大量切割、鑽孔與雷射加工玻璃」，而非只有誰在做 FC-BGA。**
+- ⭐⭐ **Intel 的玻璃路線此後有兩個性質不同的夥伴落點**：**Shinko**（日系基板廠；22 層玻璃基板＝兩面各 11 層銅；JDI 茂原廠 373,000 m²／無塵室 179,000 m²／可用電力 >100 MW；交割 2027-03、投產 FY2028）與 **Lens Technology**（**無任何規格**）。
+  ⚠⚠ **兩者揭露密度差距極大，不得並列為同等強度之佐證。**
+- ⚠⚠ **本件為 MOU 層級**：無投資額、無廠區、無時程、無產能、**零量化值、無第三方佐證**；且**未提及玻璃芯（glass core）或面板（panel）**，僅說「玻璃基板」。
+  ⚠ **Lens 自述之「玻璃基板研發」與「大規模量產」是兩個不同的斷言，且無一有佐證** ⇒ 列為下輪追蹤：是否出現任何 TGV／線寬／層數／良率數字。
+- 📌 **既載之 TGV 失效與金屬化論述不受本筆影響**：仍以 **KETI 缺陷譜、SKKU Cu-MSA、CEPREI × 哈工大（TGV–RDL 轉角電流擁塞）、SCHMID（金屬化為最大障礙）** 為準；⚠ 既載**規範（41）**——**Applied Materials 持有 Absolics 29.95%（SKC 70.05%），兩者不計為獨立來源**——維持適用。
+
+來源：[[sources/2026-10-12_intel-lens-technology-glass-substrate]]

@@ -3,7 +3,7 @@ title: "GlobalFoundries — 格羅方德"
 category: entity
 tags: [GlobalFoundries, silicon-photonics, copackaged-optics, PIC, SiPh, foundry, Malta-NY]
 created: 2026-09-27
-updated: 2026-10-11
+updated: 2026-10-12
 sources: [2026-09-27_globalfoundries_siph-cpo-bandwidth-density-coupling-budget]
 related:
   - wiki/technologies/copackaged-optics.md
@@ -125,3 +125,15 @@ related:
 ➜ 這與既載「**真正的瓶頸在被視為輔助步驟的那一步**」相連：固化此前被視為附屬動作，而它佔用的是最昂貴的那一站。
 
 *Source: [[sources/2026-10-11_asmpt-cure-off-critical-path]]*
+
+## 2026-10-12 新增：與 TSMC 之 20 億美元矽中介層供應協議（首筆中介層業務事實）
+
+- ⭐⭐⭐ **約 20 億美元、多年期製造協議，初始期五年**；產品為**矽中介層，含內嵌深溝槽電容（embedded deep-trench capacitors）**；客戶／生態系為 **TSMC 的 CoWoS 先進封裝生態系**。
+- **廠區：紐約州 Malta**；**2028 上半年開始放量（volume production ramping in H1 2028）**。
+- 被定位為「AI 加速器封裝的**第一個美國本土中介層來源**」（來源自身之框架，非獨立佐證）。
+- ⚠ **推導值（非 GF 公告）**：約 **4 億美元／年**；約為 GF **2025 年營收 67.9 億美元**之 **6%**。
+- ⚠ **GF 未揭露**：中介層晶粒尺寸、晶圓節點、晶圓片數／產能、CoWoS 層級（S/L/R）、單價。
+- 📌 **本筆結清既載知識空缺「GlobalFoundries（15）——矽光子、矽中介層」之第一階段**：本頁自此有一筆具體的中介層業務事實，且是與 TSMC 的直接供應關係。⚠ 但**技術層仍全面空白**（無節點、無線寬、無 TSV 規格），空缺不整體結清。
+- ⚠ **瓶頸紓解時點為 2028，非 2027** ⇒ 來源推論 2027 年之 CoWoS 中介層配額與定價槓桿仍在 TSMC 手上。
+
+來源：[[sources/2026-10-12_globalfoundries-2b-tsmc-interposer-malta]]

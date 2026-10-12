@@ -3,7 +3,7 @@ title: "RDL — 重分佈層 / Redistribution Layer"
 category: technology
 tags: [RDL, SAP, dual-damascene, embedded-trace, ETR, polyimide, FPIM, CMP, electromigration, panel-level, pad-less-via]
 created: 2026-09-26
-updated: 2026-10-11
+updated: 2026-10-12
 sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2026-09-27_paper_purdue-ru-cu-em-lifetime-blacks-n-0154, 2026-09-27_paper_copper-interconnect-scaling-roadmap-lines-per-mm, 2026-09-26_article_taiyo-imec-700nm-damascene-rdl, 2026-09-26_article_imec-1um-damascene-rdl-2019-anchor, 2026-09-26_article_amkor-embedded-trace-rdl, 2026-09-26_paper_asi-1um-hdbu-substrate, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-25_paper_dnp-glass-rdl-electromigration-lifetime, 2026-09-25_paper_cornell-glass-on-glass-sio2-rdl, 2026-09-25_paper_asu-molded-core-substrate-warpage, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_shanghai-xianfeng-cn122622683a-glass-interposer-bridge, 2026-10-02_imaps-dpc2026_defect-free-coplanar-copper-via-fill, 2026-10-06_epo_intel-mold-extension-package-to-package-topside-bridge, 2026-10-06_openalex_gatech-terahertz-nde-8layer-interposer, 2026-10-07_epo_amkor-bspdn-oriented-package-embedded-ipd, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-07_openalex_amkor-kelly-three-interposer-routes, 2026-10-08_rdl-free-glass-interposer-trench, 2026-10-08_pku-embedded-glass-fanout-roughness, 2026-10-08_samsung-stacked-rdl-package-bspdn-layer, 2026-10-09_keti-tgv-defect-spectrum-plugging-review]
 related:
   - wiki/technologies/foplp.md
@@ -644,3 +644,44 @@ Scrona 明文把「嚴格的基板平坦度要求」指認為**傳統微影路�
 ⚠ A/cm²（導體橫截面）與 A/mm²（平面佔地）分母意義不同，不得換算或排序（規範 34／37）。
 
 *Sources: [[sources/2026-10-11_statschippac-underfill-keepout-optical]]、[[sources/2026-10-11_tgv-electromigration-three-regimes]]*
+
+## 2026-10-12 新增：RDL-first 的載體第一次是柔性的；以及「減薄矽」的第二個動機
+
+### ⭐⭐⭐ RDL-first 的載體材料範圍
+
+- **CETC × 東南大學（10.1108/mi-02-2026-0050，2026-09-08）**：**12 吋（300 mm）晶圓級 RDL-first，以 PDMS 作為最終基材**製作順形電子元件。
+  流程四段：**暫時載板製備 → RDL 層製作 → 晶片覆晶接合 → PDMS 模封。**
+- ⇒ 📌 **既載 RDL-first 的載體落點全部為剛性**（玻璃載板、矽、模封料、有機無核心、玻璃芯）。**本件是第一個柔性載體落點，而使其可能的正是 RDL-first 的順序本身：佈線不必在一個會變形的表面上完成，因為佈線先做好、變形後發生。**
+  ⇒ **這是本 wiki 第一次把「RDL-first vs RDL-last 的順序」與「載體可選的材料範圍」連起來。**
+
+### 量化值（⚠ 應力為模擬值）
+
+| 量 | 值 |
+|----|-----|
+| 晶圓尺寸 | **12 吋（300 mm）** |
+| 模擬曲率半徑 | **73.9 mm** |
+| **最大 von Mises 應力（模擬）** | **894.16 MPa**（PDMS 厚 **0.16 cm**，貼合顱骨模具時） |
+| 封裝外形 | **30 × 31.5 × 1.6 mm**，**4 顆晶粒** |
+| **最小彎曲半徑** | **43.50 mm** |
+
+- ⚠⚠ **894.16 MPa 為模擬值，量測對象為「貼合顱骨模具時原型中的最大應力」。** 依既載**規範（34）（37）**，與任何封裝應力數字並列前必須先確認量測對象，**不得排序或相減。**
+- ⚠ **未給**：RDL 線寬／間距、層數、良率、die shift 量；串聯電阻與電感「有展示」但無數值。
+
+### ⭐⭐ 「減薄矽」的第二個動機
+
+| 動機 | 內容 | 來源 |
+|------|------|------|
+| **高度預算** | **SK hynix 把 DRAM 晶圓減薄至 30 µm** 以塞進 **JEDEC 775 µm** 上限 | EETimes（本輪） |
+| ⭐ **機械柔性** | **減薄矽降低最大 von Mises 應力**（與增加 PDMS 厚度並列為兩個可調量） | CETC 件（本輪） |
+
+⇒ 📌 **「減薄矽」此後記為兩個互不相關的動機所共用的同一手段。**
+
+### ⚠ 與 die shift 的關聯（2026-10-12）
+
+- **Fraunhofer IZM：以 maskless litho 量測最終晶粒位置後，製作一片「RDL 焊墊位置已調整過」的客製中介層** ⇒ **RDL 的焊墊位置成為 die shift 的補償對象之一**（四類補償對象之第二類，見 `technologies/foplp.md` 對照表）。⚠ 來源明言成本與產出可行性未知，且無任何數值。
+
+### ⚠ 應用域限制
+
+- ⚠⚠ **CETC 件之應用域為可穿戴／植入式 RF（顱內訊號處理），非 AI 加速器封裝。** 其數字不得與本 wiki 主線之 RDL 線寬、層數或應力數字並列。
+
+來源：[[sources/2026-10-12_rdl-first-on-an-elastomer]]、[[sources/2026-10-12_die-shift-fourth-remedy-custom-interposer]]、[[sources/2026-10-12_hbm4-30um-thinning-775um-ceiling]]

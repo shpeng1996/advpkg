@@ -3,7 +3,7 @@ title: "先進封裝的測試、量測與失效分析 / Test, Metrology & Failur
 category: concept
 tags: [test, metrology, inspection, failure-analysis, KGD, KGI, KGP, DFA, yield]
 created: 2026-09-17
-updated: 2026-10-11
+updated: 2026-10-12
 sources: [2026-09-27_paper_binghamton-ibm-pad-scaling-resistance-variability, 2026-09-27_paper_purdue-ru-cu-em-lifetime-blacks-n-0154, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2025-01-14_semieng_known-good-interposer-screening, 2025-07-10_semieng_advanced-packaging-reshaping-inspection, 2024-11-12_semieng_packaging-drives-test-metrology-innovation, 2026-08-01_jfap_3dic-failure-analysis-dfa, 2026-07-06_apl_lensless-through-silicon-phase-imaging, 2026-09-06_ndte_hysan-sparse-view-xct-tsv, 2026-08-02_chips_cpo-wafer-level-probe-card, 2026-08-27_samsung_us20260256000a1-interposer-test-pad, 2026-08-13_jcet_us20260239928a1-hybrid-bonding-substack-test, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-06-28_hyperframe_amat-hybrid-bonding-hedge, 2026-09-26_paper_ibm-amine-post-cmp-clean, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-10-02_microrel_tudelft-google-3dic-fa-hardware, 2026-10-02_imaps-dpc2026_gelpak-universal-carriers-singulated-die, 2026-10-06_openalex_gatech-terahertz-nde-8layer-interposer, 2026-10-06_openalex_tongji-wafer-embedded-pitch-standard-pose-correction, 2026-10-06_thelec_sec-xray-tsv-tgv-inspection-1um, 2026-10-07_semieng_kelvin-resistance-probe-access-pitch-limit, 2026-10-07_openalex_amkor-kelly-three-interposer-routes, 2026-10-07_epo_besi-deformable-die-forming-bond-tool, 2026-10-08_silverbrook-known-good-site-substrate-test, 2026-10-08_ase-probing-needle-scrub-length, 2026-10-08_formfactor-45um-probe-pitch-good-enough-die, 2026-10-08_advantest-singulated-die-test-thermal, 2026-10-09_tsmc-cantilever-probe-card-patent, 2026-10-09_tsmc-impedance-control-probing-patent, 2026-10-09_intel-voltage-contrast-backside-patent, 2026-10-09_ieie-probe-card-mlc-signal-integrity, 2026-10-09_hdin-probe-card-market-pin-count, 2026-10-09_quantware-qpu-measurement-stage-patent]
 related:
   - wiki/technologies/hybrid-bonding.md
@@ -1315,3 +1315,51 @@ HDIN 稱探針卡**客戶認證週期 12–24 個月**。既載 HBM4E 混合接�
 📌 **分類軸發現（本輪共三個）**：底填料控制側落在 **H05B（電加熱）**、光電封裝落在 **H10F**、測試落在 **G01R** —— 三者**皆不在本 wiki 既有的 H10W／H01L 檢索軸上。**
 
 *Sources: [[sources/2026-10-11_technoprobe-thermocouple-measure-leg]]、[[sources/2026-10-11_tgv-electromigration-three-regimes]]、[[sources/2026-10-11_samsung-underfill-closed-loop-control]]*
+
+## 2026-10-12 新增：量測可及性的第三種形式；修復資源上移到封裝；對準標記面積成為一項代價
+
+### ⭐⭐⭐ 「量測可及性」此後有三種形式，而本輪補上第三種
+
+| # | 形式 | 內容 | 來源 |
+|---|------|------|------|
+| 1 | **量得到嗎** | 既載四種處置（接點被封起來、探針無法到達、訊號被遮蔽等） | 既載 |
+| 1b | ⭐ **被埋起來所以看不到** | **混合銅／銅接合連接晶粒與 RDL 佈線且藏在層間 ⇒ 對位偏差難以檢出**（不可及性的理由是**幾何遮蔽**） | ⭐ 本輪，SemiEng |
+| 2 | **量了卻沒反應** | **最低電流密度下 RDL／玻璃界面已分層，而電阻幾乎不變** ⇒ 以電阻為唯一監測量在某應力區間靈敏度可以是零 | 既載 2026-10-11，CEPREI × 哈工大 |
+| 3 | ⭐⭐⭐ **量到的值取決於你怎麼問** | **HPI 件：GH200／MI300A 之可達吞吐取決於存取模式與作業系統的頁面放置策略** —— 加權頁面交錯「同時用兩池」才超過任一單池；跨步存取高於非跨步循序 | ⭐ **本輪（10.1007/s13222-026-00563-7，2026-10-09）** |
+
+⇒ 📌 **三種形式的性質依序為：可及性（能不能碰到）、靈敏度（碰到了會不會動）、相依性（量到的是哪一個條件下的值）。** 第三種使「量測口徑」從一個記錄問題變成一個實驗設計問題。
+⚠ 第 3 列之來源**摘要層無任何絕對數值**（無 GB/s、無 ns、無提升百分比），列為下輪全文追讀候選（OA PDF 可得）；⚠ 其領域為資料庫／系統研究，**未討論 GH200／MI300A 的封裝形態**，結果**不得歸因於任何特定封裝技術**。
+
+### ⭐⭐⭐ 修復資源上移到封裝，使 KGD 的定義更難成立
+
+- **Micron WO2026049956A1（family 98899693，2026-03-05）**：封裝內**另加一顆 additional die**，其一類實施含**冗餘儲存，存放「多顆」記憶體元件上缺陷記憶胞所對應的資料**，且**可補充亦可取代各顆元件自身的冗餘記憶體**。
+- ⇒ 📌 **既載長期空缺「KGD 的標準化定義」（2026-09-17 立）此後應記為兩層問題：**
+  | 層 | 問題 |
+  |----|------|
+  | **量測口徑** | 如何證明這顆晶粒是好的 |
+  | ⭐ **歸屬口徑** | **對哪一種封裝而言是好的** |
+  ⇒ **若封裝能以一顆共用晶粒替代各顆的冗餘，則「可接受的缺陷胞數量」不是晶粒的性質，而是晶粒與封裝的組合的性質。**
+- ⇒ 📌 既載缺陷處置全在**晶粒內**（內建冗餘列／行、修復熔絲）或**裝配前**（KGD／KGI 篩選）；**本件把修復資源做成堆疊裡的一個鄰居** ⇒ **與既載「封裝的面正在成為被分配的資源」同型但不同維度：被分配的不是面積而是良率餘裕。**
+- ⚠ **零量化值**（無冗餘容量、無修復率、無面積代價）；分類全為 G11C（含 G11C29/12），**無封裝結構碼**；專利為前瞻訊號，不得推論 Micron 任何產品已採此架構。
+- ⚠ 既載空缺「**CoWoS『5.5× 良率 99%』的量測邊界**」不受本筆影響，維持追蹤。
+
+### ⭐⭐⭐ 對準：兩個同時被最佳化的量
+
+- **Besi TW202605321A（family 95651271，2026-02-01）**：以**繞射光束相位**（非標記影像質心）定位對位標記並導出 correction vector；自述「**標記可以做得非常小**」與「**修正向量非常精確**」。
+- ⇒ 📌 **既載 D2W 對準論述完全以精度為軸**（Kinex 量產 **100 nm @3σ**、2026 新機 **50 nm**、路線圖 **<25 nm**、吞吐 **1,600–2,000 die/hr**）。**本件新增第二個量：標記佔用的晶粒面積。**
+  ⇒ ⚠ **既載所有精度數字都沒有附帶標記尺寸，故無法判斷各家在這條軸上的位置 —— 列為新空缺。**
+- ⇒ ⭐⭐⭐ **「以感測物理學換封裝幾何」此手法取得第二落點，兩例同屬測試／量測陣營**：
+  | # | 手法 | 省掉的幾何代價 | 來源 |
+  |---|------|----------------|------|
+  | 1 | **非接觸近場 RF 測試**（探針移至接點附近而不落針） | **落針面積與機械接觸** | 既載 Advantest US20260219310A1／US20260243821A1，2026-10-11 |
+  | 2 | ⭐ **繞射相位對位** | **對位標記面積** | **本輪 Besi TW202605321A** |
+  ⚠ 兩例皆 2026 年公開、皆由設備／測試商提出、**皆零量化值**。
+  ⚠⚠ **依規範（41）檢查來源獨立性：Advantest 持有 Technoprobe 2.5% 與 FormFactor 少數股權，但本輪之 Besi 與 Advantest 之間本 wiki 無已知股權關係** ⇒ **兩例計為獨立來源。**
+- ⚠ **不得由「標記可以做得非常小」推論任何精度提升**：專利並列陳述兩項效益，**未說明是否存在取捨**。
+- ⭐⭐ **Besi 在「接合站上的量測」子問題已有四件入庫**（接合後品質／定心／工具幾何／對準讀取），📌 **布局型態與既載 Technoprobe 同型：單一工站內的多物理量化。**
+
+### ⚠ 檢索結論（2026-10-12）
+
+- 📌 **本輪三件專利（Neurophos、Micron、Besi）分類皆落在 G11C 而非 H10W** ⇒ **記憶體堆疊相關的封裝排他權系統性地落在 G11C；單靠封裝 CPC 碼檢索會系統性漏掉這一類。** 與既載 2026-10-11 之結論（Samsung 底填料件落在 H05B 電加熱）同型。
+
+來源：[[sources/2026-10-12_bandwidth-three-measurement-apertures]]、[[sources/2026-10-12_micron-package-level-repair]]、[[sources/2026-10-12_besi-alignment-mark-area-as-a-cost]]、[[sources/2026-10-12_die-shift-fourth-remedy-custom-interposer]]

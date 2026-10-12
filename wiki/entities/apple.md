@@ -3,7 +3,7 @@ title: "Apple Inc. / 蘋果"
 category: entity
 tags: [Apple, chiplet, local-interconnect, air-gap, RDL, glass-substrate, Broadcom, Baltra]
 created: 2026-10-05
-updated: 2026-10-05
+updated: 2026-10-12
 sources: [2026-10-05_epo_apple-local-interconnect-air-gap, 2026-10-05_thelec_semco-glass-samples-apple]
 related: [technologies/emib.md, technologies/rdl.md, technologies/glass-substrate.md, entities/semco.md, entities/tsmc.md, entities/broadcom.md]
 ---
@@ -59,3 +59,17 @@ related: [technologies/emib.md, technologies/rdl.md, technologies/glass-substrat
 ## 參考資料 / References
 
 [[sources/2026-10-05_epo_apple-local-interconnect-air-gap]]、[[sources/2026-10-05_thelec_semco-glass-samples-apple]]
+
+## 2026-10-12 新增：低 k 與接合界面的交會取得第二個落點（路線相反）
+
+- ⭐⭐ 既載 **KR20260119943A**（2026-10-11 收錄）之局部互連以 **low-k 或空氣間隙腔體**製成、die-to-die 金屬線跨越腔體，被記為「橋的維度」第十七維（**介電質是否為物質**）。
+- ⭐⭐⭐ **本輪取得同一取捨的另一端**：KAIST／KIST／SKKU／POSTECH 等之回顧（10.1186/s40580-026-00579-5，2026-10-01）提出**非多孔的 amorphous boron nitride（aBN）以 k ≈ 2 與楊氏模數 ~50 GPa** 作為 BEOL 互連**與混合接合界面**的候選材料。
+- ⇒ 📌 **低 k 與接合／互連界面的交會此後有兩個獨立落點，且路線相反**：
+  | 落點 | 手法 | 代價／空白 |
+  |------|------|------------|
+  | **Apple KR20260119943A**（排他權） | **把介電質換成空氣**（腔體） | ⚠ 腔體尺寸、跨距、**支撐方式**本 wiki 全為空白 |
+  | **aBN 回顧**（材料文獻） | **把介電質換成非多孔材料**，降 k 同時保住模數（~50 GPa） | ⚠ 回顧值非實測；尚待在 BEOL 與混合接合整合下驗證 |
+  ⇒ **一端用「沒有材料」把 k 降到最低但必須另造支撐，一端用「更好的材料」把 k 降到 2 而不犧牲剛性。本 wiki 自本輪起對該取捨的兩端都有落點。**
+- ⚠ 兩者**不構成同一論述的佐證關係**（一為排他權、一為材料回顧；元件域亦不同：局部互連橋 vs BEOL 互連），僅並列。
+
+來源：[[sources/2026-10-12_abn-nonporous-lowk-bonding-interface]]

@@ -3,7 +3,7 @@ title: "EV Group (EVG)"
 category: entity
 tags: [equipment, hybrid-bonding, wafer-bonding, maskless-lithography, layer-transfer]
 created: 2026-04-25
-updated: 2026-10-07
+updated: 2026-10-12
 sources: [2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-05-19_semiconductor-digest_ev-group-ectc2026-hybrid-bonding, 2026-06-29_evgroup_ectc2026-hybrid-bonding-layer-transfer, 2026-05-28_imec_w2w-hybrid-bonding-200nm-pitch, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-10-07_epo_evg-zonewise-adaptive-litho-die-shift, 2026-10-07_epo_evg-inorganic-dual-release-layer-common-solvent]
 related:
   - wiki/technologies/hybrid-bonding.md
@@ -212,3 +212,21 @@ KIMM 的 308 nm 準分子雷射解接合研究顯示：在**反轉結構**（玻
 ### 相關來源
 
 [[sources/2026-10-07_epo_evg-zonewise-adaptive-litho-die-shift]]、[[sources/2026-10-07_epo_evg-inorganic-dual-release-layer-common-solvent]]
+
+## 2026-10-12 新增：把晶圓當成致動器——同一公司在 die shift 上持有兩條互斥路線
+
+### 專利訊號 / Patent Signals（2026-10-12 新增）
+
+- ⭐⭐⭐ **WO2026092821A1（family 93335319，2026-05-07，單一發明人 UHRMANN THOMAS）**：在層系中整合一層 **reaction layer**，與基板建立作用連結，使其**狀態變化造成基板變形**；以 **influencing means** 使該變化**在局部受限（locally limited）範圍內**發生，從而把基板上（或埋在基板裡）的**一個結構自「實際位置」推到「目標位置」**。適用時點涵蓋**切單前、放入基板夾持器前、以及基板接合之前與接合期間**。
+  ⇒ 📌 **die shift 的補償對象補齊第四類：載體自身**（前三類為曝光／對手件／放置方式，見 `technologies/foplp.md` 對照表）。
+  ⇒ 📌 **「把製程中的被加工物當成致動器」在本 wiki 首見。** 既載所有致動都在機台側（夾持器、壓力元件、bond head、ASMPT 之隨工件移動 UV 光源）；本件把致動層做在**基板的層系裡** ⇒ **控制律不只長在設備裡，也長在材料堆疊裡。**
+  ⚠ **零量化值**，且以下關鍵量**全部未揭露**，列為追蹤項：可修正之位移範圍（nm/µm）、reaction layer 之材料與化學、influencing means 之物理機制（熱／光／電／化學？）、局部化之空間解析度、變形的可逆性。
+- ⭐⭐⭐ **「同一公司在相反方向布局」之第三例，且是三例中最對稱的一例。** 前兩例為 **Apple**（電性挖空橋 vs RDL 應力改圖案）與 **SEMCO**（玻璃芯 vs 完全無核心）。
+  **本件與自家 WO2026201292A1（分區自適應微影，2026-10-07 收錄，相隔五個月公開）針對完全同一個問題，而處置互斥**：
+  - WO2026201292A1 —— **接受基板的位置、改曝光去配合**；
+  - WO2026092821A1 —— **接受曝光、改基板去配合**。
+  ⇒ 📌 **設備商對同一製程問題同時持有兩條互斥路線的排他權，應記為一種布局型態，而非矛盾。**
+- ⚠ **同日公開之 WO2026092820A1（family 93376073，標題幾乎相同、分類僅 H10P50/00）研判為同一發明之分割或平行案，但 OPS 給了不同 family-id。** 依既載**規範（42）**偽陰性情形，**不以 family 去重逕自計為兩件發明**；本輪僅收錄 WO2026092821A1。
+- ⚠ **本輪另檢得但未收之 EVG 件**（僅記存在，供下輪輪替）：WO2026209143A1（family 95337986，以感測系統在共同參考系中同時量**基板厚度與曲率**並據以搬運）、WO2026046508A1（family 92626829，以壓力元件在**接合波（bonding wave）**尚未接合的區段施加正壓以影響接合波行進）、WO2026098776A1（family 93460736，電漿腔監測）。📌 **WO2026046508A1 之「主動操控接合波」與本件之「主動變形基板」同屬「把接合從被動過程變成受控過程」，下輪優先。**
+
+來源：[[sources/2026-10-12_evg-wafer-as-actuator]]

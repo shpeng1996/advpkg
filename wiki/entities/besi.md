@@ -3,7 +3,7 @@ title: "Besi (BE Semiconductor Industries) — 混合接合設備領導廠商"
 category: entity
 tags: [equipment, hybrid-bonding, die-attach, D2W, TCB, Netherlands]
 created: 2026-04-25
-updated: 2026-10-10
+updated: 2026-10-12
 sources: [2026-09-27_semieng_chip-week-156-india-tata-besi-izmo, 2026-03-01_3dincites_besi-packaging-power-shift, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-03-29_damnang_hybrid-bonding-cmp-gating-factor, 2026-10-02_bitschips_besi-q1-2026-hybrid-bonding-orders, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-07_epo_besi-deformable-die-forming-bond-tool]
 related:
   - wiki/entities/ev-group.md
@@ -281,3 +281,27 @@ Bits&Chips（2026-04-23，作者 Paul van Gerven）：
 - 併購背景：Reuters（2026-03）報導 **Lam Research 與 AMAT 曾接觸 Besi**，Besi 聘 Morgan Stanley（⚠ 二手轉述二手）。
 
 **本輪新增來源**：[[sources/2026-10-10_asml-besi-hybrid-bonder-share-numbers]]
+
+## 2026-10-12 新增：對位標記的面積第一次成為一項可交易的量
+
+### 專利訊號 / Patent Signals（2026-10-12 新增）
+
+- ⭐⭐⭐ **TW202605321A（family 95651271，2026-02-01，發明人 PRESSL BENEDIKT、THALER ELISABETH、SANDBICHLER MICHAEL）**：於 die bonder 內把對位標記置於**干涉儀靈敏範圍**，以**照明該標記所產生之至少一繞射光束的相位**求出標記位置，導出 **correction vector** 施加於名義目標位置，再據修正後目標位置接合。
+  **專利自述兩項效益：①對位標記可以做得非常小；②可得到非常精確的修正向量。**
+  ⇒ 📌 **D2W 對準論述新增一條此前不存在的軸：對位標記的面積。** 既載該論述完全以精度數字為軸（AMAT × Besi Kinex 量產 **100 nm @3σ**、2026 新機 **50 nm**、路線圖 **<25 nm**、吞吐 **1,600–2,000 die/hr**）。**本件以「換一種讀取物理量」（繞射相位，而非標記影像質心）降低標記佔用的晶粒面積。**
+  ⇒ 📌 **對準此後應記為兩個同時被最佳化的量：位置不確定度與標記佔用面積。既載所有精度數字都沒有附帶標記尺寸，故無法判斷各家在這條軸上的位置 —— 列為新空缺。**
+  ⚠ **零量化值**（無標記尺寸 µm、無修正向量精度 nm、無吞吐影響、無波長）；⚠ 公開號為 **TW**，同族其他國別件本輪未檢。
+  ⚠ **不得由「標記可以做得非常小」推論任何精度提升**：專利把兩項效益並列陳述，**未說明兩者是否存在取捨**。
+- ⭐⭐⭐ **「以感測物理學換封裝幾何」此一手法取得第二個落點，且兩例同屬測試／量測陣營。** 第一例為既載 **Advantest US20260219310A1／US20260243821A1（2026-10-11 收錄）之非接觸近場 RF 測試**（探針移至接點附近而不落針，省掉落針面積與機械接觸）；**本件省掉標記面積。** ⚠ 兩例皆為 2026 年公開、皆由設備／測試商提出、**皆零量化值**。
+- ⭐⭐ **Besi 之「接合站上的量測」子問題已有四件入庫，涵蓋四個環節**：
+  | 環節 | 專利 | 公開日 |
+  |------|------|--------|
+  | 接合後品質 | WO2026182734A1（焊料表面張力推算熱壓接合品質） | 2026-09-03 |
+  | 定心 | WO2026192456A1（可動定心銷） | 2026-09-17 |
+  | 工具幾何 | DE102025103085A1（可變形晶粒成形接合工具） | 2026-10-07 |
+  | **對準讀取** | ⭐ **TW202605321A（干涉式繞射相位）** | **2026-02-01** |
+  ⇒ 📌 **其布局型態與既載 Technoprobe（探針卡之熱／感測／機械保持／距離量測四子問題）同型：皆為「單一工站內的多物理量化」。**
+- ⚠ **分類含 G11C5/04** ⇒ 本件為本輪第三件分類落在非封裝碼系者（另兩件：Neurophos G11C、Micron G11C）。📌 **本輪三件 G11C 構成一個檢索結論：記憶體堆疊相關的封裝排他權系統性地落在 G11C 而非 H10W。**
+- ⚠ **本輪另檢得但未收之 Besi 件**（僅記存在）：WO2026197903A1（family 96060954，導腳加工裝置底座）、WO2026101399A1（family 94768776，帶電子元件之基板鋸切）、WO2026088107A1（family 97723233，封閉系統）、TW202605523A（family 95821563，元件定位）。
+
+來源：[[sources/2026-10-12_besi-alignment-mark-area-as-a-cost]]

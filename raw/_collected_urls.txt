@@ -861,3 +861,19 @@
 2026-10-11 | https://doi.org/10.3390/electronics15174023 | raw/papers/2026-10-11_openalex_gachon-on-chip-ldo-hbm-power-integrity-psij.md | Gachon: on-chip LDO for HBM, PSIJ to eye margin
 2026-10-11 | https://doi.org/10.1145/3857352 | raw/papers/2026-10-11_openalex_iod-chiplet-mesh-noc-bbat-2p6x.md | IOD chiplet mesh NoC BBAT 2.6x, +5.4% NoC area
 2026-10-11 | https://doi.org/10.3390/chips5040035 | raw/papers/2026-10-11_openalex_ntu-tau-law-epic-temporal-optimization.md | NTU: tau-Law EPIC latency axis incl EO/OE conversion
+2026-10-12 | https://siliconanalysts.com/market/globalfoundries-lands-2b-tsmc-deal-to-add-first-u-s-cowos-interposer-source-2026-10-11 | raw/articles/2026-10-12_siliconanalysts_globalfoundries-2b-tsmc-interposer-malta.md | GF $2B TSMC interposer deal, Malta NY, H1 2028 ramp
+2026-10-12 | https://mbiz.heraldcorp.com/article/10857005 | raw/articles/2026-10-12_heraldbiz_skhynix-intel-foundry-hbm4e-base-die.md | SK hynix may tap Intel for HBM4E base die; 3-4x cost
+2026-10-12 | https://www.altsets.com/research/ai-memory-second-semiconductor-supply-chain | raw/articles/2026-10-12_altsets_hbm4-second-supply-chain-logic-base-dies.md | HBM4 second supply chain: logic base dies, serialization
+2026-10-12 | https://semiengineering.com/advanced-packaging-depends-on-materials-and-co-design/ | raw/articles/2026-10-12_semieng_materials-and-codesign-die-shift-three-remedies.md | SemiEng: die shift third remedy, IZM custom interposer
+2026-10-12 | https://www.eetimes.com/the-state-of-hbm4-chronicled-at-ces-2026/ | raw/articles/2026-10-12_eetimes_hbm4-state-ces2026-30um-thinning-775um.md | EETimes HBM4 CES2026: 30um thinning, 775um, 12nm base
+2026-10-12 | https://iconnect007.com/article/150943/intel-lens-technology-collaborate-to-enable-advanced-semiconductor-packaging-for-the-ai-era/150940/ein | raw/articles/2026-10-12_iconnect007_intel-lens-technology-glass-substrate.md | Intel x Lens Technology glass substrate collaboration
+2026-10-12 | EPO:101461860:WO2026207273A1 | raw/patents/2026-10-12_WO2026207273A1_neurophos-compute-near-memory-hbm-base-die.md | Neurophos: compute-near-memory logic in HBM base die
+2026-10-12 | EPO:98899693:WO2026049956A1 | raw/patents/2026-10-12_WO2026049956A1_micron-package-level-redundant-storage-die.md | Micron: package-level redundant storage die for defects
+2026-10-12 | EPO:100820052:US20260235823A1 | raw/patents/2026-10-12_US20260235823A1_tsmc-backside-recess-two-nonparallel-facets.md | TSMC: backside recess, two non-parallel facets reflect
+2026-10-12 | EPO:93335319:WO2026092821A1 | raw/patents/2026-10-12_WO2026092821A1_evg-reaction-layer-local-substrate-deformation.md | EVG: reaction layer locally deforms substrate, die shift
+2026-10-12 | EPO:95651271:TW202605321A | raw/patents/2026-10-12_TW202605321A_besi-interferometric-diffracted-phase-alignment.md | Besi: interferometric diffracted phase, tiny align marks
+2026-10-12 | https://doi.org/10.1186/s40580-026-00579-5 | raw/papers/2026-10-12_openalex_abn-lowk-k2-50gpa-beol-hybrid-bonding-interface.md | aBN low-k k=2, 50GPa, hybrid-bonding interface role
+2026-10-12 | https://doi.org/10.1038/s41467-026-78046-2 | raw/papers/2026-10-12_openalex_fluorofluidic-gel-tim-589-wmk-015-contact-rth.md | Fluorofluidic-gel TIM 5.89 W/mK, 0.15 cm2K/W contact
+2026-10-12 | https://doi.org/10.5781/jwj.2026.44.4.2 | raw/papers/2026-10-12_openalex_cuo-cu-flake-paste-in-air-sinter-251mpa.md | SeoulTech: in-air Cu-Cu sinter 300C/10MPa, 25.1 MPa
+2026-10-12 | https://doi.org/10.1108/mi-02-2026-0050 | raw/papers/2026-10-12_openalex_pdms-12inch-rdl-first-conformal-894mpa.md | CETC: PDMS 12-inch RDL-first, 894.16 MPa, 43.5mm bend
+2026-10-12 | https://doi.org/10.1007/s13222-026-00563-7 | raw/papers/2026-10-12_openalex_hpi-cpu-initiated-hbm-gh200-mi300a-interleaving.md | HPI: measured CPU-side HBM throughput GH200/MI300A

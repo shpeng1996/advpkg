@@ -3,7 +3,7 @@ title: "先進封裝熱管理 / Thermal Management in Advanced Packaging"
 category: concept
 tags: [thermal-management, liquid-cooling, 3D-IC, CoWoS, heat-dissipation, TIM, ECTC-2025, GaN, power-delivery, co-design, patent-signal, delamination]
 created: 2026-04-25
-updated: 2026-10-11
+updated: 2026-10-12
 sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2025-12-01_semiengineering_thermal-management, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-02_trendforce_samsung-hbm5-computex2026, 2026-05-21_semieng_hi-roadmap-nature-paper-intel, 2026-08-13_semieng_1mw-rack-debate-thermal, 2026-04-27_semieng_semiconductor-materials-misbehave, 2026-08-21_trendforce_chip-packaging-heat-ai-bottleneck-cpo-stco, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_arxiv_umn-multi-kw-power-delivery-3d-hi, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_samsung-cn122602880a-ivr-capacitor-interposer-core, 2026-10-02_imaps-dpc2026_delo-die-side-capacitor-encapsulation, 2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage, 2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk, 2026-10-07_epo_cas-freestanding-3c-sic-interposer, 2026-10-07_openalex_diamond-d2w-direct-bonding-vdw-45mpa, 2026-10-07_openalex_lau-silicon-bridge-microbump-reliability, 2026-10-08_etron-liquid-through-substrate-cavity, 2026-10-08_micron-cryogenic-package-hea-solder, 2026-10-08_advantest-singulated-die-test-thermal, 2026-10-09_cas-2013-microchannel-interposer-ebg, 2026-10-09_bjut-thermomech-phase-field-imc-tgv]
 related:
   - wiki/technologies/cowos.md
@@ -1311,3 +1311,50 @@ SNU × UIUC 的 TIM 綜述明確指出：**TIM 的 bulk／effective 導熱係數
 ⭐⭐⭐ **「量」件之發明人 VENUTI ELENA 即 2026-10-10 收錄之 Chips 回顧（`10.3390/chips5030018`）作者，本輪由 OPS inventor 欄直接證實** ⇒ **規範（38）自推定升級為已驗證。**
 
 *Sources: [[sources/2026-10-11_microchannel-topology-optimization-quantified]]、[[sources/2026-10-11_etron-lateral-hbm-sidewall-assignment]]、[[sources/2026-10-11_technoprobe-thermocouple-measure-leg]]*
+
+## 2026-10-12 新增：界面熱阻成為第四個熱量化軸，且 TIM 側首次具備「診斷 + 量測口徑」的配對
+
+### ⭐⭐⭐ 熱量化軸自三個擴為四個
+
+| # | 軸 | 單位 | 量測對象 | 落點 |
+|---|----|------|----------|------|
+| 1 | **熱阻降幅** | % | **系統**（冷卻器 + 熱源） | 微流道落點表：CAS SIMIT × 上海交大拓撲最佳化 MCHS **熱阻 −30%／泵送功率 −57%／冷卻器內最大熱致 von Mises 應力 35.59 → 10.75 MPa（−70%）**（既載 2026-10-11） |
+| 2 | **熱通量** | W/cm² | **元件表面** | ATE 側 100 W/cm²（既載） |
+| 3 | **熱導率** | W/m·K | **材料本體（bulk）** | 既載多筆 TIM／填料文獻 |
+| 4 | ⭐ **界面熱阻** | **cm²·K·W⁻¹** | ⭐ **兩個表面之間** | ⭐ **本輪：fluorofluidic-gel TIM 0.15 cm²·K·W⁻¹** |
+
+⇒ 📌 **第 4 軸是唯一一個把「兩個表面之間」當作量測對象者。**
+⇒ ⚠⚠ **依既載規範（34）（37）明令：本輪之 0.15 cm²·K·W⁻¹ 與第 1 軸之 −30% 量測對象不同（界面 vs 系統），不得並列排序、相減，或據以宣告任何熱阻障壁被突破。**
+
+### ⭐⭐⭐ TIM 側自本輪起具備「診斷 + 量測口徑」的配對，且兩者獨立、相隔兩日入庫
+
+| 角色 | 來源 | 內容 |
+|------|------|------|
+| **診斷** | **SNU × UIUC 回顧（10.1002/admt.71344，2026-09-24，既載）** | 把「**bulk 熱導率的進步未等比例轉成接合後效能**」診斷為核心錯配；指出有效傳熱由**三個耦合域**決定：複合材內部傳輸／接合界面與 bondline 行為／製程定義之路徑結構 |
+| ⭐ **量測** | **Beihang × CAS（10.1038/s41467-026-78046-2，2026-09-26，本輪）** | **同時給出兩端的數字：熱導率 5.89 W·m⁻¹·K⁻¹ 與接觸熱阻 0.15 cm²·K·W⁻¹** |
+
+⇒ 📌 **新增作業要點：TIM 的熱導率單值此後不應單獨引用；引用時須同時給出接觸熱阻，或明確標註其缺少。**
+
+### 本輪 TIM 件之完整量化值
+
+| 量 | 值 |
+|----|-----|
+| 熱導率 | **5.89 W·m⁻¹·K⁻¹** |
+| **接觸熱阻** | **0.15 cm²·K·W⁻¹** |
+| 黏著強度（可逆） | **189.3 kPa** |
+| 黏著能 | **220.3 J·m⁻²** |
+| 抗衝擊 | **3.91 J·cm⁻¹** |
+| 熱穩定區間 | **−80 °C 至 300 °C** |
+| 電崩潰強度 | **> 24 kV/mm** |
+
+- 機制自述：分支型奈米團簇接點之氟網路提供**界面滲潤（interfacial infiltration）**；導熱奈米複合材提供熱通路。
+- ⭐ **24 kV/mm 使 TIM 的選擇條件此後可記為「熱 + 力 + 電」三類。**
+- ⚠⚠ **元件域為通用微電子散熱；本文未指明先進封裝或 AI 加速器之應用驗證，亦未指認 TIM1／TIM2 位階** ⇒ **其數字不得作為 AI 加速器封裝之 TIM 規格基準**，僅為材料側可達值之一個落點。
+- ⚠ **未給**：BLT（bondline thickness）、壓合壓力、可逆黏著之循環次數、熱循環後退化、晶粒接面溫度。
+
+### ⚠ 熱與其他面用途的競爭（2026-10-12 新增）
+
+- **TSMC US20260235823A1 把光學凹穴挖在光子晶粒背面** ⇒ ⚠⚠ **既載「背面散熱」論述與本件在同一表面上競爭**；本件未討論挖出凹穴後該面的散熱可用性如何變化 ⇒ 列為下輪追蹤。詳見 `technologies/copackaged-optics.md`、`technologies/tsv.md`。
+- ⚠ **既載「16 層 HBM4 停在小眾」之兩個原因之一為熱限制**（Silicon Analysts，⚠ 分析觀點，無數值）；另一為 JEDEC 775 µm 高度上限。
+
+來源：[[sources/2026-10-12_tim-conductivity-and-contact-resistance-paired]]、[[sources/2026-10-12_tsmc-die-backside-as-optical-plane]]、[[sources/2026-10-12_globalfoundries-2b-tsmc-interposer-malta]]

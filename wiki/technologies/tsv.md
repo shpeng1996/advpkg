@@ -3,7 +3,7 @@ title: "TSV — Through-Silicon Via / 矽穿孔"
 category: technology
 tags: [TSV, HBM, interposer, 3D-IC, CoWoS, manufacturing, backside-power, advanced-packaging, radiation, redundancy, reliability]
 created: 2026-08-10
-updated: 2026-10-11
+updated: 2026-10-12
 sources: [2026-09-27_wuhanuniv_cn121548325a-tgv-micro-nano-anchor-molecular-bridging, 2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-27_semieng_chip-week-156-india-tata-besi-izmo, 2026-04-22_semieng_tsv-complexity-manufacturing-bottleneck, 2026-08-21_semieng_chip-week-152, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-08-21_scirep_copper-oxide-reduction-ar-h2-pulsed-plasma, 2026-06-08_irtnanoelec_d2w-hybrid-bonding-1um-pitch, 2026-03-13_kaneka_jp2026047137a-glass-core-polyimide-quantified, 2026-08-10_screp_low-k-organic-buffer-tgv-cu-metallization, 2026-08-04_jmrt_vacuum-assisted-void-free-cu-fill-tgv, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring, 2026-09-26_patent_zhuhai-tiancheng-dual-depth-tsv-silicon-bridge, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_patent_er-eng-glass-interposer-dual-carrier, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth, 2026-10-02_epo_semco-cn122054433a-glass-surface-roughness, 2026-10-02_trendforce_intel-microled-glass-24-layer, 2026-10-02_imaps-dpc2026_defect-free-coplanar-copper-via-fill, 2026-10-02_microrel_tudelft-google-3dic-fa-hardware, 2026-10-06_epo_microchip-polysic-ceramic-interposer-mandrel-vias, 2026-10-06_openalex_auburn-nife-tsv-magnetic-shield-package, 2026-10-06_thelec_sec-xray-tsv-tgv-inspection-1um, 2026-10-07_epo_cas-freestanding-3c-sic-interposer, 2026-10-07_openalex_cuos-alloy-interconnect-oxidation-adhesion, 2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk, 2026-10-08_rdl-free-glass-interposer-trench, 2026-10-08_uestc-tapered-tgv-skin-current, 2026-10-09_cas-2013-microchannel-interposer-ebg, 2026-10-09_nycu-itri-cu-pad-protrusion-aspect-ratio]
 related:
   - wiki/technologies/hbm4.md
@@ -901,3 +901,14 @@ TU Delft × Google（2026-07-03）：以 **~210 µm interposer pin pitch** 的 D
 ⚠ **去重邊界案例**：同發明之中國同族 **CN122028438A** 在 OPS 之 family-id 為 **99686008**（≠ 本件 98899394）⇒ family 級去重在本例會把同一發明計為兩件。
 
 *Source: [[sources/2026-10-11_etron-lateral-hbm-sidewall-assignment]]*
+
+## 2026-10-12 新增：晶粒背面的用途清單自三類擴為四類
+
+- ⭐⭐⭐ **TSMC US20260235823A1（family 100820052，2026-08-13）**：光子晶粒**自背面向正面挖出凹穴**，凹穴之**兩個不平行斜面充當反射鏡**，把光反射進／出位於正面的光學耦合器；電子晶粒疊在光子晶粒正面之上。
+- ⇒ 📌 **既載晶粒背面的用途只有兩種：散熱面**（液冷、Etron TTV 貫穿散熱孔、側壁液冷）**與 TSV 出口**。**本件新增第三種：光路面。**
+  **合併既載 Adeia／Etron 所立之「側（sidedness）」維度，晶粒面的指派此後記為四類互斥用途：連接（電）、散熱、貫穿（TSV）、光路。**
+- ⇒ ⚠⚠ **這使「背面」成為一個被競爭的資源**：TSV 出口、散熱結構與光學凹穴都要求同一塊體積。**本件未討論此取捨**（挖出光學凹穴後該面的散熱可用性如何變化）⇒ 列為下輪追蹤。
+- ⚠ **零量化值**（無凹穴深度、無斜面角度、無與 TSV 的距離約束）。專利為前瞻訊號。
+- 📌 既載「**免 TSV 化**」四型（Intel CN122349366A 矽橋免孔／Deca Tech 模封免孔橋／SEMCO 有機橋／Etron 取消 TSV）本輪**無新增型**；本筆屬「TSV 與其他用途競爭同一表面」之議題，與免 TSV 化不同軸。
+
+來源：[[sources/2026-10-12_tsmc-die-backside-as-optical-plane]]

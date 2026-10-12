@@ -3,7 +3,7 @@ title: "共封裝光學元件 / Co-Packaged Optics (CPO) — TSMC-COUPE™ & Eco
 category: technology
 tags: [CPO, co-packaged-optics, COUPE, TSMC, GlobalFoundries, Samsung, photonics, AI, HPC, networking, OCI-MSA, DWDM, Broadcom, NVIDIA, glass-substrate, ULCVD, TGV, Spectrum-X, NVL72]
 created: 2026-04-25
-updated: 2026-10-11
+updated: 2026-10-12
 sources: [2026-09-27_globalfoundries_siph-cpo-bandwidth-density-coupling-budget, 2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-27_paper_copper-interconnect-scaling-roadmap-lines-per-mm, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-05-07_trendforce_globalfoundries-silicon-photonics-scale-cpo, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-03-17_coherent_cpo-ofc2026-demo, 2026-06-07_digitimes_jcet-3d-packaging-cpo-plant, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_edn_cpo-technology-status-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-06-24_thelec_corning-glass-bridge-cpo, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-14_trendforce_umc-silith-silicon-photonics-hvm, 2026-07-14_trendforce_huawei-baidu-npo-msa, 2026-07-27_trendforce_presscenter_cpo-switches-nvidia-broadcom-coupe, 2026-06-03_3dincites_intel-foundry-emib-cpo-glass-ectc2026, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-07-31_ase_cn224583735u-photoelectric-hybrid-rdl, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-09-26_report_dupont-ttm-polymer-waveguide-reliability, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_bitschips_besi-q1-2026-hybrid-bonding-orders, 2026-10-07_openalex_mit-cpo-vs-pluggable-switch-power-calibration, 2026-10-07_skhynix_cpo-nature-electronics-100tbps-1pjbit-10ns, 2026-10-09_semiwiki-tsmc-oip-2026-verification]
 related:
   - wiki/technologies/rdl.md
@@ -1359,3 +1359,31 @@ LPKF 之 CPO 耦合能力條件為 **表面波紋 ±100 nm、表面粗糙度 ±3
 ⚠ 該文提出以**時間常數 τ** 為跨層級統一最佳化目標（作者自創命名「τ-Law」，**非業界或標準用語**），摘要零絕對值、驗證僅為 proof-of-concept 配置間相對比較 ⇒ **其價值在指標軸，不在數據。**
 
 *Sources: [[sources/2026-10-11_asmpt-cure-off-critical-path]]、[[sources/2026-10-11_statschippac-underfill-keepout-optical]]、[[sources/2026-10-11_epic-latency-axis-tau-law]]*
+
+## 2026-10-12 新增：光路轉折被移出晶粒邊緣——晶粒背面成為第四種被指派的面
+
+### ⭐⭐⭐ 專利訊號 / Patent Signals
+
+- **TSMC US20260235823A1（family 100820052，2026-08-13，發明人 CHEN MING-FA、LIU CHIA-HUNG、LIN YU-SIANG）**：電子晶粒疊在光子晶粒**正面**之上；光子晶粒**自背面向正面挖出凹穴（recess）**；凹穴含**兩個面**——第一面在光學耦合器末端、第二面與之相對且**不平行**，**用以把光反射進／出耦合器**。
+- ⇒ 📌 **既載 CPO 耦合論述集中在邊緣耦合（edge coupling）與光纖陣列對位，瓶頸被記為組裝與黏著劑**（2026-10-11 立「CPO 組裝瓶頸在黏著劑」三落點）。**本件把反射鏡做進晶粒厚度裡，光在厚度方向轉折，而非在晶粒邊緣進出。**
+  ⇒ **這是一條繞過邊緣對位公差的路線，其代價轉移到背面蝕刻的斜面角度精度（本件未給任何數值）。**
+- ⇒ ⭐⭐⭐ **既載「封裝的面正在成為被分配的資源」新增一個新類型落點：光路面。**
+  **晶粒面的指派此後記為四類用途：**
+  | # | 用途 | 落點 |
+  |---|------|------|
+  | 1 | **連接（電）** | Adeia US20260247631A1「側」維度；Etron 第一側壁 edge pads（既載） |
+  | 2 | **散熱** | Etron 對面側壁交給上方液冷；TTV 貫穿散熱孔（既載） |
+  | 3 | **貫穿（TSV）** | 既載 TSV 論述 |
+  | 4 | ⭐ **光路** | **本件：背面凹穴之兩個不平行斜面** |
+- ⇒ ⭐⭐ **與既載 STATS ChipPAC CN121665722A（2026-10-11：周壁把底填料擋在光路之外，理由首次是光學）構成同一問題的兩種處置**：一為**不讓材料進到光路**，一為**把光路挪到材料到不了的地方（晶粒背面體積內）**。⚠ 兩例、不同申請人（TSMC vs STATS ChipPAC），依規範 41 檢查為獨立來源，**但兩例不升格為成立論述。**
+- ⚠⚠ **零量化值**：無凹穴深度、無斜面角度、無耦合損耗 dB、無對位容差、無波長。專利為前瞻訊號，**不得陳述為台積電已量產之耦合方案。**
+- ⚠⚠ **未解之取捨**：若晶粒背面被挖出光學凹穴，**該面的散熱可用性下降**；**本件未討論此取捨** ⇒ 列為下輪追蹤。
+- ⚠ **同族製程側件未收**：US20260003145A1（family 98010984，2026-01-01）以 reconstructed wafer 兩段蝕刻 + 側壁保護層形成帶 facet 之 photonic engine。
+- ⚠ **檢索觀察**：`ti,ab="optical adhesive" or ti,ab="photonic package" and pd within "2026"` 僅命中 **4 件，且全為 TSMC** ⇒ 📌 **CPO 封裝側在此檢索式下呈單一申請人樣態**（⚠ 亦可能檢索式過窄，不得逕推市場結論）。
+
+### ⚠ 材料側缺口未補（2026-10-12）
+
+- **既載 2026-10-11 之最高優先候選 Namics 件（`10.5104/jiep.29.376`，「シリコンフォトニクス CPO 用透明光接着剤」，JIEP vol.29 no.5 pp.376–380，2026-09-01，作者 坂井徳幸／鈴木文也，Namics Corporation）本輪經規範（39）事前檢索確認未收錄，且實際取得其書目**——但 **J-STAGE 頁面標示「認証あり」（需登入），無摘要、無任何量化值**（無折射率、無透光率、無固化溫度、無模數、無 CTE、無可靠度條件）。
+- ⇒ 依 spec §4.3「無摘要者跳過」**本輪不收錄**。📌 **既載「CPO 組裝瓶頸在黏著劑」之材料側缺口因此仍未補；該件所屬特刊為「3D・チップレット・CPO 時代の実装技術：プロセス，材料，検査，自動化」⇒ 下輪應改以該特刊其他篇目為檢索目標，而非重試此一 DOI。**
+
+來源：[[sources/2026-10-12_tsmc-die-backside-as-optical-plane]]

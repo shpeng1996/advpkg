@@ -3,7 +3,7 @@ title: "HBM4 — High Bandwidth Memory 4"
 category: technology
 tags: [memory, HBM, JEDEC, standards, AI, HPC, HBM4E, cleanroom, capacity, ISSCC2026, ZAM, HB3DM, HBM5, zHBM, HPB, FMS-2026, ECC, reliability, FIT]
 created: 2026-04-24
-updated: 2026-10-11
+updated: 2026-10-12
 sources: [2026-08-13_semieng_1mw-rack-debate-thermal, 2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor, 2026-08-10_trendforce_skhynix-chongqing-sale-global-reset, 2026-08-05_trendforce_samsung-v10-zhbm-hbm5-fms2026, 2026-07-30_trendforce_samsung-ds-q2-2026-hbm4-triple-q3, 2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-03-18_trendforce_intel-emib-malaysia, 2026-01-23_trendforce_hbm4e-samsung-skhynix-mid2026, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-01-13_semiengineering_hbm4-microbumps, 2025-12-18_trendforce_micron-capex-hbm4, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h, 2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-03-03_trendforce_sk-hynix-hbm4-tight-gaps, 2025-08-12_semianalysis_hbm-roadmap, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit, 2026-06-09_astutegroup_hbm-market-share-2026-battle, 2026-06-10_trendforce_samsung-gwangju-packaging-base, 2026-06-15_trendforce_skhynix-hbm4e-sample-timeline-pulled-forward, 2026-06-20_techtimes_skhynix-hbm4e-12layer-samples, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-27_tweaktown_hbm4-16hi-nvidia-supply-fight, 2026-06-26_semieng_chip-week-144, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-14_trendforce_samsung-hbm-hiring-hbm4-hbm4e-hbm5, 2026-07-14_trendforce_skhynix-yongin-y1-feb2027, 2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b, 2026-08-13_trendforce_samsung-skhynix-hbm4-2h-earnings-pricing, 2026-08-25_trendforce_nvidia-server-hike-hbm-price-2027, 2026-08-28_trendforce_skhynix-indiana-hbm4e-3q29-supply-2030, 2026-08-26_tomshardware_hbf-hot-chips-oxmiq-limited-usability, 2026-08-21_electronics_dual-interposer-hbm-power-integrity, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-09-09_acsaelm_microwave-anneal-cu-cu-150c-3min, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-03-29_damnang_hybrid-bonding-cmp-gating-factor, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_trendforce_cowos-l-mainstream-through-2028, 2026-10-02_microrel_tudelft-google-3dic-fa-hardware]
 related:
   - wiki/entities/sk-hynix.md
@@ -1662,3 +1662,51 @@ TU Delft × Google（2026-07-03）：PoP 中 DRAM 疊於邏輯之上造成 **EFI
 ⚠ 回顧且摘要**零絕對值** ⇒ 不得由其引出任何數字。詳見 [[concepts/power-delivery-packaging]]。
 
 *Sources: [[sources/2026-10-11_microchannel-topology-optimization-quantified]]、[[sources/2026-10-11_etron-lateral-hbm-sidewall-assignment]]、[[sources/2026-10-11_ldo-psij-power-to-signal-integrity]]*
+
+## 2026-10-12 新增：775 µm 上限的兩個後果、base die 的三種歸屬、以及頻寬的三個量測口徑
+
+### ⭐⭐⭐ 775 µm 高度上限：本 wiki 自本輪起對它的兩端都有落點
+
+| 側 | 後果 | 來源 |
+|----|------|------|
+| **材料側** | **SK hynix 把 DRAM 晶圓減薄至 30 µm** 以塞進上限；堆疊接合採 **MR-MUF** | EETimes CES 2026（2026-01-12） |
+| **商業側** | **16 層 HBM4（48GB）停在小眾高密度層級**（上限 + 熱限制）；主流 Rubin 訂單停在 **12-high / 36GB** | Silicon Analysts（2026-10-11，⚠ 分析觀點） |
+
+⇒ 📌 **775 µm 此後記為一個「同時決定材料減薄極限與層數商業天花板」的單一約束**，既載此前僅把它當作一項規格。
+
+### ⭐⭐⭐ base die：三種歸屬，而本輪一次補齊
+
+| 歸屬類型 | 內容 | 來源 |
+|----------|------|------|
+| **代工歸屬** | SK hynix → **TSMC 12 nm 級**（HBM3E 曾自製；HBM4E ⚠ 據報考慮 Intel）；Samsung → **自家 4 nm，3D 封裝亦自理**；⚠ **Micron 未指名** | Herald／EETimes／Altsets |
+| **成本歸屬** | ⭐⭐⭐ **HBM4 之 TSMC base die 成本為 core die 的 3–4 倍**（core die 為 SK hynix 1b／10 nm 級）⚠ 業界消息來源 | Herald（2026-08-31） |
+| **功能歸屬** | ⭐⭐⭐ **Neurophos WO2026207273A1**：**位址空間切兩個子集**，第二子集導向 **base die 上的 local processing logic**，結果**直接寫回堆疊** | 專利訊號（2026-10-01） |
+
+⇒ 📌 **「一個 HBM 堆疊裡最貴的單一晶粒不是任何一顆記憶體，而是那顆邏輯底座」** —— 這解釋了為何 2026 年 SK hynix（考慮 Intel）與 Samsung（開放 custom base die 給 TSMC，既載）同時在分散／重配 base die，**動機是成本而非產能**。
+⇒ 📌 **既載空缺「HBM base die 供應鏈」之範圍應擴大：它不只是一條供應鏈，也是一個排他權競爭的場所，而競爭者包含不製造任何一層的第三方（Neurophos 為光子運算新創）。**
+⇒ 📌 **功能歸屬的介面定義手法亦為首見：以「哪些位址會被攔下來」劃界，而非以實體層劃界。**
+
+### ⭐⭐⭐ 產出被三段串列化鎖定
+
+- **Altsets 四段式結構**：先進 DRAM 晶粒 → 邏輯 base die → 堆疊與封裝 → 加速器平台。
+- ⭐ **說明性示例（本文自建假設，非實測）**：**100 DRAM 堆疊 / 80 相容 base die / 70 完成組裝 ⇒ 成品 70；單獨再加 20 個 DRAM 堆疊，成品數不增加。**
+- ⇒ 📌 **「多投入上游不增加產出」此命題首次以 HBM 為對象出現。** 既載同形狀論述（CoWoS 配額 9,350/18,000 = 51.9%；ABF 減供 30% 且替代天花板在增層層數）皆為**單一瓶頸**；本件是**三段相乘**，且 base die 既是最貴的一項、又經常是 min() 裡最小的一項。
+
+### ⭐⭐⭐ 頻寬：三個量測口徑，不得互相替換
+
+| # | 口徑 | 落點 |
+|---|------|------|
+| 1 | **介面規格頻寬** | 2,048-bit 介面（Micron HBM4）；**>11 Gbps/pin**（NVIDIA Rubin 2025 Q3 提高之要求，⚠ 未具名業界報導） |
+| 2 | **廠商宣告之封裝頻寬** | **SK hynix 16 層 HBM4 >2 TB/s** |
+| 3 | ⭐ **CPU 側實測可達吞吐** | **HPI 件（2026-10-09）：GH200／MI300A 之延遲與吞吐實測** —— **本 wiki 第一個落點** |
+
+⇒ 📌 **新增作業要點：引用任何 TB/s 數字前須指認它屬於哪一層口徑；三層之間不得互相替換、不得排序比較。** 此為既載**規範（34）（37）**（新數字軸出現時先問量測對象）在**頻寬軸**上的第一次套用。
+⇒ ⭐⭐⭐ **且 HPI 件的核心結果是：可達吞吐取決於作業系統的頁面放置策略** —— 加權頁面交錯「同時用 CPU 與 GPU 兩池記憶體」才超過任一單池。📌 **封裝把兩種記憶體放進同一個一致性域是硬體動作，但其收益需要頁面放置策略去領取；既載所有封裝效益論述都停在硬體層，本件是第一個指出兌現條件在軟體的來源。** ⚠ 摘要層無任何絕對數值，列為下輪全文追讀候選（OA PDF 可得）。
+
+### 其他（2026-10-12）
+
+- **SK hynix 16 層 48 GB**；**Micron 12 層 36 GB／2,048-bit，目標 2026 年底 15,000 片 HBM4 晶圓**；**Samsung 1c DRAM 良率接近 80%**（TrendForce）。
+- ⚠⚠ **量產口徑衝突，並列保留**：EETimes 記 SK hynix「計畫 **2026 Q3 量產**」；Altsets 記 SK hynix 自稱「**2026 Q2 起大量出貨**」⇒ 📌 **mass production 與 mass shipments 為兩個不同口徑。**
+- ⚠ **Micron 專利訊號 WO2026049956A1（封裝層冗餘儲存）見 `concepts/test-metrology-packaging.md` 與 `entities/micron.md`** —— 其對 HBM 的意涵為「修復資源可做成堆疊裡的一個鄰居」，⚠ 但該件未指明 HBM。
+
+來源：[[sources/2026-10-12_hbm4-30um-thinning-775um-ceiling]]、[[sources/2026-10-12_skhynix-intel-foundry-hbm4e-base-die]]、[[sources/2026-10-12_hbm4-second-supply-chain-serialization]]、[[sources/2026-10-12_neurophos-base-die-as-compute-site]]、[[sources/2026-10-12_bandwidth-three-measurement-apertures]]、[[sources/2026-10-12_globalfoundries-2b-tsmc-interposer-malta]]

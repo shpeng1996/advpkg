@@ -3,7 +3,7 @@ title: "台積電 / TSMC"
 category: entity
 tags: [foundry, advanced-packaging, CoWoS, SoIC, CoPoS, COUPE, CPO, InFO, WMCM, aLSI, MRAM, 3nm-pricing]
 created: 2026-04-24
-updated: 2026-10-11
+updated: 2026-10-12
 sources: [2026-09-27_tradingkey_copos-glass-validation-08mm-85x110mm, 2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-09-10_trendforce_tsmc-august-revenue-nt514b-record-fourth-month, 2026-09-10_trendforce_tsmc-taichung-14nm-p1-p2-2027-ahead-of-plan, 2026-04-24_initial-survey, 2026-04-13_trendforce_copos-pilot, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2025-12-18_trendforce_apple-wmcm-a20, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-01-20_trendforce_tsmc-wmcm-apple, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap, 2026-04-23_trendforce_tsmc-roadmap-a12-a13-no-high-na-euv, 2026-05-07_trendforce_tsmc-us-expansion-250b-arizona, 2026-05-12_focustaiwan_tsmc-capex-31b-arizona-20b, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-28_reuters_tsmc-kevin-zhang-energy-efficiency, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-09_financialcontent_tsmc-130k-cowos-wafers, 2026-06-09_digitimes_tsmc-cowos-soic-capacity-symposium, 2026-06-15_trendforce_tsmc-cowos-gap-narrowing-130k-200k-wafers, 2026-06-17_digitimes_amkor-tsmc-10year-arizona-deal, 2026-06-17_trendforce_tsmc-amkor-10year-arizona-advanced-packaging, 2026-06-10_tomshardware_tsmc-fab-expansion-roadmap-n2-cowos-soic, 2026-06-27_tmtpost_tsmc-cowos-capacity-targets-2026-2027, 2026-07-02_trendforce_samsung-sf2p-plus-tsmc-n2-roadmap, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-22_trendforce_tsmc-2027-price-hike-hpc, 2026-07-20_trendforce_tsmc-265b-arizona-intel-novalake, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-08-17_trendforce_tsmc-arizona-profit-663pct-1h26, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-10-07_sedaily_tsmc-copos-ap7-line-complete-one-year-yield, 2026-10-09_tsmc-cantilever-probe-card-patent, 2026-10-09_tsmc-impedance-control-probing-patent, 2026-10-09_semiwiki-tsmc-oip-2026-verification, 2026-10-09_tsmc-copos-ap7-chiayi-panel-size]
 related:
   - wiki/technologies/cowos.md
@@ -663,3 +663,22 @@ TSMC 先進封裝研發總監 **James Chen**（SEMICON Taiwan 2026）首次官�
 ➜ ⚠ 本件之 CoPoS 玻璃試片內容**已於 2026-09-27 收錄且既載更完整** ⇒ 依規範（35）事前檢索命中，本輪正確分類為**查核型**，未重複建條目。
 
 *Source: [[sources/2026-10-11_nvidia-glass-pressure-18000mm2-schmid-tgv]]*
+
+## 2026-10-12 新增：中介層外包、以及「晶粒背面作為光路面」的排他權
+
+### 供應鏈：CoWoS 的中介層段被外包
+
+- ⭐⭐⭐ **TSMC 與 GlobalFoundries 簽約（約 20 億美元、五年、GF 紐約州 Malta 廠、2028 H1 放量）**，由 GF 供應**含內嵌深溝槽電容之矽中介層**。
+- 📌 **本筆把既載之「CoWoS 產能瓶頸」自單一總量軸拆成兩段：可外包段（中介層）與不可外包段（接合）。** 來源之分析觀點為 TSMC 藉此把資本支出轉向價值更高的接合段；⚠ 此為分析推測，非 TSMC 表態。
+- ⚠ **去耦電容的落點此後記為至少兩處**：基板表面（受底填料圓角幾何限制，上限 ≤50 µm，既載 Amkor 件 2026-10-10）與**中介層內部（深溝槽，不受圓角限制）** ⇒ 後者正是前者幾何限制的一個繞道。
+
+### 專利訊號 / Patent Signals（2026-10-12 新增）
+
+- ⭐⭐⭐ **US20260235823A1（family 100820052，2026-08-13，發明人 CHEN MING-FA 等）**：電子晶粒疊在光子晶粒**正面**之上；光子晶粒**自背面向正面挖出凹穴**，凹穴含**兩個不平行的面（facet）**——第一面在光學耦合器末端、第二面與之相對且不平行，**用以把光反射進／出耦合器**。
+  ⇒ 📌 **既載「封裝的面正在成為被分配的資源」新增一個新類型落點：光路面。晶粒面的指派此後記為四類用途——連接（電）、散熱、貫穿（TSV）、光路。**
+  ⇒ 此為**繞過邊緣耦合對位公差**的一條路線，代價轉移到**背面蝕刻的斜面角度精度**（本件未給任何數值）。
+  ⚠ **零量化值**（無凹穴深度、無斜面角度、無耦合損耗 dB、無對位容差）；專利為前瞻訊號，不得陳述為台積電已量產之耦合方案。
+- ⚠ **同族製程側件未收**：US20260003145A1（family 98010984，2026-01-01）以 reconstructed wafer 兩段蝕刻 + 側壁保護層形成帶 facet 之 photonic engine；因選件上限未收錄。
+- ⚠ **本輪檢索觀察**：`ti,ab="optical adhesive" or ti,ab="photonic package" and pd within "2026"` 僅命中 **4 件，且 4 件全為 TSMC** ⇒ 📌 **CPO 之封裝側標題／摘要層布局，在本檢索式下呈現單一申請人壟斷的樣態**（⚠ 亦可能是檢索式過窄所致，不得逕推市場結論）。
+
+來源：[[sources/2026-10-12_globalfoundries-2b-tsmc-interposer-malta]]、[[sources/2026-10-12_tsmc-die-backside-as-optical-plane]]
