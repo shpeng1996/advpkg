@@ -4861,3 +4861,16 @@ warning: unable to unlink '.../.git/index.lock': Operation not permitted
   - ⚠ **發現一筆既存之真重複（非本輪造成）**：DOI **`10.1016/j.jsamd.2026.101155`**（Cu-Cu 接合綜述）**於 L574（2026-09-22）與 L640（2026-09-26）各登錄一次，且指向兩個不同的 raw 檔**（`raw/papers/2026-03-27_sciencedirect_cu-cu-bonding-3d-packaging-review-quantitative.md` 與 `raw/papers/2026-09-26_openalex_dalian-cucu-bonding-review-jsamd101155.md`）。兩筆摘要欄所記數字不同（前者 dishing 3–5 nm／Ra <0.1–0.2 nm／shear MPa 表；後者 150 °C >30 MPa vs 200 °C 17 MPa）⇒ **研判為同一篇文獻經兩條路徑（ScienceDirect 直取 vs OpenAlex）分別入庫，而 2026-09-26 當輪之 DOI 事前檢索未攔下**（可能原因：L574 之登錄日期與檔名日期不一致，使 grep 關鍵詞落空）。
   - ➜ 📌 **本流程依 spec §QUALITY RULES「`raw/` 除 `_collected_urls.txt` 外不得修改，且後者僅可追加」，未修改或刪除任一既存行**；該筆重複列為新空缺，待人工或專屬 lint 輪次處置。
   - ✓ 另確認 **13 行欄位數 <4 者全部為 2026-09-15 dedupe 所刻意保留之 `# DUP-OF-Lxx` 註記行，非檔案損壞。**
+- ✅ **git commit：本輪已執行。**
+  - **本輪提交：`3b2d259`「2026-10-12」，59 個檔案**（16 raw ＋ 16 新 wiki 來源頁 ＋ 26 更新 wiki 頁〔含 `index.md`／`overview.md`／`log.md`〕＋ `raw/_collected_urls.txt` 的 16 行追加）；**+2,694 / −27 行**；`git status --porcelain` 事後為 **0 行（乾淨）**。
+  - ⚠ **尚未 push**：`git status -sb` 為 `## main...origin/main [ahead 1]`。**本流程不執行 push**（spec §QUALITY RULES 僅要求 stage 與 commit），待 `daily_git_push.bat` 或人工推送。
+  - ⚠ **git 鎖檔與暫存物件（依規範（45）：開場與收場以同一條 `find` 遞迴命令取得）**：
+    | 量測項（同一命令） | 開場 | 收場 | 淨增 |
+    |---|---|---|---|
+    | `find .git/objects -name 'tmp_obj_*' \| wc -l` | **566** | **636** | **+70** |
+    | `find .git -name 'stale-*.lock-*' \| wc -l` | 12 | **13** | +1 |
+    | `ls .git/ \| grep -c lock` | 44 | **45** | +1 |
+    ➜ ✓ **規範（45）本輪正確套用**（前後同命令、以 `find` 遞迴）；**+70 之淨增與既載「每輪 `git add -A` 產生數百個 `tmp_obj_*`」同向但量級較小**，⚠ 不足以修正既載之量級推估。
+  - 本輪 commit 留下 `.git/HEAD.lock`（連接資料夾不允許刪除），依既有慣例改名為 `.git/stale-HEAD.lock-20261012`。
+  - ✅ **git 於本輪結束時仍可正常運作**（`git status -sb`、`git log` 皆正常），鎖檔改名未造成損壞。
+  - ⚠ **既載待辦「Windows 側 `git gc --prune=now`」維持且更形必要**（收場 `tmp_obj_*` = 636，為歷輪最高）。
