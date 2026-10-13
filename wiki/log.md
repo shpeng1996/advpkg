@@ -4928,7 +4928,7 @@ warning: unable to unlink '.../.git/index.lock': Operation not permitted
   - ⚠ **既載之真重複一筆仍未處置**（DOI `10.1016/j.jsamd.2026.101155` 於 L574／L640 各登錄一次並指向兩個不同 raw 檔）—— 依 spec §QUALITY RULES「`raw/` 除 `_collected_urls.txt` 外不得修改，且後者僅可追加」，**collect 輪次不得修改既存行** ⇒ **維持列管，待人工或專屬 lint 輪次處置。**
   - ✓ 檔案計數交叉驗證：`wiki/sources` = **864**、`wiki/entities` = **47**、`technologies` = 17、`concepts` = 6、`analyses` = 5、根目錄 3 ⇒ **總計 942，與 index.md 所載一致。**
 - ✅ **git commit：本輪已執行。**
-  - **本輪提交：`c75f144`「2026-10-13」，56 個檔案**（16 raw ＋ 16 新 wiki 來源頁 ＋ 1 新實體頁 `entities/atotech.md` ＋ 22 更新 wiki 頁〔含 `index.md`／`overview.md`／`log.md`〕＋ `raw/_collected_urls.txt` 的 16 行追加）；**+2,111 / −42 行**；`git status --porcelain` 事後為 **0 行（乾淨）**。
+  - **本輪提交：`2de9f91`「2026-10-13」，56 個檔案**（⚠ 初次提交為 `c75f144`，因回填本行之提交資訊而 `--amend` 一次，故最終 hash 為 `2de9f91`；本行之後另有一次僅含 `wiki/log.md` 的補記提交）（16 raw ＋ 16 新 wiki 來源頁 ＋ 1 新實體頁 `entities/atotech.md` ＋ 22 更新 wiki 頁〔含 `index.md`／`overview.md`／`log.md`〕＋ `raw/_collected_urls.txt` 的 16 行追加）；**+2,111 / −42 行**；`git status --porcelain` 事後為 **0 行（乾淨）**。
   - 本輪 commit 留下 `.git/HEAD.lock`（連接資料夾不允許刪除），依既有慣例改名為 `.git/stale-HEAD.lock-20261013`；**git 於本輪結束時仍可正常運作**（`git status -sb`、`git log` 皆正常）。
   - ⚠ **尚未 push**。**本流程不執行 push**（spec §QUALITY RULES 僅要求 stage 與 commit），待 `daily_git_push.bat` 或人工推送。
   - ⚠ **git 鎖檔與暫存物件（依規範（45）：開場與 `git add -A` 後以同一條 `find` 遞迴命令取得）**：
