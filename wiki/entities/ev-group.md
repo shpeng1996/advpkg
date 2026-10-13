@@ -3,8 +3,8 @@ title: "EV Group (EVG)"
 category: entity
 tags: [equipment, hybrid-bonding, wafer-bonding, maskless-lithography, layer-transfer]
 created: 2026-04-25
-updated: 2026-10-12
-sources: [2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-05-19_semiconductor-digest_ev-group-ectc2026-hybrid-bonding, 2026-06-29_evgroup_ectc2026-hybrid-bonding-layer-transfer, 2026-05-28_imec_w2w-hybrid-bonding-200nm-pitch, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-10-07_epo_evg-zonewise-adaptive-litho-die-shift, 2026-10-07_epo_evg-inorganic-dual-release-layer-common-solvent]
+updated: 2026-10-13
+sources: [2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-05-19_semiconductor-digest_ev-group-ectc2026-hybrid-bonding, 2026-06-29_evgroup_ectc2026-hybrid-bonding-layer-transfer, 2026-05-28_imec_w2w-hybrid-bonding-200nm-pitch, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-10-07_epo_evg-zonewise-adaptive-litho-die-shift, 2026-10-07_epo_evg-inorganic-dual-release-layer-common-solvent, 2026-10-13_evg-bond-wave-pressure-element]
 related:
   - wiki/technologies/hybrid-bonding.md
   - wiki/technologies/soic.md
@@ -230,3 +230,18 @@ KIMM 的 308 nm 準分子雷射解接合研究顯示：在**反轉結構**（玻
 - ⚠ **本輪另檢得但未收之 EVG 件**（僅記存在，供下輪輪替）：WO2026209143A1（family 95337986，以感測系統在共同參考系中同時量**基板厚度與曲率**並據以搬運）、WO2026046508A1（family 92626829，以壓力元件在**接合波（bonding wave）**尚未接合的區段施加正壓以影響接合波行進）、WO2026098776A1（family 93460736，電漿腔監測）。📌 **WO2026046508A1 之「主動操控接合波」與本件之「主動變形基板」同屬「把接合從被動過程變成受控過程」，下輪優先。**
 
 來源：[[sources/2026-10-12_evg-wafer-as-actuator]]
+
+### ⭐⭐⭐ 接合過程可控化：EVG 的第二條路線與第二個團隊（2026-10-13）
+
+- **WO2026046508A1（family 92626829，pd 2026-03-05；發明人 WAGENLEITNER THOMAS／ZINNER DOMINIK／ROHRINGER HARALD）**：以**壓力元件**自基板夾持側對**尚未接合的第二區段 T2** 施加正壓，使主要段與次要段相互靠近，**目的明載為影響接合波的行進路線**；排他權涵蓋**方法、基板夾持器、含該夾持器之裝置**三層。
+- ⇒ 📌 **EVG 在「把接合從被動過程變成受控過程」上已有兩條路線、兩個團隊：**
+  | 路線 | family | pd | 發明人 | 施力時點 |
+  |---|---|---|---|---|
+  | reaction layer 觸發基板變形（既載 2026-10-12） | 93335319 | 2026-05-07 | **UHRMANN THOMAS（單人）** | 事前 |
+  | ⭐ 壓力元件推擠未接合段 | 92626829 | 2026-03-05 | **WAGENLEITNER／ZINNER／ROHRINGER** | 接合進行中 |
+  ⚠ 兩者皆零量化值，依規範（47）不得排序。
+- ⇒ ⭐⭐ **併同既載 EVG 之其他件，其布局已覆蓋接合流程的四個環節**：曝光（WO2026201292A1 分區自適應微影）／基板形狀（93335319）／⭐ **接合波行進（本件）**／量測與搬運（WO2026209143A1 同時量厚度與曲率）。**⇒ 與既載 Technoprobe、Besi 同型的「單一工站內多物理量化」布局，但 EVG 的覆蓋面是整條流程而非單一工站。**
+- ⚠ 專利訊號非量產能力；⚠ 既載 imec × EVG 之 **200 nm pad pitch／post-bond overlay <40 nm**（ECTC 2026）為**測試結構**結果，與本件無直接關聯。
+- ⚠ 既載 **2026-10-12 列為下輪最高優先取件之項目，本輪已取得並結清。**
+
+來源：[[sources/2026-10-13_evg-bond-wave-pressure-element]]

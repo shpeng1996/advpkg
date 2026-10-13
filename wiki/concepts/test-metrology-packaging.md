@@ -3,8 +3,8 @@ title: "先進封裝的測試、量測與失效分析 / Test, Metrology & Failur
 category: concept
 tags: [test, metrology, inspection, failure-analysis, KGD, KGI, KGP, DFA, yield]
 created: 2026-09-17
-updated: 2026-10-12
-sources: [2026-09-27_paper_binghamton-ibm-pad-scaling-resistance-variability, 2026-09-27_paper_purdue-ru-cu-em-lifetime-blacks-n-0154, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2025-01-14_semieng_known-good-interposer-screening, 2025-07-10_semieng_advanced-packaging-reshaping-inspection, 2024-11-12_semieng_packaging-drives-test-metrology-innovation, 2026-08-01_jfap_3dic-failure-analysis-dfa, 2026-07-06_apl_lensless-through-silicon-phase-imaging, 2026-09-06_ndte_hysan-sparse-view-xct-tsv, 2026-08-02_chips_cpo-wafer-level-probe-card, 2026-08-27_samsung_us20260256000a1-interposer-test-pad, 2026-08-13_jcet_us20260239928a1-hybrid-bonding-substack-test, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-06-28_hyperframe_amat-hybrid-bonding-hedge, 2026-09-26_paper_ibm-amine-post-cmp-clean, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-10-02_microrel_tudelft-google-3dic-fa-hardware, 2026-10-02_imaps-dpc2026_gelpak-universal-carriers-singulated-die, 2026-10-06_openalex_gatech-terahertz-nde-8layer-interposer, 2026-10-06_openalex_tongji-wafer-embedded-pitch-standard-pose-correction, 2026-10-06_thelec_sec-xray-tsv-tgv-inspection-1um, 2026-10-07_semieng_kelvin-resistance-probe-access-pitch-limit, 2026-10-07_openalex_amkor-kelly-three-interposer-routes, 2026-10-07_epo_besi-deformable-die-forming-bond-tool, 2026-10-08_silverbrook-known-good-site-substrate-test, 2026-10-08_ase-probing-needle-scrub-length, 2026-10-08_formfactor-45um-probe-pitch-good-enough-die, 2026-10-08_advantest-singulated-die-test-thermal, 2026-10-09_tsmc-cantilever-probe-card-patent, 2026-10-09_tsmc-impedance-control-probing-patent, 2026-10-09_intel-voltage-contrast-backside-patent, 2026-10-09_ieie-probe-card-mlc-signal-integrity, 2026-10-09_hdin-probe-card-market-pin-count, 2026-10-09_quantware-qpu-measurement-stage-patent]
+updated: 2026-10-13
+sources: [2026-09-27_paper_binghamton-ibm-pad-scaling-resistance-variability, 2026-09-27_paper_purdue-ru-cu-em-lifetime-blacks-n-0154, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2025-01-14_semieng_known-good-interposer-screening, 2025-07-10_semieng_advanced-packaging-reshaping-inspection, 2024-11-12_semieng_packaging-drives-test-metrology-innovation, 2026-08-01_jfap_3dic-failure-analysis-dfa, 2026-07-06_apl_lensless-through-silicon-phase-imaging, 2026-09-06_ndte_hysan-sparse-view-xct-tsv, 2026-08-02_chips_cpo-wafer-level-probe-card, 2026-08-27_samsung_us20260256000a1-interposer-test-pad, 2026-08-13_jcet_us20260239928a1-hybrid-bonding-substack-test, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-06-28_hyperframe_amat-hybrid-bonding-hedge, 2026-09-26_paper_ibm-amine-post-cmp-clean, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-10-02_microrel_tudelft-google-3dic-fa-hardware, 2026-10-02_imaps-dpc2026_gelpak-universal-carriers-singulated-die, 2026-10-06_openalex_gatech-terahertz-nde-8layer-interposer, 2026-10-06_openalex_tongji-wafer-embedded-pitch-standard-pose-correction, 2026-10-06_thelec_sec-xray-tsv-tgv-inspection-1um, 2026-10-07_semieng_kelvin-resistance-probe-access-pitch-limit, 2026-10-07_openalex_amkor-kelly-three-interposer-routes, 2026-10-07_epo_besi-deformable-die-forming-bond-tool, 2026-10-08_silverbrook-known-good-site-substrate-test, 2026-10-08_ase-probing-needle-scrub-length, 2026-10-08_formfactor-45um-probe-pitch-good-enough-die, 2026-10-08_advantest-singulated-die-test-thermal, 2026-10-09_tsmc-cantilever-probe-card-patent, 2026-10-09_tsmc-impedance-control-probing-patent, 2026-10-09_intel-voltage-contrast-backside-patent, 2026-10-09_ieie-probe-card-mlc-signal-integrity, 2026-10-09_hdin-probe-card-market-pin-count, 2026-10-09_quantware-qpu-measurement-stage-patent, 2026-10-13_microbump-as-radiator-and-the-stand-in-problem, 2026-10-13_cpo-bottleneck-test-800x-area-mismatch, 2026-10-13_onto-cmp-second-independent-source, 2026-10-13_amkor-cavity-as-allocated-volume]
 related:
   - wiki/technologies/hybrid-bonding.md
   - wiki/technologies/cowos.md
@@ -1363,3 +1363,42 @@ HDIN 稱探針卡**客戶認證週期 12–24 個月**。既載 HBM4E 混合接�
 - 📌 **本輪三件專利（Neurophos、Micron、Besi）分類皆落在 G11C 而非 H10W** ⇒ **記憶體堆疊相關的封裝排他權系統性地落在 G11C；單靠封裝 CPC 碼檢索會系統性漏掉這一類。** 與既載 2026-10-11 之結論（Samsung 底填料件落在 H05B 電加熱）同型。
 
 來源：[[sources/2026-10-12_bandwidth-three-measurement-apertures]]、[[sources/2026-10-12_micron-package-level-repair]]、[[sources/2026-10-12_besi-alignment-mark-area-as-a-cost]]、[[sources/2026-10-12_die-shift-fourth-remedy-custom-interposer]]
+
+### ⭐⭐⭐ 量測可及性新增第四種形式：量到的是替身（2026-10-13）
+
+| # | 形式 | 性質 | 代表落點 |
+|---|---|---|---|
+| ① | **量不到** | 可及性（幾何遮蔽） | 混合 Cu-Cu 接合藏在層間 ⇒ 對位偏差難檢出（既載 2026-10-12） |
+| ② | **量了卻沒反應** | 靈敏度 | 既載 2026-10-11 |
+| ③ | **量到的值取決於你怎麼問** | 相依性（實驗設計） | HPI 件：可達吞吐取決於頁面放置策略（既載 2026-10-12） |
+| ⭐ ④ | **量到的是替身** | **理論等價換取可量測性** | **本輪微凸塊天線件：設計對象 477.9 GHz，量測對象為放大 46 倍後之 10.5 GHz 模型** |
+| ⚠ ⑤（候選） | **量得到但分不出** | 訊號／雜訊比，而非靈敏度 | 本輪 Onto 件：靈敏度提高 ⇒ 大量干擾性（nuisance）檢出，需分類能力 |
+
+- ⇒ 📌 **第四形式的性質與前三者不同：前三者是量測能力的限制，第四種是以理論等價（電磁相似原理）換取可量測性，其可信度完全取決於該等價關係是否成立。** ⭐ **本件作者主動聲明此事**（"It should be emphasized that the fabricated and measured prototype is the scaled … model"）⇒ **本 wiki 第一個由來源自己標註量測對象替換的落點。**
+- ⚠ **第五形式（候選）為單一來源、零數據（Onto sponsor blog），列為候選不逕行升格。**
+
+### ⭐⭐⭐ 對準難度可記為「待對準兩物的面積比」：電性側約 1，光學側約 800（2026-10-13）
+
+- **TrendForce（經 Supercomputing News）：單模光纖纖芯與其須對準之波導之間，面積落差約 800 倍。**
+- ⇒ 📌 既載「以感測物理學換封裝幾何」兩例（**Advantest** 非接觸近場 RF 測試省落針面積、**Besi** 繞射相位對位縮小標記）都是**把量測的幾何需求縮小**；本件說明**光學側的幾何需求天生就大 800 倍** ⇒ **兩條軸合起來構成一個可比較的量：面積比。**
+- **單一光子 IC 全面檢測平均 >100 秒**（TrendForce）；**每顆 GPU 最終可能 4–8 個光引擎，使光學測試量提高 10–100 倍**（Lightmatter CEO）⇒ 📌 **本 wiki 第一個以秒為單位、且隨封裝內元件數線性放大的良率成本。** ⚠ 相乘為本 wiki 之推論，非來源主張。
+- ⇒ ⭐⭐ **既載「測試／量測／失效分析為第三個結構性瓶頸」取得 CPO 側具體化，且來源層級升至廠商發言**（TSMC 副總將測試列入 CPO 瓶頸）⚠ **仍無逐字稿，僅經兩家中文媒體轉述。**
+
+### ⚠ CMP 區段取得第二個獨立來源，但清洗子步驟仍是單一來源（2026-10-13）
+
+| 層級 | 獨立來源數 | 數據 |
+|---|---|---|
+| **CMP 區段為良率限制** | **2**（NineScrolls 既載、**Onto Innovation 本輪**；另有既載 Adeia 專利標題等間接佐證） | 無 |
+| **CMP「後清洗」子步驟為第二大槓桿** | **1**（NineScrolls） | 無 |
+
+- ⇒ 📌 **既載空缺「『CMP 後清洗是第二大良率槓桿』是否成立」不結清**：Onto 件指向的是 **CMP 本身（表面平坦度）**，不是清洗。
+- Onto 之檢測能力分類（供後續比對用）：高靈敏度 **2D**（表面顆粒、圖案異常）／高速**紅外次表面**（空洞、埋入缺陷）／**3D 量測**（微凸塊高度、表面輪廓）／**多角度照明**（側壁與低對比缺陷）。
+- ⚠⚠ **Onto 件全篇零量化值，且為檢測設備商之 sponsor blog ⇒ 依規範（41）計為有利害關係之來源。**
+
+### 📌 檢索方法論：OSAT 的標題策略是刻意泛化的（2026-10-13，規範 44/48 之第三個具體化）
+
+- EPO 以 `ti,ab="antenna in package"` 檢索僅得 **7 件**，申請人為 POSTECH／Doosan／ITRI／LG Innotek／FujiFilm —— **全部為學研、材料或模組商。**
+- 但同輪以 `pa="amkor" and pd within "2026"` 檢出 **94 件**，其中 **US20260312273A1（fam 101502460）分類含 H01Q1/2283（封裝內天線）**，標題卻是一貫的 "ELECTRONIC DEVICES AND METHODS OF MANUFACTURING ELECTRONIC DEVICES"。
+- ⇒ 📌 **以主題片語檢索會系統性漏掉 OSAT 的布局；OSAT 必須以 `pa=` 檢索。** 與既載規範（44）（記憶體堆疊落在 G11C 而非 H10W）、（48）同向，但本條的成因不在**分類**而在**申請人的命名策略。**
+
+來源：[[sources/2026-10-13_microbump-as-radiator-and-the-stand-in-problem]]、[[sources/2026-10-13_cpo-bottleneck-test-800x-area-mismatch]]、[[sources/2026-10-13_onto-cmp-second-independent-source]]、[[sources/2026-10-13_amkor-cavity-as-allocated-volume]]

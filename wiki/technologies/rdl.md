@@ -3,8 +3,8 @@ title: "RDL — 重分佈層 / Redistribution Layer"
 category: technology
 tags: [RDL, SAP, dual-damascene, embedded-trace, ETR, polyimide, FPIM, CMP, electromigration, panel-level, pad-less-via]
 created: 2026-09-26
-updated: 2026-10-12
-sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2026-09-27_paper_purdue-ru-cu-em-lifetime-blacks-n-0154, 2026-09-27_paper_copper-interconnect-scaling-roadmap-lines-per-mm, 2026-09-26_article_taiyo-imec-700nm-damascene-rdl, 2026-09-26_article_imec-1um-damascene-rdl-2019-anchor, 2026-09-26_article_amkor-embedded-trace-rdl, 2026-09-26_paper_asi-1um-hdbu-substrate, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-25_paper_dnp-glass-rdl-electromigration-lifetime, 2026-09-25_paper_cornell-glass-on-glass-sio2-rdl, 2026-09-25_paper_asu-molded-core-substrate-warpage, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_shanghai-xianfeng-cn122622683a-glass-interposer-bridge, 2026-10-02_imaps-dpc2026_defect-free-coplanar-copper-via-fill, 2026-10-06_epo_intel-mold-extension-package-to-package-topside-bridge, 2026-10-06_openalex_gatech-terahertz-nde-8layer-interposer, 2026-10-07_epo_amkor-bspdn-oriented-package-embedded-ipd, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-07_openalex_amkor-kelly-three-interposer-routes, 2026-10-08_rdl-free-glass-interposer-trench, 2026-10-08_pku-embedded-glass-fanout-roughness, 2026-10-08_samsung-stacked-rdl-package-bspdn-layer, 2026-10-09_keti-tgv-defect-spectrum-plugging-review]
+updated: 2026-10-13
+sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2026-09-27_paper_purdue-ru-cu-em-lifetime-blacks-n-0154, 2026-09-27_paper_copper-interconnect-scaling-roadmap-lines-per-mm, 2026-09-26_article_taiyo-imec-700nm-damascene-rdl, 2026-09-26_article_imec-1um-damascene-rdl-2019-anchor, 2026-09-26_article_amkor-embedded-trace-rdl, 2026-09-26_paper_asi-1um-hdbu-substrate, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-25_paper_dnp-glass-rdl-electromigration-lifetime, 2026-09-25_paper_cornell-glass-on-glass-sio2-rdl, 2026-09-25_paper_asu-molded-core-substrate-warpage, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_shanghai-xianfeng-cn122622683a-glass-interposer-bridge, 2026-10-02_imaps-dpc2026_defect-free-coplanar-copper-via-fill, 2026-10-06_epo_intel-mold-extension-package-to-package-topside-bridge, 2026-10-06_openalex_gatech-terahertz-nde-8layer-interposer, 2026-10-07_epo_amkor-bspdn-oriented-package-embedded-ipd, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-07_openalex_amkor-kelly-three-interposer-routes, 2026-10-08_rdl-free-glass-interposer-trench, 2026-10-08_pku-embedded-glass-fanout-roughness, 2026-10-08_samsung-stacked-rdl-package-bspdn-layer, 2026-10-09_keti-tgv-defect-spectrum-plugging-review, 2026-10-13_additive-patterning-and-metal-density-as-warpage-knob]
 related:
   - wiki/technologies/foplp.md
   - wiki/technologies/glass-substrate.md
@@ -685,3 +685,19 @@ Scrona 明文把「嚴格的基板平坦度要求」指認為**傳統微影路�
 - ⚠⚠ **CETC 件之應用域為可穿戴／植入式 RF（顱內訊號處理），非 AI 加速器封裝。** 其數字不得與本 wiki 主線之 RDL 線寬、層數或應力數字並列。
 
 來源：[[sources/2026-10-12_rdl-first-on-an-elastomer]]、[[sources/2026-10-12_die-shift-fourth-remedy-custom-interposer]]、[[sources/2026-10-12_hbm4-30um-thinning-775um-ceiling]]
+
+### ⭐⭐⭐ 圖案化手法自兩類擴為三類，第三類的訴求是永續性而非精度（2026-10-13）
+
+| 類別 | 代表 | 主要訴求 | 量化值（精度側） |
+|---|---|---|---|
+| 減材 | 既載主流（含無光罩微影之曝光端變化） | 精度 | 有（線寬／節距） |
+| 半加成（SAP） | **DNP-SAP**（既載：無機介電＋阻障金屬隔開 Cu 與 PID；Ea 0.9→**>1.23 eV**、MTTF 0.7–10 hr→**>1000 hr**） | 可靠度 | 有 |
+| ⭐ **加成印刷** | **AIST（2026-08-07，首見）**：於低損耗**封膠（mold）基材**上以加成製程印出改良式 Yagi–Uda 天線，實測 **28 GHz／峰值增益 6.9 dBi／頻寬 2.1 GHz** | **永續性／材料用量** | ⚠ **未給線寬或解析度** |
+
+⚠ **依規範（47）：第三類在精度軸上無任何量化值 ⇒ 本表不得被排序，亦不得與既載無光罩微影（EVG）或 Adaptive Patterning（Deca）比較精度。**
+
+- ⇒ 📌 **這是本 wiki 第一個以環境負荷為主要訴求的製程路線。** 與既載 **PFAS／氟化氣體**常駐主題同向但性質不同：既載兩例（Fujifilm 無 PFAS PBO、IBM 非 Bosch 深矽蝕刻）是**替換化學品**；本件是**減少材料用量**（加成只放需要的地方）⇒ **「環境法規／永續性重塑單元製程」此後記為兩種機制：換掉物質，或少用物質。**
+- ⇒ ⭐⭐ **封膠的角色自兩類擴為三類**：保護與支撐（既載）／結構載體（既載 **Deca US20260136970A1**，橋的載體、橋的包覆面數）／⭐ **射頻介質**（本件，低損耗封膠作為天線基板）。
+- ⚠ 本件為「受 FOWLP 材料啟發之示範件（substrate-process demonstrator）」，**不是量產 FOWLP 製程**；元件域為 mmWave 通訊。
+
+來源：[[sources/2026-10-13_additive-patterning-and-metal-density-as-warpage-knob]]

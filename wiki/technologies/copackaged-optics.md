@@ -3,8 +3,8 @@ title: "共封裝光學元件 / Co-Packaged Optics (CPO) — TSMC-COUPE™ & Eco
 category: technology
 tags: [CPO, co-packaged-optics, COUPE, TSMC, GlobalFoundries, Samsung, photonics, AI, HPC, networking, OCI-MSA, DWDM, Broadcom, NVIDIA, glass-substrate, ULCVD, TGV, Spectrum-X, NVL72]
 created: 2026-04-25
-updated: 2026-10-12
-sources: [2026-09-27_globalfoundries_siph-cpo-bandwidth-density-coupling-budget, 2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-27_paper_copper-interconnect-scaling-roadmap-lines-per-mm, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-05-07_trendforce_globalfoundries-silicon-photonics-scale-cpo, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-03-17_coherent_cpo-ofc2026-demo, 2026-06-07_digitimes_jcet-3d-packaging-cpo-plant, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_edn_cpo-technology-status-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-06-24_thelec_corning-glass-bridge-cpo, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-14_trendforce_umc-silith-silicon-photonics-hvm, 2026-07-14_trendforce_huawei-baidu-npo-msa, 2026-07-27_trendforce_presscenter_cpo-switches-nvidia-broadcom-coupe, 2026-06-03_3dincites_intel-foundry-emib-cpo-glass-ectc2026, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-07-31_ase_cn224583735u-photoelectric-hybrid-rdl, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-09-26_report_dupont-ttm-polymer-waveguide-reliability, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_bitschips_besi-q1-2026-hybrid-bonding-orders, 2026-10-07_openalex_mit-cpo-vs-pluggable-switch-power-calibration, 2026-10-07_skhynix_cpo-nature-electronics-100tbps-1pjbit-10ns, 2026-10-09_semiwiki-tsmc-oip-2026-verification]
+updated: 2026-10-13
+sources: [2026-09-27_globalfoundries_siph-cpo-bandwidth-density-coupling-budget, 2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-27_paper_copper-interconnect-scaling-roadmap-lines-per-mm, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-05-07_trendforce_globalfoundries-silicon-photonics-scale-cpo, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-03-17_coherent_cpo-ofc2026-demo, 2026-06-07_digitimes_jcet-3d-packaging-cpo-plant, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_edn_cpo-technology-status-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-06-24_thelec_corning-glass-bridge-cpo, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-14_trendforce_umc-silith-silicon-photonics-hvm, 2026-07-14_trendforce_huawei-baidu-npo-msa, 2026-07-27_trendforce_presscenter_cpo-switches-nvidia-broadcom-coupe, 2026-06-03_3dincites_intel-foundry-emib-cpo-glass-ectc2026, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-07-31_ase_cn224583735u-photoelectric-hybrid-rdl, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-09-26_report_dupont-ttm-polymer-waveguide-reliability, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_bitschips_besi-q1-2026-hybrid-bonding-orders, 2026-10-07_openalex_mit-cpo-vs-pluggable-switch-power-calibration, 2026-10-07_skhynix_cpo-nature-electronics-100tbps-1pjbit-10ns, 2026-10-09_semiwiki-tsmc-oip-2026-verification, 2026-10-13_cpo-bottleneck-test-800x-area-mismatch]
 related:
   - wiki/technologies/rdl.md
   - wiki/entities/tsmc.md
@@ -1387,3 +1387,30 @@ LPKF 之 CPO 耦合能力條件為 **表面波紋 ±100 nm、表面粗糙度 ±3
 - ⇒ 依 spec §4.3「無摘要者跳過」**本輪不收錄**。📌 **既載「CPO 組裝瓶頸在黏著劑」之材料側缺口因此仍未補；該件所屬特刊為「3D・チップレット・CPO 時代の実装技術：プロセス，材料，検査，自動化」⇒ 下輪應改以該特刊其他篇目為檢索目標，而非重試此一 DOI。**
 
 來源：[[sources/2026-10-12_tsmc-die-backside-as-optical-plane]]
+
+### ⭐⭐⭐ CPO 的測試瓶頸第一次有數字，而且它是可乘的（2026-10-13）
+
+**TSMC 副總 K.C. Hsu（2026-08-31 SEMI Silicon Photonics Global Summit, 台北）** 把 CPO 的擴產限制列在**封裝之外**：**雷射、光纖、連接器、測試**。
+⚠⚠ **出處鏈須完整標註**：該清單**僅見於兩家中文媒體**（TechOrange、ABMedia），報導者明言**未找到 TSMC 逐字稿**，Taipei Times 英文報導略去此段；Hsu 用語為 "stages such as" ⇒ **例示而非窮舉。**
+
+| 量 | 值 | 量測對象 | 出處 |
+|---|---|---|---|
+| 單一光子 IC 全面檢測時間 | **>100 秒**（平均） | 單一 PIC | TrendForce |
+| 單模纖芯／波導**面積落差** | **約 800 倍** | 對準幾何 | TrendForce |
+| 每顆 GPU 之光引擎數 | **4–8 個** | 預測 | Lightmatter CEO Nick Harris |
+| 光學測試量增幅 | **10–100 倍** | 推論 | 同上 |
+| 共置驗證效率改善 | **25%–50%** | TSMC 高雄 3 公頃基地（2026-09-02） | TSMC |
+
+- ⇒ 📌 **既載「CPO 組裝瓶頸在黏著劑」（材料側；2026-10-12 之 Namics 件未能取得）本輪取得一個完全不同層級的答案：瓶頸在測試的時間成本，而且它隨封裝內光引擎數線性放大。** ⚠ 100 秒 × 4–8 個光引擎之相乘為**本 wiki 之推論**（兩數字分屬 TrendForce 與 Lightmatter），非來源主張。
+- ⇒ ⭐⭐⭐ **「800 倍面積落差」是既載「以感測物理學換封裝幾何」之對偶命題的第一個數字**：既載兩例（Advantest 非接觸近場 RF 測試省落針面積、Besi 繞射相位對位縮小標記）都是**把量測的幾何需求縮小**；本件說明**光學側的幾何需求天生就大 800 倍** ⇒ 📌 **對準難度此後可記為「待對準兩物的面積比」：電性側接近 1，光學側約 800。**
+- ⚠⚠ **瓶頸清單有兩個互不一致的版本**：Hsu（雷射／光纖／連接器／測試，**不含封裝產能**）vs **TrendForce 2026-07-27**（光引擎良率／矽光子晶圓製造與先進封裝／**先進封裝產能**）⇒ 📌 **本 wiki 不得宣稱「CPO 的瓶頸已確定」；應記為「兩個來源對瓶頸是否在封裝內有分歧」。**
+
+### 供應側數字（2026-10-13）
+
+- **雷射（InP）**：Lumentum 出貨與需求缺口 **>30%**（⚠ 僅其產品類別）；**中國佔精煉銦約 70%**，2025-02-04 將銦列入出口管制；Coherent 德州 Sherman 擴產使 **6 吋 InP 產能 4 倍**（CHIPS **意向書** 最高 **$50M**，⚠ 非核定）；住友電工 **FY2028 基板產能為 FY2024 的 3.1 倍**；Lumentum 首筆外部光源模組訂單出貨預期 **2027 H2 前段**。
+- **光纖／連接器**：**NVIDIA 為兩份 Corning 認股權證付 $500M**（2026-05-06, 8-K）；Corning 擬使美國光連接產能 **10 倍**、光纖產能 **>50%**（北卡與德州三座規劃中廠房）。⚠ 無建廠或量產前置期，無 FAU／連接器產能數字。
+- **時程**：CPO 量產 **2026 H2**；矽光子 **2027 年超過光收發器市場一半**；運算側光學 I/O **2027–2028**；Lumentum 稱光學擴產在 **2027 年底與 2028**。
+- **COUPE**：簡報顯示 **CPO-OI（光學中介層階段）**最終將調變器、光放大器與雷射整合於 **COUPE 背面** ⚠ 無量產日期。
+- ⚠ **本件未提供頻寬密度與 pJ/bit** ⇒ **既載空缺「Nature Electronics CPO 綜述全文（2D/2.5D/3D 三階段量化門檻）」維持開啟。**
+
+來源：[[sources/2026-10-13_cpo-bottleneck-test-800x-area-mismatch]]

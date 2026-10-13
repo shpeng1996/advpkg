@@ -877,3 +877,19 @@
 2026-10-12 | https://doi.org/10.5781/jwj.2026.44.4.2 | raw/papers/2026-10-12_openalex_cuo-cu-flake-paste-in-air-sinter-251mpa.md | SeoulTech: in-air Cu-Cu sinter 300C/10MPa, 25.1 MPa
 2026-10-12 | https://doi.org/10.1108/mi-02-2026-0050 | raw/papers/2026-10-12_openalex_pdms-12inch-rdl-first-conformal-894mpa.md | CETC: PDMS 12-inch RDL-first, 894.16 MPa, 43.5mm bend
 2026-10-12 | https://doi.org/10.1007/s13222-026-00563-7 | raw/papers/2026-10-12_openalex_hpi-cpu-initiated-hbm-gh200-mi300a-interleaving.md | HPI: measured CPU-side HBM throughput GH200/MI300A
+2026-10-13 | https://www.eetasia.com/hybrid-copper-bonding-a-manufacturing-lever-for-the-ai-era/ | raw/articles/2026-10-13_eetasia_atotech-hcb-cu-grain-queue-time.md | Atotech: Cu grain queue time 2-4h/16h, FG >4 weeks
+2026-10-13 | https://siliconanalysts.com/analysis/hbm4-market-share-race-2026 | raw/articles/2026-10-13_siliconanalysts_hbm4-qualification-matrix-hbm-cost-share.md | HBM4 qual matrix; HBM = 46-64% of accelerator mfg cost
+2026-10-13 | https://finance.biggo.com/news/8cf13cfd-eeeb-4d5f-9529-f744b979d76a | raw/articles/2026-10-13_biggo_samsung-hbm-share-33pct-hcb-vs-mrmuf.md | Samsung HBM 33% Q2'26; HCB >20% vs TCB thermal
+2026-10-13 | https://www.supercomputing.news/emerging/co-packaged-optics-bottleneck-tsmc-lasers-fiber-test | raw/articles/2026-10-13_supercomputingnews_tsmc-cpo-bottleneck-lasers-fiber-test.md | TSMC CPO bottleneck: laser/fiber/test; PIC test >100s
+2026-10-13 | https://semiengineering.com/finding-critical-defects-before-they-become-costly-failures-process-control-for-hybrid-bonding-and-advanced-packaging/ | raw/articles/2026-10-13_semieng_onto-process-control-hybrid-bonding-cmp-yield-limiter.md | Onto: CMP named yield limiter, zero numbers
+2026-10-13 | https://www.eetasia.com/advanced-packaging-market-forecast-to-reach-90b-by-2031/ | raw/articles/2026-10-13_eetasia_mordor-advanced-packaging-market-9011b-2031.md | Mordor: adv pkg $57.46B 2026 to $90.11B 2031, 9.42%
+2026-10-13 | EPO:92626829:WO2026046508A1 | raw/patents/2026-10-13_WO2026046508A1_evg-bond-wave-pressure-element.md | EVG: pressure element steers bonding wave
+2026-10-13 | EPO:101502460:US20260312273A1 | raw/patents/2026-10-13_US20260312273A1_amkor-aip-encapsulant-recess-two-antenna-levels.md | Amkor: encapsulant recess, antennas at two levels
+2026-10-13 | EPO:98979446:US20260076275A1 | raw/patents/2026-10-13_US20260076275A1_amkor-intermediate-substrate-through-cavity-vertical-interconnect.md | Amkor: intermediate substrate cavity, die through it
+2026-10-13 | EPO:99956982:US20260157225A1 | raw/patents/2026-10-13_US20260157225A1_amkor-encapsulant-top-cavity-holds-connector.md | Amkor: encapsulant top cavity holds PoP connector
+2026-10-13 | EPO:98994631:CN121666099A | raw/patents/2026-10-13_CN121666099A_beiyi-sic-power-module-low-buckling-interconnect.md | Beiyi: Ti-Cu + invar buffer, 4-stage sinter, low warp
+2026-10-13 | https://doi.org/10.1038/s41598-026-59503-w | raw/papers/2026-10-13_openalex_soongsil-all-glass-aip-28ghz-tgv-seam-void.md | Soongsil: all-glass AiP 28GHz, TGV seam-void control
+2026-10-13 | https://doi.org/10.1109/tpel.2026.3700232 | raw/papers/2026-10-13_openalex_tudelft-large-area-sintering-three-challenges.md | TU Delft: LAS 3 challenges incl. warpage, Cu oxidation
+2026-10-13 | https://doi.org/10.3390/electronics15132803 | raw/papers/2026-10-13_openalex_hebeiut-microbump-as-antenna-cu-pillar-vs-solder-ball.md | Hebei UT: microbump as antenna, 0.63% vs 13.17% BW
+2026-10-13 | https://doi.org/10.1016/j.microrel.2026.116160 | raw/papers/2026-10-13_openalex_kuas-tohoku-sintered-ag-cu-microparticles-thermal-shock.md | KUAS/Tohoku: Cu MPs in sintered Ag, -40 to 150C shock
+2026-10-13 | https://doi.org/10.1088/2058-8585/ae96bb | raw/papers/2026-10-13_openalex_aist-additive-printed-28ghz-antenna-mold-substrate-warpage.md | AIST: additive printed 28GHz antenna, 6.9dBi, mesh warp

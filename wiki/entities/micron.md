@@ -3,8 +3,8 @@ title: "美光科技 / Micron Technology"
 category: entity
 tags: [memory, HBM4, DRAM, NAND, CapEx, Virginia, Idaho, New-York, onshoring]
 created: 2026-05-03
-updated: 2026-10-12
-sources: [2026-09-27_semieng_chip-week-156-india-tata-besi-izmo, 2025-12-18_trendforce_micron-capex-hbm4, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-03-17_trendforce_gtc2026-key-takeaways, 2025-08-05_3dincites_iftle636-samsung-lsb-micron-virginia, 2026-01-23_trendforce_hbm4e-development, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-26_semieng_chip-week-144, 2026-06-25_thelec_micron-q3-fy2026-record, 2026-07-06_trendforce_micron-hiroshima-fab-hbm-1gamma, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-10_tomshardware_micron-250b-us-investment-globalwafers, 2026-07-10_semieng_chip-week-146, 2026-08-21_semieng_chip-week-152, 2026-10-06_epo_micron-interposer-embedded-active-buffers, 2026-10-08_micron-cryogenic-package-hea-solder]
+updated: 2026-10-13
+sources: [2026-09-27_semieng_chip-week-156-india-tata-besi-izmo, 2025-12-18_trendforce_micron-capex-hbm4, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-03-17_trendforce_gtc2026-key-takeaways, 2025-08-05_3dincites_iftle636-samsung-lsb-micron-virginia, 2026-01-23_trendforce_hbm4e-development, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-26_semieng_chip-week-144, 2026-06-25_thelec_micron-q3-fy2026-record, 2026-07-06_trendforce_micron-hiroshima-fab-hbm-1gamma, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-10_tomshardware_micron-250b-us-investment-globalwafers, 2026-07-10_semieng_chip-week-146, 2026-08-21_semieng_chip-week-152, 2026-10-06_epo_micron-interposer-embedded-active-buffers, 2026-10-08_micron-cryogenic-package-hea-solder, 2026-10-13_hbm-share-of-accelerator-cost, 2026-10-13_samsung-hbm-33pct-hcb-vs-mrmuf]
 related:
   - wiki/technologies/hbm4.md
   - wiki/entities/sk-hynix.md
@@ -407,3 +407,12 @@ Micron 於 2026-09 公開之專利顯示：**基板含金屬核心，其強度�
 - ⚠ **第三方估算（Altsets，非公司揭露）**：NVIDIA 佔 Micron 營收 **17.62%**、Micron 佔 NVIDIA COGS **14.00%**；Micron 之 COGS 構成：ASML 11.91%、Lam 5.52%、AMAT 3.84%、KLA 2.84%、Shin-Etsu 1.34%；Micron 佔 ASML 營收 7.64%。**不得與公司財報數字並列。**
 
 來源：[[sources/2026-10-12_micron-package-level-repair]]、[[sources/2026-10-12_hbm4-30um-thinning-775um-ceiling]]、[[sources/2026-10-12_hbm4-second-supply-chain-serialization]]
+
+### ⚠ HBM 市占下滑至 18%，HBM4 仍在驗證階段（2026-10-13）
+
+- **Counterpoint（營收基準）：Q1 2026 21% → Q2 2026 18%**（−3 點）；FY2025 為 **17.4%**（IDC）。⚠ 營收基準，不得讀為出貨量份額。
+- **HBM4：驗證進行中，11 Gbps 樣品已示範**；NVIDIA 配額約 **20%**。⚠ 依規範（34）（37）**該 11 Gbps 為樣品階段，不得與 SK hynix 10 Gbps（量產）或 Samsung 11.7 Gbps（量產）並列排序。**
+- ⚠ **既載空缺「16-Hi HBM4 對賭的驗證」中 Micron 之角色維持「出樣」**，本輪無新進展；追蹤方式仍為 NVIDIA Vera Rubin 各廠採用比例。
+- ⇒ 📌 **Micron 之 base die 代工歸屬仍未指名**（既載：SK hynix → TSMC 12 nm 級、Samsung → 自家 4 nm、**Micron 未指名**）；本輪 HBM 佔加速器製造成本 **46–64%** 之數字使該空白的重要性上升。
+
+來源：[[sources/2026-10-13_hbm-share-of-accelerator-cost]]、[[sources/2026-10-13_samsung-hbm-33pct-hcb-vs-mrmuf]]

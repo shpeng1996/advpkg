@@ -3,8 +3,8 @@ title: "FOPLP — 扇出面板級封裝 / Fan-Out Panel-Level Packaging"
 category: technology
 tags: [fan-out, panel-level, TSMC, Samsung, ASE, Powertech, Innolux, CoPoS, InFO, cost-reduction, delamination, DCB, CTE]
 created: 2026-05-03
-updated: 2026-10-12
-sources: [2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-07-31_trendforce_ase-capex-record-10-5b-leap-foplp, 2025-09-12_trendforce_foplp-competitive-2025, 2026-04-13_trendforce_copos-pilot, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-21_3dincites_acm-wlp-plp-process-trends, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-15_digitimes_manz-310mm-foplp-ecd-equipment, 2026-06-13_digitimes_linkotech-foplp-rollout-traction, 2026-06-20_prnewswire_manz-asia-310mm-ecd, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_digitimes_tsmc-foplp-timeline-skepticism, 2026-07-06_trendforce_cfmee-plp2000-china-first-plp, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-08-06_siliconbox_500m-units-panel-scale, 2026-02-18_siliconbox_ep4697377a1-fanout-panel-metal-sealing-ring, 2026-07-28_xianfeng_cn122476946a-alignment-mark-protection, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage, 2026-10-06_thelec_sec-xray-tsv-tgv-inspection-1um, 2026-10-07_epo_evg-zonewise-adaptive-litho-die-shift, 2026-10-07_epo_evg-inorganic-dual-release-layer-common-solvent, 2026-10-08_pku-embedded-glass-fanout-roughness]
+updated: 2026-10-13
+sources: [2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-07-31_trendforce_ase-capex-record-10-5b-leap-foplp, 2025-09-12_trendforce_foplp-competitive-2025, 2026-04-13_trendforce_copos-pilot, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-21_3dincites_acm-wlp-plp-process-trends, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-15_digitimes_manz-310mm-foplp-ecd-equipment, 2026-06-13_digitimes_linkotech-foplp-rollout-traction, 2026-06-20_prnewswire_manz-asia-310mm-ecd, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_digitimes_tsmc-foplp-timeline-skepticism, 2026-07-06_trendforce_cfmee-plp2000-china-first-plp, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-08-06_siliconbox_500m-units-panel-scale, 2026-02-18_siliconbox_ep4697377a1-fanout-panel-metal-sealing-ring, 2026-07-28_xianfeng_cn122476946a-alignment-mark-protection, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage, 2026-10-06_thelec_sec-xray-tsv-tgv-inspection-1um, 2026-10-07_epo_evg-zonewise-adaptive-litho-die-shift, 2026-10-07_epo_evg-inorganic-dual-release-layer-common-solvent, 2026-10-08_pku-embedded-glass-fanout-roughness, 2026-10-13_additive-patterning-and-metal-density-as-warpage-knob, 2026-10-13_beiyi-sic-low-buckling-sintering, 2026-10-13_large-area-sintering-three-challenges]
 related:
   - wiki/technologies/rdl.md
   - wiki/technologies/copos.md
@@ -1150,3 +1150,26 @@ Cu stud 輸入晶圓 → 切單與晶粒貼附 → **第一次封膠** → **載
 - **矩形面板減少浪費，但製程與檢測設備多為晶圓最佳化**（SemiEng）——既載已有多個落點，本筆為並列佐證。
 
 來源：[[sources/2026-10-12_die-shift-fourth-remedy-custom-interposer]]、[[sources/2026-10-12_evg-wafer-as-actuator]]、[[sources/2026-10-12_rdl-first-on-an-elastomer]]
+
+### ⭐⭐⭐ 翹曲對策自三類擴為四層，而第四層是唯一不增加製程步驟或材料成本的那一個（2026-10-13）
+
+| 層 | 手法 | 本輪／既載落點 | 量化值 |
+|---|---|---|---|
+| 製程 | 溫度曲線、壓力、時間；⭐ **四段燒結＋梯度冷卻** | 既載 FOPLP debonding、模封條件；**本輪 Beiyi CN121666099A** | 部分有 |
+| 材料／載體 | 載板材料（鋼／玻璃／陶瓷）、RDL-first 柔性載體；⭐ **插入低 CTE 緩衝層**（鈦銅複合層＋因瓦片） | 既載；**本輪 Beiyi** | 部分有；**緩衝層無** |
+| 機構 | 事前約束（Intel 預製凹穴）、載體自身致動（EVG reaction layer） | 既載 2026-10-12 | 無 |
+| ⭐ **設計** | **導體覆蓋率（網格化圖案以降低金屬密度）** | **本輪 AIST（首見）** | **無** |
+
+⚠⚠ **依規範（47）：本表「量化值」欄多格為空或僅部分有值，明文禁止排序，不得讀為四條可比較的路線。**
+
+- ⇒ 📌 **第四層的性質與前三層不同：製程、材料與機構層都需要多付出一道步驟、一種材料或一副治具；設計層（導體覆蓋率）只需改版圖。** AIST 件在天線設計中引入 **mesh 圖案**以研究金屬密度對翹曲之影響 ⇒ **翹曲第一次有一個位於設計層的旋鈕。** ⚠ **本件未給翹曲絕對值、金屬密度百分比或網格節距。**
+- ⇒ ⭐⭐ **Beiyi CN121666099A（family 98994631，pd 2026-03-13）**：以**鈦銅複合緩衝層＋因瓦（invar）緩衝片**組成「雙應力緩衝障壁」，並以**四段燒結＋梯度冷卻**釋放熱應力，宣稱基板翹曲顯著降低。⚠⚠ **零量化值**（無翹曲 µm、無燒結溫度與各段時間、無 CTE 值、無對照組）⇒ **不得與既載任何翹曲數字並列、相減或據以宣告障壁被突破。** ⚠ 元件域為 **SiC 功率模組**，效力僅及於「手法分類」。
+- ⇒ ⭐⭐ **燒結此後記為一條曲線而非一個點**：既載燒結記述（Resonac、SeoulTech **300 °C／10 MPa／5 min**）皆為單一條件點；Beiyi 件把燒結視為**可分段設計的溫度路徑**。
+- ⇒ ⭐⭐⭐ **與本輪論文軌 TU Delft 大面積燒結（LAS）回顧正面對應**：Delft 列出三大難題（**有機黏結劑燒除與排氣殘留／模組翹曲／銅氧化控制**），Beiyi 處置其中第二項 ⇒ **問題清單（學界回顧，荷蘭）與處置手法（排他權，中國）在同一輪、不同機構入庫，且兩者皆無翹曲絕對值。**
+
+### ⭐⭐ 「輔助步驟才是瓶頸」取得第六、七例，且來源型態自個案升為回顧（2026-10-13）
+
+- **TU Delft LAS 回顧**把**有機黏結劑的燒除與排氣**（燒結前把有機物趕走）與**翹曲**（燒結後整片基板的形狀）列為三大關鍵難題之二 ⇒ 既載五例（混合接合 CMP 後清洗、FOPLP debonding、Resonac 切割膠帶、SeoulTech 成形氣設施、探針卡自身散熱）**全部是單一來源或單一機構的個案**；**本件為回顧型論文，其難題清單即代表該領域共識** ⇒ 📌 **該論述的證據等級自「個案累積」升為「至少在功率電子領域已是公認清單」。**
+- ⚠ 本件非 OA，僅摘要，三難題各自的量化門檻（孔隙率、翹曲 µm、氧化層厚度）**列為下輪候選取全文項**（依規範 39，下輪須先 grep 確認）。
+
+來源：[[sources/2026-10-13_additive-patterning-and-metal-density-as-warpage-knob]]、[[sources/2026-10-13_beiyi-sic-low-buckling-sintering]]、[[sources/2026-10-13_large-area-sintering-three-challenges]]

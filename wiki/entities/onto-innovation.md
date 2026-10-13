@@ -3,8 +3,8 @@ title: "Onto Innovation"
 category: entity
 tags: [equipment, process-control, inspection, metrology, fan-out, 2.5D-packaging]
 created: 2026-06-22
-updated: 2026-10-03
-sources: [2026-04-16_ontoinnovation_dragonfly-g5-qualified, 2026-07-07_semieng_panel-inspection-metrology-hdfo]
+updated: 2026-10-13
+sources: [2026-04-16_ontoinnovation_dragonfly-g5-qualified, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-10-13_onto-cmp-second-independent-source]
 related:
   - wiki/concepts/advanced-packaging-market.md
   - wiki/technologies/copos.md
@@ -135,3 +135,22 @@ Onto Innovation 的 **Damon Tsai**：
 ⚠ **Philoptics 未說明其 2.5D 成像是否量測三個 CD**，僅稱「高解析 2.5D 成像」。本 wiki 不得據此斷言其能力等同 Onto。
 
 見 [[sources/2026-10-03_thelec_philoptics-tgv-2mm-glass]]。
+
+### ⚠ 製程控制的能力分類，但全篇零量化值（2026-10-13）
+
+**Yong Gao（產品行銷資深總監）於 SemiEngineering 之 sponsor blog（2026-10-08）**：
+
+| 能力 | 目標缺陷 |
+|---|---|
+| 高靈敏度 **2D 檢測** | 表面顆粒、圖案相關異常 |
+| 高速**紅外次表面檢測** | 空洞、埋入式缺陷 |
+| **3D 量測** | 微凸塊高度、表面輪廓 |
+| **多角度照明** | 側壁與低對比缺陷 |
+
+- ⭐ **CMP（為混合接合準備表面者）被單獨點名為限制良率的一步**，且**隨接合節距縮小，靈敏度與控制必須同步收緊** ⇒ 📌 **既載空缺「CMP 後清洗是第二大良率槓桿」不結清**：本件指向 CMP 本身（表面平坦度）而非清洗；**CMP 區段層級此後有兩個獨立來源，清洗子步驟仍為一個。**
+- ⭐ **靈敏度提高本身會製造問題**：更多檢出 ⇒ 需有效分類以分離干擾性（nuisance）缺陷 ⇒ **列為「量測可及性」之第五種候選形式（量得到但分不出），單一來源、零數據，不逕行升格。**
+- 主張單一整合平台（持有成本與廠房面積理由）；檢測吞吐量過低會成為資本密集產線的瓶頸。
+- ⚠⚠ **全篇零量化值**（無缺陷尺寸、解析度、良率、節距、吞吐量）；⚠ 依規範（41）為**有利害關係之來源**（檢測設備商主張檢測不足是瓶頸）。
+- ⚠ 既載「Dragonfly G5 取得 2.5D AI 封裝量產資格認證」「AI 封裝需求年成長 ~30%」本輪**無更新**。
+
+來源：[[sources/2026-10-13_onto-cmp-second-independent-source]]

@@ -3,8 +3,8 @@ title: "基板與材料供應鏈 / Substrate & Materials Supply Chain（ABF・T-
 category: concept
 tags: [ABF, Ajinomoto, substrate, supply-chain, Ibiden, Unimicron, Shinko, SEMCO, Kinsus, Nan-Ya-PCB, glass-core, warpage, bottleneck]
 created: 2026-10-03
-updated: 2026-10-12
-sources: [2026-10-03_tomshardware_abf-substrate-state-2026, 2026-10-03_thelec_philoptics-tgv-2mm-glass, 2026-10-03_digitaltoday_jntc-tgv-thickness-lineup, 2026-10-03_epo_semco-coreless-interposer-organic-bridge, 2026-10-06_xenospectrum_ajinomoto-abf-cut-unconfirmed-layers-per-side, 2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage, 2026-10-07_atlaspcb_abf-price-30pct-third-distinct-30-figure, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch]
+updated: 2026-10-13
+sources: [2026-10-03_tomshardware_abf-substrate-state-2026, 2026-10-03_thelec_philoptics-tgv-2mm-glass, 2026-10-03_digitaltoday_jntc-tgv-thickness-lineup, 2026-10-03_epo_semco-coreless-interposer-organic-bridge, 2026-10-06_xenospectrum_ajinomoto-abf-cut-unconfirmed-layers-per-side, 2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage, 2026-10-07_atlaspcb_abf-price-30pct-third-distinct-30-figure, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-13_all-glass-aip-no-polymer-in-the-stack, 2026-10-13_cpo-bottleneck-test-800x-area-mismatch]
 related: [technologies/glass-substrate.md, concepts/advanced-packaging-market.md, concepts/geopolitics-advanced-packaging.md, entities/ibiden.md, entities/shinko.md, entities/semco.md, entities/absolics.md, entities/agc.md]
 ---
 
@@ -366,3 +366,22 @@ Samsung 官方（Tech Blog, 2025-05-26；內容基礎 2022 Samsung Foundry Forum
   ⇒ **「降 k 與維持機械強韌度是一組取捨，而多孔化是把取捨推到可靠度極限的那條路」** —— 本輪取得該取捨的兩個端點（另一端為既載 Apple 之空氣間隙腔體）。詳見 `entities/apple.md`、`technologies/hybrid-bonding.md`。
 
 來源：[[sources/2026-10-12_intel-lens-technology-glass-substrate]]、[[sources/2026-10-12_in-air-cu-sinter-auxiliary-step-removed]]、[[sources/2026-10-12_die-shift-fourth-remedy-custom-interposer]]、[[sources/2026-10-12_abn-nonporous-lowk-bonding-interface]]
+
+### ⭐⭐⭐ 「玻璃與有機不應同處一個堆疊」——一個與產業實作相反的學界主張（2026-10-13）
+
+- **Soongsil University 全玻璃 mmWave AiP**（Scientific Reports, 2026-06-29）主張**混成堆疊本身即為失效來源**：構成材料 CTE 差異大時出現熱機械不穩定與開裂；封裝與 RDL 常用聚合物之熱膨脹率為**數十至數百 ppm/°C**。
+- ⚠⚠ **與多家廠商的實際路線相反**（SEMCO 同時押玻璃核心與完全無核心、Intel 玻璃核心仍搭有機增層、上海美維以「限制用途」而非「消去混成」處置）⇒ 📌 **記為學界主張與產業實作的分歧，不得逕自採信任一方。** 詳見 `wiki/technologies/glass-substrate.md`。
+- ⚠ 本件未給玻璃自身 CTE ⇒ 不得與既載 AGC（ER-Y1 **3.5**／EN-A1 **5.8** ppm/°C）比較。
+
+### ⭐⭐⭐ 材料槓桿點新增第二個高集中度節點：精煉銦，且它直接卡在 CPO 的雷射端（2026-10-13）
+
+| 節點 | 集中度 | 管制狀態 | 卡住什麼 |
+|---|---|---|---|
+| **ABF（味の素）** | **≥95% 市占** | 企業自主配額（2026-08 對中國大陸減供 30%） | FC-BGA 增層（AI 加速器所需 18 層級） |
+| ⭐ **精煉銦（中國）** | **約 70%**（TrendForce） | **2025-02-04 列入出口管制**（政府措施） | **InP 雷射 ⇒ CPO 光源** |
+
+- ⇒ 📌 **兩個節點的管制性質不同**：ABF 為**企業自主的產能配額決定**（既載已確認），銦為**政府出口管制** ⇒ **本 wiki 的供應鏈槓桿論述此後須區分「公司決定」與「國家措施」兩種機制。**
+- 供應側回應：Coherent 德州 Sherman 擴產使 **6 吋 InP 產能 4 倍**（CHIPS **意向書**最高 $50M，⚠ 非核定）；住友電工 **FY2028 基板產能為 FY2024 的 3.1 倍**；Lumentum 出貨與需求缺口 **>30%**（⚠ 僅其產品類別）。
+- ⚠ 無任何 InP 晶圓絕對產能數字 ⇒ **不得由倍數反推產能**（與既載 Ibiden 投資額不得反推產能之規則同型）。
+
+來源：[[sources/2026-10-13_all-glass-aip-no-polymer-in-the-stack]]、[[sources/2026-10-13_cpo-bottleneck-test-800x-area-mismatch]]

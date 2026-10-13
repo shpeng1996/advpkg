@@ -3,8 +3,8 @@ title: "CoWoS — Chip-on-Wafer-on-Substrate"
 category: technology
 tags: [2.5D, interposer, TSMC, AI, HPC, HBM, COUPE, CPO, packaging-constraints, NVIDIA]
 created: 2026-04-24
-updated: 2026-10-12
-sources: [2026-08-13_semieng_1mw-rack-debate-thermal, 2026-08-05_trendforce_tsmc-cowos-cow-outsourcing-osat, 2026-05-24_techtimes_nvidia-computex2026-cowos, 2026-04-24_initial-survey, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-15_trendforce_tsmc-vanguard-stake-sale, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-09_financialcontent_tsmc-130k-cowos-wafers, 2026-06-09_digitimes_tsmc-cowos-soic-capacity-symposium, 2026-06-15_trendforce_tsmc-cowos-gap-narrowing-130k-200k-wafers, 2026-06-10_tomshardware_tsmc-fab-expansion-roadmap-n2-cowos-soic, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_tmtpost_tsmc-cowos-capacity-targets-2026-2027, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-09-30_intel_us-advanced-packaging-reticle-8x-12x-fab9, 2026-10-02_trendforce_cowos-l-mainstream-through-2028, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_amd-us20260282956a1-silicon-bridge-decap, 2026-10-06_epo_micron-interposer-embedded-active-buffers, 2026-10-06_epo_tenstorrent-discrete-pitch-adapter-substrates, 2026-10-06_openalex_gatech-terahertz-nde-8layer-interposer, 2026-10-07_epo_cas-freestanding-3c-sic-interposer, 2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk, 2026-10-07_openalex_amkor-kelly-three-interposer-routes, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-09_semiwiki-tsmc-oip-2026-verification]
+updated: 2026-10-13
+sources: [2026-08-13_semieng_1mw-rack-debate-thermal, 2026-08-05_trendforce_tsmc-cowos-cow-outsourcing-osat, 2026-05-24_techtimes_nvidia-computex2026-cowos, 2026-04-24_initial-survey, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-15_trendforce_tsmc-vanguard-stake-sale, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-09_financialcontent_tsmc-130k-cowos-wafers, 2026-06-09_digitimes_tsmc-cowos-soic-capacity-symposium, 2026-06-15_trendforce_tsmc-cowos-gap-narrowing-130k-200k-wafers, 2026-06-10_tomshardware_tsmc-fab-expansion-roadmap-n2-cowos-soic, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_tmtpost_tsmc-cowos-capacity-targets-2026-2027, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-09-30_intel_us-advanced-packaging-reticle-8x-12x-fab9, 2026-10-02_trendforce_cowos-l-mainstream-through-2028, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_amd-us20260282956a1-silicon-bridge-decap, 2026-10-06_epo_micron-interposer-embedded-active-buffers, 2026-10-06_epo_tenstorrent-discrete-pitch-adapter-substrates, 2026-10-06_openalex_gatech-terahertz-nde-8layer-interposer, 2026-10-07_epo_cas-freestanding-3c-sic-interposer, 2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk, 2026-10-07_openalex_amkor-kelly-three-interposer-routes, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-09_semiwiki-tsmc-oip-2026-verification, 2026-10-13_microbump-as-radiator-and-the-stand-in-problem]
 related:
   - wiki/entities/tsmc.md
   - wiki/technologies/soic.md
@@ -903,3 +903,23 @@ SemiAnalysis ECTC 2026（2026-07-02）：
   ⇒ 📌 **既載把 CoWoS／EMIB 競爭記為代工廠爭取加速器客戶；本筆使 2.5D 平台的採購決策者記為至少兩類：加速器設計者與記憶體供應者。**
 
 來源：[[sources/2026-10-12_globalfoundries-2b-tsmc-interposer-malta]]、[[sources/2026-10-12_skhynix-intel-foundry-hbm4e-base-die]]
+
+### ⭐⭐⭐ 微凸塊的功能自「互連」擴為兩種，第二種是輻射體（2026-10-13）
+
+**河北工業大學 × 國防科技大學**（Electronics, 2026-06-25）把**微凸塊陣列本身當作天線元件**設計、模擬與量測（銅柱 vs 錫球，三種饋入）：
+
+| 項目 | 銅柱 Cu pillar | 錫球 Solder ball | 量測對象 |
+|---|---|---|---|
+| 相對頻寬波動 | **0.63%** | **13.17%** | 模擬（同一饋入條件） |
+| 兩結構間增益差 | — | — | **0.03–0.06 dBi**（可忽略） |
+| 微帶饋入實現增益 | 5.48 dBi | 5.54 dBi | 模擬 |
+| 原始設計共振 | **477.9 GHz**（GSG 饋入） | — | 模擬（sub-THz） |
+| 放大倍率 | **46×** | — | 電磁相似原理 |
+| **實測** | **10.5 GHz／7.1 dBi** | — | ⚠⚠ **放大後之縮放模型，非原件** |
+
+- ⇒ 📌 **既載本 wiki 對微凸塊的全部記述（節距、高度、UBM、底填料圓角、電遷移）皆視其為傳導結構；本件把它當輻射體** ⇒ **與既載「晶粒的面之用途自三類擴為四類（連接／散熱／貫穿／光路）」同型的第二個案例，但被重新指派用途的對象是互連件本身，而不是一個面。**
+- ⇒ ⭐⭐ **銅柱 vs 錫球首次出現在「頻寬穩定性」軸上，差距 20 倍**，方向與既有「銅柱取代錫球」趨勢同向 ⇒ **一個此前只有製程理由的遷移，現在多了一個電性理由。** ⚠ **增益差可忽略 ⇒ 不得宣稱銅柱在天線性能上全面優於錫球，差異僅在頻寬穩定性。**
+- ⚠⚠⚠ **唯一的實測值量的是放大 46 倍後的替身**（作者本人在摘要中明文強調）⇒ 詳見 `wiki/concepts/test-metrology-packaging.md` 之「量測可及性第四形式」。
+- ⚠ 其餘數值皆為 3D 電磁模擬；元件域為高頻通訊。
+
+來源：[[sources/2026-10-13_microbump-as-radiator-and-the-stand-in-problem]]

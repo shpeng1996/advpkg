@@ -3,8 +3,8 @@ title: "先進封裝熱管理 / Thermal Management in Advanced Packaging"
 category: concept
 tags: [thermal-management, liquid-cooling, 3D-IC, CoWoS, heat-dissipation, TIM, ECTC-2025, GaN, power-delivery, co-design, patent-signal, delamination]
 created: 2026-04-25
-updated: 2026-10-12
-sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2025-12-01_semiengineering_thermal-management, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-02_trendforce_samsung-hbm5-computex2026, 2026-05-21_semieng_hi-roadmap-nature-paper-intel, 2026-08-13_semieng_1mw-rack-debate-thermal, 2026-04-27_semieng_semiconductor-materials-misbehave, 2026-08-21_trendforce_chip-packaging-heat-ai-bottleneck-cpo-stco, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_arxiv_umn-multi-kw-power-delivery-3d-hi, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_samsung-cn122602880a-ivr-capacitor-interposer-core, 2026-10-02_imaps-dpc2026_delo-die-side-capacitor-encapsulation, 2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage, 2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk, 2026-10-07_epo_cas-freestanding-3c-sic-interposer, 2026-10-07_openalex_diamond-d2w-direct-bonding-vdw-45mpa, 2026-10-07_openalex_lau-silicon-bridge-microbump-reliability, 2026-10-08_etron-liquid-through-substrate-cavity, 2026-10-08_micron-cryogenic-package-hea-solder, 2026-10-08_advantest-singulated-die-test-thermal, 2026-10-09_cas-2013-microchannel-interposer-ebg, 2026-10-09_bjut-thermomech-phase-field-imc-tgv]
+updated: 2026-10-13
+sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2025-12-01_semiengineering_thermal-management, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-02_trendforce_samsung-hbm5-computex2026, 2026-05-21_semieng_hi-roadmap-nature-paper-intel, 2026-08-13_semieng_1mw-rack-debate-thermal, 2026-04-27_semieng_semiconductor-materials-misbehave, 2026-08-21_trendforce_chip-packaging-heat-ai-bottleneck-cpo-stco, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_arxiv_umn-multi-kw-power-delivery-3d-hi, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_samsung-cn122602880a-ivr-capacitor-interposer-core, 2026-10-02_imaps-dpc2026_delo-die-side-capacitor-encapsulation, 2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage, 2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk, 2026-10-07_epo_cas-freestanding-3c-sic-interposer, 2026-10-07_openalex_diamond-d2w-direct-bonding-vdw-45mpa, 2026-10-07_openalex_lau-silicon-bridge-microbump-reliability, 2026-10-08_etron-liquid-through-substrate-cavity, 2026-10-08_micron-cryogenic-package-hea-solder, 2026-10-08_advantest-singulated-die-test-thermal, 2026-10-09_cas-2013-microchannel-interposer-ebg, 2026-10-09_bjut-thermomech-phase-field-imc-tgv, 2026-10-13_large-area-sintering-three-challenges, 2026-10-13_cu-microparticles-ductility-vs-stiffness-tradeoff, 2026-10-13_beiyi-sic-low-buckling-sintering]
 related:
   - wiki/technologies/cowos.md
   - wiki/technologies/hybrid-bonding.md
@@ -1358,3 +1358,26 @@ SNU × UIUC 的 TIM 綜述明確指出：**TIM 的 bulk／effective 導熱係數
 - ⚠ **既載「16 層 HBM4 停在小眾」之兩個原因之一為熱限制**（Silicon Analysts，⚠ 分析觀點，無數值）；另一為 JEDEC 775 µm 高度上限。
 
 來源：[[sources/2026-10-12_tim-conductivity-and-contact-resistance-paired]]、[[sources/2026-10-12_tsmc-die-backside-as-optical-plane]]、[[sources/2026-10-12_globalfoundries-2b-tsmc-interposer-malta]]
+
+### ⭐⭐⭐ 燒結此後記為兩個獨立的可靠度時段，且兩段的最佳化方向可能衝突（2026-10-13）
+
+| 時段 | 關注量 | 本輪來源 | 量化值 |
+|---|---|---|---|
+| **成形時** | 有機黏結劑燒除與排氣殘留／模組翹曲／銅氧化控制 | TU Delft LAS 回顧（2026-06-04） | ⚠ **摘要未給任何門檻** |
+| **服役時** | 裂紋擴展、孔洞合併、分層 | 京都先端科學大 × 東北大（2026-05-02），熱衝擊 **−40 °C ↔ 150 °C** | ⚠ 僅溫域；循環次數／剪切強度／孔隙率皆未給 |
+
+- ⇒ 📌 **兩段的最佳化方向可能衝突：更緻密有利服役，但更難排氣。** ⚠⚠ **此衝突為本 wiki 之推論，兩來源皆未明言，不得引述為任一來源之主張。**
+- ⚠ 兩件皆非 OA、皆僅摘要（`fetch_status: partial`）；元件域皆為 **SiC 功率模組**，**不得套用於混合接合或 HBM 之接合層。**
+
+### ⭐⭐⭐ 「最佳值必然是區間」第八例：延性 vs 剛性（2026-10-13）
+
+- **燒結銀加入銅微粒（Cu MPs）**：熱衝擊下純 s-Ag 漸進分層與孔洞合併，加入 Cu MP 則抑制裂紋擴展；**原位 SEM 顯示 Cu MP 充當剛性障壁**，把孔洞成長限制在富銀區並使裂紋繞過夾雜物。
+- ⚠⚠ **代價寫在同一段摘要裡**：純 s-Ag 高溫下嚴重軟化且高延性，**s-Ag/Cu MP 維持較高剛性與強度但為脆性破壞** ⇒ 📌 **「加入填料」此後不得被記為單向改善：它同時換掉了失效模式。**
+- ⇒ ⭐ **「添加物有最佳量」此後有兩個落點、兩個目的**：既載 **SeoulTech**（Cu:CuO = **8:2** 最佳，為了讓還原反應完全；7:3 時 bond-line 殘留氧化物而退化）vs 本件（Cu MP 為了阻擋裂紋擴展，代價是脆化）⇒ **添加物可以為了促成反應，也可以為了阻止擴展。**
+
+### ⚠ 翹曲作為熱應力的後果：第三個處置層（2026-10-13）
+
+- **Beiyi CN121666099A**：**鈦銅複合緩衝層＋因瓦（invar）緩衝片**＝雙應力緩衝障壁；**四段燒結＋梯度冷卻**釋放熱應力 ⇒ 詳見 `wiki/technologies/foplp.md` 之翹曲四層表。
+- ⚠⚠ **零量化值**；⚠ 依規範（34）（37）**不得與既載任何熱量化軸**（熱阻降幅 %／熱通量 W/cm²／熱導率 W/m·K／界面熱阻 cm²·K·W⁻¹）**並列或相減。**
+
+來源：[[sources/2026-10-13_large-area-sintering-three-challenges]]、[[sources/2026-10-13_cu-microparticles-ductility-vs-stiffness-tradeoff]]、[[sources/2026-10-13_beiyi-sic-low-buckling-sintering]]

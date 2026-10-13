@@ -3,8 +3,8 @@ title: "Amkor Technology"
 category: entity
 tags: [OSAT, advanced-packaging, FOCoS, Arizona, chiplet, Intel-EMIB, patent-signal, TIM]
 created: 2026-04-25
-updated: 2026-10-10
-sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-05-19_stocktitan_amkor-arizona-peoria-land-expansion, 2026-06-17_digitimes_amkor-tsmc-10year-arizona-deal, 2026-06-17_trendforce_tsmc-amkor-10year-arizona-advanced-packaging, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-30_amkor-ir_arizona-7billion-groundbreaking, 2026-06-30_digitimes_amkor-2.5d-hdfo-growth-2026, 2026-07-23_amkor-ir_nvidia-amkor-1-5b-strategic-partnership, 2026-09-26_article_amkor-embedded-trace-rdl, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-10-07_epo_amkor-bspdn-oriented-package-embedded-ipd, 2026-10-07_openalex_amkor-kelly-three-interposer-routes, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-08_semieng_voltage-regulation-in-package]
+updated: 2026-10-13
+sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-05-19_stocktitan_amkor-arizona-peoria-land-expansion, 2026-06-17_digitimes_amkor-tsmc-10year-arizona-deal, 2026-06-17_trendforce_tsmc-amkor-10year-arizona-advanced-packaging, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-30_amkor-ir_arizona-7billion-groundbreaking, 2026-06-30_digitimes_amkor-2.5d-hdfo-growth-2026, 2026-07-23_amkor-ir_nvidia-amkor-1-5b-strategic-partnership, 2026-09-26_article_amkor-embedded-trace-rdl, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-10-07_epo_amkor-bspdn-oriented-package-embedded-ipd, 2026-10-07_openalex_amkor-kelly-three-interposer-routes, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-08_semieng_voltage-regulation-in-package, 2026-10-13_amkor-cavity-as-allocated-volume]
 related:
   - wiki/technologies/rdl.md
   - wiki/technologies/cowos.md
@@ -425,3 +425,25 @@ Amkor 的 **Vineet Pancholi** 提供本 wiki 目前唯一的中介層測試覆�
 ➜ **兩者物件可能不同**（投產 vs 全期完工）⇒ **本 wiki 不合併、不覆寫**，列為待釐清。
 
 **本輪新增來源**：[[sources/2026-10-10_amkor-passive-placement-quantified-claim]]、[[sources/2026-10-10_globalfoundries-tsmc-2b-interposer-deal]]
+
+### ⭐⭐⭐ 凹穴是 Amkor 的一個通用手法，而不是個案（2026-10-13）
+
+同輪以 `pa="amkor" and pd within "2026"` 檢出 **94 件**，其中四個 family 使用同一手法：**以減材在封膠或載體上造出一個不同高度的平面，再把原本只能放在表面的東西放進去。**
+
+| 凹穴開在 | 容納什麼 | publication | family | pd | 量化值 |
+|---|---|---|---|---|---|
+| 封膠體**外側面** | 第一天線圖案（另一組在外側面本身），兩組各有獨立饋入 | US20260312273A1 | 101502460 | 2026-10-08 | 無 |
+| 封膠體**上表面** | PoP 連接件 | US20260157225A1 | 99956982 | 2026-06-04 | 無 |
+| **中間基板**（垂直互連中段） | 下層晶粒**穿過** | US20260076275A1 | 98979446 | 2026-03-12 | 無 |
+| 封膠體**上表面** | 影像感測開口（加蓋） | US20260255708A1 | 100987695 | 2026-08-27 | 無 |
+
+⚠⚠ **依規範（47）：量化值欄全空，明文禁止排序；四件分屬四個不同發明團隊（KR／KR／US／US），不得推論為單一產品。**
+
+- ⇒ 📌 **既載「封裝的面正在成為被分配的資源」此後擴為「封裝的體積正在成為被分配的資源」**：既載落點皆在**晶粒的面**（連接／散熱／貫穿／光路），本組落點在**封膠體與載體自身的體積**，而被分配的是 **z 高度**。
+- ⇒ ⭐⭐⭐ **「核心層／載體貫穿腔體置入元件」取得第二個落點，且腔體服務對象相反**：既載 **Shinko US20260293748A1**（核心層開腔**以容納元件**，基板商）vs **本輪 fam 98979446**（垂直互連層開腔**以讓元件穿過**，OSAT）。
+- ⇒ ⭐⭐ **垂直互連的分段化**：interconnect → intermediate substrate → interconnect 三段串接，使腔體得以插在中段 ⇒ 與既載「三段串列化」（CoWoS 可外包／不可外包段）同型但位於封裝內部幾何層。
+- ⇒ ⭐⭐⭐ **本 wiki 第一件 OSAT 的 AiP 結構排他權，而它不叫 AiP。** fam 101502460 分類含 **H01Q1/2283**，標題卻是一貫泛化的 "ELECTRONIC DEVICES AND METHODS OF MANUFACTURING ELECTRONIC DEVICES" ⇒ 📌 **以主題片語檢索會系統性漏掉 OSAT 的布局；OSAT 必須以 `pa=` 檢索**（規範 44/48 之第三個具體化，成因在命名策略而非分類）。
+- ⚠ 既載 **fam 101501054（底填料圓角 ≤50 µm 距離上限，2026-10-10 入庫）本輪經 family 去重攔下**，未重複收錄。
+- ⚠ 既載 Amkor 其他面向本輪無更新：Arizona **$12B** 總投資（Phase 2／93K sqm 潔淨室／2029 完工）、Intel EMIB 外包夥伴、CEO McCann 之兩相冷卻預判。
+
+來源：[[sources/2026-10-13_amkor-cavity-as-allocated-volume]]

@@ -3,8 +3,8 @@ title: "先進封裝市場 / Advanced Packaging Market"
 category: concept
 tags: [market, forecast, CAGR, supply-chain, HBM, chiplet, geopolitics, equipment, SIA, Omdia, Yole, WFE, substrate-market, framework]
 created: 2026-04-24
-updated: 2026-10-12
-sources: [2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-07-31_semieng_chip-week-149, 2026-04-24_initial-survey, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2026-01-23_trendforce_chip-tools-tel-asml, 2026-03-05_trendforce_intel-emib-billions, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2025-12-18_trendforce_micron-capex-hbm4, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2025-05-13_trendforce_top10-osat-2024, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-04-16_ontoinnovation_dragonfly-g5-qualified, 2026-06-23_communicationstoday_foplp-glass-substrate-market-8b-2030, 2026-06-29_trendforce_china-osat-tongfu-jcet-investment, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-26_semieng_chip-week-144, 2026-07-01_trendforce_ase-price-hike-20pct, 2026-07-04_semieng_chip-week-145, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-07-03_trendforce_anthropic-samsung-advanced-packaging, 2026-05-08_trendforce_ajinomoto-abf-1b-land-buy-2032-margins, 2026-07-24_semieng_chip-week-148, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-08-06_siliconbox_500m-units-panel-scale, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-10-02_imaps-dpc2026_defect-free-coplanar-copper-via-fill, 2026-10-02_trendforce_cowos-l-mainstream-through-2028, 2026-10-02_trendforce_nvidia-glass-substrate-2028-taiwan, 2026-10-02_bitschips_besi-q1-2026-hybrid-bonding-orders]
+updated: 2026-10-13
+sources: [2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-07-31_semieng_chip-week-149, 2026-04-24_initial-survey, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2026-01-23_trendforce_chip-tools-tel-asml, 2026-03-05_trendforce_intel-emib-billions, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2025-12-18_trendforce_micron-capex-hbm4, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2025-05-13_trendforce_top10-osat-2024, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-04-16_ontoinnovation_dragonfly-g5-qualified, 2026-06-23_communicationstoday_foplp-glass-substrate-market-8b-2030, 2026-06-29_trendforce_china-osat-tongfu-jcet-investment, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-26_semieng_chip-week-144, 2026-07-01_trendforce_ase-price-hike-20pct, 2026-07-04_semieng_chip-week-145, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-07-03_trendforce_anthropic-samsung-advanced-packaging, 2026-05-08_trendforce_ajinomoto-abf-1b-land-buy-2032-margins, 2026-07-24_semieng_chip-week-148, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-08-06_siliconbox_500m-units-panel-scale, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-10-02_imaps-dpc2026_defect-free-coplanar-copper-via-fill, 2026-10-02_trendforce_cowos-l-mainstream-through-2028, 2026-10-02_trendforce_nvidia-glass-substrate-2028-taiwan, 2026-10-02_bitschips_besi-q1-2026-hybrid-bonding-orders, 2026-10-13_mordor-market-9011b-2031, 2026-10-13_hbm-share-of-accelerator-cost]
 related:
   - wiki/entities/tsmc.md
   - wiki/entities/sk-hynix.md
@@ -1396,3 +1396,23 @@ Bits&Chips（2026-04-23）：訂單 **€269.7 M（YoY >2×）**、營收 **€1
 - ⇒ 📌 **既載空缺「HBM base die 供應鏈」之範圍應擴大：它不只是一條供應鏈，也是一個排他權競爭的場所。** ⚠ 零量化值，專利為前瞻訊號。
 
 來源：[[sources/2026-10-12_globalfoundries-2b-tsmc-interposer-malta]]、[[sources/2026-10-12_hbm4-second-supply-chain-serialization]]、[[sources/2026-10-12_skhynix-intel-foundry-hbm4e-base-die]]、[[sources/2026-10-12_neurophos-base-die-as-compute-site]]
+
+### ⚠⚠⚠ 兩個不相干的數字在同一天入庫且數值相近——本 wiki 第一次為此預設護欄（2026-10-13）
+
+| 數字 | 值 | 量測對象 | 出處 |
+|---|---|---|---|
+| 先進封裝市場 2026 | **$57.46B**（2031 **$90.11B**，CAGR **9.42%**） | 「先進封裝市場」，**口徑未定義** | Mordor Intelligence（經 EE Times Asia, 2026-10-13） |
+| HBM 市場 2026 | **$54.6B**（+58% YoY） | **記憶體單一品類之銷售額** | BofA（經 Silicon Analysts, 2026-08-28） |
+
+- ⇒ 📌 **明令：不得相除、相減，不得推論「HBM 幾乎等於整個先進封裝市場」或「先進封裝市場幾乎全是 HBM」。** 兩者量測對象完全不同（一為封裝服務／設備／材料之某一未定義組合，一為記憶體產品銷售額），**數值相近純屬巧合。**
+- ⚠ Mordor 件**無任何分項數字**（技術別、區域別皆為定性）；為**單一市調機構單一口徑**，與既載其他機構之市場規模估計**不得並列排序**。
+- ⚠ EE Times Asia 另一標題亦稱「$90B by 2031」⇒ **同一組 Mordor 數字之兩次露出，非獨立佐證。**
+
+### ⭐⭐⭐ 加速器成本結構第一次進入本 wiki：HBM 佔製造成本 46–64%（2026-10-13）
+
+- 絕對值每單位約 **$2,400–$6,500**；**AMD MI325X 達 ~64%**，高於 **NVIDIA GB200 的 ~46%**。
+- ⇒ 📌 **與既載「HBM4 之 TSMC base die 成本為 core die 的 3–4 倍」合讀：base die 的成本問題直接落在加速器 BOM 上** ⚠⚠ **兩數字口徑不同，不得相乘以推估絕對金額。**
+- ⇒ **Goldman Sachs**：客製 ASIC AI 晶片之 HBM 需求成長 **82%**，將達總 HBM 需求 **1/3** ⇒ 與既載「可外包段／不可外包段」及 NVLink Fusion XPU 生態系論述同向。
+- ⚠ 全部為第三方估算、無廠商確認，**不得作為定價或毛利推論之前提。**
+
+來源：[[sources/2026-10-13_mordor-market-9011b-2031]]、[[sources/2026-10-13_hbm-share-of-accelerator-cost]]
