@@ -3,7 +3,7 @@ title: "EMIB — Embedded Multi-Die Interconnect Bridge"
 category: technology
 tags: [Intel, 2.5D, silicon-bridge, chiplet, HBM4, Foveros, glass-substrate, EMIB-T, EMIB-M, silicon-capacitors, power-delivery, HLFF, encapsulation, underfill]
 created: 2026-05-03
-updated: 2026-10-12
+updated: 2026-10-14
 sources: [2026-09-27_intel_us20260223702a1-direct-bonding-embedded-bridge-organic-cavity, 2026-09-27_intel_cn122270166a-stacked-glass-silicon-bridge-assembly-ar20, 2026-09-27_samsung_us20260144093a1-bridge-on-tgv-mold-fixed, 2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-03-05_trendforce_intel-emib-billions, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-03-03_trendforce_intel-clearwater-forest, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks, 2026-06-21_convergedigest_intel-emib-t-multi-die-packaging, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap, 2026-06-05_semieng_intel-ectc-2026-emib-t-cpo-glass, 2026-01-30_tomshardware_intel-ai-chip-test-vehicle-emib-t, 2026-08-04_semieng_from-blueprint-intel-hlff, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_patent_zhuhai-tiancheng-dual-depth-tsv-silicon-bridge, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-09-30_epo_intel-us20260191037a1-localized-embedded-bridge-in-core, 2026-09-30_intel_us-advanced-packaging-reticle-8x-12x-fab9, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_amd-us20260282956a1-silicon-bridge-decap, 2026-10-02_epo_adeia-us20260247631a1-dual-sided-connecting-element, 2026-10-02_epo_shanghai-xianfeng-cn122622683a-glass-interposer-bridge, 2026-10-02_trendforce_cowos-l-mainstream-through-2028, 2026-10-06_epo_intel-bridge-chiplet-shield-dummy-die, 2026-10-06_epo_intel-mold-extension-package-to-package-topside-bridge, 2026-10-06_intel_clearwater-forest-no-glass-foveros-9um-3um-emib-45um, 2026-10-07_openalex_lau-silicon-bridge-microbump-reliability, 2026-10-07_openalex_amkor-kelly-three-interposer-routes]
 related:
   - wiki/entities/intel.md
@@ -1106,3 +1106,36 @@ US20260305351A1 的**同一發明團隊、同日公開的相鄰家族**：
 - ⚠ **既載 Ibiden（EMIB／EMIB-T 基板主供應商）之 2027 投產時程不變**：FY2026–FY2028 約 5,000 億日圓、第一期約 2,200 億（Gama 廠 Cell6），FY2027 起依序投產 ⇒ **2026 年內無新增供給。**
 
 來源：[[sources/2026-10-12_die-shift-fourth-remedy-custom-interposer]]、[[sources/2026-10-12_skhynix-intel-foundry-hbm4e-base-die]]
+
+---
+
+## 2026-10-14 collect 更新：EMIB-T 光罩倍數取得第三個時點；封裝組織層級升格
+
+### EMIB-T 封裝尺寸（相對單一光罩）的時間序
+
+igor'sLAB（2026-06-20，報導 Intel 2026-06-18 人事案）給出三個時點：
+
+| 時點 | 相對單一光罩 |
+|------|-------------|
+| 當時（2026-06） | **> 6×** |
+| 2026 目標 | **> 8×** |
+| 2028 目標 | **> 12×** |
+
+- ⇒ 與既載 2026-09-29「EMIB-T 光罩倍數首見數字」並列，本件補上**2028 年的外推點**。📌 若兩組數字口徑一致，EMIB-T 的光罩倍數路線為 **6→8（兩年內）→12（2028）**。⚠ **需以 Intel 一手簡報覆核口徑**（「package size relative to a single reticle」是否與 CoWoS 的光罩倍數同義）。
+- ⇒ 製程節點對應：Intel 18A、Intel 14A。
+
+### 組織層級：封裝自 2026-06-18 起由獨立 EVP 統管
+
+Intel 任命 **Seok-Hee Lee**（前 SK hynix 總裁兼執行長，後任 SK On；更早曾任職 Intel）為 Intel Foundry 執行副總裁，**直接向 CEO Lip-Bu Tan 匯報**，職掌**先進封裝、系統整合、後段技術開發與後段製造**；前段晶圓製造仍由 Naga Chandrasekaran 負責。**Intel 未分拆獨立封裝公司**，兩單位皆留在 Intel Foundry。
+
+- ⇒ 報導明指此調整的兩個放量對象為 **EMIB-T** 與 **HBI（Hybrid Bonding Interface，Foveros Direct 所採用）**，以及結合兩者的 **3.5D 整合**。
+- ⇒ 📌 **這是本 wiki 首次記錄到封裝在 IDM 組織圖上被提升到與前段製造並列的層級**，且負責人來自記憶體廠而非邏輯廠——與 Intel 既載的 HBM／記憶體相關動作（2026-08-14 之 ZAM、Saimemory JV）可並讀。
+- ⚠ 文章明確指出 **Intel 未量化後段產能**；無客戶名稱、無 bump pitch。
+
+### 產能對照（⚠ 低可信度來源，僅作量級參考）
+
+digitalcitizen.life（2026-09-12）給出 Intel EMIB-T 產能 **2027 年 15,000–20,000**、**2028 年 40,000–45,000**（12 吋當量／月），同文並給 TSMC CoWoS **2026 年底 ~130,000 → 2028 年底 ~260,000**。
+
+> ⚠⚠ **該文未指名任何原始出處**，全文依據未具名的 reports 與 industry estimates。依 2026-09-21 新增之第四可信度軸（彙整型網站），**此組數字不得作為其他推論之前提**，僅記為量級參考：若口徑一致，2028 年 TSMC CoWoS 約為 Intel EMIB-T 的 **5.8–6.5 倍**。需 Intel 法說會或 SEMI 統計覆核後方可升格。
+
+來源：[[sources/2026-10-14_intel-packaging-evp-emib-t-reticle-scaling]]、[[sources/2026-10-14_cowos-vs-emib-t-capacity-unattributed]]

@@ -893,3 +893,17 @@
 2026-10-13 | https://doi.org/10.3390/electronics15132803 | raw/papers/2026-10-13_openalex_hebeiut-microbump-as-antenna-cu-pillar-vs-solder-ball.md | Hebei UT: microbump as antenna, 0.63% vs 13.17% BW
 2026-10-13 | https://doi.org/10.1016/j.microrel.2026.116160 | raw/papers/2026-10-13_openalex_kuas-tohoku-sintered-ag-cu-microparticles-thermal-shock.md | KUAS/Tohoku: Cu MPs in sintered Ag, -40 to 150C shock
 2026-10-13 | https://doi.org/10.1088/2058-8585/ae96bb | raw/papers/2026-10-13_openalex_aist-additive-printed-28ghz-antenna-mold-substrate-warpage.md | AIST: additive printed 28GHz antenna, 6.9dBi, mesh warp
+2026-10-14 | https://www.igorslab.de/intel-macht-advanced-packaging-zum-eigenen-foundry-schwerpunkt-ex-sk-hynix-chef-soll-emib-t-und-hbi-skalieren/ | raw/articles/2026-10-14_igorslab_intel-packaging-foundry-emib-t-hbi-reticle-scaling.md | Intel: pkg under own EVP; EMIB-T >6x to >12x reticle
+2026-10-14 | https://www.digitalcitizen.life/tsmc-reportedly-plans-to-double-cowos-capacity-by-2028-as-ai-packaging-demand-keeps-rising/ | raw/articles/2026-10-14_digitalcitizen_cowos-130k-260k-wpm-vs-intel-emib-t-capacity.md | CoWoS 130k-260k wpm vs Intel EMIB-T 15-45k (unattrib)
+2026-10-14 | https://www.yolegroup.com/?p=182328 | raw/articles/2026-10-14_yole-ers_foplp-thermal-debonding-650mm-panel.md | ERS FOPLP thermal debond 650x650mm (undated source)
+2026-10-14 | EPO:99436780:US20260107857A1 | raw/patents/2026-10-14_US20260107857A1_ks-metal-first-thermal-expansion-then-dielectric-bond.md | K&S: heat/expand metal, bond metal, THEN dielectric
+2026-10-14 | EPO:99060609:US20260082972A1 | raw/patents/2026-10-14_US20260082972A1_ks-in-situ-reducing-gas-manifold-bond-area.md | K&S: reducing-gas manifold + exhaust at bond area
+2026-10-14 | EPO:98346139:CN121335581A | raw/patents/2026-10-14_CN121335581A_asmpt-compliant-positioning-structure-bond-head-collet.md | ASMPT: orthogonal flexures limit collet deviation
+2026-10-14 | EPO:96347527:JP2026055776A | raw/patents/2026-10-14_JP2026055776A_intel-three-layer-glass-core-bulk-glass-middle.md | Intel: 3-layer glass core, bulk glass in middle
+2026-10-14 | EPO:97448959:US20250336799A1 | raw/patents/2026-10-14_US20250336799A1_samsung-glass-core-interposer-filler-free-inner-layer.md | Samsung: glass core interposer, filler-free inner layer
+2026-10-14 | https://doi.org/10.4071/001c.167017 | raw/papers/2026-10-14_openalex_lam-cpo-equipment-turbocell-cop-40to10um-one-grind.md | Lam CPO equip: Cop 40to10um, 1 grind, <3% plating unif
+2026-10-14 | https://doi.org/10.3390/photonics13070621 | raw/papers/2026-10-14_openalex_ntua-metasurface-cpo-682pct-coupling-misalignment-tolerance.md | NTUA metasurface CPO: 68.2%, 0.9dB at +-0.6um
+2026-10-14 | https://doi.org/10.1117/1.apn.5.3.030501 | raw/papers/2026-10-14_openalex_umich-fowlp-rdl-photodetector-336gbps-110ghz.md | UMich: FOWLP-RDL PD 336Gb/s, >110GHz 6dB BW
+2026-10-14 | https://doi.org/10.1088/2515-7647/aeb3de | raw/papers/2026-10-14_openalex_ncu-vcsel-zn-diffusion-100fjbit-035vpp-cpo.md | NCU VCSEL: 100 fJ/bit, Vpp 0.35V, 32Gb/s at 125C
+2026-10-14 | https://doi.org/10.1364/oe.606834 | raw/papers/2026-10-14_openalex_ncu-asih-hipims-70c-low-thermal-budget-photonic.md | NCU: 70C a-Si:H HiPIMS, Q~1e5, low thermal budget
+2026-10-14 | https://arxiv.org/abs/2511.05506 | raw/papers/2026-10-14_arxiv_yapplus-pad-layout-aware-hybrid-bonding-yield-model.md | UCLA YAP+: hybrid bonding yield model, 5 mechanisms

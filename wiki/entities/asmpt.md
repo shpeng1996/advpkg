@@ -3,7 +3,7 @@ title: "ASMPT Limited / ASMPT 有限公司"
 category: entity
 tags: [OSAT, equipment, TCB, hybrid-bonding, CPO, flip-chip, FOPLP, HBM4]
 created: 2026-05-06
-updated: 2026-10-11
+updated: 2026-10-14
 sources: [2026-04-22_asmpt_q1-2026-results, 2026-05-03_globenewswire_amat-acquires-nexx, 2026-05-12_asmpt_ectc2026-firebird-lithobolt]
 related: [wiki/technologies/hybrid-bonding.md, wiki/technologies/copackaged-optics.md, wiki/technologies/hbm4.md, wiki/technologies/foplp.md, wiki/entities/besi.md]
 ---
@@ -119,3 +119,16 @@ US20260114310A1（細間距垂直線互連）、US20260206337A1（光學封裝�
 ⚠ **另檢視未採**：K&S **US20260144174A1**（先偏移成像、再移動對準後接合，family 99804139）列下輪候選。
 
 *Source: [[sources/2026-10-11_asmpt-cure-off-critical-path]]*
+
+---
+
+## [2026-10-14] 專利訊號：接合頭夾頭的面內定位——限制鏈第③層應拆為兩個子項
+
+**CN121335581A（ASM Technology Singapore，fam 98346139，pd 2026-01-13）「Compliant positioning structure for bond head assembly」**：bond head 配**平面撓性定位結構**，第一與第二撓性元件分別可接觸夾頭（collet）**互相正交**的兩側；撓性元件受夾頭推移而變形後，沿該結構平面施加**偏壓力**，藉以**限制夾頭朝該元件方向的位置偏差**。
+
+- ⇒ ⭐⭐ 既載 2026-09-19 限制鏈第③層（機台對準 100 nm）的三個資料點——Besi 干涉繞射相位對位、K&S 偏置成像、AMAT×Besi Kinex 100 nm @3σ——**全部處理「看得多準」**。本案處理的是**看準之後、貼放過程中的機構損耗**。
+- ⇒ 📌 **自本輪起，限制鏈第③層拆為兩個獨立子項**：**③a 對準量測精度**（已有 100 nm @3σ）與 **③b 貼放機構重複性**（**目前無任何公開數值**）。📌 **新增追蹤：貼放機構重複性的任何公開數字。**
+- ⇒ 與 2026-09-19 已收錄之 ASMPT「解耦浮動接合載台」專利同屬機構精度主題，顯示 ASMPT 的排他權布局**集中在接合頭與載台的機械行為**，而非光學對準演算法。
+- 📌 保留措辭：為專利訊號；摘要未給偏差量、偏壓力或改善幅度。
+
+來源：[[sources/2026-10-14_asmpt-compliant-collet-positioning]]

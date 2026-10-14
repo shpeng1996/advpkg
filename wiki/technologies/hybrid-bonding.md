@@ -3,7 +3,7 @@ title: "混合接合 / Hybrid Bonding"
 category: technology
 tags: [3D, hybrid-bonding, Cu-Cu, SoIC, ECTC, advanced-packaging, DRAM, COP, 4F2, Sn-damascene, damascene-interconnect, PFAS-free, patent-signal, guard-ring, surface-activation]
 created: 2026-04-24
-updated: 2026-10-13
+updated: 2026-10-14
 sources: [2026-09-27_paper_binghamton-ibm-pad-scaling-resistance-variability, 2026-09-27_intel_us20260223702a1-direct-bonding-embedded-bridge-organic-cavity, 2026-05-21_semiecosystem_ectc2026-cpo-hybridbonding-plp, 2026-04-24_initial-survey, 2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-03-01_3dincites_besi-packaging-power-shift, 2026-01-13_semiengineering_hbm4-microbumps, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-19_semieng_advanced-packaging-limits, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-03-27_3dincites_copper-grain-hybrid-bonding, 2026-03-02_semieng_making-hybrid-bonding-better, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2026-04-29_semiwiki_cea-leti-ectc2026-hybrid-bonding, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2024-02-09_semianalysis_hybrid-bonding-process-flow, 2026-05-19_semiconductor-digest_ev-group-ectc2026-hybrid-bonding, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-04-19_semiwiki_apple-m5-cucu-hybrid-bonding-shipped, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-18_imec_iii-v-chiplet-rf-laser-bonding, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-29_evgroup_ectc2026-hybrid-bonding-layer-transfer, 2026-06-29_thelec_skhynix-hybrid-bonding-equipment-order, 2026-06-05_semieng_intel-ectc-2026-emib-t-cpo-glass, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-14_trendforce_samsung-hbm-hiring-hybridbonding, 2026-07-16_semieng_fine-pitch-hb-high-volume, 2026-07-16_semieng_alt-materials-hybrid-bonding, 2026-06-08_irtnanoelec_d2w-hybrid-bonding-1um-pitch, 2026-05-28_imec_w2w-hybrid-bonding-200nm-pitch, 2026-09-09_acsaelm_microwave-anneal-cu-cu-150c-3min, 2026-08-21_scirep_copper-oxide-reduction-ar-h2-pulsed-plasma, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-03-29_damnang_hybrid-bonding-cmp-gating-factor, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-04-02_adeia_us20260096463a1-buildup-organic-dielectric-bonding, 2026-07-17_jcet_cn122421815a-asymmetric-bonding-interface, 2026-04-30_seoultech_us20260123559a1-hydrocarbon-plasma-low-temp-bonding, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer, 2023-09-13_nccavs_intel-cmp-dishing-requirement-vs-achieved, 2026-03-11_epo_adeia-cmp-for-hybrid-bonding-patent, 2026-09-01_chip_ru-bpr-ntsv-ion-beam-recess, 2026-02-10_epo_shanghai-univ-citric-acid-cu-reduction-sog, 2026-09-21_semiconductorx_cmp-share-lam-sabre-correction, 2026-09-16_jsandwich_cucu-diameter-nonmonotonic-local-optimum, 2026-07-21_lam_sabre-3d-is-ecd-not-cmp, 2026-09-26_paper_dalian-cucu-bonding-review, 2026-09-26_patent_beijing-xinli-hybrid-bonding-dishing-activation, 2026-09-26_paper_ibm-amine-post-cmp-clean, 2026-10-02_bitschips_besi-q1-2026-hybrid-bonding-orders, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_adeia-us20260247631a1-dual-sided-connecting-element, 2026-10-06_openalex_kuleuven-imec-n2-plasma-sin-cap-cu-oxide, 2026-10-06_openalex_n2-plasma-sio2-activation-w2w-bonding, 2026-10-06_openalex_tongji-wafer-embedded-pitch-standard-pose-correction, 2026-10-07_epo_besi-deformable-die-forming-bond-tool, 2026-10-07_openalex_diamond-d2w-direct-bonding-vdw-45mpa, 2026-10-07_openalex_cuos-alloy-interconnect-oxidation-adhesion, 2026-10-09_nycu-itri-cu-pad-protrusion-aspect-ratio, 2026-10-09_keti-tgv-defect-spectrum-plugging-review, 2026-10-09_quantware-qpu-measurement-stage-patent, 2026-10-13_atotech-cu-microstructure-queue-time, 2026-10-13_evg-bond-wave-pressure-element, 2026-10-13_samsung-hbm-33pct-hcb-vs-mrmuf, 2026-10-13_large-area-sintering-three-challenges]
 related:
   - wiki/technologies/rdl.md
@@ -2395,3 +2395,64 @@ SemiAnalysis ECTC 2026 綜整（2026-07-02）另給出三個降溫／細間距�
 - ⚠ 「SK hynix 在混合接合上遇到困難、Samsung 已交付混合接合樣品」為 **Damnang Research 訪談之未確認說法**，不寫入確定性敘述。
 
 來源：[[sources/2026-10-13_atotech-cu-microstructure-queue-time]]、[[sources/2026-10-13_evg-bond-wave-pressure-element]]、[[sources/2026-10-13_samsung-hbm-33pct-hcb-vs-mrmuf]]、[[sources/2026-10-13_large-area-sintering-three-challenges]]
+
+---
+
+## 2026-10-14 collect 更新：接合順序出現反轉主張；氧化物處置的第四種解法；限制鏈首次被收進單一模型
+
+### ⭐⭐⭐ 專利訊號：K&S 主張「金屬先接、介電後接」——與標準流程順序相反
+
+**US20260107857A1（Kulicke & Soffa，fam 99436780，pd 2026-04-16）**：(c) **加熱第一或第二組導體使其膨脹** → (d) **先完成金屬對金屬接合** → (e) **之後才接合兩側介電面**。
+
+既載標準流程為：室溫下**介電層先以凡得瓦力接合** → 退火 → 銅熱膨脹閉合 recess 間隙。本案把兩步對調。
+
+- ⇒ ⭐⭐⭐ **對既載橫向論述 1 的直接衝擊。** 「Cu dishing 的最佳值必然是區間而非極值」之所以成立（且為該論述唯一上下界皆有明確物理機制者：不足→空洞、過度→間隙不閉合），前提是**銅必須在介電層已固定的幾何約束下靠熱膨脹閉合**。若金屬在介電層尚未接合時即先行接合，**recess 上界的物理基礎被改變**，允收窗口可能需重新定義。
+- ⇒ 這是**設備商而非 IDM／代工廠**提出的流程級主張，落點在 2026-09-19 限制鏈的第①層（表面平坦度）與銅高度控制之間。
+- 📌 **保留措辭**：K&S 於 **2026-04** 公開之專利顯示其正布局接合順序反轉；**為專利訊號，非已量產能力**。摘要未給溫度、膨脹量或 recess 數值。⚠ 亦無任何第二來源佐證此順序可行。
+
+來源：[[sources/2026-10-14_ks-metal-first-then-dielectric-bond-sequence]]
+
+### ⭐⭐⭐ 專利訊號：K&S 把還原氣體做進 bond head——氧化物處置的第四種解法
+
+**US20260082972A1（Kulicke & Soffa，fam 99060609，pd 2026-03-19）**：bond head assembly 配**還原氣體輸送系統**，其**歧管下表面同時定義「還原氣體埠」與「排氣埠」**，在接合區就地供氣並排走反應產物。
+
+本案直接落在 2026-09-22 修正後的空缺提問上：「**接合當下表面還剩多少氧化物，用什麼除掉**」。四個資料點現可排成一張解法表：
+
+| 來源 | 主張 | 層級 |
+|------|------|------|
+| IBM/RPI | 空氣環境 250 °C 生成 CuO | 材料學 |
+| Atotech（2026-10-13） | Cu 晶粒 queue time 2–4 h／16 h；FG >4 週 | 製程時間窗（廠務） |
+| 上海大學 CN121511008A | Ar/H₂ 電漿活化**本身不足以**還原 Cu 氧化物，改以檸檬酸濕式還原 | 濕式化學 |
+| **K&S US20260082972A1（2026-03）** | **還原氣體＋排氣口整合進 bond head 歧管，接合區就地還原** | **設備／就地（in-situ）** |
+
+- ⇒ ⭐⭐⭐ **第四種解法，也是第一個「設備內建」層級者**；與上海大學的濕式還原是方向相反的兩條路（接合前獨立濕製程 vs 接合當下機台內就地）。
+- ⇒ ⭐⭐ 呼應既載論述「**業界的第二條路不是改進該製程，而是把設計移到規格較鬆的區間**」：此處是把**環境控制自廠務層（queue time 管理）下放到機台層（bond head 歧管）**，使 queue time 的嚴苛度得以放寬。➜ 📌 **若此路線成行，Atotech 的 2–4 h／16 h queue time 數字將需重新界定適用前提。**
+- 📌 **保留措辭**：為專利訊號，非已出貨機台。摘要未給氣體種類（H₂？甲酸？）、流量、溫度或殘餘氧化物厚度。
+
+來源：[[sources/2026-10-14_ks-in-situ-reducing-gas-bond-head]]
+
+### ⭐⭐ 專利訊號：ASMPT 處理「看準之後夾頭會不會跑掉」——限制鏈第③層應拆為兩個子項
+
+**CN121335581A（ASM Technology Singapore，fam 98346139，pd 2026-01-13）**：bond head 配**平面撓性定位結構**，兩組**互相正交**的撓性元件分別接觸夾頭（collet）的兩側，以面內偏壓力**限制夾頭的位置偏差**。
+
+- ⇒ ⭐⭐ 既載 ③ 層（機台對準 100 nm）的三個資料點（Besi 干涉繞射相位、K&S 偏置成像、AMAT×Besi Kinex 100 nm @3σ）**全部處理「看得多準」**；本案處理的是**貼放過程中的機構損耗**。➜ 📌 **限制鏈第③層自本輪起拆為兩個獨立子項：③a 對準量測精度（已有 100 nm @3σ）、③b 貼放機構重複性（目前無任何公開數值）。**
+- 📌 保留措辭：為專利訊號。摘要未給偏差量、偏壓力或改善幅度。
+
+來源：[[sources/2026-10-14_asmpt-compliant-collet-positioning]]
+
+### 學術前沿 / Research Frontier：限制鏈首次被收進單一量化模型（UCLA YAP+）
+
+**YAP+（Zhichao Chen, Puneet Gupta, UCLA NanoCAD；arXiv:2511.05506，2025-10-20）**：涵蓋 W2W 與 D2W 的 Cu-Cu 混合接合良率模型，附開源模擬器，自述 near-analytical，**相對模擬加速 >1,000×**。
+
+納入的五項失效機制：**overlay 失準、顆粒缺陷、Cu recess 變異、表面粗糙度、Cu pad 密度**。佈局層面可分析任意 2D 圖樣，並區分 **critical / redundant / dummy** 三種 pad，用於研究接合間距、各類 pad 比例與**冗餘 pad 複本的擺放位置**。
+
+- ⇒ ⭐⭐⭐ **這是本 wiki 第一次看到 2026-09-19 限制鏈的多個環節被放進同一個量化模型**：overlay 失準＝③、Cu recess 變異＋表面粗糙度＝①，另加入此前僅定性追蹤的顆粒缺陷與 pad 密度。➜ **若全文給出各機制的良率敏感度排序，即可把目前靠四個獨立來源拼出的限制鏈排序換成單一模型內的定量排序。** 📌 **列為下輪最高優先取全文項**（依 2026-10-10 新增之作業規範 39，下輪開場須先 grep `_collected_urls.txt` 確認是否已取得）。
+- ⇒ ⭐⭐ **「冗餘 pad」是本 wiki 完全未追蹤的設計層對策。** 既有討論全集中在製程端（CMP、清洗、對準）與材料端（die 翹曲）；YAP+ 顯示**設計端可用冗餘 pad 換良率**，與「把設計移到規格較鬆的區間」同構，且首次出現在混合接合的 pad 佈局上。
+- ⇒ ⭐ **顆粒潔淨度首次進入可量化模型**（2026-09-18 曾列為 D2W pitch 候選限制項但未能量化）。
+- ⚠ **fetch_status: partial** —— 僅取得 arXiv 摘要頁，無良率絕對值、pitch 數值或與既有模型的誤差比較。
+
+來源：[[sources/2026-10-14_ucla-yapplus-hybrid-bonding-yield-model]]
+
+### 設備商生態系補充（2026-10-14）
+
+- **Lam Research** 於 IMAPS DPC 2026 簡報中列出 D2W 混合接合的四項挑戰：接合面缺陷、**低溫下的銅晶粒成長與擴散**、無孔洞低應力填隙，目標寫為「**Zero defect bonding surfaces**」；W2W 熔接則列粗糙度、接合強度與**邊緣斜角穩健性**。混合接合採 **NDC（SiCN）介電層＋低溫細晶粒銅**。⚠ **熔接所需的粗糙度 Lam 未給數值門檻**（既載 Bruker 一手值為介電層 Rq 0.1–0.2 nm、Cu recess 1–5 nm，仍是唯一數字來源）。詳見 [[technologies/copackaged-optics]] 之 2026-10-14 段與 [[entities/lam-research]]。

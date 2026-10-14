@@ -3,7 +3,7 @@ title: "英特爾 / Intel"
 category: entity
 tags: [IDM, advanced-packaging, EMIB, Foveros, Intel18A, Clearwater-Forest, Foveros-Direct, glass-substrate, 14A, High-NA-EUV, silicon-capacitors, Google-TPU-v8e, Q2-2026-earnings, Tesla-14A, HLFF, RAMP-C, Secure-Enclave, Rio-Rancho]
 created: 2026-04-24
-updated: 2026-10-12
+updated: 2026-10-14
 sources: [2026-09-27_intel_us20260182414a1-asymmetric-buildup-cte-gradient-glass, 2026-09-27_intel_cn122270166a-stacked-glass-silicon-bridge-assembly-ar20, 2026-09-27_intel_us20260223702a1-direct-bonding-embedded-bridge-organic-cavity, 2026-08-24_intel-newsroom_hot-chips-2026-diamond-rapids-foveros-ucie, 2026-04-24_initial-survey, 2026-07-20_trendforce_tsmc-265b-arizona-intel-novalake, 2026-03-18_trendforce_intel-emib-malaysia, 2026-03-03_trendforce_intel-clearwater-forest, 2026-03-05_trendforce_intel-emib-billions, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-04-20_trendforce_intel-foundry-14a-equipment, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-01_semianalysis_cpus-back-datacenter-2026, 2026-04-10_3dincites_intel-gan-chiplet, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks, 2026-06-21_convergedigest_intel-emib-t-multi-die-packaging, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap, 2026-07-01_trendforce_terafab-intel-veteran-hire, 2026-04-07_tomshardware_intel-joins-terafab, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-01-30_tomshardware_intel-ai-chip-test-vehicle-emib-t, 2026-07-14_trendforce_intel-ireland-5b-intel3-europe, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-04_semieng_from-blueprint-intel-hlff, 2026-07-31_semieng_chip-week-149, 2026-08-13_trendforce_intel-memory-reentry-xbm-zam-saimemory, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-09-30_intel_us-advanced-packaging-reticle-8x-12x-fab9, 2026-09-30_epo_intel-jp2026116680a-glass-core-embedded-inductor-clusters, 2026-09-30_epo_intel-us20260040982a1-glass-package-liquid-metal-socketing, 2026-09-30_epo_intel-us20260191037a1-localized-embedded-bridge-in-core, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_trendforce_intel-microled-glass-24-layer, 2026-10-06_intel_clearwater-forest-no-glass-foveros-9um-3um-emib-45um, 2026-10-06_atlaspcb_clearwater-forest-glass-core-claim-unsourced, 2026-10-06_epo_intel-bridge-chiplet-shield-dummy-die, 2026-10-06_epo_intel-mold-extension-package-to-package-topside-bridge, 2026-10-09_intel-voltage-contrast-backside-patent]
 related:
   - wiki/entities/tsmc.md
@@ -1103,3 +1103,29 @@ CN122349366A、US20260191063A1、US20260191037A1（family 100312105，**已收�
 - ⚠ 「Intel 關係可能擴及先進封裝」為該來源明示之推測，**不記為訊號**。
 
 來源：[[sources/2026-10-12_intel-lens-technology-glass-substrate]]、[[sources/2026-10-12_die-shift-fourth-remedy-custom-interposer]]、[[sources/2026-10-12_skhynix-intel-foundry-hbm4e-base-die]]
+
+---
+
+## [2026-10-14] 封裝升格為獨立 EVP 職掌；玻璃核應力同季度兩種機制
+
+### 組織：先進封裝與後段自 2026-06-18 起由獨立 EVP 統管
+
+- **2026-06-18**：Intel 任命 **Seok-Hee Lee** 為 Intel Foundry 執行副總裁，**直接向 CEO Lip-Bu Tan 匯報**。職掌：**先進封裝、系統整合、後段技術開發、後段製造**。前段晶圓製造仍由 **Naga Chandrasekaran** 負責。**未分拆獨立封裝公司**，兩單位皆留在 Intel Foundry 之內。
+- Lee 的經歷：**前 SK hynix 總裁兼執行長**，最近期任職於電池廠 SK On；更早曾任職 Intel。
+- 報導指明放量對象為 **EMIB-T** 與 **HBI（Hybrid Bonding Interface，為 Foveros Direct 所採用）**，以及結合兩者的 **3.5D 整合**。
+- **EMIB-T 封裝尺寸（相對單一光罩）**：當時 **>6×**、2026 目標 **>8×**、2028 目標 **>12×**。節點：Intel 18A、14A。
+- ⚠ 文章明確指出 **Intel 未量化後段產能**；無客戶、無 bump pitch、無 HBM 世代。
+- ⇒ 📌 **本 wiki 首次記錄封裝在 IDM 組織圖上被提升至與前段製造並列的層級，且負責人來自記憶體廠而非邏輯廠** ——可與既載 2026-08-14「Intel CEO 暗示重返記憶體；ZAM 架構、Saimemory JV」並讀。
+
+來源：[[sources/2026-10-14_intel-packaging-evp-emib-t-reticle-scaling]]
+
+### ⭐⭐ 專利訊號：玻璃核分層（三明治結構）
+
+**JP2026055776A（fam 96347527，pd 2026-03-31）**，明示問題為「**使玻璃核基板的玻璃較不易受機械及／或熱應力所造成之損傷**」。結構：第一層（介電／玻璃片／介電）＋第二層（介電／玻璃片／介電）＋**中間含 bulk glass 的第三層**，上下兩層分別 physically bonded 於第三層兩面。
+
+- ⇒ ⭐⭐ **Intel 於同一季度內以兩種不同機制處理同一問題**：**邊緣塗層**（JP2026059728A，fam 98977174，已收錄）與**玻璃分層**（本案）。既載 Lau 模擬把玻璃核的 PCB 側 BGA 應變加倍（8.43%→19%）標為 **high risk**；Intel 的雙路線布局**與該判定方向一致**，為玻璃核應力問題尚未解決的間接佐證。
+- ⇒ 對既載「玻璃失效在界面與孔緣，不在材料本體」構成**反向壓力測試**：三層結構等於再增加兩組界面。摘要未回答此疑問。
+- 📌 保留措辭：為專利訊號，非已量產結構；摘要無任何數值（[Selected Figure] None）。
+
+詳見 [[technologies/glass-substrate]] 之 2026-10-14 段。
+來源：[[sources/2026-10-14_intel-three-layer-glass-core-stress]]

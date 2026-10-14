@@ -3,7 +3,7 @@ title: "共封裝光學元件 / Co-Packaged Optics (CPO) — TSMC-COUPE™ & Eco
 category: technology
 tags: [CPO, co-packaged-optics, COUPE, TSMC, GlobalFoundries, Samsung, photonics, AI, HPC, networking, OCI-MSA, DWDM, Broadcom, NVIDIA, glass-substrate, ULCVD, TGV, Spectrum-X, NVL72]
 created: 2026-04-25
-updated: 2026-10-13
+updated: 2026-10-14
 sources: [2026-09-27_globalfoundries_siph-cpo-bandwidth-density-coupling-budget, 2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-27_paper_copper-interconnect-scaling-roadmap-lines-per-mm, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-05-07_trendforce_globalfoundries-silicon-photonics-scale-cpo, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-03-17_coherent_cpo-ofc2026-demo, 2026-06-07_digitimes_jcet-3d-packaging-cpo-plant, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_edn_cpo-technology-status-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-06-24_thelec_corning-glass-bridge-cpo, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-14_trendforce_umc-silith-silicon-photonics-hvm, 2026-07-14_trendforce_huawei-baidu-npo-msa, 2026-07-27_trendforce_presscenter_cpo-switches-nvidia-broadcom-coupe, 2026-06-03_3dincites_intel-foundry-emib-cpo-glass-ectc2026, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-07-31_ase_cn224583735u-photoelectric-hybrid-rdl, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-09-26_report_dupont-ttm-polymer-waveguide-reliability, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_bitschips_besi-q1-2026-hybrid-bonding-orders, 2026-10-07_openalex_mit-cpo-vs-pluggable-switch-power-calibration, 2026-10-07_skhynix_cpo-nature-electronics-100tbps-1pjbit-10ns, 2026-10-09_semiwiki-tsmc-oip-2026-verification, 2026-10-13_cpo-bottleneck-test-800x-area-mismatch]
 related:
   - wiki/technologies/rdl.md
@@ -1414,3 +1414,66 @@ LPKF 之 CPO 耦合能力條件為 **表面波紋 ±100 nm、表面粗糙度 ±3
 - ⚠ **本件未提供頻寬密度與 pJ/bit** ⇒ **既載空缺「Nature Electronics CPO 綜述全文（2D/2.5D/3D 三階段量化門檻）」維持開啟。**
 
 來源：[[sources/2026-10-13_cpo-bottleneck-test-800x-area-mismatch]]
+
+---
+
+## 2026-10-14 collect 更新：設備商一手瓶頸清單（Lam）；光源側首見 fJ/bit；對準難度的第二條解法
+
+### ⭐⭐⭐ Lam Research 首份一手設備簡報（IMAPS DPC 2026-03）
+
+本 wiki 此前只以二手引述提及 Lam（「~100×100 mm 後晶圓失去效率」）。本輪取得 Lam 先進封裝技術總監 Prahalad Parthangal 的 IMAPS 22nd DPC 簡報全文 PDF。
+
+**Lam 指認的八項 CPO 設備瓶頸**：①細線 RDL 與 megapillar 電鍍（含 **pillar 高度差導致的昂貴研磨**）②基板翹曲（可致混合接合失效）③W2W 熔接（粗糙度／接合強度／**邊緣斜角穩健性**）④D2W 混合接合（接合面缺陷、低溫下銅晶粒成長與擴散、無孔洞低應力填隙；目標寫為「**Zero defect bonding surfaces**」）⑤**斜角（bevel）管理**⑥光纖耦合效率與插入損耗 ⑦熱管理 ⑧整合式光學測試與量測。
+
+**量化值**：細線 RDL **<5 µm L/S**；Megapillar **>150 µm CD**；標準流程 Cop **≈40 µm／兩道研磨** vs **TurboCell Cop ≈10 µm／一道研磨**；電鍍均勻度（WiW 與 WiD）**<3%**；薄銅種子 **≈500 Å**＋lite-etch；UBM/RDL 蝕刻 CD **≈3 µm**、均勻度 **<5%**、材料損失 **<0.5 µm**；VECTOR TEOS 3D gapfill 晶粒間厚度 **>100 µm**；支援 **300 mm 至 600 mm 面板**。混合接合採 **NDC（SiCN）介電層＋低溫細晶粒銅**。
+
+- ⇒ ⭐⭐⭐ **「真正的瓶頸在被視為輔助步驟的那一步」首次取得量化代價**：TurboCell 把 Cop 自 40 µm 降至 10 µm、研磨自兩道降為一道，是本 wiki 目前唯一把「輔助步驟成本」換算成具體製程參數的案例。
+- ⇒ ⭐⭐ **「CMP 後清洗／接合面潔淨度是第二大良率槓桿」取得第二個獨立來源，且為設備商一手**（Lam 的「Zero defect bonding surfaces」目標）➜ 該候選論述自「候選」升格為「**成立但未量化**」。
+- ⇒ ⭐⭐ **斜角／邊緣管理是本 wiki 此前完全未追蹤的失效面向**，Lam 將其獨立列為一項瓶頸（邊緣滾降影響圖案化並限制可接合邊緣）。
+- ⚠ **本簡報未給 2D/2.5D/3D 的量化對照，亦無任何 TSV/TGV 數值** ➜ 既載空缺「CPO 綜述三階段量化門檻」**維持開啟**。
+
+來源：[[sources/2026-10-14_lam-cpo-equipment-bottlenecks-turbocell]]
+
+### ⭐⭐⭐ 光源側首見 fJ/bit 實測值（中央／台大／陽明交大，2026-10-13 發表）
+
+環形鋅擴散孔徑 VCSEL：**850 nm — 100 Gbit/s PAM-4 @ 4 mA 偏壓、EDR 100 fJ/bit、Vpp 0.35 V（紀錄低）**；**1060 nm — 32 Gbit/s OOK 無誤碼 @ 125 °C、Vpp 0.28 V，且不需耗電的 retiming DSP IC**。
+
+- ⇒ 這是本 wiki 第一個 CPO／NPO **光源元件層級**的 fJ/bit 數字（100 fJ/bit = 0.1 pJ/bit）。⚠ **口徑必須標明**：此為單一 VCSEL 的 EDR，**非系統端到端 pJ/bit**，與既載空缺所求的「三階段量化門檻」不同層級，不得混用。
+- ⇒ ⭐⭐ **125 °C 無誤碼運作** 直接接上 Lam 所列第七項瓶頸（自敏感光學元件移除熱量）：這是本 wiki 首次取得 CPO 光源的具體耐溫數字，意味著熱管理難度在光源側可被部分移開。
+- ⇒ ⭐⭐ **「不需 retiming DSP IC」是被低估的封裝後果**——省掉 DSP 同時**減少封裝內需共整合的晶粒數**，是「元件改良反過來簡化封裝」的案例，與本 wiki 慣常的「封裝解決元件限制」方向相反。
+
+來源：[[sources/2026-10-14_ncu-vcsel-100fjbit-cpo-light-source]]
+
+### ⭐⭐⭐ 對準難度的第二條解法：改變光介面設計，而非提升對準精度（NTUA）
+
+單石整合超穎表面（a-Si on SOI，1310 nm）作為 CPO 光介面，用以**取代笨重的外部微透鏡陣列或極高精度機械對準**：出光角 **0.88°**、焦距 **98.99 µm**、20 nm 頻寬內聚焦穩定；耦合至 SU-8 聚合物波導（ORDL）最大效率 **68.2%**；**水平失準 ±0.6 µm 劣化 0.9 dB、垂直失準 ±1.5 µm 劣化 0.4 dB**。⚠ 全為設計與模擬，無實測元件。
+
+- ⇒ ⭐⭐⭐ **「自對準／降低對準敏感度」vs「提升對準精度」兩條相反解法，首次出現在光學域**。既載此論述只有復旦自對準蝕刻一例（3D 整合），且 2026-09-21 標註「本 wiki 此前只追蹤後者」。本件為第二例。
+- ⇒ ⭐⭐ **CPO 光學對準容差首次有具體量級**：±0.6 µm（水平）／±1.5 µm（垂直）。與電性側混合接合對準（100 nm 級）並列，**兩者相差約 6,000 倍** ➜ 📌 **CPO 的「對準難度」在光電兩側是完全不同量級的問題，跨頁引用「對準精度」必須標註是光學側或電性側。** 此可與 2026-10-13 新立的「待對準兩物面積比」（電性 ≈1、光學 ≈800）並列為同一現象的兩種記法。
+
+來源：[[sources/2026-10-14_ntua-metasurface-cpo-alignment-tolerance]]
+
+### ⭐⭐ 封裝會不會吃掉元件效能？第一個量化案例（U. Michigan 評論）
+
+可重構 Ge-Si 光偵測器經**低損耗 FOWLP-RDL** 整合後：響應度 **≈1 A/W @1310 nm**、**3-dB 頻寬 50 GHz**、**6-dB 頻寬 >110 GHz**、**每波長 336 Gb/s**。評論者判讀：主要進展**不在裸元件速度紀錄**，而在證明高品質 O-band 偵測器效能**可穿過毫米波級封裝而被保留**，同時**放寬使 CPO 整合複雜化的固定 pad-map 約束**。
+
+- ⇒ ⭐⭐⭐ 本 wiki 既有大量「封裝使效能提升」的敘述，**少有「封裝使元件效能衰減多少」的對照**。本件把問題明確定義為「**on-wafer 效能能否在封裝後存活**」，並指認 **>100 GHz 的電氣逃逸（electrical escape）** 為關鍵關卡。
+- ⇒ ⭐⭐ **「固定 pad-map 約束」是 CPO 整合的新瓶頸項**，本 wiki 此前未記錄；與 Lam 的「細線 RDL <5 µm L/S」為同一落點的設備端／元件端兩種視角。
+- ⇒ 評論者明言 **end-to-end energy-per-bit 尚未核算** ➜ 📌 **pJ/bit 的缺口不只是本 wiki 的資料缺口，而是該領域本身尚未完成的核算。** 此為既載空缺的性質修正。
+
+來源：[[sources/2026-10-14_umich-fowlp-rdl-photodetector-packaging-survival]]
+
+### ⭐⭐ 製程熱的第四個切入點：光學層沉積溫度（中央大學）
+
+HiPIMS 於 **70 °C** 沉積 a-Si:H：n ≈ 3.52、帶隙 ≈ 1.96 eV、波導共振器 **Q ~10⁵**、消光比 **≈20 dB**。
+
+- ⇒ ⭐⭐⭐ 既載橫向論述 7「熱應拆成運作熱與製程熱兩條線」的製程熱切入點自三個增至**四個**（775 µm 熱預算／退火溫度帶／鍵合頭本身／**光學層沉積溫度**），且這是第一個落在光學域者。
+- ⇒ ⭐⭐ **70 °C 低於多數有機介電層、暫時性黏著劑與已金屬化結構的耐受上限** ➜ 光學層可在封裝流程相當後段才長上去，把 CPO 整合順序自「先做光學、再封裝」鬆綁為「**封裝到一半再長光學層**」，與 Lam 所列 3DIC CPO 路線（TDV+RDL+混合接合堆疊）直接相關。
+- ⚠ 本篇為材料與元件研究，**未做任何封裝整合實驗**；「促成低熱預算混合整合」為作者展望，非實證。
+
+來源：[[sources/2026-10-14_ncu-asih-70c-low-thermal-budget]]
+
+### 專利訊號 / Patent Signals（2026-10-14）
+
+- **本輪 OPS 以 `ti,ab="co-packaged optics" or ti,ab="photonic engine"` 檢索，全庫僅 2 件命中**（其一 TSMC CN122260581A 已收錄；另一為 TSMC US2023384543A1「光引擎散熱之熱電致冷器」，pd 2023-11-30，**早於 12 個月窗故未收**）。
+- ⇒ 📌 **這是一個關於檢索方法而非技術的發現**：CPO 的排他權布局**不使用「co-packaged optics」作為標題／摘要用語**。既載 CPO 專利（TSMC、Intel、ASE、Corning、Samsung）均由其他檢索式（申請人、玻璃、橋）帶出。➜ **下輪起 CPO 專利軌改以 CPC 分類（G02B6/42 系列）或申請人檢索，`ti,ab="co-packaged optics"` 應自輪替清單移除。** 此為繼 2026-10-13「封裝層安全性」之後，**第二個被實測判定為不適用的檢索式**。

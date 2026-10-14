@@ -3,7 +3,7 @@ title: "玻璃基板 / Glass Core Substrate"
 category: technology
 tags: [glass-substrate, TGV, panel-level, FC-BGA, CoPoS, Absolics, DNP, Rapidus, warpage, SeWaRe, glass-interposer, BOE, ULCVD, non-embedding, Lens-Technology, TPK-KY, Innolux, AUO, LG-Chem, singulation, patent-signal]
 created: 2026-05-08
-updated: 2026-10-13
+updated: 2026-10-14
 sources: [2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-27_tradingkey_copos-glass-validation-08mm-85x110mm, 2026-09-27_intel_us20260182414a1-asymmetric-buildup-cte-gradient-glass, 2026-09-27_samsung_us20260144093a1-bridge-on-tgv-mold-fixed, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-05-05_trendforce-insights_glass-substrate-development, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-05-29_3dincites_rapidus-2nm-advanced-packaging-ai-foundry, 2026-06-01_trendforce_intel-3dgs-india-glass-substrate, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-06-20_biggo_boe-glass-substrate-pilot, 2026-06-28_economy-ac_glass-substrate-global-race, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-08-18_trendforce_shinko-glass-substrate-22layer-glassem-delay, 2026-09-11_mssp_tgv-glass-biaxial-bending-ring-on-ring, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-03-13_kaneka_jp2026047137a-glass-core-polyimide-quantified, 2026-08-10_screp_low-k-organic-buffer-tgv-cu-metallization, 2026-08-04_jmrt_vacuum-assisted-void-free-cu-fill-tgv, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_patent_er-eng-glass-interposer-dual-carrier, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-30_epo_xiamen-anjieli-cn121335557a-silane-parylene-tgv, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth, 2026-09-30_epo_intel-jp2026116680a-glass-core-embedded-inductor-clusters, 2026-09-30_epo_intel-us20260040982a1-glass-package-liquid-metal-socketing, 2026-09-30_epo_amosense-wo2026019155a1-multilayer-glass-core-frit-bonding, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-10-02_epo_shanghai-xianfeng-cn122622683a-glass-interposer-bridge, 2026-10-02_epo_semco-cn122054433a-glass-surface-roughness, 2026-10-02_trendforce_nvidia-glass-substrate-2028-taiwan, 2026-10-02_trendforce_intel-microled-glass-24-layer, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-06_atlaspcb_clearwater-forest-glass-core-claim-unsourced, 2026-10-06_intel_clearwater-forest-no-glass-foveros-9um-3um-emib-45um, 2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage, 2026-10-06_thelec_sec-xray-tsv-tgv-inspection-1um, 2026-10-07_epo_cas-freestanding-3c-sic-interposer, 2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk, 2026-10-07_epo_evg-inorganic-dual-release-layer-common-solvent, 2026-10-08_rdl-free-glass-interposer-trench, 2026-10-08_pku-embedded-glass-fanout-roughness, 2026-10-08_uestc-tapered-tgv-skin-current, 2026-10-09_keti-tgv-defect-spectrum-plugging-review, 2026-10-09_uestc-tapered-tgv-stress-relief, 2026-10-09_bjut-thermomech-phase-field-imc-tgv, 2026-10-13_all-glass-aip-no-polymer-in-the-stack]
 related:
   - wiki/technologies/rdl.md
@@ -2378,3 +2378,41 @@ TrendForce（2026-09-30，⚠ **全文為 reportedly 之產業傳聞，非 NVIDI
 - 同輪另檢出 **上海交大 glass-based substrate integrated cavity AiP**（TCPMT, 2026-05-29；TGV ＋ 矽基 MEMS 感光複合膜，實測相對頻寬 **27.9%（83–110 GHz）**、峰值增益 **10.2 dBi**、3-dB 增益頻寬 **>27 GHz**）—— **⚠ 本件未收錄為 raw（Track C 選前五篇之上限），僅於此記錄其存在與數值出處**，作為「玻璃＋TGV 正在 mmWave AiP 側累積第二批量測數據」之佐證。
 
 來源：[[sources/2026-10-13_all-glass-aip-no-polymer-in-the-stack]]
+
+---
+
+## 2026-10-14 collect 更新：Intel 同季度以兩種機制處理玻璃核應力；Samsung 把「填料有無」寫成請求項
+
+### ⭐⭐ 專利訊號：Intel 把玻璃核拆成三層、中間夾 bulk glass
+
+**JP2026055776A（Intel，fam 96347527，pd 2026-03-31）**：明示問題為「**使玻璃核基板的玻璃較不易受機械及／或熱應力所造成之損傷**」。結構為：第一層（介電／**玻璃片**／介電）＋第二層（介電／**玻璃片**／介電）＋**中間第三層含 bulk glass**，第一、二層分別**physically bonded** 於第三層兩面。
+
+玻璃核應力管理路線至此有三種型態：
+
+| 路線 | 代表 | 機制 |
+|------|------|------|
+| 應力解耦層 | 上海振芯 CN118943079A（2024-11） | 玻璃核與連接層之間插入應力解耦層 |
+| 邊緣塗層 | Intel JP2026059728A（已收錄，fam 98977174） | 對框架式玻璃核做邊緣塗層 |
+| **玻璃本身分層** | **Intel 本案（2026-03）** | **兩層薄玻璃夾介電 ＋ 中間 bulk glass 的三明治** |
+
+- ⇒ ⭐⭐ **關鍵觀察：Intel 在同一季度內以兩種不同機制（邊緣塗層、玻璃分層）處理同一個問題。** 既載 Lau 模擬結論為「玻璃核使 micro-bump 應變 9.12%→4.43%（減半），但使 PCB 側 BGA 應變 8.43%→19%（加倍有餘），作者標為 **high risk**」。Intel 的雙路線布局**與該 high risk 判定方向一致**，是玻璃核應力問題尚未解決的間接佐證。
+- ⇒ ⭐⭐ **對既載橫向論述 6 的反向壓力測試。** 該論述為「TGV／玻璃的失效在**界面與孔緣**，不在材料本體」。本案的三層「physically bonded」結構等於**再增加兩組界面**。若界面確為弱點，增加界面是否反而不利？摘要未回答 ➜ 📌 **新增追蹤：玻璃分層結構的層間接合方式（熔接？黏著？）與其可靠度。**
+- 📌 保留措辭：Intel 於 2026-03 公開之專利顯示其正以玻璃分層處理應力問題；**為專利訊號，非已量產結構**。摘要無任何數值（[Selected Figure] None）。
+
+來源：[[sources/2026-10-14_intel-three-layer-glass-core-stress]]
+
+### ⭐⭐ 專利訊號：Samsung 玻璃核中介層——內層絕緣層「不含填料」、外層含填料
+
+**US20250336799A1（Samsung Electronics，fam 97448959，pd 2025-10-30）**：玻璃核中介層含玻璃核基板、貫穿電極、**第一絕緣層**（部分覆蓋上下表面）、**第二絕緣層**（環繞第一絕緣層與玻璃核）與上方 RDL；辨識特徵為 **「第一絕緣層不含填料，第二絕緣層含填料」**。
+
+- ⇒ ⭐⭐ **既載橫向論述 7「銅／材料微結構正自製程結果變成可請求的設計參數」取得新落點，且首次出現在玻璃核中介層的絕緣層組成上。** 既有兩例為 JCET（銅晶粒尺寸梯度）與 Absolics（上下 RDL 晶粒長寬比之比 0.85–0.99）。
+- ⇒ **推論（⚠ 本 wiki 推論，摘要未述，比照 Adeia EP4709132A2 之標註）**：內層無填料可得較低表面粗糙度與較佳貼附一致性；外層含填料以調整整體 CTE 與剛性 ➜ 等於把「**貼玻璃的界面性質**」與「**整體熱機械性質**」拆成兩層分別最佳化。
+- ⇒ **Samsung 玻璃軌時間線**：本案（2025-10）與既載 KR20240143655A／US20240321755A1／CN118692996A（均 2024 年）構成連續三年的提交紀錄。
+- 📌 保留措辭：為專利訊號。摘要無填料種類、含量、CTE、粗糙度或厚度數值。
+- 📌 **新增追蹤**：「內層無填料」是否已成玻璃核基板的通用做法（應查 Absolics、SKC、Corning 對應案件）。
+
+來源：[[sources/2026-10-14_samsung-glass-core-interposer-filler-free-inner-layer]]
+
+### 檢索紀錄（2026-10-14）
+
+以 `ti,ab="through glass via" or ti,ab="glass core substrate"` 檢索，全庫命中 **16 件**，其中 **3 件經 family-id 去重攔下**（LG Chem fam 99667689、Intel fam 98977174、Kaneka fam 99016254）。**family-id 鍵本輪再次有效觸發**。餘下 13 件中 8 件 pd 早於 12 個月窗（Toppan 2018/2019、胡迪群 2024、上海振芯 2024、Samsung 2024 三件），未收。

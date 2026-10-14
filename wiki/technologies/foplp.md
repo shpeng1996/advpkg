@@ -3,7 +3,7 @@ title: "FOPLP — 扇出面板級封裝 / Fan-Out Panel-Level Packaging"
 category: technology
 tags: [fan-out, panel-level, TSMC, Samsung, ASE, Powertech, Innolux, CoPoS, InFO, cost-reduction, delamination, DCB, CTE]
 created: 2026-05-03
-updated: 2026-10-13
+updated: 2026-10-14
 sources: [2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-07-31_trendforce_ase-capex-record-10-5b-leap-foplp, 2025-09-12_trendforce_foplp-competitive-2025, 2026-04-13_trendforce_copos-pilot, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-21_3dincites_acm-wlp-plp-process-trends, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-15_digitimes_manz-310mm-foplp-ecd-equipment, 2026-06-13_digitimes_linkotech-foplp-rollout-traction, 2026-06-20_prnewswire_manz-asia-310mm-ecd, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_digitimes_tsmc-foplp-timeline-skepticism, 2026-07-06_trendforce_cfmee-plp2000-china-first-plp, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-08-06_siliconbox_500m-units-panel-scale, 2026-02-18_siliconbox_ep4697377a1-fanout-panel-metal-sealing-ring, 2026-07-28_xianfeng_cn122476946a-alignment-mark-protection, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage, 2026-10-06_thelec_sec-xray-tsv-tgv-inspection-1um, 2026-10-07_epo_evg-zonewise-adaptive-litho-die-shift, 2026-10-07_epo_evg-inorganic-dual-release-layer-common-solvent, 2026-10-08_pku-embedded-glass-fanout-roughness, 2026-10-13_additive-patterning-and-metal-density-as-warpage-knob, 2026-10-13_beiyi-sic-low-buckling-sintering, 2026-10-13_large-area-sintering-three-challenges]
 related:
   - wiki/technologies/rdl.md
@@ -1173,3 +1173,36 @@ Cu stud 輸入晶圓 → 切單與晶粒貼附 → **第一次封膠** → **載
 - ⚠ 本件非 OA，僅摘要，三難題各自的量化門檻（孔隙率、翹曲 µm、氧化層厚度）**列為下輪候選取全文項**（依規範 39，下輪須先 grep 確認）。
 
 來源：[[sources/2026-10-13_additive-patterning-and-metal-density-as-warpage-knob]]、[[sources/2026-10-13_beiyi-sic-low-buckling-sintering]]、[[sources/2026-10-13_large-area-sintering-three-challenges]]
+
+---
+
+## 2026-10-14 collect 更新：debonding 取得第二個獨立來源（設備商一手）；600 mm 在設備端已非瓶頸
+
+### ⭐⭐ ERS electronic：熱脫載，最大面板 650 × 650 mm
+
+> ⚠ **來源日期不明**。Yole × ERS 訪談頁未標發布日，內文數字（「2020–2026 CAGR」「預期 2023 年載板採用率 12%」「2026 年市場 $2.5B」）之語氣顯示**極可能為 2021–2022 年舊文**。**市場數字一律視為過期、不入庫**；僅採用設備與製程事實。
+
+| 項目 | 數值 |
+|------|------|
+| ERS 自動面板脫載機最大面板 | **650 × 650 mm** |
+| 支援晶圓尺寸 | 200 mm、300 mm |
+| FOPLP 試產線導入熱脫載 | **2018 年** |
+| 熱脫載 vs 雷射脫載 | 營運成本「**顯著較低**」（⚠ 無數字） |
+| 翹曲驗證協力 | **IME A\*STAR（新加坡）** 協助驗證出料翹曲 |
+| 競爭對手路線 | 「規模較大的業者」提供**低溫機械式**或**雷射式**脫載 |
+| 核可之面板載板業者 | PTI、Nepes、ASE、Samsung |
+
+- ⇒ ⭐⭐ **2026-09-22 列管空缺「FOPLP 翹曲峰值在 debonding 階段是否有第二個獨立來源」——本輪取得。** ERS 為設備商一手說法，且其整條產品線即圍繞 debonding 建立（2018 年起），構成對「debonding 是 FOPLP 關鍵步驟」的獨立支持。➜ 既載橫向論述「**真正的瓶頸在被視為輔助步驟的那一步**」之 FOPLP 實例（debonding）自**單一來源升為兩個來源**。
+- ⇒ **脫載技術至此有三條路線並列**：熱脫載（ERS）／低溫機械式／雷射式。本 wiki 此前只記錄雷射脫載。📌 **新增追蹤：三條路線各自的翹曲代價與產能代價對照。**
+- ⚠ **空缺未結清的部分**：承載板材料（鋼／玻璃／陶瓷）的**翹曲絕對值仍未取得**；ERS 亦未給任何良率或脫載失效率數字。➜ 該空缺標為「**部分推進，維持開啟**」。
+
+來源：[[sources/2026-10-14_ers-foplp-thermal-debonding-650mm]]
+
+### 600 mm 面板在設備端已非瓶頸（Lam Research，IMAPS DPC 2026）
+
+Lam 的先進封裝簡報明列其製程設備支援範圍為「**300 mm 至 600 mm 面板**」。
+
+- ⇒ 既載記錄為「**成本模型社群已向 310×310 收斂，學界 FEA 仍在 600–680 mm，兩社群出現尺寸分歧**」。本件補上第三個視角：**設備商的供應範圍已涵蓋 600 mm** ➜ 📌 **該分歧不在設備可得性，而在經濟性與良率。** 這使 Lau 的吞吐論證（600 mm pick-and-place 時間 5.3×、成型設備閒置 94%）更形關鍵——**限制是節拍與良率，不是機台買不到**。
+- ⇒ 同時提醒：Lam 既載的「~100×100 mm 後晶圓失去效率」與其設備支援到 600 mm 並不矛盾——前者談**何時該改用面板**，後者談**面板能做多大**。📌 既載空缺「Lam 的 ~100×100 mm 與 CoWoS 14× 光罩路線為何看似矛盾」**不因本件結清**，但可排除「Lam 不支援大面板」這個解釋。
+
+來源：[[sources/2026-10-14_lam-cpo-equipment-bottlenecks-turbocell]]
