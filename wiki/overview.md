@@ -2126,6 +2126,6 @@ Ferric **64 顆 → >10 kW**、Empower **至 50 顆 → >3,000 A**（皆未提�
 
 **作業面事件（2026-10-14）**
 
-- ⚠⚠⚠ **`device_bash` 工作區啟動失敗且全程未恢復**（三次重試後回報 "Workspace unavailable … failed to start"）。本輪改以 `device_stage_files`／`device_commit_files` 完成全部檔案讀寫，**所有變更已落地於磁碟，但無法執行 git** ➜ 📌 **本輪未提交版控，需人工 `git add -A && git commit`。**
+- ⚠⚠⚠ **`device_bash` 工作區啟動失敗且全程未恢復**（三次重試後回報 "Workspace unavailable … failed to start"）。本輪改以 `device_stage_files`／`device_commit_files` 完成全部檔案讀寫，所有變更已落地於磁碟。⭐ **工作區於 ingest 完成後恢復**，git 已在本輪內補完（提交 `144a9ae`，提交後工作樹乾淨、無殘鎖）。⚠ 惟執行前 `rm` 仍被擋，而 `_to_delete/` 已有 2026-10-01、10-02 兩筆 `stale_git_locks_*` 前例 ➜ 📌 **新增作業規範（53）：執行 `git commit` 前必須先以 `touch` + `rm` 實測刪除權限，被擋則先 `device_request_delete_permission`，不得在刪除被擋的狀態下提交（否則殘鎖會使後續 git 指令失敗）。**
 - ⚠⚠⚠ **OpenAlex 改制**：已改為**以 IP 共享的每日預算制**並開始要求 API key。本輪第 1 組查詢 HTTP 200（35 件命中），第 2、3 組即 **429 "Insufficient budget … This request has no API key, so it counts against the free daily budget shared by everyone on your network's IP address"**，三次重試（含 20 秒等待）皆失敗 ➜ **Track C 僅完成 1/3 查詢**。📌 **處置建議：於 `.env` 新增 `OPENALEX_API_KEY`（OpenAlex 官方稱金鑰免費），並於 `schedule.md` §4 的 curl 範例加上 `--data-urlencode "api_key=${OPENALEX_API_KEY}"`。在金鑰到位前，Track C 每輪應預期只能完成一組查詢，且應把最重要的主題排在第一組。**
 - **EPO OPS**：5 次呼叫（1 auth + 4 search），全部 HTTP 200，無任何 403／429／quota 事件，遠低於每輪 10 次上限。
