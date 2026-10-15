@@ -3,7 +3,7 @@ title: "Amkor Technology"
 category: entity
 tags: [OSAT, advanced-packaging, FOCoS, Arizona, chiplet, Intel-EMIB, patent-signal, TIM]
 created: 2026-04-25
-updated: 2026-10-13
+updated: 2026-10-15
 sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-05-19_stocktitan_amkor-arizona-peoria-land-expansion, 2026-06-17_digitimes_amkor-tsmc-10year-arizona-deal, 2026-06-17_trendforce_tsmc-amkor-10year-arizona-advanced-packaging, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-30_amkor-ir_arizona-7billion-groundbreaking, 2026-06-30_digitimes_amkor-2.5d-hdfo-growth-2026, 2026-07-23_amkor-ir_nvidia-amkor-1-5b-strategic-partnership, 2026-09-26_article_amkor-embedded-trace-rdl, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-10-07_epo_amkor-bspdn-oriented-package-embedded-ipd, 2026-10-07_openalex_amkor-kelly-three-interposer-routes, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-08_semieng_voltage-regulation-in-package, 2026-10-13_amkor-cavity-as-allocated-volume]
 related:
   - wiki/technologies/rdl.md
@@ -447,3 +447,16 @@ Amkor 的 **Vineet Pancholi** 提供本 wiki 目前唯一的中介層測試覆�
 - ⚠ 既載 Amkor 其他面向本輪無更新：Arizona **$12B** 總投資（Phase 2／93K sqm 潔淨室／2029 完工）、Intel EMIB 外包夥伴、CEO McCann 之兩相冷卻預判。
 
 來源：[[sources/2026-10-13_amkor-cavity-as-allocated-volume]]
+
+---
+
+## 2026-10-15 更新 / Update — 兩件專利：無矽 SLIM 補片與互連模組
+
+> 本輪以 `pa="amkor" and ti,ab="package" and pd within "2026"` 命中 **7 件**（全部為 Amkor Technology Singapore Holding）。
+
+1. ⭐⭐⭐ **TW202614417A（family 57129884；發明人 Kelly／Huemoeller／Hiner）—— 高佈線密度補片。** 可為**無矽的整合模組（SLIM）**、含 BEOL、**可免 TSV**；**補片與基板厚度各 ≤10 µm**；**基板可再接合至矽中介體**。
+   ➜ 使「**橋的免 TSV 化**」自 Intel（矽）＋Deca（模封）**擴為三來源三載體**，且 Amkor 代表 **OSAT** 這一種商業模式。
+   ➜ 橋／補片軸**首見絕對厚度數字**；且「補片與中介體並存」以請求項形式出現。
+2. ⭐⭐ **US20260240050A1（family 100807805；韓國發明人團隊）—— 互連模組。** 多根橫向間隔的互連體被預製成模組，**第一側面帶種子層**（製程指紋入請求項，為該論述第四例）。與 2026-10-13 入庫之 **US20260076275A1**（中介基板貫穿腔體垂直互連）構成連續布局。
+
+⚠ 兩件皆無節距／層數／良率／客戶數值；TW202614417A 屬較早家族之延續案（規範 54）。

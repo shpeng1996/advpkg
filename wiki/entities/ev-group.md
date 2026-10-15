@@ -3,7 +3,7 @@ title: "EV Group (EVG)"
 category: entity
 tags: [equipment, hybrid-bonding, wafer-bonding, maskless-lithography, layer-transfer]
 created: 2026-04-25
-updated: 2026-10-13
+updated: 2026-10-15
 sources: [2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-05-19_semiconductor-digest_ev-group-ectc2026-hybrid-bonding, 2026-06-29_evgroup_ectc2026-hybrid-bonding-layer-transfer, 2026-05-28_imec_w2w-hybrid-bonding-200nm-pitch, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-10-07_epo_evg-zonewise-adaptive-litho-die-shift, 2026-10-07_epo_evg-inorganic-dual-release-layer-common-solvent, 2026-10-13_evg-bond-wave-pressure-element]
 related:
   - wiki/technologies/hybrid-bonding.md
@@ -245,3 +245,16 @@ KIMM 的 308 nm 準分子雷射解接合研究顯示：在**反轉結構**（玻
 - ⚠ 既載 **2026-10-12 列為下輪最高優先取件之項目，本輪已取得並結清。**
 
 來源：[[sources/2026-10-13_evg-bond-wave-pressure-element]]
+
+---
+
+## 2026-10-15 更新 / Update — 本輪三件專利：量測在前、品質判定在後、材料解在中間
+
+> 本輪以申請人檢索式 `(pa="be semiconductor" or pa="ev group" or pa="erich thallner") and pd within "2026"` 命中 **37 件，其中 Besi 0 件、EVG 37 件**。⚠ **Besi 在 OPS 2026 年公開案中以此申請人名稱完全未命中**，應視為檢索式問題（Besi 多以 "Besi Netherlands B.V." 等名稱申請），下輪調整。
+
+1. **US20260227176A1（family 85122171）—— 位移圖與接合參數回調。** 對準問題的**第三條解法**（接受形變、以模型補償），與 ASML 的「量測＋掃描機修正」同型。
+2. **CN121890310A（family 88143849，IPC G01N19/04）—— 插刀扭轉評判接合品質。** 與同日綜述所指「缺乏標準化混合模式斷裂能」正面對應 ⇒ **標準缺位 ⇒ 私有方法先行**。
+3. **DE112013007864B4（family 101212143）—— <10 nm（較佳 <1 nm）犧牲型保護層，接合時溶入母材。** 氧化物處置的**第五種解法**，首個落在材料／界面層級者。⚠⚠ **家族可回溯 2013 年**，2026-09-24 僅為授權公告日。
+
+➜ ⭐⭐ **布局形狀：接合前（幾何預測）＋ 接合後（品質判定）兩端夾擊**，接合製程本身不是本輪重心。
+➜ ⚠ 三件**全部零量化值**。既載 EVG 其他數據（與 imec 的 W2W 200 nm pad pitch／post-bond overlay <40 nm、GEMINI FB 機型）不受本輪影響。

@@ -3,7 +3,7 @@ title: "HBM4 — High Bandwidth Memory 4"
 category: technology
 tags: [memory, HBM, JEDEC, standards, AI, HPC, HBM4E, cleanroom, capacity, ISSCC2026, ZAM, HB3DM, HBM5, zHBM, HPB, FMS-2026, ECC, reliability, FIT]
 created: 2026-04-24
-updated: 2026-10-13
+updated: 2026-10-15
 sources: [2026-08-13_semieng_1mw-rack-debate-thermal, 2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor, 2026-08-10_trendforce_skhynix-chongqing-sale-global-reset, 2026-08-05_trendforce_samsung-v10-zhbm-hbm5-fms2026, 2026-07-30_trendforce_samsung-ds-q2-2026-hbm4-triple-q3, 2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-03-18_trendforce_intel-emib-malaysia, 2026-01-23_trendforce_hbm4e-samsung-skhynix-mid2026, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-01-13_semiengineering_hbm4-microbumps, 2025-12-18_trendforce_micron-capex-hbm4, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h, 2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-03-03_trendforce_sk-hynix-hbm4-tight-gaps, 2025-08-12_semianalysis_hbm-roadmap, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit, 2026-06-09_astutegroup_hbm-market-share-2026-battle, 2026-06-10_trendforce_samsung-gwangju-packaging-base, 2026-06-15_trendforce_skhynix-hbm4e-sample-timeline-pulled-forward, 2026-06-20_techtimes_skhynix-hbm4e-12layer-samples, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-27_tweaktown_hbm4-16hi-nvidia-supply-fight, 2026-06-26_semieng_chip-week-144, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-14_trendforce_samsung-hbm-hiring-hbm4-hbm4e-hbm5, 2026-07-14_trendforce_skhynix-yongin-y1-feb2027, 2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b, 2026-08-13_trendforce_samsung-skhynix-hbm4-2h-earnings-pricing, 2026-08-25_trendforce_nvidia-server-hike-hbm-price-2027, 2026-08-28_trendforce_skhynix-indiana-hbm4e-3q29-supply-2030, 2026-08-26_tomshardware_hbf-hot-chips-oxmiq-limited-usability, 2026-08-21_electronics_dual-interposer-hbm-power-integrity, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-09-09_acsaelm_microwave-anneal-cu-cu-150c-3min, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-03-29_damnang_hybrid-bonding-cmp-gating-factor, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_trendforce_cowos-l-mainstream-through-2028, 2026-10-02_microrel_tudelft-google-3dic-fa-hardware, 2026-10-13_hbm-share-of-accelerator-cost, 2026-10-13_samsung-hbm-33pct-hcb-vs-mrmuf, 2026-10-13_mordor-market-9011b-2031]
 related:
   - wiki/entities/sk-hynix.md
@@ -1742,3 +1742,20 @@ TU Delft × Google（2026-07-03）：PoP 中 DRAM 疊於邏輯之上造成 **EFI
   ⚠⚠⚠ **明令：本數字不得與同日入庫之「先進封裝市場 2026 年 $57.46B」（Mordor）相除或相減** —— 兩者量測對象完全不同，數值相近純屬巧合。
 
 來源：[[sources/2026-10-13_hbm-share-of-accelerator-cost]]、[[sources/2026-10-13_samsung-hbm-33pct-hcb-vs-mrmuf]]、[[sources/2026-10-13_mordor-market-9011b-2031]]
+
+---
+
+## 2026-10-15 更新 / Update
+
+### ⭐⭐⭐ 產能換算警語：die 級產出線性換算成 package 級會**高估**
+
+《Stacking-factor-integrated production planning for 3D-Stacked HBM manufacturing》（Frontiers in Materials, 2026-10-13，Sun Moon University 單一作者）主張：既有生產規劃模型**以線性方式處理多層堆疊換算，因而高估封裝級產能**；其框架為 4／8／12／16 層各設一個**堆疊係數 S_j**，並修正 turn-around-time 邏輯。
+
+- ⚠⚠ **可信度界定**：經營學系單一作者、**純模擬案例**（6 個月、3 條線、14 種配置、CPLEX），其 **554,163 顆為模型輸出，不得引為任何廠商產能**。可引用者僅方法論主張。
+- ➜ 📌 **本 wiki 既載之 wpm／層數／產能數字，若被直接相除換算成套數，依本文會系統性高估**；引用時加註。
+- ➜ ⭐ **與「16-Hi 對賭」連動（可檢驗假設，非結論）**：若高層數的 S_j 懲罰顯著，Samsung 稱 16-Hi「沒有必要」除技術難度外**另有產能經濟的解釋路徑**。
+- ⚠ 各層數之 S_j 實際數值摘要未給，列下輪候選。
+見 [[sources/2026-10-15_hbm-stacking-factor-capacity-overestimation]]。
+
+### 混合接合時程的第三方旁證
+SemiAnalysis（2026-10-15）：**HBM 採用 D2W 混合接合不早於 2029，甚至可能不採用** ⇒ 與既載 SK hynix「HB 延至 HBM5（2029–2030）」同向。⚠ 分析推論，非廠商表態。

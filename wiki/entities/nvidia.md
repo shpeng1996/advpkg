@@ -3,7 +3,7 @@ title: "NVIDIA Corporation"
 category: entity
 tags: [fabless, GPU, AI-accelerator, HBM4, CoWoS, SoIC, Rubin, Feynman, NVL576, CPO, Spectrum-X, Constellation]
 created: 2026-05-03
-updated: 2026-10-11
+updated: 2026-10-15
 sources: [2026-05-24_techtimes_nvidia-computex2026-cowos, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-03-18_trendforce_nvidia-rubin-feynman-soic, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-06_trendforce_google-tpu-cautious-adoption-nvidia, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-06-01_trendforce_nvidia-vera-rubin-tsmc-20pct-revenue, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-19_techtimes_vera-rubin-hbm4-suppliers, 2026-06-14_digitaltrends_tsmc-copos-glass-temporary-carrier, 2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b, 2026-07-27_trendforce_presscenter_cpo-switches-nvidia-broadcom-coupe, 2026-10-02_trendforce_nvidia-glass-substrate-2028-taiwan, 2026-10-02_trendforce_cowos-l-mainstream-through-2028]
 related:
   - wiki/entities/tsmc.md
@@ -288,3 +288,14 @@ NVIDIA GPU 出貨 **2026 年 +~30% YoY**；**CoWoS-L 預期維持主流至 2028*
 ⚠ 片數為**年量**，既載「2026 年底 13 萬 wpm」為**月產能**，**量綱不同，不得互推**。
 
 *Sources: [[sources/2026-10-11_nvidia-glass-pressure-18000mm2-schmid-tgv]]、[[sources/2026-10-11_custom-ai-asic-xdsip-package-area-mm2]]*
+
+---
+
+## 2026-10-15 更新 / Update — Optics-on-Interposer 與 DWDM（SEMICON West 2026）
+
+- **OOI（研究階段，已有原型）**：光引擎置於**承載運算晶片的中介層**上而非封裝基板上；**把有機基板移出電氣路徑**，訊號改走中介層短距細節距互連（**布局類似 GPU–HBM**）。宣稱提高頻寬密度、降低功耗，**無任何數值**。
+- **DWDM（研究階段）**：已展示 **8 波長 × 32 Gb/s = 單纖 256 Gb/s**。
+- 量產品定位重申：**Quantum-X Photonics**（socket／InfiniBand／GB300 NVL72）、**Spectrum-X Photonics**（焊接／乙太／Vera Rubin）。
+- NVIDIA 自列量產關卡：**測試、光纖對準、溫控、散熱** ⇒ 與 TSMC「雷射、光纖、測試」（2026-10-13）為**第二個獨立來源**。
+- 發表人：首席研究員 Nikola Nedovic，2026-10-13，舊金山。
+見 [[sources/2026-10-15_nvidia-optics-on-interposer-dwdm]]。

@@ -3,7 +3,7 @@ title: "先進封裝的測試、量測與失效分析 / Test, Metrology & Failur
 category: concept
 tags: [test, metrology, inspection, failure-analysis, KGD, KGI, KGP, DFA, yield]
 created: 2026-09-17
-updated: 2026-10-13
+updated: 2026-10-15
 sources: [2026-09-27_paper_binghamton-ibm-pad-scaling-resistance-variability, 2026-09-27_paper_purdue-ru-cu-em-lifetime-blacks-n-0154, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2025-01-14_semieng_known-good-interposer-screening, 2025-07-10_semieng_advanced-packaging-reshaping-inspection, 2024-11-12_semieng_packaging-drives-test-metrology-innovation, 2026-08-01_jfap_3dic-failure-analysis-dfa, 2026-07-06_apl_lensless-through-silicon-phase-imaging, 2026-09-06_ndte_hysan-sparse-view-xct-tsv, 2026-08-02_chips_cpo-wafer-level-probe-card, 2026-08-27_samsung_us20260256000a1-interposer-test-pad, 2026-08-13_jcet_us20260239928a1-hybrid-bonding-substack-test, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-06-28_hyperframe_amat-hybrid-bonding-hedge, 2026-09-26_paper_ibm-amine-post-cmp-clean, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-10-02_microrel_tudelft-google-3dic-fa-hardware, 2026-10-02_imaps-dpc2026_gelpak-universal-carriers-singulated-die, 2026-10-06_openalex_gatech-terahertz-nde-8layer-interposer, 2026-10-06_openalex_tongji-wafer-embedded-pitch-standard-pose-correction, 2026-10-06_thelec_sec-xray-tsv-tgv-inspection-1um, 2026-10-07_semieng_kelvin-resistance-probe-access-pitch-limit, 2026-10-07_openalex_amkor-kelly-three-interposer-routes, 2026-10-07_epo_besi-deformable-die-forming-bond-tool, 2026-10-08_silverbrook-known-good-site-substrate-test, 2026-10-08_ase-probing-needle-scrub-length, 2026-10-08_formfactor-45um-probe-pitch-good-enough-die, 2026-10-08_advantest-singulated-die-test-thermal, 2026-10-09_tsmc-cantilever-probe-card-patent, 2026-10-09_tsmc-impedance-control-probing-patent, 2026-10-09_intel-voltage-contrast-backside-patent, 2026-10-09_ieie-probe-card-mlc-signal-integrity, 2026-10-09_hdin-probe-card-market-pin-count, 2026-10-09_quantware-qpu-measurement-stage-patent, 2026-10-13_microbump-as-radiator-and-the-stand-in-problem, 2026-10-13_cpo-bottleneck-test-800x-area-mismatch, 2026-10-13_onto-cmp-second-independent-source, 2026-10-13_amkor-cavity-as-allocated-volume]
 related:
   - wiki/technologies/hybrid-bonding.md
@@ -1402,3 +1402,30 @@ HDIN 稱探針卡**客戶認證週期 12–24 個月**。既載 HBM4E 混合接�
 - ⇒ 📌 **以主題片語檢索會系統性漏掉 OSAT 的布局；OSAT 必須以 `pa=` 檢索。** 與既載規範（44）（記憶體堆疊落在 G11C 而非 H10W）、（48）同向，但本條的成因不在**分類**而在**申請人的命名策略。**
 
 來源：[[sources/2026-10-13_microbump-as-radiator-and-the-stand-in-problem]]、[[sources/2026-10-13_cpo-bottleneck-test-800x-area-mismatch]]、[[sources/2026-10-13_onto-cmp-second-independent-source]]、[[sources/2026-10-13_amkor-cavity-as-allocated-volume]]
+
+---
+
+## 2026-10-15 更新 / Update
+
+### ⭐⭐⭐ 「標準缺位 ⇒ 私有方法先行」——本 wiki 首次成對觀察到
+
+同日入庫的兩份來源構成一組：
+
+| 側 | 來源 | 內容 |
+|----|------|------|
+| 學界 | Cu–Cu 熱機耦合 Critical Review（IJAMT 2026-09-09，含 Intel 檳城作者） | 明列缺口：**微縮節距下 Cu–介電界面缺乏標準化的混合模式斷裂能** |
+| 設備商 | EVG **CN121890310A**（2026-04-17 公開，IPC **G01N19/04 黏著強度試驗**） | 把「插入分離工具並相對扭轉、依分離反應連續評判接合品質」寫成排他權 |
+
+➜ 📌 **觀察模式：當學界宣告某項量測缺乏標準時，應立即檢索設備商在該量測上的專利布局。**
+➜ ⚠ EVG 本法為**破壞性**試驗，不可與線上非破壞製程控制（如 Onto）混為一談。
+
+### 量測在接合流程中的兩端布局
+EVG 同期另有 **US20260227176A1**（位移圖：接合前量兩片、接合後量複合、以模型回推並調參）⇒ **接合前的幾何預測 ＋ 接合後的品質判定「兩端夾擊」**，接合製程本身反而不是該輪布局重心。
+
+### 顆粒量級的兩個不一致數字（待釐清）
+| 來源 | 1 µm 顆粒造成的失效範圍 |
+|------|------------------------|
+| UCLA YAP+ 全文（arXiv:2511.05506） | void **數百 µm**，tail 可達**數 mm** |
+| SemiAnalysis（2026-10-15） | **約 10 mm 無法接合** |
+
+兩者皆未給量測條件（顆粒材質、位置、接合壓力）⇒ 並列記錄，不取其一。另 **YAP+ 給出 HB 無塵室顆粒密度基準 0.1 顆/cm²**（本 wiki 首見）。

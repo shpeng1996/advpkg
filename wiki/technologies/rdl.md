@@ -3,7 +3,7 @@ title: "RDL — 重分佈層 / Redistribution Layer"
 category: technology
 tags: [RDL, SAP, dual-damascene, embedded-trace, ETR, polyimide, FPIM, CMP, electromigration, panel-level, pad-less-via]
 created: 2026-09-26
-updated: 2026-10-13
+updated: 2026-10-15
 sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2026-09-27_paper_purdue-ru-cu-em-lifetime-blacks-n-0154, 2026-09-27_paper_copper-interconnect-scaling-roadmap-lines-per-mm, 2026-09-26_article_taiyo-imec-700nm-damascene-rdl, 2026-09-26_article_imec-1um-damascene-rdl-2019-anchor, 2026-09-26_article_amkor-embedded-trace-rdl, 2026-09-26_paper_asi-1um-hdbu-substrate, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-25_paper_dnp-glass-rdl-electromigration-lifetime, 2026-09-25_paper_cornell-glass-on-glass-sio2-rdl, 2026-09-25_paper_asu-molded-core-substrate-warpage, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_shanghai-xianfeng-cn122622683a-glass-interposer-bridge, 2026-10-02_imaps-dpc2026_defect-free-coplanar-copper-via-fill, 2026-10-06_epo_intel-mold-extension-package-to-package-topside-bridge, 2026-10-06_openalex_gatech-terahertz-nde-8layer-interposer, 2026-10-07_epo_amkor-bspdn-oriented-package-embedded-ipd, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-07_openalex_amkor-kelly-three-interposer-routes, 2026-10-08_rdl-free-glass-interposer-trench, 2026-10-08_pku-embedded-glass-fanout-roughness, 2026-10-08_samsung-stacked-rdl-package-bspdn-layer, 2026-10-09_keti-tgv-defect-spectrum-plugging-review, 2026-10-13_additive-patterning-and-metal-density-as-warpage-knob]
 related:
   - wiki/technologies/foplp.md
@@ -701,3 +701,10 @@ Scrona 明文把「嚴格的基板平坦度要求」指認為**傳統微影路�
 - ⚠ 本件為「受 FOWLP 材料啟發之示範件（substrate-process demonstrator）」，**不是量產 FOWLP 製程**；元件域為 mmWave 通訊。
 
 來源：[[sources/2026-10-13_additive-patterning-and-metal-density-as-warpage-knob]]
+
+---
+
+## 2026-10-15 更新 / Update
+
+- ⭐⭐ **玻璃核上的 Cu RDL 分為兩條架構**（direct-on-glass vs polymer build-up），各自的限制清單互不重疊；並附方法論警告「最小線寬 ≠ 設計規則」。見 [[sources/2026-10-15_glass-core-cu-rdl-review-feature-size-caveat]]。
+- ⭐⭐ **噴墨列印（SUSS MicroTec, IMAPS DPC 2026）**：主張旋塗／噴塗已逼近物理與經濟極限，噴墨可成形**光阻、介電層、雷射解離層與暫時接合膠**，且**免曝光顯影即可圖案化** ⇒ 「免光罩」路線的第三個落點，且首次落在**材料塗佈**而非圖案化。⚠ 設備商自述、零數值。見 [[sources/2026-10-15_suss-inkjet-additive-packaging]]。

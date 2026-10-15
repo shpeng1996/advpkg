@@ -907,3 +907,16 @@
 2026-10-14 | https://doi.org/10.1088/2515-7647/aeb3de | raw/papers/2026-10-14_openalex_ncu-vcsel-zn-diffusion-100fjbit-035vpp-cpo.md | NCU VCSEL: 100 fJ/bit, Vpp 0.35V, 32Gb/s at 125C
 2026-10-14 | https://doi.org/10.1364/oe.606834 | raw/papers/2026-10-14_openalex_ncu-asih-hipims-70c-low-thermal-budget-photonic.md | NCU: 70C a-Si:H HiPIMS, Q~1e5, low thermal budget
 2026-10-14 | https://arxiv.org/abs/2511.05506 | raw/papers/2026-10-14_arxiv_yapplus-pad-layout-aware-hybrid-bonding-yield-model.md | UCLA YAP+: hybrid bonding yield model, 5 mechanisms
+2026-10-15 | EPO:85122171:US20260227176A1 | raw/patents/2026-10-15_US20260227176A1_evg-displacement-map-simulated-bond-distortion.md | EVG: displacement map, simulated bond distortion
+2026-10-15 | EPO:88143849:CN121890310A | raw/patents/2026-10-15_CN121890310A_evg-bond-quality-blade-twist-destructive-test.md | EVG: bond quality by blade insert + twist (G01N19/04)
+2026-10-15 | EPO:101212143:DE112013007864B4 | raw/patents/2026-10-15_DE112013007864B4_evg-sub1nm-protective-layer-dissolved-during-bonding.md | EVG: <1nm protective layer dissolved during bonding
+2026-10-15 | EPO:57129884:TW202614417A | raw/patents/2026-10-15_TW202614417A_amkor-slim-high-routing-density-patch-tsv-free.md | Amkor SLIM patch: TSV-free, <=10um thick
+2026-10-15 | EPO:100807805:US20260240050A1 | raw/patents/2026-10-15_US20260240050A1_amkor-interconnect-module-lateral-seed-layer.md | Amkor: interconnect module, seed layer on lateral side
+2026-10-15 | https://arxiv.org/pdf/2511.05506 | raw/papers/2026-10-15_arxiv_yapplus-FULLTEXT-no-sensitivity-ranking-redundancy-thresholds.md | YAP+ FULLTEXT: no sensitivity ranking; 0.1 particle/cm2
+2026-10-15 | https://doi.org/10.1016/j.mssp.2026.111280 | raw/papers/2026-10-15_openalex_glass-core-cu-rdl-review-feature-size-not-design-rule.md | Glass-core Cu RDL review: feature size != design rule
+2026-10-15 | https://doi.org/10.1007/s00170-026-19077-3 | raw/papers/2026-10-15_openalex_cucu-review-real-contact-fraction-three-gaps-intel.md | Cu-Cu review (Intel PG): real contact fraction, 3 gaps
+2026-10-15 | https://doi.org/10.3389/fmats.2026.1926885 | raw/papers/2026-10-15_openalex_hbm-stacking-factor-capacity-overestimation-planning.md | HBM stacking factor: linear conversion overestimates
+2026-10-15 | https://doi.org/10.4071/001c.167508 | raw/papers/2026-10-15_openalex_suss-inkjet-printing-maskless-additive-advanced-packaging.md | SUSS inkjet: resists/dielectrics/release layers additive
+2026-10-15 | https://thelec.net/news/articleView.html?idxno=14603 | raw/articles/2026-10-15_thelec_nvidia-optics-on-interposer-dwdm-256gbps-fiber.md | NVIDIA optics-on-interposer; DWDM 8x32Gb/s = 256Gb/s
+2026-10-15 | https://newsletter.semianalysis.com/p/asml-is-building-a-hybrid-bonding | raw/articles/2026-10-15_semianalysis_asml-d2w-hybrid-bonding-track-tool-50nm-placement.md | ASML D2W HB track tool: 10um track vs 50nm placement
+2026-10-15 | https://corporate.celestica.com/news-releases/news-release-details/celestica-introduces-ds6005-data-center-switch-co-packaged | raw/articles/2026-10-15_celestica_ds6005-cpo-switch-1024t-field-replaceable-lasers.md | Celestica DS6005: 102.4T CPO, field-replaceable lasers

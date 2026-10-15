@@ -3,7 +3,7 @@ title: "共封裝光學元件 / Co-Packaged Optics (CPO) — TSMC-COUPE™ & Eco
 category: technology
 tags: [CPO, co-packaged-optics, COUPE, TSMC, GlobalFoundries, Samsung, photonics, AI, HPC, networking, OCI-MSA, DWDM, Broadcom, NVIDIA, glass-substrate, ULCVD, TGV, Spectrum-X, NVL72]
 created: 2026-04-25
-updated: 2026-10-14
+updated: 2026-10-15
 sources: [2026-09-27_globalfoundries_siph-cpo-bandwidth-density-coupling-budget, 2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-27_paper_copper-interconnect-scaling-roadmap-lines-per-mm, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-05-07_trendforce_globalfoundries-silicon-photonics-scale-cpo, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-03-17_coherent_cpo-ofc2026-demo, 2026-06-07_digitimes_jcet-3d-packaging-cpo-plant, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_edn_cpo-technology-status-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-06-24_thelec_corning-glass-bridge-cpo, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-14_trendforce_umc-silith-silicon-photonics-hvm, 2026-07-14_trendforce_huawei-baidu-npo-msa, 2026-07-27_trendforce_presscenter_cpo-switches-nvidia-broadcom-coupe, 2026-06-03_3dincites_intel-foundry-emib-cpo-glass-ectc2026, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-07-31_ase_cn224583735u-photoelectric-hybrid-rdl, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-09-26_report_dupont-ttm-polymer-waveguide-reliability, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_bitschips_besi-q1-2026-hybrid-bonding-orders, 2026-10-07_openalex_mit-cpo-vs-pluggable-switch-power-calibration, 2026-10-07_skhynix_cpo-nature-electronics-100tbps-1pjbit-10ns, 2026-10-09_semiwiki-tsmc-oip-2026-verification, 2026-10-13_cpo-bottleneck-test-800x-area-mismatch]
 related:
   - wiki/technologies/rdl.md
@@ -1477,3 +1477,31 @@ HiPIMS 於 **70 °C** 沉積 a-Si:H：n ≈ 3.52、帶隙 ≈ 1.96 eV、波導�
 
 - **本輪 OPS 以 `ti,ab="co-packaged optics" or ti,ab="photonic engine"` 檢索，全庫僅 2 件命中**（其一 TSMC CN122260581A 已收錄；另一為 TSMC US2023384543A1「光引擎散熱之熱電致冷器」，pd 2023-11-30，**早於 12 個月窗故未收**）。
 - ⇒ 📌 **這是一個關於檢索方法而非技術的發現**：CPO 的排他權布局**不使用「co-packaged optics」作為標題／摘要用語**。既載 CPO 專利（TSMC、Intel、ASE、Corning、Samsung）均由其他檢索式（申請人、玻璃、橋）帶出。➜ **下輪起 CPO 專利軌改以 CPC 分類（G02B6/42 系列）或申請人檢索，`ti,ab="co-packaged optics"` 應自輪替清單移除。** 此為繼 2026-10-13「封裝層安全性」之後，**第二個被實測判定為不適用的檢索式**。
+
+---
+
+## 2026-10-15 更新 / Update
+
+### ⭐⭐⭐ NVIDIA：Optics-on-Interposer（OOI）—— 「光引擎放在哪一層」首次成為被提出的架構變數
+
+SEMICON West 2026（2026-10-13，舊金山），NVIDIA 首席研究員 Nikola Nedovic（經 THE ELEC 2026-10-15 報導）：
+
+- **把光引擎放到承載運算晶片的中介層上，而非封裝基板上**；訊號改走中介層的短距細節距互連，**布局類似 GPU–HBM**。宣稱**把有機基板移出電氣路徑**可提高頻寬密度、降低功耗。**已有原型。**
+- **DWDM：已展示 8 波長 × 32 Gb/s＝單纖 256 Gb/s。**
+- ⚠ **兩者皆明示為研究階段，無商用時程、無 pJ/bit、無對準容差、無熱預算。**
+- 量產品對照：**Quantum-X Photonics**（socket 安裝、InfiniBand、GB300 NVL72）／**Spectrum-X Photonics**（焊接、乙太、Vera Rubin）。
+- 生態系點名：TSMC COUPE＋SPIL；Coherent／Lumentum／住友電工（外部雷射）；Corning／Senko／Browave／TFC（光纖）；鴻海／Fabrinet（散熱與最終測試）。Nedovic 稱量產需要「一整個生態系」，涵蓋**測試、光纖對準、溫控、散熱**。
+
+➜ ⭐⭐ **與既載 TSMC「CPO 瓶頸在雷射、光纖、測試」（2026-10-13）構成第二個獨立來源，且兩者指向同一組關卡。**
+➜ ⭐⭐ OOI 與本 wiki「橋的維度」系列屬同一運動——**把高密度互連往更靠近矽的那一層推**，差別在這次推的是光。
+➜ ⚠ 若 OOI 成行，既載以「基板上的光引擎」為前提的熱與可靠度討論須重新界定適用範圍（研究階段，暫不改寫既有論述）。
+見 [[sources/2026-10-15_nvidia-optics-on-interposer-dwdm]]。
+
+### ⭐⭐ Celestica DS6005：外部雷射模組「可現場更換」（OCP 2026，一手新聞稿）
+
+- **102.4 Tbps／64 × 1.6TbE**，交換 ASIC 為 **Broadcom Tomahawk 6 – Davisson**，光引擎整合於 ASIC 封裝、取消前面板可插拔光模組。
+- ⭐⭐ **"field-replaceable external laser modules"** —— 既載對外部雷射的理由皆為降熱／良率；本件加上**壽命與可維修性**，等於把 CPO 壽命最短元件的風險自「封裝問題」轉為「現場維運問題」。
+- **1.5OU、OCP ORv3、全液冷**；具 CPO-aware 軟體管理（SONiC）。
+- ⚠⚠ **功耗、延遲、reach、供貨日期全部未給** ➜ 再次印證既載「CPO 的 pJ/bit 屬**領域級未解**」：連產品新聞稿都不給數字。
+- ⚠ 二手報導稱 TH6-Davisson 光引擎基於 TSMC COUPE，**新聞稿未述**，不得引為一手佐證。
+見 [[sources/2026-10-15_celestica-ds6005-cpo-field-replaceable-lasers]]。

@@ -3,7 +3,7 @@ title: "ASML"
 category: entity
 tags: [equipment, lithography, EUV, hybrid-bonding, DUV, RDL, advanced-packaging, W2W, maglev]
 created: 2026-05-03
-updated: 2026-10-10
+updated: 2026-10-15
 sources: [2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2026-01-23_trendforce_chip-tools-tel-asml, 2026-04-23_trendforce_tsmc-roadmap-a12-a13-no-high-na-euv, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers]
 related:
   - wiki/technologies/hybrid-bonding.md
@@ -187,3 +187,20 @@ ASML 在 ECTC 2026 發表具體 D2W 混合接合製程解決方案（Paper 31.2�
 ➜ **新增空缺**：⭐⭐⭐ ASML 進入混合接合的任何**一手**確認與時程；以及 **W2W 或 D2W**。
 
 **本輪新增來源**：[[sources/2026-10-10_asml-besi-hybrid-bonder-share-numbers]]
+
+---
+
+## 2026-10-15 更新 / Update — 混合接合機：軌道式 D2W 架構（SemiAnalysis 推論報導）
+
+⚠ **ASML 未發表任何混合接合產品**；以下為 SemiAnalysis（2026-10-15，付費牆前段）依 **27 個接合專利家族（2022-12～2024-11，多數 D2W）**、The Elec 3 月報導與 ASML 路線圖所作之推論。
+
+- **預期先推 D2W 機**；W2W 機可能建在 **TWINSCAN** 平台上。
+- **架構（錨定專利 WO2025201788A1）**：每顆 die 置於獨立載具沿軌道移動，依序通過**檢測／清洗／電漿活化／形貌量測／調平／對準**各站，最後由夾盤抬起下方晶圓完成接合（推測使用 SuperTrak CONVEYANCE）。
+- ⭐⭐⭐ **軌道重複性 ~10 µm vs 接合所需貼放精度 ~50 nm（相差 200 倍）**，最終貼放由載具與夾盤負責 ⇒ 業界把搬運與貼放當**兩個獨立精度預算**（正中限制鏈 ③b）。
+- 每顆 die 帶**繞射光柵**，以散射光讀位置（推測沿用 **ORION** 對準感測）。
+- 架構效益在**站點稼動率與「加站即加產能」**，而非單機節拍。
+- 供應鏈：**Prodrive Technologies、VDL ETG** 參與架構設計 ⇒ ⭐ **Prodrive 第二次出現於本 wiki**（既載 Hanwha Semitech 與 Prodrive 結盟）。
+- 既載對照：ASML 於 ECTC 2026 Paper 31.2 曾發表 D2W overlay <80 nm（模擬驗證）。
+- ⚠ 市占、價格、時程、機種名稱全部未知。
+
+見 [[sources/2026-10-15_asml-d2w-hybrid-bonding-track-tool-placement-vs-transport]]。

@@ -3,7 +3,7 @@ title: "FOPLP — 扇出面板級封裝 / Fan-Out Panel-Level Packaging"
 category: technology
 tags: [fan-out, panel-level, TSMC, Samsung, ASE, Powertech, Innolux, CoPoS, InFO, cost-reduction, delamination, DCB, CTE]
 created: 2026-05-03
-updated: 2026-10-14
+updated: 2026-10-15
 sources: [2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-07-31_trendforce_ase-capex-record-10-5b-leap-foplp, 2025-09-12_trendforce_foplp-competitive-2025, 2026-04-13_trendforce_copos-pilot, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-21_3dincites_acm-wlp-plp-process-trends, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-15_digitimes_manz-310mm-foplp-ecd-equipment, 2026-06-13_digitimes_linkotech-foplp-rollout-traction, 2026-06-20_prnewswire_manz-asia-310mm-ecd, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_digitimes_tsmc-foplp-timeline-skepticism, 2026-07-06_trendforce_cfmee-plp2000-china-first-plp, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-08-06_siliconbox_500m-units-panel-scale, 2026-02-18_siliconbox_ep4697377a1-fanout-panel-metal-sealing-ring, 2026-07-28_xianfeng_cn122476946a-alignment-mark-protection, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage, 2026-10-06_thelec_sec-xray-tsv-tgv-inspection-1um, 2026-10-07_epo_evg-zonewise-adaptive-litho-die-shift, 2026-10-07_epo_evg-inorganic-dual-release-layer-common-solvent, 2026-10-08_pku-embedded-glass-fanout-roughness, 2026-10-13_additive-patterning-and-metal-density-as-warpage-knob, 2026-10-13_beiyi-sic-low-buckling-sintering, 2026-10-13_large-area-sintering-three-challenges]
 related:
   - wiki/technologies/rdl.md
@@ -1206,3 +1206,11 @@ Lam 的先進封裝簡報明列其製程設備支援範圍為「**300 mm 至 600
 - ⇒ 同時提醒：Lam 既載的「~100×100 mm 後晶圓失去效率」與其設備支援到 600 mm 並不矛盾——前者談**何時該改用面板**，後者談**面板能做多大**。📌 既載空缺「Lam 的 ~100×100 mm 與 CoWoS 14× 光罩路線為何看似矛盾」**不因本件結清**，但可排除「Lam 不支援大面板」這個解釋。
 
 來源：[[sources/2026-10-14_lam-cpo-equipment-bottlenecks-turbocell]]
+
+---
+
+## 2026-10-15 更新 / Update
+
+- ⭐⭐ **「封裝已跨越步進機的多個曝光場」取得設備商側的獨立表述**（SUSS MicroTec, IMAPS DPC 2026），與既載 CoWoS 光罩倍數（14×）、Lam「~100×100 mm 後晶圓失去效率」同屬一組壓力的第三種表現。
+- 其噴墨路線把**雷射解離層與暫時接合膠**列為可列印材料 ⇒ 與既載「真正的瓶頸在被視為輔助步驟的那一步」（ERS debonding、Lam TurboCell）交會，但方向不同：前者改設備與成本，本件改**材料施加方式**。⚠ 零數值、設備商自述。
+見 [[sources/2026-10-15_suss-inkjet-additive-packaging]]。
