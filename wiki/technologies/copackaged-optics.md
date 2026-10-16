@@ -3,7 +3,7 @@ title: "共封裝光學元件 / Co-Packaged Optics (CPO) — TSMC-COUPE™ & Eco
 category: technology
 tags: [CPO, co-packaged-optics, COUPE, TSMC, GlobalFoundries, Samsung, photonics, AI, HPC, networking, OCI-MSA, DWDM, Broadcom, NVIDIA, glass-substrate, ULCVD, TGV, Spectrum-X, NVL72]
 created: 2026-04-25
-updated: 2026-10-15
+updated: 2026-10-16
 sources: [2026-09-27_globalfoundries_siph-cpo-bandwidth-density-coupling-budget, 2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-27_paper_copper-interconnect-scaling-roadmap-lines-per-mm, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-05-07_trendforce_globalfoundries-silicon-photonics-scale-cpo, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-03-17_coherent_cpo-ofc2026-demo, 2026-06-07_digitimes_jcet-3d-packaging-cpo-plant, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_edn_cpo-technology-status-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-06-24_thelec_corning-glass-bridge-cpo, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-14_trendforce_umc-silith-silicon-photonics-hvm, 2026-07-14_trendforce_huawei-baidu-npo-msa, 2026-07-27_trendforce_presscenter_cpo-switches-nvidia-broadcom-coupe, 2026-06-03_3dincites_intel-foundry-emib-cpo-glass-ectc2026, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-07-31_ase_cn224583735u-photoelectric-hybrid-rdl, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-09-26_report_dupont-ttm-polymer-waveguide-reliability, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_bitschips_besi-q1-2026-hybrid-bonding-orders, 2026-10-07_openalex_mit-cpo-vs-pluggable-switch-power-calibration, 2026-10-07_skhynix_cpo-nature-electronics-100tbps-1pjbit-10ns, 2026-10-09_semiwiki-tsmc-oip-2026-verification, 2026-10-13_cpo-bottleneck-test-800x-area-mismatch]
 related:
   - wiki/technologies/rdl.md
@@ -1505,3 +1505,54 @@ SEMICON West 2026（2026-10-13，舊金山），NVIDIA 首席研究員 Nikola Ne
 - ⚠⚠ **功耗、延遲、reach、供貨日期全部未給** ➜ 再次印證既載「CPO 的 pJ/bit 屬**領域級未解**」：連產品新聞稿都不給數字。
 - ⚠ 二手報導稱 TH6-Davisson 光引擎基於 TSMC COUPE，**新聞稿未述**，不得引為一手佐證。
 見 [[sources/2026-10-15_celestica-ds6005-cpo-field-replaceable-lasers]]。
+
+## 2026-10-16 新增：封裝層級的第一個功耗分項、光學對準容差的第三個數據點、OOI 的熱保留
+
+### 功耗 / Power
+
+- ⭐⭐⭐ **取得第一個「封裝層級」的 CPO 功耗分項：模組級 TEC = 1.2 W**
+  （16 通道矽光子發射模組，NCHU × NKUST，imec 製晶片，2026-09-17）。
+  ⚠⚠ **不得據以結清 pJ/bit 空缺**：TEC 為**溫控單項**，不含驅動、調變、串列化與光源。
+  （若以 16 × 106.25 Gb/s = 1.7 Tb/s 歸一，單 TEC 即 ≈0.7 pJ/bit —— ⚠ **此為本 wiki 之換算，
+  論文未作此換算，不得引為論文結論。**）
+- 📌 **空缺改寫**：「CPO 的 pJ/bit 仍為領域級未解；現有分項為
+  **元件級 100 fJ/bit**（NCU VCSEL，2026-10-14）與**子系統級 TEC 1.2 W**（本輪）；**缺的是端到端**。」
+
+### 對準容差 / Alignment tolerance（規範 51 強化）
+
+| 側 | 耦合方式 | 數值 | 來源 |
+|----|---------|------|------|
+| 電性 | D2W 貼放 | **~50–100 nm** | Kinex／SemiAnalysis |
+| 光學 | 超穎表面 | **±0.6 µm 水平／±1.5 µm 垂直** | NTUA，2026-10-14 |
+| **光學** | **光纖陣列邊緣耦合** | **≈4–6 µm（橫向）** | **本輪，NCHU×NKUST** |
+
+➜ 📌 **規範（51）強化**：引用「對準精度」除標註**光學側／電性側**外，
+**光學側還須標註耦合方式**（邊緣耦合 vs 光柵耦合 vs 超穎表面），因其容差相差約一個數量級。
+
+### ⚠ Optics-on-Interposer 的熱保留（2026-10-16 新增）
+
+- 既載 NVIDIA OOI（2026-10-15）宣稱可降低功耗，**無任何數值**。
+- ⭐⭐⭐ 本輪取得第一個把「**高功率 ASIC 與熱敏感光引擎共用單一中介層**」當成主要設計約束處理的來源
+  （CCNU×HUST×武大×烽火，2026-07-13）：模組內熱耦合使傳統排程器失效；
+  **RC 耦合邊屬性之消融顯示移除後違規率上升超過一個數量級 ⇒ 該耦合為一階效應。**
+  ⚠⚠ **模擬／RL 論文，無任何絕對溫度、功率、熱阻或中介層幾何**；
+  熱違規率 98%→0.3%、峰值溫度 −25%、DAG 完成率 26%→100% **皆為模型輸出與相對值**。
+- ➜ ⚠⚠ **處置：本 wiki 在取得熱數據前，不得把 OOI 單向記為改善。**
+  電氣路徑縮短可降功耗，與熱密度上升**並不互斥**，兩者須並列。
+- 📌 **空缺「OOI 的熱與可靠度前提」改寫**：「共用中介層之 ASIC–光引擎熱耦合**已獲獨立確認為一階效應（模擬）**；
+  **封裝側的熱預算分配仍零資料**。追蹤方式不變。」
+- ⭐⭐ **「把問題移到別處」系列新型態：移到作業系統層。** 本件把 CPO 的熱問題移到工作負載排程，
+  為本 wiki 第一次出現**封裝熱問題的非封裝解法**。
+  ➜ 📌 **若熱問題可由排程緩解，封裝側的熱規格會被「軟化」而非被解決**；
+  引用任何 CPO 熱可靠度規格時應問：**該規格假設的是什麼工作負載？**
+
+### 電性扇出才是瓶頸（兩個獨立來源同向）
+
+- NCHU×NKUST 模組的關鍵封裝改善來自**使打線距離均勻**（255.98–1788.48 µm → ≈275.26 µm），而非光學元件。
+- Westlake×浙大（2026-10-01）作者明指可程式化光子 IC 的**高密度電性扇出**為 *"a major packaging bottleneck"*，
+  並以**上游允收關卡**把拉力自 3.18 gf 提升至 10.46 gf（**3.29×，接合參數固定**）。
+- ➜ 📌 **CPO 論述應新增一條：在這兩個案例中，封裝瓶頸落在電性互連而非光學耦合。**
+
+來源：[[sources/2026-10-16_16ch-siph-module-tec-1p2w-optical-alignment-4to6um]]、
+[[sources/2026-10-16_cpo-shared-interposer-thermal-coupling-confirmed-as-first-order]]、
+[[sources/2026-10-16_upstream-gates-beat-bonding-parameters-wire-pull-3p29x]]

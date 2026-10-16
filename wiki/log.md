@@ -4976,3 +4976,131 @@ warning: unable to unlink '.../.git/index.lock': Operation not permitted
 - 專利訊號：**本輪五件的共同方向是「把不確定性交給量測與模型，而不是交給更準的機構」。** EVG 三件——位移圖（量測＋模擬＋回調）、插刀扭轉（把界面強度變成可判定量）、<1 nm 犧牲型保護層（**氧化物處置的第五種解法，首個落在材料／界面層級**）——沒有一件試圖把機台做得更準；Amkor 兩件則把結構往「可預製模組」推（**無矽 SLIM 補片免 TSV、厚度 ≤10 µm，使「橋的免 TSV 化」擴為三來源三載體三商業模式**；互連模組以**側面種子層**作為製程指紋入請求項）。⚠ 五件**全部零量化值**。⚠⚠ **兩件涉及早年家族（EVG DE112013007864B4 可回溯 2013、Amkor family 57129884 為延續案）⇒ 立規範（54）：專利公告／授權日不等於技術提出日，不得計入本年度技術動向統計。**
 - ⚠ **作業面補記（2026-10-16 回寫）**：本輪 ingest 全部完成後、執行 git 前依規範 53 實測刪除權限 ➜ 被擋 ➜ 申請權限；**權限核准當下 `remote-devices` 連線中斷（session 掛起約 22 小時），git 步驟未能在 2026-10-15 當日內完成**。2026-10-16 恢復連線後查得：**倉庫自身的 `daily_git_push.bat` 已於 2026-10-16 將本輪全部 26 個檔案提交並推送（`47fb96e`，工作樹乾淨、無殘鎖）**；惟該自動提交**一併收入了權限實測所留的 `.__deltest` 空檔**，已於 `70c26a4` 以 `git rm` 移除。
   ➜ 📌 **規範 53 補充（53a）：刪除權限實測應使用 `$HOME`（mnt 之外）而非連接資料夾內的路徑，否則被擋的探測檔會留在工作樹中，並可能被自動推送腳本收進提交。**
+
+## [2026-10-16] collect | 每日自動蒐集 — 先進封裝最新動態
+- 搜尋查詢數：新聞 **7** 組 / 專利 **8** 組（含 2 組 404 後之簡化重試）/ 論文 **3** 組（三軌全數執行且全部成功）
+- 成功抓取：**7 篇**（articles **3**, patents **1**, papers **3**, reports 0）
+- 失敗/跳過：**17 篇以上**（已收錄 **8+**、付費牆 **1**、二手轉述已收錄事實 **1**、白皮書摘要零數字 **2**、
+  早於 12 個月窗 **3**、低相關主動棄收 **2**、無摘要棄收 **5**）
+  - ⚠⚠ **本輪為去重壓力最高的一輪，且壓力集中在 Track B。** 詳見下方資料源狀態。
+  - **付費牆 1**：`bits-chips.com/article/counting-down-to-asmls-official-entry-into-hybrid-bonding`
+    （2026-03-18，René Raaijmakers）—— 正文位於 premium 付費牆後，依 spec §STEP 2.2 不收錄。
+    ⚠ 導言兩項事實已記於同刊已收錄檔之「同刊未收錄之付費牆頁」段（XT260 為中介層曝光掃描機；
+    Fouquet 對 NRC 稱有能力探索新市場但未具體說明）。
+  - **二手轉述已收錄事實 1**：`ledinside.com/news/2026/7/2026_07_29_01`（中國 Lens／BOE 玻璃基板、台灣供應鏈備戰
+    TSMC CoPoS）—— 經查為 **TrendForce 2026-07-28 同文之 LEDinside 轉載**，該文已於 2026-07-29 收錄
+    （`raw/articles/2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan.md`，登錄檔 L300）
+    ⇒ 依 §3.1.3「內容為另一篇文章的摘要轉載」跳過。
+    ⚠ **惟轉載版另含兩項既載未明記之細節，記此備查**：**CoPoS "standardized on a 310 × 310 mm panel format"**；
+    **TPK-KY 已於台灣廠投資 TGV 玻璃基板試產線**。
+  - **白皮書摘要零數字主動棄收 2**：`semiengineering.com/from-process-learning-to-production-control-...`
+    （PDF Solutions）與 `semiengineering.com/the-faast-track-enabling-advanced-packaging-...`（Onto Innovation）
+    —— ⭐ **前者即 2026-10-15 列為「下輪優先重抓」之 SERVER_ERROR 目標，本輪成功抓取 ⇒ 重抓待辦結清**；
+    但兩篇**皆僅為外部白皮書之摘要頁，全文零量化值、零方法描述**，依 §3.1.3「無具體技術／市場資訊的一般性介紹」棄收。
+    ⚠ FAaST 一篇提出「**殘餘／靜電電荷控制**」與「**面板級電荷分布圖**」，經查 **residual charge 已載於
+    [[concepts/test-metrology-packaging]]**，新增量不足以單獨立檔，記此備查。
+  - **事前檢索（規範 35/39）攔下之已收錄候選**：
+    **新聞** `semiengineering.com/finding-critical-defects-...`（Onto sponsor blog，**即 2026-10-13 刻意收錄之零量化值件**，
+    本輪重抓複核確認其確無任何數字）、`igorslab.de`（Intel 封裝組織與 EMIB-T／HBI）、
+    `tomshardware.com/.../intels-emib-t-heads-for-fab-rollout-this-year`、`newsletter.semianalysis.com/p/ectc2026`、
+    `convergedigest.com/chiplet-summit-2026-ucie-chair-...`（⚠ UCIe 3.0 之 **64 GT/s** 已載於
+    [[sources/2025-09-03_uciexpress_ucie30-spec]]，且 convergedigest 已在登錄檔）、`trendforce.com/news/2026/05/14`、
+    `trendforce.com/news/2026/05/19`（Schmid）；
+    **專利** family **101295473／92460401／98899693（Micron 三件全數已收錄）**、**95699597（Besi 載具底座工具）**；
+    **論文** `10.1016/j.mssp.2026.111252`（NYCU/ITRI Cu 突出）、`10.1016/j.apsusc.2026.168527`（KITECH 葡萄糖還原）、
+    `10.1016/j.mtla.2026.102903`（Binghamton×IBM）、`10.1007/s00170-026-19077-3`（IJAMT Cu–Cu 綜述）、
+    `10.1021/acsaelm.6c01533`（POSTECH 微波）、`10.1016/j.mssp.2026.111179`（Co/Co MD）、
+    `10.3390/mi17091065`（HBM 熱管理）、`10.1021/acs.langmuir.6c03389`（氮電漿活化）、
+    `10.1002/admt.71266`（CPO PIC 綜述）、`10.3390/mi17080920`（TGV 清洗）、
+    `10.1038/s41598-026-65922-6`（TGV 低 k 緩衝層）等。
+    ➜ ⭐ **去重機制再次壓力測試通過；OpenAlex 依日期倒序之前段幾乎全被攔下。**
+  - **無摘要棄收 5**：`10.1016/j.mssp.2026.111033`（**TGV-Cu 互連熱循環退化機制**，CAS×HIT×SIAT，cited 1）、
+    `10.1016/j.jallcom.2026.191266`（**Ru/SiO₂ 低溫熱壓混合接合**，HIT×明星大學）、
+    `10.1109/jlt.2026.3720907`（雷射結構化光學中介層，多芯光纖對矽光子，U Toronto）、
+    `10.1016/j.jssc.2026.126276`（鋇硼矽玻璃 K₂O/Na₂O 比與 CTE 可調，CETC×UESTC）、
+    `10.5104/jiep.29.376`（CPO 用透明光學膠，Namics）。
+    **五件皆以 Crossref API 再查一次，`abstract` 欄位全部為 NONE** ⇒ 依 §4.3「跳過無摘要之論文」棄收。
+    ⚠⚠ **其中兩件正中列管空缺**：TGV-Cu 件（空缺「TGV 陣列力學數值」「TGV 的失效在界面與孔緣」）；
+    Ru 件（空缺「後 Cu 互連金屬（Co／Ru）在 3D 整合與封裝界面的落點」，**且為連續第二輪因無摘要而棄收**）。
+    ➜ 📌 **建議：對這兩件改以 IMAPSource／arXiv／機構 repository 或作者頁等 ScienceDirect 以外途徑取全文，
+    若仍不可得則自「下輪優先」降級，以免再度重複檢索。**
+  - **另檢視未採（非失敗）**：**早於 12 個月窗 3** —— II-VI/Coherent **US20250244547A1**（整合化合物半導體 CPO，
+    fam 96501385，pd 2025-07-31）、**TSMC US20250172777A1**（CPO 裝置與光電模組，fam 95822192，pd 2025-05-29）、
+    清華大學 **CN118448285A**（低溫短時 C2W，fam 92316783，pd 2024-08-06）；
+    **低相關主動棄收 2** —— Besi fam 92708901（衝切裝置）、以及 **fam 96060954（導腳加工）／94768776（基板鋸切）
+    此二件已於 2026-10-12 檢得並明示未收，本輪維持該判斷**；
+    **「Hybrid Bonding Technology: Challenges and Recent Trends」（10.5104/jiep.29.340，東北大學 Tanaka／Fukushima，
+    2026-08-31）** —— 主題高度相關且作者為該領域要角，**惟 OpenAlex 與 Crossref 皆無摘要**，列下輪候選。
+- 資料源狀態：**WebSearch ACTIVE ✓** | **EPO OPS ACTIVE ✓** | **OpenAlex ACTIVE ✓**
+  - **EPO OPS**：**9 次呼叫（1 auth + 8 search），低於每輪 10 次上限。** HTTP 200 × 6、**HTTP 404「SERVER.EntityNotFound / No results」× 2**，
+    依 §ERROR HANDLING 各簡化重試一次（皆成功轉為 200）。**無 403／429／quota。**
+  - ⚠⚠⚠ **Track B 本輪只選出 1 件，這是本 wiki 開始專利軌以來最低的一輪，且原因可完整歸因：**
+    | 檢索式 | 命中 | 結果 |
+    |--------|------|------|
+    | `pa="be semiconductor industries"` | **404** | ✗ 汰除（延續規範 56） |
+    | `pa="besi netherlands"` | **62** | ✓ 變體成立；前 25 筆**全為後段組裝機構，無一件混合接合** |
+    | `ti,ab="hybrid bonding" and ti,ab="particle"` | **全庫 1 件** | 早於 12 個月窗，未收 |
+    | `ti,ab="co-packaged optics" and ti,ab="interposer"` | **404** → 簡化為 `ti,ab="co-packaged optics"` | **2 件**，兩件皆早於 12 個月窗 |
+    | `pa="micron technology" and ti,ab="package" and pd within "2026"` | **3** | **三件全數已收錄** |
+    | `pa="asml" and ti,ab="bonding"` | **5** | **全為物件夾持器／微影，無一件混合接合** |
+    | `pa="taiwan semiconductor" and ti,ab="panel" and pd within "2026"` | **404** | ✗ 汰除 |
+  - ⚠ **OpenAlex 回應 meta 明文警告**：「No API key, so this request shares one free daily budget ($0.10) with
+    everyone on your network's IP address. The mailto parameter doesn't raise this limit.」
+    ➜ **`.env` 新增 `OPENALEX_API_KEY` 之處置建議連續第三輪列管，本輪成功可能僅因當日預算未耗盡。**
+- 新增 wiki 頁面：**7 頁**（全為來源頁）——
+  `2026-10-16_asml-ceo-hybrid-bonding-exploration-beyond-2030`、`_amat-besi-first-party-die-on-panel-photonics`、
+  `_visibility-gap-unconnected-data-fourth-failure-mode`、`_upstream-gates-beat-bonding-parameters-wire-pull-3p29x`、
+  `_16ch-siph-module-tec-1p2w-optical-alignment-4to6um`、`_cpo-shared-interposer-thermal-coupling-confirmed-as-first-order`、
+  `_besi-inspection-carrier-fixture-as-noise-source`
+- 更新 wiki 頁面：**11 頁** —— [[entities/asml]]、[[entities/besi]]、[[entities/applied-materials]]、
+  [[technologies/hybrid-bonding]]、[[technologies/copackaged-optics]]、[[technologies/foplp]]、
+  [[concepts/test-metrology-packaging]]、[[concepts/thermal-management]]、[[index]]、[[overview]]、`raw/_collected_urls.txt`
+- 主要新知識：⭐⭐⭐ **挑戰者的時間尺度第一次由當事人自己講明。** ASML CEO Fouquet 對 Bits&Chips 表示已探索 3D 整合
+  **包含混合接合**、2025-11 仍在 R&D、**營收顯著影響在 "well beyond 2030"**；機台開發計畫本身 **ASML 拒評**，
+  僅 The Elec 匿名源稱在「設計整體架構」並接洽 **Prodrive／VDL ETG（磁浮晶圓載台）**。
+  ➜ **既載推論「若 ASML 成立，Besi 的 D2W 獨佔地位將改變」之時間尺度應記為「不在本十年內」**；
+  並立**規範（57）：引用二手分析對某公司「正在開發 X」之描述，必須併同標註該公司自己最近一次的公開立場，
+  且須判斷兩來源是否同源**（本案 SemiAnalysis 與 The Elec 可能同源，不得互為獨立佐證）。
+  同期對照：**AMAT 一手稿（2026-10-01）把與 Besi 的共同開發自混合接合擴大為四條**——D2W HB 平台／TCB 規模化／
+  **die-on-wafer・die-on-die・die-on-panel**／**CPO 光子互連**，Besi 並加入 **EPIC Center（$5B）**；
+  **「die-on-panel」首次出現在設備商一手文件並與 die-on-wafer 並列**。
+  ⭐⭐⭐ **「真正的瓶頸在被視為輔助步驟的那一步」第一次取得控制變因明確的量化實例。**
+  Westlake×浙大**把熱超音波接合參數全程鎖死**，僅在不可逆組裝前加兩道可重工上游允收關卡，
+  **平均拉力 3.18 gf（31.2 mN）→ 10.46 gf（102.6 mN），3.29 倍**，監控批 30/30 超過門檻 4.3 gf
+  ⇒ **接合強度主要不由接合製程決定。** 既載此論述的兩個實例（CMP 後清洗、FOPLP debonding）皆未能分離量測。
+  ⚠⚠ **升格僅限打線域；Cu–Cu 混合接合域維持「成立但未量化」。**
+  同件另立兩條規則：**第二組方法論分叉（終檢靈敏度 vs 上游可重工關卡，前者降漏檢、後者降已投入成本的報廢）**，
+  以及通用判讀規則 **「界面失效 ⇒ 界面是限制；本體失效 ⇒ 界面已非限制」**。
+  ⭐⭐⭐ **量測失效模式新增第四類：資料存在但未被連結。** SemiEng 編輯部九家受訪一文指出
+  *"test escapes may stem from unconnected existing data rather than missing measurements"*；
+  既載三類的共同前提是「問題出在某一次量測本身」，**第四類不在任何單次量測內，失效發生在它們之間**。
+  ➜ 📌 **前三類要換量具或指標，第四類要換資料架構 —— 而這不屬任何設備商的產品邊界，
+  因此成為「標準缺位 ⇒ 私有方法先行」（2026-10-15 立）的第一個反例，且反例的理由是結構性的。**
+  同篇另把既載第③類失效升格為業界用語（*"models can be statistically correct yet operationally incorrect"*），
+  並給出「全域量代理局部失效」在熱域的第一個空間尺度（**"a few millimeters"**）。
+  ⭐⭐⭐ **CPO 共用中介層之熱耦合被確認為一階效應，且第一個解法落在作業系統層。**
+  CCNU×HUST×武大×烽火以**消融實驗**顯示移除 RC 耦合邊屬性後熱違規率**上升超過一個數量級**；
+  熱違規率 ≈98%→≈0.3%、峰值溫度 −25%、DAG 完成率 ≈26%→100%（⚠⚠ **全為模擬／RL 模型輸出，零絕對熱數值**）。
+  ➜ **「把問題移到別處」新型態：移到作業系統層 —— 本 wiki 第一次出現封裝熱問題的非封裝解法**，
+  其後果是**封裝側熱規格會被「軟化」而非被解決**；⚠⚠ **取得熱數據前不得把 NVIDIA OOI 單向記為改善。**
+  ⭐⭐ **CPO 取得封裝層級第一個功耗分項（模組級 TEC 1.2 W）與光學對準容差第三個數據點（光纖陣列邊緣耦合 ≈4–6 µm）**，
+  後者使 **規範（51）強化為「光學側還須標註耦合方式」**（邊緣耦合 4–6 µm vs 超穎表面 ±0.6 µm，相差約一個數量級）；
+  同件並與 Westlake 件構成 **「電性扇出才是光子封裝瓶頸」兩個獨立來源同向**——
+  該模組的關鍵封裝改善來自**使打線距離均勻（255.98–1788.48 µm → ≈275.26 µm）而非光學元件**。
+- 專利訊號：**本輪只有一件，而「只有一件」本身就是本輪的專利訊號。**
+  唯一入庫者為 **Besi WO2026015021A1（fam 92708452）：視覺檢測載具在吸盤側面加背景結構遮蔽吸盤側壁
+  ——被遮蔽的不是待測物，而是持取機構本身**，與同日 SemiEng／Onto 側恰成對照
+  （**演算法事後分離 nuisance vs 治具事前不讓 nuisance 產生**），並使 Besi「單一工站內的多物理量化」布局
+  **新增第五環節**。⚠ 零量化值；⚠ **依規範（54）優先權 2024-07-11，不得計入 2026 年度技術動向統計**；
+  ⚠ 相關度偏低（後段組裝檢測機構），收錄理由為常駐主題而非架構內容。
+  **兩項檢索層面的負面結論更具份量**：
+  ①`pa="besi netherlands"` 62 件中前 25 筆**無一件與混合接合相關**，而 Besi 正是 D2W 混合接合市場領先者
+  ⇒ 立**規範（58）：申請人檢索命中件數不等於該公司在該技術上的布局；集團法人沿革（Besi Austria／Datacon）
+  會把同一公司的排他權拆到不同申請人字串下**，下輪須實測 `pa="besi austria"`／`pa="datacon"`。
+  ②`ti,ab="hybrid bonding" and ti,ab="particle"` **全庫僅 1 件**
+  ⇒ 📌 **列管之 ⭐⭐⭐ 空缺「1 µm 顆粒的 killer area 是數百 µm 還是 ~10 mm」在專利文獻中幾乎沒有對應布局，
+  與「標準缺位 ⇒ 私有方法先行」相反 —— 此處是問題已被指認但無人以排他權卡位，
+  可能意味該量尚未被任何一方視為可產品化的量測對象。追蹤方式應自「檢索專利」改為「公開表態與 ECTC 論文」。**
+  ③`pa="asml" and ti,ab="bonding"` 僅 5 件且全為物件夾持器／微影
+  ⇒ ⚠ **不構成「27 件家族」之反證（OPS 之 ti/ab 無法涵蓋 CPC 或其他字串布局），
+  但應記為：本 wiki 以 OPS 無法獨立複現 SemiAnalysis 之 27 件家族說。**

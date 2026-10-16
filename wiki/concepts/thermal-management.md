@@ -3,7 +3,7 @@ title: "先進封裝熱管理 / Thermal Management in Advanced Packaging"
 category: concept
 tags: [thermal-management, liquid-cooling, 3D-IC, CoWoS, heat-dissipation, TIM, ECTC-2025, GaN, power-delivery, co-design, patent-signal, delamination]
 created: 2026-04-25
-updated: 2026-10-13
+updated: 2026-10-16
 sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2025-12-01_semiengineering_thermal-management, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-02_trendforce_samsung-hbm5-computex2026, 2026-05-21_semieng_hi-roadmap-nature-paper-intel, 2026-08-13_semieng_1mw-rack-debate-thermal, 2026-04-27_semieng_semiconductor-materials-misbehave, 2026-08-21_trendforce_chip-packaging-heat-ai-bottleneck-cpo-stco, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_arxiv_umn-multi-kw-power-delivery-3d-hi, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_samsung-cn122602880a-ivr-capacitor-interposer-core, 2026-10-02_imaps-dpc2026_delo-die-side-capacitor-encapsulation, 2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage, 2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk, 2026-10-07_epo_cas-freestanding-3c-sic-interposer, 2026-10-07_openalex_diamond-d2w-direct-bonding-vdw-45mpa, 2026-10-07_openalex_lau-silicon-bridge-microbump-reliability, 2026-10-08_etron-liquid-through-substrate-cavity, 2026-10-08_micron-cryogenic-package-hea-solder, 2026-10-08_advantest-singulated-die-test-thermal, 2026-10-09_cas-2013-microchannel-interposer-ebg, 2026-10-09_bjut-thermomech-phase-field-imc-tgv, 2026-10-13_large-area-sintering-three-challenges, 2026-10-13_cu-microparticles-ductility-vs-stiffness-tradeoff, 2026-10-13_beiyi-sic-low-buckling-sintering]
 related:
   - wiki/technologies/cowos.md
@@ -1381,3 +1381,27 @@ SNU × UIUC 的 TIM 綜述明確指出：**TIM 的 bulk／effective 導熱係數
 - ⚠⚠ **零量化值**；⚠ 依規範（34）（37）**不得與既載任何熱量化軸**（熱阻降幅 %／熱通量 W/cm²／熱導率 W/m·K／界面熱阻 cm²·K·W⁻¹）**並列或相減。**
 
 來源：[[sources/2026-10-13_large-area-sintering-three-challenges]]、[[sources/2026-10-13_cu-microparticles-ductility-vs-stiffness-tradeoff]]、[[sources/2026-10-13_beiyi-sic-low-buckling-sintering]]
+
+## 2026-10-16 新增：CPO 共用中介層的熱耦合被確認為一階效應，且第一個解法在作業系統層
+
+- ⭐⭐⭐ **問題被獨立確認**（CCNU×HUST×武大×烽火，2026-07-13）：
+  「高功率 ASIC 與熱敏感光引擎**共用單一中介層**，所產生的**模組內熱耦合使傳統排程器失效**。」
+  **RC 耦合邊屬性之消融實驗顯示：移除該屬性後熱違規率上升超過一個數量級**
+  ⇒ **該耦合是必須被明確建模的一階效應，而非二階修正。**
+- 量化結果（⚠ **全為模擬／RL 模型輸出**）：熱違規率 **≈98% → ≈0.3%**（相對 HEFT 基準）；
+  熱點工作點峰值溫度**降低 ≈25%**（相對值）；DAG 完成率 **≈26% → 100%**。
+  評估資料為 **Alibaba 2021 microservice trace**。
+  ⚠⚠ **無任何絕對溫度（°C）、功率（W）、熱阻（K/W）或中介層幾何**；依規範（10）引用須註明模型性質。
+- ⭐⭐⭐ **「把問題移到別處」系列新型態：移到作業系統層。**
+  既載型態：設備端（K&S bond head 內建還原氣體埠）、材料界面（EVG <1 nm 犧牲層）、
+  現場維運（Celestica 可更換外部雷射）、設計區間（珠海天成以 TCB 規避混合接合）。
+  **本件把 CPO 的熱問題移到工作負載排程 —— 本 wiki 第一次出現封裝熱問題的非封裝解法。**
+  ➜ 📌 **推論：若熱問題可由排程緩解，封裝側的熱規格會被「軟化」而非被解決。**
+  引用任何 CPO 熱可靠度規格時應問：**該規格假設的是什麼工作負載？**
+- ⭐⭐ **「光引擎是熱敏感元件」這一前提已有三個獨立來源使用**：
+  Celestica（把壽命最短的雷射做成可現場更換，2026-10-15）、NVIDIA OOI（移上中介層，未談熱，2026-10-15）、
+  本件（第一個把「熱敏感」轉為可計算約束者）。⚠ **三者皆無元件級溫度上限數值。**
+- ⚠⚠ **對 NVIDIA OOI 之處置**：OOI 宣稱降功耗（無數值）與本件之熱耦合一階效應**並不互斥**
+  （電氣路徑縮短可降功耗，同時熱密度上升）。**本 wiki 在取得熱數據前不得把 OOI 單向記為改善。**
+
+來源：[[sources/2026-10-16_cpo-shared-interposer-thermal-coupling-confirmed-as-first-order]]

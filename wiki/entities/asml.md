@@ -3,7 +3,7 @@ title: "ASML"
 category: entity
 tags: [equipment, lithography, EUV, hybrid-bonding, DUV, RDL, advanced-packaging, W2W, maglev]
 created: 2026-05-03
-updated: 2026-10-15
+updated: 2026-10-16
 sources: [2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2026-01-23_trendforce_chip-tools-tel-asml, 2026-04-23_trendforce_tsmc-roadmap-a12-a13-no-high-na-euv, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers]
 related:
   - wiki/technologies/hybrid-bonding.md
@@ -204,3 +204,34 @@ ASML 在 ECTC 2026 發表具體 D2W 混合接合製程解決方案（Paper 31.2�
 - ⚠ 市占、價格、時程、機種名稱全部未知。
 
 見 [[sources/2026-10-15_asml-d2w-hybrid-bonding-track-tool-placement-vs-transport]]。
+
+## 2026-10-16 新增：混合接合的證據分層 —— CEO 一手表態「探索中」，機台為匿名二手
+
+> ⭐⭐⭐ 針對列管空缺「**ASML 混合接合機是否確有其事（官方確認）、機種與時程**」（2026-10-15 新增）。
+> **本輪取得第一項 CEO 層級的具名一手表態；其內容是「探索」，而非「產品」。**
+
+| 層級 | 狀態 | 證據等級 |
+|------|------|---------|
+| ASML 在做 3D 整合 | **已確認** | **CEO Fouquet 具名（一手）** |
+| 其中包含混合接合的**探索** | **已確認** | **CEO Fouquet 具名（一手）** |
+| 存在一個**機台開發計畫** | **未確認；ASML "declined to comment"** | The Elec，未具名知情人士（二手＋匿名） |
+| 機種（W2W / D2W）、精度、時程 | **零資料** | — |
+| 營收顯著影響時點 | ⭐⭐⭐ **"well beyond 2030"** | **CEO Fouquet 具名（一手）** |
+
+- **2026-03-23（Bits&Chips, Paul van Gerven）**：
+  - **Fouquet 對 Bits&Chips 表示**：已開始探索 3D 整合機會**包含混合接合**；至 **2025-11 仍在 R&D**；
+    **營收顯著影響 "well beyond 2030"**。
+  - The Elec（匿名源）：ASML 已在「設計混合接合機台的整體架構」，並接洽
+    **Prodrive Technologies** 與 **VDL ETG**（兩者為**磁浮晶圓載台**關鍵技術供應商）。
+  - **XT260**（2025-10 推出）為 ASML 在 3D 整合的第一步 —— 一台**曝光玻璃／矽／陶瓷中介層**的微影掃描機。
+- ⭐⭐ **「磁浮晶圓載台」是第一條關於「ASML 會怎麼做」的技術線索**：切入點是其既有的**載台與運動控制**能力，
+  而非接合物理或表面製備。與既載 2026-10-15 SemiAnalysis「軌道式 D2W、每 die 獨立載具循軌過站、
+  **搬運 ~10 µm vs 貼放 ~50 nm**」**方向一致**。
+  ⚠ **惟兩者可能同源（皆為 The Elec 系列報導的下游），不得互相當作獨立佐證。**
+- ⚠⚠ **引用限制（本輪新增）**：本 wiki 引用 SemiAnalysis 對 ASML 軌道式 D2W 機之描述時，
+  **必須加註「ASML 官方未確認；CEO 自述營收影響在 2030 之後很久（2026-03）」**。
+  兩來源相差約 7 個月，**不排除期間確有進展**，故記為**證據等級差異而非矛盾**。
+- 📌 **空缺改寫**：自「是否確有其事」改為「**機台開發計畫何時獲官方確認，以及 CEO 所稱『2030 之後很久』
+  與二手報導所描述之具體機台架構如何相容**」。
+
+來源：[[sources/2026-10-16_asml-ceo-hybrid-bonding-exploration-beyond-2030]]

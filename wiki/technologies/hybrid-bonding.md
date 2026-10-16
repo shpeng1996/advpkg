@@ -3,7 +3,7 @@ title: "混合接合 / Hybrid Bonding"
 category: technology
 tags: [3D, hybrid-bonding, Cu-Cu, SoIC, ECTC, advanced-packaging, DRAM, COP, 4F2, Sn-damascene, damascene-interconnect, PFAS-free, patent-signal, guard-ring, surface-activation]
 created: 2026-04-24
-updated: 2026-10-15
+updated: 2026-10-16
 sources: [2026-09-27_paper_binghamton-ibm-pad-scaling-resistance-variability, 2026-09-27_intel_us20260223702a1-direct-bonding-embedded-bridge-organic-cavity, 2026-05-21_semiecosystem_ectc2026-cpo-hybridbonding-plp, 2026-04-24_initial-survey, 2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-03-01_3dincites_besi-packaging-power-shift, 2026-01-13_semiengineering_hbm4-microbumps, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-19_semieng_advanced-packaging-limits, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-03-27_3dincites_copper-grain-hybrid-bonding, 2026-03-02_semieng_making-hybrid-bonding-better, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2026-04-29_semiwiki_cea-leti-ectc2026-hybrid-bonding, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2024-02-09_semianalysis_hybrid-bonding-process-flow, 2026-05-19_semiconductor-digest_ev-group-ectc2026-hybrid-bonding, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-04-19_semiwiki_apple-m5-cucu-hybrid-bonding-shipped, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-18_imec_iii-v-chiplet-rf-laser-bonding, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-29_evgroup_ectc2026-hybrid-bonding-layer-transfer, 2026-06-29_thelec_skhynix-hybrid-bonding-equipment-order, 2026-06-05_semieng_intel-ectc-2026-emib-t-cpo-glass, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-14_trendforce_samsung-hbm-hiring-hybridbonding, 2026-07-16_semieng_fine-pitch-hb-high-volume, 2026-07-16_semieng_alt-materials-hybrid-bonding, 2026-06-08_irtnanoelec_d2w-hybrid-bonding-1um-pitch, 2026-05-28_imec_w2w-hybrid-bonding-200nm-pitch, 2026-09-09_acsaelm_microwave-anneal-cu-cu-150c-3min, 2026-08-21_scirep_copper-oxide-reduction-ar-h2-pulsed-plasma, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-03-29_damnang_hybrid-bonding-cmp-gating-factor, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-04-02_adeia_us20260096463a1-buildup-organic-dielectric-bonding, 2026-07-17_jcet_cn122421815a-asymmetric-bonding-interface, 2026-04-30_seoultech_us20260123559a1-hydrocarbon-plasma-low-temp-bonding, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer, 2023-09-13_nccavs_intel-cmp-dishing-requirement-vs-achieved, 2026-03-11_epo_adeia-cmp-for-hybrid-bonding-patent, 2026-09-01_chip_ru-bpr-ntsv-ion-beam-recess, 2026-02-10_epo_shanghai-univ-citric-acid-cu-reduction-sog, 2026-09-21_semiconductorx_cmp-share-lam-sabre-correction, 2026-09-16_jsandwich_cucu-diameter-nonmonotonic-local-optimum, 2026-07-21_lam_sabre-3d-is-ecd-not-cmp, 2026-09-26_paper_dalian-cucu-bonding-review, 2026-09-26_patent_beijing-xinli-hybrid-bonding-dishing-activation, 2026-09-26_paper_ibm-amine-post-cmp-clean, 2026-10-02_bitschips_besi-q1-2026-hybrid-bonding-orders, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_adeia-us20260247631a1-dual-sided-connecting-element, 2026-10-06_openalex_kuleuven-imec-n2-plasma-sin-cap-cu-oxide, 2026-10-06_openalex_n2-plasma-sio2-activation-w2w-bonding, 2026-10-06_openalex_tongji-wafer-embedded-pitch-standard-pose-correction, 2026-10-07_epo_besi-deformable-die-forming-bond-tool, 2026-10-07_openalex_diamond-d2w-direct-bonding-vdw-45mpa, 2026-10-07_openalex_cuos-alloy-interconnect-oxidation-adhesion, 2026-10-09_nycu-itri-cu-pad-protrusion-aspect-ratio, 2026-10-09_keti-tgv-defect-spectrum-plugging-review, 2026-10-09_quantware-qpu-measurement-stage-patent, 2026-10-13_atotech-cu-microstructure-queue-time, 2026-10-13_evg-bond-wave-pressure-element, 2026-10-13_samsung-hbm-33pct-hcb-vs-mrmuf, 2026-10-13_large-area-sintering-three-challenges]
 related:
   - wiki/technologies/rdl.md
@@ -2511,3 +2511,32 @@ SemiAnalysis（2026-10-15，付費牆前段；**分析推論，ASML 未發表產
 ### 本輪新增之未解問題
 - 顆粒的失效影響範圍究竟是**數百 µm 還是 ~10 mm**？兩個來源相差一個數量級，皆未給量測條件。
 - 「真實接觸比例」有無可量測的定義與典型值？（綜述未給）
+
+## 2026-10-16 新增：挑戰者的時間尺度，與在位者的加深綁定
+
+### 設備格局 / Equipment landscape
+
+- ⭐⭐⭐ **ASML：CEO 具名表態「營收顯著影響在 well beyond 2030」**（2026-03，Bits&Chips）。
+  機台開發計畫本身**官方未確認**（ASML declined to comment），僅 The Elec 匿名源稱已在「設計整體架構」，
+  並接洽 **Prodrive Technologies／VDL ETG**（磁浮晶圓載台）。
+  ➜ 📌 **本 wiki 引用 2026-10-15 SemiAnalysis 之軌道式 D2W 機描述時，須併同加註此一官方立場。**
+  詳見 [[sources/2026-10-16_asml-ceo-hybrid-bonding-exploration-beyond-2030]]、[[entities/asml]]。
+- ⭐⭐ **AMAT × Besi：2026-10-01 一手稿把共同開發範圍自混合接合擴大為四條**
+  （D2W HB 平台／TCB 規模化／die-on-wafer・die-on-die・**die-on-panel**／CPO 光子互連），
+  Besi 並以 Innovation Partner 加入 **EPIC Center（$5B）**。
+  一手稿定性 **Kinex = "the industry's first integrated die-to-wafer hybrid bonding system"**。
+  ⚠ **零技術量化值**。詳見 [[sources/2026-10-16_amat-besi-first-party-die-on-panel-photonics]]。
+- ➜ **兩件並讀的結論**：在位者（AMAT×Besi）於 2026-10 加深綁定；挑戰者（ASML）自承營收時點在 2030 之後很久。
+  **既載「Besi 的 D2W 獨佔地位將改變」此一推論，其時間尺度應記為「不在本十年內」。**
+
+### ⚠ 專利檢索結論（本輪）
+
+- `ti,ab="hybrid bonding" and ti,ab="particle"` 於 **EPO OPS 全庫僅命中 1 件**
+  （CN118448285A，清華大學／北京北集芯，2024-08-06，低溫短時 C2W，金屬奈米顆粒層；⚠ 早於 12 個月窗，未收）。
+  ➜ 📌 **列管之 ⭐⭐⭐ 空缺「1 µm 顆粒的失效影響範圍是數百 µm 還是 ~10 mm」在專利文獻中幾乎沒有對應布局。**
+  **追蹤方式應自「檢索專利」改為「設備商／IDM 的公開表態與 ECTC 論文」**——
+  此與既載觀察模式「標準缺位 ⇒ 私有方法先行」**相反**：此處是**問題已被指認，但無人以排他權卡位**，
+  可能意味該量（killer area）**尚未被任何一方視為可產品化的量測對象**。
+- `pa="asml" and ti,ab="bonding"` 僅命中 **5 件**，**全部為物件夾持器／微影相關，無一件與混合接合有關**。
+  ⚠ **此不構成「27 件家族」之反證**（OPS 之 ti/ab 檢索無法涵蓋以 CPC 或其他字串布局之案件），
+  但應記為：**本 wiki 以 OPS 無法獨立複現 SemiAnalysis 之 27 件家族說。**

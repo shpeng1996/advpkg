@@ -3,7 +3,7 @@ title: "先進封裝的測試、量測與失效分析 / Test, Metrology & Failur
 category: concept
 tags: [test, metrology, inspection, failure-analysis, KGD, KGI, KGP, DFA, yield]
 created: 2026-09-17
-updated: 2026-10-15
+updated: 2026-10-16
 sources: [2026-09-27_paper_binghamton-ibm-pad-scaling-resistance-variability, 2026-09-27_paper_purdue-ru-cu-em-lifetime-blacks-n-0154, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2025-01-14_semieng_known-good-interposer-screening, 2025-07-10_semieng_advanced-packaging-reshaping-inspection, 2024-11-12_semieng_packaging-drives-test-metrology-innovation, 2026-08-01_jfap_3dic-failure-analysis-dfa, 2026-07-06_apl_lensless-through-silicon-phase-imaging, 2026-09-06_ndte_hysan-sparse-view-xct-tsv, 2026-08-02_chips_cpo-wafer-level-probe-card, 2026-08-27_samsung_us20260256000a1-interposer-test-pad, 2026-08-13_jcet_us20260239928a1-hybrid-bonding-substack-test, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-06-28_hyperframe_amat-hybrid-bonding-hedge, 2026-09-26_paper_ibm-amine-post-cmp-clean, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-10-02_microrel_tudelft-google-3dic-fa-hardware, 2026-10-02_imaps-dpc2026_gelpak-universal-carriers-singulated-die, 2026-10-06_openalex_gatech-terahertz-nde-8layer-interposer, 2026-10-06_openalex_tongji-wafer-embedded-pitch-standard-pose-correction, 2026-10-06_thelec_sec-xray-tsv-tgv-inspection-1um, 2026-10-07_semieng_kelvin-resistance-probe-access-pitch-limit, 2026-10-07_openalex_amkor-kelly-three-interposer-routes, 2026-10-07_epo_besi-deformable-die-forming-bond-tool, 2026-10-08_silverbrook-known-good-site-substrate-test, 2026-10-08_ase-probing-needle-scrub-length, 2026-10-08_formfactor-45um-probe-pitch-good-enough-die, 2026-10-08_advantest-singulated-die-test-thermal, 2026-10-09_tsmc-cantilever-probe-card-patent, 2026-10-09_tsmc-impedance-control-probing-patent, 2026-10-09_intel-voltage-contrast-backside-patent, 2026-10-09_ieie-probe-card-mlc-signal-integrity, 2026-10-09_hdin-probe-card-market-pin-count, 2026-10-09_quantware-qpu-measurement-stage-patent, 2026-10-13_microbump-as-radiator-and-the-stand-in-problem, 2026-10-13_cpo-bottleneck-test-800x-area-mismatch, 2026-10-13_onto-cmp-second-independent-source, 2026-10-13_amkor-cavity-as-allocated-volume]
 related:
   - wiki/technologies/hybrid-bonding.md
@@ -1429,3 +1429,74 @@ EVG 同期另有 **US20260227176A1**（位移圖：接合前量兩片、接合�
 | SemiAnalysis（2026-10-15） | **約 10 mm 無法接合** |
 
 兩者皆未給量測條件（顆粒材質、位置、接合壓力）⇒ 並列記錄，不取其一。另 **YAP+ 給出 HB 無塵室顆粒密度基準 0.1 顆/cm²**（本 wiki 首見）。
+
+## 2026-10-16 新增：量測失效模式第四類，與「上游關卡 vs 終檢靈敏度」的方法論分叉
+
+### ⭐⭐⭐ 量測失效模式新增第四類：**資料存在，但未被連結**
+
+既載三類（2026-09-21 立）：
+①**精度不足**型　②**完全脫鉤**型　③**規格漂亮但答錯問題**型。
+**三者的共同前提是「問題出在某一次量測本身」。**
+
+**第四類不在任何單次量測內**：每一項量測各自有效，**失效發生在它們之間**。
+出處：SemiEng 編輯部〈Closing The Visibility Gap〉（2026-10-08，九家受訪）——
+*"test escapes may stem from unconnected existing data rather than missing measurements"*。
+
+➜ 📌 **第四類的處置方式與前三類在性質上不同**：前三類要**換量具或換指標**，
+**第四類要換的是資料架構**，而這不屬於任何一家設備商的產品邊界。
+➜ 📌 **這解釋了為何既載觀察模式「標準缺位 ⇒ 私有方法先行」（2026-10-15 立）在此處不成立**：
+跨廠商資料連結**無法由單一廠商以排他權卡位，故沒有任何一家會先行**。
+
+### ⭐⭐ 「模型在統計上正確、在操作上錯誤」
+
+同篇提出 *"models can be statistically correct yet operationally incorrect"*。
+➜ 這是既載**第③類失效的一般化表述**，且由業界（Synopsys／Siemens EDA 側）而非本 wiki 提出
+⇒ **第③類自本 wiki 之歸納升格為業界共識用語。**
+
+### ⭐⭐ 全域代理量的空間有效範圍（熱域版本）
+
+- proteanTecs：傳統熱感測器置於**晶片邊緣**，熱點卻可能在多處。
+- Siemens EDA：單點溫度讀值可能說明不了 **"a few millimeters away"** 的狀況。
+➜ 與既載「**翹曲與局部應力錯位 ⇒ 兩者必須並列量測**」（2026-09-21，USM×Intel）
+**為同一結構的熱域版本：全域代理量與局部真值在空間尺度上脫鉤。**
+➜ 📌 **推廣為通則：凡以全域量代理局部失效者，皆須標註空間有效範圍。**
+本輪給出熱域的第一個粗略尺度：**"a few millimeters"**。
+
+### ⭐ 資料量本身是第二道瓶頸
+
+ZEISS：暴力式高解析 X-ray 掃描產生 **"gigabytes ... or terabytes worth of data in some cases"**。
+➜ 與第四類失效**互為因果**：資料愈多，愈不可能被連結。
+➜ X-ray 的三方取捨為**功率 × 吞吐量 × 解析度**（Nordson）。
+
+### ⭐⭐⭐ 方法論分叉（第二組）：終檢靈敏度 vs 上游可重工關卡
+
+| 路線 | 代表 | 經濟學 |
+|------|------|--------|
+| **提高終端檢測靈敏度** | Onto（Dragonfly G5、多角度照明）、PDF Solutions —— **兩篇皆白皮書摘要、零數字，本輪棄收** | 降低**漏檢** |
+| **在不可逆步驟前設可重工關卡** | Westlake×浙大（2026-10-01）：**接合參數固定不變**，僅加兩道上游允收關卡（AlCu 圖案保真度／殘留金屬清除／鈍化開窗完整性／銲墊曝露），**平均拉力 3.18 gf → 10.46 gf，3.29×**，30/30 超過門檻 4.3 gf | 降低**已投入成本的報廢** |
+
+⚠ **上游關卡一例之統計限制**：每路線各一批、每批 30 次拉力測試；作者自述為**批次特定之製程—響應關聯**，
+**非 wafer-to-wafer／lot-to-lot 再現性證據**（依規範（1）已標註無重複性）。
+⚠ 該例為 **Au 線熱超音波接合**，**不得外推至 Cu–Cu 混合接合**。
+
+➜ 📌 可與既載「對準問題的三條解法」並列，記為本 wiki 的**第二組方法論分叉**。
+
+### ⭐⭐ 「失效模式自界面移至本體」是一條可攜判據
+
+同一例中，主導失效自 **bond-pad 界面分離** 移至 **wire-neck／wire-body 斷裂**。
+本 wiki 此前僅在 TGV／玻璃討論中用過此判據（失效在界面與孔緣，不在材料本體）。
+➜ 📌 **立為通用判讀規則：界面失效 ⇒ 界面是限制；本體失效 ⇒ 界面已非限制。**
+
+### 專利訊號 / Patent Signals（2026-10-16 新增）
+
+- **Besi WO2026015021A1（family 92708452，公開 2026-01-15，⚠ 優先權 2024-07-11）**：
+  視覺檢測載具在**吸盤側面**加背景結構遮蔽吸盤側壁 —— **被遮蔽的是持取機構，不是待測物**。
+  ⇒ ⭐⭐ **與上述「終檢靈敏度」路線恰成機構側的對照**：
+  Onto 側是**把 nuisance 自 yield-relevant defect 事後分離**（演算法）；
+  本件是**在機構上先不讓 nuisance 產生**（治具）。
+  **同一問題的兩條解法第一次同日入庫。**
+  ⚠ 「nuisance detection」為本 wiki 詮釋，專利摘要未使用；⚠ 零量化值。
+
+來源：[[sources/2026-10-16_visibility-gap-unconnected-data-fourth-failure-mode]]、
+[[sources/2026-10-16_upstream-gates-beat-bonding-parameters-wire-pull-3p29x]]、
+[[sources/2026-10-16_besi-inspection-carrier-fixture-as-noise-source]]

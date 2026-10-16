@@ -3,7 +3,7 @@ title: "Besi (BE Semiconductor Industries) — 混合接合設備領導廠商"
 category: entity
 tags: [equipment, hybrid-bonding, die-attach, D2W, TCB, Netherlands]
 created: 2026-04-25
-updated: 2026-10-12
+updated: 2026-10-16
 sources: [2026-09-27_semieng_chip-week-156-india-tata-besi-izmo, 2026-03-01_3dincites_besi-packaging-power-shift, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-03-29_damnang_hybrid-bonding-cmp-gating-factor, 2026-10-02_bitschips_besi-q1-2026-hybrid-bonding-orders, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-07_epo_besi-deformable-die-forming-bond-tool]
 related:
   - wiki/entities/ev-group.md
@@ -305,3 +305,44 @@ Bits&Chips（2026-04-23，作者 Paul van Gerven）：
 - ⚠ **本輪另檢得但未收之 Besi 件**（僅記存在）：WO2026197903A1（family 96060954，導腳加工裝置底座）、WO2026101399A1（family 94768776，帶電子元件之基板鋸切）、WO2026088107A1（family 97723233，封閉系統）、TW202605523A（family 95821563，元件定位）。
 
 來源：[[sources/2026-10-12_besi-alignment-mark-area-as-a-cost]]
+
+## 2026-10-16 新增：一手稿確認合作範圍；檢索式變體實測；工站量化布局第五環節
+
+### 合作面
+
+- **2026-10-01（一手）**：Applied Materials 新聞稿確認 Besi 以 **Innovation Partner** 加入 **EPIC Center**，
+  共同開發範圍自混合接合擴大為四條，**其中包含 die-on-panel**。詳見
+  [[sources/2026-10-16_amat-besi-first-party-die-on-panel-photonics]]。
+  ➜ ⭐⭐ **在位者於 2026-10 加深綁定**；同期 ASML CEO 自述混合接合「營收影響在 2030 之後很久」
+  （[[sources/2026-10-16_asml-ceo-hybrid-bonding-exploration-beyond-2030]]）
+  ⇒ **既載「若 ASML 成立，Besi 的 D2W 獨佔地位將改變」此一推論，其時間尺度應記為「不在本十年內」。**
+
+### ⚠ 檢索式實測（延續規範 52／56）
+
+- **2026-10-16 結清 2026-10-15 列下之待辦**：
+  | 申請人字串 | 2026 年公開案命中 | 判定 |
+  |-----------|------------------|------|
+  | `pa="be semiconductor"` | 0（既載 2026-10-15） | ✗ 汰除 |
+  | `pa="be semiconductor industries"` | **HTTP 404 / No results** | ✗ 汰除 |
+  | **`pa="besi netherlands"`** | **62 件（全庫）** | ✓ **採用此變體** |
+- ⚠⚠ **但本輪產生一個比檢索式更重要的觀察**：`pa="besi netherlands"` 之 62 件中，
+  前 25 筆（依相關度）**全部為後段組裝機構**——模封、鋸切、導腳成形、衝切、視覺檢測、搬運、
+  夾持、脫模布、柱塞——**沒有任何一件與混合接合相關**。
+  ➜ 📌 **Besi 的混合接合排他權不在 "Besi Netherlands" 名下。** 既載 Besi 專利（WO2026182734A1 焊料表面張力、
+  WO2026192456A1 定心銷、DE102025103085A1 接合工具、TW202605321A 干涉式對位）**多為 DE／TW 公開**，
+  與 Besi Austria／Datacon 之歷史沿革一致。
+  **下輪應改以 `pa="besi austria"`、`pa="datacon"` 實測，並與既載四件之申請人字串逐一比對。**
+
+### 專利訊號 / Patent Signals（2026-10-16 新增）
+
+- **WO2026015021A1（family 92708452，公開 2026-01-15，⚠ 優先權 NL2038193 = 2024-07-11）**：
+  視覺檢測載具於**吸盤側面**加上**背景結構**遮蔽吸盤側壁。
+  ⇒ **被遮蔽的不是待測物，而是持取機構本身** —— 處置的是量測系統的背景，而非元件缺陷。
+  ⇒ 📌 **「單一工站內的多物理量化」布局型態新增第五環節（檢測工站的光學背景）**，
+  五件橫跨接合後品質／定心／工具幾何／對準讀取／檢測背景，**全部落在工站自身的可控性**。
+  ⚠ **零量化值**；⚠ **依規範（54）其技術提出時點為 2024-07，不得計入 2026 年度技術動向統計**；
+  ⚠ 相關度偏低（後段組裝檢測機構，無先進封裝架構內容）。
+  來源：[[sources/2026-10-16_besi-inspection-carrier-fixture-as-noise-source]]
+- ⚠ **本輪另檢得但維持未收之 Besi 2026 年件**：family 96060954（導腳加工裝置底座）、
+  94768776（基板鋸切）—— **此二件已於 2026-10-12 檢得並明示未收，本輪維持該判斷**；
+  新檢得 92708901（衝切裝置）、95699597（載具底座工具，**已收錄**）。

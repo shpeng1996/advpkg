@@ -3,7 +3,7 @@ title: "FOPLP — 扇出面板級封裝 / Fan-Out Panel-Level Packaging"
 category: technology
 tags: [fan-out, panel-level, TSMC, Samsung, ASE, Powertech, Innolux, CoPoS, InFO, cost-reduction, delamination, DCB, CTE]
 created: 2026-05-03
-updated: 2026-10-15
+updated: 2026-10-16
 sources: [2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-07-31_trendforce_ase-capex-record-10-5b-leap-foplp, 2025-09-12_trendforce_foplp-competitive-2025, 2026-04-13_trendforce_copos-pilot, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-21_3dincites_acm-wlp-plp-process-trends, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-15_digitimes_manz-310mm-foplp-ecd-equipment, 2026-06-13_digitimes_linkotech-foplp-rollout-traction, 2026-06-20_prnewswire_manz-asia-310mm-ecd, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_digitimes_tsmc-foplp-timeline-skepticism, 2026-07-06_trendforce_cfmee-plp2000-china-first-plp, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-08-06_siliconbox_500m-units-panel-scale, 2026-02-18_siliconbox_ep4697377a1-fanout-panel-metal-sealing-ring, 2026-07-28_xianfeng_cn122476946a-alignment-mark-protection, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage, 2026-10-06_thelec_sec-xray-tsv-tgv-inspection-1um, 2026-10-07_epo_evg-zonewise-adaptive-litho-die-shift, 2026-10-07_epo_evg-inorganic-dual-release-layer-common-solvent, 2026-10-08_pku-embedded-glass-fanout-roughness, 2026-10-13_additive-patterning-and-metal-density-as-warpage-knob, 2026-10-13_beiyi-sic-low-buckling-sintering, 2026-10-13_large-area-sintering-three-challenges]
 related:
   - wiki/technologies/rdl.md
@@ -1214,3 +1214,19 @@ Lam 的先進封裝簡報明列其製程設備支援範圍為「**300 mm 至 600
 - ⭐⭐ **「封裝已跨越步進機的多個曝光場」取得設備商側的獨立表述**（SUSS MicroTec, IMAPS DPC 2026），與既載 CoWoS 光罩倍數（14×）、Lam「~100×100 mm 後晶圓失去效率」同屬一組壓力的第三種表現。
 - 其噴墨路線把**雷射解離層與暫時接合膠**列為可列印材料 ⇒ 與既載「真正的瓶頸在被視為輔助步驟的那一步」（ERS debonding、Lam TurboCell）交會，但方向不同：前者改設備與成本，本件改**材料施加方式**。⚠ 零數值、設備商自述。
 見 [[sources/2026-10-15_suss-inkjet-additive-packaging]]。
+
+## 2026-10-16 新增：「die-on-panel」首次出現在設備商一手文件
+
+- **2026-10-01（Applied Materials 一手新聞稿）**：AMAT × Besi 擴大共同開發，
+  其預期 R&D 清單中把 **die-on-panel** 與 **die-on-wafer、die-on-die 並列為同一代整合平台家族**。
+- ⭐⭐⭐ **意義**：本 wiki 既載之面板論述幾乎全部來自 OSAT（Powertech PiFO、ASE）、
+  面板廠（Innolux／AUO）與市場分析（TrendForce、Yole、Lau、Lujan）。
+  **貼片設備雙強把「面板」直接寫進與 D2W 混合接合同一份共同開發清單**，
+  意味面板不再只是載體尺寸議題，而被當成**貼片平台的一個變體**處理。
+- 📌 **對既載「面板同時承擔吞吐與良率兩項劣勢」構成一個來自設備側的對照立場**：
+  若吞吐劣勢主要來自 pick-and-place 節拍（Lau：**5.3×**、成型設備閒置 **94%**），
+  則貼片設備商把面板納入平台開發，**正是針對該瓶頸本身**。
+  ⚠⚠ **一手稿完全未提及吞吐量**，故**此為本 wiki 之推論，不得記為廠商主張**；
+  既載之吞吐與良率劣勢數字**不因本件而改動**。
+
+來源：[[sources/2026-10-16_amat-besi-first-party-die-on-panel-photonics]]

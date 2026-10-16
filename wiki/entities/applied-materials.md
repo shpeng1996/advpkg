@@ -3,7 +3,7 @@ title: "Applied Materials（應用材料）"
 category: entity
 tags: [equipment, ECD, PECVD, TSV, HBM, die-thinning, hybrid-bonding, USA]
 created: 2026-09-17
-updated: 2026-10-11
+updated: 2026-10-16
 sources: [2026-08-18_appliedmaterials_hbm-packaging-bottleneck-toolset, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-06-28_hyperframe_amat-hybrid-bonding-hedge, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_epo_xiamen-anjieli-cn121335557a-silane-parylene-tgv]
 related:
   - wiki/technologies/tsv.md
@@ -341,3 +341,25 @@ Poulomi Mukherjee（Applied Materials Germany）：FE 模擬識別 **① 種子�
 ➜ ⚠ **既載 AMAT 其餘持股關係**（Besi 9%、TEL Eteris 合資、收購 ASMPT NEXX）此前已記，本輪新增 Absolics 一項 ⇒ **AMAT 在本 wiki 中是股權關係最密集的實體，凡以 AMAT 為來源的論述皆須先查該清單。**
 
 *Source: [[sources/2026-10-11_absolics-phase2-72000m2-amat-stake]]*
+
+## 2026-10-16 新增：與 Besi 的共同開發範圍自混合接合擴大至四條（一手稿）
+
+- **2026-10-01**：Applied 一手新聞稿宣布 **Besi 以 Innovation Partner 身分加入 EPIC Center**，
+  並把始於 **2020** 的聯合開發計畫**擴展至新互連架構**。新聞稿逐項列出四條預期 R&D：
+  | # | 範圍 |
+  |---|------|
+  | ① | 新的 **die-to-wafer 混合接合平台**（建立於 Singapore Center of Excellence） |
+  | ② | **TCB 的規模化**及其製程生態系 |
+  | ③ | **die-on-wafer / die-on-die / die-on-panel 整合平台** |
+  | ④ | **用於 CPO 的光子致能互連** |
+- **EPIC Center 資本支出 $5 billion**（原文："scale over time to approximately $5 billion as customer projects commence"）；
+  **2026 年內 "operationally ready"**。
+- 一手稿**僅具名 Kinex 一項產品**，並稱其為 **"the industry's first integrated die-to-wafer hybrid bonding system"**。
+  ⚠ **Insepra、Opta、Catalyst 在本文件中均未出現**（既載該三者之對應關係來自 2026-09-22 官網複核，仍有效）。
+- ⭐⭐ **Prabu Raja（半導體產品事業群總裁）**：
+  *"Advanced packaging is no longer a back-end assembly step – it is a materials engineering challenge."*
+  ➜ 既載「邊界外擴」論述之型態①（設備商向材料／相鄰製程擴張）**自本 wiki 的外部歸納升格為當事人自述**。
+- ⚠⚠ **一手稿零技術量化值**：無貼放／套刻精度、無吞吐量、無節距目標、無客戶驗證狀態、無各計畫時程。
+
+來源：[[sources/2026-10-16_amat-besi-first-party-die-on-panel-photonics]]
+（⚠ 既載二手版本 [[sources/2026-10-04_thelec_amat-besi-epic-center-dop]] 中超出上述範圍之細節，引用時應標註為二手增補）
