@@ -5104,3 +5104,34 @@ warning: unable to unlink '.../.git/index.lock': Operation not permitted
   ③`pa="asml" and ti,ab="bonding"` 僅 5 件且全為物件夾持器／微影
   ⇒ ⚠ **不構成「27 件家族」之反證（OPS 之 ti/ab 無法涵蓋 CPC 或其他字串布局），
   但應記為：本 wiki 以 OPS 無法獨立複現 SemiAnalysis 之 27 件家族說。**
+- ✅ **git commit：本輪已完成（由倉庫自身的 `daily_git_push.bat` 執行）。**
+  - **提交：`ac2e754`「2026-10-17」，26 個檔案，+1,469 / −13 行**
+    （7 raw ＋ 7 新 wiki 來源頁 ＋ 10 更新 wiki 頁〔含 `index.md`／`overview.md`／`log.md`〕＋ `raw/_collected_urls.txt` 的 7 行追加）。
+    ⚠ **commit message 日期為 2026-10-17 而非本輪之 2026-10-16**，原因見下方作業面事件。
+    事後 `git status --porcelain` 為 **0 行（乾淨）**，且 `main` 與 `origin/main` **同步（已 push，非僅 ahead）**。
+  - ⚠⚠ **作業面事件：`remote-devices` 連線於「刪除權限核准當下」中斷，與 2026-10-15 完全相同的失敗點（連續第二次）。**
+    本輪全部蒐集與 ingest 皆已於中斷前落地於磁碟（7 raw ＋ 7 新頁 ＋ 10 更新頁），**僅 git 步驟未及執行**；
+    連線恢復時已跨日（2026-10-17），查得 `daily_git_push.bat` 已於其排程時點把全部 26 個檔案提交並推送。
+    ➜ 📌 **建議（對 `schedule.md` 之 ERROR HANDLING）：在「申請刪除權限」與「執行 git」之間插入一次連線健康檢查，
+    或更根本地——把 git 步驟移到 ingest 完成後立刻執行、刪除權限僅在實際遭阻時才申請，
+    以縮短「權限申請 → git」這段連續兩輪都在此斷線的視窗。**
+  - ✅ ⭐ **規範（53a）首次實測成立。** 本輪刪除權限探測改置於 **`.git/.__deltest`**（位於 mnt 之內以真正測到權限，
+    但在 git 永不追蹤的 `.git/` 下）➜ 探測被擋時檔案留在 `.git/` 內，
+    **未進入工作樹、未被 `daily_git_push.bat` 收進提交**（已以 `git log --name-only` 複核：`ac2e754` 內無任何 deltest 檔）。
+    對照 2026-10-15 之教訓（探測檔留在工作樹並被自動推送腳本收進提交，須以 `70c26a4` 事後 `git rm`）➜ **問題未再發生。**
+    連線恢復後已確認刪除權限仍有效（`DELETE_OK`），並已移除該探測檔。
+  - ⚠ **git 鎖檔與暫存物件（依規範 45，本輪僅能取得單點量測，因 `git add -A` 由外部腳本執行）**：
+    連線恢復後量得 `tmp_obj_*` **715**（2026-10-13 為 695，**淨增 +20**）、`stale-*.lock-*` **17**、`.git/` 內 lock 檔 **49**。
+  - ⚠⚠ **既載待辦「Windows 側 `git gc --prune=now`」維持且更形必要**（`tmp_obj_*` 已達 715，為歷輪最高）。
+  - ⚠⚠⚠ **`origin` remote URL 內嵌明文 GitHub personal access token 之問題本輪未複查（連線中斷所致），
+    依既載自 2026-10-07 起之列管狀態推定仍然存在。建議維持最高優先且仍待人工處置**：
+    ①在 GitHub 撤銷並重新產生該 token；②改用 credential helper 或 SSH key；
+    ③`git remote set-url origin https://github.com/shpeng1996/advpkg.git`。**本流程不代為變更憑證設定。**
+- ⚠⚠ **去重登錄檔健康檢查（spec §3.4 檢查項）**：
+  - `raw/_collected_urls.txt` 開場 **922 行** → 收場 **929 行**（+7，**刪除 0 行，append-only 成立**）。
+  - **本輪 7 個識別碼各出現且僅出現一次**（已逐筆 `grep -c` 驗證）；**7 條登錄所指之 raw 路徑全部存在**（已逐筆 `test -f` 驗證）。
+  - ⚠ **既載之真重複一筆仍未處置**（DOI `10.1016/j.jsamd.2026.101155` 於 L574／L640 各登錄一次並指向兩個不同 raw 檔）
+    —— 依 spec §QUALITY RULES，collect 輪次不得修改既存行 ⇒ **維持列管，待人工或專屬 lint 輪次處置。**
+  - ✓ **檔案計數交叉驗證**：`wiki/sources` = **898**、`entities` = **49**、`technologies` = 17、`concepts` = 6、
+    `analyses` = 5、根目錄 3 ⇒ **總計 978，與 index.md 所載一致。**
+  - ✓ **憑證外洩掃描**：以 `.env` 三個變數之實際值對 `wiki/` 與 `raw/` 全文 `grep -F`，**三者皆 CLEAN**（全程未輸出任何值）。
