@@ -3,7 +3,7 @@ title: "TSV — Through-Silicon Via / 矽穿孔"
 category: technology
 tags: [TSV, HBM, interposer, 3D-IC, CoWoS, manufacturing, backside-power, advanced-packaging, radiation, redundancy, reliability]
 created: 2026-08-10
-updated: 2026-10-12
+updated: 2026-10-19
 sources: [2026-09-27_wuhanuniv_cn121548325a-tgv-micro-nano-anchor-molecular-bridging, 2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-27_semieng_chip-week-156-india-tata-besi-izmo, 2026-04-22_semieng_tsv-complexity-manufacturing-bottleneck, 2026-08-21_semieng_chip-week-152, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-08-21_scirep_copper-oxide-reduction-ar-h2-pulsed-plasma, 2026-06-08_irtnanoelec_d2w-hybrid-bonding-1um-pitch, 2026-03-13_kaneka_jp2026047137a-glass-core-polyimide-quantified, 2026-08-10_screp_low-k-organic-buffer-tgv-cu-metallization, 2026-08-04_jmrt_vacuum-assisted-void-free-cu-fill-tgv, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring, 2026-09-26_patent_zhuhai-tiancheng-dual-depth-tsv-silicon-bridge, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_patent_er-eng-glass-interposer-dual-carrier, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth, 2026-10-02_epo_semco-cn122054433a-glass-surface-roughness, 2026-10-02_trendforce_intel-microled-glass-24-layer, 2026-10-02_imaps-dpc2026_defect-free-coplanar-copper-via-fill, 2026-10-02_microrel_tudelft-google-3dic-fa-hardware, 2026-10-06_epo_microchip-polysic-ceramic-interposer-mandrel-vias, 2026-10-06_openalex_auburn-nife-tsv-magnetic-shield-package, 2026-10-06_thelec_sec-xray-tsv-tgv-inspection-1um, 2026-10-07_epo_cas-freestanding-3c-sic-interposer, 2026-10-07_openalex_cuos-alloy-interconnect-oxidation-adhesion, 2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk, 2026-10-08_rdl-free-glass-interposer-trench, 2026-10-08_uestc-tapered-tgv-skin-current, 2026-10-09_cas-2013-microchannel-interposer-ebg, 2026-10-09_nycu-itri-cu-pad-protrusion-aspect-ratio]
 related:
   - wiki/technologies/hbm4.md
@@ -912,3 +912,26 @@ TU Delft × Google（2026-07-03）：以 **~210 µm interposer pin pitch** 的 D
 - 📌 既載「**免 TSV 化**」四型（Intel CN122349366A 矽橋免孔／Deca Tech 模封免孔橋／SEMCO 有機橋／Etron 取消 TSV）本輪**無新增型**；本筆屬「TSV 與其他用途競爭同一表面」之議題，與免 TSV 化不同軸。
 
 來源：[[sources/2026-10-12_tsmc-die-backside-as-optical-plane]]
+
+## 2026-10-19 新增：「有無貫穿孔」被學界綜述列為中介層的第一級分類軸
+
+來源：[[sources/2026-10-19_openalex_interposer-review-silicon-glass-organic]]
+（`10.1016/j.matdes.2026.116701`, *Materials & Design*, 2026-07-31, Hanyang University）
+
+- 本篇自材料與結構兩視角比較**矽／玻璃／有機**三種中介層平台，
+  並把中介層的互連方式寫成「**細節距佈線 ＋ through-via 與 through-via-less 連接**」的組合。
+- ⭐⭐ 📌 **「橋／中介層的免 TSV 化」取得第三個、且為學界綜述層級的獨立佐證。**
+  既載兩個來源為 [[entities/deca-tech]] US20260136970A1（模封免孔橋）與 Intel CN122349366A（矽橋），
+  當時升格為成立論述。本篇把**「有無貫穿孔」當成第一級分類軸**
+  ⇒ **免孔不是個別公司的權宜設計，而是一條被學界認可的技術分類。**
+
+### 相關：CEA 把「受控厚度的 TSV 子基板」寫進請求項
+
+[[sources/2026-10-19_epo_cea-wo2026195572a1-multilevel-d2w-both-faces-planarized]]（WO2026195572A1, 2026-09-24）
+在多層 D2W 混合接合流程中限定：**至少一顆被轉移的晶粒含一個「受控厚度的基板」且其上有貫穿孔**，
+位置在功能層與第二互連層之間。
+
+📌 **厚度本身成為被請求的設計變數** —— 呼應既載 [[entities/sk-hynix]] 之 **775 µm 總高度天花板**：
+在總高受限下，**每層的厚度精度成為可交易的資源**，而非僅是製程公差。
+
+⚠ 綜述摘要**零量化值**（無節距、損耗、CTE、成本、良率）；CEA 專利亦零量化值。

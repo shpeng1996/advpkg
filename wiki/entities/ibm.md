@@ -3,7 +3,7 @@ title: "IBM Research / IBM 研究院"
 category: entity
 tags: [research, 3D-packaging, nanostack, hybrid-bonding, sub-2nm, chiplet]
 created: 2026-09-11
-updated: 2026-10-08
+updated: 2026-10-19
 sources: [2026-09-27_paper_binghamton-ibm-pad-scaling-resistance-variability, 2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-09-26_paper_ibm-amine-post-cmp-clean, 2026-10-08_ibm-w2w-bonded-deep-trench-capacitor]
 related:
   - wiki/technologies/hybrid-bonding.md
@@ -221,3 +221,26 @@ IBM 於 2025-05 公開之專利顯示：一顆晶片含**兩層元件層，由�
 ### 相關來源
 
 - [[sources/2026-10-08_ibm-w2w-bonded-deep-trench-capacitor]]
+
+## ⭐⭐⭐ 2026-10-19 新增：IBM 的 3D 記憶體布局自「效能宣稱」延伸到「供電結構」
+
+來源：[[sources/2026-10-19_epo_ibm-us20260047421a1-bspdn-to-bspdn-hybrid-bonded-memory]]
+（**US20260047421A1**, family 98698300, 公開 2026-02-12；發明人 **JOSHI RAJIV、RUBIN JOSHUA M、XIE RUILONG**）
+
+### 技術內容
+
+兩顆各帶 **BSPDN（背面供電電路網路）** 的單層記憶體晶粒，**以 BSPDN 面彼此混合接合**成 2-layer memory die；
+一側 **TSV**、另一側 **C4／錫球**，使 2-layer（或 4-layer）die 可續疊，整個堆疊置於 **interposer** 之上。
+
+### 為何重要
+
+- ⭐⭐⭐ **「混合接合的接合面是供電網路」為本 wiki 首見。**
+  既載所有混合接合案例，接合面承載的都是訊號／I-O。詳見 [[concepts/power-delivery-packaging]] 2026-10-19 條目。
+- ⭐⭐ **為列管之缺概念頁「Beyond-HBM 架構橫向比較（SPHBM4 / HBF / HBC / NVHBM / zHBM）」新增一個候選架構**：
+  BSPDN-to-BSPDN 混合接合疊記憶體，與 HBM 的 TSV＋微凸塊／MR-MUF 路線不同。
+- 與既載 IBM 條目的關係：既載 **Nanostack 3T library（+50% perf／+70% energy eff／+40% density）** 與
+  **beveled edge stacking** 皆為效能／結構宣稱；本件補上**供電結構**一面。
+  ⚠ 發明人 **XIE RUILONG** 同時出現在既載 IBM 之 US20260123509A1（混合接合結構與散熱，2026-04-30, fam 99550345）
+  ⇒ 📌 **同一發明人在「接合面散熱」與「接合面供電」兩件上出現：IBM 正把接合界面當成多物理功能的載體，而不只是互連。**
+  這與既載 [[entities/technoprobe]] 之「探針卡須自被動互連演化為整合式多物理系統」是**同一命題在不同元件上的版本。**
+- ⚠ IBM 為研究型 IDM，**不預示任何量產**；本件全篇**零量化值**（無電阻、電流密度、層數上限、節距）。

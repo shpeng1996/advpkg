@@ -3,7 +3,7 @@ title: "先進封裝的測試、量測與失效分析 / Test, Metrology & Failur
 category: concept
 tags: [test, metrology, inspection, failure-analysis, KGD, KGI, KGP, DFA, yield]
 created: 2026-09-17
-updated: 2026-10-16
+updated: 2026-10-19
 sources: [2026-09-27_paper_binghamton-ibm-pad-scaling-resistance-variability, 2026-09-27_paper_purdue-ru-cu-em-lifetime-blacks-n-0154, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2025-01-14_semieng_known-good-interposer-screening, 2025-07-10_semieng_advanced-packaging-reshaping-inspection, 2024-11-12_semieng_packaging-drives-test-metrology-innovation, 2026-08-01_jfap_3dic-failure-analysis-dfa, 2026-07-06_apl_lensless-through-silicon-phase-imaging, 2026-09-06_ndte_hysan-sparse-view-xct-tsv, 2026-08-02_chips_cpo-wafer-level-probe-card, 2026-08-27_samsung_us20260256000a1-interposer-test-pad, 2026-08-13_jcet_us20260239928a1-hybrid-bonding-substack-test, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-06-28_hyperframe_amat-hybrid-bonding-hedge, 2026-09-26_paper_ibm-amine-post-cmp-clean, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-10-02_microrel_tudelft-google-3dic-fa-hardware, 2026-10-02_imaps-dpc2026_gelpak-universal-carriers-singulated-die, 2026-10-06_openalex_gatech-terahertz-nde-8layer-interposer, 2026-10-06_openalex_tongji-wafer-embedded-pitch-standard-pose-correction, 2026-10-06_thelec_sec-xray-tsv-tgv-inspection-1um, 2026-10-07_semieng_kelvin-resistance-probe-access-pitch-limit, 2026-10-07_openalex_amkor-kelly-three-interposer-routes, 2026-10-07_epo_besi-deformable-die-forming-bond-tool, 2026-10-08_silverbrook-known-good-site-substrate-test, 2026-10-08_ase-probing-needle-scrub-length, 2026-10-08_formfactor-45um-probe-pitch-good-enough-die, 2026-10-08_advantest-singulated-die-test-thermal, 2026-10-09_tsmc-cantilever-probe-card-patent, 2026-10-09_tsmc-impedance-control-probing-patent, 2026-10-09_intel-voltage-contrast-backside-patent, 2026-10-09_ieie-probe-card-mlc-signal-integrity, 2026-10-09_hdin-probe-card-market-pin-count, 2026-10-09_quantware-qpu-measurement-stage-patent, 2026-10-13_microbump-as-radiator-and-the-stand-in-problem, 2026-10-13_cpo-bottleneck-test-800x-area-mismatch, 2026-10-13_onto-cmp-second-independent-source, 2026-10-13_amkor-cavity-as-allocated-volume]
 related:
   - wiki/technologies/hybrid-bonding.md
@@ -1500,3 +1500,52 @@ ZEISS：暴力式高解析 X-ray 掃描產生 **"gigabytes ... or terabytes wort
 來源：[[sources/2026-10-16_visibility-gap-unconnected-data-fourth-failure-mode]]、
 [[sources/2026-10-16_upstream-gates-beat-bonding-parameters-wire-pull-3p29x]]、
 [[sources/2026-10-16_besi-inspection-carrier-fixture-as-noise-source]]
+
+## 2026-10-19 新增：「標準缺位」模式取得條件式分支；清洗工具成為跨晶圓的污染源
+
+### ⭐⭐⭐ 一、「標準缺位 ⇒ 私有方法先行」此後須分兩支
+
+2026-10-15 本頁首次成對觀察到該模式。本輪一次取得兩個方向相反的實例，使其必須條件化：
+
+| 缺位的是什麼 | 先行者 | 本輪實例 |
+|---|---|---|
+| **製程／測試能力** | **廠商**（私有方法先行） | CPO 晶圓級測試標準缺位，由 **ASE（Nicole Tien）與 TSMC（Jun He）** 於 OCP 白皮書中同時具名指出 |
+| **量測口徑／定義** | **學界**（呼籲公開的最低報告要求） | FOPLP 翹曲：Kookmin Univ. 綜述呼籲建立「manufacturing-relevant warpage metrics and standards」 |
+
+📌 **立讀法：當缺位的是能力，補位的是有排他權動機的一方；當缺位的是口徑，補位的是沒有排他權動機的一方。**
+這解釋了為何本 wiki 某些「標準缺位」會迅速長出私有方法，而另一些長年停在呼籲階段。
+
+⭐ CPO 一例的份量在於：**指認測試做不到的，正是最有動機宣稱自己做得到的兩家封裝端大廠。**
+來源：[[sources/2026-10-19_techtimes_ocp-open-silicon-photonics-ai-q4-spec]]
+
+### ⭐⭐⭐ 二、量測／驗收的失效模式新增一類：工具本身是污染源，且污染跨晶圓傳遞
+
+來源：[[sources/2026-10-19_openalex_post-cmp-clean-brush-mediated-cross-contamination]]（`10.1016/j.mssp.2026.111254`, 2026-10-06）
+
+**PVAc 刷具會把前一片晶圓滯留的氧化鈰顆粒帶到下一片。**
+
+| 項目 | SC1（pH≈12） | DHF（pH≈2） |
+|---|---|---|
+| 刷具消解液 ICP-MS Ce | **0.25–1.1 ppb** | **1.3–5.4 ppb** |
+| 全晶圓顆粒映射清潔效率 | 較高 | 較低 |
+
+- ⭐⭐⭐ **失效模式自「這片沒洗乾淨」變成「這片把下一片弄髒」——
+  一個跨晶圓、時間相關的失效模式。** 本頁既有的失效模式分類（①量不到 ②量錯 ③量到替身 ④資料未被連結）
+  全部是**單片內**的問題；本件是**第一個跨片傳遞**的實例。
+  ⇒ 📌 **本頁的「量測／驗收失效模式」清單新增第五類：工具攜帶的狀態在批次間傳遞。**
+  其偵測方式與前四類不同：必須比較 fresh brush 與 loaded brush，單看某一片的缺陷圖無法識別。
+- ⚠ **本篇自身即示範了該偵測的困難**：SiN 上 fresh brush 本身就產生大量缺陷
+  ⇒ 作者自陳**無法把 SiN 缺陷歸因於交叉污染** —— 即「對照組本身有背景訊號」。
+  📌 這正是既載「代理指標誤差」通則在**對照設計**層面的版本。
+- ⚠⚠ 📌 **立規範（60）：post-CMP clean 的數據必須標註製程層（STI／BEOL／混合接合面）。**
+  本篇量的是 STI 層；漿料（ceria vs silica）與被清洗表面（TEOS／SiN vs SiCN／Cu）不同，zeta 關係即不同，
+  **數值不可跨層引用** ⇒ 列管空缺「CMP 後清洗是第二大良率槓桿」**取得第一組量化數據但不結清。**
+- ⭐ **ppb 級交叉污染為本頁首見**；可與 [[entities/absolics]] 寫入請求項的溶出雜質規格（P ≤1,500 ppb／Zn ≤500 ppb, ICP-MS）
+  **並列觀察但不得合併比較**（一為材料溶出、一為工具夾帶）。
+
+### ⭐⭐ 三、翹曲：量測口徑本身被證明是一個數量級的誤差源
+
+[[sources/2026-10-19_openalex_foplp-warpage-review-no-universal-amplification]] 明指**「翹曲定義」本身**
+是造成已發表值離散超過一個數量級的原因之一。
+➜ 📌 **規範（62）：引用任何翹曲數字必須標註 ①製程階段 ②載板在否 ③支撐條件 ④翹曲定義。**
+本頁既載「翹曲是第一個有數字證明與代理量脫鉤的實例」（2026-09-20）**取得綜述層級的支持**。

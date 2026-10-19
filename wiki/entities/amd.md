@@ -3,7 +3,7 @@ title: "超微半導體 / AMD (Advanced Micro Devices)"
 category: entity
 tags: [fabless, CPU, GPU, chiplet, Zen6, EFB, I-CubeS, Milan, EPYC, MI-series, Venice, COMPUTEX2026, MI455X, CoWoS-L, SoIC, FOPLP]
 created: 2026-05-03
-updated: 2026-10-05
+updated: 2026-10-19
 sources: [2026-03-01_semianalysis_cpus-back-datacenter-2026, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-21_trendforce_amd-lisa-su-tsmc-10b-taiwan-packaging, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-07-24_semieng_chip-week-148, 2026-10-02_epo_amd-us20260282956a1-silicon-bridge-decap, 2026-10-02_trendforce_cowos-l-mainstream-through-2028]
 related:
   - wiki/entities/tsmc.md
@@ -138,3 +138,29 @@ AMD 在 AI GPU 市場是 NVIDIA 的主要挑戰者（Instinct MI 系列），但
 ### 相關來源
 
 [[sources/2026-10-05_epo_amd-glass-interposer-cavity-bridge]]、[[sources/2026-10-05_tomshardware_ajinomoto-abf-china-cut]]
+
+## ⭐⭐⭐ 2026-10-19 新增：AMD 的排他權布局自「橋」延伸到「接合層內部」
+
+來源：[[sources/2026-10-19_epo_amd-us20260282960a1-flexible-routing-hybrid-bonding-layer]]
+（**US20260282960A1**, family 101296690, 公開 2026-09-17；發明人 **LIU HSIANG-WEI [TW]、WANG LIWEI [US]**）
+
+### 技術內容
+
+以**蝕刻停止層**，使連到混合接合層的 via **同時可終止於兩種落點**：
+①晶粒表面的 contact pad；②晶粒頂層金屬中的 **buried conductive pad（埋入式導電墊）**。
+
+分類全在 **H10W20/\***（元件內部繞線）與 H10W70/611，**無接合製程類（H10W72/9xx）**
+⇒ 本件是**設計／繞線層**布局，而非製程層。
+
+### 為何重要
+
+- ⭐⭐⭐ **本 wiki 第一件 AMD 混合接合層專利。**
+  既載 AMD 的排他權紀錄為 2026-10-02（首次以自有申請人進入**橋**的排他權層）與 2026-10-05（布局自橋內部推到橋外部）。
+  本件是**第三步，且首次落在接合層內部** ⇒ AMD 的布局軌跡已可記為：**橋內 → 橋外 → 接合層內。**
+- ⭐⭐⭐ **挑戰了「接合墊必須在同一平面」這個隱含前提**（本 wiki 全部混合接合表面規格論述所依賴者）。
+  詳見 [[technologies/hybrid-bonding]] 2026-10-19 條目。
+- ⭐⭐ **「局部高密度」系列論述新增垂直向版本**：既有各例都在平面上劃分疏密，本件在**深度**上劃分落點。
+- ⚠ 依專利訊號原則：2026-09 公開之申請案，**不得視為 AMD 已出貨能力**。
+  AMD 現行 MI 系列（MI355X／MI455X）仍為 **CoWoS-L ＋ 微凸塊**；既載 MI455X 之 8× N2 XCD 3D 混合接合為
+  XCD-on-IOD 的堆疊，與本件所述之接合層繞線結構無已知對應關係。
+- ⚠ 全篇**零量化值**（無節距、層數、深度、良率）。

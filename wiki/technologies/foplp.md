@@ -3,7 +3,7 @@ title: "FOPLP — 扇出面板級封裝 / Fan-Out Panel-Level Packaging"
 category: technology
 tags: [fan-out, panel-level, TSMC, Samsung, ASE, Powertech, Innolux, CoPoS, InFO, cost-reduction, delamination, DCB, CTE]
 created: 2026-05-03
-updated: 2026-10-16
+updated: 2026-10-19
 sources: [2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-07-31_trendforce_ase-capex-record-10-5b-leap-foplp, 2025-09-12_trendforce_foplp-competitive-2025, 2026-04-13_trendforce_copos-pilot, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-21_3dincites_acm-wlp-plp-process-trends, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-15_digitimes_manz-310mm-foplp-ecd-equipment, 2026-06-13_digitimes_linkotech-foplp-rollout-traction, 2026-06-20_prnewswire_manz-asia-310mm-ecd, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_digitimes_tsmc-foplp-timeline-skepticism, 2026-07-06_trendforce_cfmee-plp2000-china-first-plp, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-08-06_siliconbox_500m-units-panel-scale, 2026-02-18_siliconbox_ep4697377a1-fanout-panel-metal-sealing-ring, 2026-07-28_xianfeng_cn122476946a-alignment-mark-protection, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage, 2026-10-06_thelec_sec-xray-tsv-tgv-inspection-1um, 2026-10-07_epo_evg-zonewise-adaptive-litho-die-shift, 2026-10-07_epo_evg-inorganic-dual-release-layer-common-solvent, 2026-10-08_pku-embedded-glass-fanout-roughness, 2026-10-13_additive-patterning-and-metal-density-as-warpage-knob, 2026-10-13_beiyi-sic-low-buckling-sintering, 2026-10-13_large-area-sintering-three-challenges]
 related:
   - wiki/technologies/rdl.md
@@ -1230,3 +1230,54 @@ Lam 的先進封裝簡報明列其製程設備支援範圍為「**300 mm 至 600
   既載之吞吐與良率劣勢數字**不因本件而改動**。
 
 來源：[[sources/2026-10-16_amat-besi-first-party-die-on-panel-photonics]]
+
+## ⭐⭐⭐ 2026-10-19 更新：列管空缺「debonding 翹曲峰值」結清——但結論是「沒有通用放大倍率」
+
+來源：[[sources/2026-10-19_openalex_foplp-warpage-review-no-universal-amplification]]
+（`10.1016/j.mssp.2026.111298`, *Mater. Sci. Semicond. Process.*, 2026-10-17, Kookmin University）
+
+### 結清內容
+
+既載空缺（2026-09-22 立）：「FOPLP 翹曲峰值在 debonding 階段是否有第二個獨立來源」。
+
+本篇綜整 **18 項 panel/strip 級研究、9 個研究群**（另加 1 個縮尺模型），結論分兩半：
+
+1. ✅ **「載板移除顯著增加翹曲」成立，且取得多研究群佐證** —— 既載讀法升格為多來源成立。
+2. ❌ ⭐⭐⭐ **但證據不足以建立任何「跨階段放大倍率」的通用值。**
+   ➜ **既載任何把 debonding 當成固定倍率放大器的表述，必須改為定性描述。**
+
+⚠ 空缺的另一半「**承載板材料（鋼／玻璃／陶瓷）的翹曲絕對值**」**未結清**（本篇摘要未涉及）。
+
+### 關鍵數據
+
+| 項目 | 數值 |
+|---|---|
+| 已發表面板翹曲值域 | **< 1 mm 至數十 mm** |
+| 口徑差異造成的變異 | **超過 1 個數量級** |
+| 離散度的成因 | 製程階段、載板狀態、支撐條件、**翹曲的定義**、建模假設 |
+| 以面板尺寸正規化後 | 離散度收斂 |
+
+### ⭐⭐⭐ 立規範（62）：翹曲數字的四項強制標註
+
+本篇明指**「翹曲定義」本身**是造成一個數量級離散的原因之一
+➜ **引用任何翹曲數字必須同時標註：①製程階段 ②載板在否 ③支撐條件 ④翹曲定義（峰谷值／最大位移／曲率）。
+缺任一項者不得跨頁比較。**
+這是本 wiki 既載「同一名詞涵蓋多個獨立驗收項」論述目前最強的一個實例
+（此前最強者為粗糙度的 2–4 個數量級跨域落差）。
+
+### ⭐⭐⭐ 對「標準缺位 ⇒ 私有方法先行」的條件式反例
+
+本篇把「**manufacturing-relevant warpage metrics and standards**」列為研究需求，
+但呼籲的是**公開的最低報告要求**，且先行者是**學界**。
+與同輪 CPO 來源（缺位的是測試能力、先行者是 ASE／TSMC 等廠商）對照：
+
+📌 **立讀法：當缺位的是「量測口徑」時，先行者是學界；當缺位的是「製程／測試能力」時，先行者是廠商。**
+既載該模式此後須附此條件。
+
+### 方法論工具
+
+作者另提出**三個模擬可信度層級的最低報告與驗證要求**，並依「校正與驗證證據」分類既有模型
+⇒ 可直接用於判讀後續 FOPLP FEA 論文，呼應既載「成本模型社群收斂 310×310 vs 學界 FEA 仍在 600–680 mm」之社群分歧。
+
+⚠ 無 OA PDF，僅摘要；**18 項研究清單與三個可信度層級的具體內容未取得**
+➜ 📌 **列下輪取全文優先項**（依規範 39，下輪開場須先 grep `_collected_urls.txt` 確認）。

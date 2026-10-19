@@ -3,7 +3,7 @@ title: "先進封裝熱管理 / Thermal Management in Advanced Packaging"
 category: concept
 tags: [thermal-management, liquid-cooling, 3D-IC, CoWoS, heat-dissipation, TIM, ECTC-2025, GaN, power-delivery, co-design, patent-signal, delamination]
 created: 2026-04-25
-updated: 2026-10-16
+updated: 2026-10-19
 sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2025-12-01_semiengineering_thermal-management, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-02_trendforce_samsung-hbm5-computex2026, 2026-05-21_semieng_hi-roadmap-nature-paper-intel, 2026-08-13_semieng_1mw-rack-debate-thermal, 2026-04-27_semieng_semiconductor-materials-misbehave, 2026-08-21_trendforce_chip-packaging-heat-ai-bottleneck-cpo-stco, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_arxiv_umn-multi-kw-power-delivery-3d-hi, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_samsung-cn122602880a-ivr-capacitor-interposer-core, 2026-10-02_imaps-dpc2026_delo-die-side-capacitor-encapsulation, 2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage, 2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk, 2026-10-07_epo_cas-freestanding-3c-sic-interposer, 2026-10-07_openalex_diamond-d2w-direct-bonding-vdw-45mpa, 2026-10-07_openalex_lau-silicon-bridge-microbump-reliability, 2026-10-08_etron-liquid-through-substrate-cavity, 2026-10-08_micron-cryogenic-package-hea-solder, 2026-10-08_advantest-singulated-die-test-thermal, 2026-10-09_cas-2013-microchannel-interposer-ebg, 2026-10-09_bjut-thermomech-phase-field-imc-tgv, 2026-10-13_large-area-sintering-three-challenges, 2026-10-13_cu-microparticles-ductility-vs-stiffness-tradeoff, 2026-10-13_beiyi-sic-low-buckling-sintering]
 related:
   - wiki/technologies/cowos.md
@@ -1405,3 +1405,40 @@ SNU × UIUC 的 TIM 綜述明確指出：**TIM 的 bulk／effective 導熱係數
   （電氣路徑縮短可降功耗，同時熱密度上升）。**本 wiki 在取得熱數據前不得把 OOI 單向記為改善。**
 
 來源：[[sources/2026-10-16_cpo-shared-interposer-thermal-coupling-confirmed-as-first-order]]
+
+## 2026-10-19 新增：底填料的設計典範轉移——「最佳值是區間」的高維推廣
+
+來源：[[sources/2026-10-19_openalex_epoxy-underfill-review-coupled-tradeoffs]]
+（`10.3390/polym18202481`, *Polymers*, 2026-10-11, Xiamen University of Technology）
+
+### 核心內容
+
+- 先進封裝走向高密度／高功率／3D 異質整合，使**矽晶粒與基板之間的 CTE 失配與熱機械應力**成為可靠度主要壓力源；
+  環氧樹脂仍是底填料的主流基材。
+- ⭐⭐⭐ **設計典範正自「個別熱機械性質的最佳化」轉向「熱／流變／機械／可靠度四項的協調調控（coordinated regulation）」**，
+  並明列四者之間的**內在耦合與取捨**。
+- 三條技術軸：**填料工程（filler engineering）、樹脂與界面設計、固化系統調控**。
+
+### ⭐⭐⭐ 對本 wiki 核心論述的推廣
+
+既載論述「**當一個參數同時服務兩個相反的失效模式時，最佳值必然是區間而非極值**」目前有十個實例，
+**全部是「單一參數、兩個相反失效模式」。**
+
+本篇提供「**四個參數彼此耦合**」的版本，且由綜述層級明文陳述為典範轉移。
+
+📌 **立讀法：該論述的一般形式不是「最佳值是區間」，而是
+「當參數數目 >1 且彼此耦合時，不存在逐項最佳化的解」——「區間」只是雙參數情形下的特例。**
+
+⚠ 同輪另取得一個**反例**（post-CMP clean 的 SC1 vs DHF 在兩項指標上同向）
+⇒ 該論述的前提須補上：**兩個失效模式必須由相互獨立的機制驅動**；
+若由同一界面機制（如 zeta 電位符號）支配，最佳值可以是極值。
+詳見 [[technologies/hybrid-bonding]] 與 [[concepts/test-metrology-packaging]] 2026-10-19 條目。
+
+### 填補的空白
+
+底填料是本 wiki 的既有空白。材料側既有 [[entities/ajinomoto]]（ABF）、[[entities/resonac]]（切割膠帶）、
+[[entities/atotech]]（電鍍化學）與 Samsung 多孔填料 NCF 專利，**但無底填料的系統性內容**。
+本篇可作為該空白的框架素材（三軸分類）。
+
+⚠⚠ **摘要零量化值**（無 CTE、模數、黏度、填料比例、可靠度循環數）⇒ **僅能作為分類框架，不得作為規格來源。**
+⚠ 📌 列管空缺「Samsung 多孔填料 NCF 的目標產品線」**不因本篇結清**（本篇為一般性綜述，未涉及該專利）。

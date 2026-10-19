@@ -3,7 +3,7 @@ title: "CoWoS — Chip-on-Wafer-on-Substrate"
 category: technology
 tags: [2.5D, interposer, TSMC, AI, HPC, HBM, COUPE, CPO, packaging-constraints, NVIDIA]
 created: 2026-04-24
-updated: 2026-10-13
+updated: 2026-10-19
 sources: [2026-08-13_semieng_1mw-rack-debate-thermal, 2026-08-05_trendforce_tsmc-cowos-cow-outsourcing-osat, 2026-05-24_techtimes_nvidia-computex2026-cowos, 2026-04-24_initial-survey, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-15_trendforce_tsmc-vanguard-stake-sale, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-09_financialcontent_tsmc-130k-cowos-wafers, 2026-06-09_digitimes_tsmc-cowos-soic-capacity-symposium, 2026-06-15_trendforce_tsmc-cowos-gap-narrowing-130k-200k-wafers, 2026-06-10_tomshardware_tsmc-fab-expansion-roadmap-n2-cowos-soic, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_tmtpost_tsmc-cowos-capacity-targets-2026-2027, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-09-30_intel_us-advanced-packaging-reticle-8x-12x-fab9, 2026-10-02_trendforce_cowos-l-mainstream-through-2028, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_amd-us20260282956a1-silicon-bridge-decap, 2026-10-06_epo_micron-interposer-embedded-active-buffers, 2026-10-06_epo_tenstorrent-discrete-pitch-adapter-substrates, 2026-10-06_openalex_gatech-terahertz-nde-8layer-interposer, 2026-10-07_epo_cas-freestanding-3c-sic-interposer, 2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk, 2026-10-07_openalex_amkor-kelly-three-interposer-routes, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-09_semiwiki-tsmc-oip-2026-verification, 2026-10-13_microbump-as-radiator-and-the-stand-in-problem]
 related:
   - wiki/entities/tsmc.md
@@ -923,3 +923,49 @@ SemiAnalysis ECTC 2026（2026-07-02）：
 - ⚠ 其餘數值皆為 3D 電磁模擬；元件域為高頻通訊。
 
 來源：[[sources/2026-10-13_microbump-as-radiator-and-the-stand-in-problem]]
+
+## [2026-10-19] 光罩倍率路線由 CEO 一手確認為 5×→9×→14×；並出現「承接 EMIB-T 客戶」的表態
+
+來源：[[sources/2026-10-19_stocktwits_tsmc-wei-backstop-intel-emib-t-reticle-roadmap]]（TSMC 2026 Q3 法說會，2026-10-15）
+
+### ⭐⭐⭐ 一、光罩倍率：CEO 層級的完整三段表述
+
+| 階段 | 倍率 | 來源層級 |
+|---|---|---|
+| 現行量產 | **5×**（良率經 CEO 描述為 "excellent"，⚠ 無數字） | CEO 法說一手 |
+| 計畫 | **9×** | CEO 法說一手 |
+| 最終 | **14×** | CEO 法說一手 |
+
+⚠⚠ 📌 **立規範（61）：與 [[entities/ase-group]] C.P. Hung 之 interposer 路線圖（5.5×→9×→12×→40×）在 9× 一致，
+但 TSMC 止於 14×、ASE 續至 40×。兩者口徑未必同義（CoWoS 光罩拼接倍率 vs interposer 面積倍率），
+跨頁並列 5.5×／9×／12×／14×／40× 時必須標註出處與口徑，不得逕行排成單一路線圖。**
+
+⚠ 另注意：既載良率數字綁定於 **5.5×**，本篇為 **5×** ⇒ 兩者可能非同一配置，不得互相代入。
+
+### 📌 二、列管空缺「5.5× 良率 99% 的量測邊界」—— 不結清
+
+本篇把 5× 良率描述為 "excellent"，**既未給數字，亦未說明是否涵蓋中介層完整電性篩檢**。
+追蹤方式維持原狀（TSMC 或 OSAT 對 KGI 篩檢率的任何公開表態）。
+本輪唯一的增量是：**願意在法說會上為該良率背書的層級已到 CEO。**
+
+### ⭐⭐ 三、封裝平台的客戶轉換風險首次有一手表態
+
+Morgan Stanley 之 Charlie Chan 問及「選擇 Intel EMIB-T 後遭遇供給受限的客戶」，
+C.C. Wei 答：*"I try to avoid answering it directly, but let me say that, yes, we will be."*
+
+- **由承接方 CEO 主動確認，而非分析師推測** ⇒ 依本 wiki 可信度軸為最高等級。
+- ⚠ Wei **並未確認任何客戶實際轉換**；且 Intel CEO 於 2026-07 Q2 法說仍稱 EMIB-T 訂單成長、備戰 2027 ramp。
+- ⚠ 與既載 Intel EMIB-T 三段時程（2H27→2028→2029）無直接衝突，
+  但顯示 **2026 Q3 時點客戶端已把 EMIB-T 供給視為風險**，較既載時程隱含的樂觀度為低。
+
+### ⭐⭐ 四、中介層平台比較取得學界綜述層級的分類軸
+
+[[sources/2026-10-19_openalex_interposer-review-silicon-glass-organic]]（`10.1016/j.matdes.2026.116701`, 2026-07-31）
+把**「有無貫穿孔（through-via vs through-via-less）」當成中介層技術的第一級分類軸**
+⇒ 既載「橋／中介層的免 TSV 化」論述取得**第三個、且為學界綜述層級**的獨立佐證
+（前兩個為 Deca US20260136970A1 與 Intel CN122349366A）。
+
+📌 **新讀法：矽中介層在 2026 年同時承受兩種方向相反的壓力 ——
+「產能外包」（GF $2B／2028 H1，見 2026-10-10 條目）意味需求強到自家產能不足；
+「材料替代」（玻璃／有機）意味其長期地位被質疑。既載論述未同時處理這兩面。**
+⚠ 該綜述摘要**零量化值**，僅可作分類架構使用。

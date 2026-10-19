@@ -5135,3 +5135,67 @@ warning: unable to unlink '.../.git/index.lock': Operation not permitted
   - ✓ **檔案計數交叉驗證**：`wiki/sources` = **898**、`entities` = **49**、`technologies` = 17、`concepts` = 6、
     `analyses` = 5、根目錄 3 ⇒ **總計 978，與 index.md 所載一致。**
   - ✓ **憑證外洩掃描**：以 `.env` 三個變數之實際值對 `wiki/` 與 `raw/` 全文 `grep -F`，**三者皆 CLEAN**（全程未輸出任何值）。
+
+## [2026-10-19] collect | 每日自動蒐集 — 先進封裝最新動態
+- 搜尋查詢數：新聞 6 組 / 專利 6 組 / 論文 4 組
+- 成功抓取：11 篇（articles/ 2, patents/ 5, papers/ 4, reports/ 0）
+- 失敗/跳過：11 篇（付費牆／擷取失敗 3：digitimes ×2〔GF 深度分析、Micron 台灣二廠〕、igorslab ×1；
+  已收錄 7〔TGV 失效機制 `matdes.117168`、TGV Cu-MSA 填孔 `matdes.117198`、玻璃核心 Cu RDL `mssp.111280`、
+  THz 多層中介層 `mssp.111189` 等〕；低相關／不合格 4〔3 篇 OpenAlex 無摘要依 §4.3 棄收：dumbbell TSV `mejo.107543`、
+  Ru/SiO2 低溫 HB `jallcom.191266`、矽中介層光偵測模組 `nima.172159`；1 篇過期：notebookcheck 玻璃基板文實為 2024-08-30〕）
+- 資料源狀態：WebSearch ACTIVE ✓ | EPO OPS ACTIVE ✓（6 次 search，0 次 detail，遠低於 ≤10 上限；abstract 已含於 search/biblio 回應，本輪未發出任何 detail 呼叫） | OpenAlex ACTIVE ✓
+- 新增 wiki 頁面：11 頁（全為 sources/：foplp-warpage-review-no-universal-amplification、post-cmp-clean-brush-mediated-cross-contamination、
+  stocktwits_tsmc-wei-backstop-intel-emib-t-reticle-roadmap、techtimes_ocp-open-silicon-photonics-ai-q4-spec、
+  epo_amd-us20260282960a1、epo_huawei-wo2026200137a1、epo_ibm-us20260047421a1、epo_cea-wo2026195572a1、
+  epo_tsinghua-cn122535301a、openalex_interposer-review-silicon-glass-organic、openalex_epoxy-underfill-review-coupled-tradeoffs）
+- 更新 wiki 頁面：15 頁（technologies/hybrid-bonding、foplp、cowos、copackaged-optics、tsv；
+  concepts/test-metrology-packaging、power-delivery-packaging、thermal-management；
+  entities/amd、ibm、tsmc、intel；overview.md、index.md、log.md）
+- 主要新知識：⭐⭐⭐ **混合接合的三個未明言前提同輪各被一件專利挑戰** —— AMD（US20260282960A1）以蝕刻停止層讓 via
+  同時落在表面墊與埋入墊，挑戰「接合墊在同一平面」；IBM（US20260047421A1）以 BSPDN 面互貼疊記憶體，
+  挑戰「接合面承載訊號」；華為（WO2026200137A1）以側壁介電層包覆熔渣殘屑，挑戰「顆粒要靠洗掉」。
+  本 wiki 全部表面規格論述（Cu dishing 2 nm 窗／Ra 0.1–0.2 nm／限制鏈①）都建立在前兩個前提上 ⇒ 須加註適用邊界。
+  ⭐⭐⭐ **「標準缺位 ⇒ 私有方法先行」首次被條件化為兩支**：缺「能力」時廠商先行（CPO 晶圓級測試標準，
+  由 ASE〔Nicole Tien〕與 TSMC〔Jun He〕在 OCP 白皮書中同時具名指出 —— 指認者正是最有動機宣稱做得到的一方）；
+  缺「量測口徑」時學界先行（FOPLP 翹曲度量，Kookmin 綜述呼籲公開的最低報告要求）。差別在有無排他權動機。
+  ⭐⭐⭐ **量測失效模式新增第五類：工具攜帶的狀態在批次間傳遞** —— PVAc 清洗刷具把前一片晶圓的氧化鈰
+  帶到下一片（刷具 ICP-MS Ce：SC1 0.25–1.1 ppb vs DHF 1.3–5.4 ppb），是前五類中**首個跨片傳遞**者，
+  且須比較 fresh vs loaded 工具才能識別（本篇自身即因 SiN 上 fresh brush 背景過高而無法歸因）。
+- 專利訊號：本輪五件專利的共同方向是**接合界面正在被當成多物理功能的載體，而不只是互連** ——
+  IBM 同一發明人（XIE RUILONG）分別布局接合面散熱與接合面供電，與既載 Technoprobe「探針卡須自被動互連
+  演化為整合式多物理系統」是同一命題在不同元件上的版本；CEA 把「晶粒雙面皆平坦化」寫進請求項，
+  使 CMP 負擔隨層數 ×2 放大；清華把擴散阻障層改為退火原位生成，與 Atotech 的晶粒成長窗可能共用同一製程視窗（待證）。
+
+### 本輪作業面記錄 / Operational Notes
+
+- ⚠⚠⚠ **去重失誤一起，當場自行發現並處置（本輪最重要的作業面事件）。**
+  Track A 的去重以 URL 片段 `grep` 執行，但所選片段**未涵蓋**兩篇實際已收錄的文章 ⇒ 誤判為新，
+  已擷取並寫出 2 個 raw 檔、追加 2 行登錄後，才在登錄後的逐筆 `grep -c` 驗證中發現計數為 2。
+  - 重複項：①`tomshardware.com/.../globalfoundries-to-produce-silicon-interposers-...`（原收錄 2026-10-10，L834，
+    已有來源頁 `sources/2026-10-10_globalfoundries-tsmc-2b-interposer-deal`）；
+    ②`semiengineering.com/coppers-grip-on-ai-scaling-is-starting-to-slip/`（原收錄 2026-08-18，L354，
+    已有來源頁 `sources/2026-08-13_semieng_coppers-grip-ai-scaling-slip`）。
+  - **處置**：兩個新 raw 檔已加 `duplicate_of:` 與 `superseded: true` frontmatter 及醒目警示區塊，
+    **未經 ingest、未建立任何新來源頁**；登錄檔之重複行**依 spec §QUALITY RULES「raw/ 僅 `_collected_urls.txt` 可追加」
+    不予刪除，維持列管**，與既載 2026-10-16 之真重複（DOI `10.1016/j.jsamd.2026.101155`）同樣待人工或專屬 lint 輪次處置。
+  - ➜ 📌 **立規範（63）：Track A 的去重不得以人工挑選的 URL 片段為之。
+    正確作法是對每個候選 URL 以其「網域＋完整路徑」整串 `grep -F` 比對，或先把 `_collected_urls.txt` 的第二欄
+    抽成清單再逐一精確比對。本輪失誤的根因是「查了幾個片段就以為查過全部候選」。**
+  - ⚠ 本輪登錄檔因此實際追加 13 行而非 11 行，**其中 2 行為已知重複**。
+- ⚠ **排程連續性：本輪為 2026-10-16 之後的第一次 collect，中間 2026-10-17 與 2026-10-18 兩輪未留下任何 log 條目。**
+  ⇒ 📌 未能判定係排程未觸發、觸發後失敗、或觸發後連線中斷（本輪無從回溯）。
+  **建議列為下輪開場檢查項：比對 `log.md` 最末日期與當日日期，落差 >1 日者應在 log 中明記。**
+- ✅ **EPO OPS 配額紀律**：本輪共 6 次 search、**0 次 detail**（發現 `search/biblio` 回應已內含 abstract／classifications／
+  inventors，無須額外 detail 呼叫）⇒ 📌 **規範（64）：OPS 的 biblio search 回應已足以完成選件與建檔，
+  常規輪次不應再發 detail 呼叫，可把每輪 OPS 用量自既定上限 10 降至 ~6。**
+- ⚠ **依規範（58）之實測結果：否證。** 2026-10-16 推測 Besi 的混合接合排他權可能掛在 "besi austria"／"datacon" 名下。
+  本輪實測 `pa="besi austria" or pa="datacon"` 得 **28 件，全部為 2015 年以前的 Datacon 組裝設備案，無一與混合接合相關**
+  ⇒ **該假說否證。** 下輪改測 **CPC 分類檢索（H10W72/9xx）** 而非申請人字串，或自 Besi 年報揭露之專利家族數反查。
+- ⚠ **Amkor 輪替結果：命中多但內容相關度低。** `pa="amkor" and pd within "2026"` 得 **96 件**，
+  前 25 件中新家族 8 個，內容幾乎全為 MEMS 麥克風、影像感測器、PoP 與一般模封結構，**無 2.5D／EMIB／中介層架構內容**。
+  ⇒ 📌 **此為規範（58）「申請人命中件數不等於該公司在該技術上的布局」的第二個實例，且對象是 Intel 的 EMIB 外包夥伴。**
+  本輪僅 US20260165123A1（fam 100037812，金屬板貼晶粒背面＋TIM＋lid）具些微熱架構內容，**因相關度不足未選入**。
+- ⚠⚠ **既載最高優先人工待辦未變更且本輪未複查**：`origin` remote URL 內嵌明文 GitHub personal access token
+  （自 2026-10-07 列管）。**本流程不代為變更憑證設定。** 建議①撤銷並重新產生 token；②改用 credential helper 或 SSH key；
+  ③`git remote set-url origin https://github.com/shpeng1996/advpkg.git`。
+- ⚠ 既載待辦「Windows 側 `git gc --prune=now`」維持（2026-10-16 量得 `tmp_obj_*` 715，為歷輪最高）。

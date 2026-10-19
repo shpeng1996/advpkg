@@ -3,7 +3,7 @@ title: "封裝層的供電網路 / Power Delivery Networks at the Package Level"
 category: concept
 tags: [PDN, power-delivery, vertical-power, eVR, capacitor, inductor, passive-integration, hybrid-bonding, rack-power]
 created: 2026-09-29
-updated: 2026-10-11
+updated: 2026-10-19
 sources: [2026-09-29_imaps-dpc2026_nanoporous-silicon-capacitor-pdn, 2026-09-29_imaps-dpc2026_saras-stile-evr-vertical-pdn, 2026-09-29_semieng_tech-paper-roundup-sept29-multikw-3dhi-pdn, 2026-09-29_semiwiki_ofc2026-siph-cpo-oci-ocs-summary, 2026-09-30_arxiv_umn-multi-kw-power-delivery-3d-hi, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_epo_intel-jp2026116680a-glass-core-embedded-inductor-clusters, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_imaps-dpc2026_delo-die-side-capacitor-encapsulation, 2026-10-02_epo_samsung-cn122602880a-ivr-capacitor-interposer-core, 2026-10-02_jmmm_tyndall-fecob-n-pwrsoc-magnetics, 2026-10-02_epo_amd-us20260282956a1-silicon-bridge-decap, 2026-10-06_openalex_auburn-nife-tsv-magnetic-shield-package, 2026-10-07_epo_amkor-bspdn-oriented-package-embedded-ipd, 2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-08_semieng_voltage-regulation-in-package, 2026-10-08_ferric-fe1766-current-density-denominator, 2026-10-08_empower-crescendo-regulator-side, 2026-10-08_zju-8module-fivr-current-sharing, 2026-10-08_samsung-stacked-rdl-package-bspdn-layer, 2026-10-08_ibm-w2w-bonded-deep-trench-capacitor, 2026-10-08_etron-liquid-through-substrate-cavity, 2026-10-09_infineon-tdm2354-dual-phase-denominator, 2026-10-09_infineon-tdm2454-quad-phase-denominator, 2026-10-09_semiwiki-tsmc-oip-2026-verification]
 related:
   - wiki/concepts/thermal-management.md
@@ -868,3 +868,40 @@ Tyndall National Institute × University College Cork（JMMM，2026-09-02）：�
 ➜ 📌 **依規範（37），引用任何 A 數字仍須標明分子為峰值或 TDC**；本輪 TGV 之 A/cm² 為**施加的恆定測試電流密度**，屬第三類分子口徑（實驗施加值），須另標。
 
 *Sources: [[sources/2026-10-11_ldo-psij-power-to-signal-integrity]]、[[sources/2026-10-11_tgv-electromigration-three-regimes]]*
+
+## 2026-10-19 新增：供電網路首次成為混合接合的「接合面」本身
+
+來源：[[sources/2026-10-19_epo_ibm-us20260047421a1-bspdn-to-bspdn-hybrid-bonded-memory]]
+（IBM US20260047421A1, fam 98698300, 2026-02-12；發明人 JOSHI RAJIV / RUBIN JOSHUA M / XIE RUILONG）
+
+### 技術內容
+
+兩顆各帶 **BSPDN（背面供電電路網路）** 的單層記憶體晶粒，**以 BSPDN 面彼此混合接合**成 2-layer memory die；
+一側 **TSV**、另一側 **C4／錫球**，使 2-layer（或 4-layer）die 可續疊，整個堆疊置於 **interposer** 之上。
+
+### ⭐⭐⭐ 為何重要：「把供電往上游推」的第四個落點
+
+本頁既載 [[entities/infineon]] 一手資料給出三個落點與其 PDN 總電阻：
+
+| 落點 | PDN 總電阻 |
+|---|---|
+| 橫向供電 | 90–140 µΩ |
+| BVM（背面供電） | 10–15 µΩ（−89%） |
+| 基板內建 | 7–10 µΩ（−93%） |
+| ⭐ **本輪新增：供電進入晶粒堆疊的接合面本身** | ⚠ **無數值** |
+
+➜ 📌 **這是本 wiki 第一次看到「供電平面同時是機械與電氣的接合介面」。**
+既載垂直供電論述的障壁為 **3 A/mm² 電流密度**（Infineon）；本件未給任何電流密度或電阻值，
+**不得用於主張該障壁已被處理。**
+
+### ⭐⭐⭐ 對混合接合規格的反向影響（新增未解問題）
+
+本 wiki 既有的全部混合接合表面規格（Cu dishing 2 nm 窗、Ra 0.1–0.2 nm、節距）
+都以**訊號密度**為隱含目的。供電面的需求不同：**要的是大面積低電阻，而非細節距。**
+
+📌 **新增未解問題：供電面接合的 Cu 面積比（metal density）與 dishing 規格，是否與訊號面同一組？**
+若不同，則既載「Cu dishing 最佳值必為區間」的上下界機制（不足→空洞／過度→間隙不閉合）
+在供電面上可能被**電流密度／電遷移**取代為主要失效
+⇒ **該論述須加註適用邊界（訊號面）。** 詳見 [[technologies/hybrid-bonding]] 2026-10-19 條目。
+
+⚠ IBM 為研究型 IDM，本件**不預示任何量產**；全篇零量化值。

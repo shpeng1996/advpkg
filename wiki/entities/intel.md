@@ -3,7 +3,7 @@ title: "英特爾 / Intel"
 category: entity
 tags: [IDM, advanced-packaging, EMIB, Foveros, Intel18A, Clearwater-Forest, Foveros-Direct, glass-substrate, 14A, High-NA-EUV, silicon-capacitors, Google-TPU-v8e, Q2-2026-earnings, Tesla-14A, HLFF, RAMP-C, Secure-Enclave, Rio-Rancho]
 created: 2026-04-24
-updated: 2026-10-15
+updated: 2026-10-19
 sources: [2026-09-27_intel_us20260182414a1-asymmetric-buildup-cte-gradient-glass, 2026-09-27_intel_cn122270166a-stacked-glass-silicon-bridge-assembly-ar20, 2026-09-27_intel_us20260223702a1-direct-bonding-embedded-bridge-organic-cavity, 2026-08-24_intel-newsroom_hot-chips-2026-diamond-rapids-foveros-ucie, 2026-04-24_initial-survey, 2026-07-20_trendforce_tsmc-265b-arizona-intel-novalake, 2026-03-18_trendforce_intel-emib-malaysia, 2026-03-03_trendforce_intel-clearwater-forest, 2026-03-05_trendforce_intel-emib-billions, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-04-20_trendforce_intel-foundry-14a-equipment, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-01_semianalysis_cpus-back-datacenter-2026, 2026-04-10_3dincites_intel-gan-chiplet, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks, 2026-06-21_convergedigest_intel-emib-t-multi-die-packaging, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap, 2026-07-01_trendforce_terafab-intel-veteran-hire, 2026-04-07_tomshardware_intel-joins-terafab, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-01-30_tomshardware_intel-ai-chip-test-vehicle-emib-t, 2026-07-14_trendforce_intel-ireland-5b-intel3-europe, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-04_semieng_from-blueprint-intel-hlff, 2026-07-31_semieng_chip-week-149, 2026-08-13_trendforce_intel-memory-reentry-xbm-zam-saimemory, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-09-30_intel_us-advanced-packaging-reticle-8x-12x-fab9, 2026-09-30_epo_intel-jp2026116680a-glass-core-embedded-inductor-clusters, 2026-09-30_epo_intel-us20260040982a1-glass-package-liquid-metal-socketing, 2026-09-30_epo_intel-us20260191037a1-localized-embedded-bridge-in-core, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_trendforce_intel-microled-glass-24-layer, 2026-10-06_intel_clearwater-forest-no-glass-foveros-9um-3um-emib-45um, 2026-10-06_atlaspcb_clearwater-forest-glass-core-claim-unsourced, 2026-10-06_epo_intel-bridge-chiplet-shield-dummy-die, 2026-10-06_epo_intel-mold-extension-package-to-package-topside-bridge, 2026-10-09_intel-voltage-contrast-backside-patent]
 related:
   - wiki/entities/tsmc.md
@@ -1137,3 +1137,22 @@ CN122349366A、US20260191063A1、US20260191037A1（family 100312105，**已收�
 - **Intel 工程師掛名學術綜述**：《Cu–Cu bonding process in 3D ICs: thermo-mechanical coupling challenges and reliability-driven solutions》（IJAMT, 2026-09-09, Critical Review）共同作者 **Teng Hwang John Tan 隸屬 Intel Electronics（馬來西亞檳城）**。該文以 **real contact fraction** 為主導狀態變數，並點名三個標準缺口（表面狀態→缺陷持續性無可移植定律／Cu–介電界面缺乏標準化混合模式斷裂能／全域翹曲與 bond-cell 力學脫節）。
   ⚠ 依規範 41 視為**有利害關係之來源**，惟內容為方法論而非產品宣稱；文中數值皆為被引文獻標題，**非 Intel 的產線數據**。
 見 [[sources/2026-10-15_cucu-review-real-contact-fraction-three-gaps]]。
+
+## 2026-10-19 新增：EMIB-T 的供給被客戶端視為風險（第三方一手表態）
+
+來源：[[sources/2026-10-19_stocktwits_tsmc-wei-backstop-intel-emib-t-reticle-roadmap]]（TSMC 2026 Q3 法說會，2026-10-15）
+
+- 於 TSMC 法說會上，Morgan Stanley 分析師 **Charlie Chan** 的提問預設了一個狀態：
+  **存在「選擇 Intel EMIB-T 封裝後遭遇供給受限」的客戶。**
+- TSMC CEO **C.C. Wei** 回應願意承接：*"I try to avoid answering it directly, but let me say that, yes, we will be."*
+- 對照 Intel 側：CEO **Lip-Bu Tan** 於 **2026-07 Q2 法說**稱 **EMIB-T 訂單成長中，正準備為客戶 2027 ramp 擴產。**
+
+### 解讀
+
+- ⚠⚠ 📌 **這是本 wiki 第一次取得「EMIB-T 供給受限」的外部一手表態，但須謹慎界定其證據強度：**
+  **該狀態是由分析師在提問中預設、由競爭對手的 CEO 默認承接，而非由 Intel 或任何具名客戶確認。**
+  依本 wiki 可信度軸，**分析師提問中的預設不等於已查證的事實** ⇒ 記為**待證的市場認知**，而非 Intel 的產能事實。
+- ⚠ 與既載 EMIB-T 三段時程（**2H27 → 2028 → 2029**）並無直接衝突，
+  但顯示 **2026 Q3 時點客戶端的風險認知，較既載時程所隱含的樂觀度為低。**
+- 📌 **新增追蹤方式：Intel 或任何具名客戶對 EMIB-T 2027 ramp 的公開表態；
+  以及 [[entities/amkor]]（EMIB 外包夥伴）Arizona 產能時程是否出現調整。**

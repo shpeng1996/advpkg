@@ -3,7 +3,7 @@ title: "共封裝光學元件 / Co-Packaged Optics (CPO) — TSMC-COUPE™ & Eco
 category: technology
 tags: [CPO, co-packaged-optics, COUPE, TSMC, GlobalFoundries, Samsung, photonics, AI, HPC, networking, OCI-MSA, DWDM, Broadcom, NVIDIA, glass-substrate, ULCVD, TGV, Spectrum-X, NVL72]
 created: 2026-04-25
-updated: 2026-10-16
+updated: 2026-10-19
 sources: [2026-09-27_globalfoundries_siph-cpo-bandwidth-density-coupling-budget, 2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-27_paper_copper-interconnect-scaling-roadmap-lines-per-mm, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-05-07_trendforce_globalfoundries-silicon-photonics-scale-cpo, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-03-17_coherent_cpo-ofc2026-demo, 2026-06-07_digitimes_jcet-3d-packaging-cpo-plant, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_edn_cpo-technology-status-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-06-24_thelec_corning-glass-bridge-cpo, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-14_trendforce_umc-silith-silicon-photonics-hvm, 2026-07-14_trendforce_huawei-baidu-npo-msa, 2026-07-27_trendforce_presscenter_cpo-switches-nvidia-broadcom-coupe, 2026-06-03_3dincites_intel-foundry-emib-cpo-glass-ectc2026, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-07-31_ase_cn224583735u-photoelectric-hybrid-rdl, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-09-26_report_dupont-ttm-polymer-waveguide-reliability, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_bitschips_besi-q1-2026-hybrid-bonding-orders, 2026-10-07_openalex_mit-cpo-vs-pluggable-switch-power-calibration, 2026-10-07_skhynix_cpo-nature-electronics-100tbps-1pjbit-10ns, 2026-10-09_semiwiki-tsmc-oip-2026-verification, 2026-10-13_cpo-bottleneck-test-800x-area-mismatch]
 related:
   - wiki/technologies/rdl.md
@@ -1556,3 +1556,51 @@ SEMICON West 2026（2026-10-13，舊金山），NVIDIA 首席研究員 Nikola Ne
 來源：[[sources/2026-10-16_16ch-siph-module-tec-1p2w-optical-alignment-4to6um]]、
 [[sources/2026-10-16_cpo-shared-interposer-thermal-coupling-confirmed-as-first-order]]、
 [[sources/2026-10-16_upstream-gates-beat-bonding-parameters-wire-pull-3p29x]]
+
+## 2026-10-19 新增：CPO 標準化進入 OCP 正式工作組；系統級浪費首次有量化值（MFU 38–43%）
+
+來源：[[sources/2026-10-19_techtimes_ocp-open-silicon-photonics-ai-q4-spec]]（Tech Times, 2026-08-15，⚠ 二手）
+
+### 時程與組織
+
+- **2026-08-13 正式成為 OCP workstream**，名稱 **Open Silicon Photonics for AI Systems**；源自 2026-03 OFC 的 Lightmatter ＋ 十家夥伴倡議。
+- **Q4 2026 僅交付 Base Specifications**；Design／Product Specifications 與 OCP Accepted 認證在後
+  ⇒ **多供應商競爭市場不早於 2027–2028。**
+- 具名參與者：Lightmatter、Qualcomm、Celestica、Foxconn Interconnect Technology、Flex、Quanta Cloud Technology、
+  Keysight、Dell、Hyve Solutions、**Global Unichip（GUC）**。⚠ 家數文中自相矛盾（20 vs 19）⇒ **本 wiki 不記錄家數。**
+
+### ⭐⭐⭐ 系統級浪費：本頁第一個量化值
+
+| 項目 | 數值 |
+|---|---|
+| 大型 AI 訓練叢集 **MFU（Model FLOPS Utilization）** | **38–43%** |
+| 白皮書目標 | **55–65%** |
+| 能效目標 | **< 5 pJ/bit** |
+| 銅的可達距離 | 448G PAM4 **約 25 cm**；112G 約 2 m |
+| CPO vs 可插拔功耗 | 約 **5×** 降低（引 NVIDIA） |
+| NVIDIA CPO switch MTBF | 2.6M hours |
+| 可插拔密度天花板 | **49.6 Tb/s 世代、約 18 個月後**（Bechtolsheim, Arista） |
+
+⚠⚠ 📌 **「浪費多少」現有兩個不同口徑的數字，不得混用：**
+本篇的 **MFU 38–43%**（算力利用率）vs 既載 SemiEng 的 **GPU 約 25% 效率**（等待資料）。
+兩者量的不是同一件事，跨頁引用必須標註何者。
+
+⚠ 📌 **銅的距離數字亦有兩個口徑**：本篇 448G PAM4 下 **25 cm**，既載 SemiEng（Ayar Labs）為 200 Gb/s 下 **約 5 m**。
+**兩者非矛盾而是不同速率；但兩篇皆未給通道材料、FEC 與量測條件 ⇒ 列為待釐清，不得並列成「銅的極限」單一數字。**
+
+### 架構主張
+
+- 白皮書約 300 頁，目標 OCP Modular Hardware System 與 Open Rack v3，規模 **72 → >1,024 加速器節點**。
+- 定義機械／電源／訊號／熱／管理五層的**介面契約**；**技術中立**（矽光子／VCSEL／micro-LED）。
+- ⭐⭐⭐ **被動元件（光纖佈線、連接器）在 SerDes 速率提升時維持不變，僅光引擎需更新** —— 明確的架構分工主張，
+  與本頁既載「光引擎放在哪一層」（NVIDIA OOI, 2026-10-15）為同一議題的上位界定。
+- 涵蓋 **CPO、near-package optics、XPO、CPX** 四類光引擎；link profile 至 **16 波長 DWDM**。
+
+### ⭐⭐⭐ 測試標準缺位：由 ASE 與 TSMC 同時具名指出
+
+原文記載：**晶圓級測試標準與共用模擬方法仍然缺位**，指認者為 **ASE（Nicole Tien）與 TSMC（Jun He）**。
+
+➜ 這是本頁與 [[concepts/test-metrology-packaging]] 既載「測試／量測為第三個結構性瓶頸」論述
+**最強的一次外部佐證，因為指認者正是最有動機宣稱自己做得到的一方。**
+且此處缺位的是**製程／測試能力** ⇒ **「標準缺位 ⇒ 私有方法先行」在此成立**
+（與同輪 FOPLP 翹曲論文的「量測口徑缺位 ⇒ 學界先行」構成該模式的兩個分支，見 [[technologies/foplp]]）。

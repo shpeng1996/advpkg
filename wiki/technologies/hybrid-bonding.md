@@ -3,7 +3,7 @@ title: "混合接合 / Hybrid Bonding"
 category: technology
 tags: [3D, hybrid-bonding, Cu-Cu, SoIC, ECTC, advanced-packaging, DRAM, COP, 4F2, Sn-damascene, damascene-interconnect, PFAS-free, patent-signal, guard-ring, surface-activation]
 created: 2026-04-24
-updated: 2026-10-16
+updated: 2026-10-19
 sources: [2026-09-27_paper_binghamton-ibm-pad-scaling-resistance-variability, 2026-09-27_intel_us20260223702a1-direct-bonding-embedded-bridge-organic-cavity, 2026-05-21_semiecosystem_ectc2026-cpo-hybridbonding-plp, 2026-04-24_initial-survey, 2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-03-01_3dincites_besi-packaging-power-shift, 2026-01-13_semiengineering_hbm4-microbumps, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-19_semieng_advanced-packaging-limits, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-03-27_3dincites_copper-grain-hybrid-bonding, 2026-03-02_semieng_making-hybrid-bonding-better, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2026-04-29_semiwiki_cea-leti-ectc2026-hybrid-bonding, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2024-02-09_semianalysis_hybrid-bonding-process-flow, 2026-05-19_semiconductor-digest_ev-group-ectc2026-hybrid-bonding, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-04-19_semiwiki_apple-m5-cucu-hybrid-bonding-shipped, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-18_imec_iii-v-chiplet-rf-laser-bonding, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-29_evgroup_ectc2026-hybrid-bonding-layer-transfer, 2026-06-29_thelec_skhynix-hybrid-bonding-equipment-order, 2026-06-05_semieng_intel-ectc-2026-emib-t-cpo-glass, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-14_trendforce_samsung-hbm-hiring-hybridbonding, 2026-07-16_semieng_fine-pitch-hb-high-volume, 2026-07-16_semieng_alt-materials-hybrid-bonding, 2026-06-08_irtnanoelec_d2w-hybrid-bonding-1um-pitch, 2026-05-28_imec_w2w-hybrid-bonding-200nm-pitch, 2026-09-09_acsaelm_microwave-anneal-cu-cu-150c-3min, 2026-08-21_scirep_copper-oxide-reduction-ar-h2-pulsed-plasma, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-03-29_damnang_hybrid-bonding-cmp-gating-factor, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-04-02_adeia_us20260096463a1-buildup-organic-dielectric-bonding, 2026-07-17_jcet_cn122421815a-asymmetric-bonding-interface, 2026-04-30_seoultech_us20260123559a1-hydrocarbon-plasma-low-temp-bonding, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer, 2023-09-13_nccavs_intel-cmp-dishing-requirement-vs-achieved, 2026-03-11_epo_adeia-cmp-for-hybrid-bonding-patent, 2026-09-01_chip_ru-bpr-ntsv-ion-beam-recess, 2026-02-10_epo_shanghai-univ-citric-acid-cu-reduction-sog, 2026-09-21_semiconductorx_cmp-share-lam-sabre-correction, 2026-09-16_jsandwich_cucu-diameter-nonmonotonic-local-optimum, 2026-07-21_lam_sabre-3d-is-ecd-not-cmp, 2026-09-26_paper_dalian-cucu-bonding-review, 2026-09-26_patent_beijing-xinli-hybrid-bonding-dishing-activation, 2026-09-26_paper_ibm-amine-post-cmp-clean, 2026-10-02_bitschips_besi-q1-2026-hybrid-bonding-orders, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_adeia-us20260247631a1-dual-sided-connecting-element, 2026-10-06_openalex_kuleuven-imec-n2-plasma-sin-cap-cu-oxide, 2026-10-06_openalex_n2-plasma-sio2-activation-w2w-bonding, 2026-10-06_openalex_tongji-wafer-embedded-pitch-standard-pose-correction, 2026-10-07_epo_besi-deformable-die-forming-bond-tool, 2026-10-07_openalex_diamond-d2w-direct-bonding-vdw-45mpa, 2026-10-07_openalex_cuos-alloy-interconnect-oxidation-adhesion, 2026-10-09_nycu-itri-cu-pad-protrusion-aspect-ratio, 2026-10-09_keti-tgv-defect-spectrum-plugging-review, 2026-10-09_quantware-qpu-measurement-stage-patent, 2026-10-13_atotech-cu-microstructure-queue-time, 2026-10-13_evg-bond-wave-pressure-element, 2026-10-13_samsung-hbm-33pct-hcb-vs-mrmuf, 2026-10-13_large-area-sintering-three-challenges]
 related:
   - wiki/technologies/rdl.md
@@ -2540,3 +2540,92 @@ SemiAnalysis（2026-10-15，付費牆前段；**分析推論，ASML 未發表產
 - `pa="asml" and ti,ab="bonding"` 僅命中 **5 件**，**全部為物件夾持器／微影相關，無一件與混合接合有關**。
   ⚠ **此不構成「27 件家族」之反證**（OPS 之 ti/ab 檢索無法涵蓋以 CPC 或其他字串布局之案件），
   但應記為：**本 wiki 以 OPS 無法獨立複現 SemiAnalysis 之 27 件家族說。**
+
+## 2026-10-19 collect 更新：接合面的三個隱含前提同輪被挑戰（平面、訊號、顆粒可洗）
+
+本輪五件專利 ＋ 一篇論文，共同指向一件事：**本頁既有論述所依賴的三個未明言前提，各自出現了反例。**
+
+### ⭐⭐⭐ 一、前提「接合墊在同一平面上」—— AMD 提出兩個深度的落點
+
+[[sources/2026-10-19_epo_amd-us20260282960a1-flexible-routing-hybrid-bonding-layer]]（US20260282960A1, fam 101296690, 2026-09-17）
+以**蝕刻停止層**使接合層的 via **同時可終止於表面 contact pad 與頂層金屬中的 buried conductive pad**。
+
+- 本頁既有的全部表面規格論述（Cu dishing 2 nm 窗、Ra 0.1–0.2 nm、限制鏈 ①表面平坦度）
+  都隱含「接合面是單一平坦面、墊在該面上」。
+- 📌 **新增未解問題：若落點可在兩個深度，須管控平坦度的面積是否因此縮小？**（專利零量化值，無法判定）
+- ⭐ **本 wiki 第一件 AMD 混合接合層專利**；AMD 自需求方首次成為權利持有人（既載 [[entities/amd]] 排他權層此前僅有橋，無接合層）。
+
+### ⭐⭐⭐ 二、前提「接合面承載訊號」—— IBM 把供電網路當接合面
+
+[[sources/2026-10-19_epo_ibm-us20260047421a1-bspdn-to-bspdn-hybrid-bonded-memory]]（US20260047421A1, fam 98698300, 2026-02-12）：
+兩顆各帶 **BSPDN** 的記憶體晶粒**以 BSPDN 面彼此混合接合**，一側 TSV、一側 C4，可續疊，置於 interposer 上。
+
+- 本頁 Cu dishing／Ra／節距規格全部以**訊號密度**為隱含目的。
+- 📌 **新增未解問題：供電面接合的 Cu 面積比與 dishing 規格是否與訊號面同一組？**
+  若不同，則「Cu dishing 最佳值必為區間」的上下界機制（不足→空洞／過度→間隙不閉合）在供電面上
+  可能被**電流密度**取代為主要失效 ⇒ **該論述須加註適用邊界（訊號面）。**
+- 接上 [[concepts/power-delivery-packaging]]：為 Infineon 的「把供電往上游推」路線新增第四個落點。
+
+### ⭐⭐⭐ 三、前提「顆粒要靠洗掉」—— 華為以結構封住顆粒來源；且本頁前輪的檢索結論須撤回
+
+[[sources/2026-10-19_epo_huawei-wo2026200137a1-sidewall-dielectric-slag-debris]]（WO2026200137A1, fam 101465569, 2026-10-01）：
+**以兩層介電層覆蓋兩顆晶片電路層的側面，包覆熔渣殘屑避免其散落**，藉此保護接合面潔淨度。
+
+- 既載該問題的所有候選解法皆為**製程型**（清洗化學、電漿還原、queue time、Resonac 耐化學切割膠帶、K&S 機內還原氣體埠）。
+  本件是**結構型：不去除顆粒，而是讓顆粒產生後出不來。**
+  ⇒ 與既載 Besi「治具事前不讓 nuisance 產生 vs 演算法事後分離」同形，**為該對立新增第三個技術域。**
+- ⚠⚠⚠ **撤回 2026-10-16 之結論。** 該輪據 `ti,ab="hybrid bonding" and ti,ab="particle"` 全庫僅 1 件，
+  判定「⭐⭐⭐ 空缺『1 µm 顆粒的 killer area』在專利文獻中幾乎沒有對應布局」並建議改走論文軌。
+  **本件證明那是檢索字串的產物：華為以「熔渣殘屑」描述同一問題，且為中文申請案，英文 ti,ab 命不中。**
+  ➜ 📌 **立規範（59）：顆粒／污染類檢索不得只用 "particle"；須併測 debris／residue／contamination／殘屑／顆粒，
+  並記住 OPS 的 ti,ab 對非英文申請案覆蓋不全。** 追蹤方式恢復為「專利 ＋ 公開表態 ＋ ECTC 論文」三軌。
+
+### ⭐⭐⭐ 四、CMP 負擔隨層數放大（CEA），與阻障層由退火長出（清華）
+
+- [[sources/2026-10-19_epo_cea-wo2026195572a1-multilevel-d2w-both-faces-planarized]]（WO2026195572A1, fam 96220286, 2026-09-24）：
+  **「晶粒雙面皆平坦化」被寫進請求項** ⇒ 多層堆疊時 **CMP 負擔是 ×2／層而非 ×1**，
+  為既載「CMP 是限制層」新增一個**隨層數放大**的機制（此前未記錄）。
+  另「受控厚度基板＋貫穿孔」把厚度當成被請求的設計變數，呼應 775 µm 天花板下「每層厚度精度是可交易資源」。
+  📌 依既載論述 9（CEA 排他權→論文間隔 3–4 年），**預測其對應論文落在 2029–2030 ECTC** —— 可證偽。
+- [[sources/2026-10-19_epo_tsinghua-cn122535301a-barrier-grown-by-anneal]]（CN122535301A, fam 100751302, 2026-08-07）：
+  合金層＋填銅＋**退火原位生成擴散阻障層**（而非沉積一層）⇒「把問題移進材料裡」**第四個落點，本次換到的是步驟數**。
+  ⚠⚠ 📌 **與既載 [[entities/atotech]] 之「退火是雙面刃」直接相撞**（~10 min @200 °C 保留細晶 vs ~2 h @200 °C 顯著晶粒成長）：
+  **若本件退火窗落在 Atotech 的晶粒成長窗內，則阻障層生成與銅晶粒劣化共用同一製程視窗，必須當成同一個取捨。**
+  本件零溫度／時間值 ⇒ 暫無法判定，列入追蹤。
+
+### ⭐⭐⭐ 五、學術前沿：清洗的瓶頸不在清洗，而在清洗工具本身
+
+[[sources/2026-10-19_openalex_post-cmp-clean-brush-mediated-cross-contamination]]（`10.1016/j.mssp.2026.111254`, 2026-10-06, Hanyang Univ.）
+
+| 項目 | SC1（NH₄OH:H₂O₂:DIW = 1:4:20, pH≈12） | DHF（0.9 wt%, pH≈2） |
+|---|---|---|
+| 清潔效率 | **較高** | 較低 |
+| 刷具 Ce 累積 | 較低 | 較高 |
+| ⭐ 刷具消解液 ICP-MS Ce | **0.25–1.1 ppb** | **1.3–5.4 ppb** |
+
+- ⭐⭐⭐ **「真正的瓶頸在被視為輔助步驟的那一步」出現更深一層：PVAc 刷具把前一片晶圓的顆粒帶到下一片。**
+  失效模式自「這片沒洗乾淨」變成「**這片把下一片弄髒**」——
+  一個**跨晶圓、時間相關**的失效模式，本 wiki 既有良率論述中**無對應概念**。
+- ⚠⚠ 📌 **列管空缺「CMP 後清洗是第二大良率槓桿」取得第一組量化數據，但不結清** ——
+  本篇量的是 **STI CMP（前段）**，非混合接合面。
+  ➜ 📌 **立規範（60）：post-CMP clean 數據必須標註製程層（STI／BEOL／混合接合面）；
+  漿料（ceria vs silica）與被清洗表面（TEOS／SiN vs SiCN／Cu）不同，zeta 關係即不同，數值不可跨層引用。**
+- ⚠ 📌 **「最佳值必然是區間」的一個反例**：SC1 在兩項指標上**同向**優於 DHF，不構成區間。
+  ➜ **立讀法：當兩個失效模式由同一界面機制（zeta 電位符號）支配時，最佳值可以是極值。
+  該論述的前提是兩個失效模式由相互獨立的機制驅動。**
+
+### 本輪新增之未解問題
+
+- [ ] 兩個深度的接合落點（AMD）是否改變平坦度須管控的面積？
+- [ ] 供電面接合（IBM）的 dishing／metal density 規格是否異於訊號面？
+- [ ] 清華退火窗是否落在 Atotech 晶粒成長窗內（阻障層生成 vs 銅劣化是否同一取捨）？
+- [ ] 混合接合面專屬的 post-CMP clean 交叉污染數據（本輪僅有 STI 層）
+
+### 本輪新增來源
+
+- [[sources/2026-10-19_epo_amd-us20260282960a1-flexible-routing-hybrid-bonding-layer]]
+- [[sources/2026-10-19_epo_huawei-wo2026200137a1-sidewall-dielectric-slag-debris]]
+- [[sources/2026-10-19_epo_cea-wo2026195572a1-multilevel-d2w-both-faces-planarized]]
+- [[sources/2026-10-19_epo_ibm-us20260047421a1-bspdn-to-bspdn-hybrid-bonded-memory]]
+- [[sources/2026-10-19_epo_tsinghua-cn122535301a-barrier-grown-by-anneal]]
+- [[sources/2026-10-19_openalex_post-cmp-clean-brush-mediated-cross-contamination]]
