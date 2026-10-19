@@ -5199,3 +5199,16 @@ warning: unable to unlink '.../.git/index.lock': Operation not permitted
   （自 2026-10-07 列管）。**本流程不代為變更憑證設定。** 建議①撤銷並重新產生 token；②改用 credential helper 或 SSH key；
   ③`git remote set-url origin https://github.com/shpeng1996/advpkg.git`。
 - ⚠ 既載待辦「Windows 側 `git gc --prune=now`」維持（2026-10-16 量得 `tmp_obj_*` 715，為歷輪最高）。
+- ✅ **git commit：本輪由本流程自行完成（未依賴 `daily_git_push.bat`）。**
+  - **提交 `e40770e`「2026-10-19」，40 個檔案**（11 新 raw ＋ 11 新來源頁 ＋ 15 更新頁 ＋ `_collected_urls.txt` 13 行追加
+    ＋ 2 個已標記為重複之 raw 檔）。事後 `git status --porcelain` 為 **0 行（乾淨）**。
+  - ⚠ `main` 較 `origin/main` **ahead 2、behind 0**（本輪未 push；推送由倉庫自身的 `daily_git_push.bat` 於其排程時點執行）。
+  - ✅ ⭐ **規範（53a）之後續：本輪刪除權限全程未申請，git 步驟在 ingest 完成後立即執行** ——
+    即 2026-10-16 所建議之「把 git 步驟前移、刪除權限僅在實際遭阻時才申請」。
+    **連續兩輪在「權限申請 → git」之間斷線的失敗模式本輪未再發生**（因該視窗根本未開啟）。
+  - ⚠ **commit 期間 git 因無刪除權限而留下 `.git/HEAD.lock`**（並印出 16 則 `tmp_obj_*` unlink 警告）。
+    依環境指引，**未申請權限，改以 `mv` 重新命名為 `.git/stale-HEAD-lock-20261019`（直接置於 `.git/` 下，未置於 `.git/refs`）**，
+    事後 `git status`／`git log`／`git rev-parse` 均正常 ⇒ **後續 git 指令（含使用者自己的）不受阻。**
+  - ⚠⚠ **鎖檔與暫存物件量測（對照 2026-10-16）**：`tmp_obj_*` **766**（10-16 為 715，**淨增 +51**）；
+    `stale-*` 18；`.git` 內任意深度 `*.lock` **6**（其中 `.git/refs/heads/_old_main.lock` 為既存、**本輪未觸碰**，依指引不得動 `.git/refs` 下之鎖檔）。
+  - ⚠⚠⚠ **既載待辦「Windows 側 `git gc --prune=now`」維持且更形必要**（`tmp_obj_*` 766 為歷輪最高）。
