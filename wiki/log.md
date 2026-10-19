@@ -5212,3 +5212,47 @@ warning: unable to unlink '.../.git/index.lock': Operation not permitted
   - ⚠⚠ **鎖檔與暫存物件量測（對照 2026-10-16）**：`tmp_obj_*` **766**（10-16 為 715，**淨增 +51**）；
     `stale-*` 18；`.git` 內任意深度 `*.lock` **6**（其中 `.git/refs/heads/_old_main.lock` 為既存、**本輪未觸碰**，依指引不得動 `.git/refs` 下之鎖檔）。
   - ⚠⚠⚠ **既載待辦「Windows 側 `git gc --prune=now`」維持且更形必要**（`tmp_obj_*` 766 為歷輪最高）。
+
+## [2026-10-19] skip | 排程重複觸發 — 本 UTC 日已完成一輪 collect，未再執行蒐集
+
+- **結論：本次觸發未執行任何蒐集，未新增／未修改任何 `raw/`、`wiki/sources/`、`wiki/entities/`、
+  `wiki/technologies/`、`wiki/concepts/`、`index.md` 內容。本輪唯一變更為本 log 條目。**
+- **觸發時點**：`2026-10-19T20:04:23Z`（= Asia/Taipei 2026-10-20 04:04）。
+- **開場檢查（執行 2026-10-19 條目所建議之檢查項）**：`log.md` 最末 collect 日期 = **2026-10-19** = 當日 UTC 日期，
+  落差 **0 日** ⇒ 判定為**同日重複觸發**，非漏跑。
+  ⇒ 📌 **該建議檢查項本輪首次實際發揮作用，且攔下的不是漏跑而是重跑。
+  建議將檢查項措辭自「落差 >1 日者應在 log 中明記」擴充為「落差 >1 日＝漏跑、落差 =0＝重跑，兩者皆須在 log 中明記，
+  且落差 =0 時不得執行蒐集」。**
+- **同日既有一輪之證據**：
+  - `wiki/log.md` 已有 `## [2026-10-19] collect` 條目（11 篇入庫：articles 2 / patents 5 / papers 4）。
+  - `raw/_collected_urls.txt` 已有 **13 行** `2026-10-19` 開頭之登錄（含該輪自行標記之 2 行已知重複）。
+  - git：`e40770e`「2026-10-19」（40 檔）＋ `c76c749`（log 補記），提交時間 `2026-10-19T01:22–01:23Z`。
+  - 本次觸發前 `git status --porcelain` = **0 行（乾淨）**，確認前一輪已完整收尾。
+- **重複觸發之成因（可追溯，非推測）**：排程 `trig_019sPkzubTLzz7J4mMLwbjX2` 之 `updated_at` =
+  **`2026-10-19T00:53:32Z`**，cron 現為 `CRON_TZ=Asia/Taipei 0 4 * * *`。
+  ⇒ 排程於本日 00:53Z 被變更，變更後隨即於 **~01:00Z** 觸發一次（即 `[2026-10-19] collect` 那一輪，
+  Taipei 時間 09:22 完成提交，並非 04:00 時點），其後 **20:04Z** 又依新 cron 正常觸發一次
+  ⇒ **同一 UTC 日內兩次觸發，相隔約 19 小時。**
+- **不執行蒐集之理由**：
+  1. 依 spec §QUALITY RULES，`_collected_urls.txt` 內之 URL／DOI／專利家族不得重複擷取；
+     距前一輪僅 19 小時，三軌資料源（新聞／EPO 公開／OpenAlex 收錄）在此窗內之新增量趨近於零，
+     預期產出幾乎全數會被去重擋下。
+  2. 若仍執行，將在同一 `collected_date`（2026-10-19）下產生第二批 raw 檔與第二個同日 log 條目，
+     與本倉庫「一次排程 = 一個日期條目」之既有慣例衝突，且會重演 2026-10-16／2026-10-19 兩輪已列管的
+     重複登錄治理負擔。
+  3. EPO OPS 免費額度（4 GB/週）無謂消耗。
+- **下一次正常觸發**：`2026-10-20T20:03:16Z`（= Taipei 2026-10-21 04:03）。
+  ⇒ ⚠ **連帶觀察：新 cron 之每日觸發時點落在 20:0xZ，即 UTC 日界前約 4 小時。
+  若日期標記沿用 UTC 日（本倉庫歷輪慣例，如 2026-10-14 20:20Z 之檔案標記為 `2026-10-14`），
+  則「Taipei 日」與「UTC 日」永久相差一日，Taipei 2026-10-21 04:03 的那一輪會被標記為 `2026-10-20`。
+  本輪不逕行變更此慣例，僅列為待確認項：請使用者確認日期標記欲採 UTC 日或 Taipei 日。**
+
+### 本輪作業面記錄 / Operational Notes
+
+- ✅ 本輪未呼叫 WebSearch／WebFetch／EPO OPS／OpenAlex，未讀取 `.env`，無任何憑證接觸。
+- ⚠⚠ **既載最高優先人工待辦未變更且本輪未複查**：`origin` remote URL 內嵌明文 GitHub personal access token
+  （自 2026-10-07 列管）。**本流程不代為變更憑證設定。**
+- ⚠⚠⚠ **既載待辦「Windows 側 `git gc --prune=now`」維持**：本輪量得 `.git/objects` 下 `tmp_obj_*` **0**
+  （前一輪之 766 已被移入 `.git/_stale_tmp_objs/`），`.git` 內任意深度 `*.lock` **6**
+  （`.git/refs/heads/_old_main.lock` 為既存、未觸碰）。
+- ⚠ `main` 較 `origin/main` **ahead 3**（本輪提交後為 ahead 4）；推送仍由倉庫自身的 `daily_git_push.bat` 執行。
