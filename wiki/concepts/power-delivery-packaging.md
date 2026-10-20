@@ -3,7 +3,7 @@ title: "封裝層的供電網路 / Power Delivery Networks at the Package Level"
 category: concept
 tags: [PDN, power-delivery, vertical-power, eVR, capacitor, inductor, passive-integration, hybrid-bonding, rack-power]
 created: 2026-09-29
-updated: 2026-10-19
+updated: 2026-10-20
 sources: [2026-09-29_imaps-dpc2026_nanoporous-silicon-capacitor-pdn, 2026-09-29_imaps-dpc2026_saras-stile-evr-vertical-pdn, 2026-09-29_semieng_tech-paper-roundup-sept29-multikw-3dhi-pdn, 2026-09-29_semiwiki_ofc2026-siph-cpo-oci-ocs-summary, 2026-09-30_arxiv_umn-multi-kw-power-delivery-3d-hi, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_epo_intel-jp2026116680a-glass-core-embedded-inductor-clusters, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_imaps-dpc2026_delo-die-side-capacitor-encapsulation, 2026-10-02_epo_samsung-cn122602880a-ivr-capacitor-interposer-core, 2026-10-02_jmmm_tyndall-fecob-n-pwrsoc-magnetics, 2026-10-02_epo_amd-us20260282956a1-silicon-bridge-decap, 2026-10-06_openalex_auburn-nife-tsv-magnetic-shield-package, 2026-10-07_epo_amkor-bspdn-oriented-package-embedded-ipd, 2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-08_semieng_voltage-regulation-in-package, 2026-10-08_ferric-fe1766-current-density-denominator, 2026-10-08_empower-crescendo-regulator-side, 2026-10-08_zju-8module-fivr-current-sharing, 2026-10-08_samsung-stacked-rdl-package-bspdn-layer, 2026-10-08_ibm-w2w-bonded-deep-trench-capacitor, 2026-10-08_etron-liquid-through-substrate-cavity, 2026-10-09_infineon-tdm2354-dual-phase-denominator, 2026-10-09_infineon-tdm2454-quad-phase-denominator, 2026-10-09_semiwiki-tsmc-oip-2026-verification]
 related:
   - wiki/concepts/thermal-management.md
@@ -905,3 +905,20 @@ Tyndall National Institute × University College Cork（JMMM，2026-09-02）：�
 ⇒ **該論述須加註適用邊界（訊號面）。** 詳見 [[technologies/hybrid-bonding]] 2026-10-19 條目。
 
 ⚠ IBM 為研究型 IDM，本件**不預示任何量產**；全篇零量化值。
+
+## [2026-10-20] 去耦電容的第四個位置：中介層內（TSMC–GF 協議含深溝槽電容）
+
+- ⭐⭐⭐ **GlobalFoundries 為 TSMC CoWoS 供應矽中介層之五年／USD 2B 協議，範圍明載含
+  「embedded deep-trench capacitors（DTC）」相關能力。**
+  ⇒ **中介層自「純互連載體」擴充為「內含被動元件的供電結構」。**
+  對照既載之去耦電容位置演進（封裝內 → 橋的背面〔IBM GB2644659A〕→ 基板中央隨供電面下沉），
+  **本輪新增第四個位置：中介層內部**，且**首次由代工／中介層供應端（而非 IDM 或基板商）持有該能力**。
+- **與既載「被動元件物件化」論述的關係**：既載該論述已自電容擴及電阻，且「每種被動元件卡在不同限制項」。
+  本輪的新意不在元件種類，而在**位置**：DTC 落在運算晶粒與 HBM 之間的同一片矽上，
+  是本 wiki 所記**離負載最近**的一個去耦位置。
+- ⚠⚠ **完全無量化值**：未給電容密度（nF/mm²）、面積佔比、對 PDN 阻抗之貢獻、或節點。
+  ➜ 依既載規範，**不得與 Infineon 之 PDN 總阻 90–140 µΩ（橫向）→ 10–15 µΩ（BVM）→ 7–10 µΩ（基板內建）並列或排序**，
+  亦不得與既載電容密度階梯比較。
+- ➜ 📌 **新增空缺：CoWoS-S 中介層的 DTC 是既有能力的延伸採購，還是 CoWoS 首次納入中介層內建被動元件？
+  其去耦目的（PDN 阻抗／PSIJ／其他）為何？追蹤方式：TSMC 或 GF 對 DTC 於 CoWoS 用途的任何技術說明。**
+- 來源：[[sources/2026-10-20_eetasia_tsmc-gf-interposer-deep-trench-capacitors]]

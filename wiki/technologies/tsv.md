@@ -3,7 +3,7 @@ title: "TSV — Through-Silicon Via / 矽穿孔"
 category: technology
 tags: [TSV, HBM, interposer, 3D-IC, CoWoS, manufacturing, backside-power, advanced-packaging, radiation, redundancy, reliability]
 created: 2026-08-10
-updated: 2026-10-19
+updated: 2026-10-20
 sources: [2026-09-27_wuhanuniv_cn121548325a-tgv-micro-nano-anchor-molecular-bridging, 2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-27_semieng_chip-week-156-india-tata-besi-izmo, 2026-04-22_semieng_tsv-complexity-manufacturing-bottleneck, 2026-08-21_semieng_chip-week-152, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-08-21_scirep_copper-oxide-reduction-ar-h2-pulsed-plasma, 2026-06-08_irtnanoelec_d2w-hybrid-bonding-1um-pitch, 2026-03-13_kaneka_jp2026047137a-glass-core-polyimide-quantified, 2026-08-10_screp_low-k-organic-buffer-tgv-cu-metallization, 2026-08-04_jmrt_vacuum-assisted-void-free-cu-fill-tgv, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring, 2026-09-26_patent_zhuhai-tiancheng-dual-depth-tsv-silicon-bridge, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_patent_er-eng-glass-interposer-dual-carrier, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth, 2026-10-02_epo_semco-cn122054433a-glass-surface-roughness, 2026-10-02_trendforce_intel-microled-glass-24-layer, 2026-10-02_imaps-dpc2026_defect-free-coplanar-copper-via-fill, 2026-10-02_microrel_tudelft-google-3dic-fa-hardware, 2026-10-06_epo_microchip-polysic-ceramic-interposer-mandrel-vias, 2026-10-06_openalex_auburn-nife-tsv-magnetic-shield-package, 2026-10-06_thelec_sec-xray-tsv-tgv-inspection-1um, 2026-10-07_epo_cas-freestanding-3c-sic-interposer, 2026-10-07_openalex_cuos-alloy-interconnect-oxidation-adhesion, 2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk, 2026-10-08_rdl-free-glass-interposer-trench, 2026-10-08_uestc-tapered-tgv-skin-current, 2026-10-09_cas-2013-microchannel-interposer-ebg, 2026-10-09_nycu-itri-cu-pad-protrusion-aspect-ratio]
 related:
   - wiki/technologies/hbm4.md
@@ -935,3 +935,28 @@ TU Delft × Google（2026-07-03）：以 **~210 µm interposer pin pitch** 的 D
 在總高受限下，**每層的厚度精度成為可交易的資源**，而非僅是製程公差。
 
 ⚠ 綜述摘要**零量化值**（無節距、損耗、CTE、成本、良率）；CEA 專利亦零量化值。
+
+## [2026-10-20] TSV 同時作為電性屏蔽體與散熱路徑（模擬）
+
+**天津大學（Qi Liu, Xia Xiao 等），International Communications in Heat and Mass Transfer，2026-10-19**：
+提出**分段同軸屏蔽 TSV** 兩型——平端 **FS-CTSV**、圓邊 **RS-CTSV**（目的為改善訊號完整性），
+並整合進**具正弦特徵 pin-fin 的微流道散熱器**，在彈塑性本構模型下同時評估熱—流—力。
+
+| 項目 | 數值 | 口徑 |
+|------|------|------|
+| T_max 降幅（葉形 vs 方形 pin-fin） | **−7.04 K** | Re 26–520，**數值模擬** |
+| ΔP 降幅 | **最多 −54.34%** | 同上 |
+| PEC | **>1.0** | 熱傳增益／壓損代價之淨比 |
+| Cu 區 σ_max,von Mises 降幅（RS- vs FS-CTSV） | **−7.52%** | 彈塑性本構 |
+
+- ⭐⭐⭐ **TSV 的功能清單自「互連」「熱通道」（既載 Etron TTV/TGV 對接）擴為「屏蔽＋熱」雙功能**，
+  且屏蔽結構與散熱結構**是同一個設計變數** ⇒ 既載命題「**接合界面／探針卡／中介層正被當成多物理功能的載體**」
+  在 TSV 側的版本（本輪另於 TSMC–GF 深溝槽電容取得中介層落點）。
+- ⭐⭐ **三個目標函數（熱／流／力）同時出現，作者以 PEC >1.0 作取捨。**
+  與既載「翹曲不可取代局部應力、兩者必須並列量測」（USM×Intel：最低局部拉應力 14 µm vs 最佳平衡 16 µm）同構
+  ⇒ 既載「最佳值只在指定失效模式後才存在」再獲一例，**且首次是三目標。**
+- ⚠⚠ **全為數值模擬，無實測、無流片** ⇒ 不得與量產數字並列比較。
+- ⚠ 依 2026-09-21 規範（均勻度／變異須標註是否附重複性），**本件三個百分比均無誤差帶，標 ⚠**；
+  亦無網格收斂數據。Re 26–520 為層流區，與實際封裝冷卻板運作區間是否相符未述。
+- ⭐ 來源機構與既載「天津大學 TSV 深度量測：重複性 2.18 µm ≈ 陣列變異 2.15 µm」（量測不確定度達 100% 之最極端例）同校不同團隊。
+- 來源：[[sources/2026-10-20_openalex_coaxial-shielded-tsv-as-cooling-structure]]

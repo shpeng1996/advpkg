@@ -3,7 +3,7 @@ title: "CoWoS — Chip-on-Wafer-on-Substrate"
 category: technology
 tags: [2.5D, interposer, TSMC, AI, HPC, HBM, COUPE, CPO, packaging-constraints, NVIDIA]
 created: 2026-04-24
-updated: 2026-10-19
+updated: 2026-10-20
 sources: [2026-08-13_semieng_1mw-rack-debate-thermal, 2026-08-05_trendforce_tsmc-cowos-cow-outsourcing-osat, 2026-05-24_techtimes_nvidia-computex2026-cowos, 2026-04-24_initial-survey, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-15_trendforce_tsmc-vanguard-stake-sale, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-09_financialcontent_tsmc-130k-cowos-wafers, 2026-06-09_digitimes_tsmc-cowos-soic-capacity-symposium, 2026-06-15_trendforce_tsmc-cowos-gap-narrowing-130k-200k-wafers, 2026-06-10_tomshardware_tsmc-fab-expansion-roadmap-n2-cowos-soic, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_tmtpost_tsmc-cowos-capacity-targets-2026-2027, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-09-30_intel_us-advanced-packaging-reticle-8x-12x-fab9, 2026-10-02_trendforce_cowos-l-mainstream-through-2028, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_amd-us20260282956a1-silicon-bridge-decap, 2026-10-06_epo_micron-interposer-embedded-active-buffers, 2026-10-06_epo_tenstorrent-discrete-pitch-adapter-substrates, 2026-10-06_openalex_gatech-terahertz-nde-8layer-interposer, 2026-10-07_epo_cas-freestanding-3c-sic-interposer, 2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk, 2026-10-07_openalex_amkor-kelly-three-interposer-routes, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-09_semiwiki-tsmc-oip-2026-verification, 2026-10-13_microbump-as-radiator-and-the-stand-in-problem]
 related:
   - wiki/entities/tsmc.md
@@ -969,3 +969,24 @@ C.C. Wei 答：*"I try to avoid answering it directly, but let me say that, yes,
 「產能外包」（GF $2B／2028 H1，見 2026-10-10 條目）意味需求強到自家產能不足；
 「材料替代」（玻璃／有機）意味其長期地位被質疑。既載論述未同時處理這兩面。**
 ⚠ 該綜述摘要**零量化值**，僅可作分類架構使用。
+
+## [2026-10-20] ⭐⭐⭐ GF 中介層協議含「內嵌深溝槽電容」，1H2028 爬坡；CEO 一手承認後段產能短缺
+
+- ⭐⭐⭐ **協議範圍首次揭露含 embedded deep-trench capacitors（DTC）。**
+  既載本交易來源（[[sources/2026-10-10_globalfoundries-tsmc-2b-interposer-deal]]）記的是金額、年限、地點；
+  **DTC 此前在本 wiki 完全未與 CoWoS 中介層連上。**
+  DTC 於中介層內提供去耦電容 ⇒ **中介層自「純互連載體」擴充為「內含被動元件的供電結構」**，
+  為既載命題「接合界面／探針卡／TSV 正被當成多物理功能的載體」（2026-10-19 立）的**第四個落點，首次落在中介層**。
+  ⚠ 未給電容密度、面積佔比、PDN 阻抗貢獻 ⇒ **不得與 Infineon 之 90–140／10–15／7–10 µΩ 並列。**
+  ➜ 📌 **新增空缺：CoWoS-S 的 DTC 是既有能力的延伸採購，還是 CoWoS 首次納入中介層內建被動元件？**
+- ⭐⭐ **時間軸補上**：GF **Malta, New York** 新增產能**1H2028 開始爬坡**。
+  與既載 Ibiden（FY2027 起依序投產）、TSMC 14× 光罩（2028）、Absolics（推遲至 2027）同落一窗
+  ⇒ 既載讀法「**2027 為供給真空年、2028 為多路新產能同時到位年**」再獲一獨立佐證。
+- ⭐⭐ **2026-10-15 法說會：C.C. Wei 被問為何外購中介層時，承認後段（含先進封裝）產能短缺** ——
+  自二手報導升格為**一手表態**。⚠ 原文明示**未**宣稱中介層為後段短缺之唯一原因，不得作此歸因。
+- ⚠ **未揭露**：製程節點、晶圓量、單價、額外產能數字。
+- ⚠ 同輪另有 XenoSpectrum（2026-10-17）報導同一場法說會，與既載
+  [[sources/2026-10-19_stocktwits_tsmc-wei-backstop-intel-emib-t-reticle-roadmap]] 高度重疊，
+  依 spec STEP 2「摘要轉載」原則未收錄；其獨有細節（**CoWoS-L 3.5× 自 2024 年量產**；
+  **14× 對應約 10 顆大運算晶粒 + 20 顆 HBM**）僅記於 raw 檔與來源頁備查，**未寫入本頁規格表**。
+- 來源：[[sources/2026-10-20_eetasia_tsmc-gf-interposer-deep-trench-capacitors]]

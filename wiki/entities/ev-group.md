@@ -3,7 +3,7 @@ title: "EV Group (EVG)"
 category: entity
 tags: [equipment, hybrid-bonding, wafer-bonding, maskless-lithography, layer-transfer]
 created: 2026-04-25
-updated: 2026-10-15
+updated: 2026-10-20
 sources: [2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-05-19_semiconductor-digest_ev-group-ectc2026-hybrid-bonding, 2026-06-29_evgroup_ectc2026-hybrid-bonding-layer-transfer, 2026-05-28_imec_w2w-hybrid-bonding-200nm-pitch, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-10-07_epo_evg-zonewise-adaptive-litho-die-shift, 2026-10-07_epo_evg-inorganic-dual-release-layer-common-solvent, 2026-10-13_evg-bond-wave-pressure-element]
 related:
   - wiki/technologies/hybrid-bonding.md
@@ -258,3 +258,25 @@ KIMM 的 308 nm 準分子雷射解接合研究顯示：在**反轉結構**（玻
 
 ➜ ⭐⭐ **布局形狀：接合前（幾何預測）＋ 接合後（品質判定）兩端夾擊**，接合製程本身不是本輪重心。
 ➜ ⚠ 三件**全部零量化值**。既載 EVG 其他數據（與 imec 的 W2W 200 nm pad pitch／post-bond overlay <40 nm、GEMINI FB 機型）不受本輪影響。
+
+## [2026-10-20] 解接合分區化 + 電漿腔體監測：兩件專利落在兩個不同的「輔助步驟」上
+
+- **TW202621423A**（fam 93607590，2026-05-16 公開；發明人 WOLF CHRISTOPH；CPC H10P72/74xx）：
+  暫時接合之產品／承載基板，**主區（primary area）在氣體生成下第一步分離**，
+  **環繞主區之封閉／氣密次區（secondary area）第二步分離**。
+  ⇒ ⭐⭐⭐ 既載「FOPLP 真正瓶頸在 debonding」首次在排他權層有結構性解法，
+  並補上前提：**周界與中央的分離條件不同，不能一次剝離**；
+  **「周界／邊緣是獨立失效面向」累積至第四個落點 ⇒ 升格為成立論述。**
+- **WO2026098776A1**（fam 93460736，2026-05-15 公開；發明人 FLÖTGEN CHRISTOPH、ANDERSEN ERIC；
+  CPC H01J37/3292x–3299）：**電漿腔體（特別是週期性處理同型基板者）運作狀態之監測**方法與裝置。
+  ⇒ 與 **ASMPT US20260290767A1** 構成**兩家競爭設備商同年各自就電漿腔體狀態布局**。
+  ⚠ 摘要過短、無技術細節，**本輪未建 raw 檔、未經 ingest**，僅於此與 ASMPT 來源頁列管。
+- **同輪另見**：WO2026209143A1（fam 95337986，2026-10-08；以感測系統在同一參考系內同時決定基板**厚度與曲率**後再行搬運）、
+  WO2026130706A1（fam 94192511，2026-06-25；承載基板堆疊之製造）。
+  ⚠ 兩件因相關度／細節不足未選入，僅記錄。
+  ⭐ 前者與既載「翹曲與局部應力須並列量測」同向：**搬運決策把曲率列為輸入量**。
+- **既載定位不變**：混合接合設備領導者；ECTC 2025 展示無光罩微影與層轉移；
+  與 imec 之 W2W **200 nm 節距／overlay vector <40 nm**（⚠ 測試結構，非 HBM 量產結果 —— 本輪由第三方來源再度確認此限制）。
+- ⚠ 以上專利均零量化值；依專利訊號原則不得視為已出貨之量產方案。
+- 來源：[[sources/2026-10-20_epo_evg-tw202621423a-two-stage-debonding-core-and-sealed-rim]]、
+  [[sources/2026-10-20_epo_asmpt-us20260290767a1-plasma-two-wavelength-ratio-monitoring]]

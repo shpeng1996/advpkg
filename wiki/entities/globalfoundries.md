@@ -3,7 +3,7 @@ title: "GlobalFoundries — 格羅方德"
 category: entity
 tags: [GlobalFoundries, silicon-photonics, copackaged-optics, PIC, SiPh, foundry, Malta-NY]
 created: 2026-09-27
-updated: 2026-10-12
+updated: 2026-10-20
 sources: [2026-09-27_globalfoundries_siph-cpo-bandwidth-density-coupling-budget]
 related:
   - wiki/technologies/copackaged-optics.md
@@ -137,3 +137,18 @@ related:
 - ⚠ **瓶頸紓解時點為 2028，非 2027** ⇒ 來源推論 2027 年之 CoWoS 中介層配額與定價槓桿仍在 TSMC 手上。
 
 來源：[[sources/2026-10-12_globalfoundries-2b-tsmc-interposer-malta]]
+
+## [2026-10-20] 中介層協議範圍含深溝槽電容；1H2028 爬坡
+
+- ⭐⭐⭐ **為 TSMC CoWoS 生態系供應矽中介層之五年／USD 2B 協議（2026-10-08），
+  範圍明載同時涵蓋「embedded deep-trench capacitors（DTC）」相關能力。**
+  ⇒ GF 在本案的角色不只是**產能**供應者，而是**含特定被動元件能力**的供應者；
+  為既載命題「接合界面／探針卡／TSV 被當成多物理功能載體」在**中介層**上的第四個落點。
+- **產能加設於 Malta, New York**；**量產 1H2028 開始爬坡**。
+  ⇒ 與既載 Ibiden（FY2027 起）、TSMC 14× 光罩（2028）、Absolics（推遲至 2027）同落一窗，
+  支持既載讀法「2027 為供給真空年、2028 為多路新產能同時到位年」。
+- **TSMC 側製造要求**（本篇所列）：細節距互連、TSV、金屬化、製程控制；中介層為 **CoWoS-S** 架構核心。
+- ⚠ **未揭露**：本協議最終提供多少額外 CoWoS 產能、製程節點、晶圓量、單價、DTC 之電容密度或用途細節。
+- **既載定位不變**：矽光子與 CPO 封裝之代工側一手來源（銅 <1 Tb/s/mm & >5 pJ/bit vs 光 >5 Tb/s/mm & 2–5 pJ/bit 等）。
+  ⚠ 既載「0.3–0.5 nm 疑為 µm 誤植」之待查項未變更。
+- 來源：[[sources/2026-10-20_eetasia_tsmc-gf-interposer-deep-trench-capacitors]]

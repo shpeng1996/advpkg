@@ -3,7 +3,7 @@ title: "Amkor Technology"
 category: entity
 tags: [OSAT, advanced-packaging, FOCoS, Arizona, chiplet, Intel-EMIB, patent-signal, TIM]
 created: 2026-04-25
-updated: 2026-10-15
+updated: 2026-10-20
 sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-05-19_stocktitan_amkor-arizona-peoria-land-expansion, 2026-06-17_digitimes_amkor-tsmc-10year-arizona-deal, 2026-06-17_trendforce_tsmc-amkor-10year-arizona-advanced-packaging, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-30_amkor-ir_arizona-7billion-groundbreaking, 2026-06-30_digitimes_amkor-2.5d-hdfo-growth-2026, 2026-07-23_amkor-ir_nvidia-amkor-1-5b-strategic-partnership, 2026-09-26_article_amkor-embedded-trace-rdl, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-10-07_epo_amkor-bspdn-oriented-package-embedded-ipd, 2026-10-07_openalex_amkor-kelly-three-interposer-routes, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-08_semieng_voltage-regulation-in-package, 2026-10-13_amkor-cavity-as-allocated-volume]
 related:
   - wiki/technologies/rdl.md
@@ -460,3 +460,22 @@ Amkor 的 **Vineet Pancholi** 提供本 wiki 目前唯一的中介層測試覆�
 2. ⭐⭐ **US20260240050A1（family 100807805；韓國發明人團隊）—— 互連模組。** 多根橫向間隔的互連體被預製成模組，**第一側面帶種子層**（製程指紋入請求項，為該論述第四例）。與 2026-10-13 入庫之 **US20260076275A1**（中介基板貫穿腔體垂直互連）構成連續布局。
 
 ⚠ 兩件皆無節距／層數／良率／客戶數值；TW202614417A 屬較早家族之延續案（規範 54）。
+
+## [2026-10-20] ⚠⚠ 修正 2026-10-19 之結論：Amkor 確有混合接合／基板架構布局
+
+- **CN121620243A**（fam 98776443，2026-03-06 公開；發明人 LEE WANG-GOO、AN KUI、MO YINSU；
+  申請人 Amkor Technology Singapore Holding）：
+  **RDL 基板第一面以第一次混合接合接晶圓組件、第二面以第二次混合接合接電子元件**，
+  且**第二接合界面落在第一接合界面的 footprint 之內**，垂直互連沿該元件側壁配置。
+- ⚠⚠ **修正**：2026-10-19 本 wiki 以 `pa="amkor" and pd within "2026"`（96 件，前 25 件）判定
+  「內容幾乎全為 MEMS 麥克風、影像感測器、PoP 與一般模封結構，**無 2.5D／EMIB／中介層架構內容**」，
+  並據此把 Amkor 列為規範（58）之第二個實例。
+  **該結論應修正為「以申請人字串＋單一時間窗取前 25 件時未檢出」，而非「Amkor 在該技術上無布局」。**
+  本件係以技術詞查詢 `ti,ab="hybrid bonding" and pd within "2026"` 檢出。
+  ➜ 📌 **立作業規範（67）：判定某公司「在某技術上無布局」之前，
+  必須至少再以技術詞（而非申請人）交叉檢索一次。**
+- ⭐⭐⭐ **意義**：Amkor（既載為 Intel EMIB 外包夥伴、Arizona $12B）自「EMIB 的受託組裝方」
+  首次在**混合接合＋基板架構**上成為排他權持有人；
+  且混合接合的使用位置自「晶粒對晶粒」外移至「晶圓組件對 RDL 基板」，本 wiki 首見。
+- ⚠ 零量化值；依專利訊號原則不得視為已具雙面混合接合量產能力。
+- 來源：[[sources/2026-10-20_epo_amkor-cn121620243a-double-sided-hybrid-bonding-rdl-substrate]]

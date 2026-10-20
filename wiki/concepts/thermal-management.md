@@ -3,7 +3,7 @@ title: "先進封裝熱管理 / Thermal Management in Advanced Packaging"
 category: concept
 tags: [thermal-management, liquid-cooling, 3D-IC, CoWoS, heat-dissipation, TIM, ECTC-2025, GaN, power-delivery, co-design, patent-signal, delamination]
 created: 2026-04-25
-updated: 2026-10-19
+updated: 2026-10-20
 sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2025-12-01_semiengineering_thermal-management, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-02_trendforce_samsung-hbm5-computex2026, 2026-05-21_semieng_hi-roadmap-nature-paper-intel, 2026-08-13_semieng_1mw-rack-debate-thermal, 2026-04-27_semieng_semiconductor-materials-misbehave, 2026-08-21_trendforce_chip-packaging-heat-ai-bottleneck-cpo-stco, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_arxiv_umn-multi-kw-power-delivery-3d-hi, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_samsung-cn122602880a-ivr-capacitor-interposer-core, 2026-10-02_imaps-dpc2026_delo-die-side-capacitor-encapsulation, 2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage, 2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk, 2026-10-07_epo_cas-freestanding-3c-sic-interposer, 2026-10-07_openalex_diamond-d2w-direct-bonding-vdw-45mpa, 2026-10-07_openalex_lau-silicon-bridge-microbump-reliability, 2026-10-08_etron-liquid-through-substrate-cavity, 2026-10-08_micron-cryogenic-package-hea-solder, 2026-10-08_advantest-singulated-die-test-thermal, 2026-10-09_cas-2013-microchannel-interposer-ebg, 2026-10-09_bjut-thermomech-phase-field-imc-tgv, 2026-10-13_large-area-sintering-three-challenges, 2026-10-13_cu-microparticles-ductility-vs-stiffness-tradeoff, 2026-10-13_beiyi-sic-low-buckling-sintering]
 related:
   - wiki/technologies/cowos.md
@@ -1442,3 +1442,46 @@ SNU × UIUC 的 TIM 綜述明確指出：**TIM 的 bulk／effective 導熱係數
 
 ⚠⚠ **摘要零量化值**（無 CTE、模數、黏度、填料比例、可靠度循環數）⇒ **僅能作為分類框架，不得作為規格來源。**
 ⚠ 📌 列管空缺「Samsung 多孔填料 NCF 的目標產品線」**不因本篇結清**（本篇為一般性綜述，未涉及該專利）。
+
+## [2026-10-20] 層數上限歸因於熱升格為成立；TSV 兼作散熱結構；熱仿真前移至設計迴圈
+
+### 一、「記憶體堆疊層數上限由熱決定」取得第三個獨立記憶體廠表態 ⇒ 升格為成立
+
+- **SK hynix（Kim Ji-hoon，San Jose SEMI 論壇）**：**超過 12 層後，散熱、良率、封裝三者同時成為瓶頸。**
+- 既載兩個同向來源：Micron「**架構圍繞熱管理**」之方法論轉變（Hot Chips 2026）、
+  Samsung **HPB >35% 峰值溫降**。
+  ➜ 📌 **三個獨立記憶體廠來源同向 ⇒ 該讀法自「候選」升格為「成立」。**
+- ⚠ **熱阻改善百分比須標對照基準（本輪立規範 66）**：
+  SK hynix HBM4E 12-Hi（Advanced MR-MUF）**−17%，對照 HBM4**；
+  Samsung HCB（16 層以上）**>−20%，對照 TCB**。**原文明示兩者不可比**，本 wiki 不得排序。
+- 來源：[[sources/2026-10-20_heraldcorp_skhynix-hybrid-bonding-90pct-yield-3-5yr-life-gate]]、
+  [[sources/2026-10-20_xenospectrum_samsung-sk-hynix-hybrid-bonding-sample-gap]]
+
+### 二、微流道的第五個落點：TSV 本身兼作散熱路徑（模擬）
+
+**天津大學，International Communications in Heat and Mass Transfer，2026-10-19**：
+**分段同軸屏蔽 TSV（FS-CTSV／RS-CTSV）**整合進正弦特徵 pin-fin 微流道散熱器。
+
+| 項目 | 數值 |
+|------|------|
+| T_max 降幅（葉形 vs 方形 pin-fin） | **−7.04 K**（Re 26–520，模擬） |
+| ΔP 降幅 | **最多 −54.34%** |
+| PEC | **>1.0** |
+| Cu 區 σ_max,von Mises 降幅（RS- vs FS-） | **−7.52%** |
+
+- ⭐⭐⭐ **屏蔽結構與散熱結構是同一個設計變數** ⇒ 既載命題「接合界面／探針卡／中介層被當成多物理功能的載體」
+  在 TSV 側的版本（本輪另於 TSMC–GF 中介層深溝槽電容取得中介層落點）。
+- ⭐⭐ **熱／流／力三個目標函數同時出現**，作者以 PEC >1.0 取捨
+  ⇒ 既載「最佳值只在指定失效模式後才存在」再獲一例且首次為三目標。
+- ⚠⚠ 全為數值模擬；三個百分比均**無誤差帶**（依 2026-09-21 規範標 ⚠）；不得與量產數字（既載 CoWoS 微流道實測等）並列。
+- 來源：[[sources/2026-10-20_openalex_coaxial-shielded-tsv-as-cooling-structure]]
+
+### 三、熱自「封裝階段的驗證項」前移為「設計階段的輸入項」
+
+- **AceTherm（USTC，ACM TODAES，2026-10-19）**：以 **GDS＋PDK** 驅動之 chiplet 熱仿真（非貼合 FEM），
+  把局部熱點連到**電遷移、熱機械應力、結構翹曲**三種可靠度後果。
+- ⭐⭐ **既載 Micron「架構圍繞熱管理」取得工具鏈層級的對應物**：要真的圍繞熱管理做架構，
+  熱分析必須快到能進版圖迭代迴圈，且輸入是版圖與 PDK 而非封裝模型。
+- ⭐⭐ **翹曲在本件被視為熱場的下游結果之一，而非獨立指標** ⇒ 與既載「翹曲與局部應力錯位、須並列量測」同向。
+- ⚠⚠ 摘要截斷，加速與誤差數值未入庫；無矽實測校正 ⇒ 不得宣稱精度或加速幅度。📌 列下輪取全文項。
+- 來源：[[sources/2026-10-20_openalex_acetherm-chiplet-thermal-simulation-in-design-loop]]

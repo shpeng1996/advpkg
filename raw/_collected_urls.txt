@@ -940,3 +940,15 @@
 2026-10-19 | https://doi.org/10.1016/j.mssp.2026.111254 | raw/papers/2026-10-06_openalex_post-cmp-clean-sc1-vs-dhf-ceria-brush-cross-contamination-ppb.md | Post-CMP clean: brush carries Ce wafer-to-wafer
 2026-10-19 | https://doi.org/10.1016/j.matdes.2026.116701 | raw/papers/2026-07-31_openalex_interposer-comparative-review-silicon-glass-organic.md | Interposer review: through-via vs via-less axis
 2026-10-19 | https://doi.org/10.3390/polym18202481 | raw/papers/2026-10-11_openalex_epoxy-underfill-review-coordinated-regulation-tradeoffs.md | Underfill: coordinated regulation, coupled tradeoffs
+2026-10-20 | https://biz.heraldcorp.com/article/10878775 | raw/articles/2026-09-20_heraldcorp_skhynix-90pct-yield-gate-hybrid-bonding.md | SK hynix: HB gate = 90-98% yield AND 3-5 yr life
+2026-10-20 | https://xenospectrum.com/en/hbm-hybrid-bonding-sample-gap/ | raw/articles/2026-10-08_xenospectrum_samsung-leads-hbm-hybrid-bonding-samples.md | Samsung ahead of SK hynix on HB samples (unconfirmed)
+2026-10-20 | https://www.eetasia.com/why-tsmc-is-turning-to-globalfoundries-for-cowos-interposers/ | raw/articles/2026-10-20_eetasia_tsmc-globalfoundries-cowos-interposer-rationale.md | GF interposer deal also covers deep-trench caps
+2026-10-20 | EPO:99438471:WO2026078856A1 | raw/patents/2026-04-16_WO2026078856A1_resonac-organic-dielectric-hybrid-bonding-step-citric-acid.md | Resonac: organic-dielectric HB, plasma step + citric acid
+2026-10-20 | EPO:99060534:US20260082880A1 | raw/patents/2026-03-19_US20260082880A1_adeia-buildup-bonding-layer-low-temperature.md | Adeia: build-up bond layer, height set by deposition
+2026-10-20 | EPO:98776443:CN121620243A | raw/patents/2026-03-06_CN121620243A_amkor-double-sided-hybrid-bonding-rdl-substrate.md | Amkor: HB on both sides of an RDL substrate
+2026-10-20 | EPO:98974865:US20260290767A1 | raw/patents/2026-09-24_US20260290767A1_asmpt-plasma-output-dual-wavelength-monitoring.md | ASMPT: plasma monitored as two-wavelength ratio
+2026-10-20 | EPO:93607590:TW202621423A | raw/patents/2026-05-16_TW202621423A_evg-two-stage-temporary-bond-debonding.md | EVG: debonding split into core and sealed rim steps
+2026-10-20 | https://doi.org/10.1016/j.icheatmasstransfer.2026.112866 | raw/papers/2026-10-19_openalex_coaxial-shielded-tsv-microchannel-pin-fin-3dic-cooling.md | Coaxial-shielded TSV in pin-fin microchannel: -7.04 K
+2026-10-20 | https://doi.org/10.1145/3859928 | raw/papers/2026-10-19_openalex_acetherm-chiplet-thermal-nonconformal-fem.md | AceTherm: GDS/PDK-driven chiplet thermal FEM
+2026-10-20 | https://doi.org/10.34139/jscs.2026.16.3.1 | raw/papers/2026-09-30_openalex_iec63567-4-laser-dicing-dimensional-accuracy-standard.md | IEC 63567-4 draft: laser-dicing geometry acceptance
+2026-10-20 | https://doi.org/10.1021/acsami.6c10424 | raw/papers/2026-10-15_openalex_cu-polymer-multilayer-isoporous-template-interconnect.md | Cu-polymer 10-layer monolithic growth, oxide-free Cu

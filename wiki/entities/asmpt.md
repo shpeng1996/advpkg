@@ -3,7 +3,7 @@ title: "ASMPT Limited / ASMPT 有限公司"
 category: entity
 tags: [OSAT, equipment, TCB, hybrid-bonding, CPO, flip-chip, FOPLP, HBM4]
 created: 2026-05-06
-updated: 2026-10-14
+updated: 2026-10-20
 sources: [2026-04-22_asmpt_q1-2026-results, 2026-05-03_globenewswire_amat-acquires-nexx, 2026-05-12_asmpt_ectc2026-firebird-lithobolt]
 related: [wiki/technologies/hybrid-bonding.md, wiki/technologies/copackaged-optics.md, wiki/technologies/hbm4.md, wiki/technologies/foplp.md, wiki/entities/besi.md]
 ---
@@ -132,3 +132,22 @@ US20260114310A1（細間距垂直線互連）、US20260206337A1（光學封裝�
 - 📌 保留措辭：為專利訊號；摘要未給偏差量、偏壓力或改善幅度。
 
 來源：[[sources/2026-10-14_asmpt-compliant-collet-positioning]]
+
+## [2026-10-20] 電漿輸出監測：以雙波長比值取代絕對強度
+
+- **US20260290767A1**（fam 98974865，2026-09-24 公開；發明人 GAN ZHUOFEI、CHENG LE、YANG LEI、LI MING；
+  CPC 全在 H01J37/32xxx 與 H05H1/0037）：於**用來清潔物件之電漿裝置**上，
+  量**待監測波長**強度與**作為基線之第二波長**強度，**比較兩者關係是否落在可接受門檻內**。
+- ⭐⭐⭐ **自我歸一化設計**，可抵銷窗口結垢與光源老化
+  ⇒ 既載量測失效模式**第五類「工具攜帶的狀態在批次間傳遞」自失效模式擴充出對策面**：
+  以同一腔體內的另一條訊號作基線。單一絕對強度無法分辨「電漿變弱」與「光路變髒」。
+- ⭐⭐⭐ **同輪 EV Group 亦就電漿腔體狀態監測布局**（WO2026098776A1，fam 93460736，2026-05-15，CPC 高度重疊）
+  ⇒ **兩家競爭設備商同年各自指認同一問題**；依既載讀法「排他權密度是廠商自認瓶頸所在最誠實的指標」，
+  **電漿活化的腔體狀態控制正被設備側同時指認為問題。**
+- ⚠⚠ **請求項對象為一般性 "an object"，未指明混合接合晶圓。**
+  本輪 `pa="asmpt" ...` 命中 **73 件**，多數為 SMT／打線／印刷機具
+  （自動穿線、印刷鋼板分離、料倉、廢料處理、壓機調平、點膠、切割、**自動接合工具更換 US20260138204A1**），
+  ⇒ 📌 **與既載規範（58）一致：命中件數不等於該公司在先進封裝上的布局強度；
+  本公司之排他權重心在 SMT／打線側的證據本輪再度出現。**
+- ⚠ 零量化值（無波長、無門檻、無漂移速率）。
+- 來源：[[sources/2026-10-20_epo_asmpt-us20260290767a1-plasma-two-wavelength-ratio-monitoring]]

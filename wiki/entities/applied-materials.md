@@ -3,7 +3,7 @@ title: "Applied Materials（應用材料）"
 category: entity
 tags: [equipment, ECD, PECVD, TSV, HBM, die-thinning, hybrid-bonding, USA]
 created: 2026-09-17
-updated: 2026-10-16
+updated: 2026-10-20
 sources: [2026-08-18_appliedmaterials_hbm-packaging-bottleneck-toolset, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-06-28_hyperframe_amat-hybrid-bonding-hedge, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_epo_xiamen-anjieli-cn121335557a-silane-parylene-tgv]
 related:
   - wiki/technologies/tsv.md
@@ -363,3 +363,19 @@ Poulomi Mukherjee（Applied Materials Germany）：FE 模擬識別 **① 種子�
 
 來源：[[sources/2026-10-16_amat-besi-first-party-die-on-panel-photonics]]
 （⚠ 既載二手版本 [[sources/2026-10-04_thelec_amat-besi-epic-center-dop]] 中超出上述範圍之細節，引用時應標註為二手增補）
+
+## [2026-10-20] 混合接合商業化時程被歸責於客戶；Kinex 之客戶採用仍未證實
+
+- **AMAT 副總裁 Mukund Srinivasan（首爾記者會）**："When it will be commercialized is a matter of timing —
+  **that is for the customer to answer.**"
+  ⇒ 📌 設備側把混合接合量產時程**歸責於買方**；對照 SK hynix 同期明示之門檻（良率 90–98% ∧ 壽命 3–5 年），
+  **兩側各自把決定權指向對方**。⚠ 依規範 41，兩側皆為有利害關係之來源。
+- **AMAT × Besi（2026-10-01）**：自 2020 年起之合作擴大，整合式 D2W 混合接合系統名為 **Kinex**；
+  ⚠ 第三方來源明載**未說明 Samsung 或 SK hynix 已採用** ⇒
+  既載 Kinex 量產現況（100 nm @3σ、2026 新機 50 nm、路線圖 <25 nm、吞吐 1,600–2,000 die/hr）
+  仍**無客戶採用佐證**。
+- **AMAT 2026-08-18 說明文（本輪第三方轉述）**：層數上升使 DRAM die 必須更薄，而**更薄的 die 更易翹曲**（無數字）
+  ⇒ 與既載「die 翹曲 <100 nm 為限制鏈第②環（材料側，Samsung）」同向。
+- ⚠ 既載「AMAT 混合接合 CMP 市占 100%」維持**待證**，不得作為其他推論之前提（2026-09-21 起列管）。
+- 來源：[[sources/2026-10-20_heraldcorp_skhynix-hybrid-bonding-90pct-yield-3-5yr-life-gate]]、
+  [[sources/2026-10-20_xenospectrum_samsung-sk-hynix-hybrid-bonding-sample-gap]]

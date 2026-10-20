@@ -3,7 +3,7 @@ title: "玻璃載板與玻璃核心的邊界工程 / Glass Carrier & Glass Core 
 category: technology
 tags: [glass-carrier, glass-substrate, panel-level, debonding, edge-strength, CTE, warpage, TGV]
 created: 2026-09-28
-updated: 2026-10-07
+updated: 2026-10-20
 status: new
 related:
   - wiki/technologies/glass-substrate.md
@@ -134,3 +134,16 @@ related:
 ### 相關來源
 
 [[sources/2026-10-07_epo_evg-inorganic-dual-release-layer-common-solvent]]、[[sources/2026-10-07_openalex_diamond-d2w-direct-bonding-vdw-45mpa]]
+
+## [2026-10-20] debonding 的第七個實例：分離是分區發生的（EVG TW202621423A）
+
+- **EV Group TW202621423A**（fam 93607590，2026-05-16 公開）：暫時接合之產品基板／承載基板，
+  其分離分兩步——**主區以氣體生成分離**，**環繞主區之封閉／氣密次區以第二步分離**。
+- ⇒ 既載「三個子問題」中的**釋離／解接合**子問題新增一個此前未記載的前提：
+  **周界與中央的分離條件不同，不能一次剝離。**
+  與既載 [2026-10-04]（debonding 第五、六個實例；載體層的「順從」選擇）、
+  [2026-10-07]（釋離層全無機化；兩層不同功能共用一道溶劑）同屬釋離層工程，
+  但**本件把差異放在平面位置而非材料層**。
+- ⭐ **解接合驅動機制清單新增「氣體生成」**（既載含雷射、熱滑移／順從層、溶劑、微波）。
+- ⚠ 零量化值；依專利訊號原則不得視為 EVG 已出貨之量產解接合方案。
+- 來源：[[sources/2026-10-20_epo_evg-tw202621423a-two-stage-debonding-core-and-sealed-rim]]

@@ -3,7 +3,7 @@ title: "Adeia / Adeia Semiconductor Technologies"
 category: entity
 tags: [IP-licensing, hybrid-bonding, DBI, bridge, Uzoh, patent]
 created: 2026-10-02
-updated: 2026-10-04
+updated: 2026-10-20
 sources: [2026-10-02_epo_adeia-us20260247631a1-dual-sided-connecting-element]
 related:
   - wiki/technologies/hybrid-bonding.md
@@ -63,3 +63,22 @@ related:
 ### 相關來源
 
 [[sources/2026-10-04_epo_jcet-korea-double-sided-bridge]]
+
+## [2026-10-20] 第二件自有專利入庫：接合面高度由沉積厚度決定（低溫接合）
+
+- **US20260082880A1**（fam 99060534，2026-03-19 公開；
+  發明人 **FOUNTAIN JR GAIUS GILLMAN**、MROZEK PAWEL、HUDSON GEORGE CARLTON；
+  CPC H10W20/063、H10W72/01951、H10W72/942、H10W72/952、H10W90/792）：
+  第一金屬特徵上再形成**第二金屬特徵**，沉積介電層直接接觸兩者側壁，**平坦化後第二金屬特徵露出於接合面**。
+  標題明示 **low temperature bonding**。
+- ⭐⭐⭐ **與既載「Adeia EP4709132A2 機制詮釋待佐證」空缺（2026-09-21 列管）同方向。**
+  該空缺的內容是本 wiki **自承為推論**的讀法：「以阻障層作研磨停止層 =
+  **把奈米級高度控制轉為薄膜厚度控制**」。本件以不同結構實作同一設計哲學。
+  ➜ **空缺不結清**（本件摘要未提阻障層或研磨停止層），
+  **但升格為「同一申請人在兩件專利採同一方向」**，即該推論之動機面已有佐證。
+- ⭐⭐ **低溫路線的第四條解法，且不在化學或溫度上**（既載三條：IBM/RPI 250 °C CuO 相門檻、
+  上海大學濕式還原、Atotech 預退火與晶粒窗）。本件把低溫可行性歸到**結構／沉積**。
+  ⚠ 「高度控制移至沉積端 ⇒ 退火熱預算可降」為 wiki 側推論，摘要未述。
+- ⭐ **發明人網絡自一人擴為二人**：既載 Cyprian Emeka Uzoh ＋ 本件 Fountain Jr（Ziptronix/Invensas 時期以來之長期發明人）。
+- ⚠ 既載限制維持：Adeia **不製造**，其專利不預示任何量產時程；本件零量化值（含「低溫」未附溫度帶）。
+- 來源：[[sources/2026-10-20_epo_adeia-us20260082880a1-buildup-bonding-layer-low-temperature]]

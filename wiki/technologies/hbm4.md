@@ -3,7 +3,7 @@ title: "HBM4 — High Bandwidth Memory 4"
 category: technology
 tags: [memory, HBM, JEDEC, standards, AI, HPC, HBM4E, cleanroom, capacity, ISSCC2026, ZAM, HB3DM, HBM5, zHBM, HPB, FMS-2026, ECC, reliability, FIT]
 created: 2026-04-24
-updated: 2026-10-15
+updated: 2026-10-20
 sources: [2026-08-13_semieng_1mw-rack-debate-thermal, 2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor, 2026-08-10_trendforce_skhynix-chongqing-sale-global-reset, 2026-08-05_trendforce_samsung-v10-zhbm-hbm5-fms2026, 2026-07-30_trendforce_samsung-ds-q2-2026-hbm4-triple-q3, 2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-03-18_trendforce_intel-emib-malaysia, 2026-01-23_trendforce_hbm4e-samsung-skhynix-mid2026, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-01-13_semiengineering_hbm4-microbumps, 2025-12-18_trendforce_micron-capex-hbm4, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h, 2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-03-03_trendforce_sk-hynix-hbm4-tight-gaps, 2025-08-12_semianalysis_hbm-roadmap, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit, 2026-06-09_astutegroup_hbm-market-share-2026-battle, 2026-06-10_trendforce_samsung-gwangju-packaging-base, 2026-06-15_trendforce_skhynix-hbm4e-sample-timeline-pulled-forward, 2026-06-20_techtimes_skhynix-hbm4e-12layer-samples, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-27_tweaktown_hbm4-16hi-nvidia-supply-fight, 2026-06-26_semieng_chip-week-144, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-14_trendforce_samsung-hbm-hiring-hbm4-hbm4e-hbm5, 2026-07-14_trendforce_skhynix-yongin-y1-feb2027, 2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b, 2026-08-13_trendforce_samsung-skhynix-hbm4-2h-earnings-pricing, 2026-08-25_trendforce_nvidia-server-hike-hbm-price-2027, 2026-08-28_trendforce_skhynix-indiana-hbm4e-3q29-supply-2030, 2026-08-26_tomshardware_hbf-hot-chips-oxmiq-limited-usability, 2026-08-21_electronics_dual-interposer-hbm-power-integrity, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-09-09_acsaelm_microwave-anneal-cu-cu-150c-3min, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-03-29_damnang_hybrid-bonding-cmp-gating-factor, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_trendforce_cowos-l-mainstream-through-2028, 2026-10-02_microrel_tudelft-google-3dic-fa-hardware, 2026-10-13_hbm-share-of-accelerator-cost, 2026-10-13_samsung-hbm-33pct-hcb-vs-mrmuf, 2026-10-13_mordor-market-9011b-2031]
 related:
   - wiki/entities/sk-hynix.md
@@ -1759,3 +1759,24 @@ TU Delft × Google（2026-07-03）：PoP 中 DRAM 疊於邏輯之上造成 **EFI
 
 ### 混合接合時程的第三方旁證
 SemiAnalysis（2026-10-15）：**HBM 採用 D2W 混合接合不早於 2029，甚至可能不採用** ⇒ 與既載 SK hynix「HB 延至 HBM5（2029–2030）」同向。⚠ 分析推論，非廠商表態。
+
+## [2026-10-20] 混合接合導入門檻二維化；層數上限歸因於熱取得第三個獨立來源
+
+- ⭐⭐⭐ **SK hynix 明示混合接合導入門檻：良率 90–98% ∧ 壽命 3–5 年**（SK hynix America 資深總監 Kim Ji-hoon，San Jose SEMI 論壇）。
+  原預期於 HBM4 導入，因良率延後；業界現預期 **HBM4E 16-Hi（第七代）或 HBM5 20-Hi（第八代）**。
+  ⚠ **90% 之口徑不明**（單站／堆疊／封裝後），不得與既載良率數字（Samsung HBM4 ~80%、玻璃面板 70–85%、有機 >90%）直接比較。
+- ⭐⭐ **「>12 層後散熱、良率、封裝三者同時成為瓶頸」** —— 記憶體廠把層數上限歸因於**熱**的第三個獨立表態
+  （既載兩個：Micron「架構圍繞熱管理」、Samsung HPB >35% 峰值溫降）⇒ 該讀法自候選**升格為成立**。
+- **SK hynix 於 Hot Chips 2026（2026-08-23）稱正為 20 層以上開發混合接合**（與既載「延後至 HBM5」一致）。
+- **熱阻改善百分比的對照基準問題（規範 66）**：
+  SK hynix HBM4E 12-Hi（48 GB、Advanced MR-MUF）**−17%，對照 HBM4**；
+  Samsung HCB（瞄準 16 層以上）**>−20%，對照 TCB**。**原文明示兩者不可比**；本 wiki 不得據此排序。
+- **NVIDIA 側（引 TrendForce，二手）**：Rubin Ultra 原計畫 HBM4E 12-Hi，現評估改用 HBM4 8/12-Hi 與 HBM4E 8-Hi，
+  原因為 DRAM 短缺下 HBM4E 12-Hi 供給受限；任何降規都可能**減少堆疊層數**。
+  ⚠ 與既載空缺「16-Hi HBM4 對賭的驗證——追蹤 NVIDIA Vera Rubin 各廠採用比例」直接相關，
+  但本輪資料為**計畫評估階段**，不足以結清。
+- 📌 **既載空缺「16-Hi HBM4 對賭」應擴充一維**：Samsung 既公開稱「16-Hi HBM4 沒有必要」，
+  又以 HCB 瞄準 16 層以上 ⇒ **同一公司在「層數主張」與「接合技術進度」上的位置可以相反；
+  公開的層數立場不可用來推斷接合技術進度。**
+- 來源：[[sources/2026-10-20_heraldcorp_skhynix-hybrid-bonding-90pct-yield-3-5yr-life-gate]]、
+  [[sources/2026-10-20_xenospectrum_samsung-sk-hynix-hybrid-bonding-sample-gap]]

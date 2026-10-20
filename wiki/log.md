@@ -5256,3 +5256,100 @@ warning: unable to unlink '.../.git/index.lock': Operation not permitted
   （前一輪之 766 已被移入 `.git/_stale_tmp_objs/`），`.git` 內任意深度 `*.lock` **6**
   （`.git/refs/heads/_old_main.lock` 為既存、未觸碰）。
 - ⚠ `main` 較 `origin/main` **ahead 3**（本輪提交後為 ahead 4）；推送仍由倉庫自身的 `daily_git_push.bat` 執行。
+
+## [2026-10-20] collect | 每日自動蒐集 — 先進封裝最新動態
+
+- 搜尋查詢數：新聞 8 組 / 專利 7 組（5 成功、2 回 404 後依 spec 簡化重試）/ 論文 3 組
+- 成功抓取：12 篇（articles/ 3, patents/ 5, papers/ 4, reports/ 0）
+- 失敗/跳過：10 篇（擷取失敗 1〔digitimes BOE 24 層玻璃基板，CLIENT_ERROR，未重試〕；
+  已收錄 3〔tomshardware 混合接合路線圖、tomshardware 玻璃基板路線圖、Siemens CPO 五大趨勢、
+  iconnect007 TSMC CoPoS —— 共 4 個 URL，其中 3 個以完整路徑 grep 攔下、1 個以 article id 攔下〕；
+  摘要轉載 1〔xenospectrum TSMC/EMIB-T 法說報導，與既載 stocktwits 來源高度重疊，獨有細節僅記於 raw 檔備查〕；
+  活動公告 1〔SEMI 3D & Systems Summit 新聞稿，無任何規格值，依 spec STEP 2 過濾〕；
+  低相關／不合格 4〔OpenAlex：zenodo 系預印本多件〔低信號刊物〕、無摘要 11 件依 §4.3 棄收、
+  以及明確非半導體封裝者〔聚酰亚胺單體回收、2D 材料 WBG 磊晶、RF 懸置線〕〕）
+- 資料源狀態：WebSearch ACTIVE ✓ | EPO OPS ACTIVE ✓（7 次 search、**0 次 detail**，依規範 64） | OpenAlex ACTIVE ✓
+- 新增 wiki 頁面：12 頁（全為 sources/：heraldcorp_skhynix-hybrid-bonding-90pct-yield-3-5yr-life-gate、
+  eetasia_tsmc-gf-interposer-deep-trench-capacitors、xenospectrum_samsung-sk-hynix-hybrid-bonding-sample-gap、
+  epo_resonac-wo2026078856a1-organic-dielectric-step-citric-acid、
+  epo_amkor-cn121620243a-double-sided-hybrid-bonding-rdl-substrate、
+  epo_asmpt-us20260290767a1-plasma-two-wavelength-ratio-monitoring、
+  epo_adeia-us20260082880a1-buildup-bonding-layer-low-temperature、
+  epo_evg-tw202621423a-two-stage-debonding-core-and-sealed-rim、
+  openalex_coaxial-shielded-tsv-as-cooling-structure、
+  openalex_acetherm-chiplet-thermal-simulation-in-design-loop、
+  openalex_iec63567-4-laser-dicing-geometry-standardisation、
+  openalex_cu-polymer-monolithic-multilayer-growth）
+- 更新 wiki 頁面：17 頁（technologies/hybrid-bonding、hbm4、cowos、rdl、foplp、glass-carrier、tsv；
+  concepts/test-metrology-packaging、thermal-management、power-delivery-packaging；
+  entities/sk-hynix、samsung、amkor、adeia、resonac、asmpt、ev-group、tsmc、globalfoundries、applied-materials；
+  overview.md、index.md、log.md —— 計 technologies 7 + concepts 3 + entities 10 + 根目錄 3 = 23 檔，
+  其中 index/log/overview 為例行維護頁，實質內容更新為 20 頁）
+- 主要新知識：⭐⭐⭐ **混合接合的導入門檻首次由買方量化，且是二維的** —— SK hynix America 資深總監
+  Kim Ji-hoon 於 San Jose SEMI 論壇明示**良率 90–98% ∧ 壽命 3–5 年**為不可妥協，公司不為跟上堆疊競賽而下調。
+  本 wiki 既載限制鏈（①表面平坦度 ~0.2 nm > ②die 翹曲 <100 nm > ③機台對準 100 nm）全為製程能力數字，
+  2026-09-18 所列候選限制項「良率經濟／重工成本」此前僅有 Intel 2023-09 作間接佐證 ⇒ 本篇為首個驗收端門檻，
+  且**壽命維度為本 wiki 首見**（立規範 65）。
+  ⭐⭐⭐ **Cu recess 的「最佳值是區間」同輪兩處修正**：上界機制不唯一（「間隙不閉合」之外另有「分層」），
+  且 Resonac WO2026078856A1 以**有機介電體系**給出第三種成因（step D 是刻意以氬電漿造出、用以吸收熱膨脹差的設計值）
+  ⇒ **同一參數在不同介電體系下由不同失效模式定義最佳值；既載 recess 規格須加註「無機介電體系」適用邊界。**
+  ⭐⭐⭐ **「接合當下表面還剩多少氧化物、用什麼除掉」拆為化學支與量測支** —— 化學支取得第二個獨立落點
+  且與既載（上海大學）**收斂到同一試劑（檸檬酸）**，而來源類型與地域完全不同；
+  量測支首見：**ASMPT US20260290767A1 與 EVG WO2026098776A1 兩家競爭設備商同年各自就電漿腔體狀態監測布局**。
+  ⭐⭐ **「缺量測口徑 ⇒ 學界／標準先行」自呼籲推進至草案**（IEC 63567-4 把切割品質拆成五項並要求記錄量測條件），
+  且使「同一名詞涵蓋多個獨立驗收項」擴及切割品質（立規範 68）與改善百分比（立規範 66）。
+- 專利訊號：本輪五件專利的共同方向是**把控制權從「製程當下的收斂能力」移往「可事先設定或可事先驗證的量」** ——
+  Resonac 把 recess 自 CMP 殘留改為電漿造形的設計值、Adeia 把接合面高度自 CMP 去除量改為沉積厚度、
+  ASMPT／EVG 把電漿效果自信念改為可量的比值、EVG 把解接合自單一事件改為分區兩步；
+  Amkor 則把混合接合的接合面自晶粒外移到 RDL 基板。
+  ⚠ **五件全部零量化值**，依專利訊號原則均不得陳述為已量產能力。
+
+### 本輪作業面記錄 / Operational Notes
+
+- ✅ ⭐ **去重零失誤：2026-10-19 所立規範（63）首次實測有效。**
+  本輪對每個候選 URL 以「網域＋完整路徑」整串 `grep -F` 比對（先把 `_collected_urls.txt` 第二欄抽成清單），
+  攔下 **4 個已收錄 URL**（tomshardware ×2、Siemens CPO、iconnect007 CoPoS）。
+  ⚠ **其中 iconnect007 一例值得記錄**：以「最後一段路徑」（`/design`）作 slug 比對時得 13 個偽命中，
+  改以 `article/150441` 與完整標題 slug 比對才正確判定為已收錄
+  ⇒ 📌 **補充規範（63a）：slug 比對不得取 URL 最後一段（許多站以 `/design`、`/ein` 等欄位名結尾），
+  應取標題段或站內 article id。**
+- ✅ **登錄後逐筆驗證**：12 行新登錄之識別碼各自 `grep -F -c` 均為 1，且 12 個 raw 檔路徑皆存在（見驗證步驟）。
+- ⚠ **檔名日期前綴依既有慣例改為「項目自身發布日」而非 collect 日**（本輪寫出後以 `mv` 統一更正；
+  登錄檔第一欄仍為 collect 日 2026-10-20）。⇒ 📌 **spec STEP 5 之檔名範例寫作 `YYYY-MM-DD_...`，
+  未明示該日期為發布日或蒐集日；repo 既有慣例為發布日。建議於 spec 中補明，以免逐輪重新判斷。**
+- ⚠ **EPO OPS 查詢式兩次 404**：`ti,ab="through glass via" or ti,ab="glass core substrate" and pd within "2026"`
+  雖回 200 但運算優先序可疑（總命中 4 件）；
+  `cpc="H01L24/80" and ti,ab="hybrid bonding" and pd within "2026"` 與
+  `(ti,ab="panel level packaging" or ti,ab="fan-out panel") and pd within "2026"` 各回 **404**
+  ⇒ 依 spec 之錯誤處理簡化為單一 `ti,ab="hybrid bonding" and pd within "2026"`（38 件）後成功。
+  📌 **實測結論：OPS 對「括號 + or + and pd within」之組合支援不穩定；
+  下輪應優先採「單一 ti,ab 片語 + pd within」或「pa=... + pd within」兩種已驗證形式，
+  並放棄 2026-10-19 所建議之 CPC 檢索（`cpc="H01L24/80"` 併技術詞即 404；
+  若要走 CPC 應單獨下 `cpc=` 而不與 ti,ab 併用）。**
+- ⚠ **設備商輪替結果：ASMPT 命中多但相關度低（規範 58 的第三個實例）。**
+  `(pa="be semiconductor" or pa="ev group" or pa="asmpt") and pd within "2026"` 得 **73 件**，
+  前 25 件中 ASMPT 佔多數且幾乎全為 SMT／打線／印刷機具（自動穿線、鋼板分離、料倉、廢料處理、壓機調平、點膠、切割）；
+  **Besi 在此查詢中零命中**（與 2026-10-19 否證 `besi austria`／`datacon` 之結果一致）
+  ⇒ 📌 **Besi 的排他權歸屬仍未解；下輪改自 Besi 年報揭露之專利家族數反查，或單獨以 `cpc=` 檢索（見上）。**
+- ⚠ **OpenAlex 的低信號刊物污染本輪特別嚴重**：三組查詢 69 個唯一結果中，
+  zenodo 系預印本達 10 件以上（標題含「MICROSOFT MAIA 300 // N2P MULTI-CHIPLET // 288GB HBM4.」一類），
+  另有 11 件無摘要（依 §4.3 棄收）
+  ⇒ 📌 **建議於 spec §4.3 之「跳過」清單明文加入「zenodo 等無同儕審查之自助存檔平台，除非作者機構明確且內容可查證」。**
+- ⚠ **既載最高優先人工待辦未變更且本輪未複查**：`origin` remote URL 內嵌明文 GitHub personal access token
+  （自 2026-10-07 列管）。**本流程不代為變更憑證設定。**
+  建議①撤銷並重新產生 token；②改用 credential helper 或 SSH key；
+  ③`git remote set-url origin https://github.com/shpeng1996/advpkg.git`。
+- ⚠ 既載待辦「Windows 側 `git gc --prune=now`」維持（2026-10-19 量得 `tmp_obj_*` 766，為歷輪最高）。
+- ✅ **排程連續性**：`log.md` 最末 collect 日期為 2026-10-19，與本輪日期落差 1 日，**無缺漏輪次**。
+- ✅ **git commit：本輪由本流程自行完成（未依賴 `daily_git_push.bat`）。**
+  - **提交「2026-10-20」，48 個檔案**（12 新 raw ＋ 12 新來源頁 ＋ 23 更新頁 ＋ `_collected_urls.txt` 12 行追加；
+    1,966 insertions / 25 deletions）。事後 `git status --porcelain` 為 **0 行（乾淨）**。
+  - ✅ **規範（53a）續行**：刪除權限全程未申請，git 步驟在 ingest 完成後立即執行。
+  - ⚠ commit 期間 git 因無刪除權限留下 `.git/HEAD.lock`（並印出多則 `tmp_obj_*` unlink 警告）；
+    依環境指引**未申請權限**，改以 `mv` 重新命名為 `.git/stale-HEAD-lock-20261020`（直接置於 `.git/` 下，未置於 `.git/refs`）。
+    事後 `git status`／`git log`／`git rev-parse` 均正常 ⇒ **後續 git 指令（含使用者自己的）不受阻。**
+  - ⚠⚠ **鎖檔與暫存物件量測（對照 2026-10-19）**：`tmp_obj_*` **833**（10-19 為 766，**淨增 +67**，續創歷輪最高）；
+    `stale-*` 20；`.git` 內任意深度 `*.lock` **6**（含既存之 `.git/refs/heads/_old_main.lock`，依指引**未觸碰**）。
+  - ⚠⚠⚠ **既載待辦「Windows 側 `git gc --prune=now`」維持且更形必要。**
+  - ✅ **`main` 較 `origin/main` ahead 1、behind 0**（上輪記為 ahead 2 ⇒ 期間 `daily_git_push.bat` 已推送過；
+    本輪不 push，推送仍交由倉庫自身排程）。

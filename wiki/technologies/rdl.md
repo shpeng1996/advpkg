@@ -3,7 +3,7 @@ title: "RDL — 重分佈層 / Redistribution Layer"
 category: technology
 tags: [RDL, SAP, dual-damascene, embedded-trace, ETR, polyimide, FPIM, CMP, electromigration, panel-level, pad-less-via]
 created: 2026-09-26
-updated: 2026-10-15
+updated: 2026-10-20
 sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2026-09-27_paper_purdue-ru-cu-em-lifetime-blacks-n-0154, 2026-09-27_paper_copper-interconnect-scaling-roadmap-lines-per-mm, 2026-09-26_article_taiyo-imec-700nm-damascene-rdl, 2026-09-26_article_imec-1um-damascene-rdl-2019-anchor, 2026-09-26_article_amkor-embedded-trace-rdl, 2026-09-26_paper_asi-1um-hdbu-substrate, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-25_paper_dnp-glass-rdl-electromigration-lifetime, 2026-09-25_paper_cornell-glass-on-glass-sio2-rdl, 2026-09-25_paper_asu-molded-core-substrate-warpage, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_shanghai-xianfeng-cn122622683a-glass-interposer-bridge, 2026-10-02_imaps-dpc2026_defect-free-coplanar-copper-via-fill, 2026-10-06_epo_intel-mold-extension-package-to-package-topside-bridge, 2026-10-06_openalex_gatech-terahertz-nde-8layer-interposer, 2026-10-07_epo_amkor-bspdn-oriented-package-embedded-ipd, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-07_openalex_amkor-kelly-three-interposer-routes, 2026-10-08_rdl-free-glass-interposer-trench, 2026-10-08_pku-embedded-glass-fanout-roughness, 2026-10-08_samsung-stacked-rdl-package-bspdn-layer, 2026-10-09_keti-tgv-defect-spectrum-plugging-review, 2026-10-13_additive-patterning-and-metal-density-as-warpage-knob]
 related:
   - wiki/technologies/foplp.md
@@ -708,3 +708,38 @@ Scrona 明文把「嚴格的基板平坦度要求」指認為**傳統微影路�
 
 - ⭐⭐ **玻璃核上的 Cu RDL 分為兩條架構**（direct-on-glass vs polymer build-up），各自的限制清單互不重疊；並附方法論警告「最小線寬 ≠ 設計規則」。見 [[sources/2026-10-15_glass-core-cu-rdl-review-feature-size-caveat]]。
 - ⭐⭐ **噴墨列印（SUSS MicroTec, IMAPS DPC 2026）**：主張旋塗／噴塗已逼近物理與經濟極限，噴墨可成形**光阻、介電層、雷射解離層與暫時接合膠**，且**免曝光顯影即可圖案化** ⇒ 「免光罩」路線的第三個落點，且首次落在**材料塗佈**而非圖案化。⚠ 設備商自述、零數值。見 [[sources/2026-10-15_suss-inkjet-additive-packaging]]。
+
+## [2026-10-20] 混合接合移到「基板界面」；以及「逐層」這個前提首次被方法學挑戰
+
+### 一、RDL 基板本身成為混合接合的接合面（專利訊號）
+
+**Amkor CN121620243A**（fam 98776443，2026-03-06 公開）請求項：
+RDL 基板第一面以**第一次混合接合**接晶圓組件，第二面以**第二次混合接合**接電子元件，
+且**第二接合界面落在第一接合界面的 footprint 之內**，垂直互連沿該元件側壁配置。
+
+- ⭐⭐⭐ **混合接合的使用位置自「晶粒對晶粒」外移至「晶圓組件對 RDL 基板」，本 wiki 首見。**
+- ⭐⭐⭐ **「局部高密度／橋的維度」軸新增維度：接合的面數（single- vs double-sided）。**
+  請求項把局部高密度區定義為**上下對齊的同一塊 footprint**，
+  是既載 Deca US20260136970A1「橋 footprint 內／外兩種 pitch」在**垂直方向**的版本；
+  與既載 Adeia US20260247631A1 所增之「側（sidedness）」維度互補（Adeia 談橫向並置、本件談上下兩面）。
+- ⚠⚠ **新空缺**：既載限制鏈①（表面平坦度 ~0.2 nm）之量測對象皆為晶圓／晶粒；
+  **RDL 基板尺度能否達到同一規格，本 wiki 無任何資料。**
+- ⚠ 零量化值（無節距、無層數、無尺寸）；依專利訊號原則不得視為 Amkor 已具雙面混合接合量產能力。
+- 來源：[[sources/2026-10-20_epo_amkor-cn121620243a-double-sided-hybrid-bonding-rdl-substrate]]
+
+### 二、「layer-by-layer」前提被方法學挑戰（列開放問題，不改既有規格）
+
+**Purdue（Tiwei Wei 等）以工程化等孔徑高分子模板引導銅原位、整體式（monolithic）跨層成長，已驗證 10 個相異層**，
+表徵稱連續銅成長、共格界面、**無氧化物之銅區**、貫穿厚度電性連通；宣稱相較逐層製程簡化構築並有潛力縮短 ECD 時間。
+
+- 本 wiki 的 RDL 論述與既載上海美維「逐層 CMP」方案**皆建立在 layer-by-layer 流程上**，
+  並已列管空缺「堆疊層數上限與 CMP 累積次數的良率代價」。
+  若整體式成長成立，**該空缺的形式會改變（CMP 次數不再與層數線性相關）**。
+- ⚠⚠ 本件**完全未提 CMP、平坦度、線寬／間距** ⇒ 無法與既載 Lam「細線 RDL <5 µm L/S」、
+  imec 試產線 1.3 µm、層數上限 12 層等規格對照。**本頁所有既有規格不變**，僅列為開放問題。
+- ⚠ 刊物為 ACS Applied Materials & Interfaces（材料期刊），封裝相關性為**方法學層級、非產品層級**；
+  無良率、可靠度、電阻率數字。
+- ⭐ 另記：其「**無氧化物之銅區**」是既載手法「把問題移進材料／成長製程裡」的第四個落點
+  （第三個為 Atotech 穩定化細晶 Cu，換到的是時間 >4 週 vs 16 h），
+  且方向是**不要生成**而非**事後除掉** —— ⚠ 但**不得套用於混合接合界面**（尺度與用途不同）。
+- 來源：[[sources/2026-10-20_openalex_cu-polymer-monolithic-multilayer-growth]]

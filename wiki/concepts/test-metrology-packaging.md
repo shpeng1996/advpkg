@@ -3,7 +3,7 @@ title: "先進封裝的測試、量測與失效分析 / Test, Metrology & Failur
 category: concept
 tags: [test, metrology, inspection, failure-analysis, KGD, KGI, KGP, DFA, yield]
 created: 2026-09-17
-updated: 2026-10-19
+updated: 2026-10-20
 sources: [2026-09-27_paper_binghamton-ibm-pad-scaling-resistance-variability, 2026-09-27_paper_purdue-ru-cu-em-lifetime-blacks-n-0154, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2025-01-14_semieng_known-good-interposer-screening, 2025-07-10_semieng_advanced-packaging-reshaping-inspection, 2024-11-12_semieng_packaging-drives-test-metrology-innovation, 2026-08-01_jfap_3dic-failure-analysis-dfa, 2026-07-06_apl_lensless-through-silicon-phase-imaging, 2026-09-06_ndte_hysan-sparse-view-xct-tsv, 2026-08-02_chips_cpo-wafer-level-probe-card, 2026-08-27_samsung_us20260256000a1-interposer-test-pad, 2026-08-13_jcet_us20260239928a1-hybrid-bonding-substack-test, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-06-28_hyperframe_amat-hybrid-bonding-hedge, 2026-09-26_paper_ibm-amine-post-cmp-clean, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-10-02_microrel_tudelft-google-3dic-fa-hardware, 2026-10-02_imaps-dpc2026_gelpak-universal-carriers-singulated-die, 2026-10-06_openalex_gatech-terahertz-nde-8layer-interposer, 2026-10-06_openalex_tongji-wafer-embedded-pitch-standard-pose-correction, 2026-10-06_thelec_sec-xray-tsv-tgv-inspection-1um, 2026-10-07_semieng_kelvin-resistance-probe-access-pitch-limit, 2026-10-07_openalex_amkor-kelly-three-interposer-routes, 2026-10-07_epo_besi-deformable-die-forming-bond-tool, 2026-10-08_silverbrook-known-good-site-substrate-test, 2026-10-08_ase-probing-needle-scrub-length, 2026-10-08_formfactor-45um-probe-pitch-good-enough-die, 2026-10-08_advantest-singulated-die-test-thermal, 2026-10-09_tsmc-cantilever-probe-card-patent, 2026-10-09_tsmc-impedance-control-probing-patent, 2026-10-09_intel-voltage-contrast-backside-patent, 2026-10-09_ieie-probe-card-mlc-signal-integrity, 2026-10-09_hdin-probe-card-market-pin-count, 2026-10-09_quantware-qpu-measurement-stage-patent, 2026-10-13_microbump-as-radiator-and-the-stand-in-problem, 2026-10-13_cpo-bottleneck-test-800x-area-mismatch, 2026-10-13_onto-cmp-second-independent-source, 2026-10-13_amkor-cavity-as-allocated-volume]
 related:
   - wiki/technologies/hybrid-bonding.md
@@ -1549,3 +1549,69 @@ ZEISS：暴力式高解析 X-ray 掃描產生 **"gigabytes ... or terabytes wort
 是造成已發表值離散超過一個數量級的原因之一。
 ➜ 📌 **規範（62）：引用任何翹曲數字必須標註 ①製程階段 ②載板在否 ③支撐條件 ④翹曲定義。**
 本頁既載「翹曲是第一個有數字證明與代理量脫鉤的實例」（2026-09-20）**取得綜述層級的支持**。
+
+## [2026-10-20] ⭐⭐⭐ 「缺量測口徑⇒標準」首次進入 IEC 草案；電漿腔體狀態成為可量測量
+
+### 一、切割品質不是一個量：IEC 63567-4 草案把它拆成五項並要求記錄量測條件
+
+**Journal of Standards, Certification and Safety（Jong Wan Ko、하정홍），2026-09-30**：
+
+- **既有標準的缺口**：術語、晶圓／晶粒搬運、晶圓平坦度、**晶粒強度**、晶粒貼附完整性**各自有 IEC／SEMI 標準**，
+  **但無整合方法評估「切割線與側壁」之尺寸與幾何品質**。
+- **IEC 63567-4 草案所訂評估項（五項）**：切割線**直線度**、**位置偏差**、側壁**錐度**、側壁**平坦度**、**崩缺（chipping）**；
+  **並要求測試報告記錄量測條件與結果**。
+- 宣稱目的含**設備供應商與使用者之間的品質協議**；動機明載為 HBM／chiplet／3D 堆疊使薄晶圓精確單粒化之重要性上升。
+
+**為何重要**
+
+- ⭐⭐⭐ **既載「缺量測口徑時學界先行」（2026-10-19 立，以 Kookmin FOPLP 翹曲綜述呼籲最低報告要求為例）
+  取得第二個獨立落點，且推進一階：不只是呼籲，而是已進入 IEC 草案並明訂「須記錄量測條件」。**
+  ➜ 該命題自「兩支」升格為「兩支＋一條制度化路徑（**呼籲 → 草案 → 標準**）」。
+- ⭐⭐⭐ **「同一名詞涵蓋多個獨立驗收項」自粗糙度擴及到「切割品質」。**
+  既載版本為 TGV 側壁粗糙度（25 nm–1.257 µm）vs 混合接合 Ra（<0.1–0.2 nm），相差 2–4 個數量級。
+  ➜ 📌 **立作業規範（68）：引用任何切割相關數字須標註量的是五項中的哪一項。
+  既載 Resonac「電漿切割道寬 1 µm」應明記為「單一項（道寬）」，不得當作切割品質的總結指標。**
+- ⭐⭐ **與既載「KGD 的標準化定義」空缺（2026-09-17 列管）直接相關。**
+  此前唯一部分解為 OCP/JEDEC **PTDK**（測試資料交付格式）。本件補上**切割後幾何品質之驗收**，
+  且明文以供應商／使用者之品質協議為目的
+  ➜ 📌 **KGD 的制度化是逐項堆積的，不是單一定義；空缺提問方式改為
+  「目前已被標準化的是哪幾項、還缺哪幾項」。**
+- ⚠ **IEC 63567-4 為草案（draft），非生效標準**；本文為標準趨勢回顧，**無任何實測數值**。
+  ⚠ OpenAlex 作者欄有機構名誤入作者位、機構欄為空。
+- 來源：[[sources/2026-10-20_openalex_iec63567-4-laser-dicing-geometry-standardisation]]
+
+### 二、電漿腔體狀態：兩家競爭設備商同年各自布局監測排他權
+
+- **ASMPT US20260290767A1**（fam 98974865，2026-09-24）：量**待監測波長**強度與**作為基線之第二波長**強度，
+  **比較兩者關係是否落在可接受門檻內** —— 典型**自我歸一化**設計，可抵銷窗口結垢與光源老化。
+- **EV Group WO2026098776A1**（fam 93460736，2026-05-15，CPC H01J37/3292x–3299 與前者高度重疊）：
+  電漿腔體（特別是**週期性處理同型基板**之腔體）運作狀態之監測方法與裝置。
+  ⚠ 摘要過短、無技術細節，**本輪未建 raw 檔、未經 ingest，僅記錄於此與 ASMPT 來源頁。**
+
+**為何重要**
+
+- ⭐⭐⭐ **既載量測失效模式第五類「工具攜帶的狀態在批次間傳遞」（2026-10-19 以 PVAc 清洗刷具把 Ce 自前一片帶到下一片為首例）
+  自「失效模式」擴充出「對策面」：以同一腔體內的另一條訊號作基線。**
+  單一絕對強度無法分辨「電漿變弱」與「光路變髒」；比值可。
+- ⭐⭐⭐ **兩家互相競爭的接合／前處理設備商在同一年度各自指認同一問題。**
+  依既載讀法「排他權密度是廠商自認瓶頸所在最誠實的指標」，
+  **電漿活化的腔體狀態控制正被設備側同時指認為問題。**
+  ➜ 📌 **追蹤：第三家（Besi／AMAT／K&S）是否出現同類布局；若出現即可把
+  「電漿活化的腔體狀態是獨立失效面向」自候選升格。**
+- ⭐⭐ **既載空缺「接合當下表面還剩多少氧化物、用什麼除掉」應拆為兩支**：
+  **除掉的手段**（Ar/H₂ 電漿、檸檬酸〔上海大學／本輪 Resonac〕、K&S 設備內建還原氣體埠）
+  與**驗證的手段**（本輪 ASMPT／EVG，為量測面之首見落點）。
+- ⚠ ASMPT 件之對象為一般性 "an object"，未指明混合接合晶圓；ASMPT 同時經營 SMT 與半導體設備
+  （本輪 `pa="asmpt"` 命中 73 件，多數為 SMT／打線／印刷機具）⇒ 不得逕認為混合接合專用。
+- 來源：[[sources/2026-10-20_epo_asmpt-us20260290767a1-plasma-two-wavelength-ratio-monitoring]]
+
+### 三、熱仿真進入設計迴圈（EDA 側一手來源）
+
+- **AceTherm（USTC，ACM TODAES，2026-10-19）**：以 **GDS 版圖＋PDK 製程參數**驅動、
+  結合**非貼合（non-conformal）FEM** 與客製稀疏求解器的自動化熱仿真框架；
+  **網格劃分與取樣解析度構成兩級精度／速度取捨控制**。
+- ⭐⭐ 為本頁補上**EDA 側一手來源**（本頁既有來源以設備商與 OSAT 為主）。
+- ⚠⚠ **摘要在 "AceTherm employs supernodal spa…" 處截斷（OpenAlex 倒排索引本身為截斷版），
+  加速倍率與誤差百分比未入庫；無與矽實測之校正** ⇒ **不得據此宣稱任何精度或加速幅度。**
+  📌 **列下輪取全文項（依規範 39，次輪開場先 grep `_collected_urls.txt` 確認是否已取得）。**
+- 來源：[[sources/2026-10-20_openalex_acetherm-chiplet-thermal-simulation-in-design-loop]]

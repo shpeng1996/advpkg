@@ -3,7 +3,7 @@ title: "三星 / Samsung"
 category: entity
 tags: [IDM, foundry, memory, advanced-packaging, X-Cube, HBM, ISSCC2026, I-CubeS, LPDDR6, V10-BV-NAND, zHBM, HBM5, FMS-2026, ECC, reliability]
 created: 2026-04-24
-updated: 2026-10-14
+updated: 2026-10-20
 sources: [2026-09-27_samsung_us20260144093a1-bridge-on-tgv-mold-fixed, 2026-08-26_trendforce_openai-jalapeno-samsung-hbm4, 2026-08-26_trendforce_samsung-gaia-pim-4nm-2027, 2026-08-24_trendforce_hot-chips-2026-samsung-zhbm-skhynix-emib, 2026-08-17_trendforce_samsung-skhynix-1h26-investment-nvidia-absent, 2026-08-14_trendforce_samsung-nrdk-line2-2nm-hbm5-base-die, 2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor, 2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2025-12-30_trendforce_samsung-hbm-surge, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2025-08-05_3dincites_iftle636, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit, 2026-06-10_trendforce_samsung-gwangju-packaging-base, 2026-06-12_digitimes_samsung-packaging-gap-tsmc-intel, 2026-06-15_trendforce_skhynix-hbm4e-sample-timeline-pulled-forward, 2026-06-19_techtimes_vera-rubin-hbm4-suppliers, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-24_techtimes_sk-hynix-dethroned-samsung-ddr5-hbm4, 2026-07-03_trendforce_anthropic-samsung-advanced-packaging, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-07-02_trendforce_samsung-hbm-dummy-die-patent, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo, 2026-07-07_trendforce_samsung-q2-2026-record-krw894t, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-02_trendforce_samsung-sf2p-plus-tsmc-n2-roadmap, 2026-07-14_trendforce_samsung-hbm-hiring-hbm4-hbm4e-hbm5, 2026-07-21_trendforce_samsung-cxl-32-skhynix-imte, 2026-07-24_trendforce_skhynix-3d-stacked-dram-on-logic-on-device-ai, 2026-09-30_epo_intel-us20260191037a1-localized-embedded-bridge-in-core, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-10-02_epo_samsung-cn122602880a-ivr-capacitor-interposer-core, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_semco-cn122054433a-glass-surface-roughness, 2026-10-08_samsung-stacked-rdl-package-bspdn-layer, 2026-10-13_samsung-hbm-33pct-hcb-vs-mrmuf, 2026-10-13_hbm-share-of-accelerator-cost]
 related:
   - wiki/entities/tsmc.md
@@ -885,3 +885,17 @@ Samsung 於 2025-03 公開之專利顯示：**三層重佈線基板交替堆疊�
 
 詳見 [[technologies/glass-substrate]] 之 2026-10-14 段。
 來源：[[sources/2026-10-14_samsung-glass-core-interposer-filler-free-inner-layer]]
+
+## [2026-10-20] HCB 與「16-Hi 沒有必要」並存：層數主張不可用來推斷接合技術進度
+
+- **可查證**：2026-03-17（GTC）發表 **Hybrid Copper Bonding（HCB）**，瞄準**16 層以上**次世代 HBM，
+  宣稱熱阻**較 TCB 降低「超過 20%」**。⚠ 原文明載**此非量產宣告**；
+  依本輪立之規範 66，此 **>20% 必須連同「對照 TCB」一併引用**，
+  **不得與 SK hynix 之「−17%（對照 HBM4／MR-MUF）」比較大小。**
+- ⚠⚠ **待證訊號（不列為事實）**：Damnang（付費牆）報導轉述稱 **Samsung 已出貨混合接合樣品、SK hynix 受困**；
+  證據鏈為「付費牆 → 單一工程師個人見解 → 二手轉述」，兩家公司均未確認。
+- 📌 **本輪新增之讀法**：既載 Samsung **公開稱「16-Hi HBM4 沒有必要」**，
+  同時以 HCB 瞄準 16 層以上 ⇒ **同一公司在「層數主張」與「接合技術進度」上的位置可以相反；
+  公開的層數立場不可用來推斷其接合技術進度。**
+  ➜ 既載空缺「16-Hi HBM4 對賭的驗證」應據此擴充一維。
+- 來源：[[sources/2026-10-20_xenospectrum_samsung-sk-hynix-hybrid-bonding-sample-gap]]
