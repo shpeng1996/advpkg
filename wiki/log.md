@@ -5468,3 +5468,18 @@ warning: unable to unlink '.../.git/index.lock': Operation not permitted
   建議①撤銷並重新產生 token；②改用 credential helper 或 SSH key；
   ③`git remote set-url origin https://github.com/shpeng1996/advpkg.git`。
 - ⚠ 既載待辦「Windows 側 `git gc --prune=now`」維持（2026-10-20 量得 `tmp_obj_*` 833，為歷輪最高）。
+
+### git 步驟（2026-10-21，本流程自行完成）
+- ✅ **提交「2026-10-21」（fb48fa2），63 個檔案**（15 新 raw ＋ 15 新來源頁 ＋ 31 更新頁
+  ＋ `_collected_urls.txt` 15 行追加；**2,986 insertions / 33 deletions**）。
+  事後 `git status --porcelain` 為 **0 行（乾淨）**。
+- ✅ **規範（53a）續行**：**刪除權限全程未申請**，git 步驟在 ingest 完成後立即執行。
+- ⚠ **git 因無刪除權限留下鎖檔，依環境指引未申請權限、改以 `mv` 重新命名處置**（皆直接置於 `.git/` 下，未置於 `.git/refs`）：
+  - 首次 `git add -A` 留下 `.git/index.lock` → `.git/stale-index-lock-20261021`（該次 add 因此未生效，重跑後成功）
+  - `git commit` 留下 `.git/HEAD.lock` → `.git/stale-HEAD.lock-20261021`
+  - 期間另印出多則 `tmp_obj_*` unlink 警告（非致命）。
+  事後 `git log`／`git status`／`git rev-parse` 均正常 ⇒ **後續 git 指令（含使用者自己的）不受阻。**
+- ⚠⚠ **鎖檔與暫存物件量測（對照 2026-10-20）**：`tmp_obj_*` **911**（10-20 為 833）；
+  `stale-*` **22**；`.git` 內任意深度 `*.lock` **6**（含既存之 `.git/refs/heads/_old_main.lock`，依指引**未觸碰**）。
+- ⚠⚠⚠ **既載待辦「Windows 側 `git gc --prune=now`」維持且更形必要。**
+- ✅ **`main` 較 `origin/main` ahead 1、behind 0**；**本輪不 push**，推送仍交由倉庫自身排程（`daily_git_push.bat`）。
