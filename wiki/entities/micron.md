@@ -3,7 +3,7 @@ title: "美光科技 / Micron Technology"
 category: entity
 tags: [memory, HBM4, DRAM, NAND, CapEx, Virginia, Idaho, New-York, onshoring]
 created: 2026-05-03
-updated: 2026-10-13
+updated: 2026-10-21
 sources: [2026-09-27_semieng_chip-week-156-india-tata-besi-izmo, 2025-12-18_trendforce_micron-capex-hbm4, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-03-17_trendforce_gtc2026-key-takeaways, 2025-08-05_3dincites_iftle636-samsung-lsb-micron-virginia, 2026-01-23_trendforce_hbm4e-development, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-26_semieng_chip-week-144, 2026-06-25_thelec_micron-q3-fy2026-record, 2026-07-06_trendforce_micron-hiroshima-fab-hbm-1gamma, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-10_tomshardware_micron-250b-us-investment-globalwafers, 2026-07-10_semieng_chip-week-146, 2026-08-21_semieng_chip-week-152, 2026-10-06_epo_micron-interposer-embedded-active-buffers, 2026-10-08_micron-cryogenic-package-hea-solder, 2026-10-13_hbm-share-of-accelerator-cost, 2026-10-13_samsung-hbm-33pct-hcb-vs-mrmuf]
 related:
   - wiki/technologies/hbm4.md
@@ -416,3 +416,19 @@ Micron 於 2026-09 公開之專利顯示：**基板含金屬核心，其強度�
 - ⇒ 📌 **Micron 之 base die 代工歸屬仍未指名**（既載：SK hynix → TSMC 12 nm 級、Samsung → 自家 4 nm、**Micron 未指名**）；本輪 HBM 佔加速器製造成本 **46–64%** 之數字使該空白的重要性上升。
 
 來源：[[sources/2026-10-13_hbm-share-of-accelerator-cost]]、[[sources/2026-10-13_samsung-hbm-33pct-hcb-vs-mrmuf]]
+
+---
+
+## 2026-10-21 更新：HBM 高度上限的決定者首次具名（含需求側）
+
+**來源**：[[sources/2026-10-21_digitaltoday_jedec-height-eased-55um-who-agreed-unitest]]（DigitalToday, 2026-07-24）
+
+- **同意把 JEDEC HBM 高度上限自 720 µm 提高至約 775 µm（+約 55 µm）的參與方**：
+  **Samsung、SK hynix、Micron、NVIDIA、AMD**（本 wiki 首見具名清單）。
+- ➜ 📌 **本公司在此列中，意即 HBM 的世代參數同時由供應端與需求端在標準組織內共同決定。**
+  本 wiki 此前把 JEDEC 高度規格當成**外生約束**處理，應改為**由五方共同議定的內生變數**。
+  與既載「SK hynix 明示混合接合導入門檻為良率 90–98% ∧ 壽命 3–5 年（買方門檻）」同屬
+  **需求側參與技術節奏決定**之證據。
+- ⚠ **本輪來源未指明設定 775 µm 的 JEDEC 文件編號**（僅就 HBM4 介面規格引用 JESD270-4）
+  ⇒ 該數字應標為「依多個二手來源一致」而非「標準明訂」。
+- ⚠ 二手報導、單一來源；本件日期 2026-07-24。

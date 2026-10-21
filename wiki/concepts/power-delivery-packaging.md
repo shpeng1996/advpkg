@@ -3,7 +3,7 @@ title: "封裝層的供電網路 / Power Delivery Networks at the Package Level"
 category: concept
 tags: [PDN, power-delivery, vertical-power, eVR, capacitor, inductor, passive-integration, hybrid-bonding, rack-power]
 created: 2026-09-29
-updated: 2026-10-20
+updated: 2026-10-21
 sources: [2026-09-29_imaps-dpc2026_nanoporous-silicon-capacitor-pdn, 2026-09-29_imaps-dpc2026_saras-stile-evr-vertical-pdn, 2026-09-29_semieng_tech-paper-roundup-sept29-multikw-3dhi-pdn, 2026-09-29_semiwiki_ofc2026-siph-cpo-oci-ocs-summary, 2026-09-30_arxiv_umn-multi-kw-power-delivery-3d-hi, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_epo_intel-jp2026116680a-glass-core-embedded-inductor-clusters, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_imaps-dpc2026_delo-die-side-capacitor-encapsulation, 2026-10-02_epo_samsung-cn122602880a-ivr-capacitor-interposer-core, 2026-10-02_jmmm_tyndall-fecob-n-pwrsoc-magnetics, 2026-10-02_epo_amd-us20260282956a1-silicon-bridge-decap, 2026-10-06_openalex_auburn-nife-tsv-magnetic-shield-package, 2026-10-07_epo_amkor-bspdn-oriented-package-embedded-ipd, 2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-08_semieng_voltage-regulation-in-package, 2026-10-08_ferric-fe1766-current-density-denominator, 2026-10-08_empower-crescendo-regulator-side, 2026-10-08_zju-8module-fivr-current-sharing, 2026-10-08_samsung-stacked-rdl-package-bspdn-layer, 2026-10-08_ibm-w2w-bonded-deep-trench-capacitor, 2026-10-08_etron-liquid-through-substrate-cavity, 2026-10-09_infineon-tdm2354-dual-phase-denominator, 2026-10-09_infineon-tdm2454-quad-phase-denominator, 2026-10-09_semiwiki-tsmc-oip-2026-verification]
 related:
   - wiki/concepts/thermal-management.md
@@ -922,3 +922,87 @@ Tyndall National Institute × University College Cork（JMMM，2026-09-02）：�
 - ➜ 📌 **新增空缺：CoWoS-S 中介層的 DTC 是既有能力的延伸採購，還是 CoWoS 首次納入中介層內建被動元件？
   其去耦目的（PDN 阻抗／PSIJ／其他）為何？追蹤方式：TSMC 或 GF 對 DTC 於 CoWoS 用途的任何技術說明。**
 - 來源：[[sources/2026-10-20_eetasia_tsmc-gf-interposer-deep-trench-capacitors]]
+
+---
+
+## 2026-10-21 更新：去耦電容往封裝內移已有三種整合途徑，且其中一種已是量產商品
+
+**來源**：[[sources/2026-10-21_empower_ecap-substrate-embedded-silicon-capacitors-in-mass-production]]
+（Empower 新聞稿, 2026-02-10）、
+[[sources/2026-10-21_epo_tsmc-dtc-as-ipd-with-common-grounded-tsv]]（US20260314447A1, 2026-10-08）、
+[[sources/2026-10-21_epo_tsmc-air-gap-isolates-deep-trench-capacitors]]（US20260304799A1, 2026-10-01）、
+[[sources/2026-10-21_epo_umc-dtc-wafer-bonded-to-soi]]（US20260150311A1, 2026-05-28）
+
+### 1. ⭐⭐⭐ 2026-10-20 新立之 DTC 空缺應自二分改為三分
+
+原空缺：「**CoWoS-S 中介層的 embedded deep-trench capacitor 是既有能力的延伸採購，
+還是 CoWoS 首次納入中介層內建被動元件？**」
+
+本輪同時取得三種形態的證據：
+
+| 分型 | 證據 | 性質 | 供應鏈意涵 |
+|------|------|------|------------|
+| ①**中介層本體內建** | TSMC–GF 協議含深溝槽電容（2026-10-20，二手） | 報導 | 綁定中介層代工者 |
+| ②**以 IPD 形式嵌入／堆疊** | **TSMC US20260314447A1**：DTC ＋ 自身 TSV ＋ 背面接點 | 排他權 | 可自製或外購晶粒 |
+| ③**外購嵌入式電容元件** | **Empower ECAP：已量產、有型號、有電容值** | 商品 | 純採購 |
+
+➜ 📌 **空缺改寫為三分**。三者對供應鏈的意涵完全不同。
+
+### 2. ⭐⭐⭐ Empower ECAP：本輪唯一已量產的「封裝內被動元件」
+
+| 型號 | 電容 | 尺寸 | 單位面積電容（本 wiki 推算） |
+|------|------|------|------------------------------|
+| EC2005P | **9.34 µF** | 2 × 2 mm（4 mm²） | **≈2.34 µF/mm²** |
+| EC2025P | **18.68 µF** | 4 × 2 mm（8 mm²） | **≈2.34 µF/mm²** |
+| EC2006P | **36.8 µF** | 4 × 4 mm（16 mm²） | **≈2.30 µF/mm²** |
+
+- ⭐ **三款單位面積電容一致（≈2.3 µF/mm²）**，且 18.68 = 2.00 × 9.34
+  ⇒ 可判定為**同一製程、按面積線性縮放**的產品線，**分母為封裝面積**（矽面積未揭露）。
+- ⭐ **置放位置明示為「嵌入處理器基板內，就在 AI 處理器的封裝層級」**；未提中介層或 under-die。
+- ⭐ **論述：板上元件（board-mounted）無法可靠滿足極端電流密度與快速暫態響應所需的電源完整性。**
+  ➜ 📌 既載 **Infineon** 一手來源已把「往基板移」的收益量化在電阻上
+  （PDN 總電阻 90–140 µΩ 橫向 → 10–15 µΩ BVM → **7–10 µΩ 基板內建，−93%**）；
+  本件補上**電容側的對應主張**（但無數值）
+  ⇒ **「供電路徑上的每一個元件都在往封裝內移」已有電阻側與電容側兩個獨立落點。**
+- ⚠⚠ **分母為封裝尺寸而非矽面積** ⇒ 依既載 **Ferric 案**所立之教訓
+  （Ferric 160 A ÷ 35.5 mm² = 4.507 A/mm²，分母為矽晶粒面積），
+  **本件之 ≈2.3 µF/mm² 不得與任何以矽面積為分母的電容密度數字比較大小。**
+- ⚠ **厚度、耐壓、ESR／ESL 數值、與 MLCC 的對照、具名客戶全部空白**；
+  其中**厚度**對「嵌入基板」可行性最關鍵，卻未給。廠商新聞稿，依規範（41）為有利害關係之來源。
+
+### 3. ⭐⭐⭐ 本 wiki 首見把「去耦電容的回流路徑」寫進結構請求項
+
+**TSMC US20260314447A1** 請求項明載 DTC 之**電源端與接地端**分別由第一側互連引出、
+再經**共地 TSV** 下行至**基板背面之電性接觸結構**。
+➜ 📌 **「垂直供電」在 2026 年同時出現在三個層面：電阻量測（Infineon）、電容商品（Empower）、
+電容拓撲排他權（本件）。**
+
+### 4. ⭐⭐⭐ DTC 的密度上限可能由 cross-talk 而非幾何決定
+
+**TSMC US20260304799A1**：於 **DTC 結構的側向側面**形成**空氣間隙**，
+以確保**電容對電容的隔離**、降低寄生電容、抑制 cross-talk。
+空氣間隙的介電常數**低於多孔 low-k 或塊材介電質**。
+➜ 📌 既載對嵌入式電容的討論**全部只談單位面積電容**；本件指出**另一個獨立約束**。
+⇒ **新增空缺：DTC 的實際密度上限由幾何決定還是由 cross-talk 決定？**（本件無數值）
+➜ 📌 另記：既載「介電質是否為物質」（Apple KR20260119943A 空氣間隙腔體）取得**第二個落點且動機相反**
+——Apple 為**訊號路徑降容**，本件為**元件間隔離**。
+
+### 5. ⭐⭐ DTC 整合途徑的第三種分型：整片晶圓級接合
+
+| 分型 | 代表案 | 接合尺度 |
+|------|--------|----------|
+| 長在載體裡 | **Intel JP2026053265A**（DTC 嵌入玻璃層） | 載體製程內 |
+| 以混合接合貼上去 | **IBM US20260107832A1**（預製背面 DTC 經混合接合整合） | 晶粒／晶圓級混合接合 |
+| **整片晶圓級接合** | **UMC US20260150311A1**（DTC 晶圓 ＋ SOI 主動晶圓） | W2W（型態未明示） |
+
+➜ 📌 **「把被動元件移到另一層／另一片去解」已是跨公司共同手法**
+⇒ 支持既載「把問題移進材料／另一層裡」，並補上**被動元件**這一類標的。
+⚠ UMC 案**僅稱 "bonded"，未指明接合型態** ⇒ **不計入混合接合落點**。
+⚠ 第二晶圓為 **SOI**，通常指向 **RF／高壓或低漏電**應用
+⇒ **不得與 TSMC／IBM 的 AI-PDN 脈絡混用**；新增小空缺：**本件瞄準 RF／高壓還是 AI PDN？**
+
+### 6. ⭐ 「封裝內供電元件」品類已有兩家新創
+
+- **Ferric**（既有實體頁）：IVR ＋ 完全整合電感（電感側）。
+- **Empower**（本輪）：ECAP 嵌入式矽電容 ＋ Crescendo 垂直供電平台（電容側）。
+⚠ **兩家皆無產能／客戶資料** ⇒ 列為本頁待補結構。

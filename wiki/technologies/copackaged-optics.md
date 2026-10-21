@@ -3,7 +3,7 @@ title: "共封裝光學元件 / Co-Packaged Optics (CPO) — TSMC-COUPE™ & Eco
 category: technology
 tags: [CPO, co-packaged-optics, COUPE, TSMC, GlobalFoundries, Samsung, photonics, AI, HPC, networking, OCI-MSA, DWDM, Broadcom, NVIDIA, glass-substrate, ULCVD, TGV, Spectrum-X, NVL72]
 created: 2026-04-25
-updated: 2026-10-19
+updated: 2026-10-21
 sources: [2026-09-27_globalfoundries_siph-cpo-bandwidth-density-coupling-budget, 2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-27_paper_copper-interconnect-scaling-roadmap-lines-per-mm, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-05-07_trendforce_globalfoundries-silicon-photonics-scale-cpo, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-03-17_coherent_cpo-ofc2026-demo, 2026-06-07_digitimes_jcet-3d-packaging-cpo-plant, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_edn_cpo-technology-status-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-06-24_thelec_corning-glass-bridge-cpo, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-14_trendforce_umc-silith-silicon-photonics-hvm, 2026-07-14_trendforce_huawei-baidu-npo-msa, 2026-07-27_trendforce_presscenter_cpo-switches-nvidia-broadcom-coupe, 2026-06-03_3dincites_intel-foundry-emib-cpo-glass-ectc2026, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-07-31_ase_cn224583735u-photoelectric-hybrid-rdl, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-09-26_report_dupont-ttm-polymer-waveguide-reliability, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_bitschips_besi-q1-2026-hybrid-bonding-orders, 2026-10-07_openalex_mit-cpo-vs-pluggable-switch-power-calibration, 2026-10-07_skhynix_cpo-nature-electronics-100tbps-1pjbit-10ns, 2026-10-09_semiwiki-tsmc-oip-2026-verification, 2026-10-13_cpo-bottleneck-test-800x-area-mismatch]
 related:
   - wiki/technologies/rdl.md
@@ -1604,3 +1604,70 @@ SEMICON West 2026（2026-10-13，舊金山），NVIDIA 首席研究員 Nikola Ne
 **最強的一次外部佐證，因為指認者正是最有動機宣稱自己做得到的一方。**
 且此處缺位的是**製程／測試能力** ⇒ **「標準缺位 ⇒ 私有方法先行」在此成立**
 （與同輪 FOPLP 翹曲論文的「量測口徑缺位 ⇒ 學界先行」構成該模式的兩個分支，見 [[technologies/foplp]]）。
+
+---
+
+## 2026-10-21 更新：表面耦合解除 beachfront 密度上限；三個 MSA 分管三個不同層面
+
+**來源**：[[sources/2026-10-21_semi_gf-cpo-surface-coupling-removes-beachfront-limit-three-msas]]
+（SEMI blog × GlobalFoundries, 2026-08-12）
+
+### 1. ⭐⭐⭐ 「邊緣 vs 表面」耦合的差別不只是損耗與對準，而是密度上限
+
+GF Senior Fellow Vikas Gupta（轉述）：**表面耦合（光柵耦合器或轉向鏡）解除了
+「晶粒邊緣長度」對光學 I/O 密度的限制**（beachfront density）。
+
+➜ 📌 本頁既載已記 **TSMC COUPE 選光柵耦合器＋微透鏡（表面法向）** vs **Intel 選 V-groove（邊緣耦合）**，
+但差異只記在**損耗與對準**。本輪補上**結構性差異：光 I/O 密度是否受晶粒周長限制。**
+
+➜ 📌 **與電性側論述形成對偶：邊緣在光學側是容量限制，在電性側是失效面向**
+（既載「周界／邊緣是獨立失效面向」已有五個電性／機械落點）。
+
+### 2. ⭐⭐⭐ 「CMP 是限制層」擴及光子層，且限制項不同
+
+**光子版圖是曲線且稀疏的**，與 Manhattan 化 CMOS 邏輯不同 ⇒ **對波導造成 dishing 風險**。
+➜ 既載 dishing 討論全在 Cu 墊（混合接合 recess 需求 1–5 nm／產線實績 5–25 nm）。
+➜ 📌 **Cu 側限制的是高度控制；波導側限制的是圖案密度不均造成的形貌偏差。**
+⇒ **新增空缺：矽光子波導的 CMP dishing 規格為何？**（本件無數值）
+
+### 3. ⭐⭐ 三個 CPO MSA 的分工（本 wiki 首次並列）
+
+| MSA | 管什麼 | 備註 |
+|-----|--------|------|
+| **XPO MSA** | 把**液冷納入封裝外形** | eXtra-dense Pluggable Optics |
+| **OCI MSA** | **只管光訊號、明示不含電性側** | 具名支持者 Broadcom／AMD／NVIDIA／OpenAI |
+| **Open CPO/CPX MSA** | 目標**可插拔（socketed）CPO**，重點在機械外形 | 光學供應商主導 |
+
+- **OFC 2026** 為這批 MSA 同時出現的時點；Gupta 預期這是「持續標準化的第一波」。
+- ➜ 📌 既載「標準缺位 ⇒ 私有方法先行」之**廠商補位支**取得第三個落點，
+  形態為**同時出現三個互補而非競爭的 MSA** ⇒ **CPO 的標準缺口不是一個，而是至少三個不同層面。**
+- ⚠⚠ **OCI MSA 明示不含電性側** ⇒ **電性—光學介面的標準歸屬目前無人認領**，列新空缺。
+
+### 4. ⭐⭐ 雷射位置的兩個相反工程回應
+
+- 整合壓力把 **InP 雷射與光放大器推近矽晶粒**，驅動可靠性研究
+  （III–V 材料高溫表現不佳，歷來把雷射放在晶粒外）。
+- 既載 **Celestica DS6005「現場可更換雷射」**（2026-10-15 收錄）。
+➜ 📌 **兩個相反回應：一方把雷射推近晶粒（接受可靠性風險），一方把雷射做成可更換件（承認其為耗損件）。**
+
+### 5. 其他一手數字與測試左移
+
+- GF **Malta, New York** 廠矽光子**重用 >90% 既有 CMOS 機台群**（廠方自述，無第三方佐證）。
+- **可拆式光纖**讓晶圓廠不必在早期製程搬運易損 pigtail；
+  可拆性「現在更多是關於可製造性與自動化」。
+- 三類對準：**主動**（光功率回饋）／**被動**（邊緣 V-groove）／**視覺式**（fiducial ＋ 十字線）。
+- **測試左移第四個獨立實例**：光引擎組建過程中設多個測試點，支撐 KGD 與 known good module；
+  最終階段全速運轉並做合規檢查。
+- ⚠⚠ **全篇僅三個數字**（>90% 機台重用、125 µm 光纖、次微米波導）；
+  **頻寬密度、pJ/bit、對準容差、耦合損耗、節距、吞吐量全部缺**
+  ⇒ 既載空缺「Nature Electronics CPO 綜述全文」**不因本件結清**。
+- ⚠ 依規範（41）：SEMI 部落格之廠商訪談，全篇轉述、無逐字引語 ⇒ **有利害關係之來源**。
+
+### 6. 專利軌補充：TSMC 光子引擎案已於 2026-09-14 收錄
+
+本輪 OPS 以 `ti,ab="photonic engine" and pd within "2026"` 全庫僅命中 1 件
+（**CN122260581A**，TSMC，光柵耦合器與微透鏡一對一對應 ＋ 光纖組件單元），
+且**已在庫**（依規範 63 以家族 ID 攔下）。
+⚠ 另記：`ti,ab="co-packaged optics" and pd within "2026"` **回 HTTP 404**
+（疑為片語含連字號所致，見本輪 log 之 OPS 實測結論）
+⇒ **CPO 的專利軌檢索須改用不含連字號的片語**（如 "photonic engine"）。

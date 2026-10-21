@@ -5353,3 +5353,118 @@ warning: unable to unlink '.../.git/index.lock': Operation not permitted
   - ⚠⚠⚠ **既載待辦「Windows 側 `git gc --prune=now`」維持且更形必要。**
   - ✅ **`main` 較 `origin/main` ahead 1、behind 0**（上輪記為 ahead 2 ⇒ 期間 `daily_git_push.bat` 已推送過；
     本輪不 push，推送仍交由倉庫自身排程）。
+
+## [2026-10-21] collect | 每日自動蒐集 — 先進封裝最新動態
+- 搜尋查詢數：新聞 **9 組**（WebSearch 7 組常駐主題 ＋ 2 組追查：Empower ECAP、JEDEC 720/775 µm 佐證）
+  / 專利 **7 組**（EPO OPS；其中 **3 組回 HTTP 404**）/ 論文 **7 組**（OpenAlex）
+- 成功抓取：**15 篇**（articles **5**, patents **5**, papers **5**, reports 0）—— **三軌全數執行且三軌等量**
+- 失敗/跳過：**新聞軌** 16 個候選中 **6 個已收錄**（依規範 63 以「網域＋完整路徑」grep -F 攔下：
+  iconnect007 150441、tomshardware EMIB-T、semianalysis ECTC2026、igorslab、trendforce 20260617、siemens CPO 五趨勢）、
+  **2 篇抓取後因低增量而棄收**（springernature「Behind the Paper」無任何數值且與既載 Cu–Cu 綜述重複；
+  DatacenterDynamics CPO 晶圓級測試頁面**僅有節目簡介、無內容**）、
+  **1 篇僅作線索不收錄**（electronicdesign Chiplet Summit 索引頁 ⇒ 導向 Empower ECAP 一手新聞稿）、
+  **3 篇低優先未抓**（xenospectrum CoWoS 備援、digitalcitizen Samsung 2029、techovedas Intel 18A-P）；
+  **專利軌** 15 個命中家族中 **6 個已收錄**、1 件（IBM US20260018508A1）同主題避免重複而未收；
+  **論文軌** 七組查詢共 100+ 唯一結果，**可收僅 5 篇**（其餘為已收錄、無摘要、低信號刊物、或非半導體封裝）
+- 資料源狀態：**WebSearch ACTIVE ✓ | EPO OPS ACTIVE ✓（7 組中 4 組成功、3 組 404）| OpenAlex ACTIVE ✓**
+- 新增 wiki 頁面：**15 頁**（全部為 sources/）
+  `2026-10-21_bits-chips_skhynix-hb-deferral-attributed-to-jedec-height`、
+  `2026-10-21_digitaltoday_jedec-height-eased-55um-who-agreed-unitest`、
+  `2026-10-21_semi_gf-cpo-surface-coupling-removes-beachfront-limit-three-msas`、
+  `2026-10-21_convergedigest_ucie-3-0-64gts-wider-not-faster`、
+  `2026-10-21_empower_ecap-substrate-embedded-silicon-capacitors-in-mass-production`、
+  `2026-10-21_epo_lg-innotek-glass-core-edge-wrapped-resin`、
+  `2026-10-21_epo_tsmc-dtc-as-ipd-with-common-grounded-tsv`、
+  `2026-10-21_epo_tsmc-air-gap-isolates-deep-trench-capacitors`、
+  `2026-10-21_epo_umc-dtc-wafer-bonded-to-soi`、
+  `2026-10-21_epo_haishigao-panel-plating-shield-grid-edge-current`、
+  `2026-10-21_openalex_tgv-polymer-liner-stress-vs-thermal-resistance-no-unique-optimum`、
+  `2026-10-21_openalex_uv-bonding-humidity-window-45rh-environment-as-third-branch`、
+  `2026-10-21_openalex_evg-combond-sic-si-sab-orientation-in-situ-tem-recrystallization`、
+  `2026-10-21_openalex_high-cte-ceramic-matches-solder-not-silicon`、
+  `2026-10-21_openalex_snbi-sac-reflow-peak-temp-dominant-100pct-mixing-at-190c`
+- 更新 wiki 頁面：**31 頁**
+  - entities（17）：sk-hynix、besi、applied-materials、tsmc、intel、apple、globalfoundries、ev-group、
+    atotech、asmpt、silicon-box、ferric、ibm、samsung、micron、nvidia、amd
+  - technologies（8）：hbm4、hybrid-bonding、glass-substrate、copackaged-optics、ucie、cowos、tsv、foplp
+  - concepts（4）：thermal-management、power-delivery-packaging、test-metrology-packaging、
+    substrate-materials-supply-chain
+  - 根目錄（2）：index.md（Updated/Total Pages 1001→1016/Sources 921→936 ＋ 15 筆來源條目）、
+    overview.md（知識空缺標題日期 ＋ 2026-10-21 區段：結清/降級 7 項、新增空缺 12 項、橫向論述 19 條）
+- 主要新知識：
+  ①**混合接合被延後的原因首次由 SK hynix VP Jaesik Lee（Hot Chips 2026）具名歸因於標準變更**
+  （JEDEC 高度 720→775 µm），且補上本 wiki 首見之材料級機制——**晶粒愈薄則其中氧化物占比愈高，而氧化物導熱差**
+  ⇒ 既載「HB 的賣點是厚度預算的再分配」取得完整因果鏈；同時 **MR-MUF 曾為塞進 720 µm 而必須移除凸塊**
+  ⇒ 「是否用混合接合」與「是否保留凸塊」被確認為兩個獨立問題。
+  ②**「最佳值必然是區間」升級為「在耦合參數下最佳值可能根本不存在，只存在取捨面」**
+  （Anhui Univ. 之 TGV 聚合物襯層：應力 127.0→66.5→50.7 MPa 的代價是增量熱阻 2,428 vs 841 K/W；
+  作者自述 rather than a unique optimum），且本輪三篇論文合起來給出**判準：目標能否同向最佳化，
+  取決於是否共用同一個支配機制**（高 CTE 陶瓷不共用⇒可同向；TGV 襯層耦合⇒取捨面；UV 濕度同一變數兩相反機制⇒區間）。
+  ③**「接合當下表面還剩多少氧化物、用什麼除掉」自化學支＋量測支再拆出第三支「環境支」**
+  （HUST：UV 活化之濕度窗，45% RH 下 9.88 MPa，15%／90% 各約 2 MPa，3.74×），
+  並成為「最佳值是區間」第二個上下界機制皆明確者。
+- 專利訊號：**DTC 成為本輪專利主線——TSMC 同時布局「元件化」（US20260314447A1：DTC ＋ 共地 TSV ＋ 背面接點，
+  本 wiki 首見把去耦電容回流路徑寫進請求項）與「密度化」（US20260304799A1：以空氣間隙隔離相鄰 DTC
+  ⇒ DTC 密度上限可能由 cross-talk 而非幾何決定），UMC 則以 W2W 接合提供第三種整合途徑；
+  配合 Empower ECAP 已量產之商品，2026-10-20 新立之「CoWoS 內嵌 DTC」空缺自二分改為三分。
+  另一條主線為玻璃邊緣：LG Innotek WO2026216712A1 之三段式包邊樹脂層使「玻璃良率瓶頸在邊緣」
+  升格為「已出現三條互不重疊的工程路徑」，且邊緣保護分化為 Intel「後退加框」vs LG Innotek「包覆反折」兩路線。**
+
+### 本輪方法論實測與規範（2026-10-21）
+- ⚠⚠⚠ **EPO OPS 的 CQL 片語含連字號會回 HTTP 404 —— 這是本輪最重要的工具性發現，且 spec 本身的範例受影響。**
+  本輪實測（同一 token、同一時段、同一 Range）：
+  - **成功（200）**：`ti,ab="deep trench capacitor" and pd within "2026"`（11 件）、
+    `ti,ab="panel level packaging" and pd within "2026"`（4 件）、
+    `ti,ab="photonic engine" and pd within "2026"`（1 件）、
+    `ti,ab="glass core substrate" and pd within "2026"`（5 件）
+  - **失敗（404）**：`ti,ab="co-packaged optics" and pd within "2026"`、
+    `cpc="H01L24/80"`（單獨下）、`cpc="H01L24/80" and pd within "2026"`
+  - 與既載歷輪失敗紀錄合看（`ti,ab="fan-out panel"` 併括號時 404），
+    **假說：引號內片語含連字號（-）或斜線（/）會使 OPS 的 CQL 解析失敗。**
+  ➜ 📌 **立規範（70）：OPS 查詢式之片語只用不含連字號／斜線的詞組。
+  `schedule.md` STEP 1 Track B 主題表中的 `ti,ab="panel level packaging" or ti,ab="fan-out panel"`
+  與 `ti,ab="co-packaged optics" or ti,ab="photonic engine"` 兩列之連字號片語經實測不可用；
+  CPO 主題應改以 "photonic engine" 檢索。建議修訂 spec 之範例。**
+- ⚠⚠ **否證 2026-10-19 所建議之 Besi 檢索路徑。** 當時建議「改測 CPC 分類檢索（H10W72/9xx）而非申請人字串」；
+  本輪實測 `cpc=` 無論單獨下或併 `pd within` 皆 404（見上）
+  ⇒ **該路徑不可行**。下輪改自 Besi 年報揭露之專利家族數反查，或以發明人姓名檢索。
+- ⚠⚠⚠ **近失誤（near miss）與新規範（69）。** 本輪 Track B 的家族 dedup 在 q6（photonic engine）與
+  q7（glass core substrate）兩組查詢**尚未完成時**即先行執行，導致該兩組的命中家族未被比對；
+  其後補查發現 **TSMC CN122260581A（fam 100036235）已於 2026-09-14 收錄**（且已有 source 頁與 tsmc.md 表格列），
+  **差一步就重複收錄**。同批補查另檢出 Intel JP2026059728A／JP2026055776A、LG Chem CN122342272A、
+  Kaneka JP2026047137A 亦已在庫。
+  ➜ 📌 **立規範（69）：Track B/C 的 dedup 必須在「所有查詢皆完成後」對全部命中一次性執行，
+  不得分批比對；分批比對會在查詢順序與比對順序不一致時產生漏檢。**
+- 📌 **建議規範（41）細化：同一來源內的「物理觀察」與「平台宣稱」須分開計算獨立性。**
+  本輪 ACS AEM 論文由 **EV Group 四位員工共同署名**且明示 **EVG ComBond** 機台 —— 依規範（41）為有利害關係之來源；
+  但其**原位加熱 TEM 所見之低溫再結晶屬可獨立驗證之物理**，與商業宣稱性質不同。
+- 📌 **「真正的瓶頸在被視為輔助步驟的那一步」取得適用邊界：流程成熟度。**
+  本輪 Sn–Bi/SAC 一例中 Taguchi 指認**主製程參數（回焊峰溫）確實主導**；
+  既載四個正面實例皆屬高整合度先進封裝流程，本例屬成熟板級 SMT。
+- 📌 **OpenAlex 片語歧義清單新增兩個詞：`"interposer"` 與 `"system in package"`。**
+  本輪 c6 查詢（`"interposer"|"2.5D integration"|"system in package"`，48 件）大量命中**醫學文獻**
+  （colon interposition／esophagocoloplasty、pes anserine bursitis、rotator cuff patch）與**食品包裝**
+  （smart packaging for meat freshness、nutritional label analysis of packaged beverages）
+  ⇒ 與既載 §4.3 對 `"advanced packaging"` 之警告同類。
+  ➜ 📌 **建議於 spec §4.3 之警告清單加入 `interposer`（醫學上指「間置」）與 `system in package`；
+  此兩詞不宜單獨作為 OpenAlex 查詢片語。**
+- ⚠ **既載低信號刊物污染問題本輪再現且已依 2026-10-20 建議過濾**：
+  zenodo 系預印本（含標題「MICROSOFT MAIA 300 // N2P MULTI-CHIPLET // 288GB HBM4.」一類）、
+  IIARD 系 `ijemt`、`ijesat`、`Applied and Computational Engineering`、
+  `Journal of Advanced Artificial Intelligence Research`（無 DOI）等一律棄收。
+  ⇒ 📌 **該建議（加入 spec §4.3 跳過清單）至今未寫入 spec，本輪再次建議。**
+- ✅ **依規範（39）開場先 grep 三個「下輪取全文優先項」**：
+  `10.1145/3859928`（AceTherm）、`10.1016/j.mssp.2026.111298`（FOPLP 翹曲綜述）、
+  `10.1016/j.mssp.2026.111165`（TGV 雙軸彎曲）**各 grep -F 命中 1，皆已在庫**
+  ⇒ 依「不得重複抓取已收錄 DOI」本輪未再取；**三項全文仍未取得，維持開啟。**
+- ✅ **登錄後逐筆驗證**：15 行新登錄之識別碼各自 `grep -F -c` 均為 **1**，
+  且 15 個 raw 檔路徑**皆存在**（見驗證步驟）。`_collected_urls.txt` 954 → **969** 行。
+- ✅ **檔名日期前綴依既有慣例為「項目自身發布日」而非 collect 日**（登錄檔第一欄為 collect 日 2026-10-21）。
+  ⚠ 📌 **spec STEP 5 之檔名範例仍寫作 `YYYY-MM-DD_...` 而未明示該日期為發布日或蒐集日
+  —— 此建議自 2026-10-20 提出至今未寫入 spec，本輪再次建議補明。**
+- ✅ **排程連續性**：`log.md` 前一筆 collect 日期為 **2026-10-20**，與本輪落差 **1 日，無缺漏輪次**。
+- ⚠ **既載最高優先人工待辦未變更且本輪未複查**：`origin` remote URL 內嵌明文 GitHub personal access token
+  （自 2026-10-07 列管）。**本流程不代為變更憑證設定。**
+  建議①撤銷並重新產生 token；②改用 credential helper 或 SSH key；
+  ③`git remote set-url origin https://github.com/shpeng1996/advpkg.git`。
+- ⚠ 既載待辦「Windows 側 `git gc --prune=now`」維持（2026-10-20 量得 `tmp_obj_*` 833，為歷輪最高）。

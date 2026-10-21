@@ -3,7 +3,7 @@ title: "先進封裝的測試、量測與失效分析 / Test, Metrology & Failur
 category: concept
 tags: [test, metrology, inspection, failure-analysis, KGD, KGI, KGP, DFA, yield]
 created: 2026-09-17
-updated: 2026-10-20
+updated: 2026-10-21
 sources: [2026-09-27_paper_binghamton-ibm-pad-scaling-resistance-variability, 2026-09-27_paper_purdue-ru-cu-em-lifetime-blacks-n-0154, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2025-01-14_semieng_known-good-interposer-screening, 2025-07-10_semieng_advanced-packaging-reshaping-inspection, 2024-11-12_semieng_packaging-drives-test-metrology-innovation, 2026-08-01_jfap_3dic-failure-analysis-dfa, 2026-07-06_apl_lensless-through-silicon-phase-imaging, 2026-09-06_ndte_hysan-sparse-view-xct-tsv, 2026-08-02_chips_cpo-wafer-level-probe-card, 2026-08-27_samsung_us20260256000a1-interposer-test-pad, 2026-08-13_jcet_us20260239928a1-hybrid-bonding-substack-test, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-06-28_hyperframe_amat-hybrid-bonding-hedge, 2026-09-26_paper_ibm-amine-post-cmp-clean, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-10-02_microrel_tudelft-google-3dic-fa-hardware, 2026-10-02_imaps-dpc2026_gelpak-universal-carriers-singulated-die, 2026-10-06_openalex_gatech-terahertz-nde-8layer-interposer, 2026-10-06_openalex_tongji-wafer-embedded-pitch-standard-pose-correction, 2026-10-06_thelec_sec-xray-tsv-tgv-inspection-1um, 2026-10-07_semieng_kelvin-resistance-probe-access-pitch-limit, 2026-10-07_openalex_amkor-kelly-three-interposer-routes, 2026-10-07_epo_besi-deformable-die-forming-bond-tool, 2026-10-08_silverbrook-known-good-site-substrate-test, 2026-10-08_ase-probing-needle-scrub-length, 2026-10-08_formfactor-45um-probe-pitch-good-enough-die, 2026-10-08_advantest-singulated-die-test-thermal, 2026-10-09_tsmc-cantilever-probe-card-patent, 2026-10-09_tsmc-impedance-control-probing-patent, 2026-10-09_intel-voltage-contrast-backside-patent, 2026-10-09_ieie-probe-card-mlc-signal-integrity, 2026-10-09_hdin-probe-card-market-pin-count, 2026-10-09_quantware-qpu-measurement-stage-patent, 2026-10-13_microbump-as-radiator-and-the-stand-in-problem, 2026-10-13_cpo-bottleneck-test-800x-area-mismatch, 2026-10-13_onto-cmp-second-independent-source, 2026-10-13_amkor-cavity-as-allocated-volume]
 related:
   - wiki/technologies/hybrid-bonding.md
@@ -1615,3 +1615,56 @@ ZEISS：暴力式高解析 X-ray 掃描產生 **"gigabytes ... or terabytes wort
   加速倍率與誤差百分比未入庫；無與矽實測之校正** ⇒ **不得據此宣稱任何精度或加速幅度。**
   📌 **列下輪取全文項（依規範 39，次輪開場先 grep `_collected_urls.txt` 確認是否已取得）。**
 - 來源：[[sources/2026-10-20_openalex_acetherm-chiplet-thermal-simulation-in-design-loop]]
+
+---
+
+## 2026-10-21 更新：原位加熱 TEM 看見界面再結晶；CPO 測試左移第四例；HBM4 測試機首次有合約金額
+
+**來源**：[[sources/2026-10-21_openalex_evg-combond-sic-si-sab-orientation-in-situ-tem-recrystallization]]
+（ACS AEM, CityU × EV Group, 2026-09-25）、
+[[sources/2026-10-21_semi_gf-cpo-surface-coupling-removes-beachfront-limit-three-msas]]（SEMI × GF, 2026-08-12）、
+[[sources/2026-10-21_digitaltoday_jedec-height-eased-55um-who-agreed-unitest]]（DigitalToday, 2026-07-24）、
+[[sources/2026-10-21_openalex_uv-bonding-humidity-window-45rh-environment-as-third-branch]]（Sci Rep, HUST, 2026-10-15）
+
+### 1. ⭐⭐⭐ 量測能力的正向進展：接合界面的微結構演化可被即時觀測
+
+CityU × EV Group 於 **EVG ComBond** 上做 6 吋 SiC/Si 表面活化接合，
+**首次以原位加熱穿透式電子顯微鏡（in situ heating TEM）觀察到異質接合界面的即時低溫再結晶。**
+➜ 📌 既載 **Atotech** 的 queue time 數據（2–4 h 可見晶粒成長、16 h 近乎再結晶）
+是**離線量測推論出的時間窗**；本篇提供**同一現象的原位觀測能力**
+⇒ **「界面再結晶」自「以時間窗間接管理」往「可直接觀測」移動一步。**
+➜ 本頁既載量測／驗收失效模式共五類（量不到／量錯／量到替身／資料未被連結／工具攜帶狀態跨片傳遞），
+前述皆為**失效**；本條為本頁少見的**能力進展**條目。
+⚠ **再結晶溫度摘要未給** ⇒ 列下輪取全文優先項（依規範 39）。
+⚠ 依規範（41）EV Group 為有利害關係之共同作者；
+📌 **建議之規範細化：同一來源內的「物理觀察」與「平台宣稱」須分開計算獨立性。**
+
+### 2. ⭐⭐⭐ 第六類失效模式候選：環境狀態未被列入製程參數
+
+HUST 的 UV 活化接合研究指出 **RH 是「critical but frequently overlooked variable」**，
+且影響達 **3.74 倍**（15% RH 2.64 MPa → 45% RH 9.88 MPa → 90% RH 2.01 MPa）。
+➜ 本頁既載第五類為「**工具攜帶的狀態在批次間傳遞**」（清洗刷具跨片污染），
+為**第一個跨片傳遞**者。本條更前端：**不是工具帶狀態，而是環境本身就是狀態。**
+➜ 📌 **列為第六類候選：環境狀態（濕度／氣氛）未被列入製程參數。**
+⚠ 僅一個落點、且為石英晶圓 UV 接合（非混合接合）⇒ **列候選，不逕行升格。**
+
+### 3. ⭐⭐ CPO 的測試左移取得第四個獨立實例
+
+GF（SEMI 訪談）：**光引擎組建過程中設多個測試點，以支撐 known good die 與 known good module**；
+最終階段全速運轉並做合規檢查。另及**晶圓級光學測試以早期檢出壞晶粒**。
+➜ 既載測試左移三例：**SanDisk**（版圖層：金屬墊與 bit line 外拉至 die 重疊區之外）、
+**Advantest**（近場 RF 非接觸測試）、**FormFactor**（Altius 全覆蓋 KGD／SmartMatrix 有限覆蓋高吞吐）。
+⇒ **本例為第四個，且首次在光學域。**
+⚠ 該訪談**未給任何測試覆蓋率、吞吐、成本數字**。
+
+### 4. ⭐⭐ HBM4 晶圓測試機首次有合約金額級數字
+
+**Unitest ↔ SK hynix**：2026-07-23 公告 **₩226.8 億** HBM4 晶圓測試機供應合約，
+相當於 Unitest 最新合併營收 **₩1,101.95 億** 的 **20.58%**；
+合約期間 2026-07-23 ~ 10-08，交機付 90%、設置後付 10%。
+Unitest 2025 年營收 ₩1,102 億、**營業損失 ₩211 億**。
+➜ 📌 **HBM4 的測試機需求對小型設備商是存續級事件**
+⇒ 本頁「測試是與製程良率、熱並列的第三個結構性瓶頸」取得**產業結構側**佐證。
+⚠ **單一來源、二手**。
+⇒ **新實體候選：Unitest（韓國記憶體測試機商）**，本 wiki 此前完全無記錄；
+⚠ 單一合約不足以建實體頁，列入「缺實體頁」觀察。

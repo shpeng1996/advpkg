@@ -3,7 +3,7 @@ title: "基板與材料供應鏈 / Substrate & Materials Supply Chain（ABF・T-
 category: concept
 tags: [ABF, Ajinomoto, substrate, supply-chain, Ibiden, Unimicron, Shinko, SEMCO, Kinsus, Nan-Ya-PCB, glass-core, warpage, bottleneck]
 created: 2026-10-03
-updated: 2026-10-13
+updated: 2026-10-21
 sources: [2026-10-03_tomshardware_abf-substrate-state-2026, 2026-10-03_thelec_philoptics-tgv-2mm-glass, 2026-10-03_digitaltoday_jntc-tgv-thickness-lineup, 2026-10-03_epo_semco-coreless-interposer-organic-bridge, 2026-10-06_xenospectrum_ajinomoto-abf-cut-unconfirmed-layers-per-side, 2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage, 2026-10-07_atlaspcb_abf-price-30pct-third-distinct-30-figure, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-13_all-glass-aip-no-polymer-in-the-stack, 2026-10-13_cpo-bottleneck-test-800x-area-mismatch]
 related: [technologies/glass-substrate.md, concepts/advanced-packaging-market.md, concepts/geopolitics-advanced-packaging.md, entities/ibiden.md, entities/shinko.md, entities/semco.md, entities/absolics.md, entities/agc.md]
 ---
@@ -385,3 +385,48 @@ Samsung 官方（Tech Blog, 2025-05-26；內容基礎 2022 Samsung Foundry Forum
 - ⚠ 無任何 InP 晶圓絕對產能數字 ⇒ **不得由倍數反推產能**（與既載 Ibiden 投資額不得反推產能之規則同型）。
 
 來源：[[sources/2026-10-13_all-glass-aip-no-polymer-in-the-stack]]、[[sources/2026-10-13_cpo-bottleneck-test-800x-area-mismatch]]
+
+---
+
+## 2026-10-21 更新：CTE 匹配不是單向往矽收斂——第三種方向出現
+
+**來源**：[[sources/2026-10-21_openalex_high-cte-ceramic-matches-solder-not-silicon]]（ACS AMI, 2026-09-23）
+
+本頁與 [[technologies/glass-substrate]] 既載處理 CTE 失配的方向有二：
+① **把基材 CTE 往下調以貼近矽**（玻璃可調 CTE；AGC 無鹼玻璃 ER-Y1 **3.5** vs EN-A1 **5.8 ppm/°C**；
+   PWG 路線圖 CTE **70 → <50 ppm/°C**）；
+② **用限制用途或柔順層把應力隔開**（上海美維：玻璃只當堆疊載板、外部互連走背面；TGV 聚合物襯層）。
+
+⭐⭐⭐ **第三種方向：把介電體的 CTE 往上拉去匹配銲料。**
+
+| 量 | 值 |
+|----|-----|
+| 傳統微波介電陶瓷 CTE | **5–12 ppm/°C** |
+| **SAC305 無鉛銲料 CTE** | **21.9 ppm/°C** |
+| **Na3P3O9 CTE** | **22.25 ppm/°C（幾近完美匹配）** |
+| εr／介電損耗 | **4.88／10⁻⁴ 量級** |
+| 最佳燒結溫度 | **610 °C** |
+| 銲點熱應力 vs 商用 A6M／傳統氧化鋁 | **54%／30%**（−40 ~ 125 °C，模擬） |
+
+➜ 📌 **「CTE 匹配」取決於要匹配鏈條上的哪一環。**
+既載 Lau 的玻璃核心結果（micro-bump 應變 9.12% → 4.43% 減半，同時 PCB 側 BGA 應變 8.43% → 19% 加倍，
+作者標為 high risk）**正是鏈條兩端不可同時匹配的實例**；本篇是**選擇匹配另一端**的案例。
+⇒ **CTE 是一條鏈，不是一個值；匹配哪一端是設計選擇，且必然放棄另一端。**
+
+➜ 📌 既載論述「**把問題移進材料裡**」取得**第五個落點，且是唯一「改元件自身基體以保護其外部連接」者**
+（既有四個：Atotech 穩定化細晶製程、上海大學檸檬酸還原、Resonac 耐化學切割膠帶、Purdue 整體式成長無氧化物銅區）。
+⇒ **分型補充：「移進材料裡」的標的可以是製程材料（前四例）或元件本體材料（本例）。**
+
+⭐⭐ **同時達成高 CTE 與極低 εr／損耗** ⇒ 說明兩目標由**不同物理機制**支配時可同向最佳化。
+與 2026-10-19 所記「**當兩個失效模式由同一界面機制（zeta 電位符號）支配時，最佳值可以是極值**」
+（post-CMP clean 之 SC1 vs DHF）屬**同一族的第二種形式**。
+➜ 📌 **一般形式：目標是否可同向最佳化，取決於它們是否共用同一個支配機制；
+共用則可同向（極值），不共用但耦合則不可（取捨面）。**
+⇒ 本輪三篇論文正好給出這條規則的三種情形：
+**本篇（不共用、可同向）／TGV 襯層（耦合、取捨面）／UV 接合濕度（同一變數兩個相反機制、區間）。**
+
+⚠⚠ **適用邊界**：該論文對象為**板級表面黏著被動元件（SMD passive）**與 **Ku 波段介電共振天線**，
+**非封裝基板、非 die-level 互連** ⇒ 引用時必須標註「板級被動元件」口徑。
+⚠ 熱應力 54%／30% 為**模擬**，無熱循環至失效之實測；**610 °C 燒結與封裝基板共燒製程之相容性未述。**
+- [ ] 新增空缺：**是否存在對應的「高 CTE 封裝介電體」研究（用於封裝基板而非被動元件）？**
+  若有，則「CTE 匹配哪一端」可成為一條可追蹤的設計選擇軸。

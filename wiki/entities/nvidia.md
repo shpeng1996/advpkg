@@ -3,7 +3,7 @@ title: "NVIDIA Corporation"
 category: entity
 tags: [fabless, GPU, AI-accelerator, HBM4, CoWoS, SoIC, Rubin, Feynman, NVL576, CPO, Spectrum-X, Constellation]
 created: 2026-05-03
-updated: 2026-10-15
+updated: 2026-10-21
 sources: [2026-05-24_techtimes_nvidia-computex2026-cowos, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-03-18_trendforce_nvidia-rubin-feynman-soic, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-06_trendforce_google-tpu-cautious-adoption-nvidia, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-06-01_trendforce_nvidia-vera-rubin-tsmc-20pct-revenue, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-19_techtimes_vera-rubin-hbm4-suppliers, 2026-06-14_digitaltrends_tsmc-copos-glass-temporary-carrier, 2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b, 2026-07-27_trendforce_presscenter_cpo-switches-nvidia-broadcom-coupe, 2026-10-02_trendforce_nvidia-glass-substrate-2028-taiwan, 2026-10-02_trendforce_cowos-l-mainstream-through-2028]
 related:
   - wiki/entities/tsmc.md
@@ -299,3 +299,19 @@ NVIDIA GPU 出貨 **2026 年 +~30% YoY**；**CoWoS-L 預期維持主流至 2028*
 - NVIDIA 自列量產關卡：**測試、光纖對準、溫控、散熱** ⇒ 與 TSMC「雷射、光纖、測試」（2026-10-13）為**第二個獨立來源**。
 - 發表人：首席研究員 Nikola Nedovic，2026-10-13，舊金山。
 見 [[sources/2026-10-15_nvidia-optics-on-interposer-dwdm]]。
+
+---
+
+## 2026-10-21 更新：HBM 高度上限的決定者首次具名（含需求側）
+
+**來源**：[[sources/2026-10-21_digitaltoday_jedec-height-eased-55um-who-agreed-unitest]]（DigitalToday, 2026-07-24）
+
+- **同意把 JEDEC HBM 高度上限自 720 µm 提高至約 775 µm（+約 55 µm）的參與方**：
+  **Samsung、SK hynix、Micron、NVIDIA、AMD**（本 wiki 首見具名清單）。
+- ➜ 📌 **本公司在此列中，意即 HBM 的世代參數同時由供應端與需求端在標準組織內共同決定。**
+  本 wiki 此前把 JEDEC 高度規格當成**外生約束**處理，應改為**由五方共同議定的內生變數**。
+  與既載「SK hynix 明示混合接合導入門檻為良率 90–98% ∧ 壽命 3–5 年（買方門檻）」同屬
+  **需求側參與技術節奏決定**之證據。
+- ⚠ **本輪來源未指明設定 775 µm 的 JEDEC 文件編號**（僅就 HBM4 介面規格引用 JESD270-4）
+  ⇒ 該數字應標為「依多個二手來源一致」而非「標準明訂」。
+- ⚠ 二手報導、單一來源；本件日期 2026-07-24。

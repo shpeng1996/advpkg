@@ -3,7 +3,7 @@ title: "UCIe — Universal Chiplet Interconnect Express"
 category: technology
 tags: [standards, chiplet, interconnect, UCIe, 3D, hybrid-bonding, UCIe-3.0]
 created: 2026-04-24
-updated: 2026-10-11
+updated: 2026-10-21
 sources: [2026-08-24_intel-newsroom_hot-chips-2026-diamond-rapids-foveros-ucie, 2026-04-24_initial-survey, 2026-04-01_semiengineering_chiplets-2026, 2025-01-28_3dincites_iftle-618-ucie-standard-vs-ucie3, 2025-01-01_semieng_ucie-1-6t-io-chiplets-ai-datacenter, 2025-09-03_uciexpress_ucie30-spec, 2026-03-05_uciexpress_chiplet-summit-2026, 2026-02-12_semieng_ucie3-technical-deepdive, 2026-10-06_epo_tenstorrent-discrete-pitch-adapter-substrates]
 related:
   - wiki/technologies/hybrid-bonding.md
@@ -426,3 +426,35 @@ Siemens（2026-02-05）：銅負責封裝內通訊，光學負責封裝對封裝
 ⚠ OpenAlex 機構欄為錯誤比對（"American Rock Mechanics Association"）⇒ 該來源 `fetch_status: partial`，機構留空。
 
 *Source: [[sources/2026-10-11_iod-chiplet-frozen-peripheral-placement]]*
+
+---
+
+## 2026-10-21 更新：UCIe 3.0 為 64 GT/s、「wider, not faster」；UCIe-3D 仍列在 2.x 之下
+
+**來源**：[[sources/2026-10-21_convergedigest_ucie-3-0-64gts-wider-not-faster]]
+（Converge Digest, Chiplet Summit 2026, 2026-02-18；UCIe 主席 Debendra Das Sharma）
+
+- **資料率提高至 64 GT/s**，瞄準 AI/HPC 與 on-package memory 頻寬。
+- **設計哲學 "wider, not faster"**（本篇唯一直接引語），據此得到**較低的每位元功耗**。
+- 新增**連續傳輸（continuous transmission）協議映射**；
+  **擴充 sideband 與可管理性（manageability）能力**；**向後相容**於前代。
+- ⭐⭐⭐ **UCIe-3D（以混合接合做垂直 chiplet）列在 UCIe 2.x 之下，不在 3.0。**
+  ➜ 📌 意涵：**UCIe 的 3.0 世代把投入放在「更寬的 2D 介面 ＋ 可管理性」，而非垂直方向。**
+  與既載「SK hynix 把混合接合推遲至 HBM5」「Samsung HCB 瞄準 16 層以上」合看，
+  **標準側與記憶體側在同一時期都把混合接合的時程往後放**
+  ⇒ 本 wiki 首次看到兩個獨立領域的時程**同向遞延**。
+  ⚠ 本件僅為版本歸屬，**不等於 UCIe 降低對 3D 的重視**；不得過度解讀。
+- ⭐⭐⭐ **"wider, not faster" 是既載論述「把設計移到規格較鬆的區間」的第四例，
+  且首次出現在介面標準層。**
+  既有三例皆為製程／封裝選擇（珠海天成以 AR ≤10 模封銅孔＋TCB 規避混合接合；
+  面板圖案化粗快／細慢分工；Apple 以 fan-out 放寬 bump pitch）。
+  ➜ 📌 該論述自「製程／設計選擇」擴為「**含標準制定在內的通用策略**」。
+- ⭐⭐ **「可管理性」進入 chiplet 介面標準**，為本 wiki 首次記錄 UCIe 往**系統協調**方向擴張。
+  ➜ 📌 與既載「KGD 的制度化是逐項堆積的（測試資料格式 → 切割幾何 → …）」同屬一族：
+  **chiplet 跨供應商交易所缺的不只是電性介面，還有管理與測試的交付介面**；
+  sideband／manageability 的擴充可視為該缺口的第三項堆積。
+- ⚠⚠ **本件未給 UCIe 3.0 發布日期，亦未給 bump pitch／reach／pJ/bit 數值**
+  ⇒ **本頁規格表不得因本件填入任何新數字**，僅新增 64 GT/s 與版本歸屬兩項。
+- ⚠ 本件日期 2026-02-18（Chiplet Summit 當週），距今八個月；
+  **UCIe 3.0 之後續正式發布狀態本 wiki 無資料** ⇒ 列追蹤。
+- ⚠ 全篇為轉述，無 Das Sharma 的逐字引語（除 "wider, not faster"）。

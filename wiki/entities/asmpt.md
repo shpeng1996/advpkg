@@ -3,7 +3,7 @@ title: "ASMPT Limited / ASMPT 有限公司"
 category: entity
 tags: [OSAT, equipment, TCB, hybrid-bonding, CPO, flip-chip, FOPLP, HBM4]
 created: 2026-05-06
-updated: 2026-10-20
+updated: 2026-10-21
 sources: [2026-04-22_asmpt_q1-2026-results, 2026-05-03_globenewswire_amat-acquires-nexx, 2026-05-12_asmpt_ectc2026-firebird-lithobolt]
 related: [wiki/technologies/hybrid-bonding.md, wiki/technologies/copackaged-optics.md, wiki/technologies/hbm4.md, wiki/technologies/foplp.md, wiki/entities/besi.md]
 ---
@@ -151,3 +151,21 @@ US20260114310A1（細間距垂直線互連）、US20260206337A1（光學封裝�
   本公司之排他權重心在 SMT／打線側的證據本輪再度出現。**
 - ⚠ 零量化值（無波長、無門檻、無漂移速率）。
 - 來源：[[sources/2026-10-20_epo_asmpt-us20260290767a1-plasma-two-wavelength-ratio-monitoring]]
+
+---
+
+## 2026-10-21 更新：電漿腔體狀態監測之後，接合前表面狀態又多出一條「環境」支線
+
+**來源**：[[sources/2026-10-21_openalex_uv-bonding-humidity-window-45rh-environment-as-third-branch]]
+（Scientific Reports, HUST, 2026-10-15）
+
+- 本頁既載 **US20260290767A1（電漿輸出以雙波長比值監測）** 為 2026-10-20 所立
+  「接合當下表面狀態」**量測支**的兩個落點之一（另一為 EV Group WO2026098776A1）。
+- ⭐⭐ **本輪該空缺再拆出第三支：環境支。**
+  HUST 顯示**活化步驟所處的環境濕度本身就是決定界面化學結果的獨立變數**（影響 3.74 倍）。
+  ➜ 📌 提問擴為三支：**①用什麼試劑除掉、②怎麼知道電漿這一刻在做什麼（本頁所屬）、
+  ③活化當下的環境（濕度／氣氛）是什麼。**
+  ⇒ 本頁之電漿腔體監測布局因此取得一個**相鄰但不重疊的問題**：
+  **腔體狀態被監測了，腔體所處的環境（濕度）是否也被列管？** 本 wiki 無任何資料。
+- ⚠ 既載空缺「**電漿活化的腔體狀態是否為獨立失效面向？**」（2026-10-20 立，追蹤第三家設備商是否出現同類布局）
+  **本輪未推進**：本輪專利軌未檢索電漿相關片語。

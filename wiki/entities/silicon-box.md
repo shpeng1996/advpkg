@@ -3,7 +3,7 @@ title: "Silicon Box"
 category: entity
 tags: [FOPLP, panel-level, chiplet, Singapore, Italy, EU-Chips-Act, startup, OSAT]
 created: 2026-09-16
-updated: 2026-09-16
+updated: 2026-10-21
 sources: [2026-08-06_siliconbox_500m-units-panel-scale, 2026-02-18_siliconbox_ep4697377a1-fanout-panel-metal-sealing-ring, 2026-08-07_semieng_chip-week-150]
 related:
   - wiki/technologies/foplp.md
@@ -69,3 +69,26 @@ related:
 3. **出貨「顆數」與價值不可直接換算**。5 億顆若為小型 chiplet 模組，與 AI 封裝的營收規模不具可比性；wiki 尚無 Silicon Box 的營收或面板產出面積數據。
 4. **客戶名單未公開**。相對 Powertech（AMD + Broadcom 預訂至 2030）的透明度明顯較低。
 5. **資料來源品質**：目前 wiki 對 Silicon Box 的兩筆主要來源皆為**新聞稿或新聞稿轉載**（PRZen wire、SemiEngineering 週報引述）。建議後續 collect 鎖定第三方分析（Yole、TechInsights）或 ECTC/IMAPS 論文以取得獨立驗證。
+
+---
+
+## 2026-10-21 更新：大面板電鍍的邊緣電流出現「設備層」對手解法
+
+**來源**：[[sources/2026-10-21_epo_haishigao-panel-plating-shield-grid-edge-current]]（CN121272527A, 2026-01-06）
+
+- 本頁既載核心專利為 **RDL 內建金屬密封環以均勻化大面板電鍍**（**版圖層**解法），
+  且為既載結構性論述「**周界／邊緣是獨立失效面向**」四個落點中的第一個。
+- ⭐⭐⭐ **本輪取得同一問題的設備層解法**：海時高半導體（蘇州）CN121272527A 之面板電鍍系統
+  以**可調屏蔽格柵對邊緣電流做精確修正**，並以**微區噴流與電流密度即時閉環耦合**改善厚度均勻度。
+  ➜ 📌 **「大面板電鍍的邊緣電流」至今有兩種互不重疊的解法：改版圖（本公司）vs 改機台（海時高），
+  且兩者皆未給數值。**
+  ⇒ 支持既載「**同一問題在版圖層與設備層各自布局**」之讀法
+  （既有實例為對準：復旦自對準蝕刻 vs 提升對準演算法；NTUA 超穎表面 vs 高精度機械對準）
+  ⇒ 本輪使該讀法擴及**電化學域**，成為第三個技術域。
+- ⭐ 另記：本輪 `ti,ab="panel level packaging" and pd within "2026"` 全庫僅 4 件，
+  其中含本公司 **EP4697377A1（已在庫）** 與 **EP4697378A1（fan-out 面板附加 GND 層，未收錄）**
+  —— 兩件**同日公開（2026-02-18）、不同家族**（93211897 / 93284125）
+  ⇒ 📌 本公司在面板 fan-out 的 RDL 疊構上**同期至少兩件布局**（密封環、附加 GND 層）；
+  本輪僅收錄密封環案之對照資料，GND 層案列下輪候選。
+- ⚠ 海時高為本 wiki 全新實體，規模／客戶／產能完全未知，**不建實體頁**；
+  **專利訊號原則**適用。

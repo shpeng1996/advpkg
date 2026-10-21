@@ -3,7 +3,7 @@ title: "FOPLP — 扇出面板級封裝 / Fan-Out Panel-Level Packaging"
 category: technology
 tags: [fan-out, panel-level, TSMC, Samsung, ASE, Powertech, Innolux, CoPoS, InFO, cost-reduction, delamination, DCB, CTE]
 created: 2026-05-03
-updated: 2026-10-20
+updated: 2026-10-21
 sources: [2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-07-31_trendforce_ase-capex-record-10-5b-leap-foplp, 2025-09-12_trendforce_foplp-competitive-2025, 2026-04-13_trendforce_copos-pilot, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-21_3dincites_acm-wlp-plp-process-trends, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-15_digitimes_manz-310mm-foplp-ecd-equipment, 2026-06-13_digitimes_linkotech-foplp-rollout-traction, 2026-06-20_prnewswire_manz-asia-310mm-ecd, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_digitimes_tsmc-foplp-timeline-skepticism, 2026-07-06_trendforce_cfmee-plp2000-china-first-plp, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-08-06_siliconbox_500m-units-panel-scale, 2026-02-18_siliconbox_ep4697377a1-fanout-panel-metal-sealing-ring, 2026-07-28_xianfeng_cn122476946a-alignment-mark-protection, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage, 2026-10-06_thelec_sec-xray-tsv-tgv-inspection-1um, 2026-10-07_epo_evg-zonewise-adaptive-litho-die-shift, 2026-10-07_epo_evg-inorganic-dual-release-layer-common-solvent, 2026-10-08_pku-embedded-glass-fanout-roughness, 2026-10-13_additive-patterning-and-metal-density-as-warpage-knob, 2026-10-13_beiyi-sic-low-buckling-sintering, 2026-10-13_large-area-sintering-three-challenges]
 related:
   - wiki/technologies/rdl.md
@@ -1307,3 +1307,34 @@ Lam 的先進封裝簡報明列其製程設備支援範圍為「**300 mm 至 600
 - ⭐ **解接合機制清單自三種擴為四種**：新增「**氣體生成**」（既載含微波〔JCET〕等）。
 - ⚠ **零量化值**（無分離力、殘膠、翹曲、時間）⇒ 不得與既載任何翹曲數字比較。
 - 來源：[[sources/2026-10-20_epo_evg-tw202621423a-two-stage-debonding-core-and-sealed-rim]]
+
+---
+
+## 2026-10-21 更新：面板電鍍的邊緣電流取得設備層解法；電鍍均勻度的手段分為三類
+
+**來源**：[[sources/2026-10-21_epo_haishigao-panel-plating-shield-grid-edge-current]]（CN121272527A, 2026-01-06）
+
+- ⭐⭐⭐ **既載「周界／邊緣是獨立失效面向」（2026-10-20 升格為成立論述、四落點）取得第五個落點，
+  且與第一個落點是同一問題的兩種解法層級。**
+  - 第一落點：**Silicon Box —— RDL 內建金屬密封環以均勻化大面板電鍍**（**版圖層**）。
+  - 第五落點：**海時高（蘇州）CN121272527A —— 可調屏蔽格柵對邊緣電流做精確修正**（**設備層**）。
+  ➜ 📌 **「大面板電鍍的邊緣電流」至今有兩種互不重疊的解法：改版圖 vs 改機台，且兩者皆未給數值。**
+  ⇒ 支持既載「同一問題在版圖層與設備層各自布局」之讀法，並使其擴及**電化學域**（第三個技術域）。
+- ⭐⭐⭐ **「以流體與機械運動取代化學添加劑」為本 wiki 首見的第三條電鍍路徑。**
+  該系統六模組中有三個是**動態**機制：**微區噴流與電流密度即時閉環耦合、脈衝電場＋阻抗補償、
+  陰極夾具微振動／動態變浸／週期性搖擺**（促進氣泡脫附、晶核均勻化、界面溶液更新，抑制擴散層增厚）。
+  ➜ 📌 既載面板電鍍討論集中在**化學**（Cu-MSA 高濃度電解液、真空輔助前處理、低 k 有機緩衝層）
+  與**版圖**（密封環）兩類
+  ⇒ **電鍍均勻度的工程手段分為三類：化學、版圖、流體／機械動態。**
+- ⭐⭐ **把「鍍層厚度均勻度」與「通孔填充空洞率」寫在同一份請求項裡**
+  ⇒ 兩者被當成**同一組製程變數的兩個輸出**；
+  與既載 Hanyang Univ.「真空輔助無空洞高深寬比 TGV 銅填充」形成**設備側 vs 製程側**對照。
+- ⚠⚠ **零量化值**：面板尺寸、厚度均勻度（%）、空洞率、脈衝參數、噴流速度全缺；
+  「顯著改善」「極低水準」皆為定性語。
+  依既載**規範（1）**（均勻度數字須標註是否附重複性）——**本件連數字都沒有，不得引用為任何均勻度基準。**
+- ⚠ 中文申請案，摘要英譯有重複句；依**規範（59）**記住 **OPS 的 ti,ab 對非英文申請案覆蓋不全**。
+- [ ] **新增空缺：面板電鍍邊緣效應的量化口徑是什麼？**（邊緣排除寬度？邊緣 vs 中心厚度比？）
+  兩個落點皆無數字。
+- ⚠ 另記：本輪 `ti,ab="panel level packaging" and pd within "2026"` 全庫僅 **4 件**
+  ⇒ 📌 **該片語已近飽和**；下輪面板軌應改用 "fan-out panel"（⚠ 含連字號，本輪實測連字號片語會回 404）
+  之不含連字號替代，或改以申請人檢索。

@@ -3,7 +3,7 @@ title: "GlobalFoundries — 格羅方德"
 category: entity
 tags: [GlobalFoundries, silicon-photonics, copackaged-optics, PIC, SiPh, foundry, Malta-NY]
 created: 2026-09-27
-updated: 2026-10-20
+updated: 2026-10-21
 sources: [2026-09-27_globalfoundries_siph-cpo-bandwidth-density-coupling-budget]
 related:
   - wiki/technologies/copackaged-optics.md
@@ -152,3 +152,32 @@ related:
 - **既載定位不變**：矽光子與 CPO 封裝之代工側一手來源（銅 <1 Tb/s/mm & >5 pJ/bit vs 光 >5 Tb/s/mm & 2–5 pJ/bit 等）。
   ⚠ 既載「0.3–0.5 nm 疑為 µm 誤植」之待查項未變更。
 - 來源：[[sources/2026-10-20_eetasia_tsmc-gf-interposer-deep-trench-capacitors]]
+
+---
+
+## 2026-10-21 更新：CPO 規模化的代工端觀點——表面耦合解除 beachfront 上限，但全篇幾無數字
+
+**來源**：[[sources/2026-10-21_semi_gf-cpo-surface-coupling-removes-beachfront-limit-three-msas]]
+（SEMI blog 訪談 Vikas Gupta, Senior Fellow, Silicon Photonics, 2026-08-12）
+
+- ⭐⭐⭐ **表面耦合（光柵耦合器或轉向鏡）解除了「晶粒邊緣長度」對光學 I/O 密度的限制**（beachfront density）。
+  ➜ 本 wiki 此前把 TSMC COUPE（表面法向光柵耦合＋微透鏡）與 Intel（V-groove 邊緣耦合）
+  之差異只記在損耗與對準；本輪補上**結構性差異：光 I/O 密度是否受晶粒周長限制。**
+- ⭐⭐⭐ **光子版圖曲線且稀疏 ⇒ 對波導造成 CMP dishing 風險**
+  ⇒ 既載「CMP 是限制層」**首次擴及光子層**，且限制項不同（高度控制 vs 圖案密度不均之形貌偏差）。
+  ⇒ **新增空缺：矽光子波導的 CMP dishing 規格為何？**
+- **製造面**：Malta, New York 廠矽光子**重用 >90% 既有 CMOS 機台群**（廠方自述）；
+  矽無法有效發光 ⇒ 外部光源，**O-band 通常用 InP**；多波長雷射須在自身發熱下維持波長穩定。
+- **可拆式光纖**讓晶圓廠不必在早期製程搬運易損 pigtail；
+  可拆性「現在更多是關於**可製造性與自動化**」。
+- **對準三類**：主動（光功率回饋）／被動（邊緣 V-groove）／視覺式（fiducial ＋ 十字線）；
+  尺度對比 **125 µm 光纖 vs 次微米波導**。
+- **熱**：整合壓力把 **InP 雷射與光放大器推近矽晶粒**，驅動可靠性研究。
+- **標準**：XPO MSA（液冷納入封裝外形）、OCI MSA（**明示不含電性側**；具名支持者 Broadcom／AMD／NVIDIA／OpenAI）、
+  Open CPO/CPX MSA（可插拔、機械外形）；**OFC 2026** 為三者同時出現之時點；
+  Gupta 預期這是「持續標準化的第一波」。
+- ⚠⚠ **全篇僅三個數字**（>90%、125 µm、次微米）；
+  **頻寬密度、pJ/bit、對準容差、耦合損耗、節距、吞吐量全部缺**
+  ⇒ 本頁既載之量化規格（銅 <1 Tb/s/mm & >5 pJ/bit vs 光 >5 Tb/s/mm & 2–5 pJ/bit；
+  SSC ~0.4 dB／32 通道 V-groove <1 dB／Corning 玻璃橋 <1.5 dB/facet；Ge PD 120 GHz）**不因本件更新。**
+- ⚠ 依規範（41）：SEMI 部落格之廠商訪談、全篇轉述、無逐字引語 ⇒ **有利害關係之來源。**

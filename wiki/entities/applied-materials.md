@@ -3,7 +3,7 @@ title: "Applied Materials（應用材料）"
 category: entity
 tags: [equipment, ECD, PECVD, TSV, HBM, die-thinning, hybrid-bonding, USA]
 created: 2026-09-17
-updated: 2026-10-20
+updated: 2026-10-21
 sources: [2026-08-18_appliedmaterials_hbm-packaging-bottleneck-toolset, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-06-28_hyperframe_amat-hybrid-bonding-hedge, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_epo_xiamen-anjieli-cn121335557a-silane-parylene-tgv]
 related:
   - wiki/technologies/tsv.md
@@ -379,3 +379,16 @@ Poulomi Mukherjee（Applied Materials Germany）：FE 模擬識別 **① 種子�
 - ⚠ 既載「AMAT 混合接合 CMP 市占 100%」維持**待證**，不得作為其他推論之前提（2026-09-21 起列管）。
 - 來源：[[sources/2026-10-20_heraldcorp_skhynix-hybrid-bonding-90pct-yield-3-5yr-life-gate]]、
   [[sources/2026-10-20_xenospectrum_samsung-sk-hynix-hybrid-bonding-sample-gap]]
+
+---
+
+## 2026-10-21 更新：Kinex 平台首次與具名客戶的試產線訂單連上
+
+**來源**：[[sources/2026-10-21_bits-chips_skhynix-hb-deferral-attributed-to-jedec-height]]（Bits&Chips, 2026-08-26）
+
+- ⭐⭐ **據報 SK hynix 已訂購一條試產混合接合線，結合 Applied Materials 與 Besi 的設備**；
+  原文圖說明示 **Kinex** D2W 混合接合平台由 AMAT 與 Besi 共同開發。
+  ➜ 本頁既載 Kinex 的技術規格（量產現況 100 nm @ 3σ、2026 新機 50 nm、路線圖 <25 nm、
+  吞吐 1,600–2,000 die/hr）**首次與一個具名客戶的採購行為連上**。
+  ⚠ 「據報」（reportedly）、且為 **pilot line** 而非量產線；原文暗示追加訂單可能被推遲。
+- ⚠ 本條**不改變**既載對 AMAT 混合接合 CMP 市占之待證狀態（「市占 100%」仍未結清）。

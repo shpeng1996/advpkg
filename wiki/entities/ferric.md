@@ -3,7 +3,7 @@ title: "Ferric, Inc."
 category: entity
 tags: [Ferric, IVR, vertical-power-delivery, power-delivery, inductor, A-per-mm2, fabless]
 created: 2026-10-08
-updated: 2026-10-09
+updated: 2026-10-21
 related:
   - wiki/concepts/power-delivery-packaging.md
   - wiki/entities/infineon.md
@@ -73,3 +73,21 @@ related:
 ⚠ **仍不得與 Infineon 任一數字相減或排序**（分母不同類）。既載空缺「**>5 A/mm² 客戶實績之分母是否與 Fe1766 之矽面積口徑相同**」**本輪無進展。**
 
 *Source: [[sources/2026-10-09_infineon-tdm2354-dual-phase-denominator]]*
+
+---
+
+## 2026-10-21 更新：「封裝內供電元件」品類出現第二家新創（電容側）
+
+**來源**：[[sources/2026-10-21_empower_ecap-substrate-embedded-silicon-capacitors-in-mass-production]]
+（Empower 新聞稿, 2026-02-10）
+
+- 本頁所記 Ferric 為 **IVR ＋ 完全整合電感**（**電感側**），產品置於處理器封裝內行垂直供電。
+- ⭐⭐ **Empower Semiconductor（Milpitas）為同品類的第二家：ECAP 嵌入式矽電容 ＋ Crescendo 垂直供電平台（電容側）。**
+  三款已量產：EC2005P **9.34 µF**（2×2 mm）／EC2025P **18.68 µF**（4×2 mm）／EC2006P **36.8 µF**（4×4 mm）
+  ⇒ 單位面積電容一致 **≈2.3 µF/mm²**（本 wiki 推算；**分母為封裝面積**）。
+- ⚠⚠ **方法論提醒（本頁案例所立之教訓的再次適用）**：
+  本頁曾以 **160 A ÷ 35.5 mm² = 4.507 A/mm²** 反推出 Ferric 的分母為**矽晶粒面積**，
+  並據此判定**不得與 Infineon「>3 A/mm² 障壁」（電源模組口徑）比較大小**。
+  **Empower 的 ≈2.3 µF/mm² 分母為封裝尺寸（矽面積未揭露）**
+  ⇒ 同理**不得與任何以矽面積為分母的電容密度數字比較。**
+- ⚠ **兩家皆無產能／客戶資料** ⇒ 列為 [[concepts/power-delivery-packaging]] 之待補結構。

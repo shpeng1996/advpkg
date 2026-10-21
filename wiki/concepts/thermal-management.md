@@ -3,7 +3,7 @@ title: "先進封裝熱管理 / Thermal Management in Advanced Packaging"
 category: concept
 tags: [thermal-management, liquid-cooling, 3D-IC, CoWoS, heat-dissipation, TIM, ECTC-2025, GaN, power-delivery, co-design, patent-signal, delamination]
 created: 2026-04-25
-updated: 2026-10-20
+updated: 2026-10-21
 sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2025-12-01_semiengineering_thermal-management, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-02_trendforce_samsung-hbm5-computex2026, 2026-05-21_semieng_hi-roadmap-nature-paper-intel, 2026-08-13_semieng_1mw-rack-debate-thermal, 2026-04-27_semieng_semiconductor-materials-misbehave, 2026-08-21_trendforce_chip-packaging-heat-ai-bottleneck-cpo-stco, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_arxiv_umn-multi-kw-power-delivery-3d-hi, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_samsung-cn122602880a-ivr-capacitor-interposer-core, 2026-10-02_imaps-dpc2026_delo-die-side-capacitor-encapsulation, 2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage, 2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk, 2026-10-07_epo_cas-freestanding-3c-sic-interposer, 2026-10-07_openalex_diamond-d2w-direct-bonding-vdw-45mpa, 2026-10-07_openalex_lau-silicon-bridge-microbump-reliability, 2026-10-08_etron-liquid-through-substrate-cavity, 2026-10-08_micron-cryogenic-package-hea-solder, 2026-10-08_advantest-singulated-die-test-thermal, 2026-10-09_cas-2013-microchannel-interposer-ebg, 2026-10-09_bjut-thermomech-phase-field-imc-tgv, 2026-10-13_large-area-sintering-three-challenges, 2026-10-13_cu-microparticles-ductility-vs-stiffness-tradeoff, 2026-10-13_beiyi-sic-low-buckling-sintering]
 related:
   - wiki/technologies/cowos.md
@@ -1485,3 +1485,66 @@ SNU × UIUC 的 TIM 綜述明確指出：**TIM 的 bulk／effective 導熱係數
 - ⭐⭐ **翹曲在本件被視為熱場的下游結果之一，而非獨立指標** ⇒ 與既載「翹曲與局部應力錯位、須並列量測」同向。
 - ⚠⚠ 摘要截斷，加速與誤差數值未入庫；無矽實測校正 ⇒ 不得宣稱精度或加速幅度。📌 列下輪取全文項。
 - 來源：[[sources/2026-10-20_openalex_acetherm-chiplet-thermal-simulation-in-design-loop]]
+
+---
+
+## 2026-10-21 更新：製程熱第四個切入點（回焊峰溫）；薄化傷熱的材料級機制；界面工程的代價記在熱阻上
+
+**來源**：[[sources/2026-10-21_openalex_snbi-sac-reflow-peak-temp-dominant-100pct-mixing-at-190c]]
+（SSMT, 2026-09-23）、
+[[sources/2026-10-21_bits-chips_skhynix-hb-deferral-attributed-to-jedec-height]]（Bits&Chips, 2026-08-26）、
+[[sources/2026-10-21_openalex_tgv-polymer-liner-stress-vs-thermal-resistance-no-unique-optimum]]
+（Microelectronics Reliability, 2026-10-19）
+
+### 1. ⭐⭐⭐ 「薄化傷散熱」首次有材料級解釋
+
+**SK hynix VP Jaesik Lee（Hot Chips 2026）**：**晶粒愈薄，其中氧化物所佔比例愈高，而氧化物導熱差。**
+➜ 既載本頁三個相關落點：**775 µm 熱預算天花板**、
+AMAT「HBM 晶粒薄化至常規 DRAM 的 1/25」、2026-10-04「同 Z 高度核心晶粒可厚 +24%、熱阻 −35%（projected）」。
+➜ 📌 本輪補上**為什麼**，使因果鏈完整：
+**高度上限 → 必須薄化 → 氧化物體積占比升高 → 熱阻惡化 → 需要能省掉凸塊厚度的接合方式。**
+⇒ 既載「HB 的賣點是厚度預算的再分配」取得其熱學根據。
+
+### 2. ⭐⭐ 製程熱自三個切入點擴為四個
+
+既載三個（2026-09-22 立）：**775 µm 熱預算、退火溫度帶、鍵合頭本身**（Intel 雙 family 專利）。
+**第四個：回焊峰溫（170／180／190 °C；SSMT Sn–Bi/SAC 研究）。**
+➜ 📌 **須標註第四項屬板級／組裝段**，與前三項（晶圓／晶粒段）口徑不同
+—— 依既載規範族（引用任何數字須標註製程層），**不可與晶圓段熱預算互相代入。**
+
+### 3. ⭐⭐ 低溫化的代價首次被量化在冶金完整度上
+
+Taguchi 分析指認**回焊峰溫為最主導參數**（鋼板厚度次之）；
+**最佳組合 Sn42Bi58 ＋ 190 °C ＋ 0.12 mm 得混合率 100%、Vickers 硬度 28.2 HV（兩項皆為三水準中最高）**
+⇒ **混合率隨溫度單調上升**。
+➜ 📌 **想要低熱預算，就得接受較低的混合率。**
+既載對低溫路線的討論（混合接合退火 >200 °C、Atotech 預退火 ~10 min @ ~200 °C、
+Pd 表面合金化／微波誘發低溫 Cu–Cu 接合）**全部聚焦「能不能接起來」**；
+本篇給出**「接起來的完整度隨溫度下降而劣化」**的對照。
+⚠⚠ **板級 BGA 回焊（SMT）口徑，非 die-level**；
+**28.2 HV 為銲料塊材硬度，不是接合強度**，不得與任何接合強度比較。
+⚠ Bi 系銲料之脆性問題該文未處理。
+- [ ] 新增空缺：**先進封裝（die-level）是否有對應的低溫銲料混合率—溫度曲線？**
+  若有，可與混合接合 >200 °C 退火需求直接對照，**量化「不走混合接合」的熱預算節省。**
+
+### 4. ⭐⭐⭐ 界面工程的代價記在熱軸上（TGV 聚合物襯層）
+
+| 條件 | 玻璃環拉應力 | 增量熱阻 |
+|------|-------------|----------|
+| 無聚合物參考（熱端點） | **127.0 MPa** | — |
+| **PI-2611 @ 15 µm** | **50.7 MPa（最低）** | **2,428.0 K/W** |
+| **BCB @ 10 µm** | **80.6 MPa** | **841.3 K/W** |
+
+熱阻比 **≈2.89×**（本 wiki 推算）。作者自述此為
+**"a lower-thermal-resistance trade-off rather than a unique optimum"**。
+➜ 📌 既載「TGV 的失效在界面與孔緣，不在材料本體」須補一句：**界面工程的代價記在熱軸上。**
+➜ 📌 與既載 Lau 的「應力在空間上被搬移」（micro-bump 應變減半、PCB 側 BGA 應變加倍）
+構成**守恆式取捨的第二個實例，且搬移的目標是另一個物理量而非另一個位置。**
+⚠⚠ 全為模擬；「增量熱阻」之分母與量測邊界未界定
+⇒ **不得與本頁任何既載熱阻數字（例如 Technoprobe 之 PT2、SNU/UIUC 之 TIM 熱路徑）直接比較。**
+
+### 5. ⭐ CPO 的熱壓力：雷射位置的兩個相反回應
+
+GF（SEMI 訪談）：III–V 材料高溫表現不佳，整合壓力把 **InP 雷射與光放大器推近矽晶粒**，驅動可靠性研究。
+既載 **Celestica DS6005「現場可更換雷射」**（2026-10-15）。
+➜ 📌 **一方把雷射推近晶粒（接受可靠性風險），一方把雷射做成可更換件（承認其為耗損件）。**

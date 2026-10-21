@@ -3,7 +3,7 @@ title: "玻璃基板 / Glass Core Substrate"
 category: technology
 tags: [glass-substrate, TGV, panel-level, FC-BGA, CoPoS, Absolics, DNP, Rapidus, warpage, SeWaRe, glass-interposer, BOE, ULCVD, non-embedding, Lens-Technology, TPK-KY, Innolux, AUO, LG-Chem, singulation, patent-signal]
 created: 2026-05-08
-updated: 2026-10-15
+updated: 2026-10-21
 sources: [2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-27_tradingkey_copos-glass-validation-08mm-85x110mm, 2026-09-27_intel_us20260182414a1-asymmetric-buildup-cte-gradient-glass, 2026-09-27_samsung_us20260144093a1-bridge-on-tgv-mold-fixed, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-05-05_trendforce-insights_glass-substrate-development, 2026-03-03_trendforce_skc-absolics-glass-1t, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-05-29_3dincites_rapidus-2nm-advanced-packaging-ai-foundry, 2026-06-01_trendforce_intel-3dgs-india-glass-substrate, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-10_trendforce_china-glass-substrate-boe-visionox, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-06-20_biggo_boe-glass-substrate-pilot, 2026-06-28_economy-ac_glass-substrate-global-race, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-08-18_trendforce_shinko-glass-substrate-22layer-glassem-delay, 2026-09-11_mssp_tgv-glass-biaxial-bending-ring-on-ring, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-03-13_kaneka_jp2026047137a-glass-core-polyimide-quantified, 2026-08-10_screp_low-k-organic-buffer-tgv-cu-metallization, 2026-08-04_jmrt_vacuum-assisted-void-free-cu-fill-tgv, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_patent_er-eng-glass-interposer-dual-carrier, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-30_epo_xiamen-anjieli-cn121335557a-silane-parylene-tgv, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth, 2026-09-30_epo_intel-jp2026116680a-glass-core-embedded-inductor-clusters, 2026-09-30_epo_intel-us20260040982a1-glass-package-liquid-metal-socketing, 2026-09-30_epo_amosense-wo2026019155a1-multilayer-glass-core-frit-bonding, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-10-02_epo_shanghai-xianfeng-cn122622683a-glass-interposer-bridge, 2026-10-02_epo_semco-cn122054433a-glass-surface-roughness, 2026-10-02_trendforce_nvidia-glass-substrate-2028-taiwan, 2026-10-02_trendforce_intel-microled-glass-24-layer, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-06_atlaspcb_clearwater-forest-glass-core-claim-unsourced, 2026-10-06_intel_clearwater-forest-no-glass-foveros-9um-3um-emib-45um, 2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage, 2026-10-06_thelec_sec-xray-tsv-tgv-inspection-1um, 2026-10-07_epo_cas-freestanding-3c-sic-interposer, 2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk, 2026-10-07_epo_evg-inorganic-dual-release-layer-common-solvent, 2026-10-08_rdl-free-glass-interposer-trench, 2026-10-08_pku-embedded-glass-fanout-roughness, 2026-10-08_uestc-tapered-tgv-skin-current, 2026-10-09_keti-tgv-defect-spectrum-plugging-review, 2026-10-09_uestc-tapered-tgv-stress-relief, 2026-10-09_bjut-thermomech-phase-field-imc-tgv, 2026-10-13_all-glass-aip-no-polymer-in-the-stack]
 related:
   - wiki/technologies/rdl.md
@@ -2433,3 +2433,81 @@ TrendForce（2026-09-30，⚠ **全文為 reportedly 之產業傳聞，非 NVIDI
 ➜ 📌 **本頁既有數字（Absolics／SEMCO／AGC／DNP／Corning／Intel 等）皆來自不同載具，引用時不得合併為單一規格表**（本輪新立規範 55）。既有數字不改動，僅加註。
 ➜ 廠商歸位：Corning WO2026164778A1（Ti/Cu 黏著層＋矽烷官能化）屬 direct-on-glass 解法；Kaneka／ABF 增層屬 polymer build-up。
 見 [[sources/2026-10-15_glass-core-cu-rdl-review-feature-size-caveat]]。
+
+---
+
+## 2026-10-21 更新：「良率瓶頸在邊緣」取得第三條獨立證據；襯層的應力收益記在熱阻上
+
+**來源**：[[sources/2026-10-21_epo_lg-innotek-glass-core-edge-wrapped-resin]]（WO2026216712A1, 2026-10-15）、
+[[sources/2026-10-21_openalex_tgv-polymer-liner-stress-vs-thermal-resistance-no-unique-optimum]]
+（Microelectronics Reliability, Anhui Univ, 2026-10-19）、
+[[sources/2026-10-21_openalex_high-cte-ceramic-matches-solder-not-silicon]]（ACS AMI, 2026-09-23）
+
+### 1. ⭐⭐⭐ 「玻璃的良率瓶頸在邊緣與切單，而非穿孔本身」——第三條證據、第三種解法型態
+
+本頁既有兩條獨立證據：
+① **LG Chem CN122342272A**（改切單方式：先成形保護層再切）；
+② **邊緣應力塗層 95 → 49 MPa**（塗層降低邊緣應力）。
+
+**本輪第三條：LG Innotek WO2026216712A1 —— 三段式「包邊」樹脂層。**
+- **側樹脂層**沿圓周環繞玻璃側部；
+- **上／下樹脂層**置於玻璃外側上／下部並朝表面中央延伸，
+  且請求項明載**其延伸寬度大於其垂直方向厚度**。
+- 請求項同時列出**崩邊（edge chipping）／裂紋／板材分層**三種失效模式。
+
+➜ 📌 **三種解法分別作用在「切單製程」「表面應力」「幾何封閉」三個不同環節**
+⇒ 該論述自「成立」升格為「**成立且已出現三條互不重疊的工程路徑**」。
+
+➜ 📌 **「邊緣保護」已分化為兩條結構路線**：
+- **後退加框**：**Intel JP2026059728A**（玻璃邊緣自 build-up 層邊緣內縮 ＋ 外圈 buffer layer ＋ frame）；
+- **包覆反折**：**LG Innotek 本件**（樹脂直接包覆側部並反折到上下表面）。
+
+➜ 📌 **新增一項規範族成員：「玻璃邊緣品質」亦非單一驗收項，至少含崩邊／裂紋／分層三者；
+引用任何邊緣相關數字須標註量的是哪一項。**
+⚠ 既載唯一的邊緣寬度數字（ASE 再用玻璃載板受損區寬 ~43 µm）已明確標註**不是門檻值**，
+本件亦無門檻 ⇒ **該族至今無任何驗收門檻值。**
+
+⚠ **專利訊號原則**：本件為 2026-10 公開之排他權布局，**不得解讀為 LG Innotek 已具量產玻璃核心基板能力**。
+
+### 2. ⭐⭐⭐ TGV 聚合物襯層：應力不是被消除，是被搬到熱軸上
+
+Anhui Univ. 三維有限元素（**50 µm Cu 核心 ＋ 固定 Co/TiW 層 ＋ 聚合物襯層**），
+比較 PI-2611／HD-4100／HD-8820（PBO）／BCB，32 組厚度解析設計：
+
+| 條件 | 玻璃環拉應力 | 增量熱阻 |
+|------|-------------|----------|
+| 無聚合物參考（熱端點） | **127.0 MPa** | — |
+| **PI-2611 @ 8 µm** | **66.5 MPa（−47.6%）** | 未給 |
+| **PI-2611 @ 15 µm** | **50.7 MPa（取樣最低）** | **2,428.0 K/W** |
+| **BCB @ 10 µm** | **80.6 MPa** | **841.3 K/W** |
+
+- ⭐ 作者對 BCB 結果自述 **"a lower-thermal-resistance trade-off rather than a unique optimum"**
+  ⇒ 📌 既載論述可自「最佳值是區間」**升級為「在耦合參數下，最佳值可能根本不存在，只存在取捨面」**。
+- ⭐ **PI-2611 模數較高卻仍降低應力 ⇒ CTE 項主導、模數項次要**
+  ⇒ 📌 **選襯層的首要變數是 CTE，不是柔軟度**（與既有直覺相反）。
+  本頁既載 AGC 之 ER-Y1 CTE 3.5／88 GPa vs EN-A1 5.8／75 GPa 同時給 CTE 與模數但未分離貢獻；
+  本篇以雙因子 modulus–CTE 研究首次分離。
+- ⭐ 熱阻比 **2,428.0 ÷ 841.3 ≈ 2.89×**（本 wiki 推算）
+  ⇒ 📌 既載「TGV 的失效在界面與孔緣，不在材料本體」須補一句：**界面工程的代價記在熱軸上。**
+- ⭐ **±10% 材料性質擾動下，PI-2611 以外三種聚合物的應力包封相互重疊**
+  ⇒ 📌 **在這三者之間，襯層材料選擇是自由度而非槓桿。**
+- ⚠⚠ **全為模擬，無實測**。既載空缺「玻璃核心『封裝對 PCB』應變的實測對照」
+  **因本輪又多一組模擬數字而更形必要**。
+- ⚠ 作者自陳數字為 "within the specified local TGV model"；**不得作為產線規格或跨結構引用**。
+  「增量熱阻」之分母與量測邊界未界定 ⇒ **不得與既載任何熱阻數字直接比較**。
+
+### 3. ⭐⭐⭐ CTE 匹配不是單向往矽收斂
+
+既載兩種處理 CTE 失配的方向：①**把基材 CTE 往下調貼近矽**（玻璃可調 CTE、PWG 路線圖 70 → <50 ppm/°C）；
+②**限制用途或柔順層隔開應力**（上海美維玻璃只當堆疊載板；TGV 聚合物襯層）。
+
+**第三種方向（ACS AMI）**：**把介電體的 CTE 往上拉去匹配銲料**
+—— Na3P3O9 **CTE 22.25 ppm/°C** vs **SAC305 的 21.9 ppm/°C**，
+傳統微波介電陶瓷僅 5–12 ppm/°C；熱應力降至商用 A6M 的 **54%**、傳統氧化鋁的 **30%**（−40 ~ 125 °C 模擬）。
+
+➜ 📌 **「CTE 匹配」取決於要匹配鏈條上的哪一環。**
+既載 Lau 的玻璃核心結果（micro-bump 應變 9.12%→4.43% 減半，同時 PCB 側 BGA 應變 8.43%→19% 加倍）
+**正是鏈條兩端不可同時匹配的實例**；本篇是**選擇匹配另一端**。
+⇒ **CTE 是一條鏈，不是一個值；匹配哪一端是設計選擇，且必然放棄另一端。**
+⚠⚠ **適用邊界**：該論文對象為**板級表面黏著被動元件**與 Ku 波段天線，**非封裝基板**；
+引用時必須標註「板級被動元件」口徑。

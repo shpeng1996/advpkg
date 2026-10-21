@@ -3,7 +3,7 @@ title: "CoWoS — Chip-on-Wafer-on-Substrate"
 category: technology
 tags: [2.5D, interposer, TSMC, AI, HPC, HBM, COUPE, CPO, packaging-constraints, NVIDIA]
 created: 2026-04-24
-updated: 2026-10-20
+updated: 2026-10-21
 sources: [2026-08-13_semieng_1mw-rack-debate-thermal, 2026-08-05_trendforce_tsmc-cowos-cow-outsourcing-osat, 2026-05-24_techtimes_nvidia-computex2026-cowos, 2026-04-24_initial-survey, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-15_trendforce_tsmc-vanguard-stake-sale, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-09_financialcontent_tsmc-130k-cowos-wafers, 2026-06-09_digitimes_tsmc-cowos-soic-capacity-symposium, 2026-06-15_trendforce_tsmc-cowos-gap-narrowing-130k-200k-wafers, 2026-06-10_tomshardware_tsmc-fab-expansion-roadmap-n2-cowos-soic, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_tmtpost_tsmc-cowos-capacity-targets-2026-2027, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-09-30_intel_us-advanced-packaging-reticle-8x-12x-fab9, 2026-10-02_trendforce_cowos-l-mainstream-through-2028, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_amd-us20260282956a1-silicon-bridge-decap, 2026-10-06_epo_micron-interposer-embedded-active-buffers, 2026-10-06_epo_tenstorrent-discrete-pitch-adapter-substrates, 2026-10-06_openalex_gatech-terahertz-nde-8layer-interposer, 2026-10-07_epo_cas-freestanding-3c-sic-interposer, 2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk, 2026-10-07_openalex_amkor-kelly-three-interposer-routes, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-09_semiwiki-tsmc-oip-2026-verification, 2026-10-13_microbump-as-radiator-and-the-stand-in-problem]
 related:
   - wiki/entities/tsmc.md
@@ -990,3 +990,30 @@ C.C. Wei 答：*"I try to avoid answering it directly, but let me say that, yes,
   依 spec STEP 2「摘要轉載」原則未收錄；其獨有細節（**CoWoS-L 3.5× 自 2024 年量產**；
   **14× 對應約 10 顆大運算晶粒 + 20 顆 HBM**）僅記於 raw 檔與來源頁備查，**未寫入本頁規格表**。
 - 來源：[[sources/2026-10-20_eetasia_tsmc-gf-interposer-deep-trench-capacitors]]
+
+---
+
+## 2026-10-21 更新：中介層內嵌 DTC 的問法須自二分改為三分
+
+**來源**：[[sources/2026-10-21_epo_tsmc-dtc-as-ipd-with-common-grounded-tsv]]（US20260314447A1, 2026-10-08）、
+[[sources/2026-10-21_epo_tsmc-air-gap-isolates-deep-trench-capacitors]]（US20260304799A1, 2026-10-01）、
+[[sources/2026-10-21_empower_ecap-substrate-embedded-silicon-capacitors-in-mass-production]]（2026-02-10）
+
+2026-10-20 隨 TSMC–GF 協議揭露而立之空缺：
+「**CoWoS-S 中介層的 embedded deep-trench capacitor 是既有能力的延伸採購，
+還是 CoWoS 首次納入中介層內建被動元件？**」
+
+➜ 📌 **本輪取得三種形態的證據，空缺應自二分改為三分：**
+
+| 分型 | 證據 | 性質 | 供應鏈意涵 |
+|------|------|------|------------|
+| ①中介層本體內建 | TSMC–GF 協議含深溝槽電容（2026-10-20，二手） | 報導 | 綁定中介層代工者 |
+| ②**以 IPD 形式嵌入／堆疊** | **TSMC US20260314447A1**：DTC ＋ 共地 TSV ＋ 背面接點 | 排他權 | 可自製或外購晶粒 |
+| ③**外購嵌入式電容元件** | **Empower ECAP：已量產、有型號**（9.34／18.68／36.8 µF） | 商品 | 純採購 |
+
+- ⚠⚠ **US20260314447A1 之摘要未指明該 IPD 位於中介層內、基板內、或作為獨立晶粒堆疊**
+  ⇒ **不得據此宣稱「CoWoS 中介層已內建 DTC」**；既載 2026-10-20 之記載維持原狀。
+- ⭐ 另一件 **US20260304799A1** 指出 **DTC 的密度上限可能由電容對電容的 cross-talk 決定**
+  （以空氣間隙隔離相鄰 DTC），而非僅由溝槽幾何決定
+  ⇒ **新增空缺：DTC 的實際密度上限由幾何或 cross-talk 決定？**（無數值）
+- ⚠ **專利訊號原則**：兩件皆為排他權布局，非量產能力宣告。

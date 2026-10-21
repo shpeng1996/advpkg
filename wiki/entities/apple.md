@@ -3,7 +3,7 @@ title: "Apple Inc. / 蘋果"
 category: entity
 tags: [Apple, chiplet, local-interconnect, air-gap, RDL, glass-substrate, Broadcom, Baltra]
 created: 2026-10-05
-updated: 2026-10-12
+updated: 2026-10-21
 sources: [2026-10-05_epo_apple-local-interconnect-air-gap, 2026-10-05_thelec_semco-glass-samples-apple]
 related: [technologies/emib.md, technologies/rdl.md, technologies/glass-substrate.md, entities/semco.md, entities/tsmc.md, entities/broadcom.md]
 ---
@@ -73,3 +73,20 @@ related: [technologies/emib.md, technologies/rdl.md, technologies/glass-substrat
 - ⚠ 兩者**不構成同一論述的佐證關係**（一為排他權、一為材料回顧；元件域亦不同：局部互連橋 vs BEOL 互連），僅並列。
 
 來源：[[sources/2026-10-12_abn-nonporous-lowk-bonding-interface]]
+
+---
+
+## 2026-10-21 更新：「介電質是否為物質」取得第二個落點，且動機與本公司相反
+
+**來源**：[[sources/2026-10-21_epo_tsmc-air-gap-isolates-deep-trench-capacitors]]（TSMC US20260304799A1, 2026-10-01）
+
+- 本頁既載 **KR20260119943A**：局部互連以 low-k 或**空氣間隙腔體**製成、die-to-die 金屬線跨越腔體
+  ⇒ 本 wiki「橋的維度」軸第十七維「**介電質是否為物質**」之**首個落點**，
+  目的為**讓訊號路徑本身的電容變低**。
+- ⭐⭐⭐ **本輪 TSMC US20260304799A1 以空氣間隙達成完全不同的目的**：
+  形成於**深溝槽電容的側向側面**，以確保**電容對電容的隔離**、抑制 cross-talk。
+  ➜ 📌 **「以空氣取代介電質」已出現兩種互不重疊的動機（訊號路徑降容 vs 元件間隔離），
+  且兩者皆為 2026 年公開、分屬兩家公司** ⇒ 該讀法自單一案例**升格為並列論述**。
+- ⚠⚠ **兩案同缺同一類資料**：本頁既載空缺「腔體尺寸／跨距／支撐方式全無」在 TSMC 案同樣存在
+  ⇒ 📌 **新增空缺：空氣間隙在封裝層級的機械與可靠性代價為何？**（封膠滲入？熱循環下塌陷？）
+  兩個落點皆未處理。

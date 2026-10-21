@@ -3,7 +3,7 @@ title: "Besi (BE Semiconductor Industries) — 混合接合設備領導廠商"
 category: entity
 tags: [equipment, hybrid-bonding, die-attach, D2W, TCB, Netherlands]
 created: 2026-04-25
-updated: 2026-10-16
+updated: 2026-10-21
 sources: [2026-09-27_semieng_chip-week-156-india-tata-besi-izmo, 2026-03-01_3dincites_besi-packaging-power-shift, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-03-29_damnang_hybrid-bonding-cmp-gating-factor, 2026-10-02_bitschips_besi-q1-2026-hybrid-bonding-orders, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-07_epo_besi-deformable-die-forming-bond-tool]
 related:
   - wiki/entities/ev-group.md
@@ -346,3 +346,27 @@ Bits&Chips（2026-04-23，作者 Paul van Gerven）：
 - ⚠ **本輪另檢得但維持未收之 Besi 2026 年件**：family 96060954（導腳加工裝置底座）、
   94768776（基板鋸切）—— **此二件已於 2026-10-12 檢得並明示未收，本輪維持該判斷**；
   新檢得 92708901（衝切裝置）、95699597（載具底座工具，**已收錄**）。
+
+---
+
+## 2026-10-21 更新：JEDEC 高度鬆綁的衝擊自「推測」升格為記憶體廠 VP 的公開歸因
+
+**來源**：[[sources/2026-10-21_bits-chips_skhynix-hb-deferral-attributed-to-jedec-height]]（Bits&Chips, 2026-08-26）
+
+- ⭐⭐⭐ **本頁 2026-04-01 條目所記之「JEDEC 高度鬆綁衝擊」當時為推測性市場反應；
+  本輪取得 SK hynix VP Jaesik Lee 於 Hot Chips 2026 的公開歸因**
+  ——延後混合接合「主要是標準變更的結果」，具體為 **JEDEC 高度上限 720 → 775 µm**。
+  ➜ 📌 **該因果關係自「市場推測」升格為「廠方具名表述」。**
+- ⭐⭐ **據報 SK hynix 已訂購一條試產混合接合線，結合 Applied Materials 與 Besi 的設備**，
+  即 **Kinex** D2W 平台（AMAT × Besi 共同開發）。原文暗示**後續追加訂單可能被推遲**。
+  ⚠ 「據報」（reportedly），無一手佐證。
+  ➜ 既載空缺「2026-03 第一張量產 HB 設備訂單得標者未揭露」**取得候選答案但不結清**
+  （本件為 pilot line，既載空缺指量產 inline 單）。
+- **Besi 的押注未變**：其立場為「混合接合成為 AI 記憶體的下一個關鍵封裝技術」；
+  本輪的變化是**近期催化劑消失**，而非論點被否證。
+- ⚠ 既載空缺「**Besi 混合接合排他權究竟掛在哪個申請人名下**」**本輪未推進**：
+  2026-10-19 已否證 `pa="besi austria" or pa="datacon"` 假說；
+  2026-10-19 建議改測 CPC 分類檢索，**本輪實測 `cpc="H01L24/80"`（單獨下，不併 ti,ab）與
+  `cpc="H01L24/80" and pd within "2026"` 兩種形式皆回 HTTP 404**
+  ⇒ 📌 **該建議的查詢路徑經實測不可行**（見本輪 log 之 OPS 實測結論）；
+  下輪改自 Besi 年報揭露之專利家族數反查，或以發明人姓名檢索。

@@ -3,7 +3,7 @@ title: "EV Group (EVG)"
 category: entity
 tags: [equipment, hybrid-bonding, wafer-bonding, maskless-lithography, layer-transfer]
 created: 2026-04-25
-updated: 2026-10-20
+updated: 2026-10-21
 sources: [2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-05-19_semiconductor-digest_ev-group-ectc2026-hybrid-bonding, 2026-06-29_evgroup_ectc2026-hybrid-bonding-layer-transfer, 2026-05-28_imec_w2w-hybrid-bonding-200nm-pitch, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-10-07_epo_evg-zonewise-adaptive-litho-die-shift, 2026-10-07_epo_evg-inorganic-dual-release-layer-common-solvent, 2026-10-13_evg-bond-wave-pressure-element]
 related:
   - wiki/technologies/hybrid-bonding.md
@@ -280,3 +280,28 @@ KIMM 的 308 nm 準分子雷射解接合研究顯示：在**反轉結構**（玻
 - ⚠ 以上專利均零量化值；依專利訊號原則不得視為已出貨之量產方案。
 - 來源：[[sources/2026-10-20_epo_evg-tw202621423a-two-stage-debonding-core-and-sealed-rim]]、
   [[sources/2026-10-20_epo_asmpt-us20260290767a1-plasma-two-wavelength-ratio-monitoring]]
+
+---
+
+## 2026-10-21 更新：第三類一手資料型態——以共同作者出現在同儕審稿論文，且明示機台型號
+
+**來源**：[[sources/2026-10-21_openalex_evg-combond-sic-si-sab-orientation-in-situ-tem-recrystallization]]
+（ACS Applied Electronic Materials, 2026-09-25）
+
+- 本頁既有的 EVG 資料型態有二：
+  ①**排他權文件**（WO2026098776A1 電漿腔體狀態監測、TW202621423A 兩階段解接合）；
+  ②**新聞稿／會議發表**（imec×EVG ECTC 2026 W2W 200 nm／<40 nm overlay、ECTC 2025 無光罩微影與層轉移）。
+- ⭐⭐⭐ **第三類：City University of Hong Kong × EV Group (Austria) × 湖北九峰山實驗室 × 湖北大學
+  之同儕審稿論文，且設備明示為 EVG ComBond。**
+  EVG 具名作者四位：**Matthias Danner、Michael Dornetshumer、Florian Medl、Tobias Wernicke**。
+- **內容**：**6 吋** SiC/Si 異質接面，低溫**表面活化接合（SAB）**；
+  比較 **4H-SiC 的 Si 面 vs C 面**；表徵界面結構之**晶向依賴**與**內應力分佈**；
+  ⭐ **首次以原位加熱 TEM 觀察到異質接合界面的即時低溫再結晶。**
+- ➜ 📌 依規範（41）本件為**有利害關係之來源**；
+  **但其物理觀察（原位 TEM 所見之再結晶）屬可獨立驗證之物理，與平台商業宣稱性質不同，應分別評等。**
+  ⇒ 建議之規範細化：**同一來源內的「物理觀察」與「平台宣稱」須分開計算獨立性。**
+- ⚠⚠ **適用邊界**：SiC/Si 功率與極端環境電子之晶圓級封裝，**非 AI 封裝的 Cu–Cu 混合接合**
+  ⇒ 晶向結論不得直接套用至 Cu–Cu 介面。
+- ⚠⚠ **摘要零數值**（接合強度、界面層厚度、再結晶溫度、應力值全缺）
+  ⇒ 入庫價值為**機制與方法**，非規格。
+- ⚠ **ComBond 為本頁首次與具體製程結果連上的機台**（此前僅 2 處提及）。

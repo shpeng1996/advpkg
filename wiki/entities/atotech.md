@@ -3,7 +3,7 @@ title: "Atotech（MKS Instruments）/ 安美特"
 category: entity
 tags: [Atotech, MKS, electroplating, copper, hybrid-bonding, queue-time, grain-growth, chemistry-supplier]
 created: 2026-10-13
-updated: 2026-10-13
+updated: 2026-10-21
 sources: [2026-10-13_atotech-cu-microstructure-queue-time]
 related:
   - wiki/technologies/hybrid-bonding.md
@@ -56,3 +56,25 @@ related:
 - ⚠ 依規範（41）：本公司為化學品供應商，其「銅微結構是關鍵槓桿」之主張具商業動機，**計為有利害關係之來源。**
 
 來源：[[sources/2026-10-13_atotech-cu-microstructure-queue-time]]
+
+---
+
+## 2026-10-21 更新：接合前等待期的第二個軸——濕度
+
+**來源**：[[sources/2026-10-21_openalex_uv-bonding-humidity-window-45rh-environment-as-third-branch]]
+（Scientific Reports, HUST, 2026-10-15）
+
+- 本頁既載為本 wiki 第一組混合接合 **queue time 數字**（時間軸）：
+  超高純 Cu 沉積後 **2–4 h** 可見晶粒成長、**16 h** 近乎再結晶；穩定化細晶製程常溫儲放 **>4 週**；
+  且 2026-09-22 已把「惰性環境 Cu 氧化相門檻」的實務形式修正為「**時間窗而非溫度門檻**」。
+- ⭐⭐⭐ **HUST 的 UV 活化接合研究指出同一個「接合前等待／活化期」還有第二個軸：環境濕度。**
+  在受控 15–90% RH 下，界面抗拉強度呈**非單調**依賴：
+  **15% RH 2.64 MPa → 45% RH 9.88 MPa（峰值，3.74×）→ 90% RH 2.01 MPa**；
+  高濕側衰退機制為**過量吸附水妨礙界面緊密接觸與矽醇縮合**。
+  作者明言 RH 是 **"critical but frequently overlooked variable"**。
+- ➜ 📌 **新增空缺：混合接合（Cu/SiCN 體系）是否也有濕度窗？**
+  若有，則本頁 queue time 時間窗須與**環境濕度窗**並列為**兩個獨立環境變數**，
+  且「queue time」一詞本身須標註**是否含濕度控制條件**。
+- ⚠⚠ **適用邊界**：該研究對象為**石英晶體晶圓的 UV 活化常壓接合**，**非 Cu–Cu 混合接合**；
+  **2–10 MPa 的強度量級與本頁所涉體系不可互相代入。**
+  本條之價值在**提醒本頁 queue time 數字可能缺少一個未被記錄的控制變數。**

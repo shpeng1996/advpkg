@@ -3,7 +3,7 @@ title: "IBM Research / IBM 研究院"
 category: entity
 tags: [research, 3D-packaging, nanostack, hybrid-bonding, sub-2nm, chiplet]
 created: 2026-09-11
-updated: 2026-10-19
+updated: 2026-10-21
 sources: [2026-09-27_paper_binghamton-ibm-pad-scaling-resistance-variability, 2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-09-26_paper_ibm-amine-post-cmp-clean, 2026-10-08_ibm-w2w-bonded-deep-trench-capacitor]
 related:
   - wiki/technologies/hybrid-bonding.md
@@ -244,3 +244,25 @@ IBM 於 2025-05 公開之專利顯示：一顆晶片含**兩層元件層，由�
   ⇒ 📌 **同一發明人在「接合面散熱」與「接合面供電」兩件上出現：IBM 正把接合界面當成多物理功能的載體，而不只是互連。**
   這與既載 [[entities/technoprobe]] 之「探針卡須自被動互連演化為整合式多物理系統」是**同一命題在不同元件上的版本。**
 - ⚠ IBM 為研究型 IDM，**不預示任何量產**；本件全篇**零量化值**（無電阻、電流密度、層數上限、節距）。
+
+---
+
+## 2026-10-21 更新：DTC 整合途徑確立三種分型，本公司屬「以混合接合貼上去」一型
+
+**來源**：[[sources/2026-10-21_epo_umc-dtc-wafer-bonded-to-soi]]（UMC US20260150311A1, 2026-05-28）
+
+- 本頁既載 **US20260107832A1（Backside deep trench capacitor，2026-04-16，已於 2026-10-01 收錄）**：
+  **預製背面 DTC 經混合接合製程整合**，接合界面含介電對介電與金屬對金屬鍵。
+- ⭐⭐⭐ **本輪確立 DTC 的三種整合分型，三者分屬三家獨立公司、三種接合尺度：**
+
+| 分型 | 代表案 | 接合尺度 |
+|------|--------|----------|
+| ①長在載體裡 | **Intel JP2026053265A**（DTC 嵌入玻璃層） | 載體製程內 |
+| ②**以混合接合貼上去** | **IBM US20260107832A1（本公司）** | 晶粒／晶圓級混合接合 |
+| ③整片晶圓級接合 | **UMC US20260150311A1**（DTC 晶圓 ＋ SOI 主動晶圓） | W2W（型態未明示） |
+
+➜ 📌 **「把被動元件移到另一層／另一片去解」已是跨公司共同手法**
+⇒ 支持既載「把問題移進材料／另一層裡」，並補上**被動元件**這一類標的。
+- ⚠ 本頁另記：本公司 **US20260018508A1（Backside deep trench capacitor，2026-01-15，家族 98388952）**
+  於本輪檢索中命中且**尚未收錄**，與已收錄之 99436783 同標題、不同家族（疑為同一發展線之姊妹案）
+  ⇒ 列下輪候選，**本輪未收錄以避免同主題重複占用當日配額**。

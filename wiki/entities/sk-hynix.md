@@ -3,7 +3,7 @@ title: "SK Hynix"
 category: entity
 tags: [memory, HBM, HBM4, advanced-packaging, patent-signal]
 created: 2026-04-24
-updated: 2026-10-20
+updated: 2026-10-21
 sources: [2026-08-24_trendforce_hot-chips-2026-samsung-zhbm-skhynix-emib, 2026-08-19_trendforce_skhynix-silicon-valley-hbm-codesign-team, 2026-08-17_trendforce_samsung-skhynix-1h26-investment-nvidia-absent, 2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor, 2026-08-10_trendforce_skhynix-chongqing-sale-global-reset, 2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab, 2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h, 2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-04-22_trendforce_sk-hynix-pt7-cheongju, 2026-04-22_trendforce_sk-hynix-indiana-us-plant, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-03-03_trendforce_sk-hynix-hbm4-tight-gaps, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-05_trendforce_hbf-equipment-race-sandisk-hanmi, 2026-06-11_trendforce_skhynix-3x-wafer-2034-375layer-nand, 2026-06-20_techtimes_skhynix-hbm4e-12layer-samples, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-24_techtimes_sk-hynix-dethroned-samsung-ddr5-hbm4, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-06-25_techtimes_sk-hynix-nasdaq-adr-29b, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-22_trendforce_skhynix-q2-record-margin, 2026-07-21_trendforce_samsung-cxl-32-skhynix-imte, 2026-07-24_trendforce_skhynix-3d-stacked-dram-on-logic-on-device-ai, 2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b, 2026-10-07_skhynix_cpo-nature-electronics-100tbps-1pjbit-10ns, 2026-10-13_samsung-hbm-33pct-hcb-vs-mrmuf, 2026-10-13_hbm-share-of-accelerator-cost]
 related:
   - wiki/entities/samsung.md
@@ -677,3 +677,35 @@ SK Group 出現在 Nature Electronics CPO 綜述（2026-08-19，UVa／MIT／NTU 
   熱阻**較 HBM4 改善 17%**（依本輪規範 66，此數字須連同「對照 HBM4／MR-MUF」一併引用）。
 - 來源：[[sources/2026-10-20_heraldcorp_skhynix-hybrid-bonding-90pct-yield-3-5yr-life-gate]]、
   [[sources/2026-10-20_xenospectrum_samsung-sk-hynix-hybrid-bonding-sample-gap]]
+
+---
+
+## 2026-10-21 更新：延後混合接合的原因首次由其 VP 具名歸因於標準變更
+
+**來源**：[[sources/2026-10-21_bits-chips_skhynix-hb-deferral-attributed-to-jedec-height]]（Bits&Chips, 2026-08-26）、
+[[sources/2026-10-21_digitaltoday_jedec-height-eased-55um-who-agreed-unitest]]（DigitalToday, 2026-07-24）
+
+- ⭐⭐⭐ **VP Jaesik Lee 於 Hot Chips 2026 明示：延後混合接合「主要是標準變更的結果」**
+  （"primarily the result of a standards change"）。本頁此前記載的是**結果**（HB 延至 HBM4E/HBM5），
+  本輪首次取得**一手歸因**。
+- ⭐⭐⭐ **薄化為何有害的材料級機制（本 wiki 首見）：晶粒愈薄，其中氧化物所佔比例愈高，而氧化物導熱差。**
+  ➜ 使既載「HB 的賣點是厚度預算的再分配」取得完整因果鏈：
+  **高度上限 → 必須薄化 → 氧化物占比升高 → 熱阻惡化 → 需要能省掉凸塊厚度的接合方式。**
+- ⭐⭐ **據報已訂購一條試產混合接合線，結合 Applied Materials 與 Besi 的設備（Kinex 平台）**；
+  原文暗示後續追加訂單可能被推遲。
+  ⚠ 用語為 **pilot production line** 且以 "reportedly" 表述 ⇒ **不結清**既載空缺
+  「2026-03 第一張量產 HB 設備訂單得標者未揭露」，但該空缺改寫為
+  **「該訂單是試產線（AMAT＋Besi 候選）或量產線，兩者是否為同一張單」**。
+- **層數現況（與既載一致）**：12 層量產中、16 層客戶驗證中。
+- Lee 強調：**16 層或 20 層上做出可靠 Cu–Cu 接合「仍是重大製造挑戰」**。
+- ⭐ **MR-MUF 曾為把 16 層塞進 720 µm 而必須「移除凸塊」**（DigitalToday）；
+  高度放寬後 16 層有可能**繼續以凸塊製程達成**。
+  ➜ 📌 **論述修正：「是否用混合接合」與「是否保留凸塊」不是同一個問題**；
+  標準放寬同時解除了這兩個壓力。
+- ⭐ **本頁層數進度領先（12 量產／16 驗證）而接合技術刻意延後**；
+  既載對 Samsung 的觀察為「公開層數立場不可用來推斷接合技術進度」（方向相反）
+  ⇒ 📌 **兩家的「相反」方向不同，但同指一事：層數立場與接合技術進度是兩個獨立變數。**
+- **測試設備側**：Unitest 於 2026-07-23 公告與本公司簽訂 **₩226.8 億 HBM4 晶圓測試機**合約
+  （占其最新合併營收 ₩1,101.95 億 的 **20.58%**；交機付 90%、設置後付 10%）。
+- ⚠ 本輪兩篇來源日期（2026-08-26、2026-07-24）皆**早於**既載 2026-10-04 之 NineScrolls 來源
+  ⇒ **SK hynix 之最新立場仍以 2026-10-04（推遲到 HBM5）為準**，本輪僅補歸因與機制。

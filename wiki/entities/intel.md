@@ -3,7 +3,7 @@ title: "英特爾 / Intel"
 category: entity
 tags: [IDM, advanced-packaging, EMIB, Foveros, Intel18A, Clearwater-Forest, Foveros-Direct, glass-substrate, 14A, High-NA-EUV, silicon-capacitors, Google-TPU-v8e, Q2-2026-earnings, Tesla-14A, HLFF, RAMP-C, Secure-Enclave, Rio-Rancho]
 created: 2026-04-24
-updated: 2026-10-19
+updated: 2026-10-21
 sources: [2026-09-27_intel_us20260182414a1-asymmetric-buildup-cte-gradient-glass, 2026-09-27_intel_cn122270166a-stacked-glass-silicon-bridge-assembly-ar20, 2026-09-27_intel_us20260223702a1-direct-bonding-embedded-bridge-organic-cavity, 2026-08-24_intel-newsroom_hot-chips-2026-diamond-rapids-foveros-ucie, 2026-04-24_initial-survey, 2026-07-20_trendforce_tsmc-265b-arizona-intel-novalake, 2026-03-18_trendforce_intel-emib-malaysia, 2026-03-03_trendforce_intel-clearwater-forest, 2026-03-05_trendforce_intel-emib-billions, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-04-20_trendforce_intel-foundry-14a-equipment, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-01_semianalysis_cpus-back-datacenter-2026, 2026-04-10_3dincites_intel-gan-chiplet, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks, 2026-06-21_convergedigest_intel-emib-t-multi-die-packaging, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap, 2026-07-01_trendforce_terafab-intel-veteran-hire, 2026-04-07_tomshardware_intel-joins-terafab, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-01-30_tomshardware_intel-ai-chip-test-vehicle-emib-t, 2026-07-14_trendforce_intel-ireland-5b-intel3-europe, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-04_semieng_from-blueprint-intel-hlff, 2026-07-31_semieng_chip-week-149, 2026-08-13_trendforce_intel-memory-reentry-xbm-zam-saimemory, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-09-30_intel_us-advanced-packaging-reticle-8x-12x-fab9, 2026-09-30_epo_intel-jp2026116680a-glass-core-embedded-inductor-clusters, 2026-09-30_epo_intel-us20260040982a1-glass-package-liquid-metal-socketing, 2026-09-30_epo_intel-us20260191037a1-localized-embedded-bridge-in-core, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_trendforce_intel-microled-glass-24-layer, 2026-10-06_intel_clearwater-forest-no-glass-foveros-9um-3um-emib-45um, 2026-10-06_atlaspcb_clearwater-forest-glass-core-claim-unsourced, 2026-10-06_epo_intel-bridge-chiplet-shield-dummy-die, 2026-10-06_epo_intel-mold-extension-package-to-package-topside-bridge, 2026-10-09_intel-voltage-contrast-backside-patent]
 related:
   - wiki/entities/tsmc.md
@@ -1156,3 +1156,22 @@ CN122349366A、US20260191063A1、US20260191037A1（family 100312105，**已收�
   但顯示 **2026 Q3 時點客戶端的風險認知，較既載時程所隱含的樂觀度為低。**
 - 📌 **新增追蹤方式：Intel 或任何具名客戶對 EMIB-T 2027 ramp 的公開表態；
   以及 [[entities/amkor]]（EMIB 外包夥伴）Arizona 產能時程是否出現調整。**
+
+---
+
+## 2026-10-21 更新：玻璃核心的邊緣保護分化為兩條結構路線，Intel 屬「後退加框」派
+
+**來源**：[[sources/2026-10-21_epo_lg-innotek-glass-core-edge-wrapped-resin]]（WO2026216712A1, 2026-10-15）
+
+- 本頁既載 **JP2026059728A（Edge coating of framed glass core substrates, 2026-04-07，已於 2026-09-14 收錄）**：
+  玻璃核心**邊緣自 build-up 層邊緣內縮（offset）** ＋ 外圈 **buffer layer**（外緣近似直線）＋ 接觸該外緣之 **frame**。
+- ⭐⭐⭐ **本輪 LG Innotek WO2026216712A1 以不同結構處理同一問題**
+  （樹脂直接**包覆玻璃側部並反折**到上下表面，且請求項明載**延伸寬度 > 垂直厚度**）
+  ⇒ 📌 **「邊緣保護」分化為兩條路線：Intel 的「後退加框」vs LG Innotek 的「包覆反折」。**
+  ⇒ 兩家不同公司、兩種結構、同一問題 ⇒ 強化既載「**玻璃的良率瓶頸在邊緣，不在 TGV 本身**」
+  （該論述本輪自「成立」升格為「成立且已出現三條互不重疊的工程路徑」）。
+- 另記：本輪 `ti,ab="glass core substrate" and pd within "2026"` 全庫僅 5 件，
+  其中 **4 件已在庫**（Intel JP2026059728A、Intel JP2026055776A、LG Chem CN122342272A、Kaneka JP2026047137A），
+  **唯一新件即 LG Innotek 本件**
+  ⇒ 📌 **該查詢式已近飽和**；下輪玻璃軌應改用其他片語（例如 "glass carrier"、"through glass via" 之外的結構詞）。
+- ⚠ 本條不新增任何 Intel 側量化值；**專利訊號原則**適用。

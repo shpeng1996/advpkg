@@ -3,7 +3,7 @@ title: "台積電 / TSMC"
 category: entity
 tags: [foundry, advanced-packaging, CoWoS, SoIC, CoPoS, COUPE, CPO, InFO, WMCM, aLSI, MRAM, 3nm-pricing]
 created: 2026-04-24
-updated: 2026-10-20
+updated: 2026-10-21
 sources: [2026-09-27_tradingkey_copos-glass-validation-08mm-85x110mm, 2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-09-10_trendforce_tsmc-august-revenue-nt514b-record-fourth-month, 2026-09-10_trendforce_tsmc-taichung-14nm-p1-p2-2027-ahead-of-plan, 2026-04-24_initial-survey, 2026-04-13_trendforce_copos-pilot, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2025-12-18_trendforce_apple-wmcm-a20, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-01-20_trendforce_tsmc-wmcm-apple, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap, 2026-04-23_trendforce_tsmc-roadmap-a12-a13-no-high-na-euv, 2026-05-07_trendforce_tsmc-us-expansion-250b-arizona, 2026-05-12_focustaiwan_tsmc-capex-31b-arizona-20b, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-28_reuters_tsmc-kevin-zhang-energy-efficiency, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-09_financialcontent_tsmc-130k-cowos-wafers, 2026-06-09_digitimes_tsmc-cowos-soic-capacity-symposium, 2026-06-15_trendforce_tsmc-cowos-gap-narrowing-130k-200k-wafers, 2026-06-17_digitimes_amkor-tsmc-10year-arizona-deal, 2026-06-17_trendforce_tsmc-amkor-10year-arizona-advanced-packaging, 2026-06-10_tomshardware_tsmc-fab-expansion-roadmap-n2-cowos-soic, 2026-06-27_tmtpost_tsmc-cowos-capacity-targets-2026-2027, 2026-07-02_trendforce_samsung-sf2p-plus-tsmc-n2-roadmap, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-22_trendforce_tsmc-2027-price-hike-hpc, 2026-07-20_trendforce_tsmc-265b-arizona-intel-novalake, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-08-17_trendforce_tsmc-arizona-profit-663pct-1h26, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-10-07_sedaily_tsmc-copos-ap7-line-complete-one-year-yield, 2026-10-09_tsmc-cantilever-probe-card-patent, 2026-10-09_tsmc-impedance-control-probing-patent, 2026-10-09_semiwiki-tsmc-oip-2026-verification, 2026-10-09_tsmc-copos-ap7-chiayi-panel-size, 2026-10-13_cpo-bottleneck-test-800x-area-mismatch]
 related:
   - wiki/technologies/cowos.md
@@ -728,3 +728,29 @@ TSMC 先進封裝研發總監 **James Chen**（SEMICON Taiwan 2026）首次官�
   依 spec STEP 2「摘要轉載」原則未收錄；其獨有細節（CoWoS-L 3.5× 自 2024 年量產；
   14× 對應約 10 顆大運算晶粒 + 20 顆 HBM）僅記於來源頁備查，**未寫入規格表**。
 - 來源：[[sources/2026-10-20_eetasia_tsmc-gf-interposer-deep-trench-capacitors]]
+
+---
+
+## 2026-10-21 更新：DTC 布局同時走「元件化」與「密度化」兩個方向
+
+**來源**：[[sources/2026-10-21_epo_tsmc-dtc-as-ipd-with-common-grounded-tsv]]（US20260314447A1, 2026-10-08）、
+[[sources/2026-10-21_epo_tsmc-air-gap-isolates-deep-trench-capacitors]]（US20260304799A1, 2026-10-01）
+
+| 公開號 | 公開日 | 家族 | 內容 | 意義 |
+|--------|--------|------|------|------|
+| **US20260314447A1** | 2026-10-08 | 97678090 | DTC ＋ **共地 TSV** ＋ **基板背面電性接觸結構**；電源端與接地端分別由第一側引出 | **DTC 被做成一顆可放進封裝的 IPD** ⇒ 2026-10-20 之 DTC 空缺須自二分改為三分 |
+| **US20260304799A1** | 2026-10-01 | 101460506 | **DTC 側向側面之空氣間隙**，確保電容對電容隔離、抑制 cross-talk；空氣介電常數低於多孔 low-k 或塊材 | **DTC 密度上限可能由 cross-talk 而非幾何決定**；「介電質是否為物質」第二落點（動機與 Apple 相反） |
+
+- ⭐⭐⭐ **US20260314447A1 是本 wiki 首見把「去耦電容的回流路徑」寫進結構請求項者。**
+  發明人 **JENG SHIN-PUU**（本頁既有多筆）可作為後續 CoWoS 封裝架構案的**發明人錨點檢索**。
+- ⭐⭐ **兩件為不同家族**（97678090 vs 101460506），不得合併計為單一布局。
+  兩者方向**互補而非相反**（如何被使用 vs 如何被密集化）
+  ➜ 📌 既載「同一公司在相反方向布局」（Apple、SEMCO 兩例）**應補一型態：
+  同一公司在同一元件上同時布局「如何被使用」與「如何被密集化」。**
+- ⚠⚠ **兩件摘要皆未指明結構位於邏輯晶粒、IPD 或中介層**
+  ⇒ **不得據此宣稱「CoWoS 中介層已內建 DTC」**；
+  既載 2026-10-20 關於 TSMC–GF 協議含深溝槽電容之記載維持原狀。
+- ⚠ 兩件皆**零量化值**（電容密度、溝槽深寬比、TSV 直徑／節距、空氣間隙寬度全缺）。
+- ⚠ **專利訊號原則**：排他權布局，非量產能力宣告。
+- 另記：本輪以 `ti,ab="deep trench capacitor" and pd within "2026"` 命中 11 件，
+  其中 **4 件已在庫**（含本頁既載 US20260293628A1、US20260247985A1），依規範 63 以家族 ID 攔下。
