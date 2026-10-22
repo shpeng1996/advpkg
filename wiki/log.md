@@ -5618,3 +5618,16 @@ warning: unable to unlink '.../.git/index.lock': Operation not permitted
 - ✅ **規範（53a）續行**：**刪除權限全程未申請。**
 - ✅ **本輪未觸碰 `raw/` 下既有任何檔案**（僅新增 13 個 raw 檔並對 `_collected_urls.txt` 追加 13 行）；
   **未修改 `CLAUDE.md`**。
+- ✅ **提交「2026-10-22」（f515a38），43 個檔案**（13 新 raw ＋ 13 新來源頁 ＋ 16 更新頁
+  ＋ `_collected_urls.txt` 13 行追加）。事後 `git status --porcelain` 為 **0 行（乾淨）**。
+- ⚠ **git 因無刪除權限留下鎖檔，依環境指引未申請權限、改以 `mv` 重新命名處置**：
+  `git commit` 留下 `.git/HEAD.lock` → `.git/stale-HEAD.lock-20261022`（置於 `.git/` 下，未置於 `.git/refs`）。
+  期間另印出多則 `tmp_obj_*` unlink 警告（非致命）。
+  事後 `git log`／`git status`／`git rev-parse` 均正常 ⇒ **後續 git 指令（含使用者自己的）不受阻。**
+- ⚠⚠⚠ **鎖檔與暫存物件量測（對照 2026-10-21）**：`tmp_obj_*` **2,278**（10-21 為 **911**，10-20 為 833）
+  —— **單輪增加約 1,367 個，為歷輪最大跳升**，與本輪一次提交 43 檔（其中含 1 MB 之 `log.md`、
+  466 KB 之 `overview.md`、500 KB 之 `index.md` 等大型檔）一致；
+  `stale-*` **24**；`.git` 內任意深度 `*.lock` **6**（含既存之 `.git/refs/heads/_old_main.lock`，依指引**未觸碰**）。
+  ➜ 📌 **既載待辦「Windows 側 `git gc --prune=now`」已自「更形必要」升為「應儘速執行」**：
+  暫存物件在三輪內自 833 → 911 → 2,278，且其成長由大型 wiki 檔的每日改寫驅動，不會自行停止。
+- ✅ **`main` 較 `origin/main` ahead 1、behind 0**；**本輪不 push**，推送仍交由倉庫自身排程（`daily_git_push.bat`）。
