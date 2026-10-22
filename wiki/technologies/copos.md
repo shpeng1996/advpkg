@@ -3,8 +3,8 @@ title: "CoPoS — Chip-on-Panel-on-Substrate"
 category: technology
 tags: [panel-level-packaging, FOPLP, TSMC, CoPoS, AI, HPC, AP7, InFO]
 created: 2026-04-25
-updated: 2026-10-11
-sources: [2026-09-27_tradingkey_copos-glass-validation-08mm-85x110mm, 2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-04-13_trendforce_copos-pilot, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2025-09-12_trendforce_foplp-competitive-landscape-2025, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-20_wccftech_tsmc-copos-glass-core-cost-cut, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-04-28_cw_tsmc-copos-move-really-means, 2026-06-14_digitaltrends_tsmc-copos-glass-temporary-carrier, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-28_xianfeng_cn122476946a-alignment-mark-protection, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-10-02_trendforce_nvidia-glass-substrate-2028-taiwan, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_imaps-dpc2026_defect-free-coplanar-copper-via-fill, 2026-10-07_sedaily_tsmc-copos-ap7-line-complete-one-year-yield, 2026-10-09_tsmc-copos-ap7-chiayi-panel-size]
+updated: 2026-10-22
+sources: [2026-09-27_tradingkey_copos-glass-validation-08mm-85x110mm, 2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-04-13_trendforce_copos-pilot, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2025-09-12_trendforce_foplp-competitive-landscape-2025, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-20_wccftech_tsmc-copos-glass-core-cost-cut, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-04-28_cw_tsmc-copos-move-really-means, 2026-06-14_digitaltrends_tsmc-copos-glass-temporary-carrier, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-28_xianfeng_cn122476946a-alignment-mark-protection, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-10-02_trendforce_nvidia-glass-substrate-2028-taiwan, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_imaps-dpc2026_defect-free-coplanar-copper-via-fill, 2026-10-07_sedaily_tsmc-copos-ap7-line-complete-one-year-yield, 2026-10-09_tsmc-copos-ap7-chiayi-panel-size, 2026-07-01_biggo_tsmc-copos-glass-interposer-panel-ladder-2029, 2026-07-01_circuitsassembly_ectc2026-w2w-pitch-ladder-tel-140nm]
 related:
   - wiki/technologies/rdl.md
   - wiki/technologies/cowos.md
@@ -664,3 +664,70 @@ TrendForce（2026-09-30）：**Innolux 以 620 × 670 mm 格式與客戶驗證 T
 - ⚠ 既載另記 9,350 mm² 約為 Yole 5.5× 階（~4,565 mm²）的兩倍；該 4,565 之量測對象**未經來源確認** ⇒ 依規範（34）（37），完整落點表與使用規則見 [[technologies/cowos]]「mm² 落點表」。
 
 *Source: [[sources/2026-10-11_nvidia-glass-pressure-18000mm2-schmid-tgv]]*
+
+---
+
+## [2026-10-22] 面板尺寸階梯延伸至 **750 × 620 mm**；中介層幾何代價量化（⚠ 二手彙整來源）
+
+**來源**：[[sources/2026-07-01_biggo_tsmc-copos-glass-interposer-panel-ladder-2029]]
+（BigGo Finance, 2026-07-01；引 **SemiAnalysis 之 X 貼文**、分析師 **Andrew Lu**、未具名 market sources）
+
+> ⚠⚠ **全篇數字皆為二手推估，不得作為其他推論之前提。**
+
+### 面板尺寸階梯（本 wiki 新增第三級）
+
+| 階段 | 尺寸 | 本 wiki 狀態 |
+|------|------|-------------|
+| 現行矽中介層 | 約 **300 mm** | 已載 |
+| 早期 CoPoS 面板 | 約 **310 × 310 mm** | 已載（TrendForce 2026-06-18 確認） |
+| 後續 | **515 × 510 mm** | 已載 |
+| 後續 | **750 × 620 mm** | ⭐ **新增，本 wiki 首見** |
+
+- ⭐⭐ **「面板尺寸的社群分歧」可能不是分歧，而是時間位移。**
+  既載兩陣營：**成本模型社群收斂於 310×310**（Lujan、Lau）vs **學界 FEA 仍在 600–680 mm**。
+  本篇給出 TSMC 側的**時間序階梯**（310×310 → 515×510 → 750×620）
+  ➜ 📌 **成本模型算的是「現在能做的」，FEA 算的是「幾代之後的」。**
+  ⚠ 本篇為二手，此讀法須待一手佐證。
+
+### ⭐⭐⭐ 中介層產出的幾何代價
+
+| Reticle | 約尺寸 | 每片 12 吋晶圓之中介層數 |
+|---------|--------|------------------------|
+| 5.5× | ~70 × 70 mm | 約 **8** |
+| 9× | ~90 × 90 mm | 約 **5** |
+| 14× | ~110 × 110 mm | 少至 **4** |
+
+- 文中稱矽中介層產能縮減約 **40–50%**，計入良率後更多。
+- ➜ 📌 **「中介層產能」在 reticle 倍數上升後不再是晶圓片數的線性函數。
+  既載任何以 wpm 表述的 CoWoS 產能數字，若未標註 reticle 倍數，則不可跨年份比較。**
+  ⇒ 這同時解釋了為何 2026 年的 CoWoS 缺口敘述與產能擴張數字看似矛盾。
+- 📌 **與既載 GF × TSMC 中介層協議（2026-10-12／2026-10-20）並讀**：
+  若每片晶圓的中介層產出正被幾何吃掉 40–50%，
+  則**把中介層外包給 GF（1H2028 爬坡）**與**推進 CoPoS（2028 試產）**是同一個問題的兩個解，**時點也一致**。
+  ⚠ 兩來源未互相引用，此連結為本 wiki 讀法。
+
+### 時程與產能（⚠ 二手，且本篇自身互不一致）
+
+| 項目 | 內容 |
+|------|------|
+| CoPoS 試產／量產爬坡 | **2028／2029** |
+| 原 TSMC 計畫 | 試產線最早 2026；量產 2028 末～2029 上半 |
+| CoPoS 2029 月底產能 | 約 **12,000 wpm** ⭐ 新 |
+| CoWoS 產能（Andrew Lu） | 2026 年底 ~**200k wpm**／2027 **280k**／2028 **360k** |
+| CoWoS 產能（另一組估計） | 2026 年底 **130–140k**／2027 年底 **180–200k** |
+
+- ⚠⚠ **兩組 CoWoS 產能估計差距近 50%** ⇒ **本 wiki 不採納任一組為記錄值**，
+  僅記「2026 年底 CoWoS 產能之公開估計介於 **130k–200k wpm**，口徑不一」。
+- ⚠ 「高階矽中介層價格倍增」為文中推測，**非有來源之數字**，不入庫為價格記錄。
+- ⚠⚠ **本篇標題稱「玻璃中介層 CoPoS」，但內文之面板階梯與產能數字未明示載體材質為玻璃**
+  ➜ 📌 **不得據本篇斷言 CoPoS 採玻璃中介層；既載 CoPoS 載體材質問題維持開啟。**
+
+### 系統側（來自本輪 ECTC 現場彙整）
+
+**來源**：[[sources/2026-07-01_circuitsassembly_ectc2026-w2w-pitch-ladder-tel-140nm]]
+
+- ⭐⭐ **單一面板封裝 >100 × 100 mm 且 >1,000 W**（HPC 與 AI 網路系統）—— 本 wiki 首次把面板接到功率。
+- 既載面板討論全部圍繞**尺寸、吞吐、良率、翹曲**；功率此前缺席。
+- 📌 **新增空缺：>100×100 mm 且 >1,000 W 的封裝，其功率密度口徑為何？**
+  1,000 W / 10,000 mm² = **0.1 W/mm²**，與既載 **>3 W/mm²** 目標值相差 30 倍
+  ⇒ **分母必然不同（晶粒面積 vs 封裝面積），引用前須確認。**

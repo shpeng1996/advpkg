@@ -5483,3 +5483,138 @@ warning: unable to unlink '.../.git/index.lock': Operation not permitted
   `stale-*` **22**；`.git` 內任意深度 `*.lock` **6**（含既存之 `.git/refs/heads/_old_main.lock`，依指引**未觸碰**）。
 - ⚠⚠⚠ **既載待辦「Windows 側 `git gc --prune=now`」維持且更形必要。**
 - ✅ **`main` 較 `origin/main` ahead 1、behind 0**；**本輪不 push**，推送仍交由倉庫自身排程（`daily_git_push.bat`）。
+
+---
+
+## [2026-10-22] collect | 每日自動蒐集 — 先進封裝最新動態
+
+- 搜尋查詢數：新聞 **9 組**（WebSearch）／專利 **5 組**（EPO OPS CQL）／論文 **3 組**（OpenAlex filter，**其中 2 組失敗**）
+- 成功抓取：**13 篇**（articles **5**, patents **5**, papers **3**, reports 0）
+- 失敗／跳過：**8 篇**（抓取失敗 3：hpcwire ×2 client_error、counterpointresearch 正文未取得；
+  無摘要 1：JIEP／Namics CPO 光接著劑；低相關 2：Amkor US20260082937A1 clip 式導電件、electronicdesign Chiplet Summit 匯總頁；
+  **內容已載而棄收 1：embeddedcomputing GF×TSMC 協議第三則報導**；已收錄 1：Korea Herald Hanwha SHB2 Nano）
+- 資料源狀態：**WebSearch ACTIVE ✓｜EPO OPS ACTIVE ✓（8 次呼叫：2 auth + 6 search，全部 HTTP 200，上限 10）｜
+  OpenAlex PARTIAL ⚠（3 組查詢中 1 組成功、2 組 HTTP 429「Insufficient budget」）**
+- 新增 wiki 頁面：**13 頁**（全為 sources／）
+  `2026-10-22_openalex_slow-light-si-modulator-26fj-200g-reduced-dsp`、
+  `2026-07-20_openalex_tfln-optical-engine-module-fog-copackaging`、
+  `2026-07-08_openalex_oband-soliton-microcomb-300nm-sin-41pct`、
+  `2026-07-01_circuitsassembly_ectc2026-w2w-pitch-ladder-tel-140nm`、
+  `2026-07-01_biggo_tsmc-copos-glass-interposer-panel-ladder-2029`、
+  `2026-05-25_epo_dbhitek-jp2026085828a-dual-dtc-epi-layer`、
+  `2026-05-19_evgroup_ectc2026-450nm-98pct-20m-300nm-sicn-50nm-overlay`、
+  `2026-03-12_epo_tsinghua-wo2026052054a1-josephson-chiplet-embedded-dtc`、
+  `2026-02-26_epo_tsmc-us20260060104a1-rdl-active-wafer-ipd-or-bridge`、
+  `2026-01-15_epo_ibm-us20260018508a1-backside-dtc-second-family`、
+  `2026-01-13_epo_amkor-cn121335572a-rdl-lateral-side-protective-layer`、
+  `2025-10-01_amat-futurum_hybrid-bonding-at-scale-overlay-inspection-10min`、
+  `2023-04-05_oiforum_3-2t-copackaged-module-ia-host-electrical-interface`
+- 更新 wiki 頁面：**16 頁** —— entities：`ev-group`、`applied-materials`、`tel`、`ibm`、`amkor`、`tsmc`；
+  technologies：`hybrid-bonding`、`copackaged-optics`、`copos`、`glass-substrate`、`rdl`；
+  concepts：`power-delivery-packaging`、`test-metrology-packaging`；
+  系統頁：`index.md`、`overview.md`、`log.md`（本筆）
+- 主要新知識：
+  ⭐⭐⭐ **「電性—光學介面的標準歸屬無人認領」（2026-10-21 立）被否證** —— OIF 早在 2023-04 即把
+  **主機電性介面 32 × CEI-112G-XSR** 寫進 **OIF-Co-Packaging-3.2T-Module-01.0**，另涵蓋光介面、
+  電性／光機械規格與 CMIS 控制管理 ⇒ 空缺改寫為「**認領者不在 MSA 這一層**」；
+  並附帶給出 beachfront density 的 2023 年標準層基線 **約 140 G/mm**。
+  ⭐⭐⭐ **量測的代價首次以「時間」計** —— 疊對檢測 **1–2 h → ~10 min**，使既載「真正的瓶頸在輔助步驟」
+  取得**第五例且首次落在檢測**，並在量測論述上開出**第三軸（cycle time）**，
+  其意義是「某個量測能不能做成全檢」；同時與 Atotech **queue time（2–4 h／16 h）**形成時間預算衝突面。
+  ⭐⭐⭐ **TSMC US20260060104A1 把「含 DTC 的 IPD」與「局部矽互連（橋）」寫成同一結構位的兩種可替換組態**
+  ⇒ 「橋的維度」新增**第十八維：嵌入件的功能可替換性**；同輪「**DTC 放在哪**」自三種形態擴至**六種**，
+  供應鏈歸屬橫跨前段晶圓廠／封裝廠／元件採購，且 **DTC 的用途本身分叉**（AI 側為 PDN 去耦、量子側為平面面積）。
+- 專利訊號：本輪五件的共同主題是**「那塊矽裡放什麼」**——TSMC 把橋與電容寫成可互換組態、
+  IBM 以第二個家族走原生式背面 DTC（與其既載接合式方向相反，使「同一公司相反方向布局」達三例而可記為常態）、
+  DB HiTek 以**垂直堆疊**而非平面加密提高電容密度、清華把 DTC 放進超導 chiplet 的載片、
+  Amkor 把周界保護寫進標準扇出結構（周界論述第六個落點，首次落在 OSAT 封裝結構層）。
+  ⚠ **五件全部零量化值**，依專利訊號原則僅列追蹤，未改任何既載論述之數值。
+
+### 方法論與驗證（2026-10-22）
+
+- ⚠⚠⚠ **OpenAlex 的存取條件已結構性改變（最高優先人工待辦）。**
+  自 2026 年起對**無 API 金鑰**之請求實施「**同一網路 IP 共用每日 $0.10 預算**」，
+  且回應明示 **`mailto` 參數不再提高上限**。本輪第 2 組查詢成功（`cost_usd` 0.001，meta 附 notice），
+  第 1、3 組即回 **HTTP 429「Insufficient budget … resets at midnight UTC」**；
+  依 spec §4「OpenAlex 429 → 等 5 s、重試一次」重試後仍 429，改以重構片語另下兩組查詢（c4／c5）亦皆 429
+  ⇒ **確認非暫時性限流，而是預算耗盡。**
+  ➜ 📌 **spec §4 之「No key needed; email enables the polite pool」已過時，須修訂：
+  使用者於 https://openalex.org/settings/api 申請免費金鑰（自有 $1/日），寫入 `.env` 為 `OPENALEX_KEY`，
+  並於 curl 範例加上 `--data-urlencode "api_key=${OPENALEX_KEY}"`。**
+  ⚠ **本流程未代為申請**：OpenAlex 提供之 agent 申請端點須外送使用者 email 並由其點擊確認連結，屬需本人同意之動作。
+  ⇒ **Track C 本輪僅取得 CPO 主題一組（53 件命中、取回 25 件），混合接合／chiplet 與玻璃／TGV 兩個主題未能查詢。**
+- ⚠⚠ **否證 spec §3.2 的 `cpc=` 欄位碼本身。**
+  2026-10-21 曾判定「Besi 的 CPC 檢索路徑不可行」，當時歸因為分類值或新舊體系。
+  本輪實測 **`cpc="H10W72/80" and pd within "2026"`（新制）與 `cpc="H01L24/80" and pd within "2026"`（舊制）
+  兩者皆回 HTTP 404** ⇒ **與類別值無關，是該欄位碼不被 `published-data/search/biblio` 接受。**
+  ➜ 📌 **spec §3.2 欄位碼表中的 `cpc` 應刪除或改為正確代碼（待測 `ipc`／`cl`）。**
+  另記：**本輪五件 2026 年公開案之分類已全面落在新制 `H10W`／`H10D`／`H10P` 體系**，而非 `H01L`。
+- ✅ **依規範（39）開場先 grep 四個「下輪取全文優先項」**：`10.1145/3859928`、`10.1016/j.mssp.2026.111298`、
+  `10.1016/j.mssp.2026.111165`、`10.1021/acsaelm.6c01029` **各命中 1，皆已在庫** ⇒ 本輪未重複抓取；**四項全文仍未取得。**
+- ✅ **依規範（69）Track B/C 之 dedup 在所有查詢完成後對全部命中一次性執行**：
+  Track B 五組查詢共 **23 個命中家族，17 個已在庫**（LG Innotek 101631906／LG Chem 99667689／
+  Intel 98977174、96347527、94125492／Kaneka 99016254／TSMC 100036235、101460506、97678090、101375944、88004239／
+  UMC 90729707／IBM 99436783／Micron 101295473、98899693、92460401／Amkor 98776443），**6 個為新**。
+  **未發生分批比對導致的漏檢。**
+- ⚠⚠ **新規範建議（71）：「新 URL」不等於「新事實」。**
+  本輪兩篇 Track A 候選之 URL 皆不在 `_collected_urls.txt`，但關鍵數字經 grep 既有 wiki 頁面後發現**全部已載**：
+  ① **embeddedcomputing GF×TSMC 協議**（$2B／五年／Malta／1H2028／**含 embedded DTC**）
+  —— 五項全部已於 **2026-10-12** 與 **2026-10-20** 兩筆記錄在案 ⇒ **依 spec §3.1.3 棄收**。
+  ② **ECTC 2026 五級節距階梯**（Sony 0.4 µm／AMAT 450 nm／AMAT＋EVG 300 nm／imec 200 nm／TEL 140 nm）
+  —— 五者皆已載（**TEL 140 nm 於 2026-09-24 以 IMAPS DPC 一手論文入庫且數據更細**）
+  ⇒ **收錄但改記為「第二個獨立來源」**，其新知識另在系統側功率（>1,000 W／面板、>200 kW＋800 V 機櫃）與三個新落點
+  （AnyCasting 零空洞 TGV、Adeia 退火前修補、量子封裝場次）。
+  ➜ 📌 **建議：Track A 選稿後應對該稿之關鍵數字各自 grep 既有 wiki 頁面，而非只對 `_collected_urls.txt` 做 URL 去重。**
+- 📌 **新規範建議（70）：託管位置不構成一手性。**
+  本輪一組對照：**EVG ECTC 2026 新聞稿 PDF**（evgroup.com；作者與出版者皆為 EVG ⇒ **一手成立**，
+  使既載 ECTC 2026 七場次數字自二手升級為一手，**六項零差異**）vs
+  **`appliedmaterials.com/content/dam/site/prod-tech/semi/doc/` 下之 PDF**
+  （託管於設備商產品技術文件目錄，**作者／出版者實為 Futurum Research 分析師 Ray Wang, 2025-10** ⇒ **一手不成立**）。
+  ⇒ 這是「來源可信度第四軸」（2026-09-21 立）的新型態：**本例無錯誤，問題在託管位置與作者歸屬分離。**
+- ⚠ **措辭歸屬修正**：[[entities/ev-group]] 既載「**GEMINI® FB 系統確認為業界事實標準（de facto standard）**」
+  —— **該語不見於 EVG 新聞稿**（稿中僅稱 "production wafer bonding system"）⇒ 已改標為二手來源之描述。
+- ⚠⚠ **成果歸屬出現兩方互不一致之原始表述，本輪首次並列**：
+  **EVG 新聞稿**記 450 nm 與 300 nm 兩篇皆為 **EVG × AMAT 共同發表**；
+  **TechSearch 現場彙整**記 **450 nm = AMAT（EPIC Center）／300 nm = AMAT ＋ EVG**。
+  ⇒ 本 wiki **並列兩方原文，不採信任一方對「誰的成果」之單方表述**；既載之和解讀法保留為一種可能。
+- ⚠⚠ **第三個系統性收錄偏差來源入列：J-STAGE／エレクトロニクス実装学会誌（JIEP）。**
+  本輪檢出 **Namics「シリコンフォトニクス CPO 用透明光接着剤」（JIEP 29(5), 376–380, 2026-09-01,
+  DOI 10.5104/jiep.29.376，特集「3D・チップレット・CPO 時代の実装技術」）**，
+  但 OpenAlex 無 `abstract_inverted_index`、J-STAGE 頁為「認証あり」⇒ **依 spec §4.3 棄收（無摘要）**。
+  前兩個偏差來源：Elsevier／Nature 全文頁（2026-09-18）、DIGITIMES 付費牆（2026-09-19）。
+  ⇒ **日系封裝學會一手論文在本 wiki 被結構性低估**，下次 lint 一併評估替代管道。
+- 📌 **OpenAlex 歧義片語清單新增 `"optical engine"`**（本輪大量命中內燃機光學研究與 AR 光機），
+  與既載 `advanced packaging`、`interposer`、`system in package` 並列。
+- ✅ **登錄後逐筆驗證**：13 行新登錄之識別碼各自 `grep -F -c` 均為 **1**，且 13 個 raw 檔路徑**皆存在**。
+  `_collected_urls.txt` **969 → 982** 行。
+- ✅ **檔名日期前綴依既有慣例為「項目自身發布日」而非 collect 日**（登錄檔第一欄為 collect 日 2026-10-22）。
+  ⚠ 📌 **spec STEP 5 之檔名範例仍未明示該日期為發布日或蒐集日 —— 此建議自 2026-10-20 提出至今未寫入 spec，本輪第三次建議補明。**
+- ✅ **排程連續性**：`log.md` 前一筆 collect 日期為 **2026-10-21**，與本輪落差 **1 日，無缺漏輪次**。
+- ⚠ **既載最高優先人工待辦未變更且本輪未複查**：`origin` remote URL 內嵌明文 GitHub personal access token
+  （自 2026-10-07 列管）。**本流程不代為變更憑證設定。**
+  建議①撤銷並重新產生 token；②改用 credential helper 或 SSH key；
+  ③`git remote set-url origin https://github.com/shpeng1996/advpkg.git`。
+- ⚠ 既載待辦「Windows 側 `git gc --prune=now`」維持（2026-10-21 量得 `tmp_obj_*` 911，為歷輪最高）。
+
+### git 步驟（2026-10-22，本流程自行完成）
+
+- ⚠⚠ **使用者端的隔離 Linux 工作區（`device_bash`）在本輪開場失敗、中途恢復。**
+  開場連續三次回 "Workspace still starting"，第四次回
+  **"Workspace unavailable. The isolated Linux environment on this device failed to start.
+  Use device_stage_files / device_commit_files instead."**
+  ⇒ **本輪的讀寫全程改以檔案 stage／commit 工具完成**：
+  讀取端以 `device_stage_files` 取回 `CLAUDE.md`、`schedule.md`、`.env`、`_collected_urls.txt`、
+  `index.md`／`log.md`／`overview.md` 及 14 個待更新 wiki 頁（分兩批，共 20 個檔）；
+  寫入端以 `device_commit_files` **一次回寫 43 個檔案，`rejected` 為空**
+  （對 16 個既有檔皆帶 `expectedMtimeMs` 守衛，無任何 mtime 漂移）。
+- ✅ **ingest 完成後 `device_bash` 已恢復**，故 git 步驟仍由本流程自行完成。
+  回寫後 `git status --porcelain` 為 **43 行**，與 commit 檔數一致（13 新 raw ＋ 13 新來源頁 ＋ 16 更新頁
+  ＋ `_collected_urls.txt` 13 行追加）。
+- 📌 **作業觀察（新規範建議 72）：`device_bash` 不可用時，collect 流程本身仍可完整執行**
+  （三軌查詢在雲端容器側、檔案讀寫在 stage／commit 側），**唯一真正受阻的是 git 步驟**。
+  ➜ **建議於 spec 之 WORKSPACE 段註明此備援路徑**：
+  「若 `device_bash` 不可用，改以 stage／commit 完成本輪，並於 log 記錄 git 步驟是否延後；
+  下一輪開場先 `git status --porcelain` 補提交。」
+- ✅ **規範（53a）續行**：**刪除權限全程未申請。**
+- ✅ **本輪未觸碰 `raw/` 下既有任何檔案**（僅新增 13 個 raw 檔並對 `_collected_urls.txt` 追加 13 行）；
+  **未修改 `CLAUDE.md`**。

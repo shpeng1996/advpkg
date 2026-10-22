@@ -3,8 +3,8 @@ title: "Applied Materials（應用材料）"
 category: entity
 tags: [equipment, ECD, PECVD, TSV, HBM, die-thinning, hybrid-bonding, USA]
 created: 2026-09-17
-updated: 2026-10-21
-sources: [2026-08-18_appliedmaterials_hbm-packaging-bottleneck-toolset, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-06-28_hyperframe_amat-hybrid-bonding-hedge, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_epo_xiamen-anjieli-cn121335557a-silane-parylene-tgv]
+updated: 2026-10-22
+sources: [2026-08-18_appliedmaterials_hbm-packaging-bottleneck-toolset, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-06-28_hyperframe_amat-hybrid-bonding-hedge, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_epo_xiamen-anjieli-cn121335557a-silane-parylene-tgv, 2025-10-01_amat-futurum_hybrid-bonding-at-scale-overlay-inspection-10min]
 related:
   - wiki/technologies/tsv.md
   - wiki/technologies/hbm4.md
@@ -392,3 +392,47 @@ Poulomi Mukherjee（Applied Materials Germany）：FE 模擬識別 **① 種子�
   吞吐 1,600–2,000 die/hr）**首次與一個具名客戶的採購行為連上**。
   ⚠ 「據報」（reportedly）、且為 **pilot line** 而非量產線；原文暗示追加訂單可能被推遲。
 - ⚠ 本條**不改變**既載對 AMAT 混合接合 CMP 市占之待證狀態（「市占 100%」仍未結清）。
+
+---
+
+## [2026-10-22] ⭐⭐ 疊對檢測週期時間 1–2 h → ~10 min；Kinex 部署規模三級；⚠ 託管於 AMAT 官網但作者為分析師
+
+**來源**：[[sources/2025-10-01_amat-futurum_hybrid-bonding-at-scale-overlay-inspection-10min]]
+
+### ⚠ 來源性質（先讀）
+
+該 PDF **託管於 `appliedmaterials.com/content/dam/site/prod-tech/semi/doc/`（設備商產品技術文件目錄）**，
+但文件內之作者與出版者為 **Futurum Research 之 Ray Wang（2025-10）**，屬**廠商贊助之分析師白皮書**。
+➜ 📌 **新規範建議（70）：凡取自廠商域名之 PDF，須核對文件內之作者／出版者欄位後方可標為一手；
+託管位置不構成一手性。** 本件 ⇒ **不得記為 AMAT 一手。**
+
+### 量化值
+
+| 項目 | 數值 | 本 wiki 狀態 |
+|------|------|-------------|
+| **疊對檢測週期時間** | **1–2 小時 → 約 10 分鐘**（自動化 OVL 檢測） | ⭐⭐ **全新** |
+| Kinex 部署台數 | **R&D 1–2 ／ 早期低量 2–4 ／ 高量最多 6** | ⭐ 新 |
+| 潔淨環境 | **Class-1 mini-environment** | ⭐ 新（此前僅有「顆粒潔淨度」為候選限制項，無等級） |
+| Besi 混合接合機對準 | ~100 nm | 既載（Kinex 量產 100 nm @3σ）一致 |
+| 混合接合能效 | **<0.05 pJ/bit** | 新 |
+| 微凸塊受限點／細間距 HB | ~10–20 µm ／ <10 µm | 既載一致 |
+
+**未給**（文件明示）：吞吐量 die/hr、表面粗糙度、Cu recess／dishing、退火溫度、空洞門檻、良率、晶圓尺寸。
+Figure 3 以 **queue time vs yield** 作圖但正文無數字。⚠ **本檔未提及 Insepra™**
+（不影響 2026-09-22 官網複核所確認之「Insepra SiCN = 混合接合表面製備」）。
+
+### 為何重要
+
+1. ⭐⭐⭐ **量測的代價首次以「時間」計。** 本 wiki 的量測論述此前集中於**精度**（Rq 0.1–0.2 nm、對準 100 nm、
+   重複性 2.18 µm）與**失效模式六分類**。「疊對檢測 1–2 h → 10 min」把量測接到**產線節拍**上。
+   ➜ 📌 **既載「真正的瓶頸在被視為輔助步驟的那一步」取得第五個正面實例，
+   且首次落在「檢測」而非製程步驟。**（前四例：混合接合 CMP 後清洗、FOPLP debonding、
+   Resonac 耐化學切割膠帶、Lam TurboCell 研磨道數。）
+2. ⭐⭐ **與既載 Atotech queue time 形成時間預算衝突面。**
+   Atotech：超高純 Cu 沉積後 **2–4 h** 可見晶粒成長、**16 h** 近乎再結晶。
+   若疊對檢測原需 1–2 小時，則檢測佔掉該窗的**四分之一到一半**。
+   ➜ 📌 **新增空缺：疊對檢測在流程中位於接合前或接合後？
+   若為接合前，則 10 分鐘這個改善正好落在 queue time 窗的關鍵路徑上。**
+   ⚠ 本檔未說明檢測位置，**此連結為本 wiki 推論**。
+3. ⚠ **時程（2027–2029 進入 chiplet CPU/GPU/XPU ＋ HBM 試產；十年末成主流含 CPO）為 Futurum 分析師展望，
+   非 AMAT 宣告**；AMAT 自身僅稱 Kinex "upcoming" 並示範 16-hi 以上 DRAM 堆疊接合。

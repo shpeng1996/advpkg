@@ -3,8 +3,8 @@ title: "IBM Research / IBM 研究院"
 category: entity
 tags: [research, 3D-packaging, nanostack, hybrid-bonding, sub-2nm, chiplet]
 created: 2026-09-11
-updated: 2026-10-21
-sources: [2026-09-27_paper_binghamton-ibm-pad-scaling-resistance-variability, 2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-09-26_paper_ibm-amine-post-cmp-clean, 2026-10-08_ibm-w2w-bonded-deep-trench-capacitor]
+updated: 2026-10-22
+sources: [2026-09-27_paper_binghamton-ibm-pad-scaling-resistance-variability, 2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-09-26_paper_ibm-amine-post-cmp-clean, 2026-10-08_ibm-w2w-bonded-deep-trench-capacitor, 2026-01-15_epo_ibm-us20260018508a1-backside-dtc-second-family]
 related:
   - wiki/technologies/hybrid-bonding.md
   - wiki/concepts/thermal-management.md
@@ -266,3 +266,29 @@ IBM 於 2025-05 公開之專利顯示：一顆晶片含**兩層元件層，由�
 - ⚠ 本頁另記：本公司 **US20260018508A1（Backside deep trench capacitor，2026-01-15，家族 98388952）**
   於本輪檢索中命中且**尚未收錄**，與已收錄之 99436783 同標題、不同家族（疑為同一發展線之姊妹案）
   ⇒ 列下輪候選，**本輪未收錄以避免同主題重複占用當日配額**。
+
+---
+
+## [2026-10-22] ⭐⭐⭐ 背面 DTC 的**第二個獨立家族**：原生式（直連 source/drain＋背面 BEOL），與既載接合式相反
+
+**來源**：[[sources/2026-01-15_epo_ibm-us20260018508a1-backside-dtc-second-family]]
+
+### 專利訊號：US20260018508A1（fam **98388952**，2026-01-15）
+
+- 請求項：**背面深溝槽電容位於深溝槽元件區，電連至電晶體之 source/drain 區與背面 BEOL 結構**；
+  實施例另含**與深溝槽元件區相鄰之邏輯元件區**。
+- 發明人：YANG XIAOMING、LI TAO、**XIE RUILONG**、GAUTHIER ROBERT。
+- 分類為新制 **H10D／H10W** 體系（H10D1/665、H10D1/716、H10W20/42…）。
+- ⚠ **本件零量化值**（無電容密度、無溝槽幾何、無目標產品線），且**本件未提及混合接合**。
+
+### 為何重要
+
+1. ⭐⭐⭐ **IBM 在同一題目上有兩條相反路線**：
+   - 既載 **US20260107832A1（fam 99436783, 2026-04-16）**：**預製 DTC 後以混合接合貼到背面**（接合式）。
+   - 本件 **fam 98388952**：**DTC 與電晶體共構，直連 source/drain 與背面 BEOL**（原生式）。
+   ➜ 📌 既載論述「**同一公司在相反方向布局**」取得**第三例**
+   （前兩例：Apple 挖空橋 vs RDL 應力緩解圖案；Adeia 拆兩段研磨 vs TSMC 同時研磨）。
+   **三例已跨系統商、IP 商、IDM／研究型三種公司型態 ⇒ 可自「個案」改記為「常態」。**
+2. 📌 **本頁 2026-10-21 所記「本公司屬『以混合接合貼上去』一型」須修正為
+   「本公司同時持有接合式與原生式兩型，分屬兩個獨立家族」。**
+3. **「DTC 放在哪」的答案清單於本輪擴至六種**（見 [[concepts/power-delivery-packaging]] 2026-10-22 條）。

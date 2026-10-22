@@ -3,8 +3,8 @@ title: "Amkor Technology"
 category: entity
 tags: [OSAT, advanced-packaging, FOCoS, Arizona, chiplet, Intel-EMIB, patent-signal, TIM]
 created: 2026-04-25
-updated: 2026-10-20
-sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-05-19_stocktitan_amkor-arizona-peoria-land-expansion, 2026-06-17_digitimes_amkor-tsmc-10year-arizona-deal, 2026-06-17_trendforce_tsmc-amkor-10year-arizona-advanced-packaging, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-30_amkor-ir_arizona-7billion-groundbreaking, 2026-06-30_digitimes_amkor-2.5d-hdfo-growth-2026, 2026-07-23_amkor-ir_nvidia-amkor-1-5b-strategic-partnership, 2026-09-26_article_amkor-embedded-trace-rdl, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-10-07_epo_amkor-bspdn-oriented-package-embedded-ipd, 2026-10-07_openalex_amkor-kelly-three-interposer-routes, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-08_semieng_voltage-regulation-in-package, 2026-10-13_amkor-cavity-as-allocated-volume]
+updated: 2026-10-22
+sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-05-19_stocktitan_amkor-arizona-peoria-land-expansion, 2026-06-17_digitimes_amkor-tsmc-10year-arizona-deal, 2026-06-17_trendforce_tsmc-amkor-10year-arizona-advanced-packaging, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-30_amkor-ir_arizona-7billion-groundbreaking, 2026-06-30_digitimes_amkor-2.5d-hdfo-growth-2026, 2026-07-23_amkor-ir_nvidia-amkor-1-5b-strategic-partnership, 2026-09-26_article_amkor-embedded-trace-rdl, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-10-07_epo_amkor-bspdn-oriented-package-embedded-ipd, 2026-10-07_openalex_amkor-kelly-three-interposer-routes, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-08_semieng_voltage-regulation-in-package, 2026-10-13_amkor-cavity-as-allocated-volume, 2026-01-13_epo_amkor-cn121335572a-rdl-lateral-side-protective-layer]
 related:
   - wiki/technologies/rdl.md
   - wiki/technologies/cowos.md
@@ -479,3 +479,33 @@ Amkor 的 **Vineet Pancholi** 提供本 wiki 目前唯一的中介層測試覆�
   且混合接合的使用位置自「晶粒對晶粒」外移至「晶圓組件對 RDL 基板」，本 wiki 首見。
 - ⚠ 零量化值；依專利訊號原則不得視為已具雙面混合接合量產能力。
 - 來源：[[sources/2026-10-20_epo_amkor-cn121620243a-double-sided-hybrid-bonding-rdl-substrate]]
+
+---
+
+## [2026-10-22] 專利訊號：RDL 覆鈍化層 ＋ **保護層覆蓋元件橫向側**（周界論述第六個落點）
+
+**來源**：[[sources/2026-01-13_epo_amkor-cn121335572a-rdl-lateral-side-protective-layer]]
+
+### CN121335572A（fam **98343800**，2026-01-13）
+
+- 請求項把 **RDL 結構置於鈍化層與接合墊之上**，與 **保護層覆蓋電子元件之橫向側（lateral side）** 寫在**同一件**。
+- 申請人：**Amkor Technology Singapore Holding Pte. Ltd.**；發明人 LIAO JINGWEI、WENG ZHIHAO、**KIM KEUN SOO**。
+- 分類：H10P54/00、H10W20/435、H10W42/121、H10W70/656、H10W72/071、H10W72/29、H10W72/90、H10W74/137、H10W74/141
+  ⚠ **全部落在新制 `H10W`／`H10P` 體系**，非既載多數專利所用之 `H01L`。
+- ⚠ **零量化值**：保護層厚度、覆蓋高度、可靠度數據皆未給，亦未指明應用產品線。
+
+### 為何重要
+
+- ⭐⭐ **既載「周界／邊緣是獨立的失效面向」取得第六個落點，且首次落在 OSAT 的標準扇出／WLCSP 結構上。**
+  既有五個落點分屬**版圖**（Silicon Box 密封環）、**設備**（Lam bevel 管理、海時高邊緣電流屏蔽格柵）、
+  **載體**（Deca 模封免孔橋）、**製程**（EVG 兩段式解接合）。
+  ➜ 📌 **六個落點已橫跨版圖、設備、載體、製程、封裝結構五個層級
+  ⇒ 該論述可自「獨立失效面向」升格為「跨層級一致的失效面向」。**
+- ⚠ 本件為 Amkor **新加坡控股實體**之案件；與既載 Amkor 江陰／韓國團隊之產能定位**無法由本件連結**。
+- ⚠ 依專利訊號原則，本件不改既有論述，僅列追蹤。
+
+### 另：本輪 OPS 以 `pa="amkor" and ti,ab="bonding" and pd within "2026"` 命中 3 件
+
+其中 fam 98776443 已在庫（family-id 去重攔下）；
+另一件 **US20260082937A1（fam 99037077，clip 式導電連接件之倒角以改善接合完整度）** 經判定為
+**離散／功率封裝導向、封裝架構內容低**，依 spec §4.3 棄收。

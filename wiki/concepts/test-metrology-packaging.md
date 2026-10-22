@@ -3,8 +3,8 @@ title: "先進封裝的測試、量測與失效分析 / Test, Metrology & Failur
 category: concept
 tags: [test, metrology, inspection, failure-analysis, KGD, KGI, KGP, DFA, yield]
 created: 2026-09-17
-updated: 2026-10-21
-sources: [2026-09-27_paper_binghamton-ibm-pad-scaling-resistance-variability, 2026-09-27_paper_purdue-ru-cu-em-lifetime-blacks-n-0154, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2025-01-14_semieng_known-good-interposer-screening, 2025-07-10_semieng_advanced-packaging-reshaping-inspection, 2024-11-12_semieng_packaging-drives-test-metrology-innovation, 2026-08-01_jfap_3dic-failure-analysis-dfa, 2026-07-06_apl_lensless-through-silicon-phase-imaging, 2026-09-06_ndte_hysan-sparse-view-xct-tsv, 2026-08-02_chips_cpo-wafer-level-probe-card, 2026-08-27_samsung_us20260256000a1-interposer-test-pad, 2026-08-13_jcet_us20260239928a1-hybrid-bonding-substack-test, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-06-28_hyperframe_amat-hybrid-bonding-hedge, 2026-09-26_paper_ibm-amine-post-cmp-clean, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-10-02_microrel_tudelft-google-3dic-fa-hardware, 2026-10-02_imaps-dpc2026_gelpak-universal-carriers-singulated-die, 2026-10-06_openalex_gatech-terahertz-nde-8layer-interposer, 2026-10-06_openalex_tongji-wafer-embedded-pitch-standard-pose-correction, 2026-10-06_thelec_sec-xray-tsv-tgv-inspection-1um, 2026-10-07_semieng_kelvin-resistance-probe-access-pitch-limit, 2026-10-07_openalex_amkor-kelly-three-interposer-routes, 2026-10-07_epo_besi-deformable-die-forming-bond-tool, 2026-10-08_silverbrook-known-good-site-substrate-test, 2026-10-08_ase-probing-needle-scrub-length, 2026-10-08_formfactor-45um-probe-pitch-good-enough-die, 2026-10-08_advantest-singulated-die-test-thermal, 2026-10-09_tsmc-cantilever-probe-card-patent, 2026-10-09_tsmc-impedance-control-probing-patent, 2026-10-09_intel-voltage-contrast-backside-patent, 2026-10-09_ieie-probe-card-mlc-signal-integrity, 2026-10-09_hdin-probe-card-market-pin-count, 2026-10-09_quantware-qpu-measurement-stage-patent, 2026-10-13_microbump-as-radiator-and-the-stand-in-problem, 2026-10-13_cpo-bottleneck-test-800x-area-mismatch, 2026-10-13_onto-cmp-second-independent-source, 2026-10-13_amkor-cavity-as-allocated-volume]
+updated: 2026-10-22
+sources: [2026-09-27_paper_binghamton-ibm-pad-scaling-resistance-variability, 2026-09-27_paper_purdue-ru-cu-em-lifetime-blacks-n-0154, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2025-01-14_semieng_known-good-interposer-screening, 2025-07-10_semieng_advanced-packaging-reshaping-inspection, 2024-11-12_semieng_packaging-drives-test-metrology-innovation, 2026-08-01_jfap_3dic-failure-analysis-dfa, 2026-07-06_apl_lensless-through-silicon-phase-imaging, 2026-09-06_ndte_hysan-sparse-view-xct-tsv, 2026-08-02_chips_cpo-wafer-level-probe-card, 2026-08-27_samsung_us20260256000a1-interposer-test-pad, 2026-08-13_jcet_us20260239928a1-hybrid-bonding-substack-test, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-06-28_hyperframe_amat-hybrid-bonding-hedge, 2026-09-26_paper_ibm-amine-post-cmp-clean, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-10-02_microrel_tudelft-google-3dic-fa-hardware, 2026-10-02_imaps-dpc2026_gelpak-universal-carriers-singulated-die, 2026-10-06_openalex_gatech-terahertz-nde-8layer-interposer, 2026-10-06_openalex_tongji-wafer-embedded-pitch-standard-pose-correction, 2026-10-06_thelec_sec-xray-tsv-tgv-inspection-1um, 2026-10-07_semieng_kelvin-resistance-probe-access-pitch-limit, 2026-10-07_openalex_amkor-kelly-three-interposer-routes, 2026-10-07_epo_besi-deformable-die-forming-bond-tool, 2026-10-08_silverbrook-known-good-site-substrate-test, 2026-10-08_ase-probing-needle-scrub-length, 2026-10-08_formfactor-45um-probe-pitch-good-enough-die, 2026-10-08_advantest-singulated-die-test-thermal, 2026-10-09_tsmc-cantilever-probe-card-patent, 2026-10-09_tsmc-impedance-control-probing-patent, 2026-10-09_intel-voltage-contrast-backside-patent, 2026-10-09_ieie-probe-card-mlc-signal-integrity, 2026-10-09_hdin-probe-card-market-pin-count, 2026-10-09_quantware-qpu-measurement-stage-patent, 2026-10-13_microbump-as-radiator-and-the-stand-in-problem, 2026-10-13_cpo-bottleneck-test-800x-area-mismatch, 2026-10-13_onto-cmp-second-independent-source, 2026-10-13_amkor-cavity-as-allocated-volume, 2025-10-01_amat-futurum_hybrid-bonding-at-scale-overlay-inspection-10min]
 related:
   - wiki/technologies/hybrid-bonding.md
   - wiki/technologies/cowos.md
@@ -1668,3 +1668,51 @@ Unitest 2025 年營收 ₩1,102 億、**營業損失 ₩211 億**。
 ⚠ **單一來源、二手**。
 ⇒ **新實體候選：Unitest（韓國記憶體測試機商）**，本 wiki 此前完全無記錄；
 ⚠ 單一合約不足以建實體頁，列入「缺實體頁」觀察。
+
+---
+
+## [2026-10-22] ⭐⭐⭐ 量測的代價首次以**時間**計：疊對檢測 1–2 h → ~10 min
+
+**來源**：[[sources/2025-10-01_amat-futurum_hybrid-bonding-at-scale-overlay-inspection-10min]]
+（⚠ 託管於 appliedmaterials.com，作者／出版者為 **Futurum Research** 分析師 ⇒ **非 AMAT 一手**）
+
+### 新數字
+
+| 項目 | 數值 |
+|------|------|
+| **疊對檢測週期時間** | **1–2 小時 → 約 10 分鐘**（自動化 OVL 檢測） |
+| 潔淨環境等級 | **Class-1 mini-environment** |
+
+### 為何重要
+
+1. ⭐⭐⭐ **本頁的量測論述此前完全在「精度」與「失效模式分類」兩軸上**：
+   精度（Rq 0.1–0.2 nm、Cu recess 1–5 nm、對準 100 nm @3σ、TSV 深度重複性 2.18 µm、
+   接合誘發疊對變形 <3 nm M+3σ）；失效模式（①精度不足 ②完全脫鉤 ③規格漂亮但答錯問題
+   ④⑤工具攜帶狀態跨片傳遞 ⑥環境狀態未列入製程參數＝候選）。
+   **「量測要花多久」此前從未有數字。**
+   ➜ 📌 **新增第三軸：量測的時間成本（cycle time）。**
+   ⇒ 這一軸決定一件事：**某個量測是否可以做成全檢。**
+2. ⭐⭐ **與本輪 EVG × Intel 之「100% bond overlay measurement」直接相關。**
+   既載 2026-09-19 空缺「**接合波前緣結構的可辨識性**」指出現行標記取樣密度（41–197）不足以辨識，
+   並判定這是**量測硬體**問題而非演算法問題。
+   **「全檢」正是取樣密度問題的極限解**，而全檢可行與否取決於本條的時間軸。
+   ⚠ 兩個來源未必指同一量測（一為 OVL 檢測、一為 bond overlay 量測），
+   ➜ 📌 **新增空缺：「100% bond overlay 量測」與「自動化 OVL 檢測」是同一道工序嗎？其吞吐為何？**
+3. ⭐⭐ **與既載 Atotech queue time 的衝突面**：
+   Atotech 之窗為 **2–4 h（可見晶粒成長）／16 h（近乎再結晶）**；
+   若疊對檢測原需 1–2 小時，則檢測佔掉該窗的**四分之一到一半**。
+   ➜ 📌 **新增空缺：疊對檢測位於接合前或接合後？
+   若為接合前，10 分鐘這個改善正好落在 queue time 窗的關鍵路徑上。**
+   ⚠ 來源未說明檢測位置，此連結為本 wiki 推論。
+4. **Class-1 mini-environment** 是本 wiki 首次取得混合接合的潔淨度**等級**
+   （此前「顆粒潔淨度」僅為限制鏈候選項而無等級）。
+
+### ⚠ 來源方法論（新規範建議 70）
+
+- 該 PDF 位於 **`appliedmaterials.com/content/dam/site/prod-tech/semi/doc/`**（設備商產品技術文件目錄），
+  極易被誤判為一手；文件內之作者與出版者實為 Futurum Research。
+- ➜ 📌 **建議新規範（70）：凡取自廠商域名之 PDF，須核對文件內之作者與出版者欄位後方可標為一手；
+  託管位置不構成一手性。**
+  **這是「來源可信度第四軸」（2026-09-21 立，原指「看似專業但含產品層級錯誤的彙整型網站」）的新型態：
+  本例無錯誤，問題在託管位置與作者歸屬分離。**
+  同輪對照組：EVG 之 ECTC 2026 新聞稿 PDF（作者與出版者皆為 EVG ⇒ 一手成立）。

@@ -3,8 +3,8 @@ title: "台積電 / TSMC"
 category: entity
 tags: [foundry, advanced-packaging, CoWoS, SoIC, CoPoS, COUPE, CPO, InFO, WMCM, aLSI, MRAM, 3nm-pricing]
 created: 2026-04-24
-updated: 2026-10-21
-sources: [2026-09-27_tradingkey_copos-glass-validation-08mm-85x110mm, 2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-09-10_trendforce_tsmc-august-revenue-nt514b-record-fourth-month, 2026-09-10_trendforce_tsmc-taichung-14nm-p1-p2-2027-ahead-of-plan, 2026-04-24_initial-survey, 2026-04-13_trendforce_copos-pilot, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2025-12-18_trendforce_apple-wmcm-a20, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-01-20_trendforce_tsmc-wmcm-apple, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap, 2026-04-23_trendforce_tsmc-roadmap-a12-a13-no-high-na-euv, 2026-05-07_trendforce_tsmc-us-expansion-250b-arizona, 2026-05-12_focustaiwan_tsmc-capex-31b-arizona-20b, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-28_reuters_tsmc-kevin-zhang-energy-efficiency, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-09_financialcontent_tsmc-130k-cowos-wafers, 2026-06-09_digitimes_tsmc-cowos-soic-capacity-symposium, 2026-06-15_trendforce_tsmc-cowos-gap-narrowing-130k-200k-wafers, 2026-06-17_digitimes_amkor-tsmc-10year-arizona-deal, 2026-06-17_trendforce_tsmc-amkor-10year-arizona-advanced-packaging, 2026-06-10_tomshardware_tsmc-fab-expansion-roadmap-n2-cowos-soic, 2026-06-27_tmtpost_tsmc-cowos-capacity-targets-2026-2027, 2026-07-02_trendforce_samsung-sf2p-plus-tsmc-n2-roadmap, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-22_trendforce_tsmc-2027-price-hike-hpc, 2026-07-20_trendforce_tsmc-265b-arizona-intel-novalake, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-08-17_trendforce_tsmc-arizona-profit-663pct-1h26, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-10-07_sedaily_tsmc-copos-ap7-line-complete-one-year-yield, 2026-10-09_tsmc-cantilever-probe-card-patent, 2026-10-09_tsmc-impedance-control-probing-patent, 2026-10-09_semiwiki-tsmc-oip-2026-verification, 2026-10-09_tsmc-copos-ap7-chiayi-panel-size, 2026-10-13_cpo-bottleneck-test-800x-area-mismatch]
+updated: 2026-10-22
+sources: [2026-09-27_tradingkey_copos-glass-validation-08mm-85x110mm, 2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-09-10_trendforce_tsmc-august-revenue-nt514b-record-fourth-month, 2026-09-10_trendforce_tsmc-taichung-14nm-p1-p2-2027-ahead-of-plan, 2026-04-24_initial-survey, 2026-04-13_trendforce_copos-pilot, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2025-12-18_trendforce_apple-wmcm-a20, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-01-20_trendforce_tsmc-wmcm-apple, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap, 2026-04-23_trendforce_tsmc-roadmap-a12-a13-no-high-na-euv, 2026-05-07_trendforce_tsmc-us-expansion-250b-arizona, 2026-05-12_focustaiwan_tsmc-capex-31b-arizona-20b, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-28_reuters_tsmc-kevin-zhang-energy-efficiency, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-09_financialcontent_tsmc-130k-cowos-wafers, 2026-06-09_digitimes_tsmc-cowos-soic-capacity-symposium, 2026-06-15_trendforce_tsmc-cowos-gap-narrowing-130k-200k-wafers, 2026-06-17_digitimes_amkor-tsmc-10year-arizona-deal, 2026-06-17_trendforce_tsmc-amkor-10year-arizona-advanced-packaging, 2026-06-10_tomshardware_tsmc-fab-expansion-roadmap-n2-cowos-soic, 2026-06-27_tmtpost_tsmc-cowos-capacity-targets-2026-2027, 2026-07-02_trendforce_samsung-sf2p-plus-tsmc-n2-roadmap, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-22_trendforce_tsmc-2027-price-hike-hpc, 2026-07-20_trendforce_tsmc-265b-arizona-intel-novalake, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-08-17_trendforce_tsmc-arizona-profit-663pct-1h26, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-10-07_sedaily_tsmc-copos-ap7-line-complete-one-year-yield, 2026-10-09_tsmc-cantilever-probe-card-patent, 2026-10-09_tsmc-impedance-control-probing-patent, 2026-10-09_semiwiki-tsmc-oip-2026-verification, 2026-10-09_tsmc-copos-ap7-chiayi-panel-size, 2026-10-13_cpo-bottleneck-test-800x-area-mismatch, 2026-02-26_epo_tsmc-us20260060104a1-rdl-active-wafer-ipd-or-bridge, 2026-07-01_biggo_tsmc-copos-glass-interposer-panel-ladder-2029]
 related:
   - wiki/technologies/cowos.md
   - wiki/technologies/soic.md
@@ -754,3 +754,48 @@ TSMC 先進封裝研發總監 **James Chen**（SEMICON Taiwan 2026）首次官�
 - ⚠ **專利訊號原則**：排他權布局，非量產能力宣告。
 - 另記：本輪以 `ti,ab="deep trench capacitor" and pd within "2026"` 命中 11 件，
   其中 **4 件已在庫**（含本頁既載 US20260293628A1、US20260247985A1），依規範 63 以家族 ID 攔下。
+
+---
+
+## [2026-10-22] ⭐⭐⭐ 專利訊號：同一結構位「DTC 的 IPD **或** 局部矽互連」—— 橋與電容首次被寫成可替換
+
+**來源**：[[sources/2026-02-26_epo_tsmc-us20260060104a1-rdl-active-wafer-ipd-or-bridge]]
+
+### US20260060104A1（fam **88096403**，2026-02-26）
+
+- 請求項：主動晶粒表面做一層以上 **RDL**，其上電耦合一個**主動或被動電性元件**；
+  該元件**自帶矽基板與 TSV**；且該元件
+  「**可組態為含深溝槽電容之整合被動元件（IPD），或組態為局部矽互連（local silicon interconnect）**」；
+  **模封材料矩陣部分或完全包圍**該元件。
+- 發明人：TING KUO-CHIANG、YU TU-HAO、LAIO SHUN-JANG、WANG CHIEN-CHUNG、LIN CHIA-CHING（**五位全列台灣**）。
+- ⚠ **零量化值**（無電容密度、無 TSV 尺寸、無模封厚度）。
+
+### 為何重要
+
+1. ⭐⭐⭐ **「橋」與「電容」首次被同一份排他權寫成同一個結構位的兩種可替換組態。**
+   本 wiki 的「橋的維度」軸至 2026-10-21 已列到**第十七維**，但十七維全部在問**橋長什麼樣**
+   （載體材料、包覆面數、是否實體元件、介電質是否為物質、側、免 TSV 化…）。
+   本件問的是**那個位置放什麼**。
+   ➜ 📌 **新增第十八維：嵌入件的功能可替換性（interchangeability of the embedded die's function）。**
+   ⇒ 意涵：**「局部高密度互連」與「局部高電容」共用同一條製造路徑**
+   （自帶矽基板＋TSV＋模封包圍＋RDL 耦合），差別只在那塊矽裡做什麼。
+2. ⭐⭐⭐ **TSMC 在 DTC 上已有三件排他權**：本件、US20260314447A1（DTC＋共地 TSV＋背面接點，2026-10-08）、
+   US20260304799A1（空氣間隙隔離相鄰 DTC，2026-10-01）。
+   ⇒ 與既載 GF 中介層協議「範圍含 embedded deep-trench capacitors」（2026-10-12／2026-10-20 兩筆）**同向**：
+   📌 **「TSMC 把 DTC 當成可外購／可嵌入的元件」在排他權側與採購側各有獨立落點。**
+   ⚠ 協議未指明元件設計方，亦未提及本專利；連結為本 wiki 讀法。
+3. ⚠ 家族 88096403 屬較早系列；依專利訊號原則**不得述為 CoWoS 已量產之形態**。
+
+---
+
+## [2026-10-22] CoPoS 面板尺寸階梯與中介層幾何代價（⚠ 二手彙整來源）
+
+**來源**：[[sources/2026-07-01_biggo_tsmc-copos-glass-interposer-panel-ladder-2029]]
+
+- ⭐⭐ **reticle 倍數上升直接吃掉每片晶圓的中介層產出數**：
+  5.5×（~70×70 mm）約 **8** 片／9×（~90×90）約 **5** 片／14×（~110×110）少至 **4** 片
+  ⇒ 文中稱矽中介層產能縮減約 **40–50%**，計入良率後更多。
+  ➜ 📌 **既載任何以 wpm 表述的 CoWoS 產能數字，若未標註 reticle 倍數，則不可跨年份比較。**
+- ⚠⚠ **本篇自身含兩組互不一致的 CoWoS 產能估計**（2026 年底 ~200k wpm vs 130–140k wpm，差距近 50%）
+  ⇒ **本 wiki 不採納任一組為記錄值**，僅記「2026 年底 CoWoS 產能之公開估計介於 130k–200k wpm，口徑不一」。
+- 詳見 [[technologies/copos]] 同日條目。

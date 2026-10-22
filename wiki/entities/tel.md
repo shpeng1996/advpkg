@@ -3,8 +3,8 @@ title: "Tokyo Electron (TEL) — 東京威力科創"
 category: entity
 tags: [TEL, Tokyo-Electron, equipment, RDL, Eteris, advanced-packaging-equipment, Japan]
 created: 2026-04-26
-updated: 2026-09-28
-sources: [2026-01-23_trendforce_chip-tools-tel-asml, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer]
+updated: 2026-10-22
+sources: [2026-01-23_trendforce_chip-tools-tel-asml, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer, 2026-07-01_circuitsassembly_ectc2026-w2w-pitch-ladder-tel-140nm]
 related: [wiki/entities/besi.md, wiki/technologies/hybrid-bonding.md, wiki/concepts/advanced-packaging-market.md]
 ---
 
@@ -189,3 +189,21 @@ TEL 在先進封裝設備的定位是 **RDL 製程設備全流程覆蓋**，與 
 ⚠ 本件情境為 **BSPD（前段背面供電）**，其 <4 nm 目標**不可直接套用到封裝級混合接合的節距推論**。
 
 **來源**：[[sources/2026-09-28_paper_tel-backside-power-overlay-distortion-sub5nm]]
+
+---
+
+## [2026-10-22] 140 nm pad pitch 取得**第二個獨立來源**（第三方現場報導）
+
+**來源**：[[sources/2026-07-01_circuitsassembly_ectc2026-w2w-pitch-ladder-tel-140nm]]（TechSearch International, Circuits Assembly, 2026-07-01）
+
+- ✅ **本頁 2026-09-24 條目所載之 140 nm（IMAPS 22nd DPC 2026，TEL 一手論文）取得第二個獨立佐證**：
+  TechSearch International 的 ECTC 2026 現場彙整把 **TEL 的 140 nm pad pitch** 列入 W2W 節距階梯。
+  ⇒ 該數字自**單一一手來源**升為**一手 ＋ 第三方會議報導**。
+  ⚠ 兩者為**不同會議**（IMAPS 22nd DPC 2026 vs ECTC 2026），須確認是否為同一組測試載具之成果
+  （本篇未給殘差、晶圓數或良率，無法比對）。
+- ⭐ **TEL 在第三方並列的節距階梯中位於最前端**：
+  Sony **0.4 µm** ／ AMAT **450 nm** ／ AMAT＋EVG **300 nm** ／ imec **200 nm（SiCN）** ／ **TEL 140 nm**。
+  ⚠ 📌 **沿用記錄規範：節距數字若未附良率與互連數，不得與附有者並列排名。**
+  本階梯中**僅 450 nm 附有良率（98%）與互連數（20M）**；TEL 140 nm 的良率在本篇與既載一手論文中皆未給
+  （既載載具**僅有接合墊、無電性測試**）。
+- 📌 **本頁既載結論不變**：TEL 在 **W2W 側**已有一手量化發表；本 wiki 在 **D2W 側**的設備量化仍僅有 AMAT×Besi。

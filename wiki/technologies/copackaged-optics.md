@@ -3,8 +3,8 @@ title: "共封裝光學元件 / Co-Packaged Optics (CPO) — TSMC-COUPE™ & Eco
 category: technology
 tags: [CPO, co-packaged-optics, COUPE, TSMC, GlobalFoundries, Samsung, photonics, AI, HPC, networking, OCI-MSA, DWDM, Broadcom, NVIDIA, glass-substrate, ULCVD, TGV, Spectrum-X, NVL72]
 created: 2026-04-25
-updated: 2026-10-21
-sources: [2026-09-27_globalfoundries_siph-cpo-bandwidth-density-coupling-budget, 2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-27_paper_copper-interconnect-scaling-roadmap-lines-per-mm, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-05-07_trendforce_globalfoundries-silicon-photonics-scale-cpo, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-03-17_coherent_cpo-ofc2026-demo, 2026-06-07_digitimes_jcet-3d-packaging-cpo-plant, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_edn_cpo-technology-status-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-06-24_thelec_corning-glass-bridge-cpo, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-14_trendforce_umc-silith-silicon-photonics-hvm, 2026-07-14_trendforce_huawei-baidu-npo-msa, 2026-07-27_trendforce_presscenter_cpo-switches-nvidia-broadcom-coupe, 2026-06-03_3dincites_intel-foundry-emib-cpo-glass-ectc2026, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-07-31_ase_cn224583735u-photoelectric-hybrid-rdl, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-09-26_report_dupont-ttm-polymer-waveguide-reliability, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_bitschips_besi-q1-2026-hybrid-bonding-orders, 2026-10-07_openalex_mit-cpo-vs-pluggable-switch-power-calibration, 2026-10-07_skhynix_cpo-nature-electronics-100tbps-1pjbit-10ns, 2026-10-09_semiwiki-tsmc-oip-2026-verification, 2026-10-13_cpo-bottleneck-test-800x-area-mismatch]
+updated: 2026-10-22
+sources: [2026-09-27_globalfoundries_siph-cpo-bandwidth-density-coupling-budget, 2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-27_paper_copper-interconnect-scaling-roadmap-lines-per-mm, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-05-07_trendforce_globalfoundries-silicon-photonics-scale-cpo, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-03-17_coherent_cpo-ofc2026-demo, 2026-06-07_digitimes_jcet-3d-packaging-cpo-plant, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_edn_cpo-technology-status-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-06-24_thelec_corning-glass-bridge-cpo, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-14_trendforce_umc-silith-silicon-photonics-hvm, 2026-07-14_trendforce_huawei-baidu-npo-msa, 2026-07-27_trendforce_presscenter_cpo-switches-nvidia-broadcom-coupe, 2026-06-03_3dincites_intel-foundry-emib-cpo-glass-ectc2026, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-07-31_ase_cn224583735u-photoelectric-hybrid-rdl, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-09-26_report_dupont-ttm-polymer-waveguide-reliability, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_bitschips_besi-q1-2026-hybrid-bonding-orders, 2026-10-07_openalex_mit-cpo-vs-pluggable-switch-power-calibration, 2026-10-07_skhynix_cpo-nature-electronics-100tbps-1pjbit-10ns, 2026-10-09_semiwiki-tsmc-oip-2026-verification, 2026-10-13_cpo-bottleneck-test-800x-area-mismatch, 2023-04-05_oiforum_3-2t-copackaged-module-ia-host-electrical-interface, 2026-10-22_openalex_slow-light-si-modulator-26fj-200g-reduced-dsp, 2026-07-08_openalex_oband-soliton-microcomb-300nm-sin-41pct, 2026-07-20_openalex_tfln-optical-engine-module-fog-copackaging]
 related:
   - wiki/technologies/rdl.md
   - wiki/entities/tsmc.md
@@ -1671,3 +1671,132 @@ GF Senior Fellow Vikas Gupta（轉述）：**表面耦合（光柵耦合器或�
 ⚠ 另記：`ti,ab="co-packaged optics" and pd within "2026"` **回 HTTP 404**
 （疑為片語含連字號所致，見本輪 log 之 OPS 實測結論）
 ⇒ **CPO 的專利軌檢索須改用不含連字號的片語**（如 "photonic engine"）。
+
+---
+
+## [2026-10-22] ⭐⭐⭐ 「電光介面無人認領」被否證：OIF 早在 2023 即把主機電性介面寫進 CPO 模組 IA
+
+### 1. 結清（並修正）2026-10-21 所立空缺
+
+**來源**：[[sources/2023-04-05_oiforum_3-2t-copackaged-module-ia-host-electrical-interface]]（OIF 新聞稿，2023-04-05，**刻意收錄之舊稿**）
+
+- 既載空缺（2026-10-21 立）：「⭐ **電性—光學介面的標準歸屬無人認領**。
+  OCI MSA 明示不含電性側；XPO 管熱／機械外形；Open CPO/CPX 管可插拔機械外形 ⇒ 三個 MSA 都不管電光介面。」
+- ⚠⚠ **該空缺未檢查 OIF 這一支。** **OIF-Co-Packaging-3.2T-Module-01.0** 的範圍明載：
+
+| 面向 | 內容 |
+|------|------|
+| **主機電性介面** | **32 × CEI-112G-XSR**；向下相容 **32 × CEI-56G-XSR** |
+| 光介面 | **8 × 400 Gb/s**（FR4／DR4） |
+| 電性規格 | 在範圍內 |
+| 光機械規格 | 在範圍內 |
+| 控制與管理 | 以既有 **OIF CMIS** 規範之增補實現 |
+| 聚合速率／目標 | **3.2 Tb/s**；可供 **51.2 Tb/s** 交換器 |
+| 邊緣頻寬密度 | 約 **140 G/mm** |
+| 型態 | 光模組**或被動銅纜組件** |
+
+- ➜ 📌 **空缺改寫為：「不是無人認領，而是認領者不在 MSA 這一層。」**
+  MSA（多源協議）處理**機械／熱／可插拔外形**；電性介面由**標準組織（OIF）的 IA** 處理。
+  ⇒ **既載「標準缺位 ⇒ 私有方法先行」在 CPO 電光介面這一項上不成立。**
+- ⭐⭐ **「邊緣在光學側是容量上限」取得第一個標準層數字：約 140 G/mm。**
+  既載該論述（2026-10-21 第 6 條）為定性（表面耦合解除了晶粒邊緣長度對光 I/O 密度的限制）。
+  本 IA 給出**被解除之前的那個數字** ⇒ 可作為 beachfront density 的 2023 年標準化基線。
+  ⚠ 口徑為**模組邊緣**而非晶粒邊緣，比較時須標註。
+- 同一份 IA 覆蓋「光模組**或**被動銅纜組件」⇒ **「銅與光在同一個機械介面上競爭」的制度層證據**
+  （既載 GF 數字：銅 <1 Tb/s/mm & >5 pJ/bit vs 光 >5 Tb/s/mm & 2–5 pJ/bit）。
+- ⚠ **年份落差須標註**：本 IA 為 2023-04，速率級別已落後 2026 年的 CPO 討論。
+  📌 **新增空缺：OIF 是否已有 6.4T／12.8T 級後續 IA？其電性介面是否仍為 CEI-XSR 系？**
+  追蹤方式：oiforum.com 之 IA 清單與 **CPO Framework IA** 版本；另記 **ELSFP** 專案。
+
+---
+
+### 2. 學術前沿 / Research Frontier（本輪三篇）
+
+#### ⭐⭐ 慢光矽調變器：**320 µm／140 Gb/s ＠ 26 fJ/bit／PAM-4 200 Gb/s（11-tap）**
+
+**來源**：[[sources/2026-10-22_openalex_slow-light-si-modulator-26fj-200g-reduced-dsp]]（Nature Communications, 2026-10-22）
+
+| 項目 | 數值 |
+|------|------|
+| 元件長度 | **320 µm**（傳統矽 MZM 為數毫米級） |
+| OOK | **140 Gb/s ＠ 26 fJ/bit** |
+| PAM-4 無 DSP | **180 Gb/s** |
+| PAM-4 ＋ 11-tap DSP | **200 Gb/s** |
+| 驅動電壓 | **FinFET CMOS 相容** |
+
+- ⭐⭐⭐ **「把設計移到規格較鬆的區間」第五例，且首次把等化器自電域搬到光域。**
+  既有四例：珠海天成 AR ≤10 模封銅孔規避混合接合；面板圖案化粗快／細慢分工；
+  Apple 以 fan-out 放寬 bump pitch；**UCIe 3.0 "wider, not faster"**（標準層）。
+  本例為**元件版圖層**（以單體整合之光延遲線與交叉合成前饋響應）。
+  ⇒ 📌 **該論述現已覆蓋製程選擇、設計選擇、標準制定、元件版圖四個層級。**
+- ⭐⭐ **CPO 能量預算的落點被定位到「調變器以外」。**
+  既載系統／鏈路級為 **銅 >5 pJ/bit vs 光 2–5 pJ/bit**（GF）；
+  本篇單一調變器為 **26 fJ/bit = 0.026 pJ/bit**，**相差約兩個數量級**。
+  ➜ 📌 **CPO 的能耗議題幾乎全不在調變器上，而在驅動電子、DSP、雷射與熱。**
+  ⚠ 口徑不同（元件 vs 鏈路），**不得相減**。
+- ⚠ 元件級成果，無封裝形態、接合節距、共封裝良率或熱數據。
+- ⚠ **OpenAlex 之 institutions 欄全空**，本 wiki 不由作者姓名反推機構；機構歸屬列小空缺。
+
+#### ⭐⭐ O 波段孤子微梳：**41.64% 轉換效率／300 nm CMOS 相容 SiN**
+
+**來源**：[[sources/2026-07-08_openalex_oband-soliton-microcomb-300nm-sin-41pct]]（Laser & Photonics Reviews, 2026-07-08；HIT／Peng Cheng Lab／SUSTech）
+
+| 項目 | 數值 |
+|------|------|
+| 平台 | **CMOS 相容 300 nm 厚 Si3N4** |
+| 轉換效率 | **41.64%** |
+| 雷射頻率雜訊抑制 | **23 dB** |
+| 瞬時線寬 | **406 kHz → 1.7 kHz** |
+| 近零色散梳寬 | **76 nm** |
+
+- ⭐⭐ **「雷射放哪」此前兩個相反回應之外，出現第三條路：不放多顆雷射。**
+  既載（2026-10-21 第 17 條）：GF 把 **InP 雷射與光放大器推近矽晶粒**（接受可靠性風險）
+  vs Celestica DS6005 **現場可更換雷射**（承認其為耗損件）。
+  本篇以**單一泵浦 ＋ 片上微梳**產生多波長。
+  ➜ 📌 **「雷射的數量」是設計自由度，不是給定條件。**
+  三條路對可靠度與備品管理的意涵完全不同：推近＝接受風險／可更換＝接受耗損／
+  **微梳＝把風險集中到單一泵浦（⚠ 單點失效，本篇未討論）**。
+- 📌 **新增空缺：微梳路線與 OIF ELSFP（外部雷射可插拔）在標準層是否互斥？
+  若微梳成行，ELSFP 的必要性被削弱。**
+- ⚠ 本篇無任何封裝數據，不可與既載耦合損耗（SSC ~0.4 dB、32 通道 V-groove <1 dB、
+  Corning 玻璃橋 <1.5 dB/facet）並列。
+
+#### TFLN 光引擎模組（⚠ 慣性量測領域，非 AI 封裝）
+
+**來源**：[[sources/2026-07-20_openalex_tfln-optical-engine-module-fog-copackaging]]（Optics Letters, 2026-07-20；Beihang University）
+
+- x-cut TFLN 多功能整合光學晶片（片上分光＋相位調變），**共封裝寬頻光源與 PD**，封裝 **15 × 10 mm**。
+- ⭐ **「共封裝（co-packaging）」是通用組裝手法，不是 CPO 專屬名詞。**
+  本篇動機為**模組化與體積**；CPO 動機為**頻寬密度與 pJ/bit**。
+  ➜ 📌 **新記錄規範：引用「co-packaging」時須標註動機域（頻寬密度／體積／可靠度），否則跨域比較無意義。**
+  此與既載「同一名詞涵蓋多個獨立驗收項」同族，但分歧在**目的函數**而非驗收項。
+- ⚠ 零封裝製程數據。
+
+---
+
+### 3. ECTC 2026 之 CPO 機構清單擴張（第三方現場彙整）
+
+**來源**：[[sources/2026-07-01_circuitsassembly_ectc2026-w2w-pitch-ladder-tel-140nm]]
+
+- CPO 相關發表 **近 30 篇**。新增具名機構與其題目：
+  **Corning／DNP／LPKF**（玻璃在 CPO 中的角色）、**AIST ＋ Kyocera**（光學 RDL 內嵌矽光子收發器）、
+  **IME A\*STAR**（PIC-in-mold 中介層）、**Sumitomo Bakelite**（波導用 RDL 中介層）、
+  **SPIL**（光引擎整合挑戰）、**Marvell**（網路側 CPO）、
+  **CEA-Leti ＋ Corning**（光子場次共同主持）、
+  **Lightmatter／Scintil Photonics／TSMC／Cisco／Mixx Technologies**（3D 混合接合、雷射整合、代工／OSAT 實作座談）。
+- ⇒ 既載 CPO 敘述自「GF／Marvell／Lightmatter」擴到**日系材料商與東南亞研究機構**。
+
+---
+
+### 4. ⚠ 本輪棄收但須記錄：CPO 用透明光接著劑（JIEP，Namics）
+
+- **シリコンフォトニクス Co-Packaged Optics (CPO) 用透明光接着剤**，坂井徳幸／鈴木文也（**ナミックス Namics 株式会社**），
+  エレクトロニクス実装学会誌 **29(5), 376–380, 2026-09-01**，DOI 10.5104/jiep.29.376，
+  特集「3D・チップレット・CPO 時代の実装技術」。
+- **棄收理由**：OpenAlex 無 `abstract_inverted_index`，J-STAGE 頁面為「認証あり」（需登入），
+  **摘要與全文皆無法取得** ⇒ 依 spec §4.3「跳過無摘要之論文」。
+- ➜ 📌 **新增空缺：CPO 用光學接著劑的規格（折射率、透過率、dB 損耗、濕熱可靠度小時數）本 wiki 完全空白**，
+  而接著劑正是光耦合界面的關鍵材料。
+- ⚠⚠ **J-STAGE／エレクトロニクス実装学会誌（JIEP）為本 wiki 第三個系統性收錄偏差來源**
+  （前兩個：Elsevier／Nature 全文頁，2026-09-18 記錄；DIGITIMES 付費牆，2026-09-19 記錄）。
+  **日系封裝學會的一手論文在本 wiki 被結構性低估**，下次 lint 應一併評估替代管道。

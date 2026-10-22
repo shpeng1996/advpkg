@@ -3,8 +3,8 @@ title: "RDL — 重分佈層 / Redistribution Layer"
 category: technology
 tags: [RDL, SAP, dual-damascene, embedded-trace, ETR, polyimide, FPIM, CMP, electromigration, panel-level, pad-less-via]
 created: 2026-09-26
-updated: 2026-10-20
-sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2026-09-27_paper_purdue-ru-cu-em-lifetime-blacks-n-0154, 2026-09-27_paper_copper-interconnect-scaling-roadmap-lines-per-mm, 2026-09-26_article_taiyo-imec-700nm-damascene-rdl, 2026-09-26_article_imec-1um-damascene-rdl-2019-anchor, 2026-09-26_article_amkor-embedded-trace-rdl, 2026-09-26_paper_asi-1um-hdbu-substrate, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-25_paper_dnp-glass-rdl-electromigration-lifetime, 2026-09-25_paper_cornell-glass-on-glass-sio2-rdl, 2026-09-25_paper_asu-molded-core-substrate-warpage, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_shanghai-xianfeng-cn122622683a-glass-interposer-bridge, 2026-10-02_imaps-dpc2026_defect-free-coplanar-copper-via-fill, 2026-10-06_epo_intel-mold-extension-package-to-package-topside-bridge, 2026-10-06_openalex_gatech-terahertz-nde-8layer-interposer, 2026-10-07_epo_amkor-bspdn-oriented-package-embedded-ipd, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-07_openalex_amkor-kelly-three-interposer-routes, 2026-10-08_rdl-free-glass-interposer-trench, 2026-10-08_pku-embedded-glass-fanout-roughness, 2026-10-08_samsung-stacked-rdl-package-bspdn-layer, 2026-10-09_keti-tgv-defect-spectrum-plugging-review, 2026-10-13_additive-patterning-and-metal-density-as-warpage-knob]
+updated: 2026-10-22
+sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2026-09-27_paper_purdue-ru-cu-em-lifetime-blacks-n-0154, 2026-09-27_paper_copper-interconnect-scaling-roadmap-lines-per-mm, 2026-09-26_article_taiyo-imec-700nm-damascene-rdl, 2026-09-26_article_imec-1um-damascene-rdl-2019-anchor, 2026-09-26_article_amkor-embedded-trace-rdl, 2026-09-26_paper_asi-1um-hdbu-substrate, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-25_paper_dnp-glass-rdl-electromigration-lifetime, 2026-09-25_paper_cornell-glass-on-glass-sio2-rdl, 2026-09-25_paper_asu-molded-core-substrate-warpage, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_shanghai-xianfeng-cn122622683a-glass-interposer-bridge, 2026-10-02_imaps-dpc2026_defect-free-coplanar-copper-via-fill, 2026-10-06_epo_intel-mold-extension-package-to-package-topside-bridge, 2026-10-06_openalex_gatech-terahertz-nde-8layer-interposer, 2026-10-07_epo_amkor-bspdn-oriented-package-embedded-ipd, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-07_openalex_amkor-kelly-three-interposer-routes, 2026-10-08_rdl-free-glass-interposer-trench, 2026-10-08_pku-embedded-glass-fanout-roughness, 2026-10-08_samsung-stacked-rdl-package-bspdn-layer, 2026-10-09_keti-tgv-defect-spectrum-plugging-review, 2026-10-13_additive-patterning-and-metal-density-as-warpage-knob, 2026-01-13_epo_amkor-cn121335572a-rdl-lateral-side-protective-layer]
 related:
   - wiki/technologies/foplp.md
   - wiki/technologies/glass-substrate.md
@@ -743,3 +743,27 @@ RDL 基板第一面以**第一次混合接合**接晶圓組件，第二面以**�
   （第三個為 Atotech 穩定化細晶 Cu，換到的是時間 >4 週 vs 16 h），
   且方向是**不要生成**而非**事後除掉** —— ⚠ 但**不得套用於混合接合界面**（尺度與用途不同）。
 - 來源：[[sources/2026-10-20_openalex_cu-polymer-monolithic-multilayer-growth]]
+
+---
+
+## [2026-10-22] 專利訊號：RDL 與**橫向側保護層**寫在同一件（Amkor）
+
+**來源**：[[sources/2026-01-13_epo_amkor-cn121335572a-rdl-lateral-side-protective-layer]]
+
+### CN121335572A（Amkor Technology Singapore Holding，fam 98343800，2026-01-13）
+
+- 請求項：電子元件（含第一側／第二側／**連接兩者之橫向側**／接合墊／鈍化層含曝露接合墊之開口）；
+  **RDL 結構置於鈍化層與接合墊之上**（含導電結構＋介電結構，導電結構含外側端子）；
+  外部互連耦接外側端子；**保護層覆蓋電子元件之橫向側**。
+- 發明人：LIAO JINGWEI、WENG ZHIHAO、KIM KEUN SOO。
+- 分類：H10P54/00、H10W20/435、H10W42/121、H10W70/656、H10W72/071、H10W72/29、H10W72/90、H10W74/137、H10W74/141。
+  ⚠ **全為新制 `H10W`／`H10P` 體系。**
+
+### 意涵
+
+- ⭐⭐ **既載「周界／邊緣是獨立的失效面向」取得第六個落點，且首次落在 OSAT 的標準扇出／WLCSP 結構上。**
+  既有五個落點分屬版圖（Silicon Box 密封環）、設備（Lam bevel、海時高邊緣電流屏蔽格柵）、
+  載體（Deca 模封免孔橋）、製程（EVG 兩段式解接合）。
+  ➜ 📌 **六個落點橫跨版圖、設備、載體、製程、封裝結構五個層級
+  ⇒ 該論述可自「獨立失效面向」升格為「跨層級一致的失效面向」。**
+- ⚠ **零量化值**（保護層厚度、覆蓋高度、可靠度皆未給），依專利訊號原則僅列追蹤，不改既有論述。

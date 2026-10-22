@@ -3,8 +3,8 @@ title: "封裝層的供電網路 / Power Delivery Networks at the Package Level"
 category: concept
 tags: [PDN, power-delivery, vertical-power, eVR, capacitor, inductor, passive-integration, hybrid-bonding, rack-power]
 created: 2026-09-29
-updated: 2026-10-21
-sources: [2026-09-29_imaps-dpc2026_nanoporous-silicon-capacitor-pdn, 2026-09-29_imaps-dpc2026_saras-stile-evr-vertical-pdn, 2026-09-29_semieng_tech-paper-roundup-sept29-multikw-3dhi-pdn, 2026-09-29_semiwiki_ofc2026-siph-cpo-oci-ocs-summary, 2026-09-30_arxiv_umn-multi-kw-power-delivery-3d-hi, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_epo_intel-jp2026116680a-glass-core-embedded-inductor-clusters, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_imaps-dpc2026_delo-die-side-capacitor-encapsulation, 2026-10-02_epo_samsung-cn122602880a-ivr-capacitor-interposer-core, 2026-10-02_jmmm_tyndall-fecob-n-pwrsoc-magnetics, 2026-10-02_epo_amd-us20260282956a1-silicon-bridge-decap, 2026-10-06_openalex_auburn-nife-tsv-magnetic-shield-package, 2026-10-07_epo_amkor-bspdn-oriented-package-embedded-ipd, 2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-08_semieng_voltage-regulation-in-package, 2026-10-08_ferric-fe1766-current-density-denominator, 2026-10-08_empower-crescendo-regulator-side, 2026-10-08_zju-8module-fivr-current-sharing, 2026-10-08_samsung-stacked-rdl-package-bspdn-layer, 2026-10-08_ibm-w2w-bonded-deep-trench-capacitor, 2026-10-08_etron-liquid-through-substrate-cavity, 2026-10-09_infineon-tdm2354-dual-phase-denominator, 2026-10-09_infineon-tdm2454-quad-phase-denominator, 2026-10-09_semiwiki-tsmc-oip-2026-verification]
+updated: 2026-10-22
+sources: [2026-09-29_imaps-dpc2026_nanoporous-silicon-capacitor-pdn, 2026-09-29_imaps-dpc2026_saras-stile-evr-vertical-pdn, 2026-09-29_semieng_tech-paper-roundup-sept29-multikw-3dhi-pdn, 2026-09-29_semiwiki_ofc2026-siph-cpo-oci-ocs-summary, 2026-09-30_arxiv_umn-multi-kw-power-delivery-3d-hi, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_epo_intel-jp2026116680a-glass-core-embedded-inductor-clusters, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_imaps-dpc2026_delo-die-side-capacitor-encapsulation, 2026-10-02_epo_samsung-cn122602880a-ivr-capacitor-interposer-core, 2026-10-02_jmmm_tyndall-fecob-n-pwrsoc-magnetics, 2026-10-02_epo_amd-us20260282956a1-silicon-bridge-decap, 2026-10-06_openalex_auburn-nife-tsv-magnetic-shield-package, 2026-10-07_epo_amkor-bspdn-oriented-package-embedded-ipd, 2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-08_semieng_voltage-regulation-in-package, 2026-10-08_ferric-fe1766-current-density-denominator, 2026-10-08_empower-crescendo-regulator-side, 2026-10-08_zju-8module-fivr-current-sharing, 2026-10-08_samsung-stacked-rdl-package-bspdn-layer, 2026-10-08_ibm-w2w-bonded-deep-trench-capacitor, 2026-10-08_etron-liquid-through-substrate-cavity, 2026-10-09_infineon-tdm2354-dual-phase-denominator, 2026-10-09_infineon-tdm2454-quad-phase-denominator, 2026-10-09_semiwiki-tsmc-oip-2026-verification, 2026-01-15_epo_ibm-us20260018508a1-backside-dtc-second-family, 2026-05-25_epo_dbhitek-jp2026085828a-dual-dtc-epi-layer, 2026-03-12_epo_tsinghua-wo2026052054a1-josephson-chiplet-embedded-dtc, 2026-02-26_epo_tsmc-us20260060104a1-rdl-active-wafer-ipd-or-bridge, 2026-07-01_circuitsassembly_ectc2026-w2w-pitch-ladder-tel-140nm]
 related:
   - wiki/concepts/thermal-management.md
   - wiki/technologies/hybrid-bonding.md
@@ -1006,3 +1006,63 @@ Tyndall National Institute × University College Cork（JMMM，2026-09-02）：�
 - **Ferric**（既有實體頁）：IVR ＋ 完全整合電感（電感側）。
 - **Empower**（本輪）：ECAP 嵌入式矽電容 ＋ Crescendo 垂直供電平台（電容側）。
 ⚠ **兩家皆無產能／客戶資料** ⇒ 列為本頁待補結構。
+
+---
+
+## [2026-10-22] ⭐⭐⭐ 「DTC 放在哪」擴至**六種形態**；DTC 的**用途本身是分叉的**；800 V 首次入庫
+
+### 1. 「DTC 放在哪」六種形態（本輪自三種擴至六種）
+
+| # | 形態 | 落點 | 供應鏈歸屬 |
+|---|------|------|-----------|
+| ① | **中介層本體內建** | 二手報導（既載 2026-10-20） | 封裝廠 |
+| ② | **以 IPD 形式嵌入** | TSMC **US20260314447A1**（DTC＋共地 TSV＋背面接點，既載） | 封裝廠／代工 |
+| ③ | **外購已量產嵌入式電容元件** | **Empower ECAP**（9.34／18.68／36.8 µF，已量產，既載） | 元件採購 |
+| ④ | **電晶體背面／與 BSPDN 同層** | **IBM 兩個獨立家族**：US20260107832A1（fam 99436783，混合接合貼上，既載）＋ **US20260018508A1（fam 98388952，直連 source/drain＋背面 BEOL，本輪）** | **前段晶圓廠** |
+| ⑤ | **chiplet 載片內** | **清華 WO2026052054A1**（約瑟夫森結＋載片內嵌 DTC，本輪） | 研究階段 |
+| ⑥ | **模封包圍、置於主動晶圓 RDL 上方之自帶 TSV 的 IPD** | **TSMC US20260060104A1**（本輪） | 封裝廠 |
+
+- ➜ 📌 **六種形態的供應鏈歸屬完全不同（前段晶圓廠／封裝廠／元件採購／研究）
+  ⇒ 「CoWoS 內嵌 DTC」這個問法本身必須先指定形態才有意義。**
+- 📌 **既載 GF × TSMC 中介層協議（2026-10-12／2026-10-20）明載範圍含 embedded deep-trench capacitors**
+  ⇒ 排他權側（TSMC 三件、IBM 兩族、UMC 一件、本輪 DB HiTek 與清華）與**採購側**各有獨立落點。
+
+### 2. ⭐⭐⭐ DTC 的**用途是分叉的** —— 新記錄規範
+
+**來源**：[[sources/2026-03-12_epo_tsinghua-wo2026052054a1-josephson-chiplet-embedded-dtc]]
+
+- **AI 封裝側**的 DTC 動機是**去耦／PDN 阻抗**
+  （既載 Infineon：PDN 總電阻 90–140 µΩ 橫向 → 10–15 µΩ BVM → 7–10 µΩ 基板內建；Empower ECAP 的 µF 級電容）。
+- **量子側**（清華 WO2026052054A1）明示動機為**縮小計算單元的平面尺寸以提高處理器整合密度**。
+- ➜ 📌 **新記錄規範：引用任何 DTC 的電容密度或面積數字，必須標註用途域
+  （PDN 去耦 vs 電路元件面積），否則不可比較。**
+  此與既載「同一名詞涵蓋多個獨立驗收項」（粗糙度、孔徑、玻璃邊緣品質）同族，
+  但本例的分歧**不在驗收項，而在目的函數**。
+
+### 3. DTC 密度上限：第三種回答方向 —— **垂直堆疊**
+
+**來源**：[[sources/2026-05-25_epo_dbhitek-jp2026085828a-dual-dtc-epi-layer]]
+
+- 既載空缺（2026-10-21 立）：「⭐⭐ **DTC 的實際密度上限由幾何決定還是由 cross-talk 決定？**」
+  —— 由 TSMC **US20260304799A1**（以**空氣間隙隔離相鄰 DTC**）之隱含前提而立。
+- **DB HiTek JP2026085828A**（fam 99763603, 2026-05-25）把 **DTC_1 建於第一基板、DTC_2 建於磊晶層**，
+  各帶獨立緩衝層、兩電極、兩層層間絕緣與兩組電極墊結構；自述目標為「相對於面積的高電容值」。
+- ➜ 若密度上限確由**平面內寄生耦合**決定，**垂直堆疊正是繞過該上限的做法**
+  （不在同一平面內加密）。⚠ **此為本 wiki 推論，請求項未如此表述；本件零數值。**
+- **供應端層級新增一層**：既載「外購元件」形態的唯一落點為 **Empower ECAP**（產品側）；
+  DB HiTek 為**特殊製程代工／製造側**。
+  ⇒ 📌 **DTC 供應鏈至少三層：IP／元件商（Empower）→ 特殊製程代工（DB HiTek）→ 寫進中介層採購合約的封裝方（TSMC／GF）。**
+- ⚠ **DB HiTek 在本 wiki 此前 grep 命中 0**，單一專利不足以建實體頁 ⇒ 列入「缺實體頁」觀察清單。
+
+### 4. ⭐⭐ 機櫃 **>200 kW ＋ 800 V 配電** —— 電壓側首次有數字
+
+**來源**：[[sources/2026-07-01_circuitsassembly_ectc2026-w2w-pitch-ladder-tel-140nm]]（iTherm 2026，約 25 篇資料中心能耗發表）
+
+- 既載 Infineon 路線圖為**機櫃 <250 kW → ~600 kW+（2027+） → >1 MW（2029+）**；
+  本篇 **>200 kW** 落在該路線圖最前段，**與既載不衝突**。
+- ⭐⭐ **但 800 V 這個配電電壓值是本 wiki 首見。**
+  ➜ 📌 **既載「垂直供電的 3 A/mm² 障壁」是電流密度側；800 V 是電壓側
+  ⇒ 兩側首次同時有數字。** 供電論述自此可寫成「功率 = 電壓 × 電流密度 × 面積」三個獨立受限量。
+- ⚠ 本篇未給 800 V 之落點（機櫃匯流排？板級？封裝側？），亦未給效率或轉換級數。
+- ⚠ 另記本篇之 **單一面板封裝 >100 × 100 mm 且 >1,000 W**；
+  1,000 W / 10,000 mm² = **0.1 W/mm²** 與既載 **>3 W/mm²** 目標相差 30 倍 ⇒ **分母口徑必然不同，引用前須確認。**

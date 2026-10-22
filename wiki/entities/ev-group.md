@@ -3,8 +3,8 @@ title: "EV Group (EVG)"
 category: entity
 tags: [equipment, hybrid-bonding, wafer-bonding, maskless-lithography, layer-transfer]
 created: 2026-04-25
-updated: 2026-10-21
-sources: [2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-05-19_semiconductor-digest_ev-group-ectc2026-hybrid-bonding, 2026-06-29_evgroup_ectc2026-hybrid-bonding-layer-transfer, 2026-05-28_imec_w2w-hybrid-bonding-200nm-pitch, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-10-07_epo_evg-zonewise-adaptive-litho-die-shift, 2026-10-07_epo_evg-inorganic-dual-release-layer-common-solvent, 2026-10-13_evg-bond-wave-pressure-element]
+updated: 2026-10-22
+sources: [2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-05-19_semiconductor-digest_ev-group-ectc2026-hybrid-bonding, 2026-06-29_evgroup_ectc2026-hybrid-bonding-layer-transfer, 2026-05-28_imec_w2w-hybrid-bonding-200nm-pitch, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-10-07_epo_evg-zonewise-adaptive-litho-die-shift, 2026-10-07_epo_evg-inorganic-dual-release-layer-common-solvent, 2026-10-13_evg-bond-wave-pressure-element, 2026-05-19_evgroup_ectc2026-450nm-98pct-20m-300nm-sicn-50nm-overlay]
 related:
   - wiki/technologies/hybrid-bonding.md
   - wiki/technologies/soic.md
@@ -305,3 +305,31 @@ KIMM 的 308 nm 準分子雷射解接合研究顯示：在**反轉結構**（玻
 - ⚠⚠ **摘要零數值**（接合強度、界面層厚度、再結晶溫度、應力值全缺）
   ⇒ 入庫價值為**機制與方法**，非規格。
 - ⚠ **ComBond 為本頁首次與具體製程結果連上的機台**（此前僅 2 處提及）。
+
+---
+
+## [2026-10-22] 一手複核：ECTC 2026 七場次數字由公司新聞稿正向確認；**「事實標準」措辭須改歸二手**
+
+**來源**：[[sources/2026-05-19_evgroup_ectc2026-450nm-98pct-20m-300nm-sicn-50nm-overlay]]（EVG 公司新聞稿 PDF，2026-05-19）
+
+- ✅ **本頁上方 ECTC 2026 條目此前標註之來源為二手**（*Semiconductor Digest 2026-05-19; SemiEngineering*）。
+  本輪取得 **EVG 新聞稿 PDF 本體**，下列六項**全部正向確認、無任何數值差異**：
+  450 nm／98%／20M（與 AMAT）；300 nm／50 nm overlay／fine-grain Cu（與 AMAT）；
+  100% bond overlay 量測（與 Intel）；310×310 mm²（與 Asahi Kasei）；
+  磊晶 Ru 層轉移（與 imec）；LITHOSCALE XT = 前代 5×。
+  ⇒ **該組數字自「二手」升級為「一手」。**
+- ⚠ **措辭修正**：本頁「**GEMINI® FB 系統確認為 W2W 混合接合及熔融接合的『業界事實標準（de facto standard）』**」
+  —— **該語不見於 EVG 新聞稿**（稿中僅稱 "production wafer bonding system"）。
+  ➜ 📌 **「事實標準」應歸為二手來源之描述，不得記為 EVG 自述。**
+- ⚠⚠ **成果歸屬出現兩方互不一致之原始表述（本輪首次並列）**：
+  - **EVG 新聞稿**：450 nm 與 300 nm **兩篇皆列為 EVG × AMAT 共同發表**。
+  - **ECTC 現場彙整（TechSearch, Circuits Assembly 2026-07-01）**：
+    **450 nm = Applied Materials（EPIC Center）**；**300 nm = Applied Materials ＋ EV Group**。
+  ➜ 📌 既載 [[technologies/hybrid-bonding]] 之和解讀法（「兩套獨立設備各自達到相似節點」）
+  與「同一篇論文共同作者」兩種可能並存；**本 wiki 記為「歸屬表述不一致」並列兩方原文，
+  不採信任一方對『誰的成果』之單方表述。**
+- ⚠ 本稿**未提及 ComBond**（故不影響 2026-10-21 所記 CityU × EVG 之 SiC/Si 表面活化接合，該處明示 ComBond），
+  且**未給溫度與粗糙度**。
+- 📌 **方法論（新規範建議 70）**：凡取自廠商域名之 PDF，須核對**文件內之作者與出版者欄位**後方可標為一手；
+  託管位置不構成一手性。本篇作者與出版者皆為 EVG ⇒ **一手成立**；
+  同輪另一例（appliedmaterials.com 上之 Futurum 分析師白皮書）⇒ **一手不成立**。
