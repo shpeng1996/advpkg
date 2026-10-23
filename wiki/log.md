@@ -5672,7 +5672,7 @@ warning: unable to unlink '.../.git/index.lock': Operation not permitted
   故 **git 步驟本輪由本流程自行完成**。回寫後 `git status --porcelain` 為 **40 行**，與 commit 檔數一致
   （11 新 raw ＋ 11 新來源頁 ＋ 17 更新頁（含 index／log／overview）＋ `_collected_urls.txt` 11 行追加 = 40）。
   ➜ 📌 **規範（72）第二次驗證：`device_bash` 不可用時 collect 本身可完整執行，唯 git 步驟須等其恢復或延後。**
-- ✅ **提交「2026-10-23」（1a38f14），40 個檔案**；事後 `git status --porcelain` 為 **0 行（乾淨）**，
+- ✅ **提交「2026-10-23」（最終 commit **1b02999**；初次 commit 為 1a38f14，為把本段 git 結果寫入 `log.md` 而 `--amend` 一次），**41 個檔案****；事後 `git status --porcelain` 為 **0 行（乾淨）**，
   `main` 較 `origin/main` **ahead 1、behind 0**；**本輪不 push**，推送仍交由倉庫自身排程（`daily_git_push.bat`）。
 - ⚠ **git 因無刪除權限留下鎖檔，依環境指引未申請權限、改以 `mv` 重新命名處置**：
   `.git/HEAD.lock` → `.git/stale-HEAD.lock-20261023`、`.git/objects/maintenance.lock` → `.git/stale-maintenance.lock-20261023`
