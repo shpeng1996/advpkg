@@ -3,8 +3,8 @@ title: "封裝層的供電網路 / Power Delivery Networks at the Package Level"
 category: concept
 tags: [PDN, power-delivery, vertical-power, eVR, capacitor, inductor, passive-integration, hybrid-bonding, rack-power]
 created: 2026-09-29
-updated: 2026-10-22
-sources: [2026-09-29_imaps-dpc2026_nanoporous-silicon-capacitor-pdn, 2026-09-29_imaps-dpc2026_saras-stile-evr-vertical-pdn, 2026-09-29_semieng_tech-paper-roundup-sept29-multikw-3dhi-pdn, 2026-09-29_semiwiki_ofc2026-siph-cpo-oci-ocs-summary, 2026-09-30_arxiv_umn-multi-kw-power-delivery-3d-hi, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_epo_intel-jp2026116680a-glass-core-embedded-inductor-clusters, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_imaps-dpc2026_delo-die-side-capacitor-encapsulation, 2026-10-02_epo_samsung-cn122602880a-ivr-capacitor-interposer-core, 2026-10-02_jmmm_tyndall-fecob-n-pwrsoc-magnetics, 2026-10-02_epo_amd-us20260282956a1-silicon-bridge-decap, 2026-10-06_openalex_auburn-nife-tsv-magnetic-shield-package, 2026-10-07_epo_amkor-bspdn-oriented-package-embedded-ipd, 2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-08_semieng_voltage-regulation-in-package, 2026-10-08_ferric-fe1766-current-density-denominator, 2026-10-08_empower-crescendo-regulator-side, 2026-10-08_zju-8module-fivr-current-sharing, 2026-10-08_samsung-stacked-rdl-package-bspdn-layer, 2026-10-08_ibm-w2w-bonded-deep-trench-capacitor, 2026-10-08_etron-liquid-through-substrate-cavity, 2026-10-09_infineon-tdm2354-dual-phase-denominator, 2026-10-09_infineon-tdm2454-quad-phase-denominator, 2026-10-09_semiwiki-tsmc-oip-2026-verification, 2026-01-15_epo_ibm-us20260018508a1-backside-dtc-second-family, 2026-05-25_epo_dbhitek-jp2026085828a-dual-dtc-epi-layer, 2026-03-12_epo_tsinghua-wo2026052054a1-josephson-chiplet-embedded-dtc, 2026-02-26_epo_tsmc-us20260060104a1-rdl-active-wafer-ipd-or-bridge, 2026-07-01_circuitsassembly_ectc2026-w2w-pitch-ladder-tel-140nm]
+updated: 2026-10-23
+sources: [2026-08-11_nvidia_800vdc-row-power-center-2mw, 2025-04-03_epo_intel-coaxial-inductor-glass-core, 2026-10-20_404kresearch_ocp-summit-npo-microvcsel-800vdc, 2026-09-29_imaps-dpc2026_nanoporous-silicon-capacitor-pdn, 2026-09-29_imaps-dpc2026_saras-stile-evr-vertical-pdn, 2026-09-29_semieng_tech-paper-roundup-sept29-multikw-3dhi-pdn, 2026-09-29_semiwiki_ofc2026-siph-cpo-oci-ocs-summary, 2026-09-30_arxiv_umn-multi-kw-power-delivery-3d-hi, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_epo_intel-jp2026116680a-glass-core-embedded-inductor-clusters, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_imaps-dpc2026_delo-die-side-capacitor-encapsulation, 2026-10-02_epo_samsung-cn122602880a-ivr-capacitor-interposer-core, 2026-10-02_jmmm_tyndall-fecob-n-pwrsoc-magnetics, 2026-10-02_epo_amd-us20260282956a1-silicon-bridge-decap, 2026-10-06_openalex_auburn-nife-tsv-magnetic-shield-package, 2026-10-07_epo_amkor-bspdn-oriented-package-embedded-ipd, 2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-08_semieng_voltage-regulation-in-package, 2026-10-08_ferric-fe1766-current-density-denominator, 2026-10-08_empower-crescendo-regulator-side, 2026-10-08_zju-8module-fivr-current-sharing, 2026-10-08_samsung-stacked-rdl-package-bspdn-layer, 2026-10-08_ibm-w2w-bonded-deep-trench-capacitor, 2026-10-08_etron-liquid-through-substrate-cavity, 2026-10-09_infineon-tdm2354-dual-phase-denominator, 2026-10-09_infineon-tdm2454-quad-phase-denominator, 2026-10-09_semiwiki-tsmc-oip-2026-verification, 2026-01-15_epo_ibm-us20260018508a1-backside-dtc-second-family, 2026-05-25_epo_dbhitek-jp2026085828a-dual-dtc-epi-layer, 2026-03-12_epo_tsinghua-wo2026052054a1-josephson-chiplet-embedded-dtc, 2026-02-26_epo_tsmc-us20260060104a1-rdl-active-wafer-ipd-or-bridge, 2026-07-01_circuitsassembly_ectc2026-w2w-pitch-ladder-tel-140nm]
 related:
   - wiki/concepts/thermal-management.md
   - wiki/technologies/hybrid-bonding.md
@@ -1066,3 +1066,58 @@ Tyndall National Institute × University College Cork（JMMM，2026-09-02）：�
 - ⚠ 本篇未給 800 V 之落點（機櫃匯流排？板級？封裝側？），亦未給效率或轉換級數。
 - ⚠ 另記本篇之 **單一面板封裝 >100 × 100 mm 且 >1,000 W**；
   1,000 W / 10,000 mm² = **0.1 W/mm²** 與既載 **>3 W/mm²** 目標相差 30 倍 ⇒ **分母口徑必然不同，引用前須確認。**
+
+## 2026-10-23 collect 更新：800 V 的落點確認在設施層；供電形成三個封裝落點
+
+### ⭐⭐⭐ 一、800 VDC 的落點與轉換架構（一手，NVIDIA）
+
+來源：NVIDIA 官方部落格（Harry Petty, 2026-08-11）。✅ 規範（70）核對：作者與出版者皆為 NVIDIA ⇒ 一手成立。
+
+| 項目 | 數值／時間 |
+|------|-----------|
+| 配電電壓 | **800 VDC** |
+| **Hybrid power rack** | 沿用既有 AC 設施，**row 內**送 800 VDC 至運算機櫃（改造路徑） |
+| **DC power block** | 廠區級，**一步**自電網轉 800 VDC（新建廠路徑） |
+| **Row power center** | **每 row 最高 2 MW**；**2027** |
+| MGX 相容 800 VDC power rack | **2026 H2** |
+| OCP 聯合白皮書（NVIDIA/Google/Microsoft） | **2026-03** |
+| LVDC Solid-State Transformer Spec | **v0.3，2026-07** |
+| 生態系 | **>80 家**設備與基礎設施公司 |
+| **轉換級數／效率／銅用量節省** | **全部未給** |
+
+➜ 📌 **直接回答 2026-10-22 所立空缺「機櫃 800 V 配電的落點與轉換架構」：
+落點在電網 → row → 機櫃這一層，不在封裝側。**
+⇒ ⚠⚠ **既載封裝側數字（Infineon >3 A/mm² 障壁、PDN 90–140 → 10–15 → 7–10 µΩ、
+Ferric Fe1766 160 A／35.5 mm²／>4.5 A/mm²）與 800 V 分屬不同層級，
+不可串接成單一效率鏈，也不可用 800 V 去除以電流密度推算面積。**
+⚠ 效率與轉換級數仍空白 ⇒ **空缺降級但不結清**，追蹤目標改為「LVDC SST 規格之級數與效率」。
+➜ **2 MW/row** 為本頁首個 **row 級**功率數字。既載階梯為機櫃級：
+**<250 kW → ~600 kW+（2027+）→ >1 MW（2029+）**；處理器級 ~0.4 → ~1 → >2 → **2–4 kW**。
+⇒ 📌 **本頁的功率階梯自此有三個層級（處理器／機櫃／row），引用時須標層級。**
+
+另：404kresearch（2026-10-20，**partial，電源段在付費牆後**）記
+**HVDC Power Rack 自 2026 年底小規模滲透、延續 2027**，與 NVIDIA 之 MGX 2026 H2 時程一致
+⇒ **兩個獨立來源同指 2026 年底／下半年起量。** 具名供應商（僅標題層級）：Delta Electronics、Lite-On、Chroma ATE。
+
+來源：[[sources/2026-08-11_nvidia_800vdc-row-power-center-2mw]]、
+[[sources/2026-10-20_404kresearch_ocp-summit-npo-microvcsel-800vdc]]
+
+### ⭐⭐⭐ 二、供電的三個封裝落點成形（新增第三個：基板核心內）
+
+**Intel US20250112179A1（fam 95157585, 2025-04-03）** 把**同軸電感置於玻璃核心之凹腔**，
+磁性材料環繞貫穿通孔，**緩衝層**吸收 CTE 失配，並明示可構成 **FIVR** 之一部分。
+
+| 落點 | 代表 | 既有數字 |
+|------|------|----------|
+| **晶粒背面** | BSPDN（Intel／TSMC 訊號） | 無電性數字 |
+| **封裝內 IVR 模組** | **Ferric Fe1766** | 160 A／35.5 mm²／>4.5 A/mm²／>10 MHz |
+| **基板核心內** ⭐新 | **Intel US20250112179A1（玻璃核心同軸電感）** | **零數值** |
+
+➜ 📌 **既載供電側數字全在封裝／模組層，載體層（基板核心）此前完全空白** ⇒ 本件補上第三個落點，
+使「供電放哪」與既載「DTC 放哪（六種形態）」成為**同型的分類問題**。
+➜ ⭐ 與既載 **Samsung「IVR＋電容埋入核心」專利訊號（2026-10-02）** 併讀
+⇒ **「把供電元件埋進基板核心」已有兩家（Intel／Samsung）獨立布局。**
+⚠ 本件**零量化值** ⇒ **不得與 Ferric 或 Infineon 之 A/mm² 比較大小**，
+亦不構成「Intel 已在玻璃核心量產 FIVR」之證據。
+
+來源：[[sources/2025-04-03_epo_intel-coaxial-inductor-glass-core]]

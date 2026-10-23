@@ -3,8 +3,8 @@ title: "三星 / Samsung"
 category: entity
 tags: [IDM, foundry, memory, advanced-packaging, X-Cube, HBM, ISSCC2026, I-CubeS, LPDDR6, V10-BV-NAND, zHBM, HBM5, FMS-2026, ECC, reliability]
 created: 2026-04-24
-updated: 2026-10-21
-sources: [2026-09-27_samsung_us20260144093a1-bridge-on-tgv-mold-fixed, 2026-08-26_trendforce_openai-jalapeno-samsung-hbm4, 2026-08-26_trendforce_samsung-gaia-pim-4nm-2027, 2026-08-24_trendforce_hot-chips-2026-samsung-zhbm-skhynix-emib, 2026-08-17_trendforce_samsung-skhynix-1h26-investment-nvidia-absent, 2026-08-14_trendforce_samsung-nrdk-line2-2nm-hbm5-base-die, 2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor, 2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2025-12-30_trendforce_samsung-hbm-surge, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2025-08-05_3dincites_iftle636, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit, 2026-06-10_trendforce_samsung-gwangju-packaging-base, 2026-06-12_digitimes_samsung-packaging-gap-tsmc-intel, 2026-06-15_trendforce_skhynix-hbm4e-sample-timeline-pulled-forward, 2026-06-19_techtimes_vera-rubin-hbm4-suppliers, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-24_techtimes_sk-hynix-dethroned-samsung-ddr5-hbm4, 2026-07-03_trendforce_anthropic-samsung-advanced-packaging, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-07-02_trendforce_samsung-hbm-dummy-die-patent, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo, 2026-07-07_trendforce_samsung-q2-2026-record-krw894t, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-02_trendforce_samsung-sf2p-plus-tsmc-n2-roadmap, 2026-07-14_trendforce_samsung-hbm-hiring-hbm4-hbm4e-hbm5, 2026-07-21_trendforce_samsung-cxl-32-skhynix-imte, 2026-07-24_trendforce_skhynix-3d-stacked-dram-on-logic-on-device-ai, 2026-09-30_epo_intel-us20260191037a1-localized-embedded-bridge-in-core, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-10-02_epo_samsung-cn122602880a-ivr-capacitor-interposer-core, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_semco-cn122054433a-glass-surface-roughness, 2026-10-08_samsung-stacked-rdl-package-bspdn-layer, 2026-10-13_samsung-hbm-33pct-hcb-vs-mrmuf, 2026-10-13_hbm-share-of-accelerator-cost]
+updated: 2026-10-23
+sources: [2026-03-19_epo_samsung-optical-engine-adhesive-protrusion, 2026-09-04_biggo_skc-absolics-embedding-vs-nonembedding, 2026-09-27_samsung_us20260144093a1-bridge-on-tgv-mold-fixed, 2026-08-26_trendforce_openai-jalapeno-samsung-hbm4, 2026-08-26_trendforce_samsung-gaia-pim-4nm-2027, 2026-08-24_trendforce_hot-chips-2026-samsung-zhbm-skhynix-emib, 2026-08-17_trendforce_samsung-skhynix-1h26-investment-nvidia-absent, 2026-08-14_trendforce_samsung-nrdk-line2-2nm-hbm5-base-die, 2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor, 2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2025-12-30_trendforce_samsung-hbm-surge, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2025-08-05_3dincites_iftle636, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-05-31_techtimes_samsung-hbm4e-ships-first-756pct-profit, 2026-06-10_trendforce_samsung-gwangju-packaging-base, 2026-06-12_digitimes_samsung-packaging-gap-tsmc-intel, 2026-06-15_trendforce_skhynix-hbm4e-sample-timeline-pulled-forward, 2026-06-19_techtimes_vera-rubin-hbm4-suppliers, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-24_techtimes_sk-hynix-dethroned-samsung-ddr5-hbm4, 2026-07-03_trendforce_anthropic-samsung-advanced-packaging, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-07-02_trendforce_samsung-hbm-dummy-die-patent, 2026-07-06_trendforce_samsung-em-glassem-jv-sumitomo, 2026-07-07_trendforce_samsung-q2-2026-record-krw894t, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-02_trendforce_samsung-sf2p-plus-tsmc-n2-roadmap, 2026-07-14_trendforce_samsung-hbm-hiring-hbm4-hbm4e-hbm5, 2026-07-21_trendforce_samsung-cxl-32-skhynix-imte, 2026-07-24_trendforce_skhynix-3d-stacked-dram-on-logic-on-device-ai, 2026-09-30_epo_intel-us20260191037a1-localized-embedded-bridge-in-core, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-10-02_epo_samsung-cn122602880a-ivr-capacitor-interposer-core, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_semco-cn122054433a-glass-surface-roughness, 2026-10-08_samsung-stacked-rdl-package-bspdn-layer, 2026-10-13_samsung-hbm-33pct-hcb-vs-mrmuf, 2026-10-13_hbm-share-of-accelerator-cost]
 related:
   - wiki/entities/tsmc.md
   - wiki/entities/intel.md
@@ -915,3 +915,43 @@ Samsung 於 2025-03 公開之專利顯示：**三層重佈線基板交替堆疊�
 - ⚠ **本輪來源未指明設定 775 µm 的 JEDEC 文件編號**（僅就 HBM4 介面規格引用 JESD270-4）
   ⇒ 該數字應標為「依多個二手來源一致」而非「標準明訂」。
 - ⚠ 二手報導、單一來源；本件日期 2026-07-24。
+
+## 2026-10-23 collect 更新：光學接著劑被寫成結構件；SEMCO 玻璃原型未通過客戶可靠度測試
+
+### ⭐⭐⭐ 專利訊號 / Patent Signals：US20260079312A1 —— 光學接著層同時是密封層、定位件與光路介質
+
+**US20260079312A1（family 99060956, 2026-03-19）— OPTICAL ENGINE DEVICE AND SEMICONDUCTOR PACKAGE INCLUDING THE SAME**
+
+- 請求項結構：IC 晶片頂面 → **發光元件置於其上並與之耦合** → **第一光學接著層（含一凸起）封裝該發光元件**
+  → **光纖板之凹腔面向該接著層，凸起於凹腔內與光纖板耦合**。
+- 分類：主分類 **G02B6/\***（光導／光纖耦合）＋ **H10W** 系封裝類別 ⇒ 同時被分到光學與封裝兩個體系。
+- 發明人：LIN JING CHENG、CHANG JUNG HUA。
+  ⚠ 同一發明人組另有 **US20260040943A1（family 98652285, 2026-02-05）**：
+  EIC 上置 PIC、PIC 基板具**傾斜上表面**與其上之**反射圖案**，反射圖案部分與 PIC 側壁水平分離
+  ⇒ **Samsung 同期在「光引擎」題名下至少兩個獨立家族**（本輪僅收錄前者）。
+
+➜ ⭐⭐⭐ **直接回應既載空缺「CPO 用光學接著劑的規格本 wiki 完全空白」**：
+取得第一件把光學接著劑寫進請求項的專利，**且其角色是有幾何形狀的零件而非黏著劑**。
+📌 **空缺之提問方式修正**：不只要折射率／透過率／dB 損耗／濕熱小時數，
+還要「**它是否承擔機械定位功能**」—— 承擔定位者的尺寸公差直接換算成耦合損耗。
+
+➜ ⭐⭐ **「把對位精度從機台轉移到別處」第三個落點**：
+既載 GlobalFoundries 轉移到**微影**、Samsung US20260040943A1 轉移到**晶片形貌**（傾斜面＋反射圖案）、
+本件轉移到**接著劑成形的幾何（凸起／凹腔互卡）** ⇒ 三者皆不在貼合機台的運動精度上。
+
+➜ ⭐ **「雷射放哪」第四條路：置於 IC 晶片頂面並以光學接著劑密封。**
+⚠ **與既載「多數 CPO 系統使用外部雷射，因雷射為最不可靠元件」（Semiconductor Engineering 2025-06，本輪同時入庫）方向相反**；
+本件未討論可靠度 ⇒ 依專利訊號原則**不改既有論述，僅列追蹤**。
+
+來源：[[sources/2026-03-19_epo_samsung-optical-engine-adhesive-protrusion]]
+
+### ⚠⚠ SEMCO 玻璃核心：原型未通過客戶可靠度測試（二手）
+
+BigGo（2026-09-04）：**SEMCO 玻璃核心基板原型未通過客戶可靠度測試**，量產推遲至 **2028 年或之後**；
+與 Sumitomo Chemical 之 MOU 記為 **2025-11**。
+
+➜ 既載 SEMCO 量產時程已有三個互不一致說法（2027 Q3／2028 後／2027 後由合資公司起），
+本條為**第四個（2028+）**，但**首次給出落後原因**。
+⚠ 二手、未具名客戶 ⇒ **不作為既有論述之推翻依據，四個說法全部並列並標來源日期**。
+
+來源：[[sources/2026-09-04_biggo_skc-absolics-embedding-vs-nonembedding]]

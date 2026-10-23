@@ -3,8 +3,8 @@ title: "先進封裝的測試、量測與失效分析 / Test, Metrology & Failur
 category: concept
 tags: [test, metrology, inspection, failure-analysis, KGD, KGI, KGP, DFA, yield]
 created: 2026-09-17
-updated: 2026-10-22
-sources: [2026-09-27_paper_binghamton-ibm-pad-scaling-resistance-variability, 2026-09-27_paper_purdue-ru-cu-em-lifetime-blacks-n-0154, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2025-01-14_semieng_known-good-interposer-screening, 2025-07-10_semieng_advanced-packaging-reshaping-inspection, 2024-11-12_semieng_packaging-drives-test-metrology-innovation, 2026-08-01_jfap_3dic-failure-analysis-dfa, 2026-07-06_apl_lensless-through-silicon-phase-imaging, 2026-09-06_ndte_hysan-sparse-view-xct-tsv, 2026-08-02_chips_cpo-wafer-level-probe-card, 2026-08-27_samsung_us20260256000a1-interposer-test-pad, 2026-08-13_jcet_us20260239928a1-hybrid-bonding-substack-test, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-06-28_hyperframe_amat-hybrid-bonding-hedge, 2026-09-26_paper_ibm-amine-post-cmp-clean, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-10-02_microrel_tudelft-google-3dic-fa-hardware, 2026-10-02_imaps-dpc2026_gelpak-universal-carriers-singulated-die, 2026-10-06_openalex_gatech-terahertz-nde-8layer-interposer, 2026-10-06_openalex_tongji-wafer-embedded-pitch-standard-pose-correction, 2026-10-06_thelec_sec-xray-tsv-tgv-inspection-1um, 2026-10-07_semieng_kelvin-resistance-probe-access-pitch-limit, 2026-10-07_openalex_amkor-kelly-three-interposer-routes, 2026-10-07_epo_besi-deformable-die-forming-bond-tool, 2026-10-08_silverbrook-known-good-site-substrate-test, 2026-10-08_ase-probing-needle-scrub-length, 2026-10-08_formfactor-45um-probe-pitch-good-enough-die, 2026-10-08_advantest-singulated-die-test-thermal, 2026-10-09_tsmc-cantilever-probe-card-patent, 2026-10-09_tsmc-impedance-control-probing-patent, 2026-10-09_intel-voltage-contrast-backside-patent, 2026-10-09_ieie-probe-card-mlc-signal-integrity, 2026-10-09_hdin-probe-card-market-pin-count, 2026-10-09_quantware-qpu-measurement-stage-patent, 2026-10-13_microbump-as-radiator-and-the-stand-in-problem, 2026-10-13_cpo-bottleneck-test-800x-area-mismatch, 2026-10-13_onto-cmp-second-independent-source, 2026-10-13_amkor-cavity-as-allocated-volume, 2025-10-01_amat-futurum_hybrid-bonding-at-scale-overlay-inspection-10min]
+updated: 2026-10-23
+sources: [2026-06-11_epo_tsmc-probe-card-force-sense-needle, 2026-02-19_epo_adeia-probe-card-direct-metal-bond, 2026-04-14_epo_weizhen-probe-card-space-transformer-rdl-5um, 2025-06-02_semieng_cpo-tipping-point-fiber-attach-adhesive, 2026-09-27_paper_binghamton-ibm-pad-scaling-resistance-variability, 2026-09-27_paper_purdue-ru-cu-em-lifetime-blacks-n-0154, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2025-01-14_semieng_known-good-interposer-screening, 2025-07-10_semieng_advanced-packaging-reshaping-inspection, 2024-11-12_semieng_packaging-drives-test-metrology-innovation, 2026-08-01_jfap_3dic-failure-analysis-dfa, 2026-07-06_apl_lensless-through-silicon-phase-imaging, 2026-09-06_ndte_hysan-sparse-view-xct-tsv, 2026-08-02_chips_cpo-wafer-level-probe-card, 2026-08-27_samsung_us20260256000a1-interposer-test-pad, 2026-08-13_jcet_us20260239928a1-hybrid-bonding-substack-test, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-06-28_hyperframe_amat-hybrid-bonding-hedge, 2026-09-26_paper_ibm-amine-post-cmp-clean, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-10-02_microrel_tudelft-google-3dic-fa-hardware, 2026-10-02_imaps-dpc2026_gelpak-universal-carriers-singulated-die, 2026-10-06_openalex_gatech-terahertz-nde-8layer-interposer, 2026-10-06_openalex_tongji-wafer-embedded-pitch-standard-pose-correction, 2026-10-06_thelec_sec-xray-tsv-tgv-inspection-1um, 2026-10-07_semieng_kelvin-resistance-probe-access-pitch-limit, 2026-10-07_openalex_amkor-kelly-three-interposer-routes, 2026-10-07_epo_besi-deformable-die-forming-bond-tool, 2026-10-08_silverbrook-known-good-site-substrate-test, 2026-10-08_ase-probing-needle-scrub-length, 2026-10-08_formfactor-45um-probe-pitch-good-enough-die, 2026-10-08_advantest-singulated-die-test-thermal, 2026-10-09_tsmc-cantilever-probe-card-patent, 2026-10-09_tsmc-impedance-control-probing-patent, 2026-10-09_intel-voltage-contrast-backside-patent, 2026-10-09_ieie-probe-card-mlc-signal-integrity, 2026-10-09_hdin-probe-card-market-pin-count, 2026-10-09_quantware-qpu-measurement-stage-patent, 2026-10-13_microbump-as-radiator-and-the-stand-in-problem, 2026-10-13_cpo-bottleneck-test-800x-area-mismatch, 2026-10-13_onto-cmp-second-independent-source, 2026-10-13_amkor-cavity-as-allocated-volume, 2025-10-01_amat-futurum_hybrid-bonding-at-scale-overlay-inspection-10min]
 related:
   - wiki/technologies/hybrid-bonding.md
   - wiki/technologies/cowos.md
@@ -1716,3 +1716,78 @@ Unitest 2025 年營收 ₩1,102 億、**營業損失 ₩211 億**。
   **這是「來源可信度第四軸」（2026-09-21 立，原指「看似專業但含產品層級錯誤的彙整型網站」）的新型態：
   本例無錯誤，問題在託管位置與作者歸屬分離。**
   同輪對照組：EVG 之 ECTC 2026 新聞稿 PDF（作者與出版者皆為 EVG ⇒ 一手成立）。
+
+## 2026-10-23 collect 更新：⭐⭐⭐ 「探針卡正在變成一種先進封裝產品」自命題升格為三個獨立來源、三種工法
+
+本輪 Track B 以 `ti,ab="probe card" and pd within "2026"` 檢索，**12 件命中**，
+其中 **TSMC 5 件、中國大陸廠商 4 件、Adeia 1 件、Japan Electronic Materials 1 件、Silverbrook 1 件**
+（最後者既載）。**本輪收錄三件，分別引入熱以外的三種封裝工法。**
+
+### 一、三件專利，三種封裝工法進入探針卡
+
+| 工法 | 專利 | 內容 |
+|------|------|------|
+| **熱**（既載，2026-10-21） | Technoprobe **WO2026162211A1** | 空間轉換器內建**微流道**，散除探針卡自身主動元件之熱功率 PT2 |
+| **接合** ⭐本輪 | Adeia **US20260050009A1**（fam 98776775, 2026-02-19） | **probe stand 經 direct metal bonds 直接接合至基板導電特徵**；probe beam 走不同方向（懸臂） |
+| **佈線** ⭐本輪 | 浙江微臻 **CN121856598A**（fam 99362725, 2026-04-14） | 多層**高阻矽晶圓堆疊**（錫球／柱狀凸塊互連）＋感光 PI ＋**多層 RDL（L/S ≤5 µm）**＋Cu/Ni/Au |
+| **量測線路** ⭐本輪 | TSMC **US20260160786A1**（fam 100039572, 2026-06-11） | **force needle ＋ sense needle 以絕緣層並置於同一 needle structure**（四線式壓縮進一支針） |
+
+➜ 📌 **既載 Elena Venuti（Technoprobe）之命題「探針卡須自被動互連演化為整合式多物理系統」
+自「單一來源＋同一方」升格為「三個獨立來源、三種工法」**，
+且 Adeia 為**與探針卡市場無既有利害關係的 IP 公司**（依規範 41，來源獨立性較高）。
+
+### ⭐⭐⭐ 二、測試側的節距階梯多出一層
+
+| 層 | 既有／新增數字 |
+|----|---------------|
+| 探針尖端節距 | **45 µm**（FormFactor Altius，microbump grid-array，既載 2020-03 資料） |
+| **空間轉換器佈線** ⭐新 | **RDL L/S ≤ 5 µm**（浙江微臻 CN121856598A）；對比**傳統 LTCC** 佈線精度 |
+| PCB | 本 wiki 無數字 |
+
+➜ 📌 **探針卡能測多細的節距，不只受探針幾何限制，也受空間轉換器的佈線能力限制。** ⚠ 本 wiki 推論。
+➜ ⭐ **「把封裝的製程搬進治具」**：浙江微臻用的是標準先進封裝工具箱
+（矽載體＋貫穿孔＋凸塊堆疊＋感光 PI＋多層 RDL＋表面處理），與產品封裝的 RDL 中介層幾乎同構。
+
+### ⭐⭐ 三、TSMC 的探針卡布局自「單件」升格為「具名團隊連續布局」
+
+| 公開號 | 家族 | 公開日 | 內容 |
+|--------|------|--------|------|
+| US20260160786A1（收錄） | 100039572 | 2026-06-11 | force／sense 雙針共構 |
+| US20260298981A1 | 101461603 | 2026-10-01 | MEMS 探針針體：兩層不同結晶結構，外層電阻率較低 |
+| US20260140144A1 | 99804771 | 2026-05-21 | 探針頭 **loopback 針 ＋ 兩針之間接地屏蔽結構**；含 space transformer |
+| US20260133222A1 | 99764336 | 2026-05-14 | 探針針體與探針卡結構 |
+| US20260133224A1 | 99764341 | 2026-05-14 | 探針頭組件與探針卡組件 |
+
+- 共享發明人 **CHEN KUAN CHUN、TANG KAI-YI**（四件）；**分類全在 G01R，無封裝類別**。
+➜ 既載「TSMC 自 2026 年起自行申請探針卡硬體排他權」（見 [[entities/formfactor]]）自單件觀察升格。
+⚠ **無任何採購或自製佐證**，不得陳述為已改採自製。
+➜ ⭐ **US20260140144A1 之「兩 loopback 針之間置接地屏蔽」**
+使既載「**周界／邊緣是獨立的失效面向**」（六個落點）**新增第七個落點，且首次落在測試治具上。**
+➜ ⭐⭐ **US20260160786A1 把四線式（Kelvin）量測自「兩支針」壓縮為「一支針兩芯」**
+⇒ **「每個接點需要幾支針」與「每個接點需要幾條線」被解耦**，
+在 bump pitch 縮小時是「節點數不變而量測線數加倍」的解法。⚠ 零量化值。
+
+### ⭐ 四、CPO 測試側：覆蓋率不足的後果首次被明述，但仍無數字
+
+Semiconductor Engineering（2025-06-02）：
+- **早期故障覆蓋率不足 → 模組級災難性良率損失**（無數字）；
+- **雷射失效仍是單一最大缺陷來源**，已採用**雷射 burn-in**；多波長雷射使要求更難；
+- 矽光子元件失效率 **<1 FIT**；III-V 雷射符合 **Telcordia GR-468**；封裝以 **JEDEC** 熱循環／濕熱驗證；
+- GlobalFoundries 明示支援 **KGD/KGM（known-good-die / known-good-module）** 作法。
+➜ 既載空缺「**KGD 的標準化定義**」取得第二個使用「KGM」一詞的來源
+⇒ ⚠ **KGM（模組級）與 KGD（晶粒級）併用但兩者皆無定義**，空缺不結清、範圍擴大。
+
+### 新增空缺
+
+- [ ] **浙江微臻之空間轉換器層數、孔徑、節距、良率、平整度**（本件除 ≤5 µm L/S 外零數值）。
+- [ ] **Adeia 直接金屬接合探針之接觸力、循環次數、接觸電阻**（零數值）。
+- [ ] **TSMC force/sense 共構針之節距與接觸電阻**（零數值）；以及該五件是否屬同一產品計畫。
+- [ ] **缺實體頁**：**浙江微臻半導體**（Zhejiang Weizhen，grep 命中 0）、
+  **上海澤達／Shanghai Doctor Tech**（MEMS 探針三件，grep 命中 0）、
+  **Japan Electronic Materials**（WO2026126502A1，grep 命中 0）。
+- [ ] **KGM 的定義**（與 KGD 併列但同樣無定義）。
+
+來源：[[sources/2026-06-11_epo_tsmc-probe-card-force-sense-needle]]、
+[[sources/2026-02-19_epo_adeia-probe-card-direct-metal-bond]]、
+[[sources/2026-04-14_epo_weizhen-probe-card-space-transformer-rdl-5um]]、
+[[sources/2025-06-02_semieng_cpo-tipping-point-fiber-attach-adhesive]]

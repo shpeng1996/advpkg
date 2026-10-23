@@ -3,8 +3,8 @@ title: "SK Hynix"
 category: entity
 tags: [memory, HBM, HBM4, advanced-packaging, patent-signal]
 created: 2026-04-24
-updated: 2026-10-21
-sources: [2026-08-24_trendforce_hot-chips-2026-samsung-zhbm-skhynix-emib, 2026-08-19_trendforce_skhynix-silicon-valley-hbm-codesign-team, 2026-08-17_trendforce_samsung-skhynix-1h26-investment-nvidia-absent, 2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor, 2026-08-10_trendforce_skhynix-chongqing-sale-global-reset, 2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab, 2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h, 2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-04-22_trendforce_sk-hynix-pt7-cheongju, 2026-04-22_trendforce_sk-hynix-indiana-us-plant, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-03-03_trendforce_sk-hynix-hbm4-tight-gaps, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-05_trendforce_hbf-equipment-race-sandisk-hanmi, 2026-06-11_trendforce_skhynix-3x-wafer-2034-375layer-nand, 2026-06-20_techtimes_skhynix-hbm4e-12layer-samples, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-24_techtimes_sk-hynix-dethroned-samsung-ddr5-hbm4, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-06-25_techtimes_sk-hynix-nasdaq-adr-29b, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-22_trendforce_skhynix-q2-record-margin, 2026-07-21_trendforce_samsung-cxl-32-skhynix-imte, 2026-07-24_trendforce_skhynix-3d-stacked-dram-on-logic-on-device-ai, 2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b, 2026-10-07_skhynix_cpo-nature-electronics-100tbps-1pjbit-10ns, 2026-10-13_samsung-hbm-33pct-hcb-vs-mrmuf, 2026-10-13_hbm-share-of-accelerator-cost]
+updated: 2026-10-23
+sources: [2026-08-23_servethehome_sk-hynix-hbm4-16148-microbumps, 2026-08-24_trendforce_hot-chips-2026-samsung-zhbm-skhynix-emib, 2026-08-19_trendforce_skhynix-silicon-valley-hbm-codesign-team, 2026-08-17_trendforce_samsung-skhynix-1h26-investment-nvidia-absent, 2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor, 2026-08-10_trendforce_skhynix-chongqing-sale-global-reset, 2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab, 2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h, 2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-04-22_trendforce_sk-hynix-pt7-cheongju, 2026-04-22_trendforce_sk-hynix-indiana-us-plant, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-03-03_trendforce_sk-hynix-hbm4-tight-gaps, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-05_trendforce_hbf-equipment-race-sandisk-hanmi, 2026-06-11_trendforce_skhynix-3x-wafer-2034-375layer-nand, 2026-06-20_techtimes_skhynix-hbm4e-12layer-samples, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-24_techtimes_sk-hynix-dethroned-samsung-ddr5-hbm4, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-06-25_techtimes_sk-hynix-nasdaq-adr-29b, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-22_trendforce_skhynix-q2-record-margin, 2026-07-21_trendforce_samsung-cxl-32-skhynix-imte, 2026-07-24_trendforce_skhynix-3d-stacked-dram-on-logic-on-device-ai, 2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b, 2026-10-07_skhynix_cpo-nature-electronics-100tbps-1pjbit-10ns, 2026-10-13_samsung-hbm-33pct-hcb-vs-mrmuf, 2026-10-13_hbm-share-of-accelerator-cost]
 related:
   - wiki/entities/samsung.md
   - wiki/technologies/hbm4.md
@@ -709,3 +709,54 @@ SK Group 出現在 Nature Electronics CPO 綜述（2026-08-19，UVa／MIT／NTU 
   （占其最新合併營收 ₩1,101.95 億 的 **20.58%**；交機付 90%、設置後付 10%）。
 - ⚠ 本輪兩篇來源日期（2026-08-26、2026-07-24）皆**早於**既載 2026-10-04 之 NineScrolls 來源
   ⇒ **SK hynix 之最新立場仍以 2026-10-04（推遲到 HBM5）為準**，本輪僅補歸因與機制。
+
+## 2026-10-23 collect 更新：⭐⭐⭐ HBM4 base 微凸塊絕對數首次入庫（16,148 顆）
+
+來源為 ServeTheHome 對 SK hynix 於 **Hot Chips 2026** 簡報之轉述。
+⚠ 依規範（70）：出版者非 SK hynix ⇒ **一手不成立**，下列數值標為「據簡報轉述」。
+
+### HBM4 實體數字
+
+| 項目 | 數值 | 新舊 |
+|------|------|------|
+| **Base 微凸塊** | **16,148 顆** | ⭐**本 wiki 首個絕對數** |
+| TSV | **>20K** | ⭐新 |
+| Z 高度 | **775 µm** | 既載（與 775 µm 物理上限論述同值互證） |
+| 封裝足跡 | 10×11 mm → **12.4×11 mm**（同篇另處作 **12.8×11 mm** ⚠） | ⭐新 |
+| 容量 | **48 GB/cube**；12-high 量產、16-high 驗證中 | 既載 |
+| 疊構 | base ＋ core dies，最多 **16 slices**；16-high ＝ 四 rank × 四 slice | ⭐新（rank 結構） |
+| IO | **1024 IO / 16 ch**（疊構描述）；世代比較記 **2048 IO** | 部分既載 |
+| 頻寬世代 | HBM2E 460 / HBM3 717 / HBM3E 1024 / **HBM4 2048 GB/s**；單顆 0.5 → 2.0 TB/s | ⭐新（完整階梯） |
+| 功耗效率 | **+40% 以上** | ⭐新 |
+
+➜ ⭐⭐⭐ **16,148 顆 base 微凸塊 ÷ 2048 IO ≈ 7.9×**
+⇒ **電源／接地與冗餘佔絕大多數**（⚠ 本 wiki 推論，簡報未如此表述）。
+這是既載「HBM4 互連量級」論述第一次有**凸塊數**而非僅有 IO 數。
+
+### 接合方式：混合接合的門檻數字
+
+| 方式 | 優 | 劣 |
+|------|----|----|
+| **TC+NCF** | 生產性高、熱阻低 | **對晶片翹曲敏感** |
+| **MR+MUF** | 較能處理薄晶粒翹曲 | 熱阻較高、**gap-fill 窗較窄** |
+| **混合接合** | **常溫 pick&place → >200 °C 退火**；支援 **≥20 層**、**pitch <18 µm** | MR-MUF 無法達到該 pitch |
+
+➜ ⭐⭐⭐ **既載「HBM 何時導入混合接合」自時程問題變成節距門檻問題**：
+**<18 µm 是 MR-MUF 的能力邊界**，且此口徑來自 HBM 供應商自家簡報。
+⇒ 與既載「混合接合推遲到 HBM5」（2026-10-04）併讀：
+**若 HBM4E 世代節距不跨過 18 µm，MR-MUF 仍可服役**，推遲因此有了技術解釋而非僅排程解釋。⚠ 本 wiki 推論。
+
+- HBM3E 16-high（48 GB/cube）：晶片厚度、間隙高度、bump pitch **各約減半**。
+
+### 熱與供電（相對量，無基線）
+
+- **i-HBM：目標熱阻降低 >30%。**
+- **PDN：近幾個 HBM 世代累計改善 75%。**
+⚠ 兩者**皆無基線值** ⇒ 不可換算絕對熱阻或絕對阻抗。
+
+### 仍空白
+
+base die 製程節點（僅稱 "optimized logic foundry process"）⇒ **既載 Samsung HBM4 base die 為 SF4 之對照，
+SK hynix 側仍缺節點數字**；翹曲量測值；HBM4E／HBM5 時程（作者註明 HBM5 未涵蓋）。
+
+來源：[[sources/2026-08-23_servethehome_sk-hynix-hbm4-16148-microbumps]]

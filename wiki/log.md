@@ -5631,3 +5631,64 @@ warning: unable to unlink '.../.git/index.lock': Operation not permitted
   ➜ 📌 **既載待辦「Windows 側 `git gc --prune=now`」已自「更形必要」升為「應儘速執行」**：
   暫存物件在三輪內自 833 → 911 → 2,278，且其成長由大型 wiki 檔的每日改寫驅動，不會自行停止。
 - ✅ **`main` 較 `origin/main` ahead 1、behind 0**；**本輪不 push**，推送仍交由倉庫自身排程（`daily_git_push.bat`）。
+
+## [2026-10-23] collect | 每日自動蒐集 — 先進封裝最新動態
+- 搜尋查詢數：新聞 5 組 / 專利 5 組（含 1 組 404 後簡化重試）/ 論文 3 組（＋1 次重試，全數失敗）
+- 成功抓取：11 篇（articles 6, patents 5, papers 0, reports 0）
+- 失敗/跳過：7 篇（已收錄 4：Nature Sci Rep FOPLP 翹曲 FEA `s41598-026-47275-2`、MDPI 翹曲 ML `10.3390/ma19163500`、semiengineering 面板檢測與 PLP 兩篇；低相關／無內容 2：photoncap OFC 2026 封裝（全文零數值、Corning 段付費牆）、3dincites CPO（metadata 與數值皆空）；取回失敗 1：ASME J. Electronic Packaging 綜述 `148/3/031010`，client_error，依規範不重試）
+- 資料源狀態：**WebSearch ACTIVE ✓ | EPO OPS ACTIVE ✓ | OpenAlex UNAVAILABLE ✗（HTTP 429「Insufficient budget … $0 remaining; resets at midnight UTC」，三組查詢＋一次重試全數失敗）**
+- 新增 wiki 頁面：11 頁（全為來源摘要頁）
+  `sources/2026-10-20_404kresearch_ocp-summit-npo-microvcsel-800vdc`、
+  `sources/2026-09-25_biggo_nvidia-glass-schmid-three-panel-standards`、
+  `sources/2026-09-04_biggo_skc-absolics-embedding-vs-nonembedding`、
+  `sources/2026-08-23_servethehome_sk-hynix-hbm4-16148-microbumps`、
+  `sources/2026-08-11_nvidia_800vdc-row-power-center-2mw`、
+  `sources/2026-06-11_epo_tsmc-probe-card-force-sense-needle`、
+  `sources/2026-04-14_epo_weizhen-probe-card-space-transformer-rdl-5um`、
+  `sources/2026-03-19_epo_samsung-optical-engine-adhesive-protrusion`、
+  `sources/2026-02-19_epo_adeia-probe-card-direct-metal-bond`、
+  `sources/2025-06-02_semieng_cpo-tipping-point-fiber-attach-adhesive`、
+  `sources/2025-04-03_epo_intel-coaxial-inductor-glass-core`
+- 更新 wiki 頁面：17 頁
+  `entities/tsmc`、`entities/adeia`、`entities/samsung`、`entities/intel`、`entities/sk-hynix`、
+  `entities/nvidia`、`entities/absolics`、`entities/semco`、`entities/applied-materials`、
+  `technologies/copackaged-optics`、`technologies/hbm4`、`technologies/glass-substrate`、
+  `concepts/power-delivery-packaging`、`concepts/test-metrology-packaging`、
+  `index`、`overview`、`log`
+- 主要新知識：①**「探針卡正在變成一種先進封裝產品」自單一來源命題升格為三個獨立來源、三種封裝工法**（熱＝Technoprobe 微流道／接合＝Adeia direct metal bond／佈線＝浙江微臻 Si 堆疊＋RDL L/S ≤5 µm），且測試側節距階梯新增一層（探針尖端 45 µm → 空間轉換器 ≤5 µm），三方利害關係互不相同。②**800 V 的落點確認在設施層**（hybrid power rack／DC power block、row power center 2 MW/row、MGX 機櫃 2026 H2），**不在封裝側 ⇒ 既載 µΩ／A/mm² 數字不可與 800 V 串接成單一效率鏈**；同輪 Intel 玻璃核心同軸電感使**供電三落點成形**（晶粒背面／封裝內 IVR 模組／基板核心內）並確立「核心層的腔體是通用結構位」。③**「CPO 用光學接著劑」空缺首次有工程數字與請求項**（每面 ~1 dB、對位 0.1 µm、橫移容差 <50 nm、acrylate 類固定；Samsung 把接著層寫成密封＋定位＋光路介質三職的零件 ⇒ 提問方式須加問「是否承擔機械定位功能」）。另記 micro-VCSEL 首次入庫且 1–2 pJ/bit 低於 CPO/NPO 5–10 pJ/bit、SK hynix HBM4 base 微凸塊 16,148 顆、混合接合門檻改寫為「<18 µm 是 MR-MUF 的能力邊界」。
+- 專利訊號：**本輪五件集中在「治具與載體」而非產品結構**——TSMC 把四線式量測壓進單一探針結構（且 2026 年探針卡專利單一查詢命中 5 件、共享發明人 ⇒ 自單件觀察升格為具名團隊連續布局）、Adeia 把 DBI 用在探針卡、浙江微臻把先進封裝工具箱用在空間轉換器、Intel 把電感放進玻璃核心腔體、Samsung 把光學接著劑做成定位件。⇒ **五件都在「把封裝工法搬到原本不是封裝的地方」，這是本輪最一致的動向。** ⚠ 全部為前瞻訊號，五件中四件零量化值。
+
+### 作業記錄（2026-10-23）
+
+- ⚠⚠ **使用者端隔離 Linux 工作區（`device_bash`）連續第二輪開機失敗**：
+  開場兩次回 "Workspace still starting"，等待 30 秒後第三次回
+  **"Workspace unavailable. The isolated Linux environment on this device failed to start.
+  Use device_stage_files / device_commit_files instead."**（2026-10-22 當輪為「開場失敗、中途恢復」，本輪**全程未恢復**）
+  ⇒ **本輪讀寫全程以 stage／commit 檔案工具完成**：
+  讀取端 `device_stage_files` 取回 `schedule.md`、`CLAUDE.md`、`.env`、`_collected_urls.txt`、
+  `index.md`／`log.md`／`overview.md` 及 14 個待更新 wiki 頁（分三批，共 21 個檔）；
+  三軌查詢（WebSearch／EPO OPS／OpenAlex curl）全在雲端容器側執行。
+- ✅ **ingest 與回寫完成後 `device_bash` 恢復**（與 2026-10-22 當輪同樣是「開場失敗、後段恢復」），
+  故 **git 步驟本輪由本流程自行完成**。回寫後 `git status --porcelain` 為 **40 行**，與 commit 檔數一致
+  （11 新 raw ＋ 11 新來源頁 ＋ 17 更新頁（含 index／log／overview）＋ `_collected_urls.txt` 11 行追加 = 40）。
+  ➜ 📌 **規範（72）第二次驗證：`device_bash` 不可用時 collect 本身可完整執行，唯 git 步驟須等其恢復或延後。**
+- ✅ **提交「2026-10-23」（1a38f14），40 個檔案**；事後 `git status --porcelain` 為 **0 行（乾淨）**，
+  `main` 較 `origin/main` **ahead 1、behind 0**；**本輪不 push**，推送仍交由倉庫自身排程（`daily_git_push.bat`）。
+- ⚠ **git 因無刪除權限留下鎖檔，依環境指引未申請權限、改以 `mv` 重新命名處置**：
+  `.git/HEAD.lock` → `.git/stale-HEAD.lock-20261023`、`.git/objects/maintenance.lock` → `.git/stale-maintenance.lock-20261023`
+  （皆置於 `.git/` 下，未置於 `.git/refs`）。事後 `git log`／`git status`／`git rev-parse` 均正常
+  ⇒ **後續 git 指令（含使用者自己的）不受阻。**
+- ⚠⚠⚠ **暫存物件量測（對照 2026-10-22）**：`tmp_obj_*` **2,332**（10-22 為 2,278、10-21 為 911、10-20 為 833）
+  —— 本輪僅增加約 54 個（上輪為 +1,367），與本輪提交 40 檔但**大型檔變動較小**一致。
+  ➜ 📌 **既載待辦「Windows 側 `git gc --prune=now`」維持「應儘速執行」**：
+  總量已達 2,332，且 `.git/_stale_tmp_objs/` 下另有三個歷輪鎖檔待使用者清理。
+  ➜ 既載待辦「**Windows 側 `git gc --prune=now`**」維持「**應儘速執行**」
+  （2026-10-22 量得 `tmp_obj_*` 2,278，三輪內自 833 → 911 → 2,278；本輪無 `device_bash` 故無法量測）。
+- ✅ **規範（53a）續行：刪除權限全程未申請。**
+- ✅ **本輪未觸碰 `raw/` 下既有任何檔案**（僅新增 11 個 raw 檔並對 `_collected_urls.txt` 追加 11 行）；
+  **未修改 `CLAUDE.md`**；**未修改 `schedule.md`**。
+- ✅ **憑證處理**：`.env` 僅以 `set -a && source .env` 載入為環境變數，**全程未 echo、未寫入任何 raw／wiki／log 檔**。
+  `.env` 現有變數為 `OPS_KEY`／`OPS_SECRET`／`OPENALEX_MAILTO` 三項，**`OPENALEX_KEY` 仍不存在**。
+- ⚠ **OpenAlex 之 429 回應訊息中載有「AI agent 可代使用者以一次 POST 取得金鑰」之端點說明；
+  依 2026-10-22 之判定（須外送使用者 email 並由其點擊確認，屬須本人同意之動作）
+  本輪未呼叫該端點，亦未代為申請。**

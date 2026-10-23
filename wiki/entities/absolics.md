@@ -3,8 +3,9 @@ title: "Absolics（SKC 子公司）"
 category: entity
 tags: [glass-substrate, TGV, Absolics, SKC, RDL, copper-grain, contamination, US-supply-chain]
 created: 2026-09-21
-updated: 2026-10-11
+updated: 2026-10-23
 sources:
+  - 2026-09-04_biggo_skc-absolics-embedding-vs-nonembedding
   - 2026-04-30_epo_absolics-glass-substrate-impurity-and-grain-symmetry
   - 2026-07-24_trendforce_skc-absolics-glass-substrate-delayed-2027
   - 2026-03-03_trendforce_skc-absolics-glass-1t
@@ -120,3 +121,44 @@ Absolics 的兩件請求項**都不是幾何或機械規格**，而是**組成�
 引 **MIT Technology Review**：早期量產試作中「**每隔幾天就有數百片玻璃面板破裂**」。⚠ **無分母、無日期 ⇒ 不得量化**；僅記為「早期試作存在機械破損問題」之定性佐證。
 
 *Sources: [[sources/2026-10-11_absolics-phase2-72000m2-amat-stake]]、[[sources/2026-10-11_nvidia-glass-pressure-18000mm2-schmid-tgv]]*
+
+## [2026-10-23] ⭐⭐⭐ 客戶驗證首次按產品型態分軌；commissioning 支出為 capex 的 2.3 倍
+
+來源：BigGo Finance（2026-09-04）。
+⚠ 依規範（71）比對：**₩401.1B 增資總額、SKC 70.05%／AMAT 29.95% 股權、₩589.6B（2026–2028）三年計畫**
+三項**已於 2026-10-11 入庫** ⇒ 本條就該三項計為**第二個獨立來源**，非新知識。
+
+### ⭐⭐⭐ 驗證狀態分為 embedding / non-embedding 兩軌
+
+| 產品型態 | 狀態 |
+|----------|------|
+| **Embedding（內嵌型）** | **初步評估完成，現進入可靠度測試** |
+| **Non-embedding（非內嵌型）** | **供應商選定預計 2026 H2；PoC 規劃年底前，視結果而定** |
+
+➜ 📌 **「Absolics 何時量產」這個問法必須先指定產品型態才有意義** ——
+兩軌進度相差一個完整階段（可靠度測試 vs 尚未選定供應商）。
+⇒ 與既載「DTC 放在哪須先指定形態」、「co-packaging 須標註動機域」、
+「同一名詞涵蓋多個獨立驗收項」同族，為該家族新成員。
+⚠ 本條未說明兩型態之技術差異（何者內嵌何物），列為新空缺。
+
+### ⭐⭐ 金額結構：試車調校遠大於設備支出
+
+| 項目 | 金額 |
+|------|------|
+| SKC 認購本次增資 | **₩2,810 億（約 $208.0M）** ⭐ |
+| 其他股東認購 | ₩1,201 億（約 $88.9M）⭐ |
+| SKC 配置於玻璃基板之資金 | ₩5,900 億（約 $436.7M）⭐ |
+| Absolics 投資 2022–2025 | ₩4,174 億（約 $308.9M）⭐ |
+| 2026–2028 計畫中 **commissioning** | **₩2,375 億（約 $175.8M）** ⭐ |
+| 2026–2028 計畫中 **capex** | **₩1,026 億（約 $75.9M）** ⭐ |
+| 股權新股數 | SKC 取得 **192,416 股**（70.05%）⭐ |
+
+➜ ⭐⭐ **commissioning : capex ≈ 2.3 : 1** —— 本 wiki 首見玻璃基板廠的支出結構，
+**與既載「資金用途為客戶評估、認證、良率改善而非擴產」一致，且為其提供金額比例。**
+➜ 時程：TrendForce 列 Absolics 目標量產 **2026**；原定 2024 商業化已多次延後；
+產業整體（SEMI × Global Net Corp, 2026-05）高效能區段**約 2028** 才初期量產
+⇒ **Absolics 自訂時程比產業共識早約兩年**。
+- SEMI／Global Net Corp 預測：玻璃核心基板 **2028–2040 CAGR 67.2%**。
+⚠ 本篇**未給產能數字**（僅提喬治亞廠）。
+
+來源：[[sources/2026-09-04_biggo_skc-absolics-embedding-vs-nonembedding]]

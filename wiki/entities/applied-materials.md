@@ -3,8 +3,8 @@ title: "Applied Materials（應用材料）"
 category: entity
 tags: [equipment, ECD, PECVD, TSV, HBM, die-thinning, hybrid-bonding, USA]
 created: 2026-09-17
-updated: 2026-10-22
-sources: [2026-08-18_appliedmaterials_hbm-packaging-bottleneck-toolset, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-06-28_hyperframe_amat-hybrid-bonding-hedge, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_epo_xiamen-anjieli-cn121335557a-silane-parylene-tgv, 2025-10-01_amat-futurum_hybrid-bonding-at-scale-overlay-inspection-10min]
+updated: 2026-10-23
+sources: [2026-09-04_biggo_skc-absolics-embedding-vs-nonembedding, 2026-08-18_appliedmaterials_hbm-packaging-bottleneck-toolset, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-06-28_hyperframe_amat-hybrid-bonding-hedge, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_epo_xiamen-anjieli-cn121335557a-silane-parylene-tgv, 2025-10-01_amat-futurum_hybrid-bonding-at-scale-overlay-inspection-10min]
 related:
   - wiki/technologies/tsv.md
   - wiki/technologies/hbm4.md
@@ -436,3 +436,18 @@ Figure 3 以 **queue time vs yield** 作圖但正文無數字。⚠ **本檔未�
    ⚠ 本檔未說明檢測位置，**此連結為本 wiki 推論**。
 3. ⚠ **時程（2027–2029 進入 chiplet CPU/GPU/XPU ＋ HBM 試產；十年末成主流含 CPO）為 Futurum 分析師展望，
    非 AMAT 宣告**；AMAT 自身僅稱 Kinex "upcoming" 並示範 16-hi 以上 DRAM 堆疊接合。
+
+## 2026-10-23 collect 更新：Absolics 持股與增資稀釋情形（第二個獨立來源）
+
+來源：BigGo Finance（2026-09-04）。
+
+- Absolics 股權：**SKC 70.05%（本次取得新股 192,416 股）／Applied Materials 29.95%**
+  —— ⚠ 依規範（71）比對，該兩個數值**已於 2026-10-11 入庫** ⇒ 本條計為**第二個獨立來源**。
+- 本次增資總額 ₩4,011 億中，**SKC 認購 ₩2,810 億、其他股東 ₩1,201 億**
+  ⇒ ⭐ **本 wiki 首次可看出 AMAT 在本輪增資中的參與量級**（其他股東合計 ₩1,201 億，
+  ⚠ 原文**未區分** AMAT 與其他小股東，故**不得據此推算 AMAT 單獨出資額**，亦不得推論其持股變動）。
+- Absolics 三年計畫（2026–2028）₩5,896 億中 **commissioning ₩2,375 億、capex ₩1,026 億**
+  ⇒ 設備支出佔比低於試車調校支出
+  ⚠ **不得據此推論 AMAT 自 Absolics 取得之設備訂單規模**（commissioning 亦可能含設備商服務收入）。
+
+來源：[[sources/2026-09-04_biggo_skc-absolics-embedding-vs-nonembedding]]

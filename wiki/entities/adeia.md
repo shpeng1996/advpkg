@@ -3,8 +3,8 @@ title: "Adeia / Adeia Semiconductor Technologies"
 category: entity
 tags: [IP-licensing, hybrid-bonding, DBI, bridge, Uzoh, patent]
 created: 2026-10-02
-updated: 2026-10-20
-sources: [2026-10-02_epo_adeia-us20260247631a1-dual-sided-connecting-element]
+updated: 2026-10-23
+sources: [2026-02-19_epo_adeia-probe-card-direct-metal-bond, 2026-10-02_epo_adeia-us20260247631a1-dual-sided-connecting-element]
 related:
   - wiki/technologies/hybrid-bonding.md
   - wiki/technologies/emib.md
@@ -82,3 +82,33 @@ related:
 - ⭐ **發明人網絡自一人擴為二人**：既載 Cyprian Emeka Uzoh ＋ 本件 Fountain Jr（Ziptronix/Invensas 時期以來之長期發明人）。
 - ⚠ 既載限制維持：Adeia **不製造**，其專利不預示任何量產時程；本件零量化值（含「低溫」未附溫度帶）。
 - 來源：[[sources/2026-10-20_epo_adeia-us20260082880a1-buildup-bonding-layer-low-temperature]]
+
+## [2026-10-23] ⭐⭐⭐ 第三件自有專利入庫：把直接接合用在「探針卡」，而不是封裝
+
+**US20260050009A1（family 98776775, 2026-02-19）— PROBE CARDS AND METHODS RELATED THERETO**
+
+- 請求項：探針含 **probe stand、probe beam、probe tip**；tip 與 stand 沿第一方向、beam 沿**不同之第二方向**延伸；
+  **probe stand 經「direct metal bonds」直接接合至基板之導電特徵**。
+- 分類 **G01R1/06727、06744、06761、07307、07342 —— 全在 G01R（量測）系**，無封裝類別。
+- 發明人：HABA BELGACEM、FOUNTAIN JR GAIUS GILLMAN、**UZOH CYPRIAN EMEKA**、WORKMAN THOMAS。
+  ⚠ **Uzoh 已見於既載 US20260247631A1** ⇒ 同一核心發明人把 DBI 推到測試治具。
+
+➜ ⭐⭐⭐ **「混合接合是一種接合工法，不是一種封裝架構」—— 本件是該讀法的第一個強證據。**
+Adeia 在本 wiki 的既有全部條目都落在混合接合／D2W 本身（含「退火前修補」、
+「處理器與記憶體橫向並置、上下各一連接元件」＝「側（sidedness）」維度、
+「接合面高度由沉積厚度決定」）。本件把同一工法用來解決**測試治具的接點可靠性**，與產品結構無關。
+
+➜ ⭐⭐ **與 Technoprobe WO2026162211A1（空間轉換器內建微流道，2026-10-21 入庫）形成同方向第二步**：
+探針卡自「被動互連」往「以半導體製程製造之整合元件」移動。
+**Technoprobe 加的是熱管理；Adeia 加的是接合工法。**
+⇒ 既載 Elena Venuti 之命題「探針卡須自被動互連演化為整合式多物理系統」
+**取得第二個獨立佐證，且來自一家與探針卡市場無既有利害關係的 IP 公司**（依規範 41，來源獨立性較高）。
+⇒ 同輪另有浙江微臻 CN121856598A（空間轉換器改用 Si 堆疊＋RDL ≤5 µm），
+**三件分別引入熱、接合、佈線三種封裝工法**。
+
+➜ ⭐ **探針與基板之間不再有焊料或導電膠** ⇒ 探針卡側失效面向（接點疲勞）首次有結構解法。
+
+⚠ 本件**零量化值**（無接觸力、無循環次數、無接觸電阻）。
+⚠ **Adeia 不製造** ⇒ 依既載原則，其專利**不預示任何量產時程**。
+
+來源：[[sources/2026-02-19_epo_adeia-probe-card-direct-metal-bond]]

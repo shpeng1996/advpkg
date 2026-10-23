@@ -3,8 +3,8 @@ title: "NVIDIA Corporation"
 category: entity
 tags: [fabless, GPU, AI-accelerator, HBM4, CoWoS, SoIC, Rubin, Feynman, NVL576, CPO, Spectrum-X, Constellation]
 created: 2026-05-03
-updated: 2026-10-21
-sources: [2026-05-24_techtimes_nvidia-computex2026-cowos, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-03-18_trendforce_nvidia-rubin-feynman-soic, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-06_trendforce_google-tpu-cautious-adoption-nvidia, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-06-01_trendforce_nvidia-vera-rubin-tsmc-20pct-revenue, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-19_techtimes_vera-rubin-hbm4-suppliers, 2026-06-14_digitaltrends_tsmc-copos-glass-temporary-carrier, 2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b, 2026-07-27_trendforce_presscenter_cpo-switches-nvidia-broadcom-coupe, 2026-10-02_trendforce_nvidia-glass-substrate-2028-taiwan, 2026-10-02_trendforce_cowos-l-mainstream-through-2028]
+updated: 2026-10-23
+sources: [2026-08-11_nvidia_800vdc-row-power-center-2mw, 2026-09-25_biggo_nvidia-glass-schmid-three-panel-standards, 2026-05-24_techtimes_nvidia-computex2026-cowos, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-03-18_trendforce_nvidia-rubin-feynman-soic, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-06_trendforce_google-tpu-cautious-adoption-nvidia, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-06-01_trendforce_nvidia-vera-rubin-tsmc-20pct-revenue, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-19_techtimes_vera-rubin-hbm4-suppliers, 2026-06-14_digitaltrends_tsmc-copos-glass-temporary-carrier, 2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b, 2026-07-27_trendforce_presscenter_cpo-switches-nvidia-broadcom-coupe, 2026-10-02_trendforce_nvidia-glass-substrate-2028-taiwan, 2026-10-02_trendforce_cowos-l-mainstream-through-2028]
 related:
   - wiki/entities/tsmc.md
   - wiki/entities/sk-hynix.md
@@ -315,3 +315,51 @@ NVIDIA GPU 出貨 **2026 年 +~30% YoY**；**CoWoS-L 預期維持主流至 2028*
 - ⚠ **本輪來源未指明設定 775 µm 的 JEDEC 文件編號**（僅就 HBM4 介面規格引用 JESD270-4）
   ⇒ 該數字應標為「依多個二手來源一致」而非「標準明訂」。
 - ⚠ 二手報導、單一來源；本件日期 2026-07-24。
+
+## 2026-10-23 更新：800 VDC 架構（一手）與 Rubin Ultra 雙晶粒化（據報）
+
+### ⭐⭐⭐ 800 VDC：落點在「電網 → row／機櫃」，不在封裝側
+
+來源：NVIDIA 官方部落格（blogs.nvidia.com，作者 Harry Petty，2026-08-11）。
+✅ 依規範（70）核對：作者與出版者皆為 NVIDIA ⇒ **一手成立。**
+
+- **兩種轉換形態**：
+  - **Hybrid power rack**：沿用既有 AC 設施，於同一 row 內把 **800 VDC** 送至運算機櫃（既有廠房改造路徑）。
+  - **DC power block**：廠區級單元，**一步**把電網電力轉為 800 VDC（新建廠路徑）。
+- **Row power center：每 row 最高 2 MW**，預計 **2027**。
+- **MGX 相容 800 VDC power rack：2026 下半年。**
+- 規格承載於 **OCP**：NVIDIA × Google × Microsoft 聯合白皮書 **2026-03**；
+  **LVDC Solid-State Transformer Specification v0.3（2026-07）**；生態系 **>80 家**。
+- Wood Mackenzie：至 2040 年全球 AI 與資料中心基礎設施投資 **$9 兆**。
+- ⚠ **未給轉換級數、未給任何效率百分比、未給銅用量節省。**
+
+➜ 📌 **直接回答 2026-10-22 所立空缺「機櫃 800 V 配電的落點與轉換架構」**：
+落點是**設施層**（電網→row→機櫃），**不是封裝側**。
+⇒ **既載封裝側數字（Infineon >3 A/mm² 障壁、PDN 90–140 → 7–10 µΩ、Ferric 160 A／35.5 mm²）
+與 800 V 分屬不同層級，不可串接成單一效率鏈。**
+⚠ 效率與轉換級數仍空白 ⇒ **空缺降級但不結清。**
+➜ **2 MW/row** 為本 wiki 首個 row 級功率數字（既載最高為機櫃級 >1 MW（2029+）、~600 kW（2027+））。
+
+來源：[[sources/2026-08-11_nvidia_800vdc-row-power-center-2mw]]
+
+### ⭐⭐ Rubin Ultra：四運算晶粒版本據報取消，回到雙晶粒
+
+BigGo（2026-09-25，引 SemiAnalysis 2026-06-30）：
+GTC 2026 發表之**四運算晶粒** Rubin Ultra **據報取消**，量產版回到**雙晶粒**，
+運算與記憶體頻寬約為原發表之**一半**。**NVIDIA 未確認。**
+
+- **光罩極限 ~858 mm²**；**四晶粒中介層面積約為光罩極限的 7.5–8×**（SemiAnalysis）。
+➜ 📌 與既載「中介層產出的幾何代價」階梯（5.5× → 8 片／9× → 5 片／14× → 4 片）相接：
+**7.5–8× 落在 5.5× 與 9× 之間 ⇒ 單片晶圓約 5–6 片中介層。** ⚠ 本 wiki 推論。
+➜ 既載 2026-04-01 已有「Rubin Ultra dual die」來源；本條為**第二個獨立來源**，
+且首次給出**面積口徑**。⚠ 須永久保留「據報／未確認」限定。
+
+### 玻璃基板需求側：設備商同時支援三種面板尺寸
+
+- **SCHMID（德國）面板標準：310×310 / 510×515 / 600×600 mm**；與 **Intel、NVIDIA、AMD** 供應鏈共同開發；
+  CSO 為 Roland Rettenmayer。
+- 基材端：**NEG GC Core 515×510 mm 樣品**（CO₂ 雷射鑽孔＋改良蝕刻）、**AGC 500 mm 方形 ＋ 300 mm 圓晶圓**。
+➜ 既載 NVIDIA × SCHMID 之合作已於 2026-10-16 以 TrendForce 來源入庫
+⇒ 本條就該項計為**第二個獨立來源**，新事實為**三個面板標準並存**與基材端尺寸。
+
+來源：[[sources/2026-09-25_biggo_nvidia-glass-schmid-three-panel-standards]]

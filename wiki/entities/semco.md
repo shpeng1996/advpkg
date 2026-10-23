@@ -3,8 +3,8 @@ title: "Samsung Electro-Mechanics / 三星電機（SEMCO）"
 category: entity
 tags: [SEMCO, substrate, ABF, glass-core, coreless, interposer, MLCC, Korea]
 created: 2026-10-03
-updated: 2026-10-05
-sources: [2026-10-03_epo_semco-coreless-interposer-organic-bridge, 2026-10-03_tomshardware_abf-substrate-state-2026, 2026-10-02_epo_semco-glass-surface-roughness-tgv]
+updated: 2026-10-23
+sources: [2026-09-04_biggo_skc-absolics-embedding-vs-nonembedding, 2026-10-03_epo_semco-coreless-interposer-organic-bridge, 2026-10-03_tomshardware_abf-substrate-state-2026, 2026-10-02_epo_semco-glass-surface-roughness-tgv]
 related: [concepts/substrate-materials-supply-chain.md, technologies/glass-substrate.md, technologies/emib.md, entities/samsung.md, entities/absolics.md, entities/shinko.md, entities/ibiden.md]
 ---
 
@@ -104,3 +104,23 @@ related: [concepts/substrate-materials-supply-chain.md, technologies/glass-subst
 ### 相關來源
 
 [[sources/2026-10-05_thelec_semco-glass-samples-apple]]、[[sources/2026-10-05_semieng_wir158-semco-fcbga-hbm-wafer-share]]
+
+## [2026-10-23] ⚠⚠ 玻璃核心落後的第一個具體原因：原型未通過客戶可靠度測試
+
+來源：BigGo Finance（2026-09-04，二手）。
+
+- **SEMCO 玻璃核心基板原型未通過客戶可靠度測試。**
+- 量產推遲至 **2028 年或之後**。
+- 與 **Sumitomo Chemical** 之 MOU 簽署時點記為 **2025-11**。
+- 同篇另記 SEMCO **GlaSSEM 供應體系就緒目標 FY2027 下半**（BigGo 2026-09-25）。
+
+➜ 📌 既載本頁已有**三個互不一致的量產說法**（2027 Q3／2028 後／2027 後由合資公司起），
+本條為**第四個（2028+）**，但**首次給出落後原因**。
+⇒ 依既載處置原則：**不擇一、四個說法全部並列並標來源日期**。
+⚠ 二手、**未具名客戶、未說明失敗項目（熱循環？HAST？翹曲？）** ⇒
+**不作為既有論述之推翻依據**；列為新空缺：「SEMCO 原型未通過的是哪一項可靠度測試」。
+
+➜ 對照組：同篇指 **Absolics 之 embedding 產品已進入可靠度測試**
+⇒ **韓系兩家在同一驗證關卡上出現分歧**（一家進入、一家未通過）。⚠ 口徑可能不同（產品型態未對齊）。
+
+來源：[[sources/2026-09-04_biggo_skc-absolics-embedding-vs-nonembedding]]
