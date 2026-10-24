@@ -3,7 +3,7 @@ title: "Applied Materials（應用材料）"
 category: entity
 tags: [equipment, ECD, PECVD, TSV, HBM, die-thinning, hybrid-bonding, USA]
 created: 2026-09-17
-updated: 2026-10-23
+updated: 2026-10-24
 sources: [2026-09-04_biggo_skc-absolics-embedding-vs-nonembedding, 2026-08-18_appliedmaterials_hbm-packaging-bottleneck-toolset, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-06-28_hyperframe_amat-hybrid-bonding-hedge, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_epo_xiamen-anjieli-cn121335557a-silane-parylene-tgv, 2025-10-01_amat-futurum_hybrid-bonding-at-scale-overlay-inspection-10min]
 related:
   - wiki/technologies/tsv.md
@@ -451,3 +451,20 @@ Figure 3 以 **queue time vs yield** 作圖但正文無數字。⚠ **本檔未�
   ⚠ **不得據此推論 AMAT 自 Absolics 取得之設備訂單規模**（commissioning 亦可能含設備商服務收入）。
 
 來源：[[sources/2026-09-04_biggo_skc-absolics-embedding-vs-nonembedding]]
+
+---
+
+## 專利訊號 / Patent Signals（2026-10-24 新增）
+
+### ⭐⭐⭐ US20250149474A1（fam 95561854，2025-05-08）—— 介電面不是清乾淨，而是長一層新的
+
+**申請人：Applied Materials ＋ Nanyang Technological University（設備商與大學共同申請，本 wiki 專利軌首見組合）**
+
+- **常壓**化學浴浸泡 → 在**金屬表面**選擇性形成**自組裝單分子層（SAM）** → **選擇性沉積 high-k** 只長在**無 SAM 的介電表面**形成 dielectric cap。目的明示為**提高介電接合強度**。
+- ⇒ 📌 **列管空缺「接合當下表面還剩什麼、用什麼處理」第五種解法，且是唯一「不去除、而是加上一層」者。**
+  既載四種：① 濕式／電漿活化；② [[entities/atotech]] 以超高純 Cu 與穩定化細晶製程換取時間窗（材料側）；③ [[entities/kulicke-soffa]] US20260082972A1 bond head 歧管內建還原氣體埠（**設備 in-situ**）；④ [[entities/resonac]] 耐化學切割膠帶（避免引入污染）。
+  **第五種把「介電面接得牢不牢」從清洗問題改成沉積問題。**
+- ⇒ **「把對位／選擇性從機台轉移到別處」第四個落點：表面化學**（前三：微影、晶片形貌、接著劑成形）。以**表面親和性差異取代圖案化**，不需光罩。
+- ⚠ **依既載規範（41）：AMAT（設備商，有利害關係）＋ NTU（學術）共同申請，不構成兩個獨立來源。**
+- ⚠⚠ **本件零量化值**（無接合強度、high-k 種類／介電常數、膜厚、SAM 分子、溫度、良率）；**不得與既載 AMAT × Besi Kinex「100 nm @ 3σ → 50 nm → <25 nm」合併成單一能力宣告**（後者為對準精度，與本件表面化學無關）。
+- 來源：[[sources/2025-05-08_epo_amat-ntu-selective-dielectric-capping-sam]]

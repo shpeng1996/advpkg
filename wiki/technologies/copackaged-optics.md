@@ -3,7 +3,7 @@ title: "共封裝光學元件 / Co-Packaged Optics (CPO) — TSMC-COUPE™ & Eco
 category: technology
 tags: [CPO, co-packaged-optics, COUPE, TSMC, GlobalFoundries, Samsung, photonics, AI, HPC, networking, OCI-MSA, DWDM, Broadcom, NVIDIA, glass-substrate, ULCVD, TGV, Spectrum-X, NVL72]
 created: 2026-04-25
-updated: 2026-10-23
+updated: 2026-10-24
 sources: [2025-06-02_semieng_cpo-tipping-point-fiber-attach-adhesive, 2026-10-20_404kresearch_ocp-summit-npo-microvcsel-800vdc, 2026-03-19_epo_samsung-optical-engine-adhesive-protrusion, 2026-09-27_globalfoundries_siph-cpo-bandwidth-density-coupling-budget, 2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-27_paper_copper-interconnect-scaling-roadmap-lines-per-mm, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-05-07_trendforce_globalfoundries-silicon-photonics-scale-cpo, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-03-17_coherent_cpo-ofc2026-demo, 2026-06-07_digitimes_jcet-3d-packaging-cpo-plant, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_edn_cpo-technology-status-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-06-24_thelec_corning-glass-bridge-cpo, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-14_trendforce_umc-silith-silicon-photonics-hvm, 2026-07-14_trendforce_huawei-baidu-npo-msa, 2026-07-27_trendforce_presscenter_cpo-switches-nvidia-broadcom-coupe, 2026-06-03_3dincites_intel-foundry-emib-cpo-glass-ectc2026, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-07-31_ase_cn224583735u-photoelectric-hybrid-rdl, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-09-26_report_dupont-ttm-polymer-waveguide-reliability, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_bitschips_besi-q1-2026-hybrid-bonding-orders, 2026-10-07_openalex_mit-cpo-vs-pluggable-switch-power-calibration, 2026-10-07_skhynix_cpo-nature-electronics-100tbps-1pjbit-10ns, 2026-10-09_semiwiki-tsmc-oip-2026-verification, 2026-10-13_cpo-bottleneck-test-800x-area-mismatch, 2023-04-05_oiforum_3-2t-copackaged-module-ia-host-electrical-interface, 2026-10-22_openalex_slow-light-si-modulator-26fj-200g-reduced-dsp, 2026-07-08_openalex_oband-soliton-microcomb-300nm-sin-41pct, 2026-07-20_openalex_tfln-optical-engine-module-fog-copackaging]
 related:
   - wiki/technologies/rdl.md
@@ -1896,3 +1896,101 @@ Intel 3.5D＝3D PIC/EIC 疊構 ＋ xPU 於 EMIB 封裝。製程步驟圖出自 *
 來源：[[sources/2025-06-02_semieng_cpo-tipping-point-fiber-attach-adhesive]]、
 [[sources/2026-10-20_404kresearch_ocp-summit-npo-microvcsel-800vdc]]、
 [[sources/2026-03-19_epo_samsung-optical-engine-adhesive-protrusion]]
+
+---
+
+## 2026-10-24 collect 更新：能效階梯首次逐項標明距離；接著劑空缺的性質被重新分類
+
+本輪三個來源同時落在 CPO：**arXiv 2601.14342**（VCSEL CPO 綜整，⚠ 預印本）、**Semiconductor Today 2026-10-19**（TrendForce 口徑，⚠ 二手）、**iNEMI ACOP 專案頁**（標準化組織）。
+
+### ⭐⭐⭐ 一、能效階梯（pJ/bit），且逐項標明距離是否給出
+
+| 方案 | pJ/bit | 距離是否標明 |
+|------|--------|--------------|
+| **VCSEL CPO @108 Gbit/s** | **光引擎 0.9／總計 ~2** | ✗ |
+| **NVIDIA／Broadcom SiPho CPO @200 Gbit/s/lane** | **光引擎 ~6.7／總計 ~8** | ✗ |
+| 被動銅纜 pluggable | 5 | ✓ **~1 m** |
+| 主動銅纜 retiming 增量 | +1.1 | ✓ **3 m** |
+| 含 DSP retimed pluggable | 13.5 | ✓ **10 m 及以上** |
+| LPO 線性驅動 | 10 | ✗ |
+| Microsoft microLED pluggable | 6.6–7 | ✗ |
+| 32 Gbit/s VCSEL 陣列（估） | ~0.75 | ✗ |
+| 處理器→板邊（含 SerDes/DSP）@200 Gbit/s | ~3.5 | ✗（繫於板邊 22 dB 損耗） |
+
+**原文主張**：VCSEL CPO 是**唯一已量產就緒且 <1 pJ/bit** 的 scale-up 光纖鏈方案 —— ⚠ **該主張未給距離。**
+
+📌 **修正既載數字**：既載「micro-VCSEL **1–2 pJ/bit**、**適用距離 50–100 m**」（Morgan Stanley 整理）。
+➜ 本輪一手彙整為 **0.9（光引擎）／~2（總計）**；**scale-up 應用距離為 0.3–30 m**，而 **~150 m 是 850 nm 多模 VCSEL 的模態色散上限（能力邊界，非應用區間）**。
+➜ **「50–100 m」改記為「來源未明之中間值」**，以 **0.3–30 m（應用）／~150 m（模態極限）** 取代。
+
+⚠⚠ 📌 **比較前提不可比**：VCSEL 的 0.9 量在 **108 Gbit/s**、SiPho 的 6.7 量在 **200 Gbit/s** ⇒ 依既載規範（34）（37）**兩數字不得相除**；**「VCSEL 比 SiPho 省 7 倍」是錯誤讀法**（本篇自身亦註明條件不同）。
+
+### ⭐⭐⭐ 二、頻寬密度的單位本身有兩種 —— 既載「5 倍差異」空缺改寫
+
+本輪來源**一律使用 Tbit/s/mm²（面積）**，並明示 SiPho 數字**不含 SerDes**：
+
+| 方案 | Tbit/s/mm² |
+|------|-----------|
+| CPO 需求門檻 | **>0.5** |
+| SiPho MRM（**不含 SerDes**） | 0.5–~1 |
+| microLED @50 µm 節距、4 Gbit/s | 0.8 |
+| **VCSEL 陣列 @32 Gbit/s、50 µm 節距** | **6.4** |
+
+📌 既載空缺「**1 Tbps/mm（Amkor, 2025）與 >5 Tb/s/mm（GlobalFoundries）相差 5 倍**」**改寫**：差異可能不只是「模組邊緣 vs 晶粒邊緣」，而是「**每 mm 邊長 vs 每 mm² 面積**」兩種不同量綱，外加「**是否含 SerDes**」的邊界問題。**引用任何頻寬密度數字前必須確認量綱與含括範圍。** ⚠ 空缺不結清。
+
+### ⭐⭐⭐ 三、VCSEL 的封裝落點在兩個獨立來源間不一致（CPO vs NPO）
+
+- **arXiv 2601.14342**：全篇稱 **VCSEL CPO**。
+- **Semiconductor Today／TrendForce**：稱 **VCSEL NPO**，六家開發者為 **Lumentum、Furukawa、Coherent、Broadcom、ams OSRAM、HiSilicon**，**2027–2028 推出**。
+⇒ 📌 既載「CPO/NPO 分工理由」論述須加一條：**分工界線本身在 VCSEL 上尚未取得共識。引用 VCSEL 的能效或距離數字前必須確認其假設的封裝位置（封裝內 vs 封裝旁）。** ⚠ 本 wiki 判定。
+
+### ⭐⭐⭐ 四、「micro-VCSEL」首次有尺寸定義，且與陣列節距不同
+
+- **單一元件 100–200 µm**（TrendForce 口徑）；而 arXiv 的頻寬密度計算用的是 **50 µm 陣列節距**。
+⇒ 📌 「同一名詞涵蓋多個獨立驗收項」家族再增一例：**「micro-VCSEL」須標註指元件尺寸或陣列節距** —— 兩者差 2–4×，不可混用。
+
+### ⭐⭐⭐ 五、850 nm vs 1060 nm：成本與色散極限的取捨，兩個獨立來源、兩種視角
+
+| 波長 | 廠商 | 特性 |
+|------|------|------|
+| **850 nm** | Coherent、Broadcom、ams OSRAM、HiSilicon | **聚合頻寬達 3.2 Tbps**；⚠ **受色散限制，距離與頻寬無法再提升**；模態色散限 100G 於 **~150 m** |
+| **1060 nm** | Lumentum、Furukawa（**Coherent 亦計畫採用**） | **成本較高** |
+
+⭐ **3.2 Tbps 在兩個獨立來源中數值相同**（TrendForce「850 nm 聚合頻寬」；arXiv「VCSEL FaN tile 32×100G ＝ 3.2 Tbit/s」）⇒ **3.2 Tbps 為當前 VCSEL tile 的實際集成單位。**
+
+### ⭐⭐⭐ 六、「wide and slow」自比喻升格為有正式定義的 régime
+
+**WaS ＝ <64 Gbit/s, PAM2；FaN ＝ >100 Gbit/s, PAM4**（arXiv 定義）⇒ 既載「把設計移到規格較鬆的區間」家族第一次有可檢驗邊界。
+
+### ⭐⭐⭐ 七、冗餘（spares）是架構參數，不是元件參數
+
+- VCSEL 單鏈 **≤0.2 FIT**；32×100G 合計 **6.4 FIT** → **加兩備援 ~1 FIT**。
+- WaS 最差情境 512 鏈 **~100 FIT** → **10% 備援 ~10 FIT**；**15% 備援 <10 FIT**。
+- Broadcom 51.2 Tbit/s CPO：0.8 Tbit/s tile **<66 FIT**（不可維修失效）；microLED **每發光體 0.1 FIT**、3.2 Tbit/s 發光體組 **160 FIT**。
+- Meta／Broadcom **>100 萬元件小時無 link-flap**；Meta 稱 CPO 對 pluggable **MTBF 改善 ~5×**。BER 目標 NRZ **<10⁻¹²**、PAM4 **<10⁻⁶**（實測 <10⁻⁷）。
+⇒ 📌 既載 GlobalFoundries「雷射外置＝最不可靠的元件、可冗餘自動切換」只有定性理由；本輪給出**冗餘比例與 FIT 的換算關係**。
+
+⭐⭐ **FIT 必須同時標註溫度與驅動電流**：Coherent 100G VCSEL **0.03 FIT @120 °C／4 mA** **低於** **0.07 FIT @85 °C／5 mA** ⇒ 📌 **未標溫度與電流的 FIT 不可排序**；與既載規範（34）同構。
+
+### ⭐⭐⭐ 八、光學接著劑空缺的性質被重新分類（本輪最重要的單一發現）
+
+**iNEMI ACOP 專案**（與 **MIT FUTUR-IC** 合作，**NSF Convergence Accelerator ITE-2345076**）的存在理由即為
+**「光學封裝缺乏業界公認的測試方法與測試載具」**；問卷 **>40 份回覆、28 家公司**（主要為**接著劑供應商**）。
+
+📌 **空缺自「資料蒐集不足」（可由繼續 collect 結清）改列為「產業標準空缺」（不可能由 collect 結清，只能追蹤 ACOP 產出）。**
+📌 **完整三角：產業說沒有標準，兩家公司各自用相反方法繞過它**——
+**iNEMI**：沒有公認測試方法；**Intel US20250044533A1**：職能**拆成兩種材料**（性質互相衝突）；**Samsung US20260079312A1**：**三職合一**。
+⇒ **「為什麼沒有標準」有了結構性解釋：連『這個接著劑該負責幾件事』都未取得共識，測試方法自然無從定義。** ⚠ 本 wiki 推論。
+⚠ **折射率、透過率、濕熱可靠度小時數仍全部空白**（三個來源皆未給）。
+
+### 其他本輪新知
+
+- **距離與損耗**：板邊 **22 dB** @200G PAM4；SMF **<0.3 dB/km**；**OM4 2.3 dB/km**；microLED 塑膠束 **~3 dB / 5 m @420 nm**；VCSEL 色散極限 **1–2 km**；SiPho **數 km**；microLED **30 m @1.6 Gbit/s, BER <10⁻⁴**。
+- **波長**：多模 VCSEL 850 nm（多模適用 850–1060）／單模 1060 nm／SiPho **1310 nm O-band**／microLED **420 nm**。
+- **microLED 與 VCSEL 首次同表**：同為 50 µm 節距，頻寬密度差 **8×**（0.8 vs 6.4），差異源自每通道速率（4 vs 32 Gbit/s）。
+- ⭐ **HiSilicon（海思）首次出現在本 wiki 的 CPO/NPO 供應側** ➜ 列為新空缺。
+- ⭐ **IDTechEx**：光學 I/O 出貨 **180 萬套（2033）**；CPO 營收 **>US$12 億（2035）**。⚠ 年份不同，不可相除求單價。
+- ⭐ 既載「CPO/NPO 分工理由改寫為良率與可維護性 vs 能效」（⚠ 賣方研究）取得學術側佐證，並新增**第三軸：複雜度**（SiPho 需 lock-in 電子與頻率梳、外置雷射 pluggable；VCSEL 為直接驅動）。
+- ⚠ **arXiv 來源完全未提 EML** ⇒ 既載 EML 論述無法與之對照。
+
+**來源**：[[sources/2026-01-01_arxiv_vcsel-cpo-pj-per-bit-ladder-with-distances]]、[[sources/2026-10-19_semitoday_vcsel-npo-six-makers-two-wavelengths]]、[[sources/2026-02-01_inemi_acop-no-accepted-test-methods-optical-packaging]]、[[sources/2025-02-06_epo_intel-split-adhesive-index-matching-optical-interposer]]

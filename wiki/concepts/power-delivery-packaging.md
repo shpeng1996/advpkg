@@ -3,7 +3,7 @@ title: "封裝層的供電網路 / Power Delivery Networks at the Package Level"
 category: concept
 tags: [PDN, power-delivery, vertical-power, eVR, capacitor, inductor, passive-integration, hybrid-bonding, rack-power]
 created: 2026-09-29
-updated: 2026-10-23
+updated: 2026-10-24
 sources: [2026-08-11_nvidia_800vdc-row-power-center-2mw, 2025-04-03_epo_intel-coaxial-inductor-glass-core, 2026-10-20_404kresearch_ocp-summit-npo-microvcsel-800vdc, 2026-09-29_imaps-dpc2026_nanoporous-silicon-capacitor-pdn, 2026-09-29_imaps-dpc2026_saras-stile-evr-vertical-pdn, 2026-09-29_semieng_tech-paper-roundup-sept29-multikw-3dhi-pdn, 2026-09-29_semiwiki_ofc2026-siph-cpo-oci-ocs-summary, 2026-09-30_arxiv_umn-multi-kw-power-delivery-3d-hi, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_epo_intel-jp2026116680a-glass-core-embedded-inductor-clusters, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_imaps-dpc2026_delo-die-side-capacitor-encapsulation, 2026-10-02_epo_samsung-cn122602880a-ivr-capacitor-interposer-core, 2026-10-02_jmmm_tyndall-fecob-n-pwrsoc-magnetics, 2026-10-02_epo_amd-us20260282956a1-silicon-bridge-decap, 2026-10-06_openalex_auburn-nife-tsv-magnetic-shield-package, 2026-10-07_epo_amkor-bspdn-oriented-package-embedded-ipd, 2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-08_semieng_voltage-regulation-in-package, 2026-10-08_ferric-fe1766-current-density-denominator, 2026-10-08_empower-crescendo-regulator-side, 2026-10-08_zju-8module-fivr-current-sharing, 2026-10-08_samsung-stacked-rdl-package-bspdn-layer, 2026-10-08_ibm-w2w-bonded-deep-trench-capacitor, 2026-10-08_etron-liquid-through-substrate-cavity, 2026-10-09_infineon-tdm2354-dual-phase-denominator, 2026-10-09_infineon-tdm2454-quad-phase-denominator, 2026-10-09_semiwiki-tsmc-oip-2026-verification, 2026-01-15_epo_ibm-us20260018508a1-backside-dtc-second-family, 2026-05-25_epo_dbhitek-jp2026085828a-dual-dtc-epi-layer, 2026-03-12_epo_tsinghua-wo2026052054a1-josephson-chiplet-embedded-dtc, 2026-02-26_epo_tsmc-us20260060104a1-rdl-active-wafer-ipd-or-bridge, 2026-07-01_circuitsassembly_ectc2026-w2w-pitch-ladder-tel-140nm]
 related:
   - wiki/concepts/thermal-management.md
@@ -1121,3 +1121,22 @@ Ferric Fe1766 160 A／35.5 mm²／>4.5 A/mm²）與 800 V 分屬不同層級，
 亦不構成「Intel 已在玻璃核心量產 FIVR」之證據。
 
 來源：[[sources/2025-04-03_epo_intel-coaxial-inductor-glass-core]]
+
+---
+
+## 2026-10-24 collect 更新：功率階梯新增第四層級（wafer-level node）
+
+既載規範（2026-10-23 立）：**引用任何 kW／MW 數字必須標註層級，否則不可比較。** 本輪新增一個層級：
+
+| 層級 | 數字 | 來源 |
+|------|------|------|
+| **處理器** | ~0.4 → ~1 → >2 → **2–4 kW** | [[entities/infineon]] |
+| **wafer-level node（模擬值）** ⭐新 | **≤900 W／節點**（8 × 112.5 W 熱測試 chiplet） | `10.1007/s44443-026-01385-z` |
+| **機櫃** | <250 kW → ~600 kW+（2027+）→ **>1 MW（2029+）** | [[entities/infineon]] |
+| **row** | **2 MW**（2027） | NVIDIA 官方部落格 |
+
+⚠ 📌 **900 W 為「晶圓級系統內的單一計算節點」且為模擬上限而非實際功耗**，介於既載「處理器」與「機櫃」之間
+⇒ **須標為第四層級「wafer-level node（模擬值）」，不得與 2–4 kW 的處理器數字並列比較。**
+⚠ 來源為國防相關機構之自述平台、初期原型（見 [[sources/2026-10-22_openalex_sow-wafer-level-verification-900w-thermal-chiplets]]）。
+
+➜ 另記：該平台的 **288 顆熱測試 chiplet** 使**熱成為可程式化的輸入**而非待量測的輸出，詳見 [[concepts/test-metrology-packaging]]。

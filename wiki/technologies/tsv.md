@@ -3,7 +3,7 @@ title: "TSV — Through-Silicon Via / 矽穿孔"
 category: technology
 tags: [TSV, HBM, interposer, 3D-IC, CoWoS, manufacturing, backside-power, advanced-packaging, radiation, redundancy, reliability]
 created: 2026-08-10
-updated: 2026-10-21
+updated: 2026-10-24
 sources: [2026-09-27_wuhanuniv_cn121548325a-tgv-micro-nano-anchor-molecular-bridging, 2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-27_semieng_chip-week-156-india-tata-besi-izmo, 2026-04-22_semieng_tsv-complexity-manufacturing-bottleneck, 2026-08-21_semieng_chip-week-152, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-08-21_scirep_copper-oxide-reduction-ar-h2-pulsed-plasma, 2026-06-08_irtnanoelec_d2w-hybrid-bonding-1um-pitch, 2026-03-13_kaneka_jp2026047137a-glass-core-polyimide-quantified, 2026-08-10_screp_low-k-organic-buffer-tgv-cu-metallization, 2026-08-04_jmrt_vacuum-assisted-void-free-cu-fill-tgv, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring, 2026-09-26_patent_zhuhai-tiancheng-dual-depth-tsv-silicon-bridge, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_patent_er-eng-glass-interposer-dual-carrier, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth, 2026-10-02_epo_semco-cn122054433a-glass-surface-roughness, 2026-10-02_trendforce_intel-microled-glass-24-layer, 2026-10-02_imaps-dpc2026_defect-free-coplanar-copper-via-fill, 2026-10-02_microrel_tudelft-google-3dic-fa-hardware, 2026-10-06_epo_microchip-polysic-ceramic-interposer-mandrel-vias, 2026-10-06_openalex_auburn-nife-tsv-magnetic-shield-package, 2026-10-06_thelec_sec-xray-tsv-tgv-inspection-1um, 2026-10-07_epo_cas-freestanding-3c-sic-interposer, 2026-10-07_openalex_cuos-alloy-interconnect-oxidation-adhesion, 2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk, 2026-10-08_rdl-free-glass-interposer-trench, 2026-10-08_uestc-tapered-tgv-skin-current, 2026-10-09_cas-2013-microchannel-interposer-ebg, 2026-10-09_nycu-itri-cu-pad-protrusion-aspect-ratio]
 related:
   - wiki/technologies/hbm4.md
@@ -998,3 +998,39 @@ Anhui Univ.（**50 µm Cu 核心 ＋ 固定 Co/TiW 層 ＋ 聚合物襯層**，�
   ⇒ **這三者之間，襯層材料選擇是自由度而非槓桿。**
 - ⚠⚠ 全為模擬；作者自陳 "within the specified local TGV model"；
   「增量熱阻」之分母與量測邊界未界定 ⇒ **不得與既載任何熱阻數字直接比較。**
+
+---
+
+## 2026-10-24 collect 更新：TSV-Cu 的 45°±3.45° 禁區 —— 晶界要分型
+
+**`10.1016/j.mssp.2026.111324`**（Materials Science in Semiconductor Processing, 2026-10-21；⚠ 奈米壓痕＋晶體塑性有限元，**非封裝級可靠度試驗**，僅取得摘要）
+
+| 項目 | 數值 |
+|------|------|
+| 晶粒錯向 **5°–30°** 之性質變化 | **可忽略** |
+| 高角度晶界 **HAGB（θ = 45°）** 機械性質劣化 | **−17.4%**，並使儲存能密度 G_ba 分佈最大化 ⇒ 高裂紋起始風險 |
+| 實驗觀察裂紋起始錯向角 | **45.77°** |
+| 疲勞試驗觀察範圍 | **43.96°–48.45°** |
+| **定義之微結構弱區** | **HAGB θ = 45° ± 3.45°** |
+| 裂紋起始位置 | 相鄰晶粒**Schmid 因子 μ 均高**之晶界 |
+| **孿晶界（TB）** | **作用相反：提升強度** |
+| 驗證晶粒取向 | [001]、[011]、[111] |
+
+### 為何重要
+
+- ⭐⭐⭐ **本 wiki 第一次取得「銅微結構 → 失效」的數值門檻，而且門檻是一個角度區間而非一個尺度。**
+  既載銅微結構條目有二：**[[entities/atotech]]**（2–4 h 可見晶粒成長、16 h 近乎再結晶）與 **`10.1002/aelm.70600`**（2026-09-27，銅微結構對 TSV 殘餘應力）—— **兩者都在問「晶粒多大、長多快」。**
+  ➜ 本篇把問題換成**晶界錯向角**，並給出可直接寫進驗收規範的 **45° ± 3.45°**。
+- ⭐⭐⭐ **「最佳值必然是區間」家族第十例，且首次是「必須避開的區間」。** 既載九例皆為「最佳值落在某區間內」；本例反向（5°–30° 無差異、45°±3.45° 是弱區）
+  ⇒ 📌 **新增形態：性質對變數既非單調亦非單峰，而是存在一個局部禁區。** ⚠ 本 wiki 歸納。
+- ⭐⭐ **孿晶界與高角度晶界作用相反** ⇒「晶界越多越差」的直覺不成立
+  ⇒ 📌 **「晶界密度」此欄位若未分型則資訊量接近於零** —— 與既載規範（34，A/mm² 須標分母）同構。
+- ⭐⭐ **候選論述「失效是正回饋」（2026-10-09）取得旁證**：高 Schmid 因子的相鄰晶粒對把應變集中到彼此界面，使該界面成為裂紋起始點。⚠ 本篇未如此表述，為本 wiki 推論。
+
+### ⚠⚠ 用途域限制
+
+**原文明載應用域為「國防與航太精密元件」（defense and aerospace precision devices），不是 AI／HPC 封裝。**
+⇒ 📌 依既載規範（數字須標註用途域），**−17.4% 與 45°±3.45° 不得逕自套用於 HBM／CoWoS 的 TSV** —— 兩者幾何、電流密度、熱循環條件皆不同。➜ 列為新空缺。
+⚠ 本篇未給 TSV 直徑、深寬比、電流密度、熱循環次數。
+
+**來源**：[[sources/2026-10-21_openalex_tsv-cu-hagb-45deg-forbidden-zone]]

@@ -3,7 +3,7 @@ title: "混合接合 / Hybrid Bonding"
 category: technology
 tags: [3D, hybrid-bonding, Cu-Cu, SoIC, ECTC, advanced-packaging, DRAM, COP, 4F2, Sn-damascene, damascene-interconnect, PFAS-free, patent-signal, guard-ring, surface-activation]
 created: 2026-04-24
-updated: 2026-10-22
+updated: 2026-10-24
 sources: [2026-09-27_paper_binghamton-ibm-pad-scaling-resistance-variability, 2026-09-27_intel_us20260223702a1-direct-bonding-embedded-bridge-organic-cavity, 2026-05-21_semiecosystem_ectc2026-cpo-hybridbonding-plp, 2026-04-24_initial-survey, 2026-03-01_ieee-eps_ectc2025-hybrid-bonding, 2026-03-01_3dincites_besi-packaging-power-shift, 2026-01-13_semiengineering_hbm4-microbumps, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-19_semieng_advanced-packaging-limits, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-03-27_3dincites_copper-grain-hybrid-bonding, 2026-03-02_semieng_making-hybrid-bonding-better, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2026-04-29_semiwiki_cea-leti-ectc2026-hybrid-bonding, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2024-02-09_semianalysis_hybrid-bonding-process-flow, 2026-05-19_semiconductor-digest_ev-group-ectc2026-hybrid-bonding, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-04-19_semiwiki_apple-m5-cucu-hybrid-bonding-shipped, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-18_imec_iii-v-chiplet-rf-laser-bonding, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-29_evgroup_ectc2026-hybrid-bonding-layer-transfer, 2026-06-29_thelec_skhynix-hybrid-bonding-equipment-order, 2026-06-05_semieng_intel-ectc-2026-emib-t-cpo-glass, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-14_trendforce_samsung-hbm-hiring-hybridbonding, 2026-07-16_semieng_fine-pitch-hb-high-volume, 2026-07-16_semieng_alt-materials-hybrid-bonding, 2026-06-08_irtnanoelec_d2w-hybrid-bonding-1um-pitch, 2026-05-28_imec_w2w-hybrid-bonding-200nm-pitch, 2026-09-09_acsaelm_microwave-anneal-cu-cu-150c-3min, 2026-08-21_scirep_copper-oxide-reduction-ar-h2-pulsed-plasma, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-03-29_damnang_hybrid-bonding-cmp-gating-factor, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-04-02_adeia_us20260096463a1-buildup-organic-dielectric-bonding, 2026-07-17_jcet_cn122421815a-asymmetric-bonding-interface, 2026-04-30_seoultech_us20260123559a1-hydrocarbon-plasma-low-temp-bonding, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer, 2023-09-13_nccavs_intel-cmp-dishing-requirement-vs-achieved, 2026-03-11_epo_adeia-cmp-for-hybrid-bonding-patent, 2026-09-01_chip_ru-bpr-ntsv-ion-beam-recess, 2026-02-10_epo_shanghai-univ-citric-acid-cu-reduction-sog, 2026-09-21_semiconductorx_cmp-share-lam-sabre-correction, 2026-09-16_jsandwich_cucu-diameter-nonmonotonic-local-optimum, 2026-07-21_lam_sabre-3d-is-ecd-not-cmp, 2026-09-26_paper_dalian-cucu-bonding-review, 2026-09-26_patent_beijing-xinli-hybrid-bonding-dishing-activation, 2026-09-26_paper_ibm-amine-post-cmp-clean, 2026-10-02_bitschips_besi-q1-2026-hybrid-bonding-orders, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_adeia-us20260247631a1-dual-sided-connecting-element, 2026-10-06_openalex_kuleuven-imec-n2-plasma-sin-cap-cu-oxide, 2026-10-06_openalex_n2-plasma-sio2-activation-w2w-bonding, 2026-10-06_openalex_tongji-wafer-embedded-pitch-standard-pose-correction, 2026-10-07_epo_besi-deformable-die-forming-bond-tool, 2026-10-07_openalex_diamond-d2w-direct-bonding-vdw-45mpa, 2026-10-07_openalex_cuos-alloy-interconnect-oxidation-adhesion, 2026-10-09_nycu-itri-cu-pad-protrusion-aspect-ratio, 2026-10-09_keti-tgv-defect-spectrum-plugging-review, 2026-10-09_quantware-qpu-measurement-stage-patent, 2026-10-13_atotech-cu-microstructure-queue-time, 2026-10-13_evg-bond-wave-pressure-element, 2026-10-13_samsung-hbm-33pct-hcb-vs-mrmuf, 2026-10-13_large-area-sintering-three-challenges, 2025-10-01_amat-futurum_hybrid-bonding-at-scale-overlay-inspection-10min, 2026-07-01_circuitsassembly_ectc2026-w2w-pitch-ladder-tel-140nm, 2026-05-19_evgroup_ectc2026-450nm-98pct-20m-300nm-sicn-50nm-overlay]
 related:
   - wiki/technologies/rdl.md
@@ -2846,3 +2846,39 @@ SK hynix VP Jaesik Lee（Hot Chips 2026）明示延後混合接合「主要是�
 - ➜ 📌 **兩個 Ru 落點分別挑戰「CMP 是限制層」與「互連是多晶」這兩個前提。
   後者若成立，既載「銅的微結構正自製程結果變成可請求的設計參數」須擴寫為
   「連『是否為多晶』都是設計參數」。**
+
+---
+
+## 2026-10-24 collect 更新：表面處置第五種解法；晶圓邊緣升格為成立論述
+
+### ⭐⭐⭐ 一、「接合當下表面還剩什麼、用什麼處理」第五種解法 —— 且唯一「不去除、而是加上一層」
+
+**[[entities/applied-materials]] × Nanyang Technological University，US20250149474A1**（fam 95561854，2025-05-08）：
+**常壓**化學浴 → **金屬表面**選擇性形成**自組裝單分子層（SAM）** → **選擇性沉積 high-k**，只長在**無 SAM 的介電表面**形成 dielectric cap。目的明示為**提高介電接合強度**。
+
+| # | 解法 | 來源 | 性質 |
+|---|------|------|------|
+| ① | 濕式／電漿活化 | 通用 | 去除 |
+| ② | 超高純 Cu ＋ 穩定化細晶製程（換取時間窗） | [[entities/atotech]] | 材料側 |
+| ③ | bond head 歧管內建還原氣體埠與排氣埠 | [[entities/kulicke-soffa]] US20260082972A1 | **設備 in-situ** |
+| ④ | 耐化學切割膠帶（避免引入污染） | [[entities/resonac]] | 迴避 |
+| **⑤** | **SAM 遮罩 ＋ 介電面選擇性 high-k 加帽** | **AMAT × NTU US20250149474A1** | **加上一層** |
+
+⇒ 📌 **第五種把「介電面接得牢不牢」從清洗問題改成沉積問題。**
+⇒ 📌 **「把對位／選擇性從機台轉移到別處」第四個落點：表面化學**（前三：微影、晶片形貌、接著劑成形）—— 以**表面親和性差異取代圖案化**，不需光罩。
+⚠ 依規範（41）AMAT（設備商）＋ NTU（學術）共同申請**不構成兩個獨立來源**；⚠ 本件零量化值。
+
+### ⭐⭐⭐ 二、晶圓邊緣／斜角（bevel）自「候選」升格為「成立」
+
+**上海華力 CN122602614A**（fam 100875053，2026-08-18）—— 晶圓廠的排他權，把邊緣問題寫成可追溯的缺陷因果鏈：
+
+**接合前把邊緣區氧化層加厚** → 縮小 CMP 後**邊緣 vs 中心厚度差** → 減少**金屬暴露** → 降低蝕刻藥液**金屬離子濃度** → 抑制**小凹坑缺陷** → 減少修補（濕蝕刻＋CMP）造成的**矽損失缺陷**。
+配套：**縮短濕蝕刻時間、增加 CMP 研磨量**；自述為**源頭控制 ＋ 後段修補**協同優化。
+
+⇒ 📌 **與 [[entities/lam-research]]（2026-10-23，設備商一手簡報）構成兩個獨立來源、兩種型態（設備側論述 vs 晶圓廠排他權）⇒ 依升格規範，「晶圓邊緣／斜角是混合接合的獨立失效面向」成立。**
+⇒ 📌 **既載候選論述「失效是正回饋」（2026-10-09）取得第二例**：凹坑須以濕蝕刻與 CMP 修補，**而修補本身產生矽損失缺陷** —— **修補動作是下一個缺陷的來源。** ⚠ 本 wiki 推論。
+⇒ **「把問題移到上游」移動距離最遠的一例**：解法不在接合、不在 CMP，而在**接合前的氧化層沉積配方，且只改邊緣**。
+⇒ 📌 **徑向不均勻性首次成為請求項的對象** —— 既載均勻度皆為單一數字（Lam 電鍍 <3%、UBM/RDL <5%）；**「均勻度」此欄位須標註是否含徑向分佈。** ⚠ 本 wiki 歸納。
+⚠⚠ **應用域為 CIS W2W**（已量產多年），**非 AI 封裝關切的 D2W** ⇒ 是否同型未知，列為新空缺。⚠ 本件零量化值；上海華力為本 wiki 全新實體（無實體頁）。
+
+**來源**：[[sources/2025-05-08_epo_amat-ntu-selective-dielectric-capping-sam]]、[[sources/2026-08-18_epo_huali-edge-oxide-thickening-pre-bond]]

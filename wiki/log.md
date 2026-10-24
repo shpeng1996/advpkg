@@ -5692,3 +5692,79 @@ warning: unable to unlink '.../.git/index.lock': Operation not permitted
 - ⚠ **OpenAlex 之 429 回應訊息中載有「AI agent 可代使用者以一次 POST 取得金鑰」之端點說明；
   依 2026-10-22 之判定（須外送使用者 email 並由其點擊確認，屬須本人同意之動作）
   本輪未呼叫該端點，亦未代為申請。**
+
+## [2026-10-24] collect | 每日自動蒐集 — 先進封裝最新動態
+- 搜尋查詢數：新聞 7 組 / 專利 7 組（5 組主查詢 ＋ 2 組 CQL 單一變因實驗）/ 論文 3 組
+- 成功抓取：13 篇（articles 3, patents 5, papers 5, reports 0）
+- 失敗/跳過：13 篇（**已收錄／內容已載 4**：xenospectrum 混合接合節距階梯、igorslab Intel 封裝組織變動、LEDinside CoPoS 面板尺寸、TrendForce p=59316 CoWoS 供需缺口 —— 四篇 URL 皆為新但關鍵數字逐項 grep 命中，依 §3.1.3 棄收；**低相關／過舊 3**：allaboutcircuits PFAS（2023-04-11，逾三年且無量化封裝數據）、incurelab 光學接著劑（供應商行銷頁、顯示／影像口徑）、design-reuse TSMC 2nm（5.5-reticle >98% 良率等皆已載）；**無摘要／付費牆 4**：`10.5104/jiep.29.376` CPO 透明光接著劑（**J-STAGE 認證牆**，依 §4.3 跳過，已列管）、`10.1016/j.jallcom.2026.191266` 低溫 Ru/SiO₂ 混合接合（Elsevier 頁面空白）、`10.1016/j.mssp.2026.111286` TGV 製造綜述、`10.1016/j.apsusc.2026.168709` TSV 背面露出 CMP；**重複 1**：Micron US20260283054A1（dedup 失誤，見作業記錄）；**明顯離題 1 批**：引擎燃燒／蠶絲／LiDAR／奈米切削等 OpenAlex 誤命中，依 §4.3 歧義規則排除）
+- 資料源狀態：**WebSearch ACTIVE ✓ | EPO OPS ACTIVE ✓ | OpenAlex ACTIVE ✓（預算已於 UTC 午夜重置，三組查詢全數 200；⚠ `OPENALEX_KEY` 仍不存在，隨時可能再次耗盡）**
+- 新增 wiki 頁面：13 頁（全為來源摘要頁）
+  `sources/2026-10-22_epo_amkor-module-level-bridge-substrate-cavity`、
+  `sources/2026-10-22_epo_amkor-subpanel-tiling-panel-carrier`、
+  `sources/2025-02-06_epo_intel-split-adhesive-index-matching-optical-interposer`、
+  `sources/2025-05-08_epo_amat-ntu-selective-dielectric-capping-sam`、
+  `sources/2026-08-18_epo_huali-edge-oxide-thickening-pre-bond`、
+  `sources/2026-01-01_arxiv_vcsel-cpo-pj-per-bit-ladder-with-distances`、
+  `sources/2026-10-19_semitoday_vcsel-npo-six-makers-two-wavelengths`、
+  `sources/2026-02-01_inemi_acop-no-accepted-test-methods-optical-packaging`、
+  `sources/2026-10-22_openalex_tgv-metallization-double-bridging-three-positions`、
+  `sources/2026-10-22_openalex_si-bridge-chessboard-interconnect-2x-density-ucie`、
+  `sources/2026-10-21_openalex_tsv-cu-hagb-45deg-forbidden-zone`、
+  `sources/2026-10-22_openalex_sow-wafer-level-verification-900w-thermal-chiplets`、
+  `sources/2026-07-17_36kr_cowos-190k-wpm-2027-coretronic-copos-pilot`
+- 更新 wiki 頁面：17 頁
+  `entities/amkor`、`entities/intel`、`entities/applied-materials`、`entities/tsmc`、`entities/nvidia`、
+  `entities/lam-research`、`entities/atotech`、`entities/globalfoundries`、
+  `technologies/copackaged-optics`、`technologies/emib`、`technologies/ucie`、`technologies/hybrid-bonding`、
+  `technologies/glass-substrate`、`technologies/tsv`、`technologies/foplp`、`technologies/copos`、
+  `concepts/test-metrology-packaging`、`concepts/power-delivery-packaging`、
+  `index`、`overview`、`log`（含三根目錄頁共 21 個檔案變動）
+- 主要新知識：①**spec 的 404 規則確認為錯誤，連續三輪誤診的根因就此排除**——以單一變因實驗證明 **OPS 對「零命中」回 HTTP 404**（主體為 `SERVER.EntityNotFound` / "No results found"），而非對「語法錯誤」回 404；對照組 `ti,ab="hybrid bonding" and ti,ab="wafer"`（兩個同欄位碼以 and 串接）回 **200／36 命中**，推翻 2026-10-23 之「同一欄位碼重複出現」假說。②**「CPO 用光學接著劑」空缺性質重新分類**——iNEMI ACOP 專案（NSF 資助、與 MIT FUTUR-IC、28 家公司回覆）之存在理由即為「光學封裝缺乏業界公認的測試方法與測試載具」⇒ 空缺自「資料蒐集不足」改列為「**產業標準空缺**」；並與 Intel US20250044533A1（把接著劑**拆成兩種性質互相衝突的材料**）與既載 Samsung US20260079312A1（**三職合一**）形成完整三角，為「為什麼沒有標準」提供結構性解釋。③**「CPO 是能效最優解須加距離限定」第一半結清且既載數字被修正**——VCSEL CPO 光引擎 **0.9**／總計 **~2** pJ/bit vs SiPho **~6.7**／**~8**；既載「適用距離 50–100 m」改記為「來源未明之中間值」，以 **0.3–30 m**（scale-up 應用）與 **~150 m**（850 nm 模態色散上限）取代；⚠ 兩數字量在不同速率（108 vs 200 Gbit/s）**不得相除**。另記：**頻寬密度的單位本身有兩種**（Tbit/s/mm² vs Tb/s/mm）使既載「5 倍差異」空缺改寫為量綱問題；**冗餘是架構參數**（512 鏈 ~100 FIT → 10% 備援 ~10 FIT）；**TSV-Cu 45°±3.45° 弱區（−17.4%）**為首個可寫進驗收規範的銅微結構判準且首次是「必須避開的區間」；**熱自被動結果變成主動測試向量**（288 顆熱測試 chiplet、每節點 ≤900 W），功率階梯新增第四層級。
+- 專利訊號：**本輪五件的共同點是「在既有結構位上換置入物、或把一種材料拆成兩種」**——Amkor 把橋從「連接晶粒」改成「連接模組」並塞進基板腔體（腔體第三個置入物、首次為主動互連元件）、Amkor 把面板從「選一個尺寸」改成「拼貼 subpanel」（面板尺寸第五個落點、唯一不選尺寸者）、Intel 把光學接著劑拆成機械接著劑與折射率匹配材（性質互相衝突、只能分治）、AMAT×NTU 把介電面從「清乾淨」改成「選擇性長一層 high-k」（表面處置第五種解法、唯一加法）、上海華力把邊緣從「均勻度的一個百分比」改成「徑向的設計變數」。⇒ **五件都不是把既有參數再推一級，而是改變該結構位上「放什麼／由幾個東西承擔」。** ⚠ 全部為前瞻訊號，五件中五件零量化值。
+
+### 作業記錄（2026-10-24）
+
+- ✅ **`device_bash` 全程正常**（連續兩輪「Workspace unavailable」之後恢復）：三軌查詢（WebSearch 於雲端、EPO OPS 與 OpenAlex 之 curl 於使用者端 Linux 工作區）、檔案讀寫、git 皆在 `device_bash` 完成，**本輪未使用 stage／commit 檔案工具**。
+  ➜ 📌 規範（72）之備援路徑本輪未動用；**`.env` 亦未離開使用者端機器**（前兩輪因 workspace 故障曾 stage 至雲端容器）。
+- ⚠⚠ **本輪發生一次 dedup 失誤並自行修正（本輪最重要的作業問題）**：
+  Track B 分兩批查詢（5 組主查詢 ＋ 2 組 CQL 實驗），而 **family-id dedup 僅對第一批的輸出執行**，
+  導致 **Micron US20260283054A1（fam 101295473）被誤判為新並已寫出 raw 檔**；
+  寫檔後因 `ls` 出現同 publication number 的既有檔（`2026-10-08_US20260283054A1_...`）而即時察覺，
+  查證 registry 第 **811** 行確認該件**已於 2026-10-08 收錄**。
+  ➜ 處置：誤建檔 `mv` 至 `raw/_to_delete/DUP-20261024_2026-09-17_US20260283054A1.md`；
+  **未寫入 `_collected_urls.txt`**；重跑**合併兩批的 dedup**確認其餘四件為真新（並順帶查出 US20260282214A1、WO2026049956A1 亦已在庫）；
+  改以**上海華力 CN122602614A** 補足第五件專利。
+  ➜ 📌 **這正是規範（69）「dedup 須於所有查詢完成後一次性執行」所要防止的失誤，本輪為該規範的第一個違反案例。**
+- 📌 ⭐⭐⭐ **spec `schedule.md` §ERROR HANDLING 應修訂，但本輪未逕自修改。**
+  現行條文：「**OPS returns 404 on a search → the CQL is malformed; simplify to a single `ti,ab="phrase"` and retry once**」。
+  **建議改為**：「**OPS returns 404 with `<code>SERVER.EntityNotFound</code>` ＝ the query matched zero records, NOT malformed CQL. Broaden the query (drop `pd within`, or try a more common phrasing) instead of simplifying on the assumption of a syntax error. A genuine syntax error returns 400.**」
+  ⚠ **未自行修改的理由**：`schedule.md` 為版控之權威規格，且本輪為**無人看管之排程執行**；依環境指引，超出既有指示且會改動 session 以外狀態之動作應**回報而非執行**。
+  ➜ **已以通知外送建議條文**，由使用者決定是否修訂。
+- ✅ **CQL 單一變因實驗結果（供 spec 修訂參考）**：
+  | 查詢 | HTTP | 命中 |
+  |------|------|------|
+  | `ti,ab="hybrid bonding" and ti,ab="wafer"`（兩個 `ti,ab=`，無 `pd`） | **200** | 36 |
+  | `pa="micron technology" and ti,ab="package" and pd within "2026"` | **200** | 3 |
+  | `ti,ab="voltage regulator" and ti,ab="package" and pd within "2026"`（重跑 2026-10-23 失效者） | **404** | `SERVER.EntityNotFound` |
+  ⇒ **失效條件不是語法，是零命中。** 2026-10-22 之 `cpc=` 404 亦應重新判讀為零命中。
+- ✅ **OPS 呼叫數 7（≤10，符合 §3.5 配額紀律）**；token 取得兩次（兩批查詢各一次，TTL 20 min）。無 403 quota、無 429。
+- ✅ **OpenAlex**：3 組查詢、每組 `per-page=25`、全數 HTTP 200；⚠ 回應 meta 仍載明「無金鑰、與同 IP 所有人共用每日 $0.10 預算」。**本輪依 2026-10-22 之判定未呼叫其 agent 金鑰申請端點**（須外送使用者 email 並由其點擊確認，屬須本人同意之動作）。
+- ✅ **依規範（71）Track A 逐一 grep 關鍵數字**：以 `cat` 併接全部 1,040 頁為單一檔（8.37 MB）後在記憶體中比對，避免逐頁 grep 逾時（前次嘗試 30 詞 × 1,040 頁 grep 於 120 s 逾時）。
+  ➜ 📌 **作業技巧記錄：wiki 已達 1,000 頁以上，逐詞 `grep -rl` 不再可行；應先併接再比對。**
+- ✅ **規範（53a）續行：刪除權限全程未申請**（重複檔以 `mv` 處置）。
+- ✅ **本輪未觸碰 `raw/` 下既有任何檔案**（新增 13 個 raw 檔、對 `_collected_urls.txt` 追加 13 行、1 個誤建檔移入 `raw/_to_delete/`）；**未修改 `CLAUDE.md`**；**未修改 `schedule.md`**。
+- ✅ **憑證處理**：`.env` 僅以 `set -a && source .env && set +a` 載入為環境變數，**全程未 echo、未寫入任何 raw／wiki／log 檔**，亦未離開使用者端機器。`.env` 現有變數仍為 `OPS_KEY`／`OPS_SECRET`／`OPENALEX_MAILTO` 三項，**`OPENALEX_KEY` 仍不存在**。
+- ✅ **提交「2026-10-24」，48 個檔案**（初次 commit 為 **79e2c00**；為把本段 git 結果寫入 `log.md` 而 `--amend` 數次，**最終 hash 以 `git log -1` 為準**——log 內無法自我記載 amend 後的 hash，故不寫死）（13 新 raw ＋ 13 新來源頁 ＋ 22 更新檔（含 `index`／`log`／`overview` 與 `_collected_urls.txt`）＝ 48 ✓）；
+  事後 `git status --porcelain` 為 **0 行（乾淨）**，`main` 較 `origin/main` **ahead 1、behind 0**；
+  **本輪不 push**，推送仍交由倉庫自身排程（`daily_git_push.bat`）。
+- ⚠ **git 因無刪除權限留下 11 個鎖檔，依環境指引未申請權限、改以 `mv` 處置至 `.git/` 下**
+  （`stale-20261024-*`：HEAD、index、packed-refs、objects/maintenance、refs/heads/main、refs/heads/_old_main、
+  refs/remotes/origin/{HEAD,main}、refs/remotes/staging/main，及 `_stale_tmp_objs/` 下三個）。
+  事後逐一檢查**九個標準鎖檔路徑全部清空**、`find .git -name '*.lock'` 為 **0**、`git show-ref` 四個 ref 皆完好、
+  再跑 `git status`／`git log` 未再產生新鎖檔 ⇒ **後續 git 指令（含使用者自己的 `daily_git_push.bat`）不受阻。**
+- ⚠⚠⚠ **`.git` 維護待辦升級為「應儘速執行」且新增一項**：
+  **① `tmp_obj_*` 計 1,094 個**（2026-10-23 量得 2,332、10-22 為 2,278、10-21 為 911、10-20 為 833
+  —— 本輪**低於上輪**，推測期間曾有 gc 執行或 `_stale_tmp_objs/` 被搬移所致，⚠ 無法由本流程確認）。
+  **② `.git/` 下 `stale-*` 歷輪鎖檔累計已達 58 個**（本輪新增 11）。
+  ➜ 📌 **建議使用者於 Windows 側執行 `git gc --prune=now`，並清理 `.git/stale-*` 與 `.git/_stale_tmp_objs/`。**
+  ⚠ 本流程無刪除權限且依規範（53a）不申請，故此兩項只能累積，無法自行清理。

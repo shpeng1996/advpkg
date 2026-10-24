@@ -3,7 +3,7 @@ title: "NVIDIA Corporation"
 category: entity
 tags: [fabless, GPU, AI-accelerator, HBM4, CoWoS, SoIC, Rubin, Feynman, NVL576, CPO, Spectrum-X, Constellation]
 created: 2026-05-03
-updated: 2026-10-23
+updated: 2026-10-24
 sources: [2026-08-11_nvidia_800vdc-row-power-center-2mw, 2026-09-25_biggo_nvidia-glass-schmid-three-panel-standards, 2026-05-24_techtimes_nvidia-computex2026-cowos, 2026-04-01_trendforce_nvidia-rubin-ultra-dual-die, 2026-03-18_trendforce_nvidia-rubin-feynman-soic, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-03-17_trendforce_gtc2026-key-takeaways, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-06_trendforce_google-tpu-cautious-adoption-nvidia, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-06-01_trendforce_nvidia-vera-rubin-tsmc-20pct-revenue, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-19_techtimes_vera-rubin-hbm4-suppliers, 2026-06-14_digitaltrends_tsmc-copos-glass-temporary-carrier, 2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b, 2026-07-27_trendforce_presscenter_cpo-switches-nvidia-broadcom-coupe, 2026-10-02_trendforce_nvidia-glass-substrate-2028-taiwan, 2026-10-02_trendforce_cowos-l-mainstream-through-2028]
 related:
   - wiki/entities/tsmc.md
@@ -363,3 +363,15 @@ GTC 2026 發表之**四運算晶粒** Rubin Ultra **據報取消**，量產版�
 ⇒ 本條就該項計為**第二個獨立來源**，新事實為**三個面板標準並存**與基材端尺寸。
 
 來源：[[sources/2026-09-25_biggo_nvidia-glass-schmid-three-panel-standards]]
+
+---
+
+## 2026-10-24 collect 更新：CoWoS 產能的客戶集中度首次入庫
+
+- ⭐⭐ **NVIDIA 鎖定 TSMC 2026 年 CoWoS 總產能的 >50%**（⚠ 二手，Morgan Stanley／Mizuho 推算經 36Kr 轉述）。
+  既載有「Vera Rubin ~70% HBM 份額」與「供應承諾 $279B」，但**CoWoS 產能側的單一客戶集中度此前空白** ⇒ 新增。
+- **Feynman** 預計為 CoPoS 首批採用產品之一（⚠ 二手；與既載 TrendForce「Feynman 為首個 CoPoS 客戶、2028–2029 全面量產」一致 ⇒ **兩個獨立來源同指**）。
+- ⭐ **銅纜對照數字（本輪 arXiv 2601.14342）**：**NVL72 機櫃使用 >5,000 條被動銅纜、總長 3.2 km、截面 1.5 mm²** —— 本 wiki 首個機櫃級銅纜用量數字，為「銅→光替換」論述的分母。
+- ⭐ **NVIDIA／Broadcom SiPho CPO 能效首次入庫**：**光引擎 ~6.7 pJ/bit、總計 ~8 pJ/bit @200 Gbit/s/lane**（⚠ 預印本彙整，非一手）。
+
+**來源**：[[sources/2026-07-17_36kr_cowos-190k-wpm-2027-coretronic-copos-pilot]]、[[sources/2026-01-01_arxiv_vcsel-cpo-pj-per-bit-ladder-with-distances]]

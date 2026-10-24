@@ -3,7 +3,7 @@ title: "EMIB — Embedded Multi-Die Interconnect Bridge"
 category: technology
 tags: [Intel, 2.5D, silicon-bridge, chiplet, HBM4, Foveros, glass-substrate, EMIB-T, EMIB-M, silicon-capacitors, power-delivery, HLFF, encapsulation, underfill]
 created: 2026-05-03
-updated: 2026-10-15
+updated: 2026-10-24
 sources: [2026-09-27_intel_us20260223702a1-direct-bonding-embedded-bridge-organic-cavity, 2026-09-27_intel_cn122270166a-stacked-glass-silicon-bridge-assembly-ar20, 2026-09-27_samsung_us20260144093a1-bridge-on-tgv-mold-fixed, 2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-03-05_trendforce_intel-emib-billions, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-03-03_trendforce_intel-clearwater-forest, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks, 2026-06-21_convergedigest_intel-emib-t-multi-die-packaging, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap, 2026-06-05_semieng_intel-ectc-2026-emib-t-cpo-glass, 2026-01-30_tomshardware_intel-ai-chip-test-vehicle-emib-t, 2026-08-04_semieng_from-blueprint-intel-hlff, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_patent_zhuhai-tiancheng-dual-depth-tsv-silicon-bridge, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-09-30_epo_intel-us20260191037a1-localized-embedded-bridge-in-core, 2026-09-30_intel_us-advanced-packaging-reticle-8x-12x-fab9, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_amd-us20260282956a1-silicon-bridge-decap, 2026-10-02_epo_adeia-us20260247631a1-dual-sided-connecting-element, 2026-10-02_epo_shanghai-xianfeng-cn122622683a-glass-interposer-bridge, 2026-10-02_trendforce_cowos-l-mainstream-through-2028, 2026-10-06_epo_intel-bridge-chiplet-shield-dummy-die, 2026-10-06_epo_intel-mold-extension-package-to-package-topside-bridge, 2026-10-06_intel_clearwater-forest-no-glass-foveros-9um-3um-emib-45um, 2026-10-07_openalex_lau-silicon-bridge-microbump-reliability, 2026-10-07_openalex_amkor-kelly-three-interposer-routes]
 related:
   - wiki/entities/intel.md
@@ -1158,3 +1158,43 @@ Amkor **TW202614417A**（family 57129884）主張高佈線密度「補片」接�
 ➜ ⭐⭐ **橋／補片軸首見絕對厚度數字（≤10 µm）**；且請求項把**補片與矽中介體寫成可並存**，與既載 ASE 吳田玉「CoWoS 與 EMIB 不互斥」同向。
 ➜ ⚠ family 57129884 為較早家族之延續案，**不得視為 2026 年新發明**（規範 54）。
 見 [[sources/2026-10-15_amkor-slim-patch-tsv-free-bridge-third-carrier]]。
+
+---
+
+## 2026-10-24 collect 更新：橋的維度一次新增兩個，一個是層級，一個是屏蔽拓撲
+
+### ⭐⭐⭐ 一、橋所連接的對象層級（晶粒 vs 模組）—— Amkor US20260334253A1
+
+本 wiki 既載所有橋（EMIB、EMIB-T、CoWoS-L LSI、Deca 模封免孔橋、SEMCO 有機橋、Apple 空氣間隙橋、Tenstorrent 離散節距轉接）**連接的對象一律是晶粒**。
+
+[[entities/amkor]] **US20260334253A1**（fam 101672543，2026-10-22）首次出現：
+- 模組**內**的 bridge die 連接相鄰晶粒（既有用法）；
+- **第二個 bridge die 同時接基板、第一模組與第二模組**，使**兩個已封裝模組之間**跨橋通訊；
+- **第二個橋置於基板腔體內**，**RDL 覆蓋基板並蓋住該腔體**；
+- **兩個層級的橋在同一封裝中並存。**
+
+⇒ 📌 **橋成為遞迴結構（橋之上還有橋）。** 既載「橋的維度」軸新增第十九維：**連接對象的層級**。
+⇒ 📌 **「基板／核心層的腔體是通用結構位」第三個置入物，且首次為主動互連元件**（前兩例：Shinko 置入元件、Intel 玻璃核心同軸電感）。
+⇒ **「局部高密度橋補救載體密度上限」第五型載體**：有機基板腔體 ＋ 上覆 RDL。
+⚠ **本件零量化值**（無節距、橋尺寸、跨距、層數、頻寬）；依專利訊號原則不得述為 Amkor 已量產形態。
+
+### ⭐⭐⭐ 二、屏蔽拓撲 —— 橋能走多少線不只由製程決定
+
+**`10.5573/jsts.2026.26.5.390`**（JSTS, 2026-10-22，⚠ **純模擬、無實測**）：
+**棋盤式佈線（CPI, chessboard patterned interconnect）** 對矽橋 die-to-die 互連，對標 **UCIe**：
+
+| 項目 | 結果 |
+|------|------|
+| CPI 佈線密度 vs 全屏蔽 FS S1G1 | **2×** |
+| UCIe 符合性 | **整體符合，唯一例外：高速下的 VTF 串音** |
+| 該例外歸因 | **對角線方向的干擾源** |
+| 對照組 FS SnG1 | **不符串音規格**（屏蔽不足） |
+| 緩解 | 加寬接地線；**選擇性把對角線上的訊號線改為接地** |
+
+⇒ 📌 **既載十八個橋維度皆為結構性；本篇是第一個純電性／版圖維度** —— 訊號線與地線在橋內的**平面排列方式**。
+⇒ 📌 **「橋能走多少線」此前在本 wiki 只由製程（L/S、層數）決定；本篇顯示它同時由屏蔽拓撲決定，且兩者可互換 —— 以屏蔽密度換佈線密度（2×）。** ⚠ 本 wiki 歸納。
+⇒ **「把設計移到規格較鬆的區間」第八例，但方向相反**：既載七例皆為放寬；本例**整體收緊＋局部例外**（先接受對角串音超規，再以選擇性地線化補回）。
+⇒ **對角線方向成為獨立的失效方向**（既載「周界／邊緣是獨立失效面向」處理面內邊界；本篇為**面內方向性**）。
+⚠⚠ **不可與量產矽橋數字並列比較**：既載 EMIB 55→45 µm、EMIB-T 45→35→25 µm 皆為量產或展示值；**「2×」為相對量，無基線不可換算絕對值。**
+
+**來源**：[[sources/2026-10-22_epo_amkor-module-level-bridge-substrate-cavity]]、[[sources/2026-10-22_openalex_si-bridge-chessboard-interconnect-2x-density-ucie]]

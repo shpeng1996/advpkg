@@ -3,7 +3,7 @@ title: "UCIe — Universal Chiplet Interconnect Express"
 category: technology
 tags: [standards, chiplet, interconnect, UCIe, 3D, hybrid-bonding, UCIe-3.0]
 created: 2026-04-24
-updated: 2026-10-21
+updated: 2026-10-24
 sources: [2026-08-24_intel-newsroom_hot-chips-2026-diamond-rapids-foveros-ucie, 2026-04-24_initial-survey, 2026-04-01_semiengineering_chiplets-2026, 2025-01-28_3dincites_iftle-618-ucie-standard-vs-ucie3, 2025-01-01_semieng_ucie-1-6t-io-chiplets-ai-datacenter, 2025-09-03_uciexpress_ucie30-spec, 2026-03-05_uciexpress_chiplet-summit-2026, 2026-02-12_semieng_ucie3-technical-deepdive, 2026-10-06_epo_tenstorrent-discrete-pitch-adapter-substrates]
 related:
   - wiki/technologies/hybrid-bonding.md
@@ -458,3 +458,21 @@ Siemens（2026-02-05）：銅負責封裝內通訊，光學負責封裝對封裝
 - ⚠ 本件日期 2026-02-18（Chiplet Summit 當週），距今八個月；
   **UCIe 3.0 之後續正式發布狀態本 wiki 無資料** ⇒ 列追蹤。
 - ⚠ 全篇為轉述，無 Das Sharma 的逐字引語（除 "wider, not faster"）。
+
+---
+
+## 2026-10-24 collect 更新：「符合 UCIe」首次以「哪一項先失效」的形式出現
+
+**`10.5573/jsts.2026.26.5.390`**（JSTS, 2026-10-22，⚠ 電磁與時域模擬、無實測、無絕對值）：
+
+- 以**棋盤式佈線（CPI）**取代全屏蔽 S1G1，在矽橋 die-to-die 互連上達 **2× 佈線密度**；
+- **整體符合 UCIe 規格，唯一例外是高速操作下的 VTF 串音**，歸因於**對角線方向的干擾源**；
+- 對照組 **FS SnG1 不符串音規格**（屏蔽不足）；
+- 緩解手段：加寬接地線、**選擇性把對角線訊號線改為接地**（降串音且保留密度優勢）。
+- 評估指標：S 參數、**PSNEXT／PSFEXT**（power-sum 串音）、**VTF 損耗與串音**、眼圖、BER。
+
+⇒ 📌 **本 wiki 既載 UCIe 條目皆為版本演進與頻寬／功耗（含 UCIe 3.0 wider-not-faster）；本篇首次指出在密度優先的橋設計下，第一個撞到的規格項是 VTF 串音，而非損耗或 BER。**
+➜ 📌 與既載「**同一名詞涵蓋多個獨立驗收項**」家族同型：**「符合 UCIe」須標註是哪幾項、在什麼速率下** —— 單說「符合 UCIe」資訊量不足。
+⚠ 本篇無線寬／線距、層數、資料率（GT/s）、dB 值、節距 ⇒ 不得與任何廠商的量產橋數字比較。
+
+**來源**：[[sources/2026-10-22_openalex_si-bridge-chessboard-interconnect-2x-density-ucie]]

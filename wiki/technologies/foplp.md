@@ -3,7 +3,7 @@ title: "FOPLP — 扇出面板級封裝 / Fan-Out Panel-Level Packaging"
 category: technology
 tags: [fan-out, panel-level, TSMC, Samsung, ASE, Powertech, Innolux, CoPoS, InFO, cost-reduction, delamination, DCB, CTE]
 created: 2026-05-03
-updated: 2026-10-21
+updated: 2026-10-24
 sources: [2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-07-31_trendforce_ase-capex-record-10-5b-leap-foplp, 2025-09-12_trendforce_foplp-competitive-2025, 2026-04-13_trendforce_copos-pilot, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-21_3dincites_acm-wlp-plp-process-trends, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-15_digitimes_manz-310mm-foplp-ecd-equipment, 2026-06-13_digitimes_linkotech-foplp-rollout-traction, 2026-06-20_prnewswire_manz-asia-310mm-ecd, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_digitimes_tsmc-foplp-timeline-skepticism, 2026-07-06_trendforce_cfmee-plp2000-china-first-plp, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-08-06_siliconbox_500m-units-panel-scale, 2026-02-18_siliconbox_ep4697377a1-fanout-panel-metal-sealing-ring, 2026-07-28_xianfeng_cn122476946a-alignment-mark-protection, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage, 2026-10-06_thelec_sec-xray-tsv-tgv-inspection-1um, 2026-10-07_epo_evg-zonewise-adaptive-litho-die-shift, 2026-10-07_epo_evg-inorganic-dual-release-layer-common-solvent, 2026-10-08_pku-embedded-glass-fanout-roughness, 2026-10-13_additive-patterning-and-metal-density-as-warpage-knob, 2026-10-13_beiyi-sic-low-buckling-sintering, 2026-10-13_large-area-sintering-three-challenges]
 related:
   - wiki/technologies/rdl.md
@@ -1338,3 +1338,29 @@ Lam 的先進封裝簡報明列其製程設備支援範圍為「**300 mm 至 600
 - ⚠ 另記：本輪 `ti,ab="panel level packaging" and pd within "2026"` 全庫僅 **4 件**
   ⇒ 📌 **該片語已近飽和**；下輪面板軌應改用 "fan-out panel"（⚠ 含連字號，本輪實測連字號片語會回 404）
   之不含連字號替代，或改以申請人檢索。
+
+---
+
+## 2026-10-24 collect 更新：第五個面板尺寸落點，且是唯一「不選尺寸」的落點
+
+**[[entities/amkor]] US20260334335A1**（fam 101671001，2026-10-22；⚠ **零量化值**，依專利訊號原則不得述為量產形態）
+
+- **panel carrier 上並置多個 subpanel**，彼此**保留間隙（gap）**；每個 subpanel 自身含多個 substrate。
+- **單一 RDL 跨越不同 subpanel 的 substrate 接點**；**第二面亦佈 RDL**（雙面重佈線）。
+
+### 面板尺寸落點（本輪自四個增至五個）
+
+| # | 落點 | 來源 |
+|---|------|------|
+| 1 | **310×310 mm**（TSMC CoPoS 標準） | TrendForce／LEDinside |
+| 2 | **510×515 mm** | SCHMID |
+| 3 | **600×600 mm** | SCHMID |
+| 4 | **620×670 mm**（Innolux）／**620×750 mm**（台灣 FOPLP 成熟製程量產） | TrendForce |
+| **5** | **不選尺寸：subpanel 拼貼於共用 panel carrier** | **Amkor US20260334335A1** |
+
+⇒ 📌 **既載空缺「同一條產線能否共存多種面板尺寸」提問方式修正**：除了「同一產線能否跑多種尺寸」，還要問「**是否需要單一尺寸**」。⚠ 本 wiki 推論，專利未如此主張。
+⇒ **「把設計移到規格較鬆的區間」第七例**，移動對象為**載具尺寸**：以小 subpanel（翹曲、平整度、良率較易）換大面板的面積效率。
+➜ 與既載 TrendForce「**玻璃面板 >500×500 mm 時奈米級平整度維持困難**」構成**問題與解法的配對**。⚠ 本 wiki 推論（兩者無引用關係）。
+⇒ **雙面 RDL** 與既載 [[entities/deca-tech]] US20260136970A1（studs 與垂直互連兩端與封膠上下表面共面）同向。
+
+**來源**：[[sources/2026-10-22_epo_amkor-subpanel-tiling-panel-carrier]]

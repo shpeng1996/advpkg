@@ -3,7 +3,7 @@ title: "GlobalFoundries — 格羅方德"
 category: entity
 tags: [GlobalFoundries, silicon-photonics, copackaged-optics, PIC, SiPh, foundry, Malta-NY]
 created: 2026-09-27
-updated: 2026-10-21
+updated: 2026-10-24
 sources: [2026-09-27_globalfoundries_siph-cpo-bandwidth-density-coupling-budget]
 related:
   - wiki/technologies/copackaged-optics.md
@@ -181,3 +181,27 @@ related:
   ⇒ 本頁既載之量化規格（銅 <1 Tb/s/mm & >5 pJ/bit vs 光 >5 Tb/s/mm & 2–5 pJ/bit；
   SSC ~0.4 dB／32 通道 V-groove <1 dB／Corning 玻璃橋 <1.5 dB/facet；Ge PD 120 GHz）**不因本件更新。**
 - ⚠ 依規範（41）：SEMI 部落格之廠商訪談、全篇轉述、無逐字引語 ⇒ **有利害關係之來源。**
+
+---
+
+## 2026-10-24 collect 更新：頻寬密度的量綱問題 —— 既載「5 倍差異」空缺改寫
+
+本頁既載 **「銅 <1 Tb/s/mm & >5 pJ/bit vs 光 >5 Tb/s/mm & 2–5 pJ/bit」**，與既載 Amkor **1 Tbps/mm（2025）** 構成 2026-10-23 所立之空缺（「相差 5 倍的口徑差異，引用前須確認，不可相減」）。
+
+本輪 **arXiv 2601.14342** 顯示：該文獻**一律使用 Tbit/s/mm²（面積）**，而非 Tb/s/mm（邊長），且明示 SiPho 的數字**不含 SerDes**：
+
+| 方案 | Tbit/s/mm² |
+|------|-----------|
+| CPO 需求門檻 | **>0.5** |
+| SiPho MRM（**不含 SerDes**） | 0.5–~1 |
+| microLED @50 µm 節距、4 Gbit/s | 0.8 |
+| VCSEL 陣列 @32 Gbit/s、50 µm 節距 | **6.4** |
+
+⇒ 📌 **空缺改寫**：差異可能不只是「模組邊緣 vs 晶粒邊緣」，而是「**每 mm 邊長 vs 每 mm² 面積**」**兩種不同量綱**，外加「**是否含 SerDes**」的邊界問題。
+**引用任何頻寬密度數字前必須確認量綱與含括範圍。** ⚠ 空缺不結清。
+
+➜ 另記：本頁既載「**雷射外置的理由＝最不可靠的元件、已採 burn-in、可冗餘自動切換**」為定性理由；本輪取得**冗餘比例與 FIT 的換算關係**（VCSEL 單鏈 ≤0.2 FIT、32×100G 合計 6.4 FIT、**加兩備援 ~1 FIT**；512 鏈 ~100 FIT → **10% 備援 ~10 FIT**）
+⇒ 📌 **可靠度在 CPO 中是架構參數而非元件參數。**
+➜ 本頁既載 **KGD/KGM 併用但兩者皆無定義** 之空缺，與本輪 SoW 平台的**故障注入**能力相關（見 [[concepts/test-metrology-packaging]]）。
+
+**來源**：[[sources/2026-01-01_arxiv_vcsel-cpo-pj-per-bit-ladder-with-distances]]

@@ -3,7 +3,7 @@ title: "先進封裝的測試、量測與失效分析 / Test, Metrology & Failur
 category: concept
 tags: [test, metrology, inspection, failure-analysis, KGD, KGI, KGP, DFA, yield]
 created: 2026-09-17
-updated: 2026-10-23
+updated: 2026-10-24
 sources: [2026-06-11_epo_tsmc-probe-card-force-sense-needle, 2026-02-19_epo_adeia-probe-card-direct-metal-bond, 2026-04-14_epo_weizhen-probe-card-space-transformer-rdl-5um, 2025-06-02_semieng_cpo-tipping-point-fiber-attach-adhesive, 2026-09-27_paper_binghamton-ibm-pad-scaling-resistance-variability, 2026-09-27_paper_purdue-ru-cu-em-lifetime-blacks-n-0154, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2025-01-14_semieng_known-good-interposer-screening, 2025-07-10_semieng_advanced-packaging-reshaping-inspection, 2024-11-12_semieng_packaging-drives-test-metrology-innovation, 2026-08-01_jfap_3dic-failure-analysis-dfa, 2026-07-06_apl_lensless-through-silicon-phase-imaging, 2026-09-06_ndte_hysan-sparse-view-xct-tsv, 2026-08-02_chips_cpo-wafer-level-probe-card, 2026-08-27_samsung_us20260256000a1-interposer-test-pad, 2026-08-13_jcet_us20260239928a1-hybrid-bonding-substack-test, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-06-28_hyperframe_amat-hybrid-bonding-hedge, 2026-09-26_paper_ibm-amine-post-cmp-clean, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-10-02_microrel_tudelft-google-3dic-fa-hardware, 2026-10-02_imaps-dpc2026_gelpak-universal-carriers-singulated-die, 2026-10-06_openalex_gatech-terahertz-nde-8layer-interposer, 2026-10-06_openalex_tongji-wafer-embedded-pitch-standard-pose-correction, 2026-10-06_thelec_sec-xray-tsv-tgv-inspection-1um, 2026-10-07_semieng_kelvin-resistance-probe-access-pitch-limit, 2026-10-07_openalex_amkor-kelly-three-interposer-routes, 2026-10-07_epo_besi-deformable-die-forming-bond-tool, 2026-10-08_silverbrook-known-good-site-substrate-test, 2026-10-08_ase-probing-needle-scrub-length, 2026-10-08_formfactor-45um-probe-pitch-good-enough-die, 2026-10-08_advantest-singulated-die-test-thermal, 2026-10-09_tsmc-cantilever-probe-card-patent, 2026-10-09_tsmc-impedance-control-probing-patent, 2026-10-09_intel-voltage-contrast-backside-patent, 2026-10-09_ieie-probe-card-mlc-signal-integrity, 2026-10-09_hdin-probe-card-market-pin-count, 2026-10-09_quantware-qpu-measurement-stage-patent, 2026-10-13_microbump-as-radiator-and-the-stand-in-problem, 2026-10-13_cpo-bottleneck-test-800x-area-mismatch, 2026-10-13_onto-cmp-second-independent-source, 2026-10-13_amkor-cavity-as-allocated-volume, 2025-10-01_amat-futurum_hybrid-bonding-at-scale-overlay-inspection-10min]
 related:
   - wiki/technologies/hybrid-bonding.md
@@ -1791,3 +1791,39 @@ Semiconductor Engineering（2025-06-02）：
 [[sources/2026-02-19_epo_adeia-probe-card-direct-metal-bond]]、
 [[sources/2026-04-14_epo_weizhen-probe-card-space-transformer-rdl-5um]]、
 [[sources/2025-06-02_semieng_cpo-tipping-point-fiber-attach-adhesive]]
+
+---
+
+## 2026-10-24 collect 更新：熱從「被動結果」變成「主動測試向量」
+
+**`10.1007/s44443-026-01385-z`**（JKSU-CIS, 2026-10-22）
+⚠ 申請機構為**中國人民解放軍信息工程大學**；依規範（41）屬**國防相關機構之自述平台**，無第三方佐證；**初期原型**階段；⚠ 期刊與主題不相稱；OA PDF 全文未取回（下輪續追）。
+
+| 項目 | 值 |
+|------|-----|
+| 交換 chiplet | **36** |
+| **熱測試 chiplet** | **288** |
+| 每節點熱測試 chiplet | **8** |
+| 單顆熱測試 chiplet 額定 | **≤112.5 W** |
+| **每計算節點可模擬熱負載** | **≤900 W** |
+| 相鄰節點通訊速率 | **≤145.95 Gbps** |
+| 平台能力 | 拓樸／繞徑設定、**故障注入（fault injection）**、晶圓級物理參數測試 |
+
+### 為何重要
+
+- ⭐⭐⭐ **「熱測試 chiplet」是本 wiki 全新的元件類別，且它把熱變成可程式化的輸入。**
+  既載熱相關數字（CoWoS 200–600 W/cm²、加速器封裝 700–1,000 W、[[entities/technoprobe]] 探針卡自身熱 PT2、AceTherm 熱分析）**都把熱當成待量測或待模擬的輸出**；本篇把熱做成 **288 顆可獨立設定功率的發熱體**。
+  ⇒ 📌 **熱自「被動結果」變成「主動測試向量」** —— 與既載「測試左移」家族同向，但落在**熱**而非電。⚠ 本 wiki 歸納。
+- ⭐⭐⭐ **「SoW（System on Wafer）」此一載體型態首次有實體驗證平台。** 既載面板級（CoPoS／FOPLP）與晶圓級（CoWoS）討論的是「把多顆晶粒做進一個封裝」；**SoW 是把整片晶圓當成系統**，是面積軸上更遠的一端。
+  ➜ 既載「**reticle 倍數階梯**」（5.5× → 9× → 14× → 40×）與 SoW 的關係本 wiki 空白 ➜ 列為新空缺。
+- ⭐⭐ **故障注入能力**使該平台同時是**可靠度**平台而非只是效能平台
+  ⇒ 與既載空缺「**KGD／KGM 無標準化定義**」直接相關：在晶圓級系統中「哪一顆是壞的」必須能被**注入與觀測**，才可能定義驗收。
+- ⚠ **145.95 Gbps 不得換算為頻寬密度**（無通道數、每通道速率、節距），**亦不可與本輪 VCSEL CPO 之 Tbit/s/mm² 比較。**
+
+### 另記：本輪 CPO 側的測試相關新知
+
+- **FIT 必須同時標註溫度與驅動電流**：Coherent 100G VCSEL **0.03 FIT @120 °C／4 mA** **低於** **0.07 FIT @85 °C／5 mA** ⇒ 📌 未標溫度與電流的 FIT 不可排序（規範（34）同構）。
+- **冗餘是架構參數**：512 鏈 ~100 FIT → **10% 備援 ~10 FIT**；32×100G 6.4 FIT → **兩備援 ~1 FIT**。
+- **iNEMI ACOP**：**「光學封裝缺乏業界公認的測試方法與測試載具」** ⇒ 📌 本 wiki 的空缺須區分「**本 wiki 未找到**」與「**產業尚未產生**」兩類。
+
+**來源**：[[sources/2026-10-22_openalex_sow-wafer-level-verification-900w-thermal-chiplets]]、[[sources/2026-01-01_arxiv_vcsel-cpo-pj-per-bit-ladder-with-distances]]、[[sources/2026-02-01_inemi_acop-no-accepted-test-methods-optical-packaging]]

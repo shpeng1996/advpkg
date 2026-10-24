@@ -3,7 +3,7 @@ title: "英特爾 / Intel"
 category: entity
 tags: [IDM, advanced-packaging, EMIB, Foveros, Intel18A, Clearwater-Forest, Foveros-Direct, glass-substrate, 14A, High-NA-EUV, silicon-capacitors, Google-TPU-v8e, Q2-2026-earnings, Tesla-14A, HLFF, RAMP-C, Secure-Enclave, Rio-Rancho]
 created: 2026-04-24
-updated: 2026-10-23
+updated: 2026-10-24
 sources: [2025-04-03_epo_intel-coaxial-inductor-glass-core, 2026-09-25_biggo_nvidia-glass-schmid-three-panel-standards, 2026-09-27_intel_us20260182414a1-asymmetric-buildup-cte-gradient-glass, 2026-09-27_intel_cn122270166a-stacked-glass-silicon-bridge-assembly-ar20, 2026-09-27_intel_us20260223702a1-direct-bonding-embedded-bridge-organic-cavity, 2026-08-24_intel-newsroom_hot-chips-2026-diamond-rapids-foveros-ucie, 2026-04-24_initial-survey, 2026-07-20_trendforce_tsmc-265b-arizona-intel-novalake, 2026-03-18_trendforce_intel-emib-malaysia, 2026-03-03_trendforce_intel-clearwater-forest, 2026-03-05_trendforce_intel-emib-billions, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-04-20_trendforce_intel-foundry-14a-equipment, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-03-01_semianalysis_cpus-back-datacenter-2026, 2026-04-10_3dincites_intel-gan-chiplet, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks, 2026-06-21_convergedigest_intel-emib-t-multi-die-packaging, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap, 2026-07-01_trendforce_terafab-intel-veteran-hire, 2026-04-07_tomshardware_intel-joins-terafab, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-01-30_tomshardware_intel-ai-chip-test-vehicle-emib-t, 2026-07-14_trendforce_intel-ireland-5b-intel3-europe, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-04_semieng_from-blueprint-intel-hlff, 2026-07-31_semieng_chip-week-149, 2026-08-13_trendforce_intel-memory-reentry-xbm-zam-saimemory, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-09-30_intel_us-advanced-packaging-reticle-8x-12x-fab9, 2026-09-30_epo_intel-jp2026116680a-glass-core-embedded-inductor-clusters, 2026-09-30_epo_intel-us20260040982a1-glass-package-liquid-metal-socketing, 2026-09-30_epo_intel-us20260191037a1-localized-embedded-bridge-in-core, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_trendforce_intel-microled-glass-24-layer, 2026-10-06_intel_clearwater-forest-no-glass-foveros-9um-3um-emib-45um, 2026-10-06_atlaspcb_clearwater-forest-glass-core-claim-unsourced, 2026-10-06_epo_intel-bridge-chiplet-shield-dummy-die, 2026-10-06_epo_intel-mold-extension-package-to-package-topside-bridge, 2026-10-09_intel-voltage-contrast-backside-patent]
 related:
   - wiki/entities/tsmc.md
@@ -1220,3 +1220,28 @@ BigGo（2026-09-25）：**Intel 之玻璃核心鎖定「ABF 有機基板之核�
 ➜ 📌 兩者替代對象不同，**時程不可互比**。
 
 來源：[[sources/2026-09-25_biggo_nvidia-glass-schmid-three-panel-standards]]
+
+---
+
+## 專利訊號 / Patent Signals（2026-10-24 新增）
+
+### ⭐⭐⭐ US20250044533A1（fam 94388570，2025-02-06）—— 把光學接著劑拆成兩種材料，因為性質要求互相衝突
+
+PIC 晶粒與 optical interposer 之間的 underfill **不是一種材料而是兩種**，請求項明載兩者性質相反：
+
+| 性質 | 機械接著劑 | 折射率匹配材 |
+|------|-----------|-------------|
+| 固化 | **熱固化** | **UV 固化** |
+| CTE | **低** | **相對高** |
+| 黏度 | **高** | **低** |
+| 光傳輸損耗 | **相對高（可接受）** | **低（關鍵）** |
+| 職能 | 固定 interposer | 降低波導間耦合損耗 |
+
+另有兩側**低應力 V-groove 陣列**、**溝槽與壁**控制兩種材料各自的流動範圍。
+
+- ⇒ 📌 **既載最高優先空缺「CPO 用光學接著劑」的提問方式第二次被改寫，且方向與第一次相反。** 2026-10-23 由 Samsung US20260079312A1 立下的修正是「三職合一 ⇒ 須加問是否承擔機械定位」；本件顯示 Intel **把職能拆開由兩種材料分擔**。
+  **⇒ 不能先問「折射率／透過率／濕熱小時數是多少」，必須先問「用幾種材料、每種承擔哪幾職」** —— 同一欄位在兩種架構下所指物件完全不同，規格不可互相比較。⚠ 本 wiki 推論。
+- ⇒ **「把問題移進材料裡」在 CPO 的第五個落點，移進去的是「性質的衝突」本身**（前四：微影＝GlobalFoundries、晶片形貌＝Samsung US20260040943A1、接著劑成形幾何＝Samsung US20260079312A1、玻璃光學壽命＝Corning）。
+- ⚠⚠ **本件零量化值**：無折射率、透過率、dB、CTE 值、黏度、濕熱小時數 ⇒ 既載空缺之數值部分**不結清**。
+- ⚠ 公開日 2025-02-06，已逾 12 個月。
+- 來源：[[sources/2025-02-06_epo_intel-split-adhesive-index-matching-optical-interposer]]

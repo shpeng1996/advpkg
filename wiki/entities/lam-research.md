@@ -3,7 +3,7 @@ title: "科林研發 / Lam Research"
 category: entity
 tags: [Lam-Research, equipment, plating, etch, deposition, RDL, megapillar, TurboCell, CPO, panel-level]
 created: 2026-10-14
-updated: 2026-10-14
+updated: 2026-10-24
 sources: [2026-10-14_lam-cpo-equipment-bottlenecks-turbocell]
 related: [wiki/technologies/copackaged-optics.md, wiki/technologies/foplp.md, wiki/technologies/hybrid-bonding.md, wiki/technologies/rdl.md, wiki/entities/applied-materials.md, wiki/entities/tel.md]
 ---
@@ -64,3 +64,18 @@ related: [wiki/technologies/copackaged-optics.md, wiki/technologies/foplp.md, wi
 - [ ] **TurboCell 是否已量產出貨、客戶為何。** 簡報未述。
 - [ ] **Lam 對熔接所需表面粗糙度的數值門檻。** 簡報列為瓶頸但**未給數字**；既載唯一數字來源仍為 Bruker AN-5001（介電層 Rq 0.1–0.2 nm、Cu recess 1–5 nm）。
 - [ ] **「pillar 高度差導致的研磨成本」的絕對金額或工時。** 簡報僅定性稱 costly。
+
+---
+
+## 2026-10-24 collect 更新：「斜角（bevel）管理」取得第二個獨立來源
+
+本頁 2026-10-23 以 Lam 的 IMAPS DPC 2026 簡報新立「**斜角（bevel）管理為本 wiki 全新失效面向**」。本輪取得**第二個獨立來源，且來源型態完全不同**：
+
+- **上海華力 CN122602614A**（fam 100875053，2026-08-18）—— **晶圓廠的排他權**，把邊緣問題寫成一條可追溯的缺陷因果鏈：
+  **接合前把邊緣區氧化層加厚** → 縮小 CMP 後邊緣 vs 中心厚度差 → 減少**金屬暴露** → 降低蝕刻藥液**金屬離子濃度** → 抑制**小凹坑缺陷** → 減少後續修補造成的**矽損失缺陷**。
+- ⇒ 📌 **依既載升格規範（兩個獨立來源），「晶圓邊緣／斜角是混合接合的獨立失效面向」自「候選」升格為「成立」。**
+  Lam 為**設備商、設備側論述**；華力為**晶圓廠、製程配方側排他權** ⇒ 依規範（41）來源獨立性成立。
+- ⚠ **仍無量化值**：兩個來源皆未給邊緣區寬度、厚度差、凹坑密度或良率數字 ⇒ 空缺改記為「**論述成立、數值全缺**」。
+- ⚠⚠ **應用域不同**：華力案為 **CIS W2W**（已量產多年），Lam 的論述與 AI 封裝關切的是 **D2W** ⇒ **CIS 的邊緣議題是否與 D2W 同型未知**，列為新空缺。
+
+**來源**：[[sources/2026-08-18_epo_huali-edge-oxide-thickening-pre-bond]]

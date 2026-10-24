@@ -3,7 +3,7 @@ title: "台積電 / TSMC"
 category: entity
 tags: [foundry, advanced-packaging, CoWoS, SoIC, CoPoS, COUPE, CPO, InFO, WMCM, aLSI, MRAM, 3nm-pricing]
 created: 2026-04-24
-updated: 2026-10-23
+updated: 2026-10-24
 sources: [2026-06-11_epo_tsmc-probe-card-force-sense-needle, 2026-09-25_biggo_nvidia-glass-schmid-three-panel-standards, 2026-09-27_tradingkey_copos-glass-validation-08mm-85x110mm, 2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-09-10_trendforce_tsmc-august-revenue-nt514b-record-fourth-month, 2026-09-10_trendforce_tsmc-taichung-14nm-p1-p2-2027-ahead-of-plan, 2026-04-24_initial-survey, 2026-04-13_trendforce_copos-pilot, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2025-12-18_trendforce_apple-wmcm-a20, 2025-12-04_trendforce_tsmc-ap7-arizona-p6, 2026-01-20_trendforce_tsmc-wmcm-apple, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2026-01-12_trendforce_tsmc-mature-node-cowos, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-04-27_tomshardware_tsmc-cowos-14reticle-roadmap, 2026-04-23_trendforce_tsmc-roadmap-a12-a13-no-high-na-euv, 2026-05-07_trendforce_tsmc-us-expansion-250b-arizona, 2026-05-12_focustaiwan_tsmc-capex-31b-arizona-20b, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-28_reuters_tsmc-kevin-zhang-energy-efficiency, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-09_financialcontent_tsmc-130k-cowos-wafers, 2026-06-09_digitimes_tsmc-cowos-soic-capacity-symposium, 2026-06-15_trendforce_tsmc-cowos-gap-narrowing-130k-200k-wafers, 2026-06-17_digitimes_amkor-tsmc-10year-arizona-deal, 2026-06-17_trendforce_tsmc-amkor-10year-arizona-advanced-packaging, 2026-06-10_tomshardware_tsmc-fab-expansion-roadmap-n2-cowos-soic, 2026-06-27_tmtpost_tsmc-cowos-capacity-targets-2026-2027, 2026-07-02_trendforce_samsung-sf2p-plus-tsmc-n2-roadmap, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-22_trendforce_tsmc-2027-price-hike-hpc, 2026-07-20_trendforce_tsmc-265b-arizona-intel-novalake, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-08-17_trendforce_tsmc-arizona-profit-663pct-1h26, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-10-07_sedaily_tsmc-copos-ap7-line-complete-one-year-yield, 2026-10-09_tsmc-cantilever-probe-card-patent, 2026-10-09_tsmc-impedance-control-probing-patent, 2026-10-09_semiwiki-tsmc-oip-2026-verification, 2026-10-09_tsmc-copos-ap7-chiayi-panel-size, 2026-10-13_cpo-bottleneck-test-800x-area-mismatch, 2026-02-26_epo_tsmc-us20260060104a1-rdl-active-wafer-ipd-or-bridge, 2026-07-01_biggo_tsmc-copos-glass-interposer-panel-ladder-2029]
 related:
   - wiki/technologies/cowos.md
@@ -841,3 +841,33 @@ TSMC CoPoS（**2028–2029**，試產線已建、與 **Ibiden／Innolux** 驗證
 ➜ 與既載「DTC 放在哪須先指定形態」、「co-packaging 須標註動機域」同族。
 
 來源：[[sources/2026-09-25_biggo_nvidia-glass-schmid-three-panel-standards]]
+
+---
+
+## 2026-10-24 collect 更新：產能階梯延伸到 2027，但 CoPoS 試驗線主體出現第二說
+
+⚠ 本節來源為 **36Kr（2026-07-17，二手彙整）**，其 CapEx 與 Arizona 數字**皆已被本頁既載較晚來源取代**，僅以下兩項為新資訊。
+
+### ⭐⭐⭐ CoWoS 月產能階梯延伸至 2027 年底
+
+- **2026 Q4 目標 130,000–140,000 片／月**（與既載一致）→ **2027 年底 190,000–200,000 片／月**（⭐ **本 wiki 全新數字**）。
+- ⚠ 📌 **依既載規範（2026-10-22 立）「任何以 wpm 表述的 CoWoS 產能數字須標註 reticle 倍數」** —— 本篇未標；既載已記 **5.5×≈8 片／9×≈5 片／14×≈4 片／片晶圓** ⇒ **190,000–200,000 片不可直接換算為封裝體產出。**
+- **NVIDIA 鎖定 TSMC 2026 年 CoWoS 總產能 >50%**（⭐ 新；CoWoS 產能的單一客戶集中度此前空白）。
+
+### 📌 ⭐⭐⭐ 矛盾：CoPoS 試驗線的執行主體有兩個互不相同的說法
+
+| 來源 | 主體 | 廠區 |
+|------|------|------|
+| 既載（商業時報，2025） | **VisEra** | 未載 |
+| 本輪（36Kr，2026-07-17） | **中強光電 Coretronic** | **龍潭** |
+
+⚠ **兩者皆二手、皆未具名消息源。**
+➜ **不以本輪推翻既載 VisEra 之記載；兩說並列**，列為新空缺。
+⚠ 另記：**Coretronic 是否為 TSMC「子公司」本身即可疑** —— 中強光電為獨立上市公司（光學元件／投影機），本 wiki 無任何 TSMC 持股記錄 ⇒ **該篇「subsidiary」用語可能有誤。**
+
+### ⚠ 全球 CoWoS 產能市占出現第二個數字
+
+**70%**（本輪，Morgan Stanley／Mizuho 推算）vs **60%**（既載，2026-06-10）。口徑（是否含 OSAT 外包）未揭露
+⇒ 📌 **依既載市占查證門檻，本 wiki 不採用任一單一數字，改記為「60–70%，口徑未明」。**
+
+**來源**：[[sources/2026-07-17_36kr_cowos-190k-wpm-2027-coretronic-copos-pilot]]

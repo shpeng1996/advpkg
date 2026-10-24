@@ -3,7 +3,7 @@ title: "CoPoS — Chip-on-Panel-on-Substrate"
 category: technology
 tags: [panel-level-packaging, FOPLP, TSMC, CoPoS, AI, HPC, AP7, InFO]
 created: 2026-04-25
-updated: 2026-10-22
+updated: 2026-10-24
 sources: [2026-09-27_tradingkey_copos-glass-validation-08mm-85x110mm, 2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-04-13_trendforce_copos-pilot, 2026-01-21_trendforce_tsmc-ap-capex-ap7-copos, 2025-09-12_trendforce_foplp-competitive-landscape-2025, 2026-04-16_trendforce_tsmc-cowos-emib-rivalry, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2025-12-01_3dincites_iftle-648-unimicron-glass-hybrid-bonding, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-06-05_trendforce_glass-substrate-2027-launch-roadmap, 2026-06-18_trendforce_copos-glass-foplp-taiwan, 2026-06-20_wccftech_tsmc-copos-glass-core-cost-cut, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-04-28_cw_tsmc-copos-move-really-means, 2026-06-14_digitaltrends_tsmc-copos-glass-temporary-carrier, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-28_xianfeng_cn122476946a-alignment-mark-protection, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-10-02_trendforce_nvidia-glass-substrate-2028-taiwan, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_imaps-dpc2026_defect-free-coplanar-copper-via-fill, 2026-10-07_sedaily_tsmc-copos-ap7-line-complete-one-year-yield, 2026-10-09_tsmc-copos-ap7-chiayi-panel-size, 2026-07-01_biggo_tsmc-copos-glass-interposer-panel-ladder-2029, 2026-07-01_circuitsassembly_ectc2026-w2w-pitch-ladder-tel-140nm]
 related:
   - wiki/technologies/rdl.md
@@ -731,3 +731,20 @@ TrendForce（2026-09-30）：**Innolux 以 620 × 670 mm 格式與客戶驗證 T
 - 📌 **新增空缺：>100×100 mm 且 >1,000 W 的封裝，其功率密度口徑為何？**
   1,000 W / 10,000 mm² = **0.1 W/mm²**，與既載 **>3 W/mm²** 目標值相差 30 倍
   ⇒ **分母必然不同（晶粒面積 vs 封裝面積），引用前須確認。**
+
+---
+
+## 2026-10-24 collect 更新：試驗線的執行主體出現第二個互不相同的說法
+
+| 來源 | 主體 | 廠區 | 可信度 |
+|------|------|------|--------|
+| 既載（商業時報，2025） | **VisEra** | 未載 | ⚠ 二手、未具名 |
+| 本輪（36Kr，2026-07-17） | **中強光電 Coretronic** | **龍潭** | ⚠ 二手、未具名 |
+
+➜ 📌 **不以本輪推翻既載 VisEra 之記載；兩說並列**，列為新空缺：**CoPoS 試驗線究竟在哪家子公司、哪個廠區。**
+⚠ **Coretronic 是否為 TSMC「子公司」本身即可疑** —— 中強光電為獨立上市公司（光學元件／投影機），本 wiki 無任何 TSMC 持股記錄 ⇒ **該篇「subsidiary」用語可能有誤**，引用時須標註。
+⚠ **Coretronic 在本 wiki 既有頁面 grep 命中 0**，為全新實體，無實體頁。
+
+➜ 另記：**NVIDIA Feynman 預計首批採用**（與既載 TrendForce 一致 ⇒ 兩個獨立來源同指）。
+
+**來源**：[[sources/2026-07-17_36kr_cowos-190k-wpm-2027-coretronic-copos-pilot]]

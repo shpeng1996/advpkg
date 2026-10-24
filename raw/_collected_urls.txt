@@ -991,3 +991,16 @@
 2026-10-23 | EPO:99060956:US20260079312A1 | raw/patents/2026-03-19_US20260079312A1_samsung-optical-engine-optical-adhesive-protrusion-fiber-plate.md | Samsung: optical adhesive protrusion mates fiber-plate cavity
 2026-10-23 | EPO:95157585:US20250112179A1 | raw/patents/2025-04-03_US20250112179A1_intel-coaxial-inductor-glass-core-fivr-buffer-layer.md | Intel: coaxial inductor in glass core cavity (FIVR) + buffer
 2026-10-23 | EPO:99362725:CN121856598A | raw/patents/2026-04-14_CN121856598A_weizhen-mems-probe-card-space-transformer-si-stack-rdl-5um.md | Weizhen: MEMS probe card space transformer, RDL L/S <=5um
+2026-10-24 | EPO:101672543:US20260334253A1 | raw/patents/2026-10-22_US20260334253A1_amkor-two-tier-bridge-substrate-cavity.md | Amkor: module-level bridge in substrate cavity
+2026-10-24 | EPO:101671001:US20260334335A1 | raw/patents/2026-10-22_US20260334335A1_amkor-subpanel-tiling-dual-rdl.md | Amkor: subpanel tiling on panel carrier, dual RDL
+2026-10-24 | EPO:94388570:US20250044533A1 | raw/patents/2025-02-06_US20250044533A1_intel-split-adhesive-index-matching-optical-interposer.md | Intel: split mechanical adhesive + index-matching
+2026-10-24 | EPO:95561854:US20250149474A1 | raw/patents/2025-05-08_US20250149474A1_amat-ntu-selective-dielectric-capping-sam.md | AMAT+NTU: SAM-selective high-k cap for hybrid bond
+2026-10-24 | EPO:100875053:CN122602614A | raw/patents/2026-08-18_CN122602614A_huali-edge-oxide-thickness-pre-bond-cmp.md | Huali: edge oxide thickening to equalize post-CMP
+2026-10-24 | https://doi.org/10.3390/mi17111214 | raw/papers/2026-10-22_openalex_tgv-metallization-review-seed-layer-electroplating.md | TGV metallization review: seed layer, double bridging
+2026-10-24 | https://doi.org/10.5573/jsts.2026.26.5.390 | raw/papers/2026-10-22_openalex_si-bridge-chessboard-patterned-interconnect-ucie.md | Si bridge chessboard interconnect: 2x density, UCIe
+2026-10-24 | https://doi.org/10.1016/j.mssp.2026.111324 | raw/papers/2026-10-21_openalex_tsv-cu-high-angle-grain-boundary-45deg-crack.md | TSV-Cu HAGB 45+-3.45deg weak region, -17.4%
+2026-10-24 | https://doi.org/10.1007/s44443-026-01385-z | raw/papers/2026-10-22_openalex_wafer-level-verification-sow-36-chiplets-900w.md | SoW verification: 36+288 chiplets, 145.95Gbps, 900W
+2026-10-24 | https://arxiv.org/pdf/2601.14342 | raw/papers/2026-01-01_arxiv_vcsel-cpo-scale-up-pj-per-bit-ladder.md | VCSEL CPO scale-up: pJ/bit ladder with distances
+2026-10-24 | https://semiconductor-today.com/news_items/2026/oct/trendforce-191026.shtml | raw/articles/2026-10-19_semitoday_vcsel-npo-six-makers-850-1060nm.md | Six makers bet on VCSEL NPO; micro-VCSEL 100-200um
+2026-10-24 | https://inemi.org/iNEMI/Projects/In-Progress/Adhesives_Characterization_for_Optical_Packaging_Project | raw/articles/2026-02-01_inemi_adhesives-characterization-optical-packaging-acop.md | iNEMI ACOP: no accepted test methods for optical pkg
+2026-10-24 | https://eu.36kr.com/en/p/3899029791623044 | raw/articles/2026-07-17_36kr_tsmc-cowos-capacity-coretronic-copos-pilot.md | TSMC CoWoS 190-200k wpm 2027; Coretronic CoPoS pilot

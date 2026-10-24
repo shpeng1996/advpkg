@@ -3,7 +3,7 @@ title: "Amkor Technology"
 category: entity
 tags: [OSAT, advanced-packaging, FOCoS, Arizona, chiplet, Intel-EMIB, patent-signal, TIM]
 created: 2026-04-25
-updated: 2026-10-22
+updated: 2026-10-24
 sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-05-19_stocktitan_amkor-arizona-peoria-land-expansion, 2026-06-17_digitimes_amkor-tsmc-10year-arizona-deal, 2026-06-17_trendforce_tsmc-amkor-10year-arizona-advanced-packaging, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-30_amkor-ir_arizona-7billion-groundbreaking, 2026-06-30_digitimes_amkor-2.5d-hdfo-growth-2026, 2026-07-23_amkor-ir_nvidia-amkor-1-5b-strategic-partnership, 2026-09-26_article_amkor-embedded-trace-rdl, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-10-07_epo_amkor-bspdn-oriented-package-embedded-ipd, 2026-10-07_openalex_amkor-kelly-three-interposer-routes, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-08_semieng_voltage-regulation-in-package, 2026-10-13_amkor-cavity-as-allocated-volume, 2026-01-13_epo_amkor-cn121335572a-rdl-lateral-side-protective-layer]
 related:
   - wiki/technologies/rdl.md
@@ -509,3 +509,30 @@ Amkor 的 **Vineet Pancholi** 提供本 wiki 目前唯一的中介層測試覆�
 其中 fam 98776443 已在庫（family-id 去重攔下）；
 另一件 **US20260082937A1（fam 99037077，clip 式導電連接件之倒角以改善接合完整度）** 經判定為
 **離散／功率封裝導向、封裝架構內容低**，依 spec §4.3 棄收。
+
+---
+
+## 專利訊號 / Patent Signals（2026-10-24 新增）
+
+本輪取得 Amkor **結構層**兩件同日公開案件，**共享發明人 St Amand Roger／Kelly Mike**（後者為 Amkor 封裝技術長期署名者）。⚠ 兩件請求項**無交集**，不得合併為單一路線敘述；⚠ **兩件皆零量化值**，依專利訊號原則不得述為已量產形態。
+
+### ⭐⭐⭐ US20260334253A1（fam 101672543，2026-10-22）—— 模組之間的橋，且橋住在基板腔體裡
+
+- 模組**內**的 bridge die 連接相鄰晶粒（既有用法）；**第二個 bridge die 同時接基板、第一模組與第二模組**，使**兩個已封裝模組之間**跨橋通訊；**第二個橋置於基板腔體內**，**RDL 覆蓋基板並蓋住該腔體**。兩層級的橋在同一封裝中並存。
+- ⇒ **「橋的維度」新增一維：橋所連接的對象層級（晶粒 vs 模組）。** 本 wiki 既載所有橋連接的對象一律是晶粒 ⇒ **橋成為遞迴結構。**
+- ⇒ **「基板／核心層的腔體是通用結構位」第三個置入物，且首次為主動互連元件**（前兩例：[[entities/shinko]] US20260293748A1 置入元件、[[entities/intel]] US20250112179A1 玻璃核心同軸電感）。
+- ⇒ **「局部高密度橋補救載體密度上限」第五型載體**：有機基板腔體 ＋ 上覆 RDL。
+- 來源：[[sources/2026-10-22_epo_amkor-module-level-bridge-substrate-cavity]]
+
+### ⭐⭐⭐ US20260334335A1（fam 101671001，2026-10-22）—— 不選面板尺寸，改用 subpanel 拼貼
+
+- **panel carrier 上並置多個 subpanel 並保留間隙**；**單一 RDL 跨越不同 subpanel 的 substrate 接點**；**第二面亦佈 RDL**。
+- ⇒ **對既載「面板尺寸社群分歧」給出第五個落點，且是唯一「不選尺寸」者**（既載四落點：310×310、510×515、600×600、620×670／620×750）。
+  📌 **既載空缺「同一條產線能否共存多種面板尺寸」提問方式修正**：還要問「**是否需要單一尺寸**」。⚠ 本 wiki 推論。
+- ⇒ **「把設計移到規格較鬆的區間」第七例**，移動對象為**載具尺寸**：以小 subpanel（翹曲、平整度、良率較易）換大面板的面積效率。
+  ➜ 與既載「**玻璃面板 >500×500 mm 時奈米級平整度維持困難**」構成問題與解法的配對。⚠ 本 wiki 推論（兩者無引用關係）。
+- 來源：[[sources/2026-10-22_epo_amkor-subpanel-tiling-panel-carrier]]
+
+### 需求側（2026-10-24）
+
+- **2026 年 6 月 TSMC 與 Amkor 簽署十年協議**，TSMC 向 Amkor 美國（Arizona）採購本地 CoWoS 封測產能（⚠ 二手，見 [[sources/2026-07-17_36kr_cowos-190k-wpm-2027-coretronic-copos-pilot]]）。
