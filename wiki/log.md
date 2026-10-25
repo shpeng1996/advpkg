@@ -5768,3 +5768,63 @@ warning: unable to unlink '.../.git/index.lock': Operation not permitted
   **② `.git/` 下 `stale-*` 歷輪鎖檔累計已達 58 個**（本輪新增 11）。
   ➜ 📌 **建議使用者於 Windows 側執行 `git gc --prune=now`，並清理 `.git/stale-*` 與 `.git/_stale_tmp_objs/`。**
   ⚠ 本流程無刪除權限且依規範（53a）不申請，故此兩項只能累積，無法自行清理。
+
+## [2026-10-25] collect | 每日自動蒐集 — 先進封裝最新動態
+- 搜尋查詢數：新聞 7 組 / 專利 6 組 / 論文 7 組
+- 成功抓取：14 篇（articles 4, patents 5, papers 5, reports 0）
+- 失敗/跳過：11 篇（**內容已載／URL 已在庫 5**：TrendForce 2026-10-22 NVIDIA OOI CPO 原型（既載 thelec 同一報導、`OOI` 已見於 entities/nvidia 與 technologies/copackaged-optics）、gurufocus Amkor–NVIDIA $1.3B（既載 stocktitan 同一報導）、DIGITIMES a20261013PR203 混合銅接合（既載 eetasia 同篇）、atlaspcb ECTC 2026 AMAT 450 nm pitch（`450 nm pitch` 逐項 grep 命中 besi／hybrid-bonding）、ninescrolls 混合接合 6/9 µm（已在庫）；**低相關／無數據 1**：3dincites "Breaking the Compute Barrier with Light"（**無日期、無作者、無任何量化值、無具名公司**，僅 "UT Source" 署名，依 §3.1.3 棄收）；**論文棄收 5**：`10.1117/1.apn.5.3.030101`（經查僅為**編輯導言**非研究論文）、`10.1016/j.mssp.2026.111305`／`10.1016/j.mssp.2026.111286`／`10.1016/j.mssp.2026.111280`（**無摘要**，Elsevier）、Zenodo 預印本數筆（低訊號venue））
+- 資料源狀態：**WebSearch ACTIVE ✓ | EPO OPS ACTIVE ✓ | OpenAlex ACTIVE ✓**（OPS 呼叫 7 次＝1 auth＋6 search，≤10，無 403/429；OpenAlex 7 組查詢全數 HTTP 200；⚠ `OPENALEX_KEY` 仍不存在，回應 meta 仍載明「無金鑰、與同 IP 共用每日 $0.10 預算」，隨時可能耗盡）
+- 新增 wiki 頁面：14 頁（全為來源摘要頁）
+  `sources/2026-10-25_namics_four-optical-adhesive-types-refractive-index`、
+  `sources/2026-10-22_semieng_foundries-osats-increasingly-overlap`、
+  `sources/2024-11-26_imec_ordl-evanescent-coupler-wafer-scale-yield`、
+  `sources/2026-07-09_taiwannews_tgv-supply-chain-taiwan-equipment`、
+  `sources/2026-05-13_epo_intel-tgv-radial-void-crack-mitigation`、
+  `sources/2026-06-19_epo_intel-glass-core-cavity-embedded-component`、
+  `sources/2024-08-15_epo_tsmc-optical-adhesive-15-190um-waveguide-gap`、
+  `sources/2025-07-31_epo_coherent-compound-semiconductor-cpo-ccpo`、
+  `sources/2025-09-16_epo_samsung-fowlp-subpackage-reconstructed-foplp`、
+  `sources/2026-04-06_micron_siph-packaging-reliability-review`、
+  `sources/2026-01-01_lsa_waveguide-couplers-photonic-vias-review`、
+  `sources/2026-05-21_jlt_hkust-98ch-ultradense-optical-io`、
+  `sources/2026-02-23_jssc_3d-siph-5nm-cmos-transceiver-600gbsmm2`、
+  `sources/2026-05-27_ol_3d-nanoprinted-vertical-coupler-ordl`
+- 更新 wiki 頁面：18 頁
+  `technologies/copackaged-optics`、`technologies/glass-substrate`、`technologies/tsv`、`technologies/rdl`、
+  `technologies/hybrid-bonding`、`technologies/foplp`、`technologies/copos`、`technologies/ucie`、
+  `entities/intel`、`entities/tsmc`、`entities/samsung`、`entities/micron`、`entities/amkor`、`entities/ase-group`、`entities/corning`、
+  `concepts/advanced-packaging-market`、`concepts/test-metrology-packaging`、`concepts/substrate-materials-supply-chain`、`concepts/thermal-management`、
+  `index`、`overview`、`log`（含三根目錄頁共 22 個檔案變動）
+- 主要新知識：①**最高優先空缺「CPO 用光學接著劑」的折射率與透過率首次填上** —— Namics 一手產品頁給出**四種分工**（Index Matching／Fiber Fixing／FAU Attach／Strain Relief），其中兩型 **@1310 nm 折射率 1.42–1.52、透過率 >99%**；⚠ 原文明示為 typical values 且**可客製** ⇒ **不得作為業界規格引用**，而「可客製」本身解釋了為何沒有標準試片（濕熱可靠度小時數仍空白 ⇒ **部分解不結清**）。②**「一個接著劑該負責幾件事」譜系補齊為五個落點**：imec **0 種**（改 ~30 nm SiCN 介電接合）／TSMC **1 種兼光路**（US20240272352A1 請求項載明間隙 **15–190 µm**，為本 wiki 首個排他權層的接著劑幾何數值）／Intel **2 種**／Samsung **3 職合一**／Namics **4 種**。③**ORDL 損耗必須標明方向**：imec 面內 **1 dB/facet** vs Optics Letters 垂直轉向 **3.3 dB**，相差 3–6×，兩個獨立來源同輪入庫。④**光學元件的最佳尺寸由良率而非損耗決定**：imec EVC 1.5/1/0.5 mm 損耗幾乎持平（0.36/0.37/0.32 dB）而光學良率自 **75.5% 崩到 57%**。⑤**「對準」須標介面類型**：光學 **±1.8 µm** vs 電性 D2W 限制鏈 **0.2 nm / <100 nm / 100 nm**，相差一到四個數量級。⑥**頻寬密度新增第三、第四種分母**（**>600 Gb/s/mm²** 分母＝電子晶粒 **0.09 mm²**；**98 ch / 0.2 mm²**），**pJ/bit 階梯新增第三個速率點**（**2.8 pJ/bit @56 Gb/s NRZ**，整鏈路含外部光引擎；三點速率與調變皆不同，依規範（34）（37）不得排名）。
+- 專利訊號：**本輪五件的共同點是「在既有結構位上換前提」**——Intel 在 TGV 的金屬—玻璃界面**刻意留徑向空隙**（放棄界面，與 Corning 的增強附著構成雙向排他權對照）、Intel 把**貫穿腔體**當作元件置入位並把「介電填充」寫進請求項（腔體第四個置入物、新增貫穿／非貫穿子維度）、TSMC 讓**光學接著劑同時是光路介質**並首次給出幾何（15–190 µm）、Coherent 把 **PIC 的材料平台換成 GaAs/InP** 而仍自稱 co-packaged optics（CPO 的 PIC 平台擴為三選一）、Samsung 把**面板的流程順序倒過來**（FOWLP 子封裝切單後再重構為 FOPLP，與 Amkor subpanel 拼貼同向）。⇒ 五件皆**零量化值或僅一組幾何**，全部依專利訊號原則記於「專利訊號」小節並加保留措辭。
+
+### 作業記錄（2026-10-25）
+
+- ✅ **`device_bash` 全程正常**：三軌查詢（WebSearch 於雲端；EPO OPS 與 OpenAlex 之 curl 於使用者端 Linux 工作區）、檔案讀寫、git 皆在 `device_bash` 完成；**本輪未使用 stage／commit 檔案工具**，**`.env` 未離開使用者端機器**。
+- ✅ **dedup 於所有查詢完成後一次性執行（規範 69）**：Track B 六組、Track C 七組的輸出合併後才比對 —— 未重演 2026-10-24 的分批 dedup 失誤。
+  - **family-id dedup 攔下 9 件**（98692272 Corning／99140773 Etron／100212955 JP 雙襯層／100312115 Intel bottom-up plating／100489513 E&R TWI928565B／99632522 Intel partial liner／99763638 Intel photopolymer liner／96221293 CIT 原子濺射／96012658 Dongwoo）。
+  - **DOI dedup 攔下 16 件**（含 `10.3390/mi17111214`、`10.1016/j.matdes.2026.117198`、`10.1038/s41467-026-78128-1`、`10.1088/2515-7647/aeb3de`、`10.1002/admt.71266`、`10.1007/s11668-026-02506-6` 等皆已在庫）⇒ **論文軌的高相關命中幾乎全部已收錄，真新僅 5 篇。**
+- ✅ **規範（75）再獲驗證，且首次在同一輪內用於處置**：`ti,ab="co-packaged optics" and pd within "2026"` 回 **HTTP 404**；依規範**放寬查詢**（去掉 `pd within`）後 `ti,ab="co-packaged optics"` 回 **HTTP 200、2 命中**（Coherent 與 TSMC 兩件，其中 Coherent 件即本輪最重要的 CPO 專利）。
+  ➜ 📌 **若依 spec 現行條文「404 ＝ CQL 語法錯誤、應簡化重試」處置，本輪會漏掉 Coherent 該件。** **本輪仍未逕自修改 `schedule.md`**（版控之權威規格、無人看管之排程執行）；建議條文續外送。
+- ✅ **規範（74）首次用於「正向補收」**：2026-10-24 列管之 **Samsung CN120659336A** 經 registry grep 確認 family 94869047 未在庫，本輪正式收錄。
+- ✅ **規範（53a）續行：刪除權限全程未申請**（本輪無重複檔，無須 `mv`）。
+- ✅ **依規範（71）Track A 選稿後逐一 grep 關鍵數字**：淘汰 5 篇「URL 新但內容已載」（TrendForce NVIDIA OOI、gurufocus Amkor $1.3B、DIGITIMES 混合銅接合、atlaspcb 450 nm pitch、ninescrolls 6/9 µm）。
+- ⚠⚠ **新增第四個系統性收錄偏差管道：Emerald。** 既有三個為 Elsevier（ScienceDirect／linkinghub）、Nature 全文頁、DIGITIMES 付費牆。本輪 **Micron（台灣）的矽光子封裝可靠度綜述 `10.1108/mi-12-2025-0262`** 正是最高優先空缺所需的來源類型，卻**只拿到結構化摘要**（Purpose/Findings），**具體可靠度小時數、材料名稱、熱數值全未取得**。
+  ➜ 📌 這是本輪唯一「**找到了正確的來源卻拿不到數字**」的案例，已列為追蹤標的。
+- 📌 **刻意收錄兩篇逾 6 個月窗之來源，理由記錄如下**：
+  - **imec（2024-11-26）**：其 ORDL 逐段損耗帳與 EVC 良率對照在本 wiki 無任何替代來源；⚠ 且與既載 2026-09-25 SemiEng「imec×Ghent 高分子波導 CPO 耦合」為**同一團隊的上游一手**，依規範（41）**不計為獨立第二來源**。
+  - **TSMC US20240272352A1（2024-08-15）**：為最高優先空缺目前唯一可得的排他權層幾何數值。
+- 📌 **本輪主題集中度高（14 篇中 10 篇與 CPO／光學介面相關）**，為**刻意安排**：以最高優先空缺為中心做一次深掘。下輪應回到主題輪替（建議：HBM4E／HBM5、混合接合良率、面板翹曲、功率傳遞）。
+- 📌 **作業技巧記錄**：`wiki/index.md` 的來源連結數（973）少於 `wiki/sources/` 實際檔數（987），差額 14 與表頭所述「11 個合併轉向頁 ＋ 1 個去重失誤更正頁 ＋ 1 個橫向綜整頁」相符（另 1 筆待下次 lint 確認）⇒ **非本輪造成，維持現狀並列入下次 lint。**
+- ⚠ **既載 lint 問題續列**：`wiki/technologies/info-wmcm.md` 非合法 UTF-8（2026-09-17 發現）；`wiki/index.md` 來源清單非全域日期排序。**本輪均未修復。**
+- ✅ **本輪未觸碰 `raw/` 下既有任何檔案**（新增 14 個 raw 檔、對 `_collected_urls.txt` 追加 14 行）；**未修改 `CLAUDE.md`**；**未修改 `schedule.md`**。
+- ⚠⚠ 📌 **本輪 git commit 成功但留下 8 個鎖檔，已就地處置（新作業記錄）。**
+  `git commit` 於使用者端掛載資料夾內**無法刪除自己的鎖檔與暫存物件**（`Operation not permitted`，因刪除權限未開放），
+  因此 commit **雖成功（`a198328 2026-10-25`）**，卻留下 `.git/HEAD.lock`、`.git/packed-refs.lock`、`.git/refs/heads/main.lock`、
+  `.git/refs/remotes/{origin,staging}/*.lock`、`.git/objects/maintenance.lock`、`.git/gc.pid` 共 8 個檔案，
+  且 `gc`／`reflog` 子任務失敗（`error: task 'gc' failed`）。**若放任不管，使用者下次執行任何 git 指令都會以 `File exists` 失敗。**
+  ➜ **處置（未申請刪除權限，續行規範 53a）**：全部 `mv` 至 `.git/` 底下的 `stale-20261025-*` 新檔名（**destination 不得在 `.git/refs` 內**），
+  移動後 `git status` 與 `git log` 均正常。
+  ➜ 📌 **新增作業規範（78）：在使用者端掛載資料夾內 commit 之後，必須 `find .git -name "*.lock"` 檢查並以 `mv` 清除殘留鎖檔；**
+  **殘留鎖檔不會讓 commit 失敗，但會讓「下一個」git 指令失敗，因此屬於必須在同一輪內收尾的副作用。**
+  ⚠ `.git/objects/**/tmp_obj_*` 暫存物件亦無法刪除，但不阻擋 git 運作，本輪未處置（屬無害堆積，建議使用者自行清理）。

@@ -1004,3 +1004,17 @@
 2026-10-24 | https://semiconductor-today.com/news_items/2026/oct/trendforce-191026.shtml | raw/articles/2026-10-19_semitoday_vcsel-npo-six-makers-850-1060nm.md | Six makers bet on VCSEL NPO; micro-VCSEL 100-200um
 2026-10-24 | https://inemi.org/iNEMI/Projects/In-Progress/Adhesives_Characterization_for_Optical_Packaging_Project | raw/articles/2026-02-01_inemi_adhesives-characterization-optical-packaging-acop.md | iNEMI ACOP: no accepted test methods for optical pkg
 2026-10-24 | https://eu.36kr.com/en/p/3899029791623044 | raw/articles/2026-07-17_36kr_tsmc-cowos-capacity-coretronic-copos-pilot.md | TSMC CoWoS 190-200k wpm 2027; Coretronic CoPoS pilot
+2026-10-25 | https://www.namics.co.jp/en/products/silicon-photonics_2/ | raw/articles/2026-10-25_namics_transparent-optical-adhesive-four-types-cpo.md | Namics: 4 optical adhesive types, n=1.42-1.52, >99%T
+2026-10-25 | https://semiengineering.com/foundries-and-osats-increasingly-overlap/ | raw/articles/2026-10-22_semieng_foundries-osats-increasingly-overlap.md | Hybrid bonding is next step moving to OSATs
+2026-10-25 | https://www.imec-int.com/en/articles/interfacing-silicon-photonics-high-density-co-packaged-optics | raw/articles/2024-11-26_imec_ordl-evanescent-coupler-wafer-scale-yield.md | imec ORDL: 1dB/facet, +/-1.8um, EVC yield 75.5%
+2026-10-25 | https://www.taiwannews.com.tw/news/6397144 | raw/articles/2026-07-09_taiwannews_tgv-supply-chain-er-groupup-utechzone.md | Taiwan TGV chain: E&R, Group Up, Utechzone, Unimicron
+2026-10-25 | EPO:94481277:JP2026077559A | raw/patents/2026-05-13_JP2026077559A_intel-tgv-radial-void-crack-mitigation.md | Intel TGV radial voids to stop glass-core cracks
+2026-10-25 | EPO:95339651:CN122249079A | raw/patents/2026-06-19_CN122249079A_intel-glass-core-cavity-embedded-component.md | Intel component inside glass-core through-cavity
+2026-10-25 | EPO:92121721:US20240272352A1 | raw/patents/2024-08-15_US20240272352A1_tsmc-optical-adhesive-15-190um-waveguide-gap.md | TSMC optical adhesive fills 15-190um waveguide gap
+2026-10-25 | EPO:96501385:US20250244547A1 | raw/patents/2025-07-31_US20250244547A1_coherent-compound-semiconductor-cpo-ccpo.md | Coherent/II-VI GaAs-InP PIC+EIC co-packaged optics
+2026-10-25 | EPO:94869047:CN120659336A | raw/patents/2025-09-16_CN120659336A_samsung-fowlp-subpackage-reconstructed-foplp.md | Samsung FOWLP sub-package reconstituted into FOPLP
+2026-10-25 | https://doi.org/10.1108/mi-12-2025-0262 | raw/papers/2026-04-06_openalex_micron-siph-packaging-reliability-review.md | Micron: SiPh packaging reliability requirements review
+2026-10-25 | https://doi.org/10.1038/s41377-025-02048-w | raw/papers/2026-01-01_openalex_nist-mit-ayarlabs-waveguide-to-waveguide-couplers.md | NIST/MIT/Ayar: waveguide couplers, photonic vias
+2026-10-25 | https://doi.org/10.1109/jlt.2026.3693771 | raw/papers/2026-05-21_openalex_hkust-98ch-ultradense-optical-io-0p2mm2.md | HKUST 98-ch optical I/O in 0.2mm2, -3.47dB
+2026-10-25 | https://doi.org/10.1109/jssc.2026.3655295 | raw/papers/2026-02-23_openalex_56gbs-3d-siph-5nm-cmos-2p8pjbit-600gbsmm2.md | 3D SiPh+5nm CMOS: 2.8pJ/bit, >600 Gb/s/mm2
+2026-10-25 | https://doi.org/10.1364/ol.599054 | raw/papers/2026-05-27_openalex_3d-nanoprinted-vertical-coupler-ordl-3p3db.md | 3D-nanoprinted ORDL vertical coupler, 3.3dB @1310nm

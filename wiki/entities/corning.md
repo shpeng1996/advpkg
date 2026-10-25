@@ -3,13 +3,14 @@ title: "康寧 / Corning Incorporated"
 category: entity
 tags: [glass-substrate, TGV, materials, CPO, Corning]
 created: 2026-09-18
-updated: 2026-10-06
+updated: 2026-10-25
 sources:
   - 2026-08-06_epo_corning-small-diameter-tgv-adhesion
   - 2026-09-30_epo_xiamen-anjieli-cn121335557a-silane-parylene-tgv
   - 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids
   - 2026-09-30_epo_amosense-wo2026019155a1-multilayer-glass-core-frit-bonding
   - 2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth
+  - 2026-05-13_JP2026077559A_intel-tgv-radial-void-crack-mitigation
 related:
   - wiki/technologies/glass-substrate.md
   - wiki/technologies/copackaged-optics.md
@@ -250,3 +251,13 @@ Intel ZnO「三維咬合」）應改述為「三種賭法」而非「三條互�
 - 2026-10-05 所記之作業建議「下輪優先以一手來源複核本輪兩個最高價值的二手數字（Corning 110 °C／5 年、TSMC×Winbond 規格表）」—— **Corning 一項本輪已執行，結果為負面（查無）；TSMC×Winbond 一項本輪未執行，順延。**
 - 📌 **本次為官網複核規則第一次「查無」結案**（此前三次分別為：攔錯一次 —— AMAT CMP 產品層；正向確認兩次 —— Intel 光罩倍數、本輪 Intel Foveros／EMIB pitch）。**「查無」與「否證」不同：查無只代表官網未公開，不代表數字錯誤。**
 - 🔎 **追蹤方式更新**：改以 **Corning 的 CPO／玻璃基板專屬產品頁或白皮書**、**OFC／ECOC 的 Corning 發表**，或**客戶側（CPO 整合商）的規格引用**為目標，而非一般玻璃產品資料表。
+
+## 2026-10-25 collect 更新：對照組取得請求項層的最乾淨反例
+
+- ⭐⭐⭐ **既載「Corning 賭界面可以做牢、Intel 賭界面必然失效」自並列讀法升格為雙向皆有排他權佐證。**
+  Corning **WO2026164778A1**：以 **Ti/Cu 黏著層＋羥基富化＋矽烷官能化＋無電鍍種子層**向下游 TGV 金屬化延伸，**賭的是界面可以做牢**。
+  [[entities/intel]] **JP2026077559A（2026-05-13，本輪收錄）**：在**同一位置放一個徑向 void**，讓銅往空隙膨脹而非壓迫孔壁，**賭的是界面必然失效**。
+  ⇒ 📌 兩者處理的是同一失效（TGV 界面應力與玻璃裂紋），**處置完全相反且各自寫入請求項**。
+  見 [[sources/2026-05-13_epo_intel-tgv-radial-void-crack-mitigation]]。
+- ⚠ **既載空缺「Corning small via diameter 的實際數值」不受本輪影響**，提問方式維持第三次修正後的形式（頂／腰／底何者；若為沙漏形，腰在什麼高度）。
+- ⚠ **新增空缺（與 Corning 的論述直接相關）**：**有徑向空隙之 TGV 的高頻電性本 wiki 完全空白** —— 既載 [[entities/agc]]「填滿 vs conformal 在 30 GHz 無顯著差異」比較的兩種形態**都假設銅貼著玻璃**。

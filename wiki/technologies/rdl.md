@@ -3,8 +3,8 @@ title: "RDL — 重分佈層 / Redistribution Layer"
 category: technology
 tags: [RDL, SAP, dual-damascene, embedded-trace, ETR, polyimide, FPIM, CMP, electromigration, panel-level, pad-less-via]
 created: 2026-09-26
-updated: 2026-10-22
-sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2026-09-27_paper_purdue-ru-cu-em-lifetime-blacks-n-0154, 2026-09-27_paper_copper-interconnect-scaling-roadmap-lines-per-mm, 2026-09-26_article_taiyo-imec-700nm-damascene-rdl, 2026-09-26_article_imec-1um-damascene-rdl-2019-anchor, 2026-09-26_article_amkor-embedded-trace-rdl, 2026-09-26_paper_asi-1um-hdbu-substrate, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-25_paper_dnp-glass-rdl-electromigration-lifetime, 2026-09-25_paper_cornell-glass-on-glass-sio2-rdl, 2026-09-25_paper_asu-molded-core-substrate-warpage, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_shanghai-xianfeng-cn122622683a-glass-interposer-bridge, 2026-10-02_imaps-dpc2026_defect-free-coplanar-copper-via-fill, 2026-10-06_epo_intel-mold-extension-package-to-package-topside-bridge, 2026-10-06_openalex_gatech-terahertz-nde-8layer-interposer, 2026-10-07_epo_amkor-bspdn-oriented-package-embedded-ipd, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-07_openalex_amkor-kelly-three-interposer-routes, 2026-10-08_rdl-free-glass-interposer-trench, 2026-10-08_pku-embedded-glass-fanout-roughness, 2026-10-08_samsung-stacked-rdl-package-bspdn-layer, 2026-10-09_keti-tgv-defect-spectrum-plugging-review, 2026-10-13_additive-patterning-and-metal-density-as-warpage-knob, 2026-01-13_epo_amkor-cn121335572a-rdl-lateral-side-protective-layer]
+updated: 2026-10-25
+sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2026-09-27_paper_purdue-ru-cu-em-lifetime-blacks-n-0154, 2026-09-27_paper_copper-interconnect-scaling-roadmap-lines-per-mm, 2026-09-26_article_taiyo-imec-700nm-damascene-rdl, 2026-09-26_article_imec-1um-damascene-rdl-2019-anchor, 2026-09-26_article_amkor-embedded-trace-rdl, 2026-09-26_paper_asi-1um-hdbu-substrate, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-25_paper_dnp-glass-rdl-electromigration-lifetime, 2026-09-25_paper_cornell-glass-on-glass-sio2-rdl, 2026-09-25_paper_asu-molded-core-substrate-warpage, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_imaps-dpc2026_osaka-weak-micro-via-pd-segregation-nanovoids, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_shanghai-xianfeng-cn122622683a-glass-interposer-bridge, 2026-10-02_imaps-dpc2026_defect-free-coplanar-copper-via-fill, 2026-10-06_epo_intel-mold-extension-package-to-package-topside-bridge, 2026-10-06_openalex_gatech-terahertz-nde-8layer-interposer, 2026-10-07_epo_amkor-bspdn-oriented-package-embedded-ipd, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-07_openalex_amkor-kelly-three-interposer-routes, 2026-10-08_rdl-free-glass-interposer-trench, 2026-10-08_pku-embedded-glass-fanout-roughness, 2026-10-08_samsung-stacked-rdl-package-bspdn-layer, 2026-10-09_keti-tgv-defect-spectrum-plugging-review, 2026-10-13_additive-patterning-and-metal-density-as-warpage-knob, 2026-01-13_epo_amkor-cn121335572a-rdl-lateral-side-protective-layer, 2024-11-26_imec_ordl-evanescent-coupler-wafer-scale-yield, 2026-05-27_openalex_3d-nanoprinted-vertical-coupler-ordl-3p3db]
 related:
   - wiki/technologies/foplp.md
   - wiki/technologies/glass-substrate.md
@@ -767,3 +767,25 @@ RDL 基板第一面以**第一次混合接合**接晶圓組件，第二面以**�
   ➜ 📌 **六個落點橫跨版圖、設備、載體、製程、封裝結構五個層級
   ⇒ 該論述可自「獨立失效面向」升格為「跨層級一致的失效面向」。**
 - ⚠ **零量化值**（保護層厚度、覆蓋高度、可靠度皆未給），依專利訊號原則僅列追蹤，不改既有論述。
+
+## 2026-10-25 collect 更新：ORDL（光學重分佈層）的損耗帳與方向性規範 ★★★
+
+本輪一次取得 ORDL 的**兩個獨立來源**，使本頁的「重分佈層」論述自純電性擴及光學：
+
+| 介面／項目 | 數值 | 方向 | 來源 |
+|---|---|---|---|
+| Fiber-to-ORDL butt coupling | **1 dB/facet** | 面內 | imec |
+| SiN-to-ORDL adiabatic transition | **各 0.5 dB** | 面內 | imec |
+| 高分子 ORDL 傳播損耗 | **<0.5 dB/cm @1310 nm** | 面內 | imec |
+| SiN 波導傳播損耗（量測） | **0.165 dB/cm** | 面內 | imec |
+| 測試晶片 fiber-to-fiber 總插入損耗 | **4 dB** | 面內 | imec |
+| ORDL-to-PIC 對準容差（1 dB） | **±1.8 µm** | — | imec |
+| **垂直轉向（全固態 TIR 微鏡，實測）** | **~3.3 dB @1310 nm** | **出面** | Optics Letters |
+
+- 📌 ⭐⭐⭐ **垂直轉向的損耗約為面內接續的 3–6 倍 ⇒ 引用「ORDL 損耗」必須標明方向。** 兩個獨立來源同輪入庫，該區分即刻成立。
+- ⭐⭐ **ORDL 的製程是「UV 微影（平面）＋雙光子聚合（3D 微鏡）」的混合微影** ⇒ 既載面板圖案化三段階梯（雷射燒蝕 >10 µm／投影微影 ≥1 µm／直寫 <1 µm）之外的**第四類，且是唯一 3D 者**。
+- ⭐⭐ **ORDL 材料為旋塗 EpoCore＋EpoClad（Micro resist technology，德國）**，以微影圖案化 ⇒ 既載「微影材料與製程自晶圓廠移入封裝」（本輪 SemiEng／Brewer Science）在**光學 RDL** 取得第二個落點。
+- ⭐ **垂直耦合器以高折射率對比做成全固態 TIR 鏡，免金屬化、免空氣腔**；理論 89.4%（無支撐）／81.6%（有支撐），**實測 3.3 dB，落差約 2.4 dB 未解釋**。
+- ⚠ imec 的電性側對照：**PIC 整合採 collective D2W 介電接合（~30 nm SiCN）**，不使用接著劑 ⇒ ORDL 與接合是兩個可分開選擇的決策。
+
+**來源**：[[sources/2024-11-26_imec_ordl-evanescent-coupler-wafer-scale-yield]]、[[sources/2026-05-27_ol_3d-nanoprinted-vertical-coupler-ordl]]

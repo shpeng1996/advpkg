@@ -3,8 +3,8 @@ title: "ASE Group / 日月光投控"
 category: entity
 tags: [OSAT, advanced-packaging, CoWoP, FOPLP, chiplet, CPO, LEAP]
 created: 2026-04-25
-updated: 2026-10-09
-sources: [2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below, 2026-08-05_trendforce_tsmc-cowos-cow-outsourcing-osat, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2026-05-08_aseglobal_ase-wus-kaohsiung-focoes-hub, 2026-05-26_semiconductor-digest_ase-310mm-plp-ectc2026, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-11_trendforce_ase-spil-zhunan-plant, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-07-01_trendforce_ase-price-hike-20pct, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-31_ase_cn224583735u-photoelectric-hybrid-rdl, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-10-08_ase-probing-needle-scrub-length, 2026-10-08_semieng_voltage-regulation-in-package, 2026-10-09_ieie-probe-card-mlc-signal-integrity]
+updated: 2026-10-25
+sources: [2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below, 2026-08-05_trendforce_tsmc-cowos-cow-outsourcing-osat, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2026-05-08_aseglobal_ase-wus-kaohsiung-focoes-hub, 2026-05-26_semiconductor-digest_ase-310mm-plp-ectc2026, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-11_trendforce_ase-spil-zhunan-plant, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-07-01_trendforce_ase-price-hike-20pct, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-31_ase_cn224583735u-photoelectric-hybrid-rdl, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-10-08_ase-probing-needle-scrub-length, 2026-10-08_semieng_voltage-regulation-in-package, 2026-10-09_ieie-probe-card-mlc-signal-integrity, 2026-10-22_semieng_foundries-osats-increasingly-overlap]
 related:
   - wiki/technologies/cowos.md
   - wiki/technologies/copos.md
@@ -334,3 +334,13 @@ Intel Foundry 的 ECTC 2026 官方部落格列出其 20 篇論文的合作方，
 ⚠ **ASE 件之全文 PDF 公開可取得，2026-10-08 列為「下輪可結清」之空缺（scrub length 絕對值與八因子排序），但本輪未執行** —— 該 DOI 已在 `raw/_collected_urls.txt` 內，依 spec §QUALITY RULES「不得重複抓取已收錄之 URL」⇒ **須改以其他管道（如 IMAPSource PDF 直連）取全文**，列為下輪作業項。
 
 *Source: [[sources/2026-10-09_ieie-probe-card-mlc-signal-integrity]]*
+
+## 2026-10-25 collect 更新：leading-edge 封裝營收取得第二個獨立口徑
+
+- ⭐⭐ **[[sources/2026-10-22_semieng_foundries-osats-increasingly-overlap]]（SemiEng, 2026-10-22）**：
+  - **ASE 今年已超過 $3.5B 的 leading-edge 封裝目標，並預期 2027 年倍增**（由 **Thomas Uhrmann（EV Group VP of sales）** 轉述）。
+  - **設備支出 $3.4B；2026 年預算上調 27%；之後再增資本支出 $1.5B（含 $600M 設備）**（Seeking Alpha）。
+  ⇒ 📌 **「$3.5B → 2027 倍增」與既載「2027 LEAP 目標 $7.5B+」為兩個來源、兩種口徑，而數值互相吻合** ⇒ 該目標自「公司自述」升格為**有第三方轉述佐證**。
+  ⚠ 轉述者為**設備供應商高管**（EV Group），依規範（41）計為**有利害關係之來源**；⚠ 設備支出數字來自 Seeking Alpha（二手財經），不作為本 wiki 權威數字。
+- ⭐ **產業結構定位**：同篇把 **2.5D 整合與面板組裝**列為代工廠與 OSAT 的最大重疊區，**混合接合為下一個移往 OSAT 的步驟**，且 **OSAT 不會在先進節點或前段與代工廠競爭**、**不買 EUV 等最先進設備**。
+  ⇒ 與既載 ASE COO 吳田玉「CoWoS/EMIB 不互斥」之表態同向：**OSAT 的競爭位置是在後段的廣度，而非前段的深度。**

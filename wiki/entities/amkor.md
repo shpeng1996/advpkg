@@ -3,8 +3,8 @@ title: "Amkor Technology"
 category: entity
 tags: [OSAT, advanced-packaging, FOCoS, Arizona, chiplet, Intel-EMIB, patent-signal, TIM]
 created: 2026-04-25
-updated: 2026-10-24
-sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-05-19_stocktitan_amkor-arizona-peoria-land-expansion, 2026-06-17_digitimes_amkor-tsmc-10year-arizona-deal, 2026-06-17_trendforce_tsmc-amkor-10year-arizona-advanced-packaging, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-30_amkor-ir_arizona-7billion-groundbreaking, 2026-06-30_digitimes_amkor-2.5d-hdfo-growth-2026, 2026-07-23_amkor-ir_nvidia-amkor-1-5b-strategic-partnership, 2026-09-26_article_amkor-embedded-trace-rdl, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-10-07_epo_amkor-bspdn-oriented-package-embedded-ipd, 2026-10-07_openalex_amkor-kelly-three-interposer-routes, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-08_semieng_voltage-regulation-in-package, 2026-10-13_amkor-cavity-as-allocated-volume, 2026-01-13_epo_amkor-cn121335572a-rdl-lateral-side-protective-layer]
+updated: 2026-10-25
+sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-05-19_stocktitan_amkor-arizona-peoria-land-expansion, 2026-06-17_digitimes_amkor-tsmc-10year-arizona-deal, 2026-06-17_trendforce_tsmc-amkor-10year-arizona-advanced-packaging, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-30_amkor-ir_arizona-7billion-groundbreaking, 2026-06-30_digitimes_amkor-2.5d-hdfo-growth-2026, 2026-07-23_amkor-ir_nvidia-amkor-1-5b-strategic-partnership, 2026-09-26_article_amkor-embedded-trace-rdl, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-10-07_epo_amkor-bspdn-oriented-package-embedded-ipd, 2026-10-07_openalex_amkor-kelly-three-interposer-routes, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-08_semieng_voltage-regulation-in-package, 2026-10-13_amkor-cavity-as-allocated-volume, 2026-01-13_epo_amkor-cn121335572a-rdl-lateral-side-protective-layer, 2026-10-22_semieng_foundries-osats-increasingly-overlap, 2025-09-16_CN120659336A_samsung-fowlp-subpackage-reconstructed-foplp]
 related:
   - wiki/technologies/rdl.md
   - wiki/technologies/cowos.md
@@ -536,3 +536,12 @@ Amkor 的 **Vineet Pancholi** 提供本 wiki 目前唯一的中介層測試覆�
 ### 需求側（2026-10-24）
 
 - **2026 年 6 月 TSMC 與 Amkor 簽署十年協議**，TSMC 向 Amkor 美國（Arizona）採購本地 CoWoS 封測產能（⚠ 二手，見 [[sources/2026-07-17_36kr_cowos-190k-wpm-2027-coretronic-copos-pilot]]）。
+
+## 2026-10-25 collect 更新：光子封裝的客戶需求已到 die-to-die／wafer attach；且需 active alignment
+
+- ⭐⭐⭐ **[[sources/2026-10-22_semieng_foundries-osats-increasingly-overlap]]（SemiEng, 2026-10-22）**：Amkor **Gerard John（senior director, Chiplets/FCBGA Business Unit）** 稱客戶正在要求 **electrical-die-to-photonics-die 或 wafer attach**，而這**需要 active alignment 以進行 fiber attach 與測試**。
+  ⇒ 📌 **既載 CPO 瓶頸清單（光學接著劑／雷射可靠度／熱）新增第四項：光纖的空間排列與貼附**，且本項是**唯一同時由 OSAT 與學界指認者**（學術側見本輪 HKUST「大量光纖貼附的空間排列是 CPO 關鍵挑戰」）。
+  ⇒ 📌 Amkor 的 CPO 參與自既載「**兩相冷卻預判**（CEO McCann）」與「光電混合 RDL」擴及**光學主動對準的組裝能力**——這是**組裝服務而非材料或結構**層的第一筆記錄。
+  ⚠ 無節距、無對準精度、無產能數字。
+- ⭐⭐ **結構面：Amkor 的「先小再拼」路線取得第二家獨立佐證。** 既載 **US20260334335A1（subpanel 拼貼於共用 panel carrier）**；本輪 [[entities/samsung]] **CN120659336A（FOWLP 子封裝切單後重構為 FOPLP）** 以不同手法達到同一效果 ⇒ 兩家獨立廠商、兩種手法、同一方向（**先在較小／較成熟載具完成單元，再上面板**）。
+- ⭐ **產業結構**：同篇把 **2.5D 與面板組裝**列為代工廠與 OSAT 的最大重疊區、**混合接合為下一個移往 OSAT 的步驟**（高量產仍主要在代工廠），並提及 Amkor 正投資亞利桑那新廠（⚠ 無新數字，既載 $12B／93K sqm／2029 完工不變）。

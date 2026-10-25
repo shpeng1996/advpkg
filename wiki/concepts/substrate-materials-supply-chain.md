@@ -3,8 +3,8 @@ title: "基板與材料供應鏈 / Substrate & Materials Supply Chain（ABF・T-
 category: concept
 tags: [ABF, Ajinomoto, substrate, supply-chain, Ibiden, Unimicron, Shinko, SEMCO, Kinsus, Nan-Ya-PCB, glass-core, warpage, bottleneck]
 created: 2026-10-03
-updated: 2026-10-21
-sources: [2026-10-03_tomshardware_abf-substrate-state-2026, 2026-10-03_thelec_philoptics-tgv-2mm-glass, 2026-10-03_digitaltoday_jntc-tgv-thickness-lineup, 2026-10-03_epo_semco-coreless-interposer-organic-bridge, 2026-10-06_xenospectrum_ajinomoto-abf-cut-unconfirmed-layers-per-side, 2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage, 2026-10-07_atlaspcb_abf-price-30pct-third-distinct-30-figure, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-13_all-glass-aip-no-polymer-in-the-stack, 2026-10-13_cpo-bottleneck-test-800x-area-mismatch]
+updated: 2026-10-25
+sources: [2026-10-03_tomshardware_abf-substrate-state-2026, 2026-10-03_thelec_philoptics-tgv-2mm-glass, 2026-10-03_digitaltoday_jntc-tgv-thickness-lineup, 2026-10-03_epo_semco-coreless-interposer-organic-bridge, 2026-10-06_xenospectrum_ajinomoto-abf-cut-unconfirmed-layers-per-side, 2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage, 2026-10-07_atlaspcb_abf-price-30pct-third-distinct-30-figure, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-13_all-glass-aip-no-polymer-in-the-stack, 2026-10-13_cpo-bottleneck-test-800x-area-mismatch, 2026-07-09_taiwannews_tgv-supply-chain-er-groupup-utechzone]
 related: [technologies/glass-substrate.md, concepts/advanced-packaging-market.md, concepts/geopolitics-advanced-packaging.md, entities/ibiden.md, entities/shinko.md, entities/semco.md, entities/absolics.md, entities/agc.md]
 ---
 
@@ -430,3 +430,23 @@ Samsung 官方（Tech Blog, 2025-05-26；內容基礎 2022 Samsung Foundry Forum
 ⚠ 熱應力 54%／30% 為**模擬**，無熱循環至失效之實測；**610 °C 燒結與封裝基板共燒製程之相容性未述。**
 - [ ] 新增空缺：**是否存在對應的「高 CTE 封裝介電體」研究（用於封裝基板而非被動元件）？**
   若有，則「CTE 匹配哪一端」可成為一條可追蹤的設計選擇軸。
+
+## 2026-10-25 collect 更新：台灣 TGV 鏈的參與形態是「設備＋排他權」
+
+[[sources/2026-07-09_taiwannews_tgv-supply-chain-taiwan-equipment]]（Taiwan News 2026-07-09，原始報導 CTEE）：
+
+| 公司 | 角色 | 現況 |
+|------|------|------|
+| **E&R Engineering（和椿／鈦昇）** | 雷射改質 TGV 製造設備 | **美國客戶已完成設備驗證並出貨**；另有後段玻璃雷射設備訂單；⚠ 分析師稱與 Intel 長期合作（非公司確認） |
+| **Group Up Industrial（群翊）** | TGV／FOPLP 設備 | 已小量出貨至美國客戶與主要封測廠；**訂單能見度至 2027 H1** |
+| **Utechzone（由田新技）** | AOI 檢測 | 開發玻璃基板與 **TGV 孔缺陷**檢測方案 |
+| **Unimicron（欣興）** | IC 載板 | ⚠ 分析師視為潛在參與者（製程與客戶認證可共用），非公司表態 |
+
+- 📌 **本輪專利軌與新聞軌首次在同一家公司交會**：既載 **TWI928565B（E&R ENG CORPORATION [TW]，glass interposer with TGV）** 已在庫 ⇒ **台灣的參與是設備與排他權，而非基板量產**，與韓（Absolics、SEMCO、Dongwoo）、日（DNP、Shinko、AGC、NEG）、中（BOE、ECHINT、華正新材）三系的參與形態都不同。
+- 📌 **「孔壁粗糙度影響銅電鍍與訊號」由產業側獨立指出** ⇒ 2026-10-24 立之「**瓶頸在被視為輔助步驟的那一步：第五例＝TGV 填孔金屬化**」**取得第三個獨立來源**。
+- ⭐ **時程**：多家瞄準 **2026 試驗線＋良率測試**；鑽孔／熱處理／濕製程／檢測設備商**已開始接單** ⇒ 與 Absolics（2027）、SEMCO（2027 Q3）、DNP（FY2028）同屬**2026 試線／2027–28 量產**的同一波。
+- ⚠ **成本**：TGV 玻璃核心基板**成本高於成熟 ABF**（定性，無數字）⇒ 既載 ABF（Ajinomoto ≥95% 市占、2026 Q3 漲價 +30%）之替代壓力**不因玻璃而立即緩解**。
+- ⚠ 文中無孔徑、面板尺寸、產能、投資金額。
+- ⭐ **缺實體頁新增三家台灣設備商**：E&R／和椿、Group Up／群翊、Utechzone／由田。
+
+**來源**：[[sources/2026-07-09_taiwannews_tgv-supply-chain-taiwan-equipment]]

@@ -3,8 +3,8 @@ title: "先進封裝熱管理 / Thermal Management in Advanced Packaging"
 category: concept
 tags: [thermal-management, liquid-cooling, 3D-IC, CoWoS, heat-dissipation, TIM, ECTC-2025, GaN, power-delivery, co-design, patent-signal, delamination]
 created: 2026-04-25
-updated: 2026-10-21
-sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2025-12-01_semiengineering_thermal-management, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-02_trendforce_samsung-hbm5-computex2026, 2026-05-21_semieng_hi-roadmap-nature-paper-intel, 2026-08-13_semieng_1mw-rack-debate-thermal, 2026-04-27_semieng_semiconductor-materials-misbehave, 2026-08-21_trendforce_chip-packaging-heat-ai-bottleneck-cpo-stco, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_arxiv_umn-multi-kw-power-delivery-3d-hi, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_samsung-cn122602880a-ivr-capacitor-interposer-core, 2026-10-02_imaps-dpc2026_delo-die-side-capacitor-encapsulation, 2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage, 2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk, 2026-10-07_epo_cas-freestanding-3c-sic-interposer, 2026-10-07_openalex_diamond-d2w-direct-bonding-vdw-45mpa, 2026-10-07_openalex_lau-silicon-bridge-microbump-reliability, 2026-10-08_etron-liquid-through-substrate-cavity, 2026-10-08_micron-cryogenic-package-hea-solder, 2026-10-08_advantest-singulated-die-test-thermal, 2026-10-09_cas-2013-microchannel-interposer-ebg, 2026-10-09_bjut-thermomech-phase-field-imc-tgv, 2026-10-13_large-area-sintering-three-challenges, 2026-10-13_cu-microparticles-ductility-vs-stiffness-tradeoff, 2026-10-13_beiyi-sic-low-buckling-sintering]
+updated: 2026-10-25
+sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2025-12-01_semiengineering_thermal-management, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-02_trendforce_samsung-hbm5-computex2026, 2026-05-21_semieng_hi-roadmap-nature-paper-intel, 2026-08-13_semieng_1mw-rack-debate-thermal, 2026-04-27_semieng_semiconductor-materials-misbehave, 2026-08-21_trendforce_chip-packaging-heat-ai-bottleneck-cpo-stco, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_arxiv_umn-multi-kw-power-delivery-3d-hi, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_samsung-cn122602880a-ivr-capacitor-interposer-core, 2026-10-02_imaps-dpc2026_delo-die-side-capacitor-encapsulation, 2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage, 2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk, 2026-10-07_epo_cas-freestanding-3c-sic-interposer, 2026-10-07_openalex_diamond-d2w-direct-bonding-vdw-45mpa, 2026-10-07_openalex_lau-silicon-bridge-microbump-reliability, 2026-10-08_etron-liquid-through-substrate-cavity, 2026-10-08_micron-cryogenic-package-hea-solder, 2026-10-08_advantest-singulated-die-test-thermal, 2026-10-09_cas-2013-microchannel-interposer-ebg, 2026-10-09_bjut-thermomech-phase-field-imc-tgv, 2026-10-13_large-area-sintering-three-challenges, 2026-10-13_cu-microparticles-ductility-vs-stiffness-tradeoff, 2026-10-13_beiyi-sic-low-buckling-sintering, 2026-02-23_openalex_56gbs-3d-siph-5nm-cmos-2p8pjbit-600gbsmm2, 2026-04-06_openalex_micron-siph-packaging-reliability-review, 2026-05-21_openalex_hkust-98ch-ultradense-optical-io-0p2mm2]
 related:
   - wiki/technologies/cowos.md
   - wiki/technologies/hybrid-bonding.md
@@ -1548,3 +1548,14 @@ Pd 表面合金化／微波誘發低溫 Cu–Cu 接合）**全部聚焦「能不
 GF（SEMI 訪談）：III–V 材料高溫表現不佳，整合壓力把 **InP 雷射與光放大器推近矽晶粒**，驅動可靠性研究。
 既載 **Celestica DS6005「現場可更換雷射」**（2026-10-15）。
 ➜ 📌 **一方把雷射推近晶粒（接受可靠性風險），一方把雷射做成可更換件（承認其為耗損件）。**
+
+## 2026-10-25 collect 更新：熱成為調變器的選擇理由；以及可靠度綜述的三大面向
+
+- ⭐⭐ **調變器的選擇理由可以是熱，而非速度或面積。** [[sources/2026-02-23_jssc_3d-siph-5nm-cmos-transceiver-600gbsmm2]]（IEEE JSSC, 2026-02-23）之 3D 整合 SiPh 收發器採 **EAM（電吸收調變器）**，且自述訴求為「**thermally robust**」；既載 CPO 調變器討論以 MRM（微環，需溫控）與 MZM 為主。
+  ⇒ 📌 與既載「**CPO 的熱是架構參數而非元件參數**」同向，但落點更前：**熱已進入元件選型的理由層**。
+  ⚠ 本篇**未給任何溫度或熱阻數值**，亦未給 MRM 的溫控功耗對照。
+- ⭐⭐ **矽光子封裝可靠度的三大面向之一即為熱管理**（[[sources/2026-04-06_micron_siph-packaging-reliability-review]]，Micron 台灣）：**材料選擇、熱管理、替代接合選項**並列。
+  ⚠⚠ 全文經 Emerald 不可得 ⇒ **具體熱數值未取得**；**Emerald 為本 wiki 第四個系統性收錄偏差管道**。
+- ⭐ **控制回路成為隱藏熱源與隱藏功耗**：[[sources/2026-05-21_jlt_hkust-98ch-ultradense-optical-io]] 的偏振串音規格須 **FPGA 即時重構 MZI** 維持，該功耗未給 ⇒ 與既載「探針卡自身主動元件的熱功率 PT2」（Technoprobe）同構：**量測／控制硬體自身的熱必須與被測對象的熱分開計列。**
+
+**來源**：[[sources/2026-02-23_jssc_3d-siph-5nm-cmos-transceiver-600gbsmm2]]、[[sources/2026-04-06_micron_siph-packaging-reliability-review]]、[[sources/2026-05-21_jlt_hkust-98ch-ultradense-optical-io]]

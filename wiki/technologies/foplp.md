@@ -3,8 +3,8 @@ title: "FOPLP — 扇出面板級封裝 / Fan-Out Panel-Level Packaging"
 category: technology
 tags: [fan-out, panel-level, TSMC, Samsung, ASE, Powertech, Innolux, CoPoS, InFO, cost-reduction, delamination, DCB, CTE]
 created: 2026-05-03
-updated: 2026-10-24
-sources: [2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-07-31_trendforce_ase-capex-record-10-5b-leap-foplp, 2025-09-12_trendforce_foplp-competitive-2025, 2026-04-13_trendforce_copos-pilot, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-21_3dincites_acm-wlp-plp-process-trends, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-15_digitimes_manz-310mm-foplp-ecd-equipment, 2026-06-13_digitimes_linkotech-foplp-rollout-traction, 2026-06-20_prnewswire_manz-asia-310mm-ecd, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_digitimes_tsmc-foplp-timeline-skepticism, 2026-07-06_trendforce_cfmee-plp2000-china-first-plp, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-08-06_siliconbox_500m-units-panel-scale, 2026-02-18_siliconbox_ep4697377a1-fanout-panel-metal-sealing-ring, 2026-07-28_xianfeng_cn122476946a-alignment-mark-protection, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage, 2026-10-06_thelec_sec-xray-tsv-tgv-inspection-1um, 2026-10-07_epo_evg-zonewise-adaptive-litho-die-shift, 2026-10-07_epo_evg-inorganic-dual-release-layer-common-solvent, 2026-10-08_pku-embedded-glass-fanout-roughness, 2026-10-13_additive-patterning-and-metal-density-as-warpage-knob, 2026-10-13_beiyi-sic-low-buckling-sintering, 2026-10-13_large-area-sintering-three-challenges]
+updated: 2026-10-25
+sources: [2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-07-31_trendforce_ase-capex-record-10-5b-leap-foplp, 2025-09-12_trendforce_foplp-competitive-2025, 2026-04-13_trendforce_copos-pilot, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-21_3dincites_acm-wlp-plp-process-trends, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-15_digitimes_manz-310mm-foplp-ecd-equipment, 2026-06-13_digitimes_linkotech-foplp-rollout-traction, 2026-06-20_prnewswire_manz-asia-310mm-ecd, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_digitimes_tsmc-foplp-timeline-skepticism, 2026-07-06_trendforce_cfmee-plp2000-china-first-plp, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-08-06_siliconbox_500m-units-panel-scale, 2026-02-18_siliconbox_ep4697377a1-fanout-panel-metal-sealing-ring, 2026-07-28_xianfeng_cn122476946a-alignment-mark-protection, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage, 2026-10-06_thelec_sec-xray-tsv-tgv-inspection-1um, 2026-10-07_epo_evg-zonewise-adaptive-litho-die-shift, 2026-10-07_epo_evg-inorganic-dual-release-layer-common-solvent, 2026-10-08_pku-embedded-glass-fanout-roughness, 2026-10-13_additive-patterning-and-metal-density-as-warpage-knob, 2026-10-13_beiyi-sic-low-buckling-sintering, 2026-10-13_large-area-sintering-three-challenges, 2025-09-16_CN120659336A_samsung-fowlp-subpackage-reconstructed-foplp, 2026-10-22_semieng_foundries-osats-increasingly-overlap]
 related:
   - wiki/technologies/rdl.md
   - wiki/technologies/copos.md
@@ -1364,3 +1364,39 @@ Lam 的先進封裝簡報明列其製程設備支援範圍為「**300 mm 至 600
 ⇒ **雙面 RDL** 與既載 [[entities/deca-tech]] US20260136970A1（studs 與垂直互連兩端與封膠上下表面共面）同向。
 
 **來源**：[[sources/2026-10-22_epo_amkor-subpanel-tiling-panel-carrier]]
+
+## 2026-10-25 collect 更新：FOWLP 可以是 FOPLP 的前段；面板吞吐／良率劣勢的第一條技術回應路徑 ★★★
+
+### ⭐⭐⭐ 一、流程順序與既載論述相反：晶圓級子封裝 → 切單 → 重構為面板
+
+[[sources/2025-09-16_epo_samsung-fowlp-subpackage-reconstructed-foplp]]：Samsung **CN120659336A**（fam 94869047）請求項三步——
+**① 以 FOWLP 製程形成半導體子封裝 → ② 自晶圓切單 → ③ 將子封裝重構為 FOPLP。**
+
+既載本頁所有面板路線皆為「**裸晶 → 面板**」（直接把 known-good die 重構於面板載具）。
+⇒ 📌 **FOWLP 不必然是 FOPLP 的競爭者，可以是其上游前段** —— 本頁「晶圓 vs 面板」的二元對立須加入**第三種關係：串接**。
+
+### ⭐⭐⭐ 二、兩家獨立廠商都選擇「先在小載具上做好單元，再拼到面板」
+
+| 來源 | 手法 | 移動的對象 |
+|------|------|-----------|
+| **Amkor US20260334335A1**（2026-10-24 收錄） | **subpanel 拼貼於共用 panel carrier** | 載具尺寸（唯一「不選面板尺寸」的面板尺寸落點） |
+| **Samsung CN120659336A（本輪）** | **FOWLP 子封裝切單後重構為 FOPLP** | **流程階段** |
+
+⇒ 📌 既載「**把設計移到規格較鬆的區間**」家族（放寬型）**第九例，且移動對象首次是流程階段**（前八例移動的是製程、尺寸、設計區間）。
+
+### ⭐⭐ 三、對既載面板劣勢指控的第一條可能回應路徑
+
+既載 Lau 的量化指控：面板同時承擔**吞吐劣勢**（pick-and-place 時間 5.3×、成型設備閒置率 94%）與**良率劣勢**（70–85% vs >90%）；且本 wiki 空缺明列「**510×515／600 mm 陣營對吞吐量問題的回應**」為未取得。
+
+「先做子封裝再上面板」在結構上**同時緩解兩者**：面板上處理的是**較少、較大、已完成**的單元。
+⇒ 📌 **該空缺不結清，但取得第一條可能的技術回應路徑。** ⚠ **本 wiki 推論**——請求項完全未提吞吐、良率或面板尺寸。
+⭐ 若子封裝在進面板前即可測，則本件亦落在既載「**測試左移**」家族 —— ⚠ 同為本 wiki 推論，請求項未述測試。
+
+### ⭐⭐ 四、面板尺寸的「310×310 為何是這個尺寸」自一個理由增為兩個
+
+[[sources/2026-10-22_semieng_foundries-osats-increasingly-overlap]]：文中以 **TSMC 轉向 310 × 310 mm 使晶圓設備商較容易放大** 作為該尺寸的理由（並稱文中討論之面板尺寸約為**每邊 500 mm** 級）。
+⇒ 既載 Lau 的理由為**面積效率 vs 製程控制的平衡點**（600 mm 面板 pick-and-place 5.3×、成型設備閒置 94%）。
+📌 **兩個互不相同的論證**：**設備可放大**（供應端）vs **製程經濟**（製造端）。既載「310 為何是這個尺寸」自「一個獨立論證」增為兩個。
+⭐ 同篇另指出**面板組裝**與 2.5D 並列為代工廠→OSAT 的**最大重疊區**。
+
+**來源**：[[sources/2025-09-16_epo_samsung-fowlp-subpackage-reconstructed-foplp]]、[[sources/2026-10-22_semieng_foundries-osats-increasingly-overlap]]

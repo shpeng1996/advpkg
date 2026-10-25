@@ -3,8 +3,8 @@ title: "美光科技 / Micron Technology"
 category: entity
 tags: [memory, HBM4, DRAM, NAND, CapEx, Virginia, Idaho, New-York, onshoring]
 created: 2026-05-03
-updated: 2026-10-21
-sources: [2026-09-27_semieng_chip-week-156-india-tata-besi-izmo, 2025-12-18_trendforce_micron-capex-hbm4, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-03-17_trendforce_gtc2026-key-takeaways, 2025-08-05_3dincites_iftle636-samsung-lsb-micron-virginia, 2026-01-23_trendforce_hbm4e-development, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-26_semieng_chip-week-144, 2026-06-25_thelec_micron-q3-fy2026-record, 2026-07-06_trendforce_micron-hiroshima-fab-hbm-1gamma, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-10_tomshardware_micron-250b-us-investment-globalwafers, 2026-07-10_semieng_chip-week-146, 2026-08-21_semieng_chip-week-152, 2026-10-06_epo_micron-interposer-embedded-active-buffers, 2026-10-08_micron-cryogenic-package-hea-solder, 2026-10-13_hbm-share-of-accelerator-cost, 2026-10-13_samsung-hbm-33pct-hcb-vs-mrmuf]
+updated: 2026-10-25
+sources: [2026-09-27_semieng_chip-week-156-india-tata-besi-izmo, 2025-12-18_trendforce_micron-capex-hbm4, 2026-01-09_trendforce_nvidia-hbm4-16layer, 2026-02-26_trendforce_hbm-cleanroom-race, 2026-03-17_trendforce_gtc2026-key-takeaways, 2025-08-05_3dincites_iftle636-samsung-lsb-micron-virginia, 2026-01-23_trendforce_hbm4e-development, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-26_semieng_chip-week-144, 2026-06-25_thelec_micron-q3-fy2026-record, 2026-07-06_trendforce_micron-hiroshima-fab-hbm-1gamma, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-10_tomshardware_micron-250b-us-investment-globalwafers, 2026-07-10_semieng_chip-week-146, 2026-08-21_semieng_chip-week-152, 2026-10-06_epo_micron-interposer-embedded-active-buffers, 2026-10-08_micron-cryogenic-package-hea-solder, 2026-10-13_hbm-share-of-accelerator-cost, 2026-10-13_samsung-hbm-33pct-hcb-vs-mrmuf, 2026-04-06_openalex_micron-siph-packaging-reliability-review]
 related:
   - wiki/technologies/hbm4.md
   - wiki/entities/sk-hynix.md
@@ -432,3 +432,12 @@ Micron 於 2026-09 公開之專利顯示：**基板含金屬核心，其強度�
 - ⚠ **本輪來源未指明設定 775 µm 的 JEDEC 文件編號**（僅就 HBM4 介面規格引用 JESD270-4）
   ⇒ 該數字應標為「依多個二手來源一致」而非「標準明訂」。
 - ⚠ 二手報導、單一來源；本件日期 2026-07-24。
+
+## 2026-10-25 collect 更新：Micron 台灣團隊發表矽光子封裝可靠度綜述
+
+- ⭐⭐ **[[sources/2026-04-06_micron_siph-packaging-reliability-review]]（`10.1108/mi-12-2025-0262`，Microelectronics International, 2026-04-06，被引 2）**：作者 **Chong Leong Gan、Min-Hua Chung、C.I. Huang**，單位 **Micron (Taiwan)**。
+  以**硬體可靠度要求（hard requirements）**為主軸，比較矽光子封裝與其他矽封裝選項；三大面向為**材料選擇、熱管理、替代接合選項（alternative bonding options）**；定位為**自元件到系統層級的選擇問題**。
+  ⇒ 📌 **記憶體 IDM 的封裝團隊在研究光連接的可靠度，而非只研究 HBM 堆疊** —— 與本輪 NIST 綜述把「**optically connected memory**」列為 photonic via 的應用之一互為佐證。⚠ 由作者單位推論之動機，非論文主張。
+  ⇒ 既載 beyond-HBM 橫向比較空缺（SPHBM4／HBF／HBC／NVHBM／zHBM）**新增第六種路線：光連接記憶體**，本 wiki 無任何量化資料。
+  ⚠⚠ **全文經 Emerald 出版社頁不可得** ⇒ 📌 **Emerald 成為本 wiki 第四個系統性收錄偏差管道**（既有：Elsevier／Nature 全文頁／DIGITIMES 付費牆）；最高優先空缺所需的**濕熱可靠度小時數仍然空白**，追蹤方式新增「取得本篇全文」。
+  ⚠ 摘要層**無任何量化值**；不改既載任何 Micron 的 HBM 或產能數字。

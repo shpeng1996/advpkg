@@ -3,8 +3,8 @@ title: "UCIe — Universal Chiplet Interconnect Express"
 category: technology
 tags: [standards, chiplet, interconnect, UCIe, 3D, hybrid-bonding, UCIe-3.0]
 created: 2026-04-24
-updated: 2026-10-24
-sources: [2026-08-24_intel-newsroom_hot-chips-2026-diamond-rapids-foveros-ucie, 2026-04-24_initial-survey, 2026-04-01_semiengineering_chiplets-2026, 2025-01-28_3dincites_iftle-618-ucie-standard-vs-ucie3, 2025-01-01_semieng_ucie-1-6t-io-chiplets-ai-datacenter, 2025-09-03_uciexpress_ucie30-spec, 2026-03-05_uciexpress_chiplet-summit-2026, 2026-02-12_semieng_ucie3-technical-deepdive, 2026-10-06_epo_tenstorrent-discrete-pitch-adapter-substrates]
+updated: 2026-10-25
+sources: [2026-08-24_intel-newsroom_hot-chips-2026-diamond-rapids-foveros-ucie, 2026-04-24_initial-survey, 2026-04-01_semiengineering_chiplets-2026, 2025-01-28_3dincites_iftle-618-ucie-standard-vs-ucie3, 2025-01-01_semieng_ucie-1-6t-io-chiplets-ai-datacenter, 2025-09-03_uciexpress_ucie30-spec, 2026-03-05_uciexpress_chiplet-summit-2026, 2026-02-12_semieng_ucie3-technical-deepdive, 2026-10-06_epo_tenstorrent-discrete-pitch-adapter-substrates, 2026-02-23_openalex_56gbs-3d-siph-5nm-cmos-2p8pjbit-600gbsmm2]
 related:
   - wiki/technologies/hybrid-bonding.md
   - wiki/technologies/hbm4.md
@@ -476,3 +476,13 @@ Siemens（2026-02-05）：銅負責封裝內通訊，光學負責封裝對封裝
 ⚠ 本篇無線寬／線距、層數、資料率（GT/s）、dB 值、節距 ⇒ 不得與任何廠商的量產橋數字比較。
 
 **來源**：[[sources/2026-10-22_openalex_si-bridge-chessboard-interconnect-2x-density-ucie]]
+
+## 2026-10-25 collect 更新：「wide and slow」régime 首次有量產級電路實例
+
+- ⭐⭐ **WaS（wide and slow）的正式邊界取得第一個電路層實例。** 既載定義：**WaS ＝ <64 Gbit/s, PAM2；FaN（fast and narrow）＝ >100 Gbit/s, PAM4**。
+  [[sources/2026-02-23_jssc_3d-siph-5nm-cmos-transceiver-600gbsmm2]]（IEEE JSSC, 2026-02-23）之 **56 Gb/s NRZ（PAM2）** 光 I/O 收發器恰落在 WaS 區間內，並給出完整量測：**2.8 pJ/bit（整鏈路，含外部光引擎）**、**>600 Gb/s/mm² 面積頻寬密度**（分母＝電子晶粒 **0.09 mm²**）、**1.8 Vpp／ER 3.5 dB**、**RX OMA −11 dBm @ BER <10⁻¹²**。
+  ⇒ 📌 該家族自「有可檢驗邊界」進入「**有量產級電路實例**」。
+- ⭐⭐ **「符合 UCIe」須標註哪幾項規格與在什麼速率下**（既載規範）**再獲一例支持**：本篇自述定位為「**chiplet 為基礎的光 I/O**」，但**未宣稱 UCIe 相容**，亦未給節距或通道數 ⇒ **「chiplet 光 I/O」與「UCIe 光學化」不是同一件事**，引用時不可互換。
+- ⭐ **EIC 節點為 5 nm** ⇒ 既載 base die 節點競賽（HBM4 base die：TSMC 12nm-class／Samsung 2nm）之外，**光 I/O 的 EIC 節點**為本 wiki 第三條「非運算晶粒也在追節點」的軸。
+
+**來源**：[[sources/2026-02-23_jssc_3d-siph-5nm-cmos-transceiver-600gbsmm2]]
