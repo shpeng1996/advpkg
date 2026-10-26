@@ -5828,3 +5828,63 @@ warning: unable to unlink '.../.git/index.lock': Operation not permitted
   ➜ 📌 **新增作業規範（78）：在使用者端掛載資料夾內 commit 之後，必須 `find .git -name "*.lock"` 檢查並以 `mv` 清除殘留鎖檔；**
   **殘留鎖檔不會讓 commit 失敗，但會讓「下一個」git 指令失敗，因此屬於必須在同一輪內收尾的副作用。**
   ⚠ `.git/objects/**/tmp_obj_*` 暫存物件亦無法刪除，但不阻擋 git 運作，本輪未處置（屬無害堆積，建議使用者自行清理）。
+
+## [2026-10-26] collect | 每日自動蒐集 — 先進封裝最新動態
+- 搜尋查詢數：新聞 7 組 / 專利 4 組 / 論文 7 組
+- 成功抓取：15 篇（articles 5, patents 5, papers 5, reports 0）
+- 失敗/跳過：22 篇（**內容已載／URL 已在庫 8**：SemiEng `hybrid-bonding-makes-strides-toward-manufacturability`、SemiEng `ucies-major-technical-components-are-now-in-place`、SemiEng `chiplet-standards-aim-for-plug-n-play`、TrendForce 20260617 CoPoS／FOPLP 玻璃核心、thelec 11912 面板級十倍成長、tomshardware `hybrid-bonding-roadmap-examined`、arxiv 2609.24904 multi-kW 3D-HI 供電、electronicdesign 55237347 Empower 垂直供電（依規範（71）逐項 grep：「Empower」既有檔案命中 37 處、「vertical power delivery」13 處、「900 µm」18 處 ⇒ 供電與 HBM 高度兩軸之新聞側已飽和，本輪改採 Intel 一手白皮書）；**低相關／無數據 2**：wccftech SK hynix HBM5/HBM5E 2029-2031 路線圖（無頻寬、無層數、無 I/O 寬度，且未提封裝技術）、remio.ai／semiconductorx 之無日期比較表；**論文棄收 12**：Zenodo 預印本 5 筆（低訊號 venue）、IJEMT／Acta Innovations／Applied and Computational Engineering／Finance & Economics 各 1 筆（低訊號或非封裝）、另 4 筆低相關）
+- 資料源狀態：**WebSearch ACTIVE ✓ | EPO OPS ACTIVE ✓ | OpenAlex ACTIVE ✓**（OPS 呼叫 **5 次**＝1 auth＋4 search，≤10，四組查詢全數 HTTP 200、無 403/429，**本輪未觸發規範（75）之 404 處置**；OpenAlex 7 組查詢全數 HTTP 200；⚠ `OPENALEX_KEY` 仍不存在，續以 `mailto` polite pool 運作）
+- 新增 wiki 頁面：15 頁（全為來源摘要頁）
+  `sources/2026-10-16_3dincites_scaling-advanced-packaging-capacity-concentration`、
+  `sources/2026-08-25_skhynix_hybrid-bonding-tech-note-hbm4e-hbm5`、
+  `sources/2026-08-01_intel_power-delivery-c2vr-loss-budget`、
+  `sources/2026-07-21_imaps_top-pop-package-warpage-molding-compound`、
+  `sources/2026-07-02_epo_samsung-bspdn-rdl-substrate-in-package`、
+  `sources/2026-05-19_epo_etron-hbm-side-edge-interconnect`、
+  `sources/2026-04-21_acsaelm_skhynix-tel-sicn-bond-wave-ipd`、
+  `sources/2026-02-16_tcpmt_ch4-plasma-low-temp-cu-bonding-260c`、
+  `sources/2026-02-06_epo_beijing-xinli-reconstituted-ingaas-c2w`、
+  `sources/2026-01-23_tcad_yapplus-pad-layout-aware-hybrid-bonding-yield`、
+  `sources/2026-01-14_ijpem_kaist-cmp-more-than-moore-review`、
+  `sources/2025-12-03_inpractise_besi-hybrid-bonding-yield-bottlenecks`、
+  `sources/2025-11-20_36kr_large-chip-packaging-interposer-cost-share`、
+  `sources/2025-01-16_epo_pep-panel-warpage-solder-ball-jig`、
+  `sources/2017-05-30_epo_tsmc-dummy-metal-coverage-hybrid-bond-yield`
+- 更新 wiki 頁面：17 頁
+  `technologies/hybrid-bonding`、`technologies/hbm4`、`technologies/tsv`、`technologies/foplp`、`technologies/emib`、`technologies/cowos`、
+  `concepts/power-delivery-packaging`、`concepts/test-metrology-packaging`、`concepts/advanced-packaging-market`、`concepts/substrate-materials-supply-chain`、`concepts/thermal-management`、
+  `entities/intel`、`entities/samsung`、`entities/sk-hynix`、`entities/tel`、`entities/besi`、`entities/kulicke-soffa`、`entities/tsmc`、`entities/etron`、`entities/amkor`、`entities/applied-materials`、
+  `index`、`overview`、`log`（含三根目錄頁共 24 個檔案變動）
+- 主要新知識：①**「混合接合良率」自散落數字收斂為五項機制**（UCLA YAP+：疊對失準／微粒缺陷／Cu recess 變異／表面粗糙度／Cu 墊密度；並區分 critical／redundant／dummy 三類墊、探討冗餘墊換良率、加速 >1,000× 並附開源模擬器）⇒ 本 wiki 自此以此為標準欄位；⚠⚠ **但設備側（Besi 訪談）把翹曲列為三大瓶頸之一而該五機制不含翹曲 ⇒ 新增空缺**；⚠ 三個機制側來源**皆無良率百分比 ⇒ 空缺不結清**。②**本 wiki 首條完整因果鏈「覆蓋率 → CMP 平坦度 → 階高差 → 接合良率」三段齊備且各有獨立來源**（TSMC US9666566B1：覆蓋率 **40–90%**、WEE **0.5–1.5 mm**／KAIST：**次奈米平坦度**／階高差 **<約 400 Å** ＋ YAP+ 建模；規範 41 檢查通過）⇒ **「墊密度是混合接合良率的一階變數」即刻成立，非候選**。③**強度與對準首次被證明不可同時最佳化**（SK hynix × Tokyo Electron Kyushu × 橫濱國大，SiCN：**N₂ 100 W 強度最大但 IPD 高／O₂ 對準穩定但強度低**）⇒ **「最佳值必然是區間」家族第五型：單一參數、雙驗收項、反向**；並新增規範：**「對準精度」須再標註接合前（機台）或接合後（IPD）**，且**接合波速度不是對準品質的代理指標**。④**封裝供電的瓶頸隨功率放大而換手**（Intel 一手白皮書：1 kW 時最大單項為 **droop 13.9%**、5 kW 時為 **I²R 26.8%**；有效功率 **66.0% → 41.8%**；**I²R 增約 25× 而 MBVR 損耗僅 6.6×**）⇒ 並衍生「**供電路徑自身是第二個熱源，5 kW 級別其量級約 4,829 W 與晶粒功耗同階**」。⑤**A/mm² 新增第五個分母：C2VR 10 A/mm²，分母＝調壓器矽晶片自身面積**（≤2.4 V／>90%／可薄化 <100 µm）。⑥**「某個結構位被整體取消」家族成立（三例）**：imec 不用接著劑／Etron 不用貫穿孔（訊號移至晶粒側緣）／北京芯力不逐顆對準（改重組晶圓一次晶圓級對準）⇒ 可作為判讀前瞻專利的分類：**改良型 vs 取消型**。⑦**「集體對準是 D2W 吞吐量的結構性解法」自候選升為成立**（imec collective D2W ＋ 北京芯力，兩個獨立落點）。⑧**D2W 吞吐量首次取得分母**：**7,800 die／wafer** ⇒ 既載 1,600–2,000 die/hr 換算為約 **3.9–4.9 機台小時／片晶圓**（本 wiki 換算，僅適用該情境）。⑨**翹曲處置自兩類擴為三類**（材料側三參數／疊構設計側／**單站機械約束**＝PEP 植球治具），且**翹曲成因須分可逆（CTE）與不可逆（化學固化收縮）**。⑩**中介層占先進封裝報價 50–70%** ＋ **四家買方按金額取 ~90% CoWoS／92% HBM 卻僅占先進邏輯晶粒約 12%（Epoch AI）** ⇒ 兩個互不相關來源自需求側與成本側同指：**封裝產能的分配與晶粒數量脫鉤，而與價值密度掛鉤**。
+- 專利訊號：**本輪五件的共同點是「把既有結構位整個拿掉或換層位」**——**Etron JP2026082675A** 把 HBM 訊號出口自貫穿孔移到**晶粒側緣**（貫穿孔功能分類新增第四列「不用貫穿孔」，且首次與切割道寬度耦合）、**北京芯力 CN121487636A** 把「逐顆對準」換成**重組晶圓一次晶圓級對準**（並把該手法首次用於 InGaAs/InP 異質整合，薄化驗收項新增「光學穿透率」）、**Samsung US20260190965A1** 把**背面供電的佈線層**自元件層搬進**封裝的重佈基板**（與 Intel 把調壓器搬到晶粒下方構成兩個層位解法）、**PEP US20250022826A1** 把面板翹曲控制綁在**單一製程站的夾持與脫模機構**（既載規範 62 之「第五項：分離步驟與區位」首次取得排他權實例）、**TSMC US9666566B1（2017）** 把**虛設金屬覆蓋率 40–90%** 與**階高差 <400 Å** 寫成排他權（九年前案，說明此槓桿早被排他權化，變的是採用與間距）。⇒ 📌 **五件中四件零量化值，僅 TSMC 件給出三組數值**；全部依專利訊號原則記於「專利訊號」小節並加保留措辭。
+
+### 作業記錄（2026-10-26）
+
+- ✅ **`device_bash` 全程正常**：WebSearch 於雲端；**EPO OPS 與 OpenAlex 之 curl 於使用者端 Linux 工作區**；檔案讀寫與 git 皆在 `device_bash` 完成；**本輪未使用 stage／commit 檔案工具，`.env` 未離開使用者端機器。**
+- ✅ **dedup 於所有查詢完成後一次性執行（規範 69）**：Track B 四組、Track C 七組之輸出合併後才比對。
+  - **family-id dedup 攔下 8 件**（60 個唯一 family 中）。
+  - **DOI／正規化標題 dedup 攔下 52 件**（162 個唯一標題中）⇒ **論文軌的高相關命中過半已在庫。**
+  - **另 61 筆無摘要者依 §4.3 棄收。**
+- ⚠⚠ **新觀察：Track C 的「無摘要」比例為歷輪偏高——162 個唯一標題中 61 筆無摘要（約 38%）。** 📌 既載「系統性收錄偏差管道」（Elsevier／Nature 全文頁／DIGITIMES／Emerald）在論文軌之影響首次可量化；**建議下輪就無摘要筆數做來源分佈統計**，以確認是否為單一出版商主導。
+- ✅ **本輪依 2026-10-25 作業記錄之建議回到主題輪替**（上輪 14 篇中 10 篇為 CPO 深掘）：本輪四軸為**混合接合良率／面板與封裝翹曲／供電／HBM**，15 篇中 9 篇與混合接合相關、3 篇與翹曲相關、3 篇與供電／HBM 相關。
+- 📌 **刻意收錄四件逾窗來源，理由各自記錄**：
+  - **TSMC US9666566B1（2017-05，九年前）**：唯一給出虛設金屬覆蓋率與階高差之排他權數值；處置同既載 2013 年微流道件（**引用必須標註年份，不得作為當前量產參數**）。
+  - **PEP US20250022826A1（2025-01，約 21 個月）**：第三類翹曲處置（單站機械約束）之唯一落點。
+  - **In Practise 訪談（2025-12，約 11 個月）**：**7,800 die/wafer** 為既載 D2W 吞吐量數字的唯一分母。
+  - **36Kr（2025-11，約 11 個月）**：**中介層占報價 50–70%** 之唯一來源。
+- ⚠⚠ **三件來源有明確的利益或獨立性瑕疵，已於各頁標註且不得互證**：
+  - **3D InCites 投書作者任職 Kulicke & Soffa（TCB 機台商）**，而文中同時主張「TCB 高速成長」與「混合接合機台市場有限」⇒ 規範（41）（70），於該對立上非中立。
+  - **In Practise 受訪者為 BESI 前任高管**（混合接合機台商）⇒ 於「是否已可規模化」之判斷上非中立；且**標題所稱 2026–2030 採用時程在可見正文中完全沒有內容**，不得引用為時程來源。
+  - **SK hynix Newsroom 技術札記之撰稿者為 Inha 大學 Joo Seunghwan 教授**，即既載 `entities/asml` 之 2026-04-28「ASML 以 Twinscan 雙站專利路徑瞄準 W2W」分析的**同一人** ⇒ 規範（41）不計獨立；規範（70）**不得作為 SK hynix 一手技術揭露**（含「NAND >400 層、量產 2027」，原文自身以 reportedly 表述）。本 wiki 處置：該札記歸「外部專家意見」，同輪之 ACS AEM 論文（含 SK hynix 研究人員）歸「SK hynix 一手研究」，**分別計數但不互證**。
+- ✅ **規範（41）首次用於「拒收一件技術上相關的專利」**：**ND Hi Tech Lab × Invent and Collaboration Laboratory US20240421027A1**（fam 93844746，基板第一腔體供液體通過＋冷板第二腔體連通＋STI 區 UGI＋雙面冷卻供電訊號）本可作為既載候選論述「載體的通道化（待第三例）」之升格依據，但**其發明人 TONG HO-MING／LU CHAO-CHUN 與既載「Etron 連續兩件」為同一團隊** ⇒ **不構成獨立第三例，候選維持不升格**；且同樣零量化值 ⇒ **「載體通道化整條線零量化值」自連續四例延長為連續五例**。**列管 fam 93844746。**
+- ✅ **規範（39）之事前檢索**：2026-10-25 列管之 `10.4071/001c.165359`（Top PoP 翹曲）與 `10.3390/mi17070853`（2.5D 翹曲均質化）皆先 grep 確認未收錄；**前者收錄並結清該列管項，後者續列管**。
+- ✅ **規範（53a）續行：刪除權限全程未申請**（本輪無重複檔，無須 `mv`）。
+- ✅ **新增作業規範建議四條（79）–（82）**，均自本輪檢索實測推得（詳見 `overview.md`）：
+  **（79）** BSPDN／power delivery 類檢索須與封裝 CPC（H10W）交集（本輪 56 命中中絕大多數為 FEOL 之 GAA／nanosheet 元件案件）。
+  **（80）** 「panel + warpage」檢索須與半導體封裝 CPC（H10W／H10P）交集（本輪 45 命中中絕大多數為顯示器／偏光板／LCD，僅 2 件相關）。
+  **（81）** 感測器／光電異質整合之接合與 TSV 案件須納入 **H10F** 檢索軸（北京芯力件之 CPC 僅 H10F39/90，純 H10W 檢索會漏）。
+  **（82）** 引用混合接合之「低溫」必須同時標註**壓力與時間**；引用「潔淨」必須標註**對象**（無氧／無碳／無微粒）。
+- ✅ **`entities/etron.md` 之 frontmatter 原無 `sources:` 欄位，本輪補建**（inline 格式），為一筆 schema 修補。
+- ⚠ **既載 lint 問題續列，本輪均未修復**：`wiki/technologies/info-wmcm.md` 非合法 UTF-8（2026-09-17 發現）；`wiki/index.md` 來源清單非全域日期排序（本輪 15 筆以降日序插入於清單頂端，未做全域重排）；`index.md` 來源連結數與 `wiki/sources/` 實際檔數之差額（2026-10-25 記為 14，其中 1 筆待確認）。
+- ✅ **本輪未觸碰 `raw/` 下既有任何檔案**（新增 15 個 raw 檔、對 `_collected_urls.txt` 追加 15 行）；**未修改 `CLAUDE.md`**；**未修改 `schedule.md`**。
+- 📌 **下輪建議**：①**取全文**：SiCN 之 IPD nm 值（ACS OA PDF）、Top PoP 三參數數值（IMAPS OA PDF）、YAP+ 五機制權重；②**新主題**：**Ru–Ru 混合接合**（`10.1021/acsami.5c23710`，Ru 取代 Cu 之全新材料軸）、**CPO 光學接著劑可靠度**（最高優先空缺，續追）、**玻璃基板之有空隙 TGV 高頻電性**、**OSAT 競爭格局概念頁**（列管多輪未建）。

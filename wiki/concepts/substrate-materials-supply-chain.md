@@ -3,8 +3,8 @@ title: "基板與材料供應鏈 / Substrate & Materials Supply Chain（ABF・T-
 category: concept
 tags: [ABF, Ajinomoto, substrate, supply-chain, Ibiden, Unimicron, Shinko, SEMCO, Kinsus, Nan-Ya-PCB, glass-core, warpage, bottleneck]
 created: 2026-10-03
-updated: 2026-10-25
-sources: [2026-10-03_tomshardware_abf-substrate-state-2026, 2026-10-03_thelec_philoptics-tgv-2mm-glass, 2026-10-03_digitaltoday_jntc-tgv-thickness-lineup, 2026-10-03_epo_semco-coreless-interposer-organic-bridge, 2026-10-06_xenospectrum_ajinomoto-abf-cut-unconfirmed-layers-per-side, 2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage, 2026-10-07_atlaspcb_abf-price-30pct-third-distinct-30-figure, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-13_all-glass-aip-no-polymer-in-the-stack, 2026-10-13_cpo-bottleneck-test-800x-area-mismatch, 2026-07-09_taiwannews_tgv-supply-chain-er-groupup-utechzone]
+updated: 2026-10-26
+sources: [2026-10-03_tomshardware_abf-substrate-state-2026, 2026-10-03_thelec_philoptics-tgv-2mm-glass, 2026-10-03_digitaltoday_jntc-tgv-thickness-lineup, 2026-10-03_epo_semco-coreless-interposer-organic-bridge, 2026-10-06_xenospectrum_ajinomoto-abf-cut-unconfirmed-layers-per-side, 2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage, 2026-10-07_atlaspcb_abf-price-30pct-third-distinct-30-figure, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-13_all-glass-aip-no-polymer-in-the-stack, 2026-10-13_cpo-bottleneck-test-800x-area-mismatch, 2026-07-09_taiwannews_tgv-supply-chain-er-groupup-utechzone, 2026-07-21_openalex_top-pop-package-warpage-molding-compound, 2026-10-16_3dincites_scaling-advanced-packaging-capacity-concentration, 2026-01-14_openalex_kaist-cmp-more-than-moore-review]
 related: [technologies/glass-substrate.md, concepts/advanced-packaging-market.md, concepts/geopolitics-advanced-packaging.md, entities/ibiden.md, entities/shinko.md, entities/semco.md, entities/absolics.md, entities/agc.md]
 ---
 
@@ -450,3 +450,17 @@ Samsung 官方（Tech Blog, 2025-05-26；內容基礎 2022 Samsung Foundry Forum
 - ⭐ **缺實體頁新增三家台灣設備商**：E&R／和椿、Group Up／群翊、Utechzone／由田。
 
 **來源**：[[sources/2026-07-09_taiwannews_tgv-supply-chain-taiwan-equipment]]
+
+## 2026-10-26 collect 更新：模封料三參數、交期上界 40 個月 ★★
+
+- ⭐⭐⭐ **模封料主導翹曲，且決定性參數收斂為三個**（[[sources/2026-07-21_imaps_top-pop-package-warpage-molding-compound]]，IMAPS, 2026-07-21, OA PDF 可得）：**化學固化收縮（cure shrinkage）／CTE／儲存模數（storage modulus）**；須同時考慮**基板、晶粒、模封料、晶粒黏著膜**四種材料之溫度相依行為。
+  ➜ 📌 **「固化收縮」為本頁首見之翹曲參數**，且 📌 **翹曲成因自此分兩類：CTE 為可逆的熱效應，固化收縮為不可逆的化學效應。** ⚠ 本 wiki 歸類。
+  ➜ 📌 翹曲的**驗收位置為兩封裝間焊點**（非封裝自身），關鍵為**機械順應性（mechanical compliance）** ⇒ **翹曲規格的意義取決於它要保障的介面。**
+  ⚠ 摘要零量化值（無 µm、CTE 值、模數值、收縮率）⇒ **下輪最高優先取全文項**；⚠ 本件為 PoP 而非面板級，不得直接套用於 FOPLP／CoPoS（規範 55）。
+
+- ⭐⭐ **供應鏈交期的上界首次有數字**（[[sources/2026-10-16_3dincites_scaling-advanced-packaging-capacity-concentration]]）：零件自 4 個月 → **6–10 個月**；**部分日本關鍵件達 40 個月**；**前段設備 6 個月 → 約 1 年**。
+  ➜ 📌 **40 個月為本 wiki 既載交期數字之最長者**，且其所指為「日本關鍵零件」而非設備整機 ⇒ **交期討論須標註對象是整機、模組或零件。**
+
+- ⭐ **寬能隙材料（SiC、GaN）的 CMP 需求首次進入本 wiki**（[[sources/2026-01-14_ijpem_kaist-cmp-more-than-moore-review]]）：因極高硬度與化學惰性，需**化學增強型與混合式 CMP** ⇒ 列為新增追蹤軸（與本輪檢出未收錄之 SiC 晶圓薄化論文 `10.1016/j.matdes.2026.116697` 同向）。
+
+**來源**：[[sources/2026-07-21_imaps_top-pop-package-warpage-molding-compound]]、[[sources/2026-10-16_3dincites_scaling-advanced-packaging-capacity-concentration]]、[[sources/2026-01-14_ijpem_kaist-cmp-more-than-moore-review]]

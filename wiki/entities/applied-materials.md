@@ -3,8 +3,8 @@ title: "Applied Materials（應用材料）"
 category: entity
 tags: [equipment, ECD, PECVD, TSV, HBM, die-thinning, hybrid-bonding, USA]
 created: 2026-09-17
-updated: 2026-10-24
-sources: [2026-09-04_biggo_skc-absolics-embedding-vs-nonembedding, 2026-08-18_appliedmaterials_hbm-packaging-bottleneck-toolset, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-06-28_hyperframe_amat-hybrid-bonding-hedge, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_epo_xiamen-anjieli-cn121335557a-silane-parylene-tgv, 2025-10-01_amat-futurum_hybrid-bonding-at-scale-overlay-inspection-10min]
+updated: 2026-10-26
+sources: [2026-09-04_biggo_skc-absolics-embedding-vs-nonembedding, 2026-08-18_appliedmaterials_hbm-packaging-bottleneck-toolset, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-06-28_hyperframe_amat-hybrid-bonding-hedge, 2025-01-01_bruker_afm-surface-metrology-hybrid-bonding-rq, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_epo_xiamen-anjieli-cn121335557a-silane-parylene-tgv, 2025-10-01_amat-futurum_hybrid-bonding-at-scale-overlay-inspection-10min, 2026-01-14_openalex_kaist-cmp-more-than-moore-review]
 related:
   - wiki/technologies/tsv.md
   - wiki/technologies/hbm4.md
@@ -468,3 +468,18 @@ Figure 3 以 **queue time vs yield** 作圖但正文無數字。⚠ **本檔未�
 - ⚠ **依既載規範（41）：AMAT（設備商，有利害關係）＋ NTU（學術）共同申請，不構成兩個獨立來源。**
 - ⚠⚠ **本件零量化值**（無接合強度、high-k 種類／介電常數、膜厚、SAM 分子、溫度、良率）；**不得與既載 AMAT × Besi Kinex「100 nm @ 3σ → 50 nm → <25 nm」合併成單一能力宣告**（後者為對準精度，與本件表面化學無關）。
 - 來源：[[sources/2025-05-08_epo_amat-ntu-selective-dielectric-capping-sam]]
+
+## 2026-10-26 collect 更新：CMP 被學術側重新定義為「異質整合的關鍵使能技術」★★
+
+[[sources/2026-01-14_ijpem_kaist-cmp-more-than-moore-review]]（KAIST, IJPEM-GT, 2026-01-14, 被引 11, OA PDF 可得）：
+- **CMP 自「平坦化步驟」被重新定義為「異質整合的關鍵使能技術（critical enabler）」。**
+- **封裝／混合接合側要求次奈米平坦度（sub-nanometer flatness）**，須橫跨複雜多層與混合接合結構；**FEOL 側則要求高選擇比並抑制缺陷**。
+- 寬能隙材料（SiC、GaN）另需**化學增強型與混合式 CMP**；三項進展為 **AI 驅動製程預測、原位感測、環境友善耗材**。
+
+➜ 📌 **既載「CMP 是混合接合的 gating factor」與「封裝 CMP 的市場結構（AMAT 與 Lam 之份額爭奪）」首次取得學術側的要求量級**：**次奈米**。
+➜ 📌 **同一製程在不同層位有相反驗收項（FEOL 求選擇比／封裝求平坦度）** ⇒ **CMP 的設備、漿料與製程知識不能自 FEOL 直接移植到封裝** —— 此為既載「後段技術移轉」（代工廠 vs OSAT）之一條具體機制，亦為設備商在封裝 CMP 另建產品線的技術理由。⚠ 本 wiki 推論。
+➜ 📌 **原位感測（in-situ sensing）** 加入本 wiki 的量測手段清單（詳見 [[concepts/test-metrology-packaging]]）。
+⚠ 僅給「次奈米」量級，**無具體 nm 值、移除率、缺陷密度或不均勻度**；**本件為綜述**，依規範（41）其所述事實須回溯原始文獻，不得視為獨立來源。
+⚠ 本件**未提 Cu recess 或 dishing 之具體容差** ⇒ 既載「Cu recess 規格上界」不因本件修改或結清。
+
+**來源**：[[sources/2026-01-14_ijpem_kaist-cmp-more-than-moore-review]]

@@ -3,8 +3,8 @@ title: "Amkor Technology"
 category: entity
 tags: [OSAT, advanced-packaging, FOCoS, Arizona, chiplet, Intel-EMIB, patent-signal, TIM]
 created: 2026-04-25
-updated: 2026-10-25
-sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-05-19_stocktitan_amkor-arizona-peoria-land-expansion, 2026-06-17_digitimes_amkor-tsmc-10year-arizona-deal, 2026-06-17_trendforce_tsmc-amkor-10year-arizona-advanced-packaging, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-30_amkor-ir_arizona-7billion-groundbreaking, 2026-06-30_digitimes_amkor-2.5d-hdfo-growth-2026, 2026-07-23_amkor-ir_nvidia-amkor-1-5b-strategic-partnership, 2026-09-26_article_amkor-embedded-trace-rdl, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-10-07_epo_amkor-bspdn-oriented-package-embedded-ipd, 2026-10-07_openalex_amkor-kelly-three-interposer-routes, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-08_semieng_voltage-regulation-in-package, 2026-10-13_amkor-cavity-as-allocated-volume, 2026-01-13_epo_amkor-cn121335572a-rdl-lateral-side-protective-layer, 2026-10-22_semieng_foundries-osats-increasingly-overlap, 2025-09-16_CN120659336A_samsung-fowlp-subpackage-reconstructed-foplp]
+updated: 2026-10-26
+sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-05-19_stocktitan_amkor-arizona-peoria-land-expansion, 2026-06-17_digitimes_amkor-tsmc-10year-arizona-deal, 2026-06-17_trendforce_tsmc-amkor-10year-arizona-advanced-packaging, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-30_amkor-ir_arizona-7billion-groundbreaking, 2026-06-30_digitimes_amkor-2.5d-hdfo-growth-2026, 2026-07-23_amkor-ir_nvidia-amkor-1-5b-strategic-partnership, 2026-09-26_article_amkor-embedded-trace-rdl, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-10-07_epo_amkor-bspdn-oriented-package-embedded-ipd, 2026-10-07_openalex_amkor-kelly-three-interposer-routes, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-08_semieng_voltage-regulation-in-package, 2026-10-13_amkor-cavity-as-allocated-volume, 2026-01-13_epo_amkor-cn121335572a-rdl-lateral-side-protective-layer, 2026-10-22_semieng_foundries-osats-increasingly-overlap, 2025-09-16_CN120659336A_samsung-fowlp-subpackage-reconstructed-foplp, 2026-10-16_3dincites_scaling-advanced-packaging-capacity-concentration]
 related:
   - wiki/technologies/rdl.md
   - wiki/technologies/cowos.md
@@ -545,3 +545,15 @@ Amkor 的 **Vineet Pancholi** 提供本 wiki 目前唯一的中介層測試覆�
   ⚠ 無節距、無對準精度、無產能數字。
 - ⭐⭐ **結構面：Amkor 的「先小再拼」路線取得第二家獨立佐證。** 既載 **US20260334335A1（subpanel 拼貼於共用 panel carrier）**；本輪 [[entities/samsung]] **CN120659336A（FOWLP 子封裝切單後重構為 FOPLP）** 以不同手法達到同一效果 ⇒ 兩家獨立廠商、兩種手法、同一方向（**先在較小／較成熟載具完成單元，再上面板**）。
 - ⭐ **產業結構**：同篇把 **2.5D 與面板組裝**列為代工廠與 OSAT 的最大重疊區、**混合接合為下一個移往 OSAT 的步驟**（高量產仍主要在代工廠），並提及 Amkor 正投資亞利桑那新廠（⚠ 無新數字，既載 $12B／93K sqm／2029 完工不變）。
+
+## 2026-10-26 collect 更新：亞利桑那園區自 $2B 擴至 $7B，量產不早於 2028 初 ★★
+
+[[sources/2026-10-16_3dincites_scaling-advanced-packaging-capacity-concentration]]（K&S 員工投書, 3D InCites, 2026-10-16）：
+- **Amkor 亞利桑那園區自 $2 billion 計畫擴至 $7 billion**，**且第一棟建築尚未投運**。
+- **2025 年動土**，**量產不預期早於 2028 年初**。
+
+➜ 📌 **本 wiki 既載 Amkor 之美國擴張論述首次有「計畫金額 → 實際金額」的倍數（3.5×）與「動土 → 量產」的時間差（約 2.5–3 年）** ⇒ 可作為其他先進封裝新廠（Intel 俄亥俄、TSMC 亞利桑那先進封裝）之時程與成本膨脹的參照基準。⚠ 本 wiki 比較用途；原文未作此類推。
+➜ 📌 與既載 **Amkor–NVIDIA $1.3B**（2026-10 既載）及既載 Amkor subpanel 拼貼專利併讀：**投資規模與技術布局同向，但量產時點落在 2028** ⇒ **近期 AI 封裝產能缺口不會由 Amkor 亞利桑那補上。** ⚠ 本 wiki 推論。
+⚠ 本件為**設備商員工投書**（規範 41／70：在 TCB vs 混合接合議題上非中立），惟上述 Amkor 數字屬**第三方可查之專案事實**，與其利益衝突軸無關。
+
+**來源**：[[sources/2026-10-16_3dincites_scaling-advanced-packaging-capacity-concentration]]

@@ -1018,3 +1018,18 @@
 2026-10-25 | https://doi.org/10.1109/jlt.2026.3693771 | raw/papers/2026-05-21_openalex_hkust-98ch-ultradense-optical-io-0p2mm2.md | HKUST 98-ch optical I/O in 0.2mm2, -3.47dB
 2026-10-25 | https://doi.org/10.1109/jssc.2026.3655295 | raw/papers/2026-02-23_openalex_56gbs-3d-siph-5nm-cmos-2p8pjbit-600gbsmm2.md | 3D SiPh+5nm CMOS: 2.8pJ/bit, >600 Gb/s/mm2
 2026-10-25 | https://doi.org/10.1364/ol.599054 | raw/papers/2026-05-27_openalex_3d-nanoprinted-vertical-coupler-ordl-3p3db.md | 3D-nanoprinted ORDL vertical coupler, 3.3dB @1310nm
+2026-10-26 | https://www.intel.com/content/dam/www/central-libraries/us/en/documents/2026-08/foundry-power-delivery-white-paper.pdf | raw/articles/2026-08-01_intel_power-delivery-ai-datacenter-c2vr-mbvr-loss-budget.md | Intel Foundry power delivery: C2VR 10 A/mm2, loss budget
+2026-10-26 | https://www.3dincites.com/2026/10/scaling-advanced-packaging-why-it-matters/ | raw/articles/2026-10-16_3dincites_scaling-advanced-packaging-capacity-concentration.md | K&S: 4 buyers take 90% CoWoS, 92% HBM by value
+2026-10-26 | https://news.skhynix.com/en/tech-note-series-ep2/ | raw/articles/2026-08-25_skhynix_hybrid-bonding-tech-note-hbm4e-hbm5-equipment-precision.md | SK hynix tech note: HB full adoption at HBM4E/HBM5
+2026-10-26 | https://inpractise.com/articles/besi-and-hybrid-bondings-path-to-scale-from-yield-bottlenecks-to-2026-2030-adoption | raw/articles/2025-12-03_inpractise_besi-hybrid-bonding-yield-bottlenecks-7800-die.md | Besi: D2W needs 7,800 die/wafer at 1-2k die/hr
+2026-10-26 | https://eu.36kr.com/en/p/3560738593717377 | raw/articles/2025-11-20_36kr_three-major-players-large-chip-packaging-interposer-cost.md | Interposer = 50-70% of advanced packaging quote
+2026-10-26 | EPO:97026055:JP2026082675A | raw/patents/2026-05-19_JP2026082675A_etron-hbm-side-edge-interconnect.md | Etron HBM stack with side-edge interconnect, no TSV
+2026-10-26 | EPO:100312983:US20260190965A1 | raw/patents/2026-07-02_US20260190965A1_samsung-bspdn-rdl-substrate-3d-package.md | Samsung BSPDN routed via RDL substrate in package
+2026-10-26 | EPO:98616993:CN121487636A | raw/patents/2026-02-06_CN121487636A_beijing-xinli-reconstituted-ingaas-c2w-hybrid-bonding.md | Reconstituted InGaAs wafer for C2W hybrid bonding
+2026-10-26 | EPO:94190147:US20250022826A1 | raw/patents/2025-01-16_US20250022826A1_pep-panel-warpage-solder-ball-jig.md | PEP solder-ball jig prevents reconstructed panel warpage
+2026-10-26 | EPO:58737977:US9666566B1 | raw/patents/2017-05-30_US9666566B1_tsmc-dummy-metal-40-90pct-hybrid-bond-yield.md | TSMC dummy metal 40-90%, step height <400A for HB
+2026-10-26 | https://doi.org/10.1109/tcad.2026.3657674 | raw/papers/2026-01-23_openalex_yapplus-pad-layout-aware-hybrid-bonding-yield-model.md | YAP+: 5-mechanism hybrid bonding yield model, UCLA
+2026-10-26 | https://doi.org/10.1021/acsaelm.6c00446 | raw/papers/2026-04-21_openalex_skhynix-tel-sicn-bond-wave-ipd-overlay.md | SiCN: N2 plasma strength vs O2 plasma overlay tradeoff
+2026-10-26 | https://doi.org/10.1109/tcpmt.2026.3665204 | raw/papers/2026-02-16_openalex_ch4-plasma-low-temp-cu-bonding-260c.md | CH4 plasma Cu-Cu bonding at 260C/15MPa/1h, a-C:H layer
+2026-10-26 | https://doi.org/10.4071/001c.165359 | raw/papers/2026-07-21_openalex_top-pop-package-warpage-molding-compound.md | Top PoP warpage set by EMC shrinkage, CTE, modulus
+2026-10-26 | https://doi.org/10.1007/s40684-025-00819-9 | raw/papers/2026-01-14_openalex_kaist-cmp-more-than-moore-review.md | KAIST: CMP must hit sub-nm flatness for hybrid bonding

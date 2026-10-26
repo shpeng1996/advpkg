@@ -3,8 +3,8 @@ title: "Besi (BE Semiconductor Industries) — 混合接合設備領導廠商"
 category: entity
 tags: [equipment, hybrid-bonding, die-attach, D2W, TCB, Netherlands]
 created: 2026-04-25
-updated: 2026-10-21
-sources: [2026-09-27_semieng_chip-week-156-india-tata-besi-izmo, 2026-03-01_3dincites_besi-packaging-power-shift, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-03-29_damnang_hybrid-bonding-cmp-gating-factor, 2026-10-02_bitschips_besi-q1-2026-hybrid-bonding-orders, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-07_epo_besi-deformable-die-forming-bond-tool]
+updated: 2026-10-26
+sources: [2026-09-27_semieng_chip-week-156-india-tata-besi-izmo, 2026-03-01_3dincites_besi-packaging-power-shift, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-03-29_damnang_hybrid-bonding-cmp-gating-factor, 2026-10-02_bitschips_besi-q1-2026-hybrid-bonding-orders, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-07_epo_besi-deformable-die-forming-bond-tool, 2025-12-03_inpractise_besi-hybrid-bonding-yield-bottlenecks-7800-die]
 related:
   - wiki/entities/ev-group.md
   - wiki/technologies/hybrid-bonding.md
@@ -370,3 +370,23 @@ Bits&Chips（2026-04-23，作者 Paul van Gerven）：
   `cpc="H01L24/80" and pd within "2026"` 兩種形式皆回 HTTP 404**
   ⇒ 📌 **該建議的查詢路徑經實測不可行**（見本輪 log 之 OPS 實測結論）；
   下輪改自 Besi 年報揭露之專利家族數反查，或以發明人姓名檢索。
+
+## 2026-10-26 collect 更新：D2W 吞吐量的分母（7,800 die/wafer）與良率瓶頸三分類 ★★★
+
+[[sources/2025-12-03_inpractise_besi-hybrid-bonding-yield-bottlenecks]]（In Practise 訪**未具名之 BESI 前任高管**，訪談 2025-11-23、刊出 2025-12-03；**僅一組問答可見，其餘在訂閱牆後**）：
+
+- ⭐⭐⭐ **D2W 須接合約 7,800 die／wafer**，所需速率 **1,000–2,000 die attachments／hour**；**W2W 對照：100 顆晶粒整片約 1 分鐘**（D2W 若每顆 1 分鐘則約 100 分鐘）。
+  ➜ 📌 **既載 AMAT × Besi「Kinex 吞吐 1,600–2,000 die/hr」首次取得分母** ⇒ **7,800 ÷ 1,600~2,000 ≈ 3.9–4.9 機台小時／片晶圓**。⚠ 本 wiki 換算；晶粒尺寸與產品未說明 ⇒ **僅適用本件情境，不得作為通用產能係數。**
+- ⭐⭐⭐ **良率瓶頸三分類（設備側，定性）**：
+  1. **微粒**：切割產生微粒並部分再沉積於晶粒；「混合接合對潔淨度極為敏感」；**目前無法消除全部微粒**。
+  2. **翹曲**：CTE 不匹配造成翹曲，損及接觸並可能造成孔洞；**晶粒翹曲比晶圓級翹曲更難控制**（本 wiki 首見之明確排序）。
+  3. **對準速度**：D2W 必須遠快於 W2W，**速度提高使對準誤差增加，且使翹曲在高速機台上更難控制**。
+  ➜ 📌 **速度首次成為「對準誤差與翹曲失控」的中介變數**，較既載「D2W pitch 受限於機台對準」之簡單歸因多一段因果。
+  ➜ 📌 與 **UCLA YAP+ 五機制清單**逐格對照後發現：**設備側把翹曲列為三大瓶頸之一，而建模側五機制不含翹曲** ⇒ 列為新增空缺（詳見 [[concepts/test-metrology-packaging]]）。
+
+⚠⚠ **fetch_status: partial**；受訪者姓名與職稱不可得；**標題所稱「2026–2030 採用時程」在可見正文中完全沒有內容** ⇒ **不得引用本件為採用時程來源。**
+⚠ 受訪者為 **BESI 前任高管** ⇒ 依規範（41）（70），在「混合接合是否已可規模化」此判斷上**非中立來源**。
+⚠ 逾 6 個月窗（約 11 個月）；刻意收錄，唯一理由為 **7,800 die/wafer 這個分母**。
+⚠ **不與既載 AMAT × Besi 件合併為單一規格表（規範 55）**：口徑不同（機台速率 vs 每片晶圓需求），僅可並列。
+
+**來源**：[[sources/2025-12-03_inpractise_besi-hybrid-bonding-yield-bottlenecks]]

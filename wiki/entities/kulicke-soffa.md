@@ -3,8 +3,8 @@ title: "庫力索法 / Kulicke & Soffa (K&S)"
 category: entity
 tags: [Kulicke-Soffa, K&S, equipment, wire-bonding, TCB, hybrid-bonding, bond-head, reducing-gas]
 created: 2026-10-14
-updated: 2026-10-14
-sources: [2026-10-14_ks-metal-first-then-dielectric-bond-sequence, 2026-10-14_ks-in-situ-reducing-gas-bond-head]
+updated: 2026-10-26
+sources: [2026-10-14_ks-metal-first-then-dielectric-bond-sequence, 2026-10-14_ks-in-situ-reducing-gas-bond-head, 2026-10-16_3dincites_scaling-advanced-packaging-capacity-concentration]
 related: [wiki/technologies/hybrid-bonding.md, wiki/entities/asmpt.md, wiki/entities/besi.md, wiki/entities/ev-group.md, wiki/entities/hanmi.md]
 ---
 
@@ -70,3 +70,18 @@ related: [wiki/technologies/hybrid-bonding.md, wiki/entities/asmpt.md, wiki/enti
 - [ ] **還原氣體的種類（H₂？甲酸？）、流量與溫度為何？** 需全文。
 - [ ] **K&S 在混合接合設備的實際地位。** 本 wiki 無任何出貨、客戶或市占資料；在既載的 D2W 對準路線圖中完全缺席。
 - [ ] **K&S 的打線業務佔比與先進封裝業務佔比。** 本輪專利分布（14 件中 9 件打線）顯示其研發重心可能仍在打線，需財報佐證。
+
+## 2026-10-26 collect 更新：K&S 員工投書給出 TCB 業務量級與混合接合機台市場對照 ★★
+
+[[sources/2026-10-16_3dincites_scaling-advanced-packaging-capacity-concentration]]（**Jaskaran Dhiman, Staff Engineer, Operations Engineering NPI, Kulicke & Soffa**；IMAPS 3D InCites, 2026-10-16）：
+
+- ⭐⭐ **K&S TCB 年銷售額約 $400M**；某廠（文中未具名）**TCB 營收 2025 年成長 146%**；後段設備銷售 **2025 +21%**（SEMI）。
+- ⭐⭐ **混合接合機台市場：2030 年 $500–800M（Dataintelo）**。
+  ➜ 📌 **設備商延後混合接合的商業理由首次可被量化地理解**：該市場屆時**僅約等於今日 K&S 單一廠 TCB 業務的 1.25–2 倍** ⇒ 不必僅以技術難度解釋廠商步調。⚠ 本 wiki 推論。
+- ⭐⭐ **HBM 高度放寬推遲混合接合**：**720 → 775 µm（2025-04, JESD270-4 HBM4）→ 報導中約 900 µm（2026-04, 第 7 代 HBM4E）⇒ 混合接合採用推遲至約 2028**。
+- ⭐ 其他（詳見 [[concepts/advanced-packaging-market]]）：Epoch AI **四家取 ~90% CoWoS／92% HBM 但僅占 12% 先進邏輯晶粒**；TSMC CoWoS **70k → 最多 140k 片／月**；**日本關鍵件交期達 40 個月**；**2030 年需增 >100 萬人**、美國 **67,000 職位**缺口（**39% 為技術員**）。
+
+⚠⚠ **規範（41）（70）：作者任職 K&S（TCB 機台商）**，而文中同時主張「TCB 高速成長」與「混合接合機台市場有限」⇒ **本件在「TCB vs 混合接合」此對立上非中立來源**，引用必須標註作者所屬。
+⚠ 「先進節點 80× → 加先進封裝 320× 運算密度」僅稱某分析師估算，**無分母、無基準年、無量測對象** ⇒ 依規範（34）（37）不得引用為比較用數字。
+
+**來源**：[[sources/2026-10-16_3dincites_scaling-advanced-packaging-capacity-concentration]]

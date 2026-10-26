@@ -3,8 +3,8 @@ title: "TSV — Through-Silicon Via / 矽穿孔"
 category: technology
 tags: [TSV, HBM, interposer, 3D-IC, CoWoS, manufacturing, backside-power, advanced-packaging, radiation, redundancy, reliability]
 created: 2026-08-10
-updated: 2026-10-25
-sources: [2026-09-27_wuhanuniv_cn121548325a-tgv-micro-nano-anchor-molecular-bridging, 2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-27_semieng_chip-week-156-india-tata-besi-izmo, 2026-04-22_semieng_tsv-complexity-manufacturing-bottleneck, 2026-08-21_semieng_chip-week-152, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-08-21_scirep_copper-oxide-reduction-ar-h2-pulsed-plasma, 2026-06-08_irtnanoelec_d2w-hybrid-bonding-1um-pitch, 2026-03-13_kaneka_jp2026047137a-glass-core-polyimide-quantified, 2026-08-10_screp_low-k-organic-buffer-tgv-cu-metallization, 2026-08-04_jmrt_vacuum-assisted-void-free-cu-fill-tgv, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring, 2026-09-26_patent_zhuhai-tiancheng-dual-depth-tsv-silicon-bridge, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_patent_er-eng-glass-interposer-dual-carrier, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth, 2026-10-02_epo_semco-cn122054433a-glass-surface-roughness, 2026-10-02_trendforce_intel-microled-glass-24-layer, 2026-10-02_imaps-dpc2026_defect-free-coplanar-copper-via-fill, 2026-10-02_microrel_tudelft-google-3dic-fa-hardware, 2026-10-06_epo_microchip-polysic-ceramic-interposer-mandrel-vias, 2026-10-06_openalex_auburn-nife-tsv-magnetic-shield-package, 2026-10-06_thelec_sec-xray-tsv-tgv-inspection-1um, 2026-10-07_epo_cas-freestanding-3c-sic-interposer, 2026-10-07_openalex_cuos-alloy-interconnect-oxidation-adhesion, 2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk, 2026-10-08_rdl-free-glass-interposer-trench, 2026-10-08_uestc-tapered-tgv-skin-current, 2026-10-09_cas-2013-microchannel-interposer-ebg, 2026-10-09_nycu-itri-cu-pad-protrusion-aspect-ratio, 2026-01-01_openalex_nist-mit-ayarlabs-waveguide-to-waveguide-couplers, 2026-05-13_JP2026077559A_intel-tgv-radial-void-crack-mitigation]
+updated: 2026-10-26
+sources: [2026-09-27_wuhanuniv_cn121548325a-tgv-micro-nano-anchor-molecular-bridging, 2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-27_semieng_chip-week-156-india-tata-besi-izmo, 2026-04-22_semieng_tsv-complexity-manufacturing-bottleneck, 2026-08-21_semieng_chip-week-152, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-08-21_scirep_copper-oxide-reduction-ar-h2-pulsed-plasma, 2026-06-08_irtnanoelec_d2w-hybrid-bonding-1um-pitch, 2026-03-13_kaneka_jp2026047137a-glass-core-polyimide-quantified, 2026-08-10_screp_low-k-organic-buffer-tgv-cu-metallization, 2026-08-04_jmrt_vacuum-assisted-void-free-cu-fill-tgv, 2026-07-30_micromachines_tgv-cleanability-surface-tension, 2026-09-18_mssp_in-situ-wafer-thinning-thickness-monitoring, 2026-09-26_patent_zhuhai-tiancheng-dual-depth-tsv-silicon-bridge, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_patent_er-eng-glass-interposer-dual-carrier, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth, 2026-10-02_epo_semco-cn122054433a-glass-surface-roughness, 2026-10-02_trendforce_intel-microled-glass-24-layer, 2026-10-02_imaps-dpc2026_defect-free-coplanar-copper-via-fill, 2026-10-02_microrel_tudelft-google-3dic-fa-hardware, 2026-10-06_epo_microchip-polysic-ceramic-interposer-mandrel-vias, 2026-10-06_openalex_auburn-nife-tsv-magnetic-shield-package, 2026-10-06_thelec_sec-xray-tsv-tgv-inspection-1um, 2026-10-07_epo_cas-freestanding-3c-sic-interposer, 2026-10-07_openalex_cuos-alloy-interconnect-oxidation-adhesion, 2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk, 2026-10-08_rdl-free-glass-interposer-trench, 2026-10-08_uestc-tapered-tgv-skin-current, 2026-10-09_cas-2013-microchannel-interposer-ebg, 2026-10-09_nycu-itri-cu-pad-protrusion-aspect-ratio, 2026-01-01_openalex_nist-mit-ayarlabs-waveguide-to-waveguide-couplers, 2026-05-13_JP2026077559A_intel-tgv-radial-void-crack-mitigation, 2026-05-19_JP2026082675A_etron-hbm-side-edge-interconnect, 2026-07-02_US20260190965A1_samsung-bspdn-rdl-substrate-3d-package, 2026-02-06_CN121487636A_beijing-xinli-reconstituted-ingaas-c2w-hybrid-bonding]
 related:
   - wiki/technologies/hbm4.md
   - wiki/technologies/cowos.md
@@ -1049,3 +1049,29 @@ Anhui Univ.（**50 µm Cu 核心 ＋ 固定 Co/TiW 層 ＋ 聚合物襯層**，�
 - ⭐⭐ **2.5D 多尺度分析的方法層補充（未改任何既載數值）**：本輪另檢出 `10.3390/mi17070853`（2026-07-17，Micromachines）以**週期邊界條件＋referential statistical volume elements** 把 TSV／microbump／RDL **均質化為等效介質**，輸出等效楊氏模數、剪切模數、泊松比、CTE 與熱導率。**本輪未收錄**（與既載翹曲論述無新增量化衝突），列為方法類追蹤標的。
 
 **來源**：[[sources/2026-01-01_lsa_waveguide-couplers-photonic-vias-review]]、[[sources/2026-05-13_epo_intel-tgv-radial-void-crack-mitigation]]
+
+## 2026-10-26 collect 更新：貫穿孔的三個新落點——移出、移進封裝、部分填充 ★★
+
+### 1. ⭐⭐⭐ 「不用貫穿孔」首次成為排他權路線（HBM 側邊互連）
+
+[[sources/2026-05-19_epo_etron-hbm-side-edge-interconnect]]（Etron × ND Hi Tech Lab, JP2026082675A, 2026-05-19）把 HBM 的訊號出口移到**晶粒側緣**，界線由**切割道區**定義。
+➜ 📌 本頁既載之「貫穿孔功能分類」自 **電（TGV）／熱（TTV, Etron US20260090421A1）／光（photonic via）** 擴為**四列，第四列是「不用貫穿孔」**。
+➜ 📌 與既載 imec「不用接著劑（改 ~30 nm SiCN 介電接合）」在論述結構上同型：**某個結構位被整體取消**，而非被改良。
+⚠⚠ **規範（41）**：與既載 Etron TTV 件為**同一發明人團隊（TONG HO-MING／LU CHAO-CHUN）** ⇒ **不計為獨立第二來源**；「Etron 連續三件」不得作為多方布局之證據（規範 58）。
+⚠ 零量化值。
+
+### 2. ⭐⭐⭐ 貫穿結構首次被寫成「連接元件背面供電與封裝佈線層」的雙組結構
+
+[[sources/2026-07-02_epo_samsung-bspdn-rdl-substrate-in-package]]（Samsung US20260190965A1, 2026-07-02, fam 100312983）：**上貫穿結構**穿透第二基板接至兩基板之間的**重佈基板**；**下貫穿結構**把重佈基板接到第一基板背面之下晶粒墊（該背面即 BSPDN 所在）。
+➜ 📌 既載「貫穿 vs 非貫穿」子維度**再加一項：貫穿的是元件基板或封裝基板**。本件兩者皆有，且分屬兩組不同的貫穿結構。
+➜ 📌 **「貫穿結構」此名詞自此須標註其兩端接什麼**（元件背面↔重佈層、重佈層↔第二基板），否則無從比較。
+⚠ 零量化值 ⇒ 不得與任何 TSV 幾何或電性數字並列。
+
+### 3. ⭐⭐ 「部分填充型 via-last TSV」用於化合物半導體背面引出
+
+[[sources/2026-02-06_epo_beijing-xinli-reconstituted-ingaas-c2w]]（北京芯力 CN121487636A, 2026-02-06, fam 98616993）：重組晶圓混合接合後，以**部分填充型（partial-fill）最後製作導電孔／焊墊 TSV**，自讀出電路**背面**引出堆疊核心的電性。
+➜ 📌 **「部分填充」此形態與既載 Intel 的 partial liner（US20260136975A1）、及既載「塞孔是一整類被忽略的路線」（KETI TGV 缺陷譜）同屬「孔內不填滿」家族** ⇒ 本輪新增一個應用落點（影像感測器異質整合）。
+➜ 📌 本件之**薄化目的為光學穿透**（使可見光穿透 InP 達 InGaAs）⇒ **薄化的驗收項新增「光學穿透率」一類**（既載薄化驗收皆為熱或電）。
+⚠ 零量化值（無孔徑、深寬比、填充率、薄化厚度）；CPC 僅 **H10F39/90** ⇒ 📌 **檢索方法學：影像感測器／光電異質整合之 TSV 與接合案件須納入 H10F 檢索軸。**
+
+**來源**：[[sources/2026-05-19_epo_etron-hbm-side-edge-interconnect]]、[[sources/2026-07-02_epo_samsung-bspdn-rdl-substrate-in-package]]、[[sources/2026-02-06_epo_beijing-xinli-reconstituted-ingaas-c2w]]

@@ -3,8 +3,8 @@ title: "Tokyo Electron (TEL) — 東京威力科創"
 category: entity
 tags: [TEL, Tokyo-Electron, equipment, RDL, Eteris, advanced-packaging-equipment, Japan]
 created: 2026-04-26
-updated: 2026-10-22
-sources: [2026-01-23_trendforce_chip-tools-tel-asml, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer, 2026-07-01_circuitsassembly_ectc2026-w2w-pitch-ladder-tel-140nm]
+updated: 2026-10-26
+sources: [2026-01-23_trendforce_chip-tools-tel-asml, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer, 2026-07-01_circuitsassembly_ectc2026-w2w-pitch-ladder-tel-140nm, 2026-04-21_openalex_skhynix-tel-sicn-bond-wave-ipd-overlay]
 related: [wiki/entities/besi.md, wiki/technologies/hybrid-bonding.md, wiki/concepts/advanced-packaging-market.md]
 ---
 
@@ -207,3 +207,15 @@ TEL 在先進封裝設備的定位是 **RDL 製程設備全流程覆蓋**，與 
   本階梯中**僅 450 nm 附有良率（98%）與互連數（20M）**；TEL 140 nm 的良率在本篇與既載一手論文中皆未給
   （既載載具**僅有接合墊、無電性測試**）。
 - 📌 **本頁既載結論不變**：TEL 在 **W2W 側**已有一手量化發表；本 wiki 在 **D2W 側**的設備量化仍僅有 AMAT×Besi。
+
+## 2026-10-26 collect 更新：與 SK hynix 合著之 SiCN 直接接合研究 ★★
+
+[[sources/2026-04-21_acsaelm_skhynix-tel-sicn-bond-wave-ipd]]（ACS Applied Electronic Materials, 2026-04-21, `10.1021/acsaelm.6c00446`, 被引 2）：
+作者機構含 **Tokyo Electron Kyushu Ltd（日）**、**SK hynix（韓／日／美）**、**橫濱國立大學**。
+- 研究對象為 **PECVD SiCN 膜**之晶圓級直接接合；**接合波前速度幾乎不隨電漿條件改變**，但**接合後面內位移（IPD）隨 N₂ 電漿顯著增加**；**強度在 N₂ 100 W 最大**；**O₂ 電漿生成較均勻類 SiO₂ 表面 ⇒ IPD 較低、對準穩定性較佳但強度較低**。
+
+➜ 📌 **TEL 在本 wiki 的角色自「設備與製程供應者」擴為「接合機制的共同研究者」**，且研究標的正是既載 **TEL W2W pitch ladder（140 nm）** 所依賴的介電接合層材料 ⇒ **兩者為同一公司在同一技術軸上的兩種產出**（規範 41：不互為獨立來源）。
+➜ 📌 **PECVD SiCN 自「材料（~30 nm 介電接合層）」升為「製程（電漿氣體與功率可調）」** —— 詳見 [[technologies/hybrid-bonding]]。
+⚠ 摘要未給 IPD 的 nm 數值、強度單位值或間距；OA PDF 可得 ⇒ 下輪高優先取全文。
+
+**來源**：[[sources/2026-04-21_acsaelm_skhynix-tel-sicn-bond-wave-ipd]]

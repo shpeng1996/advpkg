@@ -3,7 +3,8 @@ title: "鈺創科技 Etron Technology（與 ND Hi Tech Lab）"
 category: entity
 tags: [Etron, ND-Hi-Tech-Lab, Taiwan, glass-substrate, TGV, TTV, thermal-management, DRAM, fabless]
 created: 2026-09-28
-updated: 2026-10-11
+updated: 2026-10-26
+sources: [2026-05-19_JP2026082675A_etron-hbm-side-edge-interconnect]
 related:
   - wiki/technologies/glass-substrate.md
   - wiki/technologies/tsv.md
@@ -114,3 +115,19 @@ Etron／ND Hi Tech 於 2025-06 公開之專利顯示：**基板本身具第一�
 ⚠ **去重邊界案例**：同發明之中國同族 **CN122028438A** 在 OPS 之 family-id 為 **99686008**（≠ 98899394），申請人亦不同（QUANXIN SEMICONDUCTOR EMPEROR INTEGRATE + ETRON）⇒ **family 級去重在本例會把同一發明計為兩件**；本輪僅收錄 US 件。
 
 *Sources: [[sources/2026-10-11_etron-lateral-hbm-sidewall-assignment]]、[[sources/2026-10-11_microchannel-topology-optimization-quantified]]*
+
+## 2026-10-26 collect 更新：HBM 側邊互連——把訊號移出貫穿孔 ★★★
+
+- ⭐⭐⭐ **JP2026082675A（2026-05-19, fam 97026055；申請人 ND HI TECH LAB INC ＋ ETRON TECH INC；發明人 TONG HO-MING、LU CHAO-CHUN）：HBM 堆疊之側邊互連。**
+  各「**邊緣墊晶粒（edge pad semiconductor die）**」含記憶體晶粒＋其上 **RDL**；**訊號墊與密封環（seal ring）位於晶粒內**；相鄰晶粒界線由**切割道區（scribe line region, SL）**定義。
+  ➜ 📌 **本 wiki 既載之 HBM 堆疊論述全部假設 TSV 為唯一垂直通道；本件為首個把訊號整個移出貫穿孔的排他權。**
+  ➜ 📌 **「貫穿孔功能分類」家族（電 TGV／熱 TTV／光 photonic via）新增第四列：「不用貫穿孔」** ⇒ 與既載 imec「不用接著劑（改 SiCN 介電接合）」結構同型（**某結構位被整體取消**）。
+  ➜ 📌 **新增追蹤軸：切割道寬度與切單品質是否成為 HBM 層數的新限制項。** ⚠ 本 wiki 推論。
+  ⚠ **零量化值**、未宣稱量產 ⇒ 不得述為「HBM 已存在 TSV 替代路線」之既成事實。
+  見 [[sources/2026-05-19_epo_etron-hbm-side-edge-interconnect]]。
+
+- 📌 **本實體之發明人團隊續行（規範 41 之持續適用）**：**TONG HO-MING／LU CHAO-CHUN** 已累計本 wiki 既載之 **TTV 熱通孔（US20260090421A1）**、**載體通道化系列**，與本件。
+  ➜ ⚠⚠ **三者皆不計為彼此的獨立佐證**；「Etron 連續三件」**不得**作為「多方布局」之證據（規範 58：命中件數不等於布局）。
+  ➜ 📌 **本輪另檢出同團隊之 US20240421027A1（2024-12-19, fam 93844746，ND Hi Tech Lab × Invent and Collaboration Laboratory；基板第一腔體供液體通過＋冷板第二腔體連通＋STI 區 UGI＋雙面冷卻供電訊號）**，**依規範（41）未收錄**，因其不構成「載體通道化」的獨立第三例 ⇒ 既載該候選論述**仍不升格**，且**「整條線零量化值」自連續四例延長為連續五例**。**列管 fam 93844746。**
+
+**來源**：[[sources/2026-05-19_epo_etron-hbm-side-edge-interconnect]]

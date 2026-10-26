@@ -3,8 +3,8 @@ title: "封裝層的供電網路 / Power Delivery Networks at the Package Level"
 category: concept
 tags: [PDN, power-delivery, vertical-power, eVR, capacitor, inductor, passive-integration, hybrid-bonding, rack-power]
 created: 2026-09-29
-updated: 2026-10-24
-sources: [2026-08-11_nvidia_800vdc-row-power-center-2mw, 2025-04-03_epo_intel-coaxial-inductor-glass-core, 2026-10-20_404kresearch_ocp-summit-npo-microvcsel-800vdc, 2026-09-29_imaps-dpc2026_nanoporous-silicon-capacitor-pdn, 2026-09-29_imaps-dpc2026_saras-stile-evr-vertical-pdn, 2026-09-29_semieng_tech-paper-roundup-sept29-multikw-3dhi-pdn, 2026-09-29_semiwiki_ofc2026-siph-cpo-oci-ocs-summary, 2026-09-30_arxiv_umn-multi-kw-power-delivery-3d-hi, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_epo_intel-jp2026116680a-glass-core-embedded-inductor-clusters, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_imaps-dpc2026_delo-die-side-capacitor-encapsulation, 2026-10-02_epo_samsung-cn122602880a-ivr-capacitor-interposer-core, 2026-10-02_jmmm_tyndall-fecob-n-pwrsoc-magnetics, 2026-10-02_epo_amd-us20260282956a1-silicon-bridge-decap, 2026-10-06_openalex_auburn-nife-tsv-magnetic-shield-package, 2026-10-07_epo_amkor-bspdn-oriented-package-embedded-ipd, 2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-08_semieng_voltage-regulation-in-package, 2026-10-08_ferric-fe1766-current-density-denominator, 2026-10-08_empower-crescendo-regulator-side, 2026-10-08_zju-8module-fivr-current-sharing, 2026-10-08_samsung-stacked-rdl-package-bspdn-layer, 2026-10-08_ibm-w2w-bonded-deep-trench-capacitor, 2026-10-08_etron-liquid-through-substrate-cavity, 2026-10-09_infineon-tdm2354-dual-phase-denominator, 2026-10-09_infineon-tdm2454-quad-phase-denominator, 2026-10-09_semiwiki-tsmc-oip-2026-verification, 2026-01-15_epo_ibm-us20260018508a1-backside-dtc-second-family, 2026-05-25_epo_dbhitek-jp2026085828a-dual-dtc-epi-layer, 2026-03-12_epo_tsinghua-wo2026052054a1-josephson-chiplet-embedded-dtc, 2026-02-26_epo_tsmc-us20260060104a1-rdl-active-wafer-ipd-or-bridge, 2026-07-01_circuitsassembly_ectc2026-w2w-pitch-ladder-tel-140nm]
+updated: 2026-10-26
+sources: [2026-08-11_nvidia_800vdc-row-power-center-2mw, 2025-04-03_epo_intel-coaxial-inductor-glass-core, 2026-10-20_404kresearch_ocp-summit-npo-microvcsel-800vdc, 2026-09-29_imaps-dpc2026_nanoporous-silicon-capacitor-pdn, 2026-09-29_imaps-dpc2026_saras-stile-evr-vertical-pdn, 2026-09-29_semieng_tech-paper-roundup-sept29-multikw-3dhi-pdn, 2026-09-29_semiwiki_ofc2026-siph-cpo-oci-ocs-summary, 2026-09-30_arxiv_umn-multi-kw-power-delivery-3d-hi, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_epo_intel-jp2026116680a-glass-core-embedded-inductor-clusters, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_imaps-dpc2026_delo-die-side-capacitor-encapsulation, 2026-10-02_epo_samsung-cn122602880a-ivr-capacitor-interposer-core, 2026-10-02_jmmm_tyndall-fecob-n-pwrsoc-magnetics, 2026-10-02_epo_amd-us20260282956a1-silicon-bridge-decap, 2026-10-06_openalex_auburn-nife-tsv-magnetic-shield-package, 2026-10-07_epo_amkor-bspdn-oriented-package-embedded-ipd, 2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-08_semieng_voltage-regulation-in-package, 2026-10-08_ferric-fe1766-current-density-denominator, 2026-10-08_empower-crescendo-regulator-side, 2026-10-08_zju-8module-fivr-current-sharing, 2026-10-08_samsung-stacked-rdl-package-bspdn-layer, 2026-10-08_ibm-w2w-bonded-deep-trench-capacitor, 2026-10-08_etron-liquid-through-substrate-cavity, 2026-10-09_infineon-tdm2354-dual-phase-denominator, 2026-10-09_infineon-tdm2454-quad-phase-denominator, 2026-10-09_semiwiki-tsmc-oip-2026-verification, 2026-01-15_epo_ibm-us20260018508a1-backside-dtc-second-family, 2026-05-25_epo_dbhitek-jp2026085828a-dual-dtc-epi-layer, 2026-03-12_epo_tsinghua-wo2026052054a1-josephson-chiplet-embedded-dtc, 2026-02-26_epo_tsmc-us20260060104a1-rdl-active-wafer-ipd-or-bridge, 2026-07-01_circuitsassembly_ectc2026-w2w-pitch-ladder-tel-140nm, 2026-08-01_intel_power-delivery-ai-datacenter-c2vr-mbvr-loss-budget, 2026-07-02_US20260190965A1_samsung-bspdn-rdl-substrate-3d-package, 2026-08-25_skhynix_hybrid-bonding-tech-note-hbm4e-hbm5-equipment-precision]
 related:
   - wiki/concepts/thermal-management.md
   - wiki/technologies/hybrid-bonding.md
@@ -1140,3 +1140,61 @@ Ferric Fe1766 160 A／35.5 mm²／>4.5 A/mm²）與 800 V 分屬不同層級，
 ⚠ 來源為國防相關機構之自述平台、初期原型（見 [[sources/2026-10-22_openalex_sow-wafer-level-verification-900w-thermal-chiplets]]）。
 
 ➜ 另記：該平台的 **288 顆熱測試 chiplet** 使**熱成為可程式化的輸入**而非待量測的輸出，詳見 [[concepts/test-metrology-packaging]]。
+
+## 2026-10-26 collect 更新：供電損耗首次有完整分項帳，且瓶頸隨功率放大而換手 ★★★
+
+### 1. ⭐⭐⭐ 本 wiki 首次取得「同一情境、兩個功率點」的三段損耗帳
+
+[[sources/2026-08-01_intel_power-delivery-c2vr-loss-budget]]（**Intel Foundry 白皮書**, 2026-08，一手）Figure 2：
+
+| 項目 | 1 kW GPU | 占 MBVR 輸入 | 5 kW GPU | 占 MBVR 輸入 |
+|------|---------|---------|---------|---------|
+| SoC power | 1,000 W | — | 5,000 W | — |
+| MBVR input | **1,252 W** | 100% | **8,301 W** | 100% |
+| MBVR output | 1,089 W | — | 7,222 W | — |
+| MBVR losses | 163 W | ~13.0% | 1,079 W | ~13.0% |
+| **I²R losses** | **89 W** | **~7.1%** | **2,222 W** | **~26.8%** |
+| droop losses | 174 W | ~13.9% | 1,528 W | ~18.4% |
+| **useful power** | **826 W** | **~66.0%** | **3,472 W** | **~41.8%** |
+
+➜ 📌⭐⭐⭐ **「封裝供電的瓶頸隨功率放大而換手」—— 本 wiki 首個有依據的瓶頸換手論述。**
+**1 kW 時最大單項損耗是 droop（13.9%）；5 kW 時最大單項是 I²R（26.8%）。** 自 1 kW 至 5 kW，**I²R 增約 25×**（89 → 2,222 W）而 MBVR 損耗僅約 6.6×（163 → 1,079 W）⇒ **MBVR 效率近乎與功率無關，而互連損耗隨功率超線性惡化。**
+➜ 📌 **其工程涵義直接支持本頁既載的「垂直供電」論述**：既載多以「縮短路徑」定性表述；本件給出**為何必須縮短**的瓦數依據。
+⚠ 占比為本 wiki 自白皮書瓦數算出（原文給瓦數，未給百分比）；⚠ 原文未說明 droop 的量測定義與負載瞬態條件。
+
+### 2. ⭐⭐⭐ A/mm² 落點新增一格，且首次明示分母為「單一矽晶片」
+
+**C2VR：10 A/mm²，於單一矽晶片上**；**輸入最高 2.4 V**；**效率 >90%**；**可薄化至 <100 µm**；內嵌於**運算晶粒下方**（垂直供電）。
+➜ 📌 依規範（34）（37）：本值之量測對象為**調壓器矽晶片自身面積** ⇒ **不得**與既載以封裝面積、凸塊陣列面積或每 mm 邊長為分母之任何 A/mm² 比較大小。本頁 mm² 落點表據此新增一列**「調壓器晶片面積」**。
+➜ 📌 **「multi-kiloamp range」為封裝級總電流**，與既載「同一個 160 A 可報成三個數字、相差 2.8 倍」（元件級、特定測試載具）**口徑不同，不可合併**。
+
+### 3. ⭐⭐⭐ 背面供電首次自元件層跨進封裝層的排他權，且與 C2VR 構成兩個層位解法
+
+[[sources/2026-07-02_epo_samsung-bspdn-rdl-substrate-in-package]]（**Samsung US20260190965A1**, 2026-07-02, fam 100312983）：第一基板正面邏輯區塊、背面含背面互連線之 PDN；第二基板在上；**兩基板之間夾一層重佈基板（redistribution substrate）**；**上貫穿結構**穿透第二基板接至重佈基板，**下貫穿結構**把重佈基板接到第一基板背面之下晶粒墊。
+➜ 📌 **同一問題的兩個層位解法首次並列**：**Intel 把調壓器（C2VR，<100 µm）往晶粒下方搬；Samsung 把背面供電的佈線層往封裝裡搬。** ⚠ 本 wiki 推論，兩文件互未提及對方。
+➜ 📌 **第三個同向來源（降一級計）**：[[sources/2026-08-25_skhynix_hybrid-bonding-tech-note-hbm4e-hbm5]] 把 **Backside PDN** 列為混合接合的應用方向之一 ⇒ **白皮書（一手）／專利（一手）／技術札記（外部學者，規範 70 降級）** ⇒ **獨立來源數記為 2 + 1 待證。**
+➜ 📌 **「夾層是通用結構位」家族新增一型**：兩基板之間的重佈基板，且**上下各有一組貫穿結構** ⇒ 既載「貫穿 vs 非貫穿」子維度再加一項：**貫穿的是元件基板或封裝基板**。
+⚠ 專利零量化值（無電流、電流密度、阻抗、間距），未指明產品線 ⇒ 依規範（34）（37）**不得與任何 A/mm² 並列**；不得述為 Samsung 已量產結構。
+
+### 4. ⭐⭐ EMIB-T 的供電角色首次量化，橋接自「訊號通道」擴為「訊號＋供電去耦通道」
+
+白皮書 Figure 6（相對 EMIB）：**bandwidth 100%、power noise 50%**；機制為**內嵌 TSV 與 MIM 電容**。
+➜ 📌 既載 EMIB-T 數值集中於幾何與頻寬（120×120 mm、25 µm bump pitch）；**本件為首個電性噪音指標**。
+➜ 具名去耦結構清單擴充：**Omni MIM、eMIM-T、eDTC、CoaxMIL**（CoaxMIL 首次部署於 4th Gen Xeon Scalable）。
+➜ 背面供電世代路線：**PowerVia（Intel 18A）→ PowerDirect（規劃於 Intel 14A）**；**Intel 18A-P Power Boost 於同電容下頻率 >10%**。
+⚠ 「power noise 50%」為圖表相對標註，**無絕對值、無量測條件** ⇒ 僅可作為相對改善引用。
+⚠ **白皮書通篇未提及 Foveros** ⇒ 不得由本件推論 Foveros 在供電路線中的位置。
+
+### 5. ⭐⭐ 機櫃功率階梯取得第五個落點，且首次有「用電占比」的外部校準
+
+- 機櫃：**傳統 10–20 kW → AI >100 kW → 路線圖趨近 1 MW（本十年後段）**。
+  ➜ 📌 與既載四層級（處理器 2–4 kW／wafer-level node ≤900 W 模擬／機櫃 <250 kW→>1 MW／row 2 MW）**方向一致**；本件的「10–20 kW 傳統機櫃」為**既載階梯的下界首次有數字**。
+  ⚠ 依既載規範「引用任何 kW／MW 數字必須標註層級」：本件三個數字皆為**機櫃級**。
+- **美國資料中心用電占比：2030 年 11.8%（區間 9.5–15.3%）**，依 **2026-06 LBNL**；前次 2024 年估計為 **2028 年 6.7–12.0%** ⇒ 📌 **同一機構兩次估計的上修**為本 wiki 首見之用電預測修正記錄。
+
+### 6. 📌 檢索方法學：BSPDN 類檢索式須與封裝 CPC 交集（建議新增規範）
+
+本輪 `ti,ab="backside power delivery" or ti,ab="power delivery network"` 共 **56 命中**，其中**絕大多數為電晶體層（FEOL）之 BSPDN 案件**（Samsung 5 件、IBM 3 件、KANC 1 件等，皆為 GAA／nanosheet 元件結構），**僅 Samsung US20260190965A1 等少數把 BSPDN 寫進封裝請求項**。
+➜ 📌 **建議新增規範：BSPDN／power delivery 類檢索式須與封裝 CPC（H10W）交集，否則命中以 FEOL 為主。** 與既載規範（44）（48）「HBM 檢索軸應含 G11C」同型，亦為規範（52）「檢索式本身應被實測與汰除」之又一實例。
+
+**來源**：[[sources/2026-08-01_intel_power-delivery-c2vr-loss-budget]]、[[sources/2026-07-02_epo_samsung-bspdn-rdl-substrate-in-package]]、[[sources/2026-08-25_skhynix_hybrid-bonding-tech-note-hbm4e-hbm5]]

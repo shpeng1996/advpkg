@@ -3,8 +3,8 @@ title: "SK Hynix"
 category: entity
 tags: [memory, HBM, HBM4, advanced-packaging, patent-signal]
 created: 2026-04-24
-updated: 2026-10-23
-sources: [2026-08-23_servethehome_sk-hynix-hbm4-16148-microbumps, 2026-08-24_trendforce_hot-chips-2026-samsung-zhbm-skhynix-emib, 2026-08-19_trendforce_skhynix-silicon-valley-hbm-codesign-team, 2026-08-17_trendforce_samsung-skhynix-1h26-investment-nvidia-absent, 2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor, 2026-08-10_trendforce_skhynix-chongqing-sale-global-reset, 2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab, 2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h, 2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-04-22_trendforce_sk-hynix-pt7-cheongju, 2026-04-22_trendforce_sk-hynix-indiana-us-plant, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-03-03_trendforce_sk-hynix-hbm4-tight-gaps, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-05_trendforce_hbf-equipment-race-sandisk-hanmi, 2026-06-11_trendforce_skhynix-3x-wafer-2034-375layer-nand, 2026-06-20_techtimes_skhynix-hbm4e-12layer-samples, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-24_techtimes_sk-hynix-dethroned-samsung-ddr5-hbm4, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-06-25_techtimes_sk-hynix-nasdaq-adr-29b, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-22_trendforce_skhynix-q2-record-margin, 2026-07-21_trendforce_samsung-cxl-32-skhynix-imte, 2026-07-24_trendforce_skhynix-3d-stacked-dram-on-logic-on-device-ai, 2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b, 2026-10-07_skhynix_cpo-nature-electronics-100tbps-1pjbit-10ns, 2026-10-13_samsung-hbm-33pct-hcb-vs-mrmuf, 2026-10-13_hbm-share-of-accelerator-cost]
+updated: 2026-10-26
+sources: [2026-08-23_servethehome_sk-hynix-hbm4-16148-microbumps, 2026-08-24_trendforce_hot-chips-2026-samsung-zhbm-skhynix-emib, 2026-08-19_trendforce_skhynix-silicon-valley-hbm-codesign-team, 2026-08-17_trendforce_samsung-skhynix-1h26-investment-nvidia-absent, 2026-08-10_trendforce_samsung-hbm4-yield-80pct-skhynix-labor, 2026-08-10_trendforce_skhynix-chongqing-sale-global-reset, 2026-04-24_initial-survey, 2026-01-05_trendforce_skhynix-hbm4-outlook, 2026-04-15_trendforce_hbm4-strategies-diverge, 2026-01-28_trendforce_skhynix-hbm4, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2026-02-25_trendforce_sk-hynix-hbm4-slt-tsmc-collab, 2026-01-13_trendforce_sk-hynix-mr-muf-hbm4-16h, 2026-04-13_trendforce_sandisk-hbf-pilot-line, 2026-04-22_trendforce_sk-hynix-pt7-cheongju, 2026-04-22_trendforce_sk-hynix-indiana-us-plant, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-03-03_trendforce_sk-hynix-hbm4-tight-gaps, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-04_trendforce_sk-tsmc-chairman-meeting-hbm4-basedie, 2026-06-05_techtimes_nvidia-vera-rubin-hbm4-suppliers-jensen-huang, 2026-06-05_trendforce_hbf-equipment-race-sandisk-hanmi, 2026-06-11_trendforce_skhynix-3x-wafer-2034-375layer-nand, 2026-06-20_techtimes_skhynix-hbm4e-12layer-samples, 2026-06-23_trendforce_hbm4-strategy-split-samsung-skhynix, 2026-06-24_techtimes_sk-hynix-dethroned-samsung-ddr5-hbm4, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-06-25_techtimes_sk-hynix-nasdaq-adr-29b, 2026-07-07_trendforce_samsung-skhynix-hybrid-bonding-delay-16hi-hbm4e, 2026-07-02_trendforce_skhynix-removes-price-cap-lta, 2026-07-08_trendforce_dram-price-fixing-hbm-collusion, 2026-07-22_trendforce_skhynix-q2-record-margin, 2026-07-21_trendforce_samsung-cxl-32-skhynix-imte, 2026-07-24_trendforce_skhynix-3d-stacked-dram-on-logic-on-device-ai, 2026-07-28_trendforce_nvidia-socamm-halved-memory-bom-skg500b, 2026-10-07_skhynix_cpo-nature-electronics-100tbps-1pjbit-10ns, 2026-10-13_samsung-hbm-33pct-hcb-vs-mrmuf, 2026-10-13_hbm-share-of-accelerator-cost, 2026-04-21_openalex_skhynix-tel-sicn-bond-wave-ipd-overlay, 2026-08-25_skhynix_hybrid-bonding-tech-note-hbm4e-hbm5-equipment-precision]
 related:
   - wiki/entities/samsung.md
   - wiki/technologies/hbm4.md
@@ -760,3 +760,26 @@ base die 製程節點（僅稱 "optimized logic foundry process"）⇒ **既載 
 SK hynix 側仍缺節點數字**；翹曲量測值；HBM4E／HBM5 時程（作者註明 HBM5 未涵蓋）。
 
 來源：[[sources/2026-08-23_servethehome_sk-hynix-hbm4-16148-microbumps]]
+
+## 2026-10-26 collect 更新：一手研究（SiCN 接合）與外部學者札記（HBM 時程）★★★
+
+### 1. ⭐⭐⭐ 一手研究：SiCN 直接接合的「強度 vs 對準」取捨（SK hynix × Tokyo Electron Kyushu × 橫濱國大）
+
+[[sources/2026-04-21_acsaelm_skhynix-tel-sicn-bond-wave-ipd]]（ACS Applied Electronic Materials, 2026-04-21, `10.1021/acsaelm.6c00446`, 被引 2；作者含 SK hynix 韓／日／美三地研究人員）：
+- **晶圓級對準的限制來源是接合後面內位移（IPD）**，表現為疊對損失與全晶圓尺度失配，且隨 Cu 墊間距微縮更受限。
+- **接合波前速度幾乎不隨電漿條件改變**，但 **IPD 隨 N₂ 電漿顯著增加**；**強度在 N₂ 100 W 最大**；**O₂ 之 IPD 較低但強度較低**。
+➜ 📌 **SK hynix 首次以一手研究身分進入本 wiki 的混合接合機制討論**（既載多為其採購與驗證動態）。
+➜ 📌 **「強度與對準不可同時最佳化」** —— 詳見 [[technologies/hybrid-bonding]]（「最佳值必然是區間」家族第五型）。
+⚠ 摘要未給 IPD 的 nm 數值；OA PDF 可得 ⇒ 下輪高優先取全文。
+⚠ **本件為 W2W** ⇒ 不得與既載 SK hynix 之 D2W／HBM 驗證動態（2026-04-29 等）合併為單一能力陳述（規範 55）。
+
+### 2. ⭐⭐ 外部學者札記：HBM 混合接合時程與設備精度（非一手，須降級引用）
+
+[[sources/2026-08-25_skhynix_hybrid-bonding-tech-note-hbm4e-hbm5]]（SK hynix Newsroom 刊載，**撰稿者為 Inha 大學 Joo Seunghwan 教授**, 2026-08-25）：
+**TCB 約 7 µm 以下不適用**；**混合接合為 16 層以上 HBM 之必要條件**；**全面採用最可能落在 HBM4E 或 HBM5（>20 層）**；**成本為覆晶 2–3 倍**；**韓國國產設備精度現約 100 nm，計畫 50 → 25 nm，而海外供應商已完成開發並投入生產**；**SK hynix 據報以混合接合開發 >400 層 NAND，量產目標 2027**。
+⚠⚠ **規範（70）：託管位置不構成一手性** ⇒ **本件不得作為 SK hynix 一手技術揭露引用**，含 NAND 400 層一項（原文自身以 reportedly 表述）。
+⚠⚠ **規範（41）**：作者即既載 [[entities/asml]] 之 2026-04-28「ASML 以 Twinscan 雙站專利路徑瞄準 W2W」分析的**同一人** ⇒ **兩者不計為獨立來源。**
+➜ 📌 **本 wiki 處置**：技術札記歸為「外部專家意見」，§1 之 ACS 論文歸為「SK hynix 一手研究」，**分別計數，但在涉及 SK hynix 路線的論述上不互證。**
+⚠ 「速度 ~11.9×／散熱 >100×／密度 15×」無量測對象與邊界 ⇒ 依規範（34）（37）不得與他源同名指標比大小。
+
+**來源**：[[sources/2026-04-21_acsaelm_skhynix-tel-sicn-bond-wave-ipd]]、[[sources/2026-08-25_skhynix_hybrid-bonding-tech-note-hbm4e-hbm5]]

@@ -3,8 +3,8 @@ title: "先進封裝熱管理 / Thermal Management in Advanced Packaging"
 category: concept
 tags: [thermal-management, liquid-cooling, 3D-IC, CoWoS, heat-dissipation, TIM, ECTC-2025, GaN, power-delivery, co-design, patent-signal, delamination]
 created: 2026-04-25
-updated: 2026-10-25
-sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2025-12-01_semiengineering_thermal-management, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-02_trendforce_samsung-hbm5-computex2026, 2026-05-21_semieng_hi-roadmap-nature-paper-intel, 2026-08-13_semieng_1mw-rack-debate-thermal, 2026-04-27_semieng_semiconductor-materials-misbehave, 2026-08-21_trendforce_chip-packaging-heat-ai-bottleneck-cpo-stco, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_arxiv_umn-multi-kw-power-delivery-3d-hi, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_samsung-cn122602880a-ivr-capacitor-interposer-core, 2026-10-02_imaps-dpc2026_delo-die-side-capacitor-encapsulation, 2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage, 2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk, 2026-10-07_epo_cas-freestanding-3c-sic-interposer, 2026-10-07_openalex_diamond-d2w-direct-bonding-vdw-45mpa, 2026-10-07_openalex_lau-silicon-bridge-microbump-reliability, 2026-10-08_etron-liquid-through-substrate-cavity, 2026-10-08_micron-cryogenic-package-hea-solder, 2026-10-08_advantest-singulated-die-test-thermal, 2026-10-09_cas-2013-microchannel-interposer-ebg, 2026-10-09_bjut-thermomech-phase-field-imc-tgv, 2026-10-13_large-area-sintering-three-challenges, 2026-10-13_cu-microparticles-ductility-vs-stiffness-tradeoff, 2026-10-13_beiyi-sic-low-buckling-sintering, 2026-02-23_openalex_56gbs-3d-siph-5nm-cmos-2p8pjbit-600gbsmm2, 2026-04-06_openalex_micron-siph-packaging-reliability-review, 2026-05-21_openalex_hkust-98ch-ultradense-optical-io-0p2mm2]
+updated: 2026-10-26
+sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2025-12-01_semiengineering_thermal-management, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-02_trendforce_samsung-hbm5-computex2026, 2026-05-21_semieng_hi-roadmap-nature-paper-intel, 2026-08-13_semieng_1mw-rack-debate-thermal, 2026-04-27_semieng_semiconductor-materials-misbehave, 2026-08-21_trendforce_chip-packaging-heat-ai-bottleneck-cpo-stco, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_arxiv_umn-multi-kw-power-delivery-3d-hi, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_samsung-cn122602880a-ivr-capacitor-interposer-core, 2026-10-02_imaps-dpc2026_delo-die-side-capacitor-encapsulation, 2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage, 2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk, 2026-10-07_epo_cas-freestanding-3c-sic-interposer, 2026-10-07_openalex_diamond-d2w-direct-bonding-vdw-45mpa, 2026-10-07_openalex_lau-silicon-bridge-microbump-reliability, 2026-10-08_etron-liquid-through-substrate-cavity, 2026-10-08_micron-cryogenic-package-hea-solder, 2026-10-08_advantest-singulated-die-test-thermal, 2026-10-09_cas-2013-microchannel-interposer-ebg, 2026-10-09_bjut-thermomech-phase-field-imc-tgv, 2026-10-13_large-area-sintering-three-challenges, 2026-10-13_cu-microparticles-ductility-vs-stiffness-tradeoff, 2026-10-13_beiyi-sic-low-buckling-sintering, 2026-02-23_openalex_56gbs-3d-siph-5nm-cmos-2p8pjbit-600gbsmm2, 2026-04-06_openalex_micron-siph-packaging-reliability-review, 2026-05-21_openalex_hkust-98ch-ultradense-optical-io-0p2mm2, 2026-08-01_intel_power-delivery-ai-datacenter-c2vr-mbvr-loss-budget, 2026-02-16_openalex_ch4-plasma-low-temp-cu-bonding-260c]
 related:
   - wiki/technologies/cowos.md
   - wiki/technologies/hybrid-bonding.md
@@ -1559,3 +1559,20 @@ GF（SEMI 訪談）：III–V 材料高溫表現不佳，整合壓力把 **InP �
 - ⭐ **控制回路成為隱藏熱源與隱藏功耗**：[[sources/2026-05-21_jlt_hkust-98ch-ultradense-optical-io]] 的偏振串音規格須 **FPGA 即時重構 MZI** 維持，該功耗未給 ⇒ 與既載「探針卡自身主動元件的熱功率 PT2」（Technoprobe）同構：**量測／控制硬體自身的熱必須與被測對象的熱分開計列。**
 
 **來源**：[[sources/2026-02-23_jssc_3d-siph-5nm-cmos-transceiver-600gbsmm2]]、[[sources/2026-04-06_micron_siph-packaging-reliability-review]]、[[sources/2026-05-21_jlt_hkust-98ch-ultradense-optical-io]]
+
+## 2026-10-26 collect 更新：損耗即熱——供電損耗帳首次可轉為熱負載 ★★
+
+- ⭐⭐⭐ **「供電損耗」與「熱」首次可以用同一組瓦數連起來**（[[sources/2026-08-01_intel_power-delivery-c2vr-loss-budget]]，Intel Foundry 白皮書, 2026-08）：
+  **5 kW GPU 情境下，MBVR 輸入 8,301 W 而有效功率僅 3,472 W（~41.8%）** ⇒ **其餘約 4,829 W（MBVR 1,079 ＋ I²R 2,222 ＋ droop 1,528）全部以熱的形式出現在供電路徑上。**
+  ➜ 📌 **本頁既載的熱討論皆以晶粒功耗為熱源**；本件指出**供電路徑自身即為第二個熱源，且在 5 kW 級別其量級與晶粒功耗同階**。⚠ 本 wiki 推論（白皮書以效率而非熱的語彙陳述；droop 損耗是否全部轉為熱未明言）。
+  ➜ 📌 **機櫃功率階梯下界首次有數字**：**傳統 10–20 kW → AI >100 kW → 趨近 1 MW（本十年後段）**，與既載四層級方向一致（引用時須標註層級）。
+
+- ⭐⭐ **低溫接合的四元組條件，使「溫度軸」首次可比**（[[sources/2026-02-16_tcpmt_ch4-plasma-low-temp-cu-bonding-260c]]，首爾科技大學, IEEE TCPMT, 2026-02-16）：**260 °C／15 MPa／1 小時，後退火 200 °C**；鈍化層為**氫化非晶碳（a-C:H）**；TEM 界面**無孔洞、無氧但含碳**。
+  ➜ 📌 **新增規範建議：凡引用混合接合之「低溫」，必須同時標註壓力與時間**（260 °C／1 h 與 300 °C／10 min 不是同一件事）⇒ 本頁既載之低溫落點須回頭補標。
+  ➜ 📌 **「潔淨」必須標註對象：無氧不等於無雜質**（本件刻意留碳，且不以無碳為驗收）。
+
+- ⭐ **載體通道化（既載四例、整條線零量化值）本輪檢出第五例但未收錄**：**ND Hi Tech Lab × Invent and Collaboration Laboratory US20240421027A1**（2024-12-19, fam 93844746）—— 基板含**第一腔體供液體通過**，冷板含**第二腔體與之連通**，並有高導熱互連與 STI 區之 **underground interconnection (UGI)**，支援**雙面／多面冷卻、供電與訊號**。
+  ⚠⚠ **未收錄之理由（規範 41）**：發明人 **TONG HO-MING／LU CHAO-CHUN** 與既載「Etron 連續兩件」為**同一團隊** ⇒ **不構成獨立第三例**，故既載「載體的通道化（候選，待第三例）」**仍不升格**；且本件**同樣零量化值** ⇒ 📌 **「載體通道化整條線至今零量化值」自連續四例延長為連續五例。**
+  ➜ **列管**：fam 93844746（下輪若出現非 Etron／ICL 團隊之同型案件，即可升格）。
+
+**來源**：[[sources/2026-08-01_intel_power-delivery-c2vr-loss-budget]]、[[sources/2026-02-16_tcpmt_ch4-plasma-low-temp-cu-bonding-260c]]
