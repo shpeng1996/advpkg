@@ -5888,3 +5888,13 @@ warning: unable to unlink '.../.git/index.lock': Operation not permitted
 - ⚠ **既載 lint 問題續列，本輪均未修復**：`wiki/technologies/info-wmcm.md` 非合法 UTF-8（2026-09-17 發現）；`wiki/index.md` 來源清單非全域日期排序（本輪 15 筆以降日序插入於清單頂端，未做全域重排）；`index.md` 來源連結數與 `wiki/sources/` 實際檔數之差額（2026-10-25 記為 14，其中 1 筆待確認）。
 - ✅ **本輪未觸碰 `raw/` 下既有任何檔案**（新增 15 個 raw 檔、對 `_collected_urls.txt` 追加 15 行）；**未修改 `CLAUDE.md`**；**未修改 `schedule.md`**。
 - 📌 **下輪建議**：①**取全文**：SiCN 之 IPD nm 值（ACS OA PDF）、Top PoP 三參數數值（IMAPS OA PDF）、YAP+ 五機制權重；②**新主題**：**Ru–Ru 混合接合**（`10.1021/acsami.5c23710`，Ru 取代 Cu 之全新材料軸）、**CPO 光學接著劑可靠度**（最高優先空缺，續追）、**玻璃基板之有空隙 TGV 高頻電性**、**OSAT 競爭格局概念頁**（列管多輪未建）。
+
+### 作業記錄補記（2026-10-26，git 步驟）
+
+- ✅ **commit 成功：`6603975 2026-10-26`（55 檔）**；commit 後 `git status` 乾淨、`git log` 正常。
+- ✅ **規範（78）執行**：commit 留下 **8 個位於作用路徑的鎖檔／pid**（`.git/HEAD.lock`、`.git/gc.pid`、`.git/objects/maintenance.lock`、`.git/packed-refs.lock`、`.git/refs/heads/main.lock`、`.git/refs/remotes/origin/{HEAD,main}.lock`、`.git/refs/remotes/staging/main.lock`），且 `gc`／`reflog` 子任務失敗（`error: task 'gc' failed`、`fatal: failed to run reflog`）。
+  ➜ **處置（續行規範 53a，刪除權限全程未申請）**：全部 `mv` 至 `.git/` 底下之 `stale3-20261026-*` 新檔名（**destination 不在 `.git/refs` 內**）；移動後**作用路徑已無任何 `*.lock`／`gc.pid`**，`git status` 與 `git log` 均正常 ⇒ **使用者下次執行 git 指令不會以 `File exists` 失敗。**
+- ✅ **規範（53）之刪除權限實測**：commit 前以 `touch` + `rm` 實測，確認**刪除仍不被允許**（`Operation not permitted`）；該測試檔無法刪除，依規範（53a）`mv` 至 `_to_delete/perm_test-20261026`（`_to_delete/` 已在 `.gitignore` 中，未進版控）。
+  ➜ 📌 **規範（53）之實測方式本輪產生一個副作用：測試檔本身無法清除。** **建議修正規範（53）：改以 `touch`＋`rm` 於 `$HOME`（非掛載資料夾）或改以 `.git` 內既有 tmp 檔判斷，避免在版控目錄留下測試檔。**
+- ⚠ **`.git/objects/**/tmp_obj_*` 暫存物件續行累積**（本輪 `git add` 期間報 55 筆無法 unlink），**不阻擋 git 運作**，本輪未處置（屬無害堆積，建議使用者自行清理）。
+- ✅ **收尾驗證（本輪新增步驟）**：①registry 新增 15 行所指之 raw 檔**全部存在**；②15 個新來源摘要頁**全部存在且於 `index.md` 各命中 1 次連結**；③`wiki/sources/` 實際檔數 **1002** 與 `index.md` 表頭所載一致；④本次 commit 所含 55 檔**全部為合法 UTF-8**（`info-wmcm.md` 未在本輪變動範圍內，其既載問題續列）；⑤`.env` **未進暫存區**，且 `.env` 之三個變數值在 `raw/` 與 `wiki/` 下**命中 0 檔**（僅變數名稱出現於歷輪 log 文字中）。
