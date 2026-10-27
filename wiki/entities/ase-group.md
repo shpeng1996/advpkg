@@ -3,8 +3,8 @@ title: "ASE Group / 日月光投控"
 category: entity
 tags: [OSAT, advanced-packaging, CoWoP, FOPLP, chiplet, CPO, LEAP]
 created: 2026-04-25
-updated: 2026-10-25
-sources: [2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below, 2026-08-05_trendforce_tsmc-cowos-cow-outsourcing-osat, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2026-05-08_aseglobal_ase-wus-kaohsiung-focoes-hub, 2026-05-26_semiconductor-digest_ase-310mm-plp-ectc2026, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-11_trendforce_ase-spil-zhunan-plant, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-07-01_trendforce_ase-price-hike-20pct, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-31_ase_cn224583735u-photoelectric-hybrid-rdl, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-10-08_ase-probing-needle-scrub-length, 2026-10-08_semieng_voltage-regulation-in-package, 2026-10-09_ieie-probe-card-mlc-signal-integrity, 2026-10-22_semieng_foundries-osats-increasingly-overlap]
+updated: 2026-10-27
+sources: [2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below, 2026-08-05_trendforce_tsmc-cowos-cow-outsourcing-osat, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2026-05-08_aseglobal_ase-wus-kaohsiung-focoes-hub, 2026-05-26_semiconductor-digest_ase-310mm-plp-ectc2026, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-11_trendforce_ase-spil-zhunan-plant, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-07-01_trendforce_ase-price-hike-20pct, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-31_ase_cn224583735u-photoelectric-hybrid-rdl, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-10-08_ase-probing-needle-scrub-length, 2026-10-08_semieng_voltage-regulation-in-package, 2026-10-09_ieie-probe-card-mlc-signal-integrity, 2026-10-22_semieng_foundries-osats-increasingly-overlap, 2026-10-21_researchandmarkets_osat-market-2026-2031, 2026-02-19_semieng_laser-arrays-cpo-epoxy-outgassing]
 related:
   - wiki/technologies/cowos.md
   - wiki/technologies/copos.md
@@ -344,3 +344,18 @@ Intel Foundry 的 ECTC 2026 官方部落格列出其 20 篇論文的合作方，
   ⚠ 轉述者為**設備供應商高管**（EV Group），依規範（41）計為**有利害關係之來源**；⚠ 設備支出數字來自 Seeking Alpha（二手財經），不作為本 wiki 權威數字。
 - ⭐ **產業結構定位**：同篇把 **2.5D 整合與面板組裝**列為代工廠與 OSAT 的最大重疊區，**混合接合為下一個移往 OSAT 的步驟**，且 **OSAT 不會在先進節點或前段與代工廠競爭**、**不買 EUV 等最先進設備**。
   ⇒ 與既載 ASE COO 吳田玉「CoWoS/EMIB 不互斥」之表態同向：**OSAT 的競爭位置是在後段的廣度，而非前段的深度。**
+
+## [2026-10-27] collect 更新：⚠ 第三方報告之 ASE 市占數字不予採用
+
+[[sources/2026-10-21_researchandmarkets_osat-market-2026-2031]]（Research and Markets 經 GlobeNewswire，2026-10-21）稱 **「Taiwan: ASE Technology 約佔全球 OSAT cluster 的 38%」**。
+
+⚠⚠⚠ **本 wiki 不記錄此數字。** 理由：
+1. 「global OSAT **cluster**」**非標準分母且原文未定義**，無法判斷其涵蓋 ASE 全集團、僅封測、或含 EMS 部門。
+2. 依既載市占查證門檻（2026-09-21 立規，源於 AMAT CMP 市占之互不一致二手來源），**付費報告之新聞稿不在可接受來源之列** —— 僅接受法說會逐字稿、SEMI 設備／封裝出貨統計，或廠商正式宣告。
+3. 同一清單把 **WiseRoad Capital（私募基金）列為「OSAT 公司」之一** ⇒ 分類寬鬆，進一步降低其公司級數字的可用性。
+
+📌 **列待證項，且不得作為其他推論之前提。** 本頁既有 ASE 數字（2026 CapEx $10.5B、2027 LEAP 目標 $7.5B+、interposer 路線圖 40×、FOPLP Q1 2027、SPIL 斗六廠）**不受影響亦不被此數字補強。**
+
+可引用的市場背景（不涉公司拆分）：OSAT 整體 2025 **USD 52.00 B** → 2031 **USD 87.22 B**（CAGR 9.00%）；**打線封裝 2026 市占 34.35% 且為最大營收區隔**；先進封裝 CAGR 13.00%；運算／AI／HPC CAGR 16.00% → USD 20.27 B (2031)；亞太佔價值 72.13%。見 [[concepts/advanced-packaging-market]]。
+
+另：[[sources/2026-02-19_semieng_laser-arrays-cpo-epoxy-outgassing]] 中 ASE Group 就 CPO 提供評論（記者轉述，無具體規格）。

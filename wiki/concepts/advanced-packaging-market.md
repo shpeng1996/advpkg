@@ -3,8 +3,8 @@ title: "先進封裝市場 / Advanced Packaging Market"
 category: concept
 tags: [market, forecast, CAGR, supply-chain, HBM, chiplet, geopolitics, equipment, SIA, Omdia, Yole, WFE, substrate-market, framework]
 created: 2026-04-24
-updated: 2026-10-26
-sources: [2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-07-31_semieng_chip-week-149, 2026-04-24_initial-survey, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2026-01-23_trendforce_chip-tools-tel-asml, 2026-03-05_trendforce_intel-emib-billions, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2025-12-18_trendforce_micron-capex-hbm4, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2025-05-13_trendforce_top10-osat-2024, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-04-16_ontoinnovation_dragonfly-g5-qualified, 2026-06-23_communicationstoday_foplp-glass-substrate-market-8b-2030, 2026-06-29_trendforce_china-osat-tongfu-jcet-investment, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-26_semieng_chip-week-144, 2026-07-01_trendforce_ase-price-hike-20pct, 2026-07-04_semieng_chip-week-145, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-07-03_trendforce_anthropic-samsung-advanced-packaging, 2026-05-08_trendforce_ajinomoto-abf-1b-land-buy-2032-margins, 2026-07-24_semieng_chip-week-148, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-08-06_siliconbox_500m-units-panel-scale, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-10-02_imaps-dpc2026_defect-free-coplanar-copper-via-fill, 2026-10-02_trendforce_cowos-l-mainstream-through-2028, 2026-10-02_trendforce_nvidia-glass-substrate-2028-taiwan, 2026-10-02_bitschips_besi-q1-2026-hybrid-bonding-orders, 2026-10-13_mordor-market-9011b-2031, 2026-10-13_hbm-share-of-accelerator-cost, 2026-10-22_semieng_foundries-osats-increasingly-overlap, 2025-07-31_US20250244547A1_coherent-compound-semiconductor-cpo-ccpo, 2026-10-16_3dincites_scaling-advanced-packaging-capacity-concentration, 2025-11-20_36kr_three-major-players-large-chip-packaging-interposer-cost]
+updated: 2026-10-27
+sources: [2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-07-31_semieng_chip-week-149, 2026-04-24_initial-survey, 2024-10-01_3dincites_geopolitics-packaging, 2026-04-01_semiengineering_chiplets-2026, 2026-01-23_trendforce_chip-tools-tel-asml, 2026-03-05_trendforce_intel-emib-billions, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-04-16_trendforce_tsmc-q1-q2-earnings, 2025-12-18_trendforce_micron-capex-hbm4, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2025-08-12_semianalysis_hbm-roadmap, 2023-07-26_semianalysis_cowos-hbm-supply-chain, 2023-07-05_semianalysis_ai-capacity-cowos-hbm, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-14_trendforce_sk-hynix-microsoft-asic-hbm, 2025-05-13_trendforce_top10-osat-2024, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-04-16_ontoinnovation_dragonfly-g5-qualified, 2026-06-23_communicationstoday_foplp-glass-substrate-market-8b-2030, 2026-06-29_trendforce_china-osat-tongfu-jcet-investment, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-26_semieng_chip-week-144, 2026-07-01_trendforce_ase-price-hike-20pct, 2026-07-04_semieng_chip-week-145, 2026-07-02_trendforce_sk-hynix-samsung-cheongju-investment, 2026-06-30_trendforce_samsung-skhynix-800t-expansion, 2026-07-03_trendforce_anthropic-samsung-advanced-packaging, 2026-05-08_trendforce_ajinomoto-abf-1b-land-buy-2032-margins, 2026-07-24_semieng_chip-week-148, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-09-08_jvsta_non-bosch-deep-si-etch-sidewall-passivation, 2026-08-06_siliconbox_500m-units-panel-scale, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-10-02_imaps-dpc2026_defect-free-coplanar-copper-via-fill, 2026-10-02_trendforce_cowos-l-mainstream-through-2028, 2026-10-02_trendforce_nvidia-glass-substrate-2028-taiwan, 2026-10-02_bitschips_besi-q1-2026-hybrid-bonding-orders, 2026-10-13_mordor-market-9011b-2031, 2026-10-13_hbm-share-of-accelerator-cost, 2026-10-22_semieng_foundries-osats-increasingly-overlap, 2025-07-31_US20250244547A1_coherent-compound-semiconductor-cpo-ccpo, 2026-10-16_3dincites_scaling-advanced-packaging-capacity-concentration, 2025-11-20_36kr_three-major-players-large-chip-packaging-interposer-cost, 2026-10-21_researchandmarkets_osat-market-2026-2031]
 related:
   - wiki/entities/tsmc.md
   - wiki/entities/sk-hynix.md
@@ -1492,3 +1492,35 @@ Bits&Chips（2026-04-23）：訂單 **€269.7 M（YoY >2×）**、營收 **€1
 ⚠ **3D InCites 投書作者任職 Kulicke & Soffa** ⇒ 依規範（41）（70），在「TCB vs 混合接合」此對立上**非中立來源**。
 
 **來源**：[[sources/2026-10-16_3dincites_scaling-advanced-packaging-capacity-concentration]]、[[sources/2025-11-20_36kr_large-chip-packaging-interposer-cost-share]]
+
+## [2026-10-27] collect 更新：首個 OSAT 市場總量分母；打線仍是最大營收區隔
+
+來源：[[sources/2026-10-21_researchandmarkets_osat-market-2026-2031]]（Research and Markets，經 GlobeNewswire，2026-10-21）
+⚠⚠ **付費報告之新聞稿摘要**（`fetch_status: partial`），方法學、分母定義與樣本皆不可見。
+
+| 項目 | 值 |
+|------|-----|
+| **2025 基期 OSAT 市場** | **USD 52.00 B** |
+| **2031 預測** | **USD 87.22 B**（CAGR **9.00%**，標為 2026–2031） |
+| ASP 指數 | 2025 = 100 → 2031 = **116** |
+| **打線封裝** | **2026 市占 34.35%**、CAGR 4.00%、**依營收最大之單一區隔** |
+| **先進封裝** | **CAGR 13.00%**（最快成長；⚠ **無金額、無佔比**） |
+| 運算／AI／HPC | **CAGR 16.00%** → **USD 20.27 B (2031)** |
+| 亞太 / 印度 | **價值佔比 72.13%** / CAGR **14.85%** |
+| ⚠ 先進 vs 傳統之金額拆分、2.5D/3D／fan-out／覆晶之金額 | **全部未給** |
+
+### 讀法
+
+- ⭐⭐⭐ **「打線仍是 OSAT 最大營收區隔（34.35%）」為本輪最重要的對比數字。** 📌 **為 2026-10-26 一輪的專利側觀察提供獨立的市場側佐證**：當輪於專利軌發現 **K&S 25 件命中中該公司佔 14 件、其中 9 件為打線相關**，並記為「研發重心可能仍在打線」（當時為推測）。兩個來源互相獨立（EPO 排他權分佈 vs 第三方市場報告）且方向一致 ⇒ **推測升格為「設備商研發重心與市場重心一致」的雙來源觀察。** 見 [[entities/kulicke-soffa]]。
+- ⭐⭐⭐ **整體 9% vs AI/HPC 子集 16% 的成長率落差** ⇒ 📌 既載論述「**封裝產能的分配與晶粒數量脫鉤，而與價值密度掛鉤**」（Epoch AI：四家買方按金額取 ~90% CoWoS／92% HBM，卻僅占先進邏輯晶粒約 12%）取得結構性背景：**成長集中在一個小而高價值的子集，而非整體市場的平移。**
+- ⭐⭐ **本 wiki 首個 OSAT 總量分母**，可為既載公司級 CapEx（ASE 2026 $10.5B、Amkor Arizona $12B 總投資、Powertech PiFO NT$70B、SPIL 斗六 TWD 100 億）提供**量級對照**。⚠ **CapEx 與營收分母不同，不得相除得出任何比率。**
+
+### ⚠ 不予記錄之數字
+
+- ⚠⚠⚠ **「ASE Technology 約佔全球 OSAT cluster 的 38%」—— 本 wiki 不記錄。** ①「global OSAT **cluster**」非標準分母且原文未定義；②依既載市占查證門檻（2026-09-21 立規，源於 AMAT CMP 市占之互不一致二手來源），**付費報告新聞稿不在可接受來源之列**（僅接受法說會逐字稿、SEMI 出貨統計或廠商正式宣告）。📌 **列待證項，不得作為其他推論前提。**
+- ⚠ **WiseRoad Capital 被列為「OSAT 公司」之一**（實為私募基金）⇒ **公司清單本身即顯示分類寬鬆**，進一步支持不採用其公司級數字。
+- ⚠ **區間與基期錯位一年**：CAGR 標為 2026–2031 而基期為 2025。本 wiki 驗算 **52 × 1.09⁶ ≈ 87.2 ✓ 自洽**，但引用須標註此錯位。
+
+### 📌 既載空缺「缺概念頁：OSAT 競爭格局」—— 仍不結清
+
+本件提供了**整體量化框架**，但**缺少可用的公司級拆分**（唯一的公司數字即上述不予採用者）⇒ **空缺不結清**，但問法收窄為：「**需要一份按公司列出 OSAT 營收或先進封裝營收的可引用來源**（法說會、SEMI 統計或廠商正式揭露）。」

@@ -3,8 +3,8 @@ title: "AGC Inc. — 旭硝子"
 category: entity
 tags: [AGC, glass-substrate, TGV, polymer-waveguide, copackaged-optics, CTE, alkali-free-glass]
 created: 2026-09-27
-updated: 2026-10-03
-sources: [2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-30_epo_amosense-wo2026019155a1-multilayer-glass-core-frit-bonding, 2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth]
+updated: 2026-10-27
+sources: [2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-30_epo_amosense-wo2026019155a1-multilayer-glass-core-frit-bonding, 2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth, 2026-10-27_ieeebuss_dnp-large-glass-panel-filled-vs-conformal-tgv]
 related:
   - wiki/technologies/glass-substrate.md
   - wiki/technologies/tsv.md
@@ -167,3 +167,20 @@ AGC 本頁既有之材料物性（本 wiki 唯一的玻璃廠 CTE × 模數並�
 ⚠ **未揭露**：fastRise HF 的 Dk/Df、CTE、模數、與玻璃核心的相容性；以及該產品線相對 AGC 玻璃業務的規模。**新空缺⭐⭐。**
 
 見 [[sources/2026-10-03_imaps_ohmega-ticer-embedded-thin-film-resistors]]。
+
+## [2026-10-27] collect 更新：⚠⚠⚠ 「填滿 vs conformal 無顯著差異」遭 DNP 一手數據直接衝突
+
+本輪取得 **DNP（Satoru Kuramochi, IEEE BUSS 教程 T05）**的 TGV 插入損耗數據，與本頁既載 AGC keynote 結論在**同一頻率（30 GHz）上不一致，且差異的方向相反**。
+
+| 來源 | 頻率 | 填滿 | conformal | 原文結論 |
+|------|------|------|-----------|----------|
+| **AGC**（本頁既載；[[sources/2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference]]） | 30 GHz | Sdd21 **−2.11 dB**（單對 **−0.09**） | **−2.08 dB**（單對 **−0.06**） | 「**No significant difference**」—— 且 conformal **略優** |
+| **DNP**（本輪；[[sources/2026-10-27_ieeebuss_dnp-large-glass-panel-filled-vs-conformal-tgv]]） | 30 GHz | S21 **0.23 dB** | **0.48 dB** | conformal 損耗約 **2.1×** |
+
+### 處置（依「矛盾不得靜默覆寫」原則）
+
+- ✅ **本頁 AGC 既有數字（−2.11 / −2.08 dB、「無顯著差異」）保留不動**，僅加註此衝突。
+- 📌 **本 wiki 的跨頁讀法改為**：「**填滿 vs conformal 的 30 GHz 差異在兩家一手玻璃供應者之間，量級與符號皆不一致 ⇒ 該差異不是玻璃或孔型的普適性質，而是隨各家幾何與金屬化而定。**」此前基於 AGC 單一來源所寫的「而在玻璃內部，填滿與 conformal 在 30 GHz 沒有顯著差異」**須加上「（AGC 口徑）」限定**。
+- ⚠ **本 wiki 指認之混淆因子**：DNP 的兩型**幾何並不對等**（節距 90 vs 150 µm、AR 11 vs 4→9），故其 2.1× 不能純歸因於「有無填滿」；**AGC 側則未揭露其兩型的節距是否相同** ⇒ 兩邊都缺乏對等比較的揭露。
+- 📌 **新增空缺（最高優先）**：**需一份「同節距、同 AR、僅差填滿與否」的對照量測**，否則此爭議無法裁決。此空缺同時取代既載「AGC 之填滿 vs conformal 在 >30 GHz（如 110 GHz 級）是否仍無顯著差異」之單純外推問法 —— **先解決同頻率下的對等性，再談更高頻率**。
+- 📌 **另與本輪 Qorvo（鋁矽酸鹽玻璃 Df 0.044 @30 GHz）對照**：本頁既載 AGC 無鹼玻璃 ER-Y1／EN-A1 之 CTE 與模數，但**本 wiki 尚無 AGC 的 Df 數字** ⇒ **新增空缺：AGC 無鹼玻璃的 Df 為何？** 無此值則無法判斷 AGC 與 DNP（0.006）、Qorvo（0.044）之間的 7 倍分歧中 AGC 落在何處。

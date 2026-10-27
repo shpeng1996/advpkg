@@ -3,8 +3,8 @@ title: "Amkor Technology"
 category: entity
 tags: [OSAT, advanced-packaging, FOCoS, Arizona, chiplet, Intel-EMIB, patent-signal, TIM]
 created: 2026-04-25
-updated: 2026-10-26
-sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-05-19_stocktitan_amkor-arizona-peoria-land-expansion, 2026-06-17_digitimes_amkor-tsmc-10year-arizona-deal, 2026-06-17_trendforce_tsmc-amkor-10year-arizona-advanced-packaging, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-30_amkor-ir_arizona-7billion-groundbreaking, 2026-06-30_digitimes_amkor-2.5d-hdfo-growth-2026, 2026-07-23_amkor-ir_nvidia-amkor-1-5b-strategic-partnership, 2026-09-26_article_amkor-embedded-trace-rdl, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-10-07_epo_amkor-bspdn-oriented-package-embedded-ipd, 2026-10-07_openalex_amkor-kelly-three-interposer-routes, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-08_semieng_voltage-regulation-in-package, 2026-10-13_amkor-cavity-as-allocated-volume, 2026-01-13_epo_amkor-cn121335572a-rdl-lateral-side-protective-layer, 2026-10-22_semieng_foundries-osats-increasingly-overlap, 2025-09-16_CN120659336A_samsung-fowlp-subpackage-reconstructed-foplp, 2026-10-16_3dincites_scaling-advanced-packaging-capacity-concentration]
+updated: 2026-10-27
+sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-05-19_stocktitan_amkor-arizona-peoria-land-expansion, 2026-06-17_digitimes_amkor-tsmc-10year-arizona-deal, 2026-06-17_trendforce_tsmc-amkor-10year-arizona-advanced-packaging, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-30_amkor-ir_arizona-7billion-groundbreaking, 2026-06-30_digitimes_amkor-2.5d-hdfo-growth-2026, 2026-07-23_amkor-ir_nvidia-amkor-1-5b-strategic-partnership, 2026-09-26_article_amkor-embedded-trace-rdl, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-10-07_epo_amkor-bspdn-oriented-package-embedded-ipd, 2026-10-07_openalex_amkor-kelly-three-interposer-routes, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-08_semieng_voltage-regulation-in-package, 2026-10-13_amkor-cavity-as-allocated-volume, 2026-01-13_epo_amkor-cn121335572a-rdl-lateral-side-protective-layer, 2026-10-22_semieng_foundries-osats-increasingly-overlap, 2025-09-16_CN120659336A_samsung-fowlp-subpackage-reconstructed-foplp, 2026-10-16_3dincites_scaling-advanced-packaging-capacity-concentration, 2026-06-11_epo_amkor-metal-die-backside-tim-lid, 2026-04-23_epo_amkor-recessed-staggered-two-tier-traces, 2026-08-18_epo_amkor-double-sided-dual-encapsulant, 2026-04-30_epo_amkor-protruding-contoured-pad, 2026-10-21_researchandmarkets_osat-market-2026-2031, 2026-02-19_semieng_laser-arrays-cpo-epoxy-outgassing]
 related:
   - wiki/technologies/rdl.md
   - wiki/technologies/cowos.md
@@ -557,3 +557,34 @@ Amkor 的 **Vineet Pancholi** 提供本 wiki 目前唯一的中介層測試覆�
 ⚠ 本件為**設備商員工投書**（規範 41／70：在 TCB vs 混合接合議題上非中立），惟上述 Amkor 數字屬**第三方可查之專案事實**，與其利益衝突軸無關。
 
 **來源**：[[sources/2026-10-16_3dincites_scaling-advanced-packaging-capacity-concentration]]
+
+## [2026-10-27] collect 更新：專利軌輪替至 Amkor（四件新 family）＋ 一項重要的去重發現
+
+本輪專利軌依既載計畫輪替至 Amkor：`pa="amkor technology" and pd within "2026"` 命中 **99 件**，取樣前 25 件。
+
+### ⭐⭐⭐ 去重發現：本 wiki 先前已收完 Amkor 2026 年的「先進封裝叢集」
+
+25 件取樣中，**僅 4 件**帶先進封裝內容，而**此 4 件全部已在 `_collected_urls.txt` 中**：
+
+| 公開號 | family | 內容 | 狀態 |
+|--------|--------|------|------|
+| US20260334253A1 | 101672543 | **橋晶粒**（模組內橋 + 基板腔體內第二橋 + RDL 覆蓋腔體） | 已收錄 |
+| US20260334335A1 | 101671001 | **子面板（subpanel）**＋雙面 RDL 跨子面板耦接 | 已收錄 |
+| US20260076272A1 | 98979446 | **中介層**開口圍繞熱體＋垂直互連 | 已收錄 |
+| TW202607900A | 98776443 | RDL 基板**雙面混合接合**，第二界面落在第一界面 footprint 內 | 已收錄 |
+
+➜ 📌 **本輪 family-id 去重攔下 17 件中即含上述 4 件。** 因此本輪可選者為 **MEMS／影像感測器／功率元件／導線架／PoP／走線幾何**的長尾。
+➜ ⚠⚠ **重要界定：這不是「Amkor 不做先進封裝」的證據。** 正確的敘述是「**本 wiki 歷輪已把 Amkor 2026 年公開案中的先進封裝叢集收完，殘餘未收者落在傳統封裝長尾**」—— 這是**去重效率的觀察，不是組合重心的宣稱**。本輪取樣之 CPC 分佈（H10W7 ×20、H10W4 ×12、H10P7 ×8）**僅能描述殘餘長尾，不能描述 Amkor 全部 99 件**。
+➜ ⚠ 另一觀察：25 件中**標題僅 5 種**，其中 16 件同為 "ELECTRONIC DEVICES AND METHODS OF MANUFACTURING ELECTRONIC DEVICES" ⇒ **Amkor 的標題刻意去資訊化，無法以標題篩選，必須逐件讀摘要**。📌 **列為作業規範建議（84）。**
+
+### 本輪新收四件（依專利訊號原則，皆加保留措辭、皆零量化值）
+
+1. **US20260165123A1（2026-06-11, fam 100037812）—— 熱路徑**：第一包封物**只圍在晶粒側面**，金屬結構**直接貼合晶粒背面**，再經 TIM 接 lid ⇒ **封膠被排除在熱路徑之外**。既載「某個結構位被整體取消」家族在**熱路徑**的落點（被取消者是封膠的位置）。⚠ 與本頁既載「CEO McCann 預判兩相冷卻為下一散熱轉型」相比，**本件仍在傳導** ⇒ **公開發言領先排他權一個世代**。見 [[sources/2026-06-11_epo_amkor-metal-die-backside-tim-lid]]
+2. **US20260114334A1（2026-04-23, fam 99480468）—— 兩階走線**：下層走線**埋入介電開口並凹陷**，上層走線**水平交錯疊置其上** ⇒ 在**不縮小 L/S** 的前提下提高走線密度，密度來源改為**垂直錯位**。既載「把設計移到規格較鬆的區間」家族**第五例，且首次把密度換到垂直方向**。見 [[sources/2026-04-23_epo_amkor-recessed-staggered-two-tier-traces]]
+3. **CN122602881A（2026-08-18, fam 100862662）—— 雙面掛載**：基板兩面各掛元件、各自包封，外部互連穿出第二包封物。⭐ **與本 wiki 既載同申請人 TW202607900A（雙面混合接合）構成同一手法的兩個精緻度層級** ⇒ **「雙面基板掛載」是 Amkor 的兩段式路線，非單一個案**。⚠ 雙面包封的**翹曲**代價（兩側 EMC 固化收縮不對稱）摘要未述，依既載「翹曲須分可逆 CTE 與不可逆化學固化收縮」，本件為**不可逆項的高風險構型**，列追蹤點。見 [[sources/2026-08-18_epo_amkor-double-sided-dual-encapsulant]]
+4. **US20260123462A1（2026-04-30, fam 99551602）—— 凸墊輪廓**：凸墊具**輪廓化側壁**且**凸出於第二介電層外表面** ⇒ 既載「銅的微結構自製程結果變成可請求的設計參數」（JCET 晶粒梯度／Absolics 長寬比 0.85–0.99）**第三個落點，且首個落在幾何輪廓而非冶金學**。⚠ 本件屬**凸出**方向，與混合接合所要求的凹陷／齊平相反，**不得與 Cu recess 數字混用**。見 [[sources/2026-04-30_epo_amkor-protruding-contoured-pad]]
+
+### 市場側與 CPO 側的兩筆外部提及
+
+- **OSAT 市場**（[[sources/2026-10-21_researchandmarkets_osat-market-2026-2031]]）：Amkor 列為十家之一；整體市場 2025 **USD 52.00 B** → 2031 **USD 87.22 B**（CAGR 9.00%）。⚠ 該報告之公司級數字（含「ASE 約佔全球 OSAT cluster 38%」）**依既載市占查證門檻不予記錄**，本頁不新增任何 Amkor 市占數字。
+- **CPO**（[[sources/2026-02-19_semieng_laser-arrays-cpo-epoxy-outgassing]]）：Amkor 被引述稱**部分可插拔模組亦可算作 CPO**，且**部分設計把 PIC 與微透鏡陣列的光纖貼附整合於單一封裝內** ⇒ 本 wiki 首次記錄 Amkor 在 CPO 光纖貼附上的定位（⚠ 記者轉述，非 Amkor 一手文件）。

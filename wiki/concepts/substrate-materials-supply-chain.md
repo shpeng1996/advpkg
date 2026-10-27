@@ -3,8 +3,8 @@ title: "基板與材料供應鏈 / Substrate & Materials Supply Chain（ABF・T-
 category: concept
 tags: [ABF, Ajinomoto, substrate, supply-chain, Ibiden, Unimicron, Shinko, SEMCO, Kinsus, Nan-Ya-PCB, glass-core, warpage, bottleneck]
 created: 2026-10-03
-updated: 2026-10-26
-sources: [2026-10-03_tomshardware_abf-substrate-state-2026, 2026-10-03_thelec_philoptics-tgv-2mm-glass, 2026-10-03_digitaltoday_jntc-tgv-thickness-lineup, 2026-10-03_epo_semco-coreless-interposer-organic-bridge, 2026-10-06_xenospectrum_ajinomoto-abf-cut-unconfirmed-layers-per-side, 2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage, 2026-10-07_atlaspcb_abf-price-30pct-third-distinct-30-figure, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-13_all-glass-aip-no-polymer-in-the-stack, 2026-10-13_cpo-bottleneck-test-800x-area-mismatch, 2026-07-09_taiwannews_tgv-supply-chain-er-groupup-utechzone, 2026-07-21_openalex_top-pop-package-warpage-molding-compound, 2026-10-16_3dincites_scaling-advanced-packaging-capacity-concentration, 2026-01-14_openalex_kaist-cmp-more-than-moore-review]
+updated: 2026-10-27
+sources: [2026-10-03_tomshardware_abf-substrate-state-2026, 2026-10-03_thelec_philoptics-tgv-2mm-glass, 2026-10-03_digitaltoday_jntc-tgv-thickness-lineup, 2026-10-03_epo_semco-coreless-interposer-organic-bridge, 2026-10-06_xenospectrum_ajinomoto-abf-cut-unconfirmed-layers-per-side, 2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage, 2026-10-07_atlaspcb_abf-price-30pct-third-distinct-30-figure, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-13_all-glass-aip-no-polymer-in-the-stack, 2026-10-13_cpo-bottleneck-test-800x-area-mismatch, 2026-07-09_taiwannews_tgv-supply-chain-er-groupup-utechzone, 2026-07-21_openalex_top-pop-package-warpage-molding-compound, 2026-10-16_3dincites_scaling-advanced-packaging-capacity-concentration, 2026-01-14_openalex_kaist-cmp-more-than-moore-review, 2023-10-02_imapspdf_qorvo-glass-core-rf-dk-df, 2026-10-27_ieeebuss_dnp-large-glass-panel-filled-vs-conformal-tgv, 2026-10-01_nanoms_underfill-interphase-adhesion, 2025-05-27_semivision_cpo-optical-adhesive-named-products, 2025-05-27_ectc_cpo-advanced-materials-ime-fiber-attach]
 related: [technologies/glass-substrate.md, concepts/advanced-packaging-market.md, concepts/geopolitics-advanced-packaging.md, entities/ibiden.md, entities/shinko.md, entities/semco.md, entities/absolics.md, entities/agc.md]
 ---
 
@@ -464,3 +464,52 @@ Samsung 官方（Tech Blog, 2025-05-26；內容基礎 2022 Samsung Foundry Forum
 - ⭐ **寬能隙材料（SiC、GaN）的 CMP 需求首次進入本 wiki**（[[sources/2026-01-14_ijpem_kaist-cmp-more-than-moore-review]]）：因極高硬度與化學惰性，需**化學增強型與混合式 CMP** ⇒ 列為新增追蹤軸（與本輪檢出未收錄之 SiC 晶圓薄化論文 `10.1016/j.matdes.2026.116697` 同向）。
 
 **來源**：[[sources/2026-07-21_imaps_top-pop-package-warpage-molding-compound]]、[[sources/2026-10-16_3dincites_scaling-advanced-packaging-capacity-concentration]]、[[sources/2026-01-14_ijpem_kaist-cmp-more-than-moore-review]]
+
+## [2026-10-27] collect 更新：玻璃介電參數須隨組成標註；黏著劑的失效由流變而非化學式決定
+
+### ① 📌 新規範建議（83）：玻璃之 Dk/Df/CTE 必須隨組成或供應者標註
+
+本輪兩個一手來源在玻璃介電參數上分歧達 **7 倍**，且與 CTE 同向分歧：
+
+| 來源 | 玻璃種類 | Dk | **Df** | CTE |
+|------|---------|----|--------|-----|
+| **DNP** | 未述 | 5.8 | **0.006** | **3.8 ppm** |
+| **Qorvo**（⚠ 2023-10） | **鋁矽酸鹽** | 6.9 | **0.044 @30 GHz** | **7.8 ppm/°C** |
+| 同基板**有機增層積層板**（Qorvo 對照） | — | 3.4 | **0.005 @40 GHz** | — |
+| 既載 **AGC** 無鹼玻璃 | ER-Y1 / EN-A1 | — | **本 wiki 無值** | 3.5 / 5.8 |
+
+➜ ⭐⭐⭐ **「玻璃低損耗」須加限定**：Qorvo 口徑下玻璃 Df 約為同基板有機增層材料的 **9 倍**，且**未達其自述目標（Df <0.008）**。玻璃芯在該口徑的賣點是**尺寸穩定性、平坦度與可調 CTE**，不是介電損耗。
+➜ 📌 既載「同一名詞涵蓋多個獨立驗收項」家族自**粗糙度**（TGV 25 nm–1.257 µm vs 混合接合 Ra <0.1–0.2 nm，相差 2–4 個數量級）與**孔徑**（TGV 須量頂／腰／底三個 CD）擴及**介電參數**，為**第三個落點**。
+➜ 📌 **新增空缺：AGC 無鹼玻璃的 Df 為何？**
+
+### ② ⭐⭐⭐ 「附著力由可加工性（processability）而非界面化學決定」—— 本 wiki 全新的因果方向
+
+[[sources/2026-10-01_nanoms_underfill-interphase-adhesion]]（中科院深圳先進電子材料所等）：在高填充酸酐固化 epoxy/silica 系統中，**惰性 HMDS 改質填料之 die shear 強度高於反應性 EPTMS 矽烷改質填料**（反直覺）。機制為 **HMDS 系統黏度較低、鋪展較佳 ⇒ 促進膠凝（gelation）前的分子傳輸 ⇒ 界相較厚、較漸變、力學較連續**；EPTMS 系統黏度高 ⇒ 限制界相發育。斷面學佐證：HMDS 為 **cohesive 主導**；EPTMS 為 **mixed，部分矽裸露**。
+
+➜ 📌 **既載「界面工程」論述（Corning Ti/Cu 黏著層＋矽烷官能化、DNP-SAP 無機介電＋阻障金屬、AMAT 種子層附著）新增一條前置條件：化學設計的效益受流變限制封頂。**
+➜ ⚠⚠ **全篇無一絕對值**（die shear MPa、界相厚度 nm、黏度 Pa·s 皆缺）⇒ **不得作為任何底填料規格來源**。📌 列下輪取全文項。
+➜ ⚠ 為**矽基板**口徑；CPO 黏著界面為**玻璃／SiN／聚合物**，**不得直接外推。**
+
+### ③ 「固化前後的流動與固化完整性 > 黏著劑的化學式」—— 三個獨立落點，升為成立但待量化
+
+| # | 來源 | 材料系 | 發現 |
+|---|------|--------|------|
+| ① | [[sources/2025-05-27_ectc_cpo-advanced-materials-ime-fiber-attach]]（Intel） | CPO 黏著劑 | **良率關鍵項明示為「黏度與機械強度」**；缺陷為**空洞／裂紋脫層／光纖錯位** |
+| ② | [[sources/2025-05-27_semivision_cpo-optical-adhesive-named-products]] | UV 光學樹脂 | **V 溝槽內固化不均 → 未固化區 → 分離** |
+| ③ | 上方 ② | 覆晶底填料 | 黏度決定界相發育 |
+
+➜ 📌 **自候選升為「成立但待量化」**（⚠ ①②同為 2025-05、②為二手評述）。
+➜ 📌 **既載「真正的瓶頸在被視為輔助步驟的那一步」新增落點**：底填料與光學黏著劑皆屬「輔助材料」，本輪同時把它們抬為一階變數（既有四例：混合接合 CMP 後清洗／FOPLP debonding／Lam TurboCell 研磨道次／Resonac 耐化學切割膠帶）。
+
+### ④ CPO 光學黏著劑的具名供應鏈（本 wiki 首載）
+
+| 公司 | 產品／角色 |
+|------|-----------|
+| **Dymax** | OP-29、OP-29-GEL（快速 UV、低收縮、光學澄清） |
+| **Norland** | NOA 138（單組分 UV） |
+| **Daikin** | **OPTODYNE**（氟化環氧，訴求**折射率匹配**） |
+| **Henkel** | LOCTITE AA 349、LOCTITE 3217（另有 DAF／毛細底填料／TIM） |
+| **Sekisui** | **Photolec E**（延遲 UV 固化＋低溫熱收尾；自述低逸氣、高水氣阻隔） |
+
+➜ ⭐⭐ **氟化環氧（Daikin OPTODYNE）為既載「把問題移進材料裡」家族第四個落點，且首次在光學域**（既有三例：Atotech 穩定化細晶製程換到時間／Samsung 多孔填料 NCF／Resonac 耐化學切割膠帶）。
+➜ ⚠ 來源付費牆、**折射率／Tg／CTE／模數／固化條件全部未給** ⇒ 僅作供應鏈與機制清單，**不得作為規格來源**。

@@ -3,8 +3,8 @@ title: "GlobalFoundries — 格羅方德"
 category: entity
 tags: [GlobalFoundries, silicon-photonics, copackaged-optics, PIC, SiPh, foundry, Malta-NY]
 created: 2026-09-27
-updated: 2026-10-24
-sources: [2026-09-27_globalfoundries_siph-cpo-bandwidth-density-coupling-budget]
+updated: 2026-10-27
+sources: [2026-09-27_globalfoundries_siph-cpo-bandwidth-density-coupling-budget, 2026-03-06_acsaelm_inp-si-room-temperature-sab]
 related:
   - wiki/technologies/copackaged-optics.md
   - wiki/entities/corning.md
@@ -205,3 +205,20 @@ related:
 ➜ 本頁既載 **KGD/KGM 併用但兩者皆無定義** 之空缺，與本輪 SoW 平台的**故障注入**能力相關（見 [[concepts/test-metrology-packaging]]）。
 
 **來源**：[[sources/2026-01-01_arxiv_vcsel-cpo-pj-per-bit-ladder-with-distances]]
+
+## [2026-10-27] collect 更新：III-V／Si 整合的低熱預算路徑（相鄰學界來源）
+
+[[sources/2026-03-06_acsaelm_inp-si-room-temperature-sab]]（City University of Hong Kong；**非 GlobalFoundries 一手**，列此僅因同屬矽光子 III-V 整合軸）：
+
+| 項目 | 值 |
+|------|-----|
+| **室溫 InP/Si 接合抗拉強度** | **3 MPa**（足以承受後續前段製程之機械應力） |
+| **300 °C 短時熱處理後** | **>7 MPa** |
+| 界面層 | **void-free、有序、<3 nm**（HR-TEM） |
+| 環境 | **UHV ＋ 原位清洗活化** |
+| ⚠ 負面發現 | **Ar 電漿清洗活化反而促進 InP 氧化、劣化材料**；建議改用 **Xe 等較大離子**並**降低電漿能量** |
+
+- ⭐⭐ **「室溫接合即可承受後續前段製程」為本 wiki 首個該類強度門檻**，且 **300 °C 短時即達 >7 MPa** ⇒ 為 CPO／矽光子的 III-V 整合提供**低熱預算路徑**。
+- 📌 與本頁既載「**把對準精度自機台轉移到微影**」同屬「**把難題移出機台**」家族：本件把熱預算移出接合機台（改以 UHV 原位活化換取室溫接合）。
+- 📌 另見 [[technologies/hybrid-bonding]]「活化步驟是淨效益未定的步驟」—— 本件為該論述第三個落點（Cu／Ru／InP 三材料）。
+- ⚠ **本件非 GlobalFoundries 來源**，其 3／7 MPa **不得與本頁既載 GF 之任何耦合損耗或頻寬密度數字並列**；⚠ 為 **W2W 直接接合**，非 D2W Cu/介電混合接合。

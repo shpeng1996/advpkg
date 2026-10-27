@@ -3,8 +3,8 @@ title: "共封裝光學元件 / Co-Packaged Optics (CPO) — TSMC-COUPE™ & Eco
 category: technology
 tags: [CPO, co-packaged-optics, COUPE, TSMC, GlobalFoundries, Samsung, photonics, AI, HPC, networking, OCI-MSA, DWDM, Broadcom, NVIDIA, glass-substrate, ULCVD, TGV, Spectrum-X, NVL72]
 created: 2026-04-25
-updated: 2026-10-25
-sources: [2025-06-02_semieng_cpo-tipping-point-fiber-attach-adhesive, 2026-10-20_404kresearch_ocp-summit-npo-microvcsel-800vdc, 2026-03-19_epo_samsung-optical-engine-adhesive-protrusion, 2026-09-27_globalfoundries_siph-cpo-bandwidth-density-coupling-budget, 2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-27_paper_copper-interconnect-scaling-roadmap-lines-per-mm, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-05-07_trendforce_globalfoundries-silicon-photonics-scale-cpo, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-03-17_coherent_cpo-ofc2026-demo, 2026-06-07_digitimes_jcet-3d-packaging-cpo-plant, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_edn_cpo-technology-status-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-06-24_thelec_corning-glass-bridge-cpo, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-14_trendforce_umc-silith-silicon-photonics-hvm, 2026-07-14_trendforce_huawei-baidu-npo-msa, 2026-07-27_trendforce_presscenter_cpo-switches-nvidia-broadcom-coupe, 2026-06-03_3dincites_intel-foundry-emib-cpo-glass-ectc2026, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-07-31_ase_cn224583735u-photoelectric-hybrid-rdl, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-09-26_report_dupont-ttm-polymer-waveguide-reliability, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_bitschips_besi-q1-2026-hybrid-bonding-orders, 2026-10-07_openalex_mit-cpo-vs-pluggable-switch-power-calibration, 2026-10-07_skhynix_cpo-nature-electronics-100tbps-1pjbit-10ns, 2026-10-09_semiwiki-tsmc-oip-2026-verification, 2026-10-13_cpo-bottleneck-test-800x-area-mismatch, 2023-04-05_oiforum_3-2t-copackaged-module-ia-host-electrical-interface, 2026-10-22_openalex_slow-light-si-modulator-26fj-200g-reduced-dsp, 2026-07-08_openalex_oband-soliton-microcomb-300nm-sin-41pct, 2026-07-20_openalex_tfln-optical-engine-module-fog-copackaging, 2026-10-25_namics_transparent-optical-adhesive-four-types-cpo, 2024-11-26_imec_ordl-evanescent-coupler-wafer-scale-yield, 2024-08-15_US20240272352A1_tsmc-optical-adhesive-15-190um-waveguide-gap, 2025-07-31_US20250244547A1_coherent-compound-semiconductor-cpo-ccpo, 2026-04-06_openalex_micron-siph-packaging-reliability-review, 2026-01-01_openalex_nist-mit-ayarlabs-waveguide-to-waveguide-couplers, 2026-05-21_openalex_hkust-98ch-ultradense-optical-io-0p2mm2, 2026-02-23_openalex_56gbs-3d-siph-5nm-cmos-2p8pjbit-600gbsmm2, 2026-05-27_openalex_3d-nanoprinted-vertical-coupler-ordl-3p3db, 2026-10-22_semieng_foundries-osats-increasingly-overlap]
+updated: 2026-10-27
+sources: [2025-06-02_semieng_cpo-tipping-point-fiber-attach-adhesive, 2026-10-20_404kresearch_ocp-summit-npo-microvcsel-800vdc, 2026-03-19_epo_samsung-optical-engine-adhesive-protrusion, 2026-09-27_globalfoundries_siph-cpo-bandwidth-density-coupling-budget, 2026-09-27_agc_gcs-fully-filled-vs-conformal-tgv-no-difference, 2026-09-27_paper_copper-interconnect-scaling-roadmap-lines-per-mm, 2026-04-22_semiwiki_tsmc-symposium-2026-cowos-coupe, 2026-02-15_semianalysis_isscc2026-hbm4-cpo-tsmc-alsi, 2026-05-01_trendforce_samsung-foundry-silicon-photonics-cpo, 2026-04-27_semieng_tsmc-tech-symposium-2026-numbers, 2026-05-07_trendforce_globalfoundries-silicon-photonics-scale-cpo, 2026-05-14_trendforce_tsmc-tech-symposium-cowos-24hbm-sow, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-06-01_trendforce_computex2026-cpo-mediatek-largan, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-05_semieng_chip-week-review-141-intel18a-nikon, 2026-06-18_wccftech_intel-glass-cpo-ofc2026, 2026-03-17_coherent_cpo-ofc2026-demo, 2026-06-07_digitimes_jcet-3d-packaging-cpo-plant, 2026-05-26_advancedpackaging_ectc2026-spotlights-advanced-packaging, 2026-06-27_edn_cpo-technology-status-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-06-24_thelec_corning-glass-bridge-cpo, 2026-07-08_trendforce_tsmc-pic-capacity-25k-coupe-nvidia-broadcom, 2026-07-14_trendforce_umc-silith-silicon-photonics-hvm, 2026-07-14_trendforce_huawei-baidu-npo-msa, 2026-07-27_trendforce_presscenter_cpo-switches-nvidia-broadcom-coupe, 2026-06-03_3dincites_intel-foundry-emib-cpo-glass-ectc2026, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-07-31_ase_cn224583735u-photoelectric-hybrid-rdl, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-09-26_report_dupont-ttm-polymer-waveguide-reliability, 2026-09-26_paper_lpkf-lide-glass-ap-cpo, 2026-09-30_apn_sjtu-cpo-tsv-tgv-interposer-bandwidth, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_bitschips_besi-q1-2026-hybrid-bonding-orders, 2026-10-07_openalex_mit-cpo-vs-pluggable-switch-power-calibration, 2026-10-07_skhynix_cpo-nature-electronics-100tbps-1pjbit-10ns, 2026-10-09_semiwiki-tsmc-oip-2026-verification, 2026-10-13_cpo-bottleneck-test-800x-area-mismatch, 2023-04-05_oiforum_3-2t-copackaged-module-ia-host-electrical-interface, 2026-10-22_openalex_slow-light-si-modulator-26fj-200g-reduced-dsp, 2026-07-08_openalex_oband-soliton-microcomb-300nm-sin-41pct, 2026-07-20_openalex_tfln-optical-engine-module-fog-copackaging, 2026-10-25_namics_transparent-optical-adhesive-four-types-cpo, 2024-11-26_imec_ordl-evanescent-coupler-wafer-scale-yield, 2024-08-15_US20240272352A1_tsmc-optical-adhesive-15-190um-waveguide-gap, 2025-07-31_US20250244547A1_coherent-compound-semiconductor-cpo-ccpo, 2026-04-06_openalex_micron-siph-packaging-reliability-review, 2026-01-01_openalex_nist-mit-ayarlabs-waveguide-to-waveguide-couplers, 2026-05-21_openalex_hkust-98ch-ultradense-optical-io-0p2mm2, 2026-02-23_openalex_56gbs-3d-siph-5nm-cmos-2p8pjbit-600gbsmm2, 2026-05-27_openalex_3d-nanoprinted-vertical-coupler-ordl-3p3db, 2026-10-22_semieng_foundries-osats-increasingly-overlap, 2025-05-27_ectc_cpo-advanced-materials-ime-fiber-attach, 2025-05-27_semivision_cpo-optical-adhesive-named-products, 2026-02-19_semieng_laser-arrays-cpo-epoxy-outgassing, 2025-05-29_epo_tsmc-cpo-intersecting-waveguide-channels, 2026-10-01_nanoms_underfill-interphase-adhesion]
 related:
   - wiki/technologies/rdl.md
   - wiki/entities/tsmc.md
@@ -2123,3 +2123,71 @@ imec 晶圓級 **evanescent coupler（EVC）@1310 nm**（mean ±3σ）與光學�
 ⭐ **記憶體 IDM 的封裝團隊在研究光連接的可靠度** ⇒ 與上條「optically connected memory」互為佐證（⚠ 由作者單位推論之動機）。
 
 **來源**：[[sources/2026-10-25_namics_four-optical-adhesive-types-refractive-index]]、[[sources/2024-11-26_imec_ordl-evanescent-coupler-wafer-scale-yield]]、[[sources/2024-08-15_epo_tsmc-optical-adhesive-15-190um-waveguide-gap]]、[[sources/2025-07-31_epo_coherent-compound-semiconductor-cpo-ccpo]]、[[sources/2026-04-06_micron_siph-packaging-reliability-review]]、[[sources/2026-01-01_lsa_waveguide-couplers-photonic-vias-review]]、[[sources/2026-05-21_jlt_hkust-98ch-ultradense-optical-io]]、[[sources/2026-02-23_jssc_3d-siph-5nm-cmos-transceiver-600gbsmm2]]、[[sources/2026-05-27_ol_3d-nanoprinted-vertical-coupler-ordl]]、[[sources/2026-10-22_semieng_foundries-osats-increasingly-overlap]]
+
+## [2026-10-27] collect 更新：⭐⭐⭐ 最高優先空缺「CPO 光學接著劑可靠度」改判為「部分解」
+
+本輪以 CPO 封裝材料為主軸，取得三篇新聞／簡報、一件專利與一篇相鄰領域論文。**既載最高優先空缺不結清，但問法大幅收窄。**
+
+### ① 失效點被兩個獨立來源同指為「被動光學組裝與其黏著材料」—— 可升格為成立論述
+
+| 口徑 | 來源 | 指認的失效點 |
+|------|------|------------|
+| **封裝廠側（Intel）** | [[sources/2025-05-27_ectc_cpo-advanced-materials-ime-fiber-attach]] | 已解決之缺陷為**黏著劑空洞／黏著劑裂紋或脫層／光纖錯位** —— 三項全為材料與貼附項 |
+| **雷射供應側** | [[sources/2026-02-19_semieng_laser-arrays-cpo-epoxy-outgassing]] | **雷射二極體本身不是失效點**；失效在**透鏡、隔離器、多工器**；環氧「**逸氣到透鏡上並阻塞光纖**」 |
+
+➜ 📌 **升格為成立論述：「CPO 的可靠度瓶頸在被動光學組裝與其黏著材料，不在主動元件。」** 兩個獨立來源、兩種口徑。
+
+### ② 「固化前後的流動與固化完整性 > 黏著劑的化學式」—— 三個獨立落點
+
+| # | 來源 | 材料系 | 發現 |
+|---|------|--------|------|
+| ① | Intel（ECTC 2025） | CPO 黏著劑 | **良率的關鍵項被明示為「黏度與機械強度」**；缺陷為**空洞** |
+| ② | [[sources/2025-05-27_semivision_cpo-optical-adhesive-named-products]] | UV 光學樹脂 | **V 溝槽內固化不均 → 殘留未固化區 → 分離**（幾何導致化學不完全） |
+| ③ | [[sources/2026-10-01_nanoms_underfill-interphase-adhesion]] | 覆晶底填料（epoxy/silica） | **惰性 HMDS 填料勝過反應性 EPTMS 矽烷**；根因為**低黏度→膠凝前分子傳輸→界相發育完整** |
+
+➜ 📌 **自候選升為「成立但待量化」**（⚠ ①②同為 2025-05、②為二手評述，故不視為已量化）。
+➜ 📌 **既載「界面工程」論述新增前置條件：化學設計的效益受流變限制封頂。**
+
+### ③ 新增規格與供應鏈（本 wiki 首載）
+
+**Tyndall 玻璃中介層示範品**（ECTC 2025）：頻寬 **25 GHz**；插入損耗 **<1.5 dB**；光耦合損耗 **1.4–1.75 dB @1310 nm**；PIC→光纖 **−1.7 dB**；**對準公差 ±25 µm（擴束設計，−1 dB）**，位移圖 −125 → +125 µm。
+⚠ **25 GHz 為示範品口徑**，低於既載 AGC 之 30 GHz 量測與本輪 Qorvo 之 60 GHz 量測上限，**不得作為玻璃中介層能力上限**。
+
+**Intel 材料焦點清單**：**index-matching epoxy（IME）**、機械與光學黏著劑、應變釋放、TIM、阻障層、環氧。**成本目標：光連接器與處理成本須下降 10× 至 100×。** 直接 FAU 貼附**已具量產能力且與 SAC 迴焊相容**；可拆式連接含**玻璃橋**與**聚合物帶**。
+
+**UV 固化化學的取捨**（SemiVision）：**丙烯酸**（自由基，快，但**表面受氧氣抑制**）vs **環氧**（陽離子，**抗氧氣抑制**，但較慢且常需熱後固化）。
+**具名供應鏈（本 wiki 首載）**：Dymax **OP-29／OP-29-GEL**；Norland **NOA 138**；Daikin **OPTODYNE**（氟化環氧，訴求折射率匹配）；Henkel **LOCTITE AA 349／3217**；Sekisui **Photolec E**（延遲 UV 固化＋低溫熱收尾，自述低逸氣、高水氣阻隔）。
+⚠ **折射率、Tg、CTE、模數、固化溫度與時間全部未給**（付費牆）；⚠ 日期衝突（publish 2025-05-27 vs last-modified 2026-01-19）。
+
+**SerDes 通道損耗**（SemiEngineering）：長距 **~40 dB**（約 19 吋背板）vs **CPO 短距 ~3–5 dB**。
+⚠ 既載 GlobalFoundries 之銅 vs 光對照為**頻寬密度／能效**口徑（銅 <1 Tb/s/mm & >5 pJ/bit vs 光 >5 Tb/s/mm & 2–5 pJ/bit），與本件之**通道損耗**口徑不同，**不得互相換算。**
+
+### ④ ⭐⭐ 兩個相差兩個半數量級的對準預算
+
+| 層級 | 數值 | 來源 |
+|------|------|------|
+| 晶粒級（D2W 機台對準） | **~100 nm (3σ)** | 既載 AMAT × Besi Kinex |
+| **光連接器級（擴束，−1 dB）** | **~±25 µm** | 本輪 Tyndall |
+
+➜ 📌 **確立記錄規範：CPO 封裝內並存兩個相差約 250 倍的對準預算；引用「對準精度」必須標註級別。** 此為既載「同一名詞涵蓋多個獨立驗收項」家族的新落點。
+
+### ⑤ 專利訊號：TSMC 把光路交換移進封裝
+
+[[sources/2025-05-29_epo_tsmc-cpo-intersecting-waveguide-channels]]（US20250172777A1, fam 95822192, 2025-05-29）：基板上一枚**波導元件**，本體內嵌多條通道自外側面延伸至內側面，且**通道相互交叉並各自導向不同收發器**；光收發器**環繞**電子元件配置。
+⇒ **以交叉的已知代價（插損／串音）換取光纖出口集中化與環繞配置**。
+⚠ **零量化值**（無通道節距、無交叉損耗 dB、無波導材料、無對準公差）⇒ **不得用於更新任何 CPO 損耗預算數字**；⚠ 2025-05 公開之排他權 ≠ COUPE 量產規格。
+📌 **作業發現**：其 CPC **全落在 G02B6/\*，無一件 H10W** ⇒ **純封裝 CPC 檢索會完全漏掉 CPO 光路案件**；新增規範建議（85）：**CPO 光路軸須納入 G02B6/\* 檢索**（與既載規範 81 之 H10F 同類）。
+
+### ⑥ 架構層觀察
+
+- **雷射維持外部可插拔（ELSFP）**，理由為可靠度與易更換；**放進 CPO 封裝內被認為不太可能，因為熱過於集中** ⇒ 既載「熱是第四個限制」新增**架構級**實例（此前皆製程參數級）。⚠ 本件屬 2026-02 產業現況判斷，**不否證**既載 Nature Electronics CPO 路線圖（SK hynix 共著）之更高整合度階段；**兩者並列。**
+- **Lightmatter Guide**：單體式雷射陣列（~100 顆以上）、每顆附局部腔體加熱器與回饋迴路、**運行中可改派備用雷射做冗餘**；光射入半導體波導故**不需透鏡**。⭐ **光路冗餘為本 wiki 首見**，與既載 UCLA YAP+「冗餘墊換良率」同構 —— **冗餘在電氣與光學兩域都被用來換良率／可用度**。
+- **WDM 的結構性代價**：獨立雷射漂移需保護頻帶；雷射棒中所有雷射隨基板一起調諧且**相互加熱降低效率與亮度**。
+- ⚠ Lightmatter 規格皆為**廠商自述經記者轉述**，無第三方量測。
+
+### ⑦ 空缺處置
+
+- 📌 **「CPO 光學接著劑可靠度」（最高優先）—— 部分解，不結清。** 已取得：失效模式清單、材料項目清單、具名產品、固化化學取捨。仍缺：**折射率、CTE、Tg、模數、固化條件、可靠度測試數值**。
+  ➜ **提問方式修正為：「IME 的折射率與 CTE 規格各是多少，以及在哪一組 JEDEC 條件下量到脫層」。**
+- 📌 **新增空缺**：Tyndall 之 ±25 µm 是擴束設計；**直接耦合（非擴束）的對準公差為何**？兩者差距決定擴束光學是否必要。
+- ⚠ **規範（41）**：ECTC 2025 本場共同主席來自 **Google** 與 **Chipletz**（皆 CPO 需求／封裝方），**於「CPO 是否已可量產」之判斷上非中立**；且該場為簡報彙編，**Intel 段與 Tyndall 段應分別計數，不計為單一機構之一手揭露。**

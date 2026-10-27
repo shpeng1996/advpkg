@@ -3,8 +3,8 @@ title: "先進封裝熱管理 / Thermal Management in Advanced Packaging"
 category: concept
 tags: [thermal-management, liquid-cooling, 3D-IC, CoWoS, heat-dissipation, TIM, ECTC-2025, GaN, power-delivery, co-design, patent-signal, delamination]
 created: 2026-04-25
-updated: 2026-10-26
-sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2025-12-01_semiengineering_thermal-management, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-02_trendforce_samsung-hbm5-computex2026, 2026-05-21_semieng_hi-roadmap-nature-paper-intel, 2026-08-13_semieng_1mw-rack-debate-thermal, 2026-04-27_semieng_semiconductor-materials-misbehave, 2026-08-21_trendforce_chip-packaging-heat-ai-bottleneck-cpo-stco, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_arxiv_umn-multi-kw-power-delivery-3d-hi, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_samsung-cn122602880a-ivr-capacitor-interposer-core, 2026-10-02_imaps-dpc2026_delo-die-side-capacitor-encapsulation, 2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage, 2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk, 2026-10-07_epo_cas-freestanding-3c-sic-interposer, 2026-10-07_openalex_diamond-d2w-direct-bonding-vdw-45mpa, 2026-10-07_openalex_lau-silicon-bridge-microbump-reliability, 2026-10-08_etron-liquid-through-substrate-cavity, 2026-10-08_micron-cryogenic-package-hea-solder, 2026-10-08_advantest-singulated-die-test-thermal, 2026-10-09_cas-2013-microchannel-interposer-ebg, 2026-10-09_bjut-thermomech-phase-field-imc-tgv, 2026-10-13_large-area-sintering-three-challenges, 2026-10-13_cu-microparticles-ductility-vs-stiffness-tradeoff, 2026-10-13_beiyi-sic-low-buckling-sintering, 2026-02-23_openalex_56gbs-3d-siph-5nm-cmos-2p8pjbit-600gbsmm2, 2026-04-06_openalex_micron-siph-packaging-reliability-review, 2026-05-21_openalex_hkust-98ch-ultradense-optical-io-0p2mm2, 2026-08-01_intel_power-delivery-ai-datacenter-c2vr-mbvr-loss-budget, 2026-02-16_openalex_ch4-plasma-low-temp-cu-bonding-260c]
+updated: 2026-10-27
+sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2025-12-01_semiengineering_thermal-management, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-02_trendforce_samsung-hbm5-computex2026, 2026-05-21_semieng_hi-roadmap-nature-paper-intel, 2026-08-13_semieng_1mw-rack-debate-thermal, 2026-04-27_semieng_semiconductor-materials-misbehave, 2026-08-21_trendforce_chip-packaging-heat-ai-bottleneck-cpo-stco, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_arxiv_umn-multi-kw-power-delivery-3d-hi, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_samsung-cn122602880a-ivr-capacitor-interposer-core, 2026-10-02_imaps-dpc2026_delo-die-side-capacitor-encapsulation, 2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage, 2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk, 2026-10-07_epo_cas-freestanding-3c-sic-interposer, 2026-10-07_openalex_diamond-d2w-direct-bonding-vdw-45mpa, 2026-10-07_openalex_lau-silicon-bridge-microbump-reliability, 2026-10-08_etron-liquid-through-substrate-cavity, 2026-10-08_micron-cryogenic-package-hea-solder, 2026-10-08_advantest-singulated-die-test-thermal, 2026-10-09_cas-2013-microchannel-interposer-ebg, 2026-10-09_bjut-thermomech-phase-field-imc-tgv, 2026-10-13_large-area-sintering-three-challenges, 2026-10-13_cu-microparticles-ductility-vs-stiffness-tradeoff, 2026-10-13_beiyi-sic-low-buckling-sintering, 2026-02-23_openalex_56gbs-3d-siph-5nm-cmos-2p8pjbit-600gbsmm2, 2026-04-06_openalex_micron-siph-packaging-reliability-review, 2026-05-21_openalex_hkust-98ch-ultradense-optical-io-0p2mm2, 2026-08-01_intel_power-delivery-ai-datacenter-c2vr-mbvr-loss-budget, 2026-02-16_openalex_ch4-plasma-low-temp-cu-bonding-260c, 2026-06-11_epo_amkor-metal-die-backside-tim-lid, 2026-02-19_semieng_laser-arrays-cpo-epoxy-outgassing]
 related:
   - wiki/technologies/cowos.md
   - wiki/technologies/hybrid-bonding.md
@@ -1576,3 +1576,22 @@ GF（SEMI 訪談）：III–V 材料高溫表現不佳，整合壓力把 **InP �
   ➜ **列管**：fam 93844746（下輪若出現非 Etron／ICL 團隊之同型案件，即可升格）。
 
 **來源**：[[sources/2026-08-01_intel_power-delivery-c2vr-loss-budget]]、[[sources/2026-02-16_tcpmt_ch4-plasma-low-temp-cu-bonding-260c]]
+
+## [2026-10-27] collect 更新：封膠退出熱路徑（Amkor 專利訊號）；熱決定元件要不要進封裝（CPO）
+
+### ① Amkor：金屬結構直接貼合晶粒背面，封膠被排除在熱路徑之外
+
+[[sources/2026-06-11_epo_amkor-metal-die-backside-tim-lid]]（US20260165123A1, fam 100037812, 2026-06-11；CPC **H10W40/22、40/233、40/70** 散熱系）：
+第一包封物**只圍在元件側面**，金屬結構因此**直接耦接各元件背面**，再經 **TIM → lid**。散熱路徑為「**晶粒背面 → 金屬結構 → TIM → lid**」。
+
+- ⭐ 既載「**某個結構位被整體取消**」家族（改良型 vs 取消型）在**熱路徑**上的落點：被取消的不是結構件，而是**封膠在熱路徑中的位置**。
+- ⚠ 與既載 **Amkor CEO McCann 預判「兩相冷卻為下一散熱轉型」**相比，**本件仍在傳導** ⇒ **其公開發言領先排他權布局一個世代。**
+- ⚠ **全篇無量化值**（無熱阻、無 TIM 導熱係數、無金屬材質、無晶粒功耗上限）⇒ 僅記為專利訊號；「module」未定義是否含橋或堆疊 ⇒ **不得推論瞄準 2.5D/3D AI 封裝。**
+
+### ② ⭐⭐ 「熱是第四個限制」新增架構級實例：熱決定元件要不要進封裝
+
+[[sources/2026-02-19_semieng_laser-arrays-cpo-epoxy-outgassing]]：業界判斷**把雷射放進 CPO 封裝內不太可能，因為熱過於集中**；雷射因此維持在面板側的**外部可插拔模組（ELSFP）**。另：**雷射棒中所有雷射隨基板受熱一起調諧，且相互加熱降低效率與亮度** ⇒ WDM 的熱耦合直接轉為光學規格代價。
+
+➜ 📌 本 wiki 既載「熱是第四個限制」之落點此前**皆為製程參數級**（775 µm 熱預算、退火溫度帶、鍵合頭本身、微流道、兩相冷卻）。**本件是第一個架構級落點：熱不是參數，而是決定某類元件能否進入封裝的門檻。**
+➜ ⚠ 本件屬 2026-02 之產業現況判斷，**不否證**既載 Nature Electronics CPO 路線圖（SK hynix 共著）之更高整合度階段；兩者並列而非取代。
+➜ 📌 另與既載「**供電路徑自身是第二個熱源**，5 kW 級別其量級約 4,829 W 與晶粒功耗同階」（Intel 白皮書）並列：**本輪新增「光源自身是第三個熱源，且其熱直接污染光學規格（波長調諧、亮度）」** —— 熱源清單自「晶粒＋供電路徑」擴為三項。

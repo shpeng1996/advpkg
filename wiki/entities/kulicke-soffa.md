@@ -3,8 +3,8 @@ title: "庫力索法 / Kulicke & Soffa (K&S)"
 category: entity
 tags: [Kulicke-Soffa, K&S, equipment, wire-bonding, TCB, hybrid-bonding, bond-head, reducing-gas]
 created: 2026-10-14
-updated: 2026-10-26
-sources: [2026-10-14_ks-metal-first-then-dielectric-bond-sequence, 2026-10-14_ks-in-situ-reducing-gas-bond-head, 2026-10-16_3dincites_scaling-advanced-packaging-capacity-concentration]
+updated: 2026-10-27
+sources: [2026-10-14_ks-metal-first-then-dielectric-bond-sequence, 2026-10-14_ks-in-situ-reducing-gas-bond-head, 2026-10-16_3dincites_scaling-advanced-packaging-capacity-concentration, 2026-10-21_researchandmarkets_osat-market-2026-2031]
 related: [wiki/technologies/hybrid-bonding.md, wiki/entities/asmpt.md, wiki/entities/besi.md, wiki/entities/ev-group.md, wiki/entities/hanmi.md]
 ---
 
@@ -85,3 +85,20 @@ related: [wiki/technologies/hybrid-bonding.md, wiki/entities/asmpt.md, wiki/enti
 ⚠ 「先進節點 80× → 加先進封裝 320× 運算密度」僅稱某分析師估算，**無分母、無基準年、無量測對象** ⇒ 依規範（34）（37）不得引用為比較用數字。
 
 **來源**：[[sources/2026-10-16_3dincites_scaling-advanced-packaging-capacity-concentration]]
+
+## [2026-10-27] collect 更新：⭐⭐⭐ 「研發重心可能仍在打線」取得獨立的市場側佐證
+
+2026-10-26 一輪於專利軌記錄：**K&S 於 25 件命中中佔 14 件，其中 9 件為打線相關 ⇒ 研發重心可能仍在打線**（當時標為推測）。
+
+本輪取得市場側對應數字（[[sources/2026-10-21_researchandmarkets_osat-market-2026-2031]]，Research and Markets）：
+
+| 項目 | 值 |
+|------|-----|
+| **打線封裝（Wire Bond）2026 市占** | **34.35%**，且為**依營收最大之單一區隔** |
+| 打線封裝 CAGR | **4.00%** |
+| 先進封裝 CAGR | **13.00%**（最快成長，⚠ **無金額、無佔比**） |
+| OSAT 整體 | 2025 **USD 52.00 B** → 2031 **USD 87.22 B**（CAGR **9.00%**） |
+
+➜ 📌 **處置：前一輪的專利側推測升格為「設備商研發重心與市場重心一致」的雙來源觀察。** 兩個來源互相獨立（EPO 排他權分佈 vs 第三方市場報告），且方向一致。
+➜ ⚠ **但仍不得推論 K&S 的營收結構或市占**：本件為付費報告之新聞稿摘要，依既載市占查證門檻**不接受其公司級數字**；且「打線佔 OSAT 營收 34.35%」與「K&S 的研發配置」是兩個不同層級的量，**不得相互換算**。
+➜ ⚠ 既載對 K&S 之獨立性註記續行：其投書作者任職 K&S 而文中同時主張「TCB 高速成長」與「混合接合機台市場有限」⇒ 於該對立上非中立（規範 41、70）。**本輪的市場數字並不解除該註記** —— 市場數字支持的是「打線仍大」，**不支持**「混合接合機台市場有限」這一前瞻判斷。

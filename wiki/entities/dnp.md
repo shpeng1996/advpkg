@@ -3,8 +3,8 @@ title: "大日本印刷 / Dai Nippon Printing (DNP)"
 category: entity
 tags: [DNP, glass-substrate, RDL, interposer, TGV, electromigration, reliability, panel-level, photomask]
 created: 2026-09-25
-updated: 2026-09-26
-sources: [2026-09-25_paper_dnp-glass-rdl-electromigration-lifetime, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-09-26_paper_asi-1um-hdbu-substrate]
+updated: 2026-10-27
+sources: [2026-09-25_paper_dnp-glass-rdl-electromigration-lifetime, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-09-26_paper_asi-1um-hdbu-substrate, 2026-10-27_ieeebuss_dnp-large-glass-panel-filled-vs-conformal-tgv, 2023-10-02_imapspdf_qorvo-glass-core-rf-dk-df]
 related:
   - wiki/technologies/rdl.md
   - wiki/technologies/glass-substrate.md
@@ -90,3 +90,38 @@ related:
 - **RDL 論述移出**：DNP 之細線距 RDL 電遷移成果（**Ea 0.9 → >1.23 eV；MTTF 0.7 hr → >1000 hr；t₀.₁% 外推 10,000×**，2026-09-25）自 2026-09-26 起同時收錄於新建之 [[technologies/rdl]]，作為「RDL 微縮的第二道天花板（電流密度）」之主要證據。本頁內容不變。
 - ⚠ **本輪新增之對照使該成果的幾何前提更需注意**：RDL 金屬厚度在不同路線間相差 4–8 倍（American Semiconductor **0.2–0.4 µm** vs imec/JSR damascene CMP 後 **1.6 µm**）。📌 **凡以電流密度（A/cm²）表述之 EM 結論，不可跨路線比較。**
 - **2026-09-26 專利軌輪替**：本輪原計畫以 `pa="dai nippon printing" and ti,ab="wiring" and pd within "2026"` 檢索 DNP 是否有對應之 RDL 結構專利，**OPS 回 404（No results found）**。➜ 依 2026-09-25 之歸納（申請人檢索在目標技術佔比極小時失效），**下輪應改技術詞**（如 `ti,ab="barrier metal" and ti,ab="redistribution"`、`ti,ab="inorganic insulating" and ti,ab="wiring layer"`）。
+
+## [2026-10-27] collect 更新：⭐⭐⭐ 首組 Dk/Df/CTE 一手值；面板尺寸上修；與 AGC 在填滿 vs conformal 上直接衝突
+
+來源：[[sources/2026-10-27_ieeebuss_dnp-large-glass-panel-filled-vs-conformal-tgv]]（Satoru Kuramochi, DNP, IEEE BUSS 教程 T05，⚠ **原文未標註日期**，路線圖橫跨 2020–2030）
+
+### 新增一手規格
+
+| 項目 | 值 |
+|------|-----|
+| **Dk / Df / CTE** | **5.8 / 0.006 / 3.8 ppm**（本 wiki 首載 DNP 玻璃三參數） |
+| **面板（TGV 金屬化）** | **550 × 650 mm**；另有 **510 × 515 mm** 玻璃芯圖示 |
+| **S21 @30 GHz** | **填充孔 0.23 dB｜conformal 孔 0.48 dB｜Cu bridge 0.34 dB** |
+| **縱橫比 AR** | 填充 **11**｜conformal **4→9**｜Cu bridge **10** |
+| **節距（依孔型）** | 填充 **90 µm**｜conformal **150 µm**｜Cu bridge **100 µm** |
+| 玻璃芯厚 | 模擬 0.5 mm／示範 1.0 mm／可靠度樣品 400 µm |
+| TGV 徑 | 模擬 80-50-70 µm（節距 160 µm）；另 80／45 µm、**最小 Φ20 µm**、示範 Φ100 µm |
+| 最大電流 | 填充 **3.84 A**／conformal **3.88 A**（4-multi） |
+| L/S | SAP 細線 **1/1 µm**；玻璃芯增層 **2/2 µm**；PID 上層 **2/2 µm**；路線圖 12/12、10/10、8/8 µm |
+| **可靠度** | **−55 ↔ +150 °C、30 min dwell、JEDEC Class H、1,000 循環通過，電阻無顯著變化** |
+| 翹曲數值／玻璃模數／量產時程 | **全部未給** ⚠ |
+
+### 讀法與處置
+
+- ⭐⭐⭐ **面板尺寸自本頁既載 300 × 400 mm 上修至 550 × 650 mm（TGV 金屬化）**。DNP 同時出現在兩個尺寸級別 ⇒ 既載「510×515 mm／600 mm 面板陣營」新增一手落點。
+- ⭐⭐⭐ **「孔型是密度選擇，不只是電性選擇」**：填充孔 90 µm vs conformal 孔 150 µm ⇒ conformal 的代價除電性外還有約 **1.7× 的節距放寬**。本 wiki 此前只把填滿／conformal 當電性選擇。
+- ⭐⭐ **載流能力幾乎不受孔型影響**（3.84 vs 3.88 A）⇒ **高頻損耗與載流在孔型上解耦**，為「同一設計變數對不同驗收項最佳值不同」家族新落點。
+- ⭐⭐ **本 wiki 首次取得 TGV 熱循環可靠度實績** ⇒ 既載空缺「玻璃核心『封裝對 PCB』應變的實測對照」**部分補上**，但 ⚠ 本件**未測到失效**、量的是 **TGV 本體電阻**而非 BGA 應變 ⇒ **空缺不結清**，改述為「已有通過級資料，仍缺到失效（to-failure）之實測」。
+- ⚠⚠⚠ **與 [[entities/agc]] 在同一頻率上直接衝突，連差異方向都相反** —— 詳見 [[sources/2026-10-27_ieeebuss_dnp-large-glass-panel-filled-vs-conformal-tgv]]「矛盾或修正」。**AGC 既有數字保留不動**；本 wiki 讀法改為「**填滿 vs conformal 的 30 GHz 差異在兩家一手供應者之間量級與符號皆不一致 ⇒ 不是玻璃或孔型的普適性質**」。
+  ⚠ **本 wiki 指認之混淆因子（原文未述）**：DNP 兩型幾何不對等（節距 90 vs 150 µm、AR 11 vs 4→9）⇒ 2.1× 不能純歸因於「有無填滿」。
+- ⚠ **本頁既載 TGV 幾何（φ100 µm／玻璃厚 1.0 mm／節距 1.0 mm）應限定為示範品口徑**，不得作為 DNP 能力上限；既有「與 Cornell『大孔徑、少孔數』同向」之讀法同受此限定。
+- ⚠ 依規範，本件所有數值僅得標註「**DNP 一手，年份未定**」。
+
+### 與 Qorvo 的對照（本輪同時入庫）
+
+見 [[sources/2023-10-02_imapspdf_qorvo-glass-core-rf-dk-df]]：Qorvo 鋁矽酸鹽玻璃 **Dk 6.9 / Df 0.044 / CTE 7.8 ppm**，而 DNP 為 **5.8 / 0.006 / 3.8 ppm** ⇒ **Df 相差約 7 倍、CTE 相差約 2 倍，且同向分歧** ⇒ 📌 **新規範建議（83）：引用玻璃之 Dk/Df/CTE 必須同時標註玻璃組成或供應者，不得跨來源比較。**
