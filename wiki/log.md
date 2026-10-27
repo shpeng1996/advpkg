@@ -5947,3 +5947,13 @@ warning: unable to unlink '.../.git/index.lock': Operation not permitted
 - ⚠ **既載 lint 問題續列，本輪均未修復**：`wiki/technologies/info-wmcm.md` 非合法 UTF-8（2026-09-17 發現）；`wiki/index.md` 來源清單非全域日期排序（本輪 16 筆以降日序插入於清單頂端，未做全域重排）；`index.md` 來源連結數與 `wiki/sources/` 實際檔數之差額（2026-10-25 記為 14，其中 1 筆待確認）。
 - ✅ **本輪未觸碰 `raw/` 下既有任何檔案**（新增 16 個 raw 檔、對 `_collected_urls.txt` 追加 16 行）；**未修改 `CLAUDE.md`**；**未修改 `schedule.md`**。
 - 📌 **下輪建議**：①**取全文**：CPO 之 **IME 折射率／CTE**（供應商 datasheet 或付費內容）、中科院底填料**界相絕對值**（die shear MPa／界相 nm／黏度 Pa·s）、中科院微電子所綜述全文（IEEE Xplore，續列多輪）、YAP+ 五機制權重（續列）；②**新主題**：**同節距同 AR 之填滿 vs conformal TGV 對照量測（本輪最高優先新空缺）**、**AGC 無鹼玻璃的 Df**、**凸出 vs 凹陷 Cu 墊的實驗驗證**、**OSAT 公司級營收拆分（法說會／SEMI）**、**CPO 直接耦合（非擴束）之對準公差**；③**檢索法修正**：CPO 軸改走 **G02B6/\*** CPC（規範 85）、金屬元素名須與封裝詞共現、DOI 直取納入常規。
+
+### 作業記錄補記（2026-10-27，git 步驟）
+
+- ✅ **commit 成功：`4bd4ef4 2026-10-27`（52 檔，+2315 / −36）**；commit 後 `git status` 乾淨、`git log` 正常。
+- ✅ **規範（78）執行**：commit 留下 **8 個位於作用路徑的鎖檔／pid**（`.git/HEAD.lock`、`.git/gc.pid`、`.git/objects/maintenance.lock`、`.git/packed-refs.lock`、`.git/refs/heads/main.lock`、`.git/refs/remotes/origin/{HEAD,main}.lock`、`.git/refs/remotes/staging/main.lock`），且 `gc`／`reflog` 子任務失敗（`error: task 'gc' failed`、`fatal: failed to run reflog`）。
+  ➜ **處置（續行規範 53a，刪除權限全程未申請）**：全部 `mv` 至 `.git/` 底下之 `stale5-20261027-*` 新檔名（**destination 不在 `.git/refs` 內**）；移動後**作用路徑已無任何 `*.lock`／`*.pid`**（find 計數 0），`git status` 與 `git log` 均正常 ⇒ **使用者下次執行 git 指令不會以 `File exists` 失敗。**
+- ⚠⚠⚠ **堆積已達須提報使用者的規模（本輪升級為警示）**：`.git` 下 `stale*` 檔累計 **119 個**（第五代，stale→stale5）；`.git/objects/**/tmp_obj_*` 累計 **1,306 個**。兩者皆**不阻擋 git 運作**，但**每輪必然增加 8 + 約 50 個**，且在未取得刪除權限前**無法清除**。
+  ➜ 📌 **建議使用者執行其一**：①在排程任務的設定中核准該資料夾的刪除權限（之後本任務可逕行 `rm`，根因解除）；或②自行於該機器上執行 `git gc --prune=now` 並刪除 `.git/stale*`。
+  ➜ ⚠ **本輪未呼叫 `device_request_delete_permission`**：該請求須由真人回應，而排程執行時無人在線，故依規範（53a）續行 `mv` 處置並改以本筆記錄＋通知提報。
+- ✅ **收尾驗證六項全部通過**：①registry 新增 16 行所指之 raw 檔**全部存在**；②16 個新來源摘要頁**全部存在且於 `index.md` 各命中 1 次連結**；③`wiki/sources/` 實際檔數 **1018** 與 `index.md` 表頭所載一致；④今日變動之所有 `.md` **全部為合法 UTF-8**（`info-wmcm.md` 未在本輪變動範圍內，其既載問題續列）；⑤**新 raw 檔 frontmatter 全部具 `collected_date`／`content_type`／`relevance_tags`**；⑥`.env` **未進暫存區**，且其三個變數值在 `raw/` 與 `wiki/` 下**命中 0 檔**。
