@@ -6007,3 +6007,14 @@ warning: unable to unlink '.../.git/index.lock': Operation not permitted
   ①**取全文**：**JIEP Vol.29 No.5 之 3D/Chiplet/CPO 專輯（最高優先，CPO 接著劑數值所在處）**、EVG EP4684417A1 與 EP4721131A1 之請求項（Espacenet／Google Patents 說明書）、`10.1109/tmtt.2026.3724236`（橢圓 TGV 微波，IEEE Xplore 本輪空回應）、`10.1016/j.jssc.2026.126276`（玻璃組成 K₂O 比 → 介電／CTE，直接對應規範 83）、W2W 板—Reynolds 模型 **Part II**、中科院微電子所綜述（續列多輪）、YAP+ 五機制權重（續列）。
   ②**新主題**：**同節距同 AR 之填滿 vs conformal TGV 對照量測（續列最高優先）**、**種子覆蓋率 6:1／10:1 的量化定義**、**電漿活化批內漂移值**、**產線 W2W 是否控制氛圍黏度／壓力**、**AGC 無鹼玻璃的 Df（續列）**、**ASE／Amkor 法說會逐字稿與年報分部附註（取代新聞整理）**、**凸出 vs 凹陷 Cu 墊的實驗驗證（續列）**。
   ③**檢索法修正**：**規範（85）之 G02B6 路線本輪陰性 ⇒ 改為 G02B6/42 與封裝專屬詞共現或改用 G02B6/12 系**；**`"heterogeneous integration"` 須與封裝詞共現**（本輪訊噪比低）；**Besi 與 ASM Pacific 單獨檢索**（規範 86 第二次適用）；**Micron 軌暫停輪替**（本輪去重效率 100%）；下輪專利軌輪替至 **Amkor／ASE 設備側供應商（ASMPT、Shinkawa）或 Samsung／SK hynix 之 2026 下半年案件**；**Crossref 僅用於補書目，不期待補摘要**。
+
+### 作業記錄補記（2026-10-28，git 步驟）
+
+- ✅ **commit 成功：`21db23f 2026-10-28`（45 檔）**；commit 後 `git status` 乾淨、`git log` 正常。
+- ✅ **規範（78）執行**：commit 留下 **8 個位於作用路徑的鎖檔／pid**（`.git/HEAD.lock`、`.git/gc.pid`、`.git/objects/maintenance.lock`、`.git/packed-refs.lock`、`.git/refs/heads/main.lock`、`.git/refs/remotes/origin/{HEAD,main}.lock`、`.git/refs/remotes/staging/main.lock`），且 `gc`／`reflog` 子任務失敗（`error: task 'gc' failed`、`fatal: failed to run reflog`）。
+  ➜ **處置（續行規範 53a，刪除權限全程未申請）**：全部 `mv` 至 `.git/` 底下之 `stale6-20261028-*` 新檔名（**destination 不在 `.git/refs` 內**）；移動後**作用路徑已無任何 `*.lock`／`*.pid`**（find 計數 0），`git status` 與 `git log` 均正常 ⇒ **使用者下次執行 git 指令不會以 `File exists` 失敗。**
+- ⚠⚠⚠ **堆積續增，維持警示層級**：`.git` 下 `stale*` 檔累計 **135 個**（第六代，stale→stale6）；`.git/objects/**/tmp_obj_*` 累計 **1,366 個**（上輪分別為 119 / 1,306）。兩者皆**不阻擋 git 運作**，但**每輪必然增加約 8 + 約 50 個**，且在未取得刪除權限前**無法清除**。
+  ➜ 📌 **建議使用者執行其一**：①在排程任務的設定中核准該資料夾的刪除權限（之後本任務可逕行 `rm`，根因解除）；或②自行於該機器上執行 `git gc --prune=now` 並刪除 `.git/stale*`。
+  ➜ ⚠ **本輪亦未呼叫 `device_request_delete_permission`**：該請求須由真人回應，而排程執行時無人在線；依規範（53a）續行 `mv` 處置，並改以本筆記錄＋**通知**提報使用者（通知為排程執行唯一能實際抵達使用者的管道）。
+- ⚠⚠ **本輪中途 device bridge 斷線一次**（發生於收尾驗證第 ①–⑥ 項執行當中，MCP server connection closed）。**重連後覆核：15 個 raw 檔、registry 1,066 行、`wiki/sources/` 1,033 檔全部完好，無重複寫入、無半寫檔** ⇒ **收尾驗證六項於重連後全部重跑並全數通過**（①registry 15 行所指 raw 檔全部存在；②15 個新 source 頁全部存在且於 `index.md` 各命中 1 次連結；③`wiki/sources/` 1,033 與 `index.md` 表頭一致、`wiki` 下 .md 共 1,113 與表頭一致；④今日變動之所有 `.md` 全部為合法 UTF-8；⑤新 raw 檔 frontmatter 全部具 `collected_date`／`content_type`／`relevance_tags`；⑥`.env` 未進暫存區，且其三個變數值在 `raw/` 與 `wiki/` 下命中 0 檔）。
+  ➜ 📌 **擬立規範建議（90）：device bridge 斷線後不得直接續寫，須先以「檔數＋行數＋git status」三項覆核當輪已完成之寫入是否完整，再決定續行或重做。** 本輪覆核結果為完整，故未重做任何步驟。
