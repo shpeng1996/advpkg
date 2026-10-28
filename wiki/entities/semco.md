@@ -3,7 +3,7 @@ title: "Samsung Electro-Mechanics / 三星電機（SEMCO）"
 category: entity
 tags: [SEMCO, substrate, ABF, glass-core, coreless, interposer, MLCC, Korea]
 created: 2026-10-03
-updated: 2026-10-23
+updated: 2026-10-28
 sources: [2026-09-04_biggo_skc-absolics-embedding-vs-nonembedding, 2026-10-03_epo_semco-coreless-interposer-organic-bridge, 2026-10-03_tomshardware_abf-substrate-state-2026, 2026-10-02_epo_semco-glass-surface-roughness-tgv]
 related: [concepts/substrate-materials-supply-chain.md, technologies/glass-substrate.md, technologies/emib.md, entities/samsung.md, entities/absolics.md, entities/shinko.md, entities/ibiden.md]
 ---
@@ -124,3 +124,27 @@ related: [concepts/substrate-materials-supply-chain.md, technologies/glass-subst
 ⇒ **韓系兩家在同一驗證關卡上出現分歧**（一家進入、一家未通過）。⚠ 口徑可能不同（產品型態未對齊）。
 
 來源：[[sources/2026-09-04_biggo_skc-absolics-embedding-vs-nonembedding]]
+
+## [2026-10-28] collect 更新：⭐⭐⭐ 平澤廠持有者 Dongwoo 提出自己的玻璃基板架構主張
+
+來源：[[sources/2026-07-28_patent_dongwoo-glass-warpage-passives]]（CN122477757A，Dongwoo Fine Chem，家族 94821827，2026-07-28）
+
+既載：玻璃核心與 Sumitomo Chemical 合資（SEMCO 多數股、**Dongwoo Fine-Chem 平澤廠為初期量產基地**）。本輪專利軌首次命中該平澤廠持有者自身之玻璃基板案件。
+
+### 該專利之兩項請求項內容
+
+1. ⭐⭐⭐ **玻璃基板的功能被寫成「support substrate … to suppress overall warping」—— 即選用玻璃的理由是機械性而非電性。**
+2. ⭐⭐⭐ **被動元件（電感 H01F27/28、電容 H01G4/012）整合進增層，而非置於玻璃核心內。**
+
+### 對本頁論述的影響
+
+- ⭐⭐ **既載「SEMCO 同一公司同時押注玻璃核心與完全無核心」之張力，本輪顯示玻璃核心陣營內部的架構分歧比既載所記更細**：**其量產基地持有者另有獨立架構主張**（核心只當支撐、功能全放增層）。⚠ **非矛盾，為新增層次。**
+- ⭐ **「核心層功能化」新增第四條路線**：既載三條為 Shinko（核心腔體置入元件）、Intel（玻璃核心）、Etron（貫穿散熱孔 TTV）；**本件為「核心層只當支撐、功能全放增層」。**
+- ⚠ **依專利訊號原則不改寫既有論述；SEMCO 之量產時程三說（2027 Q3／2028 後／2027 後由合資公司起）不受本輪影響。**
+
+### 新增空缺
+
+- 📌 **Dongwoo 的這些案件是為 SEMCO 代工所需，或是其獨立產品線？**（本輪無佐證。）
+  **追蹤方式**：Dongwoo 後續專利之申請人是否與 SEMCO 共同署名；或 SEMCO／Sumitomo 合資案公開文件是否述及 Dongwoo 的技術貢獻範圍。
+- ⚠ **Dongwoo 在 2026 年 7 月一週內公開至少兩個玻璃基板家族**（本件 94821827 ＋ 既載 CN122439424A 家族 96012658，2026-07-21）⇒ 布局密度續追。
+- 📌 **缺實體頁清單新增：Dongwoo Fine Chem** —— ⚠ **建頁觸發條件尚未滿足**（兩件專利、零量化值、無市占／產能／客戶）。

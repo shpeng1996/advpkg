@@ -3,7 +3,7 @@ title: "大日本印刷 / Dai Nippon Printing (DNP)"
 category: entity
 tags: [DNP, glass-substrate, RDL, interposer, TGV, electromigration, reliability, panel-level, photomask]
 created: 2026-09-25
-updated: 2026-10-27
+updated: 2026-10-28
 sources: [2026-09-25_paper_dnp-glass-rdl-electromigration-lifetime, 2025-12-22_trendforce_dnp-tgv-glass-substrate-2026, 2026-09-26_paper_asi-1um-hdbu-substrate, 2026-10-27_ieeebuss_dnp-large-glass-panel-filled-vs-conformal-tgv, 2023-10-02_imapspdf_qorvo-glass-core-rf-dk-df]
 related:
   - wiki/technologies/rdl.md
@@ -125,3 +125,17 @@ related:
 ### 與 Qorvo 的對照（本輪同時入庫）
 
 見 [[sources/2023-10-02_imapspdf_qorvo-glass-core-rf-dk-df]]：Qorvo 鋁矽酸鹽玻璃 **Dk 6.9 / Df 0.044 / CTE 7.8 ppm**，而 DNP 為 **5.8 / 0.006 / 3.8 ppm** ⇒ **Df 相差約 7 倍、CTE 相差約 2 倍，且同向分歧** ⇒ 📌 **新規範建議（83）：引用玻璃之 Dk/Df/CTE 必須同時標註玻璃組成或供應者，不得跨來源比較。**
+
+## [2026-10-28] collect 更新：官方新聞稿一手確認（既載事實，無新事實）
+
+來源：[[sources/2025-12-16_dnp_tgv-glass-core-pilot-kuki-primary]]（DNP 官方新聞稿，2025-12-16）
+
+⚠⚠ **近重複來源。** 本稿事實已全數載於 [[sources/2025-12-22_trendforce_dnp-tgv-glass-substrate-2026]]（TrendForce 二手轉述）。**唯一增量為來源層級（二手 → 新聞稿本身）；不帶任何新技術事實。**
+
+逐項核對**全部一致**：面板 **510 × 515 mm**、久喜廠、試產線 **2025-12 起分階段**、樣品 **2026 年初**、量產 **FY2028**、**filled ＋ conformal 兩型**。唯一新增細節：**技術開發完成於 2023 年**。
+
+- ⭐⭐ **「DNP 同時商品化 filled 與 conformal 兩型」自二手轉述升級為一手官方確認。**
+  📌 與最高優先空缺「同節距同 AR 之填滿 vs conformal 對照量測」相關：既載 DNP 自家量到 **填充 0.23 dB vs conformal 0.48 dB @30 GHz（約 2.1×）**，卻**仍以官方口徑維持兩條產品線** ⇒ **商業側旁證，支持既有之混淆因子指認（節距 90 vs 150 µm、AR 11 vs 4→9）**：若 conformal 真有 2.1× 的無條件電性劣勢，不易維持為獨立商品。
+  ⚠ **商業推論非量測證據 ⇒ 不升格、不改寫既載任何 dB 數字。**
+- ⚠ **澄清（本輪初判曾誤列為矛盾，已更正）**：本頁既載 **TGV 金屬化面板 550 × 650 mm** 與本稿**玻璃芯基板 510 × 515 mm** 係**不同產品線之不同尺寸，非矛盾**；本頁第 32 行既載之「大面板樣品 300 × 400 mm」亦為另一產品線（RDL／電遷移試片），三者並存。
+- 📌 **擬立規範建議（88）：官方新聞稿與其二手轉述會以不同 URL 兩次入庫。** 本件以 **URL** 比對為 NEW，以**事件**比對為既載 ⇒ **選稿階段應增加「事件層」去重（以公司名＋設施／產品名檢索既載 source 頁標題），而非僅比對 URL。**

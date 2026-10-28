@@ -3,7 +3,7 @@ title: "ASE Group / 日月光投控"
 category: entity
 tags: [OSAT, advanced-packaging, CoWoP, FOPLP, chiplet, CPO, LEAP]
 created: 2026-04-25
-updated: 2026-10-27
+updated: 2026-10-28
 sources: [2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below, 2026-08-05_trendforce_tsmc-cowos-cow-outsourcing-osat, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2026-05-08_aseglobal_ase-wus-kaohsiung-focoes-hub, 2026-05-26_semiconductor-digest_ase-310mm-plp-ectc2026, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-11_trendforce_ase-spil-zhunan-plant, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-07-01_trendforce_ase-price-hike-20pct, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-31_ase_cn224583735u-photoelectric-hybrid-rdl, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-10-08_ase-probing-needle-scrub-length, 2026-10-08_semieng_voltage-regulation-in-package, 2026-10-09_ieie-probe-card-mlc-signal-integrity, 2026-10-22_semieng_foundries-osats-increasingly-overlap, 2026-10-21_researchandmarkets_osat-market-2026-2031, 2026-02-19_semieng_laser-arrays-cpo-epoxy-outgassing]
 related:
   - wiki/technologies/cowos.md
@@ -359,3 +359,36 @@ Intel Foundry 的 ECTC 2026 官方部落格列出其 20 篇論文的合作方，
 可引用的市場背景（不涉公司拆分）：OSAT 整體 2025 **USD 52.00 B** → 2031 **USD 87.22 B**（CAGR 9.00%）；**打線封裝 2026 市占 34.35% 且為最大營收區隔**；先進封裝 CAGR 13.00%；運算／AI／HPC CAGR 16.00% → USD 20.27 B (2031)；亞太佔價值 72.13%。見 [[concepts/advanced-packaging-market]]。
 
 另：[[sources/2026-02-19_semieng_laser-arrays-cpo-epoxy-outgassing]] 中 ASE Group 就 CPO 提供評論（記者轉述，無具體規格）。
+
+## [2026-10-28] collect 更新：⭐⭐⭐ 營收結構首次拆分 —— 其中約 41% 是 EMS，與先進封裝無關
+
+來源：[[sources/2025-10-23_marklapedus_q3-25-osat-earnings-ase-mix]]（Mark LaPedus, Semiecosystem, 2025-10-23）
+⚠⚠ **逾窗來源（約 12 個月前）。所有數字僅為 Q3 2025 期別，不得描述為現況。**
+
+| 項目 | Q3 2025 |
+|---|---|
+| 合併營收 | **NT$168,569 M（US$5.48 B）**，YoY +5.3%／QoQ +11.8% |
+| 母公司淨利 | **NT$10,870 M（US$354 M）**，YoY +12%／QoQ +45% |
+| **營收結構** | **封裝 ~47%／測試 ~11%／EMS ~41%／其他 ~1%** |
+| 利用率 | 封裝與測試 **高 70% 區間**；先進封裝自述**全載** |
+| 資本支出 | 2024 **~$1.8 B**；2025 **略超 $3 B** |
+| Q4'25 指引 | 合併 QoQ **+1～2%**（NT$）；ATM QoQ **+3～5%**；EMS 持平至微降 |
+| 先進封裝（leading-edge）營收 | 全年上看 **US$1.6 B**；ATM 美元營收 YoY **>+20%** |
+| 先進封裝佔總營收比例 | ⚠ **未揭露** |
+
+### 新增知識
+
+- ⭐⭐⭐ **本 wiki 首次能說明「ASE 營收」這個分母的組成。**
+  📌 **任何「ASE 營收 vs 先進封裝市場規模」的比較都必須先剝除 EMS（約 41%），否則高估約 1.7 倍。**
+- ⭐⭐⭐ **此點使 2026-10-27「ASE 約佔全球 OSAT cluster 38%」之拒收決定取得實質理由**（此前僅為市占查證門檻之形式適用）：**分母是否含 EMS 會使該比例大幅移動。**
+- ⚠ **US$1.6 B 不得與既載 OSAT 總量分母（2025 USD 52.00 B → 2031 USD 87.22 B、CAGR 9.00%）相除求市占**：期別、幣別基準與「先進封裝」定義皆不一致。
+
+### 矛盾
+
+- ⚠ **2025 資本支出兩個不一致數字**：自述「略超 $3 B」 vs 文中引 Taipei Times「可能超 $6 B」⇒ **依第四可信度軸並列，標明後者為二手推測。**
+
+### 空缺處置
+
+- **空缺「OSAT 公司級營收拆分」—— 部分解，不結清**（取得 ASE 三分部比例，但先進封裝佔比仍未揭露、Amkor 完全未涵蓋、期別逾窗）。
+- 📌 **問法收窄為：ASE／Amkor 的「先進封裝」在其財報中是否為獨立揭露科目；若否，US$1.6 B 這個數字的邊界由誰定義。**
+- 📌 **追蹤方式改為：法說會逐字稿與年報／10-K 分部附註，而非新聞整理。**

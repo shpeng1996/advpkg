@@ -1049,3 +1049,18 @@
 2026-10-27 | https://doi.org/10.1016/j.nanoms.2026.09.001 | raw/papers/2026-10-27_openalex_underfill-interphase-architecture-adhesion.md | Underfill: processability not chemistry sets adhesion
 2026-10-27 | https://doi.org/10.1021/acsaelm.6c00018 | raw/papers/2026-10-27_openalex_inp-si-room-temperature-sab-epic.md | InP/Si RT SAB 3MPa to >7MPa; Ar plasma oxidises InP
 2026-10-27 | https://imapsource.org/api/v1/articles/94295-glass-core-substrates-for-rf-heterogeneous-integrated-packages.pdf | raw/papers/2026-10-27_imapspdf_qorvo-glass-core-rf-measured-dk-df-insertion-loss.md | Qorvo glass Df 0.044 vs buildup 0.005; measured RF
+2026-10-28 | https://www.corning.com/media/worldwide/cdt/documents/IMAPs_Corning_TGV_FINAL.pdf | raw/reports/2026-10-28_corning_tgv-progress-application-profile-unreported.md | Corning TGV: profile unreported, R +60% 1000cy
+2026-10-28 | https://imapsource.org/article/56156-glass-substrates-for-advanced-packaging.pdf | raw/reports/2026-10-28_corning_glass-substrates-advanced-packaging-imaps2014.md | Corning IMAPS2014 glass: conformal fails at Cu line
+2026-10-28 | https://go.atotech.com/l/1035843/2026-06-30/39gnn3 | raw/articles/2026-10-28_atotech_wet-metallization-glass-tgv-seed-ar-limits.md | Atotech: TGV seed AR >6:1 done, 10:1 in dev
+2026-10-28 | https://marklapedus.substack.com/p/q3-25-packagingtest-earnings-hit | raw/articles/2026-10-28_marklapedus_q3-25-osat-earnings-ase-segment-mix.md | ASE mix: pkg 47% / test 11% / EMS 41%
+2026-10-28 | https://www.global.dnp/news/detail/20177773_4126.html | raw/articles/2026-10-28_dnp_tgv-glass-core-pilot-line-kuki-510x515.md | DNP Kuki TGV pilot 510x515mm, filled+conformal
+2026-10-28 | EPO:93460736:WO2026098776A1 | raw/patents/2026-10-28_WO2026098776A1_evg-plasma-chamber-monitoring.md | EVG: plasma chamber monitoring, cyclic drift
+2026-10-28 | EPO:85775877:EP4684417A1 | raw/patents/2026-10-28_EP4684417A1_evg-ion-source-surface-treatment-bonding.md | EVG: ion-source surface treatment + bonding
+2026-10-28 | EPO:86760158:EP4721131A1 | raw/patents/2026-10-28_EP4721131A1_evg-total-substrate-separation.md | EVG: total substrate separation (debonding)
+2026-10-28 | EPO:94821827:CN122477757A | raw/patents/2026-10-28_CN122477757A_dongwoo-glass-warpage-integrated-passives.md | Dongwoo: glass as warpage support + passives
+2026-10-28 | EPO:91810278:WO2026008137A1 | raw/patents/2026-10-28_WO2026008137A1_evg-embossed-surface-profile-controlled-mixing.md | EVG: embossed profile via controlled mixing
+2026-10-28 | https://doi.org/10.4071/001c.171418 | raw/papers/2026-10-28_openalex_evg-hybrid-bonding-ai-hpc-cpo.md | EVG: hybrid bonding as AI/HPC catalyst (no data)
+2026-10-28 | https://doi.org/10.1016/j.finel.2026.104659 | raw/papers/2026-10-28_openalex_w2w-bonding-plate-reynolds-nonmonotonic.md | W2W: non-monotonic gap/viscosity/energy
+2026-10-28 | https://doi.org/10.1021/acsami.6c11857 | raw/papers/2026-10-28_openalex_imec-inp-laser-liftoff-self-absorption-ceiling.md | imec InP LLO: self-absorption sets upper bound
+2026-10-28 | https://doi.org/10.1515/joc-2026-0417 | raw/papers/2026-10-28_openalex_hybrid-taper-grating-fiber-chip-tolerance.md | Fiber-chip: +-2.5um tolerance, 0.35dB (sim)
+2026-10-28 | https://doi.org/10.5104/jiep.29.376 | raw/papers/2026-10-28_openalex_namics-cpo-transparent-optical-adhesives-PARTIAL.md | Namics CPO optical adhesive (paywalled, partial)

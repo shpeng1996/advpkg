@@ -5957,3 +5957,53 @@ warning: unable to unlink '.../.git/index.lock': Operation not permitted
   ➜ 📌 **建議使用者執行其一**：①在排程任務的設定中核准該資料夾的刪除權限（之後本任務可逕行 `rm`，根因解除）；或②自行於該機器上執行 `git gc --prune=now` 並刪除 `.git/stale*`。
   ➜ ⚠ **本輪未呼叫 `device_request_delete_permission`**：該請求須由真人回應，而排程執行時無人在線，故依規範（53a）續行 `mv` 處置並改以本筆記錄＋通知提報。
 - ✅ **收尾驗證六項全部通過**：①registry 新增 16 行所指之 raw 檔**全部存在**；②16 個新來源摘要頁**全部存在且於 `index.md` 各命中 1 次連結**；③`wiki/sources/` 實際檔數 **1018** 與 `index.md` 表頭所載一致；④今日變動之所有 `.md` **全部為合法 UTF-8**（`info-wmcm.md` 未在本輪變動範圍內，其既載問題續列）；⑤**新 raw 檔 frontmatter 全部具 `collected_date`／`content_type`／`relevance_tags`**；⑥`.env` **未進暫存區**，且其三個變數值在 `raw/` 與 `wiki/` 下**命中 0 檔**。
+
+## [2026-10-28] collect | 每日自動蒐集 — 先進封裝最新動態
+- 搜尋查詢數：新聞 9 組（7 組主題 + 2 組補洞）/ 專利 5 組 / 論文 4 組
+- 成功抓取：15 篇（articles 3, patents 5, papers 5, reports 2）
+- 失敗/跳過：9 篇（付費牆 5、已收錄 3、低相關 1）
+  - **付費牆／無摘要（5）**：`10.5104/jiep.29.376`（Namics CPO 光接著劑，J-STAGE RESTRICTED；**仍以 partial 收錄，見下**）、`10.1109/tmtt.2026.3724236`（橢圓 TGV 微波建模，IEEE Xplore 空回應）、`10.1016/j.jssc.2026.126276`（鋇硼矽玻璃 K₂O 比與介電／CTE，Elsevier TDM 保留）、`10.1016/j.mssp.2026.111286`（TGV 製造法綜述）、`10.1016/j.mssp.2026.111305`（混合接合綜述）—— 後四者 **Crossref 亦未存放摘要**，依 §4.3「無摘要者棄收」處理
+  - **已收錄（3）**：semiengineering 面板級第二波、semiengineering 翹曲管理、trendforce 混合接合機市場
+  - **低相關（1）**：`uciexpress.org` PDF 實為 **2022-03-02 UCIe 1.0 成立新聞稿**，無任何數據（無 GT/s、bump pitch、pJ/bit）⇒ 棄收
+- 資料源狀態：WebSearch ACTIVE ✓ | EPO OPS ACTIVE ✓ | OpenAlex ACTIVE ✓
+- 新增 wiki 頁面：15 頁（全為 sources/）
+  `2026-10-23_paper_imec-inp-laser-liftoff-ceiling`、`2026-10-20_paper_w2w-bonding-plate-reynolds-nonmonotonic`、`2026-10-07_paper_hybrid-taper-grating-fiber-chip-tolerance`、`2026-09-21_imaps_evg-hybrid-bonding-ai-hpc`、`2026-09-01_jiep_namics-cpo-optical-adhesives-partial`、`2026-07-28_patent_dongwoo-glass-warpage-passives`、`2026-06-30_atotech_glass-wet-metallization-seed-ar`、`2026-05-15_patent_evg-plasma-chamber-monitoring`、`2026-04-08_patent_evg-substrate-separation`、`2026-01-28_patent_evg-ion-source-surface-treatment`、`2026-01-08_patent_evg-embossed-surface-profile`、`2025-12-16_dnp_tgv-glass-core-pilot-kuki-primary`、`2025-10-23_marklapedus_q3-25-osat-earnings-ase-mix`、`2016-01-01_corning_tgv-progress-profile-unreported`、`2014-10-13_corning_glass-substrates-imaps2014`
+- 更新 wiki 頁面：12 頁
+  `entities/corning`、`entities/atotech`、`entities/ev-group`、`entities/semco`、`entities/dnp`、`entities/ase-group`、`entities/jcet`、`technologies/glass-substrate`、`technologies/hybrid-bonding`、`technologies/copackaged-optics`、`technologies/foplp`、`overview`（＋`index`）
+- 主要新知識：
+  ①⭐⭐⭐ **「活化步驟是淨效益未定的步驟」新增第三個爭議軸「可重複性」** —— 既載三例（Cu 上海大學／Ru 哈工大／InP CityU HK）**全為配方／材料層的雙向效果**；**EVG WO2026098776A1（電漿室監測）摘要明示標的為「cyclic treatment of substrates, in particular substrates of the same type」之運作監測 ⇒ 第一個把問題定位在「同一台機器隨時間漂移」的設備層排他權，即供應商側承認「第 N 片與第 1 片拿到的不是同一個電漿」** ⇒ **爭議軸自兩軸擴為三軸：①是否活化 ②用何手段 ③同一配方能否重複**；與既載「CMP 後清洗／接合面潔淨度是第二大良率槓桿」同向（兩者皆把良率歸因推向「**接合前的表面狀態是否可重複**」而非「是否達標」）。
+  ②⭐⭐⭐ **「最佳值必然是區間」一輪新增兩例。** **第十一例（接合前緣動力學）**：UIUC×TAMU 之板—Reynolds 單體耦合模型顯示接合前緣對**初始間隙、空氣黏度、界面能**呈**非單調**敏感性（⚠ 純模擬，不改寫既有論述）；並使**「夾在兩片晶圓之間的空氣」首次成為本 wiki 獨立物理變數**（既載 W2W 論述僅及表面與形變）⇒ **限制鏈候選第五環**。**第十二例（InP 雷射剝離能量）**：imec×KU Leuven —— **能量不足→犧牲層未分解剝離失敗；能量過高→InP 自吸收熱失控燒毀** ⇒ **迄今「上下界機制最清楚且互不相同」的第二例**（第一例 Cu dishing）。
+  ③⭐⭐⭐ **【新論述候選】「製程窗的上界常由一個在窗內不存在的機制設定，故以下界端外推上界必然失敗。」** imec 之 LLO：上界機制（**InP 自吸收**）在低能量時**完全不存在**，係因**熱致能隙收縮**才出現，且**主吸收層自 InGaAs 犧牲層轉移到 InP 本身**。與既載同類讀法之差別：既載諸例皆為**換條件換符號**，**本件是同一條件軸上主導機制的載體本身發生轉移** —— 本 wiki 首個明確案例。並**明確推翻「犧牲層分解」模型** ⇒ 自本輪起 LLO 敘述須採「能量相依之吸收轉移」。
+  ④⭐⭐⭐ **【新論述候選】「孔能打多深」與「孔內能鍍得上」是兩個不同的 AR 上限，前者領先後者約 2–3 倍。** 成孔（既載 AGC **AR 1:20 @1.0 mm**）vs 種子覆蓋（本輪 Atotech **>6:1 已達成、10:1 開發中**）⇒ **玻璃 TGV 的實際可用 AR 受限於金屬化而非雷射成孔**（⚠ 單一供應商自述，列候選）；並立**規範（87）：AR 數字須標製程階段，不得跨階段比大小**（既載 AGC 1:20 與本件 6:1 **非矛盾而是不同階段**）。
+  ⑤⭐⭐⭐ **「玻璃低損耗」自單一爭議升為三個面向皆指向賣點不在介電。** ①**量測側**（既載 Qorvo 實測玻璃 Df **0.044** vs 同基板有機增層 **0.005**）；②**權利側（新）**：Dongwoo CN122477757A 請求項明文把玻璃功能寫成「**support substrate … to suppress overall warping**」；③**供應者自身不報數值（新）**：**Corning 兩份自家一手文件（2014、2016）皆未給 Dk/Df**。⚠ 依專利訊號原則不改寫既有論述，既載 AGC／DNP 之 Dk/Df 數字一律保留不動。
+  ⑥⭐⭐⭐ **列管多輪之「Corning small via diameter 之頂／腰／底」確認無法由會議論文結清** —— **2014、2016 兩份 Corning 自家一手文件皆未報告 TGV 剖面形態、皆未分別給頂／腰／底徑** ⇒ **該資訊不存在於 Corning 的公開會議紀錄中** ⇒ **追蹤管道第四次修正：改向 datasheet／客戶揭露／專利請求項（WO2026164778A1），不再找會議論文。** 唯一可推知者：單一試片正／背面 **35 vs 17–19 µm**（比 1.8–2.1×）⇒ **孔非圓柱形，但無法分辨錐形與沙漏形**。
+  ⑦⭐⭐⭐ **最高優先空缺「CPO 光學接著劑可靠度」—— 本輪最有價值的進展不是數值，而是數值的所在位置。** **Namics 成為第六個具名供應者**（既載 Dymax／Norland／Daikin OPTODYNE／Henkel／Sekisui），且**以第一作者身分就 CPO 透明光接著劑發表專文**（JIEP Vol.29 No.5 pp.376–380, 2026-09-01, 日文, 付費牆）⇒ **供應商正把這些數值寫進 JIEP 學會期刊而非公開 datasheet，且該卷期有一整個 3D/Chiplet/CPO 專輯** ⇒ **追蹤管道改為 JIEP 第 29 卷該專輯全文**；立**規範（89）：CPO 與玻璃材料側量化值優先走 J-STAGE／JIEP 與 IMAPSource**（本輪 Elsevier ×4、IEEE TMTT ×1 全數無摘要且付費，而 IMAPSource PDF 直連已成功兩次）。⚠⚠ **本輪不得記錄任何光學接著劑物性數值，空缺維持開啟。**
+  ⑧⭐⭐⭐ **「ASE 營收」這個分母的組成首次取得：封裝 ~47%／測試 ~11%／EMS ~41%／其他 ~1%（Q3 2025）** ⇒ **任何「ASE 營收 vs 先進封裝市場規模」比較必須先剝除 EMS，否則高估約 1.7 倍**；且**使 2026-10-27「ASE 約佔全球 OSAT cluster 38%」之拒收取得實質理由**（此前僅為市占查證門檻之形式適用）：**分母是否含 EMS 會使該比例大幅移動**。⚠ 來源逾窗約 12 個月。
+  ⑨⭐⭐ **CPO 對準預算自兩級擴為三級**：晶粒級 **~100 nm (3σ)**（實測）／**晶片側直接耦合 ±2.5 µm（模擬，新）**／光連接器級 **~±25 µm**（實測）⇒ **引用「對準精度」必須標註級別**；並取得 **CPO 耦合難度的規模數字：SMF vs SOI 模場直徑失配 >20:1** ⇒ **解釋既載 CPO 路線普遍採擴束之原因（失配 20× 必須在某處被吸收）**。⚠⚠ ±2.5 µm 為純模擬、低可信度venue，僅填補「該數字完全不存在」之狀態。
+  ⑩⭐⭐ **本 wiki 首次取得玻璃 TGV 的熱循環電阻「漂移幅度」而非通過／不通過**：Corning JESD22-A104 cond. G、−40→125 °C、1000 cy 後**良率維持 100%、無裂紋脫層，但中位鏈電阻 +60%（CTE 3.2 ppm）／+137%（CTE 8.1 ppm）** ⇒ **「良率過關」與「電阻穩定」是兩個不同判準，且 CTE 與劣化同向** ⇒ **為規範（83）補上可靠度層的理由（此前僅電性層）**。
+  ⑪⭐⭐ **「核心層功能化」第四條路線：核心只當支撐、功能全放增層**（Dongwoo；既載三條為 Shinko 腔體置元件／Intel 玻璃核心／Etron 貫穿散熱孔）⇒ **玻璃核心基板出現「功能放核心」與「功能放增層」兩個相反的架構選擇，且後者由玻璃供應鏈自身提出**；且該申請人為**既載 SEMCO 玻璃核心初期量產基地平澤廠之持有者**。
+  ⑫⭐⭐ **conformal TGV 的失效可能不在孔內** —— Corning IMAPS 2014 之 Georgia Tech conformal TGV 經 1000 cy、−55→125 °C 後「**無任何孔失效；主要失效模式為銅線脫層**」⇒ **對最高優先空缺「同節距同 AR 之填滿 vs conformal 對照量測」提供機制側線索：以 S21／Sdd21 比較兩型可能量錯對象（損耗差異可能來自線路而非孔）**。⚠ 2014 年資料、未同條件對照 ⇒ 僅列線索，不改寫既載 DNP 0.23/0.48 dB 或 AGC −2.11/−2.08 dB。
+  ⑬⭐⭐ **「解接合是被低估的那一步」取得第二、三類證據但仍不升格**：設備側排他權 ×2（**EVG 兩個獨立家族**：EP4721131A1 86760158 ＋ 既載 WO2026175479A1 94733881 ⇒ **本 wiki 首次指認 EVG 的解接合布局**）＋論文側機制（imec 雷射剝離）。⚠ EVG 兩件**摘要皆缺失**；imec 一文屬 III-V 層轉移而非 FOPLP 載板解接合。
+  ⑭⭐ **「把精度需求換到別的製程維度」第四個落點**（既載 GlobalFoundries 對準精度自機台→微影、Apple／Deca 以 fan-out 放寬 pitch；本輪 EVG 輪廓精度自模具→材料擺位、hybrid taper–grating 光纖對準→晶片側錐＋光栅）；**封裝側圖案化出現「免光罩／壓印」共同方向兩個落點**（既載 Deca G03F7/\* ＋ 本輪 EVG G03F7/0002）。
+- 專利訊號：**本輪專利軌輪替至設備商（依上輪建議），以 `(pa="be semiconductor" or pa="ev group" or pa="asm pacific") and pd within "2026"` 命中 39 件，前 25 件中 17 件為新家族且全部為 EVG** ⇒ 技術動向集中在**接合前後的兩端而非接合本身**：**活化之可重複性**（電漿室監測、離子源表面處理）與**分離／解接合**（兩個獨立家族），另加壓印輪廓成形。**與同公司論文軌（對外論述 HBM／CPO／記憶體牆、零數值）形成明顯落差 ⇒ 「對外說架構，對內修表面與分離」，規範（38）第二例。** 另 **Dongwoo（SEMCO 平澤廠持有者）把玻璃的功能寫成「抑制翹曲的支撐」並將被動元件放進增層**，為玻璃賣點不在介電之權利側佐證。⚠ **Micron 軌本輪 3 件全數已收錄（去重效率 100%）⇒ 該申請人暫時收盡**；⚠ **Besi 與 ASM Pacific 在前 25 件內零命中，依規範（86）不得逕推論其布局稀疏 ⇒ 下輪應單獨檢索。**
+
+### 作業記錄補記（2026-10-28）
+
+- ✅ **OPS 呼叫 7 次（≤10 預算）**：1 次 auth + 5 次檢索 + **1 次批次詳目（以 `publication/docdb/<5 個號碼以逗號分隔>/biblio` 一次取回 5 件，節省 4 次呼叫）**。無 403／429／404。
+  - ✅ **規範（85）首次執行**：CPO 軸改走 **`cpc="G02B6/42" and ti,ab="package" and pd within "2026"`**，命中 4 件（Kyocera ×2、Samsung、TDK）—— ⚠ **全為新家族但皆非先進封裝 CPO**（光波導封裝、XR 眼鏡雷射模組）⇒ 📌 **規範（85）本輪結果為陰性：G02B6/42 搭「package」會大量引入消費光學與光通訊模組。下輪應改為 G02B6/42 與封裝專屬詞（interposer／die／chiplet）共現，或改用 G02B6/12 系。** 另 `ti,ab="co-packaged optics" or ti,ab="photonic engine"` 僅命中 2 件（1 件為 2023 年 TSMC 案）⇒ **OPS 全文對 CPO 片語的覆蓋極稀疏，不宜作為主要路徑。**
+- ✅ **OpenAlex 4 組查詢全數 HTTP 200**，依 §4.1 全程片語加雙引號、以 `|` 聯集、全部含 `type:article`。
+  - ✅ **dedup 於查詢完成後執行**：**正規化標題／DOI dedup 攔下大量既載**（g1 TGV 軸 25 筆中 **20 筆 DUPDOI**、g2 CPO 軸 25 筆中 12 筆 DUP）⇒ **玻璃／CPO 兩軸本 wiki 覆蓋率已高**；另依 §4.3 **語意篩選棄收明顯離題者**（g3／g4 命中 Sukuk 綠色債券、社會資本、股蹄韌帶 3D-CT、CFRP 曲梁、絲纖維組織支架等）。
+  - ⚠⚠ **§4.3「advanced packaging 歧義」警示本輪再獲驗證，且來源為 `"heterogeneous integration"`**：g4 以該片語命中 221 筆，前 25 筆中大量為磊晶／MEMS／壓電／光子學而非封裝 ⇒ 📌 **「heterogeneous integration」在學術語料中歸屬材料與元件層而非封裝層，單用該片語的訊噪比低；下輪應與封裝詞（package／interposer／chiplet／substrate）共現。**
+  - ⚠ **無摘要比例偏高續列管**：本輪選入之 5 篇論文中 1 篇（Namics）完全無摘要；而**被棄收的 4 篇付費牆論文中，Crossref 與 OpenAlex 皆無摘要** ⇒ **Elsevier／IEEE 兩家為主要缺口**（與上輪「38% → 17%」之觀察一致，本輪缺口集中於出版商而非主題）。
+- ✅ **DOI 直取納入常規（依上輪建議）**：以 **Crossref API** 對 6 個無摘要 DOI 取回書目（作者、機構、卷期頁、日期、型別）⇒ **成功補齊 Namics 之完整書目（Vol.29 No.5 pp.376–380、受理 2026-06-01）**，惟 **Crossref 對 Elsevier／IEEE 皆未存放摘要** ⇒ 📌 **Crossref 適合補書目、不適合補摘要。**
+- ⚠⚠ **本輪自行發現並更正一處判斷錯誤（記錄以供追溯）**：初判將 DNP 官方新聞稿之面板 **510 × 515 mm** 列為「與既載 300 × 400 mm 矛盾」。**覆核既載後更正**：本 wiki 既已載明 DNP **三個不同產品線的三個尺寸**（玻璃芯 510×515、TGV 金屬化 550×650、RDL 試片 300×400），**三者並存、非矛盾**；且該新聞稿之全部事實**已載於既載 [[sources/2025-12-22_trendforce_dnp-tgv-glass-substrate-2026]]**（二手轉述）。
+  ➜ **處置**：**重寫該 raw 檔**（移除錯誤之矛盾主張，改記為「近重複來源、相關性下修、唯一增量為來源層級二手→一手」），其 source 頁與 `entities/dnp` 亦據此撰寫。⚠ **此為本輪唯一一次改寫當輪新建之 raw 檔**（規範「`raw/` 除 registry 外不得修改」係保護既往檔案之歸檔完整性；保留已知錯誤主張於歸檔更不可取），**未觸碰任何既往 raw 檔**。
+  ➜ 📌 **立規範（88）：官方新聞稿與其二手轉述會以不同 URL 兩次入庫** —— 本件以 **URL** 比對為 NEW，以**事件**比對為既載 ⇒ **選稿階段應增加「事件層」去重（以公司名＋設施／產品名檢索既載 source 頁標題），而非僅比對 URL。**
+- ✅ **新增作業規範建議三條（87）–（89）**，均自本輪實測推得（詳見 `overview.md`）：**（87）** 玻璃 TGV 之 AR 數字須標註製程階段（成孔／種子覆蓋／填滿），不得跨階段比較大小。**（88）** 見上。**（89）** CPO 與玻璃材料側量化值優先走 J-STAGE／JIEP 與 IMAPSource 兩管道。
+  **另立作業要求**：**摘要缺失之專利不得進入技術頁「專利訊號」小節作技術陳述**，僅得列於實體頁布局清單並標 `partial`（本輪適用 EP4684417A1、EP4721131A1）。
+- ⚠ **既載 lint 問題續列，本輪均未修復**：`wiki/technologies/info-wmcm.md` 非合法 UTF-8（2026-09-17 發現，本輪未在變動範圍內）；`wiki/index.md` 來源清單非全域日期排序（**本輪 15 筆以降日序插入於清單頂端，未做全域重排**）；`index.md` 來源連結數（1019）與 `wiki/sources/` 實際檔數（1033）之差額 **14**（與上輪所記一致，本輪未擴大）。
+- ✅ **未修改 `CLAUDE.md`**；**未修改 `schedule.md`**；**未觸碰 `raw/` 下任何既往檔案**（新增 15 個 raw 檔、對 `_collected_urls.txt` 追加 15 行；當輪新建之 DNP raw 檔重寫一次，理由見上）。
+- 📌 **下輪建議**：
+  ①**取全文**：**JIEP Vol.29 No.5 之 3D/Chiplet/CPO 專輯（最高優先，CPO 接著劑數值所在處）**、EVG EP4684417A1 與 EP4721131A1 之請求項（Espacenet／Google Patents 說明書）、`10.1109/tmtt.2026.3724236`（橢圓 TGV 微波，IEEE Xplore 本輪空回應）、`10.1016/j.jssc.2026.126276`（玻璃組成 K₂O 比 → 介電／CTE，直接對應規範 83）、W2W 板—Reynolds 模型 **Part II**、中科院微電子所綜述（續列多輪）、YAP+ 五機制權重（續列）。
+  ②**新主題**：**同節距同 AR 之填滿 vs conformal TGV 對照量測（續列最高優先）**、**種子覆蓋率 6:1／10:1 的量化定義**、**電漿活化批內漂移值**、**產線 W2W 是否控制氛圍黏度／壓力**、**AGC 無鹼玻璃的 Df（續列）**、**ASE／Amkor 法說會逐字稿與年報分部附註（取代新聞整理）**、**凸出 vs 凹陷 Cu 墊的實驗驗證（續列）**。
+  ③**檢索法修正**：**規範（85）之 G02B6 路線本輪陰性 ⇒ 改為 G02B6/42 與封裝專屬詞共現或改用 G02B6/12 系**；**`"heterogeneous integration"` 須與封裝詞共現**（本輪訊噪比低）；**Besi 與 ASM Pacific 單獨檢索**（規範 86 第二次適用）；**Micron 軌暫停輪替**（本輪去重效率 100%）；下輪專利軌輪替至 **Amkor／ASE 設備側供應商（ASMPT、Shinkawa）或 Samsung／SK hynix 之 2026 下半年案件**；**Crossref 僅用於補書目，不期待補摘要**。

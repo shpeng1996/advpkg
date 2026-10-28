@@ -3,7 +3,7 @@ title: "JCET（江蘇長電科技）"
 category: entity
 tags: [OSAT, China, 3D-packaging, CPO, AI-power-modules, advanced-packaging, Shanghai]
 created: 2026-06-22
-updated: 2026-10-11
+updated: 2026-10-28
 sources: [2026-06-07_digitimes_jcet-3d-packaging-cpo-plant, 2026-06-26_semieng_chip-week-144, 2026-07-29_trendforce_china-advanced-packaging-new-capacity-wave, 2026-08-21_semieng_chip-week-152, 2026-07-17_jcet_cn122421815a-asymmetric-bonding-interface]
 related:
   - wiki/concepts/advanced-packaging-market.md
@@ -196,3 +196,19 @@ US20260239928A1 的邏輯與本 wiki 2026-09-16 對 ASE 的觀察同型：**OSAT
 ⚠ **專利為前瞻訊號**：不得敘述 JCET／STATS ChipPAC 已量產此光路開孔結構。
 
 *Source: [[sources/2026-10-11_statschippac-underfill-keepout-optical]]*
+
+## [2026-10-28] collect 更新：Q3 2025 創史上最高 Q3；設備端與服務端同季反向
+
+來源：[[sources/2025-10-23_marklapedus_q3-25-osat-earnings-ase-mix]]（Mark LaPedus, 2025-10-23）
+⚠⚠ **逾窗來源（約 12 個月前），僅為 Q3 2025 期別。**
+
+- 營收 **RMB 10.06 B（US$1.41 B）**，QoQ **+8.6%** —— **公司史上最高 Q3**
+- 歸母淨利 **RMB 480 M（US$67.39 M）**，QoQ **+80.6%**
+- 分部成長：**運算電子 +69.5%／工業與醫療 +40.7%／車用 +31.3%**（⚠ 原文未標比較期別）
+- 利用率：**晶圓級、功率元件、電源管理封裝接近全載**
+
+### 新增知識
+
+- ⭐⭐ **運算電子 +69.5% 為三個分部中最高**，與既載「封裝產能分配與價值密度掛鉤」同向；⚠ **比較期別未標，不得視為 YoY 或 QoQ 任一。**
+- ⭐ **設備端與封裝服務端在同一季反向**：同期 **Besi 營收 YoY −15.3%**，而 JCET 創 Q3 新高 ⇒ 與既載「混合接合機台採用時程推遲至 2027–2029」方向一致（**設備投資尚未轉為設備商營收**）。
+- ⚠ **既載空缺「JCET 韓國團隊（原 STATS ChipPAC Korea）的產能與客戶」本輪未結清**：本稿為集團層財務，未拆分韓國團隊。

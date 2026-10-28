@@ -3,7 +3,7 @@ title: "康寧 / Corning Incorporated"
 category: entity
 tags: [glass-substrate, TGV, materials, CPO, Corning]
 created: 2026-09-18
-updated: 2026-10-25
+updated: 2026-10-28
 sources:
   - 2026-08-06_epo_corning-small-diameter-tgv-adhesion
   - 2026-09-30_epo_xiamen-anjieli-cn121335557a-silane-parylene-tgv
@@ -261,3 +261,41 @@ Intel ZnO「三維咬合」）應改述為「三種賭法」而非「三條互�
   見 [[sources/2026-05-13_epo_intel-tgv-radial-void-crack-mitigation]]。
 - ⚠ **既載空缺「Corning small via diameter 的實際數值」不受本輪影響**，提問方式維持第三次修正後的形式（頂／腰／底何者；若為沙漏形，腰在什麼高度）。
 - ⚠ **新增空缺（與 Corning 的論述直接相關）**：**有徑向空隙之 TGV 的高頻電性本 wiki 完全空白** —— 既載 [[entities/agc]]「填滿 vs conformal 在 30 GHz 無顯著差異」比較的兩種形態**都假設銅貼著玻璃**。
+
+## [2026-10-28] collect 更新：⭐⭐⭐ 兩份自家一手文件皆未報告 TGV 剖面 ⇒ 空缺追蹤方式第四次修正
+
+來源：[[sources/2016-01-01_corning_tgv-progress-profile-unreported]]（Shorey & Lu，⚠ 年份推定 2016）、[[sources/2014-10-13_corning_glass-substrates-imaps2014]]（Shorey & Pollard，IMAPS 2014）
+
+| 項目 | 2016 簡報 | IMAPS 2014 |
+|---|---|---|
+| 外徑 OD | **25–100 µm** | 通孔 35 µm／盲孔 40 µm／RTI 35 µm |
+| 最小節距 | **~2× OD** | GT conformal **100 µm** |
+| **剖面形態** | **未報告** | **未報告** |
+| 頂／腰／底徑 | **未分別給** | **未分別給** |
+| 玻璃代號／組成 | SGW3／SGW8，**組成未揭露** | **未揭露** |
+| CTE | **3.2 / 8.1 ppm/°C** | 僅稱 "adjustable" |
+| **Dk / Df** | Dk 僅稱 "low or adjustable"；**Df 未給** | **皆未給** |
+| 玻璃最薄 | **~100 µm** | **~100 µm**～~700 µm |
+| 面板 | 翹曲試片 **508 × 508 mm** | 微影 **370 × 470 × 0.3 mm** |
+| L/S | — | 示範 **~3.0 µm**（目標 <3 µm）；≥3.5 µm 完全解析、2.5 µm 部分、1.5 µm 未 |
+
+### 可靠度（本 wiki 首次取得玻璃 TGV 的「電阻漂移幅度」）
+
+- 條件：**JEDEC JESD22-A104 cond. G、−40→125 °C、1 h/cycle、15 min soak、1000 cycles**
+- 熱循環後良率 **100%**，無裂紋、無脫層
+- **中位鏈電阻（推定 Ω）：SGW3（3.2 ppm）10.4 → 15.4 → 16.6（+60%）；SGW8（8.1 ppm）6.7 → 13.5 → 15.9（+137%）**
+- ⇒ ⭐⭐ **「良率過關」與「電阻穩定」是兩個不同判準**；且**CTE 較高者初始電阻較低但劣化幅度明顯較大** ⇒ 為既載規範（83）補上**可靠度層**的理由（此前僅電性層）
+- 連續性良率初測：SGW3 **99.97%**；SGW8 **99.72% / 100.00%**
+  ⚠ **文件內部矛盾**：正文稱皆 "over 99.85%"，表 2 列 99.72% ⇒ **依第四可信度軸採表中值並標明出處為表**
+
+### 對列管空缺的處置
+
+- 📌 ⭐⭐⭐ **「Corning small via diameter 之頂／腰／底、若沙漏形腰在何高度」—— 追蹤方式第四次修正。**
+  **既載提問形式維持不變，但追蹤管道改變**：Corning 自家公開會議紀錄（2014、2016 兩份）**皆無剖面資訊** ⇒ **不再於會議論文中尋找**，改向 **datasheet、客戶揭露或專利請求項**（如既載 WO2026164778A1 "SMALL VIA DIAMETER TGV WITH ADHESION LAYER"）取得。
+  - 唯一可推知者：2016 簡報單一試片之正／背面兩徑（**35 vs 17–19 µm**，比約 1.8–2.1×）⇒ **孔非圓柱形**，但**無法分辨錐形與沙漏形**。
+- ⚠ **兩份文件皆未給 Dk/Df** ⇒ 本 wiki 既載之玻璃 Df 分歧（DNP 0.006 vs Qorvo 0.044，約 7 倍）**無法以 Corning 資料仲裁**。
+
+### 新增追蹤
+
+- 📌 **conformal TGV 的失效是否普遍發生在孔外銅線界面**：IMAPS 2014 之 Georgia Tech conformal TGV 經 **1000 cy、−55→125 °C** 後「**無任何孔失效；主要失效模式為銅線脫層**」⇒ **對最高優先空缺「同節距同 AR 之填滿 vs conformal 對照量測」提供機制側線索：以 S21／Sdd21 比較兩型可能量錯對象（損耗差異可能來自線路而非孔）。** ⚠ 2014 年資料、未與填滿同條件對照 ⇒ **僅列線索，不升格，不改寫既載 DNP 0.23/0.48 dB 或 AGC −2.11/−2.08 dB 任何數字。**
+- ⚠ **兩份資料年份為 2014／2016，不得用於描述 Corning 2026 年現況**（距 2026-08 之 WO2026164778A1 約十年）。

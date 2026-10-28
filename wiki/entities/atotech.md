@@ -3,7 +3,7 @@ title: "Atotech（MKS Instruments）/ 安美特"
 category: entity
 tags: [Atotech, MKS, electroplating, copper, hybrid-bonding, queue-time, grain-growth, chemistry-supplier]
 created: 2026-10-13
-updated: 2026-10-24
+updated: 2026-10-28
 sources: [2026-10-13_atotech-cu-microstructure-queue-time]
 related:
   - wiki/technologies/hybrid-bonding.md
@@ -93,3 +93,39 @@ related:
 - ⚠⚠ **應用域為「國防與航太精密元件」（原文明載），不是 AI／HPC 封裝** ⇒ **−17.4% 與 45°±3.45° 不得逕自套用於 HBM／CoWoS 的 TSV**，列為新空缺。
 
 **來源**：[[sources/2026-10-21_openalex_tsv-cu-hagb-45deg-forbidden-zone]]
+
+## [2026-10-28] collect 更新：⭐⭐⭐ TGV 種子層覆蓋 AR 上限 —— 「孔能打多深」與「孔內能鍍得上」是兩個不同的 AR
+
+來源：[[sources/2026-06-30_atotech_glass-wet-metallization-seed-ar]]（MKS Atotech，⚠ **閘門式行銷摘要頁，全文需登記；`fetch_status: partial`；日期取自 URL 路徑，為推定值**）
+
+| 項目 | 值 |
+|---|---|
+| 無電解 TGV 種子覆蓋（**已達成**） | **AR > 6:1** |
+| 無電解 TGV 種子覆蓋（**開發中**） | **AR 10:1** |
+| 細線 L/S | **5/5 µm** |
+| Vitrocoat GI | 「nanometer-scale metal-oxide layer」（厚度未給） |
+| Cupratech GI M | 無電解銅種子層（組成未給） |
+| InPro Pulse TGV | 脈衝／反脈衝電鍍，稱 void-free 填充、minimal overburden（參數未給） |
+
+⚠ 原頁另有一行 "Conformal electroless copper coverage for TGV aspect ratios exceeding 10:1"，前綴為突兀之 "OR:" ⇒ **無法判定已達成或目標；依第四可信度軸本 wiki 僅採「>6:1 已達成、10:1 開發中」。**
+
+### 新增知識
+
+- ⭐⭐⭐ **本 wiki 首個「TGV 種子層覆蓋能力的 AR 上限」數字，並由此推得新的結構性讀法：**
+  **「孔能打多深」與「孔內能鍍得上」是兩個不同的 AR 上限，前者領先後者約 2–3 倍。**
+  - 成孔能力（既載 [[entities/agc]]）：**AR 1:20 @ 1.0 mm**
+  - 金屬化能力（本件）：**種子覆蓋僅確認至 6:1、10:1 未完成**
+  - ⇒ **玻璃 TGV 的實際可用 AR 受限於金屬化而非雷射成孔。**
+  - ⚠ **單一供應商自述、無第三方佐證 ⇒ 列候選論述，不逕行升格。**
+- ⭐ **「真正的瓶頸在被視為輔助步驟的那一步」家族候選第五例**（種子層覆蓋 vs 成孔）。⚠ 單一來源，依既有方式列候選。
+- ⚠ **依規範（41）計為有利害關係之供應商來源**（本頁第 3 筆 Atotech 資料；前兩筆為混合接合 queue time 白皮書）。
+
+### 擬立規範建議
+
+- 📌 **（87）玻璃 TGV 之 AR 數字必須標註其所指製程階段（成孔／種子覆蓋／填滿），不得跨階段比較大小。**
+  理由：既載 AGC「AR 1:20」與本件「>6:1」**非矛盾而是不同製程階段**，若不標註會被誤讀為同一能力的衝突。
+
+### 新增空缺
+
+- 📌 **AR 6:1 與 10:1 的「種子覆蓋率」量化定義**（覆蓋率 %？最薄點厚度？）—— 本件未給判準。
+- 📌 **是否有第二個供應者給出可比的 AR 上限**（如既載 Corning WO2026164778A1 之無電鍍種子層路線）。若有，上述候選論述可望升格。

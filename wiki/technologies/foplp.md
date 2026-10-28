@@ -3,7 +3,7 @@ title: "FOPLP — 扇出面板級封裝 / Fan-Out Panel-Level Packaging"
 category: technology
 tags: [fan-out, panel-level, TSMC, Samsung, ASE, Powertech, Innolux, CoPoS, InFO, cost-reduction, delamination, DCB, CTE]
 created: 2026-05-03
-updated: 2026-10-27
+updated: 2026-10-28
 sources: [2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-07-31_trendforce_ase-capex-record-10-5b-leap-foplp, 2025-09-12_trendforce_foplp-competitive-2025, 2026-04-13_trendforce_copos-pilot, 2025-07-01_3dincites_micron-onshore-tsmc-copos, 2026-04-21_3dincites_acm-wlp-plp-process-trends, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-05-07_techwireasia_malaysia-advanced-packaging-lam, 2022-11-01_semianalysis_packaging-gets-blurry, 2026-06-03_digitimes_naura-plp-descum-tool, 2026-06-09_digitimes_auo-innolux-cpo-foplp-panel, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-15_digitimes_manz-310mm-foplp-ecd-equipment, 2026-06-13_digitimes_linkotech-foplp-rollout-traction, 2026-06-20_prnewswire_manz-asia-310mm-ecd, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_digitimes_tsmc-foplp-timeline-skepticism, 2026-07-06_trendforce_cfmee-plp2000-china-first-plp, 2026-07-24_trendforce_amd-mi455x-cowos-l-soic-demand, 2026-07-28_trendforce_glass-substrate-copos-intel-lens-boe-taiwan, 2026-08-10_trendforce_tsmc-auo-fabs-foplp-copos-longtan, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-08-06_siliconbox_500m-units-panel-scale, 2026-02-18_siliconbox_ep4697377a1-fanout-panel-metal-sealing-ring, 2026-07-28_xianfeng_cn122476946a-alignment-mark-protection, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded, 2026-08-13_exponentialindustry_glass-core-panel-yield-gap, 2026-06-21_biggo_innolux-ibiden-glass-auo-ennostar-cpo, 2026-09-26_paper_evatec-panel-scale-thinfilm-deposition, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-26_paper_skywater-fowlp-pdk-roadmap, 2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage, 2026-10-06_thelec_sec-xray-tsv-tgv-inspection-1um, 2026-10-07_epo_evg-zonewise-adaptive-litho-die-shift, 2026-10-07_epo_evg-inorganic-dual-release-layer-common-solvent, 2026-10-08_pku-embedded-glass-fanout-roughness, 2026-10-13_additive-patterning-and-metal-density-as-warpage-knob, 2026-10-13_beiyi-sic-low-buckling-sintering, 2026-10-13_large-area-sintering-three-challenges, 2025-09-16_CN120659336A_samsung-fowlp-subpackage-reconstructed-foplp, 2026-10-22_semieng_foundries-osats-increasingly-overlap, 2025-01-16_US20250022826A1_pep-panel-warpage-solder-ball-jig, 2026-07-21_openalex_top-pop-package-warpage-molding-compound, 2025-12-03_inpractise_besi-hybrid-bonding-yield-bottlenecks-7800-die, 2026-04-23_epo_amkor-recessed-staggered-two-tier-traces]
 related:
   - wiki/technologies/rdl.md
@@ -1445,3 +1445,19 @@ Top PoP 論文：模封料三參數主導室溫翹曲與回流期間的翹曲行
 - ⚠ **無量化值**（無 L/S、無凹陷深度、無錯位間距、無層間耐壓）⇒ **不得與既載 Lam 細線 RDL <5 µm L/S、Qorvo 增層 10/10 → 2/2 µm 路線圖比較。**
 - ⚠ 第二介電層「延伸至開口內的下層走線」隱含**介電填充的縱深比問題**，摘要未述填充方式 ⇒ **本件最可能的製程瓶頸所在，列追蹤點。**
 - ⚠ 依專利訊號原則，不代表 Amkor 已量產。
+
+## [2026-10-28] collect 更新：解接合取得設備側排他權，但仍不升格
+
+來源：[[sources/2026-04-08_patent_evg-substrate-separation]]
+
+**EVG EP4721131A1**（家族 86760158，2026-04-08，分類 **H10P72/0428** 單一碼：基板之分離／層轉移）⇒ **命中既載候選論述「真正的瓶頸在被視為輔助步驟的那一步」之 FOPLP 分支（debonding），為該分支之設備商排他權落點。**
+
+- ⭐⭐ **本 wiki 首次指認 EVG 的「解接合」布局**：本件與既載 **WO2026175479A1**（EVG，載板分離用溶劑，2026-08-27，家族 94733881）為**兩個獨立家族** ⇒ **EVG 在 2026 年於「分離」主題至少兩個家族**，密度與其接合側相當。
+- 📌 **「解接合是被低估的那一步」自單一來源候選，本輪取得第二與第三類證據**：
+  1. **設備側排他權** ×2（EVG 兩家族）
+  2. **論文側機制**：[[sources/2026-10-23_paper_imec-inp-laser-liftoff-ceiling]]（imec，雷射剝離之能量上界機制）
+  3. 既載 FOPLP debonding 翹曲峰值（單一來源）
+- ⚠⚠ **仍不升格為成立論述**：EVG 兩件**摘要皆缺失**（無法確認分離手段為雷射／機械／化學／熱，亦無法確認是否針對面板載板）；imec 一文屬 **III-V 層轉移而非 FOPLP 載板解接合**。
+- ⚠ **既載空缺「FOPLP 翹曲峰值在 debonding 階段是否有第二個獨立來源」—— 本輪未結清。**
+- 📌 **新增追蹤：取得 EP4721131A1 與 WO2026175479A1 之請求項，確認分離手段與其是否針對面板載板。**
+- ⚠ 零量化值。依本輪新立作業要求，摘要缺失之專利不作技術陳述，僅列 [[entities/ev-group]] 布局清單並標 `partial`。
