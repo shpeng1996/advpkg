@@ -6046,3 +6046,12 @@ warning: unable to unlink '.../.git/index.lock': Operation not permitted
   ① **取全文（續列）**：JIEP Vol.29 No.5 之 3D/Chiplet/CPO 專輯（CPO 接著劑數值所在處，最高優先）、EVG EP4684417A1 與 EP4721131A1 之請求項、`10.1109/tmtt.2026.3724236`、`10.1016/j.jssc.2026.126276`、W2W 板—Reynolds 模型 **Part II**、中科院微電子所綜述、YAP+ 五機制權重。**新增**：ASE 法說簡報原始 PDF（取「by type」圖表之 Bump/FC/WLP/SiP 占比）、Besi Q3 2026 原始新聞稿（取「cumulative demand」定義）。
   ② **新主題**：同節距同 AR 之填滿 vs conformal TGV 對照量測（續列最高優先）、**有 liner 之 TGV 陣列剪切／彎曲實測**（本輪只取得無 liner 模擬端）、種子覆蓋率 6:1／10:1 的量化定義、電漿活化批內漂移值、產線 W2W 是否控制氛圍黏度／壓力、AGC 無鹼玻璃的 Df、凸出 vs 凹陷 Cu 墊的實驗驗證、**Cu–Cu 電遷移倍率對電流密度的相依性**。
   ③ **檢索法**：✅ **規範（85）之修正本輪驗證為陽性** —— CPO 專利改以 `ti,ab` 片語搭配封裝 CPC（G02B6/42 與 H10W 共現）檢索，命中 Samsung 光引擎案；⚠ **`pa="asm pacific technology"` 回 404（無結果），`pa="asmpt" or pa="shinkawa"` 回 43 筆但 SMT／打線雜訊極高**（43 筆中僅 2 筆與先進封裝架構相關）⇒ **下輪 ASMPT 軌應改以 `pa="asmpt" and ti,ab=<封裝詞>` 收窄**；⚠ **`pa="amkor" and ti,ab="package" and pd within "2026"` 僅回 7 筆，疑過窄**（既載曾以 `(pa="amkor" or pa="jcet")` 命中 2,633 筆）⇒ 下輪改用更寬之申請人式再以 CPC 篩；下輪專利軌輪替至 **Samsung／SK hynix 2026 下半年案件**或 **TEL／AMAT 設備側**。OpenAlex 側：`"chiplet"|"2.5D integration"|"interposer"` 一組**雜訊極高（Zenodo 自助上傳稿佔多數）**，下輪應加 `type:article` 之外再以 venue 或機構過濾。
+
+### 作業記錄補記（2026-10-29，git 步驟）
+
+- ✅ **commit 成功：`fffe212 2026-10-29`（49 檔：15 新 raw＋15 新 source 頁＋16 更新頁＋registry）**；commit 後 `git status` 乾淨、`git log` 正常。
+- ✅ **規範（53a）執行**：commit 留下 **5 個位於作用路徑的鎖檔／pid**（`.git/HEAD.lock`、`.git/gc.pid`、`.git/objects/maintenance.lock`、`.git/packed-refs.lock`、`.git/refs/heads/main.lock`），且 commit 當下 `cannot lock ref 'HEAD'` / `refs/heads/main` 兩則錯誤出現但**提交本身成功**。
+  ➜ **處置（刪除權限全程未申請，理由見下）**：全部 `mv` 至 `.git/` 底下之 `stale7-20261029-*` 新檔名（**destination 不在 `.git/refs` 內**）；移動後**作用路徑已無任何 `*.lock`／`*.pid`**（find 計數 0），`git status` 與 `git log` 均正常 ⇒ **使用者下次執行 git 指令不會以 `File exists` 失敗。**
+- ⚠⚠⚠ **堆積續增，維持警示層級**：`.git` 下 `stale*` 檔累計 **148 個**（第七代，stale→stale7；上輪 135）；`.git/objects/**/tmp_obj_*` 累計 **1,431 個**（上輪 1,366）。兩者皆**不阻擋 git 運作**，但**每輪必然增加約 5–8 ＋ 約 65 個**，且在未取得刪除權限前**無法清除**。
+  ➜ 📌 **建議使用者執行其一**：①在排程任務的設定中核准該資料夾的刪除權限（之後本任務可逕行 `rm`，根因解除）；或②自行於該機器上執行 `git gc --prune=now` 並刪除 `.git/stale*`。
+  ➜ ⚠ **本輪亦未呼叫 `device_request_delete_permission`**：該請求須由真人回應，而排程執行時無人在線；依規範（53a）續行 `mv` 處置，並以本筆記錄＋**通知**提報使用者（通知為排程執行唯一能實際抵達使用者的管道）。本項已連續第四輪提報。
