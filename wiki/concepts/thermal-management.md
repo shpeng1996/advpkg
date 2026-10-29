@@ -3,8 +3,8 @@ title: "先進封裝熱管理 / Thermal Management in Advanced Packaging"
 category: concept
 tags: [thermal-management, liquid-cooling, 3D-IC, CoWoS, heat-dissipation, TIM, ECTC-2025, GaN, power-delivery, co-design, patent-signal, delamination]
 created: 2026-04-25
-updated: 2026-10-27
-sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2025-12-01_semiengineering_thermal-management, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-02_trendforce_samsung-hbm5-computex2026, 2026-05-21_semieng_hi-roadmap-nature-paper-intel, 2026-08-13_semieng_1mw-rack-debate-thermal, 2026-04-27_semieng_semiconductor-materials-misbehave, 2026-08-21_trendforce_chip-packaging-heat-ai-bottleneck-cpo-stco, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_arxiv_umn-multi-kw-power-delivery-3d-hi, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_samsung-cn122602880a-ivr-capacitor-interposer-core, 2026-10-02_imaps-dpc2026_delo-die-side-capacitor-encapsulation, 2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage, 2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk, 2026-10-07_epo_cas-freestanding-3c-sic-interposer, 2026-10-07_openalex_diamond-d2w-direct-bonding-vdw-45mpa, 2026-10-07_openalex_lau-silicon-bridge-microbump-reliability, 2026-10-08_etron-liquid-through-substrate-cavity, 2026-10-08_micron-cryogenic-package-hea-solder, 2026-10-08_advantest-singulated-die-test-thermal, 2026-10-09_cas-2013-microchannel-interposer-ebg, 2026-10-09_bjut-thermomech-phase-field-imc-tgv, 2026-10-13_large-area-sintering-three-challenges, 2026-10-13_cu-microparticles-ductility-vs-stiffness-tradeoff, 2026-10-13_beiyi-sic-low-buckling-sintering, 2026-02-23_openalex_56gbs-3d-siph-5nm-cmos-2p8pjbit-600gbsmm2, 2026-04-06_openalex_micron-siph-packaging-reliability-review, 2026-05-21_openalex_hkust-98ch-ultradense-optical-io-0p2mm2, 2026-08-01_intel_power-delivery-ai-datacenter-c2vr-mbvr-loss-budget, 2026-02-16_openalex_ch4-plasma-low-temp-cu-bonding-260c, 2026-06-11_epo_amkor-metal-die-backside-tim-lid, 2026-02-19_semieng_laser-arrays-cpo-epoxy-outgassing]
+updated: 2026-10-29
+sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2025-12-01_semiengineering_thermal-management, 2026-05-05_semieng_paper-roundup-3d-ic-soic-thermal, 2026-05-26_trendforce_sk-hynix-ihbm-hbm5, 2026-06-02_trendforce_samsung-hbm5-computex2026, 2026-05-21_semieng_hi-roadmap-nature-paper-intel, 2026-08-13_semieng_1mw-rack-debate-thermal, 2026-04-27_semieng_semiconductor-materials-misbehave, 2026-08-21_trendforce_chip-packaging-heat-ai-bottleneck-cpo-stco, 2026-09-01_jmrt_double-sided-dram-reflow-warpage-stress-decoupling, 2026-08-13_tel_us20260240057a1-curable-covalent-bonding-layer, 2026-09-30_semieng_bspdn-thermal-dissipation-barriers, 2026-09-30_arxiv_umn-multi-kw-power-delivery-3d-hi, 2026-09-30_imaps-dpc2026_infineon-power-packaging-3a-mm2-barrier, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_samsung-cn122602880a-ivr-capacitor-interposer-core, 2026-10-02_imaps-dpc2026_delo-die-side-capacitor-encapsulation, 2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage, 2026-10-07_wolfspeed_300mm-sic-interposer-370-490-wmk, 2026-10-07_epo_cas-freestanding-3c-sic-interposer, 2026-10-07_openalex_diamond-d2w-direct-bonding-vdw-45mpa, 2026-10-07_openalex_lau-silicon-bridge-microbump-reliability, 2026-10-08_etron-liquid-through-substrate-cavity, 2026-10-08_micron-cryogenic-package-hea-solder, 2026-10-08_advantest-singulated-die-test-thermal, 2026-10-09_cas-2013-microchannel-interposer-ebg, 2026-10-09_bjut-thermomech-phase-field-imc-tgv, 2026-10-13_large-area-sintering-three-challenges, 2026-10-13_cu-microparticles-ductility-vs-stiffness-tradeoff, 2026-10-13_beiyi-sic-low-buckling-sintering, 2026-02-23_openalex_56gbs-3d-siph-5nm-cmos-2p8pjbit-600gbsmm2, 2026-04-06_openalex_micron-siph-packaging-reliability-review, 2026-05-21_openalex_hkust-98ch-ultradense-optical-io-0p2mm2, 2026-08-01_intel_power-delivery-ai-datacenter-c2vr-mbvr-loss-budget, 2026-02-16_openalex_ch4-plasma-low-temp-cu-bonding-260c, 2026-06-11_epo_amkor-metal-die-backside-tim-lid, 2026-02-19_semieng_laser-arrays-cpo-epoxy-outgassing, 2026-09-01_openalex_bga-fatigue-ai-memory-die-edge]
 related:
   - wiki/technologies/cowos.md
   - wiki/technologies/hybrid-bonding.md
@@ -1595,3 +1595,23 @@ GF（SEMI 訪談）：III–V 材料高溫表現不佳，整合壓力把 **InP �
 ➜ 📌 本 wiki 既載「熱是第四個限制」之落點此前**皆為製程參數級**（775 µm 熱預算、退火溫度帶、鍵合頭本身、微流道、兩相冷卻）。**本件是第一個架構級落點：熱不是參數，而是決定某類元件能否進入封裝的門檻。**
 ➜ ⚠ 本件屬 2026-02 之產業現況判斷，**不否證**既載 Nature Electronics CPO 路線圖（SK hynix 共著）之更高整合度階段；兩者並列而非取代。
 ➜ 📌 另與既載「**供電路徑自身是第二個熱源**，5 kW 級別其量級約 4,829 W 與晶粒功耗同階」（Intel 白皮書）並列：**本輪新增「光源自身是第三個熱源，且其熱直接污染光學規格（波長調諧、亮度）」** —— 熱源清單自「晶粒＋供電路徑」擴為三項。
+
+## 2026-10-29 collect 更新：臨界焊點由 die edge 的局部拘束決定，不只由離中心距離決定 ★★
+
+來源：**AI 記憶體封裝中各種 BGA 焊料之熱機械疲勞損傷參數比較**（朝鮮大學，Materials Today Communications，2026-09-01；[[sources/2026-09-01_openalex_bga-fatigue-ai-memory-die-edge]]）。
+
+| 項目 | 內容 |
+|------|------|
+| 試片 | **TFBGA 型 LPDDR5 記憶體封裝**（商用件） |
+| 方法 | 多溫度 **DIC** 實測翹曲 → 校驗 **FEA** → 跑熱疲勞 |
+| 焊料 | SAC305、SACR、SACQ、Innolot |
+| 損傷模型 | **Darveaux** 與 **Coffin–Manson** 併行比較 |
+| 臨界位置 | **靠近 die edge 之接點**，四種合金一致 |
+| 歸一化損傷指標排序 | **SAC305 > SACR > SACQ > Innolot** |
+
+**讀法**：
+- ⭐⭐ **「距封裝中心距離」這個單一變數模型被補上第二個變數。** 作者明言臨界位置「不只由離封裝中心的距離決定，也由 **die edge 的局部機械拘束**決定」⇒ 📌 **翹曲問題須同時在封裝尺度與晶粒邊界尺度上看。**
+- ⭐⭐ **方法學價值高於材料結論**：提供可複製的 **DIC 實測 → FEA 校驗 → 疲勞**流程。本 wiki 既載多筆翹曲數字出自**純模擬而無實測校驗**（例如 Lau 之 4.43/9.12/19/8.43%）。
+  ⇒ **既載空缺「玻璃核心『封裝對 PCB』應變的實測對照」不結清**（本文對象為 TFBGA LPDDR5，非玻璃核心、非 HBM、非 2.5D），但**追蹤方式可補一句：所需的正是本文這類「DIC 校驗之 FEA」，而非更多純模擬。**
+
+⚠⚠ **引用限制**：作者自述該排序代表「**相對黏塑性損傷敏感度，而非絕對疲勞壽命**」，且受所選本構參數組與共用熱彈性質影響。**不得改寫為「Innolot 壽命最長」之陳述**；無絕對循環數、無到失效實測。

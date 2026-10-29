@@ -3,8 +3,8 @@ title: "ASE Group / 日月光投控"
 category: entity
 tags: [OSAT, advanced-packaging, CoWoP, FOPLP, chiplet, CPO, LEAP]
 created: 2026-04-25
-updated: 2026-10-28
-sources: [2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below, 2026-08-05_trendforce_tsmc-cowos-cow-outsourcing-osat, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2026-05-08_aseglobal_ase-wus-kaohsiung-focoes-hub, 2026-05-26_semiconductor-digest_ase-310mm-plp-ectc2026, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-11_trendforce_ase-spil-zhunan-plant, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-07-01_trendforce_ase-price-hike-20pct, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-31_ase_cn224583735u-photoelectric-hybrid-rdl, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-10-08_ase-probing-needle-scrub-length, 2026-10-08_semieng_voltage-regulation-in-package, 2026-10-09_ieie-probe-card-mlc-signal-integrity, 2026-10-22_semieng_foundries-osats-increasingly-overlap, 2026-10-21_researchandmarkets_osat-market-2026-2031, 2026-02-19_semieng_laser-arrays-cpo-epoxy-outgassing]
+updated: 2026-10-29
+sources: [2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below, 2026-08-05_trendforce_tsmc-cowos-cow-outsourcing-osat, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2026-05-05_trendforce_ase-powertech-kyec-capex-nt370b, 2026-03-20_semiconductor-digest_ectc2026-keynote-tien-wu, 2026-05-08_aseglobal_ase-wus-kaohsiung-focoes-hub, 2026-05-26_semiconductor-digest_ase-310mm-plp-ectc2026, 2026-06-09_digitimes_ase-panel-level-packaging-310mm, 2026-06-11_trendforce_ase-spil-zhunan-plant, 2026-06-29_trendforce_ase-foplp-mass-production-2026, 2026-06-30_trendforce_ase-six-plants-cpo-2026, 2026-07-01_trendforce_ase-price-hike-20pct, 2026-05-28_anysilicon_ase-310mm-panel-focos-bridge, 2026-07-31_ase_cn224583735u-photoelectric-hybrid-rdl, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded, 2026-08-20_ase_us20260248002a1-rdl-io-count-asymmetry, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-10-08_ase-probing-needle-scrub-length, 2026-10-08_semieng_voltage-regulation-in-package, 2026-10-09_ieie-probe-card-mlc-signal-integrity, 2026-10-22_semieng_foundries-osats-increasingly-overlap, 2026-10-21_researchandmarkets_osat-market-2026-2031, 2026-02-19_semieng_laser-arrays-cpo-epoxy-outgassing, 2026-10-29_sec_ase-q3-2026-no-advanced-packaging-line]
 related:
   - wiki/technologies/cowos.md
   - wiki/technologies/copos.md
@@ -392,3 +392,50 @@ Intel Foundry 的 ECTC 2026 官方部落格列出其 20 篇論文的合作方，
 - **空缺「OSAT 公司級營收拆分」—— 部分解，不結清**（取得 ASE 三分部比例，但先進封裝佔比仍未揭露、Amkor 完全未涵蓋、期別逾窗）。
 - 📌 **問法收窄為：ASE／Amkor 的「先進封裝」在其財報中是否為獨立揭露科目；若否，US$1.6 B 這個數字的邊界由誰定義。**
 - 📌 **追蹤方式改為：法說會逐字稿與年報／10-K 分部附註，而非新聞整理。**
+
+## 2026-10-29 collect 更新：Q3 2026 Form 6-K —— 財報中沒有「先進封裝」這個科目 ★★★
+
+一手來源：ASE Technology Holding 向 SEC 提交之 **Form 6-K（2026-10-29）**（[[sources/2026-10-29_sec_ase-q3-2026-no-advanced-packaging-line]]）。
+
+### 分部
+
+| 分部 | NT$ M | 占總營收 | 毛利率 |
+|------|-------|----------|--------|
+| ATM | 150,593 | **61.7%** | 30.6% |
+| EMS | 92,997 | **38.1%** | 8.3% |
+| Others | 571 | 0.2% | 未揭露 |
+| **合計** | **244,161** | 100% | **22.1%** |
+
+總營收**季增 28%、年增 45%**。
+
+ATM 內部（分母為 ATM 淨額 151,485，含控股層沖銷前；四細項**不分別揭露毛利率**）：
+
+| 項目 | NT$ M | 占 ATM | 占總營收（本 wiki 推算） |
+|------|-------|--------|--------------------------|
+| Packaging | 122,945 | **81.2%** | **50.4%** |
+| Testing | 26,302 | **17.4%** | **10.8%** |
+| Direct Material | 2,148 | 1.4% | 0.9% |
+| Others | 90 | 0.0% | 0.0% |
+
+⚠ ATM 表合計 151,485 與合併表 150,593 之差額為控股層關係人交易沖銷（6-K 表註明示）。
+⚠ 設備 capex 圖表疑示 Q3 2026 約 **US$2,104 M**，**標籤未明確對應，列為待複核，不得作為推論前提**。
+
+### ⭐⭐⭐ 先進封裝是否為獨立揭露科目：答案是「否」
+
+- 文件**未就「leading-edge」或「advanced packaging」營收作任何明示陳述**。
+- 最接近者僅為 ATM「by type」圖表之 **Bump/FC/WLP/SiP** 類別，其 Q3 2026 占比在文字擷取中無法可靠對應 ⇒ ⚠ **本輪不記錄該類別之任何數值。**
+- 文件**未正式定義** ATM／packaging／testing／EMS／Others。
+
+⇒ 與 [[entities/amkor]] 側之「有科目，但定義為非打線」合併，可得本輪結論：
+📌 **兩大 OSAT 皆未把 2.5D/3D 先進封裝列為可報導科目。任何「OSAT 先進封裝營收」數字都是分析師建構，不是公司報出的數。**
+
+### 既載數字之更新
+
+- 既載 2026-10-28 之「ASE Q3 2025 封裝 ~47%／測試 ~11%／EMS ~41%」（二手新聞整理）**保留不動並標註為 Q3 2025 期值**；本輪以一手當期值取代為首選：**封裝 50.4%／測試 10.8%／EMS 38.1%（Q3 2026）**。
+- 既載「比較 ASE 營收與先進封裝市場規模必須先剝除 EMS，否則高估」**維持成立**；倍率自約 1.7 倍更新為 **約 1.6 倍**（244,161 / 150,593）。
+- 既載 2026-10-27「ASE 約佔全球 OSAT cluster 38%」之**拒收維持**。
+- ⭐⭐ **ATM 與 EMS 毛利率 30.6% vs 8.3%（約 3.7 倍）** 為本 wiki 首次取得之一手分部毛利率對照。
+
+### 作業規範驗證
+
+📌 既載 2026-10-28 建議「追蹤方式改為法說會逐字稿與年報分部附註，而非新聞整理」—— **本輪以 SEC 6-K 直取執行，有效，納入常規。**

@@ -3,8 +3,8 @@ title: "Amkor Technology"
 category: entity
 tags: [OSAT, advanced-packaging, FOCoS, Arizona, chiplet, Intel-EMIB, patent-signal, TIM]
 created: 2026-04-25
-updated: 2026-10-27
-sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-05-19_stocktitan_amkor-arizona-peoria-land-expansion, 2026-06-17_digitimes_amkor-tsmc-10year-arizona-deal, 2026-06-17_trendforce_tsmc-amkor-10year-arizona-advanced-packaging, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-30_amkor-ir_arizona-7billion-groundbreaking, 2026-06-30_digitimes_amkor-2.5d-hdfo-growth-2026, 2026-07-23_amkor-ir_nvidia-amkor-1-5b-strategic-partnership, 2026-09-26_article_amkor-embedded-trace-rdl, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-10-07_epo_amkor-bspdn-oriented-package-embedded-ipd, 2026-10-07_openalex_amkor-kelly-three-interposer-routes, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-08_semieng_voltage-regulation-in-package, 2026-10-13_amkor-cavity-as-allocated-volume, 2026-01-13_epo_amkor-cn121335572a-rdl-lateral-side-protective-layer, 2026-10-22_semieng_foundries-osats-increasingly-overlap, 2025-09-16_CN120659336A_samsung-fowlp-subpackage-reconstructed-foplp, 2026-10-16_3dincites_scaling-advanced-packaging-capacity-concentration, 2026-06-11_epo_amkor-metal-die-backside-tim-lid, 2026-04-23_epo_amkor-recessed-staggered-two-tier-traces, 2026-08-18_epo_amkor-double-sided-dual-encapsulant, 2026-04-30_epo_amkor-protruding-contoured-pad, 2026-10-21_researchandmarkets_osat-market-2026-2031, 2026-02-19_semieng_laser-arrays-cpo-epoxy-outgassing]
+updated: 2026-10-29
+sources: [2026-09-27_semieng_amkor-wlp-cu-rdl-thickness-5-9um-fusing-current, 2026-09-27_semieng_amkor-hdfo-em-ea-074-n-188, 2026-08-24_semieng_multi-die-assemblies-dominate-2nm-below, 2025-12-08_trendforce_cowos-booked-ase-cowop, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-20_trendforce_ase-samsung-amkor-capacity, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-04-10_trendforce_samsung-vietnam-4b-packaging-amkor, 2026-05-19_stocktitan_amkor-arizona-peoria-land-expansion, 2026-06-17_digitimes_amkor-tsmc-10year-arizona-deal, 2026-06-17_trendforce_tsmc-amkor-10year-arizona-advanced-packaging, 2026-06-29_businesswire_amkor-q1-2026-earnings, 2026-06-30_amkor-ir_arizona-7billion-groundbreaking, 2026-06-30_digitimes_amkor-2.5d-hdfo-growth-2026, 2026-07-23_amkor-ir_nvidia-amkor-1-5b-strategic-partnership, 2026-09-26_article_amkor-embedded-trace-rdl, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-30_imaps-dpc2026_schrodinger-polyimide-cu-peel-strength-simulation, 2026-09-30_semieng_one-substrate-no-longer-rules-them-all, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-10-07_epo_amkor-bspdn-oriented-package-embedded-ipd, 2026-10-07_openalex_amkor-kelly-three-interposer-routes, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-08_semieng_voltage-regulation-in-package, 2026-10-13_amkor-cavity-as-allocated-volume, 2026-01-13_epo_amkor-cn121335572a-rdl-lateral-side-protective-layer, 2026-10-22_semieng_foundries-osats-increasingly-overlap, 2025-09-16_CN120659336A_samsung-fowlp-subpackage-reconstructed-foplp, 2026-10-16_3dincites_scaling-advanced-packaging-capacity-concentration, 2026-06-11_epo_amkor-metal-die-backside-tim-lid, 2026-04-23_epo_amkor-recessed-staggered-two-tier-traces, 2026-08-18_epo_amkor-double-sided-dual-encapsulant, 2026-04-30_epo_amkor-protruding-contoured-pad, 2026-10-21_researchandmarkets_osat-market-2026-2031, 2026-02-19_semieng_laser-arrays-cpo-epoxy-outgassing, 2026-10-26_amkorir_q3-2026-advanced-products-definition, 2026-10-26_fool_amkor-q3-2026-call-bridge-late-2027, 2026-07-30_epo_amkor-connect-die-bridge-family, 2026-09-24_epo_amkor-vertical-interconnect-doubles-as-shield-tie]
 related:
   - wiki/technologies/rdl.md
   - wiki/technologies/cowos.md
@@ -588,3 +588,62 @@ Amkor 的 **Vineet Pancholi** 提供本 wiki 目前唯一的中介層測試覆�
 
 - **OSAT 市場**（[[sources/2026-10-21_researchandmarkets_osat-market-2026-2031]]）：Amkor 列為十家之一；整體市場 2025 **USD 52.00 B** → 2031 **USD 87.22 B**（CAGR 9.00%）。⚠ 該報告之公司級數字（含「ASE 約佔全球 OSAT cluster 38%」）**依既載市占查證門檻不予記錄**，本頁不新增任何 Amkor 市占數字。
 - **CPO**（[[sources/2026-02-19_semieng_laser-arrays-cpo-epoxy-outgassing]]）：Amkor 被引述稱**部分可插拔模組亦可算作 CPO**，且**部分設計把 PIC 與微透鏡陣列的光纖貼附整合於單一封裝內** ⇒ 本 wiki 首次記錄 Amkor 在 CPO 光纖貼附上的定位（⚠ 記者轉述，非 Amkor 一手文件）。
+
+## 2026-10-29 collect 更新：Q3 2026 財報與法說會；「Advanced products」的定義邊界；橋接商機時點 ★★★
+
+### 財務（Q3 2026，2026-10-26 發布；[[sources/2026-10-26_amkorir_q3-2026-advanced-products-definition]]）
+
+| 項目 | Q3 2026 | Q2 2026 | Q3 2025 |
+|------|---------|---------|---------|
+| 總營收（US$ M） | **1,991** | 1,898 | 1,987 |
+| Advanced products | **1,632** | 1,557 | 1,684 |
+| Mainstream products | **359** | 341 | 303 |
+| 毛利率 | **18.3%** | 16.8% | 14.3% |
+| Communications 占比 | 37% | 42% | 51% |
+| Computing 占比 | **26%** | 22% | 19% |
+
+2026 全年 capex 指引收斂至**約 US$2.5 B**（前次 2.5–3.0 B）。Q4 毛利率指引 18.0–19.0%。
+
+### ⭐⭐⭐ 「Advanced products」的定義邊界（結清既載空缺的一半）
+
+新聞稿**自行給出定義**：
+- Advanced products =「flip chip, **memory** and wafer-level processing and related test services」
+- Mainstream products =「all other **wirebond** packaging and related test services」
+
+📌 **切割線是「是否為打線」，不是「是否為 2.5D/3D 先進封裝」。** 因此 **US$1,632 M（82.0%）不可當作先進封裝營收的代理變數**，其中含大量覆晶手機封裝。
+
+⚠ **實證佐證**：在 AI 封裝需求被普遍描述為吃緊的季度，**Advanced products 年減 3.1%**（1,684 → 1,632），而 **Mainstream 年增 18.5%**（303 → 359）；同期 Communications 自 51% 降至 37%。⇒ **該科目的季度變化由手機覆晶驅動，而非由 AI 2.5D 驅動。**
+
+### 法說會（2026-10-26；[[sources/2026-10-26_fool_amkor-q3-2026-call-bridge-late-2027]]）
+
+- ⭐⭐⭐ **CEO Engel：bridge 是「late 2027 opportunity into '28」。** 本 wiki 首次取得 OSAT 對橋接型封裝**商機時點**的直接表態。
+- ⭐⭐ **2.5D 已在 ramp**：xPU、網通、交換器專案「are 2.5D type programs」，全部正在或下季 ramp；網通與資料中心另有兩個**新 2.5D 專案 Q4 上線**。
+- ⭐⭐ **封裝被 CEO 稱為「one of the key bottlenecks」**，客戶正鎖定 **2027 與 2028** 產能。
+- ⭐⭐ **HDFO 製程超過 300 道步驟**；Computing 季增未達預期（25% vs 先前所述 30%）歸因於**產線排載**而非供給限制。
+- **「wafer bumping type things」與 HDFO、2.5D 資產可互換（fungible）** ⇒ 📌 **OSAT 產能數字難以按技術別拆分，此為既載口徑問題的一個機制性理由。**
+- 韓國據點規模預計 **2028 擴產後較 2025 增加 40%**；SiP 移往越南釋出的空間「being redeployed and quickly consumed」。
+- 測試：turnkey「allows us to integrate advanced packaging and test capabilities」；新 Songdo 廠房擴車用與資料中心測試產能。
+- 分析師提及 NVIDIA 協議後**預付款總額約 US$3 B**，⚠ **管理層未確認**，本 wiki **不記錄為事實**。
+
+### 亞利桑那（Peoria）
+
+- Phase 2 於 2026-09 宣布，**預計 2027 年底動工**；兩期合計**約 US$12 B**、潔淨室 **> 90,000 m²**、人力 **> 3,500**。
+- **客戶 ramp：2028 年底**（Engel）；建置高峰 2028–2029（Faust）；**2027 年投入上限框架為 US$12 B 的 15%**。
+- ⚠⚠ **逐字稿內部時程不一致**：Engel 稱廠房「will be completed late this year」，Faust 稱「not yet be completed until the end of '27」。**本 wiki 採 Faust 之 2027 年底版本**（與 Phase 2 於 2027 年底動工、客戶 2028 年底 ramp 互洽）。
+
+### 專利訊號 / Patent Signals（2026-10-29 新增）
+
+- **US20260223740A1**（家族 86324092，公開 2026-07-30）：請求標的為 **connect die**，在多顆晶粒之間繞送訊號。發明人含 **Hiner / Kelly / Huemoeller** 三位美國端資深封裝架構師＋韓國端三位。⚠ **摘要僅 332 字元且為樣板語句，標 `partial`，依既立作業要求不進入技術頁作技術陳述。**（[[sources/2026-07-30_epo_amkor-connect-die-bridge-family]]）
+- **US20260293689A1**（家族 101376002，公開 2026-09-24）：載板內側先耦接**垂直互連結構** → 貼件 → 封膠並露出互連上端 → 提供基板與**耦接至該互連的屏蔽** → **基板／封膠／屏蔽三者一次切單**。⇒ ⭐⭐ **同一組垂直互連同時承擔電氣穿通與屏蔽接地回路**，屏蔽不再是後加外層。發明人**全為韓國端**。零量化值。（[[sources/2026-09-24_epo_amkor-vertical-interconnect-doubles-as-shield-tie]]）
+
+### ⭐⭐⭐ 本輪最強讀法：同一公司三個揭露管道的時間位移不同
+
+Amkor 橋接布局至少兩個家族已入庫（本輪 86324092 公開 2026-07-30；既載 **US20260334253A1** 家族 101672543 公開 2026-10-22，[[sources/2026-10-22_epo_amkor-module-level-bridge-substrate-cavity]]），而 CEO 把**商機**置於 **2027 年底–2028**。
+
+⇒ **專利公開領先自家商機宣告約 1.5–2 年**，顯著短於既載「專利 → 學術發表」之約 3–4 年（CEA D2W 例：優先權 2022-12 → ECTC 2026）。
+📌 **立讀法：引用任何「某公司在做 X」的時間點時，必須標註是哪一個揭露管道（專利／法說／論文），三者位移量級不同。**
+
+### 既有空缺之影響
+
+- 「**Intel EMIB-T 外包夥伴 Amkor 使用的是誰的鍵合頭**」—— **未結清**（法說會未提設備），但提法應補一問：**若 Amkor 自述 bridge 商機在 2027 年底後，則其現為 Intel EMIB-T 所做的屬哪一類？**
+- 「**ASE／Amkor 的先進封裝是否為獨立揭露科目**」—— Amkor 側**已答**（見上）。ASE 側見 [[entities/ase-group]]。

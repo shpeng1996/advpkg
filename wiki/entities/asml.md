@@ -3,8 +3,8 @@ title: "ASML"
 category: entity
 tags: [equipment, lithography, EUV, hybrid-bonding, DUV, RDL, advanced-packaging, W2W, maglev]
 created: 2026-05-03
-updated: 2026-10-16
-sources: [2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2026-01-23_trendforce_chip-tools-tel-asml, 2026-04-23_trendforce_tsmc-roadmap-a12-a13-no-high-na-euv, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers]
+updated: 2026-10-29
+sources: [2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2026-01-23_trendforce_chip-tools-tel-asml, 2026-04-23_trendforce_tsmc-roadmap-a12-a13-no-high-na-euv, 2026-05-20_semiconductor-digest_ectc2026-showcase-papers, 2026-10-23_cxodigitalpulse_besi-q3-2026-215-hb-systems]
 related:
   - wiki/technologies/hybrid-bonding.md
   - wiki/entities/besi.md
@@ -235,3 +235,16 @@ ASML 在 ECTC 2026 發表具體 D2W 混合接合製程解決方案（Paper 31.2�
   與二手報導所描述之具體機台架構如何相容**」。
 
 來源：[[sources/2026-10-16_asml-ceo-hybrid-bonding-exploration-beyond-2030]]
+
+## 2026-10-29 collect 更新：Besi CEO 把 ASML 在 3D 的角色定位在「晶片內電晶體堆疊」而非封裝 ★★
+
+來源：Besi Q3 2026 業績報導（2026-10-23，二手；[[sources/2026-10-23_cxodigitalpulse_besi-q3-2026-215-hb-systems]]）。
+
+- Besi CEO **Richard Blickman 否認**「ASML 將在 **die-to-wafer 混合接合**直接與 Besi 競爭」之報導。
+- 他稱兩家公司**在貼放精度（placement accuracy）上合作**。
+- 他稱 **ASML 的相關研究關乎更長期的「晶片內 3D 電晶體堆疊」**，屬晶片內而非封裝層級。
+
+⚠⚠ **證據層級**：此為**第三方公司執行長對 ASML 意圖的陳述**，**ASML 本身未就此表態**，本輪亦未取得 ASML 一手文件。依既立查證門檻，**僅記為 Besi 之公開立場**，不得改寫為 ASML 的路線宣告，亦不得作為「ASML 不會進入封裝設備」之依據。
+
+📌 **本 wiki 對 ASML 與先進封裝之連結此前薄弱**；本件首次給出一個**具體連結面：貼放精度**。
+📌 **新空缺**：ASML 與 Besi 在貼放精度上的合作**形式為何**（共同開發？量測模組供應？授權？）。**追蹤方式**：ASML 法說會或投資人日對 3D 與 advanced packaging 的段落；或兩家公司任一方的正式共同發布。

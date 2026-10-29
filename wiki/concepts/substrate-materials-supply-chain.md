@@ -3,8 +3,8 @@ title: "基板與材料供應鏈 / Substrate & Materials Supply Chain（ABF・T-
 category: concept
 tags: [ABF, Ajinomoto, substrate, supply-chain, Ibiden, Unimicron, Shinko, SEMCO, Kinsus, Nan-Ya-PCB, glass-core, warpage, bottleneck]
 created: 2026-10-03
-updated: 2026-10-27
-sources: [2026-10-03_tomshardware_abf-substrate-state-2026, 2026-10-03_thelec_philoptics-tgv-2mm-glass, 2026-10-03_digitaltoday_jntc-tgv-thickness-lineup, 2026-10-03_epo_semco-coreless-interposer-organic-bridge, 2026-10-06_xenospectrum_ajinomoto-abf-cut-unconfirmed-layers-per-side, 2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage, 2026-10-07_atlaspcb_abf-price-30pct-third-distinct-30-figure, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-13_all-glass-aip-no-polymer-in-the-stack, 2026-10-13_cpo-bottleneck-test-800x-area-mismatch, 2026-07-09_taiwannews_tgv-supply-chain-er-groupup-utechzone, 2026-07-21_openalex_top-pop-package-warpage-molding-compound, 2026-10-16_3dincites_scaling-advanced-packaging-capacity-concentration, 2026-01-14_openalex_kaist-cmp-more-than-moore-review, 2023-10-02_imapspdf_qorvo-glass-core-rf-dk-df, 2026-10-27_ieeebuss_dnp-large-glass-panel-filled-vs-conformal-tgv, 2026-10-01_nanoms_underfill-interphase-adhesion, 2025-05-27_semivision_cpo-optical-adhesive-named-products, 2025-05-27_ectc_cpo-advanced-materials-ime-fiber-attach]
+updated: 2026-10-29
+sources: [2026-10-03_tomshardware_abf-substrate-state-2026, 2026-10-03_thelec_philoptics-tgv-2mm-glass, 2026-10-03_digitaltoday_jntc-tgv-thickness-lineup, 2026-10-03_epo_semco-coreless-interposer-organic-bridge, 2026-10-06_xenospectrum_ajinomoto-abf-cut-unconfirmed-layers-per-side, 2026-10-06_semieng_negative-cte-filler-mitsubishi-warpage, 2026-10-07_atlaspcb_abf-price-30pct-third-distinct-30-figure, 2026-10-07_semieng_five-routing-platforms-organic-interposer-pitch, 2026-10-13_all-glass-aip-no-polymer-in-the-stack, 2026-10-13_cpo-bottleneck-test-800x-area-mismatch, 2026-07-09_taiwannews_tgv-supply-chain-er-groupup-utechzone, 2026-07-21_openalex_top-pop-package-warpage-molding-compound, 2026-10-16_3dincites_scaling-advanced-packaging-capacity-concentration, 2026-01-14_openalex_kaist-cmp-more-than-moore-review, 2023-10-02_imapspdf_qorvo-glass-core-rf-dk-df, 2026-10-27_ieeebuss_dnp-large-glass-panel-filled-vs-conformal-tgv, 2026-10-01_nanoms_underfill-interphase-adhesion, 2025-05-27_semivision_cpo-optical-adhesive-named-products, 2025-05-27_ectc_cpo-advanced-materials-ime-fiber-attach, 2026-01-15_epo_schott-solid-rod-tgv-laser-bonded-glass, 2026-10-28_openalex_tgv-borosilicate-shear-md]
 related: [technologies/glass-substrate.md, concepts/advanced-packaging-market.md, concepts/geopolitics-advanced-packaging.md, entities/ibiden.md, entities/shinko.md, entities/semco.md, entities/absolics.md, entities/agc.md]
 ---
 
@@ -513,3 +513,18 @@ Samsung 官方（Tech Blog, 2025-05-26；內容基礎 2022 Samsung Foundry Forum
 
 ➜ ⭐⭐ **氟化環氧（Daikin OPTODYNE）為既載「把問題移進材料裡」家族第四個落點，且首次在光學域**（既有三例：Atotech 穩定化細晶製程換到時間／Samsung 多孔填料 NCF／Resonac 耐化學切割膠帶）。
 ➜ ⚠ 來源付費牆、**折射率／Tg／CTE／模數／固化條件全部未給** ⇒ 僅作供應鏈與機制清單，**不得作為規格來源**。
+
+## 2026-10-29 collect 更新：玻璃本體供應者清單新增 SCHOTT ★
+
+**SCHOTT AG（德）＋ SCHOTT Primoceler Oy（芬，玻璃微接合子公司）** 經由 WO2026012791A1（家族 91898273，公開 2026-01-15）入庫為**玻璃 TGV 供應者**（[[sources/2026-01-15_epo_schott-solid-rod-tgv-laser-bonded-glass]]）。
+
+| 既載玻璃／TGV 供應者 | 本輪新增 |
+|----------------------|----------|
+| Corning、AGC、NEG、DNP、Toppan、Absolics、SEMCO、Dongwoo Fine Chem、BOE、LG 化學／LG Innotek | **SCHOTT（＋ Primoceler）** |
+
+**其技術落點**：**實心導電棒（conductive rod）TGV ＋ 玻璃對玻璃雷射接合密封**。
+
+⚠⚠ **該專利為鄰域案**（CPC 全為植入式醫材 A61N，唯一量化請求為 MRI 干擾體積比 I/V < 40）⇒ **不得用於任何封裝性能推論**。
+⚠ **建頁觸發條件未滿足**（單一鄰域案、零封裝量化值、無產能／客戶／市占）⇒ 本輪**僅列入供應者清單，不建實體頁**。既有缺頁清單延續：Google／Broadcom／MediaTek、SET Corporation、Entegris、AUO／Innolux／Kaneka、Dongwoo Fine Chem。
+
+⭐ **交叉證據**：同輪 J. Am. Ceram. Soc. 之 TGV 剪切分子動力學（[[sources/2026-10-28_openalex_tgv-borosilicate-shear-md]]）以 **SCHOTT Borofloat 33** 為兩款基準玻璃之一 ⇒ **SCHOTT 之玻璃已是學界 TGV 研究的標準試材**，此為其供應鏈地位的間接佐證（非市占證據，不得作市占陳述）。

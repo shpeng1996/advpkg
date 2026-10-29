@@ -3,8 +3,8 @@ title: "Besi (BE Semiconductor Industries) — 混合接合設備領導廠商"
 category: entity
 tags: [equipment, hybrid-bonding, die-attach, D2W, TCB, Netherlands]
 created: 2026-04-25
-updated: 2026-10-26
-sources: [2026-09-27_semieng_chip-week-156-india-tata-besi-izmo, 2026-03-01_3dincites_besi-packaging-power-shift, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-03-29_damnang_hybrid-bonding-cmp-gating-factor, 2026-10-02_bitschips_besi-q1-2026-hybrid-bonding-orders, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-07_epo_besi-deformable-die-forming-bond-tool, 2025-12-03_inpractise_besi-hybrid-bonding-yield-bottlenecks-7800-die]
+updated: 2026-10-29
+sources: [2026-09-27_semieng_chip-week-156-india-tata-besi-izmo, 2026-03-01_3dincites_besi-packaging-power-shift, 2026-03-23_trendforce_asml-hybrid-bonding-equipment, 2025-10-07_trendforce_hybrid-bonder-market-2b, 2026-03-13_trendforce_besi-takeover-interest-lam-amat, 2026-04-01_trendforce_jedec-hbm-height-relax-900um, 2026-04-29_trendforce_sk-hynix-hybrid-bonding-validation, 2025-09-18_semiconsam_hybrid-bonding-cmp-amat-monopoly, 2026-03-29_damnang_hybrid-bonding-cmp-gating-factor, 2026-10-02_bitschips_besi-q1-2026-hybrid-bonding-orders, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-07_epo_besi-deformable-die-forming-bond-tool, 2025-12-03_inpractise_besi-hybrid-bonding-yield-bottlenecks-7800-die, 2026-10-23_cxodigitalpulse_besi-q3-2026-215-hb-systems]
 related:
   - wiki/entities/ev-group.md
   - wiki/technologies/hybrid-bonding.md
@@ -390,3 +390,52 @@ Bits&Chips（2026-04-23，作者 Paul van Gerven）：
 ⚠ **不與既載 AMAT × Besi 件合併為單一規格表（規範 55）**：口徑不同（機台速率 vs 每片晶圓需求），僅可並列。
 
 **來源**：[[sources/2025-12-03_inpractise_besi-hybrid-bonding-yield-bottlenecks]]
+
+## 2026-10-29 collect 更新：Q3 2026 —— 23 家混合接合客戶、累計需求逾 215 台；CEO 否認與 ASML 競爭 ★★★
+
+⚠ 二手媒體轉述（CXO Digital Pulse，2026-10-23）；公司原始新聞稿本輪未取得。（[[sources/2026-10-23_cxodigitalpulse_besi-q3-2026-215-hb-systems]]）
+
+### 財務
+
+| 項目 | 值 |
+|------|-----|
+| Q3 2026 接單 | **EUR 342.6 M**（季增 17%、**年增 96%**） |
+| 分析師共識（Visible Alpha） | 約 EUR 298 M ⇒ **超預期** |
+| Q3 2026 營收 | **EUR 283.4 M** |
+| Q4 2026 營收指引 | 與 Q3 持平 ±5%（共識 EUR 291.5 M，**指引低於共識**） |
+| 庫藏股 | EUR 100 M |
+
+### ⭐⭐⭐ 混合接合的規模錨點
+
+- **23 家混合接合客戶、累計需求（cumulative demand）超過 215 台系統。**
+- **2026 前九個月之混合接合接單，已超過 2025 全年總和的兩倍。**
+
+📌 **本 wiki 對混合接合的量化此前幾乎全在製程側**（對準 100 nm 3σ、pitch 6–9 µm、Cu dishing 需求 1–5 nm vs 產線 5–25 nm、Ra <0.1–0.2 nm），**設備裝機側始終沒有數字**。本件補上第一個。
+
+⚠ **用詞限制**：「cumulative demand」**非**「已出貨裝機量」，且 Besi 僅為供應商之一（既載另有 AMAT×Besi Kinex、EVG、Hanmi、Hanwha、ASMPT）⇒ **不得當作全產業裝機量。**
+📌 **新空缺**：「cumulative demand > 215 systems」之口徑為何（含已出貨＋在手訂單＋意向？）。**追蹤方式**：Besi 原始新聞稿或法說簡報之定義頁。
+
+### 客戶數之時序（既載 vs 本輪）
+
+| 時點 | 混合接合客戶數 | 來源 |
+|------|----------------|------|
+| 2026-10-02 既載 | **20 家** | 既載 Q1 2026 相關紀錄 |
+| 2026-10-23（本輪） | **23 家** | 本件 |
+
+⇒ **約三週內自 20 增至 23**（⚠ 兩筆口徑未必相同，且既載之 20 家對應期別較早；**此處僅記序列，不作成長率推論**）。
+
+### ⭐⭐ 與 ASML 的關係：CEO 定性為合作而非競爭
+
+- Blickman **否認** ASML 將在 **die-to-wafer 混合接合**直接競爭之報導。
+- 稱兩家公司**在貼放精度（placement accuracy）上合作**。
+- 稱 **ASML 的研究關乎更長期的「晶片內 3D 電晶體堆疊」**，而非封裝。
+
+⚠ **單一方（Besi CEO）之陳述，ASML 側未取得對應表態** ⇒ 依既立查證門檻，**記為 Besi 之公開立場，不記為雙方共識**。既載 [[entities/asml]] 與混合接合之連結薄弱，本件首次給出具體連結面。
+
+### ⭐ Q4 指引持平的歸因值得追蹤
+
+管理層把 Q4 持平歸因於**客戶產線整備時程**，而非專案延後。若屬實，則與既載「限制鏈第①層（表面平坦度 ~0.2 nm）尚未穩定達標」同向 —— **瓶頸在客戶端製程整備，不在設備交期**。⚠ **單一來源且為供應商自述，列為候選讀法，不升格。**
+
+### 對既有空缺的影響
+
+- 「**Hanmi ~2029 量產採用與 HBM4E（2027 年底）混合接合導入的關係 —— 該世代機台由誰供應？**」—— **部分解，不結清**。23 家客戶／>215 台之規模加上接單年增 96%，顯示該世代機台供應**並非真空**；但本文未指名任一記憶體客戶，亦未給時點。

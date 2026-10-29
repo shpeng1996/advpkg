@@ -3,8 +3,8 @@ title: "ASMPT Limited / ASMPT 有限公司"
 category: entity
 tags: [OSAT, equipment, TCB, hybrid-bonding, CPO, flip-chip, FOPLP, HBM4]
 created: 2026-05-06
-updated: 2026-10-21
-sources: [2026-04-22_asmpt_q1-2026-results, 2026-05-03_globenewswire_amat-acquires-nexx, 2026-05-12_asmpt_ectc2026-firebird-lithobolt]
+updated: 2026-10-29
+sources: [2026-04-22_asmpt_q1-2026-results, 2026-05-03_globenewswire_amat-acquires-nexx, 2026-05-12_asmpt_ectc2026-firebird-lithobolt, 2026-04-23_epo_asmpt-wire-stud-weakened-point-break]
 related: [wiki/technologies/hybrid-bonding.md, wiki/technologies/copackaged-optics.md, wiki/technologies/hbm4.md, wiki/technologies/foplp.md, wiki/entities/besi.md]
 ---
 
@@ -169,3 +169,21 @@ US20260114310A1（細間距垂直線互連）、US20260206337A1（光學封裝�
   **腔體狀態被監測了，腔體所處的環境（濕度）是否也被列管？** 本 wiki 無任何資料。
 - ⚠ 既載空缺「**電漿活化的腔體狀態是否為獨立失效面向？**」（2026-10-20 立，追蹤第三家設備商是否出現同類布局）
   **本輪未推進**：本輪專利軌未檢索電漿相關片語。
+
+## 2026-10-29 collect 更新：專利訊號 —— 細節距垂直線柱以「壓弱化點後拉直折斷」成形 ★★
+
+**US20260114310A1**（家族 **99442154**，公開 **2026-04-23**，申請人 ASMPT SINGAPORE PTE LTD）
+（[[sources/2026-04-23_epo_asmpt-wire-stud-weakened-point-break]]）
+
+**請求之手段**：於焊墊成球接合 → 拉高工具延長線段 → **以工具把線段上某一點壓向球接合的一部分，形成「弱化點」** → **移動工具將線段拉直並於弱化點折斷**，得到垂直線柱互連。
+
+**CPC**：H10W72/0x 系八個子群，**100% 落在打線接合**，無電鍍、無光微影。
+
+### 讀法
+
+- ⭐⭐ **垂直線柱（wire stud）路線仍在被設備商主動推進。** 既載對垂直互連的記錄集中於 **TMV／鍍銅柱／TSV／TGV**；本件顯示打線機路線在 2026 年仍有新排他權，且手段為**機構動作**而非材料或微影。
+- ⭐⭐ **既載橫向論述「當某製程規格難度陡升時，業界的第二條路不是改進該製程，而是把設計移到規格較鬆的區間」新增第五個落點**：**垂直互連的難度自「鍍得準」移到「折得準」**（自濕製程與微影維度移到機構動作維度）。
+  既載四例：GlobalFoundries（對準精度自機台 → 微影）、Apple／Deca（以 fan-out 放寬 bump pitch）、EVG WO2026008137A1（輪廓精度自模具 → 材料擺位）、hybrid taper–grating（光纖對準 → 晶片側錐＋光柵）。
+- ⭐ **與同輪 Amkor US20260293689A1 的對照**：兩者都在處理「封膠中的垂直互連」，但 **Amkor 自結構層（屏蔽兼用）切入、ASMPT 自成形手段切入** ⇒ 同一問題的兩個不同產業位置各自布局。
+
+⚠ **標題稱 fine-pitch，但摘要未給任何節距、線徑、柱高或良率** ⇒ **不得與既載 TMV／Cu pillar／TGV 節距比較，不得記入技術頁規格表。** 前瞻訊號，非既成能力。

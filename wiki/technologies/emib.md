@@ -3,8 +3,8 @@ title: "EMIB — Embedded Multi-Die Interconnect Bridge"
 category: technology
 tags: [Intel, 2.5D, silicon-bridge, chiplet, HBM4, Foveros, glass-substrate, EMIB-T, EMIB-M, silicon-capacitors, power-delivery, HLFF, encapsulation, underfill]
 created: 2026-05-03
-updated: 2026-10-26
-sources: [2026-09-27_intel_us20260223702a1-direct-bonding-embedded-bridge-organic-cavity, 2026-09-27_intel_cn122270166a-stacked-glass-silicon-bridge-assembly-ar20, 2026-09-27_samsung_us20260144093a1-bridge-on-tgv-mold-fixed, 2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-03-05_trendforce_intel-emib-billions, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-03-03_trendforce_intel-clearwater-forest, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks, 2026-06-21_convergedigest_intel-emib-t-multi-die-packaging, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap, 2026-06-05_semieng_intel-ectc-2026-emib-t-cpo-glass, 2026-01-30_tomshardware_intel-ai-chip-test-vehicle-emib-t, 2026-08-04_semieng_from-blueprint-intel-hlff, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_patent_zhuhai-tiancheng-dual-depth-tsv-silicon-bridge, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-09-30_epo_intel-us20260191037a1-localized-embedded-bridge-in-core, 2026-09-30_intel_us-advanced-packaging-reticle-8x-12x-fab9, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_amd-us20260282956a1-silicon-bridge-decap, 2026-10-02_epo_adeia-us20260247631a1-dual-sided-connecting-element, 2026-10-02_epo_shanghai-xianfeng-cn122622683a-glass-interposer-bridge, 2026-10-02_trendforce_cowos-l-mainstream-through-2028, 2026-10-06_epo_intel-bridge-chiplet-shield-dummy-die, 2026-10-06_epo_intel-mold-extension-package-to-package-topside-bridge, 2026-10-06_intel_clearwater-forest-no-glass-foveros-9um-3um-emib-45um, 2026-10-07_openalex_lau-silicon-bridge-microbump-reliability, 2026-10-07_openalex_amkor-kelly-three-interposer-routes, 2026-08-01_intel_power-delivery-ai-datacenter-c2vr-mbvr-loss-budget]
+updated: 2026-10-29
+sources: [2026-09-27_intel_us20260223702a1-direct-bonding-embedded-bridge-organic-cavity, 2026-09-27_intel_cn122270166a-stacked-glass-silicon-bridge-assembly-ar20, 2026-09-27_samsung_us20260144093a1-bridge-on-tgv-mold-fixed, 2026-09-27_thelec_plp-market-650m-2024-to-8-1b-2030-lam-600mm, 2026-04-07_trendforce_intel-emib-google-amazon, 2026-01-29_trendforce_emib-challenges-nvidia-14a-18a, 2025-12-01_trendforce_intel-amkor-songdo-emib-outsource, 2026-03-05_trendforce_intel-emib-billions, 2025-12-22_3dincites_intel-amkor-emib-partnership, 2026-03-03_trendforce_intel-clearwater-forest, 2026-01-26_trendforce_intel-glass-substrate-emib, 2026-03-18_trendforce_intel-emib-malaysia, 2026-04-29_trendforce_intel-foundry-apple-18ap-google, 2026-05-04_trendforce_intel-emib-90pct-yield, 2026-05-05_trendforce_intel-emib-expansion-us-vietnam, 2026-05-11_trendforce_sk-hynix-intel-emib-hbm, 2026-05-11_trendforce_intel-nvidia-foundry-emib-apple, 2026-05-12_trendforce_mediatek-dual-packaging-emib-cowos, 2026-05-20_trendforce_intel-emib-substrate-prepayments, 2026-05-26_trendforce_intel-rio-rancho-glass-substrate, 2026-06-19_tomshardware_intel-emib-t-fab-rollout, 2026-04-07_tomshardware_intel-google-amazon-packaging-talks, 2026-06-21_convergedigest_intel-emib-t-multi-die-packaging, 2026-06-27_intel_foundry-direct-connect-2025-packaging-roadmap, 2026-06-05_semieng_intel-ectc-2026-emib-t-cpo-glass, 2026-01-30_tomshardware_intel-ai-chip-test-vehicle-emib-t, 2026-08-04_semieng_from-blueprint-intel-hlff, 2026-06-02_intel_ectc2026-emib-t-cpo-glass, 2026-07-31_ase_cn224583751u-bridge-chip-assembly-molded, 2026-07-07_semieng_panel-inspection-metrology-hdfo, 2026-09-26_patent_intel-bridge-in-glass-two-families, 2026-09-26_patent_zhuhai-tiancheng-dual-depth-tsv-silicon-bridge, 2026-09-26_article_semiwiki-cowos-capacity-double-2028, 2026-09-26_paper_yole-advanced-packaging-market-ai-era, 2026-09-30_trendforce_intel-emib-substrate-yield-45-percent, 2026-09-30_epo_intel-us20260191037a1-localized-embedded-bridge-in-core, 2026-09-30_intel_us-advanced-packaging-reticle-8x-12x-fab9, 2026-09-30_semieng_intel-data-center-energy-rethink-power-delivery, 2026-10-02_semianalysis_ectc2026-emib-t-microfluidic-cpo, 2026-10-02_epo_amd-us20260282956a1-silicon-bridge-decap, 2026-10-02_epo_adeia-us20260247631a1-dual-sided-connecting-element, 2026-10-02_epo_shanghai-xianfeng-cn122622683a-glass-interposer-bridge, 2026-10-02_trendforce_cowos-l-mainstream-through-2028, 2026-10-06_epo_intel-bridge-chiplet-shield-dummy-die, 2026-10-06_epo_intel-mold-extension-package-to-package-topside-bridge, 2026-10-06_intel_clearwater-forest-no-glass-foveros-9um-3um-emib-45um, 2026-10-07_openalex_lau-silicon-bridge-microbump-reliability, 2026-10-07_openalex_amkor-kelly-three-interposer-routes, 2026-08-01_intel_power-delivery-ai-datacenter-c2vr-mbvr-loss-budget, 2026-10-26_fool_amkor-q3-2026-call-bridge-late-2027, 2026-07-30_epo_amkor-connect-die-bridge-family]
 related:
   - wiki/entities/intel.md
   - wiki/entities/amkor.md
@@ -1211,3 +1211,35 @@ Amkor **TW202614417A**（family 57129884）主張高佈線密度「補片」接�
 ⚠ **白皮書通篇未提及 Foveros** ⇒ 不得由本件推論 Foveros 在供電路線中的位置。
 
 **來源**：[[sources/2026-08-01_intel_power-delivery-c2vr-loss-budget]]
+
+## 2026-10-29 collect 更新：OSAT 首次給出橋接型封裝的商機時點 ★★★
+
+### 商機時點
+
+Amkor CEO Kevin Engel 於 **2026-10-26 法說會**明言：**bridge 是「late 2027 opportunity into '28」**（[[sources/2026-10-26_fool_amkor-q3-2026-call-bridge-late-2027]]）。
+
+📌 **本 wiki 首次取得 OSAT 對橋接型封裝商機時點的直接表態。** 既載對橋接的時程資訊多來自 Intel 自身路線圖與二手報導；本件為**外包端**的視角。
+
+同一場法說會另載：
+- xPU、網通、交換器之專案「are **2.5D type programs**」，全部正在或下季 ramp；網通與資料中心另有兩個**新 2.5D 專案 Q4（2026）上線**。
+- 封裝「is becoming one of the **key bottlenecks**」，客戶正鎖定 **2027 與 2028** 產能。
+
+### Amkor 之橋接排他權布局（至少兩個家族）
+
+| 公開日 | 公開號 | 家族 | 標的 | 備註 |
+|--------|--------|------|------|------|
+| 2026-07-30 | **US20260223740A1** | 86324092 | **connect die** 在多顆晶粒間繞送訊號 | ⚠ 摘要僅 332 字元、樣板語句，標 `partial`（[[sources/2026-07-30_epo_amkor-connect-die-bridge-family]]） |
+| 2026-10-22 | US20260334253A1 | 101672543 | **模組級橋 ＋ 基板腔體**，兩層級橋並存 | 既載（[[sources/2026-10-22_epo_amkor-module-level-bridge-substrate-cavity]]） |
+
+⚠ **依既立作業要求，US20260223740A1 因摘要無技術內容，不在本頁作任何技術陳述**，僅列名於上表以記錄布局之存在。
+
+### ⭐⭐⭐ 新讀法：同一公司三個揭露管道的時間位移不同
+
+專利公開（2026-07 與 2026-10）**領先 CEO 自述之商機時點（2027 年底–2028）約 1.5–2 年**。
+對照既載「專利 → 學術發表」之約 **3–4 年**（CEA D2W 混合接合：優先權 2022-12 → ECTC 2026 發表）。
+
+📌 **立讀法：引用任何「某公司在做 X」的時間點時，必須標註是哪一個揭露管道（專利／法說／論文），三者位移量級不同。** 本輪另有 Samsung CPO 之同型例（專利 2026-02 → 量產宣告 2028，約兩年）。
+
+### 既有空缺
+
+- 「**Intel EMIB-T 外包夥伴 Amkor 使用的是誰的鍵合頭**」—— **未結清**（法說會未提設備）。提法補一問：**若 Amkor 自述 bridge 商機在 2027 年底後，則其現為 Intel EMIB-T 所做的，屬於哪一類？**

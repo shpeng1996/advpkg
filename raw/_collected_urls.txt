@@ -1064,3 +1064,18 @@
 2026-10-28 | https://doi.org/10.1021/acsami.6c11857 | raw/papers/2026-10-28_openalex_imec-inp-laser-liftoff-self-absorption-ceiling.md | imec InP LLO: self-absorption sets upper bound
 2026-10-28 | https://doi.org/10.1515/joc-2026-0417 | raw/papers/2026-10-28_openalex_hybrid-taper-grating-fiber-chip-tolerance.md | Fiber-chip: +-2.5um tolerance, 0.35dB (sim)
 2026-10-28 | https://doi.org/10.5104/jiep.29.376 | raw/papers/2026-10-28_openalex_namics-cpo-transparent-optical-adhesives-PARTIAL.md | Namics CPO optical adhesive (paywalled, partial)
+2026-10-29 | https://ir.amkor.com/static-files/f3bab1a5-97b1-42fe-a1d8-c2f293d2cef2 | raw/reports/2026-10-29_amkorir_q3-2026-advanced-products-82pct-definition.md | Amkor Q3-26: Advanced=flipchip/mem/WLP, 82%
+2026-10-29 | https://www.fool.com/earnings/call-transcripts/2026/10/26/amkor-amkr-q3-2026-earnings-call-transcript/ | raw/articles/2026-10-29_fool_amkor-q3-2026-call-2p5d-bridge-late-2027.md | Amkor call: bridge is late-2027/28, HDFO 300+ steps
+2026-10-29 | https://www.sec.gov/Archives/edgar/data/0001122411/000095010326016323/dp255782_6k.htm | raw/reports/2026-10-29_sec_ase-q3-2026-atm-ems-split-no-advanced-packaging-line.md | ASE Q3-26: ATM 61.7/EMS 38.1, no AP line item
+2026-10-29 | https://electronics360.globalspec.com/article/24054/cpo-switch-production-ramps-up-by-nvidia-and-broadcom | raw/articles/2026-10-29_globalspec_cpo-switch-production-ramp-samsung-2028-2029.md | CPO: Nvidia/Broadcom in MP, Samsung CPO svc 2029
+2026-10-29 | https://www.cxodigitalpulse.com/?p=63987 | raw/articles/2026-10-29_cxodigitalpulse_besi-q3-2026-23-customers-215-hb-systems.md | Besi: 23 HB customers, >215 systems cumulative
+2026-10-29 | EPO:98652285:US20260040943A1 | raw/patents/2026-10-29_US20260040943A1_samsung-optical-engine-pic-on-eic-inclined-mirror.md | Samsung: PIC on EIC, inclined-surface mirror
+2026-10-29 | EPO:86324092:US20260223740A1 | raw/patents/2026-10-29_US20260223740A1_amkor-connect-die-bridge.md | Amkor: connect die routing between die (partial)
+2026-10-29 | EPO:101376002:US20260293689A1 | raw/patents/2026-10-29_US20260293689A1_amkor-carrier-interconnect-encapsulant-shield.md | Amkor: vertical interconnect doubles as shield tie
+2026-10-29 | EPO:99442154:US20260114310A1 | raw/patents/2026-10-29_US20260114310A1_asmpt-fine-pitch-vertical-wire-interconnect.md | ASMPT: wire stud via weakened-point break
+2026-10-29 | EPO:91898273:WO2026012791A1 | raw/patents/2026-10-29_WO2026012791A1_schott-tgv-conductive-rod-laser-bonded-glass.md | SCHOTT: solid-rod TGV, laser-bonded glass (adjacent)
+2026-10-29 | https://doi.org/10.1021/acsnano.6c06734 | raw/papers/2026-10-29_openalex_cu-cu-bonding-two-stage-electromigration-4dstem.md | Cu-Cu EM: two-stage, voided dies 4.8x sooner
+2026-10-29 | https://doi.org/10.1111/jace.71346 | raw/papers/2026-10-29_openalex_tgv-borosilicate-shear-md-boron-network.md | TGV MD: shear-modulus ranking reverses, B-O sensitive
+2026-10-29 | https://doi.org/10.1364/ome.609065 | raw/papers/2026-10-29_openalex_ge-interlayer-rt-sab-iii-v-si-quantum-dot-laser.md | Ge interlayer RT SAB: 11.2->22.3 MPa, >99% void-free
+2026-10-29 | https://doi.org/10.1016/j.surfin.2026.110846 | raw/papers/2026-10-29_openalex_wet-activation-sic-sapphire-hydrophilic-bonding.md | Wet activation: bond promptly, 238 kPa @100C
+2026-10-29 | https://doi.org/10.1016/j.mtcomm.2026.116149 | raw/papers/2026-10-29_openalex_bga-solder-fatigue-ai-memory-package-dic-fea.md | BGA fatigue: die-edge constraint sets critical joint
