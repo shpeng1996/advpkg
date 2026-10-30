@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "raw/articles/2026-03-01_ieee-eps_ectc2025-hybrid-bonding-special-session.md",
+                "file": "raw/articles/2026-06-30_amkor-ir_arizona-7billion-groundbreaking.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-03-01_ieee-eps_ectc2025-hybrid-bonding-special-session"
+              "title": "2026-06-30_amkor-ir_arizona-7billion-groundbreaking"
             }
           }
         ]
@@ -41,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -185,6 +187,8 @@
   },
   "active": "17ce8a7bc621dd37",
   "lastOpenFiles": [
+    "raw/articles/2026-07-10_tomshardware_micron-250b-us-investment-globalwafers.md",
+    "raw/articles/2026-03-01_ieee-eps_ectc2025-hybrid-bonding-special-session.md",
     "wiki/entities/ev-group.md",
     "wiki/technologies/hybrid-bonding.md",
     "wiki/technologies/soic.md",
